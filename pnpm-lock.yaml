@@ -34,122 +34,7 @@ importers:
         specifier: ^1.10.7
         version: 1.10.7
 
-  apps/antelope-next:
-    dependencies:
-      '@cloudinary/url-gen':
-        specifier: ^1.10.1
-        version: 1.10.1
-      '@greymass/eosio':
-        specifier: ^0.7.0
-        version: 0.7.0
-      '@radix-ui/react-dropdown-menu':
-        specifier: ^2.0.5
-        version: 2.0.5(@types/react-dom@18.2.6)(@types/react@18.2.14)(react-dom@18.2.0)(react@18.2.0)
-      anchor-link:
-        specifier: ^3.5.1
-        version: 3.5.1(bufferutil@4.0.7)(encoding@0.1.13)(utf-8-validate@6.0.3)
-      anchor-link-browser-transport:
-        specifier: ^3.5.1
-        version: 3.5.1(anchor-link@3.5.1)
-      bufferutil:
-        specifier: ^4.0.7
-        version: 4.0.7
-      class-variance-authority:
-        specifier: ^0.6.1
-        version: 0.6.1
-      cmdk:
-        specifier: ^0.2.0
-        version: 0.2.0(@types/react@18.2.14)(react-dom@18.2.0)(react@18.2.0)
-      date-fns:
-        specifier: ^2.30.0
-        version: 2.30.0
-      decimal.js:
-        specifier: ^10.4.3
-        version: 10.4.3
-      lucide-react:
-        specifier: 0.259.0
-        version: 0.259.0(react@18.2.0)
-      next:
-        specifier: ^13.4.9
-        version: 13.4.9(@babel/core@7.22.8)(react-dom@18.2.0)(react@18.2.0)
-      next-auth:
-        specifier: ^4.22.1
-        version: 4.22.1(next@13.4.9)(react-dom@18.2.0)(react@18.2.0)
-      next-themes:
-        specifier: ^0.2.1
-        version: 0.2.1(next@13.4.9)(react-dom@18.2.0)(react@18.2.0)
-      nextauth-antelope:
-        specifier: workspace:*
-        version: link:../../packages/nextauth-antelope
-      react:
-        specifier: ^18.2.0
-        version: 18.2.0
-      react-day-picker:
-        specifier: ^8.8.0
-        version: 8.8.0(date-fns@2.30.0)(react@18.2.0)
-      react-dom:
-        specifier: ^18.2.0
-        version: 18.2.0(react@18.2.0)
-      react-use:
-        specifier: ^17.4.0
-        version: 17.4.0(react-dom@18.2.0)(react@18.2.0)
-      sharp:
-        specifier: ^0.32.1
-        version: 0.32.1
-      tailwindcss:
-        specifier: ^3.3.2
-        version: 3.3.2
-      tailwindcss-animate:
-        specifier: ^1.0.6
-        version: 1.0.6(tailwindcss@3.3.2)
-      utf-8-validate:
-        specifier: ^6.0.3
-        version: 6.0.3
-    devDependencies:
-      '@types/diff':
-        specifier: ^5.0.3
-        version: 5.0.3
-      '@types/lodash':
-        specifier: ^4.14.195
-        version: 4.14.195
-      '@types/react':
-        specifier: ^18.2.14
-        version: 18.2.14
-      '@types/react-dom':
-        specifier: ^18.2.6
-        version: 18.2.6
-      '@typescript-eslint/parser':
-        specifier: ^5.61.0
-        version: 5.61.0(eslint@8.44.0)(typescript@5.1.6)
-      autoprefixer:
-        specifier: ^10.4.14
-        version: 10.4.14(postcss@8.4.25)
-      encoding:
-        specifier: ^0.1.13
-        version: 0.1.13
-      eslint-config-custom:
-        specifier: workspace:*
-        version: link:../../packages/eslint-config
-      postcss:
-        specifier: ^8.4.25
-        version: 8.4.25
-      prettier-config:
-        specifier: workspace:*
-        version: link:../../packages/prettier-config
-      shared-lib:
-        specifier: workspace:*
-        version: link:../../packages/shared-lib
-      tailwind-config:
-        specifier: workspace:*
-        version: link:../../packages/tailwind-config
-      tsconfig:
-        specifier: workspace:*
-        version: link:../../packages/tsconfig
-      typescript:
-        specifier: ^5.1.6
-        version: 5.1.6
-
-  apps/evm-next:
+  apps/smart-sale:
     dependencies:
       '@cloudinary/url-gen':
         specifier: ^1.10.1
@@ -160,6 +45,9 @@ importers:
       '@genql/runtime':
         specifier: ^2.10.0
         version: 2.10.0(bufferutil@4.0.7)(encoding@0.1.13)(graphql@16.7.1)(utf-8-validate@6.0.3)
+      '@greymass/eosio':
+        specifier: ^0.7.0
+        version: 0.7.0
       '@radix-ui/react-dropdown-menu':
         specifier: ^2.0.5
         version: 2.0.5(@types/react-dom@18.2.6)(@types/react@18.2.14)(react-dom@18.2.0)(react@18.2.0)
@@ -169,6 +57,12 @@ importers:
       '@sentry/types':
         specifier: ^7.57.0
         version: 7.57.0
+      anchor-link:
+        specifier: ^3.5.1
+        version: 3.5.1(bufferutil@4.0.7)(encoding@0.1.13)(utf-8-validate@6.0.3)
+      anchor-link-browser-transport:
+        specifier: ^3.5.1
+        version: 3.5.1(anchor-link@3.5.1)
       bufferutil:
         specifier: ^4.0.7
         version: 4.0.7
@@ -205,6 +99,9 @@ importers:
       next-themes:
         specifier: ^0.2.1
         version: 0.2.1(next@13.4.9)(react-dom@18.2.0)(react@18.2.0)
+      nextauth-antelope:
+        specifier: workspace:*
+        version: link:../../packages/nextauth-antelope
       nextauth-evm:
         specifier: workspace:*
         version: link:../../packages/nextauth-evm
@@ -284,11 +181,8 @@ importers:
       typescript:
         specifier: ^5.1.6
         version: 5.1.6
-      webpack-node-externals:
-        specifier: ^3.0.0
-        version: 3.0.0
 
-  apps/solana-next:
+  apps/smart-wallet:
     dependencies:
       '@cloudinary/url-gen':
         specifier: ^1.10.1
@@ -299,6 +193,9 @@ importers:
       '@genql/runtime':
         specifier: ^2.10.0
         version: 2.10.0(bufferutil@4.0.7)(encoding@0.1.13)(graphql@16.7.1)(utf-8-validate@6.0.3)
+      '@greymass/eosio':
+        specifier: ^0.7.0
+        version: 0.7.0
       '@radix-ui/react-dropdown-menu':
         specifier: ^2.0.5
         version: 2.0.5(@types/react-dom@18.2.6)(@types/react@18.2.14)(react-dom@18.2.0)(react@18.2.0)
@@ -308,9 +205,12 @@ importers:
       '@sentry/types':
         specifier: ^7.57.0
         version: 7.57.0
-      bs58:
-        specifier: ^5.0.0
-        version: 5.0.0
+      anchor-link:
+        specifier: ^3.5.1
+        version: 3.5.1(bufferutil@4.0.7)(encoding@0.1.13)(utf-8-validate@6.0.3)
+      anchor-link-browser-transport:
+        specifier: ^3.5.1
+        version: 3.5.1(anchor-link@3.5.1)
       bufferutil:
         specifier: ^4.0.7
         version: 4.0.7
@@ -347,9 +247,12 @@ importers:
       next-themes:
         specifier: ^0.2.1
         version: 0.2.1(next@13.4.9)(react-dom@18.2.0)(react@18.2.0)
-      nextauth-solana:
+      nextauth-antelope:
         specifier: workspace:*
-        version: link:../../packages/nextauth-solana
+        version: link:../../packages/nextauth-antelope
+      nextauth-evm:
+        specifier: workspace:*
+        version: link:../../packages/nextauth-evm
       react:
         specifier: ^18.2.0
         version: 18.2.0
@@ -359,9 +262,6 @@ importers:
       react-dom:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
-      react-toastify:
-        specifier: ^9.1.3
-        version: 9.1.3(react-dom@18.2.0)(react@18.2.0)
       react-use:
         specifier: ^17.4.0
         version: 17.4.0(react-dom@18.2.0)(react@18.2.0)
@@ -383,16 +283,13 @@ importers:
     devDependencies:
       '@ianvs/prettier-plugin-sort-imports':
         specifier: ^4.0.2
-        version: 4.0.2(prettier@3.0.0)
+        version: 4.0.2(prettier@2.8.8)
       '@types/diff':
         specifier: ^5.0.3
         version: 5.0.3
       '@types/lodash':
         specifier: ^4.14.195
         version: 4.14.195
-      '@types/node':
-        specifier: ^20.4.1
-        version: 20.4.1
       '@types/react':
         specifier: ^18.2.14
         version: 18.2.14
@@ -414,12 +311,12 @@ importers:
       postcss:
         specifier: ^8.4.25
         version: 8.4.25
-      prettier:
-        specifier: ^3.0.0
-        version: 3.0.0
       prettier-config:
         specifier: workspace:*
         version: link:../../packages/prettier-config
+      shared-lib:
+        specifier: workspace:*
+        version: link:../../packages/shared-lib
       tailwind-config:
         specifier: workspace:*
         version: link:../../packages/tailwind-config
@@ -429,11 +326,8 @@ importers:
       typescript:
         specifier: ^5.1.6
         version: 5.1.6
-      webpack-node-externals:
-        specifier: ^3.0.0
-        version: 3.0.0
 
-  contracts/hardhat:
+  contracts/gnosis:
     dependencies:
       '@nomicfoundation/hardhat-chai-matchers':
         specifier: ^1.0.6
@@ -1599,6 +1493,26 @@ packages:
 
   /@humanwhocodes/object-schema@1.2.1:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
+
+  /@ianvs/prettier-plugin-sort-imports@4.0.2(prettier@2.8.8):
+    resolution: {integrity: sha512-VnsTzyb9aSWpc3v6HvZKD6eolZRvofIYjhda+6IbW1GYwr2byWqK0KhLPbYNkit9MAgShad5bhZ1hgBn867A1A==}
+    peerDependencies:
+      '@vue/compiler-sfc': '>=3.0.0'
+      prettier: 2.x
+    peerDependenciesMeta:
+      '@vue/compiler-sfc':
+        optional: true
+    dependencies:
+      '@babel/core': 7.22.8
+      '@babel/generator': 7.22.7
+      '@babel/parser': 7.22.7
+      '@babel/traverse': 7.22.8
+      '@babel/types': 7.22.5
+      prettier: 2.8.8
+      semver: 7.5.4
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
 
   /@ianvs/prettier-plugin-sort-imports@4.0.2(prettier@3.0.0):
     resolution: {integrity: sha512-VnsTzyb9aSWpc3v6HvZKD6eolZRvofIYjhda+6IbW1GYwr2byWqK0KhLPbYNkit9MAgShad5bhZ1hgBn867A1A==}
@@ -8459,7 +8373,6 @@ packages:
     resolution: {integrity: sha512-tdN8qQGvNjw4CHbY+XXk0JgCXn9QiF21a55rBe5LJAU+kDyC4WQn4+awm2Xfk2lQMk5fKup9XgzTZtGkjBdP9Q==}
     engines: {node: '>=10.13.0'}
     hasBin: true
-    dev: false
 
   /prettier@3.0.0:
     resolution: {integrity: sha512-zBf5eHpwHOGPC47h0zrPyNn+eAEIdEzfywMoYn2XPi0P44Zp0tSq64rq0xAREh4auw2cJZHo9QUob+NqCQky4g==}
@@ -8690,17 +8603,6 @@ packages:
       invariant: 2.2.4
       react: 18.2.0
       tslib: 2.6.0
-    dev: false
-
-  /react-toastify@9.1.3(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-fPfb8ghtn/XMxw3LkxQBk3IyagNpF/LIKjOBflbexr2AWxAH1MJgvnESwEwBn9liLFXgTKWgBSdZpw9m4OTHTg==}
-    peerDependencies:
-      react: '>=16'
-      react-dom: '>=16'
-    dependencies:
-      clsx: 1.2.1
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
     dev: false
 
   /react-universal-interface@0.6.2(react@18.2.0)(tslib@2.6.0):
@@ -10433,11 +10335,6 @@ packages:
   /webidl-conversions@3.0.1:
     resolution: {integrity: sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==}
     dev: false
-
-  /webpack-node-externals@3.0.0:
-    resolution: {integrity: sha512-LnL6Z3GGDPht/AigwRh2dvL9PQPFQ8skEpVrWZXLWBYmqcaojHNN0onvHzie6rq7EWKrrBfPYqNEzTJgiwEQDQ==}
-    engines: {node: '>=6'}
-    dev: true
 
   /whatwg-url@5.0.0:
     resolution: {integrity: sha512-saE57nupxk6v3HY35+jzBwYa0rKSy0XR8JSxZPwgLr7ys0IBzhGviA1/TUGJLmSVqs8pb9AnvICXEuOHLprYTw==}

@@ -1,12 +1,12 @@
-# PowerStack
+# Smart EVM
 
-A dApp Development Toolkit that provides starters, guidelines, and tools for rapid development.
+A Global Community Smart Contract. Apps and architectures for the EOS EVM ecosystem.
 
 <img width="892" alt="image" src="https://697788980-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FZ9TDrZUmPgINqUrCxxId%2Fuploads%2Fae1Zeh49ADF1WWrQ5PIW%2Fimage.png?alt=media&token=daf2165f-f530-4f4e-875b-b6d936012a10">
 
 <img width="892" alt="image" src="./Architecture.png">
 
-_ This is a work in progress._
+<!-- ? _This is a work in progress._ -->
 
 ## Features
 
@@ -58,7 +58,7 @@ _ This is a work in progress._
 ### Frontend
 
 - NextJS [nextjs.org](https://nextjs.org)
-- PreactJS [preactjs.com](https://preactjs.com/)
+<!-- - PreactJS [preactjs.com](https://preactjs.com/) -->
 - Next Auth [next-auth.js.org](https://next-auth.js.org/)
 - GenQL GraphQL Query Composer [remorses/genql](https://github.com/remorses/genql)
 - TailwindCSS [tailwindcss.com](https://tailwindcss.com)
@@ -186,7 +186,7 @@ export interface MyReactComponetParams {
 
 When you write a component that holds some state, you’ll have to make choices about how many state variables to use and what the shape of their data should be. While it’s possible to write correct programs even with a suboptimal state structure, there are a few principles that can guide you to make better choices:
 
-- Use preact signals: Signals are reactive primitives for managing application state. https://preactjs.com/guide/v10/signals/
+- Use preact signals: Signals are reactive primitives for managing application state. <https://preactjs.com/guide/v10/signals/>
 
 - Group related state. If you always update two or more state variables at the same time, consider merging them into a single state variable. Avoid contradictions in state. When the state is structured in a way that several pieces of state may contradict and “disagree” with each other, you leave room for mistakes. Try to avoid this.
 
