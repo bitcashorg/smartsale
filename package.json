@@ -1,0 +1,28 @@
+{
+  "private": true,
+  "name": "powerstack",
+  "scripts": {
+    "build": "turbo build --no-daemon",
+    "dev": "turbo dev --no-daemon --parallel",
+    "lint": "turbo lint --no-daemon",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.1",
+    "eslint": "^8.44.0",
+    "eslint-config-custom": "workspace:*",
+    "prettier": "^3.0.0",
+    "prettier-config": "workspace:*",
+    "turbo": "^1.10.7"
+  },
+  "packageManager": "pnpm@8.6.6",
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "contracts/*"
+  ],
+  "dependencies": {
+    "eosio-core": "^0.0.2",
+    "next-auth": "^4.22.1"
+  }
+}

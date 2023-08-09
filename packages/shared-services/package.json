@@ -1,0 +1,40 @@
+{
+  "name": "shared-services",
+  "version": "0.0.0",
+  "main": "./src/index.ts",
+  "module": "./src/index.ts",
+  "types": "./src/index.ts",
+  "sideEffects": false,
+  "license": "MIT",
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
+    "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react",
+    "lint": "eslint \"src/**/*.ts*\"",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+  },
+  "devDependencies": {
+    "@sentry/types": "^7.57.0",
+    "@types/react": "^18.0.9",
+    "@types/react-dom": "^18.0.4",
+    "eslint": "^8.15.0",
+    "eslint-config-custom": "workspace:*",
+    "react": "^18.1.0",
+    "tsconfig": "workspace:*",
+    "tsup": "^5.10.1",
+    "typescript": "^4.5.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@cloudinary/url-gen": "^1.10.1",
+    "@sentry/browser": "^7.57.0",
+    "clsx": "^1.2.1",
+    "crypto": "^1.0.1",
+    "lodash": "^4.17.21",
+    "tailwind-merge": "^1.13.2"
+  }
+}
