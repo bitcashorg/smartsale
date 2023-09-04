@@ -1,0 +1,14 @@
+{
+    "mainnet": {
+        "EasyAuction": {
+            "address": "0x0b7ffc1f4ad541a4ed16b40d8c37f0929158d101",
+            "startBlock": 12135186
+        }
+    },
+    "goerli": {
+        "EasyAuction": {
+            "address": "0x1fBAb40C338E2e7243DA945820Ba680C92EF8281",
+            "startBlock": 7121757
+        }
+    }
+}

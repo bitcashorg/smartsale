@@ -1,0 +1,15 @@
+{
+  "site": {
+    "id": "14f1dbde-54c8-4fee-96ce-2a09c7afa5c6",
+    "team": "912909b4-2a6b-4542-907b-279ac70a8802",
+    "platform": "ipfs",
+    "source": "github",
+    "name": "flat-disk-7450"
+  },
+  "build": {
+    "baseDir": "",
+    "publicDir": "build",
+    "command": "yarn && yarn build",
+    "rootDir": ""
+  }
+}

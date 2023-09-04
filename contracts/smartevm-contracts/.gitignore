@@ -1,0 +1,8 @@
+node_modules
+build
+env/*
+coverage/*
+coverage.json
+your_address_inputs.txt
+signatures/*
+.env

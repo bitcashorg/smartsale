@@ -1,0 +1,47 @@
+specVersion: 0.0.2
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum/contract
+    name: EasyAuction
+    network: {{network}}
+    source:
+      address: '{{address}}'
+      abi: EasyAuction
+      startBlock: {{startBlock}}
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      entities:
+        - AuctionCleared
+        - CancellationSellOrder
+        - ClaimedFromOrder
+        - NewAuction
+        - NewSellOrder
+        - NewUser
+        - OwnershipTransferred
+        - UserRegistration
+      abis:
+        - name: EasyAuction
+          file: ./abis/EasyAuction.json
+        - name: ERC20Contract
+          file: ./abis/ERC20.json
+      eventHandlers:
+        - event: AuctionCleared(indexed uint256,uint96,uint96,bytes32)
+          handler: handleAuctionCleared
+        - event: CancellationSellOrder(indexed uint256,indexed uint64,uint96,uint96)
+          handler: handleCancellationSellOrder
+        - event: ClaimedFromOrder(indexed uint256,indexed uint64,uint96,uint96)
+          handler: handleClaimedFromOrder
+        - event: NewAuction(indexed uint256,indexed address,indexed address,uint256,uint256,uint64,uint96,uint96,uint256,uint256,address,bytes)
+          handler: handleNewAuction
+        - event: NewSellOrder(indexed uint256,indexed uint64,uint96,uint96)
+          handler: handleNewSellOrder
+        - event: NewUser(indexed uint64,indexed address)
+          handler: handleNewUser
+        - event: OwnershipTransferred(indexed address,indexed address)
+          handler: handleOwnershipTransferred
+        - event: UserRegistration(indexed address,uint64)
+          handler: handleUserRegistration
+      file: ./src/mapping.ts
