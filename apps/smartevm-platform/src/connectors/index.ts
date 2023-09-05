@@ -8,6 +8,7 @@ import { WalletConnectConnector as WC } from 'wagmi/connectors/walletConnect'
 import { infuraProvider } from 'wagmi/providers/infura'
 import { publicProvider } from 'wagmi/providers/public'
 
+import { INFURA_KEY, PORTIS_ID, WALLET_CONNECT_PROJECT_ID } from '../constants/config'
 import {
   ChainId,
   NETWORK_CONFIGS,
@@ -23,7 +24,6 @@ import {
   polygonMumbai,
   sepolia,
 } from '../utils/networkConfig'
-import { INFURA_KEY, PORTIS_ID, WALLET_CONNECT_PROJECT_ID } from '../constants/config'
 
 const { chains, publicClient } = configureChains(
   [

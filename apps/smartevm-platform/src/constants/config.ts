@@ -26,10 +26,10 @@ export const GRAPH_API_URL_DEVELOP_BSC_TESTNET = process.env.REACT_APP_GRAPH_API
 export const GRAPH_API_URL_PRODUCTION_BSC_TESTNET = process.env.REACT_APP_GRAPH_API_URL_BSC_TESTNET
 export const GRAPH_API_URL_DEVELOP_EOS_EVM_TESTNET =
   process.env.REACT_APP_GRAPH_API_URL_EOS_EVM_TESTNET ||
-  'http://localhost:8000/subgraphs/name/eosevm-testnet/easyauction'
+  'http://localhost:8000/subgraphs/name/eosevmtestnet/easyauction/'
 export const GRAPH_API_URL_PRODUCTION_EOS_EVM_TESTNET =
   process.env.REACT_APP_GRAPH_API_URL_EOS_EVM_TESTNET ||
-  'http://localhost:8000/subgraphs/name/eosevm-testnet/easyauction'
+  'http://localhost:8000/subgraphs/name/eosevmtestnet/easyauction/'
 // Infura bridges like 'https://mainnet.infura.io/v3/...'
 export const NETWORK_URL_GOERLI = process.env.REACT_APP_NETWORK_URL_GOERLI || ''
 export const NETWORK_URL_MAINNET = process.env.REACT_APP_NETWORK_URL_MAINNET || ''

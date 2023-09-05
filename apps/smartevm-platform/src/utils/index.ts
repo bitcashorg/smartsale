@@ -8,11 +8,11 @@ import { JSBI, Percent, Token, TokenAmount, WETH } from '@josojo/honeyswap-sdk'
 import { abi as IUniswapV2PairABI } from '@uniswap/v2-core/build/IUniswapV2Pair.json'
 import { PublicClient } from 'viem'
 
+import { getLogger } from './logger'
 import { ChainId, NETWORK_CONFIGS } from './networkConfig'
 import easyAuctionABI from '../constants/abis/easyAuction/easyAuction.json'
 import ERC20_ABI from '../constants/abis/erc20.json'
 import ERC20_BYTES32_ABI from '../constants/abis/erc20_bytes32.json'
-import { getLogger } from './logger'
 
 export { ChainId }
 

@@ -19,7 +19,7 @@ services:
       postgres_pass: let-me-in
       postgres_db: graph-node
       ipfs: 'ipfs:5001'
-      ethereum: 'mainnet:https://api.testnet.evm.eosnetwork.com'
+      ethereum: 'eosevmtestnet:https://api.testnet.evm.eosnetwork.com'
       GRAPH_LOG: info
   ipfs:
     image: ipfs/go-ipfs:v0.10.0
