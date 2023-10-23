@@ -1,5 +1,6 @@
 {
   "name": "gnosis-auction",
+  "version": "0.0.1",
   "description": "Gnosis Auction",
   "homepage": ".",
   "private": true,
