@@ -29,6 +29,10 @@ export class Order extends Entity {
     }
   }
 
+  static loadInBlock(id: string): Order | null {
+    return changetype<Order | null>(store.get_in_block("Order", id));
+  }
+
   static load(id: string): Order | null {
     return changetype<Order | null>(store.get("Order", id));
   }
@@ -169,6 +173,10 @@ export class User extends Entity {
     }
   }
 
+  static loadInBlock(id: string): User | null {
+    return changetype<User | null>(store.get_in_block("User", id));
+  }
+
   static load(id: string): User | null {
     return changetype<User | null>(store.get("User", id));
   }
@@ -229,6 +237,12 @@ export class AuctionDetail extends Entity {
       );
       store.set("AuctionDetail", id.toString(), this);
     }
+  }
+
+  static loadInBlock(id: string): AuctionDetail | null {
+    return changetype<AuctionDetail | null>(
+      store.get_in_block("AuctionDetail", id)
+    );
   }
 
   static load(id: string): AuctionDetail | null {

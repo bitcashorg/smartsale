@@ -71,7 +71,6 @@ const PrimaryInvertedCSS = css`
   }
 `
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const getButtonTypeStyles = (buttonType: ButtonType = ButtonType.primary): any => {
   if (buttonType === ButtonType.primary) {
     return PrimaryCSS

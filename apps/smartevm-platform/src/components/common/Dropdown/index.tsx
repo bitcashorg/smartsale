@@ -198,7 +198,6 @@ export const Dropdown: React.FC<Props> = (props) => {
     }
 
     // Note: This code handles closing when clickin outside of the dropdown
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const handleClick = (e: any) => {
       if (node && node.current && node.current.contains(e.target)) {
         return
@@ -232,31 +231,28 @@ export const Dropdown: React.FC<Props> = (props) => {
         isOpen={isOpen}
         noPadding
       >
-        {
-          // eslint-disable-next-line @typescript-eslint/no-explicit-any
-          items.map((item: any, index: number) => {
-            const isActive = activeItemHighlight && index === currentItem
-            const dropdownItem = React.cloneElement(item, {
-              className: `dropdownItem ${isActive && 'isActive'}`,
-              key: item.key ? item.key : index,
-              onClick: (e) => {
-                e.stopPropagation()
+        {items.map((item: any, index: number) => {
+          const isActive = activeItemHighlight && index === currentItem
+          const dropdownItem = React.cloneElement(item, {
+            className: `dropdownItem ${isActive && 'isActive'}`,
+            key: item.key ? item.key : index,
+            onClick: (e) => {
+              e.stopPropagation()
 
-                if (closeOnClick) {
-                  setIsOpen(false)
-                }
+              if (closeOnClick) {
+                setIsOpen(false)
+              }
 
-                if (!item.props.onClick) {
-                  return
-                }
+              if (!item.props.onClick) {
+                return
+              }
 
-                item.props.onClick()
-              },
-            })
-
-            return dropdownItem
+              item.props.onClick()
+            },
           })
-        }
+
+          return dropdownItem
+        })}
       </Items>
     </Wrapper>
   )

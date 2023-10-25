@@ -187,6 +187,7 @@ export const useSubmitAuction = () => {
 
     return writeContract(request)
       .then((response) => {
+        console.log('writting to the contract! Response', response)
         addTransaction(response, {
           summary: `Auctioned ${sellAmount} ${auctioningTokenData.symbol} for ${minBuyAmount} ${biddingTokenData?.symbol}.`,
         })
