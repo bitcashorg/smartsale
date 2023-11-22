@@ -5,7 +5,7 @@ use graph::prelude::web3::types::U256;
 use graph::runtime::gas::GasCounter;
 use graph::runtime::{AscIndexId, AscType, HostExportError};
 use graph::runtime::{AscPtr, ToAscObj};
-use graph::schema::InputSchema;
+use graph::schema::{EntityType, InputSchema};
 use graph::{components::store::*, ipfs_client::IpfsClient};
 use graph::{entity, prelude::*};
 use graph_chain_ethereum::{Chain, DataSource};
@@ -436,9 +436,10 @@ fn make_thing(id: &str, value: &str) -> (String, EntityModification) {
     const DOCUMENT: &str = " type Thing @entity { id: String!, value: String!, extra: String }";
     lazy_static! {
         static ref SCHEMA: InputSchema = InputSchema::raw(DOCUMENT, "doesntmatter");
+        static ref THING_TYPE: EntityType = SCHEMA.entity_type("Thing").unwrap();
     }
     let data = entity! { SCHEMA => id: id, value: value, extra: USER_DATA };
-    let key = EntityKey::data("Thing".to_string(), id);
+    let key = THING_TYPE.parse_key(id).unwrap();
     (
         format!("{{ \"id\": \"{}\", \"value\": \"{}\"}}", id, value),
         EntityModification::insert(key, data, 0),
@@ -963,7 +964,7 @@ async fn test_entity_store(api_version: Version) {
 
     let alex = entity! { schema => id: "alex", name: "Alex" };
     let steve = entity! { schema => id: "steve", name: "Steve" };
-    let user_type = EntityType::from("User");
+    let user_type = schema.entity_type("User").unwrap();
     test_store::insert_entities(
         &deployment,
         vec![(user_type.clone(), alex), (user_type, steve)],
@@ -1217,104 +1218,92 @@ async fn recursion_limit() {
         .contains("recursion limit reached"));
 }
 
+struct Host {
+    ctx: MappingContext<Chain>,
+    host_exports: host_exports::test_support::HostExports<Chain>,
+    stopwatch: StopwatchMetrics,
+    gas: GasCounter,
+}
+
+impl Host {
+    async fn new(schema: &str, deployment_hash: &str, wasm_file: &str) -> Host {
+        let version = ENV_VARS.mappings.max_api_version.clone();
+        let wasm_file = wasm_file_path(wasm_file, API_VERSION_0_0_5);
+
+        let ds = mock_data_source(&wasm_file, version.clone());
+
+        let store = STORE.clone();
+        let deployment = DeploymentHash::new(deployment_hash.to_string()).unwrap();
+        let deployment = test_store::create_test_subgraph(&deployment, schema).await;
+        let ctx = mock_context(deployment.clone(), ds, store.subgraph_store(), version);
+        let host_exports = host_exports::test_support::HostExports::new(&ctx);
+
+        let metrics_registry = Arc::new(MetricsRegistry::mock());
+        let stopwatch = StopwatchMetrics::new(
+            ctx.logger.clone(),
+            deployment.hash.clone(),
+            "test",
+            metrics_registry.clone(),
+        );
+        let gas = GasCounter::new();
+
+        Host {
+            ctx,
+            host_exports,
+            stopwatch,
+            gas,
+        }
+    }
+
+    fn store_set(
+        &mut self,
+        entity_type: &str,
+        id: &str,
+        data: Vec<(&str, &str)>,
+    ) -> Result<(), HostExportError> {
+        let data: Vec<_> = data.into_iter().map(|(k, v)| (k, Value::from(v))).collect();
+        self.store_setv(entity_type, id, data)
+    }
+
+    fn store_setv(
+        &mut self,
+        entity_type: &str,
+        id: &str,
+        data: Vec<(&str, Value)>,
+    ) -> Result<(), HostExportError> {
+        let id = String::from(id);
+        let data = HashMap::from_iter(data.into_iter().map(|(k, v)| (Word::from(k), v)));
+        self.host_exports.store_set(
+            &self.ctx.logger,
+            &mut self.ctx.state,
+            &self.ctx.proof_of_indexing,
+            entity_type.to_string(),
+            id,
+            data,
+            &self.stopwatch,
+            &self.gas,
+        )
+    }
+
+    fn store_get(
+        &mut self,
+        entity_type: &str,
+        id: &str,
+    ) -> Result<Option<Cow<Entity>>, anyhow::Error> {
+        let user_id = String::from(id);
+        self.host_exports.store_get(
+            &mut self.ctx.state,
+            entity_type.to_string(),
+            user_id,
+            &self.gas,
+        )
+    }
+}
+
 /// Test the various ways in which `store_set` sets the `id` of entities and
 /// errors when there are issues
 #[tokio::test]
 async fn test_store_set_id() {
-    struct Host {
-        ctx: MappingContext<Chain>,
-        host_exports: host_exports::test_support::HostExports<Chain>,
-        stopwatch: StopwatchMetrics,
-        gas: GasCounter,
-    }
-
-    impl Host {
-        async fn new() -> Host {
-            let version = ENV_VARS.mappings.max_api_version.clone();
-            let wasm_file = wasm_file_path("boolean.wasm", API_VERSION_0_0_5);
-
-            let ds = mock_data_source(&wasm_file, version.clone());
-
-            let store = STORE.clone();
-            let deployment = DeploymentHash::new("hostStoreSetId".to_string()).unwrap();
-            let deployment = test_store::create_test_subgraph(
-                &deployment,
-                "type User @entity {
-                    id: ID!,
-                    name: String,
-                }
-
-                type Binary @entity {
-                    id: Bytes!
-                }",
-            )
-            .await;
-
-            let ctx = mock_context(deployment.clone(), ds, store.subgraph_store(), version);
-            let host_exports = host_exports::test_support::HostExports::new(&ctx);
-
-            let metrics_registry = Arc::new(MetricsRegistry::mock());
-            let stopwatch = StopwatchMetrics::new(
-                ctx.logger.clone(),
-                deployment.hash.clone(),
-                "test",
-                metrics_registry.clone(),
-            );
-            let gas = GasCounter::new();
-
-            Host {
-                ctx,
-                host_exports,
-                stopwatch,
-                gas,
-            }
-        }
-
-        fn store_set(
-            &mut self,
-            entity_type: &str,
-            id: &str,
-            data: Vec<(&str, &str)>,
-        ) -> Result<(), HostExportError> {
-            let data: Vec<_> = data.into_iter().map(|(k, v)| (k, Value::from(v))).collect();
-            self.store_setv(entity_type, id, data)
-        }
-
-        fn store_setv(
-            &mut self,
-            entity_type: &str,
-            id: &str,
-            data: Vec<(&str, Value)>,
-        ) -> Result<(), HostExportError> {
-            let id = String::from(id);
-            let data = HashMap::from_iter(data.into_iter().map(|(k, v)| (Word::from(k), v)));
-            self.host_exports.store_set(
-                &self.ctx.logger,
-                &mut self.ctx.state,
-                &self.ctx.proof_of_indexing,
-                entity_type.to_string(),
-                id,
-                data,
-                &self.stopwatch,
-                &self.gas,
-            )
-        }
-
-        fn store_get(
-            &mut self,
-            entity_type: &str,
-            id: &str,
-        ) -> Result<Option<Cow<Entity>>, anyhow::Error> {
-            let user_id = String::from(id);
-            self.host_exports.store_get(
-                &mut self.ctx.state,
-                entity_type.to_string(),
-                user_id,
-                &self.gas,
-            )
-        }
-    }
-
     #[track_caller]
     fn err_says<E: std::fmt::Debug + std::fmt::Display>(err: E, exp: &str) {
         let err = err.to_string();
@@ -1326,7 +1315,17 @@ async fn test_store_set_id() {
     const BID: &str = "0xdeadbeef";
     const BINARY: &str = "Binary";
 
-    let mut host = Host::new().await;
+    let schema = "type User @entity {
+        id: ID!,
+        name: String,
+    }
+
+    type Binary @entity {
+        id: Bytes!,
+        name: String,
+    }";
+
+    let mut host = Host::new(schema, "hostStoreSetId", "boolean.wasm").await;
 
     host.store_set(USER, UID, vec![("id", "u1"), ("name", "user1")])
         .expect("setting with same id works");
@@ -1342,7 +1341,7 @@ async fn test_store_set_id() {
     let entity = host.store_get(USER, UID).unwrap().unwrap();
     assert_eq!(
         "u1",
-        entity.id().as_str(),
+        entity.id().to_string(),
         "store.set sets id automatically"
     );
 
@@ -1350,7 +1349,10 @@ async fn test_store_set_id() {
     let err = host
         .store_setv(USER, "0xbeef", vec![("id", beef)])
         .expect_err("setting with Bytes id fails");
-    err_says(err, "must have type ID! but has type Bytes");
+    err_says(
+        err,
+        "Attribute `User.id` has wrong type: expected String but got Bytes",
+    );
 
     host.store_setv(USER, UID, vec![("id", Value::Int(32))])
         .expect_err("id must be a string");
@@ -1363,7 +1365,10 @@ async fn test_store_set_id() {
     let err = host
         .store_set(BINARY, BID, vec![("id", BID), ("name", "user1")])
         .expect_err("setting with string id in values fails");
-    err_says(err, "must have type Bytes! but has type String");
+    err_says(
+        err,
+        "Attribute `Binary.id` has wrong type: expected Bytes but got String",
+    );
 
     host.store_setv(
         BINARY,
@@ -1382,10 +1387,84 @@ async fn test_store_set_id() {
         .expect("setting with no id works");
 
     let entity = host.store_get(BINARY, BID).unwrap().unwrap();
-    assert_eq!(BID, entity.id().as_str(), "store.set sets id automatically");
+    assert_eq!(
+        BID,
+        entity.id().to_string(),
+        "store.set sets id automatically"
+    );
 
     let err = host
         .store_setv(BINARY, BID, vec![("id", Value::Int(32))])
         .expect_err("id must be Bytes");
-    err_says(err, "Entity has non-string `id` attribute");
+    err_says(
+        err,
+        "Attribute `Binary.id` has wrong type: expected Bytes but got Int",
+    );
+}
+
+/// Test setting fields that are not defined in the schema
+/// This should return an error
+#[tokio::test]
+async fn test_store_set_invalid_fields() {
+    #[track_caller]
+    fn err_says<E: std::fmt::Debug + std::fmt::Display>(err: E, exp: &str) {
+        let err = err.to_string();
+        assert!(err.contains(exp), "expected `{err}` to contain `{exp}`");
+    }
+
+    const UID: &str = "u1";
+    const USER: &str = "User";
+    const BID: &str = "0xdeadbeef";
+    const BINARY: &str = "Binary";
+    let schema = "
+    type User @entity {
+        id: ID!,
+        name: String
+    }
+
+    type Binary @entity {
+        id: Bytes!,
+        test: String,
+        test2: String
+    }";
+
+    let mut host = Host::new(schema, "hostStoreSetInvalidFields", "boolean.wasm").await;
+
+    host.store_set(USER, UID, vec![("id", "u1"), ("name", "user1")])
+        .unwrap();
+
+    let err = host
+        .store_set(
+            USER,
+            UID,
+            vec![
+                ("id", "u1"),
+                ("name", "user1"),
+                ("test", "invalid_field"),
+                ("test2", "invalid_field"),
+            ],
+        )
+        .err()
+        .unwrap();
+
+    // The order of `test` and `test2` is not guranteed
+    // So we just check the string contains them
+    let err_string = err.to_string();
+    dbg!(err_string.as_str());
+    assert!(err_string
+        .contains("The provided entity has fields not defined in the schema for entity `User`"));
+
+    let err = host
+        .store_set(
+            USER,
+            UID,
+            vec![("id", "u1"), ("name", "user1"), ("test3", "invalid_field")],
+        )
+        .err()
+        .unwrap();
+
+    err_says(
+        err,
+        "Unknown key `test3`. It probably is not part of the schema",
+    )
 }

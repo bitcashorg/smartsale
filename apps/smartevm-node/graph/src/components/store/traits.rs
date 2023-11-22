@@ -1,14 +1,19 @@
+use anyhow::Error;
+use async_trait::async_trait;
 use web3::types::{Address, H256};
 
 use super::*;
 use crate::blockchain::block_stream::FirehoseCursor;
+use crate::components::metrics::stopwatch::StopwatchMetrics;
 use crate::components::server::index_node::VersionInfo;
+use crate::components::subgraph::SubgraphVersionSwitchingMode;
 use crate::components::transaction_receipt;
 use crate::components::versions::ApiVersion;
 use crate::data::query::Trace;
+use crate::data::store::QueryObject;
 use crate::data::subgraph::{status, DeploymentFeatures};
-use crate::data::value::Object;
 use crate::data::{query::QueryTarget, subgraph::schema::*};
+use crate::prelude::{DeploymentState, NodeId, QueryExecutionError, SubgraphName};
 use crate::schema::{ApiSchema, InputSchema};
 
 pub trait SubscriptionManager: Send + Sync + 'static {
@@ -132,7 +137,7 @@ pub trait SubgraphStore: Send + Sync + 'static {
     ) -> Result<Vec<EntityOperation>, StoreError>;
 
     /// Return the GraphQL schema supplied by the user
-    fn input_schema(&self, subgraph_id: &DeploymentHash) -> Result<Arc<InputSchema>, StoreError>;
+    fn input_schema(&self, subgraph_id: &DeploymentHash) -> Result<InputSchema, StoreError>;
 
     /// Return a bool represeting whether there is a pending graft for the subgraph
     fn graft_pending(&self, id: &DeploymentHash) -> Result<bool, StoreError>;
@@ -220,7 +225,7 @@ pub trait ReadStore: Send + Sync + 'static {
         query_derived: &DerivedEntityQuery,
     ) -> Result<BTreeMap<EntityKey, Entity>, StoreError>;
 
-    fn input_schema(&self) -> Arc<InputSchema>;
+    fn input_schema(&self) -> InputSchema;
 }
 
 // This silly impl is needed until https://github.com/rust-lang/rust/issues/65991 is stable.
@@ -243,12 +248,14 @@ impl<T: ?Sized + ReadStore> ReadStore for Arc<T> {
         (**self).get_derived(entity_derived)
     }
 
-    fn input_schema(&self) -> Arc<InputSchema> {
+    fn input_schema(&self) -> InputSchema {
         (**self).input_schema()
     }
 }
 
 pub trait DeploymentCursorTracker: Sync + Send + 'static {
+    fn input_schema(&self) -> InputSchema;
+
     /// Get a pointer to the most recently processed block in the subgraph.
     fn block_ptr(&self) -> Option<BlockPtr>;
 
@@ -265,6 +272,10 @@ impl<T: ?Sized + DeploymentCursorTracker> DeploymentCursorTracker for Arc<T> {
 
     fn firehose_cursor(&self) -> FirehoseCursor {
         (**self).firehose_cursor()
+    }
+
+    fn input_schema(&self) -> InputSchema {
+        (**self).input_schema()
     }
 }
 
@@ -526,7 +537,7 @@ pub trait QueryStore: Send + Sync {
     fn find_query_values(
         &self,
         query: EntityQuery,
-    ) -> Result<(Vec<Object>, Trace), QueryExecutionError>;
+    ) -> Result<(Vec<QueryObject>, Trace), QueryExecutionError>;
 
     async fn is_deployment_synced(&self) -> Result<bool, Error>;
 
@@ -552,6 +563,8 @@ pub trait QueryStore: Send + Sync {
     async fn deployment_state(&self) -> Result<DeploymentState, QueryExecutionError>;
 
     fn api_schema(&self) -> Result<Arc<ApiSchema>, QueryExecutionError>;
+
+    fn input_schema(&self) -> Result<InputSchema, QueryExecutionError>;
 
     fn network_name(&self) -> &str;
 

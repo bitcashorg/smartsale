@@ -1,7 +1,6 @@
-use crate::components::store::EntityType;
 use crate::data::graphql::ext::{DirectiveExt, DirectiveFinder, DocumentExt, TypeExt, ValueExt};
 use crate::data::graphql::ObjectTypeExt;
-use crate::data::store::ValueType;
+use crate::data::store::{ValueType, ID};
 use crate::data::subgraph::DeploymentHash;
 use crate::prelude::{
     anyhow,
@@ -28,12 +27,16 @@ mod api;
 /// Utilities for working with GraphQL schema ASTs.
 pub mod ast;
 
+mod entity_key;
+mod entity_type;
 mod fulltext;
 mod input_schema;
 
-pub use api::{api_schema, APISchemaError};
+pub use api::{api_schema, is_introspection_field, APISchemaError, INTROSPECTION_QUERY_TYPE};
 
 pub use api::{ApiSchema, ErrorPolicy};
+pub use entity_key::EntityKey;
+pub use entity_type::{AsEntityTypeName, EntityType};
 pub use fulltext::{FulltextAlgorithm, FulltextConfig, FulltextDefinition, FulltextLanguage};
 pub use input_schema::InputSchema;
 
@@ -120,10 +123,10 @@ pub struct Schema {
     pub document: s::Document,
 
     // Maps type name to implemented interfaces.
-    pub interfaces_for_type: BTreeMap<EntityType, Vec<InterfaceType>>,
+    pub interfaces_for_type: BTreeMap<String, Vec<InterfaceType>>,
 
     // Maps an interface name to the list of entities that implement it.
-    pub types_for_interface: BTreeMap<EntityType, Vec<ObjectType>>,
+    pub types_for_interface: BTreeMap<String, Vec<ObjectType>>,
 }
 
 impl Schema {
@@ -152,8 +155,8 @@ impl Schema {
         document: &s::Document,
     ) -> Result<
         (
-            BTreeMap<EntityType, Vec<InterfaceType>>,
-            BTreeMap<EntityType, Vec<ObjectType>>,
+            BTreeMap<String, Vec<InterfaceType>>,
+            BTreeMap<String, Vec<ObjectType>>,
         ),
         SchemaValidationError,
     > {
@@ -162,20 +165,20 @@ impl Schema {
         let mut types_for_interface =
             BTreeMap::from_iter(document.definitions.iter().filter_map(|d| match d {
                 Definition::TypeDefinition(TypeDefinition::Interface(t)) => {
-                    Some((EntityType::from(t), vec![]))
+                    Some((t.name.to_string(), vec![]))
                 }
                 _ => None,
             }));
         let mut interfaces_for_type = BTreeMap::<_, Vec<_>>::new();
 
         for object_type in document.get_object_type_definitions() {
-            for implemented_interface in object_type.implements_interfaces.clone() {
+            for implemented_interface in &object_type.implements_interfaces {
                 let interface_type = document
                     .definitions
                     .iter()
                     .find_map(|def| match def {
                         Definition::TypeDefinition(TypeDefinition::Interface(i))
-                            if i.name.eq(&implemented_interface) =>
+                            if i.name.eq(implemented_interface) =>
                         {
                             Some(i.clone())
                         }
@@ -188,11 +191,11 @@ impl Schema {
                 Self::validate_interface_implementation(object_type, &interface_type)?;
 
                 interfaces_for_type
-                    .entry(EntityType::from(object_type))
+                    .entry(object_type.name.to_owned())
                     .or_default()
                     .push(interface_type);
                 types_for_interface
-                    .get_mut(&EntityType::new(implemented_interface))
+                    .get_mut(implemented_interface)
                     .unwrap()
                     .push(object_type.clone());
             }
@@ -208,12 +211,12 @@ impl Schema {
     }
 
     /// Returned map has one an entry for each interface in the schema.
-    pub fn types_for_interface(&self) -> &BTreeMap<EntityType, Vec<ObjectType>> {
+    pub fn types_for_interface(&self) -> &BTreeMap<String, Vec<ObjectType>> {
         &self.types_for_interface
     }
 
     /// Returns `None` if the type implements no interfaces.
-    pub fn interfaces_for_type(&self, type_name: &EntityType) -> Option<&Vec<InterfaceType>> {
+    pub fn interfaces_for_type(&self, type_name: &str) -> Option<&Vec<InterfaceType>> {
         self.interfaces_for_type.get(type_name)
     }
 
@@ -783,7 +786,7 @@ impl Schema {
             let id_types: HashSet<&str> = HashSet::from_iter(
                 obj_types
                     .iter()
-                    .filter_map(|obj_type| obj_type.field("id"))
+                    .filter_map(|obj_type| obj_type.field(&*ID))
                     .map(|f| f.field_type.get_base_type())
                     .map(|name| if name == "ID" { "String" } else { name }),
             );

@@ -2,27 +2,23 @@
 use diesel::connection::SimpleConnection as _;
 use diesel::pg::PgConnection;
 use graph::components::store::write::RowGroup;
-use graph::components::store::EntityKey;
 use graph::data::store::scalar;
-use graph::data::value::Word;
 use graph::data_source::CausalityRegion;
 use graph::entity;
-use graph::prelude::{BlockNumber, EntityModification, EntityQuery, MetricsRegistry};
-use graph::schema::InputSchema;
+use graph::prelude::{BlockNumber, EntityModification, EntityQuery, MetricsRegistry, StoreError};
+use graph::schema::{EntityKey, EntityType, InputSchema};
 use hex_literal::hex;
 use lazy_static::lazy_static;
 use std::collections::BTreeSet;
 use std::str::FromStr;
 use std::{collections::BTreeMap, sync::Arc};
 
+use graph::data::store::scalar::{BigDecimal, BigInt};
+use graph::data::store::IdList;
 use graph::prelude::{
     o, slog, web3::types::H256, AttributeNames, ChildMultiplicity, DeploymentHash, Entity,
     EntityCollection, EntityLink, EntityWindow, Logger, ParentLink, StopwatchMetrics,
     WindowAttribute, BLOCK_NUMBER_MAX,
-};
-use graph::{
-    components::store::EntityType,
-    data::store::scalar::{BigDecimal, BigInt},
 };
 use graph_store_postgres::{
     layout_for_tests::make_dummy_site,
@@ -63,7 +59,7 @@ lazy_static! {
         name: "Beef",
     };
     static ref NAMESPACE: Namespace = Namespace::new("sgd0815".to_string()).unwrap();
-    static ref THING: EntityType = EntityType::from("Thing");
+    static ref THING_TYPE: EntityType = THINGS_SCHEMA.entity_type("Thing").unwrap();
     static ref MOCK_STOPWATCH: StopwatchMetrics = StopwatchMetrics::new(
         Logger::root(slog::Discard, o!()),
         THINGS_SUBGRAPH_ID.clone(),
@@ -122,9 +118,9 @@ pub fn row_group_delete(
 }
 
 fn insert_entity(conn: &PgConnection, layout: &Layout, entity_type: &str, entity: Entity) {
-    let key = EntityKey::data(entity_type.to_owned(), entity.id());
+    let entity_type = layout.input_schema.entity_type(entity_type).unwrap();
+    let key = entity_type.key(entity.id());
 
-    let entity_type = EntityType::from(entity_type);
     let entities = vec![(key.clone(), entity)];
     let group = row_group_insert(&entity_type, 0, entities);
     let errmsg = format!("Failed to insert entity {}[{}]", entity_type, key.entity_id);
@@ -215,14 +211,19 @@ where
 #[test]
 fn bad_id() {
     run_test(|conn, layout| {
+        fn find(
+            conn: &PgConnection,
+            layout: &Layout,
+            id: &str,
+        ) -> Result<Option<Entity>, StoreError> {
+            let key = THING_TYPE.parse_key(id)?;
+            layout.find(conn, &key, BLOCK_NUMBER_MAX)
+        }
+
         // We test that we get errors for various strings that are not
         // valid 'Bytes' strings; we use `find` to force the conversion
         // from String -> Bytes internally
-        let res = layout.find(
-            conn,
-            &EntityKey::data(THING.as_str(), "bad"),
-            BLOCK_NUMBER_MAX,
-        );
+        let res = find(conn, layout, "bad");
         assert!(res.is_err());
         assert_eq!(
             "store error: Odd number of digits",
@@ -230,11 +231,7 @@ fn bad_id() {
         );
 
         // We do not allow the `\x` prefix that Postgres uses
-        let res = layout.find(
-            conn,
-            &EntityKey::data(THING.as_str(), "\\xbadd"),
-            BLOCK_NUMBER_MAX,
-        );
+        let res = find(conn, layout, "\\xbadd");
         assert!(res.is_err());
         assert_eq!(
             "store error: Invalid character \'\\\\\' at position 0",
@@ -242,19 +239,11 @@ fn bad_id() {
         );
 
         // Having the '0x' prefix is ok
-        let res = layout.find(
-            conn,
-            &EntityKey::data(THING.as_str(), "0xbadd"),
-            BLOCK_NUMBER_MAX,
-        );
+        let res = find(conn, layout, "0xbadd");
         assert!(res.is_ok());
 
         // Using non-hex characters is also bad
-        let res = layout.find(
-            conn,
-            &EntityKey::data(THING.as_str(), "nope"),
-            BLOCK_NUMBER_MAX,
-        );
+        let res = find(conn, layout, "nope");
         assert!(res.is_err());
         assert_eq!(
             "store error: Invalid character \'n\' at position 0",
@@ -266,26 +255,24 @@ fn bad_id() {
 #[test]
 fn find() {
     run_test(|conn, layout| {
+        fn find_entity(conn: &PgConnection, layout: &Layout, id: &str) -> Option<Entity> {
+            let key = THING_TYPE.parse_key(id).unwrap();
+            layout
+                .find(conn, &key, BLOCK_NUMBER_MAX)
+                .expect(&format!("Failed to read Thing[{}]", id))
+        }
+
         const ID: &str = "deadbeef";
         const NAME: &str = "Beef";
         insert_thing(conn, layout, ID, NAME);
 
         // Happy path: find existing entity
-        let entity = layout
-            .find(conn, &EntityKey::data(THING.as_str(), ID), BLOCK_NUMBER_MAX)
-            .expect("Failed to read Thing[deadbeef]")
-            .unwrap();
+        let entity = find_entity(conn, layout, ID).unwrap();
         assert_entity_eq!(scrub(&BEEF_ENTITY), entity);
         assert!(CausalityRegion::from_entity(&entity) == CausalityRegion::ONCHAIN);
 
         // Find non-existing entity
-        let entity = layout
-            .find(
-                conn,
-                &EntityKey::data(THING.as_str(), "badd"),
-                BLOCK_NUMBER_MAX,
-            )
-            .expect("Failed to read Thing[badd]");
+        let entity = find_entity(conn, layout, "badd");
         assert!(entity.is_none());
     });
 }
@@ -301,26 +288,22 @@ fn find_many() {
         insert_thing(conn, layout, ID2, NAME2);
 
         let mut id_map = BTreeMap::default();
-        id_map.insert(
-            (THING.clone(), CausalityRegion::ONCHAIN),
-            vec![ID.to_string(), ID2.to_string(), "badd".to_string()],
-        );
+        let ids = IdList::try_from_iter(
+            &*THING_TYPE,
+            vec![ID, ID2, "badd"]
+                .into_iter()
+                .map(|id| THING_TYPE.parse_id(id).unwrap()),
+        )
+        .unwrap();
+        id_map.insert((THING_TYPE.clone(), CausalityRegion::ONCHAIN), ids);
 
         let entities = layout
             .find_many(conn, &id_map, BLOCK_NUMBER_MAX)
             .expect("Failed to read many things");
         assert_eq!(2, entities.len());
 
-        let id_key = EntityKey {
-            entity_id: ID.into(),
-            entity_type: THING.clone(),
-            causality_region: CausalityRegion::ONCHAIN,
-        };
-        let id2_key = EntityKey {
-            entity_id: ID2.into(),
-            entity_type: THING.clone(),
-            causality_region: CausalityRegion::ONCHAIN,
-        };
+        let id_key = THING_TYPE.parse_key(ID).unwrap();
+        let id2_key = THING_TYPE.parse_key(ID2).unwrap();
         assert!(entities.contains_key(&id_key), "Missing ID");
         assert!(entities.contains_key(&id2_key), "Missing ID2");
     });
@@ -334,7 +317,7 @@ fn update() {
         // Update the entity
         let mut entity = BEEF_ENTITY.clone();
         entity.set("name", "Moo").unwrap();
-        let key = EntityKey::data("Thing".to_owned(), entity.id());
+        let key = THING_TYPE.key(entity.id());
 
         let entity_id = entity.id();
         let entity_type = key.entity_type.clone();
@@ -345,11 +328,7 @@ fn update() {
             .expect("Failed to update");
 
         let actual = layout
-            .find(
-                conn,
-                &EntityKey::data(THING.as_str(), entity_id),
-                BLOCK_NUMBER_MAX,
-            )
+            .find(conn, &THING_TYPE.key(entity_id), BLOCK_NUMBER_MAX)
             .expect("Failed to read Thing[deadbeef]")
             .unwrap();
 
@@ -368,7 +347,7 @@ fn delete() {
         insert_entity(conn, layout, "Thing", two);
 
         // Delete where nothing is getting deleted
-        let key = EntityKey::data("Thing".to_owned(), "ffff".to_owned());
+        let key = THING_TYPE.parse_key("ffff").unwrap();
         let entity_type = key.entity_type.clone();
         let mut entity_keys = vec![key.clone()];
         let group = row_group_delete(&entity_type, 1, entity_keys.clone());
@@ -380,7 +359,7 @@ fn delete() {
         // Delete entity two
         entity_keys
             .get_mut(0)
-            .map(|key| key.entity_id = Word::from(TWO_ID))
+            .map(|key| key.entity_id = entity_type.parse_id(TWO_ID).unwrap())
             .expect("Failed to update entity types");
         let group = row_group_delete(&entity_type, 1, entity_keys);
         let count = layout
@@ -447,7 +426,7 @@ fn make_thing_tree(conn: &PgConnection, layout: &Layout) -> (Entity, Entity, Ent
 
 #[test]
 fn query() {
-    fn fetch(conn: &PgConnection, layout: &Layout, coll: EntityCollection) -> Vec<Word> {
+    fn fetch(conn: &PgConnection, layout: &Layout, coll: EntityCollection) -> Vec<String> {
         let id = DeploymentHash::new("QmXW3qvxV7zXnwRntpj7yoK8HZVtaraZ67uMqaLRvXdxha").unwrap();
         let query = EntityQuery::new(id, BLOCK_NUMBER_MAX, coll).first(10);
         layout
@@ -455,7 +434,7 @@ fn query() {
             .map(|(entities, _)| entities)
             .expect("the query succeeds")
             .into_iter()
-            .map(|e| e.id())
+            .map(|e| e.id().to_string())
             .collect::<Vec<_>>()
     }
 
@@ -472,15 +451,15 @@ fn query() {
         // for a discussion of the various types of relationships and queries
 
         // EntityCollection::All
-        let coll = EntityCollection::All(vec![(THING.clone(), AttributeNames::All)]);
+        let coll = EntityCollection::All(vec![(THING_TYPE.clone(), AttributeNames::All)]);
         let things = fetch(conn, layout, coll);
         assert_eq!(vec![CHILD1, CHILD2, ROOT, GRANDCHILD1, GRANDCHILD2], things);
 
         // EntityCollection::Window, type A, many
         //   things(where: { children_contains: [CHILD1] }) { id }
         let coll = EntityCollection::Window(vec![EntityWindow {
-            child_type: THING.clone(),
-            ids: vec![CHILD1.to_owned()],
+            child_type: THING_TYPE.clone(),
+            ids: THING_TYPE.parse_ids(vec![CHILD1]).unwrap(),
             link: EntityLink::Direct(
                 WindowAttribute::List("children".to_string()),
                 ChildMultiplicity::Many,
@@ -493,8 +472,10 @@ fn query() {
         // EntityCollection::Window, type A, single
         //   things(where: { children_contains: [GRANDCHILD1, GRANDCHILD2] }) { id }
         let coll = EntityCollection::Window(vec![EntityWindow {
-            child_type: THING.clone(),
-            ids: vec![GRANDCHILD1.to_owned(), GRANDCHILD2.to_owned()],
+            child_type: THING_TYPE.clone(),
+            ids: THING_TYPE
+                .parse_ids(vec![GRANDCHILD1, GRANDCHILD2])
+                .unwrap(),
             link: EntityLink::Direct(
                 WindowAttribute::List("children".to_string()),
                 ChildMultiplicity::Single,
@@ -507,8 +488,8 @@ fn query() {
         // EntityCollection::Window, type B, many
         //   things(where: { parent: [ROOT] }) { id }
         let coll = EntityCollection::Window(vec![EntityWindow {
-            child_type: THING.clone(),
-            ids: vec![ROOT.to_owned()],
+            child_type: THING_TYPE.clone(),
+            ids: THING_TYPE.parse_ids(vec![ROOT]).unwrap(),
             link: EntityLink::Direct(
                 WindowAttribute::Scalar("parent".to_string()),
                 ChildMultiplicity::Many,
@@ -521,8 +502,8 @@ fn query() {
         // EntityCollection::Window, type B, single
         //   things(where: { parent: [CHILD1, CHILD2] }) { id }
         let coll = EntityCollection::Window(vec![EntityWindow {
-            child_type: THING.clone(),
-            ids: vec![CHILD1.to_owned(), CHILD2.to_owned()],
+            child_type: THING_TYPE.clone(),
+            ids: THING_TYPE.parse_ids(vec![CHILD1, CHILD2]).unwrap(),
             link: EntityLink::Direct(
                 WindowAttribute::Scalar("parent".to_string()),
                 ChildMultiplicity::Single,
@@ -536,11 +517,11 @@ fn query() {
         //   things { children { id } }
         // This is the inner 'children' query
         let coll = EntityCollection::Window(vec![EntityWindow {
-            child_type: THING.clone(),
-            ids: vec![ROOT.to_owned()],
+            child_type: THING_TYPE.clone(),
+            ids: THING_TYPE.parse_ids(vec![ROOT]).unwrap(),
             link: EntityLink::Parent(
-                THING.clone(),
-                ParentLink::List(vec![vec![CHILD1.to_owned(), CHILD2.to_owned()]]),
+                THING_TYPE.clone(),
+                ParentLink::List(vec![THING_TYPE.parse_ids(vec![CHILD1, CHILD2]).unwrap()]),
             ),
             column_names: AttributeNames::All,
         }]);
@@ -551,11 +532,11 @@ fn query() {
         //   things { parent { id } }
         // This is the inner 'parent' query
         let coll = EntityCollection::Window(vec![EntityWindow {
-            child_type: THING.clone(),
-            ids: vec![CHILD1.to_owned(), CHILD2.to_owned()],
+            child_type: THING_TYPE.clone(),
+            ids: THING_TYPE.parse_ids(vec![CHILD1, CHILD2]).unwrap(),
             link: EntityLink::Parent(
-                THING.clone(),
-                ParentLink::Scalar(vec![ROOT.to_owned(), ROOT.to_owned()]),
+                THING_TYPE.clone(),
+                ParentLink::Scalar(THING_TYPE.parse_ids(vec![ROOT, ROOT]).unwrap()),
             ),
             column_names: AttributeNames::All,
         }]);

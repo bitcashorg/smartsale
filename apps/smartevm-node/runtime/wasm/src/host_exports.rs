@@ -6,6 +6,7 @@ use std::time::{Duration, Instant};
 
 use graph::data::value::Word;
 
+use graph::schema::EntityType;
 use never::Never;
 use semver::Version;
 use wasmtime::Trap;
@@ -13,11 +14,10 @@ use web3::types::H160;
 
 use graph::blockchain::Blockchain;
 use graph::components::store::{EnsLookup, GetScope, LoadRelatedRequest};
-use graph::components::store::{EntityKey, EntityType};
 use graph::components::subgraph::{
     PoICausalityRegion, ProofOfIndexingEvent, SharedProofOfIndexing,
 };
-use graph::data::store;
+use graph::data::store::{self};
 use graph::data_source::{CausalityRegion, DataSource, DataSourceTemplate, EntityTypeAccess};
 use graph::ensure;
 use graph::prelude::ethabi::param_type::Reader;
@@ -162,59 +162,59 @@ impl<C: Blockchain> HostExports<C> {
         stopwatch: &StopwatchMetrics,
         gas: &GasCounter,
     ) -> Result<(), HostExportError> {
-        let poi_section = stopwatch.start_section("host_export_store_set__proof_of_indexing");
-        write_poi_event(
-            proof_of_indexing,
-            &ProofOfIndexingEvent::SetEntity {
-                entity_type: &entity_type,
-                id: &entity_id,
-                data: &data,
-            },
-            &self.poi_causality_region,
-            logger,
-        );
-        poi_section.end();
-
-        let key = EntityKey {
-            entity_type: EntityType::new(entity_type),
-            entity_id: entity_id.into(),
-            causality_region: self.data_source_causality_region,
-        };
+        let entity_type = state.entity_cache.schema.entity_type(&entity_type)?;
+        let key = entity_type.parse_key_in(entity_id, self.data_source_causality_region)?;
         self.check_entity_type_access(&key.entity_type)?;
 
         gas.consume_host_fn(gas::STORE_SET.with_args(complexity::Linear, (&key, &data)))?;
 
-        fn check_id(key: &EntityKey, prev_id: &str) -> Result<(), anyhow::Error> {
-            if prev_id != key.entity_id.as_str() {
-                Err(anyhow!(
-                    "Value of {} attribute 'id' conflicts with ID passed to `store.set()`: \
-                {} != {}",
-                    key.entity_type,
-                    prev_id,
-                    key.entity_id,
-                ))
-            } else {
-                Ok(())
-            }
-        }
-
         // Set the id if there isn't one yet, and make sure that a
         // previously set id agrees with the one in the `key`
         match data.get(&store::ID) {
-            Some(Value::String(s)) => check_id(&key, s)?,
-            Some(Value::Bytes(b)) => check_id(&key, &b.to_string())?,
-            Some(_) => {
-                // The validation will catch the type mismatch
+            Some(v) => {
+                if v != &key.entity_id {
+                    if v.type_name() != key.entity_id.id_type().as_str() {
+                        return Err(anyhow!(
+                            "Attribute `{}.id` has wrong type: expected {} but got {}",
+                            key.entity_type,
+                            key.entity_id.id_type().as_str(),
+                            v.type_name(),
+                        )
+                        .into());
+                    }
+                    return Err(anyhow!(
+                        "Value of {} attribute 'id' conflicts with ID passed to `store.set()`: \
+                    {:?} != {:?}",
+                        key.entity_type,
+                        v,
+                        key.entity_id,
+                    )
+                    .into());
+                }
             }
             None => {
-                let value = state.entity_cache.schema.id_value(&key)?;
+                let value = Value::from(key.entity_id.clone());
                 data.insert(store::ID.clone(), value);
             }
         }
 
         let entity = state
             .entity_cache
-            .make_entity(data.into_iter().map(|(key, value)| (key, value)))?;
+            .make_entity(data.into_iter().map(|(key, value)| (key, value)))
+            .map_err(|e| HostExportError::Deterministic(anyhow!(e)))?;
+
+        let poi_section = stopwatch.start_section("host_export_store_set__proof_of_indexing");
+        write_poi_event(
+            proof_of_indexing,
+            &ProofOfIndexingEvent::SetEntity {
+                entity_type: &key.entity_type.as_str(),
+                id: &key.entity_id.to_string(),
+                data: &entity,
+            },
+            &self.poi_causality_region,
+            logger,
+        );
+        poi_section.end();
 
         state.entity_cache.set(key, entity)?;
 
@@ -239,11 +239,8 @@ impl<C: Blockchain> HostExports<C> {
             &self.poi_causality_region,
             logger,
         );
-        let key = EntityKey {
-            entity_type: EntityType::new(entity_type),
-            entity_id: entity_id.into(),
-            causality_region: self.data_source_causality_region,
-        };
+        let entity_type = state.entity_cache.schema.entity_type(&entity_type)?;
+        let key = entity_type.parse_key_in(entity_id, self.data_source_causality_region)?;
         self.check_entity_type_access(&key.entity_type)?;
 
         gas.consume_host_fn(gas::STORE_REMOVE.with_args(complexity::Size, &key))?;
@@ -261,11 +258,8 @@ impl<C: Blockchain> HostExports<C> {
         gas: &GasCounter,
         scope: GetScope,
     ) -> Result<Option<Cow<'a, Entity>>, anyhow::Error> {
-        let store_key = EntityKey {
-            entity_type: EntityType::new(entity_type),
-            entity_id: entity_id.into(),
-            causality_region: self.data_source_causality_region,
-        };
+        let entity_type = state.entity_cache.schema.entity_type(&entity_type)?;
+        let store_key = entity_type.parse_key_in(entity_id, self.data_source_causality_region)?;
         self.check_entity_type_access(&store_key.entity_type)?;
 
         let result = state.entity_cache.get(&store_key, scope)?;
@@ -286,9 +280,11 @@ impl<C: Blockchain> HostExports<C> {
         entity_field: String,
         gas: &GasCounter,
     ) -> Result<Vec<Entity>, anyhow::Error> {
+        let entity_type = state.entity_cache.schema.entity_type(&entity_type)?;
+        let key = entity_type.parse_key_in(entity_id, self.data_source_causality_region)?;
         let store_key = LoadRelatedRequest {
-            entity_type: EntityType::new(entity_type),
-            entity_id: entity_id.into(),
+            entity_type: key.entity_type,
+            entity_id: key.entity_id,
             entity_field: entity_field.into(),
             causality_region: self.data_source_causality_region,
         };

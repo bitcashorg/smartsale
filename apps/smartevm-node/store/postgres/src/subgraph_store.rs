@@ -622,7 +622,7 @@ impl SubgraphStoreInner {
                 node
             )));
         }
-        let deployment = src_store.load_deployment(src.as_ref())?;
+        let deployment = src_store.load_deployment(src.clone())?;
         if deployment.failed {
             return Err(StoreError::Unknown(anyhow!(
                 "can not copy deployment {} because it has failed",
@@ -1117,10 +1117,11 @@ impl SubgraphStoreInner {
         entity_name: &str,
         field_names: Vec<String>,
         index_method: Method,
+        after: Option<BlockNumber>,
     ) -> Result<(), StoreError> {
         let (store, site) = self.store(&deployment.hash)?;
         store
-            .create_manual_index(site, entity_name, field_names, index_method)
+            .create_manual_index(site, entity_name, field_names, index_method, after)
             .await
     }
 
@@ -1185,8 +1186,8 @@ impl SubgraphStoreInner {
         store.set_history_blocks(&site, history_blocks, reorg_threshold)
     }
 
-    pub fn load_deployment(&self, site: &Site) -> Result<SubgraphDeploymentEntity, StoreError> {
-        let src_store = self.for_site(site)?;
+    pub fn load_deployment(&self, site: Arc<Site>) -> Result<SubgraphDeploymentEntity, StoreError> {
+        let src_store = self.for_site(&site)?;
         src_store.load_deployment(site)
     }
 
@@ -1196,7 +1197,7 @@ impl SubgraphStoreInner {
     ) -> Result<SubgraphDeploymentEntity, StoreError> {
         let site = self.find_site(id)?;
         let src_store = self.for_site(&site)?;
-        src_store.load_deployment(&site)
+        src_store.load_deployment(site)
     }
 }
 
@@ -1369,7 +1370,7 @@ impl SubgraphStoreTrait for SubgraphStore {
         Ok(changes)
     }
 
-    fn input_schema(&self, id: &DeploymentHash) -> Result<Arc<InputSchema>, StoreError> {
+    fn input_schema(&self, id: &DeploymentHash) -> Result<InputSchema, StoreError> {
         let (store, site) = self.store(id)?;
         let info = store.subgraph_info(&site)?;
         Ok(info.input)

@@ -1,38 +1,128 @@
-use std::collections::{BTreeMap, HashSet};
-use std::str::FromStr;
+use std::collections::BTreeMap;
 use std::sync::Arc;
 
-use anyhow::{anyhow, Context, Error};
+use anyhow::{anyhow, Error};
 use store::Entity;
 
 use crate::cheap_clone::CheapClone;
-use crate::components::store::{EntityKey, EntityType, LoadRelatedRequest};
+use crate::components::store::LoadRelatedRequest;
 use crate::data::graphql::ext::DirectiveFinder;
-use crate::data::graphql::{DirectiveExt, DocumentExt, ObjectTypeExt, TypeExt, ValueExt};
-use crate::data::store::{self, scalar, IntoEntityIterator, TryIntoEntityIterator};
-use crate::data::subgraph::schema::POI_DIGEST;
+use crate::data::graphql::{
+    DirectiveExt, DocumentExt, ObjectOrInterface, ObjectTypeExt, TypeExt, ValueExt,
+};
+use crate::data::store::{
+    self, EntityValidationError, IdType, IntoEntityIterator, TryIntoEntityIterator, ID,
+};
+use crate::data::value::Word;
 use crate::prelude::q::Value;
 use crate::prelude::{s, DeploymentHash};
 use crate::schema::api_schema;
-use crate::util::intern::AtomPool;
+use crate::util::intern::{Atom, AtomPool};
 
 use super::fulltext::FulltextDefinition;
-use super::{ApiSchema, Schema, SchemaValidationError};
+use super::{
+    ApiSchema, AsEntityTypeName, EntityType, Schema, SchemaValidationError, SCHEMA_TYPE_NAME,
+};
+
+/// The name of the PoI entity type
+pub(crate) const POI_OBJECT: &str = "Poi$";
+/// The name of the digest attribute of POI entities
+const POI_DIGEST: &str = "digest";
 
 /// The internal representation of a subgraph schema, i.e., the
 /// `schema.graphql` file that is part of a subgraph. Any code that deals
 /// with writing a subgraph should use this struct. Code that deals with
 /// querying subgraphs will instead want to use an `ApiSchema` which can be
 /// generated with the `api_schema` method on `InputSchema`
+///
+/// There's no need to put this into an `Arc`, since `InputSchema` already
+/// does that internally and is `CheapClone`
 #[derive(Clone, Debug, PartialEq)]
 pub struct InputSchema {
     inner: Arc<Inner>,
 }
 
+#[derive(Clone, Copy, Debug, PartialEq)]
+enum TypeKind {
+    MutableObject(IdType),
+    ImmutableObject(IdType),
+    Interface,
+}
+
+impl TypeKind {
+    fn is_object(&self) -> bool {
+        match self {
+            TypeKind::MutableObject(_) | TypeKind::ImmutableObject(_) => true,
+            TypeKind::Interface => false,
+        }
+    }
+
+    fn id_type(&self) -> Option<IdType> {
+        match self {
+            TypeKind::MutableObject(id_type) | TypeKind::ImmutableObject(id_type) => Some(*id_type),
+            TypeKind::Interface => None,
+        }
+    }
+}
+
+#[derive(Debug, PartialEq)]
+struct TypeInfo {
+    name: Atom,
+    kind: TypeKind,
+    fields: Box<[Atom]>,
+}
+
+impl TypeInfo {
+    fn new(pool: &AtomPool, typ: ObjectOrInterface<'_>, kind: TypeKind) -> Self {
+        // The `unwrap` of `lookup` is safe because the pool was just
+        // constructed against the underlying schema
+        let name = pool.lookup(typ.name()).unwrap();
+        let fields = typ
+            .fields()
+            .iter()
+            .map(|field| pool.lookup(&field.name).unwrap())
+            .collect::<Vec<_>>()
+            .into_boxed_slice();
+        Self { name, kind, fields }
+    }
+
+    fn for_object(pool: &AtomPool, obj_type: &s::ObjectType) -> Self {
+        let id_type = IdType::try_from(obj_type).expect("validation caught any issues here");
+        let kind = if obj_type.is_immutable() {
+            TypeKind::ImmutableObject(id_type)
+        } else {
+            TypeKind::MutableObject(id_type)
+        };
+        Self::new(pool, obj_type.into(), kind)
+    }
+
+    fn for_interface(pool: &AtomPool, intf_type: &s::InterfaceType) -> Self {
+        Self::new(pool, intf_type.into(), TypeKind::Interface)
+    }
+
+    fn for_poi(pool: &AtomPool) -> Self {
+        // The way we handle the PoI type is a bit of a hack. We pretend
+        // it's an object type, but trying to look up the `s::ObjectType`
+        // for it will turn up nothing.
+        // See also https://github.com/graphprotocol/graph-node/issues/4873
+        let name = pool.lookup(POI_OBJECT).unwrap();
+        let fields =
+            vec![pool.lookup(&ID).unwrap(), pool.lookup(POI_DIGEST).unwrap()].into_boxed_slice();
+        Self {
+            name,
+            kind: TypeKind::MutableObject(IdType::String),
+            fields,
+        }
+    }
+}
+
 #[derive(Debug, PartialEq)]
 pub struct Inner {
     schema: Schema,
-    immutable_types: HashSet<EntityType>,
+    /// A list of all the object and interface types in the `schema` with
+    /// some important information extracted from the schema. The list is
+    /// sorted by the name atom (not the string name) of the types
+    type_infos: Box<[TypeInfo]>,
     pool: Arc<AtomPool>,
 }
 
@@ -46,21 +136,30 @@ impl CheapClone for InputSchema {
 
 impl InputSchema {
     fn create(schema: Schema) -> Self {
-        let immutable_types = HashSet::from_iter(
-            schema
-                .document
-                .get_object_type_definitions()
-                .into_iter()
-                .filter(|obj_type| obj_type.is_immutable())
-                .map(Into::into),
-        );
-
         let pool = Arc::new(atom_pool(&schema.document));
+
+        let obj_types = schema
+            .document
+            .get_object_type_definitions()
+            .into_iter()
+            .filter(|obj_type| obj_type.name != SCHEMA_TYPE_NAME)
+            .map(|obj_type| TypeInfo::for_object(&pool, obj_type));
+        let intf_types = schema
+            .document
+            .get_interface_type_definitions()
+            .into_iter()
+            .map(|intf_type| TypeInfo::for_interface(&pool, intf_type));
+        let mut type_infos: Vec<_> = obj_types
+            .chain(intf_types)
+            .chain(vec![TypeInfo::for_poi(&pool)])
+            .collect();
+        type_infos.sort_by_key(|ti| ti.name);
+        let type_infos = type_infos.into_boxed_slice();
 
         Self {
             inner: Arc::new(Inner {
                 schema,
-                immutable_types,
+                type_infos,
                 pool,
             }),
         }
@@ -96,6 +195,10 @@ impl InputSchema {
         Self::parse(document, hash).unwrap()
     }
 
+    pub fn schema(&self) -> &Schema {
+        &self.inner.schema
+    }
+
     /// Generate the `ApiSchema` for use with GraphQL queries for this
     /// `InputSchema`
     pub fn api_schema(&self) -> Result<ApiSchema, anyhow::Error> {
@@ -120,34 +223,7 @@ impl InputSchema {
     ///
     /// When asked to load the related entities from "Account" in the field "wallets"
     /// This function will return the type "Wallet" with the field "account"
-    pub fn get_field_related(
-        &self,
-        key: &LoadRelatedRequest,
-    ) -> Result<(&str, &s::Field, bool), Error> {
-        let id_field = self
-            .inner
-            .schema
-            .document
-            .get_object_type_definition(key.entity_type.as_str())
-            .ok_or_else(|| {
-                anyhow!(
-                    "Entity {}[{}]: unknown entity type `{}`",
-                    key.entity_type,
-                    key.entity_id,
-                    key.entity_type,
-                )
-            })?
-            .field("id")
-            .ok_or_else(|| {
-                anyhow!(
-                    "Entity {}[{}]: unknown field `{}`",
-                    key.entity_type,
-                    key.entity_id,
-                    key.entity_field,
-                )
-            })?;
-
-        let id_is_bytes = id_field.field_type.get_base_type() == "Bytes";
+    pub fn get_field_related(&self, key: &LoadRelatedRequest) -> Result<(&str, &s::Field), Error> {
         let field = self
             .inner
             .schema
@@ -198,7 +274,7 @@ impl InputSchema {
                     )
                 })?;
 
-            Ok((base_type, field, id_is_bytes))
+            Ok((base_type, field))
         } else {
             Err(anyhow!(
                 "Entity {}[{}]: field `{}` is not derived",
@@ -209,46 +285,39 @@ impl InputSchema {
         }
     }
 
-    pub fn id_type(&self, entity_type: &EntityType) -> Result<store::IdType, Error> {
-        let base_type = self
-            .inner
-            .schema
-            .document
-            .get_object_type_definition(entity_type.as_str())
-            .ok_or_else(|| anyhow!("unknown entity type `{}`", entity_type))?
-            .field("id")
-            .unwrap()
-            .field_type
-            .get_base_type();
+    fn type_info(&self, atom: Atom) -> Option<&TypeInfo> {
+        self.inner
+            .type_infos
+            .binary_search_by_key(&atom, |ti| ti.name)
+            .map(|idx| &self.inner.type_infos[idx])
+            .ok()
+    }
 
-        match base_type {
-            "ID" | "String" => Ok(store::IdType::String),
-            "Bytes" => Ok(store::IdType::Bytes),
-            s => {
-                return Err(anyhow!(
-                    "Entity type {} uses illegal type {} for id column",
-                    entity_type,
-                    s
-                ))
+    pub(in crate::schema) fn id_type(&self, entity_type: Atom) -> Result<store::IdType, Error> {
+        fn unknown_name(pool: &AtomPool, atom: Atom) -> Error {
+            match pool.get(atom) {
+                Some(name) => anyhow!("Entity type `{name}` is not defined in the schema"),
+                None => anyhow!(
+                    "Invalid atom for id_type lookup (atom is probably from a different pool)"
+                ),
             }
         }
+
+        let type_info = self
+            .type_info(entity_type)
+            .ok_or_else(|| unknown_name(&self.inner.pool, entity_type))?;
+
+        type_info.kind.id_type().ok_or_else(|| {
+            let name = self.inner.pool.get(entity_type).unwrap();
+            anyhow!("Entity type `{}` does not have an `id` field", name)
+        })
     }
 
-    /// Construct a value for the entity type's id attribute
-    pub fn id_value(&self, key: &EntityKey) -> Result<store::Value, Error> {
-        let id_type = self
-            .id_type(&key.entity_type)
-            .with_context(|| format!("error determining id_type for {:?}", key))?;
-        match id_type {
-            store::IdType::String => Ok(store::Value::String(key.entity_id.to_string())),
-            store::IdType::Bytes => Ok(store::Value::Bytes(scalar::Bytes::from_str(
-                &key.entity_id,
-            )?)),
-        }
-    }
-
-    pub fn is_immutable(&self, entity_type: &EntityType) -> bool {
-        self.inner.immutable_types.contains(entity_type)
+    /// Check if `entity_type` is an immutable object type
+    pub(in crate::schema) fn is_immutable(&self, entity_type: Atom) -> bool {
+        self.type_info(entity_type)
+            .map(|ti| matches!(ti.kind, TypeKind::ImmutableObject(_)))
+            .unwrap_or(false)
     }
 
     pub fn get_named_type(&self, name: &str) -> Option<&s::TypeDefinition> {
@@ -256,13 +325,18 @@ impl InputSchema {
     }
 
     pub fn types_for_interface(&self, intf: &s::InterfaceType) -> Option<&Vec<s::ObjectType>> {
-        self.inner
-            .schema
-            .types_for_interface
-            .get(&EntityType::new(intf.name.clone()))
+        self.inner.schema.types_for_interface.get(&intf.name)
     }
 
-    pub fn find_object_type(&self, entity_type: &EntityType) -> Option<&s::ObjectType> {
+    /// Returns `None` if the type implements no interfaces.
+    pub fn interfaces_for_type(&self, type_name: &str) -> Option<&Vec<s::InterfaceType>> {
+        self.inner.schema.interfaces_for_type(type_name)
+    }
+
+    pub(in crate::schema) fn find_object_type(
+        &self,
+        entity_type: &EntityType,
+    ) -> Option<&s::ObjectType> {
         self.inner
             .schema
             .document
@@ -283,7 +357,7 @@ impl InputSchema {
         self.inner.schema.document.get_object_type_definitions()
     }
 
-    pub fn interface_types(&self) -> &BTreeMap<EntityType, Vec<s::ObjectType>> {
+    pub fn interface_types(&self) -> &BTreeMap<String, Vec<s::ObjectType>> {
         &self.inner.schema.types_for_interface
     }
 
@@ -335,7 +409,10 @@ impl InputSchema {
         self.inner.schema.validate()
     }
 
-    pub fn make_entity<I: IntoEntityIterator>(&self, iter: I) -> Result<Entity, Error> {
+    pub fn make_entity<I: IntoEntityIterator>(
+        &self,
+        iter: I,
+    ) -> Result<Entity, EntityValidationError> {
         Entity::make(self.inner.pool.clone(), iter)
     }
 
@@ -348,13 +425,58 @@ impl InputSchema {
     ) -> Result<Entity, Error> {
         Entity::try_make(self.inner.pool.clone(), iter)
     }
+
+    /// Check if `entity_type` is an object type and has a field `field`
+    pub(in crate::schema) fn has_field(&self, entity_type: Atom, field: Atom) -> bool {
+        self.type_info(entity_type)
+            .map(|ti| ti.kind.is_object() && ti.fields.contains(&field))
+            .unwrap_or(false)
+    }
+
+    pub fn poi_type(&self) -> EntityType {
+        // unwrap: we make sure to put POI_OBJECT into the pool
+        let atom = self.inner.pool.lookup(POI_OBJECT).unwrap();
+        EntityType::new(self.cheap_clone(), atom)
+    }
+
+    pub fn poi_digest(&self) -> Word {
+        Word::from(POI_DIGEST)
+    }
+
+    // A helper for the `EntityType` constructor
+    pub(in crate::schema) fn pool(&self) -> &Arc<AtomPool> {
+        &self.inner.pool
+    }
+
+    /// Return the entity type for `named`. If the entity type does not
+    /// exist, return an error. Generally, an error should only be possible
+    /// if `named` is based on user input. If `named` is an internal object,
+    /// like a `ObjectType`, it is safe to unwrap the result
+    pub fn entity_type<N: AsEntityTypeName>(&self, named: N) -> Result<EntityType, Error> {
+        let name = named.name();
+        self.inner
+            .pool
+            .lookup(name)
+            .and_then(|atom| self.type_info(atom))
+            .map(|ti| EntityType::new(self.cheap_clone(), ti.name))
+            .ok_or_else(|| {
+                anyhow!(
+                    "internal error: entity type `{}` does not exist in {}",
+                    name,
+                    self.inner.schema.id
+                )
+            })
+    }
 }
 
 /// Create a new pool that contains the names of all the types defined
 /// in the document and the names of all their fields
 fn atom_pool(document: &s::Document) -> AtomPool {
     let mut pool = AtomPool::new();
-    pool.intern(POI_DIGEST.as_str()); // Attribute of PoI object
+
+    pool.intern(POI_OBJECT); // Name of PoI entity type
+    pool.intern(POI_DIGEST); // Attribute of PoI object
+
     for definition in &document.definitions {
         match definition {
             s::Definition::TypeDefinition(typedef) => match typedef {
@@ -403,4 +525,39 @@ fn atom_pool(document: &s::Document) -> AtomPool {
     }
 
     pool
+}
+
+#[cfg(test)]
+mod tests {
+    use crate::{
+        data::store::ID,
+        prelude::DeploymentHash,
+        schema::input_schema::{POI_DIGEST, POI_OBJECT},
+    };
+
+    use super::InputSchema;
+
+    const SCHEMA: &str = r#"
+      type Thing @entity {
+        id: ID!
+        name: String!
+      }
+    "#;
+
+    #[test]
+    fn entity_type() {
+        let id = DeploymentHash::new("test").unwrap();
+        let schema = InputSchema::parse(SCHEMA, id).unwrap();
+
+        assert_eq!("Thing", schema.entity_type("Thing").unwrap().as_str());
+
+        let poi = schema.entity_type(POI_OBJECT).unwrap();
+        assert_eq!(POI_OBJECT, poi.as_str());
+        assert!(poi.has_field(schema.pool().lookup(&ID).unwrap()));
+        assert!(poi.has_field(schema.pool().lookup(POI_DIGEST).unwrap()));
+        // This is not ideal, but we don't have an object type for the PoI
+        assert_eq!(None, poi.object_type());
+
+        assert!(schema.entity_type("NonExistent").is_err());
+    }
 }

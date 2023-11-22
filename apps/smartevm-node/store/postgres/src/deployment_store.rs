@@ -7,13 +7,13 @@ use graph::anyhow::Context;
 use graph::blockchain::block_stream::FirehoseCursor;
 use graph::components::store::write::RowGroup;
 use graph::components::store::{
-    Batch, DerivedEntityQuery, EntityKey, EntityType, PrunePhase, PruneReporter, PruneRequest,
-    PruningStrategy, StoredDynamicDataSource, VersionStats,
+    Batch, DerivedEntityQuery, PrunePhase, PruneReporter, PruneRequest, PruningStrategy,
+    StoredDynamicDataSource, VersionStats,
 };
 use graph::components::versions::VERSIONS;
 use graph::data::query::Trace;
+use graph::data::store::{Id, IdList};
 use graph::data::subgraph::{status, SPEC_VERSION_0_0_6};
-use graph::data::value::Word;
 use graph::data_source::CausalityRegion;
 use graph::prelude::futures03::FutureExt;
 use graph::prelude::{
@@ -37,13 +37,13 @@ use std::time::{Duration, Instant};
 use graph::components::store::EntityCollection;
 use graph::components::subgraph::{ProofOfIndexingFinisher, ProofOfIndexingVersion};
 use graph::constraint_violation;
-use graph::data::subgraph::schema::{DeploymentCreate, SubgraphError, POI_DIGEST, POI_OBJECT};
+use graph::data::subgraph::schema::{DeploymentCreate, SubgraphError};
 use graph::prelude::{
     anyhow, debug, info, o, warn, web3, AttributeNames, BlockNumber, BlockPtr, CheapClone,
     DeploymentHash, DeploymentState, Entity, EntityQuery, Error, Logger, QueryExecutionError,
     StopwatchMetrics, StoreError, StoreEvent, UnfailOutcome, Value, ENV_VARS,
 };
-use graph::schema::{ApiSchema, InputSchema};
+use graph::schema::{ApiSchema, EntityKey, EntityType, InputSchema};
 use web3::types::Address;
 
 use crate::block_range::{BLOCK_COLUMN, BLOCK_RANGE_COLUMN};
@@ -52,7 +52,9 @@ use crate::detail::ErrorDetail;
 use crate::dynds::DataSourcesTable;
 use crate::primary::DeploymentId;
 use crate::relational::index::{CreateIndex, Method};
-use crate::relational::{Layout, LayoutCache, SqlName, Table};
+use crate::relational::{
+    ColumnType, Layout, LayoutCache, SqlName, Table, BYTE_ARRAY_PREFIX_SIZE, STRING_PREFIX_SIZE,
+};
 use crate::relational_queries::FromEntityData;
 use crate::{advisory_lock, catalog, retry};
 use crate::{connection_pool::ConnectionPool, detail};
@@ -74,7 +76,7 @@ pub enum ReplicaId {
 #[derive(Clone)]
 pub(crate) struct SubgraphInfo {
     /// The schema as supplied by the user
-    pub(crate) input: Arc<InputSchema>,
+    pub(crate) input: InputSchema,
     /// The schema we derive from `input` with `graphql::schema::api::api_schema`
     pub(crate) api: HashMap<ApiVersion, Arc<ApiSchema>>,
     /// The block number at which this subgraph was grafted onto
@@ -234,11 +236,14 @@ impl DeploymentStore {
 
     pub(crate) fn load_deployment(
         &self,
-        site: &Site,
+        site: Arc<Site>,
     ) -> Result<SubgraphDeploymentEntity, StoreError> {
         let conn = self.get_conn()?;
-        Ok(detail::deployment_entity(&conn, site)
-            .with_context(|| format!("Deployment details not found for {}", site.deployment))?)
+        let layout = self.layout(&conn, site.clone())?;
+        Ok(
+            detail::deployment_entity(&conn, &site, &layout.input_schema)
+                .with_context(|| format!("Deployment details not found for {}", site.deployment))?,
+        )
     }
 
     // Remove the data and metadata for the deployment `site`. This operation
@@ -274,7 +279,7 @@ impl DeploymentStore {
         conn: &PgConnection,
         layout: &Layout,
         entity_type: &EntityType,
-        entity_id: &Word,
+        entity_id: &Id,
     ) -> Result<(), StoreError> {
         // Collect all types that share an interface implementation with this
         // entity type, and make sure there are no conflicting IDs.
@@ -286,21 +291,16 @@ impl DeploymentStore {
         // if that's Fred the Dog, Fred the Cat or both.
         //
         // This assumes that there are no concurrent writes to a subgraph.
-        let schema = self
-            .subgraph_info_with_conn(conn, &layout.site)?
-            .api
-            .get(&Default::default())
-            .expect("API schema should be present")
-            .clone();
-        let types_for_interface = schema.types_for_interface();
+        let schema = self.subgraph_info_with_conn(conn, &layout.site)?.input;
         let entity_type_str = entity_type.to_string();
         let types_with_shared_interface = Vec::from_iter(
             schema
-                .interfaces_for_type(entity_type)
+                .interfaces_for_type(entity_type.as_str())
                 .into_iter()
                 .flatten()
-                .flat_map(|interface| &types_for_interface[&EntityType::from(interface)])
-                .map(EntityType::from)
+                .flat_map(|interface| schema.types_for_interface(interface))
+                .flatten()
+                .map(|object_type| schema.entity_type(object_type).unwrap())
                 .filter(|type_name| type_name != entity_type),
         );
 
@@ -339,12 +339,7 @@ impl DeploymentStore {
             let section = stopwatch.start_section("check_interface_entity_uniqueness");
             for row in group.writes().filter(|emod| emod.creates_entity()) {
                 // WARNING: This will potentially execute 2 queries for each entity key.
-                self.check_interface_entity_uniqueness(
-                    conn,
-                    layout,
-                    &group.entity_type,
-                    &row.id(),
-                )?;
+                self.check_interface_entity_uniqueness(conn, layout, &group.entity_type, row.id())?;
             }
             section.end();
 
@@ -511,7 +506,7 @@ impl DeploymentStore {
         };
 
         let info = SubgraphInfo {
-            input: Arc::new(manifest_info.input_schema),
+            input: manifest_info.input_schema,
             api,
             graft_block,
             debug_fork,
@@ -674,7 +669,10 @@ impl DeploymentStore {
 
         conn.transaction(|| {
             for table in tables {
-                let columns = resolve_column_names(table, &columns)?;
+                let columns = resolve_column_names(table, &columns)?
+                    .iter()
+                    .map(|(name, _)| *name)
+                    .collect::<Vec<&SqlName>>();
                 catalog::set_stats_target(&conn, &site.namespace, &table.name, &columns, target)?;
             }
             Ok(())
@@ -704,6 +702,7 @@ impl DeploymentStore {
         entity_name: &str,
         field_names: Vec<String>,
         index_method: Method,
+        after: Option<BlockNumber>,
     ) -> Result<(), StoreError> {
         let store = self.clone();
         let entity_name = entity_name.to_owned();
@@ -711,16 +710,45 @@ impl DeploymentStore {
             let schema_name = site.namespace.clone();
             let layout = store.layout(conn, site)?;
             let table = resolve_table_name(&layout, &entity_name)?;
-            let column_names = resolve_column_names(table, &field_names)?;
+            let column_names_to_types = resolve_column_names(table, &field_names)?;
+            let column_names = column_names_to_types
+                .iter()
+                .map(|(name, _)| *name)
+                .collect::<Vec<&SqlName>>();
+
             let column_names_sep_by_underscores = column_names.join("_");
-            let column_names_sep_by_commas = column_names.join(", ");
+            let index_exprs = resolve_index_exprs(column_names_to_types);
             let table_name = &table.name;
-            let index_name = format!("manual_{table_name}_{column_names_sep_by_underscores}");
-            let sql = format!(
+            let index_name = format!(
+                "manual_{table_name}_{column_names_sep_by_underscores}{}",
+                if let Some(after_value) = after {
+                    format!("_{}", after_value)
+                } else {
+                    String::new()
+                }
+            );
+
+            let mut sql = format!(
                 "create index concurrently if not exists {index_name} \
                  on {schema_name}.{table_name} using {index_method} \
-                 ({column_names_sep_by_commas})"
+                 ({index_exprs}) ",
             );
+
+            // If 'after' is provided and the table is not immutable, add a WHERE clause for partial indexing
+            if let Some(after) = after {
+                if !table.immutable {
+                    sql.push_str(&format!(
+                        " where coalesce(upper({}), 2147483647) > {}",
+                        BLOCK_RANGE_COLUMN, after
+                    ));
+                } else {
+                    return Err(CancelableError::Error(StoreError::Unknown(anyhow!(
+                        "Partial index not allowed on immutable table `{}`",
+                        table_name
+                    ))));
+                }
+            }
+
             // This might take a long time.
             conn.execute(&sql)?;
             // check if the index creation was successfull
@@ -920,6 +948,8 @@ impl DeploymentStore {
         let indexer = *indexer;
         let site2 = site.cheap_clone();
         let store = self.cheap_clone();
+        let info = self.subgraph_info(&site)?;
+        let poi_digest = info.input.poi_digest();
 
         let entities: Option<(Vec<Entity>, BlockPtr)> = self
             .with_conn(move |conn, cancel| {
@@ -965,7 +995,7 @@ impl DeploymentStore {
                         site.deployment.cheap_clone(),
                         block_ptr.number,
                         EntityCollection::All(vec![(
-                            POI_OBJECT.cheap_clone(),
+                            info.input.poi_type().clone(),
                             AttributeNames::All,
                         )]),
                     );
@@ -990,7 +1020,7 @@ impl DeploymentStore {
             .into_iter()
             .map(|e| {
                 let causality_region = e.id();
-                let digest = match e.get(POI_DIGEST.as_str()) {
+                let digest = match e.get(poi_digest.as_str()) {
                     Some(Value::Bytes(b)) => Ok(b.clone()),
                     other => Err(anyhow::anyhow!(
                         "Entity has non-bytes digest attribute: {:?}",
@@ -1001,8 +1031,6 @@ impl DeploymentStore {
                 Ok((causality_region, digest))
             })
             .collect::<Result<HashMap<_, _>, anyhow::Error>>()?;
-
-        let info = self.subgraph_info(&site2).map_err(anyhow::Error::from)?;
 
         let mut finisher =
             ProofOfIndexingFinisher::new(&block_ptr, &site2.deployment, &indexer, info.poi_version);
@@ -1031,7 +1059,7 @@ impl DeploymentStore {
     pub(crate) fn get_many(
         &self,
         site: Arc<Site>,
-        ids_for_type: &BTreeMap<(EntityType, CausalityRegion), Vec<String>>,
+        ids_for_type: &BTreeMap<(EntityType, CausalityRegion), IdList>,
         block: BlockNumber,
     ) -> Result<BTreeMap<EntityKey, Entity>, StoreError> {
         if ids_for_type.is_empty() {
@@ -1485,7 +1513,7 @@ impl DeploymentStore {
 
             let src_manifest_idx_and_name = src_deployment.manifest.template_idx_and_name()?;
             let dst_manifest_idx_and_name = self
-                .load_deployment(&dst.site)?
+                .load_deployment(dst.site.clone())?
                 .manifest
                 .template_idx_and_name()?;
 
@@ -1826,7 +1854,7 @@ impl DeploymentStore {
 /// search using the latter if the search for the former fails.
 fn resolve_table_name<'a>(layout: &'a Layout, name: &'_ str) -> Result<&'a Table, StoreError> {
     layout
-        .table_for_entity(&EntityType::new(name.to_owned()))
+        .table_for_entity(&layout.input_schema.entity_type(name)?)
         .map(Deref::deref)
         .or_else(|_error| {
             let sql_name = SqlName::from(name);
@@ -1843,8 +1871,11 @@ fn resolve_table_name<'a>(layout: &'a Layout, name: &'_ str) -> Result<&'a Table
 fn resolve_column_names<'a, T: AsRef<str>>(
     table: &'a Table,
     field_names: &[T],
-) -> Result<Vec<&'a SqlName>, StoreError> {
-    fn lookup<'a>(table: &'a Table, field: &str) -> Result<&'a SqlName, StoreError> {
+) -> Result<Vec<(&'a SqlName, Option<&'a ColumnType>)>, StoreError> {
+    fn lookup<'a>(
+        table: &'a Table,
+        field: &str,
+    ) -> Result<(&'a SqlName, &'a ColumnType), StoreError> {
         table
             .column_for_field(field)
             .or_else(|_error| {
@@ -1853,19 +1884,35 @@ fn resolve_column_names<'a, T: AsRef<str>>(
                     .column(&sql_name)
                     .ok_or_else(|| StoreError::UnknownField(field.to_string()))
             })
-            .map(|column| &column.name)
+            .map(|column| (&column.name, &column.column_type))
     }
 
     field_names
         .iter()
         .map(|f| {
             if f.as_ref() == BLOCK_RANGE_COLUMN || f.as_ref() == BLOCK_COLUMN {
-                Ok(table.block_column())
+                Ok((table.block_column(), None))
             } else {
-                lookup(table, f.as_ref())
+                lookup(table, f.as_ref()).map(|(name, column_type)| (name, Some(column_type)))
             }
         })
         .collect()
+}
+
+fn resolve_index_exprs(column_names_to_types: Vec<(&SqlName, Option<&ColumnType>)>) -> String {
+    column_names_to_types
+        .iter()
+        .map(|(name, column_type)| match column_type {
+            Some(ColumnType::String) => {
+                format!("left({}, {})", name, STRING_PREFIX_SIZE)
+            }
+            Some(ColumnType::Bytes) => {
+                format!("substring({}, 1, {})", name, BYTE_ARRAY_PREFIX_SIZE)
+            }
+            _ => name.to_string(),
+        })
+        .collect::<Vec<String>>()
+        .join(",")
 }
 
 /// A helper to log progress during pruning that is kicked off from

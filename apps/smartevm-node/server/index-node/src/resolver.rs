@@ -2,14 +2,17 @@ use std::collections::BTreeMap;
 use std::convert::TryInto;
 
 use graph::data::query::Trace;
+use graph::data::store::Id;
+use graph::schema::EntityType;
 use web3::types::Address;
 
+use git_testament::{git_testament, CommitKind};
 use graph::blockchain::{Blockchain, BlockchainKind, BlockchainMap};
-use graph::components::store::{BlockPtrForNumber, BlockStore, EntityType, Store};
+use graph::components::store::{BlockPtrForNumber, BlockStore, Store};
 use graph::components::versions::VERSIONS;
 use graph::data::graphql::{object, IntoValue, ObjectOrInterface, ValueMap};
 use graph::data::subgraph::status;
-use graph::data::value::{Object, Word};
+use graph::data::value::Object;
 use graph::prelude::*;
 use graph_graphql::prelude::{a, ExecutionContext, Resolver};
 
@@ -17,6 +20,19 @@ use crate::auth::PoiProtection;
 
 /// Timeout for calls to fetch the block from JSON-RPC or Firehose.
 const BLOCK_HASH_FROM_NUMBER_TIMEOUT: Duration = Duration::from_secs(10);
+
+git_testament!(TESTAMENT);
+
+lazy_static! {
+    static ref VERSION: Version = Version {
+        version: env!("CARGO_PKG_VERSION").to_string(),
+        commit: match TESTAMENT.commit {
+            CommitKind::FromTag(_, hash, _, _) => hash.to_string(),
+            CommitKind::NoTags(hash, _) => hash.to_string(),
+            _ => "unknown".to_string(),
+        }
+    };
+}
 
 #[derive(Clone, Debug)]
 struct PublicProofOfIndexingRequest {
@@ -35,6 +51,21 @@ impl TryFromValue for PublicProofOfIndexingRequest {
                 "Cannot parse non-object value as PublicProofOfIndexingRequest: {:?}",
                 value
             )),
+        }
+    }
+}
+
+#[derive(Clone, Debug)]
+struct Version {
+    version: String,
+    commit: String,
+}
+
+impl IntoValue for Version {
+    fn into_value(self) -> r::Value {
+        object! {
+            version: self.version,
+            commit: self.commit,
         }
     }
 }
@@ -469,6 +500,10 @@ impl<S: Store> IndexNodeResolver<S> {
         ))
     }
 
+    fn version(&self) -> Result<r::Value, QueryExecutionError> {
+        Ok(VERSION.clone().into_value())
+    }
+
     async fn block_ptr_for_number(
         &self,
         network: String,
@@ -555,7 +590,7 @@ fn entity_changes_to_graphql(entity_changes: Vec<EntityOperation>) -> r::Value {
 
     // First, we isolate updates and deletions with the same entity type.
     let mut updates: BTreeMap<EntityType, Vec<Entity>> = BTreeMap::new();
-    let mut deletions: BTreeMap<EntityType, Vec<Word>> = BTreeMap::new();
+    let mut deletions: BTreeMap<EntityType, Vec<Id>> = BTreeMap::new();
 
     for change in entity_changes {
         match change {
@@ -700,6 +735,7 @@ impl<S: Store> Resolver for IndexNodeResolver<S> {
             (None, "entityChangesInBlock") => self.resolve_entity_changes_in_block(field),
             // The top-level `subgraphVersions` field
             (None, "apiVersions") => self.resolve_api_versions(field),
+            (None, "version") => self.version(),
 
             // Resolve fields of `Object` values (e.g. the `latestBlock` field of `EthereumBlock`)
             (value, _) => Ok(value.unwrap_or(r::Value::Null)),
