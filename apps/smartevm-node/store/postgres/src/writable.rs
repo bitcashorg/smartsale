@@ -1,25 +1,21 @@
 use std::collections::BTreeSet;
 use std::ops::Deref;
-use std::str::FromStr;
 use std::sync::atomic::{AtomicBool, Ordering};
 use std::sync::{Mutex, RwLock, TryLockError as RwLockError};
 use std::time::{Duration, Instant};
 use std::{collections::BTreeMap, sync::Arc};
 
 use graph::blockchain::block_stream::FirehoseCursor;
-use graph::components::store::{
-    Batch, DeploymentCursorTracker, DerivedEntityQuery, EntityKey, ReadStore,
-};
+use graph::components::store::{Batch, DeploymentCursorTracker, DerivedEntityQuery, ReadStore};
 use graph::constraint_violation;
-use graph::data::store::scalar::Bytes;
-use graph::data::store::Value;
+use graph::data::store::IdList;
 use graph::data::subgraph::schema;
 use graph::data_source::CausalityRegion;
 use graph::prelude::{
     BlockNumber, CacheWeight, Entity, MetricsRegistry, SubgraphDeploymentEntity,
     SubgraphStore as _, BLOCK_NUMBER_MAX,
 };
-use graph::schema::InputSchema;
+use graph::schema::{EntityKey, EntityType, InputSchema};
 use graph::slog::{info, warn};
 use graph::tokio::select;
 use graph::tokio::sync::Notify;
@@ -27,7 +23,7 @@ use graph::tokio::task::JoinHandle;
 use graph::util::bounded_queue::BoundedQueue;
 use graph::{
     cheap_clone::CheapClone,
-    components::store::{self, write::EntityOp, EntityType, WritableStore as WritableStoreTrait},
+    components::store::{self, write::EntityOp, WritableStore as WritableStoreTrait},
     data::subgraph::schema::SubgraphError,
     prelude::{
         BlockPtr, DeploymentHash, EntityModification, Error, Logger, StopwatchMetrics, StoreError,
@@ -62,7 +58,7 @@ impl WritableSubgraphStore {
         self.0.layout(id)
     }
 
-    fn load_deployment(&self, site: &Site) -> Result<SubgraphDeploymentEntity, StoreError> {
+    fn load_deployment(&self, site: Arc<Site>) -> Result<SubgraphDeploymentEntity, StoreError> {
         self.0.load_deployment(site)
     }
 
@@ -79,7 +75,7 @@ struct SyncStore {
     store: WritableSubgraphStore,
     writable: Arc<DeploymentStore>,
     site: Arc<Site>,
-    input_schema: Arc<InputSchema>,
+    input_schema: InputSchema,
     manifest_idx_and_name: Arc<Vec<(u32, String)>>,
 }
 
@@ -139,7 +135,7 @@ impl SyncStore {
             let graft_base = match self.writable.graft_pending(&self.site.deployment)? {
                 Some((base_id, base_ptr)) => {
                     let src = self.store.layout(&base_id)?;
-                    let deployment_entity = self.store.load_deployment(&src.site)?;
+                    let deployment_entity = self.store.load_deployment(src.site.clone())?;
                     Some((src, base_ptr, deployment_entity))
                 }
                 None => None,
@@ -240,12 +236,13 @@ impl SyncStore {
         keys: BTreeSet<EntityKey>,
         block: BlockNumber,
     ) -> Result<BTreeMap<EntityKey, Entity>, StoreError> {
-        let mut by_type: BTreeMap<(EntityType, CausalityRegion), Vec<String>> = BTreeMap::new();
+        let mut by_type: BTreeMap<(EntityType, CausalityRegion), IdList> = BTreeMap::new();
         for key in keys {
+            let id_type = key.entity_type.id_type()?;
             by_type
                 .entry((key.entity_type, key.causality_region))
-                .or_default()
-                .push(key.entity_id.into());
+                .or_insert_with(|| IdList::new(id_type))
+                .push(key.entity_id)?;
         }
 
         retry::forever(&self.logger, "get_many", || {
@@ -369,8 +366,8 @@ impl SyncStore {
         .await
     }
 
-    fn input_schema(&self) -> Arc<InputSchema> {
-        self.input_schema.clone()
+    fn input_schema(&self) -> InputSchema {
+        self.input_schema.cheap_clone()
     }
 }
 
@@ -1123,12 +1120,7 @@ impl Queue {
         fn is_related(derived_query: &DerivedEntityQuery, entity: &Entity) -> bool {
             entity
                 .get(&derived_query.entity_field)
-                .map(|v| match v {
-                    Value::String(s) => s.as_str() == derived_query.value.as_str(),
-                    Value::Bytes(b) => Bytes::from_str(derived_query.value.as_str())
-                        .map_or(false, |bytes_value| &bytes_value == b),
-                    _ => false,
-                })
+                .map(|v| &derived_query.value == v)
                 .unwrap_or(false)
         }
 
@@ -1444,7 +1436,7 @@ impl ReadStore for WritableStore {
         self.writer.get_derived(key)
     }
 
-    fn input_schema(&self) -> Arc<InputSchema> {
+    fn input_schema(&self) -> InputSchema {
         self.store.input_schema()
     }
 }
@@ -1456,6 +1448,10 @@ impl DeploymentCursorTracker for WritableStore {
 
     fn firehose_cursor(&self) -> FirehoseCursor {
         self.block_cursor.lock().unwrap().clone()
+    }
+
+    fn input_schema(&self) -> InputSchema {
+        self.store.input_schema()
     }
 }
 
@@ -1533,7 +1529,6 @@ impl WritableStoreTrait for WritableStore {
         is_non_fatal_errors_active: bool,
     ) -> Result<(), StoreError> {
         let batch = Batch::new(
-            self.store.input_schema.cheap_clone(),
             block_ptr_to.clone(),
             firehose_cursor.clone(),
             mods,

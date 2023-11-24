@@ -3,19 +3,20 @@ use crate::{
     blockchain::{BlockPtr, Blockchain},
     components::{
         link_resolver::LinkResolver,
-        store::{BlockNumber, EntityType, StoredDynamicDataSource},
+        store::{BlockNumber, StoredDynamicDataSource},
         subgraph::DataSourceTemplateInfo,
     },
     data::{store::scalar::Bytes, subgraph::SPEC_VERSION_0_0_7, value::Word},
     data_source,
     ipfs_client::CidFile,
     prelude::{DataSourceContext, Link},
+    schema::{EntityType, InputSchema},
 };
 use anyhow::{anyhow, Context, Error};
 use itertools::Itertools;
 use lazy_static::lazy_static;
 use serde::Deserialize;
-use slog::{info, Logger};
+use slog::{info, warn, Logger};
 use std::{
     collections::HashMap,
     fmt,
@@ -33,6 +34,8 @@ lazy_static! {
     .into_iter()
     .collect();
 }
+
+const OFFCHAIN_HANDLER_KIND: &str = "offchain";
 const NOT_DONE_VALUE: i32 = -1;
 
 #[derive(Debug, Clone, PartialEq, Eq)]
@@ -157,6 +160,10 @@ impl DataSource {
         // function should be updated to return the minimum spec version
         // required for each kind
         SPEC_VERSION_0_0_7
+    }
+
+    pub fn handler_kind(&self) -> &str {
+        OFFCHAIN_HANDLER_KIND
     }
 }
 
@@ -363,7 +370,7 @@ pub struct UnresolvedMapping {
     pub language: String,
     pub file: Link,
     pub handler: String,
-    pub entities: Vec<EntityType>,
+    pub entities: Vec<String>,
 }
 
 impl UnresolvedDataSource {
@@ -374,6 +381,7 @@ impl UnresolvedDataSource {
         logger: &Logger,
         manifest_idx: u32,
         causality_region: CausalityRegion,
+        schema: &InputSchema,
     ) -> Result<DataSource, Error> {
         info!(logger, "Resolve offchain data source";
             "name" => &self.name,
@@ -389,7 +397,7 @@ impl UnresolvedDataSource {
             kind,
             name: self.name,
             source,
-            mapping: self.mapping.resolve(resolver, logger).await?,
+            mapping: self.mapping.resolve(resolver, schema, logger).await?,
             context: Arc::new(None),
             creation_block: None,
             done_at: Arc::new(AtomicI32::new(NOT_DONE_VALUE)),
@@ -402,13 +410,27 @@ impl UnresolvedMapping {
     pub async fn resolve(
         self,
         resolver: &Arc<dyn LinkResolver>,
+        schema: &InputSchema,
         logger: &Logger,
     ) -> Result<Mapping, Error> {
         info!(logger, "Resolve offchain mapping"; "link" => &self.file.link);
+        // It is possible for a manifest to mention entity types that do not
+        // exist in the schema. Rather than fail the subgraph, which could
+        // fail existing subgraphs, filter them out and just log a warning.
+        let (entities, errs) = self
+            .entities
+            .iter()
+            .map(|s| schema.entity_type(s).map_err(|_| s))
+            .partition::<Vec<_>, _>(Result::is_ok);
+        if !errs.is_empty() {
+            let errs = errs.into_iter().map(Result::unwrap_err).join(", ");
+            warn!(logger, "Ignoring unknown entity types in mapping"; "entities" => errs, "link" => &self.file.link);
+        }
+        let entities = entities.into_iter().map(Result::unwrap).collect::<Vec<_>>();
         Ok(Mapping {
             language: self.language,
             api_version: semver::Version::parse(&self.api_version)?,
-            entities: self.entities,
+            entities,
             handler: self.handler,
             runtime: Arc::new(resolver.cat(logger, &self.file).await?),
             link: self.file,
@@ -439,12 +461,13 @@ impl UnresolvedDataSourceTemplate {
         resolver: &Arc<dyn LinkResolver>,
         logger: &Logger,
         manifest_idx: u32,
+        schema: &InputSchema,
     ) -> Result<DataSourceTemplate, Error> {
         let kind = OffchainDataSourceKind::from_str(&self.kind)?;
 
         let mapping = self
             .mapping
-            .resolve(resolver, logger)
+            .resolve(resolver, schema, logger)
             .await
             .with_context(|| format!("failed to resolve data source template {}", self.name))?;
 

@@ -4,6 +4,7 @@ use std::sync::Arc;
 use std::time::Duration;
 
 use graph::blockchain::DataSource;
+use graph::data::store::Value;
 use graph::data::subgraph::schema::SubgraphError;
 use graph::data::subgraph::{SPEC_VERSION_0_0_4, SPEC_VERSION_0_0_7, SPEC_VERSION_0_0_8};
 use graph::data_source::offchain::OffchainDataSourceKind;
@@ -15,10 +16,7 @@ use graph::prelude::{
 };
 use graph::{
     blockchain::NodeCapabilities as _,
-    components::{
-        link_resolver::{JsonValueStream, LinkResolver as LinkResolverTrait},
-        store::EntityType,
-    },
+    components::link_resolver::{JsonValueStream, LinkResolver as LinkResolverTrait},
     data::subgraph::SubgraphFeature,
 };
 
@@ -26,7 +24,10 @@ use graph::semver::Version;
 use graph_chain_ethereum::{BlockHandlerFilter, Chain, NodeCapabilities};
 use test_store::LOGGER;
 
-const GQL_SCHEMA: &str = "type Thing @entity { id: ID! }";
+const GQL_SCHEMA: &str = r#"
+  type Thing @entity { id: ID! }
+  type TestEntity @entity { id: ID! }
+"#;
 const GQL_SCHEMA_FULLTEXT: &str = include_str!("full-text.graphql");
 const MAPPING_WITH_IPFS_FUNC_WASM: &[u8] = include_bytes!("ipfs-on-ethereum-contracts.wasm");
 const ABI: &str = "[{\"type\":\"function\", \"inputs\": [{\"name\": \"i\",\"type\": \"uint256\"}],\"name\":\"get\",\"outputs\": [{\"type\": \"address\",\"name\": \"o\"}]}]";
@@ -210,9 +211,12 @@ specVersion: 0.0.2
 
         // Adds an example entity.
         let thing = entity! { schema => id: "datthing" };
-        test_store::insert_entities(&deployment, vec![(EntityType::from("Thing"), thing)])
-            .await
-            .unwrap();
+        test_store::insert_entities(
+            &deployment,
+            vec![(schema.entity_type("Thing").unwrap(), thing)],
+        )
+        .await
+        .unwrap();
 
         let error = SubgraphError {
             subgraph_id: deployment.hash.clone(),
@@ -307,9 +311,12 @@ specVersion: 0.0.2
         );
 
         let thing = entity! { schema => id: "datthing" };
-        test_store::insert_entities(&deployment, vec![(EntityType::from("Thing"), thing)])
-            .await
-            .unwrap();
+        test_store::insert_entities(
+            &deployment,
+            vec![(schema.entity_type("Thing").unwrap(), thing)],
+        )
+        .await
+        .unwrap();
 
         // Validation against subgraph that has not reached the graft point fails
         let unvalidated = resolve_unvalidated(YAML).await;
@@ -370,6 +377,59 @@ specVersion: 0.0.2
             msg
         );
     })
+}
+
+#[tokio::test]
+async fn parse_data_source_context() {
+    const YAML: &str = "
+dataSources:
+  - kind: ethereum/contract
+    name: Factory
+    network: mainnet
+    context:
+      foo:
+        type: String
+        data: bar
+      qux:
+        type: Int
+        data: 42
+    source:
+      address: \"0x0000000000000000000000000000000000000000\"
+      abi: Factory
+      startBlock: 9562480
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      entities:
+        - TestEntity
+      file:
+        /: /ipfs/Qmmapping
+      abis:
+        - name: Factory
+          file:
+            /: /ipfs/Qmabi
+      blockHandlers:
+        - handler: handleBlock
+schema:
+  file:
+    /: /ipfs/Qmschema
+specVersion: 0.0.8
+";
+
+    let manifest = resolve_manifest(YAML, SPEC_VERSION_0_0_8).await;
+    let data_source = manifest
+        .data_sources
+        .iter()
+        .find_map(|ds| ds.as_onchain().cloned())
+        .unwrap();
+
+    let context = data_source.context.as_ref().clone().unwrap();
+    let sorted = context.sorted();
+
+    assert_eq!(sorted.len(), 2);
+    assert_eq!(sorted[0], ("foo".into(), Value::String("bar".into())));
+    assert_eq!(sorted[1], ("qux".into(), Value::Int(42)));
 }
 
 #[tokio::test]

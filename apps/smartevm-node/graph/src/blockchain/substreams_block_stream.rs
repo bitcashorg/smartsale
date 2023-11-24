@@ -1,4 +1,4 @@
-use super::block_stream::SubstreamsMapper;
+use super::block_stream::{SubstreamsMapper, SUBSTREAMS_BUFFER_STREAM_SIZE};
 use super::client::ChainClient;
 use crate::blockchain::block_stream::{BlockStream, BlockStreamEvent};
 use crate::blockchain::Blockchain;
@@ -180,7 +180,7 @@ fn stream_blocks<C: Blockchain, F: SubstreamsMapper<C>>(
 
     try_stream! {
             let endpoint = client.firehose_endpoint()?;
-            let logger = logger.new(o!("deployment" => deployment.clone(), "provider" => endpoint.provider.to_string()));
+            let mut logger = logger.new(o!("deployment" => deployment.clone(), "provider" => endpoint.provider.to_string()));
 
         loop {
             info!(
@@ -224,7 +224,7 @@ fn stream_blocks<C: Blockchain, F: SubstreamsMapper<C>>(
                         match process_substreams_response(
                             response,
                             mapper.as_ref(),
-                            &logger,
+                            &mut logger,
                         ).await {
                             Ok(block_response) => {
                                 match block_response {
@@ -288,7 +288,7 @@ enum BlockResponse<C: Blockchain> {
 async fn process_substreams_response<C: Blockchain, F: SubstreamsMapper<C>>(
     result: Result<Response, Status>,
     mapper: &F,
-    logger: &Logger,
+    logger: &mut Logger,
 ) -> Result<Option<BlockResponse<C>>, Error> {
     let response = match result {
         Ok(v) => v,
@@ -321,4 +321,8 @@ impl<C: Blockchain> Stream for SubstreamsBlockStream<C> {
     }
 }
 
-impl<C: Blockchain> BlockStream<C> for SubstreamsBlockStream<C> {}
+impl<C: Blockchain> BlockStream<C> for SubstreamsBlockStream<C> {
+    fn buffer_size_hint(&self) -> usize {
+        SUBSTREAMS_BUFFER_STREAM_SIZE
+    }
+}

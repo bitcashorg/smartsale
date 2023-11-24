@@ -2,13 +2,13 @@ use graph::blockchain::block_stream::FirehoseCursor;
 use graph::data::subgraph::schema::DeploymentCreate;
 use graph::data::value::Word;
 use graph::data_source::CausalityRegion;
-use graph::schema::InputSchema;
+use graph::schema::{EntityKey, EntityType, InputSchema};
 use lazy_static::lazy_static;
 use std::collections::BTreeSet;
 use std::marker::PhantomData;
 use test_store::*;
 
-use graph::components::store::{DeploymentLocator, DerivedEntityQuery, EntityKey, WritableStore};
+use graph::components::store::{DeploymentLocator, DerivedEntityQuery, WritableStore};
 use graph::data::subgraph::*;
 use graph::semver::Version;
 use graph::{entity, prelude::*};
@@ -32,6 +32,7 @@ lazy_static! {
     static ref TEST_SUBGRAPH_SCHEMA: InputSchema =
         InputSchema::parse(SCHEMA_GQL, TEST_SUBGRAPH_ID.clone())
             .expect("Failed to parse user schema");
+    static ref COUNTER_TYPE: EntityType = TEST_SUBGRAPH_SCHEMA.entity_type(COUNTER).unwrap();
 }
 
 /// Inserts test data into the store.
@@ -106,7 +107,7 @@ fn block_pointer(number: u8) -> BlockPtr {
 }
 
 fn count_key(id: &str) -> EntityKey {
-    EntityKey::data(COUNTER.to_owned(), id.to_owned())
+    COUNTER_TYPE.parse_key(id).unwrap()
 }
 
 async fn insert_count(store: &Arc<DieselSubgraphStore>, deployment: &DeploymentLocator, count: u8) {
@@ -197,7 +198,6 @@ fn count_get_derived(writable: &dyn WritableStore) -> i32 {
         entity_type: key.entity_type.clone(),
         entity_field: Word::from("id"),
         value: key.entity_id.clone(),
-        id_is_bytes: false,
         causality_region: CausalityRegion::ONCHAIN,
     };
     let map = writable.get_derived(&query).unwrap();

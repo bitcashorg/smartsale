@@ -12,7 +12,7 @@ pub use features::{SubgraphFeature, SubgraphFeatureValidationError};
 
 use crate::object;
 use anyhow::{anyhow, Context, Error};
-use futures03::{future::try_join3, stream::FuturesOrdered, TryStreamExt as _};
+use futures03::{future::try_join, stream::FuturesOrdered, TryStreamExt as _};
 use itertools::Itertools;
 use semver::Version;
 use serde::{de, ser};
@@ -507,6 +507,7 @@ pub struct DeploymentFeatures {
     pub features: Vec<String>,
     pub data_source_kinds: Vec<String>,
     pub network: String,
+    pub handler_kinds: Vec<String>,
 }
 
 impl IntoValue for DeploymentFeatures {
@@ -517,6 +518,7 @@ impl IntoValue for DeploymentFeatures {
             apiVersion: self.api_version,
             features: self.features,
             dataSources: self.data_source_kinds,
+            handlers: self.handler_kinds,
             network: self.network,
         }
     }
@@ -695,6 +697,13 @@ impl<C: Blockchain> SubgraphManifest<C> {
             .map(|v| v.version().map(|v| v.to_string()))
             .flatten();
 
+        let handler_kinds = self
+            .data_sources
+            .iter()
+            .map(|ds| ds.handler_kinds())
+            .flatten()
+            .collect::<HashSet<_>>();
+
         let features: Vec<String> = self
             .features
             .iter()
@@ -722,6 +731,10 @@ impl<C: Blockchain> SubgraphManifest<C> {
             features,
             spec_version,
             data_source_kinds: data_source_kinds.into_iter().collect_vec(),
+            handler_kinds: handler_kinds
+                .into_iter()
+                .map(|s| s.to_string())
+                .collect_vec(),
             network,
         }
     }
@@ -803,8 +816,9 @@ impl<C: Blockchain> UnresolvedSubgraphManifest<C> {
             );
         }
 
-        let (schema, data_sources, templates) = try_join3(
-            schema.resolve(id.clone(), resolver, logger),
+        let schema = schema.resolve(id.clone(), resolver, logger).await?;
+
+        let (data_sources, templates) = try_join(
             data_sources
                 .into_iter()
                 .enumerate()
@@ -815,7 +829,7 @@ impl<C: Blockchain> UnresolvedSubgraphManifest<C> {
                 .into_iter()
                 .enumerate()
                 .map(|(idx, template)| {
-                    template.resolve(resolver, logger, ds_count as u32 + idx as u32)
+                    template.resolve(resolver, &schema, logger, ds_count as u32 + idx as u32)
                 })
                 .collect::<FuturesOrdered<_>>()
                 .try_collect::<Vec<_>>(),

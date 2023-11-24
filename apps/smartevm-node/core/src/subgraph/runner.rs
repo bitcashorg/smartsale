@@ -6,15 +6,14 @@ use crate::subgraph::stream::new_block_stream;
 use atomic_refcell::AtomicRefCell;
 use graph::blockchain::block_stream::{BlockStreamEvent, BlockWithTriggers, FirehoseCursor};
 use graph::blockchain::{Block, Blockchain, DataSource as _, TriggerFilter as _};
-use graph::components::store::{EmptyStore, EntityKey, GetScope, StoredDynamicDataSource};
+use graph::components::store::{EmptyStore, GetScope, ReadStore, StoredDynamicDataSource};
 use graph::components::{
     store::ModificationsAndCache,
     subgraph::{MappingError, PoICausalityRegion, ProofOfIndexing, SharedProofOfIndexing},
 };
 use graph::data::store::scalar::Bytes;
-use graph::data::subgraph::schema::POI_DIGEST;
 use graph::data::subgraph::{
-    schema::{SubgraphError, SubgraphHealth, POI_OBJECT},
+    schema::{SubgraphError, SubgraphHealth},
     SubgraphFeature,
 };
 use graph::data_source::{
@@ -22,6 +21,7 @@ use graph::data_source::{
 };
 use graph::env::EnvVars;
 use graph::prelude::*;
+use graph::schema::EntityKey;
 use graph::util::{backoff::ExponentialBackoff, lfu_cache::LfuCache};
 use std::sync::Arc;
 use std::time::{Duration, Instant};
@@ -723,7 +723,7 @@ where
         for trigger in triggers {
             // Using an `EmptyStore` and clearing the cache for each trigger is a makeshift way to
             // get causality region isolation.
-            let schema = self.inputs.store.input_schema();
+            let schema = ReadStore::input_schema(&self.inputs.store);
             let mut block_state = BlockState::<C>::new(EmptyStore::new(schema), LfuCache::new());
 
             // PoI ignores offchain events.
@@ -1077,12 +1077,13 @@ async fn update_proof_of_indexing(
         key: EntityKey,
         digest: Bytes,
     ) -> Result<(), Error> {
+        let digest_name = entity_cache.schema.poi_digest();
         let data = vec![
             (
                 graph::data::store::ID.clone(),
                 Value::from(key.entity_id.to_string()),
             ),
-            (POI_DIGEST.clone(), Value::from(digest)),
+            (digest_name, Value::from(digest)),
         ];
         let poi = entity_cache.make_entity(data)?;
         entity_cache.set(key, poi)
@@ -1094,23 +1095,22 @@ async fn update_proof_of_indexing(
 
     for (causality_region, stream) in proof_of_indexing.drain() {
         // Create the special POI entity key specific to this causality_region
-        let entity_key = EntityKey {
-            entity_type: POI_OBJECT.to_owned(),
-
-            // There are two things called causality regions here, one is the causality region for
-            // the poi which is a string and the PoI entity id. The other is the data source
-            // causality region to which the PoI belongs as an entity. Currently offchain events do
-            // not affect PoI so it is assumed to be `ONCHAIN`.
-            // See also: poi-ignores-offchain
-            entity_id: causality_region.into(),
-            causality_region: CausalityRegion::ONCHAIN,
-        };
+        // There are two things called causality regions here, one is the causality region for
+        // the poi which is a string and the PoI entity id. The other is the data source
+        // causality region to which the PoI belongs as an entity. Currently offchain events do
+        // not affect PoI so it is assumed to be `ONCHAIN`.
+        // See also: poi-ignores-offchain
+        let entity_key = entity_cache
+            .schema
+            .poi_type()
+            .key_in(causality_region, CausalityRegion::ONCHAIN);
 
         // Grab the current digest attribute on this entity
+        let poi_digest = entity_cache.schema.poi_digest().clone();
         let prev_poi = entity_cache
             .get(&entity_key, GetScope::Store)
             .map_err(Error::from)?
-            .map(|entity| match entity.get(POI_DIGEST.as_str()) {
+            .map(|entity| match entity.get(poi_digest.as_str()) {
                 Some(Value::Bytes(b)) => b.clone(),
                 _ => panic!("Expected POI entity to have a digest and for it to be bytes"),
             });

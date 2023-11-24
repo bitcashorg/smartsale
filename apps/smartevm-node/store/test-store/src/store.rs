@@ -5,16 +5,15 @@ use graph::data::query::QueryResults;
 use graph::data::query::QueryTarget;
 use graph::data::subgraph::schema::{DeploymentCreate, SubgraphError};
 use graph::data::subgraph::SubgraphFeature;
-use graph::data_source::CausalityRegion;
 use graph::data_source::DataSource;
 use graph::log;
 use graph::prelude::{QueryStoreManager as _, SubgraphStore as _, *};
+use graph::schema::EntityType;
 use graph::schema::InputSchema;
 use graph::semver::Version;
 use graph::{
     blockchain::block_stream::FirehoseCursor, blockchain::ChainIdentifier,
-    components::store::DeploymentLocator, components::store::EntityKey,
-    components::store::EntityType, components::store::StatusStore,
+    components::store::DeploymentLocator, components::store::StatusStore,
     components::store::StoredDynamicDataSource, data::subgraph::status, prelude::NodeId,
 };
 use graph_graphql::prelude::{
@@ -413,11 +412,7 @@ pub async fn insert_entities(
     let insert_ops = entities
         .into_iter()
         .map(|(entity_type, data)| EntityOperation::Set {
-            key: EntityKey {
-                entity_type,
-                entity_id: data.get("id").unwrap().clone().as_string().unwrap().into(),
-                causality_region: CausalityRegion::ONCHAIN,
-            },
+            key: entity_type.key(data.id()),
             data,
         });
 

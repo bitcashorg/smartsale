@@ -6,14 +6,14 @@ use std::sync::Arc;
 
 use crate::cheap_clone::CheapClone;
 use crate::components::store::write::EntityModification;
-use crate::components::store::{self as s, Entity, EntityKey, EntityOperation};
-use crate::data::store::IntoEntityIterator;
+use crate::components::store::{self as s, Entity, EntityOperation};
+use crate::data::store::{EntityValidationError, IntoEntityIterator};
 use crate::prelude::ENV_VARS;
-use crate::schema::InputSchema;
+use crate::schema::{EntityKey, InputSchema};
 use crate::util::intern::Error as InternError;
 use crate::util::lfu_cache::{EvictStats, LfuCache};
 
-use super::{BlockNumber, DerivedEntityQuery, EntityType, LoadRelatedRequest, StoreError};
+use super::{BlockNumber, DerivedEntityQuery, LoadRelatedRequest, StoreError};
 
 /// The scope in which the `EntityCache` should perform a `get` operation
 pub enum GetScope {
@@ -86,7 +86,7 @@ pub struct EntityCache {
     /// The store is only used to read entities.
     pub store: Arc<dyn s::ReadStore>,
 
-    pub schema: Arc<InputSchema>,
+    pub schema: InputSchema,
 }
 
 impl Debug for EntityCache {
@@ -117,7 +117,10 @@ impl EntityCache {
     }
 
     /// Make a new entity. The entity is not part of the cache
-    pub fn make_entity<I: IntoEntityIterator>(&self, iter: I) -> Result<Entity, anyhow::Error> {
+    pub fn make_entity<I: IntoEntityIterator>(
+        &self,
+        iter: I,
+    ) -> Result<Entity, EntityValidationError> {
         self.schema.make_entity(iter)
     }
 
@@ -198,14 +201,13 @@ impl EntityCache {
         &mut self,
         eref: &LoadRelatedRequest,
     ) -> Result<Vec<Entity>, anyhow::Error> {
-        let (base_type, field, id_is_bytes) = self.schema.get_field_related(eref)?;
+        let (base_type, field) = self.schema.get_field_related(eref)?;
 
         let query = DerivedEntityQuery {
-            entity_type: EntityType::new(base_type.to_string()),
+            entity_type: self.schema.entity_type(base_type)?,
             entity_field: field.name.clone().into(),
             value: eref.entity_id.clone(),
             causality_region: eref.causality_region,
-            id_is_bytes,
         };
 
         let mut entity_map = self.store.get_derived(&query)?;
@@ -409,7 +411,7 @@ impl EntityCache {
         // is wrong and the store already has a version of the entity from a
         // previous block, the attempt to insert will trigger a constraint
         // violation in the database, ensuring correctness
-        let missing = missing.filter(|key| !self.schema.is_immutable(&key.entity_type));
+        let missing = missing.filter(|key| !key.entity_type.is_immutable());
 
         for (entity_key, entity) in self.store.get_many(missing.cloned().collect())? {
             self.current.insert(entity_key, Some(entity));

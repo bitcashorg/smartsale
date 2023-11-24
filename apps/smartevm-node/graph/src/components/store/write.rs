@@ -1,15 +1,14 @@
 //! Data structures and helpers for writing subgraph changes to the store
-use std::{collections::HashSet, sync::Arc};
+use std::collections::HashSet;
 
 use crate::{
     blockchain::{block_stream::FirehoseCursor, BlockPtr},
     cheap_clone::CheapClone,
     components::subgraph::Entity,
     constraint_violation,
-    data::{subgraph::schema::SubgraphError, value::Word},
+    data::{store::Id, subgraph::schema::SubgraphError},
     data_source::CausalityRegion,
     prelude::DeploymentHash,
-    schema::InputSchema,
     util::cache_weight::CacheWeight,
 };
 
@@ -60,7 +59,7 @@ pub enum EntityModification {
 /// A helper struct for passing entity writes to the outside world, viz. the
 /// SQL query generation that inserts rows
 pub struct EntityWrite<'a> {
-    pub id: &'a Word,
+    pub id: &'a Id,
     pub entity: &'a Entity,
     pub causality_region: CausalityRegion,
     pub block: BlockNumber,
@@ -99,7 +98,7 @@ impl<'a> TryFrom<&'a EntityModification> for EntityWrite<'a> {
 }
 
 impl EntityModification {
-    pub fn id(&self) -> &Word {
+    pub fn id(&self) -> &Id {
         match self {
             EntityModification::Insert { key, .. }
             | EntityModification::Overwrite { key, .. }
@@ -384,7 +383,7 @@ impl RowGroup {
     }
 
     /// Find the most recent entry for `id`
-    fn prev_row_mut(&mut self, id: &Word) -> Option<&mut EntityModification> {
+    fn prev_row_mut(&mut self, id: &Id) -> Option<&mut EntityModification> {
         self.rows.iter_mut().rfind(|emod| emod.id() == id)
     }
 
@@ -476,8 +475,8 @@ impl RowGroup {
         Ok(())
     }
 
-    pub fn ids(&self) -> impl Iterator<Item = &str> {
-        self.rows.iter().map(|emod| emod.id().as_str())
+    pub fn ids(&self) -> impl Iterator<Item = &Id> {
+        self.rows.iter().map(|emod| emod.id())
     }
 }
 
@@ -524,16 +523,12 @@ impl<'a> Iterator for ClampsByBlockIterator<'a> {
 /// A list of entity changes with one group per entity type
 #[derive(Debug)]
 pub struct RowGroups {
-    schema: Arc<InputSchema>,
     pub groups: Vec<RowGroup>,
 }
 
 impl RowGroups {
-    fn new(schema: Arc<InputSchema>) -> Self {
-        Self {
-            schema,
-            groups: Vec::new(),
-        }
+    fn new() -> Self {
+        Self { groups: Vec::new() }
     }
 
     fn group(&self, entity_type: &EntityType) -> Option<&RowGroup> {
@@ -552,7 +547,7 @@ impl RowGroups {
         match pos {
             Some(pos) => &mut self.groups[pos],
             None => {
-                let immutable = self.schema.is_immutable(entity_type);
+                let immutable = entity_type.is_immutable();
                 self.groups
                     .push(RowGroup::new(entity_type.clone(), immutable));
                 // unwrap: we just pushed an entry
@@ -633,7 +628,6 @@ pub struct Batch {
 
 impl Batch {
     pub fn new(
-        schema: Arc<InputSchema>,
         block_ptr: BlockPtr,
         firehose_cursor: FirehoseCursor,
         mut raw_mods: Vec<EntityModification>,
@@ -654,7 +648,7 @@ impl Batch {
             EntityModification::Remove { .. } => 0,
         });
 
-        let mut mods = RowGroups::new(schema);
+        let mut mods = RowGroups::new();
 
         for m in raw_mods {
             mods.group_entry(&m.key().entity_type).push(m, block)?;
@@ -903,9 +897,9 @@ impl<'a> Iterator for WriteChunkIter<'a> {
 mod test {
     use crate::{
         components::store::{
-            write::EntityModification, write::EntityOp, BlockNumber, EntityKey, EntityType,
-            StoreError,
+            write::EntityModification, write::EntityOp, BlockNumber, EntityType, StoreError,
         },
+        data::{store::Id, value::Word},
         entity,
         prelude::DeploymentHash,
         schema::InputSchema,
@@ -916,18 +910,22 @@ mod test {
 
     #[track_caller]
     fn check_runs(values: &[usize], blocks: &[BlockNumber], exp: &[(BlockNumber, &[usize])]) {
+        fn as_id(n: &usize) -> Id {
+            Id::String(Word::from(n.to_string()))
+        }
+
         assert_eq!(values.len(), blocks.len());
 
         let rows = values
             .iter()
             .zip(blocks.iter())
             .map(|(value, block)| EntityModification::Remove {
-                key: EntityKey::data("RowGroup".to_string(), value.to_string()),
+                key: ROW_GROUP_TYPE.key(Id::String(Word::from(value.to_string()))),
                 block: *block,
             })
             .collect();
         let group = RowGroup {
-            entity_type: EntityType::new("Entry".to_string()),
+            entity_type: ENTRY_TYPE.clone(),
             rows,
             immutable: false,
         };
@@ -938,14 +936,14 @@ mod test {
                     block,
                     entries
                         .iter()
-                        .map(|entry| entry.id().parse().unwrap())
+                        .map(|entry| entry.id().clone())
                         .collect::<Vec<_>>(),
                 )
             })
             .collect::<Vec<_>>();
         let exp = Vec::from_iter(
             exp.into_iter()
-                .map(|(block, values)| (*block, Vec::from_iter(values.iter().cloned()))),
+                .map(|(block, values)| (*block, Vec::from_iter(values.iter().map(as_id)))),
         );
         assert_eq!(exp, act);
     }
@@ -964,11 +962,18 @@ mod test {
         check_runs(&[10, 20, 11], &[1, 2, 1], exp);
     }
 
-    const GQL: &str = "type Thing @entity { id: ID!, count: Int! }";
+    // A very fake schema that allows us to get the entity types we need
+    const GQL: &str = r#"
+      type Thing @entity { id: ID!, count: Int! }
+      type RowGroup @entity { id: ID! }
+      type Entry @entity { id: ID! }
+    "#;
     lazy_static! {
         static ref DEPLOYMENT: DeploymentHash = DeploymentHash::new("batchAppend").unwrap();
         static ref SCHEMA: InputSchema = InputSchema::parse(GQL, DEPLOYMENT.clone()).unwrap();
-        static ref ENTITY_TYPE: EntityType = EntityType::new("Thing".to_string());
+        static ref THING_TYPE: EntityType = SCHEMA.entity_type("Thing").unwrap();
+        static ref ROW_GROUP_TYPE: EntityType = SCHEMA.entity_type("RowGroup").unwrap();
+        static ref ENTRY_TYPE: EntityType = SCHEMA.entity_type("Entry").unwrap();
     }
 
     /// Convenient notation for changes to a fixed entity
@@ -988,7 +993,7 @@ mod test {
             use Mod::*;
 
             let value = value.clone();
-            let key = EntityKey::data("Thing", "one");
+            let key = THING_TYPE.parse_key("one").unwrap();
             match value {
                 Ins(block) => EntityModification::Insert {
                     key,
@@ -1028,7 +1033,7 @@ mod test {
     impl Group {
         fn new() -> Self {
             Self {
-                group: RowGroup::new(ENTITY_TYPE.clone(), false),
+                group: RowGroup::new(THING_TYPE.clone(), false),
             }
         }
 
@@ -1092,7 +1097,7 @@ mod test {
     fn last_op() {
         #[track_caller]
         fn is_remove(group: &RowGroup, at: BlockNumber) {
-            let key = EntityKey::data("Thing", "one");
+            let key = THING_TYPE.parse_key("one").unwrap();
             let op = group.last_op(&key, at).unwrap();
 
             assert!(
@@ -1104,7 +1109,7 @@ mod test {
         }
         #[track_caller]
         fn is_write(group: &RowGroup, at: BlockNumber) {
-            let key = EntityKey::data("Thing", "one");
+            let key = THING_TYPE.parse_key("one").unwrap();
             let op = group.last_op(&key, at).unwrap();
 
             assert!(
@@ -1117,7 +1122,7 @@ mod test {
 
         use Mod::*;
 
-        let key = EntityKey::data("Thing", "one");
+        let key = THING_TYPE.parse_key("one").unwrap();
 
         // This will result in two mods int the group:
         //   [ InsC(1,2), InsC(2,3) ]

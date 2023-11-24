@@ -5,11 +5,10 @@ use graphql_parser::{schema::TypeDefinition, Pos};
 use inflector::Inflector;
 use lazy_static::lazy_static;
 
-use crate::components::store::EntityType;
-use crate::data::graphql::ObjectOrInterface;
+use crate::data::graphql::{ObjectOrInterface, ObjectTypeExt};
 use crate::schema::{ast, META_FIELD_NAME, META_FIELD_TYPE};
 
-use crate::data::graphql::ext::{DirectiveExt, DocumentExt, ValueExt};
+use crate::data::graphql::ext::{DefinitionExt, DirectiveExt, DocumentExt, ValueExt};
 use crate::prelude::s::{Value, *};
 use crate::prelude::*;
 use thiserror::Error;
@@ -94,7 +93,7 @@ impl ApiSchema {
     /// In addition, the API schema has an introspection schema mixed into
     /// `api_schema`. In particular, the `Query` type has fields called
     /// `__schema` and `__type`
-    pub fn from_api_schema(mut api_schema: Schema) -> Result<Self, anyhow::Error> {
+    pub(crate) fn from_api_schema(mut api_schema: Schema) -> Result<Self, anyhow::Error> {
         add_introspection_schema(&mut api_schema.document);
 
         let query_type = api_schema
@@ -124,6 +123,14 @@ impl ApiSchema {
         })
     }
 
+    /// Create an API Schema that can be used to execute GraphQL queries.
+    /// This method is only meant for schemas that are not derived from a
+    /// subgraph schema, like the schema for the index-node server. Use
+    /// `InputSchema::api_schema` to get an API schema for a subgraph
+    pub fn from_graphql_schema(schema: Schema) -> Result<Self, anyhow::Error> {
+        Self::from_api_schema(schema)
+    }
+
     pub fn document(&self) -> &s::Document {
         &self.schema.document
     }
@@ -136,12 +143,12 @@ impl ApiSchema {
         &self.schema
     }
 
-    pub fn types_for_interface(&self) -> &BTreeMap<EntityType, Vec<ObjectType>> {
+    pub fn types_for_interface(&self) -> &BTreeMap<String, Vec<ObjectType>> {
         &self.schema.types_for_interface
     }
 
     /// Returns `None` if the type implements no interfaces.
-    pub fn interfaces_for_type(&self, type_name: &EntityType) -> Option<&Vec<InterfaceType>> {
+    pub fn interfaces_for_type(&self, type_name: &str) -> Option<&Vec<InterfaceType>> {
         self.schema.interfaces_for_type(type_name)
     }
 
@@ -223,7 +230,7 @@ impl ApiSchema {
     }
 
     #[cfg(debug_assertions)]
-    pub fn definitions(&self) -> impl Iterator<Item = &s::Definition<'static, String>> {
+    pub fn definitions(&self) -> impl Iterator<Item = &s::Definition> {
         self.schema.document.definitions.iter()
     }
 }
@@ -233,8 +240,24 @@ lazy_static! {
         let schema = include_str!("introspection.graphql");
         parse_schema(schema).expect("the schema `introspection.graphql` is invalid")
     };
+    pub static ref INTROSPECTION_QUERY_TYPE: ast::ObjectType = {
+        let root_query_type = INTROSPECTION_SCHEMA
+            .get_root_query_type()
+            .expect("Schema does not have a root query type");
+        ast::ObjectType::from(Arc::new(root_query_type.clone()))
+    };
 }
 
+pub fn is_introspection_field(name: &str) -> bool {
+    INTROSPECTION_QUERY_TYPE.field(name).is_some()
+}
+
+/// Extend `schema` with the definitions from the introspection schema and
+/// modify the root query type to contain the fields from the introspection
+/// schema's root query type.
+///
+/// This results in a schema that combines the original schema with the
+/// introspection schema
 fn add_introspection_schema(schema: &mut Document) {
     fn introspection_fields() -> Vec<Field> {
         // Generate fields for the root query fields in an introspection schema,
@@ -274,9 +297,16 @@ fn add_introspection_schema(schema: &mut Document) {
         ]
     }
 
-    schema
-        .definitions
-        .extend(INTROSPECTION_SCHEMA.definitions.iter().cloned());
+    // Add all definitions from the introspection schema to the schema,
+    // except for the root query type as that qould clobber the 'real' root
+    // query type
+    schema.definitions.extend(
+        INTROSPECTION_SCHEMA
+            .definitions
+            .iter()
+            .filter(|dfn| !dfn.is_root_query_type())
+            .cloned(),
+    );
 
     let query_type = schema
         .definitions
