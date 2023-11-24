@@ -9,14 +9,14 @@
     "clean": "rm -rf node_modules && rm -rf ./**/**/node_modules && rm -rf .next"
   },
   "devDependencies": {
-    "@types/node": "^20.4.1",
-    "eslint": "^8.44.0",
+    "@types/node": "^20.10.0",
+    "eslint": "^8.54.0",
     "eslint-config-custom": "*",
-    "prettier": "^3.0.0",
+    "prettier": "^3.1.0",
     "prettier-config": "*",
-    "turbo": "^1.10.7"
+    "turbo": "^1.10.16"
   },
-  "packageManager": "pnpm@8.6.6",
+  "packageManager": "bun@1.0.14",
   "workspaces": [
     "apps/*",
     "packages/*",
@@ -24,6 +24,6 @@
   ],
   "dependencies": {
     "eosio-core": "^0.0.2",
-    "next-auth": "^4.22.1"
+    "next-auth": "^4.24.5"
   }
 }

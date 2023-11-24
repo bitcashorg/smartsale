@@ -1,6 +1,4 @@
 
----
-
 # SmartSale EVM
 
 ## Overview
