@@ -22,13 +22,8 @@ const argv = yargs
 
 // Load environment variables.
 dotenv.config();
-const {
-  GAS_PRICE_GWEI,
-  INFURA_KEY,
-  MNEMONIC,
-  MY_ETHERSCAN_API_KEY,
-  PK,
-} = process.env;
+const { GAS_PRICE_GWEI, INFURA_KEY, MNEMONIC, MY_ETHERSCAN_API_KEY, PK } =
+  process.env;
 
 const DEFAULT_MNEMONIC =
   "candy maple cake sugar pudding cream honey rich smooth crumble sweet treat";
@@ -86,81 +81,6 @@ export default {
       accounts: {
         accountsBalance: "1000000000000000000000000000000",
       },
-    },
-    mainnet: {
-      ...sharedNetworkConfig,
-      url: `https://mainnet.infura.io/v3/${INFURA_KEY}`,
-      gasPrice: GAS_PRICE_GWEI
-        ? parseInt(
-            utils.parseUnits(GAS_PRICE_GWEI.toString(), "gwei").toString(),
-          )
-        : "auto",
-    },
-    rinkeby: {
-      ...sharedNetworkConfig,
-      url: `https://rinkeby.infura.io/v3/${INFURA_KEY}`,
-      gasPrice: GAS_PRICE_GWEI
-        ? parseInt(
-            utils.parseUnits(GAS_PRICE_GWEI.toString(), "gwei").toString(),
-          )
-        : "auto",
-    },
-    goerli: {
-      url: `https://goerli.infura.io/v3/${INFURA_KEY}`,
-      ...sharedNetworkConfig,
-      chainId: 5,
-      gasPrice: GAS_PRICE_GWEI
-        ? parseInt(
-            utils.parseUnits(GAS_PRICE_GWEI.toString(), "gwei").toString(),
-          )
-        : "auto",
-    },
-    xdai: {
-      ...sharedNetworkConfig,
-      url: "https://rpc.gnosischain.com",
-      gasPrice: GAS_PRICE_GWEI
-        ? parseInt(
-            utils.parseUnits(GAS_PRICE_GWEI.toString(), "gwei").toString(),
-          )
-        : "auto",
-    },
-    polygon: {
-      ...sharedNetworkConfig,
-      url: "https://polygon-rpc.com",
-      gasPrice: GAS_PRICE_GWEI
-        ? parseInt(
-            utils.parseUnits(GAS_PRICE_GWEI.toString(), "gwei").toString(),
-          )
-        : "auto",
-    },
-    binancesmartchain: {
-      ...sharedNetworkConfig,
-      url: "https://bsc-dataseed1.binance.org/",
-      gasPrice: GAS_PRICE_GWEI
-        ? parseInt(
-            utils.parseUnits(GAS_PRICE_GWEI.toString(), "gwei").toString(),
-          )
-        : "auto",
-    },
-    fuji: {
-      ...sharedNetworkConfig,
-      chainId: 43113,
-      url: "https://api.avax-test.network/ext/bc/C/rpc",
-      gasPrice: GAS_PRICE_GWEI
-        ? parseInt(
-            utils.parseUnits(GAS_PRICE_GWEI.toString(), "gwei").toString(),
-          )
-        : "auto",
-    },
-    avax: {
-      ...sharedNetworkConfig,
-      chainId: 43114,
-      url: "https://api.avax.network/ext/bc/C/rpc",
-      gasPrice: GAS_PRICE_GWEI
-        ? parseInt(
-            utils.parseUnits(GAS_PRICE_GWEI.toString(), "gwei").toString(),
-          )
-        : "auto",
     },
     eosevm_testnet: {
       ...sharedNetworkConfig,

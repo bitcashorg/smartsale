@@ -1,9 +1,9 @@
-# EasyAuction
+# SmartEVM Sale
 
-EasyAuction should become a platform to execute batch auctions for fair initial offerings and token buyback programs. Batch auctions are a market mechanism for matching limit orders of buyers and sellers of a particular good with one fair clearing price.
+SmartEVM Sale should become a platform to execute batch auctions for fair initial offerings and token buyback programs. Batch auctions are a market mechanism for matching limit orders of buyers and sellers of a particular good with one fair clearing price.
 Already in traditional finance, batch auctions have established themselves as a tool for initial offerings, and in the blockchain ecosystem, they are expected to become a fundamental DeFi building lego brick for price-discovery as well.
-The EasyAuction platform is inspired by the auction mechanism of the Gnosis Protocol v1, which has shown a significant product-market fit for initial dex offerings (IDOs) (cp. sales of DIA, mStable, etc…). EasyAuction improves significantly the user experience for IDOs, by settling up arbitrary many bids with a single clearing price instead of roughly 28 orders and thereby making the mechanism fairer, easier to use, and more predictable.
-Given the emerging regulations for IDOs and utility sales - see MiCA -, EasyAuction is intending to comply with them and enabling new projects a safe start without legal risks.
+The SmartEVM Sale platform is inspired by the auction mechanism of the Gnosis Protocol v1, which has shown a significant product-market fit for initial dex offerings (IDOs) (cp. sales of DIA, mStable, etc…). SmartEVM Sale improves significantly the user experience for IDOs, by settling up arbitrary many bids with a single clearing price instead of roughly 28 orders and thereby making the mechanism fairer, easier to use, and more predictable.
+Given the emerging regulations for IDOs and utility sales - see MiCA -, SmartEVM Sale is intending to comply with them and enabling new projects a safe start without legal risks.
 
 ## Use cases
 
@@ -15,7 +15,7 @@ Overall this market for initial token offerings is expected to grow significantl
 
 ### Token buy back programs
 
-Many decentralized projects have to buy back their tokens or auction off their tokens to clear deficits within their protocol. This EasyAuction platform allows them to schedule individual auctions to facilitate these kinds of operations.
+Many decentralized projects have to buy back their tokens or auction off their tokens to clear deficits within their protocol. This SmartEVM Sale platform allows them to schedule individual auctions to facilitate these kinds of operations.
 
 ### Initial credit offering
 
@@ -30,7 +30,7 @@ In this auction type a pre-defined amount of tokens is auctioned off. Anyone can
 
 ### Specific implementation batch auction
 
-EasyAuction allows anyone to start a new auction of any ERC20 token (auctioningToken) against another ERC20 token (biddingToken). The entity initiating the auction, the auctioneer, has to define the amount of token to be sold, the minimal price for the auction, the end-time for the order cancellation period, the end-time of the auction, plus some additional parameters. The auctioneer initiates the auction with an ethereum transaction transferring the auctioningTokens and setting the parameters. From this moment on, anyone can participate as a buyer and submit bids. Each buyer places sell-orders with a specified limit price into the system. Until the "end-time of the order cancellation period", orders can still be canceled. Once this time has passed they can only be placed until the auction end-date.
+SmartEVM Sale allows anyone to start a new auction of any ERC20 token (auctioningToken) against another ERC20 token (biddingToken). The entity initiating the auction, the auctioneer, has to define the amount of token to be sold, the minimal price for the auction, the end-time for the order cancellation period, the end-time of the auction, plus some additional parameters. The auctioneer initiates the auction with an ethereum transaction transferring the auctioningTokens and setting the parameters. From this moment on, anyone can participate as a buyer and submit bids. Each buyer places sell-orders with a specified limit price into the system. Until the "end-time of the order cancellation period", orders can still be canceled. Once this time has passed they can only be placed until the auction end-date.
 
 There is only one exception: If the auction is configured to allow atomic-closures, then the next step - the price calculation - and placing one last order even after the auction end-date can be done within one ethereum transaction.
 In all other cases, no further order placement is allowed once the auction end-date passed and the auction can be cleared by the on-chain price calculations.
@@ -56,17 +56,6 @@ Prices between biddingToken and auctioningToken are expressed by a fraction whos
 
 ## Instructions
 
-### Backend
-
-Install dependencies
-
-```
-git clone https://github.com/gnosis/ido-contracts
-cd ido-contracts
-yarn
-yarn build
-```
-
 Running tests:
 
 ```
@@ -76,7 +65,7 @@ yarn test
 Run migration:
 
 ```
-yarn deploy --network $NETWORK
+yarn deploy --network eosevm_testnet
 ```
 
 Verify on etherscan:
@@ -89,7 +78,8 @@ npx hardhat etherscan-verify --license None --network rinkeby
 
 ### Create auctions
 
-New auctions can be started with a hardhat script or via a safe app. The safe-app can be found here: [Auction-Starter](https://github.com/gnosis/ido-starter)
+New auctions can be started with a hardhat script or via a eosevm app.
+
 A new auction selling the token `0xc778417e063141139fce010982780140aa0cd5ab` for `0x5592EC0cfb4dbc12D3aB100b257153436a1f0FEa` can be started using the hardhat script like that:
 
 ```
@@ -135,8 +125,4 @@ export PK=<Your private key _for the signing address_. The address for this key 
 yarn hardhat generateSignatures --auction-id "Your auctionId" --file-with-address "./your_address_inputs.txt" --network $NETWORK
 ```
 
-The generated signatures can be directly uploaded to the backend by adding the flag `--post-to-api` - or `--post-to-dev-api` in case you are testing with [development environment](https://ido-ux.dev.gnosisdev.com/#/) - to the previous command. Uploading signatures allows all authorized users to create orders from the web interface without the extra friction of managing a signature.
-
-## Audit
-
-The solidity code was audited by Adam Kolar, from the G0 Group. The report can be found [here](https://github.com/g0-group/Audits/blob/master/GnosisAuctionFeb2021.pdf) and [here](https://github.com/g0-group/Audits/blob/master/GnosisAuctionMar2021.pdf).
+The generated signatures can be directly uploaded to the backend by adding the flag `--post-to-api` - or `--post-to-dev-api` in case you are testing with development environment. Uploading signatures allows all authorized users to create orders from the web interface without the extra friction of managing a signature.
