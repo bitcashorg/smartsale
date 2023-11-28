@@ -91,6 +91,7 @@ export default {
             utils.parseUnits(GAS_PRICE_GWEI.toString(), "gwei").toString(),
           )
         : "auto",
+      timeout: 60000,
     },
   },
   namedAccounts: {
