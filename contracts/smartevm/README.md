@@ -68,12 +68,6 @@ Run migration:
 yarn deploy --network eosevm_testnet
 ```
 
-Verify on etherscan:
-
-```
-npx hardhat etherscan-verify --license None --network rinkeby
-```
-
 ## Running scripts
 
 ### Create auctions
