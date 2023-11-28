@@ -6,8 +6,8 @@ import { Connector } from 'wagmi'
 import { Button } from '../../../buttons/Button'
 import { InlineLoading } from '../../../common/InlineLoading'
 import { AlertIcon } from '../../../icons/AlertIcon'
-import { IconWrapper } from '../../common/pureStyledComponents/IconWrapper'
-import { Text } from '../../common/pureStyledComponents/Text'
+import { IconWrapper } from '../pureStyledComponents/IconWrapper'
+import { Text } from '../pureStyledComponents/Text'
 
 const Wrapper = styled.div``
 

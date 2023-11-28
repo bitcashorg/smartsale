@@ -3,7 +3,9 @@
 This repository holds the subgraph code used to index the EasyAuction events using the Graph.
 
 ## Getting Started
+
 Basic commands to get started with the subgraph.
+
 ```bash
 # Install dependencies
 yarn install
@@ -19,6 +21,7 @@ yarn test
 ```
 
 ### Deploy to individual networks
+
 ```bash
 # Deploy to test urls
 yarn deploy:{network_name}-test
@@ -33,6 +36,7 @@ Note: Replace`yarn` with `npm run` in the above commands to use npm.
 
 
 ## Add a new network
+
 * Add a new json file inside the `config` folder. For eg. `{network_name}.json`.
 * Add the `network`, `address` and `startBlock` details in the json file.
 * Update the `getChainId` function in `src/utils.ts` to return the chainId of the network.

@@ -19,8 +19,9 @@ SmartSale is a comprehensive platform designed to streamline the auction process
 
 1. Clone the repository: `git clone git@github.com:bitcashorg/smartevm.git`
 2. Navigate to the project directory: `cd smartevm`
-3. Install dependencies: `yarn install` or `npm install`
-4. Additional setup instructions (if any).
+3. Install dependencies: `bun install`
+4. Build services with `bun run build`
+5. Start services with `bun workspace <service-name> <command>` Eg. `bun workspace gnosisauctionservice test`
 
 ### Running the Application
 

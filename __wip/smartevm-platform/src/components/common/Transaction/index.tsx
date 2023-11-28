@@ -5,7 +5,7 @@ import { useActiveWeb3React } from '../../../hooks'
 import { useAllTransactions } from '../../../state/transactions/hooks'
 import { ExternalLink } from '../../../theme'
 import { getExplorerLink } from '../../../utils'
-import { Spinner, SpinnerSize } from '../../common/Spinner'
+import { Spinner, SpinnerSize } from '../Spinner'
 import { AlertIcon } from '../../icons/AlertIcon'
 import { OrderPlaced } from '../../icons/OrderPlaced'
 
