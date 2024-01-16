@@ -1,0 +1,29 @@
+{
+  "name": "smartevm-genql",
+  "version": "0.0.1",
+  "private": true,
+  "description": "smartevm genql",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "gen": "pnpm run gen-test",
+    "gen-prod": "./scripts/prod.sh",
+    "gen-test": "./scripts/test.sh",
+    "gen-local": "./scripts/local.sh",
+    "lint": "eslint \"src/**/*.ts*\""
+  },
+  "author": "smartevm.ai",
+  "license": "ISC",
+  "dependencies": {
+    "@genql/runtime": "^2.10.0",
+    "graphql": "^16.6.0",
+    "graphql-ws": "^5.14.2",
+    "smartevm-env": "workspace:*"
+  },
+  "devDependencies": {
+    "@genql/cli": "^6.0.0",
+    "genql": "^2.0.1",
+    "typescript": "^5.1.3",
+    "tsconfig": "workspace:*"
+  }
+}

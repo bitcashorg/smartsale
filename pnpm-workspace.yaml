@@ -1,0 +1,6 @@
+packages:
+  - 'apps/**'
+  - 'packages/**'
+  - 'hardhat/**'
+  - "!**/.next/**" 
+  - "!**/dist/**" 

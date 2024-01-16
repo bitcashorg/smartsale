@@ -1,0 +1,47 @@
+version: '3.8'
+
+services:
+  database:
+    container_name: smartevm-postgres
+    image: postgres:14.5
+    volumes:
+      - smartevm-pgdata:/var/lib/postgresql/data_bitcash
+    ports:
+      - "5433:5433"
+    environment:
+      PGPORT: 5433
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: pass
+      POSTGRES_DB: smartevm
+
+  hasura:
+    container_name: smartevm-hasura
+    build: ./apps/hasura
+    ports:
+      - "8080:8080"
+    depends_on:
+      - database
+    links:
+      - database
+    env_file:
+      - .env
+    environment:
+      HASURA_GRAPHQL_DATABASE_URL: "postgres://user:pass@database:5433/smartevm?sslmode=disable" 
+      HASURA_GRAPHQL_ENABLE_CONSOLE: "true"
+      HASURA_GRAPHQL_ADMIN_SECRET: ${HASURA_GRAPHQL_ADMIN_SECRET}
+      HASURA_GRAPHQL_MIGRATIONS_SERVER_TIMEOUT: 100
+      HASURA_GRAPHQL_SERVER_PORT: 8080
+      HASURA_GRAPHQL_DEV_MODE: "true"
+      HASURA_GRAPHQL_ENABLE_CONSOLE: "true"
+      HASURA_GRAPHQL_ENABLED_LOG_TYPES: startup, http-log, webhook-log, websocket-log, query-log
+      HASURA_GRAPHQL_CORS_DOMAIN: "*"
+      HASURA_GRAPHQL_UNAUTHORIZED_ROLE: "anonymous"
+      HASURA_GRAPHQL_EXPERIMENTAL_FEATURES: naming_convention
+      HASURA_GRAPHQL_DEFAULT_NAMING_CONVENTION: graphql-default
+      HASURA_GRAPHQL_JWT_SECRET: '{"type":"HS256", "key":"xx52fa850c02dc222631cca898ed1485821a70912a6e3649c49076912daa3b62182ba013315915d64f402ddfbb8b58eb5bd11ba225136a6af45bbae07ca872f4"}'
+
+volumes:
+  smartevm-pgdata:
+
+
+
