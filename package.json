@@ -19,7 +19,8 @@
   },
   "workspaces": [
     "apps/*",
-    "packages/*"
+    "packages/*",
+    "hardhat"
   ],
   "packageManager": "pnpm@8.6.6"
 }
