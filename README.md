@@ -1,39 +1,41 @@
 
 # SmartSale EVM
 
-## Overview
-
 SmartSale is a comprehensive platform designed to streamline the auction process.
 
 ![](https://cdn.eosnation.io/pomelo/project_logos/fc190531-e0ed-4018-be9b-2a4323829bb8.png?webp=true&resize=1500&animated=true)
 
-## Features
+## Requirements
 
-- **Auction Contracts**: Smart contracts for handling auction logic.
-- **Auction UX**: User interface for participating in auctions.
-- **Auction Graph**: Graph database integration for enhanced data handling.
-- **Launch Auction UX**: Specialized UX for launching new auctions.
+- NodeJS. We recommend [nvm](https://github.com/nvm-sh/nvm) for version switching.
+- Hasura Cli https://hasura.io/docs/latest/hasura-cli/overview.
+- pnpm package manager https://pnpm.io/
+- [Docker](https://docs.docker.com/engine/install/) and [Docker Compose](https://docs.docker.com/compose/install/)
+- Task manager https://taskfile.dev
 
-## Getting Started
+## Running the Backend:
 
-### Installation
+In root folder, create an .env file based of .env_sample and the use `task` to execute the following commands to operate Hasura locally.
 
-1. Clone the repository: `git clone git@github.com:bitcashorg/smartevm.git`
-2. Navigate to the project directory: `cd smartevm`
-3. Install dependencies: `bun install`
-4. Build services with `bun run build`
-5. Start services with `bun workspace <service-name> <command>` 
-   Eg. `bun workspace gnosisauctionservice test`, see https://github.com/oven-sh/bun/issues/533#issuecomment-1714801830
+- **boot**: Boots up the database and Hasura services, with a delay to ensure proper startup, followed by running migrations.
+- **reboot**: Shuts down and then restarts the services.
+- **seed**: Applies seed data to the Hasura project.
+- **console**: Launches the Hasura console for the specified project.
+- **migrate**: Applies database migrations and updates Hasura metadata. 
+- **reload**: Restarts the Postgres service, then all services, and tails the Hasura logs.
+- **up**: Starts all services defined in the Docker Compose file with a build.
+- **down**: Shuts down all services and removes any orphaned containers.
 
-### Running the Application
+## Running the Frontend
 
-1. Start the development server: `yarn start` or `npm start`
-2. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+In apps/masterbots.ai folder (set up .env file - see .env_sample):
+
+```
+bun install
+turbo run dev --scope="smartevm-webapp" 
+# task app will execute the same command
+```
 
 ## Acknowledgments
 
-This project incorporates and builds upon various existing repositories.
-- [Auction Contracts](https://github.com/Gnosis-Auction/auction-contracts)
-- [Auction UX](https://github.com/Gnosis-Auction/auction-ux)
-- [Auction Graph](https://github.com/Gnosis-Auction/auction-graph)
-- [Launch Auction UX](https://github.com/Gnosis-Auction/launch-auction-ux)
+This project is a fork of [Gnosis Auction Contracts](https://github.com/Gnosis-Auction/auction-contracts).
