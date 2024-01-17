@@ -12,7 +12,8 @@
     "lint:sol": "solhint 'contracts/**/*.sol'",
     "lint:ts": "eslint --max-warnings 0 .",
     "fmt:sol": "prettier 'contracts/**/*.sol' -w",
-    "prepack": "yarn build"
+    "prepack": "yarn build",
+    "node": "hardhat node"
   },
   "repository": {
     "type": "git"

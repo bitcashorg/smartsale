@@ -8,13 +8,7 @@ export default async function SignInPage() {
         className="relative flex justify-center w-full max-w-[726px] py-4 text-center "
         style={{ height: 200 }}
       >
-        <Image
-          src="/images/smartevmlogo.png"
-          fill={true}
-          alt="smartevm Logo"
-          style={{ maxWidth: 726 }}
-          className="flex self-center"
-        />
+        Smart EVM
       </div>
 
       <div className="flex justify-center pt-10">

@@ -5,7 +5,13 @@ silent: true
 
 tasks:
   app:
-    -  turbo run dev --scope="smartevm.ai"
+    -  turbo run dev --scope="smartevm-webapp"
+
+  # Smart contract commands
+  node:
+    - bun run --cwd "hardhat" node
+
+  # Hasura backend commands  
   console:
     cmds:
       - hasura console --project apps/hasura 

@@ -14,8 +14,7 @@ export async function Header() {
       <div className="flex items-center">
         <HeaderLink href="/" text="smartevm" />
         <IconSeparator className="w-6 h-6 text-muted-foreground/50" />
-        <HeaderLink href="/" text="Chat" />
-        <HeaderLink href="/browse" text="Browse" />
+        <HeaderLink href="/" text="Auctions" />
       </div>
       <div className="flex items-center justify-end space-x-2">
         <React.Suspense fallback={<div className="flex-1 overflow-auto" />}>

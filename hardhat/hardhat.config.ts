@@ -22,8 +22,7 @@ const argv = yargs
 
 // Load environment variables.
 dotenv.config();
-const { GAS_PRICE_GWEI, INFURA_KEY, MNEMONIC, MY_ETHERSCAN_API_KEY, PK } =
-  process.env;
+const { GAS_PRICE_GWEI, MNEMONIC, PK } = process.env;
 
 const DEFAULT_MNEMONIC =
   "candy maple cake sugar pudding cream honey rich smooth crumble sweet treat";
@@ -35,15 +34,6 @@ if (PK) {
   sharedNetworkConfig.accounts = {
     mnemonic: MNEMONIC || DEFAULT_MNEMONIC,
   };
-}
-
-if (
-  ["rinkeby", "goerli", "mainnet"].includes(argv.network) &&
-  INFURA_KEY === undefined
-) {
-  throw new Error(
-    `Could not find Infura key in env, unable to connect to network ${argv.network}`,
-  );
 }
 
 initiateAuction();
@@ -101,8 +91,9 @@ export default {
     timeout: 2000000,
   },
   etherscan: {
+    // NOTE: remove this later
     apiKey: {
-      eosevm_testnet: MY_ETHERSCAN_API_KEY,
+      eosevm_testnet: "not needed",
     },
     customChains: [
       {
