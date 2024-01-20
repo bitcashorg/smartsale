@@ -3,7 +3,11 @@ import "@nomiclabs/hardhat-ethers";
 import { ethers } from "ethers";
 import { task, types } from "hardhat/config";
 
-import { getEasyAuctionContract } from "./utils";
+import {
+  getEasyAuctionContract,
+  getEhtersSigners,
+  getNetworkName,
+} from "./utils";
 
 const initiateAuction: () => void = () => {
   task("initiateAuction", "Starts a new auction")
@@ -66,8 +70,8 @@ const initiateAuction: () => void = () => {
       types.string,
     )
     .setAction(async (taskArgs, hardhatRuntime) => {
-      const [caller] = await hardhatRuntime.ethers.getSigners();
-      console.log("Using the account:", caller.address);
+      const [caller] = await getEhtersSigners(hardhatRuntime);
+      console.log(`Using the account: ${caller.address}`);
 
       const easyAuction = await getEasyAuctionContract(hardhatRuntime);
       const biddingToken = await hardhatRuntime.ethers.getContractAt(
