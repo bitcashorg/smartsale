@@ -64,15 +64,14 @@ export default {
       },
     },
     eosevm_testnet: {
-      ...sharedNetworkConfig,
+      accounts: [PK],
       url: "https://api.testnet.evm.eosnetwork.com",
       chainId: 15557,
-      gasPrice: GAS_PRICE_GWEI
-        ? parseInt(
-            utils.parseUnits(GAS_PRICE_GWEI.toString(), "gwei").toString(),
-          )
-        : "auto",
-      timeout: 60000,
+    },
+    eosevm_mainent: {
+      accounts: [PK],
+      url: "https://api.evm.eosnetwork.com",
+      chainId: 17777,
     },
   },
   namedAccounts: {
@@ -81,8 +80,8 @@ export default {
   mocha: {
     timeout: 2000000,
   },
+  // NOTE: remove this later, this is to verify and this may not work on eosevm explorer
   etherscan: {
-    // NOTE: remove this later
     apiKey: {
       eosevm_testnet: "not needed",
     },

@@ -10,16 +10,13 @@ Given the emerging regulations for IDOs and utility sales - see MiCA -, SmartEVM
 ### Initial token offering with a fair price-discovery
 
 This batch auction mechanism allows communities, projects, and DAOs to offer their future stakeholders fair participation within their ecosystem by acquiring utility and governance tokens. One of the promises of DeFi is the democratization and communitization of big corporate infrastructures to build open platforms for the public good. By running a batch auction, these projects facilitate one of the fairest distribution of stakes. Projects should demonstrate their interest in fair participation by setting a precedence for future processes by choosing this fair auction principle over private multi-stage sales.
+
 Auction based initial offerings are also picking up in the traditional finance world. Google was one of the first big tech companies using a similar auction mechanism with a unique clearing price to IPO. Nowadays, companies like Slack and Spotify are advocating similar approaches as well via Direct Listings: Selling their stocks in the pre-open auction on the first day of trading.
 Overall this market for initial token offerings is expected to grow significantly over time together with the ecosystem. Even on gnosis protocol version 1, a platform not intended for this use case, was able to facilitate IDOs with a total of more than 20 million funding.
 
 ### Token buy back programs
 
 Many decentralized projects have to buy back their tokens or auction off their tokens to clear deficits within their protocol. This SmartEVM Sale platform allows them to schedule individual auctions to facilitate these kinds of operations.
-
-### Initial credit offering
-
-First implementations of [yTokens are live](https://defirate.com/uma-ycomp-shorts/) on the ethereum blockchain. The initial price finding and matching of creditor and debtor for such credit instruments can be done in a very fair manner for these kind of financial contracts.
 
 ## Protocol description
 
@@ -50,7 +47,7 @@ The proposed batch auction system has a number of advantages over dutch auction.
 
 ## Warnings
 
-In case the auction is expected to raise more than 2^96 units of the biddingToken, don't start the auction,as it will not be settlable. This corresponds to about 79 billion DAI.
+In case the auction is expected to raise more than the max supply of the biddingToken, don't start the auction, as it will not be settlable.
 
 Prices between biddingToken and auctioningToken are expressed by a fraction whose components are stored as uint96. Make sure your expected prices are representable as such fractions.
 
@@ -77,10 +74,6 @@ New auctions can be started with a hardhat script or via a eosevm app.
 A new auction selling the token `0xc778417e063141139fce010982780140aa0cd5ab` for `0x5592EC0cfb4dbc12D3aB100b257153436a1f0FEa` can be started using the hardhat script like that:
 
 ```
-export NETWORK=<Your Network>
-export GAS_PRICE_GWEI=<Your gas price>
-export INFURA_KEY=<Your infura key>
-export PK=<Your private key>
 yarn hardhat initiateAuction --auctioning-token "0xc778417e063141139fce010982780140aa0cd5ab" --bidding-token "0x5592EC0cfb4dbc12D3aB100b257153436a1f0FEa" --sell-amount 0.1 --min-buy-amount 50 --network $NETWORK
 ```
 
