@@ -5,11 +5,11 @@ import { task } from "hardhat/config";
 
 import { getAuctionEndTimeStamp } from "../priceCalculation";
 
-import { getEasyAuctionContract } from "./utils";
+import { getEasyAuctionContract, getEhtersSigners } from "./utils";
 
 const PRECALCULATION_ITERATION_STEPS = 1000;
 
-const clearAuctionSimplified: () => void = () => {
+export const clearAuctionSimplified: () => void = () => {
   task("clearAuctionSimplified", "Provides the clearing price to an auction")
     .addParam("auctionId", "Id of the auction to be cleared")
     .addParam(
@@ -17,8 +17,9 @@ const clearAuctionSimplified: () => void = () => {
       "The number of orders that need to be considered for clearing - in most of teh cases, this number does not need to be exact",
     )
     .setAction(async (taskArgs, hardhatRuntime) => {
-      const [caller] = await hardhatRuntime.ethers.getSigners();
-      console.log("Using the account:", caller.address);
+      const [caller] = await getEhtersSigners(hardhatRuntime);
+      console.log(`Using the account: ${caller.address}`);
+
       const easyAuction = await getEasyAuctionContract(hardhatRuntime);
       const auctionEndDate = await getAuctionEndTimeStamp(
         easyAuction,
@@ -60,5 +61,3 @@ const clearAuctionSimplified: () => void = () => {
       console.log(txResult);
     });
 };
-
-export { clearAuctionSimplified };

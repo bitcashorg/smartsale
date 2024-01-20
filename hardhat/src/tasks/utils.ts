@@ -3,6 +3,7 @@ import { HardhatRuntimeEnvironment } from "hardhat/types";
 
 import weth9Networks from "canonical-weth/networks.json";
 import { TypedDataDomain } from "../ts/ethers";
+import { SignerWithAddress } from "@nomiclabs/hardhat-ethers/signers";
 
 export function domain(
   chainId: number,
@@ -77,12 +78,9 @@ export async function getWETH9Address(
     weth9Address = "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c";
   } else if (chainId == 100) {
     weth9Address = "0xe91D153E0b41518A2Ce8Dd3D7944Fa863463a97d";
-  } else if (chainId == 43113) {
-    weth9Address = "0xd9d01a9f7c810ec035c0e42cb9e80ef44d7f8692"; // wrapped avax
-  } else if (chainId == 43114) {
-    weth9Address = "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7"; // wrapped avax
   } else if (chainId == 5) {
     weth9Address = "0x60d4db9b534ef9260a88b0bed6c486fe13e604fc";
+    // eosevm_testnet
   } else if (chainId == 15557) {
     weth9Address = "0x6ccc5ad199bf1c64b50f6e7dd530d71402402eb6";
   }
@@ -94,3 +92,42 @@ export const isAvaxNetwork = (chainId: number): boolean =>
 
 export const isEosEvmTestnetNetwork = (chainId: number): boolean =>
   chainId === 15557;
+
+export async function getNetworkName(
+  hardhatRuntime: HardhatRuntimeEnvironment,
+): Promise<string> {
+  const networkInfo = await hardhatRuntime.ethers.provider.getNetwork();
+  return networksMap[networkInfo.chainId.toString()] || networkInfo.name;
+}
+
+const networksMap: NetworkMap = {
+  "15557": "eosevm_testnet",
+};
+
+type NetworkMap = {
+  [key: string]: string;
+};
+
+export async function getEhtersSigners(
+  hardhatRuntime: HardhatRuntimeEnvironment,
+) {
+  let signers;
+  const networkName = await getNetworkName(hardhatRuntime);
+
+  if (networkName === "hardhat") {
+    // For Hardhat Network
+    signers = await hardhatRuntime.ethers.getSigners();
+  } else {
+    // For other networks like eosevm_network
+    // Load private keys from environment or configuration
+    const privateKey = process.env.PRIVATE_KEY; // Example: load from environment
+    if (!privateKey) {
+      throw new Error("Private key not provided for non-Hardhat network");
+    }
+    const provider = new hardhatRuntime.ethers.providers.JsonRpcProvider();
+    const signer = new hardhatRuntime.ethers.Wallet(privateKey, provider);
+    signers = [signer];
+  }
+
+  return signers;
+}

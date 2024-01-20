@@ -5,13 +5,13 @@ import { task } from "hardhat/config";
 
 import { queueStartElement } from "../priceCalculation";
 
-import { getEasyAuctionContract } from "./utils";
+import { getEasyAuctionContract, getEhtersSigners } from "./utils";
 
 /// This hardhat tasks was only quickly build for testing purposes and
 /// it will not work in a generalized case. Please use only, if you understand
 /// the code
 
-const placeManyOrders: () => void = () => {
+export const placeManyOrders: () => void = () => {
   task("placeManyOrders", "Allows to place many orders for testing purposes")
     .addParam("auctionId", "ID of the auction")
     .addParam("nrOfOrders", "number of orders to place")
@@ -21,8 +21,8 @@ const placeManyOrders: () => void = () => {
       "The amount of auctioning tokens to receive at least",
     )
     .setAction(async (taskArgs, hardhatRuntime) => {
-      const [caller] = await hardhatRuntime.ethers.getSigners();
-      console.log("Using the account:", caller.address);
+      const [caller] = await getEhtersSigners(hardhatRuntime);
+      console.log(`Using the account: ${caller.address}`);
 
       const easyAuction = await getEasyAuctionContract(hardhatRuntime);
       if (easyAuction.address != "0xC5992c0e0A3267C7F75493D0F717201E26BE35f7") {
@@ -99,4 +99,3 @@ const placeManyOrders: () => void = () => {
       }
     });
 };
-export { placeManyOrders };

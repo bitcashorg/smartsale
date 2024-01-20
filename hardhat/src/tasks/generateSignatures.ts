@@ -4,11 +4,15 @@ import "hardhat-deploy";
 import "@nomiclabs/hardhat-ethers";
 import axios from "axios";
 import { task } from "hardhat/config";
-import { HardhatRuntimeEnvironment } from "hardhat/types";
 
-import { domain, getAllowListOffChainManagedContract } from "./utils";
+import {
+  domain,
+  getAllowListOffChainManagedContract,
+  getEhtersSigners,
+  getNetworkName,
+} from "./utils";
 
-const generateSignatures: () => void = () => {
+export const generateSignatures: () => void = () => {
   task(
     "generateSignatures",
     "Generates the signatures for the allowListManager",
@@ -27,12 +31,8 @@ const generateSignatures: () => void = () => {
       "Flag that indicates whether the signatures should be sent directly to the api in development environment",
     )
     .setAction(async (taskArgs, hardhatRuntime) => {
-      const [caller] = await hardhatRuntime.ethers.getSigners();
-      console.log(
-        "Using the account: ",
-        caller.address,
-        " to generate signatures",
-      );
+      const [caller] = await getEhtersSigners(hardhatRuntime);
+      console.log(`Using the account: ${caller.address}`);
 
       // Loading dependencies
       const allowListContract = await getAllowListOffChainManagedContract(
@@ -78,13 +78,13 @@ const generateSignatures: () => void = () => {
           const auctioneerSignature = await caller.signMessage(
             hardhatRuntime.ethers.utils.arrayify(auctioneerMessage),
           );
-          const sig = hardhatRuntime.ethers.utils.splitSignature(
-            auctioneerSignature,
-          );
-          const auctioneerSignatureEncoded = hardhatRuntime.ethers.utils.defaultAbiCoder.encode(
-            ["uint8", "bytes32", "bytes32"],
-            [sig.v, sig.r, sig.s],
-          );
+          const sig =
+            hardhatRuntime.ethers.utils.splitSignature(auctioneerSignature);
+          const auctioneerSignatureEncoded =
+            hardhatRuntime.ethers.utils.defaultAbiCoder.encode(
+              ["uint8", "bytes32", "bytes32"],
+              [sig.v, sig.r, sig.s],
+            );
           signatures.push({
             user: address,
             signature: auctioneerSignatureEncoded,
@@ -133,24 +133,3 @@ const generateSignatures: () => void = () => {
       }
     });
 };
-
-async function getNetworkName(
-  hardhatRuntime: HardhatRuntimeEnvironment,
-): Promise<string> {
-  const networkInfo = await hardhatRuntime.ethers.provider.getNetwork();
-  let networkName = networkInfo.name;
-  if (networkInfo.chainId === 100) {
-    networkName = "xdai";
-  }
-  if (networkInfo.chainId === 1) {
-    networkName = "mainnet";
-  }
-  if (networkInfo.chainId === 137) {
-    networkName = "polygon";
-  }
-  if (networkInfo.chainId === 15557) {
-    networkName = "eosevm_testnet";
-  }
-  return networkName;
-}
-export { generateSignatures };

@@ -8,16 +8,16 @@ import {
   getAuctionEndTimeStamp,
 } from "../priceCalculation";
 
-import { getEasyAuctionContract } from "./utils";
+import { getEasyAuctionContract, getEhtersSigners } from "./utils";
 
 const PRECALCULATION_ITERATION_STEPS = 1000;
 
-const clearAuction: () => void = () => {
+export const clearAuction: () => void = () => {
   task("clearAuction", "Provides the clearing price to an auction")
     .addParam("auctionId", "Id of the auction to be cleared")
     .setAction(async (taskArgs, hardhatRuntime) => {
-      const [caller] = await hardhatRuntime.ethers.getSigners();
-      console.log("Using the account:", caller.address);
+      const [caller] = await getEhtersSigners(hardhatRuntime);
+      console.log(`Using the account: ${caller.address}`);
       const easyAuction = await getEasyAuctionContract(hardhatRuntime);
       const auctionEndDate = await getAuctionEndTimeStamp(
         easyAuction,
@@ -26,13 +26,11 @@ const clearAuction: () => void = () => {
       if (auctionEndDate.gt(BigNumber.from(Math.floor(+new Date() / 1000)))) {
         throw new Error("Auction not yet ended");
       }
-      const {
-        clearingOrder: price,
-        numberOfOrdersToClear,
-      } = await calculateClearingPrice(
-        easyAuction,
-        BigNumber.from(taskArgs.auctionId),
-      );
+      const { clearingOrder: price, numberOfOrdersToClear } =
+        await calculateClearingPrice(
+          easyAuction,
+          BigNumber.from(taskArgs.auctionId),
+        );
       console.log("Clearing price will be:", price);
       console.log(
         "And in total ",
@@ -69,8 +67,6 @@ const clearAuction: () => void = () => {
       console.log(txResult);
     });
 };
-
-export { clearAuction };
 
 // Rinkeby tests task
 // yarn hardhat initiateAuction --auction-id 1 --network rinkeby
