@@ -59,7 +59,7 @@ Prices between biddingToken and auctioningToken are expressed by a fraction whos
 Running tests:
 
 ```
-yarn test
+bun test
 ```
 
 Run migration:

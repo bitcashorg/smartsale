@@ -4,21 +4,12 @@ import "hardhat-deploy";
 import dotenv from "dotenv";
 import { utils } from "ethers";
 import type { HttpNetworkUserConfig } from "hardhat/types";
-import yargs from "yargs";
 
 import { clearAuction } from "./src/tasks/clear_auction";
 import { clearAuctionSimplified } from "./src/tasks/clear_auction_simplifed";
 import { generateSignatures } from "./src/tasks/generateSignatures";
 import { initiateAuction } from "./src/tasks/initiate_new_auction";
 import { placeManyOrders } from "./src/tasks/placeManyOrders";
-
-const argv = yargs
-  .option("network", {
-    type: "string",
-    default: "hardhat",
-  })
-  .help(false)
-  .version(false).argv;
 
 // Load environment variables.
 dotenv.config();

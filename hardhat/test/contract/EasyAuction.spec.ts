@@ -42,14 +42,8 @@ describe("EasyAuction", async () => {
   });
   describe("initiate Auction", async () => {
     it("throws if minimumBiddingAmountPerOrder is zero", async () => {
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
 
       await expect(
         createAuctionWithDefaults(easyAuction, {
@@ -63,14 +57,8 @@ describe("EasyAuction", async () => {
       );
     });
     it("throws if auctioned amount is zero", async () => {
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
 
       await expect(
         createAuctionWithDefaults(easyAuction, {
@@ -81,14 +69,8 @@ describe("EasyAuction", async () => {
       ).to.be.revertedWith("cannot auction zero tokens");
     });
     it("throws if auction is a giveaway", async () => {
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
 
       await expect(
         createAuctionWithDefaults(easyAuction, {
@@ -99,14 +81,8 @@ describe("EasyAuction", async () => {
       ).to.be.revertedWith("tokens cannot be auctioned for free");
     });
     it("throws if auction periods do not make sense", async () => {
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
 
       const now = (await ethers.provider.getBlock("latest")).timestamp;
       await expect(
@@ -123,14 +99,8 @@ describe("EasyAuction", async () => {
       // `atStageSolutionSubmission` would always fail, leading to
       // locked funds in the contract.
 
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
 
       await expect(
         createAuctionWithDefaults(easyAuction, {
@@ -142,14 +112,8 @@ describe("EasyAuction", async () => {
       ).to.be.revertedWith("auction end date must be in the future");
     });
     it("initiateAuction stores the parameters correctly", async () => {
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
 
       const now = (await ethers.provider.getBlock("latest")).timestamp;
       const orderCancellationEndDate = now + 42;
@@ -222,14 +186,8 @@ describe("EasyAuction", async () => {
   });
   describe("placeOrdersOnBehalf", async () => {
     it("places a new order and checks that tokens were transferred", async () => {
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
       const now = (await ethers.provider.getBlock("latest")).timestamp;
       const auctionId: BigNumber = await createAuctionWithDefaultsAndReturnId(
         easyAuction,
@@ -298,14 +256,8 @@ describe("EasyAuction", async () => {
       ).to.be.revertedWith("no longer in order placement phase");
     });
     it("one can not place orders, if auction is over", async () => {
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
       const auctionId: BigNumber = await createAuctionWithDefaultsAndReturnId(
         easyAuction,
         {
@@ -325,14 +277,8 @@ describe("EasyAuction", async () => {
       ).to.be.revertedWith("no longer in order placement phase");
     });
     it("one can not place orders, with a worser or same rate", async () => {
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
       const auctionId: BigNumber = await createAuctionWithDefaultsAndReturnId(
         easyAuction,
         {
@@ -360,14 +306,8 @@ describe("EasyAuction", async () => {
       ).to.be.revertedWith("limit price not better than mimimal offer");
     });
     it("one can not place orders with buyAmount == 0", async () => {
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
       const auctionId: BigNumber = await createAuctionWithDefaultsAndReturnId(
         easyAuction,
         {
@@ -386,14 +326,8 @@ describe("EasyAuction", async () => {
       ).to.be.revertedWith("_minBuyAmounts must be greater than 0");
     });
     it("does not withdraw funds, if orders are placed twice", async () => {
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
       const auctionId: BigNumber = await createAuctionWithDefaultsAndReturnId(
         easyAuction,
         {
@@ -425,14 +359,8 @@ describe("EasyAuction", async () => {
       ).to.changeTokenBalances(biddingToken, [user_1], [BigNumber.from(0)]);
     });
     it("places a new order and checks that tokens were transferred", async () => {
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
       const auctionId: BigNumber = await createAuctionWithDefaultsAndReturnId(
         easyAuction,
         {
@@ -467,14 +395,8 @@ describe("EasyAuction", async () => {
       const verifier = await artifacts.readArtifact("AllowListVerifier");
       const verifierMocked = await deployMockContract(user_3, verifier.abi);
       await verifierMocked.mock.isAllowed.returns("0x00000000");
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
 
       const auctionId: BigNumber = await createAuctionWithDefaultsAndReturnId(
         easyAuction,
@@ -498,14 +420,8 @@ describe("EasyAuction", async () => {
       ).to.be.revertedWith("user not allowed to place order");
     });
     it("order placement reverts, if allow manager is an EOA", async () => {
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
 
       const auctionId: BigNumber = await createAuctionWithDefaultsAndReturnId(
         easyAuction,
@@ -528,20 +444,16 @@ describe("EasyAuction", async () => {
         ),
       ).to.be.revertedWith("function call to a non-contract account");
     });
+
     it("allow manager can not mutate state", async () => {
       const StateChangingAllowListManager = await ethers.getContractFactory(
         "StateChangingAllowListVerifier",
       );
 
-      const stateChangingAllowListManager = await StateChangingAllowListManager.deploy();
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2],
-        hre,
-      );
+      const stateChangingAllowListManager =
+        await StateChangingAllowListManager.deploy();
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
 
       const auctionId: BigNumber = await createAuctionWithDefaultsAndReturnId(
         easyAuction,
@@ -570,7 +482,7 @@ describe("EasyAuction", async () => {
           "0x",
         ),
       ).to.be.revertedWith(
-        "Transaction reverted and Hardhat couldn't infer the reason. Please report this to help us improve Hardhat",
+        "Transaction reverted and Hardhat couldn't infer the reason.",
       );
     });
 
@@ -580,14 +492,8 @@ describe("EasyAuction", async () => {
       await verifierMocked.mock.isAllowed.returns(
         MAGIC_VALUE_FROM_ALLOW_LIST_VERIFIER_INTERFACE,
       );
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
 
       const auctionId: BigNumber = await createAuctionWithDefaultsAndReturnId(
         easyAuction,
@@ -611,14 +517,8 @@ describe("EasyAuction", async () => {
       ).to.emit(easyAuction, "NewSellOrder");
     });
     it("an order is only placed once", async () => {
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
       const auctionId: BigNumber = await createAuctionWithDefaultsAndReturnId(
         easyAuction,
         {
@@ -654,14 +554,8 @@ describe("EasyAuction", async () => {
         },
       ];
 
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
 
       const auctionId: BigNumber = await createAuctionWithDefaultsAndReturnId(
         easyAuction,
@@ -684,14 +578,8 @@ describe("EasyAuction", async () => {
       ).to.be.revertedWith("order too small");
     });
     it("fails, if transfers are failing", async () => {
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
       const auctionId: BigNumber = await createAuctionWithDefaultsAndReturnId(
         easyAuction,
         {
@@ -742,14 +630,8 @@ describe("EasyAuction", async () => {
           userId: BigNumber.from(1),
         },
       ];
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
 
       const auctionId: BigNumber = await createAuctionWithDefaultsAndReturnId(
         easyAuction,
@@ -780,14 +662,8 @@ describe("EasyAuction", async () => {
           userId: BigNumber.from(1),
         },
       ];
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
 
       const auctionId: BigNumber = await createAuctionWithDefaultsAndReturnId(
         easyAuction,
@@ -829,14 +705,8 @@ describe("EasyAuction", async () => {
           userId: BigNumber.from(1),
         },
       ];
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
 
       const auctionId: BigNumber = await createAuctionWithDefaultsAndReturnId(
         easyAuction,
@@ -888,14 +758,8 @@ describe("EasyAuction", async () => {
           userId: BigNumber.from(1),
         },
       ];
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
 
       const auctionId: BigNumber = await createAuctionWithDefaultsAndReturnId(
         easyAuction,
@@ -935,14 +799,8 @@ describe("EasyAuction", async () => {
         },
       ];
 
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
 
       await createAuctionWithDefaults(easyAuction, {
         auctioningToken,
@@ -984,14 +842,8 @@ describe("EasyAuction", async () => {
           userId: BigNumber.from(1),
         },
       ];
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
 
       await createAuctionWithDefaults(easyAuction, {
         auctioningToken,
@@ -1043,14 +895,12 @@ describe("EasyAuction", async () => {
           userId: BigNumber.from(3),
         },
       ];
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2, user_3],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(
+          easyAuction,
+          [user_1, user_2, user_3],
+          hre,
+        );
 
       await createAuctionWithDefaults(easyAuction, {
         auctioningToken,
@@ -1098,14 +948,8 @@ describe("EasyAuction", async () => {
           userId: BigNumber.from(1),
         },
       ];
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
 
       await createAuctionWithDefaults(easyAuction, {
         auctioningToken,
@@ -1153,14 +997,8 @@ describe("EasyAuction", async () => {
           userId: BigNumber.from(2),
         },
       ];
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
 
       await createAuctionWithDefaults(easyAuction, {
         auctioningToken,
@@ -1201,14 +1039,12 @@ describe("EasyAuction", async () => {
         },
       ];
 
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2, user_3],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(
+          easyAuction,
+          [user_1, user_2, user_3],
+          hre,
+        );
 
       await createAuctionWithDefaults(easyAuction, {
         auctioningToken,
@@ -1240,14 +1076,8 @@ describe("EasyAuction", async () => {
         userId: BigNumber.from(1),
       };
 
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
 
       await createAuctionWithDefaults(easyAuction, {
         auctioningToken,
@@ -1284,14 +1114,8 @@ describe("EasyAuction", async () => {
           userId: BigNumber.from(1),
         },
       ];
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
 
       const auctionId: BigNumber = await createAuctionWithDefaultsAndReturnId(
         easyAuction,
@@ -1330,14 +1154,8 @@ describe("EasyAuction", async () => {
           userId: BigNumber.from(1),
         },
       ];
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
 
       const auctionId: BigNumber = await createAuctionWithDefaultsAndReturnId(
         easyAuction,
@@ -1381,14 +1199,12 @@ describe("EasyAuction", async () => {
           userId: BigNumber.from(3),
         },
       ];
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2, user_3],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(
+          easyAuction,
+          [user_1, user_2, user_3],
+          hre,
+        );
 
       const auctionId: BigNumber = await createAuctionWithDefaultsAndReturnId(
         easyAuction,
@@ -1450,14 +1266,12 @@ describe("EasyAuction", async () => {
           userId: BigNumber.from(3),
         },
       ];
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2, user_3],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(
+          easyAuction,
+          [user_1, user_2, user_3],
+          hre,
+        );
 
       const auctionId: BigNumber = await createAuctionWithDefaultsAndReturnId(
         easyAuction,
@@ -1528,14 +1342,12 @@ describe("EasyAuction", async () => {
           userId: BigNumber.from(3),
         },
       ];
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2, user_3],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(
+          easyAuction,
+          [user_1, user_2, user_3],
+          hre,
+        );
 
       const auctionId: BigNumber = await createAuctionWithDefaultsAndReturnId(
         easyAuction,
@@ -1609,14 +1421,8 @@ describe("EasyAuction", async () => {
           userId: BigNumber.from(1),
         },
       ];
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
 
       const auctionId: BigNumber = await createAuctionWithDefaultsAndReturnId(
         easyAuction,
@@ -1660,14 +1466,8 @@ describe("EasyAuction", async () => {
           userId: BigNumber.from(1),
         },
       ];
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
 
       const auctionId: BigNumber = await createAuctionWithDefaultsAndReturnId(
         easyAuction,
@@ -1718,14 +1518,8 @@ describe("EasyAuction", async () => {
           userId: BigNumber.from(1),
         },
       ];
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
 
       const auctionId: BigNumber = await createAuctionWithDefaultsAndReturnId(
         easyAuction,
@@ -1779,14 +1573,8 @@ describe("EasyAuction", async () => {
           userId: BigNumber.from(2),
         },
       ];
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
 
       const auctionId: BigNumber = await createAuctionWithDefaultsAndReturnId(
         easyAuction,
@@ -1836,14 +1624,8 @@ describe("EasyAuction", async () => {
           userId: BigNumber.from(1),
         },
       ];
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
 
       const auctionId: BigNumber = await createAuctionWithDefaultsAndReturnId(
         easyAuction,
@@ -1890,14 +1672,8 @@ describe("EasyAuction", async () => {
           userId: BigNumber.from(1),
         },
       ];
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
 
       const auctionId: BigNumber = await createAuctionWithDefaultsAndReturnId(
         easyAuction,
@@ -1944,17 +1720,14 @@ describe("EasyAuction", async () => {
           userId: BigNumber.from(3),
         },
       ];
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2, user_3],
-        hre,
-      );
-      const auctioningTokenBalanceBeforeAuction = await auctioningToken.balanceOf(
-        user_1.address,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(
+          easyAuction,
+          [user_1, user_2, user_3],
+          hre,
+        );
+      const auctioningTokenBalanceBeforeAuction =
+        await auctioningToken.balanceOf(user_1.address);
       const feeReceiver = user_3;
       const feeNumerator = 10;
       await easyAuction
@@ -1992,14 +1765,8 @@ describe("EasyAuction", async () => {
           userId: BigNumber.from(1),
         },
       ];
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
 
       const auctionId: BigNumber = await createAuctionWithDefaultsAndReturnId(
         easyAuction,
@@ -2041,14 +1808,8 @@ describe("EasyAuction", async () => {
           userId: BigNumber.from(1),
         },
       ];
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
 
       const auctionId: BigNumber = await createAuctionWithDefaultsAndReturnId(
         easyAuction,
@@ -2099,14 +1860,8 @@ describe("EasyAuction", async () => {
           userId: BigNumber.from(2),
         },
       ];
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
 
       const auctionId: BigNumber = await createAuctionWithDefaultsAndReturnId(
         easyAuction,
@@ -2146,14 +1901,8 @@ describe("EasyAuction", async () => {
           userId: BigNumber.from(1),
         },
       ];
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
 
       const auctionId: BigNumber = await createAuctionWithDefaultsAndReturnId(
         easyAuction,
@@ -2198,14 +1947,8 @@ describe("EasyAuction", async () => {
           userId: BigNumber.from(1),
         },
       ];
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
 
       const auctionId: BigNumber = await createAuctionWithDefaultsAndReturnId(
         easyAuction,
@@ -2271,14 +2014,8 @@ describe("EasyAuction", async () => {
           userId: BigNumber.from(2),
         },
       ];
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
 
       const auctionId: BigNumber = await createAuctionWithDefaultsAndReturnId(
         easyAuction,
@@ -2320,14 +2057,8 @@ describe("EasyAuction", async () => {
           userId: BigNumber.from(1),
         },
       ];
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
 
       const auctionId: BigNumber = await createAuctionWithDefaultsAndReturnId(
         easyAuction,
@@ -2375,14 +2106,8 @@ describe("EasyAuction", async () => {
           userId: BigNumber.from(1),
         },
       ];
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
 
       const auctionId: BigNumber = await createAuctionWithDefaultsAndReturnId(
         easyAuction,
@@ -2425,10 +2150,8 @@ describe("EasyAuction", async () => {
         userId: BigNumber.from(2),
       },
     ];
-    const {
-      auctioningToken,
-      biddingToken,
-    } = await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
+    const { auctioningToken, biddingToken } =
+      await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
 
     const auctionId: BigNumber = await createAuctionWithDefaultsAndReturnId(
       easyAuction,
@@ -2468,10 +2191,8 @@ describe("EasyAuction", async () => {
         userId: BigNumber.from(1),
       },
     ];
-    const {
-      auctioningToken,
-      biddingToken,
-    } = await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
+    const { auctioningToken, biddingToken } =
+      await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
 
     const auctionId: BigNumber = await createAuctionWithDefaultsAndReturnId(
       easyAuction,
@@ -2531,14 +2252,8 @@ describe("EasyAuction", async () => {
           userId: BigNumber.from(2),
         },
       ];
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
 
       const auctionId: BigNumber = await createAuctionWithDefaultsAndReturnId(
         easyAuction,
@@ -2588,14 +2303,8 @@ describe("EasyAuction", async () => {
           userId: BigNumber.from(2),
         },
       ];
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
 
       const auctionId: BigNumber = await createAuctionWithDefaultsAndReturnId(
         easyAuction,
@@ -2640,14 +2349,8 @@ describe("EasyAuction", async () => {
           userId: BigNumber.from(2),
         },
       ];
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
 
       const auctionId: BigNumber = await createAuctionWithDefaultsAndReturnId(
         easyAuction,
@@ -2694,14 +2397,8 @@ describe("EasyAuction", async () => {
           userId: BigNumber.from(1),
         },
       ];
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
 
       const auctionId: BigNumber = await createAuctionWithDefaultsAndReturnId(
         easyAuction,
@@ -2748,14 +2445,8 @@ describe("EasyAuction", async () => {
           userId: BigNumber.from(2),
         },
       ];
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
 
       const auctionId: BigNumber = await createAuctionWithDefaultsAndReturnId(
         easyAuction,
@@ -2810,14 +2501,8 @@ describe("EasyAuction", async () => {
           userId: BigNumber.from(2),
         },
       ];
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
 
       const auctionId: BigNumber = await createAuctionWithDefaultsAndReturnId(
         easyAuction,
@@ -2866,14 +2551,8 @@ describe("EasyAuction", async () => {
           userId: BigNumber.from(1),
         },
       ];
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
 
       const auctionId: BigNumber = await createAuctionWithDefaultsAndReturnId(
         easyAuction,
@@ -2909,14 +2588,8 @@ describe("EasyAuction", async () => {
           userId: BigNumber.from(1),
         },
       ];
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
 
       const now = (await ethers.provider.getBlock("latest")).timestamp;
       const auctionId: BigNumber = await createAuctionWithDefaultsAndReturnId(
@@ -2936,13 +2609,13 @@ describe("EasyAuction", async () => {
       await expect(
         easyAuction.cancelSellOrders(auctionId, [encodeOrder(sellOrders[0])]),
       ).to.be.revertedWith(
-        "revert no longer in order placement and cancelation phase",
+        "no longer in order placement and cancelation phase",
       );
       await closeAuction(easyAuction, auctionId);
       await expect(
         easyAuction.cancelSellOrders(auctionId, [encodeOrder(sellOrders[0])]),
       ).to.be.revertedWith(
-        "revert no longer in order placement and cancelation phase",
+        "no longer in order placement and cancelation phase",
       );
     });
     it("can't cancel orders twice", async () => {
@@ -2958,14 +2631,8 @@ describe("EasyAuction", async () => {
           userId: BigNumber.from(1),
         },
       ];
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
 
       const auctionId: BigNumber = await createAuctionWithDefaultsAndReturnId(
         easyAuction,
@@ -3000,14 +2667,8 @@ describe("EasyAuction", async () => {
           userId: BigNumber.from(2),
         },
       ];
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
 
       const auctionId: BigNumber = await createAuctionWithDefaultsAndReturnId(
         easyAuction,
@@ -3040,14 +2701,8 @@ describe("EasyAuction", async () => {
           userId: BigNumber.from(1),
         },
       ];
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
 
       const auctionId: BigNumber = await createAuctionWithDefaultsAndReturnId(
         easyAuction,
@@ -3076,14 +2731,8 @@ describe("EasyAuction", async () => {
         buyAmount: ethers.utils.parseEther("1"),
         userId: BigNumber.from(1),
       };
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(easyAuction, [user_1, user_2], hre);
 
       const auctionId: BigNumber = await createAuctionWithDefaultsAndReturnId(
         easyAuction,
@@ -3119,14 +2768,12 @@ describe("EasyAuction", async () => {
           userId: BigNumber.from(1),
         },
       ];
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2, user_3],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(
+          easyAuction,
+          [user_1, user_2, user_3],
+          hre,
+        );
 
       const feeReceiver = user_3;
       const feeNumerator = 10;
@@ -3180,14 +2827,12 @@ describe("EasyAuction", async () => {
           userId: BigNumber.from(1),
         },
       ];
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2, user_3],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(
+          easyAuction,
+          [user_1, user_2, user_3],
+          hre,
+        );
 
       const feeReceiver = user_3;
       const feeNumerator = 0;
@@ -3239,14 +2884,12 @@ describe("EasyAuction", async () => {
           userId: BigNumber.from(3),
         },
       ];
-      const {
-        auctioningToken,
-        biddingToken,
-      } = await createTokensAndMintAndApprove(
-        easyAuction,
-        [user_1, user_2, user_3],
-        hre,
-      );
+      const { auctioningToken, biddingToken } =
+        await createTokensAndMintAndApprove(
+          easyAuction,
+          [user_1, user_2, user_3],
+          hre,
+        );
 
       const feeReceiver = user_3;
       const feeNumerator = 10;
