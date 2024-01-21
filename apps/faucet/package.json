@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "../../node_modules/vite/bin/vite.js",
-    "build": "tsc && ../../node_modules/vite/bin/vite.js build",
+    "dev": "vite",
+    "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },

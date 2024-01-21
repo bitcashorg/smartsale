@@ -17,11 +17,17 @@
     "prettier": "^3.0.0",
     "turbo": "^1.11.2"
   },
-  "workspaces": [
-    "apps/*",
-    "packages/*",
-    "hardhat/*"
-  ],
+  "workspaces": {
+    "packages": [
+      "apps/*",
+      "packages/*",
+      "hardhat/*"
+    ],
+    "nohoist": [
+      "**/vite",
+      "**/vite/**"
+    ]
+  },
   "dependencies": {
     "react-use": "^17.4.3"
   }

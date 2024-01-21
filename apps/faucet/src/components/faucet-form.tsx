@@ -4,8 +4,7 @@ import { Button } from "@/components/ui/button"
 import { useAccount } from "wagmi"
 import { useState } from "react"
 import { useFaucet } from "@/hooks/use-faucet"
-import { TestnetUSDT } from 'usdt-abis'; 
-import { AddTokenToWallet } from "./add-token-to-metamask"
+import { TestnetUSDT } from 'usdt-abis'
 
 export function FaucetForm() {
   const account = useAccount()
