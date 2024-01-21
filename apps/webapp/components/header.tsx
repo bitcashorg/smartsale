@@ -3,6 +3,7 @@ import Link from 'next/link'
 
 import { Button } from '@/components/ui/button'
 import { IconSeparator } from '@/components/ui/icons'
+import { ConnectButton } from '@rainbow-me/rainbowkit'
 
 // https://nextjs.org/docs/app/building-your-application/data-fetching/fetching-caching-and-revalidating
 
@@ -16,7 +17,7 @@ export async function Header() {
       </div>
       <div className="flex items-center justify-end space-x-2">
         <React.Suspense fallback={<div className="flex-1 overflow-auto" />}>
-          <UserOrLogin />
+          <ConnectButton/>
         </React.Suspense>
       </div>
     </header>
