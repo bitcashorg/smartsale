@@ -23,7 +23,7 @@ const auctionItems = [
     maxAllocation: "TBA",
     imagePath: "/placeholder-citizen-conflict.svg",
     badgeText: "ALLOWLIST CLOSED",
-    linkPath: "/auction/citizen-conflict",
+    linkPath: "/citizen-conflict",
   },
   {
     title: "Overlay Protocol",
@@ -32,7 +32,7 @@ const auctionItems = [
     maxAllocation: "TBA",
     imagePath: "/placeholder-overlay-protocol.svg",
     badgeText: "PRE-SALE ACTIVE",
-    linkPath: "/auction/overlay-protocol",
+    linkPath: "/overlay-protocol",
   },
   {
     title: "Future Finance",
@@ -41,6 +41,6 @@ const auctionItems = [
     maxAllocation: "$10,000",
     imagePath: "/placeholder-future-finance.svg",
     badgeText: "REGISTRATION OPEN",
-    linkPath: "/auction/future-finance",
+    linkPath: "/future-finance",
   }
 ];
