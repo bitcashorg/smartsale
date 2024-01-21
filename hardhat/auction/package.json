@@ -62,6 +62,6 @@
     "solhint-plugin-prettier": "^0.0.5",
     "solidity-coverage": "^0.7.13",
     "ts-node": "^9.0.0",
-    "typescript": "^5.3.2"
+    "typescript": "^5.3.3"
   }
 }

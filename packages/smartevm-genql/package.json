@@ -23,7 +23,7 @@
   "devDependencies": {
     "@genql/cli": "^6.0.0",
     "genql": "^2.0.1",
-    "typescript": "^5.3.2",
+    "typescript": "^5.3.3",
     "tsconfig": "workspace:*"
   }
 }
