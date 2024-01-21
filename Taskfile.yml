@@ -7,9 +7,8 @@ tasks:
   app:
     -  turbo run dev --scope="smartevm-webapp"
 
-  # Smart contract commands
-  node:
-    - bun run --cwd "hardhat" node
+  faucet:
+    -  turbo run dev --scope="usdt-faucet"
 
   # Hasura backend commands  
   console:

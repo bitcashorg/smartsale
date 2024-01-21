@@ -20,6 +20,9 @@
   "workspaces": [
     "apps/*",
     "packages/*",
-    "hardhat"
-  ]
+    "hardhat/*"
+  ],
+  "dependencies": {
+    "react-use": "^17.4.3"
+  }
 }
