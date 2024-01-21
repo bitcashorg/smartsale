@@ -8,8 +8,7 @@
   "scripts": {},
   "dependencies": {
     "jose": "^5.1.3",
-    "lodash": "^4.17.21",
-    "smartevm-types": "workspace:*"
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "@types/jsonwebtoken": "^9.0.5",
