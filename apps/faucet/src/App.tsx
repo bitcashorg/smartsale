@@ -28,7 +28,7 @@ export default function Component() {
       <FaucetForm/>
       
       <div className='p-10'>
-        <AddTokenToWallet tokenAddress={TestnetUSDT.address} tokenSymbol="USDT"tokenDecimals={18}/>
+        <AddTokenToWallet tokenAddress={TestnetUSDT.address} tokenSymbol="USDT" tokenDecimals={6}/>
       </div>
 
       </main>
