@@ -10,7 +10,7 @@
     "preview": "next build && next start",
     "type-check": "tsc --noEmit",
     "type-check:watch": "tsc --noEmit -w",
-    "format:write": "prettier --write \"{app,lib,components}/**/*.{ts,tsx,mdx}\" --cache",
+    "format": "prettier --write \"{app,lib,components}/**/*.{ts,tsx,mdx}\" --cache",
     "format:check": "prettier --check \"{app,lib,components}**/*.{ts,tsx,mdx}\" --cache"
   },
   "dependencies": {
