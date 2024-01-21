@@ -36,8 +36,6 @@
     "react-dom": "^18.2.0",
     "react-hot-toast": "^2.4.1",
     "smartevm-abis": "workspace:*",
-    "smartevm-env": "workspace:*",
-    "smartevm-genql": "workspace:*",
     "smartevm-lib": "workspace:*",
     "smartevm-types": "workspace:*",
     "usdt-abis": "workspace:*",
