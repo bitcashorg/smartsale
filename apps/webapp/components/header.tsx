@@ -1,10 +1,8 @@
 import * as React from 'react'
 import Link from 'next/link'
 
-import { auth } from '@/auth'
 import { Button } from '@/components/ui/button'
 import { IconSeparator } from '@/components/ui/icons'
-import { UserMenu } from '@/components/user-menu'
 
 // https://nextjs.org/docs/app/building-your-application/data-fetching/fetching-caching-and-revalidating
 
@@ -34,17 +32,12 @@ function HeaderLink({ href, text }: { href: string; text: string }) {
 }
 
 async function UserOrLogin() {
-  const session = await auth()
   return (
     <>
       <div className="flex items-center">
-        {session?.user ? (
-          <UserMenu user={session.user} />
-        ) : (
           <Button variant="link" asChild className="-ml-2">
-            <Link href="/sign-in">Login</Link>
+            <Link href="/">Login</Link>
           </Button>
-        )}
       </div>
     </>
   )
