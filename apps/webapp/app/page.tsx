@@ -8,7 +8,7 @@ import { TestnetEasyAuction } from 'smartevm-abis'
 
 export default async function IndexPage() {
   return (
-    <div>
+    <div className="container">
       <Upcoming />
       <Participate />
       <Newsletter />
