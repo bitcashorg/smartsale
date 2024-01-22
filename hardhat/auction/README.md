@@ -71,10 +71,10 @@ yarn deploy --network eosevm_testnet
 
 New auctions can be started with a hardhat script or via a eosevm app.
 
-A new auction selling the token `0xc778417e063141139fce010982780140aa0cd5ab` for `0x5592EC0cfb4dbc12D3aB100b257153436a1f0FEa` can be started using the hardhat script like that:
+A new auction selling the token `0xc778417e063141139fce010982780140aa0cd5ab` for `0x1976c3C7b4Cb8912DB5eB737653443F90c534232` can be started using the hardhat script like that:
 
 ```
-yarn hardhat initiateAuction --auctioning-token "0xc778417e063141139fce010982780140aa0cd5ab" --bidding-token "0x5592EC0cfb4dbc12D3aB100b257153436a1f0FEa" --sell-amount 0.1 --min-buy-amount 50 --network $NETWORK
+bun run hardhat initiateAuction --auctioning-token "0xc778417e063141139fce010982780140aa0cd5ab" --bidding-token "0x1976c3C7b4Cb8912DB5eB737653443F90c534232" --sell-amount 0.1 --min-buy-amount 50 --network $NETWORK
 ```
 
 Please look in the hardhat script `/src/tasks/initiate_new_auction` to better understand all parameters.
@@ -82,7 +82,7 @@ Please look in the hardhat script `/src/tasks/initiate_new_auction` to better un
 A more complex example for starting an auction would look like this:
 
 ```
-yarn hardhat initiateAuction --auctioning-token "0xc778417e063141139fce010982780140aa0cd5ab" --bidding-token "0x5592ec0cfb4dbc12d3ab100b257153436a1f0fea" --sell-amount 0.5 --min-buy-amount 800 --auction-end-date 1619195139 --order-cancellation-end-date 1619195139 --allow-list-manager "0x80b8AcA4689EC911F048c4E0976892cCDE14031E" --allow-list-data "0x000000000000000000000000740a98f8f4fae0986fb3264fe4aacf94ac1ee96f"  --network $NETWORK
+bun run hardhat initiateAuction --auctioning-token "0xc778417e063141139fce010982780140aa0cd5ab" --bidding-token "0x1976c3C7b4Cb8912DB5eB737653443F90c534232" --sell-amount 0.5 --min-buy-amount 800 --auction-end-date 1619195139 --order-cancellation-end-date 1619195139 --allow-list-manager "0x80b8AcA4689EC911F048c4E0976892cCDE14031E" --allow-list-data "0x000000000000000000000000740a98f8f4fae0986fb3264fe4aacf94ac1ee96f"  --network $NETWORK
 ```
 
 ### Settle auctions
