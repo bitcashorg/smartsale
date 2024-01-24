@@ -1,9 +1,9 @@
 import { ERC20Data } from './types'
 
 export const TestnetUSDCred: ERC20Data = {
-  address: '0x476e1Cac03298C1d38ac978Ff20C9E8175BaE39f',
+  address: '0x5b148580635E8B67184bCb496741e423F2c326bF',
   name: 'USD Credit Token',
-  symbol: 'USD',
+  symbol: 'USDCred',
   decimals: 6,
   abi: [
     {
