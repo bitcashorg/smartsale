@@ -2,7 +2,7 @@
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 import { FaucetForm } from './components/faucet-form';
 import { useUsdtBalance } from './hooks/use-usdt-balance';
-import { TestnetUSDT } from 'usdt-abis';
+import { TestnetUSDCred, TestnetMBOTSCred } from 'erc20-abis';
 import { AddTokenToWallet } from './components/add-token-to-metamask';
 
 
@@ -12,11 +12,11 @@ export default function Component() {
         <div className="min-h-screen bg-[#f0f0f0]">
       <nav className="flex items-center justify-between p-6 bg-white shadow-md">
         <div className="flex items-center">
-          <span className="text-xl font-semibold">Bitcash USDT Faucet</span>
+          <span className="text-xl font-semibold">SmartSale USD Credits Faucet</span>
         </div>
         <div className='flex'>
           <div className='flex items-center justify-center h-10 pr-5 font-bold'>
-              USDT Balance ${balance}
+              USD Credits ${balance}
           </div>
 
           <ConnectButton/>
@@ -28,7 +28,8 @@ export default function Component() {
       <FaucetForm/>
       
       <div className='p-10'>
-        <AddTokenToWallet tokenAddress={TestnetUSDT.address} tokenSymbol="USDT" tokenDecimals={6}/>
+        <AddTokenToWallet tokenAddress={TestnetUSDCred.address} tokenSymbol="USD" tokenDecimals={6}/>
+          <AddTokenToWallet tokenAddress={TestnetMBOTSCred.address} tokenSymbol="USD" tokenDecimals={6}/>
       </div>
 
       </main>

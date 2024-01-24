@@ -1,4 +1,4 @@
-import { TestnetUSDT } from "usdt-abis";
+import { TestnetUSDCred } from "erc20-abis";
 import { formatUnits } from "viem";
 import { useAccount, useContractRead } from "wagmi";
 
@@ -6,7 +6,7 @@ export function useUsdtBalance(){
   const { address } = useAccount();
 
   const { data } = useContractRead({
-    ...TestnetUSDT,
+    ...TestnetUSDCred,
     functionName: 'balanceOf',
     args: [address],
     watch: true

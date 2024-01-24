@@ -113,3 +113,9 @@ yarn hardhat generateSignatures --auction-id "Your auctionId" --file-with-addres
 ```
 
 The generated signatures can be directly uploaded to the backend by adding the flag `--post-to-api` - or `--post-to-dev-api` in case you are testing with development environment. Uploading signatures allows all authorized users to create orders from the web interface without the extra friction of managing a signature.
+
+## Contract Adresses
+
+### EOS EVM Testnet
+
+- EasyAuction [0x8d37219725eB0088360f744A5d894035D0f88F82](https://explorer.testnet.evm.eosnetwork.com/address/0x8d37219725eB0088360f744A5d894035D0f88F82)

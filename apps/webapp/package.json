@@ -37,7 +37,7 @@
     "react-hot-toast": "^2.4.1",
     "smartevm-abis": "workspace:*",
     "smartevm-lib": "workspace:*",
-    "usdt-abis": "workspace:*",
+    "erc20-abis": "workspace:*",
     "viem": "^1.20.3",
     "wagmi": "^1.4.12"
   },

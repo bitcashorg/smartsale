@@ -1,11 +1,11 @@
 import { useContractWrite, usePrepareContractWrite } from 'wagmi';
-import { TestnetUSDT } from 'usdt-abis'; 
+import { TestnetUSDCred } from 'erc20-abis'; 
 import { parseUnits } from 'viem';
 
 export function useFaucet({ recipient, amount }:UseFaucetParams) {
   // Prepare the contract write operation
   const { config } = usePrepareContractWrite({
-    ...TestnetUSDT,
+    ...TestnetUSDCred,
     functionName: 'faucet',
     args: [recipient, parseUnits(amount, 6)]
   });

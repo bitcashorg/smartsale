@@ -120,7 +120,7 @@ export async function getEhtersSigners(
   } else {
     // For other networks like eosevm_network
     // Load private keys from environment or configuration
-    const privateKey = process.env.PRIVATE_KEY; // Example: load from environment
+    const privateKey = process.env.PK; // Example: load from environment
     if (!privateKey) {
       throw new Error("Private key not provided for non-Hardhat network");
     }

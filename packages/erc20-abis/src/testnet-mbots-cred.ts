@@ -1,7 +1,7 @@
 import {type Abi, type Address} from 'viem'
 
-export const TestnetUSDT: {abi:Abi, address: Address} = {
-  address: '0x1976c3C7b4Cb8912DB5eB737653443F90c534232',
+export const TestnetMBOTSCred: {abi:Abi, address: Address} = {
+  address: '0x115Acc340D40e7F755dc8BC8a5316Dd18f8Be686',
   abi: [
     {
       "inputs": [
@@ -165,24 +165,6 @@ export const TestnetUSDT: {abi:Abi, address: Address} = {
           "type": "bool"
         }
       ],
-      "stateMutability": "nonpayable",
-      "type": "function"
-    },
-    {
-      "inputs": [
-        {
-          "internalType": "address",
-          "name": "recipient",
-          "type": "address"
-        },
-        {
-          "internalType": "uint256",
-          "name": "amount",
-          "type": "uint256"
-        }
-      ],
-      "name": "faucet",
-      "outputs": [],
       "stateMutability": "nonpayable",
       "type": "function"
     },

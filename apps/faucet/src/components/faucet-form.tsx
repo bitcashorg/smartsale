@@ -4,14 +4,14 @@ import { Button } from "@/components/ui/button"
 import { useAccount } from "wagmi"
 import { useState } from "react"
 import { useFaucet } from "@/hooks/use-faucet"
-import { TestnetUSDT } from 'usdt-abis'
+import { TestnetUSDCred } from 'erc20-abis'
 
 export function FaucetForm() {
   const account = useAccount()
   const [address, setAddress] = useState<string|undefined>(account?.address ? account.address : undefined)
   const [quantity, setQuantity] = useState<string>('100') 
   const { callFaucet, isLoading, isSuccess, data } = useFaucet({
-    recipient: address || TestnetUSDT.address, 
+    recipient: address || TestnetUSDCred.address, 
     amount: quantity 
   })
   

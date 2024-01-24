@@ -1,8 +1,8 @@
 {
-  "name": "usdt-abis",
+  "name": "erc20-abis",
   "version": "0.0.1",
   "private": true,
-  "description": "Bitcash USDT Contract Data",
+  "description": "SmartSale ERC20 Credit Tokens Abi",
   "main": "./src/index.ts",
   "types": "./src/index.ts",
   "scripts": {},
