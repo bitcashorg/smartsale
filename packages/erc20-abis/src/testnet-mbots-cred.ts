@@ -1,7 +1,11 @@
-import {type Abi, type Address} from 'viem'
+import { ERC20Data } from "./types";
 
-export const TestnetMBOTSCred: {abi:Abi, address: Address} = {
-  address: '0x115Acc340D40e7F755dc8BC8a5316Dd18f8Be686',
+
+export const TestnetMBOTSCred: ERC20Data  = {
+  address: '0x09a37fC30Ad62d613d2c9BFDb228915A1D30084e',
+  name: 'MBOTS Credit Token',
+  symbol: 'MBOTS',
+  decimals: 6,
   abi: [
     {
       "inputs": [

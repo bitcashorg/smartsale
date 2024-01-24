@@ -1,7 +1,10 @@
-import {type Abi, type Address} from 'viem'
+import { ERC20Data } from './types'
 
-export const TestnetUSDCred: {abi:Abi, address: Address} = {
-  address: '0x115Acc340D40e7F755dc8BC8a5316Dd18f8Be686',
+export const TestnetUSDCred: ERC20Data = {
+  address: '0x476e1Cac03298C1d38ac978Ff20C9E8175BaE39f',
+  name: 'USD Credit Token',
+  symbol: 'USD',
+  decimals: 6,
   abi: [
     {
       "inputs": [

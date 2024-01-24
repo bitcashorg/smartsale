@@ -30,5 +30,5 @@ To deploy the contracts, run the corresponding package.json script
 
 ### EOS EVM Testnet
 
-- USD Credit Token [0x115Acc340D40e7F755dc8BC8a5316Dd18f8Be686](https://explorer.testnet.evm.eosnetwork.com/address/0x115Acc340D40e7F755dc8BC8a5316Dd18f8Be686)
-- MBOTS Credit Token [0x8e4fA14D6874Cb2189bCd768aC67A33A6d76875B](https://explorer.testnet.evm.eosnetwork.com/address/0x8e4fA14D6874Cb2189bCd768aC67A33A6d76875B)
+- USD Credit Token [0x476e1Cac03298C1d38ac978Ff20C9E8175BaE39f](https://explorer.testnet.evm.eosnetwork.com/address/0x476e1Cac03298C1d38ac978Ff20C9E8175BaE39f)
+- MBOTS Credit Token [0x09a37fC30Ad62d613d2c9BFDb228915A1D30084e](https://explorer.testnet.evm.eosnetwork.com/address/0x09a37fC30Ad62d613d2c9BFDb228915A1D30084e)

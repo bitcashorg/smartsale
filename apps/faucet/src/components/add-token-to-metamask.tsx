@@ -1,6 +1,8 @@
+import { ERC20Data } from "erc20-abis";
 
 
-export function AddTokenToWallet({ tokenAddress, tokenSymbol, tokenDecimals, tokenImage }: AddTokenProps){
+export function AddTokenToWallet({ address, symbol, decimals, image, name }: ERC20Data){
+  console.log({ address, symbol, decimals, image, name })
   const addTokenToMetaMask = async () => {
     try {
       if (window.ethereum && window.ethereum.isMetaMask) {
@@ -9,10 +11,10 @@ export function AddTokenToWallet({ tokenAddress, tokenSymbol, tokenDecimals, tok
           params: {
             type: 'ERC20',
             options: {
-              address: tokenAddress,
-              symbol: tokenSymbol,
-              decimals: tokenDecimals,
-              image: tokenImage || '',
+              address,
+              symbol,
+              decimals,
+              image
             },
           },
         });
@@ -31,16 +33,9 @@ export function AddTokenToWallet({ tokenAddress, tokenSymbol, tokenDecimals, tok
       onClick={addTokenToMetaMask}
       className="px-4 py-2 text-white bg-blue-500 rounded hover:bg-blue-600 focus:outline-none focus:ring"
     >
-      Add Token to MetaMask
+      Add {name} to MetaMask
     </button>
   );
-}
-
-interface AddTokenProps {
-  tokenAddress: string;
-  tokenSymbol: string;
-  tokenDecimals: number;
-  tokenImage?: string; // Optional token image URL
 }
 
 interface CustomWindow extends Window {

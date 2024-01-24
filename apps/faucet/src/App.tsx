@@ -4,6 +4,7 @@ import { FaucetForm } from './components/faucet-form';
 import { useUsdtBalance } from './hooks/use-usdt-balance';
 import { TestnetUSDCred, TestnetMBOTSCred } from 'erc20-abis';
 import { AddTokenToWallet } from './components/add-token-to-metamask';
+import { Button } from './components/ui/button';
 
 
 export default function Component() {
@@ -27,9 +28,13 @@ export default function Component() {
    
       <FaucetForm/>
       
-      <div className='p-10'>
-        <AddTokenToWallet tokenAddress={TestnetUSDCred.address} tokenSymbol="USD" tokenDecimals={6}/>
-          <AddTokenToWallet tokenAddress={TestnetMBOTSCred.address} tokenSymbol="USD" tokenDecimals={6}/>
+      <div className='flex gap-5 p-10'>
+        <AddTokenToWallet {...TestnetUSDCred} />
+        <AddTokenToWallet {...TestnetMBOTSCred} />
+      </div>
+
+      <div className='gap-5 p-10 '>
+        <a href='https://faucet.testnet.evm.eosnetwork.com/' target='blank'><Button>EOS EVM Testnet Faucet</Button></a>
       </div>
 
       </main>
