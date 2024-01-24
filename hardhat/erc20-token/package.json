@@ -2,9 +2,9 @@
   "name": "auction-tokens",
   "version": "1.0.0",
   "scripts": {
-    "deployUSDCredTestnet": "hardhat run scripts/deployWithFaucet.js --network eosevm_testnet",
-    "deployUSDCredMainnet": " hardhat run scripts/deployWithoutFaucet.js --network eosevm_mainnet",
-    "deployMBOTSCredTestnet": " hardhat run scripts/deployMbotsCred.js --network eosevm_mainnet"
+    "deployUSDCredTestnet": "hardhat run scripts/deployUSDCredWithFaucet.js --network eosevm_testnet",
+    "deployUSDCredMainnet": " hardhat run scripts/deployUSDCred.js --network eosevm_mainnet",
+    "deployMBOTSCredTestnet": " hardhat run scripts/deployMBOTSCred.js --network eosevm_testnet"
   },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.2",

@@ -28,4 +28,7 @@ To deploy the contracts, run the corresponding package.json script
 
 ## Addresses
 
-Bitcah USDT EOS EVM Testnet 0x1976c3C7b4Cb8912DB5eB737653443F90c534232
+### EOS EVM Testnet
+
+- USD Credit Token [0x115Acc340D40e7F755dc8BC8a5316Dd18f8Be686](https://explorer.testnet.evm.eosnetwork.com/address/0x115Acc340D40e7F755dc8BC8a5316Dd18f8Be686)
+- MBOTS Credit Token [0x8e4fA14D6874Cb2189bCd768aC67A33A6d76875B](https://explorer.testnet.evm.eosnetwork.com/address/0x8e4fA14D6874Cb2189bCd768aC67A33A6d76875B)
