@@ -13,7 +13,7 @@ import { placeManyOrders } from "./src/tasks/placeManyOrders";
 
 // Load environment variables.
 dotenv.config();
-const { GAS_PRICE_GWEI, MNEMONIC, PK } = process.env;
+const { MNEMONIC, PK } = process.env;
 
 const DEFAULT_MNEMONIC =
   "candy maple cake sugar pudding cream honey rich smooth crumble sweet treat";

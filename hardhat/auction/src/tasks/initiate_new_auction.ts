@@ -72,6 +72,7 @@ const initiateAuction: () => void = () => {
     .setAction(async (taskArgs, hardhatRuntime) => {
       const [caller] = await getEhtersSigners(hardhatRuntime);
       console.log(`Using the account: ${caller.address}`);
+      console.log(`Task arguments:`, taskArgs);
 
       const easyAuction = await getEasyAuctionContract(hardhatRuntime);
       const biddingToken = await hardhatRuntime.ethers.getContractAt(

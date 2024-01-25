@@ -1,5 +1,9 @@
 import { Contract } from "ethers";
-import { HardhatRuntimeEnvironment } from "hardhat/types";
+import {
+  HardhatRuntimeEnvironment,
+  HttpNetworkConfig,
+  NetworkConfig,
+} from "hardhat/types";
 
 import weth9Networks from "canonical-weth/networks.json";
 import { TypedDataDomain } from "../ts/ethers";
@@ -124,7 +128,11 @@ export async function getEhtersSigners(
     if (!privateKey) {
       throw new Error("Private key not provided for non-Hardhat network");
     }
-    const provider = new hardhatRuntime.ethers.providers.JsonRpcProvider();
+    // Retrieve the network configuration from Hardhat Runtime Environment
+    const networkConfig = hardhatRuntime.network.config as HttpNetworkConfig;
+    const provider = new hardhatRuntime.ethers.providers.JsonRpcProvider(
+      networkConfig.url,
+    );
     const signer = new hardhatRuntime.ethers.Wallet(privateKey, provider);
     signers = [signer];
   }
