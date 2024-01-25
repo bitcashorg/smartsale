@@ -3,6 +3,7 @@ import { CardHeader, CardContent, CardFooter, Card } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 import { Project } from '@/lib/projects'
+import Image from 'next/image'
 
 export function AuctionCard(props: Project) {
   const {
@@ -20,7 +21,7 @@ export function AuctionCard(props: Project) {
       <Card className="bg-[#1e293b]">
         <CardHeader>
           <div className="relative">
-            <img
+            <Image
               alt={title}
               className="w-full h-auto rounded-t-md"
               height="200"

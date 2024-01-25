@@ -9,8 +9,17 @@ import {
 } from '@/components/ui/table'
 import { AuctionDebug } from '@/components/auction-debug'
 import React from 'react'
+import { redirect } from 'next/navigation'
+import { projects } from '@/lib/projects'
 
-export default function AuctionPage() {
+export default function AuctionPage({
+  params
+}: {
+  params: { project: string }
+}) {
+  const project = projects.find(p => p.slug == params.project)
+  if (!project || !project.auctionId) redirect('/')
+
   return (
     <div className="flex flex-col md:flex-row">
       <div className="w-full p-4 md:w-2/3">
@@ -99,7 +108,7 @@ export default function AuctionPage() {
         </div>
       </div>
 
-      <AuctionDebug />
+      <AuctionDebug auctionId={project.auctionId} />
     </div>
   )
 }

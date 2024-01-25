@@ -1,28 +1,32 @@
 export const projects: Project[] = [
   {
     title: 'Masterbots',
+    slug: 'masterbots',
     pitch: 'Specialized AI chatbots',
     fundraiseGoal: '$650,000',
     maxAllocation: 'TBA',
-    heroImage: '/placeholder-citizen-conflict.svg',
+    heroImage: '/images/projects/masterbots.png',
     badgeText: 'PRE-SALE ACTIVE',
-    linkPath: '/masterbots'
+    linkPath: '/masterbots',
+    auctionId: 5
   },
   {
-    title: 'WizardWorld',
+    title: 'WizartWorld',
+    slug: 'wizartworld',
     pitch: 'Generate AI images and mint them as NFTs',
     fundraiseGoal: '$100,000',
     maxAllocation: 'TBA',
-    heroImage: '/placeholder-overlay-protocol.svg',
+    heroImage: '/images/projects/wizartworld.png',
     badgeText: 'REGISTRATION OPEN',
     linkPath: '/wizard-world'
   },
   {
     title: 'Bitcash Bank',
+    slug: 'bitcash',
     pitch: 'P2P exchange for local currency stablecoins',
     fundraiseGoal: '$500,000',
     maxAllocation: '$10,000',
-    heroImage: '/placeholder-future-finance.svg',
+    heroImage: '/images/projects/bitcash.png',
     badgeText: 'REGISTRATION OPEN',
     linkPath: '/bitcash'
   }
@@ -30,10 +34,12 @@ export const projects: Project[] = [
 
 export interface Project {
   title: string
+  slug: string
   pitch: string
   fundraiseGoal: string
   maxAllocation: string
   heroImage: string
   badgeText: string
   linkPath: string
+  auctionId?: number
 }

@@ -1,6 +1,17 @@
+import { projects } from '@/lib/projects'
+import Image from 'next/image'
 import Link from 'next/link'
 
-export default function ProjectPage() {
+import { redirect } from 'next/navigation'
+
+export default function ProjectPage({
+  params
+}: {
+  params: { project: string }
+}) {
+  const project = projects.find(p => p.slug == params.project)
+  if (!project) redirect('/')
+
   return (
     <main className="w-full">
       <section className="w-full py-12 md:py-24 lg:py-32">
@@ -9,30 +20,34 @@ export default function ProjectPage() {
             <div className="flex flex-col justify-center space-y-4">
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                  Masterbots MBOTS Auction
+                  {project.title}
                 </h1>
-                <p className="max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
-                  Join the auction and be a part of our project. The countdown
-                  has begun!
-                </p>
+                {project.auctionId ? (
+                  <p className="max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
+                    Join the auction and be a part of our project. The countdown
+                    has begun!
+                  </p>
+                ) : null}
               </div>
-              <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                <div className="text-2xl font-bold">
-                  <div />
+              {project.auctionId ? (
+                <div className="flex flex-col gap-2 min-[400px]:flex-row">
+                  <div className="text-2xl font-bold">
+                    <div />
+                  </div>
+                  <Link
+                    className="inline-flex items-center justify-center h-10 px-8 text-sm font-medium transition-colors bg-gray-900 rounded-md shadow text-gray-50 hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
+                    href="/masterbots/auction"
+                  >
+                    Participate Now
+                  </Link>
                 </div>
-                <Link
-                  className="inline-flex items-center justify-center h-10 px-8 text-sm font-medium transition-colors bg-gray-900 rounded-md shadow text-gray-50 hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
-                  href="/masterbots/auction"
-                >
-                  Participate Now
-                </Link>
-              </div>
+              ) : null}
             </div>
-            <img
+            <Image
               alt="Project Image"
               className="object-cover mx-auto overflow-hidden aspect-video rounded-xl sm:w-full lg:order-last lg:aspect-square"
               height="550"
-              src="/placeholder.svg"
+              src={project.heroImage}
               width="550"
             />
           </div>
@@ -46,32 +61,32 @@ export default function ProjectPage() {
                 Highlights
               </h2>
               <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                Discover the key highlights of our project.
+                {project.pitch}
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
-              <img
+              <Image
                 alt="Highlight Image 1"
                 className="object-cover overflow-hidden rounded-md aspect-square"
                 height="200"
-                src="/placeholder.svg"
+                src={project.heroImage}
                 width="200"
               />
-              <img
+              <Image
                 alt="Highlight Image 2"
                 className="object-cover overflow-hidden rounded-md aspect-square"
                 height="200"
                 src="/placeholder.svg"
                 width="200"
               />
-              <img
+              <Image
                 alt="Highlight Image 3"
                 className="object-cover overflow-hidden rounded-md aspect-square"
                 height="200"
                 src="/placeholder.svg"
                 width="200"
               />
-              <img
+              <Image
                 alt="Highlight Image 4"
                 className="object-cover overflow-hidden rounded-md aspect-square"
                 height="200"
@@ -94,28 +109,28 @@ export default function ProjectPage() {
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
-              <img
+              <Image
                 alt="Product Image 1"
                 className="object-cover overflow-hidden rounded-md aspect-square"
                 height="200"
                 src="/placeholder.svg"
                 width="200"
               />
-              <img
+              <Image
                 alt="Product Image 2"
                 className="object-cover overflow-hidden rounded-md aspect-square"
                 height="200"
                 src="/placeholder.svg"
                 width="200"
               />
-              <img
+              <Image
                 alt="Product Image 3"
                 className="object-cover overflow-hidden rounded-md aspect-square"
                 height="200"
                 src="/placeholder.svg"
                 width="200"
               />
-              <img
+              <Image
                 alt="Product Image 4"
                 className="object-cover overflow-hidden rounded-md aspect-square"
                 height="200"
@@ -197,28 +212,28 @@ export default function ProjectPage() {
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
-              <img
+              <Image
                 alt="Investor Image 1"
                 className="object-cover overflow-hidden rounded-md aspect-square"
                 height="200"
                 src="/placeholder.svg"
                 width="200"
               />
-              <img
+              <Image
                 alt="Investor Image 2"
                 className="object-cover overflow-hidden rounded-md aspect-square"
                 height="200"
                 src="/placeholder.svg"
                 width="200"
               />
-              <img
+              <Image
                 alt="Investor Image 3"
                 className="object-cover overflow-hidden rounded-md aspect-square"
                 height="200"
                 src="/placeholder.svg"
                 width="200"
               />
-              <img
+              <Image
                 alt="Investor Image 4"
                 className="object-cover overflow-hidden rounded-md aspect-square"
                 height="200"
@@ -242,28 +257,28 @@ export default function ProjectPage() {
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
-              <img
+              <Image
                 alt="Team Member Image 1"
                 className="object-cover overflow-hidden rounded-md aspect-square"
                 height="200"
                 src="/placeholder.svg"
                 width="200"
               />
-              <img
+              <Image
                 alt="Team Member Image 2"
                 className="object-cover overflow-hidden rounded-md aspect-square"
                 height="200"
                 src="/placeholder.svg"
                 width="200"
               />
-              <img
+              <Image
                 alt="Team Member Image 3"
                 className="object-cover overflow-hidden rounded-md aspect-square"
                 height="200"
                 src="/placeholder.svg"
                 width="200"
               />
-              <img
+              <Image
                 alt="Team Member Image 4"
                 className="object-cover overflow-hidden rounded-md aspect-square"
                 height="200"
