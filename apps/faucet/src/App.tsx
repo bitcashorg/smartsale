@@ -2,7 +2,7 @@
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 import { FaucetForm } from './components/faucet-form';
 import { useUsdtBalance } from './hooks/use-usdt-balance';
-import { TestnetUSDCred, TestnetMBOTSCred } from 'erc20-abis';
+import { TestnetUSDCred, TestnetMBOTSPL } from 'erc20-abis';
 import { AddTokenToWallet } from './components/add-token-to-metamask';
 import { Button } from './components/ui/button';
 
@@ -30,7 +30,7 @@ export default function Component() {
       
       <div className='flex gap-5 p-10'>
         <AddTokenToWallet {...TestnetUSDCred} />
-        <AddTokenToWallet {...TestnetMBOTSCred} />
+        <AddTokenToWallet {...TestnetMBOTSPL} />
       </div>
 
       <div className='gap-5 p-10 '>

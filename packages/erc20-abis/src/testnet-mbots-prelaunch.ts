@@ -1,10 +1,10 @@
 import { ERC20Data } from "./types";
 
 
-export const TestnetMBOTSCred: ERC20Data  = {
-  address: '0x1385f48E044faAfAE8f2D857f64CB324efF1b929',
-  name: 'MBOTS Credit Token',
-  symbol: 'MBOTSCred',
+export const TestnetMBOTSPL: ERC20Data  = {
+  address: '0x5EdB28FBa146371A5f4A1C5812111C887EC9Ae73',
+  name: 'MBOTS Prelaunch Token',
+  symbol: 'MBOTSPL',
   decimals: 6,
   abi: [
     {
