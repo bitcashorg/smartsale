@@ -1,6 +1,7 @@
-import {type Abi, type Address} from 'viem'
+import { ContractData } from "./types";
 
-export const TestnetEasyAuction: {abi:Abi, address: Address} = {
+
+export const TestnetEasyAuction: ContractData  = {
   "address": "0x8d37219725eB0088360f744A5d894035D0f88F82",
   "abi": [
     {

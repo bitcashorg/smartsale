@@ -1,5 +1,5 @@
 import { projects } from '@/lib/projects'
-import { AuctionCard } from './auction-card'
+import { AuctionCard } from './home/auction-card'
 
 export function Upcoming() {
   return (

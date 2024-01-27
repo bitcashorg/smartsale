@@ -1,6 +1,6 @@
-import {type Abi, type Address} from 'viem'
+import { ContractData } from "./types";
 
-export const TestnetAllowList: {abi:Abi, address: Address} = {
+export const TestnetAllowList: ContractData = {
   "address": "0x3D18904711fe451356eBA461B7747EA3Abff6c93",
   "abi": [
     {
