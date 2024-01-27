@@ -24,4 +24,4 @@ export NETWORK=$NETWORK
 export PK=$PK
 
 # Execute initiate auction
-bun run hardhat initiateAuction --auctioning-token $AUCTIONING_TOKEN --bidding-token $BIDDING_TOKEN --sell-amount 0.1 --min-buy-amount 50 --auction-end-date 1711349042 --network $NETWORK 
+bun run hardhat initiateAuction --auctioning-token $AUCTIONING_TOKEN --bidding-token $BIDDING_TOKEN --sell-amount 350000 --min-buy-amount 100000 --auction-end-date 1711349042 --network $NETWORK 

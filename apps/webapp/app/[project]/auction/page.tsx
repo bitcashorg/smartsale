@@ -108,7 +108,7 @@ export default function AuctionPage({
         </div>
       </div>
 
-      <AuctionDebug auctionId={project.auctionId} />
+      {/* <AuctionDebug auctionId={project.auctionId} /> */}
     </div>
   )
 }

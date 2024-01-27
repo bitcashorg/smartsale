@@ -17,7 +17,7 @@ contract EasyAuction is Ownable {
     using SafeCast for uint256;
     using IterableOrderedOrderSet for IterableOrderedOrderSet.Data;
     using IterableOrderedOrderSet for bytes32;
-    using IdToAddressBiMap for IdToAddressBiMap.Data;
+    using IdToAddressBiMap for IdToAddressBiMap.Data; 
 
     modifier atStageOrderPlacement(uint256 auctionId) {
         require(
@@ -162,6 +162,8 @@ contract EasyAuction is Ownable {
         address accessManagerContract,
         bytes memory accessManagerContractData
     ) public returns (uint256) {
+        // restric to specific account
+        
         // withdraws sellAmount + fees
         _auctioningToken.safeTransferFrom(
             msg.sender,
