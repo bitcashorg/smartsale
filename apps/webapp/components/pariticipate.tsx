@@ -55,7 +55,7 @@ export default function Participate() {
 }
 
 const textContent = {
-  title: 'Join The AI and Web3 Revolution With SmartSale',
+  title: 'Join The AI and Web3 Revolution With Bitcash Launchpad',
   stepsInfo:
     'Only 3 steps are needed for you to start enjoying all the advantages',
   steps: [

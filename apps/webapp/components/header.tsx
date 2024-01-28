@@ -11,7 +11,7 @@ export async function Header() {
     <header className="sticky top-0 z-50 w-full h-16 border-b shrink-0 bg-gradient-to-b from-background/10 via-background/50 to-background/80 backdrop-blur-xl">
       <div className="container flex items-center justify-between h-16 px-4">
         <div className="flex items-center">
-          <HeaderLink href="/" text="SmartSale" />
+          <HeaderLink href="/" text="Bitcash Launchpad" />
           <IconSeparator className="size-6 text-muted-foreground/50" />
           <HeaderLink href="/how-it-works" text="how it works" />
           <HeaderLink href="/security" text="security tips" />

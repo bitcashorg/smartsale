@@ -41,10 +41,10 @@ export default function RootLayout({ children }: RootLayoutProps) {
 export const metadata = {
   metadataBase: new URL(`https://${process.env.VERCEL_URL}`),
   title: {
-    default: 'smartevm',
-    template: `%s - smartevm`
+    default: 'Bitcash Launchpad',
+    template: `%s - Bitcash Launchpad`
   },
-  description: 'Specialized AI chatbots',
+  description: 'Bitcash AI and Web3 Launchpad',
   icons: {
     icon: '/favicon.ico',
     shortcut: '/favicon-16x16.png',
