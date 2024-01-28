@@ -37,7 +37,7 @@ export default function AuctionPage({
             <div className="md:w-2/3">
               <Image
                 alt="bitcash logo"
-                className="mx-auto max-h-[180px] my-0 object-cover object-bottom"
+                className="mx-auto max-h-[230px] my-0 object-cover"
                 layout="responsive"
                 height="100"
                 width="100"
