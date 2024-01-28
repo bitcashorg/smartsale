@@ -23,18 +23,14 @@ export function AuctionBids({ project }: AuctionBidsProps) {
           <TableHeader>
             <TableRow>
               <TableHead className="bg-red-600">Max Price</TableHead>
-              <TableHead className="bg-green-600">Tokens</TableHead>
+              <TableHead className="bg-green-600">Bid Amount</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
             {[...Array(5)].map((_, index) => (
               <TableRow key={index}>
                 <TableCell className="bg-green-500">
-                  <CurrencyInput
-                    placeholder="0.00"
-                    name={`maxPrice${index}`}
-                    dollar={true}
-                  />
+                  <CurrencyInput placeholder="0.00" name={`maxPrice${index}`} />
                 </TableCell>
                 <TableCell className="bg-green-500">
                   <CurrencyInput placeholder="0.00" name={`tokens${index}`} />
@@ -59,7 +55,7 @@ export function AuctionBids({ project }: AuctionBidsProps) {
   )
 }
 
-function CurrencyInput({ placeholder, name, dollar }: CurrencyInputProps) {
+function CurrencyInput({ placeholder, name }: CurrencyInputProps) {
   const [value, setValue] = useState<string>('')
 
   const formatNumber = (num: number): string => {
@@ -88,9 +84,8 @@ function CurrencyInput({ placeholder, name, dollar }: CurrencyInputProps) {
 
   return (
     <div className="relative text-white">
-      {dollar && (
-        <span className="absolute inset-y-0 flex items-center left-2">$</span>
-      )}
+      <span className="absolute inset-y-0 flex items-center left-2">$</span>
+
       <input
         type="text" // Changed to text to handle manual formatting
         name={name}
@@ -111,7 +106,6 @@ interface AuctionBidsProps {
 }
 
 interface CurrencyInputProps {
-  dollar?: boolean
   placeholder: string
   name: string
 }
