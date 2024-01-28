@@ -43,7 +43,7 @@ export default function SecurityTips() {
       <h2>5. Double-Check Transaction Details</h2>
       <p>
         Before confirming any transaction on MetaMask, double-check the
-        recipient's address, the amount, and the gas fees. Scammers often try to
+        recipients address, the amount, and the gas fees. Scammers often try to
         manipulate transaction details.
       </p>
 

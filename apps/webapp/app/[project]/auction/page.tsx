@@ -1,7 +1,3 @@
-import {
-  AuctionDebug,
-  AuctionDebugDummy
-} from '@/components/auction/auction-debug'
 import React from 'react'
 import { redirect } from 'next/navigation'
 import { ProjectWithAuction, projects } from '@/lib/projects'
