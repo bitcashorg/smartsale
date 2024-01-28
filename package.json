@@ -25,10 +25,13 @@
     ],
     "nohoist": [
       "**/vite",
-      "**/vite/**"
+      "**/vite/**",
+      "**/supabase",
+      "**/supabase/**"
     ]
   },
   "dependencies": {
-    "react-use": "^17.4.3"
+    "react-use": "^17.4.3",
+    "supabase": "^1.136.3"
   }
 }

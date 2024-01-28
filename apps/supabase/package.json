@@ -1,0 +1,12 @@
+{
+  "name": "smartsale-supabase",
+  "scripts": {
+    "supabase": "supabase"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
