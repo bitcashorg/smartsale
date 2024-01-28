@@ -49,8 +49,8 @@ export function Countdown({ auctionId }: { auctionId: number }) {
   }, [auctionData])
 
   return (
-    <div className="max-h-[200px] px-8 py-5 bg-black">
-      <div className="flex justify-between mb-4">
+    <div className="max-h-[200px] px-8 pt-5 bg-black">
+      <div className="flex justify-between ">
         <div>
           <TimerIcon className="text-white" />
         </div>
@@ -59,24 +59,26 @@ export function Countdown({ auctionId }: { auctionId: number }) {
         </div>
         <div />
       </div>
-      <div className="flex justify-between text-center">
-        <div>
-          <div className="text-6xl font-bold">{timeLeft.days}</div>
-          <div className="text-sm">DAYS</div>
-        </div>
-        <div>
-          <div className="text-6xl font-bold">{timeLeft.hours}</div>
-          <div className="text-sm">HOURS</div>
-        </div>
-        <div>
-          <div className="text-6xl font-bold">{timeLeft.minutes}</div>
-          <div className="text-sm">MINUTES</div>
-        </div>
-        <div>
-          <div className="text-6xl font-bold">{timeLeft.seconds}</div>
-          <div className="text-sm">SECONDS</div>
-        </div>
+      <div className="flex justify-between">
+        <CountdownItem value={timeLeft.days} label="DAYS" />
+        <CountdownItem value={timeLeft.hours} label="HOURS" />
+        <CountdownItem value={timeLeft.minutes} label="MINUTES" />
+        <CountdownItem value={timeLeft.seconds} label="SECONDS" />
       </div>
     </div>
   )
+}
+
+function CountdownItem({ value, label }: CountdownItemProps) {
+  return (
+    <div className="flex flex-col items-center justify-center text-center size-32">
+      <div className="text-6xl font-bold">{value}</div>
+      <div className="text-sm">{label}</div>
+    </div>
+  )
+}
+
+interface CountdownItemProps {
+  value: string
+  label: string
 }

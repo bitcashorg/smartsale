@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function HowItWorks() {
   return (
-    <div className="p-6">
+    <div>
       <h1 className="mb-4 text-2xl font-bold">How Smart Sale works</h1>
       <p>
         Smart Sale is a platform enabling fair price discovery for token

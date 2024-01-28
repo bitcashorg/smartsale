@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function SecurityTips() {
   return (
-    <div className="p-6">
+    <div>
       <h1>Security Recommendations for Bitcash Launchpad Participants</h1>
       <p>
         Participating in auctions on Bitcash Launchpad, a fork of Gnosis,

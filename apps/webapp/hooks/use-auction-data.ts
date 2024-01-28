@@ -1,17 +1,20 @@
-import { TestnetEasyAuction } from 'smartevm-abis';
-import { useContractRead } from 'wagmi';
-
+import { TestnetEasyAuction } from 'smartevm-abis'
+import { useContractRead } from 'wagmi'
 
 export function useAuctionData(auctionId: number) {
-  const { data: rawData, isError, isLoading } = useContractRead({
+  const {
+    data: rawData,
+    isError,
+    isLoading
+  } = useContractRead({
     ...TestnetEasyAuction,
     functionName: 'auctionData',
-    args: [auctionId],
-  });
+    args: [auctionId]
+  })
 
-  const data = rawData ? mapArrayToAuctionData(rawData) : undefined;
+  const data = rawData ? mapArrayToAuctionData(rawData) : undefined
 
-  return { data, isError, isLoading };
+  return { data, isError, isLoading }
 }
 
 function mapArrayToAuctionData(data: unknown): AuctionData | undefined {
@@ -30,25 +33,25 @@ function mapArrayToAuctionData(data: unknown): AuctionData | undefined {
       minFundingThresholdNotReached: data[10],
       isAtomicClosureAllowed: data[11],
       feeNumerator: data[12].toString(),
-      minFundingThreshold: data[13].toString(),
-    };
+      minFundingThreshold: data[13].toString()
+    }
   }
-  return undefined;
+  return undefined
 }
 
-interface AuctionData {
-  auctioningToken: string;
-  biddingToken: string;
-  orderCancellationEndDate: Date;
-  auctionEndDate: Date;
-  initialAuctionOrder: string;
-  minimumBiddingAmountPerOrder: string;
-  interimSumBidAmount: string;
-  interimOrder: string;
-  clearingPriceOrder: string;
-  volumeClearingPriceOrder: string;
-  minFundingThresholdNotReached: boolean;
-  isAtomicClosureAllowed: boolean;
-  feeNumerator: string;
-  minFundingThreshold: string;
+export interface AuctionData {
+  auctioningToken: string
+  biddingToken: string
+  orderCancellationEndDate: Date
+  auctionEndDate: Date
+  initialAuctionOrder: string
+  minimumBiddingAmountPerOrder: string
+  interimSumBidAmount: string
+  interimOrder: string
+  clearingPriceOrder: string
+  volumeClearingPriceOrder: string
+  minFundingThresholdNotReached: boolean
+  isAtomicClosureAllowed: boolean
+  feeNumerator: string
+  minFundingThreshold: string
 }
