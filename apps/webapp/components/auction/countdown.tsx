@@ -2,6 +2,7 @@
 
 import { useAuctionData } from '@/hooks/use-auction-data'
 import React, { useEffect, useState } from 'react'
+import { TimerIcon } from 'lucide-react'
 
 export function Countdown({ auctionId }: { auctionId: number }) {
   const { data: auctionData } = useAuctionData(auctionId)
@@ -48,22 +49,33 @@ export function Countdown({ auctionId }: { auctionId: number }) {
   }, [auctionData])
 
   return (
-    <div className="flex justify-between text-center">
-      <div>
-        <div className="text-6xl font-bold">{timeLeft.days}</div>
-        <div className="text-sm">DAYS</div>
+    <div className="max-h-[200px] px-8 py-5 bg-black">
+      <div className="flex justify-between mb-4">
+        <div>
+          <TimerIcon className="text-white" />
+        </div>
+        <div className="text-center">
+          <h2 className="text-2xl font-bold">COUNTDOWN</h2>
+        </div>
+        <div />
       </div>
-      <div>
-        <div className="text-6xl font-bold">{timeLeft.hours}</div>
-        <div className="text-sm">HOURS</div>
-      </div>
-      <div>
-        <div className="text-6xl font-bold">{timeLeft.minutes}</div>
-        <div className="text-sm">MINUTES</div>
-      </div>
-      <div>
-        <div className="text-6xl font-bold">{timeLeft.seconds}</div>
-        <div className="text-sm">SECONDS</div>
+      <div className="flex justify-between text-center">
+        <div>
+          <div className="text-6xl font-bold">{timeLeft.days}</div>
+          <div className="text-sm">DAYS</div>
+        </div>
+        <div>
+          <div className="text-6xl font-bold">{timeLeft.hours}</div>
+          <div className="text-sm">HOURS</div>
+        </div>
+        <div>
+          <div className="text-6xl font-bold">{timeLeft.minutes}</div>
+          <div className="text-sm">MINUTES</div>
+        </div>
+        <div>
+          <div className="text-6xl font-bold">{timeLeft.seconds}</div>
+          <div className="text-sm">SECONDS</div>
+        </div>
       </div>
     </div>
   )

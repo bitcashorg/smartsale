@@ -1,3 +1,5 @@
+import { ERC20Data, TestnetMBOTSPL } from 'erc20-abis'
+
 export const projects: Project[] = [
   {
     title: 'Masterbots',
@@ -8,7 +10,8 @@ export const projects: Project[] = [
     heroImage: '/images/projects/masterbots.png',
     badgeText: 'PRE-SALE ACTIVE',
     linkPath: '/masterbots',
-    auctionId: 5
+    auctionId: 5,
+    token: TestnetMBOTSPL
   },
   {
     title: 'WizartWorld',
@@ -42,4 +45,10 @@ export interface Project {
   badgeText: string
   linkPath: string
   auctionId?: number
+  token?: ERC20Data
 }
+
+export type ProjectWithAuction = Required<
+  Pick<Project, 'auctionId' | 'token'>
+> &
+  Project
