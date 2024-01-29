@@ -1,0 +1,11 @@
+.history
+dist/
+node_modules/
+*.log
+.env
+# Sentry Auth Token
+.sentryclirc
+# Supabase
+.branches
+.temp
+.env

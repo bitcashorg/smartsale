@@ -1,5 +1,5 @@
 {
-  "name": "auction-tokens",
+  "name": "smartsale-tokens",
   "version": "1.0.0",
   "scripts": {
     "deployUSDCredTestnet": "hardhat run scripts/deployUSDCredWithFaucet.js --network eosevm_testnet",
