@@ -1,36 +1,26 @@
-name: Supabase Migrations
+name: Release
 
 on:
   push:
     branches:
-      - main  # Adjust this to your main development branch
-    paths:
-      - 'apps/supabase/**'  # Adjust this path to where your Supabase project is located in the monorepo
+      - main
+  workflow_dispatch:
 
 jobs:
-  deploy:
+  release:
     runs-on: ubuntu-latest
 
+    env:
+      SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
+      SUPABASE_DB_PASSWORD: ${{ secrets.PRODUCTION_DB_PASSWORD }}
+      SUPABASE_PROJECT_ID: ${{ secrets.PRODUCTION_PROJECT_ID }}
+
     steps:
-    - name: Check out repo
-      uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
-    - name: Install Supabase CLI
-      run: |
-        curl -L https://github.com/supabase/cli/releases/latest/download/supabase_linux -o /tmp/supabase
-        chmod +x /tmp/supabase
+      - uses: supabase/setup-cli@v1
+        with:
+          version: latest
 
-    - name: Link Supabase Project
-      run: /tmp/supabase link --project-ref kvdrzfyetdzigjkmgwgn --anon-key "$SUPABASE_ANON_KEY" --service-role-key "$SUPABASE_SERVICE_ROLE_KEY"
-      env:
-        SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
-        SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
-      working-directory: ./apps/supabase
-
-    - name: Deploy Edge Functions
-      run: /tmp/supabase functions deploy --env production
-      working-directory: ./apps/supabase
-
-    - name: Run DB Migrations
-      run: /tmp/supabase db push --env production
-      working-directory: ./apps/supabase
+      - run: supabase link --project-ref $SUPABASE_PROJECT_ID
+      - run: supabase db push
