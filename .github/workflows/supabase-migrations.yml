@@ -1,0 +1,30 @@
+name: Supabase Migrations
+
+on:
+  push:
+    branches:
+      - main  # or your default branch
+    paths:
+      - 'apps/supabase/**'  # Trigger only when there are changes in the Supabase app
+
+jobs:
+  run-migrations:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out repository code
+      uses: actions/checkout@v2
+
+    - name: Set up working directory
+      run: cd apps/supabase
+
+    - name: Run Supabase Migrations
+      run: |
+        curl -L https://github.com/supabase/cli/releases/latest/download/supabase_linux -o supabase
+        chmod +x supabase
+        ./supabase link --project-ref kvdrzfyetdzigjkmgwgn --anon-key "$ANON_KEY" --service-role-key "$SERVICE_ROLE_KEY"
+        ./supabase db push
+      env:
+        ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+        SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+      working-directory: ./apps/supabase
