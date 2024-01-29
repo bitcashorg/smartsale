@@ -3,33 +3,34 @@ name: Supabase Migrations
 on:
   push:
     branches:
-      - main  # or your default branch
+      - main  # Adjust this to your main development branch
     paths:
-      - 'apps/supabase/**'  # Trigger only when there are changes in the Supabase app
+      - 'apps/supabase/**'  # Adjust this path to where your Supabase project is located in the monorepo
 
 jobs:
-  run-migrations:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Check out repository code
-      uses: actions/checkout@v2  # Ensure this is the latest version
+    - name: Check out repo
+      uses: actions/checkout@v2
 
-    - name: Set up Node.js 20
-      uses: actions/setup-node@v3
-      with:
-        node-version: '20'
-
-    - name: Download Supabase CLI
+    - name: Install Supabase CLI
       run: |
-        curl -L https://github.com/supabase/cli/releases/latest/download/supabase_linux_amd64 -o supabase
-        chmod +x supabase
+        curl -L https://github.com/supabase/cli/releases/latest/download/supabase_linux -o /tmp/supabase
+        chmod +x /tmp/supabase
 
-    - name: Run Supabase Migrations
-      run: |
-        ./supabase link --project-ref kvdrzfyetdzigjkmgwgn --anon-key "$ANON_KEY" --service-role-key "$SERVICE_ROLE_KEY"
-        ./supabase db push
+    - name: Link Supabase Project
+      run: /tmp/supabase link --project-ref kvdrzfyetdzigjkmgwgn --anon-key "$SUPABASE_ANON_KEY" --service-role-key "$SUPABASE_SERVICE_ROLE_KEY"
       env:
-        ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
-        SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+        SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+      working-directory: ./apps/supabase
+
+    - name: Deploy Edge Functions
+      run: /tmp/supabase functions deploy --env production
+      working-directory: ./apps/supabase
+
+    - name: Run DB Migrations
+      run: /tmp/supabase db push --env production
       working-directory: ./apps/supabase
