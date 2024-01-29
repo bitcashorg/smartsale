@@ -15,19 +15,18 @@ jobs:
     - name: Check out repository code
       uses: actions/checkout@v2  # Ensure this is the latest version
 
-    # If your workflow requires Node.js, add a step to set up Node.js 20
     - name: Set up Node.js 20
       uses: actions/setup-node@v3
       with:
         node-version: '20'
 
-    - name: Set up working directory
-      run: cd apps/supabase
+    - name: Download Supabase CLI
+      run: |
+        curl -L https://github.com/supabase/cli/releases/latest/download/supabase_linux_amd64 -o supabase
+        chmod +x supabase
 
     - name: Run Supabase Migrations
       run: |
-        curl -L https://github.com/supabase/cli/releases/latest/download/supabase_linux -o supabase
-        chmod +x supabase
         ./supabase link --project-ref kvdrzfyetdzigjkmgwgn --anon-key "$ANON_KEY" --service-role-key "$SERVICE_ROLE_KEY"
         ./supabase db push
       env:
