@@ -17,9 +17,8 @@
   },
   "devDependencies": {
     "@types/lodash": "^4.14.202",
-    "@types/node": "^20.11.10",
-    "bun-types": "latest",
     "@types/node-fetch": "^2.6.11",
+    "bun-types": "latest",
     "env-cmd": "^10.1.0",
     "nodemon": "^3.0.3",
     "rimraf": "^5.0.5",
