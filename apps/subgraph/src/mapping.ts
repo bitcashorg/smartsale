@@ -85,9 +85,8 @@ export function handleCancellationSellOrder(
 	let buyAmount = event.params.buyAmount;
 	let userId = event.params.userId;
 	let auctionDetails = AuctionDetail.load(auctionId.toString());
-	if (!auctionDetails) {
-		return;
-	}
+	if (!auctionDetails) return;
+
 	let orderIdsToDelete: Map<string, string> = new Map();
 	// Remove order from the list orders
 	let orders: string[] = [];
@@ -130,9 +129,8 @@ export function handleClaimedFromOrder(event: ClaimedFromOrder): void {
 	let buyAmount = event.params.buyAmount;
 	let userId = event.params.userId;
 	let auctionDetails = AuctionDetail.load(auctionId.toString());
-	if (!auctionDetails) {
-		return;
-	}
+	if (!auctionDetails) return;
+
 	// Remove order from the list of orders in the ordersWithoutClaimed array
 	let ordersWithoutClaimed: string[] = [];
 	if (auctionDetails.ordersWithoutClaimed) {
@@ -161,9 +159,8 @@ export function handleNewAuction(event: NewAuction): void {
 
 	let entityId = getOrderEntityId(auctionId, sellAmount, buyAmount, userId);
 	let user = User.load(userId.toString());
-	if (!user) {
-		return;
-	}
+	if (!user) return;
+
 	let biddingERC20Contract = ERC20Contract.bind(addressBiddingToken);
 	let auctioningERC20Contract = ERC20Contract.bind(addressAuctioningToken);
 	let auctionContract = EasyAuction.bind(event.address);
@@ -276,14 +273,10 @@ export function handleNewSellOrder(event: NewSellOrder): void {
 	let userId = event.params.userId;
 
 	let user = User.load(userId.toString());
-	if (!user) {
-		user = new User(userId.toString());
-	}
+	if (!user) user = new User(userId.toString());
 
 	let auctionDetails = AuctionDetail.load(auctionId.toString());
-	if (!auctionDetails) {
-		return;
-	}
+	if (!auctionDetails) return;
 
 	let entityId = `${auctionId.toString()}-${sellAmount.toString()}-${buyAmount.toString()}-${userId.toString()}`;
 	let pricePoint = convertToPricePoint(
@@ -362,17 +355,13 @@ function getUsdAmountTraded(
 	const legitTokensList = getTokenList(
 		getChainIdFromName(dataSource.network())
 	);
-	if (!legitTokensList) {
-		return ZERO.toBigDecimal();
-	}
+	if (!legitTokensList) return ZERO.toBigDecimal();
 
 	// Check if bidding token is a legit token
 	let isBiddingTokenLegit = legitTokensList.tokenAddressList.includes(
 		addressBiddingToken.toHexString().toLowerCase()
 	);
-	if (isBiddingTokenLegit) {
-		return currentBiddingAmount.toBigDecimal();
-	}
+	if (isBiddingTokenLegit) 	return currentBiddingAmount.toBigDecimal();
 
 	// Check if auctioning token is a legit token
 	let isAuctioningTokenLegit = legitTokensList.tokenAddressList.includes(
@@ -427,9 +416,7 @@ function updateClearingOrderAndVolume(auctionId: BigInt): void {
 		}
 	}
 
-	if (!currentOrder) {
-		return;
-	}
+	if (!currentOrder) return;
 
 	if (
 		biddingTokenTotal.ge(ZERO) &&

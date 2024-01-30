@@ -9,3 +9,21 @@ tasks:
 
   faucet:
     - turbo run dev --scope="usdt-faucet"
+
+  subgraph:
+    cmds:
+      - docker-compose -f apps/subgraph/docker-compose.yml up -d --build
+      - echo "Waiting for graph node to start"
+      - sleep 120 
+      - echo "Deploying smartsale subgraph"
+      - bun run --cwd="apps/subgraph" create-local
+      - bun run --cwd="apps/subgraph" deploy-local
+
+  subgraph-reboot:
+    cmds:
+      - task subgraph-down
+      - task subgraph
+
+  subgraph-down:
+    cmds:
+      - docker-compose -f apps/subgraph/docker-compose.yml down -v --remove-orphans

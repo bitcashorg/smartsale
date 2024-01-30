@@ -1,47 +1,37 @@
+const chainHexMap: { [chainName: string]: string } = {
+    "goerli": "0x05",
+    "mainnet": "0x01",
+    "matic": "0x89",
+    "gnosis": "0x64",
+    "mumbai": "0x13881",
+    "avalanche": "0xa86a",
+    "fuji": "0xa869",
+    "bsc": "0x38",
+    "bsc-testnet": "0x61",
+		"eosevm_testnet": "0x15557",
+};
+
+const chainIdMap: { [chainName: string]: number } = {
+    "goerli": 5,
+    "mainnet": 1,
+    "matic": 132,
+    "gnosis": 100,
+    "mumbai": 80001,
+    "avalanche": 43114,
+    "fuji": 43113,
+    "bsc": 56,
+    "bsc-testnet": 97,
+		"eosevm_testnet": 15557,
+};
+
 function getChainHexFromName(chainName: string): string {
-	if (chainName.includes("goerli")) {
-		return "0x05";
-	} else if (chainName.includes("mainnet")) {
-		return "0x01";
-	} else if (chainName.includes("matic")) {
-		return "0x89";
-	} else if (chainName.includes("gnosis")) {
-		return "0x64";
-	} else if (chainName.includes("mumbai")) {
-		return "0x13881";
-	} else if (chainName.includes("avalanche")) {
-		return "0xa86a";
-	} else if (chainName.includes("fuji")) {
-		return "0xa869"
-	} else if (chainName.includes("bsc")) {
-		return "0x38";
-	} else if (chainName.includes("bsc-testnet")) {
-		return "0x61";
-	}
-	return "0x01";
+    return chainHexMap[chainName] || chainHexMap["mainnet"];
 }
 
-function getChainIdFromName(chainName: string): i32 {
-    if (chainName.includes("goerli")) {
-		return 5;
-	} else if (chainName.includes("mainnet")) {
-		return 1;
-	} else if (chainName.includes("matic")) {
-		return 132;
-	} else if (chainName.includes("gnosis")) {
-		return 100;
-	} else if (chainName.includes("mumbai")) {
-		return 80001;
-	} else if (chainName.includes("avalanche")) {
-		return 43114;
-	} else if (chainName.includes("fuji")) {
-		return 43113;
-	} else if (chainName.includes("bsc")) {
-		return 56;
-	} else if (chainName.includes("bsc-testnet")) {
-		return 97;
-	}
-	return 1;
+function getChainIdFromName(chainName: string): number {
+    return chainIdMap[chainName] || chainIdMap["mainnet"];
 }
 
 export { getChainHexFromName, getChainIdFromName };
+
+
