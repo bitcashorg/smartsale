@@ -1,8 +1,0 @@
-
-
-/node_modules
-
-**/*.wasm
-
-ipfs-data
-postgres-data
