@@ -5,7 +5,10 @@ silent: true
 
 tasks:
   app:
-    - turbo run dev --scope="smartevm-webapp"
+    - turbo run dev --scope="smartsale-webapp"
 
   faucet:
-    - turbo run dev --scope="usdt-faucet"
+    - turbo run dev --scope="smartsale-faucet"
+
+  indexer:
+    - turbo run dev --scope="smartsale-indexer"

@@ -3,28 +3,9 @@ import {
   getDefaultWallets,
   RainbowKitProvider,
 } from '@rainbow-me/rainbowkit';
-import {  Chain, configureChains, createConfig, WagmiConfig } from 'wagmi';
+import {  configureChains, createConfig, WagmiConfig } from 'wagmi';
 import { publicProvider } from 'wagmi/providers/public';
-
-
-const eosEvmTestnet : Chain = {
-  network: 'eos',
-  nativeCurrency: {
-    name: 'EOS',
-    symbol: 'EOS',
-    decimals: 18,
-  },
-  id: 15557,
-  name: 'EOS EVM Testnet',
-  rpcUrls: {
-    default: {http: ['https://api.testnet.evm.eosnetwork.com/']} ,
-    public: {http: ['https://api.testnet.evm.eosnetwork.com/']},
-  },
-  blockExplorers: {
-    default: { name: 'EOS EVM Testnet Explorer', url: 'https://explorer.testnet.evm.eosnetwork.com/' },
-  },
-  testnet: true,
-};
+import {eosEvmTestnet} from 'smartsale-chains'
 
 const { chains, publicClient } = configureChains(
   [eosEvmTestnet], [publicProvider()]

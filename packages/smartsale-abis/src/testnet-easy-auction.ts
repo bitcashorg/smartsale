@@ -1,8 +1,8 @@
-import { ContractData } from "./types";
+import { createContractData } from "./types";
 
-
-export const TestnetEasyAuction: ContractData  = {
+export const TestnetEasyAuction = createContractData({
   "address": "0x8d37219725eB0088360f744A5d894035D0f88F82",
+  "indexFromBlock": 26677230,
   "abi": [
     {
       "inputs": [],
@@ -858,4 +858,4 @@ export const TestnetEasyAuction: ContractData  = {
       "type": "function"
     }
   ]
-}
+})

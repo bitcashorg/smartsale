@@ -1,8 +1,8 @@
 {
-  "name": "erc20-abis",
+  "name": "smartsale-chains",
   "version": "0.0.1",
   "private": true,
-  "description": "SmartSale ERC20 Credit Tokens Abi",
+  "description": "SmartSale Chain Configs",
   "author": "gaboesquivel.com",
   "license": "ISC",
   "main": "./src/index.ts",

@@ -1,4 +1,4 @@
-import { ERC20Data, TestnetMBOTSPL } from 'erc20-abis'
+import { ERC20ContractData, TestnetMBOTSPL } from 'smartsale-abis'
 
 export const projects: Project[] = [
   {
@@ -45,7 +45,7 @@ export interface Project {
   badgeText: string
   linkPath: string
   auctionId?: number
-  token?: ERC20Data
+  token?: ERC20ContractData
 }
 
 export type ProjectWithAuction = Required<

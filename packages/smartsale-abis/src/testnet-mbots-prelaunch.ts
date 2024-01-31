@@ -1,11 +1,11 @@
-import { ERC20Data } from "./types";
+import { createERC20ContractData } from "./types"
 
-
-export const TestnetMBOTSPL: ERC20Data  = {
+export const TestnetMBOTSPL = createERC20ContractData({
   address: '0x5EdB28FBa146371A5f4A1C5812111C887EC9Ae73',
   name: 'MBOTS Prelaunch Token',
   symbol: 'MBOTSPL',
   decimals: 6,
+  indexFromBlock: 26677224,
   abi: [
     {
       "inputs": [
@@ -289,4 +289,4 @@ export const TestnetMBOTSPL: ERC20Data  = {
       "type": "function"
     }
   ]
-}
+})

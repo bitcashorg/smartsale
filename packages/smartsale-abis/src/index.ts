@@ -1,3 +1,5 @@
 export * from './testnet-easy-auction'
 export * from './testnet-deposit-order'
+export * from './testnet-usd-cred'
+export * from './testnet-mbots-prelaunch'
 export * from './types'

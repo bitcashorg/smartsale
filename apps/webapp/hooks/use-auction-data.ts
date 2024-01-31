@@ -1,4 +1,4 @@
-import { TestnetEasyAuction } from 'smartevm-abis'
+import { TestnetEasyAuction } from 'smartsale-abis'
 import { useContractRead } from 'wagmi'
 
 export function useAuctionData(auctionId: number) {

@@ -1,7 +1,8 @@
-import { ContractData } from "./types";
+import { createContractData } from "./types";
 
-export const TestnetAllowList: ContractData = {
+export const TestnetAllowList = createContractData({
   "address": "0x3D18904711fe451356eBA461B7747EA3Abff6c93",
+  "indexFromBlock": 12241046,
   "abi": [
     {
       "inputs": [],
@@ -85,4 +86,4 @@ export const TestnetAllowList: ContractData = {
       "type": "function"
     }
   ] 
-}
+})

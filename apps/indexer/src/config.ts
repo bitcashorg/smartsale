@@ -4,12 +4,11 @@ if (!String(process.env.DFUSE_API_KEY)) {
 }
 
 export const serverEnv = {
-  dfuse: {
-    apiKey: process.env.DFUSE_API_KEY,
-    rpc: process.env.DFUSE_API_RPC || 'eos.dfuse.eosnation.io',
-  },
   sentry: {
     dsn: process.env.SENTRY_DSN || '',
+  },
+  evm: {
+    eosApi: 'https://api.testnet.evm.eosnetwork.com',
   },
   supabase: {},
 }

@@ -1,4 +1,4 @@
-# smartevm Web UI
+# smartsale Web UI
 
 <p align="center">
   <a href="#tech"><strong>Tech</strong></a> ·

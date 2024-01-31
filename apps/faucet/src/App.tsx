@@ -2,7 +2,7 @@
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 import { FaucetForm } from './components/faucet-form';
 import { useUsdtBalance } from './hooks/use-usdt-balance';
-import { TestnetUSDCred, TestnetMBOTSPL } from 'erc20-abis';
+import { TestnetUSDCred, TestnetMBOTSPL } from 'smartsale-abis';
 import { AddTokenToWallet } from './components/add-token-to-metamask';
 import { Button } from './components/ui/button';
 

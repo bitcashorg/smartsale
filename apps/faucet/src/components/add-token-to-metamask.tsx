@@ -1,8 +1,8 @@
-import { ERC20Data } from "erc20-abis";
+import { ERC20ContractData } from "smartsale-abis";
 
 
-export function AddTokenToWallet({ address, symbol, decimals, image, name }: ERC20Data){
-  console.log({ address, symbol, decimals, image, name })
+export function AddTokenToWallet({ address, symbol, decimals, image, name }: ERC20ContractData){
+  // console.log({ address, symbol, decimals, image, name })
   const addTokenToMetaMask = async () => {
     try {
       if (window.ethereum && window.ethereum.isMetaMask) {

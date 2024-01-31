@@ -1,4 +1,4 @@
-import { TestnetUSDCred } from "erc20-abis";
+import { TestnetUSDCred } from "smartsale-abis";
 import { formatUnits } from "viem";
 import { useAccount, useContractRead } from "wagmi";
 

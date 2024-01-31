@@ -1,4 +1,4 @@
-import { TestnetDepositOrder } from 'smartevm-abis'
+import { TestnetDepositOrder } from 'smartsale-abis'
 import { useContractWrite } from 'wagmi'
 
 interface DepositAndPlaceOrderParams {
