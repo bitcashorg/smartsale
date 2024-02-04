@@ -27,7 +27,9 @@
       "**/vite",
       "**/vite/**",
       "**/supabase",
-      "**/supabase/**"
+      "**/supabase/**",
+      "**/viem",
+      "**/viem/**"
     ]
   },
   "dependencies": {

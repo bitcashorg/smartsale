@@ -1,7 +1,7 @@
-import { http, createPublicClient } from 'viem'
+import { http, createPublicClient, PublicClient } from 'viem'
 import { eosEvmTestnet } from 'smartsale-chains'
 
-export const client = createPublicClient({
+export const client: PublicClient = createPublicClient({
   chain: eosEvmTestnet,
   transport: http(),
 })

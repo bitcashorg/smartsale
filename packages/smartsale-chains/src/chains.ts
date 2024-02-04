@@ -1,7 +1,6 @@
 import { Chain } from "viem";
 
-export const eosEvmTestnet : Chain = {
-  network: 'eos',
+export const eosEvmTestnet: Chain = {
   nativeCurrency: {
     name: 'EOS',
     symbol: 'EOS',
@@ -20,4 +19,4 @@ export const eosEvmTestnet : Chain = {
 };
 
 export const smartsaleChainsTestnet = [eosEvmTestnet]
-export const smartsaleChainsMainnet = [eosEvmTestnet]
+export const smartsaleChainsMainnet = []
