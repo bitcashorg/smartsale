@@ -1,7 +1,7 @@
-import { parseEventLogs, Log, Address } from 'viem'
+import { Log } from 'viem'
 import { client } from './evm-client'
 import { TestnetEasyAuction } from 'smartsale-contracts'
-import { bigintToPostgresTimestamp, getTokenDetails, runPromisesInSeries } from './lib'
+import { bigintToPostgresTimestamp, getEvents, getTokenDetails, runPromisesInSeries } from './lib'
 import { PrismaClient } from '@prisma/client'
 import { NewAuctionEvent } from './types'
 const prisma = new PrismaClient()
@@ -12,8 +12,9 @@ export async function startIndexer() {
   // await writeToFile(stringify(TestnetEasyAuction.getEvents(), null, 2), './events.json')
   // Get historical event logs
   const blockNumber = await client.getBlockNumber()
+  const events = getEvents(TestnetEasyAuction)
   const logs = await client.getLogs({
-    events: TestnetEasyAuction.getEvents(),
+    events,
     fromBlock: BigInt(TestnetEasyAuction.indexFromBlock),
     toBlock: blockNumber,
   })
@@ -28,7 +29,7 @@ export async function startIndexer() {
 
   // Watch for new event logs
   client.watchEvent({
-    events: TestnetEasyAuction.getEvents(),
+    events,
     onLogs: (logs) => {
       const filteredlogs = logs.filter((log) => log.eventName !== 'OwnershipTransferred')
       // console.log(

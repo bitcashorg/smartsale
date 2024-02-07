@@ -1,7 +1,7 @@
 import fs from 'fs/promises'
 import { erc20Abi } from 'abitype/abis'
 import { client } from './evm-client'
-import { Address } from 'viem'
+import { Abi, Address } from 'viem'
 
 export async function writeToFile(data: string, filePath: string) {
   try {
@@ -51,3 +51,6 @@ export function bigintToPostgresTimestamp(timestamp: bigint): string {
   const date = new Date(Number(timestamp) * 1000); // Convert seconds to milliseconds
   return date.toISOString().replace('T', ' ').replace('Z', ''); // Convert to PostgreSQL timestamp format
 }
+
+
+export const getEvents = (abi: Abi) => abi.filter(item => item.type === 'event');

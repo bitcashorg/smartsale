@@ -1,6 +1,6 @@
-import { createERC20ContractData } from "./types";
+import {  ERC20ContractData } from "./types";
 
-export const TestnetUSDCred = createERC20ContractData({
+export const TestnetUSDCred : ERC20ContractData = {
   address: '0x5b148580635E8B67184bCb496741e423F2c326bF',
   name: 'USD Credit Token',
   symbol: 'USDCred',
@@ -307,4 +307,4 @@ export const TestnetUSDCred = createERC20ContractData({
       "type": "function"
     }
   ]
-})
+}

@@ -18,7 +18,7 @@ export function AuctionBids({ project }: AuctionBidsProps) {
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
+      <form >
         <Table>
           <TableHeader>
             <TableRow>
