@@ -1,5 +1,15 @@
 import { Address, Log } from 'viem'
 
+declare global {
+  interface BigInt {
+    toJSON(): string
+  }
+}
+
+BigInt.prototype.toJSON = function (): string {
+  return String(this)
+}
+
 export interface AuctionClearedEvent extends Log {
   eventName: 'AuctionCleared'
   args: {

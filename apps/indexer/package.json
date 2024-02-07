@@ -28,11 +28,12 @@
     "prisma": "^5.9.1"
   },
   "dependencies": {
+    "@sentry/node": "^7.100.1",
+    "bn.js": "^5.2.1",
+    "lodash": "^4.17.21",
+    "smartsale-chains": "workspace:*",
     "smartsale-contracts": "workspace:*",
     "smartsale-lib": "workspace:*",
-    "smartsale-chains": "workspace:*",
-    "@sentry/node": "^7.100.1",
-    "lodash": "^4.17.21",
     "viem": "latest"
   }
 }

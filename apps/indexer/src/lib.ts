@@ -40,17 +40,15 @@ export async function getTokenDetails({ address }: { address: Address }) {
         args: [],
       },
     ],
-    multicallAddress: '0xcA11bde05977b3631167028862bE2a173976CA11'
+    multicallAddress: '0xcA11bde05977b3631167028862bE2a173976CA11',
   })
 
   return { address, decimals: Number(results[0].result), symbol: String(results[1].result) }
 }
 
-
 export function bigintToPostgresTimestamp(timestamp: bigint): string {
-  const date = new Date(Number(timestamp) * 1000); // Convert seconds to milliseconds
-  return date.toISOString().replace('T', ' ').replace('Z', ''); // Convert to PostgreSQL timestamp format
+  const date = new Date(Number(timestamp) * 1000) // Convert seconds to milliseconds
+  return date.toISOString()
 }
 
-
-export const getEvents = (abi: Abi) => abi.filter(item => item.type === 'event');
+export const getEvents = (abi: Abi) => abi.filter((item) => item.type === 'event')
