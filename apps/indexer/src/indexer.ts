@@ -31,7 +31,7 @@ export async function startIndexer() {
   client.watchEvent({
     events,
     onLogs: (logs) => {
-      const filteredlogs = logs.filter((log) => log.eventName !== 'OwnershipTransferred')
+      // const filteredlogs = logs.filter((log) => log.eventName !== 'OwnershipTransferred')
       // console.log(
       //   stringify(parseEventLogs({ abi: TestnetEasyAuction.abi, logs: filteredlogs }), null, 2),
       // )
@@ -127,7 +127,13 @@ async function handleNewAuction(log: NewAuctionEvent) {
 
   console.log('handleNewAuction:: data for postgres db', data)
 
-  // return prisma.auction_details.create({ data })
+  return prisma.auction_details.upsert({
+    where: {
+      exact_order_id: data.exact_order_id,
+    },
+    update: data,
+    create: data,
+  })
 }
 
 function handleNewSellOrder(log: any) {
