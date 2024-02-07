@@ -24,14 +24,14 @@
     "rimraf": "^5.0.5",
     "tsconfig": "workspace:*",
     "typescript": "^5.3.3",
-    "@prisma/client": "^5.9.1",
+    "@prisma/client": "latest",
     "prisma": "^5.9.1"
   },
   "dependencies": {
     "smartsale-contracts": "workspace:*",
     "smartsale-lib": "workspace:*",
     "smartsale-chains": "workspace:*",
-    "@sentry/node": "^7.98.0",
+    "@sentry/node": "^7.100.1",
     "lodash": "^4.17.21",
     "viem": "latest"
   }
