@@ -8,9 +8,9 @@
   "license": "UNLICENSED",
   "scripts": {
     "dev": "env-cmd nodemon --watch 'src/**' --ext 'ts' --exec 'ts-node src/index.ts' --trace-warnings",
+    "gen": "prisma db pull && prisma generate",
     "start": "env-cmd node ./dist",
     "build": "rimraf dist && tsc -b",
-    "prisma-gen": "prisma db pull && prisma generate",
     "lint": "eslint --ignore-path .gitignore \"**/*.+(js|ts|tsx)\" --fix",
     "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|json|ts|tsx)\"",
     "sentry:sourcemaps": "npx sentry-cli sourcemaps inject --org blockmatic --project bitcash-indexer ./dist && sentry-cli sourcemaps upload --org blockmatic --project bitcash-indexer ./dist"
@@ -22,13 +22,15 @@
     "env-cmd": "^10.1.0",
     "nodemon": "^3.0.3",
     "rimraf": "^5.0.5",
+    "tsconfig": "workspace:*",
+    "typescript": "^5.3.3",
+    "@prisma/client": "^5.9.1",
+    "prisma": "^5.9.1"
+  },
+  "dependencies": {
     "smartsale-abis": "workspace:*",
     "smartsale-lib": "workspace:*",
     "smartsale-chains": "workspace:*",
-    "tsconfig": "workspace:*",
-    "typescript": "^5.3.3"
-  },
-  "dependencies": {
     "@sentry/node": "^7.98.0",
     "lodash": "^4.17.21",
     "viem": "latest"

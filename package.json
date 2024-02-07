@@ -29,11 +29,12 @@
       "**/supabase",
       "**/supabase/**",
       "**/viem",
-      "**/viem/**"
+      "**/viem/**",
+      "**/@prisma/client",
+      "**/@prisma/client/**"
     ]
   },
   "dependencies": {
-    "react-use": "^17.4.3",
     "supabase": "^1.136.3"
   }
 }

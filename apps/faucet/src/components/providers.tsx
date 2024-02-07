@@ -23,7 +23,6 @@ const wagmiConfig = createConfig({
   publicClient
 })
 
-
 export function Providers({children}:{children: ReactNode}) {
 
   return (
