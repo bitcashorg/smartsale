@@ -1,35 +1,35 @@
 import { ReactNode } from 'react';
-import {
-  getDefaultWallets,
-  RainbowKitProvider,
-} from '@rainbow-me/rainbowkit';
-import {  configureChains, createConfig, WagmiConfig } from 'wagmi';
-import { publicProvider } from 'wagmi/providers/public';
-import {eosEvmTestnet} from 'smartsale-chains'
 
-const { chains, publicClient } = configureChains(
-  [eosEvmTestnet], [publicProvider()]
-);
+import { createConfig, WagmiProvider } from 'wagmi';
+import { eosEvmTestnet } from 'smartsale-chains'
+import { walletConnect } from 'wagmi/connectors'
+import { http } from 'viem';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 
-const { connectors } = getDefaultWallets({
-  appName: 'Bitcash USDT Faucet',
-  projectId: 'YOUR_PROJECT_ID',
-  chains
-});
+const queryClient = new QueryClient()
 
 const wagmiConfig = createConfig({
-  autoConnect: true,
-  connectors,
-  publicClient
+  chains: [eosEvmTestnet],
+  connectors: [
+    walletConnect({ 
+      projectId: "25a868c834c1003aa0f0b69aba0ae056",   
+      // metadata: { 
+      //   name: 'SmartSale Faucet', 
+      //   description: 'SmartSale Faucet'
+      // }
+    }),
+  ],
+   transports: {
+    [eosEvmTestnet.id]: http(),
+  },
 })
 
 export function Providers({children}:{children: ReactNode}) {
-
   return (
-    <WagmiConfig config={wagmiConfig}>
-      <RainbowKitProvider chains={chains}>
-        {children}
-      </RainbowKitProvider>
-    </WagmiConfig>
+    <QueryClientProvider client={queryClient}>
+      <WagmiProvider config={wagmiConfig}>
+          {children}
+      </WagmiProvider>
+    </QueryClientProvider>
   )
 }

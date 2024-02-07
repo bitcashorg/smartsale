@@ -1,12 +1,12 @@
 import { TestnetEasyAuction } from 'smartsale-contracts'
-import { useContractRead } from 'wagmi'
+import { useReadContract } from 'wagmi'
 
 export function useAuctionData(auctionId: number) {
   const {
     data: rawData,
     isError,
     isLoading
-  } = useContractRead({
+  } = useReadContract({
     ...TestnetEasyAuction,
     functionName: 'auctionData',
     args: [auctionId]

@@ -1,5 +1,5 @@
 import { TestnetDepositOrder } from 'smartsale-contracts'
-import { useContractWrite } from 'wagmi'
+import { useWriteContract } from 'wagmi'
 
 interface DepositAndPlaceOrderParams {
   auctionId: number
@@ -16,17 +16,13 @@ export function useDepositAndPlaceOrder({
   allowListCallData,
   value
 }: DepositAndPlaceOrderParams) {
-  const { data, isError, isLoading, write } = useContractWrite({
-    ...TestnetDepositOrder,
-    functionName: 'depositAndPlaceOrder',
-    args: [auctionId, minBuyAmounts, prevSellOrders, allowListCallData]
-  })
+  // const write = useWriteContract({
+  //   ...TestnetDepositOrder,
+  //   functionName: 'depositAndPlaceOrder',
+  //   args: [auctionId, minBuyAmounts, prevSellOrders, allowListCallData]
+  // })
 
-  const placeOrder = () => {
-    if (write) {
-      write()
-    }
-  }
+  const placeOrder = () => {}
 
-  return { data, isError, isLoading, placeOrder }
+  return { data: [], isError: false, isLoading: false, placeOrder }
 }

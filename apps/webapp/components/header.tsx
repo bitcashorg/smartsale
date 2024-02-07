@@ -2,8 +2,8 @@ import * as React from 'react'
 import Link from 'next/link'
 
 import { Button } from '@/components/ui/button'
-import { ConnectButton } from '@rainbow-me/rainbowkit'
 import { IconSeparator } from './ui/icons'
+import { ConnectWalletButton } from './connect-button'
 // import { ThemeToggle } from './theme-toggle'
 
 export async function Header() {
@@ -20,7 +20,7 @@ export async function Header() {
         <div className="flex items-center justify-end space-x-2">
           <React.Suspense fallback={<div className="flex-1 overflow-auto" />}>
             {/* <ThemeToggle/> */}
-            <ConnectButton />
+            <ConnectWalletButton />
           </React.Suspense>
         </div>
       </div>

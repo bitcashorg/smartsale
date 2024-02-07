@@ -1,15 +1,15 @@
 import { TestnetUSDCred } from "smartsale-contracts";
 import { formatUnits } from "viem";
-import { useAccount, useContractRead } from "wagmi";
+import { useAccount, useReadContract } from "wagmi";
 
 export function useUsdtBalance(){
   const { address } = useAccount();
 
-  const { data } = useContractRead({
+  const { data } = useReadContract({
     ...TestnetUSDCred,
     functionName: 'balanceOf',
     args: [address],
-    watch: true
+    // watch: true
   });
 
   // Convert the balance from wei to ether (adjust decimal places if needed)
