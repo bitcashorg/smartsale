@@ -1,4 +1,4 @@
-import { ERC20ContractData, TestnetMBOTSPL } from 'smartsale-abis'
+import { ERC20ContractData, TestnetMBOTSPL } from 'smartsale-contracts'
 
 export const projects: Project[] = [
   {

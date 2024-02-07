@@ -1,5 +1,5 @@
 {
-  "name": "smartsale-contracts",
+  "name": "smartsale-solidity-contracts",
   "version": "0.5.0",
   "directories": {
     "test": "test"

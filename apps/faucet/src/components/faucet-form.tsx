@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 import { useAccount } from "wagmi"
 import { useState } from "react"
 import { useFaucet } from "@/hooks/use-faucet"
-import { TestnetUSDCred } from 'smartsale-abis'
+import { TestnetUSDCred } from 'smartsale-contracts'
 
 export function FaucetForm() {
   const account = useAccount()

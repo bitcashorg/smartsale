@@ -1,5 +1,5 @@
 {
-  "name": "smartsale-tokens",
+  "name": "smartsale-solidity-tokens",
   "version": "1.0.0",
   "scripts": {
     "deployUSDCredTestnet": "hardhat run scripts/deployUSDCredWithFaucet.js --network eosevm_testnet",

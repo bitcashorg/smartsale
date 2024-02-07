@@ -28,7 +28,7 @@
     "prisma": "^5.9.1"
   },
   "dependencies": {
-    "smartsale-abis": "workspace:*",
+    "smartsale-contracts": "workspace:*",
     "smartsale-lib": "workspace:*",
     "smartsale-chains": "workspace:*",
     "@sentry/node": "^7.98.0",

@@ -1,5 +1,5 @@
 import { useContractWrite, usePrepareContractWrite } from 'wagmi';
-import { TestnetUSDCred } from 'smartsale-abis'; 
+import { TestnetUSDCred } from 'smartsale-contracts'; 
 import { parseUnits } from 'viem';
 
 export function useFaucet({ recipient, amount }:UseFaucetParams) {

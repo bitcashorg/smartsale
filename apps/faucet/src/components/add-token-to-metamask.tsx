@@ -1,4 +1,4 @@
-import { ERC20ContractData } from "smartsale-abis";
+import { ERC20ContractData } from "smartsale-contracts";
 
 
 export function AddTokenToWallet({ address, symbol, decimals, image, name }: ERC20ContractData){

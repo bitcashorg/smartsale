@@ -1,4 +1,7 @@
 import fs from 'fs/promises'
+import { erc20Abi } from 'abitype/abis'
+import { client } from './evm-client'
+import { Address } from 'viem'
 
 export async function writeToFile(data: string, filePath: string) {
   try {
@@ -17,7 +20,34 @@ export function runPromisesInSeries<T>(promiseFns: (() => Promise<T>)[]): Promis
   return promiseFns.reduce<Promise<T | void>>((prevPromise, currentPromiseFn) => {
     // Chain the current promise to the accumulator after the previous one completes
     // Here, we ignore the result of the previous promise, as we're focusing on chaining
-    // If collecting results is needed, an additional structure would be required
     return prevPromise.then(() => currentPromiseFn())
   }, Promise.resolve())
+}
+
+export async function getTokenDetails({ address }: { address: Address }) {
+  const results = await client.multicall({
+    contracts: [
+      {
+        address,
+        abi: erc20Abi,
+        functionName: 'decimals',
+        args: [],
+      },
+      {
+        address,
+        abi: erc20Abi,
+        functionName: 'symbol',
+        args: [],
+      },
+    ],
+    multicallAddress: '0xcA11bde05977b3631167028862bE2a173976CA11'
+  })
+
+  return { address, decimals: Number(results[0].result), symbol: String(results[1].result) }
+}
+
+
+export function bigintToPostgresTimestamp(timestamp: bigint): string {
+  const date = new Date(Number(timestamp) * 1000); // Convert seconds to milliseconds
+  return date.toISOString().replace('T', ' ').replace('Z', ''); // Convert to PostgreSQL timestamp format
 }

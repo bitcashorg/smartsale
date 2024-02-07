@@ -1,4 +1,4 @@
-import { TestnetEasyAuction } from 'smartsale-abis'
+import { TestnetEasyAuction } from 'smartsale-contracts'
 import { useContractRead } from 'wagmi'
 
 export function useAuctionData(auctionId: number) {
@@ -19,7 +19,7 @@ export function useAuctionData(auctionId: number) {
 
 function mapArrayToAuctionData(data: unknown): AuctionData | undefined {
   if (!Array.isArray(data)) return
-  
+
   return {
     auctioningToken: data[0],
     biddingToken: data[1],
