@@ -12,7 +12,7 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 const queryClient = new QueryClient()
 
 export const wagmiConfig = createConfig({
-  chains: [eosEvmTestnet],
+  chains: [{network: "eosevmtestnet",...eosEvmTestnet}],
   connectors: [
     // walletConnect({
     //   projectId: '25a868c834c1003aa0f0b69aba0ae056',

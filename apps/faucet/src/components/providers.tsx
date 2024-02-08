@@ -10,7 +10,7 @@ import { getSiteUrl } from '@/lib/utils';
 const queryClient = new QueryClient()
 
 const wagmiConfig = createConfig({
-  chains: [eosEvmTestnet],
+  chains: [{network: "eosevmtestnet",...eosEvmTestnet}],
   connectors: [
     walletConnect({ 
       projectId: "25a868c834c1003aa0f0b69aba0ae056",
