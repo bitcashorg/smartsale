@@ -29,7 +29,6 @@
     "geist": "^1.2.2",
     "lodash": "^4.17.21",
     "lucide-react": "^0.323.0",
-    "nanoid": "^5.0.5",
     "next": "latest",
     "next-themes": "^0.2.1",
     "pino-pretty": "^10.3.1",
