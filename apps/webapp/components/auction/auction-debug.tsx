@@ -1,7 +1,7 @@
 'use client'
 
 import { AuctionData, useAuctionData } from '@/hooks/use-auction-data'
-import { isAddress } from 'viem'
+import { hexToNumber, isAddress, isHex } from 'viem'
 
 export function AuctionDebug({ auctionId }: { auctionId: number }) {
   const { data: auction } = useAuctionData(auctionId)
@@ -27,14 +27,19 @@ const formatTokenAmount = (amount = '', decimals = 6) => {
 
 const convertToYamlText = (data: AuctionData): JSX.Element[] => {
   return Object.entries(data).map(([key, value]) => {
+    // console.log(key, value)
     if (value instanceof Date) {
       value = value.toLocaleString()
     } else if (
       typeof value === 'string' &&
-      !isNaN(Number(value)) &&
-      !isAddress(value)
+      // !isNaN(Number(value)) &&
+      !isAddress(value) &&
+      !isHex(value)
     ) {
       value = formatTokenAmount(value)
+    } else if (isHex(value) && !isAddress(value)) {
+      console.log('isHex', key, value)
+      value = hexToNumber(value)
     }
 
     return isAddress(value) ? (

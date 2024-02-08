@@ -9,20 +9,30 @@ interface DepositAndPlaceOrderParams {
   value: string // Amount of USD Cred to send in the transaction
 }
 
-export function useDepositAndPlaceOrder({
-  auctionId,
-  minBuyAmounts,
-  prevSellOrders,
-  allowListCallData,
-  value
-}: DepositAndPlaceOrderParams) {
-  // const write = useWriteContract({
-  //   ...TestnetDepositOrder,
-  //   functionName: 'depositAndPlaceOrder',
-  //   args: [auctionId, minBuyAmounts, prevSellOrders, allowListCallData]
-  // })
+export function useDepositAndPlaceOrder() {
+  const { writeContract, ...tanstack } = useWriteContract()
+  console.log('tanstack', tanstack)
 
-  const placeOrder = () => {}
+  const placeOrder = async ({
+    auctionId,
+    minBuyAmounts,
+    prevSellOrders,
+    allowListCallData,
+    value
+  }: DepositAndPlaceOrderParams) => {
+    console.log('placing order....', {
+      auctionId,
+      minBuyAmounts,
+      prevSellOrders,
+      allowListCallData,
+      value
+    })
+    writeContract({
+      ...TestnetDepositOrder,
+      functionName: 'depositAndPlaceOrder',
+      args: [auctionId, minBuyAmounts, prevSellOrders, allowListCallData]
+    })
+  }
 
-  return { data: [], isError: false, isLoading: false, placeOrder }
+  return { ...tanstack, placeOrder }
 }

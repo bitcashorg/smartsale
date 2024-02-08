@@ -13,6 +13,7 @@ export function useAuctionData(auctionId: number) {
   })
 
   const data = rawData ? mapArrayToAuctionData(rawData) : undefined
+  Array.isArray(rawData) && console.log('initialAuctionOrder', rawData[4])
 
   return { data, isError, isLoading }
 }
@@ -25,7 +26,7 @@ function mapArrayToAuctionData(data: unknown): AuctionData | undefined {
     biddingToken: data[1],
     orderCancellationEndDate: new Date(Number(data[2]) * 1000),
     auctionEndDate: new Date(Number(data[3]) * 1000),
-    initialAuctionOrder: data[4],
+    initialAuctionOrder: data[4].toString(),
     minimumBiddingAmountPerOrder: data[5].toString(),
     interimSumBidAmount: data[6].toString(),
     interimOrder: data[7],

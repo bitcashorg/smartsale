@@ -7,45 +7,54 @@ import {
   TableBody,
   Table
 } from '@/components/ui/table'
+import { useDepositAndPlaceOrder } from '@/hooks/use-place-order'
 import { ProjectWithAuction } from '@/lib/projects'
+import { toSmallestUnit } from '@/lib/utils'
 import { useState } from 'react'
 
 export function AuctionBids({ project }: AuctionBidsProps) {
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-    // Form submission logic
+  const { placeOrder, data, isPending, error } = useDepositAndPlaceOrder()
+  console.log('AuctionBids', { data, isPending, error })
+  const handleSubmit = () => {
+    placeOrder({
+      auctionId: project.auctionId,
+      minBuyAmounts: [toSmallestUnit(1, 6).toNumber()],
+      prevSellOrders: [],
+      allowListCallData: '',
+      value: toSmallestUnit(1, 6).toString()
+    })
   }
 
   return (
     <div>
-      <form >
-        <Table>
-          <TableHeader>
-            <TableRow>
-              <TableHead className="bg-red-600">Max Price</TableHead>
-              <TableHead className="bg-green-600">Bid Amount</TableHead>
+      <Table>
+        <TableHeader>
+          <TableRow>
+            <TableHead className="bg-red-600">Max Price</TableHead>
+            <TableHead className="bg-green-600">Bid Amount</TableHead>
+          </TableRow>
+        </TableHeader>
+        <TableBody>
+          {[...Array(5)].map((_, index) => (
+            <TableRow key={index}>
+              <TableCell className="bg-green-500">
+                <CurrencyInput placeholder="0.00" name={`maxPrice${index}`} />
+              </TableCell>
+              <TableCell className="bg-green-500">
+                <CurrencyInput placeholder="0.00" name={`tokens${index}`} />
+              </TableCell>
             </TableRow>
-          </TableHeader>
-          <TableBody>
-            {[...Array(5)].map((_, index) => (
-              <TableRow key={index}>
-                <TableCell className="bg-green-500">
-                  <CurrencyInput placeholder="0.00" name={`maxPrice${index}`} />
-                </TableCell>
-                <TableCell className="bg-green-500">
-                  <CurrencyInput placeholder="0.00" name={`tokens${index}`} />
-                </TableCell>
-              </TableRow>
-            ))}
-          </TableBody>
-        </Table>
-        <button
-          type="submit"
-          className="w-full px-4 py-2 mt-4 font-bold text-white bg-blue-500 rounded hover:bg-blue-700"
-        >
-          Submit Bids
-        </button>
-      </form>
+          ))}
+        </TableBody>
+      </Table>
+      <button
+        onClick={() => handleSubmit()}
+        type="submit"
+        className="w-full px-4 py-2 mt-4 font-bold text-white bg-blue-500 rounded hover:bg-blue-700"
+      >
+        Submit Bids
+      </button>
+
       <div className="mt-4">
         <p>{textValues.currentBid}</p>
         <p>{textValues.currentCost}</p>

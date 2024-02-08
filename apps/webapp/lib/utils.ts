@@ -2,6 +2,7 @@ import { clsx, type ClassValue } from 'clsx'
 import { customAlphabet } from 'nanoid'
 import { twMerge } from 'tailwind-merge'
 import { Address } from 'viem'
+import BN from 'bn.js'
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
@@ -77,4 +78,19 @@ export function formatAddress(address: Address) {
     // Return the original address if it's too short or not a string
     return address
   }
+}
+
+// Function to convert token amount to its smallest unit, considering the token's decimals
+export function toSmallestUnit(
+  value: string | number,
+  decimals: number = 18
+): BN {
+  // Create a BN instance for the base (10)
+  const ten = new BN(10)
+  // Create a BN instance for the number of decimals the token uses
+  const base = ten.pow(new BN(decimals))
+  // Convert the human-readable amount to a base unit amount
+  const amountInBaseUnit = new BN(value).mul(base)
+
+  return amountInBaseUnit
 }
