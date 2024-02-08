@@ -7,7 +7,7 @@ import { TooltipProvider } from '@/components/ui/tooltip'
 import { createConfig, WagmiProvider } from 'wagmi'
 import { eosEvmTestnet } from 'smartsale-chains'
 import { injected } from 'wagmi/connectors'
-import { http } from 'viem'
+import { http } from 'wagmi'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 const queryClient = new QueryClient()
 

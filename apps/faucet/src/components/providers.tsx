@@ -3,7 +3,7 @@ import { ReactNode } from 'react';
 import { createConfig, WagmiProvider } from 'wagmi';
 import { eosEvmTestnet } from 'smartsale-chains'
 import { injected, safe, walletConnect } from 'wagmi/connectors'
-import { http } from 'viem';
+import { http } from 'wagmi';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { getSiteUrl } from '@/lib/utils';
 
