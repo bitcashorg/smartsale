@@ -45,9 +45,9 @@ export default function AuctionPage({
               <Countdown auctionId={project.auctionId} />
             </div>
             <div className="w-full md:w-1/3">
-               <React.Suspense fallback={<div>Loading ...</div>}>
+              <React.Suspense fallback={<div>Loading ...</div>}>
                 <AuctionBids project={project} />
-              </React.Suspense> 
+              </React.Suspense>
             </div>
           </div>
         </div>

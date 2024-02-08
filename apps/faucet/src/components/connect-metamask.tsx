@@ -4,14 +4,14 @@ import { Button } from './ui/button'
 
 export function ConnectWalletButton() {
   const connectors = useConnectors()
-  const { connect} = useConnect()
+  const { connect } = useConnect()
 
   const handleConnect = async () => {
     // Find the WalletConnect connector
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const walletConnectConnector = connectors.find(connector => connector.id === 'walletConnect')
-    if (walletConnectConnector) {
-      await connect({ connector: walletConnectConnector })
+    const injectedConnector = connectors.find(connector => connector.id === 'injected')
+    if (injectedConnector) {
+      await connect({ connector: injectedConnector })
     }
   }
 

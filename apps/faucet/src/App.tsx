@@ -4,7 +4,7 @@ import { useUsdtBalance } from './hooks/use-usdt-balance';
 import { TestnetUSDCred, TestnetMBOTSPL } from 'smartsale-contracts';
 import { AddTokenToWallet } from './components/add-token-to-metamask';
 import { Button } from './components/ui/button';
-import { ConnectWalletButton } from './components/connect-button';
+import { ConnectWalletButton } from './components/connect-metamask';
 
 export default function Component() {
   const balance = useUsdtBalance()

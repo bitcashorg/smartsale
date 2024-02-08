@@ -3,7 +3,7 @@ import { client } from './evm-client'
 import { TestnetEasyAuction } from 'smartsale-contracts'
 import { bigintToPostgresTimestamp, getEvents, getTokenDetails, runPromisesInSeries } from './lib'
 import { PrismaClient, Prisma } from '@prisma/client'
-import { NewAuctionEvent } from './types'
+import { NewAuctionEvent, NewSellOrderEvent } from './types'
 import { eosEvmTestnet } from 'smartsale-chains'
 import BN from 'bn.js'
 
@@ -149,8 +149,8 @@ async function handleNewAuction(log: NewAuctionEvent) {
   }
 }
 
-function handleNewSellOrder(log: any) {
-  // console.log('handleNewSellOrder', log)
+function handleNewSellOrder(log: NewSellOrderEvent) {
+  console.log('handleNewSellOrder', log)
 }
 
 function handleNewUser(log: any) {

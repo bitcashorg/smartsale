@@ -3,8 +3,17 @@ import Link from 'next/link'
 
 import { Button } from '@/components/ui/button'
 import { IconSeparator } from './ui/icons'
-import { ConnectWalletButton } from './connect-button'
+import dynamic from 'next/dynamic'
+import { ConnectWalletButton } from './connect-metamask'
 // import { ThemeToggle } from './theme-toggle'
+
+// const DynamicConnectButton = dynamic(
+//   () => import('./connect-metamask').then(mod => mod.ConnectWalletButton),
+//   {
+//     suspense: true,
+//     ssr: false // Disable server-side rendering for this component
+//   }
+// )
 
 export async function Header() {
   return (

@@ -1,6 +1,7 @@
 import { clsx, type ClassValue } from 'clsx'
 import { customAlphabet } from 'nanoid'
 import { twMerge } from 'tailwind-merge'
+import { Address } from 'viem'
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
@@ -66,4 +67,14 @@ export function extractBetweenMarkers(
   startIndex += startMarker.length
 
   return str.substring(startIndex, endIndex).trim()
+}
+
+export function formatAddress(address: Address) {
+  // Ensure the address is a string and has a length of at least 8 characters
+  if (typeof address === 'string' && address.length >= 8) {
+    return `${address.slice(0, 4)}...${address.slice(-4)}`
+  } else {
+    // Return the original address if it's too short or not a string
+    return address
+  }
 }
