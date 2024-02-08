@@ -6,7 +6,7 @@ import { ThemeProviderProps } from 'next-themes/dist/types'
 import { TooltipProvider } from '@/components/ui/tooltip'
 import { createConfig, WagmiProvider } from 'wagmi'
 import { eosEvmTestnet } from 'smartsale-chains'
-import { injected, safe, walletConnect } from 'wagmi/connectors'
+import { injected } from 'wagmi/connectors'
 import { http } from 'viem'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 const queryClient = new QueryClient()
@@ -14,17 +14,17 @@ const queryClient = new QueryClient()
 export const wagmiConfig = createConfig({
   chains: [eosEvmTestnet],
   connectors: [
-    walletConnect({
-      projectId: '25a868c834c1003aa0f0b69aba0ae056',
-      metadata: {
-        name: 'Bitcash Launchpad Faucet',
-        description: 'Bitcash Launchpad Faucet',
-        url: ``, // origin must match your domain & subdomain
-        icons: ['https://avatars.githubusercontent.com/u/37784886']
-      }
-    }),
-    injected(),
-    safe()
+    // walletConnect({
+    //   projectId: '25a868c834c1003aa0f0b69aba0ae056',
+    //   metadata: {
+    //     name: 'Bitcash Launchpad Faucet',
+    //     description: 'Bitcash Launchpad Faucet',
+    //     url: ``, // origin must match your domain & subdomain
+    //     icons: ['https://avatars.githubusercontent.com/u/37784886']
+    //   }
+    // }),
+    injected()
+    // safe()
   ],
   transports: {
     [eosEvmTestnet.id]: http()
