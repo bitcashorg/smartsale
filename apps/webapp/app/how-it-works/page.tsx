@@ -65,6 +65,84 @@ export default function HowItWorks() {
         greatly reduces frontrunning and gas bidding wars, decreasing the amount
         of extracted value from auctioneers and bidders.
       </p>
+      <p className="mt-8">
+        The depositAndPlaceOrder function, typically found in auction or trading
+        platforms like Gnosis or its forks, including Bitcash Launchpad, serves
+        a dual purpose within the context of smart contracts, especially when
+        interacting with blockchain-based auction systems. Heres a breakdown of
+        its functionality
+      </p>
+
+      <article>
+        <h2>Purpose</h2>
+        <ul>
+          <li>
+            <strong>Deposit:</strong> Allows users to deposit funds into the
+            smart contract, acting as a bid in an auction or payment for placing
+            an order.
+          </li>
+          <li>
+            <strong>Place Order:</strong> Enables users to place an order within
+            the auction, specifying details such as the amount of tokens desired
+            and the price.
+          </li>
+        </ul>
+
+        <h2>Parameters</h2>
+        <p>Common parameters include:</p>
+        <ul>
+          <li>
+            <code>auctionId</code>: Identifies the auction.
+          </li>
+          <li>
+            <code>amount</code> or <code>_minBuyAmounts</code>: The amount of
+            tokens to buy or the minimum bid amount.
+          </li>
+          <li>
+            <code>token</code> or <code>currency</code>: The token or currency
+            used for the order.
+          </li>
+          <li>
+            <code>userData</code>: Additional data related to the order.
+          </li>
+        </ul>
+
+        <h2>Behavior</h2>
+        <ol>
+          <li>
+            <strong>Validation:</strong> Validates the input parameters against
+            the auctions rules.
+          </li>
+          <li>
+            <strong>Funds Handling:</strong> Manages the deposited funds,
+            aligning them with the users order.
+          </li>
+          <li>
+            <strong>Order Placement:</strong> Records the users order within the
+            auctions structure.
+          </li>
+          <li>
+            <strong>Events:</strong> Emits events to record the deposit and
+            order placement actions.
+          </li>
+        </ol>
+
+        <h2>Security Considerations</h2>
+        <ul>
+          <li>
+            <strong>Reentrancy Guard:</strong> Ensures protection against
+            reentrancy attacks.
+          </li>
+          <li>
+            <strong>Input Validation:</strong> Validates all inputs to prevent
+            manipulations.
+          </li>
+          <li>
+            <strong>Access Controls:</strong> May restrict who can call the
+            function based on certain criteria.
+          </li>
+        </ul>
+      </article>
     </div>
   )
 }

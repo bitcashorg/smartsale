@@ -32,7 +32,6 @@ const convertToYamlText = (data: AuctionData): JSX.Element[] => {
       value = value.toLocaleString()
     } else if (
       typeof value === 'string' &&
-      // !isNaN(Number(value)) &&
       !isAddress(value) &&
       !isHex(value)
     ) {
