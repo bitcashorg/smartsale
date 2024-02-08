@@ -10,7 +10,7 @@
     "dev": "env-cmd nodemon --watch 'src/**' --ext 'ts' --exec 'ts-node src/index.ts' --trace-warnings",
     "gen": "prisma db pull && prisma generate",
     "start": "env-cmd node ./dist",
-    "build": "bun run gen && rimraf dist && tsc -b",
+    "build": "rimraf dist && bun run gen && tsc -b",
     "lint": "eslint --ignore-path .gitignore \"**/*.+(js|ts|tsx)\" --fix",
     "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|json|ts|tsx)\"",
     "sentry:sourcemaps": "npx sentry-cli sourcemaps inject --org blockmatic --project bitcash-indexer ./dist && sentry-cli sourcemaps upload --org blockmatic --project bitcash-indexer ./dist"
