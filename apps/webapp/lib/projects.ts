@@ -10,7 +10,7 @@ export const projects: Project[] = [
     heroImage: '/images/projects/masterbots.png',
     badgeText: 'PRE-SALE ACTIVE',
     linkPath: '/masterbots',
-    auctionId: 5,
+    auctionId: 8,
     token: TestnetMBOTSPL
   },
   {

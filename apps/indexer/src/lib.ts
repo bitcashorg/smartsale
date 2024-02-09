@@ -1,6 +1,6 @@
 import fs from 'fs/promises'
 import { erc20Abi } from 'abitype/abis'
-import { client } from './evm-client'
+import { client } from './viem-client'
 import { Abi, Address } from 'viem'
 
 export async function writeToFile(data: string, filePath: string) {

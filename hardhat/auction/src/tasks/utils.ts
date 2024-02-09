@@ -86,7 +86,7 @@ export async function getWETH9Address(
     weth9Address = "0x60d4db9b534ef9260a88b0bed6c486fe13e604fc";
     // eosevm_testnet
   } else if (chainId == 15557) {
-    weth9Address = "0x6ccc5ad199bf1c64b50f6e7dd530d71402402eb6";
+    weth9Address = "0x6ccc5ad199bf1c64b50f6e7dd530d71402402eb6"; // WEOS
   }
   return weth9Address;
 }

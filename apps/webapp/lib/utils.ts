@@ -1,7 +1,9 @@
 import { clsx, type ClassValue } from 'clsx'
 import { twMerge } from 'tailwind-merge'
-import { Address } from 'viem'
+import { Address, erc20Abi } from 'viem'
 import BN from 'bn.js'
+import { QueryClient } from '@tanstack/react-query'
+import { multicall } from 'viem/actions'
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
@@ -88,3 +90,26 @@ export function toSmallestUnit(
 
   return amountInBaseUnit
 }
+
+
+// export async function getTokenDetails({ address }: { address: Address }) {
+//   const results = await multicall({
+//     contracts: [
+//       {
+//         address,
+//         abi: erc20Abi,
+//         functionName: 'decimals',
+//         args: [],
+//       },
+//       {
+//         address,
+//         abi: erc20Abi,
+//         functionName: 'symbol',
+//         args: [],
+//       },
+//     ],
+//     multicallAddress: '0xcA11bde05977b3631167028862bE2a173976CA11',
+//   })
+
+//   return { address, decimals: Number(results[0].result), symbol: String(results[1].result) }
+// }

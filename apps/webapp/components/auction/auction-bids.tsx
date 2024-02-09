@@ -16,13 +16,15 @@ export function AuctionBids({ project }: AuctionBidsProps) {
   const { placeOrder, data, isPending, error } = useDepositAndPlaceOrder()
   console.log('AuctionBids', { data, isPending, error })
   const handleSubmit = () => {
-    placeOrder({
+    const order=  {
       auctionId: project.auctionId,
-      minBuyAmounts: [toSmallestUnit(1, 6).toNumber()],
+      minBuyAmounts: [toSmallestUnit(100, 6).toNumber()], // USDCred 100,000000 BidAmount
       prevSellOrders: [],
       allowListCallData: '',
-      value: toSmallestUnit(1, 6).toString()
-    })
+      value: toSmallestUnit(100, 6).toString() // MBOTSPL 100,000000
+    }
+    console.log('place order', order)
+    placeOrder(order)
   }
 
   return (

@@ -1,15 +1,15 @@
 'use client'
 
 import { AuctionData, useAuctionData } from '@/hooks/use-auction-data'
-import { hexToNumber, isAddress, isHex } from 'viem'
+import { decodeAbiParameters, isAddress, isHex, parseAbiParameters } from 'viem'
 
 export function AuctionDebug({ auctionId }: { auctionId: number }) {
   const { data: auction } = useAuctionData(auctionId)
 
   if (!auction) return <div>Loading Auction Debug...</div>
-  const auctionText = convertToYamlText(auction)
+  // const auctionText = convertToYamlText(auction)
 
-  return <AuctionText>{auctionText}</AuctionText>
+  return <AuctionText><pre><code>{JSON.stringify(auction, null, 2)}</code></pre></AuctionText>
 }
 
 function AuctionText({ children }: { children: React.ReactNode }) {
@@ -37,8 +37,7 @@ const convertToYamlText = (data: AuctionData): JSX.Element[] => {
     ) {
       value = formatTokenAmount(value)
     } else if (isHex(value) && !isAddress(value)) {
-      console.log('isHex', key, value)
-      value = hexToNumber(value)
+      return value
     }
 
     return isAddress(value) ? (
@@ -54,7 +53,7 @@ const convertToYamlText = (data: AuctionData): JSX.Element[] => {
       </div>
     ) : (
       <div key={key}>
-        {key}: {value}
+        {key}: {value.toString()}
       </div>
     )
   })
