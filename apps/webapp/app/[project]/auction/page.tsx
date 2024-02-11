@@ -4,6 +4,7 @@ import { ProjectWithAuction, projects } from '@/lib/projects'
 import { Countdown } from '@/components/auction/countdown'
 import { AuctionInfo } from '@/components/auction/auction-info'
 import { AuctionBids } from '@/components/auction/auction-bids'
+import { AuctionOrders } from '@/components/auction/auction-orders'
 import Image from 'next/image'
 import dynamic from 'next/dynamic'
 
@@ -50,6 +51,9 @@ export default function AuctionPage({
               </React.Suspense>
             </div>
           </div>
+          <React.Suspense fallback={<div>Loading ...</div>}>
+            <AuctionOrders />
+          </React.Suspense>
         </div>
       </div>
 
