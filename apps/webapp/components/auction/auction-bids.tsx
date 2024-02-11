@@ -27,20 +27,20 @@ export function AuctionBids({ project }: AuctionBidsProps) {
     const { isBalanceSufficient, isAllowanceSufficient } =
       await checkBalanceAndAllowance({
         account: address,
-        spender: address,
+        spender: TestnetEasyAuction.address,
         amount,
         tokenAddress: TestnetUSDCred.address
       })
 
     if (!isBalanceSufficient) return alert('Insuficient USDCred Balance')
-    // if (!isAllowanceSufficient) {
-    await writeContract(wagmiConfig, {
-      address: TestnetUSDCred.address,
-      abi: erc20Abi,
-      functionName: 'approve',
-      args: [address, amount]
-    })
-    // }
+    if (!isAllowanceSufficient) {
+      await writeContract(wagmiConfig, {
+        address: TestnetUSDCred.address,
+        abi: erc20Abi,
+        functionName: 'approve',
+        args: [TestnetEasyAuction.address, amount]
+      })
+    }
 
     const order = {
       auctionId: project.auctionId, // uint256 auctionId,
