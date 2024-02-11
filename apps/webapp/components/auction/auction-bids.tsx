@@ -11,22 +11,40 @@ import { useDepositAndPlaceOrder } from '@/hooks/use-place-order'
 import { ProjectWithAuction } from '@/lib/projects'
 import { toSmallestUnit } from '@/lib/utils'
 import { useState } from 'react'
+import { TestnetEasyAuction } from 'smartsale-contracts'
+import { stringify } from 'viem'
+import { useAccount, useWriteContract } from 'wagmi'
 
 export function AuctionBids({ project }: AuctionBidsProps) {
-  const { placeOrder, data, isPending, error } = useDepositAndPlaceOrder()
-  console.log('AuctionBids', { data, isPending, error })
-  const handleSubmit = () => {
-    const order=  {
-      auctionId: project.auctionId,
-      minBuyAmounts: [toSmallestUnit(100, 6).toNumber()], // USDCred 100,000000 BidAmount
-      prevSellOrders: [],
-      allowListCallData: '',
-      value: toSmallestUnit(100, 6).toString() // MBOTSPL 100,000000
+  const { address } = useAccount()
+  const { writeContract, ...tanstack } = useWriteContract()
+  const handleSubmit = async () => {
+    if (!address) return
+
+    const order = {
+      auctionId: project.auctionId, // uint256 auctionId,
+      minBuyAmounts: [2000000], // uint96[] memory _minBuyAmounts, USDCred 100,000000 BidAmount
+      prevSellOrders: [], // bytes32[] memory _prevSellOrders,
+      allowListCallData: '0x', // bytes calldata allowListCallData
+      sellAmounts: [2100000] // uint96[] memory _sellAmounts,
     }
     console.log('place order', order)
-    placeOrder(order)
+    const queueStartElement =
+      '0x0000000000000000000000000000000000000000000000000000000000000001'
+    writeContract({
+      ...TestnetEasyAuction, // Ensure this contains the correct ABI and contract address
+      functionName: 'placeSellOrders',
+      args: [
+        order.auctionId,
+        order.minBuyAmounts,
+        order.sellAmounts,
+        [queueStartElement],
+        '0x'
+      ]
+    })
   }
 
+  console.log('error', stringify(tanstack.error), 'data', tanstack.data)
   return (
     <div>
       <Table>

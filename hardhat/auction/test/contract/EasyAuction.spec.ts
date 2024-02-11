@@ -268,11 +268,11 @@ describe("EasyAuction", async () => {
       await closeAuction(easyAuction, auctionId);
       await expect(
         easyAuction.placeSellOrders(
-          0,
-          [ethers.utils.parseEther("1")],
-          [ethers.utils.parseEther("1").add(1)],
+          0, // uint256 auctionId,
+          [ethers.utils.parseEther("1")], // uint96[] memory _minBuyAmounts,
+          [ethers.utils.parseEther("1").add(1)], // bytes32[] memory _prevSellOrders,
           [queueStartElement],
-          "0x",
+          "0x", // bytes calldata allowListCallData
         ),
       ).to.be.revertedWith("no longer in order placement phase");
     });
