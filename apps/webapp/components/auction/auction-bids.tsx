@@ -7,19 +7,40 @@ import {
   TableBody,
   Table
 } from '@/components/ui/table'
-import { useDepositAndPlaceOrder } from '@/hooks/use-place-order'
 import { ProjectWithAuction } from '@/lib/projects'
-import { toSmallestUnit } from '@/lib/utils'
 import { useState } from 'react'
-import { TestnetEasyAuction } from 'smartsale-contracts'
-import { stringify } from 'viem'
+import { TestnetEasyAuction, TestnetUSDCred } from 'smartsale-contracts'
+import { Address, erc20Abi, stringify } from 'viem'
 import { useAccount, useWriteContract } from 'wagmi'
+import { readContract, writeContract } from '@wagmi/core'
+import { wagmiConfig } from '../providers'
 
 export function AuctionBids({ project }: AuctionBidsProps) {
   const { address } = useAccount()
-  const { writeContract, ...tanstack } = useWriteContract()
+  const { writeContract: placeBids, ...tanstack } = useWriteContract()
+
   const handleSubmit = async () => {
     if (!address) return
+
+    const amount = BigInt(2100000)
+
+    const { isBalanceSufficient, isAllowanceSufficient } =
+      await checkBalanceAndAllowance({
+        account: address,
+        spender: address,
+        amount,
+        tokenAddress: TestnetUSDCred.address
+      })
+
+    if (!isBalanceSufficient) return alert('Insuficient USDCred Balance')
+    // if (!isAllowanceSufficient) {
+    await writeContract(wagmiConfig, {
+      address: TestnetUSDCred.address,
+      abi: erc20Abi,
+      functionName: 'approve',
+      args: [address, amount]
+    })
+    // }
 
     const order = {
       auctionId: project.auctionId, // uint256 auctionId,
@@ -31,7 +52,7 @@ export function AuctionBids({ project }: AuctionBidsProps) {
     console.log('place order', order)
     const queueStartElement =
       '0x0000000000000000000000000000000000000000000000000000000000000001'
-    writeContract({
+    placeBids({
       ...TestnetEasyAuction, // Ensure this contains the correct ABI and contract address
       functionName: 'placeSellOrders',
       args: [
@@ -150,4 +171,45 @@ const textValues = {
   currentBid: 'Current Bid: 200 @ $3.75',
   currentCost: 'Current Cost: $750',
   maxTokenLimit: '*Max Token Limit: 285 ($1,000)'
+}
+
+// Function to check balance and allowance
+export async function checkBalanceAndAllowance({
+  account,
+  spender,
+  amount,
+  tokenAddress
+}: {
+  account: Address
+  spender: Address
+  amount: bigint
+  tokenAddress: Address
+}) {
+  // Check the token balance
+  const balance = await readContract(wagmiConfig, {
+    address: tokenAddress,
+    abi: erc20Abi,
+    functionName: 'balanceOf',
+    args: [account]
+  })
+  console.log(
+    'USDCred balance',
+    balance,
+    amount,
+    balance && BigInt(balance.toString()) >= amount
+  )
+
+  // Check the allowance
+  const allowance = await readContract(wagmiConfig, {
+    address: tokenAddress,
+    abi: erc20Abi,
+    functionName: 'allowance',
+    args: [account, spender]
+  })
+
+  const isBalanceSufficient = balance && BigInt(balance.toString()) >= amount
+  const isAllowanceSufficient =
+    allowance && BigInt(allowance.toString()) >= amount
+
+  return { isBalanceSufficient, isAllowanceSufficient }
 }

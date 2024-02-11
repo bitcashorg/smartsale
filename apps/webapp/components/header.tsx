@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button'
 import { IconSeparator } from './ui/icons'
 import dynamic from 'next/dynamic'
 import { ConnectWalletButton } from './connect-metamask'
+import { ConnectButton } from '@rainbow-me/rainbowkit'
 // import { ThemeToggle } from './theme-toggle'
 
 // const DynamicConnectButton = dynamic(
@@ -29,7 +30,7 @@ export async function Header() {
         <div className="flex items-center justify-end space-x-2">
           <React.Suspense fallback={<div className="flex-1 overflow-auto" />}>
             {/* <ThemeToggle/> */}
-            <ConnectWalletButton />
+            <ConnectButton />
           </React.Suspense>
         </div>
       </div>

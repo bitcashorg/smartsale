@@ -6,28 +6,18 @@ import { ThemeProviderProps } from 'next-themes/dist/types'
 import { TooltipProvider } from '@/components/ui/tooltip'
 import { createConfig, WagmiProvider } from 'wagmi'
 import { eosEvmTestnet } from 'smartsale-chains'
-import { injected } from 'wagmi/connectors'
 import { http } from 'wagmi'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+import { getDefaultConfig, RainbowKitProvider } from '@rainbow-me/rainbowkit'
+import { Transport } from 'viem'
 const queryClient = new QueryClient()
 
-export const wagmiConfig = createConfig({
-  chains: [{network: "eosevmtestnet",...eosEvmTestnet}],
-  connectors: [
-    // walletConnect({
-    //   projectId: '25a868c834c1003aa0f0b69aba0ae056',
-    //   metadata: {
-    //     name: 'Bitcash Launchpad Faucet',
-    //     description: 'Bitcash Launchpad Faucet',
-    //     url: ``, // origin must match your domain & subdomain
-    //     icons: ['https://avatars.githubusercontent.com/u/37784886']
-    //   }
-    // }),
-    injected()
-    // safe()
-  ],
+export const wagmiConfig = getDefaultConfig({
+  appName: 'Bitcash Launchpad',
+  projectId: 'YOUR_PROJECT_ID',
+  chains: [{ ...eosEvmTestnet, fees: undefined }],
   transports: {
-    [eosEvmTestnet.id]: http()
+    [eosEvmTestnet.id]: http() as Transport
   }
 })
 
@@ -36,7 +26,9 @@ export function Providers({ children, ...props }: ThemeProviderProps) {
     <NextThemesProvider {...props}>
       <TooltipProvider>
         <QueryClientProvider client={queryClient}>
-          <WagmiProvider config={wagmiConfig}>{children}</WagmiProvider>
+          <WagmiProvider config={wagmiConfig}>
+            <RainbowKitProvider>{children}</RainbowKitProvider>
+          </WagmiProvider>
         </QueryClientProvider>
       </TooltipProvider>
     </NextThemesProvider>
