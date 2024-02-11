@@ -11,13 +11,22 @@ import { ProjectWithAuction } from '@/lib/projects'
 import { useState } from 'react'
 import { TestnetEasyAuction, TestnetUSDCred } from 'smartsale-contracts'
 import { Address, erc20Abi, stringify } from 'viem'
-import { useAccount, useWriteContract } from 'wagmi'
+import { useAccount, useReadContract, useWriteContract } from 'wagmi'
 import { readContract, writeContract } from '@wagmi/core'
 import { wagmiConfig } from '../providers'
 
 export function AuctionBids({ project }: AuctionBidsProps) {
   const { address } = useAccount()
   const { writeContract: placeBids, ...tanstack } = useWriteContract()
+  const userId = useReadContract({
+    ...TestnetEasyAuction,
+    functionName: 'getUserId',
+    args: [address],
+    query: {
+      enabled: !!address
+    }
+  })
+  console.log('userId', userId.data)
 
   const handleSubmit = async () => {
     if (!address) return
