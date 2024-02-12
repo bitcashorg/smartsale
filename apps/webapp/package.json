@@ -40,7 +40,7 @@
     "smartsale-chains": "workspace:*",
     "smartsale-contracts": "workspace:*",
     "smartsale-lib": "workspace:*",
-    "viem": "2.x",
+    "viem": "latest",
     "wagmi": "latest"
   },
   "devDependencies": {

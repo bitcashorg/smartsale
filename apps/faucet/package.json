@@ -13,6 +13,7 @@
     "@radix-ui/react-avatar": "^1.0.4",
     "@radix-ui/react-label": "^2.0.2",
     "@radix-ui/react-slot": "^1.0.2",
+    "@rainbow-me/rainbowkit": "2.x",
     "@tanstack/react-query": "^5.18.1",
     "@wagmi/connectors": "^4.1.13",
     "autoprefixer": "^10.4.17",
@@ -27,7 +28,7 @@
     "tailwind-merge": "^2.2.1",
     "tailwindcss": "^3.4.1",
     "tailwindcss-animate": "^1.0.7",
-    "viem": "2.x",
+    "viem": "latest",
     "wagmi": "latest"
   },
   "devDependencies": {

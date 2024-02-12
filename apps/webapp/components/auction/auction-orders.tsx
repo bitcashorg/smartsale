@@ -72,7 +72,7 @@ export function AuctionOrders() {
               <TableCell>{order.buy_amount}</TableCell>
               <TableCell>
                 <Link
-                  href={`https://explorer.testnet.evm.eosnetwork.com/tx/${order.transactionHash}`}
+                  href={`https://explorer.testnet.evm.eosnetwork.com/tx/${formatAddress(order.transactionHash)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >

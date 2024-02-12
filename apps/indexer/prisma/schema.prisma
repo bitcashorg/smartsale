@@ -41,20 +41,20 @@ model auction_details {
 
 /// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
 model orders {
-  transactionHash String @id 
-  created_at  DateTime  @default(now()) @db.Timestamptz(6)
-  auction_id  BigInt
-  sell_amount BigInt
-  buy_amount  BigInt
-  user_id     BigInt
-  price       Int?
-  volume      BigInt?
-  timestamp   DateTime? @db.Timestamp(6)
+  created_at      DateTime  @default(now()) @db.Timestamptz(6)
+  auction_id      BigInt
+  sell_amount     BigInt
+  buy_amount      BigInt
+  user_id         BigInt
+  price           Int?
+  volume          BigInt?
+  timestamp       DateTime? @db.Timestamp(6)
+  transactionHash String    @id
 }
 
 /// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
 model users {
-  id         BigInt   
+  id         BigInt
   created_at DateTime @default(now()) @db.Timestamptz(6)
   address    String
 

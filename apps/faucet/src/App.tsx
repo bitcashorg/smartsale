@@ -4,7 +4,7 @@ import { useUsdtBalance } from './hooks/use-usdt-balance';
 import { TestnetUSDCred, TestnetMBOTSPL } from 'smartsale-contracts';
 import { AddTokenToWallet } from './components/add-token-to-metamask';
 import { Button } from './components/ui/button';
-import { ConnectWalletButton } from './components/connect-metamask';
+import { ConnectButton } from '@rainbow-me/rainbowkit';
 
 export default function Component() {
   const balance = useUsdtBalance()
@@ -19,7 +19,7 @@ export default function Component() {
               USD Credits ${balance}
           </div>
           
-          <ConnectWalletButton/>
+          <ConnectButton/>
         </div>
 
       </nav>
