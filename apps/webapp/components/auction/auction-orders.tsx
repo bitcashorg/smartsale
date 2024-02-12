@@ -10,6 +10,8 @@ import {
 import { useEffect, useState } from 'react'
 import { useAccount } from 'wagmi'
 import { createClient } from '@supabase/supabase-js'
+import Link from 'next/link'
+import { formatAddress } from '@/lib/utils'
 
 const supabase = createClient(
   'https://dvpusrbojetnuwbkyhzj.supabase.co',
@@ -52,7 +54,8 @@ export function AuctionOrders() {
   }, [fetchOrders])
 
   return (
-    <div>
+    <div className="pt-8">
+      <h2>Order history</h2>
       <Table>
         <TableHeader>
           <TableRow>
@@ -67,7 +70,16 @@ export function AuctionOrders() {
             <TableRow key={index}>
               <TableCell>{order.sell_amount}</TableCell>
               <TableCell>{order.buy_amount}</TableCell>
-              <TableCell>{order.transactionHash}</TableCell>
+              <TableCell>
+                <Link
+                  href={`https://explorer.testnet.evm.eosnetwork.com/tx/${order.transactionHash}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {' '}
+                  {formatAddress(order.transactionHash)}
+                </Link>
+              </TableCell>
               <TableCell>{order.created_at}</TableCell>
             </TableRow>
           ))}

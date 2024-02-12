@@ -1,6 +1,7 @@
 'use client'
 
 import { AuctionData, useAuctionData } from '@/hooks/use-auction-data'
+import Link from 'next/link'
 import { decodeAbiParameters, isAddress, isHex, parseAbiParameters } from 'viem'
 
 export function AuctionDebug({ auctionId }: { auctionId: number }) {
@@ -9,7 +10,13 @@ export function AuctionDebug({ auctionId }: { auctionId: number }) {
   if (!auction) return <div>Loading Auction Debug...</div>
   // const auctionText = convertToYamlText(auction)
 
-  return <AuctionText><pre><code>{JSON.stringify(auction, null, 2)}</code></pre></AuctionText>
+  return (
+    <AuctionText>
+      <pre>
+        <code>{JSON.stringify(auction, null, 2)}</code>
+      </pre>
+    </AuctionText>
+  )
 }
 
 function AuctionText({ children }: { children: React.ReactNode }) {
@@ -43,13 +50,13 @@ const convertToYamlText = (data: AuctionData): JSX.Element[] => {
     return isAddress(value) ? (
       <div key={key}>
         {key}:{' '}
-        <a
+        <Link
           href={`https://explorer.testnet.evm.eosnetwork.com/address/${value}`}
           target="_blank"
           rel="noopener noreferrer"
         >
           {value}
-        </a>
+        </Link>
       </div>
     ) : (
       <div key={key}>
