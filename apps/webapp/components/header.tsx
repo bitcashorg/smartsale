@@ -1,5 +1,5 @@
 import * as React from 'react'
-import Link from 'next/link'
+import Link, { LinkProps } from 'next/link'
 
 import { Button } from '@/components/ui/button'
 import { IconSeparator } from './ui/icons'
@@ -26,6 +26,11 @@ export async function Header() {
           <HeaderLink href="/how-it-works" text="how it works" />
           <HeaderLink href="/security" text="security tips" />
           <HeaderLink href="/funding" text="funding" />
+          <HeaderLink
+            target={_blank}
+            href="https://bitcash-faucet.vercel.app/"
+            text="faucet"
+          />
         </div>
         <div className="flex items-center justify-end space-x-2">
           <React.Suspense fallback={<div className="flex-1 overflow-auto" />}>
@@ -38,12 +43,16 @@ export async function Header() {
   )
 }
 
-function HeaderLink({ href, text }: { href: string; text: string }) {
+function HeaderLink({ text, ...props }: HeaderLinkProps) {
   return (
     <Button variant="link" asChild className="-ml-2">
-      <Link shallow={true} href={href}>
+      <Link shallow={true} {...props}>
         {text}
       </Link>
     </Button>
   )
+}
+
+interface HeaderLinkProps extends LinkProps {
+  text: string
 }
