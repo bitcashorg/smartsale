@@ -8,10 +8,13 @@ import {
   Table
 } from '@/components/ui/table'
 import { useEffect, useState } from 'react'
-import { useAccount } from 'wagmi'
+import { useAccount, useReadContract } from 'wagmi'
 import { createClient } from '@supabase/supabase-js'
 import Link from 'next/link'
 import { formatAddress } from '@/lib/utils'
+import { TestnetEasyAuction } from 'smartsale-contracts'
+import BN from 'bn.js'
+import { stringify } from 'viem'
 
 const supabase = createClient(
   'https://dvpusrbojetnuwbkyhzj.supabase.co',
@@ -21,37 +24,52 @@ const supabase = createClient(
 export function AuctionOrders() {
   const { address } = useAccount()
   const [orders, setOrders] = useState<any[]>([])
+  const userId = useReadContract({
+    ...TestnetEasyAuction,
+    functionName: 'getUserId',
+    args: [address],
+    query: {
+      enabled: !!address
+    }
+  })
 
-  console.log(orders)
+  // console.log(orders)
 
   const fetchOrders = async (userId: number) => {
+    console.log('fetch orders...')
     const { data, error } = await supabase
       .from('orders')
       .select('*')
       .eq('user_id', userId)
 
     if (error) return
-
     setOrders(data)
   }
 
   useEffect(() => {
-    if (!address) return
-    fetchOrders(4)
+    if (!userId.data) return
+    fetchOrders(new BN(userId.data!.toString()).toNumber())
 
     const channel = supabase
       .channel('*')
       .on(
         'postgres_changes',
         { event: 'INSERT', schema: 'public', table: 'orders' },
-        payload => setOrders(orders => [...orders, payload.new as any])
+        payload => {
+          // Check if the inserted order's user_id matches the desired userId
+          if (payload.new && payload.new.user_id === userId) {
+            setOrders(orders => [...orders, payload.new])
+          }
+        }
       )
       .subscribe()
 
     return () => {
       supabase.removeChannel(channel)
     }
-  }, [fetchOrders])
+  }, [userId.data])
+
+  console.log(stringify(orders))
 
   return (
     <div className="pt-8">
@@ -60,6 +78,7 @@ export function AuctionOrders() {
         <TableHeader>
           <TableRow>
             <TableHead>Max Price</TableHead>
+            <TableHead>Min Buy Amount</TableHead>
             <TableHead>Bid Amount</TableHead>
             <TableHead>Transaction</TableHead>
             <TableHead>Date</TableHead>
@@ -68,8 +87,17 @@ export function AuctionOrders() {
         <TableBody>
           {orders.map((order, index) => (
             <TableRow key={index}>
-              <TableCell>{order.sell_amount}</TableCell>
+              <TableCell>
+                {(
+                  Number(formatTokenAmount(order.sell_amount)) /
+                  order.buy_amount
+                ).toFixed(2)}
+              </TableCell>
               <TableCell>{order.buy_amount}</TableCell>
+              <TableCell>
+                {formatTokenAmount(order.sell_amount.toString())}
+              </TableCell>
+
               <TableCell>
                 <Link
                   href={`https://explorer.testnet.evm.eosnetwork.com/tx/${formatAddress(order.transactionHash)}`}
@@ -87,4 +115,9 @@ export function AuctionOrders() {
       </Table>
     </div>
   )
+}
+
+// Function to format token amounts
+const formatTokenAmount = (amount = '', decimals = 6) => {
+  return (Number(amount) / Math.pow(10, decimals)).toFixed(2) // Adjust precision as needed
 }
