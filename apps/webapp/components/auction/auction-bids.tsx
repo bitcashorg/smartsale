@@ -10,11 +10,12 @@ import {
 import { ProjectWithAuction } from '@/lib/projects'
 import { useState } from 'react'
 import { TestnetEasyAuction, TestnetUSDCred } from 'smartsale-contracts'
-import { Address, erc20Abi, stringify } from 'viem'
+import { Address, stringify } from 'viem'
 import { useAccount, useWriteContract } from 'wagmi'
 import { readContract, writeContract } from '@wagmi/core'
 import { wagmiConfig } from '../providers'
 import { toSmallestUnit } from '@/lib/utils'
+import { erc20Abi } from 'abitype/abis'
 
 export function AuctionBids({ project }: AuctionBidsProps) {
   const { address } = useAccount()
