@@ -8,6 +8,8 @@ import { cn } from '@/lib/utils'
 import { Providers } from '@/components/providers'
 import { Header } from '@/components/header'
 
+import React from 'react'
+
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" suppressHydrationWarning>

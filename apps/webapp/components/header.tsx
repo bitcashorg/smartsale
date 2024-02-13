@@ -3,18 +3,8 @@ import Link, { LinkProps } from 'next/link'
 
 import { Button } from '@/components/ui/button'
 import { IconSeparator } from './ui/icons'
-import dynamic from 'next/dynamic'
-import { ConnectWalletButton } from './connect-metamask'
 import { ConnectButton } from '@rainbow-me/rainbowkit'
-// import { ThemeToggle } from './theme-toggle'
-
-// const DynamicConnectButton = dynamic(
-//   () => import('./connect-metamask').then(mod => mod.ConnectWalletButton),
-//   {
-//     suspense: true,
-//     ssr: false // Disable server-side rendering for this component
-//   }
-// )
+import { ErrorModal } from '@/components/error-modal'
 
 export async function Header() {
   return (
@@ -26,13 +16,10 @@ export async function Header() {
           <HeaderLink href="/how-it-works" text="how it works" />
           <HeaderLink href="/security" text="security tips" />
           <HeaderLink href="/funding" text="funding" />
-          <HeaderLink
-            target={_blank}
-            href="https://bitcash-faucet.vercel.app/"
-            text="faucet"
-          />
+          <HeaderLink href="https://bitcash-faucet.vercel.app/" text="faucet" />
         </div>
         <div className="flex items-center justify-end space-x-2">
+          <ErrorModal />
           <React.Suspense fallback={<div className="flex-1 overflow-auto" />}>
             {/* <ThemeToggle/> */}
             <ConnectButton />

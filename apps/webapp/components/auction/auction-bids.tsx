@@ -8,7 +8,7 @@ import {
   Table
 } from '@/components/ui/table'
 import { ProjectWithAuction } from '@/lib/projects'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { TestnetEasyAuction, TestnetUSDCred } from 'smartsale-contracts'
 import { Address, stringify } from 'viem'
 import { useAccount, useWriteContract } from 'wagmi'
@@ -16,25 +16,37 @@ import { readContract, writeContract } from '@wagmi/core'
 import { wagmiConfig } from '../providers'
 import { toSmallestUnit } from '@/lib/utils'
 import { erc20Abi } from 'abitype/abis'
+import { useGlobalData } from '@/hooks/use-global-data'
+
+const queueStartElement =
+  '0x0000000000000000000000000000000000000000000000000000000000000001'
 
 export function AuctionBids({ project }: AuctionBidsProps) {
   const { address } = useAccount()
   const { writeContract: placeBids, ...tanstack } = useWriteContract()
   const [bidInputs, setBidInputs] = useState(
-    Array<BidInput>(5).fill({ maxPrice: BigInt(0), bidAmount: BigInt(0) })
+    Array<BidInput>(5).fill({
+      maxPrice: BigInt(0),
+      bidAmount: BigInt(0),
+      minBuyAmount: BigInt(0),
+      errorMessage: ''
+    })
   )
+  const { errorMessage, setGlobalError } = useGlobalData()
 
   const handleSubmit = async () => {
     if (!address) return
 
-    const minBuyAmounts = bidInputs.map(
-      i => i.bidAmount / BigInt(i.maxPrice || 1)
-    )
-    const sellAmounts = bidInputs.map(i => i.bidAmount)
+    // return if there's any error
+    const hasErrorMessage = bidInputs.some(item => item.errorMessage !== '')
+    if (hasErrorMessage) return
+
+    // remove empty rows
+    const bids = bidInputs.filter(v => v.minBuyAmount <= 0 && v.bidAmount <= 0)
 
     const test = {
-      minBuyAmounts: [minBuyAmounts[0]],
-      sellAmounts: [sellAmounts[0]]
+      minBuyAmounts: [bids[0]?.minBuyAmount],
+      sellAmounts: [bids[0]?.bidAmount]
     }
 
     console.log('test', stringify(test))
@@ -43,17 +55,19 @@ export function AuctionBids({ project }: AuctionBidsProps) {
       await checkBalanceAndAllowance({
         account: address,
         spender: TestnetEasyAuction.address,
-        amount: test.sellAmounts[0],
+        amount: bids[0]?.bidAmount,
         tokenAddress: TestnetUSDCred.address
       })
 
-    if (!isBalanceSufficient) return alert('Insuficient USDCred Balance')
+    if (!isBalanceSufficient)
+      return setGlobalError('Insuficient USDCred Balance')
+
     if (!isAllowanceSufficient) {
       await writeContract(wagmiConfig, {
         address: TestnetUSDCred.address,
         abi: erc20Abi,
         functionName: 'approve',
-        args: [TestnetEasyAuction.address, test.sellAmounts[0]]
+        args: [TestnetEasyAuction.address, bids[0]?.bidAmount]
       })
     }
 
@@ -65,8 +79,7 @@ export function AuctionBids({ project }: AuctionBidsProps) {
       sellAmounts: test.sellAmounts // uint96[] memory _sellAmounts bidding USDCred 200,000000 BidAmount
     }
     console.log('place order', order)
-    const queueStartElement =
-      '0x0000000000000000000000000000000000000000000000000000000000000001'
+
     placeBids({
       ...TestnetEasyAuction, // Ensure this contains the correct ABI and contract address
       functionName: 'placeSellOrders',
@@ -80,19 +93,43 @@ export function AuctionBids({ project }: AuctionBidsProps) {
     })
   }
 
-  console.log('error', stringify(tanstack.error), 'data', tanstack.data)
-  // console.log('bidInputs', JSON.stringify(bidInputs))
-
+  // validates and formats inputs
   const handleInputChange = (
     index: number,
     name: keyof BidInput,
     value: bigint
   ) => {
-    console.log('handleInputChange', index, name, value)
     const newBidInputs = [...bidInputs]
     newBidInputs[index] = { ...newBidInputs[index], [name]: value }
+    // calculate minBuyAmount and set error messages
+    const { maxPrice, bidAmount: sellAmount } = newBidInputs[index]
+
+    let errorMessage =
+      maxPrice <= 0
+        ? 'Max price cannot be zero'
+        : sellAmount <= 0
+          ? 'Sell amount cannot be zero'
+          : ''
+
+    const minBuyAmount = !errorMessage
+      ? sellAmount / BigInt(maxPrice || 1)
+      : BigInt(0)
+
+    // TODO: check minBuyAmount is valid for project
+
+    newBidInputs[index] = { ...newBidInputs[index], minBuyAmount, errorMessage }
+
     setBidInputs(newBidInputs)
   }
+
+  // console.log('error', stringify(tanstack.error), 'data', tanstack.data)
+  // console.log('bidInputs', JSON.stringify(bidInputs))
+
+  // show error on modal
+  // useEffect(() => {
+  //   if (tanstack.error?.message && tanstack.error?.message !== errorMessage)
+  //     setGlobalError(tanstack.error.message)
+  // }, [tanstack.error, setGlobalError])
 
   return (
     <div>
@@ -129,6 +166,7 @@ export function AuctionBids({ project }: AuctionBidsProps) {
         </TableBody>
       </Table>
       <button
+        disabled={bidInputs.some(item => item.errorMessage !== '')}
         onClick={() => handleSubmit()}
         type="submit"
         className="w-full px-4 py-2 mt-4 font-bold text-white bg-blue-500 rounded hover:bg-blue-700"
@@ -192,6 +230,8 @@ function CurrencyInput({ handlechange, ...props }: CurrencyInputProps) {
 type BidInput = {
   maxPrice: bigint
   bidAmount: bigint
+  minBuyAmount: bigint
+  errorMessage: string
 }
 
 interface AuctionBidsProps {

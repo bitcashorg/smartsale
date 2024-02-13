@@ -56,8 +56,9 @@ export function AuctionOrders() {
         'postgres_changes',
         { event: 'INSERT', schema: 'public', table: 'orders' },
         payload => {
+          console.log('supabase payload', payload)
           // Check if the inserted order's user_id matches the desired userId
-          if (payload.new && payload.new.user_id === userId) {
+          if (payload.new && payload.new.user_id === userId.data) {
             setOrders(orders => [...orders, payload.new])
           }
         }
