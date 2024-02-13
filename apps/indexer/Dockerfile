@@ -36,8 +36,8 @@ COPY turbo.json turbo.json
 # ENV TURBO_TOKEN=$TURBO_TOKEN
 
 # generate prisma client
-RUN rm -f apps/launchpad-indexer/.env
-# RUN ls -la apps/launchpad-indexer/
+RUN rm -f apps/indexer/.env
+# RUN ls -la apps/indexer/
 
 RUN yarn turbo run build --filter=launchpad-indexer
 
@@ -50,4 +50,4 @@ WORKDIR /app
 # USER expressjs
 COPY --from=installer /app .
 
-CMD ["node", "apps/launchpad-indexer/dist/"]
+CMD ["node", "apps/indexer/dist/"]
