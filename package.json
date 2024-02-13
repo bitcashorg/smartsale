@@ -35,6 +35,7 @@
       "**/@prisma/client/**"
     ]
   },
+  "packageManager": "bun@1.0.14",
   "dependencies": {
     "supabase": "^1.136.3"
   }
