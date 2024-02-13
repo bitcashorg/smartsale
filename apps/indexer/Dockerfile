@@ -42,7 +42,7 @@ WORKDIR /app
 # USER prod
 COPY --from=installer /app .
 
-RUN ls -la apps/launchpad-indexer/dist
-RUN ls -la apps/launchpad-indexer/dist/public
+RUN ls -la apps/indexer/dist
+RUN ls -la apps/indexer/dist/public
 
-CMD ["node", "apps/launchpad-indexer/dist/"]
+CMD ["node", "apps/indexer/dist/"]
