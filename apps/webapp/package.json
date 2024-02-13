@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "smartsale-webapp",
+  "name": "launchpad-webapp",
   "scripts": {
     "dev": "next dev --turbo",
     "build": "next build",
