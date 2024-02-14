@@ -7,7 +7,10 @@ WORKDIR /app
 # Copy the package.json files for the workspaces
 COPY package.json .
 COPY apps/indexer/package.json ./apps/indexer/package.json
-COPY packages/*/package.json ./packages/
+COPY packages/smartsale-chains/package.json ./packages/smartsale-chains/package.json
+COPY packages/smartsale-contracts/package.json ./packages/smartsale-contracts/package.json
+COPY packages/smartsale-lib/package.json ./packages/smartsale-lib/package.json
+COPY packages/tsconfig/package.json ./packages/tsconfig/package.json
 RUN ls -la ./packages/
 
 # Copy the lock file
