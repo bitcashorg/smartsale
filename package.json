@@ -27,12 +27,14 @@
     "nohoist": [
       "**/vite",
       "**/vite/**",
-      "**/viem",
-      "**/viem/**",
+      "**/prisma",
+      "**/prisma/**",
       "**/@prisma/client",
       "**/@prisma/client/**"
     ]
   },
   "packageManager": "bun@1.0.14",
-  "dependencies": { "@types/bn.js": "^5.1.5" }
+  "dependencies": {
+    "@types/bn.js": "^5.1.5"
+  }
 }
