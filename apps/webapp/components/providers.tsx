@@ -9,7 +9,7 @@ import { eosEvmTestnet } from 'smartsale-chains'
 import { http } from 'wagmi'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { getDefaultConfig, RainbowKitProvider } from '@rainbow-me/rainbowkit'
-import { Transport } from 'viem'
+import { HttpTransport } from 'viem'
 import { GlobalDataProvider } from '@/hooks/use-global-data'
 const queryClient = new QueryClient()
 
@@ -18,7 +18,7 @@ export const wagmiConfig = getDefaultConfig({
   projectId: 'YOUR_PROJECT_ID',
   chains: [{ ...eosEvmTestnet, fees: undefined }],
   transports: {
-    [eosEvmTestnet.id]: http() as Transport
+    [eosEvmTestnet.id]: http() as HttpTransport
   }
 })
 

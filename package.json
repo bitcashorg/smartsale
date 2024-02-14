@@ -29,6 +29,8 @@
       "**/vite/**",
       "**/prisma",
       "**/prisma/**",
+      "**/viem",
+      "**/viem/**",
       "**/@prisma/client",
       "**/@prisma/client/**"
     ]
