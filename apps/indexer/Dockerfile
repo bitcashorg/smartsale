@@ -8,6 +8,7 @@ WORKDIR /app
 COPY package.json .
 COPY apps/indexer/package.json ./apps/indexer/package.json
 COPY packages/*/package.json ./packages/
+RUN ls -la ./packages/
 
 # Copy the lock file
 COPY bun.lockb .
