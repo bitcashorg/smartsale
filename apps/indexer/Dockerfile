@@ -1,7 +1,7 @@
-FROM oven/bun 
+FROM node:latest
 
 WORKDIR /app
-RUN bun install -g prisma
+RUN bun install -g prisma bun
 COPY . .
 RUN pwd
 RUN ls -a
