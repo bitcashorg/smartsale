@@ -37,3 +37,6 @@ yarn-error.log*
 
 # development 
 _dev
+
+# add prisma
+!node_modules/.prisma/ 
