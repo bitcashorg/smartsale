@@ -1,7 +1,7 @@
-FROM node:latest
+FROM node:20
 
 WORKDIR /app
-RUN bun install -g prisma bun
+RUN npm install -g prisma bun
 COPY . .
 RUN pwd
 RUN ls -a
