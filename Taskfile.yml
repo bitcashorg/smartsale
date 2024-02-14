@@ -5,10 +5,10 @@ silent: true
 
 tasks:
   app:
-    - turbo run dev --scope="smartsale-webapp"
+    - turbo run dev --scope="launchpad-webapp"
 
   faucet:
-    - turbo run dev --scope="smartsale-faucet"
+    - turbo run dev --scope="launchpad-faucet"
 
   indexer:
-    - turbo run dev --scope="smartsale-indexer"
+    - turbo run dev --scope="launchpad-indexer"
