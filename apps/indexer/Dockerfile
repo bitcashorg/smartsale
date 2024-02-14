@@ -11,7 +11,6 @@ COPY packages/smartsale-chains/package.json ./packages/smartsale-chains/package.
 COPY packages/smartsale-contracts/package.json ./packages/smartsale-contracts/package.json
 COPY packages/smartsale-lib/package.json ./packages/smartsale-lib/package.json
 COPY packages/tsconfig/package.json ./packages/tsconfig/package.json
-RUN ls -la ./packages/
 
 # Copy the lock file
 COPY bun.lockb .
@@ -26,7 +25,6 @@ COPY packages/ ./packages/
 
 # Set the working directory to your specific workspace
 WORKDIR /app/apps/indexer
-RUN echo $DATABASE_URL
 RUN bunx prisma generate
 EXPOSE 8080
 CMD ["bun", "src/index.ts"]
