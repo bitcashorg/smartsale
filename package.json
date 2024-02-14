@@ -1,7 +1,7 @@
 {
-  "name": "smartevm",
+  "name": "smartsale",
   "version": "1.0.0",
-  "description": "Monorepo for smartevm application",
+  "description": "SmartSale Monorepo",
   "author": "Jun Dam <jun@bitcash.org>",
   "license": "MIT",
   "private": true,
@@ -27,8 +27,6 @@
     "nohoist": [
       "**/vite",
       "**/vite/**",
-      "**/supabase",
-      "**/supabase/**",
       "**/viem",
       "**/viem/**",
       "**/@prisma/client",
@@ -36,7 +34,5 @@
     ]
   },
   "packageManager": "bun@1.0.14",
-  "dependencies": {
-    "supabase": "^1.136.3"
-  }
+  "dependencies": { "@types/bn.js": "^5.1.5" }
 }
