@@ -26,6 +26,5 @@ COPY packages/ ./packages/
 
 # Set the working directory to your specific workspace
 WORKDIR /app/apps/indexer
-
-# Set the command to run your application
+EXPOSE 8080
 CMD ["bun", "src/index.ts"]
