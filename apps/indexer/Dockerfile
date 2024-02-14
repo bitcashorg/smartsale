@@ -23,10 +23,10 @@ RUN bun install
 # Copy the specific workspaces
 COPY apps/indexer ./apps/indexer
 COPY packages/ ./packages/
-COPY node_modules/.prisma/ ./node_modules/.prisma/ 
 
 # Set the working directory to your specific workspace
 WORKDIR /app/apps/indexer
+RUN echo $DATABASE_URL
 RUN bunx prisma generate
 EXPOSE 8080
 CMD ["bun", "src/index.ts"]
