@@ -1,9 +1,7 @@
 import { clsx, type ClassValue } from 'clsx'
 import { twMerge } from 'tailwind-merge'
-import { Address, erc20Abi } from 'viem'
+import { Address } from 'viem'
 import BN from 'bn.js'
-import { QueryClient } from '@tanstack/react-query'
-import { multicall } from 'viem/actions'
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
