@@ -49,28 +49,33 @@ export function AuctionOrders() {
   useEffect(() => {
     if (!userId.data) return
     fetchOrders(new BN(userId.data!.toString()).toNumber())
-
+    console.log(`subscribing to supabase channel filtering by userId=${userId.data}`)
     const channel = supabase
       .channel('*')
       .on(
         'postgres_changes',
         { event: 'INSERT', schema: 'public', table: 'orders' },
         payload => {
-          console.log('supabase payload', payload)
+
+
           // Check if the inserted order's user_id matches the desired userId
+          console.log('supabase payload.new', payload.new, userId.data, orders[0])
           if (payload.new && payload.new.user_id === userId.data) {
-            setOrders(orders => [...orders, payload.new])
+            setOrders(orders =>{
+              console.log('setOrders', payload.new, orders[0])
+              return [...orders, payload.new]})
           }
         }
       )
       .subscribe()
+      console.log('subscribed to supabase...')
 
     return () => {
       supabase.removeChannel(channel)
     }
   }, [userId.data])
 
-  console.log(stringify(orders))
+  // console.log(stringify(orders))
 
   return (
     <div className="pt-8">

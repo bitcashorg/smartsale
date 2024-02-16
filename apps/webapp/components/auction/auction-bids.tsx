@@ -42,7 +42,7 @@ export function AuctionBids({ project }: AuctionBidsProps) {
     if (hasErrorMessage) return
 
     // remove empty rows
-    const bids = bidInputs.filter(v => v.minBuyAmount <= 0 && v.bidAmount <= 0)
+    const bids = bidInputs.filter(v => !(v.minBuyAmount <= 0 && v.bidAmount <= 0))
 
     const test = {
       minBuyAmounts: [bids[0]?.minBuyAmount],
@@ -122,14 +122,16 @@ export function AuctionBids({ project }: AuctionBidsProps) {
     setBidInputs(newBidInputs)
   }
 
-  // console.log('error', stringify(tanstack.error), 'data', tanstack.data)
+ console.log('error', stringify(tanstack.error), 'data', tanstack.data)
   // console.log('bidInputs', JSON.stringify(bidInputs))
 
-  // show error on modal
-  // useEffect(() => {
-  //   if (tanstack.error?.message && tanstack.error?.message !== errorMessage)
-  //     setGlobalError(tanstack.error.message)
-  // }, [tanstack.error, setGlobalError])
+   // show error on modal
+  useEffect(() => {
+    const err = tanstack.error 
+    if(!err || !('shortMessage' in err) || err.shortMessage === errorMessage) return
+    setGlobalError(err.shortMessage)
+    tanstack.reset()
+  }, [tanstack.error,tanstack.reset, setGlobalError])
 
   return (
     <div>
@@ -282,7 +284,7 @@ export async function checkBalanceAndAllowance({
     'USDCred balance',
     balance,
     amount,
-    balance && BigInt(balance.toString()) >= amount
+    balance && balance >= amount
   )
 
   // Check the allowance
@@ -293,9 +295,9 @@ export async function checkBalanceAndAllowance({
     args: [account, spender]
   })
 
-  const isBalanceSufficient = balance && BigInt(balance.toString()) >= amount
+  const isBalanceSufficient = balance && balance >= amount
   const isAllowanceSufficient =
-    allowance && BigInt(allowance.toString()) >= amount
+    allowance && allowance >= amount
 
   return { isBalanceSufficient, isAllowanceSufficient }
 }
