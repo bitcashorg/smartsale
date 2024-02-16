@@ -14,7 +14,7 @@ import Link from 'next/link'
 import { formatAddress } from '@/lib/utils'
 import { TestnetEasyAuction } from 'smartsale-contracts'
 import BN from 'bn.js'
-import { stringify } from 'viem'
+import { format } from 'date-fns';
 
 const supabase = createClient(
   'https://dvpusrbojetnuwbkyhzj.supabase.co',
@@ -41,6 +41,7 @@ export function AuctionOrders() {
       .from('orders')
       .select('*')
       .eq('user_id', userId)
+      .order('created_at', { ascending: false });
 
     if (error) return
     setOrders(data)
@@ -56,8 +57,6 @@ export function AuctionOrders() {
         'postgres_changes',
         { event: 'INSERT', schema: 'public', table: 'orders' },
         payload => {
-
-
           // Check if the inserted order's user_id matches the desired userId
           console.log('supabase payload.new', payload.new, userId.data, orders[0])
           if (payload.new && payload.new.user_id === userId.data) {
@@ -110,11 +109,12 @@ export function AuctionOrders() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {' '}
                   {formatAddress(order.transactionHash)}
                 </Link>
               </TableCell>
-              <TableCell>{order.created_at}</TableCell>
+              <TableCell>
+                 {format(new Date(order.created_at), 'MMMM d, yyyy \'at\' h:mm a')}
+              </TableCell>
             </TableRow>
           ))}
         </TableBody>

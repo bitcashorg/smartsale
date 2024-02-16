@@ -16,7 +16,8 @@ export async function Header() {
           <HeaderLink href="/how-it-works" text="how it works" />
           <HeaderLink href="/security" text="security tips" />
           <HeaderLink href="/funding" text="funding" />
-          <HeaderLink href="https://bitcash-faucet.vercel.app/" text="faucet" />
+          <HeaderLink href="https://bitcash-faucet.vercel.app/" text="usdcred faucet" />
+          <HeaderLink href="https://faucet.testnet.evm.eosnetwork.com/" text="eos faucet" />
         </div>
         <div className="flex items-center justify-end space-x-2">
           <ErrorModal />
