@@ -58,12 +58,13 @@ export function AuctionOrders() {
         { event: 'INSERT', schema: 'public', table: 'orders' },
         payload => {
           // Check if the inserted order's user_id matches the desired userId
-          console.log('supabase payload.new', payload.new, userId.data, orders[0])
-          if (payload.new && payload.new.user_id === userId.data) {
-            setOrders(orders =>{
-              console.log('setOrders', payload.new, orders[0])
-              return [...orders, payload.new]})
-          }
+          const isSameUserId = BigInt(payload.new.user_id) === BigInt(String(userId.data) || 0)
+          console.log('supabase payload.new', payload.new, userId.data,  isSameUserId)
+          if (!isSameUserId) return  
+          setOrders(orders =>{
+            console.log('setOrders', payload.new, orders[0])
+            return [payload.new,...orders]
+          })
         }
       )
       .subscribe()
@@ -72,7 +73,7 @@ export function AuctionOrders() {
     return () => {
       supabase.removeChannel(channel)
     }
-  }, [userId.data])
+  }, [userId.data, setOrders])
 
   // console.log(stringify(orders))
 
