@@ -38,6 +38,7 @@
   "packageManager": "bun@1.0.14",
   "dependencies": {
     "@types/bn.js": "^5.1.5",
-    "@types/express": "^4.17.21"
+    "@types/express": "^4.17.21",
+    "@types/pako": "^2.0.3"
   }
 }
