@@ -7,7 +7,7 @@ import '@rainbow-me/rainbowkit/styles.css'
 import { cn } from '@/lib/utils'
 import { Providers } from '@/components/providers'
 import { Header } from '@/components/header'
-
+import { ErrorModal } from '@/components/error-modal'
 import React from 'react'
 
 export default function RootLayout({ children }: RootLayoutProps) {
@@ -33,6 +33,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
               {children}
             </main>
           </div>
+                    <ErrorModal />
           {/* <TailwindIndicator /> */}
         </Providers>
       </body>

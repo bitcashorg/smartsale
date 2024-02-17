@@ -4,7 +4,7 @@ import Link, { LinkProps } from 'next/link'
 import { Button } from '@/components/ui/button'
 import { IconSeparator } from './ui/icons'
 import { ConnectButton } from '@rainbow-me/rainbowkit'
-import { ErrorModal } from '@/components/error-modal'
+
 
 export async function Header() {
   return (
@@ -16,11 +16,12 @@ export async function Header() {
           <HeaderLink href="/how-it-works" text="how it works" />
           <HeaderLink href="/security" text="security tips" />
           <HeaderLink href="/funding" text="funding" />
-          <HeaderLink href="https://bitcash-faucet.vercel.app/" text="usdcred faucet" />
-          <HeaderLink href="https://faucet.testnet.evm.eosnetwork.com/" text="eos faucet" />
+          {/* <HeaderLink href="https://bitcash-faucet.vercel.app/" text="usdcred faucet" />
+          <HeaderLink href="https://faucet.testnet.evm.eosnetwork.com/" text="eos faucet" /> */}
         </div>
         <div className="flex items-center justify-end space-x-2">
-          <ErrorModal />
+          $100 USD
+          <Button>Connect Bitcash App</Button>
           <React.Suspense fallback={<div className="flex-1 overflow-auto" />}>
             {/* <ThemeToggle/> */}
             <ConnectButton />
