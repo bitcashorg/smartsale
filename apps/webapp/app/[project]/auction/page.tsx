@@ -6,16 +6,8 @@ import { AuctionInfo } from '@/components/auction/auction-info'
 import { AuctionBids } from '@/components/auction/auction-bids'
 import { AuctionOrders } from '@/components/auction/auction-orders'
 import Image from 'next/image'
-import dynamic from 'next/dynamic'
+import { AuctionDebug } from '@/components/auction/auction-debug'
 
-const DynamicAuctionDebug = dynamic(
-  () =>
-    import('@/components/auction/auction-debug').then(mod => mod.AuctionDebug),
-  {
-    suspense: true,
-    ssr: false // Disable server-side rendering for this component
-  }
-)
 
 export default function AuctionPage({
   params
@@ -57,7 +49,11 @@ export default function AuctionPage({
         </div>
       </div>
 
-      <DynamicAuctionDebug auctionId={project.auctionId} />
+
+        <React.Suspense fallback={<div>Loading ...</div>}>
+            <AuctionDebug auctionId={project.auctionId} />
+        </React.Suspense>
+
     </>
   )
 }

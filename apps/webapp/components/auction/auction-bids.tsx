@@ -51,6 +51,7 @@ export function AuctionBids({ project }: AuctionBidsProps) {
 
     console.log('test', stringify(test))
 
+ 
     const { isBalanceSufficient, isAllowanceSufficient } =
       await checkBalanceAndAllowance({
         account: address,
@@ -59,8 +60,8 @@ export function AuctionBids({ project }: AuctionBidsProps) {
         tokenAddress: TestnetUSDCred.address
       })
 
-    if (!isBalanceSufficient)
-      return setGlobalError('Insuficient USDCred Balance')
+    if (!isBalanceSufficient) return setGlobalError('Insuficient USDCred Balance')
+
 
     if (!isAllowanceSufficient) {
       await writeContract(wagmiConfig, {
@@ -80,6 +81,7 @@ export function AuctionBids({ project }: AuctionBidsProps) {
     }
     console.log('place order', order)
 
+   // TODO: we may need to wait a couple seconds after calling approve
     placeBids({
       ...TestnetEasyAuction, // Ensure this contains the correct ABI and contract address
       functionName: 'placeSellOrders',
@@ -131,7 +133,7 @@ export function AuctionBids({ project }: AuctionBidsProps) {
     if(!err || !('shortMessage' in err) || err.shortMessage === errorMessage) return
     setGlobalError(err.shortMessage)
     tanstack.reset()
-  }, [tanstack.error,tanstack.reset, setGlobalError])
+  }, [tanstack, errorMessage, setGlobalError])
 
   return (
     <div>
