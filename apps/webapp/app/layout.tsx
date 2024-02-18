@@ -33,7 +33,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
               {children}
             </main>
           </div>
-                    <ErrorModal />
+          <ErrorModal />
           {/* <TailwindIndicator /> */}
         </Providers>
       </body>
