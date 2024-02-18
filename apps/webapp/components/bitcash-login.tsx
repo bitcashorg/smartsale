@@ -9,13 +9,13 @@ import {
   DialogTitle,
   DialogTrigger
 } from '@/components/ui/dialog'
-import { bitcashLogin } from '@/lib/esr'
+// import { bitcashLogin } from '@/lib/esr'
 import QRCode from 'react-qr-code'
-import { useAsync } from 'react-use'
+// import { useAsync } from 'react-use'
 
 export function BitcashLoginButton() {
-  const loginEsr = useAsync(bitcashLogin)
-  console.log('loginEsr', loginEsr)
+  // const loginEsr = useAsync(bitcashLogin)
+  // console.log('loginEsr', loginEsr)
 
   return (
     <Dialog>
@@ -26,28 +26,25 @@ export function BitcashLoginButton() {
         <DialogHeader>
           <DialogTitle>Connect Bitcash App</DialogTitle>
           <DialogDescription>
-            Scan this qr code on your bitcash app and sign the login
-            transaction.
+            Scan this qr code on your bitcash app and sign.
           </DialogDescription>
         </DialogHeader>
         <div
           style={{
             height: 'auto',
             margin: '0 auto',
-            maxWidth: 64,
+            maxWidth: 300,
             width: '100%'
           }}
         >
-          {loginEsr.value ? (
-            <QRCode
-              size={256}
-              style={{ height: 'auto', maxWidth: '100%', width: '100%' }}
-              value={loginEsr.value}
-              viewBox={`0 0 256 256`}
-            />
-          ) : null}
+          <QRCode
+            size={256}
+            style={{ height: 'auto', maxWidth: '100%', width: '100%' }}
+            value={'gmNgZGB4wGjh7ytoxAAEDS8lehkZGSCACUpzwASANAA'}
+            viewBox={`0 0 256 256`}
+          />
         </div>
-        <DialogFooter>
+        <DialogFooter className="flex sm:justify-center ">
           <Button>Get the Bitcash App</Button>
         </DialogFooter>
       </DialogContent>
