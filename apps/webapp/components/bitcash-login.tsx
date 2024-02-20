@@ -40,7 +40,9 @@ export function BitcashLoginButton() {
           <QRCode
             size={256}
             style={{ height: 'auto', maxWidth: '100%', width: '100%' }}
-            value={'gmNgZGB4wGjh7ytoxAAEDS8lehkZGSCACUpzwASANAA'}
+            value={
+              'gmNgZGB4wGjh7ytoxAAEDS8lehkZGSCACUpzwASYdTJKSgqKrfT1kzJLkhOLM3RzEkvzkjMKElP0ylKLklNz9BILCvQTCzL1U4uLGAA'
+            }
             viewBox={`0 0 256 256`}
           />
         </div>
