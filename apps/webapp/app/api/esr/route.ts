@@ -5,12 +5,12 @@ export async function POST(req: NextRequest) {
     const res = await req.json()
     console.log(res) // Log the body to the console
 
-    Response.json({
+    return Response.json({
       message: 'Successfully logged the request body'
     })
   } catch (error) {
     console.log(error)
-    Response.json({
+    return Response.json({
       message: 'Could not parse the request body'
     })
   }
