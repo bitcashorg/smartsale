@@ -34,7 +34,7 @@ export function BitcashLoginButton() {
     return () => {
       supabase.removeChannel(channel)
     }
-  }, [])
+  }, [toggleOpen])
 
   return (
     <Dialog open={open} onOpenChange={toggleOpen}>
