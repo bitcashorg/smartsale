@@ -9,15 +9,10 @@ import {
 } from '@/components/ui/table'
 import { useEffect, useState } from 'react'
 import { useAccount } from 'wagmi'
-import { createClient } from '@supabase/supabase-js'
 import Link from 'next/link'
 import { formatAddress } from '@/lib/utils'
 import { format } from 'date-fns'
-
-const supabase = createClient(
-  'https://dvpusrbojetnuwbkyhzj.supabase.co',
-  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImR2cHVzcmJvamV0bnV3Ymt5aHpqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDczNDE2NjcsImV4cCI6MjAyMjkxNzY2N30.bW2V9YKuBkEQzzQh0wDh1LYW2JP3mO4UaxnVoShCW3k'
-)
+import { supabase } from '@/lib/supabase'
 
 export function AuctionSessions() {
   const { address } = useAccount()

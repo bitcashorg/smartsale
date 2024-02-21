@@ -6,7 +6,7 @@ export async function POST(req: NextRequest) {
     const body = await req.json()
     console.log(body) // Log the body to the console
 
-    const response = db.session.create({
+    const response = await db.session.create({
       data: {
         tx: body.tx,
         account: body.sa

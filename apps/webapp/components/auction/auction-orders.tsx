@@ -9,17 +9,12 @@ import {
 } from '@/components/ui/table'
 import { useEffect, useState } from 'react'
 import { useAccount, useReadContract } from 'wagmi'
-import { createClient } from '@supabase/supabase-js'
 import Link from 'next/link'
 import { formatAddress } from '@/lib/utils'
 import { TestnetEasyAuction } from 'smartsale-contracts'
 import BN from 'bn.js'
-import { format } from 'date-fns';
-
-const supabase = createClient(
-  'https://dvpusrbojetnuwbkyhzj.supabase.co',
-  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImR2cHVzcmJvamV0bnV3Ymt5aHpqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDczNDE2NjcsImV4cCI6MjAyMjkxNzY2N30.bW2V9YKuBkEQzzQh0wDh1LYW2JP3mO4UaxnVoShCW3k'
-)
+import { format } from 'date-fns'
+import { supabase } from '@/lib/supabase'
 
 export function AuctionOrders() {
   const { address } = useAccount()
@@ -41,7 +36,7 @@ export function AuctionOrders() {
       .from('orders')
       .select('*')
       .eq('user_id', userId)
-      .order('created_at', { ascending: false });
+      .order('created_at', { ascending: false })
 
     if (error) return
     setOrders(data)
@@ -50,7 +45,9 @@ export function AuctionOrders() {
   useEffect(() => {
     if (!userId.data) return
     fetchOrders(new BN(userId.data!.toString()).toNumber())
-    console.log(`subscribing to supabase channel filtering by userId=${userId.data}`)
+    console.log(
+      `subscribing to supabase channel filtering by userId=${userId.data}`
+    )
     const channel = supabase
       .channel('*')
       .on(
@@ -58,17 +55,23 @@ export function AuctionOrders() {
         { event: 'INSERT', schema: 'public', table: 'orders' },
         payload => {
           // Check if the inserted order's user_id matches the desired userId
-          const isSameUserId = BigInt(payload.new.user_id) === BigInt(String(userId.data) || 0)
-          console.log('supabase payload.new', payload.new, userId.data,  isSameUserId)
-          if (!isSameUserId) return  
-          setOrders(orders =>{
+          const isSameUserId =
+            BigInt(payload.new.user_id) === BigInt(String(userId.data) || 0)
+          console.log(
+            'supabase payload.new',
+            payload.new,
+            userId.data,
+            isSameUserId
+          )
+          if (!isSameUserId) return
+          setOrders(orders => {
             console.log('setOrders', payload.new, orders[0])
-            return [payload.new,...orders]
+            return [payload.new, ...orders]
           })
         }
       )
       .subscribe()
-      console.log('subscribed to supabase...')
+    console.log('subscribed to supabase...')
 
     return () => {
       supabase.removeChannel(channel)
@@ -114,7 +117,7 @@ export function AuctionOrders() {
                 </Link>
               </TableCell>
               <TableCell>
-                 {format(new Date(order.created_at), 'MMMM d, yyyy \'at\' h:mm a')}
+                {format(new Date(order.created_at), "MMMM d, yyyy 'at' h:mm a")}
               </TableCell>
             </TableRow>
           ))}
