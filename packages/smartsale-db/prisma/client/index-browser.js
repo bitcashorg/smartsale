@@ -153,6 +153,13 @@ exports.Prisma.UsersScalarFieldEnum = {
   address: 'address'
 };
 
+exports.Prisma.SessionScalarFieldEnum = {
+  id: 'id',
+  created_at: 'created_at',
+  tx: 'tx',
+  account: 'account'
+};
+
 exports.Prisma.SortOrder = {
   asc: 'asc',
   desc: 'desc'
@@ -172,7 +179,8 @@ exports.Prisma.NullsOrder = {
 exports.Prisma.ModelName = {
   auction_details: 'auction_details',
   orders: 'orders',
-  users: 'users'
+  users: 'users',
+  session: 'session'
 };
 
 /**

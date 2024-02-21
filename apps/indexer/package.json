@@ -8,7 +8,6 @@
   "license": "UNLICENSED",
   "scripts": {
     "dev": "env-cmd nodemon --watch 'src/**' --ext 'ts' --exec 'ts-node src/index.ts' --trace-warnings",
-    "gen": "bunx prisma generate",
     "pull": "bunx prisma db pull && bunx prisma generate",
     "start": "env-cmd node ./dist",
     "build": "rimraf dist && bun run gen && tsc -b",
@@ -24,9 +23,7 @@
     "nodemon": "^3.0.3",
     "rimraf": "^5.0.5",
     "tsconfig": "workspace:*",
-    "typescript": "^5.3.3",
-    "@prisma/client": "latest",
-    "prisma": "^5.9.1"
+    "typescript": "^5.3.3"
   },
   "dependencies": {
     "@sentry/node": "^7.100.1",
@@ -36,6 +33,7 @@
     "smartsale-chains": "workspace:*",
     "smartsale-contracts": "workspace:*",
     "smartsale-lib": "workspace:*",
+    "smartsale-db": "workspace:*",
     "viem": "latest"
   }
 }

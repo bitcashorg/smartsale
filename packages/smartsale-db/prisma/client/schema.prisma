@@ -61,3 +61,10 @@ model users {
 
   @@id([id, created_at])
 }
+
+model session {
+  id         String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  created_at DateTime @default(now()) @db.Timestamptz(6)
+  tx         String   @unique
+  account    String
+}

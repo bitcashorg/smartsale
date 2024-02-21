@@ -2,12 +2,10 @@ import { Log, stringify } from 'viem'
 import { client } from './viem-client'
 import { TestnetEasyAuction } from 'smartsale-contracts'
 import { bigintToPostgresTimestamp, getEvents, getTokenDetails, runPromisesInSeries } from './lib'
-import { PrismaClient, Prisma } from '../prisma/client'
+import { db, Prisma } from 'smartsale-db'
 import { NewAuctionEvent, NewSellOrderEvent, NewUserEvent } from './types'
 import { eosEvmTestnet } from 'smartsale-chains'
 import BN from 'bn.js'
-
-const db = new PrismaClient()
 
 export async function startIndexer() {
   console.log('indexing starting')
