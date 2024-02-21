@@ -47,6 +47,7 @@
     "smartsale-chains": "workspace:*",
     "smartsale-contracts": "workspace:*",
     "smartsale-lib": "workspace:*",
+    "smartsale-db": "workspace:*",
     "viem": "latest",
     "wagmi": "latest"
   },
