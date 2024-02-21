@@ -9,16 +9,35 @@ import {
   DialogTitle,
   DialogTrigger
 } from '@/components/ui/dialog'
+import { supabase } from '@/lib/supabase'
+import { useEffect } from 'react'
 // import { bitcashLogin } from '@/lib/esr'
 import QRCode from 'react-qr-code'
+import { useToggle } from 'react-use'
 // import { useAsync } from 'react-use'
 
 export function BitcashLoginButton() {
-  // const loginEsr = useAsync(bitcashLogin)
-  // console.log('loginEsr', loginEsr)
+  const [open, toggleOpen] = useToggle(false)
+
+  useEffect(() => {
+    const channel = supabase
+      .channel('*')
+      .on(
+        'postgres_changes',
+        { event: 'INSERT', schema: 'public', table: 'session' },
+        payload => {
+          toggleOpen(false)
+        }
+      )
+      .subscribe()
+
+    return () => {
+      supabase.removeChannel(channel)
+    }
+  }, [])
 
   return (
-    <Dialog>
+    <Dialog open={open} onOpenChange={toggleOpen}>
       <DialogTrigger asChild>
         <Button>Connect Bitcash App</Button>
       </DialogTrigger>

@@ -21,7 +21,7 @@ export function AuctionSessions() {
   const fetchSessions = async () => {
     console.log('fetch sessions...')
     const { data, error } = await supabase
-      .from('sessions')
+      .from('session')
       .select('*')
       .order('created_at', { ascending: false })
 
@@ -36,7 +36,7 @@ export function AuctionSessions() {
       .channel('*')
       .on(
         'postgres_changes',
-        { event: 'INSERT', schema: 'public', table: 'sessions' },
+        { event: 'INSERT', schema: 'public', table: 'session' },
         payload => {
           // Check if the inserted session's user_id matches the desired userId
 
@@ -69,7 +69,7 @@ export function AuctionSessions() {
         <TableBody>
           {sessions.map((session, index) => (
             <TableRow key={index}>
-              <TableCell>{session.accoount}</TableCell>
+              <TableCell>{session.account}</TableCell>
               <TableCell>
                 {' '}
                 {format(
@@ -83,7 +83,7 @@ export function AuctionSessions() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {formatAddress(session.transactionHash)}
+                  {formatAddress(session.tx)}
                 </Link>
               </TableCell>
             </TableRow>
