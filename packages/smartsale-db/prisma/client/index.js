@@ -185,17 +185,13 @@ const config = {
         "fromEnvVar": null,
         "value": "darwin",
         "native": true
-      },
-      {
-        "fromEnvVar": null,
-        "value": "rhel-openssl-3.0.x"
       }
     ],
     "previewFeatures": [],
     "isCustomOutput": true
   },
   "relativeEnvPaths": {
-    "rootEnvPath": null,
+    "rootEnvPath": "../../.env",
     "schemaEnvPath": "../../.env"
   },
   "relativePath": "..",
@@ -214,8 +210,8 @@ const config = {
       }
     }
   },
-  "inlineSchema": "generator client {\n  provider      = \"prisma-client-js\"\n  output        = \"./client\"\n  binaryTargets = [\"native\", \"rhel-openssl-3.0.x\"]\n}\n\ndatasource db {\n  provider  = \"postgresql\"\n  url       = env(\"DATABASE_URL\")\n  directUrl = env(\"DIRECT_URL\")\n}\n\n/// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.\nmodel auction_details {\n  created_at                         DateTime  @default(now()) @db.Timestamptz(6)\n  exact_order_id                     BigInt\n  symbol_auctioning_token            String?\n  symbol_bidding_token               String?\n  address_auctioning_token           String?\n  address_bidding_token              String?\n  decimals_auctioning_token          Int?      @db.SmallInt\n  decimals_bidding_token             Int?      @db.SmallInt\n  end_time_timestamp                 DateTime? @db.Timestamp(6)\n  order_cancellation_end_date        DateTime? @db.Timestamp(6)\n  starting_time_stamp                DateTime? @db.Timestamp(6)\n  minimum_bidding_amount_per_order   BigInt?\n  min_funding_threshold              BigInt?\n  allow_list_manager                 String?\n  allow_list_signer                  String?\n  current_volume                     Int?\n  current_clearing_order_sell_amount BigInt?\n  current_clearing_order_buy_amount  BigInt?\n  current_clearing_price             Int?\n  current_bidding_amount             BigInt?\n  is_atomic_closure_allowed          Boolean?\n  is_private_auction                 Boolean?\n  interest_score                     Int?\n  usd_amount_traded                  Int?\n  chain_id                           BigInt\n\n  @@id([exact_order_id, chain_id])\n}\n\n/// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.\nmodel orders {\n  created_at      DateTime  @default(now()) @db.Timestamptz(6)\n  auction_id      BigInt\n  sell_amount     BigInt\n  buy_amount      BigInt\n  user_id         BigInt\n  price           Int?\n  volume          BigInt?\n  timestamp       DateTime? @db.Timestamp(6)\n  transactionHash String    @id\n}\n\n/// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.\nmodel users {\n  id         BigInt\n  created_at DateTime @default(now()) @db.Timestamptz(6)\n  address    String\n\n  @@id([id, created_at])\n}\n\nmodel session {\n  id         String   @id @default(dbgenerated(\"gen_random_uuid()\")) @db.Uuid\n  created_at DateTime @default(now()) @db.Timestamptz(6)\n  tx         String   @unique\n  account    String\n}\n",
-  "inlineSchemaHash": "33245303358d97c980aa665b92974a1b9a7d297c1d9da790485027573e42e89c",
+  "inlineSchema": "generator client {\n  provider      = \"prisma-client-js\"\n  output        = \"./client\"\n  // binaryTargets = [\"native\", \"rhel-openssl-3.0.x\"]\n}\n\ndatasource db {\n  provider  = \"postgresql\"\n  url       = env(\"DATABASE_URL\")\n  directUrl = env(\"DIRECT_URL\")\n}\n\n/// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.\nmodel auction_details {\n  created_at                         DateTime  @default(now()) @db.Timestamptz(6)\n  exact_order_id                     BigInt\n  symbol_auctioning_token            String?\n  symbol_bidding_token               String?\n  address_auctioning_token           String?\n  address_bidding_token              String?\n  decimals_auctioning_token          Int?      @db.SmallInt\n  decimals_bidding_token             Int?      @db.SmallInt\n  end_time_timestamp                 DateTime? @db.Timestamp(6)\n  order_cancellation_end_date        DateTime? @db.Timestamp(6)\n  starting_time_stamp                DateTime? @db.Timestamp(6)\n  minimum_bidding_amount_per_order   BigInt?\n  min_funding_threshold              BigInt?\n  allow_list_manager                 String?\n  allow_list_signer                  String?\n  current_volume                     Int?\n  current_clearing_order_sell_amount BigInt?\n  current_clearing_order_buy_amount  BigInt?\n  current_clearing_price             Int?\n  current_bidding_amount             BigInt?\n  is_atomic_closure_allowed          Boolean?\n  is_private_auction                 Boolean?\n  interest_score                     Int?\n  usd_amount_traded                  Int?\n  chain_id                           BigInt\n\n  @@id([exact_order_id, chain_id])\n}\n\n/// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.\nmodel orders {\n  created_at      DateTime  @default(now()) @db.Timestamptz(6)\n  auction_id      BigInt\n  sell_amount     BigInt\n  buy_amount      BigInt\n  user_id         BigInt\n  price           Int?\n  volume          BigInt?\n  timestamp       DateTime? @db.Timestamp(6)\n  transactionHash String    @id\n}\n\n/// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.\nmodel users {\n  id         BigInt\n  created_at DateTime @default(now()) @db.Timestamptz(6)\n  address    String\n\n  @@id([id, created_at])\n}\n\nmodel session {\n  id         String   @id @default(dbgenerated(\"gen_random_uuid()\")) @db.Uuid\n  created_at DateTime @default(now()) @db.Timestamptz(6)\n  tx         String   @unique\n  account    String\n}\n",
+  "inlineSchemaHash": "5ce02f38106a34f676b126f71df2b75f54192e2de516e3a88a6e46166a8e6d02",
   "copyEngine": true
 }
 
@@ -255,10 +251,6 @@ Object.assign(exports, Prisma)
 // file annotations for bundling tools to include these files
 path.join(__dirname, "libquery_engine-darwin.dylib.node");
 path.join(process.cwd(), "prisma/client/libquery_engine-darwin.dylib.node")
-
-// file annotations for bundling tools to include these files
-path.join(__dirname, "libquery_engine-rhel-openssl-3.0.x.so.node");
-path.join(process.cwd(), "prisma/client/libquery_engine-rhel-openssl-3.0.x.so.node")
 // file annotations for bundling tools to include these files
 path.join(__dirname, "schema.prisma");
 path.join(process.cwd(), "prisma/client/schema.prisma")
