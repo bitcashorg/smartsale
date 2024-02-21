@@ -9,6 +9,9 @@ export async function POST(req: NextRequest) {
       message: 'Successfully logged the request body'
     })
   } catch (error) {
-    throw new Error('Could not parse the request body')
+    console.log(error)
+    Response.json({
+      message: 'Could not parse the request body'
+    })
   }
 }
