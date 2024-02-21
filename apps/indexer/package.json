@@ -8,7 +8,6 @@
   "license": "UNLICENSED",
   "scripts": {
     "dev": "env-cmd nodemon --watch 'src/**' --ext 'ts' --exec 'ts-node src/index.ts' --trace-warnings",
-    "pull": "bunx prisma db pull && bunx prisma generate",
     "start": "env-cmd node ./dist",
     "build": "rimraf dist && bun run gen && tsc -b",
     "lint": "eslint --ignore-path .gitignore \"**/*.+(js|ts|tsx)\" --fix",
