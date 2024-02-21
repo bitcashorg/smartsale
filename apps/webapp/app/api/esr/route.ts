@@ -1,7 +1,7 @@
 // pages/api/logPostBody.ts
 import type { NextApiRequest, NextApiResponse } from 'next'
 
-export default async function POST(req: NextApiRequest, res: NextApiResponse) {
+export async function POST(req: NextApiRequest, res: NextApiResponse) {
   try {
     const body = req.body
     console.log(body) // Log the body to the console
