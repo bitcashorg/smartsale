@@ -66,8 +66,13 @@
       "import": "./runtime/binary.js",
       "default": "./runtime/binary.js"
     },
+    "./generator-build": {
+      "require": "./generator-build/index.js",
+      "import": "./generator-build/index.js",
+      "default": "./generator-build/index.js"
+    },
     "./*": "./*"
   },
-  "version": "5.9.1",
+  "version": "5.10.1",
   "sideEffects": false
 }
