@@ -7,7 +7,7 @@ import { AuctionBids } from '@/components/auction/auction-bids'
 import { AuctionOrders } from '@/components/auction/auction-orders'
 import Image from 'next/image'
 import { AuctionDebug } from '@/components/auction/auction-debug'
-
+import { AuctionSessions } from '@/components/auction/auction-sessions'
 
 export default function AuctionPage({
   params
@@ -44,16 +44,15 @@ export default function AuctionPage({
             </div>
           </div>
           <React.Suspense fallback={<div>Loading ...</div>}>
+            <AuctionSessions />
             <AuctionOrders />
           </React.Suspense>
         </div>
       </div>
 
-
-        <React.Suspense fallback={<div>Loading ...</div>}>
-            <AuctionDebug auctionId={project.auctionId} />
-        </React.Suspense>
-
+      <React.Suspense fallback={<div>Loading ...</div>}>
+        <AuctionDebug auctionId={project.auctionId} />
+      </React.Suspense>
     </>
   )
 }
