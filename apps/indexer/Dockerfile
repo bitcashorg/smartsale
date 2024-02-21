@@ -10,6 +10,7 @@ COPY apps/indexer/package.json ./apps/indexer/package.json
 COPY packages/smartsale-chains/package.json ./packages/smartsale-chains/package.json
 COPY packages/smartsale-contracts/package.json ./packages/smartsale-contracts/package.json
 COPY packages/smartsale-lib/package.json ./packages/smartsale-lib/package.json
+COPY packages/smartsale-db/package.json ./packages/smartsale-db/package.json
 COPY packages/tsconfig/package.json ./packages/tsconfig/package.json
 
 # Copy the lock file
@@ -25,6 +26,6 @@ COPY packages/ ./packages/
 
 # Set the working directory to your specific workspace
 WORKDIR /app/apps/indexer
-RUN bunx prisma generate
+
 EXPOSE 8080
 CMD ["bun", "src/index.ts"]
