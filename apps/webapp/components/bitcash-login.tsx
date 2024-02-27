@@ -9,6 +9,7 @@ import {
   DialogTitle,
   DialogTrigger
 } from '@/components/ui/dialog'
+import { useSession } from '@/hooks/use-session'
 import { supabase } from '@/lib/supabase'
 import { useEffect } from 'react'
 // import { bitcashLogin } from '@/lib/esr'
@@ -18,23 +19,16 @@ import { useToggle } from 'react-use'
 
 export function BitcashLoginButton() {
   const [open, toggleOpen] = useToggle(false)
+  const { session } = useSession()
 
   useEffect(() => {
-    const channel = supabase
-      .channel('*')
-      .on(
-        'postgres_changes',
-        { event: 'INSERT', schema: 'public', table: 'session' },
-        payload => {
-          toggleOpen(false)
-        }
-      )
-      .subscribe()
+    console.log('😬 closing login button')
+    toggleOpen(false)
+  }, [session, toggleOpen])
 
-    return () => {
-      supabase.removeChannel(channel)
-    }
-  }, [toggleOpen])
+  console.log('session', session)
+
+  if (session) return <Button>{session.account}</Button>
 
   return (
     <Dialog open={open} onOpenChange={toggleOpen}>
