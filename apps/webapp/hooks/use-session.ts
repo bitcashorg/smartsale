@@ -29,5 +29,7 @@ export function useSession() {
     }
   }, [setSession])
 
+  console.log({ loginSR })
+
   return { newSessionId, session, loginUri: loginSR?.value?.encode() }
 }

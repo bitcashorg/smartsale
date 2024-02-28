@@ -20,6 +20,8 @@ export function BitcashLoginButton() {
   const [open, toggleOpen] = useToggle(false)
   const { session, loginUri } = useSession()
 
+  console.log({ loginUri })
+
   useEffect(() => {
     console.log('😬 closing login button')
     toggleOpen(false)

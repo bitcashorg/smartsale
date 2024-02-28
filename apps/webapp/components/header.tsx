@@ -3,8 +3,7 @@ import Link, { LinkProps } from 'next/link'
 
 import { Button } from '@/components/ui/button'
 import { IconSeparator } from './ui/icons'
-import { ConnectButton } from '@rainbow-me/rainbowkit'
-import { BitcashLoginButton } from './bitcash-login'
+import { HeaderButtons } from './header-buttons'
 
 export async function Header() {
   return (
@@ -19,14 +18,11 @@ export async function Header() {
           {/* <HeaderLink href="https://bitcash-faucet.vercel.app/" text="usdcred faucet" />
           <HeaderLink href="https://faucet.testnet.evm.eosnetwork.com/" text="eos faucet" /> */}
         </div>
-        <div className="flex items-center justify-end space-x-2">
-          $100 &nbsp;
-          <React.Suspense fallback={<div className="flex-1 overflow-auto" />}>
-            {/* <ThemeToggle/> */}
-            <BitcashLoginButton />
-            <ConnectButton />
-          </React.Suspense>
-        </div>
+        <React.Suspense
+          fallback={<div className="flex items-center justify-end space-x-2" />}
+        >
+          <HeaderButtons />
+        </React.Suspense>
       </div>
     </header>
   )
