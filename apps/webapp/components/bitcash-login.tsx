@@ -10,6 +10,7 @@ import {
   DialogTrigger
 } from '@/components/ui/dialog'
 import { useSession } from '@/hooks/use-session'
+import Link from 'next/link'
 import { useEffect } from 'react'
 // import { bitcashLogin } from '@/lib/esr'
 import QRCode from 'react-qr-code'
@@ -27,7 +28,12 @@ export function BitcashLoginButton() {
     toggleOpen(false)
   }, [session, toggleOpen])
 
-  if (session) return <Button>{session.account}</Button>
+  if (session)
+    return (
+      <Link href="/wallet" shallow>
+        <Button>{session.account}</Button>
+      </Link>
+    )
 
   return (
     <Dialog open={open} onOpenChange={toggleOpen}>

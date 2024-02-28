@@ -31,19 +31,22 @@ export function DepositCard() {
       </CardHeader> */}
       <CardContent>
         <div className="flex flex-col space-y-4">
+          <div className="text-sm">Deposit to get USDCred</div>
           <div className="flex items-center justify-between">
-            <div className="flex flex-col">
-              <span className="text-sm">You pay</span>
-              <span className="text-2xl font-semibold">718.708</span>
-              <span className="text-sm">$1,400.01</span>
+            <div className="flex flex-col min-w-[50%]">
+              <span className="text-2xl font-semibold">718 USDT</span>
             </div>
             <Select>
               <SelectTrigger id="currency-out">
-                <SelectValue placeholder="RAD" />
+                <SelectValue placeholder="ETHEREUM" />
                 <ChevronDownIcon className="text-white" />
               </SelectTrigger>
               <SelectContent position="popper">
-                <SelectItem value="rad">RAD</SelectItem>
+                <SelectItem value="rad">ETHEREUM</SelectItem>
+                <SelectItem value="rad">ARBITRUM</SelectItem>
+                <SelectItem value="rad">POLYGON</SelectItem>
+                <SelectItem value="rad">AVALANCHE</SelectItem>
+                <SelectItem value="rad">EOS</SelectItem>
               </SelectContent>
             </Select>
           </div>
@@ -83,7 +86,7 @@ export function DepositCard() {
             </SelectContent>
           </Select>
         </div> */}
-        <Button className="w-full bg-[#bd1e59]">Swap</Button>
+        <Button className="w-full bg-[#bd1e59]">Deposit</Button>
       </CardFooter>
     </Card>
   )

@@ -11,7 +11,7 @@ export function HeaderButtons() {
       $100 &nbsp;
       {/* <ThemeToggle/> */}
       <BitcashLoginButton />
-      {session ? <ConnectButton /> : null}
+      {session ? <ConnectButton showBalance={false} /> : null}
     </div>
   )
 }
