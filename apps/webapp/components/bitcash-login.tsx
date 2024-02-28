@@ -53,7 +53,7 @@ export function BitcashLoginButton() {
             <QRCode
               size={256}
               style={{ height: 'auto', maxWidth: '100%', width: '100%' }}
-              value={loginUri}
+              value={loginUri.replace('esr://', '')}
               viewBox={`0 0 256 256`}
             />
           </div>

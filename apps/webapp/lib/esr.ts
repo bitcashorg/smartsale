@@ -43,10 +43,13 @@ export async function genLoginSigningRequest(
       },
       info: {
         uuid
+      },
+      callback: {
+        url: 'https://bitcash-launchpad.vercel.app/api/esr',
+        background: true
       }
     },
     esrOptions
   )
-  console.log('request', req, req.encode())
   return req
 }
