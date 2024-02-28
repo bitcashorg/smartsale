@@ -9,6 +9,7 @@ import { eosEvmTestnet } from 'smartsale-chains'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { getDefaultConfig, RainbowKitProvider } from '@rainbow-me/rainbowkit'
 import { GlobalDataProvider } from '@/hooks/use-global-data'
+import { SessionProvider } from '@/hooks/use-session'
 const queryClient = new QueryClient()
 
 export const wagmiConfig = getDefaultConfig({
@@ -19,16 +20,18 @@ export const wagmiConfig = getDefaultConfig({
 
 export function Providers({ children, ...props }: ThemeProviderProps) {
   return (
-    <NextThemesProvider {...props}>
-      <GlobalDataProvider>
-        <TooltipProvider>
-          <QueryClientProvider client={queryClient}>
-            <WagmiProvider config={wagmiConfig}>
-              <RainbowKitProvider>{children}</RainbowKitProvider>
-            </WagmiProvider>
-          </QueryClientProvider>
-        </TooltipProvider>
-      </GlobalDataProvider>
-    </NextThemesProvider>
+    <SessionProvider>
+      <NextThemesProvider {...props}>
+        <GlobalDataProvider>
+          <TooltipProvider>
+            <QueryClientProvider client={queryClient}>
+              <WagmiProvider config={wagmiConfig}>
+                <RainbowKitProvider>{children}</RainbowKitProvider>
+              </WagmiProvider>
+            </QueryClientProvider>
+          </TooltipProvider>
+        </GlobalDataProvider>
+      </NextThemesProvider>
+    </SessionProvider>
   )
 }
