@@ -35,7 +35,7 @@ export default function WalletPage() {
   )
 }
 
-export function WalletBalances() {
+function WalletBalances() {
   return (
     <Table>
       <TableCaption>Your balances</TableCaption>
