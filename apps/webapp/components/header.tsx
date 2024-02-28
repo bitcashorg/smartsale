@@ -14,7 +14,7 @@ export async function Header() {
           <IconSeparator className="size-6 text-muted-foreground/50" />
           <HeaderLink href="/how-it-works" text="how it works" />
           <HeaderLink href="/security" text="security tips" />
-          <HeaderLink href="/funding" text="funding" />
+          <HeaderLink href="/wallet" text="wallet" />
           {/* <HeaderLink href="https://bitcash-faucet.vercel.app/" text="usdcred faucet" />
           <HeaderLink href="https://faucet.testnet.evm.eosnetwork.com/" text="eos faucet" /> */}
         </div>
