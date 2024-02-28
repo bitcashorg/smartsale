@@ -10,7 +10,6 @@ import {
   DialogTrigger
 } from '@/components/ui/dialog'
 import { useSession } from '@/hooks/use-session'
-import { supabase } from '@/lib/supabase'
 import { useEffect } from 'react'
 // import { bitcashLogin } from '@/lib/esr'
 import QRCode from 'react-qr-code'
@@ -19,14 +18,12 @@ import { useToggle } from 'react-use'
 
 export function BitcashLoginButton() {
   const [open, toggleOpen] = useToggle(false)
-  const { session } = useSession()
+  const { session, loginUri } = useSession()
 
   useEffect(() => {
     console.log('😬 closing login button')
     toggleOpen(false)
   }, [session, toggleOpen])
-
-  console.log('session', session)
 
   if (session) return <Button>{session.account}</Button>
 
@@ -42,23 +39,23 @@ export function BitcashLoginButton() {
             Scan this qr code on your bitcash app and sign.
           </DialogDescription>
         </DialogHeader>
-        <div
-          style={{
-            height: 'auto',
-            margin: '0 auto',
-            maxWidth: 300,
-            width: '100%'
-          }}
-        >
-          <QRCode
-            size={256}
-            style={{ height: 'auto', maxWidth: '100%', width: '100%' }}
-            value={
-              'gmNgZGB4wGjh7ytoxAAEDS8lehkZGSCACUpzwASYdTJKSgqKrfT1kzJLkhOLM3RzEkvzkjMKElP0ylKLklNz9BILCvQTCzL1U4uLGAA'
-            }
-            viewBox={`0 0 256 256`}
-          />
-        </div>
+        {loginUri ? (
+          <div
+            style={{
+              height: 'auto',
+              margin: '0 auto',
+              maxWidth: 300,
+              width: '100%'
+            }}
+          >
+            <QRCode
+              size={256}
+              style={{ height: 'auto', maxWidth: '100%', width: '100%' }}
+              value={loginUri}
+              viewBox={`0 0 256 256`}
+            />
+          </div>
+        ) : null}
         <DialogFooter className="flex sm:justify-center ">
           <Button>Get the Bitcash App</Button>
         </DialogFooter>

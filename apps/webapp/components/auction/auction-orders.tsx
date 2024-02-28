@@ -28,8 +28,6 @@ export function AuctionOrders() {
     }
   })
 
-  // console.log(orders)
-
   const fetchOrders = async (userId: number) => {
     console.log('fetch orders...')
     const { data, error } = await supabase

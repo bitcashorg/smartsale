@@ -1,13 +1,10 @@
 'use client'
 
 import { APIClient } from '@wharfkit/antelope'
-
 import {
   AbiProvider,
   SigningRequest,
-  SigningRequestEncodingOptions,
-  ZlibProvider
-  // ZlibProvider
+  SigningRequestEncodingOptions
 } from 'eosio-signing-request'
 import pako from 'pako'
 
@@ -15,23 +12,16 @@ const eos = new APIClient({
   url: 'https://eos.greymass.com'
 })
 
-const options: SigningRequestEncodingOptions = {
+export const esrOptions: SigningRequestEncodingOptions = {
   abiProvider: {
     getAbi: async account => await eos.v1.chain.get_abi(account.toString())
   } as AbiProvider,
-  // zlib string compression (optional, recommended)
-  // zlib: {
-  //     deflateRaw: (data) => new Uint8Array(zlib.deflateRawSync(Buffer.from(data))),
-  //     inflateRaw: (data) => new Uint8Array(zlib.inflateRawSync(Buffer.from(data))),
-  // },
-  zlib: {
-    deflateRaw: data => new Uint8Array(pako.deflate(Buffer.from(data))),
-    inflateRaw: data => new Uint8Array(pako.inflate(Buffer.from(data)))
-  } as ZlibProvider
+  zlib: pako
 }
 
-export async function bitcashLogin() {
-  console.log('bitcash login')
+export async function genLoginSigningRequest(
+  uuid: string = crypto.randomUUID()
+) {
   const req = await SigningRequest.create(
     {
       action: {
@@ -46,10 +36,13 @@ export async function bitcashLogin() {
         data: {
           account: '............1'
         }
+      },
+      info: {
+        uuid
       }
     },
-    options
+    esrOptions
   )
   console.log('request', req, req.encode())
-  return req.encode()
+  return req
 }

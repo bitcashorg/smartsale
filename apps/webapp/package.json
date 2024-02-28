@@ -46,8 +46,8 @@
     "react-use": "^17.5.0",
     "smartsale-chains": "workspace:*",
     "smartsale-contracts": "workspace:*",
-    "smartsale-lib": "workspace:*",
     "smartsale-db": "workspace:*",
+    "smartsale-lib": "workspace:*",
     "viem": "latest",
     "wagmi": "latest"
   },
