@@ -15,7 +15,7 @@ const eos = new APIClient({
   url: 'https://eos.greymass.com'
 })
 
-export const esrNodeJSOptions: SigningRequestEncodingOptions = {
+const esrNodeJSOptions: SigningRequestEncodingOptions = {
   abiProvider: {
     getAbi: async account => {
       const response = await eos.v1.chain.get_abi(account.toString())
