@@ -67,7 +67,9 @@ export function BitcashLoginButton() {
           </div>
         ) : null}
         <DialogFooter className="flex sm:justify-center ">
-          <Button>Get Bitcash App</Button>
+          <Link href={'https://app.bitcash.org/?share=JVnL7qzrU '}>
+            <Button>Get Bitcash App</Button>
+          </Link>
           <Button>Sign on Desktop</Button>
         </DialogFooter>
       </DialogContent>
