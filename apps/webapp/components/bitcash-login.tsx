@@ -31,7 +31,7 @@ export function BitcashLoginButton() {
   if (session)
     return (
       <Link href="/wallet" shallow>
-        <Button>{session.account}</Button>
+        <Button>{session.account} - $100</Button>
       </Link>
     )
 

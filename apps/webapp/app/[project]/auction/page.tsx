@@ -7,6 +7,7 @@ import { AuctionBids } from '@/components/auction/auction-bids'
 import { AuctionOrders } from '@/components/auction/auction-orders'
 import Image from 'next/image'
 import { AuctionDebug } from '@/components/auction/auction-debug'
+import { RegisterAddress } from '@/components/register-address'
 
 export default function AuctionPage({
   params
@@ -14,7 +15,7 @@ export default function AuctionPage({
   params: { project: string }
 }) {
   const p = projects.find(p => p.slug == params.project)
-  if (!p || !p.auctionId) redirect('/')
+  if (!p || (!p.auctionId && !p.registrationOpen)) redirect('/')
   const project = p as ProjectWithAuction
 
   return (
@@ -34,23 +35,35 @@ export default function AuctionPage({
 
               <AuctionInfo project={project} />
 
-              <Countdown auctionId={project.auctionId} />
+              {project.auctionId ? (
+                <Countdown auctionId={project.auctionId} />
+              ) : (
+                <div>auction id missing</div>
+              )}
             </div>
             <div className="w-full md:w-1/3">
               <React.Suspense fallback={<div>Loading ...</div>}>
-                <AuctionBids project={project} />
+                {project.registrationOpen ? (
+                  <RegisterAddress />
+                ) : (
+                  <AuctionBids project={project} />
+                )}
               </React.Suspense>
             </div>
           </div>
-          <React.Suspense fallback={<div>Loading ...</div>}>
-            <AuctionOrders />
-          </React.Suspense>
+
+          {project.auctionId ? (
+            <React.Suspense fallback={<div>Loading ...</div>}>
+              <AuctionOrders />
+            </React.Suspense>
+          ) : null}
         </div>
       </div>
-
-      <React.Suspense fallback={<div>Loading ...</div>}>
-        <AuctionDebug auctionId={project.auctionId} />
-      </React.Suspense>
+      {project.auctionId ? (
+        <React.Suspense fallback={<div>Loading ...</div>}>
+          <AuctionDebug auctionId={project.auctionId} />
+        </React.Suspense>
+      ) : null}
     </>
   )
 }

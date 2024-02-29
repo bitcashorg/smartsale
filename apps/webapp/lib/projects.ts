@@ -11,7 +11,8 @@ export const projects: Project[] = [
     badgeText: 'PRE-SALE ACTIVE',
     linkPath: '/masterbots',
     auctionId: 8,
-    token: TestnetMBOTSPL
+    token: TestnetMBOTSPL,
+    presaleOpen: true
   },
   {
     title: 'WizartWorld',
@@ -21,7 +22,10 @@ export const projects: Project[] = [
     maxAllocation: 'TBA',
     heroImage: '/images/projects/wizartworld.png',
     badgeText: 'REGISTRATION OPEN',
-    linkPath: '/wizard-world'
+    linkPath: '/wizartworld',
+    token: TestnetMBOTSPL,
+    auctionId: 8,
+    registrationOpen: true
   },
   {
     title: 'Bitcash Bank',
@@ -46,6 +50,8 @@ export interface Project {
   linkPath: string
   auctionId?: number
   token?: ERC20ContractData
+  presaleOpen?: boolean
+  registrationOpen?: boolean
 }
 
 export type ProjectWithAuction = Required<

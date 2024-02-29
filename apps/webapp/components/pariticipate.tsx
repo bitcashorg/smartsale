@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button'
+import Link from 'next/link'
 
 function WalletIcon({ className }: IconProps) {
   return (
@@ -44,7 +45,11 @@ export default function Participate() {
                 {step.description}
               </p>
               {step.buttonText && (
-                <Button className="mt-2 bg-[#7f5af0]">{step.buttonText}</Button>
+                <Link href={step.href} shallow>
+                  <Button className="mt-2 bg-[#7f5af0]">
+                    {step.buttonText}
+                  </Button>
+                </Link>
               )}
             </div>
           </div>
@@ -64,21 +69,24 @@ const textContent = {
       title: 'Complete KYC',
       description:
         "It's a simple step to ensure your participation, create a bitcash account to complete this step.",
-      buttonText: 'Register'
+      buttonText: 'Register',
+      href: 'https://app.bitcash.org/?share=JVnL7qzrU'
     },
     {
       icon: WalletIcon,
       title: 'Get USD Credits',
       description:
         'Deposit USDT on any chain to get USD Credit Tokens on EOS EVM',
-      buttonText: 'Get Credits'
+      buttonText: 'Get Credits',
+      href: '/wallet'
     },
     {
       icon: HeartHandshakeIcon,
       title: 'Place Bids',
       description:
         'Select a project from the Auctions list and place your bids.',
-      buttonText: 'MBOTS Auction'
+      buttonText: 'MBOTS Auction',
+      href: '/masterbots/auction'
     }
   ]
 }
