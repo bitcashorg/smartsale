@@ -53,7 +53,9 @@ export function BitcashLoginButton() {
               height: 'auto',
               margin: '0 auto',
               maxWidth: 300,
-              width: '100%'
+              width: '100%',
+              background: 'white',
+              padding: 10
             }}
           >
             <QRCode
