@@ -67,7 +67,8 @@ export function BitcashLoginButton() {
           </div>
         ) : null}
         <DialogFooter className="flex sm:justify-center ">
-          <Button>Get the Bitcash App</Button>
+          <Button>Get Bitcash App</Button>
+          <Button>Sign on Desktop</Button>
         </DialogFooter>
       </DialogContent>
     </Dialog>
