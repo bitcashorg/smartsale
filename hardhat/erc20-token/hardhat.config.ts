@@ -15,5 +15,10 @@ module.exports = {
       url: "https://api.evm.eosnetwork.com",
       chainId: 17777
     },
+    sepolia: {
+      accounts: [process.env.PK],
+      url: "https://rpc.sepolia.org",
+      chainId: 11155111
+    },
   }
 };

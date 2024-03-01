@@ -1,7 +1,7 @@
 
 import { FaucetForm } from './components/faucet-form';
 import { useUsdtBalance } from './hooks/use-usdt-balance';
-import { TestnetUSDCred, TestnetMBOTSPL } from 'smartsale-contracts';
+import { TestnetUSDCred, TestnetMBOTSPL, SepoliaUSDT } from 'smartsale-contracts';
 import { AddTokenToWallet } from './components/add-token-to-metamask';
 import { Button } from './components/ui/button';
 import { ConnectButton } from '@rainbow-me/rainbowkit';
@@ -12,13 +12,12 @@ export default function Component() {
         <div className="min-h-screen bg-[#f0f0f0]">
       <nav className="flex items-center justify-between p-6 bg-white shadow-md">
         <div className="flex items-center">
-          <span className="text-xl font-semibold">SmartSale USD Credits Faucet</span>
+          <span className="text-xl font-semibold">SmartSale Faucet</span>
         </div>
         <div className='flex'>
           <div className='flex items-center justify-center h-10 pr-5 font-bold'>
-              USD Credits ${balance}
+            USD Cred ${balance}
           </div>
-          
           <ConnectButton/>
         </div>
 
@@ -30,6 +29,7 @@ export default function Component() {
       <div className='flex gap-5 p-10'>
         <AddTokenToWallet {...TestnetUSDCred} />
         <AddTokenToWallet {...TestnetMBOTSPL} />
+        <AddTokenToWallet {...SepoliaUSDT} />
       </div>
 
       <div className='gap-5 p-10 '>
@@ -40,4 +40,7 @@ export default function Component() {
     </div>
   )
 }
+
+
+
 

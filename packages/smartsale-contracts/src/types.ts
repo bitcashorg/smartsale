@@ -10,4 +10,5 @@ export interface ERC20ContractData extends ContractData {
   symbol: string;
   decimals: number;
   image?: string;
+  chainId?: number
 }

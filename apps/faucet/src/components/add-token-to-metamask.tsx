@@ -1,27 +1,27 @@
 import { ERC20ContractData } from "smartsale-contracts";
+import { useSwitchChain } from "wagmi";
 
 
-export function AddTokenToWallet({ address, symbol, decimals, image, name }: ERC20ContractData){
+export function AddTokenToWallet({ address, symbol, decimals, image, name, chainId }: ERC20ContractData){
+    const {  switchChain } = useSwitchChain()
   // console.log({ address, symbol, decimals, image, name })
   const addTokenToMetaMask = async () => {
     try {
-      if (window.ethereum && window.ethereum.isMetaMask) {
-        await window.ethereum.request({
-          method: 'wallet_watchAsset',
-          params: {
-            type: 'ERC20',
-            options: {
-              address,
-              symbol,
-              decimals,
-              image
-            },
+      if (!window.ethereum && !window.ethereum.isMetaMask)  alert('MetaMask is not installed');
+      if (chainId) await switchChain({chainId})
+      await window.ethereum.request({
+        method: 'wallet_watchAsset',
+        params: {
+          type: 'ERC20',
+          options: {
+            address,
+            symbol,
+            decimals,
+            image
           },
-        });
-        alert('Token added to MetaMask');
-      } else {
-        alert('MetaMask is not installed');
-      }
+        },
+      });
+      alert('Token added to MetaMask');
     } catch (error) {
       console.error('Error adding token to MetaMask', error);
       alert('Error adding token to MetaMask');
