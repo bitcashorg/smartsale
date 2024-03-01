@@ -10,7 +10,9 @@ export function HeaderButtons() {
     <div className="flex items-center justify-end space-x-2">
       {/* <ThemeToggle/> */}
       <BitcashLoginButton />
-      {session ? <ConnectButton showBalance={false} /> : null}
+      {session ? (
+        <ConnectButton chainStatus="none" showBalance={false} />
+      ) : null}
     </div>
   )
 }

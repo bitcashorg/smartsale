@@ -1,16 +1,7 @@
-import { DepositCard } from '@/components/deposit-card'
 import React from 'react'
-import {
-  Table,
-  TableBody,
-  TableCaption,
-  TableCell,
-  TableFooter,
-  TableHead,
-  TableHeader,
-  TableRow
-} from '@/components/ui/table'
+import { DepositCard } from '@/components/wallet/deposit-card'
 import { AuctionOrders } from '@/components/auction/auction-orders'
+import { WalletBalances } from '@/components/wallet/wallet-balances'
 
 export default function WalletPage() {
   return (
@@ -34,56 +25,3 @@ export default function WalletPage() {
     </>
   )
 }
-
-function WalletBalances() {
-  return (
-    <Table>
-      <TableCaption>Your balances</TableCaption>
-      <TableHeader>
-        <TableRow>
-          <TableHead>Coin</TableHead>
-          <TableHead>Network</TableHead>
-          <TableHead className="text-right">Balance</TableHead>
-        </TableRow>
-      </TableHeader>
-      <TableBody>
-        {coins.map(coin => (
-          <TableRow key={coin.coin}>
-            <TableCell className="font-medium">{coin.coin}</TableCell>
-            <TableCell>{coin.nertwork}</TableCell>
-            <TableCell className="text-right">{coin.totalAmount}</TableCell>
-          </TableRow>
-        ))}
-      </TableBody>
-      {/* <TableFooter>
-        <TableRow>
-          <TableCell colSpan={3}>Total</TableCell>
-          <TableCell className="text-right">$2,500.00</TableCell>
-        </TableRow>
-      </TableFooter> */}
-    </Table>
-  )
-}
-
-const coins = [
-  {
-    coin: 'USDCred',
-    totalAmount: '250.00',
-    nertwork: 'EOS EVM'
-  },
-  {
-    coin: 'EOS (gas)',
-    totalAmount: '3.5',
-    nertwork: 'EOS EVM'
-  },
-  {
-    coin: 'BITUSD',
-    totalAmount: '350.00',
-    nertwork: 'EOS Mainnet'
-  },
-  {
-    coin: 'EOS (gas)',
-    totalAmount: '6.3',
-    nertwork: 'EOS Mainnet'
-  }
-]

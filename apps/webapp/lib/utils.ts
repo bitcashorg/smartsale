@@ -101,24 +101,6 @@ export function toSmallestUnit(value: string | number, decimals: number = 18) {
   return BigInt(amountInBaseUnit.toString())
 }
 
-// export async function getTokenDetails({ address }: { address: Address }) {
-//   const results = await multicall({
-//     contracts: [
-//       {
-//         address,
-//         abi: erc20Abi,
-//         functionName: 'decimals',
-//         args: [],
-//       },
-//       {
-//         address,
-//         abi: erc20Abi,
-//         functionName: 'symbol',
-//         args: [],
-//       },
-//     ],
-//     multicallAddress: '0xcA11bde05977b3631167028862bE2a173976CA11',
-//   })
-
-//   return { address, decimals: Number(results[0].result), symbol: String(results[1].result) }
-// }
+export function numberWithCommas(x: number | string) {
+  return x.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ',')
+}

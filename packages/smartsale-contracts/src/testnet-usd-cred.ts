@@ -306,5 +306,5 @@ export const TestnetUSDCred : ERC20ContractData = {
       "stateMutability": "nonpayable",
       "type": "function"
     }
-  ]
-}
+  ] as const
+} as const

@@ -9,19 +9,26 @@ import {
   DialogTitle,
   DialogTrigger
 } from '@/components/ui/dialog'
+import { useErc20Balance } from '@/hooks/use-balance'
 import { useSession } from '@/hooks/use-session'
 import Link from 'next/link'
 import { useEffect } from 'react'
 // import { bitcashLogin } from '@/lib/esr'
 import QRCode from 'react-qr-code'
 import { useToggle } from 'react-use'
+import { TestnetUSDCred } from 'smartsale-contracts'
+import { useAccount } from 'wagmi'
+
 // import { useAsync } from 'react-use'
 
 export function BitcashLoginButton() {
   const [open, toggleOpen] = useToggle(false)
   const { session, loginUri } = useSession()
-
-  console.log({ loginUri })
+  const { address } = useAccount()
+  const balance = useErc20Balance({
+    contract: TestnetUSDCred.address,
+    address: address || '0x'
+  })
 
   useEffect(() => {
     console.log('😬 closing login button')
@@ -31,7 +38,9 @@ export function BitcashLoginButton() {
   if (session)
     return (
       <Link href="/wallet" shallow>
-        <Button>{session.account} - $100</Button>
+        <Button>
+          {session.account} - ${balance.formatted}
+        </Button>
       </Link>
     )
 
