@@ -10,7 +10,8 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { getDefaultConfig, RainbowKitProvider } from '@rainbow-me/rainbowkit'
 import { GlobalDataProvider } from '@/hooks/use-global-data'
 import { SessionProvider } from '@/hooks/use-session'
-import { sepolia } from 'viem/chains'
+import { sepolia } from 'wagmi/chains'
+
 const queryClient = new QueryClient()
 
 export const wagmiConfig = getDefaultConfig({
