@@ -1,7 +1,7 @@
 'use client'
 
 import { Button } from '@/components/ui/button'
-import { CardHeader, CardContent, CardFooter, Card } from '@/components/ui/card'
+import { CardContent, CardFooter, Card } from '@/components/ui/card'
 import {
   SelectValue,
   SelectTrigger,
@@ -12,7 +12,7 @@ import {
 import { Input } from '../ui/input'
 import { useSession } from '@/hooks/use-session'
 import { useAccount, useWriteContract } from 'wagmi'
-import { erc20Abi } from 'viem'
+import { erc20Abi } from 'abitype/abis'
 import { useState } from 'react'
 import { sepolia } from 'viem/chains'
 

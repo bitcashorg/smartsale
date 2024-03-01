@@ -1,5 +1,6 @@
 import { numberWithCommas } from '@/lib/utils'
-import { Address, erc20Abi, formatUnits } from 'viem'
+import {erc20Abi} from 'abitype/abis'
+import { Address, formatUnits } from 'viem'
 import { useBalance, useReadContracts } from 'wagmi'
 
 export function useNativeBalance(address?: Address) {
