@@ -20,7 +20,7 @@ async function getCurrentBlockHeight() {
 
 async function main() {
   console.log('indexer operational')
-  // startIndexer()
+  startIndexer()
   startIssuer()
 
   app.get('/', async (_req, res) => {

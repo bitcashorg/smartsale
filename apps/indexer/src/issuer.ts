@@ -16,6 +16,7 @@ export async function startIssuer() {
       args: {
         to: '0x2C9DAAb3F463d6c6D248aCbeaAEe98687936374a',
       },
+      fromBlock: BigInt(SepoliaUSDT.indexFromBlock),
     })
 
     processLogs(logs)
@@ -42,7 +43,6 @@ export async function startIssuer() {
 // takes the generic logs and if the eventName matches one of the eventHandlers keys
 // it passes the log to corresponding hanlder function
 async function processLogs(logs: Log[]) {
-  console.log('process logs', logs)
   const actions = logs
     .map((log) => {
       const eventName = (log as any).eventName.toString()
