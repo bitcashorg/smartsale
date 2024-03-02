@@ -1,4 +1,3 @@
-import { erc20Abi } from "abitype/abis";
 import { ERC20ContractData } from "./types";
 
 export const SepoliaUSDT : ERC20ContractData = {
