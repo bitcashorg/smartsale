@@ -160,6 +160,17 @@ exports.Prisma.SessionScalarFieldEnum = {
   account: 'account'
 };
 
+exports.Prisma.TransfersScalarFieldEnum = {
+  trx_hash: 'trx_hash',
+  created_at: 'created_at',
+  chain_id: 'chain_id',
+  token: 'token',
+  from: 'from',
+  to: 'to',
+  type: 'type',
+  amount: 'amount'
+};
+
 exports.Prisma.SortOrder = {
   asc: 'asc',
   desc: 'desc'
@@ -180,7 +191,8 @@ exports.Prisma.ModelName = {
   auction_details: 'auction_details',
   orders: 'orders',
   users: 'users',
-  session: 'session'
+  session: 'session',
+  transfers: 'transfers'
 };
 
 /**

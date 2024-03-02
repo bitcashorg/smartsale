@@ -3,6 +3,8 @@ import { runPromisesInSeries } from './lib'
 import { sepoliaClient } from './viem-client'
 import { Log, parseAbiItem, stringify } from 'viem'
 import { ApprovalEvent, TransferEvent } from './types'
+import { db } from 'smartsale-db'
+import { sepolia } from 'viem/chains'
 
 export async function startIssuer() {
   console.log('indexing usdt transfers')
@@ -66,8 +68,28 @@ const eventHandlers: { [key: string]: (log: any) => void } = {
   Approval: handleApproval,
 }
 
-function handleTransfer(log: TransferEvent) {
+async function handleTransfer(log: TransferEvent) {
   console.log('handleTransfer', log)
+
+  const data = {
+    trx_hash: log.transactionHash!,
+    from: log.args.from,
+    to: log.args.to,
+    amount: log.args.value.toString(),
+    token: log.address,
+    chain_id: sepolia.id,
+    type: 'deposit',
+  }
+
+  const result = await db.transfers.upsert({
+    where: {
+      trx_hash: log.transactionHash!,
+    },
+    update: data,
+    create: data,
+  })
+
+  console.log('result', result)
 }
 
 function handleApproval(log: ApprovalEvent) {

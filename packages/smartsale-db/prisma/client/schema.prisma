@@ -69,3 +69,14 @@ model session {
   tx         String   @unique
   account    String
 }
+
+model transfers {
+  trx_hash   String   @id
+  created_at DateTime @default(now()) @db.Timestamptz(6)
+  chain_id   Decimal? @db.Decimal
+  token      String?
+  from       String?
+  to         String?
+  type       String?  @default("")
+  amount     String?
+}

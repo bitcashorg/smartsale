@@ -33,6 +33,11 @@ export type users = $Result.DefaultSelection<Prisma.$usersPayload>
  * 
  */
 export type session = $Result.DefaultSelection<Prisma.$sessionPayload>
+/**
+ * Model transfers
+ * 
+ */
+export type transfers = $Result.DefaultSelection<Prisma.$transfersPayload>
 
 /**
  * ##  Prisma Client ʲˢ
@@ -195,6 +200,16 @@ export class PrismaClient<
     * ```
     */
   get session(): Prisma.sessionDelegate<ExtArgs>;
+
+  /**
+   * `prisma.transfers`: Exposes CRUD operations for the **transfers** model.
+    * Example usage:
+    * ```ts
+    * // Fetch zero or more Transfers
+    * const transfers = await prisma.transfers.findMany()
+    * ```
+    */
+  get transfers(): Prisma.transfersDelegate<ExtArgs>;
 }
 
 export namespace Prisma {
@@ -668,7 +683,8 @@ export namespace Prisma {
     auction_details: 'auction_details',
     orders: 'orders',
     users: 'users',
-    session: 'session'
+    session: 'session',
+    transfers: 'transfers'
   };
 
   export type ModelName = (typeof ModelName)[keyof typeof ModelName]
@@ -685,7 +701,7 @@ export namespace Prisma {
 
   export type TypeMap<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     meta: {
-      modelProps: 'auction_details' | 'orders' | 'users' | 'session'
+      modelProps: 'auction_details' | 'orders' | 'users' | 'session' | 'transfers'
       txIsolationLevel: Prisma.TransactionIsolationLevel
     },
     model: {
@@ -950,6 +966,72 @@ export namespace Prisma {
           count: {
             args: Prisma.sessionCountArgs<ExtArgs>,
             result: $Utils.Optional<SessionCountAggregateOutputType> | number
+          }
+        }
+      }
+      transfers: {
+        payload: Prisma.$transfersPayload<ExtArgs>
+        fields: Prisma.transfersFieldRefs
+        operations: {
+          findUnique: {
+            args: Prisma.transfersFindUniqueArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$transfersPayload> | null
+          }
+          findUniqueOrThrow: {
+            args: Prisma.transfersFindUniqueOrThrowArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$transfersPayload>
+          }
+          findFirst: {
+            args: Prisma.transfersFindFirstArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$transfersPayload> | null
+          }
+          findFirstOrThrow: {
+            args: Prisma.transfersFindFirstOrThrowArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$transfersPayload>
+          }
+          findMany: {
+            args: Prisma.transfersFindManyArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$transfersPayload>[]
+          }
+          create: {
+            args: Prisma.transfersCreateArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$transfersPayload>
+          }
+          createMany: {
+            args: Prisma.transfersCreateManyArgs<ExtArgs>,
+            result: Prisma.BatchPayload
+          }
+          delete: {
+            args: Prisma.transfersDeleteArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$transfersPayload>
+          }
+          update: {
+            args: Prisma.transfersUpdateArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$transfersPayload>
+          }
+          deleteMany: {
+            args: Prisma.transfersDeleteManyArgs<ExtArgs>,
+            result: Prisma.BatchPayload
+          }
+          updateMany: {
+            args: Prisma.transfersUpdateManyArgs<ExtArgs>,
+            result: Prisma.BatchPayload
+          }
+          upsert: {
+            args: Prisma.transfersUpsertArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$transfersPayload>
+          }
+          aggregate: {
+            args: Prisma.TransfersAggregateArgs<ExtArgs>,
+            result: $Utils.Optional<AggregateTransfers>
+          }
+          groupBy: {
+            args: Prisma.transfersGroupByArgs<ExtArgs>,
+            result: $Utils.Optional<TransfersGroupByOutputType>[]
+          }
+          count: {
+            args: Prisma.transfersCountArgs<ExtArgs>,
+            result: $Utils.Optional<TransfersCountAggregateOutputType> | number
           }
         }
       }
@@ -4994,6 +5076,943 @@ export namespace Prisma {
 
 
   /**
+   * Model transfers
+   */
+
+  export type AggregateTransfers = {
+    _count: TransfersCountAggregateOutputType | null
+    _avg: TransfersAvgAggregateOutputType | null
+    _sum: TransfersSumAggregateOutputType | null
+    _min: TransfersMinAggregateOutputType | null
+    _max: TransfersMaxAggregateOutputType | null
+  }
+
+  export type TransfersAvgAggregateOutputType = {
+    chain_id: Decimal | null
+  }
+
+  export type TransfersSumAggregateOutputType = {
+    chain_id: Decimal | null
+  }
+
+  export type TransfersMinAggregateOutputType = {
+    trx_hash: string | null
+    created_at: Date | null
+    chain_id: Decimal | null
+    token: string | null
+    from: string | null
+    to: string | null
+    type: string | null
+    amount: string | null
+  }
+
+  export type TransfersMaxAggregateOutputType = {
+    trx_hash: string | null
+    created_at: Date | null
+    chain_id: Decimal | null
+    token: string | null
+    from: string | null
+    to: string | null
+    type: string | null
+    amount: string | null
+  }
+
+  export type TransfersCountAggregateOutputType = {
+    trx_hash: number
+    created_at: number
+    chain_id: number
+    token: number
+    from: number
+    to: number
+    type: number
+    amount: number
+    _all: number
+  }
+
+
+  export type TransfersAvgAggregateInputType = {
+    chain_id?: true
+  }
+
+  export type TransfersSumAggregateInputType = {
+    chain_id?: true
+  }
+
+  export type TransfersMinAggregateInputType = {
+    trx_hash?: true
+    created_at?: true
+    chain_id?: true
+    token?: true
+    from?: true
+    to?: true
+    type?: true
+    amount?: true
+  }
+
+  export type TransfersMaxAggregateInputType = {
+    trx_hash?: true
+    created_at?: true
+    chain_id?: true
+    token?: true
+    from?: true
+    to?: true
+    type?: true
+    amount?: true
+  }
+
+  export type TransfersCountAggregateInputType = {
+    trx_hash?: true
+    created_at?: true
+    chain_id?: true
+    token?: true
+    from?: true
+    to?: true
+    type?: true
+    amount?: true
+    _all?: true
+  }
+
+  export type TransfersAggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which transfers to aggregate.
+     */
+    where?: transfersWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of transfers to fetch.
+     */
+    orderBy?: transfersOrderByWithRelationInput | transfersOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the start position
+     */
+    cursor?: transfersWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` transfers from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` transfers.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Count returned transfers
+    **/
+    _count?: true | TransfersCountAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to average
+    **/
+    _avg?: TransfersAvgAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to sum
+    **/
+    _sum?: TransfersSumAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the minimum value
+    **/
+    _min?: TransfersMinAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the maximum value
+    **/
+    _max?: TransfersMaxAggregateInputType
+  }
+
+  export type GetTransfersAggregateType<T extends TransfersAggregateArgs> = {
+        [P in keyof T & keyof AggregateTransfers]: P extends '_count' | 'count'
+      ? T[P] extends true
+        ? number
+        : GetScalarType<T[P], AggregateTransfers[P]>
+      : GetScalarType<T[P], AggregateTransfers[P]>
+  }
+
+
+
+
+  export type transfersGroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: transfersWhereInput
+    orderBy?: transfersOrderByWithAggregationInput | transfersOrderByWithAggregationInput[]
+    by: TransfersScalarFieldEnum[] | TransfersScalarFieldEnum
+    having?: transfersScalarWhereWithAggregatesInput
+    take?: number
+    skip?: number
+    _count?: TransfersCountAggregateInputType | true
+    _avg?: TransfersAvgAggregateInputType
+    _sum?: TransfersSumAggregateInputType
+    _min?: TransfersMinAggregateInputType
+    _max?: TransfersMaxAggregateInputType
+  }
+
+  export type TransfersGroupByOutputType = {
+    trx_hash: string
+    created_at: Date
+    chain_id: Decimal | null
+    token: string | null
+    from: string | null
+    to: string | null
+    type: string | null
+    amount: string | null
+    _count: TransfersCountAggregateOutputType | null
+    _avg: TransfersAvgAggregateOutputType | null
+    _sum: TransfersSumAggregateOutputType | null
+    _min: TransfersMinAggregateOutputType | null
+    _max: TransfersMaxAggregateOutputType | null
+  }
+
+  type GetTransfersGroupByPayload<T extends transfersGroupByArgs> = Prisma.PrismaPromise<
+    Array<
+      PickEnumerable<TransfersGroupByOutputType, T['by']> &
+        {
+          [P in ((keyof T) & (keyof TransfersGroupByOutputType))]: P extends '_count'
+            ? T[P] extends boolean
+              ? number
+              : GetScalarType<T[P], TransfersGroupByOutputType[P]>
+            : GetScalarType<T[P], TransfersGroupByOutputType[P]>
+        }
+      >
+    >
+
+
+  export type transfersSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    trx_hash?: boolean
+    created_at?: boolean
+    chain_id?: boolean
+    token?: boolean
+    from?: boolean
+    to?: boolean
+    type?: boolean
+    amount?: boolean
+  }, ExtArgs["result"]["transfers"]>
+
+  export type transfersSelectScalar = {
+    trx_hash?: boolean
+    created_at?: boolean
+    chain_id?: boolean
+    token?: boolean
+    from?: boolean
+    to?: boolean
+    type?: boolean
+    amount?: boolean
+  }
+
+
+  export type $transfersPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    name: "transfers"
+    objects: {}
+    scalars: $Extensions.GetPayloadResult<{
+      trx_hash: string
+      created_at: Date
+      chain_id: Prisma.Decimal | null
+      token: string | null
+      from: string | null
+      to: string | null
+      type: string | null
+      amount: string | null
+    }, ExtArgs["result"]["transfers"]>
+    composites: {}
+  }
+
+
+  type transfersGetPayload<S extends boolean | null | undefined | transfersDefaultArgs> = $Result.GetResult<Prisma.$transfersPayload, S>
+
+  type transfersCountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = 
+    Omit<transfersFindManyArgs, 'select' | 'include' | 'distinct'> & {
+      select?: TransfersCountAggregateInputType | true
+    }
+
+  export interface transfersDelegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> {
+    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['transfers'], meta: { name: 'transfers' } }
+    /**
+     * Find zero or one Transfers that matches the filter.
+     * @param {transfersFindUniqueArgs} args - Arguments to find a Transfers
+     * @example
+     * // Get one Transfers
+     * const transfers = await prisma.transfers.findUnique({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findUnique<T extends transfersFindUniqueArgs<ExtArgs>>(
+      args: SelectSubset<T, transfersFindUniqueArgs<ExtArgs>>
+    ): Prisma__transfersClient<$Result.GetResult<Prisma.$transfersPayload<ExtArgs>, T, 'findUnique'> | null, null, ExtArgs>
+
+    /**
+     * Find one Transfers that matches the filter or throw an error  with `error.code='P2025'` 
+     *     if no matches were found.
+     * @param {transfersFindUniqueOrThrowArgs} args - Arguments to find a Transfers
+     * @example
+     * // Get one Transfers
+     * const transfers = await prisma.transfers.findUniqueOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findUniqueOrThrow<T extends transfersFindUniqueOrThrowArgs<ExtArgs>>(
+      args?: SelectSubset<T, transfersFindUniqueOrThrowArgs<ExtArgs>>
+    ): Prisma__transfersClient<$Result.GetResult<Prisma.$transfersPayload<ExtArgs>, T, 'findUniqueOrThrow'>, never, ExtArgs>
+
+    /**
+     * Find the first Transfers that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {transfersFindFirstArgs} args - Arguments to find a Transfers
+     * @example
+     * // Get one Transfers
+     * const transfers = await prisma.transfers.findFirst({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findFirst<T extends transfersFindFirstArgs<ExtArgs>>(
+      args?: SelectSubset<T, transfersFindFirstArgs<ExtArgs>>
+    ): Prisma__transfersClient<$Result.GetResult<Prisma.$transfersPayload<ExtArgs>, T, 'findFirst'> | null, null, ExtArgs>
+
+    /**
+     * Find the first Transfers that matches the filter or
+     * throw `PrismaKnownClientError` with `P2025` code if no matches were found.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {transfersFindFirstOrThrowArgs} args - Arguments to find a Transfers
+     * @example
+     * // Get one Transfers
+     * const transfers = await prisma.transfers.findFirstOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findFirstOrThrow<T extends transfersFindFirstOrThrowArgs<ExtArgs>>(
+      args?: SelectSubset<T, transfersFindFirstOrThrowArgs<ExtArgs>>
+    ): Prisma__transfersClient<$Result.GetResult<Prisma.$transfersPayload<ExtArgs>, T, 'findFirstOrThrow'>, never, ExtArgs>
+
+    /**
+     * Find zero or more Transfers that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {transfersFindManyArgs=} args - Arguments to filter and select certain fields only.
+     * @example
+     * // Get all Transfers
+     * const transfers = await prisma.transfers.findMany()
+     * 
+     * // Get first 10 Transfers
+     * const transfers = await prisma.transfers.findMany({ take: 10 })
+     * 
+     * // Only select the `trx_hash`
+     * const transfersWithTrx_hashOnly = await prisma.transfers.findMany({ select: { trx_hash: true } })
+     * 
+    **/
+    findMany<T extends transfersFindManyArgs<ExtArgs>>(
+      args?: SelectSubset<T, transfersFindManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<$Result.GetResult<Prisma.$transfersPayload<ExtArgs>, T, 'findMany'>>
+
+    /**
+     * Create a Transfers.
+     * @param {transfersCreateArgs} args - Arguments to create a Transfers.
+     * @example
+     * // Create one Transfers
+     * const Transfers = await prisma.transfers.create({
+     *   data: {
+     *     // ... data to create a Transfers
+     *   }
+     * })
+     * 
+    **/
+    create<T extends transfersCreateArgs<ExtArgs>>(
+      args: SelectSubset<T, transfersCreateArgs<ExtArgs>>
+    ): Prisma__transfersClient<$Result.GetResult<Prisma.$transfersPayload<ExtArgs>, T, 'create'>, never, ExtArgs>
+
+    /**
+     * Create many Transfers.
+     *     @param {transfersCreateManyArgs} args - Arguments to create many Transfers.
+     *     @example
+     *     // Create many Transfers
+     *     const transfers = await prisma.transfers.createMany({
+     *       data: {
+     *         // ... provide data here
+     *       }
+     *     })
+     *     
+    **/
+    createMany<T extends transfersCreateManyArgs<ExtArgs>>(
+      args?: SelectSubset<T, transfersCreateManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Delete a Transfers.
+     * @param {transfersDeleteArgs} args - Arguments to delete one Transfers.
+     * @example
+     * // Delete one Transfers
+     * const Transfers = await prisma.transfers.delete({
+     *   where: {
+     *     // ... filter to delete one Transfers
+     *   }
+     * })
+     * 
+    **/
+    delete<T extends transfersDeleteArgs<ExtArgs>>(
+      args: SelectSubset<T, transfersDeleteArgs<ExtArgs>>
+    ): Prisma__transfersClient<$Result.GetResult<Prisma.$transfersPayload<ExtArgs>, T, 'delete'>, never, ExtArgs>
+
+    /**
+     * Update one Transfers.
+     * @param {transfersUpdateArgs} args - Arguments to update one Transfers.
+     * @example
+     * // Update one Transfers
+     * const transfers = await prisma.transfers.update({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+    **/
+    update<T extends transfersUpdateArgs<ExtArgs>>(
+      args: SelectSubset<T, transfersUpdateArgs<ExtArgs>>
+    ): Prisma__transfersClient<$Result.GetResult<Prisma.$transfersPayload<ExtArgs>, T, 'update'>, never, ExtArgs>
+
+    /**
+     * Delete zero or more Transfers.
+     * @param {transfersDeleteManyArgs} args - Arguments to filter Transfers to delete.
+     * @example
+     * // Delete a few Transfers
+     * const { count } = await prisma.transfers.deleteMany({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     * 
+    **/
+    deleteMany<T extends transfersDeleteManyArgs<ExtArgs>>(
+      args?: SelectSubset<T, transfersDeleteManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more Transfers.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {transfersUpdateManyArgs} args - Arguments to update one or more rows.
+     * @example
+     * // Update many Transfers
+     * const transfers = await prisma.transfers.updateMany({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+    **/
+    updateMany<T extends transfersUpdateManyArgs<ExtArgs>>(
+      args: SelectSubset<T, transfersUpdateManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Create or update one Transfers.
+     * @param {transfersUpsertArgs} args - Arguments to update or create a Transfers.
+     * @example
+     * // Update or create a Transfers
+     * const transfers = await prisma.transfers.upsert({
+     *   create: {
+     *     // ... data to create a Transfers
+     *   },
+     *   update: {
+     *     // ... in case it already exists, update
+     *   },
+     *   where: {
+     *     // ... the filter for the Transfers we want to update
+     *   }
+     * })
+    **/
+    upsert<T extends transfersUpsertArgs<ExtArgs>>(
+      args: SelectSubset<T, transfersUpsertArgs<ExtArgs>>
+    ): Prisma__transfersClient<$Result.GetResult<Prisma.$transfersPayload<ExtArgs>, T, 'upsert'>, never, ExtArgs>
+
+    /**
+     * Count the number of Transfers.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {transfersCountArgs} args - Arguments to filter Transfers to count.
+     * @example
+     * // Count the number of Transfers
+     * const count = await prisma.transfers.count({
+     *   where: {
+     *     // ... the filter for the Transfers we want to count
+     *   }
+     * })
+    **/
+    count<T extends transfersCountArgs>(
+      args?: Subset<T, transfersCountArgs>,
+    ): Prisma.PrismaPromise<
+      T extends $Utils.Record<'select', any>
+        ? T['select'] extends true
+          ? number
+          : GetScalarType<T['select'], TransfersCountAggregateOutputType>
+        : number
+    >
+
+    /**
+     * Allows you to perform aggregations operations on a Transfers.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {TransfersAggregateArgs} args - Select which aggregations you would like to apply and on what fields.
+     * @example
+     * // Ordered by age ascending
+     * // Where email contains prisma.io
+     * // Limited to the 10 users
+     * const aggregations = await prisma.user.aggregate({
+     *   _avg: {
+     *     age: true,
+     *   },
+     *   where: {
+     *     email: {
+     *       contains: "prisma.io",
+     *     },
+     *   },
+     *   orderBy: {
+     *     age: "asc",
+     *   },
+     *   take: 10,
+     * })
+    **/
+    aggregate<T extends TransfersAggregateArgs>(args: Subset<T, TransfersAggregateArgs>): Prisma.PrismaPromise<GetTransfersAggregateType<T>>
+
+    /**
+     * Group by Transfers.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {transfersGroupByArgs} args - Group by arguments.
+     * @example
+     * // Group by city, order by createdAt, get count
+     * const result = await prisma.user.groupBy({
+     *   by: ['city', 'createdAt'],
+     *   orderBy: {
+     *     createdAt: true
+     *   },
+     *   _count: {
+     *     _all: true
+     *   },
+     * })
+     * 
+    **/
+    groupBy<
+      T extends transfersGroupByArgs,
+      HasSelectOrTake extends Or<
+        Extends<'skip', Keys<T>>,
+        Extends<'take', Keys<T>>
+      >,
+      OrderByArg extends True extends HasSelectOrTake
+        ? { orderBy: transfersGroupByArgs['orderBy'] }
+        : { orderBy?: transfersGroupByArgs['orderBy'] },
+      OrderFields extends ExcludeUnderscoreKeys<Keys<MaybeTupleToUnion<T['orderBy']>>>,
+      ByFields extends MaybeTupleToUnion<T['by']>,
+      ByValid extends Has<ByFields, OrderFields>,
+      HavingFields extends GetHavingFields<T['having']>,
+      HavingValid extends Has<ByFields, HavingFields>,
+      ByEmpty extends T['by'] extends never[] ? True : False,
+      InputErrors extends ByEmpty extends True
+      ? `Error: "by" must not be empty.`
+      : HavingValid extends False
+      ? {
+          [P in HavingFields]: P extends ByFields
+            ? never
+            : P extends string
+            ? `Error: Field "${P}" used in "having" needs to be provided in "by".`
+            : [
+                Error,
+                'Field ',
+                P,
+                ` in "having" needs to be provided in "by"`,
+              ]
+        }[HavingFields]
+      : 'take' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "take", you also need to provide "orderBy"'
+      : 'skip' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "skip", you also need to provide "orderBy"'
+      : ByValid extends True
+      ? {}
+      : {
+          [P in OrderFields]: P extends ByFields
+            ? never
+            : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+        }[OrderFields]
+    >(args: SubsetIntersection<T, transfersGroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetTransfersGroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
+  /**
+   * Fields of the transfers model
+   */
+  readonly fields: transfersFieldRefs;
+  }
+
+  /**
+   * The delegate class that acts as a "Promise-like" for transfers.
+   * Why is this prefixed with `Prisma__`?
+   * Because we want to prevent naming conflicts as mentioned in
+   * https://github.com/prisma/prisma-client-js/issues/707
+   */
+  export interface Prisma__transfersClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> extends Prisma.PrismaPromise<T> {
+    readonly [Symbol.toStringTag]: 'PrismaPromise';
+
+
+    /**
+     * Attaches callbacks for the resolution and/or rejection of the Promise.
+     * @param onfulfilled The callback to execute when the Promise is resolved.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of which ever callback is executed.
+     */
+    then<TResult1 = T, TResult2 = never>(onfulfilled?: ((value: T) => TResult1 | PromiseLike<TResult1>) | undefined | null, onrejected?: ((reason: any) => TResult2 | PromiseLike<TResult2>) | undefined | null): $Utils.JsPromise<TResult1 | TResult2>;
+    /**
+     * Attaches a callback for only the rejection of the Promise.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of the callback.
+     */
+    catch<TResult = never>(onrejected?: ((reason: any) => TResult | PromiseLike<TResult>) | undefined | null): $Utils.JsPromise<T | TResult>;
+    /**
+     * Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
+     * resolved value cannot be modified from the callback.
+     * @param onfinally The callback to execute when the Promise is settled (fulfilled or rejected).
+     * @returns A Promise for the completion of the callback.
+     */
+    finally(onfinally?: (() => void) | undefined | null): $Utils.JsPromise<T>;
+  }
+
+
+
+  /**
+   * Fields of the transfers model
+   */ 
+  interface transfersFieldRefs {
+    readonly trx_hash: FieldRef<"transfers", 'String'>
+    readonly created_at: FieldRef<"transfers", 'DateTime'>
+    readonly chain_id: FieldRef<"transfers", 'Decimal'>
+    readonly token: FieldRef<"transfers", 'String'>
+    readonly from: FieldRef<"transfers", 'String'>
+    readonly to: FieldRef<"transfers", 'String'>
+    readonly type: FieldRef<"transfers", 'String'>
+    readonly amount: FieldRef<"transfers", 'String'>
+  }
+    
+
+  // Custom InputTypes
+
+  /**
+   * transfers findUnique
+   */
+  export type transfersFindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the transfers
+     */
+    select?: transfersSelect<ExtArgs> | null
+    /**
+     * Filter, which transfers to fetch.
+     */
+    where: transfersWhereUniqueInput
+  }
+
+
+  /**
+   * transfers findUniqueOrThrow
+   */
+  export type transfersFindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the transfers
+     */
+    select?: transfersSelect<ExtArgs> | null
+    /**
+     * Filter, which transfers to fetch.
+     */
+    where: transfersWhereUniqueInput
+  }
+
+
+  /**
+   * transfers findFirst
+   */
+  export type transfersFindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the transfers
+     */
+    select?: transfersSelect<ExtArgs> | null
+    /**
+     * Filter, which transfers to fetch.
+     */
+    where?: transfersWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of transfers to fetch.
+     */
+    orderBy?: transfersOrderByWithRelationInput | transfersOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for transfers.
+     */
+    cursor?: transfersWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` transfers from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` transfers.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of transfers.
+     */
+    distinct?: TransfersScalarFieldEnum | TransfersScalarFieldEnum[]
+  }
+
+
+  /**
+   * transfers findFirstOrThrow
+   */
+  export type transfersFindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the transfers
+     */
+    select?: transfersSelect<ExtArgs> | null
+    /**
+     * Filter, which transfers to fetch.
+     */
+    where?: transfersWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of transfers to fetch.
+     */
+    orderBy?: transfersOrderByWithRelationInput | transfersOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for transfers.
+     */
+    cursor?: transfersWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` transfers from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` transfers.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of transfers.
+     */
+    distinct?: TransfersScalarFieldEnum | TransfersScalarFieldEnum[]
+  }
+
+
+  /**
+   * transfers findMany
+   */
+  export type transfersFindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the transfers
+     */
+    select?: transfersSelect<ExtArgs> | null
+    /**
+     * Filter, which transfers to fetch.
+     */
+    where?: transfersWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of transfers to fetch.
+     */
+    orderBy?: transfersOrderByWithRelationInput | transfersOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for listing transfers.
+     */
+    cursor?: transfersWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` transfers from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` transfers.
+     */
+    skip?: number
+    distinct?: TransfersScalarFieldEnum | TransfersScalarFieldEnum[]
+  }
+
+
+  /**
+   * transfers create
+   */
+  export type transfersCreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the transfers
+     */
+    select?: transfersSelect<ExtArgs> | null
+    /**
+     * The data needed to create a transfers.
+     */
+    data: XOR<transfersCreateInput, transfersUncheckedCreateInput>
+  }
+
+
+  /**
+   * transfers createMany
+   */
+  export type transfersCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to create many transfers.
+     */
+    data: transfersCreateManyInput | transfersCreateManyInput[]
+    skipDuplicates?: boolean
+  }
+
+
+  /**
+   * transfers update
+   */
+  export type transfersUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the transfers
+     */
+    select?: transfersSelect<ExtArgs> | null
+    /**
+     * The data needed to update a transfers.
+     */
+    data: XOR<transfersUpdateInput, transfersUncheckedUpdateInput>
+    /**
+     * Choose, which transfers to update.
+     */
+    where: transfersWhereUniqueInput
+  }
+
+
+  /**
+   * transfers updateMany
+   */
+  export type transfersUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to update transfers.
+     */
+    data: XOR<transfersUpdateManyMutationInput, transfersUncheckedUpdateManyInput>
+    /**
+     * Filter which transfers to update
+     */
+    where?: transfersWhereInput
+  }
+
+
+  /**
+   * transfers upsert
+   */
+  export type transfersUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the transfers
+     */
+    select?: transfersSelect<ExtArgs> | null
+    /**
+     * The filter to search for the transfers to update in case it exists.
+     */
+    where: transfersWhereUniqueInput
+    /**
+     * In case the transfers found by the `where` argument doesn't exist, create a new transfers with this data.
+     */
+    create: XOR<transfersCreateInput, transfersUncheckedCreateInput>
+    /**
+     * In case the transfers was found with the provided `where` argument, update it with this data.
+     */
+    update: XOR<transfersUpdateInput, transfersUncheckedUpdateInput>
+  }
+
+
+  /**
+   * transfers delete
+   */
+  export type transfersDeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the transfers
+     */
+    select?: transfersSelect<ExtArgs> | null
+    /**
+     * Filter which transfers to delete.
+     */
+    where: transfersWhereUniqueInput
+  }
+
+
+  /**
+   * transfers deleteMany
+   */
+  export type transfersDeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which transfers to delete
+     */
+    where?: transfersWhereInput
+  }
+
+
+  /**
+   * transfers without action
+   */
+  export type transfersDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the transfers
+     */
+    select?: transfersSelect<ExtArgs> | null
+  }
+
+
+
+  /**
    * Enums
    */
 
@@ -5070,6 +6089,20 @@ export namespace Prisma {
   };
 
   export type SessionScalarFieldEnum = (typeof SessionScalarFieldEnum)[keyof typeof SessionScalarFieldEnum]
+
+
+  export const TransfersScalarFieldEnum: {
+    trx_hash: 'trx_hash',
+    created_at: 'created_at',
+    chain_id: 'chain_id',
+    token: 'token',
+    from: 'from',
+    to: 'to',
+    type: 'type',
+    amount: 'amount'
+  };
+
+  export type TransfersScalarFieldEnum = (typeof TransfersScalarFieldEnum)[keyof typeof TransfersScalarFieldEnum]
 
 
   export const SortOrder: {
@@ -5161,6 +6194,20 @@ export namespace Prisma {
    * Reference to a field of type 'Boolean'
    */
   export type BooleanFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Boolean'>
+    
+
+
+  /**
+   * Reference to a field of type 'Decimal'
+   */
+  export type DecimalFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Decimal'>
+    
+
+
+  /**
+   * Reference to a field of type 'Decimal[]'
+   */
+  export type ListDecimalFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Decimal[]'>
     
 
 
@@ -5500,6 +6547,75 @@ export namespace Prisma {
     created_at?: DateTimeWithAggregatesFilter<"session"> | Date | string
     tx?: StringWithAggregatesFilter<"session"> | string
     account?: StringWithAggregatesFilter<"session"> | string
+  }
+
+  export type transfersWhereInput = {
+    AND?: transfersWhereInput | transfersWhereInput[]
+    OR?: transfersWhereInput[]
+    NOT?: transfersWhereInput | transfersWhereInput[]
+    trx_hash?: StringFilter<"transfers"> | string
+    created_at?: DateTimeFilter<"transfers"> | Date | string
+    chain_id?: DecimalNullableFilter<"transfers"> | Decimal | DecimalJsLike | number | string | null
+    token?: StringNullableFilter<"transfers"> | string | null
+    from?: StringNullableFilter<"transfers"> | string | null
+    to?: StringNullableFilter<"transfers"> | string | null
+    type?: StringNullableFilter<"transfers"> | string | null
+    amount?: StringNullableFilter<"transfers"> | string | null
+  }
+
+  export type transfersOrderByWithRelationInput = {
+    trx_hash?: SortOrder
+    created_at?: SortOrder
+    chain_id?: SortOrderInput | SortOrder
+    token?: SortOrderInput | SortOrder
+    from?: SortOrderInput | SortOrder
+    to?: SortOrderInput | SortOrder
+    type?: SortOrderInput | SortOrder
+    amount?: SortOrderInput | SortOrder
+  }
+
+  export type transfersWhereUniqueInput = Prisma.AtLeast<{
+    trx_hash?: string
+    AND?: transfersWhereInput | transfersWhereInput[]
+    OR?: transfersWhereInput[]
+    NOT?: transfersWhereInput | transfersWhereInput[]
+    created_at?: DateTimeFilter<"transfers"> | Date | string
+    chain_id?: DecimalNullableFilter<"transfers"> | Decimal | DecimalJsLike | number | string | null
+    token?: StringNullableFilter<"transfers"> | string | null
+    from?: StringNullableFilter<"transfers"> | string | null
+    to?: StringNullableFilter<"transfers"> | string | null
+    type?: StringNullableFilter<"transfers"> | string | null
+    amount?: StringNullableFilter<"transfers"> | string | null
+  }, "trx_hash">
+
+  export type transfersOrderByWithAggregationInput = {
+    trx_hash?: SortOrder
+    created_at?: SortOrder
+    chain_id?: SortOrderInput | SortOrder
+    token?: SortOrderInput | SortOrder
+    from?: SortOrderInput | SortOrder
+    to?: SortOrderInput | SortOrder
+    type?: SortOrderInput | SortOrder
+    amount?: SortOrderInput | SortOrder
+    _count?: transfersCountOrderByAggregateInput
+    _avg?: transfersAvgOrderByAggregateInput
+    _max?: transfersMaxOrderByAggregateInput
+    _min?: transfersMinOrderByAggregateInput
+    _sum?: transfersSumOrderByAggregateInput
+  }
+
+  export type transfersScalarWhereWithAggregatesInput = {
+    AND?: transfersScalarWhereWithAggregatesInput | transfersScalarWhereWithAggregatesInput[]
+    OR?: transfersScalarWhereWithAggregatesInput[]
+    NOT?: transfersScalarWhereWithAggregatesInput | transfersScalarWhereWithAggregatesInput[]
+    trx_hash?: StringWithAggregatesFilter<"transfers"> | string
+    created_at?: DateTimeWithAggregatesFilter<"transfers"> | Date | string
+    chain_id?: DecimalNullableWithAggregatesFilter<"transfers"> | Decimal | DecimalJsLike | number | string | null
+    token?: StringNullableWithAggregatesFilter<"transfers"> | string | null
+    from?: StringNullableWithAggregatesFilter<"transfers"> | string | null
+    to?: StringNullableWithAggregatesFilter<"transfers"> | string | null
+    type?: StringNullableWithAggregatesFilter<"transfers"> | string | null
+    amount?: StringNullableWithAggregatesFilter<"transfers"> | string | null
   }
 
   export type auction_detailsCreateInput = {
@@ -5871,6 +6987,83 @@ export namespace Prisma {
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     tx?: StringFieldUpdateOperationsInput | string
     account?: StringFieldUpdateOperationsInput | string
+  }
+
+  export type transfersCreateInput = {
+    trx_hash: string
+    created_at?: Date | string
+    chain_id?: Decimal | DecimalJsLike | number | string | null
+    token?: string | null
+    from?: string | null
+    to?: string | null
+    type?: string | null
+    amount?: string | null
+  }
+
+  export type transfersUncheckedCreateInput = {
+    trx_hash: string
+    created_at?: Date | string
+    chain_id?: Decimal | DecimalJsLike | number | string | null
+    token?: string | null
+    from?: string | null
+    to?: string | null
+    type?: string | null
+    amount?: string | null
+  }
+
+  export type transfersUpdateInput = {
+    trx_hash?: StringFieldUpdateOperationsInput | string
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    chain_id?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+    token?: NullableStringFieldUpdateOperationsInput | string | null
+    from?: NullableStringFieldUpdateOperationsInput | string | null
+    to?: NullableStringFieldUpdateOperationsInput | string | null
+    type?: NullableStringFieldUpdateOperationsInput | string | null
+    amount?: NullableStringFieldUpdateOperationsInput | string | null
+  }
+
+  export type transfersUncheckedUpdateInput = {
+    trx_hash?: StringFieldUpdateOperationsInput | string
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    chain_id?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+    token?: NullableStringFieldUpdateOperationsInput | string | null
+    from?: NullableStringFieldUpdateOperationsInput | string | null
+    to?: NullableStringFieldUpdateOperationsInput | string | null
+    type?: NullableStringFieldUpdateOperationsInput | string | null
+    amount?: NullableStringFieldUpdateOperationsInput | string | null
+  }
+
+  export type transfersCreateManyInput = {
+    trx_hash: string
+    created_at?: Date | string
+    chain_id?: Decimal | DecimalJsLike | number | string | null
+    token?: string | null
+    from?: string | null
+    to?: string | null
+    type?: string | null
+    amount?: string | null
+  }
+
+  export type transfersUpdateManyMutationInput = {
+    trx_hash?: StringFieldUpdateOperationsInput | string
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    chain_id?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+    token?: NullableStringFieldUpdateOperationsInput | string | null
+    from?: NullableStringFieldUpdateOperationsInput | string | null
+    to?: NullableStringFieldUpdateOperationsInput | string | null
+    type?: NullableStringFieldUpdateOperationsInput | string | null
+    amount?: NullableStringFieldUpdateOperationsInput | string | null
+  }
+
+  export type transfersUncheckedUpdateManyInput = {
+    trx_hash?: StringFieldUpdateOperationsInput | string
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    chain_id?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
+    token?: NullableStringFieldUpdateOperationsInput | string | null
+    from?: NullableStringFieldUpdateOperationsInput | string | null
+    to?: NullableStringFieldUpdateOperationsInput | string | null
+    type?: NullableStringFieldUpdateOperationsInput | string | null
+    amount?: NullableStringFieldUpdateOperationsInput | string | null
   }
 
   export type DateTimeFilter<$PrismaModel = never> = {
@@ -6342,6 +7535,74 @@ export namespace Prisma {
     _max?: NestedStringFilter<$PrismaModel>
   }
 
+  export type DecimalNullableFilter<$PrismaModel = never> = {
+    equals?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel> | null
+    in?: Decimal[] | DecimalJsLike[] | number[] | string[] | ListDecimalFieldRefInput<$PrismaModel> | null
+    notIn?: Decimal[] | DecimalJsLike[] | number[] | string[] | ListDecimalFieldRefInput<$PrismaModel> | null
+    lt?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
+    lte?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
+    gt?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
+    gte?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
+    not?: NestedDecimalNullableFilter<$PrismaModel> | Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type transfersCountOrderByAggregateInput = {
+    trx_hash?: SortOrder
+    created_at?: SortOrder
+    chain_id?: SortOrder
+    token?: SortOrder
+    from?: SortOrder
+    to?: SortOrder
+    type?: SortOrder
+    amount?: SortOrder
+  }
+
+  export type transfersAvgOrderByAggregateInput = {
+    chain_id?: SortOrder
+  }
+
+  export type transfersMaxOrderByAggregateInput = {
+    trx_hash?: SortOrder
+    created_at?: SortOrder
+    chain_id?: SortOrder
+    token?: SortOrder
+    from?: SortOrder
+    to?: SortOrder
+    type?: SortOrder
+    amount?: SortOrder
+  }
+
+  export type transfersMinOrderByAggregateInput = {
+    trx_hash?: SortOrder
+    created_at?: SortOrder
+    chain_id?: SortOrder
+    token?: SortOrder
+    from?: SortOrder
+    to?: SortOrder
+    type?: SortOrder
+    amount?: SortOrder
+  }
+
+  export type transfersSumOrderByAggregateInput = {
+    chain_id?: SortOrder
+  }
+
+  export type DecimalNullableWithAggregatesFilter<$PrismaModel = never> = {
+    equals?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel> | null
+    in?: Decimal[] | DecimalJsLike[] | number[] | string[] | ListDecimalFieldRefInput<$PrismaModel> | null
+    notIn?: Decimal[] | DecimalJsLike[] | number[] | string[] | ListDecimalFieldRefInput<$PrismaModel> | null
+    lt?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
+    lte?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
+    gt?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
+    gte?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
+    not?: NestedDecimalNullableWithAggregatesFilter<$PrismaModel> | Decimal | DecimalJsLike | number | string | null
+    _count?: NestedIntNullableFilter<$PrismaModel>
+    _avg?: NestedDecimalNullableFilter<$PrismaModel>
+    _sum?: NestedDecimalNullableFilter<$PrismaModel>
+    _min?: NestedDecimalNullableFilter<$PrismaModel>
+    _max?: NestedDecimalNullableFilter<$PrismaModel>
+  }
+
   export type DateTimeFieldUpdateOperationsInput = {
     set?: Date | string
   }
@@ -6384,6 +7645,14 @@ export namespace Prisma {
 
   export type StringFieldUpdateOperationsInput = {
     set?: string
+  }
+
+  export type NullableDecimalFieldUpdateOperationsInput = {
+    set?: Decimal | DecimalJsLike | number | string | null
+    increment?: Decimal | DecimalJsLike | number | string
+    decrement?: Decimal | DecimalJsLike | number | string
+    multiply?: Decimal | DecimalJsLike | number | string
+    divide?: Decimal | DecimalJsLike | number | string
   }
 
   export type NestedDateTimeFilter<$PrismaModel = never> = {
@@ -6650,6 +7919,33 @@ export namespace Prisma {
     _max?: NestedStringFilter<$PrismaModel>
   }
 
+  export type NestedDecimalNullableFilter<$PrismaModel = never> = {
+    equals?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel> | null
+    in?: Decimal[] | DecimalJsLike[] | number[] | string[] | ListDecimalFieldRefInput<$PrismaModel> | null
+    notIn?: Decimal[] | DecimalJsLike[] | number[] | string[] | ListDecimalFieldRefInput<$PrismaModel> | null
+    lt?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
+    lte?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
+    gt?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
+    gte?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
+    not?: NestedDecimalNullableFilter<$PrismaModel> | Decimal | DecimalJsLike | number | string | null
+  }
+
+  export type NestedDecimalNullableWithAggregatesFilter<$PrismaModel = never> = {
+    equals?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel> | null
+    in?: Decimal[] | DecimalJsLike[] | number[] | string[] | ListDecimalFieldRefInput<$PrismaModel> | null
+    notIn?: Decimal[] | DecimalJsLike[] | number[] | string[] | ListDecimalFieldRefInput<$PrismaModel> | null
+    lt?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
+    lte?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
+    gt?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
+    gte?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
+    not?: NestedDecimalNullableWithAggregatesFilter<$PrismaModel> | Decimal | DecimalJsLike | number | string | null
+    _count?: NestedIntNullableFilter<$PrismaModel>
+    _avg?: NestedDecimalNullableFilter<$PrismaModel>
+    _sum?: NestedDecimalNullableFilter<$PrismaModel>
+    _min?: NestedDecimalNullableFilter<$PrismaModel>
+    _max?: NestedDecimalNullableFilter<$PrismaModel>
+  }
+
 
 
   /**
@@ -6671,6 +7967,10 @@ export namespace Prisma {
      * @deprecated Use sessionDefaultArgs instead
      */
     export type sessionArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = sessionDefaultArgs<ExtArgs>
+    /**
+     * @deprecated Use transfersDefaultArgs instead
+     */
+    export type transfersArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = transfersDefaultArgs<ExtArgs>
 
   /**
    * Batch Payload for updateMany & deleteMany & createMany
