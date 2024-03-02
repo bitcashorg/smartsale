@@ -6,5 +6,6 @@ export const appenv = {
   },
   evm: {
     eosApi: 'https://api.testnet.evm.eosnetwork.com',
+    sepoliaApi: process.env.SEPOLIA_RPC || '',
   },
 }

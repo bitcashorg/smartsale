@@ -81,3 +81,22 @@ export interface UserRegistrationEvent extends Log {
     userId: bigint
   }
 }
+
+// ERC20 Types
+export interface TransferEvent extends Log {
+  eventName: 'Transfer'
+  args: {
+    from: string
+    to: string
+    value: bigint
+  }
+}
+
+export interface ApprovalEvent extends Log {
+  eventName: 'Approval'
+  args: {
+    owner: string
+    spender: string
+    value: bigint
+  }
+}
