@@ -18,4 +18,12 @@ contract USDCredTokenWithFaucet is ERC20 {
     function faucet(address recipient, uint256 amount) public {
         _mint(recipient, amount);
     }
+
+     /**
+     * @dev Burns a specific amount of tokens.
+     * @param amount The amount of tokens to be burned.
+     */
+    function burn(uint256 amount) public {
+        _burn(msg.sender, amount);
+    }
 }
