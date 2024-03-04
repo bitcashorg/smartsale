@@ -11,30 +11,35 @@ import {
 } from '@/components/ui/select'
 import { Input } from '../ui/input'
 import { useSession } from '@/hooks/use-session'
-import { useAccount, useWriteContract } from 'wagmi'
-import { erc20Abi } from 'abitype/abis'
+import { useAccount, useSwitchChain, useWriteContract } from 'wagmi'
 import { useState } from 'react'
 import { sepolia } from 'viem/chains'
 import { SepoliaUSDT } from 'smartsale-contracts'
+import { eosEvmTestnet } from 'smartsale-chains'
+import { parseUnits } from 'viem'
 
 export function DepositCard() {
   const { session } = useSession()
   const { address } = useAccount()
   const { writeContract, ...other } = useWriteContract()
   const [amount, setAmount] = useState<number>(50)
+  const { switchChain } = useSwitchChain()
+
+  console.log(session?.account)
 
   const deposit = () => {
     console.log({ amount, address })
     if (!amount || !address) return
     console.log('deposit')
+
+    switchChain({ chainId: SepoliaUSDT.chainId || eosEvmTestnet.id })
     writeContract({
       abi: SepoliaUSDT.abi,
       address: SepoliaUSDT.address,
       functionName: 'transfer',
       args: [
-        address,
         '0xA0Cf798816D4b9b9866b5330EEa46a18382f251e', // dev only
-        BigInt(amount)
+        parseUnits(amount.toString(), SepoliaUSDT.decimals)
       ],
       chainId: sepolia.id
     })
@@ -77,7 +82,7 @@ export function DepositCard() {
       <CardFooter className="flex flex-col space-y-2">
         <Button
           className="w-full bg-[#bd1e59]"
-          disabled={!session?.account}
+          // disabled={!session?.account}
           onClick={deposit}
         >
           Deposit

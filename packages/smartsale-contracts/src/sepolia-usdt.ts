@@ -1,7 +1,7 @@
 import { ERC20ContractData } from "./types";
 
 export const SepoliaUSDT : ERC20ContractData = {
-  address: '0x8d27DFbC8B7395660115C88AF7b05716b146e2B0',
+  address: '0x5b148580635e8b67184bcb496741e423f2c326bf',
   name: 'USDT Token',
   symbol: 'USDT',
   decimals: 6,

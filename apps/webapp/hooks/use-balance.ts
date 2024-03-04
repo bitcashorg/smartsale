@@ -1,9 +1,10 @@
 import { numberWithCommas } from '@/lib/utils'
+import { eosEvmTestnet } from 'smartsale-chains'
 import { Abi, Address, formatUnits, stringify } from 'viem'
 import { useBalance, useReadContracts } from 'wagmi'
 
 export function useNativeBalance(address?: Address) {
-  const balance = useBalance({ address })
+  const balance = useBalance({ address, chainId: eosEvmTestnet.id })
 
   const formatted =
     balance.data &&
@@ -15,11 +16,13 @@ export function useNativeBalance(address?: Address) {
 export function useErc20Balance({
   contract,
   address,
-  abi
+  abi,
+  chainId
 }: UseErc20BalanaceParams) {
   const common = {
     address: contract,
-    abi
+    abi,
+    chainId
   } as const
 
   const result = useReadContracts({
@@ -60,4 +63,5 @@ interface UseErc20BalanaceParams {
   contract: Address
   address: Address
   abi: Abi
+  chainId: number
 }

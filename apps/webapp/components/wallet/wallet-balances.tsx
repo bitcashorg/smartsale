@@ -9,6 +9,7 @@ import {
   TableRow
 } from '@/components/ui/table'
 import { useErc20Balance, useNativeBalance } from '@/hooks/use-balance'
+import { eosEvmTestnet } from 'smartsale-chains'
 import { TestnetUSDCred } from 'smartsale-contracts'
 import { useAccount } from 'wagmi'
 
@@ -18,7 +19,8 @@ export function WalletBalances() {
   const usdCredBalance = useErc20Balance({
     contract: TestnetUSDCred.address,
     abi: TestnetUSDCred.abi,
-    address: address || '0x'
+    address: address || '0x',
+    chainId: TestnetUSDCred.chainId || eosEvmTestnet.id
   })
   const eosEvmBalance = useNativeBalance(address)
 
