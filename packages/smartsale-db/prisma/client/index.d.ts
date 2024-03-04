@@ -5089,10 +5089,12 @@ export namespace Prisma {
 
   export type TransfersAvgAggregateOutputType = {
     chain_id: Decimal | null
+    amount: number | null
   }
 
   export type TransfersSumAggregateOutputType = {
     chain_id: Decimal | null
+    amount: bigint | null
   }
 
   export type TransfersMinAggregateOutputType = {
@@ -5103,7 +5105,8 @@ export namespace Prisma {
     from: string | null
     to: string | null
     type: string | null
-    amount: string | null
+    amount: bigint | null
+    usdcred_trx: string | null
   }
 
   export type TransfersMaxAggregateOutputType = {
@@ -5114,7 +5117,8 @@ export namespace Prisma {
     from: string | null
     to: string | null
     type: string | null
-    amount: string | null
+    amount: bigint | null
+    usdcred_trx: string | null
   }
 
   export type TransfersCountAggregateOutputType = {
@@ -5126,16 +5130,19 @@ export namespace Prisma {
     to: number
     type: number
     amount: number
+    usdcred_trx: number
     _all: number
   }
 
 
   export type TransfersAvgAggregateInputType = {
     chain_id?: true
+    amount?: true
   }
 
   export type TransfersSumAggregateInputType = {
     chain_id?: true
+    amount?: true
   }
 
   export type TransfersMinAggregateInputType = {
@@ -5147,6 +5154,7 @@ export namespace Prisma {
     to?: true
     type?: true
     amount?: true
+    usdcred_trx?: true
   }
 
   export type TransfersMaxAggregateInputType = {
@@ -5158,6 +5166,7 @@ export namespace Prisma {
     to?: true
     type?: true
     amount?: true
+    usdcred_trx?: true
   }
 
   export type TransfersCountAggregateInputType = {
@@ -5169,6 +5178,7 @@ export namespace Prisma {
     to?: true
     type?: true
     amount?: true
+    usdcred_trx?: true
     _all?: true
   }
 
@@ -5266,7 +5276,8 @@ export namespace Prisma {
     from: string | null
     to: string | null
     type: string | null
-    amount: string | null
+    amount: bigint | null
+    usdcred_trx: string | null
     _count: TransfersCountAggregateOutputType | null
     _avg: TransfersAvgAggregateOutputType | null
     _sum: TransfersSumAggregateOutputType | null
@@ -5297,6 +5308,7 @@ export namespace Prisma {
     to?: boolean
     type?: boolean
     amount?: boolean
+    usdcred_trx?: boolean
   }, ExtArgs["result"]["transfers"]>
 
   export type transfersSelectScalar = {
@@ -5308,6 +5320,7 @@ export namespace Prisma {
     to?: boolean
     type?: boolean
     amount?: boolean
+    usdcred_trx?: boolean
   }
 
 
@@ -5322,7 +5335,8 @@ export namespace Prisma {
       from: string | null
       to: string | null
       type: string | null
-      amount: string | null
+      amount: bigint | null
+      usdcred_trx: string | null
     }, ExtArgs["result"]["transfers"]>
     composites: {}
   }
@@ -5724,7 +5738,8 @@ export namespace Prisma {
     readonly from: FieldRef<"transfers", 'String'>
     readonly to: FieldRef<"transfers", 'String'>
     readonly type: FieldRef<"transfers", 'String'>
-    readonly amount: FieldRef<"transfers", 'String'>
+    readonly amount: FieldRef<"transfers", 'BigInt'>
+    readonly usdcred_trx: FieldRef<"transfers", 'String'>
   }
     
 
@@ -6099,7 +6114,8 @@ export namespace Prisma {
     from: 'from',
     to: 'to',
     type: 'type',
-    amount: 'amount'
+    amount: 'amount',
+    usdcred_trx: 'usdcred_trx'
   };
 
   export type TransfersScalarFieldEnum = (typeof TransfersScalarFieldEnum)[keyof typeof TransfersScalarFieldEnum]
@@ -6560,7 +6576,8 @@ export namespace Prisma {
     from?: StringNullableFilter<"transfers"> | string | null
     to?: StringNullableFilter<"transfers"> | string | null
     type?: StringNullableFilter<"transfers"> | string | null
-    amount?: StringNullableFilter<"transfers"> | string | null
+    amount?: BigIntNullableFilter<"transfers"> | bigint | number | null
+    usdcred_trx?: StringNullableFilter<"transfers"> | string | null
   }
 
   export type transfersOrderByWithRelationInput = {
@@ -6572,6 +6589,7 @@ export namespace Prisma {
     to?: SortOrderInput | SortOrder
     type?: SortOrderInput | SortOrder
     amount?: SortOrderInput | SortOrder
+    usdcred_trx?: SortOrderInput | SortOrder
   }
 
   export type transfersWhereUniqueInput = Prisma.AtLeast<{
@@ -6585,7 +6603,8 @@ export namespace Prisma {
     from?: StringNullableFilter<"transfers"> | string | null
     to?: StringNullableFilter<"transfers"> | string | null
     type?: StringNullableFilter<"transfers"> | string | null
-    amount?: StringNullableFilter<"transfers"> | string | null
+    amount?: BigIntNullableFilter<"transfers"> | bigint | number | null
+    usdcred_trx?: StringNullableFilter<"transfers"> | string | null
   }, "trx_hash">
 
   export type transfersOrderByWithAggregationInput = {
@@ -6597,6 +6616,7 @@ export namespace Prisma {
     to?: SortOrderInput | SortOrder
     type?: SortOrderInput | SortOrder
     amount?: SortOrderInput | SortOrder
+    usdcred_trx?: SortOrderInput | SortOrder
     _count?: transfersCountOrderByAggregateInput
     _avg?: transfersAvgOrderByAggregateInput
     _max?: transfersMaxOrderByAggregateInput
@@ -6615,7 +6635,8 @@ export namespace Prisma {
     from?: StringNullableWithAggregatesFilter<"transfers"> | string | null
     to?: StringNullableWithAggregatesFilter<"transfers"> | string | null
     type?: StringNullableWithAggregatesFilter<"transfers"> | string | null
-    amount?: StringNullableWithAggregatesFilter<"transfers"> | string | null
+    amount?: BigIntNullableWithAggregatesFilter<"transfers"> | bigint | number | null
+    usdcred_trx?: StringNullableWithAggregatesFilter<"transfers"> | string | null
   }
 
   export type auction_detailsCreateInput = {
@@ -6997,7 +7018,8 @@ export namespace Prisma {
     from?: string | null
     to?: string | null
     type?: string | null
-    amount?: string | null
+    amount?: bigint | number | null
+    usdcred_trx?: string | null
   }
 
   export type transfersUncheckedCreateInput = {
@@ -7008,7 +7030,8 @@ export namespace Prisma {
     from?: string | null
     to?: string | null
     type?: string | null
-    amount?: string | null
+    amount?: bigint | number | null
+    usdcred_trx?: string | null
   }
 
   export type transfersUpdateInput = {
@@ -7019,7 +7042,8 @@ export namespace Prisma {
     from?: NullableStringFieldUpdateOperationsInput | string | null
     to?: NullableStringFieldUpdateOperationsInput | string | null
     type?: NullableStringFieldUpdateOperationsInput | string | null
-    amount?: NullableStringFieldUpdateOperationsInput | string | null
+    amount?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    usdcred_trx?: NullableStringFieldUpdateOperationsInput | string | null
   }
 
   export type transfersUncheckedUpdateInput = {
@@ -7030,7 +7054,8 @@ export namespace Prisma {
     from?: NullableStringFieldUpdateOperationsInput | string | null
     to?: NullableStringFieldUpdateOperationsInput | string | null
     type?: NullableStringFieldUpdateOperationsInput | string | null
-    amount?: NullableStringFieldUpdateOperationsInput | string | null
+    amount?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    usdcred_trx?: NullableStringFieldUpdateOperationsInput | string | null
   }
 
   export type transfersCreateManyInput = {
@@ -7041,7 +7066,8 @@ export namespace Prisma {
     from?: string | null
     to?: string | null
     type?: string | null
-    amount?: string | null
+    amount?: bigint | number | null
+    usdcred_trx?: string | null
   }
 
   export type transfersUpdateManyMutationInput = {
@@ -7052,7 +7078,8 @@ export namespace Prisma {
     from?: NullableStringFieldUpdateOperationsInput | string | null
     to?: NullableStringFieldUpdateOperationsInput | string | null
     type?: NullableStringFieldUpdateOperationsInput | string | null
-    amount?: NullableStringFieldUpdateOperationsInput | string | null
+    amount?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    usdcred_trx?: NullableStringFieldUpdateOperationsInput | string | null
   }
 
   export type transfersUncheckedUpdateManyInput = {
@@ -7063,7 +7090,8 @@ export namespace Prisma {
     from?: NullableStringFieldUpdateOperationsInput | string | null
     to?: NullableStringFieldUpdateOperationsInput | string | null
     type?: NullableStringFieldUpdateOperationsInput | string | null
-    amount?: NullableStringFieldUpdateOperationsInput | string | null
+    amount?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
+    usdcred_trx?: NullableStringFieldUpdateOperationsInput | string | null
   }
 
   export type DateTimeFilter<$PrismaModel = never> = {
@@ -7555,10 +7583,12 @@ export namespace Prisma {
     to?: SortOrder
     type?: SortOrder
     amount?: SortOrder
+    usdcred_trx?: SortOrder
   }
 
   export type transfersAvgOrderByAggregateInput = {
     chain_id?: SortOrder
+    amount?: SortOrder
   }
 
   export type transfersMaxOrderByAggregateInput = {
@@ -7570,6 +7600,7 @@ export namespace Prisma {
     to?: SortOrder
     type?: SortOrder
     amount?: SortOrder
+    usdcred_trx?: SortOrder
   }
 
   export type transfersMinOrderByAggregateInput = {
@@ -7581,10 +7612,12 @@ export namespace Prisma {
     to?: SortOrder
     type?: SortOrder
     amount?: SortOrder
+    usdcred_trx?: SortOrder
   }
 
   export type transfersSumOrderByAggregateInput = {
     chain_id?: SortOrder
+    amount?: SortOrder
   }
 
   export type DecimalNullableWithAggregatesFilter<$PrismaModel = never> = {

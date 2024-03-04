@@ -2,6 +2,7 @@ import React from 'react'
 import { DepositCard } from '@/components/wallet/deposit-card'
 import { AuctionOrders } from '@/components/auction/auction-orders'
 import { WalletBalances } from '@/components/wallet/wallet-balances'
+import { UserTransactions } from '@/components/wallet/user-transactions'
 
 export default function WalletPage() {
   return (
@@ -19,6 +20,9 @@ export default function WalletPage() {
           </div>
           <React.Suspense fallback={<div>Loading ...</div>}>
             <AuctionOrders />
+          </React.Suspense>
+          <React.Suspense fallback={<div>Loading ...</div>}>
+            <UserTransactions />
           </React.Suspense>
         </div>
       </div>

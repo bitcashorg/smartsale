@@ -1,6 +1,5 @@
 import { numberWithCommas } from '@/lib/utils'
-import {erc20Abi} from 'abitype/abis'
-import { Address, formatUnits } from 'viem'
+import { Abi, Address, formatUnits, stringify } from 'viem'
 import { useBalance, useReadContracts } from 'wagmi'
 
 export function useNativeBalance(address?: Address) {
@@ -13,10 +12,14 @@ export function useNativeBalance(address?: Address) {
   return { formatted, ...balance }
 }
 
-export function useErc20Balance({ contract, address }: UseErc20BalanaceParams) {
+export function useErc20Balance({
+  contract,
+  address,
+  abi
+}: UseErc20BalanaceParams) {
   const common = {
     address: contract,
-    abi: erc20Abi
+    abi
   } as const
 
   const result = useReadContracts({
@@ -37,14 +40,18 @@ export function useErc20Balance({ contract, address }: UseErc20BalanaceParams) {
     ]
   })
 
+  console.log('data', stringify(result.data && result.data))
+
   const data = result.data && {
-    value: result.data[0].result!,
-    symbol: result.data[1].result!,
-    decimals: result.data[2].result!
+    value: BigInt((result.data[0].result as bigint) || 0),
+    symbol: result.data[1].result as string,
+    decimals: result.data[2].result as number
   }
 
   const formatted =
-    data && numberWithCommas(formatUnits(data.value, data.decimals))
+    data?.value && data?.decimals
+      ? numberWithCommas(formatUnits(data.value, data.decimals))
+      : null
 
   return { ...result, data, formatted }
 }
@@ -52,4 +59,5 @@ export function useErc20Balance({ contract, address }: UseErc20BalanaceParams) {
 interface UseErc20BalanaceParams {
   contract: Address
   address: Address
+  abi: Abi
 }

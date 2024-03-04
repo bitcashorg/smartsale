@@ -15,12 +15,25 @@ export async function writeToFile(data: string, filePath: string) {
   }
 }
 
-export function runPromisesInSeries<T>(promiseFns: (() => Promise<T>)[]): Promise<T | void> {
+export function runPromisesInSeries<T>(
+  promiseFns: (() => Promise<T>)[],
+  delay?: number,
+): Promise<T | void> {
   // Start with a Promise<void> to ensure compatibility with the accumulator's type
   return promiseFns.reduce<Promise<T | void>>((prevPromise, currentPromiseFn) => {
     // Chain the current promise to the accumulator after the previous one completes
     // Here, we ignore the result of the previous promise, as we're focusing on chaining
-    return prevPromise.then(() => currentPromiseFn())
+    return prevPromise.then(() => {
+      if (delay) {
+        // Introduce a delay before executing the current promise
+        return new Promise<void>((resolve) => {
+          setTimeout(() => resolve(), delay)
+        }).then(() => currentPromiseFn())
+      } else {
+        // If no delay is provided, execute the current promise immediately
+        return currentPromiseFn()
+      }
+    })
   }, Promise.resolve())
 }
 

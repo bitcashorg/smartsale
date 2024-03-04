@@ -26,6 +26,7 @@ export function BitcashLoginButton() {
   const { session, loginUri } = useSession()
   const { address } = useAccount()
   const balance = useErc20Balance({
+    abi: TestnetUSDCred.abi,
     contract: TestnetUSDCred.address,
     address: address || '0x'
   })

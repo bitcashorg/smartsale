@@ -15,6 +15,7 @@ import { useAccount, useWriteContract } from 'wagmi'
 import { erc20Abi } from 'abitype/abis'
 import { useState } from 'react'
 import { sepolia } from 'viem/chains'
+import { SepoliaUSDT } from 'smartsale-contracts'
 
 export function DepositCard() {
   const { session } = useSession()
@@ -27,12 +28,12 @@ export function DepositCard() {
     if (!amount || !address) return
     console.log('deposit')
     writeContract({
-      abi: erc20Abi,
-      address: '0x6b175474e89094c44da98b954eedeac495271d0f',
-      functionName: 'transferFrom',
+      abi: SepoliaUSDT.abi,
+      address: SepoliaUSDT.address,
+      functionName: 'transfer',
       args: [
         address,
-        '0xA0Cf798816D4b9b9866b5330EEa46a18382f251e',
+        '0xA0Cf798816D4b9b9866b5330EEa46a18382f251e', // dev only
         BigInt(amount)
       ],
       chainId: sepolia.id

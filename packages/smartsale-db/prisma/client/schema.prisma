@@ -71,12 +71,13 @@ model session {
 }
 
 model transfers {
-  trx_hash   String   @id
-  created_at DateTime @default(now()) @db.Timestamptz(6)
-  chain_id   Decimal? @db.Decimal
-  token      String?
-  from       String?
-  to         String?
-  type       String?  @default("")
-  amount     String?
+  trx_hash    String   @id
+  created_at  DateTime @default(now()) @db.Timestamptz(6)
+  chain_id    Decimal? @db.Decimal
+  token       String?
+  from        String?
+  to          String?
+  type        String?  @default("")
+  amount      BigInt?
+  usdcred_trx String?
 }

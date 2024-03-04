@@ -168,7 +168,8 @@ exports.Prisma.TransfersScalarFieldEnum = {
   from: 'from',
   to: 'to',
   type: 'type',
-  amount: 'amount'
+  amount: 'amount',
+  usdcred_trx: 'usdcred_trx'
 };
 
 exports.Prisma.SortOrder = {
