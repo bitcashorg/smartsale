@@ -3,12 +3,13 @@ import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { useAccount, useSwitchChain, useWriteContract } from "wagmi"
 import { useState } from "react"
-import { ERC20ContractData, SepoliaUSDT, TestnetMBOTSPL, TestnetUSDCred } from 'smartsale-contracts'
+import { ERC20ContractData, SepoliaUSDT, TestnetMBOTSPL, TestnetUSDCred, TestnetUSDT } from 'smartsale-contracts'
 import { TokenSelect } from "./token-select"
 import { parseUnits } from "viem"
 import { eosEvmTestnet } from "smartsale-chains"
+import { AddTokenToWallet } from "./add-token-to-metamask"
 
-const tokens = [TestnetUSDCred, SepoliaUSDT, TestnetMBOTSPL]
+const tokens = [TestnetUSDCred, SepoliaUSDT, TestnetMBOTSPL, TestnetUSDT]
 
 export function FaucetForm() {
   const account = useAccount()
@@ -16,11 +17,10 @@ export function FaucetForm() {
   const [quantity, setQuantity] = useState<string>('100') 
   const { writeContract, isPending, isSuccess, data, ...other } = useWriteContract()
   const [token,setToken] = useState<ERC20ContractData>(TestnetUSDCred)
-      const {  switchChain } = useSwitchChain()
+  const {  switchChain } = useSwitchChain()
 
   // Execute the contract write operation
   const callFaucet = async () => {
-
     const chainId = token.chainId || eosEvmTestnet.id
     switchChain({chainId})
     
@@ -71,18 +71,17 @@ export function FaucetForm() {
             onChange={(e) => setAddress(e.target.value)}
           />
         </div>
-        <div className="flex justify-center w-full">
-          <Button className="w-1/4 mt-4" type="submit" disabled={isPending} onClick={callFaucet}>
+        <div className="flex justify-center w-full gap-5 pt-2">
+          <Button className="w-1/4" type="submit" disabled={isPending} onClick={callFaucet}>
             Submit
           </Button>
+          <AddTokenToWallet {...token} />
         </div>
 
         <div className="flex justify-center w-full">
-          <code>{JSON.stringify({isPending, isSuccess})}</code>  
+          <code>{JSON.stringify({isPending, isSuccess, data})}</code>  
         </div>
-          <div className="flex justify-center w-full">
-            <code>{JSON.stringify({data})}</code>   
-        </div>
+     
     </div>
   )
 }

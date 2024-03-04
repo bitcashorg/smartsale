@@ -1,5 +1,6 @@
 import { ERC20ContractData } from "smartsale-contracts";
 import { useSwitchChain } from "wagmi";
+import { Button } from "./ui/button";
 
 
 export function AddTokenToWallet({ address, symbol, decimals, image, name, chainId }: ERC20ContractData){
@@ -29,12 +30,12 @@ export function AddTokenToWallet({ address, symbol, decimals, image, name, chain
   };
 
   return (
-    <button
+    <Button
       onClick={addTokenToMetaMask}
       className="px-4 py-2 text-white bg-blue-500 rounded hover:bg-blue-600 focus:outline-none focus:ring"
     >
       Add {name} to MetaMask
-    </button>
+    </Button>
   );
 }
 

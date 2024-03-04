@@ -1,8 +1,6 @@
 
 import { FaucetForm } from './components/faucet-form';
 import { useUsdtBalance } from './hooks/use-usdt-balance';
-import { TestnetUSDCred, TestnetMBOTSPL, SepoliaUSDT } from 'smartsale-contracts';
-import { AddTokenToWallet } from './components/add-token-to-metamask';
 import { Button } from './components/ui/button';
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 
@@ -25,12 +23,6 @@ export default function Component() {
      <main className="flex flex-col items-center justify-center py-12">
    
       <FaucetForm/>
-      
-      <div className='flex gap-5 p-10'>
-        <AddTokenToWallet {...TestnetUSDCred} />
-        <AddTokenToWallet {...TestnetMBOTSPL} />
-        <AddTokenToWallet {...SepoliaUSDT} />
-      </div>
 
       <div className='gap-5 p-10 '>
         <a href='https://faucet.testnet.evm.eosnetwork.com/' target='blank'><Button>EOS EVM Testnet Faucet</Button></a>

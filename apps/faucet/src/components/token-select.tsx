@@ -19,7 +19,7 @@ export function TokenSelect({options, ...props}:TokenSelectParams) {
       <SelectContent>
         <SelectGroup>
           <SelectLabel>Token</SelectLabel>
-          {options.map((o,i)=> <SelectItem key={i} value={i.toString()}>{o.symbol} on {o.chainId? 'Sepolia' : 'EOSEVM'}</SelectItem>)}
+          {options.map((o,i)=> <SelectItem key={i} value={i.toString()}>{o.symbol} on {(!o.chainId || o.chainId === 15557) ? 'EOSEVM' : 'Sepolia' }</SelectItem>)}
         </SelectGroup>
       </SelectContent>
     </Select>

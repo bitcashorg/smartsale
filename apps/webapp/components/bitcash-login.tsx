@@ -16,6 +16,7 @@ import { useEffect } from 'react'
 // import { bitcashLogin } from '@/lib/esr'
 import QRCode from 'react-qr-code'
 import { useToggle } from 'react-use'
+import { eosEvmTestnet } from 'smartsale-chains'
 import { TestnetUSDCred } from 'smartsale-contracts'
 import { useAccount } from 'wagmi'
 
@@ -28,7 +29,8 @@ export function BitcashLoginButton() {
   const balance = useErc20Balance({
     abi: TestnetUSDCred.abi,
     contract: TestnetUSDCred.address,
-    address: address || '0x'
+    address: address || '0x',
+    chainId: eosEvmTestnet.id
   })
 
   useEffect(() => {

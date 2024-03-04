@@ -6,7 +6,8 @@
     "deployUSDCredTestnet": "hardhat run scripts/deployUSDCredWithFaucet.js --network eosevm_testnet",
     "deployUSDCredMainnet": " hardhat run scripts/deployUSDCred.js --network eosevm_mainnet",
     "deployMBOTSPLTestnet": " hardhat run scripts/deployMBOTSPL.js --network eosevm_testnet",
-    "deployUSDTSepolia": " hardhat run scripts/deployUSDTWithFaucet.js --network sepolia"
+    "deployUSDTSepolia": " hardhat run scripts/deployUSDTWithFaucet.js --network sepolia",
+    "deployUSDTTestnet": " hardhat run scripts/deployUSDTWithFaucet.js --network eosevm_testnet"
   },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.2",
