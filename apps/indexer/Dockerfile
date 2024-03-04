@@ -17,7 +17,7 @@ COPY packages/tsconfig/package.json ./packages/tsconfig/package.json
 COPY bun.lockb .
 
 # Install dependencies for the entire monorepo
-# RUN mkdir hardhat
+RUN mkdir hardhat
 RUN bun install
 
 # Copy the specific workspaces
