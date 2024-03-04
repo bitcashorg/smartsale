@@ -36,7 +36,7 @@ export function UserTransactions() {
     fetchOrders(address)
     console.log(`subscribing to supabase transfer filtering by from=${address}`)
     const channel = supabase
-      .channel('*')
+      .channel('transfers')
       .on(
         'postgres_changes',
         { event: 'INSERT', schema: 'public', table: 'transfers' },

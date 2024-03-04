@@ -47,7 +47,7 @@ export function AuctionOrders() {
       `subscribing to supabase channel filtering by userId=${userId.data}`
     )
     const channel = supabase
-      .channel('*')
+      .channel('orders')
       .on(
         'postgres_changes',
         { event: 'INSERT', schema: 'public', table: 'orders' },
