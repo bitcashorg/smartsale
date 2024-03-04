@@ -28,22 +28,32 @@ export function WalletBalances() {
     {
       coin: 'USDCred',
       totalAmount: `${usdCredBalance.formatted || 0}`,
-      nertwork: 'EOS EVM'
+      nertwork: 'EOS EVM',
+      description: 'USD Bidding Token'
     },
     {
       coin: 'EOS (gas)',
       totalAmount: `${eosEvmBalance.formatted || 0}`,
-      nertwork: 'EOS EVM'
+      nertwork: 'EOS EVM',
+      description: 'Wrapped EOS on EOS EVM'
+    },
+    {
+      coin: 'MBOTSPL',
+      totalAmount: '0',
+      nertwork: 'EOS EVM',
+      description: 'Auctioning Prelaunch Token'
     },
     {
       coin: 'BITUSD',
       totalAmount: '0',
-      nertwork: 'EOS Mainnet'
+      nertwork: 'EOS Mainnet',
+      description: 'Bitcash USD stable coin'
     },
     {
       coin: 'EOS (gas)',
       totalAmount: '0',
-      nertwork: 'EOS Mainnet'
+      nertwork: 'EOS Mainnet',
+      description: 'Native EOS token'
     }
   ]
 
@@ -53,6 +63,7 @@ export function WalletBalances() {
         <TableRow>
           <TableHead>Coin</TableHead>
           <TableHead>Network</TableHead>
+          <TableHead>Info</TableHead>
           <TableHead className="text-right">Balance</TableHead>
         </TableRow>
       </TableHeader>
@@ -61,6 +72,7 @@ export function WalletBalances() {
           <TableRow key={coin.coin + coin.nertwork}>
             <TableCell className="font-medium">{coin.coin}</TableCell>
             <TableCell>{coin.nertwork}</TableCell>
+            <TableCell>{coin.description}</TableCell>
             <TableCell className="text-right">{coin.totalAmount}</TableCell>
           </TableRow>
         ))}
