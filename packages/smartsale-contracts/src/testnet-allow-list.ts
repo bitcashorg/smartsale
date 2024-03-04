@@ -3,6 +3,7 @@ import { ContractData } from "./types";
 export const TestnetAllowList : ContractData = {
   "address": "0x3D18904711fe451356eBA461B7747EA3Abff6c93",
   "indexFromBlock": 12241046,
+  chainId: 15557,
   "abi": [
     {
       "inputs": [],

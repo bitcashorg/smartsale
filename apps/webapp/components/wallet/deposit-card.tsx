@@ -14,9 +14,15 @@ import { useSession } from '@/hooks/use-session'
 import { useAccount, useSwitchChain, useWriteContract } from 'wagmi'
 import { useState } from 'react'
 import { sepolia } from 'viem/chains'
-import { SepoliaUSDT } from 'smartsale-contracts'
-import { eosEvmTestnet } from 'smartsale-chains'
+import {
+  ERC20ContractData,
+  SepoliaUSDT,
+  TestnetUSDT
+} from 'smartsale-contracts'
 import { parseUnits } from 'viem'
+import { smartsaleChains } from 'smartsale-chains'
+
+const tokens = [SepoliaUSDT, TestnetUSDT]
 
 export function DepositCard() {
   const { session } = useSession()
@@ -24,6 +30,7 @@ export function DepositCard() {
   const { writeContract, ...other } = useWriteContract()
   const [amount, setAmount] = useState<number>(50)
   const { switchChain } = useSwitchChain()
+  const [token, setToken] = useState<ERC20ContractData>(TestnetUSDT)
 
   console.log(session?.account)
 
@@ -32,21 +39,20 @@ export function DepositCard() {
     if (!amount || !address) return
     console.log('deposit')
 
-    switchChain({ chainId: SepoliaUSDT.chainId || eosEvmTestnet.id })
+    switchChain({ chainId: token.chainId })
     writeContract({
-      abi: SepoliaUSDT.abi,
-      address: SepoliaUSDT.address,
+      abi: token.abi,
+      address: token.address,
       functionName: 'transfer',
       args: [
-        '0xA0Cf798816D4b9b9866b5330EEa46a18382f251e', // dev only
-        parseUnits(amount.toString(), SepoliaUSDT.decimals)
+        '0x2C9DAAb3F463d6c6D248aCbeaAEe98687936374a', // dev only
+        parseUnits(amount.toString(), token.decimals)
       ],
-      chainId: sepolia.id
+      chainId: token.chainId
     })
   }
 
   console.log(other)
-
   return (
     <Card className="w-full bg-[#1a1a1a] rounded-xl p-4 text-white">
       <CardContent>
@@ -63,17 +69,20 @@ export function DepositCard() {
                 />
               </span>
             </div>
-            <Select>
+            <Select onValueChange={i => setToken(tokens[parseInt(i)])}>
               <SelectTrigger id="currency-out">
-                <SelectValue placeholder="SEPOLIA" />
+                <SelectValue
+                  placeholder={
+                    smartsaleChains.testnet.get(tokens[0].chainId)?.name
+                  }
+                />
               </SelectTrigger>
               <SelectContent position="popper">
-                <SelectItem value="sepolia">SEPOLIA</SelectItem>
-                <SelectItem value="eth">ETHEREUM</SelectItem>
-                <SelectItem value="arb">ARBITRUM</SelectItem>
-                <SelectItem value="pol">POLYGON</SelectItem>
-                <SelectItem value="ava">AVALANCHE</SelectItem>
-                <SelectItem value="eos">EOS</SelectItem>
+                {tokens.map((o, i) => (
+                  <SelectItem key={i} value={i.toString()}>
+                    {smartsaleChains.testnet.get(o.chainId)?.name}
+                  </SelectItem>
+                ))}
               </SelectContent>
             </Select>
           </div>

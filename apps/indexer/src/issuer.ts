@@ -1,34 +1,56 @@
-import { SepoliaUSDT, TestnetUSDCred } from 'smartsale-contracts'
+import { ERC20ContractData, SepoliaUSDT, TestnetUSDCred, TestnetUSDT } from 'smartsale-contracts'
 import { runPromisesInSeries } from './lib'
-import { sepoliaClient, walletClient } from './viem-client'
-import { Address, Log, createWalletClient, http, parseAbiItem, stringify } from 'viem'
+import { sepoliaClient } from './viem-client'
+import {
+  Address,
+  Log,
+  PublicClient,
+  createPublicClient,
+  createWalletClient,
+  http,
+  parseAbiItem,
+  stringify,
+} from 'viem'
 import { ApprovalEvent, TransferEvent } from './types'
 import { db } from 'smartsale-db'
 import { sepolia } from 'viem/chains'
-import { eosEvmTestnet } from 'smartsale-chains'
+import { eosEvmTestnet, smartsaleChains } from 'smartsale-chains'
 import { appenv } from './config'
+
+const tokens: ERC20ContractData[] = [SepoliaUSDT, TestnetUSDT]
 
 export async function startIssuer() {
   console.log('indexing usdt transfers')
+  tokens.map(listenToTransfers)
+}
 
+async function listenToTransfers(token: ERC20ContractData) {
+  const chain = smartsaleChains.testnet.get(token.chainId)
+  if (!chain) return
+  console.log(`listening usdt transfers for token ${token.symbol} on chain ${chain.name}`)
+  const client: PublicClient = createPublicClient({
+    chain,
+    transport: http(),
+  })
   try {
-    const logs = await sepoliaClient.getLogs({
-      address: SepoliaUSDT.address,
+    const logs = await client.getLogs({
+      address: token.address,
       event: parseAbiItem(
         'event Transfer(address indexed from, address indexed to, uint256 value)',
       ),
       args: {
         to: '0x2C9DAAb3F463d6c6D248aCbeaAEe98687936374a',
       },
-      fromBlock: BigInt(SepoliaUSDT.indexFromBlock),
+      fromBlock: BigInt(token.indexFromBlock),
     })
 
+    console.log('logs', logs.length)
     // delay prevents idempotent transactions:
     processLogs(logs, 2000)
 
     // Watch for new event logs
-    sepoliaClient.watchEvent({
-      address: SepoliaUSDT.address,
+    client.watchEvent({
+      address: token.address,
       event: parseAbiItem(
         'event Transfer(address indexed from, address indexed to, uint256 value)',
       ),

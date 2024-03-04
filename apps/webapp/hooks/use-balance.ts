@@ -1,7 +1,10 @@
 import { numberWithCommas } from '@/lib/utils'
+import { useEffect } from 'react'
 import { eosEvmTestnet } from 'smartsale-chains'
-import { Abi, Address, formatUnits, stringify } from 'viem'
+import { Abi, Address, formatUnits, stringify, parseAbi } from 'viem'
 import { useBalance, useReadContracts } from 'wagmi'
+import { readContract, watchBlockNumber } from '@wagmi/core'
+import { wagmiConfig } from '@/components/providers'
 
 export function useNativeBalance(address?: Address) {
   const balance = useBalance({ address, chainId: eosEvmTestnet.id })
@@ -9,6 +12,15 @@ export function useNativeBalance(address?: Address) {
   const formatted =
     balance.data &&
     numberWithCommas(formatUnits(balance.data.value, balance.data.decimals))
+
+  useEffect(() => {
+    const unwatch = watchBlockNumber(wagmiConfig, {
+      onBlockNumber() {
+        balance.refetch()
+      }
+    })
+    return () => unwatch()
+  })
 
   return { formatted, ...balance }
 }
@@ -55,6 +67,15 @@ export function useErc20Balance({
     data?.value && data?.decimals
       ? numberWithCommas(formatUnits(data.value, data.decimals))
       : null
+
+  useEffect(() => {
+    const unwatch = watchBlockNumber(wagmiConfig, {
+      onBlockNumber() {
+        result.refetch()
+      }
+    })
+    return () => unwatch()
+  })
 
   return { ...result, data, formatted }
 }

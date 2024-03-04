@@ -7,5 +7,6 @@ export const TestnetMBOTSPL : ERC20ContractData = {
   symbol: 'MBOTSPL',
   decimals: 6,
   indexFromBlock: 26677224,
+  chainId: 15557,
   abi: erc20Abi
 }

@@ -6,6 +6,7 @@ export const TestnetUSDCred : ERC20ContractData = {
   symbol: 'USDCred',
   decimals: 6,
   indexFromBlock: 26602200,
+  chainId: 15557,
   abi: [
     {
       "inputs": [
