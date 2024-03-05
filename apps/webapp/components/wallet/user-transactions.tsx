@@ -35,7 +35,7 @@ export function UserTransactions() {
     if (!address) return
     fetchOrders(address)
     console.log(`subscribing to supabase transfer filtering by from=${address}`)
-    const channel = supabase
+    const channel1 = supabase
       .channel('transfers')
       .on(
         'postgres_changes',
@@ -51,23 +51,31 @@ export function UserTransactions() {
         }
       )
       .subscribe()
+
+    const channel2 = supabase
+      .channel('transfers')
+      .on(
+        'postgres_changes',
+        { event: 'UPDATE', schema: 'public', table: 'transfers' },
+        payload => {
+          const isSameAddress = payload.new.from === address
+          console.log('supabase payload.new', payload.new, isSameAddress)
+          if (!isSameAddress) return
+          setTransactions(transactions => {
+            console.log('setTransactions', payload.new, transactions[0])
+            return [payload.new, ...transactions]
+          })
+        }
+      )
+      .subscribe()
     console.log('subscribed to supabase transactions...')
 
     return () => {
-      supabase.removeChannel(channel)
+      supabase.removeChannel(channel1)
+      supabase.removeChannel(channel2)
     }
   }, [setTransactions, address])
 
-  // console.log(stringify(transactions))
-  // trx_hash    String   @id
-  // created_at  DateTime @default(now()) @db.Timestamptz(6)
-  // chain_id    Decimal? @db.Decimal
-  // token       String?
-  // from        String?
-  // to          String?
-  // type        String?  @default("")
-  // amount      BigInt?
-  // usdcred_trx String?
   return (
     <div className="pt-8">
       <h2>Transaction history</h2>
