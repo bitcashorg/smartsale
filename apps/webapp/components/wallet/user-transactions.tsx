@@ -75,19 +75,17 @@ export function UserTransactions() {
         <TableHeader>
           <TableRow>
             <TableHead>Type</TableHead>
-            <TableHead>Date</TableHead>
             <TableHead>Amount</TableHead>
             <TableHead>Deposit Trx</TableHead>
             <TableHead>Issuance Trx</TableHead>
+            <TableHead>Date</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
           {transactions.map((trx, index) => (
             <TableRow key={index}>
               <TableCell>{trx.type}</TableCell>
-              <TableCell>
-                {format(new Date(trx.created_at), "MMMM d, yyyy 'at' h:mm a")}
-              </TableCell>
+
               <TableCell>{formatTokenAmount(trx.amount.toString())}</TableCell>
 
               <TableCell>
@@ -107,6 +105,9 @@ export function UserTransactions() {
                 >
                   {formatAddress(trx.usdcred_trx)}
                 </Link>
+              </TableCell>
+              <TableCell>
+                {format(new Date(trx.created_at), "MMMM d, yyyy 'at' h:mm a")}
               </TableCell>
             </TableRow>
           ))}
