@@ -20,11 +20,13 @@ export default function WalletPage() {
               <WithdrawCard />
             </div>
           </div>
-          <React.Suspense fallback={<div>Loading ...</div>}>
-            <AuctionOrders />
-          </React.Suspense>
+
           <React.Suspense fallback={<div>Loading ...</div>}>
             <UserTransactions />
+          </React.Suspense>
+
+          <React.Suspense fallback={<div>Loading ...</div>}>
+            <AuctionOrders />
           </React.Suspense>
         </div>
       </div>
