@@ -49,7 +49,9 @@
     "smartsale-db": "workspace:*",
     "smartsale-lib": "workspace:*",
     "viem": "latest",
-    "wagmi": "latest"
+    "wagmi": "latest",
+    "zod": "^3.22.4",
+    "zod-form-data": "^2.0.2"
   },
   "devDependencies": {
     "@prisma/nextjs-monorepo-workaround-plugin": "^5.10.1",

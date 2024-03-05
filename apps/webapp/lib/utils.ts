@@ -104,3 +104,12 @@ export function toSmallestUnit(value: string | number, decimals: number = 18) {
 export function numberWithCommas(x: number | string) {
   return x.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ',')
 }
+
+export function fromEntries(data: FormData) {
+  const object = Object.fromEntries(data)
+  const result: Record<string, string> = {}
+  Object.keys(object).forEach(key => {
+    result[key] = object[key].toString()
+  })
+  return result
+}

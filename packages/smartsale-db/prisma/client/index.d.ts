@@ -38,6 +38,11 @@ export type session = $Result.DefaultSelection<Prisma.$sessionPayload>
  * 
  */
 export type transfers = $Result.DefaultSelection<Prisma.$transfersPayload>
+/**
+ * Model whitelist
+ * This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
+ */
+export type whitelist = $Result.DefaultSelection<Prisma.$whitelistPayload>
 
 /**
  * ##  Prisma Client ʲˢ
@@ -210,6 +215,16 @@ export class PrismaClient<
     * ```
     */
   get transfers(): Prisma.transfersDelegate<ExtArgs>;
+
+  /**
+   * `prisma.whitelist`: Exposes CRUD operations for the **whitelist** model.
+    * Example usage:
+    * ```ts
+    * // Fetch zero or more Whitelists
+    * const whitelists = await prisma.whitelist.findMany()
+    * ```
+    */
+  get whitelist(): Prisma.whitelistDelegate<ExtArgs>;
 }
 
 export namespace Prisma {
@@ -684,7 +699,8 @@ export namespace Prisma {
     orders: 'orders',
     users: 'users',
     session: 'session',
-    transfers: 'transfers'
+    transfers: 'transfers',
+    whitelist: 'whitelist'
   };
 
   export type ModelName = (typeof ModelName)[keyof typeof ModelName]
@@ -701,7 +717,7 @@ export namespace Prisma {
 
   export type TypeMap<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     meta: {
-      modelProps: 'auction_details' | 'orders' | 'users' | 'session' | 'transfers'
+      modelProps: 'auction_details' | 'orders' | 'users' | 'session' | 'transfers' | 'whitelist'
       txIsolationLevel: Prisma.TransactionIsolationLevel
     },
     model: {
@@ -1032,6 +1048,72 @@ export namespace Prisma {
           count: {
             args: Prisma.transfersCountArgs<ExtArgs>,
             result: $Utils.Optional<TransfersCountAggregateOutputType> | number
+          }
+        }
+      }
+      whitelist: {
+        payload: Prisma.$whitelistPayload<ExtArgs>
+        fields: Prisma.whitelistFieldRefs
+        operations: {
+          findUnique: {
+            args: Prisma.whitelistFindUniqueArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$whitelistPayload> | null
+          }
+          findUniqueOrThrow: {
+            args: Prisma.whitelistFindUniqueOrThrowArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$whitelistPayload>
+          }
+          findFirst: {
+            args: Prisma.whitelistFindFirstArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$whitelistPayload> | null
+          }
+          findFirstOrThrow: {
+            args: Prisma.whitelistFindFirstOrThrowArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$whitelistPayload>
+          }
+          findMany: {
+            args: Prisma.whitelistFindManyArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$whitelistPayload>[]
+          }
+          create: {
+            args: Prisma.whitelistCreateArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$whitelistPayload>
+          }
+          createMany: {
+            args: Prisma.whitelistCreateManyArgs<ExtArgs>,
+            result: Prisma.BatchPayload
+          }
+          delete: {
+            args: Prisma.whitelistDeleteArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$whitelistPayload>
+          }
+          update: {
+            args: Prisma.whitelistUpdateArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$whitelistPayload>
+          }
+          deleteMany: {
+            args: Prisma.whitelistDeleteManyArgs<ExtArgs>,
+            result: Prisma.BatchPayload
+          }
+          updateMany: {
+            args: Prisma.whitelistUpdateManyArgs<ExtArgs>,
+            result: Prisma.BatchPayload
+          }
+          upsert: {
+            args: Prisma.whitelistUpsertArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$whitelistPayload>
+          }
+          aggregate: {
+            args: Prisma.WhitelistAggregateArgs<ExtArgs>,
+            result: $Utils.Optional<AggregateWhitelist>
+          }
+          groupBy: {
+            args: Prisma.whitelistGroupByArgs<ExtArgs>,
+            result: $Utils.Optional<WhitelistGroupByOutputType>[]
+          }
+          count: {
+            args: Prisma.whitelistCountArgs<ExtArgs>,
+            result: $Utils.Optional<WhitelistCountAggregateOutputType> | number
           }
         }
       }
@@ -6028,6 +6110,888 @@ export namespace Prisma {
 
 
   /**
+   * Model whitelist
+   */
+
+  export type AggregateWhitelist = {
+    _count: WhitelistCountAggregateOutputType | null
+    _avg: WhitelistAvgAggregateOutputType | null
+    _sum: WhitelistSumAggregateOutputType | null
+    _min: WhitelistMinAggregateOutputType | null
+    _max: WhitelistMaxAggregateOutputType | null
+  }
+
+  export type WhitelistAvgAggregateOutputType = {
+    project_id: number | null
+  }
+
+  export type WhitelistSumAggregateOutputType = {
+    project_id: number | null
+  }
+
+  export type WhitelistMinAggregateOutputType = {
+    project_id: number | null
+    created_at: Date | null
+    address: string | null
+  }
+
+  export type WhitelistMaxAggregateOutputType = {
+    project_id: number | null
+    created_at: Date | null
+    address: string | null
+  }
+
+  export type WhitelistCountAggregateOutputType = {
+    project_id: number
+    created_at: number
+    address: number
+    _all: number
+  }
+
+
+  export type WhitelistAvgAggregateInputType = {
+    project_id?: true
+  }
+
+  export type WhitelistSumAggregateInputType = {
+    project_id?: true
+  }
+
+  export type WhitelistMinAggregateInputType = {
+    project_id?: true
+    created_at?: true
+    address?: true
+  }
+
+  export type WhitelistMaxAggregateInputType = {
+    project_id?: true
+    created_at?: true
+    address?: true
+  }
+
+  export type WhitelistCountAggregateInputType = {
+    project_id?: true
+    created_at?: true
+    address?: true
+    _all?: true
+  }
+
+  export type WhitelistAggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which whitelist to aggregate.
+     */
+    where?: whitelistWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of whitelists to fetch.
+     */
+    orderBy?: whitelistOrderByWithRelationInput | whitelistOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the start position
+     */
+    cursor?: whitelistWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` whitelists from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` whitelists.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Count returned whitelists
+    **/
+    _count?: true | WhitelistCountAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to average
+    **/
+    _avg?: WhitelistAvgAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to sum
+    **/
+    _sum?: WhitelistSumAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the minimum value
+    **/
+    _min?: WhitelistMinAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the maximum value
+    **/
+    _max?: WhitelistMaxAggregateInputType
+  }
+
+  export type GetWhitelistAggregateType<T extends WhitelistAggregateArgs> = {
+        [P in keyof T & keyof AggregateWhitelist]: P extends '_count' | 'count'
+      ? T[P] extends true
+        ? number
+        : GetScalarType<T[P], AggregateWhitelist[P]>
+      : GetScalarType<T[P], AggregateWhitelist[P]>
+  }
+
+
+
+
+  export type whitelistGroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: whitelistWhereInput
+    orderBy?: whitelistOrderByWithAggregationInput | whitelistOrderByWithAggregationInput[]
+    by: WhitelistScalarFieldEnum[] | WhitelistScalarFieldEnum
+    having?: whitelistScalarWhereWithAggregatesInput
+    take?: number
+    skip?: number
+    _count?: WhitelistCountAggregateInputType | true
+    _avg?: WhitelistAvgAggregateInputType
+    _sum?: WhitelistSumAggregateInputType
+    _min?: WhitelistMinAggregateInputType
+    _max?: WhitelistMaxAggregateInputType
+  }
+
+  export type WhitelistGroupByOutputType = {
+    project_id: number
+    created_at: Date
+    address: string
+    _count: WhitelistCountAggregateOutputType | null
+    _avg: WhitelistAvgAggregateOutputType | null
+    _sum: WhitelistSumAggregateOutputType | null
+    _min: WhitelistMinAggregateOutputType | null
+    _max: WhitelistMaxAggregateOutputType | null
+  }
+
+  type GetWhitelistGroupByPayload<T extends whitelistGroupByArgs> = Prisma.PrismaPromise<
+    Array<
+      PickEnumerable<WhitelistGroupByOutputType, T['by']> &
+        {
+          [P in ((keyof T) & (keyof WhitelistGroupByOutputType))]: P extends '_count'
+            ? T[P] extends boolean
+              ? number
+              : GetScalarType<T[P], WhitelistGroupByOutputType[P]>
+            : GetScalarType<T[P], WhitelistGroupByOutputType[P]>
+        }
+      >
+    >
+
+
+  export type whitelistSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    project_id?: boolean
+    created_at?: boolean
+    address?: boolean
+  }, ExtArgs["result"]["whitelist"]>
+
+  export type whitelistSelectScalar = {
+    project_id?: boolean
+    created_at?: boolean
+    address?: boolean
+  }
+
+
+  export type $whitelistPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    name: "whitelist"
+    objects: {}
+    scalars: $Extensions.GetPayloadResult<{
+      project_id: number
+      created_at: Date
+      address: string
+    }, ExtArgs["result"]["whitelist"]>
+    composites: {}
+  }
+
+
+  type whitelistGetPayload<S extends boolean | null | undefined | whitelistDefaultArgs> = $Result.GetResult<Prisma.$whitelistPayload, S>
+
+  type whitelistCountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = 
+    Omit<whitelistFindManyArgs, 'select' | 'include' | 'distinct'> & {
+      select?: WhitelistCountAggregateInputType | true
+    }
+
+  export interface whitelistDelegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> {
+    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['whitelist'], meta: { name: 'whitelist' } }
+    /**
+     * Find zero or one Whitelist that matches the filter.
+     * @param {whitelistFindUniqueArgs} args - Arguments to find a Whitelist
+     * @example
+     * // Get one Whitelist
+     * const whitelist = await prisma.whitelist.findUnique({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findUnique<T extends whitelistFindUniqueArgs<ExtArgs>>(
+      args: SelectSubset<T, whitelistFindUniqueArgs<ExtArgs>>
+    ): Prisma__whitelistClient<$Result.GetResult<Prisma.$whitelistPayload<ExtArgs>, T, 'findUnique'> | null, null, ExtArgs>
+
+    /**
+     * Find one Whitelist that matches the filter or throw an error  with `error.code='P2025'` 
+     *     if no matches were found.
+     * @param {whitelistFindUniqueOrThrowArgs} args - Arguments to find a Whitelist
+     * @example
+     * // Get one Whitelist
+     * const whitelist = await prisma.whitelist.findUniqueOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findUniqueOrThrow<T extends whitelistFindUniqueOrThrowArgs<ExtArgs>>(
+      args?: SelectSubset<T, whitelistFindUniqueOrThrowArgs<ExtArgs>>
+    ): Prisma__whitelistClient<$Result.GetResult<Prisma.$whitelistPayload<ExtArgs>, T, 'findUniqueOrThrow'>, never, ExtArgs>
+
+    /**
+     * Find the first Whitelist that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {whitelistFindFirstArgs} args - Arguments to find a Whitelist
+     * @example
+     * // Get one Whitelist
+     * const whitelist = await prisma.whitelist.findFirst({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findFirst<T extends whitelistFindFirstArgs<ExtArgs>>(
+      args?: SelectSubset<T, whitelistFindFirstArgs<ExtArgs>>
+    ): Prisma__whitelistClient<$Result.GetResult<Prisma.$whitelistPayload<ExtArgs>, T, 'findFirst'> | null, null, ExtArgs>
+
+    /**
+     * Find the first Whitelist that matches the filter or
+     * throw `PrismaKnownClientError` with `P2025` code if no matches were found.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {whitelistFindFirstOrThrowArgs} args - Arguments to find a Whitelist
+     * @example
+     * // Get one Whitelist
+     * const whitelist = await prisma.whitelist.findFirstOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findFirstOrThrow<T extends whitelistFindFirstOrThrowArgs<ExtArgs>>(
+      args?: SelectSubset<T, whitelistFindFirstOrThrowArgs<ExtArgs>>
+    ): Prisma__whitelistClient<$Result.GetResult<Prisma.$whitelistPayload<ExtArgs>, T, 'findFirstOrThrow'>, never, ExtArgs>
+
+    /**
+     * Find zero or more Whitelists that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {whitelistFindManyArgs=} args - Arguments to filter and select certain fields only.
+     * @example
+     * // Get all Whitelists
+     * const whitelists = await prisma.whitelist.findMany()
+     * 
+     * // Get first 10 Whitelists
+     * const whitelists = await prisma.whitelist.findMany({ take: 10 })
+     * 
+     * // Only select the `project_id`
+     * const whitelistWithProject_idOnly = await prisma.whitelist.findMany({ select: { project_id: true } })
+     * 
+    **/
+    findMany<T extends whitelistFindManyArgs<ExtArgs>>(
+      args?: SelectSubset<T, whitelistFindManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<$Result.GetResult<Prisma.$whitelistPayload<ExtArgs>, T, 'findMany'>>
+
+    /**
+     * Create a Whitelist.
+     * @param {whitelistCreateArgs} args - Arguments to create a Whitelist.
+     * @example
+     * // Create one Whitelist
+     * const Whitelist = await prisma.whitelist.create({
+     *   data: {
+     *     // ... data to create a Whitelist
+     *   }
+     * })
+     * 
+    **/
+    create<T extends whitelistCreateArgs<ExtArgs>>(
+      args: SelectSubset<T, whitelistCreateArgs<ExtArgs>>
+    ): Prisma__whitelistClient<$Result.GetResult<Prisma.$whitelistPayload<ExtArgs>, T, 'create'>, never, ExtArgs>
+
+    /**
+     * Create many Whitelists.
+     *     @param {whitelistCreateManyArgs} args - Arguments to create many Whitelists.
+     *     @example
+     *     // Create many Whitelists
+     *     const whitelist = await prisma.whitelist.createMany({
+     *       data: {
+     *         // ... provide data here
+     *       }
+     *     })
+     *     
+    **/
+    createMany<T extends whitelistCreateManyArgs<ExtArgs>>(
+      args?: SelectSubset<T, whitelistCreateManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Delete a Whitelist.
+     * @param {whitelistDeleteArgs} args - Arguments to delete one Whitelist.
+     * @example
+     * // Delete one Whitelist
+     * const Whitelist = await prisma.whitelist.delete({
+     *   where: {
+     *     // ... filter to delete one Whitelist
+     *   }
+     * })
+     * 
+    **/
+    delete<T extends whitelistDeleteArgs<ExtArgs>>(
+      args: SelectSubset<T, whitelistDeleteArgs<ExtArgs>>
+    ): Prisma__whitelistClient<$Result.GetResult<Prisma.$whitelistPayload<ExtArgs>, T, 'delete'>, never, ExtArgs>
+
+    /**
+     * Update one Whitelist.
+     * @param {whitelistUpdateArgs} args - Arguments to update one Whitelist.
+     * @example
+     * // Update one Whitelist
+     * const whitelist = await prisma.whitelist.update({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+    **/
+    update<T extends whitelistUpdateArgs<ExtArgs>>(
+      args: SelectSubset<T, whitelistUpdateArgs<ExtArgs>>
+    ): Prisma__whitelistClient<$Result.GetResult<Prisma.$whitelistPayload<ExtArgs>, T, 'update'>, never, ExtArgs>
+
+    /**
+     * Delete zero or more Whitelists.
+     * @param {whitelistDeleteManyArgs} args - Arguments to filter Whitelists to delete.
+     * @example
+     * // Delete a few Whitelists
+     * const { count } = await prisma.whitelist.deleteMany({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     * 
+    **/
+    deleteMany<T extends whitelistDeleteManyArgs<ExtArgs>>(
+      args?: SelectSubset<T, whitelistDeleteManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more Whitelists.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {whitelistUpdateManyArgs} args - Arguments to update one or more rows.
+     * @example
+     * // Update many Whitelists
+     * const whitelist = await prisma.whitelist.updateMany({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+    **/
+    updateMany<T extends whitelistUpdateManyArgs<ExtArgs>>(
+      args: SelectSubset<T, whitelistUpdateManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Create or update one Whitelist.
+     * @param {whitelistUpsertArgs} args - Arguments to update or create a Whitelist.
+     * @example
+     * // Update or create a Whitelist
+     * const whitelist = await prisma.whitelist.upsert({
+     *   create: {
+     *     // ... data to create a Whitelist
+     *   },
+     *   update: {
+     *     // ... in case it already exists, update
+     *   },
+     *   where: {
+     *     // ... the filter for the Whitelist we want to update
+     *   }
+     * })
+    **/
+    upsert<T extends whitelistUpsertArgs<ExtArgs>>(
+      args: SelectSubset<T, whitelistUpsertArgs<ExtArgs>>
+    ): Prisma__whitelistClient<$Result.GetResult<Prisma.$whitelistPayload<ExtArgs>, T, 'upsert'>, never, ExtArgs>
+
+    /**
+     * Count the number of Whitelists.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {whitelistCountArgs} args - Arguments to filter Whitelists to count.
+     * @example
+     * // Count the number of Whitelists
+     * const count = await prisma.whitelist.count({
+     *   where: {
+     *     // ... the filter for the Whitelists we want to count
+     *   }
+     * })
+    **/
+    count<T extends whitelistCountArgs>(
+      args?: Subset<T, whitelistCountArgs>,
+    ): Prisma.PrismaPromise<
+      T extends $Utils.Record<'select', any>
+        ? T['select'] extends true
+          ? number
+          : GetScalarType<T['select'], WhitelistCountAggregateOutputType>
+        : number
+    >
+
+    /**
+     * Allows you to perform aggregations operations on a Whitelist.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {WhitelistAggregateArgs} args - Select which aggregations you would like to apply and on what fields.
+     * @example
+     * // Ordered by age ascending
+     * // Where email contains prisma.io
+     * // Limited to the 10 users
+     * const aggregations = await prisma.user.aggregate({
+     *   _avg: {
+     *     age: true,
+     *   },
+     *   where: {
+     *     email: {
+     *       contains: "prisma.io",
+     *     },
+     *   },
+     *   orderBy: {
+     *     age: "asc",
+     *   },
+     *   take: 10,
+     * })
+    **/
+    aggregate<T extends WhitelistAggregateArgs>(args: Subset<T, WhitelistAggregateArgs>): Prisma.PrismaPromise<GetWhitelistAggregateType<T>>
+
+    /**
+     * Group by Whitelist.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {whitelistGroupByArgs} args - Group by arguments.
+     * @example
+     * // Group by city, order by createdAt, get count
+     * const result = await prisma.user.groupBy({
+     *   by: ['city', 'createdAt'],
+     *   orderBy: {
+     *     createdAt: true
+     *   },
+     *   _count: {
+     *     _all: true
+     *   },
+     * })
+     * 
+    **/
+    groupBy<
+      T extends whitelistGroupByArgs,
+      HasSelectOrTake extends Or<
+        Extends<'skip', Keys<T>>,
+        Extends<'take', Keys<T>>
+      >,
+      OrderByArg extends True extends HasSelectOrTake
+        ? { orderBy: whitelistGroupByArgs['orderBy'] }
+        : { orderBy?: whitelistGroupByArgs['orderBy'] },
+      OrderFields extends ExcludeUnderscoreKeys<Keys<MaybeTupleToUnion<T['orderBy']>>>,
+      ByFields extends MaybeTupleToUnion<T['by']>,
+      ByValid extends Has<ByFields, OrderFields>,
+      HavingFields extends GetHavingFields<T['having']>,
+      HavingValid extends Has<ByFields, HavingFields>,
+      ByEmpty extends T['by'] extends never[] ? True : False,
+      InputErrors extends ByEmpty extends True
+      ? `Error: "by" must not be empty.`
+      : HavingValid extends False
+      ? {
+          [P in HavingFields]: P extends ByFields
+            ? never
+            : P extends string
+            ? `Error: Field "${P}" used in "having" needs to be provided in "by".`
+            : [
+                Error,
+                'Field ',
+                P,
+                ` in "having" needs to be provided in "by"`,
+              ]
+        }[HavingFields]
+      : 'take' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "take", you also need to provide "orderBy"'
+      : 'skip' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "skip", you also need to provide "orderBy"'
+      : ByValid extends True
+      ? {}
+      : {
+          [P in OrderFields]: P extends ByFields
+            ? never
+            : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+        }[OrderFields]
+    >(args: SubsetIntersection<T, whitelistGroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetWhitelistGroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
+  /**
+   * Fields of the whitelist model
+   */
+  readonly fields: whitelistFieldRefs;
+  }
+
+  /**
+   * The delegate class that acts as a "Promise-like" for whitelist.
+   * Why is this prefixed with `Prisma__`?
+   * Because we want to prevent naming conflicts as mentioned in
+   * https://github.com/prisma/prisma-client-js/issues/707
+   */
+  export interface Prisma__whitelistClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> extends Prisma.PrismaPromise<T> {
+    readonly [Symbol.toStringTag]: 'PrismaPromise';
+
+
+    /**
+     * Attaches callbacks for the resolution and/or rejection of the Promise.
+     * @param onfulfilled The callback to execute when the Promise is resolved.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of which ever callback is executed.
+     */
+    then<TResult1 = T, TResult2 = never>(onfulfilled?: ((value: T) => TResult1 | PromiseLike<TResult1>) | undefined | null, onrejected?: ((reason: any) => TResult2 | PromiseLike<TResult2>) | undefined | null): $Utils.JsPromise<TResult1 | TResult2>;
+    /**
+     * Attaches a callback for only the rejection of the Promise.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of the callback.
+     */
+    catch<TResult = never>(onrejected?: ((reason: any) => TResult | PromiseLike<TResult>) | undefined | null): $Utils.JsPromise<T | TResult>;
+    /**
+     * Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
+     * resolved value cannot be modified from the callback.
+     * @param onfinally The callback to execute when the Promise is settled (fulfilled or rejected).
+     * @returns A Promise for the completion of the callback.
+     */
+    finally(onfinally?: (() => void) | undefined | null): $Utils.JsPromise<T>;
+  }
+
+
+
+  /**
+   * Fields of the whitelist model
+   */ 
+  interface whitelistFieldRefs {
+    readonly project_id: FieldRef<"whitelist", 'Int'>
+    readonly created_at: FieldRef<"whitelist", 'DateTime'>
+    readonly address: FieldRef<"whitelist", 'String'>
+  }
+    
+
+  // Custom InputTypes
+
+  /**
+   * whitelist findUnique
+   */
+  export type whitelistFindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the whitelist
+     */
+    select?: whitelistSelect<ExtArgs> | null
+    /**
+     * Filter, which whitelist to fetch.
+     */
+    where: whitelistWhereUniqueInput
+  }
+
+
+  /**
+   * whitelist findUniqueOrThrow
+   */
+  export type whitelistFindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the whitelist
+     */
+    select?: whitelistSelect<ExtArgs> | null
+    /**
+     * Filter, which whitelist to fetch.
+     */
+    where: whitelistWhereUniqueInput
+  }
+
+
+  /**
+   * whitelist findFirst
+   */
+  export type whitelistFindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the whitelist
+     */
+    select?: whitelistSelect<ExtArgs> | null
+    /**
+     * Filter, which whitelist to fetch.
+     */
+    where?: whitelistWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of whitelists to fetch.
+     */
+    orderBy?: whitelistOrderByWithRelationInput | whitelistOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for whitelists.
+     */
+    cursor?: whitelistWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` whitelists from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` whitelists.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of whitelists.
+     */
+    distinct?: WhitelistScalarFieldEnum | WhitelistScalarFieldEnum[]
+  }
+
+
+  /**
+   * whitelist findFirstOrThrow
+   */
+  export type whitelistFindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the whitelist
+     */
+    select?: whitelistSelect<ExtArgs> | null
+    /**
+     * Filter, which whitelist to fetch.
+     */
+    where?: whitelistWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of whitelists to fetch.
+     */
+    orderBy?: whitelistOrderByWithRelationInput | whitelistOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for whitelists.
+     */
+    cursor?: whitelistWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` whitelists from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` whitelists.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of whitelists.
+     */
+    distinct?: WhitelistScalarFieldEnum | WhitelistScalarFieldEnum[]
+  }
+
+
+  /**
+   * whitelist findMany
+   */
+  export type whitelistFindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the whitelist
+     */
+    select?: whitelistSelect<ExtArgs> | null
+    /**
+     * Filter, which whitelists to fetch.
+     */
+    where?: whitelistWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of whitelists to fetch.
+     */
+    orderBy?: whitelistOrderByWithRelationInput | whitelistOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for listing whitelists.
+     */
+    cursor?: whitelistWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` whitelists from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` whitelists.
+     */
+    skip?: number
+    distinct?: WhitelistScalarFieldEnum | WhitelistScalarFieldEnum[]
+  }
+
+
+  /**
+   * whitelist create
+   */
+  export type whitelistCreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the whitelist
+     */
+    select?: whitelistSelect<ExtArgs> | null
+    /**
+     * The data needed to create a whitelist.
+     */
+    data: XOR<whitelistCreateInput, whitelistUncheckedCreateInput>
+  }
+
+
+  /**
+   * whitelist createMany
+   */
+  export type whitelistCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to create many whitelists.
+     */
+    data: whitelistCreateManyInput | whitelistCreateManyInput[]
+    skipDuplicates?: boolean
+  }
+
+
+  /**
+   * whitelist update
+   */
+  export type whitelistUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the whitelist
+     */
+    select?: whitelistSelect<ExtArgs> | null
+    /**
+     * The data needed to update a whitelist.
+     */
+    data: XOR<whitelistUpdateInput, whitelistUncheckedUpdateInput>
+    /**
+     * Choose, which whitelist to update.
+     */
+    where: whitelistWhereUniqueInput
+  }
+
+
+  /**
+   * whitelist updateMany
+   */
+  export type whitelistUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to update whitelists.
+     */
+    data: XOR<whitelistUpdateManyMutationInput, whitelistUncheckedUpdateManyInput>
+    /**
+     * Filter which whitelists to update
+     */
+    where?: whitelistWhereInput
+  }
+
+
+  /**
+   * whitelist upsert
+   */
+  export type whitelistUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the whitelist
+     */
+    select?: whitelistSelect<ExtArgs> | null
+    /**
+     * The filter to search for the whitelist to update in case it exists.
+     */
+    where: whitelistWhereUniqueInput
+    /**
+     * In case the whitelist found by the `where` argument doesn't exist, create a new whitelist with this data.
+     */
+    create: XOR<whitelistCreateInput, whitelistUncheckedCreateInput>
+    /**
+     * In case the whitelist was found with the provided `where` argument, update it with this data.
+     */
+    update: XOR<whitelistUpdateInput, whitelistUncheckedUpdateInput>
+  }
+
+
+  /**
+   * whitelist delete
+   */
+  export type whitelistDeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the whitelist
+     */
+    select?: whitelistSelect<ExtArgs> | null
+    /**
+     * Filter which whitelist to delete.
+     */
+    where: whitelistWhereUniqueInput
+  }
+
+
+  /**
+   * whitelist deleteMany
+   */
+  export type whitelistDeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which whitelists to delete
+     */
+    where?: whitelistWhereInput
+  }
+
+
+  /**
+   * whitelist without action
+   */
+  export type whitelistDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the whitelist
+     */
+    select?: whitelistSelect<ExtArgs> | null
+  }
+
+
+
+  /**
    * Enums
    */
 
@@ -6119,6 +7083,15 @@ export namespace Prisma {
   };
 
   export type TransfersScalarFieldEnum = (typeof TransfersScalarFieldEnum)[keyof typeof TransfersScalarFieldEnum]
+
+
+  export const WhitelistScalarFieldEnum: {
+    project_id: 'project_id',
+    created_at: 'created_at',
+    address: 'address'
+  };
+
+  export type WhitelistScalarFieldEnum = (typeof WhitelistScalarFieldEnum)[keyof typeof WhitelistScalarFieldEnum]
 
 
   export const SortOrder: {
@@ -6639,6 +7612,51 @@ export namespace Prisma {
     usdcred_trx?: StringNullableWithAggregatesFilter<"transfers"> | string | null
   }
 
+  export type whitelistWhereInput = {
+    AND?: whitelistWhereInput | whitelistWhereInput[]
+    OR?: whitelistWhereInput[]
+    NOT?: whitelistWhereInput | whitelistWhereInput[]
+    project_id?: IntFilter<"whitelist"> | number
+    created_at?: DateTimeFilter<"whitelist"> | Date | string
+    address?: StringFilter<"whitelist"> | string
+  }
+
+  export type whitelistOrderByWithRelationInput = {
+    project_id?: SortOrder
+    created_at?: SortOrder
+    address?: SortOrder
+  }
+
+  export type whitelistWhereUniqueInput = Prisma.AtLeast<{
+    project_id_address?: whitelistProject_idAddressCompoundUniqueInput
+    AND?: whitelistWhereInput | whitelistWhereInput[]
+    OR?: whitelistWhereInput[]
+    NOT?: whitelistWhereInput | whitelistWhereInput[]
+    project_id?: IntFilter<"whitelist"> | number
+    created_at?: DateTimeFilter<"whitelist"> | Date | string
+    address?: StringFilter<"whitelist"> | string
+  }, "project_id_address">
+
+  export type whitelistOrderByWithAggregationInput = {
+    project_id?: SortOrder
+    created_at?: SortOrder
+    address?: SortOrder
+    _count?: whitelistCountOrderByAggregateInput
+    _avg?: whitelistAvgOrderByAggregateInput
+    _max?: whitelistMaxOrderByAggregateInput
+    _min?: whitelistMinOrderByAggregateInput
+    _sum?: whitelistSumOrderByAggregateInput
+  }
+
+  export type whitelistScalarWhereWithAggregatesInput = {
+    AND?: whitelistScalarWhereWithAggregatesInput | whitelistScalarWhereWithAggregatesInput[]
+    OR?: whitelistScalarWhereWithAggregatesInput[]
+    NOT?: whitelistScalarWhereWithAggregatesInput | whitelistScalarWhereWithAggregatesInput[]
+    project_id?: IntWithAggregatesFilter<"whitelist"> | number
+    created_at?: DateTimeWithAggregatesFilter<"whitelist"> | Date | string
+    address?: StringWithAggregatesFilter<"whitelist"> | string
+  }
+
   export type auction_detailsCreateInput = {
     created_at?: Date | string
     exact_order_id: bigint | number
@@ -7092,6 +8110,48 @@ export namespace Prisma {
     type?: NullableStringFieldUpdateOperationsInput | string | null
     amount?: NullableBigIntFieldUpdateOperationsInput | bigint | number | null
     usdcred_trx?: NullableStringFieldUpdateOperationsInput | string | null
+  }
+
+  export type whitelistCreateInput = {
+    project_id: number
+    created_at?: Date | string
+    address: string
+  }
+
+  export type whitelistUncheckedCreateInput = {
+    project_id: number
+    created_at?: Date | string
+    address: string
+  }
+
+  export type whitelistUpdateInput = {
+    project_id?: IntFieldUpdateOperationsInput | number
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    address?: StringFieldUpdateOperationsInput | string
+  }
+
+  export type whitelistUncheckedUpdateInput = {
+    project_id?: IntFieldUpdateOperationsInput | number
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    address?: StringFieldUpdateOperationsInput | string
+  }
+
+  export type whitelistCreateManyInput = {
+    project_id: number
+    created_at?: Date | string
+    address: string
+  }
+
+  export type whitelistUpdateManyMutationInput = {
+    project_id?: IntFieldUpdateOperationsInput | number
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    address?: StringFieldUpdateOperationsInput | string
+  }
+
+  export type whitelistUncheckedUpdateManyInput = {
+    project_id?: IntFieldUpdateOperationsInput | number
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    address?: StringFieldUpdateOperationsInput | string
   }
 
   export type DateTimeFilter<$PrismaModel = never> = {
@@ -7636,6 +8696,64 @@ export namespace Prisma {
     _max?: NestedDecimalNullableFilter<$PrismaModel>
   }
 
+  export type IntFilter<$PrismaModel = never> = {
+    equals?: number | IntFieldRefInput<$PrismaModel>
+    in?: number[] | ListIntFieldRefInput<$PrismaModel>
+    notIn?: number[] | ListIntFieldRefInput<$PrismaModel>
+    lt?: number | IntFieldRefInput<$PrismaModel>
+    lte?: number | IntFieldRefInput<$PrismaModel>
+    gt?: number | IntFieldRefInput<$PrismaModel>
+    gte?: number | IntFieldRefInput<$PrismaModel>
+    not?: NestedIntFilter<$PrismaModel> | number
+  }
+
+  export type whitelistProject_idAddressCompoundUniqueInput = {
+    project_id: number
+    address: string
+  }
+
+  export type whitelistCountOrderByAggregateInput = {
+    project_id?: SortOrder
+    created_at?: SortOrder
+    address?: SortOrder
+  }
+
+  export type whitelistAvgOrderByAggregateInput = {
+    project_id?: SortOrder
+  }
+
+  export type whitelistMaxOrderByAggregateInput = {
+    project_id?: SortOrder
+    created_at?: SortOrder
+    address?: SortOrder
+  }
+
+  export type whitelistMinOrderByAggregateInput = {
+    project_id?: SortOrder
+    created_at?: SortOrder
+    address?: SortOrder
+  }
+
+  export type whitelistSumOrderByAggregateInput = {
+    project_id?: SortOrder
+  }
+
+  export type IntWithAggregatesFilter<$PrismaModel = never> = {
+    equals?: number | IntFieldRefInput<$PrismaModel>
+    in?: number[] | ListIntFieldRefInput<$PrismaModel>
+    notIn?: number[] | ListIntFieldRefInput<$PrismaModel>
+    lt?: number | IntFieldRefInput<$PrismaModel>
+    lte?: number | IntFieldRefInput<$PrismaModel>
+    gt?: number | IntFieldRefInput<$PrismaModel>
+    gte?: number | IntFieldRefInput<$PrismaModel>
+    not?: NestedIntWithAggregatesFilter<$PrismaModel> | number
+    _count?: NestedIntFilter<$PrismaModel>
+    _avg?: NestedFloatFilter<$PrismaModel>
+    _sum?: NestedIntFilter<$PrismaModel>
+    _min?: NestedIntFilter<$PrismaModel>
+    _max?: NestedIntFilter<$PrismaModel>
+  }
+
   export type DateTimeFieldUpdateOperationsInput = {
     set?: Date | string
   }
@@ -7686,6 +8804,14 @@ export namespace Prisma {
     decrement?: Decimal | DecimalJsLike | number | string
     multiply?: Decimal | DecimalJsLike | number | string
     divide?: Decimal | DecimalJsLike | number | string
+  }
+
+  export type IntFieldUpdateOperationsInput = {
+    set?: number
+    increment?: number
+    decrement?: number
+    multiply?: number
+    divide?: number
   }
 
   export type NestedDateTimeFilter<$PrismaModel = never> = {
@@ -7979,6 +9105,22 @@ export namespace Prisma {
     _max?: NestedDecimalNullableFilter<$PrismaModel>
   }
 
+  export type NestedIntWithAggregatesFilter<$PrismaModel = never> = {
+    equals?: number | IntFieldRefInput<$PrismaModel>
+    in?: number[] | ListIntFieldRefInput<$PrismaModel>
+    notIn?: number[] | ListIntFieldRefInput<$PrismaModel>
+    lt?: number | IntFieldRefInput<$PrismaModel>
+    lte?: number | IntFieldRefInput<$PrismaModel>
+    gt?: number | IntFieldRefInput<$PrismaModel>
+    gte?: number | IntFieldRefInput<$PrismaModel>
+    not?: NestedIntWithAggregatesFilter<$PrismaModel> | number
+    _count?: NestedIntFilter<$PrismaModel>
+    _avg?: NestedFloatFilter<$PrismaModel>
+    _sum?: NestedIntFilter<$PrismaModel>
+    _min?: NestedIntFilter<$PrismaModel>
+    _max?: NestedIntFilter<$PrismaModel>
+  }
+
 
 
   /**
@@ -8004,6 +9146,10 @@ export namespace Prisma {
      * @deprecated Use transfersDefaultArgs instead
      */
     export type transfersArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = transfersDefaultArgs<ExtArgs>
+    /**
+     * @deprecated Use whitelistDefaultArgs instead
+     */
+    export type whitelistArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = whitelistDefaultArgs<ExtArgs>
 
   /**
    * Batch Payload for updateMany & deleteMany & createMany

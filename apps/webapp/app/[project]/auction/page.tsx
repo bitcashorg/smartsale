@@ -7,8 +7,8 @@ import { AuctionBids } from '@/components/auction/auction-bids'
 import { AuctionOrders } from '@/components/auction/auction-orders'
 import Image from 'next/image'
 import { AuctionDebug } from '@/components/auction/auction-debug'
-import { RegisterAddress } from '@/components/register-address'
-import { RedeemTokens } from '@/components/redeem-tokens'
+import { RegisterAddress } from '@/components/auction/register-address'
+import { RedeemTokens } from '@/components/auction/redeem-tokens'
 
 export default function AuctionPage({
   params

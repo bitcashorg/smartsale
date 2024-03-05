@@ -172,6 +172,12 @@ exports.Prisma.TransfersScalarFieldEnum = {
   usdcred_trx: 'usdcred_trx'
 };
 
+exports.Prisma.WhitelistScalarFieldEnum = {
+  project_id: 'project_id',
+  created_at: 'created_at',
+  address: 'address'
+};
+
 exports.Prisma.SortOrder = {
   asc: 'asc',
   desc: 'desc'
@@ -193,7 +199,8 @@ exports.Prisma.ModelName = {
   orders: 'orders',
   users: 'users',
   session: 'session',
-  transfers: 'transfers'
+  transfers: 'transfers',
+  whitelist: 'whitelist'
 };
 
 /**

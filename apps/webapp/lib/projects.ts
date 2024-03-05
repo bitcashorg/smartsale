@@ -2,6 +2,7 @@ import { ERC20ContractData, TestnetMBOTSPL } from 'smartsale-contracts'
 
 export const projects: Project[] = [
   {
+    id: 1,
     title: 'Masterbots',
     slug: 'masterbots',
     pitch: 'Specialized AI chatbots',
@@ -15,6 +16,7 @@ export const projects: Project[] = [
     presaleOpen: true
   },
   {
+    id: 2,
     title: 'WizartWorld',
     slug: 'wizartworld',
     pitch: 'Generate AI images and mint them as NFTs',
@@ -28,6 +30,7 @@ export const projects: Project[] = [
     registrationOpen: true
   },
   {
+    id: 3,
     title: 'Bitcash Bank',
     slug: 'bitcash',
     pitch: 'P2P exchange for local currency stablecoins',
@@ -42,6 +45,7 @@ export const projects: Project[] = [
 ]
 
 export interface Project {
+  id: number
   title: string
   slug: string
   pitch: string
