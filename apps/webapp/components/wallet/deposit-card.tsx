@@ -37,9 +37,16 @@ export function DepositCard() {
   const deposit = () => {
     console.log({ amount, address })
     if (!amount || !address) return
-    console.log('deposit')
 
     switchChain({ chainId: token.chainId })
+    console.log('deposit', {
+      chainId: token.chainId,
+      address: token.address,
+      args: [
+        '0x2C9DAAb3F463d6c6D248aCbeaAEe98687936374a', // dev only
+        parseUnits(amount.toString(), token.decimals)
+      ]
+    })
     writeContract({
       abi: token.abi,
       address: token.address,

@@ -58,7 +58,7 @@ async function listenToTransfers(token: ERC20ContractData) {
         to: '0x2C9DAAb3F463d6c6D248aCbeaAEe98687936374a',
       },
       onLogs: (logs) => {
-        // console.log('real time transfer', stringify(logs, null, 2))
+        console.log('real time transfer', stringify(logs, null, 2))
         processLogs(logs)
       },
     })
