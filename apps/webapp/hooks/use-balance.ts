@@ -55,7 +55,7 @@ export function useErc20Balance({
     ]
   })
 
-  console.log('data', stringify(result.data && result.data))
+  // console.log('data', stringify(result.data && result.data))
 
   const data = result.data && {
     value: BigInt((result.data[0].result as bigint) || 0),

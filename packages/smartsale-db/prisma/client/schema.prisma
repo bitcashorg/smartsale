@@ -87,6 +87,7 @@ model whitelist {
   project_id Int
   created_at DateTime @default(now()) @db.Timestamptz(6)
   address    String
+  account    String
 
-  @@id([project_id, address])
+  @@id([address, project_id, account])
 }

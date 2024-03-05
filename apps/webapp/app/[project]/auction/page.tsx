@@ -47,7 +47,7 @@ export default function AuctionPage({
                 {isAuctionClosed ? (
                   <RedeemTokens />
                 ) : project.registrationOpen ? (
-                  <RegisterAddress />
+                  <RegisterAddress projectId={project.id} />
                 ) : (
                   <AuctionBids project={project} />
                 )}
@@ -62,11 +62,11 @@ export default function AuctionPage({
           ) : null}
         </div>
       </div>
-      {project.auctionId && !isAuctionClosed ? (
+      {/* {project.auctionId && !isAuctionClosed ? (
         <React.Suspense fallback={<div>Loading ...</div>}>
           <AuctionDebug auctionId={project.auctionId} />
         </React.Suspense>
-      ) : null}
+      ) : null} */}
     </>
   )
 }

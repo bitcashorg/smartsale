@@ -40,7 +40,8 @@ export const projects: Project[] = [
     badgeText: 'AUCTION CLOSED',
     linkPath: '/bitcash',
     token: TestnetMBOTSPL,
-    auctionId: 8
+    auctionId: 8,
+    auctionClosed: true
   }
 ]
 
@@ -58,6 +59,7 @@ export interface Project {
   token?: ERC20ContractData
   presaleOpen?: boolean
   registrationOpen?: boolean
+  auctionClosed?: boolean
 }
 
 export type ProjectWithAuction = Required<

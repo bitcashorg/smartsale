@@ -1,9 +1,10 @@
+import { isAddress } from 'viem'
 import { z } from 'zod'
-import { zfd } from 'zod-form-data'
 
 export const registerAddressSchema = z.object({
   project_id: z.number(),
-  address: z.string()
+  address: z.string().refine(isAddress, {
+    message: 'Invalid address format'
+  }),
+  account: z.string()
 })
-
-export const registerAddressValidator = zfd.formData(registerAddressSchema)

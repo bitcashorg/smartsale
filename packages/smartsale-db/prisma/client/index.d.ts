@@ -6133,18 +6133,21 @@ export namespace Prisma {
     project_id: number | null
     created_at: Date | null
     address: string | null
+    account: string | null
   }
 
   export type WhitelistMaxAggregateOutputType = {
     project_id: number | null
     created_at: Date | null
     address: string | null
+    account: string | null
   }
 
   export type WhitelistCountAggregateOutputType = {
     project_id: number
     created_at: number
     address: number
+    account: number
     _all: number
   }
 
@@ -6161,18 +6164,21 @@ export namespace Prisma {
     project_id?: true
     created_at?: true
     address?: true
+    account?: true
   }
 
   export type WhitelistMaxAggregateInputType = {
     project_id?: true
     created_at?: true
     address?: true
+    account?: true
   }
 
   export type WhitelistCountAggregateInputType = {
     project_id?: true
     created_at?: true
     address?: true
+    account?: true
     _all?: true
   }
 
@@ -6266,6 +6272,7 @@ export namespace Prisma {
     project_id: number
     created_at: Date
     address: string
+    account: string
     _count: WhitelistCountAggregateOutputType | null
     _avg: WhitelistAvgAggregateOutputType | null
     _sum: WhitelistSumAggregateOutputType | null
@@ -6291,12 +6298,14 @@ export namespace Prisma {
     project_id?: boolean
     created_at?: boolean
     address?: boolean
+    account?: boolean
   }, ExtArgs["result"]["whitelist"]>
 
   export type whitelistSelectScalar = {
     project_id?: boolean
     created_at?: boolean
     address?: boolean
+    account?: boolean
   }
 
 
@@ -6307,6 +6316,7 @@ export namespace Prisma {
       project_id: number
       created_at: Date
       address: string
+      account: string
     }, ExtArgs["result"]["whitelist"]>
     composites: {}
   }
@@ -6704,6 +6714,7 @@ export namespace Prisma {
     readonly project_id: FieldRef<"whitelist", 'Int'>
     readonly created_at: FieldRef<"whitelist", 'DateTime'>
     readonly address: FieldRef<"whitelist", 'String'>
+    readonly account: FieldRef<"whitelist", 'String'>
   }
     
 
@@ -7088,7 +7099,8 @@ export namespace Prisma {
   export const WhitelistScalarFieldEnum: {
     project_id: 'project_id',
     created_at: 'created_at',
-    address: 'address'
+    address: 'address',
+    account: 'account'
   };
 
   export type WhitelistScalarFieldEnum = (typeof WhitelistScalarFieldEnum)[keyof typeof WhitelistScalarFieldEnum]
@@ -7619,28 +7631,32 @@ export namespace Prisma {
     project_id?: IntFilter<"whitelist"> | number
     created_at?: DateTimeFilter<"whitelist"> | Date | string
     address?: StringFilter<"whitelist"> | string
+    account?: StringFilter<"whitelist"> | string
   }
 
   export type whitelistOrderByWithRelationInput = {
     project_id?: SortOrder
     created_at?: SortOrder
     address?: SortOrder
+    account?: SortOrder
   }
 
   export type whitelistWhereUniqueInput = Prisma.AtLeast<{
-    project_id_address?: whitelistProject_idAddressCompoundUniqueInput
+    address_project_id_account?: whitelistAddressProject_idAccountCompoundUniqueInput
     AND?: whitelistWhereInput | whitelistWhereInput[]
     OR?: whitelistWhereInput[]
     NOT?: whitelistWhereInput | whitelistWhereInput[]
     project_id?: IntFilter<"whitelist"> | number
     created_at?: DateTimeFilter<"whitelist"> | Date | string
     address?: StringFilter<"whitelist"> | string
-  }, "project_id_address">
+    account?: StringFilter<"whitelist"> | string
+  }, "address_project_id_account">
 
   export type whitelistOrderByWithAggregationInput = {
     project_id?: SortOrder
     created_at?: SortOrder
     address?: SortOrder
+    account?: SortOrder
     _count?: whitelistCountOrderByAggregateInput
     _avg?: whitelistAvgOrderByAggregateInput
     _max?: whitelistMaxOrderByAggregateInput
@@ -7655,6 +7671,7 @@ export namespace Prisma {
     project_id?: IntWithAggregatesFilter<"whitelist"> | number
     created_at?: DateTimeWithAggregatesFilter<"whitelist"> | Date | string
     address?: StringWithAggregatesFilter<"whitelist"> | string
+    account?: StringWithAggregatesFilter<"whitelist"> | string
   }
 
   export type auction_detailsCreateInput = {
@@ -8116,42 +8133,49 @@ export namespace Prisma {
     project_id: number
     created_at?: Date | string
     address: string
+    account: string
   }
 
   export type whitelistUncheckedCreateInput = {
     project_id: number
     created_at?: Date | string
     address: string
+    account: string
   }
 
   export type whitelistUpdateInput = {
     project_id?: IntFieldUpdateOperationsInput | number
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     address?: StringFieldUpdateOperationsInput | string
+    account?: StringFieldUpdateOperationsInput | string
   }
 
   export type whitelistUncheckedUpdateInput = {
     project_id?: IntFieldUpdateOperationsInput | number
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     address?: StringFieldUpdateOperationsInput | string
+    account?: StringFieldUpdateOperationsInput | string
   }
 
   export type whitelistCreateManyInput = {
     project_id: number
     created_at?: Date | string
     address: string
+    account: string
   }
 
   export type whitelistUpdateManyMutationInput = {
     project_id?: IntFieldUpdateOperationsInput | number
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     address?: StringFieldUpdateOperationsInput | string
+    account?: StringFieldUpdateOperationsInput | string
   }
 
   export type whitelistUncheckedUpdateManyInput = {
     project_id?: IntFieldUpdateOperationsInput | number
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     address?: StringFieldUpdateOperationsInput | string
+    account?: StringFieldUpdateOperationsInput | string
   }
 
   export type DateTimeFilter<$PrismaModel = never> = {
@@ -8707,15 +8731,17 @@ export namespace Prisma {
     not?: NestedIntFilter<$PrismaModel> | number
   }
 
-  export type whitelistProject_idAddressCompoundUniqueInput = {
-    project_id: number
+  export type whitelistAddressProject_idAccountCompoundUniqueInput = {
     address: string
+    project_id: number
+    account: string
   }
 
   export type whitelistCountOrderByAggregateInput = {
     project_id?: SortOrder
     created_at?: SortOrder
     address?: SortOrder
+    account?: SortOrder
   }
 
   export type whitelistAvgOrderByAggregateInput = {
@@ -8726,12 +8752,14 @@ export namespace Prisma {
     project_id?: SortOrder
     created_at?: SortOrder
     address?: SortOrder
+    account?: SortOrder
   }
 
   export type whitelistMinOrderByAggregateInput = {
     project_id?: SortOrder
     created_at?: SortOrder
     address?: SortOrder
+    account?: SortOrder
   }
 
   export type whitelistSumOrderByAggregateInput = {

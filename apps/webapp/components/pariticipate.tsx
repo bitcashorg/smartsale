@@ -41,7 +41,7 @@ export default function Participate() {
                 <step.icon className="mr-2 text-gray-400 size-6" />
                 {step.title}
               </h2>
-              <p className="text-center text-gray-400 md:text-left">
+              <p className="py-3 text-center text-gray-400 md:text-left">
                 {step.description}
               </p>
               {step.buttonText && (
@@ -67,8 +67,7 @@ const textContent = {
     {
       icon: FileEditIcon,
       title: 'Complete KYC',
-      description:
-        "It's a simple step to ensure your participation, create a bitcash account to complete this step.",
+      description: 'Complete a Bitcash KYC to ensure your participation.',
       buttonText: 'Register',
       href: 'https://app.bitcash.org/?share=JVnL7qzrU'
     },

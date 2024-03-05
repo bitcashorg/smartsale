@@ -24,9 +24,11 @@ export default function ProjectPage({
                 </h1>
 
                 <p className="max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
-                  {project.auctionId
-                    ? 'Join the auction and be a part of our project. The countdown has begun!'
-                    : 'Register to participate in the auction!'}
+                  {project.registrationOpen
+                    ? 'Register to participate in the auction!'
+                    : project.auctionClosed
+                      ? 'Auction is closed. You can now claim your tokens.'
+                      : 'Join the auction and be a part of our project. The countdown has begun!'}
                 </p>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -37,7 +39,11 @@ export default function ProjectPage({
                   className="inline-flex items-center justify-center h-10 px-8 text-sm font-medium transition-colors bg-gray-900 rounded-md shadow text-gray-50 hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
                   href={`${project.slug}/auction`}
                 >
-                  {project.auctionId ? 'Participate Now' : 'Register Now!'}
+                  {project.registrationOpen
+                    ? 'Register Now!'
+                    : project.auctionClosed
+                      ? 'Claims your Tokens'
+                      : 'Participate Now'}
                 </Link>
               </div>
             </div>

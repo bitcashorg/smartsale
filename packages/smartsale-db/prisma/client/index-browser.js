@@ -175,7 +175,8 @@ exports.Prisma.TransfersScalarFieldEnum = {
 exports.Prisma.WhitelistScalarFieldEnum = {
   project_id: 'project_id',
   created_at: 'created_at',
-  address: 'address'
+  address: 'address',
+  account: 'account'
 };
 
 exports.Prisma.SortOrder = {

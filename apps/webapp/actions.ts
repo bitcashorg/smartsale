@@ -6,7 +6,11 @@ import { registerAddressSchema } from './lib/validators'
 
 export async function registerAddress(formData: FormData) {
   try {
-    const data = registerAddressSchema.parse(fromEntries(formData))
+    const o = fromEntries(formData)
+    const data = registerAddressSchema.parse({
+      ...o,
+      project_id: parseInt(o.project_id)
+    })
     return await db.whitelist.create({ data })
   } catch (error) {
     console.log(error)
