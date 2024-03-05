@@ -50,6 +50,12 @@ export function WalletBalances() {
       description: 'Bitcash USD stable coin'
     },
     {
+      coin: 'MBOTS',
+      totalAmount: '0',
+      nertwork: 'EOS Mainnet',
+      description: 'MBOTS Token'
+    },
+    {
       coin: 'EOS (gas)',
       totalAmount: '0',
       nertwork: 'EOS Mainnet',

@@ -34,8 +34,10 @@ export const projects: Project[] = [
     fundraiseGoal: '$500,000',
     maxAllocation: '$10,000',
     heroImage: '/images/projects/bitcash.png',
-    badgeText: 'REGISTRATION OPEN',
-    linkPath: '/bitcash'
+    badgeText: 'AUCTION CLOSED',
+    linkPath: '/bitcash',
+    token: TestnetMBOTSPL,
+    auctionId: 8
   }
 ]
 

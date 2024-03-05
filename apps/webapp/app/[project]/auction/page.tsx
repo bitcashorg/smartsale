@@ -8,6 +8,7 @@ import { AuctionOrders } from '@/components/auction/auction-orders'
 import Image from 'next/image'
 import { AuctionDebug } from '@/components/auction/auction-debug'
 import { RegisterAddress } from '@/components/register-address'
+import { RedeemTokens } from '@/components/redeem-tokens'
 
 export default function AuctionPage({
   params
@@ -17,6 +18,8 @@ export default function AuctionPage({
   const p = projects.find(p => p.slug == params.project)
   if (!p || (!p.auctionId && !p.registrationOpen)) redirect('/')
   const project = p as ProjectWithAuction
+
+  const isAuctionClosed = project.badgeText === 'AUCTION CLOSED'
 
   return (
     <>
@@ -35,15 +38,15 @@ export default function AuctionPage({
 
               <AuctionInfo project={project} />
 
-              {project.auctionId ? (
+              {project.auctionId && !isAuctionClosed ? (
                 <Countdown auctionId={project.auctionId} />
-              ) : (
-                <div>auction id missing</div>
-              )}
+              ) : null}
             </div>
             <div className="w-full md:w-1/3">
               <React.Suspense fallback={<div>Loading ...</div>}>
-                {project.registrationOpen ? (
+                {isAuctionClosed ? (
+                  <RedeemTokens />
+                ) : project.registrationOpen ? (
                   <RegisterAddress />
                 ) : (
                   <AuctionBids project={project} />
@@ -52,14 +55,14 @@ export default function AuctionPage({
             </div>
           </div>
 
-          {project.auctionId ? (
+          {project.auctionId && !isAuctionClosed ? (
             <React.Suspense fallback={<div>Loading ...</div>}>
               <AuctionOrders />
             </React.Suspense>
           ) : null}
         </div>
       </div>
-      {project.auctionId ? (
+      {project.auctionId && !isAuctionClosed ? (
         <React.Suspense fallback={<div>Loading ...</div>}>
           <AuctionDebug auctionId={project.auctionId} />
         </React.Suspense>
