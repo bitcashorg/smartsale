@@ -93,13 +93,13 @@ const coins = [
   {
     coin: 'USDCred',
     nertwork: 'EOS EVM'
-  },
+  }
   // {
   //   coin: 'EOS (gas)',
   //   nertwork: 'EOS EVM'
   // },
-  {
-    coin: 'MBOTSPL',
-    nertwork: 'MBOTS Prelaunch Token'
-  }
+  // {
+  //   coin: 'MBOTSPL',
+  //   nertwork: 'MBOTS Prelaunch Token'
+  // }
 ]
