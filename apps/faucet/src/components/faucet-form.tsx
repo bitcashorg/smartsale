@@ -2,7 +2,7 @@ import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { useAccount, useSwitchChain, useWriteContract } from "wagmi"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { ERC20ContractData, SepoliaUSDT, TestnetMBOTSPL, TestnetUSDCred, TestnetUSDT } from 'smartsale-contracts'
 import { TokenSelect } from "./token-select"
 import { parseUnits } from "viem"
@@ -38,6 +38,11 @@ export function FaucetForm() {
     });
   }
   console.log({data, ...other})
+
+  // update input when user changes address on wallet
+  useEffect(()=>{
+    if(account.address !== address) setAddress(account.address)
+  },[account.address,setAddress])
 
   return (
     <div className="flex flex-col w-full max-w-[1.5*md] items-start gap-4">
