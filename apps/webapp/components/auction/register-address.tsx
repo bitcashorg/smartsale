@@ -36,7 +36,6 @@ export function RegisterAddress({ projectId }: { projectId: number }) {
 
   useEffect(() => {
     const fetchData = async () => {
-      console.log('fetch data', { projectId, address })
       const { data, error } = await supabase
         .from('whitelist')
         .select()

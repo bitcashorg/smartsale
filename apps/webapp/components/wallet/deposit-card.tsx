@@ -25,28 +25,16 @@ import { smartsaleChains } from 'smartsale-chains'
 const tokens = [SepoliaUSDT, TestnetUSDT]
 
 export function DepositCard() {
-  const { session } = useSession()
   const { address } = useAccount()
   const { writeContract, ...other } = useWriteContract()
   const [amount, setAmount] = useState<number>(50)
   const { switchChain } = useSwitchChain()
   const [token, setToken] = useState<ERC20ContractData>(TestnetUSDT)
 
-  console.log(session?.account)
-
   const deposit = () => {
-    console.log({ amount, address })
     if (!amount || !address) return
 
     switchChain({ chainId: token.chainId })
-    console.log('deposit', {
-      chainId: token.chainId,
-      address: token.address,
-      args: [
-        '0x2C9DAAb3F463d6c6D248aCbeaAEe98687936374a', // dev only
-        parseUnits(amount.toString(), token.decimals)
-      ]
-    })
     writeContract({
       abi: token.abi,
       address: token.address,
@@ -59,7 +47,6 @@ export function DepositCard() {
     })
   }
 
-  console.log(other)
   return (
     <Card className="w-full bg-[#1a1a1a] rounded-xl p-4 text-white">
       <CardContent>

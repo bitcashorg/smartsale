@@ -1,6 +1,6 @@
 'use client'
 
-import { APIClient } from '@wharfkit/antelope'
+import { APIClient, Name } from '@wharfkit/antelope'
 import {
   AbiProvider,
   SigningRequest,
@@ -25,7 +25,6 @@ export const esrOptions: SigningRequestEncodingOptions = {
 export async function genLoginSigningRequest(
   uuid: string = crypto.randomUUID()
 ) {
-  console.log('genLoginSigningRequest')
   const req = await SigningRequest.create(
     {
       action: {
@@ -52,4 +51,22 @@ export async function genLoginSigningRequest(
     esrOptions
   )
   return req
+}
+
+export async function getEosBalance(account: string) {
+  const response = await eos.v1.chain.get_currency_balance(
+    'eosio.token',
+    account,
+    'EOS'
+  )
+  return response[0].value.toString()
+}
+
+export async function getBitUsdBalance(account: string) {
+  const response = await eos.v1.chain.get_table_rows({
+    code: 'bank.bk',
+    table: 'stablev2',
+    scope: Name.from(account)
+  })
+  return response.rows[0]?.balance.quantity.replace('BITUSD', '') || 'O'
 }

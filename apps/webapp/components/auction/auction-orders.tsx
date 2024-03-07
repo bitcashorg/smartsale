@@ -29,7 +29,7 @@ export function AuctionOrders() {
   })
 
   const fetchOrders = async (userId: number) => {
-    console.log('fetch orders...')
+    // console.log('fetch orders...')
     const { data, error } = await supabase
       .from('orders')
       .select('*')
@@ -43,9 +43,9 @@ export function AuctionOrders() {
   useEffect(() => {
     if (!userId.data) return
     fetchOrders(new BN(userId.data!.toString()).toNumber())
-    console.log(
-      `subscribing to supabase channel filtering by userId=${userId.data}`
-    )
+    // console.log(
+    //   `subscribing to supabase channel filtering by userId=${userId.data}`
+    // )
     const channel = supabase
       .channel('orders')
       .on(
@@ -55,21 +55,21 @@ export function AuctionOrders() {
           // Check if the inserted order's user_id matches the desired userId
           const isSameUserId =
             BigInt(payload.new.user_id) === BigInt(String(userId.data) || 0)
-          console.log(
-            'supabase payload.new',
-            payload.new,
-            userId.data,
-            isSameUserId
-          )
+          // console.log(
+          //   'supabase payload.new',
+          //   payload.new,
+          //   userId.data,
+          //   isSameUserId
+          // )
           if (!isSameUserId) return
           setOrders(orders => {
-            console.log('setOrders', payload.new, orders[0])
+            // console.log('setOrders', payload.new, orders[0])
             return [payload.new, ...orders]
           })
         }
       )
       .subscribe()
-    console.log('subscribed to supabase...')
+    // console.log('subscribed to supabase...')
 
     return () => {
       supabase.removeChannel(channel)

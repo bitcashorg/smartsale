@@ -25,12 +25,8 @@ export function WithdrawCard() {
   const [amount, setAmount] = useState<number>(50)
   const { switchChain } = useSwitchChain()
 
-  console.log(session?.account)
-
   const withdraw = () => {
-    console.log({ amount, address })
     if (!amount || !address) return
-    console.log('withdraw')
 
     switchChain({ chainId: TestnetUSDCred.chainId || eosEvmTestnet.id })
     writeContract({
@@ -42,7 +38,7 @@ export function WithdrawCard() {
     })
   }
 
-  console.log('burn tokens state', other)
+  // console.log('burn tokens state', other)
 
   return (
     <Card className="w-full bg-[#1a1a1a] rounded-xl p-4 text-white">

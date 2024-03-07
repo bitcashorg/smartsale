@@ -42,16 +42,15 @@ export function AuctionBids({ project }: AuctionBidsProps) {
     if (hasErrorMessage) return
 
     // remove empty rows
-    const bids = bidInputs.filter(v => !(v.minBuyAmount <= 0 && v.bidAmount <= 0))
+    const bids = bidInputs.filter(
+      v => !(v.minBuyAmount <= 0 && v.bidAmount <= 0)
+    )
 
     const test = {
       minBuyAmounts: [bids[0]?.minBuyAmount],
       sellAmounts: [bids[0]?.bidAmount]
     }
 
-    console.log('test', stringify(test))
-
- 
     const { isBalanceSufficient, isAllowanceSufficient } =
       await checkBalanceAndAllowance({
         account: address,
@@ -60,8 +59,8 @@ export function AuctionBids({ project }: AuctionBidsProps) {
         tokenAddress: TestnetUSDCred.address
       })
 
-    if (!isBalanceSufficient) return setGlobalError('Insuficient USDCred Balance')
-
+    if (!isBalanceSufficient)
+      return setGlobalError('Insuficient USDCred Balance')
 
     if (!isAllowanceSufficient) {
       await writeContract(wagmiConfig, {
@@ -79,9 +78,9 @@ export function AuctionBids({ project }: AuctionBidsProps) {
       allowListCallData: '0x', // bytes calldata allowListCallData
       sellAmounts: test.sellAmounts // uint96[] memory _sellAmounts bidding USDCred 200,000000 BidAmount
     }
-    console.log('place order', order)
+    // console.log('place order', order)
 
-   // TODO: we may need to wait a couple seconds after calling approve
+    // TODO: we may need to wait a couple seconds after calling approve
     placeBids({
       ...TestnetEasyAuction, // Ensure this contains the correct ABI and contract address
       functionName: 'placeSellOrders',
@@ -124,13 +123,14 @@ export function AuctionBids({ project }: AuctionBidsProps) {
     setBidInputs(newBidInputs)
   }
 
- console.log('error', stringify(tanstack.error), 'data', tanstack.data)
+  // console.log('error', stringify(tanstack.error), 'data', tanstack.data)
   // console.log('bidInputs', JSON.stringify(bidInputs))
 
-   // show error on modal
+  // show error on modal
   useEffect(() => {
-    const err = tanstack.error 
-    if(!err || !('shortMessage' in err) || err.shortMessage === errorMessage) return
+    const err = tanstack.error
+    if (!err || !('shortMessage' in err) || err.shortMessage === errorMessage)
+      return
     setGlobalError(err.shortMessage)
     tanstack.reset()
   }, [tanstack, errorMessage, setGlobalError])
@@ -282,12 +282,7 @@ export async function checkBalanceAndAllowance({
     functionName: 'balanceOf',
     args: [account]
   })
-  console.log(
-    'USDCred balance',
-    balance,
-    amount,
-    balance && balance >= amount
-  )
+  // console.log('USDCred balance', balance, amount, balance && balance >= amount)
 
   // Check the allowance
   const allowance = await readContract(wagmiConfig, {
@@ -298,8 +293,7 @@ export async function checkBalanceAndAllowance({
   })
 
   const isBalanceSufficient = balance && balance >= amount
-  const isAllowanceSufficient =
-    allowance && allowance >= amount
+  const isAllowanceSufficient = allowance && allowance >= amount
 
   return { isBalanceSufficient, isAllowanceSufficient }
 }

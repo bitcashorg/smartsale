@@ -1,4 +1,4 @@
-import { esrOptions } from '@/lib/esr'
+import { esrOptions } from '@/lib/eos'
 import { APIClient } from '@wharfkit/antelope'
 import {
   AbiProvider,
@@ -39,14 +39,13 @@ export async function POST(req: NextRequest) {
 
     // TODO: validate tx is on blockchain
 
-    const response = await db.session.create({
+    await db.session.create({
       data: {
         id,
         tx: body.tx,
         account: body.sa
       }
     })
-    console.log(response)
 
     return Response.json({
       message: 'Successfully logged the request body'

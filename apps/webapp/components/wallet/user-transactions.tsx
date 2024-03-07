@@ -20,7 +20,6 @@ export function UserTransactions() {
   const [transactions, setTransactions] = useState<any[]>([])
 
   const fetchOrders = async (address: Address) => {
-    console.log('fetch transactions...')
     const { data, error } = await supabase
       .from('transfers')
       .select('*')
@@ -34,7 +33,6 @@ export function UserTransactions() {
   useEffect(() => {
     if (!address) return
     fetchOrders(address)
-    console.log(`subscribing to supabase transfer filtering by from=${address}`)
     const channel1 = supabase
       .channel('transfers')
       .on(
@@ -42,10 +40,8 @@ export function UserTransactions() {
         { event: 'INSERT', schema: 'public', table: 'transfers' },
         payload => {
           const isSameAddress = payload.new.from === address
-          console.log('supabase payload.new', payload.new, isSameAddress)
           if (!isSameAddress) return
           setTransactions(transactions => {
-            console.log('setTransactions', payload.new, transactions[0])
             return [payload.new, ...transactions]
           })
         }
@@ -59,16 +55,13 @@ export function UserTransactions() {
         { event: 'UPDATE', schema: 'public', table: 'transfers' },
         payload => {
           const isSameAddress = payload.new.from === address
-          console.log('supabase payload.new', payload.new, isSameAddress)
           if (!isSameAddress) return
           setTransactions(transactions => {
-            console.log('setTransactions', payload.new, transactions[0])
             return [payload.new, ...transactions]
           })
         }
       )
       .subscribe()
-    console.log('subscribed to supabase transactions...')
 
     return () => {
       supabase.removeChannel(channel1)
