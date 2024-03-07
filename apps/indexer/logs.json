@@ -335,7 +335,7 @@
     "args": {
       "auctionId": "3",
       "_auctioningToken": "0x1385f48E044faAfAE8f2D857f64CB324efF1b929",
-      "_biddingToken": "0x8d27DFbC8B7395660115C88AF7b05716b146e2B0",
+      "_biddingToken": "0x1d5A4C37e60cAd0C72c057E3c191352429cDB38e",
       "orderCancellationEndDate": "0",
       "auctionEndDate": "1708809585",
       "userId": "4",
@@ -366,7 +366,7 @@
     "args": {
       "auctionId": "4",
       "_auctioningToken": "0x1385f48E044faAfAE8f2D857f64CB324efF1b929",
-      "_biddingToken": "0x8d27DFbC8B7395660115C88AF7b05716b146e2B0",
+      "_biddingToken": "0x1d5A4C37e60cAd0C72c057E3c191352429cDB38e",
       "orderCancellationEndDate": "0",
       "auctionEndDate": "1711349042",
       "userId": "4",
@@ -397,7 +397,7 @@
     "args": {
       "auctionId": "5",
       "_auctioningToken": "0x5EdB28FBa146371A5f4A1C5812111C887EC9Ae73",
-      "_biddingToken": "0x8d27DFbC8B7395660115C88AF7b05716b146e2B0",
+      "_biddingToken": "0x1d5A4C37e60cAd0C72c057E3c191352429cDB38e",
       "orderCancellationEndDate": "0",
       "auctionEndDate": "1711349042",
       "userId": "4",

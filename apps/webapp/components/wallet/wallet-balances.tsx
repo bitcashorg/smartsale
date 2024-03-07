@@ -15,7 +15,6 @@ import { useAccount } from 'wagmi'
 
 export function WalletBalances() {
   const { address } = useAccount()
-  console.log('address', address)
   const usdCredBalance = useErc20Balance({
     contract: TestnetUSDCred.address,
     abi: TestnetUSDCred.abi,

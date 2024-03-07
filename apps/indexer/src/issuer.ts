@@ -46,7 +46,7 @@ async function listenToTransfers(token: ERC20ContractData) {
 
     console.log('logs', logs.length)
     // delay prevents idempotent transactions:
-    processLogs(logs, 2000)
+    processLogs(logs, 3000)
 
     // Watch for new event logs
     client.watchEvent({
@@ -149,7 +149,7 @@ async function issueTokens(to: Address, amount: bigint) {
     return walletClient.writeContract({
       address: TestnetUSDCred.address,
       abi: TestnetUSDCred.abi,
-      functionName: 'transfer', // 'issue',
+      functionName: 'issue', // 'issue',
       args: [to, amount],
     })
   } catch (error) {
