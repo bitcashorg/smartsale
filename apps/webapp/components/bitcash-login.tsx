@@ -50,7 +50,7 @@ export function BitcashLoginButton() {
   return (
     <Dialog open={open} onOpenChange={toggleOpen}>
       <DialogTrigger asChild>
-        <Button>Connect Bitcash App</Button>
+        <Button className="hover:scale-105">Connect Bitcash App</Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>

@@ -1,13 +1,13 @@
-import { Toaster } from 'react-hot-toast'
-import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
+import { GeistSans } from 'geist/font/sans'
+import { Toaster } from 'react-hot-toast'
 
 import '@/app/globals.css'
-import '@rainbow-me/rainbowkit/styles.css'
-import { cn } from '@/lib/utils'
-import { Providers } from '@/components/providers'
-import { Header } from '@/components/header'
 import { ErrorModal } from '@/components/error-modal'
+import { Header } from '@/components/header'
+import { Providers } from '@/components/providers'
+import { cn } from '@/lib/utils'
+import '@rainbow-me/rainbowkit/styles.css'
 import React from 'react'
 
 export default function RootLayout({ children }: RootLayoutProps) {
@@ -41,19 +41,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
   )
 }
 
-export const metadata = {
-  metadataBase: new URL(`https://${process.env.VERCEL_URL}`),
-  title: {
-    default: 'Bitcash Launchpad',
-    template: `%s - Bitcash Launchpad`
-  },
-  description: 'Bitcash AI and Web3 Launchpad',
-  icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon-16x16.png',
-    apple: '/apple-touch-icon.png'
-  }
-}
 
 export const viewport = {
   themeColor: [
