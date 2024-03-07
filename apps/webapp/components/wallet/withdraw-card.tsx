@@ -14,7 +14,7 @@ import { useSession } from '@/hooks/use-session'
 import { useAccount, useSwitchChain, useWriteContract } from 'wagmi'
 import { useState } from 'react'
 import { sepolia } from 'viem/chains'
-import { SepoliaUSDT } from 'smartsale-contracts'
+import { TestnetUSDCred } from 'smartsale-contracts'
 import { eosEvmTestnet } from 'smartsale-chains'
 import { parseUnits } from 'viem'
 
@@ -32,18 +32,17 @@ export function WithdrawCard() {
     if (!amount || !address) return
     console.log('withdraw')
 
-    switchChain({ chainId: SepoliaUSDT.chainId || eosEvmTestnet.id })
-    // writeContract({
-    //   abi: SepoliaUSDT.abi,
-    //   address: SepoliaUSDT.address,
-    //   functionName: 'burn',
-    //   args: [
-    //     '0xA0Cf798816D4b9b9866b5330EEa46a18382f251e', // dev only
-    //     parseUnits(amount.toString(), SepoliaUSDT.decimals)
-    //   ],
-    //   chainId: sepolia.id
-    // })
+    switchChain({ chainId: TestnetUSDCred.chainId || eosEvmTestnet.id })
+    writeContract({
+      abi: TestnetUSDCred.abi,
+      address: TestnetUSDCred.address,
+      functionName: 'burn',
+      args: [parseUnits(amount.toString(), TestnetUSDCred.decimals)],
+      chainId: TestnetUSDCred.chainId
+    })
   }
+
+  console.log('burn tokens state', other)
 
   return (
     <Card className="w-full bg-[#1a1a1a] rounded-xl p-4 text-white">
