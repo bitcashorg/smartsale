@@ -11,7 +11,7 @@ export const projects: Project[] = [
     heroImage: '/images/projects/masterbots.png',
     badgeText: 'PRE-SALE ACTIVE',
     linkPath: '/masterbots',
-    auctionId: 8,
+    auctionId: 9,
     token: TestnetMBOTSPL,
     presaleOpen: true
   },
@@ -26,7 +26,7 @@ export const projects: Project[] = [
     badgeText: 'REGISTRATION OPEN',
     linkPath: '/wizartworld',
     token: TestnetMBOTSPL,
-    auctionId: 8,
+    auctionId: 9,
     registrationOpen: true
   },
   {
@@ -40,7 +40,7 @@ export const projects: Project[] = [
     badgeText: 'AUCTION CLOSED',
     linkPath: '/bitcash',
     token: TestnetMBOTSPL,
-    auctionId: 8,
+    auctionId: 9,
     auctionClosed: true
   }
 ]
