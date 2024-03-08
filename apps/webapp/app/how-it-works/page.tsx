@@ -1,16 +1,25 @@
-import React from 'react'
 import Image from 'next/image'
+
+const howItWorksClassNames = {
+  container: 'flex flex-col gap-3 lg:px-20 max-w-screen-xl',
+  h1: 'mb-4 text-2xl font-bold',
+  h2: 'mt-6 mb-4 text-xl font-semibold',
+  paragraph: 'my-2',
+  article: 'flex flex-col gap-3 p-3 sm:p-10 rounded-md border bg-gray-50 dark:bg-black',
+  list: 'pl-6 mt-2 list-disc [&_li]:mt-2',
+  code: 'dark:invert',
+}
 
 export default function HowItWorks() {
   return (
-    <div>
-      <h1 className="mb-4 text-2xl font-bold">How Smart Sale works</h1>
-      <p>
+    <div className={howItWorksClassNames.container}>
+      <h1 className={howItWorksClassNames.h1}>How Smart Sale works</h1>
+      <p className={howItWorksClassNames.paragraph}>
         Smart Sale is a platform enabling fair price discovery for token
         auctions. The aim of the platform is to make it easy for teams to
         discover a fair price for their token.
       </p>
-      <p className="mt-2">
+      <p className={howItWorksClassNames.paragraph}>
         Smart Sale uses batch auctions, which are a popular mechanism for
         ensuring fair price for both the decentralized and traditional finance
         worlds. Batch auctions enable matching of limit orders of buyers and
@@ -26,10 +35,10 @@ export default function HowItWorks() {
         fairest auction-mechanism for their token.
       </p>
 
-      <h2 className="mt-6 mb-4 text-xl font-semibold">
+      <h2 className={howItWorksClassNames.h2}>
         Comparison of Different Auction Mechanisms
       </h2>
-      <p>
+      <p className={howItWorksClassNames.paragraph}>
         With Smart Sale’s open-source smart contract, projects can quickly and
         securely create their own decentralized fair auctions. Unlike some
         solutions dependent on a centralized curation process, Smart Sale is
@@ -43,11 +52,12 @@ export default function HowItWorks() {
         width={720}
         height={400} // Adjust the height as needed
         layout="responsive"
+        className={howItWorksClassNames.code}
       />
-      <h2 className="mt-6 mb-4 text-xl font-semibold">
+      <h2 className={howItWorksClassNames.h2}>
         Fair Price Discovery with Smart Sale
       </h2>
-      <p>
+      <p className={howItWorksClassNames.paragraph}>
         By providing an easy interface for price discovery with batch auctions,
         Smart Sale enables:
       </p>
@@ -58,14 +68,14 @@ export default function HowItWorks() {
         </li>
         <li>Bidders to set the maximum price they are willing to pay</li>
       </ul>
-      <p className="mt-2">
+      <p className={howItWorksClassNames.paragraph}>
         These characteristics allow the platform to create a fair pricing
         dynamic in which both participants get either what they were willing to
         receive or more. Additionally the batched time nature of the auctions
         greatly reduces frontrunning and gas bidding wars, decreasing the amount
         of extracted value from auctioneers and bidders.
       </p>
-      <p className="mt-8">
+      <p className={howItWorksClassNames.paragraph}>
         The depositAndPlaceOrder function, typically found in auction or trading
         platforms like Gnosis or its forks, including Bitcash Launchpad, serves
         a dual purpose within the context of smart contracts, especially when
@@ -73,9 +83,9 @@ export default function HowItWorks() {
         its functionality
       </p>
 
-      <article>
-        <h2>Purpose</h2>
-        <ul>
+      <article className={howItWorksClassNames.article}>
+        <h2 className={howItWorksClassNames.h2}>Purpose</h2>
+        <ul className={howItWorksClassNames.list}>
           <li>
             <strong>Deposit:</strong> Allows users to deposit funds into the
             smart contract, acting as a bid in an auction or payment for placing
@@ -88,9 +98,9 @@ export default function HowItWorks() {
           </li>
         </ul>
 
-        <h2>Parameters</h2>
-        <p>Common parameters include:</p>
-        <ul>
+        <h2 className={howItWorksClassNames.h2}>Parameters</h2>
+        <p className={howItWorksClassNames.paragraph}>Common parameters include:</p>
+        <ul className={howItWorksClassNames.list}>
           <li>
             <code>auctionId</code>: Identifies the auction.
           </li>
@@ -107,8 +117,8 @@ export default function HowItWorks() {
           </li>
         </ul>
 
-        <h2>Behavior</h2>
-        <ol>
+        <h2 className={howItWorksClassNames.h2}>Behavior</h2>
+        <ol className={howItWorksClassNames.list}>
           <li>
             <strong>Validation:</strong> Validates the input parameters against
             the auctions rules.
@@ -127,8 +137,8 @@ export default function HowItWorks() {
           </li>
         </ol>
 
-        <h2>Security Considerations</h2>
-        <ul>
+        <h2 className={howItWorksClassNames.h2}>Security Considerations</h2>
+        <ul className={howItWorksClassNames.list}>
           <li>
             <strong>Reentrancy Guard:</strong> Ensures protection against
             reentrancy attacks.

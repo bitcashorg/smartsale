@@ -58,6 +58,8 @@ export function Header({
     }
   });
 
+  const connectItem = session?.account || 'login'
+
   return (
     <React.Suspense fallback={<div className="flex w-full fixed top-0 inset-x-0 mx-auto border-b border-transparent dark:border-white/[0.2] shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] h-16 shrink-0 bg-gradient-to-b from-background/10 via-background/50 to-background/80 backdrop-blur-xl" />}>
       <AnimatePresence mode="wait">
@@ -93,12 +95,16 @@ export function Header({
               {/* <HeaderLink href="https://bitcash-faucet.vercel.app/" text="usdcred faucet" />
               <HeaderLink href="https://faucet.testnet.evm.eosnetwork.com/" text="eos faucet" /> */}
             </div>
-            <MenuItem active={activeMenu} setActive={setActiveMenu} item={session?.account ? session.account : 'login'}>
-              <HeaderButtons />
-            </MenuItem>
+            <React.Suspense fallback={<div />}>
+              <MenuItem active={activeMenu} setActive={setActiveMenu} item={connectItem}>
+                <HeaderButtons />
+              </MenuItem>
+            </React.Suspense>
           </div>
         </motion.header>
       </AnimatePresence>
+      {/* // ? header anchor */}
+      <div className="w-full h-[64px] bg-transparent" id="header-anchor" />
     </React.Suspense>
   );
 };

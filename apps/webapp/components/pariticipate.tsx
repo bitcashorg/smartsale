@@ -24,38 +24,36 @@ function WalletIcon({ className }: IconProps) {
 
 export default function Participate() {
   return (
-    <div className="pt-12 pb-10 text-white">
+    <section className="pt-12 pb-10">
       <div className="flex flex-col items-center justify-center mb-16 text-center">
-        <h2 className="mb-4 text-5xl font-bold">{textContent.title}</h2>
-        <p className="text-xl">{textContent.stepsInfo}</p>
+        <h2 className="mb-4 text-4xl md:text-5xl font-black lg:max-w-[90%] xl:max-w-[66%]">{textContent.title}</h2>
+        <p className="font-semibold text-lg md:text-xl">{textContent.stepsInfo}</p>
       </div>
 
       <div className="container flex flex-col md:flex-row md:justify-between md:items-start">
         {textContent.steps.map((step, index) => (
           <div
             key={index}
-            className="flex flex-col items-center gap-5 mb-8 md:items-start md:flex-row md:w-1/3"
+            className="flex flex-col items-center mb-8 md:items-start md:w-1/3 mt-4 md:mt-0 md:ml-4"
           >
-            <div className="mt-4 md:mt-0 md:ml-4">
-              <h2 className="flex text-2xl font-semibold text-center align-items md:text-left">
-                <step.icon className="mr-2 text-gray-400 size-6" />
-                {step.title}
-              </h2>
-              <p className="py-3 text-center text-gray-400 md:text-left">
-                {step.description}
-              </p>
-              {step.buttonText && (
-                <Link href={step.href} shallow>
-                  <Button className="mt-2 bg-[#7f5af0]">
-                    {step.buttonText}
-                  </Button>
-                </Link>
-              )}
-            </div>
+            <h2 className="flex text-2xl font-semibold text-center align-items h-10 md:text-left">
+              <step.icon className="mr-2 text-gray-400 size-6" />
+              {step.title}
+            </h2>
+            <p className="py-3 text-center text-gray-500 dark:text-gray-300 md:text-left h-20">
+              {step.description}
+            </p>
+            {step.buttonText && (
+              <Link href={step.href} shallow>
+                <Button className="mt-2 bg-[#7f5af0] !text-white text-bold text-lg" size="lg">
+                  {step.buttonText}
+                </Button>
+              </Link>
+            )}
           </div>
         ))}
       </div>
-    </div>
+    </section>
   )
 }
 
