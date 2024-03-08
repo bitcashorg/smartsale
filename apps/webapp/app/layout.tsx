@@ -15,7 +15,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          'font-sans antialiased',
+          'font-sans antialiased bg-muted/50',
           GeistSans.variable,
           GeistMono.variable
         )}
@@ -27,7 +27,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           enableSystem
           disableTransitionOnChange
         >
-          <div className="flex flex-col min-h-screen bg-muted/50">
+          <div className="flex flex-col min-h-screen">
             <Header />
             <main className="container flex flex-col flex-1 py-5">
               {children}

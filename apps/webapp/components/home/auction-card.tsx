@@ -15,7 +15,7 @@ export function AuctionCard(props: Project) {
     linkPath
   } = props
 
-  const isAuctionClosed = badgeText.toLowerCase().includes('auction closed')
+  const isAuctionClosed = badgeText === 'AUCTION CLOSED'
 
   return (
     <CardContainer className="w-full">

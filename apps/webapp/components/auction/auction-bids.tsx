@@ -1,22 +1,22 @@
 'use client'
 import {
-  TableHead,
-  TableRow,
-  TableHeader,
-  TableCell,
+  Table,
   TableBody,
-  Table
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow
 } from '@/components/ui/table'
+import { useGlobalData } from '@/hooks/use-global-data'
 import { ProjectWithAuction } from '@/lib/projects'
+import { toSmallestUnit } from '@/lib/utils'
+import { readContract, writeContract } from '@wagmi/core'
+import { erc20Abi } from 'abitype/abis'
 import { useEffect, useState } from 'react'
 import { TestnetEasyAuction, TestnetUSDCred } from 'smartsale-contracts'
 import { Address, stringify } from 'viem'
 import { useAccount, useWriteContract } from 'wagmi'
-import { readContract, writeContract } from '@wagmi/core'
 import { wagmiConfig } from '../providers'
-import { toSmallestUnit } from '@/lib/utils'
-import { erc20Abi } from 'abitype/abis'
-import { useGlobalData } from '@/hooks/use-global-data'
 
 const queueStartElement =
   '0x0000000000000000000000000000000000000000000000000000000000000001'
@@ -51,7 +51,7 @@ export function AuctionBids({ project }: AuctionBidsProps) {
 
     console.log('test', stringify(test))
 
- 
+
     const { isBalanceSufficient, isAllowanceSufficient } =
       await checkBalanceAndAllowance({
         account: address,
@@ -81,7 +81,7 @@ export function AuctionBids({ project }: AuctionBidsProps) {
     }
     console.log('place order', order)
 
-   // TODO: we may need to wait a couple seconds after calling approve
+    // TODO: we may need to wait a couple seconds after calling approve
     placeBids({
       ...TestnetEasyAuction, // Ensure this contains the correct ABI and contract address
       functionName: 'placeSellOrders',
@@ -124,19 +124,19 @@ export function AuctionBids({ project }: AuctionBidsProps) {
     setBidInputs(newBidInputs)
   }
 
- console.log('error', stringify(tanstack.error), 'data', tanstack.data)
+  console.log('error', stringify(tanstack.error), 'data', tanstack.data)
   // console.log('bidInputs', JSON.stringify(bidInputs))
 
-   // show error on modal
+  // show error on modal
   useEffect(() => {
-    const err = tanstack.error 
-    if(!err || !('shortMessage' in err) || err.shortMessage === errorMessage) return
+    const err = tanstack.error
+    if (!err || !('shortMessage' in err) || err.shortMessage === errorMessage) return
     setGlobalError(err.shortMessage)
     tanstack.reset()
   }, [tanstack, errorMessage, setGlobalError])
 
   return (
-    <div>
+    <div className="grid md:grid-cols-2 gap-10">
       <Table>
         <TableHeader>
           <TableRow>
@@ -169,19 +169,22 @@ export function AuctionBids({ project }: AuctionBidsProps) {
           ))}
         </TableBody>
       </Table>
-      <button
-        disabled={bidInputs.some(item => item.errorMessage !== '')}
-        onClick={() => handleSubmit()}
-        type="submit"
-        className="w-full px-4 py-2 mt-4 font-bold text-white bg-blue-500 rounded hover:bg-blue-700"
-      >
-        Submit Bids
-      </button>
 
-      <div className="mt-4">
-        <p>{textValues.currentBid}</p>
-        <p>{textValues.currentCost}</p>
-        <p className="mt-2 text-sm">{textValues.maxTokenLimit}</p>
+      <div>
+        <button
+          disabled={bidInputs.some(item => item.errorMessage !== '')}
+          onClick={() => handleSubmit()}
+          type="submit"
+          className="w-full px-4 py-2 mt-4 font-bold text-white bg-blue-500 rounded hover:bg-blue-700"
+        >
+          Submit Bids
+        </button>
+
+        <div className="mt-4">
+          <p>{textValues.currentBid}</p>
+          <p>{textValues.currentCost}</p>
+          <p className="mt-2 text-sm">{textValues.maxTokenLimit}</p>
+        </div>
       </div>
     </div>
   )
