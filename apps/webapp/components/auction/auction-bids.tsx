@@ -1,4 +1,5 @@
 'use client'
+import { Button } from '@/components/ui/button'
 import {
   Table,
   TableBody,
@@ -9,7 +10,7 @@ import {
 } from '@/components/ui/table'
 import { useGlobalData } from '@/hooks/use-global-data'
 import { ProjectWithAuction } from '@/lib/projects'
-import { toSmallestUnit } from '@/lib/utils'
+import { cn, toSmallestUnit } from '@/lib/utils'
 import { readContract, writeContract } from '@wagmi/core'
 import { erc20Abi } from 'abitype/abis'
 import { useEffect, useState } from 'react'
@@ -136,18 +137,18 @@ export function AuctionBids({ project }: AuctionBidsProps) {
   }, [tanstack, errorMessage, setGlobalError])
 
   return (
-    <div className="grid md:grid-cols-2 gap-10">
+    <div className="grid md:grid-cols-2 gap-5 md:gap-10">
       <Table>
         <TableHeader>
           <TableRow>
-            <TableHead className="bg-red-600">Max Price</TableHead>
-            <TableHead className="bg-green-600">Bid Amount</TableHead>
+            <TableHead className="bg-gray-100 dark:bg-slate-950 text-black dark:text-white font-semibold">Max Price</TableHead>
+            <TableHead className="bg-gray-100 dark:bg-slate-950 text-black dark:text-white font-semibold">Bid Amount</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
           {bidInputs.map((_, index) => (
             <TableRow key={index}>
-              <TableCell className="bg-green-500">
+              <TableCell className={cn({ 'bg-gray-100 dark:bg-gray-900/50': index % 2 })}>
                 <CurrencyInput
                   placeholder="0.00"
                   name={`maxPrice${index}`}
@@ -156,7 +157,7 @@ export function AuctionBids({ project }: AuctionBidsProps) {
                   }
                 />
               </TableCell>
-              <TableCell className="bg-green-500">
+              <TableCell className={cn({ 'bg-gray-100 dark:bg-gray-900/50': index % 2 })}>
                 <CurrencyInput
                   placeholder="0.00"
                   name={`bidAmount${index}`}
@@ -170,20 +171,30 @@ export function AuctionBids({ project }: AuctionBidsProps) {
         </TableBody>
       </Table>
 
-      <div>
-        <button
-          disabled={bidInputs.some(item => item.errorMessage !== '')}
+      <div className="flex flex-col px-5">
+        <Button
+          disabled={!address || bidInputs.some(item => item.errorMessage !== '')}
           onClick={() => handleSubmit()}
           type="submit"
-          className="w-full px-4 py-2 mt-4 font-bold text-white bg-blue-500 rounded hover:bg-blue-700"
+          size="lg"
         >
           Submit Bids
-        </button>
+        </Button>
 
         <div className="mt-4">
-          <p>{textValues.currentBid}</p>
-          <p>{textValues.currentCost}</p>
-          <p className="mt-2 text-sm">{textValues.maxTokenLimit}</p>
+          <p className="flex justify-between w-full">
+            {textValues.currentBid.split(':').map((txt, index) => !index ? (
+              <b key={txt} className="block">{txt}</b>
+            ) : txt)}
+          </p>
+          <p className="flex justify-between w-full">
+            {textValues.currentCost.split(':').map((txt, index) => !index ? (
+              <b key={txt} className="block">{txt}</b>
+            ) : txt)}
+          </p>
+          <p className="mt-2 text-sm text-right">
+            {textValues.maxTokenLimit}
+          </p>
         </div>
       </div>
     </div>
@@ -219,7 +230,7 @@ function CurrencyInput({ handlechange, ...props }: CurrencyInputProps) {
   }
 
   return (
-    <div className="relative text-white">
+    <div className="relative">
       <span className="absolute inset-y-0 flex items-center left-2">$</span>
 
       <input
@@ -227,7 +238,7 @@ function CurrencyInput({ handlechange, ...props }: CurrencyInputProps) {
         value={value}
         onChange={handleChange}
         onBlur={handleBlur}
-        className="w-full pl-6 text-white bg-transparent placeholder:text-white focus:outline-none"
+        className="w-full pl-6 bg-transparent placeholder:text-white focus:outline-none"
         {...props}
       />
     </div>

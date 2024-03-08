@@ -4,11 +4,15 @@ import { AuctionOrders } from '@/components/auction/auction-orders'
 import { Countdown } from '@/components/auction/countdown'
 import { RedeemTokens } from '@/components/auction/redeem-tokens'
 import { RegisterAddress } from '@/components/auction/register-address'
-import { Tabs } from '@/components/tabs'
+import { Tabs } from '@/components/ui/tabs'
 import { ProjectWithAuction, projects } from '@/lib/projects'
 import Image from 'next/image'
 import { redirect } from 'next/navigation'
 import React from 'react'
+
+const auctionPageClassNames = {
+  tabCard: 'border border-gray-200 dark:border-gray-800 w-full h-[512px] overflow-y-auto bg-gray-200 dark:bg-black rounded-md p-0 md:p-10',
+}
 
 export default function AuctionPage({
   params
@@ -25,7 +29,7 @@ export default function AuctionPage({
       title: 'Auction',
       value: 'auction',
       content: (
-        <div className="w-full min-h-[80vh] bg-gray-200 dark:bg-black rounded-md p-4 md:p-10">
+        <div className={auctionPageClassNames.tabCard}>
           <React.Suspense fallback={<div>Loading ...</div>}>
             {isAuctionClosed ? (
               <RedeemTokens />
@@ -42,7 +46,7 @@ export default function AuctionPage({
       title: 'Orders',
       value: 'orders',
       content: (
-        <div className="w-full min-h-[80vh] bg-gray-200 dark:bg-black rounded-md p-4 md:p-10">
+        <div className={auctionPageClassNames.tabCard}>
           <AuctionOrders />
         </div>
       )
@@ -51,7 +55,7 @@ export default function AuctionPage({
     //   title: 'Debug',
     //   value: 'debug',
     //   content: (
-    //     <div className="w-full min-h-[80vh] bg-gray-200 dark:bg-black rounded-md p-4 md:p-10">
+    //     <div className={auctionPageClassNames.tabCard}>
     //       <React.Suspense fallback={<div>Loading ...</div>}>
     //         <AuctionDebug auctionId={project.auctionId} />
     //       </React.Suspense>
@@ -85,7 +89,7 @@ export default function AuctionPage({
           </div>
         </div>
       </section>
-      <section className="h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-screen-xl mx-auto w-full  items-start justify-start my-10">
+      <section className="h-max md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-screen-xl mx-auto w-full  items-start justify-start mt-10 mb-32">
         <Tabs tabs={tabs} />
       </section>
     </>

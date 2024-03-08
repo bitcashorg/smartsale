@@ -2,7 +2,6 @@
 
 import { registerAddress } from '@/actions'
 import { Button } from '@/components/ui/button'
-import { CardContent, CardFooter, Card } from '@/components/ui/card'
 import { useSession } from '@/hooks/use-session'
 import { supabase } from '@/lib/supabase'
 import { formatAddress, fromEntries } from '@/lib/utils'
@@ -52,31 +51,28 @@ export function RegisterAddress({ projectId }: { projectId: number }) {
   }, [])
 
   return (
-    <Card className="w-full bg-[#1a1a1a] rounded-xl p-4 text-white">
-      <CardContent>
-        <div className="flex flex-col space-y-4">
-          <div className="text-sm">
-            {!isRegistered
-              ? 'Register your address before the auction starts'
-              : 'You are already registered'}
-          </div>
-        </div>
-      </CardContent>
+    <div className="w-full h-full flex items-center justify-center flex-col gap-6 p-4">
+      <div className="flex flex-col space-y-4">
+        <p className="font-bold text-center">
+          {!isRegistered
+            ? 'Register your address before the auction starts'
+            : 'You are already registered'}
+        </p>
+      </div>
       {!isRegistered ? (
-        <CardFooter className="flex flex-col space-y-2">
-          <form action={submitForm}>
-            <input type="hidden" name="address" value={address} />
-            <input type="hidden" name="project_id" value={projectId} />
-            <input type="hidden" name="account" value={session?.account} />
-            <Button
-              className="w-full bg-[#bd1e59]"
-              disabled={!session || !address || pending}
-            >
-              Register {address ? formatAddress(address) : 'Address'}
-            </Button>
-          </form>
-        </CardFooter>
+        <form action={submitForm}>
+          <input type="hidden" name="address" value={address} />
+          <input type="hidden" name="project_id" value={projectId} />
+          <input type="hidden" name="account" value={session?.account} />
+          <Button
+            className="w-full text-lg font-semibold bg-[#bd1e59] text-white"
+            disabled={!session || !address || pending}
+            size="lg"
+          >
+            Register {address ? formatAddress(address) : 'Address'}
+          </Button>
+        </form>
       ) : null}
-    </Card>
+    </div>
   )
 }
