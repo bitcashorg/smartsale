@@ -238,7 +238,7 @@ function CurrencyInput({ handlechange, ...props }: CurrencyInputProps) {
         value={value}
         onChange={handleChange}
         onBlur={handleBlur}
-        className="w-full pl-6 bg-transparent placeholder:text-white focus:outline-none"
+        className="w-full pl-6 bg-transparent focus:outline-none"
         {...props}
       />
     </div>
