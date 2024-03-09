@@ -6,6 +6,9 @@ export const appenv = {
   sentry: {
     dsn: process.env.SENTRY_DSN || '',
   },
+  eos: {
+    dfuseKey: process.env.DFUSE_API_KEY || '',
+  },
   evm: {
     eosApi: 'https://api.testnet.evm.eosnetwork.com',
     sepoliaApi: process.env.SEPOLIA_RPC || '',
