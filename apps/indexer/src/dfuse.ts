@@ -1,11 +1,37 @@
-import { createDfuseClient, GraphqlStreamMessage, DfuseClient } from '@dfuse/client'
+import {
+  createDfuseClient,
+  GraphqlStreamMessage,
+  DfuseClient,
+  WebSocketFactory,
+} from '@dfuse/client'
 import { appenv } from './config'
-;(global as any).fetch = require('node-fetch')
-;(global as any).WebSocket = require('ws')
+import { IncomingMessage } from 'http'
+import nodeFetch from 'node-fetch'
+import WebSocketClient from 'ws'
 
-const dfuse: DfuseClient = createDfuseClient({
+// required by dfuse/client
+;(global as any).fetch = nodeFetch
+;(global as any).WebSocket = WebSocketClient
+
+const dfuse = createDfuseClient({
   apiKey: appenv.eos.dfuseKey,
   network: 'mainnet.eos.dfuse.io',
+  authentication: true,
+  httpClientOptions: {
+    fetch: nodeFetch,
+  },
+  graphqlStreamClientOptions: {
+    socketOptions: {
+      // @ts-ignore
+      webSocketFactory: (url) => webSocketFactory(url, ['graphql-ws']),
+    },
+  },
+  streamClientOptions: {
+    socketOptions: {
+      // @ts-ignore
+      webSocketFactory,
+    },
+  },
 })
 
 export async function listenToEos(): Promise<void> {
@@ -37,4 +63,22 @@ export async function listenToEos(): Promise<void> {
   })
 
   console.log('Listening to token transfers...')
+}
+
+async function webSocketFactory(url: string, protocols: string[] = []): Promise<WebSocketFactory> {
+  const webSocket = new WebSocketClient(url, protocols, {
+    handshakeTimeout: 30 * 1000, // 30s
+    maxPayload: 100 * 1024 * 100, // 100Mb
+  })
+  const onUpgrade = (response: IncomingMessage) => {
+    // Removing the listener at this point since this factory
+    // is called at each reconnection with the remote endpoint!
+    webSocket.removeListener('upgrade', onUpgrade)
+  }
+
+  webSocket.on('upgrade', onUpgrade)
+
+  // ! WebSocketFactory is !== from WebSocket type... version coalitions...ignoring for testing
+  // @ts-ignore
+  return webSocket
 }

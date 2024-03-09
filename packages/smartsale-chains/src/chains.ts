@@ -27,8 +27,6 @@ export const smartsaleChains ={
   mainnet : createMapFromId(smartsaleChainsMainnet),
 } as const
 
-
-
 function createMapFromId(items: Chain[]): Map<number, Chain> {
     const mapFromId = new Map<number, Chain>();
 
