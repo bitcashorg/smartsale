@@ -14,7 +14,7 @@ import {
 import { ApprovalEvent, TransferEvent } from './types'
 import { db } from 'smartsale-db'
 import { sepolia } from 'viem/chains'
-import { eosEvmTestnet, smartsaleChains } from 'smartsale-chains'
+import { eosEvmTestnet, smartsaleChains } from '../../../packages/smartsale-env/src'
 import { appenv } from './config'
 
 const tokens: ERC20ContractData[] = [SepoliaUSDT, TestnetUSDT]
@@ -25,7 +25,7 @@ export async function startIssuer() {
 }
 
 async function listenToTransfers(token: ERC20ContractData) {
-  const chain = smartsaleChains.testnet.get(token.chainId)
+  const chain = smartsaleChains.test.get(token.chainId)
   if (!chain) return
   console.log(`listening usdt transfers for token ${token.symbol} on chain ${chain.name}`)
   const client: PublicClient = createPublicClient({

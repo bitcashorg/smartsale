@@ -1,9 +1,4 @@
-import {
-  createDfuseClient,
-  GraphqlStreamMessage,
-  DfuseClient,
-  WebSocketFactory,
-} from '@dfuse/client'
+import { createDfuseClient, GraphqlStreamMessage, WebSocketFactory } from '@dfuse/client'
 import { appenv } from './config'
 import { IncomingMessage } from 'http'
 import nodeFetch from 'node-fetch'
@@ -78,7 +73,6 @@ async function webSocketFactory(url: string, protocols: string[] = []): Promise<
 
   webSocket.on('upgrade', onUpgrade)
 
-  // ! WebSocketFactory is !== from WebSocket type... version coalitions...ignoring for testing
   // @ts-ignore
   return webSocket
 }

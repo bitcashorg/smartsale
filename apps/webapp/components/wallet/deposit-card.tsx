@@ -10,17 +10,17 @@ import {
   Select
 } from '@/components/ui/select'
 import { Input } from '../ui/input'
-import { useSession } from '@/hooks/use-session'
+
 import { useAccount, useSwitchChain, useWriteContract } from 'wagmi'
 import { useState } from 'react'
-import { sepolia } from 'viem/chains'
+
 import {
   ERC20ContractData,
   SepoliaUSDT,
   TestnetUSDT
 } from 'smartsale-contracts'
 import { parseUnits } from 'viem'
-import { smartsaleChains } from 'smartsale-chains'
+import { smartsaleChains } from 'smartsale-env'
 
 const tokens = [SepoliaUSDT, TestnetUSDT]
 
@@ -67,14 +67,14 @@ export function DepositCard() {
               <SelectTrigger id="currency-out">
                 <SelectValue
                   placeholder={
-                    smartsaleChains.testnet.get(tokens[0].chainId)?.name
+                    smartsaleChains.test.get(tokens[0].chainId)?.name
                   }
                 />
               </SelectTrigger>
               <SelectContent position="popper">
                 {tokens.map((o, i) => (
                   <SelectItem key={i} value={i.toString()}>
-                    {smartsaleChains.testnet.get(o.chainId)?.name}
+                    {smartsaleChains.test.get(o.chainId)?.name}
                   </SelectItem>
                 ))}
               </SelectContent>

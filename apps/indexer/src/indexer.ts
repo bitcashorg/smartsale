@@ -4,8 +4,9 @@ import { TestnetEasyAuction } from 'smartsale-contracts'
 import { bigintToPostgresTimestamp, getEvents, getTokenDetails, runPromisesInSeries } from './lib'
 import { db, Prisma } from 'smartsale-db'
 import { NewAuctionEvent, NewSellOrderEvent, NewUserEvent } from './types'
-import { eosEvmTestnet } from 'smartsale-chains'
+
 import BN from 'bn.js'
+import { eosEvmTestnet } from 'smartsale-env'
 
 export async function startIndexer() {
   console.log('indexing starting')

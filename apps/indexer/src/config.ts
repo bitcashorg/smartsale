@@ -1,9 +1,7 @@
-import { info } from 'console'
-import { random, times } from 'lodash'
 import { Address } from 'viem'
 import { privateKeyToAccount } from 'viem/accounts'
+import { smartsaleEnv } from 'smartsale-env'
 
-//TODO: add cofig validation
 export const appenv = {
   sentry: {
     dsn: process.env.SENTRY_DSN || '',
@@ -18,28 +16,5 @@ export const appenv = {
     issuerAddress: (process.env.ISSUER_ADDRESS || '') as Address,
     issuerAccount: privateKeyToAccount(`0x${process.env.ISSUER_KEY}`),
   },
+  ...smartsaleEnv.test,
 }
-
-// Viem/AbiType/Wagmi is the toolset
-
-// MINIMAL
-
-// Patterns
-
-// Abis
-// - On EVM you need to get ABIs type at dev type, there's no standard rpc endpoint for that
-// - you also need to know the address and chainId of an asset
-//  - with ERC20 you can get symbol and decimals, but you can optimize at build time some times
-
-// Objects
-// Chain:
-//  chain_id:
-//  chain_type: evm | eos
-
-// Contract
-// - getContract with Viem gives functions and types (autogenerates like abitype)?
-
-// Tokens
-
-// random:
-// - create visualization of types and utils

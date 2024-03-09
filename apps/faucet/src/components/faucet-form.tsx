@@ -6,7 +6,6 @@ import { useEffect, useState } from "react"
 import { ERC20ContractData, SepoliaUSDT, TestnetMBOTSPL, TestnetUSDCred, TestnetUSDT } from 'smartsale-contracts'
 import { TokenSelect } from "./token-select"
 import { parseUnits } from "viem"
-import { eosEvmTestnet } from "smartsale-chains"
 import { AddTokenToWallet } from "./add-token-to-metamask"
 
 const tokens = [TestnetUSDCred, SepoliaUSDT, TestnetMBOTSPL, TestnetUSDT]
@@ -21,7 +20,7 @@ export function FaucetForm() {
 
   // Execute the contract write operation
   const callFaucet = async () => {
-    const chainId = token.chainId || eosEvmTestnet.id
+    const chainId = token.chainId
     switchChain({chainId})
     
     console.log('callFaucet', JSON.stringify({
