@@ -1,12 +1,13 @@
-import {  ERC20ContractData } from "./types";
+import {  EVMTokenContractData } from "./types";
 
-export const TestnetUSDCred : ERC20ContractData = {
+export const TestnetUSDCred : EVMTokenContractData = {
   address: '0x1d5A4C37e60cAd0C72c057E3c191352429cDB38e',
   name: 'USD Credit Token',
   symbol: 'USDCred',
   decimals: 6,
   indexFromBlock: 30294882,
   chainId: 15557, 
+  chainType: 'evm',
   abi:  [
     {
       "inputs": [

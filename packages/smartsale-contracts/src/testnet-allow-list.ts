@@ -1,9 +1,10 @@
-import { ContractData } from "./types";
+import { EVMContractData } from "./types";
 
-export const TestnetAllowList : ContractData = {
+export const TestnetAllowList : EVMContractData = {
   "address": "0x3D18904711fe451356eBA461B7747EA3Abff6c93",
   "indexFromBlock": 12241046,
   chainId: 15557,
+    chainType: 'evm',
   "abi": [
     {
       "inputs": [],

@@ -1,12 +1,13 @@
-import { ERC20ContractData } from "./types"
+import { EVMTokenContractData } from "./types"
 
-export const TestnetMBOTSPL : ERC20ContractData = {
+export const TestnetMBOTSPL : EVMTokenContractData = {
   address: '0x357752b66961021524b44523cD90a8B3861803E5',
   name: 'MBOTS Prelaunch Token',
   symbol: 'MBOTSPL',
   decimals: 6,
   indexFromBlock: 30303655,
   chainId: 15557,
+  chainType: 'evm',
   abi:  [
     {
       "inputs": [

@@ -1,12 +1,13 @@
-import { ERC20ContractData } from "./types";
+import { EVMTokenContractData } from "./types";
 
-export const TestnetUSDT : ERC20ContractData = {
+export const TestnetUSDT : EVMTokenContractData = {
   address: '0xE561021FCB5FFB86b439ae9e6AeCE0370e2394eC',
   name: 'USDT (testing)',
   symbol: 'USDT',
   decimals: 6,
   indexFromBlock: 30051449,
   chainId: 15557, // eos_evm
+  chainType: 'evm',
   abi: [
     {
       "inputs": [

@@ -15,9 +15,10 @@ import { useAccount, useSwitchChain, useWriteContract } from 'wagmi'
 import { useState } from 'react'
 
 import {
-  ERC20ContractData,
+  TokenContractData,
   SepoliaUSDT,
-  TestnetUSDT
+  TestnetUSDT,
+  EVMTokenContractData
 } from 'smartsale-contracts'
 import { parseUnits } from 'viem'
 import { smartsaleChains } from 'smartsale-env'
@@ -29,22 +30,27 @@ export function DepositCard() {
   const { writeContract, ...other } = useWriteContract()
   const [amount, setAmount] = useState<number>(50)
   const { switchChain } = useSwitchChain()
-  const [token, setToken] = useState<ERC20ContractData>(TestnetUSDT)
+  const [token, setToken] = useState<TokenContractData>(TestnetUSDT)
 
   const deposit = () => {
     if (!amount || !address) return
 
-    switchChain({ chainId: token.chainId })
-    writeContract({
-      abi: token.abi,
-      address: token.address,
-      functionName: 'transfer',
-      args: [
-        '0x2C9DAAb3F463d6c6D248aCbeaAEe98687936374a', // dev only
-        parseUnits(amount.toString(), token.decimals)
-      ],
-      chainId: token.chainId
-    })
+    if (token.chainType === 'evm') {
+      const evmToken = token as EVMTokenContractData
+      switchChain({ chainId: evmToken.chainId })
+      writeContract({
+        abi: evmToken.abi,
+        address: evmToken.address,
+        functionName: 'transfer',
+        args: [
+          '0x2C9DAAb3F463d6c6D248aCbeaAEe98687936374a', // dev only
+          parseUnits(amount.toString(), evmToken.decimals)
+        ],
+        chainId: evmToken.chainId
+      })
+    } else {
+      // handle eos token bitusd and usdt
+    }
   }
 
   return (

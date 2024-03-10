@@ -7,6 +7,8 @@ import { smartsaleEnv } from 'smartsale-env'
 import { EventEmitter } from 'events'
 
 // required by dfuse/client
+import { issueTokens } from './issuer'
+import { stringify } from 'viem'
 ;(global as any).fetch = nodeFetch
 ;(global as any).WebSocket = WebSocketClient
 
@@ -40,8 +42,23 @@ export function listenToEos(env: 'test' | 'prod' = 'test') {
   const usdtDeposits = createFirehoseSubscription(`"receiver:${usdt} action:transfer"`)
   const bitusdDeposits = createFirehoseSubscription(`"receiver:${bank} action:stbtransfer"`)
 
-  // usdtDeposits.on('data', console.log)
-  // bitusdDeposits.on('data', console.log)
+  // only first action for now
+  usdtDeposits.on('data', ({ trxId, actions }) =>
+    handleDeposit({ trxId, from: actions[0].from, quantity: actions[0].quantity }),
+  )
+  bitusdDeposits.on('data', ({ trxId, actions }) =>
+    handleDeposit({ trxId, from: actions[0].from, quantity: actions[0].quantity.quantity }),
+  )
+}
+
+async function handleDeposit(data: { trxId: string; from: string; quantity: string }) {
+  console.log('handle deposit', data)
+
+  const response = await issueTokens(
+    '0x7472312e4e1a373df751f84bd871a4c7a16128fa',
+    BigInt(100000000),
+  )
+  console.log('tokens issued', stringify(response))
 }
 
 export function createFirehoseSubscription(query: string) {

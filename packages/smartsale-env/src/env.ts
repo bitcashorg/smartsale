@@ -1,5 +1,5 @@
 import { smartsaleChains } from "./chains"
-import { SepoliaUSDT } from 'smartsale-contracts'
+import { EOSFakeUSDT, EOSUSDT, SepoliaUSDT, TokenContractData, TestnetUSDT } from 'smartsale-contracts'
 import { Address, Chain } from "viem"
 
 const prod: SmartsaleEnvConfig = {
@@ -16,14 +16,7 @@ const prod: SmartsaleEnvConfig = {
   smartsale: {
     auction: '0x'
   },
-  usdt: [
-    {
-      address: 'tethertether',
-      chainType: 'antelope',
-      chainId: 'aca376f206b8fc25a6ed44dbdc66547c36c6c33e3a119ffbeaef943642f0e906',
-      chainName: 'EOS',
-    },
-  ],
+  usdt: [EOSUSDT],
 }
 
 const test: SmartsaleEnvConfig = {
@@ -41,15 +34,11 @@ const test: SmartsaleEnvConfig = {
     auction: '0x'
   },
   usdt: [
-    {
-      address: 'bkbmocktoken',
-      chainType: 'antelope',
-      chainId: 'aca376f206b8fc25a6ed44dbdc66547c36c6c33e3a119ffbeaef943642f0e906',
-      chainName: 'EOS',
-    },
-    { ...SepoliaUSDT, chainType: 'evm' }
+    EOSFakeUSDT,
+    SepoliaUSDT,
+    TestnetUSDT
   ],
-  }
+}
 
 // common environment configs
 export const smartsaleEnv = {
@@ -74,12 +63,5 @@ export interface SmartsaleEnvConfig  {
     smartsale: {
       auction: Address
     },
-    usdt: USDTContract[]
-  }
-
-  export type USDTContract = {
-    address: string | Address
-    chainId: number | string 
-    chainType: 'evm' | 'antelope'
-    chainName?: string
+    usdt: TokenContractData[]
   }

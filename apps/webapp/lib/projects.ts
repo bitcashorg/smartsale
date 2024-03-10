@@ -1,4 +1,4 @@
-import { ERC20ContractData, TestnetMBOTSPL } from 'smartsale-contracts'
+import { TokenContractData, TestnetMBOTSPL } from 'smartsale-contracts'
 
 export const projects: Project[] = [
   {
@@ -56,7 +56,7 @@ export interface Project {
   badgeText: string
   linkPath: string
   auctionId?: number
-  token?: ERC20ContractData
+  token?: TokenContractData
   presaleOpen?: boolean
   registrationOpen?: boolean
   auctionClosed?: boolean
