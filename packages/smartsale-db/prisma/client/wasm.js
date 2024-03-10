@@ -179,6 +179,13 @@ exports.Prisma.WhitelistScalarFieldEnum = {
   account: 'account'
 };
 
+exports.Prisma.EsrScalarFieldEnum = {
+  id: 'id',
+  created_at: 'created_at',
+  code: 'code',
+  trx_id: 'trx_id'
+};
+
 exports.Prisma.SortOrder = {
   asc: 'asc',
   desc: 'desc'
@@ -201,7 +208,8 @@ exports.Prisma.ModelName = {
   users: 'users',
   session: 'session',
   transfers: 'transfers',
-  whitelist: 'whitelist'
+  whitelist: 'whitelist',
+  esr: 'esr'
 };
 
 /**

@@ -43,6 +43,11 @@ export type transfers = $Result.DefaultSelection<Prisma.$transfersPayload>
  * This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
  */
 export type whitelist = $Result.DefaultSelection<Prisma.$whitelistPayload>
+/**
+ * Model esr
+ * 
+ */
+export type esr = $Result.DefaultSelection<Prisma.$esrPayload>
 
 /**
  * ##  Prisma Client ʲˢ
@@ -225,6 +230,16 @@ export class PrismaClient<
     * ```
     */
   get whitelist(): Prisma.whitelistDelegate<ExtArgs>;
+
+  /**
+   * `prisma.esr`: Exposes CRUD operations for the **esr** model.
+    * Example usage:
+    * ```ts
+    * // Fetch zero or more Esrs
+    * const esrs = await prisma.esr.findMany()
+    * ```
+    */
+  get esr(): Prisma.esrDelegate<ExtArgs>;
 }
 
 export namespace Prisma {
@@ -700,7 +715,8 @@ export namespace Prisma {
     users: 'users',
     session: 'session',
     transfers: 'transfers',
-    whitelist: 'whitelist'
+    whitelist: 'whitelist',
+    esr: 'esr'
   };
 
   export type ModelName = (typeof ModelName)[keyof typeof ModelName]
@@ -717,7 +733,7 @@ export namespace Prisma {
 
   export type TypeMap<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     meta: {
-      modelProps: 'auction_details' | 'orders' | 'users' | 'session' | 'transfers' | 'whitelist'
+      modelProps: 'auction_details' | 'orders' | 'users' | 'session' | 'transfers' | 'whitelist' | 'esr'
       txIsolationLevel: Prisma.TransactionIsolationLevel
     },
     model: {
@@ -1114,6 +1130,72 @@ export namespace Prisma {
           count: {
             args: Prisma.whitelistCountArgs<ExtArgs>,
             result: $Utils.Optional<WhitelistCountAggregateOutputType> | number
+          }
+        }
+      }
+      esr: {
+        payload: Prisma.$esrPayload<ExtArgs>
+        fields: Prisma.esrFieldRefs
+        operations: {
+          findUnique: {
+            args: Prisma.esrFindUniqueArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$esrPayload> | null
+          }
+          findUniqueOrThrow: {
+            args: Prisma.esrFindUniqueOrThrowArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$esrPayload>
+          }
+          findFirst: {
+            args: Prisma.esrFindFirstArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$esrPayload> | null
+          }
+          findFirstOrThrow: {
+            args: Prisma.esrFindFirstOrThrowArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$esrPayload>
+          }
+          findMany: {
+            args: Prisma.esrFindManyArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$esrPayload>[]
+          }
+          create: {
+            args: Prisma.esrCreateArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$esrPayload>
+          }
+          createMany: {
+            args: Prisma.esrCreateManyArgs<ExtArgs>,
+            result: Prisma.BatchPayload
+          }
+          delete: {
+            args: Prisma.esrDeleteArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$esrPayload>
+          }
+          update: {
+            args: Prisma.esrUpdateArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$esrPayload>
+          }
+          deleteMany: {
+            args: Prisma.esrDeleteManyArgs<ExtArgs>,
+            result: Prisma.BatchPayload
+          }
+          updateMany: {
+            args: Prisma.esrUpdateManyArgs<ExtArgs>,
+            result: Prisma.BatchPayload
+          }
+          upsert: {
+            args: Prisma.esrUpsertArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$esrPayload>
+          }
+          aggregate: {
+            args: Prisma.EsrAggregateArgs<ExtArgs>,
+            result: $Utils.Optional<AggregateEsr>
+          }
+          groupBy: {
+            args: Prisma.esrGroupByArgs<ExtArgs>,
+            result: $Utils.Optional<EsrGroupByOutputType>[]
+          }
+          count: {
+            args: Prisma.esrCountArgs<ExtArgs>,
+            result: $Utils.Optional<EsrCountAggregateOutputType> | number
           }
         }
       }
@@ -7003,6 +7085,865 @@ export namespace Prisma {
 
 
   /**
+   * Model esr
+   */
+
+  export type AggregateEsr = {
+    _count: EsrCountAggregateOutputType | null
+    _min: EsrMinAggregateOutputType | null
+    _max: EsrMaxAggregateOutputType | null
+  }
+
+  export type EsrMinAggregateOutputType = {
+    id: string | null
+    created_at: Date | null
+    code: string | null
+    trx_id: string | null
+  }
+
+  export type EsrMaxAggregateOutputType = {
+    id: string | null
+    created_at: Date | null
+    code: string | null
+    trx_id: string | null
+  }
+
+  export type EsrCountAggregateOutputType = {
+    id: number
+    created_at: number
+    code: number
+    trx_id: number
+    _all: number
+  }
+
+
+  export type EsrMinAggregateInputType = {
+    id?: true
+    created_at?: true
+    code?: true
+    trx_id?: true
+  }
+
+  export type EsrMaxAggregateInputType = {
+    id?: true
+    created_at?: true
+    code?: true
+    trx_id?: true
+  }
+
+  export type EsrCountAggregateInputType = {
+    id?: true
+    created_at?: true
+    code?: true
+    trx_id?: true
+    _all?: true
+  }
+
+  export type EsrAggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which esr to aggregate.
+     */
+    where?: esrWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of esrs to fetch.
+     */
+    orderBy?: esrOrderByWithRelationInput | esrOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the start position
+     */
+    cursor?: esrWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` esrs from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` esrs.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Count returned esrs
+    **/
+    _count?: true | EsrCountAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the minimum value
+    **/
+    _min?: EsrMinAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the maximum value
+    **/
+    _max?: EsrMaxAggregateInputType
+  }
+
+  export type GetEsrAggregateType<T extends EsrAggregateArgs> = {
+        [P in keyof T & keyof AggregateEsr]: P extends '_count' | 'count'
+      ? T[P] extends true
+        ? number
+        : GetScalarType<T[P], AggregateEsr[P]>
+      : GetScalarType<T[P], AggregateEsr[P]>
+  }
+
+
+
+
+  export type esrGroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: esrWhereInput
+    orderBy?: esrOrderByWithAggregationInput | esrOrderByWithAggregationInput[]
+    by: EsrScalarFieldEnum[] | EsrScalarFieldEnum
+    having?: esrScalarWhereWithAggregatesInput
+    take?: number
+    skip?: number
+    _count?: EsrCountAggregateInputType | true
+    _min?: EsrMinAggregateInputType
+    _max?: EsrMaxAggregateInputType
+  }
+
+  export type EsrGroupByOutputType = {
+    id: string
+    created_at: Date
+    code: string | null
+    trx_id: string | null
+    _count: EsrCountAggregateOutputType | null
+    _min: EsrMinAggregateOutputType | null
+    _max: EsrMaxAggregateOutputType | null
+  }
+
+  type GetEsrGroupByPayload<T extends esrGroupByArgs> = Prisma.PrismaPromise<
+    Array<
+      PickEnumerable<EsrGroupByOutputType, T['by']> &
+        {
+          [P in ((keyof T) & (keyof EsrGroupByOutputType))]: P extends '_count'
+            ? T[P] extends boolean
+              ? number
+              : GetScalarType<T[P], EsrGroupByOutputType[P]>
+            : GetScalarType<T[P], EsrGroupByOutputType[P]>
+        }
+      >
+    >
+
+
+  export type esrSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    created_at?: boolean
+    code?: boolean
+    trx_id?: boolean
+  }, ExtArgs["result"]["esr"]>
+
+  export type esrSelectScalar = {
+    id?: boolean
+    created_at?: boolean
+    code?: boolean
+    trx_id?: boolean
+  }
+
+
+  export type $esrPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    name: "esr"
+    objects: {}
+    scalars: $Extensions.GetPayloadResult<{
+      id: string
+      created_at: Date
+      code: string | null
+      trx_id: string | null
+    }, ExtArgs["result"]["esr"]>
+    composites: {}
+  }
+
+
+  type esrGetPayload<S extends boolean | null | undefined | esrDefaultArgs> = $Result.GetResult<Prisma.$esrPayload, S>
+
+  type esrCountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = 
+    Omit<esrFindManyArgs, 'select' | 'include' | 'distinct'> & {
+      select?: EsrCountAggregateInputType | true
+    }
+
+  export interface esrDelegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> {
+    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['esr'], meta: { name: 'esr' } }
+    /**
+     * Find zero or one Esr that matches the filter.
+     * @param {esrFindUniqueArgs} args - Arguments to find a Esr
+     * @example
+     * // Get one Esr
+     * const esr = await prisma.esr.findUnique({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findUnique<T extends esrFindUniqueArgs<ExtArgs>>(
+      args: SelectSubset<T, esrFindUniqueArgs<ExtArgs>>
+    ): Prisma__esrClient<$Result.GetResult<Prisma.$esrPayload<ExtArgs>, T, 'findUnique'> | null, null, ExtArgs>
+
+    /**
+     * Find one Esr that matches the filter or throw an error  with `error.code='P2025'` 
+     *     if no matches were found.
+     * @param {esrFindUniqueOrThrowArgs} args - Arguments to find a Esr
+     * @example
+     * // Get one Esr
+     * const esr = await prisma.esr.findUniqueOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findUniqueOrThrow<T extends esrFindUniqueOrThrowArgs<ExtArgs>>(
+      args?: SelectSubset<T, esrFindUniqueOrThrowArgs<ExtArgs>>
+    ): Prisma__esrClient<$Result.GetResult<Prisma.$esrPayload<ExtArgs>, T, 'findUniqueOrThrow'>, never, ExtArgs>
+
+    /**
+     * Find the first Esr that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {esrFindFirstArgs} args - Arguments to find a Esr
+     * @example
+     * // Get one Esr
+     * const esr = await prisma.esr.findFirst({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findFirst<T extends esrFindFirstArgs<ExtArgs>>(
+      args?: SelectSubset<T, esrFindFirstArgs<ExtArgs>>
+    ): Prisma__esrClient<$Result.GetResult<Prisma.$esrPayload<ExtArgs>, T, 'findFirst'> | null, null, ExtArgs>
+
+    /**
+     * Find the first Esr that matches the filter or
+     * throw `PrismaKnownClientError` with `P2025` code if no matches were found.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {esrFindFirstOrThrowArgs} args - Arguments to find a Esr
+     * @example
+     * // Get one Esr
+     * const esr = await prisma.esr.findFirstOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findFirstOrThrow<T extends esrFindFirstOrThrowArgs<ExtArgs>>(
+      args?: SelectSubset<T, esrFindFirstOrThrowArgs<ExtArgs>>
+    ): Prisma__esrClient<$Result.GetResult<Prisma.$esrPayload<ExtArgs>, T, 'findFirstOrThrow'>, never, ExtArgs>
+
+    /**
+     * Find zero or more Esrs that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {esrFindManyArgs=} args - Arguments to filter and select certain fields only.
+     * @example
+     * // Get all Esrs
+     * const esrs = await prisma.esr.findMany()
+     * 
+     * // Get first 10 Esrs
+     * const esrs = await prisma.esr.findMany({ take: 10 })
+     * 
+     * // Only select the `id`
+     * const esrWithIdOnly = await prisma.esr.findMany({ select: { id: true } })
+     * 
+    **/
+    findMany<T extends esrFindManyArgs<ExtArgs>>(
+      args?: SelectSubset<T, esrFindManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<$Result.GetResult<Prisma.$esrPayload<ExtArgs>, T, 'findMany'>>
+
+    /**
+     * Create a Esr.
+     * @param {esrCreateArgs} args - Arguments to create a Esr.
+     * @example
+     * // Create one Esr
+     * const Esr = await prisma.esr.create({
+     *   data: {
+     *     // ... data to create a Esr
+     *   }
+     * })
+     * 
+    **/
+    create<T extends esrCreateArgs<ExtArgs>>(
+      args: SelectSubset<T, esrCreateArgs<ExtArgs>>
+    ): Prisma__esrClient<$Result.GetResult<Prisma.$esrPayload<ExtArgs>, T, 'create'>, never, ExtArgs>
+
+    /**
+     * Create many Esrs.
+     *     @param {esrCreateManyArgs} args - Arguments to create many Esrs.
+     *     @example
+     *     // Create many Esrs
+     *     const esr = await prisma.esr.createMany({
+     *       data: {
+     *         // ... provide data here
+     *       }
+     *     })
+     *     
+    **/
+    createMany<T extends esrCreateManyArgs<ExtArgs>>(
+      args?: SelectSubset<T, esrCreateManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Delete a Esr.
+     * @param {esrDeleteArgs} args - Arguments to delete one Esr.
+     * @example
+     * // Delete one Esr
+     * const Esr = await prisma.esr.delete({
+     *   where: {
+     *     // ... filter to delete one Esr
+     *   }
+     * })
+     * 
+    **/
+    delete<T extends esrDeleteArgs<ExtArgs>>(
+      args: SelectSubset<T, esrDeleteArgs<ExtArgs>>
+    ): Prisma__esrClient<$Result.GetResult<Prisma.$esrPayload<ExtArgs>, T, 'delete'>, never, ExtArgs>
+
+    /**
+     * Update one Esr.
+     * @param {esrUpdateArgs} args - Arguments to update one Esr.
+     * @example
+     * // Update one Esr
+     * const esr = await prisma.esr.update({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+    **/
+    update<T extends esrUpdateArgs<ExtArgs>>(
+      args: SelectSubset<T, esrUpdateArgs<ExtArgs>>
+    ): Prisma__esrClient<$Result.GetResult<Prisma.$esrPayload<ExtArgs>, T, 'update'>, never, ExtArgs>
+
+    /**
+     * Delete zero or more Esrs.
+     * @param {esrDeleteManyArgs} args - Arguments to filter Esrs to delete.
+     * @example
+     * // Delete a few Esrs
+     * const { count } = await prisma.esr.deleteMany({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     * 
+    **/
+    deleteMany<T extends esrDeleteManyArgs<ExtArgs>>(
+      args?: SelectSubset<T, esrDeleteManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more Esrs.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {esrUpdateManyArgs} args - Arguments to update one or more rows.
+     * @example
+     * // Update many Esrs
+     * const esr = await prisma.esr.updateMany({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+    **/
+    updateMany<T extends esrUpdateManyArgs<ExtArgs>>(
+      args: SelectSubset<T, esrUpdateManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Create or update one Esr.
+     * @param {esrUpsertArgs} args - Arguments to update or create a Esr.
+     * @example
+     * // Update or create a Esr
+     * const esr = await prisma.esr.upsert({
+     *   create: {
+     *     // ... data to create a Esr
+     *   },
+     *   update: {
+     *     // ... in case it already exists, update
+     *   },
+     *   where: {
+     *     // ... the filter for the Esr we want to update
+     *   }
+     * })
+    **/
+    upsert<T extends esrUpsertArgs<ExtArgs>>(
+      args: SelectSubset<T, esrUpsertArgs<ExtArgs>>
+    ): Prisma__esrClient<$Result.GetResult<Prisma.$esrPayload<ExtArgs>, T, 'upsert'>, never, ExtArgs>
+
+    /**
+     * Count the number of Esrs.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {esrCountArgs} args - Arguments to filter Esrs to count.
+     * @example
+     * // Count the number of Esrs
+     * const count = await prisma.esr.count({
+     *   where: {
+     *     // ... the filter for the Esrs we want to count
+     *   }
+     * })
+    **/
+    count<T extends esrCountArgs>(
+      args?: Subset<T, esrCountArgs>,
+    ): Prisma.PrismaPromise<
+      T extends $Utils.Record<'select', any>
+        ? T['select'] extends true
+          ? number
+          : GetScalarType<T['select'], EsrCountAggregateOutputType>
+        : number
+    >
+
+    /**
+     * Allows you to perform aggregations operations on a Esr.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {EsrAggregateArgs} args - Select which aggregations you would like to apply and on what fields.
+     * @example
+     * // Ordered by age ascending
+     * // Where email contains prisma.io
+     * // Limited to the 10 users
+     * const aggregations = await prisma.user.aggregate({
+     *   _avg: {
+     *     age: true,
+     *   },
+     *   where: {
+     *     email: {
+     *       contains: "prisma.io",
+     *     },
+     *   },
+     *   orderBy: {
+     *     age: "asc",
+     *   },
+     *   take: 10,
+     * })
+    **/
+    aggregate<T extends EsrAggregateArgs>(args: Subset<T, EsrAggregateArgs>): Prisma.PrismaPromise<GetEsrAggregateType<T>>
+
+    /**
+     * Group by Esr.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {esrGroupByArgs} args - Group by arguments.
+     * @example
+     * // Group by city, order by createdAt, get count
+     * const result = await prisma.user.groupBy({
+     *   by: ['city', 'createdAt'],
+     *   orderBy: {
+     *     createdAt: true
+     *   },
+     *   _count: {
+     *     _all: true
+     *   },
+     * })
+     * 
+    **/
+    groupBy<
+      T extends esrGroupByArgs,
+      HasSelectOrTake extends Or<
+        Extends<'skip', Keys<T>>,
+        Extends<'take', Keys<T>>
+      >,
+      OrderByArg extends True extends HasSelectOrTake
+        ? { orderBy: esrGroupByArgs['orderBy'] }
+        : { orderBy?: esrGroupByArgs['orderBy'] },
+      OrderFields extends ExcludeUnderscoreKeys<Keys<MaybeTupleToUnion<T['orderBy']>>>,
+      ByFields extends MaybeTupleToUnion<T['by']>,
+      ByValid extends Has<ByFields, OrderFields>,
+      HavingFields extends GetHavingFields<T['having']>,
+      HavingValid extends Has<ByFields, HavingFields>,
+      ByEmpty extends T['by'] extends never[] ? True : False,
+      InputErrors extends ByEmpty extends True
+      ? `Error: "by" must not be empty.`
+      : HavingValid extends False
+      ? {
+          [P in HavingFields]: P extends ByFields
+            ? never
+            : P extends string
+            ? `Error: Field "${P}" used in "having" needs to be provided in "by".`
+            : [
+                Error,
+                'Field ',
+                P,
+                ` in "having" needs to be provided in "by"`,
+              ]
+        }[HavingFields]
+      : 'take' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "take", you also need to provide "orderBy"'
+      : 'skip' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "skip", you also need to provide "orderBy"'
+      : ByValid extends True
+      ? {}
+      : {
+          [P in OrderFields]: P extends ByFields
+            ? never
+            : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+        }[OrderFields]
+    >(args: SubsetIntersection<T, esrGroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetEsrGroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
+  /**
+   * Fields of the esr model
+   */
+  readonly fields: esrFieldRefs;
+  }
+
+  /**
+   * The delegate class that acts as a "Promise-like" for esr.
+   * Why is this prefixed with `Prisma__`?
+   * Because we want to prevent naming conflicts as mentioned in
+   * https://github.com/prisma/prisma-client-js/issues/707
+   */
+  export interface Prisma__esrClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> extends Prisma.PrismaPromise<T> {
+    readonly [Symbol.toStringTag]: 'PrismaPromise';
+
+
+    /**
+     * Attaches callbacks for the resolution and/or rejection of the Promise.
+     * @param onfulfilled The callback to execute when the Promise is resolved.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of which ever callback is executed.
+     */
+    then<TResult1 = T, TResult2 = never>(onfulfilled?: ((value: T) => TResult1 | PromiseLike<TResult1>) | undefined | null, onrejected?: ((reason: any) => TResult2 | PromiseLike<TResult2>) | undefined | null): $Utils.JsPromise<TResult1 | TResult2>;
+    /**
+     * Attaches a callback for only the rejection of the Promise.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of the callback.
+     */
+    catch<TResult = never>(onrejected?: ((reason: any) => TResult | PromiseLike<TResult>) | undefined | null): $Utils.JsPromise<T | TResult>;
+    /**
+     * Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
+     * resolved value cannot be modified from the callback.
+     * @param onfinally The callback to execute when the Promise is settled (fulfilled or rejected).
+     * @returns A Promise for the completion of the callback.
+     */
+    finally(onfinally?: (() => void) | undefined | null): $Utils.JsPromise<T>;
+  }
+
+
+
+  /**
+   * Fields of the esr model
+   */ 
+  interface esrFieldRefs {
+    readonly id: FieldRef<"esr", 'String'>
+    readonly created_at: FieldRef<"esr", 'DateTime'>
+    readonly code: FieldRef<"esr", 'String'>
+    readonly trx_id: FieldRef<"esr", 'String'>
+  }
+    
+
+  // Custom InputTypes
+
+  /**
+   * esr findUnique
+   */
+  export type esrFindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the esr
+     */
+    select?: esrSelect<ExtArgs> | null
+    /**
+     * Filter, which esr to fetch.
+     */
+    where: esrWhereUniqueInput
+  }
+
+
+  /**
+   * esr findUniqueOrThrow
+   */
+  export type esrFindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the esr
+     */
+    select?: esrSelect<ExtArgs> | null
+    /**
+     * Filter, which esr to fetch.
+     */
+    where: esrWhereUniqueInput
+  }
+
+
+  /**
+   * esr findFirst
+   */
+  export type esrFindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the esr
+     */
+    select?: esrSelect<ExtArgs> | null
+    /**
+     * Filter, which esr to fetch.
+     */
+    where?: esrWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of esrs to fetch.
+     */
+    orderBy?: esrOrderByWithRelationInput | esrOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for esrs.
+     */
+    cursor?: esrWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` esrs from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` esrs.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of esrs.
+     */
+    distinct?: EsrScalarFieldEnum | EsrScalarFieldEnum[]
+  }
+
+
+  /**
+   * esr findFirstOrThrow
+   */
+  export type esrFindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the esr
+     */
+    select?: esrSelect<ExtArgs> | null
+    /**
+     * Filter, which esr to fetch.
+     */
+    where?: esrWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of esrs to fetch.
+     */
+    orderBy?: esrOrderByWithRelationInput | esrOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for esrs.
+     */
+    cursor?: esrWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` esrs from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` esrs.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of esrs.
+     */
+    distinct?: EsrScalarFieldEnum | EsrScalarFieldEnum[]
+  }
+
+
+  /**
+   * esr findMany
+   */
+  export type esrFindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the esr
+     */
+    select?: esrSelect<ExtArgs> | null
+    /**
+     * Filter, which esrs to fetch.
+     */
+    where?: esrWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of esrs to fetch.
+     */
+    orderBy?: esrOrderByWithRelationInput | esrOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for listing esrs.
+     */
+    cursor?: esrWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` esrs from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` esrs.
+     */
+    skip?: number
+    distinct?: EsrScalarFieldEnum | EsrScalarFieldEnum[]
+  }
+
+
+  /**
+   * esr create
+   */
+  export type esrCreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the esr
+     */
+    select?: esrSelect<ExtArgs> | null
+    /**
+     * The data needed to create a esr.
+     */
+    data?: XOR<esrCreateInput, esrUncheckedCreateInput>
+  }
+
+
+  /**
+   * esr createMany
+   */
+  export type esrCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to create many esrs.
+     */
+    data: esrCreateManyInput | esrCreateManyInput[]
+    skipDuplicates?: boolean
+  }
+
+
+  /**
+   * esr update
+   */
+  export type esrUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the esr
+     */
+    select?: esrSelect<ExtArgs> | null
+    /**
+     * The data needed to update a esr.
+     */
+    data: XOR<esrUpdateInput, esrUncheckedUpdateInput>
+    /**
+     * Choose, which esr to update.
+     */
+    where: esrWhereUniqueInput
+  }
+
+
+  /**
+   * esr updateMany
+   */
+  export type esrUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to update esrs.
+     */
+    data: XOR<esrUpdateManyMutationInput, esrUncheckedUpdateManyInput>
+    /**
+     * Filter which esrs to update
+     */
+    where?: esrWhereInput
+  }
+
+
+  /**
+   * esr upsert
+   */
+  export type esrUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the esr
+     */
+    select?: esrSelect<ExtArgs> | null
+    /**
+     * The filter to search for the esr to update in case it exists.
+     */
+    where: esrWhereUniqueInput
+    /**
+     * In case the esr found by the `where` argument doesn't exist, create a new esr with this data.
+     */
+    create: XOR<esrCreateInput, esrUncheckedCreateInput>
+    /**
+     * In case the esr was found with the provided `where` argument, update it with this data.
+     */
+    update: XOR<esrUpdateInput, esrUncheckedUpdateInput>
+  }
+
+
+  /**
+   * esr delete
+   */
+  export type esrDeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the esr
+     */
+    select?: esrSelect<ExtArgs> | null
+    /**
+     * Filter which esr to delete.
+     */
+    where: esrWhereUniqueInput
+  }
+
+
+  /**
+   * esr deleteMany
+   */
+  export type esrDeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which esrs to delete
+     */
+    where?: esrWhereInput
+  }
+
+
+  /**
+   * esr without action
+   */
+  export type esrDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the esr
+     */
+    select?: esrSelect<ExtArgs> | null
+  }
+
+
+
+  /**
    * Enums
    */
 
@@ -7104,6 +8045,16 @@ export namespace Prisma {
   };
 
   export type WhitelistScalarFieldEnum = (typeof WhitelistScalarFieldEnum)[keyof typeof WhitelistScalarFieldEnum]
+
+
+  export const EsrScalarFieldEnum: {
+    id: 'id',
+    created_at: 'created_at',
+    code: 'code',
+    trx_id: 'trx_id'
+  };
+
+  export type EsrScalarFieldEnum = (typeof EsrScalarFieldEnum)[keyof typeof EsrScalarFieldEnum]
 
 
   export const SortOrder: {
@@ -7674,6 +8625,53 @@ export namespace Prisma {
     account?: StringWithAggregatesFilter<"whitelist"> | string
   }
 
+  export type esrWhereInput = {
+    AND?: esrWhereInput | esrWhereInput[]
+    OR?: esrWhereInput[]
+    NOT?: esrWhereInput | esrWhereInput[]
+    id?: UuidFilter<"esr"> | string
+    created_at?: DateTimeFilter<"esr"> | Date | string
+    code?: StringNullableFilter<"esr"> | string | null
+    trx_id?: StringNullableFilter<"esr"> | string | null
+  }
+
+  export type esrOrderByWithRelationInput = {
+    id?: SortOrder
+    created_at?: SortOrder
+    code?: SortOrderInput | SortOrder
+    trx_id?: SortOrderInput | SortOrder
+  }
+
+  export type esrWhereUniqueInput = Prisma.AtLeast<{
+    id?: string
+    AND?: esrWhereInput | esrWhereInput[]
+    OR?: esrWhereInput[]
+    NOT?: esrWhereInput | esrWhereInput[]
+    created_at?: DateTimeFilter<"esr"> | Date | string
+    code?: StringNullableFilter<"esr"> | string | null
+    trx_id?: StringNullableFilter<"esr"> | string | null
+  }, "id">
+
+  export type esrOrderByWithAggregationInput = {
+    id?: SortOrder
+    created_at?: SortOrder
+    code?: SortOrderInput | SortOrder
+    trx_id?: SortOrderInput | SortOrder
+    _count?: esrCountOrderByAggregateInput
+    _max?: esrMaxOrderByAggregateInput
+    _min?: esrMinOrderByAggregateInput
+  }
+
+  export type esrScalarWhereWithAggregatesInput = {
+    AND?: esrScalarWhereWithAggregatesInput | esrScalarWhereWithAggregatesInput[]
+    OR?: esrScalarWhereWithAggregatesInput[]
+    NOT?: esrScalarWhereWithAggregatesInput | esrScalarWhereWithAggregatesInput[]
+    id?: UuidWithAggregatesFilter<"esr"> | string
+    created_at?: DateTimeWithAggregatesFilter<"esr"> | Date | string
+    code?: StringNullableWithAggregatesFilter<"esr"> | string | null
+    trx_id?: StringNullableWithAggregatesFilter<"esr"> | string | null
+  }
+
   export type auction_detailsCreateInput = {
     created_at?: Date | string
     exact_order_id: bigint | number
@@ -8176,6 +9174,55 @@ export namespace Prisma {
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     address?: StringFieldUpdateOperationsInput | string
     account?: StringFieldUpdateOperationsInput | string
+  }
+
+  export type esrCreateInput = {
+    id?: string
+    created_at?: Date | string
+    code?: string | null
+    trx_id?: string | null
+  }
+
+  export type esrUncheckedCreateInput = {
+    id?: string
+    created_at?: Date | string
+    code?: string | null
+    trx_id?: string | null
+  }
+
+  export type esrUpdateInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    code?: NullableStringFieldUpdateOperationsInput | string | null
+    trx_id?: NullableStringFieldUpdateOperationsInput | string | null
+  }
+
+  export type esrUncheckedUpdateInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    code?: NullableStringFieldUpdateOperationsInput | string | null
+    trx_id?: NullableStringFieldUpdateOperationsInput | string | null
+  }
+
+  export type esrCreateManyInput = {
+    id?: string
+    created_at?: Date | string
+    code?: string | null
+    trx_id?: string | null
+  }
+
+  export type esrUpdateManyMutationInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    code?: NullableStringFieldUpdateOperationsInput | string | null
+    trx_id?: NullableStringFieldUpdateOperationsInput | string | null
+  }
+
+  export type esrUncheckedUpdateManyInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    code?: NullableStringFieldUpdateOperationsInput | string | null
+    trx_id?: NullableStringFieldUpdateOperationsInput | string | null
   }
 
   export type DateTimeFilter<$PrismaModel = never> = {
@@ -8782,6 +9829,27 @@ export namespace Prisma {
     _max?: NestedIntFilter<$PrismaModel>
   }
 
+  export type esrCountOrderByAggregateInput = {
+    id?: SortOrder
+    created_at?: SortOrder
+    code?: SortOrder
+    trx_id?: SortOrder
+  }
+
+  export type esrMaxOrderByAggregateInput = {
+    id?: SortOrder
+    created_at?: SortOrder
+    code?: SortOrder
+    trx_id?: SortOrder
+  }
+
+  export type esrMinOrderByAggregateInput = {
+    id?: SortOrder
+    created_at?: SortOrder
+    code?: SortOrder
+    trx_id?: SortOrder
+  }
+
   export type DateTimeFieldUpdateOperationsInput = {
     set?: Date | string
   }
@@ -9178,6 +10246,10 @@ export namespace Prisma {
      * @deprecated Use whitelistDefaultArgs instead
      */
     export type whitelistArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = whitelistDefaultArgs<ExtArgs>
+    /**
+     * @deprecated Use esrDefaultArgs instead
+     */
+    export type esrArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = esrDefaultArgs<ExtArgs>
 
   /**
    * Batch Payload for updateMany & deleteMany & createMany
