@@ -7099,6 +7099,7 @@ export namespace Prisma {
     created_at: Date | null
     code: string | null
     trx_id: string | null
+    account: string | null
   }
 
   export type EsrMaxAggregateOutputType = {
@@ -7106,6 +7107,7 @@ export namespace Prisma {
     created_at: Date | null
     code: string | null
     trx_id: string | null
+    account: string | null
   }
 
   export type EsrCountAggregateOutputType = {
@@ -7113,6 +7115,7 @@ export namespace Prisma {
     created_at: number
     code: number
     trx_id: number
+    account: number
     _all: number
   }
 
@@ -7122,6 +7125,7 @@ export namespace Prisma {
     created_at?: true
     code?: true
     trx_id?: true
+    account?: true
   }
 
   export type EsrMaxAggregateInputType = {
@@ -7129,6 +7133,7 @@ export namespace Prisma {
     created_at?: true
     code?: true
     trx_id?: true
+    account?: true
   }
 
   export type EsrCountAggregateInputType = {
@@ -7136,6 +7141,7 @@ export namespace Prisma {
     created_at?: true
     code?: true
     trx_id?: true
+    account?: true
     _all?: true
   }
 
@@ -7216,6 +7222,7 @@ export namespace Prisma {
     created_at: Date
     code: string | null
     trx_id: string | null
+    account: string | null
     _count: EsrCountAggregateOutputType | null
     _min: EsrMinAggregateOutputType | null
     _max: EsrMaxAggregateOutputType | null
@@ -7240,6 +7247,7 @@ export namespace Prisma {
     created_at?: boolean
     code?: boolean
     trx_id?: boolean
+    account?: boolean
   }, ExtArgs["result"]["esr"]>
 
   export type esrSelectScalar = {
@@ -7247,6 +7255,7 @@ export namespace Prisma {
     created_at?: boolean
     code?: boolean
     trx_id?: boolean
+    account?: boolean
   }
 
 
@@ -7258,6 +7267,7 @@ export namespace Prisma {
       created_at: Date
       code: string | null
       trx_id: string | null
+      account: string | null
     }, ExtArgs["result"]["esr"]>
     composites: {}
   }
@@ -7656,6 +7666,7 @@ export namespace Prisma {
     readonly created_at: FieldRef<"esr", 'DateTime'>
     readonly code: FieldRef<"esr", 'String'>
     readonly trx_id: FieldRef<"esr", 'String'>
+    readonly account: FieldRef<"esr", 'String'>
   }
     
 
@@ -8051,7 +8062,8 @@ export namespace Prisma {
     id: 'id',
     created_at: 'created_at',
     code: 'code',
-    trx_id: 'trx_id'
+    trx_id: 'trx_id',
+    account: 'account'
   };
 
   export type EsrScalarFieldEnum = (typeof EsrScalarFieldEnum)[keyof typeof EsrScalarFieldEnum]
@@ -8633,6 +8645,7 @@ export namespace Prisma {
     created_at?: DateTimeFilter<"esr"> | Date | string
     code?: StringNullableFilter<"esr"> | string | null
     trx_id?: StringNullableFilter<"esr"> | string | null
+    account?: StringNullableFilter<"esr"> | string | null
   }
 
   export type esrOrderByWithRelationInput = {
@@ -8640,6 +8653,7 @@ export namespace Prisma {
     created_at?: SortOrder
     code?: SortOrderInput | SortOrder
     trx_id?: SortOrderInput | SortOrder
+    account?: SortOrderInput | SortOrder
   }
 
   export type esrWhereUniqueInput = Prisma.AtLeast<{
@@ -8650,6 +8664,7 @@ export namespace Prisma {
     created_at?: DateTimeFilter<"esr"> | Date | string
     code?: StringNullableFilter<"esr"> | string | null
     trx_id?: StringNullableFilter<"esr"> | string | null
+    account?: StringNullableFilter<"esr"> | string | null
   }, "id">
 
   export type esrOrderByWithAggregationInput = {
@@ -8657,6 +8672,7 @@ export namespace Prisma {
     created_at?: SortOrder
     code?: SortOrderInput | SortOrder
     trx_id?: SortOrderInput | SortOrder
+    account?: SortOrderInput | SortOrder
     _count?: esrCountOrderByAggregateInput
     _max?: esrMaxOrderByAggregateInput
     _min?: esrMinOrderByAggregateInput
@@ -8670,6 +8686,7 @@ export namespace Prisma {
     created_at?: DateTimeWithAggregatesFilter<"esr"> | Date | string
     code?: StringNullableWithAggregatesFilter<"esr"> | string | null
     trx_id?: StringNullableWithAggregatesFilter<"esr"> | string | null
+    account?: StringNullableWithAggregatesFilter<"esr"> | string | null
   }
 
   export type auction_detailsCreateInput = {
@@ -9181,6 +9198,7 @@ export namespace Prisma {
     created_at?: Date | string
     code?: string | null
     trx_id?: string | null
+    account?: string | null
   }
 
   export type esrUncheckedCreateInput = {
@@ -9188,6 +9206,7 @@ export namespace Prisma {
     created_at?: Date | string
     code?: string | null
     trx_id?: string | null
+    account?: string | null
   }
 
   export type esrUpdateInput = {
@@ -9195,6 +9214,7 @@ export namespace Prisma {
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     code?: NullableStringFieldUpdateOperationsInput | string | null
     trx_id?: NullableStringFieldUpdateOperationsInput | string | null
+    account?: NullableStringFieldUpdateOperationsInput | string | null
   }
 
   export type esrUncheckedUpdateInput = {
@@ -9202,6 +9222,7 @@ export namespace Prisma {
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     code?: NullableStringFieldUpdateOperationsInput | string | null
     trx_id?: NullableStringFieldUpdateOperationsInput | string | null
+    account?: NullableStringFieldUpdateOperationsInput | string | null
   }
 
   export type esrCreateManyInput = {
@@ -9209,6 +9230,7 @@ export namespace Prisma {
     created_at?: Date | string
     code?: string | null
     trx_id?: string | null
+    account?: string | null
   }
 
   export type esrUpdateManyMutationInput = {
@@ -9216,6 +9238,7 @@ export namespace Prisma {
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     code?: NullableStringFieldUpdateOperationsInput | string | null
     trx_id?: NullableStringFieldUpdateOperationsInput | string | null
+    account?: NullableStringFieldUpdateOperationsInput | string | null
   }
 
   export type esrUncheckedUpdateManyInput = {
@@ -9223,6 +9246,7 @@ export namespace Prisma {
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     code?: NullableStringFieldUpdateOperationsInput | string | null
     trx_id?: NullableStringFieldUpdateOperationsInput | string | null
+    account?: NullableStringFieldUpdateOperationsInput | string | null
   }
 
   export type DateTimeFilter<$PrismaModel = never> = {
@@ -9834,6 +9858,7 @@ export namespace Prisma {
     created_at?: SortOrder
     code?: SortOrder
     trx_id?: SortOrder
+    account?: SortOrder
   }
 
   export type esrMaxOrderByAggregateInput = {
@@ -9841,6 +9866,7 @@ export namespace Prisma {
     created_at?: SortOrder
     code?: SortOrder
     trx_id?: SortOrder
+    account?: SortOrder
   }
 
   export type esrMinOrderByAggregateInput = {
@@ -9848,6 +9874,7 @@ export namespace Prisma {
     created_at?: SortOrder
     code?: SortOrder
     trx_id?: SortOrder
+    account?: SortOrder
   }
 
   export type DateTimeFieldUpdateOperationsInput = {

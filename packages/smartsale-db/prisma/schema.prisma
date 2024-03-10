@@ -97,4 +97,5 @@ model esr {
   created_at DateTime @default(now()) @db.Timestamptz(6)
   code       String?
   trx_id     String?
+  account    String?
 }

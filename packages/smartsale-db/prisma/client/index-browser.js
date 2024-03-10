@@ -183,7 +183,8 @@ exports.Prisma.EsrScalarFieldEnum = {
   id: 'id',
   created_at: 'created_at',
   code: 'code',
-  trx_id: 'trx_id'
+  trx_id: 'trx_id',
+  account: 'account'
 };
 
 exports.Prisma.SortOrder = {
