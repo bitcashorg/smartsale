@@ -1,5 +1,10 @@
-import { Button } from '@/components/ui/button'
-import Link from 'next/link'
+'use client'
+
+import { Button } from '@/components/ui/button';
+import { TypewriterEffect } from '@/components/ui/typewritting-effect';
+import { AnimatePresence, motion } from 'framer-motion';
+import Link from 'next/link';
+import React from 'react';
 
 function WalletIcon({ className }: IconProps) {
   return (
@@ -23,11 +28,33 @@ function WalletIcon({ className }: IconProps) {
 }
 
 export default function Participate() {
+  const [showStepsInfo, setShowStepsInfo] = React.useState(false)
+
   return (
     <section className="pt-12 pb-10">
       <div className="flex flex-col items-center justify-center mb-16 text-center">
-        <h2 className="mb-4 text-4xl md:text-5xl font-black lg:max-w-[90%] xl:max-w-[66%]">{textContent.title}</h2>
-        <p className="font-semibold text-lg md:text-xl">{textContent.stepsInfo}</p>
+        <h2 className="mb-4 text-4xl !sm:text-5xl !md:text-6xl !font-black lg:max-w-[90%] xl:max-w-[66%]">
+          <TypewriterEffect
+            words={textContent.title.split(' ').map(word => ({ text: word, className: word.toLowerCase().match(/(bitcash|launchpad.)/g) ? 'text-blue-500 dark:text-blue-500' : undefined }))}
+            onAnimationEnd={() => {
+              setShowStepsInfo(true)
+            }}
+          />
+        </h2>
+        <AnimatePresence>
+          {showStepsInfo && (
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 20 }}
+              transition={{ delay: 0.24 }}
+              key="steps-info"
+              className="font-semibold text-lg md:text-xl"
+            >
+              {textContent.stepsInfo}
+            </motion.p>
+          )}
+        </AnimatePresence>
       </div>
 
       <div className="container flex flex-col md:flex-row md:justify-between md:items-start">
@@ -53,12 +80,12 @@ export default function Participate() {
           </div>
         ))}
       </div>
-    </section>
+    </section >
   )
 }
 
 const textContent = {
-  title: 'Join The AI and Web3 Revolution With Bitcash Launchpad',
+  title: 'Join The AI and Web3 Revolution With Bitcash Launchpad.',
   stepsInfo:
     'Only 3 steps are needed for you to start enjoying all the advantages',
   steps: [

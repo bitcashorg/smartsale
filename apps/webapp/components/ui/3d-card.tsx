@@ -140,7 +140,6 @@ export const CardItem = ({
   };
 
   const handleBadgeAnimations = () => {
-    console.log('badgeRef', badgeRef)
     if (!badgeRef.current) return;
     if (isMouseEntered) {
       badgeRef.current.style.transform = `translateX(${Number(translateX) * 0.83}px) translateY(${Number(translateY) * 0.83}px) translateZ(${Number(translateZ) * 0.83}px) rotateX(${Number(rotateX) * 0.83}deg) rotateY(${Number(rotateY) * 0.83}deg) rotateZ(${Number(rotateZ) * 0.83}deg)`;
@@ -148,8 +147,6 @@ export const CardItem = ({
       badgeRef.current.style.transform = `translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg)`;
     }
   };
-
-  console.log('badgeRef', badgeRef)
 
   return (
     <Tag
