@@ -29,7 +29,7 @@ const prod: SmartsaleEnvConfig = {
 const test: SmartsaleEnvConfig = {
   chains: smartsaleChains.test,
   issuer: {
-    eos: 'bkblaunchpad',
+    eos: 'gaboesquivel',
     evm: '0x'
   },
   bitcash: {
