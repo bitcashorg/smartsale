@@ -3,16 +3,17 @@ import { appenv } from './config'
 import { IncomingMessage } from 'http'
 import nodeFetch from 'node-fetch'
 import WebSocketClient from 'ws'
+import { smartsaleEnv } from 'smartsale-env'
+import { EventEmitter } from 'events'
 
 // required by dfuse/client
-import { smartsaleEnv } from 'smartsale-env'
 ;(global as any).fetch = nodeFetch
 ;(global as any).WebSocket = WebSocketClient
 
 const dfuse = createDfuseClient({
   apiKey: appenv.eos.dfuseKey,
-  network: 'mainnet.eos.dfuse.io',
-  authentication: true,
+  network: 'eos.dfuse.eosnation.io',
+  // authentication: true,
   httpClientOptions: {
     fetch: nodeFetch,
   },
@@ -30,26 +31,44 @@ const dfuse = createDfuseClient({
   },
 })
 
-export async function listenToEos(env: 'test' | 'prod' = 'test'): Promise<void> {
+export function listenToEos(env: 'test' | 'prod' = 'test') {
   const usdt = smartsaleEnv[env].usdt.find((t) => (t.chainType = 'antelope'))?.address
-  const bitusd = smartsaleEnv[env].bitcash.token
-  const receiver = smartsaleEnv[env].issuer.eos
+  const bank = smartsaleEnv[env].bitcash.bank
+  // https://docs.dfuse.eosnation.io/platform/public-apis/search-query-language/
+  // https://docs.dfuse.eosnation.io/eosio/public-apis/reference/search/terms/
+  // receiver: means the account with code that has executed the action.
+  const usdtDeposits = createFirehoseSubscription(`"receiver:${usdt} action:transfer"`)
+  const bitusdDeposits = createFirehoseSubscription(`"receiver:${bank} action:stbtransfer"`)
+
+  // usdtDeposits.on('data', console.log)
+  // bitusdDeposits.on('data', console.log)
+}
+
+export function createFirehoseSubscription(query: string) {
+  const eventEmitter = new EventEmitter()
+
+  console.log('query:', query)
   const streamTransfers: string = `subscription {
-  searchTransactionsForward(query: "((receiver:${receiver} account:${usdt} data.quantity:'USDT') OR (receiver:${receiver} account:${bitusd} data.quantity:'BITUSD')) AND action:transfer") {
-    undo cursor
-    trace {
-      id
-      matchingActions {
-        json
+    searchTransactionsForward(query: ${query}) {
+      undo cursor
+      trace {
+        id
+        matchingActions {
+          json
+        }
       }
     }
-  }
-}`
+  }`
 
-  const stream = await dfuse.graphql(streamTransfers, (message: GraphqlStreamMessage<any>) => {
+  dfuse.graphql(streamTransfers, (message: GraphqlStreamMessage<any>) => {
     if (message.type === 'data') {
-      const transfer = message.data.searchTransactionsForward
-      console.log('Token Transfer:', transfer.trace.matchingActions[0].json)
+      const transfer = message.data.searchTransactionsForward.trace
+      const data = {
+        trxId: transfer.id,
+        actions: transfer.matchingActions.map(({ json }: any) => json),
+      }
+      eventEmitter.emit('data', data)
+      console.log('Token Transfer:', JSON.stringify(data))
     }
 
     if (message.type === 'error') {
@@ -62,6 +81,7 @@ export async function listenToEos(env: 'test' | 'prod' = 'test'): Promise<void> 
   })
 
   console.log('Listening to token transfers...')
+  return eventEmitter
 }
 
 async function webSocketFactory(url: string, protocols: string[] = []): Promise<WebSocketFactory> {
