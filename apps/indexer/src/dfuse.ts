@@ -5,6 +5,7 @@ import nodeFetch from 'node-fetch'
 import WebSocketClient from 'ws'
 
 // required by dfuse/client
+import { smartsaleEnv } from 'smartsale-env'
 ;(global as any).fetch = nodeFetch
 ;(global as any).WebSocket = WebSocketClient
 
@@ -29,9 +30,12 @@ const dfuse = createDfuseClient({
   },
 })
 
-export async function listenToEos(): Promise<void> {
+export async function listenToEos(env: 'test' | 'prod' = 'test'): Promise<void> {
+  const usdt = smartsaleEnv[env].usdt.find((t) => (t.chainType = 'antelope'))?.address
+  const bitusd = smartsaleEnv[env].bitcash.token
+  const receiver = smartsaleEnv[env].issuer.eos
   const streamTransfers: string = `subscription {
-  searchTransactionsForward(query: "((account:tethertether data.quantity:'USDT') OR (account:token.bk data.quantity:'BITUSD')) AND action:transfer") {
+  searchTransactionsForward(query: "((receiver:${receiver} account:${usdt} data.quantity:'USDT') OR (receiver:${receiver} account:${bitusd} data.quantity:'BITUSD')) AND action:transfer") {
     undo cursor
     trace {
       id

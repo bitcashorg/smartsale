@@ -4,6 +4,10 @@ import { Address, Chain } from "viem"
 
 const prod: SmartsaleEnvConfig = {
   chains: smartsaleChains.prod,
+  issuer: {
+    eos: 'launchpad.bk',
+    evm: '0x'
+  },
   bitcash: {
     bank: 'bank.bk',
     token: 'token.bk',
@@ -24,6 +28,10 @@ const prod: SmartsaleEnvConfig = {
 
 const test: SmartsaleEnvConfig = {
   chains: smartsaleChains.test,
+  issuer: {
+    eos: 'bkblaunchpad',
+    evm: '0x'
+  },
   bitcash: {
     bank: 'bkbbanktest3',
     token: 'bkbtokentest',
@@ -54,6 +62,10 @@ export type SmartsaleEnv = typeof smartsaleEnv
 // expiclit type to enforce it
 export interface SmartsaleEnvConfig  {
     chains: Map<number, Chain>,
+    issuer: {
+      eos: string,
+      evm: Address
+    },
     bitcash: {
       bank: string,
       token: string,
