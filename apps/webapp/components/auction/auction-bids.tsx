@@ -43,7 +43,9 @@ export function AuctionBids({ project }: AuctionBidsProps) {
     if (hasErrorMessage) return
 
     // remove empty rows
-    const bids = bidInputs.filter(v => !(v.minBuyAmount <= 0 && v.bidAmount <= 0))
+    const bids = bidInputs.filter(
+      v => !(v.minBuyAmount <= 0 && v.bidAmount <= 0)
+    )
 
     const test = {
       minBuyAmounts: [bids[0]?.minBuyAmount],
@@ -51,7 +53,6 @@ export function AuctionBids({ project }: AuctionBidsProps) {
     }
 
     console.log('test', stringify(test))
-
 
     const { isBalanceSufficient, isAllowanceSufficient } =
       await checkBalanceAndAllowance({
@@ -61,8 +62,8 @@ export function AuctionBids({ project }: AuctionBidsProps) {
         tokenAddress: TestnetUSDCred.address
       })
 
-    if (!isBalanceSufficient) return setGlobalError('Insuficient USDCred Balance')
-
+    if (!isBalanceSufficient)
+      return setGlobalError('Insuficient USDCred Balance')
 
     if (!isAllowanceSufficient) {
       await writeContract(wagmiConfig, {
@@ -131,7 +132,8 @@ export function AuctionBids({ project }: AuctionBidsProps) {
   // show error on modal
   useEffect(() => {
     const err = tanstack.error
-    if (!err || !('shortMessage' in err) || err.shortMessage === errorMessage) return
+    if (!err || !('shortMessage' in err) || err.shortMessage === errorMessage)
+      return
     setGlobalError(err.shortMessage)
     tanstack.reset()
   }, [tanstack, errorMessage, setGlobalError])
@@ -143,14 +145,22 @@ export function AuctionBids({ project }: AuctionBidsProps) {
         <Table>
           <TableHeader>
             <TableRow>
-              <TableHead className="bg-gray-100 dark:bg-slate-950 text-black dark:text-white font-semibold">Max Price</TableHead>
-              <TableHead className="bg-gray-100 dark:bg-slate-950 text-black dark:text-white font-semibold">Bid Amount</TableHead>
+              <TableHead className="bg-gray-100 dark:bg-slate-950 text-black dark:text-white font-semibold">
+                Max Price
+              </TableHead>
+              <TableHead className="bg-gray-100 dark:bg-slate-950 text-black dark:text-white font-semibold">
+                Bid Amount
+              </TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
             {bidInputs.map((_, index) => (
               <TableRow key={index}>
-                <TableCell className={cn({ 'bg-gray-100 dark:bg-gray-900/50': index % 2 })}>
+                <TableCell
+                  className={cn({
+                    'bg-gray-100 dark:bg-gray-900/50': index % 2
+                  })}
+                >
                   <CurrencyInput
                     placeholder="0.00"
                     name={`maxPrice${index}`}
@@ -159,7 +169,11 @@ export function AuctionBids({ project }: AuctionBidsProps) {
                     }
                   />
                 </TableCell>
-                <TableCell className={cn({ 'bg-gray-100 dark:bg-gray-900/50': index % 2 })}>
+                <TableCell
+                  className={cn({
+                    'bg-gray-100 dark:bg-gray-900/50': index % 2
+                  })}
+                >
                   <CurrencyInput
                     placeholder="0.00"
                     name={`bidAmount${index}`}
@@ -175,7 +189,9 @@ export function AuctionBids({ project }: AuctionBidsProps) {
 
         <div className="flex flex-col justify-between px-5">
           <Button
-            disabled={!address || bidInputs.some(item => item.errorMessage !== '')}
+            disabled={
+              !address || bidInputs.some(item => item.errorMessage !== '')
+            }
             onClick={() => handleSubmit()}
             type="submit"
             size="lg"
@@ -185,14 +201,26 @@ export function AuctionBids({ project }: AuctionBidsProps) {
 
           <div className="flex flex-col gap-2">
             <p className="flex justify-between w-full">
-              {textValues.currentBid.split(':').map((txt, index) => !index ? (
-                <b key={txt} className="block">{txt}</b>
-              ) : txt)}
+              {textValues.currentBid.split(':').map((txt, index) =>
+                !index ? (
+                  <b key={txt} className="block">
+                    {txt}
+                  </b>
+                ) : (
+                  txt
+                )
+              )}
             </p>
             <p className="flex justify-between w-full">
-              {textValues.currentCost.split(':').map((txt, index) => !index ? (
-                <b key={txt} className="block">{txt}</b>
-              ) : txt)}
+              {textValues.currentCost.split(':').map((txt, index) =>
+                !index ? (
+                  <b key={txt} className="block">
+                    {txt}
+                  </b>
+                ) : (
+                  txt
+                )
+              )}
             </p>
             <p className="mt-2 text-sm text-right">
               {textValues.maxTokenLimit}
@@ -299,12 +327,7 @@ export async function checkBalanceAndAllowance({
     functionName: 'balanceOf',
     args: [account]
   })
-  console.log(
-    'USDCred balance',
-    balance,
-    amount,
-    balance && balance >= amount
-  )
+  console.log('USDCred balance', balance, amount, balance && balance >= amount)
 
   // Check the allowance
   const allowance = await readContract(wagmiConfig, {
@@ -315,8 +338,7 @@ export async function checkBalanceAndAllowance({
   })
 
   const isBalanceSufficient = balance && balance >= amount
-  const isAllowanceSufficient =
-    allowance && allowance >= amount
+  const isAllowanceSufficient = allowance && allowance >= amount
 
   return { isBalanceSufficient, isAllowanceSufficient }
 }

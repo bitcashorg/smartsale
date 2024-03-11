@@ -1,10 +1,10 @@
 'use client'
 
-import { Button } from '@/components/ui/button';
-import { TypewriterEffect } from '@/components/ui/typewritting-effect';
-import { AnimatePresence, motion } from 'framer-motion';
-import Link from 'next/link';
-import React from 'react';
+import { Button } from '@/components/ui/button'
+import { TypewriterEffect } from '@/components/ui/typewritting-effect'
+import { AnimatePresence, motion } from 'framer-motion'
+import Link from 'next/link'
+import React from 'react'
 
 function WalletIcon({ className }: IconProps) {
   return (
@@ -35,9 +35,16 @@ export default function Participate() {
       <div className="flex flex-col min-h-[25vh] items-center justify-start mb-6 text-center">
         <h2 className="mb-4 lg:max-w-[90%] xl:max-w-[66%]">
           <TypewriterEffect
-            words={textContent.title.split(' ').map(word => ({ text: word, className: word.toLowerCase().match(/(bitcash|launchpad.)/g) ? 'text-blue-500 dark:text-blue-500' : undefined }))}
+            words={textContent.title
+              .split(' ')
+              .map(word => ({
+                text: word,
+                className: word.toLowerCase().match(/(bitcash|launchpad.)/g)
+                  ? 'text-blue-500 dark:text-blue-500'
+                  : undefined
+              }))}
             className="text-4xl sm:text-5xl md:text-6xl !font-black"
-            cursorClassName='h-6 md:h-10'
+            cursorClassName="h-6 md:h-10"
             onAnimationEnd={() => {
               setShowStepsInfo(true)
             }}
@@ -74,7 +81,10 @@ export default function Participate() {
             </p>
             {step.buttonText && (
               <Link href={step.href} shallow>
-                <Button className="mt-2 bg-[#7f5af0] !text-white text-bold text-lg" size="lg">
+                <Button
+                  className="mt-2 bg-[#7f5af0] !text-white text-bold text-lg"
+                  size="lg"
+                >
                   {step.buttonText}
                 </Button>
               </Link>
@@ -82,7 +92,7 @@ export default function Participate() {
           </div>
         ))}
       </div>
-    </section >
+    </section>
   )
 }
 

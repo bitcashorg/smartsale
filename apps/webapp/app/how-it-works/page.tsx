@@ -5,9 +5,10 @@ const howItWorksClassNames = {
   h1: 'mb-4 text-2xl font-bold',
   h2: 'mt-6 mb-4 text-xl font-semibold',
   paragraph: 'my-2',
-  article: 'flex flex-col gap-3 p-3 sm:p-10 rounded-md border bg-gray-50 dark:bg-black',
+  article:
+    'flex flex-col gap-3 p-3 sm:p-10 rounded-md border bg-gray-50 dark:bg-black',
   list: 'pl-6 mt-2 list-disc [&_li]:mt-2',
-  code: 'dark:invert',
+  code: 'dark:invert'
 }
 
 export default function HowItWorks() {
@@ -99,7 +100,9 @@ export default function HowItWorks() {
         </ul>
 
         <h2 className={howItWorksClassNames.h2}>Parameters</h2>
-        <p className={howItWorksClassNames.paragraph}>Common parameters include:</p>
+        <p className={howItWorksClassNames.paragraph}>
+          Common parameters include:
+        </p>
         <ul className={howItWorksClassNames.list}>
           <li>
             <code>auctionId</code>: Identifies the auction.

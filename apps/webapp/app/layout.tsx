@@ -41,11 +41,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
           </Providers>
         </div>
       </body>
-    </html >
+    </html>
   )
 }
-
-
 
 interface RootLayoutProps {
   children: React.ReactNode

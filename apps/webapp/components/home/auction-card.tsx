@@ -64,17 +64,21 @@ export function AuctionCard(props: Project) {
             translateZ={20}
             className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
           >
-            <Link href={linkPath} className="w-full hover:text-link focus-within:text-link" shallow={true}>
+            <Link
+              href={linkPath}
+              className="w-full hover:text-link focus-within:text-link"
+              shallow={true}
+            >
               See more →
             </Link>
           </CardItem>
-          <CardItem
-            translateZ={20}
-            as="span"
-          >
+          <CardItem translateZ={20} as="span">
             <Link
               href={isAuctionClosed ? '#' : `${linkPath}/auction`}
-              className={cn('w-full px-4 py-2 rounded-md bg-black dark:bg-white dark:text-black text-white text-xs font-bold hover:text-link focus-within:text-link', { 'cursor-not-allowed opacity-60': isAuctionClosed })}
+              className={cn(
+                'w-full px-4 py-2 rounded-md bg-black dark:bg-white dark:text-black text-white text-xs font-bold hover:text-link focus-within:text-link',
+                { 'cursor-not-allowed opacity-60': isAuctionClosed }
+              )}
               shallow
             >
               Register Now!
@@ -85,7 +89,6 @@ export function AuctionCard(props: Project) {
     </CardContainer>
   )
 }
-
 
 // ? Keeping old code for reference
 // <Link href={linkPath} className="w-full" shallow={true}>

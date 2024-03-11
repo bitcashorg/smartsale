@@ -1,4 +1,4 @@
-import { BackgroundBeams } from "@/components/ui/background-beans";
+import { BackgroundBeams } from '@/components/ui/background-beans'
 
 export function Newsletter() {
   // TODO: Newsletter

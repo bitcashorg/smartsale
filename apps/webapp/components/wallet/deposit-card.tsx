@@ -63,7 +63,9 @@ export function DepositCard() {
     <Card className="w-full dark:bg-[#1a1a1a] bg-gray-200 rounded-xl p-4">
       <CardContent>
         <div className="flex flex-col space-y-4">
-          <label htmlFor="deposit" className="text-sm">Deposit USDT</label>
+          <label htmlFor="deposit" className="text-sm">
+            Deposit USDT
+          </label>
           <div className="flex items-center justify-between">
             <div className="flex flex-col min-w-[50%]">
               <span className="text-2xl font-semibold">

@@ -47,7 +47,9 @@ export function WithdrawCard() {
     <Card className="w-full dark:bg-[#1a1a1a] bg-gray-200 rounded-xl p-4">
       <CardContent>
         <div className="flex flex-col space-y-4">
-          <label htmlFor="withdraw" className="text-sm">Convert to BITUSD</label>
+          <label htmlFor="withdraw" className="text-sm">
+            Convert to BITUSD
+          </label>
           <div className="flex items-center justify-between">
             <div className="flex flex-col min-w-[50%]">
               <span className="text-2xl font-semibold">

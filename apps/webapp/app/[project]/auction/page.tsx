@@ -11,7 +11,8 @@ import { redirect } from 'next/navigation'
 import React from 'react'
 
 const auctionPageClassNames = {
-  tabCard: 'border border-gray-200 dark:border-gray-800 w-full h-[512px] overflow-y-auto bg-gray-200 dark:bg-black rounded-md p-0 md:p-10',
+  tabCard:
+    'border border-gray-200 dark:border-gray-800 w-full h-[512px] overflow-y-auto bg-gray-200 dark:bg-black rounded-md p-0 md:p-10'
 }
 
 export default function AuctionPage({
@@ -50,7 +51,7 @@ export default function AuctionPage({
           <AuctionOrders />
         </div>
       )
-    },
+    }
     // {
     //   title: 'Debug',
     //   value: 'debug',
@@ -72,7 +73,7 @@ export default function AuctionPage({
             <div className="md:w-2/3">
               <Image
                 alt="bitcash logo"
-                className="mx-auto h-full rounded-md w-full max-h-[320px] my-0 object-cover"
+                className="mx-auto rounded-md size-full max-h-[320px] my-0 object-cover"
                 layout="responsive"
                 height="100"
                 width="100"
@@ -89,7 +90,7 @@ export default function AuctionPage({
           </div>
         </div>
       </section>
-      <section className="h-max md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-screen-xl mx-auto w-full  items-start justify-start mt-10 mb-32">
+      <section className="md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-screen-xl mx-auto size-full items-start justify-start mt-10 mb-32">
         <Tabs tabs={tabs} />
       </section>
     </>

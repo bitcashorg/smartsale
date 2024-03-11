@@ -1,102 +1,134 @@
-"use client";
+'use client'
 
-import Link, { LinkProps } from 'next/link';
-import * as React from 'react';
+import Link, { LinkProps } from 'next/link'
+import * as React from 'react'
 
-import { Button } from '@/components/ui/button';
-import { HeaderButtons } from './header-buttons';
-import { IconSeparator } from './ui/icons';
+import { Button } from '@/components/ui/button'
+import { HeaderButtons } from './header-buttons'
+import { IconSeparator } from './ui/icons'
 
-import { useSession } from '@/hooks/use-session';
-import { cn } from '@/lib/utils';
+import { useSession } from '@/hooks/use-session'
+import { cn } from '@/lib/utils'
 import {
   AnimatePresence,
   motion,
   useMotionValueEvent,
-  useScroll,
-} from "framer-motion";
+  useScroll
+} from 'framer-motion'
 
-export function Header({
-  className,
-}: {
-  className?: string;
-}) {
+export function Header({ className }: { className?: string }) {
   const { session } = useSession()
-  const { scrollYProgress } = useScroll();
-  const [visible, setVisible] = React.useState(true);
-  const [activeMenu, setActiveMenu] = React.useState('');
-  const headerRef = React.useRef<HTMLElement>(null);
+  const { scrollYProgress } = useScroll()
+  const [visible, setVisible] = React.useState(true)
+  const [activeMenu, setActiveMenu] = React.useState('')
+  const headerRef = React.useRef<HTMLElement>(null)
 
   React.useEffect(() => {
     const handleClick = (e: MouseEvent) => {
       if (headerRef.current && (e.target as Node).contains(headerRef.current)) {
-        setActiveMenu('');
+        setActiveMenu('')
       }
-    };
+    }
 
-    document.addEventListener("click", handleClick);
+    document.addEventListener('click', handleClick)
 
     return () => {
-      document.removeEventListener("click", handleClick);
-    };
-  }, [headerRef]);
+      document.removeEventListener('click', handleClick)
+    }
+  }, [headerRef])
 
-  useMotionValueEvent(scrollYProgress, "change", (current) => {
+  useMotionValueEvent(scrollYProgress, 'change', current => {
     // Check if current is not undefined and is a number
-    if (typeof current === "number") {
-      let direction = current! - scrollYProgress.getPrevious()!;
+    if (typeof current === 'number') {
+      let direction = current! - scrollYProgress.getPrevious()!
 
       if (scrollYProgress.get() < 0.05) {
-        setVisible(true);
+        setVisible(true)
       } else {
-        if (direction === 1 && scrollYProgress.get() === 1 || direction <= 0) {
-          setVisible(true);
+        if (
+          (direction === 1 && scrollYProgress.get() === 1) ||
+          direction <= 0
+        ) {
+          setVisible(true)
         } else {
-          setVisible(false);
+          setVisible(false)
         }
       }
     }
-  });
+  })
 
   const connectItem = session?.account || 'login'
 
   return (
-    <React.Suspense fallback={<div className="flex w-full fixed top-0 inset-x-0 mx-auto border-b border-transparent dark:border-white/[0.2] shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] h-16 shrink-0 bg-gradient-to-b from-background/10 via-background/50 to-background/80 backdrop-blur-xl" />}>
+    <React.Suspense
+      fallback={
+        <div className="flex w-full fixed top-0 inset-x-0 mx-auto border-b border-transparent dark:border-white/[0.2] shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] h-16 shrink-0 bg-gradient-to-b from-background/10 via-background/50 to-background/80 backdrop-blur-xl" />
+      }
+    >
       <AnimatePresence mode="wait">
         <motion.header
           initial={{
             opacity: 1,
-            y: -100,
+            y: -100
           }}
           animate={{
             y: visible ? 0 : -100,
-            opacity: visible ? 1 : 0,
+            opacity: visible ? 1 : 0
           }}
           transition={{
-            duration: 0.2,
+            duration: 0.2
           }}
           className={cn(
-            "flex w-full fixed top-0 inset-x-0 mx-auto border-b border-transparent dark:border-white/[0.2] shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] h-16 shrink-0 bg-gradient-to-b from-background/10 via-background/50 to-background/80 backdrop-blur-xl",
+            'flex w-full fixed top-0 inset-x-0 mx-auto border-b border-transparent dark:border-white/[0.2] shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] h-16 shrink-0 bg-gradient-to-b from-background/10 via-background/50 to-background/80 backdrop-blur-xl',
             className
           )}
           ref={headerRef}
         >
           <div className="container flex items-center justify-between h-16 px-4">
-
             <div className="flex items-center">
-              <HeaderLink href="/" text="home" onClick={() => setActiveMenu('')} mobileOnly />
-              <HeaderLink href="/" text="Bitcash Launchpad" onClick={() => setActiveMenu('')} desktopOnly />
+              <HeaderLink
+                href="/"
+                text="home"
+                onClick={() => setActiveMenu('')}
+                mobileOnly
+              />
+              <HeaderLink
+                href="/"
+                text="Bitcash Launchpad"
+                onClick={() => setActiveMenu('')}
+                desktopOnly
+              />
               <IconSeparator className="size-3 md:size-6 text-muted-foreground/50" />
-              <HeaderLink href="/wallet" text="wallet" onClick={() => setActiveMenu('')} />
-              <MenuItem active={activeMenu} setActive={setActiveMenu} item="about">
-                <HeaderLink href="/how-it-works" text="how it works" onClick={() => setActiveMenu('')} />
-                <HeaderLink href="/security" text="security tips" onClick={() => setActiveMenu('')} />
+              <HeaderLink
+                href="/wallet"
+                text="wallet"
+                onClick={() => setActiveMenu('')}
+              />
+              <MenuItem
+                active={activeMenu}
+                setActive={setActiveMenu}
+                item="about"
+              >
+                <HeaderLink
+                  href="/how-it-works"
+                  text="how it works"
+                  onClick={() => setActiveMenu('')}
+                />
+                <HeaderLink
+                  href="/security"
+                  text="security tips"
+                  onClick={() => setActiveMenu('')}
+                />
               </MenuItem>
               {/* <HeaderLink href="https://bitcash-faucet.vercel.app/" text="usdcred faucet" />
               <HeaderLink href="https://faucet.testnet.evm.eosnetwork.com/" text="eos faucet" /> */}
             </div>
             <React.Suspense fallback={<div />}>
-              <MenuItem active={activeMenu} setActive={setActiveMenu} item={connectItem}>
+              <MenuItem
+                active={activeMenu}
+                setActive={setActiveMenu}
+                item={connectItem}
+              >
                 <HeaderButtons />
               </MenuItem>
             </React.Suspense>
@@ -106,14 +138,22 @@ export function Header({
       {/* // ? header anchor */}
       <div className="w-full h-[64px] bg-transparent" id="header-anchor" />
     </React.Suspense>
-  );
-};
+  )
+}
 
-function HeaderLink({ text, desktopOnly, mobileOnly, ...props }: HeaderLinkProps) {
+function HeaderLink({
+  text,
+  desktopOnly,
+  mobileOnly,
+  ...props
+}: HeaderLinkProps) {
   return (
     <Button
       asChild
-      className={cn('-ml-2', { 'hidden md:block': desktopOnly, 'block md:hidden': mobileOnly })}
+      className={cn('-ml-2', {
+        'hidden md:block': desktopOnly,
+        'block md:hidden': mobileOnly
+      })}
       variant="link"
     >
       <Link shallow={true} {...props}>
@@ -127,12 +167,12 @@ function MenuItem({
   setActive,
   active,
   item,
-  children,
+  children
 }: {
-  setActive: (item: string) => void;
-  active: string | null;
-  item: string;
-  children?: React.ReactNode;
+  setActive: (item: string) => void
+  active: string | null
+  item: string
+  children?: React.ReactNode
 }) {
   return (
     <div className="relative">
@@ -142,7 +182,7 @@ function MenuItem({
         onClick={() => setActive(active === item ? '' : item)}
         layout
       >
-        {item}{' '}{active === item ? '-' : '+'}
+        {item} {active === item ? '-' : '+'}
       </motion.button>
       {active !== null && (
         <motion.div
@@ -169,17 +209,17 @@ function MenuItem({
         </motion.div>
       )}
     </div>
-  );
-};
+  )
+}
 
 const transition = {
-  type: "spring",
+  type: 'spring',
   mass: 0.5,
   damping: 11.5,
   stiffness: 100,
   restDelta: 0.001,
-  restSpeed: 0.001,
-};
+  restSpeed: 0.001
+}
 
 interface HeaderLinkProps extends LinkProps {
   text: string

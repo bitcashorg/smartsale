@@ -69,12 +69,17 @@ export function BitcashLoginButton() {
               background: 'white',
               padding: 10,
               borderRadius: 4,
-              border: '1px solid #e5e7eb',
+              border: '1px solid #e5e7eb'
             }}
           >
             <QRCode
               size={256}
-              style={{ height: 'auto', maxWidth: '100%', width: '100%', borderRadius: 4 }}
+              style={{
+                height: 'auto',
+                maxWidth: '100%',
+                width: '100%',
+                borderRadius: 4
+              }}
               value={loginUri.replace('esr://', '')}
               viewBox={`0 0 256 256`}
             />
