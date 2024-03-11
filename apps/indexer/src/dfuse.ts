@@ -33,17 +33,17 @@ const dfuse = createDfuseClient({
   },
 })
 
-export function listenToEos(env: 'test' | 'prod' = 'test') {
+export async function listenToEos(env: 'test' | 'prod' = 'test') {
   const usdt = smartsaleEnv[env].usdt.find((t) => (t.chainType = 'antelope'))?.address
   const bank = smartsaleEnv[env].bitcash.bank
   const launchpad = smartsaleEnv[env].smartsale.bk
   // https://docs.dfuse.eosnation.io/platform/public-apis/search-query-language/
   // https://docs.dfuse.eosnation.io/eosio/public-apis/reference/search/terms/
   // receiver: means the account with code that has executed the action.
-  const usdtDeposits = createFirehoseSubscription(
+  const usdtDeposits = await createFirehoseSubscription(
     `"receiver:${usdt} action:transfer data.to:${launchpad}"`,
   )
-  const bitusdDeposits = createFirehoseSubscription(
+  const bitusdDeposits = await createFirehoseSubscription(
     `"receiver:${bank} action:stbtransfer data.to:${launchpad}"`,
   )
 
@@ -66,7 +66,7 @@ async function handleDeposit(data: { trxId: string; from: string; quantity: stri
   console.log('tokens issued', stringify(response))
 }
 
-export function createFirehoseSubscription(query: string) {
+export async function createFirehoseSubscription(query: string) {
   const eventEmitter = new EventEmitter()
 
   console.log('query:', query)
@@ -82,7 +82,7 @@ export function createFirehoseSubscription(query: string) {
     }
   }`
 
-  dfuse.graphql(streamTransfers, (message: GraphqlStreamMessage<any>) => {
+  const stream = await dfuse.graphql(streamTransfers, (message: GraphqlStreamMessage<any>) => {
     if (message.type === 'data') {
       const transfer = message.data.searchTransactionsForward.trace
       const data = {
@@ -103,7 +103,8 @@ export function createFirehoseSubscription(query: string) {
   })
 
   console.log('Listening to token transfers...')
-  return eventEmitter
+
+  return { on: eventEmitter.on, stream }
 }
 
 async function webSocketFactory(url: string, protocols: string[] = []): Promise<WebSocketFactory> {
