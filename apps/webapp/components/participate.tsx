@@ -39,11 +39,11 @@ export default function Participate() {
               .split(' ')
               .map(word => ({
                 text: word,
-                className: word.toLowerCase() === 'bitlauncher'
-                  ? 'text-[#1ED761]'
+                className: word === 'bitLauncher.'
+                  ? '!text-[#1ED761] last:!text-inherit'
                   : undefined
               }))}
-            className="text-4xl sm:text-5xl md:text-6xl !font-black"
+            className="text-4xl leading-snug sm:!text-5xl lg:!text-6xl !font-black"
             cursorClassName="h-6 md:h-10"
             onAnimationEnd={() => {
               setShowStepsInfo(true)
@@ -97,7 +97,7 @@ export default function Participate() {
 }
 
 const textContent = {
-  title: 'Join The AI and Web3 Revolution With bitLauncher .',
+  title: 'Join The AI and Web3 Revolution With bitLauncher.',
   stepsInfo:
     'Only 3 steps are needed for you to start enjoying all the advantages',
   steps: [
