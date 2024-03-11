@@ -1,5 +1,5 @@
 # Start from the bun base image
-FROM nodejs:latest
+FROM node:latest
 
 # Set the working directory
 WORKDIR /app
