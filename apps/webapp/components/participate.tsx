@@ -40,7 +40,7 @@ export default function Participate() {
               .map(word => ({
                 text: word,
                 className: word.toLowerCase().match(/(bitcash|launchpad.)/g)
-                  ? 'text-blue-500 dark:text-blue-500'
+                  ? 'text-[#1ED761]'
                   : undefined
               }))}
             className="text-4xl sm:text-5xl md:text-6xl !font-black"
