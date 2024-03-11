@@ -22,8 +22,8 @@ async function getCurrentBlockHeight() {
 async function main() {
   console.log('indexer operational')
   listenToEos()
-  // startIndexer()
-  // startIssuer()
+  startIndexer()
+  startIssuer()
 
   app.get('/', async (_req, res) => {
     try {
