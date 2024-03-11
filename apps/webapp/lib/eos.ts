@@ -1,6 +1,6 @@
 'use client'
 
-import { APIClient, Name } from '@wharfkit/antelope'
+import { APIClient, Asset, Name } from '@wharfkit/antelope'
 import {
   AbiProvider,
   SigningRequest,
@@ -44,7 +44,7 @@ export async function genLoginSigningRequest(
 }
 
 export async function genBitusdDepositSigningRequest(
-  amount: number | bigint | string,
+  amount: number,
   address: string
 ) {
   const req = createSigntureRequest({
@@ -54,9 +54,12 @@ export async function genBitusdDepositSigningRequest(
       authorization,
       data: {
         from: '............1',
-        to: 'gaboesquivel',
+        to: smartsaleEnv.test.smartsale.bk,
         memo: `pair_id:1 address:${address}`,
-        quantity: { quantity: `${amount} BITUSD`, contract: 'bkbtokentest' }
+        quantity: {
+          quantity: Asset.from(amount, '6,BITUSD'),
+          contract: smartsaleEnv.test.bitcash.bank
+        }
       }
     }
   })
@@ -64,13 +67,15 @@ export async function genBitusdDepositSigningRequest(
 }
 
 export async function genUsdtDepositSigningRequest(
-  amount: number | bigint | string
+  amount: number,
+  address: string
 ) {
   const account = smartsaleEnv.test.usdt.find(
-    c => c.chainType === 'antelope'
+    c => c.chainType === 'antelope' && c.symbol === 'USDT'
   )?.address
   if (!account) throw new Error('usdt account not found')
 
+  console.log('HEEEEY')
   const req = createSigntureRequest({
     action: {
       account,
@@ -78,9 +83,9 @@ export async function genUsdtDepositSigningRequest(
       authorization,
       data: {
         from: '............1',
-        to: 'gaboesquivel',
-        memo: `address:0x`,
-        quantity: `${amount} USDT`
+        to: smartsaleEnv.test.smartsale.bk,
+        memo: `address:${address}`,
+        quantity: Asset.from(amount, '4,USDT')
       }
     }
   })
