@@ -5,7 +5,7 @@ import { useSetState } from 'react-use'
 
 export const [useGlobalData, GlobalDataProvider] = createContextHook(() => {
   const [state, setState] = useSetState({
-    errorMessage: '',
+    errorMessage: ''
   })
   const setGlobalError = (errorMessage: string) => setState({ errorMessage })
 

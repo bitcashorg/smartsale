@@ -31,24 +31,36 @@ const esrNodeJSOptions: SigningRequestEncodingOptions = {
 export async function POST(req: NextRequest) {
   try {
     const body = (await req.json()) as CallbackPayload
+    const esr = SigningRequest.from(body.req, esrNodeJSOptions)
+    const id = esr.getInfoKey('uuid')
+    const action = esr.getRawActions()[0].name.toString()
 
-    const decodedRequest = SigningRequest.from(body.req, esrNodeJSOptions)
-    const id = decodedRequest.getInfoKey('uuid')
-
-    console.log(id, body, decodedRequest) // Log the body to the console
-
+    console.log(id, action, esr, body) // Log the body to the console
     // TODO: validate tx is on blockchain
 
-    await db.session.create({
+    // open up session if l
+    if (action === 'login') {
+      await db.session.create({
+        data: {
+          id,
+          tx: body.tx,
+          account: body.sa
+        }
+      })
+    }
+    // update esr entry with trx_id
+    await db.esr.update({
+      where: {
+        id
+      },
       data: {
-        id,
-        tx: body.tx,
-        account: body.sa
+        trx_id: body.tx
       }
     })
 
     return Response.json({
-      message: 'Successfully logged the request body'
+      success: true,
+      message: 'Successfully received esr callback'
     })
   } catch (error) {
     console.log(error)

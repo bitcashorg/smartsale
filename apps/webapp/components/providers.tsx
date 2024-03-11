@@ -11,6 +11,7 @@ import { GlobalDataProvider } from '@/hooks/use-global-data'
 import { SessionProvider } from '@/hooks/use-session'
 import { sepolia } from 'wagmi/chains'
 import { eosEvmTestnet } from 'smartsale-env'
+import { SignatureRequestProvider } from './esr-dialog'
 
 const queryClient = new QueryClient()
 
@@ -27,9 +28,11 @@ export function Providers({ children, ...props }: ThemeProviderProps) {
         <GlobalDataProvider>
           <TooltipProvider>
             <QueryClientProvider client={queryClient}>
-              <WagmiProvider config={wagmiConfig}>
-                <RainbowKitProvider>{children}</RainbowKitProvider>
-              </WagmiProvider>
+              <SignatureRequestProvider>
+                <WagmiProvider config={wagmiConfig}>
+                  <RainbowKitProvider>{children}</RainbowKitProvider>
+                </WagmiProvider>
+              </SignatureRequestProvider>
             </QueryClientProvider>
           </TooltipProvider>
         </GlobalDataProvider>

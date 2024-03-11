@@ -1,4 +1,3 @@
-import { esrOptions } from '@/lib/eos'
 import { APIClient } from '@wharfkit/antelope'
 import {
   AbiProvider,
@@ -9,6 +8,7 @@ import {
 import { NextRequest } from 'next/server'
 import { db } from 'smartsale-db'
 import { deflateRawSync, inflateRawSync } from 'zlib'
+import { z } from 'zod'
 
 const eos = new APIClient({
   url: 'https://eos.greymass.com'
@@ -27,32 +27,37 @@ const esrNodeJSOptions: SigningRequestEncodingOptions = {
   } as ZlibProvider
 }
 
+const requestBodySchema = z.object({
+  code: z.string(),
+  account: z.string()
+})
+
 export async function POST(req: NextRequest) {
   try {
-    const body = (await req.json()) as { code: string }
+    const rawData = await req.json()
+    const { code, account } = requestBodySchema.parse(rawData)
 
-    const decodedRequest = SigningRequest.from(body.code, esrNodeJSOptions)
-    const id = decodedRequest.getInfoKey('uuid')
+    const decoded = SigningRequest.from(code, esrNodeJSOptions)
+    const id = decoded.getInfoKey('uuid')
 
-    console.log(id, body, decodedRequest) // Log the body to the console
-
-    // TODO: validate tx is on blockchain
-
-    // await db.esr.create({
-    //   data: {
-    //     id,
-    //     code: body.code,
-    //     account: ''
-    //   }
-    // })
+    const entry = await db.esr.create({
+      data: {
+        id,
+        code,
+        account
+      }
+    })
+    console.log('esr entry', entry)
 
     return Response.json({
-      message: 'Successfully logged the request body'
+      success: true,
+      data: entry,
+      message: 'Registered new signature request'
     })
   } catch (error) {
     console.log(error)
     return Response.json({
-      message: 'Could not parse the request body'
+      error: 'Something went wrong'
     })
   }
 }

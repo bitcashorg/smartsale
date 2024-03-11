@@ -1,7 +1,7 @@
 import fs from 'fs/promises'
 import { erc20Abi } from 'abitype/abis'
 import { client } from './viem-client'
-import { Abi, Address } from 'viem'
+import { Abi, Address, parseUnits } from 'viem'
 
 export async function writeToFile(data: string, filePath: string) {
   try {
@@ -65,3 +65,10 @@ export function bigintToPostgresTimestamp(timestamp: bigint): string {
 }
 
 export const getEvents = (abi: Abi) => abi.filter((item) => item.type === 'event')
+
+export function convertToBigIntWithDecimals(quantity: string): BigInt {
+  // Extract the numeric value as a string
+  const [numericValue] = quantity.split(' ')
+  // Always use 6 decimals in parseUnits
+  return parseUnits(numericValue, 6)
+}

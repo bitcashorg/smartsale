@@ -1,5 +1,5 @@
 import { smartsaleChains } from "./chains"
-import { EOSFakeUSDT, EOSUSDT, SepoliaUSDT, TokenContractData, TestnetUSDT } from 'smartsale-contracts'
+import { EOSFakeUSDT, EOSUSDT, SepoliaUSDT, TokenContractData, TestnetUSDT, EOSFakeBITUSD } from 'smartsale-contracts'
 import { Address, Chain } from "viem"
 
 const prod: SmartsaleEnvConfig = {
@@ -34,6 +34,7 @@ const test: SmartsaleEnvConfig = {
     auction: '0x'
   },
   usdt: [
+    EOSFakeBITUSD,
     EOSFakeUSDT,
     SepoliaUSDT,
     TestnetUSDT

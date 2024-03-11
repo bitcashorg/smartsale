@@ -4,7 +4,7 @@ export interface ContractData {
   address: Address | string;
   chainId: number | string;
   chainType: ChainType
-  chainName?: string
+  chainName: string
   indexFromBlock: number;
 }
 export interface TokenContractData extends ContractData {

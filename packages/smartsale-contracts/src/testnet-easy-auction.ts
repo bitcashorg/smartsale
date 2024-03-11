@@ -5,6 +5,7 @@ export const TestnetEasyAuction : EVMContractData = {
   "indexFromBlock": 12239067,
   "chainId": 15557,
     chainType: 'evm',
+          chainName: 'EOS EVM Tesnet',
   "abi": [
     {
       "inputs": [],

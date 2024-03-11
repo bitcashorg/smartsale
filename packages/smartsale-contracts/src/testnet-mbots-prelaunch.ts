@@ -8,6 +8,7 @@ export const TestnetMBOTSPL : EVMTokenContractData = {
   indexFromBlock: 30303655,
   chainId: 15557,
   chainType: 'evm',
+        chainName: 'EOS EVM Tesnet',
   abi:  [
     {
       "inputs": [

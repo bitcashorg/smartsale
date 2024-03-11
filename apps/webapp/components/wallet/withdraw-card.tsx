@@ -42,7 +42,7 @@ export function WithdrawCard() {
         <div className="flex flex-col space-y-4">
           <div className="text-sm">Convert to BITUSD</div>
           <div className="flex items-center justify-between">
-            <div className="flex flex-col min-w-[50%]">
+            <div className="flex flex-col min-w-[40%]">
               <span className="text-2xl font-semibold">
                 <Input
                   type="number"

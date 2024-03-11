@@ -8,6 +8,7 @@ export const SepoliaUSDT : EVMTokenContractData = {
   indexFromBlock: 5394842,
   chainId: 11155111, // sepolia
   chainType: 'evm',
+  chainName: 'Sepolia',
   abi: [
     {
       "inputs": [

@@ -5,6 +5,7 @@ export const TestnetAllowList : EVMContractData = {
   "indexFromBlock": 12241046,
   chainId: 15557,
     chainType: 'evm',
+      chainName: 'Sepolia',
   "abi": [
     {
       "inputs": [],

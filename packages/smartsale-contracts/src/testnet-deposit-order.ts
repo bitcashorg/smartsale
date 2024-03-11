@@ -5,6 +5,7 @@ export const TestnetDepositOrder : EVMContractData = {
   "indexFromBlock": 12240840,
   chainId: 15557,
     chainType: 'evm',
+      chainName: 'EOS EVM Tesnet',
   "abi": [
     {
       "inputs": [

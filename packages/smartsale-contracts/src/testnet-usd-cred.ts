@@ -8,6 +8,7 @@ export const TestnetUSDCred : EVMTokenContractData = {
   indexFromBlock: 30294882,
   chainId: 15557, 
   chainType: 'evm',
+        chainName: 'EOS EVM Tesnet',
   abi:  [
     {
       "inputs": [
