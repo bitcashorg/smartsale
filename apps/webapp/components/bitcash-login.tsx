@@ -46,7 +46,7 @@ export function BitcashLoginButton() {
   return (
     <Dialog open={open} onOpenChange={toggleOpen}>
       <DialogTrigger asChild>
-        <Button>Connect Bitcash App</Button>
+        <Button className="hover:scale-105">Connect Bitcash App</Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
@@ -63,12 +63,19 @@ export function BitcashLoginButton() {
               maxWidth: 300,
               width: '100%',
               background: 'white',
-              padding: 10
+              padding: 10,
+              borderRadius: 4,
+              border: '1px solid #e5e7eb'
             }}
           >
             <QRCode
               size={256}
-              style={{ height: 'auto', maxWidth: '100%', width: '100%' }}
+              style={{
+                height: 'auto',
+                maxWidth: '100%',
+                width: '100%',
+                borderRadius: 4
+              }}
               value={loginUri.replace('esr://', '')}
               viewBox={`0 0 256 256`}
             />

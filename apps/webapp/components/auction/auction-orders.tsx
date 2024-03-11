@@ -1,20 +1,20 @@
 'use client'
 import {
-  TableHead,
-  TableRow,
-  TableHeader,
-  TableCell,
+  Table,
   TableBody,
-  Table
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow
 } from '@/components/ui/table'
-import { useEffect, useState } from 'react'
-import { useAccount, useReadContract } from 'wagmi'
-import Link from 'next/link'
+import { supabase } from '@/lib/supabase'
 import { formatAddress } from '@/lib/utils'
-import { TestnetEasyAuction } from 'smartsale-contracts'
 import BN from 'bn.js'
 import { format } from 'date-fns'
-import { supabase } from '@/lib/supabase'
+import Link from 'next/link'
+import { useEffect, useState } from 'react'
+import { TestnetEasyAuction } from 'smartsale-contracts'
+import { useAccount, useReadContract } from 'wagmi'
 
 export function AuctionOrders() {
   const { address } = useAccount()
@@ -79,8 +79,8 @@ export function AuctionOrders() {
   // console.log(stringify(orders))
 
   return (
-    <div className="pt-8">
-      <h2>Order history</h2>
+    <>
+      <h2 className="text-3xl font-bold px-2 py-4">Order history</h2>
       <Table>
         <TableHeader>
           <TableRow>
@@ -121,7 +121,7 @@ export function AuctionOrders() {
           ))}
         </TableBody>
       </Table>
-    </div>
+    </>
   )
 }
 

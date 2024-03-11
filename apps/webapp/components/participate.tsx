@@ -1,5 +1,10 @@
+'use client'
+
 import { Button } from '@/components/ui/button'
+import { TypewriterEffect } from '@/components/ui/typewritting-effect'
+import { AnimatePresence, motion } from 'framer-motion'
 import Link from 'next/link'
+import React from 'react'
 
 function WalletIcon({ className }: IconProps) {
   return (
@@ -23,44 +28,76 @@ function WalletIcon({ className }: IconProps) {
 }
 
 export default function Participate() {
+  const [showStepsInfo, setShowStepsInfo] = React.useState(false)
+
   return (
-    <div className="pt-12 pb-10 text-white">
-      <div className="flex flex-col items-center justify-center mb-16 text-center">
-        <h2 className="mb-4 text-5xl font-bold">{textContent.title}</h2>
-        <p className="text-xl">{textContent.stepsInfo}</p>
+    <section className="pt-20 pb-10">
+      <div className="flex flex-col min-h-[25vh] items-center justify-start mb-6 text-center">
+        <h2 className="mb-4 lg:max-w-[90%] xl:max-w-[66%]">
+          <TypewriterEffect
+            words={textContent.title
+              .split(' ')
+              .map(word => ({
+                text: word,
+                className: word === 'bitLauncher.'
+                  ? '!text-[#1ED761] last:!text-inherit'
+                  : undefined
+              }))}
+            className="text-4xl leading-snug sm:!text-5xl lg:!text-6xl !font-black"
+            cursorClassName="h-6 md:h-10"
+            onAnimationEnd={() => {
+              setShowStepsInfo(true)
+            }}
+          />
+        </h2>
+        <AnimatePresence>
+          {showStepsInfo && (
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 20 }}
+              transition={{ delay: 0.24 }}
+              key="steps-info"
+              className="font-semibold text-lg md:text-xl"
+            >
+              {textContent.stepsInfo}
+            </motion.p>
+          )}
+        </AnimatePresence>
       </div>
 
-      <div className="container flex flex-col md:flex-row md:justify-between md:items-start">
+      <div className="container min-h-[320px] flex flex-col md:flex-row md:justify-between md:items-center">
         {textContent.steps.map((step, index) => (
           <div
             key={index}
-            className="flex flex-col items-center gap-5 mb-8 md:items-start md:flex-row md:w-1/3"
+            className="flex flex-col items-center mb-8 md:items-start md:w-1/3 mt-4 md:mt-0 md:ml-4"
           >
-            <div className="mt-4 md:mt-0 md:ml-4">
-              <h2 className="flex text-2xl font-semibold text-center align-items md:text-left">
-                <step.icon className="mr-2 text-gray-400 size-6" />
-                {step.title}
-              </h2>
-              <p className="py-3 text-center text-gray-400 md:text-left">
-                {step.description}
-              </p>
-              {step.buttonText && (
-                <Link href={step.href} shallow>
-                  <Button className="mt-2 bg-[#7f5af0]">
-                    {step.buttonText}
-                  </Button>
-                </Link>
-              )}
-            </div>
+            <h2 className="flex text-2xl font-semibold text-center align-items h-10 md:text-left">
+              <step.icon className="mr-2 text-gray-400 size-6" />
+              {step.title}
+            </h2>
+            <p className="py-3 text-center text-gray-500 dark:text-gray-300 md:text-left h-20">
+              {step.description}
+            </p>
+            {step.buttonText && (
+              <Link href={step.href} shallow>
+                <Button
+                  className="mt-2 bg-[#7f5af0] !text-white text-bold text-lg"
+                  size="lg"
+                >
+                  {step.buttonText}
+                </Button>
+              </Link>
+            )}
           </div>
         ))}
       </div>
-    </div>
+    </section>
   )
 }
 
 const textContent = {
-  title: 'Join The AI and Web3 Revolution With Bitcash Launchpad',
+  title: 'Join The AI and Web3 Revolution With bitLauncher.',
   stepsInfo:
     'Only 3 steps are needed for you to start enjoying all the advantages',
   steps: [

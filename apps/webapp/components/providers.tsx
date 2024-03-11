@@ -16,7 +16,7 @@ import { SignatureRequestProvider } from './esr-dialog'
 const queryClient = new QueryClient()
 
 export const wagmiConfig = getDefaultConfig({
-  appName: 'Bitcash Launchpad',
+  appName: 'bitLauncher',
   projectId: 'YOUR_PROJECT_ID',
   chains: [{ ...eosEvmTestnet, fees: undefined }, sepolia]
 })

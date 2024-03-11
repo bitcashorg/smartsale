@@ -78,23 +78,23 @@ export default function ProjectPage({
               />
               <Image
                 alt="Highlight Image 2"
-                className="object-cover overflow-hidden rounded-md aspect-square"
+                className="object-cover overflow-hidden rounded-md aspect-square mix-blend-multiply"
                 height="200"
-                src="/placeholder.svg"
+                src="/images/launchpad_img_placeholder.svg"
                 width="200"
               />
               <Image
                 alt="Highlight Image 3"
-                className="object-cover overflow-hidden rounded-md aspect-square"
+                className="object-cover overflow-hidden rounded-md aspect-square mix-blend-multiply"
                 height="200"
-                src="/placeholder.svg"
+                src="/images/launchpad_img_placeholder.svg"
                 width="200"
               />
               <Image
                 alt="Highlight Image 4"
-                className="object-cover overflow-hidden rounded-md aspect-square"
+                className="object-cover overflow-hidden rounded-md aspect-square mix-blend-multiply"
                 height="200"
-                src="/placeholder.svg"
+                src="/images/launchpad_img_placeholder.svg"
                 width="200"
               />
             </div>
@@ -115,30 +115,30 @@ export default function ProjectPage({
             <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
               <Image
                 alt="Product Image 1"
-                className="object-cover overflow-hidden rounded-md aspect-square"
+                className="object-cover overflow-hidden rounded-md aspect-square mix-blend-multiply"
                 height="200"
-                src="/placeholder.svg"
+                src="/images/launchpad_img_placeholder.svg"
                 width="200"
               />
               <Image
                 alt="Product Image 2"
-                className="object-cover overflow-hidden rounded-md aspect-square"
+                className="object-cover overflow-hidden rounded-md aspect-square mix-blend-multiply"
                 height="200"
-                src="/placeholder.svg"
+                src="/images/launchpad_img_placeholder.svg"
                 width="200"
               />
               <Image
                 alt="Product Image 3"
-                className="object-cover overflow-hidden rounded-md aspect-square"
+                className="object-cover overflow-hidden rounded-md aspect-square mix-blend-multiply"
                 height="200"
-                src="/placeholder.svg"
+                src="/images/launchpad_img_placeholder.svg"
                 width="200"
               />
               <Image
                 alt="Product Image 4"
-                className="object-cover overflow-hidden rounded-md aspect-square"
+                className="object-cover overflow-hidden rounded-md aspect-square mix-blend-multiply"
                 height="200"
-                src="/placeholder.svg"
+                src="/images/launchpad_img_placeholder.svg"
                 width="200"
               />
             </div>
@@ -218,30 +218,30 @@ export default function ProjectPage({
             <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
               <Image
                 alt="Investor Image 1"
-                className="object-cover overflow-hidden rounded-md aspect-square"
+                className="object-cover overflow-hidden rounded-md aspect-square mix-blend-multiply"
                 height="200"
-                src="/placeholder.svg"
+                src="/images/launchpad_img_placeholder.svg"
                 width="200"
               />
               <Image
                 alt="Investor Image 2"
-                className="object-cover overflow-hidden rounded-md aspect-square"
+                className="object-cover overflow-hidden rounded-md aspect-square mix-blend-multiply"
                 height="200"
-                src="/placeholder.svg"
+                src="/images/launchpad_img_placeholder.svg"
                 width="200"
               />
               <Image
                 alt="Investor Image 3"
-                className="object-cover overflow-hidden rounded-md aspect-square"
+                className="object-cover overflow-hidden rounded-md aspect-square mix-blend-multiply"
                 height="200"
-                src="/placeholder.svg"
+                src="/images/launchpad_img_placeholder.svg"
                 width="200"
               />
               <Image
                 alt="Investor Image 4"
-                className="object-cover overflow-hidden rounded-md aspect-square"
+                className="object-cover overflow-hidden rounded-md aspect-square mix-blend-multiply"
                 height="200"
-                src="/placeholder.svg"
+                src="/images/launchpad_img_placeholder.svg"
                 width="200"
               />
             </div>
@@ -263,30 +263,30 @@ export default function ProjectPage({
             <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
               <Image
                 alt="Team Member Image 1"
-                className="object-cover overflow-hidden rounded-md aspect-square"
+                className="object-cover overflow-hidden rounded-md aspect-square mix-blend-multiply"
                 height="200"
-                src="/placeholder.svg"
+                src="/images/launchpad_img_placeholder.svg"
                 width="200"
               />
               <Image
                 alt="Team Member Image 2"
-                className="object-cover overflow-hidden rounded-md aspect-square"
+                className="object-cover overflow-hidden rounded-md aspect-square mix-blend-multiply"
                 height="200"
-                src="/placeholder.svg"
+                src="/images/launchpad_img_placeholder.svg"
                 width="200"
               />
               <Image
                 alt="Team Member Image 3"
-                className="object-cover overflow-hidden rounded-md aspect-square"
+                className="object-cover overflow-hidden rounded-md aspect-square mix-blend-multiply"
                 height="200"
-                src="/placeholder.svg"
+                src="/images/launchpad_img_placeholder.svg"
                 width="200"
               />
               <Image
                 alt="Team Member Image 4"
-                className="object-cover overflow-hidden rounded-md aspect-square"
+                className="object-cover overflow-hidden rounded-md aspect-square mix-blend-multiply"
                 height="200"
-                src="/placeholder.svg"
+                src="/images/launchpad_img_placeholder.svg"
                 width="200"
               />
             </div>

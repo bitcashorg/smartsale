@@ -1,8 +1,8 @@
 'use client'
 
 import { useAuctionData } from '@/hooks/use-auction-data'
-import React, { useEffect, useState } from 'react'
 import { TimerIcon } from 'lucide-react'
+import { useEffect, useState } from 'react'
 
 export function Countdown({ auctionId }: { auctionId: number }) {
   const { data: auctionData } = useAuctionData(auctionId)
@@ -49,13 +49,13 @@ export function Countdown({ auctionId }: { auctionId: number }) {
   }, [auctionData])
 
   return (
-    <div className="max-h-[200px] px-8 pt-5 bg-black">
+    <div className="max-h-[200px] px-8 pt-5 bg-gray-200 dark:bg-black rounded-md">
       <div className="flex justify-between ">
         <div>
-          <TimerIcon className="text-white" />
+          <TimerIcon />
         </div>
         <div className="text-center">
-          <h2 className="text-2xl font-bold">COUNTDOWN</h2>
+          <h2 className="text-xl md:text-2xl font-bold">COUNTDOWN</h2>
         </div>
         <div />
       </div>
@@ -72,7 +72,7 @@ export function Countdown({ auctionId }: { auctionId: number }) {
 function CountdownItem({ value, label }: CountdownItemProps) {
   return (
     <div className="flex flex-col items-center justify-center text-center size-32">
-      <div className="text-6xl font-bold">{value}</div>
+      <div className="text-4xl md:text-6xl font-bold">{value}</div>
       <div className="text-sm">{label}</div>
     </div>
   )

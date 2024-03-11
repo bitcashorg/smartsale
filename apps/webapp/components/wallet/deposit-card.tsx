@@ -1,32 +1,29 @@
 'use client'
 
 import { Button } from '@/components/ui/button'
-import { CardContent, CardFooter, Card } from '@/components/ui/card'
+import { Card, CardContent, CardFooter } from '@/components/ui/card'
 import {
-  SelectValue,
-  SelectTrigger,
-  SelectItem,
+  Select,
   SelectContent,
-  Select
+  SelectItem,
+  SelectTrigger,
+  SelectValue
 } from '@/components/ui/select'
-import { Input } from '../ui/input'
-
-import { useAccount, useSwitchChain, useWriteContract } from 'wagmi'
-import { useState } from 'react'
-
-import {
-  TokenContractData,
-  TestnetUSDT,
-  EVMTokenContractData
-} from 'smartsale-contracts'
-import { parseUnits } from 'viem'
-import { smartsaleEnv } from 'smartsale-env'
-import { useSignatureRequest } from '../esr-dialog'
 import {
   genBitusdDepositSigningRequest,
   genUsdtDepositSigningRequest
 } from '@/lib/eos'
-import { hashObject } from '@/lib/utils'
+import { useState } from 'react'
+import {
+  EVMTokenContractData,
+  TestnetUSDT,
+  TokenContractData
+} from 'smartsale-contracts'
+import { smartsaleEnv } from 'smartsale-env'
+import { parseUnits } from 'viem'
+import { useAccount, useSwitchChain, useWriteContract } from 'wagmi'
+import { useSignatureRequest } from '../esr-dialog'
+import { Input } from '../ui/input'
 
 const usdtMap = new Map<string, TokenContractData>()
 smartsaleEnv.test.usdt.forEach(t => {
@@ -70,20 +67,24 @@ export function DepositCard() {
   }
 
   return (
-    <Card className="w-full bg-[#1a1a1a] rounded-xl p-4 text-white">
+    <Card className="w-full dark:bg-[#1a1a1a] bg-gray-200 rounded-xl p-4">
       <CardContent>
         <div className="flex flex-col space-y-4">
-          <div className="text-sm">Convert to USDCred</div>
+          <label htmlFor="deposit" className="text-sm">
+            Convert to USDCred
+          </label>
           <div className="flex items-center justify-between">
             <div className="flex flex-col min-w-[40%]">
               <span className="text-2xl font-semibold">
                 <Input
                   type="number"
+                  id="deposit"
+                  name="deposit"
                   placeholder="0.00"
                   value={amount}
                   onChange={e => setAmount(parseInt(e.target.value))}
                 />
-              </span>
+              </span>-
             </div>
             <Select onValueChange={chainId => setToken(usdtMap.get(chainId)!)}>
               <SelectTrigger id="currency-out">
@@ -105,8 +106,8 @@ export function DepositCard() {
               </SelectContent>
             </Select>
           </div>
-        </div>
-      </CardContent>
+        </div >
+      </CardContent >
       <CardFooter className="flex flex-col space-y-2">
         <Button
           className="w-full bg-[#bd1e59]"
@@ -116,6 +117,6 @@ export function DepositCard() {
           Deposit
         </Button>
       </CardFooter>
-    </Card>
+    </Card >
   )
 }

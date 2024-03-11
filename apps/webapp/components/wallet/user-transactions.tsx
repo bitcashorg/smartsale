@@ -1,19 +1,19 @@
 'use client'
 import {
-  TableHead,
-  TableRow,
-  TableHeader,
-  TableCell,
+  Table,
   TableBody,
-  Table
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow
 } from '@/components/ui/table'
-import { useEffect, useState } from 'react'
-import { useAccount } from 'wagmi'
-import Link from 'next/link'
+import { supabase } from '@/lib/supabase'
 import { formatAddress } from '@/lib/utils'
 import { format } from 'date-fns'
-import { supabase } from '@/lib/supabase'
+import Link from 'next/link'
+import { useEffect, useState } from 'react'
 import { Address } from 'viem'
+import { useAccount } from 'wagmi'
 
 export function UserTransactions() {
   const { address } = useAccount()
@@ -71,7 +71,7 @@ export function UserTransactions() {
 
   return (
     <div className="pt-8">
-      <h2>Transaction history</h2>
+      <h2 className="text-3xl font-bold px-2 py-4">Transaction History</h2>
       <Table>
         <TableHeader>
           <TableRow>
