@@ -63,7 +63,7 @@ export function DepositCard() {
       // handle eos token bitusd and usdt
       const esr =
         token.symbol === 'USDT'
-          ? await genUsdtDepositSigningRequest(amount)
+          ? await genUsdtDepositSigningRequest(amount, address)
           : await genBitusdDepositSigningRequest(amount, address)
       requestSignature(esr)
     }

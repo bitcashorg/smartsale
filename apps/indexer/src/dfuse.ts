@@ -36,11 +36,16 @@ const dfuse = createDfuseClient({
 export function listenToEos(env: 'test' | 'prod' = 'test') {
   const usdt = smartsaleEnv[env].usdt.find((t) => (t.chainType = 'antelope'))?.address
   const bank = smartsaleEnv[env].bitcash.bank
+  const launchpad = smartsaleEnv[env].smartsale.bk
   // https://docs.dfuse.eosnation.io/platform/public-apis/search-query-language/
   // https://docs.dfuse.eosnation.io/eosio/public-apis/reference/search/terms/
   // receiver: means the account with code that has executed the action.
-  const usdtDeposits = createFirehoseSubscription(`"receiver:${usdt} action:transfer"`)
-  const bitusdDeposits = createFirehoseSubscription(`"receiver:${bank} action:stbtransfer"`)
+  const usdtDeposits = createFirehoseSubscription(
+    `"receiver:${usdt} action:transfer data.to:${launchpad}"`,
+  )
+  const bitusdDeposits = createFirehoseSubscription(
+    `"receiver:${bank} action:stbtransfer data.to:${launchpad}"`,
+  )
 
   // only first action for now
   usdtDeposits.on('data', ({ trxId, actions }) =>

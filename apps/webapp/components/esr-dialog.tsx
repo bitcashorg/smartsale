@@ -66,7 +66,7 @@ function useSignatureRequestFn() {
           'postgres_changes',
           { event: 'UPDATE', schema: 'public', table: 'esr' },
           payload => {
-            console.log(payload)
+            console.log('ESR UPDATE!', payload)
             if (payload.new.id !== esr.getInfoKey('uuid')) return
             if (!payload.new.trx_id) return
             // if uuid matches remove channel and reset state
@@ -83,9 +83,6 @@ function useSignatureRequestFn() {
   })
 
   const toggleOpen = () => setState(({ open }) => ({ open: !open }))
-
-  console.log('ESR', state.esr)
-  console.log('ERROR', props.error)
 
   return { toggleOpen, requestSignature, ...state, ...props }
 }

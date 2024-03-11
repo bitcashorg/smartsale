@@ -14,7 +14,8 @@ const prod: SmartsaleEnvConfig = {
     accounts: 'accounts.bk',
   },
   smartsale: {
-    auction: '0x'
+    auction: '0x',
+    bk:'launchpad.bk'
   },
   usdt: [EOSUSDT],
 }
@@ -31,7 +32,8 @@ const test: SmartsaleEnvConfig = {
     accounts: 'bkbaccountst',
   },
   smartsale: {
-    auction: '0x'
+    auction: '0x',
+    bk:'bkblaunchpad'
   },
   usdt: [
     EOSFakeBITUSD,
@@ -63,6 +65,7 @@ export interface SmartsaleEnvConfig  {
     },
     smartsale: {
       auction: Address
+      bk: string
     },
     usdt: TokenContractData[]
   }
