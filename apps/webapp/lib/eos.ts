@@ -75,7 +75,6 @@ export async function genUsdtDepositSigningRequest(
   )?.address
   if (!account) throw new Error('usdt account not found')
 
-  console.log('HEEEEY')
   const req = createSigntureRequest({
     action: {
       account,

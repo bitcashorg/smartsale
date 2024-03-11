@@ -56,7 +56,6 @@ function useSignatureRequestFn() {
       return response.data
     },
     onSuccess: ({ data }) => {
-      console.log('on success')
       const esr = SigningRequest.from(data.code, esrOptions)
 
       // handle success, possibly setting up a subscription to listen for changes
@@ -75,6 +74,7 @@ function useSignatureRequestFn() {
           }
         )
         .subscribe()
+      console.log('subscribed to esr channel')
 
       setState({
         channel
@@ -95,7 +95,6 @@ const [useSignatureRequest, UseSignatureRequestProvider] = createContextHook(
 function EsrDialog() {
   const { open, toggleOpen, esr } = useSignatureRequest()
   const code = esr?.encode().replace('esr://', '') || ''
-  console.log('dialog code', esr, code)
   return (
     <Dialog open={open} onOpenChange={toggleOpen}>
       {/* <DialogTrigger asChild>

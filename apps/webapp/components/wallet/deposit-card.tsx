@@ -44,7 +44,7 @@ export function DepositCard() {
 
   const deposit = async () => {
     if (!amount || !address) return
-    console.log('deposit', token)
+    // console.log('deposit', token)
 
     if (token.chainType === 'evm') {
       const evmToken = token as EVMTokenContractData
