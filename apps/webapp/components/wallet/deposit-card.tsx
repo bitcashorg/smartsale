@@ -1,26 +1,25 @@
 'use client'
 
 import { Button } from '@/components/ui/button'
-import { CardContent, CardFooter, Card } from '@/components/ui/card'
+import { Card, CardContent, CardFooter } from '@/components/ui/card'
 import {
-  SelectValue,
-  SelectTrigger,
-  SelectItem,
+  Select,
   SelectContent,
-  Select
+  SelectItem,
+  SelectTrigger,
+  SelectValue
 } from '@/components/ui/select'
-import { Input } from '../ui/input'
 import { useSession } from '@/hooks/use-session'
-import { useAccount, useSwitchChain, useWriteContract } from 'wagmi'
 import { useState } from 'react'
-import { sepolia } from 'viem/chains'
+import { smartsaleChains } from 'smartsale-chains'
 import {
   ERC20ContractData,
   SepoliaUSDT,
   TestnetUSDT
 } from 'smartsale-contracts'
 import { parseUnits } from 'viem'
-import { smartsaleChains } from 'smartsale-chains'
+import { useAccount, useSwitchChain, useWriteContract } from 'wagmi'
+import { Input } from '../ui/input'
 
 const tokens = [SepoliaUSDT, TestnetUSDT]
 
@@ -61,15 +60,17 @@ export function DepositCard() {
 
   console.log(other)
   return (
-    <Card className="w-full bg-[#1a1a1a] rounded-xl p-4 text-white">
+    <Card className="w-full dark:bg-[#1a1a1a] bg-gray-200 rounded-xl p-4">
       <CardContent>
         <div className="flex flex-col space-y-4">
-          <div className="text-sm">Deposit USDT</div>
+          <label htmlFor="deposit" className="text-sm">Deposit USDT</label>
           <div className="flex items-center justify-between">
             <div className="flex flex-col min-w-[50%]">
               <span className="text-2xl font-semibold">
                 <Input
                   type="number"
+                  id="deposit"
+                  name="deposit"
                   placeholder="0.00"
                   value={amount}
                   onChange={e => setAmount(parseInt(e.target.value))}

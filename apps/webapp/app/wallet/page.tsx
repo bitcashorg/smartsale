@@ -1,15 +1,15 @@
-import React from 'react'
-import { DepositCard } from '@/components/wallet/deposit-card'
 import { AuctionOrders } from '@/components/auction/auction-orders'
-import { WalletBalances } from '@/components/wallet/wallet-balances'
+import { DepositCard } from '@/components/wallet/deposit-card'
 import { UserTransactions } from '@/components/wallet/user-transactions'
+import { WalletBalances } from '@/components/wallet/wallet-balances'
 import { WithdrawCard } from '@/components/wallet/withdraw-card'
+import React from 'react'
 
 export default function WalletPage() {
   return (
     <>
       <div className="flex flex-col md:flex-row">
-        <div className="w-full">
+        <div className="flex flex-col gap-16 w-full h-full min-h-[512px] mb-20">
           <div className="flex flex-col gap-5 md:flex-row space-between">
             <div className="md:w-2/3">
               <h1 className="mb-4 text-2xl font-bold">Wallet</h1>
@@ -21,13 +21,17 @@ export default function WalletPage() {
             </div>
           </div>
 
-          <React.Suspense fallback={<div>Loading ...</div>}>
-            <UserTransactions />
-          </React.Suspense>
+          <div>
+            <React.Suspense fallback={<div>Loading ...</div>}>
+              <UserTransactions />
+            </React.Suspense>
+          </div>
 
-          <React.Suspense fallback={<div>Loading ...</div>}>
-            <AuctionOrders />
-          </React.Suspense>
+          <div>
+            <React.Suspense fallback={<div>Loading ...</div>}>
+              <AuctionOrders />
+            </React.Suspense>
+          </div>
         </div>
       </div>
     </>

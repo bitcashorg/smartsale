@@ -20,7 +20,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           GeistMono.variable
         )}
       >
-        <div className="relative min-h-screen w-full bg-muted/20 dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex items-center justify-center">
+        <div className="relative min-h-screen h-full w-full bg-muted/20 dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex items-center justify-center">
           <div className="max-w-1/2 fixed pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(circle_at_center,transparent_83%,#0002)]" />
           {/* Radial gradient for the container to give a faded look */}
           <Toaster />
@@ -30,7 +30,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             enableSystem
             disableTransitionOnChange
           >
-            <div className="flex flex-col min-h-screen">
+            <div className="flex flex-col h-full">
               <Header />
               <main className="container flex flex-col flex-1 py-5">
                 {children}

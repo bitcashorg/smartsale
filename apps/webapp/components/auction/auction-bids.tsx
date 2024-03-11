@@ -137,67 +137,70 @@ export function AuctionBids({ project }: AuctionBidsProps) {
   }, [tanstack, errorMessage, setGlobalError])
 
   return (
-    <div className="grid md:grid-cols-2 gap-5 md:gap-10">
-      <Table>
-        <TableHeader>
-          <TableRow>
-            <TableHead className="bg-gray-100 dark:bg-slate-950 text-black dark:text-white font-semibold">Max Price</TableHead>
-            <TableHead className="bg-gray-100 dark:bg-slate-950 text-black dark:text-white font-semibold">Bid Amount</TableHead>
-          </TableRow>
-        </TableHeader>
-        <TableBody>
-          {bidInputs.map((_, index) => (
-            <TableRow key={index}>
-              <TableCell className={cn({ 'bg-gray-100 dark:bg-gray-900/50': index % 2 })}>
-                <CurrencyInput
-                  placeholder="0.00"
-                  name={`maxPrice${index}`}
-                  handlechange={val =>
-                    handleInputChange(index, 'maxPrice', val)
-                  }
-                />
-              </TableCell>
-              <TableCell className={cn({ 'bg-gray-100 dark:bg-gray-900/50': index % 2 })}>
-                <CurrencyInput
-                  placeholder="0.00"
-                  name={`bidAmount${index}`}
-                  handlechange={val =>
-                    handleInputChange(index, 'bidAmount', val)
-                  }
-                />
-              </TableCell>
+    <>
+      <h2 className="text-3xl font-bold px-2 py-4 mb-3">Bids</h2>
+      <div className="grid md:grid-cols-2 gap-5 md:gap-10">
+        <Table>
+          <TableHeader>
+            <TableRow>
+              <TableHead className="bg-gray-100 dark:bg-slate-950 text-black dark:text-white font-semibold">Max Price</TableHead>
+              <TableHead className="bg-gray-100 dark:bg-slate-950 text-black dark:text-white font-semibold">Bid Amount</TableHead>
             </TableRow>
-          ))}
-        </TableBody>
-      </Table>
+          </TableHeader>
+          <TableBody>
+            {bidInputs.map((_, index) => (
+              <TableRow key={index}>
+                <TableCell className={cn({ 'bg-gray-100 dark:bg-gray-900/50': index % 2 })}>
+                  <CurrencyInput
+                    placeholder="0.00"
+                    name={`maxPrice${index}`}
+                    handlechange={val =>
+                      handleInputChange(index, 'maxPrice', val)
+                    }
+                  />
+                </TableCell>
+                <TableCell className={cn({ 'bg-gray-100 dark:bg-gray-900/50': index % 2 })}>
+                  <CurrencyInput
+                    placeholder="0.00"
+                    name={`bidAmount${index}`}
+                    handlechange={val =>
+                      handleInputChange(index, 'bidAmount', val)
+                    }
+                  />
+                </TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
 
-      <div className="flex flex-col px-5">
-        <Button
-          disabled={!address || bidInputs.some(item => item.errorMessage !== '')}
-          onClick={() => handleSubmit()}
-          type="submit"
-          size="lg"
-        >
-          Submit Bids
-        </Button>
+        <div className="flex flex-col justify-between px-5">
+          <Button
+            disabled={!address || bidInputs.some(item => item.errorMessage !== '')}
+            onClick={() => handleSubmit()}
+            type="submit"
+            size="lg"
+          >
+            Submit Bids
+          </Button>
 
-        <div className="mt-4">
-          <p className="flex justify-between w-full">
-            {textValues.currentBid.split(':').map((txt, index) => !index ? (
-              <b key={txt} className="block">{txt}</b>
-            ) : txt)}
-          </p>
-          <p className="flex justify-between w-full">
-            {textValues.currentCost.split(':').map((txt, index) => !index ? (
-              <b key={txt} className="block">{txt}</b>
-            ) : txt)}
-          </p>
-          <p className="mt-2 text-sm text-right">
-            {textValues.maxTokenLimit}
-          </p>
+          <div className="flex flex-col gap-2">
+            <p className="flex justify-between w-full">
+              {textValues.currentBid.split(':').map((txt, index) => !index ? (
+                <b key={txt} className="block">{txt}</b>
+              ) : txt)}
+            </p>
+            <p className="flex justify-between w-full">
+              {textValues.currentCost.split(':').map((txt, index) => !index ? (
+                <b key={txt} className="block">{txt}</b>
+              ) : txt)}
+            </p>
+            <p className="mt-2 text-sm text-right">
+              {textValues.maxTokenLimit}
+            </p>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 

@@ -29,7 +29,7 @@ export function Header({
 
   React.useEffect(() => {
     const handleClick = (e: MouseEvent) => {
-      if (headerRef.current && !headerRef.current.contains(e.target as Node)) {
+      if (headerRef.current && (e.target as Node).contains(headerRef.current)) {
         setActiveMenu('');
       }
     };
@@ -84,13 +84,13 @@ export function Header({
           <div className="container flex items-center justify-between h-16 px-4">
 
             <div className="flex items-center">
-              <HeaderLink href="/" text="home" mobileOnly />
-              <HeaderLink href="/" text="Bitcash Launchpad" desktopOnly />
-              <IconSeparator className="size-6 text-muted-foreground/50" />
-              <HeaderLink href="/wallet" text="wallet" />
+              <HeaderLink href="/" text="home" onClick={() => setActiveMenu('')} mobileOnly />
+              <HeaderLink href="/" text="Bitcash Launchpad" onClick={() => setActiveMenu('')} desktopOnly />
+              <IconSeparator className="size-3 md:size-6 text-muted-foreground/50" />
+              <HeaderLink href="/wallet" text="wallet" onClick={() => setActiveMenu('')} />
               <MenuItem active={activeMenu} setActive={setActiveMenu} item="about">
-                <HeaderLink href="/how-it-works" text="how it works" />
-                <HeaderLink href="/security" text="security tips" />
+                <HeaderLink href="/how-it-works" text="how it works" onClick={() => setActiveMenu('')} />
+                <HeaderLink href="/security" text="security tips" onClick={() => setActiveMenu('')} />
               </MenuItem>
               {/* <HeaderLink href="https://bitcash-faucet.vercel.app/" text="usdcred faucet" />
               <HeaderLink href="https://faucet.testnet.evm.eosnetwork.com/" text="eos faucet" /> */}
@@ -111,7 +111,11 @@ export function Header({
 
 function HeaderLink({ text, desktopOnly, mobileOnly, ...props }: HeaderLinkProps) {
   return (
-    <Button variant="link" asChild className={cn('-ml-2', { 'hidden md:block': desktopOnly, 'block md:hidden': mobileOnly })}>
+    <Button
+      asChild
+      className={cn('-ml-2', { 'hidden md:block': desktopOnly, 'block md:hidden': mobileOnly })}
+      variant="link"
+    >
       <Link shallow={true} {...props}>
         {text}
       </Link>
@@ -131,14 +135,15 @@ function MenuItem({
   children?: React.ReactNode;
 }) {
   return (
-    <div onMouseEnter={() => setActive(item)} className="relative">
-      <motion.p
+    <div className="relative">
+      <motion.button
         transition={{ duration: 0.3 }}
-        className="cursor-pointer text-black hover:opacity-[0.9] dark:text-white"
+        className="cursor-pointer text-sm md:text-md whitespace-nowrap text-black hover:opacity-[0.9] dark:text-white"
         onClick={() => setActive(active === item ? '' : item)}
+        layout
       >
         {item}{' '}{active === item ? '-' : '+'}
-      </motion.p>
+      </motion.button>
       {active !== null && (
         <motion.div
           initial={{ opacity: 0, scale: 0.85, y: 10 }}

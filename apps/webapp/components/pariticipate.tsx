@@ -31,11 +31,13 @@ export default function Participate() {
   const [showStepsInfo, setShowStepsInfo] = React.useState(false)
 
   return (
-    <section className="pt-12 pb-10">
-      <div className="flex flex-col items-center justify-center mb-16 text-center">
-        <h2 className="mb-4 text-4xl !sm:text-5xl !md:text-6xl !font-black lg:max-w-[90%] xl:max-w-[66%]">
+    <section className="pt-20 pb-10">
+      <div className="flex flex-col min-h-[25vh] items-center justify-start mb-6 text-center">
+        <h2 className="mb-4 lg:max-w-[90%] xl:max-w-[66%]">
           <TypewriterEffect
             words={textContent.title.split(' ').map(word => ({ text: word, className: word.toLowerCase().match(/(bitcash|launchpad.)/g) ? 'text-blue-500 dark:text-blue-500' : undefined }))}
+            className="text-4xl sm:text-5xl md:text-6xl !font-black"
+            cursorClassName='h-6 md:h-10'
             onAnimationEnd={() => {
               setShowStepsInfo(true)
             }}
@@ -57,7 +59,7 @@ export default function Participate() {
         </AnimatePresence>
       </div>
 
-      <div className="container flex flex-col md:flex-row md:justify-between md:items-start">
+      <div className="container min-h-[320px] flex flex-col md:flex-row md:justify-between md:items-center">
         {textContent.steps.map((step, index) => (
           <div
             key={index}
