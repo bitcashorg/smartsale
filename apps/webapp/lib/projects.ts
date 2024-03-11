@@ -1,4 +1,4 @@
-import { ERC20ContractData, TestnetMBOTSPL } from 'smartsale-contracts'
+import { TokenContractData, TestnetMBOTSPL } from 'smartsale-contracts'
 
 export const projects: Project[] = [
   {
@@ -11,7 +11,7 @@ export const projects: Project[] = [
     heroImage: '/images/projects/masterbots.png',
     badgeText: 'PRE-SALE ACTIVE',
     linkPath: '/masterbots',
-    auctionId: 8,
+    auctionId: 9,
     token: TestnetMBOTSPL,
     presaleOpen: true
   },
@@ -26,7 +26,7 @@ export const projects: Project[] = [
     badgeText: 'REGISTRATION OPEN',
     linkPath: '/wizartworld',
     token: TestnetMBOTSPL,
-    auctionId: 8,
+    auctionId: 9,
     registrationOpen: true
   },
   {
@@ -40,7 +40,7 @@ export const projects: Project[] = [
     badgeText: 'AUCTION CLOSED',
     linkPath: '/bitcash',
     token: TestnetMBOTSPL,
-    auctionId: 8,
+    auctionId: 9,
     auctionClosed: true
   }
 ]
@@ -56,7 +56,7 @@ export interface Project {
   badgeText: string
   linkPath: string
   auctionId?: number
-  token?: ERC20ContractData
+  token?: TokenContractData
   presaleOpen?: boolean
   registrationOpen?: boolean
   auctionClosed?: boolean

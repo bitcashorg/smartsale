@@ -7,7 +7,7 @@ WORKDIR /app
 # Copy the package.json files for the workspaces
 COPY package.json .
 COPY apps/indexer/package.json ./apps/indexer/package.json
-COPY packages/smartsale-chains/package.json ./packages/smartsale-chains/package.json
+COPY packages/smartsale-env/package.json ./packages/smartsale-env/package.json
 COPY packages/smartsale-contracts/package.json ./packages/smartsale-contracts/package.json
 COPY packages/smartsale-lib/package.json ./packages/smartsale-lib/package.json
 COPY packages/smartsale-db/package.json ./packages/smartsale-db/package.json

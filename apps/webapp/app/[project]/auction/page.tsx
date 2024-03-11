@@ -1,8 +1,8 @@
 import { AuctionBids } from '@/components/auction/auction-bids'
 import { AuctionInfo } from '@/components/auction/auction-info'
 import { AuctionOrders } from '@/components/auction/auction-orders'
+import { ClaimTokens } from '@/components/auction/claim-tokens'
 import { Countdown } from '@/components/auction/countdown'
-import { RedeemTokens } from '@/components/auction/redeem-tokens'
 import { RegisterAddress } from '@/components/auction/register-address'
 import { Tabs } from '@/components/ui/tabs'
 import { ProjectWithAuction, projects } from '@/lib/projects'
@@ -33,7 +33,7 @@ export default function AuctionPage({
         <div className={auctionPageClassNames.tabCard}>
           <React.Suspense fallback={<div>Loading ...</div>}>
             {isAuctionClosed ? (
-              <RedeemTokens />
+              <ClaimTokens />
             ) : project.registrationOpen ? (
               <RegisterAddress projectId={project.id} />
             ) : (

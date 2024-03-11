@@ -91,3 +91,11 @@ model whitelist {
 
   @@id([address, project_id, account])
 }
+
+model esr {
+  id         String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  created_at DateTime @default(now()) @db.Timestamptz(6)
+  code       String?
+  trx_id     String?
+  account    String?
+}

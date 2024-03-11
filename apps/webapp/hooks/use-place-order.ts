@@ -13,16 +13,16 @@ export function useDepositAndPlaceOrder() {
     prevSellOrders, // bytes32[] memory _prevSellOrders,
     allowListCallData // bytes calldata allowListCallData
   }: DepositAndPlaceOrderParams) => {
-    console.log(
-      'placing order....',
-      JSON.stringify([
-        auctionId,
-        minBuyAmounts,
-        sellAmounts,
-        prevSellOrders,
-        allowListCallData
-      ])
-    )
+    // console.log(
+    //   'placing order....',
+    //   JSON.stringify([
+    //     auctionId,
+    //     minBuyAmounts,
+    //     sellAmounts,
+    //     prevSellOrders,
+    //     allowListCallData
+    //   ])
+    // )
 
     writeContract({
       ...TestnetEasyAuction, // Ensure this contains the correct ABI and contract address

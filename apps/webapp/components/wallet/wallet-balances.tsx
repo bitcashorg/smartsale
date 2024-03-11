@@ -9,19 +9,29 @@ import {
   TableRow
 } from '@/components/ui/table'
 import { useErc20Balance, useNativeBalance } from '@/hooks/use-balance'
-import { eosEvmTestnet } from 'smartsale-chains'
-import { TestnetUSDCred } from 'smartsale-contracts'
+import { useEosBalances } from '@/hooks/use-eos-balances'
+
+import { TestnetMBOTSPL, TestnetUSDCred } from 'smartsale-contracts'
 import { useAccount } from 'wagmi'
 
 export function WalletBalances() {
   const { address } = useAccount()
-  console.log('address', address)
+  const eosBalances = useEosBalances()
+
   const usdCredBalance = useErc20Balance({
     contract: TestnetUSDCred.address,
     abi: TestnetUSDCred.abi,
     address: address || '0x',
-    chainId: TestnetUSDCred.chainId || eosEvmTestnet.id
+    chainId: TestnetUSDCred.chainId
   })
+
+  const usdMbotsplBalance = useErc20Balance({
+    contract: TestnetMBOTSPL.address,
+    abi: TestnetMBOTSPL.abi,
+    address: address || '0x',
+    chainId: TestnetMBOTSPL.chainId
+  })
+
   const eosEvmBalance = useNativeBalance(address)
 
   const coins = [
@@ -39,25 +49,25 @@ export function WalletBalances() {
     },
     {
       coin: 'MBOTSPL',
-      totalAmount: '0',
+      totalAmount: `${usdMbotsplBalance.formatted || 0}`,
       nertwork: 'EOS EVM',
       description: 'Auctioning Prelaunch Token'
     },
     {
       coin: 'BITUSD',
-      totalAmount: '0',
+      totalAmount: eosBalances.bitusd,
       nertwork: 'EOS Mainnet',
       description: 'Bitcash USD stable coin'
     },
     {
       coin: 'MBOTS',
-      totalAmount: '0',
+      totalAmount: eosBalances.mbots,
       nertwork: 'EOS Mainnet',
       description: 'MBOTS Token'
     },
     {
       coin: 'EOS (gas)',
-      totalAmount: '0',
+      totalAmount: eosBalances.eos,
       nertwork: 'EOS Mainnet',
       description: 'Native EOS token'
     }

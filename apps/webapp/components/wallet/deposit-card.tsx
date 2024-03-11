@@ -9,65 +9,72 @@ import {
   SelectTrigger,
   SelectValue
 } from '@/components/ui/select'
-import { useSession } from '@/hooks/use-session'
-import { useState } from 'react'
-import { smartsaleChains } from 'smartsale-chains'
 import {
-  ERC20ContractData,
-  SepoliaUSDT,
-  TestnetUSDT
+  genBitusdDepositSigningRequest,
+  genUsdtDepositSigningRequest
+} from '@/lib/eos'
+import { useState } from 'react'
+import {
+  EVMTokenContractData,
+  TestnetUSDT,
+  TokenContractData
 } from 'smartsale-contracts'
+import { smartsaleEnv } from 'smartsale-env'
 import { parseUnits } from 'viem'
 import { useAccount, useSwitchChain, useWriteContract } from 'wagmi'
+import { useSignatureRequest } from '../esr-dialog'
 import { Input } from '../ui/input'
 
-const tokens = [SepoliaUSDT, TestnetUSDT]
+const usdtMap = new Map<string, TokenContractData>()
+smartsaleEnv.test.usdt.forEach(t => {
+  const key = JSON.stringify(t)
+  return usdtMap.set(key, t)
+})
 
 export function DepositCard() {
-  const { session } = useSession()
   const { address } = useAccount()
   const { writeContract, ...other } = useWriteContract()
-  const [amount, setAmount] = useState<number>(50)
+  const [amount, setAmount] = useState<number>(42)
   const { switchChain } = useSwitchChain()
-  const [token, setToken] = useState<ERC20ContractData>(TestnetUSDT)
+  const [token, setToken] = useState<TokenContractData>(TestnetUSDT)
+  const { requestSignature } = useSignatureRequest()
 
-  console.log(session?.account)
-
-  const deposit = () => {
-    console.log({ amount, address })
+  const deposit = async () => {
     if (!amount || !address) return
+    // console.log('deposit', token)
 
-    switchChain({ chainId: token.chainId })
-    console.log('deposit', {
-      chainId: token.chainId,
-      address: token.address,
-      args: [
-        '0x2C9DAAb3F463d6c6D248aCbeaAEe98687936374a', // dev only
-        parseUnits(amount.toString(), token.decimals)
-      ]
-    })
-    writeContract({
-      abi: token.abi,
-      address: token.address,
-      functionName: 'transfer',
-      args: [
-        '0x2C9DAAb3F463d6c6D248aCbeaAEe98687936374a', // dev only
-        parseUnits(amount.toString(), token.decimals)
-      ],
-      chainId: token.chainId
-    })
+    if (token.chainType === 'evm') {
+      const evmToken = token as EVMTokenContractData
+      switchChain({ chainId: evmToken.chainId })
+      writeContract({
+        abi: evmToken.abi,
+        address: evmToken.address,
+        functionName: 'transfer',
+        args: [
+          '0x2C9DAAb3F463d6c6D248aCbeaAEe98687936374a', // dev only
+          parseUnits(amount.toString(), evmToken.decimals)
+        ],
+        chainId: evmToken.chainId
+      })
+    } else {
+      // handle eos token bitusd and usdt
+      const esr =
+        token.symbol === 'USDT'
+          ? await genUsdtDepositSigningRequest(amount, address)
+          : await genBitusdDepositSigningRequest(amount, address)
+      requestSignature(esr)
+    }
   }
 
-  console.log(other)
   return (
     <Card className="w-full dark:bg-[#1a1a1a] bg-gray-200 rounded-xl p-4">
       <CardContent>
         <div className="flex flex-col space-y-4">
           <label htmlFor="deposit" className="text-sm">
-            Deposit USDT
+            Convert to USDCred
           </label>
           <div className="flex items-center justify-between">
-            <div className="flex flex-col min-w-[50%]">
+            <div className="flex flex-col min-w-[40%]">
               <span className="text-2xl font-semibold">
                 <Input
                   type="number"
@@ -77,27 +84,30 @@ export function DepositCard() {
                   value={amount}
                   onChange={e => setAmount(parseInt(e.target.value))}
                 />
-              </span>
+              </span>-
             </div>
-            <Select onValueChange={i => setToken(tokens[parseInt(i)])}>
+            <Select onValueChange={chainId => setToken(usdtMap.get(chainId)!)}>
               <SelectTrigger id="currency-out">
                 <SelectValue
-                  placeholder={
-                    smartsaleChains.testnet.get(tokens[0].chainId)?.name
-                  }
+                  placeholder={`${token.symbol} on ${token.chainName}`}
                 />
               </SelectTrigger>
               <SelectContent position="popper">
-                {tokens.map((o, i) => (
-                  <SelectItem key={i} value={i.toString()}>
-                    {smartsaleChains.testnet.get(o.chainId)?.name}
-                  </SelectItem>
-                ))}
+                {Array.from(usdtMap.values()).map(t => {
+                  const key = JSON.stringify(t)
+                  const usdt = usdtMap.get(key)
+
+                  return (
+                    <SelectItem key={key} value={key}>
+                      {usdt?.symbol} on {usdt?.chainName}
+                    </SelectItem>
+                  )
+                })}
               </SelectContent>
             </Select>
           </div>
-        </div>
-      </CardContent>
+        </div >
+      </CardContent >
       <CardFooter className="flex flex-col space-y-2">
         <Button
           className="w-full bg-[#bd1e59]"
@@ -107,6 +117,6 @@ export function DepositCard() {
           Deposit
         </Button>
       </CardFooter>
-    </Card>
+    </Card >
   )
 }

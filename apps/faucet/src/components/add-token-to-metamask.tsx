@@ -1,9 +1,9 @@
-import { ERC20ContractData } from "smartsale-contracts";
+import { EVMTokenContractData } from "smartsale-contracts";
 import { useSwitchChain } from "wagmi";
 import { Button } from "./ui/button";
 
 
-export function AddTokenToWallet({ address, symbol, decimals, image, name, chainId }: ERC20ContractData){
+export function AddTokenToWallet({ address, symbol, decimals, image, name, chainId }: EVMTokenContractData){
     const {  switchChain } = useSwitchChain()
   // console.log({ address, symbol, decimals, image, name })
   const addTokenToMetaMask = async () => {

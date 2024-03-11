@@ -33,22 +33,21 @@ export function RegisterAddress({ projectId }: { projectId: number }) {
     }
   }
 
+  const fetchData = async () => {
+    const { data, error } = await supabase
+      .from('whitelist')
+      .select()
+      .eq('project_id', projectId)
+      .eq('address', address)
+
+    if (error) console.error('error', error)
+
+    if (data && data.length > 0) setIsRegistered(true)
+  }
+
   useEffect(() => {
-    const fetchData = async () => {
-      console.log('fetch data', { projectId, address })
-      const { data, error } = await supabase
-        .from('whitelist')
-        .select()
-        .eq('project_id', projectId)
-        .eq('address', address)
-
-      if (error) console.error('error', error)
-
-      if (data && data.length > 0) setIsRegistered(true)
-    }
-
     fetchData()
-  }, [])
+  })
 
   return (
     <div className="w-full h-full flex items-center justify-center flex-col gap-6 p-4">

@@ -1,10 +1,10 @@
 import { numberWithCommas } from '@/lib/utils'
 import { useEffect } from 'react'
-import { eosEvmTestnet } from 'smartsale-chains'
-import { Abi, Address, formatUnits, stringify, parseAbi } from 'viem'
+import { Abi, Address, formatUnits } from 'viem'
 import { useBalance, useReadContracts } from 'wagmi'
-import { readContract, watchBlockNumber } from '@wagmi/core'
+import { watchBlockNumber } from '@wagmi/core'
 import { wagmiConfig } from '@/components/providers'
+import { eosEvmTestnet } from 'smartsale-env'
 
 export function useNativeBalance(address?: Address) {
   const balance = useBalance({ address, chainId: eosEvmTestnet.id })

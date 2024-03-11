@@ -9,39 +9,32 @@ import {
   SelectTrigger,
   SelectValue
 } from '@/components/ui/select'
-import { useSession } from '@/hooks/use-session'
 import { useState } from 'react'
-import { eosEvmTestnet } from 'smartsale-chains'
-import { SepoliaUSDT } from 'smartsale-contracts'
+import { TestnetUSDCred } from 'smartsale-contracts'
+import { parseUnits } from 'viem'
 import { useAccount, useSwitchChain, useWriteContract } from 'wagmi'
 import { Input } from '../ui/input'
 
 export function WithdrawCard() {
-  const { session } = useSession()
   const { address } = useAccount()
   const { writeContract, ...other } = useWriteContract()
   const [amount, setAmount] = useState<number>(50)
   const { switchChain } = useSwitchChain()
 
-  console.log(session?.account)
-
   const withdraw = () => {
-    console.log({ amount, address })
     if (!amount || !address) return
-    console.log('withdraw')
 
-    switchChain({ chainId: SepoliaUSDT.chainId || eosEvmTestnet.id })
-    // writeContract({
-    //   abi: SepoliaUSDT.abi,
-    //   address: SepoliaUSDT.address,
-    //   functionName: 'burn',
-    //   args: [
-    //     '0xA0Cf798816D4b9b9866b5330EEa46a18382f251e', // dev only
-    //     parseUnits(amount.toString(), SepoliaUSDT.decimals)
-    //   ],
-    //   chainId: sepolia.id
-    // })
+    switchChain({ chainId: TestnetUSDCred.chainId })
+    writeContract({
+      abi: TestnetUSDCred.abi,
+      address: TestnetUSDCred.address,
+      functionName: 'burn',
+      args: [parseUnits(amount.toString(), TestnetUSDCred.decimals)],
+      chainId: TestnetUSDCred.chainId
+    })
   }
+
+  // console.log('burn tokens state', other)
 
   return (
     <Card className="w-full dark:bg-[#1a1a1a] bg-gray-200 rounded-xl p-4">
@@ -51,7 +44,7 @@ export function WithdrawCard() {
             Convert to BITUSD
           </label>
           <div className="flex items-center justify-between">
-            <div className="flex flex-col min-w-[50%]">
+            <div className="flex flex-col min-w-[40%]">
               <span className="text-2xl font-semibold">
                 <Input
                   type="number"

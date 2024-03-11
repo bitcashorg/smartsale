@@ -2,10 +2,9 @@
   "name": "smartsale-solidity-tokens",
   "version": "1.0.0",
   "scripts": {
-    "deployUSDCredOwnable": "hardhat run scripts/deployUSDCredWithFaucetOwnable.js --network eosevm_testnet",
     "deployUSDCredTestnet": "hardhat run scripts/deployUSDCredWithFaucet.js --network eosevm_testnet",
     "deployUSDCredMainnet": " hardhat run scripts/deployUSDCred.js --network eosevm_mainnet",
-    "deployMBOTSPLTestnet": " hardhat run scripts/deployMBOTSPL.js --network eosevm_testnet",
+    "deployMBOTSPLTestnet": " hardhat run scripts/deployMBOTSPLWithFaucet.js --network eosevm_testnet",
     "deployUSDTSepolia": " hardhat run scripts/deployUSDTWithFaucet.js --network sepolia",
     "deployUSDTTestnet": " hardhat run scripts/deployUSDTWithFaucet.js --network eosevm_testnet"
   },

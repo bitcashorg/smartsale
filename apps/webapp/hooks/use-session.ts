@@ -1,4 +1,4 @@
-import { genLoginSigningRequest } from '@/lib/esr'
+import { genLoginSigningRequest } from '@/lib/eos'
 import { supabase } from '@/lib/supabase'
 import { useEffect, useState } from 'react'
 import { useAsync, useLocalStorage } from 'react-use'
@@ -24,13 +24,6 @@ export function useSessionFn() {
         'postgres_changes',
         { event: 'INSERT', schema: 'public', table: 'session' },
         payload => {
-          console.log(
-            'new session',
-            payload.new,
-            payload.new.id !== newSessionId,
-            payload.new.id,
-            newSessionId
-          )
           if (session || payload.new.id !== newSessionId) return
           // set new session if ids match
           setSession(payload.new as session)

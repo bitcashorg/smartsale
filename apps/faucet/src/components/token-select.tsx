@@ -8,7 +8,7 @@ import {
   SelectValue,
 } from "@/components/ui/select"
 import { SelectProps } from "@radix-ui/react-select"
-import { ERC20ContractData } from "smartsale-contracts"
+import { TokenContractData } from "smartsale-contracts"
 
 export function TokenSelect({options, ...props}:TokenSelectParams) {
   return (
@@ -27,5 +27,5 @@ export function TokenSelect({options, ...props}:TokenSelectParams) {
 }
 
 interface TokenSelectParams extends SelectProps {
-  options: ERC20ContractData[]
+  options: TokenContractData[]
 }

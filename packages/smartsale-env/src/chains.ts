@@ -19,22 +19,19 @@ export const eosEvmTestnet: Chain = {
   testnet: true,
 } as const
 
-export const smartsaleChainsTestnet = [eosEvmTestnet, sepolia]
-export const smartsaleChainsMainnet = []
+const prodChains: Chain[] = [eosEvmTestnet, sepolia]
+const testChains: Chain[] = []
 
+// note: use .entries() to get an array
 export const smartsaleChains ={
-  testnet : createMapFromId(smartsaleChainsTestnet),
-  mainnet : createMapFromId(smartsaleChainsMainnet),
+  test : createMapFromId(prodChains),
+  prod : createMapFromId(testChains),
 } as const
 
-
-
 function createMapFromId(items: Chain[]): Map<number, Chain> {
-    const mapFromId = new Map<number, Chain>();
+  const mapFromId = new Map<number, Chain>();
 
-    items.forEach(item => {
-        mapFromId.set(item.id, item);
-    });
+  items.forEach(item => mapFromId.set(item.id, item))
 
-    return mapFromId;
+  return mapFromId;
 }

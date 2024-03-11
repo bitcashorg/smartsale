@@ -7,6 +7,7 @@ const port = 8080
 import { startIndexer } from './indexer'
 import { client } from './viem-client'
 import { startIssuer } from './issuer'
+import { listenToEos } from './dfuse'
 
 async function getCurrentBlockHeight() {
   try {
@@ -20,8 +21,9 @@ async function getCurrentBlockHeight() {
 
 async function main() {
   console.log('indexer operational')
-  startIndexer()
-  startIssuer()
+  listenToEos()
+  // startIndexer()
+  // startIssuer()
 
   app.get('/', async (_req, res) => {
     try {

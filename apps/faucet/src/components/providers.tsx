@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 
 import { WagmiProvider, } from 'wagmi';
-import { eosEvmTestnet } from 'smartsale-chains'
+import { eosEvmTestnet } from 'smartsale-env'
 
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { getDefaultConfig, RainbowKitProvider } from '@rainbow-me/rainbowkit'

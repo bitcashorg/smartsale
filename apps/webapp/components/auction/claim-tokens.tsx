@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button'
 import { useSession } from '@/hooks/use-session'
 import { useAccount } from 'wagmi'
 
-export function RedeemTokens() {
+export function ClaimTokens() {
   const { session } = useSession()
   const { address } = useAccount()
   return (
@@ -18,7 +18,7 @@ export function RedeemTokens() {
           disabled={!session || !address}
           size="lg"
         >
-          Redeem
+          Claim
         </Button>
       </div>
     </div>

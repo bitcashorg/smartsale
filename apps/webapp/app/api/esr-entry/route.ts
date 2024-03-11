@@ -1,8 +1,6 @@
-import { esrOptions } from '@/lib/eos'
 import { APIClient } from '@wharfkit/antelope'
 import {
   AbiProvider,
-  CallbackPayload,
   SigningRequest,
   SigningRequestEncodingOptions,
   ZlibProvider
@@ -10,6 +8,7 @@ import {
 import { NextRequest } from 'next/server'
 import { db } from 'smartsale-db'
 import { deflateRawSync, inflateRawSync } from 'zlib'
+import { z } from 'zod'
 
 const eos = new APIClient({
   url: 'https://eos.greymass.com'
@@ -28,44 +27,37 @@ const esrNodeJSOptions: SigningRequestEncodingOptions = {
   } as ZlibProvider
 }
 
+const requestBodySchema = z.object({
+  code: z.string(),
+  account: z.string()
+})
+
 export async function POST(req: NextRequest) {
   try {
-    const body = (await req.json()) as CallbackPayload
-    const esr = SigningRequest.from(body.req, esrNodeJSOptions)
-    const id = esr.getInfoKey('uuid')
-    const action = esr.getRawActions()[0].name.toString()
+    const rawData = await req.json()
+    const { code, account } = requestBodySchema.parse(rawData)
 
-    console.log(id, action, esr, body) // Log the body to the console
-    // TODO: validate tx is on blockchain
+    const decoded = SigningRequest.from(code, esrNodeJSOptions)
+    const id = decoded.getInfoKey('uuid')
 
-    // open up session if l
-    if (action === 'login') {
-      await db.session.create({
-        data: {
-          id,
-          tx: body.tx,
-          account: body.sa
-        }
-      })
-    }
-    // update esr entry with trx_id
-    await db.esr.update({
-      where: {
-        id
-      },
+    const entry = await db.esr.create({
       data: {
-        trx_id: body.tx
+        id,
+        code,
+        account
       }
     })
+    console.log('esr entry', entry)
 
     return Response.json({
       success: true,
-      message: 'Successfully received esr callback'
+      data: entry,
+      message: 'Registered new signature request'
     })
   } catch (error) {
     console.log(error)
     return Response.json({
-      message: 'Could not parse the request body'
+      error: 'Something went wrong'
     })
   }
 }
