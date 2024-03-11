@@ -1,5 +1,5 @@
 # Start from the bun base image
-FROM oven/bun:latest
+FROM nodejs:latest
 
 # Set the working directory
 WORKDIR /app
@@ -18,6 +18,7 @@ COPY bun.lockb .
 
 # Install dependencies for the entire monorepo
 RUN mkdir hardhat
+RUN npm install -g bun 
 RUN bun install
 
 # Copy the specific workspaces
