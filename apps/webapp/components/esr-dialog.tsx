@@ -18,10 +18,9 @@ import { useMutation } from '@tanstack/react-query'
 import axios from 'axios'
 import { SigningRequest } from 'eosio-signing-request'
 import Link from 'next/link'
-import { ReactNode, useEffect } from 'react'
+import { ReactNode } from 'react'
 import QRCode from 'react-qr-code'
 import { useSetState } from 'react-use'
-import { undefined } from 'zod'
 
 interface SignatureRequestState {
   open: boolean
@@ -83,6 +82,8 @@ function useSignatureRequestFn() {
   })
 
   const toggleOpen = () => setState(({ open }) => ({ open: !open }))
+
+  console.log('esr-dialog state', state)
 
   return { toggleOpen, requestSignature, ...state, ...props }
 }
