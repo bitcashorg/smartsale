@@ -1,4 +1,4 @@
-# Bitcash Launchpad Indexer
+# bitLauncher Indexer
 
 ```bash
 # Copy environment variables. Put your dfuse credentials on it

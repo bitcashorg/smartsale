@@ -78,7 +78,7 @@ export default function HowItWorks() {
       </p>
       <p className={howItWorksClassNames.paragraph}>
         The depositAndPlaceOrder function, typically found in auction or trading
-        platforms like Gnosis or its forks, including Bitcash Launchpad, serves
+        platforms like Gnosis or its forks, including bitLauncher, serves
         a dual purpose within the context of smart contracts, especially when
         interacting with blockchain-based auction systems. Heres a breakdown of
         its functionality

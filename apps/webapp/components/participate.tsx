@@ -39,7 +39,7 @@ export default function Participate() {
               .split(' ')
               .map(word => ({
                 text: word,
-                className: word.toLowerCase().match(/(bitcash|launchpad.)/g)
+                className: word.toLowerCase() === 'bitlauncher'
                   ? 'text-[#1ED761]'
                   : undefined
               }))}
@@ -97,7 +97,7 @@ export default function Participate() {
 }
 
 const textContent = {
-  title: 'Join The AI and Web3 Revolution With Bitcash Launchpad.',
+  title: 'Join The AI and Web3 Revolution With bitLauncher .',
   stepsInfo:
     'Only 3 steps are needed for you to start enjoying all the advantages',
   steps: [

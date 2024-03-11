@@ -84,7 +84,7 @@ export function Header({ className }: { className?: string }) {
           )}
           ref={headerRef}
         >
-          <div className="container flex items-center justify-between h-16 px-4">
+          <div className="container flex items-center justify-between h-16 px-4 max-w-screen-2xl">
             <div className="flex items-center">
               <HeaderLink
                 href="/"
@@ -94,7 +94,7 @@ export function Header({ className }: { className?: string }) {
               />
               <HeaderLink
                 href="/"
-                text="Bitcash Launchpad"
+                text="bitLauncher"
                 onClick={() => setActiveMenu('')}
                 desktopOnly
               />
