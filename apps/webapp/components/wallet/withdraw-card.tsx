@@ -10,16 +10,12 @@ import {
   Select
 } from '@/components/ui/select'
 import { Input } from '../ui/input'
-import { useSession } from '@/hooks/use-session'
 import { useAccount, useSwitchChain, useWriteContract } from 'wagmi'
 import { useState } from 'react'
-import { sepolia } from 'viem/chains'
 import { TestnetUSDCred } from 'smartsale-contracts'
-import { eosEvmTestnet } from 'smartsale-chains'
 import { parseUnits } from 'viem'
 
 export function WithdrawCard() {
-  const { session } = useSession()
   const { address } = useAccount()
   const { writeContract, ...other } = useWriteContract()
   const [amount, setAmount] = useState<number>(50)
@@ -28,7 +24,7 @@ export function WithdrawCard() {
   const withdraw = () => {
     if (!amount || !address) return
 
-    switchChain({ chainId: TestnetUSDCred.chainId || eosEvmTestnet.id })
+    switchChain({ chainId: TestnetUSDCred.chainId })
     writeContract({
       abi: TestnetUSDCred.abi,
       address: TestnetUSDCred.address,
@@ -46,7 +42,7 @@ export function WithdrawCard() {
         <div className="flex flex-col space-y-4">
           <div className="text-sm">Convert to BITUSD</div>
           <div className="flex items-center justify-between">
-            <div className="flex flex-col min-w-[50%]">
+            <div className="flex flex-col min-w-[40%]">
               <span className="text-2xl font-semibold">
                 <Input
                   type="number"

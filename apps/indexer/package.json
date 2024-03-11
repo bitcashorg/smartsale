@@ -25,14 +25,17 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
+    "@dfuse/client": "^0.3.21",
     "@sentry/node": "^7.100.1",
     "bn.js": "^5.2.1",
     "express": "^4.18.2",
     "lodash": "^4.17.21",
-    "smartsale-chains": "workspace:*",
+    "node-fetch": "2.6.4",
+    "smartsale-env": "workspace:*",
     "smartsale-contracts": "workspace:*",
-    "smartsale-lib": "workspace:*",
     "smartsale-db": "workspace:*",
-    "viem": "latest"
+    "smartsale-lib": "workspace:*",
+    "viem": "latest",
+    "ws": "^8.16.0"
   }
 }

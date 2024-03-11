@@ -1,14 +1,15 @@
 {
-  "name": "smartsale-chains",
+  "name": "smartsale-env",
   "version": "0.0.1",
   "private": true,
-  "description": "SmartSale Chain Configs",
+  "description": "SmartSale Environment Configurations",
   "author": "gaboesquivel.com",
   "license": "ISC",
   "main": "./src/index.ts",
   "types": "./src/index.ts",
   "dependencies": {
-    "viem": "latest"
+    "viem": "latest",
+    "smartsale-contracts": "workspace:*"
   },
   "devDependencies": {
     "tsconfig": "workspace:*",

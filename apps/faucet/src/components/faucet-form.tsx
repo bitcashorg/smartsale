@@ -3,10 +3,9 @@ import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { useAccount, useSwitchChain, useWriteContract } from "wagmi"
 import { useEffect, useState } from "react"
-import { ERC20ContractData, SepoliaUSDT, TestnetMBOTSPL, TestnetUSDCred, TestnetUSDT } from 'smartsale-contracts'
+import { EVMTokenContractData, SepoliaUSDT, TestnetMBOTSPL, TestnetUSDCred, TestnetUSDT } from 'smartsale-contracts'
 import { TokenSelect } from "./token-select"
 import { parseUnits } from "viem"
-import { eosEvmTestnet } from "smartsale-chains"
 import { AddTokenToWallet } from "./add-token-to-metamask"
 
 const tokens = [TestnetUSDCred, SepoliaUSDT, TestnetMBOTSPL, TestnetUSDT]
@@ -16,12 +15,12 @@ export function FaucetForm() {
   const [address, setAddress] = useState<string|undefined>(account?.address ? account.address : undefined)
   const [quantity, setQuantity] = useState<string>('100') 
   const { writeContract, isPending, isSuccess, data, ...other } = useWriteContract()
-  const [token,setToken] = useState<ERC20ContractData>(TestnetUSDCred)
+  const [token,setToken] = useState<EVMTokenContractData>(TestnetUSDCred)
   const {  switchChain } = useSwitchChain()
 
   // Execute the contract write operation
   const callFaucet = async () => {
-    const chainId = token.chainId || eosEvmTestnet.id
+    const chainId = token.chainId
     switchChain({chainId})
     
     console.log('callFaucet', JSON.stringify({

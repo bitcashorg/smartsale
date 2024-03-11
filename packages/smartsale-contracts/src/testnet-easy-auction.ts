@@ -1,9 +1,11 @@
-import { ContractData } from "./types";
+import { EVMContractData } from "./types";
 
-export const TestnetEasyAuction : ContractData = {
+export const TestnetEasyAuction : EVMContractData = {
   "address": "0x8d37219725eB0088360f744A5d894035D0f88F82",
   "indexFromBlock": 12239067,
   "chainId": 15557,
+    chainType: 'evm',
+          chainName: 'EOS EVM Tesnet',
   "abi": [
     {
       "inputs": [],
@@ -607,7 +609,7 @@ export const TestnetEasyAuction : ContractData = {
         },
         {
           "internalType": "bytes",
-          "name": "accessManagerContractData",
+          "name": "accessManagerEVMContractData",
           "type": "bytes"
         }
       ],

@@ -1,4 +1,4 @@
-import { ERC20ContractData, SepoliaUSDT, TestnetUSDCred, TestnetUSDT } from 'smartsale-contracts'
+import { EVMTokenContractData, SepoliaUSDT, TestnetUSDCred, TestnetUSDT } from 'smartsale-contracts'
 import { runPromisesInSeries } from './lib'
 import { sepoliaClient } from './viem-client'
 import {
@@ -14,18 +14,18 @@ import {
 import { ApprovalEvent, TransferEvent } from './types'
 import { db } from 'smartsale-db'
 import { sepolia } from 'viem/chains'
-import { eosEvmTestnet, smartsaleChains } from 'smartsale-chains'
+import { eosEvmTestnet, smartsaleChains } from '../../../packages/smartsale-env/src'
 import { appenv } from './config'
 
-const tokens: ERC20ContractData[] = [SepoliaUSDT, TestnetUSDT]
+const tokens: EVMTokenContractData[] = [SepoliaUSDT, TestnetUSDT]
 
 export async function startIssuer() {
   console.log('indexing usdt transfers')
   tokens.map(listenToTransfers)
 }
 
-async function listenToTransfers(token: ERC20ContractData) {
-  const chain = smartsaleChains.testnet.get(token.chainId)
+async function listenToTransfers(token: EVMTokenContractData) {
+  const chain = smartsaleChains.test.get(token.chainId)
   if (!chain) return
   console.log(`listening usdt transfers for token ${token.symbol} on chain ${chain.name}`)
   const client: PublicClient = createPublicClient({
@@ -133,10 +133,9 @@ function handleApproval(log: ApprovalEvent) {
   console.log('handleApproval', log)
 }
 
-async function issueTokens(to: Address, amount: bigint) {
+export async function issueTokens(to: Address, amount: bigint) {
   console.log('issueTokens', {
     args: [to, amount],
-    // account: appenv.evm.issuerAddress,
   })
 
   try {
@@ -149,7 +148,7 @@ async function issueTokens(to: Address, amount: bigint) {
     return walletClient.writeContract({
       address: TestnetUSDCred.address,
       abi: TestnetUSDCred.abi,
-      functionName: 'issue', // 'issue',
+      functionName: 'issue',
       args: [to, amount],
     })
   } catch (error) {

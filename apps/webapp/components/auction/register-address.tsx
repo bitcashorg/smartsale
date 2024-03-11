@@ -34,21 +34,21 @@ export function RegisterAddress({ projectId }: { projectId: number }) {
     }
   }
 
+  const fetchData = async () => {
+    const { data, error } = await supabase
+      .from('whitelist')
+      .select()
+      .eq('project_id', projectId)
+      .eq('address', address)
+
+    if (error) console.error('error', error)
+
+    if (data && data.length > 0) setIsRegistered(true)
+  }
+
   useEffect(() => {
-    const fetchData = async () => {
-      const { data, error } = await supabase
-        .from('whitelist')
-        .select()
-        .eq('project_id', projectId)
-        .eq('address', address)
-
-      if (error) console.error('error', error)
-
-      if (data && data.length > 0) setIsRegistered(true)
-    }
-
     fetchData()
-  }, [])
+  })
 
   return (
     <Card className="w-full bg-[#1a1a1a] rounded-xl p-4 text-white">

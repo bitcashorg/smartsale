@@ -6,9 +6,8 @@ import { AuctionInfo } from '@/components/auction/auction-info'
 import { AuctionBids } from '@/components/auction/auction-bids'
 import { AuctionOrders } from '@/components/auction/auction-orders'
 import Image from 'next/image'
-import { AuctionDebug } from '@/components/auction/auction-debug'
 import { RegisterAddress } from '@/components/auction/register-address'
-import { RedeemTokens } from '@/components/auction/redeem-tokens'
+import { ClaimTokens } from '@/components/auction/claim-tokens'
 
 export default function AuctionPage({
   params
@@ -45,7 +44,7 @@ export default function AuctionPage({
             <div className="w-full md:w-1/3">
               <React.Suspense fallback={<div>Loading ...</div>}>
                 {isAuctionClosed ? (
-                  <RedeemTokens />
+                  <ClaimTokens />
                 ) : project.registrationOpen ? (
                   <RegisterAddress projectId={project.id} />
                 ) : (
@@ -62,11 +61,6 @@ export default function AuctionPage({
           ) : null}
         </div>
       </div>
-      {/* {project.auctionId && !isAuctionClosed ? (
-        <React.Suspense fallback={<div>Loading ...</div>}>
-          <AuctionDebug auctionId={project.auctionId} />
-        </React.Suspense>
-      ) : null} */}
     </>
   )
 }

@@ -10,7 +10,7 @@ import {
 } from '@/components/ui/table'
 import { useErc20Balance, useNativeBalance } from '@/hooks/use-balance'
 import { useEosBalances } from '@/hooks/use-eos-balances'
-import { eosEvmTestnet } from 'smartsale-chains'
+
 import { TestnetMBOTSPL, TestnetUSDCred } from 'smartsale-contracts'
 import { useAccount } from 'wagmi'
 
@@ -22,14 +22,14 @@ export function WalletBalances() {
     contract: TestnetUSDCred.address,
     abi: TestnetUSDCred.abi,
     address: address || '0x',
-    chainId: TestnetUSDCred.chainId || eosEvmTestnet.id
+    chainId: TestnetUSDCred.chainId
   })
 
   const usdMbotsplBalance = useErc20Balance({
     contract: TestnetMBOTSPL.address,
     abi: TestnetMBOTSPL.abi,
     address: address || '0x',
-    chainId: TestnetMBOTSPL.chainId || eosEvmTestnet.id
+    chainId: TestnetMBOTSPL.chainId
   })
 
   const eosEvmBalance = useNativeBalance(address)

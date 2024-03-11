@@ -1,12 +1,14 @@
-import { ERC20ContractData } from "./types";
+import { EVMTokenContractData } from "./types";
 
-export const SepoliaUSDT : ERC20ContractData = {
+export const SepoliaUSDT : EVMTokenContractData = {
   address: '0x5b148580635e8b67184bcb496741e423f2c326bf',
   name: 'USDT Token',
   symbol: 'USDT',
   decimals: 6,
   indexFromBlock: 5394842,
   chainId: 11155111, // sepolia
+  chainType: 'evm',
+  chainName: 'Sepolia',
   abi: [
     {
       "inputs": [

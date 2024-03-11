@@ -10,50 +10,72 @@ import {
   Select
 } from '@/components/ui/select'
 import { Input } from '../ui/input'
-import { useSession } from '@/hooks/use-session'
+
 import { useAccount, useSwitchChain, useWriteContract } from 'wagmi'
 import { useState } from 'react'
-import { sepolia } from 'viem/chains'
+
 import {
-  ERC20ContractData,
-  SepoliaUSDT,
-  TestnetUSDT
+  TokenContractData,
+  TestnetUSDT,
+  EVMTokenContractData
 } from 'smartsale-contracts'
 import { parseUnits } from 'viem'
-import { smartsaleChains } from 'smartsale-chains'
+import { smartsaleEnv } from 'smartsale-env'
+import { useSignatureRequest } from '../esr-dialog'
+import {
+  genBitusdDepositSigningRequest,
+  genUsdtDepositSigningRequest
+} from '@/lib/eos'
+import { hashObject } from '@/lib/utils'
 
-const tokens = [SepoliaUSDT, TestnetUSDT]
+const usdtMap = new Map<string, TokenContractData>()
+smartsaleEnv.test.usdt.forEach(t => {
+  const key = JSON.stringify(t)
+  return usdtMap.set(key, t)
+})
 
 export function DepositCard() {
   const { address } = useAccount()
   const { writeContract, ...other } = useWriteContract()
-  const [amount, setAmount] = useState<number>(50)
+  const [amount, setAmount] = useState<number>(42)
   const { switchChain } = useSwitchChain()
-  const [token, setToken] = useState<ERC20ContractData>(TestnetUSDT)
+  const [token, setToken] = useState<TokenContractData>(TestnetUSDT)
+  const { requestSignature } = useSignatureRequest()
 
-  const deposit = () => {
+  const deposit = async () => {
     if (!amount || !address) return
+    console.log('deposit', token)
 
-    switchChain({ chainId: token.chainId })
-    writeContract({
-      abi: token.abi,
-      address: token.address,
-      functionName: 'transfer',
-      args: [
-        '0x2C9DAAb3F463d6c6D248aCbeaAEe98687936374a', // dev only
-        parseUnits(amount.toString(), token.decimals)
-      ],
-      chainId: token.chainId
-    })
+    if (token.chainType === 'evm') {
+      const evmToken = token as EVMTokenContractData
+      switchChain({ chainId: evmToken.chainId })
+      writeContract({
+        abi: evmToken.abi,
+        address: evmToken.address,
+        functionName: 'transfer',
+        args: [
+          '0x2C9DAAb3F463d6c6D248aCbeaAEe98687936374a', // dev only
+          parseUnits(amount.toString(), evmToken.decimals)
+        ],
+        chainId: evmToken.chainId
+      })
+    } else {
+      // handle eos token bitusd and usdt
+      const esr =
+        token.symbol === 'USDT'
+          ? await genUsdtDepositSigningRequest(amount)
+          : await genBitusdDepositSigningRequest(amount, address)
+      requestSignature(esr)
+    }
   }
 
   return (
     <Card className="w-full bg-[#1a1a1a] rounded-xl p-4 text-white">
       <CardContent>
         <div className="flex flex-col space-y-4">
-          <div className="text-sm">Deposit USDT</div>
+          <div className="text-sm">Convert to USDCred</div>
           <div className="flex items-center justify-between">
-            <div className="flex flex-col min-w-[50%]">
+            <div className="flex flex-col min-w-[40%]">
               <span className="text-2xl font-semibold">
                 <Input
                   type="number"
@@ -63,20 +85,23 @@ export function DepositCard() {
                 />
               </span>
             </div>
-            <Select onValueChange={i => setToken(tokens[parseInt(i)])}>
+            <Select onValueChange={chainId => setToken(usdtMap.get(chainId)!)}>
               <SelectTrigger id="currency-out">
                 <SelectValue
-                  placeholder={
-                    smartsaleChains.testnet.get(tokens[0].chainId)?.name
-                  }
+                  placeholder={`${token.symbol} on ${token.chainName}`}
                 />
               </SelectTrigger>
               <SelectContent position="popper">
-                {tokens.map((o, i) => (
-                  <SelectItem key={i} value={i.toString()}>
-                    {smartsaleChains.testnet.get(o.chainId)?.name}
-                  </SelectItem>
-                ))}
+                {Array.from(usdtMap.values()).map(t => {
+                  const key = JSON.stringify(t)
+                  const usdt = usdtMap.get(key)
+
+                  return (
+                    <SelectItem key={key} value={key}>
+                      {usdt?.symbol} on {usdt?.chainName}
+                    </SelectItem>
+                  )
+                })}
               </SelectContent>
             </Select>
           </div>
