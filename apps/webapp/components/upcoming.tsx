@@ -10,7 +10,7 @@ export function Upcoming() {
   const isUpcomingCardsContainerVisible = useInView(upcomingCardsContainerRef)
 
   return (
-    <div ref={upcomingCardsContainerRef} className="py-10">
+    <div ref={upcomingCardsContainerRef} className="pt-10">
       <AnimatePresence>
         <motion.h2 className="mb-6 text-3xl font-bold" key="upcoming-auctions-title" {...upcomingAuctionsAnimationProps}>Upcoming on Auctions</motion.h2>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 scroll-m-3" key="upcoming-auctions-description-container">

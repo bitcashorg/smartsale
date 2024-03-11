@@ -1,6 +1,9 @@
+import { BackgroundBeams } from "@/components/ui/background-beans";
+
 export function Newsletter() {
+  // TODO: Newsletter
   return (
-    <section>
+    <section className="w-full md:w-[100vw] left-0 md:-left-14 min-h-[50vh] relative py-48 -mt-20">
       <div className="max-w-screen-xl p-4 mx-auto lg:py-5 lg:px-6">
         <div className="max-w-screen-md mx-auto sm:text-center">
           <h2 className="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl dark:text-white">
@@ -31,7 +34,7 @@ export function Newsletter() {
                   </svg>
                 </div>
                 <input
-                  className="block w-full p-3 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:rounded-none sm:rounded-l-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder:text-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                  className="block w-full p-3 pl-10 text-sm text-gray-900 border border-gray-300 rounded-md bg-gray-50 sm:rounded-none sm:rounded-l-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder:text-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                   placeholder="Enter your email"
                   type="email"
                   id="email"
@@ -41,7 +44,7 @@ export function Newsletter() {
               <div>
                 <button
                   type="submit"
-                  className="w-full px-5 py-3 text-sm font-medium text-center text-white border rounded-lg cursor-pointer bg-primary-700 border-primary-600 sm:rounded-none sm:rounded-r-lg hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                  className="w-full px-5 py-3 text-sm font-medium text-center border rounded-md cursor-pointer bg-secondary border-secondary sm:rounded-none sm:rounded-r-md hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
                 >
                   Subscribe
                 </button>
@@ -60,6 +63,7 @@ export function Newsletter() {
           </form>
         </div>
       </div>
+      <BackgroundBeams />
     </section>
   )
 }
