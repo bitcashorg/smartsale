@@ -71,7 +71,7 @@ export function UserTransactions() {
 
   return (
     <div className="pt-8">
-      <h2 className="text-3xl font-bold px-2 py-4">Transaction History</h2>
+      <h2 className="px-2 py-4 text-3xl font-bold">Transaction History</h2>
       <Table>
         <TableHeader>
           <TableRow>

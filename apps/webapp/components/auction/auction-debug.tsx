@@ -21,7 +21,7 @@ export function AuctionDebug({ auctionId }: { auctionId: number }) {
 
 function AuctionText({ children }: { children: React.ReactNode }) {
   return (
-    <div className="p-4 my-10 font-mono text-green-500 bg-black">
+    <div className="my-10 bg-black p-4 font-mono text-green-500">
       {children}
     </div>
   )

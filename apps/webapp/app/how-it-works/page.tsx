@@ -62,7 +62,7 @@ export default function HowItWorks() {
         By providing an easy interface for price discovery with batch auctions,
         Smart Sale enables:
       </p>
-      <ul className="pl-6 mt-2 list-disc">
+      <ul className="mt-2 list-disc pl-6">
         <li>
           Auctioneers to determine a minimum price they are willing to sell
           their tokens for, and
@@ -78,8 +78,8 @@ export default function HowItWorks() {
       </p>
       <p className={howItWorksClassNames.paragraph}>
         The depositAndPlaceOrder function, typically found in auction or trading
-        platforms like Gnosis or its forks, including bitLauncher, serves
-        a dual purpose within the context of smart contracts, especially when
+        platforms like Gnosis or its forks, including bitLauncher, serves a dual
+        purpose within the context of smart contracts, especially when
         interacting with blockchain-based auction systems. Heres a breakdown of
         its functionality
       </p>

@@ -9,13 +9,13 @@ export default function WalletPage() {
   return (
     <>
       <div className="flex flex-col md:flex-row">
-        <div className="flex flex-col gap-16 w-full h-full min-h-[512px] mb-20">
-          <div className="flex flex-col gap-5 md:flex-row space-between">
+        <div className="mb-20 flex size-full min-h-[512px] flex-col gap-16">
+          <div className="space-between flex flex-col gap-5 md:flex-row">
             <div className="md:w-2/3">
               <h1 className="mb-4 text-2xl font-bold">Wallet</h1>
               <WalletBalances />
             </div>
-            <div className="flex flex-col w-full gap-5 md:w-1/3">
+            <div className="flex w-full flex-col gap-5 md:w-1/3">
               <DepositCard />
               <WithdrawCard />
             </div>

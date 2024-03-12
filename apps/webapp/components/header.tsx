@@ -62,7 +62,7 @@ export function Header({ className }: { className?: string }) {
   return (
     <React.Suspense
       fallback={
-        <div className="flex w-full fixed top-0 inset-x-0 mx-auto border-b border-transparent dark:border-white/[0.2] shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] h-16 shrink-0 bg-gradient-to-b from-background/10 via-background/50 to-background/80 backdrop-blur-xl" />
+        <div className="fixed inset-x-0 top-0 z-[5000] mx-auto flex h-16 w-full shrink-0 border-b border-transparent bg-gradient-to-b from-background/10 via-background/50 to-background/80 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] backdrop-blur-xl dark:border-white/[0.2]" />
       }
     >
       <AnimatePresence mode="wait">
@@ -79,7 +79,7 @@ export function Header({ className }: { className?: string }) {
             duration: 0.2
           }}
           className={cn(
-            'flex w-full fixed top-0 inset-x-0 mx-auto border-b border-transparent dark:border-white/[0.2] shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] h-16 shrink-0 bg-gradient-to-b from-background/10 via-background/50 to-background/80 backdrop-blur-xl',
+            'fixed inset-x-0 top-0 z-[5000] mx-auto flex h-16 w-full shrink-0 border-b border-transparent bg-gradient-to-b from-background/10 via-background/50 to-background/80 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] backdrop-blur-xl dark:border-white/[0.2]',
             className
           )}
           ref={headerRef}
@@ -98,7 +98,7 @@ export function Header({ className }: { className?: string }) {
                 onClick={() => setActiveMenu('')}
                 desktopOnly
               />
-              <IconSeparator className="size-3 md:size-6 text-muted-foreground/50" />
+              <IconSeparator className="size-3 text-muted-foreground/50 md:size-6" />
               <HeaderLink
                 href="/wallet"
                 text="wallet"
@@ -123,20 +123,21 @@ export function Header({ className }: { className?: string }) {
               {/* <HeaderLink href="https://bitcash-faucet.vercel.app/" text="usdcred faucet" />
               <HeaderLink href="https://faucet.testnet.evm.eosnetwork.com/" text="eos faucet" /> */}
             </div>
-            <React.Suspense fallback={<div />}>
-              <MenuItem
-                active={activeMenu}
-                setActive={setActiveMenu}
-                item={connectItem}
-              >
+
+            <MenuItem
+              active={activeMenu}
+              setActive={setActiveMenu}
+              item={connectItem}
+            >
+              <React.Suspense fallback={<div />}>
                 <HeaderButtons />
-              </MenuItem>
-            </React.Suspense>
+              </React.Suspense>
+            </MenuItem>
           </div>
         </motion.header>
       </AnimatePresence>
       {/* // ? header anchor */}
-      <div className="w-full h-[64px] bg-transparent" id="header-anchor" />
+      <div className="h-[64px] w-full bg-transparent" id="header-anchor" />
     </React.Suspense>
   )
 }
@@ -178,7 +179,7 @@ function MenuItem({
     <div className="relative">
       <motion.button
         transition={{ duration: 0.3 }}
-        className="cursor-pointer text-sm md:text-md whitespace-nowrap text-black hover:opacity-[0.9] dark:text-white"
+        className="text-sm text-black cursor-pointer md:text-md whitespace-nowrap hover:opacity-90 dark:text-white"
         onClick={() => setActive(active === item ? '' : item)}
         layout
       >
@@ -191,15 +192,15 @@ function MenuItem({
           transition={transition}
         >
           {active === item && (
-            <div className="absolute top-[calc(100%_+_1.7rem)] left-0 transform -translate-x-1/2">
+            <div className="absolute left-0 top-[calc(100%_+_1.7rem)] -translate-x-1/2">
               <motion.div
                 transition={transition}
                 layoutId="active" // layoutId ensures smooth animation
-                className="bg-white dark:bg-black backdrop-blur-sm rounded-2xl overflow-hidden border border-black/[0.2] dark:border-white/[0.2] shadow-xl"
+                className="overflow-hidden rounded-2xl border border-black/[0.2] bg-white shadow-xl backdrop-blur-sm dark:border-white/[0.2] dark:bg-black"
               >
                 <motion.div
                   layout // layout ensures smooth animation
-                  className="w-max h-full p-4 flex flex-col gap-2 dark:text-white text-black"
+                  className="flex flex-col h-full gap-2 p-4 text-black w-max dark:text-white"
                 >
                   {children}
                 </motion.div>

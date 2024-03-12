@@ -31,19 +31,18 @@ export default function Participate() {
   const [showStepsInfo, setShowStepsInfo] = React.useState(false)
 
   return (
-    <section className="pt-20 pb-10">
-      <div className="flex flex-col min-h-[25vh] items-center justify-start mb-6 text-center">
+    <section className="pb-10 pt-20">
+      <div className="mb-6 flex min-h-[25vh] flex-col items-center justify-start text-center">
         <h2 className="mb-4 lg:max-w-[90%] xl:max-w-[66%]">
           <TypewriterEffect
-            words={textContent.title
-              .split(' ')
-              .map(word => ({
-                text: word,
-                className: word === 'bitLauncher.'
+            words={textContent.title.split(' ').map(word => ({
+              text: word,
+              className:
+                word === 'bitLauncher.'
                   ? '!text-[#1ED761] last:!text-inherit'
                   : undefined
-              }))}
-            className="text-4xl leading-snug sm:!text-5xl lg:!text-6xl !font-black"
+            }))}
+            className="text-4xl !font-black leading-snug sm:!text-5xl lg:!text-6xl"
             cursorClassName="h-6 md:h-10"
             onAnimationEnd={() => {
               setShowStepsInfo(true)
@@ -58,7 +57,7 @@ export default function Participate() {
               exit={{ opacity: 0, y: 20 }}
               transition={{ delay: 0.24 }}
               key="steps-info"
-              className="font-semibold text-lg md:text-xl"
+              className="text-lg font-semibold md:text-xl"
             >
               {textContent.stepsInfo}
             </motion.p>
@@ -66,23 +65,23 @@ export default function Participate() {
         </AnimatePresence>
       </div>
 
-      <div className="container min-h-[320px] flex flex-col md:flex-row md:justify-between md:items-center">
+      <div className="container flex min-h-[320px] flex-col md:flex-row md:items-center md:justify-between">
         {textContent.steps.map((step, index) => (
           <div
             key={index}
-            className="flex flex-col items-center mb-8 md:items-start md:w-1/3 mt-4 md:mt-0 md:ml-4"
+            className="mb-8 mt-4 flex flex-col items-center md:ml-4 md:mt-0 md:w-1/3 md:items-start"
           >
-            <h2 className="flex text-2xl font-semibold text-center align-items h-10 md:text-left">
-              <step.icon className="mr-2 text-gray-400 size-6" />
+            <h2 className="align-items flex h-10 text-center text-2xl font-semibold md:text-left">
+              <step.icon className="mr-2 size-6 text-gray-400" />
               {step.title}
             </h2>
-            <p className="py-3 text-center text-gray-500 dark:text-gray-300 md:text-left h-20">
+            <p className="h-20 py-3 text-center text-gray-500 dark:text-gray-300 md:text-left">
               {step.description}
             </p>
             {step.buttonText && (
               <Link href={step.href} shallow>
                 <Button
-                  className="mt-2 bg-[#7f5af0] !text-white text-bold text-lg"
+                  className="text-bold mt-2 bg-[#7f5af0] text-lg !text-white"
                   size="lg"
                 >
                   {step.buttonText}

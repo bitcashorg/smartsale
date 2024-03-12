@@ -20,8 +20,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
           GeistMono.variable
         )}
       >
-        <div className="relative min-h-screen h-full w-full bg-muted/20 dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex items-center justify-center">
-          <div className="max-w-1/2 fixed pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(circle_at_center,transparent_83%,#0002)]" />
+        <div className="relative flex size-full min-h-screen items-center justify-center bg-muted/20 bg-dot-black/[0.2] dark:bg-dot-white/[0.2]">
+          <div className="max-w-1/2 pointer-events-none fixed inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(circle_at_center,transparent_83%,#0002)] dark:bg-black" />
           {/* Radial gradient for the container to give a faded look */}
           <Toaster />
           <Providers

@@ -49,7 +49,7 @@ export function BitcashLoginButton() {
 
     // post request to parent if present
     window.parent.postMessage({ eventType: 'esr', code: loginUri }, '*')
-  }, [open, loginUri])
+  }, [open, loginUri, searchParams])
 
   if (session)
     return (

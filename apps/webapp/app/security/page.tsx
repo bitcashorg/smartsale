@@ -13,9 +13,9 @@ export default function SecurityTips() {
         Security Recommendations for bitLauncher Participants
       </h1>
       <p className={securityTipsClassNames.p}>
-        Participating in auctions on bitLauncher, a fork of Gnosis,
-        requires vigilance and awareness of various security threats. Here are
-        some crucial tips to help keep your investments safe:
+        Participating in auctions on bitLauncher, a fork of Gnosis, requires
+        vigilance and awareness of various security threats. Here are some
+        crucial tips to help keep your investments safe:
       </p>
 
       <h2 className={securityTipsClassNames.h2}>
@@ -40,8 +40,8 @@ export default function SecurityTips() {
       </h2>
       <p className={securityTipsClassNames.p}>
         Be wary of individuals on platforms like Discord and social media who
-        claim to be representatives of bitLauncher. Official staff will
-        never ask for your private keys or wallet credentials.
+        claim to be representatives of bitLauncher. Official staff will never
+        ask for your private keys or wallet credentials.
       </p>
 
       <h2 className={securityTipsClassNames.h2}>

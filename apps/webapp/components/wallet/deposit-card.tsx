@@ -73,14 +73,14 @@ export function DepositCard() {
   }
 
   return (
-    <Card className="w-full dark:bg-[#1a1a1a] bg-gray-200 rounded-xl p-4">
+    <Card className="w-full rounded-xl bg-gray-200 p-4 dark:bg-[#1a1a1a]">
       <CardContent>
         <div className="flex flex-col space-y-4">
           <label htmlFor="deposit" className="text-sm">
             Convert to USDCred
           </label>
           <div className="flex items-center justify-between">
-            <div className="flex flex-col min-w-[40%]">
+            <div className="flex min-w-[40%] flex-col">
               <span className="text-2xl font-semibold">
                 <Input
                   type="number"

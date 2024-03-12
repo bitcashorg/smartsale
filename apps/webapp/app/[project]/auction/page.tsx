@@ -69,11 +69,11 @@ export default function AuctionPage({
     <>
       <section className="flex flex-col md:flex-row">
         <div className="w-full">
-          <div className="flex flex-col gap-5 md:flex-row space-between bg-inherit md:h-[320px]">
+          <div className="space-between flex flex-col gap-5 bg-inherit md:h-[320px] md:flex-row">
             <div className="md:w-2/3">
               <Image
                 alt="bitcash logo"
-                className="mx-auto rounded-md size-full max-h-[320px] my-0 object-cover"
+                className="mx-auto my-0 size-full max-h-[320px] rounded-md object-cover"
                 layout="responsive"
                 height="100"
                 width="100"
@@ -81,7 +81,7 @@ export default function AuctionPage({
               />
             </div>
 
-            <div className="flex flex-col gap-4 justify-between">
+            <div className="flex flex-col justify-between gap-4">
               <AuctionInfo project={project} />
               {project.auctionId && !isAuctionClosed ? (
                 <Countdown auctionId={project.auctionId} />
@@ -90,7 +90,7 @@ export default function AuctionPage({
           </div>
         </div>
       </section>
-      <section className="md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-screen-xl mx-auto size-full items-start justify-start mt-10 mb-32">
+      <section className="b relative mx-auto mb-32 mt-10 flex size-full max-w-screen-xl flex-col items-start justify-start [perspective:1000px] md:h-[40rem]">
         <Tabs tabs={tabs} />
       </section>
     </>

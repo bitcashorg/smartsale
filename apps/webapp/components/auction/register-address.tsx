@@ -50,9 +50,9 @@ export function RegisterAddress({ projectId }: { projectId: number }) {
   })
 
   return (
-    <div className="w-full h-full flex items-center justify-center flex-col gap-6 p-4">
+    <div className="flex size-full flex-col items-center justify-center gap-6 p-4">
       <div className="flex flex-col space-y-4">
-        <p className="font-bold text-center">
+        <p className="text-center font-bold">
           {!isRegistered
             ? 'Register your address before the auction starts'
             : 'You are already registered'}
@@ -64,7 +64,7 @@ export function RegisterAddress({ projectId }: { projectId: number }) {
           <input type="hidden" name="project_id" value={projectId} />
           <input type="hidden" name="account" value={session?.account} />
           <Button
-            className="w-full text-lg font-semibold bg-[#bd1e59] text-white"
+            className="w-full bg-[#bd1e59] text-lg font-semibold text-white"
             disabled={!session || !address || pending}
             size="lg"
           >

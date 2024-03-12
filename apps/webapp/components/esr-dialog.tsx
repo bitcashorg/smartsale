@@ -19,6 +19,7 @@ import axios from 'axios'
 import { SigningRequest } from 'eosio-signing-request'
 import Link from 'next/link'
 import { useSearchParams } from 'next/navigation'
+import React from 'react'
 import { ReactNode } from 'react'
 import QRCode from 'react-qr-code'
 import { useSetState } from 'react-use'
@@ -151,13 +152,15 @@ function EsrDialog() {
   )
 }
 
-const SignatureRequestProvider = ({ children }: { children: ReactNode }) => {
+const SigningRequestProvider = ({ children }: { children: ReactNode }) => {
   return (
-    <UseSignatureRequestProvider>
-      {children}
-      <EsrDialog />
-    </UseSignatureRequestProvider>
+    <React.Suspense fallback={<div />}>
+      <UseSignatureRequestProvider>
+        {children}
+        <EsrDialog />
+      </UseSignatureRequestProvider>
+    </React.Suspense>
   )
 }
 
-export { useSignatureRequest, SignatureRequestProvider }
+export { useSignatureRequest, SigningRequestProvider }

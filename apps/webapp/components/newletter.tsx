@@ -3,28 +3,28 @@ import { BackgroundBeams } from '@/components/ui/background-beans'
 export function Newsletter() {
   // TODO: Newsletter
   return (
-    <section className="w-full min-h-[50vh] relative py-48 -mt-20">
-      <div className="max-w-screen-xl p-4 mx-auto lg:py-5 lg:px-6">
-        <div className="max-w-screen-md mx-auto sm:text-center">
-          <h2 className="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl dark:text-white">
+    <section className="relative -mt-20 min-h-[50vh] w-full py-48">
+      <div className="mx-auto max-w-screen-xl p-4 lg:px-6 lg:py-5">
+        <div className="mx-auto max-w-screen-md sm:text-center">
+          <h2 className="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
             Sign up for our newsletter
           </h2>
-          <p className="max-w-2xl mx-auto mb-8 font-light text-gray-500 md:mb-12 sm:text-xl dark:text-gray-400">
+          <p className="mx-auto mb-8 max-w-2xl font-light text-gray-500 dark:text-gray-400 sm:text-xl md:mb-12">
             Stay up to date with the roadmap progress, announcements and
             exclusive discounts feel free to sign up with your email.
           </p>
           <form action="#">
-            <div className="items-center max-w-screen-sm mx-auto mb-3 space-y-4 sm:flex sm:space-y-0">
+            <div className="mx-auto mb-3 max-w-screen-sm items-center space-y-4 sm:flex sm:space-y-0">
               <div className="relative w-full">
                 <label
                   htmlFor="email"
-                  className="hidden mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                  className="mb-2 hidden text-sm font-medium text-gray-900 dark:text-gray-300"
                 >
                   Email address
                 </label>
-                <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
                   <svg
-                    className="text-gray-500 size-5 dark:text-gray-400"
+                    className="size-5 text-gray-500 dark:text-gray-400"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                     xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +34,7 @@ export function Newsletter() {
                   </svg>
                 </div>
                 <input
-                  className="block w-full p-3 pl-10 text-sm text-gray-900 border border-gray-300 rounded-md bg-gray-50 sm:rounded-none sm:rounded-l-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder:text-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                  className="focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500 block w-full rounded-md border border-gray-300 bg-gray-50 p-3 pl-10 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400 sm:rounded-none sm:rounded-l-lg"
                   placeholder="Enter your email"
                   type="email"
                   id="email"
@@ -44,17 +44,17 @@ export function Newsletter() {
               <div>
                 <button
                   type="submit"
-                  className="w-full px-5 py-3 text-sm font-medium text-center border rounded-md cursor-pointer bg-secondary border-secondary sm:rounded-none sm:rounded-r-md hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                  className="hover:bg-primary-800 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 w-full cursor-pointer rounded-md border border-secondary bg-secondary px-5 py-3 text-center text-sm font-medium focus:ring-4 sm:rounded-none sm:rounded-r-md"
                 >
                   Subscribe
                 </button>
               </div>
             </div>
-            <div className="max-w-screen-sm mx-auto text-sm text-left text-gray-500 newsletter-form-footer dark:text-gray-300">
+            <div className="newsletter-form-footer mx-auto max-w-screen-sm text-left text-sm text-gray-500 dark:text-gray-300">
               We care about the protection of your data.{' '}
               <a
                 href="#"
-                className="font-medium text-primary-600 dark:text-primary-500 hover:underline"
+                className="text-primary-600 dark:text-primary-500 font-medium hover:underline"
               >
                 Read our Privacy Policy
               </a>

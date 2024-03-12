@@ -11,7 +11,7 @@ import { GlobalDataProvider } from '@/hooks/use-global-data'
 import { SessionProvider } from '@/hooks/use-session'
 import { sepolia } from 'wagmi/chains'
 import { eosEvmTestnet } from 'smartsale-env'
-import { SignatureRequestProvider } from './esr-dialog'
+import { SigningRequestProvider } from './esr-dialog'
 import { useLocation } from 'react-use'
 import { useEffect } from 'react'
 
@@ -39,20 +39,20 @@ export function Providers({ children, ...props }: ThemeProviderProps) {
   }, [location])
 
   return (
-    <SessionProvider>
-      <NextThemesProvider {...props}>
-        <GlobalDataProvider>
-          <TooltipProvider>
-            <QueryClientProvider client={queryClient}>
-              <SignatureRequestProvider>
-                <WagmiProvider config={wagmiConfig}>
-                  <RainbowKitProvider>{children}</RainbowKitProvider>
-                </WagmiProvider>
-              </SignatureRequestProvider>
-            </QueryClientProvider>
-          </TooltipProvider>
-        </GlobalDataProvider>
-      </NextThemesProvider>
-    </SessionProvider>
+    <NextThemesProvider {...props}>
+      <GlobalDataProvider>
+        <TooltipProvider>
+          <QueryClientProvider client={queryClient}>
+            <SessionProvider>
+              <WagmiProvider config={wagmiConfig}>
+                <RainbowKitProvider>
+                  <SigningRequestProvider>{children}</SigningRequestProvider>
+                </RainbowKitProvider>
+              </WagmiProvider>
+            </SessionProvider>
+          </QueryClientProvider>
+        </TooltipProvider>
+      </GlobalDataProvider>
+    </NextThemesProvider>
   )
 }

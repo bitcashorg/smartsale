@@ -138,15 +138,15 @@ export function AuctionBids({ project }: AuctionBidsProps) {
 
   return (
     <>
-      <h2 className="text-3xl font-bold px-2 py-4 mb-3">Bids</h2>
-      <div className="grid md:grid-cols-2 gap-5 md:gap-10">
+      <h2 className="mb-3 px-2 py-4 text-3xl font-bold">Bids</h2>
+      <div className="grid gap-5 md:grid-cols-2 md:gap-10">
         <Table>
           <TableHeader>
             <TableRow>
-              <TableHead className="bg-gray-100 dark:bg-slate-950 text-black dark:text-white font-semibold">
+              <TableHead className="bg-gray-100 font-semibold text-black dark:bg-slate-950 dark:text-white">
                 Max Price
               </TableHead>
-              <TableHead className="bg-gray-100 dark:bg-slate-950 text-black dark:text-white font-semibold">
+              <TableHead className="bg-gray-100 font-semibold text-black dark:bg-slate-950 dark:text-white">
                 Bid Amount
               </TableHead>
             </TableRow>
@@ -198,7 +198,7 @@ export function AuctionBids({ project }: AuctionBidsProps) {
           </Button>
 
           <div className="flex flex-col gap-2">
-            <p className="flex justify-between w-full">
+            <p className="flex w-full justify-between">
               {textValues.currentBid.split(':').map((txt, index) =>
                 !index ? (
                   <b key={txt} className="block">
@@ -209,7 +209,7 @@ export function AuctionBids({ project }: AuctionBidsProps) {
                 )
               )}
             </p>
-            <p className="flex justify-between w-full">
+            <p className="flex w-full justify-between">
               {textValues.currentCost.split(':').map((txt, index) =>
                 !index ? (
                   <b key={txt} className="block">
@@ -220,7 +220,7 @@ export function AuctionBids({ project }: AuctionBidsProps) {
                 )
               )}
             </p>
-            <p className="mt-2 text-sm text-right">
+            <p className="mt-2 text-right text-sm">
               {textValues.maxTokenLimit}
             </p>
           </div>
@@ -260,14 +260,14 @@ function CurrencyInput({ handlechange, ...props }: CurrencyInputProps) {
 
   return (
     <div className="relative">
-      <span className="absolute inset-y-0 flex items-center left-2">$</span>
+      <span className="absolute inset-y-0 left-2 flex items-center">$</span>
 
       <input
         type="text" // Changed to text to handle manual formatting
         value={value}
         onChange={handleChange}
         onBlur={handleBlur}
-        className="w-full pl-6 bg-transparent focus:outline-none"
+        className="w-full bg-transparent pl-6 focus:outline-none"
         {...props}
       />
     </div>

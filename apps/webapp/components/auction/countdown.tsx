@@ -49,13 +49,13 @@ export function Countdown({ auctionId }: { auctionId: number }) {
   }, [auctionData])
 
   return (
-    <div className="max-h-[200px] px-8 pt-5 bg-gray-200 dark:bg-black rounded-md">
+    <div className="max-h-[200px] rounded-md bg-gray-200 px-8 pt-5 dark:bg-black">
       <div className="flex justify-between ">
         <div>
           <TimerIcon />
         </div>
         <div className="text-center">
-          <h2 className="text-xl md:text-2xl font-bold">COUNTDOWN</h2>
+          <h2 className="text-xl font-bold md:text-2xl">COUNTDOWN</h2>
         </div>
         <div />
       </div>
@@ -71,8 +71,8 @@ export function Countdown({ auctionId }: { auctionId: number }) {
 
 function CountdownItem({ value, label }: CountdownItemProps) {
   return (
-    <div className="flex flex-col items-center justify-center text-center size-32">
-      <div className="text-4xl md:text-6xl font-bold">{value}</div>
+    <div className="flex size-32 flex-col items-center justify-center text-center">
+      <div className="text-4xl font-bold md:text-6xl">{value}</div>
       <div className="text-sm">{label}</div>
     </div>
   )

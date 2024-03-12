@@ -23,7 +23,7 @@ export default function ProjectPage({
                   {project.title}
                 </h1>
 
-                <p className="max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
+                <p className="max-w-[600px] text-gray-500 dark:text-gray-400 md:text-xl">
                   {project.registrationOpen
                     ? 'Register to participate in the auction!'
                     : project.auctionClosed
@@ -36,7 +36,7 @@ export default function ProjectPage({
                   <div />
                 </div>
                 <Link
-                  className="inline-flex items-center justify-center h-10 px-8 text-sm font-medium transition-colors bg-gray-900 rounded-md shadow text-gray-50 hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
+                  className="inline-flex h-10 items-center justify-center rounded-md bg-gray-900 px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
                   href={`${project.slug}/auction`}
                 >
                   {project.registrationOpen
@@ -49,7 +49,7 @@ export default function ProjectPage({
             </div>
             <Image
               alt="Project Image"
-              className="object-cover mx-auto overflow-hidden aspect-video rounded-xl sm:w-full lg:order-last lg:aspect-square"
+              className="mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full lg:order-last lg:aspect-square"
               height="550"
               src={project.heroImage}
               width="550"
@@ -57,42 +57,42 @@ export default function ProjectPage({
           </div>
         </div>
       </section>
-      <section className="w-full py-12 bg-gray-100 md:py-24 lg:py-32 dark:bg-gray-800">
+      <section className="w-full bg-gray-100 py-12 dark:bg-gray-800 md:py-24 lg:py-32">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col justify-center space-y-4">
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                 Highlights
               </h2>
-              <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+              <p className="max-w-[600px] text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 {project.pitch}
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
               <Image
                 alt="Highlight Image 1"
-                className="object-cover overflow-hidden rounded-md aspect-square"
+                className="aspect-square overflow-hidden rounded-md object-cover"
                 height="200"
                 src={project.heroImage}
                 width="200"
               />
               <Image
                 alt="Highlight Image 2"
-                className="object-cover overflow-hidden rounded-md aspect-square mix-blend-multiply"
+                className="aspect-square overflow-hidden rounded-md object-cover mix-blend-multiply"
                 height="200"
                 src="/images/launchpad_img_placeholder.svg"
                 width="200"
               />
               <Image
                 alt="Highlight Image 3"
-                className="object-cover overflow-hidden rounded-md aspect-square mix-blend-multiply"
+                className="aspect-square overflow-hidden rounded-md object-cover mix-blend-multiply"
                 height="200"
                 src="/images/launchpad_img_placeholder.svg"
                 width="200"
               />
               <Image
                 alt="Highlight Image 4"
-                className="object-cover overflow-hidden rounded-md aspect-square mix-blend-multiply"
+                className="aspect-square overflow-hidden rounded-md object-cover mix-blend-multiply"
                 height="200"
                 src="/images/launchpad_img_placeholder.svg"
                 width="200"
@@ -108,35 +108,35 @@ export default function ProjectPage({
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                 Product
               </h2>
-              <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+              <p className="max-w-[600px] text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 Learn more about our product and its unique features.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
               <Image
                 alt="Product Image 1"
-                className="object-cover overflow-hidden rounded-md aspect-square mix-blend-multiply"
+                className="aspect-square overflow-hidden rounded-md object-cover mix-blend-multiply"
                 height="200"
                 src="/images/launchpad_img_placeholder.svg"
                 width="200"
               />
               <Image
                 alt="Product Image 2"
-                className="object-cover overflow-hidden rounded-md aspect-square mix-blend-multiply"
+                className="aspect-square overflow-hidden rounded-md object-cover mix-blend-multiply"
                 height="200"
                 src="/images/launchpad_img_placeholder.svg"
                 width="200"
               />
               <Image
                 alt="Product Image 3"
-                className="object-cover overflow-hidden rounded-md aspect-square mix-blend-multiply"
+                className="aspect-square overflow-hidden rounded-md object-cover mix-blend-multiply"
                 height="200"
                 src="/images/launchpad_img_placeholder.svg"
                 width="200"
               />
               <Image
                 alt="Product Image 4"
-                className="object-cover overflow-hidden rounded-md aspect-square mix-blend-multiply"
+                className="aspect-square overflow-hidden rounded-md object-cover mix-blend-multiply"
                 height="200"
                 src="/images/launchpad_img_placeholder.svg"
                 width="200"
@@ -145,18 +145,18 @@ export default function ProjectPage({
           </div>
         </div>
       </section>
-      <section className="w-full py-12 bg-gray-100 md:py-24 lg:py-32 dark:bg-gray-800">
+      <section className="w-full bg-gray-100 py-12 dark:bg-gray-800 md:py-24 lg:py-32">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col justify-center space-y-4">
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                 Problem
               </h2>
-              <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+              <p className="max-w-[600px] text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 Understand the problem we aim to solve with our project.
               </p>
             </div>
-            <div className="text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+            <div className="text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               Our project aims to solve the problem of lack of transparency and
               efficiency in the traditional auction process.
             </div>
@@ -170,12 +170,12 @@ export default function ProjectPage({
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                 Solution
               </h2>
-              <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+              <p className="max-w-[600px] text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 Discover how our project provides a unique solution to the
                 problem.
               </p>
             </div>
-            <div className="text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+            <div className="text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               Our project leverages blockchain technology to create a
               transparent and efficient auction process, ensuring fair
               opportunities for all participants.
@@ -183,19 +183,19 @@ export default function ProjectPage({
           </div>
         </div>
       </section>
-      <section className="w-full py-12 bg-gray-100 md:py-24 lg:py-32 dark:bg-gray-800">
+      <section className="w-full bg-gray-100 py-12 dark:bg-gray-800 md:py-24 lg:py-32">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col justify-center space-y-4">
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                 Business Model
               </h2>
-              <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+              <p className="max-w-[600px] text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 Get to know our business model and how we plan to generate
                 revenue.
               </p>
             </div>
-            <div className="text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+            <div className="text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               Our business model revolves around charging a small fee for each
               transaction made on our platform, ensuring a sustainable revenue
               stream.
@@ -210,7 +210,7 @@ export default function ProjectPage({
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                 Investors
               </h2>
-              <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+              <p className="max-w-[600px] text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 Meet our esteemed investors who believe in our vision and
                 mission.
               </p>
@@ -218,28 +218,28 @@ export default function ProjectPage({
             <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
               <Image
                 alt="Investor Image 1"
-                className="object-cover overflow-hidden rounded-md aspect-square mix-blend-multiply"
+                className="aspect-square overflow-hidden rounded-md object-cover mix-blend-multiply"
                 height="200"
                 src="/images/launchpad_img_placeholder.svg"
                 width="200"
               />
               <Image
                 alt="Investor Image 2"
-                className="object-cover overflow-hidden rounded-md aspect-square mix-blend-multiply"
+                className="aspect-square overflow-hidden rounded-md object-cover mix-blend-multiply"
                 height="200"
                 src="/images/launchpad_img_placeholder.svg"
                 width="200"
               />
               <Image
                 alt="Investor Image 3"
-                className="object-cover overflow-hidden rounded-md aspect-square mix-blend-multiply"
+                className="aspect-square overflow-hidden rounded-md object-cover mix-blend-multiply"
                 height="200"
                 src="/images/launchpad_img_placeholder.svg"
                 width="200"
               />
               <Image
                 alt="Investor Image 4"
-                className="object-cover overflow-hidden rounded-md aspect-square mix-blend-multiply"
+                className="aspect-square overflow-hidden rounded-md object-cover mix-blend-multiply"
                 height="200"
                 src="/images/launchpad_img_placeholder.svg"
                 width="200"
@@ -248,14 +248,14 @@ export default function ProjectPage({
           </div>
         </div>
       </section>
-      <section className="w-full py-12 bg-gray-100 md:py-24 lg:py-32 dark:bg-gray-800">
+      <section className="w-full bg-gray-100 py-12 dark:bg-gray-800 md:py-24 lg:py-32">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col justify-center space-y-4">
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                 Team
               </h2>
-              <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+              <p className="max-w-[600px] text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 Meet our dedicated team members who are working tirelessly to
                 make this project a success.
               </p>
@@ -263,28 +263,28 @@ export default function ProjectPage({
             <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
               <Image
                 alt="Team Member Image 1"
-                className="object-cover overflow-hidden rounded-md aspect-square mix-blend-multiply"
+                className="aspect-square overflow-hidden rounded-md object-cover mix-blend-multiply"
                 height="200"
                 src="/images/launchpad_img_placeholder.svg"
                 width="200"
               />
               <Image
                 alt="Team Member Image 2"
-                className="object-cover overflow-hidden rounded-md aspect-square mix-blend-multiply"
+                className="aspect-square overflow-hidden rounded-md object-cover mix-blend-multiply"
                 height="200"
                 src="/images/launchpad_img_placeholder.svg"
                 width="200"
               />
               <Image
                 alt="Team Member Image 3"
-                className="object-cover overflow-hidden rounded-md aspect-square mix-blend-multiply"
+                className="aspect-square overflow-hidden rounded-md object-cover mix-blend-multiply"
                 height="200"
                 src="/images/launchpad_img_placeholder.svg"
                 width="200"
               />
               <Image
                 alt="Team Member Image 4"
-                className="object-cover overflow-hidden rounded-md aspect-square mix-blend-multiply"
+                className="aspect-square overflow-hidden rounded-md object-cover mix-blend-multiply"
                 height="200"
                 src="/images/launchpad_img_placeholder.svg"
                 width="200"
@@ -300,12 +300,12 @@ export default function ProjectPage({
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                 Token Utility
               </h2>
-              <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+              <p className="max-w-[600px] text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 Understand the utility of our token and how it contributes to
                 the ecosystem.
               </p>
             </div>
-            <div className="text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+            <div className="text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               Our token serves as the primary medium of exchange on our
               platform, enabling users to participate in auctions and access
               other features.

@@ -584,27 +584,6 @@ declare function defineExtension(ext: ExtensionArgs | ((client: Client) => Clien
 
 declare const denylist: readonly ["$connect", "$disconnect", "$on", "$transaction", "$use", "$extends"];
 
-/**
- * Detect the current JavaScript runtime following
- * the WinterCG Runtime Keys proposal:
- *
- * - `edge-routine` Alibaba Cloud Edge Routine
- * - `workerd` Cloudflare Workers
- * - `deno` Deno and Deno Deploy
- * - `lagon` Lagon
- * - `react-native` React Native
- * - `netlify` Netlify Edge Functions
- * - `electron` Electron
- * - `node` Node.js
- * - `bun` Bun
- * - `edge-light` Vercel Edge Functions
- * - `fastly` Fastly Compute@Edge
- *
- * @see https://runtime-keys.proposal.wintercg.org/
- * @returns {Runtime}
- */
-export declare function detectRuntime(): Runtime;
-
 export declare type DevTypeMapDef = {
     meta: {
         modelProps: string;
@@ -1602,6 +1581,14 @@ export declare type GetResult<P extends OperationPayload, A, O extends Operation
     findRaw: JsonObject;
     aggregateRaw: JsonObject;
 }[O];
+
+export declare function getRuntime(): GetRuntimeOutput;
+
+declare type GetRuntimeOutput = {
+    id: Runtime;
+    prettyName: string;
+    isEdge: boolean;
+};
 
 export declare type GetSelect<Base extends Record<any, any>, R extends InternalArgs['result'][string], KR extends keyof R = string extends keyof R ? never : keyof R> = {
     [K in KR | keyof Base]?: K extends KR ? boolean : Base[K];

@@ -20,7 +20,7 @@ export function Upcoming() {
           Upcoming on Auctions
         </motion.h2>
         <div
-          className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 scroll-m-3"
+          className="grid scroll-m-3 grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3"
           key="upcoming-auctions-description-container"
         >
           {isUpcomingCardsContainerVisible &&

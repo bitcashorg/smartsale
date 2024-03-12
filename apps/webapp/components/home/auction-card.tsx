@@ -19,7 +19,7 @@ export function AuctionCard(props: Project) {
 
   return (
     <CardContainer className="w-full">
-      <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:max-w-[30rem] h-auto rounded-xl p-6 border  ">
+      <CardBody className="group/card relative size-auto  rounded-xl border border-black/[0.1] bg-gray-50 p-6 dark:border-white/[0.2] dark:bg-black dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] sm:max-w-[30rem]  ">
         <CardItem
           translateZ="75"
           className="text-xl font-bold text-neutral-600 dark:text-white"
@@ -29,26 +29,26 @@ export function AuctionCard(props: Project) {
         <CardItem
           as="p"
           translateZ="60"
-          className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+          className="mt-2 max-w-sm text-sm text-neutral-500 dark:text-neutral-300"
         >
           {pitch}
         </CardItem>
         <CardItem
           translateZ="100"
-          className="w-full mt-4 relative"
+          className="relative mt-4 w-full"
           badge={badgeText}
         >
           <Image
             src={heroImage}
             height="1000"
             width="1000"
-            className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+            className="h-60 w-full rounded-xl object-cover group-hover/card:shadow-xl"
             alt="thumbnail"
           />
         </CardItem>
         <CardItem
           translateZ="60"
-          className="w-full flex flex-col mt-4 space-y-1"
+          className="mt-4 flex w-full flex-col space-y-1"
         >
           <div className="flex justify-between">
             <b>Fundraising Goal</b>
@@ -59,14 +59,14 @@ export function AuctionCard(props: Project) {
             <span>{maxAllocation}</span>
           </div>
         </CardItem>
-        <div className="flex justify-between items-center mt-10">
+        <div className="mt-10 flex items-center justify-between">
           <CardItem
             translateZ={20}
-            className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+            className="rounded-xl px-4 py-2 text-xs font-normal dark:text-white"
           >
             <Link
               href={linkPath}
-              className="w-full hover:text-link focus-within:text-link"
+              className="hover:text-link focus-within:text-link w-full"
               shallow={true}
             >
               See more →
@@ -76,7 +76,7 @@ export function AuctionCard(props: Project) {
             <Link
               href={isAuctionClosed ? '#' : `${linkPath}/auction`}
               className={cn(
-                'w-full px-4 py-2 rounded-md bg-black dark:bg-white dark:text-black text-white text-xs font-bold hover:text-link focus-within:text-link',
+                'hover:text-link focus-within:text-link w-full rounded-md bg-black px-4 py-2 text-xs font-bold text-white dark:bg-white dark:text-black',
                 { 'cursor-not-allowed opacity-60': isAuctionClosed }
               )}
               shallow
