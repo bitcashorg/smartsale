@@ -12,6 +12,8 @@ import { SessionProvider } from '@/hooks/use-session'
 import { sepolia } from 'wagmi/chains'
 import { eosEvmTestnet } from 'smartsale-env'
 import { SignatureRequestProvider } from './esr-dialog'
+import { useLocation } from 'react-use'
+import { useEffect } from 'react'
 
 const queryClient = new QueryClient()
 
@@ -22,6 +24,20 @@ export const wagmiConfig = getDefaultConfig({
 })
 
 export function Providers({ children, ...props }: ThemeProviderProps) {
+  const location = useLocation()
+
+  useEffect(() => {
+    window.parent &&
+      window.parent.postMessage(
+        {
+          eventType: 'url_change',
+          pathname: location.pathname,
+          search: location.search
+        },
+        '*' //TODO: restrict to app.bitcash.org
+      )
+  }, [location])
+
   return (
     <SessionProvider>
       <NextThemesProvider {...props}>
