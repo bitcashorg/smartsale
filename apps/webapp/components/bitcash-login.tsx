@@ -17,6 +17,7 @@ import { useEffect } from 'react'
 import QRCode from 'react-qr-code'
 import { useToggle } from 'react-use'
 import { TestnetUSDCred } from 'smartsale-contracts'
+import { platform } from 'smartsale-lib'
 import { useAccount } from 'wagmi'
 
 export function BitcashLoginButton() {
@@ -35,13 +36,17 @@ export function BitcashLoginButton() {
   }, [session, toggleOpen])
 
   useEffect(() => {
+    if (!loginUri || !open) return
+    if (platform.isMobile) {
+      // redirect with esr and callback on mobile
+      const params = new URLSearchParams()
+      params.append('esr', loginUri)
+      params.append('callback', encodeURIComponent(window.location.href))
+      window.location.href = `https://test.bitcash.org?${params.toString()}`
+    }
+
     // post request to parent if present
-    open &&
-      window.parent &&
-      console.log('emitting message', { eventType: 'esr', code: loginUri })
-    open &&
-      window.parent &&
-      window.parent.postMessage({ eventType: 'esr', code: loginUri }, '*')
+    window.parent.postMessage({ eventType: 'esr', code: loginUri }, '*')
   }, [open, loginUri])
 
   if (session)
