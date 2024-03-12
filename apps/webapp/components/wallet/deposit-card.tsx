@@ -84,7 +84,7 @@ export function DepositCard() {
                   value={amount}
                   onChange={e => setAmount(parseInt(e.target.value))}
                 />
-              </span>-
+              </span>
             </div>
             <Select onValueChange={chainId => setToken(usdtMap.get(chainId)!)}>
               <SelectTrigger id="currency-out">
@@ -106,8 +106,8 @@ export function DepositCard() {
               </SelectContent>
             </Select>
           </div>
-        </div >
-      </CardContent >
+        </div>
+      </CardContent>
       <CardFooter className="flex flex-col space-y-2">
         <Button
           className="w-full bg-[#bd1e59]"
@@ -117,6 +117,6 @@ export function DepositCard() {
           Deposit
         </Button>
       </CardFooter>
-    </Card >
+    </Card>
   )
 }
