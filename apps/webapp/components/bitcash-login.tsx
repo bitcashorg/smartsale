@@ -34,6 +34,16 @@ export function BitcashLoginButton() {
     toggleOpen(false)
   }, [session, toggleOpen])
 
+  useEffect(() => {
+    // post request to parent if present
+    open &&
+      window.parent &&
+      console.log('emitting message', { eventType: 'esr', code: loginUri })
+    open &&
+      window.parent &&
+      window.parent.postMessage({ eventType: 'esr', code: loginUri }, '*')
+  }, [open, loginUri])
+
   if (session)
     return (
       <Link href="/wallet" shallow>

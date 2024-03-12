@@ -42,6 +42,11 @@ function useSignatureRequestFn() {
     mutationFn: async (esr: SigningRequest) => {
       if (!session?.account) throw new Error('bitcash account not found')
 
+      console.log('emitting event to parent')
+      // post request to parent if present
+      window.parent &&
+        window.parent.postMessage({ eventType: 'esr', code: esr.encode() }, '*')
+
       // we show the qr optimistically
       setState({
         esr,
@@ -82,8 +87,6 @@ function useSignatureRequestFn() {
   })
 
   const toggleOpen = () => setState(({ open }) => ({ open: !open }))
-
-  console.log('esr-dialog state', state)
 
   return { toggleOpen, requestSignature, ...state, ...props }
 }
