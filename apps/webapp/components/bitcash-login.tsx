@@ -12,6 +12,7 @@ import {
 import { useErc20Balance } from '@/hooks/use-balance'
 import { useSession } from '@/hooks/use-session'
 import Link from 'next/link'
+import { useSearchParams } from 'next/navigation'
 import { useEffect } from 'react'
 // import { bitcashLogin } from '@/lib/esr'
 import QRCode from 'react-qr-code'
@@ -24,6 +25,7 @@ export function BitcashLoginButton() {
   const [open, toggleOpen] = useToggle(false)
   const { session, loginUri } = useSession()
   const { address } = useAccount()
+  const searchParams = useSearchParams()
   const balance = useErc20Balance({
     abi: TestnetUSDCred.abi,
     contract: TestnetUSDCred.address,
@@ -37,7 +39,7 @@ export function BitcashLoginButton() {
 
   useEffect(() => {
     if (!loginUri || !open) return
-    if (platform.isMobile) {
+    if (platform.isMobile || !searchParams.has('bitcash_explorer')) {
       // redirect with esr and callback on mobile
       const params = new URLSearchParams()
       params.append('esr', loginUri)

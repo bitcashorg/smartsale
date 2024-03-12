@@ -18,6 +18,7 @@ import { useMutation } from '@tanstack/react-query'
 import axios from 'axios'
 import { SigningRequest } from 'eosio-signing-request'
 import Link from 'next/link'
+import { useSearchParams } from 'next/navigation'
 import { ReactNode } from 'react'
 import QRCode from 'react-qr-code'
 import { useSetState } from 'react-use'
@@ -37,6 +38,7 @@ const defaultState: SignatureRequestState = {
 
 function useSignatureRequestFn() {
   const { session } = useSession()
+  const searchParams = useSearchParams()
   const [state, setState] = useSetState<SignatureRequestState>(defaultState)
 
   const { mutate: requestSignature, ...props } = useMutation({
@@ -44,7 +46,7 @@ function useSignatureRequestFn() {
       if (!session?.account) throw new Error('bitcash account not found')
 
       // redirect with esr and callback on mobile
-      if (platform.isMobile) {
+      if (platform.isMobile || !searchParams.has('bitcash_explorer')) {
         const params = new URLSearchParams()
         params.append('esr', esr.encode())
         params.append('callback', encodeURIComponent(window.location.href))
