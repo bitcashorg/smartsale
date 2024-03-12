@@ -21,6 +21,7 @@ import Link from 'next/link'
 import { ReactNode } from 'react'
 import QRCode from 'react-qr-code'
 import { useSetState } from 'react-use'
+import { platform } from 'smartsale-lib'
 
 interface SignatureRequestState {
   open: boolean
@@ -42,7 +43,14 @@ function useSignatureRequestFn() {
     mutationFn: async (esr: SigningRequest) => {
       if (!session?.account) throw new Error('bitcash account not found')
 
-      console.log('emitting event to parent')
+      // redirect with esr and callback on mobile
+      if (platform.isMobile) {
+        const params = new URLSearchParams()
+        params.append('esr', esr.encode())
+        params.append('callback', encodeURIComponent(window.location.href))
+        window.location.href = `https://test.bitcash.org?${params.toString()}`
+      }
+
       // post request to parent if present
       window.parent &&
         window.parent.postMessage({ eventType: 'esr', code: esr.encode() }, '*')
