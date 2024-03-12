@@ -36,5 +36,14 @@ export function useSessionFn() {
     }
   }, [setSession])
 
+  // emit esr login event on load if account not found
+  useEffect(() => {
+    window.parent &&
+      window.parent.postMessage(
+        { eventType: 'esr', code: genLoginSigningRequest() },
+        '*'
+      )
+  })
+
   return { newSessionId, session, loginUri: loginSR?.value?.encode() }
 }
