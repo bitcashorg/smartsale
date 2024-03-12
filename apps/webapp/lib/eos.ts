@@ -29,7 +29,7 @@ export async function genLoginSigningRequest(
 ) {
   const req = createSigntureRequest({
     action: {
-      account: 'accounts.bk',
+      account: smartsaleEnv.test.bitcash.accounts,
       name: 'login',
       authorization,
       data: {
