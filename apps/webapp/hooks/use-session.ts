@@ -13,8 +13,7 @@ export const [useSession, SessionProvider] = createContextHook(
 
 export function useSessionFn() {
   const [newSessionId] = useState(crypto.randomUUID())
-  const [session, setSession, removeSession] =
-    useLocalStorage<session>('bitcash-session')
+  const [session, setSession] = useLocalStorage<session>('bitcash-session')
   const loginSR = useAsync(() => genLoginSigningRequest(newSessionId))
 
   useEffect(() => {
@@ -37,20 +36,21 @@ export function useSessionFn() {
   }, [setSession])
 
   // emit esr login event on load if account not found
-  useEffect(() => {
-    const emitLoginEsr = async () => {
-      const esr = await genLoginSigningRequest()
-      window.parent &&
-        window.parent &&
-        console.log('emitting esr event', {
-          eventType: 'esr',
-          code: esr.encode()
-        })
-      window.parent &&
-        window.parent.postMessage({ eventType: 'esr', code: esr.encode() }, '*')
-    }
-    emitLoginEsr()
-  })
+  // NOTE: disabled
+  // useEffect(() => {
+  //   const emitLoginEsr = async () => {
+  //     const esr = await genLoginSigningRequest()
+  //     window.parent &&
+  //       window.parent &&
+  //       console.log('emitting esr event', {
+  //         eventType: 'esr',
+  //         code: esr.encode()
+  //       })
+  //     window.parent &&
+  //       window.parent.postMessage({ eventType: 'esr', code: esr.encode() }, '*')
+  //   }
+  //   emitLoginEsr()
+  // })
 
   return { newSessionId, session, loginUri: loginSR?.value?.encode() }
 }
