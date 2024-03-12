@@ -39,7 +39,6 @@ export function useSessionFn() {
   // emit esr login event on load if account not found
   useEffect(() => {
     const emitLoginEsr = async () => {
-      q
       const esr = await genLoginSigningRequest()
       window.parent &&
         window.parent &&
