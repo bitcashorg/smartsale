@@ -24,6 +24,7 @@ import { parseUnits } from 'viem'
 import { useAccount, useSwitchChain, useWriteContract } from 'wagmi'
 import { useSignatureRequest } from '../esr-dialog'
 import { Input } from '../ui/input'
+import { useGlobalData } from '@/hooks/use-global-data'
 
 const usdtMap = new Map<string, TokenContractData>()
 smartsaleEnv.test.usdt.forEach(t => {
@@ -34,13 +35,18 @@ smartsaleEnv.test.usdt.forEach(t => {
 export function DepositCard() {
   const { address } = useAccount()
   const { writeContract, ...other } = useWriteContract()
+  const { setGlobalError } = useGlobalData()
   const [amount, setAmount] = useState<number>(42)
   const { switchChain } = useSwitchChain()
   const [token, setToken] = useState<TokenContractData>(TestnetUSDT)
   const { requestSignature } = useSignatureRequest()
 
   const deposit = async () => {
-    if (!amount || !address) return
+    if (!address)
+      setGlobalError(
+        'EVM Adress not found. Make sure your wallet is connected.'
+      )
+    if (!amount) return
     // console.log('deposit', token)
 
     if (token.chainType === 'evm') {
