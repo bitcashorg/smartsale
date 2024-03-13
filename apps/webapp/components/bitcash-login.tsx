@@ -40,14 +40,11 @@ export function BitcashLoginButton() {
   useEffect(() => {
     if (!loginUri || !open) return
     // post request to parent if present
-    if (window.parent) {
-      return window.parent.postMessage(
-        { eventType: 'esr', code: loginUri },
-        '*'
-      )
-    }
+    window.parent &&
+      window.parent.postMessage({ eventType: 'esr', code: loginUri }, '*')
+
     // redirect with esr and callback on mobile
-    if (platform.isMobile || !searchParams.has('bitcash_explorer')) {
+    if (platform.isMobile && !searchParams.has('bitcash_explorer')) {
       const params = new URLSearchParams()
       params.append('esr_code', loginUri.replace('esr://', ''))
       const callbackUrl = `${window.location.href}?session_id=${newSessionId}`
