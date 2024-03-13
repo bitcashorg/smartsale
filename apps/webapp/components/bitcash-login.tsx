@@ -42,7 +42,7 @@ export function BitcashLoginButton() {
     if (platform.isMobile || !searchParams.has('bitcash_explorer')) {
       // redirect with esr and callback on mobile
       const params = new URLSearchParams()
-      params.append('esr_code', loginUri)
+      params.append('esr_code', loginUri.replace('esr://', ''))
       const callbackUrl = `${window.location.href}?session_id=${newSessionId}`
       const encodedCallbackUrl = encodeURIComponent(callbackUrl)
       params.append('callback', encodedCallbackUrl)
