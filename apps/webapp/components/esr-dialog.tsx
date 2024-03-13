@@ -55,8 +55,12 @@ function useSignatureRequestFn() {
       }
 
       // post request to parent if present
-      window.parent &&
-        window.parent.postMessage({ eventType: 'esr', code: esr.encode() }, '*')
+      if (window.parent) {
+        return window.parent.postMessage(
+          { eventType: 'esr', code: esr.encode() },
+          '*'
+        )
+      }
 
       // we show the qr optimistically
       setState({
@@ -110,6 +114,9 @@ const [useSignatureRequest, UseSignatureRequestProvider] = createContextHook(
 function EsrDialog() {
   const { open, toggleOpen, esr } = useSignatureRequest()
   const code = esr?.encode().replace('esr://', '') || ''
+
+  // never show the qr on mobibile
+  if (platform.isMobile) return null
   return (
     <Dialog open={open} onOpenChange={toggleOpen}>
       {/* <DialogTrigger asChild>

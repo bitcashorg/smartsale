@@ -39,8 +39,15 @@ export function BitcashLoginButton() {
 
   useEffect(() => {
     if (!loginUri || !open) return
+    // post request to parent if present
+    if (window.parent) {
+      return window.parent.postMessage(
+        { eventType: 'esr', code: loginUri },
+        '*'
+      )
+    }
+    // redirect with esr and callback on mobile
     if (platform.isMobile || !searchParams.has('bitcash_explorer')) {
-      // redirect with esr and callback on mobile
       const params = new URLSearchParams()
       params.append('esr_code', loginUri.replace('esr://', ''))
       const callbackUrl = `${window.location.href}?session_id=${newSessionId}`
@@ -49,8 +56,6 @@ export function BitcashLoginButton() {
       params.append('callback', encodedCallbackUrl)
       window.location.href = `https://test.bitcash.org/login?${params.toString()}`
     }
-    // post request to parent if present
-    window.parent.postMessage({ eventType: 'esr', code: loginUri }, '*')
   }, [open, loginUri, searchParams])
 
   if (session)
@@ -61,6 +66,9 @@ export function BitcashLoginButton() {
         </Button>
       </Link>
     )
+
+  // never show the qr on mobibile
+  if (platform.isMobile) return null
 
   return (
     <Dialog open={open} onOpenChange={toggleOpen}>
