@@ -51,7 +51,7 @@ function useSignatureRequestFn() {
         const params = new URLSearchParams()
         params.append('esr_code', esr.encode())
         params.append('callback', encodeURIComponent(window.location.href))
-        window.location.href = `https://test.bitcash.org/esr?${params.toString()}`
+        window.location.href = `https://test.bitcash.org/login?${params.toString()}`
       }
 
       // post request to parent if present

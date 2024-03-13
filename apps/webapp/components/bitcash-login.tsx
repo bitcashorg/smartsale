@@ -45,7 +45,7 @@ export function BitcashLoginButton() {
       params.append('esr_code', loginUri)
       params.append('callback', encodeURIComponent(window.location.href))
       params.append('session_id', newSessionId)
-      window.location.href = `https://test.bitcash.org/esr?${params.toString()}`
+      window.location.href = `https://test.bitcash.org/login?${params.toString()}`
     }
 
     // post request to parent if present
