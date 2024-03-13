@@ -42,10 +42,12 @@ export function useSessionFn() {
   useEffect(() => {
     const session_id = searchParams.get('session_id')
     const getSession = async () => {
+      console.log(`getting session ${session_id}`)
       const response = await fetchJson<any>('/api/session', {
         method: 'POST',
         body: JSON.stringify({ session_id })
       })
+      console.log(`getting session response`, response)
       if (!response.data.session) return
       console.log('✅ session', response.data.session)
       setSession(response.data.session)
