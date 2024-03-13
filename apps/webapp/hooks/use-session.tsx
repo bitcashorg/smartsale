@@ -41,6 +41,7 @@ export function useSessionFn() {
 
   useEffect(() => {
     const session_id = searchParams.get('session_id')
+    console.log(`url session effect  ${session_id}`)
     const getSession = async () => {
       console.log(`getting session ${session_id}`)
       const response = await fetchJson<any>('/api/session', {
