@@ -101,7 +101,9 @@ function useSignatureRequestFn() {
     }
   })
 
-  const toggleOpen = () => setState(({ open }) => ({ open: !open }))
+  const toggleOpen = () =>
+    !searchParams.has('bitcash_explorer') &&
+    setState(({ open }) => ({ open: !open }))
 
   return { toggleOpen, requestSignature, ...state, ...props }
 }
@@ -112,11 +114,15 @@ const [useSignatureRequest, UseSignatureRequestProvider] = createContextHook(
 )
 
 function EsrDialog() {
+  const searchParams = useSearchParams()
   const { open, toggleOpen, esr } = useSignatureRequest()
   const code = esr?.encode().replace('esr://', '') || ''
 
-  // never show the qr on mobibile
-  if (platform.isMobile) return null
+  // never show the qr on mobile or bitcash explorer
+  const hideQr =
+    platform.isMobile || searchParams.has('bitcash_explorer') || !code
+
+  if (hideQr) return <div />
   return (
     <Dialog open={open} onOpenChange={toggleOpen}>
       {/* <DialogTrigger asChild>

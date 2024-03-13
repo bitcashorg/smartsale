@@ -34,8 +34,8 @@ export function BitcashLoginButton() {
   })
 
   useEffect(() => {
-    toggleOpen(false)
-  }, [session, toggleOpen])
+    !searchParams.has('bitcash_explorer') && toggleOpen(false)
+  }, [session, toggleOpen, searchParams])
 
   useEffect(() => {
     if (!loginUri || !open) return
@@ -67,54 +67,57 @@ export function BitcashLoginButton() {
       </Link>
     )
 
-  // never show the qr on mobibile
-  if (platform.isMobile) return null
+  // never show the qr on mobile or bitcash explorer
+  const hideQr = platform.isMobile || searchParams.has('bitcash_explorer')
 
   return (
     <Dialog open={open} onOpenChange={toggleOpen}>
       <DialogTrigger asChild>
         <Button className="hover:scale-105">Connect Bitcash App</Button>
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[425px]">
-        <DialogHeader>
-          <DialogTitle>Connect Bitcash App</DialogTitle>
-          <DialogDescription>
-            Scan this qr code on your bitcash app and sign.
-          </DialogDescription>
-        </DialogHeader>
-        {loginUri ? (
-          <div
-            style={{
-              height: 'auto',
-              margin: '0 auto',
-              maxWidth: 300,
-              width: '100%',
-              background: 'white',
-              padding: 10,
-              borderRadius: 4,
-              border: '1px solid #e5e7eb'
-            }}
-          >
-            <QRCode
-              size={256}
+
+      {!hideQr ? (
+        <DialogContent className="sm:max-w-[425px]">
+          <DialogHeader>
+            <DialogTitle>Connect Bitcash App</DialogTitle>
+            <DialogDescription>
+              Scan this qr code on your bitcash app and sign.
+            </DialogDescription>
+          </DialogHeader>
+          {loginUri ? (
+            <div
               style={{
                 height: 'auto',
-                maxWidth: '100%',
+                margin: '0 auto',
+                maxWidth: 300,
                 width: '100%',
-                borderRadius: 4
+                background: 'white',
+                padding: 10,
+                borderRadius: 4,
+                border: '1px solid #e5e7eb'
               }}
-              value={loginUri.replace('esr://', '')}
-              viewBox={`0 0 256 256`}
-            />
-          </div>
-        ) : null}
-        <DialogFooter className="flex sm:justify-center ">
-          <Link href={'https://app.bitcash.org/?share=JVnL7qzrU '}>
-            <Button>Get Bitcash App</Button>
-          </Link>
-          <Button>Sign on Desktop</Button>
-        </DialogFooter>
-      </DialogContent>
+            >
+              <QRCode
+                size={256}
+                style={{
+                  height: 'auto',
+                  maxWidth: '100%',
+                  width: '100%',
+                  borderRadius: 4
+                }}
+                value={loginUri.replace('esr://', '')}
+                viewBox={`0 0 256 256`}
+              />
+            </div>
+          ) : null}
+          <DialogFooter className="flex sm:justify-center ">
+            <Link href={'https://app.bitcash.org/?share=JVnL7qzrU '}>
+              <Button>Get Bitcash App</Button>
+            </Link>
+            <Button>Sign on Desktop</Button>
+          </DialogFooter>
+        </DialogContent>
+      ) : null}
     </Dialog>
   )
 }
