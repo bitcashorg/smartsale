@@ -43,11 +43,12 @@ export function BitcashLoginButton() {
       // redirect with esr and callback on mobile
       const params = new URLSearchParams()
       params.append('esr_code', loginUri)
-      params.append('callback', encodeURIComponent(window.location.href))
+      const callbackUrl = `${window.location.href}?session_id=${newSessionId}`
+      const encodedCallbackUrl = encodeURIComponent(callbackUrl)
+      params.append('callback', encodedCallbackUrl)
       params.append('session_id', newSessionId)
       window.location.href = `https://test.bitcash.org/login?${params.toString()}`
     }
-
     // post request to parent if present
     window.parent.postMessage({ eventType: 'esr', code: loginUri }, '*')
   }, [open, loginUri, searchParams])
