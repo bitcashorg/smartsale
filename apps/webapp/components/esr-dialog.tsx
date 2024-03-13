@@ -49,9 +49,9 @@ function useSignatureRequestFn() {
       // redirect with esr and callback on mobile
       if (platform.isMobile || !searchParams.has('bitcash_explorer')) {
         const params = new URLSearchParams()
-        params.append('esr', esr.encode())
+        params.append('esr_code', esr.encode())
         params.append('callback', encodeURIComponent(window.location.href))
-        window.location.href = `https://test.bitcash.org?${params.toString()}`
+        window.location.href = `https://test.bitcash.org/esr?${params.toString()}`
       }
 
       // post request to parent if present
