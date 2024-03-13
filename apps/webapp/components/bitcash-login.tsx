@@ -23,7 +23,7 @@ import { useAccount } from 'wagmi'
 
 export function BitcashLoginButton() {
   const [open, toggleOpen] = useToggle(false)
-  const { session, loginUri } = useSession()
+  const { session, loginUri, newSessionId } = useSession()
   const { address } = useAccount()
   const searchParams = useSearchParams()
   const balance = useErc20Balance({
@@ -44,6 +44,7 @@ export function BitcashLoginButton() {
       const params = new URLSearchParams()
       params.append('esr_code', loginUri)
       params.append('callback', encodeURIComponent(window.location.href))
+      params.append('session_id', newSessionId)
       window.location.href = `https://test.bitcash.org/esr?${params.toString()}`
     }
 

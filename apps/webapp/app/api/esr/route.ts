@@ -1,4 +1,3 @@
-import { esrOptions } from '@/lib/eos'
 import { APIClient } from '@wharfkit/antelope'
 import {
   AbiProvider,

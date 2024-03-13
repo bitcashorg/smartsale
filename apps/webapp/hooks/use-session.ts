@@ -3,15 +3,16 @@ import { supabase } from '@/lib/supabase'
 import { useEffect, useState } from 'react'
 import { useAsync, useLocalStorage } from 'react-use'
 import { session } from 'smartsale-db'
-
 import { createContextHook } from '@blockmatic/hooks-utils'
-
+import { useSearchParams } from 'next/navigation'
+import { fetchJson } from 'smartsale-lib'
 export const [useSession, SessionProvider] = createContextHook(
   useSessionFn,
   'You must wrap your application with <SessionProvider /> in order to useSession().'
 )
 
 export function useSessionFn() {
+  const searchParams = useSearchParams()
   const [newSessionId] = useState(crypto.randomUUID())
   const [session, setSession] = useLocalStorage<session>('bitcash-session')
   const loginSR = useAsync(() => genLoginSigningRequest(newSessionId))
@@ -34,6 +35,21 @@ export function useSessionFn() {
       supabase.removeChannel(channel)
     }
   }, [setSession])
+
+  useEffect(() => {
+    const session_id = searchParams.get('session_id')
+    const getSession = async () => {
+      const response = await fetchJson<any>('/api/session', {
+        method: 'POST',
+        body: JSON.stringify({ session_id })
+      })
+      if (!response.data.session) return
+      console.log('✅ session', response.data.session)
+      setSession(response.data.session)
+      history.replaceState({}, document.title, window.location.pathname)
+    }
+    if (session_id) getSession()
+  }, [searchParams])
 
   // emit esr login event on load if account not found
   // NOTE: disabled
