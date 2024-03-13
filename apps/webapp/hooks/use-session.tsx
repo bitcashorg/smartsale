@@ -6,7 +6,10 @@ import { session } from 'smartsale-db'
 import { createContextHook } from '@blockmatic/hooks-utils'
 import { useSearchParams } from 'next/navigation'
 import { fetchJson } from 'smartsale-lib'
-export const [useSession, SessionProvider] = createContextHook(
+import { ReactNode } from 'react'
+import React from 'react'
+
+const [useSession, SessionProviderInner] = createContextHook(
   useSessionFn,
   'You must wrap your application with <SessionProvider /> in order to useSession().'
 )
@@ -70,3 +73,13 @@ export function useSessionFn() {
 
   return { newSessionId, session, loginUri: loginSR?.value?.encode() }
 }
+
+function SessionProvider({ children }: { children: ReactNode }) {
+  return (
+    <React.Suspense fallback={<div />}>
+      <SessionProviderInner>{children}</SessionProviderInner>
+    </React.Suspense>
+  )
+}
+
+export { SessionProvider, useSession }
