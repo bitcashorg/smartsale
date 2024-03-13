@@ -38,6 +38,14 @@ export function Providers({ children, ...props }: ThemeProviderProps) {
       )
   }, [location])
 
+  useEffect(() => {
+    async function loadVConsoleModule() {
+      await import('@/lib/devtools')
+    }
+
+    loadVConsoleModule()
+  }, [])
+
   return (
     <NextThemesProvider {...props}>
       <GlobalDataProvider>
