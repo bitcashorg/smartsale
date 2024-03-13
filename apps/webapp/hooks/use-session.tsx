@@ -71,6 +71,8 @@ export function useSessionFn() {
   //   emitLoginEsr()
   // })
 
+  console.log('🙌🏻 loginSR', loginSR.value?.encode().replace('esr://', ''))
+
   return { newSessionId, session, loginUri: loginSR?.value?.encode() }
 }
 
