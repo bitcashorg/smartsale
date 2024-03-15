@@ -129,7 +129,8 @@ export async function getEosBalance(account: string) {
     account,
     'EOS'
   )
-  return response[0].value.toString()
+  console.log('getEOSBalance', response)
+  return response[0]?.value.toString() || ''
 }
 
 export async function getBitUsdBalance(account: string) {
@@ -138,5 +139,10 @@ export async function getBitUsdBalance(account: string) {
     table: 'stablev2',
     scope: Name.from(account)
   })
-  return response.rows[0]?.balance.quantity.replace('BITUSD', '') || 'O'
+
+  // * We first find the bitUSD on the account's balance.
+  // ? We can use this for the user's preference and show their preferred currency to convert...
+  return response.rows.find(row => row.balance.quantity.includes('BITUSD'))
+    ?.balance.quantity.replace('BITUSD', '')
+    || 'O'
 }
