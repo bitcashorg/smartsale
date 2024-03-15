@@ -2,7 +2,7 @@
 
 import { useSession } from '@/hooks/use-session'
 import { ConnectButton } from '@rainbow-me/rainbowkit'
-import { BitcashLoginButton } from './bitcash-login'
+import { BitcashAccessButton } from './bitcash-access'
 import React from 'react'
 
 export function HeaderButtons() {
@@ -11,7 +11,7 @@ export function HeaderButtons() {
     <>
       {/* <ThemeToggle/> */}
 
-      <BitcashLoginButton />
+      <BitcashAccessButton />
 
       {session ? (
         <span className="[&_button]:!rounded-md">
