@@ -96,8 +96,8 @@ export function BitcashAccessButton({
 
 interface BitcashAccessProps {
   defaultContent?: BitcashAccessContentType
-  buttonLabel: string
-  buttonStyle: VariantProps<typeof buttonVariants>
+  buttonLabel?: string
+  buttonStyle?: VariantProps<typeof buttonVariants>
 }
 
 export type BitcashAccessContentType = 'login' | 'register'

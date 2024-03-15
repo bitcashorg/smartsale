@@ -21,11 +21,11 @@ export function Header({ className }: { className?: string }) {
   const { scrollYProgress } = useScroll()
   const [visible, setVisible] = React.useState(true)
   const [activeMenu, setActiveMenu] = React.useState('')
-  const headerRef = React.useRef<HTMLElement>(null)
 
   React.useEffect(() => {
     const handleClick = (e: MouseEvent) => {
-      if (headerRef.current && (e.target as Node).contains(headerRef.current)) {
+      const menuDropdownContainerNode = document.getElementById(activeMenu)
+      if (activeMenu && menuDropdownContainerNode && !menuDropdownContainerNode?.contains(e.target as Node)) {
         setActiveMenu('')
       }
     }
@@ -35,7 +35,7 @@ export function Header({ className }: { className?: string }) {
     return () => {
       document.removeEventListener('click', handleClick)
     }
-  }, [headerRef])
+  }, [activeMenu])
 
   useMotionValueEvent(scrollYProgress, 'change', current => {
     // Check if current is not undefined and is a number
@@ -82,7 +82,6 @@ export function Header({ className }: { className?: string }) {
             'fixed inset-x-0 top-0 z-[5000] mx-auto flex h-16 w-full shrink-0 border-b border-transparent bg-gradient-to-b from-background/10 via-background/50 to-background/80 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] backdrop-blur-xl dark:border-white/[0.2]',
             className
           )}
-          ref={headerRef}
         >
           <div className="container flex items-center justify-between h-16 px-4 max-w-screen-2xl">
             <div className="flex items-center">
@@ -103,6 +102,7 @@ export function Header({ className }: { className?: string }) {
                 href="/wallet"
                 text="wallet"
                 onClick={() => setActiveMenu('')}
+                desktopOnly
               />
               <MenuItem
                 active={activeMenu}
@@ -152,8 +152,8 @@ function HeaderLink({
     <Button
       asChild
       className={cn('-ml-2', {
-        'hidden md:block': desktopOnly,
-        'block md:hidden': mobileOnly
+        'hidden md:flex': desktopOnly,
+        'flex md:hidden': mobileOnly
       })}
       variant="link"
     >
@@ -176,7 +176,7 @@ function MenuItem({
   children?: React.ReactNode
 }) {
   return (
-    <div className="relative">
+    <div className="relative" id={item}>
       <motion.button
         transition={{ duration: 0.3 }}
         className="text-sm text-black cursor-pointer md:text-md whitespace-nowrap hover:opacity-90 dark:text-white"
