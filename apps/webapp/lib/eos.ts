@@ -129,8 +129,7 @@ export async function getEosBalance(account: string) {
     account,
     'EOS'
   )
-  console.log('getEOSBalance', response)
-  return response[0]?.value.toString() || ''
+  return response[0]?.value.toString() || '0'
 }
 
 export async function getBitUsdBalance(account: string) {
