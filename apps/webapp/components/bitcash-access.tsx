@@ -1,28 +1,31 @@
 'use client'
-import { Button } from '@/components/ui/button'
+import { LoginDialogContent } from '@/components/dialog-content/login'
+import { RegisterDialogContent } from '@/components/dialog-content/register'
+import { Button, buttonVariants } from '@/components/ui/button'
 import {
   Dialog,
   DialogContent,
-  DialogDescription,
-  DialogFooter,
-  DialogHeader,
-  DialogTitle,
   DialogTrigger
 } from '@/components/ui/dialog'
 import { useErc20Balance } from '@/hooks/use-balance'
 import { useSession } from '@/hooks/use-session'
+import { VariantProps } from 'class-variance-authority'
 import Link from 'next/link'
 import { useSearchParams } from 'next/navigation'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 // import { bitcashLogin } from '@/lib/esr'
-import QRCode from 'react-qr-code'
 import { useToggle } from 'react-use'
 import { TestnetUSDCred } from 'smartsale-contracts'
 import { platform } from 'smartsale-lib'
 import { useAccount } from 'wagmi'
 
-export function BitcashLoginButton() {
+export function BitcashAccessButton({
+  defaultContent = 'login',
+  buttonLabel = 'Connect Bitcash App',
+  buttonStyle
+}: BitcashAccessProps) {
   const [open, toggleOpen] = useToggle(false)
+  const [dialogContent, setDialogContent] = useState<BitcashAccessContentType>(defaultContent)
   const { session, loginUri, newSessionId } = useSession()
   const { address } = useAccount()
   const searchParams = useSearchParams()
@@ -32,13 +35,14 @@ export function BitcashLoginButton() {
     address: address || '0x',
     chainId: TestnetUSDCred.chainId
   })
+  const isLogin = dialogContent === 'login'
 
   useEffect(() => {
-    !searchParams.has('bitcash_explorer') && toggleOpen(false)
-  }, [session, toggleOpen, searchParams])
+    (!searchParams.has('bitcash_explorer') && isLogin) && toggleOpen(false)
+  }, [session, searchParams])
 
   useEffect(() => {
-    if (!loginUri || !open) return
+    if (!loginUri || !open || !isLogin) return
     // post request to parent if present
     window.parent &&
       window.parent.postMessage({ eventType: 'esr', code: loginUri }, '*')
@@ -55,7 +59,7 @@ export function BitcashLoginButton() {
     }
   }, [open, loginUri, searchParams])
 
-  if (session)
+  if (session && isLogin)
     return (
       <Link href="/wallet" shallow>
         <Button>
@@ -70,51 +74,30 @@ export function BitcashLoginButton() {
   return (
     <Dialog open={open} onOpenChange={toggleOpen}>
       <DialogTrigger asChild>
-        <Button className="hover:scale-105">Connect Bitcash App</Button>
+        <Button
+          className="hover:scale-105 focus-within:scale-105"
+          {...buttonStyle}
+        >
+          {buttonLabel}
+        </Button>
       </DialogTrigger>
 
-      {!hideQr ? (
-        <DialogContent className="sm:max-w-[425px]">
-          <DialogHeader>
-            <DialogTitle>Connect Bitcash App</DialogTitle>
-            <DialogDescription>
-              Scan this qr code on your bitcash app and sign.
-            </DialogDescription>
-          </DialogHeader>
-          {loginUri ? (
-            <div
-              style={{
-                height: 'auto',
-                margin: '0 auto',
-                maxWidth: 300,
-                width: '100%',
-                background: 'white',
-                padding: 10,
-                borderRadius: 4,
-                border: '2px solid #e5e7eb'
-              }}
-            >
-              <QRCode
-                size={256}
-                style={{
-                  height: 'auto',
-                  maxWidth: '100%',
-                  width: '100%',
-                  borderRadius: 4
-                }}
-                value={loginUri.replace('esr://', '')}
-                viewBox={`0 0 256 256`}
-              />
-            </div>
-          ) : null}
-          <DialogFooter className="flex sm:justify-center ">
-            <Link href={'https://app.bitcash.org/?share=JVnL7qzrU '}>
-              <Button>Get Bitcash App</Button>
-            </Link>
-            <Button>Sign on Desktop</Button>
-          </DialogFooter>
-        </DialogContent>
-      ) : null}
+      <DialogContent className="sm:max-w-[425px]">
+        {(!hideQr && isLogin) && (
+          <LoginDialogContent updateDialogContent={setDialogContent} />
+        )}
+        {(!isLogin) && (
+          <RegisterDialogContent updateDialogContent={setDialogContent} />
+        )}
+      </DialogContent>
     </Dialog>
   )
 }
+
+interface BitcashAccessProps {
+  defaultContent?: BitcashAccessContentType
+  buttonLabel?: string
+  buttonStyle?: VariantProps<typeof buttonVariants>
+}
+
+export type BitcashAccessContentType = 'login' | 'register'
