@@ -34,26 +34,30 @@ export const TypewriterEffect = ({
     let animationController: AnimationPlaybackControls | undefined
 
     if (isInView) {
-      animationController = animate(
-        'span',
-        {
-          display: 'inline-block',
-          opacity: 1
-        },
-        {
-          duration: 0.14,
-          delay: stagger(0.1),
-          ease: 'easeInOut'
-        }
-      )
+      try {
+        animationController = animate(
+          'span',
+          {
+            display: 'inline-block',
+            opacity: 1
+          },
+          {
+            duration: 0.14,
+            delay: stagger(0.1),
+            ease: 'easeInOut'
+          }
+        )
 
-      animationController.then(() => {
-        console.log('Animation ended.')
-        if (onAnimationEnd) {
-          console.log('Calling onAnimationEnd.')
-          onAnimationEnd()
-        }
-      })
+        animationController.then(() => {
+          console.log('Animation ended.')
+          if (onAnimationEnd) {
+            console.log('Calling onAnimationEnd.')
+            onAnimationEnd()
+          }
+        })
+      } catch (error) {
+        console.error('TypewriterEffect animation error:', error)
+      }
     }
 
     return () => {
@@ -68,7 +72,7 @@ export const TypewriterEffect = ({
   const renderWords = () => {
     return (
       <motion.div ref={scope} className="inline">
-        {wordsArray.map((word, idx) => {
+        {wordsArray.length > 0 && wordsArray.map((word, idx) => {
           return (
             <div key={`word-${idx}`} className="inline-block">
               {word.text.map((char, index) => (

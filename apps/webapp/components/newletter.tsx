@@ -1,6 +1,13 @@
+'use client'
+
 import { BackgroundBeams } from '@/components/ui/background-beans'
+import { usePathname } from 'next/navigation'
 
 export function Newsletter() {
+  const pathname = usePathname()
+
+  if (pathname !== '/') return null
+
   // TODO: Newsletter
   return (
     <section className="relative -mt-20 min-h-[50vh] w-screen py-48">

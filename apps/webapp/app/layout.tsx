@@ -12,6 +12,8 @@ import '@rainbow-me/rainbowkit/styles.css'
 import React from 'react'
 
 export default function RootLayout({ children, ...props }: RootLayoutProps) {
+  // const pathname = headers().get('referer') ? new URL(headers().get('referer') || '')?.pathname || 'home' : ''
+
   return (
     <html lang="en" suppressHydrationWarning>
       <body
