@@ -1,5 +1,5 @@
 import { EVMTokenContractData, SepoliaUSDT, TestnetUSDCred, TestnetUSDT } from 'smartsale-contracts'
-import { runPromisesInSeries } from '~/lib/util'
+import { runPromisesInSeries } from '~/utils'
 
 import {
   Address,

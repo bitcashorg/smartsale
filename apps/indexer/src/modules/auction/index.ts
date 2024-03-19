@@ -1,12 +1,7 @@
 import { Log, stringify } from 'viem'
-import { client } from '~/services/viem-client'
+import { client } from '~/viem-client'
 import { TestnetEasyAuction } from 'smartsale-contracts'
-import {
-  bigintToPostgresTimestamp,
-  getEvents,
-  getTokenDetails,
-  runPromisesInSeries,
-} from '~/lib/util'
+import { bigintToPostgresTimestamp, getEvents, getTokenDetails, runPromisesInSeries } from '~/utils'
 import { db, Prisma } from 'smartsale-db'
 import { NewAuctionEvent, NewSellOrderEvent, NewUserEvent } from '~/types'
 

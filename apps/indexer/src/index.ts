@@ -4,10 +4,10 @@ const app = express()
 const port = 8080
 
 // Assuming `startIndexer` initializes Viem and sets it up for use
-import { startIndexer } from './mods/auction'
-import { client } from './services/viem-client'
-import { startIssuer } from './mods/convert/evm-deposits'
-import { listenToEos, readEosHistory } from './mods/convert/eos-deposits'
+import { startIndexer } from './modules/auction'
+import { client } from './viem-client'
+import { startIssuer } from './modules/swaps/evm-deposits'
+import { listenToEos } from './modules/swaps/eos-deposits'
 
 async function getCurrentBlockHeight() {
   try {
@@ -21,7 +21,6 @@ async function getCurrentBlockHeight() {
 
 async function main() {
   console.log('indexer operational')
-  readEosHistory()
   // listenToEos()
   // startIndexer()
   // startIssuer()

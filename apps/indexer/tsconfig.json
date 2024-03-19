@@ -1,6 +1,6 @@
 {
   "extends": "../../packages/tsconfig/node16.json",
-  "include": ["./src/**/*"],
+  "include": ["./src/**/*", "src/utils.ts"],
   "exclude": ["node_modules"],
   "compilerOptions": {
     "sourceMap": true,
