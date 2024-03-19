@@ -3,8 +3,8 @@ import { BackgroundBeams } from '@/components/ui/background-beans'
 export function Newsletter() {
   // TODO: Newsletter
   return (
-    <section className="relative -mt-20 min-h-[50vh] w-full py-48">
-      <div className="mx-auto max-w-screen-xl p-4 lg:px-6 lg:py-5">
+    <section className="relative -mt-20 min-h-[50vh] w-screen py-48">
+      <div className="mx-auto w-full max-w-screen-xl p-4 lg:px-6 lg:py-5">
         <div className="mx-auto max-w-screen-md sm:text-center">
           <h2 className="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
             Sign up for our newsletter

@@ -1,7 +1,7 @@
 'use client'
 
 import { cn } from '@/lib/utils'
-import { motion, stagger, useAnimate, useInView } from 'framer-motion'
+import { AnimationPlaybackControls, motion, stagger, useAnimate, useInView, usePresence } from 'framer-motion'
 import { useEffect } from 'react'
 
 export const TypewriterEffect = ({
@@ -26,11 +26,15 @@ export const TypewriterEffect = ({
     }
   })
 
+  const [isPresent, safeToRemove] = usePresence()
   const [scope, animate] = useAnimate()
   const isInView = useInView(scope)
+
   useEffect(() => {
+    let animationController: AnimationPlaybackControls | undefined
+
     if (isInView) {
-      animate(
+      animationController = animate(
         'span',
         {
           display: 'inline-block',
@@ -41,16 +45,25 @@ export const TypewriterEffect = ({
           delay: stagger(0.1),
           ease: 'easeInOut'
         }
-      ).then(() => {
-        console.log('Animation ended.')
+      )
 
+      animationController.then(() => {
+        console.log('Animation ended.')
         if (onAnimationEnd) {
           console.log('Calling onAnimationEnd.')
           onAnimationEnd()
         }
       })
     }
-  }, [isInView])
+
+    return () => {
+      if (animationController) {
+        // console.log('TypewriterEffect unmounted.');
+        // (animationController as AnimationPlaybackControls).stop()
+        !isPresent && safeToRemove()
+      }
+    }
+  }, [isInView, isPresent])
 
   const renderWords = () => {
     return (

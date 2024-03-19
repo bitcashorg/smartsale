@@ -5,7 +5,6 @@ import { Toaster } from 'react-hot-toast'
 import '@/app/globals.css'
 import { ErrorModal } from '@/components/error-dialog'
 import { Header } from '@/components/header'
-import { Newsletter } from '@/components/newletter'
 import { Providers } from '@/components/providers'
 import { cn } from '@/lib/utils'
 import '@rainbow-me/rainbowkit/styles.css'
@@ -16,7 +15,7 @@ export default function RootLayout({ children, ...props }: RootLayoutProps) {
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          'font-sans antialiased overflow-x-hidden',
+          'font-sans antialiased',
           GeistSans.variable,
           GeistMono.variable
         )}
@@ -31,13 +30,10 @@ export default function RootLayout({ children, ...props }: RootLayoutProps) {
             enableSystem
             disableTransitionOnChange
           >
-            <div className="flex flex-col w-full h-full items-start justify-start">
+            <div className="flex flex-col h-full">
               <Header />
-              <main className="flex flex-col flex-1 py-5">
-                <div className="container">
-                  {children}
-                </div>
-                <Newsletter />
+              <main className="container flex flex-col flex-1 py-5">
+                {children}
               </main>
             </div>
             <ErrorModal />

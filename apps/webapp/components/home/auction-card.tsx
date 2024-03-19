@@ -1,5 +1,5 @@
 import { CardBody, CardContainer, CardItem } from '@/components/ui/3d-card'
-import { Button } from '@/components/ui/button'
+import { Button, buttonVariants } from '@/components/ui/button'
 import { Project } from '@/lib/projects'
 import { cn } from '@/lib/utils'
 import Image from 'next/image'
@@ -19,11 +19,11 @@ export function AuctionCard(props: Project) {
   const isAuctionClosed = badgeText === 'AUCTION CLOSED'
 
   return (
-    <CardContainer className="w-full">
-      <Link
-        href={linkPath}
-        shallow={true}
-      >
+    <Link
+      href={linkPath}
+      shallow={true}
+    >
+      <CardContainer className="w-full">
         <CardBody className="group/card relative size-auto  rounded-xl border border-black/[0.1] bg-gray-50 p-6 dark:border-white/[0.2] dark:bg-black dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] sm:max-w-[30rem]  ">
           <CardItem
             translateZ="75"
@@ -66,38 +66,42 @@ export function AuctionCard(props: Project) {
           </CardItem>
           <div className="mt-10 flex items-center justify-between">
             <CardItem
-              translateZ={20}
+              translateZ={33}
               className="rounded-xl px-4 py-2 text-xs font-normal dark:text-white hover:text-link focus-within:text-link"
 
             >
               <Button
                 variant="ghost"
+                className="px-2 py-1"
                 onClick={(e) => {
-                  console.log('clicked')
-                    (e.target as Node).parentElement?.parentElement?.click()
+                  (e.target as Node).parentElement?.parentElement?.click()
                 }}
               >
                 See more →
               </Button>
             </CardItem>
             {!isAuctionClosed && (
-              <CardItem translateZ={20} as="span">
+              <CardItem translateZ={33} as="span">
                 <Link
                   href={isAuctionClosed ? '#' : `${linkPath}/auction`}
                   className={cn(
-                    'hover:text-link focus-within:text-link w-full rounded-md bg-black px-4 py-2 text-xs font-bold text-white dark:bg-white dark:text-black',
+                    buttonVariants({
+                      variant: 'default',
+                      size: 'lg',
+                    }),
+                    'font-bold text-md',
                     { 'cursor-not-allowed opacity-60': isAuctionClosed }
                   )}
                   shallow
                 >
-                  Register Now!
+                  Auction Now!
                 </Link>
               </CardItem>
             )}
           </div>
         </CardBody>
-      </Link>
-    </CardContainer>
+      </CardContainer>
+    </Link>
   )
 }
 

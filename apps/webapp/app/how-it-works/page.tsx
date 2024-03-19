@@ -1,12 +1,12 @@
 import Image from 'next/image'
 
 const howItWorksClassNames = {
-  container: 'flex flex-col gap-3 lg:px-20 max-w-screen-xl',
-  h1: 'mb-4 text-2xl font-bold',
-  h2: 'mt-6 mb-4 text-xl font-semibold',
-  paragraph: 'my-2',
+  container: 'flex flex-col gap-10 py-24 w-full max-w-screen-lg',
+  h1: 'text-3xl md:text-6xl font-bold',
+  h2: 'text-2xl md:text-4xl font-bold',
+  paragraph: 'text-base md:text-lg',
   article:
-    'flex flex-col gap-3 p-3 sm:p-10 rounded-md border bg-gray-50 dark:bg-black',
+    'flex flex-col gap-10 py-10 p-3 md:p-24 rounded-md border bg-gray-50 dark:bg-black',
   list: 'pl-6 mt-2 list-disc [&_li]:mt-2',
   code: 'dark:invert'
 }

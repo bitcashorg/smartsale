@@ -20,8 +20,31 @@ export function Header({ className }: { className?: string }) {
   const { session } = useSession()
   const { scrollYProgress } = useScroll()
   const [visible, setVisible] = React.useState(true)
+  const [domLoaded, setDomLoaded] = React.useState(false)
   const [activeMenu, setActiveMenu] = React.useState('')
   const headerRef = React.useRef<HTMLElement>(null)
+
+  useMotionValueEvent(scrollYProgress, 'change', current => {
+    // Check if current is not undefined and is a number
+    if (typeof current === 'number') {
+      if (!domLoaded) setDomLoaded(true)
+
+      let direction = current! - scrollYProgress.getPrevious()!
+      if (scrollYProgress.get() <= 0.05) {
+        setVisible(true)
+      } else {
+        if (
+          (direction === 1 && scrollYProgress.get() === 1) ||
+          current === 1 ||
+          direction <= 0
+        ) {
+          setVisible(true)
+        } else {
+          setVisible(false)
+        }
+      }
+    }
+  })
 
   React.useEffect(() => {
     const handleClick = (e: MouseEvent) => {
@@ -37,27 +60,20 @@ export function Header({ className }: { className?: string }) {
     }
   }, [headerRef])
 
-  useMotionValueEvent(scrollYProgress, 'change', current => {
-    // Check if current is not undefined and is a number
-    if (typeof current === 'number') {
-      let direction = current! - scrollYProgress.getPrevious()!
-
-      if (scrollYProgress.get() < 0.05) {
-        setVisible(true)
-      } else {
-        if (
-          (direction === 1 && scrollYProgress.get() === 1) ||
-          direction <= 0
-        ) {
-          setVisible(true)
-        } else {
-          setVisible(false)
-        }
-      }
-    }
-  })
-
   const connectItem = session?.account || 'login'
+  const motionHeaderAnimationProps = {
+    initial: {
+      opacity: 1,
+      y: !visible || !domLoaded ? 0 : -100,
+    },
+    animate: {
+      y: visible ? 0 : -100,
+      opacity: visible ? 1 : 0
+    },
+    transition: {
+      duration: 0.2
+    }
+  }
 
   return (
     <React.Suspense
@@ -67,22 +83,12 @@ export function Header({ className }: { className?: string }) {
     >
       <AnimatePresence mode="wait">
         <motion.header
-          initial={{
-            opacity: 1,
-            y: -100
-          }}
-          animate={{
-            y: visible ? 0 : -100,
-            opacity: visible ? 1 : 0
-          }}
-          transition={{
-            duration: 0.2
-          }}
           className={cn(
             'fixed inset-x-0 top-0 z-[5000] mx-auto flex h-16 w-full shrink-0 border-b border-transparent bg-gradient-to-b from-background/10 via-background/50 to-background/80 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] backdrop-blur-xl dark:border-white/[0.2]',
             className
           )}
           ref={headerRef}
+          {...motionHeaderAnimationProps}
         >
           <div className="container flex items-center justify-between h-16 px-4 max-w-screen-2xl">
             <div className="flex items-center">
