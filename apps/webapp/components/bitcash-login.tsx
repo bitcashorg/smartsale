@@ -91,7 +91,7 @@ export function BitcashLoginButton() {
                 background: 'white',
                 padding: 10,
                 borderRadius: 4,
-                border: '1px solid #e5e7eb'
+                border: '2px solid #e5e7eb'
               }}
             >
               <QRCode

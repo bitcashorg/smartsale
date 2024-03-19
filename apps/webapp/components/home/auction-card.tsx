@@ -1,4 +1,5 @@
 import { CardBody, CardContainer, CardItem } from '@/components/ui/3d-card'
+import { Button } from '@/components/ui/button'
 import { Project } from '@/lib/projects'
 import { cn } from '@/lib/utils'
 import Image from 'next/image'
@@ -19,73 +20,83 @@ export function AuctionCard(props: Project) {
 
   return (
     <CardContainer className="w-full">
-      <CardBody className="group/card relative size-auto  rounded-xl border border-black/[0.1] bg-gray-50 p-6 dark:border-white/[0.2] dark:bg-black dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] sm:max-w-[30rem]  ">
-        <CardItem
-          translateZ="75"
-          className="text-xl font-bold text-neutral-600 dark:text-white"
-        >
-          {title}
-        </CardItem>
-        <CardItem
-          as="p"
-          translateZ="60"
-          className="mt-2 max-w-sm text-sm text-neutral-500 dark:text-neutral-300"
-        >
-          {pitch}
-        </CardItem>
-        <CardItem
-          translateZ="100"
-          className="relative mt-4 w-full"
-          badge={badgeText}
-        >
-          <Image
-            src={heroImage}
-            height="1000"
-            width="1000"
-            className="h-60 w-full rounded-xl object-cover group-hover/card:shadow-xl"
-            alt="thumbnail"
-          />
-        </CardItem>
-        <CardItem
-          translateZ="60"
-          className="mt-4 flex w-full flex-col space-y-1"
-        >
-          <div className="flex justify-between">
-            <b>Fundraising Goal</b>
-            <span>{fundraiseGoal}</span>
-          </div>
-          <div className="flex justify-between">
-            <b>Max allocation</b>
-            <span>{maxAllocation}</span>
-          </div>
-        </CardItem>
-        <div className="mt-10 flex items-center justify-between">
+      <Link
+        href={linkPath}
+        shallow={true}
+      >
+        <CardBody className="group/card relative size-auto  rounded-xl border border-black/[0.1] bg-gray-50 p-6 dark:border-white/[0.2] dark:bg-black dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] sm:max-w-[30rem]  ">
           <CardItem
-            translateZ={20}
-            className="rounded-xl px-4 py-2 text-xs font-normal dark:text-white"
+            translateZ="75"
+            className="text-xl font-bold text-neutral-600 dark:text-white"
           >
-            <Link
-              href={linkPath}
-              className="hover:text-link focus-within:text-link w-full"
-              shallow={true}
-            >
-              See more →
-            </Link>
+            {title}
           </CardItem>
-          <CardItem translateZ={20} as="span">
-            <Link
-              href={isAuctionClosed ? '#' : `${linkPath}/auction`}
-              className={cn(
-                'hover:text-link focus-within:text-link w-full rounded-md bg-black px-4 py-2 text-xs font-bold text-white dark:bg-white dark:text-black',
-                { 'cursor-not-allowed opacity-60': isAuctionClosed }
-              )}
-              shallow
-            >
-              Register Now!
-            </Link>
+          <CardItem
+            as="p"
+            translateZ="60"
+            className="mt-2 max-w-sm text-sm text-neutral-500 dark:text-neutral-300"
+          >
+            {pitch}
           </CardItem>
-        </div>
-      </CardBody>
+          <CardItem
+            translateZ="100"
+            className="relative mt-4 w-full"
+            badge={badgeText}
+          >
+            <Image
+              src={heroImage}
+              height="1000"
+              width="1000"
+              className="h-60 w-full rounded-xl object-cover group-hover/card:shadow-xl"
+              alt="thumbnail"
+            />
+          </CardItem>
+          <CardItem
+            translateZ="60"
+            className="mt-4 flex w-full flex-col space-y-1"
+          >
+            <div className="flex justify-between">
+              <b>Fundraising Goal</b>
+              <span>{fundraiseGoal}</span>
+            </div>
+            <div className="flex justify-between">
+              <b>Max allocation</b>
+              <span>{maxAllocation}</span>
+            </div>
+          </CardItem>
+          <div className="mt-10 flex items-center justify-between">
+            <CardItem
+              translateZ={20}
+              className="rounded-xl px-4 py-2 text-xs font-normal dark:text-white hover:text-link focus-within:text-link"
+
+            >
+              <Button
+                variant="ghost"
+                onClick={(e) => {
+                  console.log('clicked')
+                    (e.target as Node).parentElement?.parentElement?.click()
+                }}
+              >
+                See more →
+              </Button>
+            </CardItem>
+            {!isAuctionClosed && (
+              <CardItem translateZ={20} as="span">
+                <Link
+                  href={isAuctionClosed ? '#' : `${linkPath}/auction`}
+                  className={cn(
+                    'hover:text-link focus-within:text-link w-full rounded-md bg-black px-4 py-2 text-xs font-bold text-white dark:bg-white dark:text-black',
+                    { 'cursor-not-allowed opacity-60': isAuctionClosed }
+                  )}
+                  shallow
+                >
+                  Register Now!
+                </Link>
+              </CardItem>
+            )}
+          </div>
+        </CardBody>
+      </Link>
     </CardContainer>
   )
 }
