@@ -1,5 +1,5 @@
 import { createDfuseClient, GraphqlStreamMessage, WebSocketFactory } from '@dfuse/client'
-import { appenv } from './config'
+import { appenv } from '../../config'
 import { IncomingMessage } from 'http'
 import nodeFetch from 'node-fetch'
 import WebSocketClient from 'ws'
@@ -7,7 +7,7 @@ import { smartsaleEnv } from 'smartsale-env'
 import { EventEmitter } from 'events'
 
 // required by dfuse/client
-import { issueTokens } from './issuer'
+import { issueTokens } from './evm-deposits'
 import { stringify } from 'viem'
 ;(global as any).fetch = nodeFetch
 ;(global as any).WebSocket = WebSocketClient
@@ -33,24 +33,46 @@ const dfuse = createDfuseClient({
   },
 })
 
-async function readEosHistory(env: 'test' | 'prod' = 'test') {
-  const queries = getFirehoseQueries(env)
-  const streamTransfers = `
-  subscription {
-    searchTransactionsBackwards(indexName: BLOCK_HEIGHT, query:${queries.usdt}) {
-      undo
-      trace {
-        id
-        matchingActions {
-          json
+function getSeatchTxBackwardQuery(query: string) {
+  return `
+    subscription {
+      searchTransactionsBackward(query: "${query}", lowBlockNum:363344907, irreversibleOnly:true ) { 
+        isIrreversible
+        irreversibleBlockNum
+        cursor
+        block {
+          id
+          num
+        }
+        trace {
+          id
+          status
+          matchingActions {
+            account
+            name
+            data
+          }
+          block {
+            id
+            num
+            confirmed
+            timestamp
+            producer
+          }
         }
       }
     }
-  }
-`
+  `
+}
+
+export async function readEosHistory(env: 'test' | 'prod' = 'test') {
+  const queries = getFirehoseQueries(env)
+  console.log('queries.usdt', queries.usdt)
+  const streamTransfers = getSeatchTxBackwardQuery(queries.usdt)
 
   const stream = await dfuse.graphql(streamTransfers, (message: GraphqlStreamMessage<any>) => {
     if (message.type === 'data') {
+      console.log('WE GOT DATA')
       const transfer = message.data.searchTransactionsBackwards.trace
       const data = {
         trxId: transfer.id,
@@ -69,7 +91,7 @@ async function readEosHistory(env: 'test' | 'prod' = 'test') {
     }
   })
 
-  console.log('Listening to token transfers...')
+  console.log('Reading historical token transfers...')
 }
 
 function getFirehoseQueries(env: 'test' | 'prod' = 'test') {
@@ -78,8 +100,8 @@ function getFirehoseQueries(env: 'test' | 'prod' = 'test') {
   const launchpad = smartsaleEnv[env].smartsale.bk
 
   return {
-    bitusd: `"receiver:${bank} action:stbtransfer data.to:${launchpad}"`,
-    usdt: `"receiver:${usdt} action:transfer data.to:${launchpad}"`,
+    bitusd: `receiver:${bank} action:stbtransfer data.to:${launchpad}`,
+    usdt: `receiver:${usdt} action:transfer data.to:${launchpad}`,
   }
 }
 

@@ -1,9 +1,14 @@
 import { Log, stringify } from 'viem'
-import { client } from './viem-client'
+import { client } from '../../viem'
 import { TestnetEasyAuction } from 'smartsale-contracts'
-import { bigintToPostgresTimestamp, getEvents, getTokenDetails, runPromisesInSeries } from './lib'
+import {
+  bigintToPostgresTimestamp,
+  getEvents,
+  getTokenDetails,
+  runPromisesInSeries,
+} from '../../lib/util'
 import { db, Prisma } from 'smartsale-db'
-import { NewAuctionEvent, NewSellOrderEvent, NewUserEvent } from './types'
+import { NewAuctionEvent, NewSellOrderEvent, NewUserEvent } from '../../types'
 
 import BN from 'bn.js'
 import { eosEvmTestnet } from 'smartsale-env'

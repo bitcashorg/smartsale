@@ -1,6 +1,6 @@
 import { EVMTokenContractData, SepoliaUSDT, TestnetUSDCred, TestnetUSDT } from 'smartsale-contracts'
-import { runPromisesInSeries } from './lib'
-import { sepoliaClient } from './viem-client'
+import { runPromisesInSeries } from '../../lib/util'
+import { sepoliaClient } from '../../viem'
 import {
   Address,
   Log,
@@ -11,11 +11,11 @@ import {
   parseAbiItem,
   stringify,
 } from 'viem'
-import { ApprovalEvent, TransferEvent } from './types'
+import { ApprovalEvent, TransferEvent } from '../../types'
 import { db } from 'smartsale-db'
 import { sepolia } from 'viem/chains'
-import { eosEvmTestnet, smartsaleChains } from '../../../packages/smartsale-env/src'
-import { appenv } from './config'
+import { eosEvmTestnet, smartsaleChains } from 'smartsale-env'
+import { appenv } from '../../config'
 
 const tokens: EVMTokenContractData[] = [SepoliaUSDT, TestnetUSDT]
 
