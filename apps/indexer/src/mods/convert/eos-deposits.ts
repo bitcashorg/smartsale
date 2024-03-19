@@ -1,5 +1,5 @@
 import { createDfuseClient, GraphqlStreamMessage, WebSocketFactory } from '@dfuse/client'
-import { appenv } from '../../config'
+import { appenv } from '~/config'
 import { IncomingMessage } from 'http'
 import nodeFetch from 'node-fetch'
 import WebSocketClient from 'ws'
@@ -8,7 +8,7 @@ import { EventEmitter } from 'events'
 
 // required by dfuse/client
 import { issueTokens } from './evm-deposits'
-import { stringify } from 'viem'
+import { stringify } from 'viem/utils'
 ;(global as any).fetch = nodeFetch
 ;(global as any).WebSocket = WebSocketClient
 

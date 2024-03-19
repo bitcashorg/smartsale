@@ -1,6 +1,6 @@
-import { http, createPublicClient, PublicClient, createWalletClient, Address } from 'viem'
+import { http, createPublicClient, PublicClient, createWalletClient } from 'viem'
 import { sepolia } from 'viem/chains'
-import { appenv } from './config'
+import { appenv } from '../config'
 import { eosEvmTestnet } from 'smartsale-env'
 
 export const client: PublicClient = createPublicClient({

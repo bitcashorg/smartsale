@@ -5,7 +5,7 @@ const port = 8080
 
 // Assuming `startIndexer` initializes Viem and sets it up for use
 import { startIndexer } from './mods/auction'
-import { client } from './viem'
+import { client } from './services/viem-client'
 import { startIssuer } from './mods/convert/evm-deposits'
 import { listenToEos, readEosHistory } from './mods/convert/eos-deposits'
 
