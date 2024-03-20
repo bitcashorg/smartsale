@@ -2,7 +2,7 @@ import { EVMTokenContractData, SepoliaUSDT, TestnetUSDT } from 'smartsale-contra
 import { runPromisesInSeries } from '~/utils'
 
 import { Address, Log, PublicClient, createPublicClient, http, parseAbiItem, stringify } from 'viem'
-import { ApprovalEvent, TransferEvent } from '~/types'
+import { TransferEvent } from '~/modules/auction/auction.type'
 import { db } from 'smartsale-db'
 import { sepolia } from 'viem/chains'
 import { smartsaleChains } from 'smartsale-env'
@@ -10,12 +10,12 @@ import { issueTokens } from './cred-issuer'
 
 const tokens: EVMTokenContractData[] = [SepoliaUSDT, TestnetUSDT]
 
-export async function startIssuer() {
-  console.log('indexing usdt transfers')
-  tokens.map(listenToEvmTransfers)
+export async function listenToEvmTransfers() {
+  console.log('subscribing to evm usdt transfers ...')
+  tokens.map(listenToEvmTransfersFn)
 }
 
-async function listenToEvmTransfers(token: EVMTokenContractData) {
+async function listenToEvmTransfersFn(token: EVMTokenContractData) {
   const chain = smartsaleChains.test.get(token.chainId)
   if (!chain) return
   console.log(`listening usdt transfers for token ${token.symbol} on chain ${chain.name}`)
@@ -35,7 +35,6 @@ async function listenToEvmTransfers(token: EVMTokenContractData) {
       fromBlock: BigInt(token.indexFromBlock),
     })
 
-    console.log('logs', logs.length)
     // delay prevents idempotent transactions:
     processLogs(logs, 3000)
 

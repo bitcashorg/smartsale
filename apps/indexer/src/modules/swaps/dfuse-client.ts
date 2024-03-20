@@ -29,9 +29,9 @@ export const dfuse = createDfuseClient({
 export async function createFirehoseSubscription(query: string) {
   const eventEmitter = new EventEmitter()
 
-  console.log('query:', query)
+  console.log('createFirehoseSubscription query:', query)
   const streamTransfers: string = `subscription {
-    searchTransactionsForward(query: ${query}) {
+    searchTransactionsForward(query: "${query}") {
       undo cursor
       trace {
         id
@@ -61,67 +61,6 @@ export async function createFirehoseSubscription(query: string) {
       console.log('Stream completed')
     }
   })
-
-  console.log('Listening to token transfers...')
-
-  return { on: eventEmitter.on, stream }
-}
-
-export async function createFirehoseBackwardSubscription(query: string) {
-  const eventEmitter = new EventEmitter()
-
-  console.log('query:', query)
-  const streamTransfers: string = `
-    subscription {
-      searchTransactionsBackward(query: "${query}", lowBlockNum:363344907, irreversibleOnly:true ) { 
-        isIrreversible
-        irreversibleBlockNum
-        cursor
-        block {
-          id
-          num
-        }
-        trace {
-          id
-          status
-          matchingActions {
-            account
-            name
-            data
-          }
-          block {
-            id
-            num
-            confirmed
-            timestamp
-            producer
-          }
-        }
-      }
-    }
-  `
-
-  const stream = await dfuse.graphql(streamTransfers, (message: GraphqlStreamMessage<any>) => {
-    if (message.type === 'data') {
-      const transfer = message.data.searchTransactionsForward.trace
-      const data = {
-        trxId: transfer.id,
-        actions: transfer.matchingActions.map(({ json }: any) => json),
-      }
-      eventEmitter.emit('data', data)
-      console.log('Token Transfer:', JSON.stringify(data))
-    }
-
-    if (message.type === 'error') {
-      console.error('An error occurred:', message.errors, message.terminal)
-    }
-
-    if (message.type === 'complete') {
-      console.log('Stream completed')
-    }
-  })
-
-  console.log('Listening to token transfers...')
 
   return { on: eventEmitter.on, stream }
 }
