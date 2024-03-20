@@ -4,20 +4,27 @@ import { BitcashAccessContentType } from '@/components/bitcash-access'
 import { Button } from '@/components/ui/button'
 import { DialogDescription, DialogFooter, DialogHeader, DialogTitle } from '@/components/ui/dialog'
 import { useSession } from '@/hooks/use-session'
+import { useRouter } from 'next/router'
 import QRCode from 'react-qr-code'
 import { useEffectOnce } from 'react-use'
 import { platform } from 'smartsale-lib'
 
 export function RegisterDialogContent({ updateDialogContent }: { updateDialogContent: (dialog: BitcashAccessContentType) => void }) {
   const { session } = useSession()
+  const router = useRouter()
 
   useEffectOnce(() => {
     const compatibleDevice = platform.isMobile || platform.isIpad
 
     if (compatibleDevice) {
-      window.location.href = 'https://app.bitcash.org?share=JVnL7qzrU'
+      router.push('https://app.bitcash.org?share=JVnL7qzrU')
     }
   })
+
+  const isUserLoggedIn = Boolean(session?.account)
+  const buttonText = isUserLoggedIn
+    ? `You're already logged in with ${session?.account} account.`
+    : 'Already have an account? Log in!';
 
   return (
     <>
@@ -28,24 +35,13 @@ export function RegisterDialogContent({ updateDialogContent }: { updateDialogCon
         </DialogDescription>
       </DialogHeader>
 
-      <div
-        style={{
-          height: 'auto',
-          margin: '0 auto',
-          maxWidth: 300,
-          width: '100%',
-          background: 'white',
-          borderRadius: 4,
-          border: '1px solid #e5e7eb'
-        }}
-      >
+      <div className="qr-code-container">
         <QRCode
           size={256}
           style={{
             height: 'auto',
             maxWidth: '100%',
             width: '100%',
-            padding: 10,
             borderRadius: 4,
           }}
           value={'https://app.bitcash.org?share=JVnL7qzrU'}
@@ -61,10 +57,8 @@ export function RegisterDialogContent({ updateDialogContent }: { updateDialogCon
       </div>
       <DialogFooter className="flex !flex-col gap-4 pt-2 sm:justify-center border-t border-t-gray-300 dark:border-t-gray-800">
         <p className="w-full text-sm text-center">On your phone you can also register at <b>bit.app/register</b>!</p>
-        <Button variant="link" onClick={() => updateDialogContent('login')} disabled={Boolean(session?.account)}>
-          {session?.account ? `You're already logged in with ${session?.account} account.` : (
-            'Already have an account? Log in!'
-          )}
+        <Button variant="link" onClick={() => updateDialogContent('login')} disabled={isUserLoggedIn}>
+          {buttonText}
         </Button>
       </DialogFooter>
     </>

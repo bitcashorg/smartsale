@@ -18,18 +18,7 @@ export function LoginDialogContent({ updateDialogContent }: { updateDialogConten
         </DialogDescription>
       </DialogHeader>
       {loginUri ? (
-        <div
-          style={{
-            height: 'auto',
-            margin: '0 auto',
-            maxWidth: 300,
-            width: '100%',
-            background: 'white',
-            padding: 10,
-            borderRadius: 4,
-            border: '1px solid #e5e7eb'
-          }}
-        >
+        <div className="qr-code-container">
           <QRCode
             size={256}
             style={{

@@ -181,12 +181,3 @@ export const useMouseEnter = () => {
   }
   return context
 }
-
-// export const useMouseEnter = () => {
-//   const context = useContext(MouseEnterContext)
-//   if (context === undefined) {
-//     console.error('useMouseEnter must be used within a MouseEnterProvider')
-//     return [false, context]
-//   }
-//   return context
-// }
