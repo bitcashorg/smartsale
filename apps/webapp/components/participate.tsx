@@ -89,7 +89,6 @@ export default function Participate() {
                 </Button>
               </Link>
             ) : (
-              // TODO: Check condition when clicking login... it switch the CTA. It is more buggy when logged in.
               <BitcashAccessButton buttonLabel={step.buttonText} buttonStyle={{ size: 'lg', variant: 'tertiary' }} defaultContent="register" />
             )}
           </div>

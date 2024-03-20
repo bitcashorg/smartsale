@@ -18,34 +18,32 @@ export default function RootLayout({ children, ...props }: RootLayoutProps) {
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          'font-sans antialiased overflow-x-hidden',
+          'font-sans antialiased',
           GeistSans.variable,
           GeistMono.variable
         )}
       >
-        <div className="relative flex size-full min-h-screen items-center justify-center bg-muted/20 bg-dot-black/[0.2] dark:bg-dot-white/[0.2]">
-          <div className="max-w-1/2 pointer-events-none fixed inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(circle_at_center,transparent_83%,#0002)] dark:bg-black" />
-          {/* Radial gradient for the container to give a faded look */}
-          <Toaster />
-          <Providers
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-            <div className="flex flex-col w-full h-full items-start justify-start">
-              <Header />
-              <main className="flex flex-col flex-1 py-5">
-                <div className="container">
-                  {children}
-                </div>
-                <Newsletter />
-              </main>
-            </div>
+        <Providers
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <div className="overflow-x-hidden relative flex flex-col size-full justify-start min-h-screen items-center bg-muted/20 bg-dot-black/[0.2] dark:bg-dot-white/[0.2]">
+            <div className="max-w-1/2 pointer-events-none fixed inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(circle_at_center,transparent_83%,#0002)] dark:bg-black" />
+            {/* Radial gradient for the container to give a faded look */}
+            <Toaster />
+            <Header />
+            <main className="flex flex-col flex-1 py-5">
+              <div className="container">
+                {children}
+              </div>
+              <Newsletter />
+            </main>
             <ErrorModal />
             {/* <TailwindIndicator /> */}
-          </Providers>
-        </div>
+          </div>
+        </Providers>
       </body>
     </html>
   )

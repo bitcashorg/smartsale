@@ -3,14 +3,14 @@
 import { BitcashAccessContentType } from '@/components/bitcash-access'
 import { Button } from '@/components/ui/button'
 import { DialogDescription, DialogFooter, DialogHeader, DialogTitle } from '@/components/ui/dialog'
-import Image from 'next/image'
-import Link from 'next/link'
-import { useEffect, useState } from 'react'
+import { useSession } from '@/hooks/use-session'
 import QRCode from 'react-qr-code'
 import { useEffectOnce } from 'react-use'
 import { platform } from 'smartsale-lib'
 
 export function RegisterDialogContent({ updateDialogContent }: { updateDialogContent: (dialog: BitcashAccessContentType) => void }) {
+  const { session } = useSession()
+
   useEffectOnce(() => {
     const compatibleDevice = platform.isMobile || platform.isIpad
 
@@ -22,9 +22,9 @@ export function RegisterDialogContent({ updateDialogContent }: { updateDialogCon
   return (
     <>
       <DialogHeader>
-        <DialogTitle>Register to Bitcash App</DialogTitle>
+        <DialogTitle>Register to bitcash Wallet</DialogTitle>
         <DialogDescription>
-          Scan this qr code with your smartphone camera.
+          Scan this QR code with your smartphone camera or a QR reader to create a bitcash account.
         </DialogDescription>
       </DialogHeader>
 
@@ -59,9 +59,12 @@ export function RegisterDialogContent({ updateDialogContent }: { updateDialogCon
           alt="bitcash app registration"
         /> */}
       </div>
-      <DialogFooter className="flex sm:justify-center ">
-        <Button variant="link" onClick={() => updateDialogContent('login')}>
-          Already have an account? Log in!
+      <DialogFooter className="flex !flex-col gap-4 pt-2 sm:justify-center border-t border-t-gray-300 dark:border-t-gray-800">
+        <p className="w-full text-sm text-center">On your phone you can also register at <b>bit.app/register</b>!</p>
+        <Button variant="link" onClick={() => updateDialogContent('login')} disabled={Boolean(session?.account)}>
+          {session?.account ? `You're already logged in with ${session?.account} account.` : (
+            'Already have an account? Log in!'
+          )}
         </Button>
       </DialogFooter>
     </>
