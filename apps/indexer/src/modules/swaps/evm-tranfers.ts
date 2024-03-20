@@ -21,10 +21,10 @@ const tokens: EVMTokenContractData[] = [SepoliaUSDT, TestnetUSDT]
 
 export async function startIssuer() {
   console.log('indexing usdt transfers')
-  tokens.map(listenToTransfers)
+  tokens.map(listenToEvmTransfers)
 }
 
-async function listenToTransfers(token: EVMTokenContractData) {
+async function listenToEvmTransfers(token: EVMTokenContractData) {
   const chain = smartsaleChains.test.get(token.chainId)
   if (!chain) return
   console.log(`listening usdt transfers for token ${token.symbol} on chain ${chain.name}`)

@@ -8,7 +8,7 @@ import { NewAuctionEvent, NewSellOrderEvent, NewUserEvent } from '~/types'
 import BN from 'bn.js'
 import { eosEvmTestnet } from 'smartsale-env'
 
-export async function startIndexer() {
+export async function startAuctionIndexer() {
   console.log('indexing starting')
 
   // await writeToFile(stringify(TestnetEasyAuction.getEvents(), null, 2), './events.json')

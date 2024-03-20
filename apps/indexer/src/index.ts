@@ -4,39 +4,15 @@ const app = express()
 const port = 8080
 
 // Assuming `startIndexer` initializes Viem and sets it up for use
-import { startIndexer } from './modules/auction'
-import { client } from './viem-client'
-import { startIssuer } from './modules/swaps/evm-deposits'
-import { listenToEos } from './modules/swaps/eos-deposits'
-
-async function getCurrentBlockHeight() {
-  try {
-    const blockNumber = await client.getBlockNumber()
-    return blockNumber
-  } catch (error) {
-    console.error('Failed to fetch current block height:', error)
-    throw error // Rethrow the error for handling upstream
-  }
-}
+import { startAuctionIndexer } from './modules/auction'
+import { startSwapsService } from './modules/swaps'
 
 async function main() {
-  console.log('indexer operational')
-  // listenToEos()
-  // startIndexer()
-  // startIssuer()
-
-  app.get('/', async (_req, res) => {
-    try {
-      // TODO: respond with last indexed block
-      const blockHeight = await getCurrentBlockHeight()
-      res.send(`Current Block Height: ${blockHeight}`)
-    } catch (error) {
-      res.status(500).send('Failed to fetch current block height')
-    }
-  })
+  startAuctionIndexer()
+  startSwapsService()
 
   app.listen(port, () => {
-    console.log(`Server running at http://localhost:${port}`)
+    console.log(`Indexer running ...`)
   })
 }
 

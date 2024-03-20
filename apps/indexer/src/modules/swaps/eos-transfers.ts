@@ -1,11 +1,11 @@
 import { smartsaleEnv } from 'smartsale-env'
 
 // required by dfuse/client
-import { issueTokens } from './evm-deposits'
+import { issueTokens } from './evm-tranfers'
 import { stringify } from 'viem/utils'
 import { createFirehoseSubscription } from '~/modules/swaps/dfuse-client'
 
-export async function listenToEos(env: 'test' | 'prod' = 'test') {
+export async function listenToEosTransfers(env: 'test' | 'prod' = 'test') {
   const usdt = smartsaleEnv[env].usdt.find((t) => (t.chainType = 'antelope'))?.address
   const bank = smartsaleEnv[env].bitcash.bank
   const launchpad = smartsaleEnv[env].smartsale.bk
