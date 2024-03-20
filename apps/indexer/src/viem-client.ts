@@ -26,3 +26,13 @@ export const sepoliaClient: PublicClient = createPublicClient({
   },
   transport: http(),
 })
+
+export async function getCurrentBlockHeight() {
+  try {
+    const blockNumber = await client.getBlockNumber()
+    return blockNumber
+  } catch (error) {
+    console.error('Failed to fetch current block height:', error)
+    throw error // Rethrow the error for handling upstream
+  }
+}

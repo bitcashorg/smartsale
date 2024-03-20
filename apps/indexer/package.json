@@ -26,7 +26,8 @@
     "smartsale-lib": "workspace:*",
     "viem": "latest",
     "ws": "^8.16.0",
-    "axios": "^1.6.8"
+    "axios": "^1.6.8",
+    "express": "^4.18.2"
   },
   "devDependencies": {
     "@types/lodash": "^4.14.202",
