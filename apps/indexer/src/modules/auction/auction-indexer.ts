@@ -1,14 +1,14 @@
 import { Log, stringify } from 'viem'
-import { client } from './viem-client'
+import { client } from '~/viem-client'
 import { TestnetEasyAuction } from 'smartsale-contracts'
-import { bigintToPostgresTimestamp, getEvents, getTokenDetails, runPromisesInSeries } from './lib'
+import { bigintToPostgresTimestamp, getEvents, getTokenDetails, runPromisesInSeries } from '~/utils'
 import { db, Prisma } from 'smartsale-db'
-import { NewAuctionEvent, NewSellOrderEvent, NewUserEvent } from './types'
+import { NewAuctionEvent, NewSellOrderEvent, NewUserEvent } from '~/modules/auction/auction.type'
 
 import BN from 'bn.js'
 import { eosEvmTestnet } from 'smartsale-env'
 
-export async function startIndexer() {
+export async function startAuctionIndexer() {
   console.log('indexing starting')
 
   // await writeToFile(stringify(TestnetEasyAuction.getEvents(), null, 2), './events.json')
@@ -49,7 +49,7 @@ async function processLogs(logs: Log[]) {
       if (!(eventName in eventHandlers)) return null
       return async () => {
         try {
-          eventHandlers[eventName](log)
+          eventHandlers[eventName] && eventHandlers[eventName](log)
         } catch (error) {
           //TODO: sent sentry reports
           console.error(error)

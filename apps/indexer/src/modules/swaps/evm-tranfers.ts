@@ -1,30 +1,21 @@
-import { EVMTokenContractData, SepoliaUSDT, TestnetUSDCred, TestnetUSDT } from 'smartsale-contracts'
-import { runPromisesInSeries } from './lib'
-import { sepoliaClient } from './viem-client'
-import {
-  Address,
-  Log,
-  PublicClient,
-  createPublicClient,
-  createWalletClient,
-  http,
-  parseAbiItem,
-  stringify,
-} from 'viem'
-import { ApprovalEvent, TransferEvent } from './types'
+import { EVMTokenContractData, SepoliaUSDT, TestnetUSDT } from 'smartsale-contracts'
+import { runPromisesInSeries } from '~/utils'
+
+import { Address, Log, PublicClient, createPublicClient, http, parseAbiItem, stringify } from 'viem'
+import { TransferEvent } from '~/modules/auction/auction.type'
 import { db } from 'smartsale-db'
 import { sepolia } from 'viem/chains'
-import { eosEvmTestnet, smartsaleChains } from '../../../packages/smartsale-env/src'
-import { appenv } from './config'
+import { smartsaleChains } from 'smartsale-env'
+import { issueTokens } from './cred-issuer'
 
 const tokens: EVMTokenContractData[] = [SepoliaUSDT, TestnetUSDT]
 
-export async function startIssuer() {
-  console.log('indexing usdt transfers')
-  tokens.map(listenToTransfers)
+export async function listenToEvmTransfers() {
+  console.log('subscribing to evm usdt transfers ...')
+  tokens.map(listenToEvmTransfersFn)
 }
 
-async function listenToTransfers(token: EVMTokenContractData) {
+async function listenToEvmTransfersFn(token: EVMTokenContractData) {
   const chain = smartsaleChains.test.get(token.chainId)
   if (!chain) return
   console.log(`listening usdt transfers for token ${token.symbol} on chain ${chain.name}`)
@@ -44,7 +35,6 @@ async function listenToTransfers(token: EVMTokenContractData) {
       fromBlock: BigInt(token.indexFromBlock),
     })
 
-    console.log('logs', logs.length)
     // delay prevents idempotent transactions:
     processLogs(logs, 3000)
 
@@ -76,7 +66,7 @@ async function processLogs(logs: Log[], delay = 0) {
       if (!(eventName in eventHandlers)) return null
       return async () => {
         try {
-          eventHandlers[eventName](log)
+          eventHandlers[eventName] && eventHandlers[eventName](log)
         } catch (error) {
           //TODO: sent sentry reports
           console.error(error)
@@ -90,7 +80,6 @@ async function processLogs(logs: Log[], delay = 0) {
 
 const eventHandlers: { [key: string]: (log: any) => void } = {
   Transfer: handleTransfer,
-  Approval: handleApproval,
 }
 
 async function handleTransfer(log: TransferEvent) {
@@ -127,32 +116,4 @@ async function handleTransfer(log: TransferEvent) {
   })
 
   console.log('tokens issued', { usdcred_trx, trx: log.transactionHash })
-}
-
-function handleApproval(log: ApprovalEvent) {
-  console.log('handleApproval', log)
-}
-
-export async function issueTokens(to: Address, amount: bigint) {
-  console.log('issueTokens', {
-    args: [to, amount],
-  })
-
-  try {
-    const walletClient = createWalletClient({
-      chain: eosEvmTestnet,
-      transport: http(),
-      key: appenv.evm.issuerKey,
-      account: appenv.evm.issuerAccount,
-    })
-    return walletClient.writeContract({
-      address: TestnetUSDCred.address,
-      abi: TestnetUSDCred.abi,
-      functionName: 'issue',
-      args: [to, amount],
-    })
-  } catch (error) {
-    console.log((error as Error).message)
-    return null
-  }
 }

@@ -27,7 +27,7 @@
     "@vercel/og": "^0.6.2",
     "@wagmi/connectors": "^4.1.13",
     "@wharfkit/antelope": "^1.0.7",
-    "axios": "^1.6.7",
+    "axios": "^1.6.8",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "date-fns": "^3.3.1",
