@@ -49,7 +49,7 @@ async function processLogs(logs: Log[]) {
       if (!(eventName in eventHandlers)) return null
       return async () => {
         try {
-          eventHandlers[eventName](log)
+          eventHandlers[eventName] && eventHandlers[eventName](log)
         } catch (error) {
           //TODO: sent sentry reports
           console.error(error)

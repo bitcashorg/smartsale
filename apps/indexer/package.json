@@ -7,7 +7,7 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
-    "dev": "env-cmd nodemon --watch 'src/**' --ext 'ts' --exec 'ts-node src/index.ts' --trace-warnings",
+    "dev": "env-cmd ts-node-dev ./src",
     "start": "env-cmd node ./dist",
     "build": "rimraf dist && tsc -b",
     "lint": "eslint --ignore-path .gitignore \"**/*.+(js|ts|tsx)\" --fix",
@@ -19,7 +19,6 @@
     "@types/node-fetch": "^2.6.11",
     "bun-types": "latest",
     "env-cmd": "^10.1.0",
-    "nodemon": "^3.0.3",
     "rimraf": "^5.0.5",
     "tsconfig": "workspace:*",
     "typescript": "^5.3.3"
