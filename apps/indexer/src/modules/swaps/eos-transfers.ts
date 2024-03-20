@@ -1,7 +1,6 @@
 import { smartsaleEnv } from 'smartsale-env'
-
 import { stringify } from 'viem/utils'
-import { createFirehoseSubscription } from '~/modules/swaps/dfuse-client'
+import { createFirehoseSubscription } from './dfuse-client'
 import { issueTokens } from './cred-issuer'
 
 // https://docs.dfuse.eosnation.io/platform/public-apis/search-query-language/

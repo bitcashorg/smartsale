@@ -1,8 +1,8 @@
 import { GraphqlStreamMessage, WebSocketFactory, createDfuseClient } from '@dfuse/client'
-
 import { appenv } from '~/config'
 import nodeFetch from 'node-fetch'
-import WebSocketClient, { EventEmitter } from 'ws'
+import WebSocketClient from 'ws'
+import EventEmitter from 'events'
 import { IncomingMessage } from 'http'
 
 export const dfuse = createDfuseClient({
