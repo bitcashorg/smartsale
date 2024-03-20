@@ -7,7 +7,7 @@ import { useErc20Balance } from '@/hooks/use-balance'
 import { useSession } from '@/hooks/use-session'
 import { VariantProps } from 'class-variance-authority'
 import Link from 'next/link'
-import { useSearchParams } from 'next/navigation'
+import { useRouter, useSearchParams } from 'next/navigation'
 import { useEffect, useState } from 'react'
 // import { bitcashLogin } from '@/lib/esr'
 import { useToggle } from 'react-use'
@@ -33,6 +33,7 @@ export function BitcashAccessButton({
     chainId: TestnetUSDCred.chainId
   })
   const isLogin = dialogContent === 'login'
+  const router = useRouter()
 
   useEffect(() => {
     !searchParams.has('bitcash_explorer') && isLogin && toggleOpen(false)
@@ -52,7 +53,7 @@ export function BitcashAccessButton({
       console.log('💥 callbackUrl', callbackUrl)
       const encodedCallbackUrl = encodeURIComponent(callbackUrl)
       params.append('callback', encodedCallbackUrl)
-      window.location.href = `https://test.bitcash.org/login?${params.toString()}`
+      router.push(`https://app.bitcash.org/login?${params.toString()}`)
     }
   }, [open, loginUri, searchParams])
 

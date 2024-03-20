@@ -9,7 +9,7 @@ import {
   DialogTitle
 } from '@/components/ui/dialog'
 import { useSession } from '@/hooks/use-session'
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/navigation'
 import QRCode from 'react-qr-code'
 import { useEffectOnce } from 'react-use'
 import { runtimeEnv } from 'smartsale-lib'
@@ -65,15 +65,9 @@ export function RegisterDialogContent({
           alt="bitcash app registration"
         /> */}
       </div>
-      <DialogFooter className="flex !flex-col gap-4 border-t border-t-gray-300 pt-2 dark:border-t-gray-800 sm:justify-center">
-        <p className="w-full text-center text-sm">
-          On your phone you can also register at <b>bit.app/register</b>!
-        </p>
-        <Button
-          variant="link"
-          onClick={() => updateDialogContent('login')}
-          disabled={isUserLoggedIn}
-        >
+      <DialogFooter className="flex !flex-col gap-4 pt-2 sm:justify-center border-t border-t-gray-300 dark:border-t-gray-800">
+        <p className="w-full text-sm text-center">On your phone you can also register at <b>bitca.sh/reg</b>!</p>
+        <Button variant="link" onClick={() => updateDialogContent('login')} disabled={isUserLoggedIn}>
           {buttonText}
         </Button>
       </DialogFooter>
