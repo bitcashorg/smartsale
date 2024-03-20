@@ -1,9 +1,12 @@
+
+declare var window: Window | undefined;
+
 export const platform = (() => {
   const isBrowser = typeof window !== 'undefined'
-  const userAgent = isBrowser ? window.navigator.userAgent : ''
-  const isAndroid = /(Android)/i.test(userAgent)
-  const isPhone = /(iPhone|iPod)/i.test(userAgent)
-  const isIpad = /(iPad)/i.test(userAgent)
+  const userAgent: string = isBrowser ? (window as any).navigator.userAgent : ''
+  const isAndroid =userAgent && /(Android)/i.test(userAgent)
+  const isPhone =userAgent && /(iPhone|iPod)/i.test(userAgent)
+  const isIpad =userAgent && /(iPad)/i.test(userAgent)
   const isMobile = isPhone || isAndroid
 
   return {

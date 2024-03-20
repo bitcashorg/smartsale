@@ -5,9 +5,10 @@ import { useAsync, useLocalStorage } from 'react-use'
 import { session } from 'smartsale-db'
 import { createContextHook } from '@blockmatic/hooks-utils'
 import { useSearchParams } from 'next/navigation'
-import { fetchJson } from 'smartsale-lib'
+
 import { ReactNode } from 'react'
 import React from 'react'
+import axios from 'axios'
 
 const [useSession, SessionProviderInner] = createContextHook(
   useSessionFn,
@@ -44,10 +45,7 @@ export function useSessionFn() {
     console.log(`url session effect  ${session_id}`)
     const getSession = async () => {
       console.log(`getting session ${session_id}`)
-      const response = await fetchJson<any>('/api/session', {
-        method: 'POST',
-        body: JSON.stringify({ session_id })
-      })
+      const response = await axios.post('/api/session', { session_id })
       console.log(`getting session response`, response)
       if (!response.data.session) return
       console.log('✅ session', response.data.session)
