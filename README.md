@@ -13,7 +13,7 @@ SmartSale is a comprehensive platform designed to streamline the auction process
 
 ## Running the Frontend
 
-In apps/masterbots.ai folder (set up .env file - see .env_sample):
+In apps/smartevm-webapp folder (set up .env file - see .env_sample):
 
 ```
 bun install

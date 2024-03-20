@@ -33,19 +33,63 @@ const dfuse = createDfuseClient({
   },
 })
 
-export async function listenToEos(env: 'test' | 'prod' = 'test') {
+async function readEosHistory(env: 'test' | 'prod' = 'test') {
+  const queries = getFirehoseQueries(env)
+  const streamTransfers = `
+  subscription {
+    searchTransactionsBackwards(indexName: BLOCK_HEIGHT, query:${queries.usdt}) {
+      undo
+      trace {
+        id
+        matchingActions {
+          json
+        }
+      }
+    }
+  }
+`
+
+  const stream = await dfuse.graphql(streamTransfers, (message: GraphqlStreamMessage<any>) => {
+    if (message.type === 'data') {
+      const transfer = message.data.searchTransactionsBackwards.trace
+      const data = {
+        trxId: transfer.id,
+        actions: transfer.matchingActions.map(({ json }: any) => json),
+        undo: message.data.searchTransactionsBackwards.undo, // Indicates if this is an undo operation
+      }
+      console.log('History Token Transfer:', JSON.stringify(data))
+    }
+
+    if (message.type === 'error') {
+      console.error('An error occurred:', message.errors, message.terminal)
+    }
+
+    if (message.type === 'complete') {
+      console.log('History Stream completed')
+    }
+  })
+
+  console.log('Listening to token transfers...')
+}
+
+function getFirehoseQueries(env: 'test' | 'prod' = 'test') {
   const usdt = smartsaleEnv[env].usdt.find((t) => (t.chainType = 'antelope'))?.address
   const bank = smartsaleEnv[env].bitcash.bank
   const launchpad = smartsaleEnv[env].smartsale.bk
+
+  return {
+    bitusd: `"receiver:${bank} action:stbtransfer data.to:${launchpad}"`,
+    usdt: `"receiver:${usdt} action:transfer data.to:${launchpad}"`,
+  }
+}
+
+export async function listenToEos(env: 'test' | 'prod' = 'test') {
+  const queries = getFirehoseQueries(env)
   // https://docs.dfuse.eosnation.io/platform/public-apis/search-query-language/
   // https://docs.dfuse.eosnation.io/eosio/public-apis/reference/search/terms/
   // receiver: means the account with code that has executed the action.
-  const usdtDeposits = await createFirehoseSubscription(
-    `"receiver:${usdt} action:transfer data.to:${launchpad}"`,
-  )
-  const bitusdDeposits = await createFirehoseSubscription(
-    `"receiver:${bank} action:stbtransfer data.to:${launchpad}"`,
-  )
+  const usdtDeposits = await createFirehoseSubscription(queries.usdt)
+  const bitusdDeposits = await createFirehoseSubscription(queries.bitusd)
 
   // only first action for now
   usdtDeposits.on('data', ({ trxId, actions }) =>
