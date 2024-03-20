@@ -1,9 +1,8 @@
 const securityTipsClassNames: Record<string, string> = {
-  contentClassName: 'mt-10',
+  container: 'flex flex-col gap-10 py-24 w-full max-w-screen-lg',
   h1: 'text-3xl md:text-6xl font-bold',
   h2: 'text-2xl md:text-4xl font-bold',
   p: 'text-base md:text-lg',
-  container: 'flex flex-col gap-10 py-24 max-w-screen-lg'
 }
 
 export default function SecurityTips() {

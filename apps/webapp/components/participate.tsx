@@ -1,5 +1,6 @@
 'use client'
 
+import { BitcashAccessButton } from '@/components/bitcash-access'
 import { Button } from '@/components/ui/button'
 import { TypewriterEffect } from '@/components/ui/typewritting-effect'
 import { AnimatePresence, motion } from 'framer-motion'
@@ -78,15 +79,17 @@ export default function Participate() {
             <p className="h-20 py-3 text-center text-gray-500 dark:text-gray-300 md:text-left">
               {step.description}
             </p>
-            {step.buttonText && (
+            {step.buttonText && step.title !== 'Complete KYC' ? (
               <Link href={step.href} shallow>
                 <Button
-                  className="text-bold mt-2 bg-[#7f5af0] text-lg !text-white"
+                  variant="tertiary"
                   size="lg"
                 >
                   {step.buttonText}
                 </Button>
               </Link>
+            ) : (
+              <BitcashAccessButton buttonLabel={step.buttonText} buttonStyle={{ size: 'lg', variant: 'tertiary' }} defaultContent="register" />
             )}
           </div>
         ))}

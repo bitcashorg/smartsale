@@ -66,8 +66,8 @@ export default function AuctionPage({
   ]
 
   return (
-    <>
-      <section className="flex flex-col md:flex-row">
+    <div className="max-w-[100vw] px-2">
+      <section className="flex flex-col md:flex-row w-full">
         <div className="w-full">
           <div className="space-between flex flex-col gap-5 bg-inherit md:h-[320px] md:flex-row">
             <div className="md:w-2/3">
@@ -93,6 +93,6 @@ export default function AuctionPage({
       <section className="b relative mx-auto mb-32 mt-10 flex size-full max-w-screen-xl flex-col items-start justify-start [perspective:1000px] md:h-[40rem]">
         <Tabs tabs={tabs} />
       </section>
-    </>
+    </div>
   )
 }

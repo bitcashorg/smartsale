@@ -1,7 +1,7 @@
 'use client'
 
 import { cn } from '@/lib/utils'
-import { motion, stagger, useAnimate, useInView } from 'framer-motion'
+import { AnimationPlaybackControls, motion, stagger, useAnimate, useInView, usePresence } from 'framer-motion'
 import { useEffect } from 'react'
 
 export const TypewriterEffect = ({
@@ -26,39 +26,56 @@ export const TypewriterEffect = ({
     }
   })
 
+  const [isPresent, safeToRemove] = usePresence()
   const [scope, animate] = useAnimate()
   const isInView = useInView(scope)
-  useEffect(() => {
-    if (isInView) {
-      animate(
-        'span',
-        {
-          display: 'inline-block',
-          opacity: 1
-        },
-        {
-          duration: 0.14,
-          delay: stagger(0.1),
-          ease: 'easeInOut'
-        }
-      ).then(() => {
-        console.log('Animation ended.')
 
-        if (onAnimationEnd) {
-          console.log('Calling onAnimationEnd.')
-          onAnimationEnd()
-        }
-      })
+  useEffect(() => {
+    let animationController: AnimationPlaybackControls | undefined
+
+    if (isInView) {
+      try {
+        animationController = animate(
+          'span',
+          {
+            display: 'inline-block',
+            opacity: 1
+          },
+          {
+            duration: 0.14,
+            delay: stagger(0.1),
+            ease: 'easeInOut'
+          }
+        )
+
+        animationController.then(() => {
+          console.log('Animation ended.')
+          if (onAnimationEnd) {
+            console.log('Calling onAnimationEnd.')
+            onAnimationEnd()
+          }
+        })
+      } catch (error) {
+        console.error('TypewriterEffect animation error:', error)
+      }
     }
-  }, [isInView])
+
+    return () => {
+      if (animationController) {
+        // console.log('TypewriterEffect unmounted.');
+        // (animationController as AnimationPlaybackControls).stop()
+        !isPresent && safeToRemove()
+      }
+    }
+  }, [isInView, isPresent])
 
   const renderWords = () => {
     return (
       <motion.div ref={scope} className="inline">
-        {wordsArray.map((word, idx) => {
+        {wordsArray.length > 0 && wordsArray.map((word, idx) => {
           return (
             <div key={`word-${idx}`} className="inline-block">
-              {word.text.map((char, index) => (
+              {(word.text || ['']).map((char, index) => (
                 <motion.span
                   initial={{}}
                   key={`char-${index}`}
