@@ -14,15 +14,6 @@
     "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|json|ts|tsx)\"",
     "sentry:sourcemaps": "npx sentry-cli sourcemaps inject --org blockmatic --project launchpad-indexer ./dist && sentry-cli sourcemaps upload --org blockmatic --project launchpad-indexer ./dist"
   },
-  "devDependencies": {
-    "@types/lodash": "^4.14.202",
-    "@types/node-fetch": "^2.6.11",
-    "bun-types": "latest",
-    "env-cmd": "^10.1.0",
-    "rimraf": "^5.0.5",
-    "tsconfig": "workspace:*",
-    "typescript": "^5.3.3"
-  },
   "dependencies": {
     "@dfuse/client": "^0.3.21",
     "@sentry/node": "^7.100.1",
@@ -34,6 +25,16 @@
     "smartsale-env": "workspace:*",
     "smartsale-lib": "workspace:*",
     "viem": "latest",
-    "ws": "^8.16.0"
+    "ws": "^8.16.0",
+    "axios": "^1.6.8"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.202",
+    "@types/node-fetch": "^2.6.11",
+    "bun-types": "latest",
+    "env-cmd": "^10.1.0",
+    "rimraf": "^5.0.5",
+    "tsconfig": "workspace:*",
+    "typescript": "^5.3.3"
   }
 }
