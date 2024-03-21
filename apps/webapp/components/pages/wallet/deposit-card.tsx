@@ -43,9 +43,7 @@ export function DepositCard() {
 
   const deposit = async () => {
     if (!address)
-      return setGlobalError(
-        'EVM Adress not found. Make sure your wallet is connected.'
-      )
+      return setGlobalError('Make sure your evm wallet is connected.')
     if (!amount) return setGlobalError('Amount is undefined')
 
     if (token.chainType === 'evm') {

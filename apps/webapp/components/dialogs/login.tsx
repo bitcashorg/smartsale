@@ -36,7 +36,7 @@ export function LoginDialogContent({
               width: '100%',
               borderRadius: 4
             }}
-            value={loginUri.replace('esr://', '')}
+            value={loginUri}
             viewBox={`0 0 256 256`}
           />
         </div>
