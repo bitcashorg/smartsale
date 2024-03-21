@@ -6,8 +6,8 @@ import { startExpress } from './healthcheck'
 async function main() {
   console.log(`Indexer running ...`)
   try {
-    startExpress()
-    startAuctionIndexer()
+    // startExpress()
+    // startAuctionIndexer()
     startSwapsService()
   } catch (error) {
     console.log('ERROR:' + getErrorMessage(error), JSON.stringify(error))

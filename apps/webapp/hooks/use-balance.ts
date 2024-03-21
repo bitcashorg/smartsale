@@ -1,4 +1,4 @@
-import { numberWithCommas } from '@/lib/utils'
+import { numberWithCommas } from 'smartsale-lib'
 import { useEffect } from 'react'
 import { Abi, Address, formatUnits } from 'viem'
 import { useBalance, useReadContracts } from 'wagmi'

@@ -12,7 +12,7 @@ import { useLocation } from 'react-use'
 import { eosEvmTestnet } from 'smartsale-env'
 import { WagmiProvider } from 'wagmi'
 import { sepolia } from 'wagmi/chains'
-import { SigningRequestProvider } from './esr-dialog'
+import { SigningRequestProvider } from './pages/dialogs/esr-dialog'
 
 const queryClient = new QueryClient()
 
@@ -52,9 +52,7 @@ export function Providers({ children, ...props }: ThemeProviderProps) {
         <TooltipProvider>
           <QueryClientProvider client={queryClient}>
             <SessionProvider>
-              <WagmiProvider
-                config={wagmiConfig}
-              >
+              <WagmiProvider config={wagmiConfig}>
                 <RainbowKitProvider>
                   <SigningRequestProvider>{children}</SigningRequestProvider>
                 </RainbowKitProvider>

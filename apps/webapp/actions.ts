@@ -1,7 +1,7 @@
 'use server'
 
 import { db } from 'smartsale-db'
-import { fromEntries } from './lib/utils'
+import { fromEntries } from 'smartsale-lib'
 import { registerAddressSchema } from './lib/validators'
 
 export async function registerAddress(formData: FormData) {

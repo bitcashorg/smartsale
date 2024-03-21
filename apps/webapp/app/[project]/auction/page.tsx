@@ -1,9 +1,9 @@
-import { AuctionBids } from '@/components/auction/auction-bids'
-import { AuctionInfo } from '@/components/auction/auction-info'
-import { AuctionOrders } from '@/components/auction/auction-orders'
-import { ClaimTokens } from '@/components/auction/claim-tokens'
-import { Countdown } from '@/components/auction/countdown'
-import { RegisterAddress } from '@/components/auction/register-address'
+import { AuctionBids } from '@/components/pages/auction/auction-bids'
+import { AuctionInfo } from '@/components/pages/auction/auction-info'
+import { AuctionOrders } from '@/components/pages/auction/auction-orders'
+import { ClaimTokens } from '@/components/pages/auction/claim-tokens'
+import { Countdown } from '@/components/pages/auction/countdown'
+import { RegisterAddress } from '@/components/pages/auction/register-address'
 import { Tabs } from '@/components/ui/tabs'
 import { ProjectWithAuction, projects } from '@/lib/projects'
 import Image from 'next/image'
@@ -67,7 +67,7 @@ export default function AuctionPage({
 
   return (
     <div className="max-w-[100vw] px-2">
-      <section className="flex flex-col md:flex-row w-full">
+      <section className="flex w-full flex-col md:flex-row">
         <div className="w-full">
           <div className="space-between flex flex-col gap-5 bg-inherit md:h-[320px] md:flex-row">
             <div className="md:w-2/3">
