@@ -14,7 +14,7 @@ import { useEosBalances } from '@/hooks/use-eos-balances'
 import { TestnetMBOTSPL, TestnetUSDCred } from 'smartsale-contracts'
 import { useAccount } from 'wagmi'
 
-export function WalletBalances() {
+export function BalancesTable() {
   const { address } = useAccount()
   const eosBalances = useEosBalances()
 

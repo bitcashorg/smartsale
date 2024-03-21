@@ -6,8 +6,7 @@ import {
   DialogDescription,
   DialogFooter,
   DialogHeader,
-  DialogTitle,
-  DialogTrigger
+  DialogTitle
 } from '@/components/ui/dialog'
 import { useSession } from '@/hooks/use-session'
 import { esrOptions } from '@/lib/eos'

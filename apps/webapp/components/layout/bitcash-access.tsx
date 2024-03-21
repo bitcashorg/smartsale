@@ -1,6 +1,6 @@
 'use client'
-import { LoginDialogContent } from '@/components/pages/dialogs/login'
-import { RegisterDialogContent } from '@/components/pages/dialogs/register'
+import { LoginDialogContent } from '@/components/dialogs/login'
+import { RegisterDialogContent } from '@/components/dialogs/register'
 import { Button, buttonVariants } from '@/components/ui/button'
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog'
 import { useErc20Balance } from '@/hooks/use-balance'

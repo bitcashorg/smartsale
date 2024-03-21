@@ -15,7 +15,7 @@ import { useEffect, useState } from 'react'
 import { Address } from 'viem'
 import { useAccount } from 'wagmi'
 
-export function UserTransactions() {
+export function TransactionsTable() {
   const { address } = useAccount()
   const [transactions, setTransactions] = useState<any[]>([])
 

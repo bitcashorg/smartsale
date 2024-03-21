@@ -3,7 +3,7 @@ import { GeistSans } from 'geist/font/sans'
 import { Toaster } from 'react-hot-toast'
 
 import '@/app/globals.css'
-import { ErrorModal } from '@/components/pages/dialogs/error-dialog'
+import { ErrorModal } from '@/components/dialogs/error-dialog'
 import { Header } from '@/components/layout/header'
 import { Newsletter } from '@/components/pages/home/newletter'
 import { Providers } from '@/components/providers'
