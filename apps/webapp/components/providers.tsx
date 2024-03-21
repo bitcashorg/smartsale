@@ -12,7 +12,7 @@ import { useLocation } from 'react-use'
 import { eosEvmTestnet } from 'smartsale-env'
 import { WagmiProvider } from 'wagmi'
 import { sepolia } from 'wagmi/chains'
-import { SigningRequestProvider } from './pages/dialogs/esr-dialog'
+import { SigningRequestProvider } from './dialogs/esr-dialog'
 
 const queryClient = new QueryClient()
 

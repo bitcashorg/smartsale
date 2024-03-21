@@ -6,8 +6,7 @@ import {
   DialogDescription,
   DialogFooter,
   DialogHeader,
-  DialogTitle,
-  DialogTrigger
+  DialogTitle
 } from '@/components/ui/dialog'
 import { useSession } from '@/hooks/use-session'
 import { esrOptions } from '@/lib/eos'
@@ -44,24 +43,27 @@ function useSignatureRequestFn() {
 
   const { mutate: requestSignature, ...props } = useMutation({
     mutationFn: async (esr: SigningRequest) => {
+      console.log('requestSignature', esr)
       if (!session?.account) throw new Error('bitcash account not found')
 
-      // redirect with esr and callback on mobile
-      if (runtimeEnv.isMobile || !searchParams.has('bitcash_explorer')) {
+      // redirect with esr and callback on mobile if not within bitcash explorer
+      if (runtimeEnv.isMobile && !searchParams.has('bitcash_explorer')) {
         const params = new URLSearchParams()
         params.append('esr_code', esr.encode())
         params.append('callback', encodeURIComponent(window.location.href))
         window.location.href = `https://test.bitcash.org/login?${params.toString()}`
       }
 
-      // post request to parent if present
-      if (window.parent) {
+      // post request event on bitcash explorer
+      if (searchParams.has('bitcash_explorer')) {
+        console.log('emitting event to parent')
         return window.parent.postMessage(
           { eventType: 'esr', code: esr.encode() },
           '*'
         )
       }
 
+      console.log('setting state')
       // we show the qr optimistically
       setState({
         esr,
@@ -116,7 +118,8 @@ const [useSignatureRequest, UseSignatureRequestProvider] = createContextHook(
 function EsrDialog() {
   const searchParams = useSearchParams()
   const { open, toggleOpen, esr } = useSignatureRequest()
-  const code = esr?.encode().replace('esr://', '') || ''
+  const code = esr?.encode() || ''
+  console.log('esr code', code)
 
   // never show the qr on mobile or bitcash explorer
   const hideQr =
@@ -136,19 +139,15 @@ function EsrDialog() {
           </DialogDescription>
         </DialogHeader>
         {esr ? (
-          <div
-            style={{
-              height: 'auto',
-              margin: '0 auto',
-              maxWidth: 300,
-              width: '100%',
-              background: 'white',
-              padding: 10
-            }}
-          >
+          <div className="qr-code-container">
             <QRCode
               size={256}
-              style={{ height: 'auto', maxWidth: '100%', width: '100%' }}
+              style={{
+                height: 'auto',
+                maxWidth: '100%',
+                width: '100%',
+                borderRadius: 4
+              }}
               value={code}
               viewBox={`0 0 256 256`}
             />

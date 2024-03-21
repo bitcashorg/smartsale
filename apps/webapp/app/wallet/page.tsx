@@ -1,7 +1,7 @@
 import { AuctionOrders } from '@/components/pages/auction/auction-orders'
 import { DepositCard } from '@/components/pages/wallet/deposit-card'
-import { UserTransactions } from '@/components/pages/wallet/user-transactions'
-import { WalletBalances } from '@/components/pages/wallet/wallet-balances'
+import { TransactionsTable } from '@/components/pages/wallet/transactions-table'
+import { BalancesTable } from '@/components/pages/wallet/balances-table'
 import { WithdrawCard } from '@/components/pages/wallet/withdraw-card'
 import React from 'react'
 
@@ -11,7 +11,7 @@ export default function WalletPage() {
       <div className="space-between flex flex-col gap-5 md:flex-row">
         <div className="md:w-2/3">
           <h1 className="mb-4 text-2xl font-bold">Wallet</h1>
-          <WalletBalances />
+          <BalancesTable />
         </div>
         <div className="flex w-full flex-col gap-5 md:w-1/3">
           <DepositCard />
@@ -21,7 +21,7 @@ export default function WalletPage() {
 
       <div>
         <React.Suspense fallback={<div>Loading ...</div>}>
-          <UserTransactions />
+          <TransactionsTable />
         </React.Suspense>
       </div>
 
