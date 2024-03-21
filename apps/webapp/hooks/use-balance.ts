@@ -66,7 +66,7 @@ export function useErc20Balance({
   const formatted =
     data?.value && data?.decimals
       ? numberWithCommas(formatUnits(data.value, data.decimals))
-      : null
+      : 0
 
   useEffect(() => {
     const unwatch = watchBlockNumber(wagmiConfig, {

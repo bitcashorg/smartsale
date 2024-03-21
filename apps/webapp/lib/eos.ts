@@ -134,14 +134,14 @@ export async function getEosBalance(account: string) {
 
 export async function getBitUsdBalance(account: string) {
   const response = await eos.v1.chain.get_table_rows({
-    code: 'bank.bk',
+    code: smartsaleEnv.test.bitcash.bank,
     table: 'stablev2',
     scope: Name.from(account)
   })
 
-  // * We first find the bitUSD on the account's balance.
-  // ? We can use this for the user's preference and show their preferred currency to convert...
-  return response.rows.find(row => row.balance.quantity.includes('BITUSD'))
-    ?.balance.quantity.replace('BITUSD', '')
-    || 'O'
+  return (
+    response.rows
+      .find(row => row.balance.quantity.includes('BITUSD'))
+      ?.balance.quantity.replace('BITUSD', '') || 'O'
+  )
 }
