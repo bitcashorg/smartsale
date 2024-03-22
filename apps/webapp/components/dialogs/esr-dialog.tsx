@@ -133,7 +133,7 @@ function EsrDialog() {
       </DialogTrigger> */}
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
-          <DialogTitle>Title</DialogTitle>
+          <DialogTitle>Sign transaction</DialogTitle>
           <DialogDescription>
             Scan this qr code on your bitcash app and sign.
           </DialogDescription>
@@ -154,10 +154,7 @@ function EsrDialog() {
           </div>
         ) : null}
         <DialogFooter className="flex sm:justify-center ">
-          <Link href={'https://app.bitcash.org/?share=JVnL7qzrU '}>
-            <Button>Get Bitcash App</Button>
-          </Link>
-          <Button>Sign on Desktop</Button>
+          go to app.bitcash.org to register
         </DialogFooter>
       </DialogContent>
     </Dialog>
