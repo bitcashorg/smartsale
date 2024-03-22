@@ -4,7 +4,7 @@ import { startSwapsService } from './modules/swaps'
 import { startExpress } from './healthcheck'
 
 async function main() {
-  console.log(`Indexer starting up ...`)
+  console.log(`Launchpad indexer starting up ...`)
   try {
     startExpress()
     startAuctionIndexer()

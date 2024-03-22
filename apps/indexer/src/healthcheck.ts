@@ -14,6 +14,7 @@ export function startExpress() {
       res.status(500).send('Failed to fetch current block height')
     }
   })
+
   app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`)
   })
