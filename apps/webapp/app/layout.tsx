@@ -1,7 +1,7 @@
 import { GeistMono } from 'geist/font/mono'
 import { GeistSans } from 'geist/font/sans'
 import { Toaster } from 'react-hot-toast'
-
+import { GoogleAnalytics } from '@next/third-parties/google'
 import '@/app/globals.css'
 import { ErrorModal } from '@/components/dialogs/error-dialog'
 import { Header } from '@/components/layout/header'
@@ -40,6 +40,7 @@ export default function RootLayout({ children, ...props }: RootLayoutProps) {
             {/* <TailwindIndicator /> */}
           </div>
         </Providers>
+        <GoogleAnalytics gaId="G-78N0Z7NPQJ" />
       </body>
     </html>
   )
