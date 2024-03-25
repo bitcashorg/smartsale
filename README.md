@@ -1,4 +1,3 @@
-
 # SmartSale EVM
 
 SmartSale is a comprehensive platform designed to streamline the auction process.
@@ -17,7 +16,7 @@ In apps/smartevm-webapp folder (set up .env file - see .env_sample):
 
 ```
 bun install
-turbo run dev --scope="smartevm-webapp" 
+turbo run dev --scope="smartevm-webapp"
 # task app will execute the same command
 ```
 

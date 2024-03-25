@@ -1,4 +1,3 @@
-
 require("@nomiclabs/hardhat-waffle");
 require("dotenv").config();
 
@@ -13,12 +12,12 @@ module.exports = {
     eosevm_mainnet: {
       accounts: [process.env.PK],
       url: "https://api.evm.eosnetwork.com",
-      chainId: 17777
+      chainId: 17777,
     },
     sepolia: {
       accounts: [process.env.PK],
       url: "https://rpc.sepolia.org",
-      chainId: 11155111
+      chainId: 11155111,
     },
-  }
+  },
 };

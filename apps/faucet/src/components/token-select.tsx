@@ -6,11 +6,11 @@ import {
   SelectLabel,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select"
-import { SelectProps } from "@radix-ui/react-select"
-import { TokenContractData } from "smartsale-contracts"
+} from "@/components/ui/select";
+import { SelectProps } from "@radix-ui/react-select";
+import { TokenContractData } from "smartsale-contracts";
 
-export function TokenSelect({options, ...props}:TokenSelectParams) {
+export function TokenSelect({ options, ...props }: TokenSelectParams) {
   return (
     <Select {...props}>
       <SelectTrigger className="w-[260px]">
@@ -19,13 +19,18 @@ export function TokenSelect({options, ...props}:TokenSelectParams) {
       <SelectContent>
         <SelectGroup>
           <SelectLabel>Token</SelectLabel>
-          {options.map((o,i)=> <SelectItem key={i} value={i.toString()}>{o.symbol} on {(!o.chainId || o.chainId === 15557) ? 'EOSEVM' : 'Sepolia' }</SelectItem>)}
+          {options.map((o, i) => (
+            <SelectItem key={i} value={i.toString()}>
+              {o.symbol} on{" "}
+              {!o.chainId || o.chainId === 15557 ? "EOSEVM" : "Sepolia"}
+            </SelectItem>
+          ))}
         </SelectGroup>
       </SelectContent>
     </Select>
-  )
+  );
 }
 
 interface TokenSelectParams extends SelectProps {
-  options: TokenContractData[]
+  options: TokenContractData[];
 }

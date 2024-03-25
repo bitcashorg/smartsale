@@ -35,9 +35,8 @@ export const generateSignatures: () => void = () => {
       console.log(`Using the account: ${caller.address}`);
 
       // Loading dependencies
-      const allowListContract = await getAllowListOffChainManagedContract(
-        hardhatRuntime,
-      );
+      const allowListContract =
+        await getAllowListOffChainManagedContract(hardhatRuntime);
       const { chainId } = await hardhatRuntime.ethers.provider.getNetwork();
       const contractDomain = domain(chainId, allowListContract.address);
 
