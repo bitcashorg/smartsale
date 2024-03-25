@@ -1,4 +1,4 @@
-import { Newsletter } from '@/components/pages/home/newletter'
+import { Newsletter } from '@/components/pages/home/newsletter/newsletter-form'
 import Participate from '@/components/pages/home/participate'
 import { Upcoming } from '@/components/pages/home/upcoming'
 

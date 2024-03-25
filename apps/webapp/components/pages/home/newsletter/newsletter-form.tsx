@@ -1,15 +1,12 @@
 'use client'
 
-import { useEffect } from 'react'
 import { useForm } from 'react-hook-form'
 import { z } from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
-import {
-  GoogleReCaptchaProvider,
-  useGoogleReCaptcha
-} from 'react-google-recaptcha-v3'
-import { subscribeToNewsletter } from '@/app/actions'
+
 import { BackgroundBeams } from '@/components/ui/background-beans'
+import { subscribeToNewsletter } from '@/actions'
+import { NewsletterRecaptcha } from './newsletter-recaptcha'
 
 // Schema for form validation with Zod
 const formSchema = z.object({
@@ -20,32 +17,14 @@ const formOptions = { resolver: zodResolver(formSchema) }
 type SubcriptionFormData = z.infer<typeof formSchema>
 
 function NewsletterForm() {
-  const { executeRecaptcha } = useGoogleReCaptcha()
   const {
     register,
     setValue,
     watch,
     formState: { errors }
   } = useForm<SubcriptionFormData>(formOptions)
+
   const recaptchaToken = watch('recaptcha')
-
-  useEffect(() => {
-    register('recaptcha', { required: true })
-  }, [register])
-
-  useEffect(() => {
-    const verifyRecaptcha = async () => {
-      if (!executeRecaptcha) {
-        console.log('Execute recaptcha not yet available')
-        return
-      }
-
-      const token = await executeRecaptcha('newsletter_signup')
-      setValue('recaptcha', token, { shouldValidate: true })
-    }
-
-    verifyRecaptcha()
-  }, [executeRecaptcha, setValue])
 
   return (
     <div className="mx-auto w-full max-w-screen-xl p-4 lg:px-6 lg:py-5">
@@ -66,7 +45,11 @@ function NewsletterForm() {
             required
           />
           {errors.email && <p role="alert">{errors.email.message}</p>}
-          <input type="hidden" {...register('recaptcha')} />
+          <input type="hidden" {...register('recaptcha', { required: true })} />
+          <NewsletterRecaptcha
+            onSucess={v => setValue('recaptcha', v)}
+            onError={() => {}}
+          />
           <button
             type="submit"
             className="w-full rounded-md bg-secondary px-5 py-3 text-white"
@@ -82,15 +65,10 @@ function NewsletterForm() {
 
 export function Newsletter() {
   return (
-    <GoogleReCaptchaProvider
-      reCaptchaKey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!}
-    >
-      <section className="relative -mt-20 min-h-[50vh] w-screen py-48">
-        <BackgroundBeams />
-        <NewsletterForm />
-        {/* Form description and privacy policy link ... */}
-      </section>
-    </GoogleReCaptchaProvider>
+    <section className="relative -mt-20 min-h-[50vh] w-screen py-48">
+      <BackgroundBeams />
+      <NewsletterForm />
+    </section>
   )
 }
 
