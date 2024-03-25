@@ -5,7 +5,6 @@ import { Toaster } from 'react-hot-toast'
 import '@/app/globals.css'
 import { ErrorModal } from '@/components/dialogs/error-dialog'
 import { Header } from '@/components/layout/header'
-import { Newsletter } from '@/components/pages/home/newletter'
 import { Providers } from '@/components/providers'
 import { cn } from '@/lib/utils'
 import '@rainbow-me/rainbowkit/styles.css'
@@ -36,7 +35,6 @@ export default function RootLayout({ children, ...props }: RootLayoutProps) {
             <Header />
             <main className="flex flex-1 flex-col py-5">
               <div className="container">{children}</div>
-              <Newsletter />
             </main>
             <ErrorModal />
             {/* <TailwindIndicator /> */}
