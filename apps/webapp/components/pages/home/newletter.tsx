@@ -1,14 +1,100 @@
 'use client'
 
+import { useEffect } from 'react'
+import { useForm } from 'react-hook-form'
+import { z } from 'zod'
+import { zodResolver } from '@hookform/resolvers/zod'
+import {
+  GoogleReCaptchaProvider,
+  useGoogleReCaptcha
+} from 'react-google-recaptcha-v3'
+import { subscribeToNewsletter } from '@/app/actions'
 import { BackgroundBeams } from '@/components/ui/background-beans'
-import { usePathname } from 'next/navigation'
+
+// Schema for form validation with Zod
+const formSchema = z.object({
+  email: z.string().email({ message: 'Invalid email address' }),
+  recaptcha: z.string()
+})
+const formOptions = { resolver: zodResolver(formSchema) }
+type SubcriptionFormData = z.infer<typeof formSchema>
+
+function NewsletterForm() {
+  const { executeRecaptcha } = useGoogleReCaptcha()
+  const {
+    register,
+    setValue,
+    watch,
+    formState: { errors }
+  } = useForm<SubcriptionFormData>(formOptions)
+  const recaptchaToken = watch('recaptcha')
+
+  useEffect(() => {
+    register('recaptcha', { required: true })
+  }, [register])
+
+  useEffect(() => {
+    const verifyRecaptcha = async () => {
+      if (!executeRecaptcha) {
+        console.log('Execute recaptcha not yet available')
+        return
+      }
+
+      const token = await executeRecaptcha('newsletter_signup')
+      setValue('recaptcha', token, { shouldValidate: true })
+    }
+
+    verifyRecaptcha()
+  }, [executeRecaptcha, setValue])
+
+  return (
+    <div className="mx-auto w-full max-w-screen-xl p-4 lg:px-6 lg:py-5">
+      <div className="mx-auto max-w-screen-md sm:text-center">
+        <h2 className="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
+          Sign up for our newsletter
+        </h2>
+        <p className="mx-auto mb-8 max-w-2xl font-light text-gray-500 dark:text-gray-400 sm:text-xl md:mb-12">
+          Stay up to date with the roadmap progress, announcements and exclusive
+          discounts feel free to sign up with your email.
+        </p>
+        <form action={subscribeToNewsletter} className="space-y-4">
+          <input
+            {...register('email', { required: 'Email is required' })}
+            placeholder="Enter your email"
+            type="email"
+            className="block w-full rounded-md border-gray-300 p-3"
+            required
+          />
+          {errors.email && <p role="alert">{errors.email.message}</p>}
+          <input type="hidden" {...register('recaptcha')} />
+          <button
+            type="submit"
+            className="w-full rounded-md bg-secondary px-5 py-3 text-white"
+            disabled={!recaptchaToken}
+          >
+            Subscribe
+          </button>
+        </form>
+      </div>
+    </div>
+  )
+}
 
 export function Newsletter() {
-  const pathname = usePathname()
+  return (
+    <GoogleReCaptchaProvider
+      reCaptchaKey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!}
+    >
+      <section className="relative -mt-20 min-h-[50vh] w-screen py-48">
+        <BackgroundBeams />
+        <NewsletterForm />
+        {/* Form description and privacy policy link ... */}
+      </section>
+    </GoogleReCaptchaProvider>
+  )
+}
 
-  if (pathname !== '/') return null
-
-  // TODO: Newsletter
+export function Newsletter2() {
   return (
     <section className="relative -mt-20 min-h-[50vh] w-screen py-48">
       <div className="mx-auto w-full max-w-screen-xl p-4 lg:px-6 lg:py-5">
@@ -56,16 +142,6 @@ export function Newsletter() {
                   Subscribe
                 </button>
               </div>
-            </div>
-            <div className="newsletter-form-footer mx-auto max-w-screen-sm text-left text-sm text-gray-500 dark:text-gray-300">
-              We care about the protection of your data.{' '}
-              <a
-                href="#"
-                className="text-primary-600 dark:text-primary-500 font-medium hover:underline"
-              >
-                Read our Privacy Policy
-              </a>
-              .
             </div>
           </form>
         </div>

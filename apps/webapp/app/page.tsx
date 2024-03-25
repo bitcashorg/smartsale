@@ -1,3 +1,4 @@
+import { Newsletter } from '@/components/pages/home/newletter'
 import Participate from '@/components/pages/home/participate'
 import { Upcoming } from '@/components/pages/home/upcoming'
 
@@ -8,6 +9,7 @@ export default async function IndexPage() {
     <>
       <Participate />
       <Upcoming />
+      <Newsletter />
     </>
   )
 }
