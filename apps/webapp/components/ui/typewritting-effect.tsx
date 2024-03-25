@@ -1,7 +1,14 @@
 'use client'
 
 import { cn } from '@/lib/utils'
-import { AnimationPlaybackControls, motion, stagger, useAnimate, useInView, usePresence } from 'framer-motion'
+import {
+  AnimationPlaybackControls,
+  motion,
+  stagger,
+  useAnimate,
+  useInView,
+  usePresence
+} from 'framer-motion'
 import { useEffect } from 'react'
 
 export const TypewriterEffect = ({
@@ -72,25 +79,26 @@ export const TypewriterEffect = ({
   const renderWords = () => {
     return (
       <motion.div ref={scope} className="inline">
-        {wordsArray.length > 0 && wordsArray.map((word, idx) => {
-          return (
-            <div key={`word-${idx}`} className="inline-block">
-              {(word.text || ['']).map((char, index) => (
-                <motion.span
-                  initial={{}}
-                  key={`char-${index}`}
-                  className={cn(
-                    `hidden text-black opacity-0 dark:text-white`,
-                    word.className
-                  )}
-                >
-                  {char}
-                </motion.span>
-              ))}
-              &nbsp;
-            </div>
-          )
-        })}
+        {wordsArray.length > 0 &&
+          wordsArray.map((word, idx) => {
+            return (
+              <div key={`word-${idx}`} className="inline-block">
+                {(word.text || ['']).map((char, index) => (
+                  <motion.span
+                    initial={{}}
+                    key={`char-${index}`}
+                    className={cn(
+                      `hidden text-black opacity-0 dark:text-white`,
+                      word.className
+                    )}
+                  >
+                    {char}
+                  </motion.span>
+                ))}
+                &nbsp;
+              </div>
+            )
+          })}
       </motion.div>
     )
   }

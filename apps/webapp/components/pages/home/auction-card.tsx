@@ -19,10 +19,7 @@ export function AuctionCard(props: Project) {
   const isAuctionClosed = badgeText === 'AUCTION CLOSED'
 
   return (
-    <Link
-      href={linkPath}
-      shallow={true}
-    >
+    <Link href={linkPath} shallow={true}>
       <CardContainer className="w-full">
         <CardBody className="group/card relative size-auto  rounded-xl border border-black/[0.1] bg-gray-50 p-6 dark:border-white/[0.2] dark:bg-black dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] sm:max-w-[30rem]  ">
           <CardItem
@@ -67,14 +64,13 @@ export function AuctionCard(props: Project) {
           <div className="mt-10 flex items-center justify-between">
             <CardItem
               translateZ={33}
-              className="rounded-xl px-4 py-2 text-xs font-normal dark:text-white hover:text-link focus-within:text-link"
-
+              className="hover:text-link focus-within:text-link rounded-xl px-4 py-2 text-xs font-normal dark:text-white"
             >
               <Button
                 variant="ghost"
                 className="px-2 py-1"
-                onClick={(e) => {
-                  (e.target as Node).parentElement?.parentElement?.click()
+                onClick={e => {
+                  ;(e.target as Node).parentElement?.parentElement?.click()
                 }}
               >
                 See more →
@@ -87,9 +83,9 @@ export function AuctionCard(props: Project) {
                   className={cn(
                     buttonVariants({
                       variant: 'default',
-                      size: 'lg',
+                      size: 'lg'
                     }),
-                    'font-bold text-md',
+                    'text-md font-bold',
                     { 'cursor-not-allowed opacity-60': isAuctionClosed }
                   )}
                   shallow

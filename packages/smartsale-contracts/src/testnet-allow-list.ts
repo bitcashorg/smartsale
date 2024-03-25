@@ -1,92 +1,92 @@
 import { EVMContractData } from "./types";
 
-export const TestnetAllowList : EVMContractData = {
-  "address": "0x3D18904711fe451356eBA461B7747EA3Abff6c93",
-  "indexFromBlock": 12241046,
+export const TestnetAllowList: EVMContractData = {
+  address: "0x3D18904711fe451356eBA461B7747EA3Abff6c93",
+  indexFromBlock: 12241046,
   chainId: 15557,
-    chainType: 'evm',
-      chainName: 'Sepolia',
-  "abi": [
+  chainType: "evm",
+  chainName: "Sepolia",
+  abi: [
     {
-      "inputs": [],
-      "stateMutability": "nonpayable",
-      "type": "constructor"
+      inputs: [],
+      stateMutability: "nonpayable",
+      type: "constructor",
     },
     {
-      "inputs": [],
-      "name": "domainSeparator",
-      "outputs": [
+      inputs: [],
+      name: "domainSeparator",
+      outputs: [
         {
-          "internalType": "bytes32",
-          "name": "",
-          "type": "bytes32"
-        }
+          internalType: "bytes32",
+          name: "",
+          type: "bytes32",
+        },
       ],
-      "stateMutability": "view",
-      "type": "function"
+      stateMutability: "view",
+      type: "function",
     },
     {
-      "inputs": [
+      inputs: [
         {
-          "internalType": "address",
-          "name": "user",
-          "type": "address"
+          internalType: "address",
+          name: "user",
+          type: "address",
         },
         {
-          "internalType": "uint256",
-          "name": "auctionId",
-          "type": "uint256"
+          internalType: "uint256",
+          name: "auctionId",
+          type: "uint256",
         },
         {
-          "internalType": "bytes",
-          "name": "callData",
-          "type": "bytes"
-        }
+          internalType: "bytes",
+          name: "callData",
+          type: "bytes",
+        },
       ],
-      "name": "isAllowed",
-      "outputs": [
+      name: "isAllowed",
+      outputs: [
         {
-          "internalType": "bytes4",
-          "name": "",
-          "type": "bytes4"
-        }
+          internalType: "bytes4",
+          name: "",
+          type: "bytes4",
+        },
       ],
-      "stateMutability": "view",
-      "type": "function"
+      stateMutability: "view",
+      type: "function",
     },
     {
-      "inputs": [
+      inputs: [
         {
-          "internalType": "address",
-          "name": "user",
-          "type": "address"
+          internalType: "address",
+          name: "user",
+          type: "address",
         },
         {
-          "internalType": "uint256",
-          "name": "auctionId",
-          "type": "uint256"
+          internalType: "uint256",
+          name: "auctionId",
+          type: "uint256",
         },
         {
-          "internalType": "address",
-          "name": "allower",
-          "type": "address"
+          internalType: "address",
+          name: "allower",
+          type: "address",
         },
         {
-          "internalType": "bytes",
-          "name": "callData",
-          "type": "bytes"
-        }
+          internalType: "bytes",
+          name: "callData",
+          type: "bytes",
+        },
       ],
-      "name": "isAllowedBy",
-      "outputs": [
+      name: "isAllowedBy",
+      outputs: [
         {
-          "internalType": "bytes4",
-          "name": "",
-          "type": "bytes4"
-        }
+          internalType: "bytes4",
+          name: "",
+          type: "bytes4",
+        },
       ],
-      "stateMutability": "view",
-      "type": "function"
-    }
-  ] 
-}
+      stateMutability: "view",
+      type: "function",
+    },
+  ],
+};

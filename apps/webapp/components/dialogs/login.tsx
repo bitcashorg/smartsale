@@ -23,7 +23,8 @@ export function LoginDialogContent({
       <DialogHeader>
         <DialogTitle>Connect bitcash Wallet</DialogTitle>
         <DialogDescription>
-          Scan this QR code with the bitcash wallet QR reader and sign to log in.
+          Scan this QR code with the bitcash wallet QR reader and sign to log
+          in.
         </DialogDescription>
       </DialogHeader>
       {loginUri ? (
@@ -42,7 +43,7 @@ export function LoginDialogContent({
         </div>
       ) : null}
 
-      <DialogFooter className="flex !flex-col gap-4 pt-2 sm:justify-center border-t border-t-gray-300 dark:border-t-gray-800">
+      <DialogFooter className="flex !flex-col gap-4 border-t border-t-gray-300 pt-2 dark:border-t-gray-800 sm:justify-center">
         <Button onClick={() => updateDialogContent('register')}>
           Get Bitcash App
         </Button>

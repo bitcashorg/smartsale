@@ -1,4 +1,3 @@
-
 # Hardhat Project
 
 This project contains two contracts:
@@ -24,7 +23,6 @@ PK=<your-private-key>
 ## Usage
 
 To deploy the contracts, run the corresponding package.json script
-
 
 ## Addresses
 

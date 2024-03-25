@@ -96,8 +96,7 @@ export const FadeInDiv = ({
   active: Tab
   hovering?: boolean
 }) => {
-  const isActive = (tab: Tab) =>
-    tabs.some(t => t.value === tab.value)
+  const isActive = (tab: Tab) => tabs.some(t => t.value === tab.value)
 
   return (
     <div className="relative h-[512px] w-full">

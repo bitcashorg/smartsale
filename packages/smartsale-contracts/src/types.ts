@@ -1,10 +1,10 @@
-import type { Abi, Address } from 'abitype';
+import type { Abi, Address } from "abitype";
 export interface ContractData {
   abi: Abi;
   address: Address | string;
   chainId: number | string;
-  chainType: ChainType
-  chainName: string
+  chainType: ChainType;
+  chainName: string;
   indexFromBlock: number;
 }
 export interface TokenContractData extends ContractData {
@@ -34,5 +34,4 @@ export interface EOSTokenContractData extends TokenContractData {
   chainId: string;
 }
 
-
-export type ChainType = 'evm' | 'antelope'
+export type ChainType = "evm" | "antelope";
