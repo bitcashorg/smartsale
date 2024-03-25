@@ -3,8 +3,6 @@
 import { useForm } from 'react-hook-form'
 import { z } from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
-
-import { BackgroundBeams } from '@/components/ui/background-beans'
 import { subscribeToNewsletter } from '@/actions'
 import { NewsletterRecaptcha } from './newsletter-recaptcha'
 
@@ -16,7 +14,7 @@ const formSchema = z.object({
 const formOptions = { resolver: zodResolver(formSchema) }
 type SubcriptionFormData = z.infer<typeof formSchema>
 
-function NewsletterForm() {
+export function NewsletterForm() {
   const {
     register,
     setValue,
@@ -27,7 +25,7 @@ function NewsletterForm() {
   const recaptchaToken = watch('recaptcha')
 
   return (
-    <div className="mx-auto w-full max-w-screen-xl p-4 lg:px-6 lg:py-5">
+    <div className="z-10 mx-auto w-full max-w-screen-xl p-4 lg:px-6 lg:py-5">
       <div className="mx-auto max-w-screen-md sm:text-center">
         <h2 className="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
           Sign up for our newsletter
@@ -36,7 +34,7 @@ function NewsletterForm() {
           Stay up to date with the roadmap progress, announcements and exclusive
           discounts feel free to sign up with your email.
         </p>
-        <form action={subscribeToNewsletter} className="space-y-4">
+        <form action={subscribeToNewsletter} className="space-y-4" noValidate>
           <input
             {...register('email', { required: 'Email is required' })}
             placeholder="Enter your email"
@@ -60,14 +58,5 @@ function NewsletterForm() {
         </form>
       </div>
     </div>
-  )
-}
-
-export function Newsletter() {
-  return (
-    <section className="relative -mt-20 min-h-[50vh] w-screen py-48">
-      <BackgroundBeams />
-      <NewsletterForm />
-    </section>
   )
 }
