@@ -27,6 +27,7 @@ COPY packages/ ./packages/
 
 # Set the working directory to your specific workspace
 WORKDIR /app/apps/indexer
+RUN bun run build
 
 EXPOSE 8080
-CMD ["bun", "src/index.ts"]
+CMD ["node", "dist"]

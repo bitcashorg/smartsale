@@ -1,3 +1,4 @@
+// hash object
 export async function hashObject(obj: object): Promise<string> {
   const objString = JSON.stringify(obj);
   const encoder = new TextEncoder();
