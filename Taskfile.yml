@@ -14,6 +14,6 @@ tasks:
     - turbo run dev --scope="launchpad-indexer"
 
   indexer-docker:
-   - docker build -t launchpad-indexer -f apps/indexer/Dockerfile .
+   - docker build --no-cache  -t launchpad-indexer -f apps/indexer/Dockerfile .
    - docker run -p 8080:8080 --env-file ./apps/indexer/.env launchpad-indexer
 

@@ -18,7 +18,7 @@ COPY bun.lockb .
 
 # Install dependencies for the entire monorepo
 RUN mkdir hardhat
-RUN npm install -g bun 
+RUN npm install -g bun ts-node
 RUN bun install
 
 # Copy the specific workspaces
@@ -27,7 +27,6 @@ COPY packages/ ./packages/
 
 # Set the working directory to your specific workspace
 WORKDIR /app/apps/indexer
-RUN bun run build
 
 EXPOSE 8080
-CMD ["node", "dist"]
+CMD ["ts-node", "src/index.ts"]
