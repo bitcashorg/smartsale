@@ -108,7 +108,7 @@ async function createSigntureRequest({
       action,
       info,
       callback: {
-        url: 'https://bitcash-launchpad.vercel.app/api/esr',
+        url: 'https://bitlauncher.ai/api/esr',
         background: true
       }
     },
