@@ -17,17 +17,8 @@
     "eslint": "^8.44.0",
     "prettier": "^3.2.5",
     "prisma": "latest",
-    "ts-node": "^10.9.2",
-    "ts-node-dev": "^2.0.0",
-    "tsconfig-paths": "^4.2.0",
-    "turbo": "^1.11.2"
-  },
-  "dependencies": {
-    "@types/bn.js": "^5.1.5",
-    "@types/express": "^4.17.21",
-    "@types/pako": "^2.0.3",
-    "mini-svg-data-uri": "^1.4.4",
-    "prettier-plugin-tailwindcss": "^0.5.12"
+    "turbo": "^1.11.2",
+    "@types/bn.js": "^5.1.5"
   },
   "workspaces": {
     "packages": [
