@@ -32,16 +32,16 @@
     "vconsole": "^3.15.1"
   },
   "devDependencies": {
+    "@types/express": "^4.17.21",
     "@types/lodash": "^4.14.202",
     "@types/node-fetch": "^2.6.11",
     "bun-types": "latest",
     "env-cmd": "^10.1.0",
     "rimraf": "^5.0.5",
-    "tsconfig": "workspace:*",
-    "typescript": "^5.3.3",
     "ts-node": "^10.9.2",
     "ts-node-dev": "^2.0.0",
+    "tsconfig": "workspace:*",
     "tsconfig-paths": "^4.2.0",
-    "@types/express": "^4.17.21"
+    "typescript": "^5.3.3"
   }
 }
