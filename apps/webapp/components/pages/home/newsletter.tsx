@@ -4,7 +4,7 @@ import { useForm } from 'react-hook-form'
 import { z } from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { subscribeToNewsletter } from '@/actions'
-import ReCAPTCHA from 'react-google-recaptcha'
+import { GoogleReCaptcha } from 'react-google-recaptcha-v3'
 
 // Schema for form validation with Zod
 const formSchema = z.object({
@@ -44,11 +44,7 @@ export function Newsletter() {
         />
         {errors.email && <p role="alert">{errors.email.message}</p>}
         <input type="hidden" {...register('recaptcha', { required: true })} />
-        <ReCAPTCHA
-          theme="dark"
-          sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ''}
-          onChange={v => setValue('recaptcha', v || '')}
-        />
+        <GoogleReCaptcha onVerify={v => setValue('recaptcha', v || '')} />
         <button
           type="submit"
           className="w-full rounded-md bg-secondary px-5 py-3 text-white"
