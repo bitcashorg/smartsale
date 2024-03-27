@@ -1,5 +1,5 @@
 'use client'
-
+import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3'
 import { TooltipProvider } from '@/components/ui/tooltip'
 import { GlobalDataProvider } from '@/hooks/use-global-data'
 import { SessionProvider } from '@/hooks/use-session'
@@ -54,7 +54,22 @@ export function Providers({ children, ...props }: ThemeProviderProps) {
             <SessionProvider>
               <WagmiProvider config={wagmiConfig}>
                 <RainbowKitProvider>
-                  <SigningRequestProvider>{children}</SigningRequestProvider>
+                  <SigningRequestProvider>
+                    <GoogleReCaptchaProvider
+                      reCaptchaKey={
+                        process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ''
+                      }
+                      // language="[optional_language]"
+                      container={{
+                        parameters: {
+                          badge: 'inline', //'[inline|bottomright|bottomleft]', // optional, default undefined
+                          theme: 'dark' // optional, default undefined
+                        }
+                      }}
+                    >
+                      {children}
+                    </GoogleReCaptchaProvider>
+                  </SigningRequestProvider>
                 </RainbowKitProvider>
               </WagmiProvider>
             </SessionProvider>
