@@ -1,6 +1,6 @@
 options:
   logging: CLOUD_LOGGING_ONLY
-  
+
 steps:
   # Build the container image
   - name: 'gcr.io/cloud-builders/docker'
@@ -36,7 +36,7 @@ steps:
         '--concurrency',
         '80',
         '--memory',
-        '512Mi',
+        '2048Mi',
         '--cpu',
         '1',
       ]
