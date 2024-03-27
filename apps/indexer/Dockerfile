@@ -29,4 +29,4 @@ COPY packages/ ./packages/
 WORKDIR /app/apps/indexer
 
 EXPOSE 8080
-CMD ["ts-node -r tsconfig-paths/register", "src/index.ts"]
+CMD ["bun", "dev"]

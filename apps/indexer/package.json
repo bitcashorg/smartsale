@@ -11,8 +11,7 @@
     "start": "env-cmd node ./dist",
     "build": "rimraf dist && tsc -b",
     "lint": "eslint --ignore-path .gitignore \"**/*.+(js|ts|tsx)\" --fix",
-    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|json|ts|tsx)\"",
-    "sentry:sourcemaps": "npx sentry-cli sourcemaps inject --org blockmatic --project launchpad-indexer ./dist && sentry-cli sourcemaps upload --org blockmatic --project launchpad-indexer ./dist"
+    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|json|ts|tsx)\""
   },
   "dependencies": {
     "@dfuse/client": "^0.3.21",
