@@ -38,6 +38,7 @@
     "geist": "^1.2.2",
     "lodash": "^4.17.21",
     "lucide-react": "^0.323.0",
+    "mini-svg-data-uri": "^1.4.4",
     "next": "latest",
     "next-themes": "^0.2.1",
     "pako": "^2.1.0",
