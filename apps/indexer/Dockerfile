@@ -29,4 +29,4 @@ COPY packages/ ./packages/
 WORKDIR /app/apps/indexer
 
 EXPOSE 8080
-CMD ["bun", "dev"]
+CMD ["bun", "prod"]
