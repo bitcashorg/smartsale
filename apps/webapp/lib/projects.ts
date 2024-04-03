@@ -42,7 +42,7 @@ export const projects: Project[] = [
     token: TestnetMBOTSPL,
     auctionId: 9,
     registrationOpen: true
-  },
+  }
 ]
 
 export interface Project {

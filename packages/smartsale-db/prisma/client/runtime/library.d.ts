@@ -659,10 +659,6 @@ export declare type DevTypeMapFnDef = {
   payload: OperationPayload;
 };
 
-declare type Dictionary<T> = {
-  [key: string]: T | undefined;
-};
-
 export declare namespace DMMF {
   export type Document = ReadonlyDeep_2<{
     datamodel: Datamodel;
@@ -882,7 +878,7 @@ export declare namespace DMMF {
 
 export declare interface DriverAdapter extends Queryable {
   /**
-   * Starts new transation.
+   * Starts new transaction.
    */
   startTransaction(): Promise<Result_4<Transaction>>;
   /**
@@ -1659,7 +1655,18 @@ declare interface GeneratorConfig {
   output: EnvValue | null;
   isCustomOutput?: boolean;
   provider: EnvValue;
-  config: Dictionary<string | string[]>;
+  config: {
+    /** `output` is a reserved name and will only be available directly at `generator.output` */
+    output?: never;
+    /** `provider` is a reserved name and will only be available directly at `generator.provider` */
+    provider?: never;
+    /** `binaryTargets` is a reserved name and will only be available directly at `generator.binaryTargets` */
+    binaryTargets?: never;
+    /** `previewFeatures` is a reserved name and will only be available directly at `generator.previewFeatures` */
+    previewFeatures?: never;
+  } & {
+    [key: string]: string | string[] | undefined;
+  };
   binaryTargets: BinaryTargetsEnvValue[];
   previewFeatures: string[];
 }
@@ -2642,6 +2649,15 @@ export declare const objectEnumValues: {
   };
 };
 
+declare const officialPrismaAdapters: readonly [
+  "@prisma/adapter-planetscale",
+  "@prisma/adapter-neon",
+  "@prisma/adapter-libsql",
+  "@prisma/adapter-d1",
+  "@prisma/adapter-pg",
+  "@prisma/adapter-pg-worker",
+];
+
 declare type Omit_2<T, K extends string | number | symbol> = {
   [P in keyof T as P extends K ? never : P]: T[P];
 };
@@ -2964,6 +2980,7 @@ declare type Query = {
 
 declare interface Queryable {
   readonly provider: "mysql" | "postgres" | "sqlite";
+  readonly adapterName: (typeof officialPrismaAdapters)[number] | (string & {});
   /**
    * Execute a query given as SQL, interpolating the given parameters,
    * and returning the type-aware result set of the query.

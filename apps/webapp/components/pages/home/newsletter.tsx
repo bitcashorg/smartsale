@@ -16,21 +16,18 @@ const formOptions = { resolver: zodResolver(formSchema) }
 type SubcriptionFormData = z.infer<typeof formSchema>
 
 export function Newsletter() {
-  const {
-    register,
-    setValue,
-    watch,
-    formState: { errors }
-  } = useForm<SubcriptionFormData>(formOptions)
+  const { register, setValue, watch, formState, getValues } =
+    useForm<SubcriptionFormData>(formOptions)
 
   const recaptchaToken = watch('recaptcha')
   const email = watch('email')
   const recaptcha = watch('recaptcha')
-  const isEmailValid = !errors.email && email && email.match(/.+@.+\..+/)
+  const isEmailValid =
+    !formState.errors.email && email && email.match(/.+@.+\..+/)
 
   return (
     // <div className="z-10 w-full max-w-screen-xl p-4 mx-auto lg:px-6 lg:py-5">
-    <section className="flex flex-col gap-14 mx-auto max-w-screen-md sm:text-center">
+    <section className="mx-auto flex max-w-screen-md flex-col gap-14 sm:text-center">
       <div className="flex flex-col gap-3">
         <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
           Sign up for our newsletter
@@ -40,7 +37,11 @@ export function Newsletter() {
           discounts feel free to sign up with your email.
         </p>
       </div>
-      <form action={subscribeToNewsletter} className="flex flex-col md:flex-row gap-5" noValidate>
+      <form
+        action={subscribeToNewsletter}
+        className="flex flex-col gap-5 md:flex-row"
+        noValidate
+      >
         <input
           {...register('email', { required: 'Email is required' })}
           placeholder="Enter your email"
@@ -48,15 +49,21 @@ export function Newsletter() {
           className="block w-full rounded-md border-gray-300 p-3 md:max-w-[80%]"
           required
         />
-        {errors.email && <p role="alert">{errors.email.message}</p>}
+        {formState.errors.email && (
+          <p role="alert">{formState.errors.email?.message}</p>
+        )}
         <input type="hidden" {...register('recaptcha', { required: true })} />
-        <GoogleReCaptcha onVerify={v => setValue('recaptcha', v || '')} />
+        <GoogleReCaptcha
+          onVerify={v => setValue('recaptcha', v.toString() || '')}
+        />
         <Button
           type="submit"
           variant="secondary"
           size="lg"
-          className="w-full text-lg py-6 my-0 md:max-w-[20%]"
-          disabled={!recaptchaToken || Boolean(errors.email) || !isEmailValid}
+          className="my-0 w-full py-6 text-lg md:max-w-[20%]"
+          disabled={
+            !recaptchaToken || Boolean(formState.errors.email) || !isEmailValid
+          }
         >
           Subscribe
         </Button>

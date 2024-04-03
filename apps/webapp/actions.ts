@@ -39,6 +39,7 @@ async function validateRecaptcha(recaptchaToken: string): Promise<boolean> {
 }
 
 export async function subscribeToNewsletter(data: FormData) {
+  console.log('✅ Subscribe to newsletter!')
   const resend = new Resend(process.env.RESEND_API_KEY)
 
   const NewsletterSchema = z.object({
@@ -48,6 +49,7 @@ export async function subscribeToNewsletter(data: FormData) {
 
   // Convert FormData to a plain object to validate
   const formData = Object.fromEntries(data)
+  console.log('✅ formData:', formData)
   try {
     // Validate the form data against the schema
     const validatedData = NewsletterSchema.parse(formData)
@@ -62,18 +64,18 @@ export async function subscribeToNewsletter(data: FormData) {
     })
 
     if (res.error) {
-      console.log('newsletter reg error', res.error)
-      return NextResponse.json({ error: 'unexpected error' })
+      console.log('🚨 newsletter reg error', res.error)
+      return { error: 'unexpected error' }
     }
 
     console.log('newsletter reg', validatedData.email)
-    return NextResponse.json({ success: true })
+    return { success: true }
   } catch (error) {
     console.error('Validation or other error', error)
     // Handle the validation error or other errors appropriately
     // For example, return an error response to the client
-    return NextResponse.json({
+    return {
       error: 'Invalid input or recaptcha'
-    })
+    }
   }
 }

@@ -20,7 +20,12 @@ export function AuctionCard(props: Project) {
   const isAuctionPreparation = badgeText.match(/IN PREPARATION/)
 
   return (
-    <Link id={`hot-auction-${title}`} href={isAuctionPreparation ? `#` : linkPath} shallow={true} className={cn({ 'cursor-not-allowed': isAuctionPreparation })}>
+    <Link
+      id={`hot-auction-${title}`}
+      href={isAuctionPreparation ? `#` : linkPath}
+      shallow={true}
+      className={cn({ 'cursor-not-allowed': isAuctionPreparation })}
+    >
       <CardContainer className="w-full">
         <CardBody className="group/card relative size-auto rounded-xl border border-black/[0.1] bg-gray-50/60 p-6 dark:border-white/[0.2] dark:bg-black/60 dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] sm:max-w-[30rem]  ">
           <CardItem
@@ -62,11 +67,11 @@ export function AuctionCard(props: Project) {
               <span>{maxAllocation}</span>
             </div>
           </CardItem>
-          <div className="mt-10 flex items-center justify-between min-h-[60px]">
+          <div className="mt-10 flex min-h-[60px] items-center justify-between">
             {isAuctionPreparation ? (
               <CardItem
                 translateZ={66}
-                className="w-full hover:text-link focus-within:text-link rounded-xl px-4 py-2 text-sm font-normal text-center"
+                className="hover:text-link focus-within:text-link w-full rounded-xl px-4 py-2 text-center text-sm font-normal"
               >
                 This auction is not currently available. Check out later!
               </CardItem>
@@ -79,7 +84,7 @@ export function AuctionCard(props: Project) {
                   variant="ghost"
                   className="px-2 py-1"
                   onClick={e => {
-                    ; (e.target as Node).parentElement?.parentElement?.click()
+                    ;(e.target as Node).parentElement?.parentElement?.click()
                   }}
                 >
                   See more →
@@ -95,7 +100,7 @@ export function AuctionCard(props: Project) {
                       variant: 'default',
                       size: 'lg'
                     }),
-                    'text-md font-bold',
+                    'text-md font-bold'
                   )}
                   shallow
                 >

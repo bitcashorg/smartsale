@@ -29,12 +29,18 @@ function WalletIcon({ className }: IconProps) {
 
 export default function Participate() {
   const stepsInfoRef = React.useRef<HTMLParagraphElement>(null)
-  const showStepsInfo = useInView(stepsInfoRef, { once: true, margin: '-400px' })
+  const showStepsInfo = useInView(stepsInfoRef, {
+    once: true,
+    margin: '-400px'
+  })
 
   return (
-    <section className="pb-10 pt-20 flex flex-col gap-16 align-center" ref={stepsInfoRef}>
+    <section
+      className="align-center flex flex-col gap-16 pb-10 pt-20"
+      ref={stepsInfoRef}
+    >
       <AnimatePresence>
-        <h2 className="text-2xl text-center font-semibold md:text-3xl min-h-[40px]">
+        <h2 className="min-h-[40px] text-center text-2xl font-semibold md:text-3xl">
           {showStepsInfo && (
             <motion.span
               initial={{ opacity: 0, y: 20 }}
@@ -52,7 +58,7 @@ export default function Participate() {
           {textContent.steps.map((step, index) => (
             <motion.div
               key={index}
-              className="mb-8 mt-4 flex flex-col items-center md:ml-4 md:mt-0 md:w-1/3 md:items-start rounded-md p-6 backdrop-blur-xl bg-white/40 dark:bg-black/40 shadow-md dark:shadow-lg"
+              className="mb-8 mt-4 flex flex-col items-center rounded-md bg-white/40 p-6 shadow-md backdrop-blur-xl dark:bg-black/40 dark:shadow-lg md:ml-4 md:mt-0 md:w-1/3 md:items-start"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: 20 }}

@@ -8,12 +8,17 @@ import { AuctionCard } from './auction-card'
 
 export function Upcoming() {
   const upcomingCardsContainerRef = React.useRef<HTMLDivElement>(null)
-  const isUpcomingCardsContainerVisible = useInView(upcomingCardsContainerRef, { once: true })
+  const isUpcomingCardsContainerVisible = useInView(upcomingCardsContainerRef, {
+    once: true
+  })
 
   return (
-    <section ref={upcomingCardsContainerRef} className="relative min-h-[80vh] z-10 pt-10 flex flex-col align-center justify-center">
+    <section
+      ref={upcomingCardsContainerRef}
+      className="align-center relative z-10 flex min-h-[80vh] flex-col justify-center pt-10"
+    >
       <AnimatePresence>
-        <h1 className="my-20 md:max-w-[600px] mx-auto">
+        <h1 className="mx-auto my-20 md:max-w-[600px]">
           <motion.sub
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -33,10 +38,7 @@ export function Upcoming() {
             <TypewriterEffect
               words={textContent.title.split(' ').map(word => ({
                 text: word,
-                className:
-                  word === 'AI/WEB3'
-                    ? '!text-[#E94FB8]'
-                    : undefined
+                className: word === 'AI/WEB3' ? '!text-[#E94FB8]' : undefined
               }))}
               className="whitespace-pre-line text-4xl !font-semibold sm:!text-5xl lg:!text-6xl"
               cursorClassName="h-6 md:h-10"
@@ -94,5 +96,5 @@ const upcomingAuctionsAnimationProps: MotionProps = {
 
 const textContent = {
   title: 'JOIN THE AI/WEB3 REVOLUTION NOW.',
-  eyebrow: 'Invest in Tomorrows\'s Intelligence.',
+  eyebrow: "Invest in Tomorrows's Intelligence."
 }
