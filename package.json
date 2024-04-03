@@ -35,5 +35,5 @@
       "**/@prisma/client/**"
     ]
   },
-  "packageManager": "bun@1.0.14"
+  "packageManager": "bun@1.1.0"
 }
