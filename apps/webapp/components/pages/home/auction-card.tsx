@@ -20,7 +20,7 @@ export function AuctionCard(props: Project) {
   const isAuctionPreparation = badgeText.match(/IN PREPARATION/)
 
   return (
-    <Link id={`hot-auction-${title}`} href={isAuctionPreparation ? `#hot-auction-${title}` : linkPath} shallow={true} className={cn({ 'cursor-not-allowed': isAuctionPreparation })}>
+    <Link id={`hot-auction-${title}`} href={isAuctionPreparation ? `#` : linkPath} shallow={true} className={cn({ 'cursor-not-allowed': isAuctionPreparation })}>
       <CardContainer className="w-full">
         <CardBody className="group/card relative size-auto rounded-xl border border-black/[0.1] bg-gray-50/60 p-6 dark:border-white/[0.2] dark:bg-black/60 dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] sm:max-w-[30rem]  ">
           <CardItem

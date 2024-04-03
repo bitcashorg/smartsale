@@ -4,8 +4,8 @@ import Link, { LinkProps } from 'next/link'
 import * as React from 'react'
 
 import { Button } from '@/components/ui/button'
-import { HeaderButtons } from './header-buttons'
 import { IconSeparator } from '../ui/icons'
+import { HeaderButtons } from './header-buttons'
 
 import { useSession } from '@/hooks/use-session'
 import { cn } from '@/lib/utils'
@@ -82,13 +82,13 @@ export function Header({ className }: { className?: string }) {
   return (
     <React.Suspense
       fallback={
-        <div className="fixed inset-x-0 top-0 z-[5000] mx-auto flex h-16 w-full shrink-0 border-b border-transparent bg-gradient-to-b from-background/10 via-background/50 to-background/80 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] backdrop-blur-xl dark:border-white/[0.2]" />
+        <div className="fixed inset-x-0 top-0 z-[5000] mx-auto flex h-16 w-full shrink-0 bg-gradient-to-b from-transparent via-background/30 to-background/60 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] backdrop-blur-xl" />
       }
     >
       <AnimatePresence mode="wait">
         <motion.header
           className={cn(
-            'fixed inset-x-0 top-0 z-[5000] mx-auto flex h-16 w-full shrink-0 border-b border-transparent bg-gradient-to-b from-background/10 via-background/50 to-background/80 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] backdrop-blur-xl dark:border-white/[0.2]',
+            'fixed inset-x-0 top-0 z-[5000] mx-auto flex h-16 w-full shrink-0 bg-gradient-to-b from-transparent via-background/30 to-background/60 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] backdrop-blur-xl',
             className
           )}
           {...motionHeaderAnimationProps}

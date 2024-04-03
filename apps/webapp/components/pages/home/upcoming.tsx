@@ -13,18 +13,35 @@ export function Upcoming() {
   return (
     <section ref={upcomingCardsContainerRef} className="relative min-h-[80vh] z-10 pt-10 flex flex-col align-center justify-center">
       <AnimatePresence>
-        <h1 className="my-20 lg:max-w-[90%] xl:max-w-[66%] mx-auto">
-          <TypewriterEffect
-            words={textContent.title.split(' ').map(word => ({
-              text: word,
-              className:
-                word === 'AI/WEB3'
-                  ? '!text-[#E94FB8]'
-                  : undefined
-            }))}
-            className="text-4xl !font-semibold sm:!text-5xl lg:!text-6xl"
-            cursorClassName="h-6 md:h-10"
-          />
+        <h1 className="my-20 md:max-w-[600px] mx-auto">
+          <motion.sub
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            key="upcoming-auctions-eyebrow"
+            className="text-[0.9rem] !font-semibold"
+          >
+            {textContent.eyebrow}
+          </motion.sub>
+          <motion.span
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ delay: 0.24 }}
+            key="upcoming-auctions-title"
+          >
+            <TypewriterEffect
+              words={textContent.title.split(' ').map(word => ({
+                text: word,
+                className:
+                  word === 'AI/WEB3'
+                    ? '!text-[#E94FB8]'
+                    : undefined
+              }))}
+              className="whitespace-pre-line text-4xl !font-semibold sm:!text-5xl lg:!text-6xl"
+              cursorClassName="h-6 md:h-10"
+            />
+          </motion.span>
         </h1>
         <div
           className="grid scroll-m-3 grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3"
@@ -77,4 +94,5 @@ const upcomingAuctionsAnimationProps: MotionProps = {
 
 const textContent = {
   title: 'JOIN THE AI/WEB3 REVOLUTION NOW.',
+  eyebrow: 'Invest in Tomorrows\'s Intelligence.',
 }
