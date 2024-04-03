@@ -1,6 +1,20 @@
-import { TokenContractData, TestnetMBOTSPL } from 'smartsale-contracts'
+import { TestnetMBOTSPL, TokenContractData } from 'smartsale-contracts'
 
 export const projects: Project[] = [
+  {
+    id: 3,
+    title: 'Bitcash',
+    slug: 'bitcash',
+    pitch: 'P2P exchange for local currency stablecoins',
+    fundraiseGoal: '$350,000',
+    maxAllocation: '$10,000',
+    heroImage: '/images/projects/bitcash.png',
+    badgeText: 'PRE-SALE ACTIVE',
+    linkPath: '/bitcash',
+    token: TestnetMBOTSPL,
+    auctionId: 9,
+    auctionClosed: true
+  },
   {
     id: 1,
     title: 'Masterbots',
@@ -9,7 +23,7 @@ export const projects: Project[] = [
     fundraiseGoal: '$650,000',
     maxAllocation: 'TBA',
     heroImage: '/images/projects/masterbots.png',
-    badgeText: 'PRE-SALE ACTIVE',
+    badgeText: 'COMING SOON',
     linkPath: '/masterbots',
     auctionId: 9,
     token: TestnetMBOTSPL,
@@ -23,26 +37,12 @@ export const projects: Project[] = [
     fundraiseGoal: '$100,000',
     maxAllocation: 'TBA',
     heroImage: '/images/projects/wizartworld.png',
-    badgeText: 'REGISTRATION OPEN',
+    badgeText: 'IN PREPARATION',
     linkPath: '/wizartworld',
     token: TestnetMBOTSPL,
     auctionId: 9,
     registrationOpen: true
   },
-  {
-    id: 3,
-    title: 'Bitcash Bank',
-    slug: 'bitcash',
-    pitch: 'P2P exchange for local currency stablecoins',
-    fundraiseGoal: '$500,000',
-    maxAllocation: '$10,000',
-    heroImage: '/images/projects/bitcash.png',
-    badgeText: 'AUCTION CLOSED',
-    linkPath: '/bitcash',
-    token: TestnetMBOTSPL,
-    auctionId: 9,
-    auctionClosed: true
-  }
 ]
 
 export interface Project {

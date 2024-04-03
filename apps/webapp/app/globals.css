@@ -34,13 +34,23 @@
     --ring: 240 5% 64.9%;
 
     --radius: 0.5rem;
+
+    --gradient-background-start: #f1f1f1;
+    --gradient-background-end: #e0e0e0;
+
+    --first-color: 225, 225, 225;
+    --second-color: 205, 205, 205;
+    --third-color: 185, 185, 185;
+    --fourth-color: 165, 165, 165;
+    --fifth-color: 155, 155, 155;
+    --pointer-color: 135, 135, 135;
   }
 
   .dark {
-    --background: 240 10% 3.9%;
+    --background: 234 79% 11%;
     --foreground: 0 0% 98%;
 
-    --muted: 240 3.7% 15.9%;
+    --muted: 234 83% 15%;
     --muted-foreground: 240 5% 64.9%;
 
     --popover: 240 10% 3.9%;
@@ -65,8 +75,20 @@
     --destructive-foreground: 0 85.7% 97.3%;
 
     --ring: 240 3.7% 15.9%;
+
+    --gradient-background-start: #090530;
+    --gradient-background-end: #060a35;
+
+    --first-color: 81, 34, 117;
+    --second-color: 64, 29, 102;
+    --third-color: 47, 23, 88;
+    --fourth-color: 31, 18, 76;
+    --fifth-color: 20, 14, 64;
+    --pointer-color: 112, 43, 144;
   }
 }
+
+/* 5. #140E40 4. #1F124C 3. #2F1758 2. #401D66 1. #512275 0.#060A35 */
 
 @layer base {
   * {

@@ -2,8 +2,7 @@
 
 import { BitcashAccessButton } from '@/components/layout/bitcash-access'
 import { Button } from '@/components/ui/button'
-import { TypewriterEffect } from '@/components/ui/typewritting-effect'
-import { AnimatePresence, motion } from 'framer-motion'
+import { AnimatePresence, motion, useInView } from 'framer-motion'
 import Link from 'next/link'
 import React from 'react'
 
@@ -29,78 +28,66 @@ function WalletIcon({ className }: IconProps) {
 }
 
 export default function Participate() {
-  const [showStepsInfo, setShowStepsInfo] = React.useState(false)
+  const stepsInfoRef = React.useRef<HTMLParagraphElement>(null)
+  const showStepsInfo = useInView(stepsInfoRef, { once: true, margin: '-400px' })
 
   return (
-    <section className="pb-10 pt-20">
-      <div className="mb-6 flex min-h-[25vh] flex-col items-center justify-start text-center">
-        <h2 className="mb-4 lg:max-w-[90%] xl:max-w-[66%]">
-          <TypewriterEffect
-            words={textContent.title.split(' ').map(word => ({
-              text: word,
-              className:
-                word === 'bitLauncher.'
-                  ? '!text-[#1ED761] last:!text-inherit'
-                  : undefined
-            }))}
-            className="text-4xl !font-black leading-snug sm:!text-5xl lg:!text-6xl"
-            cursorClassName="h-6 md:h-10"
-            onAnimationEnd={() => {
-              setShowStepsInfo(true)
-            }}
-          />
-        </h2>
-        <AnimatePresence>
+    <section className="pb-10 pt-20 flex flex-col gap-16 align-center" ref={stepsInfoRef}>
+      <AnimatePresence>
+        <h2 className="text-2xl text-center font-semibold md:text-3xl min-h-[40px]">
           {showStepsInfo && (
-            <motion.p
+            <motion.span
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: 20 }}
               transition={{ delay: 0.24 }}
               key="steps-info"
-              className="text-lg font-semibold md:text-xl"
             >
               {textContent.stepsInfo}
-            </motion.p>
+            </motion.span>
           )}
-        </AnimatePresence>
-      </div>
+        </h2>
 
-      <div className="container flex min-h-[320px] flex-col md:flex-row md:items-center md:justify-between">
-        {textContent.steps.map((step, index) => (
-          <div
-            key={index}
-            className="mb-8 mt-4 flex flex-col items-center md:ml-4 md:mt-0 md:w-1/3 md:items-start"
-          >
-            <h2 className="align-items flex h-10 text-center text-2xl font-semibold md:text-left">
-              <step.icon className="mr-2 size-6 text-gray-400" />
-              {step.title}
-            </h2>
-            <p className="h-20 py-3 text-center text-gray-500 dark:text-gray-300 md:text-left">
-              {step.description}
-            </p>
-            {step.buttonText && step.title !== 'Complete KYC' ? (
-              <Link href={step.href} shallow>
-                <Button variant="tertiary" size="lg">
-                  {step.buttonText}
-                </Button>
-              </Link>
-            ) : (
-              <BitcashAccessButton
-                buttonLabel={step.buttonText}
-                buttonStyle={{ size: 'lg', variant: 'tertiary' }}
-                defaultContent="register"
-              />
-            )}
-          </div>
-        ))}
-      </div>
+        <div className="container flex min-h-[320px] flex-col md:flex-row md:items-center md:justify-between">
+          {textContent.steps.map((step, index) => (
+            <motion.div
+              key={index}
+              className="mb-8 mt-4 flex flex-col items-center md:ml-4 md:mt-0 md:w-1/3 md:items-start rounded-md p-6 backdrop-blur-xl bg-white/40 dark:bg-black/40 shadow-md dark:shadow-lg"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 20 }}
+              transition={{ delay: 0.42 * (index + 1) }}
+            >
+              <h2 className="align-items flex h-10 text-center text-2xl font-semibold md:text-left">
+                <step.icon className="mr-2 size-6 text-gray-400" />
+                {step.title}
+              </h2>
+              <p className="h-20 py-3 text-center text-gray-500 dark:text-gray-300 md:text-left">
+                {step.description}
+              </p>
+              {step.buttonText && step.title !== 'Complete KYC' ? (
+                <Link href={step.href} shallow>
+                  <Button variant="tertiary" size="lg">
+                    {step.buttonText}
+                  </Button>
+                </Link>
+              ) : (
+                <BitcashAccessButton
+                  buttonLabel={step.buttonText}
+                  buttonStyle={{ size: 'lg', variant: 'tertiary' }}
+                  defaultContent="register"
+                />
+              )}
+            </motion.div>
+          ))}
+        </div>
+      </AnimatePresence>
     </section>
   )
 }
 
 const textContent = {
-  title: 'Join The AI and Web3 Revolution With bitLauncher.',
+  // title: 'Join The AI and Web3 Revolution With bitLauncher.',
   stepsInfo:
     'Only 3 steps are needed for you to start enjoying all the advantages',
   steps: [
