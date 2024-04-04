@@ -86,6 +86,13 @@ export async function genUsdtDepositSigningRequest(
         memo: `address:${address}`,
         quantity: Asset.from(amount, '4,USDT')
       }
+    },
+    info: {
+      uuid: crypto.randomUUID(),
+      edit: {
+        memo: false,
+        quantity: false
+      }
     }
   })
   return req
