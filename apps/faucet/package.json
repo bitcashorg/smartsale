@@ -22,8 +22,8 @@
     "clsx": "^2.1.0",
     "lucide-react": "^0.323.0",
     "postcss": "^8.4.35",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "latest",
+    "react-dom": "latest",
     "smartsale-env": "workspace:*",
     "smartsale-contracts": "workspace:*",
     "tailwind-merge": "^2.2.1",
@@ -33,9 +33,9 @@
     "wagmi": "latest"
   },
   "devDependencies": {
-    "@types/node": "^20.11.16",
-    "@types/react": "^18.2.55",
-    "@types/react-dom": "^18.2.18",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
     "@vitejs/plugin-react": "^4.2.1",

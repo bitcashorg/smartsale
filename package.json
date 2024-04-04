@@ -2,7 +2,7 @@
   "name": "smartsale",
   "version": "1.0.0",
   "description": "SmartSale Monorepo",
-  "author": "Jun Dam <jun@bitcash.org>",
+  "author": "bitcar.og",
   "license": "MIT",
   "private": true,
   "scripts": {
@@ -13,7 +13,7 @@
     "clean:node_modules": "find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +"
   },
   "devDependencies": {
-    "@types/node": "^20.4.1",
+    "@types/node": "latest",
     "eslint": "^8.44.0",
     "prettier": "^3.2.5",
     "prisma": "latest",
@@ -35,5 +35,12 @@
       "**/@prisma/client/**"
     ]
   },
-  "packageManager": "bun@1.1.0"
+  "packageManager": "bun@1.1.0",
+  "dependencies": {
+    "-": "^0.0.1",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  }
 }
