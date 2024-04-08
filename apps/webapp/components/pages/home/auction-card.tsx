@@ -42,6 +42,7 @@ export function AuctionCard(props: Project) {
         className="group/card w-full inline-block relative size-auto rounded-xl border border-transparent backdrop-blur-xl bg-card/60 shadow-accent/[0.02] hover:shadow-accent/[0.04] hover:shadow-xl sm:max-w-[30rem] translate-z-0"
         whileHover={{ y: -16 }}
         whileTap={{ y: -16 }}
+        tabIndex={-1}
       >
         <figure
           className="relative w-full"
@@ -83,8 +84,8 @@ export function AuctionCard(props: Project) {
               <b>{maxAllocation}</b>
             </li>
           </ul>
-          <div className="mt-10 flex min-h-[60px] items-center justify-between">
-            <div className="flex gap-6">
+          <div className="mt-10 flex min-h-[60px] items-center justify-between mb-2">
+            <div className="flex align-center justify-center items-center gap-6">
               <Link
                 href={`https://twitter.com/${twitterUsername}`}
                 className={buttonLinkClassName}
@@ -115,7 +116,7 @@ export function AuctionCard(props: Project) {
             </div>
             {isAuctionPreparation && (
               <p
-                className="hover:text-link focus-within:text-link w-full rounded-xl px-4 py-2 text-center text-sm font-normal"
+                className="absolute bottom-0 left-0 text-center hover:text-link focus-within:text-link w-full rounded-xl px-4 py-1 text-sm font-normal bg-destructive rounded-t-none"
               >
                 This auction is not currently available. Check out later!
               </p>
@@ -125,16 +126,16 @@ export function AuctionCard(props: Project) {
                 href={`${linkPath}/auction`}
                 className={cn(
                   buttonVariants({
-                    variant: 'default',
+                    variant: 'secondary',
                     size: 'lg'
                   }),
-                  'relative text-md px-0 py-0 size-14 font-bold rounded-full hover:[&svg]:fill-card'
+                  'relative text-md px-0 py-0 size-14 font-bold rounded-full hover:[&svg]:fill-card group'
                 )}
                 data-title={`Go to ${title}´s auction`}
                 shallow
                 prefetch
               >
-                <IconDownRightArrow className="size-4 fill-white" />
+                <IconDownRightArrow className="transition-all size-4 group-hover:-rotate-[45deg] group-focus-within:-rotate-[45deg]" />
               </Link>
             )}
           </div>

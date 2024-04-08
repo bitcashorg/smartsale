@@ -3,8 +3,10 @@ import { LoginDialogContent } from '@/components/dialogs/login'
 import { RegisterDialogContent } from '@/components/dialogs/register'
 import { Button, buttonVariants } from '@/components/ui/button'
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog'
+import { IconDownRightArrow } from '@/components/ui/icons'
 import { useErc20Balance } from '@/hooks/use-balance'
 import { useSession } from '@/hooks/use-session'
+import { cn } from '@/lib/utils'
 import { VariantProps } from 'class-variance-authority'
 import Link from 'next/link'
 import { useRouter, useSearchParams } from 'next/navigation'
@@ -73,10 +75,15 @@ export function BitcashAccessButton({
     <Dialog open={open} onOpenChange={toggleOpen}>
       <DialogTrigger asChild>
         <Button
-          className="focus-within:scale-105 hover:scale-105"
+          className={cn({
+            'focus-within:scale-105 hover:scale-105': buttonLabel !== 'down-right-icon',
+            'relative text-md px-0 py-0 size-14 font-bold rounded-full hover:[&svg]:fill-card group': buttonLabel === 'down-right-icon'
+          })}
           {...buttonStyle}
         >
-          {buttonLabel}
+          {buttonLabel === 'down-right-icon' ? (
+            <IconDownRightArrow className="transition-all [&_path]:stroke-white size-4 group-hover:-rotate-[45deg] group-focus-within:-rotate-[45deg]" />
+          ) : buttonLabel}
         </Button>
       </DialogTrigger>
 
