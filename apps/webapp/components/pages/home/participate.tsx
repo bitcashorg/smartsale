@@ -56,20 +56,20 @@ export default function Participate() {
           )}
         </h2>
 
-        <div className="container flex gap-14 flex-col md:flex-row md:items-center md:justify-between">
+        <div className="flex gap-14 flex-col items-center md:items-stretch md:flex-row md:justify-between">
           {textContent.steps.map((step, index) => (
             <motion.div
               key={index}
-              className="min-h-[260px] flex rounded-3xl flex-col items-center justify-between bg-white/90 px-8 py-9 shadow-md backdrop-blur-xl md:ml-4 md:mt-0 md:w-1/3 md:items-start text-black/90"
+              className="w-full min-h-[260px] max-w-[450px] flex rounded-3xl flex-col items-center justify-between bg-white/90 px-8 py-9 shadow-md backdrop-blur-xl md:w-1/3 md:items-start text-black/90"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: 20 }}
               transition={{ delay: 0.42 * (index + 1) }}
             >
-              <h3 className="align-items flex h-10 text-center text-3xl font-bold md:text-left whitespace-pre-line">
+              <h3 className="w-full flex h-10 text-left text-3xl font-bold md:text-left whitespace-pre-line">
                 {step.title}
               </h3>
-              <div className="flex justify-between gap-4 items-center">
+              <div className="flex w-full justify-between gap-4 items-center">
                 <p className="py-3 text-sm w-[calc(100%-72px)]">
                   {step.description}
                 </p>

@@ -3,8 +3,7 @@
 import Link, { LinkProps } from 'next/link'
 import * as React from 'react'
 
-import { Button } from '@/components/ui/button'
-import { IconSeparator } from '../ui/icons'
+import { IconBitlauncher } from '../ui/icons'
 import { HeaderButtons } from './header-buttons'
 
 import { useSession } from '@/hooks/use-session'
@@ -22,6 +21,7 @@ export function Header({ className, containerRef }: { className?: string, contai
     container: containerRef
   })
   const [visible, setVisible] = React.useState(true)
+  const [largeHeader, setLargeHeader] = React.useState(true)
   const [domLoaded, setDomLoaded] = React.useState(false)
   const [activeMenu, setActiveMenu] = React.useState('')
 
@@ -61,6 +61,12 @@ export function Header({ className, containerRef }: { className?: string, contai
 
     document.addEventListener('click', handleClick)
 
+    scrollYProgress.on('change', () => {
+      const yProgress = scrollYProgress.get()
+
+      setLargeHeader(yProgress <= 0.1)
+    })
+
     return () => {
       document.removeEventListener('click', handleClick)
     }
@@ -90,26 +96,35 @@ export function Header({ className, containerRef }: { className?: string, contai
       <AnimatePresence mode="wait">
         <motion.header
           className={cn(
-            'fixed inset-x-0 top-0 z-[5000] mx-auto flex h-16 w-full shrink-0 bg-gradient-to-b from-transparent via-background/30 to-background/60 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] backdrop-blur-xl',
+            'fixed transition-all px-4 h-16 md:px-6 lg:px-12 inset-x-0 top-0 z-[5000] mx-auto flex items-center w-full shrink-0 bg-gradient-to-b from-transparent via-background/30 to-background/60 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] backdrop-blur-xl',
+            {
+              'h-20 md:h-24': largeHeader
+            },
             className
           )}
           {...motionHeaderAnimationProps}
         >
-          <div className="container flex h-16 items-center justify-between px-4">
+          <div className="container flex h-16 items-center justify-between">
             <div className="flex items-center">
               <HeaderLink
                 href="/"
                 text="home"
                 onClick={() => setActiveMenu('')}
+                largeHeader={largeHeader}
                 mobileOnly
               />
               <HeaderLink
                 href="/"
-                text="bitLauncher"
+                text="bitlauncher"
                 onClick={() => setActiveMenu('')}
+                largeHeader={largeHeader}
                 desktopOnly
               />
-              <IconSeparator className="size-3 text-muted-foreground/50 md:size-6" />
+              {/* <HeaderLink href="https://bitcash-faucet.vercel.app/" text="usdcred faucet" />
+              <HeaderLink href="https://faucet.testnet.evm.eosnetwork.com/" text="eos faucet" /> */}
+            </div>
+
+            <div className="inline-flex gap-5 mx-auto">
               <HeaderLink
                 href="/wallet"
                 text="wallet"
@@ -132,19 +147,21 @@ export function Header({ className, containerRef }: { className?: string, contai
                   onClick={() => setActiveMenu('')}
                 />
               </MenuItem>
-              {/* <HeaderLink href="https://bitcash-faucet.vercel.app/" text="usdcred faucet" />
-              <HeaderLink href="https://faucet.testnet.evm.eosnetwork.com/" text="eos faucet" /> */}
             </div>
 
-            <MenuItem
-              active={activeMenu}
-              setActive={setActiveMenu}
-              item={connectItem}
-            >
-              <React.Suspense fallback={<div />}>
-                <HeaderButtons />
-              </React.Suspense>
-            </MenuItem>
+            {!session?.account ? (
+              <HeaderButtons largeHeader={largeHeader} />
+            ) : (
+              <MenuItem
+                active={activeMenu}
+                setActive={setActiveMenu}
+                item={connectItem}
+              >
+                <React.Suspense fallback={<div />}>
+                  <HeaderButtons />
+                </React.Suspense>
+              </MenuItem>
+            )}
           </div>
         </motion.header>
       </AnimatePresence>
@@ -156,23 +173,33 @@ export function Header({ className, containerRef }: { className?: string, contai
 
 function HeaderLink({
   text,
+  largeHeader,
   desktopOnly,
   mobileOnly,
   ...props
 }: HeaderLinkProps) {
   return (
-    <Button
-      asChild
-      className={cn('-ml-2', {
+    <Link
+      className={cn('px-4 text-semibold', {
         'hidden md:flex': desktopOnly,
         'flex md:hidden': mobileOnly
       })}
-      variant="link"
+      shallow
+      prefetch
+      {...props}
     >
-      <Link shallow={true} {...props}>
-        {text}
-      </Link>
-    </Button>
+      {text.match(/(bitlauncher|home)/) ? (
+        <IconBitlauncher
+          className={cn('transition-all', {
+            'w-56 h-11': largeHeader,
+            'w-40 h-8': !largeHeader,
+            'size-12': largeHeader && mobileOnly,
+            'size-9': !largeHeader && mobileOnly,
+          }
+          )}
+          iconOnly={text === 'home'} />
+      ) : text}
+    </Link>
   )
 }
 
@@ -188,7 +215,7 @@ function MenuItem({
   children?: React.ReactNode
 }) {
   return (
-    <div className="relative" id={item}>
+    <div className="relative text-semibold" id={item}>
       <motion.button
         transition={{ duration: 0.3 }}
         className="md:text-md cursor-pointer whitespace-nowrap text-sm text-black hover:opacity-90 dark:text-white"
@@ -236,6 +263,7 @@ const transition = {
 
 interface HeaderLinkProps extends LinkProps {
   text: string
+  largeHeader?: boolean
   desktopOnly?: boolean
   mobileOnly?: boolean
 }

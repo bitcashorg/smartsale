@@ -5,7 +5,7 @@ export const projects: Project[] = [
     id: 3,
     title: 'Bitcash',
     slug: 'bitcash',
-    pitch: 'P2P exchange for local currency stablecoins',
+    pitch: 'P2P exchange for local currency stablecoins. P2P exchange for local currency stablecoins. P2P exchange for local currency stablecoins. P2P exchange for local currency stablecoins',
     fundraiseGoal: '$350,000',
     maxAllocation: '$10,000',
     heroImage: '/images/projects/bitcash.png',

@@ -48,13 +48,14 @@ export function Upcoming() {
           Upcoming Auctions
         </motion.h2>
         <div
-          className="grid scroll-m-3 grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"
+          className="grid scroll-m-3 grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 auto-rows-fr self-center md:self-stretch"
           key="upcoming-auctions-description-container"
         >
           {isUpcomingCardsContainerVisible &&
             projects.map((item, index) => (
               <motion.div
                 key={`upcoming-auctions-item-${index}`}
+                className="size-full justify-center box-border"
                 {...auctionCardAnimationProps(index)}
               >
                 <AuctionCard {...item} />

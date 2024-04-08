@@ -43,6 +43,8 @@
     --fourth-color: 31, 18, 76;
     --fifth-color: 20, 14, 64;
     --pointer-color: 112, 43, 144;
+
+    --radius: 24px;
   }
 
   .dark {
@@ -73,6 +75,9 @@
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 85.7% 97.3%;
 
+    --success: 136.71, 78.22%, 39.61%;
+    --success-foreground: 0 85.7% 97.3%;
+
     --ring: 260.63, 28.57%, 56.08%;
 
     --gradient-background-start: #080e44;
@@ -84,6 +89,8 @@
     --fourth-color: 31, 18, 76;
     --fifth-color: 20, 14, 64;
     --pointer-color: 112, 43, 144;
+
+    --radius: 24px;
   }
 }
 
@@ -145,6 +152,13 @@ input[type='number'] {
   border-radius: 4px;
   border: 1px solid #e5e7eb;
   padding: 10px;
+}
+
+.newsletter-wrapper {
+  @apply container mx-auto flex h-[460px] flex-col items-center gap-14 rounded-3xl px-0 backdrop-blur-xl sm:text-center;
+
+  background: url('/images/newsletter-bg.png') center center no-repeat;
+  background-size: cover;
 }
 
 /** Scrollbar Styling */

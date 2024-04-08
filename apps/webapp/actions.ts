@@ -1,12 +1,11 @@
 'use server'
 
+import { registerAddressSchema } from '@/lib/validators'
 import { db } from 'smartsale-db'
 import { fromEntries } from 'smartsale-lib'
-import { registerAddressSchema } from '@/lib/validators'
 
-import { NextResponse } from 'next/server'
-import { Resend } from 'resend'
 import axios from 'axios'
+import { Resend } from 'resend'
 import { z } from 'zod'
 
 export async function registerAddress(formData: FormData) {

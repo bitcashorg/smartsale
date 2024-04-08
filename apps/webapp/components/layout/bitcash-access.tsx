@@ -19,7 +19,8 @@ import { useAccount } from 'wagmi'
 
 export function BitcashAccessButton({
   defaultContent = 'login',
-  buttonLabel = 'Connect Bitcash App',
+  buttonLabel = 'Log in',
+  buttonClassName,
   buttonStyle
 }: BitcashAccessProps) {
   const [open, toggleOpen] = useToggle(false)
@@ -78,7 +79,7 @@ export function BitcashAccessButton({
           className={cn({
             'focus-within:scale-105 hover:scale-105': buttonLabel !== 'down-right-icon',
             'relative text-md px-0 py-0 size-14 font-bold rounded-full hover:[&svg]:fill-card group': buttonLabel === 'down-right-icon'
-          })}
+          }, buttonClassName)}
           {...buttonStyle}
         >
           {buttonLabel === 'down-right-icon' ? (
@@ -100,6 +101,7 @@ export function BitcashAccessButton({
 }
 
 interface BitcashAccessProps {
+  buttonClassName?: string
   defaultContent?: BitcashAccessContentType
   buttonLabel?: string
   buttonStyle?: VariantProps<typeof buttonVariants>

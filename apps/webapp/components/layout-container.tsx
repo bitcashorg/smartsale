@@ -16,13 +16,13 @@ export function LayoutContainer({ children }: { children: React.ReactNode }) {
       <Header containerRef={containerRef} />
       <Toaster />
       <div
-        className="absolute scrollbar pt-[64px] inset-0 z-50 flex size-full min-h-screen flex-col items-center justify-start overflow-x-hidden"
+        className="absolute scrollbar pt-[80px] inset-0 z-50 flex size-full min-h-screen flex-col items-center justify-start overflow-x-hidden"
         ref={containerRef}
       >
         <main className="flex flex-1 flex-col py-5 container">
           {children}
         </main>
-        <footer className="flex flex-1 flex-col px-4 pb-72 pt-32">
+        <footer className="container flex flex-1 w-full flex-col px-4 py-32 gap-32">
           <Participate />
           <Newsletter />
         </footer>

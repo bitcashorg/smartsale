@@ -27,19 +27,19 @@ export function AuctionCard(props: Project) {
       variant: 'outline',
       size: 'icon'
     }),
-    "relative rounded-full p-4 size-auto"
+    "relative rounded-full p-3.5 size-auto"
   )
 
   return (
     <Link
       id={`hot-auction-${title.toLowerCase().replace(/\s/g, '-')}`}
       href={isAuctionPreparation ? `#` : linkPath}
-      className={cn('max-w-[596px]', { 'cursor-not-allowed': isAuctionPreparation })}
+      className={cn('size-full max-w-[450px] mx-auto', { 'cursor-not-allowed': isAuctionPreparation })}
       shallow
       prefetch
     >
       <motion.div
-        className="group/card w-full inline-block relative size-auto rounded-xl border border-transparent backdrop-blur-xl bg-card/60 shadow-accent/[0.02] hover:shadow-accent/[0.04] hover:shadow-xl sm:max-w-[30rem] translate-z-0"
+        className="group/card size-full flex flex-col h-full justify-between rounded-xl border border-transparent backdrop-blur-xl bg-card/60 shadow-accent/[0.02] hover:shadow-accent/[0.04] hover:shadow-xl translate-z-0"
         whileHover={{ y: -16 }}
         whileTap={{ y: -16 }}
         tabIndex={-1}
@@ -61,7 +61,7 @@ export function AuctionCard(props: Project) {
             {badgeText}
           </motion.figcaption>
         </figure>
-        <div className="flex flex-col px-4 py-6 lg:px-9 lg:py-8">
+        <div className="px-4 py-6 lg:px-9 lg:py-8">
           <h3
             className="text-xl font-bold text-neutral-600 dark:text-white"
           >
@@ -72,6 +72,8 @@ export function AuctionCard(props: Project) {
           >
             {pitch}
           </p>
+        </div>
+        <div className="w-full flex flex-col px-4 py-6 lg:px-9 lg:py-8 items-center justify-between mb-2">
           <ul
             className="mt-8 mb-10 flex w-full flex-col gap-2"
           >
@@ -84,7 +86,7 @@ export function AuctionCard(props: Project) {
               <b>{maxAllocation}</b>
             </li>
           </ul>
-          <div className="mt-10 flex min-h-[60px] items-center justify-between mb-2">
+          <div className="flex w-full justify-between items-center mb-3">
             <div className="flex align-center justify-center items-center gap-6">
               <Link
                 href={`https://twitter.com/${twitterUsername}`}
@@ -93,7 +95,7 @@ export function AuctionCard(props: Project) {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <IconTwitterX className="size-6 fill-accent" />
+                <IconTwitterX className="size-7 fill-accent" />
               </Link>
               <Link
                 href={`https://discord.gg/${discordServer}`}
@@ -102,7 +104,7 @@ export function AuctionCard(props: Project) {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <IconDiscord className="size-6 fill-accent" />
+                <IconDiscord className="size-7 fill-accent" />
               </Link>
               <Link
                 href={`https://t.me/${telegramGroup}`}
@@ -111,16 +113,9 @@ export function AuctionCard(props: Project) {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <IconTelegram className="size-6 fill-accent" />
+                <IconTelegram className="size-7 fill-accent" />
               </Link>
             </div>
-            {isAuctionPreparation && (
-              <p
-                className="absolute bottom-0 left-0 text-center hover:text-link focus-within:text-link w-full rounded-xl px-4 py-1 text-sm font-normal bg-destructive rounded-t-none"
-              >
-                This auction is not currently available. Check out later!
-              </p>
-            )}
             {!isAuctionRestricted && (
               <Link
                 href={`${linkPath}/auction`}
@@ -138,9 +133,16 @@ export function AuctionCard(props: Project) {
                 <IconDownRightArrow className="transition-all size-4 group-hover:-rotate-[45deg] group-focus-within:-rotate-[45deg]" />
               </Link>
             )}
+            {isAuctionPreparation && (
+              <p
+                className="absolute bottom-0 left-0 text-center hover:text-link focus-within:text-link w-full rounded-xl px-4 py-1 text-sm font-normal bg-destructive rounded-t-none"
+              >
+                This auction is not currently available. Check out later!
+              </p>
+            )}
           </div>
         </div>
       </motion.div>
-    </Link>
+    </Link >
   )
 }
