@@ -1,7 +1,8 @@
-import { CardBody, CardContainer, CardItem } from '@/components/ui/3d-card'
-import { Button, buttonVariants } from '@/components/ui/button'
+import { buttonVariants } from '@/components/ui/button'
+import { IconDiscord, IconDownRightArrow, IconTelegram, IconTwitterX } from '@/components/ui/icons'
 import { Project } from '@/lib/projects'
 import { cn } from '@/lib/utils'
+import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -13,149 +14,132 @@ export function AuctionCard(props: Project) {
     maxAllocation,
     heroImage,
     badgeText,
-    linkPath
+    linkPath,
+    twitterUsername,
+    discordServer,
+    telegramGroup
   } = props
 
   const isAuctionRestricted = badgeText.match(/(AUCTION CLOSED|IN PREPARATION)/)
   const isAuctionPreparation = badgeText.match(/IN PREPARATION/)
+  const buttonLinkClassName = cn(
+    buttonVariants({
+      variant: 'outline',
+      size: 'icon'
+    }),
+    "relative rounded-full p-4 size-auto"
+  )
 
   return (
     <Link
-      id={`hot-auction-${title}`}
+      id={`hot-auction-${title.toLowerCase().replace(/\s/g, '-')}`}
       href={isAuctionPreparation ? `#` : linkPath}
-      shallow={true}
-      className={cn({ 'cursor-not-allowed': isAuctionPreparation })}
+      className={cn('max-w-[596px]', { 'cursor-not-allowed': isAuctionPreparation })}
+      shallow
+      prefetch
     >
-      <CardContainer className="w-full">
-        <CardBody className="group/card relative size-auto rounded-xl border border-black/[0.1] bg-gray-50/60 p-6 dark:border-white/[0.2] dark:bg-black/60 dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] sm:max-w-[30rem]  ">
-          <CardItem
-            translateZ="75"
+      <motion.div
+        className="group/card w-full inline-block relative size-auto rounded-xl border border-transparent backdrop-blur-xl bg-card/60 shadow-accent/[0.02] hover:shadow-accent/[0.04] hover:shadow-xl sm:max-w-[30rem] translate-z-0"
+        whileHover={{ y: -16 }}
+        whileTap={{ y: -16 }}
+      >
+        <figure
+          className="relative w-full"
+        >
+          <Image
+            src={heroImage}
+            height="1000"
+            width="1000"
+            className="h-[216px] w-full rounded-t-xl object-cover group-hover/card:shadow-xl"
+            alt="thumbnail"
+          />
+          <motion.figcaption
+            whileHover={{ y: -2, scale: 1.02 }}
+            className="absolute transition-shadow top-4 right-4 px-4 py-1 text-xs font-bold bg-[#272727] rounded-full shadow-md hover:shadow-xl"
+          >
+            {badgeText}
+          </motion.figcaption>
+        </figure>
+        <div className="flex flex-col px-4 py-6 lg:px-9 lg:py-8">
+          <h3
             className="text-xl font-bold text-neutral-600 dark:text-white"
           >
             {title}
-          </CardItem>
-          <CardItem
-            as="p"
-            translateZ="60"
+          </h3>
+          <p
             className="mt-2 max-w-sm text-sm text-neutral-500 dark:text-neutral-300"
           >
             {pitch}
-          </CardItem>
-          <CardItem
-            translateZ="100"
-            className="relative mt-4 w-full"
-            badge={badgeText}
+          </p>
+          <ul
+            className="mt-8 mb-10 flex w-full flex-col gap-2"
           >
-            <Image
-              src={heroImage}
-              height="1000"
-              width="1000"
-              className="h-60 w-full rounded-xl object-cover group-hover/card:shadow-xl"
-              alt="thumbnail"
-            />
-          </CardItem>
-          <CardItem
-            translateZ="60"
-            className="mt-4 flex w-full flex-col space-y-1"
-          >
-            <div className="flex justify-between">
-              <b>Fundraising Goal</b>
-              <span>{fundraiseGoal}</span>
-            </div>
-            <div className="flex justify-between">
-              <b>Max allocation</b>
-              <span>{maxAllocation}</span>
-            </div>
-          </CardItem>
+            <li className="flex w-full justify-between py-2 px-4 bg-muted rounded-full">
+              <span className="opacity-70">Fundraising Goal</span>
+              <b>{fundraiseGoal}</b>
+            </li>
+            <li className="flex w-full justify-between py-2 px-4 bg-muted rounded-full">
+              <span className="opacity-70">Max allocation</span>
+              <b>{maxAllocation}</b>
+            </li>
+          </ul>
           <div className="mt-10 flex min-h-[60px] items-center justify-between">
-            {isAuctionPreparation ? (
-              <CardItem
-                translateZ={66}
+            <div className="flex gap-6">
+              <Link
+                href={`https://twitter.com/${twitterUsername}`}
+                className={buttonLinkClassName}
+                data-title={`${title}´s Twitter X Profile`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <IconTwitterX className="size-6 fill-accent" />
+              </Link>
+              <Link
+                href={`https://discord.gg/${discordServer}`}
+                className={buttonLinkClassName}
+                data-title={`${title}´s Discord Server`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <IconDiscord className="size-6 fill-accent" />
+              </Link>
+              <Link
+                href={`https://t.me/${telegramGroup}`}
+                className={buttonLinkClassName}
+                data-title={`${title}´s Telegram Group`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <IconTelegram className="size-6 fill-accent" />
+              </Link>
+            </div>
+            {isAuctionPreparation && (
+              <p
                 className="hover:text-link focus-within:text-link w-full rounded-xl px-4 py-2 text-center text-sm font-normal"
               >
                 This auction is not currently available. Check out later!
-              </CardItem>
-            ) : (
-              <CardItem
-                translateZ={33}
-                className="hover:text-link focus-within:text-link rounded-xl px-4 py-2 text-xs font-normal"
-              >
-                <Button
-                  variant="ghost"
-                  className="px-2 py-1"
-                  onClick={e => {
-                    ;(e.target as Node).parentElement?.parentElement?.click()
-                  }}
-                >
-                  See more →
-                </Button>
-              </CardItem>
+              </p>
             )}
             {!isAuctionRestricted && (
-              <CardItem translateZ={33} as="span">
-                <Link
-                  href={`${linkPath}/auction`}
-                  className={cn(
-                    buttonVariants({
-                      variant: 'default',
-                      size: 'lg'
-                    }),
-                    'text-md font-bold'
-                  )}
-                  shallow
-                >
-                  Auction Now!
-                </Link>
-              </CardItem>
+              <Link
+                href={`${linkPath}/auction`}
+                className={cn(
+                  buttonVariants({
+                    variant: 'default',
+                    size: 'lg'
+                  }),
+                  'relative text-md px-0 py-0 size-14 font-bold rounded-full hover:[&svg]:fill-card'
+                )}
+                data-title={`Go to ${title}´s auction`}
+                shallow
+                prefetch
+              >
+                <IconDownRightArrow className="size-4 fill-white" />
+              </Link>
             )}
           </div>
-        </CardBody>
-      </CardContainer>
+        </div>
+      </motion.div>
     </Link>
   )
 }
-
-// ? Keeping old code for reference
-// <Link href={linkPath} className="w-full" shallow={true}>
-//   <Card className="bg-[#1e293b]">
-//     <CardHeader>
-//       <div className="relative">
-//         <Image
-//           alt={title}
-//           className="w-full h-auto rounded-t-md"
-//           height="200"
-//           src={heroImage}
-//           style={{
-//             aspectRatio: '350/200',
-//             objectFit: 'cover'
-//           }}
-//           width="350"
-//         />
-//         <Badge className="absolute top-4 right-4" variant="secondary">
-//           {badgeText}
-//         </Badge>
-//       </div>
-//     </CardHeader>
-//     <CardContent>
-//       <h3 className="mt-4 text-xl font-semibold">{title}</h3>
-//       <p className="mt-1 text-sm opacity-70">{pitch}</p>
-//       <div className="flex flex-col mt-4 space-y-1">
-//         <div className="flex justify-between">
-//           <span>Fundraise Goal</span>
-//           <span>{fundraiseGoal}</span>
-//         </div>
-//         <div className="flex justify-between">
-//           <span>Max allocation</span>
-//           <span>{maxAllocation}</span>
-//         </div>
-//       </div>
-//     </CardContent>
-//     {/* <CardFooter className="mt-4">
-
-//             <Button className="w-full" variant="default">
-//               TOKEN SALE
-//             </Button>
-
-//         </CardFooter> */}
-//   </Card >
-// </Link >

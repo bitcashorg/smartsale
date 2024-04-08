@@ -1,6 +1,5 @@
 'use client'
 
-import { TypewriterEffect } from '@/components/ui/typewritting-effect'
 import { projects } from '@/lib/projects'
 import { AnimatePresence, MotionProps, motion, useInView } from 'framer-motion'
 import React from 'react'
@@ -18,35 +17,38 @@ export function Upcoming() {
       className="align-center relative z-10 flex min-h-[80vh] flex-col justify-center pt-10"
     >
       <AnimatePresence>
-        <h1 className="mx-auto my-20 md:max-w-[600px]">
+        <h1 className="flex flex-col mx-auto my-24 text-center whitespace-pre-line">
           <motion.sub
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
             key="upcoming-auctions-eyebrow"
-            className="text-[0.9rem] !font-semibold"
+            className="text-xl leading-none font-semibold w-full"
           >
             {textContent.eyebrow}
           </motion.sub>
           <motion.span
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.24 }}
+            className="text-7xl lg:text-8xl font-bold w-full"
             key="upcoming-auctions-title"
           >
-            <TypewriterEffect
-              words={textContent.title.split(' ').map(word => ({
-                text: word,
-                className: word === 'AI/WEB3' ? '!text-[#E94FB8]' : undefined
-              }))}
-              className="whitespace-pre-line text-4xl !font-semibold sm:!text-5xl lg:!text-6xl"
-              cursorClassName="h-6 md:h-10"
-            />
+            {textContent.title.split('AI/WEB3')[0]}
+            {' '}
+            <span className="!text-[#E94FB8]">AI/WEB3</span>
+            {'\n'}
+            {textContent.title.split('AI/WEB3')[1]}
           </motion.span>
         </h1>
+        <motion.h2
+          className="text-3xl leading-loose font-bold pt-6 pb-10 w-full text-center"
+          key="upcoming-auctions-title"
+          {...upcomingAuctionsAnimationProps}
+        >
+          Upcoming Auctions
+        </motion.h2>
         <div
-          className="grid scroll-m-3 grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3"
+          className="grid scroll-m-3 grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"
           key="upcoming-auctions-description-container"
         >
           {isUpcomingCardsContainerVisible &&
@@ -59,13 +61,6 @@ export function Upcoming() {
               </motion.div>
             ))}
         </div>
-        <motion.h2
-          className="mb-6 text-3xl font-bold"
-          key="upcoming-auctions-title"
-          {...upcomingAuctionsAnimationProps}
-        >
-          Hot Auctions
-        </motion.h2>
       </AnimatePresence>
     </section>
   )
@@ -95,6 +90,6 @@ const upcomingAuctionsAnimationProps: MotionProps = {
 }
 
 const textContent = {
-  title: 'JOIN THE AI/WEB3 REVOLUTION NOW.',
-  eyebrow: "Invest in Tomorrows's Intelligence."
+  title: 'JOIN THE AI/WEB3 REVOLUTION NOW',
+  eyebrow: "Invest In The Intelligent Future"
 }

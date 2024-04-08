@@ -3,14 +3,6 @@ import { cn } from '@/lib/utils'
 import { useEffect, useRef, useState } from 'react'
 
 export const BackgroundMovingGradient = ({
-  gradientBackgroundStart = '#090530',
-  gradientBackgroundEnd = '#060A35',
-  firstColor = '81, 34, 117',
-  secondColor = '64, 29, 102',
-  thirdColor = '47, 23, 88',
-  fourthColor = '31, 18, 76',
-  fifthColor = '20, 14, 64',
-  pointerColor = '112, 43, 144',
   size = '80%',
   blendingValue = 'hard-light',
   children,
@@ -41,20 +33,6 @@ export const BackgroundMovingGradient = ({
   const [tgY, setTgY] = useState(0)
 
   useEffect(() => {
-    // document.body.style.setProperty(
-    //   "--gradient-background-start",
-    //   gradientBackgroundStart
-    // );
-    // document.body.style.setProperty(
-    //   "--gradient-background-end",
-    //   gradientBackgroundEnd
-    // );
-    // document.body.style.setProperty("--first-color", firstColor);
-    // document.body.style.setProperty("--second-color", secondColor);
-    // document.body.style.setProperty("--third-color", thirdColor);
-    // document.body.style.setProperty("--fourth-color", fourthColor);
-    // document.body.style.setProperty("--fifth-color", fifthColor);
-    // document.body.style.setProperty("--pointer-color", pointerColor);
     document.body.style.setProperty('--size', size)
     document.body.style.setProperty('--blending-value', blendingValue)
   }, [])

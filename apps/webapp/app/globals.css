@@ -5,59 +5,16 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
-
-    --muted: 240 4.8% 95.9%;
-    --muted-foreground: 240 3.8% 46.1%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
-
-    --border: 240 5.9% 90%;
-    --input: 240 5.9% 90%;
-
-    --primary: 240 5.9% 10%;
-    --primary-foreground: 0 0% 98%;
-
-    --secondary: 240 4.8% 95.9%;
-    --secondary-foreground: 240 5.9% 10%;
-
-    --accent: 240 4.8% 95.9%;
-    --accent-foreground: ;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-
-    --ring: 240 5% 64.9%;
-
-    --radius: 0.5rem;
-
-    --gradient-background-start: #f1f1f1;
-    --gradient-background-end: #e0e0e0;
-
-    --first-color: 225, 225, 225;
-    --second-color: 205, 205, 205;
-    --third-color: 185, 185, 185;
-    --fourth-color: 165, 165, 165;
-    --fifth-color: 155, 155, 155;
-    --pointer-color: 135, 135, 135;
-  }
-
-  .dark {
     --background: 234 79% 11%;
     --foreground: 0 0% 98%;
 
-    --muted: 234 83% 15%;
-    --muted-foreground: 240 5% 64.9%;
+    --muted: 250.17, 34.1%, 33.92%;
+    --muted-foreground: 0 0% 98%;
 
     --popover: 240 10% 3.9%;
     --popover-foreground: 0 0% 98%;
 
-    --card: 240 10% 3.9%;
+    --card: 242.18, 56.7%, 19.02%;
     --card-foreground: 0 0% 98%;
 
     --border: 240 3.7% 15.9%;
@@ -69,15 +26,56 @@
     --secondary: 240 3.7% 15.9%;
     --secondary-foreground: 0 0% 98%;
 
-    --accent: 240 3.7% 15.9%;
-    --accent-foreground: ;
+    --accent: 260.63, 28.57%, 56.08%;
+    --accent-foreground: 0 0% 98%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 85.7% 97.3%;
 
-    --ring: 240 3.7% 15.9%;
+    --ring: 260.63, 28.57%, 56.08%;
 
-    --gradient-background-start: #090530;
+    --gradient-background-start: #080e44;
+    --gradient-background-end: #060a35;
+
+    --first-color: 81, 34, 117;
+    --second-color: 64, 29, 102;
+    --third-color: 47, 23, 88;
+    --fourth-color: 31, 18, 76;
+    --fifth-color: 20, 14, 64;
+    --pointer-color: 112, 43, 144;
+  }
+
+  .dark {
+    --background: 234 79% 11%;
+    --foreground: 0 0% 98%;
+
+    --muted: 250.17, 34.1%, 33.92%;
+    --muted-foreground: 0 0% 98%;
+
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --card: 242.18, 56.7%, 19.02%;
+    --card-foreground: 0 0% 98%;
+
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --accent: 260.63, 28.57%, 56.08%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 85.7% 97.3%;
+
+    --ring: 260.63, 28.57%, 56.08%;
+
+    --gradient-background-start: #080e44;
     --gradient-background-end: #060a35;
 
     --first-color: 81, 34, 117;
@@ -93,7 +91,12 @@
 
 @layer base {
   * {
-    @apply border-border;
+    @apply border-border ring-offset-ring focus-within:ring-ring focus-within:ring-offset-ring focus-visible:ring-ring  focus-visible:ring-offset-ring before:focus-visible:ring-ring before:focus-visible:ring-offset-ring;
+  }
+  a:focus-visible {
+    outline: 3px solid hsl(var(--ring));
+    outline-offset: 2px;
+    outline-radius: 2px;
   }
   body {
     @apply bg-background text-foreground;
@@ -142,4 +145,82 @@ input[type='number'] {
   border-radius: 4px;
   border: 1px solid #e5e7eb;
   padding: 10px;
+}
+
+/** Scrollbar Styling */
+
+.scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #a829b9 #080e44;
+
+  &::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #080e44;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #a829b9;
+    border-radius: 6px;
+    border: 3px solid #080e44;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: #a829b9;
+  }
+
+  &::-webkit-scrollbar-thumb:active {
+    background-color: #a829b9;
+  }
+
+  &::-webkit-scrollbar-button {
+    display: none;
+  }
+
+  &::-webkit-scrollbar-corner {
+    background: #080e44;
+  }
+
+  &::-webkit-resizer {
+    display: none;
+  }
+}
+
+/** Tooltip Styling */
+
+*[data-title]::after {
+  @apply absolute left-0 mx-auto w-max max-w-[200px] bg-muted px-3 py-1 text-xs font-semibold text-muted-foreground transition-all;
+
+  transform: translateY(calc(-100% - 4px));
+  content: attr(data-title);
+  opacity: 0;
+  top: -4px;
+  z-index: 0;
+  border-radius: 4px;
+}
+
+/* making the arrow */
+*[data-title]::before {
+  @apply absolute left-0 h-0 w-0 border-r-[5px] border-t-[5px] border-transparent transition-all;
+
+  content: ' ';
+  top: -10px;
+  left: 40%;
+  transform: rotate(45deg);
+  opacity: 0;
+  z-index: 0;
+}
+
+*[data-title]:hover::before {
+  opacity: 1;
+  border-top-color: hsla(var(--muted));
+  border-right-color: hsla(var(--muted));
+  z-index: 100000 !important;
+}
+
+*[data-title]:hover::after {
+  opacity: 1;
+  z-index: 100000 !important;
 }

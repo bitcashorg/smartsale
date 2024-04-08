@@ -13,7 +13,10 @@ export const projects: Project[] = [
     linkPath: '/bitcash',
     token: TestnetMBOTSPL,
     auctionId: 9,
-    auctionClosed: true
+    auctionClosed: true,
+    twitterUsername: 'bitcashorg',
+    telegramGroup: 'bitcashorg',
+    discordServer: 'a4gwhT9G',
   },
   {
     id: 1,
@@ -27,7 +30,10 @@ export const projects: Project[] = [
     linkPath: '/masterbots',
     auctionId: 9,
     token: TestnetMBOTSPL,
-    presaleOpen: true
+    presaleOpen: true,
+    twitterUsername: 'masterbotsai',
+    telegramGroup: 'masterbotsai',
+    discordServer: 'a4gwhT9G',
   },
   {
     id: 2,
@@ -41,7 +47,10 @@ export const projects: Project[] = [
     linkPath: '/wizartworld',
     token: TestnetMBOTSPL,
     auctionId: 9,
-    registrationOpen: true
+    registrationOpen: true,
+    twitterUsername: 'wwai',
+    telegramGroup: 'wwai',
+    discordServer: 'a4gwhT9G',
   }
 ]
 
@@ -55,6 +64,9 @@ export interface Project {
   heroImage: string
   badgeText: string
   linkPath: string
+  twitterUsername: string
+  telegramGroup: string
+  discordServer: string
   auctionId?: number
   token?: TokenContractData
   presaleOpen?: boolean

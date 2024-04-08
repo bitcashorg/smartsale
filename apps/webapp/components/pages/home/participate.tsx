@@ -40,7 +40,7 @@ export default function Participate() {
       ref={stepsInfoRef}
     >
       <AnimatePresence>
-        <h2 className="min-h-[40px] text-center text-2xl font-semibold md:text-3xl">
+        <h2 className="text-3xl leading-loose font-bold pt-6 pb-10 w-full text-center">
           {showStepsInfo && (
             <motion.span
               initial={{ opacity: 0, y: 20 }}
@@ -95,7 +95,7 @@ export default function Participate() {
 const textContent = {
   // title: 'Join The AI and Web3 Revolution With bitLauncher.',
   stepsInfo:
-    'Only 3 steps are needed for you to start enjoying all the advantages',
+    'Only 3 Steps Needed',
   steps: [
     {
       icon: FileEditIcon,

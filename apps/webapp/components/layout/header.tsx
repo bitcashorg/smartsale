@@ -16,9 +16,11 @@ import {
   useScroll
 } from 'framer-motion'
 
-export function Header({ className }: { className?: string }) {
+export function Header({ className, containerRef }: { className?: string, containerRef: React.RefObject<HTMLDivElement> }) {
   const { session } = useSession()
-  const { scrollYProgress } = useScroll()
+  const { scrollYProgress } = useScroll({
+    container: containerRef
+  })
   const [visible, setVisible] = React.useState(true)
   const [domLoaded, setDomLoaded] = React.useState(false)
   const [activeMenu, setActiveMenu] = React.useState('')
@@ -93,7 +95,7 @@ export function Header({ className }: { className?: string }) {
           )}
           {...motionHeaderAnimationProps}
         >
-          <div className="container flex h-16 max-w-screen-2xl items-center justify-between px-4">
+          <div className="container flex h-16 items-center justify-between px-4">
             <div className="flex items-center">
               <HeaderLink
                 href="/"
