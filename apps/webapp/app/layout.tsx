@@ -8,10 +8,46 @@ import { BackgroundMovingGradient } from '@/components/ui/background-moving-grad
 import { cn } from '@/lib/utils'
 import { GoogleAnalytics } from '@next/third-parties/google'
 import '@rainbow-me/rainbowkit/styles.css'
-import { GeistMono } from 'geist/font/mono'
-import { GeistSans } from 'geist/font/sans'
+import { Metadata } from 'next'
 import React from 'react'
 import { Toaster } from 'react-hot-toast'
+
+export const metadata: Metadata = {
+  title: 'bitlauncher',
+  description: 'Invest in the intelligent future and join the Ai/Web3 revolution now!',
+  metadataBase: new URL('https://bitlauncher.ai'),
+  alternates: {
+    canonical: '/',
+    languages: {
+      'en-US': '/',
+    },
+  },
+  openGraph: {
+    type: 'website',
+    url: 'https://bitlauncher.ai',
+    title: 'bitlauncher',
+    description: 'Invest in the intelligent future and join the Ai/Web3 revolution now!',
+    images: [
+      {
+        url: 'https://bitlauncher.ai/images/og-image.jpeg',
+        alt: 'bitlauncher'
+      }
+    ]
+  },
+  twitter: {
+    creator: 'bitlauncher',
+    site: '@bitlauncher',
+    card: 'summary_large_image',
+    images: [
+      {
+        url: 'https://bitlauncher.ai/images/og-image.jpeg',
+        alt: 'bitlauncher'
+      }
+    ]
+  },
+  robots: 'index, search',
+  keywords: ['bitlauncher', 'smartsale', 'ai', 'web3', 'crypto', 'investment', 'auction', 'marketplace', 'platform', 'launchpad', 'launch', 'pad', 'launching', 'launching']
+}
 
 export default function RootLayout({ children, ...props }: RootLayoutProps) {
   // const pathname = headers().get('referer') ? new URL(headers().get('referer') || '')?.pathname || 'home' : ''
@@ -20,9 +56,7 @@ export default function RootLayout({ children, ...props }: RootLayoutProps) {
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          'font-sans antialiased',
-          GeistSans.variable,
-          GeistMono.variable
+          'font-sans antialiased open-sans',
         )}
       >
         <Providers

@@ -14,14 +14,14 @@ const howItWorksClassNames = {
 export default function HowItWorks() {
   return (
     <div className={howItWorksClassNames.container}>
-      <h1 className={howItWorksClassNames.h1}>How Smart Sale works</h1>
+      <h1 className={howItWorksClassNames.h1}>How bitlauncher works</h1>
       <p className={howItWorksClassNames.paragraph}>
-        Smart Sale is a platform enabling fair price discovery for token
+        bitlauncher is a platform enabling fair price discovery for token
         auctions. The aim of the platform is to make it easy for teams to
         discover a fair price for their token.
       </p>
       <p className={howItWorksClassNames.paragraph}>
-        Smart Sale uses batch auctions, which are a popular mechanism for
+        bitlauncher uses batch auctions, which are a popular mechanism for
         ensuring fair price for both the decentralized and traditional finance
         worlds. Batch auctions enable matching of limit orders of buyers and
         sellers with the same clearing price for all participants. From crypto
@@ -40,11 +40,11 @@ export default function HowItWorks() {
         Comparison of Different Auction Mechanisms
       </h2>
       <p className={howItWorksClassNames.paragraph}>
-        With Smart Sale’s open-source smart contract, projects can quickly and
+        With bitlauncher’s open-source smart contract, projects can quickly and
         securely create their own decentralized fair auctions. Unlike some
-        solutions dependent on a centralized curation process, Smart Sale is
+        solutions dependent on a centralized curation process, bitlauncher is
         permissionless so that any Ethereum team can deploy & execute batch
-        auctions for price finding. Smart Sale allows any Ethereum project or
+        auctions for price finding. bitlauncher allows any Ethereum project or
         community to conduct auctions that:
       </p>
       <Image
@@ -56,11 +56,11 @@ export default function HowItWorks() {
         className={howItWorksClassNames.code}
       />
       <h2 className={howItWorksClassNames.h2}>
-        Fair Price Discovery with Smart Sale
+        Fair Price Discovery with bitlauncher
       </h2>
       <p className={howItWorksClassNames.paragraph}>
         By providing an easy interface for price discovery with batch auctions,
-        Smart Sale enables:
+        bitlauncher enables:
       </p>
       <ul className="mt-2 list-disc pl-6">
         <li>

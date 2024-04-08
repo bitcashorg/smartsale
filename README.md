@@ -1,6 +1,6 @@
-# SmartSale EVM
+# bitlauncher EVM
 
-SmartSale is a comprehensive platform designed to streamline the auction process.
+bitlauncher is a comprehensive platform designed to streamline the auction process.
 
 ![](https://cdn.eosnation.io/pomelo/project_logos/fc190531-e0ed-4018-be9b-2a4323829bb8.png?webp=true&resize=1500&animated=true)
 

@@ -2,7 +2,7 @@
   "name": "smartsale-env",
   "version": "0.0.1",
   "private": true,
-  "description": "SmartSale Environment Configurations",
+  "description": "bitlauncher Environment Configurations",
   "author": "gaboesquivel.com",
   "license": "ISC",
   "main": "./src/index.ts",
