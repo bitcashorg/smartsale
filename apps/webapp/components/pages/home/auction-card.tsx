@@ -90,12 +90,12 @@ export function AuctionCard(props: Project) {
             <div className="flex align-center justify-center items-center gap-6">
               <Link
                 href={`https://twitter.com/${twitterUsername}`}
-                className={buttonLinkClassName}
+                className={buttonLinkClassName.replace('p-3.5', 'p-[17px]')}
                 data-title={`${title}´s Twitter X Profile`}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <IconTwitterX className="size-7 fill-accent" />
+                <IconTwitterX className="size-6 fill-accent" />
               </Link>
               <Link
                 href={`https://discord.gg/${discordServer}`}
