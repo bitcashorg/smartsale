@@ -67,10 +67,10 @@ export default function ProjectPage({
         <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
           {projectContent.highlights.title}
         </h2>
-        {(projectContent.highlights.content as string[][]).map(content => {
-          if (content.every(c => c.includes(':'))) {
+        {(projectContent.highlights.content as string[][]).map((content, index) => {
+          if (content.every((c, i) => c.includes(':'))) {
             return (
-              <ul className="flex flex-col gap-2 list-outside list-disc px-6">
+              <ul key={`${index}__${(projectContent.highlights.title as string).replace(/\s/g, '-')}`} className="flex flex-col gap-2 list-outside list-disc px-6">
                 {content.map(item => (
                   <li>
                     {item.split(':').map((text, index) => (
@@ -85,7 +85,7 @@ export default function ProjectPage({
           }
 
           return content.map((item, index) => (
-            <p className="md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+            <p key={`${index}__${(projectContent.highlights.title as string).replace(/\s/g, '-')}`} className="md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               {item}
             </p>
           ))
