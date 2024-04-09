@@ -96,7 +96,7 @@ export function Header({ className, containerRef }: { className?: string, contai
       <AnimatePresence mode="wait">
         <motion.header
           className={cn(
-            'fixed transition-all px-4 h-16 md:px-6 lg:px-12 inset-x-0 top-0 z-[5000] mx-auto flex items-center w-full shrink-0 bg-gradient-to-b from-transparent via-background/30 to-background/60 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] backdrop-blur-xl',
+            'fixed transition-all h-16 inset-x-0 top-0 z-[5000] mx-auto flex items-center w-full shrink-0 bg-gradient-to-b from-transparent via-background/30 to-background/60 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] backdrop-blur-xl',
             {
               'h-20 md:h-24': largeHeader
             },
@@ -180,7 +180,7 @@ function HeaderLink({
 }: HeaderLinkProps) {
   return (
     <Link
-      className={cn('px-4 text-semibold', {
+      className={cn('text-semibold', {
         'hidden md:flex': desktopOnly,
         'flex md:hidden': mobileOnly
       })}

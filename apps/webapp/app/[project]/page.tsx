@@ -4,6 +4,8 @@ import Link from 'next/link'
 
 import { redirect } from 'next/navigation'
 
+const sectionWithBgClassNames = 'flex flex-col gap-11 px-3 md:px-6 lg:px-11 w-full bg-primary/70 backdrop-xl rounded-3xl py-10 md:py-16 lg:py-24'
+
 export default function ProjectPage({
   params
 }: {
@@ -11,6 +13,8 @@ export default function ProjectPage({
 }) {
   const project = projects.find(p => p.slug == params.project)
   if (!project) redirect('/')
+
+  const projectContent = project.content
 
   return (
     <main className="w-full">
@@ -57,112 +61,63 @@ export default function ProjectPage({
           </div>
         </div>
       </section>
-      <section className="w-full bg-gray-100 py-12 dark:bg-gray-800 md:py-24 lg:py-32">
-        <div className="container md:px-6">
-          <div className="flex flex-col justify-center space-y-4">
-            <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                Highlights
-              </h2>
-              <p className="max-w-[600px] text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                {project.pitch}
-              </p>
-            </div>
-            <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
-              <Image
-                alt="Highlight Image 1"
-                className="aspect-square overflow-hidden rounded-md object-cover"
-                height="200"
-                src={project.heroImage}
-                width="200"
-              />
-              <Image
-                alt="Highlight Image 2"
-                className="aspect-square overflow-hidden rounded-md object-cover mix-blend-multiply"
-                height="200"
-                src="/images/launchpad_img_placeholder.svg"
-                width="200"
-              />
-              <Image
-                alt="Highlight Image 3"
-                className="aspect-square overflow-hidden rounded-md object-cover mix-blend-multiply"
-                height="200"
-                src="/images/launchpad_img_placeholder.svg"
-                width="200"
-              />
-              <Image
-                alt="Highlight Image 4"
-                className="aspect-square overflow-hidden rounded-md object-cover mix-blend-multiply"
-                height="200"
-                src="/images/launchpad_img_placeholder.svg"
-                width="200"
-              />
-            </div>
-          </div>
-        </div>
+
+      {/* // ? ----------------------  HIGHLIGHTS ---------------------- */}
+      <section className={sectionWithBgClassNames}>
+        <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+          {projectContent.highlights.title}
+        </h2>
+        {(projectContent.highlights.content as string[][]).map(content => {
+          if (content.every(c => c.includes(':'))) {
+            return (
+              <ul className="flex flex-col gap-2 list-outside list-disc px-6">
+                {content.map(item => (
+                  <li>
+                    {item.split(':').map((text, index) => (
+                      <span key={index} className={!index ? 'font-bold' : ''}>
+                        {text}{!index ? ': ' : ''}
+                      </span>
+                    ))}
+                  </li>
+                ))}
+              </ul>
+            )
+          }
+
+          return content.map((item, index) => (
+            <p className="md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              {item}
+            </p>
+          ))
+        })}
       </section>
+
+      {/* // ? ----------------------  PRODUCT ---------------------- */}
       <section className="w-full py-12 md:py-24 lg:py-32">
-        <div className="container md:px-6">
-          <div className="flex flex-col justify-center space-y-4">
-            <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                Product
-              </h2>
-              <p className="max-w-[600px] text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Learn more about our product and its unique features.
-              </p>
-            </div>
-            <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
-              <Image
-                alt="Product Image 1"
-                className="aspect-square overflow-hidden rounded-md object-cover mix-blend-multiply"
-                height="200"
-                src="/images/launchpad_img_placeholder.svg"
-                width="200"
-              />
-              <Image
-                alt="Product Image 2"
-                className="aspect-square overflow-hidden rounded-md object-cover mix-blend-multiply"
-                height="200"
-                src="/images/launchpad_img_placeholder.svg"
-                width="200"
-              />
-              <Image
-                alt="Product Image 3"
-                className="aspect-square overflow-hidden rounded-md object-cover mix-blend-multiply"
-                height="200"
-                src="/images/launchpad_img_placeholder.svg"
-                width="200"
-              />
-              <Image
-                alt="Product Image 4"
-                className="aspect-square overflow-hidden rounded-md object-cover mix-blend-multiply"
-                height="200"
-                src="/images/launchpad_img_placeholder.svg"
-                width="200"
-              />
-            </div>
-          </div>
-        </div>
+        <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+          {projectContent.product.title}
+        </h2>
+        <p className="max-w-[600px] text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+          Learn more about our product and its unique features.
+        </p>
       </section>
-      <section className="w-full bg-gray-100 py-12 dark:bg-gray-800 md:py-24 lg:py-32">
-        <div className="container md:px-6">
-          <div className="flex flex-col justify-center space-y-4">
-            <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                Problem
-              </h2>
-              <p className="max-w-[600px] text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Understand the problem we aim to solve with our project.
-              </p>
-            </div>
-            <div className="text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Our project aims to solve the problem of lack of transparency and
-              efficiency in the traditional auction process.
-            </div>
-          </div>
-        </div>
+
+      {/* // ? ----------------------  PROBLEM ---------------------- */}
+      <section className={sectionWithBgClassNames}>
+        <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+          {projectContent.problem.title}
+        </h2>
+        <p className="max-w-[600px] text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+          Understand the problem we aim to solve with our project.
+        </p>
+
+        <p className="text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+          Our project aims to solve the problem of lack of transparency and
+          efficiency in the traditional auction process.
+        </p>
       </section>
+
+      {/* // ? ----------------------  SOLUTION ---------------------- */}
       <section className="w-full py-12 md:py-24 lg:py-32">
         <div className="container md:px-6">
           <div className="flex flex-col justify-center space-y-4">
@@ -183,27 +138,25 @@ export default function ProjectPage({
           </div>
         </div>
       </section>
-      <section className="w-full bg-gray-100 py-12 dark:bg-gray-800 md:py-24 lg:py-32">
-        <div className="container md:px-6">
-          <div className="flex flex-col justify-center space-y-4">
-            <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                Business Model
-              </h2>
-              <p className="max-w-[600px] text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Get to know our business model and how we plan to generate
-                revenue.
-              </p>
-            </div>
-            <div className="text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Our business model revolves around charging a small fee for each
-              transaction made on our platform, ensuring a sustainable revenue
-              stream.
-            </div>
-          </div>
-        </div>
+
+      {/* // ? ----------------------  BUSINESS MODEL ---------------------- */}
+      <section className={sectionWithBgClassNames}>
+        <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+          {projectContent.businessModel.title}
+        </h2>
+        <p className="max-w-[600px] text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+          Get to know our business model and how we plan to generate
+          revenue.
+        </p>
+        <p className="text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+          Our business model revolves around charging a small fee for each
+          transaction made on our platform, ensuring a sustainable revenue
+          stream.
+        </p>
       </section>
-      <section className="w-full py-12 md:py-24 lg:py-32">
+
+      {/* // ? ----------------------  INVESTORS ---------------------- */}
+      {/* <section className="w-full py-12 md:py-24 lg:py-32">
         <div className="container md:px-6">
           <div className="flex flex-col justify-center space-y-4">
             <div className="space-y-2">
@@ -247,8 +200,10 @@ export default function ProjectPage({
             </div>
           </div>
         </div>
-      </section>
-      <section className="w-full bg-gray-100 py-12 dark:bg-gray-800 md:py-24 lg:py-32">
+      </section> */}
+
+      {/* // ? ----------------------  TEAM ---------------------- */}
+      {/* <section className={sectionWithBgClassNames}>
         <div className="container md:px-6">
           <div className="flex flex-col justify-center space-y-4">
             <div className="space-y-2">
@@ -292,27 +247,25 @@ export default function ProjectPage({
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+
+      {/* // ? ----------------------  TOKEN UTILITY ---------------------- */}
       <section className="w-full py-12 md:py-24 lg:py-32">
-        <div className="container md:px-6">
-          <div className="flex flex-col justify-center space-y-4">
-            <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                Token Utility
-              </h2>
-              <p className="max-w-[600px] text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Understand the utility of our token and how it contributes to
-                the ecosystem.
-              </p>
-            </div>
-            <div className="text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Our token serves as the primary medium of exchange on our
-              platform, enabling users to participate in auctions and access
-              other features.
-            </div>
-          </div>
-        </div>
+        <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+          {projectContent.tokenomics.title}
+        </h2>
+        <p className="max-w-[600px] text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+          Understand the utility of our token and how it contributes to
+          the ecosystem.
+        </p>
+        <p className="text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+          Our token serves as the primary medium of exchange on our
+          platform, enabling users to participate in auctions and access
+          other features.
+        </p>
       </section>
+
+      <hr className="border-gray-600/80 mt-24" />
     </main>
   )
 }

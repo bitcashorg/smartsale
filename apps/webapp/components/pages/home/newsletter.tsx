@@ -34,13 +34,15 @@ export function Newsletter() {
 
   return (
     <section className="newsletter-wrapper">
-      <div className="flex size-full max-w-[600px] flex-col items-center justify-center gap-3 text-center">
-        <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
-          Sign up for our newsletter
-        </h2>
-        <p className="mx-auto sm:text-xl">
-          To stay up to date with our progress, announcements and exclusive discounts, sign up with your email below:
-        </p>
+      <div className="flex h-[460px] w-full max-w-[600px] flex-col gap-8 md:gap-11 items-center justify-center text-center">
+        <div className="flex flex-col gap-7 w-full">
+          <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
+            Sign up for our newsletter
+          </h2>
+          <p className="mx-auto sm:text-xl">
+            To stay up to date with our progress, announcements and exclusive discounts, sign up with your email below:
+          </p>
+        </div>
 
         <form
           action={onSubmit}

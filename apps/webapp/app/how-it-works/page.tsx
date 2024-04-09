@@ -1,7 +1,7 @@
 import Image from 'next/image'
 
 const howItWorksClassNames = {
-  container: 'flex flex-col gap-10 py-24 w-full max-w-screen-lg',
+  container: 'flex flex-col gap-10 py-24 w-full mx-auto max-w-screen-lg',
   h1: 'text-3xl md:text-6xl font-bold',
   h2: 'text-2xl md:text-4xl font-bold',
   paragraph: 'text-base md:text-lg',
@@ -84,78 +84,80 @@ export default function HowItWorks() {
         its functionality
       </p>
 
-      <article className={howItWorksClassNames.article}>
-        <h2 className={howItWorksClassNames.h2}>Purpose</h2>
-        <ul className={howItWorksClassNames.list}>
-          <li>
-            <strong>Deposit:</strong> Allows users to deposit funds into the
-            smart contract, acting as a bid in an auction or payment for placing
-            an order.
-          </li>
-          <li>
-            <strong>Place Order:</strong> Enables users to place an order within
-            the auction, specifying details such as the amount of tokens desired
-            and the price.
-          </li>
-        </ul>
+      <hr className="border-gray-600/80" />
 
-        <h2 className={howItWorksClassNames.h2}>Parameters</h2>
-        <p className={howItWorksClassNames.paragraph}>
-          Common parameters include:
-        </p>
-        <ul className={howItWorksClassNames.list}>
-          <li>
-            <code>auctionId</code>: Identifies the auction.
-          </li>
-          <li>
-            <code>amount</code> or <code>_minBuyAmounts</code>: The amount of
-            tokens to buy or the minimum bid amount.
-          </li>
-          <li>
-            <code>token</code> or <code>currency</code>: The token or currency
-            used for the order.
-          </li>
-          <li>
-            <code>userData</code>: Additional data related to the order.
-          </li>
-        </ul>
+      <h2 className={howItWorksClassNames.h2}>Purpose</h2>
+      <ul className={howItWorksClassNames.list}>
+        <li>
+          <strong>Deposit:</strong> Allows users to deposit funds into the
+          smart contract, acting as a bid in an auction or payment for placing
+          an order.
+        </li>
+        <li>
+          <strong>Place Order:</strong> Enables users to place an order within
+          the auction, specifying details such as the amount of tokens desired
+          and the price.
+        </li>
+      </ul>
 
-        <h2 className={howItWorksClassNames.h2}>Behavior</h2>
-        <ol className={howItWorksClassNames.list}>
-          <li>
-            <strong>Validation:</strong> Validates the input parameters against
-            the auctions rules.
-          </li>
-          <li>
-            <strong>Funds Handling:</strong> Manages the deposited funds,
-            aligning them with the users order.
-          </li>
-          <li>
-            <strong>Order Placement:</strong> Records the users order within the
-            auctions structure.
-          </li>
-          <li>
-            <strong>Events:</strong> Emits events to record the deposit and
-            order placement actions.
-          </li>
-        </ol>
+      <h2 className={howItWorksClassNames.h2}>Parameters</h2>
+      <p className={howItWorksClassNames.paragraph}>
+        Common parameters include:
+      </p>
+      <ul className={howItWorksClassNames.list}>
+        <li>
+          <code>auctionId</code>: Identifies the auction.
+        </li>
+        <li>
+          <code>amount</code> or <code>_minBuyAmounts</code>: The amount of
+          tokens to buy or the minimum bid amount.
+        </li>
+        <li>
+          <code>token</code> or <code>currency</code>: The token or currency
+          used for the order.
+        </li>
+        <li>
+          <code>userData</code>: Additional data related to the order.
+        </li>
+      </ul>
 
-        <h2 className={howItWorksClassNames.h2}>Security Considerations</h2>
-        <ul className={howItWorksClassNames.list}>
-          <li>
-            <strong>Reentrancy Guard:</strong> Ensures protection against
-            reentrancy attacks.
-          </li>
-          <li>
-            <strong>Input Validation:</strong> Validates all inputs to prevent
-            manipulations.
-          </li>
-          <li>
-            <strong>Access Controls:</strong> May restrict who can call the
-            function based on certain criteria.
-          </li>
-        </ul>
-      </article>
+      <h2 className={howItWorksClassNames.h2}>Behavior</h2>
+      <ol className={howItWorksClassNames.list}>
+        <li>
+          <strong>Validation:</strong> Validates the input parameters against
+          the auctions rules.
+        </li>
+        <li>
+          <strong>Funds Handling:</strong> Manages the deposited funds,
+          aligning them with the users order.
+        </li>
+        <li>
+          <strong>Order Placement:</strong> Records the users order within the
+          auctions structure.
+        </li>
+        <li>
+          <strong>Events:</strong> Emits events to record the deposit and
+          order placement actions.
+        </li>
+      </ol>
+
+      <h2 className={howItWorksClassNames.h2}>Security Considerations</h2>
+      <ul className={howItWorksClassNames.list}>
+        <li>
+          <strong>Reentrancy Guard:</strong> Ensures protection against
+          reentrancy attacks.
+        </li>
+        <li>
+          <strong>Input Validation:</strong> Validates all inputs to prevent
+          manipulations.
+        </li>
+        <li>
+          <strong>Access Controls:</strong> May restrict who can call the
+          function based on certain criteria.
+        </li>
+      </ul>
+
+      <hr className="border-gray-600/80 mt-24" />
     </div>
   )
 }

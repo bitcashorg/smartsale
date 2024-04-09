@@ -155,7 +155,7 @@ input[type='number'] {
 }
 
 .newsletter-wrapper {
-  @apply container mx-auto flex h-[460px] flex-col items-center gap-14 rounded-3xl px-0 backdrop-blur-xl sm:text-center;
+  @apply container mx-auto flex flex-col items-center rounded-3xl px-0 backdrop-blur-xl sm:text-center;
 
   background: url('/images/newsletter-bg.png') center center no-repeat;
   background-size: cover;
