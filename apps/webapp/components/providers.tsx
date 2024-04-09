@@ -17,7 +17,7 @@ import { SigningRequestProvider } from './dialogs/esr-dialog'
 const queryClient = new QueryClient()
 
 export const wagmiConfig = getDefaultConfig({
-  appName: 'bitLauncher',
+  appName: 'Bitlauncher',
   projectId: 'YOUR_PROJECT_ID',
   // @ts-ignore
   chains: [{ ...eosEvmTestnet, fees: undefined }, sepolia]

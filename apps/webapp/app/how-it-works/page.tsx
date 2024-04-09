@@ -14,14 +14,14 @@ const howItWorksClassNames = {
 export default function HowItWorks() {
   return (
     <div className={howItWorksClassNames.container}>
-      <h1 className={howItWorksClassNames.h1}>How bitlauncher works</h1>
+      <h1 className={howItWorksClassNames.h1}>How Bitlauncher Works</h1>
       <p className={howItWorksClassNames.paragraph}>
-        bitlauncher is a platform enabling fair price discovery for token
+        Bitlauncher is a platform enabling fair price discovery for token
         auctions. The aim of the platform is to make it easy for teams to
         discover a fair price for their token.
       </p>
       <p className={howItWorksClassNames.paragraph}>
-        bitlauncher uses batch auctions, which are a popular mechanism for
+        Bitlauncher uses batch auctions, which are a popular mechanism for
         ensuring fair price for both the decentralized and traditional finance
         worlds. Batch auctions enable matching of limit orders of buyers and
         sellers with the same clearing price for all participants. From crypto
@@ -42,9 +42,9 @@ export default function HowItWorks() {
       <p className={howItWorksClassNames.paragraph}>
         With bitlauncher’s open-source smart contract, projects can quickly and
         securely create their own decentralized fair auctions. Unlike some
-        solutions dependent on a centralized curation process, bitlauncher is
+        solutions dependent on a centralized curation process, Bitlauncher is
         permissionless so that any Ethereum team can deploy & execute batch
-        auctions for price finding. bitlauncher allows any Ethereum project or
+        auctions for price finding. Bitlauncher allows any Ethereum project or
         community to conduct auctions that:
       </p>
       <Image
@@ -56,11 +56,11 @@ export default function HowItWorks() {
         className={howItWorksClassNames.code}
       />
       <h2 className={howItWorksClassNames.h2}>
-        Fair Price Discovery with bitlauncher
+        Fair Price Discovery with Bitlauncher
       </h2>
       <p className={howItWorksClassNames.paragraph}>
         By providing an easy interface for price discovery with batch auctions,
-        bitlauncher enables:
+        Bitlauncher enables:
       </p>
       <ul className="mt-2 list-disc pl-6">
         <li>
@@ -78,7 +78,7 @@ export default function HowItWorks() {
       </p>
       <p className={howItWorksClassNames.paragraph}>
         The depositAndPlaceOrder function, typically found in auction or trading
-        platforms like Gnosis or its forks, including bitLauncher, serves a dual
+        platforms like Gnosis or its forks, including Bitlauncher, serves a dual
         purpose within the context of smart contracts, especially when
         interacting with blockchain-based auction systems. Heres a breakdown of
         its functionality
@@ -86,7 +86,10 @@ export default function HowItWorks() {
 
       <hr className="border-gray-600/80" />
 
+      <h1 className={howItWorksClassNames.h1}>Smart Contract Actions</h1>
+
       <h2 className={howItWorksClassNames.h2}>Purpose</h2>
+
       <ul className={howItWorksClassNames.list}>
         <li>
           <strong>Deposit:</strong> Allows users to deposit funds into the

@@ -204,7 +204,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "/Users/gaboesquivel/Code/smartevm/packages/smartsale-db/prisma/client",
+      "value": "/home/andler/Development/monorepo/smartevm/packages/smartsale-db/prisma/client",
       "fromEnvVar": null
     },
     "config": {
@@ -213,7 +213,7 @@ const config = {
     "binaryTargets": [
       {
         "fromEnvVar": null,
-        "value": "darwin",
+        "value": "debian-openssl-1.1.x",
         "native": true
       },
       {
@@ -233,8 +233,7 @@ const config = {
     "isCustomOutput": true
   },
   "relativeEnvPaths": {
-    "rootEnvPath": null,
-    "schemaEnvPath": "../../.env"
+    "rootEnvPath": null
   },
   "relativePath": "..",
   "clientVersion": "5.12.1",
@@ -291,16 +290,12 @@ exports.PrismaClient = PrismaClient
 Object.assign(exports, Prisma)
 
 // file annotations for bundling tools to include these files
-path.join(__dirname, "libquery_engine-darwin.dylib.node");
-path.join(process.cwd(), "prisma/client/libquery_engine-darwin.dylib.node")
+path.join(__dirname, "libquery_engine-debian-openssl-1.1.x.so.node");
+path.join(process.cwd(), "prisma/client/libquery_engine-debian-openssl-1.1.x.so.node")
 
 // file annotations for bundling tools to include these files
 path.join(__dirname, "libquery_engine-rhel-openssl-3.0.x.so.node");
 path.join(process.cwd(), "prisma/client/libquery_engine-rhel-openssl-3.0.x.so.node")
-
-// file annotations for bundling tools to include these files
-path.join(__dirname, "libquery_engine-debian-openssl-1.1.x.so.node");
-path.join(process.cwd(), "prisma/client/libquery_engine-debian-openssl-1.1.x.so.node")
 
 // file annotations for bundling tools to include these files
 path.join(__dirname, "libquery_engine-debian-openssl-3.0.x.so.node");

@@ -126,25 +126,25 @@ export function Header({ className, containerRef }: { className?: string, contai
             </div>
 
             <div className="inline-flex gap-5 mx-auto">
-              <HeaderLink
+              {/* <HeaderLink
                 href="/wallet"
                 text="wallet"
                 onClick={() => setActiveMenu('')}
                 desktopOnly
-              />
+              /> */}
               <MenuItem
                 active={activeMenu}
                 setActive={setActiveMenu}
-                item="about"
+                item="About"
               >
                 <HeaderLink
                   href="/how-it-works"
-                  text="how it works"
+                  text="How It works"
                   onClick={() => setActiveMenu('')}
                 />
                 <HeaderLink
                   href="/security"
-                  text="security tips"
+                  text="Security Tips"
                   onClick={() => setActiveMenu('')}
                 />
               </MenuItem>
@@ -234,11 +234,17 @@ function MenuItem({
     <div className="relative text-semibold" id={item}>
       <motion.button
         transition={{ duration: 0.3 }}
-        className="md:text-md cursor-pointer whitespace-nowrap text-sm text-black hover:opacity-90 dark:text-white"
+        className="text-lg cursor-pointer whitespace-nowrap hover:opacity-90 focus-within:opacity-90"
         onClick={() => setActive(active === item ? '' : item)}
         layout
       >
-        {item} {active === item ? '-' : '+'}
+        {item}
+        <span
+          className={cn(
+            { 'rotate-90': active === item },
+          )}>
+          ˃
+        </span>
       </motion.button>
       {active !== null && (
         <motion.div

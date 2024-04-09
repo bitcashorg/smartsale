@@ -105,7 +105,7 @@ export default function Participate() {
 }
 
 const textContent = {
-  // title: 'Join The AI and Web3 Revolution With bitLauncher.',
+  // title: 'Join The AI and Web3 Revolution With Bitlauncher.',
   stepsInfo:
     'Only 3 Steps Needed',
   steps: [
@@ -118,7 +118,7 @@ const textContent = {
       title: 'Get USD\nCredits',
       description:
         'Deposit USDT on any chain to get USD Credit Tokens on EOS EVM',
-      href: '/wallet'
+      href: '#'
     },
     {
       title: 'Place\nBids',

@@ -62,7 +62,7 @@ export function BitcashAccessButton({
 
   if (session && isLogin)
     return (
-      <Link href="/wallet" shallow>
+      <Link href="#" shallow>
         <Button>
           {session.account} - ${balance.formatted}
         </Button>

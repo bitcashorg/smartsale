@@ -1,19 +1,22 @@
 import { TestnetMBOTSPL, TokenContractData } from 'smartsale-contracts'
 
+// https://bitcash.to/{hash}
+// ? Micro interaction: share (short) link
+
 export const projects: Project[] = [
   {
     id: 1,
-    title: 'bitcash',
-    slug: 'bitcash',
-    pitch: 'P2P exchange for local currency stablecoins. P2P exchange for local currency stablecoins. P2P exchange for local currency stablecoins. P2P exchange for local currency stablecoins',
+    title: 'bitcash | bitlauncher',
+    slug: 'bitcash-bitlauncher',
+    pitch: 'Building Ai & Crypto Apps For The New Global Economy.',
     fundraiseGoal: '$200,000',
     maxAllocation: '$10,000',
     heroImage: '/images/projects/bitcash.png',
     badgeText: 'PRE-SALE ACTIVE',
-    linkPath: '/bitcash',
+    linkPath: '/bitcash-bitlauncher',
     token: TestnetMBOTSPL,
     auctionId: 9,
-    auctionClosed: true,
+    presaleOpen: true,
     twitterUsername: 'bitcashorg',
     telegramGroup: 'bitcashorg',
     discordServer: 'a4gwhT9G',
@@ -159,14 +162,14 @@ export const projects: Project[] = [
   },
   {
     id: 2,
-    title: 'bitlauncher',
-    slug: 'bitlauncher',
-    pitch: 'Specialized AI chatbots',
+    title: 'Masterbots',
+    slug: 'masterbots',
+    pitch: 'Elevating AI Beyond ChatGPT: Specialized Chatbots, Social Sharing and User-Friendly Innovation',
     fundraiseGoal: '$200,000',
     maxAllocation: '$10,000',
     heroImage: '/images/projects/masterbots.png',
     badgeText: 'COMING SOON',
-    linkPath: '/bitlauncher',
+    linkPath: '/masterbots',
     auctionId: 9,
     token: TestnetMBOTSPL,
     presaleOpen: true,
@@ -286,10 +289,10 @@ export const projects: Project[] = [
         ]
       },
       tokenomics: {
-        title: 'Tokenomics of Bitcash: Architectonic Value and Growth',
+        title: 'Tokenomics of Bitcash: Architecting Value and Growth',
         content: [
           [
-            'The economic backbone of Bitcash is predicated on a comprehensive tokenomics strategy that underwrites our platform’s growth, incentivizes participation, and ensures a fair distribution of value across the ecosystem. Our tokenomics is tailored to the needs of our community, reflecting real contributions and fostering a sustainable environment for innovation and progress.',
+            'The economic backbone of Bitcash is predicated on a comprehensive tokenomics strategy that underwrites our platform’s growth, incentivize participation, and ensures a fair distribution of value across the ecosystem. Our tokenomics is tailored to the needs of our community, reflecting real contributions and fostering a sustainable environment for innovation and progress.',
           ],
           ['Token Structure and Distribution'],
           ['Bitcash has implemented a dual token system consisting of:'],
@@ -315,19 +318,19 @@ export const projects: Project[] = [
   },
   {
     id: 3,
-    title: 'masterbots',
-    slug: 'masterbots',
-    pitch: 'Specialized AI chatbots',
-    fundraiseGoal: '$650,000',
+    title: 'WizartWorld',
+    slug: 'wizartworld',
+    pitch: 'Become a master on design with the power of AI and mint them as NFTs.',
+    fundraiseGoal: '$200,000',
     maxAllocation: '$10,000',
-    heroImage: '/images/projects/masterbots.png',
-    badgeText: 'COMING SOON',
-    linkPath: '/masterbots',
-    auctionId: 9,
+    heroImage: '/images/projects/wizartworld.png',
+    badgeText: 'IN PREPARATION',
+    linkPath: '/wizartworld',
     token: TestnetMBOTSPL,
-    presaleOpen: true,
-    twitterUsername: 'masterbotsai',
-    telegramGroup: 'masterbotsai',
+    auctionId: 9,
+    registrationOpen: true,
+    twitterUsername: 'wizartworld',
+    telegramGroup: 'wizartworld',
     discordServer: 'a4gwhT9G',
     content: {
       highlights: {
@@ -496,3 +499,6 @@ export type ProjectWithAuction = Required<
   Pick<Project, 'auctionId' | 'token'>
 > &
   Project
+
+
+// ? Masterbots Title => Elevating AI Beyond ChatGPT: Specialized Chatbots, Social Sharing and User-Friendly Innovation

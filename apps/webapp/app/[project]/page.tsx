@@ -72,7 +72,7 @@ export default function ProjectPage({
             return (
               <ul key={`${index}__${(projectContent.highlights.title as string).replace(/\s/g, '-')}`} className="flex flex-col gap-2 list-outside list-disc px-6">
                 {content.map(item => (
-                  <li>
+                  <li key={`${item}__list-item`}>
                     {item.split(':').map((text, index) => (
                       <span key={index} className={!index ? 'font-bold' : ''}>
                         {text}{!index ? ': ' : ''}
