@@ -208,7 +208,7 @@ input[type='number'] {
 /** Tooltip Styling */
 
 *[data-title]::after {
-  @apply absolute left-0 mx-auto w-max max-w-[200px] bg-muted px-3 py-1 text-xs font-semibold text-muted-foreground transition-all;
+  @apply absolute left-0 mx-auto h-auto w-max max-w-[200px] whitespace-break-spaces bg-muted px-3 py-1 text-xs font-semibold text-muted-foreground transition-all;
 
   transform: translateY(calc(-100% - 4px));
   content: attr(data-title);
@@ -220,14 +220,14 @@ input[type='number'] {
 
 /* making the arrow */
 *[data-title]::before {
-  @apply absolute left-0 h-0 w-0 border-r-[5px] border-t-[5px] border-transparent transition-all;
+  @apply pointer-events-none absolute left-0 h-0 w-0 border-r-[5px] border-t-[5px] border-transparent transition-all;
 
-  content: ' ';
+  content: '';
   top: -10px;
   left: 40%;
   transform: rotate(45deg);
   opacity: 0;
-  z-index: 0;
+  z-index: -1;
 }
 
 *[data-title]:hover::before {

@@ -1,6 +1,4 @@
 import { projects } from '@/lib/projects'
-import Image from 'next/image'
-import Link from 'next/link'
 
 import { redirect } from 'next/navigation'
 
@@ -59,7 +57,7 @@ export default function ProjectPage({
         )
       })}
 
-      <hr className="border-gray-600/80 mt-24" />
+      <hr className="border-gray-600/80 mt-24 mx-auto max-w-screen-xl" />
     </>
   )
 }

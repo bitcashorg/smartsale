@@ -5,6 +5,7 @@ import { Header } from "@/components/layout/header"
 import { Newsletter } from "@/components/pages/home/newsletter"
 import Participate from "@/components/pages/home/participate"
 import { BackgroundMovingGradient } from "@/components/ui/background-moving-gradient"
+import { cn } from "@/lib/utils"
 import { useRef } from "react"
 import { Toaster } from "react-hot-toast"
 
@@ -16,16 +17,21 @@ export function LayoutContainer({ children, projectHeader }: { children: React.R
       <Header containerRef={containerRef} />
       <Toaster />
       <div
-        className="absolute scrollbar pt-[80px] inset-0 z-50 flex size-full min-h-screen flex-col items-center justify-start overflow-x-hidden"
+        className={cn(
+          'absolute scrollbar pt-[80px] inset-0 z-50 flex size-full min-h-screen flex-col items-center justify-start overflow-x-hidden',
+          {
+            'pt-0': Boolean(projectHeader)
+          }
+        )}
         ref={containerRef}
       >
         {projectHeader ? (
           <main className="flex flex-1 flex-col">
-            <header className="h-[calc(90vh-4rem)] bg-black/20 w-screen">
+            <header className="relative h-[calc(83vh-4rem)] bg-black/20 w-screen">
               {projectHeader}
             </header>
 
-            <div className="container py-5">
+            <div className="container py-32">
               {children}
             </div>
           </main>
