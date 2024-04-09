@@ -6,6 +6,7 @@ import * as React from 'react'
 import { IconBitlauncher } from '../ui/icons'
 import { HeaderButtons } from './header-buttons'
 
+import { buttonVariants } from '@/components/ui/button'
 import { useSession } from '@/hooks/use-session'
 import { cn } from '@/lib/utils'
 import {
@@ -149,19 +150,34 @@ export function Header({ className, containerRef }: { className?: string, contai
               </MenuItem>
             </div>
 
-            {!session?.account ? (
-              <HeaderButtons largeHeader={largeHeader} />
-            ) : (
-              <MenuItem
-                active={activeMenu}
-                setActive={setActiveMenu}
-                item={connectItem}
+            <div className="inline-flex gap-5">
+              <Link
+                href="https://discord.gg/a4gwhT9G"
+                target='_blank'
+                rel='noopener noreferrer'
+                className={cn(
+                  buttonVariants({
+                    variant: 'outline', radius: 'full', size: largeHeader ? 'lg' : 'default', fontSize: largeHeader ? 'lg' : 'default'
+                  }),
+                  'min-w-[98px] md:min-w-[120px] lg:min-w-[175px]',
+                )}
               >
-                <React.Suspense fallback={<div />}>
-                  <HeaderButtons />
-                </React.Suspense>
-              </MenuItem>
-            )}
+                Discord
+              </Link>
+              {!session?.account ? (
+                <HeaderButtons largeHeader={largeHeader} />
+              ) : (
+                <MenuItem
+                  active={activeMenu}
+                  setActive={setActiveMenu}
+                  item={connectItem}
+                >
+                  <React.Suspense fallback={<div />}>
+                    <HeaderButtons />
+                  </React.Suspense>
+                </MenuItem>
+              )}
+            </div>
           </div>
         </motion.header>
       </AnimatePresence>

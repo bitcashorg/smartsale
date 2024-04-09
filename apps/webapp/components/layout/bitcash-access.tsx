@@ -77,7 +77,6 @@ export function BitcashAccessButton({
       <DialogTrigger asChild>
         <Button
           className={cn({
-            'focus-within:scale-105 hover:scale-105': buttonLabel !== 'down-right-icon',
             'relative text-md px-0 py-0 size-14 font-bold rounded-full hover:[&svg]:fill-card group': buttonLabel === 'down-right-icon'
           }, buttonClassName)}
           {...buttonStyle}
