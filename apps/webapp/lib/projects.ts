@@ -11,7 +11,7 @@ export const projects: Project[] = [
     pitch: 'Building Ai & Crypto Apps For The New Global Economy.',
     fundraiseGoal: '$200,000',
     maxAllocation: '$10,000',
-    heroImage: '/images/projects/bitcash.png',
+    heroImage: '/images/projects/bitcash-cover.png',
     thumbnailImage: '/images/projects/bitcash.png',
     badgeText: 'PRE-SALE ACTIVE',
     linkPath: '/bitcash-bitlauncher',
