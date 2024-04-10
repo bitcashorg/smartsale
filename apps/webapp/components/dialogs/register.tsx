@@ -38,7 +38,9 @@ export function RegisterDialogContent({
   return (
     <>
       <DialogHeader>
+        {/* @ts-ignore */}
         <DialogTitle>Register to bitcash Wallet</DialogTitle>
+        {/* @ts-ignore */}
         <DialogDescription>
           Scan this QR code with your smartphone camera or a QR reader to create
           a bitcash account.

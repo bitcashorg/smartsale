@@ -1,10 +1,11 @@
 import '@/app/globals.css'
-import { LayoutContainer } from '@/components/layout-container'
 import { Providers } from '@/components/providers'
+import { projects } from '@/lib/projects'
 import { cn } from '@/lib/utils'
 import { GoogleAnalytics } from '@next/third-parties/google'
 import '@rainbow-me/rainbowkit/styles.css'
 import { Metadata } from 'next'
+import { headers } from 'next/headers'
 import React from 'react'
 
 export const metadata: Metadata = {
@@ -45,7 +46,15 @@ export const metadata: Metadata = {
 }
 
 export default function RootLayout({ children, ...props }: RootLayoutProps) {
-  // const pathname = headers().get('referer') ? new URL(headers().get('referer') || '')?.pathname || 'home' : ''
+  const header = headers()
+  const pathname = header.get('x-pathname')?.split('/')[1] || ''
+  const project = projects.find(p => p.slug === pathname)
+
+  // console.log('pathname', pathname)
+  // header.forEach((value, key) => {
+  //   console.log('key', key)
+  //   console.log('value', value)
+  // })
 
   return (
     <html lang="en" suppressHydrationWarning>
@@ -60,16 +69,14 @@ export default function RootLayout({ children, ...props }: RootLayoutProps) {
           enableSystem
           disableTransitionOnChange
         >
-          <LayoutContainer>
-            {children}
-          </LayoutContainer>
+          {children}
         </Providers>
         <GoogleAnalytics gaId="G-78N0Z7NPQJ" />
       </body>
     </html >
   )
 }
-
 interface RootLayoutProps {
   children: React.ReactNode
+  params: { project: string }
 }

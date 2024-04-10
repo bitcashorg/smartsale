@@ -136,7 +136,7 @@ export const projects: Project[] = [
     heroImage: '/images/projects/masterbots.png',
     thumbnailImage: '/images/projects/masterbots.png',
     badgeText: 'COMING SOON',
-    linkPath: '/masterbots',
+    linkPath: '#',
     auctionId: 9,
     token: TestnetMBOTSPL,
     presaleOpen: true,

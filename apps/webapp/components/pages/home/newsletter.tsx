@@ -67,7 +67,11 @@ export function Newsletter() {
           ) : null}
           <input type="hidden" {...register('recaptcha', { required: true })} />
           <GoogleReCaptcha
-            onVerify={v => setValue('recaptcha', v.toString() || '')}
+            onVerify={v => {
+              if (v.toString() && !recaptchaToken) {
+                setValue('recaptcha', v.toString() || '')
+              }
+            }}
           />
           <Button
             type="submit"
@@ -82,7 +86,7 @@ export function Newsletter() {
         </form>
       </div>
       <div className="flex items-center justify-between w-full h-[230px] bg-primary rounded-b-3xl lg:px-24 md:px-10 px-4 flex-wrap">
-        <Link href="/" prefetch shallow>
+        <Link href="/" prefetch>
           <IconBitlauncher className="w-40 h-8 md:w-56 md:h-11" />
         </Link>
         <p className="hidden md:block text-xs">

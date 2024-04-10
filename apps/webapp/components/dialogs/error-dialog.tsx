@@ -2,23 +2,26 @@
 
 import { Button } from '@/components/ui/button'
 import {
-  DialogTitle,
-  DialogHeader,
+  Dialog,
+  DialogContent,
   DialogDescription,
   DialogFooter,
-  DialogContent,
-  Dialog
+  DialogHeader,
+  DialogTitle
 } from '@/components/ui/dialog'
-import { useGlobalData } from '@/hooks/use-global-store'
+import { useGlobalStore } from '@/hooks/use-global-store'
 
 export function ErrorModal() {
-  const { errorMessage, setGlobalError } = useGlobalData()
+  const { errorMessage, setGlobalError } = useGlobalStore()
   return (
     <Dialog open={!!errorMessage}>
+      {/* @ts-ignore */}
       <DialogContent>
         <DialogHeader>
+          {/* @ts-ignore */}
           <DialogTitle>Error</DialogTitle>
         </DialogHeader>
+        {/* @ts-ignore */}
         <DialogDescription>{errorMessage}</DialogDescription>
         <DialogFooter>
           <Button onClick={() => setGlobalError('')} variant="ghost">

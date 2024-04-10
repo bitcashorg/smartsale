@@ -12,7 +12,7 @@ export function AuctionCard(props: Project) {
     pitch,
     fundraiseGoal,
     maxAllocation,
-    heroImage,
+    thumbnailImage,
     badgeText,
     linkPath,
     twitterUsername,
@@ -35,7 +35,6 @@ export function AuctionCard(props: Project) {
       id={`hot-auction-${title.toLowerCase().replace(/\s/g, '-')}`}
       href={isAuctionPreparation ? `#` : linkPath}
       className={cn('size-full max-w-[450px] mx-auto', { 'cursor-not-allowed': isAuctionPreparation })}
-      shallow
       prefetch
     >
       <motion.div
@@ -48,7 +47,7 @@ export function AuctionCard(props: Project) {
           className="relative w-full"
         >
           <Image
-            src={heroImage}
+            src={thumbnailImage}
             height="1000"
             width="1000"
             className="h-[216px] w-full rounded-t-xl object-cover group-hover/card:shadow-xl"
@@ -127,7 +126,6 @@ export function AuctionCard(props: Project) {
                   'relative text-md px-0 py-0 size-14 font-bold rounded-full hover:[&svg]:fill-card group'
                 )}
                 data-title={`Go to ${title}´s auction`}
-                shallow
                 prefetch
               >
                 <IconDownRightArrow className="transition-all size-4 group-hover:-rotate-[45deg] group-focus-within:-rotate-[45deg]" />
@@ -137,7 +135,7 @@ export function AuctionCard(props: Project) {
               <p
                 className="absolute bottom-0 left-0 text-center hover:text-link focus-within:text-link w-full rounded-xl px-4 py-1 text-sm font-normal bg-destructive rounded-t-none"
               >
-                This auction is not currently available. Check out later!
+                This auction is currently unavailable. Check out later!
               </p>
             )}
           </div>

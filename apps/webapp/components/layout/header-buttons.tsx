@@ -16,7 +16,7 @@ export function HeaderButtons({ largeHeader }: { largeHeader?: boolean }) {
       />
 
       {session ? (
-        <span className="max-w-[98px] min-w-[98px] md:max-w-[120px] md:min-w-[120px] lg:max-w-[175px] lg:min-w-[175px] [&_button]:!rounded-lg">
+        <span className="[&_button]:!rounded-lg [&_button]:w-full">
           <ConnectButton chainStatus="none" showBalance={false} />
         </span>
       ) : null}

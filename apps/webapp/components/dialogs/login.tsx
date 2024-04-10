@@ -21,7 +21,9 @@ export function LoginDialogContent({
   return (
     <>
       <DialogHeader>
+        {/* @ts-ignore */}
         <DialogTitle>Connect bitcash Wallet</DialogTitle>
+        {/* @ts-ignore */}
         <DialogDescription>
           Scan this QR code with the bitcash wallet QR reader and sign to log
           in.

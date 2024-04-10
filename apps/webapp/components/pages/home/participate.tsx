@@ -41,8 +41,10 @@ export default function Participate() {
       className="align-center flex flex-col pb-10"
       ref={stepsInfoRef}
     >
-      <AnimatePresence>
-        <h2 className="text-3xl leading-loose font-bold pt-6 pb-10 w-full text-center">
+      <h2
+        className="text-3xl leading-loose font-bold pt-6 pb-10 w-full text-center"
+      >
+        <AnimatePresence>
           {showStepsInfo && (
             <motion.span
               initial={{ opacity: 0, y: 20 }}
@@ -54,12 +56,17 @@ export default function Participate() {
               {textContent.stepsInfo}
             </motion.span>
           )}
-        </h2>
+        </AnimatePresence>
+      </h2>
 
-        <div className="flex gap-14 flex-col items-center md:items-stretch md:flex-row md:justify-between">
+      <div
+        key="steps-info-title"
+        className="flex gap-14 flex-col items-center md:items-stretch md:flex-row md:justify-between"
+      >
+        <AnimatePresence>
           {textContent.steps.map((step, index) => (
             <motion.div
-              key={index}
+              key={`${index}__step-content`}
               className="w-full min-h-[260px] max-w-[450px] flex rounded-3xl flex-col items-center justify-between bg-white/90 px-8 py-9 shadow-md backdrop-blur-xl md:w-1/3 md:items-start text-black/90"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -83,7 +90,6 @@ export default function Participate() {
                       }),
                       "relative text-md px-0 py-0 size-14 font-bold rounded-full hover:[&svg]:fill-card group"
                     )}
-                    shallow
                     prefetch
                   >
                     <IconDownRightArrow className="transition-all [&_path]:stroke-white size-4 group-hover:-rotate-[45deg] group-focus-within:-rotate-[45deg]" />
@@ -98,8 +104,8 @@ export default function Participate() {
               </div>
             </motion.div>
           ))}
-        </div>
-      </AnimatePresence>
+        </AnimatePresence>
+      </div>
     </section>
   )
 }

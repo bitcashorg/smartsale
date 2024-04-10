@@ -1,14 +1,13 @@
 import { genLoginSigningRequest } from '@/lib/eos'
 import { supabase } from '@/lib/supabase'
+import { createContextHook } from '@blockmatic/hooks-utils'
+import { useSearchParams } from 'next/navigation'
 import { useEffect, useState } from 'react'
 import { useAsync, useLocalStorage } from 'react-use'
 import { session } from 'smartsale-db'
-import { createContextHook } from '@blockmatic/hooks-utils'
-import { useSearchParams } from 'next/navigation'
 
-import { ReactNode } from 'react'
-import React from 'react'
 import axios from 'axios'
+import React, { ReactNode } from 'react'
 
 const [useSession, SessionProviderInner] = createContextHook(
   useSessionFn,

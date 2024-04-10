@@ -1,7 +1,9 @@
 'use client'
 
+import { useSignatureRequest } from '@/components/dialogs/esr-dialog'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardFooter } from '@/components/ui/card'
+import { Input } from '@/components/ui/input'
 import {
   Select,
   SelectContent,
@@ -22,9 +24,7 @@ import {
 import { smartsaleEnv } from 'smartsale-env'
 import { parseUnits } from 'viem'
 import { useAccount, useSwitchChain, useWriteContract } from 'wagmi'
-import { useSignatureRequest } from '@/components/dialogs/esr-dialog'
-import { useGlobalData } from '@/hooks/use-global-store'
-import { Input } from '@/components/ui/input'
+import { useGlobalStore } from '@/hooks/use-global-store'
 
 const usdtMap = new Map<string, TokenContractData>()
 smartsaleEnv.test.usdt.forEach(t => {
@@ -35,7 +35,7 @@ smartsaleEnv.test.usdt.forEach(t => {
 export function DepositCard() {
   const { address } = useAccount()
   const { writeContract, ...other } = useWriteContract()
-  const { setGlobalError } = useGlobalData()
+  const { setGlobalError } = useGlobalStore()
   const [amount, setAmount] = useState<number>(42)
   const { switchChain } = useSwitchChain()
   const [token, setToken] = useState<TokenContractData>(TestnetUSDT)
@@ -90,17 +90,20 @@ export function DepositCard() {
               </span>
             </div>
             <Select onValueChange={chainId => setToken(usdtMap.get(chainId)!)}>
+              {/* @ts-ignore */}
               <SelectTrigger id="currency-out">
                 <SelectValue
                   placeholder={`${token.symbol} on ${token.chainName}`}
                 />
               </SelectTrigger>
+              {/* @ts-ignore */}
               <SelectContent position="popper">
                 {Array.from(usdtMap.values()).map(t => {
                   const key = JSON.stringify(t)
                   const usdt = usdtMap.get(key)
 
                   return (
+                    // @ts-ignore */
                     <SelectItem key={key} value={key}>
                       {usdt?.symbol} on {usdt?.chainName}
                     </SelectItem>

@@ -3,7 +3,7 @@
 import Link, { LinkProps } from 'next/link'
 import * as React from 'react'
 
-import { IconBitlauncher } from '../ui/icons'
+import { IconBitlauncher, IconDiscord } from '../ui/icons'
 import { HeaderButtons } from './header-buttons'
 
 import { buttonVariants } from '@/components/ui/button'
@@ -15,9 +15,11 @@ import {
   useMotionValueEvent,
   useScroll
 } from 'framer-motion'
+import { LucideChevronRight } from 'lucide-react'
 
 export function Header({ className, containerRef }: { className?: string, containerRef: React.RefObject<HTMLDivElement> }) {
   const { session } = useSession()
+  console.log('session', session)
   const { scrollYProgress } = useScroll({
     container: containerRef
   })
@@ -159,10 +161,18 @@ export function Header({ className, containerRef }: { className?: string, contai
                   buttonVariants({
                     variant: 'outline', radius: 'full', size: largeHeader ? 'lg' : 'default', fontSize: largeHeader ? 'lg' : 'default'
                   }),
-                  'min-w-[98px] md:min-w-[120px] lg:min-w-[175px]',
+                  'px-2.5 border-transparent md:border-accent md:px-8 min-w-[32px] md:min-w-[120px] lg:min-w-[175px]',
                 )}
               >
-                Discord
+                <IconDiscord
+                  className={cn(
+                    'size-7 fill-accent block md:hidden',
+                    { 'size-9': largeHeader }
+                  )}
+                />
+                <span className="hidden md:block">
+                  Discord
+                </span>
               </Link>
               {!session?.account ? (
                 <HeaderButtons largeHeader={largeHeader} />
@@ -200,8 +210,6 @@ function HeaderLink({
         'hidden md:flex': desktopOnly,
         'flex md:hidden': mobileOnly
       })}
-      shallow
-      prefetch
       {...props}
     >
       {text.match(/(bitlauncher|home)/) ? (
@@ -209,8 +217,8 @@ function HeaderLink({
           className={cn('transition-all', {
             'w-56 h-11': largeHeader,
             'w-40 h-8': !largeHeader,
-            'size-12': largeHeader && mobileOnly,
-            'size-9': !largeHeader && mobileOnly,
+            'size-10': largeHeader && mobileOnly,
+            'size-8': !largeHeader && mobileOnly,
           }
           )}
           iconOnly={text === 'home'} />
@@ -234,34 +242,37 @@ function MenuItem({
     <div className="relative text-semibold" id={item}>
       <motion.button
         transition={{ duration: 0.3 }}
-        className="text-lg cursor-pointer whitespace-nowrap hover:opacity-90 focus-within:opacity-90"
+        className="relative group flex flex-nowrap items-center text-lg cursor-pointer whitespace-nowrap hover:opacity-90 focus-within:opacity-90"
         onClick={() => setActive(active === item ? '' : item)}
         layout
       >
         {item}
         <span
           className={cn(
+            'transition-all ease-in-out group-hover:rotate-90 p-1',
             { 'rotate-90': active === item },
-          )}>
-          ˃
+          )}
+        >
+          <LucideChevronRight size={16} />
         </span>
+        <div className="absolute bottom-0 transition-all ease-in-out min-w-[0%] group-hover:min-w-[83.333%] h-0.5 bg-secondary" />
       </motion.button>
       {active !== null && (
         <motion.div
-          initial={{ opacity: 0, scale: 0.85, y: 10 }}
-          animate={{ opacity: 1, scale: 1, y: 0 }}
-          transition={transition}
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: 10 }}
         >
           {active === item && (
             <div className="absolute left-0 top-[calc(100%_+_1.7rem)] -translate-x-1/2">
               <motion.div
                 transition={transition}
                 layoutId="active" // layoutId ensures smooth animation
-                className="overflow-hidden rounded-2xl border border-black/[0.2] bg-white shadow-xl backdrop-blur-sm dark:border-white/[0.2] dark:bg-black"
+                className="overflow-hidden rounded-2xl border border-muted/[0.2] bg-muted shadow-xl backdrop-blur-sm"
               >
                 <motion.div
                   layout // layout ensures smooth animation
-                  className="flex h-full w-max flex-col gap-2 p-4 text-black dark:text-white"
+                  className="flex h-full w-max flex-col gap-2 p-4"
                 >
                   {children}
                 </motion.div>

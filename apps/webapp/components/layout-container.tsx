@@ -26,12 +26,12 @@ export function LayoutContainer({ children, projectHeader }: { children: React.R
         ref={containerRef}
       >
         {projectHeader ? (
-          <main className="flex flex-1 flex-col">
-            <header className="relative h-[calc(83vh-4rem)] bg-black/20 w-screen">
+          <main className="flex flex-col">
+            <header className="relative bg-black/20 w-screen py-40 min-h-[calc(83vh-4rem)]">
               {projectHeader}
             </header>
 
-            <div className="container py-32">
+            <div className="container py-24">
               {children}
             </div>
           </main>

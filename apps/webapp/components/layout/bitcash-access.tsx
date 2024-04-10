@@ -8,6 +8,7 @@ import { useErc20Balance } from '@/hooks/use-balance'
 import { useSession } from '@/hooks/use-session'
 import { cn } from '@/lib/utils'
 import { VariantProps } from 'class-variance-authority'
+import { LucideWallet } from 'lucide-react'
 import Link from 'next/link'
 import { useRouter, useSearchParams } from 'next/navigation'
 import { useEffect, useState } from 'react'
@@ -62,9 +63,9 @@ export function BitcashAccessButton({
 
   if (session && isLogin)
     return (
-      <Link href="#" shallow>
-        <Button>
-          {session.account} - ${balance.formatted}
+      <Link href="#">
+        <Button variant="secondary" className="flex gap-2 w-full">
+          <LucideWallet size={18} /> ${balance.formatted} on Wallet
         </Button>
       </Link>
     )
@@ -87,6 +88,7 @@ export function BitcashAccessButton({
         </Button>
       </DialogTrigger>
 
+      {/* @ts-ignore */}
       <DialogContent className="sm:max-w-[425px]">
         {!hideQr && isLogin && (
           <LoginDialogContent updateDialogContent={setDialogContent} />

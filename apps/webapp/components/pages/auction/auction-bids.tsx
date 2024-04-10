@@ -8,17 +8,17 @@ import {
   TableHeader,
   TableRow
 } from '@/components/ui/table'
-import { useGlobalData } from '@/hooks/use-global-store'
+import { useGlobalStore } from '@/hooks/use-global-store'
 import { ProjectWithAuction } from '@/lib/projects'
 import { cn } from '@/lib/utils'
 import { readContract, writeContract } from '@wagmi/core'
 import { erc20Abi } from 'abitype/abis'
 import { useEffect, useState } from 'react'
 import { TestnetEasyAuction, TestnetUSDCred } from 'smartsale-contracts'
+import { toSmallestUnit } from 'smartsale-lib'
 import { Address } from 'viem'
 import { useAccount, useWriteContract } from 'wagmi'
 import { wagmiConfig } from '../../providers'
-import { toSmallestUnit } from 'smartsale-lib'
 
 const queueStartElement =
   '0x0000000000000000000000000000000000000000000000000000000000000001'
@@ -34,7 +34,7 @@ export function AuctionBids({ project }: AuctionBidsProps) {
       errorMessage: ''
     })
   )
-  const { errorMessage, setGlobalError } = useGlobalData()
+  const { errorMessage, setGlobalError } = useGlobalStore()
 
   const handleSubmit = async () => {
     if (!address) return
@@ -144,10 +144,10 @@ export function AuctionBids({ project }: AuctionBidsProps) {
         <Table>
           <TableHeader>
             <TableRow>
-              <TableHead className="bg-gray-100 font-semibold text-black dark:bg-slate-950 dark:text-white">
+              <TableHead className="bg-muted font-semibold">
                 Max Price
               </TableHead>
-              <TableHead className="bg-gray-100 font-semibold text-black dark:bg-slate-950 dark:text-white">
+              <TableHead className="bg-muted font-semibold">
                 Bid Amount
               </TableHead>
             </TableRow>
@@ -157,7 +157,7 @@ export function AuctionBids({ project }: AuctionBidsProps) {
               <TableRow key={index}>
                 <TableCell
                   className={cn({
-                    'bg-gray-100 dark:bg-gray-900/50': index % 2
+                    'bg-accent/20': index % 2
                   })}
                 >
                   <CurrencyInput
@@ -170,7 +170,7 @@ export function AuctionBids({ project }: AuctionBidsProps) {
                 </TableCell>
                 <TableCell
                   className={cn({
-                    'bg-gray-100 dark:bg-gray-900/50': index % 2
+                    'bg-accent/20': index % 2
                   })}
                 >
                   <CurrencyInput
@@ -186,13 +186,14 @@ export function AuctionBids({ project }: AuctionBidsProps) {
           </TableBody>
         </Table>
 
-        <div className="flex flex-col justify-between px-5">
+        <div className="flex flex-col justify-between gap-6 px-5 pb-5">
           <Button
             disabled={
               !address || bidInputs.some(item => item.errorMessage !== '')
             }
             onClick={() => handleSubmit()}
             type="submit"
+            variant="secondary"
             size="lg"
           >
             Submit Bids

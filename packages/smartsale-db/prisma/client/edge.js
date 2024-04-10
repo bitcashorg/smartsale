@@ -203,7 +203,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "/home/andler/Development/monorepo/smartevm/packages/smartsale-db/prisma/client",
+      "value": "/Users/gaboesquivel/Code/smartevm/packages/smartsale-db/prisma/client",
       "fromEnvVar": null
     },
     "config": {
@@ -212,7 +212,7 @@ const config = {
     "binaryTargets": [
       {
         "fromEnvVar": null,
-        "value": "debian-openssl-1.1.x",
+        "value": "darwin",
         "native": true
       },
       {
@@ -232,7 +232,8 @@ const config = {
     "isCustomOutput": true
   },
   "relativeEnvPaths": {
-    "rootEnvPath": null
+    "rootEnvPath": null,
+    "schemaEnvPath": "../../.env"
   },
   "relativePath": "..",
   "clientVersion": "5.12.1",
