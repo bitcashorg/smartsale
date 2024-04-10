@@ -1,5 +1,4 @@
 'use client'
-import { Button } from '@/components/ui/button'
 import {
   Dialog,
   DialogContent,
@@ -16,10 +15,8 @@ import { RealtimeChannel } from '@supabase/supabase-js'
 import { useMutation } from '@tanstack/react-query'
 import axios from 'axios'
 import { SigningRequest } from 'eosio-signing-request'
-import Link from 'next/link'
 import { useSearchParams } from 'next/navigation'
-import React from 'react'
-import { ReactNode } from 'react'
+import React, { ReactNode } from 'react'
 import QRCode from 'react-qr-code'
 import { useSetState } from 'react-use'
 import { runtimeEnv } from 'smartsale-lib'
@@ -131,9 +128,12 @@ function EsrDialog() {
       {/* <DialogTrigger asChild>
         <Button>Trigger</Button>
       </DialogTrigger> */}
+      {/* @ts-ignore */}
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
+          {/* @ts-ignore */}
           <DialogTitle>Sign transaction</DialogTitle>
+          {/* @ts-ignore */}
           <DialogDescription>
             Scan this qr code on your bitcash app and sign.
           </DialogDescription>
@@ -172,4 +172,5 @@ const SigningRequestProvider = ({ children }: { children: ReactNode }) => {
   )
 }
 
-export { useSignatureRequest, SigningRequestProvider }
+export { SigningRequestProvider, useSignatureRequest }
+

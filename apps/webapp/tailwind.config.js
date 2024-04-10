@@ -21,47 +21,47 @@ module.exports = {
         md: '2rem'
       },
       screens: {
-        '2xl': '1400px'
-      }
+        '2xl': '1600px',
+      },
     },
     extend: {
-      fontFamily: {
-        sans: ['var(--font-geist-sans)'],
-        mono: ['var(--font-geist-mono)']
-      },
       colors: {
-        border: 'hsl(var(--border))',
-        input: 'hsl(var(--input))',
-        ring: 'hsl(var(--ring))',
-        background: 'hsl(var(--background))',
-        foreground: 'hsl(var(--foreground))',
+        border: 'hsla(var(--border))',
+        input: 'hsla(var(--input))',
+        ring: 'hsla(var(--ring))',
+        background: 'hsla(var(--background))',
+        foreground: 'hsla(var(--foreground))',
         primary: {
-          DEFAULT: 'hsl(var(--primary))',
-          foreground: 'hsl(var(--primary-foreground))'
+          DEFAULT: 'hsla(var(--primary))',
+          foreground: 'hsla(var(--primary-foreground))'
         },
         secondary: {
-          DEFAULT: 'hsl(var(--secondary))',
-          foreground: 'hsl(var(--secondary-foreground))'
+          DEFAULT: 'hsla(var(--secondary))',
+          foreground: 'hsla(var(--secondary-foreground))'
         },
         destructive: {
-          DEFAULT: 'hsl(var(--destructive))',
-          foreground: 'hsl(var(--destructive-foreground))'
+          DEFAULT: 'hsla(var(--destructive))',
+          foreground: 'hsla(var(--destructive-foreground))'
+        },
+        success: {
+          DEFAULT: 'hsla(var(--success))',
+          foreground: 'hsla(var(--success-foreground))'
         },
         muted: {
-          DEFAULT: 'hsl(var(--muted))',
-          foreground: 'hsl(var(--muted-foreground))'
+          DEFAULT: 'hsla(var(--muted))',
+          foreground: 'hsla(var(--muted-foreground))'
         },
         accent: {
-          DEFAULT: 'hsl(var(--accent))',
-          foreground: 'hsl(var(--accent-foreground))'
+          DEFAULT: 'hsla(var(--accent))',
+          foreground: 'hsla(var(--accent-foreground))'
         },
         popover: {
-          DEFAULT: 'hsl(var(--popover))',
-          foreground: 'hsl(var(--popover-foreground))'
+          DEFAULT: 'hsla(var(--popover))',
+          foreground: 'hsla(var(--popover-foreground))'
         },
         card: {
-          DEFAULT: 'hsl(var(--card))',
-          foreground: 'hsl(var(--card-foreground))'
+          DEFAULT: 'hsla(var(--card))',
+          foreground: 'hsla(var(--card-foreground))'
         }
       },
       borderRadius: {
@@ -123,7 +123,7 @@ module.exports = {
       },
     }
   },
-  plugins: [require('tailwindcss-animate'), require('@tailwindcss/typography'), addVariablesForColors, backgroundGrid]
+  plugins: [require('tailwindcss-animate'), require('@tailwindcss/typography'), addVariablesForColors]
 }
 
 // This plugin adds each Tailwind color as a global CSS variable, e.g. var(--gray-200).
@@ -136,27 +136,4 @@ function addVariablesForColors({ addBase, theme }) {
   addBase({
     ":root": newVars,
   });
-}
-
-function backgroundGrid({ matchUtilities, theme }) {
-  matchUtilities(
-    {
-      "bg-grid": (value) => ({
-        backgroundImage: `url("${svgToDataUri(
-          `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="${value}"><path d="M0 .5H31.5V32"/></svg>`
-        )}")`,
-      }),
-      "bg-grid-small": (value) => ({
-        backgroundImage: `url("${svgToDataUri(
-          `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="8" height="8" fill="none" stroke="${value}"><path d="M0 .5H31.5V32"/></svg>`
-        )}")`,
-      }),
-      "bg-dot": (value) => ({
-        backgroundImage: `url("${svgToDataUri(
-          `<svg opacity="0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="none"><circle fill="${value}" id="pattern-circle" cx="10" cy="10" r="1.6257413380501518"></circle></svg>`
-        )}")`,
-      }),
-    },
-    { values: flattenColorPalette(theme("backgroundColor")), type: "color" }
-  );
 }

@@ -10,7 +10,7 @@ import { sepolia } from "wagmi/chains";
 const queryClient = new QueryClient();
 
 export const wagmiConfig = getDefaultConfig({
-  appName: "bitLauncher",
+  appName: "Bitlauncher",
   projectId: "YOUR_PROJECT_ID",
   chains: [{ ...eosEvmTestnet, fees: undefined }, sepolia],
 });

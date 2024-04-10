@@ -1,7 +1,7 @@
 {
   "name": "smartsale",
   "version": "1.0.0",
-  "description": "SmartSale Monorepo",
+  "description": "bitlauncher Monorepo",
   "author": "bitcar.og",
   "license": "MIT",
   "private": true,
@@ -13,12 +13,14 @@
     "clean:node_modules": "find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +"
   },
   "devDependencies": {
+    "@types/bn.js": "^5.1.5",
     "@types/node": "latest",
     "eslint": "^8.44.0",
+    "postcss-import": "^16.1.0",
+    "postcss-nesting": "^12.1.1",
     "prettier": "^3.2.5",
     "prisma": "latest",
-    "turbo": "^1.11.2",
-    "@types/bn.js": "^5.1.5"
+    "turbo": "^1.11.2"
   },
   "workspaces": {
     "packages": [
@@ -35,7 +37,7 @@
       "**/@prisma/client/**"
     ]
   },
-  "packageManager": "bun@1.1.0",
+  "packageManager": "bun@1.1.3",
   "dependencies": {
     "-": "^0.0.1",
     "@types/react": "latest",

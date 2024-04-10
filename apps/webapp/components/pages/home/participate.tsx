@@ -1,7 +1,9 @@
 'use client'
 
 import { BitcashAccessButton } from '@/components/layout/bitcash-access'
-import { Button } from '@/components/ui/button'
+import { buttonVariants } from '@/components/ui/button'
+import { IconDownRightArrow } from '@/components/ui/icons'
+import { cn } from '@/lib/utils'
 import { AnimatePresence, motion, useInView } from 'framer-motion'
 import Link from 'next/link'
 import React from 'react'
@@ -36,11 +38,13 @@ export default function Participate() {
 
   return (
     <section
-      className="align-center flex flex-col gap-16 pb-10 pt-20"
+      className="align-center flex flex-col pb-10"
       ref={stepsInfoRef}
     >
-      <AnimatePresence>
-        <h2 className="min-h-[40px] text-center text-2xl font-semibold md:text-3xl">
+      <h2
+        className="text-3xl leading-loose font-bold pt-6 pb-10 w-full text-center"
+      >
+        <AnimatePresence>
           {showStepsInfo && (
             <motion.span
               initial={{ opacity: 0, y: 20 }}
@@ -52,72 +56,80 @@ export default function Participate() {
               {textContent.stepsInfo}
             </motion.span>
           )}
-        </h2>
+        </AnimatePresence>
+      </h2>
 
-        <div className="container flex min-h-[320px] flex-col md:flex-row md:items-center md:justify-between">
+      <div
+        key="steps-info-title"
+        className="flex gap-14 flex-col items-center md:items-stretch md:flex-row md:justify-between"
+      >
+        <AnimatePresence>
           {textContent.steps.map((step, index) => (
             <motion.div
-              key={index}
-              className="mb-8 mt-4 flex flex-col items-center rounded-md bg-white/40 p-6 shadow-md backdrop-blur-xl dark:bg-black/40 dark:shadow-lg md:ml-4 md:mt-0 md:w-1/3 md:items-start"
+              key={`${index}__step-content`}
+              className="w-full min-h-[260px] max-w-[450px] flex rounded-3xl flex-col items-center justify-between bg-white/90 px-8 py-9 shadow-md backdrop-blur-xl md:w-1/3 md:items-start text-black/90"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: 20 }}
               transition={{ delay: 0.42 * (index + 1) }}
             >
-              <h2 className="align-items flex h-10 text-center text-2xl font-semibold md:text-left">
-                <step.icon className="mr-2 size-6 text-gray-400" />
+              <h3 className="w-full flex h-10 text-left text-3xl font-bold md:text-left whitespace-pre-line">
                 {step.title}
-              </h2>
-              <p className="h-20 py-3 text-center text-gray-500 dark:text-gray-300 md:text-left">
-                {step.description}
-              </p>
-              {step.buttonText && step.title !== 'Complete KYC' ? (
-                <Link href={step.href} shallow>
-                  <Button variant="tertiary" size="lg">
-                    {step.buttonText}
-                  </Button>
-                </Link>
-              ) : (
-                <BitcashAccessButton
-                  buttonLabel={step.buttonText}
-                  buttonStyle={{ size: 'lg', variant: 'tertiary' }}
-                  defaultContent="register"
-                />
-              )}
+              </h3>
+              <div className="flex w-full justify-between gap-4 items-center">
+                <p className="py-3 text-sm w-[calc(100%-72px)]">
+                  {step.description}
+                </p>
+                {!step.title.includes('Complete KYC') ? (
+                  <Link
+                    href={step.href}
+                    className={cn(
+                      buttonVariants({
+                        variant: 'accent',
+                        size: 'icon'
+                      }),
+                      "relative text-md px-0 py-0 size-14 font-bold rounded-full hover:[&svg]:fill-card group"
+                    )}
+                    prefetch
+                  >
+                    <IconDownRightArrow className="transition-all [&_path]:stroke-white size-4 group-hover:-rotate-[45deg] group-focus-within:-rotate-[45deg]" />
+                  </Link>
+                ) : (
+                  <BitcashAccessButton
+                    buttonLabel="down-right-icon"
+                    buttonStyle={{ size: 'icon', variant: 'accent' }}
+                    defaultContent="register"
+                  />
+                )}
+              </div>
             </motion.div>
           ))}
-        </div>
-      </AnimatePresence>
+        </AnimatePresence>
+      </div>
     </section>
   )
 }
 
 const textContent = {
-  // title: 'Join The AI and Web3 Revolution With bitLauncher.',
+  // title: 'Join The AI and Web3 Revolution With Bitlauncher.',
   stepsInfo:
-    'Only 3 steps are needed for you to start enjoying all the advantages',
+    'Only 3 Steps Needed',
   steps: [
     {
-      icon: FileEditIcon,
-      title: 'Complete KYC',
+      title: 'Sign Up And\nComplete KYC',
       description: 'Complete a Bitcash KYC to ensure your participation.',
-      buttonText: 'Register',
       href: 'https://app.bitcash.org/?share=JVnL7qzrU'
     },
     {
-      icon: WalletIcon,
-      title: 'Get USD Credits',
+      title: 'Get USD\nCredits',
       description:
         'Deposit USDT on any chain to get USD Credit Tokens on EOS EVM',
-      buttonText: 'Get Credits',
-      href: '/wallet'
+      href: '#'
     },
     {
-      icon: HeartHandshakeIcon,
-      title: 'Place Bids',
+      title: 'Place\nBids',
       description:
         'Select a project from the Auctions list and place your bids.',
-      buttonText: 'MBOTS Auction',
       href: '/masterbots/auction'
     }
   ]

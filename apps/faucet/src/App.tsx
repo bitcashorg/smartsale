@@ -9,7 +9,7 @@ export default function Component() {
     <div className="min-h-screen bg-[#f0f0f0]">
       <nav className="flex items-center justify-between p-6 bg-white shadow-md">
         <div className="flex items-center">
-          <span className="text-xl font-semibold">SmartSale Faucet</span>
+          <span className="text-xl font-semibold">bitlauncher Faucet</span>
         </div>
         <div className="flex">
           <div className="flex items-center justify-center h-10 pr-5 font-bold">

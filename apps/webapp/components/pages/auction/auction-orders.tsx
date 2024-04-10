@@ -8,12 +8,12 @@ import {
   TableRow
 } from '@/components/ui/table'
 import { supabase } from '@/lib/supabase'
-import { formatAddress } from 'smartsale-lib'
 import BN from 'bn.js'
 import { format } from 'date-fns'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { TestnetEasyAuction } from 'smartsale-contracts'
+import { formatAddress } from 'smartsale-lib'
 import { useAccount, useReadContract } from 'wagmi'
 
 export function AuctionOrders() {

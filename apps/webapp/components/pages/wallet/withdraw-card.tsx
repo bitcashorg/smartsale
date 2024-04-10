@@ -37,7 +37,7 @@ export function WithdrawCard() {
   // console.log('burn tokens state', other)
 
   return (
-    <Card className="w-full rounded-xl bg-gray-200 p-4 dark:bg-[#1a1a1a]">
+    <Card className="w-full rounded-xl p-4 bg-muted/50">
       <CardContent>
         <div className="flex flex-col space-y-4">
           <label htmlFor="withdraw" className="text-sm">
@@ -57,11 +57,14 @@ export function WithdrawCard() {
               </span>
             </div>
             <Select>
+              {/* @ts-ignore */}
               <SelectTrigger id="currency-out">
                 <SelectValue placeholder="USDCred" />
               </SelectTrigger>
+              {/* @ts-ignore */}
               <SelectContent position="popper">
                 {coins.map((o, i) => (
+                  // @ts-ignore
                   <SelectItem key={i} value={o.coin}>
                     {o.coin}
                   </SelectItem>

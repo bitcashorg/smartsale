@@ -1,5 +1,5 @@
 const securityTipsClassNames: Record<string, string> = {
-  container: 'flex flex-col gap-10 py-24 w-full max-w-screen-lg',
+  container: 'flex flex-col gap-10 py-24 w-full mx-auto max-w-screen-lg',
   h1: 'text-3xl md:text-6xl font-bold',
   h2: 'text-2xl md:text-4xl font-bold',
   p: 'text-base md:text-lg'
@@ -9,10 +9,10 @@ export default function SecurityTips() {
   return (
     <div className={securityTipsClassNames.container}>
       <h1 className={securityTipsClassNames.h1}>
-        Security Recommendations for bitLauncher Participants
+        Security Recommendations for Bitlauncher Participants
       </h1>
       <p className={securityTipsClassNames.p}>
-        Participating in auctions on bitLauncher, a fork of Gnosis, requires
+        Participating in auctions on Bitlauncher, a fork of Gnosis, requires
         vigilance and awareness of various security threats. Here are some
         crucial tips to help keep your investments safe:
       </p>
@@ -22,9 +22,9 @@ export default function SecurityTips() {
       </h2>
       <p className={securityTipsClassNames.p}>
         Phishing is a common technique used by attackers to gain access to your
-        personal information. Always verify the URL of the bitLauncher and
+        personal information. Always verify the URL of the Bitlauncher and
         ensure it is the legitimate site before connecting your MetaMask wallet.
-        Be cautious of emails or websites impersonating bitLauncher.
+        Be cautious of emails or websites impersonating Bitlauncher.
       </p>
 
       <h2 className={securityTipsClassNames.h2}>2. MetaMask Security</h2>
@@ -39,7 +39,7 @@ export default function SecurityTips() {
       </h2>
       <p className={securityTipsClassNames.p}>
         Be wary of individuals on platforms like Discord and social media who
-        claim to be representatives of bitLauncher. Official staff will never
+        claim to be representatives of Bitlauncher. Official staff will never
         ask for your private keys or wallet credentials.
       </p>
 
@@ -65,7 +65,7 @@ export default function SecurityTips() {
         6. Stay Informed and Updated
       </h2>
       <p className={securityTipsClassNames.p}>
-        Follow only the official bitLauncher channels for updates and
+        Follow only the official Bitlauncher channels for updates and
         information. Do not trust unverified sources.
       </p>
 
@@ -74,12 +74,14 @@ export default function SecurityTips() {
       </h2>
       <p className={securityTipsClassNames.p}>
         If you encounter any suspicious activity or believe you are a victim of
-        a scam, contact the official bitLauncher support immediately.
+        a scam, contact the official Bitlauncher support immediately.
       </p>
 
       <p className={securityTipsClassNames.p}>
         Stay vigilant and always prioritize your digital security!
       </p>
+
+      <hr className="border-gray-600/80 mt-24" />
     </div>
   )
 }
