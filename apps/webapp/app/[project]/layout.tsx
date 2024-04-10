@@ -44,11 +44,6 @@ export const metadata: MetadataCallback = (_metadata) => {
 
 export default function ProjectLayout({ children, params, ...props }: RootLayoutProps) {
   const project = projects.find(p => p.slug === params.project)
-  // console.log('pathname', pathname)
-  // header.forEach((value, key) => {
-  //   console.log('key', key)
-  //   console.log('value', value)
-  // })
 
   return (
     <LayoutContainer
