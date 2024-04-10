@@ -39,7 +39,7 @@ export function Header({ className, containerRef }: { className?: string, contai
         if (
           (direction === 1 && scrollYProgress.get() === 1) ||
           current === 1 ||
-          direction <= 0
+          direction <= 0.00
         ) {
           setVisible(true)
         } else {
@@ -153,7 +153,7 @@ export function Header({ className, containerRef }: { className?: string, contai
               </MenuItem>
             </div>
 
-            <div className="inline-flex gap-5">
+            <div className="inline-flex items-center gap-5">
               <Link
                 href="https://discord.gg/a4gwhT9G"
                 target='_blank'

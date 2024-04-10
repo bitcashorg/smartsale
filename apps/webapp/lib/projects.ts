@@ -252,16 +252,15 @@ export const projects: Project[] = [
     id: 3,
     title: 'WizartWorld',
     slug: 'wizartworld',
-    pitch: 'Become a master on design with the power of AI and mint them as NFTs.',
+    pitch: 'Unleash The Master Artist In You - Generate Ai Art & NFTs.',
     fundraiseGoal: '$200,000',
     maxAllocation: '$10,000',
     heroImage: '/images/projects/wizartworld.png',
     thumbnailImage: '/images/projects/wizartworld.png',
-    badgeText: 'IN PREPARATION',
+    badgeText: 'FUTURE',
     linkPath: '/wizartworld',
     token: TestnetMBOTSPL,
     auctionId: 9,
-    registrationOpen: true,
     twitterUsername: 'wizartworld',
     telegramGroup: 'wizartworld',
     discordServer: 'a4gwhT9G',
@@ -275,7 +274,7 @@ export const projects: Project[] = [
             'Equitable Token System: Tokenomics inspired by equity models to ensure fairness for all stakeholders.',
             'Fair Distribution Blockchain: Creating a non-profit L1 blockchain for fair token distribution to every individual.',
             'AI-Focused Launchpad: A dedicated platform offering comprehensive support to AI startups.',
-            'Open-Source and Collaborative: Fostering innovation through an open-source community and transparent practices.',
+            'Open-Source and Collaborative: Fostering innovation through an open-source community and transparen-t practices.',
             'Rigorous Security Standards: Implementing top-tier KYC/AML policies and advanced security for user protection.',
             'Global Empowerment: Committed to empowering global users through transformative technological solutions.',
             'Enhancing Human Connections: Prioritizing genuine human interaction in the anticipated AI-dominated future.',
@@ -352,7 +351,7 @@ export const projects: Project[] = [
         ]
       },
       tokenomics: {
-        title: 'Tokenomics of Bitcash: Architectonic Value and Growth',
+        title: 'Tokenomics of Bitcash',
         content: [
           [
             'Dual Token System: Utilizes utility tokens for transactions and services within Bitcash and governance tokens for voting and decision-making by contributors and stakeholders.',

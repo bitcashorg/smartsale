@@ -27,8 +27,8 @@ export function Upcoming() {
             {textContent.eyebrow}
           </motion.sub>
           <motion.span
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             transition={{ delay: 0.24 }}
             className="text-7xl lg:text-8xl font-bold w-full"
             key="upcoming-auctions-title"

@@ -27,7 +27,7 @@ export function LayoutContainer({ children, projectHeader }: { children: React.R
       >
         {projectHeader ? (
           <main className="flex flex-col">
-            <header className="relative bg-black/20 w-screen py-40 min-h-[calc(83vh-4rem)]">
+            <header className="relative bg-muted/10 w-screen py-40 min-h-[calc(83vh-4rem)] backdrop-blur-[2.5px]">
               {projectHeader}
             </header>
 

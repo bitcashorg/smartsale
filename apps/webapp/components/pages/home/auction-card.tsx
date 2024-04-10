@@ -20,8 +20,8 @@ export function AuctionCard(props: Project) {
     telegramGroup
   } = props
 
-  const isAuctionRestricted = badgeText.match(/(AUCTION CLOSED|IN PREPARATION)/)
-  const isAuctionPreparation = badgeText.match(/IN PREPARATION/)
+  const isAuctionRestricted = badgeText.match(/(AUCTION CLOSED|FUTURE|COMING SOON)/)
+  const isFutureOrComingAuction = badgeText.match(/(FUTURE|COMING SOON)/)
   const buttonLinkClassName = cn(
     buttonVariants({
       variant: 'outline',
@@ -33,12 +33,12 @@ export function AuctionCard(props: Project) {
   return (
     <Link
       id={`hot-auction-${title.toLowerCase().replace(/\s/g, '-')}`}
-      href={isAuctionPreparation ? `#` : linkPath}
-      className={cn('size-full max-w-[450px] mx-auto', { 'cursor-not-allowed': isAuctionPreparation })}
+      href={isFutureOrComingAuction ? `#` : linkPath}
+      className={cn('size-full max-w-[450px] mx-auto', { 'cursor-not-allowed': isFutureOrComingAuction })}
       prefetch
     >
       <motion.div
-        className="group/card size-full flex flex-col h-full justify-between rounded-xl border border-transparent backdrop-blur-xl bg-card/60 shadow-accent/[0.02] hover:shadow-accent/[0.04] hover:shadow-xl translate-z-0"
+        className="group/card size-full flex flex-col h-full justify-betw-een rounded-xl border border-transparent backdrop-blur-xl bg-card/60 shadow-accent/[0.02] hover:shadow-accent/[0.04] hover:shadow-xl translate-z-0"
         whileHover={{ y: -16 }}
         whileTap={{ y: -16 }}
         tabIndex={-1}
@@ -115,6 +115,7 @@ export function AuctionCard(props: Project) {
                 <IconTelegram className="size-7 fill-accent" />
               </Link>
             </div>
+            {/* TODO: Ask about auction availability */}
             {!isAuctionRestricted && (
               <Link
                 href={`${linkPath}/auction`}
@@ -131,13 +132,13 @@ export function AuctionCard(props: Project) {
                 <IconDownRightArrow className="transition-all size-4 group-hover:-rotate-[45deg] group-focus-within:-rotate-[45deg]" />
               </Link>
             )}
-            {isAuctionPreparation && (
+            {/* {isFutureOrComingAuction && (
               <p
                 className="absolute bottom-0 left-0 text-center hover:text-link focus-within:text-link w-full rounded-xl px-4 py-1 text-sm font-normal bg-destructive rounded-t-none"
               >
                 This auction is currently unavailable. Check out later!
               </p>
-            )}
+            )} */}
           </div>
         </div>
       </motion.div>
