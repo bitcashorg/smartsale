@@ -19,7 +19,6 @@ import { LucideChevronRight } from 'lucide-react'
 
 export function Header({ className, containerRef }: { className?: string, containerRef: React.RefObject<HTMLDivElement> }) {
   const { session } = useSession()
-  console.log('session', session)
   const { scrollYProgress } = useScroll({
     container: containerRef
   })
@@ -51,6 +50,14 @@ export function Header({ className, containerRef }: { className?: string, contai
   })
 
   React.useEffect(() => {
+    scrollYProgress.on('change', () => {
+      const yProgress = scrollYProgress.get()
+
+      setLargeHeader(yProgress <= 0.05)
+    })
+  }, [scrollYProgress])
+
+  React.useEffect(() => {
     const handleClick = (e: MouseEvent) => {
       const menuDropdownContainerNode = document.getElementById(activeMenu)
       if (
@@ -63,12 +70,6 @@ export function Header({ className, containerRef }: { className?: string, contai
     }
 
     document.addEventListener('click', handleClick)
-
-    scrollYProgress.on('change', () => {
-      const yProgress = scrollYProgress.get()
-
-      setLargeHeader(yProgress <= 0.1)
-    })
 
     return () => {
       document.removeEventListener('click', handleClick)
