@@ -7,7 +7,10 @@ import { Metadata } from 'next'
 import React from 'react'
 
 export const metadata: Metadata = {
-  title: 'bitlauncher',
+  title: {
+    absolute: 'bitlauncher',
+    template: '%s | bitlauncher',
+  },
   description: 'Invest in the intelligent future and join the Ai/Web3 revolution now!',
   metadataBase: new URL('https://bitlauncher.ai'),
   alternates: {

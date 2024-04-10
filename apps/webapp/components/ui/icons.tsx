@@ -506,8 +506,8 @@ function IconDownRightArrow({
       className={cn('size-4', className)}
       {...props}
     >
-      <path d="M16.9714 2.14282L16.9714 17.1999L1.91432 17.1999" stroke="black" stroke-width="2.7" stroke-linecap="round" />
-      <path d="M15.6429 16.1059L2.03985 2.5029" stroke="black" stroke-width="2.7" stroke-linecap="round" />
+      <path d="M16.9714 2.14282L16.9714 17.1999L1.91432 17.1999" stroke="black" strokeWidth="2.7" strokeLinecap="round" />
+      <path d="M15.6429 16.1059L2.03985 2.5029" stroke="black" strokeWidth="2.7" strokeLinecap="round" />
     </svg>
   )
 }
