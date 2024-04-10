@@ -1,7 +1,7 @@
 'use client'
 import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3'
 import { TooltipProvider } from '@/components/ui/tooltip'
-import { GlobalDataProvider } from '@/hooks/use-global-data'
+import { GlobalDataProvider } from '@/hooks/use-global-store'
 import { SessionProvider } from '@/hooks/use-session'
 import { RainbowKitProvider, getDefaultConfig } from '@rainbow-me/rainbowkit'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'

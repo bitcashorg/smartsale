@@ -9,7 +9,7 @@ import {
   DialogContent,
   Dialog
 } from '@/components/ui/dialog'
-import { useGlobalData } from '@/hooks/use-global-data'
+import { useGlobalData } from '@/hooks/use-global-store'
 
 export function ErrorModal() {
   const { errorMessage, setGlobalError } = useGlobalData()

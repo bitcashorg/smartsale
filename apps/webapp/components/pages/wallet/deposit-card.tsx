@@ -23,7 +23,7 @@ import { smartsaleEnv } from 'smartsale-env'
 import { parseUnits } from 'viem'
 import { useAccount, useSwitchChain, useWriteContract } from 'wagmi'
 import { useSignatureRequest } from '@/components/dialogs/esr-dialog'
-import { useGlobalData } from '@/hooks/use-global-data'
+import { useGlobalData } from '@/hooks/use-global-store'
 import { Input } from '@/components/ui/input'
 
 const usdtMap = new Map<string, TokenContractData>()

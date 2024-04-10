@@ -8,7 +8,7 @@ import {
   TableHeader,
   TableRow
 } from '@/components/ui/table'
-import { useGlobalData } from '@/hooks/use-global-data'
+import { useGlobalData } from '@/hooks/use-global-store'
 import { ProjectWithAuction } from '@/lib/projects'
 import { cn } from '@/lib/utils'
 import { readContract, writeContract } from '@wagmi/core'
