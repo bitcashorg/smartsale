@@ -33,6 +33,12 @@ export function Header({ className, containerRef }: { className?: string, contai
       if (!domLoaded) setDomLoaded(true)
 
       let direction = current! - scrollYProgress.getPrevious()!
+      const isLargeHeader = scrollYProgress.get() <= 0.05
+
+      if (isLargeHeader !== largeHeader) {
+        setLargeHeader(isLargeHeader)
+      }
+
       if (scrollYProgress.get() <= 0.05) {
         setVisible(true)
       } else {
@@ -48,14 +54,6 @@ export function Header({ className, containerRef }: { className?: string, contai
       }
     }
   })
-
-  React.useEffect(() => {
-    scrollYProgress.on('change', () => {
-      const yProgress = scrollYProgress.get()
-
-      setLargeHeader(yProgress <= 0.05)
-    })
-  }, [scrollYProgress])
 
   React.useEffect(() => {
     const handleClick = (e: MouseEvent) => {

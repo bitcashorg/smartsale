@@ -72,7 +72,7 @@ export function AuctionCard(props: Project) {
             {pitch}
           </p>
         </div>
-        <div className="w-full flex flex-col px-4 py-6 lg:px-9 lg:py-8 items-center justify-between mb-2">
+        <div className="w-full flex flex-col px-4 py-6 lg:px-9 lg:py-8 items-center justify-between mb-2 mt-auto">
           <ul
             className="mt-8 mb-10 flex w-full flex-col gap-2"
           >

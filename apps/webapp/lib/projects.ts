@@ -108,7 +108,7 @@ export const projects: Project[] = [
         ]
       },
       tokenomics: {
-        title: 'Tokenomics of Bitcash: Architectonic Value and Growth',
+        title: 'Tokenomics of Bitcash',
         content: [
           [
             'Dual Token System: Utilizes utility tokens for transactions and services within Bitcash and governance tokens for voting and decision-making by contributors and stakeholders.',
