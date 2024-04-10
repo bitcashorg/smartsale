@@ -24,20 +24,26 @@ export async function generateShortLink(path: string) {
 }
 
 export async function getShortLink(key: string) {
-  const resolved: {
-    shortLink: string
-    qrCode: string
-    key: string
-  } = await axios.get(`https://api.dub.co/links/info?key=${key}`, {
-    headers: {
-      Authorization: `Bearer ${process.env.DUB_API_KEY}`,
-      'Content-Type': 'application/json',
-    }
-  }).then(res => res.data)
+  try {
+    const resolved: {
+      shortLink: string
+      qrCode: string
+      key: string
+    } = await axios.get(`https://api.dub.co/links/info?key=${key}`, {
+      headers: {
+        Authorization: `Bearer ${process.env.DUB_API_KEY}`,
+        'Content-Type': 'application/json',
+      }
+    }).then(res => res.data);
 
-  return {
-    key: resolved.key,
-    shortLink: resolved.shortLink,
-    qrCode: resolved.qrCode
+    return {
+      key: resolved.key,
+      shortLink: resolved.shortLink,
+      qrCode: resolved.qrCode
+    };
+  } catch (error) {
+    console.error('Failed to retrieve short link:', error);
+    return null;
   }
+}
 }
