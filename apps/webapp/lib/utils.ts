@@ -24,6 +24,15 @@ export function handleAxiosError(error: unknown) {
   }
 }
 
+export function scrollToElement(element: HTMLElement | null) {
+  if (!element) return
+  element.scrollIntoView({
+    behavior: 'smooth',
+    block: 'start',
+    inline: 'nearest'
+  })
+}
+
 const iconMotionProps: MotionProps & React.ComponentProps<'span'> = {
   initial: { opacity: 0, scale: 0 },
   animate: { opacity: 1, scale: 1 },

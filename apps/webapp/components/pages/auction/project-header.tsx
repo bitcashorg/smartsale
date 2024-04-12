@@ -6,9 +6,9 @@ import { Countdown } from "@/components/pages/auction/countdown"
 import { Button, buttonVariants } from "@/components/ui/button"
 import { IconDiscord, IconTelegram, IconTwitterX } from "@/components/ui/icons"
 import { Project, ProjectWithAuction } from "@/lib/projects"
-import { cn, motionProps } from "@/lib/utils"
+import { cn, motionProps, scrollToElement } from "@/lib/utils"
 import { AnimatePresence, motion } from 'framer-motion'
-import { LucideCheck, LucideLoader2, LucideShare, LucideX } from "lucide-react"
+import { LucideCheck, LucideChevronDown, LucideLoader2, LucideShare, LucideX } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
@@ -249,6 +249,17 @@ export function ProjectHeader({ projectData }: { projectData: Project }) {
           )}
         </motion.div>
 
+        <Button
+          onClick={event => {
+            scrollToElement(document.getElementById('project-details'))
+            event.currentTarget.blur()
+          }}
+          variant="ghost"
+          className="transition-transform underline-offset-4 absolute -bottom-20 inline-flex gap-4 font-semibold hover:-translate-y-1 focus-within:-translate-y-1 hover:underline focus-within:underline"
+        >
+          Read more
+          <LucideChevronDown size={24} className="stroke-white animate-bounce" />
+        </Button>
       </div>
     </section>
   )

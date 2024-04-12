@@ -18,6 +18,7 @@ export default function ProjectPage({
 
   return (
     <>
+      <div id="project-details" />
       {/* // ! ========= CONTENT ORDER MUST BE AS: 1. highlights, 2. product, 3. problem, 4. solution, 5. bussinessModel and 6. tokenomics ========= */}
       {projectContentObjectKeys.map((key, index) => {
         const pcKey = key as keyof typeof projectContent
