@@ -1,12 +1,12 @@
 import { LayoutContainer } from '@/components/layout-container'
 import { ProjectHeader } from '@/components/pages/auction/project-header'
 import { projects } from '@/lib/projects'
+import { Metadata } from 'next'
 import React, { Suspense } from 'react'
 
-export const metadata: (_metadata: Promise<Metadata>) => Promise<Metadata> = async (_metadata) => {
-  const resolvedMetadata = await _metadata
-
-  return resolvedMetadata
+export const metadata: Metadata = {
+  title: 'bitcash | bitlauncher',
+  description: 'Invest in the intelligent future and join the Ai/Web3 revolution now!',
 }
 
 export default function ProjectLayout({ children, params, ...props }: RootLayoutProps) {

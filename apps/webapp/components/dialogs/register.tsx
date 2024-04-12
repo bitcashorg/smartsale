@@ -39,7 +39,7 @@ export function RegisterDialogContent({
     <>
       <DialogHeader>
         {/* @ts-ignore */}
-        <DialogTitle>Register to bitcash Wallet</DialogTitle>
+        <DialogTitle>Register to Bitcash Wallet</DialogTitle>
         {/* @ts-ignore */}
         <DialogDescription>
           Scan this QR code with your smartphone camera or a QR reader to create
@@ -69,7 +69,7 @@ export function RegisterDialogContent({
       </div>
       <DialogFooter className="flex !flex-col gap-4 border-t border-t-gray-300 pt-2 dark:border-t-gray-800 sm:justify-center">
         <p className="w-full text-center text-sm">
-          On your phone you can also register at <b>bitca.sh/reg</b>!
+          On your phone you can also register at <b>bitcash.to/reg</b>!
         </p>
         <Button
           variant="link"

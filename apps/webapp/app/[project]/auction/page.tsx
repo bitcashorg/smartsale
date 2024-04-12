@@ -4,20 +4,26 @@ import { ClaimTokens } from '@/components/pages/auction/claim-tokens'
 import { RegisterAddress } from '@/components/pages/auction/register-address'
 import { Tabs } from '@/components/ui/tabs'
 import { ProjectWithAuction, projects } from '@/lib/projects'
+import { Metadata } from 'next'
 import { redirect } from 'next/navigation'
 import React from 'react'
+
+export const metadata: Metadata = {
+  title: 'bitcash auction | bitlauncher',
+  description: 'Invest in the intelligent future and join the Ai/Web3 revolution now!',
+}
 
 const auctionPageClassNames = {
   tabCard:
     'border border-primary/50 bg-card w-full h-[512px] overflow-y-auto scrollbar rounded-lg p-0 md:p-10'
 }
 
-export default function AuctionPage({
+export default async function AuctionPage({
   params
 }: {
   params: { project: string }
 }) {
-  const p = projects.find(p => p.slug == params.project)
+  const p = await new Promise((resolve) => resolve(projects.find(p => p.slug == params.project))).then((p) => p as ProjectWithAuction)
   if (!p || (!p.auctionId && !p.registrationOpen)) redirect('/')
   const project = p as ProjectWithAuction
 

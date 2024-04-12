@@ -89,7 +89,7 @@ export function BitcashAccessButton({
       </DialogTrigger>
 
       {/* @ts-ignore */}
-      <DialogContent className="sm:max-w-[425px]">
+      <DialogContent className="w-full sm:max-w-[430px] box-content">
         {!hideQr && isLogin && (
           <LoginDialogContent updateDialogContent={setDialogContent} />
         )}

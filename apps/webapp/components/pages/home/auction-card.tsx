@@ -1,9 +1,9 @@
 import { buttonVariants } from '@/components/ui/button'
 import { IconDiscord, IconDownRightArrow, IconTelegram, IconTwitterX } from '@/components/ui/icons'
+import { LazyImage } from '@/components/ui/lazy-image'
 import { Project } from '@/lib/projects'
 import { cn } from '@/lib/utils'
 import { motion } from 'framer-motion'
-import Image from 'next/image'
 import Link from 'next/link'
 
 export function AuctionCard(props: Project) {
@@ -36,6 +36,7 @@ export function AuctionCard(props: Project) {
       href={isFutureOrComingAuction ? `#` : linkPath}
       className={cn('size-full max-w-[450px] mx-auto', { 'cursor-not-allowed': isFutureOrComingAuction })}
       prefetch
+      scroll={false}
     >
       <motion.div
         className="group/card size-full flex flex-col h-full justify-betw-een rounded-xl border border-transparent backdrop-blur-xl bg-card/60 shadow-accent/[0.02] hover:shadow-accent/[0.04] hover:shadow-xl translate-z-0"
@@ -46,7 +47,7 @@ export function AuctionCard(props: Project) {
         <figure
           className="relative w-full"
         >
-          <Image
+          <LazyImage
             src={thumbnailImage}
             height="1000"
             width="1000"
@@ -72,7 +73,7 @@ export function AuctionCard(props: Project) {
             {pitch}
           </p>
         </div>
-        <div className="w-full flex flex-col px-4 py-6 lg:px-9 lg:py-8 items-center justify-between mb-2">
+        <div className="w-full flex flex-col px-4 py-6 xl:px-9 xl:py-8 items-center justify-between mb-2 mt-auto">
           <ul
             className="mt-8 mb-10 flex w-full flex-col gap-2"
           >
@@ -81,12 +82,12 @@ export function AuctionCard(props: Project) {
               <b>{fundraiseGoal}</b>
             </li>
             <li className="flex w-full justify-between py-2 px-4 bg-muted rounded-full">
-              <span className="opacity-70">Max allocation</span>
+              <span className="opacity-70">Max Allocation</span>
               <b>{maxAllocation}</b>
             </li>
           </ul>
           <div className="flex w-full justify-between items-center mb-3">
-            <div className="flex align-center justify-center items-center gap-6">
+            <div className="flex align-center justify-center items-center gap-3 md:gap-4 xl:gap-6">
               <Link
                 href={`https://twitter.com/${twitterUsername}`}
                 className={buttonLinkClassName.replace('p-3.5', 'p-[17px]')}
@@ -118,7 +119,7 @@ export function AuctionCard(props: Project) {
             {/* TODO: Ask about auction availability */}
             {!isAuctionRestricted && (
               <Link
-                href={`${linkPath}/auction`}
+                href={linkPath}
                 className={cn(
                   buttonVariants({
                     variant: 'secondary',
@@ -126,8 +127,9 @@ export function AuctionCard(props: Project) {
                   }),
                   'relative text-md px-0 py-0 size-14 font-bold rounded-full hover:[&svg]:fill-card group'
                 )}
-                data-title={`Go to ${title}´s auction`}
+                data-title={`Go to project ${title}`}
                 prefetch
+                scroll={false}
               >
                 <IconDownRightArrow className="transition-all size-4 group-hover:-rotate-[45deg] group-focus-within:-rotate-[45deg]" />
               </Link>

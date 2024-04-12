@@ -33,7 +33,7 @@ export default function Participate() {
   const stepsInfoRef = React.useRef<HTMLParagraphElement>(null)
   const showStepsInfo = useInView(stepsInfoRef, {
     once: true,
-    margin: '-400px'
+    margin: '-350px'
   })
 
   return (
@@ -42,7 +42,7 @@ export default function Participate() {
       ref={stepsInfoRef}
     >
       <h2
-        className="text-3xl leading-loose font-bold pt-6 pb-10 w-full text-center"
+        className="text-3xl leading-loose font-bold pt-6 pb-10 w-full h-32 text-center"
       >
         <AnimatePresence>
           {showStepsInfo && (
@@ -130,7 +130,7 @@ const textContent = {
       title: 'Place\nBids',
       description:
         'Select a project from the Auctions list and place your bids.',
-      href: '/masterbots/auction'
+      href: '#'
     }
   ]
 }

@@ -1,13 +1,15 @@
 'use client'
 
+import { generateShortLink } from "@/actions"
 import { AuctionInfo } from "@/components/pages/auction/auction-info"
 import { Countdown } from "@/components/pages/auction/countdown"
 import { Button, buttonVariants } from "@/components/ui/button"
 import { IconDiscord, IconTelegram, IconTwitterX } from "@/components/ui/icons"
+import { LazyImage } from "@/components/ui/lazy-image"
 import { Project, ProjectWithAuction } from "@/lib/projects"
-import { cn } from "@/lib/utils"
-import { AnimatePresence, motion, MotionProps } from 'framer-motion'
-import { LucideCheck, LucideShare } from "lucide-react"
+import { cn, motionProps, scrollToElement } from "@/lib/utils"
+import { AnimatePresence, motion } from 'framer-motion'
+import { LucideCheck, LucideChevronDown, LucideLoader2, LucideShare, LucideX } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
@@ -22,37 +24,83 @@ const buttonLinkClassName = cn(
 )
 
 export function ProjectHeader({ projectData }: { projectData: Project }) {
-  const [copied, setCopied] = React.useState(false)
+  const [copied, setCopied] = React.useState('')
+  const projectDataRef = React.useRef<HTMLElement | null>(null)
   const pathname = usePathname()
   const isAuctionPage = Boolean(pathname.match(/\/auction$/))
 
-  console.log('isAuctionPage', isAuctionPage)
+  React.useEffect(() => {
+    projectDataRef.current = document.getElementById('project-details')
+  }, [projectDataRef.current])
 
   React.useEffect(() => {
     if (copied) {
       const timeout = setTimeout(() => {
-        setCopied(false)
+        setCopied('')
       }, 5000)
 
       return () => clearTimeout(timeout)
     }
   }, [copied])
 
-  const copyProjectShareLink = () => {
-    const shareLink = `${window.location.origin}/${projectData.slug}`
+  const copyProjectShareLink = async () => {
+    setCopied('loading')
+    try {
+      const { data, error } = await generateShortLink(projectData.linkPath)
 
-    navigator.clipboard.writeText(shareLink)
-    setCopied(true)
+      if (error || !data) throw new Error(error)
+
+      const shortLink = data.shortLink
+
+      navigator.clipboard.writeText(shortLink)
+      setCopied('Share link copied!')
+    } catch (error) {
+      console.error('Failed to copy share link: ', error)
+      setCopied('Failed to copy share link. Try again!')
+    }
+  }
+
+  const copyShareLinkIconResponse = (copied: string) => {
+    switch (copied) {
+      case 'loading':
+        return (
+          <motion.span
+            key="loading-icon"
+            {...motionProps.iconMotionProps}
+          >
+            <LucideLoader2 size={26} className="stroke-accent animate-spin" />
+          </motion.span>
+        )
+      case 'Share link copied!':
+        return (
+          <motion.span
+            key="success-icon"
+            {...motionProps.iconMotionProps}
+          >
+            <LucideCheck size={26} className="stroke-success" />
+          </motion.span>
+        )
+      case 'Failed to copy share link. Try again!':
+      default:
+        return (
+          <motion.span
+            key="error-icon"
+            {...motionProps.iconMotionProps}
+          >
+            <LucideX size={26} className="stroke-destructive" />
+          </motion.span>
+        )
+    }
   }
 
   const isAuctionClosed = projectData.badgeText === 'AUCTION CLOSED'
 
   return (
     <section className="w-full h-full flex flex-col gap-11 items-center justify-center">
-      <div className="block absolute lg:hidden inset-0 z-[1] h-full w-full bg-muted/10 backdrop-blur-[2.5px] overflow-hidden" />
+      <div className="block lg:hidden absolute inset-0 z-[1] h-full w-full bg-muted/10 backdrop-blur-[2.5px] overflow-hidden" />
       <Image
         alt="Project Image"
-        className="block absolute lg:hidden inset-0 z-0 mx-auto aspect-video overflow-hidden object-cover h-full w-full pointer-events-none"
+        className="scale-100 block lg:hidden absolute inset-0 z-0 mx-auto aspect-video overflow-hidden object-cover h-full w-full pointer-events-none"
         height="2000"
         src={projectData.heroImage}
         width="2000"
@@ -74,7 +122,7 @@ export function ProjectHeader({ projectData }: { projectData: Project }) {
           transition={{ duration: 0.6 }}
           className="border border-card/30 flex flex-col justify-between h-full max-h-[560px] w-full max-w-screen-sm rounded-xl bg-card/60 backdrop-blur-lg"
         >
-          <Image
+          <LazyImage
             alt="Project Image"
             className="hidden lg:block inset-0 z-0 mx-auto aspect-video overflow-hidden object-cover h-[260px] w-full pointer-events-none rounded-t-xl"
             height="210"
@@ -126,24 +174,19 @@ export function ProjectHeader({ projectData }: { projectData: Project }) {
                 <Button
                   size="icon"
                   variant="outline"
-                  data-title={copied ? 'Share link copied!' : `Click to copy the link to share ${projectData.title} on your media!`}
-                  className="relative rounded-full size-[58px]"
+                  data-title={copied ? copied : `Click to copy the link to share ${projectData.title} on your media!`}
+                  className={cn(
+                    'relative rounded-full size-[58px]',
+                  )}
                   onClick={copyProjectShareLink}
                 >
                   <AnimatePresence>
                     {copied
-                      ? (
-                        <motion.span
-                          key="check-icon"
-                          {...iconMotionProps}
-                        >
-                          <LucideCheck size={26} className="stroke-accent" />
-                        </motion.span>
-                      )
+                      ? copyShareLinkIconResponse(copied)
                       : (
                         <motion.span
                           key="share-icon"
-                          {...iconMotionProps}
+                          {...motionProps.iconMotionProps}
                         >
                           <LucideShare size={26} className="stroke-accent" />
                         </motion.span>
@@ -170,7 +213,7 @@ export function ProjectHeader({ projectData }: { projectData: Project }) {
               <b>{projectData.fundraiseGoal}</b>
             </li>
             <li className="flex w-full justify-between py-2 px-4 bg-muted rounded-full">
-              <span className="opacity-70">Max allocation</span>
+              <span className="opacity-70">Max Allocation</span>
               <b>{projectData.maxAllocation}</b>
             </li>
           </ul>
@@ -197,6 +240,7 @@ export function ProjectHeader({ projectData }: { projectData: Project }) {
                   size: 'lg',
                 }), 'w-full max-w-[450px] mx-auto text-xl')}
                 href={`${projectData.slug}/auction`}
+                scroll={false}
                 prefetch
               >
                 {projectData.registrationOpen
@@ -209,15 +253,18 @@ export function ProjectHeader({ projectData }: { projectData: Project }) {
           )}
         </motion.div>
 
+        <Button
+          onClick={event => {
+            scrollToElement(projectDataRef.current)
+            event.currentTarget.blur()
+          }}
+          variant="ghost"
+          className="transition-transform underline-offset-4 absolute left-[calc(50%-75px)] w-[150px] -bottom-20 inline-flex gap-4 font-semibold hover:-translate-y-1 focus-within:-translate-y-1 hover:underline focus-within:underline"
+        >
+          Read more
+          <LucideChevronDown size={24} className="stroke-white animate-bounce" />
+        </Button>
       </div>
     </section>
   )
-}
-
-const iconMotionProps: MotionProps & React.ComponentProps<'span'> = {
-  initial: { opacity: 0, scale: 0 },
-  animate: { opacity: 1, scale: 1 },
-  exit: { opacity: 0, scale: 0 },
-  transition: { duration: 0.3 },
-  className: 'absolute inset-0 flex items-center justify-center self-center'
 }
