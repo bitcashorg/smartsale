@@ -2,12 +2,16 @@
 
 import { ErrorModal } from "@/components/dialogs/error-dialog"
 import { Header } from "@/components/layout/header"
-import { Newsletter } from "@/components/pages/home/newsletter"
 import Participate from "@/components/pages/home/participate"
 import { BackgroundMovingGradient } from "@/components/ui/background-moving-gradient"
 import { cn } from "@/lib/utils"
+import dynamic from "next/dynamic"
 import { useRef } from "react"
 import { Toaster } from "react-hot-toast"
+
+const DynamicNewsletter = dynamic(() => import('./pages/home/newsletter') as any, {
+  ssr: false
+})
 
 export function LayoutContainer({ children, projectHeader }: { children: React.ReactNode, projectHeader?: React.ReactNode }) {
   const containerRef = useRef<HTMLDivElement>(null)
@@ -42,7 +46,7 @@ export function LayoutContainer({ children, projectHeader }: { children: React.R
         )}
         <footer className="container flex flex-1 w-full flex-col px-4 py-32 gap-32">
           <Participate />
-          <Newsletter />
+          <DynamicNewsletter />
         </footer>
         <ErrorModal />
         {/* <TailwindIndicator /> */}

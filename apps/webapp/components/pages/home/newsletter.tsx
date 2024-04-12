@@ -22,7 +22,7 @@ const formSchema = z.object({
 const formOptions = { resolver: zodResolver(formSchema) }
 type SubcriptionFormData = z.infer<typeof formSchema>
 
-export function Newsletter() {
+export default function Newsletter() {
   const { register, setValue, watch, formState } =
     useForm<SubcriptionFormData>(formOptions)
   const [state, onSubmit] = useAsyncFn(async (formData: FormData) =>
@@ -106,8 +106,17 @@ export function Newsletter() {
           <input type="hidden" {...register('recaptcha', { required: true })} />
           <GoogleReCaptcha
             onVerify={v => {
-              if (v.toString() && recaptchaToken !== v.toString())
+              const timeout = setTimeout(() => {
+                if (v.toString() && recaptchaToken !== v.toString()) {
+                  setValue('recaptcha', v.toString())
+                }
+
+                clearTimeout(timeout)
+              }, 90000)
+
+              if (!recaptchaToken) {
                 setValue('recaptcha', v.toString())
+              }
             }}
           />
           <Button

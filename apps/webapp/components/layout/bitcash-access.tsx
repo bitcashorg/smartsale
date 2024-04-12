@@ -20,7 +20,7 @@ import { useAccount } from 'wagmi'
 
 export function BitcashAccessButton({
   defaultContent = 'login',
-  buttonLabel = 'Log in',
+  buttonLabel = 'Log In',
   buttonClassName,
   buttonStyle
 }: BitcashAccessProps) {

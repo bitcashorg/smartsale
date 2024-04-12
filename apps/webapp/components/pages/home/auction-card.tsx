@@ -1,10 +1,13 @@
-import { buttonVariants } from '@/components/ui/button'
+'use client'
+
+import { Button, buttonVariants } from '@/components/ui/button'
 import { IconDiscord, IconDownRightArrow, IconTelegram, IconTwitterX } from '@/components/ui/icons'
 import { LazyImage } from '@/components/ui/lazy-image'
 import { Project } from '@/lib/projects'
 import { cn } from '@/lib/utils'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import React from 'react'
 
 export function AuctionCard(props: Project) {
   const {
@@ -23,20 +26,20 @@ export function AuctionCard(props: Project) {
   const isAuctionRestricted = badgeText.match(/(AUCTION CLOSED|FUTURE|COMING SOON)/)
   const isFutureOrComingAuction = badgeText.match(/(FUTURE|COMING SOON)/)
   const buttonLinkClassName = cn(
-    buttonVariants({
-      variant: 'outline',
-      size: 'icon'
-    }),
     "relative rounded-full p-3.5 size-auto"
   )
+
+  const redirectToExternalRoute = (link: string) => {
+    window.open(link, '_blank')
+  }
 
   return (
     <Link
       id={`hot-auction-${title.toLowerCase().replace(/\s/g, '-')}`}
       href={isFutureOrComingAuction ? `#` : linkPath}
       className={cn('size-full max-w-[450px] mx-auto', { 'cursor-not-allowed': isFutureOrComingAuction })}
-      prefetch
       scroll={false}
+      prefetch
     >
       <motion.div
         className="group/card size-full flex flex-col h-full justify-betw-een rounded-xl border border-transparent backdrop-blur-xl bg-card/60 shadow-accent/[0.02] hover:shadow-accent/[0.04] hover:shadow-xl translate-z-0"
@@ -87,34 +90,34 @@ export function AuctionCard(props: Project) {
             </li>
           </ul>
           <div className="flex w-full justify-between items-center mb-3">
-            <div className="flex align-center justify-center items-center gap-3 md:gap-4 xl:gap-6">
-              <Link
-                href={`https://twitter.com/${twitterUsername}`}
+            <div className="relative z-10 flex align-center justify-center items-center gap-3 md:gap-4 xl:gap-6">
+              <Button
+                variant="outline"
+                size="icon"
+                onClick={() => redirectToExternalRoute(`https://twitter.com/${twitterUsername}`)}
                 className={buttonLinkClassName.replace('p-3.5', 'p-[17px]')}
                 data-title={`${title}´s Twitter X Profile`}
-                target="_blank"
-                rel="noopener noreferrer"
               >
                 <IconTwitterX className="size-6 fill-accent" />
-              </Link>
-              <Link
-                href={`https://discord.gg/${discordServer}`}
+              </Button>
+              <Button
+                variant="outline"
+                size="icon"
+                onClick={() => redirectToExternalRoute(`https://discord.gg/${discordServer}`)}
                 className={buttonLinkClassName}
                 data-title={`${title}´s Discord Server`}
-                target="_blank"
-                rel="noopener noreferrer"
               >
                 <IconDiscord className="size-7 fill-accent" />
-              </Link>
-              <Link
-                href={`https://t.me/${telegramGroup}`}
+              </Button>
+              <Button
+                variant="outline"
+                size="icon"
+                onClick={() => redirectToExternalRoute(`https://t.me/${telegramGroup}`)}
                 className={buttonLinkClassName}
                 data-title={`${title}´s Telegram Group`}
-                target="_blank"
-                rel="noopener noreferrer"
               >
                 <IconTelegram className="size-7 fill-accent" />
-              </Link>
+              </Button>
             </div>
             {/* TODO: Ask about auction availability */}
             {!isAuctionRestricted && (
