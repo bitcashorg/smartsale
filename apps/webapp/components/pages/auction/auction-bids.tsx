@@ -304,7 +304,7 @@ const textValues = {
   ticker: 'Ticker: BANK',
   currentAuctionPrice: 'Current Auction Price: $ --',
   currentBid: 'Current Bid: 200 @ $ --',
-  currentCost: 'Current Cost: $750',
+  currentCost: 'Current Cost: $ --',
   maxTokenLimit: '*Max Token Limit: 2850 ($10,000)'
 }
 
