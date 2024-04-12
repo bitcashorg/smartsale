@@ -5,11 +5,11 @@ import { AuctionInfo } from "@/components/pages/auction/auction-info"
 import { Countdown } from "@/components/pages/auction/countdown"
 import { Button, buttonVariants } from "@/components/ui/button"
 import { IconDiscord, IconTelegram, IconTwitterX } from "@/components/ui/icons"
+import { LazyImage } from "@/components/ui/lazy-image"
 import { Project, ProjectWithAuction } from "@/lib/projects"
 import { cn, motionProps, scrollToElement } from "@/lib/utils"
 import { AnimatePresence, motion } from 'framer-motion'
 import { LucideCheck, LucideChevronDown, LucideLoader2, LucideShare, LucideX } from "lucide-react"
-import Image from "next/image"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import React from "react"
@@ -94,9 +94,9 @@ export function ProjectHeader({ projectData }: { projectData: Project }) {
   return (
     <section className="w-full h-full flex flex-col gap-11 items-center justify-center">
       <div className="block absolute lg:hidden inset-0 z-[1] h-full w-full bg-muted/10 backdrop-blur-[2.5px] overflow-hidden" />
-      <Image
+      <LazyImage
         alt="Project Image"
-        className="block absolute lg:hidden inset-0 z-0 mx-auto aspect-video overflow-hidden object-cover h-full w-full pointer-events-none"
+        className="scale-100 block absolute lg:hidden inset-0 z-0 mx-auto aspect-video overflow-hidden object-cover h-full w-full pointer-events-none"
         height="2000"
         src={projectData.heroImage}
         width="2000"
@@ -118,7 +118,7 @@ export function ProjectHeader({ projectData }: { projectData: Project }) {
           transition={{ duration: 0.6 }}
           className="border border-card/30 flex flex-col justify-between h-full max-h-[560px] w-full max-w-screen-sm rounded-xl bg-card/60 backdrop-blur-lg"
         >
-          <Image
+          <LazyImage
             alt="Project Image"
             className="hidden lg:block inset-0 z-0 mx-auto aspect-video overflow-hidden object-cover h-[260px] w-full pointer-events-none rounded-t-xl"
             height="210"

@@ -1,9 +1,9 @@
 import { buttonVariants } from '@/components/ui/button'
 import { IconDiscord, IconDownRightArrow, IconTelegram, IconTwitterX } from '@/components/ui/icons'
+import { LazyImage } from '@/components/ui/lazy-image'
 import { Project } from '@/lib/projects'
 import { cn } from '@/lib/utils'
 import { motion } from 'framer-motion'
-import Image from 'next/image'
 import Link from 'next/link'
 
 export function AuctionCard(props: Project) {
@@ -47,7 +47,7 @@ export function AuctionCard(props: Project) {
         <figure
           className="relative w-full"
         >
-          <Image
+          <LazyImage
             src={thumbnailImage}
             height="1000"
             width="1000"
