@@ -47,7 +47,7 @@ export const metadata: Metadata = {
   keywords: ['bitlauncher', 'smartsale', 'ai', 'web3', 'crypto', 'investment', 'auction', 'marketplace', 'platform', 'launchpad', 'launch', 'pad', 'launching', 'launching']
 }
 
-const openSans = Open_Sans({ weight: ['400', '500', '600', '700', '800'] })
+const openSans = Open_Sans({ subsets: ['latin', 'latin-ext'], weight: ['400', '500', '600', '700', '800'] })
 
 export default function RootLayout({ children, ...props }: RootLayoutProps) {
   return (
