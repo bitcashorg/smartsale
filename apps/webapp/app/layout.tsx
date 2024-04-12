@@ -51,13 +51,15 @@ const openSans = Open_Sans({ weight: ['400', '500', '600', '700', '800'] })
 
 export default function RootLayout({ children, ...props }: RootLayoutProps) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body
-        className={cn(
-          'antialiased',
-          openSans.className
-        )}
-      >
+    <html
+      lang="en"
+      className={cn(
+        "antialiased scroll-smooth",
+        openSans.className
+      )}
+      suppressHydrationWarning
+    >
+      <body>
         <Providers
           attribute="class"
           defaultTheme="system"
