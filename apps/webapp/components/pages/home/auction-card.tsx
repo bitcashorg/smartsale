@@ -36,6 +36,7 @@ export function AuctionCard(props: Project) {
       href={isFutureOrComingAuction ? `#` : linkPath}
       className={cn('size-full max-w-[450px] mx-auto', { 'cursor-not-allowed': isFutureOrComingAuction })}
       prefetch
+      scroll={false}
     >
       <motion.div
         className="group/card size-full flex flex-col h-full justify-betw-een rounded-xl border border-transparent backdrop-blur-xl bg-card/60 shadow-accent/[0.02] hover:shadow-accent/[0.04] hover:shadow-xl translate-z-0"
@@ -81,7 +82,7 @@ export function AuctionCard(props: Project) {
               <b>{fundraiseGoal}</b>
             </li>
             <li className="flex w-full justify-between py-2 px-4 bg-muted rounded-full">
-              <span className="opacity-70">Max allocation</span>
+              <span className="opacity-70">Max Allocation</span>
               <b>{maxAllocation}</b>
             </li>
           </ul>
@@ -118,7 +119,7 @@ export function AuctionCard(props: Project) {
             {/* TODO: Ask about auction availability */}
             {!isAuctionRestricted && (
               <Link
-                href={`${linkPath}/auction`}
+                href={linkPath}
                 className={cn(
                   buttonVariants({
                     variant: 'secondary',
@@ -126,8 +127,9 @@ export function AuctionCard(props: Project) {
                   }),
                   'relative text-md px-0 py-0 size-14 font-bold rounded-full hover:[&svg]:fill-card group'
                 )}
-                data-title={`Go to ${title}´s auction`}
+                data-title={`Go to project ${title}`}
                 prefetch
+                scroll={false}
               >
                 <IconDownRightArrow className="transition-all size-4 group-hover:-rotate-[45deg] group-focus-within:-rotate-[45deg]" />
               </Link>

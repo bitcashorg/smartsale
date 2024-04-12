@@ -21,16 +21,17 @@ export function Upcoming() {
           <motion.sub
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.36 }}
             key="upcoming-auctions-eyebrow"
-            className="text-xl leading-none font-semibold w-full"
+            className="text-xl md:text-2xl leading-none font-semibold w-full h-8 md:h-10"
           >
             {textContent.eyebrow}
           </motion.sub>
           <motion.span
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.24 }}
-            className="text-7xl lg:text-8xl font-bold w-full"
+            transition={{ delay: 0.42, duration: 0.36 }}
+            className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold w-full min-h-44 sm:min-h-52"
             key="upcoming-auctions-title"
           >
             {textContent.title.split('AI/WEB3')[0]}
@@ -41,7 +42,7 @@ export function Upcoming() {
           </motion.span>
         </h1>
         <motion.h2
-          className="text-3xl leading-loose font-bold pt-6 pb-10 w-full text-center"
+          className="text-3xl leading-loose font-bold pt-6 pb-10 w-full text-center h-32"
           key="upcoming-auctions-title"
           {...upcomingAuctionsAnimationProps}
         >

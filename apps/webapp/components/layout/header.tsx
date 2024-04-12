@@ -107,7 +107,7 @@ export function Header({ className, containerRef }: { className?: string, contai
           {...motionHeaderAnimationProps}
         >
           <div className="container flex h-16 items-center justify-between">
-            <div className="flex items-center">
+            <div className="flex items-center h-full">
               <HeaderLink
                 href="/"
                 text="home"
@@ -126,7 +126,7 @@ export function Header({ className, containerRef }: { className?: string, contai
               <HeaderLink href="https://faucet.testnet.evm.eosnetwork.com/" text="eos faucet" /> */}
             </div>
 
-            <div className="inline-flex gap-5 mx-auto">
+            <div className="inline-flex items-center gap-5 mx-auto h-full">
               {/* <HeaderLink
                 href="/wallet"
                 text="wallet"
@@ -140,7 +140,7 @@ export function Header({ className, containerRef }: { className?: string, contai
               >
                 <HeaderLink
                   href="/how-it-works"
-                  text="How It works"
+                  text="How It Works"
                   onClick={() => setActiveMenu('')}
                 />
                 <HeaderLink
@@ -238,11 +238,12 @@ function MenuItem({
   children?: React.ReactNode
 }) {
   return (
-    <div className="relative text-semibold" id={item}>
+    <div className="relative flex flex-col items-center text-semibold h-full" id={item} onMouseLeave={() => setActive('')}>
       <motion.button
         transition={{ duration: 0.3 }}
-        className="relative group flex flex-nowrap items-center text-lg cursor-pointer whitespace-nowrap hover:opacity-90 focus-within:opacity-90"
+        className="relative group flex flex-nowrap items-center text-lg cursor-pointer whitespace-nowrap hover:opacity-90 focus-within:opacity-90 my-auto"
         onClick={() => setActive(active === item ? '' : item)}
+        onMouseEnter={() => setActive(active === item ? '' : item)}
         layout
       >
         {item}
@@ -254,32 +255,36 @@ function MenuItem({
         >
           <LucideChevronRight size={16} />
         </span>
-        <div className="absolute bottom-0 transition-all ease-in-out min-w-[0%] group-hover:min-w-[83.333%] h-0.5 bg-secondary" />
       </motion.button>
-      {active !== null && (
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: 10 }}
-        >
-          {active === item && (
-            <div className="absolute left-0 top-[calc(100%_+_1.7rem)] -translate-x-1/2">
-              <motion.div
-                transition={transition}
-                layoutId="active" // layoutId ensures smooth animation
-                className="overflow-hidden rounded-2xl border border-muted/[0.2] bg-muted shadow-xl backdrop-blur-sm"
-              >
+      <AnimatePresence>
+        {active !== null && (
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 10 }}
+            key="menu-dropdown"
+          >
+            {active === item && (
+              <div className="absolute left-0 top-[calc(100%_-_0.5rem)] -translate-x-1/2">
                 <motion.div
-                  layout // layout ensures smooth animation
-                  className="flex h-full w-max flex-col gap-2 p-4"
+                  key="menu-dropdown-container"
+                  transition={transition}
+                  layoutId="active" // layoutId ensures smooth animation
+                  className="overflow-hidden rounded-2xl border border-muted/[0.2] bg-muted shadow-xl backdrop-blur-sm"
                 >
-                  {children}
+                  <motion.div
+                    layout // layout ensures smooth animation
+                    transition={transition}
+                    className="flex h-full w-max flex-col gap-2 p-4 [&_a:hover]:underline [&_a]:underline-offset-2"
+                  >
+                    {children}
+                  </motion.div>
                 </motion.div>
-              </motion.div>
-            </div>
-          )}
-        </motion.div>
-      )}
+              </div>
+            )}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   )
 }

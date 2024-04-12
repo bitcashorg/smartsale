@@ -302,10 +302,10 @@ const textValues = {
   minutes: '37',
   seconds: '24',
   ticker: 'Ticker: BANK',
-  currentAuctionPrice: 'Current Auction Price: $3.75',
-  currentBid: 'Current Bid: 200 @ $3.75',
+  currentAuctionPrice: 'Current Auction Price: $ --',
+  currentBid: 'Current Bid: 200 @ $ --',
   currentCost: 'Current Cost: $750',
-  maxTokenLimit: '*Max Token Limit: 285 ($1,000)'
+  maxTokenLimit: '*Max Token Limit: 2850 ($10,000)'
 }
 
 // Function to check balance and allowance
