@@ -35,19 +35,11 @@ export function LazyImage({
   return (
     <picture
       className={cn(
-        className?.includes("absolute") ? "absolute" : "relative",
+        // className?.includes("absolute") ? "absolute" : "relative",
         "flex w-full overflow-hidden ",
-        isLoading &&
-        "scale-110 bg-gray-300 blur-2xl grayscale dark:bg-gray-700",
-        className?.includes("blogImages")
-          ? "rounded-images border border-black"
-          : "",
-        className?.includes("blogImages") && isSameDimensions
-          ? "h-[320px] md:h-[465px]"
-          : "",
-        className?.includes("blogImages") && !isSameDimensions
-          ? "h-[110px] rounded-images sm:h-space-127 lg:h-space-157 xl:h-space-213"
-          : "",
+        {
+          'scale-110 bg-gray-400 blur-2xl grayscale': isLoading,
+        },
         imgWrapperClassName
       )}
     >
@@ -57,7 +49,7 @@ export function LazyImage({
         onLoad={calculateAdjustedHeight}
         loading="lazy"
         className={cn(
-          "h-max w-full duration-700 ease-in-out",
+          "h-full w-full duration-700 ease-in-out",
           isLoading
             ? "scale-110 blur-2xl grayscale"
             : "scale-100 blur-0 grayscale-0",

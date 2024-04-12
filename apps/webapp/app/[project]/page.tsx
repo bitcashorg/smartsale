@@ -1,16 +1,16 @@
-import { projects } from '@/lib/projects'
+import { projects, ProjectWithAuction } from '@/lib/projects'
 
 import { redirect } from 'next/navigation'
 
 const sectionWithBgClassNames = 'flex flex-col gap-11 px-3 w-full mx-auto max-w-screen-xl md:px-6 lg:px-11 w-full bg-primary/70 backdrop-xl rounded-3xl py-10 md:py-16 lg:py-24'
 const sectionWithoutBgClassNames = sectionWithBgClassNames.replace('bg-primary/70 backdrop-xl rounded-3xl ', '')
 
-export default function ProjectPage({
+export default async function ProjectPage({
   params
 }: {
   params: { project: string }
 }) {
-  const project = projects.find(p => p.slug == params.project)
+  const project = await new Promise((resolve) => resolve(projects.find(p => p.slug == params.project))).then((p) => p as ProjectWithAuction)
   if (!project) redirect('/')
 
   const projectContentObjectKeys = Object.keys(project.content)

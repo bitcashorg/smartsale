@@ -10,6 +10,7 @@ import { Project, ProjectWithAuction } from "@/lib/projects"
 import { cn, motionProps, scrollToElement } from "@/lib/utils"
 import { AnimatePresence, motion } from 'framer-motion'
 import { LucideCheck, LucideChevronDown, LucideLoader2, LucideShare, LucideX } from "lucide-react"
+import Image from "next/image"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import React from "react"
@@ -24,10 +25,13 @@ const buttonLinkClassName = cn(
 
 export function ProjectHeader({ projectData }: { projectData: Project }) {
   const [copied, setCopied] = React.useState('')
+  const projectDataRef = React.useRef<HTMLElement | null>(null)
   const pathname = usePathname()
   const isAuctionPage = Boolean(pathname.match(/\/auction$/))
 
-  console.log('isAuctionPage', isAuctionPage)
+  React.useEffect(() => {
+    projectDataRef.current = document.getElementById('project-details')
+  }, [projectDataRef.current])
 
   React.useEffect(() => {
     if (copied) {
@@ -93,10 +97,10 @@ export function ProjectHeader({ projectData }: { projectData: Project }) {
 
   return (
     <section className="w-full h-full flex flex-col gap-11 items-center justify-center">
-      <div className="block absolute lg:hidden inset-0 z-[1] h-full w-full bg-muted/10 backdrop-blur-[2.5px] overflow-hidden" />
-      <LazyImage
+      <div className="block lg:hidden absolute inset-0 z-[1] h-full w-full bg-muted/10 backdrop-blur-[2.5px] overflow-hidden" />
+      <Image
         alt="Project Image"
-        className="scale-100 block absolute lg:hidden inset-0 z-0 mx-auto aspect-video overflow-hidden object-cover h-full w-full pointer-events-none"
+        className="scale-100 block lg:hidden absolute inset-0 z-0 mx-auto aspect-video overflow-hidden object-cover h-full w-full pointer-events-none"
         height="2000"
         src={projectData.heroImage}
         width="2000"
@@ -251,7 +255,7 @@ export function ProjectHeader({ projectData }: { projectData: Project }) {
 
         <Button
           onClick={event => {
-            scrollToElement(document.getElementById('project-details'))
+            scrollToElement(projectDataRef.current)
             event.currentTarget.blur()
           }}
           variant="ghost"

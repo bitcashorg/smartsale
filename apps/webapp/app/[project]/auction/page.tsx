@@ -18,12 +18,12 @@ const auctionPageClassNames = {
     'border border-primary/50 bg-card w-full h-[512px] overflow-y-auto scrollbar rounded-lg p-0 md:p-10'
 }
 
-export default function AuctionPage({
+export default async function AuctionPage({
   params
 }: {
   params: { project: string }
 }) {
-  const p = projects.find(p => p.slug == params.project)
+  const p = await new Promise((resolve) => resolve(projects.find(p => p.slug == params.project))).then((p) => p as ProjectWithAuction)
   if (!p || (!p.auctionId && !p.registrationOpen)) redirect('/')
   const project = p as ProjectWithAuction
 

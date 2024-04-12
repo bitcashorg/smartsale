@@ -305,7 +305,7 @@ const textValues = {
   currentAuctionPrice: 'Current Auction Price: $ --',
   currentBid: 'Current Bid: -- @ $ --',
   currentCost: 'Current Cost: $ --',
-  maxTokenLimit: '*Max Token Limit: 2850 ($10,000)'
+  maxTokenLimit: '*Max Token Limit: -- ($ --)'
 }
 
 // Function to check balance and allowance
