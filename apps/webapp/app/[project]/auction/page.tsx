@@ -4,8 +4,14 @@ import { ClaimTokens } from '@/components/pages/auction/claim-tokens'
 import { RegisterAddress } from '@/components/pages/auction/register-address'
 import { Tabs } from '@/components/ui/tabs'
 import { ProjectWithAuction, projects } from '@/lib/projects'
+import { Metadata } from 'next'
 import { redirect } from 'next/navigation'
 import React from 'react'
+
+export const metadata: Metadata = {
+  title: 'bitcash auction | bitlauncher',
+  description: 'Invest in the intelligent future and join the Ai/Web3 revolution now!',
+}
 
 const auctionPageClassNames = {
   tabCard:

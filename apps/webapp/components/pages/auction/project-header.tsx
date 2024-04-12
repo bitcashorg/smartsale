@@ -255,7 +255,7 @@ export function ProjectHeader({ projectData }: { projectData: Project }) {
             event.currentTarget.blur()
           }}
           variant="ghost"
-          className="transition-transform underline-offset-4 absolute -bottom-20 inline-flex gap-4 font-semibold hover:-translate-y-1 focus-within:-translate-y-1 hover:underline focus-within:underline"
+          className="transition-transform underline-offset-4 absolute left-[calc(50%-75px)] w-[150px] -bottom-20 inline-flex gap-4 font-semibold hover:-translate-y-1 focus-within:-translate-y-1 hover:underline focus-within:underline"
         >
           Read more
           <LucideChevronDown size={24} className="stroke-white animate-bounce" />

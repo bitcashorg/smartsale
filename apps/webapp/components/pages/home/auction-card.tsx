@@ -73,7 +73,7 @@ export function AuctionCard(props: Project) {
             {pitch}
           </p>
         </div>
-        <div className="w-full flex flex-col px-4 py-6 lg:px-9 lg:py-8 items-center justify-between mb-2 mt-auto">
+        <div className="w-full flex flex-col px-4 py-6 xl:px-9 xl:py-8 items-center justify-between mb-2 mt-auto">
           <ul
             className="mt-8 mb-10 flex w-full flex-col gap-2"
           >
@@ -87,7 +87,7 @@ export function AuctionCard(props: Project) {
             </li>
           </ul>
           <div className="flex w-full justify-between items-center mb-3">
-            <div className="flex align-center justify-center items-center gap-6">
+            <div className="flex align-center justify-center items-center gap-3 md:gap-4 xl:gap-6">
               <Link
                 href={`https://twitter.com/${twitterUsername}`}
                 className={buttonLinkClassName.replace('p-3.5', 'p-[17px]')}

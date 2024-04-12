@@ -4,6 +4,7 @@ import { cn } from '@/lib/utils'
 import { GoogleAnalytics } from '@next/third-parties/google'
 import '@rainbow-me/rainbowkit/styles.css'
 import { Metadata } from 'next'
+import { Open_Sans } from 'next/font/google'
 import React from 'react'
 
 export const metadata: Metadata = {
@@ -46,12 +47,15 @@ export const metadata: Metadata = {
   keywords: ['bitlauncher', 'smartsale', 'ai', 'web3', 'crypto', 'investment', 'auction', 'marketplace', 'platform', 'launchpad', 'launch', 'pad', 'launching', 'launching']
 }
 
+const openSans = Open_Sans({ weight: ['400', '500', '600', '700', '800'] })
+
 export default function RootLayout({ children, ...props }: RootLayoutProps) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          'antialiased open-sans',
+          'antialiased',
+          openSans.className
         )}
       >
         <Providers
