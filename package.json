@@ -43,6 +43,7 @@
     "@types/react": "latest",
     "@types/react-dom": "latest",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "sharp": "^0.33.3"
   }
 }
