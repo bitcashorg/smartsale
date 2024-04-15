@@ -13,6 +13,8 @@ export const projects: Project[] = [
     maxAllocation: '$10,000',
     heroImage: '/images/projects/bitcash-cover.png',
     thumbnailImage: '/images/projects/bitcash.png',
+    thumbnailImageBlurDataURL: '', // replace by getter fucntion
+    heroImageBlurDataURL: '', // replace by getter fucntion
     badgeText: 'PRE-SALE ACTIVE',
     linkPath: '/bitcash-bitlauncher',
     // TODO: token name in progress... MBOTS is placeholder, the token for Masterbots
@@ -36,8 +38,8 @@ export const projects: Project[] = [
             'Rigorous Security Standards: Implementing top-tier KYC/AML policies and advanced security for user protection.',
             'Global Empowerment: Committed to empowering global users through transformative technological solutions.',
             'Enhancing Human Connections: Prioritizing genuine human interaction in the anticipated AI-dominated future.',
-            'New Digital Economy Vision: Envisioning a future economy where technology and ethical principles serve global well-being.',
-          ],
+            'New Digital Economy Vision: Envisioning a future economy where technology and ethical principles serve global well-being.'
+          ]
         ]
       },
       product: {
@@ -69,7 +71,7 @@ export const projects: Project[] = [
             'Exclusivity in Innovation: Cutting - edge technologies largely benefit a select group, creating an imbalance in technological empowerment.',
             'Integration Deficiency: There is a notable absence of a comprehensive platform that integrates AI, blockchain, and DeFi in a user- friendly manner.',
             'Barriers to Adoption: The intimidating nature of current blockchain solutions hinders widespread adoption and practical use in the mainstream.',
-            'Economic Inequity: Digital finance has yet to bridge the gap between the tech- savvy and the general population, reinforcing economic disparities.',
+            'Economic Inequity: Digital finance has yet to bridge the gap between the tech- savvy and the general population, reinforcing economic disparities.'
           ]
         ]
       },
@@ -86,8 +88,8 @@ export const projects: Project[] = [
             'Technological Democratization: Aims to make advanced technology accessible and usable for everyone, democratizing AI and financial tools.',
             'Catalyst for Change: Acts as a launchpad for transformative applications, driving growth and fostering a dynamic, creative community.',
             'Human-Centric Approach: Focuses on maintaining human connections and integrity in an AI-dominated future.',
-            'Economic Redefinition: Bitcash strives to reshape the global economy to be more inclusive, equitable, and supportive of human potential.',
-          ],
+            'Economic Redefinition: Bitcash strives to reshape the global economy to be more inclusive, equitable, and supportive of human potential.'
+          ]
         ]
       },
       businessModel: {
@@ -95,7 +97,7 @@ export const projects: Project[] = [
         content: [
           [
             'Utility Token Ecosystem: Implements a dynamic mint-and-burn utility token system central to transactions and services, ensuring ecosystem balance.',
-            'Multiple Revenue Channels: Generates income through transaction fees, P2P exchange margins, and services around AI-driven DeFi applications, plus earnings from the AI startup launchpad \'Bitlauncher\'.',
+            "Multiple Revenue Channels: Generates income through transaction fees, P2P exchange margins, and services around AI-driven DeFi applications, plus earnings from the AI startup launchpad 'Bitlauncher'.",
             'Community-Driven Innovation: Encourages open-source development and community contributions, fostering a cycle of continuous innovation and platform improvement.',
             'Equitable Blockchain Infrastructure: Introduces a non-profit L1 blockchain for fair token distribution, underpinning a decentralized economy accessible to all.',
             'Fair Token Distribution Model: Adopts an ethical approach to token distribution, rewarding contributions with real-time value, ensuring equity and transparency.',
@@ -105,7 +107,9 @@ export const projects: Project[] = [
             'Educational Initiatives: Invests in user education and community engagement, empowering users to maximize platform benefits and contribute to its evolution.',
             'Targeted Marketing for User Growth: Employs strategic marketing to attract a diverse user base, demystifying blockchain and AI to encourage mainstream adoption.'
           ],
-          ['This business model represents Bitcash\'s commitment to a sustainable, equitable digital economy, leveraging community input and innovation for collective growth.'],
+          [
+            "This business model represents Bitcash's commitment to a sustainable, equitable digital economy, leveraging community input and innovation for collective growth."
+          ]
         ]
       },
       tokenomics: {
@@ -120,22 +124,25 @@ export const projects: Project[] = [
             'Equitable Distribution Model: Adopts a fair distribution system, akin to traditional shareholder models, ensuring tokens reflect real value and contributions.',
             'Transparent Token Valuation: Focuses on transparency and real value creation in token distribution, avoiding speculation for stable economic foundations.',
             'Governance Participation: Allows token holders to engage in governance, contributing to the platform’s direction and policies, emphasizing democratic participation.',
-            'Economic Adaptability: Maintains a flexible tokenomics strategy, responsive to the community and platform\'s evolving needs for a balanced digital economy.',
+            "Economic Adaptability: Maintains a flexible tokenomics strategy, responsive to the community and platform's evolving needs for a balanced digital economy.",
             'Vision of Shared Prosperity: Aims to build a new global economy where Bitcash tokens underpin a system of innovation, participation, and shared benefits, transcending traditional economic barriers.'
-          ],
+          ]
         ]
-      },
+      }
     }
   },
   {
     id: 2,
     title: 'Masterbots',
     slug: '',
-    pitch: 'Elevating AI Beyond ChatGPT: Specialized Chatbots, Social Sharing and User-Friendly Innovation',
+    pitch:
+      'Elevating AI Beyond ChatGPT: Specialized Chatbots, Social Sharing and User-Friendly Innovation',
     fundraiseGoal: '$200,000',
     maxAllocation: '$10,000',
     heroImage: '/images/projects/masterbots.png',
     thumbnailImage: '/images/projects/masterbots.png',
+    thumbnailImageBlurDataURL: '', // replace by getter fucntion
+    heroImageBlurDataURL: '', // replace by getter fucntion
     badgeText: 'COMING SOON',
     linkPath: '#',
     auctionId: 9,
@@ -147,40 +154,28 @@ export const projects: Project[] = [
     content: {
       highlights: {
         title: 'Highlights',
-        content: [
-          [],
-        ]
+        content: [[]]
       },
       product: {
         title: 'Product Overview',
-        content: [
-          []
-        ]
+        content: [[]]
       },
       problem: {
         title: 'Problem',
-        content: [
-          []
-        ]
+        content: [[]]
       },
       solution: {
         title: 'Solution',
-        content: [
-          [],
-        ]
+        content: [[]]
       },
       businessModel: {
         title: 'Business Model',
-        content: [
-          []
-        ]
+        content: [[]]
       },
       tokenomics: {
         title: 'Tokenomics',
-        content: [
-          [],
-        ]
-      },
+        content: [[]]
+      }
     }
   },
   {
@@ -192,6 +187,8 @@ export const projects: Project[] = [
     maxAllocation: '$10,000',
     heroImage: '/images/projects/wizartworld.png',
     thumbnailImage: '/images/projects/wizartworld.png',
+    thumbnailImageBlurDataURL: '', // replace by getter fucntion
+    heroImageBlurDataURL: '', // replace by getter fucntion
     badgeText: 'FUTURE',
     linkPath: '#',
     token: TestnetMBOTSPL,
@@ -202,40 +199,28 @@ export const projects: Project[] = [
     content: {
       highlights: {
         title: 'Highlights',
-        content: [
-          [],
-        ]
+        content: [[]]
       },
       product: {
         title: 'Product Overview',
-        content: [
-          []
-        ]
+        content: [[]]
       },
       problem: {
         title: 'Problem',
-        content: [
-          []
-        ]
+        content: [[]]
       },
       solution: {
         title: 'Solution',
-        content: [
-          [],
-        ]
+        content: [[]]
       },
       businessModel: {
         title: 'Business Model',
-        content: [
-          []
-        ]
+        content: [[]]
       },
       tokenomics: {
         title: 'Tokenomics',
-        content: [
-          [],
-        ]
-      },
+        content: [[]]
+      }
     }
   }
 ]
@@ -248,13 +233,23 @@ export interface Project {
   fundraiseGoal: string
   maxAllocation: string
   heroImage: string
+  heroImageBlurDataURL: string
   thumbnailImage: string
+  thumbnailImageBlurDataURL: string
   badgeText: string
   linkPath: string
   twitterUsername: string
   telegramGroup: string
   discordServer: string
-  content: Record<'highlights' | 'product' | 'problem' | 'solution' | 'businessModel' | 'tokenomics', Record<'title' | 'content', string | string[][]>>
+  content: Record<
+    | 'highlights'
+    | 'product'
+    | 'problem'
+    | 'solution'
+    | 'businessModel'
+    | 'tokenomics',
+    Record<'title' | 'content', string | string[][]>
+  >
   auctionId?: number
   token?: TokenContractData
   presaleOpen?: boolean
@@ -266,3 +261,25 @@ export type ProjectWithAuction = Required<
   Pick<Project, 'auctionId' | 'token'>
 > &
   Project
+
+export async function getProjectBySlug(slug: string) {
+  const project = projects.find(p => p.slug == slug)
+  if (!project) return null
+  return replaceBlurDataURL(project)
+}
+
+export async function getProjects() {
+  return Promise.all(projects.map(async p => await replaceBlurDataURL(p)))
+}
+
+async function replaceBlurDataURL(project: Project): Promise<Project> {
+  // console.log({
+  //   heroImageBlurDataURL: await create L(project.heroImage),
+  //   thumbnailImageBlurDataURL: await createBlurDataURL(project.thumbnailImage)
+  // })
+  return {
+    ...project
+    // heroImageBlurDataURL: await createBlurDataURL(project.heroImage),
+    // thumbnailImageBlurDataURL: await createBlurDataURL(project.thumbnailImage)
+  }
+}

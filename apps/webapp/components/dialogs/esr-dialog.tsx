@@ -116,7 +116,6 @@ function EsrDialog() {
   const searchParams = useSearchParams()
   const { open, toggleOpen, esr } = useSignatureRequest()
   const code = esr?.encode() || ''
-  console.log('esr code', code)
 
   // never show the qr on mobile or bitcash explorer
   const hideQr =
@@ -173,4 +172,3 @@ const SigningRequestProvider = ({ children }: { children: ReactNode }) => {
 }
 
 export { SigningRequestProvider, useSignatureRequest }
-

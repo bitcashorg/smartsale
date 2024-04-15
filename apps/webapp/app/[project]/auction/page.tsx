@@ -1,17 +1,11 @@
-import { AuctionBids } from '@/components/pages/auction/auction-bids'
-import { AuctionOrders } from '@/components/pages/auction/auction-orders'
-import { ClaimTokens } from '@/components/pages/auction/claim-tokens'
-import { RegisterAddress } from '@/components/pages/auction/register-address'
+import { AuctionBids } from '@/components/routes/auction/auction-bids'
+import { AuctionOrders } from '@/components/routes/auction/auction-orders'
+import { ClaimTokens } from '@/components/routes/auction/claim-tokens'
+import { RegisterAddress } from '@/components/routes/project/register-address'
 import { Tabs } from '@/components/ui/tabs'
-import { ProjectWithAuction, projects } from '@/lib/projects'
-import { Metadata } from 'next'
+import { ProjectWithAuction, getProjectBySlug } from '@/lib/projects'
 import { redirect } from 'next/navigation'
 import React from 'react'
-
-export const metadata: Metadata = {
-  title: 'bitcash auction | bitlauncher',
-  description: 'Invest in the intelligent future and join the Ai/Web3 revolution now!',
-}
 
 const auctionPageClassNames = {
   tabCard:
@@ -23,7 +17,7 @@ export default async function AuctionPage({
 }: {
   params: { project: string }
 }) {
-  const p = await new Promise((resolve) => resolve(projects.find(p => p.slug == params.project))).then((p) => p as ProjectWithAuction)
+  const p = await getProjectBySlug(params.project)
   if (!p || (!p.auctionId && !p.registrationOpen)) redirect('/')
   const project = p as ProjectWithAuction
 
@@ -74,7 +68,7 @@ export default async function AuctionPage({
         <Tabs tabs={tabs} />
       </section>
 
-      <hr className="border-gray-600/80 mt-24 mx-auto max-w-screen-xl" />
+      <hr className="max-w-screen-xl mx-auto mt-24 border-gray-600/80" />
     </div>
   )
 }

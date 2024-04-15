@@ -25,7 +25,7 @@ jobs:
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
         with:
-          vercel_project_id: prj_k5bYwz7n5hAUFdrWE986D91RiMbW
+          vercel_project_id: prj_Bf0q4Q5mAwPh404L36RsGFOB84Qu
           vercel_team_id: team_7PAgeqjbXkY6qdxNIEKLbVSC
       - name: Get URL
         run: echo "https://${{ steps.vercel_preview_url.outputs.preview_url }}"
@@ -36,10 +36,9 @@ jobs:
         with:
           urls: |
             "https://${{ steps.vercel_preview_url.outputs.preview_url }}"
-            "https://${{ steps.vercel_preview_url.outputs.preview_url }}/how-it-works"
+            "https://${{ steps.vercel_preview_url.outputs.preview_url }}/about"
             "https://${{ steps.vercel_preview_url.outputs.preview_url }}/security"
             "https://${{ steps.vercel_preview_url.outputs.preview_url }}/bitcash-bitlauncher"
-            "https://${{ steps.vercel_preview_url.outputs.preview_url }}/bitcash-bitlauncher/auction"
           # budgetPath: '.github/lighthouse/budget.json'
           uploadArtifacts: true
           temporaryPublicStorage: true

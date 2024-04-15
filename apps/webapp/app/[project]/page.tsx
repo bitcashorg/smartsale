@@ -1,16 +1,10 @@
-import { projects, ProjectWithAuction } from '@/lib/projects'
-
+import { getProjectBySlug } from '@/lib/projects'
 import { redirect } from 'next/navigation'
+import { cn } from '@/lib/utils'
+import { ProjectHeader } from '@/components/routes/project/project-header'
 
-const sectionWithBgClassNames = 'flex flex-col gap-11 px-3 w-full mx-auto max-w-screen-xl md:px-6 lg:px-11 w-full bg-primary/70 backdrop-xl rounded-3xl py-10 md:py-16 lg:py-24'
-const sectionWithoutBgClassNames = sectionWithBgClassNames.replace('bg-primary/70 backdrop-xl rounded-3xl ', '')
-
-export default async function ProjectPage({
-  params
-}: {
-  params: { project: string }
-}) {
-  const project = await new Promise((resolve) => resolve(projects.find(p => p.slug == params.project))).then((p) => p as ProjectWithAuction)
+export default async function ProjectPage({ params }: ProjectPageProps) {
+  const project = await getProjectBySlug(params.project)
   if (!project) redirect('/')
 
   const projectContentObjectKeys = Object.keys(project.content)
@@ -18,47 +12,72 @@ export default async function ProjectPage({
 
   return (
     <>
-      <div id="project-details" />
-      {/* // ! ========= CONTENT ORDER MUST BE AS: 1. highlights, 2. product, 3. problem, 4. solution, 5. bussinessModel and 6. tokenomics ========= */}
-      {projectContentObjectKeys.map((key, index) => {
-        const pcKey = key as keyof typeof projectContent
+      <div className="flex min-h-[calc(83vh-4rem)] flex-col">
+        <ProjectHeader project={project} />
 
-        return (
-          // ? Odds gets background, evens gets no background
-          <section key={key} className={index % 2 === 0 ? sectionWithBgClassNames : sectionWithoutBgClassNames}>
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-              {projectContent[pcKey].title}
-            </h2>
-            <div className="flex flex-col w-full gap-6">
-              {(projectContent[pcKey].content as string[][]).map((content, index) => {
-                if (content.every((c, i) => c.includes(':'))) {
-                  return (
-                    <ul key={`${index}__${(projectContent[pcKey].title as string).replace(/\s/g, '-')}`} className="flex flex-col gap-2 list-outside list-disc px-6">
-                      {content.map(item => (
-                        <li key={`${item}__list-item`}>
-                          {item.split(':').map((text, index) => (
-                            <span key={index} className={!index ? 'font-bold' : ''}>
-                              {text}{!index ? ': ' : ''}
-                            </span>
-                          ))}
-                        </li>
-                      ))}
-                    </ul>
-                  )
-                }
+        <div className="container py-24">
+          {projectContentObjectKeys.map((key, index) => {
+            const pcKey = key as keyof typeof projectContent
 
-                return content.map((item, index) => (
-                  <p key={`${index}__${(projectContent[pcKey].title as string).replace(/\s/g, '-')}`} className="md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                    {item}
-                  </p>
-                ))
-              })}
-            </div>
-          </section>
-        )
-      })}
+            return (
+              <section
+                key={key}
+                className={cn(
+                  'mx-auto flex w-full max-w-screen-xl flex-col gap-11 px-3 py-10 md:px-6 md:py-16 lg:px-11 lg:py-24',
+                  index % 2 === 0 ? 'backdrop-xl rounded-3xl bg-primary/70' : ''
+                )}
+              >
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                  {projectContent[pcKey].title}
+                </h2>
+                <div className="flex w-full flex-col gap-6">
+                  {(projectContent[pcKey].content as string[][]).map(
+                    (content, index) => {
+                      if (content.every((c, i) => c.includes(':'))) {
+                        return (
+                          <ul
+                            key={`${index}__${(projectContent[pcKey].title as string).replace(/\s/g, '-')}`}
+                            className="flex list-outside list-disc flex-col gap-2 px-6"
+                          >
+                            {content.map(item => (
+                              <li key={`${item}__list-item`}>
+                                {item.split(':').map((text, index) => (
+                                  <span
+                                    key={index}
+                                    className={index === 0 ? 'font-bold' : ''}
+                                  >
+                                    {text}
+                                    {index === 0 ? ': ' : ''}
+                                  </span>
+                                ))}
+                              </li>
+                            ))}
+                          </ul>
+                        )
+                      }
 
-      <hr className="border-gray-600/80 mt-24 mx-auto max-w-screen-xl" />
+                      return content.map((item, index) => (
+                        <p
+                          key={`${index}__${(projectContent[pcKey].title as string).replace(/\s/g, '-')}`}
+                          className="md:text-xl lg:text-base xl:text-xl"
+                        >
+                          {item}
+                        </p>
+                      ))
+                    }
+                  )}
+                </div>
+              </section>
+            )
+          })}
+        </div>
+
+        <hr className="mx-auto mt-24 max-w-screen-xl border-gray-600/80" />
+      </div>
     </>
   )
+}
+
+type ProjectPageProps = {
+  params: { project: string }
 }

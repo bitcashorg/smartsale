@@ -27,7 +27,7 @@ const DropdownMenuSubTrigger = React.forwardRef<
   React.ComponentPropsWithoutRef<typeof DropdownMenuPrimitive.SubTrigger> & {
     inset?: boolean
   }
-// @ts-ignore
+  // @ts-ignore
 >(({ className, inset, children, ...props }, ref) => (
   <DropdownMenuPrimitive.SubTrigger
     ref={ref}
@@ -50,7 +50,7 @@ const DropdownMenuSubContent = React.forwardRef<
   React.ElementRef<typeof DropdownMenuPrimitive.SubContent>,
   // @ts-ignore
   React.ComponentPropsWithoutRef<typeof DropdownMenuPrimitive.SubContent>
-// @ts-ignore
+  // @ts-ignore
 >(({ className, ...props }, ref) => (
   <DropdownMenuPrimitive.SubContent
     ref={ref}
@@ -69,7 +69,7 @@ const DropdownMenuContent = React.forwardRef<
   React.ElementRef<typeof DropdownMenuPrimitive.Content>,
   // @ts-ignore
   React.ComponentPropsWithoutRef<typeof DropdownMenuPrimitive.Content>
-// @ts-ignore
+  // @ts-ignore
 >(({ className, sideOffset = 4, ...props }, ref) => (
   <DropdownMenuPrimitive.Portal>
     <DropdownMenuPrimitive.Content
@@ -92,7 +92,7 @@ const DropdownMenuItem = React.forwardRef<
   React.ComponentPropsWithoutRef<typeof DropdownMenuPrimitive.Item> & {
     inset?: boolean
   }
-// @ts-ignore
+  // @ts-ignore
 >(({ className, inset, ...props }, ref) => (
   <DropdownMenuPrimitive.Item
     ref={ref}
@@ -111,7 +111,7 @@ const DropdownMenuCheckboxItem = React.forwardRef<
   React.ElementRef<typeof DropdownMenuPrimitive.CheckboxItem>,
   // @ts-ignore
   React.ComponentPropsWithoutRef<typeof DropdownMenuPrimitive.CheckboxItem>
-// @ts-ignore
+  // @ts-ignore
 >(({ className, children, checked, ...props }, ref) => (
   <DropdownMenuPrimitive.CheckboxItem
     ref={ref}
@@ -138,7 +138,7 @@ const DropdownMenuRadioItem = React.forwardRef<
   React.ElementRef<typeof DropdownMenuPrimitive.RadioItem>,
   // @ts-ignore
   React.ComponentPropsWithoutRef<typeof DropdownMenuPrimitive.RadioItem>
-// @ts-ignore
+  // @ts-ignore
 >(({ className, children, ...props }, ref) => (
   // @ts-ignore
   <DropdownMenuPrimitive.RadioItem
@@ -166,7 +166,7 @@ const DropdownMenuLabel = React.forwardRef<
   React.ComponentPropsWithoutRef<typeof DropdownMenuPrimitive.Label> & {
     inset?: boolean
   }
-// @ts-ignore
+  // @ts-ignore
 >(({ className, inset, ...props }, ref) => (
   <DropdownMenuPrimitive.Label
     ref={ref}
@@ -185,7 +185,7 @@ const DropdownMenuSeparator = React.forwardRef<
   React.ElementRef<typeof DropdownMenuPrimitive.Separator>,
   // @ts-ignore
   React.ComponentPropsWithoutRef<typeof DropdownMenuPrimitive.Separator>
-// @ts-ignore
+  // @ts-ignore
 >(({ className, ...props }, ref) => (
   <DropdownMenuPrimitive.Separator
     ref={ref}
@@ -209,9 +209,19 @@ const DropdownMenuShortcut = ({
 DropdownMenuShortcut.displayName = 'DropdownMenuShortcut'
 
 export {
-  DropdownMenu, DropdownMenuCheckboxItem, DropdownMenuContent, DropdownMenuGroup, DropdownMenuItem, DropdownMenuLabel, DropdownMenuPortal, DropdownMenuRadioGroup, DropdownMenuRadioItem, DropdownMenuSeparator,
-  DropdownMenuShortcut, DropdownMenuSub,
+  DropdownMenu,
+  DropdownMenuCheckboxItem,
+  DropdownMenuContent,
+  DropdownMenuGroup,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuPortal,
+  DropdownMenuRadioGroup,
+  DropdownMenuRadioItem,
+  DropdownMenuSeparator,
+  DropdownMenuShortcut,
+  DropdownMenuSub,
   DropdownMenuSubContent,
-  DropdownMenuSubTrigger, DropdownMenuTrigger
+  DropdownMenuSubTrigger,
+  DropdownMenuTrigger
 }
-

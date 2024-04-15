@@ -37,7 +37,7 @@ export function WithdrawCard() {
   // console.log('burn tokens state', other)
 
   return (
-    <Card className="w-full rounded-xl p-4 bg-muted/50">
+    <Card className="w-full rounded-xl bg-muted/50 p-4">
       <CardContent>
         <div className="flex flex-col space-y-4">
           <label htmlFor="withdraw" className="text-sm">

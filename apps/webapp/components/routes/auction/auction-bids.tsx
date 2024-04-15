@@ -18,7 +18,7 @@ import { TestnetEasyAuction, TestnetUSDCred } from 'smartsale-contracts'
 import { toSmallestUnit } from 'smartsale-lib'
 import { Address } from 'viem'
 import { useAccount, useWriteContract } from 'wagmi'
-import { wagmiConfig } from '../../providers'
+import { wagmiConfig } from '../../layout/providers'
 
 const queueStartElement =
   '0x0000000000000000000000000000000000000000000000000000000000000001'

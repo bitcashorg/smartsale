@@ -1,12 +1,13 @@
-import { LayoutContainer } from '@/components/layout-container'
-import { Upcoming } from '@/components/pages/home/upcoming'
-
-// console.log(_.groupBy(TestnetEasyAuction.abi.map(o => _.omit(o, ['inputs','outputs'])), 'type'))
+import { Upcoming } from '@/components/routes/home/upcoming'
+import { getProjects } from '@/lib/projects'
 
 export default async function IndexPage() {
+  // generate blur urls on server
+  const projects = await getProjects()
+
   return (
-    <LayoutContainer>
-      <Upcoming />
-    </LayoutContainer>
+    <div className="container">
+      <Upcoming projects={projects} />
+    </div>
   )
 }

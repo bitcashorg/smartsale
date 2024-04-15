@@ -12,7 +12,8 @@ import { useLocation } from 'react-use'
 import { eosEvmTestnet } from 'smartsale-env'
 import { WagmiProvider } from 'wagmi'
 import { sepolia } from 'wagmi/chains'
-import { SigningRequestProvider } from './dialogs/esr-dialog'
+import { SigningRequestProvider } from '../dialogs/esr-dialog'
+import { Transition } from '../shared/transition'
 
 const queryClient = new QueryClient()
 
@@ -39,11 +40,12 @@ export function Providers({ children, ...props }: ThemeProviderProps) {
   }, [location])
 
   useEffect(() => {
+    const isProd = process.env.NEXT_PUBLIC_APP_ENV === 'prod'
     async function loadVConsoleModule() {
       await import('@/lib/devtools')
     }
 
-    loadVConsoleModule()
+    !isProd && loadVConsoleModule()
   }, [])
 
   return (
@@ -67,7 +69,7 @@ export function Providers({ children, ...props }: ThemeProviderProps) {
                         }
                       }}
                     >
-                      {children}
+                      <Transition> {children}</Transition>
                     </GoogleReCaptchaProvider>
                   </SigningRequestProvider>
                 </RainbowKitProvider>
