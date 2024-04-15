@@ -52,7 +52,7 @@ const content: PageContentData = [
 ]
 
 export const metadata: Metadata = {
-  title: 'how it works | bitlauncher',
+  title: 'About | Bitlauncher',
   description:
     'Invest in the intelligent future and join the Ai/Web3 revolution now!'
 }

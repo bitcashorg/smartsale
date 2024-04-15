@@ -33,9 +33,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         >
           <Header />
           <Toaster />
-          <main className="container flex flex-1 flex-col py-5">
-            {children}
-          </main>
+          <main className="flex flex-col flex-1 py-5">{children}</main>
           <Footer />
         </Providers>
         <GoogleAnalytics gaId="G-78N0Z7NPQJ" />
@@ -50,8 +48,8 @@ interface RootLayoutProps {
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'bitlauncher',
-    template: '%s | bitlauncher'
+    absolute: 'Bitlaucher',
+    template: '%s | Bitlauncher'
   },
   description:
     'Invest in the intelligent future and join the Ai/Web3 revolution now!',

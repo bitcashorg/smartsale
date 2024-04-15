@@ -10,18 +10,24 @@ import { Suspense } from 'react'
 
 export function Header() {
   return (
-    <div className="container sticky top-0 z-50 flex h-16 items-center justify-between bg-background p-10">
-      <div className="flex h-full items-center">
+    <div className="container sticky top-0 z-50 flex items-center justify-between h-16 p-10 bg-background">
+      <div className="flex items-center h-full">
         <Link shallow href="/">
           <IconBitlauncher />
         </Link>
         <div className="flex gap-5 pl-10">
-          <Link shallow href="/about">
-            About
-          </Link>
-          <Link shallow href="/security">
-            Security
-          </Link>
+          {links.map(link => {
+            return (
+              <Link
+                shallow
+                key={link.href}
+                className="header-link"
+                href={link.href}
+              >
+                {link.text}
+              </Link>
+            )
+          })}
         </div>
       </div>
 
@@ -49,3 +55,9 @@ export function Header() {
     </div>
   )
 }
+
+const links = [
+  { href: '/about', text: 'About' },
+  { href: '/security', text: 'Security' },
+  { href: '/terms', text: 'Privacy' }
+] as const

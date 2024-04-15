@@ -99,6 +99,14 @@
 /* 5. #140E40 4. #1F124C 3. #2F1758 2. #401D66 1. #512275 0.#060A35 */
 
 @layer base {
+  * {
+    @apply border-border ring-offset-ring focus-within:ring-ring focus-within:ring-offset-ring focus-visible:ring-ring focus-visible:ring-offset-ring before:focus-visible:ring-ring before:focus-visible:ring-offset-ring;
+  }
+  a:focus-visible {
+    outline: 3px solid hsl(var(--ring));
+    outline-offset: 2px;
+    outline-radius: 2px;
+  }
   body {
     @apply bg-background text-foreground;
   }
@@ -247,4 +255,9 @@ input[type='number'] {
 /* LAYOUT */
 .content-container {
   @apply flex flex-col w-full max-w-screen-lg gap-10 py-24 mx-auto;
+}
+
+.header-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px; /* Adjust the offset as needed */
 }

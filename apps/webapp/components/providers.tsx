@@ -38,13 +38,14 @@ export function Providers({ children, ...props }: ThemeProviderProps) {
       )
   }, [location])
 
-  useEffect(() => {
-    async function loadVConsoleModule() {
-      await import('@/lib/devtools')
-    }
+  // TODO: disabled momentarily
+  // useEffect(() => {
+  //   async function loadVConsoleModule() {
+  //     await import('@/lib/devtools')
+  //   }
 
-    loadVConsoleModule()
-  }, [])
+  //   loadVConsoleModule()
+  // }, [])
 
   return (
     <NextThemesProvider {...props}>
