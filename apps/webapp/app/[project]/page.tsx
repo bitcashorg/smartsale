@@ -1,15 +1,9 @@
-import { projects, ProjectWithAuction } from '@/lib/projects'
+import { getProjectBySlug } from '@/lib/projects'
 import { redirect } from 'next/navigation'
-import { cn } from '@/lib/utils' // Importing cn instead of tw
+import { cn } from '@/lib/utils'
 
-export default async function ProjectPage({
-  params
-}: {
-  params: { project: string }
-}) {
-  const project = await new Promise(resolve =>
-    resolve(projects.find(p => p.slug == params.project))
-  ).then(p => p as ProjectWithAuction)
+export default async function ProjectPage({ params }: ProjectPageProps) {
+  const project = await getProjectBySlug(params.project)
   if (!project) redirect('/')
 
   const projectContentObjectKeys = Object.keys(project.content)
@@ -29,6 +23,7 @@ export default async function ProjectPage({
               index % 2 === 0 ? 'backdrop-xl rounded-3xl bg-primary/70' : ''
             )}
           >
+            {/* <ProjectHeader projectData={project} /> */}
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
               {projectContent[pcKey].title}
             </h2>
@@ -76,4 +71,8 @@ export default async function ProjectPage({
       <hr className="max-w-screen-xl mx-auto mt-24 border-gray-600/80" />
     </>
   )
+}
+
+type ProjectPageProps = {
+  params: { project: string }
 }

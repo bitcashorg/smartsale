@@ -1,6 +1,6 @@
 'use server'
 
-import { registerAddressSchema } from '@/lib/validators'
+import { RegisterAddressSchema } from '@/lib/validators'
 import { cookies } from 'next/headers'
 import { db } from 'smartsale-db'
 import { fromEntries } from 'smartsale-lib'
@@ -13,7 +13,7 @@ import { z } from 'zod'
 export async function registerAddress(formData: FormData) {
   try {
     const o = fromEntries(formData)
-    const data = registerAddressSchema.parse({
+    const data = RegisterAddressSchema.parse({
       ...o,
       project_id: parseInt(o.project_id)
     })
@@ -83,19 +83,21 @@ export async function generateShortLink(path: string) {
     const getShareLinkCookies = cookieStorage.get('bitlauncher-share-link')
     const resolved: DubShareLinkResponse = !getShareLinkCookies
       ? await axios
-        .post(
-          `https://api.dub.co/links?workspaceId=${process.env.DUB_WORKSPACE_ID}`,
-          {
-            domain: 'bitcash.to',
-            url: `https://bitlauncher.ai${path}`
-          }, {
-          headers: {
-            Authorization: `Bearer ${process.env.DUB_API_KEY}`,
-            'Content-Type': 'application/json'
-          },
-        })
-        .then(res => res.data)
-      : JSON.parse(getShareLinkCookies.value) as DubShareLinkResponse
+          .post(
+            `https://api.dub.co/links?workspaceId=${process.env.DUB_WORKSPACE_ID}`,
+            {
+              domain: 'bitcash.to',
+              url: `https://bitlauncher.ai${path}`
+            },
+            {
+              headers: {
+                Authorization: `Bearer ${process.env.DUB_API_KEY}`,
+                'Content-Type': 'application/json'
+              }
+            }
+          )
+          .then(res => res.data)
+      : (JSON.parse(getShareLinkCookies.value) as DubShareLinkResponse)
 
     if (!resolved) throw new Error('Failed to generate short link')
 
@@ -123,14 +125,14 @@ export async function getShortLink(key: string) {
     const getShareLinkCookies = cookieStorage.get('bitlauncher-share-link')
     const resolved: DubShareLinkResponse = !getShareLinkCookies
       ? await axios
-        .get(`https://api.dub.co/links/info?key=${key}`, {
-          headers: {
-            Authorization: `Bearer ${process.env.DUB_API_KEY}`,
-            'Content-Type': 'application/json'
-          }
-        })
-        .then(res => res.data)
-      : JSON.parse(getShareLinkCookies.value) as DubShareLinkResponse
+          .get(`https://api.dub.co/links/info?key=${key}`, {
+            headers: {
+              Authorization: `Bearer ${process.env.DUB_API_KEY}`,
+              'Content-Type': 'application/json'
+            }
+          })
+          .then(res => res.data)
+      : (JSON.parse(getShareLinkCookies.value) as DubShareLinkResponse)
 
     if (!resolved) throw new Error('Failed to retrieve short link')
 
@@ -157,7 +159,6 @@ export interface DubShareLinkResponse {
   shortLink: string
   qrCode: string
 }
-
 
 export type ActionState = {
   data?: string

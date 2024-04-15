@@ -99,14 +99,6 @@
 /* 5. #140E40 4. #1F124C 3. #2F1758 2. #401D66 1. #512275 0.#060A35 */
 
 @layer base {
-  * {
-    @apply border-border ring-offset-ring focus-within:ring-ring focus-within:ring-offset-ring focus-visible:ring-ring  focus-visible:ring-offset-ring before:focus-visible:ring-ring before:focus-visible:ring-offset-ring;
-  }
-  a:focus-visible {
-    outline: 3px solid hsl(var(--ring));
-    outline-offset: 2px;
-    outline-radius: 2px;
-  }
   body {
     @apply bg-background text-foreground;
   }
@@ -157,7 +149,7 @@ input[type='number'] {
 }
 
 .newsletter-wrapper {
-  @apply container mx-auto flex flex-col items-center rounded-3xl px-0 backdrop-blur-xl sm:text-center;
+  @apply container flex flex-col items-center px-0 mx-auto rounded-3xl backdrop-blur-xl sm:text-center;
 
   background: url('/images/newsletter-bg.png') center center no-repeat;
   background-size: cover;
@@ -239,4 +231,20 @@ input[type='number'] {
 *[data-title]:hover::after {
   opacity: 1;
   z-index: 100000 !important;
+}
+
+/* TYPOGRAPHY */
+.heading {
+  @apply text-3xl font-bold md:text-6xl;
+}
+.heading2 {
+  @apply text-2xl font-bold md:text-4xl;
+}
+.paragraph {
+  @apply text-base md:text-lg;
+}
+
+/* LAYOUT */
+.content-container {
+  @apply flex flex-col w-full max-w-screen-lg gap-10 py-24 mx-auto;
 }

@@ -1,84 +1,15 @@
-import Image from 'next/image'
-import React from 'react'
-import { cn } from '@/lib/utils' // Ensure this function is imported correctly
+import { PageContent, PageContentData } from '@/components/shared/content'
+import { Metadata } from 'next'
 
-export default function HowItWorksPage() {
+export default function AboutPage() {
   return (
-    <div
-      className={'mx-auto flex w-full max-w-screen-lg flex-col gap-10 py-24'}
-    >
-      <Content data={content} />
+    <div className="content-container">
+      <PageContent data={content} />
     </div>
   )
 }
 
-function Content({ data }: { data: ContentData }) {
-  return (
-    <>
-      {data.map((item, index) => {
-        switch (item.type) {
-          case 'h1':
-          case 'h2':
-            return (
-              <item.type
-                key={index}
-                className={cn(
-                  `text-${item.type === 'h1' ? '3xl md:6xl' : '2xl md:4xl'} font-bold`
-                )}
-              >
-                {item.text}
-              </item.type>
-            )
-          case 'p':
-            return (
-              <p key={index} className={'text-base md:text-lg'}>
-                {item.text}
-              </p>
-            )
-          case 'ul':
-            return (
-              <ul key={index} className={'mt-2 list-disc pl-6'}>
-                {item.items.map((li, liIndex) => (
-                  <li key={liIndex}>{li}</li>
-                ))}
-              </ul>
-            )
-          case 'Image':
-            return (
-              <Image
-                key={index}
-                src={item.src}
-                alt={item.alt}
-                width={item.width}
-                height={item.height}
-                layout={item.layout}
-                className={cn(item.className)}
-              />
-            )
-          default:
-            return null
-        }
-      })}
-    </>
-  )
-}
-
-type ContentItem =
-  | { type: 'h1' | 'h2' | 'p'; text: string }
-  | { type: 'ul'; items: string[] }
-  | {
-      type: 'Image'
-      src: string
-      alt: string
-      width: number
-      height: number
-      layout: 'responsive'
-      className: string
-    }
-
-type ContentData = ContentItem[]
-
-const content: ContentData = [
+const content: PageContentData = [
   { type: 'h1', text: 'How Bitlauncher Works' },
   {
     type: 'p',
@@ -119,3 +50,9 @@ const content: ContentData = [
     text: 'These characteristics allow the platform to create a fair pricing dynamic in which both participants get either what they were willing to receive or more. Additionally the batched time nature of the auctions greatly reduces frontrunning and gas bidding wars, decreasing the amount of extracted value from auctioneers and bidders.'
   }
 ]
+
+export const metadata: Metadata = {
+  title: 'how it works | bitlauncher',
+  description:
+    'Invest in the intelligent future and join the Ai/Web3 revolution now!'
+}

@@ -1,18 +1,23 @@
 import '@/app/globals.css'
+import { Footer } from '@/components/layout/footer'
+import { Header } from '@/components/layout/header'
+
 import { Providers } from '@/components/providers'
 import { cn } from '@/lib/utils'
 import { GoogleAnalytics } from '@next/third-parties/google'
 import '@rainbow-me/rainbowkit/styles.css'
 import { Metadata } from 'next'
+
 import { Open_Sans } from 'next/font/google'
 import React from 'react'
+import { Toaster } from 'react-hot-toast'
 
 const openSans = Open_Sans({
   subsets: ['latin', 'latin-ext'],
   weight: ['400', '500', '600', '700', '800']
 })
 
-export default function RootLayout({ children, ...props }: RootLayoutProps) {
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html
       lang="en"
@@ -26,7 +31,12 @@ export default function RootLayout({ children, ...props }: RootLayoutProps) {
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <Header />
+          <Toaster />
+          <main className="container flex flex-col flex-1 py-5">
+            {children}
+          </main>
+          <Footer />
         </Providers>
         <GoogleAnalytics gaId="G-78N0Z7NPQJ" />
       </body>

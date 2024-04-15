@@ -1,35 +1,26 @@
 import React from 'react'
+import { Metadata } from 'next'
+import {
+  PageContent,
+  PageContentData,
+  ContentTextType
+} from '@/components/shared/content'
 
 export default function SecurityTips() {
   return (
-    <div className="flex flex-col w-full max-w-screen-lg gap-10 py-24 mx-auto">
-      <h1 className="text-3xl font-bold md:text-6xl">
-        Security Recommendations for Bitlauncher Participants
-      </h1>
-      <p className="text-base md:text-lg">
-        Participating in auctions on Bitlauncher, a fork of Gnosis, requires
-        vigilance and awareness of various security threats. Here are some
-        crucial tips to help keep your investments safe:
-      </p>
-      {securityTips.map((tip, index) => (
-        <div key={index}>
-          <h2 className="text-2xl font-bold md:text-4xl">
-            {index + 1}. {tip.title}
-          </h2>
-          <p className="text-base md:text-lg">{tip.content}</p>
-        </div>
-      ))}
-      <hr className="mt-24 border-gray-600/80" />
+    <div className="content-container">
+      <PageContent data={content} />
     </div>
   )
 }
 
-interface SecurityTip {
-  title: string
-  content: string
+export const metadata: Metadata = {
+  title: 'security | bitlauncher',
+  description:
+    'Invest in the intelligent future and join the Ai/Web3 revolution now!'
 }
 
-const securityTips: SecurityTip[] = [
+const securityTips = [
   {
     title: 'Beware of Phishing Attacks',
     content:
@@ -66,3 +57,17 @@ const securityTips: SecurityTip[] = [
       'If you encounter any suspicious activity or believe you are a victim of a scam, contact the official Bitlauncher support immediately.'
   }
 ] as const
+
+// Define the content using mapped security tips
+const content: PageContentData = [
+  { type: 'h1', text: 'Security Recommendations for Bitlauncher Participants' },
+  {
+    type: 'p',
+    text: 'Participating in auctions on Bitlauncher, a fork of Gnosis, requires vigilance and awareness of various security threats. Here are some crucial tips to help keep your investments safe:'
+  },
+  ...securityTips.flatMap((tip, index) => [
+    { type: 'h2' as ContentTextType, text: `${index + 1}. ${tip.title}` },
+    { type: 'p' as ContentTextType, text: tip.content }
+  ])
+  // { type: 'hr' }
+]

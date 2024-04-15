@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button'
 import { useSession } from '@/hooks/use-session'
 import { supabase } from '@/lib/supabase'
 import { formatAddress, fromEntries } from 'smartsale-lib'
-import { registerAddressSchema } from '@/lib/validators'
+import { RegisterAddressSchema } from '@/lib/validators'
 import { useEffect, useState } from 'react'
 import { useFormStatus } from 'react-dom'
 import { useAccount } from 'wagmi'
@@ -23,7 +23,7 @@ export function RegisterAddress({ projectId }: { projectId: number }) {
         ...o,
         project_id: parseInt(o.project_id)
       }
-      const { success } = registerAddressSchema.safeParse(data)
+      const { success } = RegisterAddressSchema.safeParse(data)
       if (!success) alert('invalid address or project id')
 
       await registerAddress(formData)
