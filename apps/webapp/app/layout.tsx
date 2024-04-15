@@ -21,7 +21,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html
       lang="en"
-      className={cn('scroll-smooth antialiased', openSans.className)}
+      className={cn('antialiased', openSans.className)}
       suppressHydrationWarning
     >
       <body>
