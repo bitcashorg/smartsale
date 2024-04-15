@@ -39,14 +39,14 @@ export function Providers({ children, ...props }: ThemeProviderProps) {
       )
   }, [location])
 
-  // TODO: disabled momentarily
-  // useEffect(() => {
-  //   async function loadVConsoleModule() {
-  //     await import('@/lib/devtools')
-  //   }
+  useEffect(() => {
+    const isProd = process.env.NEXT_PUBLIC_APP_ENV === 'prod'
+    async function loadVConsoleModule() {
+      await import('@/lib/devtools')
+    }
 
-  //   loadVConsoleModule()
-  // }, [])
+    !isProd && loadVConsoleModule()
+  }, [])
 
   return (
     <NextThemesProvider {...props}>

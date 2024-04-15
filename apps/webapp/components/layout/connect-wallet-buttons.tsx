@@ -11,20 +11,19 @@ export function ConnectWalletButtons() {
   const { openConnectModal } = useConnectModal()
   return (
     <>
-      {session ? (
-        <Button
-          className={cn(
-            buttonVariants({
-              variant: 'outline',
-              radius: 'full'
-            }),
-            'border-transparent px-10 md:border-accent'
-          )}
-          onClick={() => openConnectModal && openConnectModal()}
-        >
-          Connect
-        </Button>
-      ) : (
+      {session ? null : (
+        // <Button
+        //   className={cn(
+        //     buttonVariants({
+        //       variant: 'outline',
+        //       radius: 'full'
+        //     }),
+        //     'border-transparent px-10 md:border-accent'
+        //   )}
+        //   onClick={() => openConnectModal && openConnectModal()}
+        // >
+        //   Connect
+        // </Button>
         <BitcashAccessButton
           buttonStyle={{
             variant: 'secondary',
