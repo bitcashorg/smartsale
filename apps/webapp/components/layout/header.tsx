@@ -1,4 +1,3 @@
-'use client'
 import Link from 'next/link'
 import * as React from 'react'
 import { IconBitlauncher, IconDiscord } from '../ui/icons'
@@ -6,8 +5,7 @@ import { HeaderButtons } from './header-buttons'
 import { buttonVariants } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 import { Suspense } from 'react'
-import UseAnimations from 'react-useanimations'
-import menu4 from 'react-useanimations/lib/menu4'
+import { MobileNav } from './mobile-nav'
 
 export function Header() {
   return (
@@ -56,7 +54,7 @@ export function Header() {
           </div>
 
           <div className="flex md:hidden">
-            <UseAnimations strokeColor="white" animation={menu4} size={56} />
+            <MobileNav />
           </div>
         </div>
       </div>

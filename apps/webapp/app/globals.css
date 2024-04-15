@@ -261,3 +261,7 @@ input[type='number'] {
   text-decoration: underline;
   text-underline-offset: 4px; /* Adjust the offset as needed */
 }
+
+.max-h-mobile-nav {
+  height: calc(100vh - 5rem) !important;
+}
