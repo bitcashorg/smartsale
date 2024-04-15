@@ -12,10 +12,8 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 
   return (
     <>
-      <div className="flex flex-col">
-        <header className="relative min-h-[calc(83vh-4rem)] w-screen  py-40 backdrop-blur-[2.5px]">
-          <ProjectHeader project={project} />
-        </header>
+      <div className="flex min-h-[calc(83vh-4rem)] flex-col">
+        <ProjectHeader project={project} />
 
         <div className="container py-24">
           {projectContentObjectKeys.map((key, index) => {

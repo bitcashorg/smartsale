@@ -10,7 +10,7 @@ import { Metadata } from 'next'
 
 import { Open_Sans } from 'next/font/google'
 import React from 'react'
-import { Toaster } from 'react-hot-toast'
+// import { Toaster } from 'react-hot-toast'
 
 const openSans = Open_Sans({
   subsets: ['latin', 'latin-ext'],
@@ -32,8 +32,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
           disableTransitionOnChange
         >
           <Header />
-          <Toaster />
-          <main className="flex flex-col flex-1 py-5">{children}</main>
+          {/* <Toaster /> */}
+          <main className="flex flex-col flex-1">{children}</main>
           <Footer />
         </Providers>
         <GoogleAnalytics gaId="G-78N0Z7NPQJ" />

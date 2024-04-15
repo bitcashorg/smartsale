@@ -3,7 +3,7 @@ import { AuctionOrders } from '@/components/routes/auction/auction-orders'
 import { ClaimTokens } from '@/components/routes/auction/claim-tokens'
 import { RegisterAddress } from '@/components/routes/auction/register-address'
 import { Tabs } from '@/components/ui/tabs'
-import { ProjectWithAuction, getProjectBySlug, projects } from '@/lib/projects'
+import { ProjectWithAuction, getProjectBySlug } from '@/lib/projects'
 import { redirect } from 'next/navigation'
 import React from 'react'
 
@@ -68,7 +68,7 @@ export default async function AuctionPage({
         <Tabs tabs={tabs} />
       </section>
 
-      <hr className="mx-auto mt-24 max-w-screen-xl border-gray-600/80" />
+      <hr className="max-w-screen-xl mx-auto mt-24 border-gray-600/80" />
     </div>
   )
 }

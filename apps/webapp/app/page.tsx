@@ -5,5 +5,9 @@ export default async function IndexPage() {
   // generate blur urls on server
   const projects = await getProjects()
 
-  return <Upcoming projects={projects} />
+  return (
+    <div className="container">
+      <Upcoming projects={projects} />
+    </div>
+  )
 }
