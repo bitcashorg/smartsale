@@ -107,7 +107,8 @@
     outline-offset: 2px;
     outline-radius: 2px;
   }
-  body {
+  body,
+  html {
     @apply bg-background text-foreground;
   }
 }
@@ -262,6 +263,9 @@ input[type='number'] {
   text-underline-offset: 4px; /* Adjust the offset as needed */
 }
 
-.max-h-mobile-nav {
+.mobile-nav {
   height: calc(100vh - 5rem) !important;
+  width: 100vw;
+  overflow: hidden;
+  @apply fixed inset-x-0 flex flex-col items-center justify-center h-full gap-20 p-5 pt-0 overflow-hidden border-b top-20 bg-background;
 }

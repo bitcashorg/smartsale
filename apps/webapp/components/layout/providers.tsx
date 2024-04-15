@@ -13,8 +13,7 @@ import { eosEvmTestnet } from 'smartsale-env'
 import { WagmiProvider } from 'wagmi'
 import { sepolia } from 'wagmi/chains'
 import { SigningRequestProvider } from '../dialogs/esr-dialog'
-
-import { Transition } from './transition'
+import { Transition } from '../shared/transition'
 
 const queryClient = new QueryClient()
 

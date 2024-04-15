@@ -1,15 +1,16 @@
 'use client'
 import { useEffect } from 'react'
-import { AnimatePresence, motion } from 'framer-motion'
 import { useToggle } from 'react-use'
 import UseAnimations from 'react-useanimations'
 import menu4 from 'react-useanimations/lib/menu4'
 import { NavLinks } from './nav-links'
+import { Transition } from '../shared/transition'
+import { AnimatePresence } from 'framer-motion'
 
 export function MobileNav() {
   const [open, toggleOpen] = useToggle(false)
 
-  // useEffect to control the body scroll
+  // control the body scroll
   useEffect(() => {
     document.body.style.overflow = open ? 'hidden' : 'auto'
     return () => {
@@ -18,27 +19,20 @@ export function MobileNav() {
   }, [open])
 
   return (
-    <>
+    <AnimatePresence>
       <UseAnimations
-        reverse={open}
         onClick={toggleOpen}
         strokeColor="white"
         animation={menu4}
         size={56}
       />
-      <AnimatePresence>
-        {open ? (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.2 }}
-            className="fixed inset-x-0 flex flex-col items-center justify-center h-full gap-20 p-5 pt-0 overflow-hidden border-b max-h-mobile-nav shadow-4xl top-20 bg-background"
-          >
+      {open ? (
+        <Transition duration={0.2}>
+          <div className="mobile-nav">
             <NavLinks mobile />
-          </motion.div>
-        ) : null}
-      </AnimatePresence>
-    </>
+          </div>
+        </Transition>
+      ) : null}
+    </AnimatePresence>
   )
 }

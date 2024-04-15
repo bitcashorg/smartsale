@@ -11,17 +11,17 @@ import { NavLinks } from './nav-links'
 export function Header() {
   return (
     <div className="sticky top-0 z-50 flex h-16 bg-background md:p-10">
-      <div className="container flex items-center justify-between">
+      <div className="container flex items-center justify-between bg-background">
         <div className="flex items-center h-full">
           <Link shallow href="/">
             <IconBitlauncher />
           </Link>
-          <div className="hidden gap-5 pl-10 md:flex">
+          <div className="hidden gap-10 pl-16 md:flex">
             <NavLinks />
           </div>
         </div>
         <div className="flex">
-          <div className="items-center hidden gap-5 md:flex">
+          <div className="items-center hidden gap-8 md:flex">
             <Link
               href="https://discord.gg/a4gwhT9G"
               target="_blank"
@@ -42,7 +42,7 @@ export function Header() {
               <HeaderButtons />
             </Suspense>
           </div>
-          <div className="flex md:hidden ">
+          <div className="flex ">
             <MobileNav />
           </div>
         </div>
