@@ -12,7 +12,9 @@ import { useLocation } from 'react-use'
 import { eosEvmTestnet } from 'smartsale-env'
 import { WagmiProvider } from 'wagmi'
 import { sepolia } from 'wagmi/chains'
-import { SigningRequestProvider } from './dialogs/esr-dialog'
+import { SigningRequestProvider } from '../dialogs/esr-dialog'
+
+import { Transition } from './transition'
 
 const queryClient = new QueryClient()
 
@@ -68,7 +70,7 @@ export function Providers({ children, ...props }: ThemeProviderProps) {
                         }
                       }}
                     >
-                      {children}
+                      <Transition> {children}</Transition>
                     </GoogleReCaptchaProvider>
                   </SigningRequestProvider>
                 </RainbowKitProvider>

@@ -3,7 +3,7 @@ import { useEffect } from 'react'
 import { Abi, Address, formatUnits } from 'viem'
 import { useBalance, useReadContracts } from 'wagmi'
 import { watchBlockNumber } from '@wagmi/core'
-import { wagmiConfig } from '@/components/providers'
+import { wagmiConfig } from '@/components/layout/providers'
 import { eosEvmTestnet } from 'smartsale-env'
 
 export function useNativeBalance(address?: Address) {

@@ -2,7 +2,7 @@ import '@/app/globals.css'
 import { Footer } from '@/components/layout/footer'
 import { Header } from '@/components/layout/header'
 
-import { Providers } from '@/components/providers'
+import { Providers } from '@/components/layout/providers'
 import { cn } from '@/lib/utils'
 import { GoogleAnalytics } from '@next/third-parties/google'
 import '@rainbow-me/rainbowkit/styles.css'
@@ -33,7 +33,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         >
           <Header />
           {/* <Toaster /> */}
-          <main className="flex flex-col flex-1">{children}</main>
+          <main className="flex flex-1 flex-col">{children}</main>
           <Footer />
         </Providers>
         <GoogleAnalytics gaId="G-78N0Z7NPQJ" />
