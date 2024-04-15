@@ -28,7 +28,7 @@ export function Upcoming({ projects }: { projects: Project[] }) {
         {projects.map((item, index) => (
           <div
             key={`upcoming-auctions-item-${index}`}
-            className="box-border size-full justify-center"
+            className="box-border size-full justify-center backdrop-blur-lg rounded-xl border border-card/30 bg-card/60"
           >
             <AuctionCard {...item} />
           </div>
