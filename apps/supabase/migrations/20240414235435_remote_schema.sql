@@ -12,9 +12,7 @@ SET row_security = off;
 
 CREATE EXTENSION IF NOT EXISTS "pgsodium" WITH SCHEMA "pgsodium";
 
-CREATE SCHEMA IF NOT EXISTS "supabase_migrations";
-
-ALTER SCHEMA "supabase_migrations" OWNER TO "postgres";
+COMMENT ON SCHEMA "public" IS 'standard public schema';
 
 CREATE EXTENSION IF NOT EXISTS "pg_graphql" WITH SCHEMA "graphql";
 
@@ -28,20 +26,7 @@ CREATE EXTENSION IF NOT EXISTS "supabase_vault" WITH SCHEMA "vault";
 
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp" WITH SCHEMA "extensions";
 
-SET default_tablespace = '';
-
-SET default_table_access_method = "heap";
-
-CREATE TABLE IF NOT EXISTS "supabase_migrations"."schema_migrations" (
-    "version" "text" NOT NULL,
-    "statements" "text"[],
-    "name" "text"
-);
-
-ALTER TABLE "supabase_migrations"."schema_migrations" OWNER TO "postgres";
-
-ALTER TABLE ONLY "supabase_migrations"."schema_migrations"
-    ADD CONSTRAINT "schema_migrations_pkey" PRIMARY KEY ("version");
+ALTER PUBLICATION "supabase_realtime" OWNER TO "postgres";
 
 GRANT USAGE ON SCHEMA "public" TO "postgres";
 GRANT USAGE ON SCHEMA "public" TO "anon";
