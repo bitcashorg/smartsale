@@ -63,7 +63,7 @@ export function AuctionCard(props: Project) {
         <h3 className="text-xl font-bold text-neutral-600 dark:text-white">
           {title}
         </h3>
-        <p className="max-w-sm mt-2 text-sm text-neutral-600 dark:text-neutral-600">
+        <p className="max-w-sm mt-2 text-sm text-neutral-600 dark:text-white">
           {pitch}
         </p>
       </div>
