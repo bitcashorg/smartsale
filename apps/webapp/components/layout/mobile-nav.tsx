@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { useToggle } from 'react-use'
 import UseAnimations from 'react-useanimations'
 import menu4 from 'react-useanimations/lib/menu4'
+import { NavLinks } from './nav-links'
 
 export function MobileNav() {
   const [open, toggleOpen] = useToggle(false)
@@ -32,9 +33,9 @@ export function MobileNav() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
-            className="fixed inset-x-0 flex items-center justify-center h-full p-5 pt-0 overflow-hidden border-b max-h-mobile-nav shadow-4xl top-20 bg-background"
+            className="fixed inset-x-0 flex flex-col items-center justify-center h-full gap-20 p-5 pt-0 overflow-hidden border-b max-h-mobile-nav shadow-4xl top-20 bg-background"
           >
-            Menu
+            <NavLinks mobile />
           </motion.div>
         ) : null}
       </AnimatePresence>

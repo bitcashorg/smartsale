@@ -6,6 +6,7 @@ import { buttonVariants } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 import { Suspense } from 'react'
 import { MobileNav } from './mobile-nav'
+import { NavLinks } from './nav-links'
 
 export function Header() {
   return (
@@ -16,18 +17,7 @@ export function Header() {
             <IconBitlauncher />
           </Link>
           <div className="hidden gap-5 pl-10 md:flex">
-            {links.map(link => {
-              return (
-                <Link
-                  shallow
-                  key={link.href}
-                  className="header-link"
-                  href={link.href}
-                >
-                  {link.text}
-                </Link>
-              )
-            })}
+            <NavLinks />
           </div>
         </div>
         <div className="flex">
@@ -52,8 +42,7 @@ export function Header() {
               <HeaderButtons />
             </Suspense>
           </div>
-
-          <div className="flex md:hidden">
+          <div className="flex md:hidden ">
             <MobileNav />
           </div>
         </div>
@@ -61,9 +50,3 @@ export function Header() {
     </div>
   )
 }
-
-const links = [
-  { href: '/about', text: 'About' },
-  { href: '/security', text: 'Security' },
-  { href: '/terms', text: 'Privacy' }
-] as const
