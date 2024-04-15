@@ -1,7 +1,7 @@
 import { AuctionBids } from '@/components/routes/auction/auction-bids'
 import { AuctionOrders } from '@/components/routes/auction/auction-orders'
 import { ClaimTokens } from '@/components/routes/auction/claim-tokens'
-import { RegisterAddress } from '@/components/routes/auction/register-address'
+import { RegisterAddress } from '@/components/routes/project/register-address'
 import { Tabs } from '@/components/ui/tabs'
 import { ProjectWithAuction, getProjectBySlug } from '@/lib/projects'
 import { redirect } from 'next/navigation'

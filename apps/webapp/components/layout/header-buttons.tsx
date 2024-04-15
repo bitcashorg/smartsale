@@ -4,7 +4,7 @@ import { useSession } from '@/hooks/use-session'
 import { ConnectButton } from '@rainbow-me/rainbowkit'
 import { BitcashAccessButton } from './bitcash-access'
 
-export function HeaderButtons({ largeHeader }: { largeHeader?: boolean }) {
+export function HeaderButtons() {
   const { session } = useSession()
   return (
     <>
@@ -13,11 +13,9 @@ export function HeaderButtons({ largeHeader }: { largeHeader?: boolean }) {
       <BitcashAccessButton
         buttonStyle={{
           variant: 'secondary',
-          radius: 'full',
-          size: largeHeader ? 'lg' : 'default',
-          fontSize: largeHeader ? 'lg' : 'default'
+          radius: 'full'
         }}
-        buttonClassName="min-w-[98px] md:min-w-[120px] lg:min-w-[175px]"
+        buttonClassName="px-10"
       />
 
       {session ? (

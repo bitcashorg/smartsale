@@ -42,7 +42,7 @@ export function Header() {
                 variant: 'outline',
                 radius: 'full'
               }),
-              'min-w-[32px] border-transparent px-2.5 md:min-w-[120px] md:border-accent md:px-8 lg:min-w-[175px]'
+              'border-transparent px-10 md:border-accent'
             )}
           >
             <IconDiscord className={'block size-7 fill-accent md:hidden'} />
