@@ -2,7 +2,7 @@ import { ProjectWithAuction } from '@/lib/projects'
 
 export function AuctionInfo({ project }: { project: ProjectWithAuction }) {
   return (
-    <div className="my-2 flex flex-col items-center rounded-lg px-4 py-2 bg-muted">
+    <div className="my-2 flex flex-col items-center rounded-lg bg-muted px-4 py-2">
       <div className="flex w-full text-center">
         <h3 className="mt-2 flex w-full justify-between">
           <span className="opacity-70">Ticker: </span>

@@ -10,8 +10,8 @@ import { Suspense } from 'react'
 
 export function Header() {
   return (
-    <div className="container sticky top-0 z-50 flex items-center justify-between h-16 p-10 bg-background">
-      <div className="flex items-center h-full">
+    <div className="container sticky top-0 z-50 flex h-16 items-center justify-between bg-background p-10">
+      <div className="flex h-full items-center">
         <Link shallow href="/">
           <IconBitlauncher />
         </Link>

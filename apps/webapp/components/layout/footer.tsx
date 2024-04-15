@@ -6,7 +6,7 @@ const DynamicNewsletter = dynamic(() => import('./newsletter') as any, {
 })
 export function Footer() {
   return (
-    <footer className="container flex flex-col flex-1 w-full gap-32 px-4 py-16">
+    <footer className="container flex w-full flex-1 flex-col gap-32 px-4 py-16">
       <Participate />
       <DynamicNewsletter />
     </footer>

@@ -29,7 +29,7 @@ SmartSale is committed to compliance and security, rigorously adhering to emergi
 
 ## Requirements
 
-- **NodeJS**: Recommended for managing server-side scripting and backend interactions. 
+- **NodeJS**: Recommended for managing server-side scripting and backend interactions.
 - **Bun**: Provides a faster runtime for JavaScript, enhancing development efficiency.
 - **Supabase CLI**: Facilitates local development and effective database schema management.
 - **Docker**: Essential for creating isolated environments, ensuring consistent operation across different setups.
@@ -39,6 +39,7 @@ SmartSale is committed to compliance and security, rigorously adhering to emergi
 ### Backend & APIs
 
 - **Supabase**
+
   - Manages authentication and real-time data interactions.
   - **Advanced Search**: Supports complex queries necessary for managing auction data.
 
@@ -48,6 +49,7 @@ SmartSale is committed to compliance and security, rigorously adhering to emergi
 ### Frontend & Design
 
 - **Next.js 14**
+
   - Utilizes efficient routing mechanisms and server-side data fetching to provide a smooth user experience.
   - [Learn more about Next.js](https://nextjs.org/docs/routing/introduction)
 
@@ -64,6 +66,7 @@ SmartSale is committed to compliance and security, rigorously adhering to emergi
 ### DevOps and Tools
 
 - **Turbo Monorepo**
+
   - Enhances codebase management with efficient build processes and dependency caching.
   - [Learn more about Turbo Monorepo](https://turborepo.org/)
 
@@ -74,6 +77,7 @@ SmartSale is committed to compliance and security, rigorously adhering to emergi
 ### Animation
 
 - **Framer Motion for React**
+
   - Provides dynamic visual feedback through animations, enhancing user interface interactions.
   - [Learn more about Framer Motion](https://www.framer.com/motion/)
 

@@ -19,7 +19,7 @@ export function PageContent({ data }: { data: PageContentData }) {
             )
           case 'p':
             return (
-              <p key={index} className={'parragraph'}>
+              <p key={index} className={'paragraph'}>
                 {item.text}
               </p>
             )

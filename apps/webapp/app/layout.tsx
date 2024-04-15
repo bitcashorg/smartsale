@@ -33,7 +33,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         >
           <Header />
           <Toaster />
-          <main className="container flex flex-col flex-1 py-5">
+          <main className="container flex flex-1 flex-col py-5">
             {children}
           </main>
           <Footer />

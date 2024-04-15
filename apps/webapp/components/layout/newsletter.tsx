@@ -67,7 +67,7 @@ export default function Newsletter() {
   return (
     <section className="newsletter-wrapper">
       <div className="flex h-[460px] w-full max-w-[600px] flex-col items-center justify-center gap-8 px-3 text-center md:gap-11 md:px-0">
-        <div className="flex flex-col w-full gap-7">
+        <div className="flex w-full flex-col gap-7">
           <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
             Sign up for our newsletter
           </h2>
@@ -138,7 +138,7 @@ export default function Newsletter() {
       </div>
       <div className="flex h-[230px] w-full flex-wrap items-center justify-between rounded-b-3xl bg-primary px-4 py-6 md:px-10 lg:px-24">
         <Link href="/" prefetch>
-          <IconBitlauncher className="w-40 h-8 md:h-11 md:w-56" />
+          <IconBitlauncher className="h-8 w-40 md:h-11 md:w-56" />
         </Link>
         <Link
           href="/terms"

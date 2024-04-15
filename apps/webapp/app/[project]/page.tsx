@@ -27,14 +27,14 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
               {projectContent[pcKey].title}
             </h2>
-            <div className="flex flex-col w-full gap-6">
+            <div className="flex w-full flex-col gap-6">
               {(projectContent[pcKey].content as string[][]).map(
                 (content, index) => {
                   if (content.every((c, i) => c.includes(':'))) {
                     return (
                       <ul
                         key={`${index}__${(projectContent[pcKey].title as string).replace(/\s/g, '-')}`}
-                        className="flex flex-col gap-2 px-6 list-disc list-outside"
+                        className="flex list-outside list-disc flex-col gap-2 px-6"
                       >
                         {content.map(item => (
                           <li key={`${item}__list-item`}>
@@ -68,7 +68,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         )
       })}
 
-      <hr className="max-w-screen-xl mx-auto mt-24 border-gray-600/80" />
+      <hr className="mx-auto mt-24 max-w-screen-xl border-gray-600/80" />
     </>
   )
 }

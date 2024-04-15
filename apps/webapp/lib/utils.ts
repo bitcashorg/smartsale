@@ -1,7 +1,7 @@
-import axios from 'axios';
-import { clsx, type ClassValue } from 'clsx';
-import { MotionProps } from 'framer-motion';
-import { twMerge } from 'tailwind-merge';
+import axios from 'axios'
+import { clsx, type ClassValue } from 'clsx'
+import { MotionProps } from 'framer-motion'
+import { twMerge } from 'tailwind-merge'
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
@@ -15,11 +15,11 @@ export function handleAxiosError(error: unknown) {
       headers: error.response.headers
     }
   } else {
-    console.error('An error occurred:', error);
+    console.error('An error occurred:', error)
     return {
       data: error as Error,
       status: (error as Error).name,
-      headers: null,
+      headers: null
     }
   }
 }
@@ -42,5 +42,5 @@ const iconMotionProps: MotionProps & React.ComponentProps<'span'> = {
 }
 
 export const motionProps = {
-  iconMotionProps,
+  iconMotionProps
 }

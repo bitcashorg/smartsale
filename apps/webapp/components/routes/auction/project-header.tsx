@@ -93,11 +93,11 @@ export function ProjectHeader({ project }: { project: Project }) {
   const isAuctionClosed = project.badgeText === 'AUCTION CLOSED'
 
   return (
-    <section className="flex flex-col items-center justify-center size-full gap-11">
+    <section className="flex size-full flex-col items-center justify-center gap-11">
       <div className="absolute inset-0 z-[1] block size-full overflow-hidden bg-muted/10 backdrop-blur-[2.5px] lg:hidden" />
       <Image
         alt={project.title}
-        className="absolute inset-0 z-0 block object-cover mx-auto overflow-hidden scale-100 pointer-events-none aspect-video size-full lg:hidden"
+        className="pointer-events-none absolute inset-0 z-0 mx-auto block aspect-video size-full scale-100 overflow-hidden object-cover lg:hidden"
         height="2000"
         src={project.heroImage}
         width="2000"
@@ -128,9 +128,9 @@ export function ProjectHeader({ project }: { project: Project }) {
               </span>
             </h1>
 
-            <div className="flex flex-col w-full gap-3">
+            <div className="flex w-full flex-col gap-3">
               <h2 className="text-xl font-semibold">Media & Share</h2>
-              <div className="flex items-center gap-3 align-center md:gap-6">
+              <div className="align-center flex items-center gap-3 md:gap-6">
                 <Link
                   href={`https://twitter.com/${project.twitterUsername}`}
                   className={buttonLinkClassName.replace('p-3.5', 'p-[17px]')}
@@ -188,12 +188,12 @@ export function ProjectHeader({ project }: { project: Project }) {
 
           <div className="flex size-full max-h-[560px] max-w-screen-sm flex-col gap-6 rounded-xl border border-card/30 bg-card/60 px-8 py-6 backdrop-blur-lg md:px-11 md:py-8">
             <h2 className="text-xl font-semibold">Auction Data</h2>
-            <ul className="flex flex-col w-full gap-2">
-              <li className="flex justify-between w-full px-4 py-2 rounded-full bg-muted">
+            <ul className="flex w-full flex-col gap-2">
+              <li className="flex w-full justify-between rounded-full bg-muted px-4 py-2">
                 <span className="opacity-70">Fundraising Goal</span>
                 <b>{project.fundraiseGoal}</b>
               </li>
-              <li className="flex justify-between w-full px-4 py-2 rounded-full bg-muted">
+              <li className="flex w-full justify-between rounded-full bg-muted px-4 py-2">
                 <span className="opacity-70">Max Allocation</span>
                 <b>{project.maxAllocation}</b>
               </li>
@@ -207,7 +207,7 @@ export function ProjectHeader({ project }: { project: Project }) {
                 ) : null}
               </>
             ) : (
-              <div className="flex flex-col gap-6 mt-auto">
+              <div className="mt-auto flex flex-col gap-6">
                 <p className="w-full font-semibold md:text-xl">
                   {project.registrationOpen
                     ? 'Register to participate in the auction!'

@@ -11,12 +11,17 @@ export function HeaderButtons({ largeHeader }: { largeHeader?: boolean }) {
       {/* <ThemeToggle/> */}
 
       <BitcashAccessButton
-        buttonStyle={{ variant: 'secondary', radius: 'full', size: largeHeader ? 'lg' : 'default', fontSize: largeHeader ? 'lg' : 'default' }}
+        buttonStyle={{
+          variant: 'secondary',
+          radius: 'full',
+          size: largeHeader ? 'lg' : 'default',
+          fontSize: largeHeader ? 'lg' : 'default'
+        }}
         buttonClassName="min-w-[98px] md:min-w-[120px] lg:min-w-[175px]"
       />
 
       {session ? (
-        <span className="[&_button]:!rounded-lg [&_button]:w-full">
+        <span className="[&_button]:w-full [&_button]:!rounded-lg">
           <ConnectButton chainStatus="none" showBalance={false} />
         </span>
       ) : null}
