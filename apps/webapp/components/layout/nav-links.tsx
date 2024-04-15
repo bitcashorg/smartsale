@@ -35,8 +35,8 @@ export function NavLinks({ mobile = false }: { mobile?: boolean }) {
     },
     { href: '/about', text: 'About', mobile: false, action: null },
     { href: '/paper', text: 'White Paper', mobile: false, action: null },
-    { href: '/security', text: 'Security', mobile: false, action: null },
-    { href: '/terms', text: 'Privacy', mobile: false, action: null }
+    { href: '/security', text: 'Security', mobile: false, action: null }
+    // { href: '/terms', text: 'Privacy', mobile: false, action: null }
   ] as const
 
   return links.map(link => {
