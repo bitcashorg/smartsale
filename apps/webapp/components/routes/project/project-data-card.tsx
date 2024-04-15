@@ -8,7 +8,7 @@ import { CopyShortlinkIcon } from './copy-shorlink'
 
 export function ProjectDataCard({ project }: { project: Project }) {
   return (
-    <div className="container relative z-10 flex h-full min-w-[500px] flex-col items-center justify-between gap-16 px-4 md:px-10 lg:flex-row lg:gap-20">
+    <div className="container relative z-10 flex h-full md:min-w-[500px] min-w-[95vw] flex-col items-center justify-between gap-16 px-4 md:px-10 lg:flex-row lg:gap-20">
       <div className="flex size-full max-h-[560px] max-w-screen-sm flex-col justify-between rounded-xl border border-card/30 bg-card/60 px-8 py-6 backdrop-blur-lg md:px-11 md:py-8">
         <div className="border-solid borber border-background">
           <h1 className="heading !opacity-100">{project.title}</h1>
