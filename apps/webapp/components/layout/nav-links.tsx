@@ -1,13 +1,12 @@
 'use client'
+
 import Link from 'next/link'
 import { useSession } from '@/hooks/use-session'
 
 import { useConnectModal } from '@rainbow-me/rainbowkit'
-import { useRouter } from 'next/router'
 
 export function NavLinks({ mobile = false }: { mobile?: boolean }) {
   const { session, loginUri, newSessionId } = useSession()
-  const router = useRouter()
   const { openConnectModal } = useConnectModal()
 
   const login = () => {
@@ -23,7 +22,7 @@ export function NavLinks({ mobile = false }: { mobile?: boolean }) {
     console.log('💥 callbackUrl', callbackUrl)
     const encodedCallbackUrl = encodeURIComponent(callbackUrl)
     params.append('callback', encodedCallbackUrl)
-    router.push(`https://app.bitcash.org/login?${params.toString()}`)
+    location.href = `https://app.bitcash.org/login?${params.toString()}`
   }
 
   const links = [
