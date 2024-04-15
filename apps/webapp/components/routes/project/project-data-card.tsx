@@ -17,7 +17,7 @@ export function ProjectDataCard({ project }: { project: Project }) {
           </p>
         </div>
         <div className="flex flex-col w-full gap-3">
-          <h2 className="text-xl font-semibold">Media & Share</h2>
+          <h2 className="text-xl font-semibold mt-10">Media & Share</h2>
           <div className="flex items-center gap-3 md:gap-6">
             <Link
               href={`https://twitter.com/${project.twitterUsername}`}
