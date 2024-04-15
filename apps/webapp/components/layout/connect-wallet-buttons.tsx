@@ -4,7 +4,7 @@ import { useSession } from '@/hooks/use-session'
 import { ConnectButton } from '@rainbow-me/rainbowkit'
 import { BitcashAccessButton } from './bitcash-access'
 
-export function HeaderButtons() {
+export function ConnectWalletButtons() {
   const { session } = useSession()
   return (
     <>

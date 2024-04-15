@@ -87,7 +87,7 @@ export function BitcashAccessButton({
           {...buttonStyle}
         >
           {buttonLabel === 'down-right-icon' ? (
-            <IconDownRightArrow className="size-4 transition-all group-focus-within:-rotate-[45deg] group-hover:-rotate-[45deg] [&_path]:stroke-white" />
+            <IconDownRightArrow className="size-4 transition-all group-focus-within:-rotate-45 group-hover:-rotate-45 [&_path]:stroke-white" />
           ) : (
             buttonLabel
           )}

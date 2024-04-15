@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import * as React from 'react'
 import { IconBitlauncher, IconDiscord } from '../ui/icons'
-import { HeaderButtons } from './header-buttons'
+import { ConnectWalletButtons } from './connect-wallet-buttons'
 import { buttonVariants } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 import { Suspense } from 'react'
@@ -12,7 +12,7 @@ export function Header() {
   return (
     <div className="sticky top-0 z-50 flex h-16 bg-background md:p-10">
       <div className="container flex items-center justify-between bg-background">
-        <div className="flex items-center h-full">
+        <div className="flex h-full items-center">
           <Link shallow href="/">
             <IconBitlauncher />
           </Link>
@@ -21,7 +21,7 @@ export function Header() {
           </div>
         </div>
         <div className="flex">
-          <div className="items-center hidden gap-8 md:flex">
+          <div className="hidden items-center gap-8 md:flex">
             <Link
               href="https://discord.gg/a4gwhT9G"
               target="_blank"
@@ -39,7 +39,7 @@ export function Header() {
             </Link>
 
             <Suspense fallback={<div className="flex">Login</div>}>
-              <HeaderButtons />
+              <ConnectWalletButtons />
             </Suspense>
           </div>
           <div className="flex ">
