@@ -42,8 +42,6 @@ export function AuctionCard(props: Project) {
       className={cn('mx-auto size-full max-w-[450px]', {
         'cursor-not-allowed': isFutureOrComingAuction
       })}
-      scroll={false}
-      prefetch
     >
       <figure className="relative h-[216px] w-full">
         <Image
@@ -65,23 +63,23 @@ export function AuctionCard(props: Project) {
         <h3 className="text-xl font-bold text-neutral-600 dark:text-white">
           {title}
         </h3>
-        <p className="mt-2 max-w-sm text-sm text-neutral-500 dark:text-neutral-300">
+        <p className="max-w-sm mt-2 text-sm text-neutral-500 dark:text-neutral-300">
           {pitch}
         </p>
       </div>
-      <div className="mb-2 mt-auto flex w-full flex-col items-center justify-between px-4 py-6 xl:px-9 xl:py-8">
-        <ul className="mb-10 mt-8 flex w-full flex-col gap-2">
-          <li className="flex w-full justify-between rounded-full bg-muted px-4 py-2">
+      <div className="flex flex-col items-center justify-between w-full px-4 py-6 mt-auto mb-2 xl:px-9 xl:py-8">
+        <ul className="flex flex-col w-full gap-2 mt-8 mb-10">
+          <li className="flex justify-between w-full px-4 py-2 rounded-full bg-muted">
             <span className="opacity-70">Fundraising Goal</span>
             <b>{fundraiseGoal}</b>
           </li>
-          <li className="flex w-full justify-between rounded-full bg-muted px-4 py-2">
+          <li className="flex justify-between w-full px-4 py-2 rounded-full bg-muted">
             <span className="opacity-70">Max Allocation</span>
             <b>{maxAllocation}</b>
           </li>
         </ul>
-        <div className="mb-3 flex w-full items-center justify-between">
-          <div className="align-center relative z-10 flex items-center justify-center gap-3 md:gap-4 xl:gap-6">
+        <div className="flex items-center justify-between w-full mb-3">
+          <div className="relative z-10 flex items-center justify-center gap-3 align-center md:gap-4 xl:gap-6">
             <Button
               variant="outline"
               size="icon"
@@ -133,7 +131,7 @@ export function AuctionCard(props: Project) {
               prefetch
               scroll={false}
             >
-              <IconDownRightArrow className="size-4 transition-all group-focus-within:-rotate-45 group-hover:-rotate-45" />
+              <IconDownRightArrow className="transition-all size-4 group-focus-within:-rotate-45 group-hover:-rotate-45" />
             </Link>
           )}
           {/* {isFutureOrComingAuction && (
