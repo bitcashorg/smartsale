@@ -35,7 +35,7 @@ const fields: Array<Array<ItemProps>> = [
     },
     {
       label: 'Max Allocation',
-      value: '$10,000',
+      value: '$5,000',
       fields: []
     }
   ],
@@ -61,7 +61,9 @@ const fields: Array<Array<ItemProps>> = [
       label: 'Ticker',
       value: 'BC',
       fields: []
-    },
+    }
+  ],
+  [
     {
       label: 'Base price',
       value: '$99.99',
