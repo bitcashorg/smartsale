@@ -39,7 +39,7 @@ export function AuctionCard(props: Project) {
     <Link
       id={`hot-auction-${title.toLowerCase().replace(/\s/g, '-')}`}
       href={isFutureOrComingAuction ? `#` : linkPath}
-      className={cn('mx-auto size-full max-w-[450px]', {
+      className={cn('mx-auto size-full flex flex-col', {
         'cursor-not-allowed': isFutureOrComingAuction
       })}
     >
