@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { Project } from '@/lib/projects'
 import { ProjectDataCard } from './project-data-card'
+import { ProjectShare } from './project-share'
 
 export function ProjectHeader({ project }: { project: Project }) {
   return (
@@ -13,8 +14,9 @@ export function ProjectHeader({ project }: { project: Project }) {
           layout="fill"
           quality={100}
         />
-        <div className="relative z-10">
+        <div className="relative z-10 flex justify-between">
           <ProjectDataCard project={project} />
+          <ProjectShare project={project} />
         </div>
       </div>
     </header>
