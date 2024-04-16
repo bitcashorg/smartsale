@@ -1,6 +1,7 @@
 import { Project, ProjectWithAuction } from '@/lib/projects'
 import { AuctionInfo } from '../auction/auction-info'
-import { Button } from '@/components/ui/button'
+import { Button, buttonVariants } from '@/components/ui/button'
+import { cn } from '@/lib/utils'
 
 export function ProjectDataCard({ project }: { project: Project }) {
   return (
@@ -17,7 +18,15 @@ export function ProjectDataCard({ project }: { project: Project }) {
 
         <AuctionInfo project={project as ProjectWithAuction} />
 
-        <Button className="mt-5 border border-solid border-white/50">
+        <Button
+          className={cn(
+            buttonVariants({
+              variant: 'outline',
+              radius: 'full'
+            }),
+            'mx-auto mt-5 border border-solid border-accent bg-background px-10 py-5'
+          )}
+        >
           Register for Presale
         </Button>
       </div>
