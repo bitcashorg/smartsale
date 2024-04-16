@@ -2,7 +2,7 @@ import { ProjectWithAuction } from '@/lib/projects'
 
 export function AuctionInfo({ project }: { project: ProjectWithAuction }) {
   return (
-    <div className="flex flex-col items-center gap-5">
+    <div className="grid items-center grid-cols-2 gap-5">
       {fields.map((items, k) => (
         <div
           key={k}
@@ -22,13 +22,6 @@ export function AuctionInfo({ project }: { project: ProjectWithAuction }) {
   )
 }
 const fields: Array<Array<ItemProps>> = [
-  [
-    {
-      label: 'Ticker',
-      value: 'BITCASH',
-      fields: []
-    }
-  ],
   [
     {
       label: 'Presale Period',
@@ -60,6 +53,18 @@ const fields: Array<Array<ItemProps>> = [
     {
       label: 'Max Allocation',
       value: '$10,000',
+      fields: []
+    }
+  ],
+  [
+    {
+      label: 'Ticker',
+      value: 'BC',
+      fields: []
+    },
+    {
+      label: 'Base price',
+      value: '$99.99',
       fields: []
     }
   ]
