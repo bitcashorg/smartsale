@@ -1,4 +1,4 @@
-import { BitcashAccessButton } from '@/components/layout/bitcash-access'
+import { BitcashLogin } from '@/components/layout/bitcash-auth/login-dialog'
 import { buttonVariants } from '@/components/ui/button'
 import { IconDownRightArrow } from '@/components/ui/icons'
 import { cn } from '@/lib/utils'
@@ -43,7 +43,7 @@ export default function Participate() {
                   <IconDownRightArrow className="size-4 transition-all group-focus-within:-rotate-45 group-hover:-rotate-45 [&_path]:stroke-white" />
                 </Link>
               ) : (
-                <BitcashAccessButton
+                <BitcashLogin
                   buttonLabel="down-right-icon"
                   buttonStyle={{ size: 'icon', variant: 'accent' }}
                   defaultContent="register"

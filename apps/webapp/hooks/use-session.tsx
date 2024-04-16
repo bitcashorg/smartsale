@@ -1,5 +1,4 @@
 import { genLoginSigningRequest } from '@/lib/eos'
-import { supabase } from '@/lib/supabase'
 import { createContextHook } from '@blockmatic/hooks-utils'
 import { useSearchParams } from 'next/navigation'
 import { useEffect, useState } from 'react'
@@ -8,6 +7,7 @@ import { session } from 'smartsale-db'
 
 import axios from 'axios'
 import React, { ReactNode } from 'react'
+import { useSupabaseClient } from '@/services/supabase'
 
 const [useSession, SessionProviderInner] = createContextHook(
   useSessionFn,
@@ -15,6 +15,7 @@ const [useSession, SessionProviderInner] = createContextHook(
 )
 
 export function useSessionFn() {
+  const supabase = useSupabaseClient()
   const searchParams = useSearchParams()
   const [newSessionId] = useState(crypto.randomUUID())
   const [session, setSession] = useLocalStorage<session>('bitcash-session')
@@ -53,25 +54,6 @@ export function useSessionFn() {
     }
     if (session_id) getSession()
   }, [searchParams])
-
-  // emit esr login event on load if account not found
-  // NOTE: disabled
-  // useEffect(() => {
-  //   const emitLoginEsr = async () => {
-  //     const esr = await genLoginSigningRequest()
-  //     window.parent &&
-  //       window.parent &&
-  //       console.log('emitting esr event', {
-  //         eventType: 'esr',
-  //         code: esr.encode()
-  //       })
-  //     window.parent &&
-  //       window.parent.postMessage({ eventType: 'esr', code: esr.encode() }, '*')
-  //   }
-  //   emitLoginEsr()
-  // })
-
-  // console.log('🙌🏻 loginSR', loginSR.value?.encode().replace('esr://', ''))
 
   return { newSessionId, session, loginUri: loginSR?.value?.encode() }
 }

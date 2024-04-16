@@ -3,14 +3,15 @@
 import { registerAddress } from '@/actions'
 import { Button } from '@/components/ui/button'
 import { useSession } from '@/hooks/use-session'
-import { supabase } from '@/lib/supabase'
 import { formatAddress, fromEntries } from 'smartsale-lib'
 import { RegisterAddressSchema } from '@/lib/validators'
 import { useEffect, useState } from 'react'
 import { useFormStatus } from 'react-dom'
 import { useAccount } from 'wagmi'
+import { useSupabaseClient } from '@/services/supabase'
 
 export function RegisterAddress({ projectId }: { projectId: number }) {
+  const supabase = useSupabaseClient()
   const { session } = useSession()
   const { address } = useAccount()
   const { pending } = useFormStatus()
@@ -50,9 +51,9 @@ export function RegisterAddress({ projectId }: { projectId: number }) {
   })
 
   return (
-    <div className="flex size-full flex-col items-center justify-center gap-6 p-4">
+    <div className="flex flex-col items-center justify-center gap-6 p-4 size-full">
       <div className="flex flex-col space-y-4">
-        <p className="text-center font-bold">
+        <p className="font-bold text-center">
           {!isRegistered
             ? 'Register your address before the auction starts'
             : 'You are already registered'}

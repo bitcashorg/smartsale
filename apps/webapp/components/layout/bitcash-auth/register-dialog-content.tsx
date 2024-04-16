@@ -1,6 +1,6 @@
 'use client'
 
-import { BitcashAccessContentType } from '@/components/layout/bitcash-access'
+import { BitcashAccessContentType } from '@/components/layout/bitcash-auth/login-dialog'
 import { Button } from '@/components/ui/button'
 import {
   DialogDescription,
@@ -68,7 +68,7 @@ export function RegisterDialogContent({
         /> */}
       </div>
       <DialogFooter className="flex !flex-col gap-4 border-t border-t-gray-300 pt-2 dark:border-t-gray-800 sm:justify-center">
-        <p className="w-full text-center text-sm">
+        <p className="w-full text-sm text-center">
           On your phone you can also register at <b>bitcash.to/reg</b>!
         </p>
         <Button

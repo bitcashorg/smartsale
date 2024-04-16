@@ -1,7 +1,7 @@
 'use client'
 
 import { useSession } from '@/hooks/use-session'
-import { BitcashAccessButton } from './bitcash-access'
+import { BitcashLogin } from './bitcash-auth/login-dialog'
 import { cn } from '@/lib/utils'
 import { Button, buttonVariants } from '../ui/button'
 import { useConnectModal } from '@rainbow-me/rainbowkit'
@@ -24,7 +24,7 @@ export function ConnectWalletButtons() {
         // >
         //   Connect
         // </Button>
-        <BitcashAccessButton
+        <BitcashLogin
           buttonStyle={{
             variant: 'secondary',
             radius: 'full'

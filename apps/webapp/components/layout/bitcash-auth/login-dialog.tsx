@@ -1,6 +1,6 @@
 'use client'
-import { LoginDialogContent } from '@/components/dialogs/login'
-import { RegisterDialogContent } from '@/components/dialogs/register'
+import { LoginDialogContent } from '@/components/layout/bitcash-auth/login-dialog-content'
+import { RegisterDialogContent } from '@/components/layout/bitcash-auth/register-dialog-content'
 import { Button, buttonVariants } from '@/components/ui/button'
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog'
 import { IconDownRightArrow } from '@/components/ui/icons'
@@ -12,13 +12,12 @@ import { LucideWallet } from 'lucide-react'
 import Link from 'next/link'
 import { useRouter, useSearchParams } from 'next/navigation'
 import { useEffect, useState } from 'react'
-// import { bitcashLogin } from '@/lib/esr'
 import { useToggle } from 'react-use'
 import { TestnetUSDCred } from 'smartsale-contracts'
 import { runtimeEnv } from 'smartsale-lib'
 import { useAccount } from 'wagmi'
 
-export function BitcashAccessButton({
+export function BitcashLogin({
   defaultContent = 'login',
   buttonLabel = 'Log In',
   buttonClassName,
