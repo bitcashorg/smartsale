@@ -62,14 +62,14 @@ const fields: Array<Array<ItemProps>> = [
       value: 'BC',
       fields: []
     }
-  ],
-  [
-    {
-      label: 'Base price',
-      value: '$99.99',
-      fields: []
-    }
   ]
+  // [
+  //   {
+  //     label: 'Base price',
+  //     value: '$99.99',
+  //     fields: []
+  //   }
+  // ]
 ]
 
 function ListItem(props: ItemProps) {
