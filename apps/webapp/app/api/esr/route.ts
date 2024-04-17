@@ -34,7 +34,10 @@ export async function POST(req: NextRequest) {
     const id = esr.getInfoKey('uuid')
     const action = esr.getRawActions()[0].name.toString()
 
-    console.log(id, action, esr, body) // Log the body to the console
+    console.log(
+      'ESR CONFIRMATION ==> ' + JSON.stringify({ id, action, esr, body })
+    )
+
     // TODO: validate tx is on blockchain
 
     // open up session if l

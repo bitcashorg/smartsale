@@ -49,6 +49,7 @@
     "react-hot-toast": "^2.4.1",
     "react-qr-code": "^2.0.12",
     "react-use": "^17.5.0",
+    "react-useanimations": "^2.10.0",
     "smartsale-contracts": "workspace:*",
     "smartsale-db": "workspace:*",
     "smartsale-env": "workspace:*",

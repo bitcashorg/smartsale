@@ -27,7 +27,7 @@ export const esrOptions: SigningRequestEncodingOptions = {
 export async function genLoginSigningRequest(
   uuid: string = crypto.randomUUID()
 ) {
-  const req = createSigntureRequest({
+  const req = createSignatureRequest({
     action: {
       account: smartsaleEnv.test.bitcash.accounts,
       name: 'login',
@@ -37,7 +37,8 @@ export async function genLoginSigningRequest(
       }
     },
     info: {
-      uuid
+      uuid,
+      appName: 'Bitlauncher',
     }
   })
   return req
@@ -47,7 +48,7 @@ export async function genBitusdDepositSigningRequest(
   amount: number,
   address: string
 ) {
-  const req = createSigntureRequest({
+  const req = createSignatureRequest({
     action: {
       account: 'bkbbanktest3',
       name: 'stbtransfer',
@@ -75,7 +76,7 @@ export async function genUsdtDepositSigningRequest(
   )?.address
   if (!account) throw new Error('usdt account not found')
 
-  const req = createSigntureRequest({
+  const req = createSignatureRequest({
     action: {
       account,
       name: 'transfer',
@@ -89,6 +90,7 @@ export async function genUsdtDepositSigningRequest(
     },
     info: {
       uuid: crypto.randomUUID(),
+      appName: 'Bitlauncher',
       edit: {
         memo: false,
         quantity: false
@@ -98,9 +100,10 @@ export async function genUsdtDepositSigningRequest(
   return req
 }
 
-async function createSigntureRequest({
+async function createSignatureRequest({
   info = {
-    uuid: crypto.randomUUID()
+    uuid: crypto.randomUUID(),
+    appName: 'Bitlauncher'
   },
   action
 }: Pick<SigningRequestCreateArguments, 'info' | 'action'>) {

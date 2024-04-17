@@ -1,0 +1,83 @@
+name: Vercel Preview URL Lighthouse Audit
+
+on:
+  pull_request
+
+jobs:
+  generate_lighthouse_audit:
+    timeout-minutes: 30
+    runs-on: ubuntu-latest
+    steps:
+      # - name: Add comment to PR
+      #   id: loading_comment_to_pr
+      #   uses: marocchino/sticky-pull-request-comment@v2.9.0
+      #   with:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #     number: ${{ github.event.issue.number }}
+      #     header: lighthouse
+      #     message: |
+      #       Running Lighthouse audit...
+      - name: Wait for 2 minutes
+        run: sleep 120
+      - name: Capture Vercel preview URL
+        id: vercel_preview_url
+        uses: zentered/vercel-preview-url@v1.1.9
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        with:
+          vercel_project_id: prj_Bf0q4Q5mAwPh404L36RsGFOB84Qu
+          vercel_team_id: team_7PAgeqjbXkY6qdxNIEKLbVSC
+      - name: Get URL
+        run: echo "https://${{ steps.vercel_preview_url.outputs.preview_url }}"
+      - uses: actions/checkout@v4
+      - name: Audit preview URL with Lighthouse
+        id: lighthouse_audit
+        uses: treosh/lighthouse-ci-action@11.4.0
+        with:
+          urls: |
+            "https://${{ steps.vercel_preview_url.outputs.preview_url }}"
+            "https://${{ steps.vercel_preview_url.outputs.preview_url }}/about"
+            "https://${{ steps.vercel_preview_url.outputs.preview_url }}/security"
+            "https://${{ steps.vercel_preview_url.outputs.preview_url }}/bitcash-bitlauncher"
+          # budgetPath: '.github/lighthouse/budget.json'
+          uploadArtifacts: true
+          temporaryPublicStorage: true
+      - name: Format lighthouse score
+        id: format_lighthouse_score
+        uses: actions/github-script@v7.0.1
+        with:
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          script: |
+            const manifest = ${{ steps.lighthouse_audit.outputs.manifest }};
+            const links = ${{ steps.lighthouse_audit.outputs.links }};
+
+            const formatResult = (res) => Math.round((res * 100));
+            const score = res => res >= 90 ? '🟢' : res >= 50 ? '🟠' : '🔴';
+
+            let comment = '⚡️ Lighthouse report\n'
+
+            manifest.forEach(result => {
+              const pageLink = result.url;
+              comment += `\nPage: ${pageLink}\n`;
+              comment += `Report ${links[pageLink]}\n`;
+              comment += '| Category | Score |\n';
+              comment += '| --- | --- |\n';
+
+              Object.keys(result.summary).forEach(key => result.summary[key] = formatResult(result.summary[key]));
+              comment += `| ${score(result.summary.performance)} Performance | ${result.summary.performance} |\n`;
+              comment += `| ${score(result.summary.accessibility)} Accessibility | ${result.summary.accessibility} |\n`;
+              comment += `| ${score(result.summary['best-practices'])} Best practices | ${result.summary['best-practices']} |\n`;
+              comment += `| ${score(result.summary.seo)} SEO | ${result.summary.seo} |\n`;
+              comment += `| ${score(result.summary.pwa)} PWA | ${result.summary.pwa} |\n`; 
+            });
+
+            core.setOutput("comment", comment);
+      - name: Add comment to PR
+        id: comment_to_pr
+        uses: marocchino/sticky-pull-request-comment@v2.9.0
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          number: ${{ github.event.issue.number }}
+          header: lighthouse
+          message: |
+            ${{ steps.format_lighthouse_score.outputs.comment }}

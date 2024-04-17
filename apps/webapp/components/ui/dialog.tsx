@@ -21,7 +21,7 @@ const DialogOverlay = React.forwardRef<
   React.ElementRef<typeof DialogPrimitive.Overlay>,
   // @ts-ignore
   React.ComponentPropsWithoutRef<typeof DialogPrimitive.Overlay>
-// @ts-ignore
+  // @ts-ignore
 >(({ className, ...props }, ref) => (
   <DialogPrimitive.Overlay
     ref={ref}
@@ -39,7 +39,7 @@ const DialogContent = React.forwardRef<
   React.ElementRef<typeof DialogPrimitive.Content>,
   // @ts-ignore
   React.ComponentPropsWithoutRef<typeof DialogPrimitive.Content>
-// @ts-ignore
+  // @ts-ignore
 >(({ className, children, ...props }, ref) => (
   <DialogPortal>
     <DialogOverlay />
@@ -94,7 +94,7 @@ const DialogTitle = React.forwardRef<
   React.ElementRef<typeof DialogPrimitive.Title>,
   // @ts-ignore
   React.ComponentPropsWithoutRef<typeof DialogPrimitive.Title>
-// @ts-ignore
+  // @ts-ignore
 >(({ className, ...props }, ref) => (
   <DialogPrimitive.Title
     ref={ref}
@@ -112,7 +112,7 @@ const DialogDescription = React.forwardRef<
   React.ElementRef<typeof DialogPrimitive.Description>,
   // @ts-ignore
   React.ComponentPropsWithoutRef<typeof DialogPrimitive.Description>
-// @ts-ignore
+  // @ts-ignore
 >(({ className, ...props }, ref) => (
   <DialogPrimitive.Description
     ref={ref}
@@ -123,6 +123,14 @@ const DialogDescription = React.forwardRef<
 DialogDescription.displayName = DialogPrimitive.Description.displayName
 
 export {
-  Dialog, DialogClose, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogOverlay, DialogPortal, DialogTitle, DialogTrigger
+  Dialog,
+  DialogClose,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogOverlay,
+  DialogPortal,
+  DialogTitle,
+  DialogTrigger
 }
-

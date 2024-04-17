@@ -100,14 +100,15 @@
 
 @layer base {
   * {
-    @apply border-border ring-offset-ring focus-within:ring-ring focus-within:ring-offset-ring focus-visible:ring-ring  focus-visible:ring-offset-ring before:focus-visible:ring-ring before:focus-visible:ring-offset-ring;
+    @apply border-border ring-offset-ring focus-within:ring-ring focus-within:ring-offset-ring focus-visible:ring-ring focus-visible:ring-offset-ring before:focus-visible:ring-ring before:focus-visible:ring-offset-ring;
   }
   a:focus-visible {
     outline: 3px solid hsl(var(--ring));
     outline-offset: 2px;
     outline-radius: 2px;
   }
-  body {
+  body,
+  html {
     @apply bg-background text-foreground;
   }
 }
@@ -157,7 +158,7 @@ input[type='number'] {
 }
 
 .newsletter-wrapper {
-  @apply container mx-auto flex flex-col items-center rounded-3xl px-0 backdrop-blur-xl sm:text-center;
+  @apply container flex flex-col items-center px-0 mx-auto rounded-3xl backdrop-blur-xl sm:text-center;
 
   background: url('/images/newsletter-bg.png') center center no-repeat;
   background-size: cover;
@@ -239,4 +240,32 @@ input[type='number'] {
 *[data-title]:hover::after {
   opacity: 1;
   z-index: 100000 !important;
+}
+
+/* TYPOGRAPHY */
+.heading {
+  @apply text-3xl font-bold !leading-snug md:text-6xl;
+}
+.heading2 {
+  @apply text-2xl font-bold md:text-4xl;
+}
+.paragraph {
+  @apply text-base md:text-lg;
+}
+
+/* LAYOUT */
+.content-container {
+  @apply flex flex-col w-full max-w-screen-lg gap-10 py-24 mx-auto;
+}
+
+.header-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px; /* Adjust the offset as needed */
+}
+
+.mobile-nav {
+  height: calc(100vh - 5rem) !important;
+  width: 100vw;
+  overflow: hidden;
+  @apply fixed inset-x-0 flex flex-col items-center justify-center h-full gap-20 p-5 pt-0 overflow-hidden border-b top-20 bg-background;
 }
