@@ -12,15 +12,15 @@ function ListItem({ label, value }: ItemProps) {
   if (!label && React.isValidElement(value)) {
     // Directly return JSX elements
     return (
-      <div className="flex justify-between w-full">
+      <div className="flex w-full justify-between">
         <b>{value}</b>
       </div>
     )
   }
 
   return (
-    <div className="flex justify-between w-full">
-      <h3 className="flex justify-between w-full">
+    <div className="flex w-full justify-between">
+      <h3 className="flex w-full justify-between">
         <span className="opacity-70">{label}: </span>
         <b>{typeof value === 'string' ? value : null}</b>
       </h3>
@@ -48,21 +48,21 @@ export function AuctionInfo({ project }: { project: ProjectWithAuction }) {
   ]
 
   return (
-    <div className="grid items-center grid-cols-2 gap-5">
+    <div className="grid grid-cols-2 items-center gap-5">
       {fields.map((items, k) => {
         return React.isValidElement(items[0].value) ? (
           items[0].value
         ) : (
           <div
             key={k}
-            className="flex flex-col w-full px-4 py-3 my-1 text-center rounded-sm bg-muted"
+            className="my-1 flex w-full flex-col rounded-sm bg-muted px-4 py-3 text-center"
           >
             {items.map((item, ik) => (
               <Fragment key={ik}>
                 <ListItem {...item} />
 
                 {ik < items.length - 1 && (
-                  <hr className="w-full my-2 border-accent/50" />
+                  <hr className="my-2 w-full border-accent/50" />
                 )}
               </Fragment>
             ))}
