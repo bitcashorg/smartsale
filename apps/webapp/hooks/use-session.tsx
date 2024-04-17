@@ -63,7 +63,7 @@ function useSessionFn() {
     console.log('💥 callbackUrl', callbackUrl)
     const encodedCallbackUrl = encodeURIComponent(callbackUrl)
     params.append('callback', encodedCallbackUrl)
-    location.href = `https://app.bitcash.org/loginRedirect?${params.toString()}`
+    location.href = `https://app.bitcash.org?${params.toString()}`
   }
 
   const loginOrConnect = () => {
