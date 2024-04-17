@@ -7,6 +7,8 @@ import { useSupabaseClient } from '@/services/supabase'
 import { useConnectModal } from '@rainbow-me/rainbowkit'
 import { Tables } from '@repo/supabase'
 import { useGlobalStore } from './use-global-store'
+import axios from 'axios'
+import { getErrorMessage } from 'smartsale-lib'
 
 export { SessionProvider, useSession }
 
@@ -16,6 +18,8 @@ function useSessionFn() {
   const [newSessionId] = useState(crypto.randomUUID())
   const { viewport } = useGlobalStore()
   const { openConnectModal } = useConnectModal()
+  // this controls the session dialog with register and login qr codes
+  // when login qr code is display a new esr is created and saved on db for later reference on callback call
   const [showSessionDialog, toggleShowSessionDialog] = useToggle(false)
   const [session, setSession] =
     useLocalStorage<Tables<'session'>>('bitcash-session')
@@ -26,16 +30,17 @@ function useSessionFn() {
   // subscribe to supabase session table and set session state
   // this table get updated by /api/esr callback invoked by the signing wallet
   useEffect(() => {
-    console.log('🧑🏻‍💻 🍓 subscribing to session')
+    console.log(`🧑🏻‍💻 🍓 subscribing to session ${newSessionId}`)
     const channel = supabase
       .channel('session')
       .on(
         'postgres_changes',
         { event: 'INSERT', schema: 'public', table: 'session' },
         payload => {
-          console.log('SESSION!', payload.new)
+          console.log(' 🍓 new supabase session', payload.new)
           // set new session if ids match
           if (session || payload.new.id !== newSessionId) return
+          console.log(' ✅ supabase session id matches', payload.new)
           setSession(payload.new as Tables<'session'>)
         }
       )
@@ -64,12 +69,30 @@ function useSessionFn() {
     location.href = `https://app.bitcash.org?${params.toString()}`
   }
 
+  const toggleSessionDialog = async (show?: boolean) => {
+    // dont call new entry endpoint when hiding
+    if (!show) return toggleShowSessionDialog(false)
+    // create new entry for later check on backend
+    try {
+      // console.log('🦚 creting esr entry in supabase')
+      // const response = await axios.post('/api/esr-entry', {
+      //   code: loginUri,
+      //   account: session.account
+      // })
+      // if (!response) return console.log('💥 error creating entry in supabase')
+    } catch (error) {
+      console.log('💥 error creating entry', getErrorMessage(error))
+    }
+  }
+
+  // show rainbowkit to link evm wallet if logged in
+  // else call login action depending base on viewport
   const loginOrConnect = () => {
     session && openConnectModal
       ? openConnectModal()
       : viewport === 'mobile'
         ? loginRedirect()
-        : toggleShowSessionDialog(true)
+        : toggleSessionDialog(true)
   }
 
   return {
