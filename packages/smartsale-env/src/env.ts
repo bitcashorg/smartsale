@@ -11,7 +11,7 @@ import { Address, Chain } from "viem";
 
 const prod: SmartsaleEnvConfig = {
   chains: smartsaleChains.prod,
-  esrCallbackUrl: 'https://bitlauncher.ai',
+  esrCallbackUrl: 'https://bitlauncher.ai/api/esr',
   issuer: {
     eos: "launchpad.bk",
     evm: "0x",
@@ -30,7 +30,7 @@ const prod: SmartsaleEnvConfig = {
 
 const test: SmartsaleEnvConfig = {
   chains: smartsaleChains.test,
-  esrCallbackUrl: 'https://dev.bitlauncher.ai',
+  esrCallbackUrl: 'https://dev.bitlauncher.ai/api/esr',
   issuer: {
     eos: "gaboesquivel",
     evm: "0x",
@@ -49,7 +49,7 @@ const test: SmartsaleEnvConfig = {
 
 const canary: SmartsaleEnvConfig = {
   chains: smartsaleChains.test,
-  esrCallbackUrl: 'https://canary.bitlauncher.ai',
+  esrCallbackUrl: 'https://canary.bitlauncher.ai/api/esr',
   issuer: {
     eos: "gaboesquivel",
     evm: "0x",

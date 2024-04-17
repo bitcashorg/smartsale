@@ -24,26 +24,28 @@ export function useSessionFn() {
   const loginUri = loginSR?.value?.encode()
   const { openConnectModal } = useConnectModal()
 
-  console.log('loginUri', loginUri)
-
   useEffect(() => {
+    console.log('subscribing to session')
     const channel = supabase
       .channel('session')
       .on(
         'postgres_changes',
         { event: 'INSERT', schema: 'public', table: 'session' },
         payload => {
+          console.log('SESSION!', payload.new)
           if (session || payload.new.id !== newSessionId) return
           // set new session if ids match
+
           setSession(payload.new as Tables<'session'>)
         }
       )
       .subscribe()
 
     return () => {
+      console.log('XX unsubscribing to session')
       supabase.removeChannel(channel)
     }
-  }, [setSession])
+  }, [setSession, supabase])
 
   useEffect(() => {
     const session_id = searchParams.get('session_id')

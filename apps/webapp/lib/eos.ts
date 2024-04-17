@@ -27,7 +27,6 @@ export const esrOptions: SigningRequestEncodingOptions = {
 export async function genLoginSigningRequest(
   uuid: string = crypto.randomUUID()
 ) {
-  console.log('genLoginSigningRequest', appConfig.esrCallbackUrl)
   const req = createSignatureRequest({
     action: {
       account: appConfig.bitcash.accounts,
@@ -42,7 +41,7 @@ export async function genLoginSigningRequest(
       appName: 'Bitlauncher'
     }
   })
-  console.log('req', req)
+
   return req
 }
 
@@ -109,14 +108,6 @@ async function createSignatureRequest({
   },
   action
 }: Pick<SigningRequestCreateArguments, 'info' | 'action'>) {
-  console.log('callback', appConfig.esrCallbackUrl)
-  console.log(
-    JSON.stringify({
-      action,
-      info
-    })
-  )
-
   return SigningRequest.create(
     {
       action,
