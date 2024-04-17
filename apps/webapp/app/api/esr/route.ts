@@ -52,15 +52,15 @@ export async function POST(req: NextRequest) {
       console.log('Session created successfully:', session)
     }
 
-    const { data: esrUpdate, error } = await supabase
-      .from('esr')
-      .update({ trx_id: body.tx })
-      .match({ id })
+    // const { data: esrUpdate, error } = await supabase
+    //   .from('esr')
+    //   .update({ trx_id: body.tx })
+    //   .match({ id })
 
-    if (error) {
-      throw new Error(`Error updating ESR entry: ${error.message}`)
-    }
-    console.log('ESR entry updated successfully:', esrUpdate)
+    // if (error) {
+    //   throw new Error(`Error updating ESR entry: ${error.message}`)
+    // }
+    // console.log('ESR entry updated successfully:', esrUpdate)
 
     return NextResponse.json({
       success: true,

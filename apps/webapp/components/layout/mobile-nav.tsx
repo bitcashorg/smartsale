@@ -28,7 +28,7 @@ export function MobileNav() {
       />
       {open ? (
         <Transition duration={0.2}>
-          <div className="mobile-nav">
+          <div className="md:hidden">
             <NavLinks mobile />
           </div>
         </Transition>
