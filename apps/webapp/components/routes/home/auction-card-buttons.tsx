@@ -52,6 +52,7 @@ export function ProjectCardButtons({ project }: { project: Project }) {
             key={index}
             fallback={
               <Button
+                onClick={(e)=> {e.stopPropagation()}}
                 variant="outline"
                 size="icon"
                 className={buttonLinkClassName}
@@ -62,7 +63,8 @@ export function ProjectCardButtons({ project }: { project: Project }) {
             }
           >
             <ExternalLinkButton
-              variant="outline"
+                onClick={(e)=> {e.stopPropagation()}}
+                variant="outline"
               size="icon"
               link={link}
               className={buttonLinkClassName}
