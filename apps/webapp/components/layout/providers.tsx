@@ -11,8 +11,8 @@ import { useLocation } from 'react-use'
 import { eosEvmTestnet } from 'smartsale-env'
 import { WagmiProvider } from 'wagmi'
 import { sepolia } from 'wagmi/chains'
-import { SigningRequestProvider } from '../dialogs/esr-dialog'
 import { Transition } from '../shared/transition'
+import { UseSigningRequestProvider } from '@/hooks/use-signing-request'
 
 const queryClient = new QueryClient()
 
@@ -54,7 +54,7 @@ export function Providers({ children, ...props }: ThemeProviderProps) {
           <SessionProvider>
             <WagmiProvider config={wagmiConfig}>
               <RainbowKitProvider>
-                <SigningRequestProvider>
+                <UseSigningRequestProvider>
                   <GoogleReCaptchaProvider
                     reCaptchaKey={
                       process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ''
@@ -69,7 +69,7 @@ export function Providers({ children, ...props }: ThemeProviderProps) {
                   >
                     <Transition> {children}</Transition>
                   </GoogleReCaptchaProvider>
-                </SigningRequestProvider>
+                </UseSigningRequestProvider>
               </RainbowKitProvider>
             </WagmiProvider>
           </SessionProvider>

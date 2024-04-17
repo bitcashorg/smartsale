@@ -7,7 +7,6 @@ import { Suspense } from 'react'
 import { NavLinks } from './nav-links'
 import { SessionButton } from './session/session-button'
 import dynamic from 'next/dynamic'
-import { cookies } from 'next/headers'
 
 export function Header() {
   return (
