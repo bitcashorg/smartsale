@@ -21,13 +21,13 @@ import {
   TestnetUSDT,
   TokenContractData
 } from 'smartsale-contracts'
-import { smartsaleEnv } from 'smartsale-env'
 import { parseUnits } from 'viem'
 import { useAccount, useSwitchChain, useWriteContract } from 'wagmi'
 import { useGlobalStore } from '@/hooks/use-global-store'
+import { appConfig } from '@/lib/config'
 
 const usdtMap = new Map<string, TokenContractData>()
-smartsaleEnv.test.usdt.forEach(t => {
+appConfig.usdt.forEach(t => {
   const key = JSON.stringify(t)
   return usdtMap.set(key, t)
 })
