@@ -24,6 +24,8 @@ export function useSessionFn() {
   const loginUri = loginSR?.value?.encode()
   const { openConnectModal } = useConnectModal()
 
+  console.log('loginUri', loginUri)
+
   useEffect(() => {
     const channel = supabase
       .channel('session')
