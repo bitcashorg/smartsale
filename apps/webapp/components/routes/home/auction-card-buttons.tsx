@@ -24,7 +24,7 @@ export function ProjectCardButtons({ project }: { project: Project }) {
   const isAuctionRestricted = badgeText.match(
     /(AUCTION CLOSED|FUTURE|COMING SOON)/
   )
-  const buttonLinkClassName = 'relative size-auto rounded-full p-3.5'
+  const buttonLinkClassName = 'relative px-0 py-0 size-[58px] rounded-full'
   return (
     <div
       className="mb-3 flex w-full items-center justify-between "
@@ -54,10 +54,7 @@ export function ProjectCardButtons({ project }: { project: Project }) {
               <Button
                 variant="outline"
                 size="icon"
-                className={buttonLinkClassName.replace(
-                  'p-3.5',
-                  index === 0 ? 'p-[17px]' : ''
-                )}
+                className={buttonLinkClassName}
                 data-title={`${title}´s ${socialTitle}`}
               >
                 <Icon className="size-7 fill-accent" />
@@ -68,10 +65,7 @@ export function ProjectCardButtons({ project }: { project: Project }) {
               variant="outline"
               size="icon"
               link={link}
-              className={buttonLinkClassName.replace(
-                'p-3.5',
-                index === 0 ? 'p-[17px]' : ''
-              )}
+              className={buttonLinkClassName}
               data-title={`${title}´s ${socialTitle}`}
             >
               <Icon className="size-7 fill-accent" />
