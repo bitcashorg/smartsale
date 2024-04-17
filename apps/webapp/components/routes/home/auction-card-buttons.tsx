@@ -27,10 +27,10 @@ export function ProjectCardButtons({ project }: { project: Project }) {
   const buttonLinkClassName = 'relative size-auto rounded-full p-3.5'
   return (
     <div
-      className="flex items-center justify-between w-full mb-3 "
+      className="mb-3 flex w-full items-center justify-between "
       suppressHydrationWarning={true}
     >
-      <div className="relative z-10 flex items-center justify-center gap-3 align-center md:gap-4 xl:gap-6">
+      <div className="align-center relative z-10 flex items-center justify-center gap-3 md:gap-4 xl:gap-6">
         {[
           {
             icon: IconTwitterX,
@@ -99,7 +99,7 @@ export function ProjectCardButtons({ project }: { project: Project }) {
             )}
             data-title={`Go to project ${title}`}
           >
-            <IconDownRightArrow className="transition-all size-4 group-focus-within:-rotate-45 group-hover:-rotate-45" />
+            <IconDownRightArrow className="size-4 transition-all group-focus-within:-rotate-45 group-hover:-rotate-45" />
           </NestedLinkButton>
         )}{' '}
       </Suspense>

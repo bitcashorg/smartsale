@@ -11,7 +11,7 @@ import { Address, Chain } from "viem";
 
 const prod: SmartsaleEnvConfig = {
   chains: smartsaleChains.prod,
-  esrCallbackUrl: 'https://bitlauncher.ai/api/esr',
+  esrCallbackUrl: "https://bitlauncher.ai/api/esr",
   issuer: {
     eos: "launchpad.bk",
     evm: "0x",
@@ -30,7 +30,7 @@ const prod: SmartsaleEnvConfig = {
 
 const test: SmartsaleEnvConfig = {
   chains: smartsaleChains.test,
-  esrCallbackUrl: 'https://dev.bitlauncher.ai/api/esr',
+  esrCallbackUrl: "https://dev.bitlauncher.ai/api/esr",
   issuer: {
     eos: "gaboesquivel",
     evm: "0x",
@@ -49,7 +49,7 @@ const test: SmartsaleEnvConfig = {
 
 const canary: SmartsaleEnvConfig = {
   chains: smartsaleChains.test,
-  esrCallbackUrl: 'https://canary.bitlauncher.ai/api/esr',
+  esrCallbackUrl: "https://canary.bitlauncher.ai/api/esr",
   issuer: {
     eos: "gaboesquivel",
     evm: "0x",
@@ -70,11 +70,11 @@ const canary: SmartsaleEnvConfig = {
 export const smartsaleEnv = {
   prod,
   test,
-  canary
+  canary,
 };
 
 // expiclit type to enforce it
-export type SmartsaleEnv = keyof typeof smartsaleEnv
+export type SmartsaleEnv = keyof typeof smartsaleEnv;
 
 // Utility function to validate a string as a valid SmartsaleEnv key
 export function isValidSmartsaleEnv(env: string): env is SmartsaleEnv {
@@ -90,20 +90,20 @@ export function getValidSmartsaleEnv(env: string): SmartsaleEnv {
   }
 }
 export interface SmartsaleEnvConfig {
-  chains: Map<number, Chain>
+  chains: Map<number, Chain>;
   issuer: {
-    eos: string
-    evm: Address
-  }
+    eos: string;
+    evm: Address;
+  };
   bitcash: {
-    bank: string
-    token: string
-    accounts: string
-  }
+    bank: string;
+    token: string;
+    accounts: string;
+  };
   smartsale: {
-    auction: Address
-    bk: string
-  }
-  usdt: TokenContractData[]
-  esrCallbackUrl: string
+    auction: Address;
+    bk: string;
+  };
+  usdt: TokenContractData[];
+  esrCallbackUrl: string;
 }
