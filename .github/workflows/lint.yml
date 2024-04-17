@@ -1,18 +1,19 @@
-# name: Lint
+name: Lint
 
-# on:
-#   pull_request:
-#   push:
-#     branches:
-#       - master
+on:
+  pull_request:
+  push:
+    branches:
+      - master
 
-# jobs:
-#   eslint:
-#     runs-on: ubuntu-latest
-#     steps:
-#       - uses: actions/checkout@v4
-#       - uses: oven-sh/setup-bun@v1
+jobs:
+  eslint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v1
 
-#       # run any `bun` or `bunx` command
-#       - run: bun install
-#       - run: bun run lint
+      # run any `bun` or `bunx` command
+      - run: echo "temporarily disabled"
+      # - run: bun install
+      # - run: bun run lint
