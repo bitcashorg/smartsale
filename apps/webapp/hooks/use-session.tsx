@@ -1,31 +1,35 @@
 import { genLoginSigningRequest } from '@/lib/eos'
 import { createContextHook } from '@blockmatic/hooks-utils'
-import { useSearchParams } from 'next/navigation'
 import { useEffect, useState } from 'react'
-import { useAsync, useLocalStorage } from 'react-use'
-import axios from 'axios'
+import { useAsync, useLocalStorage, useToggle } from 'react-use'
 import React, { ReactNode } from 'react'
 import { useSupabaseClient } from '@/services/supabase'
 import { useConnectModal } from '@rainbow-me/rainbowkit'
 import { Tables } from '@repo/supabase'
+import { useGlobalStore } from './use-global-store'
 
 const [useSession, SessionProviderInner] = createContextHook(
   useSessionFn,
   'You must wrap your application with <SessionProvider /> in order to useSession().'
 )
-
-export function useSessionFn() {
+// don export this fn must be wrapped for context to work
+function useSessionFn() {
   const supabase = useSupabaseClient()
-  const searchParams = useSearchParams()
   const [newSessionId] = useState(crypto.randomUUID())
+  const { viewport } = useGlobalStore()
+
+  const { openConnectModal } = useConnectModal()
+  const [showLoginDialog, toggleShowLoginDialog] = useToggle(false)
   const [session, setSession] =
     useLocalStorage<Tables<'session'>>('bitcash-session')
+
   const loginSR = useAsync(() => genLoginSigningRequest(newSessionId))
   const loginUri = loginSR?.value?.encode()
-  const { openConnectModal } = useConnectModal()
 
+  // subscribe to supabase session table and set session state
+  // this table get updated by /api/esr callback invoked by the signing wallet
   useEffect(() => {
-    console.log('subscribing to session')
+    console.log('🧑🏻‍💻 🍓 subscribing to session')
     const channel = supabase
       .channel('session')
       .on(
@@ -33,9 +37,8 @@ export function useSessionFn() {
         { event: 'INSERT', schema: 'public', table: 'session' },
         payload => {
           console.log('SESSION!', payload.new)
-          if (session || payload.new.id !== newSessionId) return
           // set new session if ids match
-
+          if (session || payload.new.id !== newSessionId) return
           setSession(payload.new as Tables<'session'>)
         }
       )
@@ -47,22 +50,7 @@ export function useSessionFn() {
     }
   }, [setSession, supabase])
 
-  useEffect(() => {
-    const session_id = searchParams.get('session_id')
-    console.log(`url session effect  ${session_id}`)
-    const getSession = async () => {
-      console.log(`getting session ${session_id}`)
-      const response = await axios.post('/api/session', { session_id })
-      console.log(`getting session response`, response)
-      if (!response.data.session) return
-      console.log('✅ session', response.data.session)
-      setSession(response.data.session)
-      history.replaceState({}, document.title, window.location.pathname)
-    }
-    if (session_id) getSession()
-  }, [searchParams])
-
-  const login = () => {
+  const loginRedirect = () => {
     if (!loginUri || !open) return
     // post request to parent if present
     window.parent &&
@@ -75,20 +63,26 @@ export function useSessionFn() {
     console.log('💥 callbackUrl', callbackUrl)
     const encodedCallbackUrl = encodeURIComponent(callbackUrl)
     params.append('callback', encodedCallbackUrl)
-    location.href = `https://app.bitcash.org/login?${params.toString()}`
+    location.href = `https://app.bitcash.org/loginRedirect?${params.toString()}`
   }
 
   const loginOrConnect = () => {
-    session && openConnectModal ? openConnectModal() : login()
+    session && openConnectModal
+      ? openConnectModal()
+      : viewport === 'mobile'
+        ? loginRedirect()
+        : toggleShowLoginDialog(true)
   }
 
   return {
     newSessionId,
     session,
     loginUri,
-    login,
+    showLoginDialog,
+    loginRedirect,
     openConnectModal,
-    loginOrConnect
+    loginOrConnect,
+    toggleShowLoginDialog
   }
 }
 

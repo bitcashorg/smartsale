@@ -1,46 +1,71 @@
 import '@/app/globals.css'
-import { Footer } from '@/components/layout/footer'
+import { Footer } from '@/components/layout/footer/footer'
 import { Header } from '@/components/layout/header'
-
 import { Providers } from '@/components/layout/providers'
+import { GlobalStoreProvider } from '@/hooks/use-global-store'
 import { cn } from '@/lib/utils'
 import { GoogleAnalytics } from '@next/third-parties/google'
 import '@rainbow-me/rainbowkit/styles.css'
 import { Metadata } from 'next'
-
+import dynamic from 'next/dynamic'
 import { Open_Sans } from 'next/font/google'
+import { cookies } from 'next/headers'
 import React from 'react'
 // import { Toaster } from 'react-hot-toast'
+
+export default async function RootLayout({ children }: RootLayoutProps) {
+  const { viewport } = await getCookieData()
+  console.log('RootLayout', { viewport })
+  return (
+    <html lang="en" className={cn('antialiased', openSans.className)}>
+      <body>
+        <GlobalStoreProvider viewport={viewport}>
+          <Providers
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <Header />
+            {/* <Toaster /> */}
+            <main className="flex flex-col flex-1">{children}</main>
+            <Footer />
+          </Providers>
+          <DynamicLoginDialog />
+        </GlobalStoreProvider>
+
+        <GoogleAnalytics gaId="G-78N0Z7NPQJ" />
+      </body>
+    </html>
+  )
+}
 
 const openSans = Open_Sans({
   subsets: ['latin', 'latin-ext'],
   weight: ['400', '500', '600', '700', '800']
 })
 
-export default function RootLayout({ children }: RootLayoutProps) {
-  return (
-    <html
-      lang="en"
-      className={cn('antialiased', openSans.className)}
-      suppressHydrationWarning
-    >
-      <body>
-        <Providers
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <Header />
-          {/* <Toaster /> */}
-          <main className="flex flex-1 flex-col">{children}</main>
-          <Footer />
-        </Providers>
-        <GoogleAnalytics gaId="G-78N0Z7NPQJ" />
-      </body>
-    </html>
+async function getCookieData(): Promise<{
+  viewport: string | null
+}> {
+  const viewport = cookies().get('viewport')?.value || null
+  return new Promise(resolve =>
+    setTimeout(() => {
+      resolve({ viewport })
+    }, 1000)
   )
 }
+
+const DynamicLoginDialog = dynamic(
+  () =>
+    import('../components/layout/session/login-dialog').then(
+      mod => mod.LoginDialog
+    ),
+  {
+    ssr: false
+  }
+)
+
 interface RootLayoutProps {
   children: React.ReactNode
   params: { project: string }

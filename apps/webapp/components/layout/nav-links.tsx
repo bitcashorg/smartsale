@@ -4,10 +4,15 @@ import Link from 'next/link'
 import { useSession } from '@/hooks/use-session'
 
 export function NavLinks({ mobile = false }: { mobile?: boolean }) {
-  const { login, openConnectModal } = useSession()
+  const { loginOrConnect, openConnectModal } = useSession()
 
   const links = [
-    { href: '/login', text: 'Login with Bitcash', mobile: true, action: login },
+    {
+      href: '/login',
+      text: 'Login with Bitcash',
+      mobile: true,
+      action: loginOrConnect
+    },
     {
       href: '/connect',
       text: 'Connect EVM Wallet',
@@ -26,7 +31,7 @@ export function NavLinks({ mobile = false }: { mobile?: boolean }) {
       <Link
         shallow
         key={link.href}
-        className="flex header-link"
+        className="header-link flex"
         href={link.href}
         onClick={e => {
           if (!link.action) return

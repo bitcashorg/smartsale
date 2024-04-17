@@ -1,7 +1,6 @@
 'use client'
 import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3'
 import { TooltipProvider } from '@/components/ui/tooltip'
-import { GlobalDataProvider } from '@/hooks/use-global-store'
 import { SessionProvider } from '@/hooks/use-session'
 import { RainbowKitProvider, getDefaultConfig } from '@rainbow-me/rainbowkit'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
@@ -50,34 +49,32 @@ export function Providers({ children, ...props }: ThemeProviderProps) {
 
   return (
     <NextThemesProvider {...props}>
-      <GlobalDataProvider>
-        <TooltipProvider>
-          <QueryClientProvider client={queryClient}>
-            <SessionProvider>
-              <WagmiProvider config={wagmiConfig}>
-                <RainbowKitProvider>
-                  <SigningRequestProvider>
-                    <GoogleReCaptchaProvider
-                      reCaptchaKey={
-                        process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ''
+      <TooltipProvider>
+        <QueryClientProvider client={queryClient}>
+          <SessionProvider>
+            <WagmiProvider config={wagmiConfig}>
+              <RainbowKitProvider>
+                <SigningRequestProvider>
+                  <GoogleReCaptchaProvider
+                    reCaptchaKey={
+                      process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ''
+                    }
+                    // language="[optional_language]"
+                    container={{
+                      parameters: {
+                        badge: 'inline', //'[inline|bottomright|bottomleft]', // optional, default undefined
+                        theme: 'dark' // optional, default undefined
                       }
-                      // language="[optional_language]"
-                      container={{
-                        parameters: {
-                          badge: 'inline', //'[inline|bottomright|bottomleft]', // optional, default undefined
-                          theme: 'dark' // optional, default undefined
-                        }
-                      }}
-                    >
-                      <Transition> {children}</Transition>
-                    </GoogleReCaptchaProvider>
-                  </SigningRequestProvider>
-                </RainbowKitProvider>
-              </WagmiProvider>
-            </SessionProvider>
-          </QueryClientProvider>
-        </TooltipProvider>
-      </GlobalDataProvider>
+                    }}
+                  >
+                    <Transition> {children}</Transition>
+                  </GoogleReCaptchaProvider>
+                </SigningRequestProvider>
+              </RainbowKitProvider>
+            </WagmiProvider>
+          </SessionProvider>
+        </QueryClientProvider>
+      </TooltipProvider>
     </NextThemesProvider>
   )
 }
