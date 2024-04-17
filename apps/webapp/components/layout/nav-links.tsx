@@ -3,27 +3,8 @@
 import Link from 'next/link'
 import { useSession } from '@/hooks/use-session'
 
-import { useConnectModal } from '@rainbow-me/rainbowkit'
-
 export function NavLinks({ mobile = false }: { mobile?: boolean }) {
-  const { session, loginUri, newSessionId } = useSession()
-  const { openConnectModal } = useConnectModal()
-
-  const login = () => {
-    if (!loginUri || !open) return
-    // post request to parent if present
-    window.parent &&
-      window.parent.postMessage({ eventType: 'esr', code: loginUri }, '*')
-
-    // redirect with esr and callback on mobile
-    const params = new URLSearchParams()
-    params.append('esr_code', loginUri.replace('esr://', ''))
-    const callbackUrl = `${window.location.href}?session_id=${newSessionId}`
-    console.log('💥 callbackUrl', callbackUrl)
-    const encodedCallbackUrl = encodeURIComponent(callbackUrl)
-    params.append('callback', encodedCallbackUrl)
-    location.href = `https://app.bitcash.org/login?${params.toString()}`
-  }
+  const { login, openConnectModal } = useSession()
 
   const links = [
     { href: '/login', text: 'Login with Bitcash', mobile: true, action: login },

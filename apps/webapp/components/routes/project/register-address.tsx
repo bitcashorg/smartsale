@@ -3,14 +3,15 @@
 import { registerAddress } from '@/actions'
 import { Button } from '@/components/ui/button'
 import { useSession } from '@/hooks/use-session'
-import { supabase } from '@/lib/supabase'
 import { formatAddress, fromEntries } from 'smartsale-lib'
 import { RegisterAddressSchema } from '@/lib/validators'
 import { useEffect, useState } from 'react'
 import { useFormStatus } from 'react-dom'
 import { useAccount } from 'wagmi'
+import { useSupabaseClient } from '@/services/supabase'
 
 export function RegisterAddress({ projectId }: { projectId: number }) {
+  const supabase = useSupabaseClient()
   const { session } = useSession()
   const { address } = useAccount()
   const { pending } = useFormStatus()
@@ -34,6 +35,7 @@ export function RegisterAddress({ projectId }: { projectId: number }) {
   }
 
   const fetchData = async () => {
+    if (!address) return
     const { data, error } = await supabase
       .from('whitelist')
       .select()

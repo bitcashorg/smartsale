@@ -1,12 +1,13 @@
 import Link from 'next/link'
 import * as React from 'react'
 import { IconBitlauncher, IconDiscord } from '../ui/icons'
-import { ConnectWalletButtons } from './connect-wallet-buttons'
+
 import { buttonVariants } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 import { Suspense } from 'react'
 import { MobileNav } from './mobile-nav'
 import { NavLinks } from './nav-links'
+import { BitcashLogin } from './bitcash-auth/login-dialog'
 
 export function Header() {
   return (
@@ -39,7 +40,7 @@ export function Header() {
             </Link>
 
             <Suspense fallback={<div className="flex">Login</div>}>
-              <ConnectWalletButtons />
+              <BitcashLogin />
             </Suspense>
           </div>
           <div className="flex md:hidden">

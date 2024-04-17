@@ -9,7 +9,7 @@ import {
 } from '@/components/ui/dialog'
 import { useSession } from '@/hooks/use-session'
 import { esrOptions } from '@/lib/eos'
-import { supabase } from '@/lib/supabase'
+import { useSupabaseClient } from '@/services/supabase'
 import { createContextHook } from '@blockmatic/hooks-utils'
 import { RealtimeChannel } from '@supabase/supabase-js'
 import { useMutation } from '@tanstack/react-query'
@@ -34,6 +34,7 @@ const defaultState: SignatureRequestState = {
 }
 
 function useSignatureRequestFn() {
+  const supabase = useSupabaseClient()
   const { session } = useSession()
   const searchParams = useSearchParams()
   const [state, setState] = useSetState<SignatureRequestState>(defaultState)

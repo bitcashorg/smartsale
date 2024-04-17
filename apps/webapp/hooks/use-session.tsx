@@ -1,13 +1,13 @@
 import { genLoginSigningRequest } from '@/lib/eos'
-import { supabase } from '@/lib/supabase'
 import { createContextHook } from '@blockmatic/hooks-utils'
 import { useSearchParams } from 'next/navigation'
 import { useEffect, useState } from 'react'
 import { useAsync, useLocalStorage } from 'react-use'
-import { session } from 'smartsale-db'
-
 import axios from 'axios'
 import React, { ReactNode } from 'react'
+import { useSupabaseClient } from '@/services/supabase'
+import { useConnectModal } from '@rainbow-me/rainbowkit'
+import { Tables } from '@repo/supabase'
 
 const [useSession, SessionProviderInner] = createContextHook(
   useSessionFn,
@@ -15,10 +15,14 @@ const [useSession, SessionProviderInner] = createContextHook(
 )
 
 export function useSessionFn() {
+  const supabase = useSupabaseClient()
   const searchParams = useSearchParams()
   const [newSessionId] = useState(crypto.randomUUID())
-  const [session, setSession] = useLocalStorage<session>('bitcash-session')
+  const [session, setSession] =
+    useLocalStorage<Tables<'session'>>('bitcash-session')
   const loginSR = useAsync(() => genLoginSigningRequest(newSessionId))
+  const loginUri = loginSR?.value?.encode()
+  const { openConnectModal } = useConnectModal()
 
   useEffect(() => {
     const channel = supabase
@@ -29,7 +33,7 @@ export function useSessionFn() {
         payload => {
           if (session || payload.new.id !== newSessionId) return
           // set new session if ids match
-          setSession(payload.new as session)
+          setSession(payload.new as Tables<'session'>)
         }
       )
       .subscribe()
@@ -54,26 +58,34 @@ export function useSessionFn() {
     if (session_id) getSession()
   }, [searchParams])
 
-  // emit esr login event on load if account not found
-  // NOTE: disabled
-  // useEffect(() => {
-  //   const emitLoginEsr = async () => {
-  //     const esr = await genLoginSigningRequest()
-  //     window.parent &&
-  //       window.parent &&
-  //       console.log('emitting esr event', {
-  //         eventType: 'esr',
-  //         code: esr.encode()
-  //       })
-  //     window.parent &&
-  //       window.parent.postMessage({ eventType: 'esr', code: esr.encode() }, '*')
-  //   }
-  //   emitLoginEsr()
-  // })
+  const login = () => {
+    if (!loginUri || !open) return
+    // post request to parent if present
+    window.parent &&
+      window.parent.postMessage({ eventType: 'esr', code: loginUri }, '*')
 
-  // console.log('🙌🏻 loginSR', loginSR.value?.encode().replace('esr://', ''))
+    // redirect with esr and callback on mobile
+    const params = new URLSearchParams()
+    params.append('esr_code', loginUri.replace('esr://', ''))
+    const callbackUrl = `${window.location.href}?session_id=${newSessionId}`
+    console.log('💥 callbackUrl', callbackUrl)
+    const encodedCallbackUrl = encodeURIComponent(callbackUrl)
+    params.append('callback', encodedCallbackUrl)
+    location.href = `https://app.bitcash.org/login?${params.toString()}`
+  }
 
-  return { newSessionId, session, loginUri: loginSR?.value?.encode() }
+  const loginOrConnect = () => {
+    session && openConnectModal ? openConnectModal() : login()
+  }
+
+  return {
+    newSessionId,
+    session,
+    loginUri,
+    login,
+    openConnectModal,
+    loginOrConnect
+  }
 }
 
 function SessionProvider({ children }: { children: ReactNode }) {

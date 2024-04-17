@@ -7,15 +7,16 @@ import {
   TableHeader,
   TableRow
 } from '@/components/ui/table'
-import { supabase } from '@/lib/supabase'
 import { formatAddress } from 'smartsale-lib'
 import { format } from 'date-fns'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { Address } from 'viem'
 import { useAccount } from 'wagmi'
+import { useSupabaseClient } from '@/services/supabase'
 
 export function TransactionsTable() {
+  const supabase = useSupabaseClient()
   const { address } = useAccount()
   const [transactions, setTransactions] = useState<any[]>([])
 

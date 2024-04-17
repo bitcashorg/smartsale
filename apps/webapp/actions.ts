@@ -2,13 +2,14 @@
 
 import { RegisterAddressSchema } from '@/lib/validators'
 import { cookies } from 'next/headers'
-import { db } from 'smartsale-db'
+
 import { fromEntries } from 'smartsale-lib'
 
 import { handleAxiosError } from '@/lib/utils'
 import axios from 'axios'
 import { Resend } from 'resend'
 import { z } from 'zod'
+import { createSupabaseServerClient } from './services/supabase'
 
 export async function registerAddress(formData: FormData) {
   try {
@@ -17,7 +18,15 @@ export async function registerAddress(formData: FormData) {
       ...o,
       project_id: parseInt(o.project_id)
     })
-    return await db.whitelist.create({ data })
+    const supabase = await createSupabaseServerClient()
+    const { data: createdEntry, error } = await supabase
+      .from('whitelist')
+      .insert([data])
+
+    if (error)
+      throw new Error(`Error creating whitelist entry: ${error.message}`)
+    console.log('Whitelist entry created successfully:', createdEntry)
+    return createdEntry // Return the newly created entry
   } catch (error) {
     console.log(error)
     throw new Error('Something went wrong')

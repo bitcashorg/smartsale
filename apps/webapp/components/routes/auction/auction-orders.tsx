@@ -7,7 +7,7 @@ import {
   TableHeader,
   TableRow
 } from '@/components/ui/table'
-import { supabase } from '@/lib/supabase'
+import { useSupabaseClient } from '@/services/supabase'
 import BN from 'bn.js'
 import { format } from 'date-fns'
 import Link from 'next/link'
@@ -17,6 +17,7 @@ import { formatAddress } from 'smartsale-lib'
 import { useAccount, useReadContract } from 'wagmi'
 
 export function AuctionOrders() {
+  const supabase = useSupabaseClient()
   const { address } = useAccount()
   const [orders, setOrders] = useState<any[]>([])
   const userId = useReadContract({
