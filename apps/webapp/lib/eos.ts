@@ -11,7 +11,7 @@ import pako from 'pako'
 import { appConfig } from './config'
 
 const eos = new APIClient({
-  url: 'https://eos.greymass.com'
+  url: appConfig.eosRpc
 })
 
 export const esrOptions: SigningRequestEncodingOptions = {
@@ -41,6 +41,7 @@ export async function genLoginSigningRequest(
       appName: 'Bitlauncher'
     }
   })
+
   return req
 }
 
@@ -107,12 +108,6 @@ async function createSignatureRequest({
   },
   action
 }: Pick<SigningRequestCreateArguments, 'info' | 'action'>) {
-  console.log(
-    JSON.stringify({
-      action,
-      info
-    })
-  )
   return SigningRequest.create(
     {
       action,

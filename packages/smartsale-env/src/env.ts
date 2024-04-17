@@ -11,7 +11,7 @@ import { Address, Chain } from "viem";
 
 const prod: SmartsaleEnvConfig = {
   chains: smartsaleChains.prod,
-  esrCallbackUrl: 'https://bitlauncher.ai',
+  esrCallbackUrl: 'https://bitlauncher.ai/api/esr',
   issuer: {
     eos: "launchpad.bk",
     evm: "0x",
@@ -30,7 +30,7 @@ const prod: SmartsaleEnvConfig = {
 
 const test: SmartsaleEnvConfig = {
   chains: smartsaleChains.test,
-  esrCallbackUrl: 'https://dev.bitlauncher.ai',
+  esrCallbackUrl: 'https://dev.bitlauncher.ai/api/esr',
   issuer: {
     eos: "gaboesquivel",
     evm: "0x",
@@ -49,7 +49,7 @@ const test: SmartsaleEnvConfig = {
 
 const canary: SmartsaleEnvConfig = {
   chains: smartsaleChains.test,
-  esrCallbackUrl: 'https://canary.bitlauncher.ai',
+  esrCallbackUrl: 'https://canary.bitlauncher.ai/api/esr',
   issuer: {
     eos: "gaboesquivel",
     evm: "0x",
@@ -76,6 +76,19 @@ export const smartsaleEnv = {
 // expiclit type to enforce it
 export type SmartsaleEnv = keyof typeof smartsaleEnv
 
+// Utility function to validate a string as a valid SmartsaleEnv key
+export function isValidSmartsaleEnv(env: string): env is SmartsaleEnv {
+  return Object.keys(smartsaleEnv).includes(env);
+}
+
+// Utility function that throws an error if the string is not a valid SmartsaleEnv key, otherwise returns the key
+export function getValidSmartsaleEnv(env: string): SmartsaleEnv {
+  if (isValidSmartsaleEnv(env)) {
+    return env as SmartsaleEnv;
+  } else {
+    throw new Error(`Invalid environment: ${env}`);
+  }
+}
 export interface SmartsaleEnvConfig {
   chains: Map<number, Chain>
   issuer: {

@@ -29,20 +29,19 @@ export function AuctionOrders() {
     }
   })
 
-  const fetchOrders = async (userId: number) => {
-    // console.log('fetch orders...')
-    const { data, error } = await supabase
-      .from('orders')
-      .select('*')
-      .eq('user_id', userId)
-      .order('created_at', { ascending: false })
-
-    if (error) return
-    setOrders(data)
-  }
-
   useEffect(() => {
     if (!userId.data) return
+    const fetchOrders = async (userId: number) => {
+      // console.log('fetch orders...')
+      const { data, error } = await supabase
+        .from('orders')
+        .select('*')
+        .eq('user_id', userId)
+        .order('created_at', { ascending: false })
+
+      if (error) return
+      setOrders(data)
+    }
     fetchOrders(new BN(userId.data!.toString()).toNumber())
     // console.log(
     //   `subscribing to supabase channel filtering by userId=${userId.data}`
@@ -75,7 +74,7 @@ export function AuctionOrders() {
     return () => {
       supabase.removeChannel(channel)
     }
-  }, [userId.data, setOrders])
+  }, [userId.data, setOrders, supabase])
 
   // console.log(stringify(orders))
 

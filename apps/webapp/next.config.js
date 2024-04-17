@@ -33,30 +33,19 @@ module.exports = {
     ]
   },
   images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'avatars.githubusercontent.com',
-        port: '',
-        pathname: '**'
-      },
-      {
-        protocol: 'https',
-        hostname: '*.googleusercontent.com',
-        port: '',
-        pathname: '**'
-      },
-      {
-        protocol: 'https',
-        hostname: 'robohash.org',
-        port: '',
-        pathname: '**'
-      }
-    ]
+    remotePatterns: []
   },
   experimental: {
     ...(process.env.NODE_ENV === 'development'
       ? { outputFileTracingRoot: path.join(__dirname, '../../') }
-      : null)
+      : null),
+    turbo: {
+      rules: {
+        '*.svg': {
+          loaders: ['@svgr/webpack'],
+          as: '*.js'
+        }
+      }
+    }
   }
 }

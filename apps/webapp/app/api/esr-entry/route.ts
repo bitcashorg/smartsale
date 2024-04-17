@@ -1,3 +1,4 @@
+import { appConfig } from '@/lib/config'
 import { createSupabaseServerClient } from '@/services/supabase'
 import { APIClient } from '@wharfkit/antelope'
 import {
@@ -6,12 +7,12 @@ import {
   SigningRequestEncodingOptions,
   ZlibProvider
 } from 'eosio-signing-request'
-import { NextRequest } from 'next/server'
+import { NextRequest, NextResponse } from 'next/server'
 import { deflateRawSync, inflateRawSync } from 'zlib'
 import { z } from 'zod'
 
 const eos = new APIClient({
-  url: 'https://eos.greymass.com'
+  url: appConfig.eosRpc
 })
 
 const esrNodeJSOptions: SigningRequestEncodingOptions = {
@@ -40,21 +41,30 @@ export async function POST(req: NextRequest) {
     const id = decoded.getInfoKey('uuid')
     const supabase = await createSupabaseServerClient()
     const { data: entry, error } = await supabase
-      .from('esr') // The table name should match your schema in Supabase
+      .from('esr')
       .insert([{ id, code, account }])
-      .single() // Use .single() if you're expecting to insert one row
-    if (error) throw new Error(error.message)
-    console.log('esr entry', entry)
+      .single()
 
-    return Response.json({
+    if (error) {
+      console.error('Failed to insert ESR entry:', error.message)
+      return NextResponse.json({
+        success: false,
+        error: `Failed to insert ESR entry: ${error.message}`
+      })
+    }
+
+    console.log('ESR entry:', entry)
+
+    return NextResponse.json({
       success: true,
       data: entry,
       message: 'Registered new signature request'
     })
-  } catch (error) {
-    console.log(error)
-    return Response.json({
-      error: 'Something went wrong'
+  } catch (error: any) {
+    console.error('Unexpected error during POST request:', error)
+    return NextResponse.json({
+      success: false,
+      error: error.message || 'An unexpected error occurred during the request.'
     })
   }
 }

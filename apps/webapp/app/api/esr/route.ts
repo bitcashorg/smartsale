@@ -1,3 +1,4 @@
+import { NextRequest, NextResponse } from 'next/server'
 import { createSupabaseServerClient } from '@/services/supabase'
 import { APIClient } from '@wharfkit/antelope'
 import {
@@ -7,11 +8,11 @@ import {
   SigningRequestEncodingOptions,
   ZlibProvider
 } from 'eosio-signing-request'
-import { NextRequest } from 'next/server'
 import { deflateRawSync, inflateRawSync } from 'zlib'
+import { appConfig } from '@/lib/config'
 
 const eos = new APIClient({
-  url: 'https://eos.greymass.com'
+  url: appConfig.eosRpc
 })
 
 const esrNodeJSOptions: SigningRequestEncodingOptions = {
@@ -34,51 +35,43 @@ export async function POST(req: NextRequest) {
     const id = esr.getInfoKey('uuid')
     const action = esr.getRawActions()[0].name.toString()
     const supabase = await createSupabaseServerClient()
+
     console.log(
-      'ESR CONFIRMATION ==> ' + JSON.stringify({ id, action, esr, body })
+      'ESR CONFIRMATION ==> ',
+      JSON.stringify({ id, action, esr, body })
     )
 
-    // TODO: validate tx is on blockchain
-
-    // open up session if l
     if (action === 'login') {
-      // Create a new session entry
       const { data: session, error: sessionError } = await supabase
         .from('session')
-        .insert([
-          {
-            id: body.session_id, // Assuming id is stored in body.session_id
-            tx: body.tx,
-            account: body.sa
-          }
-        ])
+        .insert([{ id: body.session_id, tx: body.tx, account: body.sa }])
 
-      // Check for and handle any errors
-      if (sessionError)
+      if (sessionError) {
         throw new Error(`Error creating session: ${sessionError.message}`)
+      }
       console.log('Session created successfully:', session)
     }
 
-    // Update esr entry with trx_id
     const { data: esrUpdate, error } = await supabase
       .from('esr')
-      .update({
-        trx_id: body.tx
-      })
-      .match({ id: body.esr_id }) // Assuming id for the esr entry is stored in body.esr_id
+      .update({ trx_id: body.tx })
+      .match({ id: body.esr_id })
 
-    // Check for and handle any errors
-    if (error) throw new Error(`Error updating ESR entry: ${error.message}`)
+    if (error) {
+      throw new Error(`Error updating ESR entry: ${error.message}`)
+    }
     console.log('ESR entry updated successfully:', esrUpdate)
 
-    return Response.json({
+    return NextResponse.json({
       success: true,
       message: 'Successfully received esr callback'
     })
-  } catch (error) {
-    console.log(error)
-    return Response.json({
-      message: 'Could not parse the request body'
+  } catch (error: any) {
+    console.error('Error handling request:', error)
+    return NextResponse.json({
+      success: false,
+      message:
+        error.message || 'An error occurred during the request processing'
     })
   }
 }

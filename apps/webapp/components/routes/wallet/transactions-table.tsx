@@ -20,19 +20,18 @@ export function TransactionsTable() {
   const { address } = useAccount()
   const [transactions, setTransactions] = useState<any[]>([])
 
-  const fetchOrders = async (address: Address) => {
-    const { data, error } = await supabase
-      .from('transfers')
-      .select('*')
-      .eq('from', address)
-      .order('created_at', { ascending: false })
-
-    if (error) return
-    setTransactions(data)
-  }
-
   useEffect(() => {
     if (!address) return
+    const fetchOrders = async (address: Address) => {
+      const { data, error } = await supabase
+        .from('transfers')
+        .select('*')
+        .eq('from', address)
+        .order('created_at', { ascending: false })
+
+      if (error) return
+      setTransactions(data)
+    }
     fetchOrders(address)
     const channel1 = supabase
       .channel('transfers')
@@ -68,7 +67,7 @@ export function TransactionsTable() {
       supabase.removeChannel(channel1)
       supabase.removeChannel(channel2)
     }
-  }, [setTransactions, address])
+  }, [setTransactions, address, supabase])
 
   return (
     <div className="pt-8">
