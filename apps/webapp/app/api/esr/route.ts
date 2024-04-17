@@ -55,7 +55,7 @@ export async function POST(req: NextRequest) {
     const { data: esrUpdate, error } = await supabase
       .from('esr')
       .update({ trx_id: body.tx })
-      .match({ id: body.esr_id })
+      .match({ id })
 
     if (error) {
       throw new Error(`Error updating ESR entry: ${error.message}`)
