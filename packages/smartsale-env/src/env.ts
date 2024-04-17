@@ -76,6 +76,19 @@ export const smartsaleEnv = {
 // expiclit type to enforce it
 export type SmartsaleEnv = keyof typeof smartsaleEnv
 
+// Utility function to validate a string as a valid SmartsaleEnv key
+export function isValidSmartsaleEnv(env: string): env is SmartsaleEnv {
+  return Object.keys(smartsaleEnv).includes(env);
+}
+
+// Utility function that throws an error if the string is not a valid SmartsaleEnv key, otherwise returns the key
+export function getValidSmartsaleEnv(env: string): SmartsaleEnv {
+  if (isValidSmartsaleEnv(env)) {
+    return env as SmartsaleEnv;
+  } else {
+    throw new Error(`Invalid environment: ${env}`);
+  }
+}
 export interface SmartsaleEnvConfig {
   chains: Map<number, Chain>
   issuer: {
