@@ -63,8 +63,8 @@ export function ProjectCardButtons({ project }: { project: Project }) {
             }
           >
             <ExternalLinkButton
-                onClick={(e)=> {e.stopPropagation()}}
-                variant="outline"
+              onClick={(e)=> {e.stopPropagation()}}
+              variant="outline"
               size="icon"
               link={link}
               className={buttonLinkClassName}
