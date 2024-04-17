@@ -41,6 +41,7 @@ export async function genLoginSigningRequest(
       appName: 'Bitlauncher'
     }
   })
+  console.log('esr', JSON.stringify((await req).data.toJSON()))
 
   return req
 }

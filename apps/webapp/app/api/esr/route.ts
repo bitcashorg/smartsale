@@ -37,14 +37,14 @@ export async function POST(req: NextRequest) {
     const supabase = await createSupabaseServerClient()
 
     console.log(
-      'ESR CONFIRMATION ==> ',
+      'ESR CONFIRMATION INPUT ==> ',
       JSON.stringify({ id, action, esr, body })
     )
 
     if (action === 'login') {
       const { data: session, error: sessionError } = await supabase
         .from('session')
-        .insert([{ id: body.session_id, tx: body.tx, account: body.sa }])
+        .insert([{ id, tx: body.tx, account: body.sa }])
 
       if (sessionError) {
         throw new Error(`Error creating session: ${sessionError.message}`)

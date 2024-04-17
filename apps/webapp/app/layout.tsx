@@ -13,11 +13,19 @@ import { cookies } from 'next/headers'
 import React from 'react'
 // import { Toaster } from 'react-hot-toast'
 
+const openSans = Open_Sans({
+  subsets: ['latin', 'latin-ext'],
+  weight: ['400', '500', '600', '700', '800']
+})
+
 export default async function RootLayout({ children }: RootLayoutProps) {
   const { viewport } = await getCookieData()
-  console.log('RootLayout', { viewport })
   return (
-    <html lang="en" className={cn('antialiased', openSans.className)}>
+    <html
+      lang="en"
+      className={cn('antialiased', openSans.className)}
+      suppressHydrationWarning
+    >
       <body>
         <GlobalStoreProvider viewport={viewport}>
           <Providers
@@ -30,8 +38,8 @@ export default async function RootLayout({ children }: RootLayoutProps) {
             {/* <Toaster /> */}
             <main className="flex flex-col flex-1">{children}</main>
             <Footer />
+            <DynamicLoginDialog />
           </Providers>
-          <DynamicLoginDialog />
         </GlobalStoreProvider>
 
         <GoogleAnalytics gaId="G-78N0Z7NPQJ" />
@@ -39,11 +47,6 @@ export default async function RootLayout({ children }: RootLayoutProps) {
     </html>
   )
 }
-
-const openSans = Open_Sans({
-  subsets: ['latin', 'latin-ext'],
-  weight: ['400', '500', '600', '700', '800']
-})
 
 async function getCookieData(): Promise<{
   viewport: string | null
