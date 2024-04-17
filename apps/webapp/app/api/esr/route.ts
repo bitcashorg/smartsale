@@ -41,6 +41,7 @@ export async function POST(req: NextRequest) {
       JSON.stringify({ id, action, esr, body })
     )
 
+    // create a session is if the signed action is login
     if (action === 'login') {
       const { data: session, error: sessionError } = await supabase
         .from('session')
@@ -52,15 +53,16 @@ export async function POST(req: NextRequest) {
       console.log('Session created successfully:', session)
     }
 
-    // const { data: esrUpdate, error } = await supabase
-    //   .from('esr')
-    //   .update({ trx_id: body.tx })
-    //   .match({ id })
+    // update esr request with trx id
+    const { data: esrUpdate, error } = await supabase
+      .from('esr')
+      .update({ trx_id: body.tx })
+      .match({ id })
 
-    // if (error) {
-    //   throw new Error(`Error updating ESR entry: ${error.message}`)
-    // }
-    // console.log('ESR entry updated successfully:', esrUpdate)
+    if (error) {
+      throw new Error(`Error updating ESR entry: ${error.message}`)
+    }
+    console.log('ESR entry updated successfully:', esrUpdate)
 
     return NextResponse.json({
       success: true,

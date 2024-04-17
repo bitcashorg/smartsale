@@ -40,6 +40,8 @@ export async function POST(req: NextRequest) {
     const decoded = SigningRequest.from(code, esrNodeJSOptions)
     const id = decoded.getInfoKey('uuid')
     const supabase = await createSupabaseServerClient()
+
+    // create initial signing request registry withou tx id at this point
     const { data: entry, error } = await supabase
       .from('esr')
       .insert([{ id, code, account }])
