@@ -4,8 +4,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React, { Suspense } from 'react'
 import { MotionFigcaption } from './motion-figcaption'
+import { ProjectCardButtons } from './auction-card-buttons'
 
-export function AuctionCard(props: Project) {
+export function AuctionCard(project: Project) {
   const {
     title,
     pitch,
@@ -14,13 +15,9 @@ export function AuctionCard(props: Project) {
     thumbnailImage,
     badgeText,
     linkPath
-  } = props
+  } = project
 
-  const isAuctionRestricted = badgeText.match(
-    /(AUCTION CLOSED|FUTURE|COMING SOON)/
-  )
   const isFutureOrComingAuction = badgeText.match(/(FUTURE|COMING SOON)/)
-  const buttonLinkClassName = 'relative size-auto rounded-full p-3.5'
 
   return (
     <Link
@@ -62,6 +59,7 @@ export function AuctionCard(props: Project) {
             <b>{maxAllocation}</b>
           </li>
         </ul>
+        <ProjectCardButtons project={project} />
       </div>
     </Link>
   )
