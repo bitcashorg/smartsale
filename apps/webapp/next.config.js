@@ -1,16 +1,7 @@
 /** @type {import('next').NextConfig} */
 
 const path = require('path')
-const { PrismaPlugin } = require('@prisma/nextjs-monorepo-workaround-plugin')
-
 module.exports = {
-  webpack: (config, { isServer }) => {
-    if (isServer) {
-      config.plugins = [...config.plugins, new PrismaPlugin()]
-    }
-
-    return config
-  },
   async headers() {
     return [
       {
@@ -31,9 +22,6 @@ module.exports = {
         ]
       }
     ]
-  },
-  images: {
-    remotePatterns: []
   },
   experimental: {
     ...(process.env.NODE_ENV === 'development'
