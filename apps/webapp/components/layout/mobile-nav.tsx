@@ -3,11 +3,11 @@ import { useEffect } from 'react'
 import { useToggle } from 'react-use'
 import UseAnimations from 'react-useanimations'
 import menu4 from 'react-useanimations/lib/menu4'
-import { NavLinks } from '../nav-links'
+import { NavLinks } from './nav-links'
 import { Transition } from '@/components/shared/transition'
 import { AnimatePresence } from 'framer-motion'
 
-export function MobileNavClient() {
+export function MobileNav() {
   const [open, toggleOpen] = useToggle(false)
 
   // control the body scroll
