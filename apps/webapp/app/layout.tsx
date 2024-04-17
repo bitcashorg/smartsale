@@ -36,7 +36,9 @@ export default async function RootLayout({ children }: RootLayoutProps) {
           >
             <Header />
             {/* <Toaster /> */}
-            <main className="flex flex-col flex-1">{children}</main>
+            <main className="flex flex-col flex-1 overflow-hidden">
+              {children}
+            </main>
             <Footer />
             <DynamicLoginDialog />
           </Providers>

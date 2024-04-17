@@ -2,42 +2,65 @@
 
 import Link from 'next/link'
 import { useSession } from '@/hooks/use-session'
+import { Fragment } from 'react'
 
 export function NavLinks({ mobile = false }: { mobile?: boolean }) {
-  const { loginOrConnect, openConnectModal } = useSession()
+  const { loginRedirect, openConnectModal, session } = useSession()
 
   const links = [
     {
       href: '/login',
       text: 'Login with Bitcash',
       mobile: true,
-      action: loginOrConnect
+      action: loginRedirect,
+      disabled: Boolean(session)
     },
     {
       href: '/connect',
-      text: 'Connect EVM Wallet',
+      text: session ? 'Connect EVM Wallet' : 'Login to Connect your EVM Wallet',
       mobile: true,
-      action: openConnectModal
+      action: session ? openConnectModal : loginRedirect,
+      disabled: false
     },
-    { href: '/about', text: 'About', mobile: false, action: null },
-    { href: '/whitepaper', text: 'White Paper', mobile: false, action: null },
-    { href: '/security', text: 'Security', mobile: false, action: null }
+    {
+      href: '/about',
+      text: 'About',
+      mobile: false,
+      action: null,
+      disabled: false
+    },
+    {
+      href: '/whitepaper',
+      text: 'White Paper',
+      mobile: false,
+      action: null,
+      disabled: false
+    },
+    {
+      href: '/security',
+      text: 'Security',
+      mobile: false,
+      action: null,
+      disabled: false
+    }
     // { href: '/terms', text: 'Privacy', mobile: false, action: null }
   ] as const
 
   return links.map(link => {
     if (link.mobile && !mobile) return null
+
     return (
       <Link
+        key={`${mobile ? 'mobile' : 'desktop'}-link-${link.href}-${crypto.randomUUID()}`}
         shallow
-        key={link.href}
-        className="header-link flex"
+        className="flex"
         href={link.href}
         onClick={e => {
           if (!link.action) return
           e.preventDefault()
           link.action()
         }}
+        aria-disabled={link.disabled}
       >
         {link.text}
       </Link>
