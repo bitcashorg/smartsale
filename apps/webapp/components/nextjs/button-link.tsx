@@ -19,6 +19,7 @@ export function ExternalLinkButton({
       className={cn(className)}
       onClick={event => {
         event.preventDefault()
+        event.stopPropagation()
         window.open(link, '_blank', 'noopener,noreferrer')
       }}
     >
