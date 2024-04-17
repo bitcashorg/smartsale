@@ -3,12 +3,11 @@ import { createContextHook } from '@blockmatic/hooks-utils'
 import { useSearchParams } from 'next/navigation'
 import { useEffect, useState } from 'react'
 import { useAsync, useLocalStorage } from 'react-use'
-import { session } from 'smartsale-db'
-
 import axios from 'axios'
 import React, { ReactNode } from 'react'
 import { useSupabaseClient } from '@/services/supabase'
 import { useConnectModal } from '@rainbow-me/rainbowkit'
+import { Tables } from '@repo/supabase'
 
 const [useSession, SessionProviderInner] = createContextHook(
   useSessionFn,
@@ -19,7 +18,8 @@ export function useSessionFn() {
   const supabase = useSupabaseClient()
   const searchParams = useSearchParams()
   const [newSessionId] = useState(crypto.randomUUID())
-  const [session, setSession] = useLocalStorage<session>('bitcash-session')
+  const [session, setSession] =
+    useLocalStorage<Tables<'session'>>('bitcash-session')
   const loginSR = useAsync(() => genLoginSigningRequest(newSessionId))
   const loginUri = loginSR?.value?.encode()
   const { openConnectModal } = useConnectModal()
@@ -33,7 +33,7 @@ export function useSessionFn() {
         payload => {
           if (session || payload.new.id !== newSessionId) return
           // set new session if ids match
-          setSession(payload.new as session)
+          setSession(payload.new as Tables<'session'>)
         }
       )
       .subscribe()

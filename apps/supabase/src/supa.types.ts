@@ -126,6 +126,30 @@ export type Database = {
         }
         Relationships: []
       }
+      esr: {
+        Row: {
+          account: string | null
+          code: string | null
+          created_at: string
+          id: string
+          trx_id: string | null
+        }
+        Insert: {
+          account?: string | null
+          code?: string | null
+          created_at?: string
+          id?: string
+          trx_id?: string | null
+        }
+        Update: {
+          account?: string | null
+          code?: string | null
+          created_at?: string
+          id?: string
+          trx_id?: string | null
+        }
+        Relationships: []
+      }
       orders: {
         Row: {
           auction_id: number
@@ -162,6 +186,63 @@ export type Database = {
         }
         Relationships: []
       }
+      session: {
+        Row: {
+          account: string
+          created_at: string
+          id: string
+          tx: string
+        }
+        Insert: {
+          account: string
+          created_at?: string
+          id?: string
+          tx: string
+        }
+        Update: {
+          account?: string
+          created_at?: string
+          id?: string
+          tx?: string
+        }
+        Relationships: []
+      }
+      transfers: {
+        Row: {
+          amount: number | null
+          chain_id: number | null
+          created_at: string
+          from: string | null
+          to: string | null
+          token: string | null
+          trx_hash: string
+          type: string | null
+          usdcred_trx: string | null
+        }
+        Insert: {
+          amount?: number | null
+          chain_id?: number | null
+          created_at?: string
+          from?: string | null
+          to?: string | null
+          token?: string | null
+          trx_hash: string
+          type?: string | null
+          usdcred_trx?: string | null
+        }
+        Update: {
+          amount?: number | null
+          chain_id?: number | null
+          created_at?: string
+          from?: string | null
+          to?: string | null
+          token?: string | null
+          trx_hash?: string
+          type?: string | null
+          usdcred_trx?: string | null
+        }
+        Relationships: []
+      }
       users: {
         Row: {
           address: string
@@ -177,6 +258,27 @@ export type Database = {
           address?: string
           created_at?: string
           id?: number
+        }
+        Relationships: []
+      }
+      whitelist: {
+        Row: {
+          account: string
+          address: string
+          created_at: string
+          project_id: number
+        }
+        Insert: {
+          account: string
+          address: string
+          created_at?: string
+          project_id: number
+        }
+        Update: {
+          account?: string
+          address?: string
+          created_at?: string
+          project_id?: number
         }
         Relationships: []
       }

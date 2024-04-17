@@ -52,7 +52,6 @@
     "react-use": "^17.5.0",
     "react-useanimations": "^2.10.0",
     "smartsale-contracts": "workspace:*",
-    "smartsale-db": "workspace:*",
     "smartsale-env": "workspace:*",
     "smartsale-lib": "workspace:*",
     "viem": "latest",

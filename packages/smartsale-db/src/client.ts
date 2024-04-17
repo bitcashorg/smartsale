@@ -1,5 +1,0 @@
-import { PrismaClient } from "../prisma/client";
-
-export const db = new PrismaClient({});
-
-// 2222034

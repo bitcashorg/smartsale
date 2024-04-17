@@ -1,3 +1,4 @@
+import { createSupabaseServerClient } from '@/services/supabase'
 import { APIClient } from '@wharfkit/antelope'
 import {
   AbiProvider,
@@ -7,7 +8,6 @@ import {
   ZlibProvider
 } from 'eosio-signing-request'
 import { NextRequest } from 'next/server'
-import { db } from 'smartsale-db'
 import { deflateRawSync, inflateRawSync } from 'zlib'
 
 const eos = new APIClient({
@@ -33,7 +33,7 @@ export async function POST(req: NextRequest) {
     const esr = SigningRequest.from(body.req, esrNodeJSOptions)
     const id = esr.getInfoKey('uuid')
     const action = esr.getRawActions()[0].name.toString()
-
+    const supabase = await createSupabaseServerClient()
     console.log(
       'ESR CONFIRMATION ==> ' + JSON.stringify({ id, action, esr, body })
     )
@@ -42,23 +42,34 @@ export async function POST(req: NextRequest) {
 
     // open up session if l
     if (action === 'login') {
-      await db.session.create({
-        data: {
-          id,
-          tx: body.tx,
-          account: body.sa
-        }
-      })
+      // Create a new session entry
+      const { data: session, error: sessionError } = await supabase
+        .from('session')
+        .insert([
+          {
+            id: body.session_id, // Assuming id is stored in body.session_id
+            tx: body.tx,
+            account: body.sa
+          }
+        ])
+
+      // Check for and handle any errors
+      if (sessionError)
+        throw new Error(`Error creating session: ${sessionError.message}`)
+      console.log('Session created successfully:', session)
     }
-    // update esr entry with trx_id
-    await db.esr.update({
-      where: {
-        id
-      },
-      data: {
+
+    // Update esr entry with trx_id
+    const { data: esrUpdate, error } = await supabase
+      .from('esr')
+      .update({
         trx_id: body.tx
-      }
-    })
+      })
+      .match({ id: body.esr_id }) // Assuming id for the esr entry is stored in body.esr_id
+
+    // Check for and handle any errors
+    if (error) throw new Error(`Error updating ESR entry: ${error.message}`)
+    console.log('ESR entry updated successfully:', esrUpdate)
 
     return Response.json({
       success: true,

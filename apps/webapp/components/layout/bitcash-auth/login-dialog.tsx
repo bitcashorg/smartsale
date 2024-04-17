@@ -15,10 +15,10 @@ import { TestnetUSDCred } from 'smartsale-contracts'
 
 import { useAccount } from 'wagmi'
 
-export function BitcashLogin() {
+export function BitcashLogin({ defaultContent = 'login' }: BitcashAccessProps) {
   const [open, toggleOpen] = useToggle(false)
   const [dialogContent, setDialogContent] =
-    useState<BitcashAccessContentType>('login')
+    useState<BitcashAccessContentType>(defaultContent)
   const { session } = useSession()
   const { address } = useAccount()
   const balance = useErc20Balance({

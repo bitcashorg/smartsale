@@ -43,11 +43,7 @@ export default function Participate() {
                   <IconDownRightArrow className="size-4 transition-all group-focus-within:-rotate-45 group-hover:-rotate-45 [&_path]:stroke-white" />
                 </Link>
               ) : (
-                <BitcashLogin
-                  buttonLabel="down-right-icon"
-                  buttonStyle={{ size: 'icon', variant: 'accent' }}
-                  defaultContent="register"
-                />
+                <BitcashLogin defaultContent="register" />
               )}
             </div>
           </div>

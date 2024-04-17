@@ -35,6 +35,7 @@ export function RegisterAddress({ projectId }: { projectId: number }) {
   }
 
   const fetchData = async () => {
+    if (!address) return
     const { data, error } = await supabase
       .from('whitelist')
       .select()
@@ -51,9 +52,9 @@ export function RegisterAddress({ projectId }: { projectId: number }) {
   })
 
   return (
-    <div className="flex flex-col items-center justify-center gap-6 p-4 size-full">
+    <div className="flex size-full flex-col items-center justify-center gap-6 p-4">
       <div className="flex flex-col space-y-4">
-        <p className="font-bold text-center">
+        <p className="text-center font-bold">
           {!isRegistered
             ? 'Register your address before the auction starts'
             : 'You are already registered'}

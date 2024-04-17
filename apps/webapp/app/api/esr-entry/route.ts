@@ -1,3 +1,4 @@
+import { createSupabaseServerClient } from '@/services/supabase'
 import { APIClient } from '@wharfkit/antelope'
 import {
   AbiProvider,
@@ -6,7 +7,6 @@ import {
   ZlibProvider
 } from 'eosio-signing-request'
 import { NextRequest } from 'next/server'
-import { db } from 'smartsale-db'
 import { deflateRawSync, inflateRawSync } from 'zlib'
 import { z } from 'zod'
 
@@ -36,17 +36,14 @@ export async function POST(req: NextRequest) {
   try {
     const rawData = await req.json()
     const { code, account } = requestBodySchema.parse(rawData)
-
     const decoded = SigningRequest.from(code, esrNodeJSOptions)
     const id = decoded.getInfoKey('uuid')
-
-    const entry = await db.esr.create({
-      data: {
-        id,
-        code,
-        account
-      }
-    })
+    const supabase = await createSupabaseServerClient()
+    const { data: entry, error } = await supabase
+      .from('esr') // The table name should match your schema in Supabase
+      .insert([{ id, code, account }])
+      .single() // Use .single() if you're expecting to insert one row
+    if (error) throw new Error(error.message)
     console.log('esr entry', entry)
 
     return Response.json({
