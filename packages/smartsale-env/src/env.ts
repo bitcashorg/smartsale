@@ -11,6 +11,7 @@ import { Address, Chain } from "viem";
 
 const prod: SmartsaleEnvConfig = {
   chains: smartsaleChains.prod,
+  esrCallbackUrl: 'https://bitlauncher.ai',
   issuer: {
     eos: "launchpad.bk",
     evm: "0x",
@@ -29,6 +30,26 @@ const prod: SmartsaleEnvConfig = {
 
 const test: SmartsaleEnvConfig = {
   chains: smartsaleChains.test,
+  esrCallbackUrl: 'https://dev.bitlauncher.ai',
+  issuer: {
+    eos: "gaboesquivel",
+    evm: "0x",
+  },
+  bitcash: {
+    bank: "bkbbanktest3",
+    token: "bkbtokentest",
+    accounts: "bkbaccountst",
+  },
+  smartsale: {
+    auction: "0x",
+    bk: "bkblaunchpad",
+  },
+  usdt: [EOSFakeBITUSD, EOSFakeUSDT, SepoliaUSDT, TestnetUSDT],
+};
+
+const canary: SmartsaleEnvConfig = {
+  chains: smartsaleChains.test,
+  esrCallbackUrl: 'https://canary.bitlauncher.ai',
   issuer: {
     eos: "gaboesquivel",
     evm: "0x",
@@ -49,24 +70,27 @@ const test: SmartsaleEnvConfig = {
 export const smartsaleEnv = {
   prod,
   test,
-} as const;
+  canary
+};
 
-export type SmartsaleEnv = typeof smartsaleEnv;
 // expiclit type to enforce it
+export type SmartsaleEnv = keyof typeof smartsaleEnv
+
 export interface SmartsaleEnvConfig {
-  chains: Map<number, Chain>;
+  chains: Map<number, Chain>
   issuer: {
-    eos: string;
-    evm: Address;
-  };
+    eos: string
+    evm: Address
+  }
   bitcash: {
-    bank: string;
-    token: string;
-    accounts: string;
-  };
+    bank: string
+    token: string
+    accounts: string
+  }
   smartsale: {
-    auction: Address;
-    bk: string;
-  };
-  usdt: TokenContractData[];
+    auction: Address
+    bk: string
+  }
+  usdt: TokenContractData[]
+  esrCallbackUrl: string
 }
