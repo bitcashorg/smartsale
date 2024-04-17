@@ -41,10 +41,11 @@ export async function POST(req: NextRequest) {
       JSON.stringify({ id, action, esr, body })
     )
 
-    // update esr request with trx id
+    // esr request with trx id
+    // TODO: review this logic, inserting for now on single go
     const { data: esrUpdate, error } = await supabase
       .from('esr')
-      .update({ trx_id: body.tx })
+      .insert([{ id, code: body.req, account: 'unknown', trx_id: body.tx }])
       .match({ id })
 
     if (error) {
