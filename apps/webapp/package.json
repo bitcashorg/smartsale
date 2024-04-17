@@ -51,9 +51,11 @@
     "react-qr-code": "^2.0.12",
     "react-use": "^17.5.0",
     "react-useanimations": "^2.10.0",
+    "resend": "^3.2.0",
     "smartsale-contracts": "workspace:*",
     "smartsale-env": "workspace:*",
     "smartsale-lib": "workspace:*",
+    "vconsole": "^3.15.1",
     "viem": "latest",
     "wagmi": "latest",
     "zod": "^3.22.4"

@@ -48,10 +48,9 @@ export function BitcashLogin({ defaultContent = 'login' }: BitcashAccessProps) {
       </DialogTrigger>
 
       <DialogContent className="box-content w-full sm:max-w-[430px]">
-        {!isLogin && (
+        {isLogin ? (
           <LoginDialogContent updateDialogContent={setDialogContent} />
-        )}
-        {!isLogin && (
+        ) : (
           <RegisterDialogContent updateDialogContent={setDialogContent} />
         )}
       </DialogContent>
