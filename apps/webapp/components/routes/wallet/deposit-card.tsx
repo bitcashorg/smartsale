@@ -1,6 +1,6 @@
 'use client'
 
-import { useSignatureRequest } from '@/components/dialogs/esr-dialog'
+import { useSigningRequest } from '@/hooks/use-signing-request'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardFooter } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
@@ -39,7 +39,7 @@ export function DepositCard() {
   const [amount, setAmount] = useState<number>(42)
   const { switchChain } = useSwitchChain()
   const [token, setToken] = useState<TokenContractData>(TestnetUSDT)
-  const { requestSignature } = useSignatureRequest()
+  const { requestSignature } = useSigningRequest()
 
   const deposit = async () => {
     if (!address)

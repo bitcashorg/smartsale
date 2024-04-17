@@ -1,6 +1,6 @@
 'use client'
 
-import { BitcashAccessContentType } from '@/components/layout/session/login-dialog'
+import { BitcashAccessContentType } from '@/components/layout/session/session-dialog'
 import { Button } from '@/components/ui/button'
 import {
   DialogDescription,

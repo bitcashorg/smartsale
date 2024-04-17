@@ -1,21 +1,23 @@
 'use client'
-import { LoginDialogContent } from '@/components/layout/session/login-dialog-content'
+import { SessionDialogContent } from '@/components/layout/session/login-dialog-content'
 import { RegisterDialogContent } from '@/components/layout/session/register-dialog-content'
 import { Dialog, DialogContent } from '@/components/ui/dialog'
 import { useSession } from '@/hooks/use-session'
 import { useState } from 'react'
 
-export function LoginDialog({ defaultContent = 'login' }: BitcashAccessProps) {
+export function SessionDialog({
+  defaultContent = 'login'
+}: BitcashAccessProps) {
   const [dialogContent, setDialogContent] =
     useState<BitcashAccessContentType>(defaultContent)
-  const { showLoginDialog, toggleShowLoginDialog } = useSession()
+  const { showSessionDialog, toggleShowSessionDialog } = useSession()
   const isLogin = dialogContent === 'login'
 
   return (
-    <Dialog open={showLoginDialog} onOpenChange={toggleShowLoginDialog}>
+    <Dialog open={showSessionDialog} onOpenChange={toggleShowSessionDialog}>
       <DialogContent className="box-content w-full sm:max-w-[430px]">
         {isLogin ? (
-          <LoginDialogContent updateDialogContent={setDialogContent} />
+          <SessionDialogContent updateDialogContent={setDialogContent} />
         ) : (
           <RegisterDialogContent updateDialogContent={setDialogContent} />
         )}

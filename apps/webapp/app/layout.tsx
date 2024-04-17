@@ -36,11 +36,11 @@ export default async function RootLayout({ children }: RootLayoutProps) {
           >
             <Header />
             {/* <Toaster /> */}
-            <main className="flex flex-col flex-1 overflow-hidden">
+            <main className="flex flex-1 flex-col overflow-hidden">
               {children}
             </main>
             <Footer />
-            <DynamicLoginDialog />
+            <DynamicSessionDialog />
           </Providers>
         </GlobalStoreProvider>
 
@@ -61,10 +61,10 @@ async function getCookieData(): Promise<{
   )
 }
 
-const DynamicLoginDialog = dynamic(
+const DynamicSessionDialog = dynamic(
   () =>
-    import('../components/layout/session/login-dialog').then(
-      mod => mod.LoginDialog
+    import('../components/layout/session/session-dialog').then(
+      mod => mod.SessionDialog
     ),
   {
     ssr: false

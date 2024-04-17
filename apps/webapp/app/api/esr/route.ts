@@ -37,9 +37,20 @@ export async function POST(req: NextRequest) {
     const supabase = await createSupabaseServerClient()
 
     console.log(
-      'ESR CONFIRMATION INPUT ==> ',
+      'ESR CALLBACK INPUT ==> ',
       JSON.stringify({ id, action, esr, body })
     )
+
+    // update esr request with trx id
+    const { data: esrUpdate, error } = await supabase
+      .from('esr')
+      .update({ trx_id: body.tx })
+      .match({ id })
+
+    if (error) {
+      throw new Error(`Error updating ESR entry: ${error.message}`)
+    }
+    console.log('ESR entry updated successfully:', esrUpdate)
 
     // create a session is if the signed action is login
     if (action === 'login') {
@@ -52,17 +63,6 @@ export async function POST(req: NextRequest) {
       }
       console.log('Session created successfully:', session)
     }
-
-    // update esr request with trx id
-    const { data: esrUpdate, error } = await supabase
-      .from('esr')
-      .update({ trx_id: body.tx })
-      .match({ id })
-
-    if (error) {
-      throw new Error(`Error updating ESR entry: ${error.message}`)
-    }
-    console.log('ESR entry updated successfully:', esrUpdate)
 
     return NextResponse.json({
       success: true,

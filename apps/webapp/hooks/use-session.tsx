@@ -8,18 +8,15 @@ import { useConnectModal } from '@rainbow-me/rainbowkit'
 import { Tables } from '@repo/supabase'
 import { useGlobalStore } from './use-global-store'
 
-const [useSession, SessionProviderInner] = createContextHook(
-  useSessionFn,
-  'You must wrap your application with <SessionProvider /> in order to useSession().'
-)
+export { SessionProvider, useSession }
+
 // don export this fn must be wrapped for context to work
 function useSessionFn() {
   const supabase = useSupabaseClient()
   const [newSessionId] = useState(crypto.randomUUID())
   const { viewport } = useGlobalStore()
-
   const { openConnectModal } = useConnectModal()
-  const [showLoginDialog, toggleShowLoginDialog] = useToggle(false)
+  const [showSessionDialog, toggleShowSessionDialog] = useToggle(false)
   const [session, setSession] =
     useLocalStorage<Tables<'session'>>('bitcash-session')
 
@@ -50,6 +47,7 @@ function useSessionFn() {
     }
   }, [setSession, supabase])
 
+  // default moblie login mode is redirect
   const loginRedirect = () => {
     if (!loginUri || !open) return
     // post request to parent if present
@@ -71,18 +69,18 @@ function useSessionFn() {
       ? openConnectModal()
       : viewport === 'mobile'
         ? loginRedirect()
-        : toggleShowLoginDialog(true)
+        : toggleShowSessionDialog(true)
   }
 
   return {
     newSessionId,
     session,
     loginUri,
-    showLoginDialog,
+    showSessionDialog,
     loginRedirect,
     openConnectModal,
     loginOrConnect,
-    toggleShowLoginDialog
+    toggleShowSessionDialog
   }
 }
 
@@ -94,4 +92,7 @@ function SessionProvider({ children }: { children: ReactNode }) {
   )
 }
 
-export { SessionProvider, useSession }
+const [useSession, SessionProviderInner] = createContextHook(
+  useSessionFn,
+  'You must wrap your application with <SessionProvider /> in order to useSession().'
+)
