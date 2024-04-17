@@ -7,9 +7,8 @@ import { Project } from '@/lib/projects'
 
 export function ProjectShare({ project }: { project: Project }) {
   return (
-    <div className="flex flex-col w-full gap-3 bg-red-500 ">
-      <h2 className="mt-10 text-xl font-semibold">Media & Share</h2>
-      <div className="flex items-center gap-3 md:gap-6">
+    <div className="flex flex-col w-full gap-3">
+      <div className="flex items-center justify-end gap-3 md:gap-6">
         <Link
           href={`https://twitter.com/${project.twitterUsername}`}
           className={cn(
