@@ -8,7 +8,7 @@ import {
   SigningRequestEncodingOptions
 } from 'eosio-signing-request'
 import pako from 'pako'
-import { smartsaleEnv } from 'smartsale-env'
+import { appConfig } from './config'
 
 const eos = new APIClient({
   url: 'https://eos.greymass.com'
@@ -29,7 +29,7 @@ export async function genLoginSigningRequest(
 ) {
   const req = createSignatureRequest({
     action: {
-      account: smartsaleEnv.test.bitcash.accounts,
+      account: appConfig.bitcash.accounts,
       name: 'login',
       authorization,
       data: {
@@ -38,7 +38,7 @@ export async function genLoginSigningRequest(
     },
     info: {
       uuid,
-      appName: 'Bitlauncher',
+      appName: 'Bitlauncher'
     }
   })
   return req
@@ -55,11 +55,11 @@ export async function genBitusdDepositSigningRequest(
       authorization,
       data: {
         from: '............1',
-        to: smartsaleEnv.test.smartsale.bk,
+        to: appConfig.smartsale.bk,
         memo: `pair_id:1 address:${address}`,
         quantity: {
           quantity: Asset.from(amount, '6,BITUSD'),
-          contract: smartsaleEnv.test.bitcash.bank
+          contract: appConfig.bitcash.bank
         }
       }
     }
@@ -71,7 +71,7 @@ export async function genUsdtDepositSigningRequest(
   amount: number,
   address: string
 ) {
-  const account = smartsaleEnv.test.usdt.find(
+  const account = appConfig.usdt.find(
     c => c.chainType === 'antelope' && c.symbol === 'USDT'
   )?.address
   if (!account) throw new Error('usdt account not found')
@@ -83,7 +83,7 @@ export async function genUsdtDepositSigningRequest(
       authorization,
       data: {
         from: '............1',
-        to: smartsaleEnv.test.smartsale.bk,
+        to: appConfig.smartsale.bk,
         memo: `address:${address}`,
         quantity: Asset.from(amount, '4,USDT')
       }
@@ -118,7 +118,7 @@ async function createSignatureRequest({
       action,
       info,
       callback: {
-        url: 'https://bitlauncher.ai/api/esr',
+        url: appConfig.esrCallbackUrl,
         background: true
       }
     },
@@ -144,7 +144,7 @@ export async function getEosBalance(account: string) {
 
 export async function getBitUsdBalance(account: string) {
   const response = await eos.v1.chain.get_table_rows({
-    code: smartsaleEnv.test.bitcash.bank,
+    code: appConfig.bitcash.bank,
     table: 'stablev2',
     scope: Name.from(account)
   })
