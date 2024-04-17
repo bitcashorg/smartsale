@@ -8,6 +8,7 @@ import { session } from 'smartsale-db'
 import axios from 'axios'
 import React, { ReactNode } from 'react'
 import { useSupabaseClient } from '@/services/supabase'
+import { useConnectModal } from '@rainbow-me/rainbowkit'
 
 const [useSession, SessionProviderInner] = createContextHook(
   useSessionFn,
@@ -20,6 +21,8 @@ export function useSessionFn() {
   const [newSessionId] = useState(crypto.randomUUID())
   const [session, setSession] = useLocalStorage<session>('bitcash-session')
   const loginSR = useAsync(() => genLoginSigningRequest(newSessionId))
+  const loginUri = loginSR?.value?.encode()
+  const { openConnectModal } = useConnectModal()
 
   useEffect(() => {
     const channel = supabase
@@ -55,7 +58,34 @@ export function useSessionFn() {
     if (session_id) getSession()
   }, [searchParams])
 
-  return { newSessionId, session, loginUri: loginSR?.value?.encode() }
+  const login = () => {
+    if (!loginUri || !open) return
+    // post request to parent if present
+    window.parent &&
+      window.parent.postMessage({ eventType: 'esr', code: loginUri }, '*')
+
+    // redirect with esr and callback on mobile
+    const params = new URLSearchParams()
+    params.append('esr_code', loginUri.replace('esr://', ''))
+    const callbackUrl = `${window.location.href}?session_id=${newSessionId}`
+    console.log('💥 callbackUrl', callbackUrl)
+    const encodedCallbackUrl = encodeURIComponent(callbackUrl)
+    params.append('callback', encodedCallbackUrl)
+    location.href = `https://app.bitcash.org/login?${params.toString()}`
+  }
+
+  const loginOrConnect = () => {
+    session && openConnectModal ? openConnectModal() : login()
+  }
+
+  return {
+    newSessionId,
+    session,
+    loginUri,
+    login,
+    openConnectModal,
+    loginOrConnect
+  }
 }
 
 function SessionProvider({ children }: { children: ReactNode }) {

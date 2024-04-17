@@ -80,14 +80,14 @@ export function ProjectCardButtons({ project }: { project: Project }) {
         ))}
       </div>
 
-      {!isAuctionRestricted && (
-        <Suspense
-          fallback={
-            <Button>
-              <IconDownRightArrow />
-            </Button>
-          }
-        >
+      <Suspense
+        fallback={
+          <Button>
+            <IconDownRightArrow />
+          </Button>
+        }
+      >
+        {!isAuctionRestricted && (
           <NestedLinkButton
             link={linkPath}
             className={cn(
@@ -101,8 +101,8 @@ export function ProjectCardButtons({ project }: { project: Project }) {
           >
             <IconDownRightArrow className="transition-all size-4 group-focus-within:-rotate-45 group-hover:-rotate-45" />
           </NestedLinkButton>
-        </Suspense>
-      )}
+        )}{' '}
+      </Suspense>
     </div>
   )
 }
