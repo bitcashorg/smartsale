@@ -36,7 +36,7 @@ function useSessionFn() {
         'postgres_changes',
         { event: 'INSERT', schema: 'public', table: 'session' },
         payload => {
-          console.log(' 🍓 new supabase session', payload.new)
+          console.log('BAZINGA 🍓 new supabase session', payload.new)
           // set new session if ids match
           if (session || payload.new.id !== newSessionId) return
           console.log(' ✅ supabase session id matches', payload.new)
@@ -46,7 +46,7 @@ function useSessionFn() {
       .subscribe()
 
     return () => {
-      console.log('XX unsubscribing to session')
+      console.log(`XX unsubscribing to session ${newSessionId}`)
       supabase.removeChannel(channel)
     }
   }, [setSession, supabase])
