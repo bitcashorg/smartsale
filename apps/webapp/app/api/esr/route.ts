@@ -11,6 +11,7 @@ import {
 import { deflateRawSync, inflateRawSync } from 'zlib'
 import { appConfig } from '@/lib/config'
 import { Tables } from '@repo/supabase'
+import { z } from 'zod'
 
 export async function POST(req: NextRequest) {
   try {
