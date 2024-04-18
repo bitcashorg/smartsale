@@ -42,6 +42,8 @@ export async function POST(req: NextRequest) {
     const supabase = await createSupabaseServerClient()
 
     // create initial signing request registry withou tx id at this point
+    // generates a new singing request on the db before callback sends an updated
+    // signed request with tx id thru
     const { data: entry, error } = await supabase
       .from('esr')
       .insert([{ id, code, account }])
