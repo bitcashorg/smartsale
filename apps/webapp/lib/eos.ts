@@ -152,18 +152,3 @@ export async function getBitUsdBalance(account: string) {
       ?.balance.quantity.replace('BITUSD', '') || 'O'
   )
 }
-
-export const SigningRequestCallbackPayloadSchema = z.object({
-  sp: z.string(),
-  req: z.string(),
-  sa: z.string(),
-  rid: z.string(),
-  bn: z.string(),
-  tx: z.string(),
-  sig: z.string(),
-  rbn: z.string(),
-  ex: z.string().refine(arg => !isNaN(Date.parse(arg)), {
-    message: 'ex must be a valid ISO date string'
-  }),
-  cid: z.string()
-})

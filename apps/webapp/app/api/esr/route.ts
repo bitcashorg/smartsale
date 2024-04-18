@@ -10,7 +10,6 @@ import {
 } from 'eosio-signing-request'
 import { deflateRawSync, inflateRawSync } from 'zlib'
 import { appConfig } from '@/lib/config'
-import { SigningRequestCallbackPayloadSchema } from '@/lib/eos'
 import { Tables } from '@repo/supabase'
 
 export async function POST(req: NextRequest) {
@@ -106,3 +105,18 @@ const esrNodeJSOptions: SigningRequestEncodingOptions = {
     inflateRaw: data => new Uint8Array(inflateRawSync(Buffer.from(data)))
   } as ZlibProvider
 }
+
+export const SigningRequestCallbackPayloadSchema = z.object({
+  sp: z.string(),
+  req: z.string(),
+  sa: z.string(),
+  rid: z.string(),
+  bn: z.string(),
+  tx: z.string(),
+  sig: z.string(),
+  rbn: z.string(),
+  ex: z.string().refine(arg => !isNaN(Date.parse(arg)), {
+    message: 'ex must be a valid ISO date string'
+  }),
+  cid: z.string()
+})
