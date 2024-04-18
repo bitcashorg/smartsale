@@ -38,15 +38,15 @@ export function RegisterAddressForm({ projectId }: { projectId: number }) {
 
   const fetchData = async () => {
     if (!address) return
-    const { data, error } = await supabase
-      .from('whitelist')
-      .select()
-      .eq('project_id', projectId)
-      .eq('address', address)
+    // const { data, error } = await supabase
+    //   .from('whitelist')
+    //   .select()
+    //   .eq('project_id', projectId)
+    //   .eq('address', address)
 
-    if (error) console.error('error', error)
+    // if (error) console.error('error', error)
 
-    if (data && data.length > 0) setIsRegistered(true)
+    // if (data && data.length > 0) setIsRegistered(true)
   }
 
   useEffect(() => {
