@@ -43,11 +43,11 @@ export async function POST(req: NextRequest) {
     const id = esr.getInfoKey('uuid')
     const action = esr.getRawActions()[0].name.toString()
 
-    const dbInput: Tables<'session'> = {
+    const dbInput: Tables<'esr'> = {
       id,
-      esr_code: callbackPayload.req,
+      code: callbackPayload.req,
       account: callbackPayload.sa,
-      tx: callbackPayload.tx,
+      trx_id: callbackPayload.tx,
       created_at: new Date().toISOString()
     }
     console.log('👋 esr data input ', JSON.stringify({ id, action, esr }))
@@ -68,7 +68,14 @@ export async function POST(req: NextRequest) {
     if (action === 'login') {
       const { data: session, error: sessionError } = await supabase
         .from('session')
-        .insert([{ id, tx: callbackPayload.tx, account: callbackPayload.sa }])
+        .insert([
+          {
+            id,
+            tx: callbackPayload.tx,
+            account: callbackPayload.sa,
+            esr_code: callbackPayload.req
+          }
+        ])
 
       if (sessionError) {
         throw new Error(`Error creating session: ${sessionError.message}`)
