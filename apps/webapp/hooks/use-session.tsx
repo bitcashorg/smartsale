@@ -26,6 +26,8 @@ function useSessionFn() {
   const loginSR = useAsync(() => genLoginSigningRequest(newSessionId))
   const loginUri = loginSR?.value?.encode()
 
+  console.log('openConnectModal', openConnectModal)
+
   // subscribe to supabase session table and set session state
   // this table get updated by /api/esr callback invoked by the signing wallet
   useEffect(() => {
@@ -41,6 +43,7 @@ function useSessionFn() {
           if (session || payload.new.id !== newSessionId) return
           console.log(' ✅ supabase session id matches', payload.new)
           setSession(payload.new as Tables<'session'>)
+          toggleShowSessionDialog(false)
         }
       )
       .subscribe()
@@ -89,6 +92,7 @@ function useSessionFn() {
   // show rainbowkit to link evm wallet if logged in
   // else call login action depending base on viewport
   const loginOrConnect = () => {
+    console.log('login or connect', session, openConnectModal)
     session && openConnectModal
       ? openConnectModal()
       : viewport === 'mobile'
