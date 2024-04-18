@@ -12,7 +12,7 @@ export function Header() {
   return (
     <div className="sticky top-0 z-50 flex h-16 bg-background md:p-4 lg:p-10">
       <div className="container flex items-center justify-between bg-background">
-        <div className="flex h-full items-center">
+        <div className="flex h-full items-center md:pl-0 pl-[14px]">
           <Link shallow href="/">
             <IconBitlauncher />
           </Link>
