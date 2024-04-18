@@ -31,6 +31,7 @@ const prod: SmartsaleEnvConfig = {
 const test: SmartsaleEnvConfig = {
   chains: smartsaleChains.test,
   esrCallbackUrl: "https://dev.bitlauncher.ai/api/esr",
+  // esrCallbackUrl: "https://192.168.23.3:3000/api/esr",
   issuer: {
     eos: "gaboesquivel",
     evm: "0x",
