@@ -7,9 +7,8 @@ import { useSupabaseClient } from '@/services/supabase'
 import { useConnectModal } from '@rainbow-me/rainbowkit'
 import { Tables } from '@repo/supabase'
 import { useGlobalStore } from './use-global-store'
-import axios from 'axios'
-import { getErrorMessage } from 'smartsale-lib'
 
+// Exports
 export { SessionProvider, useSession }
 
 // don export this fn must be wrapped for context to work
