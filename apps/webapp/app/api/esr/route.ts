@@ -13,6 +13,38 @@ import { appConfig } from '@/lib/config'
 import { Tables } from '@repo/supabase'
 import { z } from 'zod'
 
+const eos = new APIClient({
+  url: appConfig.eosRpc
+})
+
+const esrNodeJSOptions: SigningRequestEncodingOptions = {
+  abiProvider: {
+    getAbi: async account => {
+      const response = await eos.v1.chain.get_abi(account.toString())
+      return response.abi
+    }
+  } as AbiProvider,
+  zlib: {
+    deflateRaw: data => new Uint8Array(deflateRawSync(Buffer.from(data))),
+    inflateRaw: data => new Uint8Array(inflateRawSync(Buffer.from(data)))
+  } as ZlibProvider
+}
+
+export const SigningRequestCallbackPayloadSchema = z.object({
+  sp: z.string(),
+  req: z.string(),
+  sa: z.string(),
+  rid: z.string(),
+  bn: z.string(),
+  tx: z.string(),
+  sig: z.string(),
+  rbn: z.string(),
+  ex: z.string().refine(arg => !isNaN(Date.parse(arg)), {
+    message: 'ex must be a valid ISO date string'
+  }),
+  cid: z.string()
+})
+
 export async function POST(req: NextRequest) {
   try {
     const parsed = SigningRequestCallbackPayloadSchema.safeParse(
@@ -89,35 +121,3 @@ export async function POST(req: NextRequest) {
     })
   }
 }
-
-const eos = new APIClient({
-  url: appConfig.eosRpc
-})
-
-const esrNodeJSOptions: SigningRequestEncodingOptions = {
-  abiProvider: {
-    getAbi: async account => {
-      const response = await eos.v1.chain.get_abi(account.toString())
-      return response.abi
-    }
-  } as AbiProvider,
-  zlib: {
-    deflateRaw: data => new Uint8Array(deflateRawSync(Buffer.from(data))),
-    inflateRaw: data => new Uint8Array(inflateRawSync(Buffer.from(data)))
-  } as ZlibProvider
-}
-
-export const SigningRequestCallbackPayloadSchema = z.object({
-  sp: z.string(),
-  req: z.string(),
-  sa: z.string(),
-  rid: z.string(),
-  bn: z.string(),
-  tx: z.string(),
-  sig: z.string(),
-  rbn: z.string(),
-  ex: z.string().refine(arg => !isNaN(Date.parse(arg)), {
-    message: 'ex must be a valid ISO date string'
-  }),
-  cid: z.string()
-})
