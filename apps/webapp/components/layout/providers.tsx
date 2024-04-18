@@ -18,7 +18,7 @@ const queryClient = new QueryClient()
 
 export const wagmiConfig = getDefaultConfig({
   appName: 'Bitlauncher',
-  projectId: 'YOUR_PROJECT_ID',
+  projectId: '25a868c834c1003aa0f0b69aba0ae056',
   // @ts-ignore
   chains: [{ ...eosEvmTestnet, fees: undefined }, sepolia]
 })
@@ -26,6 +26,7 @@ export const wagmiConfig = getDefaultConfig({
 export function Providers({ children, ...props }: ThemeProviderProps) {
   const location = useLocation()
 
+  // part of bitcash app explorer feature
   useEffect(() => {
     window.parent &&
       window.parent.postMessage(
@@ -38,6 +39,7 @@ export function Providers({ children, ...props }: ThemeProviderProps) {
       )
   }, [location])
 
+  // vconsole for debugging in preview envs
   useEffect(() => {
     const isProd = process.env.NEXT_PUBLIC_APP_ENV === 'prod'
     async function loadVConsoleModule() {
@@ -51,9 +53,9 @@ export function Providers({ children, ...props }: ThemeProviderProps) {
     <NextThemesProvider {...props}>
       <TooltipProvider>
         <QueryClientProvider client={queryClient}>
-          <SessionProvider>
-            <WagmiProvider config={wagmiConfig}>
-              <RainbowKitProvider>
+          <WagmiProvider config={wagmiConfig}>
+            <RainbowKitProvider>
+              <SessionProvider>
                 <UseSigningRequestProvider>
                   <GoogleReCaptchaProvider
                     reCaptchaKey={
@@ -70,9 +72,9 @@ export function Providers({ children, ...props }: ThemeProviderProps) {
                     <Transition> {children}</Transition>
                   </GoogleReCaptchaProvider>
                 </UseSigningRequestProvider>
-              </RainbowKitProvider>
-            </WagmiProvider>
-          </SessionProvider>
+              </SessionProvider>
+            </RainbowKitProvider>
+          </WagmiProvider>
         </QueryClientProvider>
       </TooltipProvider>
     </NextThemesProvider>

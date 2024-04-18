@@ -1,7 +1,7 @@
 'use client'
 
 import { registerAddress } from '@/actions'
-import { Button } from '@/components/ui/button'
+import { Button, ButtonProps, buttonVariants } from '@/components/ui/button'
 import { useSession } from '@/hooks/use-session'
 import { formatAddress, fromEntries } from 'smartsale-lib'
 import { RegisterAddressSchema } from '@/lib/validators'
@@ -9,13 +9,15 @@ import { useEffect, useState } from 'react'
 import { useFormStatus } from 'react-dom'
 import { useAccount } from 'wagmi'
 import { useSupabaseClient } from '@/services/supabase'
+import { cn } from '@/lib/utils'
 
-export function RegisterAddress({ projectId }: { projectId: number }) {
+export function RegisterAddressForm({ projectId }: { projectId: number }) {
   const supabase = useSupabaseClient()
-  const { session } = useSession()
+  const { loginOrConnect, session } = useSession()
   const { address } = useAccount()
   const { pending } = useFormStatus()
   const [isRegistered, setIsRegistered] = useState(false)
+  const account = useAccount()
 
   const submitForm = async (formData: FormData) => {
     try {
@@ -51,29 +53,33 @@ export function RegisterAddress({ projectId }: { projectId: number }) {
     fetchData()
   })
 
+  return isRegistered ? (
+    <RegisterButton
+      text={`You are already registered for pre-sale with address ${formatAddress(address)}`}
+    />
+  ) : (
+    <form action={submitForm}>
+      <input type="hidden" name="address" value={address} />
+      <input type="hidden" name="project_id" value={projectId} />
+      <input type="hidden" name="account" value={session?.account} />
+      <RegisterButton onClick={loginOrConnect} text="Register for Presale" />
+    </form>
+  )
+}
+
+function RegisterButton(props: ButtonProps & { text: string }) {
   return (
-    <div className="flex size-full flex-col items-center justify-center gap-6 p-4">
-      <div className="flex flex-col space-y-4">
-        <p className="text-center font-bold">
-          {!isRegistered
-            ? 'Register your address before the auction starts'
-            : 'You are already registered'}
-        </p>
-      </div>
-      {!isRegistered ? (
-        <form action={submitForm}>
-          <input type="hidden" name="address" value={address} />
-          <input type="hidden" name="project_id" value={projectId} />
-          <input type="hidden" name="account" value={session?.account} />
-          <Button
-            className="w-full bg-[#bd1e59] text-lg font-semibold text-white"
-            disabled={!session || !address || pending}
-            size="lg"
-          >
-            Register {address ? formatAddress(address) : 'Address'}
-          </Button>
-        </form>
-      ) : null}
-    </div>
+    <Button
+      className={cn(
+        buttonVariants({
+          variant: 'outline',
+          radius: 'full'
+        }),
+        'mx-auto mt-5 border border-solid border-accent bg-background px-10 py-5'
+      )}
+      {...props}
+    >
+      {props.text}
+    </Button>
   )
 }

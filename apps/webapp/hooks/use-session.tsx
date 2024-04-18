@@ -1,3 +1,5 @@
+'use client'
+
 import { genLoginSigningRequest } from '@/lib/eos'
 import { createContextHook } from '@blockmatic/hooks-utils'
 import { useEffect, useState } from 'react'
