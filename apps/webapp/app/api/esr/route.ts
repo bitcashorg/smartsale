@@ -58,6 +58,7 @@ export async function POST(req: NextRequest) {
     const { data: esrUpdate, error } = await supabase
       .from('esr')
       .insert([dbInput])
+      .select('*')
 
     if (error) {
       throw new Error(`Error updating ESR entry: ${error.message}`)
@@ -76,6 +77,7 @@ export async function POST(req: NextRequest) {
             esr_code: callbackPayload.req
           }
         ])
+        .select('*')
 
       if (sessionError) {
         throw new Error(`Error creating session: ${sessionError.message}`)
