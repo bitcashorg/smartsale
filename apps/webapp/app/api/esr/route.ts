@@ -29,6 +29,7 @@ const esrNodeJSOptions: SigningRequestEncodingOptions = {
 }
 
 export async function POST(req: NextRequest) {
+  console.log('🚀 api/esr', await req.json())
   try {
     const body = (await req.json()) as CallbackPayload
     const esr = SigningRequest.from(body.req, esrNodeJSOptions)

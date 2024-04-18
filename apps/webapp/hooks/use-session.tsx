@@ -69,21 +69,23 @@ function useSessionFn() {
     location.href = `https://app.bitcash.org?${params.toString()}`
   }
 
-  const toggleSessionDialog = async (show?: boolean) => {
-    // dont call new entry endpoint when hiding
-    if (!show) return toggleShowSessionDialog(false)
-    // create new entry for later check on backend
-    try {
-      // console.log('🦚 creting esr entry in supabase')
-      // const response = await axios.post('/api/esr-entry', {
-      //   code: loginUri,
-      //   account: session.account
-      // })
-      // if (!response) return console.log('💥 error creating entry in supabase')
-    } catch (error) {
-      console.log('💥 error creating entry', getErrorMessage(error))
-    }
-  }
+  // const toggleSessionDialog = async (show?: boolean) => {
+  //   console.log('🫶🏻 toggle session')
+
+  //   // dont call new entry endpoint when hiding
+  //   if (showSessionDialog) return toggleShowSessionDialog(false)
+  //   // create new entry for later check on backend
+  //   try {
+  //     // console.log('🦚 creting esr entry in supabase')
+  //     // const response = await axios.post('/api/esr-entry', {
+  //     //   code: loginUri,
+  //     //   account: session.account
+  //     // })
+  //     // if (!response) return console.log('💥 error creating entry in supabase')
+  //   } catch (error) {
+  //     console.log('💥 error creating entry', getErrorMessage(error))
+  //   }
+  // }
 
   // show rainbowkit to link evm wallet if logged in
   // else call login action depending base on viewport
@@ -92,7 +94,7 @@ function useSessionFn() {
       ? openConnectModal()
       : viewport === 'mobile'
         ? loginRedirect()
-        : toggleSessionDialog(true)
+        : toggleShowSessionDialog(true)
   }
 
   return {
