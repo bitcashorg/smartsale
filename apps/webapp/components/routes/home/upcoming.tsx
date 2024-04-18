@@ -4,7 +4,7 @@ import { AuctionCard } from './auction-card'
 export function Upcoming({ projects }: { projects: Project[] }) {
   return (
     <section className="align-center relative z-10 flex min-h-[80vh] flex-col justify-center pt-10">
-      <h1 className="mx-auto my-24 flex flex-col whitespace-pre-line text-center">
+      <h1 className="mx-auto md:my-24 my-10 flex flex-col whitespace-pre-line text-center">
         <sub className="h-8 w-full text-xl font-semibold leading-none md:h-10 md:text-2xl">
           {textContent.eyebrow}
         </sub>
