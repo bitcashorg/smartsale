@@ -22,7 +22,7 @@ export function Upcoming({ projects }: { projects: Project[] }) {
         Upcoming Auctions
       </h2>
       <div
-        className="grid scroll-m-3 auto-rows-fr grid-cols-1 gap-6 self-center md:grid-cols-2 md:self-stretch lg:grid-cols-3"
+        className="grid scroll-m-3 auto-rows-fr grid-cols-1 gap-6 self-center lg:self-stretch lg:grid-cols-3"
         key="upcoming-auctions-description-container"
       >
         {projects.map((item, index) => (
