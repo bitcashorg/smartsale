@@ -56,7 +56,7 @@ export async function POST(req: NextRequest) {
     // TODO: review this logic, inserting for now on single go
     const supabase = await createSupabaseServerClient()
     const { data: esrUpdate, error } = await supabase
-      .from('session')
+      .from('esr')
       .insert([dbInput])
 
     if (error) {
