@@ -1,7 +1,6 @@
 import { AuctionBids } from '@/components/routes/auction/auction-bids'
 import { AuctionOrders } from '@/components/routes/auction/auction-orders'
 import { ClaimTokens } from '@/components/routes/auction/claim-tokens'
-import { RegisterAddress } from '@/components/routes/project/register-address'
 import { Tabs } from '@/components/ui/tabs'
 import { ProjectWithAuction, getProjectBySlug } from '@/lib/projects'
 import { redirect } from 'next/navigation'
@@ -31,9 +30,7 @@ export default async function AuctionPage({
           <React.Suspense fallback={<div>Loading ...</div>}>
             {isAuctionClosed ? (
               <ClaimTokens />
-            ) : project.registrationOpen ? (
-              <RegisterAddress projectId={project.id} />
-            ) : (
+            ) : project.registrationOpen ? null : ( // <RegisterAddressForm projectId={project.id} />
               <AuctionBids project={project} />
             )}
           </React.Suspense>
@@ -68,7 +65,7 @@ export default async function AuctionPage({
         <Tabs tabs={tabs} />
       </section>
 
-      <hr className="mx-auto mt-24 max-w-screen-xl border-gray-600/80" />
+      <hr className="max-w-screen-xl mx-auto mt-24 border-gray-600/80" />
     </div>
   )
 }

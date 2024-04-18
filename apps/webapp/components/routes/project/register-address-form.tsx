@@ -55,7 +55,7 @@ export function RegisterAddressForm({ projectId }: { projectId: number }) {
 
   return isRegistered ? (
     <RegisterButton
-      text={`You are already registered for pre-sale with address ${formatAddress(address)}`}
+      text={`You are already registered for pre-sale with address ${formatAddress(address || '')}`}
     />
   ) : (
     <form action={submitForm}>
