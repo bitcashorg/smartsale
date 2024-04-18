@@ -13,14 +13,14 @@ export default function Participate() {
 
       <div
         key="steps-info-title"
-        className="flex flex-col items-center gap-14 md:flex-row md:items-stretch md:justify-between"
+        className="flex flex-col items-center gap-14 lg:flex-row lg:items-stretch lg:justify-between"
       >
         {textContent.steps.map((step, index) => (
           <div
             key={`${index}__step-content`}
-            className="flex min-h-[260px] w-full max-w-[450px] flex-col items-center justify-between rounded-3xl bg-white/90 px-8 py-9 text-black/90 shadow-md backdrop-blur-xl md:w-1/3 md:items-start"
+            className="flex min-h-[260px] w-full max-w-[450px] flex-col items-center justify-between rounded-3xl bg-white/90 px-8 py-9 text-black/90 shadow-md backdrop-blur-xl lg:w-1/3 lg:items-start"
           >
-            <h3 className="flex h-10 w-full whitespace-pre-line text-left text-3xl font-bold md:text-left">
+            <h3 className="flex h-10 w-full whitespace-pre-line text-left text-3xl font-bold lg:text-left">
               {step.title}
             </h3>
             <div className="flex w-full items-center justify-between gap-4">
