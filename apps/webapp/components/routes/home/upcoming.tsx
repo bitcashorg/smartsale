@@ -9,7 +9,7 @@ export function Upcoming({ projects }: { projects: Project[] }) {
           {textContent.eyebrow}
         </sub>
         <span
-          className="min-h-44 w-full text-5xl font-bold sm:min-h-52 sm:text-6xl md:text-7xl lg:text-8xl"
+          className="w-full text-5xl font-bold sm:text-6xl md:text-7xl lg:text-8xl"
           key="upcoming-auctions-title"
         >
           {textContent.title.split('AI/WEB3')[0]}{' '}
@@ -18,7 +18,7 @@ export function Upcoming({ projects }: { projects: Project[] }) {
           {textContent.title.split('AI/WEB3')[1]}
         </span>
       </h1>
-      <h2 className="h-32 w-full pb-10 pt-6 text-center text-3xl font-bold leading-loose">
+      <h2 className="w-full py-10 text-center text-3xl font-bold leading-none">
         Upcoming Auctions
       </h2>
       <div

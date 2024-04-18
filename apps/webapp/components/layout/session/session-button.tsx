@@ -9,7 +9,7 @@ export function SessionButton() {
     <Button
       variant="secondary"
       radius="full"
-      className="px-10"
+      className="md:px-3 lg:px-10"
       onClick={loginOrConnect}
     >
       {session ? 'Connect' : 'Login'}
