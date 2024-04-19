@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { useSession } from '@/hooks/use-session'
-import { Fragment } from 'react'
+import { ConnectButton } from '@rainbow-me/rainbowkit'
 
 export function NavLinks({ mobile = false }: { mobile?: boolean }) {
   const { loginRedirect, openConnectModal, session } = useSession()
@@ -10,14 +10,18 @@ export function NavLinks({ mobile = false }: { mobile?: boolean }) {
   const links = [
     {
       href: '/login',
-      text: 'Login with Bitcash',
+      text: session?.account ? session.account : 'Login with Bitcash',
       mobile: true,
       action: loginRedirect,
       disabled: Boolean(session)
     },
     {
       href: '/connect',
-      text: session ? 'Connect EVM Wallet' : 'Login to Connect your EVM Wallet',
+      text: session ? (
+        <ConnectButton showBalance={false} chainStatus="none" />
+      ) : (
+        'Login to Connect your EVM Wallet'
+      ),
       mobile: true,
       action: session ? openConnectModal : loginRedirect,
       disabled: false
