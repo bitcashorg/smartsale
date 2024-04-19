@@ -37,7 +37,7 @@ export function RegisterDialogContent({
 
   return (
     <>
-      <DialogHeader>
+      <DialogHeader className='gap-4'>
         {/* @ts-ignore */}
         <DialogTitle>Register to Bitcash Wallet</DialogTitle>
         {/* @ts-ignore */}

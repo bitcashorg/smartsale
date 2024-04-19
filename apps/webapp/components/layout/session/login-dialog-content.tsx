@@ -20,7 +20,7 @@ export function SessionDialogContent({
 
   return (
     <>
-      <DialogHeader>
+      <DialogHeader className='gap-4'>
         {/* @ts-ignore */}
         <DialogTitle>Connect bitcash Wallet</DialogTitle>
         {/* @ts-ignore */}
