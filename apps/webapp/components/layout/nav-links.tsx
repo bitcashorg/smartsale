@@ -32,7 +32,10 @@ export function NavLinks({ mobile = false }: { mobile?: boolean }) {
           : ' Connect your EVM Wallet'
         : 'Login to Connect your EVM Wallet',
       mobile: true,
-      action: session ? openConnectModal : loginRedirect,
+      action: () =>
+        session?.account
+          ? openConnectModal && openConnectModal()
+          : loginRedirect,
       disabled: false
     },
     {
