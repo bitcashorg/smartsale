@@ -361,7 +361,7 @@ const content: PageContentData = [
   },
   {
     type: 'p',
-    text: 'Twitter: @bitcashorg / @bitlauncherai Blog: https://blog.bitcash.org/ Discord: https://discord.gg/eJCfx4JAqY Youtube: https://www.youtube.com/@bitcashorg Telegram: https://t.me/bitcash_org'
+    text: 'Twitter: @bitcashorg / @bitlauncherai Blog: https://blog.bitcash.org/ Discord: https://discord.gg/KuR48XUxnG Youtube: https://www.youtube.com/@bitcashorg Telegram: https://t.me/bitcash_org'
   },
   { type: 'h1', text: 'Glossary' },
   {
@@ -371,6 +371,6 @@ const content: PageContentData = [
   { type: 'h1', text: 'Contact Information' },
   {
     type: 'p',
-    text: 'For further inquiries, support, or more information about the Bitcash platform and token sale, please use the following channels to reach out to us: General Support and Inquiries: Email: support@bitcash.org Media and Press: Email: press@bitcash.org Developer Support: Email: developers@bitcash.org Social Media: Twitter: @bitcashorg / @bitlauncherai Blog: https://blog.bitcash.org/ Discord: https://discord.gg/eJCfx4JAqY Youtube: https://www.youtube.com/@bitcashorg Telegram: https://t.me/bitcash_org For real-time updates and announcements, follow us on our social media platforms and join our community discussions. We are committed to transparency and open communication and look forward to your participation and feedback. If you encounter any issues or require assistance during the participation process or afterwards, our dedicated support team is available to help you resolve your queries promptly and efficiently.'
+    text: 'For further inquiries, support, or more information about the Bitcash platform and token sale, please use the following channels to reach out to us: General Support and Inquiries: Email: support@bitcash.org Media and Press: Email: press@bitcash.org Developer Support: Email: developers@bitcash.org Social Media: Twitter: @bitcashorg / @bitlauncherai Blog: https://blog.bitcash.org/ Discord: https://discord.gg/KuR48XUxnG Youtube: https://www.youtube.com/@bitcashorg Telegram: https://t.me/bitcash_org For real-time updates and announcements, follow us on our social media platforms and join our community discussions. We are committed to transparency and open communication and look forward to your participation and feedback. If you encounter any issues or require assistance during the participation process or afterwards, our dedicated support team is available to help you resolve your queries promptly and efficiently.'
   }
 ]
