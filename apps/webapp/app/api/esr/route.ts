@@ -15,10 +15,14 @@ import { z } from 'zod'
 
 export async function POST(req: NextRequest) {
   try {
+    console.log('CAllBACK PARAMS 😎😎😎', await req.json())
     const parsed = SigningRequestCallbackPayloadSchema.safeParse(
       await req.json()
     )
-    if (!parsed.success) throw new Error('Invalid ESR CallbackPayload')
+    if (!parsed.success) {
+      console.log('😬😬😬', parsed.error)
+      throw new Error('Invalid ESR CallbackPayload')
+    }
 
     const callbackPayload = parsed.data as CallbackPayload
     console.log(
@@ -125,8 +129,9 @@ const SigningRequestCallbackPayloadSchema = z.object({
   tx: z.string(),
   sig: z.string(),
   rbn: z.string(),
-  ex: z.string().refine(arg => !isNaN(Date.parse(arg)), {
-    message: 'ex must be a valid ISO date string'
-  }),
+  ex: z.string(),
+  // ex: z.string().refine(arg => !isNaN(Date.parse(arg)), {
+  //   message: 'ex must be a valid ISO date string'
+  // }),
   cid: z.string()
 })

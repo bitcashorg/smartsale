@@ -1,15 +1,34 @@
 'use server'
-
 import { cookies } from 'next/headers'
-
 import { fromEntries } from 'smartsale-lib'
-
 import { handleAxiosError } from '@/lib/utils'
 import axios from 'axios'
 import { Resend } from 'resend'
 import { z } from 'zod'
 import { createSupabaseServerClient } from './services/supabase'
 import { preSaleInsertSchema } from '@repo/supabase'
+
+// get session object by id
+export async function getSesssion(formData: FormData) {
+  try {
+    const { session_id } = fromEntries(formData)
+    console.log(`😊 getting session object for ${session_id}`)
+    const supabase = await createSupabaseServerClient()
+    const { data, error } = await supabase
+      .from('session')
+      .select('*')
+      .eq('id', session_id)
+      .order('created_at', { ascending: false })
+      .limit(1)
+      .single()
+
+    if (error) console.log('😎😎😎', error)
+    if (!data) return null
+    return data
+  } catch (error) {
+    throw new Error('Something went wrong')
+  }
+}
 
 export async function registerAddress(formData: FormData) {
   try {
@@ -92,8 +111,7 @@ export async function subscribeToNewsletter(
   }
 }
 
-// ? dub.co short link actions
-
+// generate dub.co links
 export async function generateShortLink(path: string) {
   const cookieStorage = cookies()
   try {
@@ -129,41 +147,6 @@ export async function generateShortLink(path: string) {
   } catch (error) {
     const errorData = handleAxiosError(error)
     console.log('Failed to generate short link: ==> ', errorData)
-    return {
-      data: null,
-      error: errorData.data.error.message
-    }
-  }
-}
-
-export async function getShortLink(key: string) {
-  const cookieStorage = cookies()
-  try {
-    const getShareLinkCookies = cookieStorage.get('bitlauncher-share-link')
-    const resolved: DubShareLinkResponse = !getShareLinkCookies
-      ? await axios
-          .get(`https://api.dub.co/links/info?key=${key}`, {
-            headers: {
-              Authorization: `Bearer ${process.env.DUB_API_KEY}`,
-              'Content-Type': 'application/json'
-            }
-          })
-          .then(res => res.data)
-      : (JSON.parse(getShareLinkCookies.value) as DubShareLinkResponse)
-
-    if (!resolved) throw new Error('Failed to retrieve short link')
-
-    return {
-      data: {
-        key: resolved.key,
-        shortLink: resolved.shortLink,
-        qrCode: resolved.qrCode
-      },
-      error: null
-    }
-  } catch (error) {
-    const errorData = handleAxiosError(error)
-    console.log('Failed to retrieve short link: ==> ', errorData)
     return {
       data: null,
       error: errorData.data.error.message

@@ -19,22 +19,23 @@ export function MobileNav() {
   }, [open])
 
   return (
-    <div className="md:hidden">
+    <div>
       <UseAnimations
         onClick={toggleOpen}
         strokeColor="white"
         animation={menu4}
         size={56}
       />
-      <AnimatePresence>
-        {open ? (
-          <Transition duration={0.2}>
-            <div className="mobile-nav">
-              <NavLinks mobile />
-            </div>
-          </Transition>
-        ) : null}
-      </AnimatePresence>
+      {/*  <AnimatePresence> */}
+      {open ? (
+        // <Transition duration={0.2}>
+        // </Transition>
+        <div className="mobile-nav">
+          <NavLinks mobile />
+        </div>
+      ) : null}
+
+      {/* </AnimatePresence> */}
     </div>
   )
 }

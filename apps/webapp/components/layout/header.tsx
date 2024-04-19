@@ -20,33 +20,42 @@ export function Header() {
             <NavLinks />
           </div>
         </div>
-        <div className="flex">
-          <div className="items-center hidden md:flex md:gap-3 lg:gap-8">
-            <Link
-              href="https://discord.gg/a4gwhT9G"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={cn(
-                buttonVariants({
-                  variant: 'outline',
-                  radius: 'full'
-                }),
-                'border-transparent md:border-accent md:px-3 lg:px-10'
-              )}
-            >
-              <IconDiscord className={'block size-7 fill-accent md:hidden'} />
-              <span className="hidden md:block">Discord</span>
-            </Link>
 
-            <Suspense fallback={<Button>Login</Button>}>
-              <SessionButton />
-            </Suspense>
-          </div>
-          {/* <Suspense fallback={<div />}> */}
-          <MobileNav />
-          {/* </Suspense> */}
+        {/* Desktop action buttons */}
+        <div className="hidden items-center md:flex md:gap-3 lg:gap-8">
+          <DiscordButton />
+          <Suspense fallback={<Button>Login</Button>}>
+            <SessionButton />
+          </Suspense>
+        </div>
+
+        {/* mobile navbar icon */}
+        <div className="flex md:hidden">
+          <Suspense fallback={<div />}>
+            <MobileNav />
+          </Suspense>
         </div>
       </div>
     </div>
+  )
+}
+
+function DiscordButton() {
+  return (
+    <Link
+      href="https://discord.gg/a4gwhT9G"
+      target="_blank"
+      rel="noopener noreferrer"
+      className={cn(
+        buttonVariants({
+          variant: 'outline',
+          radius: 'full'
+        }),
+        'border-transparent md:border-accent md:px-3 lg:px-10'
+      )}
+    >
+      <IconDiscord className={'block size-7 fill-accent md:hidden'} />
+      <span className="hidden md:block">Discord</span>
+    </Link>
   )
 }
