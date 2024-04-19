@@ -31,7 +31,7 @@ function ListItem({ label, value }: ItemProps) {
 export function AuctionInfo({ project }: { project: ProjectWithAuction }) {
   const fields: Array<Array<ItemProps>> = [
     [
-      { label: 'Presale Period', value: '5/15/24 - 6/30/24' },
+      { label: 'Presale Period', value: '6/1/24 - 6/30/24' },
       { label: 'Fundraising Goal', value: '$150,000' },
       { label: 'Max Allocation', value: '$5,000' }
     ],
