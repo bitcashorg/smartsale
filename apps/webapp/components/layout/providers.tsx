@@ -2,7 +2,12 @@
 import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3'
 import { TooltipProvider } from '@/components/ui/tooltip'
 import { SessionProvider } from '@/hooks/use-session'
-import { RainbowKitProvider, getDefaultConfig } from '@rainbow-me/rainbowkit'
+import {
+  RainbowKitProvider,
+  Theme,
+  getDefaultConfig,
+  lightTheme
+} from '@rainbow-me/rainbowkit'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { ThemeProvider as NextThemesProvider } from 'next-themes'
 import { ThemeProviderProps } from 'next-themes/dist/types'
@@ -13,6 +18,7 @@ import { WagmiProvider } from 'wagmi'
 import { sepolia } from 'wagmi/chains'
 import { Transition } from '../shared/transition'
 import { UseSigningRequestProvider } from '@/hooks/use-signing-request'
+import { merge } from 'lodash'
 
 const queryClient = new QueryClient()
 
@@ -22,6 +28,13 @@ export const wagmiConfig = getDefaultConfig({
   // @ts-ignore
   chains: [{ ...eosEvmTestnet, fees: undefined }, sepolia]
 })
+
+const customRainbowKitTheme = merge(lightTheme(), {
+  radii: {
+    actionButton: '9999px', // Custom radius for action buttons,
+    connectButton: '9999px' // Custom radius for action buttons
+  }
+} as Theme)
 
 export function Providers({ children, ...props }: ThemeProviderProps) {
   const location = useLocation()
@@ -54,7 +67,7 @@ export function Providers({ children, ...props }: ThemeProviderProps) {
       <TooltipProvider>
         <QueryClientProvider client={queryClient}>
           <WagmiProvider config={wagmiConfig}>
-            <RainbowKitProvider>
+            <RainbowKitProvider theme={customRainbowKitTheme}>
               <SessionProvider>
                 <UseSigningRequestProvider>
                   <GoogleReCaptchaProvider

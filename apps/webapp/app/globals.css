@@ -269,3 +269,11 @@ input[type='number'] {
   overflow: hidden;
   @apply fixed inset-x-0 top-16 flex flex-col items-center justify-between gap-20 overflow-hidden bg-background py-[120px];
 }
+
+.force-rounded {
+  --tw-rounded: 9999px; /* equivalent to rounded-full */
+}
+
+.force-rounded > * {
+  border-radius: var(--tw-rounded) !important;
+}

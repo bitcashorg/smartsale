@@ -1,68 +1,89 @@
 'use client'
-
-import { registerAddress } from '@/actions'
-import { Button, ButtonProps, buttonVariants } from '@/components/ui/button'
-import { useSession } from '@/hooks/use-session'
+import { FunctionComponent, useState } from 'react'
+import { useAccount, useSignMessage } from 'wagmi'
+import { useAsyncFn } from 'react-use'
 import { formatAddress, fromEntries } from 'smartsale-lib'
-import { RegisterAddressSchema } from '@/lib/validators'
-import { useEffect, useState } from 'react'
-import { useFormStatus } from 'react-dom'
-import { useAccount } from 'wagmi'
-import { useSupabaseClient } from '@/services/supabase'
+import { registerAddress } from '@/actions'
+import { SignMessageData } from 'wagmi/query'
+import { useQuery } from '@tanstack/react-query'
+import { useSession } from '@/hooks/use-session'
+import { Button, ButtonProps, buttonVariants } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
+import { preSaleInsertSchema } from '@repo/supabase'
+import { useSupabaseClient } from '@/services/supabase'
 
-export function RegisterAddressForm({ projectId }: { projectId: number }) {
-  const supabase = useSupabaseClient()
-  const { loginOrConnect, session } = useSession()
+export const RegisterAddressForm: FunctionComponent<{ projectId: number }> = ({
+  projectId
+}) => {
+  const { session, loginOrConnect } = useSession()
   const { address } = useAccount()
-  const { pending } = useFormStatus()
-  const [isRegistered, setIsRegistered] = useState(false)
-  const account = useAccount()
+  const [formData, setFormData] = useState<FormData>()
+  const supabase = useSupabaseClient()
 
-  const submitForm = async (formData: FormData) => {
-    try {
-      const o = fromEntries(formData)
-      const data = {
-        ...o,
-        project_id: parseInt(o.project_id)
-      }
-      const { success } = RegisterAddressSchema.safeParse(data)
-      if (!success) alert('invalid address or project id')
+  const registration = useQuery({
+    queryKey: ['registration', session?.account || 'nobody'], // unique query key per user
+    enabled: Boolean(session), // only fetch if logged in
+    queryFn: async () => {
+      const { data, error } = await supabase
+        .from('pre_sale')
+        .select()
+        .eq('project_id', projectId)
+        .eq('account', session!.account!) // we know for sure
 
-      await registerAddress(formData)
-      setIsRegistered(true)
-    } catch (error) {
-      alert('something went wrong')
+      if (error) throw error
+
+      return data[0]
     }
-  }
-
-  const fetchData = async () => {
-    if (!address) return
-    // const { data, error } = await supabase
-    //   .from('whitelist')
-    //   .select()
-    //   .eq('project_id', projectId)
-    //   .eq('address', address)
-
-    // if (error) console.error('error', error)
-
-    // if (data && data.length > 0) setIsRegistered(true)
-  }
-
-  useEffect(() => {
-    fetchData()
   })
 
-  return isRegistered ? (
+  const [state, register] = useAsyncFn(async (formData: FormData) => {
+    const o = fromEntries(formData)
+    const data = {
+      ...o,
+      project_id: parseInt(o.project_id, 10)
+    }
+    // validate input
+    preSaleInsertSchema.safeParse(data)
+
+    return registerAddress(formData)
+  })
+
+  const { signMessage, isPending } = useSignMessage({
+    mutation: {
+      onSuccess: (signature: SignMessageData) => {
+        // append signature to form data and apply
+        if (!formData) return
+        formData.append('signature', signature)
+        register(formData)
+      }
+    }
+  })
+
+  const submitForm = (formData: FormData) => {
+    // force login and connect
+    if (!address || !session) return loginOrConnect()
+    // save form data for later use in register function as sign message success callback
+    setFormData(formData)
+    // request sign message
+    signMessage({ message: `Sign me up for bitlauncher | bitcash pre-sale` })
+  }
+
+  return registration.data || state.value ? (
     <RegisterButton
-      text={`You are already registered for pre-sale with address ${formatAddress(address || '')}`}
+      text={`You are registered for pre-sale with address ${formatAddress(registration.data?.address || address!)}`}
     />
   ) : (
-    <form action={submitForm}>
+    <form action={submitForm} className="flex justify-center">
       <input type="hidden" name="address" value={address} />
       <input type="hidden" name="project_id" value={projectId} />
       <input type="hidden" name="account" value={session?.account} />
-      <RegisterButton onClick={loginOrConnect} text="Register for Presale" />
+      <RegisterButton
+        text={
+          state.loading || isPending
+            ? `Registering ${formatAddress(address!)}`
+            : 'Register for Presale'
+        }
+      />
     </form>
   )
 }

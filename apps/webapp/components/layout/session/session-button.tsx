@@ -7,16 +7,20 @@ import { ConnectButton } from '@rainbow-me/rainbowkit'
 export function SessionButton() {
   const { session, loginOrConnect } = useSession()
 
-  return !session ? (
-    <Button
-      variant="secondary"
-      radius="full"
-      className="md:px-3 lg:px-10"
-      onClick={loginOrConnect}
-    >
-      Login
-    </Button>
-  ) : (
-    <ConnectButton showBalance={false} chainStatus="none" />
+  return (
+    <div>
+      {session ? (
+        <ConnectButton showBalance={false} chainStatus="none" />
+      ) : (
+        <Button
+          variant="secondary"
+          radius="full"
+          className="md:px-3 lg:px-10"
+          onClick={loginOrConnect}
+        >
+          Login
+        </Button>
+      )}
+    </div>
   )
 }

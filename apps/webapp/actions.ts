@@ -1,6 +1,5 @@
 'use server'
 
-import { RegisterAddressSchema } from '@/lib/validators'
 import { cookies } from 'next/headers'
 
 import { fromEntries } from 'smartsale-lib'
@@ -10,22 +9,31 @@ import axios from 'axios'
 import { Resend } from 'resend'
 import { z } from 'zod'
 import { createSupabaseServerClient } from './services/supabase'
+import { preSaleInsertSchema } from '@repo/supabase'
 
 export async function registerAddress(formData: FormData) {
   try {
     const o = fromEntries(formData)
-    const data = RegisterAddressSchema.parse({
+    console.log('register address input', o)
+    const data = preSaleInsertSchema.parse({
       ...o,
-      project_id: parseInt(o.project_id)
+      project_id: parseInt(o.project_id),
+      created_at: new Date().toDateString()
     })
     const supabase = await createSupabaseServerClient()
     const { data: createdEntry, error } = await supabase
-      .from('whitelist')
+      .from('pre_sale')
       .insert([data])
+      .select('*')
 
     if (error)
-      throw new Error(`Error creating whitelist entry: ${error.message}`)
-    console.log('Whitelist entry created successfully:', createdEntry)
+      throw new Error(
+        `Error creating pre-sale registration entry: ${error.message}`
+      )
+    console.log(
+      'Pre-sale registration entry created successfully:',
+      createdEntry
+    )
     return createdEntry // Return the newly created entry
   } catch (error) {
     console.log(error)
