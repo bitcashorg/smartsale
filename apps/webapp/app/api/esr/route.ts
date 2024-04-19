@@ -8,10 +8,10 @@ import {
   SigningRequestEncodingOptions,
   ZlibProvider
 } from 'eosio-signing-request'
-import { deflateRawSync, inflateRawSync } from 'zlib'
-import { appConfig } from '@/lib/config'
 import { Tables } from '@repo/supabase'
 import { z } from 'zod'
+import { deflateRawSync, inflateRawSync } from 'zlib'
+import { appConfig } from '@/lib/config'
 
 export async function POST(req: NextRequest) {
   try {

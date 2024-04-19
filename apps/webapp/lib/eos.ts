@@ -9,7 +9,6 @@ import {
 } from 'eosio-signing-request'
 import pako from 'pako'
 import { appConfig } from './config'
-import { z } from 'zod'
 
 const eos = new APIClient({
   url: appConfig.eosRpc
