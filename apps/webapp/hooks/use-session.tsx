@@ -38,7 +38,7 @@ function useSessionFn() {
         'postgres_changes',
         { event: 'INSERT', schema: 'public', table: 'session' },
         payload => {
-          // console.log('BAZINGA 🍓 new supabase session', payload.new)
+          console.log('BAZINGA 🍓 new supabase session', payload.new)
           // set new session if ids match
           if (session || payload.new.id !== newSessionId) return
           console.log(' ✅ supabase session id matches', payload.new)
