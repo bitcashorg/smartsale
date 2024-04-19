@@ -153,6 +153,33 @@ export type Database = {
         }
         Relationships: []
       }
+      pre_sale: {
+        Row: {
+          account: string | null
+          address: string | null
+          created_at: string
+          id: number
+          project_id: number | null
+          signature: string | null
+        }
+        Insert: {
+          account?: string | null
+          address?: string | null
+          created_at?: string
+          id?: number
+          project_id?: number | null
+          signature?: string | null
+        }
+        Update: {
+          account?: string | null
+          address?: string | null
+          created_at?: string
+          id?: number
+          project_id?: number | null
+          signature?: string | null
+        }
+        Relationships: []
+      }
       session: {
         Row: {
           account: string

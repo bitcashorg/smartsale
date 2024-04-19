@@ -2,27 +2,41 @@
 
 import Link from 'next/link'
 import { useSession } from '@/hooks/use-session'
-import { Fragment } from 'react'
+import { useConnectModal } from '@rainbow-me/rainbowkit'
+import { useAccount } from 'wagmi'
+import { formatAddress } from 'smartsale-lib'
+import { useRouter } from 'next/navigation'
 
 export function NavLinks({ mobile = false }: { mobile?: boolean }) {
-  const { loginRedirect, openConnectModal, session } = useSession()
+  const { loginRedirect, session } = useSession()
+  const { openConnectModal } = useConnectModal()
+  console.log({ openConnectModal })
+  const { address } = useAccount()
+  const router = useRouter()
 
   const links = [
     {
-      href: '/login',
-      text: 'Login with Bitcash',
+      id: 'login',
+      href: null,
+      text: session?.account ? session.account : 'Login with Bitcash',
       mobile: true,
-      action: loginRedirect,
+      action: session?.account ? null : loginRedirect,
       disabled: Boolean(session)
     },
     {
-      href: '/connect',
-      text: session ? 'Connect EVM Wallet' : 'Login to Connect your EVM Wallet',
+      id: 'connect',
+      href: null,
+      text: session
+        ? address
+          ? formatAddress(address)
+          : ' Connect your EVM Wallet'
+        : 'Login to Connect your EVM Wallet',
       mobile: true,
       action: session ? openConnectModal : loginRedirect,
       disabled: false
     },
     {
+      id: 'about',
       href: '/about',
       text: 'About',
       mobile: false,
@@ -30,6 +44,7 @@ export function NavLinks({ mobile = false }: { mobile?: boolean }) {
       disabled: false
     },
     {
+      id: 'whitepaper',
       href: '/whitepaper',
       text: 'White Paper',
       mobile: false,
@@ -37,6 +52,7 @@ export function NavLinks({ mobile = false }: { mobile?: boolean }) {
       disabled: false
     },
     {
+      id: 'security',
       href: '/security',
       text: 'Security',
       mobile: false,
@@ -54,11 +70,12 @@ export function NavLinks({ mobile = false }: { mobile?: boolean }) {
         key={`${mobile ? 'mobile' : 'desktop'}-link-${link.href}-${crypto.randomUUID()}`}
         shallow
         className="flex"
-        href={link.href}
+        href={link.href || location.href}
         onClick={e => {
-          if (!link.action) return
           e.preventDefault()
-          link.action()
+          console.log('🤌🏻 onclick', link)
+          if (link.action) return link.action()
+          if (link.href) router.push(link.href)
         }}
         aria-disabled={link.disabled}
       >
