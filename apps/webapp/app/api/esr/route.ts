@@ -8,7 +8,6 @@ import {
   SigningRequestEncodingOptions,
   ZlibProvider
 } from 'eosio-signing-request'
-import { Tables } from '@repo/supabase'
 import { z } from 'zod'
 import { deflateRawSync, inflateRawSync } from 'zlib'
 import { appConfig } from '@/lib/config'
@@ -16,19 +15,13 @@ import { appConfig } from '@/lib/config'
 export async function POST(req: NextRequest) {
   try {
     console.log('CAllBACK PARAMS 😎😎😎', await req.json())
-    const parsed = SigningRequestCallbackPayloadSchema.safeParse(
-      await req.json()
-    )
+    const parsed = SigningRequestCallbackPayloadSchema.parse(await req.json()) CallbackPayload
+    if (!parsed) throw new Error('Invalid ESR CallbackPayload')
     console.log('🦚🦚🦚 ALL GOOD ', parsed)
-    if (!parsed.success) {
-      console.log('😬😬😬', parsed.error)
-      throw new Error('Invalid ESR CallbackPayload')
-    }
 
-    const callbackPayload = parsed.data as CallbackPayload
     console.log(
-      `🚀 callbackPayload for ${callbackPayload.req}`,
-      JSON.stringify({ callbackPayload })
+      `🚀 callbackPayload for ${parsed.req}`,
+      JSON.stringify(parsed)
     )
     // callbackPayload example
     // {
@@ -44,7 +37,7 @@ export async function POST(req: NextRequest) {
     //   cid: 'aca376f206b8fc25a6ed44dbdc66547c36c6c33e3a119ffbeaef943642f0e906'
     // }
 
-    const esr = SigningRequest.from(callbackPayload.req, esrNodeJSOptions)
+    const esr = SigningRequest.from(parsed.req, esrNodeJSOptions)
     const id = esr.getInfoKey('uuid')
     const action = esr.getRawActions()[0].name.toString()
 
@@ -57,9 +50,9 @@ export async function POST(req: NextRequest) {
       .from('esr')
       .insert({
         id,
-        code: callbackPayload.req,
-        account: callbackPayload.sa,
-        trx_id: callbackPayload.tx,
+        code: parsed.req,
+        account: parsed.sa,
+        trx_id: parsed.tx,
         created_at: new Date().toISOString()
       })
       .select('*')
@@ -76,9 +69,9 @@ export async function POST(req: NextRequest) {
         .insert([
           {
             id,
-            tx: callbackPayload.tx,
-            account: callbackPayload.sa,
-            esr_code: callbackPayload.req
+            tx: parsed.tx,
+            account: parsed.sa,
+            esr_code: parsed.req
           }
         ])
         .select('*')
