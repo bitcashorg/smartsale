@@ -19,6 +19,7 @@ export async function POST(req: NextRequest) {
     const parsed = SigningRequestCallbackPayloadSchema.safeParse(
       await req.json()
     )
+    console.log('🦚🦚🦚 ALL GOOD ', parsed)
     if (!parsed.success) {
       console.log('😬😬😬', parsed.error)
       throw new Error('Invalid ESR CallbackPayload')
@@ -47,13 +48,6 @@ export async function POST(req: NextRequest) {
     const id = esr.getInfoKey('uuid')
     const action = esr.getRawActions()[0].name.toString()
 
-    const dbInput: Tables<'esr'> = {
-      id,
-      code: callbackPayload.req,
-      account: callbackPayload.sa,
-      trx_id: callbackPayload.tx,
-      created_at: new Date().toISOString()
-    }
     console.log('👋 esr data input ', JSON.stringify({ id, action, esr }))
 
     // esr request with trx id
@@ -61,7 +55,13 @@ export async function POST(req: NextRequest) {
     const supabase = await createSupabaseServerClient()
     const { data: esrUpdate, error } = await supabase
       .from('esr')
-      .insert([dbInput])
+      .insert({
+        id,
+        code: callbackPayload.req,
+        account: callbackPayload.sa,
+        trx_id: callbackPayload.tx,
+        created_at: new Date().toISOString()
+      })
       .select('*')
 
     if (error) {
