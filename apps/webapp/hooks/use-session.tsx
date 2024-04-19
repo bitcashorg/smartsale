@@ -28,8 +28,6 @@ function useSessionFn() {
   const loginSR = useAsync(() => genLoginSigningRequest(newSessionId))
   const loginUri = loginSR?.value?.encode()
 
-  console.log('openConnectModal', openConnectModal)
-
   // subscribe to supabase session table and set session state
   // this table get updated by /api/esr callback invoked by the signing wallet
   useEffect(() => {
@@ -40,7 +38,7 @@ function useSessionFn() {
         'postgres_changes',
         { event: 'INSERT', schema: 'public', table: 'session' },
         payload => {
-          console.log('BAZINGA 🍓 new supabase session', payload.new)
+          // console.log('BAZINGA 🍓 new supabase session', payload.new)
           // set new session if ids match
           if (session || payload.new.id !== newSessionId) return
           console.log(' ✅ supabase session id matches', payload.new)
