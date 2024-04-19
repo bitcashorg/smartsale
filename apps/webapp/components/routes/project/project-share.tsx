@@ -14,7 +14,7 @@ export function ProjectShare({ project }: { project: Project }) {
           href={`https://twitter.com/${project.twitterUsername}`}
           className={cn(
             buttonVariants({ variant: 'outline', size: 'icon' }),
-            'p-3.5'
+            'relative px-0 py-0 size-[58px] rounded-full'
           )}
           target="_blank"
           rel="noopener noreferrer"
@@ -26,7 +26,7 @@ export function ProjectShare({ project }: { project: Project }) {
           href={`https://discord.gg/${project.discordServer}`}
           className={cn(
             buttonVariants({ variant: 'outline', size: 'icon' }),
-            'p-3.5'
+            'relative px-0 py-0 size-[58px] rounded-full'
           )}
           target="_blank"
           rel="noopener noreferrer"
@@ -38,7 +38,7 @@ export function ProjectShare({ project }: { project: Project }) {
           href={`https://t.me/${project.telegramGroup}`}
           className={cn(
             buttonVariants({ variant: 'outline', size: 'icon' }),
-            'p-3.5'
+            'relative px-0 py-0 size-[58px] rounded-full'
           )}
           target="_blank"
           rel="noopener noreferrer"

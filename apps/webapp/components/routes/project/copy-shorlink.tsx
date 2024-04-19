@@ -28,7 +28,7 @@ export function CopyShortlinkIcon() {
   return (
     <button
       onClick={copyToClipboard}
-      className="relative size-[58px] rounded-full"
+      className="relative size-[58px] rounded-full [&>svg]:size-[36px]"
     >
       <AnimatePresence>{iconsMap[status]}</AnimatePresence>
     </button>

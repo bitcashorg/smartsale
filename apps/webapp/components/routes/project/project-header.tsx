@@ -5,7 +5,7 @@ import { ProjectDataCard } from './project-data-card'
 export function ProjectHeader({ project }: { project: Project }) {
   return (
     <header className="flex size-full min-h-screen ">
-      <div className="container flex items-center justify-between md:px-20">
+      <div className="content-container md:max-w-[1146px]">
         <Image
           alt={project.title}
           className="pointer-events-none absolute inset-0 size-full object-cover opacity-50"
