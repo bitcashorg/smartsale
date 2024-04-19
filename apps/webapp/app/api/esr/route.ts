@@ -15,14 +15,11 @@ import { appConfig } from '@/lib/config'
 export async function POST(req: NextRequest) {
   try {
     console.log('CAllBACK PARAMS 😎😎😎', await req.json())
-    const parsed = SigningRequestCallbackPayloadSchema.parse(await req.json()) CallbackPayload
+    const parsed = SigningRequestCallbackPayloadSchema.parse(await req.json())
     if (!parsed) throw new Error('Invalid ESR CallbackPayload')
     console.log('🦚🦚🦚 ALL GOOD ', parsed)
 
-    console.log(
-      `🚀 callbackPayload for ${parsed.req}`,
-      JSON.stringify(parsed)
-    )
+    console.log(`🚀 callbackPayload for ${parsed.req}`, JSON.stringify(parsed))
     // callbackPayload example
     // {
     //   sp: 'active',
