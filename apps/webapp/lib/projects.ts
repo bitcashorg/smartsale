@@ -22,8 +22,8 @@ export const projects: Project[] = [
     auctionId: 9,
     presaleOpen: true,
     twitterUsername: 'bitcashorg',
-    telegramGroup: 'bitcashorg',
-    discordServer: 'a4gwhT9G',
+    telegramGroup: 'bitlauncher',
+    discordServer: 'KuR48XUxnG',
     content: {
       highlights: {
         title: 'Highlights',
@@ -149,8 +149,8 @@ export const projects: Project[] = [
     token: TestnetMBOTSPL,
     presaleOpen: true,
     twitterUsername: 'masterbotsai',
-    telegramGroup: 'masterbotsai',
-    discordServer: 'a4gwhT9G',
+    telegramGroup: 'bitlauncher',
+    discordServer: 'KuR48XUxnG',
     content: {
       highlights: {
         title: 'Highlights',
@@ -194,8 +194,8 @@ export const projects: Project[] = [
     token: TestnetMBOTSPL,
     auctionId: 9,
     twitterUsername: 'wizartworld',
-    telegramGroup: 'wizartworld',
-    discordServer: 'a4gwhT9G',
+    telegramGroup: 'bitlauncher',
+    discordServer: 'KuR48XUxnG',
     content: {
       highlights: {
         title: 'Highlights',
