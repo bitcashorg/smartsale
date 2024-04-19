@@ -15,7 +15,7 @@ export function NavLinks({ mobile = false }: { mobile?: boolean }) {
       href: '/login',
       text: session?.account ? session.account : 'Login with Bitcash',
       mobile: true,
-      action: loginRedirect,
+      action: session?.account ? null : loginRedirect,
       disabled: Boolean(session)
     },
     {

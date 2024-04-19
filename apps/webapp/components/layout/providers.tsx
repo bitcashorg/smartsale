@@ -16,7 +16,6 @@ import { useLocation } from 'react-use'
 import { eosEvmTestnet } from 'smartsale-env'
 import { WagmiProvider } from 'wagmi'
 import { sepolia } from 'wagmi/chains'
-import { Transition } from '../shared/transition'
 import { UseSigningRequestProvider } from '@/hooks/use-signing-request'
 import { merge } from 'lodash'
 
@@ -82,7 +81,7 @@ export function Providers({ children, ...props }: ThemeProviderProps) {
                       }
                     }}
                   >
-                    <Transition> {children}</Transition>
+                    {children}
                   </GoogleReCaptchaProvider>
                 </UseSigningRequestProvider>
               </SessionProvider>
