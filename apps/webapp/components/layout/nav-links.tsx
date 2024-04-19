@@ -2,11 +2,14 @@
 
 import Link from 'next/link'
 import { useSession } from '@/hooks/use-session'
-import { ConnectButton } from '@rainbow-me/rainbowkit'
+import { useConnectModal } from '@rainbow-me/rainbowkit'
+import { useAccount } from 'wagmi'
+import { formatAddress } from 'smartsale-lib'
 
 export function NavLinks({ mobile = false }: { mobile?: boolean }) {
-  const { loginRedirect, openConnectModal, session } = useSession()
-
+  const { loginRedirect, session } = useSession()
+  const { openConnectModal } = useConnectModal()
+  const { address } = useAccount()
   const links = [
     {
       href: '/login',
@@ -17,11 +20,11 @@ export function NavLinks({ mobile = false }: { mobile?: boolean }) {
     },
     {
       href: '/connect',
-      text: session ? (
-        <ConnectButton showBalance={false} chainStatus="none" />
-      ) : (
-        'Login to Connect your EVM Wallet'
-      ),
+      text: session
+        ? address
+          ? formatAddress(address)
+          : ' Connect your EVM Wallet'
+        : 'Login to Connect your EVM Wallet',
       mobile: true,
       action: session ? openConnectModal : loginRedirect,
       disabled: false
