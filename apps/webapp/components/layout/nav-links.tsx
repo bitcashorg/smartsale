@@ -10,7 +10,7 @@ import { useRouter } from 'next/navigation'
 export function NavLinks({ mobile = false }: { mobile?: boolean }) {
   const { loginRedirect, session } = useSession()
   const { openConnectModal } = useConnectModal()
-  console.log({ openConnectModal })
+  // console.log('🎬', openConnectModal)
   const { address } = useAccount()
   const router = useRouter()
 
@@ -35,7 +35,7 @@ export function NavLinks({ mobile = false }: { mobile?: boolean }) {
       action: () =>
         session?.account
           ? openConnectModal && openConnectModal()
-          : loginRedirect,
+          : loginRedirect(),
       disabled: false
     },
     {

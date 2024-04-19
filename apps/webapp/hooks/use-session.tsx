@@ -9,6 +9,8 @@ import { useSupabaseClient } from '@/services/supabase'
 import { useConnectModal } from '@rainbow-me/rainbowkit'
 import { Tables } from '@repo/supabase'
 import { useGlobalStore } from './use-global-store'
+import { usePathname, useRouter, useSearchParams } from 'next/navigation'
+import { getSesssion } from '@/actions'
 
 // Exports
 export { SessionProvider, useSession }
@@ -18,6 +20,10 @@ function useSessionFn() {
   const supabase = useSupabaseClient()
   const [newSessionId] = useState(crypto.randomUUID())
   const { viewport } = useGlobalStore()
+  const searchParams = useSearchParams()
+  const paramsSessionId = searchParams.get('session_id')
+  const pathname = usePathname()
+  const router = useRouter()
   const { openConnectModal } = useConnectModal()
   // this controls the session dialog with register and login qr codes
   // when login qr code is display a new esr is created and saved on db for later reference on callback call
@@ -54,6 +60,31 @@ function useSessionFn() {
     }
   }, [setSession, supabase])
 
+  // // open session from url search params
+  useEffect(() => {
+    console.log(`💥💥 url session effect  ${paramsSessionId}`)
+    // get session from server action and remove
+    const getSession = async () => {
+      if (!paramsSessionId) return
+      console.log(`getting session ${paramsSessionId}`)
+      const formData = new FormData()
+      formData.append('session_id', paramsSessionId)
+      const session = await getSesssion(formData)
+      console.log(`getting session session`, session)
+      if (!session) return
+      // TODO: move this logic to backend
+      // set cookie session
+      setSession(session)
+      console.log('✅ session', session)
+      // Encoding the query and managing search parameters
+      const params = new URLSearchParams(searchParams)
+      params.delete('session_id')
+      router.replace(`${pathname}`)
+    }
+
+    getSession()
+  }, [paramsSessionId])
+
   // default moblie login mode is redirect
   const loginRedirect = () => {
     if (!loginUri || !open) return
@@ -70,24 +101,6 @@ function useSessionFn() {
     params.append('callback', encodedCallbackUrl)
     location.href = `https://app.bitcash.org?${params.toString()}`
   }
-
-  // const toggleSessionDialog = async (show?: boolean) => {
-  //   console.log('🫶🏻 toggle session')
-
-  //   // dont call new entry endpoint when hiding
-  //   if (showSessionDialog) return toggleShowSessionDialog(false)
-  //   // create new entry for later check on backend
-  //   try {
-  //     // console.log('🦚 creting esr entry in supabase')
-  //     // const response = await axios.post('/api/esr-entry', {
-  //     //   code: loginUri,
-  //     //   account: session.account
-  //     // })
-  //     // if (!response) return console.log('💥 error creating entry in supabase')
-  //   } catch (error) {
-  //     console.log('💥 error creating entry', getErrorMessage(error))
-  //   }
-  // }
 
   // show rainbowkit to link evm wallet if logged in
   // else call login action depending base on viewport

@@ -19,6 +19,7 @@ const openSans = Open_Sans({
 })
 
 export default async function RootLayout({ children }: RootLayoutProps) {
+  // TODO: check if this techniche impacts perf or next cache
   const { viewport } = await getCookieData()
   return (
     <html
