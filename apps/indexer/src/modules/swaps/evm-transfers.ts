@@ -3,7 +3,6 @@ import { runPromisesInSeries } from '~/utils'
 
 import { Address, Log, PublicClient, createPublicClient, http, parseAbiItem, stringify } from 'viem'
 import { TransferEvent } from '~/modules/auction/auction.type'
-import { db } from 'smartsale-db'
 import { sepolia } from 'viem/chains'
 import { smartsaleChains } from 'smartsale-env'
 import { issueTokens } from './cred-issuer'
@@ -93,27 +92,27 @@ async function handleTransfer(log: TransferEvent) {
     type: 'deposit',
   }
 
-  const result = await db.transfers.upsert({
-    where: {
-      trx_hash: log.transactionHash!,
-    },
-    update: data,
-    create: data,
-  })
+  // const result = await db.transfers.upsert({
+  //   where: {
+  //     trx_hash: log.transactionHash!,
+  //   },
+  //   update: data,
+  //   create: data,
+  // })
 
   // console.log('result', result)
-  if (result.usdcred_trx || data.from === '0x0000000000000000000000000000000000000000') return
+  // if (result.usdcred_trx || data.from === '0x0000000000000000000000000000000000000000') return
 
-  const usdcred_trx = (await issueTokens(data.from, data.amount)) as Address
+  // const usdcred_trx = (await issueTokens(data.from, data.amount)) as Address
 
-  if (!usdcred_trx) return
+  // if (!usdcred_trx) return
 
-  await db.transfers.update({
-    where: {
-      trx_hash: log.transactionHash!,
-    },
-    data: { usdcred_trx },
-  })
+  // await db.transfers.update({
+  //   where: {
+  //     trx_hash: log.transactionHash!,
+  //   },
+  //   data: { usdcred_trx },
+  // })
 
-  console.log('tokens issued', { usdcred_trx, trx: log.transactionHash })
+  // console.log('tokens issued', { usdcred_trx, trx: log.transactionHash })
 }
