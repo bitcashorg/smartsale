@@ -29,10 +29,18 @@ export const wagmiConfig = getDefaultConfig({
 })
 
 const customRainbowKitTheme = merge(lightTheme(), {
+  colors: {
+    connectButtonBackground: '#fff',
+    connectButtonInnerBackground: '#fff',
+    connectButtonText: '#000'
+  },
   radii: {
     actionButton: '9999px', // Custom radius for action buttons,
     connectButton: '9999px' // Custom radius for action buttons
   }
+  // fonts: {
+  //   body: '...'
+  // }
 } as Theme)
 
 export function Providers({ children, ...props }: ThemeProviderProps) {
@@ -66,7 +74,14 @@ export function Providers({ children, ...props }: ThemeProviderProps) {
       <TooltipProvider>
         <QueryClientProvider client={queryClient}>
           <WagmiProvider config={wagmiConfig}>
-            <RainbowKitProvider theme={customRainbowKitTheme}>
+            <RainbowKitProvider
+              theme={customRainbowKitTheme}
+              modalSize="compact"
+              showRecentTransactions={true}
+              appInfo={{
+                appName: 'Bitlauncher'
+              }}
+            >
               <SessionProvider>
                 <UseSigningRequestProvider>
                   <GoogleReCaptchaProvider
