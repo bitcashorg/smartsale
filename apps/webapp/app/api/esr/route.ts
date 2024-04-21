@@ -14,9 +14,9 @@ import { appConfig } from '@/lib/config'
 
 export async function POST(req: NextRequest) {
   try {
-    console.log('CAllBACK PARAMS 😎😎😎', await req.json())
     // const parsed = SigningRequestCallbackPayloadSchema.safeParse(await req.json())
     const parsed = await req.json()
+    console.log('CAllBACK PARAMS 😎😎😎', parsed)
     if (!parsed) throw new Error('Invalid ESR CallbackPayload')
     console.log('🦚🦚🦚 ALL GOOD ', parsed)
 
