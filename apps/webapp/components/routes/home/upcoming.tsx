@@ -13,7 +13,7 @@ export function Upcoming({ projects }: { projects: Project[] }) {
           key="upcoming-auctions-title"
         >
           {textContent.title.split('AI/WEB3')[0]}{' '}
-          <span className="!text-[#E94FB8]">AI/WEB3</span>
+          <span className="!text-[#E94FB8]">AI <span className='!text-[#7865ab] font-light'>/</span> WEB3</span>
           {'\n'}
           {textContent.title.split('AI/WEB3')[1]}
         </span>

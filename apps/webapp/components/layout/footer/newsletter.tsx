@@ -68,7 +68,7 @@ export default function Newsletter() {
     <section className="newsletter-wrapper">
       <div className="flex h-[460px] w-full max-w-[600px] flex-col items-center justify-center gap-8 px-3 text-center md:gap-11 md:px-0">
         <div className="flex w-full flex-col gap-7">
-          <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
+          <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
             Sign up for our newsletter
           </h2>
           <p className="mx-auto sm:text-xl">
@@ -85,7 +85,7 @@ export default function Newsletter() {
             {...register('email', { required: 'Email is required' })}
             placeholder="Your email"
             type="email"
-            className="block size-full max-w-[calc(100%-54px)] rounded-full bg-transparent px-6 font-semibold placeholder:font-semibold focus-within:outline focus-within:outline-ring"
+            className="block size-full max-w-[calc(100%-56px)] rounded-full bg-transparent px-6 font-semibold placeholder:font-semibold focus-within:outline focus-within:outline-ring"
             required
           />
           {formState.errors.email || state.value?.error || state?.error ? (
@@ -129,7 +129,7 @@ export default function Newsletter() {
             variant="accent"
             size="icon"
             radius="full"
-            className="relative m-0 size-[48px] rounded-full"
+            className="relative m-0 mr-[2px] size-[48px] rounded-full"
             disabled={!isReadyToSubmit}
           >
             {newsletterIconResponse()}
