@@ -48,7 +48,7 @@ export function AuctionInfo({ project }: { project: ProjectWithAuction }) {
   ]
 
   return (
-    <div className="grid grid-cols-2 items-center gap-5">
+    <div className="grid md:grid-cols-2 items-center gap-5">
       {fields.map((items, k) => {
         return React.isValidElement(items[0].value) ? (
           items[0].value
