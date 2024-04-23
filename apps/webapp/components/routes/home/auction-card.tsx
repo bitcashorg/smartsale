@@ -39,12 +39,11 @@ export function AuctionCard(project: Project) {
           <MotionFigcaption label={badgeText} />
         </Suspense>
       </figure>
-
-      <div className="px-4 py-6 pb-0 lg:px-9 lg:py-8">
-        <h3 className="text-xl font-bold text-neutral-600 dark:text-white">
+      <div className="px-4 py-6 lg:px-9 lg:py-8">
+        <h3 className="text-xl font-bold">
           {title}
         </h3>
-        <p className="mt-2 max-w-sm text-sm text-neutral-600 dark:text-white">
+        <p className="mt-2 max-w-sm text-sm">
           {pitch}
         </p>
       </div>
