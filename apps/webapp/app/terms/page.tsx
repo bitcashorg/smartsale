@@ -8,7 +8,7 @@ import {
 
 export default function PrivacyPolicy() {
   return (
-    <div className="content-container px-3 !py-10 md:py-24">
+    <div className="content-container !py-10 px-4 md:py-24">
       <PageContent data={content} />
     </div>
   )

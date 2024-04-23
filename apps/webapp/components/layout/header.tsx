@@ -22,7 +22,7 @@ export function Header() {
         </div>
 
         {/* Desktop action buttons */}
-        <div className="hidden items-center md:flex md:gap-3 lg:gap-8">
+        <div className="hidden items-center md:flex md:gap-3 lg:gap-5">
           <DiscordButton />
           <Suspense fallback={<Button>Login</Button>}>
             <SessionButton />

@@ -49,7 +49,7 @@ export function NavLinks({ mobile = false }: { mobile?: boolean }) {
     {
       id: 'whitepaper',
       href: '/whitepaper',
-      text: 'White Paper',
+      text: 'Whitepaper',
       mobile: false,
       action: null,
       disabled: false
