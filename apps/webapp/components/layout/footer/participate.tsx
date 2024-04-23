@@ -1,17 +1,13 @@
 'use client'
 
-import { Button, buttonVariants } from '@/components/ui/button'
+import { buttonVariants } from '@/components/ui/button'
 import { IconDownRightArrow } from '@/components/ui/icons'
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
 import React from 'react'
-import { SessionButton } from '../session/session-button'
-import { Suspense } from 'react'
-import { useSession } from '@/hooks/use-session'
+import { BitcashAccessButton } from '@/components/layout/bitcash-access'
 
 export default function Participate() {
-  const { loginRedirect } = useSession()
-
   return (
     <section className="align-center flex flex-col pb-10">
       <h2 className="h-32 w-full pb-10 pt-6 text-center text-3xl font-bold leading-loose">
@@ -48,24 +44,12 @@ export default function Participate() {
                   <IconDownRightArrow className="size-4 transition-all group-focus-within:-rotate-45 group-hover:-rotate-45 [&_path]:stroke-white" />
                 </Link>
               ) : (
-                <span>
-                    <Suspense fallback={<Button>REGISTER</Button>}>
-                      <span className='md:flex hidden'>
-                        <SessionButton isRegister />
-                      </span>
-                      <Link
-                        shallow
-                        className="md:hidden flex"
-                        href={location.href}
-                        onClick={e => {
-                          e.preventDefault()
-                          loginRedirect()
-                        }}
-                      >
-                        REGISTER
-                      </Link>
-                    </Suspense>
-                </span>
+                <BitcashAccessButton
+                  buttonLabel="REGISTER"
+                  buttonStyle={{ size: 'icon', variant: 'accent' }}
+                  defaultContent="register"
+                  buttonClassName="!bg-transparent !text-black/90 !font-normal"
+                />
               )}
             </div>
           </div>
