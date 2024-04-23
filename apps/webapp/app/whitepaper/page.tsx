@@ -3,7 +3,7 @@ import { PageContent, PageContentData } from '@/components/shared/content'
 
 export default function BitlauncherWhitePaper() {
   return (
-    <div className="content-container lg:p-0 md:p-0 p-[0.75rem]">
+    <div className="content-container px-3 !py-10 md:py-24">
       <PageContent data={content} />
     </div>
   )
