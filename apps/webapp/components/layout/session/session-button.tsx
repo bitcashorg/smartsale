@@ -5,7 +5,7 @@ import { useSession } from '@/hooks/use-session'
 import { ConnectButton } from '@rainbow-me/rainbowkit'
 import { useAccount } from 'wagmi'
 
-export function SessionButton({isRegister = false}:{ isRegister?: boolean}) {
+export function SessionButton() {
   const { session, loginOrConnect } = useSession()
   const account = useAccount()
 
@@ -17,10 +17,10 @@ export function SessionButton({isRegister = false}:{ isRegister?: boolean}) {
         <Button
           variant="secondary"
           radius="full"
-          className={`md:px-3 lg:px-10 ${isRegister ? '!bg-transparent' : ''}`}
+          className="md:px-3 lg:px-10"
           onClick={loginOrConnect}
         >
-          {isRegister ? 'REGISTER' : !session ? 'Login' : 'Connect'}
+          {!session ? 'Login' : 'Connect'}
         </Button>
       )}
     </div>
