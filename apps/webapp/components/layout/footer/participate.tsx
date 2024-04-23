@@ -1,10 +1,17 @@
-import { buttonVariants } from '@/components/ui/button'
+'use client'
+
+import { Button, buttonVariants } from '@/components/ui/button'
 import { IconDownRightArrow } from '@/components/ui/icons'
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
 import React from 'react'
+import { SessionButton } from '../session/session-button'
+import { Suspense } from 'react'
+import { useSession } from '@/hooks/use-session'
 
 export default function Participate() {
+  const { loginRedirect } = useSession()
+
   return (
     <section className="align-center flex flex-col pb-10">
       <h2 className="h-32 w-full pb-10 pt-6 text-center text-3xl font-bold leading-loose">
@@ -35,13 +42,30 @@ export default function Participate() {
                       variant: 'accent',
                       size: 'icon'
                     }),
-                    'text-md group relative size-14 rounded-full p-0 font-bold hover:[&svg]:fill-card !bg-[#ff6cda]'
+                    'text-md group relative size-14 rounded-full p-0 font-bold hover:[&svg]:fill-card !bg-[#E828AA]'
                   )}
                 >
                   <IconDownRightArrow className="size-4 transition-all group-focus-within:-rotate-45 group-hover:-rotate-45 [&_path]:stroke-white" />
                 </Link>
               ) : (
-                <span>REGISTER</span>
+                <span>
+                    <Suspense fallback={<Button>REGISTER</Button>}>
+                      <span className='md:flex hidden'>
+                        <SessionButton isRegister />
+                      </span>
+                      <Link
+                        shallow
+                        className="md:hidden flex"
+                        href={location.href}
+                        onClick={e => {
+                          e.preventDefault()
+                          loginRedirect()
+                        }}
+                      >
+                        REGISTER
+                      </Link>
+                    </Suspense>
+                </span>
               )}
             </div>
           </div>

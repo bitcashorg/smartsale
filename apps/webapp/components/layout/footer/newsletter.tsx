@@ -85,7 +85,7 @@ export default function Newsletter() {
             {...register('email', { required: 'Email is required' })}
             placeholder="Your email"
             type="email"
-            className="block size-full max-w-[calc(100%-56px)] rounded-full bg-transparent px-6 font-semibold placeholder:font-semibold focus-within:outline focus-within:outline-ring"
+            className="block size-full max-w-[calc(100%-58px)] rounded-full bg-transparent px-6 font-semibold placeholder:font-semibold focus-within:outline focus-within:outline-ring"
             required
           />
           {formState.errors.email || state.value?.error || state?.error ? (
@@ -129,7 +129,7 @@ export default function Newsletter() {
             variant="accent"
             size="icon"
             radius="full"
-            className="relative m-0 mr-[2px] size-[48px] rounded-full"
+            className="relative m-0 mr-[2px] size-[48px] rounded-full bg-[#E828AA]"
             disabled={!isReadyToSubmit}
           >
             {newsletterIconResponse()}
