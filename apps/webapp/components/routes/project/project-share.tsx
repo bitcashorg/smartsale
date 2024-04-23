@@ -7,14 +7,14 @@ import { Project } from '@/lib/projects'
 
 export function ProjectShare({ project }: { project: Project }) {
   return (
-    <div className="flex flex-col w-full gap-3">
-      <div className="flex items-center justify-end gap-3 md:gap-6">
+    <div className="flex w-full flex-col gap-3">
+      <div className="flex items-center justify-center gap-3 md:justify-end md:gap-6">
         <Link
           key={'share-twitter'}
           href={`https://twitter.com/${project.twitterUsername}`}
           className={cn(
             buttonVariants({ variant: 'outline', size: 'icon' }),
-            'relative px-0 py-0 size-[58px] rounded-full'
+            'relative size-[58px] rounded-full px-0 py-0'
           )}
           target="_blank"
           rel="noopener noreferrer"
@@ -26,7 +26,7 @@ export function ProjectShare({ project }: { project: Project }) {
           href={`https://discord.gg/${project.discordServer}`}
           className={cn(
             buttonVariants({ variant: 'outline', size: 'icon' }),
-            'relative px-0 py-0 size-[58px] rounded-full'
+            'relative size-[58px] rounded-full px-0 py-0'
           )}
           target="_blank"
           rel="noopener noreferrer"
@@ -38,7 +38,7 @@ export function ProjectShare({ project }: { project: Project }) {
           href={`https://t.me/${project.telegramGroup}`}
           className={cn(
             buttonVariants({ variant: 'outline', size: 'icon' }),
-            'relative px-0 py-0 size-[58px] rounded-full'
+            'relative size-[58px] rounded-full px-0 py-0'
           )}
           target="_blank"
           rel="noopener noreferrer"

@@ -136,13 +136,13 @@ export default function Newsletter() {
           </Button>
         </form>
       </div>
-      <div className="flex h-[230px] w-full flex-wrap items-center justify-between rounded-b-3xl bg-primary px-4 py-6 md:px-10 lg:px-24">
+      <div className="flex h-[230px] w-full flex-wrap items-center md:justify-between justify-center rounded-b-3xl bg-primary px-4 py-6 md:px-10 lg:px-24">
         <Link href="/" prefetch>
           <IconBitlauncher className="h-8 w-40 md:h-11 md:w-56" />
         </Link>
         <Link
           href="/terms"
-          className="mt-auto underline-offset-2 focus-within:underline hover:underline sm:my-auto"
+          className="md:mt-auto underline-offset-2 focus-within:underline hover:underline sm:my-auto"
         >
           Terms & Privacy Policy
         </Link>
