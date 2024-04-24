@@ -39,7 +39,6 @@ export function AuctionCard(project: Project) {
           <MotionFigcaption label={badgeText} />
         </Suspense>
       </figure>
-
       <div className="px-4 py-6 lg:px-9 lg:py-8">
         <h3 className="text-xl font-bold">
           {title}
@@ -48,7 +47,7 @@ export function AuctionCard(project: Project) {
           {pitch}
         </p>
       </div>
-      <div className="mb-2 mt-auto flex w-full flex-col items-center justify-between px-4 py-6 xl:px-9 xl:py-8">
+      <div className="mb-2 md:mt-auto flex w-full flex-col items-center justify-between px-4 md:py-6 xl:px-9 xl:py-8">
         <ul className="mb-10 mt-8 flex w-full flex-col gap-2">
           <li className="flex w-full justify-between rounded-full bg-muted px-4 py-2">
             <span className="opacity-70">Fundraising Goal</span>
