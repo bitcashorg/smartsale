@@ -6,7 +6,7 @@ export default async function IndexPage() {
   const projects = await getProjects()
 
   return (
-    <div className="container">
+    <div className="container !px-4 py-10 md:py-24">
       <Upcoming projects={projects} />
     </div>
   )

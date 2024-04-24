@@ -1,8 +1,11 @@
+'use client'
+
 import { buttonVariants } from '@/components/ui/button'
 import { IconDownRightArrow } from '@/components/ui/icons'
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
 import React from 'react'
+import { BitcashAccessButton } from '@/components/layout/bitcash-access'
 
 export default function Participate() {
   return (
@@ -35,13 +38,17 @@ export default function Participate() {
                       variant: 'accent',
                       size: 'icon'
                     }),
-                    'text-md group relative size-14 rounded-full p-0 font-bold hover:[&svg]:fill-card'
+                    'text-md group relative size-14 rounded-full !bg-[#E828AA] p-0 font-bold hover:[&svg]:fill-card'
                   )}
                 >
                   <IconDownRightArrow className="size-4 transition-all group-focus-within:-rotate-45 group-hover:-rotate-45 [&_path]:stroke-white" />
                 </Link>
               ) : (
-                <span>REGISTER</span>
+                <BitcashAccessButton
+                  buttonLabel="down-right-icon"
+                  buttonStyle={{ size: 'icon', variant: 'accent' }}
+                  defaultContent="register"
+                />
               )}
             </div>
           </div>

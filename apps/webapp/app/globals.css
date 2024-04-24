@@ -267,5 +267,5 @@ input[type='number'] {
   height: calc(100vh - 64px) !important;
   width: 100vw;
   overflow: hidden;
-  @apply fixed inset-x-0 top-16 flex flex-col items-center justify-between gap-20 overflow-hidden bg-background py-[120px];
+  @apply fixed inset-x-0 top-16 flex flex-col items-center justify-center gap-20 overflow-hidden bg-background;
 }
