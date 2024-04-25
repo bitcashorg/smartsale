@@ -10,7 +10,7 @@ export const projects: Project[] = [
     slug: 'bitcash-bitlauncher',
     pitch: 'Building Ai & Crypto Apps For The New Global Economy.',
     fundraiseGoal: '$400,000',
-    maxAllocation: '$10,000',
+    maxAllocation: '$1,500',
     heroImage: '/images/projects/bitcash-cover.png',
     thumbnailImage: '/images/projects/bitcash.png',
     thumbnailImageBlurDataURL: '', // replace by getter fucntion

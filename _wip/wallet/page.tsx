@@ -38,5 +38,5 @@ export default function WalletPage() {
 export const metadata: Metadata = {
   title: 'Wallet | Bitlauncher',
   description:
-    'Invest in the intelligent future and join the Ai/Web3 revolution now!'
+    'Be part of the intelligent future and join the Ai/Web3 revolution now!'
 }

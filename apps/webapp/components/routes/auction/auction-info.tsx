@@ -33,7 +33,7 @@ export function AuctionInfo({ project }: { project: ProjectWithAuction }) {
     [
       { label: 'Presale Period', value: '6/1/24 - 6/30/24' },
       { label: 'Fundraising Goal', value: '$150,000' },
-      { label: 'Max Allocation', value: '$5,000' }
+      { label: 'Max Allocation', value: '$1,500' }
     ],
     [
       { label: 'Token Sale Period', value: '7/1/24 - 7/30/24' },

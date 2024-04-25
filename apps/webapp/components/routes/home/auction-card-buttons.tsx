@@ -91,7 +91,7 @@ export function ProjectCardButtons({ project }: { project: Project }) {
               }),
               'text-md group relative size-14 rounded-full p-0 font-bold hover:[&svg]:fill-card'
             )}
-            data-title={`Go to project ${title}`}
+            data-title={title}
           >
             <IconDownRightArrow className="size-4 transition-all group-focus-within:-rotate-45 group-hover:-rotate-45" />
           </NestedLinkButton>
