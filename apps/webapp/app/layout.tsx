@@ -83,7 +83,7 @@ export const metadata: Metadata = {
     template: '%s | Bitlauncher'
   },
   description:
-    'Invest in the intelligent future and join the Ai/Web3 revolution now!',
+    'Be part of the intelligent future and join the Ai/Web3 revolution now!',
   metadataBase: new URL('https://bitlauncher.ai'),
   alternates: {
     canonical: '/',
@@ -96,7 +96,7 @@ export const metadata: Metadata = {
     url: 'https://bitlauncher.ai',
     title: 'bitlauncher',
     description:
-      'Invest in the intelligent future and join the Ai/Web3 revolution now!',
+      'Be part of the intelligent future and join the Ai/Web3 revolution now!',
     images: [
       {
         url: 'https://bitlauncher.ai/images/og-image.jpeg',
