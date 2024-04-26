@@ -4,7 +4,7 @@ import { AuctionCard } from './auction-card'
 export function Upcoming({ projects }: { projects: Project[] }) {
   return (
     <section className="align-center relative z-10 flex min-h-[80vh] flex-col justify-center pt-10">
-      <h1 className="mx-auto md:my-24 my-10 flex flex-col whitespace-pre-line text-center">
+      <h1 className="mx-auto md:mb-24 mb-10 flex flex-col whitespace-pre-line text-center">
         <sub className="h-8 w-full text-xl font-semibold leading-none md:h-10 md:text-2xl">
           {textContent.eyebrow}
         </sub>
@@ -18,8 +18,9 @@ export function Upcoming({ projects }: { projects: Project[] }) {
           {textContent.title.split('AI/WEB3')[1]}
         </span>
       </h1>
-      <h2 className="w-full py-10 text-center text-3xl font-bold leading-none">
+      <h2 className="w-full py-10 text-center text-3xl font-bold leading-none relative flex justify-center">
         Upcoming Auctions
+        <div className="blur-effect-bg absolute top-0"/>
       </h2>
       <div
         className="grid scroll-m-3 auto-rows-fr grid-cols-1 gap-6 self-center lg:self-stretch lg:grid-cols-3"
@@ -28,7 +29,7 @@ export function Upcoming({ projects }: { projects: Project[] }) {
         {projects.map((item, index) => (
           <div
             key={`upcoming-auctions-item-${index}`}
-            className="box-border size-full justify-center rounded-xl border border-card/30 bg-card/60 backdrop-blur-lg"
+            className="box-border size-full justify-center rounded-xl border border-card/30 bg-card backdrop-blur-lg"
           >
             <AuctionCard {...item} />
           </div>
@@ -40,5 +41,5 @@ export function Upcoming({ projects }: { projects: Project[] }) {
 
 const textContent = {
   title: 'JOIN THE AI/WEB3 REVOLUTION NOW',
-  eyebrow: 'Invest In The Intelligent Future'
+  eyebrow: 'Be Part Of The Intelligent Future.'
 }
