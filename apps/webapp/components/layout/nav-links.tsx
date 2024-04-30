@@ -61,6 +61,14 @@ export function NavLinks({ mobile = false }: { mobile?: boolean }) {
       mobile: false,
       action: null,
       disabled: false
+    },
+    {
+      id: 'wallet',
+      href: '/wallet',
+      text: 'Wallet',
+      mobile: false,
+      action: null,
+      disabled: false
     }
     // { href: '/terms', text: 'Privacy', mobile: false, action: null }
   ] as const
