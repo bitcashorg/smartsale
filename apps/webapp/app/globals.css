@@ -102,11 +102,13 @@
   * {
     @apply border-border ring-offset-ring focus-within:ring-ring focus-within:ring-offset-ring focus-visible:ring-ring focus-visible:ring-offset-ring before:focus-visible:ring-ring before:focus-visible:ring-offset-ring;
   }
+
   a:focus-visible {
     outline: 3px solid hsl(var(--ring));
     outline-offset: 2px;
     outline-radius: 2px;
   }
+
   body,
   html {
     @apply bg-background text-foreground;
@@ -246,9 +248,11 @@ input[type='number'] {
 .heading {
   @apply text-3xl font-bold !leading-snug md:text-6xl;
 }
+
 .heading2 {
   @apply text-2xl font-bold md:text-4xl;
 }
+
 .paragraph {
   @apply text-base md:text-lg;
 }
@@ -260,7 +264,8 @@ input[type='number'] {
 
 .header-link:hover {
   text-decoration: underline;
-  text-underline-offset: 4px; /* Adjust the offset as needed */
+  text-underline-offset: 4px;
+  /* Adjust the offset as needed */
 }
 
 .mobile-nav {
@@ -268,4 +273,19 @@ input[type='number'] {
   width: 100vw;
   overflow: hidden;
   @apply fixed inset-x-0 top-16 flex flex-col items-center justify-center gap-20 overflow-hidden bg-background;
+}
+
+
+/* BLUR EFFECT TO BACKGROUND CIRCLE */
+.blur-effect-bg {
+  --size: 580px;
+  --speed: 50s;
+  --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
+
+  min-width: var(--size);
+  min-height: var(--size);
+  filter: blur(calc(var(--size) / 3));
+  background-image: linear-gradient(hsla(293, 64%, 44%, 1), hsla(293, 64%, 44%, 1));
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  z-index: -1;
 }

@@ -17,7 +17,7 @@ export default function SecurityTips() {
 export const metadata: Metadata = {
   title: 'Security Tips | Bitlauncher',
   description:
-    'Invest in the intelligent future and join the Ai/Web3 revolution now!'
+    'Be part of the intelligent future and join the Ai/Web3 revolution now!'
 }
 
 const securityTips = [
