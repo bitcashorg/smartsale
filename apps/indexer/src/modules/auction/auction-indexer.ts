@@ -11,7 +11,7 @@ import { NewAuctionEvent, NewSellOrderEvent, NewUserEvent } from '~/modules/auct
 
 import BN from 'bn.js'
 import { eosEvmTestnet } from 'smartsale-env'
-import { upsertAuctionDetail } from '~/lib/supabase-client'
+import { upsertAuctionDetail, upsertOrder } from '~/lib/supabase-client'
 
 export async function startAuctionIndexer() {
   console.log('indexing starting')
@@ -148,20 +148,15 @@ async function handleNewSellOrder(log: NewSellOrderEvent) {
   if (!log.transactionHash) return
 
   const data = {
-    auction_id: log.args.auctionId,
-    sell_amount: log.args.sellAmount,
-    buy_amount: log.args.buyAmount,
-    user_id: log.args.userId,
+    auction_id: Number(log.args.auctionId),
+    sell_amount: Number(log.args.sellAmount),
+    buy_amount: Number(log.args.buyAmount),
+    user_id: Number(log.args.userId),
     transactionHash: log.transactionHash,
   }
-  // const result = await db.orders.upsert({
-  //   where: {
-  //     transactionHash: log.transactionHash,
-  //   },
-  //   update: data,
-  //   create: data,
-  // })
-  // console.log(result)
+  const result = await upsertOrder(data)
+
+  console.log(result)
 }
 
 function handleNewUser({ args }: NewUserEvent) {

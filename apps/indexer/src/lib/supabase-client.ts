@@ -23,3 +23,22 @@ export async function upsertAuctionDetail(data: TablesInsert<'auction_details'>)
 
   return data
 }
+
+export async function upsertOrder(data: TablesInsert<'orders'>) {
+  const { data: result, error } = await supabase.from('orders').upsert(
+    [
+      {
+        ...data,
+      },
+    ],
+    {
+      onConflict: 'transactionHash',
+    },
+  )
+
+  if (error) console.error('Error:', error)
+
+  console.log('Result:', result)
+
+  return data
+}
