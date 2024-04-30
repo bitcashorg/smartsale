@@ -1,5 +1,5 @@
 import { EVMTokenContractData, SepoliaUSDT, TestnetUSDT } from 'smartsale-contracts'
-import { runPromisesInSeries } from '~/utils'
+import { runPromisesInSeries } from '~/lib/utils'
 
 import { Address, Log, PublicClient, createPublicClient, http, parseAbiItem, stringify } from 'viem'
 import { TransferEvent } from '~/modules/auction/auction.type'

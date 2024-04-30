@@ -1,5 +1,5 @@
 import express from 'express'
-import { getCurrentBlockHeight } from './viem-client'
+import { getCurrentBlockHeight } from '../lib/evm-client'
 
 export function startExpress() {
   const app = express()

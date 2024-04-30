@@ -5,7 +5,7 @@ import { handleAxiosError } from '@/lib/utils'
 import axios from 'axios'
 import { Resend } from 'resend'
 import { z } from 'zod'
-import { createSupabaseServerClient } from './services/supabase'
+import { createSupabaseServerClient } from './lib/supabase'
 import { preSaleInsertSchema } from '@repo/supabase'
 
 // get session object by id

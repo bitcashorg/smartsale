@@ -1,7 +1,7 @@
 'use client'
 import { useSession } from '@/hooks/use-session'
 import { esrOptions } from '@/lib/eos'
-import { useSupabaseClient } from '@/services/supabase'
+import { useSupabaseClient } from '@/lib/supabase'
 import { createContextHook } from '@blockmatic/hooks-utils'
 import { useMutation } from '@tanstack/react-query'
 import axios from 'axios'
