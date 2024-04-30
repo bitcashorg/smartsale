@@ -1,10 +1,11 @@
 import { createClient } from '@supabase/supabase-js'
 import { Database, TablesInsert } from '@repo/supabase'
+import { appenv } from '~/config'
 
 // Initialize Supabase client
-const supabase = createClient<Database>('your-supabase-url', 'your-supabase-anon-key')
+const supabase = createClient<Database>(appenv.supabase.url, appenv.supabase.anonKey)
 
-async function upsertAuctionDetail(data: TablesInsert<'auction_details'>) {
+export async function upsertAuctionDetail(data: TablesInsert<'auction_details'>) {
   const { data: result, error } = await supabase.from('auction_details').upsert(
     [
       {
@@ -16,10 +17,9 @@ async function upsertAuctionDetail(data: TablesInsert<'auction_details'>) {
     },
   )
 
-  if (error) {
-    console.error('Error:', error)
-    return
-  }
+  if (error) console.error('Error:', error)
 
   console.log('Result:', result)
+
+  return data
 }
