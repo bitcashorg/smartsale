@@ -48,6 +48,7 @@ export default function Participate() {
                   buttonLabel="down-right-icon"
                   buttonStyle={{ size: 'icon', variant: 'accent' }}
                   defaultContent="register"
+                  buttonClassName='!bg-[#E828AA]'
                 />
               )}
             </div>
