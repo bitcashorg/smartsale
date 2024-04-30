@@ -11,6 +11,7 @@ import { NewAuctionEvent, NewSellOrderEvent, NewUserEvent } from '~/modules/auct
 
 import BN from 'bn.js'
 import { eosEvmTestnet } from 'smartsale-env'
+import { upsertAuctionDetail } from '~/lib/supabase-client'
 
 export async function startAuctionIndexer() {
   console.log('indexing starting')
@@ -133,17 +134,8 @@ async function handleNewAuction(log: NewAuctionEvent) {
 
   // console.log('handleNewAuction:: data for postgres db', data)
   try {
-    // const result = await db.auction_details.upsert({
-    //   where: {
-    //     exact_order_id_chain_id: {
-    //       exact_order_id: data.exact_order_id,
-    //       chain_id: eosEvmTestnet.id,
-    //     },
-    //   },
-    //   update: data,
-    //   create: data,
-    // })
-    // console.log('result', result)
+    const result = await upsertAuctionDetail(data)
+    console.log('result', result)
   } catch (error) {
     console.log(error)
     process.exit(0)
