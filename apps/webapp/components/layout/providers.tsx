@@ -11,7 +11,8 @@ import {
 import {
   metaMaskWallet,
   coinbaseWallet,
-  trustWallet
+  trustWallet,
+  walletConnectWallet
 } from '@rainbow-me/rainbowkit/wallets';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { ThemeProvider as NextThemesProvider } from 'next-themes'
@@ -32,7 +33,7 @@ export const wagmiConfig = getDefaultConfig({
   wallets: [
     {
       groupName: "Popular",
-      wallets: [ metaMaskWallet, coinbaseWallet, trustWallet ]
+      wallets: [ metaMaskWallet, coinbaseWallet, trustWallet, walletConnectWallet ]
     }
   ],
   // @ts-ignore
