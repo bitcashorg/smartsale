@@ -57,7 +57,7 @@ export function ProjectCardButtons({ project }: { project: Project }) {
                 className={buttonLinkClassName}
                 data-title={`${title}´s ${socialTitle}`}
               >
-                <Icon className="size-7 fill-accent" />
+                <Icon className="size-7 fill-accent-secondary" />
               </Button>
             }
           >
@@ -68,7 +68,7 @@ export function ProjectCardButtons({ project }: { project: Project }) {
               className={buttonLinkClassName}
               data-title={`${title}´s ${socialTitle}`}
             >
-              <Icon className="size-7 fill-accent" />
+              <Icon className="size-7 fill-accent-secondary" />
             </ExternalLinkButton>
           </Suspense>
         ))}

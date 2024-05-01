@@ -51,10 +51,10 @@ function DiscordButton() {
           variant: 'outline',
           radius: 'full'
         }),
-        'border-transparent md:border-accent md:px-3 lg:px-10'
+        'border-transparent md:border-accent-secondary md:px-3 lg:px-10'
       )}
     >
-      <IconDiscord className={'block size-7 fill-accent md:hidden'} />
+      <IconDiscord className={'block size-7 fill-accent-secondary md:hidden'} />
       <span className="hidden md:block">Discord</span>
     </Link>
   )

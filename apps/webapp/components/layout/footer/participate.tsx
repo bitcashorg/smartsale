@@ -38,7 +38,7 @@ export default function Participate() {
                       variant: 'accent',
                       size: 'icon'
                     }),
-                    'text-md group relative size-14 rounded-full !bg-[#E828AA] p-0 font-bold hover:[&svg]:fill-card'
+                    'text-md group relative size-14 rounded-full p-0 font-bold hover:[&svg]:fill-card'
                   )}
                 >
                   <IconDownRightArrow className="size-4 transition-all group-focus-within:-rotate-45 group-hover:-rotate-45 [&_path]:stroke-white" />
@@ -48,7 +48,6 @@ export default function Participate() {
                   buttonLabel="down-right-icon"
                   buttonStyle={{ size: 'icon', variant: 'accent' }}
                   defaultContent="register"
-                  buttonClassName='!bg-[#E828AA]'
                 />
               )}
             </div>

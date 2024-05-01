@@ -40,8 +40,8 @@ interface CopyShortlinkIconProps {
 }
 
 const iconsMap = {
-  loading: <LucideLoader2 size={26} className="animate-spin stroke-accent" />,
+  loading: <LucideLoader2 size={26} className="animate-spin stroke-accent-secondary" />,
   copied: <LucideCheck size={26} className="stroke-success" />,
   error: <LucideX size={26} className="stroke-destructive" />,
-  default: <LucideShare size={26} className="stroke-accent" />
+  default: <LucideShare size={26} className="stroke-accent-secondary" />
 }

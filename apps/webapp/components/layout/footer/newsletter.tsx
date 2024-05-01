@@ -129,7 +129,7 @@ export default function Newsletter() {
             variant="accent"
             size="icon"
             radius="full"
-            className="relative m-0 mr-[2px] size-[48px] rounded-full bg-[#E828AA]"
+            className="relative m-0 mr-[2px] size-[48px] rounded-full"
             disabled={!isReadyToSubmit}
           >
             {newsletterIconResponse()}
