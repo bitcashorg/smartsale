@@ -11,7 +11,7 @@ import { MobileNav } from './mobile-nav'
 export function Header() {
   return (
     <div className="sticky top-0 z-50 flex h-16 bg-background md:p-4 lg:p-10">
-      <div className="container flex items-center justify-between bg-background">
+      <div className="container md:px-3 px-7 flex items-center justify-between bg-background">
         <div className="flex h-full items-center grow">
           <Link shallow href="/">
             <IconBitlauncher />
