@@ -53,7 +53,8 @@ module.exports = {
         },
         accent: {
           DEFAULT: 'hsla(var(--accent))',
-          foreground: 'hsla(var(--accent-foreground))'
+          foreground: 'hsla(var(--accent-foreground))',
+          secondary: 'hsla(var(--accent-secondary))',
         },
         popover: {
           DEFAULT: 'hsla(var(--popover))',

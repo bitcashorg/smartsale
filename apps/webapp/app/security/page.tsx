@@ -8,7 +8,7 @@ import {
 
 export default function SecurityTips() {
   return (
-    <div className="content-container !py-10 px-3 md:py-24">
+    <div className="content-container !py-10 md:px-3 px-7 md:py-24">
       <PageContent data={content} />
     </div>
   )

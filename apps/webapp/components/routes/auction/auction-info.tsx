@@ -62,7 +62,7 @@ export function AuctionInfo({ project }: { project: ProjectWithAuction }) {
                 <ListItem {...item} />
 
                 {ik < items.length - 1 && (
-                  <hr className="my-2 w-full border-accent/50" />
+                  <hr className="my-2 w-full border-accent-secondary/50" />
                 )}
               </Fragment>
             ))}
@@ -83,7 +83,7 @@ export function AuctionInfo({ project }: { project: ProjectWithAuction }) {
                 <ListItem key={ik} {...item} />
           
               {ik < items.length - 1 && (
-                <hr className="w-full my-2 border-accent/50" />
+                <hr className="w-full my-2 border-accent-secondary/50" />
         
           )} )) }
         </div> */
