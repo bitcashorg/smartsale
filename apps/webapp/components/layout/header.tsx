@@ -43,7 +43,7 @@ export function Header() {
 function DiscordButton() {
   return (
     <Link
-      href="https://discord.gg/a4gwhT9G"
+      href="https://discord.gg/KuR48XUxnG"
       target="_blank"
       rel="noopener noreferrer"
       className={cn(
