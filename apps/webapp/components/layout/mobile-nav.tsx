@@ -24,7 +24,7 @@ export function MobileNav() {
         onClick={toggleOpen}
         strokeColor="white"
         animation={menu4}
-        wrapperStyle={{marginRight: '-8px'}}
+        wrapperStyle={{marginRight: '-10px'}}
         size={56}
       />
       {/*  <AnimatePresence> */}

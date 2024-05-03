@@ -10,11 +10,11 @@ import { MobileNav } from './mobile-nav'
 
 export function Header() {
   return (
-    <div className="sticky top-0 z-50 flex h-16 bg-background md:p-4 lg:p-10">
-      <div className="container md:px-3 px-7 flex items-center justify-between bg-background">
+    <div className="sticky top-0 z-50 flex h-16 bg-background">
+      <div className="container px-4 flex items-center justify-between bg-background">
         <div className="flex h-full items-center grow">
           <Link shallow href="/">
-            <IconBitlauncher />
+            <IconBitlauncher className='!w-fit' />
           </Link>
           <div className="hidden md:flex md:gap-3 md:pl-4 lg:gap-10 lg:pl-16 justify-center grow">
             <NavLinks />
