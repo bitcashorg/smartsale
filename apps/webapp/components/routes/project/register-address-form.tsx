@@ -81,7 +81,7 @@ export const RegisterAddressForm: FunctionComponent<{ projectId: number }> = ({
         text={
           state.loading || isPending
             ? `Registering ${formatAddress(address!)}`
-            : 'Register for Presale'
+            : 'Register'
         }
       />
     </form>
