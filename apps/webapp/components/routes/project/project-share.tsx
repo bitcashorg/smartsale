@@ -7,8 +7,8 @@ import { Project } from '@/lib/projects'
 
 export function ProjectShare({ project }: { project: Project }) {
   return (
-    <div className="flex w-full flex-col gap-3">
-      <div className="flex items-center justify-center gap-3 md:justify-end md:gap-6">
+    <div className="flex w-full flex-col gap-3 mt-5 mb-5">
+      <div className="flex items-center justify-center md:justify gap-6">
         <Link
           key={'share-twitter'}
           href={`https://twitter.com/${project.twitterUsername}`}
@@ -19,7 +19,7 @@ export function ProjectShare({ project }: { project: Project }) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <IconTwitterX className="size-6 fill-accent" />
+          <IconTwitterX className="size-6 fill-accent-secondary" />
         </Link>
         <Link
           key={'share-discord'}
@@ -31,7 +31,7 @@ export function ProjectShare({ project }: { project: Project }) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <IconDiscord className="size-7 fill-accent" />
+          <IconDiscord className="size-7 fill-accent-secondary" />
         </Link>
         <Link
           key={'share-telegram'}
@@ -43,7 +43,7 @@ export function ProjectShare({ project }: { project: Project }) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <IconTelegram className="size-7 fill-accent" />
+          <IconTelegram className="size-7 fill-accent-secondary" />
         </Link>
 
         <CopyShortlinkIcon key={'share-shortlink'} />

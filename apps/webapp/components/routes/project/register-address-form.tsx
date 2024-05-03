@@ -96,7 +96,7 @@ function RegisterButton(props: ButtonProps & { text: string }) {
           variant: 'outline',
           radius: 'full'
         }),
-        'mx-auto mt-5 border border-solid border-accent bg-background px-10 py-5'
+        'mx-auto mt-6 border border-solid border-accent-secondary bg-background px-10 py-5'
       )}
       {...props}
     >

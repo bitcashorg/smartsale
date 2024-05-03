@@ -27,7 +27,7 @@ export function ProjectCardButtons({ project }: { project: Project }) {
   const buttonLinkClassName = 'relative px-0 py-0 size-[58px] rounded-full'
   return (
     <div
-      className="mb-3 flex w-full items-center justify-between "
+      className="flex w-full items-center justify-between "
       suppressHydrationWarning={true}
     >
       <div className="align-center relative z-10 flex items-center justify-center gap-3 md:gap-4 xl:gap-6">
@@ -57,7 +57,7 @@ export function ProjectCardButtons({ project }: { project: Project }) {
                 className={buttonLinkClassName}
                 data-title={`${title}´s ${socialTitle}`}
               >
-                <Icon className="size-7 fill-accent" />
+                <Icon className="size-7 fill-accent-secondary" />
               </Button>
             }
           >
@@ -68,7 +68,7 @@ export function ProjectCardButtons({ project }: { project: Project }) {
               className={buttonLinkClassName}
               data-title={`${title}´s ${socialTitle}`}
             >
-              <Icon className="size-7 fill-accent" />
+              <Icon className="size-7 fill-accent-secondary" />
             </ExternalLinkButton>
           </Suspense>
         ))}
