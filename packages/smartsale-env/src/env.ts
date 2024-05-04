@@ -10,6 +10,10 @@ import {
 import { Address, Chain } from "viem";
 
 const prod: SmartsaleEnvConfig = {
+   supabase: {
+    url : 'https://jvpdyxpjpodxsuvhufpw.supabase.co',
+    anonKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imp2cGR5eHBqcG9keHN1dmh1ZnB3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTMxMzMxMDcsImV4cCI6MjAyODcwOTEwN30.KkwK6Px8MG03QPDScsKjLc48GU-RkTs9beT946vD2vI',
+  },
   chains: smartsaleChains.prod,
   esrCallbackUrl: "https://bitlauncher.ai/api/esr",
   issuer: {
@@ -29,6 +33,10 @@ const prod: SmartsaleEnvConfig = {
 };
 
 const test: SmartsaleEnvConfig = {
+   supabase: {
+    url : 'https://jvpdyxpjpodxsuvhufpw.supabase.co',
+    anonKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imp2cGR5eHBqcG9keHN1dmh1ZnB3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTMxMzMxMDcsImV4cCI6MjAyODcwOTEwN30.KkwK6Px8MG03QPDScsKjLc48GU-RkTs9beT946vD2vI',
+  },
   chains: smartsaleChains.test,
   esrCallbackUrl: "https://dev.bitlauncher.ai/api/esr",
   // esrCallbackUrl: "https://192.168.23.3:3000/api/esr",
@@ -49,6 +57,10 @@ const test: SmartsaleEnvConfig = {
 };
 
 const canary: SmartsaleEnvConfig = {
+   supabase: {
+    url : 'https://jvpdyxpjpodxsuvhufpw.supabase.co',
+    anonKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imp2cGR5eHBqcG9keHN1dmh1ZnB3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTMxMzMxMDcsImV4cCI6MjAyODcwOTEwN30.KkwK6Px8MG03QPDScsKjLc48GU-RkTs9beT946vD2vI',
+  },
   chains: smartsaleChains.test,
   esrCallbackUrl: "https://canary.bitlauncher.ai/api/esr",
   issuer: {
@@ -91,20 +103,24 @@ export function getValidSmartsaleEnv(env: string): SmartsaleEnv {
   }
 }
 export interface SmartsaleEnvConfig {
-  chains: Map<number, Chain>;
+  chains: Map<number, Chain>
   issuer: {
-    eos: string;
-    evm: Address;
-  };
+    eos: string
+    evm: Address
+  }
   bitcash: {
-    bank: string;
-    token: string;
-    accounts: string;
-  };
+    bank: string
+    token: string
+    accounts: string
+  }
   smartsale: {
-    auction: Address;
-    bk: string;
-  };
-  usdt: TokenContractData[];
-  esrCallbackUrl: string;
+    auction: Address
+    bk: string
+  }
+  usdt: TokenContractData[]
+  esrCallbackUrl: string
+  supabase: {
+    url : string,
+    anonKey: string,
+  }
 }
