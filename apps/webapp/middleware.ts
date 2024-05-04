@@ -9,7 +9,14 @@ const cookiePolicy = {
 
 export function middleware(request: NextRequest) {
   const { device } = userAgent(request)
+
+  // NOTE: this is not working correctly https://twitter.com/gaboesquivel/status/1786870988912676932
+  //       using react-device-detect for login logic the meantime
+  // console.log('🍓 device', JSON.stringify(device))
+
   const viewport = device.type === 'mobile' ? 'mobile' : 'desktop'
+
+  // console.log('🍓 middleware viewport', viewport)
 
   const response = NextResponse.next()
 

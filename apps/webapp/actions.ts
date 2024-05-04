@@ -10,6 +10,7 @@ import { preSaleInsertSchema } from '@repo/supabase'
 
 // get session object by id
 export async function getSesssion(formData: FormData) {
+  console.log('💥 actions: getSession')
   try {
     const { session_id } = fromEntries(formData)
     console.log(`😊 getting session object for ${session_id}`)
