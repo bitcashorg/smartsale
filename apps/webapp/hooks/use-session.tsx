@@ -10,14 +10,13 @@ import { useConnectModal } from '@rainbow-me/rainbowkit'
 import { Tables } from '@repo/supabase'
 import { usePathname, useRouter, useSearchParams } from 'next/navigation'
 import { getSesssion } from '@/actions'
-// import { isMobile } from 'react-device-detect'
+import { isMobile } from 'react-device-detect'
 
 // Exports
 export { SessionProvider, useSession }
 
 // don export this fn must be wrapped for context to work
 function useSessionFn() {
-  const isMobile = false
   const supabase = useSupabaseClient()
   const [newSessionId] = useState(crypto.randomUUID())
   const searchParams = useSearchParams()
@@ -67,15 +66,16 @@ function useSessionFn() {
 
   // // open session from url search params
   useEffect(() => {
+    if (!paramsSessionId) return
     console.log(`💥💥 url session effect  ${paramsSessionId}`)
     // get session from server action and remove
     const getSession = async () => {
-      if (!paramsSessionId) return
       console.log(`getting session ${paramsSessionId}`)
       const formData = new FormData()
       formData.append('session_id', paramsSessionId)
+
       const session = await getSesssion(formData)
-      console.log(`getting session session`, session)
+      console.log(`session ${paramsSessionId}`, session)
       if (!session) return
       // TODO: move this logic to backend
       // set cookie session

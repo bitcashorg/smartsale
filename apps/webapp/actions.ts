@@ -23,7 +23,7 @@ export async function getSesssion(formData: FormData) {
       .limit(1)
       .single()
 
-    if (error) console.log('😎😎😎', error)
+    if (error) console.log('🤌🏻🤌🏻🤌🏻', error)
     if (!data) return null
     return data
   } catch (error) {
