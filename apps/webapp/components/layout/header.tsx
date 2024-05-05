@@ -11,18 +11,18 @@ import { MobileNav } from './mobile-nav'
 export function Header() {
   return (
     <div className="sticky top-0 z-50 flex h-16 bg-background">
-      <div className="container px-4 flex items-center justify-between bg-background">
-        <div className="flex h-full items-center grow">
+      <div className="container flex items-center justify-between px-4 bg-background">
+        <div className="flex items-center h-full grow">
           <Link shallow href="/">
-            <IconBitlauncher className='!w-fit' />
+            <IconBitlauncher />
           </Link>
-          <div className="hidden md:flex md:gap-3 md:pl-4 lg:gap-10 lg:pl-16 justify-center grow">
+          <div className="justify-center hidden grow md:flex md:gap-3 md:pl-4 lg:gap-10 lg:pl-16">
             <NavLinks />
           </div>
         </div>
 
         {/* Desktop action buttons */}
-        <div className="hidden items-center md:flex md:gap-3 lg:gap-5">
+        <div className="items-center hidden md:flex md:gap-3 lg:gap-5">
           <DiscordButton />
           <Suspense fallback={<Button>Login</Button>}>
             <SessionButton />

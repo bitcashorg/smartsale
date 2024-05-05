@@ -84,7 +84,6 @@ export function NavLinks({ mobile = false }: { mobile?: boolean }) {
         href={link.href || location.href}
         onClick={e => {
           e.preventDefault()
-          console.log('🤌🏻 onclick', link)
           if (link.action) return link.action()
           if (link.href) router.push(link.href)
         }}
