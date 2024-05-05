@@ -7,5 +7,3 @@ export const appConfig = {
   eosRpc: 'https://eos.greymass.com',
   ...smartsaleEnv[env]
 } as const
-
-console.log('⚙️⚙️⚙️ appconfig ⚙️⚙️⚙️', appConfig)

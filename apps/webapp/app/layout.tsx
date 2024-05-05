@@ -9,7 +9,6 @@ import '@rainbow-me/rainbowkit/styles.css'
 import { Metadata } from 'next'
 import dynamic from 'next/dynamic'
 import { Open_Sans } from 'next/font/google'
-import { cookies } from 'next/headers'
 import React from 'react'
 // import { Toaster } from 'react-hot-toast'
 
@@ -19,8 +18,6 @@ const openSans = Open_Sans({
 })
 
 export default async function RootLayout({ children }: RootLayoutProps) {
-  // TODO: check if this techniche impacts perf or next cache
-  const { viewport } = await getCookieData()
   return (
     <html
       lang="en"
@@ -28,7 +25,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
       suppressHydrationWarning
     >
       <body>
-        <GlobalStoreProvider viewport={viewport}>
+        <GlobalStoreProvider>
           <Providers
             attribute="class"
             defaultTheme="system"
@@ -37,9 +34,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
           >
             <Header />
             {/* <Toaster /> */}
-            <main className="flex flex-1 flex-col overflow-hidden">
-              {children}
-            </main>
+            <main className="flex flex-col flex-1">{children}</main>
             <Footer />
             <DynamicSessionDialog />
           </Providers>
@@ -48,17 +43,6 @@ export default async function RootLayout({ children }: RootLayoutProps) {
         <GoogleAnalytics gaId="G-78N0Z7NPQJ" />
       </body>
     </html>
-  )
-}
-
-async function getCookieData(): Promise<{
-  viewport: string | null
-}> {
-  const viewport = cookies().get('viewport')?.value || null
-  return new Promise(resolve =>
-    setTimeout(() => {
-      resolve({ viewport })
-    }, 1000)
   )
 }
 

@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 
 const path = require('path')
-module.exports = {
+const nextConfig = {
   async headers() {
     return [
       {
@@ -37,3 +37,8 @@ module.exports = {
     }
   }
 }
+
+const withBundleAnalyzer = require('@next/bundle-analyzer')()
+
+module.exports =
+  process.env.ANALYZE === 'true' ? withBundleAnalyzer(nextConfig) : nextConfig
