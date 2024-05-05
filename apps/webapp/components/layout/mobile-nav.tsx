@@ -24,19 +24,18 @@ export function MobileNav() {
         onClick={toggleOpen}
         strokeColor="white"
         animation={menu4}
-        wrapperStyle={{marginRight: '-10px'}}
+        wrapperStyle={{ marginRight: '-10px' }}
         size={56}
       />
-      {/*  <AnimatePresence> */}
-      {open ? (
-        // <Transition duration={0.2}>
-        // </Transition>
-        <div className="mobile-nav">
-          <NavLinks mobile />
-        </div>
-      ) : null}
-
-      {/* </AnimatePresence> */}
+      <AnimatePresence>
+        {open ? (
+          <Transition duration={0.3}>
+            <div className="mobile-nav">
+              <NavLinks mobile />
+            </div>
+          </Transition>
+        ) : null}
+      </AnimatePresence>
     </div>
   )
 }
