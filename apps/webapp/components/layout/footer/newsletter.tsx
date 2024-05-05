@@ -136,7 +136,7 @@ export default function Newsletter() {
           </Button>
         </form>
       </div>
-      <div className="flex h-[230px] w-full flex-col flex-wrap items-center justify-evenly rounded-b-3xl bg-primary px-4 py-6 md:flex-row md:justify-between md:px-10 lg:px-24">
+      <div className="flex h-[230px] w-full flex-col flex-wrap items-center justify-evenly rounded-b-3xl bg-primary px-10 md:flex-row md:justify-between">
         <Link href="/" className="flex">
           <IconBitlauncher className="w-40 h-8 md:h-11 md:w-56" />
         </Link>
