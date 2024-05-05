@@ -29,9 +29,6 @@ function useSessionFn() {
   const [showSessionDialog, toggleShowSessionDialog] = useToggle(false)
   const [session, setSession] =
     useLocalStorage<Tables<'session'>>('bitcash-session')
-
-  console.log('🍓 isMobile', isMobile)
-
   const loginSR = useAsync(() => genLoginSigningRequest(newSessionId))
   const loginUri = loginSR?.value?.encode()
 

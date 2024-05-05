@@ -18,7 +18,7 @@ export async function getSesssion(formData: FormData) {
     const { data, error } = await supabase
       .from('session')
       .select('*')
-      .eq('id', session_id)
+      .eq('id', String(session_id).trim())
       .order('created_at', { ascending: false })
       .limit(1)
       .single()
