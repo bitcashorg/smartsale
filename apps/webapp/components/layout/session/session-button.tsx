@@ -2,28 +2,27 @@
 
 import { Button } from '@/components/ui/button'
 import { useSession } from '@/hooks/use-session'
-import { ConnectButton } from '@rainbow-me/rainbowkit'
-import { useAccount } from 'wagmi'
+import { User } from 'lucide-react'
+import { cn } from '@/lib/utils'
 
 export function SessionButton() {
   const { session, loginOrConnect } = useSession()
-  const account = useAccount()
 
   return (
-    <div>
-      {account?.address ? (
-        <ConnectButton showBalance={false} chainStatus="none" />
+    <Button
+      variant="secondary"
+      radius="full"
+      className={cn('md:px-3 lg:px-10')}
+      onClick={loginOrConnect}
+      suppressHydrationWarning={true}
+    >
+      {!session?.account ? (
+        'Login'
       ) : (
-        <Button
-          variant="secondary"
-          radius="full"
-          className="md:px-3 lg:px-10"
-          onClick={loginOrConnect}
-          suppressHydrationWarning={true}
-        >
-          {!session ? 'Login' : 'Connect'}
-        </Button>
+        <>
+          <User /> &nbsp; {session?.account}
+        </>
       )}
-    </div>
+    </Button>
   )
 }
