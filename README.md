@@ -39,17 +39,12 @@ SmartSale is committed to compliance and security, rigorously adhering to emergi
 ### Backend & APIs
 
 - **Supabase**
-
   - Manages authentication and real-time data interactions.
   - **Advanced Search**: Supports complex queries necessary for managing auction data.
-
-- **Vercel AI SDK**
-  - Integrates seamlessly to enhance serverless functions with AI capabilities, useful for analytical processing in auctions.
 
 ### Frontend & Design
 
 - **Next.js 14**
-
   - Utilizes efficient routing mechanisms and server-side data fetching to provide a smooth user experience.
   - [Learn more about Next.js](https://nextjs.org/docs/routing/introduction)
 
@@ -66,7 +61,6 @@ SmartSale is committed to compliance and security, rigorously adhering to emergi
 ### DevOps and Tools
 
 - **Turbo Monorepo**
-
   - Enhances codebase management with efficient build processes and dependency caching.
   - [Learn more about Turbo Monorepo](https://turborepo.org/)
 
@@ -77,7 +71,6 @@ SmartSale is committed to compliance and security, rigorously adhering to emergi
 ### Animation
 
 - **Framer Motion for React**
-
   - Provides dynamic visual feedback through animations, enhancing user interface interactions.
   - [Learn more about Framer Motion](https://www.framer.com/motion/)
 
