@@ -3,10 +3,10 @@ import * as React from 'react'
 import { IconBitlauncher, IconDiscord } from '../ui/icons'
 import { Button, buttonVariants } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
-import { Suspense } from 'react'
 import { NavLinks } from './nav-links'
-import { SessionButton } from './session/session-button'
-import { MobileNav } from './mobile-nav'
+
+import dynamic from 'next/dynamic'
+import { Suspense } from 'react'
 
 export function Header() {
   return (
@@ -25,20 +25,33 @@ export function Header() {
         <div className="items-center hidden md:flex md:gap-3 lg:gap-5">
           <DiscordButton />
           <Suspense fallback={<Button>Login</Button>}>
-            <SessionButton />
+            <DynamicSessionButton />
           </Suspense>
         </div>
 
         {/* mobile navbar icon */}
         <div className="flex md:hidden">
-          <Suspense fallback={<div />}>
-            <MobileNav />
-          </Suspense>
+          <DynamicMobileNav />
         </div>
       </div>
     </div>
   )
 }
+
+const DynamicMobileNav = dynamic(
+  () => import('./mobile-nav').then(c => c.MobileNav),
+  {
+    ssr: false
+  }
+)
+
+const DynamicSessionButton = dynamic(
+  () => import('./session/session-button').then(c => c.SessionButton),
+  {
+    loading: () => <Button>Login</Button>,
+    ssr: false
+  }
+)
 
 function DiscordButton() {
   return (
