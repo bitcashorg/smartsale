@@ -10,10 +10,9 @@ import {
 } from '@rainbow-me/rainbowkit'
 import {
   metaMaskWallet,
-  coinbaseWallet,
   trustWallet,
   walletConnectWallet
-} from '@rainbow-me/rainbowkit/wallets';
+} from '@rainbow-me/rainbowkit/wallets'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { ThemeProvider as NextThemesProvider } from 'next-themes'
 import { ThemeProviderProps } from 'next-themes/dist/types'
@@ -32,8 +31,8 @@ export const wagmiConfig = getDefaultConfig({
   projectId: '25a868c834c1003aa0f0b69aba0ae056',
   wallets: [
     {
-      groupName: "Popular",
-      wallets: [ metaMaskWallet, coinbaseWallet, trustWallet, walletConnectWallet ]
+      groupName: 'Popular',
+      wallets: [metaMaskWallet, trustWallet, walletConnectWallet]
     }
   ],
   // @ts-ignore
