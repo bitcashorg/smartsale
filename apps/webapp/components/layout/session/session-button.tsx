@@ -19,6 +19,7 @@ export function SessionButton() {
           radius="full"
           className="md:px-3 lg:px-10"
           onClick={loginOrConnect}
+          suppressHydrationWarning={true}
         >
           {!session ? 'Login' : 'Connect'}
         </Button>
