@@ -5,11 +5,12 @@ import { handleAxiosError } from '@/lib/utils'
 import axios from 'axios'
 import { Resend } from 'resend'
 import { z } from 'zod'
-import { createSupabaseServerClient } from './services/supabase'
+import { createSupabaseServerClient } from './lib/supabase'
 import { preSaleInsertSchema } from '@repo/supabase'
 
 // get session object by id
 export async function getSesssion(formData: FormData) {
+  console.log('💥 actions: getSession')
   try {
     const { session_id } = fromEntries(formData)
     console.log(`😊 getting session object for ${session_id}`)
@@ -17,12 +18,12 @@ export async function getSesssion(formData: FormData) {
     const { data, error } = await supabase
       .from('session')
       .select('*')
-      .eq('id', session_id)
+      .eq('id', String(session_id).trim())
       .order('created_at', { ascending: false })
       .limit(1)
       .single()
 
-    if (error) console.log('😎😎😎', error)
+    if (error) console.log('🤌🏻🤌🏻🤌🏻', error)
     if (!data) return null
     return data
   } catch (error) {
