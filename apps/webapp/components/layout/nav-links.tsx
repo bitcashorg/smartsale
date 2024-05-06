@@ -1,11 +1,11 @@
 'use client'
 
-import Link from 'next/link'
 import { useSession } from '@/hooks/use-session'
 import { useConnectModal } from '@rainbow-me/rainbowkit'
-import { useAccount } from 'wagmi'
-import { formatAddress } from 'smartsale-lib'
+import Link from 'next/link'
 import { useRouter } from 'next/navigation'
+import { formatAddress } from 'smartsale-lib'
+import { useAccount } from 'wagmi'
 
 export function NavLinks({ mobile = false }: { mobile?: boolean }) {
   const { loginRedirect, session } = useSession()
@@ -26,17 +26,15 @@ export function NavLinks({ mobile = false }: { mobile?: boolean }) {
     {
       id: 'connect',
       href: null,
-      text: session
-        ? address
-          ? formatAddress(address)
-          : ' Connect your EVM Wallet'
-        : 'Login to Connect your EVM Wallet',
+      text: address
+        ? formatAddress(address)
+        : ' Connect your EVM Wallet',
       mobile: true,
       action: () =>
         session?.account
           ? openConnectModal && openConnectModal()
-          : loginRedirect(),
-      disabled: false
+          : null,
+      disabled: !session?.account,
     },
     {
       id: 'about',
@@ -66,9 +64,9 @@ export function NavLinks({ mobile = false }: { mobile?: boolean }) {
     //   id: 'wallet',
     //   href: '/wallet',
     //   text: 'Wallet',
-    //   mobile: false,
+    //   mobile: true,
     //   action: null,
-    //   disabled: false
+    //   disabled: !appConfig.features.enableWalletAccess
     // }
     // { href: '/terms', text: 'Privacy', mobile: false, action: null }
   ] as const

@@ -23,13 +23,24 @@ export function SessionButton() {
   }
 
   const redirectToWallet = () => {
-    if (appConfig.features.enableWalletRedirect) {
+    if (appConfig.features.enableWalletAccess) {
       return router.push('/wallet')
     }
   }
 
   return (
-    <div className="flex items-center gap-6">
+    <div className="flex items-center gap-4">
+      {isSession && (
+        <Button
+          variant="ghost"
+          radius="full"
+          className={cn('m-0 md:px-3 lg:px-6')}
+          onClick={openConnectModal ? openConnectModal : redirectToWallet}
+          suppressHydrationWarning={true}
+        >
+          <Wallet /><span className={cn(!openConnectModal && 'hidden')}>&nbsp;</span> {openConnectModal && 'Connect'}
+        </Button>
+      )}
       <Button
         variant="secondary"
         radius="full"
@@ -45,17 +56,6 @@ export function SessionButton() {
           </>
         )}
       </Button>
-      {isSession && (
-        <Button
-          variant="ghost"
-          radius="full"
-          className={cn('m-0 md:px-3 lg:px-6')}
-          onClick={openConnectModal ? openConnectModal : redirectToWallet}
-          suppressHydrationWarning={true}
-        >
-          <Wallet /> &nbsp; {openConnectModal && 'Connect'}
-        </Button>
-      )}
     </div>
   )
 }
