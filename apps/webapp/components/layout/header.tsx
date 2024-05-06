@@ -1,12 +1,10 @@
+import { Button } from '@/components/ui/button'
 import Link from 'next/link'
-import * as React from 'react'
-import { IconBitlauncher, IconDiscord } from '../ui/icons'
-import { Button, buttonVariants } from '@/components/ui/button'
-import { cn } from '@/lib/utils'
 import { Suspense } from 'react'
+import { IconBitlauncher } from '../ui/icons'
+import { MobileNav } from './mobile-nav'
 import { NavLinks } from './nav-links'
 import { SessionButton } from './session/session-button'
-import { MobileNav } from './mobile-nav'
 
 export function Header() {
   return (
@@ -23,7 +21,6 @@ export function Header() {
 
         {/* Desktop action buttons */}
         <div className="items-center hidden md:flex md:gap-3 lg:gap-5">
-          <DiscordButton />
           <Suspense fallback={<Button>Login</Button>}>
             <SessionButton />
           </Suspense>
@@ -40,22 +37,4 @@ export function Header() {
   )
 }
 
-function DiscordButton() {
-  return (
-    <Link
-      href="https://discord.gg/KuR48XUxnG"
-      target="_blank"
-      rel="noopener noreferrer"
-      className={cn(
-        buttonVariants({
-          variant: 'outline',
-          radius: 'full'
-        }),
-        'border-transparent md:border-accent-secondary md:px-3 lg:px-10'
-      )}
-    >
-      <IconDiscord className={'block size-7 fill-accent-secondary md:hidden'} />
-      <span className="hidden md:block">Discord</span>
-    </Link>
-  )
-}
+
