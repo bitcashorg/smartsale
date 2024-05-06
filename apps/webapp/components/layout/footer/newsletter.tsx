@@ -143,7 +143,7 @@ export default function Newsletter() {
         <div className="hidden md:block">
           <DiscordButton />
         </div>
-        <div className="w-full flex items-center justify-between">
+        <div className="w-full md:w-auto flex items-center justify-between">
           <div className="block md:hidden">
             <DiscordButton />
           </div>
