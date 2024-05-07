@@ -1,6 +1,7 @@
 'use client'
 
 import { useSession } from '@/hooks/use-session'
+import { appConfig } from '@/lib/config'
 import { useConnectModal } from '@rainbow-me/rainbowkit'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
@@ -59,20 +60,24 @@ export function NavLinks({ mobile = false }: { mobile?: boolean }) {
       mobile: false,
       action: null,
       disabled: false
+    },
+    {
+      id: 'wallet',
+      href: '/wallet',
+      text: 'Wallet',
+      mobile: true,
+      action: null,
+      disabled: !appConfig.features.enableWalletAccess
     }
-    // {
-    //   id: 'wallet',
-    //   href: '/wallet',
-    //   text: 'Wallet',
-    //   mobile: true,
-    //   action: null,
-    //   disabled: !appConfig.features.enableWalletAccess
-    // }
     // { href: '/terms', text: 'Privacy', mobile: false, action: null }
   ] as const
 
   return links.map(link => {
-    if (link.mobile && !mobile) return null
+    if (
+      (link.mobile && !mobile) ||
+      (!session?.account && link.id === 'connect') ||
+      (link.id === 'wallet' && link.disabled)
+    ) return null
 
     return (
       <Link
