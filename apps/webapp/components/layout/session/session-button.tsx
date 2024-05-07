@@ -14,8 +14,8 @@ export function SessionButton() {
   const isSession = session?.account
 
   const loginUser = () => isMobile
-    ? loginRedirect
-    : toggleShowSessionDialog
+    ? loginRedirect()
+    : toggleShowSessionDialog()
 
   // TODO: Implement logout
   const logoutUser = () => {
@@ -34,7 +34,7 @@ export function SessionButton() {
         <Button
           variant="ghost"
           radius="full"
-          className={cn('m-0 md:px-3 lg:px-6')}
+          className={cn('m-0 md:px-3 lg:px-8', !openConnectModal && 'lg:px-2')}
           onClick={openConnectModal ? openConnectModal : redirectToWallet}
           suppressHydrationWarning={true}
         >
@@ -44,7 +44,7 @@ export function SessionButton() {
       <Button
         variant="secondary"
         radius="full"
-        className={cn('md:px-3 lg:px-6')}
+        className={cn('md:px-3 lg:px-8 min-w-[170px]')}
         onClick={!isSession ? loginUser : logoutUser}
         suppressHydrationWarning={true}
       >
