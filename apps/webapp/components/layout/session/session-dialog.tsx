@@ -15,6 +15,7 @@ export function SessionDialog({
 
   return (
     <Dialog open={showSessionDialog} onOpenChange={toggleShowSessionDialog}>
+      {/* @ts-ignore */}
       <DialogContent className="box-content w-full sm:max-w-[430px]">
         {isLogin ? (
           <SessionDialogContent updateDialogContent={setDialogContent} />

@@ -1,16 +1,15 @@
 'use client'
 
+import { getSesssion } from '@/actions'
 import { genLoginSigningRequest } from '@/lib/eos'
-import { createContextHook } from '@blockmatic/hooks-utils'
-import { useEffect, useState } from 'react'
-import { useAsync, useLocalStorage, useToggle } from 'react-use'
-import React, { ReactNode } from 'react'
 import { useSupabaseClient } from '@/lib/supabase'
+import { createContextHook } from '@blockmatic/hooks-utils'
 import { useConnectModal } from '@rainbow-me/rainbowkit'
 import { Tables } from '@repo/supabase'
 import { usePathname, useRouter, useSearchParams } from 'next/navigation'
-import { getSesssion } from '@/actions'
+import React, { ReactNode, useEffect, useState } from 'react'
 import { isMobile } from 'react-device-detect'
+import { useAsync, useLocalStorage, useToggle } from 'react-use'
 
 // Exports
 export { SessionProvider, useSession }
