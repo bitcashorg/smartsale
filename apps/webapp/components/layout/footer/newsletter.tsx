@@ -1,8 +1,8 @@
 'use client'
 
 import { subscribeToNewsletter } from '@/actions'
-import { Button } from '@/components/ui/button'
-import { IconBitlauncher, IconDownRightArrow } from '@/components/ui/icons'
+import { Button, buttonVariants } from '@/components/ui/button'
+import { IconBitlauncher, IconDiscord, IconDownRightArrow } from '@/components/ui/icons'
 import { cn, motionProps } from '@/lib/utils'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { motion } from 'framer-motion'
@@ -140,14 +140,42 @@ export default function Newsletter() {
         <Link href="/" className="flex">
           <IconBitlauncher className="w-40 h-8 md:h-11 md:w-56" />
         </Link>
-        <Link
-          href="/terms"
-          className="underline-offset-2 focus-within:underline hover:underline"
-        >
-          Terms & Privacy Policy
-        </Link>
+        <div className="hidden md:block">
+          <DiscordButton />
+        </div>
+        <div className="w-full md:w-auto flex items-center justify-between">
+          <div className="block md:hidden">
+            <DiscordButton />
+          </div>
+          <Link
+            href="/terms"
+            className="underline-offset-2 focus-within:underline hover:underline"
+          >
+            Terms & Privacy Policy
+          </Link>
+        </div>
       </div>
     </section>
     // </div>
+  )
+}
+
+function DiscordButton() {
+  return (
+    <Link
+      href="https://discord.gg/KuR48XUxnG"
+      target="_blank"
+      rel="noopener noreferrer"
+      className={cn(
+        buttonVariants({
+          variant: 'outline',
+          radius: 'full'
+        }),
+        'border-transparent md:border-accent-secondary p-3.5 size-14 lg:size-14'
+      )}
+    >
+      <IconDiscord className={'block size-full fill-accent-secondary'} />
+      <span className="sr-only">Discord</span>
+    </Link>
   )
 }

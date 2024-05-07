@@ -63,7 +63,7 @@ interface RootLayoutProps {
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'Bitlaucher',
+    absolute: 'Bitlauncher',
     template: '%s | Bitlauncher'
   },
   description:
