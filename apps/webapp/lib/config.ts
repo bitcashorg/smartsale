@@ -10,5 +10,3 @@ export const appConfig = {
   },
   ...smartsaleEnv[env]
 } as const
-
-console.log('⚙️⚙️⚙️ appconfig ⚙️⚙️⚙️', appConfig)

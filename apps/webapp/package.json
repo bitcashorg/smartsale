@@ -6,6 +6,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "analyze": "ANALYZE=true bun run build",
     "lint:fix": "next lint --fix",
     "preview": "next build && next start",
     "type-check": "tsc --noEmit",
@@ -16,6 +17,7 @@
   "dependencies": {
     "@blockmatic/hooks-utils": "^3.0.0",
     "@hookform/resolvers": "^3.3.4",
+    "@next/bundle-analyzer": "^14.2.3",
     "@next/third-parties": "latest",
     "@radix-ui/react-dialog": "^1.0.5",
     "@radix-ui/react-dropdown-menu": "^2.0.6",
