@@ -4,13 +4,18 @@ import { Button } from '@/components/ui/button'
 import { useSession } from '@/hooks/use-session'
 import { appConfig } from '@/lib/config'
 import { cn } from '@/lib/utils'
+import { useAccountModal } from '@rainbow-me/rainbowkit'
 import { User, Wallet } from 'lucide-react'
 import { useRouter } from 'next/navigation'
 import { isMobile } from 'react-device-detect'
+import { formatAddress } from 'smartsale-lib'
+import { useAccount } from 'wagmi'
 
 export function SessionButton() {
   const { session, loginRedirect, toggleShowSessionDialog, openConnectModal } =
     useSession()
+  const { openAccountModal } = useAccountModal()
+  const account = useAccount()
   const router = useRouter()
   const isSession = session?.account
 
@@ -35,11 +40,11 @@ export function SessionButton() {
           variant="ghost"
           radius="full"
           className={cn('m-0 md:px-3 lg:px-2 lg:px-4')}
-          onClick={openConnectModal ? openConnectModal : redirectToWallet}
+          onClick={openConnectModal ? openConnectModal : openAccountModal}
           suppressHydrationWarning={true}
         >
           <Wallet />
-          &nbsp; Connect
+          &nbsp; {account?.address ? formatAddress(account.address) : 'Connect'}
         </Button>
       )}
       <Button
