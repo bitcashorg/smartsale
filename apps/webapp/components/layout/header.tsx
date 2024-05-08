@@ -8,6 +8,7 @@ import { NavLinks } from './nav-links'
 import dynamic from 'next/dynamic'
 import { Suspense } from 'react'
 import { SessionButtonLoader } from './session/session-button'
+import { MobileNavLoader } from './mobile-nav'
 
 export function Header() {
   return (
@@ -43,6 +44,7 @@ export function Header() {
 const DynamicMobileNav = dynamic(
   () => import('./mobile-nav').then(c => c.MobileNav),
   {
+    loading: MobileNavLoader,
     ssr: false
   }
 )
