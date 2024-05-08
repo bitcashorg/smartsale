@@ -26,8 +26,9 @@ function useSessionFn() {
   // this controls the session dialog with register and login qr codes
   // when login qr code is display a new esr is created and saved on db for later reference on callback call
   const [showSessionDialog, toggleShowSessionDialog] = useToggle(false)
-  const [session, setSession] =
-    useLocalStorage<Tables<'session'>>('bitcash-session')
+  const [session, setSession] = useLocalStorage<Tables<'session'> | null>(
+    'bitcash-session'
+  )
   const loginSR = useAsync(() => genLoginSigningRequest(newSessionId))
   const loginUri = loginSR?.value?.encode()
 
@@ -116,7 +117,7 @@ function useSessionFn() {
 
   const logout = () => {
     console.log('logout')
-    setSession(undefined)
+    setSession(null)
     router.refresh()
   }
 
