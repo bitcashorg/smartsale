@@ -7,6 +7,7 @@ import { NavLinks } from './nav-links'
 
 import dynamic from 'next/dynamic'
 import { Suspense } from 'react'
+import { SessionButtonLoader } from './session/session-button'
 
 export function Header() {
   return (
@@ -18,12 +19,12 @@ export function Header() {
           </Link>
         </div>
 
-        <div className="hidden ml-20 md:flex md:gap-3 md:pl-4 lg:gap-10 lg:pl-16">
+        <div className="hidden md:flex md:gap-3 md:pl-4 lg:ml-[-1px] lg:gap-10">
           <NavLinks />
         </div>
 
         {/* Desktop action buttons */}
-        <div className="items-center hidden md:flex md:gap-3 lg:gap-5">
+        <div className="hidden items-center md:flex md:min-w-[250px] md:gap-3 lg:gap-5">
           {/* <DiscordButton /> */}
           <Suspense fallback={<Button>Login</Button>}>
             <DynamicSessionButton />
@@ -49,7 +50,7 @@ const DynamicMobileNav = dynamic(
 const DynamicSessionButton = dynamic(
   () => import('./session/session-button').then(c => c.SessionButton),
   {
-    loading: () => <Button>Login</Button>,
+    loading: SessionButtonLoader,
     ssr: false
   }
 )

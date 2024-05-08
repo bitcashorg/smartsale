@@ -34,13 +34,12 @@ export function SessionButton() {
         <Button
           variant="ghost"
           radius="full"
-          className={cn('m-0 md:px-3 lg:px-4', !openConnectModal && 'lg:px-2')}
+          className={cn('m-0 md:px-3 lg:px-2 lg:px-4')}
           onClick={openConnectModal ? openConnectModal : redirectToWallet}
           suppressHydrationWarning={true}
         >
           <Wallet />
-          <span className={cn(!openConnectModal && 'hidden')}>&nbsp;</span>{' '}
-          {openConnectModal && 'Connect'}
+          &nbsp; Connect
         </Button>
       )}
       <Button
@@ -57,6 +56,31 @@ export function SessionButton() {
             <User /> &nbsp; {session?.account}
           </>
         )}
+      </Button>
+    </div>
+  )
+}
+
+export const SessionButtonLoader = () => {
+  return (
+    <div className="flex items-center gap-4">
+      <Button
+        variant="ghost"
+        radius="full"
+        className={cn('m-0 md:px-3 lg:px-2 lg:px-4')}
+        suppressHydrationWarning={true}
+      >
+        <Wallet />
+        &nbsp; Connect
+      </Button>
+
+      <Button
+        variant="secondary"
+        radius="full"
+        className={cn('min-w-[170px] md:px-3 lg:px-4')}
+        suppressHydrationWarning={true}
+      >
+        Login
       </Button>
     </div>
   )
