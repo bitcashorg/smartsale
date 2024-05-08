@@ -23,7 +23,7 @@ export function NavLinks({ mobile = false }: { mobile?: boolean }) {
       text: bitcashAccount ? bitcashAccount : 'Login with Bitcash',
       mobile: true,
       action: bitcashAccount ? null : loginRedirect,
-      disabled: Boolean(session)
+      disabled: false
     },
     {
       id: 'connect',
