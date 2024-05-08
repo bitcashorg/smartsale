@@ -14,14 +14,15 @@ export function NavLinks({ mobile = false }: { mobile?: boolean }) {
   const { openAccountModal } = useAccountModal()
   const { address } = useAccount()
   const router = useRouter()
+  const bitcashAccount = session?.account
 
   const links = [
     {
       id: 'login',
       href: null,
-      text: session?.account ? session.account : 'Login with Bitcash',
+      text: bitcashAccount ? bitcashAccount : 'Login with Bitcash',
       mobile: true,
-      action: session?.account ? null : loginRedirect,
+      action: bitcashAccount ? null : loginRedirect,
       disabled: Boolean(session)
     },
     {
@@ -30,10 +31,10 @@ export function NavLinks({ mobile = false }: { mobile?: boolean }) {
       text: address ? formatAddress(address) : ' Connect your EVM Wallet',
       mobile: true,
       action: () =>
-        session?.account
+        bitcashAccount
           ? openConnectModal && openConnectModal()
           : openAccountModal && openAccountModal(),
-      disabled: !session?.account
+      disabled: !bitcashAccount
     },
     {
       id: 'wallet',
@@ -73,17 +74,12 @@ export function NavLinks({ mobile = false }: { mobile?: boolean }) {
       action: logout,
       text: 'Sign out',
       mobile: true,
-      disabled: !session
+      disabled: !bitcashAccount
     }
   ] as const
 
   return links.map(link => {
-    if (
-      (link.mobile && !mobile) ||
-      (!session?.account && link.id === 'connect') ||
-      (link.id === 'wallet' && link.disabled)
-    )
-      return null
+    if ((link.mobile && !mobile) || link.disabled) return null
 
     return (
       <Link
