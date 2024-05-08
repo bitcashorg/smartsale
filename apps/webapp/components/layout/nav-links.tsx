@@ -2,16 +2,16 @@
 
 import { useSession } from '@/hooks/use-session'
 import { appConfig } from '@/lib/config'
-import { useConnectModal } from '@rainbow-me/rainbowkit'
+import { useAccountModal, useConnectModal } from '@rainbow-me/rainbowkit'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { formatAddress } from 'smartsale-lib'
 import { useAccount } from 'wagmi'
 
 export function NavLinks({ mobile = false }: { mobile?: boolean }) {
-  const { loginRedirect, session } = useSession()
+  const { loginRedirect, session, logout } = useSession()
   const { openConnectModal } = useConnectModal()
-  // console.log('🎬', openConnectModal)
+  const { openAccountModal } = useAccountModal()
   const { address } = useAccount()
   const router = useRouter()
 
@@ -27,15 +27,21 @@ export function NavLinks({ mobile = false }: { mobile?: boolean }) {
     {
       id: 'connect',
       href: null,
-      text: address
-        ? formatAddress(address)
-        : ' Connect your EVM Wallet',
+      text: address ? formatAddress(address) : ' Connect your EVM Wallet',
       mobile: true,
       action: () =>
         session?.account
           ? openConnectModal && openConnectModal()
-          : null,
-      disabled: !session?.account,
+          : openAccountModal && openAccountModal(),
+      disabled: !session?.account
+    },
+    {
+      id: 'wallet',
+      href: '/wallet',
+      text: 'Wallet',
+      mobile: true,
+      action: null,
+      disabled: !appConfig.features.enableWalletAccess
     },
     {
       id: 'about',
@@ -62,14 +68,13 @@ export function NavLinks({ mobile = false }: { mobile?: boolean }) {
       disabled: false
     },
     {
-      id: 'wallet',
-      href: '/wallet',
-      text: 'Wallet',
+      id: 'logout',
+      href: null,
+      action: logout,
+      text: 'Sign out',
       mobile: true,
-      action: null,
-      disabled: !appConfig.features.enableWalletAccess
+      disabled: !session
     }
-    // { href: '/terms', text: 'Privacy', mobile: false, action: null }
   ] as const
 
   return links.map(link => {
@@ -77,7 +82,8 @@ export function NavLinks({ mobile = false }: { mobile?: boolean }) {
       (link.mobile && !mobile) ||
       (!session?.account && link.id === 'connect') ||
       (link.id === 'wallet' && link.disabled)
-    ) return null
+    )
+      return null
 
     return (
       <Link

@@ -39,3 +39,14 @@ export function MobileNav() {
     </div>
   )
 }
+
+export function MobileNavLoader() {
+  return (
+    <UseAnimations
+      strokeColor="white"
+      animation={menu4}
+      wrapperStyle={{ marginRight: '-10px' }}
+      size={56}
+    />
+  )
+}
