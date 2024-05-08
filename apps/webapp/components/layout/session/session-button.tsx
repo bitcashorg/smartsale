@@ -10,32 +10,32 @@ import { useRouter } from 'next/navigation'
 import { isMobile } from 'react-device-detect'
 import { formatAddress } from 'smartsale-lib'
 import { useAccount } from 'wagmi'
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger
+} from '@/components/ui/popover'
+// import Link from 'next/link'
 
 export function SessionButton() {
-  const { session, loginRedirect, toggleShowSessionDialog, openConnectModal } =
-    useSession()
+  const {
+    session,
+    loginRedirect,
+    toggleShowSessionDialog,
+    openConnectModal,
+    logout
+  } = useSession()
   const { openAccountModal } = useAccountModal()
   const account = useAccount()
   const router = useRouter()
-  const isSession = session?.account
+  const hasSession = session?.account
 
   const loginUser = () =>
     isMobile ? loginRedirect() : toggleShowSessionDialog()
 
-  // TODO: Implement logout
-  const logoutUser = () => {
-    return null
-  }
-
-  const redirectToWallet = () => {
-    if (appConfig.features.enableWalletAccess) {
-      return router.push('/wallet')
-    }
-  }
-
   return (
-    <div className="flex items-center gap-4">
-      {isSession && (
+    <div className="flex justify-end gap-4">
+      {hasSession && (
         <Button
           variant="ghost"
           radius="full"
@@ -47,38 +47,50 @@ export function SessionButton() {
           &nbsp; {account?.address ? formatAddress(account.address) : 'Connect'}
         </Button>
       )}
-      <Button
-        variant="secondary"
-        radius="full"
-        className={cn('min-w-[170px] md:px-3 lg:px-4')}
-        onClick={!isSession ? loginUser : logoutUser}
-        suppressHydrationWarning={true}
-      >
-        {!isSession ? (
-          'Login'
-        ) : (
-          <>
-            <User /> &nbsp; {session?.account}
-          </>
-        )}
-      </Button>
+
+      {!hasSession ? (
+        <Button
+          variant="secondary"
+          radius="full"
+          className={cn('flex min-w-[170px] self-end md:px-3 lg:px-4')}
+          onClick={loginUser}
+          suppressHydrationWarning={true}
+        >
+          Login
+        </Button>
+      ) : (
+        <Popover>
+          <PopoverTrigger asChild>
+            <Button
+              variant="secondary"
+              radius="full"
+              className={cn('min-w-[170px] md:px-3 lg:px-4')}
+            >
+              <User /> &nbsp; {session?.account}
+            </Button>
+          </PopoverTrigger>
+          <PopoverContent
+            align="end"
+            className="w-44 border-[#845BBF] bg-background text-center"
+          >
+            <ul className="flex flex-col gap-5 py-2">
+              {/* <li>
+                <Link href={`/wallet`}>Wallet</Link>
+              </li> */}
+              <li onClick={logout} className="cursor-pointer">
+                Sign Out
+              </li>
+            </ul>
+          </PopoverContent>
+        </Popover>
+      )}
     </div>
   )
 }
 
 export const SessionButtonLoader = () => {
   return (
-    <div className="flex items-center gap-4">
-      <Button
-        variant="ghost"
-        radius="full"
-        className={cn('m-0 md:px-3 lg:px-2 lg:px-4')}
-        suppressHydrationWarning={true}
-      >
-        <Wallet />
-        &nbsp; Connect
-      </Button>
-
+    <div className="flex justify-end gap-4">
       <Button
         variant="secondary"
         radius="full"

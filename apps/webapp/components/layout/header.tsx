@@ -24,7 +24,7 @@ export function Header() {
         </div>
 
         {/* Desktop action buttons */}
-        <div className="hidden items-center md:flex md:min-w-[300px] md:gap-3 lg:gap-5">
+        <div className="hidden items-center justify-end md:flex md:min-w-[300px] md:gap-3 lg:gap-5">
           {/* <DiscordButton /> */}
           <Suspense fallback={<Button>Login</Button>}>
             <DynamicSessionButton />

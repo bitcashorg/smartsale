@@ -4,7 +4,7 @@ import { getSesssion } from '@/actions'
 import { genLoginSigningRequest } from '@/lib/eos'
 import { useSupabaseClient } from '@/lib/supabase'
 import { createContextHook } from '@blockmatic/hooks-utils'
-import { useAccountModal, useConnectModal } from '@rainbow-me/rainbowkit'
+import { useConnectModal } from '@rainbow-me/rainbowkit'
 import { Tables } from '@repo/supabase'
 import { usePathname, useRouter, useSearchParams } from 'next/navigation'
 import React, { ReactNode, useEffect, useState } from 'react'
@@ -23,7 +23,6 @@ function useSessionFn() {
   const pathname = usePathname()
   const router = useRouter()
   const { openConnectModal } = useConnectModal()
-  const { openAccountModal } = useAccountModal()
   // this controls the session dialog with register and login qr codes
   // when login qr code is display a new esr is created and saved on db for later reference on callback call
   const [showSessionDialog, toggleShowSessionDialog] = useToggle(false)
@@ -115,11 +114,18 @@ function useSessionFn() {
         : toggleShowSessionDialog(true)
   }
 
+  const logout = () => {
+    console.log('logout')
+    setSession(undefined)
+    router.refresh()
+  }
+
   return {
     newSessionId,
     session,
     loginUri,
     showSessionDialog,
+    logout,
     loginRedirect,
     openConnectModal,
     loginOrConnect,
