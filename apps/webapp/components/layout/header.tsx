@@ -13,7 +13,7 @@ export function Header() {
   return (
     <div className="sticky top-0 z-50 flex h-16 bg-background">
       <div className="container flex flex-row items-center justify-between px-4 bg-background">
-        <div className="flex items-center h-full">
+        <div className="flex h-full items-center md:min-w-[300px]">
           <Link shallow href="/">
             <IconBitlauncher />
           </Link>
@@ -24,7 +24,7 @@ export function Header() {
         </div>
 
         {/* Desktop action buttons */}
-        <div className="hidden items-center md:flex md:min-w-[250px] md:gap-3 lg:gap-5">
+        <div className="hidden items-center md:flex md:min-w-[300px] md:gap-3 lg:gap-5">
           {/* <DiscordButton /> */}
           <Suspense fallback={<Button>Login</Button>}>
             <DynamicSessionButton />
