@@ -9,7 +9,7 @@ import { useSetState } from 'react-use'
 import { RealtimeChannel } from '@supabase/supabase-js'
 import { SigningRequest } from 'eosio-signing-request'
 import { useSearchParams } from 'next/navigation'
-import { useGlobalStore } from './use-global-store'
+import { isMobile } from 'react-device-detect'
 
 export const [useSigningRequest, UseSigningRequestProvider] = createContextHook(
   useSigningRequestFn,
@@ -20,7 +20,6 @@ function useSigningRequestFn() {
   const supabase = useSupabaseClient()
   const { session } = useSession()
   const searchParams = useSearchParams()
-  const { viewport } = useGlobalStore()
   const [state, setState] = useSetState<SignatureRequestState>(defaultState)
 
   const { mutate: requestSignature, ...props } = useMutation({
@@ -29,7 +28,7 @@ function useSigningRequestFn() {
       if (!session?.account) throw new Error('bitcash account not found')
 
       // redirect with esr and callback on mobile if not within bitcash explorer
-      if (viewport === 'mobile' && !searchParams.has('bitcash_explorer')) {
+      if (isMobile && !searchParams.has('bitcash_explorer')) {
         const params = new URLSearchParams()
         params.append('esr_code', esr.encode())
         params.append('callback', encodeURIComponent(window.location.href))

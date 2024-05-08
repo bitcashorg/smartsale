@@ -2,6 +2,7 @@ import { TestnetMBOTSPL, TokenContractData } from 'smartsale-contracts'
 
 // https://bitcash.to/{hash}
 // ? Micro interaction: share (short) link
+import { StaticImageData } from 'next/image'
 
 export const projects: Project[] = [
   {
@@ -13,11 +14,9 @@ export const projects: Project[] = [
     maxAllocation: '$1,500',
     heroImage: '/images/projects/bitcash-cover.png',
     thumbnailImage: '/images/projects/bitcash.png',
-    thumbnailImageBlurDataURL: '', // replace by getter fucntion
-    heroImageBlurDataURL: '', // replace by getter fucntion
     badgeText: 'PRE-SALE ACTIVE',
     linkPath: '/bitcash-bitlauncher',
-    // TODO: token name in progress... MBOTS is placeholder, the token for Masterbots
+    // TODO: token name in progress. MBOTS is placeholder, the token for Masterbots
     token: TestnetMBOTSPL,
     auctionId: 9,
     presaleOpen: true,
@@ -141,8 +140,6 @@ export const projects: Project[] = [
     maxAllocation: '$10,000',
     heroImage: '/images/projects/masterbots.png',
     thumbnailImage: '/images/projects/masterbots.png',
-    thumbnailImageBlurDataURL: '', // replace by getter fucntion
-    heroImageBlurDataURL: '', // replace by getter fucntion
     badgeText: 'COMING SOON',
     linkPath: '#',
     auctionId: 9,
@@ -187,8 +184,6 @@ export const projects: Project[] = [
     maxAllocation: '$10,000',
     heroImage: '/images/projects/wizartworld.png',
     thumbnailImage: '/images/projects/wizartworld.png',
-    thumbnailImageBlurDataURL: '', // replace by getter fucntion
-    heroImageBlurDataURL: '', // replace by getter fucntion
     badgeText: 'FUTURE',
     linkPath: '#',
     token: TestnetMBOTSPL,
@@ -233,9 +228,7 @@ export interface Project {
   fundraiseGoal: string
   maxAllocation: string
   heroImage: string
-  heroImageBlurDataURL: string
   thumbnailImage: string
-  thumbnailImageBlurDataURL: string
   badgeText: string
   linkPath: string
   twitterUsername: string
@@ -265,21 +258,5 @@ export type ProjectWithAuction = Required<
 export async function getProjectBySlug(slug: string) {
   const project = projects.find(p => p.slug == slug)
   if (!project) return null
-  return replaceBlurDataURL(project)
-}
-
-export async function getProjects() {
-  return Promise.all(projects.map(async p => await replaceBlurDataURL(p)))
-}
-
-async function replaceBlurDataURL(project: Project): Promise<Project> {
-  // console.log({
-  //   heroImageBlurDataURL: await create L(project.heroImage),
-  //   thumbnailImageBlurDataURL: await createBlurDataURL(project.thumbnailImage)
-  // })
-  return {
-    ...project
-    // heroImageBlurDataURL: await createBlurDataURL(project.heroImage),
-    // thumbnailImageBlurDataURL: await createBlurDataURL(project.thumbnailImage)
-  }
+  return project
 }
