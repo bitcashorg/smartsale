@@ -11,14 +11,15 @@ import { Suspense } from 'react'
 export function Header() {
   return (
     <div className="sticky top-0 z-50 flex h-16 bg-background">
-      <div className="container flex items-center justify-between px-4 bg-background">
-        <div className="flex items-center h-full grow">
+      <div className="container flex flex-row items-center justify-between px-4 bg-background">
+        <div className="flex items-center h-full">
           <Link shallow href="/">
             <IconBitlauncher />
           </Link>
-          <div className="justify-center hidden grow md:flex md:gap-3 md:pl-4 lg:gap-10 lg:pl-16">
-            <NavLinks />
-          </div>
+        </div>
+
+        <div className="hidden ml-20 md:flex md:gap-3 md:pl-4 lg:gap-10 lg:pl-16">
+          <NavLinks />
         </div>
 
         {/* Desktop action buttons */}
