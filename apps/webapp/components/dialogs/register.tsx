@@ -60,7 +60,7 @@ export function RegisterDialogContent({
           viewBox={`0 0 256 256`}
         />
         {/* <Image
-          src="/images/qr-bitcash-reg-bitlauncher.png"
+          src="/images/qr-bitcash-reg-bitlauncher.webp"
           width={256}
           height={256}
           className="size-full"
