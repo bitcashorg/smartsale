@@ -14,8 +14,7 @@ export function AuctionCard(project: Project) {
     maxAllocation,
     thumbnailImage,
     badgeText,
-    linkPath,
-    blurDataURL
+    linkPath
   } = project
 
   const isFutureOrComingAuction = badgeText.match(/(FUTURE|COMING SOON)/)
@@ -34,11 +33,10 @@ export function AuctionCard(project: Project) {
           height={432}
           width={432}
           placeholder="blur"
-          loading="lazy"
           className="h-[216px] w-full rounded-t-xl object-cover group-hover:shadow-xl"
           alt={title}
           priority
-          blurDataURL={blurDataURL}
+          loading="lazy"
         />
         <Suspense fallback={<figcaption>{badgeText}</figcaption>}>
           <MotionFigcaption label={badgeText} />
