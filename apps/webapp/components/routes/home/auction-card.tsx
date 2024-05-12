@@ -39,6 +39,7 @@ export function AuctionCard(project: Project) {
           alt={title}
           priority
           blurDataURL={blurDataURL}
+          sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px"
         />
         <Suspense fallback={<figcaption>{badgeText}</figcaption>}>
           <MotionFigcaption label={badgeText} />
