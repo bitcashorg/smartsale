@@ -14,6 +14,8 @@ export const projects: Project[] = [
     maxAllocation: '$1,500',
     heroImage: '/images/projects/bitcash-cover.webp',
     thumbnailImage: '/images/projects/bitcash.webp',
+    blurDataURL:
+      'data:image/webp;base64,UklGRgQBAABXRUJQVlA4IPgAAABwBACdASoUABAAPmk0mk0KhgAKAaAATplA8Ds0QkRSMvudy6eneBYDnMxXgAD+wr4GebaLFqyCZ4XKCvut8KMOozQYvc9Y6Tx32D7GC2xs9Mua0yPjsXjfqEjlg4K9YTPNKiIJ9pauqrcUxYG7831isWOe4nSUHfixGTS2+z+TIu9urAlkJ3G3y1NLocCjFUCGvr3/etq+LG64f/n/NhD+VVmxk8M+DyH/NpGtXA8vKHXO2/aSCcyhm0P6/7+E/JuqGWgNAZvkRfaV/vtb9AVIFqmLE+XYsn2qjWspnbhL8MM9D3VFY//Jlu4rD6jdpyDvy3s1n7gAAA==',
     badgeText: 'PRE-SALE ACTIVE',
     linkPath: '/bitcash-bitlauncher',
     // TODO: token name in progress. MBOTS is placeholder, the token for Masterbots
@@ -140,6 +142,8 @@ export const projects: Project[] = [
     maxAllocation: '$10,000',
     heroImage: '/images/projects/masterbots.webp',
     thumbnailImage: '/images/projects/masterbots.webp',
+    blurDataURL:
+      'data:image/webp;base64,UklGRuIAAABXRUJQVlA4INYAAABwBACdASoUAA8APmk0mk0liQwCABQDQACdAbyB6HWb631Be6a+bEwKE/PUIAD33/j/5v65z96yzTBaX9ZDl9L4ozTc/bgoMv8m9B6heUie/SEmurVtH5VhQnbmCYw2Rp/fG77OGaFqpEwYQssu0aqTRvWJzQ4DxAL3eQPSbTvIhzGKpShfnxZfwsOmR/mA+BroAbNeBa9hT13YYNRDA9eqm27+T8wrt21aqFV2x6N0cyMHMZdaTPKDZQoB+8JunyBuSBZa6ijSCDVu/EcxG4sKKJPhoAAA',
     badgeText: 'COMING SOON',
     linkPath: '#',
     auctionId: 9,
@@ -184,6 +188,8 @@ export const projects: Project[] = [
     maxAllocation: '$10,000',
     heroImage: '/images/projects/wizartworld.webp',
     thumbnailImage: '/images/projects/wizartworld.webp',
+    blurDataURL:
+      'data:image/webp;base64,UklGRsgAAABXRUJQVlA4ILwAAAAwBACdASoUAA8APmk0mk0llAwAFANAAJ0ygxgDSGFIfwgIC8vksn1HYgAA/t4qQ2N1UmCQjPO17RWIYo3rN72QPh0GY2lw0onLZ+tGyDpwA56zTie8QqtEUMgNAPEQgngH5cBHRFbGm12/rCQx89hnrcBUNHjo+sjTlNqdytCxBSgrD19fExHCUlIimgc0sp9djSQGAuBgD3U8toUfSeIgBNV+TaljPi6YHDGYWfSiD6XzS7h+SrTeGAAAAA==',
     badgeText: 'FUTURE',
     linkPath: '#',
     token: TestnetMBOTSPL,
@@ -229,6 +235,7 @@ export interface Project {
   maxAllocation: string
   heroImage: string
   thumbnailImage: string
+  blurDataURL: string
   badgeText: string
   linkPath: string
   twitterUsername: string
