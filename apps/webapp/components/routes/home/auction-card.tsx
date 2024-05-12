@@ -34,7 +34,7 @@ export function AuctionCard(project: Project) {
           height={432}
           width={432}
           placeholder="blur"
-          // loading="lazy"
+          loading="lazy"
           className="h-[216px] w-full rounded-t-xl object-cover group-hover:shadow-xl"
           alt={title}
           priority
