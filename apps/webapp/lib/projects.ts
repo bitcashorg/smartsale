@@ -1,5 +1,7 @@
 import { TestnetMBOTSPL, TokenContractData } from 'smartsale-contracts'
-
+import BitcashPic from '../assets/img/bitcash.webp'
+import MasterbotsPic from '../assets/img/masterbots.webp'
+import WizartPic from '../assets/img/wizartworld.webp'
 // https://bitcash.to/{hash}
 // ? Micro interaction: share (short) link
 import { StaticImageData } from 'next/image'
@@ -12,8 +14,8 @@ export const projects: Project[] = [
     pitch: 'Building Ai & Crypto Apps For The New Global Economy.',
     fundraiseGoal: '$400,000',
     maxAllocation: '$1,500',
-    heroImage: '/images/projects/bitcash-cover.png',
-    thumbnailImage: '/images/projects/bitcash.png',
+    heroImage: '/images/projects/bitcash-cover.webp',
+    thumbnailImage: BitcashPic,
     badgeText: 'PRE-SALE ACTIVE',
     linkPath: '/bitcash-bitlauncher',
     // TODO: token name in progress. MBOTS is placeholder, the token for Masterbots
@@ -138,8 +140,8 @@ export const projects: Project[] = [
       'Elevating AI Beyond ChatGPT: Specialized Chatbots, Social Sharing and User-Friendly Innovation',
     fundraiseGoal: '$200,000',
     maxAllocation: '$10,000',
-    heroImage: '/images/projects/masterbots.png',
-    thumbnailImage: '/images/projects/masterbots.png',
+    heroImage: '/images/projects/masterbots.webp',
+    thumbnailImage: MasterbotsPic,
     badgeText: 'COMING SOON',
     linkPath: '#',
     auctionId: 9,
@@ -182,8 +184,8 @@ export const projects: Project[] = [
     pitch: 'Unleash The Master Artist In You - Generate Ai Art & NFTs.',
     fundraiseGoal: '$200,000',
     maxAllocation: '$10,000',
-    heroImage: '/images/projects/wizartworld.png',
-    thumbnailImage: '/images/projects/wizartworld.png',
+    heroImage: '/images/projects/wizartworld.webp',
+    thumbnailImage: WizartPic,
     badgeText: 'FUTURE',
     linkPath: '#',
     token: TestnetMBOTSPL,
@@ -228,7 +230,7 @@ export interface Project {
   fundraiseGoal: string
   maxAllocation: string
   heroImage: string
-  thumbnailImage: string
+  thumbnailImage: string | StaticImageData
   badgeText: string
   linkPath: string
   twitterUsername: string
