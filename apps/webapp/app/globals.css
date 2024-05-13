@@ -270,7 +270,7 @@ input[type='number'] {
   height: calc(100vh - 64px) !important;
   width: 100vw;
   overflow: hidden;
-  @apply fixed inset-x-0 flex flex-col items-center overflow-hidden top-16 justify-evenly bg-background;
+  @apply fixed inset-x-0 flex flex-col items-center pb-20 overflow-hidden top-16 justify-evenly bg-background;
 }
 
 /* BLUR EFFECT TO BACKGROUND CIRCLE */
