@@ -16,9 +16,22 @@ export function ProjectHeader({ project }: { project: Project }) {
           sizes=""
           priority
         />
-        <div className="relative z-10 flex justify-between">
+
+        {/* <ProjectDataCard project={project} /> */}
+        <section className="relative z-10 flex flex-col items-center pt-10 align-center">
+          <h1 className="flex flex-col mx-auto mb-10 text-center whitespace-pre-line md:mb-24">
+            <sub className="w-full h-8 text-xl font-semibold leading-none drop-shadow-md md:h-10 md:text-2xl">
+              {project.pitch}
+            </sub>
+            <span
+              className="w-full text-5xl font-normal drop-shadow-md sm:text-6xl md:text-7xl lg:text-8xl"
+              key="upcoming-auctions-title"
+            >
+              {project.title}
+            </span>
+          </h1>
           <ProjectDataCard project={project} />
-        </div>
+        </section>
       </div>
     </header>
   )

@@ -5,11 +5,11 @@ export function Upcoming({ projects }: { projects: Project[] }) {
   return (
     <section className="align-center relative z-10 flex min-h-[80vh] flex-col justify-center pt-10">
       <h1 className="flex flex-col mx-auto mb-10 text-center whitespace-pre-line md:mb-24">
-        <sub className="w-full h-8 text-xl font-semibold leading-none md:h-10 md:text-2xl">
+        <sub className="w-full h-8 text-xl font-semibold leading-none drop-shadow-md md:h-10 md:text-2xl">
           {textContent.eyebrow}
         </sub>
         <span
-          className="w-full text-5xl font-normal sm:text-6xl md:text-7xl lg:text-8xl"
+          className="w-full text-5xl font-normal drop-shadow-md sm:text-6xl md:text-7xl lg:text-8xl"
           key="upcoming-auctions-title"
         >
           {textContent.title.split('AI/WEB3')[0]}{' '}
