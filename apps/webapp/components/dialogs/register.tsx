@@ -9,7 +9,7 @@ import {
   DialogTitle
 } from '@/components/ui/dialog'
 import { useSession } from '@/hooks/use-session'
-import { useRouter } from 'next/navigation'
+import { useRouter, useSearchParams } from 'next/navigation'
 import QRCode from 'react-qr-code'
 import { useEffectOnce } from 'react-use'
 import { runtimeEnv } from 'smartsale-lib'
@@ -21,12 +21,16 @@ export function RegisterDialogContent({
 }) {
   const { session } = useSession()
   const router = useRouter()
+  const searchParams = useSearchParams()
+  const referrer = searchParams.get('referrer')
 
   useEffectOnce(() => {
     const compatibleDevice = runtimeEnv.isMobile || runtimeEnv.isIpad
 
     if (compatibleDevice) {
-      router.push('https://app.bitcash.org?share=JVnL7qzrU')
+      router.push(
+        `https://app.bitcash.org?share=JVnL7qzrU${referrer ? `&referrer=${referrer}` : ''}`
+      )
     }
   })
 
@@ -56,7 +60,7 @@ export function RegisterDialogContent({
             width: '100%',
             borderRadius: 4
           }}
-          value={'https://app.bitcash.org?share=JVnL7qzrU'}
+          value={`https://app.bitcash.org?share=JVnL7qzrU${referrer ? `&referrer=${referrer}` : ''}`}
           viewBox={`0 0 256 256`}
         />
         {/* <Image
