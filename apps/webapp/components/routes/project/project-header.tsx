@@ -18,13 +18,13 @@ export function ProjectHeader({ project }: { project: Project }) {
         />
 
         {/* <ProjectDataCard project={project} /> */}
-        <section className="relative z-10 flex flex-col items-center pt-10 align-center">
-          <h1 className="flex flex-col mx-auto mb-10 text-center whitespace-pre-line md:mb-24">
-            <sub className="w-full h-8 text-xl font-semibold leading-none drop-shadow-md md:h-10 md:text-2xl">
+        <section className="z-10 flex flex-col items-center pt-10 align-center">
+          <h1 className="flex flex-col p-10 mx-auto mb-10 text-center whitespace-pre-line align-center md:mb-24">
+            <sub className="w-full h-8 mb-16 text-xl font-semibold drop-shadow-md md:mb-0 md:h-10 md:text-2xl">
               {project.pitch}
             </sub>
             <span
-              className="w-full text-5xl font-normal drop-shadow-md sm:text-6xl md:text-7xl lg:text-8xl"
+              className="w-full text-5xl font-normal leading-16 drop-shadow-md sm:text-6xl md:text-7xl lg:text-8xl"
               key="upcoming-auctions-title"
             >
               {project.title}
