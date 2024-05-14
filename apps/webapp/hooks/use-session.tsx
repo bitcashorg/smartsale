@@ -101,6 +101,10 @@ function useSessionFn() {
     console.log('💥 callbackUrl', callbackUrl)
     const encodedCallbackUrl = encodeURIComponent(callbackUrl)
     params.append('callback', encodedCallbackUrl)
+    const referrer = searchParams.get('referrer')
+    if (referrer) {
+      params.append('referrer', referrer)
+    }
     location.href = `https://app.bitcash.org?${params.toString()}`
   }
 
