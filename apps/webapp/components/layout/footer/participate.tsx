@@ -9,7 +9,7 @@ import { BitcashAccessButton } from '@/components/layout/bitcash-access'
 
 export default function Participate() {
   return (
-    <section className="align-center flex flex-col pb-10">
+    <section className="align-center relative z-10 flex flex-col pb-10">
       <h2 className="h-32 w-full pb-10 pt-6 text-center text-3xl font-bold leading-loose">
         {textContent.stepsInfo}
       </h2>
