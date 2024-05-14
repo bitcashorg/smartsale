@@ -70,7 +70,7 @@ export const RegisterAddressForm: FunctionComponent<{ projectId: number }> = ({
 
   return registration.data || state.value ? (
     <RegisterButton
-      text={`You are registered for pre-sale with address ${formatAddress(registration.data?.address || address!)}`}
+      text={`You are registered with address ${formatAddress(registration.data?.address || address!)}`}
     />
   ) : (
     <form action={submitForm} className="flex justify-center">

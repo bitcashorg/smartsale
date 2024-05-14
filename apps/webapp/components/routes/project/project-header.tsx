@@ -4,8 +4,8 @@ import { ProjectDataCard } from './project-data-card'
 
 export function ProjectHeader({ project }: { project: Project }) {
   return (
-    <header className="flex mb-2 size-full md:mb-0 md:min-h-screen">
-      <div className="content-container relative h-fit !py-0 md:static md:h-auto md:max-w-[1146px] md:!py-[6rem] ">
+    <header className="flex justify-center mb-2 size-full md:mb-0 md:min-h-screen">
+      <div className="h-fit !py-0 md:static md:h-auto md:!py-[6rem]">
         <Image
           alt={project.title}
           className="absolute inset-0 object-cover opacity-50 pointer-events-none size-full"
@@ -27,7 +27,7 @@ export function ProjectHeader({ project }: { project: Project }) {
               className="w-full text-5xl font-normal leading-16 drop-shadow-md sm:text-6xl md:text-7xl lg:text-8xl"
               key="upcoming-auctions-title"
             >
-              {project.title}
+              {project.title.toUpperCase()}
             </span>
           </h1>
           <ProjectDataCard project={project} />

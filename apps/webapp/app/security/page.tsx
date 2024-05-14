@@ -8,7 +8,7 @@ import {
 
 export default function SecurityTips() {
   return (
-    <div className="content-container !py-10 md:px-3 px-7 md:py-24">
+    <div className="content-container !py-10 px-7 md:px-3 md:py-24">
       <PageContent data={content} />
     </div>
   )
@@ -66,7 +66,7 @@ const content: PageContentData = [
     text: 'Participating in auctions on Bitlauncher, a fork of Gnosis, requires vigilance and awareness of various security threats. Here are some crucial tips to help keep your investments safe:'
   },
   ...securityTips.flatMap((tip, index) => [
-    { type: 'h2' as ContentTextType, text: `${index + 1}. ${tip.title}` },
+    { type: 'h2' as ContentTextType, text: `${tip.title}` },
     { type: 'p' as ContentTextType, text: tip.content }
   ])
   // { type: 'hr' }
