@@ -251,6 +251,10 @@ input[type='number'] {
   @apply text-2xl font-bold md:text-4xl;
 }
 
+.heading3 {
+  @apply text-xl font-bold md:text-xl;
+}
+
 .paragraph {
   @apply text-base md:text-lg;
 }

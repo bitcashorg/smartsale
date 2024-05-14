@@ -72,19 +72,3 @@ export function AuctionInfo({ project }: { project: ProjectWithAuction }) {
     </div>
   )
 }
-
-{
-  /* <div
-          key={k}
-          className="flex flex-col w-full px-4 py-3 my-1 text-center rounded-sm bg-muted"
-        >
-          {items.map((item, ik) => (
-        
-                <ListItem key={ik} {...item} />
-          
-              {ik < items.length - 1 && (
-                <hr className="w-full my-2 border-accent-secondary/50" />
-        
-          )} )) }
-        </div> */
-}

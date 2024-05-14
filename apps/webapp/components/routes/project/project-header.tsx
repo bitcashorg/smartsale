@@ -4,11 +4,11 @@ import { ProjectDataCard } from './project-data-card'
 
 export function ProjectHeader({ project }: { project: Project }) {
   return (
-    <header className="flex justify-center mb-2 size-full md:mb-0 md:min-h-screen">
-      <div className="h-fit !py-0 md:static md:h-auto md:!py-[6rem]">
+    <header className="flex size-full justify-center md:mb-0 md:min-h-[95vh]">
+      <div className="h-fit !py-0 md:static md:h-auto md:!pt-[6rem]">
         <Image
           alt={project.title}
-          className="absolute inset-0 object-cover opacity-50 pointer-events-none size-full"
+          className="pointer-events-none absolute inset-0 size-[95vh] object-cover opacity-50"
           src={project.heroImage}
           layout="fill"
           objectFit="cover"
