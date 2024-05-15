@@ -35,7 +35,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
           >
             <Header />
             {/* <Toaster /> */}
-            <main className="flex flex-col flex-1">{children}</main>
+            <main className="flex flex-1 flex-col">{children}</main>
             <Footer />
             <DynamicSessionDialog />
           </Providers>
@@ -85,7 +85,7 @@ export const metadata: Metadata = {
       'Be part of the intelligent future and join the Ai/Web3 revolution now!',
     images: [
       {
-        url: 'https://bitlauncher.ai/images/og-image.jpeg',
+        url: 'https://bitlauncher.ai/images/og-image.webp',
         alt: 'bitlauncher'
       }
     ]
@@ -96,7 +96,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     images: [
       {
-        url: 'https://bitlauncher.ai/images/og-image.jpeg',
+        url: 'https://bitlauncher.ai/images/og-image.webp',
         alt: 'bitlauncher'
       }
     ]
