@@ -9,7 +9,6 @@ import {
   DialogTitle
 } from '@/components/ui/dialog'
 import { useSession } from '@/hooks/use-session'
-import { useSearchParams } from 'next/navigation'
 import QRCode from 'react-qr-code'
 
 export function SessionDialogContent({
@@ -18,8 +17,6 @@ export function SessionDialogContent({
   updateDialogContent: (dialog: BitcashAccessContentType) => void
 }) {
   const { loginUri } = useSession()
-  const searchParams = useSearchParams()
-  const referrer = searchParams.get('referrer')
   return (
     <>
       <DialogHeader className="gap-4">
@@ -41,7 +38,7 @@ export function SessionDialogContent({
               width: '100%',
               borderRadius: 4
             }}
-            value={`${loginUri}${referrer ? `?referrer=${referrer}` : ''}`}
+            value={loginUri}
             viewBox={`0 0 256 256`}
           />
         </div>

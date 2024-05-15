@@ -32,6 +32,7 @@ function useSessionFn() {
   const loginSR = useAsync(() => genLoginSigningRequest(newSessionId))
   const loginUri = loginSR?.value?.encode()
 
+  let registerUri = 'https://app.bitcash.org?share=JVnL7qzrU'
   // subscribe to supabase session table and set session state
   // this table get updated by /api/esr callback invoked by the signing wallet
   useEffect(() => {
@@ -87,6 +88,18 @@ function useSessionFn() {
     getSession()
   }, [paramsSessionId])
 
+  // save referrer to session storage
+  useEffect(() => {
+    if (!searchParams.get('referrer') && !sessionStorage.getItem('referrer'))
+      return
+    if (searchParams.get('referrer')) {
+      sessionStorage.setItem('referrer', searchParams.get('referrer') || '')
+    }
+    registerUri = `https://app.bitcash.org/create-account?referrer=${
+      searchParams.get('referrer') || sessionStorage.getItem('referrer')
+    }&source=bitlauncher.ai`
+  }, [])
+
   // default moblie login mode is redirect
   const loginRedirect = () => {
     if (!loginUri || !open) return
@@ -101,7 +114,7 @@ function useSessionFn() {
     console.log('💥 callbackUrl', callbackUrl)
     const encodedCallbackUrl = encodeURIComponent(callbackUrl)
     params.append('callback', encodedCallbackUrl)
-    const referrer = searchParams.get('referrer')
+    const referrer = sessionStorage.getItem('referrer')
     if (referrer) {
       params.append('referrer', referrer)
     }
@@ -129,6 +142,7 @@ function useSessionFn() {
     newSessionId,
     session,
     loginUri,
+    registerUri,
     showSessionDialog,
     logout,
     loginRedirect,
