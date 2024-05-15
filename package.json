@@ -42,6 +42,7 @@
     "-": "^0.0.1",
     "@types/react": "latest",
     "@types/react-dom": "latest",
+    "@vercel/speed-insights": "^1.0.10",
     "react": "latest",
     "react-dom": "latest",
     "sharp": "^0.33.3"
