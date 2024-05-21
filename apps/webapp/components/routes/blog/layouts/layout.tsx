@@ -130,15 +130,10 @@ export function Layout({
         {/* {blogLayout ? (
         <BlogHeader navItems={navItems} searchInputPlaceholder={searchInputPlaceholder} />
       ) : ( */}
-        <SiteHeader
-          navItems={navItems}
-          searchInputPlaceholder={searchInputPlaceholder}
-        />
         {/* )} */}
         <main className="relative flex flex-col flex-1 min-h-screen">
           {children}
         </main>
-        <SiteFooter footerItems={footerItems} />
       </div>
     </>
   )
