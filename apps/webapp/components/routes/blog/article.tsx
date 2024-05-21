@@ -1,8 +1,5 @@
-'use client'
-
 import { StaticImport } from 'next/dist/shared/lib/get-img-props'
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
 import { render as toPlainText } from 'datocms-structured-text-to-plain-text'
 import { isHeading, isParagraph } from 'datocms-structured-text-utils'
 import {
@@ -31,14 +28,10 @@ export function BlogPage({
   blogContent,
   relatedBlogs
 }: BlogPageProps) {
-  const asPath = usePathname()
-  const origin =
-    typeof window !== 'undefined' && window.location.origin
-      ? window.location.origin
-      : ''
-  const URL = `${origin}${asPath}`
   const category = params.category
-  // ? Looks that StructuredTextGraphQlResponse is not the same as StructuredText...
+  const canonicalUrl =
+    process.env.NEXT_PUBLIC_VERCEL_URL + `/${category}/${params.slug}`
+
   let block
   block = blogContent.contentBlock
     .map(({ mainContent }) => {
@@ -54,30 +47,6 @@ export function BlogPage({
     })
     block = updatedBlock
   }
-
-  const headingTexts = block
-    ?.filter(filt => filt !== undefined)
-    .map(item => {
-      const children = (
-        item[0] as unknown as {
-          type: string
-          level: number
-          children: { type: string; marks: string[]; value: string }[]
-        }
-      ).children
-      let sentence = children.map(child => child.value).join(' ')
-      const headingItem = { value: sentence }
-      return {
-        level: item[0].level,
-        text: headingItem.value,
-        anchor: headingItem.value
-          .trim()
-          .toLowerCase()
-          .replace(/ /g, '-')
-          .replace(/[^\w-]+/g, '')
-          .replace(/-$/, '')
-      }
-    })
 
   return (
     <section className="container px-5 mx-auto md:px-0">
@@ -187,19 +156,31 @@ export function BlogPage({
                 Share this article
               </span>
               <div className="flex mt-2 space-x-3">
-                <TelegramShareButton url={URL} title={blogContent.title}>
+                <TelegramShareButton
+                  url={canonicalUrl}
+                  title={blogContent.title}
+                >
                   <LucideIcons.sendIcon className="transition-all hover:stroke-primary-500 focus:stroke-primary-500" />
                 </TelegramShareButton>
 
-                <TwitterShareButton url={URL} title={blogContent.title}>
+                <TwitterShareButton
+                  url={canonicalUrl}
+                  title={blogContent.title}
+                >
                   <LucideIcons.twitter className="transition-all hover:stroke-primary-500 focus:stroke-primary-500" />
                 </TwitterShareButton>
 
-                <FacebookShareButton url={URL} title={blogContent.title}>
+                <FacebookShareButton
+                  url={canonicalUrl}
+                  title={blogContent.title}
+                >
                   <LucideIcons.facebook className="transition-all hover:stroke-primary-500 focus:stroke-primary-500" />
                 </FacebookShareButton>
 
-                <LinkedinShareButton url={URL} title={blogContent.title}>
+                <LinkedinShareButton
+                  url={canonicalUrl}
+                  title={blogContent.title}
+                >
                   <LucideIcons.linkedin className="transition-all hover:stroke-primary-500 focus:stroke-primary-500" />
                 </LinkedinShareButton>
                 {/* <Link href="#">

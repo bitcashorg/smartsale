@@ -1,14 +1,46 @@
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import { getLayoutText } from '@/services/datocms'
+import { getBlogArticleData } from '@/services/datocms'
 import { getBlogCategory } from '@/services/datocms/datacms-blog-category.service'
-import { BlogAiRecord } from '@/services/datocms/graphql/generated/cms'
 import { generateMetadataFromSEO } from '@/lib/seo'
 import { BlogPage } from '@/components/routes/blog/article'
 
+export default async function BlogSlugPage(props: any) {
+  const {
+    params: { lang, category, slug }
+  } = props
+
+  const data = await getBlogArticleData(lang, category, slug)
+  if (!data) return notFound()
+
+  const { blogContent, i18n, relatedBlogs } = data
+
+  return (
+    <section>
+      <header className="flex flex-col py-10 md:py-24 ">
+        <h1 className="flex justify-center heading ">
+          {blogContent.title} <br />
+        </h1>
+        <h2 className="flex justify-center text-xl font-semibold">
+          {blogContent.description}
+        </h2>
+      </header>
+
+      <main>
+        <pre>{JSON.stringify(blogContent, null, 2)}</pre>
+      </main>
+    </section>
+    // <BlogPage
+    //   blogContent={blogContent}
+    //   params={props.params}
+    //   i18n={i18n}
+    //   relatedBlogs={relatedBlogs}
+    // />
+  )
+}
+
 export async function generateMetadata(props: any): Promise<Metadata> {
   const {
-    searchParams: { topic },
     params: { lang, category, slug }
   } = props
 
@@ -45,70 +77,4 @@ export async function generateMetadata(props: any): Promise<Metadata> {
   }
 
   return generateMetadataFromSEO(seoData)
-}
-
-export default async function BlogSlugPage(props: any) {
-  const {
-    searchParams: { topic },
-    params: { locale, category, slug }
-  } = props
-
-  const locales = [locale]
-
-  const [i18n, categories] = await Promise.all([
-    getLayoutText(locale, locales),
-    getBlogCategory(category, locale, locales, {
-      slug: {
-        eq: slug
-      }
-    })
-  ])
-
-  // replacing category kebab case with camel case
-  const blogCategory = category.replace(/(\-\w)/g, (m: string) =>
-    m[1].toUpperCase()
-  )
-  const data: any = categories[`${blogCategory}Data`]
-  const error: any = categories[`${blogCategory}Error`]
-
-  let categoryContent: any[]
-  categoryContent = data
-  if (categoryContent.length < 1 || error) {
-    console.log(`${blogCategory}::ERROR::`, error)
-    notFound()
-  }
-
-  let relatedBlogs: any = []
-  const blogContent = categoryContent[0]
-
-  const topics = blogContent?.topics
-
-  if (topics.length > 0) {
-    relatedBlogs = await getBlogCategory(category, locale, locales, {
-      slug: {
-        neq: slug
-      }
-    })
-    relatedBlogs = relatedBlogs[`${blogCategory}Data`].filter(
-      (blog: BlogAiRecord) =>
-        (blog.topics as string[]).some((topic: string) =>
-          topics.includes(topic)
-        ) &&
-        blog.description?.match(
-          new RegExp(`(${blogContent.title.replace(/\s/g, '|')})`, 'gi')
-        ) &&
-        blog.title?.match(
-          new RegExp(`(${blogContent.title.replace(/\s/g, '|')})`, 'gi')
-        )
-    )
-  }
-
-  return (
-    <BlogPage
-      blogContent={blogContent}
-      params={props.params}
-      i18n={i18n}
-      relatedBlogs={relatedBlogs}
-    />
-  )
 }
