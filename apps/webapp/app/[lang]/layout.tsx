@@ -11,6 +11,7 @@ import dynamic from 'next/dynamic'
 import { Open_Sans } from 'next/font/google'
 import React from 'react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
+import { locales } from '../dictionaries/locales'
 // import { Toaster } from 'react-hot-toast'
 
 const openSans = Open_Sans({
@@ -35,7 +36,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
           >
             <Header />
             {/* <Toaster /> */}
-            <main className="flex flex-1 flex-col">{children}</main>
+            <main className="flex flex-col flex-1">{children}</main>
             <Footer />
             <DynamicSessionDialog />
           </Providers>
@@ -47,6 +48,13 @@ export default async function RootLayout({ children }: RootLayoutProps) {
     </html>
   )
 }
+
+// generate static routes for a given set of locales,
+export async function generateStaticParams() {
+  return locales.map(lang => ({lang}))
+  // return ['en'].map(lang => ({lang}))
+}
+ 
 
 const DynamicSessionDialog = dynamic(
   () =>

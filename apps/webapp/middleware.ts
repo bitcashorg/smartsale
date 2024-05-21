@@ -1,9 +1,7 @@
 import { match } from '@formatjs/intl-localematcher'
 import Negotiator from 'negotiator'
 import { NextResponse, NextRequest } from 'next/server'
-
-const locales = ['zh', 'en', 'es', 'ko', 'pt', 'fr']
-const defaultLocale = 'en-US'
+import { defaultLocale, locales } from './app/dictionaries/locales'
 
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl

@@ -9,12 +9,12 @@ import { BlogPage } from '@/components/routes/blog/views/blogpage'
 export async function generateMetadata(props: any): Promise<Metadata> {
   const {
     searchParams: { topic },
-    params: { locale, category, slug }
+    params: { lang, category, slug }
   } = props
 
-  const locales = [locale]
+  const locales = [lang]
 
-  const categories = await getBlogCategory(category, locale, locales, {
+  const categories = await getBlogCategory(category, lang, locales, {
     slug: {
       eq: slug
     }

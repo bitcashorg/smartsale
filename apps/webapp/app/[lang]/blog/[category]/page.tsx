@@ -13,11 +13,11 @@ import { CategoryComponent } from '@/components/routes/blog/views/category'
 
 export async function generateMetadata(props: any): Promise<Metadata> {
   const {
-    params: { locale, category }
+    params: { lang, category }
   } = props
-  const locales = [locale]
+  const locales = [lang]
 
-  const pageSeo = await getPageSeoText(category, locale, locales)
+  const pageSeo = await getPageSeoText(category, lang, locales)
 
   const seoData = {
     title: pageSeo.pageSeo?.title || '',
@@ -33,15 +33,15 @@ export async function generateMetadata(props: any): Promise<Metadata> {
 export default async function Page(props: any) {
   const {
     searchParams: { topic },
-    params: { locale, category }
+    params: { lang, category }
   } = props
 
-  const locales = [locale]
+  const locales = [lang]
 
   const [i18n, categories, pageSeo] = await Promise.all([
-    getLayoutText(locale, locales),
-    getBlogCategory(category, locale, locales, undefined, 100),
-    getPageSeoText(category, locale, locales)
+    getLayoutText(lang, locales),
+    getBlogCategory(category, lang, locales, undefined, 100),
+    getPageSeoText(category, lang, locales)
   ])
 
   // replacing category kebab case with camel case
