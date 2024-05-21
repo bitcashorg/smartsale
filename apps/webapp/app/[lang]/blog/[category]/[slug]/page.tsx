@@ -17,25 +17,25 @@ export default async function BlogSlugPage(props: any) {
 
   return (
     <section>
-      <header className="flex flex-col py-10 md:py-24 ">
+      {/* <header className="flex flex-col py-10 md:py-24 ">
         <h1 className="flex justify-center heading ">
           {blogContent.title} <br />
         </h1>
         <h2 className="flex justify-center text-xl font-semibold">
           {blogContent.description}
         </h2>
-      </header>
+      </header> */}
 
-      <main>
-        <pre>{JSON.stringify(blogContent, null, 2)}</pre>
+      <main className="mx-auto content-container">
+        {/* <pre>{JSON.stringify(blogContent, null, 2)}</pre> */}
+        <BlogPage
+          blogContent={blogContent}
+          params={props.params}
+          i18n={i18n}
+          relatedBlogs={relatedBlogs}
+        />
       </main>
     </section>
-    // <BlogPage
-    //   blogContent={blogContent}
-    //   params={props.params}
-    //   i18n={i18n}
-    //   relatedBlogs={relatedBlogs}
-    // />
   )
 }
 
