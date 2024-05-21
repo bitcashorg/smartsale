@@ -1,8 +1,8 @@
 'use client'
 
-import { useEffect, useRef, useState } from "react"
+import { useEffect, useRef, useState } from 'react'
 
-import { cn } from "@/lib/utils.lib"
+import { cn } from '@/lib/utils'
 
 type NavigatorProps = {
   articleHeaders: { anchor: string; text: string; level: number }[] | undefined
@@ -14,7 +14,7 @@ export function Navigator({ articleHeaders }: NavigatorProps) {
 
   useEffect(() => {
     const handleIntersection = (entries: IntersectionObserverEntry[]) => {
-      entries.forEach((entry) => {
+      entries.forEach(entry => {
         if (entry.isIntersecting) {
           const currentSection = articleHeaders?.find(
             ({ anchor }) => anchor === entry.target.id
@@ -31,7 +31,7 @@ export function Navigator({ articleHeaders }: NavigatorProps) {
       threshold: 0.5, // Adjust as needed
 
       //why is this not working well when content is too close to each other ?
-      rootMargin: "0px 0px -80% 0px",
+      rootMargin: '0px 0px -80% 0px'
     })
 
     // Observe each section
@@ -60,18 +60,18 @@ export function Navigator({ articleHeaders }: NavigatorProps) {
           return (
             <HeadingTag
               className={cn(
-                "font-bold",
-                header.level == 3 ? "ml-3 text-h-text" : "text-footer-text"
+                'font-bold',
+                header.level == 3 ? 'text-h-text ml-3' : 'text-footer-text'
               )}
               key={index}
             >
               <a
                 href={`#${header.anchor}`}
                 className={cn(
-                  "font-semibold transition-all hover:text-primary-200 hover:underline focus:text-primary-200 focus:underline active:text-primary-200 active:underline",
+                  'hover:text-primary-200 focus:text-primary-200 active:text-primary-200 font-semibold transition-all hover:underline focus:underline active:underline',
                   activeSection?.anchor === header.anchor
-                    ? "text-primary-200"
-                    : ""
+                    ? 'text-primary-200'
+                    : ''
                 )}
               >
                 {header.text}

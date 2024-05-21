@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation'
 import { getLayoutText } from '@/services/datocms'
 import { getBlogCategory } from '@/services/datocms/datacms-blog-category.service'
 import { BlogAiRecord } from '@/services/datocms/graphql/generated/cms'
-import { generateMetadataFromSEO } from '@/lib/seo.lib'
+import { generateMetadataFromSEO } from '@/lib/seo'
 import { BlogPage } from '@/components/routes/blog/article'
 
 export async function generateMetadata(props: any): Promise<Metadata> {

@@ -9,15 +9,13 @@ import {
   CMSPageSeoText,
   getBlogCategoriesTypes
 } from '@/services/datocms'
-
-import { LucideIcons } from '@/components/icons/blog'
 import { PostCard } from './post-card'
 import { cn } from '@/lib/utils'
+import { LucideIcons } from './lucide-icons'
 
 export function CategoryComponent({
   params,
-  sectionsContents,
-  recentBlogs
+  sectionsContents
 }: BlogCategoryPageProps) {
   const [filteredSectionContent, setFilterSectionContent] = useState<
     | {

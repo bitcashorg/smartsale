@@ -1,8 +1,8 @@
 import Link from 'next/link'
-import { LucideIcons } from '@/components/icons/blog'
-import { cn } from '@/lib/utils.lib'
-import { BlogArticleRecord } from '@/services/datocms'
+import { cn } from '@/lib/utils'
+import { ArticlesSection } from '@/services/datocms'
 import { PostCard } from './post-card'
+import { LucideIcons } from './lucide-icons'
 
 export function BlogSections({ sections }: BlogSectionsProps) {
   return (
@@ -44,9 +44,5 @@ export function BlogSections({ sections }: BlogSectionsProps) {
 
 export interface BlogSectionsProps {
   children?: React.ReactNode
-  sections: {
-    name: string
-    slug: string
-    articles: BlogArticleRecord[]
-  }[]
+  sections: ArticlesSection[]
 }

@@ -8,7 +8,7 @@ import {
 } from '@/services/datocms'
 import { uniq } from 'lodash'
 
-import { generateMetadataFromSEO } from '@/lib/seo.lib'
+import { generateMetadataFromSEO } from '@/lib/seo'
 import { CategoryComponent } from '@/components/routes/blog/category'
 
 export async function generateMetadata(props: any): Promise<Metadata> {
@@ -134,16 +134,13 @@ export default async function Page(props: any) {
     .slice(0, 4)
 
   return (
-  
-
-      <CategoryComponent
-        i18n={i18n}
-        pageSeo={pageSeo}
-        params={props.params}
-        sectionsContents={sectionsContents}
-        recentBlogs={recentBlogs}
-        topics={topics}
-      />
-
+    <CategoryComponent
+      i18n={i18n}
+      pageSeo={pageSeo}
+      params={props.params}
+      sectionsContents={sectionsContents}
+      recentBlogs={recentBlogs}
+      topics={topics}
+    />
   )
 }

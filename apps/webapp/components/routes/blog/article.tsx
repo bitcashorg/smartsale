@@ -17,12 +17,13 @@ import {
   StructuredTextGraphQlResponse
 } from 'react-datocms'
 
-import { cn, readingTime } from '@/lib/utils.lib'
-import { LucideIcons } from '@/components/icons/blog'
+import { cn } from '@/lib/utils'
 import { BlogArticleRecord, CMSLayoutText } from '@/services/datocms'
 import { Tag } from './tag'
 import Image from 'next/image'
 import { PostCard } from './post-card'
+import { readingTime } from '@/lib/blog'
+import { LucideIcons } from './lucide-icons'
 
 export function BlogPage({
   i18n,

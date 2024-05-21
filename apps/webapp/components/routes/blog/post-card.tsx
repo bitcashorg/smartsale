@@ -1,4 +1,4 @@
-import { readingTime } from '@/lib/utils.lib'
+import { readingTime } from '@/lib/blog'
 import Link from 'next/link'
 import { BlogArticleRecord } from '~/services/datocms'
 import Image from 'next/image'
