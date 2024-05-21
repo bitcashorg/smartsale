@@ -19,7 +19,6 @@ import {
 
 import { cn, readingTime } from '@/lib/utils.lib'
 import { buttonVariants, LazyImage, Tag } from '@/components/routes/blog/base'
-import { AppSubscription } from '@/components/routes/blog/modules'
 import { Navigator, PostCard } from '@/components/routes/blog/molecules'
 import { LucideIcons } from '@/components/icons/blog'
 
@@ -80,21 +79,21 @@ export function BlogPage({
     })
 
   return (
-    <section className="container mx-auto px-5 md:px-0">
+    <section className="container px-5 mx-auto md:px-0">
       {/* <div className='flex flex-col items-start justify-start md:flex-row'> */}
       <div className="mx-auto mt-5 flex max-w-[900px] flex-col items-start gap-2 md:px-5 lg:px-0">
         <div className="order-3 md:order-1">
-          <h1 className="text-sub-2-lg md:text-h1-lg font-bold text-black dark:text-white">
+          <h1 className="font-bold text-black text-sub-2-lg md:text-h1-lg dark:text-white">
             {blogContent.title}
             <br className="hidden md:inline" />
           </h1>
-          <p className="text-sub-2-md md:text-sub-1-lg mt-2 text-neutral-700 dark:text-neutral-400 md:mt-8">
+          <p className="mt-2 text-sub-2-md md:text-sub-1-lg text-neutral-700 dark:text-neutral-400 md:mt-8">
             {blogContent.description}
           </p>
         </div>
 
-        <div className="space-y-space-4 order-2 mt-2 flex flex-col md:mt-5">
-          <span className="font-futura-pt-heavy text-h-text text-h-text-c font-bold dark:text-white">
+        <div className="flex flex-col order-2 mt-2 space-y-space-4 md:mt-5">
+          <span className="font-bold font-futura-pt-heavy text-h-text text-h-text-c dark:text-white">
             {blogContent.authorName}
           </span>
           <span className="font-futura-pt-book text-h-text text-h-text-c dark:text-white">
@@ -114,7 +113,7 @@ export function BlogPage({
         </div>
 
         <div
-          className="relative order-4 mt-5 flex flex-col items-start justify-start gap-5 md:flex-row "
+          className="relative flex flex-col items-start justify-start order-4 gap-5 mt-5 md:flex-row "
           id="scroller-wrapper"
         >
           <div
@@ -136,7 +135,7 @@ export function BlogPage({
                             alt={image?.alt || `blog-image-${index}`}
                             fill
                             loading="lazy"
-                            className="blogImages w-auto"
+                            className="w-auto blogImages"
                           />
                         </div>
                       )
@@ -183,24 +182,24 @@ export function BlogPage({
             <Navigator articleHeaders={headingTexts} />
 
             <div className="mt-5">
-              <span className="font-futura-pt-bold text-b-1-sbold-md text-black underline dark:text-white">
+              <span className="text-black underline font-futura-pt-bold text-b-1-sbold-md dark:text-white">
                 Share this article
               </span>
-              <div className="mt-2 flex space-x-3">
+              <div className="flex mt-2 space-x-3">
                 <TelegramShareButton url={URL} title={blogContent.title}>
-                  <LucideIcons.sendIcon className="hover:stroke-primary-500 focus:stroke-primary-500 transition-all" />
+                  <LucideIcons.sendIcon className="transition-all hover:stroke-primary-500 focus:stroke-primary-500" />
                 </TelegramShareButton>
 
                 <TwitterShareButton url={URL} title={blogContent.title}>
-                  <LucideIcons.twitter className="hover:stroke-primary-500 focus:stroke-primary-500 transition-all" />
+                  <LucideIcons.twitter className="transition-all hover:stroke-primary-500 focus:stroke-primary-500" />
                 </TwitterShareButton>
 
                 <FacebookShareButton url={URL} title={blogContent.title}>
-                  <LucideIcons.facebook className="hover:stroke-primary-500 focus:stroke-primary-500 transition-all" />
+                  <LucideIcons.facebook className="transition-all hover:stroke-primary-500 focus:stroke-primary-500" />
                 </FacebookShareButton>
 
                 <LinkedinShareButton url={URL} title={blogContent.title}>
-                  <LucideIcons.linkedin className="hover:stroke-primary-500 focus:stroke-primary-500 transition-all" />
+                  <LucideIcons.linkedin className="transition-all hover:stroke-primary-500 focus:stroke-primary-500" />
                 </LinkedinShareButton>
                 {/* <Link href="#">
                   <LucideIcons.mediumIcon />
@@ -213,8 +212,8 @@ export function BlogPage({
 
       {relatedBlogs.length > 0 && (
         <section className="mt-space-80 mx-auto w-full md:max-w-[74rem] md:px-10">
-          <div className="mb-space-32 flex items-center justify-between">
-            <span className="sub-2-lg font-semibold text-black dark:text-white">
+          <div className="flex items-center justify-between mb-space-32">
+            <span className="font-semibold text-black sub-2-lg dark:text-white">
               /Related stories{' '}
             </span>
             <Link
@@ -238,10 +237,6 @@ export function BlogPage({
           </ul>
         </section>
       )}
-
-      <section className="mt-space-130 container my-10">
-        <AppSubscription {...i18n} />
-      </section>
     </section>
   )
 }

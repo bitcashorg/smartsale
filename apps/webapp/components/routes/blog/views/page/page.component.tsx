@@ -1,6 +1,5 @@
 'use client'
 
-import { StaticImport } from 'next/dist/shared/lib/get-img-props'
 import { render as toPlainText } from 'datocms-structured-text-to-plain-text'
 import { isHeading, isParagraph } from 'datocms-structured-text-utils'
 import {
@@ -9,7 +8,6 @@ import {
   StructuredTextGraphQlResponse
 } from 'react-datocms'
 
-import { AppSubscription } from '@/components/routes/blog/modules'
 import { Navigator } from '@/components/routes/blog/molecules'
 
 import { TermsPageProps } from './page.types'
@@ -41,9 +39,9 @@ export function PageComp({ i18n, mainContent }: TermsPageProps) {
   })
 
   return (
-    <section className="container mx-auto px-5  md:px-0">
+    <section className="container px-5 mx-auto md:px-0">
       <div className="mx-auto mt-5 flex max-w-[900px] flex-col items-start gap-2 md:px-5 lg:px-0">
-        <div className="relative order-4 mt-5 flex flex-col items-start justify-start gap-5 md:flex-row  ">
+        <div className="relative flex flex-col items-start justify-start order-4 gap-5 mt-5 md:flex-row ">
           <div
             className="order-2 flex w-full flex-col md:order-1 md:max-w-[calc(100%-250px)]"
             id="extrat-blog-content"
@@ -85,9 +83,6 @@ export function PageComp({ i18n, mainContent }: TermsPageProps) {
         </div>
       </div>
 
-      <section className="mt-space-130  container my-10">
-        <AppSubscription {...i18n} />
-      </section>
     </section>
   )
 }

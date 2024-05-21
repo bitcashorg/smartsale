@@ -1,14 +1,19 @@
 import { Metadata } from 'next'
-
-import React from 'react'
+import { ReactNode } from 'react'
 
 export default function BlogLayout({ children }: RootLayoutProps) {
-  return <div className='container'>  {children}</div>
+  return( <div className='container'>      
+   <div className="relative flex flex-col min-h-screen">
+        <main className="relative flex flex-col flex-1 min-h-screen">
+          {children}
+        </main>
+      </div>
+    </div>)
 
 }
 
 interface RootLayoutProps {
-  children: React.ReactNode
+  children: ReactNode
 }
 
 export const metadata: Metadata = {

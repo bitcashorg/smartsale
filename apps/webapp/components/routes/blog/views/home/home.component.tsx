@@ -5,7 +5,6 @@ import { useParams } from 'next/navigation'
 import { useState } from 'react'
 
 import { buttonVariants } from '@/components/routes/blog/base'
-import { AppSubscription } from '@/components/routes/blog/modules'
 import {
   HeroCard,
   HeroSubCard,
@@ -16,7 +15,7 @@ import { LucideIcons } from '@/components/icons/blog'
 import { cn } from '@/lib/utils.lib'
 
 export function HomeComponent({
-  i18n,
+
   sectionArticles,
   recentsArticles,
   pageSeo
@@ -27,25 +26,18 @@ export function HomeComponent({
       ? recentsArticles.slice(1, recentsArticles.length)
       : recentsArticles
   const [getSectionArticles, setSectionArticles] = useState(sectionArticles)
-  const { lang } = useParams()
-  const locale = lang ? lang : 'en'
-
-  function handleReadMore() {
-    setSectionArticles(sectionArticles)
-  }
-
   return (
-    <section className="flex w-full flex-col items-center justify-start py-10">
+    <section className="flex flex-col items-center justify-start w-full py-10">
       <div className="container flex flex-col items-start gap-2 px-10">
-        <h1 className="text-sub-1-lg md:text-h1-lg  lg:text-h1-lg  font-extrabold tracking-tighter">
+        <h1 className="font-extrabold tracking-tighter text-sub-1-lg md:text-h1-lg lg:text-h1-lg">
           {pageSeo?.title}
         </h1>
-        <p className="text-sub-2-md md:text-sub-1-lg mt-2 text-neutral-700 dark:text-neutral-400 md:mt-5">
+        <p className="mt-2 text-sub-2-md md:text-sub-1-lg text-neutral-700 dark:text-neutral-400 md:mt-5">
           {pageSeo?.description}
         </p>
       </div>
 
-      <section className="container mt-10 flex w-full flex-col  gap-5 lg:flex-row">
+      <section className="container flex flex-col w-full gap-5 mt-10 lg:flex-row">
         <HeroCard
           sectionSlug={singlePost?.slug}
           post={singlePost?.articles[0]}
@@ -73,9 +65,9 @@ export function HomeComponent({
       {getSectionArticles?.map(
         section =>
           section?.articles?.length > 0 && (
-            <section className="mt-space-80 container" key={section.name}>
-              <div className="mb-space-32 flex items-center justify-between">
-                <span className="sub-2-lg font-semibold text-black dark:text-white">
+            <section className="container mt-space-80" key={section.name}>
+              <div className="flex items-center justify-between mb-space-32">
+                <span className="font-semibold text-black sub-2-lg dark:text-white">
                   /{section.name}
                 </span>
                 <Link
@@ -102,18 +94,6 @@ export function HomeComponent({
             </section>
           )
       )}
-
-      {/* {
-        sectionArticles.length > 3 && getSectionArticles.length === 3 && (
-          <div className="flex w-full justify-center mt-5">
-            <Button variant="primary" size="lg" className="w-32" onClick={handleReadMore}>Read More</Button>
-          </div>
-        )
-      } */}
-
-      <section className="mt-space-130  container my-10">
-        <AppSubscription {...i18n} />
-      </section>
     </section>
   )
 }

@@ -3,9 +3,7 @@ import { notFound } from 'next/navigation'
 import { getLayoutText } from '@/services/datocms'
 import { getBlogCategory } from '@/services/datocms/datacms-blog-category.service'
 import { BlogAiRecord } from '@/services/datocms/graphql/generated/cms'
-
 import { generateMetadataFromSEO } from '@/lib/seo.lib'
-import { Layout } from '@/components/routes/blog/layouts'
 import { BlogPage } from '@/components/routes/blog/views/blogpage'
 
 export async function generateMetadata(props: any): Promise<Metadata> {
@@ -106,13 +104,13 @@ export default async function BlogSlugPage(props: any) {
   }
 
   return (
-    <Layout i18n={i18n} pageSeo={blogContent.seo} blogLayout>
+
       <BlogPage
         blogContent={blogContent}
         params={props.params}
         i18n={i18n}
         relatedBlogs={relatedBlogs}
       />
-    </Layout>
+
   )
 }

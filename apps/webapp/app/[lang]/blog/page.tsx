@@ -5,13 +5,9 @@ import {
   getPageSeoText
 } from '@/services/datocms'
 import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
-
 import { generateMetadataFromSEO } from '@/lib/seo.lib'
 import { sliceData } from '@/lib/utils.lib'
-import { Layout } from '@/components/routes/blog/layouts/layout'
 import { HomeComponent } from '@/components/routes/blog/views/home'
-
-// import { useParams } from 'next/navigation';
 
 export default async function BlogPage(props: any) {
   const lang = props.params.lang
@@ -149,16 +145,14 @@ export default async function BlogPage(props: any) {
   ]
 
   return (
-    // TODO: @Jimoh - Move Layout component and calls to the blog layout on their respective pages
-    <Layout i18n={i18n} pageSeo={pageSeo.pageSeo}>
+
       <HomeComponent
         pageSeo={pageSeo}
         i18n={i18n}
-        // TODO: @Jimoh — Not building due the TS mismatch above.
         sectionArticles={sectionArticles}
         recentsArticles={recentsArticles}
       />
-    </Layout>
+
   )
 }
 

@@ -9,7 +9,6 @@ import {
 import { uniq } from 'lodash'
 
 import { generateMetadataFromSEO } from '@/lib/seo.lib'
-import { Layout } from '@/components/routes/blog/layouts'
 import { CategoryComponent } from '@/components/routes/blog/views/category'
 
 export async function generateMetadata(props: any): Promise<Metadata> {
@@ -135,8 +134,8 @@ export default async function Page(props: any) {
     .slice(0, 4)
 
   return (
-    <Layout i18n={i18n} pageSeo={pageSeo?.pageSeo}>
-      {/* // TODO: Code split */}
+  
+
       <CategoryComponent
         i18n={i18n}
         pageSeo={pageSeo}
@@ -145,6 +144,6 @@ export default async function Page(props: any) {
         recentBlogs={recentBlogs}
         topics={topics}
       />
-    </Layout>
+
   )
 }
