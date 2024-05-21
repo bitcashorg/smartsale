@@ -1,9 +1,5 @@
-"use client"
-
 import { cn } from "@/lib/utils.lib"
-import { LucideIcons } from "@/components/icons/blog"
 
-// TODO: Do types
 export const Tag = (props: any) => {
   const { title } = props
   return (

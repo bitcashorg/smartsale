@@ -7,7 +7,7 @@ import {
 import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
 import { generateMetadataFromSEO } from '@/lib/seo.lib'
 import { sliceData } from '@/lib/utils.lib'
-import { HomeComponent } from '@/components/routes/blog/views/home'
+import { BlogSections } from '@/components/routes/blog/sections'
 
 export default async function BlogPage(props: any) {
   const lang = props.params.lang
@@ -61,8 +61,6 @@ export default async function BlogPage(props: any) {
   }
 
   const {
-    i18n,
-    pageSeo,
     bitcoinData,
     cryptoData,
     investingData,
@@ -73,34 +71,32 @@ export default async function BlogPage(props: any) {
     aiResearchData
   } = await getData()
 
-  // TODO: @Jimoh — please do a function to slice the data and returns the BlogArticleRecord[].
-  // ? E.g.: sliceData(articles, 0, 4)
-
-  const recentsArticles = [
+  const sectionArticles = [
     {
-      name: 'Bitcoin',
-      slug: 'bitcoin',
-      articles: sliceData(bitcoinData, 0)
+      name: 'AI',
+      slug: 'ai',
+      articles: sliceData(aiData, 0, 4)
     },
     {
-      name: 'Crypto',
-      slug: 'crypto',
-      articles: sliceData(cryptoData, 0)
+      name: 'AI Research',
+      slug: 'ai-research',
+      articles: sliceData(aiResearchData, 0, 4)
+    },
+        {
+      name: 'News',
+      slug: 'news',
+      articles: sliceData(newsData, 0, 4)
     },
     {
+      name: 'Bitcash',
+      slug: 'bitcash',
+      articles: sliceData(bitcashData, 0, 4)
+    },
+        {
       name: 'Startup',
       slug: 'startup',
-      articles: sliceData(startupData, 0)
+      articles: sliceData(startupData, 1, 5)
     },
-
-    {
-      name: 'Investment',
-      slug: 'investing',
-      articles: sliceData(investingData, 0)
-    }
-  ]
-
-  const sectionArticles = [
     {
       name: 'Crypto',
       slug: 'crypto',
@@ -112,47 +108,16 @@ export default async function BlogPage(props: any) {
       articles: sliceData(bitcoinData, 1, 5)
     },
     {
-      name: 'Startup',
-      slug: 'startup',
-      articles: sliceData(startupData, 1, 5)
-    },
-
-    {
       name: 'Investing',
       slug: 'investing',
       articles: sliceData(investingData, 1, 5)
     },
-    {
-      name: 'AI',
-      slug: 'ai',
-      articles: sliceData(aiData, 0, 4)
-    },
-    {
-      name: 'AI Research',
-      slug: 'ai-research',
-      articles: sliceData(aiResearchData, 0, 4)
-    },
-    {
-      name: 'News',
-      slug: 'news',
-      articles: sliceData(newsData, 0, 4)
-    },
-    {
-      name: 'Bitcash',
-      slug: 'bitcash',
-      articles: sliceData(bitcashData, 0, 4)
-    }
   ]
 
   return (
-
-      <HomeComponent
-        pageSeo={pageSeo}
-        i18n={i18n}
-        sectionArticles={sectionArticles}
-        recentsArticles={recentsArticles}
-      />
-
+    <main>
+      <BlogSections sections={sectionArticles}/ >
+    </main>   
   )
 }
 

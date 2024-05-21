@@ -9,7 +9,7 @@ import {
 import { uniq } from 'lodash'
 
 import { generateMetadataFromSEO } from '@/lib/seo.lib'
-import { CategoryComponent } from '@/components/routes/blog/views/category'
+import { CategoryComponent } from '@/components/routes/blog/category'
 
 export async function generateMetadata(props: any): Promise<Metadata> {
   const {

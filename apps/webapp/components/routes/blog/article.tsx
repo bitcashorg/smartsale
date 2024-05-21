@@ -18,11 +18,11 @@ import {
 } from 'react-datocms'
 
 import { cn, readingTime } from '@/lib/utils.lib'
-import { buttonVariants, LazyImage, Tag } from '@/components/routes/blog/base'
-import { Navigator, PostCard } from '@/components/routes/blog/molecules'
 import { LucideIcons } from '@/components/icons/blog'
-
-import { BlogPageProps } from './blog.types'
+import { BlogArticleRecord, CMSLayoutText } from '@/services/datocms'
+import { Tag } from './tag'
+import Image from 'next/image'
+import { PostCard } from './post-card'
 
 export function BlogPage({
   i18n,
@@ -130,7 +130,7 @@ export function BlogPage({
                         index
                       ) => (
                         <div className="relative order-1 my-10  mt-5 w-full overflow-hidden md:order-3 md:max-w-[800px]">
-                          <LazyImage
+                          <Image
                             src={image.url}
                             alt={image?.alt || `blog-image-${index}`}
                             fill
@@ -179,7 +179,7 @@ export function BlogPage({
           </div>
 
           <div className="md:w-space-250 top-[120px] order-1 w-full md:sticky md:order-2 md:mt-5">
-            <Navigator articleHeaders={headingTexts} />
+            {/* <Navigator articleHeaders={headingTexts} /> */}
 
             <div className="mt-5">
               <span className="text-black underline font-futura-pt-bold text-b-1-sbold-md dark:text-white">
@@ -218,10 +218,7 @@ export function BlogPage({
             </span>
             <Link
               href={`/blog/${category}`}
-              className={cn(
-                buttonVariants({ variant: 'tertiary' }),
-                'text-black dark:text-white'
-              )}
+              className={cn('text-black dark:text-white')}
             >
               <b>See All Stories</b>
               <LucideIcons.chevronRight className="h-4 w-7" />
@@ -239,4 +236,16 @@ export function BlogPage({
       )}
     </section>
   )
+}
+
+export interface BlogPageProps {
+  i18n: CMSLayoutText
+  params: {
+    locale: string
+    category: string
+    slug: string
+  }
+  //  searchParams: {},
+  blogContent: BlogArticleRecord
+  relatedBlogs: BlogArticleRecord[]
 }

@@ -4,7 +4,7 @@ import { getLayoutText } from '@/services/datocms'
 import { getBlogCategory } from '@/services/datocms/datacms-blog-category.service'
 import { BlogAiRecord } from '@/services/datocms/graphql/generated/cms'
 import { generateMetadataFromSEO } from '@/lib/seo.lib'
-import { BlogPage } from '@/components/routes/blog/views/blogpage'
+import { BlogPage } from '@/components/routes/blog/article'
 
 export async function generateMetadata(props: any): Promise<Metadata> {
   const {
@@ -104,13 +104,11 @@ export default async function BlogSlugPage(props: any) {
   }
 
   return (
-
-      <BlogPage
-        blogContent={blogContent}
-        params={props.params}
-        i18n={i18n}
-        relatedBlogs={relatedBlogs}
-      />
-
+    <BlogPage
+      blogContent={blogContent}
+      params={props.params}
+      i18n={i18n}
+      relatedBlogs={relatedBlogs}
+    />
   )
 }

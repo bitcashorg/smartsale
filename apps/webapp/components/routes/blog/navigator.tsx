@@ -1,3 +1,5 @@
+'use client'
+
 import { useEffect, useRef, useState } from "react"
 
 import { cn } from "@/lib/utils.lib"
@@ -47,12 +49,12 @@ export function Navigator({ articleHeaders }: NavigatorProps) {
   }, [articleHeaders])
 
   return (
-    <div className="rounded-md bg-gray-100 px-space-10 py-5 dark:bg-gray-800">
+    <div className="py-5 bg-gray-100 rounded-md px-space-10 dark:bg-gray-800">
       <div className="w-full border-b">
         <span className="text-black dark:text-white">Content:</span>
       </div>
 
-      <div className="mt-space-10 flex w-full flex-col space-y-4">
+      <div className="flex flex-col w-full space-y-4 mt-space-10">
         {articleHeaders?.map((header, index) => {
           const HeadingTag = `h${header.level}` as any
           return (
