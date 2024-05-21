@@ -4,10 +4,7 @@ import { useParams, usePathname } from 'next/navigation'
 import { CMSLayoutText, CMSPageSeoText } from '@/services/datocms'
 
 import {
-  BlogHeader,
   HeaderSEO,
-  SiteFooter,
-  SiteHeader
 } from '@/components/routes/blog/modules'
 import { appConfig } from '@/lib/config'
 
