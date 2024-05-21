@@ -3,7 +3,8 @@ import { Metadata } from 'next'
 import React from 'react'
 
 export default function BlogLayout({ children }: RootLayoutProps) {
-  return children
+  return <div className='container'>  {children}</div>
+
 }
 
 interface RootLayoutProps {
