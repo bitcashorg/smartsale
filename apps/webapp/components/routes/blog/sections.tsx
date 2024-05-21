@@ -10,23 +10,23 @@ export function BlogSections({ sections }: BlogSectionsProps) {
       {sections.map(
         section =>
           section?.articles?.length > 0 && (
-            <section className="container mt-space-80" key={section.name}>
-              <div className="flex items-center justify-between mb-space-32">
-                <span className="font-semibold text-black sub-2-lg dark:text-white">
-                  /{section.name}
+            <section className="container mb-10" key={section.name}>
+              <div className="flex items-center justify-between text-xl mb-space-32">
+                <span className="pl-3 font-bold text-black dark:text-white">
+                  / {section.name}
                 </span>
                 <Link
                   href={`/blog/${section.slug}`}
                   className={cn(
-                    'focus-within:!text-primary-200 hover:!text-primary-200 text-black dark:text-white '
+                    'focus-within:!text-primary-200 hover:!text-primary-200 flex items-center align-middle text-black dark:text-white'
                   )}
                 >
-                  <b>Go to category</b>
+                  {section.name} articles
                   <LucideIcons.chevronRight className="h-4 w-7" />
                 </Link>
               </div>
 
-              <ul className="sm:grid-cols-auto-dense flex w-full flex-col gap-20 py-5 sm:grid sm:grid-cols-[repeat(auto-fill,minmax(300px,1fr))] sm:flex-wrap md:gap-5 lg:grid-cols-[repeat(auto-fill,minmax(260px,1fr))]">
+              <ul className="grid-cols-auto-dense grid w-full grid-cols-[repeat(auto-fill,minmax(300px,1fr))] flex-col gap-20 py-5 sm:flex-wrap md:gap-5 ">
                 {section?.articles?.map((post, index) => (
                   <PostCard
                     post={post}

@@ -11,25 +11,6 @@ import { uniq } from 'lodash'
 import { generateMetadataFromSEO } from '@/lib/seo'
 import { CategoryComponent } from '@/components/routes/blog/category'
 
-export async function generateMetadata(props: any): Promise<Metadata> {
-  const {
-    params: { lang, category }
-  } = props
-  const locales = [lang]
-
-  const pageSeo = await getPageSeoText(category, lang, locales)
-
-  const seoData = {
-    title: pageSeo.pageSeo?.title || '',
-    description: pageSeo.pageSeo?.description || '',
-    ogType: 'website',
-    ogImageUrl: pageSeo.pageSeo?.image?.url || '',
-    twitterCard: 'summary_large_image'
-  }
-
-  return generateMetadataFromSEO(seoData)
-}
-
 export default async function Page(props: any) {
   const {
     searchParams: { topic },
@@ -71,7 +52,7 @@ export default async function Page(props: any) {
 
   // section topics & blogs content
   const topics = uniq(allTopics)
-  const sectionsContents = topics?.map((tp, index) => {
+  const sections = topics?.map((tp, index) => {
     const content = categoryContent.filter(content =>
       content.topics.includes(tp)
     )
@@ -81,7 +62,7 @@ export default async function Page(props: any) {
     }
   })
 
-  const sectionsContentsTopics = topics?.map(topic => {
+  const sectionsTopics = topics?.map(topic => {
     const content = categoryContent.filter(content =>
       content.topics.includes(topic)
     )
@@ -93,10 +74,10 @@ export default async function Page(props: any) {
 
   // layoutTopics
   var LayoutTopics: any = {}
-  sectionsContentsTopics.forEach(
+  sectionsTopics.forEach(
     (key, i) =>
       (LayoutTopics[key.topic] =
-        sectionsContentsTopics[i].topic + ' (' + key.content.length + ')')
+        sectionsTopics[i].topic + ' (' + key.content.length + ')')
   )
 
   // update only navigationTopic
@@ -134,13 +115,39 @@ export default async function Page(props: any) {
     .slice(0, 4)
 
   return (
-    <CategoryComponent
-      i18n={i18n}
-      pageSeo={pageSeo}
-      params={props.params}
-      sectionsContents={sectionsContents}
-      recentBlogs={recentBlogs}
-      topics={topics}
-    />
+    <main>
+      <h1 className="flex justify-center py-10 heading md:py-24">
+        {blogCategory} Articles
+      </h1>
+      {/* <BlogSections sections={sections} /> */}
+
+      <CategoryComponent
+        i18n={i18n}
+        pageSeo={pageSeo}
+        params={props.params}
+        sections={sections}
+        recentBlogs={recentBlogs}
+        topics={topics}
+      />
+    </main>
   )
+}
+
+export async function generateMetadata(props: any): Promise<Metadata> {
+  const {
+    params: { lang, category }
+  } = props
+  const locales = [lang]
+
+  const pageSeo = await getPageSeoText(category, lang, locales)
+
+  const seoData = {
+    title: pageSeo.pageSeo?.title || '',
+    description: pageSeo.pageSeo?.description || '',
+    ogType: 'website',
+    ogImageUrl: pageSeo.pageSeo?.image?.url || '',
+    twitterCard: 'summary_large_image'
+  }
+
+  return generateMetadataFromSEO(seoData)
 }

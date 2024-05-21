@@ -13,10 +13,7 @@ import { PostCard } from './post-card'
 import { cn } from '@/lib/utils'
 import { LucideIcons } from './lucide-icons'
 
-export function CategoryComponent({
-  params,
-  sectionsContents
-}: BlogCategoryPageProps) {
+export function CategoryComponent({ params, sections }: BlogCategoryPageProps) {
   const [filteredSectionContent, setFilterSectionContent] = useState<
     | {
         topic: string
@@ -29,12 +26,10 @@ export function CategoryComponent({
   const Params = useSearchParams()
   const topic = Params.get('topic')
   // Step 2: Sort alphabetically within each count group
-  sectionsContents.sort((a, b) => a.topic.localeCompare(b.topic))
+  sections.sort((a, b) => a.topic.localeCompare(b.topic))
 
   const filterSectionContent = () => {
-    const getContents = sectionsContents.filter(
-      content => content.topic === topic
-    )
+    const getContents = sections.filter(content => content.topic === topic)
 
     setFilterSectionContent(getContents)
   }
@@ -56,11 +51,11 @@ export function CategoryComponent({
       left: 0
     })
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [topic, sectionsContents.length])
+  }, [topic, sections.length])
 
   return (
     <div className="flex flex-col items-center justify-start w-full py-10">
-      {(filteredSectionContent || sectionsContents)?.map((section, index) => {
+      {(filteredSectionContent || sections)?.map((section, index) => {
         const contents = topic ? section?.content : section?.content.slice(0, 4)
         //  console.log("contents::", contents)
         return (
@@ -113,7 +108,7 @@ export interface BlogCategoryPageProps {
   }
   // searchParams: {},
   topics: string[]
-  sectionsContents: {
+  sections: {
     topic: string
     content: getBlogCategoriesTypes['allBlogBitcoins']
   }[]

@@ -8,6 +8,9 @@ export default async function BlogPage(props: any) {
   const sections = await getArticleSections(props.params.lang as SiteLocale)
   return (
     <main>
+      <h1 className="flex justify-center py-10 heading md:py-24">
+        AI, Crypto & Startup Ventures.
+      </h1>
       <BlogSections sections={sections} />
     </main>
   )
