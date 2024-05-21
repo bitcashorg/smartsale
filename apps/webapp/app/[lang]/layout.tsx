@@ -50,7 +50,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
 
 const DynamicSessionDialog = dynamic(
   () =>
-    import('../components/layout/session/session-dialog').then(
+    import('../../components/layout/session/session-dialog').then(
       mod => mod.SessionDialog
     ),
   {
