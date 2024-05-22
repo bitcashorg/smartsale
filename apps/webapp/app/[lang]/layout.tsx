@@ -51,10 +51,8 @@ export default async function RootLayout({ children }: RootLayoutProps) {
 
 // generate static routes for a given set of locales,
 export async function generateStaticParams() {
-  return locales.map(lang => ({lang}))
-  // return ['en'].map(lang => ({lang}))
+  return locales.map(lang => ({ lang }))
 }
- 
 
 const DynamicSessionDialog = dynamic(
   () =>

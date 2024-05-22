@@ -124,10 +124,10 @@ export async function getBlogCategory(
       throw new Error('No records has been found for  ' + category)
     }
   } catch (err) {
-    console.log(
-      'datocms-blog-category.service::getBlogCategory::[ERROR]:: ' + category,
-      err
-    )
+    // console.log(
+    //   'datocms-blog-category.service::getBlogCategory::[ERROR]:: ' + category,
+    //   err
+    // )
 
     error = (err as Error).message
   } finally {

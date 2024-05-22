@@ -30,12 +30,12 @@ export function getCMSSdk({ config }: GraphQLSdkProps = {}) {
       //   headers['X-Include-Drafts'] = 'true'
       // }
 
-      console.log(
-        '\n ==> GraphQL Query : \n',
-        JSON.stringify(
-          (operation as GraphqlOperation).query.replaceAll('"', '')
-        )
-      )
+      // console.log(
+      //   '\n ==> GraphQL Query : \n',
+      //   JSON.stringify(
+      //     (operation as GraphqlOperation).query.replaceAll('"', '')
+      //   )
+      // )
 
       let fetchResponse
 

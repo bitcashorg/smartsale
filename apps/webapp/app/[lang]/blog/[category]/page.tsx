@@ -1,17 +1,23 @@
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import { getBlogCategoryLandingData, getPageSeoText } from '@/services/datocms'
+import {
+  getArticleSections,
+  getBlogCategoryLandingData,
+  getPageSeoText
+} from '@/services/datocms'
 import { generateMetadataFromSEO } from '@/lib/seo'
 import { BlogSections } from '@/components/routes/blog/sections'
+import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
+import { locales } from '@/app/dictionaries/locales'
 
-export default async function Page(props: any) {
+export default async function Page(props: CategoryPageProps) {
   const {
     params: { lang, category }
   } = props
 
   const data = await getBlogCategoryLandingData(lang, category)
-
   if (!data) notFound()
+
   const { sections, pageSeo } = data
 
   return (
@@ -32,6 +38,20 @@ export default async function Page(props: any) {
   )
 }
 
+export async function generateStaticParams(): Promise<CategoryPageParams[]> {
+  const params: CategoryPageParams[] = (
+    await Promise.all(
+      locales.map(async (lang): Promise<CategoryPageParams[]> => {
+        const sections = await getArticleSections(lang)
+        if (!sections) throw 'sections not found'
+        const categories = sections.map(section => section.slug)
+        return categories.map(category => ({ lang, category }))
+      })
+    )
+  ).flat()
+  return params
+}
+
 export async function generateMetadata(props: any): Promise<Metadata> {
   const {
     params: { lang, category }
@@ -50,3 +70,6 @@ export async function generateMetadata(props: any): Promise<Metadata> {
 
   return generateMetadataFromSEO(seoData)
 }
+
+type CategoryPageParams = { lang: SiteLocale; category: string }
+type CategoryPageProps = { params: CategoryPageParams }
