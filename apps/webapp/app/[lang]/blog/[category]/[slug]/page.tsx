@@ -11,7 +11,6 @@ export default async function ArticlePage(props: any) {
   } = props
 
   const data = await getBlogArticleData(lang, category, slug)
-  // getPosts()
   if (!data) return notFound()
 
   const { blogContent, i18n, relatedBlogs } = data

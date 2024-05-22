@@ -141,9 +141,6 @@ export async function getBlogCategory(
   }
 }
 
-// TODO: Use getBlogCategory instead a single query in this function.
-// * > E.g.: const dataResults = await Promise.all(getBlogCategory('bitcoin', locale, fallbackLocales), getBlogCategory('crypto', locale, fallbackLocales), getBlogCategory('investing', locale, fallbackLocales), getBlogCategory('startup', locale, fallbackLocales), getBlogCategory('ai', locale, fallbackLocales), getBlogCategory('news', locale, fallbackLocales), getBlogCategory('bitcash', locale, fallbackLocales))
-// ? > This would increase enormously the performance of the page for both article list pages and article page.
 export async function getBlogCategories(
   locale: SiteLocale,
   fallbackLocales: SiteLocale[]
