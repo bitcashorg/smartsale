@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { createSupabaseServerClient } from '@/lib/supabase'
+import { createSupabaseServerClient } from '@/services/supabase'
 import { APIClient } from '@wharfkit/antelope'
 import {
   AbiProvider,

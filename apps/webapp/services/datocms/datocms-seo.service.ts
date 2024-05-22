@@ -1,8 +1,8 @@
-import { getCMSSdk } from "@/services/datocms/graphql/cms"
+import { getCMSSdk } from '@/services/datocms/graphql/cms'
 import {
   PageSeoRecord,
-  SiteLocale,
-} from "@/services/datocms/graphql/generated/cms"
+  SiteLocale
+} from '@/services/datocms/graphql/generated/cms'
 
 export async function getPageSeoText(
   type: string,
@@ -17,9 +17,9 @@ export async function getPageSeoText(
           fallbackLocales,
           filter: {
             seoType: {
-              eq: type,
-            },
-          },
+              eq: type
+            }
+          }
         },
         pageSeo: {
           description: true,
@@ -29,47 +29,47 @@ export async function getPageSeoText(
             url: true,
             title: true,
             size: true,
-            width: true,
+            width: true
           },
           title: true,
-          twitterCard: true,
+          twitterCard: true
         },
         description: true,
         title: true,
         seoType: true,
         id: true,
-        _createdAt: true,
-      },
+        _createdAt: true
+      }
     })
 
     return data.pageSeo as CMSPageSeoText
   } catch (error) {
-    console.error("datocms-layout.service::getLayoutText::[ERROR]", error)
+    console.error('datocms-layout.service::getLayoutText::[ERROR]', error)
 
     return {
       pageSeo: {
-        description: "Lorem ipsum dolor sit amet consort sit!",
+        description: 'Lorem ipsum dolor sit amet consort sit!',
         image: null,
-        title: "Eli5 | BitcashBank",
+        title: 'Eli5 | BitcashBank',
         twitterCard: null,
         noIndex: false,
-        __typename: "SeoField",
+        __typename: 'SeoField'
       },
-      description: "Lorem ipsum dolor sit amet consort sit!",
+      description: 'Lorem ipsum dolor sit amet consort sit!',
 
-      title: "Eli5 | BitcashBank",
-      seoType: "eli5",
-      id: "164119661",
-      _createdAt: "2023-06-12T06:53:45+01:00",
+      title: 'Eli5 | BitcashBank',
+      seoType: 'eli5',
+      id: '164119661',
+      _createdAt: '2023-06-12T06:53:45+01:00'
     }
   }
 }
 
 export interface CMSPageSeoText {
-  pageSeo: PageSeoRecord["pageSeo"]
-  seoType: PageSeoRecord["seoType"]
-  id: PageSeoRecord["id"]
-  description: PageSeoRecord["description"]
-  title: PageSeoRecord["title"]
-  _createdAt: PageSeoRecord["_createdAt"]
+  pageSeo: PageSeoRecord['pageSeo']
+  seoType: PageSeoRecord['seoType']
+  id: PageSeoRecord['id']
+  description: PageSeoRecord['description']
+  title: PageSeoRecord['title']
+  _createdAt: PageSeoRecord['_createdAt']
 }

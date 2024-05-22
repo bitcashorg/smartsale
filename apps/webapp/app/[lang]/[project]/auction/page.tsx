@@ -63,7 +63,7 @@ export default async function AuctionPage({ params }: ProjectPageProps) {
         <Tabs tabs={tabs} />
       </section>
 
-      <hr className="max-w-screen-xl mx-auto mt-24 border-gray-600/80" />
+      <hr className="mx-auto mt-24 max-w-screen-xl border-gray-600/80" />
     </div>
   )
 }

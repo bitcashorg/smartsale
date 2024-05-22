@@ -2,7 +2,7 @@
 
 import { getSesssion } from '@/actions'
 import { genLoginSigningRequest } from '@/lib/eos'
-import { useSupabaseClient } from '@/lib/supabase'
+import { useSupabaseClient } from '@/services/supabase'
 import { createContextHook } from '@blockmatic/hooks-utils'
 import { useConnectModal } from '@rainbow-me/rainbowkit'
 import { Tables } from '@repo/supabase'

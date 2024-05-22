@@ -13,7 +13,7 @@ import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { Address } from 'viem'
 import { useAccount } from 'wagmi'
-import { useSupabaseClient } from '@/lib/supabase'
+import { useSupabaseClient } from '@/services/supabase'
 
 export function TransactionsTable() {
   const supabase = useSupabaseClient()

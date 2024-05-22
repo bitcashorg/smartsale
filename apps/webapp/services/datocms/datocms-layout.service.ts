@@ -1,8 +1,8 @@
-import { getCMSSdk } from "@/services/datocms/graphql/cms"
+import { getCMSSdk } from '@/services/datocms/graphql/cms'
 import {
   LayoutRecord,
-  SiteLocale,
-} from "@/services/datocms/graphql/generated/cms"
+  SiteLocale
+} from '@/services/datocms/graphql/generated/cms'
 
 export async function getLayoutText(
   locale: SiteLocale,
@@ -13,7 +13,7 @@ export async function getLayoutText(
       layout: {
         __args: {
           locale,
-          fallbackLocales,
+          fallbackLocales
         },
         navigationTopic: true,
         navigationCategories: true,
@@ -33,95 +33,95 @@ export async function getLayoutText(
         investingFollowLinks: true,
         startUpsFollowLinks: true,
         cookieConsentDescription: true,
-        cookieConsentCta: true,
-      },
+        cookieConsentCta: true
+      }
     })
 
     return data.layout as CMSLayoutText
   } catch (error) {
-    console.error("datocms-layout.service::getLayoutText::[ERROR]", error)
+    console.error('datocms-layout.service::getLayoutText::[ERROR]', error)
 
     return {
       navigationTopic: {
-        bitcoin: "Bitcoin",
-        gems: "Gems",
-        how_to: "How To",
-        analysis: "Analysis",
-        opinion: "Opinion",
+        bitcoin: 'Bitcoin',
+        gems: 'Gems',
+        how_to: 'How To',
+        analysis: 'Analysis',
+        opinion: 'Opinion'
       },
       navigationCategories: {
-        startups: "Start Ups",
-        ai: "AI",
-        investing: "Investing",
-        crypto: "Cryto",
+        startups: 'Start Ups',
+        ai: 'AI',
+        investing: 'Investing',
+        crypto: 'Cryto'
       },
-      searchInputPlaceholder: "Search",
+      searchInputPlaceholder: 'Search',
       homeFollowLinks: {
-        telegram: "https://t.me/bitcash_org",
-        twitter: "https://twitter.com/bitcashorg",
-        medium: "https://medium.com/bitcashBank",
+        telegram: 'https://t.me/bitcash_org',
+        twitter: 'https://twitter.com/bitcashorg',
+        medium: 'https://medium.com/bitcashBank'
       },
       cryptoFollowLinks: {
-        telegram: "https://t.me/bitcash_org",
-        twitter: "https://twitter.com/bitcashorg",
-        medium: "https://medium.com/bitcashBank",
+        telegram: 'https://t.me/bitcash_org',
+        twitter: 'https://twitter.com/bitcashorg',
+        medium: 'https://medium.com/bitcashBank'
       },
       bitcoinFollowLinks: {
-        telegram: "https://t.me/bitcash_org",
-        twitter: "https://twitter.com/bitcashorg",
-        medium: "https://medium.com/bitcashBank",
+        telegram: 'https://t.me/bitcash_org',
+        twitter: 'https://twitter.com/bitcashorg',
+        medium: 'https://medium.com/bitcashBank'
       },
       aiFollowLinks: {
-        telegram: "https://t.me/bitcash_org",
-        twitter: "https://twitter.com/bitcashorg",
-        medium: "https://medium.com/bitcashBank",
+        telegram: 'https://t.me/bitcash_org',
+        twitter: 'https://twitter.com/bitcashorg',
+        medium: 'https://medium.com/bitcashBank'
       },
       investingFollowLinks: {
-        telegram: "https://t.me/bitcash_org",
-        twitter: "https://twitter.com/bitcashorg",
-        medium: "https://medium.com/bitcashBank",
+        telegram: 'https://t.me/bitcash_org',
+        twitter: 'https://twitter.com/bitcashorg',
+        medium: 'https://medium.com/bitcashBank'
       },
       startUpsFollowLinks: {
-        telegram: "https://t.me/bitcash_org",
-        twitter: "https://twitter.com/bitcashorg",
-        medium: "https://medium.com/bitcashBank",
+        telegram: 'https://t.me/bitcash_org',
+        twitter: 'https://twitter.com/bitcashorg',
+        medium: 'https://medium.com/bitcashBank'
       },
-      backHome: "back to home",
-      backBitcash: "back to bitcash.org",
+      backHome: 'back to home',
+      backBitcash: 'back to bitcash.org',
       navigationPoliciesTerms: {
-        privacy_policy: "Privacy Policy",
-        terms_and_conditions: "Terms and Conditions",
+        privacy_policy: 'Privacy Policy',
+        terms_and_conditions: 'Terms and Conditions'
       },
-      subscriptionTitle: "Subscribe For The Latest Updates",
+      subscriptionTitle: 'Subscribe For The Latest Updates',
       subscriptionSubtitle:
-        "Subscribe to the newsletter and never miss the new post every week.",
-      subscriptionInputPlaceholder: "Enter your email here …",
-      subscriptionCta: "Subscribe",
+        'Subscribe to the newsletter and never miss the new post every week.',
+      subscriptionInputPlaceholder: 'Enter your email here …',
+      subscriptionCta: 'Subscribe',
       cookieConsentDescription:
-        "This website uses cookies to improve user experience. By using our website you consent to all cookies in accordance with our Cookie Policy.",
-      cookieConsentCta: "Accept",
+        'This website uses cookies to improve user experience. By using our website you consent to all cookies in accordance with our Cookie Policy.',
+      cookieConsentCta: 'Accept'
     }
   }
 }
 
 export interface CMSLayoutText {
-  navigationTopic: LayoutRecord["navigationTopic"]
-  navigationCategories: LayoutRecord["navigationCategories"]
+  navigationTopic: LayoutRecord['navigationTopic']
+  navigationCategories: LayoutRecord['navigationCategories']
   searchInputPlaceholder: string
   // followLinks: LayoutRecord['followLinks']
   backHome: string
   backBitcash: string
-  navigationPoliciesTerms: LayoutRecord["navigationPoliciesTerms"]
+  navigationPoliciesTerms: LayoutRecord['navigationPoliciesTerms']
   subscriptionTitle: string
   subscriptionSubtitle: string
   subscriptionInputPlaceholder: string
   subscriptionCta: string
-  homeFollowLinks: LayoutRecord["homeFollowLinks"]
-  cryptoFollowLinks: LayoutRecord["cryptoFollowLinks"]
-  bitcoinFollowLinks: LayoutRecord["bitcoinFollowLinks"]
-  aiFollowLinks: LayoutRecord["aiFollowLinks"]
-  investingFollowLinks: LayoutRecord["investingFollowLinks"]
-  startUpsFollowLinks: LayoutRecord["startUpsFollowLinks"]
+  homeFollowLinks: LayoutRecord['homeFollowLinks']
+  cryptoFollowLinks: LayoutRecord['cryptoFollowLinks']
+  bitcoinFollowLinks: LayoutRecord['bitcoinFollowLinks']
+  aiFollowLinks: LayoutRecord['aiFollowLinks']
+  investingFollowLinks: LayoutRecord['investingFollowLinks']
+  startUpsFollowLinks: LayoutRecord['startUpsFollowLinks']
   cookieConsentDescription: string
   cookieConsentCta: string
 }

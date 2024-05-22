@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import { getBlogArticleData, getPosts } from '@/services/datocms'
+import { getBlogArticleData } from '@/services/datocms'
 import { getBlogCategory } from '@/services/datocms/datacms-blog-category.service'
 import { generateMetadataFromSEO } from '@/lib/seo'
 import { BlogPage } from '@/components/routes/blog/article'

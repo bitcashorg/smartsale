@@ -6,12 +6,12 @@ import { LucideIcons } from './lucide-icons'
 
 export function BlogSections({ sections }: BlogSectionsProps) {
   return (
-    <div className="flex flex-col items-center justify-start w-full py-10">
+    <div className="flex w-full flex-col items-center justify-start py-10">
       {sections.map(
         section =>
           section?.articles?.length > 0 && (
             <section className="container mb-10" key={section.name}>
-              <div className="flex items-center justify-between text-xl mb-space-32">
+              <div className="mb-space-32 flex items-center justify-between text-xl">
                 <span className="pl-3 font-bold text-black dark:text-white">
                   / {section.name}
                 </span>
