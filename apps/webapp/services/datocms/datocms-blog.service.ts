@@ -6,7 +6,6 @@ import {
 import { getLayoutText } from './datocms-layout.service'
 import { getPageSeoText } from './datocms-seo.service'
 import { BlogAiRecord, SiteLocale } from './graphql/generated/cms'
-import { datoClient } from './datocms-nodejs-client'
 
 export const getBlogData = async (locale: SiteLocale) => {
   const locales = [locale]
@@ -210,16 +209,6 @@ export async function getBlogArticleData(
   }
 
   return { relatedBlogs, blogContent, i18n, topics }
-}
-
-export async function getPosts() {
-  try {
-    const itemTypes = await datoClient.itemTypes.list()
-
-    console.log('💥 ITEM TYPES', itemTypes)
-  } catch (error) {
-    console.error('Error fetching posts:', error)
-  }
 }
 
 export type ArticlesSection = {
