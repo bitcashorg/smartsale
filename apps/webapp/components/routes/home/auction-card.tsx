@@ -35,7 +35,7 @@ export function AuctionCard(project: Project) {
           placeholder="blur"
           className="h-[216px] w-full rounded-t-xl object-cover group-hover:shadow-xl"
           alt={title}
-          loading="lazy"
+          priority
           sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px"
         />
         <Suspense fallback={<figcaption>{badgeText}</figcaption>}>
