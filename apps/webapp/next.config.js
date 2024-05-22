@@ -20,15 +20,6 @@ const nextConfig = {
               'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version'
           }
         ]
-      },
-      {
-        source: '/:path*',
-        headers: [
-          {
-            key: 'Timing-Allow-Origin',
-            value: '*' // Adjust the origin as needed
-          }
-        ]
       }
     ]
   },
