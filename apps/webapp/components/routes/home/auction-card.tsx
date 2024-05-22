@@ -5,9 +5,11 @@ import Link from 'next/link'
 import React, { Suspense } from 'react'
 import { MotionFigcaption } from './motion-figcaption'
 import { ProjectCardButtons } from './auction-card-buttons'
+import { isMobile } from 'react-device-detect'
 
 export function AuctionCard(project: Project) {
   const {
+    id,
     title,
     pitch,
     fundraiseGoal,
@@ -35,8 +37,9 @@ export function AuctionCard(project: Project) {
           placeholder="blur"
           className="h-[216px] w-full rounded-t-xl object-cover group-hover:shadow-xl"
           alt={title}
-          priority
           sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px"
+          {...(id !== 1 && isMobile && { loading: 'lazy' })}
+          {...((id === 1 || !isMobile) && { priority: true })}
         />
         <Suspense fallback={<figcaption>{badgeText}</figcaption>}>
           <MotionFigcaption label={badgeText} />
