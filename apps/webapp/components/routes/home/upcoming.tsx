@@ -1,18 +1,11 @@
 import { Project } from '@/lib/projects'
-import dynamic from 'next/dynamic'
-
-const DynamicAuctionCard = dynamic(
-  () => import('./auction-card').then(mod => mod.AuctionCard),
-  {
-    ssr: false
-  }
-)
+import { AuctionCard } from './auction-card'
 
 export function Upcoming({ projects }: { projects: Project[] }) {
   return (
     <section className="align-center relative z-10 flex min-h-[80vh] flex-col justify-center pt-10">
-      <h1 className="mx-auto mb-10 flex flex-col whitespace-pre-line text-center md:mb-24">
-        <sub className="h-8 w-full text-xl font-semibold leading-none drop-shadow-md md:h-10 md:text-2xl">
+      <h1 className="flex flex-col mx-auto mb-10 text-center whitespace-pre-line md:mb-24">
+        <sub className="w-full h-8 text-xl font-semibold leading-none drop-shadow-md md:h-10 md:text-2xl">
           {textContent.eyebrow}
         </sub>
         <span
@@ -27,20 +20,20 @@ export function Upcoming({ projects }: { projects: Project[] }) {
           {textContent.title.split('AI/WEB3')[1]}
         </span>
       </h1>
-      <h2 className="relative flex w-full justify-center py-10 text-center text-3xl font-bold leading-none">
+      <h2 className="relative flex justify-center w-full py-10 text-3xl font-bold leading-none text-center">
         Upcoming Auctions
-        <div className="blur-effect-bg absolute top-0" />
+        <div className="absolute top-0 blur-effect-bg" />
       </h2>
       <div
-        className="grid scroll-m-3 auto-rows-fr grid-cols-1 gap-6 self-center lg:grid-cols-3 lg:self-stretch"
+        className="grid self-center grid-cols-1 gap-6 scroll-m-3 auto-rows-fr lg:grid-cols-3 lg:self-stretch"
         key="upcoming-auctions-description-container"
       >
         {projects.map((item, index) => (
           <div
             key={`upcoming-auctions-item-${index}`}
-            className="box-border size-full justify-center rounded-xl border border-card/30 bg-card backdrop-blur-lg"
+            className="box-border justify-center border size-full rounded-xl border-card/30 bg-card backdrop-blur-lg"
           >
-            <DynamicAuctionCard {...item} />
+            <AuctionCard {...item} />
           </div>
         ))}
       </div>
