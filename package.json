@@ -12,16 +12,6 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "clean:node_modules": "find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +"
   },
-  "devDependencies": {
-    "@types/bn.js": "^5.1.5",
-    "@types/node": "latest",
-    "eslint": "^8.44.0",
-    "postcss-import": "^16.1.0",
-    "postcss-nesting": "^12.1.1",
-    "prettier": "^3.2.5",
-    "prisma": "latest",
-    "turbo": "^1.11.2"
-  },
   "workspaces": {
     "packages": [
       "apps/*",
@@ -34,22 +24,13 @@
     ]
   },
   "packageManager": "bun@1.1.9",
-  "dependencies": {
-    "-": "^0.0.1",
-    "@datocms/cma-client-node": "^3.3.1",
-    "@formatjs/intl-localematcher": "^0.5.4",
-    "@genql/runtime": "^2.10.0",
-    "@headlessui/react": "^2.0.3",
-    "@radix-ui/react-slider": "^1.1.2",
-    "@types/negotiator": "^0.6.3",
-    "@types/react": "latest",
-    "@types/react-dom": "latest",
-    "@vercel/speed-insights": "^1.0.10",
-    "datocms-structured-text-to-plain-text": "^4.0.0",
-    "negotiator": "^0.6.3",
-    "next-share": "^0.27.0",
-    "react": "latest",
-    "react-dom": "latest",
-    "sharp": "^0.33.3"
+  "devDependencies": {
+    "@types/bn.js": "^5.1.5",
+    "@types/node": "latest",
+    "eslint": "^9.3.0",
+    "postcss-import": "^16.1.0",
+    "postcss-nesting": "^12.1.1",
+    "prettier": "^3.2.5",
+    "turbo": "^1.11.2"
   }
 }
