@@ -1,24 +1,8 @@
-import { getCMSSdk } from "@/services/datocms/graphql/cms"
-import {
-  BlogAiModelFilter,
-  BlogAiRecord,
-  BlogBitcashModelFilter,
-  BlogBitcashRecord,
-  BlogBitcoinModelFilter,
-  BlogBitcoinRecord,
-  BlogCryptoModelFilter,
-  BlogCryptoRecord,
-  BlogInvestingRecord,
-  BlogNewsModelFilter,
-  BlogNewsRecord,
-  BlogStartupModelFilter,
-  BlogStartupRecord,
-  ResearchAiRecord,
-  SiteLocale,
-} from "@/services/datocms/graphql/generated/cms"
+import { getCMSSdk } from '@/services/datocms/graphql/cms'
+import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
 
 export async function getPageContent(
-  category: "terms_condition" | "privacy_policy",
+  category: 'terms_condition' | 'privacy_policy',
   locale: SiteLocale,
   fallbackLocales: SiteLocale[]
 ) {
@@ -26,38 +10,38 @@ export async function getPageContent(
   let error
 
   try {
-    let pageName = ""
+    let pageName = ''
     switch (category) {
-      case "terms_condition":
-        pageName = "termsAndCondition"
+      case 'terms_condition':
+        pageName = 'termsAndCondition'
         break
-      case "privacy_policy":
-        pageName = "privacyPolicy"
+      case 'privacy_policy':
+        pageName = 'privacyPolicy'
         break
       default:
-        throw new Error("Invalid category")
+        throw new Error('Invalid category')
     }
 
     const data = await getCMSSdk().query({
       [pageName]: {
         __args: {
           locale: locale,
-          fallbackLocales: fallbackLocales,
+          fallbackLocales: fallbackLocales
         },
         mainContent: {
-          value: true,
-        },
-      },
+          value: true
+        }
+      }
     })
 
     dataRecord = data[pageName as keyof typeof data] as MainContentBlock
 
     if (!dataRecord) {
-      throw new Error("No records has been found for  " + category)
+      throw new Error('No records has been found for  ' + category)
     }
   } catch (err) {
     console.log(
-      "datocms-page.service::getPageContent::[ERROR]:: " + category,
+      'datocms-page.service::getPageContent::[ERROR]:: ' + category,
       err
     )
 
@@ -65,7 +49,7 @@ export async function getPageContent(
   } finally {
     return {
       [`Data`]: dataRecord,
-      [`Error`]: error,
+      [`Error`]: error
     }
   }
 }

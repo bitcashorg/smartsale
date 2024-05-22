@@ -1,7 +1,9 @@
-import { getProjectBySlug } from '@/lib/projects'
+import { getProjectBySlug, projects } from '@/lib/projects'
 import { redirect } from 'next/navigation'
 import { cn } from '@/lib/utils'
 import { ProjectHeader } from '@/components/routes/project/project-header'
+import { locales } from '@/app/dictionaries/locales'
+import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
 
 export default async function ProjectPage({ params }: ProjectPageProps) {
   const project = await getProjectBySlug(params.project)
@@ -74,6 +76,23 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
   )
 }
 
+export async function generateStaticParams(): Promise<ProjectPageParams[]> {
+  const params: ProjectPageParams[] = (
+    await Promise.all(
+      locales.map(async (lang): Promise<ProjectPageParams[]> => {
+        return projects
+          .map(project =>
+            project.slug ? { lang, project: project.slug } : null
+          )
+          .filter((param): param is ProjectPageParams => param !== null)
+      })
+    )
+  ).flat()
+
+  return params
+}
+
+type ProjectPageParams = { project: string; lang: SiteLocale }
 type ProjectPageProps = {
-  params: { project: string }
+  params: ProjectPageParams
 }
