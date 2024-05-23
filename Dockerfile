@@ -45,7 +45,7 @@ WORKDIR /app/apps/webapp/
 EXPOSE 3000
 
 # Define environment variable
-ENV NODE_ENV=production
+ENV NODE_ENV=development
 
 # Set the command to run your application
 CMD ["bun", "run", "dev"]

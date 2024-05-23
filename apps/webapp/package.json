@@ -2,7 +2,7 @@
   "private": true,
   "name": "launchpad-webapp",
   "scripts": {
-    "dev": "rm -rf .next && next dev --turbo",
+    "dev": "export NODE_ENV=development && rm -rf .next && next dev --turbo",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
