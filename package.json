@@ -8,6 +8,7 @@
   "scripts": {
     "build": "turbo build --no-daemon",
     "dev": "turbo dev --no-daemon --parallel",
+    "dev:webapp": "turbo run dev --scope=launchpad-webapp",
     "lint": "turbo lint --no-daemon",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "clean:node_modules": "find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +"
@@ -20,7 +21,9 @@
     "postcss-nesting": "^12.1.1",
     "prettier": "^3.2.5",
     "prisma": "latest",
-    "turbo": "^1.11.2"
+    "turbo": "^1.11.2",
+    "vite": "^4.0.0",
+    "next": "latest"
   },
   "workspaces": {
     "packages": [

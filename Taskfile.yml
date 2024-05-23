@@ -17,3 +17,16 @@ tasks:
    - docker build --no-cache  -t launchpad-indexer -f apps/indexer/Dockerfile .
    - docker run -p 8080:8080 --env-file ./apps/indexer/.env launchpad-indexer
 
+  build-image-webapp:
+    cmds:
+      - docker build -t launchpad-webapp .
+
+  run-container-webapp:
+    cmds:
+      - docker run -p 3000:3000 launchpad-webapp
+
+  build-and-run-webapp:
+    deps: [build-image-webapp]
+    cmds:
+      - task run-container-webapp
+
