@@ -96,6 +96,19 @@ Kickstart the development server:
 bun run dev
 ```
 
+### Local Development
+
+```bash
+# run the webapp
+task build-and-run-webapp
+
+# stop the webapp
+task stop-container-webapp
+
+# enter the webapp container
+docker exec -it launchpad-webapp-container /bin/sh
+```
+
 ## Contributing
 
 We value contributions from the community and encourage participation through code contributions, feedback, and suggestions. Join our collaborative efforts to refine and expand the capabilities of SmartSale.

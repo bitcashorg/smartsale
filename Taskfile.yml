@@ -5,28 +5,39 @@ silent: true
 
 tasks:
   app:
-    - turbo run dev --scope="launchpad-webapp"
+    cmds:
+      - turbo run dev --scope="launchpad-webapp"
 
   faucet:
-    - turbo run dev --scope="launchpad-faucet"
+    cmds:
+      - turbo run dev --scope="launchpad-faucet"
 
   indexer:
-    - turbo run dev --scope="launchpad-indexer"
+    cmds:
+      - turbo run dev --scope="launchpad-indexer"
 
   indexer-docker:
-   - docker build --no-cache  -t launchpad-indexer -f apps/indexer/Dockerfile .
-   - docker run -p 8080:8080 --env-file ./apps/indexer/.env launchpad-indexer
+    cmds:
+      - docker build --no-cache -t launchpad-indexer -f apps/indexer/Dockerfile .
+      - docker run -p 8080:8080 --env-file ./apps/indexer/.env launchpad-indexer
 
   build-image-webapp:
     cmds:
-      - docker build -t launchpad-webapp .
+      - docker-compose build app
 
   run-container-webapp:
     cmds:
-      - docker run -p 3000:3000 launchpad-webapp
+      - docker-compose up -d app
+
+  stop-container-webapp:
+    cmds:
+      - docker-compose down
 
   build-and-run-webapp:
     deps: [build-image-webapp]
     cmds:
       - task run-container-webapp
-
+    preconditions:
+      - task: stop-container-webapp
+        silent: true
+        ignore_error: true
