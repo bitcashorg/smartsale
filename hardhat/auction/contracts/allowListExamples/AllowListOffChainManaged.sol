@@ -1,4 +1,4 @@
-build-and-run-webapppragma solidity >=0.6.8;
+pragma solidity >=0.6.8;
 import "../interfaces/AllowListVerifier.sol";
 import "../EasyAuction.sol";
 
