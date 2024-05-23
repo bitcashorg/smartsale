@@ -6,6 +6,7 @@ services:
     environment:
       - NODE_ENV=development
     volumes:
-      - .:/usr/src/app
+      - .:/app
+      - /app/node_modules
     command: bun run dev
     container_name: launchpad-webapp-container

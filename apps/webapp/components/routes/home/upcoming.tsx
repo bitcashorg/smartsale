@@ -21,7 +21,7 @@ export function Upcoming({ projects }: { projects: Project[] }) {
         </span>
       </h1>
       <h2 className="relative flex justify-center w-full py-10 text-3xl font-bold leading-none text-center">
-        Upcoming Auctions X
+        Upcoming Auctions XX
         <div className="absolute top-0 blur-effect-bg" />
       </h2>
       <div
