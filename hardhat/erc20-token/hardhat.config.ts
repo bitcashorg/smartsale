@@ -19,5 +19,15 @@ module.exports = {
       url: "https://rpc.sepolia.org",
       chainId: 11155111,
     },
+    arbitrumOne: {
+      accounts: [process.env.PK],
+      url: 'https://arb1.arbitrum.io/rpc',
+      chainId: 42161
+    },
+    arbitrumSepolia: {
+      accounts: [process.env.PK],
+      url: 'https://sepolia-rollup.arbitrum.io/rpc',
+      chainId: 421614
+    },
   },
 };
