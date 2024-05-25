@@ -4,8 +4,10 @@ import { getBlogArticleData } from '@/services/datocms'
 import { getBlogCategory } from '@/services/datocms/datacms-blog-category.service'
 import { generateMetadataFromSEO } from '@/lib/seo'
 import { BlogPage } from '@/components/routes/blog/article'
+import { getAllArticles } from '@/services/datocms/datocms-all-articles.service'
+import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
 
-export default async function ArticlePage(props: any) {
+export default async function ArticlePage(props: ArticlePageProps) {
   const {
     params: { lang, category, slug }
   } = props
@@ -45,7 +47,6 @@ export async function generateMetadata(props: any): Promise<Metadata> {
   } = props
 
   const locales = [lang]
-
   const categories = await getBlogCategory(category, lang, locales, {
     slug: {
       eq: slug
@@ -78,3 +79,32 @@ export async function generateMetadata(props: any): Promise<Metadata> {
 
   return generateMetadataFromSEO(seoData)
 }
+
+export async function generateStaticParams(): Promise<ArticlePageParams[]> {
+  const locales = ['en'] as SiteLocale[] // english only for now
+  const params: ArticlePageParams[] = (
+    await Promise.all(
+      locales.map(async (lang): Promise<ArticlePageParams[]> => {
+        const allArticles = await getAllArticles(lang, ['en'])
+        if (!allArticles) throw new Error('sections not found')
+
+        const staticParams: ArticlePageParams[] = allArticles
+          .map(({ articles, category }) => {
+            return articles.map(article => ({
+              slug: article.slug,
+              lang,
+              category
+            }))
+          })
+          .flat()
+
+        return staticParams
+      })
+    )
+  ).flat() // Flatten the array of arrays into a single array
+
+  return params
+}
+
+type ArticlePageParams = { lang: SiteLocale; category: string; slug: string }
+type ArticlePageProps = { params: ArticlePageParams }

@@ -194,18 +194,18 @@ export async function getBlogArticleData(
         neq: slug
       }
     })
-    relatedBlogs = relatedBlogs[`${blogCategory}Data`].filter(
-      (blog: BlogAiRecord) =>
-        (blog.topics as string[]).some((topic: string) =>
-          topics.includes(topic)
-        ) &&
-        blog.description?.match(
-          new RegExp(`(${blogContent.title.replace(/\s/g, '|')})`, 'gi')
-        ) &&
-        blog.title?.match(
-          new RegExp(`(${blogContent.title.replace(/\s/g, '|')})`, 'gi')
-        )
-    )
+    // relatedBlogs = relatedBlogs[`${blogCategory}Data`].filter(
+    //   (blog: BlogAiRecord) =>
+    //     (blog.topics as string[]).some((topic: string) =>
+    //       topics.includes(topic)
+    //     ) &&
+    //     blog.description?.match(
+    //       new RegExp(`(${blogContent.title.replace(/\s/g, '|')})`, 'gi')
+    //     ) &&
+    //     blog.title?.match(
+    //       new RegExp(`(${blogContent.title.replace(/\s/g, '|')})`, 'gi')
+    //     )
+    // )
   }
 
   return { relatedBlogs, blogContent, i18n, topics }
