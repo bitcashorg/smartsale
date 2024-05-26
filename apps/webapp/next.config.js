@@ -34,7 +34,7 @@ const nextConfig = {
           as: '*.js'
         }
       }
-    } 
+    }
   },
   reactStrictMode: true,
   swcMinify: true,
@@ -42,11 +42,15 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: "https",
-        hostname: "www.datocms-assets.com",
+        protocol: 'https',
+        hostname: 'www.datocms-assets.com'
       },
-    ],
-  },
+      {
+        protocol: 'https',
+        hostname: 'datocms-assets.com'
+      }
+    ]
+  }
 }
 
 const withBundleAnalyzer = require('@next/bundle-analyzer')()

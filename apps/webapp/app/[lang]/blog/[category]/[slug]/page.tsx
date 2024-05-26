@@ -17,19 +17,11 @@ export default async function ArticlePage(props: ArticlePageProps) {
 
   const { blogContent, i18n, relatedBlogs } = data
 
+  console.log(JSON.stringify(blogContent.contentBlock))
+
   return (
     <section>
-      {/* <header className="flex flex-col py-10 md:py-24 ">
-        <h1 className="flex justify-center heading ">
-          {blogContent.title} <br />
-        </h1>
-        <h2 className="flex justify-center text-xl font-semibold">
-          {blogContent.description}
-        </h2>
-      </header> */}
-
       <main className="mx-auto content-container">
-        {/* <pre>{JSON.stringify(blogContent, null, 2)}</pre> */}
         <BlogPage
           blogContent={blogContent}
           params={props.params}

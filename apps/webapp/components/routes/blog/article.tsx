@@ -43,7 +43,6 @@ export function BlogPage({
 
   return (
     <article>
-      {/* <div className='flex flex-col items-start justify-start md:flex-row'> */}
       <div className="flex flex-col items-start gap-2 mx-auto">
         <header className="order-3 md:order-1">
           <h1 className="flex justify-center font-bold text-black heading dark:text-white">
@@ -86,69 +85,74 @@ export function BlogPage({
             id="extrat-blog-content"
           >
             {blogContent?.contentBlock?.map(
-              ({ mainContent, topImages }, ind: number) => (
-                <div key={ind}>
-                  {topImages?.length > 0 &&
-                    topImages.map(
+              ({ mainContent, topImages }, ind: number) => {
+                return (
+                  <div key={ind}>
+                    {topImages.map(
                       (
                         image: { url: string | StaticImport; alt: string },
                         index
                       ) => (
                         <div
-                          className="relative order-1 my-10 mt-5 w-full overflow-hidden md:order-3 md:max-w-[800px]"
+                          className="relative order-1 my-10 mt-5 flex min-h-[600px] w-full justify-center overflow-hidden text-center align-middle md:order-3"
                           key={`content-${index}`}
                         >
                           <Image
                             src={image.url}
                             alt={image?.alt || `blog-image-${index}`}
                             fill
+                            layout="fill"
                             loading="lazy"
-                            className="w-auto blogImages"
+                            className="flex self-center m-auto"
                           />
                         </div>
                       )
                     )}
-                  <div>
-                    {/* { mainContent.value.document.children.values} */}
-                    <StructuredText
-                      data={mainContent as StructuredTextGraphQlResponse}
-                      customNodeRules={[
-                        // Add HTML anchors to heading levels for in-page navigation
-                        renderNodeRule(isHeading, ({ node, children, key }) => {
-                          const HeadingTag = `h${node.level}` as any
-                          const anchor = toPlainText(node)
-                            ?.trim()
-                            .toLowerCase()
-                            .replace(/ /g, '-')
-                            .replace(/[^\w-]+/g, '')
-                            .replace(/-$/, '')
-                          return (
-                            // add types to ref and key props to satisfy React requirements
-                            <HeadingTag
-                              className={cn(
-                                'my-5',
-                                node.level === 1 ? 'heading' : 'heading2'
-                              )}
-                              key={key}
-                            >
-                              {children}
-                              <a id={anchor} className="pt-32" />
-                              <a href={`#${anchor}`} />
-                            </HeadingTag>
-                          )
-                        }),
-                        renderNodeRule(isParagraph, ({ children, key }) => {
-                          return (
-                            <p className="paragraph" key={key}>
-                              {children}
-                            </p>
-                          )
-                        })
-                      ]}
-                    />
+                    <div>
+                      {/* { mainContent.value.document.children.values} */}
+                      <StructuredText
+                        data={mainContent as StructuredTextGraphQlResponse}
+                        customNodeRules={[
+                          // Add HTML anchors to heading levels for in-page navigation
+                          renderNodeRule(
+                            isHeading,
+                            ({ node, children, key }) => {
+                              const HeadingTag = `h${node.level}` as any
+                              const anchor = toPlainText(node)
+                                ?.trim()
+                                .toLowerCase()
+                                .replace(/ /g, '-')
+                                .replace(/[^\w-]+/g, '')
+                                .replace(/-$/, '')
+                              return (
+                                // add types to ref and key props to satisfy React requirements
+                                <HeadingTag
+                                  className={cn(
+                                    'my-5',
+                                    node.level === 1 ? 'heading' : 'heading2'
+                                  )}
+                                  key={key}
+                                >
+                                  {children}
+                                  <a id={anchor} className="pt-32" />
+                                  <a href={`#${anchor}`} />
+                                </HeadingTag>
+                              )
+                            }
+                          ),
+                          renderNodeRule(isParagraph, ({ children, key }) => {
+                            return (
+                              <p className="mb-10 paragraph" key={key}>
+                                {children}
+                              </p>
+                            )
+                          })
+                        ]}
+                      />
+                    </div>
                   </div>
-                </div>
-              )
+                )
+              }
             )}
           </div>
 
