@@ -1,13 +1,6 @@
 import { StaticImport } from 'next/dist/shared/lib/get-img-props'
-import Link from 'next/link'
 import { render as toPlainText } from 'datocms-structured-text-to-plain-text'
 import { isHeading, isParagraph } from 'datocms-structured-text-utils'
-// import {
-//   FacebookShareButton,
-//   LinkedinShareButton,
-//   TelegramShareButton,
-//   TwitterShareButton
-// } from 'next-share'
 import {
   renderNodeRule,
   StructuredText,
@@ -16,12 +9,11 @@ import {
 
 import { cn } from '@/lib/utils'
 import { BlogArticleRecord, CMSLayoutText } from '@/services/datocms'
-import { Tag } from './tag'
+
 import Image from 'next/image'
-import { PostCard } from './post-card'
 import { readingTime } from '@/lib/blog'
-import { LucideIcons } from './lucide-icons'
 import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
+import { Button } from '@/components/ui/button'
 
 export function BlogPage({
   i18n,
@@ -78,7 +70,9 @@ export function BlogPage({
 
           <div className="flex space-x-2">
             {blogContent.topics?.map((topic, index) => (
-              <Tag className="mt-space-6" title={topic} key={index} />
+              <Button className="mt-space-6" key={index}>
+                {topic}
+              </Button>
             ))}
           </div>
         </div>
@@ -100,7 +94,10 @@ export function BlogPage({
                         image: { url: string | StaticImport; alt: string },
                         index
                       ) => (
-                        <div className="relative order-1 my-10 mt-5 w-full overflow-hidden md:order-3 md:max-w-[800px]">
+                        <div
+                          className="relative order-1 my-10 mt-5 w-full overflow-hidden md:order-3 md:max-w-[800px]"
+                          key={`content-${index}`}
+                        >
                           <Image
                             src={image.url}
                             alt={image?.alt || `blog-image-${index}`}
@@ -127,7 +124,13 @@ export function BlogPage({
                             .replace(/-$/, '')
                           return (
                             // add types to ref and key props to satisfy React requirements
-                            <HeadingTag className="my-5" key={key}>
+                            <HeadingTag
+                              className={cn(
+                                'my-5',
+                                node.level === 1 ? 'heading' : 'heading2'
+                              )}
+                              key={key}
+                            >
                               {children}
                               <a id={anchor} className="pt-32" />
                               <a href={`#${anchor}`} />
@@ -136,7 +139,7 @@ export function BlogPage({
                         }),
                         renderNodeRule(isParagraph, ({ children, key }) => {
                           return (
-                            <p className="mb-5 text-xl" key={key}>
+                            <p className="paragraph" key={key}>
                               {children}
                             </p>
                           )
@@ -190,7 +193,7 @@ export function BlogPage({
         </main>
       </div>
 
-      {relatedBlogs.length > 0 && (
+      {/* {relatedBlogs.length > 0 && (
         <section className="mt-space-80 mx-auto w-full md:max-w-[74rem] md:px-10">
           <div className="flex items-center justify-between mb-space-32">
             <span className="font-semibold text-black sub-2-lg dark:text-white">
@@ -213,7 +216,7 @@ export function BlogPage({
             ))}
           </ul>
         </section>
-      )}
+      )} */}
     </article>
   )
 }

@@ -45,7 +45,7 @@ export async function getAllArticles(
     }))
 
     // Convert data to a string format
-    const dataString = JSON.stringify(articles, null, 2)
+    // const dataString = JSON.stringify(articles, null, 2)
 
     // // Define the file path and name
     // const filePath = './all-articles-data.json'
