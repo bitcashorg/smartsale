@@ -25,5 +25,5 @@ function getLocale(request: NextRequest): string {
 }
 
 export const config = {
-  matcher: ['/((?!_next|images).*)']
+  matcher: ['/((?!_next|images|api).*)']
 }
