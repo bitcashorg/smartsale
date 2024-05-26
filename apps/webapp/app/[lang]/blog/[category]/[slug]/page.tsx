@@ -16,9 +16,6 @@ export default async function ArticlePage(props: ArticlePageProps) {
   if (!data) return notFound()
 
   const { blogContent, i18n, relatedBlogs } = data
-
-  console.log(JSON.stringify(blogContent.contentBlock))
-
   return (
     <section>
       <main className="mx-auto content-container">
