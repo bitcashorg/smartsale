@@ -68,7 +68,7 @@
     "react-use": "^17.5.0",
     "react-useanimations": "^2.10.0",
     "resend": "^3.2.0",
-    "sharp": "^0.33.3",
+    "sharp": "^0.33.4",
     "smartsale-contracts": "workspace:*",
     "smartsale-env": "workspace:*",
     "smartsale-lib": "workspace:*",
