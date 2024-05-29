@@ -1,0 +1,40 @@
+import { TablesInsert } from '@repo/supabase';
+export declare function upsertAuctionDetail(data: TablesInsert<'auction_details'>): Promise<{
+    address_auctioning_token?: string | null | undefined;
+    address_bidding_token?: string | null | undefined;
+    allow_list_manager?: string | null | undefined;
+    allow_list_signer?: string | null | undefined;
+    chain_id: number;
+    created_at?: string | undefined;
+    current_bidding_amount?: number | null | undefined;
+    current_clearing_order_buy_amount?: number | null | undefined;
+    current_clearing_order_sell_amount?: number | null | undefined;
+    current_clearing_price?: number | null | undefined;
+    current_volume?: number | null | undefined;
+    decimals_auctioning_token?: number | null | undefined;
+    decimals_bidding_token?: number | null | undefined;
+    end_time_timestamp?: string | null | undefined;
+    exact_order_id: number;
+    interest_score?: number | null | undefined;
+    is_atomic_closure_allowed?: boolean | null | undefined;
+    is_private_auction?: boolean | null | undefined;
+    min_funding_threshold?: number | null | undefined;
+    minimum_bidding_amount_per_order?: number | null | undefined;
+    order_cancellation_end_date?: string | null | undefined;
+    starting_time_stamp?: string | null | undefined;
+    symbol_auctioning_token?: string | null | undefined;
+    symbol_bidding_token?: string | null | undefined;
+    usd_amount_traded?: number | null | undefined;
+}>;
+export declare function upsertOrder(data: TablesInsert<'orders'>): Promise<{
+    auction_id: number;
+    buy_amount: number;
+    created_at?: string | undefined;
+    price?: number | null | undefined;
+    sell_amount: number;
+    timestamp?: string | null | undefined;
+    transactionHash: string;
+    user_id: number;
+    volume?: number | null | undefined;
+}>;
+//# sourceMappingURL=supabase-client.d.ts.map

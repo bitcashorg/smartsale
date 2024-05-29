@@ -1,8 +1,8 @@
 {
   "name": "smartsale",
   "version": "1.0.0",
-  "description": "bitlauncher Monorepo",
-  "author": "bitcar.og",
+  "description": "bitlauncher monorepo",
+  "author": "bitcash.org",
   "license": "MIT",
   "private": true,
   "scripts": {
