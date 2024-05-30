@@ -16,7 +16,7 @@ const queryClient = new QueryClient();
 
 export const wagmiConfig = getDefaultConfig({
   appName: "Bitlauncher",
-  projectId: "YOUR_PROJECT_ID",
+  projectId: "25a868c834c1003aa0f0b69aba0ae056",
    wallets: [
     {
       groupName: 'Popular',
