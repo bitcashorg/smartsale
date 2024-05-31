@@ -12,7 +12,7 @@ import { Open_Sans } from 'next/font/google'
 import React from 'react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { locales } from '../dictionaries/locales'
-// import { Toaster } from 'react-hot-toast'
+import { Analytics } from '@vercel/analytics/react'
 
 const openSans = Open_Sans({
   subsets: ['latin', 'latin-ext'],
@@ -43,6 +43,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
         </GlobalStoreProvider>
 
         <GoogleAnalytics gaId="G-78N0Z7NPQJ" />
+        <Analytics/>
         <SpeedInsights />
       </body>
     </html>
