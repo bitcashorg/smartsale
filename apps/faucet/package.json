@@ -30,8 +30,7 @@
     "tailwindcss": "^3.4.3",
     "tailwindcss-animate": "^1.0.7",
     "viem": "latest",
-    "wagmi": "latest",
-    "cbw-sdk": "npm:@coinbase/wallet-sdk@3.9.3"
+    "wagmi": "latest"
   },
   "devDependencies": {
     "@types/node": "latest",
