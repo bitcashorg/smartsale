@@ -1,7 +1,37 @@
 import { PageContent, PageContentData } from '@/components/shared/content'
 import { Metadata } from 'next'
+import { getDictionary } from '@/app/dictionaries'
 
-export default function AboutPage() {
+export default async function AboutPage({ params: { lang } }:AboutPageProps) {
+  const dict = await getDictionary(lang)
+  const aboutPageContent: PageContentData = [
+    { type: 'h1', text: dict.about.title1 }, 
+    { type: 'p', text: dict.about.text1 }, 
+    { type: 'p', text: dict.about.text2 },
+    { type: 'h2', text: dict.about.title2 },
+    {  type: 'p', text: dict.about.text3},
+    {
+      type: 'Image',
+      src: '/images/auction-comparison.webp',
+      alt: 'Comparison Chart',
+      width: 720,
+      height: 400,
+      layout: 'responsive',
+      className: 'dark:invert'
+    },
+    { type: 'h2', text: dict.about.title3 },
+    { type: 'p', text: dict.about.text4 },
+    {
+      type: 'ul',
+      items: [
+        dict.about.item1,
+        dict.about.item2,
+      ],
+    },
+    { type: 'p', text: dict.about.text5}
+  ]
+  const content = aboutPageContent
+  
   return (
     <div className="content-container !py-10 md:px-3 px-7 md:py-24">
       <PageContent data={content} />
@@ -9,47 +39,10 @@ export default function AboutPage() {
   )
 }
 
-const content: PageContentData = [
-  { type: 'h1', text: 'How Bitlauncher Works' },
-  {
-    type: 'p',
-    text: 'Bitlauncher is a platform enabling fair price discovery for token auctions. The aim of the platform is to make it easy for teams to discover a fair price for their token.'
-  },
-  {
-    type: 'p',
-    text: 'Bitlauncher uses batch auctions, which are a popular mechanism for ensuring fair price for both the decentralized and traditional finance worlds. Batch auctions enable matching of limit orders of buyers and sellers with the same clearing price for all participants. From crypto use cases like Initial DEX Offerings (like those on the Mesa interface for Gnosis Protocol v1) to traditional finance auctions (like Google’s IPO and the NYSE Open Auction), batch auctions play an important role in the democratization of the auctioned assets. This function is especially important for decentralized teams which need to ensure fair token distributions while operating trustlessly and efficiently. Batch auctions are set to become a fundamental “DeFi Lego” brick for any team or community interested in offering their users the most transparent and fairest auction-mechanism for their token.'
-  },
-  { type: 'h2', text: 'Comparison of Different Auction Mechanisms' },
-  {
-    type: 'p',
-    text: 'With bitlauncher’s open-source smart contract, projects can quickly and securely create their own decentralized fair auctions. Unlike some solutions dependent on a centralized curation process, Bitlauncher is permissionless so that any Ethereum team can deploy & execute batch auctions for price finding. Bitlauncher allows any Ethereum project or community to conduct auctions that:'
-  },
-  {
-    type: 'Image',
-    src: '/images/auction-comparison.webp',
-    alt: 'Comparison Chart',
-    width: 720,
-    height: 400,
-    layout: 'responsive',
-    className: 'dark:invert'
-  },
-  { type: 'h2', text: 'Fair Price Discovery with Bitlauncher' },
-  {
-    type: 'p',
-    text: 'By providing an easy interface for price discovery with batch auctions, Bitlauncher enables:'
-  },
-  {
-    type: 'ul',
-    items: [
-      'Auctioneers to determine a minimum price they are willing to sell their tokens for, and',
-      'Bidders to set the maximum price they are willing to pay'
-    ]
-  },
-  {
-    type: 'p',
-    text: 'These characteristics allow the platform to create a fair pricing dynamic in which both participants get either what they were willing to receive or more. Additionally the batched time nature of the auctions greatly reduces frontrunning and gas bidding wars, decreasing the amount of extracted value from auctioneers and bidders.'
-  }
-]
+interface AboutPageProps {
+  params: { lang: string }
+}
+
 
 export const metadata: Metadata = {
   title: 'About | Bitlauncher',

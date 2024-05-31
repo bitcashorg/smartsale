@@ -21,7 +21,7 @@ export function Upcoming({ projects, dict }: { projects: Project[], dict: any })
         </span>
       </h1>
       <h2 className="relative flex justify-center w-full py-10 text-3xl font-bold leading-none text-center">
-        Upcoming Auctions
+        {dict.home.upcomingAuctions}
         <div className="absolute top-0 blur-effect-bg" />
       </h2>
       <div
@@ -33,7 +33,7 @@ export function Upcoming({ projects, dict }: { projects: Project[], dict: any })
             key={`upcoming-auctions-item-${index}`}
             className="box-border justify-center border size-full rounded-xl border-card/30 bg-card backdrop-blur-lg"
           >
-            <AuctionCard {...item} />
+            <AuctionCard project={item} dict={dict} />
           </div>
         ))}
       </div>
