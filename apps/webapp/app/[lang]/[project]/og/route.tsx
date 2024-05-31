@@ -12,7 +12,7 @@ const siteUrl = `https://${process.env.VERCEL_URL}`
 
 export async function GET(req: NextRequest, context: { params: Params }) {
   try {
-    const project = await getProjectBySlug(context.params.project)
+    const project = await getProjectBySlug(context.params.project, 'en')
     siteUrl
     return new ImageResponse(
       (

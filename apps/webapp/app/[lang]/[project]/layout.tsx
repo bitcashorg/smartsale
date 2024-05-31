@@ -1,5 +1,4 @@
-import { locales } from '@/app/dictionaries/locales'
-import { getProjectBySlug, projects } from '@/lib/projects'
+import { getProjectBySlug } from '@/lib/projects'
 import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
 import { Metadata } from 'next'
 
@@ -10,7 +9,7 @@ export default function ProjectPagesLayout({ children }: ProjectPageProps) {
 export async function generateMetadata({
   params
 }: ProjectPageProps): Promise<Metadata> {
-  const project = await getProjectBySlug(params.project)
+  const project = await getProjectBySlug(params.project, params.lang)
 
   return {
     title: project?.title,

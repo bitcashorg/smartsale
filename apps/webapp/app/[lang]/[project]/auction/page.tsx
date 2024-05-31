@@ -3,7 +3,7 @@ import { AuctionBids } from '@/components/routes/auction/auction-bids'
 import { AuctionOrders } from '@/components/routes/auction/auction-orders'
 import { ClaimTokens } from '@/components/routes/auction/claim-tokens'
 import { Tabs } from '@/components/ui/tabs'
-import { ProjectWithAuction, getProjectBySlug, projects } from '@/lib/projects'
+import { ProjectWithAuction, getProjectBySlug, getProjects } from '@/lib/projects'
 import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
 import { redirect } from 'next/navigation'
 import React from 'react'
@@ -14,7 +14,7 @@ const auctionPageClassNames = {
 }
 
 export default async function AuctionPage({ params }: ProjectPageProps) {
-  const p = await getProjectBySlug(params.project)
+  const p = await getProjectBySlug(params.project, params.lang)
   if (!p || (!p.auctionId && !p.registrationOpen)) redirect('/')
   const project = p as ProjectWithAuction
 
@@ -63,7 +63,7 @@ export default async function AuctionPage({ params }: ProjectPageProps) {
         <Tabs tabs={tabs} />
       </section>
 
-      <hr className="mx-auto mt-24 max-w-screen-xl border-gray-600/80" />
+      <hr className="max-w-screen-xl mx-auto mt-24 border-gray-600/80" />
     </div>
   )
 }
@@ -72,7 +72,7 @@ export async function generateStaticParams(): Promise<ProjectPageParams[]> {
   const params: ProjectPageParams[] = (
     await Promise.all(
       locales.map(async (lang): Promise<ProjectPageParams[]> => {
-        return projects
+        return getProjects(lang)
           .map(project =>
             project.slug ? { lang, project: project.slug } : null
           )

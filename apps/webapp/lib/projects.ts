@@ -2,9 +2,12 @@ import { TestnetMBOTSPL, TokenContractData } from 'smartsale-contracts'
 import BitcashPic from '../assets/img/bitcash.webp'
 import MasterbotsPic from '../assets/img/masterbots.webp'
 import WizartPic from '../assets/img/wizartworld.webp'
-// https://bitcash.to/{hash}
-// ? Micro interaction: share (short) link
 import { StaticImageData } from 'next/image'
+import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
+
+export function getProjects(lang:SiteLocale){
+  return projects
+}
 
 export const projects: Project[] = [
   {
@@ -257,7 +260,7 @@ export type ProjectWithAuction = Required<
 > &
   Project
 
-export async function getProjectBySlug(slug: string) {
+export async function getProjectBySlug(slug: string, lang:SiteLocale) {
   const project = projects.find(p => p.slug == slug)
   if (!project) return null
   return project
