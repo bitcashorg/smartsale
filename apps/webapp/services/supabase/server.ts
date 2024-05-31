@@ -3,7 +3,7 @@
 import { createServerClient, CookieOptions } from '@supabase/ssr'
 import { cookies } from 'next/headers'
 import { Database } from '@repo/supabase'
-import { appConfig } from '../config'
+import { appConfig } from '@/lib/config'
 
 export async function createSupabaseServerClient() {
   const cookieStore = cookies()

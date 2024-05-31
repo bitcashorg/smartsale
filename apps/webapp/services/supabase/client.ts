@@ -1,7 +1,7 @@
 import { useMemo } from 'react'
 import { createBrowserClient } from '@supabase/ssr'
 import { Database } from '@repo/supabase'
-import { appConfig } from '../config'
+import { appConfig } from '@/lib/config'
 
 export function getSupabaseBrowserClient() {
   return createBrowserClient<Database>(

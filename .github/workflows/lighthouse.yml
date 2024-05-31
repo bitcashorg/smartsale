@@ -39,6 +39,8 @@ jobs:
             "https://${{ steps.vercel_preview_url.outputs.preview_url }}/about"
             "https://${{ steps.vercel_preview_url.outputs.preview_url }}/security"
             "https://${{ steps.vercel_preview_url.outputs.preview_url }}/bitcash-bitlauncher"
+            "https://${{ steps.vercel_preview_url.outputs.preview_url }}/blog"
+            "https://${{ steps.vercel_preview_url.outputs.preview_url }}/blog/ai"
           # budgetPath: '.github/lighthouse/budget.json'
           uploadArtifacts: true
           temporaryPublicStorage: true

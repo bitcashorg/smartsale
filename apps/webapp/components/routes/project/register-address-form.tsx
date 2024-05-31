@@ -10,7 +10,7 @@ import { useSession } from '@/hooks/use-session'
 import { Button, ButtonProps, buttonVariants } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 import { preSaleInsertSchema } from '@repo/supabase'
-import { useSupabaseClient } from '@/lib/supabase'
+import { useSupabaseClient } from '@/services/supabase'
 
 export const RegisterAddressForm: FunctionComponent<{ projectId: number }> = ({
   projectId

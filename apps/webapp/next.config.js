@@ -35,6 +35,21 @@ const nextConfig = {
         }
       }
     }
+  },
+  reactStrictMode: true,
+  swcMinify: true,
+  optimizeFonts: true,
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'www.datocms-assets.com'
+      },
+      {
+        protocol: 'https',
+        hostname: 'datocms-assets.com'
+      }
+    ]
   }
 }
 

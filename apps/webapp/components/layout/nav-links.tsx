@@ -69,6 +69,14 @@ export function NavLinks({ mobile = false }: { mobile?: boolean }) {
       disabled: false
     },
     {
+      id: 'blog',
+      href: '/blog',
+      text: 'Blog',
+      mobile: false,
+      action: null,
+      disabled: false
+    },
+    {
       id: 'logout',
       href: null,
       action: logout,

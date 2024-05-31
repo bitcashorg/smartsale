@@ -22,6 +22,7 @@ import { sepolia } from 'wagmi/chains'
 import { UseSigningRequestProvider } from '@/hooks/use-signing-request'
 import { merge } from 'lodash'
 
+
 const queryClient = new QueryClient()
 
 export const wagmiConfig = getDefaultConfig({

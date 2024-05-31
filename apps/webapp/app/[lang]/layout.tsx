@@ -11,7 +11,8 @@ import dynamic from 'next/dynamic'
 import { Open_Sans } from 'next/font/google'
 import React from 'react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
-// import { Toaster } from 'react-hot-toast'
+import { locales } from '../dictionaries/locales'
+import { Analytics } from '@vercel/analytics/react'
 
 const openSans = Open_Sans({
   subsets: ['latin', 'latin-ext'],
@@ -35,22 +36,28 @@ export default async function RootLayout({ children }: RootLayoutProps) {
           >
             <Header />
             {/* <Toaster /> */}
-            <main className="flex flex-1 flex-col">{children}</main>
+            <main className="flex flex-col flex-1">{children}</main>
             <Footer />
             <DynamicSessionDialog />
           </Providers>
         </GlobalStoreProvider>
 
         <GoogleAnalytics gaId="G-78N0Z7NPQJ" />
+        <Analytics/>
         <SpeedInsights />
       </body>
     </html>
   )
 }
 
+// generate static routes for a given set of locales,
+export async function generateStaticParams() {
+  return locales.map(lang => ({ lang }))
+}
+
 const DynamicSessionDialog = dynamic(
   () =>
-    import('../components/layout/session/session-dialog').then(
+    import('../../components/layout/session/session-dialog').then(
       mod => mod.SessionDialog
     ),
   {

@@ -7,7 +7,7 @@ import {
   TableHeader,
   TableRow
 } from '@/components/ui/table'
-import { useSupabaseClient } from '@/lib/supabase'
+import { useSupabaseClient } from '@/services/supabase'
 import BN from 'bn.js'
 import { format } from 'date-fns'
 import Link from 'next/link'

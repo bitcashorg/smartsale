@@ -159,7 +159,6 @@ input[type='number'] {
 
 .newsletter-wrapper {
   @apply container flex flex-col items-center px-0 mx-auto rounded-3xl backdrop-blur-xl sm:text-center;
-
   background: url('/images/newsletter-bg.webp') center center no-repeat;
   background-size: cover;
 }
