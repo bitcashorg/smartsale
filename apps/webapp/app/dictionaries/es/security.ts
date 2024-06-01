@@ -1,0 +1,18 @@
+export default {
+  title1: 'Security Recommendations for Bitlauncher Participants',
+  text1: 'Participating in auctions on Bitlauncher, a fork of Gnosis, requires vigilance and awareness of various security threats. Here are some crucial tips to help keep your investments safe:',
+  title2: 'Beware of Phishing Attacks',
+  text2: 'Phishing is a common technique used by attackers to gain access to your personal information. Always verify the URL of the Bitlauncher and ensure it is the legitimate site before connecting your MetaMask wallet. Be cautious of emails or websites impersonating Bitlauncher.',
+  title3: 'MetaMask Security',
+  text3: 'When using MetaMask, never share your seed phrase with anyone. Be cautious of any website or person asking for your MetaMask credentials. Always lock your MetaMask wallet when not in use.',
+  title4: 'Impersonation on Discord and Social Media',
+  text4: 'Be wary of individuals on platforms like Discord and social media who claim to be representatives of Bitlauncher. Official staff will never ask for your private keys or wallet credentials.',
+  title5: 'Secure Your Digital Environment',
+  text5: 'Ensure your devices are protected with the latest security updates and antivirus software. Avoid using public Wi-Fi networks when interacting with your MetaMask wallet or participating in auctions on Bitlauncher.',
+  title6: 'Double-Check Transaction Details',
+  text6: 'Before confirming any transaction on MetaMask, double-check the recipients address, the amount, and the gas fees. Scammers often try to manipulate transaction details.',
+  title7: 'Stay Informed and Updated',
+  text7: 'Follow only the official Bitlauncher channels for updates and information. Do not trust unverified sources.',
+  title8: 'Report Suspicious Activities',
+  text8: 'If you encounter any suspicious activity or believe you are a victim of a scam, contact the official Bitlauncher support immediately.',
+} as const

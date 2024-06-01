@@ -59,7 +59,7 @@ export type ContentType = 'h1' | 'h2' | 'p' | 'ul' | 'Image' | 'hr'
 export type ContentTextType = 'h1' | 'h2' | 'p'
 // Update the original ContentItem definition to use ContentType
 export type ContentItem =
-  | { type: ContentTextType; text: string }
+  | { type: ContentTextType; text: string | any }
   | { type: 'ul'; items: string[] }
   | {
       type: 'Image'
