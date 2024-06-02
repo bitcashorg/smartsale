@@ -74,7 +74,7 @@ export function DepositCard() {
       <CardContent>
         <div className="flex flex-col space-y-4">
           <label htmlFor="deposit" className="text-sm">
-            Convert to USDCred
+            Convert to MOR
           </label>
           <div className="flex items-center justify-between">
             <div className="flex min-w-[40%] flex-col">

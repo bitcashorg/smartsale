@@ -62,7 +62,7 @@ export function AuctionBids({ project }: AuctionBidsProps) {
       })
 
     if (!isBalanceSufficient)
-      return setGlobalError('Insuficient USDCred Balance')
+      return setGlobalError('Insuficient MOR Balance')
 
     if (!isAllowanceSufficient) {
       await writeContract(wagmiConfig, {

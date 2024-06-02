@@ -296,7 +296,7 @@ const content: PageContentData = [
   },
   {
     type: 'p',
-    text: 'Step 2: Deposit Funds. Connect an EVM-Compatible Wallet: Use wallets like Metamask to deposit USDT or USDC into the Bitcash deposit contract available on various EVM chains, including Ethereum, Cosmos, Arbitrum, Optimism, Base, and Avalanche. Credit Allocation: Upon deposit, a USD credit equivalent will be added to your Bitlauncher platform account, which can be used to bid on token auctions.'
+    text: 'Step 2: Deposit Funds. Connect an EVM-Compatible Wallet: Use wallets like Metamask to deposit USDT or USDC into the Bitcash deposit contract available on various EVM chains, including Ethereum, Cosmos, Arbitrum, Optimism, Base, and Avalanche. Credit Allocation: Upon deposit, a MOR Tokens equivalent will be added to your Bitlauncher platform account, which can be used to bid on token auctions.'
   },
   {
     type: 'p',

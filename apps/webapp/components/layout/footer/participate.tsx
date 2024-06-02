@@ -68,9 +68,9 @@ const textContent = {
       href: 'https://app.bitcash.org/?share=JVnL7qzrU'
     },
     {
-      title: 'Get USD\nCredits',
+      title: 'Get MOR\nTokens',
       description:
-        'Deposit USDT on any chain to get USD Credit Tokens on EOS EVM',
+        'Deposit MOR on any chain to get MOR Tokens on Arbitrum One',
       href: '#'
     },
     {

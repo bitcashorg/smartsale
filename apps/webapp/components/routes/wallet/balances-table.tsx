@@ -36,10 +36,10 @@ export function BalancesTable() {
 
   const coins = [
     {
-      coin: 'USDCred',
+      coin: 'MOR',
       totalAmount: `${usdCredBalance.formatted || 0}`,
-      nertwork: 'EOS EVM',
-      description: 'USD Bidding Token'
+      nertwork: 'Arbitrum One',
+      description: 'MOR Tokens'
     },
     {
       coin: 'EOS (gas)',
