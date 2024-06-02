@@ -74,7 +74,7 @@
     "smartsale-lib": "workspace:*",
     "vconsole": "^3.15.1",
     "viem": "latest",
-    "wagmi": "2.9.3",
+    "wagmi": "latest",
     "zod": "^3.23.8"
   },
   "devDependencies": {
