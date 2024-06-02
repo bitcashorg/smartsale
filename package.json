@@ -20,7 +20,9 @@
     ],
     "nohoist": [
       "**/vite",
-      "**/vite/**"
+      "**/vite/**",
+      "**/cbw-sdk",
+      "**/cbw-sdk/**"
     ]
   },
   "packageManager": "bun@1.1.9",
