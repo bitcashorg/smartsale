@@ -10,19 +10,19 @@ export default function AboutPage() {
 }
 
 const content: PageContentData = [
-  { type: 'h1', text: 'How Bitlauncher Works' },
+  { type: 'h1', text: 'How Morlauncher Works' },
   {
     type: 'p',
-    text: 'Bitlauncher is a platform enabling fair price discovery for token auctions. The aim of the platform is to make it easy for teams to discover a fair price for their token.'
+    text: 'Morlauncher is a platform enabling fair price discovery for token auctions. The aim of the platform is to make it easy for teams to discover a fair price for their token.'
   },
   {
     type: 'p',
-    text: 'Bitlauncher uses batch auctions, which are a popular mechanism for ensuring fair price for both the decentralized and traditional finance worlds. Batch auctions enable matching of limit orders of buyers and sellers with the same clearing price for all participants. From crypto use cases like Initial DEX Offerings (like those on the Mesa interface for Gnosis Protocol v1) to traditional finance auctions (like Google’s IPO and the NYSE Open Auction), batch auctions play an important role in the democratization of the auctioned assets. This function is especially important for decentralized teams which need to ensure fair token distributions while operating trustlessly and efficiently. Batch auctions are set to become a fundamental “DeFi Lego” brick for any team or community interested in offering their users the most transparent and fairest auction-mechanism for their token.'
+    text: 'Morlauncher uses batch auctions, which are a popular mechanism for ensuring fair price for both the decentralized and traditional finance worlds. Batch auctions enable matching of limit orders of buyers and sellers with the same clearing price for all participants. From crypto use cases like Initial DEX Offerings (like those on the Mesa interface for Gnosis Protocol v1) to traditional finance auctions (like Google’s IPO and the NYSE Open Auction), batch auctions play an important role in the democratization of the auctioned assets. This function is especially important for decentralized teams which need to ensure fair token distributions while operating trustlessly and efficiently. Batch auctions are set to become a fundamental “DeFi Lego” brick for any team or community interested in offering their users the most transparent and fairest auction-mechanism for their token.'
   },
   { type: 'h2', text: 'Comparison of Different Auction Mechanisms' },
   {
     type: 'p',
-    text: 'With bitlauncher’s open-source smart contract, projects can quickly and securely create their own decentralized fair auctions. Unlike some solutions dependent on a centralized curation process, Bitlauncher is permissionless so that any Ethereum team can deploy & execute batch auctions for price finding. Bitlauncher allows any Ethereum project or community to conduct auctions that:'
+    text: 'With Morlauncher’s open-source smart contract, projects can quickly and securely create their own decentralized fair auctions. Unlike some solutions dependent on a centralized curation process, Morlauncher is permissionless so that any Ethereum team can deploy & execute batch auctions for price finding. Morlauncher allows any Ethereum project or community to conduct auctions that:'
   },
   {
     type: 'Image',
@@ -33,10 +33,10 @@ const content: PageContentData = [
     layout: 'responsive',
     className: 'dark:invert'
   },
-  { type: 'h2', text: 'Fair Price Discovery with Bitlauncher' },
+  { type: 'h2', text: 'Fair Price Discovery with Morlauncher' },
   {
     type: 'p',
-    text: 'By providing an easy interface for price discovery with batch auctions, Bitlauncher enables:'
+    text: 'By providing an easy interface for price discovery with batch auctions, Morlauncher enables:'
   },
   {
     type: 'ul',
@@ -52,7 +52,7 @@ const content: PageContentData = [
 ]
 
 export const metadata: Metadata = {
-  title: 'About | Bitlauncher',
+  title: 'About | Morlauncher',
   description:
     'Be part of the intelligent future and join the Ai/Web3 revolution now!'
 }
