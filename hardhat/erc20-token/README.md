@@ -24,7 +24,7 @@ To deploy the contracts, run the corresponding package.json script
 ## How to deploy the contract
 
 1. Arbitrum Sepolia: run `npx hardhat run scripts/deployMORWithFaucet.js --network arbitrumSepolia`
-2. Arbitrum One: run `npx hardhat run scripts/deployMORWithFaucet.js --network arbitrumOne`
 
 ## Addresses
 
+1. MOR Token - Arbitrum One: [0x092baadb7def4c3981454dd9c0a0d7ff07bcfc86](https://arbiscan.io/address/#readContract)
