@@ -18,7 +18,7 @@ export default async function ArticlePage(props: ArticlePageProps) {
   const { blogContent, i18n, relatedBlogs } = data
   return (
     <section>
-      <main className="mx-auto content-container">
+      <main className="content-container mx-auto">
         <BlogPage
           blogContent={blogContent}
           params={props.params}
