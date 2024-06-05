@@ -206,10 +206,7 @@ export function BlogPage({
             <span className="sub-2-lg font-semibold text-black dark:text-white">
               /Related stories{' '}
             </span>
-            <Link
-              href={`/blog/${category}`}
-              className={cn('text-black dark:text-white')}
-            >
+            <Link href={`/blog`} className={cn('text-black dark:text-white')}>
               <b>See All Stories &gt;</b>
             </Link>
           </div>

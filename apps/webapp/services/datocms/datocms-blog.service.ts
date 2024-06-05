@@ -194,17 +194,21 @@ export async function getBlogArticleData(
         neq: slug
       }
     })
+    const escapeRegExp = (string: string): string => {
+      return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') // $& means the whole matched string
+    }
+
+    // Prepare the regex pattern outside the filter function for efficiency
+    const escapedTitle = escapeRegExp(blogContent.title).replace(/\s+/g, '|')
+    const titleRegex = new RegExp(`(${escapedTitle})`, 'gi')
+
     relatedBlogs = relatedBlogs[`${blogCategory}Data`].filter(
       (blog: BlogAiRecord) =>
         (blog.topics as string[]).some((topic: string) =>
           topics.includes(topic)
         ) &&
-        blog.description?.match(
-          new RegExp(`(${blogContent.title.replace(/\s/g, '|')})`, 'gi')
-        ) &&
-        blog.title?.match(
-          new RegExp(`(${blogContent.title.replace(/\s/g, '|')})`, 'gi')
-        )
+        blog.description?.match(titleRegex) &&
+        blog.title?.match(titleRegex)
     )
   }
 
