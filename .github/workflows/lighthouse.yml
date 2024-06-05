@@ -1,7 +1,6 @@
 name: Vercel Preview URL Lighthouse Audit
 
-on:
-  pull_request
+on: pull_request
 
 jobs:
   generate_lighthouse_audit:
