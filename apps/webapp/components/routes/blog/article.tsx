@@ -15,6 +15,9 @@ import { readingTime } from '@/lib/blog'
 import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
 import { Button } from '@/components/ui/button'
 import { isMobile } from 'react-device-detect'
+import Link from 'next/link'
+import { LucideIcons } from './lucide-icons'
+import { PostCard } from './post-card'
 
 export function BlogPage({
   i18n,
@@ -197,18 +200,14 @@ export function BlogPage({
         </main>
       </div>
 
-      {/* {relatedBlogs.length > 0 && (
+      {relatedBlogs.length > 0 && (
         <section className="mt-space-80 mx-auto w-full md:max-w-[74rem] md:px-10">
-          <div className="flex items-center justify-between mb-space-32">
-            <span className="font-semibold text-black sub-2-lg dark:text-white">
+          <div className="mb-space-10 flex items-center justify-between">
+            <span className="sub-2-lg font-semibold text-black dark:text-white">
               /Related stories{' '}
             </span>
-            <Link
-              href={`/blog/${category}`}
-              className={cn('text-black dark:text-white')}
-            >
-              <b>See All Stories</b>
-              <LucideIcons.chevronRight className="h-4 w-7" />
+            <Link href={`/blog`} className={cn('text-black dark:text-white')}>
+              <b>See All Stories &gt;</b>
             </Link>
           </div>
 
@@ -220,7 +219,7 @@ export function BlogPage({
             ))}
           </ul>
         </section>
-      )} */}
+      )}
     </article>
   )
 }
