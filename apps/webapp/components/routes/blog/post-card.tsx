@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { Card, CardContent, CardFooter } from '@/components/ui/card'
 import { isMobile } from 'react-device-detect'
 
-export const PostCard = ({ post, sectionSlug, key }: PostCardProps) => {
+export const PostCard = ({ post, sectionSlug }: PostCardProps) => {
   return (
     <Card className="min-h-space-465 md:max-h-space-465 group list-none overflow-hidden">
       <Link
@@ -17,8 +17,11 @@ export const PostCard = ({ post, sectionSlug, key }: PostCardProps) => {
             src={post?.thumbnail?.url}
             alt={post.title}
             sizes="(max-width: 768px) 350px, (max-width: 1200px) 800px, 600px"
-            {...(key !== 1 && isMobile && { loading: 'lazy' })}
-            {...((key === 1 || !isMobile) && { priority: true })}
+            {...(isMobile
+              ? post.id !== 1
+                ? { loading: 'lazy' }
+                : { priority: true }
+              : { priority: true })}
             className="bg-zoom transition-all ease-in-out"
             fill
           />
@@ -83,5 +86,4 @@ export const PostCard = ({ post, sectionSlug, key }: PostCardProps) => {
 export interface PostCardProps {
   post: BlogArticleRecord
   sectionSlug: string
-  key: number
 }
