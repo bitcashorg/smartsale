@@ -9,11 +9,13 @@ import {
 
 import { cn } from '@/lib/utils'
 import { BlogArticleRecord, CMSLayoutText } from '@/services/datocms'
-
 import Image from 'next/image'
 import { readingTime } from '@/lib/blog'
 import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
 import { Button } from '@/components/ui/button'
+import Link from 'next/link'
+import { LucideIcons } from './lucide-icons'
+import { PostCard } from './post-card'
 import { isMobile } from 'react-device-detect'
 
 export function BlogPage({
@@ -103,6 +105,7 @@ export function BlogPage({
                             alt={image?.alt || `blog-image-${index}`}
                             fill
                             layout="fill"
+                            loading="lazy"
                             className="m-auto flex self-center"
                           />
                         </div>
@@ -197,10 +200,10 @@ export function BlogPage({
         </main>
       </div>
 
-      {/* {relatedBlogs.length > 0 && (
+      {relatedBlogs.length > 0 && (
         <section className="mt-space-80 mx-auto w-full md:max-w-[74rem] md:px-10">
-          <div className="flex items-center justify-between mb-space-32">
-            <span className="font-semibold text-black sub-2-lg dark:text-white">
+          <div className="mb-space-32 flex items-center justify-between">
+            <span className="sub-2-lg font-semibold text-black dark:text-white">
               /Related stories{' '}
             </span>
             <Link
@@ -220,7 +223,7 @@ export function BlogPage({
             ))}
           </ul>
         </section>
-      )} */}
+      )}
     </article>
   )
 }
