@@ -6,11 +6,12 @@ import { cn } from '@/lib/utils'
 import Link from 'next/link'
 import React from 'react'
 import { BitcashAccessButton } from '@/components/layout/header/bitcash-access'
+import { LangProp } from '@/app/types/routing.type'
 
-export default function Participate() {
+export default function Participate({ lang }: LangProp) {
   return (
-    <section className="align-center relative z-10 flex flex-col pb-10">
-      <h2 className="h-32 w-full pb-10 pt-6 text-center text-3xl font-bold leading-loose">
+    <section className="relative z-10 flex flex-col pb-10 align-center">
+      <h2 className="w-full h-32 pt-6 pb-10 text-3xl font-bold leading-loose text-center">
         {textContent.stepsInfo}
       </h2>
 
@@ -23,16 +24,16 @@ export default function Participate() {
             key={`${index}__step-content`}
             className="flex min-h-[260px] w-full max-w-[450px] flex-col items-center justify-between rounded-3xl bg-white/90 px-8 py-9 text-black/90 shadow-md backdrop-blur-xl lg:w-1/3 lg:items-start"
           >
-            <h3 className="flex h-10 w-full whitespace-pre-line text-left text-3xl font-bold lg:text-left">
+            <h3 className="flex w-full h-10 text-3xl font-bold text-left whitespace-pre-line lg:text-left">
               {step.title}
             </h3>
-            <div className="flex w-full items-center justify-between gap-4">
+            <div className="flex items-center justify-between w-full gap-4">
               <p className="w-[calc(100%-72px)] py-3 text-sm">
                 {step.description}
               </p>
               {!step.title.includes('Complete KYC') ? (
                 <Link
-                  href={step.href}
+                  href={`/${lang}/${step.href}`}
                   className={cn(
                     buttonVariants({
                       variant: 'accent',

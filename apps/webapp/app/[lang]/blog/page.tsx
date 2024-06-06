@@ -11,10 +11,10 @@ export default async function BlogPage({ params }: BlogPageProps) {
 
   return (
     <main>
-      <h1 className="heading flex justify-center py-10 md:py-24">
+      <h1 className="flex justify-center py-10 heading md:py-24">
         AI, Crypto & Startup Ventures
       </h1>
-      <BlogSections sections={sections} />
+      <BlogSections sections={sections} lang={params.lang} />
     </main>
   )
 }

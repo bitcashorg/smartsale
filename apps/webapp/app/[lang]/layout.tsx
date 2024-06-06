@@ -38,10 +38,10 @@ export default async function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <Header />
+            <Header lang={params.lang} />
             {/* <Toaster /> */}
             <main className="flex flex-col flex-1">{children}</main>
-            <Footer />
+            <Footer lang={params.lang} />
             <DynamicSessionDialog />
           </Providers>
         </GlobalStoreProvider>

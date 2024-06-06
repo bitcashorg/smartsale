@@ -63,11 +63,9 @@ export function BitcashAccessButton({
 
   if (session && isLogin)
     return (
-      <Link href="#">
-        <Button variant="secondary" className="flex w-full gap-2">
-          <LucideWallet size={18} /> ${balance.formatted} on Wallet
-        </Button>
-      </Link>
+      <Button variant="secondary" className="flex w-full gap-2">
+        <LucideWallet size={18} /> ${balance.formatted} on Wallet
+      </Button>
     )
 
   // never show the qr on mobile or bitcash explorer

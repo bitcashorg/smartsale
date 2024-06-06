@@ -23,7 +23,7 @@ export default async function Page(props: CategoryPageProps) {
   return (
     <section>
       <header className="flex flex-col py-10 md:py-24 ">
-        <h1 className="heading flex justify-center ">
+        <h1 className="flex justify-center heading ">
           {pageSeo.description} <br />
         </h1>
         <h2 className="flex justify-center text-xl font-semibold">
@@ -32,7 +32,7 @@ export default async function Page(props: CategoryPageProps) {
       </header>
 
       <main>
-        <BlogSections sections={sections} />
+        <BlogSections sections={sections} lang={lang} />
       </main>
     </section>
   )

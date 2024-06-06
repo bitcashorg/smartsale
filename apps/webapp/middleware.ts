@@ -5,14 +5,17 @@ import { defaultLocale, locales } from './app/dictionaries/locales'
 
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl
-  const pathnameHasLocale = locales.some(
-    locale => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
+  const hasLang = locales.some(
+    lang => pathname.startsWith(`/${lang}/`) || pathname === `/${lang}`
   )
 
-  if (pathnameHasLocale) return NextResponse.next()
+  console.log('🍓 has lang', pathname, hasLang)
 
-  const locale = getLocale(request)
-  request.nextUrl.pathname = `/${locale}${pathname}`
+  if (hasLang) return NextResponse.next()
+
+  const lang = getLocale(request)
+  request.nextUrl.pathname = `/${lang}${pathname}`
+
   return NextResponse.redirect(request.nextUrl)
 }
 
@@ -25,5 +28,5 @@ function getLocale(request: NextRequest): string {
 }
 
 export const config = {
-  matcher: ['/((?!_next|images|api).*)']
+  matcher: ['/((?!_next|images|api|favicon.ico).*)']
 }

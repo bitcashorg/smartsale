@@ -75,7 +75,7 @@ export function SessionButton() {
           >
             <ul className="flex flex-col gap-5 py-2">
               {/* <li>
-                <Link href={`/wallet`}>Wallet</Link>
+                <Link href={`/en/wallet`}>Wallet</Link>
               </li> */}
               <li onClick={logout} className="cursor-pointer">
                 Sign Out

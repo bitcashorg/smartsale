@@ -9,20 +9,21 @@ import dynamic from 'next/dynamic'
 import { Suspense } from 'react'
 import { SessionButtonLoader } from '../session/session-button'
 import { MobileNavLoader } from './mobile-nav'
-import { LangSelector } from './lang-selector'
+import { LangSelector } from './lang-selector/lang-selector'
+import { LangProp } from '@/app/types/routing.type'
 
-export function Header() {
+export function Header({ lang }: LangProp) {
   return (
     <div className="sticky top-0 z-50 flex h-16 bg-background">
       <div className="container flex flex-row items-center justify-between px-4 bg-background">
         <div className="flex h-full items-center md:min-w-[300px]">
-          <Link shallow href="/">
+          <Link href={`/${lang}`}>
             <IconBitlauncher />
           </Link>
         </div>
 
         <div className="hidden md:flex md:gap-3 md:pl-4 lg:ml-[-1px] lg:gap-10">
-          <NavLinks />
+          <NavLinks lang={lang} />
         </div>
 
         {/* Desktop action buttons */}
@@ -31,12 +32,12 @@ export function Header() {
           <Suspense fallback={<Button>Login</Button>}>
             <DynamicSessionButton />
           </Suspense>
-          <LangSelector />
+          <LangSelector lang={lang} />
         </div>
 
         {/* mobile navbar icon */}
         <div className="flex md:hidden">
-          <DynamicMobileNav />
+          <DynamicMobileNav lang={lang} />
         </div>
       </div>
     </div>
