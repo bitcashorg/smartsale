@@ -5,12 +5,12 @@ import Image from 'next/image'
 import { Card, CardContent, CardFooter } from '@/components/ui/card'
 import { isMobile } from 'react-device-detect'
 
-export const PostCard = ({ post, sectionSlug }: PostCardProps) => {
+export const ArticleCard = ({ post, sectionSlug }: ArticleCardProps) => {
   return (
-    <Card className="min-h-space-465 md:max-h-space-465 group list-none overflow-hidden">
+    <Card className="overflow-hidden list-none min-h-space-465 md:max-h-space-465 group">
       <Link
         href={`/blog/${sectionSlug}/${post.slug}`}
-        className="lg:hover:shadow-f1 lg:focus:shadow-f1 lg:hover:border-primary-300 lg:focus:border-primary-300 lg:p-space-20 flex h-full w-full flex-col transition-all"
+        className="flex flex-col w-full h-full transition-all lg:hover:shadow-f1 lg:focus:shadow-f1 lg:hover:border-primary-300 lg:focus:border-primary-300 lg:p-space-20"
       >
         <figure className="relative h-[216px] w-full">
           <Image
@@ -22,7 +22,7 @@ export const PostCard = ({ post, sectionSlug }: PostCardProps) => {
                 ? { loading: 'lazy' }
                 : { priority: true }
               : { priority: true })}
-            className="bg-zoom transition-all ease-in-out"
+            className="transition-all ease-in-out bg-zoom"
             fill
           />
         </figure>
@@ -30,13 +30,13 @@ export const PostCard = ({ post, sectionSlug }: PostCardProps) => {
         <CardContent className="mt-5">
           <h1
             title={post?.title}
-            className="font-futura-pt-bold text-sub-2-md truncate_text truncate_text--4-lines hidden font-bold text-black dark:text-white lg:block "
+            className="hidden font-bold text-black font-futura-pt-bold text-sub-2-md truncate_text truncate_text--4-lines dark:text-white lg:block "
           >
             {post.title}
           </h1>
           <h1
             title={post?.title}
-            className="font-futura-pt-bold text-sub-2-md block font-bold text-black dark:text-white lg:hidden"
+            className="block font-bold text-black font-futura-pt-bold text-sub-2-md dark:text-white lg:hidden"
           >
             {post.title}
           </h1>
@@ -55,8 +55,8 @@ export const PostCard = ({ post, sectionSlug }: PostCardProps) => {
               />
             </div>
           </div>
-          <div className="gap-y-space-4 flex flex-col">
-            <span className="text-h-text font-futura-pt-heavy text-h-text-c font-bold dark:text-white">
+          <div className="flex flex-col gap-y-space-4">
+            <span className="font-bold text-h-text font-futura-pt-heavy text-h-text-c dark:text-white">
               {post.authorName}
             </span>
             <span className="text-h-text font-futura-pt-book text-h-text-c dark:text-white">
@@ -83,7 +83,7 @@ export const PostCard = ({ post, sectionSlug }: PostCardProps) => {
   )
 }
 
-export interface PostCardProps {
+export interface ArticleCardProps {
   post: BlogArticleRecord
   sectionSlug: string
 }

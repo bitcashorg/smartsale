@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { cn } from '@/lib/utils'
 import { ArticlesSection } from '@/services/datocms'
-import { PostCard } from './post-card'
+import { ArticleCard } from './article-card'
 import { LucideIcons } from './lucide-icons'
 
 export function BlogSections({ sections }: BlogSectionsProps) {
@@ -28,7 +28,7 @@ export function BlogSections({ sections }: BlogSectionsProps) {
 
               <ul className="grid-cols-auto-dense grid w-full grid-cols-[repeat(auto-fill,minmax(300px,1fr))] flex-col gap-20 py-5 sm:flex-wrap md:gap-5 ">
                 {section?.articles?.map((post, index) => (
-                  <PostCard
+                  <ArticleCard
                     post={post}
                     sectionSlug={section.slug}
                     key={index}

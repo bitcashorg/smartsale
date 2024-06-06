@@ -9,7 +9,7 @@ import {
   CMSPageSeoText,
   getBlogCategoriesTypes
 } from '@/services/datocms'
-import { PostCard } from './post-card'
+import { ArticleCard } from './article-card'
 import { cn } from '@/lib/utils'
 import { LucideIcons } from './lucide-icons'
 
@@ -89,7 +89,7 @@ export function CategoryComponent({ params, sections }: BlogCategoryPageProps) {
 
               <ul className="sm:grid-cols-auto-dense flex w-full flex-col gap-20 py-5 sm:grid sm:grid-cols-[repeat(auto-fill,minmax(300px,1fr))] sm:flex-wrap md:gap-5 lg:grid-cols-[repeat(auto-fill,minmax(260px,1fr))]">
                 {contents.map((post, index) => (
-                  <PostCard post={post} sectionSlug={category} key={index} />
+                  <ArticleCard post={post} sectionSlug={category} key={index} />
                 ))}
               </ul>
             </section>

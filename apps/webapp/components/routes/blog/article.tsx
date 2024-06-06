@@ -215,7 +215,7 @@ export function BlogPage({
           <ul className="flex w-full flex-col gap-5 py-5 sm:grid sm:grid-cols-[repeat(auto-fit,minmax(300px,1fr))] sm:flex-wrap lg:grid-cols-[repeat(auto-fit,minmax(260px,1fr))]">
             {relatedBlogs?.slice(0, 4).map((post, index) => (
               <div key={index}>
-                <PostCard post={post} sectionSlug={category} />
+                <ArticleCard post={post} sectionSlug={category} />
               </div>
             ))}
           </ul>
