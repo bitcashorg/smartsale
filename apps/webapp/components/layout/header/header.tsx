@@ -1,14 +1,15 @@
 import Link from 'next/link'
 import * as React from 'react'
-import { IconBitlauncher, IconDiscord } from '../ui/icons'
+import { IconBitlauncher, IconDiscord } from '../../ui/icons'
 import { Button, buttonVariants } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 import { NavLinks } from './nav-links'
 
 import dynamic from 'next/dynamic'
 import { Suspense } from 'react'
-import { SessionButtonLoader } from './session/session-button'
+import { SessionButtonLoader } from '../session/session-button'
 import { MobileNavLoader } from './mobile-nav'
+import { LangSelector } from './lang-selector'
 
 export function Header() {
   return (
@@ -30,6 +31,7 @@ export function Header() {
           <Suspense fallback={<Button>Login</Button>}>
             <DynamicSessionButton />
           </Suspense>
+          <LangSelector />
         </div>
 
         {/* mobile navbar icon */}
@@ -50,7 +52,7 @@ const DynamicMobileNav = dynamic(
 )
 
 const DynamicSessionButton = dynamic(
-  () => import('./session/session-button').then(c => c.SessionButton),
+  () => import('../session/session-button').then(c => c.SessionButton),
   {
     loading: SessionButtonLoader,
     ssr: false

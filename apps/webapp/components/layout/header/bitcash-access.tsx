@@ -64,7 +64,7 @@ export function BitcashAccessButton({
   if (session && isLogin)
     return (
       <Link href="#">
-        <Button variant="secondary" className="flex gap-2 w-full">
+        <Button variant="secondary" className="flex w-full gap-2">
           <LucideWallet size={18} /> ${balance.formatted} on Wallet
         </Button>
       </Link>
@@ -77,19 +77,25 @@ export function BitcashAccessButton({
     <Dialog open={open} onOpenChange={toggleOpen}>
       <DialogTrigger asChild>
         <Button
-          className={cn({
-            'relative text-md px-0 py-0 size-14 font-bold rounded-full hover:[&svg]:fill-card group': buttonLabel === 'down-right-icon'
-          }, buttonClassName)}
+          className={cn(
+            {
+              'text-md group relative size-14 rounded-full px-0 py-0 font-bold hover:[&svg]:fill-card':
+                buttonLabel === 'down-right-icon'
+            },
+            buttonClassName
+          )}
           {...buttonStyle}
         >
           {buttonLabel === 'down-right-icon' ? (
-            <IconDownRightArrow className="transition-all [&_path]:stroke-white size-4 group-hover:-rotate-[45deg] group-focus-within:-rotate-[45deg]" />
-          ) : buttonLabel}
+            <IconDownRightArrow className="size-4 transition-all group-focus-within:-rotate-[45deg] group-hover:-rotate-[45deg] [&_path]:stroke-white" />
+          ) : (
+            buttonLabel
+          )}
         </Button>
       </DialogTrigger>
 
       {/* @ts-ignore */}
-      <DialogContent className="w-full sm:max-w-[430px] box-content">
+      <DialogContent className="box-content w-full sm:max-w-[430px]">
         {!hideQr && isLogin && (
           <LoginDialogContent updateDialogContent={setDialogContent} />
         )}

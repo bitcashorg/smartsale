@@ -1,10 +1,6 @@
 import React from 'react'
 import { Metadata } from 'next'
-import {
-  PageContent,
-  PageContentData,
-  ContentTextType
-} from '@/components/shared/content'
+import { PageContent } from '@/components/shared/content'
 import { getDictionary } from '@/app/dictionaries'
 import { CommonPageProps } from '@/app/types/routing.type'
 

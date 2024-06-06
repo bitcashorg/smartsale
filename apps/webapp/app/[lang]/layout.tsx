@@ -1,6 +1,6 @@
 import '@/app/globals.css'
 import { Footer } from '@/components/layout/footer/footer'
-import { Header } from '@/components/layout/header'
+import { Header } from '@/components/layout/header/header'
 import { Providers } from '@/components/layout/providers'
 import { GlobalStoreProvider } from '@/hooks/use-global-store'
 import { cn } from '@/lib/utils'
@@ -13,16 +13,20 @@ import React from 'react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { locales } from '../dictionaries/locales'
 import { Analytics } from '@vercel/analytics/react'
+import { CommonPageParams } from '../types/routing.type'
 
 const openSans = Open_Sans({
   subsets: ['latin', 'latin-ext'],
   weight: ['400', '500', '600', '700', '800']
 })
 
-export default async function RootLayout({ children }: RootLayoutProps) {
+export default async function RootLayout({
+  children,
+  params
+}: RootLayoutProps) {
   return (
     <html
-      lang="en"
+      lang={params.lang || 'en'}
       className={cn('antialiased', openSans.className)}
       suppressHydrationWarning
     >
@@ -43,7 +47,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
         </GlobalStoreProvider>
 
         <GoogleAnalytics gaId="G-78N0Z7NPQJ" />
-        <Analytics/>
+        <Analytics />
         <SpeedInsights />
       </body>
     </html>
@@ -67,7 +71,7 @@ const DynamicSessionDialog = dynamic(
 
 interface RootLayoutProps {
   children: React.ReactNode
-  params: { project: string }
+  params: CommonPageParams
 }
 
 export const metadata: Metadata = {

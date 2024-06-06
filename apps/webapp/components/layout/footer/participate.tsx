@@ -5,7 +5,7 @@ import { IconDownRightArrow } from '@/components/ui/icons'
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
 import React from 'react'
-import { BitcashAccessButton } from '@/components/layout/bitcash-access'
+import { BitcashAccessButton } from '@/components/layout/header/bitcash-access'
 
 export default function Participate() {
   return (
