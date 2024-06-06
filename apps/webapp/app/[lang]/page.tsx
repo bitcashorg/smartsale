@@ -7,9 +7,6 @@ export default async function IndexPage({ params: { lang } }: IndexPageProps) {
   const dict = await getDictionary(lang)
   const projects = getProjects(dict)
 
-  console.log(' ======================= PROJECTS =======================')
-  console.log(projects)
-
   return (
     <div className="container !px-4 py-10 md:py-24">
       <Upcoming projects={projects} dict={dict} />

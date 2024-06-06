@@ -118,9 +118,5 @@ export async function getProjectBySlug(slug: string, dict: any) {
   const project = projects.find(p => p.slug == slug)
   if (!project) return null
   const content = dict.projects.find((c: any) => c.id == project.id)?.content
-  console.log(' =================== getProjectBySlug ======================== ')
-  console.log(content)
-  console.log(' ============================================================= ')
-
   return { ...project, content } as Project
 }
