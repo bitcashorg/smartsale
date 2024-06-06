@@ -9,7 +9,7 @@ export default async function BitlauncherWhitePaper({
   const dict = await getDictionary(params.lang)
   return (
     <div className="content-container !py-10 px-7 md:px-3 md:py-24">
-      <PageContent data={dict.whitepaper} />
+      <PageContent data={dict.whitepaper.content} />
     </div>
   )
 }
