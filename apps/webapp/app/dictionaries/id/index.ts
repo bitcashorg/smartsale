@@ -4,6 +4,7 @@ import home from './home'
 import { projects } from './projects'
 import shared from './shared'
 import { whitepaper } from './whitepaper'
+import { terms } from './terms'
 
 export default {
   home,
@@ -11,5 +12,6 @@ export default {
   projects,
   whitepaper,
   about,
-  security
+  security,
+  terms
 } as const
