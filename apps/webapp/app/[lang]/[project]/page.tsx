@@ -4,13 +4,15 @@ import { cn } from '@/lib/utils'
 import { ProjectHeader } from '@/components/routes/project/project-header'
 import { locales } from '@/app/dictionaries/locales'
 import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
+import { getDictionary } from '@/app/dictionaries'
 
 export default async function ProjectPage({ params }: ProjectPageProps) {
-  const project = await getProjectBySlug(params.project, params.lang)
+  const dict = await getDictionary(params.lang)
+  const project = await getProjectBySlug(params.project, dict)
   if (!project) redirect('/')
 
-  const projectContentObjectKeys = Object.keys(project.content)
-  const projectContent = project.content
+  const projectContentObjectKeys = Object.keys(project.content!)
+  const projectContent = project.content!
 
   return (
     <>
@@ -80,7 +82,8 @@ export async function generateStaticParams(): Promise<ProjectPageParams[]> {
   const params: ProjectPageParams[] = (
     await Promise.all(
       locales.map(async (lang): Promise<ProjectPageParams[]> => {
-        return getProjects(lang)
+        const dict = await getDictionary(lang)
+        return getProjects(dict)
           .map(project =>
             project.slug ? { lang, project: project.slug } : null
           )

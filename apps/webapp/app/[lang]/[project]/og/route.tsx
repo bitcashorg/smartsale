@@ -3,6 +3,7 @@ import { NextRequest } from 'next/server'
 
 import '@/app/globals.css'
 import { getProjectBySlug } from '@/lib/projects'
+import { getDictionary } from '@/app/dictionaries'
 
 type Params = {
   project: string
@@ -12,7 +13,8 @@ const siteUrl = `https://${process.env.VERCEL_URL}`
 
 export async function GET(req: NextRequest, context: { params: Params }) {
   try {
-    const project = await getProjectBySlug(context.params.project, 'en')
+    const dict = await getDictionary('en')
+    const project = await getProjectBySlug(context.params.project, dict)
     siteUrl
     return new ImageResponse(
       (

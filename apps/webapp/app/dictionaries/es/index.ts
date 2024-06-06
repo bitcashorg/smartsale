@@ -1,9 +1,9 @@
-
 import home from './home'
+import { projects } from './projects'
 import shared from './shared'
-
 
 export default {
   home,
-  shared
+  shared,
+  projects
 } as const
