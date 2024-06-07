@@ -18,7 +18,7 @@ export default async function ArticlePage(props: ArticlePageProps) {
   const { blogContent, i18n, relatedBlogs } = data
   return (
     <section>
-      <main className="content-container mx-auto">
+      <main className="mx-auto content-container">
         <BlogPage
           blogContent={blogContent}
           params={props.params}
@@ -59,10 +59,10 @@ export async function generateMetadata(props: any): Promise<Metadata> {
   const blogContent = categoryContent[0]
 
   const seoData = {
-    title: blogContent.seo.title || '',
-    description: blogContent.seo.description || '',
+    title: blogContent.seo?.title || '',
+    description: blogContent.seo?.description || '',
     ogType: 'website',
-    ogImageUrl: blogContent.seo.image?.url || '',
+    ogImageUrl: blogContent.seo?.image?.url || '',
     twitterCard: 'summary_large_image'
   }
 
