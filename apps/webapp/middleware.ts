@@ -2,6 +2,8 @@ import { match } from '@formatjs/intl-localematcher'
 import Negotiator from 'negotiator'
 import { NextResponse, NextRequest } from 'next/server'
 import { defaultLocale, locales } from './app/dictionaries/locales'
+import { cookies } from 'next/headers'
+import { SiteLocale } from './services/datocms/graphql/generated/cms'
 
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl
@@ -20,13 +22,17 @@ export function middleware(request: NextRequest) {
 }
 
 function getLocale(request: NextRequest): string {
+  const cookieLang = request.cookies.get('lang')
+  if (cookieLang) return cookieLang.value
+
   const negotiator = new Negotiator({
     headers: { 'accept-language': request.headers.get('accept-language') || '' }
   })
   const languages = negotiator.languages()
   return match(languages, locales, defaultLocale)
 }
-
 export const config = {
-  matcher: ['/((?!_next|images|api|favicon.ico).*)']
+  matcher: [
+    '/((?!_next|_nextjs|images|api|favicon.ico|__nextjs_original-stack-frame).*)'
+  ]
 }
