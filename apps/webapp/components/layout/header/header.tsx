@@ -38,11 +38,11 @@ export function Header({ lang }: LangProp) {
         </div>
 
         {/* mobile navbar icon */}
-        {!isProduction ? (
+        {/* {!isProduction ? (
           <div className="flex md:hidden">
             <DynamicMobileNav lang={lang} />
           </div>
-        ) : null}
+        ) : null} */}
       </div>
     </div>
   )
