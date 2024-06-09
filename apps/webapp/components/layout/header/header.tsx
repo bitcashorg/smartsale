@@ -34,15 +34,14 @@ export function Header({ lang }: LangProp) {
           <Suspense fallback={<Button>Login</Button>}>
             <DynamicSessionButton />
           </Suspense>
-          <LangSelector lang={lang} />
+          {!isProduction ? <LangSelector lang={lang} /> : null}
         </div>
 
         {/* mobile navbar icon */}
-        {!isProduction ? (
-          <div className="flex md:hidden">
-            <DynamicMobileNav lang={lang} />
-          </div>
-        ) : null}
+
+        <div className="flex md:hidden">
+          <DynamicMobileNav lang={lang} />
+        </div>
       </div>
     </div>
   )
