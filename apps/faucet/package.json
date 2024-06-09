@@ -48,7 +48,9 @@
   "workspaces": {
     "nohoist": [
       "**/cbw-sdk",
-      "**/cbw-sdk/**"
+      "**/cbw-sdk/**",
+      "**/wagmi",
+      "**/wagmi/**"
     ]
   }
 }
