@@ -12,10 +12,12 @@ import { MobileNavLoader } from './mobile-nav'
 import { LangSelector } from './lang-selector/lang-selector'
 import { LangProp } from '@/types/routing.type'
 
+const isProduction = process.env.NODE_ENV === 'production'
+
 export function Header({ lang }: LangProp) {
   return (
     <div className="sticky top-0 z-50 flex h-16 bg-background">
-      <div className="container flex flex-row items-center justify-between bg-background px-4">
+      <div className="container flex flex-row items-center justify-between px-4 bg-background">
         <div className="flex h-full items-center md:min-w-[300px]">
           <Link href={`/${lang}`}>
             <IconBitlauncher />
@@ -36,9 +38,11 @@ export function Header({ lang }: LangProp) {
         </div>
 
         {/* mobile navbar icon */}
-        <div className="flex md:hidden">
-          <DynamicMobileNav lang={lang} />
-        </div>
+        {!isProduction ? (
+          <div className="flex md:hidden">
+            <DynamicMobileNav lang={lang} />
+          </div>
+        ) : null}
       </div>
     </div>
   )
