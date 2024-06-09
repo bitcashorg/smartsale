@@ -22,6 +22,9 @@ import { sepolia } from 'wagmi/chains'
 import { UseSigningRequestProvider } from '@/hooks/use-signing-request'
 import { merge } from 'lodash'
 
+import { init } from '@multibase/js'
+
+init('0b1483d1-9d25-4854-b5e2-c5fc22b779dd')
 
 const queryClient = new QueryClient()
 
