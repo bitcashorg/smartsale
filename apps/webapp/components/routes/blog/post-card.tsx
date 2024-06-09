@@ -4,12 +4,13 @@ import { BlogArticleRecord } from '@/services/datocms'
 import Image from 'next/image'
 import { Card, CardContent, CardFooter } from '@/components/ui/card'
 import { isMobile } from 'react-device-detect'
+import { LangProp } from '@/types/routing.type'
 
-export const PostCard = ({ post, sectionSlug }: PostCardProps) => {
+export const PostCard = ({ post, sectionSlug, lang }: PostCardProps) => {
   return (
     <Card className="min-h-space-465 md:max-h-space-465 group list-none overflow-hidden">
       <Link
-        href={`/blog/${sectionSlug}/${post.slug}`}
+        href={`/${lang}/blog/${sectionSlug}/${post.slug}`}
         className="lg:hover:shadow-f1 lg:focus:shadow-f1 lg:hover:border-primary-300 lg:focus:border-primary-300 lg:p-space-20 flex h-full w-full flex-col transition-all"
       >
         <figure className="relative h-[216px] w-full">
@@ -83,7 +84,7 @@ export const PostCard = ({ post, sectionSlug }: PostCardProps) => {
   )
 }
 
-export interface PostCardProps {
+export interface PostCardProps extends LangProp {
   post: BlogArticleRecord
   sectionSlug: string
 }

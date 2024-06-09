@@ -27,10 +27,10 @@ export function ProjectCardButtons({ project }: { project: Project }) {
   const buttonLinkClassName = 'relative px-0 py-0 size-[58px] rounded-full'
   return (
     <div
-      className="flex w-full items-center justify-between "
+      className="flex items-center justify-between w-full "
       suppressHydrationWarning={true}
     >
-      <div className="align-center relative z-10 flex items-center justify-center gap-3 md:gap-4 xl:gap-6">
+      <div className="relative z-10 flex items-center justify-center gap-3 align-center md:gap-4 xl:gap-6">
         {[
           {
             icon: IconTwitterX,
@@ -49,7 +49,7 @@ export function ProjectCardButtons({ project }: { project: Project }) {
           }
         ].map(({ icon: Icon, link, title: socialTitle }, index) => (
           <Suspense
-            key={index}
+            key={`susp-${index}`}
             fallback={
               <Button
                 variant="outline"
@@ -62,6 +62,7 @@ export function ProjectCardButtons({ project }: { project: Project }) {
             }
           >
             <ExternalLinkButton
+              key={`card-button-${index}`}
               variant="outline"
               size="icon"
               link={link}
@@ -92,9 +93,9 @@ export function ProjectCardButtons({ project }: { project: Project }) {
               'text-md group relative size-14 rounded-full p-0 font-bold hover:[&svg]:fill-card'
             )}
             aria-label={`View ${title}´s auction`}
-          // data-title={title}
+            // data-title={title}
           >
-            <IconDownRightArrow className="size-4 transition-all group-focus-within:-rotate-45 group-hover:-rotate-45" />
+            <IconDownRightArrow className="transition-all size-4 group-focus-within:-rotate-45 group-hover:-rotate-45" />
           </NestedLinkButton>
         )}{' '}
       </Suspense>

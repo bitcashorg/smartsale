@@ -1,29 +1,36 @@
 import { match } from '@formatjs/intl-localematcher'
 import Negotiator from 'negotiator'
 import { NextResponse, NextRequest } from 'next/server'
-import { defaultLocale, locales } from './app/dictionaries/locales'
+import { defaultLocale, locales } from './dictionaries/locales'
 
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl
-  const pathnameHasLocale = locales.some(
-    locale => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
+  const hasLang = locales.some(
+    lang => pathname.startsWith(`/${lang}/`) || pathname === `/${lang}`
   )
 
-  if (pathnameHasLocale) return NextResponse.next()
+  console.log('🍓 has lang', pathname, hasLang)
 
-  const locale = getLocale(request)
-  request.nextUrl.pathname = `/${locale}${pathname}`
+  if (hasLang) return NextResponse.next()
+
+  const lang = getLocale(request)
+  request.nextUrl.pathname = `/${lang}${pathname}`
+
   return NextResponse.redirect(request.nextUrl)
 }
 
 function getLocale(request: NextRequest): string {
+  const cookieLang = request.cookies.get('lang')
+  if (cookieLang) return cookieLang.value
+
   const negotiator = new Negotiator({
     headers: { 'accept-language': request.headers.get('accept-language') || '' }
   })
   const languages = negotiator.languages()
   return match(languages, locales, defaultLocale)
 }
-
 export const config = {
-  matcher: ['/((?!_next|images|api).*)']
+  matcher: [
+    '/((?!_next|_nextjs|images|api|studio|favicon.ico|__nextjs_original-stack-frame).*)'
+  ]
 }

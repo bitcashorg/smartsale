@@ -18,6 +18,7 @@ import { useForm } from 'react-hook-form'
 import { useSetState } from 'react-use'
 import { z } from 'zod'
 import { useEffect } from 'react'
+import { LangProp } from '@/types/routing.type'
 
 // Schema for form validation with Zod
 const formSchema = z.object({
@@ -27,7 +28,7 @@ const formSchema = z.object({
 const formOptions = { resolver: zodResolver(formSchema) }
 type SubcriptionFormData = z.infer<typeof formSchema>
 
-export default function Newsletter() {
+export default function Newsletter({ lang }: LangProp) {
   const [state, setState] = useSetState({
     loading: false,
     data: '',
@@ -174,7 +175,7 @@ export default function Newsletter() {
           </div>
         </div>
         <div className="flex h-[230px] w-full flex-col flex-wrap items-center justify-evenly rounded-b-3xl bg-primary px-10 md:flex-row md:justify-between">
-          <Link href="/" className="flex">
+          <Link href={`/${lang}`} className="flex">
             <IconBitlauncher className="h-8 w-40 md:h-11 md:w-56" />
           </Link>
           <div className="hidden md:block">
@@ -185,7 +186,7 @@ export default function Newsletter() {
               <DiscordButton />
             </div>
             <Link
-              href="/terms"
+              href={`/${lang}/terms`}
               className="underline-offset-2 focus-within:underline hover:underline"
             >
               Terms & Privacy Policy

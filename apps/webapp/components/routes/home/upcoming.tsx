@@ -1,7 +1,13 @@
 import { Project } from '@/lib/projects'
 import { AuctionCard } from './auction-card'
 
-export function Upcoming({ projects, dict }: { projects: Project[], dict: any }) {
+export function Upcoming({
+  projects,
+  dict
+}: {
+  projects: Project[]
+  dict: any
+}) {
   return (
     <section className="align-center relative z-10 flex min-h-[80vh] flex-col justify-center pt-10">
       <h1 className="flex flex-col mx-auto mb-10 text-center whitespace-pre-line md:mb-24">
@@ -21,7 +27,7 @@ export function Upcoming({ projects, dict }: { projects: Project[], dict: any })
         </span>
       </h1>
       <h2 className="relative flex justify-center w-full py-10 text-3xl font-bold leading-none text-center">
-        Upcoming Auctions
+        {dict.home.upcomingHeading}
         <div className="absolute top-0 blur-effect-bg" />
       </h2>
       <div
