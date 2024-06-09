@@ -20,6 +20,7 @@
     "@genql/runtime": "^2.10.0",
     "@headlessui/react": "^2.0.4",
     "@hookform/resolvers": "^3.4.2",
+    "@multibase/js": "^0.1.15",
     "@next/bundle-analyzer": "^14.2.3",
     "@next/third-parties": "latest",
     "@radix-ui/react-dialog": "^1.0.5",

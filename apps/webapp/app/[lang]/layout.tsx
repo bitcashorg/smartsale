@@ -43,7 +43,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
         </GlobalStoreProvider>
 
         <GoogleAnalytics gaId="G-78N0Z7NPQJ" />
-        <Analytics/>
+        <Analytics />
         <SpeedInsights />
       </body>
     </html>
