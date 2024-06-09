@@ -31,6 +31,6 @@ function getLocale(request: NextRequest): string {
 }
 export const config = {
   matcher: [
-    '/((?!_next|_nextjs|images|api|favicon.ico|__nextjs_original-stack-frame).*)'
+    '/((?!_next|_nextjs|images|api|studio|favicon.ico|__nextjs_original-stack-frame).*)'
   ]
 }

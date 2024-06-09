@@ -1,6 +1,6 @@
 import { Upcoming } from '@/components/routes/home/upcoming'
 import { getProjects } from '@/lib/projects'
-import { getDictionary } from '../../dictionaries'
+import { getDictionary } from '../../../dictionaries'
 import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
 
 export default async function IndexPage({ params: { lang } }: IndexPageProps) {

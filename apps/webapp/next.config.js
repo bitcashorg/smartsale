@@ -34,7 +34,8 @@ const nextConfig = {
           as: '*.js'
         }
       }
-    }
+    },
+    taint: true,
   },
   reactStrictMode: true,
   swcMinify: true,
@@ -53,6 +54,11 @@ const nextConfig = {
         hostname: 'cdn.sanity.io'
       }
     ]
+  },
+  logging: {
+    fetches: {
+      fullUrl: true,
+    },
   }
 }
 

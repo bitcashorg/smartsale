@@ -14,7 +14,7 @@ export default defineType({
       description: 'This field is the title of your project.',
       title: 'Title',
       type: 'string',
-      validation: (rule) => rule.required(),
+      validation: rule => rule.required()
     }),
     defineField({
       name: 'slug',
@@ -23,9 +23,9 @@ export default defineType({
       options: {
         source: 'title',
         maxLength: 96,
-        isUnique: (value, context) => context.defaultIsUnique(value, context),
+        isUnique: (value, context) => context.defaultIsUnique(value, context)
       },
-      validation: (rule) => rule.required(),
+      validation: rule => rule.required()
     }),
     defineField({
       name: 'overview',
@@ -42,19 +42,19 @@ export default defineType({
             decorators: [
               {
                 title: 'Italic',
-                value: 'em',
+                value: 'em'
               },
               {
                 title: 'Strong',
-                value: 'strong',
-              },
-            ],
+                value: 'strong'
+              }
+            ]
           },
           styles: [],
-          type: 'block',
-        }),
+          type: 'block'
+        })
       ],
-      validation: (rule) => rule.max(155).required(),
+      validation: rule => rule.max(155).required()
     }),
     defineField({
       name: 'coverImage',
@@ -63,24 +63,24 @@ export default defineType({
         'This image will be used as the cover image for the project. If you choose to add it to the show case projects, this is the image displayed in the list within the homepage.',
       type: 'image',
       options: {
-        hotspot: true,
+        hotspot: true
       },
-      validation: (rule) => rule.required(),
+      validation: rule => rule.required()
     }),
     defineField({
       name: 'duration',
       title: 'Duration',
-      type: 'duration',
+      type: 'duration'
     }),
     defineField({
       name: 'client',
       title: 'Client',
-      type: 'string',
+      type: 'string'
     }),
     defineField({
       name: 'site',
       title: 'Site',
-      type: 'url',
+      type: 'url'
     }),
     defineField({
       name: 'tags',
@@ -88,8 +88,8 @@ export default defineType({
       type: 'array',
       of: [{ type: 'string' }],
       options: {
-        layout: 'tags',
-      },
+        layout: 'tags'
+      }
     }),
     defineField({
       name: 'description',
@@ -108,49 +108,45 @@ export default defineType({
                   {
                     name: 'href',
                     type: 'url',
-                    title: 'Url',
-                  },
-                ],
-              },
-            ],
+                    title: 'Url'
+                  }
+                ]
+              }
+            ]
           },
-          styles: [],
+          styles: []
         }),
         // Custom blocks
-        defineArrayMember({
-          name: 'timeline',
-          type: 'timeline',
-        }),
         defineField({
           type: 'image',
           icon: ImageIcon,
           name: 'image',
           title: 'Image',
           options: {
-            hotspot: true,
+            hotspot: true
           },
           preview: {
             select: {
               imageUrl: 'asset.url',
-              title: 'caption',
-            },
+              title: 'caption'
+            }
           },
           fields: [
             defineField({
               title: 'Caption',
               name: 'caption',
-              type: 'string',
+              type: 'string'
             }),
             defineField({
               name: 'alt',
               type: 'string',
               title: 'Alt text',
               description:
-                'Alternative text for screenreaders. Falls back on caption if not set',
-            }),
-          ],
-        }),
-      ],
-    }),
-  ],
+                'Alternative text for screenreaders. Falls back on caption if not set'
+            })
+          ]
+        })
+      ]
+    })
+  ]
 })

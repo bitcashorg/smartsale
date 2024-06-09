@@ -26,8 +26,8 @@ import post from '@/services/sanity/schemas/documents/post'
 import duration from '@/services/sanity/schemas/objects/duration'
 import milestone from '@/services/sanity/schemas/objects/milestone'
 import content from '@/services/sanity/schemas/objects/content'
+import author from '@/services/sanity/schemas/objects/author'
 import category from '@/services/sanity/schemas/objects/category'
-import timeline from '@/services/sanity/schemas/objects/timeline'
 import home from '@/services/sanity/schemas/singletons/home'
 import settings from '@/services/sanity/schemas/singletons/settings'
 
@@ -49,11 +49,11 @@ export default defineConfig({
       project,
       post,
       // Objects
+      author,
       category,
       duration,
       milestone,
       content
-      // timeline
     ]
   },
   plugins: [

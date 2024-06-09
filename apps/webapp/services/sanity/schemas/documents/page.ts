@@ -11,16 +11,16 @@ export default defineType({
       type: 'string',
       name: 'title',
       title: 'Title',
-      validation: (rule) => rule.required(),
+      validation: rule => rule.required()
     }),
     defineField({
       type: 'slug',
       name: 'slug',
       title: 'Slug',
       options: {
-        source: 'title',
+        source: 'title'
       },
-      validation: (rule) => rule.required(),
+      validation: rule => rule.required()
     }),
     defineField({
       name: 'overview',
@@ -37,26 +37,26 @@ export default defineType({
             decorators: [
               {
                 title: 'Italic',
-                value: 'em',
+                value: 'em'
               },
               {
                 title: 'Strong',
-                value: 'strong',
-              },
-            ],
+                value: 'strong'
+              }
+            ]
           },
           styles: [],
-          type: 'block',
-        }),
+          type: 'block'
+        })
       ],
-      validation: (rule) => rule.max(155).required(),
+      validation: rule => rule.max(155).required()
     }),
     defineField({
       type: 'array',
       name: 'body',
       title: 'Body',
       description:
-        "This is where you can write the page's content. Including custom blocks like timelines for more a more visual display of information.",
+        "This is where you can write the page's content. Including custom blocks for more a more visual display of information.",
       of: [
         // Paragraphs
         defineArrayMember({
@@ -71,60 +71,56 @@ export default defineType({
                   {
                     name: 'href',
                     type: 'url',
-                    title: 'Url',
-                  },
-                ],
-              },
-            ],
+                    title: 'Url'
+                  }
+                ]
+              }
+            ]
           },
-          styles: [],
+          styles: []
         }),
         // Custom blocks
-        defineArrayMember({
-          name: 'timeline',
-          type: 'timeline',
-        }),
         defineField({
           type: 'image',
           icon: ImageIcon,
           name: 'image',
           title: 'Image',
           options: {
-            hotspot: true,
+            hotspot: true
           },
           preview: {
             select: {
               imageUrl: 'asset.url',
-              title: 'caption',
-            },
+              title: 'caption'
+            }
           },
           fields: [
             defineField({
               title: 'Caption',
               name: 'caption',
-              type: 'string',
+              type: 'string'
             }),
             defineField({
               name: 'alt',
               type: 'string',
               title: 'Alt text',
               description:
-                'Alternative text for screenreaders. Falls back on caption if not set',
-            }),
-          ],
-        }),
-      ],
-    }),
+                'Alternative text for screenreaders. Falls back on caption if not set'
+            })
+          ]
+        })
+      ]
+    })
   ],
   preview: {
     select: {
-      title: 'title',
+      title: 'title'
     },
     prepare({ title }) {
       return {
         subtitle: 'Page',
-        title,
+        title
       }
-    },
-  },
+    }
+  }
 })
