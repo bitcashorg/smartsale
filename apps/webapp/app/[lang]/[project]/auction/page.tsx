@@ -1,5 +1,5 @@
-import { getDictionary } from '@/app/dictionaries'
-import { locales } from '@/app/dictionaries/locales'
+import { getDictionary } from '@/dictionaries'
+import { locales } from '@/dictionaries/locales'
 import { AuctionBids } from '@/components/routes/auction/auction-bids'
 import { AuctionOrders } from '@/components/routes/auction/auction-orders'
 import { ClaimTokens } from '@/components/routes/auction/claim-tokens'
@@ -69,7 +69,7 @@ export default async function AuctionPage({ params }: ProjectPageProps) {
         <Tabs tabs={tabs} />
       </section>
 
-      <hr className="max-w-screen-xl mx-auto mt-24 border-gray-600/80" />
+      <hr className="mx-auto mt-24 max-w-screen-xl border-gray-600/80" />
     </div>
   )
 }

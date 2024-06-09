@@ -2,9 +2,9 @@ import { getProjectBySlug, getProjects } from '@/lib/projects'
 import { redirect } from 'next/navigation'
 import { cn } from '@/lib/utils'
 import { ProjectHeader } from '@/components/routes/project/project-header'
-import { locales } from '@/app/dictionaries/locales'
+import { locales } from '@/dictionaries/locales'
 import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
-import { getDictionary } from '@/app/dictionaries'
+import { getDictionary } from '@/dictionaries'
 
 export default async function ProjectPage({ params }: ProjectPageProps) {
   const dict = await getDictionary(params.lang)
@@ -31,23 +31,23 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                   index % 2 !== 0 ? 'backdrop-xl rounded-3xl bg-primary/70' : ''
                 )}
               >
-                <h2 className="flex justify-center mt-4 mb-10 tracking-tighter heading2">
+                <h2 className="heading2 mb-10 mt-4 flex justify-center tracking-tighter">
                   {projectContent[pcKey].title}
                 </h2>
-                <div className="flex flex-col w-full gap-6">
+                <div className="flex w-full flex-col gap-6">
                   {(projectContent[pcKey].content as string[][]).map(
                     (content, index) => {
                       if (content.every((c, i) => c.includes(':'))) {
                         return (
                           <div
                             key={`${index}__${(projectContent[pcKey].title as string).replace(/\s/g, '-')}`}
-                            className="grid gap-16 px-6 list-disc list-outside lg:grid-flow-cols-4 sm:grid-cols-2 md:grid-cols-3"
+                            className="lg:grid-flow-cols-4 grid list-outside list-disc gap-16 px-6 sm:grid-cols-2 md:grid-cols-3"
                           >
                             {content.map(item => {
                               const text = item.split(': ')
                               return (
                                 <div key={`${item}__list-item`}>
-                                  <h3 className="mb-2 heading3">{text[0]}</h3>
+                                  <h3 className="heading3 mb-2">{text[0]}</h3>
                                   <p className="paragraph">{text[1]}</p>
                                 </div>
                               )
@@ -72,7 +72,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           })}
         </div>
 
-        <hr className="max-w-screen-xl mx-auto mt-24 border-gray-600/80" />
+        <hr className="mx-auto mt-24 max-w-screen-xl border-gray-600/80" />
       </div>
     </>
   )

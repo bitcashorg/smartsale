@@ -1,6 +1,6 @@
 'use client'
 
-import { LangProp } from '@/app/types/routing.type'
+import { LangProp } from '@/types/routing.type'
 import { useSession } from '@/hooks/use-session'
 import { appConfig } from '@/lib/config'
 import { useAccountModal, useConnectModal } from '@rainbow-me/rainbowkit'

@@ -1,4 +1,4 @@
-import { getDictionary } from '@/app/dictionaries'
+import { getDictionary } from '@/dictionaries'
 import { getProjectBySlug } from '@/lib/projects'
 import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
 import { Metadata } from 'next'

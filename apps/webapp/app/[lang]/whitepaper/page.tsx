@@ -1,7 +1,7 @@
 import React from 'react'
 import { PageContent, PageContentData } from '@/components/shared/content'
-import { CommonPageProps } from '@/app/types/routing.type'
-import { getDictionary } from '@/app/dictionaries'
+import { CommonPageProps } from '@/types/routing.type'
+import { getDictionary } from '@/dictionaries'
 
 export default async function BitlauncherWhitePaper({
   params

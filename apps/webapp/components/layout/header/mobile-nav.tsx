@@ -6,7 +6,7 @@ import menu4 from 'react-useanimations/lib/menu4'
 import { NavLinks } from './nav-links'
 import { Transition } from '@/components/shared/transition'
 import { AnimatePresence } from 'framer-motion'
-import { LangProp } from '@/app/types/routing.type'
+import { LangProp } from '@/types/routing.type'
 
 export function MobileNav({ lang }: LangProp) {
   const [open, toggleOpen] = useToggle(false)

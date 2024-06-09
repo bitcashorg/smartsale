@@ -1,5 +1,5 @@
-import { getDictionary } from '@/app/dictionaries'
-import { CommonPageProps } from '@/app/types/routing.type'
+import { getDictionary } from '@/dictionaries'
+import { CommonPageProps } from '@/types/routing.type'
 import { PageContent } from '@/components/shared/content'
 import { Metadata } from 'next'
 

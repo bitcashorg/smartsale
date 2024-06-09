@@ -1,8 +1,8 @@
 import React from 'react'
 import { Metadata } from 'next'
 import { PageContent } from '@/components/shared/content'
-import { getDictionary } from '@/app/dictionaries'
-import { CommonPageProps } from '@/app/types/routing.type'
+import { getDictionary } from '@/dictionaries'
+import { CommonPageProps } from '@/types/routing.type'
 
 export default async function PrivacyPolicy({ params }: CommonPageProps) {
   const dict = await getDictionary(params.lang)

@@ -1,7 +1,7 @@
 import { match } from '@formatjs/intl-localematcher'
 import Negotiator from 'negotiator'
 import { NextResponse, NextRequest } from 'next/server'
-import { defaultLocale, locales } from './app/dictionaries/locales'
+import { defaultLocale, locales } from './dictionaries/locales'
 
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl

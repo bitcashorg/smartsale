@@ -48,6 +48,9 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'datocms-assets.com'
+      },
+      {
+        hostname: 'cdn.sanity.io'
       }
     ]
   }

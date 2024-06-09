@@ -8,7 +8,7 @@ import {
 import { generateMetadataFromSEO } from '@/lib/seo'
 import { BlogSections } from '@/components/routes/blog/sections'
 import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
-import { locales } from '@/app/dictionaries/locales'
+import { locales } from '@/dictionaries/locales'
 
 export default async function Page(props: CategoryPageProps) {
   const {
@@ -23,7 +23,7 @@ export default async function Page(props: CategoryPageProps) {
   return (
     <section>
       <header className="flex flex-col py-10 md:py-24 ">
-        <h1 className="flex justify-center heading ">
+        <h1 className="heading flex justify-center ">
           {pageSeo.description} <br />
         </h1>
         <h2 className="flex justify-center text-xl font-semibold">

@@ -3,7 +3,7 @@ import { NextRequest } from 'next/server'
 
 import '@/app/globals.css'
 import { getProjectBySlug } from '@/lib/projects'
-import { getDictionary } from '@/app/dictionaries'
+import { getDictionary } from '@/dictionaries'
 
 type Params = {
   project: string

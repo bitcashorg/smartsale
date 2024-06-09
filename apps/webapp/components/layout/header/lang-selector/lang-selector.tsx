@@ -1,4 +1,4 @@
-import { LangProp } from '@/app/types/routing.type'
+import { LangProp } from '@/types/routing.type'
 import { Button } from '@/components/ui/button'
 import {
   DropdownMenuTrigger,
@@ -20,7 +20,7 @@ export function LangSelector({ lang }: LangProp) {
           <Button className="flex items-center gap-2" variant="outline">
             {lang.toUpperCase()}
             <span />
-            <ChevronDownIcon className="w-4 h-4" />
+            <ChevronDownIcon className="h-4 w-4" />
           </Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent className="w-48">
