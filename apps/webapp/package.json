@@ -1,6 +1,7 @@
 {
   "private": true,
   "name": "launchpad-webapp",
+  "version": "0.0.0",
   "scripts": {
     "dev": "rm -rf .next && next dev --turbo",
     "build": "next build",
