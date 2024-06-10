@@ -12,19 +12,8 @@ export function Page({ data }: PageProps) {
 
   return (
     <div>
-      <div className="mb-14">
-        {/* Header */}
-        <Header title={title} description={overview} />
-
-        {/* Body */}
-        {body && (
-          <CustomPortableText
-            paragraphClasses="font-serif max-w-3xl text-gray-600 text-xl"
-            value={body}
-          />
-        )}
-      </div>
-      <div className="absolute left-0 w-screen border-t" />
+      <Header title={title} description={overview} />
+      {body && <CustomPortableText paragraphClasses="paragraph" value={body} />}
     </div>
   )
 }

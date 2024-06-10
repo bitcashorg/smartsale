@@ -8,7 +8,7 @@ import { defineConfig } from 'sanity'
 import { presentationTool } from 'sanity/presentation'
 import { structureTool } from 'sanity/structure'
 import { unsplashImageAsset } from 'sanity-plugin-asset-source-unsplash'
-
+import { documentInternationalization } from '@sanity/document-internationalization'
 import {
   apiVersion,
   dataset,
@@ -74,6 +74,16 @@ export default defineConfig({
     unsplashImageAsset(),
     // Vision lets you query your content with GROQ in the studio
     // https://www.sanity.io/docs/the-vision-plugin
-    visionTool({ defaultApiVersion: apiVersion })
+    visionTool({ defaultApiVersion: apiVersion }),
+    documentInternationalization({
+      // Required configuration
+      supportedLanguages: [
+        { id: 'es', title: 'Spanish' },
+        { id: 'en', title: 'English' },
+        { id: 'pt', title: 'Portuguese' },
+        { id: 'cn', title: 'Chinese' }
+      ],
+      schemaTypes: ['post']
+    })
   ]
 })
