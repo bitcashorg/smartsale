@@ -8,6 +8,7 @@ import { ProjectPage } from '@/components/sanity/pages/project/ProjectPage'
 import { urlForOpenGraphImage } from '@/services/sanity/lib/utils'
 import { generateStaticSlugs } from '@/services/sanity/loader/generateStaticSlugs'
 import { loadProject } from '@/services/sanity/loader/loadQuery'
+import { CommonPageProps } from '@/types/routing.type'
 const ProjectPreview = dynamic(
   () => import('@/components/sanity/pages/project/ProjectPreview')
 )
@@ -17,7 +18,7 @@ type Props = {
 }
 
 export async function generateMetadata(
-  { params }: Props,
+  { params }: Props & CommonPageProps,
   parent: ResolvingMetadata
 ): Promise<Metadata> {
   const { data: project } = await loadProject(params.slug)

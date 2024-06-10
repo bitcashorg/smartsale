@@ -34,6 +34,7 @@
     "@radix-ui/react-tooltip": "^1.0.7",
     "@rainbow-me/rainbowkit": "2.x",
     "@sanity/demo": "2.0.0",
+    "@sanity/document-internationalization": "^3.0.0",
     "@sanity/icons": "3.2.0",
     "@sanity/image-url": "1.0.2",
     "@sanity/preview-url-secret": "1.6.17",

@@ -26,6 +26,10 @@ export const pagesBySlugQuery = groq`
   }
 `
 
+export const articleBySlugQuery = groq`
+  *[_type == "post" && slug.current == $slug && language == $language][0]
+`
+
 export const projectBySlugQuery = groq`
   *[_type == "project" && slug.current == $slug][0] {
     _id,

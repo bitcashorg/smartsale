@@ -5,6 +5,7 @@ import { draftMode } from 'next/headers'
 
 import { client } from '@/services/sanity/lib/client'
 import {
+  articleBySlugQuery,
   homePageQuery,
   pagesBySlugQuery,
   projectBySlugQuery,
@@ -17,6 +18,7 @@ import {
   ProjectPayload,
   SettingsPayload
 } from '@/types'
+import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
 
 const serverClient = client.withConfig({
   token,
@@ -67,6 +69,13 @@ export function loadSettings() {
     settingsQuery,
     {},
     { next: { tags: ['settings', 'home', 'page', 'project'] } }
+  )
+}
+export function loadArticle(slug: string, language: SiteLocale) {
+  return loadQuery<any>(
+    articleBySlugQuery,
+    { slug, language },
+    { next: { tags: [`post:${slug}`] } }
   )
 }
 
