@@ -2,7 +2,7 @@
 /**
  * This config is used to set up Sanity Studio that's mounted on the `app/studio/[[...index]]/Studio.tsx` route
  */
-
+import { assist } from '@sanity/assist'
 import { visionTool } from '@sanity/vision'
 import { defineConfig } from 'sanity'
 import { presentationTool } from 'sanity/presentation'
@@ -84,6 +84,7 @@ export default defineConfig({
         { id: 'cn', title: 'Chinese' }
       ],
       schemaTypes: ['post']
-    })
+    }),
+    assist()
   ]
 })
