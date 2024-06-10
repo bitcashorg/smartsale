@@ -24,6 +24,7 @@ export async function generateMetadata(
 
   console.log('====================  article  ==========================')
   console.log(JSON.stringify(article))
+
   return {
     title: article?.title,
     description: article?.overview
