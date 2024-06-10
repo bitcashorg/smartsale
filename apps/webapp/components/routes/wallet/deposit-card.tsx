@@ -11,14 +11,10 @@ import {
   SelectTrigger,
   SelectValue
 } from '@/components/ui/select'
-import {
-  genBitusdDepositSigningRequest,
-  genUsdtDepositSigningRequest
-} from '@/lib/eos'
 import { useState } from 'react'
 import {
   EVMTokenContractData,
-  TestnetUSDT,
+  TestnetMor,
   TokenContractData
 } from 'smartsale-contracts'
 import { parseUnits } from 'viem'
@@ -38,12 +34,12 @@ export function DepositCard() {
   const { setGlobalError } = useGlobalStore()
   const [amount, setAmount] = useState<number>(42)
   const { switchChain } = useSwitchChain()
-  const [token, setToken] = useState<TokenContractData>(TestnetUSDT)
+  const [token, setToken] = useState<TokenContractData>(TestnetMor)
   const { requestSignature } = useSigningRequest()
 
   const deposit = async () => {
     if (!address)
-      return setGlobalError('Make sure your evm wallet is connected.')
+      return setGlobalError('Make sure your Arbitrum wallet is connected.')
     if (!amount) return setGlobalError('Amount is undefined')
 
     if (token.chainType === 'evm') {
@@ -59,13 +55,6 @@ export function DepositCard() {
         ],
         chainId: evmToken.chainId
       })
-    } else {
-      // handle eos token bitusd and usdt
-      const esr =
-        token.symbol === 'USDT'
-          ? await genUsdtDepositSigningRequest(amount, address)
-          : await genBitusdDepositSigningRequest(amount, address)
-      requestSignature(esr)
     }
   }
 
@@ -74,7 +63,7 @@ export function DepositCard() {
       <CardContent>
         <div className="flex flex-col space-y-4">
           <label htmlFor="deposit" className="text-sm">
-            Convert to MOR
+            Convert to USDT/USDC
           </label>
           <div className="flex items-center justify-between">
             <div className="flex min-w-[40%] flex-col">
@@ -89,6 +78,7 @@ export function DepositCard() {
                 />
               </span>
             </div>
+            
             <Select onValueChange={chainId => setToken(usdtMap.get(chainId)!)}>
               {/* @ts-ignore */}
               <SelectTrigger id="currency-out">

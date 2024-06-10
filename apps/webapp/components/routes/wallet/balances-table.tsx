@@ -54,12 +54,6 @@ export function BalancesTable() {
       description: 'Auctioning Prelaunch Token'
     },
     {
-      coin: 'BITUSD',
-      totalAmount: eosBalances.bitusd,
-      nertwork: 'EOS Mainnet',
-      description: 'Bitcash USD stable coin'
-    },
-    {
       coin: 'MBOTS',
       totalAmount: eosBalances.mbots,
       nertwork: 'EOS Mainnet',

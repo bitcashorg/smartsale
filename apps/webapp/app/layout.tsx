@@ -65,12 +65,12 @@ interface RootLayoutProps {
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'Bitlauncher',
-    template: '%s | Bitlauncher'
+    absolute: 'Morlauncher',
+    template: '%s | Morlauncher'
   },
   description:
     'Be part of the intelligent future and join the Ai/Web3 revolution now!',
-  metadataBase: new URL('https://bitlauncher.ai'),
+  metadataBase: new URL('https://morlauncher.ai'),
   alternates: {
     canonical: '/',
     languages: {
@@ -79,31 +79,32 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: 'website',
-    url: 'https://bitlauncher.ai',
+    url: 'https://morlauncher.ai',
     title: 'bitlauncher',
     description:
       'Be part of the intelligent future and join the Ai/Web3 revolution now!',
     images: [
       {
-        url: 'https://bitlauncher.ai/images/og-image.webp',
-        alt: 'bitlauncher'
+        url: 'https://morlauncher.ai/images/og-image.webp',
+        alt: 'morlauncher'
       }
     ]
   },
   twitter: {
-    creator: 'bitlauncher',
+    creator: 'morlauncher',
     site: '@bitlauncher',
     card: 'summary_large_image',
     images: [
       {
         url: 'https://bitlauncher.ai/images/og-image.webp',
-        alt: 'bitlauncher'
+        alt: 'morlauncher'
       }
     ]
   },
   robots: 'index, search',
   keywords: [
-    'bitlauncher',
+    'morlauncher',
+    'mor',
     'smartsale',
     'ai',
     'web3',
@@ -116,6 +117,5 @@ export const metadata: Metadata = {
     'launch',
     'pad',
     'launching',
-    'launching'
   ]
 }

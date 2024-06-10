@@ -28,3 +28,5 @@ To deploy the contracts, run the corresponding package.json script
 ## Addresses
 
 1. MOR Token - Arbitrum One: [0x092baadb7def4c3981454dd9c0a0d7ff07bcfc86](https://arbiscan.io/address/#readContract)
+
+2. MOR Token - Arbitrum Sepolia: [0xE8dBf935581B4e8C7d37d95704C29537Fb29aDDa](https://sepolia.arbiscan.io/address/0xe8dbf935581b4e8c7d37d95704c29537fb29adda)
