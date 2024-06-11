@@ -8,13 +8,6 @@ import { Page } from '@/components/sanity/pages/page/Page'
 import { generateStaticSlugs } from '@/services/sanity/loader/generateStaticSlugs'
 import { loadArticle } from '@/services/sanity/loader/loadQuery'
 import { CommonPageProps } from '@/types/routing.type'
-const PagePreview = dynamic(
-  () => import('@/components/sanity/pages/page/PagePreview')
-)
-
-type Props = {
-  params: { slug: string }
-} & CommonPageProps
 
 export async function generateMetadata(
   { params }: Props,
@@ -33,20 +26,25 @@ export async function generateMetadata(
   }
 }
 
-// export function generateStaticParams() {
-//   return generateStaticSlugs('page')
-// }
+export function generateStaticParams() {
+  return generateStaticSlugs('post')
+}
 
 export default async function PageSlugRoute({ params }: Props) {
   const initial = await loadArticle(params.slug, params.lang)
 
-  if (draftMode().isEnabled) {
+  if (draftMode().isEnabled)
     return <PagePreview params={params} initial={initial} />
-  }
 
-  if (!initial.data) {
-    notFound()
-  }
+  if (!initial.data) return notFound()
 
   return <Page data={initial.data} />
 }
+
+const PagePreview = dynamic(
+  () => import('@/components/sanity/pages/page/PagePreview')
+)
+
+type Props = {
+  params: { slug: string }
+} & CommonPageProps
