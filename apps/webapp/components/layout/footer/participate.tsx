@@ -5,9 +5,10 @@ import { IconDownRightArrow } from '@/components/ui/icons'
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
 import React from 'react'
-import { BitcashAccessButton } from '@/components/layout/bitcash-access'
+import { BitcashAccessButton } from '@/components/layout/header/bitcash-access'
+import { LangProp } from '@/types/routing.type'
 
-export default function Participate() {
+export default function Participate({ lang }: LangProp) {
   return (
     <section className="align-center relative z-10 flex flex-col pb-10">
       <h2 className="h-32 w-full pb-10 pt-6 text-center text-3xl font-bold leading-loose">
@@ -32,7 +33,7 @@ export default function Participate() {
               </p>
               {!step.title.includes('Complete KYC') ? (
                 <Link
-                  href={step.href}
+                  href={`/${lang}/${step.href}`}
                   className={cn(
                     buttonVariants({
                       variant: 'accent',

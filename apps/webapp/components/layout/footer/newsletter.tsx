@@ -18,6 +18,8 @@ import { useForm } from 'react-hook-form'
 import { useSetState } from 'react-use'
 import { z } from 'zod'
 import { useEffect } from 'react'
+import { LangProp } from '@/types/routing.type'
+import { FooterLinks } from './footer-links'
 
 // Schema for form validation with Zod
 const formSchema = z.object({
@@ -27,7 +29,7 @@ const formSchema = z.object({
 const formOptions = { resolver: zodResolver(formSchema) }
 type SubcriptionFormData = z.infer<typeof formSchema>
 
-export default function Newsletter() {
+export default function Newsletter({ lang }: LangProp) {
   const [state, setState] = useSetState({
     loading: false,
     data: '',
@@ -100,7 +102,7 @@ export default function Newsletter() {
     >
       <section className="newsletter-wrapper">
         <div className="flex h-[460px] w-full max-w-[600px] flex-col items-center justify-center gap-8 px-3 text-center md:gap-11 md:px-0">
-          <div className="flex w-full flex-col gap-7">
+          <div className="flex flex-col w-full gap-7">
             <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
               Sign up for our newsletter
             </h2>
@@ -109,7 +111,7 @@ export default function Newsletter() {
               discounts, sign up with your email below:
             </p>
           </div>
-          <div className="flex w-full flex-col items-center">
+          <div className="flex flex-col items-center w-full">
             <form
               action={onSubmit}
               className="flex h-[62px] w-full max-w-[342px] items-center justify-center gap-2 self-center rounded-full bg-secondary p-1 text-black/90"
@@ -173,25 +175,27 @@ export default function Newsletter() {
             ) : null}
           </div>
         </div>
-        <div className="flex h-[230px] w-full flex-col flex-wrap items-center justify-evenly rounded-b-3xl bg-primary px-10 md:flex-row md:justify-between">
-          <Link href="/" className="flex">
-            <IconBitlauncher className="h-8 w-40 md:h-11 md:w-56" />
+
+        {/* <div className="flex h-[230px] w-full flex-col flex-wrap items-center justify-evenly rounded-b-3xl bg-primary px-10 md:flex-row md:justify-between">
+          <Link href={`/${lang}`} className="flex">
+            <IconBitlauncher className="w-40 h-8 md:h-11 md:w-56" />
           </Link>
           <div className="hidden md:block">
             <DiscordButton />
           </div>
-          <div className="flex w-full items-center justify-between md:w-auto">
+          <div className="flex items-center justify-between w-full md:w-auto">
             <div className="block md:hidden">
               <DiscordButton />
             </div>
             <Link
-              href="/terms"
+              href={`/${lang}/terms`}
               className="underline-offset-2 focus-within:underline hover:underline"
             >
               Terms & Privacy Policy
             </Link>
-          </div>
-        </div>
+          </div> 
+        </div>*/}
+        <FooterLinks />
       </section>
     </GoogleReCaptchaProvider>
   )
