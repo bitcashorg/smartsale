@@ -8,12 +8,15 @@ export function RecentArticles({ lang }: LangProp) {
       <h2 className="w-full h-32 pt-6 pb-10 leading-loose text-center heading2">
         Recent Articles
       </h2>
-      <BlogSections sections={[recentArcticles]} lang={lang} />
+      <BlogSections
+        sections={[recentArcticles] as unknown as ArticlesSection[]}
+        lang={lang}
+      />
     </section>
   )
 }
 
-const recentArcticles: ArticlesSection = {
+const recentArcticles = {
   name: 'Recent',
   slug: 'ai',
   articles: [

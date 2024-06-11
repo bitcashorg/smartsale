@@ -4,10 +4,8 @@ import { ArticlesSection } from '@/services/datocms'
 import { ArticleCard } from './article-card'
 import { LucideIcons } from './lucide-icons'
 import { LangProp } from '@/types/routing.type'
-const fs = require('fs')
 
 export function BlogSections({ sections, lang }: BlogSectionsProps) {
-  fs.writeFileSync('sectionData.json', JSON.stringify(sections[0]))
   return (
     <div className="flex flex-col items-center justify-start w-full py-10">
       {sections.map(
