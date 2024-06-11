@@ -9,6 +9,9 @@ import { setLanguage } from '@/app/actions/set-lang'
 
 export function LangSelectorItem({ option, lang }: LangSelectorProps) {
   const pathname = usePathname()
+
+  // TODO: handle i18n slugs changing
+
   // const handleSetLanguage = async (lang: string) => {
   //   'use server'
   //   await
