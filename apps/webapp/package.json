@@ -25,6 +25,7 @@
     "@next/bundle-analyzer": "^14.2.3",
     "@next/env": "14.2.3",
     "@next/third-parties": "latest",
+    "@radix-ui/react-accordion": "^1.1.2",
     "@radix-ui/react-dialog": "^1.0.5",
     "@radix-ui/react-dropdown-menu": "^2.0.6",
     "@radix-ui/react-popover": "^1.0.7",
@@ -33,6 +34,7 @@
     "@radix-ui/react-slot": "^1.0.2",
     "@radix-ui/react-tooltip": "^1.0.7",
     "@rainbow-me/rainbowkit": "2.x",
+    "@sanity/assist": "^3.0.4",
     "@sanity/demo": "2.0.0",
     "@sanity/document-internationalization": "^3.0.0",
     "@sanity/icons": "3.2.0",
@@ -91,8 +93,7 @@
     "vconsole": "^3.15.1",
     "viem": "latest",
     "wagmi": "2.9.3",
-    "zod": "^3.23.8",
-    "@sanity/assist": "^3.0.4"
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@types/negotiator": "^0.6.3",
@@ -117,13 +118,5 @@
     "@types/react-dom": "18.x",
     "postcss-import": "^16.1.0",
     "postcss-nesting": "^12.1.5"
-  },
-  "workspaces": {
-    "nohoist": [
-      "**/cbw-sdk",
-      "**/cbw-sdk/**",
-      "**/wagmi",
-      "**/wagmi/**"
-    ]
   }
 }
