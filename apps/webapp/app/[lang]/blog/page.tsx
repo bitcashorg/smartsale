@@ -1,5 +1,9 @@
 import { Metadata } from 'next'
-import { getArticleSections, getPageSeoText } from '@/services/datocms'
+import {
+  getArticleSections,
+  getPageSeoText,
+  getRecentArticleSections
+} from '@/services/datocms'
 import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
 import { generateMetadataFromSEO } from '@/lib/seo'
 import { BlogSections } from '@/components/routes/blog/sections'
@@ -10,15 +14,21 @@ import { HeroSubCard } from '@/components/routes/blog/hero-subcard'
 
 export default async function BlogPage({ params }: BlogPageProps) {
   const sections = await getArticleSections(params.lang)
+  const recentsArticles = await getRecentArticleSections(params.lang)
+  const singlePost = recentsArticles[0]
+  const subHeroPosts =
+    recentsArticles.length > 1
+      ? recentsArticles.slice(1, recentsArticles.length)
+      : recentsArticles
   if (!sections) notFound()
 
   return (
     <main>
-      <h1 className="flex justify-center py-10 heading md:py-24">
+      <h1 className="heading flex justify-center py-10 md:py-24">
         AI, Crypto & Startup Ventures
       </h1>
-      {/* <BlogHero /> */}
-      {/* <section className="container flex flex-col w-full gap-5 mt-10 lg:flex-row">
+      <BlogHero />
+      {/* <section className="container mt-10 flex w-full flex-col gap-5 lg:flex-row">
         <HeroCard
           sectionSlug={singlePost?.slug}
           post={singlePost?.articles[0]}

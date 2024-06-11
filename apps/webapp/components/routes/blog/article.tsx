@@ -14,7 +14,8 @@ import Image from 'next/image'
 import { readingTime } from '@/lib/blog'
 import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
 import { Button } from '@/components/ui/button'
-import { isMobile } from 'react-device-detect'
+import Link from 'next/link'
+import { ArticleCard } from './article-card'
 
 export function BlogPage({
   i18n,
@@ -78,7 +79,7 @@ export function BlogPage({
         </div>
 
         <main
-          className="relative order-4 mt-5 flex flex-col items-start justify-start gap-5 md:flex-row "
+          className="relative order-4 mt-5 flex flex-col items-start justify-start gap-5 md:flex-row"
           id="scroller-wrapper"
         >
           <div
@@ -197,30 +198,30 @@ export function BlogPage({
         </main>
       </div>
 
-      {/* {relatedBlogs.length > 0 && (
+      {relatedBlogs.length > 0 && (
         <section className="mt-space-80 mx-auto w-full md:max-w-[74rem] md:px-10">
-          <div className="flex items-center justify-between mb-space-32">
-            <span className="font-semibold text-black sub-2-lg dark:text-white">
+          <div className="mb-space-10 flex items-center justify-between">
+            <span className="sub-2-lg font-semibold text-black dark:text-white">
               /Related stories{' '}
             </span>
-            <Link
-              href={`/blog/${category}`}
-              className={cn('text-black dark:text-white')}
-            >
-              <b>See All Stories</b>
-              <LucideIcons.chevronRight className="h-4 w-7" />
+            <Link href={`/blog`} className={cn('text-black dark:text-white')}>
+              <b>See All Stories &gt;</b>
             </Link>
           </div>
 
           <ul className="flex w-full flex-col gap-5 py-5 sm:grid sm:grid-cols-[repeat(auto-fit,minmax(300px,1fr))] sm:flex-wrap lg:grid-cols-[repeat(auto-fit,minmax(260px,1fr))]">
             {relatedBlogs?.slice(0, 4).map((post, index) => (
               <div key={index}>
-                <ArticleCard post={post} sectionSlug={category} />
+                <ArticleCard
+                  post={post}
+                  sectionSlug={category}
+                  lang={params.lang}
+                />
               </div>
             ))}
           </ul>
         </section>
-      )} */}
+      )}
     </article>
   )
 }

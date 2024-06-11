@@ -76,7 +76,7 @@ export function CategoryComponent({ params, sections }: BlogCategoryPageProps) {
                       : `/blog/${category}?topic=${section.topic}`
                   }
                   className={cn(
-                    'focus-within:!text-primary-200 hover:!text-primary-200 text-black dark:text-white '
+                    'focus-within:!text-primary-200 hover:!text-primary-200 text-black dark:text-white'
                   )}
                   shallow
                 >

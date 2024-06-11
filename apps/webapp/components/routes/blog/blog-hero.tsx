@@ -16,13 +16,17 @@ export function BlogHeroCard({
   link
 }: BlogHeroCardProps) {
   return (
-    <Card className="bg-gray-200">
-      <CardHeader>
+    <Card className="bg-white text-black">
+      <CardHeader className="text-black">
         <CardTitle>{title}</CardTitle>
-        <CardDescription>{description}</CardDescription>
+        <CardDescription className="text-black">{description}</CardDescription>
       </CardHeader>
       <CardContent>
-        {tag && <Badge variant="secondary">{tag}</Badge>}
+        {tag && (
+          <Badge variant="secondary" className="mt-space-6">
+            {tag}
+          </Badge>
+        )}
       </CardContent>
       <CardFooter>
         <Link className="text-blue-500" href={link}>
@@ -35,10 +39,14 @@ export function BlogHeroCard({
 
 export function BlogHero() {
   return (
-    <section>
+    <section className="container mb-10">
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
         <div>
+<<<<<<< Updated upstream
           <div className="flex items-center justify-center p-4 bg-gray-200 rounded-lg">
+=======
+          <div className="flex items-center justify-center rounded-lg bg-white p-4">
+>>>>>>> Stashed changes
             <img
               alt="Illustration"
               className="w-full h-48 md:w-auto"
