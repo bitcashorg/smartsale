@@ -34,7 +34,8 @@ const nextConfig = {
           as: '*.js'
         }
       }
-    }
+    },
+    taint: true,
   },
   reactStrictMode: true,
   swcMinify: true,
@@ -48,8 +49,16 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'datocms-assets.com'
+      },
+      {
+        hostname: 'cdn.sanity.io'
       }
     ]
+  },
+  logging: {
+    fetches: {
+      fullUrl: true,
+    },
   }
 }
 

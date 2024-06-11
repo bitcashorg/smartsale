@@ -1,8 +1,9 @@
 import Link from 'next/link'
-import { readingTime } from '~/lib/utils.lib'
+import { readingTime } from '@/lib/blog'
 import { BlogArticleRecord } from '~/services/datocms'
-import { Button, Tag } from '../base'
 import { useParams, useRouter } from 'next/navigation'
+import { Button } from '@/components/ui/button'
+import { Tag } from 'lucide-react'
 
 export interface Subcardprops {
   post: BlogArticleRecord
@@ -39,7 +40,7 @@ export const HeroSubCard = ({
             })}{' '}
             ∙ {readingTime(post)} min read{' '}
           </span>
-          <Tag
+          {/* <Tag
             className="mt-space-6"
             title={selectedTopic ? selectedTopic : sectionSlug}
             onClick={() =>
@@ -49,20 +50,19 @@ export const HeroSubCard = ({
                   : `/blog/${sectionSlug}`
               )
             }
-          />
+          /> */}
         </div>
-        <div className="space-y-space-10 flex max-w-[366px]  flex-col items-start justify-start">
+        <div className="space-y-space-10 flex max-w-[366px] flex-col items-start justify-start">
           <h1
             title={post?.title}
             className="font-bold text-black text-sub-2-lg font-futura-pt-bold truncate_text truncate_text--3-lines dark:text-white"
           >
             {post?.title}
           </h1>
-          <p className="text-h-text font-futura-pt-book text-h-text-c truncate_text md:truncate_text--4-lines truncate_text--5-lines dark:text-white ">
+          <p className="text-h-text font-futura-pt-book text-h-text-c truncate_text md:truncate_text--4-lines truncate_text--5-lines dark:text-white">
             {post?.description}
           </p>
           <Button
-            variant="tertiary"
             className="z-10 px-0 font-bold text-black underline text-h-text font-futura-pt-heavy dark:text-white"
             onClick={() => router.push(`/blog/${sectionSlug}/${post.slug}`)}
           >

@@ -17,8 +17,8 @@ jobs:
       #     header: lighthouse
       #     message: |
       #       Running Lighthouse audit...
-      - name: Wait for 2 minutes
-        run: sleep 120
+      - name: Wait for 5 minutes
+        run: sleep 300
       - name: Capture Vercel preview URL
         id: vercel_preview_url
         uses: zentered/vercel-preview-url@v1.1.9

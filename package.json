@@ -22,15 +22,17 @@
       "**/vite",
       "**/vite/**",
       "**/cbw-sdk",
-      "**/cbw-sdk/**"
+      "**/cbw-sdk/**",
+      "**/wagmi",
+      "**/wagmi/**"
     ]
   },
   "packageManager": "bun@1.1.9",
   "devDependencies": {
     "@types/bn.js": "^5.1.5",
     "@types/node": "latest",
-    "eslint": "^9.3.0",
-    "prettier": "^3.2.5",
-    "turbo": "^1.13.3"
+    "eslint": "^9.4.0",
+    "prettier": "^3.3.1",
+    "turbo": "^2.0.3"
   }
 }

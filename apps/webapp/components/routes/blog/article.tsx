@@ -14,7 +14,8 @@ import Image from 'next/image'
 import { readingTime } from '@/lib/blog'
 import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
 import { Button } from '@/components/ui/button'
-import { isMobile } from 'react-device-detect'
+import Link from 'next/link'
+import { ArticleCard } from './article-card'
 
 export function BlogPage({
   i18n,
@@ -44,19 +45,19 @@ export function BlogPage({
 
   return (
     <article>
-      <div className="mx-auto flex flex-col items-start gap-2">
+      <div className="flex flex-col items-start gap-2 mx-auto">
         <header className="order-3 md:order-1">
-          <h1 className="heading flex justify-center font-bold text-black dark:text-white">
+          <h1 className="flex justify-center font-bold text-black heading dark:text-white">
             {blogContent.title}
             <br className="hidden md:inline" />
           </h1>
-          <sub className="heading3 md:text-sub-1-lg mt-2 text-neutral-700 dark:text-neutral-400 md:mt-8">
+          <sub className="mt-2 heading3 md:text-sub-1-lg text-neutral-700 dark:text-neutral-400 md:mt-8">
             {blogContent.description}
           </sub>
         </header>
 
-        <div className="order-2 mt-2 flex flex-col space-y-3 md:mt-5">
-          <span className="font-futura-pt-heavy text-h-text text-h-text-c font-bold dark:text-white">
+        <div className="flex flex-col order-2 mt-2 space-y-3 md:mt-5">
+          <span className="font-bold font-futura-pt-heavy text-h-text text-h-text-c dark:text-white">
             {blogContent.authorName}
           </span>
           <span className="font-futura-pt-book text-h-text text-h-text-c dark:text-white">
@@ -78,11 +79,11 @@ export function BlogPage({
         </div>
 
         <main
-          className="relative order-4 mt-5 flex flex-col items-start justify-start gap-5 md:flex-row "
+          className="relative flex flex-col items-start justify-start order-4 gap-5 mt-5 md:flex-row"
           id="scroller-wrapper"
         >
           <div
-            className="order-2 flex w-full flex-col md:order-1"
+            className="flex flex-col order-2 w-full md:order-1"
             id="extrat-blog-content"
           >
             {blogContent?.contentBlock?.map(
@@ -103,7 +104,7 @@ export function BlogPage({
                             alt={image?.alt || `blog-image-${index}`}
                             fill
                             layout="fill"
-                            className="m-auto flex self-center"
+                            className="flex self-center m-auto"
                           />
                         </div>
                       )
@@ -142,7 +143,7 @@ export function BlogPage({
                           ),
                           renderNodeRule(isParagraph, ({ children, key }) => {
                             return (
-                              <p className="paragraph mb-10" key={key}>
+                              <p className="mb-10 paragraph" key={key}>
                                 {children}
                               </p>
                             )
@@ -197,30 +198,30 @@ export function BlogPage({
         </main>
       </div>
 
-      {/* {relatedBlogs.length > 0 && (
+      {relatedBlogs.length > 0 && (
         <section className="mt-space-80 mx-auto w-full md:max-w-[74rem] md:px-10">
-          <div className="flex items-center justify-between mb-space-32">
+          <div className="flex items-center justify-between mb-space-10">
             <span className="font-semibold text-black sub-2-lg dark:text-white">
               /Related stories{' '}
             </span>
-            <Link
-              href={`/blog/${category}`}
-              className={cn('text-black dark:text-white')}
-            >
-              <b>See All Stories</b>
-              <LucideIcons.chevronRight className="h-4 w-7" />
+            <Link href={`/blog`} className={cn('text-black dark:text-white')}>
+              <b>See All Stories &gt;</b>
             </Link>
           </div>
 
           <ul className="flex w-full flex-col gap-5 py-5 sm:grid sm:grid-cols-[repeat(auto-fit,minmax(300px,1fr))] sm:flex-wrap lg:grid-cols-[repeat(auto-fit,minmax(260px,1fr))]">
             {relatedBlogs?.slice(0, 4).map((post, index) => (
               <div key={index}>
-                <ArticleCard post={post} sectionSlug={category} />
+                <ArticleCard
+                  post={post}
+                  sectionSlug={category}
+                  lang={params.lang}
+                />
               </div>
             ))}
           </ul>
         </section>
-      )} */}
+      )}
     </article>
   )
 }

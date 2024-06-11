@@ -4,12 +4,13 @@ import { BlogArticleRecord } from '@/services/datocms'
 import Image from 'next/image'
 import { Card, CardContent, CardFooter } from '@/components/ui/card'
 import { isMobile } from 'react-device-detect'
+import { LangProp } from '@/types/routing.type'
 
-export const ArticleCard = ({ post, sectionSlug }: ArticleCardProps) => {
+export const ArticleCard = ({ post, sectionSlug, lang }: ArticleCardProps) => {
   return (
     <Card className="overflow-hidden list-none min-h-space-465 md:max-h-space-465 group">
       <Link
-        href={`/blog/${sectionSlug}/${post.slug}`}
+        href={`${lang}/blog/${sectionSlug}/${post.slug}`}
         className="flex flex-col w-full h-full transition-all lg:hover:shadow-f1 lg:focus:shadow-f1 lg:hover:border-primary-300 lg:focus:border-primary-300 lg:p-space-20"
       >
         <figure className="relative h-[216px] w-full">
@@ -30,7 +31,7 @@ export const ArticleCard = ({ post, sectionSlug }: ArticleCardProps) => {
         <CardContent className="mt-5">
           <h1
             title={post?.title}
-            className="hidden font-bold text-black font-futura-pt-bold text-sub-2-md truncate_text truncate_text--4-lines dark:text-white lg:block "
+            className="hidden font-bold text-black font-futura-pt-bold text-sub-2-md truncate_text truncate_text--4-lines dark:text-white lg:block"
           >
             {post.title}
           </h1>
@@ -83,7 +84,7 @@ export const ArticleCard = ({ post, sectionSlug }: ArticleCardProps) => {
   )
 }
 
-export interface ArticleCardProps {
+export interface ArticleCardProps extends LangProp {
   post: BlogArticleRecord
   sectionSlug: string
 }

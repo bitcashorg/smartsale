@@ -3,8 +3,9 @@ import { cn } from '@/lib/utils'
 import { ArticlesSection } from '@/services/datocms'
 import { ArticleCard } from './article-card'
 import { LucideIcons } from './lucide-icons'
+import { LangProp } from '@/types/routing.type'
 
-export function BlogSections({ sections }: BlogSectionsProps) {
+export function BlogSections({ sections, lang }: BlogSectionsProps) {
   return (
     <div className="flex w-full flex-col items-center justify-start py-10">
       {sections.map(
@@ -16,7 +17,7 @@ export function BlogSections({ sections }: BlogSectionsProps) {
                   / {section.name}
                 </span>
                 <Link
-                  href={`/blog/${section.slug}`}
+                  href={`/${lang}/blog/${section.slug}`}
                   className={cn(
                     'focus-within:!text-primary-200 hover:!text-primary-200 flex items-center align-middle text-black dark:text-white'
                   )}
@@ -32,6 +33,7 @@ export function BlogSections({ sections }: BlogSectionsProps) {
                     post={post}
                     sectionSlug={section.slug}
                     key={index}
+                    lang={lang}
                   />
                 ))}
               </ul>
@@ -42,7 +44,7 @@ export function BlogSections({ sections }: BlogSectionsProps) {
   )
 }
 
-export interface BlogSectionsProps {
+export interface BlogSectionsProps extends LangProp {
   children?: React.ReactNode
   sections: ArticlesSection[]
 }
