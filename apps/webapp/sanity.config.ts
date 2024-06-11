@@ -81,7 +81,7 @@ export default defineConfig({
         { id: 'es', title: 'Spanish' },
         { id: 'en', title: 'English' },
         { id: 'pt', title: 'Portuguese' },
-        { id: 'cn', title: 'Chinese' }
+        { id: 'zh', title: 'Chinese' }
       ],
       schemaTypes: ['post']
     }),

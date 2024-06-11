@@ -27,7 +27,7 @@ export const pagesBySlugQuery = groq`
 `
 
 export const articleBySlugQuery = groq`
-  *[_type == "post" && slug.current == $slug && language == $language][0]
+ *[_type == "post" && slug.current == $slug && language == $language][0]
 `
 
 export const projectBySlugQuery = groq`
