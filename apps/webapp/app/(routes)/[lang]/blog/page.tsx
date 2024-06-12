@@ -7,6 +7,8 @@ import {
 import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
 import { generateMetadataFromSEO } from '@/lib/seo'
 import { BlogSections } from '@/components/routes/blog/sections'
+import { BlogHero } from '@/components/routes/blog/blog-hero'
+
 import { notFound } from 'next/navigation'
 // import { BlogHero } from '@/components/routes/blog/blog-hero'
 // import { HeroCard } from '@/components/routes/blog/hero-main-card'

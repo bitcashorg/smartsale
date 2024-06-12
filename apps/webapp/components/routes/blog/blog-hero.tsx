@@ -8,6 +8,7 @@ import {
 } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export function BlogHeroCard({
   title,
@@ -39,18 +40,14 @@ export function BlogHeroCard({
 
 export function BlogHero() {
   return (
-    <section className="container mb-10">
-      <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+    <section className="container mb-10 p-20">
+      <div className="grid grid-cols-1 gap-32 md:grid-cols-[40%_60%]">
         <div>
-<<<<<<< Updated upstream
-          <div className="flex items-center justify-center p-4 bg-gray-200 rounded-lg">
-=======
           <div className="flex items-center justify-center rounded-lg bg-white p-4">
->>>>>>> Stashed changes
             <img
               alt="Illustration"
-              className="w-full h-48 md:w-auto"
-              src="/placeholder.svg"
+              className="h-48 w-full md:w-auto"
+              src="/images/launchpad_img_placeholder.svg"
               style={{
                 aspectRatio: '1',
                 objectFit: 'cover'
@@ -61,7 +58,7 @@ export function BlogHero() {
             <h2 className="text-2xl font-bold">{headerContent.title}</h2>
             <p className="mt-2 text-gray-600">{headerContent.description}</p>
           </div>
-          <div className="mt-4 text-sm text-gray-500">
+          <div className="text-sub-2-lg font-futura-pt-bold text-h-text-c mt-4 text-sm font-bold dark:text-white">
             <div className="font-bold">/Recents:</div>
             <div className="mt-2">
               <div className="font-bold">{headerContent.author}</div>
@@ -72,12 +69,11 @@ export function BlogHero() {
             </div>
           </div>
         </div>
-        <div>
-          <div className="space-y-4">
-            {cards.map(card => (
-              <BlogHeroCard key={card.title} {...card} />
-            ))}
-          </div>
+
+        <div className="flex max-w-[650px] flex-col space-y-10">
+          {cards.map(card => (
+            <BlogHeroCard key={card.title} {...card} />
+          ))}
         </div>
       </div>
     </section>
@@ -115,26 +111,27 @@ const cards = [
     description: 'Oct 04, 2023 · 11 min read',
     tag: 'startup',
     link: '#'
-  },
-  {
-    title: 'Mastering Cash Flow: The Ultimate Guide for Startup Founders',
-    description:
-      'Master cash flow with our ultimate guide for startup founders. Learn strategies to maintain liquidity, manage finances, and ensure business stability.',
-    link: '#'
-  },
-  {
-    title: 'Master Moneybags',
-    description: 'Oct 04, 2023 · 9 min read',
-    tag: 'investing',
-    link: '#'
-  },
-  {
-    title:
-      'Mastering Portfolio Management: The Art of Diversification, Asset Allocation...',
-    description:
-      'Optimize Your Portfolio: Learn the Art of Diversification, Asset Allocation, and Rebalancing for Successful Portfolio Management.',
-    link: '#'
   }
+  // ,
+  // {
+  //   title: 'Mastering Cash Flow: The Ultimate Guide for Startup Founders',
+  //   description:
+  //     'Master cash flow with our ultimate guide for startup founders. Learn strategies to maintain liquidity, manage finances, and ensure business stability.',
+  //   link: '#'
+  // },
+  // {
+  //   title: 'Master Moneybags',
+  //   description: 'Oct 04, 2023 · 9 min read',
+  //   tag: 'investing',
+  //   link: '#'
+  // },
+  // {
+  //   title:
+  //     'Mastering Portfolio Management: The Art of Diversification, Asset Allocation...',
+  //   description:
+  //     'Optimize Your Portfolio: Learn the Art of Diversification, Asset Allocation, and Rebalancing for Successful Portfolio Management.',
+  //   link: '#'
+  // }
 ]
 
 // Types moved to the bottom
