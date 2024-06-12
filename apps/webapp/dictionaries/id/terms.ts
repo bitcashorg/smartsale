@@ -2,29 +2,29 @@ import { ContentTextType, PageContentData } from '@/components/shared/content'
 
 const policiesAndTerms = [
   {
-    title: 'Privacy Policy',
+    title: 'Kebijakan Privasi',
     content:
-      'We respect your privacy. No personal data is stored or shared with third parties. We only collect emails for our newsletter subscribers and ensure their protection against unauthorized access.'
+      'Kami menghormati privasi Anda. Tidak ada data pribadi yang disimpan atau dibagikan dengan pihak ketiga. Kami hanya mengumpulkan email untuk pelanggan buletin kami dan memastikan perlindungan mereka terhadap akses tidak sah.'
   },
   {
-    title: 'Terms of Service',
+    title: 'Ketentuan Layanan',
     content:
-      'By using our services, you agree to our terms. Ensure you understand the risks associated with digital currencies and platforms. We do not store your personal data except for email subscriptions.'
+      'Dengan menggunakan layanan kami, Anda menyetujui persyaratan kami. Pastikan Anda memahami risiko yang terkait dengan mata uang dan platform digital. Kami tidak menyimpan data pribadi Anda kecuali untuk langganan email.'
   },
   {
-    title: 'No Cookie Policy',
+    title: 'Tidak Ada Kebijakan Cookie',
     content:
-      'Our website does not use cookies. Your navigation and interaction with our services are private and not tracked by cookies.'
+      'Situs web kami tidak menggunakan cookie. Navigasi dan interaksi Anda dengan layanan kami bersifat pribadi dan tidak dilacak oleh cookie.'
   },
   {
-    title: 'Newsletter Subscription',
+    title: 'Berlangganan Buletin',
     content:
-      'Subscribers to our newsletter agree to provide their email addresses for regular updates. You can unsubscribe at any time through the link provided in each email.'
+      'Pelanggan buletin kami setuju untuk memberikan alamat email mereka untuk pembaruan rutin. Anda dapat berhenti berlangganan kapan saja melalui tautan yang disediakan di setiap email.'
   },
   {
-    title: 'Data Protection',
+    title: 'Perlindungan Data',
     content:
-      'We implement rigorous security measures to protect your information. Your email is securely stored and is only used for sending newsletters.'
+      'Kami menerapkan langkah-langkah keamanan yang ketat untuk melindungi informasi Anda. Email Anda disimpan dengan aman dan hanya digunakan untuk mengirim buletin.'
   }
 ] as const
 
@@ -32,11 +32,11 @@ const policiesAndTerms = [
 const content: PageContentData = [
   {
     type: 'h1',
-    text: 'Privacy Policy and Terms of Service for Bitlauncher Participants'
+    text: 'Kebijakan Privasi dan Ketentuan Layanan untuk Peserta Bitlauncher'
   },
   {
     type: 'p',
-    text: 'Understand our commitment to your privacy and your responsibilities when using our crypto launchpad services:'
+    text: 'Pahami komitmen kami terhadap privasi Anda dan tanggung jawab Anda saat menggunakan layanan peluncuran kripto kami:'
   },
   ...policiesAndTerms.flatMap((item, index) => [
     { type: 'h2' as ContentTextType, text: `${index + 1}. ${item.title}` },

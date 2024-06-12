@@ -2,19 +2,19 @@ import { PageContentData } from '@/components/shared/content'
 
 export const about = {
   content: [
-    { type: 'h1', text: 'How Bitlauncher Works' },
+    { type: 'h1', text: 'Cara Kerja Bitlauncher' },
     {
       type: 'p',
-      text: 'Bitlauncher is a platform enabling fair price discovery for token auctions. The aim of the platform is to make it easy for teams to discover a fair price for their token.'
+      text: 'Bitlauncher adalah platform yang memungkinkan penemuan harga wajar untuk lelang token. Tujuan dari platform ini adalah untuk memudahkan tim menemukan harga yang wajar untuk token mereka.'
     },
     {
       type: 'p',
-      text: 'Bitlauncher uses batch auctions, which are a popular mechanism for ensuring fair price for both the decentralized and traditional finance worlds. Batch auctions enable matching of limit orders of buyers and sellers with the same clearing price for all participants. From crypto use cases like Initial DEX Offerings (like those on the Mesa interface for Gnosis Protocol v1) to traditional finance auctions (like Google’s IPO and the NYSE Open Auction), batch auctions play an important role in the democratization of the auctioned assets. This function is especially important for decentralized teams which need to ensure fair token distributions while operating trustlessly and efficiently. Batch auctions are set to become a fundamental “DeFi Lego” brick for any team or community interested in offering their users the most transparent and fairest auction-mechanism for their token.'
+      text: 'Bitlauncher menggunakan lelang batch, yang merupakan mekanisme populer untuk memastikan harga yang adil bagi dunia keuangan yang terdesentralisasi dan tradisional. Lelang batch memungkinkan pencocokan limit order pembeli dan penjual dengan harga kliring yang sama untuk semua peserta. Dari kasus penggunaan kripto seperti Penawaran DEX Awal (seperti yang ada di antarmuka Mesa untuk Protokol Gnosis v1) hingga lelang keuangan tradisional (seperti IPO Google dan Lelang Terbuka NYSE), lelang batch memainkan peran penting dalam demokratisasi aset yang dilelang. Fungsi ini sangat penting bagi tim terdesentralisasi yang perlu memastikan distribusi token yang adil sambil beroperasi tanpa kepercayaan dan efisien. Lelang batch akan menjadi dasar “DeFi Lego” bagi tim atau komunitas mana pun yang tertarik untuk menawarkan mekanisme lelang paling transparan dan paling adil untuk token mereka kepada penggunanya.'
     },
-    { type: 'h2', text: 'Comparison of Different Auction Mechanisms' },
+    { type: 'h2', text: 'Perbandingan Mekanisme Lelang yang Berbeda' },
     {
       type: 'p',
-      text: 'With bitlauncher’s open-source smart contract, projects can quickly and securely create their own decentralized fair auctions. Unlike some solutions dependent on a centralized curation process, Bitlauncher is permissionless so that any Ethereum team can deploy & execute batch auctions for price finding. Bitlauncher allows any Ethereum project or community to conduct auctions that:'
+      text: 'Dengan kontrak cerdas sumber terbuka bitlauncher, proyek dapat dengan cepat dan aman membuat lelang adil terdesentralisasi mereka sendiri. Tidak seperti beberapa solusi yang bergantung pada proses kurasi terpusat, Bitlauncher tidak memiliki izin sehingga tim Ethereum mana pun dapat menerapkan & melaksanakan lelang batch untuk menemukan harga. Bitlauncher mengizinkan proyek atau komunitas Ethereum mana pun untuk melakukan lelang yang:'
     },
     {
       type: 'Image',
@@ -25,21 +25,21 @@ export const about = {
       layout: 'responsive',
       className: 'dark:invert'
     },
-    { type: 'h2', text: 'Fair Price Discovery with Bitlauncher' },
+    { type: 'h2', text: 'Penemuan Harga Wajar dengan Bitlauncher' },
     {
       type: 'p',
-      text: 'By providing an easy interface for price discovery with batch auctions, Bitlauncher enables:'
+      text: 'Dengan menyediakan antarmuka yang mudah untuk penemuan harga dengan lelang batch, Bitlauncher memungkinkan:'
     },
     {
       type: 'ul',
       items: [
-        'Auctioneers to determine a minimum price they are willing to sell their tokens for, and',
-        'Bidders to set the maximum price they are willing to pay'
+        'Juru lelang menentukan harga minimum yang mereka bersedia untuk menjual token mereka, dan',
+        'Penawar menetapkan harga maksimum yang bersedia mereka bayarkan'
       ]
     },
     {
       type: 'p',
-      text: 'These characteristics allow the platform to create a fair pricing dynamic in which both participants get either what they were willing to receive or more. Additionally the batched time nature of the auctions greatly reduces frontrunning and gas bidding wars, decreasing the amount of extracted value from auctioneers and bidders.'
+      text: 'Karakteristik ini memungkinkan platform untuk menciptakan dinamika penetapan harga yang adil di mana kedua peserta mendapatkan apa yang mereka ingin terima atau lebih. Selain itu, sifat lelang yang bersifat batched time sangat mengurangi perang frontrunning dan penawaran gas, sehingga mengurangi jumlah nilai yang diperoleh dari juru lelang dan penawar.'
     }
   ] as PageContentData
 }
