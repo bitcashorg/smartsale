@@ -1,15 +1,17 @@
-import { LangProp } from '@/types/routing.type'
 import Participate from '@/components/layout/footer/participate'
+import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
 import dynamic from 'next/dynamic'
+import { getDictionary } from '@/dictionaries'
 
 const DynamicNewsletter = dynamic(() => import('./newsletter') as any, {
   ssr: false
 })
 
-export function Footer({ lang }: LangProp) {
+export default async function Footer({ params }: { params: { lang: SiteLocale } }) {
+  const dict = await getDictionary(params.lang)
   return (
-    <footer className="container flex w-full flex-1 flex-col gap-32 overflow-hidden px-4 py-16">
-      <Participate lang={lang} />
+    <footer className="container flex flex-col flex-1 w-full gap-32 px-4 py-16 overflow-hidden">
+      <Participate lang={params.lang} dict={dict} />
       <DynamicNewsletter />
     </footer>
   )

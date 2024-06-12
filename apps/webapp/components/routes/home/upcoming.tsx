@@ -39,7 +39,7 @@ export function Upcoming({
             key={`upcoming-auctions-item-${index}`}
             className="box-border justify-center border size-full rounded-xl border-card/30 bg-card backdrop-blur-lg"
           >
-            <AuctionCard {...item} />
+            <AuctionCard project={item} dict={dict} />
           </div>
         ))}
       </div>

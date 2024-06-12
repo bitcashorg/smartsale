@@ -3,7 +3,7 @@ import { ProjectShare } from '../project/project-share'
 import React, { ReactNode, Fragment } from 'react'
 
 interface ItemProps {
-  label?: string
+  label?: any
   value: string | ReactNode
   fields?: Array<{ label: string; value: string }>
 }
@@ -28,17 +28,17 @@ function ListItem({ label, value }: ItemProps) {
   )
 }
 
-export function AuctionInfo({ project }: { project: ProjectWithAuction }) {
+export function AuctionInfo({ project, dict }: { project: ProjectWithAuction, dict: any}) {
   const fields: Array<Array<ItemProps>> = [
     [
-      { label: 'Presale Period', value: '6/1/24 - 6/30/24' },
-      { label: 'Fundraising Goal', value: '$150,000' },
-      { label: 'Max Allocation', value: '$1,500' }
+      { label: dict.auction.presalePeriod, value: '6/1/24 - 6/30/24' },
+      { label: dict.auction.fundraisingGoal, value: '$150,000' },
+      { label: dict.auction.maxAllocation, value: '$1,500' }
     ],
     [
-      { label: 'Token Sale Period', value: '7/1/24 - 7/30/24' },
-      { label: 'Fundraising Goal', value: '$250,000' },
-      { label: 'Max Allocation', value: '$10,000' }
+      { label: dict.auction.tokenSalePeriod, value: '7/1/24 - 7/30/24' },
+      { label: dict.auction.fundraisingGoal, value: '$250,000' },
+      { label: dict.auction.maxAllocation, value: '$10,000' }
     ],
     [{ label: 'Ticker', value: 'BC' }],
     [
