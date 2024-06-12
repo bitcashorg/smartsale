@@ -3,3 +3,4 @@ export default {
   title: '지금 AI / WEB3 혁명에 동참하세요',
   upcomingHeading: '예정된 경매'
 } as const
+
