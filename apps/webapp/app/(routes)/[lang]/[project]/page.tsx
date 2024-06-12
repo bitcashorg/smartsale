@@ -17,7 +17,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
   return (
     <>
       <div className="flex min-h-[calc(83vh-4rem)] flex-col">
-        <ProjectHeader project={project} />
+        <ProjectHeader project={project} dict={dict} />
 
         <div className="container">
           {projectContentObjectKeys.map((key, index) => {

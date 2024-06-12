@@ -2,7 +2,7 @@ import Image from 'next/image'
 import { Project } from '@/lib/projects'
 import { ProjectDataCard } from './project-data-card'
 
-export function ProjectHeader({ project }: { project: Project }) {
+export function ProjectHeader({ project, dict }: { project: Project, dict: any }) {
   return (
     <header className="flex size-full justify-center md:mb-0 md:min-h-[95vh]">
       <div className="h-fit !py-0 md:static md:h-auto md:!pt-[6rem]">
@@ -30,7 +30,7 @@ export function ProjectHeader({ project }: { project: Project }) {
               {project.title.toUpperCase()}
             </span>
           </h1>
-          <ProjectDataCard project={project} />
+          <ProjectDataCard project={project} dict={dict} />
         </section>
       </div>
     </header>

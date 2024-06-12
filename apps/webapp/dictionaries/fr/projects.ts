@@ -8,38 +8,38 @@ export const projects: ProjectContent[] = [
         title: 'Highlights',
         content: [
           [
-            'Universal Accessibility: bitcash strives to make advanced technologies like cryptocurrency and AI accessible to everyone.',
-            'User-Friendly Design: The platform emphasizes ease of use with minimalist design and advanced security features.',
-            'Equitable Token System: Tokenomics inspired by equity models to ensure fairness for all stakeholders.',
-            'Fair Distribution Blockchain: Creating a non-profit L1 blockchain for fair token distribution to every individual.',
-            'AI-Focused Launchpad: A dedicated platform offering comprehensive support to AI startups.',
-            'Open-Source and Collaborative: Fostering innovation through an open-source community and transparent practices.',
-            'Rigorous Security Standards: Implementing top-tier KYC/AML policies and advanced security for user protection.',
-            'Global Empowerment: Committed to empowering global users through transformative technological solutions.',
-            'Enhancing Human Connections: Prioritizing genuine human interaction in the anticipated AI-dominated future.',
-            'New Digital Economy Vision: Envisioning a future economy where technology and ethical principles serve global well-being.'
+            "Accessibilité universelle: Bitcash s'efforce de rendre les technologies avancées telles que la cryptomonnaie et l'IA accessibles à tous.",
+            "Conception conviviale : La plateforme met l'accent sur la facilité d'utilisation avec un design minimaliste et des fonctionnalités de sécurité avancées.",
+            'Système de jetons équitable : La tokenomie est inspirée des modèles d\'équité pour garantir l\'équité pour tous les parties prenantes.',
+            'Blockchain de distribution équitable : Création d\'une blockchain de niveau 1 à but non lucratif pour une distribution équitable des jetons à chaque individu.',
+            'Plateforme de lancement axée sur l\'IA : Une plateforme dédiée offrant un soutien complet aux start-ups en intelligence artificielle.',
+            'Open Source et Collaboratif : Favoriser l\'innovation à travers une communauté open source et des pratiques transparentes.',
+            'Normes de sécurité rigoureuses : Mise en œuvre de politiques de KYC/AML de premier ordre et de sécurité avancée pour la protection des utilisateurs.',
+            'Autonomisation mondiale : Engagé à autonomiser les utilisateurs du monde entier grâce à des solutions technologiques transformatrices.',
+            'Renforcer les connexions humaines : Prioriser les interactions humaines authentiques dans le futur anticipé dominé par l\'IA.',
+            'Nouvelle vision de l\'économie numérique : Envisager une économie future où la technologie et les principes éthiques servent le bien-être mondial.'
           ]
         ]
       },
       product: {
-        title: 'Product Overview',
+        title: 'Vue d\'ensemble du produit',
         content: [
           [
-            'Inclusive Technology: bitcash aims to bring cryptocurrency, AI, and DeFi to everyone, not just tech experts.',
-            'Simplified Crypto Wallet: Offers a passwordless login system and an intuitive interface for secure, stress-free transactions.',
-            'Effortless Recovery: Features a robust account recovery system to regain access without traditional complexities.',
-            'Peer-to-Peer Exchange: Enables direct user transactions with local currency stablecoins, simplifying the crypto entry process.',
-            'Local Currency Support: Provides real-time exchange rates for seamless local currency transactions underpinned by USDT.',
-            'DAO Management Platform: Introduces dBoard for enhanced decision-making and governance within decentralized structures.',
-            'AI Startup Launchpad: bitlauncher assists AI startups with secure, efficient fundraising and organizational tools.',
-            'High Compliance Standards: Emphasizes strong regulatory compliance, including KYC and AML policies, and advanced security protocols.',
-            'Open Community: Encourages a collaborative environment for users, developers, and investors to engage and contribute.',
-            'Digital Economy Vision: Invites global participation to shape a new economy where technology enhances human prosperity and connection.'
+            'Technologie inclusive : bitcash vise à rendre la cryptomonnaie, l\'IA et la finance décentralisée accessibles à tous, pas seulement aux experts en technologie.',
+            'Portefeuille de crypto simplifié : Offre un système de connexion sans mot de passe et une interface intuitive pour des transactions sécurisées et sans stress.',
+            'Récupération sans effort : Dispose d\'un système de récupération de compte robuste pour regagner l\'accès sans les complexités traditionnelles.',
+            'Échange pair-à-pair : Permet des transactions directes entre utilisateurs avec des stablecoins en monnaie locale, simplifiant le processus d\'entrée dans la cryptomonnaie.',
+            'Prise en charge des devises locales : Fournit des taux de change en temps réel pour des transactions en monnaie locale fluides, avec le soutien de l\'USDT.',
+            'Plateforme de gestion DAO : Introduit dBoard pour une prise de décision améliorée et une gouvernance au sein de structures décentralisées.',
+            'Lanceur de start-up en intelligence artificielle : bitlauncher assiste les start-ups en intelligence artificielle avec des outils de collecte de fonds et d\'organisation sécurisés et efficaces.',
+            'Normes de conformité élevées : Met l\'accent sur une conformité réglementaire stricte, y compris des politiques de KYC et de LCB-FT, ainsi que des protocoles de sécurité avancés.',
+            'Communauté ouverte : Encourage un environnement collaboratif pour que les utilisateurs, les développeurs et les investisseurs puissent s\'engager et contribuer.',
+            'Vision de l\'économie numérique : Invite la participation mondiale pour façonner une nouvelle économie où la technologie améliore la prospérité humaine et la connexion.'
           ]
         ]
       },
       problem: {
-        title: 'Problem',
+        title: 'Problème',
         content: [
           [
             'Technical Hurdles: Cryptocurrency, AI, and DeFi advancements are hampered by complex systems that deter average users.',
