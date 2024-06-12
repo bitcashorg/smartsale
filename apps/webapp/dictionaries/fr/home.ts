@@ -1,4 +1,5 @@
 export default {
-  eyebrow: 'Be Part Of The Intelligent Future.',
-  title: 'JOIN THE AI/WEB3 REVOLUTION NOW',
+  eyebrow: 'Faites partie du futur intelligent.',
+  title: 'REJOIGNEZ LA RÉVOLUTION AI/WEB3 MAINTENANT',
+  upcomingAuctions: 'Prochaines enchères',
 } as const

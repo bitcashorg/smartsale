@@ -7,7 +7,7 @@ import { MotionFigcaption } from './motion-figcaption'
 import { ProjectCardButtons } from './auction-card-buttons'
 import { isMobile } from 'react-device-detect'
 
-export function AuctionCard(project: Project) {
+export function AuctionCard({ project, dict }: { project: Project; dict: any }) {
   const {
     id,
     title,
@@ -52,11 +52,11 @@ export function AuctionCard(project: Project) {
       <div className="flex w-full flex-col items-center justify-between px-4 pb-6 md:mt-auto lg:pb-8 xl:px-9">
         <ul className="mb-6 flex w-full flex-col gap-2 lg:mb-8">
           <li className="flex w-full justify-between rounded-full bg-muted px-4 py-2">
-            <span className="opacity-70">Fundraising Goal</span>
+            <span className="opacity-70">{dict.auction.fundraisingGoal}</span>
             <b>{fundraiseGoal}</b>
           </li>
           <li className="flex w-full justify-between rounded-full bg-muted px-4 py-2">
-            <span className="opacity-70">Max Allocation</span>
+            <span className="opacity-70">{dict.auction.maxAllocation}</span>
             <b>{maxAllocation}</b>
           </li>
         </ul>

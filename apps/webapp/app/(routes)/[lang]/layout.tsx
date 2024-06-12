@@ -1,5 +1,5 @@
 import '@/app/globals.css'
-import { Footer } from '@/components/layout/footer/footer'
+import  Footer from '@/components/layout/footer/footer'
 import { Header } from '@/components/layout/header/header'
 import { Providers } from '@/components/layout/providers'
 import { GlobalStoreProvider } from '@/hooks/use-global-store'
@@ -41,7 +41,7 @@ export default async function RootLayout({
             <Header lang={params.lang} />
             {/* <Toaster /> */}
             <main className="flex flex-col flex-1">{children}</main>
-            <Footer lang={params.lang} />
+            <Footer params={params} />
             <DynamicSessionDialog />
           </Providers>
         </GlobalStoreProvider>
