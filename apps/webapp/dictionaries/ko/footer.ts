@@ -1,5 +1,5 @@
 export default{
-  stepsInfo: 'Only 3 Steps Needed',
+  stepsInfo: '단 3단계만 필요',
   step: [
     {
       title: '가입하고 KYC를 완료하세요',
