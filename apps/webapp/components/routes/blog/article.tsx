@@ -216,11 +216,11 @@ export function BlogPage({
           <ul className="grid-cols-auto-dense grid w-full grid-cols-[repeat(auto-fill,minmax(300px,1fr))] flex-col gap-20 py-5 sm:flex-wrap md:gap-5">
             {relatedBlogs
               ?.slice(0, 4)
-              .map((post, index) => (
+              .map(post => (
                 <PostCard
                   post={post}
                   sectionSlug={category}
-                  key={index}
+                  key={post.id}
                   lang={params.lang}
                 />
               ))}

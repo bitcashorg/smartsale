@@ -28,11 +28,11 @@ export function BlogSections({ sections, lang }: BlogSectionsProps) {
               </div>
 
               <ul className="grid-cols-auto-dense grid w-full grid-cols-[repeat(auto-fill,minmax(300px,1fr))] flex-col gap-20 py-5 sm:flex-wrap md:gap-5">
-                {section?.articles?.map((post, index) => (
+                {section?.articles?.map(post => (
                   <PostCard
                     post={post}
                     sectionSlug={section.slug}
-                    key={index}
+                    key={post.id}
                     lang={lang}
                   />
                 ))}
