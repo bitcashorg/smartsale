@@ -74,7 +74,7 @@ export function BlogPage({
 
             <div className="flex space-x-2">
               {blogContent.topics?.map((topic, index) => (
-                <Button className="mt-space-6" key={topic}>
+                <Button className="mt-space-6" key={`${topic}-${index}`}>
                   {topic}
                 </Button>
               ))}
@@ -100,7 +100,7 @@ export function BlogPage({
                         ) => (
                           <div
                             className="relative order-1 my-10 mt-5 flex min-h-[600px] w-full justify-center overflow-hidden text-center align-middle md:order-3"
-                            key={`content-${image}`}
+                            key={`content-${image}-${index}`}
                           >
                             <Image
                               src={image.url}
@@ -142,7 +142,9 @@ export function BlogPage({
                                       id={anchor}
                                       className="pt-32"
                                       href={`#${anchor}`}
-                                    />
+                                    >
+                                      Jump to section
+                                    </a>
                                   </HeadingTag>
                                 )
                               }
