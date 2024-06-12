@@ -74,7 +74,7 @@ export function BlogPage({
 
             <div className="flex space-x-2">
               {blogContent.topics?.map((topic, index) => (
-                <Button className="mt-space-6" key={index}>
+                <Button className="mt-space-6" key={topic}>
                   {topic}
                 </Button>
               ))}
@@ -92,7 +92,7 @@ export function BlogPage({
               {blogContent?.contentBlock?.map(
                 ({ mainContent, topImages }, ind: number) => {
                   return (
-                    <div key={ind}>
+                    <div key={mainContent.value.document.level}>
                       {topImages.map(
                         (
                           image: { url: string | StaticImport; alt: string },
@@ -100,7 +100,7 @@ export function BlogPage({
                         ) => (
                           <div
                             className="relative order-1 my-10 mt-5 flex min-h-[600px] w-full justify-center overflow-hidden text-center align-middle md:order-3"
-                            key={`content-${index}`}
+                            key={`content-${image}`}
                           >
                             <Image
                               src={image.url}
@@ -138,8 +138,11 @@ export function BlogPage({
                                     key={key}
                                   >
                                     {children}
-                                    <a id={anchor} className="pt-32" />
-                                    <a href={`#${anchor}`} />
+                                    <a
+                                      id={anchor}
+                                      className="pt-32"
+                                      href={`#${anchor}`}
+                                    />
                                   </HeadingTag>
                                 )
                               }
