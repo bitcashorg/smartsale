@@ -2,48 +2,48 @@ import { ContentTextType, PageContentData } from '@/components/shared/content'
 
 const securityTips = [
   {
-    title: 'Beware of Phishing Attacks',
+    title: 'Cuidado com ataques de phishing',
     content:
-      'Phishing is a common technique used by attackers to gain access to your personal information. Always verify the URL of the Bitlauncher and ensure it is the legitimate site before connecting your MetaMask wallet. Be cautious of emails or websites impersonating Bitlauncher.'
+      'Phishing é uma técnica comum usada por invasores para obter acesso às suas informações pessoais. Sempre verifique a URL do Bitlauncher e certifique-se de que é o site legítimo antes de conectar sua carteira MetaMask. Tenha cuidado com e-mails ou sites que se fazem passar pelo Bitlauncher.'
   },
   {
-    title: 'MetaMask Security',
+    title: 'Segurança MetaMask',
     content:
-      'When using MetaMask, never share your seed phrase with anyone. Be cautious of any website or person asking for your MetaMask credentials. Always lock your MetaMask wallet when not in use.'
+      'Ao usar MetaMask, nunca compartilhe sua frase-semente com ninguém. Tenha cuidado com qualquer site ou pessoa que solicite suas credenciais MetaMask. Sempre bloqueie sua carteira MetaMask quando não estiver em uso.'
   },
   {
-    title: 'Impersonation on Discord and Social Media',
+    title: 'Representação no Discord e nas mídias sociais',
     content:
-      'Be wary of individuals on platforms like Discord and social media who claim to be representatives of Bitlauncher. Official staff will never ask for your private keys or wallet credentials.'
+      'Desconfie de indivíduos em plataformas como Discord e mídias sociais que afirmam ser representantes do Bitlauncher. A equipe oficial nunca solicitará suas chaves privadas ou credenciais de carteira.'
   },
   {
-    title: 'Secure Your Digital Environment',
+    title: 'Proteja seu ambiente digital',
     content:
-      'Ensure that your computer and internet connection are secure. Use antivirus software, enable firewalls, and update your software regularly to prevent malware attacks.'
+      'Certifique-se de que seu computador e sua conexão com a Internet estejam seguros. Use software antivírus, habilite firewalls e atualize seu software regularmente para evitar ataques de malware.'
   },
   {
-    title: 'Double-Check Transaction Details',
+    title: 'Verifique novamente os detalhes da transação',
     content:
-      'Before confirming any transaction on MetaMask, double-check the recipients address, the amount, and the gas fees. Scammers often try to manipulate transaction details.'
+      'Antes de confirmar qualquer transação no MetaMask, verifique novamente o endereço do destinatário, o valor e as taxas do gás. Os golpistas muitas vezes tentam manipular os detalhes da transação.'
   },
   {
-    title: 'Stay Informed and Updated',
+    title: 'Mantenha-se informado e atualizado',
     content:
-      'Follow only the official Bitlauncher channels for updates and information. Do not trust unverified sources.'
+      'Siga apenas os canais oficiais do Bitlauncher para atualizações e informações. Não confie em fontes não verificadas.'
   },
   {
-    title: 'Report Suspicious Activities',
+    title: 'Denunciar atividades suspeitas',
     content:
-      'If you encounter any suspicious activity or believe you are a victim of a scam, contact the official Bitlauncher support immediately.'
+      'Se você encontrar alguma atividade suspeita ou acreditar que foi vítima de um golpe, entre em contato com o suporte oficial do Bitlauncher imediatamente.'
   }
 ] as const
 
 // Define the content using mapped security tips
 const content: PageContentData = [
-  { type: 'h1', text: 'Security Recommendations for Bitlauncher Participants' },
+  { type: 'h1', text: 'Recomendações de segurança para participantes do Bitlauncher' },
   {
     type: 'p',
-    text: 'Participating in auctions on Bitlauncher, a fork of Gnosis, requires vigilance and awareness of various security threats. Here are some crucial tips to help keep your investments safe:'
+    text: 'Participar de leilões no Bitlauncher, um fork do Gnosis, requer vigilância e consciência sobre diversas ameaças à segurança. Aqui estão algumas dicas cruciais para ajudar a manter seus investimentos seguros:'
   },
   ...securityTips.flatMap((tip, index) => [
     { type: 'h2' as ContentTextType, text: `${tip.title}` },

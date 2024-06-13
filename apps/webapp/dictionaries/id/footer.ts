@@ -1,21 +1,21 @@
 export default{
-  stepsInfo: 'Only 3 Steps Needed',
+  stepsInfo: 'Hanya Dibutuhkan 3 Langkah',
   step: [
     {
-      title: 'Sign Up And\nComplete KYC',
-      description: 'Complete a Bitcash KYC to ensure your participation.',
+      title: 'Daftar Dan\nSelesaikan KYC',
+      description: 'Selesaikan KYC Bitcash untuk memastikan partisipasi Anda.',
       href: 'https://app.bitcash.org/?share=JVnL7qzrU'
     },
     {
-      title: 'Get USD\nCredits',
+      title: 'Dapatkan\nKredit USD',
       description:
-        'Deposit USDT on any chain to get USD Credit Tokens on EOS EVM',
+        'Setor USDT di rantai mana pun untuk mendapatkan Token Kredit USD di EOS EVM',
       href: '#'
     },
     {
-      title: 'Place\nBids',
+      title: 'Tempatkan\nTawaran',
       description:
-        'Select a project from the Auctions list and place your bids.',
+        'Pilih proyek dari daftar Lelang dan ajukan tawaran Anda.',
       href: '#'
     }
   ]

@@ -2,48 +2,48 @@ import { ContentTextType, PageContentData } from '@/components/shared/content'
 
 const securityTips = [
   {
-    title: 'Beware of Phishing Attacks',
+    title: 'Cảnh giác với các cuộc tấn công lừa đảo',
     content:
-      'Phishing is a common technique used by attackers to gain access to your personal information. Always verify the URL of the Bitlauncher and ensure it is the legitimate site before connecting your MetaMask wallet. Be cautious of emails or websites impersonating Bitlauncher.'
+      'Lừa đảo là một kỹ thuật phổ biến mà kẻ tấn công sử dụng để truy cập vào thông tin cá nhân của bạn. Luôn xác minh URL của Bitlauncher và đảm bảo đó là trang web hợp pháp trước khi kết nối ví MetaMask của bạn. Hãy thận trọng với các email hoặc trang web mạo danh Bitlauncher.'
   },
   {
-    title: 'MetaMask Security',
+    title: 'Bảo mật MetaMask',
     content:
-      'When using MetaMask, never share your seed phrase with anyone. Be cautious of any website or person asking for your MetaMask credentials. Always lock your MetaMask wallet when not in use.'
+      'Khi sử dụng MetaMask, đừng bao giờ chia sẻ cụm từ gốc của bạn với bất kỳ ai. Hãy thận trọng với bất kỳ trang web hoặc người nào yêu cầu thông tin đăng nhập MetaMask của bạn. Luôn khóa ví MetaMask của bạn khi không sử dụng.'
   },
   {
-    title: 'Impersonation on Discord and Social Media',
+    title: 'Mạo danh trên Discord và phương tiện truyền thông xã hội',
     content:
-      'Be wary of individuals on platforms like Discord and social media who claim to be representatives of Bitlauncher. Official staff will never ask for your private keys or wallet credentials.'
+      'Hãy cảnh giác với những cá nhân trên các nền tảng như Discord và mạng xã hội tự nhận là đại diện của Bitlauncher. Nhân viên chính thức sẽ không bao giờ yêu cầu khóa riêng hoặc thông tin xác thực ví của bạn.'
   },
   {
-    title: 'Secure Your Digital Environment',
+    title: 'Bảo vệ môi trường kỹ thuật số của bạn',
     content:
-      'Ensure that your computer and internet connection are secure. Use antivirus software, enable firewalls, and update your software regularly to prevent malware attacks.'
+      'Đảm bảo máy tính và kết nối internet của bạn an toàn. Sử dụng phần mềm diệt vi-rút, bật tường lửa và cập nhật phần mềm thường xuyên để ngăn chặn các cuộc tấn công của phần mềm độc hại.'
   },
   {
-    title: 'Double-Check Transaction Details',
+    title: 'Kiểm tra kỹ chi tiết giao dịch',
     content:
-      'Before confirming any transaction on MetaMask, double-check the recipients address, the amount, and the gas fees. Scammers often try to manipulate transaction details.'
+      'Trước khi xác nhận bất kỳ giao dịch nào trên MetaMask, hãy kiểm tra kỹ địa chỉ người nhận, số tiền và phí gas. Những kẻ lừa đảo thường cố gắng thao túng chi tiết giao dịch.'
   },
   {
-    title: 'Stay Informed and Updated',
+    title: 'Luôn thông tin và cập nhật',
     content:
-      'Follow only the official Bitlauncher channels for updates and information. Do not trust unverified sources.'
+      'Chỉ theo dõi các kênh Bitlauncher chính thức để biết thông tin và cập nhật. Đừng tin tưởng các nguồn chưa được xác minh.'
   },
   {
-    title: 'Report Suspicious Activities',
+    title: 'Báo cáo hoạt động đáng ngờ',
     content:
-      'If you encounter any suspicious activity or believe you are a victim of a scam, contact the official Bitlauncher support immediately.'
+      'Nếu bạn gặp bất kỳ hoạt động đáng ngờ nào hoặc tin rằng mình là nạn nhân của một vụ lừa đảo, hãy liên hệ ngay với bộ phận hỗ trợ chính thức của Bitlauncher.'
   }
 ] as const
 
 // Define the content using mapped security tips
 const content: PageContentData = [
-  { type: 'h1', text: 'Security Recommendations for Bitlauncher Participants' },
+  { type: 'h1', text: 'Khuyến nghị bảo mật cho người tham gia Bitlauncher' },
   {
     type: 'p',
-    text: 'Participating in auctions on Bitlauncher, a fork of Gnosis, requires vigilance and awareness of various security threats. Here are some crucial tips to help keep your investments safe:'
+    text: 'Việc tham gia đấu giá trên Bitlauncher, một nhánh của Gnosis, đòi hỏi sự cảnh giác và nhận thức về các mối đe dọa bảo mật khác nhau. Dưới đây là một số lời khuyên quan trọng để giúp giữ an toàn cho khoản đầu tư của bạn:'
   },
   ...securityTips.flatMap((tip, index) => [
     { type: 'h2' as ContentTextType, text: `${tip.title}` },

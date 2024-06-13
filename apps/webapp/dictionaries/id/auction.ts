@@ -1,6 +1,6 @@
   export default {
-    presalePeriod: 'Presale Period',
-    fundraisingGoal: 'Fundraising Goal',
-    maxAllocation: 'Max Allocation',
+    presalePeriod: 'Periode Prapenjualan',
+    fundraisingGoal: 'Tujuan Penggalangan Dana',
+    maxAllocation: 'Alokasi Maks',
     tokenSalePeriod: 'Token Sale Period',
   } as const
