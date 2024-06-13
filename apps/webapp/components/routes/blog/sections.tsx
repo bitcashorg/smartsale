@@ -13,7 +13,7 @@ export function BlogSections({ sections, lang }: BlogSectionsProps) {
           section?.articles?.length > 0 && (
             <section className="container mb-10" key={section.name}>
               <div className="mb-space-32 flex items-center justify-between text-xl">
-                <span className="pl-3 font-bold text-black dark:text-white">
+                <span className="sub-2-lg font-semibold text-black dark:text-white">
                   / {section.name}
                 </span>
                 <Link
@@ -27,12 +27,12 @@ export function BlogSections({ sections, lang }: BlogSectionsProps) {
                 </Link>
               </div>
 
-              <ul className="grid-cols-auto-dense grid w-full grid-cols-[repeat(auto-fill,minmax(300px,1fr))] flex-col gap-20 py-5 sm:flex-wrap md:gap-5 ">
-                {section?.articles?.map((post, index) => (
+              <ul className="grid-cols-auto-dense grid w-full grid-cols-[repeat(auto-fill,minmax(300px,1fr))] flex-col gap-20 py-5 sm:flex-wrap md:gap-5">
+                {section?.articles?.map(post => (
                   <PostCard
                     post={post}
                     sectionSlug={section.slug}
-                    key={index}
+                    key={post.id}
                     lang={lang}
                   />
                 ))}
