@@ -2,48 +2,48 @@ import { ContentTextType, PageContentData } from '@/components/shared/content'
 
 const securityTips = [
   {
-    title: 'Beware of Phishing Attacks',
+    title: '小心網路釣魚攻擊',
     content:
-      'Phishing is a common technique used by attackers to gain access to your personal information. Always verify the URL of the Bitlauncher and ensure it is the legitimate site before connecting your MetaMask wallet. Be cautious of emails or websites impersonating Bitlauncher.'
+      '網路釣魚是攻擊者用來獲取您的個人資訊的常用技術。在連接 MetaMask 錢包之前，請務必驗證 Bitlauncher 的 URL 並確保其是合法網站。請警惕冒充 Bitlauncher 的電子郵件或網站。'
   },
   {
-    title: 'MetaMask Security',
+    title: 'MetaMask 安全',
     content:
-      'When using MetaMask, never share your seed phrase with anyone. Be cautious of any website or person asking for your MetaMask credentials. Always lock your MetaMask wallet when not in use.'
+      '使用 MetaMask 時，切勿與任何人分享您的助記詞。請警惕任何要求您提供 MetaMask 憑證的網站或個人。不使用時請務必鎖定您的 MetaMask 錢包。'
   },
   {
-    title: 'Impersonation on Discord and Social Media',
+    title: '在 Discord 和社群媒體上冒充',
     content:
-      'Be wary of individuals on platforms like Discord and social media who claim to be representatives of Bitlauncher. Official staff will never ask for your private keys or wallet credentials.'
+      '警惕 Discord 和社群媒體等平台上自稱是 Bitlauncher 代表的個人。官方工作人員絕不會詢問您的私鑰或錢包憑證。'
   },
   {
-    title: 'Secure Your Digital Environment',
+    title: '保護您的數位環境',
     content:
-      'Ensure that your computer and internet connection are secure. Use antivirus software, enable firewalls, and update your software regularly to prevent malware attacks.'
+      '確保您的電腦和網路連線安全。使用防毒軟體、啟用防火牆並定期更新軟體以防止惡意軟體攻擊。'
   },
   {
-    title: 'Double-Check Transaction Details',
+    title: '仔細檢查交易詳情',
     content:
-      'Before confirming any transaction on MetaMask, double-check the recipients address, the amount, and the gas fees. Scammers often try to manipulate transaction details.'
+      '在 MetaMask 上確認任何交易之前，請仔細檢查收件人地址、金額和 Gas 費用。詐騙者經常試圖操縱交易細節。'
   },
   {
-    title: 'Stay Informed and Updated',
+    title: '隨時了解情況並更新',
     content:
-      'Follow only the official Bitlauncher channels for updates and information. Do not trust unverified sources.'
+      '僅關注官方 Bitlauncher 頻道以獲取更新和資訊。不要相信未經驗證的來源。'
   },
   {
-    title: 'Report Suspicious Activities',
+    title: '報告可疑活動',
     content:
-      'If you encounter any suspicious activity or believe you are a victim of a scam, contact the official Bitlauncher support immediately.'
+      '如果您遇到任何可疑活動或認為自己是詐騙的受害者，請立即聯絡 Bitlauncher 官方支援人員。'
   }
 ] as const
 
 // Define the content using mapped security tips
 const content: PageContentData = [
-  { type: 'h1', text: 'Security Recommendations for Bitlauncher Participants' },
+  { type: 'h1', text: '針對 Bitlauncher 參與者的安全建議' },
   {
     type: 'p',
-    text: 'Participating in auctions on Bitlauncher, a fork of Gnosis, requires vigilance and awareness of various security threats. Here are some crucial tips to help keep your investments safe:'
+    text: '參與 Gnosis 分叉 Bitlauncher 上的拍賣需要對各種安全威脅保持警惕和認識。以下是一些有助於確保您的投資安全的重要提示：'
   },
   ...securityTips.flatMap((tip, index) => [
     { type: 'h2' as ContentTextType, text: `${tip.title}` },

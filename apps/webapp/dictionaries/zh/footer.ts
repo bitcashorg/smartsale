@@ -1,21 +1,21 @@
 export default{
-  stepsInfo: 'Only 3 Steps Needed',
+  stepsInfo: '只需 3 個步驟',
   step: [
     {
-      title: 'Sign Up And\nComplete KYC',
-      description: 'Complete a Bitcash KYC to ensure your participation.',
+      title: '註冊並完成 KYC',
+      description: '完成 Bitcash KYC 以確保您的參與。',
       href: 'https://app.bitcash.org/?share=JVnL7qzrU'
     },
     {
-      title: 'Get USD\nCredits',
+      title: '獲得美元積分',
       description:
-        'Deposit USDT on any chain to get USD Credit Tokens on EOS EVM',
+        '在任意鏈上存入 USDT 即可在 EOS EVM 上獲得美元信用代幣',
       href: '#'
     },
     {
-      title: 'Place\nBids',
+      title: '出價',
       description:
-        'Select a project from the Auctions list and place your bids.',
+        '從拍賣清單中選擇一個項目並出價。',
       href: '#'
     }
   ]

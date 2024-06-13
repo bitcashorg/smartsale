@@ -1,6 +1,6 @@
   export default {
-    presalePeriod: 'Presale Period',
-    fundraisingGoal: 'Fundraising Goal',
-    maxAllocation: 'Max Allocation',
-    tokenSalePeriod: 'Token Sale Period',
+    presalePeriod: '預售期間',
+    fundraisingGoal: '籌款目標',
+    maxAllocation: '最大分配',
+    tokenSalePeriod: '代幣銷售期',
   } as const
