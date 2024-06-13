@@ -2,368 +2,368 @@ import { PageContentData } from '@/components/shared/content'
 
 export const whitepaper = {
   content: [
-    { type: 'h1', text: 'Executive Summary' },
+    { type: 'h1', text: '執行摘要' },
     {
       type: 'p',
-      text: 'In the dynamic realms of artificial intelligence (AI) and cryptocurrency, our platform emerges as a pioneering launchpad designed to redefine the landscape of innovation and investment. Addressing the critical market gap of funding and organizational challenges faced by open-source AI startups, our launchpad introduces a novel synergy of tokenization and decentralized autonomous organizations (DAOs). This whitepaper delineates our mission to democratize and decentralize the realms of AI development and ownership, thereby catalyzing a new era of technological advancement and community engagement.'
+      text: '在人工智慧 (AI) 和加密貨幣的動態領域，我們的平台成為一個開創性的啟動平台，旨在重新定義創新和投資的格局。為了解決開源人工智慧新創公司面臨的資金和組織挑戰的關鍵市場缺口，我們的啟動板引入了代幣化和去中心化自治組織（DAO）的新穎協同作用。本白皮書描述了我們的使命：使人工智慧開發和所有權領域民主化和去中心化，從而推動技術進步和社區參與的新時代。'
     },
     {
       type: 'p',
-      text: "The problem our platform addresses is twofold: the struggle of open-source AI projects to secure sustainable funding and the broader crypto industry's quest for meaningful applications beyond financial speculation. Our solution leverages the untapped potential of cryptocurrency as a groundbreaking tool for fundraising and organization, offering a unique value proposition focused on open-source AI companies. We utilize a batch auction for equitable price discovery and rapid organizational structuring through DAO and token infrastructure, positioning ourselves as the go-to platform for AI startups seeking to navigate the complexities of growth and innovation."
+      text: "我們的平台要解決的問題是雙重的：開源人工智慧專案為確保可持續資金所付出的努力，以及更廣泛的加密產業對金融投機之外的有意義應用的追求。我們的解決方案利用加密貨幣的未開發潛力作為籌款和組織的突破性工具，提供專注於開源人工智慧公司的獨特價值主張。我們利用批量拍賣透過 DAO 和代幣基礎設施實現公平的價格發現和快速的組織結構，將自己定位為尋求應對成長和創新複雜性的人工智慧新創公司的首選平台。"
     },
     {
       type: 'p',
-      text: "Our tokenomics model, grounded in a mint-and-burn mechanism, promises not just a sustainable economic framework for our platform but also a potential for significant return on capital for contributors and purchasers. By aligning the incentives of all stakeholders and ensuring a fair distribution of tokens, we aim to build a robust ecosystem where the value of our utility token appreciates in tandem with the platform's success and the contributions of its community."
+      text: "我們的代幣經濟模型以鑄幣和銷毀機制為基礎，不僅為我們的平台提供了一個可持續的經濟框架，而且還為貢獻者和購買者提供了巨大的資本回報潛力。透過協調所有利害關係人的激勵並確保代幣的公平分配，我們的目標是建立一個強大的生態系統，使我們的實用代幣的價值與平台的成功和社群的貢獻同步升值。"
     },
     {
       type: 'p',
-      text: 'In essence, our launchpad is not just a bridge between AI startups and the global pool of investors but a blueprint for the future of collaborative, transparent, and decentralized innovation in the AI and cryptocurrency sectors. Through this executive summary, we invite readers to explore the details of our vision, strategy, and the economic underpinnings that make our platform a revolutionary force in the intersection of AI and crypto.'
+      text: '從本質上講，我們的啟動板不僅是人工智慧新創公司和全球投資者之間的橋樑，也是人工智慧和加密貨幣領域協作、透明和去中心化創新的未來藍圖。透過這份執行摘要，我們邀請讀者探索我們的願景、策略和經濟基礎的細節，這些細節使我們的平台成為人工智慧和加密貨幣交叉領域的革命力量。'
     },
-    { type: 'h1', text: 'Introduction' },
+    { type: 'h1', text: 'I介紹' },
     {
       type: 'p',
-      text: 'In the rapidly evolving landscapes of artificial intelligence (AI) and cryptocurrency, a new paradigm of innovation and incentive is emerging. Our platform, positioned at the confluence of these two revolutionary technologies, aims to become the premier funding and organizational hub for the global AI unicorns of the next decade. By focusing exclusively on open-source AI companies, we leverage the transformative powers of tokenization and decentralized autonomous organizations (DAOs) to address the unique challenges and opportunities these entities face. This whitepaper outlines our mission to not only foster the growth of open-source AI projects through equitable funding mechanisms but also to democratize and decentralize AI development and ownership, thereby catalyzing a new era of technological advancement and community engagement.'
-    },
-    {
-      type: 'p',
-      text: "Unveiling the Synergy: Cryptocurrency and AI's Transformative Impact. The intersection of AI and cryptocurrency represents a fertile ground for innovation. While AI continues to advance, offering increasingly sophisticated solutions across various sectors, the cryptocurrency market has primarily been explored for its financial implications. However, its potential as a fundraising and organizational tool for open-source projects remains largely untapped. Our launchpad recognizes the synergy between AI's mainstream application readiness and cryptocurrency's capacity to mobilize global capital and organizational structures. By harnessing these strengths, we aim to propel open-source AI projects to new levels of success and sustainability."
+      text: '在人工智慧（AI）和加密貨幣快速發展的格局中，一種新的創新和激勵範式正在出現。我們的平台位於這兩種革命性技術的交匯處，旨在成為未來十年全球人工智慧獨角獸的首要融資和組織中心。透過專注於開源人工智慧公司，我們利用代幣化和去中心化自治組織 (DAO) 的變革力量來應對這些實體面臨的獨特挑戰和機會。本白皮書概述了我們的使命，不僅透過公平的融資機制促進開源人工智慧專案的發展，而且使人工智慧開發和所有權民主化和去中心化，從而推動技術進步和社區參與的新時代。'
     },
     {
       type: 'p',
-      text: 'Filling the Void: The Critical Role of an AI + Crypto Launchpad. Open-source AI companies often grapple with the challenge of securing sustainable funding and establishing a competitive edge. Traditional venture capital avenues, especially outside of established tech hubs like Silicon Valley, can be fraught with barriers. Our Bitlauncher launchpad addresses this gap by enabling AI startups to access a global pool of investors and a first-mover audience of potential customers through tokenization and DAOs. This approach not only facilitates early and equitable capital opportunities but also fosters a loyal community of contributors and users, creating a formidable competitive moat for these projects.'
+      text: "揭示協同作用：加密貨幣和人工智慧的變革性影響。人工智慧和加密貨幣的交叉點代表了創新的沃土。雖然人工智慧不斷發展，為各個領域提供日益複雜的解決方案，但加密貨幣市場主要是因其財務影響而被探索。然而，它作為開源專案的籌款和組織工具的潛力在很大程度上尚未開發。我們的啟動板認識到人工智慧的主流應用準備與加密貨幣調動全球資本和組織結構的能力之間的協同作用。透過利用這些優勢，我們的目標是推動開源人工智慧專案的成功和永續性達到新的水平。"
     },
     {
       type: 'p',
-      text: "Moreover, the crypto industry's struggle to find mainstream applications finds a solution in the tangible, ready-to-deploy innovations of AI technologies. Our platform leverages crypto primarily as a groundbreaking fundraising and organizational mechanism, sidestepping the consumer-facing limitations of current crypto applications."
+      text: '填補空白：人工智慧+加密啟動板的關鍵作用。開源人工智慧公司經常面臨獲得永續資金和建立競爭優勢的挑戰。傳統的創投途徑，尤其是在矽谷等成熟科技中心以外的創投途徑，可能充滿障礙。我們的 Bitlauncher 啟動板透過代幣化和 DAO 使 AI 新創公司能夠接觸到全球投資者和潛在客戶的先發受眾，從而彌補了這一差距。這種方法不僅促進了早期和公平的資本機會，而且還培養了忠誠的貢獻者和用戶社區，為這些項目創造了強大的競爭護城河。'
     },
     {
       type: 'p',
-      text: "Blueprint for Innovation: Unpacking the Whitepaper's Goals. This whitepaper aims to articulate the vision, strategy, and mechanics behind our AI + Crypto launchpad. It will detail our unique value propositions, such as our focus on open-source AI projects, the use of a batch auction for equitable price discovery, and the facilitation of rapid organizational structure through DAO and token infrastructure. Furthermore, it will explore our market-driven approach to supporting AI startups, the innovative technology and tokenomics underpinning our platform, and our long-term goals for nurturing an expansive, sustainable AI ecosystem. Through this document, we invite startups, token purchasers, and the broader community to join us in democratizing and decentralizing AI, paving the way for a future where AI's potential is fully realized and shared."
-    },
-    { type: 'h1', text: 'Market Analysis' },
-    {
-      type: 'p',
-      text: 'Overview of the Current Market Landscape for Cryptocurrencies and AI Technologies. The cryptocurrency market has experienced exponential growth over the past decade, evolving from a niche interest to a major financial market. As of the latest data, the global cryptocurrency market cap has reached unprecedented highs, with widespread adoption among both retail and institutional investors. At the same time, artificial intelligence (AI) technologies have undergone significant advancements, penetrating various sectors including healthcare, finance, logistics, and entertainment. The AI market is on an exponential growth trajectory, with predictions suggesting it could reach hundreds of billions in the coming years. This growth is fueled by advances in machine learning, natural language processing, and computer vision, alongside increasing data availability and computational power. The convergence of AI and cryptocurrency represents a burgeoning sector characterized by innovation, volatility, and vast potential for growth.'
+      text: "此外，加密產業努力尋找主流應用程序，但在人工智慧技術的有形、可立即部署的創新中找到了解決方案。我們的平台主要利用加密作為突破性的籌款和組織機制，避開當前加密應用程式面向消費者的限制。"
     },
     {
       type: 'p',
-      text: "Analysis of Trends, Challenges, and Opportunities in the AI + Crypto Sector. Trends: Decentralized AI Marketplaces: There's a growing trend towards decentralized platforms that allow for the buying and selling of AI services using cryptocurrencies. Tokenization of AI Projects: Tokenization, facilitated by cryptocurrencies, is becoming a popular means to fund and democratize access to AI projects, allowing broader participation and investment. AI-driven Crypto Trading: The use of AI in predictive analytics for cryptocurrency trading is becoming more prevalent, offering sophisticated tools for investors."
+      text: "創新藍圖：揭示白皮書的目標。本白皮書旨在闡明我們的 AI + Crypto 啟動板背後的願景、策略和機制。它將詳細介紹我們獨特的價值主張，例如我們對開源人工智慧專案的關注、使用批量拍賣來實現公平的價格發現，以及透過 DAO 和代幣基礎設施促進快速組織結構。此外，它將探索我們支援人工智慧新創企業的市場驅動方法、支撐我們平台的創新技術和代幣經濟學，以及我們培育廣闊、永續的人工智慧生態系統的長期目標。透過這份文件，我們邀請新創公司、代幣購買者和更廣泛的社群加入我們，共同實現人工智慧的民主化和去中心化，為人工智慧的潛力得到充分發揮和共享的未來鋪平道路。"
+    },
+    { type: 'h1', text: '市場分析' },
+    {
+      type: 'p',
+      text: '加密貨幣和人工智慧技術當前市場格局概述。加密貨幣市場在過去十年中經歷了指數級增長，從一個利基市場發展成為一個主要的金融市場。截至最新數據，全球加密貨幣市值已達到前所未有的高位，受到散戶和機構投資者的廣泛採用。同時，人工智慧（AI）技術也取得了長足的進步，滲透到醫療、金融、物流、娛樂等各個領域。人工智慧市場正處於指數成長軌道，預測未來幾年可能達到數千億美元。這種增長是由機器學習、自然語言處理和計算機視覺的進步以及數據可用性和計算能力的提高所推動的。人工智慧和加密貨幣的融合代表了一個新興產業，其特點是創新、波動性和巨大的成長潛力。'
     },
     {
       type: 'p',
-      text: 'Challenges: Regulatory Uncertainty: Both AI and cryptocurrency sectors face significant regulatory hurdles that can impact growth, innovation, and operational freedom. Technical Complexity: The integration of AI and blockchain technologies presents complex technical challenges, including scalability, interoperability, security, and energy consumption. Market Volatility: The inherent volatility of cryptocurrencies poses risks for investments and project funding in this intersectional space.'
+      text: "AI + 加密產業的趨勢、挑戰與機會分析。趨勢：去中心化人工智慧市場：去中心化平台的趨勢不斷增長，允許使用加密貨幣買賣人工智慧服務。人工智慧專案的代幣化：由加密貨幣推動的代幣化正在成為資助和民主化人工智慧專案的流行方式，從而允許更廣泛的參與和投資。人工智慧驅動的加密貨幣交易：人工智慧在加密貨幣交易預測分析中的使用變得越來越普遍，為投資者提供了複雜的工具。"
     },
     {
       type: 'p',
-      text: 'Opportunities: Innovative Funding Models: Tokenization opens up new avenues for funding AI projects beyond traditional venture capital, particularly those that are open-source and community-driven. Enhanced Transparency and Trust: Blockchains can enhance the transparency and trust in transactions and interactions within AI applications. Global Access and Inclusion: Cryptocurrency and AI can democratize access to financial services and cutting-edge technologies, respectively, on a global scale. The decentralized nature of cryptocurrencies enables global participation in AI projects, fostering a diverse and inclusive ecosystem.'
+      text: '挑戰：監管不確定性：人工智慧和加密貨幣產業都面臨重大監管障礙，可能影響成長、創新和營運自由。技術複雜性：人工智慧和區塊鏈技術的整合帶來了複雜的技術挑戰，包括可擴展性、互通性、安全性和能源消耗。市場波動性：加密貨幣固有的波動性為這個交叉領域的投資和專案融資帶來了風險。'
     },
     {
       type: 'p',
-      text: "Competitive Analysis and Bitlauncher's Positioning. The competitive landscape includes traditional VC-funded AI startups, other crypto-based funding platforms, and decentralized autonomous organizations (DAOs) focusing on technology projects. Bitlauncher differentiates itself through: Focusing exclusively on open-source AI projects, addressing a gap in the market for these ventures to secure funding and organize efficiently. Utilizing a batch auction mechanism for fair price discovery, ensuring equitable purchase opportunities. Providing comprehensive DAO tools for project organization, fostering transparency and community governance. Committing to sustainable tokenomic models that resonate with traditional startup equity principles, making it an attractive platform for serious investors and innovators in the AI and crypto space."
+      text: '機會：創新的融資模式：代幣化為傳統創投以外的人工智慧專案開闢了新的融資途徑，特別是那些開源和社群驅動的專案。增強透明度和信任：區塊鏈可以增強人工智慧應用程式內交易和互動的透明度和信任。全球准入和包容性：加密貨幣和人工智慧可以分別在全球範圍內實現金融服務和尖端技術的民主化。加密貨幣的去中心化性質使全球能夠參與人工智慧項目，從而培育多元化和包容性的生態系統。'
     },
     {
       type: 'p',
-      text: "Unlike competitors, Bitlauncher addresses the market's need for transparent, ethical, and community-consensus driven AI and crypto innovations. This unique positioning allows Bitlauncher to cater to a niche yet rapidly growing segment of the market, attracting startups, investors, and developers committed to the ethical and sustainable growth of AI and cryptocurrency ecosystems."
+      text: "競爭分析和 Bitlauncher 的定位。競爭格局包括傳統創投資助的人工智慧新創公司、其他基於加密貨幣的融資平台以及專注於技術項目的去中心化自治組織（DAO）。 Bitlauncher 的與眾不同之處在於： 專注於開源人工智慧項目，解決這些企業的市場空白，以確保資金安全並有效組織。利用批量拍賣機制發現公平價格，確保公平的購買機會。為專案組織提供全面的 DAO 工具，促進透明度和社區治理。致力於與傳統新創企業股權原則產生共鳴的可持續代幣經濟模型，使其成為對人工智慧和加密領域的認真投資者和創新者有吸引力的平台。"
     },
     {
       type: 'p',
-      text: 'By capitalizing on these insights, Bitlauncher is set to navigate the complexities of the AI and cryptocurrency markets, addressing key challenges while seizing opportunities to drive innovation and ethical growth in this exciting sector.'
+      text: "與競爭對手不同，Bitlauncher 滿足了市場對透明、道德和社群共識驅動的人工智慧和加密創新的需求。這種獨特的定位使 Bitlauncher 能夠迎合小眾但快速成長的市場領域，吸引致力於人工智慧和加密貨幣生態系統道德和永續發展的新創公司、投資者和開發人員。"
     },
     {
       type: 'p',
-      text: 'In conclusion, the integration of AI and cryptocurrency through Bitlauncher presents a compelling value proposition in a market ripe with opportunities despite its challenges. By addressing the needs of a targeted yet expansive audience and differentiating itself through specialized services and funding mechanisms, Bitlauncher is poised to become a pivotal platform at the intersection of these transformative technologies.'
-    },
-    { type: 'h1', text: 'Project Vision and Mission' },
-    {
-      type: 'p',
-      text: 'Mission Statement. To empower the next wave of AI innovation by providing open-source AI projects with a pioneering platform for equitable fundraising and decentralized organization. Bitlauncher is dedicated to transforming the landscape of AI development by making it accessible, transparent, and community-driven, thereby accelerating the journey of visionary AI projects from concept to global impact.'
+      text: '透過利用這些見解，Bitlauncher 將應對人工智慧和加密貨幣市場的複雜性，解決關鍵挑戰，同時抓住機會推動這個令人興奮的行業的創新和道德發展。'
     },
     {
       type: 'p',
-      text: 'Vision. Our vision is to become the cornerstone of open-source AI innovation, where the most groundbreaking AI solutions find their footing and flourish. We envision a future where Bitlauncher acts as the catalyst for creating a sustainable ecosystem of AI technologies that are owned and shaped by a global community of contributors, investors, and users. Through democratizing access to resources and investment, we aim to unlock the full potential of AI to solve complex global challenges, fostering a world where technology advances hand in hand with ethical principles and inclusive growth.'
+      text: '總之，儘管面臨挑戰，但透過 Bitlauncher 將人工智慧和加密貨幣集成，在充滿機會的市場中提出了令人信服的價值主張。透過滿足目標廣泛的受眾的需求，並透過專業服務和融資機制使自己脫穎而出，Bitlauncher 有望成為這些變革性技術交叉點的關鍵平台。'
+    },
+    { type: 'h1', text: '專案願景和使命' },
+    {
+      type: 'p',
+      text: '使命宣言。透過為開源人工智慧專案提供公平籌款和去中心化組織的先鋒平台，推動下一波人工智慧創新浪潮。 Bitlauncher 致力於透過使其可訪問、透明和社群驅動來改變人工智慧開發的格局，從而加速有遠見的人工智慧專案從概念到全球影響的進程。'
     },
     {
       type: 'p',
-      text: 'Long-term Goals. Fostering Innovation: To support the development of over 100 open-source AI projects within the next five years, transforming ideas into viable solutions that address real-world problems. Revolutionize AI Project Funding: To innovate funding mechanisms through cryptocurrency, ensuring open-source AI projects have access to the capital needed to launch and scale without sacrificing their principles or potential. Community Building: To cultivate a vibrant community of over 50,000 active members, including AI developers, crypto investors, and technology enthusiasts, who actively participate in governance, funding, and collaboration. Sustainable Growth: To establish a self-sustaining ecosystem where projects not only succeed in achieving their individual goals but also contribute back to the platform, ensuring a perpetual cycle of growth and innovation. Global Impact: To make a tangible impact on the global AI and crypto communities by promoting ethical AI development, enhancing transparency in AI funding, and increasing accessibility to AI technologies for underserved regions.'
+      text: '想像。我們的願景是成為開源人工智慧創新的基石，讓最具突破性的人工智慧解決方案立足並蓬勃發展。我們設想未來，Bitlauncher 將成為創建永續人工智慧技術生態系統的催化劑，該生態系統由全球貢獻者、投資者和用戶社群擁有和塑造。透過實現資源和投資的民主化，我們的目標是充分發揮人工智慧的潛力，解決複雜的全球挑戰，培育一個技術與道德原則和包容性成長攜手進步的世界。'
     },
     {
       type: 'p',
-      text: 'Achieving Our Goals. Strategic Partnerships: Collaborating with leading academic institutions, technology companies, and open-source communities to provide projects with the resources, expertise, and exposure they need to succeed. Innovative Funding Models: Utilizing tokenomics and DAOs to create fair, transparent, and efficient funding mechanisms that align the interests of developers and investors. Education and Outreach: Launching initiatives to educate the broader public about the potential of AI and cryptocurrency, reducing barriers to entry and fostering a more informed and engaged community. Technology Development: Continuously improving the Bitlauncher platform to enhance user experience, streamline project development, and ensure the highest standards of security and governance.'
+      text: '長期目標。促進創新：在未來五年內支援開發 100 多個開源人工智慧項目，將想法轉化為解決現實問題的可行解決方案。徹底改變人工智慧專案融資：透過加密貨幣創新融資機制，確保開源人工智慧專案能夠在不犧牲其原則或潛力的情況下獲得啟動和擴展所需的資金。社區建設：培養一個擁有超過 50,000 名活躍成員的充滿活力的社區，包括人工智慧開發者、加密貨幣投資者和技術愛好者，他們積極參與治理、融資和協作。永續成長：建立一個自我維持的生態系統，專案不僅成功實現各自的目標，而且還回饋平台，確保成長和創新的永久循環。全球影響：透過促進道德人工智慧發展、提高人工智慧資金透明度以及提高服務欠缺地區對人工智慧技術的可及性，對全球人工智慧和加密貨幣社群產生實際影響。'
     },
     {
       type: 'p',
-      text: 'Impact on the AI and Crypto Communities. Bitlauncher is set to revolutionize how open-source AI projects are conceived, funded, and brought to market. By marrying the innovative potential of AI with the transformative power of cryptocurrency, we aim to accelerate the pace of AI innovation, making it more collaborative, transparent, and equitable. Our platform will serve as a beacon for ethical development, community empowerment, and global inclusivity, ultimately contributing to the advancement of both the AI and crypto communities towards a more interconnected and democratized technological future.'
-    },
-    { type: 'h1', text: 'Technology Overview' },
-    {
-      type: 'p',
-      text: 'Technology & Innovation Overview. At the heart of Bitlauncher is a commitment to leveraging cutting-edge technology and innovative practices to empower AI startups. Our platform provides a comprehensive suite of tools and resources designed to support AI projects in every phase of their journey, from inception to scale. By integrating advanced blockchain technology and DAO (Decentralized Autonomous Organization) principles, we ensure transparency, efficiency, and trustworthiness in all operational facets.'
+      text: '實現我們的目標。策略合作夥伴關係：與領先的學術機構、技術公司和開源社群合作，為專案提供成功所需的資源、專業知識和曝光度。創新融資模式：利用代幣經濟學和 DAO 創建公平、透明、高效的融資機制，使開發人員和投資者的利益保持一致。教育和推廣：發起倡議，教育更廣泛的公眾了解人工智慧和加密貨幣的潛力，減少進入壁壘，並培養一個更知情和參與的社區。技術開發：不斷改進 Bitlauncher 平台，以增強使用者體驗、簡化專案開發並確保最高標準的安全和治理。'
     },
     {
       type: 'p',
-      text: 'Empowering Startups with Transparency and Trust. The essence of our platform is encapsulated in our use of bitcash payment and DAO technology. This enables transparent management of company treasury and open financial books, fostering trust both publicly and within the organization. The transparency afforded by building in public not only enhances trust but also streamlines internal operations, making the onboarding of new employees and contributors seamless as all past work activities are visible and accessible.'
+      text: '對人工智慧和加密社群的影響。 Bitlauncher 將徹底改變開源人工智慧專案的構思、資助和推向市場的方式。透過將人工智慧的創新潛力與加密貨幣的變革力量相結合，我們的目標是加快人工智慧創新的步伐，使其更加協作、透明和公平。我們的平台將成為道德發展、社區賦權和全球包容性的燈塔，最終促進人工智慧和加密貨幣社群的進步，邁向更互聯和民主化的科技未來。'
+    },
+    { type: 'h1', text: '技術概覽' },
+    {
+      type: 'p',
+      text: '技術與創新概述。 Bitlauncher 的核心是致力於利用尖端技術和創新實踐為人工智慧新創公司提供支援。我們的平台提供了一整套工具和資源，旨在支援人工智慧專案從啟動到規模化的各個階段。透過整合先進的區塊鏈技術和 DAO（去中心化自治組織）原則，我們確保所有營運方面的透明度、效率和可信度。'
     },
     {
       type: 'p',
-      text: "Innovating with Gnosis Auction and EOS EVM. A cornerstone feature of Bitlauncher is underpinned by the Gnosis Auction solidity smart contract, launched in 2021. Our adaptation utilizes this audited smart contract on the EOS EVM, renowned for its high performance. We've overhauled the frontend UI to significantly enhance the bidding experience, making it more intuitive and user-friendly. Additionally, the launchpad integrates RainbowKit for seamless Ethereum wallet integration, ensuring that our platform remains at the forefront of technological integration and security. To guarantee the utmost security, we conduct thorough penetration testing on both the frontend and backend infrastructure, relying on previously audited solidity smart contracts to provide a secure and reliable environment for startups."
+      text: '為新創企業提供透明度和信任。我們平台的精髓體現在我們對比特現金支付和 DAO 技術的使用。這可以實現公司財務和開放財務帳簿的透明管理，從而培養公眾和組織內部的信任。公開建設所提供的透明度不僅可以增強信任，還可以簡化內部運營，使新員工和貢獻者的入職無縫銜接，因為所有過去的工作活動都是可見且可訪問的'
     },
     {
       type: 'p',
-      text: 'Infrastructure and Tools for Startup Success. Bitlauncher offers a suite of infrastructure solutions tailored to the needs of AI startups: Cryptocurrency Payment Wallet and P2P Crypto Onramp: Featuring forex capabilities, our wallet simplifies transactions, making the transfer of funds as straightforward as traditional banking. WebAuthn Integration: Our platform employs a passwordless system, enhancing the Web3 experience by making it simpler and more secure than ever before. In addition, the Bitcash team behind Bitlauncher has developed dBoard, a comprehensive DAO decision-making and community management tool. This platform enables stakeholders to engage in discussions, strategy formulation, and voting on crucial decisions, thereby fostering a collaborative and productive environment for organizational growth.'
+      text: "利用 Gnosis Auction 和 EOS EVM 進行創新。 Bitlauncher 的一個基石功能是由 2021 年推出的 Gnosis Auction Solidity 智能合約支撐的。我們徹底修改了前端 UI，顯著增強了出價體驗，使其更加直覺且用戶友好。此外，啟動板還集成了 RainbowKit，以實現以太坊錢包的無縫集成，確保我們的平台始終處於技術整合和安全性的前沿。為了確保最大的安全性，我們對前端和後端基礎設施進行徹底的滲透測試，依靠先前審核的 Solidity 智能合約為新創公司提供安全可靠的環境。"
     },
     {
       type: 'p',
-      text: 'A Vision for a Non-Profit, Fair L1 Chain. Looking ahead, the Bitlauncher/Bitcash organization plans to introduce a non-profit, no-premine Layer 1 (L1) chain built on the foundational Antelope technology with a modern Hot-stuff consensus mechanism. This initiative aims to achieve the fairest token distribution possible, allocating one token to each verified unique human on the platform. This ambitious project underscores our commitment to fairness, inclusivity, and democratization in the blockchain space, aligning with our overarching mission to revolutionize the AI and cryptocurrency ecosystems.'
+      text: '新創企業成功的基礎設施和工具。 Bitlauncher 提供了一套針對人工智慧新創公司需求量身定制的基礎設施解決方案：加密貨幣支付錢包和 P2P 加密入口：我們的錢包具有外匯功能，可簡化交易，使資金轉移像傳統銀行業務一樣簡單。 WebAuthn 整合：我們的平台採用無密碼系統，透過使其比以往更簡單、更安全來增強 Web3 體驗。此外，Bitlauncher背後的Bitcash團隊也開發了dBoard，這是一款綜合性DAO決策和社群管理工具。該平台使利害關係人能夠參與討論、制定策略並對關鍵決策進行投票，從而為組織發展創造協作和高效的環境。'
     },
     {
       type: 'p',
-      text: 'In summary, our technology and innovation strategy is designed to not only support the growth and development of AI startups but also to redefine the landscape of blockchain technology, fostering a more transparent, efficient, and equitable future for all participants.'
-    },
-    { type: 'h1', text: 'Token Sale' },
-    {
-      type: 'p',
-      text: 'Bitcash Tokens Explained: Bitcash tokens are designed as keys to unlock a comprehensive array of services on our platform, including access to the launchpad, wallet, and participatory rights in DAO governance. These tokens are integral for fostering active user engagement and ensuring all members contribute to both management and evolutionary processes of the platform, promoting a deeply collaborative and participative governance structure.'
+      text: '非營利、公平的 L1 鏈的願景。展望未來，Bitlauncher/Bitcash 組織計劃推出一個基於 Antelope 基礎技術和現代 Hot-stuff 共識機制的非營利、非預挖第 1 層 (L1) 鏈。這項舉措旨在實現盡可能公平的代幣分配，為平台上每個經過驗證的獨特人員分配一個代幣。這個雄心勃勃的項目強調了我們對區塊鏈領域公平、包容和民主化的承諾，與我們徹底改變人工智慧和加密貨幣生態系統的整體使命一致。'
     },
     {
       type: 'p',
-      text: 'Purchase Details: Acquiring Bitcash tokens is akin to securing a membership that grants you access to a dynamic suite of tools and features. This approach is structured like a subscription, where you gain the ability to leverage existing services and those that will be developed based on collective decisions made by the DAO community. Funds generated from token sales can be reinvested to enhance and broaden the platform’s capabilities, affirming the transaction’s non-speculative, utility-focused nature.'
+      text: '總而言之，我們的技術和創新策略不僅旨在支持人工智慧新創企業的成長和發展，而且旨在重新定義區塊鏈技術的格局，為所有參與者創造一個更加透明、高效和公平的未來。'
+    },
+    { type: 'h1', text: '代幣銷售' },
+    {
+      type: 'p',
+      text: 'Bitcash 代幣解釋：Bitcash 代幣被設計為解鎖我們平台上一系列全面服務的鑰匙，包括存取啟動板、錢包和 DAO 治理的參與權。這些代幣對於促進積極的用戶參與、確保所有成員為平台的管理和進化過程做出貢獻、促進深度協作和參與的治理結構不可或缺。'
     },
     {
       type: 'p',
-      text: "Participation and Governance: Owning Bitcash tokens places you at the heart of our DAO's consensus-driven governance processes, enabling you to vote on pivotal proposals and influence the strategic trajectory of the platform. This model nurtures a cooperative environment where each member actively shapes the project's outcomes, transcending the passive investor role found in conventional investment scenarios."
+      text: '購買詳細資訊：取得 Bitcash 代幣類似於獲得會員資格，可讓您存取動態工具和功能套件。這種方法的結構類似於訂閱，您可以利用現有服務以及將根據 DAO 社區集體決策開發的服務。代幣銷售產生的資金可以進行再投資，以增強和擴大平台的能力，從而確認了交易的非投機性、以效用為中心的性質。'
     },
     {
       type: 'p',
-      text: 'Economic Considerations: While the intrinsic value of Bitcash tokens may grow as the platform expands and user demand increases, any financial appreciation is inherently tied to the collective efforts and strategic choices of the DAO community. Success and potential returns are directly correlated with the active participation and collaborative achievements of all token holders.'
+      text: "參與與治理：擁有 Bitcash 代幣可讓您處於我們 DAO 共識驅動治理流程的核心，使您能夠對關鍵提案進行投票並影響平台的策略軌跡。這種模式創造了一個合作環境，每個成員都積極塑造專案的成果，超越了傳統投資場景中的被動投資者角色。"
     },
     {
       type: 'p',
-      text: 'Commitment to Transparent Fundraising: Bitcash aims to raise up to $400k through a public token sale and presale to new members on our launchpad, ensuring equitable access for all types of capital contributions—from retail to institutional. This approach underscores our commitment to fairness and transparency, setting a standard for future offerings within our ecosystem. Note: This offering excludes U.S. investors and those from countries under U.S. sanctions.'
+      text: '經濟考量：雖然 Bitcash 代幣的內在價值可能會隨著平台的擴展和用戶需求的增加而增長，但任何財務升值本質上都與 DAO 社群的集體努力和策略選擇相關。成功和潛在回報與所有代幣持有者的積極參與和協作成就直接相關。'
     },
     {
       type: 'p',
-      text: 'Conclusion: The Bitcash token sale transcends traditional product offerings by inviting you to join a vibrant, consensus and community-driven ecosystem. This initiative is dedicated to forging a decentralized and collaborative space where every participant actively contributes to shaping the future. We invite you to join this transformative journey, embracing a novel model of interaction and ownership in the digital age, where each member plays a crucial role in driving our collective success.'
-    },
-    { type: 'h1', text: 'Tokenomics' },
-    {
-      type: 'p',
-      text: "Overview: The Bitcash ecosystem is underpinned by a robust tokenomics structure utilizing a utility token that follows a mint-and-burn model. This model ensures that the token supply is dynamically aligned with the platform's growth and the active contributions of its community members."
+      text: '對透明籌款的承諾：Bitcash 的目標是透過公開代幣銷售和預售在我們的啟動板上向新成員籌集高達40 萬美元的資金，確保從零售到機構的所有類型的資本貢獻都有公平的機會。這種方法強調了我們對公平和透明度的承諾，為我們生態系統中的未來產品設定了標準。註：本次發行不包括美國投資者和來自受美國制裁國家的投資者。'
     },
     {
       type: 'p',
-      text: "Mint-and-Burn Mechanism: Tokens in the Bitcash ecosystem are minted to reward contributions from developers, users, and investors, reflecting their value addition to the platform. This issuance could dilute token value, but our strategic use of revenue—generated from utility token purchases for service access—counters this by buying back and burning tokens. This cycle not only maintains a balanced supply but potentially enhances the token's value as the platform expands and improves. (Est. utility fees: Launchpad: 2-5% of startup valuation. Onramp/P2P: 1% tx fees.)"
+      text: '結論：Bitcash 代幣銷售超越了傳統產品，邀請您加入充滿活力、共識和社群驅動的生態系統。該倡議致力於打造一個去中心化的協作空間，讓每個參與者都積極為塑造未來做出貢獻。我們邀請您加入這趟變革之旅，擁抱數位時代的新型互動和所有權模式，每個成員在推動我們集體成功的過程中發揮著至關重要的作用。'
+    },
+    { type: 'h1', text: '代幣經濟學' },
+    {
+      type: 'p',
+      text: "概述：Bitcash 生態系統以強大的代幣經濟結構為基礎，該結構利用遵循鑄造和銷毀模型的實用代幣。該模型確保代幣供應與平台的成長及其社區成員的積極貢獻動態保持一致。"
     },
     {
       type: 'p',
-      text: "Modeling After Traditional Equity: Bitcash's approach to token distribution is inspired by traditional equity models but adapted for the decentralized and dynamic nature of blockchain technology. Tokens may be continuously issued to reflect ongoing contributions, similar to how a company might issue shares. This system parallels the corporate practice of using retained earnings for share buybacks, which we replicate in our mint-and-burn process to reward contributors and enhance the overall value of the ecosystem."
+      text: "鑄造和銷毀機制：Bitcash 生態系統中的代幣的鑄造是為了獎勵開發者、用戶和投資者的貢獻，反映他們對平台的增值。此次發行可能會稀釋代幣價值，但我們對透過購買實用代幣獲取服務而產生的收入進行策略性使用，透過回購和銷毀代幣來抵消這一點。這個週期不僅保持供應平衡，而且隨著平台的擴展和改進，可能會提高代幣的價值。 （預計公用事業費：Launchpad：新創公司估值的 2-5%。Onramp/P2P：1% 交易費用。）"
     },
     {
       type: 'p',
-      text: "Equity Distribution and Token Valuation: Equity distribution in Bitcash is direct and aligns with our values of fairness and transparency, assigning tokens based on the tangible value of each contribution—be it capital, labor, or intellectual input. This process ensures a fair and ongoing allocation of tokens, mirroring an individual's involvement and impact within the ecosystem."
+      text: "模仿傳統股權：Bitcash 的代幣分配方法受到傳統股權模型的啟發，但適應了區塊鏈技術的去中心化和動態特性。代幣可以連續發行以反映持續的貢獻，類似於公司發行股票的方式。該系統與利用留存收益進行股票回購的企業做法類似，我們在「鑄造和銷毀」流程中複製了這種做法，以獎勵貢獻者並提高生態系統的整體價值。"
     },
     {
       type: 'p',
-      text: 'Tokens are initially valued at the cost of contribution, sidestepping potential complications from speculative future valuations and maintaining clarity and fairness in initial distributions. This approach eschews traditional startup equity practices like vesting schedules or cliffs, focusing instead on a transparent and immediate recognition of value.'
+      text: "股權分配和代幣估值：Bitcash 的股權分配是直接的，符合我們公平和透明的價值觀，根據每項貢獻的有形價值（無論是資本、勞動力還是智力投入）分配代幣。這個過程確保了代幣的公平和持續分配，反映了個人在生態系統中的參與和影響。"
     },
     {
       type: 'p',
-      text: 'Encouraging Adoption Among Launchpad Startups: Bitcash champions the adoption of this equitable tokenomics model across all startups within the Bitlauncher ecosystem, fostering a culture of transparency and fairness that is essential for nurturing innovation in the AI sector. We encourage startups to engage in smaller initial fundraising rounds, progressing to larger raises only upon achieving predefined milestones in development, user engagement, or revenue generation.'
-    },
-    { type: 'h1', text: 'Use Cases and Applications' },
-    {
-      type: 'p',
-      text: 'Use Cases and Applications: Fostering Innovation Across the AI Landscape. Bitlauncher is designed to address critical challenges and open up new opportunities for AI startups, investors, and various stakeholders within the burgeoning field of artificial intelligence. By harnessing the power of open-source models, tokenization, and decentralized governance, our platform aims to democratize access to resources, funding, and global markets.'
+      text: '代幣最初按貢獻成本定價，避免了投機性未來估值的潛在複雜性，並保持初始分配的清晰度和公平性。這種方法避開了傳統的新創企業股權做法，例如歸屬時間表或懸崖，而是專注於透明且立即的價值認可。'
     },
     {
       type: 'p',
-      text: 'Empowering AI Startups with Alternative Funding and Global Reach. The competitive nature of the AI industry often leaves many promising projects struggling to secure necessary funding, especially those outside the Silicon Valley bubble. Bitlauncher offers a lifeline to these projects by providing a global platform for alternative funding through a community of global investors. This not only levels the playing field but also ensures that innovation is not geographically constrained.'
+      text: '鼓勵 Launchpad 新創公司採用：Bitcash 支援 Bitlauncher 生態系統內的所有新創公司採用這種公平的代幣經濟模型，培育透明和公平的文化，這對於培育人工智慧領域的創新至關重要。我們鼓勵新創公司進行較小規模的初始融資，只有在開發、用戶參與或創造收入方面達到預定的里程碑後才能進行更大規模的融資。'
+    },
+    { type: 'h1', text: '用例和應用' },
+    {
+      type: 'p',
+      text: '用例和應用：促進整個人工智慧領域的創新。 Bitlauncher 旨在應對人工智慧新興領域內的關鍵挑戰，並為人工智慧新創公司、投資者和各種利害關係人開闢新的機會。透過利用開源模型、代幣化和去中心化治理的力量，我們的平台旨在實現資源、資金和全球市場的民主化。'
     },
     {
       type: 'p',
-      text: 'Open-Source Sustainability through Token Incentives. While open-source technology has been a game-changer, enabling smaller entities to compete with tech giants, sustainability remains a significant challenge. Bitlauncher embraces the Web3 ethos of open collaboration and token incentives to create sustainable models for open-source projects. By allowing these projects to build a brand and community, we ensure that contributions are recognized and rewarded, thereby fostering a healthy ecosystem of continuous innovation.'
+      text: '為人工智慧新創公司提供替代融資和全球影響力。人工智慧產業的競爭本質常常使許多有前景的計畫難以獲得必要的資金，尤其是那些矽谷泡沫以外的計畫。 Bitlauncher 透過全球投資者社群提供替代融資的全球平台，為這些專案提供了生命線。這不僅創造了公平的競爭環境，也確保創新不受地域限制。'
     },
     {
       type: 'p',
-      text: 'Building Best-in-Class Startup Culture. Our launchpad promotes a culture of efficiency, transparency, and strategic growth among AI startups. We advocate for a balanced approach to funding, avoiding the pitfalls of under or over-capitalization. Our emphasis on building in public fosters recruitment, knowledge transfer, and trust, while our DAO tools help startups optimize strategy and scale effectively. Additionally, the integration of Web3 infrastructure provides startups with efficient payment rails and financial tools tailored to their specific needs, from low-cost crypto payment structures for AI + IoT applications to tokenization and DAO management for broader organizational needs.'
+      text: '透過代幣激勵實現開源永續性。雖然開源技術已經改變了遊戲規則，使較小的實體能夠與科技巨頭競爭，但永續性仍然是一個重大挑戰。 Bitlauncher 秉持著開放協作和代幣激勵的 Web3 精神，為開源專案創建可持續的模型。透過讓這些項目建立品牌和社區，我們確保貢獻得到認可和獎勵，從而培育一個持續創新的健康生態系統。'
     },
     {
       type: 'p',
-      text: 'Bridging the Gap for Global Investors. Traditionally, access to premier AI projects has been limited for non-US investors. Bitlauncher dismantles these barriers, offering a global platform that brings high-quality projects from around the world to a diverse investor base. Our focus on educating both startups and investors on sound financial principles ensures a marketplace grounded in value creation and sustainable growth, steering clear of speculative and high-risk investment behaviors.'
+      text: '打造一流的創業文化。我們的啟動板在人工智慧新創公司中提倡高效、透明和策略成長的文化。我們主張採取平衡的融資方式，避免資本不足或過度的陷阱。我們注重公共建設，促進招募、知識轉移和信任，而我們的 DAO 工具則幫助新創公司有效優化策略和規模。此外，Web3 基礎設施的集成為新創公司提供了根據其特定需求量身定制的高效支付通道和金融工具，從用於AI + IoT 應用程式的低成本加密支付結構到滿足更廣泛組織需求的代幣化和DAO 管理。'
     },
     {
       type: 'p',
-      text: 'Launching Masterbots.ai: A Case Study in Innovation. One of the first projects to benefit from Bitauncher is Masterbots.ai, an initiative set to challenge the likes of ChatGPT with superior user experience and domain-specific improvements. Masterbots.ai is dedicated to crafting custom language and multimodal models, specialized for distinct regional dialects and specific industry needs.'
+      text: '縮小全球投資者的差距。傳統上，非美國投資者獲得優質人工智慧專案的機會受到限制。 Bitlauncher 消除了這些障礙，提供了一個全球平台，將來自世界各地的優質專案帶給多元化的投資者群體。我們專注於對新創公司和投資者進行健全的財務原則教育，確保市場建立在價值創造和永續成長的基礎上，避免投機和高風險投資行為。'
     },
     {
       type: 'p',
-      text: 'Our mission extends to supporting startups in creating advanced image, video, multimodal, and coding models. We envision fostering a vibrant community of thousands of startups focused on specialized AI applications across various regions and industries, ensuring a collaborative and synergistic ecosystem within Bitlauncher where every participant benefits from shared knowledge and technologies.'
-    },
-    { type: 'h1', text: 'DAO Roadmap' },
-    {
-      type: 'p',
-      text: 'Proposed DAO Roadmap. The proposed DAO roadmap is a comprehensive guide outlining the strategic deployment of resources and the phased development of Bitlauncher through the Bitcash DAO organization. This document details our ambitious plans to revolutionize the AI and cryptocurrency ecosystems through innovative technology, community engagement, and continuous improvement. The roadmap reflects our dedication to creating a sustainable and forward-thinking platform that addresses the needs of startups while pushing the boundaries of blockchain technology.'
+      text: '推出 Masterbots.ai：創新案例研究。 Masterbots.ai 是第一批受益於 Bitauncher 的專案之一，該計劃旨在透過卓越的用戶體驗和特定領域的改進來挑戰 ChatGPT 等產品。 Masterbots.ai 致力於打造客製化語言和多模式模型，專門針對不同的地區方言和特定的行業需求。'
     },
     {
       type: 'p',
-      text: "Q2 - Q3: Launch and Initial Development. Q2: Platform Beta Launch: Introduction of Bitlauncher's beta version, featuring the integration of the bitcash cryptocurrency Webauthn payment wallet and integration with RainbowKit for seamless Ethereum wallet connectivity. Gnosis Auction and EOS EVM Integration: Official launch of the Gnosis Auction-based bidding system on the EOS EVM, complete with a redesigned frontend UI for an enhanced user experience. Marketing Campaign Kick-off & Presale: Roll out targeted marketing campaigns aimed at engaging our core audiences and expanding our community. These efforts will include partnerships, community engagement initiatives, and digital marketing strategies to bolster our platform's visibility and user base. Get $150k in presale commitments. dBoard Launch: Release of dBoard, a comprehensive DAO decision-making and community management tool, to foster collaboration and strategic alignment within the ecosystem. Comprehensive Security Audits: Execution of thorough penetration testing across all platform components to ensure top-notch security and reliability."
+      text: '我們的使命延伸到支持新創公司創建先進的圖像、影片、多模式和編碼模型。我們設想培育一個由數千家新創公司組成的充滿活力的社區，專注於跨地區和行業的專業人工智慧應用，確保Bitlauncher 內的協作和協同生態系統，使每個參與者都能從共享知識和技術中受益。'
+    },
+    { type: 'h1', text: 'DAO 路線圖' },
+    {
+      type: 'p',
+      text: '擬議的 DAO 路線圖。擬議的 DAO 路線圖是一份全面的指南，概述了透過 Bitcash DAO 組織進行的資源策略部署和 Bitlauncher 的分階段開發。本文件詳細介紹了我們透過創新技術、社區參與和持續改進徹底改變人工智慧和加密貨幣生態系統的雄心勃勃的計劃。這張路線圖反映了我們致力於創建一個可持續且前瞻性的平台，以滿足新創企業的需求，同時突破區塊鏈技術的界限。'
     },
     {
       type: 'p',
-      text: 'Q3: Fundraising Token Launch: Raise up to $250k for Bitcash/Bitlauncher as the first project on the launchpad Community Engagement Initiatives: Establishment of forums and communication channels for early adopters and community feedback. Launch of Development Initiatives: Initiate comprehensive development efforts focusing on enhancing our launchpad, wallet, referral system, secondary market exchange and DAO tooling. This phase emphasizes the refinement of our existing infrastructure to cater to the dynamic needs of AI startups. Initiation of the Antelope Chain Development: Commencement of groundwork for the non-profit, no-premine L1 Antelope chain, aiming to set new standards for fairness and innovation in blockchain technology. WebAuthn and Account Recovery Improvements: Implementation of improved recovery solution that complements passwordless Webauthn system to simplify and secure user access, enhancing the overall Web3 experience.'
+      text: "第二季 - 第三季：啟動和初步開發。 Q2：平台測試版發布：推出 Bitlauncher 測試版，該版本整合了 bitcash 加密貨幣 Webauthn 支付錢包，並與 RainbowKit 整合以實現無縫以太坊錢包連接。 Gnosis Auction 和 EOS EVM 整合：在 EOS EVM 上正式推出基於 Gnosis Auction 的出價系統，並重新設計了前端 UI，以增強使用者體驗。行銷活動啟動和預售：推出有針對性的行銷活動，旨在吸引我們的核心受眾並擴大我們的社群。這些努力將包括合作夥伴關係、社區參與計劃和數位行銷策略，以增強我們平台的知名度和用戶群。獲得 15 萬美元的預售承諾。 dBoard 發布：發布全面的 DAO 決策和社區管理工具 dBoard，以促進生態系統內的協作和策略協調。全面的安全審計：對所有平台組件執行徹底的滲透測試，以確保一流的安全性和可靠性。"
     },
     {
       type: 'p',
-      text: "Q4: Expansion and Innovation. Q4: Marketing and Community Building: Aggressive marketing campaigns, hackathons and community building efforts to attract a broader audience and increase platform adoption. Bitlauncher Platform Enhancements: Iterative improvements to the platform's UI/UX based on user feedback, focusing on simplifying cryptocurrency transactions and enhancing the overall user experience. Expansion of Infrastructure Solutions: Introduction of new tools and services designed to support the growth and success of AI startups on the Bitlauncher platform. Launch of the Antelope Chain: Official release of the Antelope L1 identity chain, featuring a modern Hot-stuff consensus mechanism and a unique token distribution model aimed at maximizing fairness and inclusivity. Minimalist Cryptocurrency Payment Wallet Launch: Introduce a minimalist cryptocurrency payment wallet with forex capabilities, simplifying transactions for AI startups and everyday non-crypto users. Initiate development of multi-chain EVM wallet leveraging account abstraction tied to the identity chain to interoperate with the wider crypto ecosystem"
+      text: 'Q3：籌款代幣發布：為 Bitcash/Bitlauncher 籌集高達 25 萬美元，作為啟動板上的第一個項目 社區參與計劃：為早期採用者和社區反饋建立論壇和溝通渠道。啟動開發計畫：啟動全面的開發工作，重點是增強我們的啟動板、錢包、推薦系統、二級市場交易和 DAO 工具。這一階段強調完善我們現有的基礎設施，以滿足人工智慧新創企業的動態需求。啟動羚羊鏈開發：開始為非營利、無預挖的L1羚羊鏈進行基礎工作，旨在為區塊鏈技術的公平性和創新制定新標準。 WebAuthn 和帳戶恢復改進：實施改進的恢復解決方案，補充無密碼 Webauthn 系統，以簡化和保護用戶訪問，從而增強整體 Web3 體驗。'
     },
     {
       type: 'p',
-      text: "Q4 and Beyond: Sustaining Growth and Fostering Innovation. Continuous Platform Improvement: Ongoing development efforts to refine and enhance the platform's features and services, based on community feedback and technological advancements. Strategic Partnerships and Collaborations: Establishment of partnerships with key industry players to expand the ecosystem and offer additional value to our users. Global Outreach and Adoption: Initiatives aimed at promoting global adoption of the Antelope chain and bitLauncher platform, including multilingual support and localization efforts. Research and Development: Investment in research and development to explore new technologies and methodologies that can further advance the blockchain and AI sectors."
+      text: "Q4：擴張和創新。 Q4：行銷和社群建立：積極的行銷活動、黑客馬拉松和社群建立工作，以吸引更廣泛的受眾並提高平台採用率。 Bitlauncher 平台增強功能：根據使用者回饋對平台的 UI/UX 進行迭代改進，重點是簡化加密貨幣交易並增強整體使用者體驗。基礎設施解決方案的擴展：引入新的工具和服務，旨在支援 Bitlauncher 平台上的人工智慧新創公司的成長和成功。 Antelope Chain推出：正式發表Antelope L1身分鏈，具有現代熱點共識機制和獨特的代幣分配模型，旨在最大限度地提高公平性和包容性。推出極簡加密貨幣支付錢包：推出具有外匯功能的極簡加密貨幣支付錢包，簡化人工智慧新創公司和日常非加密用戶的交易。啟動多鏈 EVM 錢包的開發，利用與身分鏈相關的帳戶抽象化來與更廣泛的加密生態系統進行互通"
     },
     {
       type: 'p',
-      text: "The roadmap for Bitlauncher and Bitcash is not just a plan for growth and development; it's a blueprint for a revolutionary approach to blockchain technology and AI startup support. Through our focused efforts on development, security, community engagement, and innovation, we are poised to create a more open, equitable, and innovative future for all participants in the blockchain ecosystem. Our commitment to the continuous improvement of our launchpad, wallet, and DAO tooling, coupled with the ambitious development of the Layer 1 chain, underscores our dedication to redefining the landscape and setting new standards in the blockchain space."
+      text: "第四季及以後：持續成長和促進創新。持續的平台改進：根據社群回饋和技術進步，不斷進行開發工作，以完善和增強平台的功能和服務。策略夥伴關係和協作：與主要產業參與者建立合作夥伴關係，以擴大生態系統並為我們的用戶提供額外價值。全球推廣和採用：旨在促進 Antelope 鍊和 bitLauncher 平台在全球範圍內採用的舉措，包括多語言支援和在地化工作。研究與開發：投資於研究與開發，探索可進一步推動區塊鏈和人工智慧領域發展的新技術和方法。"
     },
     {
       type: 'p',
-      text: 'Estimated Cash Budget Allocation: Marketing & Community (30%) $120k: Social Media, Hackathons, Events, Content, Global Ambassadors Business & Operations (30%) $120k: Startup Deal Making, DAO process improvements & AI integration Development: (40%) $160k: Improvements/Maintenance: Launchpad, Wallet/Onramp/Forex, dBoard, Security Complete: Simple Wallet, Key Recovery, Referral System, Secondary Market Exchange Initiate/Build: Layer 1 Chain, Multi-chain EVM'
-    },
-    { type: 'h1', text: 'Launch Team' },
-    {
-      type: 'p',
-      text: 'Jun Dam (Founder 2015 / Product / Financial Architect) Jun Dam, with a robust background in both finance and technology, has been a pioneering force in the cryptocurrency space since 2012, aiming to usher in a digital-native global economy and mainstream crypto adoption. His expertise spans nearly a decade in finance, alongside a decade in crypto, technology, and software development, showcasing a balanced blend of financial acumen and tech savvy. As a founder, business and product architect, and event co-organizer, Dam has significantly contributed to the crypto community, orchestrating conferences and events that have amassed over $850k in revenue.'
+      text: "Bitlauncher 和 Bitcash 的路線圖不僅是成長和發展的計畫；也是成長和發展的計畫。這是區塊鏈技術和人工智慧新創公司支持的革命性方法的藍圖。透過我們在開發、安全、社區參與和創新方面的重點努力，我們準備為區塊鏈生態系統的所有參與者創造一個更開放、公平和創新的未來。我們致力於不斷改進我們的啟動板、錢包和 DAO 工具，再加上第一層鏈的雄心勃勃的發展，突顯了我們致力於重新定義區塊鏈領域的格局並製定新標準。"
     },
     {
       type: 'p',
-      text: "Gabo Esquivel (Co-founder 2019 / Tech Architect / Full-Stack Engineer): Gabo Esquivel is a full-stack software engineer with a knack for creating innovative products that offer a stellar user experience, leveraging technologies like ReactJS, NodeJS, cloud platforms, and smart contracts, with foundational knowledge in Rust, Go, and Python. His methodology is grounded in agile practices, emphasizing precision in technology deployment. Esquivel's work is also characterized by his explorations into AI, underscoring his commitment to staying at the forefront of technology."
+      text: '預計現金預算分配：行銷與社群(30%) 12 萬美元：社群媒體、黑客馬拉松、活動、內容、全球大使業務與營運(30%) 12 萬美元：新創企業交易、DAO 流程改善與人工智慧集成開發：(40 %) $160k：改進/維護：Launchpad、錢包/Onramp/Forex、dBoard、安全完整：簡單錢包、密鑰恢復、推薦系統、二級市場交易所啟動/構建：第1 層鏈、多鏈E​​VM'
+    },
+    { type: 'h1', text: '發射團隊' },
+    {
+      type: 'p',
+      text: 'Jun Dam（2015 年創辦人/產品/金融架構師） Jun Dam 在金融和科技方面擁有強大的背景，自2012 年以來一直是加密貨幣領域的先鋒力量，旨在引領數位原生全球經濟和主流加密貨幣採用。他的專業知識涵蓋近十年的金融領域，以及十年的加密、技術和軟體開發領域，展現了金融敏銳度和技術悟性的平衡結合。作為創始人、業務和產品架構師以及活動聯合組織者，Dam 為加密貨幣社區做出了重大貢獻，組織了會議和活動，已積累了超過 85 萬美元的收入。'
     },
     {
       type: 'p',
-      text: 'Roberto Lucas (Co-founder 2021 / Tech Operations / Full-Stack Engineer): Roberto Lucas, known as "Andler" in the web development community, boasts expertise as a full-stack developer since 2018, with a specialization in JavaScript and TypeScript. His journey has seen him transition from a skilled coder to a leader in both software development and project management, highlighting a focus on accessible web design and innovation since 2020. Andler values continual learning and the use of cutting-edge tools to drive technological progress.'
+      text: "Gabo Esquivel（2019 年共同創辦人/技術架構師/全端工程師）：Gabo Esquivel 是全端軟體工程師，擅長利用 ReactJS、NodeJS、雲端平台、和智慧合約，具有 Rust、Go 和 Python 基礎知識。他的方法論以敏捷實踐為基礎，強調技術部署的精確性。 Esquivel 工作的另一個特點是對人工智慧的探索，強調了他致力於維持技術前沿的承諾。"
     },
     {
       type: 'p',
-      text: 'Ruben Abarca: Ruben Abarca is a full-stack engineer with a focus on web and mobile application development, blending cutting-edge technology with innovative solutions. Educated in Software Engineering at the Costa Rican Institute of Technology, his career is marked by a commitment to continuous learning, especially in blockchain and fintech. At Bitcash, Abarca plays a crucial role in backend development, enhancing data processing strategies to improve application performance and user experience.'
+      text: 'Roberto Lucas（2021 年共同創辦人/技術營運/全端工程師）：Roberto Lucas 在 Web 開發社群中被稱為“Andler”，自 2018 年以來就擁有全端開發人員的專業知識，專攻 JavaScript 和 TypeScript。在他的旅程中，他從一名熟練的編碼員轉變為軟體開發和專案管理領域的領導者，凸顯了自2020 年以來對無障礙網頁設計和創新的關注。來推動技術進步。'
     },
     {
       type: 'p',
-      text: "Nathan Liu: Nathan Liu, a full-stack developer, concentrates on enhancing the website's aesthetics and functionality, utilizing tools like React, Next.js, and Node.js. His role encompasses front-end design and backend support to ensure a smooth, user-friendly experience on the platform. Liu is passionate about coding and continuously seeks to improve his skills, contributing to Bitcash's commitment to offering a top-notch online service."
+      text: 'Ruben Abarca：Ruben Abarca 是一名全端工程師，專注於網路和行動應用程式開發，將尖端技術與創新解決方案相結合。他在哥斯達黎加理工學院接受了軟體工程教育，其職業生涯的特點是致力於不斷學習，特別是在區塊鏈和金融科技領域。在 Bitcash，Abarca 在後端開發、增強資料處理策略以提高應用程式效能和使用者體驗方面發揮著至關重要的作用。'
     },
     {
       type: 'p',
-      text: "Brandon Fernandez: Brandon Fernandez, a Front-End Developer at Bitcash.org, is dedicated to improving user experience through innovative features and bug fixes in the web3 banking sector. His transition from CCNA to a passion for front-end development led him to acquire skills in HTML, React, JavaScript, and various modern web technologies. Fernandez's work at Bitcash involves deepening his engagement with web3 and blockchain technologies, aiming to revolutionize banking with user-friendly and secure digital finance solutions."
+      text: "Nathan Liu：Nathan Liu 是一位全端開發人員，專注於利用 React、Next.js 和 Node.js 等工具來增強網站的美觀和功能。他的職責包括前端設計和後端支持，以確保平台上的流暢、用戶友好的體驗。 Liu 對編碼充滿熱情，並不斷尋求提高自己的技能，為 Bitcash 提供一流線上服務的承諾做出了貢獻。"
     },
     {
       type: 'p',
-      text: "Anouk Rimola: Anouk Rímola is a versatile member of the Bitcash frontend team, handling various responsibilities from moderating accounts and managing rewards to customer service. As a tester, she rigorously evaluates changes to ensure optimal platform performance, while her development work focuses on improving the user experience with ReactJS. Rímola's multifaceted role and dedication to technical excellence are vital to Bitcash's innovation and success."
+      text: "Brandon Fernandez：Brandon Fernandez 是 Bitcash.org 的前端開發人員，致力於透過 web3 銀行領域的創新功能和錯誤修復來改善使用者體驗。他從 CCNA 過渡到對前端開發的熱情，使他獲得了 HTML、React、JavaScript 和各種現代 Web 技術的技能。 Fernandez 在 Bitcash 的工作涉及加深對 web3 和區塊鏈技術的參與，旨在透過用戶友好且安全的數位金融解決方案徹底改變銀行業。"
     },
     {
       type: 'p',
-      text: "Luis Carrion: Luis Carrión is a technology enthusiast focused on frontend development using the React stack. His career has been characterized by overcoming challenges and leveraging them for growth, specifically in developing scalable solutions for Bitcash's users and customers. Carrión is committed to continuous learning and exploration of new technologies, aiming to contribute significantly to Bitcash and the broader software development landscape."
+      text: "Anouk Rímola：Anouk Rímola 是 Bitcash 前端團隊的多才多藝的成員，負責處理從審核帳戶、管理獎勵到客戶服務的各種職責。作為一名測試人員，她嚴格評估變更以確保最佳的平台效能，而她的開發工作則專注於改善 ReactJS 的使用者體驗。 Rímola 的多面向角色和對卓越技術的奉獻對於 Bitcash 的創新和成功至關重要。"
+    },
+    {
+      type: 'p',
+      text: "Luis Carrion：Luis Carrion 是一位技術愛好者，專注於使用 React 堆疊進行前端開發。他職業生涯的特點是克服挑戰並利用挑戰來實現成長，特別是為 Bitcash 用戶和客戶開發可擴展的解決方案。 Carrión 致力於不斷學習和探索新技術，旨在為 Bitcash 和更廣泛的軟體開發領域做出重大貢獻。"
     },
     { type: 'h1', text: 'Legal Considerations and Compliance' },
     {
       type: 'p',
-      text: 'Regulatory Compliance and Security Measures. In the rapidly evolving landscapes of cryptocurrency and artificial intelligence, regulatory compliance and robust security measures are not just operational necessities but foundational to ensuring trust, integrity, and the long-term viability of platforms like ours. At the core of our approach to regulatory compliance and security, we have devised a comprehensive strategy that navigates the complexities of the legal frameworks governing the crypto and AI sectors and fortifies our platform against an array of cyber threats.'
+      text: '監理合規性和安全措施。在加密貨幣和人工智慧快速發展的環境中，監管合規性和強大的安全措施不僅是營運必需品，而且是確保像我們這樣的平台的信任、完整性和長期生存能力的基礎。作為我們監管合規和安全方法的核心，我們制定了一項全面的策略，以應對管理加密貨幣和人工智慧領域的法律框架的複雜性，並增強我們的平台抵禦一系列網路威脅的能力。'
     },
     {
       type: 'p',
-      text: 'Addressing Regulatory Compliance. Our platform is committed to adhering to the highest standards of regulatory compliance, meticulously designed to navigate the intricate and ever-changing regulatory environment of the cryptocurrency and AI industries. We achieve this through several key strategies: Proactive Legal Monitoring: We continuously monitor global regulatory developments in the crypto and AI spaces, ensuring that our platform remains compliant with current laws and regulations. This includes engaging with legal experts and advisors who specialize in these sectors. User Restrictions: To navigate the complex regulatory landscape, especially in jurisdictions with stringent controls over crypto assets and AI technologies, our platform restricts access for users from the United States and countries under US sanctions. This measure is a precautionary step to comply with specific regulatory requirements and avoid potential legal complications. KYC and AML Policies: We implement rigorous Know Your Customer (KYC) and Anti-Money Laundering (AML) procedures to verify the identity of our users and monitor transactions for suspicious activity. These policies are crucial for preventing financial crimes and ensuring compliance with international regulations.'
+      text: '解決監理合規問題。我們的平台致力於遵守最高的監管合規標準，經過精心設計，以適應加密貨幣和人工智慧行業複雜且不斷變化的監管環境。我們透過幾個關鍵策略來實現這一目標： 主動法律監控：我們持續監控加密貨幣和人工智慧領域的全球監管發展，確保我們的平台始終符合現行法律和法規。這包括與專門從事這些領域的法律專家和顧問合作。使用者限制：為了應對複雜的監管環境，特別是在對加密資產和人工智慧技術有嚴格控制的司法管轄區，我們的平台限制來自美國和受美國制裁的國家的用戶的存取。該措施是一項預防措施，旨在遵守特定的監管要求並避免潛在的法律併發症。 KYC 和 AML 政策：我們實施嚴格的了解您的客戶 (KYC) 和反洗錢 (AML) 程序，以驗證使用者的身份並監控交易是否有可疑活動。這些政策對於預防金融犯罪和確保遵守國際法規至關重要。'
     },
     {
       type: 'p',
-      text: 'Data Protection and Privacy: In alignment with global standards such as GDPR, our platform enforces strict data protection policies to safeguard user information. We employ encryption, access controls, and regular security audits to protect personal and financial data.'
+      text: '資料保護與隱私：根據 GDPR 等全球標準，我們的平台執行嚴格的資料保護政策來保護使用者資訊。我們採用加密、存取控制和定期安全審核來保護個人和財務資料。'
     },
     {
       type: 'p',
-      text: 'Security Measures. Understanding the paramount importance of security in the crypto and AI domains, our platform incorporates state-of-the-art security measures to protect against unauthorized access, data breaches, and other cyber threats: End-to-End Encryption: Data transmitted to and from our platform is protected using robust end-to-end encryption, ensuring that user data remains confidential and secure. Regular Security Audits: We conduct regular security audits and penetration testing to identify and rectify potential vulnerabilities, maintaining a fortified defense against cyber attacks. Smart Contract Audits: Given the reliance on smart contracts for transactions and operations on our platform, we plan to engage independent experts to conduct thorough audits of our smart contracts, ensuring they are free from vulnerabilities and operate as intended. Decentralized Security Practices: Leveraging the inherent security advantages of blockchain technology, we adopt decentralized security practices that reduce the risk of centralized data breaches and enhance the overall security of our platform. User Education and Awareness: Recognizing that security is a shared responsibility, we provide our users with education and resources on best practices for safeguarding their accounts and transactions.'
+      text: '安防措施。了解加密和人工智慧領域安全的重要性，我們的平台採用了最先進的安全措施，以防止未經授權的存取、資料外洩和其他網路威脅： 端對端加密：資料傳輸到和我們平台上的資料受到強大的端對端加密的保護，確保用戶資料的機密性和安全性。定期安全審計：我們定期進行安全審計和滲透測試，以識別和糾正潛在漏洞，加強網路攻擊防禦。智慧合約審計：鑑於我們平台上的交易和營運對智慧合約的依賴，我們計劃聘請獨立專家對我們的智慧合約進行徹底審計，確保它們沒有漏洞並按預期運作。去中心化安全實踐：利用區塊鏈技術固有的安全優勢，我們採用去中心化安全實踐，降低中心化資料外洩的風險，增強平台的整體安全性。使用者教育和意識：認識到安全是一項共同的責任，我們為使用者提供有關保護其帳戶和交易的最佳實踐的教育和資源。'
     },
-    { type: 'h1', text: 'How to Participate' },
+    { type: 'h1', text: '如何參與' },
     {
       type: 'p',
-      text: "Engaging with our launchpad's token sale is a streamlined and secure process designed to ensure fairness, transparency, and compliance with global standards. Below is a step-by-step guide for potential investors to participate in the token sale, along with important details on KYC (Know Your Customer), AML (Anti-Money Laundering) requirements, and wallet compatibility."
-    },
-    {
-      type: 'p',
-      text: 'Step 1: Sign Up and KYC Verification. Register for a Bitcash wallet account at our official site. Complete KYC verification to ensure a secure investment environment. This process is crucial for compliance and fraud prevention. Please note: Geolocation Verification: Ensure your device’s privacy settings permit geolocation sharing to prevent sybil attacks. Restrictions: Residents of the US or countries under US sanctions are ineligible to participate.'
+      text: "參與我們啟動板的代幣銷售是一個簡化且安全的流程，旨在確保公平、透明並符合全球標準。以下是潛在投資者參與代幣銷售的分步指南，以及有關 KYC（了解您的客戶）、AML（反洗錢）要求和錢包相容性的重要詳細資訊。"
     },
     {
       type: 'p',
-      text: 'Step 2: Deposit Funds. Connect an EVM-Compatible Wallet: Use wallets like Metamask to deposit USDT or USDC into the Bitcash deposit contract available on various EVM chains, including Ethereum, Cosmos, Arbitrum, Optimism, Base, and Avalanche. Credit Allocation: Upon deposit, a USD credit equivalent will be added to your Bitlauncher platform account, which can be used to bid on token auctions.'
+      text: '第 1 步：註冊和 KYC 驗證。在我們的官方網站註冊 Bitcash 錢包帳戶。完成KYC驗證，確保安全的投資環境。此過程對於合規性和預防詐欺至關重要。請注意：地理位置驗證：確保您裝置的隱私設定允許地理位置共享，以防止女巫攻擊。限制：美國或受美國制裁的國家的居民沒有資格參加。'
     },
     {
       type: 'p',
-      text: 'Step 3: Participate in the Auction. Fair Price Discovery: Our platform employs batch auctions for equitable price discovery, benefiting from the mechanism’s efficiency in matching buyers and sellers at a uniform clearing price. Bidding: You can place multiple bids at varying prices. The auction concludes with an equilibrium price determined, and all bids above this price will successfully purchase tokens.'
+      text: '第 2 步：存入資金。連接 EVM 相容錢包：使用 Metamask 等錢包將 USDT 或 USDC 存入各種 EVM 鏈上可用的 Bitcash 存款合約，包括以太坊、Cosmos、Arbitrum、Optimism、Base 和 Avalanche。信用分配：存款後，等值的美元信用將添加到您的 Bitlauncher 平台帳戶中，可用於在代幣拍賣中出價。'
     },
     {
       type: 'p',
-      text: "Token Distribution: Tokens are allocated within two weeks post-sale. It's important to note that early-stage tokens might not be immediately listed on external exchanges but could gain liquidity through monthly auctions or a potential internal Bitcash exchange in the future."
+      text: '第三步：參加拍賣。公平價格發現：我們的平台採用批量拍賣來實現公平的價格發現，受益於該機制以統一的清算價格匹配買家和賣家的效率。出價：您可以以不同的價格進行多次出價。拍賣以確定的均衡價格結束，所有高於該價格的出價都將成功購買代幣。'
     },
     {
       type: 'p',
-      text: 'Additional Notes: Wallets and Exchanges: Information on supported wallets and future exchange listings will be updated periodically. Stay informed through our official channels. Compliance: Adhering to KYC and AML regulations not only ensures your security but also underpins the integrity of our platform.'
+      text: "代幣分配：代幣在售後兩週內分配。值得注意的是，早期代幣可能不會立即在外部交易所上市，但可以透過每月拍賣或未來潛在的內部 Bitcash 交易所獲得流動性。"
     },
     {
       type: 'p',
-      text: 'By following these steps, investors can confidently and securely participate in the token sale, contributing to the development of a new global economy powered by blockchain and AI innovations.'
-    },
-    { type: 'h1', text: 'FAQs' },
-    {
-      type: 'p',
-      text: 'FAQs: Navigating the Landscape of Our Launchpad. This section addresses the most frequently asked questions about our launchpad, its associated token sale, and the overarching vision of the project, providing clarity and insight into our mission to revolutionize the intersection of cryptocurrency and artificial intelligence.'
+      text: '附加說明： 錢包和交易所：有關支援的錢包和未來交易所清單的資訊將定期更新。透過我們的官方管道隨時了解情況。合規性：遵守 KYC 和 AML 法規不僅可以確保您的安全，還可以鞏固我們平台的完整性。'
     },
     {
       type: 'p',
-      text: '1. What is the primary purpose of the launchpad? The launchpad is designed to empower AI startups by providing them with a platform for tokenization and access to a global pool of investors, facilitating easier funding and organization through the innovative use of DAO technology and cryptocurrency.'
+      text: '透過遵循這些步驟，投資者可以自信、安全地參與代幣銷售，為由區塊鏈和人工智慧創新驅動的新全球經濟的發展做出貢獻。'
+    },
+    { type: 'h1', text: '常見問題解答' },
+    {
+      type: 'p',
+      text: '常見問題：瀏覽我們的 Launchpad 景觀。本節解決了有關我們的啟動板、相關代幣銷售以及專案總體願景的最常見問題，為我們徹底改變加密貨幣和人工智慧交叉的使命提供了清晰和深入的見解。'
     },
     {
       type: 'p',
-      text: '2. How does the token sale work? Our token sale operates as a batch auction, ensuring a fair price discovery mechanism that benefits both investors and startups. Tokens are issued based on current market valuations, allowing for equitable investment opportunities while fostering growth and adding value to the organization.'
+      text: '1. 啟動板的主要用途是什麼？該啟動板旨在為人工智慧新創公司提供代幣化平台和接觸全球投資者的平台，從而透過 DAO 技術和加密貨幣的創新使用促進更輕鬆的融資和組織，從而增強人工智慧新創公司的能力。'
     },
     {
       type: 'p',
-      text: '3. Who can participate in the token sale? The token sale is open to a global audience, with specific restrictions excluding participants from the US and US-sanctioned countries to comply with regulatory standards and ensure the broadest possible participation while maintaining legal integrity.'
+      text: '2. 代幣銷售如何進行？我們的代幣銷售以大量拍賣的方式進行，確保公平的價格發現機制，使投資者和新創公司都受益。代幣根據當前市場估值發行，提供公平的投資機會，同時促進組織成長並增加價值。'
     },
     {
       type: 'p',
-      text: '4. What sets this project apart from other ICOs or token sales? Our project uniquely focuses on the AI sector, employing a mint-and-burn model for tokenomics that mirrors the shareholder model, emphasizing sustainable growth, transparency, and community engagement in the tech startup ecosystem.'
+      text: '3. 誰可以參與代幣銷售？代幣銷售向全球受眾開放，但有特定限制，不包括來自美國和美國制裁國家的參與者，以遵守監管標準並確保盡可能廣泛的參與，同時保持法律完整性。'
     },
     {
       type: 'p',
-      text: "5. How will the funds raised from the token sale be used? Funds from the token sale are primarily allocated to further development and marketing of the launchpad and wallet, as well as the creation of the non-profit, no-premine L1 chain based on Antelope technology, aiming for the fairest token distribution and contributing to the ecosystem's growth and sustainability."
+      text: '4. 該項目與其他 ICO 或代幣銷售有何不同？我們的專案獨特地關注人工智慧領域，採用反映股東模型的「鑄幣即焚」模型，強調科技新創生態系統中的永續成長、透明度和社區參與。'
     },
     {
       type: 'p',
-      text: '6. How does the launchpad ensure regulatory compliance and security? We adopt a proactive approach to regulatory compliance, including user restrictions, KYC and AML policies, and adherence to data protection laws, alongside implementing robust security measures such as end-to-end encryption and regular security audits.'
+      text: "5. 代幣銷售所籌集的資金將如何使用？代幣銷售資金主要用於Launchpad和錢包的進一步開發和行銷，以及創建基於Antelope技術的非營利、無預挖的L1鏈，旨在實現最公平的代幣分配，為生態系統的成長和永續性。"
     },
     {
       type: 'p',
-      text: '7. What support does the launchpad offer to startups? Beyond funding, the launchpad offers startups access to a network of resources, including guidance on business management, marketing, and development, along with tools for efficient payment processing and organizational management through DAO technology.'
+      text: '6. Launchpad如何確保合規性和安全性？我們採取積極主動的方法來實現監管合規，包括用戶限制、KYC 和 AML 政策以及遵守資料保護法，同時實施強大的安全措施，例如端到端加密和定期安全審計。'
     },
     {
       type: 'p',
-      text: '8. How can startups and investors benefit from participating in the launchpad? Startups gain access to capital, resources, and a global community, enhancing their growth potential and market reach. Investors benefit from early access to innovative AI projects with high growth potential, contributing to a diversified and forward-looking investment portfolio.'
+      text: '7. Launchpad 為新創公司提供哪些支援？除了資金之外，啟動板還為新創公司提供了存取資源網路的機會，包括業務管理、行銷和開發方面的指導，以及透過 DAO 技術進行高效支付處理和組織管理的工具。'
     },
     {
       type: 'p',
-      text: '9. How does the project contribute to the broader AI and crypto communities? By facilitating the growth and development of AI startups within the crypto framework, our project contributes to the advancement of technology, encourages ethical and sustainable business practices, and fosters a community of innovation at the intersection of these two dynamic fields.'
+      text: '8. 新創公司和投資人如何從參與啟動板中受益？新創企業可以獲得資本、資源和全球社區，從而增強其成長潛力和市場影響力。投資者受益於儘早接觸具有高成長潛力的創新人工智慧項目，有助於形成多元化和前瞻性的投資組合。'
     },
     {
       type: 'p',
-      text: '10. Where can I find more information or get involved? For more detailed information, updates, and to join our community, visit our official website, join our social media channels, and subscribe to our newsletter. We welcome everyone interested in contributing to or participating in the future of AI and cryptocurrency through our launchpad.'
+      text: '9. 該計畫如何為更廣泛的人工智慧和加密貨幣社群做出貢獻？透過促進加密框架內人工智慧新創公司的成長和發展，我們的計畫有助於技術進步，鼓勵道德和永續的商業實踐，並在這兩個動態領域的交叉點培育創新社群。'
+    },
+    {
+      type: 'p',
+      text: '10. 我可以在哪裡找到更多資訊或參與其中？如需更多詳細資訊、更新以及加入我們的社區，請造訪我們的官方網站、加入我們的社交媒體管道並訂閱我們的電子報。我們歡迎所有有興趣透過我們的啟動板為人工智慧和加密貨幣的未來做出貢獻或參與的人。'
     },
     {
       type: 'p',
       text: 'Twitter: @bitcashorg / @bitlauncherai Blog: https://blog.bitcash.org/ Discord: https://discord.gg/KuR48XUxnG Youtube: https://www.youtube.com/@bitcashorg Telegram: https://t.me/bitcash_org'
     },
-    { type: 'h1', text: 'Glossary' },
+    { type: 'h1', text: '詞彙表' },
     {
       type: 'p',
-      text: 'Glossary Artificial Intelligence (AI): A field of computer science dedicated to creating systems capable of performing tasks that typically require human intelligence, including but not limited to learning, problem-solving, and decision-making. Blockchain: A decentralized, distributed ledger technology that records transactions across multiple computers in a way that ensures security, transparency, and immutability. Cryptocurrency: Digital or virtual currency that uses cryptography for security and operates independently of a central bank, leveraging blockchain technology for decentralized financial transactions. Decentralized Autonomous Organization (DAO): A type of organization represented by rules encoded as a computer program that is transparent, controlled by the organization members, and not influenced by a central government. Tokenization: The process of converting rights to an asset into a digital token on a blockchain, facilitating easier and more flexible transactions. Mint-and-Burn Model: A tokenomics strategy where tokens are "minted" or created to increase supply and "burned" or destroyed to reduce supply, often used to manage a token\'s value and supply. Batch/Dutch Auction: A market structure in which the price of an offering is established after taking in all bids to determine the highest price at which the total offering can be sold. Gnosis Auction: A platform that allows for fair price discovery and decentralized auctions, particularly used within the Ethereum ecosystem. EOS EVM: Refers to the EOSIO Ethereum Virtual Machine, which enables Ethereum smart contracts to run on the EOS blockchain, enhancing performance and scalability. Smart Contracts: Self-executing contracts with the terms of the agreement between buyer and seller being directly written into lines of code, allowing for transactions and agreements to be carried out without the need for a central authority, legal system, or external enforcement mechanism. KYC (Know Your Customer): A process of verifying the identity of clients by businesses, particularly in the financial sector, to prevent identity theft, financial fraud, money laundering, and terrorist financing. AML (Anti-Money Laundering): A set of procedures, laws, and regulations designed to stop the practice of generating income through illegal actions and ensuring investments are not used for funding illegal activities. GDPR (General Data Protection Regulation): A regulation in EU law on data protection and privacy in the European Union and the European Economic Area, focusing on giving control to individuals over their personal data. End-to-End Encryption: A method of secure communication that prevents third-parties from accessing data while it\'s transferred from one end system or device to another. Penetration Testing: A simulated cyber attack against your computer system to check for exploitable vulnerabilities. Hot-stuff Consensus Mechanism: A leader-based consensus mechanism known for its high performance and strong security properties, particularly in blockchain environments. Seed Funding: An initial investment to start a business in exchange for equity or an interest in the company. WebAuthn: A web standard published by the World Wide Web Consortium (W3C) for secure and passwordless authentication on the Web, part of the FIDO2 specification. This glossary provides definitions for key technical terms and jargon used throughout the whitepaper, ensuring readers have a clear understanding of the concepts discussed in the context of our platform\'s mission to revolutionize the AI and cryptocurrency landscapes. Layer 1 (L1): This term refers to the base layer or underlying blockchain architecture of a decentralized network. Layer 1 is the foundational level that includes the core blockchain technology responsible for validating and recording transactions. Major cryptocurrencies like Bitcoin and Ethereum operate as Layer 1 networks, providing the fundamental infrastructure for additional layers and applications to build upon. Layer 1 solutions often focus on improving scalability, security, and decentralization directly within the main blockchain itself.'
+      text: '術語表 人工智慧 (AI)：電腦科學的一個領域，致力於創建能夠執行通常需要人類智慧的任務的系統，包括但不限於學習、解決問題和決策。區塊鏈：一種去中心化的分散式帳本技術，以確保安全性、透明度和不變性的方式記錄多台電腦上的交易。加密貨幣：使用加密技術確保安全並獨立於中央銀行運作的數位或虛擬貨幣，利用區塊鏈技術進行去中心化金融交易。去中心化自治組織（DAO）：以編碼為電腦程式的規則為代表的組織，該組織是透明的，由組織成員控制，不受中央政府影響。代幣化：將資產權利轉換為區塊鏈上的數位代幣的過程，促進更輕鬆、更靈活的交易。鑄造和銷毀模型：一種代幣經濟策略，其中「鑄造」或創建代幣以增加供應，「銷毀」或銷毀以減少供應，通常用於管理代幣的價值和供應。批量/荷蘭式拍賣：一種市場結構，在吸收所有出價後確定發行價格，以確定可出售全部發行的最高價格。 Gnosis 拍賣：一個允許公平價格發現和去中心化拍賣的平台，特別是在以太坊生態系統中使用。 EOS EVM：指EOSIO以太坊虛擬機，它使以太坊智慧合約能夠在EOS區塊鏈上運行，增強效能和可擴展性。智能合約：自動執行的合約，買方和賣方之間的協議條款直接寫入代碼行，允許交易和協議的執行，無需中央機構、法律系統或外部執行機制。 KYC（了解您的客戶）：企業（尤其是金融領域）驗證客戶身分的過程，以防止身分盜竊、金融詐欺、洗錢和恐怖主義融資。 AML（反洗錢）：旨在製止透過非法行為創造收入並確保投資不用於資助非法活動的一套程序、法律和法規。 GDPR（一般資料保護規範）：歐盟法律中關於歐盟和歐洲經濟區資料保護和隱私的一項條例，重點是賦予個人對其個人資料的控制權。端對端加密：一種安全通訊方法，可防止第三方在資料從一個終端系統或裝置傳輸到另一個終端系統或裝置時存取資料。滲透測試：針對您的電腦系統的模擬網路攻擊，以檢查可利用的漏洞。熱門共識機制：一種基於領導者的共識機制，以其高效能和強大的安全特性而聞名，特別是在區塊鏈環境中。種子資金：開辦企業以換取公司股權或權益的初始投資。 WebAuthn：萬維網聯盟 (W3C) 發布的一種 Web 標準，用於在 Web 上進行安全且無密碼的身份驗證，是 FIDO2 規範的一部分。此術語表提供了白皮書中使用的關鍵技術術語和行話的定義，確保讀者清楚地理解在我們平台徹底改變人工智慧和加密貨幣格局的使命背景下討論的概念。第 1 層 (L1)：此術語是指去中心化網路的基礎層或底層區塊鏈架構。第一層是基礎層，包括負責驗證和記錄交易的核心區塊鏈技術。比特幣和以太坊等主要加密貨幣作為第 1 層網路運行，為建立其他層和應用程式提供基礎設施。第一層解決方案通常專注於直接在主區塊鏈本身內提高可擴展性、安全性和去中心化。'
     },
-    { type: 'h1', text: 'Contact Information' },
+    { type: 'h1', text: '聯絡資訊' },
     {
       type: 'p',
-      text: 'For further inquiries, support, or more information about the Bitcash platform and token sale, please use the following channels to reach out to us: General Support and Inquiries: Email: support@bitcash.org Media and Press: Email: press@bitcash.org Developer Support: Email: developers@bitcash.org Social Media: Twitter: @bitcashorg / @bitlauncherai Blog: https://blog.bitcash.org/ Discord: https://discord.gg/KuR48XUxnG Youtube: https://www.youtube.com/@bitcashorg Telegram: https://t.me/bitcash_org For real-time updates and announcements, follow us on our social media platforms and join our community discussions. We are committed to transparency and open communication and look forward to your participation and feedback. If you encounter any issues or require assistance during the participation process or afterwards, our dedicated support team is available to help you resolve your queries promptly and efficiently.'
+      text: '如需進一步查詢、支援或有關Bitcash 平台和代幣銷售的更多信息，請使用以下管道與我們聯繫： 一般支援和查詢： 電子郵件：support@bitcash.org 媒體和新聞： 電子郵件：press@bitcash 。 :// www.youtube.com/@bitcashorg Telegram：https://t.me/bitcash_org 如需即時更新和公告，請在我們的社交媒體平台上關注我們並加入我們的社群討論。我們致力於透明度和開放的溝通，並期待您的參與和回饋。如果您在參與過程中或之後遇到任何問題或需要協助，我們的專業支援團隊可以協助您快速且有效率地解決您的疑問。'
     }
   ] as PageContentData
 }

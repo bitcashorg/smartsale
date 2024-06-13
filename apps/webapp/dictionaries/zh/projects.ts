@@ -5,86 +5,86 @@ export const projects: ProjectContent[] = [
     id: 1,
     content: {
       highlights: {
-        title: 'Highlights',
+        title: '強調',
         content: [
           [
-            'Universal Accessibility: bitcash strives to make advanced technologies like cryptocurrency and AI accessible to everyone.',
-            'User-Friendly Design: The platform emphasizes ease of use with minimalist design and advanced security features.',
-            'Equitable Token System: Tokenomics inspired by equity models to ensure fairness for all stakeholders.',
-            'Fair Distribution Blockchain: Creating a non-profit L1 blockchain for fair token distribution to every individual.',
-            'AI-Focused Launchpad: A dedicated platform offering comprehensive support to AI startups.',
-            'Open-Source and Collaborative: Fostering innovation through an open-source community and transparent practices.',
-            'Rigorous Security Standards: Implementing top-tier KYC/AML policies and advanced security for user protection.',
-            'Global Empowerment: Committed to empowering global users through transformative technological solutions.',
-            'Enhancing Human Connections: Prioritizing genuine human interaction in the anticipated AI-dominated future.',
-            'New Digital Economy Vision: Envisioning a future economy where technology and ethical principles serve global well-being.'
+            '普遍無障礙: bitcash 致力於讓每個人都能使用加密貨幣和人工智慧等先進技術。',
+            '人性化設計: 該平台強調簡約設計和先進安全功能的易用性。',
+            '公平的代幣系統: 受股權模型啟發的代幣經濟學，確保所有利害關係人的公平。',
+            "公平分配区块链：创建一个非营利的一级区块链，为每个人提供公平的代币分配。",
+            "以人工智能为重点的发射平台：为人工智能初创公司提供全面支持的专用平台。",
+            "开源与协作：通过开源社区和透明实践促进创新。",
+            "严格的安全标准: 实施顶级KYC/AML政策和先进的安全措施以保护用户。",
+            "全球赋能：致力于通过变革性的技术解决方案赋能全球用户。",
+            "增强人类联系：在预期的人工智能主导未来中优先考虑真正的人类互动。",
+            "新数字经济愿景：展望一个技术与道德原则为全球福祉服务的未来经济。"
           ]
         ]
       },
       product: {
-        title: 'Product Overview',
+        title: '產品概述',
         content: [
           [
-            'Inclusive Technology: bitcash aims to bring cryptocurrency, AI, and DeFi to everyone, not just tech experts.',
-            'Simplified Crypto Wallet: Offers a passwordless login system and an intuitive interface for secure, stress-free transactions.',
-            'Effortless Recovery: Features a robust account recovery system to regain access without traditional complexities.',
-            'Peer-to-Peer Exchange: Enables direct user transactions with local currency stablecoins, simplifying the crypto entry process.',
-            'Local Currency Support: Provides real-time exchange rates for seamless local currency transactions underpinned by USDT.',
-            'DAO Management Platform: Introduces dBoard for enhanced decision-making and governance within decentralized structures.',
-            'AI Startup Launchpad: bitlauncher assists AI startups with secure, efficient fundraising and organizational tools.',
-            'High Compliance Standards: Emphasizes strong regulatory compliance, including KYC and AML policies, and advanced security protocols.',
-            'Open Community: Encourages a collaborative environment for users, developers, and investors to engage and contribute.',
-            'Digital Economy Vision: Invites global participation to shape a new economy where technology enhances human prosperity and connection.'
+            "包容性技术： bitcash旨在将加密货币、人工智能和去中心化金融带给所有人，而不仅仅是技术专家。",
+            "简化的加密钱包：提供无密码登录系统和直观界面，确保安全、无压力的交易。",
+            "轻松恢复：具备强大的账户恢复系统，无需传统的复杂步骤即可重新获得访问权限。",
+            "点对点交易：支持用户直接使用本地货币稳定币进行交易，简化了进入加密货币市场的过程。",
+            "本地货币支持：提供实时汇率，支持基于USDT的无缝本地货币交易。",
+            "DAO管理平台：推出dBoard, 增强去中心化结构中的决策和治理。",
+            "人工智能初创公司发射平台：bitlauncher帮助AI初创公司进行安全、高效的筹资和组织管理。",
+            "高合规标准：强调强有力的监管合规，包括KYC和AML政策，以及先进的安全协议。",
+            "开放社区：鼓励用户、开发者和投资者的协作环境，促进参与和贡献。",
+            "数字经济愿景：邀请全球参与，共同塑造一个技术提升人类繁荣和联系的新经济。"
           ]
         ]
       },
       problem: {
-        title: 'Problem',
+        title: '問題',
         content: [
           [
-            'Technical Hurdles: Cryptocurrency, AI, and DeFi advancements are hampered by complex systems that deter average users.',
-            'Limited Accessibility: A significant portion of the global population lacks simple, accessible platforms to utilize AI and DeFi in everyday life.',
-            'Financial Inequality: The benefits of digital finance and investment opportunities remain exclusive to those with financial knowledge or wealth.',
-            'Widespread Disengagement: Many are left out of the digital revolution due to intimidating technology and finance landscapes.',
-            'Resource Gap: Individuals without access to substantial capital or sophisticated tools are often unable to participate in emerging financial technologies.',
-            'Exclusivity in Innovation: Cutting - edge technologies largely benefit a select group, creating an imbalance in technological empowerment.',
-            'Integration Deficiency: There is a notable absence of a comprehensive platform that integrates AI, blockchain, and DeFi in a user- friendly manner.',
-            'Barriers to Adoption: The intimidating nature of current blockchain solutions hinders widespread adoption and practical use in the mainstream.',
-            'Economic Inequity: Digital finance has yet to bridge the gap between the tech- savvy and the general population, reinforcing economic disparities.'
+            "技术障碍：加密货币、人工智能和去中心化金融的进步受到复杂系统的阻碍，阻止了普通用户的使用。",
+            "可访问性有限：全球很大一部分人口缺乏简单、可访问的平台来在日常生活中使用人工智能和去中心化金融。",
+            "金融不平等：数字金融和投资机会的好处仍然只属于那些拥有金融知识或财富的人。",
+            "广泛的脱节：由于技术和金融领域的威慑性，许多人被排除在数字革命之外。",
+            "资源差距：没有大量资本或复杂工具的个人通常无法参与新兴的金融技术。",
+            "创新的排他性：尖端技术主要惠及少数群体，造成技术赋权的不平衡。",
+            "整合不足：显著缺乏一个综合平台将人工智能、区块链和去中心化金融以用户友好的方式整合在一起。",
+            "采用障碍：当前区块链解决方案的威慑性质阻碍了广泛的采用和在主流中的实际使用。",
+            "经济不平等：数字金融尚未弥合技术熟练者与普通大众之间的差距，强化了经济差距。"
           ]
         ]
       },
       solution: {
-        title: 'Solution',
+        title: '解決方案',
         content: [
           [
-            'Intuitive Design: Bitcash streamlines the blockchain experience with an intuitive interface, removing technical barriers to cryptocurrency and AI.',
-            'Global Accessibility: Offers global market access with P2P on-ramp and local stablecoins, targeting financial inclusion.',
-            'Fair Wealth Distribution: Implements a non-profit blockchain with equitable token distribution to ensure a balanced financial future for all users.',
-            'Unified Platform: Bitcash provides a comprehensive ecosystem for AI startups and DeFi applications, fostering seamless innovation and integration.',
-            'Empowering Community Growth: Encourages open collaboration and community-driven innovation, leveraging collective intelligence for platform advancement.',
-            'Education and Support: Commits to user education and regulatory compliance, creating a secure and informed user base.',
-            'Technological Democratization: Aims to make advanced technology accessible and usable for everyone, democratizing AI and financial tools.',
-            'Catalyst for Change: Acts as a launchpad for transformative applications, driving growth and fostering a dynamic, creative community.',
-            'Human-Centric Approach: Focuses on maintaining human connections and integrity in an AI-dominated future.',
-            'Economic Redefinition: Bitcash strives to reshape the global economy to be more inclusive, equitable, and supportive of human potential.'
+            "直观设计：Bitcash通过直观的界面简化了区块链体验，消除了加密货币和人工智能的技术障碍。",
+            "全球可访问性：提供全球市场访问，支持点对点入场和本地稳定币，致力于实现金融包容性。",
+            "公平财富分配：实施非营利区块链，通过公平的代币分配确保所有用户的平衡财务未来。",
+            "统一平台：Bitcash为人工智能初创公司和去中心化金融应用提供了一个全面的生态系统，促进无缝创新和整合。",
+            "赋能社区发展：鼓励开放合作和社区驱动的创新，利用集体智慧推动平台进步。",
+            "教育和支持：致力于用户教育和合规监管，打造一个安全且知情的用户基础。",
+            "技术民主化：旨在让先进技术对所有人都可访问和使用，实现人工智能和金融工具的民主化。",
+            "变革催化剂：作为变革性应用的启动平台，推动增长并培育一个充满活力和创造力的社区。",
+            "以人为本的方式：专注于在人工智能主导的未来保持人际关系和诚信。",
+            "经济重新定义：Bitcash致力于将全球经济重塑得更具包容性、公平性，并支持人类潜力的发挥。"
           ]
         ]
       },
       businessModel: {
-        title: 'Business Model',
+        title: '商業模式',
         content: [
           [
-            'Utility Token Ecosystem: Implements a dynamic mint-and-burn utility token system central to transactions and services, ensuring ecosystem balance.',
-            "Multiple Revenue Channels: Generates income through transaction fees, P2P exchange margins, and services around AI-driven DeFi applications, plus earnings from the AI startup launchpad 'Bitlauncher'.",
-            'Community-Driven Innovation: Encourages open-source development and community contributions, fostering a cycle of continuous innovation and platform improvement.',
-            'Equitable Blockchain Infrastructure: Introduces a non-profit L1 blockchain for fair token distribution, underpinning a decentralized economy accessible to all.',
-            'Fair Token Distribution Model: Adopts an ethical approach to token distribution, rewarding contributions with real-time value, ensuring equity and transparency.',
-            'Strategic Partnerships: Forms alliances across sectors to enhance market presence and integrate Bitcash services into a wider ecosystem.',
-            'Investment in R&D: Continuously improves technology and services through research and development, maintaining a competitive edge.',
-            'Compliance and Security Priority: Dedicates resources to ensure regulatory compliance and robust security, building trust and platform longevity.',
-            'Educational Initiatives: Invests in user education and community engagement, empowering users to maximize platform benefits and contribute to its evolution.',
-            'Targeted Marketing for User Growth: Employs strategic marketing to attract a diverse user base, demystifying blockchain and AI to encourage mainstream adoption.'
+            "效用代币生态系统：实施动态铸造和销毁效用代币系统，作为交易和服务的核心，确保生态系统平衡。",
+            "多种收入渠道：通过交易费用、点对点交易差价和围绕人工智能驱动的去中心化金融应用的服务，以及人工智能初创企业启动平台 'Bitlauncher' 的收益来创收。",
+            "社区驱动的创新：鼓励开源开发和社区贡献，促进持续创新和平台改进的循环。",
+            "公平区块链基础设施：引入非营利的L1区块链，用于公平的代币分配，支撑所有人都可访问的去中心化经济。",
+            "公平的代币分配模型：采用伦理方法进行代币分配，通过即时价值奖励贡献，确保公平和透明。",
+            "战略合作伙伴关系：在各个领域建立联盟，以增强市场存在并将Bitcash服务整合到更广泛的生态系统中。",
+            "研发投资：通过研究和开发不断改进技术和服务，保持竞争优势。",
+            "合规和安全优先：投入资源确保合规监管和强大的安全性，建立信任和平台的长久性。",
+            "教育计划：投资于用户教育和社区参与，赋予用户最大化平台利益并推动其发展的能力。",
+            "有针对性的用户增长营销：采用战略营销吸引多样化的用户群体，解密区块链和人工智能，鼓励主流采用。"
           ],
           [
             "This business model represents Bitcash's commitment to a sustainable, equitable digital economy, leveraging community input and innovation for collective growth."
@@ -92,19 +92,19 @@ export const projects: ProjectContent[] = [
         ]
       },
       tokenomics: {
-        title: 'Tokenomics',
+        title: '代幣經濟學',
         content: [
           [
-            'Dual Token System: Utilizes utility tokens for transactions and services within Bitcash and governance tokens for voting and decision-making by contributors and stakeholders.',
-            'Contribution-Based Distribution: Tokens are distributed based on active contributions, such as development, community engagement, or investment, rewarding early and ongoing support.',
-            'Dynamic Mint-and-Burn Policy: Balances token supply with demand by minting tokens for rewards and development, and burning a portion to counter inflation and enhance value.',
-            'Diverse Revenue Streams: Generates income from transaction fees, Bitcash Launchpad service fees, forex and stablecoin exchanges, and strategic partnerships.',
-            'Revenue Reinvestment: Allocates a portion of earnings to continuous platform development, security, marketing, and community initiatives, ensuring sustainable growth.',
-            'Equitable Distribution Model: Adopts a fair distribution system, akin to traditional shareholder models, ensuring tokens reflect real value and contributions.',
-            'Transparent Token Valuation: Focuses on transparency and real value creation in token distribution, avoiding speculation for stable economic foundations.',
-            'Governance Participation: Allows token holders to engage in governance, contributing to the platform’s direction and policies, emphasizing democratic participation.',
-            "Economic Adaptability: Maintains a flexible tokenomics strategy, responsive to the community and platform's evolving needs for a balanced digital economy.",
-            'Vision of Shared Prosperity: Aims to build a new global economy where Bitcash tokens underpin a system of innovation, participation, and shared benefits, transcending traditional economic barriers.'
+            "双代币系统：利用效用代币进行Bitcash内的交易和服务，治理代币则用于贡献者和利益相关者的投票和决策。",
+            "基于贡献的分配：代币根据积极贡献进行分配，如开发、社区参与或投资，奖励早期和持续的支持。",
+            "动态铸造和销毁政策：通过为奖励和开发铸造代币，并销毁一部分以对抗通货膨胀和提高价值，平衡代币供应与需求。",
+            "多样化的收入来源：通过交易费用、Bitcash启动平台服务费、外汇和稳定币交易以及战略合作伙伴关系来创收。",
+            "收入再投资：将部分收益分配给平台的持续发展、安全、营销和社区计划，确保可持续增长。",
+            "公平的分配模型：采用类似于传统股东模型的公平分配系统，确保代币反映真实价值和贡献。",
+            "透明的代币估值：注重透明度和代币分配中的真实价值创造，避免投机行为，确保经济基础稳定。",
+            "治理参与：允许代币持有者参与治理，为平台的方向和政策做出贡献，强调民主参与。",
+            "经济适应性：保持灵活的代币经济策略，响应社区和平台不断变化的需求，以实现平衡的数字经济。",
+            "共享繁荣的愿景：旨在构建一个新的全球经济，在这个系统中，Bitcash代币支撑着创新、参与和共享利益，超越传统经济障碍。"
           ]
         ]
       }
@@ -115,27 +115,27 @@ export const projects: ProjectContent[] = [
     id: 2,
     content: {
       highlights: {
-        title: 'Highlights',
+        title: '強調',
         content: [[]]
       },
       product: {
-        title: 'Product Overview',
+        title: '產品概述',
         content: [[]]
       },
       problem: {
-        title: 'Problem',
+        title: '問題',
         content: [[]]
       },
       solution: {
-        title: 'Solution',
+        title: '解決方案',
         content: [[]]
       },
       businessModel: {
-        title: 'Business Model',
+        title: '商業模式',
         content: [[]]
       },
       tokenomics: {
-        title: 'Tokenomics',
+        title: '代幣經濟學',
         content: [[]]
       }
     }
@@ -144,27 +144,27 @@ export const projects: ProjectContent[] = [
     id: 3,
     content: {
       highlights: {
-        title: 'Highlights',
+        title: '強調',
         content: [[]]
       },
       product: {
-        title: 'Product Overview',
+        title: '產品概述',
         content: [[]]
       },
       problem: {
-        title: 'Problem',
+        title: '問題',
         content: [[]]
       },
       solution: {
-        title: 'Solution',
+        title: '解決方案',
         content: [[]]
       },
       businessModel: {
-        title: 'Business Model',
+        title: '商業模式',
         content: [[]]
       },
       tokenomics: {
-        title: 'Tokenomics',
+        title: '代幣經濟學',
         content: [[]]
       }
     }

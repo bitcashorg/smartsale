@@ -2,29 +2,29 @@ import { ContentTextType, PageContentData } from '@/components/shared/content'
 
 const policiesAndTerms = [
   {
-    title: 'Privacy Policy',
+    title: 'Chính sách quyền riêng tư',
     content:
-      'We respect your privacy. No personal data is stored or shared with third parties. We only collect emails for our newsletter subscribers and ensure their protection against unauthorized access.'
+      'Chúng tôi tôn trọng sự riêng tư của bạn. Không có dữ liệu cá nhân nào được lưu trữ hoặc chia sẻ với bên thứ ba. Chúng tôi chỉ thu thập email của những người đăng ký nhận bản tin và đảm bảo việc bảo vệ họ khỏi bị truy cập trái phép.'
   },
   {
-    title: 'Terms of Service',
+    title: 'Điều khoản dịch vụ',
     content:
-      'By using our services, you agree to our terms. Ensure you understand the risks associated with digital currencies and platforms. We do not store your personal data except for email subscriptions.'
+      'Bằng cách sử dụng dịch vụ của chúng tôi, bạn đồng ý với các điều khoản của chúng tôi. Đảm bảo bạn hiểu những rủi ro liên quan đến tiền tệ và nền tảng kỹ thuật số. Chúng tôi không lưu trữ dữ liệu cá nhân của bạn ngoại trừ đăng ký email.'
   },
   {
-    title: 'No Cookie Policy',
+    title: 'Chính sách không có cookie',
     content:
-      'Our website does not use cookies. Your navigation and interaction with our services are private and not tracked by cookies.'
+      'Trang web của chúng tôi không sử dụng cookie. Việc điều hướng và tương tác của bạn với các dịch vụ của chúng tôi là riêng tư và không bị cookie theo dõi.'
   },
   {
-    title: 'Newsletter Subscription',
+    title: 'Đăng ký nhận bản tin',
     content:
-      'Subscribers to our newsletter agree to provide their email addresses for regular updates. You can unsubscribe at any time through the link provided in each email.'
+      'Những người đăng ký nhận bản tin của chúng tôi đồng ý cung cấp địa chỉ email của họ để cập nhật thường xuyên. Bạn có thể hủy đăng ký bất cứ lúc nào thông qua liên kết được cung cấp trong mỗi email.'
   },
   {
-    title: 'Data Protection',
+    title: 'Bảo vệ dữ liệu',
     content:
-      'We implement rigorous security measures to protect your information. Your email is securely stored and is only used for sending newsletters.'
+      'Chúng tôi thực hiện các biện pháp bảo mật nghiêm ngặt để bảo vệ thông tin của bạn. Email của bạn được lưu trữ an toàn và chỉ được sử dụng để gửi bản tin.'
   }
 ] as const
 
@@ -32,11 +32,11 @@ const policiesAndTerms = [
 const content: PageContentData = [
   {
     type: 'h1',
-    text: 'Privacy Policy and Terms of Service for Bitlauncher Participants'
+    text: 'Chính sách quyền riêng tư và Điều khoản dịch vụ dành cho người tham gia Bitlauncher'
   },
   {
     type: 'p',
-    text: 'Understand our commitment to your privacy and your responsibilities when using our crypto launchpad services:'
+    text: 'Hiểu cam kết của chúng tôi về quyền riêng tư và trách nhiệm của bạn khi sử dụng các dịch vụ launchpad tiền điện tử của chúng tôi:'
   },
   ...policiesAndTerms.flatMap((item, index) => [
     { type: 'h2' as ContentTextType, text: `${index + 1}. ${item.title}` },

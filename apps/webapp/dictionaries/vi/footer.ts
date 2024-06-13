@@ -1,21 +1,21 @@
 export default{
-  stepsInfo: 'Only 3 Steps Needed',
+  stepsInfo: 'Chỉ cần 3 bước',
   step: [
     {
-      title: 'Sign Up And\nComplete KYC',
-      description: 'Complete a Bitcash KYC to ensure your participation.',
+      title: 'Đăng ký và hoàn thành KYC',
+      description: 'Hoàn thành KYC Bitcash để đảm bảo bạn tham gia.',
       href: 'https://app.bitcash.org/?share=JVnL7qzrU'
     },
     {
-      title: 'Get USD\nCredits',
+      title: 'Nhận tín dụng USD',
       description:
-        'Deposit USDT on any chain to get USD Credit Tokens on EOS EVM',
+        'Gửi USDT vào bất kỳ chuỗi nào để nhận USD Credit Token trên EOS EVM',
       href: '#'
     },
     {
-      title: 'Place\nBids',
+      title: 'Địa điểm bỏ thầu',
       description:
-        'Select a project from the Auctions list and place your bids.',
+        'Chọn một dự án từ danh sách Đấu giá và đặt giá thầu của bạn.',
       href: '#'
     }
   ]
