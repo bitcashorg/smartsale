@@ -1,9 +1,9 @@
-import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
-import dynamic from 'next/dynamic'
-import { getDictionary } from '@/dictionaries'
 import { RecentArticles } from './recents-articles'
 import Participate from './participate'
 import { FAQ } from './faq'
+import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
+import dynamic from 'next/dynamic'
+import { getDictionary } from '@/dictionaries'
 
 const DynamicNewsletter = dynamic(() => import('./newsletter') as any, {
   ssr: false
