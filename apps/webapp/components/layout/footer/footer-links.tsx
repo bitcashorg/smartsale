@@ -14,11 +14,7 @@ export function FooterLinks() {
 
 const SectionComponent = ({ section }: { section: NavSection }) => (
   <div>
-    <h5
-      className={`font-bold ${section.label === 'Polkastarter' ? 'text-pink-600' : ''}`}
-    >
-      {section.label}
-    </h5>
+    <h5 className={`font-bold`}>{section.label}</h5>
     {section.items && section.items.length > 0 ? (
       <LinksList links={section.items} />
     ) : (
