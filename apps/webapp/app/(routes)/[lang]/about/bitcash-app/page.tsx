@@ -2,14 +2,78 @@ import React from 'react'
 import { Metadata } from 'next'
 import { CommonPageProps } from '@/types/routing.type'
 import { getDictionary } from '@/dictionaries'
+import {
+  CurrencyIcon,
+  MapIcon,
+  PhoneIcon,
+  QrCodeIcon,
+  ShieldIcon
+} from 'lucide-react'
+import {
+  SolutionLandingPageContent,
+  SolutionLandingPage
+} from '@/components/shared/solution-landing-page'
 
 export default async function BitcashAppPage({ params }: CommonPageProps) {
   const dict = await getDictionary(params.lang)
   return (
-    <div className="content-container !py-10 px-7 md:px-3 md:py-24">
-      <h1 className="heading">Bitcash App Page</h1>
+    <div className="!py-10 px-7 md:px-3 md:py-24">
+      <SolutionLandingPage content={content} />
     </div>
   )
+}
+
+const content: SolutionLandingPageContent = {
+  mainHeading: 'Buy Crypto, Pay Crypto.',
+  subHeading: 'The future of payments is here',
+  description:
+    'Seamlessly buy and pay with cryptocurrencies using our secure and user-friendly platform.',
+  features: [
+    {
+      title: 'Buy Crypto on the go',
+      description:
+        'Our mobile app allows you to buy and sell cryptocurrencies anytime, anywhere.',
+      icon: PhoneIcon
+    },
+    {
+      title: 'Pay with Crypto',
+      description:
+        'Use our QR code payment system to pay for goods and services with your cryptocurrencies.',
+      icon: QrCodeIcon
+    }
+  ],
+  business: {
+    heading: 'Trusted by businesses worldwide',
+    description:
+      'Join the growing number of businesses that accept and use cryptocurrencies for payments.'
+  },
+  advantages: [
+    {
+      title: 'Global Reach',
+      description:
+        'Our platform is available in over 180 countries, allowing you to transact globally.',
+      icon: MapIcon
+    },
+    {
+      title: 'Secure Transactions',
+      description:
+        'We use the latest security protocols to ensure your transactions are safe and secure.',
+      icon: ShieldIcon
+    },
+    {
+      title: 'Multiple Cryptocurrencies',
+      description:
+        'Our platform supports a wide range of cryptocurrencies, including Bitcoin, Ethereum, and more.',
+      icon: CurrencyIcon
+    }
+  ],
+  callToAction: {
+    heading: 'Get started today',
+    description:
+      'Join the future of payments and start accepting cryptocurrencies for your business.',
+    buttonLabel: 'Get Started',
+    buttonHref: '#'
+  }
 }
 
 export const metadata: Metadata = {
