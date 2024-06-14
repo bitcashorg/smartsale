@@ -15,7 +15,7 @@ export default function PrivacyPolicy() {
 }
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | Bitlauncher',
+  title: 'Privacy Policy | Morlauncher',
   description:
     'Read our Privacy Policy to understand how we protect and manage your data in our crypto launchpad application.'
 }
@@ -52,7 +52,7 @@ const policiesAndTerms = [
 const content: PageContentData = [
   {
     type: 'h1',
-    text: 'Privacy Policy and Terms of Service for Bitlauncher Participants'
+    text: 'Privacy Policy and Terms of Service for Morlauncher Participants'
   },
   {
     type: 'p',

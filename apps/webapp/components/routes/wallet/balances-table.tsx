@@ -36,39 +36,33 @@ export function BalancesTable() {
 
   const coins = [
     {
-      coin: 'USDCred',
+      coin: 'MOR',
       totalAmount: `${usdCredBalance.formatted || 0}`,
-      nertwork: 'EOS EVM',
-      description: 'USD Bidding Token'
+      network: 'Arbitrum One',
+      description: 'MOR Tokens'
     },
     {
       coin: 'EOS (gas)',
       totalAmount: `${eosEvmBalance.formatted || 0}`,
-      nertwork: 'EOS EVM',
+      network: 'EOS EVM',
       description: 'Wrapped EOS on EOS EVM'
     },
     {
       coin: 'MBOTSPL',
       totalAmount: `${usdMbotsplBalance.formatted || 0}`,
-      nertwork: 'EOS EVM',
+      network: 'EOS EVM',
       description: 'Auctioning Prelaunch Token'
-    },
-    {
-      coin: 'BITUSD',
-      totalAmount: eosBalances.bitusd,
-      nertwork: 'EOS Mainnet',
-      description: 'Bitcash USD stable coin'
     },
     {
       coin: 'MBOTS',
       totalAmount: eosBalances.mbots,
-      nertwork: 'EOS Mainnet',
+      network: 'EOS Mainnet',
       description: 'MBOTS Token'
     },
     {
       coin: 'EOS (gas)',
       totalAmount: eosBalances.eos,
-      nertwork: 'EOS Mainnet',
+      network: 'EOS Mainnet',
       description: 'Native EOS token'
     }
   ]
@@ -85,9 +79,9 @@ export function BalancesTable() {
       </TableHeader>
       <TableBody>
         {coins.map(coin => (
-          <TableRow key={coin.coin + coin.nertwork}>
+          <TableRow key={coin.coin + coin.network}>
             <TableCell className="font-medium">{coin.coin}</TableCell>
-            <TableCell>{coin.nertwork}</TableCell>
+            <TableCell>{coin.network}</TableCell>
             <TableCell>{coin.description}</TableCell>
             <TableCell className="text-right">{coin.totalAmount}</TableCell>
           </TableRow>

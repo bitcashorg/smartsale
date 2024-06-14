@@ -10,7 +10,7 @@ import {
   SelectValue
 } from '@/components/ui/select'
 import { useState } from 'react'
-import { TestnetUSDCred } from 'smartsale-contracts'
+import { TestnetMor } from 'smartsale-contracts'
 import { parseUnits } from 'viem'
 import { useAccount, useSwitchChain, useWriteContract } from 'wagmi'
 import { Input } from '../../ui/input'
@@ -24,24 +24,22 @@ export function WithdrawCard() {
   const withdraw = () => {
     if (!amount || !address) return
 
-    switchChain({ chainId: TestnetUSDCred.chainId })
+    switchChain({ chainId: TestnetMor.chainId })
     writeContract({
-      abi: TestnetUSDCred.abi,
-      address: TestnetUSDCred.address,
+      abi: TestnetMor.abi,
+      address: TestnetMor.address,
       functionName: 'burn',
-      args: [parseUnits(amount.toString(), TestnetUSDCred.decimals)],
-      chainId: TestnetUSDCred.chainId
+      args: [parseUnits(amount.toString(), TestnetMor.decimals)],
+      chainId: TestnetMor.chainId
     })
   }
-
-  // console.log('burn tokens state', other)
 
   return (
     <Card className="w-full rounded-xl bg-muted/50 p-4">
       <CardContent>
         <div className="flex flex-col space-y-4">
           <label htmlFor="withdraw" className="text-sm">
-            Convert to BITUSD
+            Convert to MOR
           </label>
           <div className="flex items-center justify-between">
             <div className="flex min-w-[40%] flex-col">
@@ -59,7 +57,7 @@ export function WithdrawCard() {
             <Select>
               {/* @ts-ignore */}
               <SelectTrigger id="currency-out">
-                <SelectValue placeholder="USDCred" />
+                <SelectValue placeholder="USDT" />
               </SelectTrigger>
               {/* @ts-ignore */}
               <SelectContent position="popper">
@@ -89,15 +87,11 @@ export function WithdrawCard() {
 
 const coins = [
   {
-    coin: 'USDCred',
-    nertwork: 'EOS EVM'
+    coin: 'USDT',
+    network: 'Arbitrum One'
+  },
+  {
+    coin: 'USDC',
+    network: 'Arbitrum One'
   }
-  // {
-  //   coin: 'EOS (gas)',
-  //   nertwork: 'EOS EVM'
-  // },
-  // {
-  //   coin: 'MBOTSPL',
-  //   nertwork: 'MBOTS Prelaunch Token'
-  // }
 ]

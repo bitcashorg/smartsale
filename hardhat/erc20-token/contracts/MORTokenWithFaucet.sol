@@ -1,17 +1,17 @@
 
 // SPDX-License-Identifier: MIT
-pragma solidity >=0.6.0 <0.8.0;
+pragma solidity >=0.6.0 <0.9.0;
 
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
-contract USDTTokenWithFaucet is ERC20 {
-    constructor(uint256 initialSupply) ERC20("USDT (launchpad)", "USDT") {
+contract MORTokenWithFaucet is ERC20 {
+    constructor(uint256 initialSupply) ERC20("MOR (launchpad)", "MOR") {
         _mint(msg.sender, initialSupply);
     }
 
-    // use 6 decimals
+    // use 18 decimals
     function decimals() public view virtual override returns (uint8) {
-        return 6;
+        return 18;
     }
 
     // Faucet function to distribute tokens

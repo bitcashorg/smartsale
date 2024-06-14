@@ -8,3 +8,4 @@ export * from "./eos-fake-bitusd";
 export * from "./eos-fake-usdt";
 export * from "./eos-usdt";
 export * from "./types";
+export * from "./testnet-mor"
