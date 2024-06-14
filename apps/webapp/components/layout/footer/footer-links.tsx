@@ -1,4 +1,6 @@
+import Link from 'next/link'
 import { NavSection, NavItem, navStruct } from '../nav-struct'
+import { IconBitlauncher } from '@/components/ui/icons'
 
 export function FooterLinks() {
   return (
@@ -8,6 +10,13 @@ export function FooterLinks() {
           <SectionComponent key={index} section={section} />
         ) : null
       )}
+
+      <Link href={`/`}>
+        <IconBitlauncher className="w-full" />
+        <p className="py-10 text-center paragraph">
+          Be Part Of The Intelligent Future.
+        </p>
+      </Link>
     </div>
   )
 }
@@ -17,9 +26,7 @@ const SectionComponent = ({ section }: { section: NavSection }) => (
     <h5 className={`font-bold`}>{section.label}</h5>
     {section.items && section.items.length > 0 ? (
       <LinksList links={section.items} />
-    ) : (
-      <p className="mt-4 text-sm">{section.description}</p>
-    )}
+    ) : null}
   </div>
 )
 

@@ -26,15 +26,17 @@ export const navStruct: NavStruct = {
           href: '/about/daos-dboard',
           description: 'Discover our DAOs and the decentralized dashboard.'
         },
+
+        {
+          label: 'Referral System',
+          href: '/about/referral-system',
+          description:
+            'Learn how our referral system can benefit you and your network.'
+        },
         {
           label: 'FAQ',
           href: '#faq',
           description: 'Frequently asked questions and their answers.'
-        },
-        {
-          label: 'Communities',
-          href: '/about/communities',
-          description: 'Join and participate in our various communities.'
         }
       ]
     },
@@ -42,6 +44,11 @@ export const navStruct: NavStruct = {
       label: 'Learn',
       main: true,
       items: [
+        {
+          label: 'How it works',
+          href: '/learn/how-it-works',
+          description: 'Simple explanation on how our system operates.'
+        },
         {
           label: 'Batch Auctions',
           href: '/learn/batch-auctions',
@@ -66,25 +73,17 @@ export const navStruct: NavStruct = {
           label: 'Media',
           href: '/learn/media',
           description: 'Explore our media resources and press releases.'
-        },
-        {
-          label: 'Developers',
-          href: '/learn/developers',
-          description: 'Resources and guides for developers.'
         }
       ]
     },
     { label: 'Whitepaper', href: '/whitepaper', main: true },
     {
-      label: 'Information',
+      label: 'Bitluancher',
       items: [
-        { label: 'Apply for IDO', href: '#' },
-        { label: 'Forum', href: '#' }
-      ]
-    },
-    {
-      label: 'Legal',
-      items: [
+        { label: 'Whitepaper', href: '/whitepaper' },
+        { label: 'BC Token', href: '/bc-token' },
+        { label: 'Solutions', href: '/solutions' },
+        { label: 'Product Calls', href: '/whitepaper' },
         {
           label: 'Privacy Policy',
           href: '/legal/privacy',
@@ -100,10 +99,34 @@ export const navStruct: NavStruct = {
       ]
     },
     {
-      label: 'Resources',
+      label: 'Developers',
       items: [
-        { label: 'Whitepaper', href: '/whitepaper' },
-        { label: 'Projects', href: '#' }
+        { label: 'Open Source', href: '#' },
+        {
+          label: 'Engineering Blog',
+          href: '/learn/developers'
+        },
+        {
+          label: 'Engineering Calls',
+          href: '/learn/developers'
+        },
+        {
+          label: 'Bounties',
+          href: '/learn/developers'
+        },
+        { label: 'Documentation', href: '/docs' },
+        { label: 'Screencasts', href: '#' }
+      ]
+    },
+    {
+      label: 'Communities',
+      items: [
+        { label: 'Discord', href: '/communities/discord' },
+        { label: 'Telegram Chat', href: '/communities/telegram-chat' },
+        { label: 'Telegram News', href: '/communities/telegram-news' },
+        { label: 'Twitter', href: '/communities/twitter' },
+        { label: 'YouTube', href: '/communities/youtube' },
+        { label: 'Instagram', href: '/communities/instagram' }
       ]
     }
   ]
