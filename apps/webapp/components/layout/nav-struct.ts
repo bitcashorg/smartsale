@@ -86,27 +86,16 @@ export const navStruct: NavStruct = {
       label: 'Legal',
       items: [
         {
-          label: 'Security',
-          href: '/legal/security',
-          description: 'Learn about our security practices and policies.'
-        },
-        {
           label: 'Privacy Policy',
-          href: '/legal/privacy-policy',
+          href: '/legal/privacy',
           description:
             'Read our privacy policy to understand how we handle your data.'
         },
         {
           label: 'Terms of Service',
-          href: '/legal/terms-of-service',
+          href: '/legal/terms',
           description:
             'Review the terms and conditions that govern the use of our services.'
-        },
-        {
-          label: 'Cookies Policy',
-          href: '/legal/cookies-policy',
-          description:
-            'Find out how we use cookies to improve your experience on our website.'
         }
       ]
     },
@@ -114,10 +103,7 @@ export const navStruct: NavStruct = {
       label: 'Resources',
       items: [
         { label: 'Whitepaper', href: '/whitepaper' },
-        { label: 'Projects', href: '#' },
-        { label: 'Portfolio', href: '#' },
-        { label: 'Dashboard', href: '#' },
-        { label: 'Quests', href: '#' }
+        { label: 'Projects', href: '#' }
       ]
     }
   ]
