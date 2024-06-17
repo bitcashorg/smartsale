@@ -2,11 +2,11 @@ import { BlogSections } from '@/components/routes/blog/sections'
 import { ArticlesSection } from '@/services/datocms'
 import { LangProp } from '@/types/routing.type'
 
-export function RecentArticles({ lang }: LangProp) {
+export function RecentAI({ lang }: LangProp) {
   return (
     <section>
       <h2 className="w-full h-32 pt-6 pb-10 leading-loose text-center heading2">
-        Recent Articles
+        AI Articles
       </h2>
       <BlogSections
         sections={[recentArcticles] as unknown as ArticlesSection[]}

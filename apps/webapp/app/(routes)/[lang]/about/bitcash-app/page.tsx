@@ -24,8 +24,8 @@ export default async function BitcashAppPage({ params }: CommonPageProps) {
 }
 
 const content: SolutionLandingPageContent = {
-  mainHeading: 'Buy Crypto, Pay Crypto.',
-  subHeading: 'The future of payments is here',
+  mainHeading: 'Bitcash: Buy Crypto, Pay Crypto.',
+  subHeading: 'The Future of Payments is Here',
   description:
     'Seamlessly buy and pay with cryptocurrencies using our secure and user-friendly platform.',
   features: [
