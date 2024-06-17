@@ -23,13 +23,13 @@ export function VideoStrip() {
                 key={item}
                 className="relative flex-shrink-0 w-40 group sm:w-48 md:w-56 lg:w-64"
               >
-                <img
+                {/* <img
                   src="/placeholder.svg"
                   alt={`Video ${item}`}
                   width={360}
                   height={240}
                   className="object-cover rounded-lg"
-                />
+                /> */}
                 <div className="absolute inset-0 flex items-center justify-center transition-opacity rounded-lg opacity-0 bg-black/50 group-hover:opacity-100">
                   <Button
                     variant="ghost"
