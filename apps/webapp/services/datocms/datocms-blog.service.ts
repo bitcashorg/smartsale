@@ -113,6 +113,46 @@ export async function getArticleSections(
 
   return sections
 }
+export async function getRecentArticleSections(
+  locale: SiteLocale
+): Promise<ArticlesSection[]> {
+  const {
+    bitcoinData,
+    cryptoData,
+    investingData,
+    startupData,
+    aiData,
+    newsData,
+    bitcashData,
+    aiResearchData
+  } = await getBlogData(locale)
+
+  const recentsArticles = [
+    {
+      name: 'Bitcoin',
+      slug: 'bitcoin',
+      articles: (bitcoinData?.slice(0) || []) as BlogArticleRecord[]
+    },
+    {
+      name: 'Crypto',
+      slug: 'crypto',
+      articles: (cryptoData?.slice(0) || []) as BlogArticleRecord[]
+    },
+    {
+      name: 'Startup',
+      slug: 'startup',
+      articles: (startupData?.slice(0) || []) as BlogArticleRecord[]
+    },
+
+    {
+      name: 'Investment',
+      slug: 'investing',
+      articles: (investingData?.slice(0) || []) as BlogArticleRecord[]
+    }
+  ]
+
+  return recentsArticles
+}
 
 export async function getBlogCategoryLandingData(
   locale: SiteLocale,

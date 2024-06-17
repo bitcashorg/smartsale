@@ -15,8 +15,8 @@ export async function generateMetadata(
 ): Promise<Metadata> {
   const { data: article } = await loadArticle(params.slug, params.lang)
 
-  console.log('====================  article  ==========================')
-  console.log(JSON.stringify(article))
+  // console.log('====================  article  ==========================')
+  // console.log(JSON.stringify(article))
 
   return {
     title: article?.title,

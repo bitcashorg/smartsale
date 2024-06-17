@@ -11,6 +11,7 @@ import { SessionButtonLoader } from '../session/session-button'
 import { MobileNavLoader } from './mobile-nav'
 import { LangSelector } from './lang-selector/lang-selector'
 import { LangProp } from '@/types/routing.type'
+import { Navigation } from './new-nav'
 
 const isProduction = process.env.NODE_ENV === 'production'
 
@@ -25,7 +26,8 @@ export function Header({ lang }: LangProp) {
         </div>
 
         <div className="hidden md:flex md:gap-3 md:pl-4 lg:ml-[-1px] lg:gap-10">
-          <NavLinks lang={lang} />
+          <Navigation lang={lang} />
+          {/* <NavLinks lang={lang} /> */}
         </div>
 
         {/* Desktop action buttons */}

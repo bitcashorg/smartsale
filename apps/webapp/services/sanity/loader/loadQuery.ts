@@ -37,7 +37,7 @@ queryStore.setServerClient(serverClient)
 const usingCdn = serverClient.config().useCdn
 // Automatically handle draft mode
 export const loadQuery = ((query, params = {}, options = {}) => {
-  console.log('😎 load query', params)
+  // console.log('😎 load query', params)
   const {
     perspective = draftMode().isEnabled ? 'previewDrafts' : 'published'
   } = options
