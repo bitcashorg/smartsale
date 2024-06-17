@@ -5,10 +5,57 @@ import { LangProp } from '@/types/routing.type'
 
 export async function RecentArticles({ lang }: LangProp) {
   const youtubeData = await fetchPublicYouTubePlaylist(
-    'PL6BKGVqekhB_R8wjPFN-p6dGkcIy_bM1D' // standups
+    'PL6BKGVqekhB_R8wjPFN-p6dGkcIy_bM1D', // standups
+    4
+  )
+  const youtubeData2 = await fetchPublicYouTubePlaylist(
+    'PL6BKGVqekhB_3OhFY_zpJwmaaV6sLxLwJ', // standups
+    4
   )
 
   const recentArcticles = [
+    {
+      name: 'Shorts',
+      slug: 'shorts',
+      articles: youtubeData2.map(video => ({
+        id: video.id,
+        topics: ['Shorts', video.snippet.channelTitle],
+        title: video.snippet.title,
+        slug: video.snippet.title.toLowerCase().replace(/ /g, '-'),
+        authorName: video.snippet.channelTitle,
+        authorPicture: {
+          url: video.snippet.thumbnails.high.url
+        },
+        _publishedAt: video.snippet.publishedAt,
+        description: video.snippet.description,
+        thumbnail: {
+          url: video.snippet.thumbnails.high.url
+        },
+        contentBlock: [],
+        seo: null
+      }))
+    },
+    {
+      name: 'Media',
+      slug: 'media',
+      articles: youtubeData.map(video => ({
+        id: video.id,
+        topics: ['Video', video.snippet.channelTitle],
+        title: video.snippet.title,
+        slug: video.snippet.title.toLowerCase().replace(/ /g, '-'),
+        authorName: video.snippet.channelTitle,
+        authorPicture: {
+          url: video.snippet.thumbnails.high.url
+        },
+        _publishedAt: video.snippet.publishedAt,
+        description: video.snippet.description,
+        thumbnail: {
+          url: video.snippet.thumbnails.high.url
+        },
+        contentBlock: [],
+        seo: null
+      }))
+    },
     {
       name: 'Recent',
       slug: 'ai',
@@ -86,34 +133,13 @@ export async function RecentArticles({ lang }: LangProp) {
           seo: null
         }
       ]
-    },
-    {
-      name: 'Media',
-      slug: 'media',
-      articles: youtubeData.map(video => ({
-        id: video.id,
-        topics: ['Video', video.snippet.channelTitle],
-        title: video.snippet.title,
-        slug: video.snippet.title.toLowerCase().replace(/ /g, '-'),
-        authorName: video.snippet.channelTitle,
-        authorPicture: {
-          url: video.snippet.thumbnails.high.url
-        },
-        _publishedAt: video.snippet.publishedAt,
-        description: video.snippet.description,
-        thumbnail: {
-          url: video.snippet.thumbnails.high.url
-        },
-        contentBlock: [],
-        seo: null
-      }))
     }
   ]
 
   return (
     <section>
       <h2 className="w-full h-32 pt-6 pb-10 leading-loose text-center heading2">
-        Recent Articles and Media
+        Recent Media and Articles
       </h2>
       <BlogSections
         sections={recentArcticles as unknown as ArticlesSection[]}
