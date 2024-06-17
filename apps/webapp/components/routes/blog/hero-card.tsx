@@ -4,10 +4,12 @@ import { BlogArticleRecord } from '@/services/datocms'
 import Image from 'next/image'
 import { Card, CardContent, CardFooter } from '@/components/ui/card'
 import { isMobile } from 'react-device-detect'
+import { LazyImage } from './lazy-image'
 
 export const HeroArticleCard = ({
   post,
-  sectionSlug
+  sectionSlug,
+  selectedTopic
 }: HeroArticleCardProps) => {
   return (
     <Card className="min-h-space-465 md:max-h-space-465 group list-none overflow-hidden">
@@ -28,6 +30,14 @@ export const HeroArticleCard = ({
             className="bg-zoom transition-all ease-in-out"
             fill
           />
+          {/* <LazyImage
+            src={post?.thumbnail?.url}
+            alt={post?.title}
+            loading="lazy"
+            className="bg-zoom h-full w-full"
+            imgWrapperClassName="w-full max-w-space-400 h-space-424 border border-black rounded-images  overflow-hidden"
+            fill
+          /> */}
         </figure>
 
         <CardContent className="mt-5">
@@ -89,4 +99,5 @@ export const HeroArticleCard = ({
 export interface HeroArticleCardProps {
   post: BlogArticleRecord
   sectionSlug: string
+  selectedTopic: string | null
 }

@@ -112,26 +112,6 @@ const cards = [
     tag: 'startup',
     link: '#'
   }
-  // ,
-  // {
-  //   title: 'Mastering Cash Flow: The Ultimate Guide for Startup Founders',
-  //   description:
-  //     'Master cash flow with our ultimate guide for startup founders. Learn strategies to maintain liquidity, manage finances, and ensure business stability.',
-  //   link: '#'
-  // },
-  // {
-  //   title: 'Master Moneybags',
-  //   description: 'Oct 04, 2023 · 9 min read',
-  //   tag: 'investing',
-  //   link: '#'
-  // },
-  // {
-  //   title:
-  //     'Mastering Portfolio Management: The Art of Diversification, Asset Allocation...',
-  //   description:
-  //     'Optimize Your Portfolio: Learn the Art of Diversification, Asset Allocation, and Rebalancing for Successful Portfolio Management.',
-  //   link: '#'
-  // }
 ]
 
 // Types moved to the bottom

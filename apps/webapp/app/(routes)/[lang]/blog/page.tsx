@@ -8,11 +8,9 @@ import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
 import { generateMetadataFromSEO } from '@/lib/seo'
 import { BlogSections } from '@/components/routes/blog/sections'
 import { BlogHero } from '@/components/routes/blog/blog-hero'
-
 import { notFound } from 'next/navigation'
-// import { BlogHero } from '@/components/routes/blog/blog-hero'
-// import { HeroCard } from '@/components/routes/blog/hero-main-card'
-// import { HeroSubCard } from '@/components/routes/blog/hero-subcard'
+import { HeroArticleCard } from '@/components/routes/blog/hero-card'
+import { HeroSubCard } from '@/components/routes/blog/hero-subcard'
 
 export default async function BlogPage({ params }: BlogPageProps) {
   const sections = await getArticleSections(params.lang)
@@ -29,9 +27,9 @@ export default async function BlogPage({ params }: BlogPageProps) {
       <h1 className="heading flex justify-center py-10 md:py-24">
         AI, Crypto & Startup Ventures
       </h1>
-      <BlogHero />
-      {/* <section className="container mt-10 flex w-full flex-col gap-5 lg:flex-row">
-        <HeroCard
+      {/* <BlogHero /> */}
+      <section className="container mt-10 flex w-full flex-col gap-5 lg:flex-row">
+        <HeroArticleCard
           sectionSlug={singlePost?.slug}
           post={singlePost?.articles[0]}
           selectedTopic={null}
@@ -49,7 +47,7 @@ export default async function BlogPage({ params }: BlogPageProps) {
               )
           )}
         </ul>
-      </section> */}
+      </section>
       <BlogSections sections={sections} lang={'en'} />
     </main>
   )
