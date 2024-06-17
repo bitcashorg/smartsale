@@ -11,7 +11,7 @@ export function FAQ({ lang }: LangProp) {
     <section className="w-full py-12">
       <div className="container grid gap-8 px-4 md:px-6">
         <div className="text-center">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+          <h2 className="tracking-tighter heading2">
             Frequently Asked Questions
           </h2>
           <p className="mx-auto mt-4 max-w-[600px] md:text-xl">
