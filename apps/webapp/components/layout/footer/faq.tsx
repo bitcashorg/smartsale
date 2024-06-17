@@ -11,7 +11,7 @@ export function FAQ({ lang }: LangProp) {
     <section className="w-full py-12">
       <div className="container grid gap-8 px-4 md:px-6">
         <div className="text-center">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+          <h2 className="font-extrabold tracking-tight sm:text-4xl">
             Frequently Asked Questions
           </h2>
           <p className="mx-auto mt-4 max-w-[600px] md:text-xl">
@@ -22,7 +22,7 @@ export function FAQ({ lang }: LangProp) {
         <Accordion className="w-full" collapsible type="single">
           {content.questions.map((item, index) => (
             <AccordionItem key={index} value={`item-${index}`}>
-              <AccordionTrigger className="flex items-center justify-between w-full px-6 py-4 font-medium text-left transition-color focus:outline-none">
+              <AccordionTrigger className="transition-color flex w-full items-center justify-between px-6 py-4 text-left font-medium focus:outline-none">
                 {item.question}
               </AccordionTrigger>
               <AccordionContent className="px-6 py-4">

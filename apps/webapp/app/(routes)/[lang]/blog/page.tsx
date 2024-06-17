@@ -18,9 +18,9 @@ export default async function BlogPage({ params }: BlogPageProps) {
   const sections = await getArticleSections(params.lang)
   return (
     <main>
-      <h1 className="heading flex justify-center py-10 md:py-24">
+      <h2 className="flex justify-center py-10 text-3xl font-extrabold tracking-tight sm:text-4xl md:py-24">
         AI, Crypto & Startup Ventures
-      </h1>
+      </h2>
       <BlogHero />
       <BlogSections sections={sections} lang={'en'} />
     </main>

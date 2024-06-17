@@ -5,7 +5,7 @@ import { LangProp } from '@/types/routing.type'
 export function RecentArticles({ lang }: LangProp) {
   return (
     <section>
-      <h2 className="w-full h-32 pt-6 pb-10 leading-loose text-center heading2">
+      <h2 className="heading2 h-32 w-full pb-10 pt-6 text-center font-extrabold leading-loose tracking-tight">
         Recent Articles
       </h2>
       <BlogSections
