@@ -7,13 +7,13 @@ import { LangProp } from '@/types/routing.type'
 
 export function BlogSections({ sections, lang }: BlogSectionsProps) {
   return (
-    <div className="flex flex-col items-center justify-start w-full py-10">
+    <div className="flex w-full flex-col items-center justify-start py-10">
       {sections.map(
         section =>
           section?.articles?.length > 0 && (
             <section className="container mb-10" key={section.name}>
-              <div className="flex items-center justify-between text-xl mb-space-32">
-                <span className="font-semibold text-black sub-2-lg dark:text-white">
+              <div className="mb-space-32 flex items-center justify-between text-xl">
+                <span className="sub-2-lg font-semibold text-black dark:text-white">
                   / {section.name}
                 </span>
                 <Link

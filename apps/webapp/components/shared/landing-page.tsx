@@ -6,7 +6,7 @@ export function LandingPage({ content }: LandingPageProps) {
       <div className="container px-4 md:px-6">
         <div className="grid items-center gap-6 lg:grid-cols-2 lg:gap-12">
           <div className="space-y-4">
-            <div className="inline-block px-3 py-1 text-sm bg-gray-100 rounded-lg dark:bg-gray-800">
+            <div className="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800">
               {content.title}
             </div>
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
@@ -17,7 +17,7 @@ export function LandingPage({ content }: LandingPageProps) {
             </p>
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
               {content.sections.map(section => (
-                <div className="space-y-2">
+                <div className="space-y-2" key={section.subHeader}>
                   <h3 className="text-lg font-bold">{section.subHeader}</h3>
                   <p className="text-gray-500 dark:text-gray-400">
                     {section.text}
@@ -28,7 +28,7 @@ export function LandingPage({ content }: LandingPageProps) {
           </div>
           <Image
             alt="Vetting Process"
-            className="object-cover object-center mx-auto overflow-hidden aspect-square rounded-xl sm:w-full"
+            className="mx-auto aspect-square overflow-hidden rounded-xl object-cover object-center sm:w-full"
             height={550}
             src="/images/placeholder.svg"
             width={550}
