@@ -6,7 +6,7 @@ import { FileTextIcon, MessageCircleIcon, VoteIcon } from 'lucide-react'
 import {
   LandingPage2,
   LandingPageContent2
-} from '@/components/shared/landing-page2'
+} from '@/components/_wip/landing-page2'
 
 export default async function BitcashAppPage({ params }: CommonPageProps) {
   const dict = await getDictionary(params.lang)

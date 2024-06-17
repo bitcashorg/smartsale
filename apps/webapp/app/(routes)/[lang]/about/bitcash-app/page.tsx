@@ -12,7 +12,7 @@ import {
 import {
   SolutionLandingPageContent,
   SolutionLandingPage
-} from '@/components/shared/solution-landing-page'
+} from '@/components/_wip/solution-landing-page'
 
 export default async function BitcashAppPage({ params }: CommonPageProps) {
   const dict = await getDictionary(params.lang)

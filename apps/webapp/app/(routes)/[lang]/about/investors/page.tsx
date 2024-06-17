@@ -2,10 +2,7 @@ import React from 'react'
 import { Metadata } from 'next'
 import { CommonPageProps } from '@/types/routing.type'
 import { getDictionary } from '@/dictionaries'
-import {
-  LandingPage,
-  LandingPageContent
-} from '@/components/shared/landing-page'
+import { LandingPage, LandingPageContent } from '@/components/_wip/landing-page'
 
 export default async function InvestorsPage({ params }: CommonPageProps) {
   const dict = await getDictionary(params.lang)

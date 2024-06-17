@@ -4,6 +4,7 @@ import { FAQ } from './faq'
 import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
 import dynamic from 'next/dynamic'
 import { getDictionary } from '@/dictionaries'
+import { ShortVideoStrip } from '@/components/layout/footer/short-video'
 
 const DynamicNewsletter = dynamic(() => import('./newsletter') as any, {
   ssr: false
@@ -20,6 +21,7 @@ export default async function Footer({
       <Participate lang={params.lang} dict={dict} />
       <FAQ lang={params.lang} />
       <RecentArticles lang={params.lang} />
+
       <DynamicNewsletter />
     </footer>
   )
