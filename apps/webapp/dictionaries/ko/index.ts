@@ -6,6 +6,7 @@ import { whitepaper } from './whitepaper'
 import { terms } from './terms'
 import auction from './auction'
 import footer from './footer'
+import faq from './faq'
 
 export default {
   home,
@@ -15,5 +16,6 @@ export default {
   security,
   terms, 
   auction,
-  footer
+  footer,
+  faq 
 } as const

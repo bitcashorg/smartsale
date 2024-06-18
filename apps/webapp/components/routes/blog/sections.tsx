@@ -19,7 +19,7 @@ export function BlogSections({ sections, lang }: BlogSectionsProps) {
                 <Link
                   href={`/${lang}/blog/${section.slug}`}
                   className={cn(
-                    'focus-within:!text-primary-200 hover:!text-primary-200 flex items-center align-middle text-black dark:text-white'
+                    'flex items-center align-middle text-black focus-within:!text-primary-200 hover:!text-primary-200 dark:text-white'
                   )}
                 >
                   {section.name} articles
@@ -34,6 +34,7 @@ export function BlogSections({ sections, lang }: BlogSectionsProps) {
                     sectionSlug={section.slug}
                     key={post.id}
                     lang={lang}
+                    meta={true}
                   />
                 ))}
               </ul>

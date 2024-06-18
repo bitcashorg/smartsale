@@ -18,7 +18,7 @@ export default async function Footer({
   return (
     <footer className="container flex flex-col flex-1 w-full gap-32 px-4 py-16 overflow-hidden">
       <Participate lang={params.lang} dict={dict} />
-      <FAQ lang={params.lang} />
+      <FAQ lang={params.lang} dict={dict}/>
       <RecentArticles lang={params.lang} />
       <DynamicNewsletter />
     </footer>
