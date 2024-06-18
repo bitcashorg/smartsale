@@ -4,6 +4,7 @@ import { FAQ } from './faq'
 import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
 import dynamic from 'next/dynamic'
 import { getDictionary } from '@/dictionaries'
+import { LearnSection } from '@/components/_wip/learn-section'
 
 const DynamicNewsletter = dynamic(() => import('./newsletter') as any, {
   ssr: false
@@ -18,7 +19,8 @@ export default async function Footer({
   return (
     <footer className="container flex flex-col flex-1 w-full gap-32 px-4 py-16 overflow-hidden">
       <Participate lang={params.lang} dict={dict} />
-      <FAQ lang={params.lang} dict={dict}/>
+      <FAQ lang={params.lang} dict={dict} />
+      <LearnSection />
       <RecentArticles lang={params.lang} />
       <DynamicNewsletter />
     </footer>
