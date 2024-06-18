@@ -13,8 +13,6 @@ import { LangSelector } from './lang-selector/lang-selector'
 import { LangProp } from '@/types/routing.type'
 import { Navigation } from './new-nav'
 
-const isProduction = process.env.NODE_ENV === 'production'
-
 export function Header({ lang }: LangProp) {
   return (
     <div className="sticky top-0 z-50 flex h-16 bg-background">
@@ -36,7 +34,7 @@ export function Header({ lang }: LangProp) {
           <Suspense fallback={<Button>Login</Button>}>
             <DynamicSessionButton />
           </Suspense>
-          {!isProduction ? <LangSelector lang={lang} /> : null}
+          <LangSelector lang={lang} />
         </div>
 
         {/* mobile navbar icon */}
