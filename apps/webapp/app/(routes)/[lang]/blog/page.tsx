@@ -24,16 +24,16 @@ export default async function BlogPage({ params }: BlogPageProps) {
 
   return (
     <main>
-      <h1 className="heading flex justify-center py-10 md:py-24">
+      <h1 className="flex justify-center py-10 heading md:py-24">
         AI, Crypto & Startup Ventures
       </h1>
-      <section className="container flex w-full justify-between py-10 lg:flex-row">
+      {/* <section className="container flex justify-between w-full py-10 lg:flex-row">
         <HeroArticleCard
           sectionSlug={singlePost?.slug}
           post={singlePost?.articles[0]}
           selectedTopic={null}
         />
-        <ul className="flex w-1/2 flex-col space-y-10">
+        <ul className="flex flex-col w-1/2 space-y-10">
           {subHeroPosts?.map(
             (post, index) =>
               post.articles.length > 0 && (
@@ -46,7 +46,7 @@ export default async function BlogPage({ params }: BlogPageProps) {
               )
           )}
         </ul>
-      </section>
+      </section> */}
       <BlogSections sections={sections} lang={'en'} />
     </main>
   )

@@ -15,7 +15,7 @@ export const ArticleCard = ({
   return (
     <Card className="overflow-hidden list-none group md:max-h-space-465">
       <Link
-        href={`${lang}/blog/${sectionSlug}/${post.slug}`}
+        href={`/blog/${sectionSlug}/${post.slug}`}
         className="flex flex-col w-full h-full transition-all lg:p-space-20 lg:hover:border-primary-300 lg:hover:shadow-f1 lg:focus:border-primary-300 lg:focus:shadow-f1"
       >
         <figure className="relative h-[216px] w-full">
