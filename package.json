@@ -24,9 +24,7 @@
       "**/cbw-sdk",
       "**/cbw-sdk/**",
       "**/wagmi",
-      "**/wagmi/**",
-      "**/sanity",
-      "**/sanity/**"
+      "**/wagmi/**"
     ]
   },
   "packageManager": "bun@1.1.9",
