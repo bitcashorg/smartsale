@@ -176,7 +176,7 @@ export default function Newsletter({ lang }: LangProp) {
           </div>
         </div>
 
-        {/* <div className="flex h-[230px] w-full flex-col flex-wrap items-center justify-evenly rounded-b-3xl bg-primary px-10 md:flex-row md:justify-between">
+        <div className="flex h-[230px] w-full flex-col flex-wrap items-center justify-evenly rounded-b-3xl bg-primary px-10 md:flex-row md:justify-between">
           <Link href={`/${lang}`} className="flex">
             <IconBitlauncher className="w-40 h-8 md:h-11 md:w-56" />
           </Link>
@@ -193,9 +193,9 @@ export default function Newsletter({ lang }: LangProp) {
             >
               Terms & Privacy Policy
             </Link>
-          </div> 
-        </div>*/}
-        <FooterLinks />
+          </div>
+        </div>
+        {/* <FooterLinks /> */}
       </section>
     </GoogleReCaptchaProvider>
   )

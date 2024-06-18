@@ -26,8 +26,8 @@ export function Header({ lang }: LangProp) {
         </div>
 
         <div className="hidden md:flex md:gap-3 md:pl-4 lg:ml-[-1px] lg:gap-10">
-          <Navigation lang={lang} />
-          {/* <NavLinks lang={lang} /> */}
+          {/* <Navigation lang={lang} /> */}
+          <NavLinks lang={lang} />
         </div>
 
         {/* Desktop action buttons */}
