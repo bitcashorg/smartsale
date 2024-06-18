@@ -17,9 +17,9 @@ export default async function Footer({
 }) {
   const dict = await getDictionary(params.lang)
   return (
-    <footer className="container flex flex-col flex-1 w-full gap-32 px-4 py-16 overflow-hidden">
+    <footer className="container flex flex-col flex-1 w-full px-4 overflow-hidden">
       <Participate lang={params.lang} dict={dict} />
-      <FAQ lang={params.lang} dict={dict} />
+      <FAQ dict={dict} />
       <LearnSection />
       <RecentArticles lang={params.lang} />
       <DynamicNewsletter />

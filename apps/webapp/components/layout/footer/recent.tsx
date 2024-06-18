@@ -2,11 +2,12 @@ import { BlogSections } from '@/components/routes/blog/sections'
 import { ArticlesSection } from '@/services/datocms'
 import { fetchPublicYouTubePlaylist } from '@/services/youtube'
 import { LangProp } from '@/types/routing.type'
-import { ShortVideoStrip } from '@/components/layout/footer/short-video'
+// import { ShortVideoStrip } from '@/components/layout/footer/short-video'
 import {
   MediaSection,
   MediaSections
 } from '@/components/layout/footer/media-section'
+import { Section } from '@/components/shared/section'
 
 export async function RecentArticles({ lang }: LangProp) {
   const latestProductCalls = await fetchPublicYouTubePlaylist(
@@ -117,18 +118,15 @@ export async function RecentArticles({ lang }: LangProp) {
   ]
 
   return (
-    <>
-      <section>
-        <h2 className="w-full h-32 pt-6 pb-10 leading-loose text-center heading2">
-          Recent Media and Articles
-        </h2>
-        <MediaSections sections={recentMedia} lang={lang} />
-        <BlogSections
-          sections={recentArcticles as unknown as ArticlesSection[]}
-          lang={lang}
-        />
-      </section>
-      <ShortVideoStrip videos={latestShorts} />
-    </>
+    <Section heading="Recent Media and Articles">
+      <MediaSections sections={recentMedia} lang={lang} />
+      <BlogSections
+        sections={recentArcticles as unknown as ArticlesSection[]}
+        lang={lang}
+      />
+    </Section>
   )
+  {
+    /* <ShortVideoStrip videos={latestShorts} /> */
+  }
 }

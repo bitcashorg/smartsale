@@ -7,14 +7,11 @@ import { cn } from '@/lib/utils'
 import Link from 'next/link'
 import React from 'react'
 import { BitcashAccessButton } from '@/components/layout/header/bitcash-access'
+import { Section } from '@/components/shared/section'
 
 export default function Participate({ lang, dict }: ParticipateProps) {
   return (
-    <section className="relative z-10 flex flex-col pb-10 align-center">
-      <h2 className="w-full h-32 pt-6 pb-10 font-bold leading-loose text-center heading2">
-        {dict.footer.stepsInfo}
-      </h2>
-
+    <Section heading={dict.footer.stepsInfo}>
       <div
         key="steps-info-title"
         className="flex flex-col items-center gap-14 lg:flex-row lg:items-stretch lg:justify-between"
@@ -60,7 +57,7 @@ export default function Participate({ lang, dict }: ParticipateProps) {
           )
         )}
       </div>
-    </section>
+    </Section>
   )
 }
 

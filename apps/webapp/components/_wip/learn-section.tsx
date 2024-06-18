@@ -1,16 +1,10 @@
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
 import Image from 'next/image'
+import { Section } from '../shared/section'
 
 export function LearnSection() {
   return (
-    <div className="p-8 text-white">
-      <div className="flex flex-col items-center mb-20">
-        <h2 className="text-center heading2">{content.sectionTitle}</h2>
-        {/* <a href="#" className="text-blue-400">
-          Explore our Blog &gt;
-        </a> */}
-      </div>
-
+    <Section heading={content.sectionTitle}>
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
         <Card className="relative p-8">
           <div className="relative w-full h-64 mb-4">
@@ -66,7 +60,7 @@ export function LearnSection() {
           </Card>
         </div>
       </div>
-    </div>
+    </Section>
   )
 }
 

@@ -10,7 +10,7 @@ export default async function IndexPage({ params: { lang } }: IndexPageProps) {
   const projects = getProjects(dict)
 
   return (
-    <div className="container !px-4 py-10 md:py-24">
+    <div className="container !px-4 pt-10 md:pt-24">
       <HomeHero projects={projects} dict={dict} />
       <WhyChooseUs />
       <Features />
