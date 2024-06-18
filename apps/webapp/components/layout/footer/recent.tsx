@@ -66,7 +66,8 @@ export async function RecentArticles({ lang }: LangProp) {
         {
           id: 'SpdLuuYEQgW8rwSHNzhmxA',
           topics: ['Apps'],
-          title: '',
+          title:
+            'Masterbots: Elevating AI Beyond ChatGPT with Social Sharing and User-Friendly Innovation',
           slug: 'masterbots-elevating-ai-beyond-chatgpt-with-social-sharing-and-user-friendly-inno',
           authorName: 'Jun Dam',
           authorPicture: {
@@ -84,7 +85,8 @@ export async function RecentArticles({ lang }: LangProp) {
         {
           id: '190259319',
           topics: ['Summary', 'LLM', 'Training'],
-          title: '',
+          title:
+            'Latent Space Podcast 8-16-23 Summary: The Mathematics of Training LLMs with Quentin Anthony',
           slug: 'latent-space-podcast-8-16-23-summary-the-mathematics-of-training-llms-with-que',
           authorName: 'Prof. Otto Nomos',
           authorPicture: {
@@ -102,7 +104,8 @@ export async function RecentArticles({ lang }: LangProp) {
         {
           id: '190259129',
           topics: ['LLM', 'Hardware', 'Summary', 'Edge'],
-          title: '',
+          title:
+            'Latent Space Podcast 8-10-23 Summary: LLMs Everywhere - Running 70B Models in Browsers',
           slug: 'latent-space-podcast-8-10-23-summary-llms-everywhere-running-70b-models-in-browse',
           authorName: 'Prof. Otto Nomos',
           authorPicture: {
@@ -120,7 +123,8 @@ export async function RecentArticles({ lang }: LangProp) {
         {
           id: '190259087',
           topics: ['Summary', 'LLM', 'Code', 'Open Source', 'Small Models'],
-          title: '',
+          title:
+            'Latent Space Podcast 8-4-23 Summary: Latent Space x AI Breakdown - Crossover Podcast',
           slug: 'latent-space-podcast-8-4-23-summary-latent-space-x-ai-breakdown-crossover-pod',
           authorName: 'Prof. Otto Nomos',
           authorPicture: {
