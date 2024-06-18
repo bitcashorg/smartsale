@@ -10,7 +10,7 @@ export const ArticleCard = ({ post, sectionSlug, lang }: ArticleCardProps) => {
   return (
     <Card className="min-h-space-465 md:max-h-space-465 group list-none overflow-hidden">
       <Link
-        href={`${lang}/blog/${sectionSlug}/${post.slug}`}
+        href={`/blog/${sectionSlug}/${post.slug}`}
         className="lg:hover:shadow-f1 lg:focus:shadow-f1 lg:hover:border-primary-300 lg:focus:border-primary-300 lg:p-space-20 flex h-full w-full flex-col transition-all"
       >
         <figure className="relative h-[216px] w-full">
