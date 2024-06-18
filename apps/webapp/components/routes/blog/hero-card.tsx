@@ -20,9 +20,9 @@ export const HeroArticleCard = ({
     <div className="list-none">
       <Link
         href={`/blog/${sectionSlug}/${post?.slug}`}
-        className="rounded-images flex w-full flex-col transition-all"
+        className="flex w-full flex-col transition-all"
       >
-        <figure className="h-space-424 relative w-full">
+        <figure className="rounded-images h-space-424 relative w-full overflow-hidden">
           <Image
             src={post?.thumbnail?.url}
             alt={post.title}
@@ -31,7 +31,7 @@ export const HeroArticleCard = ({
                 ? { loading: 'lazy' }
                 : { priority: true }
               : { priority: true })}
-            className="bg-zoom max-w-space-400 rounded-images overflow-hidden border border-black"
+            className="bg-zoom max-w-space-500 transition-all ease-in-out"
             fill
           />
         </figure>

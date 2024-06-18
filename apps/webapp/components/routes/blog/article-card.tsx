@@ -13,7 +13,7 @@ export const ArticleCard = ({ post, sectionSlug, lang }: ArticleCardProps) => {
         href={`/blog/${sectionSlug}/${post.slug}`}
         className="lg:hover:shadow-f1 lg:focus:shadow-f1 lg:hover:border-primary-300 lg:focus:border-primary-300 lg:p-space-20 flex h-full w-full flex-col transition-all"
       >
-        <figure className="relative h-[216px] w-full">
+        <figure className="rounded-images relative h-[216px] w-full overflow-hidden">
           <Image
             src={post?.thumbnail?.url}
             alt={post.title}
