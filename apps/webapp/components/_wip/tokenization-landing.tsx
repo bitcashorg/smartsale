@@ -20,7 +20,7 @@ export function TokenizationLanding() {
                 </p>
               </div>
             </div>
-            <div className="grid items-center max-w-5xl gap-6 py-12 mx-auto lg:grid-cols-2 lg:gap-12">
+            <div className="grid items-center gap-6 py-12 mx-auto lg:grid-cols-2 lg:gap-12">
               <div className="flex flex-col justify-center space-y-4">
                 <ul className="grid gap-6">
                   {section.details.map((detail, detailIndex) => (
@@ -36,7 +36,7 @@ export function TokenizationLanding() {
                 </ul>
               </div>
               <img
-                src="/placeholder.svg"
+                src="/images/placeholder.svg"
                 alt={`${section.title}`}
                 className="object-cover object-center mx-auto overflow-hidden aspect-video rounded-xl sm:w-full lg:order-last"
               />
@@ -92,7 +92,7 @@ const sections: SectionContent[] = [
           'Tokenization simplifies data storage, processing, and sharing, allowing businesses to focus on their core operations.'
       }
     ],
-    bgClass: 'bg-gray-100 dark:bg-gray-800'
+    bgClass: ''
   },
   {
     title: 'Tokenization Use Cases',
