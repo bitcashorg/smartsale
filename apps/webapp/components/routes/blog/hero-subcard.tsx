@@ -20,17 +20,17 @@ export const HeroSubCard = ({
   const { locale } = useParams()
 
   return (
-    <li className="text-black bg-white rounded-cards" id={post.slug}>
+    <li className="rounded-cards bg-white text-black" id={post.slug}>
       <Link
         href={`/blog/${sectionSlug}/${post.slug}`}
-        className="flex flex-col justify-between space-y-3 transition-all border-2 border-black rounded-cards px-space-15 py-space-20 hover:border-2 hover:border-primary-300 hover:shadow-f1 focus:border-2 focus:border-primary-300 focus:shadow-f1 dark:border-white md:flex-row md:space-y-0"
+        className="flex flex-col justify-between space-y-3 rounded-cards border-2 border-black px-space-15 py-space-20 transition-all hover:border-2 hover:border-primary-300 hover:shadow-f1 focus:border-2 focus:border-primary-300 focus:shadow-f1 dark:border-white md:flex-row md:space-y-0"
         onClick={event =>
           (event.target as HTMLElement).tagName === 'BUTTON' &&
           event.preventDefault()
         }
       >
         <div className="flex flex-col items-start justify-start space-y-space-6">
-          <span className="font-bold font-futura-pt-heavy text-h-text-c text-h-text dark:text-white">
+          <span className="font-futura-pt-heavy text-h-text-c text-h-text font-bold dark:text-white">
             {post.authorName}
           </span>
           <span className="font-futura-pt-book text-h-text-c text-h-text dark:text-white">
@@ -56,7 +56,7 @@ export const HeroSubCard = ({
         <div className="flex max-w-[366px] flex-col items-start justify-start space-y-space-10">
           <h1
             title={post?.title}
-            className="font-bold text-black font-futura-pt-bold truncate_text truncate_text--3-lines text-sub-2-lg dark:text-white"
+            className="font-futura-pt-bold truncate_text truncate_text--3-lines text-sub-2-lg font-bold text-black dark:text-white"
           >
             {post?.title}
           </h1>
@@ -64,8 +64,8 @@ export const HeroSubCard = ({
             {post?.description}
           </p>
           <Button
-            // variant="tertiary"
-            className="z-10 px-0 font-bold text-black underline font-futura-pt-heavy text-h-text dark:text-white"
+            variant="tertiary"
+            className="font-futura-pt-heavy z-10 px-0 text-h-text font-bold text-black underline dark:text-white"
             onClick={() => router.push(`/blog/${sectionSlug}/${post.slug}`)}
           >
             Learn More
