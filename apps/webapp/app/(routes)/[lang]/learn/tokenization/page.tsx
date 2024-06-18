@@ -2,12 +2,13 @@ import React from 'react'
 import { Metadata } from 'next'
 import { CommonPageProps } from '@/types/routing.type'
 import { getDictionary } from '@/dictionaries'
+import { TokenizationLanding } from '@/components/_wip/tokenization-landing'
 
 export default async function TokenizationPage({ params }: CommonPageProps) {
   const dict = await getDictionary(params.lang)
   return (
-    <div className="content-container !py-10 px-7 md:px-3 md:py-24">
-      <h1 className="heading">Tokenization Page</h1>
+    <div className="!py-10 px-7 md:px-3 md:py-24">
+      <TokenizationLanding />
     </div>
   )
 }

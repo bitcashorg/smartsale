@@ -77,7 +77,7 @@ export function CategoryComponent({ params, sections }: BlogCategoryPageProps) {
                       : `/${params.lang}/blog/${category}?topic=${section.topic}`
                   }
                   className={cn(
-                    'focus-within:!text-primary-200 hover:!text-primary-200 text-black dark:text-white'
+                    'text-black focus-within:!text-primary-200 hover:!text-primary-200 dark:text-white'
                   )}
                   shallow
                 >
@@ -95,6 +95,7 @@ export function CategoryComponent({ params, sections }: BlogCategoryPageProps) {
                     sectionSlug={category}
                     key={index}
                     lang={params.lang}
+                    meta={true}
                   />
                 ))}
               </ul>

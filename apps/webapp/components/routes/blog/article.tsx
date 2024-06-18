@@ -52,16 +52,16 @@ export function BlogPage({
               {blogContent.title}
               <br className="hidden md:inline" />
             </h1>
-            <sub className="mt-2 heading3 md:text-sub-1-lg text-neutral-700 dark:text-neutral-400 md:mt-8">
+            <sub className="mt-2 heading3 text-neutral-700 dark:text-neutral-400 md:mt-8 md:text-sub-1-lg">
               {blogContent.description}
             </sub>
           </header>
 
           <div className="flex flex-col order-2 mt-2 space-y-3 md:mt-5">
-            <span className="font-bold font-futura-pt-heavy text-h-text text-h-text-c dark:text-white">
+            <span className="font-bold font-futura-pt-heavy text-h-text-c text-h-text dark:text-white">
               {blogContent.authorName}
             </span>
-            <span className="font-futura-pt-book text-h-text text-h-text-c dark:text-white">
+            <span className="font-futura-pt-book text-h-text-c text-h-text dark:text-white">
               {new Date(blogContent._publishedAt).toLocaleDateString('en-US', {
                 month: 'short',
                 day: '2-digit',
@@ -225,6 +225,7 @@ export function BlogPage({
                   sectionSlug={category}
                   key={post.id}
                   lang={params.lang}
+                  meta={true}
                 />
               ))}
           </ul>

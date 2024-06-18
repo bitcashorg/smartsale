@@ -6,21 +6,20 @@ import {
 } from '@/components/ui/accordion'
 import { LangProp } from '@/types/routing.type'
 
-export function FAQ({ lang }: LangProp) {
+export function FAQ({ lang, dict }: FAQProps) {
   return (
     <section className="w-full py-12">
       <div className="container grid gap-8 px-4 md:px-6">
         <div className="text-center">
           <h2 className="tracking-tighter heading2">
-            Frequently Asked Questions
+            {dict.faq.frequentlyAsked}
           </h2>
           <p className="mx-auto mt-4 max-w-[600px] md:text-xl">
-            Explore the most common inquiries about BitLauncher and its impact
-            on AI startups.
+           {dict.faq.text}
           </p>
         </div>
         <Accordion className="w-full" collapsible type="single">
-          {content.questions.map((item, index) => (
+          {dict.faq.questions.map((item:{ question: string; answer: string }, index:number) => (
             <AccordionItem key={index} value={`item-${index}`}>
               <AccordionTrigger className="flex items-center justify-between w-full px-6 py-4 font-medium text-left transition-color focus:outline-none">
                 {item.question}
@@ -67,4 +66,8 @@ const content = {
         "One example is Masterbots.ai, an initiative focused on crafting precise language and multimodal models for distinct regional dialects and specific industry needs. With the support of BitLauncher, Masterbots.ai has been able to secure funding and grow within the AI ecosystem, demonstrating the platform's effectiveness in fostering innovation and collaboration."
     }
   ]
+}
+
+export interface FAQProps extends LangProp {
+  dict: any
 }
