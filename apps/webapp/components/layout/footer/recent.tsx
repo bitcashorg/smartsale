@@ -3,62 +3,35 @@ import { ArticlesSection } from '@/services/datocms'
 import { fetchPublicYouTubePlaylist } from '@/services/youtube'
 import { LangProp } from '@/types/routing.type'
 import { ShortVideoStrip } from '@/components/layout/footer/short-video'
+import {
+  MediaSection,
+  MediaSections
+} from '@/components/layout/footer/media-section'
 
 export async function RecentArticles({ lang }: LangProp) {
-  const youtubeData = await fetchPublicYouTubePlaylist(
-    'PL6BKGVqekhB_R8wjPFN-p6dGkcIy_bM1D', // shorts
+  const latestProductCalls = await fetchPublicYouTubePlaylist(
+    'PL6BKGVqekhB_R8wjPFN-p6dGkcIy_bM1D',
     4
   )
-  const youtubeData2 = await fetchPublicYouTubePlaylist(
-    'PL6BKGVqekhB_3OhFY_zpJwmaaV6sLxLwJ', // standups
+  const latestShorts = await fetchPublicYouTubePlaylist(
+    'PL6BKGVqekhB_3OhFY_zpJwmaaV6sLxLwJ',
     8
   )
 
-  // console.log(youtubeData[0].snippet.thumbnails)
-
-  const recentArcticles = [
+  const recentMedia: MediaSection[] = [
     {
       name: 'Shorts',
       slug: 'shorts',
-      articles: youtubeData2.map(video => ({
-        id: video.id,
-        topics: ['Shorts', video.snippet.channelTitle],
-        title: video.snippet.title,
-        slug: video.snippet.title.toLowerCase().replace(/ /g, '-'),
-        authorName: video.snippet.channelTitle,
-        authorPicture: {
-          url: video.snippet.thumbnails.high.url
-        },
-        _publishedAt: video.snippet.publishedAt,
-        description: video.snippet.description,
-        thumbnail: {
-          url: video.snippet.thumbnails.high.url
-        },
-        contentBlock: [],
-        seo: null
-      }))
+      videos: latestShorts
     },
     {
-      name: 'Media',
-      slug: 'media',
-      articles: youtubeData.map(video => ({
-        id: video.id,
-        topics: ['Video', video.snippet.channelTitle],
-        title: video.snippet.title,
-        slug: video.snippet.title.toLowerCase().replace(/ /g, '-'),
-        authorName: video.snippet.channelTitle,
-        authorPicture: {
-          url: video.snippet.thumbnails.high.url
-        },
-        _publishedAt: video.snippet.publishedAt,
-        description: video.snippet.description,
-        thumbnail: {
-          url: video.snippet.thumbnails.high.url
-        },
-        contentBlock: [],
-        seo: null
-      }))
-    },
+      name: 'Product Calls',
+      slug: 'product',
+      videos: latestProductCalls
+    }
+  ]
+
+  const recentArcticles = [
     {
       name: 'Recent',
       slug: 'ai',
@@ -149,12 +122,13 @@ export async function RecentArticles({ lang }: LangProp) {
         <h2 className="w-full h-32 pt-6 pb-10 leading-loose text-center heading2">
           Recent Media and Articles
         </h2>
+        <MediaSections sections={recentMedia} lang={lang} />
         <BlogSections
           sections={recentArcticles as unknown as ArticlesSection[]}
           lang={lang}
         />
       </section>
-      <ShortVideoStrip videos={youtubeData2} />
+      <ShortVideoStrip videos={latestShorts} />
     </>
   )
 }

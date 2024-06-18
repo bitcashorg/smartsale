@@ -1,9 +1,7 @@
-import { YouTubeEmbed } from '@next/third-parties/google'
 import {
   Dialog,
   DialogContent,
   DialogDescription,
-  DialogFooter,
   DialogHeader,
   DialogTitle,
   DialogTrigger
