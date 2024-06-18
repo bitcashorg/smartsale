@@ -14,7 +14,7 @@ export async function RecentArticles({ lang }: LangProp) {
     12
   )
 
-  console.log(youtubeData[0].snippet.thumbnails)
+  // console.log(youtubeData[0].snippet.thumbnails)
 
   const recentArcticles = [
     {
