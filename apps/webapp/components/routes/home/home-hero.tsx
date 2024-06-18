@@ -1,7 +1,7 @@
 import { Project } from '@/lib/projects'
 import { AuctionCard } from './auction-card'
 
-export function Upcoming({
+export function HomeHero({
   projects,
   dict
 }: {
