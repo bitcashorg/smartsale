@@ -33,7 +33,7 @@ export const ArticleCard = ({
           />
         </figure>
 
-        <CardContent className="p-0 mt-5">
+        <CardContent className="p-0 my-10">
           <h4
             title={post?.title}
             className="mb-0 text-center text-white truncate_text truncate_text--4-lines text-sub-2-md lg:block"

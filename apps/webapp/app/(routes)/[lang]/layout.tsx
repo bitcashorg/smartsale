@@ -1,5 +1,5 @@
 import '@/app/globals.css'
-import  Footer from '@/components/layout/footer/footer'
+import Footer from '@/components/layout/footer/footer'
 import { Header } from '@/components/layout/header/header'
 import { Providers } from '@/components/layout/providers'
 import { GlobalStoreProvider } from '@/hooks/use-global-store'

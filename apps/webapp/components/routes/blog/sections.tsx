@@ -34,7 +34,7 @@ export function BlogSections({ sections, lang }: BlogSectionsProps) {
                     sectionSlug={section.slug}
                     key={post.id}
                     lang={lang}
-                    meta={false}
+                    meta={true}
                   />
                 ))}
               </ul>
