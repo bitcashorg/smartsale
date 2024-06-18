@@ -1,32 +1,28 @@
 import { Card } from '@/components/ui/card'
 import * as Icons from 'lucide-react'
+import { Section } from '@/components/shared/section'
 
 export function WhyChooseUs() {
   return (
-    <section className="w-full pt-12 md:pt-24 lg:pt-[200px]">
-      <div className="flex flex-col items-center justify-center space-y-8 text-center">
-        <div className="space-y-2">
-          <h2 className="tracking-tighter heading2">Why Choose Us</h2>
-          <p className="max-w-[700px] text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-            Discover the unique features that set us apart from the rest.
-          </p>
-        </div>
-        <div className="grid w-full grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
-          {features.map(feature => {
-            const IconComponent = Icons[feature.icon] as React.ElementType
-            return (
-              <Card className="flex flex-col items-center justify-center p-6 space-y-4">
-                <IconComponent className="w-12 h-12 text-gray-900 dark:text-gray-50" />
-                <h3 className="text-lg font-semibold">{feature.title}</h3>
-                <p className="text-center text-gray-500 parragraph dark:text-gray-400">
-                  {feature.description}
-                </p>
-              </Card>
-            )
-          })}
-        </div>
+    <Section
+      heading="Why Choose Us"
+      subheading="Discover the unique features that set us apart from the rest."
+    >
+      <div className="grid w-full grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+        {features.map(feature => {
+          const IconComponent = Icons[feature.icon] as React.ElementType
+          return (
+            <Card className="flex flex-col items-center justify-center p-6 space-y-4">
+              <IconComponent className="w-12 h-12 text-gray-900 dark:text-gray-50" />
+              <h3 className="text-lg font-semibold">{feature.title}</h3>
+              <p className="text-center text-gray-500 parragraph dark:text-gray-400">
+                {feature.description}
+              </p>
+            </Card>
+          )
+        })}
       </div>
-    </section>
+    </Section>
   )
 }
 

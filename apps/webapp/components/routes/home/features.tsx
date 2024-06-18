@@ -1,21 +1,17 @@
+import { Section } from '@/components/shared/section'
 import React from 'react'
 
 export function Features() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32">
-      <div className="flex flex-col items-center justify-center space-y-4 text-center">
-        <div className="space-y-2">
-          <h2 className="tracking-tighter heading2">Features</h2>
-          <p className="dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-            Discover the key capabilities that make Bitlauncher the premier
-            platform for decentralized finance.
-          </p>
-        </div>
-      </div>
+    <Section
+      heading="Features"
+      subheading="Discover the key capabilities that make Bitlauncher the premier
+            platform for decentralized finance."
+    >
       {featuresContent.map((content, index) => (
         <div
           key={index}
-          className="grid items-center gap-6 py-12 mx-auto lg:grid-cols-2 lg:gap-12"
+          className="grid items-center gap-6 mx-auto lg:grid-cols-2 lg:gap-12"
         >
           <div
             className={`flex flex-col justify-center space-y-4 ${index % 2 === 1 ? 'lg:order-last' : ''}`}
@@ -39,7 +35,7 @@ export function Features() {
           />
         </div>
       ))}
-    </section>
+    </Section>
   )
 }
 
