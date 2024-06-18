@@ -1,8 +1,6 @@
 import { getProjects } from '@/lib/projects'
 import { getDictionary } from '../../../dictionaries'
 import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
-import { WhyChooseUs } from '@/components/routes/home/why-choose-us'
-import { Features } from '@/components/routes/home/features'
 import { HomeHero } from '@/components/routes/home/home-hero'
 
 export default async function IndexPage({ params: { lang } }: IndexPageProps) {
@@ -12,8 +10,6 @@ export default async function IndexPage({ params: { lang } }: IndexPageProps) {
   return (
     <div className="container !px-4 pt-10 md:pt-24">
       <HomeHero projects={projects} dict={dict} />
-      <WhyChooseUs />
-      <Features />
     </div>
   )
 }
