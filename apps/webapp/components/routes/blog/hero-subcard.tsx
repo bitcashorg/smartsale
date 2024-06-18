@@ -4,7 +4,7 @@ import { readingTime } from '@/lib/blog'
 import { BlogArticleRecord } from '~/services/datocms'
 import { useParams, useRouter } from 'next/navigation'
 import { Button } from '@/components/ui/button'
-import { Tag } from 'lucide-react'
+import { Tag } from '@/components/ui/tag'
 
 export interface Subcardprops {
   post: BlogArticleRecord
@@ -20,10 +20,10 @@ export const HeroSubCard = ({
   const { locale } = useParams()
 
   return (
-    <li className="list-none" id={post.slug}>
+    <li className="rounded-cards bg-white text-black" id={post.slug}>
       <Link
         href={`/blog/${sectionSlug}/${post.slug}`}
-        className="md:space-x-space-76 hover:shadow-f1 focus:shadow-f1 hover:border-primary-300 focus:border-primary-300 rounded-cards py-space-20 px-space-15 flex flex-col justify-between space-y-3 border-2 border-black transition-all hover:border-2 focus:border-2 dark:border-white md:flex-row md:space-y-0"
+        className="hover:shadow-f1 focus:shadow-f1 hover:border-primary-300 focus:border-primary-300 rounded-cards py-space-20 px-space-15 flex flex-col justify-between space-y-3 border-2 border-black transition-all hover:border-2 focus:border-2 dark:border-white md:flex-row md:space-y-0"
         onClick={event =>
           (event.target as HTMLElement).tagName === 'BUTTON' &&
           event.preventDefault()
@@ -41,7 +41,7 @@ export const HeroSubCard = ({
             })}{' '}
             ∙ {readingTime(post)} min read{' '}
           </span>
-          {/* <Tag
+          <Tag
             className="mt-space-6"
             title={selectedTopic ? selectedTopic : sectionSlug}
             onClick={() =>
@@ -51,7 +51,7 @@ export const HeroSubCard = ({
                   : `/blog/${sectionSlug}`
               )
             }
-          /> */}
+          />
         </div>
         <div className="space-y-space-10 flex max-w-[366px] flex-col items-start justify-start">
           <h1
@@ -64,6 +64,7 @@ export const HeroSubCard = ({
             {post?.description}
           </p>
           <Button
+            variant="tertiary"
             className="text-h-text font-futura-pt-heavy z-10 px-0 font-bold text-black underline dark:text-white"
             onClick={() => router.push(`/blog/${sectionSlug}/${post.slug}`)}
           >

@@ -27,14 +27,13 @@ export default async function BlogPage({ params }: BlogPageProps) {
       <h1 className="heading flex justify-center py-10 md:py-24">
         AI, Crypto & Startup Ventures
       </h1>
-      {/* <BlogHero /> */}
-      <section className="container mt-10 flex w-full flex-col gap-5 lg:flex-row">
+      <section className="container flex w-full justify-between py-10 lg:flex-row">
         <HeroArticleCard
           sectionSlug={singlePost?.slug}
           post={singlePost?.articles[0]}
           selectedTopic={null}
         />
-        <ul className="flex flex-col space-y-20">
+        <ul className="flex w-1/2 flex-col space-y-10">
           {subHeroPosts?.map(
             (post, index) =>
               post.articles.length > 0 && (
