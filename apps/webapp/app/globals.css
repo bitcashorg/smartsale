@@ -172,7 +172,33 @@ input[type='number'] {
   background: url('/images/newsletter-bg.webp') center center no-repeat;
   background-size: cover;
 }
+.truncate_text {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
+.truncate_text--3-lines {
+  white-space: inherit;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.truncate_text--4-lines {
+  white-space: inherit;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.truncate_text--5-lines {
+  white-space: inherit;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
 /** Scrollbar Styling */
 
 .scrollbar {

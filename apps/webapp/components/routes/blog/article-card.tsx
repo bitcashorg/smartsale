@@ -31,7 +31,7 @@ export const ArticleCard = ({ post, sectionSlug, lang }: ArticleCardProps) => {
         <CardContent className="mt-5">
           <h1
             title={post?.title}
-            className="font-futura-pt-bold text-sub-2-md truncate_text truncate_text--4-lines hidden font-bold text-black dark:text-white lg:block"
+            className="font-futura-pt-bold truncate_text md:truncate_text--4-lines truncate_text--5-lines font-bold text-black dark:text-white lg:block"
           >
             {post.title}
           </h1>
@@ -50,7 +50,7 @@ export const ArticleCard = ({ post, sectionSlug, lang }: ArticleCardProps) => {
               />
             </div>
           </div>
-          <div className="gap-y-space-4 flex flex-col">
+          <div className="gap-y-space-4 p-y-1 flex flex-col">
             <span className="text-h-text font-futura-pt-heavy text-h-text-c font-bold dark:text-white">
               {post.authorName}
             </span>
