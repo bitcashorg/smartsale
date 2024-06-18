@@ -45,7 +45,7 @@ export function MediaCard({ video }: MediaCardProps) {
 
         <div className="flex min-h-[70vh] w-full">
           <iframe
-            src={`https://www.youtube.com/embed/${video.id}?autoplay=1&rel=0`}
+            src={`https://www.youtube.com/embed/${video.snippet.resourceId.videoId}?autoplay=1&rel=0`}
             frameBorder="0"
             allowFullScreen
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
