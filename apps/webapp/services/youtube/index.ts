@@ -3,8 +3,9 @@ export async function fetchPublicYouTubePlaylist(
   maxResults = 50 // Maximum results per request allowed by YouTube API
 ): Promise<YouTubePlaylistItem[]> {
   const apiKey = process.env.YOUTUBE_API_KEY
-  const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${playlistId}&key=${apiKey}&maxResults=${maxResults}`
 
+  const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${playlistId}&key=${apiKey}&maxResults=${maxResults}`
+  console.log('YOUTUBE_API_KEY', { apiKey, playlistId, maxResults })
   try {
     const response = await fetch(url)
     if (!response.ok) {
