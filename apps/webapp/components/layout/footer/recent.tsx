@@ -11,7 +11,7 @@ export async function RecentArticles({ lang }: LangProp) {
   )
   const youtubeData2 = await fetchPublicYouTubePlaylist(
     'PL6BKGVqekhB_3OhFY_zpJwmaaV6sLxLwJ', // standups
-    12
+    8
   )
 
   // console.log(youtubeData[0].snippet.thumbnails)
