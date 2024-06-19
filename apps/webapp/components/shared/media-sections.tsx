@@ -27,7 +27,7 @@ export function MediaSections({ sections, lang }: MediaSectionsProps) {
                 </Link>
               </div>
 
-              <ul className="grid-cols-auto-dense grid w-full grid-cols-[repeat(auto-fill,minmax(250px,1fr))] flex-col gap-20 py-5 sm:flex-wrap md:gap-5">
+              <ul className="grid-cols-auto-dense grid w-full grid-cols-[repeat(auto-fill,minmax(250px,1fr))] flex-col gap-5 py-5 sm:flex-wrap">
                 {section?.videos?.map(video => (
                   <MediaCard video={video} key={video.id} lang={lang} />
                 ))}

@@ -17,7 +17,7 @@ export function MediaCard({ video }: MediaCardProps) {
       <DialogTrigger asChild>
         <Card className="p-0 overflow-hidden list-none bg-transparent cursor-pointer group border-muted md:max-h-space-465">
           <div className="m-3">
-            <figure className="relative h-[200px] w-full overflow-hidden rounded-md">
+            <figure className="relative h-[215px] w-full overflow-hidden rounded-md">
               <Image
                 src={video.snippet.thumbnails.high.url}
                 alt={video.snippet.title}

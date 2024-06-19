@@ -7,6 +7,7 @@ import { getDictionary } from '@/dictionaries'
 import { LearnSection } from '@/components/_wip/learn-section'
 import { WhyChooseUs } from '@/components/routes/home/why-choose-us'
 import { Features } from '@/components/routes/home/features'
+import { Card } from '@/components/ui/card'
 
 const DynamicNewsletter = dynamic(() => import('./newsletter') as any, {
   ssr: false

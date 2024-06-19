@@ -35,12 +35,11 @@ export function HomeHero({
         key="upcoming-auctions-description-container"
       >
         {projects.map((item, index) => (
-          <div
+          <AuctionCard
             key={`upcoming-auctions-item-${index}`}
-            className="box-border justify-center border size-full rounded-xl border-card/30 bg-card backdrop-blur-lg"
-          >
-            <AuctionCard project={item} dict={dict} />
-          </div>
+            project={item}
+            dict={dict}
+          />
         ))}
       </div>
     </section>
