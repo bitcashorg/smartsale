@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { BlogArticleRecord } from '@/services/datocms'
 import Image from 'next/image'
 import { Card, CardContent, CardFooter } from '@/components/ui/card'
-import { isMobile } from 'react-device-detect'
+// import { isMobile } from 'react-device-detect'
 import { LangProp } from '@/types/routing.type'
 
 export const ArticleCard = ({
@@ -16,13 +16,24 @@ export const ArticleCard = ({
     post.title ||
     post.slug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase())
   return (
-    <Card className="p-0 overflow-hidden list-none group md:max-h-space-465">
+    <Card className="p-0 overflow-hidden list-none bg-transparent group border-muted md:max-h-space-465">
       <Link
         href={`/blog/${sectionSlug}/${post.slug}`}
         className="flex flex-col w-full h-full transition-all"
       >
         <div className="m-3">
           <figure className="relative h-[216px] w-full overflow-hidden rounded-md">
+            <Image
+              src={post?.thumbnail?.url}
+              alt={title}
+              sizes="(max-width: 768px) 350px, (max-width: 1200px) 800px, 600px"
+              loading="lazy"
+              className="transition-all ease-in-out bg-zoom"
+              fill
+            />
+          </figure>
+          {/* 
+               <figure className="relative h-[216px] w-full overflow-hidden rounded-md">
             <Image
               src={post?.thumbnail?.url}
               alt={title}
@@ -35,13 +46,13 @@ export const ArticleCard = ({
                   : { priority: true }
                 : { priority: true })}
               className="m-0 transition-all ease-in-out rounded-md bg-zoom"
-            />
-          </figure>
+            /> 
+          </figure>*/}
         </div>
         <CardContent>
-          <h4 className="pt-1 mb-0 text-center text-white truncate_text truncate_text--4-lines text-sub-2-md lg:block">
+          <p className="pt-3 mb-0 overflow-hidden text-center text-white truncate_text truncate_text--3-lines text-sub-2-sm">
             {title}
-          </h4>
+          </p>
         </CardContent>
         {meta ? (
           <CardFooter className="flex flex-wrap items-center justify-between text-left md:flex-nowrap">
@@ -58,10 +69,10 @@ export const ArticleCard = ({
               </div>
             </div>
             <div className="flex flex-col flex-grow gap-y-2 md:gap-y-1">
-              <span className="font-bold font-futura-pt-heavy text-h-text-c text-h-text dark:text-white">
+              <span className="font-bold text-h-text-c text-h-text dark:text-white">
                 {post.authorName}
               </span>
-              <span className="font-futura-pt-book text-h-text-c text-h-text dark:text-white">
+              <span className="text-sm dark:text-white">
                 {new Date(post._publishedAt).toLocaleDateString(lang, {
                   month: 'short',
                   day: '2-digit',
