@@ -52,7 +52,7 @@ export function BlogPage({
               {blogContent.title}
               <br className="hidden md:inline" />
             </h1>
-            <sub className="mt-2 heading3 text-neutral-700 dark:text-neutral-400 md:mt-8 md:text-sub-1-lg">
+            <sub className="mt-2 text-sub-1-md text-neutral-400 md:mt-8">
               {blogContent.description}
             </sub>
           </header>
