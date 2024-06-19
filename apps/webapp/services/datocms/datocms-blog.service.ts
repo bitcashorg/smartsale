@@ -72,22 +72,22 @@ export async function getArticleSections(
     {
       name: 'AI',
       slug: 'ai',
-      articles: (aiData?.slice(0, 4) || []) as BlogArticleRecord[]
+      articles: (aiData?.slice(0, 5) || []) as BlogArticleRecord[]
     },
     {
       name: 'AI Research',
       slug: 'ai-research',
-      articles: (aiResearchData?.slice(0, 4) || []) as BlogArticleRecord[]
+      articles: (aiResearchData?.slice(0, 5) || []) as BlogArticleRecord[]
     },
     {
       name: 'News',
       slug: 'news',
-      articles: (newsData?.slice(0, 4) || []) as BlogArticleRecord[]
+      articles: (newsData?.slice(0, 5) || []) as BlogArticleRecord[]
     },
     {
       name: 'Bitcash',
       slug: 'bitcash',
-      articles: (bitcashData?.slice(0, 4) || []) as BlogArticleRecord[]
+      articles: (bitcashData?.slice(0, 5) || []) as BlogArticleRecord[]
     },
     {
       name: 'Startup',
