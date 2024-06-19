@@ -28,13 +28,10 @@ export function MediaCard({ video }: MediaCardProps) {
               />
             </figure>
           </div>
-          <CardContent className="mt-5">
-            <h4
-              title={video.snippet.title}
-              className="mb-0 text-center text-white truncate_text truncate_text--4-lines text-sub-2-md"
-            >
+          <CardContent className="mt-2">
+            <p className="pt-3 mb-0 overflow-hidden text-center text-white truncate_text truncate_text--3-lines text-sub-2-sm">
               {video.snippet.title}
-            </h4>
+            </p>
           </CardContent>
         </Card>
       </DialogTrigger>

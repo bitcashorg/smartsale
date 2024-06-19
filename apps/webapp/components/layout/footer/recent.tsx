@@ -3,10 +3,7 @@ import { ArticlesSection } from '@/services/datocms'
 import { fetchPublicYouTubePlaylist } from '@/services/youtube'
 import { LangProp } from '@/types/routing.type'
 // import { ShortVideoStrip } from '@/components/layout/footer/short-video'
-import {
-  MediaSection,
-  MediaSections
-} from '@/components/layout/footer/media-section'
+import { MediaSection, MediaSections } from '@/components/shared/media-sections'
 import { Section } from '@/components/shared/section'
 
 export async function RecentArticles({ lang }: LangProp) {
@@ -21,14 +18,20 @@ export async function RecentArticles({ lang }: LangProp) {
 
   const recentMedia: MediaSection[] = [
     {
-      name: 'Shorts',
-      slug: 'shorts',
-      videos: latestShorts
+      title: 'Shorts',
+      videos: latestShorts,
+      link: {
+        href: '',
+        label: 'More Shorts'
+      }
     },
     {
-      name: 'Product Calls',
-      slug: 'product',
-      videos: latestProductCalls
+      title: 'Product Calls',
+      videos: latestProductCalls,
+      link: {
+        href: '',
+        label: 'Product Calls'
+      }
     }
   ]
 

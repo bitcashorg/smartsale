@@ -1,29 +1,28 @@
 import { YouTubePlaylistItem } from '@/services/youtube/index'
 import { MediaCard } from './media-card'
 import { LucideIcons } from '@/components/routes/blog/lucide-icons'
-
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
 import { LangProp } from '@/types/routing.type'
 
 export function MediaSections({ sections, lang }: MediaSectionsProps) {
   return (
-    <div className="flex flex-col items-center justify-start w-full py-10">
+    <div className="flex flex-col items-center justify-start w-full">
       {sections.map(
         section =>
           section?.videos?.length > 0 && (
-            <section className="container mb-10" key={section.name}>
+            <section className="container mt-10" key={section.title}>
               <div className="flex items-center justify-between text-xl mb-space-32">
                 <span className="font-semibold text-black sub-2-lg dark:text-white">
-                  / {section.name}
+                  / {section.title}
                 </span>
                 <Link
-                  href={`/`}
+                  href={section.link.href}
                   className={cn(
                     'flex items-center align-middle text-black focus-within:!text-primary-200 hover:!text-primary-200 dark:text-white'
                   )}
                 >
-                  {section.name} videos
+                  {section.link.label}
                   <LucideIcons.chevronRight className="h-4 w-7" />
                 </Link>
               </div>
@@ -46,7 +45,10 @@ export interface MediaSectionsProps extends LangProp {
 }
 
 export type MediaSection = {
-  name: string
-  slug: string
+  title: string
   videos: YouTubePlaylistItem[]
+  link: {
+    href: string
+    label: string
+  }
 }
