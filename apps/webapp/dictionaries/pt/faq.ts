@@ -3,32 +3,70 @@ export default {
     text: 'Explore as dúvidas mais comuns sobre o BitLauncher e seu impacto nas startups de IA.',
     questions: [
         {
-          question: 'O que é BitLauncher e como ele oferece suporte a startups de IA?',
+          question:
+            'Navegando pela paisagem do nosso Launchpad',
           answer:
-            'BitLauncher é uma plataforma projetada para capacitar startups de IA ao abordar desafios críticos como financiamento, sustentabilidade e alcance global. Ele fornece uma plataforma global para garantir financiamento necessário através de uma comunidade de investidores globais, promovendo modelos sustentáveis de código aberto e defendendo o crescimento estratégico entre startups de IA. A plataforma utiliza a infraestrutura Web3 para ferramentas financeiras personalizadas e sistemas de pagamento, democratizando o acesso a recursos, financiamento e mercados.'
+            "Esta seção aborda as perguntas mais frequentes sobre nosso lançador (launchpad), sua venda de tokens associada e a visão abrangente do projeto, oferecendo clareza e insights sobre nossa missão de revolucionar a interseção entre criptomoedas e inteligência artificial."
         },
         {
           question:
-            'Como o BitLauncher garante a descoberta de preços justos para leilões de tokens?',
+            'Qual é o objetivo principal da barra de lançamento?',
           answer:
-            'BitLauncher utiliza leilões em lotes, um mecanismo que combina as ordens limitadas de compradores e vendedores com o mesmo preço de compensação para todos os participantes. Este método garante uma descoberta justa de preços ao reduzir guerras de lances e custos excessivos com gás, proporcionando um processo de leilão transparente e eficiente. Leilões em lotes são particularmente importantes para equipes descentralizadas que necessitam de distribuições justas de tokens.'
+            "O lançador foi projetado para capacitar startups de IA fornecendo uma plataforma para tokenização e acesso a um pool global de contribuintes de capital, facilitando financiamento e organização mais fáceis através do uso inovador de tecnologia DAO e criptomoedas."
         },
         {
           question:
-            'O que torna o BitLauncher diferente de outras plataformas de leilão?',
+            'Como funciona a venda de tokens?',
           answer:
-            "Ao contrário de algumas soluções de leilão que dependem de um processo centralizado de curadoria, BitLauncher é sem permissão, permitindo que qualquer projeto ou comunidade Ethereum conduza leilões em lotes descentralizados de forma segura e eficiente. O contrato inteligente de código aberto do BitLauncher permite que projetos criem rapidamente seus próprios leilões justos, garantindo descoberta transparente e justa de preços."
-        },
-        {
-          question: 'Investidores de fora dos EUA podem participar da plataforma BitLauncher?',
-          answer:
-            'Sim, o BitLauncher elimina as barreiras para investidores não americanos ao fornecer uma plataforma global que traz projetos de IA de alta qualidade para uma base diversificada de investidores. Essa inclusividade garante que a inovação não seja limitada geograficamente, permitindo que uma gama mais ampla de investidores participe no financiamento de startups de IA.'
+            "Nossa venda de tokens opera como um leilão por lotes, garantindo um mecanismo justo de descoberta de preço que beneficia tanto os contribuintes de capital quanto as startups. Tokens são emitidos com base em valorações de mercado atuais, permitindo oportunidades equitativas de contribuição de capital enquanto fomentam o crescimento e agregam valor à organização."
         },
         {
           question:
-            'Qual é um exemplo de um projeto que se beneficiou do BitLauncher?',
+            'Quem pode participar da venda de tokens?',
           answer:
-            "Um exemplo é o Masterbots.ai, uma iniciativa focada na criação de modelos linguísticos precisos e multimodais para dialetos regionais distintos e necessidades específicas da indústria. Com o apoio do BitLauncher, o Masterbots.ai conseguiu garantir financiamento e crescer dentro do ecossistema de IA, demonstrando a eficácia da plataforma em promover a inovação e a colaboração."
-        }
+            "A venda de tokens está aberta a uma audiência global, com restrições específicas que excluem participantes dos EUA e de países sancionados pelos EUA para cumprir padrões regulatórios e garantir a participação mais ampla possível mantendo a integridade legal."
+        },
+        {
+          question:
+            'O que diferencia este projeto de outros ICOs ou vendas de tokens?',
+          answer:
+            "Nosso projeto tem um foco único no setor de IA, utilizando um modelo de tokenômica de mint-and-burn que espelha o modelo de acionistas, enfatizando crescimento sustentável, transparência e engajamento comunitário no ecossistema de startups de tecnologia."
+        },
+        {
+          question:
+            'Como os fundos arrecadados com a venda de tokens serão usados?',
+          answer:
+            "Os fundos da venda de tokens são primariamente alocados para o desenvolvimento adicional e marketing do lançador e carteira, além da criação da cadeia L1 sem fins lucrativos e sem pré-mineração baseada na tecnologia Antelope, visando a distribuição mais justa de tokens e contribuindo para o crescimento e sustentabilidade do ecossistema."
+        },
+        {
+          question:
+            'Como a barra de lançamento garante conformidade regulatória e segurança?',
+          answer:
+            "Adotamos uma abordagem proativa para conformidade regulatória, incluindo restrições de usuário, políticas KYC e AML, e conformidade com leis de proteção de dados, além de implementar medidas robustas de segurança como criptografia de ponta a ponta e auditorias de segurança regulares."
+        },
+        {
+          question:
+            'Qual suporte o launchpad oferece às startups?',
+          answer:
+            "Além do financiamento, o lançador oferece às startups acesso a uma rede de recursos, incluindo orientação em gestão de negócios, marketing e desenvolvimento, junto com ferramentas para processamento eficiente de pagamentos e gestão organizacional através da tecnologia DAO."
+        },
+        {
+          question:
+            'Como as startups e os contribuintes de capital podem se beneficiar com a participação na plataforma de lançamento?',
+          answer:
+            "Startups ganham acesso a capital, recursos e uma comunidade global, aumentando seu potencial de crescimento e alcance de mercado. Contribuintes de capital se beneficiam do acesso antecipado a projetos inovadores de IA com alto potencial de crescimento, contribuindo para um portfólio de contribuição de capital diversificado e prospectivo."
+        },
+        {
+          question:
+            'Como o projeto contribui para as comunidades mais amplas de IA e criptomoedas?',
+          answer:
+            "Ao facilitar o crescimento e desenvolvimento de startups de IA dentro do framework cripto, nosso projeto contribui para o avanço da tecnologia, encoraja práticas de negócios éticas e sustentáveis, e fomenta uma comunidade de inovação na interseção desses dois campos dinâmicos."
+        },
+        {
+          question:
+            'Onde posso encontrar mais informações ou participar?',
+          answer:
+            "Para informações mais detalhadas, atualizações e para se juntar à nossa comunidade, visite nosso site oficial, participe de nossos canais de mídia social e assine nossa newsletter. Damos as boas-vindas a todos interessados em contribuir ou participar do futuro de IA e criptomoedas através do nosso lançador. Linktree: https://linktr.ee/bitlauncher, Twitter: @bitcashorg / @bitlauncherai, Blog: https://blog.bitcash.org/, Discord: https://discord.gg/eJCfx4JAqY, Youtube: https://www.youtube.com/@bitcashorg, Telegram: https://t.me/bitcash_org. Através destas perguntas frequentes, nosso objetivo é abordar as questões centrais sobre nosso projeto, elucidando nosso compromisso com inovação, transparência e empoderamento da comunidade nos cenários em evolução de IA e criptomoedas."
+        },
       ]
 }as const
