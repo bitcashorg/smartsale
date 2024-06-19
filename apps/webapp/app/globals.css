@@ -302,3 +302,31 @@ input[type='number'] {
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
   z-index: -1;
 }
+
+.truncate_text {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.truncate_text--3-lines {
+  white-space: inherit;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.truncate_text--4-lines {
+  white-space: inherit;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.truncate_text--5-lines {
+  white-space: inherit;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}

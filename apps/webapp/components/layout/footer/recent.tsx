@@ -12,11 +12,11 @@ import { Section } from '@/components/shared/section'
 export async function RecentArticles({ lang }: LangProp) {
   const latestProductCalls = await fetchPublicYouTubePlaylist(
     'PL6BKGVqekhB_R8wjPFN-p6dGkcIy_bM1D',
-    4
+    5
   )
   const latestShorts = await fetchPublicYouTubePlaylist(
     'PL6BKGVqekhB_3OhFY_zpJwmaaV6sLxLwJ',
-    8
+    10
   )
 
   const recentMedia: MediaSection[] = [
@@ -90,6 +90,25 @@ export async function RecentArticles({ lang }: LangProp) {
             "Explore the magic of MLC with Tianqi Chen: deploying 70B models on browsers & iPhones. Dive into XGBoost, TVM's creation, & the future of universal AI deployments. ",
           thumbnail: {
             url: 'https://www.datocms-assets.com/101962/1691894611-screenshot-2023-08-12-at-10-42-43-pm.png'
+          },
+          contentBlock: [],
+          seo: null
+        },
+        {
+          id: '190259087',
+          topics: ['Summary', 'LLM', 'Code', 'Open Source', 'Small Models'],
+          title:
+            'Latent Space Podcast 8-4-23 Summary: Latent Space x AI Breakdown - Crossover Podcast',
+          slug: 'latent-space-podcast-8-4-23-summary-latent-space-x-ai-breakdown-crossover-pod',
+          authorName: 'Prof. Otto Nomos',
+          authorPicture: {
+            url: 'https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png'
+          },
+          _publishedAt: '2023-10-05T09:16:33+01:00',
+          description:
+            'Join AI Breakdown & Latent Space for the summer AI tech roundup: Dive into GPT4.5, Llama 2, AI tools, the rising AI engineer, and more!',
+          thumbnail: {
+            url: 'https://www.datocms-assets.com/101962/1691539617-screenshot-2023-08-08-at-8-02-52-pm.png'
           },
           contentBlock: [],
           seo: null
