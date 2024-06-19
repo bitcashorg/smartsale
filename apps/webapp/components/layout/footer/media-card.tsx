@@ -15,22 +15,23 @@ export function MediaCard({ video }: MediaCardProps) {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Card className="overflow-hidden list-none cursor-pointer group md:max-h-space-465">
-          <figure className="relative h-[216px] w-full">
-            <Image
-              src={video.snippet.thumbnails.high.url}
-              alt={video.snippet.title}
-              sizes="(max-width: 768px) 350px, (max-width: 1200px) 800px, 600px"
-              loading="lazy"
-              className="transition-all ease-in-out bg-zoom"
-              fill
-            />
-          </figure>
-
+        <Card className="p-0 overflow-hidden list-none bg-transparent cursor-pointer group border-muted md:max-h-space-465">
+          <div className="m-3">
+            <figure className="relative h-[200px] w-full overflow-hidden rounded-md">
+              <Image
+                src={video.snippet.thumbnails.high.url}
+                alt={video.snippet.title}
+                sizes="(max-width: 768px) 350px, (max-width: 1200px) 800px, 600px"
+                loading="lazy"
+                className="transition-all ease-in-out bg-zoom"
+                fill
+              />
+            </figure>
+          </div>
           <CardContent className="mt-5">
             <h4
               title={video.snippet.title}
-              className="mb-0 text-center text-white truncate_text truncate_text--4-lines text-sub-2-md lg:block"
+              className="mb-0 text-center text-white truncate_text truncate_text--4-lines text-sub-2-md"
             >
               {video.snippet.title}
             </h4>
