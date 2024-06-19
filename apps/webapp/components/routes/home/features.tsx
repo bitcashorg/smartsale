@@ -1,5 +1,6 @@
 import { Section } from '@/components/shared/section'
 import React from 'react'
+import Image from 'next/image'
 
 export function Features() {
   return (
@@ -26,13 +27,16 @@ export function Features() {
               </p>
             </div>
           </div>
-          <img
-            src={content.imgSrc}
-            width="550"
-            height="310"
-            alt={content.imgAlt}
-            className="object-cover object-center mx-auto overflow-hidden aspect-video rounded-xl sm:w-full"
-          />
+          <div className="relative h-full min-h-[350px] w-full overflow-hidden">
+            <Image
+              src={content.imgSrc}
+              alt={content.imgAlt}
+              layout="fill"
+              objectFit="cover"
+              objectPosition="top"
+              className="rounded-xl"
+            />
+          </div>
         </div>
       ))}
     </Section>
@@ -45,7 +49,7 @@ const featuresContent: FeatureContent[] = [
     description:
       'Our platform revolutionizes startup funding by implementing a batch auction system for token sales, ensuring fair and transparent price discovery. This method allows all participants to bid within a fixed period, with tokens allocated at a uniform clearing price. This approach prevents price manipulation and ensures that all investors have equal access to investment opportunities, making it a fair marketplace for both startups and investors.',
     label: 'Batch Auctions',
-    imgSrc: '/images/placeholder.svg',
+    imgSrc: '/images/home/wallet.png',
     imgAlt: 'Batch Auctions'
   },
   {
@@ -53,7 +57,7 @@ const featuresContent: FeatureContent[] = [
     description:
       'Bitlauncher is equipped with advanced DAO tools that empower our community to partake directly in governance and decision-making processes. These tools facilitate seamless interaction and collaboration, allowing token holders to propose, vote on, and implement changes within the platform. This level of engagement ensures that every member has a voice in the direction of the project, enhancing transparency and aligning with our commitment to community-driven innovation.',
     label: 'DAO Tools',
-    imgSrc: '/images/placeholder.svg',
+    imgSrc: '/images/home/dboard.png',
     imgAlt: 'DAO Tools'
   }
 ]
