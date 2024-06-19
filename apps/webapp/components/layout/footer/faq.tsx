@@ -30,6 +30,6 @@ export function FAQ({ dict }: FAQProps) {
   )
 }
 
-export interface FAQProps {
+export interface FAQProps extends LangProp{
   dict: any
 }
