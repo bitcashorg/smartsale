@@ -220,7 +220,7 @@ export function BlogPage({
             </Link>
           </div>
 
-          <ul className="grid-cols-auto-dense grid w-full grid-cols-[repeat(auto-fill,minmax(300px,1fr))] flex-col gap-20 py-5 sm:flex-wrap md:gap-5">
+          <ul className="grid-cols-auto-dense grid w-full grid-cols-[repeat(auto-fill,minmax(250px,1fr))] flex-col gap-20 py-5 sm:flex-wrap md:gap-5">
             {relatedBlogs
               ?.slice(0, 4)
               .map(post => (
