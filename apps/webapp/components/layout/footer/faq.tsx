@@ -7,7 +7,7 @@ import {
 } from '@/components/ui/accordion'
 import { LangProp } from '@/types/routing.type'
 
-export function FAQ({ dict }: FAQProps) {
+export function FAQ({ lang, dict }: FAQProps) {
   return (
     <Section heading={dict.faq.frequentlyAsked} subheading={dict.faq.text}>
       <div className="grid gap-8 px-4 md:px-6">
@@ -30,6 +30,6 @@ export function FAQ({ dict }: FAQProps) {
   )
 }
 
-export interface FAQProps {
+export interface FAQProps extends LangProp{
   dict: any
 }

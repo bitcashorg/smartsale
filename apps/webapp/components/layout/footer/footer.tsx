@@ -22,9 +22,9 @@ export default async function Footer({
   return (
     <footer className="container flex flex-col flex-1 w-full px-4 overflow-hidden">
       <Participate lang={params.lang} dict={dict} />
-      <FAQ dict={dict} />
-      <WhyChooseUs />
-      <Features />
+      <FAQ lang={params.lang} dict={dict} />
+      <WhyChooseUs lang={params.lang} dict={dict} />
+      <Features lang={params.lang} dict={dict} />
       <LearnSection />
       <RecentArticles lang={params.lang} />
       <DynamicNewsletter />

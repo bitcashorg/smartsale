@@ -1,15 +1,16 @@
 import { Section } from '@/components/shared/section'
+import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
+import { FeatureContent } from '@/types/home'
 import React from 'react'
 import Image from 'next/image'
 
-export function Features() {
+export function Features({ lang, dict }: FeaturesProps) {
   return (
     <Section
-      heading="Features"
-      subheading="Discover the key capabilities that make Bitlauncher the premier
-            platform for decentralized finance."
+      heading={dict.featuresContent[0].title}
+      subheading={dict.featuresContent[0].description}
     >
-      {featuresContent.map((content, index) => (
+      {dict.featuresContent.slice(1).map((content: any, index: number) => (
         <div
           key={index}
           className="grid items-center gap-6 mx-auto lg:grid-cols-2 lg:gap-12"
@@ -43,29 +44,8 @@ export function Features() {
   )
 }
 
-const featuresContent: FeatureContent[] = [
-  {
-    title: 'Batch Auctions for Equitable Price Discovery',
-    description:
-      'Our platform revolutionizes startup funding by implementing a batch auction system for token sales, ensuring fair and transparent price discovery. This method allows all participants to bid within a fixed period, with tokens allocated at a uniform clearing price. This approach prevents price manipulation and ensures that all investors have equal access to investment opportunities, making it a fair marketplace for both startups and investors.',
-    label: 'Batch Auctions',
-    imgSrc: '/images/home/wallet.png',
-    imgAlt: 'Batch Auctions'
-  },
-  {
-    title: 'Decentralized Autonomous Organization (DAO) Tools',
-    description:
-      'Bitlauncher is equipped with advanced DAO tools that empower our community to partake directly in governance and decision-making processes. These tools facilitate seamless interaction and collaboration, allowing token holders to propose, vote on, and implement changes within the platform. This level of engagement ensures that every member has a voice in the direction of the project, enhancing transparency and aligning with our commitment to community-driven innovation.',
-    label: 'DAO Tools',
-    imgSrc: '/images/home/dboard.png',
-    imgAlt: 'DAO Tools'
-  }
-]
 
-interface FeatureContent {
-  title: string
-  description: string
-  label: string
-  imgSrc: string
-  imgAlt: string
+interface FeaturesProps {
+  dict: any
+  lang: SiteLocale
 }
