@@ -7,6 +7,8 @@ import { terms } from './terms'
 import auction from './auction'
 import footer from './footer'
 import faq from './faq'
+import { whyChooseUs } from './whyChooseUs'
+import { featuresContent } from './features'
 
 export default {
   home,
@@ -17,5 +19,7 @@ export default {
   terms, 
   auction,
   footer,
-  faq
+  faq,
+  whyChooseUs,
+  featuresContent
 } as const

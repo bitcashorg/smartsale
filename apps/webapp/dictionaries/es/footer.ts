@@ -7,7 +7,7 @@ export default{
       href: 'https://app.bitcash.org/?share=JVnL7qzrU'
     },
     {
-      title: 'Obtén \nCreditos en USD',
+      title: 'Obtén \nCréditos en USD',
       description:
         'Deposita USDT en cualquier chain para obtener Tokens de Crédito en USD en EOS EVM',
       href: '#'
