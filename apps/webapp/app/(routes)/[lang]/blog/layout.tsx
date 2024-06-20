@@ -5,8 +5,8 @@ import { locales } from '@/dictionaries/locales'
 export default function BlogLayout({ children }: RootLayoutProps) {
   return (
     <div className="container">
-      <div className="relative flex flex-col min-h-screen">
-        <main className="relative flex flex-col flex-1 min-h-screen">
+      <div className="relative flex min-h-screen flex-col">
+        <main className="relative flex min-h-screen flex-1 flex-col">
           {children}
         </main>
       </div>
@@ -16,7 +16,7 @@ export default function BlogLayout({ children }: RootLayoutProps) {
 
 // generate static routes for a given set of locales,
 export async function generateStaticParams() {
-  return ['en'].map(lang => ({ lang }))
+  return locales.map(lang => ({ lang }))
 }
 
 interface RootLayoutProps {

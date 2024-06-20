@@ -23,7 +23,7 @@ export default async function Page(props: CategoryPageProps) {
   return (
     <section>
       <header className="flex flex-col py-10 md:py-24">
-        <h1 className="flex justify-center heading">
+        <h1 className="heading flex justify-center">
           {pageSeo.description} <br />
         </h1>
         <h2 className="flex justify-center text-xl font-semibold">
@@ -39,7 +39,6 @@ export default async function Page(props: CategoryPageProps) {
 }
 
 export async function generateStaticParams(): Promise<CategoryPageParams[]> {
-  const locales = ['en'] as SiteLocale[]
   const params: CategoryPageParams[] = (
     await Promise.all(
       locales.map(async (lang): Promise<CategoryPageParams[]> => {
