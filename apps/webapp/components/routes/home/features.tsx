@@ -44,7 +44,6 @@ export function Features({ lang, dict }: FeaturesProps) {
   )
 }
 
-
 interface FeaturesProps {
   dict: any
   lang: SiteLocale

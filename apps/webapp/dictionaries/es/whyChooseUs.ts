@@ -1,8 +1,12 @@
-export const whyChooseUs = {
-  title: 'Por qué elegirnos?',
-  description:
-    'Descubra las características únicas que nos diferencian del resto.',
-  features: [
+import { Feature } from "@/types/home"
+
+export const whyChooseUs: Feature[] = [
+    {
+      icon: 'ShoppingBasket',
+      title: 'Por qué elegirnos?',
+      description:
+        'Descubra las características únicas que nos diferencian del resto.'      
+    },
     {
       icon: 'ShoppingBasket',
       title: 'Subasta por lotes para el descubrimiento de precios justos',
@@ -34,4 +38,4 @@ export const whyChooseUs = {
         'Aprovechando el poder de la IA y un enfoque global, ofrecemos conocimientos y oportunidades incomparables.'
     }
   ]
-}
+  

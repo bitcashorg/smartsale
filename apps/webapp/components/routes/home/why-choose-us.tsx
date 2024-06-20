@@ -5,11 +5,13 @@ import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
 import { Feature } from '@/types/home'
 
 export function WhyChooseUs({ lang, dict }: WhyChooseUsProps) {
-  const content = dict.whyChooseUs
   return (
-    <Section heading={content.title} subheading={content.description}>
+    <Section
+      heading={dict.whyChooseUs[0].title}
+      subheading={dict.whyChooseUs[0].description}
+    >
       <div className="grid w-full grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
-        {content.features.map((feature: Feature) => {
+        {dict.whyChooseUs.slice(1).map((feature: Feature) => {
           const IconComponent = Icons[feature.icon] as React.ElementType
           return (
             <Card className="flex flex-col items-center justify-center space-y-4 border-card/30 bg-card p-6 backdrop-blur-lg">
