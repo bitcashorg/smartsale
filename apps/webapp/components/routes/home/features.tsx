@@ -2,6 +2,7 @@ import { Section } from '@/components/shared/section'
 import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
 import { FeatureContent } from '@/types/home'
 import React from 'react'
+import Image from 'next/image'
 
 export function Features({ lang, dict }: FeaturesProps) {
   return (
@@ -27,20 +28,24 @@ export function Features({ lang, dict }: FeaturesProps) {
               </p>
             </div>
           </div>
-          <img
-            src={content.imgSrc}
-            width="550"
-            height="310"
-            alt={content.imgAlt}
-            className="object-cover object-center mx-auto overflow-hidden aspect-video rounded-xl sm:w-full"
-          />
+          <div className="relative h-full min-h-[350px] w-full overflow-hidden">
+            <Image
+              src={content.imgSrc}
+              alt={content.imgAlt}
+              layout="fill"
+              objectFit="cover"
+              objectPosition="top"
+              className="rounded-xl"
+            />
+          </div>
         </div>
       ))}
     </Section>
   )
 }
 
-export interface FeaturesProps {
+
+interface FeaturesProps {
   dict: any
   lang: SiteLocale
 }
