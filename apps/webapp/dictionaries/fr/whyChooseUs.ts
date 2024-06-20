@@ -1,11 +1,8 @@
-import { Feature } from "@/types/home"
-
-export const whyChooseUs: Feature[] = [
-    {
-      title: 'Pourquoi nous choisir',
-      description:
-        'Découvrez les caractéristiques uniques qui nous distinguent des autres.'      
-    },
+export const whyChooseUs = {
+  title: 'Pourquoi nous choisir',
+  description:
+    'Découvrez les caractéristiques uniques qui nous distinguent des autres.',
+  features: [
     {
       icon: 'ShoppingBasket',
       title: 'Enchères par lots pour la découverte du juste prix',
@@ -22,7 +19,7 @@ export const whyChooseUs: Feature[] = [
       icon: 'Check',
       title: 'Évaluation du projet basée sur les flux de trésorerie',
       description:
-        "Notre modèle innovant d’évaluation de projet basé sur les flux de trésorerie vous aide à prendre des décisions d’investissement éclairées."
+        'Notre modèle innovant d’évaluation de projet basé sur les flux de trésorerie vous aide à prendre des décisions d’investissement éclairées.'
     },
     {
       icon: 'Flame',
@@ -34,7 +31,7 @@ export const whyChooseUs: Feature[] = [
       icon: 'Globe',
       title: 'IA et stratégie globale',
       description:
-        "En tirant parti de la puissance de l’IA et d’une approche mondiale, nous offrons des informations et des opportunités inégalées."
+        'En tirant parti de la puissance de l’IA et d’une approche mondiale, nous offrons des informations et des opportunités inégalées.'
     }
   ]
-  
+}

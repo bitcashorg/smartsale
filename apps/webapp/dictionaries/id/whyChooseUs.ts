@@ -1,12 +1,9 @@
-import { Feature } from "@/types/home"
+import { Feature } from '@/types/home'
 
-export const whyChooseUs: Feature[] = [
-    {
-      icon: 'ShoppingBasket',
-      title: 'Mengapa Memilih Kami',
-      description:
-        'Temukan fitur unik yang membedakan kami dari yang lain.'      
-    },
+export const whyChooseUs = {
+  title: 'Mengapa Memilih Kami',
+  description: 'Temukan fitur unik yang membedakan kami dari yang lain.',
+  features: [
     {
       icon: 'ShoppingBasket',
       title: 'Lelang Batch untuk Penemuan Harga Wajar',
@@ -37,5 +34,5 @@ export const whyChooseUs: Feature[] = [
       description:
         'Dengan memanfaatkan kekuatan AI dan pendekatan global pertama, kami memberikan wawasan dan peluang yang tak tertandingi.'
     }
-  ]
-  
+  ] as Feature[]
+}
