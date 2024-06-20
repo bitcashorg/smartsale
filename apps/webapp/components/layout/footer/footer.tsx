@@ -20,13 +20,13 @@ export default async function Footer({
 }) {
   const dict = await getDictionary(params.lang)
   return (
-    <footer className="container flex flex-col flex-1 w-full px-4 overflow-hidden">
-      <Participate lang={params.lang} dict={dict} />
-      <FAQ lang={params.lang} dict={dict} />
+    <footer className="container flex w-full flex-1 flex-col overflow-hidden px-4">
+      <LearnSection />
       <WhyChooseUs lang={params.lang} dict={dict} />
       <Features lang={params.lang} dict={dict} />
-      <LearnSection />
+      <Participate lang={params.lang} dict={dict} />
       <RecentArticles lang={params.lang} />
+      <FAQ lang={params.lang} dict={dict} />
       <DynamicNewsletter />
     </footer>
   )

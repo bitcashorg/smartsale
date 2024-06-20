@@ -101,7 +101,7 @@ export default function Newsletter({ lang }: LangProp) {
         }
       }}
     >
-      <section className="newsletter-wrapper">
+      <section className="newsletter-wrapper mt-40">
         <div className="flex h-[460px] w-full max-w-[600px] flex-col items-center justify-center gap-8 px-3 text-center md:gap-11 md:px-0">
           <div className="flex w-full flex-col gap-7">
             <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
