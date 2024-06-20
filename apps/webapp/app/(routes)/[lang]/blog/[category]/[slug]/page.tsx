@@ -6,6 +6,7 @@ import { generateMetadataFromSEO } from '@/lib/seo'
 import { BlogPage } from '@/components/routes/blog/article'
 import { getAllArticles } from '@/services/datocms/datocms-all-articles.service'
 import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
+import { locales } from '@/dictionaries/locales'
 
 export default async function ArticlePage(props: ArticlePageProps) {
   const {
@@ -70,11 +71,11 @@ export async function generateMetadata(props: any): Promise<Metadata> {
 }
 
 export async function generateStaticParams(): Promise<ArticlePageParams[]> {
-  const locales = ['en'] as SiteLocale[] // english only for now
+  // const locales = ['en'] as SiteLocale[] // english only for now
   const params: ArticlePageParams[] = (
     await Promise.all(
       locales.map(async (lang): Promise<ArticlePageParams[]> => {
-        const allArticles = await getAllArticles(lang, ['en'])
+        const allArticles = await getAllArticles(lang, locales)
         if (!allArticles) throw new Error('sections not found')
 
         const staticParams: ArticlePageParams[] = allArticles

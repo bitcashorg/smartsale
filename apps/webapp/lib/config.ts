@@ -7,7 +7,8 @@ export const appConfig = {
   eosRpc: 'https://eos.greymass.com',
   features: {
     enableWalletAccess:
-      process.env.NEXT_PUBLIC_ENABLE_WALLET_REDIRECT === 'true'
+      process.env.NEXT_PUBLIC_ENABLE_WALLET_REDIRECT === 'true',
+    newNavStruct: process.env.NEXT_PUBLIC_FEAT_NEW_NAV_STRUCT === 'true'
   },
   ...smartsaleEnv[env],
   datocms: {

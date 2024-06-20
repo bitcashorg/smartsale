@@ -12,11 +12,12 @@ import { MobileNavLoader } from './mobile-nav'
 import { LangSelector } from './lang-selector/lang-selector'
 import { LangProp } from '@/types/routing.type'
 import { Navigation } from './new-nav'
+import { appConfig } from '@/lib/config'
 
 export function Header({ lang }: LangProp) {
   return (
     <div className="sticky top-0 z-50 flex h-16 bg-background">
-      <div className="container flex flex-row items-center justify-between px-4 bg-background">
+      <div className="container flex flex-row items-center justify-between bg-background px-4">
         <div className="flex h-full items-center md:min-w-[300px]">
           <Link href={`/${lang}`}>
             <IconBitlauncher />
@@ -24,8 +25,11 @@ export function Header({ lang }: LangProp) {
         </div>
 
         <div className="hidden md:flex md:gap-3 md:pl-4 lg:ml-[-1px] lg:gap-10">
-          {/* <Navigation lang={lang} /> */}
-          <NavLinks lang={lang} />
+          {appConfig.features.newNavStruct ? (
+            <Navigation lang={lang} />
+          ) : (
+            <NavLinks lang={lang} />
+          )}
         </div>
 
         {/* Desktop action buttons */}
