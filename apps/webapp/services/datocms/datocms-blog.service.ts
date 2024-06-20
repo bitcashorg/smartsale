@@ -203,6 +203,7 @@ export async function getBlogArticleData(
   category: string,
   slug: string
 ) {
+  // console.log('getBlogArticleData', { locale, category, slug })
   const [i18n, categories] = await Promise.all([
     getLayoutText(locale, [locale]),
     getBlogCategory(category, locale, [locale], {
