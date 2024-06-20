@@ -1,4 +1,3 @@
-import { Lang } from '@/dictionaries/locales'
 import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
 
 export const langSelectorOptions: LangSelectorOption[] = [
@@ -20,5 +19,5 @@ export const langSelectorOptions: LangSelectorOption[] = [
 
 export interface LangSelectorOption {
   name: string
-  code: Lang
+  code: SiteLocale
 }

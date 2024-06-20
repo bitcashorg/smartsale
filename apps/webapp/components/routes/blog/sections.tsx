@@ -5,7 +5,7 @@ import { ArticleCard } from '../../shared/article-card'
 import { LucideIcons } from './lucide-icons'
 import { LangProp } from '@/types/routing.type'
 
-export function BlogSections({ sections, lang }: BlogSectionsProps) {
+export function BlogSections({ sections, lang, category }: BlogSectionsProps) {
   return (
     <div className="flex w-full flex-col items-center justify-start py-10">
       {sections.map(
@@ -17,7 +17,7 @@ export function BlogSections({ sections, lang }: BlogSectionsProps) {
                   / {section.name}
                 </span>
                 <Link
-                  href={`/${lang}/blog/${section.slug}`}
+                  href={`/${lang}/blog/${category || section.slug}`}
                   className={cn(
                     'flex items-center align-middle text-black focus-within:!text-primary-200 hover:!text-primary-200 dark:text-white'
                   )}
@@ -31,7 +31,7 @@ export function BlogSections({ sections, lang }: BlogSectionsProps) {
                 {section?.articles?.map(post => (
                   <ArticleCard
                     post={post}
-                    sectionSlug={section.slug}
+                    sectionSlug={category || section.slug}
                     key={post.id}
                     lang={lang}
                     meta={true}
@@ -48,4 +48,5 @@ export function BlogSections({ sections, lang }: BlogSectionsProps) {
 export interface BlogSectionsProps extends LangProp {
   children?: React.ReactNode
   sections: ArticlesSection[]
+  category?: string
 }

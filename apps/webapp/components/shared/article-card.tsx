@@ -15,11 +15,13 @@ export const ArticleCard = ({
   const title =
     post.title ||
     post.slug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase())
+
+  // console.log('post', post)
   return (
-    <Card className="p-0 overflow-hidden list-none bg-transparent group border-muted md:max-h-space-465">
+    <Card className="group list-none overflow-hidden border-muted bg-transparent p-0 md:max-h-space-465">
       <Link
         href={`/blog/${sectionSlug}/${post.slug}`}
-        className="flex flex-col w-full h-full transition-all"
+        className="flex h-full w-full flex-col transition-all"
       >
         <div className="m-3">
           <figure className="relative h-[216px] w-full overflow-hidden rounded-md">
@@ -28,7 +30,7 @@ export const ArticleCard = ({
               alt={title}
               sizes="(max-width: 768px) 350px, (max-width: 1200px) 800px, 600px"
               loading="lazy"
-              className="transition-all ease-in-out bg-zoom"
+              className="bg-zoom transition-all ease-in-out"
               fill
             />
           </figure>
@@ -50,7 +52,7 @@ export const ArticleCard = ({
           </figure>*/}
         </div>
         <CardContent>
-          <p className="pt-3 mb-0 overflow-hidden text-center text-white truncate_text truncate_text--3-lines text-sub-2-sm">
+          <p className="truncate_text truncate_text--3-lines text-sub-2-sm mb-0 overflow-hidden pt-3 text-center text-white">
             {title}
           </p>
         </CardContent>
@@ -68,8 +70,8 @@ export const ArticleCard = ({
                 />
               </div>
             </div>
-            <div className="flex flex-col flex-grow gap-y-2 md:gap-y-1">
-              <span className="font-bold text-h-text-c text-h-text dark:text-white">
+            <div className="flex flex-grow flex-col gap-y-2 md:gap-y-1">
+              <span className="text-h-text-c text-h-text font-bold dark:text-white">
                 {post.authorName}
               </span>
               <span className="text-sm dark:text-white">
