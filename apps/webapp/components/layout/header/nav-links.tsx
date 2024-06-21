@@ -50,7 +50,7 @@ export function NavLinks({
     },
     {
       id: 'about',
-      href: '/about',
+      href: '/learn/batch-auctions',
       text: 'About',
       mobile: false,
       action: null,
@@ -66,7 +66,7 @@ export function NavLinks({
     },
     {
       id: 'security',
-      href: '/security',
+      href: '/learn/security',
       text: 'Security',
       mobile: false,
       action: null,
