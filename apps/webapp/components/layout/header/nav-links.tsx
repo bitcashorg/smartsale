@@ -11,8 +11,9 @@ import { useAccount } from 'wagmi'
 
 export function NavLinks({
   mobile = false,
-  lang
-}: { mobile?: boolean } & LangProp) {
+  lang,
+  dict
+}: { mobile?: boolean } & NavLinksProps) {
   const { loginRedirect, session, logout } = useSession()
   const { openConnectModal } = useConnectModal()
   const { openAccountModal } = useAccountModal()
@@ -24,7 +25,7 @@ export function NavLinks({
     {
       id: 'login',
       href: null,
-      text: bitcashAccount ? bitcashAccount : 'Login with Bitcash',
+      text: bitcashAccount ? bitcashAccount : dict.nav.login,
       mobile: true,
       action: bitcashAccount ? null : loginRedirect,
       disabled: false
@@ -32,7 +33,7 @@ export function NavLinks({
     {
       id: 'connect',
       href: null,
-      text: address ? formatAddress(address) : ' Connect your EVM Wallet',
+      text: address ? formatAddress(address) : dict.nav.connect,
       mobile: true,
       action: () =>
         bitcashAccount
@@ -43,7 +44,7 @@ export function NavLinks({
     {
       id: 'wallet',
       href: '/wallet',
-      text: 'Wallet',
+      text: dict.nav.wallet,
       mobile: true,
       action: null,
       disabled: !appConfig.features.enableWalletAccess
@@ -51,7 +52,7 @@ export function NavLinks({
     {
       id: 'about',
       href: '/learn/batch-auctions',
-      text: 'About',
+      text: dict.nav.about,
       mobile: false,
       action: null,
       disabled: false
@@ -67,7 +68,7 @@ export function NavLinks({
     {
       id: 'security',
       href: '/learn/security',
-      text: 'Security',
+      text: dict.nav.security,
       mobile: false,
       action: null,
       disabled: false
@@ -110,4 +111,9 @@ export function NavLinks({
       </Link>
     )
   })
+}
+
+interface NavLinksProps extends LangProp {
+  mobile?: boolean
+  dict: any
 }
