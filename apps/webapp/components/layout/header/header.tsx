@@ -33,15 +33,16 @@ export function Header({ lang }: LangProp) {
         </div>
 
         {/* Desktop action buttons */}
-        <div className="hidden items-center justify-end md:flex md:min-w-[300px] md:gap-3 lg:gap-5">
-          {/* <DiscordButton /> */}
-          <Suspense fallback={<Button>Login</Button>}>
-            <DynamicSessionButton />
-          </Suspense>
+        <div className="flex gap-5">
+          <div className="hidden items-center justify-end md:flex md:min-w-[300px] md:gap-3 lg:gap-5">
+            {/* <DiscordButton /> */}
+            <Suspense fallback={<Button>Login</Button>}>
+              <DynamicSessionButton />
+            </Suspense>
+          </div>
+
           <LangSelector lang={lang} />
         </div>
-
-        {/* mobile navbar icon */}
 
         <div className="flex md:hidden">
           <DynamicMobileNav lang={lang} />
