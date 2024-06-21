@@ -14,7 +14,7 @@ import { LangProp } from '@/types/routing.type'
 import { Navigation } from './new-nav'
 import { appConfig } from '@/lib/config'
 
-export function Header({ lang }: LangProp) {
+export function Header({ lang, dict }: HeaderProps) {
   return (
     <div className="sticky top-0 z-50 flex h-16 bg-background">
       <div className="container flex flex-row items-center justify-between bg-background px-4">
@@ -28,7 +28,7 @@ export function Header({ lang }: LangProp) {
           {appConfig.features.newNavStruct ? (
             <Navigation lang={lang} />
           ) : (
-            <NavLinks lang={lang} />
+            <NavLinks lang={lang} dict={dict} />
           )}
         </div>
 
@@ -45,7 +45,7 @@ export function Header({ lang }: LangProp) {
         </div>
 
         <div className="flex md:hidden">
-          <DynamicMobileNav lang={lang} />
+          <DynamicMobileNav lang={lang} dict={dict} />
         </div>
       </div>
     </div>
@@ -86,4 +86,8 @@ function DiscordButton() {
       <span className="hidden md:block">Discord</span>
     </Link>
   )
+}
+
+interface HeaderProps extends LangProp {
+  dict: any
 }

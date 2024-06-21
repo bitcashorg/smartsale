@@ -9,6 +9,7 @@ import footer from './footer'
 import faq from './faq'
 import { whyChooseUs } from './whyChooseUs'
 import { featuresContent } from './features'
+import nav from './nav'
 
 export default {
   home,
@@ -21,5 +22,6 @@ export default {
   footer, 
   faq,
   whyChooseUs,
-  featuresContent
+  featuresContent,
+  nav
 } as const

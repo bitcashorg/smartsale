@@ -8,7 +8,7 @@ import { Transition } from '@/components/shared/transition'
 import { AnimatePresence } from 'framer-motion'
 import { LangProp } from '@/types/routing.type'
 
-export function MobileNav({ lang }: LangProp) {
+export function MobileNav({ lang, dict }: MobileNavProps) {
   const [open, toggleOpen] = useToggle(false)
 
   // control the body scroll
@@ -32,7 +32,7 @@ export function MobileNav({ lang }: LangProp) {
         {open ? (
           <Transition duration={0.3}>
             <div className="mobile-nav">
-              <NavLinks mobile lang={lang} />
+              <NavLinks mobile lang={lang} dict={dict} />
             </div>
           </Transition>
         ) : null}
@@ -50,4 +50,8 @@ export function MobileNavLoader() {
       size={56}
     />
   )
+}
+
+interface MobileNavProps extends LangProp {
+  dict: any
 }
