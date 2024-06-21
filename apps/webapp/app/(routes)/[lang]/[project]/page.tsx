@@ -11,6 +11,7 @@ import { Button } from '@/components/ui/button'
 import { locales } from '@/dictionaries/locales'
 import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
 import { getDictionary } from '@/dictionaries'
+import { appConfig } from '@/lib/config'
 
 export default async function ProjectPage({ params }: ProjectPageProps) {
   const dict = await getDictionary(params.lang)
@@ -29,9 +30,12 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               <Countdown auctionId={project.auctionId!} />
               <div className="align-center flex items-center justify-center gap-6">
                 <DynamicAddressForm projectId={project.id} />
-                <Link href={`/${project.slug}/presale`}>
-                  <Button>Active Presale</Button>
-                </Link>
+
+                {appConfig.features.presale ? (
+                  <Link href={`/${project.slug}/presale`}>
+                    <Button>Active Presale</Button>
+                  </Link>
+                ) : null}
               </div>
             </Card>
 
