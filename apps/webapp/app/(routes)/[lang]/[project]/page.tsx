@@ -2,6 +2,12 @@ import { getProjectBySlug, getProjects } from '@/lib/projects'
 import { redirect } from 'next/navigation'
 import { cn } from '@/lib/utils'
 import { ProjectHeader } from '@/components/routes/project/project-header'
+import { ProjectDataCard } from '@/components/routes/project/project-data-card'
+import { Card } from '@/components/ui/card'
+import { Countdown } from '@/components/shared/countdown'
+import Link from 'next/link'
+import dynamic from 'next/dynamic'
+import { Button } from '@/components/ui/button'
 import { locales } from '@/dictionaries/locales'
 import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
 import { getDictionary } from '@/dictionaries'
@@ -17,7 +23,21 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
   return (
     <>
       <div className="flex min-h-[calc(83vh-4rem)] flex-col">
-        <ProjectHeader project={project} dict={dict} />
+        <ProjectHeader project={project}>
+          <div className="container flex gap-8">
+            <Card className="border-card/30 bg-card/60 backdrop-blur-lg">
+              <Countdown auctionId={project.auctionId!} />
+              <div className="align-center flex items-center justify-center gap-6">
+                <DynamicAddressForm projectId={project.id} />
+                <Link href={`/${project.slug}/presale`}>
+                  <Button>Active Presale</Button>
+                </Link>
+              </div>
+            </Card>
+
+            <ProjectDataCard project={project} />
+          </div>
+        </ProjectHeader>
 
         <div className="container">
           {projectContentObjectKeys.map((key, index) => {
@@ -99,3 +119,14 @@ type ProjectPageParams = { project: string; lang: SiteLocale }
 type ProjectPageProps = {
   params: ProjectPageParams
 }
+
+const DynamicAddressForm = dynamic(
+  () =>
+    import('../../../../components/routes/project/register-address-form').then(
+      mod => mod.RegisterAddressForm
+    ),
+  {
+    ssr: false,
+    loading: () => <Button>Register</Button>
+  }
+)

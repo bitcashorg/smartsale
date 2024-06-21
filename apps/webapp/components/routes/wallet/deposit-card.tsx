@@ -1,8 +1,15 @@
 'use client'
 
 import { useSigningRequest } from '@/hooks/use-signing-request'
-import { Button } from '@/components/ui/button'
-import { Card, CardContent, CardFooter } from '@/components/ui/card'
+import { Button, buttonVariants } from '@/components/ui/button'
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle
+} from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
 import {
   Select,
@@ -25,6 +32,7 @@ import { parseUnits } from 'viem'
 import { useAccount, useSwitchChain, useWriteContract } from 'wagmi'
 import { useGlobalStore } from '@/hooks/use-global-store'
 import { appConfig } from '@/lib/config'
+import { cn } from '@/lib/utils'
 
 const usdtMap = new Map<string, TokenContractData>()
 appConfig.usdt.forEach(t => {
@@ -70,12 +78,16 @@ export function DepositCard() {
   }
 
   return (
-    <Card className="w-full rounded-xl bg-gray-200 p-4 dark:bg-[#1a1a1a]">
+    <Card className="w-full">
+      <CardHeader>
+        <CardTitle>Convert to USDCred</CardTitle>
+        <CardDescription>
+          Get USD Credits on Bitlauncer to participate on the auctions.
+        </CardDescription>
+      </CardHeader>
       <CardContent>
-        <div className="flex flex-col space-y-4">
-          <label htmlFor="deposit" className="text-sm">
-            Convert to USDCred
-          </label>
+        <div className="flex flex-col">
+          <label htmlFor="deposit" className="text-sm font-bold"></label>
           <div className="flex items-center justify-between">
             <div className="flex min-w-[40%] flex-col">
               <span className="text-2xl font-semibold">
@@ -116,7 +128,13 @@ export function DepositCard() {
       </CardContent>
       <CardFooter className="flex flex-col space-y-2">
         <Button
-          className="w-full bg-[#bd1e59]"
+          className={cn(
+            buttonVariants({
+              variant: 'outline',
+              radius: 'full'
+            }),
+            'h-auto w-full whitespace-normal border border-solid border-accent-secondary bg-background px-10 py-2'
+          )}
           // disabled={!session?.account}
           onClick={deposit}
         >

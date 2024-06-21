@@ -1,7 +1,14 @@
 'use client'
 
-import { Button } from '@/components/ui/button'
-import { Card, CardContent, CardFooter } from '@/components/ui/card'
+import { Button, buttonVariants } from '@/components/ui/button'
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle
+} from '@/components/ui/card'
 import {
   Select,
   SelectContent,
@@ -14,6 +21,7 @@ import { TestnetUSDCred } from 'smartsale-contracts'
 import { parseUnits } from 'viem'
 import { useAccount, useSwitchChain, useWriteContract } from 'wagmi'
 import { Input } from '../../ui/input'
+import { cn } from '@/lib/utils'
 
 export function WithdrawCard() {
   const { address } = useAccount()
@@ -37,12 +45,15 @@ export function WithdrawCard() {
   // console.log('burn tokens state', other)
 
   return (
-    <Card className="w-full rounded-xl bg-muted/50 p-4">
+    <Card className="w-full">
+      <CardHeader>
+        <CardTitle>Convert to BITUSD</CardTitle>
+        <CardDescription>
+          Burn your USD Credits and receive BITUSD on your Bitcash account.
+        </CardDescription>
+      </CardHeader>
       <CardContent>
-        <div className="flex flex-col space-y-4">
-          <label htmlFor="withdraw" className="text-sm">
-            Convert to BITUSD
-          </label>
+        <div className="flex flex-col">
           <div className="flex items-center justify-between">
             <div className="flex min-w-[40%] flex-col">
               <span className="text-2xl font-semibold">
@@ -76,7 +87,13 @@ export function WithdrawCard() {
       </CardContent>
       <CardFooter className="flex flex-col space-y-2">
         <Button
-          className="w-full bg-[#bd1e59]"
+          className={cn(
+            buttonVariants({
+              variant: 'outline',
+              radius: 'full'
+            }),
+            'h-auto w-full whitespace-normal border border-solid border-accent-secondary bg-background px-10 py-2'
+          )}
           // disabled={!session?.account}
           onClick={withdraw}
         >

@@ -138,97 +138,88 @@ export function AuctionBids({ project }: AuctionBidsProps) {
   }, [tanstack, errorMessage, setGlobalError])
 
   return (
-    <>
-      <h2 className="mb-3 px-2 py-4 text-3xl font-bold">Bids</h2>
-      <div className="grid gap-5 md:grid-cols-2 md:gap-10">
-        <Table>
-          <TableHeader>
-            <TableRow>
-              <TableHead className="bg-muted font-semibold">
-                Max Price
-              </TableHead>
-              <TableHead className="bg-muted font-semibold">
-                Bid Amount
-              </TableHead>
+    <div className="grid gap-5 md:grid-cols-2 md:gap-10">
+      <Table>
+        <TableHeader>
+          <TableRow>
+            <TableHead className="font-semibold bg-muted">Max Price</TableHead>
+            <TableHead className="font-semibold bg-muted">Bid Amount</TableHead>
+          </TableRow>
+        </TableHeader>
+        <TableBody>
+          {bidInputs.map((_, index) => (
+            <TableRow key={index}>
+              <TableCell
+                className={cn({
+                  'bg-accent/20': index % 2
+                })}
+              >
+                <CurrencyInput
+                  placeholder="0.00"
+                  name={`maxPrice${index}`}
+                  handlechange={val =>
+                    handleInputChange(index, 'maxPrice', val)
+                  }
+                />
+              </TableCell>
+              <TableCell
+                className={cn({
+                  'bg-accent/20': index % 2
+                })}
+              >
+                <CurrencyInput
+                  placeholder="0.00"
+                  name={`bidAmount${index}`}
+                  handlechange={val =>
+                    handleInputChange(index, 'bidAmount', val)
+                  }
+                />
+              </TableCell>
             </TableRow>
-          </TableHeader>
-          <TableBody>
-            {bidInputs.map((_, index) => (
-              <TableRow key={index}>
-                <TableCell
-                  className={cn({
-                    'bg-accent/20': index % 2
-                  })}
-                >
-                  <CurrencyInput
-                    placeholder="0.00"
-                    name={`maxPrice${index}`}
-                    handlechange={val =>
-                      handleInputChange(index, 'maxPrice', val)
-                    }
-                  />
-                </TableCell>
-                <TableCell
-                  className={cn({
-                    'bg-accent/20': index % 2
-                  })}
-                >
-                  <CurrencyInput
-                    placeholder="0.00"
-                    name={`bidAmount${index}`}
-                    handlechange={val =>
-                      handleInputChange(index, 'bidAmount', val)
-                    }
-                  />
-                </TableCell>
-              </TableRow>
-            ))}
-          </TableBody>
-        </Table>
+          ))}
+        </TableBody>
+      </Table>
 
-        <div className="flex flex-col justify-between gap-6 px-5 pb-5">
-          <Button
-            disabled={
-              !address || bidInputs.some(item => item.errorMessage !== '')
-            }
-            onClick={() => handleSubmit()}
-            type="submit"
-            variant="secondary"
-            size="lg"
-          >
-            Submit Bids
-          </Button>
+      <div className="flex flex-col justify-between gap-6 px-5 pb-5">
+        <Button
+          disabled={
+            !address || bidInputs.some(item => item.errorMessage !== '')
+          }
+          onClick={() => handleSubmit()}
+          type="submit"
+          variant="secondary"
+          size="lg"
+        >
+          Submit Bids
+        </Button>
 
-          <div className="flex flex-col gap-2">
-            <p className="flex w-full justify-between">
-              {textValues.currentBid.split(':').map((txt, index) =>
-                !index ? (
-                  <b key={txt} className="block">
-                    {txt}
-                  </b>
-                ) : (
-                  txt
-                )
-              )}
-            </p>
-            <p className="flex w-full justify-between">
-              {textValues.currentCost.split(':').map((txt, index) =>
-                !index ? (
-                  <b key={txt} className="block">
-                    {txt}
-                  </b>
-                ) : (
-                  txt
-                )
-              )}
-            </p>
-            <p className="mt-2 text-right text-sm">
-              {textValues.maxTokenLimit}
-            </p>
-          </div>
+        <div className="flex flex-col gap-2">
+          <p className="flex justify-between w-full">
+            {textValues.currentBid.split(':').map((txt, index) =>
+              !index ? (
+                <b key={txt} className="block">
+                  {txt}
+                </b>
+              ) : (
+                txt
+              )
+            )}
+          </p>
+          <p className="flex justify-between w-full">
+            {textValues.currentCost.split(':').map((txt, index) =>
+              !index ? (
+                <b key={txt} className="block">
+                  {txt}
+                </b>
+              ) : (
+                txt
+              )
+            )}
+          </p>
+          <p className="mt-2 text-sm text-right">{textValues.maxTokenLimit}</p>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
@@ -262,14 +253,14 @@ function CurrencyInput({ handlechange, ...props }: CurrencyInputProps) {
 
   return (
     <div className="relative">
-      <span className="absolute inset-y-0 left-2 flex items-center">$</span>
+      <span className="absolute inset-y-0 flex items-center left-2">$</span>
 
       <input
         type="text" // Changed to text to handle manual formatting
         value={value}
         onChange={handleChange}
         onBlur={handleBlur}
-        className="w-full bg-transparent pl-6 focus:outline-none"
+        className="w-full pl-6 bg-transparent focus:outline-none"
         {...props}
       />
     </div>

@@ -70,8 +70,8 @@ export function TransactionsTable() {
   }, [setTransactions, address, supabase])
 
   return (
-    <div className="pt-8">
-      <h2 className="px-2 py-4 text-3xl font-bold">Transaction History</h2>
+    <div>
+      <h2 className="px-2 py-5 heading3">Transactions</h2>
       <Table>
         <TableHeader>
           <TableRow>

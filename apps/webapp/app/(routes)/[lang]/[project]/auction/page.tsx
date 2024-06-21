@@ -1,9 +1,17 @@
 import { getDictionary } from '@/dictionaries'
 import { locales } from '@/dictionaries/locales'
 import { AuctionBids } from '@/components/routes/auction/auction-bids'
-import { AuctionOrders } from '@/components/routes/auction/auction-orders'
-import { ClaimTokens } from '@/components/routes/auction/claim-tokens'
-import { Tabs } from '@/components/ui/tabs'
+import { AuctionDataCard } from '@/components/routes/auction/auction-data-card'
+import { ProjectHeader } from '@/components/routes/project/project-header'
+import { ProjectPresaleData } from '@/components/routes/project/project-presale-data'
+import { Countdown } from '@/components/shared/countdown'
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle
+} from '@/components/ui/card'
 import {
   ProjectWithAuction,
   getProjectBySlug,
@@ -11,12 +19,6 @@ import {
 } from '@/lib/projects'
 import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
 import { redirect } from 'next/navigation'
-import React from 'react'
-
-const auctionPageClassNames = {
-  tabCard:
-    'border border-primary/50 bg-card w-full h-[512px] overflow-y-auto scrollbar rounded-lg p-0 md:p-10'
-}
 
 export default async function AuctionPage({ params }: ProjectPageProps) {
   const dict = await getDictionary(params.lang)
@@ -24,52 +26,34 @@ export default async function AuctionPage({ params }: ProjectPageProps) {
   if (!p || (!p.auctionId && !p.registrationOpen)) redirect('/')
   const project = p as ProjectWithAuction
 
-  const isAuctionClosed = project.badgeText === 'AUCTION CLOSED'
-  const tabs = [
-    {
-      title: 'Auction',
-      value: 'auction',
-      content: (
-        <div className={auctionPageClassNames.tabCard}>
-          <React.Suspense fallback={<div>Loading ...</div>}>
-            {isAuctionClosed ? (
-              <ClaimTokens />
-            ) : project.registrationOpen ? null : ( // <RegisterAddressForm projectId={project.id} />
-              <AuctionBids project={project} />
-            )}
-          </React.Suspense>
-        </div>
-      )
-    },
-    {
-      title: 'Orders',
-      value: 'orders',
-      content: (
-        <div className={auctionPageClassNames.tabCard}>
-          <AuctionOrders />
-        </div>
-      )
-    }
-    // {
-    //   title: 'Debug',
-    //   value: 'debug',
-    //   content: (
-    //     <div className={auctionPageClassNames.tabCard}>
-    //       <React.Suspense fallback={<div>Loading ...</div>}>
-    //         <AuctionDebug auctionId={project.auctionId} />
-    //       </React.Suspense>
-    //     </div>
-    //   )
-    // }
-  ]
-
   return (
-    <div className="max-w-[100vw] px-2">
-      <section className="b relative mx-auto mb-24 flex size-full max-w-screen-xl flex-col items-start justify-start [perspective:1000px] md:h-[40rem]">
-        <Tabs tabs={tabs} />
-      </section>
+    <div className="flex min-h-[calc(83vh-4rem)] flex-col">
+      <ProjectHeader project={project}>
+        <div className="container">
+          <div className="mb-10 flex gap-8">
+            <Card className="border-card/30 bg-card/60 backdrop-blur-lg">
+              <Countdown auctionId={project.auctionId!} />
+              <CardContent>
+                <ProjectPresaleData />
+              </CardContent>
+            </Card>
 
-      <hr className="mx-auto mt-24 max-w-screen-xl border-gray-600/80" />
+            <Card className="border-card/30 bg-card/60 backdrop-blur-lg">
+              <CardHeader>
+                <CardTitle>Place Bids</CardTitle>
+                <CardDescription>
+                  Up to five 5 bids per project auction. You can update your
+                  order.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <AuctionBids project={project!} />
+              </CardContent>
+            </Card>
+          </div>
+          <AuctionDataCard />
+        </div>
+      </ProjectHeader>
     </div>
   )
 }
