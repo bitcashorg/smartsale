@@ -25,9 +25,9 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
     <>
       <div className="flex min-h-[calc(83vh-4rem)] flex-col">
         <ProjectHeader project={project}>
-          <div className="container flex gap-8">
-            <Card className="border-card/30 bg-card/60 backdrop-blur-lg">
-              <Countdown auctionId={project.auctionId!} />
+          <div className="flex flex-col gap-8 lg:flex-row">
+            <Card className="w-full border-card/30 bg-card/60 pb-10 backdrop-blur-lg">
+              <Countdown />
               <div className="align-center flex items-center justify-center gap-6">
                 <DynamicAddressForm projectId={project.id} />
 
