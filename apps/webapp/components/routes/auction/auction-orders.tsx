@@ -80,7 +80,7 @@ export function AuctionOrders() {
 
   return (
     <>
-      <h2 className="px-2 py-4 text-3xl font-bold">Order history</h2>
+      <h2 className="px-2 py-5 heading3">Orders</h2>
       <Table>
         <TableHeader>
           <TableRow>

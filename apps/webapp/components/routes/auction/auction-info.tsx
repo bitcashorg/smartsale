@@ -3,7 +3,7 @@ import { ProjectShare } from '../project/project-share'
 import React, { ReactNode, Fragment } from 'react'
 
 interface ItemProps {
-  label?: any
+  label?: string
   value: string | ReactNode
   fields?: Array<{ label: string; value: string }>
 }
@@ -28,17 +28,17 @@ function ListItem({ label, value }: ItemProps) {
   )
 }
 
-export function AuctionInfo({ project, dict }: { project: ProjectWithAuction, dict: any}) {
+export function AuctionInfo({ project }: { project: ProjectWithAuction }) {
   const fields: Array<Array<ItemProps>> = [
     [
-      { label: dict.auction.presalePeriod, value: '6/1/24 - 6/30/24' },
-      { label: dict.auction.fundraisingGoal, value: '$150,000' },
-      { label: dict.auction.maxAllocation, value: '$1,500' }
+      { label: 'Presale', value: '6/1/24 - 6/30/24' },
+      { label: 'Fundraising Goal', value: '$150,000' },
+      { label: 'Max Allocation', value: '$1,500' }
     ],
     [
-      { label: dict.auction.tokenSalePeriod, value: '7/1/24 - 7/30/24' },
-      { label: dict.auction.fundraisingGoal, value: '$250,000' },
-      { label: dict.auction.maxAllocation, value: '$10,000' }
+      { label: 'Token Sale', value: '7/1/24 - 7/30/24' },
+      { label: 'Fundraising Goal', value: '$250,000' },
+      { label: 'Max Allocation', value: '$10,000' }
     ],
     [{ label: 'Ticker', value: 'BC' }],
     [
@@ -48,14 +48,14 @@ export function AuctionInfo({ project, dict }: { project: ProjectWithAuction, di
   ]
 
   return (
-    <div className="grid items-center gap-x-6 gap-y-2 md:grid-cols-2">
+    <div className="grid items-center gap-x-10 gap-y-2 md:grid-cols-2">
       {fields.map((items, k) => {
         return React.isValidElement(items[0].value) ? (
           items[0].value
         ) : (
           <div
             key={k}
-            className="flex flex-col w-full px-4 py-3 text-center rounded-sm bg-muted"
+            className="flex w-full min-w-[250px] flex-col rounded-sm bg-muted px-4 py-3 text-center"
           >
             {items.map((item, ik) => (
               <Fragment key={ik}>
