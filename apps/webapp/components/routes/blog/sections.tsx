@@ -1,25 +1,39 @@
 import Link from 'next/link'
 import { cn } from '@/lib/utils'
 import { ArticlesSection } from '@/services/datocms'
-import { PostCard } from './post-card'
+import { ArticleCard } from '../../shared/article-card'
 import { LucideIcons } from './lucide-icons'
 import { LangProp } from '@/types/routing.type'
 
-export function BlogSections({ sections, lang }: BlogSectionsProps) {
+export function BlogSections({
+  sections,
+  lang,
+  category,
+  className
+}: BlogSectionsProps) {
   return (
-    <div className="flex w-full flex-col items-center justify-start py-10">
+    <div
+      className={cn(
+        'flex w-full flex-col items-center justify-start py-10',
+        className
+      )}
+    >
       {sections.map(
         section =>
           section?.articles?.length > 0 && (
-            <section className="container mb-10" key={section.name}>
+            <section
+              // this is hack be careful when passing className
+              className={cn('container mb-10', className)}
+              key={section.name}
+            >
               <div className="mb-space-32 flex items-center justify-between text-xl">
-                <span className="pl-3 font-bold text-black dark:text-white">
+                <span className="sub-2-lg font-semibold text-black dark:text-white">
                   / {section.name}
                 </span>
                 <Link
-                  href={`/${lang}/blog/${section.slug}`}
+                  href={`/${lang}/blog/${category || section.slug}`}
                   className={cn(
-                    'focus-within:!text-primary-200 hover:!text-primary-200 flex items-center align-middle text-black dark:text-white'
+                    'flex items-center align-middle text-black focus-within:!text-primary-200 hover:!text-primary-200 dark:text-white'
                   )}
                 >
                   {section.name} articles
@@ -27,13 +41,14 @@ export function BlogSections({ sections, lang }: BlogSectionsProps) {
                 </Link>
               </div>
 
-              <ul className="grid-cols-auto-dense grid w-full grid-cols-[repeat(auto-fill,minmax(300px,1fr))] flex-col gap-20 py-5 sm:flex-wrap md:gap-5 ">
-                {section?.articles?.map((post, index) => (
-                  <PostCard
+              <ul className="grid-cols-auto-dense grid w-full grid-cols-[repeat(auto-fill,minmax(250px,1fr))] flex-col gap-20 py-5 sm:flex-wrap md:gap-5">
+                {section?.articles?.map(post => (
+                  <ArticleCard
                     post={post}
-                    sectionSlug={section.slug}
-                    key={index}
+                    sectionSlug={category || section.slug}
+                    key={post.id}
                     lang={lang}
+                    meta={true}
                   />
                 ))}
               </ul>
@@ -43,8 +58,9 @@ export function BlogSections({ sections, lang }: BlogSectionsProps) {
     </div>
   )
 }
-
 export interface BlogSectionsProps extends LangProp {
   children?: React.ReactNode
   sections: ArticlesSection[]
+  category?: string
+  className?: string
 }

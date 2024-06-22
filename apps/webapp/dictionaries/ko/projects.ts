@@ -5,86 +5,86 @@ export const projects: ProjectContent[] = [
     id: 1,
     content: {
       highlights: {
-        title: 'Highlights',
+        title: '하이라이트',
         content: [
           [
-            'Universal Accessibility: bitcash strives to make advanced technologies like cryptocurrency and AI accessible to everyone.',
-            'User-Friendly Design: The platform emphasizes ease of use with minimalist design and advanced security features.',
-            'Equitable Token System: Tokenomics inspired by equity models to ensure fairness for all stakeholders.',
-            'Fair Distribution Blockchain: Creating a non-profit L1 blockchain for fair token distribution to every individual.',
-            'AI-Focused Launchpad: A dedicated platform offering comprehensive support to AI startups.',
-            'Open-Source and Collaborative: Fostering innovation through an open-source community and transparent practices.',
-            'Rigorous Security Standards: Implementing top-tier KYC/AML policies and advanced security for user protection.',
-            'Global Empowerment: Committed to empowering global users through transformative technological solutions.',
-            'Enhancing Human Connections: Prioritizing genuine human interaction in the anticipated AI-dominated future.',
-            'New Digital Economy Vision: Envisioning a future economy where technology and ethical principles serve global well-being.'
+            '보편적 접근성: bitcash는 암호화폐 및 AI와 같은 첨단 기술을 모든 사람이 이용할 수 있도록 노력하고 있습니다.',
+            '사용자 친화적인 디자인: 이 플랫폼은 미니멀한 디자인과 고급 보안 기능으로 사용 편의성을 강조합니다.',
+            '공평한 토큰 시스템: 모든 이해관계자에 대한 공정성을 보장하기 위해 주식 모델에서 영감을 얻은 토큰경제학.',
+            '공정한 분배 블록체인: 모든 개인에게 공정한 토큰 배포를 위한 비영리 L1 블록체인을 만듭니다.',
+            'AI 중심 런치패드: AI 스타트업을 포괄적으로 지원하는 전용 플랫폼입니다.',
+            '오픈 소스 및 협업: 오픈 소스 커뮤니티와 투명한 관행을 통해 혁신을 촉진합니다.',
+            '엄격한 보안 표준: 사용자 보호를 위해 최고 수준의 KYC/AML 정책과 고급 보안을 구현합니다.',
+            '글로벌 역량 강화: 혁신적인 기술 솔루션을 통해 전 세계 사용자에게 힘을 실어주기 위해 최선을 다하고 있습니다.',
+            '인간관계 강화: AI가 지배하는 미래에 진정한 인간 상호 작용을 우선시합니다.',
+            '새로운 디지털 경제 비전: 기술과 윤리적 원칙이 글로벌 웰빙에 기여하는 미래 경제를 구상합니다.'
           ]
         ]
       },
       product: {
-        title: 'Product Overview',
+        title: '제품개요',
         content: [
           [
-            'Inclusive Technology: bitcash aims to bring cryptocurrency, AI, and DeFi to everyone, not just tech experts.',
-            'Simplified Crypto Wallet: Offers a passwordless login system and an intuitive interface for secure, stress-free transactions.',
-            'Effortless Recovery: Features a robust account recovery system to regain access without traditional complexities.',
-            'Peer-to-Peer Exchange: Enables direct user transactions with local currency stablecoins, simplifying the crypto entry process.',
-            'Local Currency Support: Provides real-time exchange rates for seamless local currency transactions underpinned by USDT.',
-            'DAO Management Platform: Introduces dBoard for enhanced decision-making and governance within decentralized structures.',
-            'AI Startup Launchpad: bitlauncher assists AI startups with secure, efficient fundraising and organizational tools.',
-            'High Compliance Standards: Emphasizes strong regulatory compliance, including KYC and AML policies, and advanced security protocols.',
-            'Open Community: Encourages a collaborative environment for users, developers, and investors to engage and contribute.',
-            'Digital Economy Vision: Invites global participation to shape a new economy where technology enhances human prosperity and connection.'
+            '포용적 기술: 비트캐시는 기술 전문가뿐만 아니라 모든 사람에게 암호화폐, AI, DeFi를 제공하는 것을 목표로 합니다.',
+            '단순화된 암호화폐 지갑: 안전하고 스트레스 없는 거래를 위한 비밀번호 없는 로그인 시스템과 직관적인 인터페이스를 제공합니다.',
+            '손쉬운 복구: 기존의 복잡성 없이 액세스를 다시 얻을 수 있는 강력한 계정 복구 시스템을 갖추고 있습니다.',
+            'P2P 교환: 지역 통화 스테이블코인을 통한 직접 사용자 거래가 가능해져 암호화폐 입력 프로세스가 간소화됩니다.',
+            '현지 통화 지원: USDT를 기반으로 원활한 현지 통화 거래를 위한 실시간 환율을 제공합니다.',
+            'DAO 관리 플랫폼: 분산 구조 내에서 향상된 의사 결정 및 거버넌스를 위해 dBoard를 소개합니다.',
+            'AI 스타트업 런치패드: bitlauncher는 안전하고 효율적인 자금 조달 및 조직 도구를 통해 AI 스타트업을 지원합니다.',
+            '높은 규정 준수 표준: KYC 및 AML 정책과 고급 보안 프로토콜을 포함한 강력한 규제 준수를 강조합니다.',
+            '오픈 커뮤니티: 사용자, 개발자, 투자자가 참여하고 기여할 수 있는 협업 환경을 장려합니다.',
+            '디지털 경제 비전: 기술이 인간의 번영과 연결을 향상시키는 새로운 경제를 형성하기 위해 전 세계의 참여를 유도합니다.'
           ]
         ]
       },
       problem: {
-        title: 'Problem',
+        title: '문제',
         content: [
           [
-            'Technical Hurdles: Cryptocurrency, AI, and DeFi advancements are hampered by complex systems that deter average users.',
-            'Limited Accessibility: A significant portion of the global population lacks simple, accessible platforms to utilize AI and DeFi in everyday life.',
-            'Financial Inequality: The benefits of digital finance and investment opportunities remain exclusive to those with financial knowledge or wealth.',
-            'Widespread Disengagement: Many are left out of the digital revolution due to intimidating technology and finance landscapes.',
-            'Resource Gap: Individuals without access to substantial capital or sophisticated tools are often unable to participate in emerging financial technologies.',
-            'Exclusivity in Innovation: Cutting - edge technologies largely benefit a select group, creating an imbalance in technological empowerment.',
-            'Integration Deficiency: There is a notable absence of a comprehensive platform that integrates AI, blockchain, and DeFi in a user- friendly manner.',
-            'Barriers to Adoption: The intimidating nature of current blockchain solutions hinders widespread adoption and practical use in the mainstream.',
-            'Economic Inequity: Digital finance has yet to bridge the gap between the tech- savvy and the general population, reinforcing economic disparities.'
+            '기술적 장애물: 암호화폐, AI 및 DeFi 발전은 일반 사용자를 방해하는 복잡한 시스템으로 인해 방해를 받습니다.',
+            '제한된 접근성: 전 세계 인구의 상당 부분에는 일상 생활에서 AI와 DeFi를 활용할 수 있는 간단하고 접근 가능한 플랫폼이 부족합니다.',
+            '재정적 불평등: 디지털 금융의 이점과 투자 기회는 여전히 금융 지식이나 부를 가진 사람들에게만 국한됩니다.',
+            '광범위한 이탈: 위협적인 기술과 금융 환경으로 인해 많은 사람들이 디지털 혁명에서 소외됩니다.',
+            '자원 격차: 상당한 자본이나 정교한 도구에 접근할 수 없는 개인은 신흥 금융 기술에 참여할 수 없는 경우가 많습니다.',
+            '혁신의 독점성: 최첨단 기술은 선별된 그룹에게 큰 혜택을 주며 기술 역량 강화에 불균형을 초래합니다.',
+            '통합 결함: AI, 블록체인, DeFi를 사용자 친화적으로 통합하는 종합 플랫폼이 없다는 점은 주목할 만합니다.',
+            '채택의 장벽: 현재 블록체인 솔루션의 위협적인 특성은 주류에서의 광범위한 채택과 실제 사용을 방해합니다.',
+            '경제적 불평등: 디지털 금융은 아직까지 기술에 정통한 사람과 일반 대중 간의 격차를 메우지 못해 경제적 격차가 심화되고 있습니다.'
           ]
         ]
       },
       solution: {
-        title: 'Solution',
+        title: '해결책',
         content: [
           [
-            'Intuitive Design: Bitcash streamlines the blockchain experience with an intuitive interface, removing technical barriers to cryptocurrency and AI.',
-            'Global Accessibility: Offers global market access with P2P on-ramp and local stablecoins, targeting financial inclusion.',
-            'Fair Wealth Distribution: Implements a non-profit blockchain with equitable token distribution to ensure a balanced financial future for all users.',
-            'Unified Platform: Bitcash provides a comprehensive ecosystem for AI startups and DeFi applications, fostering seamless innovation and integration.',
-            'Empowering Community Growth: Encourages open collaboration and community-driven innovation, leveraging collective intelligence for platform advancement.',
-            'Education and Support: Commits to user education and regulatory compliance, creating a secure and informed user base.',
-            'Technological Democratization: Aims to make advanced technology accessible and usable for everyone, democratizing AI and financial tools.',
-            'Catalyst for Change: Acts as a launchpad for transformative applications, driving growth and fostering a dynamic, creative community.',
-            'Human-Centric Approach: Focuses on maintaining human connections and integrity in an AI-dominated future.',
-            'Economic Redefinition: Bitcash strives to reshape the global economy to be more inclusive, equitable, and supportive of human potential.'
+            '직관적인 디자인: Bitcash는 직관적인 인터페이스로 블록체인 경험을 간소화하여 암호화폐와 AI에 대한 기술적 장벽을 제거합니다.',
+            '글로벌 접근성: 금융 포용을 목표로 하는 P2P 온램프 및 현지 스테이블코인을 통해 글로벌 시장 접근을 제공합니다.',
+            '공정한 자산 분배: 모든 사용자에게 균형 잡힌 재정적 미래를 보장하기 위해 공평한 토큰 분배를 갖춘 비영리 블록체인을 구현합니다.',
+            '통합 플랫폼: Bitcash는 AI 스타트업과 DeFi 애플리케이션을 위한 포괄적인 생태계를 제공하여 원활한 혁신과 통합을 촉진합니다.',
+            '지역사회 성장 강화: 플랫폼 발전을 위해 집단 지능을 활용하여 개방형 협업과 커뮤니티 중심 혁신을 장려합니다.',
+            '교육 및 지원: 사용자 교육 및 규정 준수에 전념하여 안전하고 정보가 풍부한 사용자 기반을 구축합니다.',
+            '기술민주화: 모든 사람이 첨단 기술을 접근하고 사용할 수 있도록 하고 AI와 금융 도구를 민주화하는 것을 목표로 합니다.',
+            '변화의 촉매제: 혁신적인 애플리케이션을 위한 발판 역할을 하여 성장을 촉진하고 역동적이고 창의적인 커뮤니티를 육성합니다.',
+            '인간 중심 접근 방식: AI가 지배하는 미래에 인간 관계와 무결성을 유지하는 데 중점을 둡니다.',
+            '경제적 재정의: Bitcash는 글로벌 경제를 더욱 포용적이고 공평하며 인간의 잠재력을 지원하는 방향으로 재편하기 위해 노력하고 있습니다.'
           ]
         ]
       },
       businessModel: {
-        title: 'Business Model',
+        title: '비즈니스 모델',
         content: [
           [
-            'Utility Token Ecosystem: Implements a dynamic mint-and-burn utility token system central to transactions and services, ensuring ecosystem balance.',
-            "Multiple Revenue Channels: Generates income through transaction fees, P2P exchange margins, and services around AI-driven DeFi applications, plus earnings from the AI startup launchpad 'Bitlauncher'.",
-            'Community-Driven Innovation: Encourages open-source development and community contributions, fostering a cycle of continuous innovation and platform improvement.',
-            'Equitable Blockchain Infrastructure: Introduces a non-profit L1 blockchain for fair token distribution, underpinning a decentralized economy accessible to all.',
-            'Fair Token Distribution Model: Adopts an ethical approach to token distribution, rewarding contributions with real-time value, ensuring equity and transparency.',
-            'Strategic Partnerships: Forms alliances across sectors to enhance market presence and integrate Bitcash services into a wider ecosystem.',
-            'Investment in R&D: Continuously improves technology and services through research and development, maintaining a competitive edge.',
-            'Compliance and Security Priority: Dedicates resources to ensure regulatory compliance and robust security, building trust and platform longevity.',
-            'Educational Initiatives: Invests in user education and community engagement, empowering users to maximize platform benefits and contribute to its evolution.',
-            'Targeted Marketing for User Growth: Employs strategic marketing to attract a diverse user base, demystifying blockchain and AI to encourage mainstream adoption.'
+            '유틸리티 토큰 생태계: 거래 및 서비스의 중심에 있는 역동적인 주조 및 소각 유틸리티 토큰 시스템을 구현하여 생태계 균형을 보장합니다.',
+            "다양한 수익 채널: AI 기반 DeFi 애플리케이션을 중심으로 거래 수수료, P2P 교환 마진, 서비스를 통해 수익을 창출하고 AI 스타트업 런치패드 'Bitlauncher'를 통해 수익을 창출합니다.",
+            '커뮤니티 중심 혁신: 오픈 소스 개발과 커뮤니티 기여를 장려하여 지속적인 혁신과 플랫폼 개선의 순환을 조성합니다.',
+            '공평한 블록체인 인프라: 공정한 토큰 배포를 위해 비영리 L1 블록체인을 도입하여 모두가 접근할 수 있는 분산 경제를 뒷받침합니다.',
+            '공정한 토큰 배포 모델: 토큰 배포에 대한 윤리적 접근 방식을 채택하여 실시간 가치로 기여를 보상하고 형평성과 투명성을 보장합니다.',
+            '전략적 파트너십: 시장 입지를 강화하고 Bitcash 서비스를 더 넓은 생태계에 통합하기 위해 여러 부문에 걸쳐 동맹을 형성합니다.',
+            'R&D 투자: 연구개발을 통해 기술과 서비스를 지속적으로 개선하고 경쟁력을 유지합니다.',
+            '규정 준수 및 보안 우선순위: 규정 준수와 강력한 보안을 보장하고 신뢰를 구축하며 플랫폼 수명을 연장하는 데 리소스를 집중합니다.',
+            '교육 이니셔티브: 사용자 교육과 커뮤니티 참여에 투자하여, 사용자가 플랫폼의 이점을 극대화하고 플랫폼의 발전에 기여할 수 있도록 지원합니다.',
+            '사용자 성장을 위한 타겟 마케팅: 다양한 사용자 기반을 유치하기 위해 전략적 마케팅을 사용하고, 블록체인과 AI를 명확하게 설명하여 주류 채택을 장려합니다.'
           ],
           [
             "This business model represents Bitcash's commitment to a sustainable, equitable digital economy, leveraging community input and innovation for collective growth."
@@ -92,19 +92,19 @@ export const projects: ProjectContent[] = [
         ]
       },
       tokenomics: {
-        title: 'Tokenomics',
+        title: '토큰경제학',
         content: [
           [
-            'Dual Token System: Utilizes utility tokens for transactions and services within Bitcash and governance tokens for voting and decision-making by contributors and stakeholders.',
-            'Contribution-Based Distribution: Tokens are distributed based on active contributions, such as development, community engagement, or investment, rewarding early and ongoing support.',
-            'Dynamic Mint-and-Burn Policy: Balances token supply with demand by minting tokens for rewards and development, and burning a portion to counter inflation and enhance value.',
-            'Diverse Revenue Streams: Generates income from transaction fees, Bitcash Launchpad service fees, forex and stablecoin exchanges, and strategic partnerships.',
-            'Revenue Reinvestment: Allocates a portion of earnings to continuous platform development, security, marketing, and community initiatives, ensuring sustainable growth.',
-            'Equitable Distribution Model: Adopts a fair distribution system, akin to traditional shareholder models, ensuring tokens reflect real value and contributions.',
-            'Transparent Token Valuation: Focuses on transparency and real value creation in token distribution, avoiding speculation for stable economic foundations.',
-            'Governance Participation: Allows token holders to engage in governance, contributing to the platform’s direction and policies, emphasizing democratic participation.',
-            "Economic Adaptability: Maintains a flexible tokenomics strategy, responsive to the community and platform's evolving needs for a balanced digital economy.",
-            'Vision of Shared Prosperity: Aims to build a new global economy where Bitcash tokens underpin a system of innovation, participation, and shared benefits, transcending traditional economic barriers.'
+            '듀얼 토큰 시스템: Bitcash 내의 거래 및 서비스에는 유틸리티 토큰을 활용하고 기여자와 이해관계자의 투표 및 의사 결정에는 거버넌스 토큰을 활용합니다.',
+            '기여 기반 분배: 토큰은 개발, 커뮤니티 참여 또는 투자와 같은 적극적인 기여를 기반으로 배포되며, 초기 및 지속적인 지원에 대한 보상으로 제공됩니다.',
+            '동적 주조 및 소각 정책: 보상과 개발을 위해 토큰을 발행하고 인플레이션에 대응하고 가치를 높이기 위해 일부를 소각하여 토큰 공급과 수요의 균형을 맞춥니다.',
+            '다양한 수익원: 거래 수수료, Bitcash Launchpad 서비스 수수료, 외환 및 스테이블코인 거래소, 전략적 파트너십을 통해 수익을 창출합니다.',
+            '수익 재투자: 지속적인 플랫폼 개발, 보안, 마케팅 및 커뮤니티 이니셔티브에 수익의 일부를 할당하여 지속 가능한 성장을 보장합니다.',
+            '공평한 분배 모델: 전통적인 주주 모델과 유사한 공정한 분배 시스템을 채택하여 토큰이 실제 가치와 기여도를 반영하도록 보장합니다.',
+            '투명한 토큰 가치 평가: 안정적인 경제 기반을 위해 투기를 피하고 토큰 분배의 투명성과 실제 가치 창출에 중점을 둡니다.',
+            '거버넌스 참여: 토큰 보유자가 거버넌스에 참여하여 플랫폼의 방향과 정책에 기여하고 민주적 참여를 강조할 수 있도록 합니다.',
+            "경제적 적응성: 균형 잡힌 디지털 경제에 대한 커뮤니티와 플랫폼의 진화하는 요구에 부응하여 유연한 토큰경제학 전략을 유지합니다.",
+            '공동번영의 비전: Bitcash 토큰이 전통적인 경제적 장벽을 초월하여 혁신, 참여 및 혜택 공유 시스템을 뒷받침하는 새로운 글로벌 경제를 구축하는 것을 목표로 합니다.'
           ]
         ]
       }
@@ -115,27 +115,27 @@ export const projects: ProjectContent[] = [
     id: 2,
     content: {
       highlights: {
-        title: 'Highlights',
+        title: '하이라이트',
         content: [[]]
       },
       product: {
-        title: 'Product Overview',
+        title: '제품개요',
         content: [[]]
       },
       problem: {
-        title: 'Problem',
+        title: '문제',
         content: [[]]
       },
       solution: {
-        title: 'Solution',
+        title: '해결책',
         content: [[]]
       },
       businessModel: {
-        title: 'Business Model',
+        title: '비즈니스 모델',
         content: [[]]
       },
       tokenomics: {
-        title: 'Tokenomics',
+        title: '토큰경제학',
         content: [[]]
       }
     }
@@ -144,27 +144,27 @@ export const projects: ProjectContent[] = [
     id: 3,
     content: {
       highlights: {
-        title: 'Highlights',
+        title: '하이라이트',
         content: [[]]
       },
       product: {
-        title: 'Product Overview',
+        title: '제품개요',
         content: [[]]
       },
       problem: {
-        title: 'Problem',
+        title: '문제',
         content: [[]]
       },
       solution: {
-        title: 'Solution',
+        title: '해결책',
         content: [[]]
       },
       businessModel: {
-        title: 'Business Model',
+        title: '비즈니스 모델',
         content: [[]]
       },
       tokenomics: {
-        title: 'Tokenomics',
+        title: '토큰경제학',
         content: [[]]
       }
     }

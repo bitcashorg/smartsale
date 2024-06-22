@@ -72,22 +72,22 @@ export async function getArticleSections(
     {
       name: 'AI',
       slug: 'ai',
-      articles: (aiData?.slice(0, 4) || []) as BlogArticleRecord[]
+      articles: (aiData?.slice(0, 5) || []) as BlogArticleRecord[]
     },
     {
       name: 'AI Research',
       slug: 'ai-research',
-      articles: (aiResearchData?.slice(0, 4) || []) as BlogArticleRecord[]
+      articles: (aiResearchData?.slice(0, 5) || []) as BlogArticleRecord[]
     },
     {
       name: 'News',
       slug: 'news',
-      articles: (newsData?.slice(0, 4) || []) as BlogArticleRecord[]
+      articles: (newsData?.slice(0, 5) || []) as BlogArticleRecord[]
     },
     {
       name: 'Bitcash',
       slug: 'bitcash',
-      articles: (bitcashData?.slice(0, 4) || []) as BlogArticleRecord[]
+      articles: (bitcashData?.slice(0, 5) || []) as BlogArticleRecord[]
     },
     {
       name: 'Startup',
@@ -112,6 +112,46 @@ export async function getArticleSections(
   ]
 
   return sections
+}
+export async function getRecentArticleSections(
+  locale: SiteLocale
+): Promise<ArticlesSection[]> {
+  const {
+    bitcoinData,
+    cryptoData,
+    investingData,
+    startupData,
+    aiData,
+    newsData,
+    bitcashData,
+    aiResearchData
+  } = await getBlogData(locale)
+
+  const recentsArticles = [
+    {
+      name: 'Bitcoin',
+      slug: 'bitcoin',
+      articles: (bitcoinData?.slice(0) || []) as BlogArticleRecord[]
+    },
+    {
+      name: 'Crypto',
+      slug: 'crypto',
+      articles: (cryptoData?.slice(0) || []) as BlogArticleRecord[]
+    },
+    {
+      name: 'Startup',
+      slug: 'startup',
+      articles: (startupData?.slice(0) || []) as BlogArticleRecord[]
+    },
+
+    {
+      name: 'Investment',
+      slug: 'investing',
+      articles: (investingData?.slice(0) || []) as BlogArticleRecord[]
+    }
+  ]
+
+  return recentsArticles
 }
 
 export async function getBlogCategoryLandingData(
@@ -163,6 +203,7 @@ export async function getBlogArticleData(
   category: string,
   slug: string
 ) {
+  // console.log('getBlogArticleData', { locale, category, slug })
   const [i18n, categories] = await Promise.all([
     getLayoutText(locale, [locale]),
     getBlogCategory(category, locale, [locale], {

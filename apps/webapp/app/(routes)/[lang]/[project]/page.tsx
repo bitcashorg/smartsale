@@ -2,9 +2,16 @@ import { getProjectBySlug, getProjects } from '@/lib/projects'
 import { redirect } from 'next/navigation'
 import { cn } from '@/lib/utils'
 import { ProjectHeader } from '@/components/routes/project/project-header'
+import { ProjectDataCard } from '@/components/routes/project/project-data-card'
+import { Card } from '@/components/ui/card'
+import { Countdown } from '@/components/shared/countdown'
+import Link from 'next/link'
+import dynamic from 'next/dynamic'
+import { Button } from '@/components/ui/button'
 import { locales } from '@/dictionaries/locales'
 import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
 import { getDictionary } from '@/dictionaries'
+import { appConfig } from '@/lib/config'
 
 export default async function ProjectPage({ params }: ProjectPageProps) {
   const dict = await getDictionary(params.lang)
@@ -17,7 +24,24 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
   return (
     <>
       <div className="flex min-h-[calc(83vh-4rem)] flex-col">
-        <ProjectHeader project={project} />
+        <ProjectHeader project={project}>
+          <div className="flex flex-col gap-8 lg:flex-row">
+            <Card className="w-full border-card/30 bg-card/60 pb-10 backdrop-blur-lg">
+              <Countdown />
+              <div className="align-center flex items-center justify-center gap-6">
+                <DynamicAddressForm projectId={project.id} />
+
+                {appConfig.features.presale ? (
+                  <Link href={`/${project.slug}/presale`}>
+                    <Button>Active Presale</Button>
+                  </Link>
+                ) : null}
+              </div>
+            </Card>
+
+            <ProjectDataCard project={project} />
+          </div>
+        </ProjectHeader>
 
         <div className="container">
           {projectContentObjectKeys.map((key, index) => {
@@ -99,3 +123,14 @@ type ProjectPageParams = { project: string; lang: SiteLocale }
 type ProjectPageProps = {
   params: ProjectPageParams
 }
+
+const DynamicAddressForm = dynamic(
+  () =>
+    import('../../../../components/routes/project/register-address-form').then(
+      mod => mod.RegisterAddressForm
+    ),
+  {
+    ssr: false,
+    loading: () => <Button>Register</Button>
+  }
+)

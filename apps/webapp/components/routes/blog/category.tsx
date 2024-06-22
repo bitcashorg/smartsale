@@ -9,7 +9,7 @@ import {
   CMSPageSeoText,
   getBlogCategoriesTypes
 } from '@/services/datocms'
-import { PostCard } from './post-card'
+import { ArticleCard } from '../../shared/article-card'
 import { cn } from '@/lib/utils'
 import { LucideIcons } from './lucide-icons'
 import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
@@ -55,7 +55,7 @@ export function CategoryComponent({ params, sections }: BlogCategoryPageProps) {
   }, [topic, sections.length])
 
   return (
-    <div className="flex flex-col items-center justify-start w-full py-10">
+    <div className="flex w-full flex-col items-center justify-start py-10">
       {(filteredSectionContent || sections)?.map((section, index) => {
         const contents = topic ? section?.content : section?.content.slice(0, 4)
         //  console.log("contents::", contents)
@@ -66,8 +66,8 @@ export function CategoryComponent({ params, sections }: BlogCategoryPageProps) {
               key={index}
               id={section.topic}
             >
-              <div className="flex items-center justify-between mb-space-32">
-                <span className="font-semibold text-black capitalize sub-2-lg dark:text-white">
+              <div className="mb-space-32 flex items-center justify-between">
+                <span className="sub-2-lg font-semibold capitalize text-black dark:text-white">
                   {section.topic}
                 </span>
                 <Link
@@ -77,7 +77,7 @@ export function CategoryComponent({ params, sections }: BlogCategoryPageProps) {
                       : `/${params.lang}/blog/${category}?topic=${section.topic}`
                   }
                   className={cn(
-                    'focus-within:!text-primary-200 hover:!text-primary-200 text-black dark:text-white '
+                    'text-black focus-within:!text-primary-200 hover:!text-primary-200 dark:text-white'
                   )}
                   shallow
                 >
@@ -90,11 +90,12 @@ export function CategoryComponent({ params, sections }: BlogCategoryPageProps) {
 
               <ul className="sm:grid-cols-auto-dense flex w-full flex-col gap-20 py-5 sm:grid sm:grid-cols-[repeat(auto-fill,minmax(300px,1fr))] sm:flex-wrap md:gap-5 lg:grid-cols-[repeat(auto-fill,minmax(260px,1fr))]">
                 {contents.map((post, index) => (
-                  <PostCard
+                  <ArticleCard
                     post={post}
                     sectionSlug={category}
                     key={index}
                     lang={params.lang}
+                    meta={true}
                   />
                 ))}
               </ul>

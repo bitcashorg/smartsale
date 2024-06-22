@@ -1,4 +1,5 @@
 export default {
-  eyebrow: 'Be Part Of The Intelligent Future.',
-  title: 'JOIN THE AI/WEB3 REVOLUTION NOW',
+  eyebrow: 'Jadilah Bagian Dari Masa Depan Cerdas.',
+  title: 'BERGABUNGLAH DENGAN REVOLUSI SEKARANG',
+  upcomingHeading: 'Lelang Mendatang'
 } as const

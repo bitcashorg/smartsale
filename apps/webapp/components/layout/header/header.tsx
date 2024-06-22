@@ -11,13 +11,13 @@ import { SessionButtonLoader } from '../session/session-button'
 import { MobileNavLoader } from './mobile-nav'
 import { LangSelector } from './lang-selector/lang-selector'
 import { LangProp } from '@/types/routing.type'
+import { Navigation } from './new-nav'
+import { appConfig } from '@/lib/config'
 
-const isProduction = process.env.NODE_ENV === 'production'
-
-export function Header({ lang }: LangProp) {
+export function Header({ lang, dict }: HeaderProps) {
   return (
     <div className="sticky top-0 z-50 flex h-16 bg-background">
-      <div className="container flex flex-row items-center justify-between px-4 bg-background">
+      <div className="container flex flex-row items-center justify-between bg-background px-4">
         <div className="flex h-full items-center md:min-w-[300px]">
           <Link href={`/${lang}`}>
             <IconBitlauncher />
@@ -25,22 +25,27 @@ export function Header({ lang }: LangProp) {
         </div>
 
         <div className="hidden md:flex md:gap-3 md:pl-4 lg:ml-[-1px] lg:gap-10">
-          <NavLinks lang={lang} />
+          {appConfig.features.newNavStruct ? (
+            <Navigation lang={lang} />
+          ) : (
+            <NavLinks lang={lang} dict={dict} />
+          )}
         </div>
 
         {/* Desktop action buttons */}
-        <div className="hidden items-center justify-end md:flex md:min-w-[300px] md:gap-3 lg:gap-5">
-          {/* <DiscordButton /> */}
-          <Suspense fallback={<Button>Login</Button>}>
-            <DynamicSessionButton />
-          </Suspense>
-          {!isProduction ? <LangSelector lang={lang} /> : null}
+        <div className="flex gap-5">
+          <div className="hidden items-center justify-end md:flex md:min-w-[300px] md:gap-3 lg:gap-5">
+            {/* <DiscordButton /> */}
+            <Suspense fallback={<Button>Login</Button>}>
+              <DynamicSessionButton />
+            </Suspense>
+          </div>
+
+          <LangSelector lang={lang} />
         </div>
 
-        {/* mobile navbar icon */}
-
         <div className="flex md:hidden">
-          <DynamicMobileNav lang={lang} />
+          <DynamicMobileNav lang={lang} dict={dict} />
         </div>
       </div>
     </div>
@@ -81,4 +86,8 @@ function DiscordButton() {
       <span className="hidden md:block">Discord</span>
     </Link>
   )
+}
+
+interface HeaderProps extends LangProp {
+  dict: any
 }

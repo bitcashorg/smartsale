@@ -1,5 +1,5 @@
 import '@/app/globals.css'
-import { Footer } from '@/components/layout/footer/footer'
+import Footer from '@/components/layout/footer/footer'
 import { Header } from '@/components/layout/header/header'
 import { Providers } from '@/components/layout/providers'
 import { GlobalStoreProvider } from '@/hooks/use-global-store'
@@ -14,6 +14,7 @@ import { SpeedInsights } from '@vercel/speed-insights/next'
 import { locales } from '@/dictionaries/locales'
 import { Analytics } from '@vercel/analytics/react'
 import { CommonPageParams } from '@/types/routing.type'
+import { getDictionary } from '@/dictionaries'
 
 const openSans = Open_Sans({
   subsets: ['latin', 'latin-ext'],
@@ -24,6 +25,7 @@ export default async function RootLayout({
   children,
   params
 }: RootLayoutProps) {
+  const dict = await getDictionary(params.lang)
   return (
     <html
       lang={params.lang || 'en'}
@@ -38,10 +40,10 @@ export default async function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <Header lang={params.lang} />
+            <Header lang={params.lang} dict={dict} />
             {/* <Toaster /> */}
             <main className="flex flex-col flex-1">{children}</main>
-            <Footer lang={params.lang} />
+            <Footer params={params} />
             <DynamicSessionDialog />
           </Providers>
         </GlobalStoreProvider>

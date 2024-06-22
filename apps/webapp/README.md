@@ -40,3 +40,8 @@ You will need to use the environment variables [defined in `.env.example`](.env.
 pnpm install
 pnpm dev
 ```
+
+## Sanity
+
+https://sanity.io
+https://www.youtube.com/watch?v=mG73QRBtrC0&t=1198s

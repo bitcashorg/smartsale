@@ -2,48 +2,48 @@ import { ContentTextType, PageContentData } from '@/components/shared/content'
 
 const securityTips = [
   {
-    title: 'Beware of Phishing Attacks',
+    title: 'Waspadai Serangan Phishing',
     content:
-      'Phishing is a common technique used by attackers to gain access to your personal information. Always verify the URL of the Bitlauncher and ensure it is the legitimate site before connecting your MetaMask wallet. Be cautious of emails or websites impersonating Bitlauncher.'
+      'Phishing adalah teknik umum yang digunakan oleh penyerang untuk mendapatkan akses ke informasi pribadi Anda. Selalu verifikasi URL Bitlauncher dan pastikan itu adalah situs yang sah sebelum menghubungkan dompet MetaMask Anda. Berhati-hatilah terhadap email atau situs web yang meniru Bitlauncher.'
   },
   {
-    title: 'MetaMask Security',
+    title: 'Keamanan MetaMask',
     content:
-      'When using MetaMask, never share your seed phrase with anyone. Be cautious of any website or person asking for your MetaMask credentials. Always lock your MetaMask wallet when not in use.'
+      'Saat menggunakan MetaMask, jangan pernah membagikan frase awal Anda kepada siapa pun. Berhati-hatilah terhadap situs web atau orang mana pun yang meminta kredensial MetaMask Anda. Selalu kunci dompet MetaMask Anda saat tidak digunakan.'
   },
   {
-    title: 'Impersonation on Discord and Social Media',
+    title: 'Peniruan Identitas di Discord dan Media Sosial',
     content:
-      'Be wary of individuals on platforms like Discord and social media who claim to be representatives of Bitlauncher. Official staff will never ask for your private keys or wallet credentials.'
+      'Berhati-hatilah terhadap individu di platform seperti Discord dan media sosial yang mengaku sebagai perwakilan Bitlauncher. Staf resmi tidak akan pernah meminta kunci pribadi atau kredensial dompet Anda.'
   },
   {
-    title: 'Secure Your Digital Environment',
+    title: 'Amankan Lingkungan Digital Anda',
     content:
-      'Ensure that your computer and internet connection are secure. Use antivirus software, enable firewalls, and update your software regularly to prevent malware attacks.'
+      'Pastikan komputer dan koneksi internet Anda aman. Gunakan perangkat lunak antivirus, aktifkan firewall, dan perbarui perangkat lunak Anda secara rutin untuk mencegah serangan malware.'
   },
   {
-    title: 'Double-Check Transaction Details',
+    title: 'Periksa Kembali Detail Transaksi',
     content:
-      'Before confirming any transaction on MetaMask, double-check the recipients address, the amount, and the gas fees. Scammers often try to manipulate transaction details.'
+      'Sebelum mengonfirmasi transaksi apa pun di MetaMask, periksa kembali alamat penerima, jumlah, dan biaya bahan bakar. Penipu sering kali mencoba memanipulasi detail transaksi.'
   },
   {
-    title: 'Stay Informed and Updated',
+    title: 'Tetap Terinformasi dan Diperbarui',
     content:
-      'Follow only the official Bitlauncher channels for updates and information. Do not trust unverified sources.'
+      'Ikuti hanya saluran resmi Bitlauncher untuk pembaruan dan informasi. Jangan percaya sumber yang tidak terverifikasi.'
   },
   {
-    title: 'Report Suspicious Activities',
+    title: 'Laporkan Aktivitas Mencurigakan',
     content:
-      'If you encounter any suspicious activity or believe you are a victim of a scam, contact the official Bitlauncher support immediately.'
+      'Jika Anda menemukan aktivitas mencurigakan atau yakin Anda adalah korban penipuan, segera hubungi dukungan resmi Bitlauncher.'
   }
 ] as const
 
 // Define the content using mapped security tips
 const content: PageContentData = [
-  { type: 'h1', text: 'Security Recommendations for Bitlauncher Participants' },
+  { type: 'h1', text: 'Rekomendasi Keamanan untuk Peserta Bitlauncher' },
   {
     type: 'p',
-    text: 'Participating in auctions on Bitlauncher, a fork of Gnosis, requires vigilance and awareness of various security threats. Here are some crucial tips to help keep your investments safe:'
+    text: 'Berpartisipasi dalam lelang di Bitlauncher, sebuah cabang dari Gnosis, memerlukan kewaspadaan dan kesadaran terhadap berbagai ancaman keamanan. Berikut beberapa tip penting untuk membantu menjaga investasi Anda tetap aman:'
   },
   ...securityTips.flatMap((tip, index) => [
     { type: 'h2' as ContentTextType, text: `${tip.title}` },

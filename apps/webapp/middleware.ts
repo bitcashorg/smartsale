@@ -5,6 +5,15 @@ import { defaultLocale, locales } from './dictionaries/locales'
 
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl
+
+  // Redirect all requests matching any language followed by /blog to English /blog
+  // const blogRegex = /^\/(\w{2})\/blog\//
+  // if (blogRegex.test(pathname)) {
+  //   const newPathname = pathname.replace(blogRegex, '/en/blog/')
+  //   request.nextUrl.pathname = newPathname
+  //   return NextResponse.redirect(request.nextUrl)
+  // }
+
   const hasLang = locales.some(
     lang => pathname.startsWith(`/${lang}/`) || pathname === `/${lang}`
   )
@@ -31,6 +40,6 @@ function getLocale(request: NextRequest): string {
 }
 export const config = {
   matcher: [
-    '/((?!_next|_nextjs|images|api|studio|favicon.ico|__nextjs_original-stack-frame).*)'
+    '/((?!_next|_nextjs|images|api|studio|media|favicon.ico|__nextjs_original-stack-frame).*)'
   ]
 }

@@ -77,9 +77,9 @@ export function BalancesTable() {
     <Table>
       <TableHeader>
         <TableRow>
-          <TableHead>Coin</TableHead>
+          <TableHead>Ticker</TableHead>
           <TableHead>Network</TableHead>
-          <TableHead>Info</TableHead>
+          <TableHead>Description</TableHead>
           <TableHead className="text-right">Balance</TableHead>
         </TableRow>
       </TableHeader>

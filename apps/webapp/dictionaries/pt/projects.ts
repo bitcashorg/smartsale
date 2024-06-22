@@ -5,86 +5,86 @@ export const projects: ProjectContent[] = [
     id: 1,
     content: {
       highlights: {
-        title: 'Highlights',
+        title: 'Destaques',
         content: [
           [
-            'Universal Accessibility: bitcash strives to make advanced technologies like cryptocurrency and AI accessible to everyone.',
-            'User-Friendly Design: The platform emphasizes ease of use with minimalist design and advanced security features.',
-            'Equitable Token System: Tokenomics inspired by equity models to ensure fairness for all stakeholders.',
-            'Fair Distribution Blockchain: Creating a non-profit L1 blockchain for fair token distribution to every individual.',
-            'AI-Focused Launchpad: A dedicated platform offering comprehensive support to AI startups.',
-            'Open-Source and Collaborative: Fostering innovation through an open-source community and transparent practices.',
-            'Rigorous Security Standards: Implementing top-tier KYC/AML policies and advanced security for user protection.',
-            'Global Empowerment: Committed to empowering global users through transformative technological solutions.',
-            'Enhancing Human Connections: Prioritizing genuine human interaction in the anticipated AI-dominated future.',
-            'New Digital Economy Vision: Envisioning a future economy where technology and ethical principles serve global well-being.'
+            'Acessibilidade Universal: O bitcash se esforça para tornar tecnologias avançadas como criptomoeda e IA acessíveis a todos.',
+            'Design amigável: A plataforma enfatiza a facilidade de uso com design minimalista e recursos avançados de segurança.',
+            'Sistema de Token Equitativo: Tokenomics inspirada em modelos de patrimônio para garantir justiça para todas as partes interessadas.',
+            'Blockchain de distribuição justa: Criação de um blockchain L1 sem fins lucrativos para distribuição justa de tokens a cada indivíduo.',
+            'Launchpad focado em IA: Uma plataforma dedicada que oferece suporte abrangente para startups de IA.',
+            'Código aberto e colaborativo: Promover a inovação por meio de uma comunidade de código aberto e práticas transparentes.',
+            'Padrões de segurança rigorosos: Implementação de políticas KYC/AML de alto nível e segurança avançada para proteção do usuário.',
+            'Empoderamento Global: Comprometida em capacitar usuários globais por meio de soluções tecnológicas transformadoras.',
+            'Melhorando as conexões humanas: Priorizando a interação humana genuína no futuro previsto dominado pela IA.',
+            'Nova Visão da Economia Digital: Prevendo uma economia futura onde a tecnologia e os princípios éticos sirvam ao bem-estar global'
           ]
         ]
       },
       product: {
-        title: 'Product Overview',
+        title: 'Resumo do Produto',
         content: [
           [
-            'Inclusive Technology: bitcash aims to bring cryptocurrency, AI, and DeFi to everyone, not just tech experts.',
-            'Simplified Crypto Wallet: Offers a passwordless login system and an intuitive interface for secure, stress-free transactions.',
-            'Effortless Recovery: Features a robust account recovery system to regain access without traditional complexities.',
-            'Peer-to-Peer Exchange: Enables direct user transactions with local currency stablecoins, simplifying the crypto entry process.',
-            'Local Currency Support: Provides real-time exchange rates for seamless local currency transactions underpinned by USDT.',
-            'DAO Management Platform: Introduces dBoard for enhanced decision-making and governance within decentralized structures.',
-            'AI Startup Launchpad: bitlauncher assists AI startups with secure, efficient fundraising and organizational tools.',
-            'High Compliance Standards: Emphasizes strong regulatory compliance, including KYC and AML policies, and advanced security protocols.',
-            'Open Community: Encourages a collaborative environment for users, developers, and investors to engage and contribute.',
-            'Digital Economy Vision: Invites global participation to shape a new economy where technology enhances human prosperity and connection.'
+            'Tecnologia Inclusiva: O bitcash tem como objetivo levar criptomoeda, IA e DeFi para todos, não apenas para especialistas em tecnologia.',
+            'Carteira criptografada simplificada: Oferece um sistema de login sem senha e uma interface intuitiva para transações seguras e sem estresse.',
+            'Recuperação sem esforço: Apresenta um sistema robusto de recuperação de conta para recuperar o acesso sem as complexidades tradicionais.',
+            'Troca entre pares: Permite transações diretas do usuário com stablecoins em moeda local, simplificando o processo de entrada de criptografia.',
+            'Suporte para moeda local: Fornece taxas de câmbio em tempo real para transações contínuas em moeda local sustentadas pelo USDT.',
+            'Plataforma de gerenciamento DAO: Apresenta o dBoard para melhorar a tomada de decisões e governança em estruturas descentralizadas.',
+            'Plataforma de inicialização de IA: O bitlauncher auxilia startups de IA com ferramentas organizacionais e de arrecadação de fundos seguras e eficientes.',
+            'Altos padrões de conformidade: Enfatiza a forte conformidade regulatória, incluindo políticas KYC e AML e protocolos de segurança avançados.',
+            'Comunidade aberta: Incentiva um ambiente colaborativo para que usuários, desenvolvedores e investidores se envolvam e contribuam.',
+            'Visão da Economia Digital: Convida a participação global para moldar uma nova economia onde a tecnologia aumente a prosperidade e a conexão humana.'
           ]
         ]
       },
       problem: {
-        title: 'Problem',
+        title: 'Problema',
         content: [
           [
-            'Technical Hurdles: Cryptocurrency, AI, and DeFi advancements are hampered by complex systems that deter average users.',
-            'Limited Accessibility: A significant portion of the global population lacks simple, accessible platforms to utilize AI and DeFi in everyday life.',
-            'Financial Inequality: The benefits of digital finance and investment opportunities remain exclusive to those with financial knowledge or wealth.',
-            'Widespread Disengagement: Many are left out of the digital revolution due to intimidating technology and finance landscapes.',
-            'Resource Gap: Individuals without access to substantial capital or sophisticated tools are often unable to participate in emerging financial technologies.',
-            'Exclusivity in Innovation: Cutting - edge technologies largely benefit a select group, creating an imbalance in technological empowerment.',
-            'Integration Deficiency: There is a notable absence of a comprehensive platform that integrates AI, blockchain, and DeFi in a user- friendly manner.',
-            'Barriers to Adoption: The intimidating nature of current blockchain solutions hinders widespread adoption and practical use in the mainstream.',
-            'Economic Inequity: Digital finance has yet to bridge the gap between the tech- savvy and the general population, reinforcing economic disparities.'
+            'Obstáculos Técnicos: Os avanços em criptomoedas, IA e DeFi são dificultados por sistemas complexos que desencorajam os usuários comuns.',
+            'Acessibilidade Limitada: Uma parcela significativa da população global carece de plataformas simples e acessíveis para utilizar IA e DeFi na vida cotidiana.',
+            'Desigualdade Financeira: Os benefícios das finanças digitais e das oportunidades de investimento permanecem exclusivos para aqueles com conhecimento financeiro ou riqueza.',
+            'Desengajamento generalizado: Muitos são deixados de fora da revolução digital devido aos intimidantes cenários tecnológicos e financeiros.',
+            'Lacuna de recursos: Indivíduos sem acesso a capital substancial ou a ferramentas sofisticadas são muitas vezes incapazes de participar em tecnologias financeiras emergentes.',
+            'Exclusividade em Inovação: As tecnologias de ponta beneficiam em grande parte um grupo seleto, criando um desequilíbrio no empoderamento tecnológico.',
+            'Deficiência de Integração: Há uma notável ausência de uma plataforma abrangente que integre IA, blockchain e DeFi de maneira fácil de usar.',
+            'Barreiras à adoção: A natureza intimidadora das atuais soluções blockchain dificulta a adoção generalizada e o uso prático no mainstream.',
+            'Desigualdade Econômica: O financiamento digital ainda não conseguiu colmatar a lacuna entre os especialistas em tecnologia e a população em geral, reforçando as disparidades económicas.'
           ]
         ]
       },
       solution: {
-        title: 'Solution',
+        title: 'Solução',
         content: [
           [
-            'Intuitive Design: Bitcash streamlines the blockchain experience with an intuitive interface, removing technical barriers to cryptocurrency and AI.',
-            'Global Accessibility: Offers global market access with P2P on-ramp and local stablecoins, targeting financial inclusion.',
-            'Fair Wealth Distribution: Implements a non-profit blockchain with equitable token distribution to ensure a balanced financial future for all users.',
-            'Unified Platform: Bitcash provides a comprehensive ecosystem for AI startups and DeFi applications, fostering seamless innovation and integration.',
-            'Empowering Community Growth: Encourages open collaboration and community-driven innovation, leveraging collective intelligence for platform advancement.',
-            'Education and Support: Commits to user education and regulatory compliance, creating a secure and informed user base.',
-            'Technological Democratization: Aims to make advanced technology accessible and usable for everyone, democratizing AI and financial tools.',
-            'Catalyst for Change: Acts as a launchpad for transformative applications, driving growth and fostering a dynamic, creative community.',
-            'Human-Centric Approach: Focuses on maintaining human connections and integrity in an AI-dominated future.',
-            'Economic Redefinition: Bitcash strives to reshape the global economy to be more inclusive, equitable, and supportive of human potential.'
+            'Design Intuitivo: O Bitcash agiliza a experiência blockchain com uma interface intuitiva, removendo barreiras técnicas à criptomoeda e à IA.',
+            'Acessibilidade Global: Oferece acesso ao mercado global com rampa de acesso P2P e stablecoins locais, visando a inclusão financeira.',
+            'Distribuição Justa de Riqueza: Implementa um blockchain sem fins lucrativos com distribuição equitativa de tokens para garantir um futuro financeiro equilibrado para todos os usuários.',
+            'Plataforma Unificada: Bitcash fornece um ecossistema abrangente para startups de IA e aplicações DeFi, promovendo inovação e integração contínuas.',
+            'Capacitando o crescimento da comunidade: Incentiva a colaboração aberta e a inovação impulsionada pela comunidade, aproveitando a inteligência coletiva para o avanço da plataforma.',
+            'Educação e Apoio: Compromete-se com a educação do usuário e a conformidade regulatória, criando uma base de usuários segura e informada.',
+            'Democratização Tecnológica: Visa tornar a tecnologia avançada acessível e utilizável para todos, democratizando a IA e as ferramentas financeiras.',
+            'Catalisador para Mudança: Atua como plataforma de lançamento para aplicativos transformadores, impulsionando o crescimento e fomentando uma comunidade dinâmica e criativa.',
+            'Abordagem Centrada no Ser Humano: Concentra-se na manutenção das conexões humanas e da integridade em um futuro dominado pela IA.',
+            'Redefinição Econômica: A Bitcash se esforça para remodelar a economia global para que ela seja mais inclusiva, equitativa e que apoie o potencial humano.'
           ]
         ]
       },
       businessModel: {
-        title: 'Business Model',
+        title: 'Modelo de negócios',
         content: [
           [
-            'Utility Token Ecosystem: Implements a dynamic mint-and-burn utility token system central to transactions and services, ensuring ecosystem balance.',
-            "Multiple Revenue Channels: Generates income through transaction fees, P2P exchange margins, and services around AI-driven DeFi applications, plus earnings from the AI startup launchpad 'Bitlauncher'.",
-            'Community-Driven Innovation: Encourages open-source development and community contributions, fostering a cycle of continuous innovation and platform improvement.',
-            'Equitable Blockchain Infrastructure: Introduces a non-profit L1 blockchain for fair token distribution, underpinning a decentralized economy accessible to all.',
-            'Fair Token Distribution Model: Adopts an ethical approach to token distribution, rewarding contributions with real-time value, ensuring equity and transparency.',
-            'Strategic Partnerships: Forms alliances across sectors to enhance market presence and integrate Bitcash services into a wider ecosystem.',
-            'Investment in R&D: Continuously improves technology and services through research and development, maintaining a competitive edge.',
-            'Compliance and Security Priority: Dedicates resources to ensure regulatory compliance and robust security, building trust and platform longevity.',
-            'Educational Initiatives: Invests in user education and community engagement, empowering users to maximize platform benefits and contribute to its evolution.',
-            'Targeted Marketing for User Growth: Employs strategic marketing to attract a diverse user base, demystifying blockchain and AI to encourage mainstream adoption.'
+            'Ecossistema de token utilitário: Implementa um sistema dinâmico de tokens utilitários de criação e queima central para transações e serviços, garantindo o equilíbrio do ecossistema.',
+            "Vários canais de receita: Gera receita por meio de taxas de transação, margens de troca P2P e serviços em torno de aplicativos DeFi baseados em IA, além de ganhos da plataforma de lançamento de inicialização de IA 'Bitlauncher'.",
+            'Inovação orientada para a comunidade: Incentiva o desenvolvimento de código aberto e as contribuições da comunidade, promovendo um ciclo de inovação contínua e melhoria da plataforma.',
+            'Infraestrutura Blockchain Equitativa: Introduz uma blockchain L1 sem fins lucrativos para distribuição justa de tokens, sustentando uma economia descentralizada acessível a todos.',
+            'Modelo de distribuição de token justo: Adota uma abordagem ética para distribuição de tokens, recompensando as contribuições com valor em tempo real, garantindo equidade e transparência.',
+            'Parcerias Estratégicas: Forma alianças entre setores para aumentar a presença no mercado e integrar os serviços Bitcash em um ecossistema mais amplo.',
+            'Investimento em P&D: Melhora continuamente a tecnologia e os serviços por meio de pesquisa e desenvolvimento, mantendo uma vantagem competitiva.',
+            'Prioridade de conformidade e segurança: Dedica recursos para garantir conformidade regulatória e segurança robusta, construindo confiança e longevidade da plataforma.',
+            'Iniciativas Educacionais: Investe na educação dos usuários e no envolvimento da comunidade, capacitando os usuários a maximizar os benefícios da plataforma e contribuir para sua evolução.',
+            'Marketing direcionado para crescimento de usuários: Emprega marketing estratégico para atrair uma base diversificada de usuários, desmistificando blockchain e IA para incentivar a adoção convencional.'
           ],
           [
             "This business model represents Bitcash's commitment to a sustainable, equitable digital economy, leveraging community input and innovation for collective growth."
@@ -92,19 +92,19 @@ export const projects: ProjectContent[] = [
         ]
       },
       tokenomics: {
-        title: 'Tokenomics',
+        title: 'Tokenomia',
         content: [
           [
-            'Dual Token System: Utilizes utility tokens for transactions and services within Bitcash and governance tokens for voting and decision-making by contributors and stakeholders.',
-            'Contribution-Based Distribution: Tokens are distributed based on active contributions, such as development, community engagement, or investment, rewarding early and ongoing support.',
-            'Dynamic Mint-and-Burn Policy: Balances token supply with demand by minting tokens for rewards and development, and burning a portion to counter inflation and enhance value.',
-            'Diverse Revenue Streams: Generates income from transaction fees, Bitcash Launchpad service fees, forex and stablecoin exchanges, and strategic partnerships.',
-            'Revenue Reinvestment: Allocates a portion of earnings to continuous platform development, security, marketing, and community initiatives, ensuring sustainable growth.',
-            'Equitable Distribution Model: Adopts a fair distribution system, akin to traditional shareholder models, ensuring tokens reflect real value and contributions.',
-            'Transparent Token Valuation: Focuses on transparency and real value creation in token distribution, avoiding speculation for stable economic foundations.',
-            'Governance Participation: Allows token holders to engage in governance, contributing to the platform’s direction and policies, emphasizing democratic participation.',
-            "Economic Adaptability: Maintains a flexible tokenomics strategy, responsive to the community and platform's evolving needs for a balanced digital economy.",
-            'Vision of Shared Prosperity: Aims to build a new global economy where Bitcash tokens underpin a system of innovation, participation, and shared benefits, transcending traditional economic barriers.'
+            'Sistema de token duplo: Utiliza tokens utilitários para transações e serviços dentro do Bitcash e tokens de governança para votação e tomada de decisões por contribuidores e partes interessadas.',
+            'Distribuição Baseada em Contribuições: Os tokens são distribuídos com base em contribuições ativas, como desenvolvimento, envolvimento comunitário ou investimento, recompensando o apoio precoce e contínuo.',
+            'Política Dinâmica de Mint-and-Burn: Equilibra a oferta de tokens com a demanda, cunhando tokens para recompensas e desenvolvimento e queimando uma parte para combater a inflação e aumentar o valor.',
+            'Diversos fluxos de receita: Gera receita de taxas de transação, taxas de serviço do Bitcash Launchpad, trocas de forex e stablecoin e parcerias estratégicas.',
+            'Reinvestimento de Receitas: Aloca uma parte dos ganhos para desenvolvimento contínuo de plataforma, segurança, marketing e iniciativas comunitárias, garantindo o crescimento sustentável.',
+            'Modelo de distribuição equitativa: Adota um sistema de distribuição justo, semelhante aos modelos tradicionais de acionistas, garantindo que os tokens reflitam o valor e as contribuições reais.',
+            'Avaliação de token transparente: Concentra-se na transparência e na criação de valor real na distribuição de tokens, evitando a especulação para bases económicas estáveis.',
+            'Participação na Governança: Permite que os detentores de tokens se envolvam na governança, contribuindo para a direção e as políticas da plataforma, enfatizando a participação democrática.',
+            "Adaptabilidade Económica: Mantém uma estratégia tokenomics flexível, que responde às necessidades crescentes da comunidade e da plataforma para uma economia digital equilibrada.",
+            'Visão de prosperidade compartilhada: Visa construir uma nova economia global onde os tokens Bitcash sustentam um sistema de inovação, participação e benefícios partilhados, transcendendo as barreiras económicas tradicionais.'
           ]
         ]
       }
@@ -115,23 +115,23 @@ export const projects: ProjectContent[] = [
     id: 2,
     content: {
       highlights: {
-        title: 'Highlights',
+        title: 'Destaques',
         content: [[]]
       },
       product: {
-        title: 'Product Overview',
+        title: 'Resumo do Produto',
         content: [[]]
       },
       problem: {
-        title: 'Problem',
+        title: 'Problema',
         content: [[]]
       },
       solution: {
-        title: 'Solution',
+        title: 'Solução',
         content: [[]]
       },
       businessModel: {
-        title: 'Business Model',
+        title: 'Modelo de negócios',
         content: [[]]
       },
       tokenomics: {
@@ -144,23 +144,23 @@ export const projects: ProjectContent[] = [
     id: 3,
     content: {
       highlights: {
-        title: 'Highlights',
+        title: 'Destaques',
         content: [[]]
       },
       product: {
-        title: 'Product Overview',
+        title: 'Resumo do Produto',
         content: [[]]
       },
       problem: {
-        title: 'Problem',
+        title: 'Problema',
         content: [[]]
       },
       solution: {
-        title: 'Solution',
+        title: 'Solução',
         content: [[]]
       },
       businessModel: {
-        title: 'Business Model',
+        title: 'Modelo de negócios',
         content: [[]]
       },
       tokenomics: {

@@ -19,11 +19,12 @@ export default async function Page(props: CategoryPageProps) {
   if (!data) notFound()
 
   const { sections, pageSeo } = data
+  if (!pageSeo) notFound()
 
   return (
     <section>
-      <header className="flex flex-col py-10 md:py-24 ">
-        <h1 className="heading flex justify-center ">
+      <header className="flex flex-col py-10 md:py-24">
+        <h1 className="heading flex justify-center">
           {pageSeo.description} <br />
         </h1>
         <h2 className="flex justify-center text-xl font-semibold">
@@ -32,7 +33,7 @@ export default async function Page(props: CategoryPageProps) {
       </header>
 
       <main>
-        <BlogSections sections={sections} lang={lang} />
+        <BlogSections sections={sections} lang={lang} category={category} />
       </main>
     </section>
   )
@@ -61,10 +62,10 @@ export async function generateMetadata(props: any): Promise<Metadata> {
   const pageSeo = await getPageSeoText(category, lang, locales)
 
   const seoData = {
-    title: pageSeo.pageSeo?.title || '',
-    description: pageSeo.pageSeo?.description || '',
+    title: pageSeo?.pageSeo?.title || '',
+    description: pageSeo?.pageSeo?.description || '',
     ogType: 'website',
-    ogImageUrl: pageSeo.pageSeo?.image?.url || '',
+    ogImageUrl: pageSeo?.pageSeo?.image?.url || '',
     twitterCard: 'summary_large_image'
   }
 

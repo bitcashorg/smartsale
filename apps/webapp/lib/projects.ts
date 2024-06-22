@@ -19,11 +19,11 @@ export const projects: Project[] = [
     maxAllocation: '$1,500',
     heroImage: '/images/projects/bitcash-cover.webp',
     thumbnailImage: BitcashPic,
-    badgeText: 'PRE-SALE ACTIVE',
+    badgeText: 'REGISTRATION OPEN',
     linkPath: '/bitcash-bitlauncher',
     token: TestnetMBOTSPL,
     auctionId: 9,
-    presaleOpen: true,
+    presaleOpen: false,
     twitterUsername: 'bitcashorg',
     telegramGroup: 'bitlauncher',
     discordServer: 'KuR48XUxnG'

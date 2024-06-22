@@ -2,19 +2,19 @@ import { PageContentData } from '@/components/shared/content'
 
 export const about = {
   content: [
-    { type: 'h1', text: 'How Bitlauncher Works' },
+    { type: 'h1', text: '¿Cómo funciona Bitlauncher?' },
     {
       type: 'p',
-      text: 'Bitlauncher is a platform enabling fair price discovery for token auctions. The aim of the platform is to make it easy for teams to discover a fair price for their token.'
+      text: 'Bitlauncher es una plataforma que permite descubrir un precio justo para las subastas de tokens. El objetivo de la plataforma es facilitar que los equipos descubran un precio justo para su token.'
     },
     {
       type: 'p',
-      text: 'Bitlauncher uses batch auctions, which are a popular mechanism for ensuring fair price for both the decentralized and traditional finance worlds. Batch auctions enable matching of limit orders of buyers and sellers with the same clearing price for all participants. From crypto use cases like Initial DEX Offerings (like those on the Mesa interface for Gnosis Protocol v1) to traditional finance auctions (like Google’s IPO and the NYSE Open Auction), batch auctions play an important role in the democratization of the auctioned assets. This function is especially important for decentralized teams which need to ensure fair token distributions while operating trustlessly and efficiently. Batch auctions are set to become a fundamental “DeFi Lego” brick for any team or community interested in offering their users the most transparent and fairest auction-mechanism for their token.'
+      text: 'Bitlauncher utiliza subastas por lotes, que son un mecanismo popular para garantizar un precio justo tanto en el mundo de las finanzas descentralizadas como en el tradicional. Las subastas por lotes permiten el emparejamiento de órdenes limitadas de compradores y vendedores con el mismo precio de liquidación para todos los participantes. Desde casos de uso en criptomonedas como las Ofertas Iniciales DEX (como las de la interfaz de Mesa para el Protocolo Gnosis v1) hasta subastas de finanzas tradicionales (como la OPI de Google y la Subasta Abierta de la Bolsa de Nueva York), las subastas por lotes desempeñan un papel importante en la democratización de los activos subastados. Esta función es especialmente importante para los equipos descentralizados que necesitan garantizar distribuciones justas de tokens mientras operan de manera confiable y eficiente. Las subastas por lotes están destinadas a convertirse en un componente fundamental del “Lego DeFi” para cualquier equipo o comunidad interesado en ofrecer a sus usuarios el mecanismo de subasta más transparente y justo para su token.'
     },
-    { type: 'h2', text: 'Comparison of Different Auction Mechanisms' },
+    { type: 'h2', text: 'Comparación de diferentes mecanismos de subasta' },
     {
       type: 'p',
-      text: 'With bitlauncher’s open-source smart contract, projects can quickly and securely create their own decentralized fair auctions. Unlike some solutions dependent on a centralized curation process, Bitlauncher is permissionless so that any Ethereum team can deploy & execute batch auctions for price finding. Bitlauncher allows any Ethereum project or community to conduct auctions that:'
+      text: 'Con el contrato inteligente de código abierto de Bitlauncher, los proyectos pueden crear rápida y seguramente sus propias subastas descentralizadas justas. A diferencia de algunas soluciones que dependen de un proceso de curación centralizado, Bitlauncher es sin permisos, lo que permite que cualquier equipo de Ethereum pueda desplegar y ejecutar subastas por lotes para la búsqueda de precios. Bitlauncher permite que cualquier proyecto o comunidad de Ethereum realice subastas que:'
     },
     {
       type: 'Image',
@@ -25,21 +25,21 @@ export const about = {
       layout: 'responsive',
       className: 'dark:invert'
     },
-    { type: 'h2', text: 'Fair Price Discovery with Bitlauncher' },
+    { type: 'h2', text: 'Descubrimiento de precio justo con Bitlauncher' },
     {
       type: 'p',
-      text: 'By providing an easy interface for price discovery with batch auctions, Bitlauncher enables:'
+      text: 'Al proporcionar una interfaz sencilla para la búsqueda de precios con subastas por lotes, Bitlauncher permite:'
     },
     {
       type: 'ul',
       items: [
-        'Auctioneers to determine a minimum price they are willing to sell their tokens for, and',
-        'Bidders to set the maximum price they are willing to pay'
+        'A los subastadores determinar un precio mínimo al que están dispuestos a vender sus tokens, y',
+        'A los postores establecer el precio máximo que están dispuestos a pagar'
       ]
     },
     {
       type: 'p',
-      text: 'These characteristics allow the platform to create a fair pricing dynamic in which both participants get either what they were willing to receive or more. Additionally the batched time nature of the auctions greatly reduces frontrunning and gas bidding wars, decreasing the amount of extracted value from auctioneers and bidders.'
+      text: 'Estas características permiten que la plataforma cree una dinámica de precios justa en la que ambos participantes obtengan lo que estaban dispuestos a recibir o más. Además, la naturaleza de las subastas por lotes reduce significativamente el frontrunning y las guerras de pujas de gas, disminuyendo la cantidad de valor extraído de los subastadores y postores.'
     }
   ] as PageContentData
 }

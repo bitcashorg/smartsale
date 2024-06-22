@@ -2,29 +2,29 @@ import { ContentTextType, PageContentData } from '@/components/shared/content'
 
 const policiesAndTerms = [
   {
-    title: 'Privacy Policy',
+    title: 'Política de Privacidade',
     content:
-      'We respect your privacy. No personal data is stored or shared with third parties. We only collect emails for our newsletter subscribers and ensure their protection against unauthorized access.'
+      'Nós respeitamos sua privacidade. Nenhum dado pessoal é armazenado ou compartilhado com terceiros. Recolhemos apenas e-mails dos assinantes da nossa newsletter e garantimos a sua proteção contra acessos não autorizados.'
   },
   {
-    title: 'Terms of Service',
+    title: 'Termos de Serviço',
     content:
-      'By using our services, you agree to our terms. Ensure you understand the risks associated with digital currencies and platforms. We do not store your personal data except for email subscriptions.'
+      'Ao utilizar nossos serviços, você concorda com nossos termos. Certifique-se de compreender os riscos associados às moedas e plataformas digitais. Não armazenamos os seus dados pessoais, exceto para assinaturas de e-mail.'
   },
   {
-    title: 'No Cookie Policy',
+    title: 'Nenhuma política de cookies',
     content:
-      'Our website does not use cookies. Your navigation and interaction with our services are private and not tracked by cookies.'
+      'Nosso site não utiliza cookies. A sua navegação e interação com os nossos serviços são privadas e não rastreadas por cookies.'
   },
   {
-    title: 'Newsletter Subscription',
+    title: 'Assinatura do boletim informativo',
     content:
-      'Subscribers to our newsletter agree to provide their email addresses for regular updates. You can unsubscribe at any time through the link provided in each email.'
+      'Os assinantes da nossa newsletter concordam em fornecer seus endereços de e-mail para atualizações regulares. Você pode cancelar a inscrição a qualquer momento através do link fornecido em cada e-mail.'
   },
   {
-    title: 'Data Protection',
+    title: 'Proteção de dados',
     content:
-      'We implement rigorous security measures to protect your information. Your email is securely stored and is only used for sending newsletters.'
+      'Implementamos medidas de segurança rigorosas para proteger suas informações. Seu e-mail é armazenado com segurança e é usado apenas para envio de newsletters.'
   }
 ] as const
 
@@ -32,11 +32,11 @@ const policiesAndTerms = [
 const content: PageContentData = [
   {
     type: 'h1',
-    text: 'Privacy Policy and Terms of Service for Bitlauncher Participants'
+    text: 'Política de Privacidade e Termos de Serviço para Participantes do Bitlauncher'
   },
   {
     type: 'p',
-    text: 'Understand our commitment to your privacy and your responsibilities when using our crypto launchpad services:'
+    text: 'Entenda nosso compromisso com sua privacidade e suas responsabilidades ao usar nossos serviços de plataforma de lançamento de criptografia:'
   },
   ...policiesAndTerms.flatMap((item, index) => [
     { type: 'h2' as ContentTextType, text: `${index + 1}. ${item.title}` },

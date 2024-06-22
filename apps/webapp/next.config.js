@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 
+const { hostname } = require('os')
 const path = require('path')
 const nextConfig = {
   async headers() {
@@ -35,7 +36,7 @@ const nextConfig = {
         }
       }
     },
-    taint: true,
+    taint: true
   },
   reactStrictMode: true,
   swcMinify: true,
@@ -52,13 +53,16 @@ const nextConfig = {
       },
       {
         hostname: 'cdn.sanity.io'
+      },
+      {
+        hostname: 'i.ytimg.com'
       }
     ]
   },
   logging: {
     fetches: {
-      fullUrl: true,
-    },
+      fullUrl: true
+    }
   }
 }
 

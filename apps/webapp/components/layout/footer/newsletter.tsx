@@ -19,6 +19,8 @@ import { useSetState } from 'react-use'
 import { z } from 'zod'
 import { useEffect } from 'react'
 import { LangProp } from '@/types/routing.type'
+import { FooterLinks } from './footer-links'
+import { appConfig } from '@/lib/config'
 
 // Schema for form validation with Zod
 const formSchema = z.object({
@@ -99,7 +101,7 @@ export default function Newsletter({ lang }: LangProp) {
         }
       }}
     >
-      <section className="newsletter-wrapper">
+      <section className="newsletter-wrapper mt-40">
         <div className="flex h-[460px] w-full max-w-[600px] flex-col items-center justify-center gap-8 px-3 text-center md:gap-11 md:px-0">
           <div className="flex w-full flex-col gap-7">
             <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
@@ -174,25 +176,30 @@ export default function Newsletter({ lang }: LangProp) {
             ) : null}
           </div>
         </div>
-        <div className="flex h-[230px] w-full flex-col flex-wrap items-center justify-evenly rounded-b-3xl bg-primary px-10 md:flex-row md:justify-between">
-          <Link href={`/${lang}`} className="flex">
-            <IconBitlauncher className="h-8 w-40 md:h-11 md:w-56" />
-          </Link>
-          <div className="hidden md:block">
-            <DiscordButton />
-          </div>
-          <div className="flex w-full items-center justify-between md:w-auto">
-            <div className="block md:hidden">
+
+        {appConfig.features.newNavStruct ? (
+          <FooterLinks />
+        ) : (
+          <div className="flex h-[230px] w-full flex-col flex-wrap items-center justify-evenly rounded-b-3xl bg-primary px-10 md:flex-row md:justify-between">
+            <Link href={`/${lang}`} className="flex">
+              <IconBitlauncher className="h-8 w-40 md:h-11 md:w-56" />
+            </Link>
+            <div className="hidden md:block">
               <DiscordButton />
             </div>
-            <Link
-              href={`/${lang}/terms`}
-              className="underline-offset-2 focus-within:underline hover:underline"
-            >
-              Terms & Privacy Policy
-            </Link>
+            <div className="flex w-full items-center justify-between md:w-auto">
+              <div className="block md:hidden">
+                <DiscordButton />
+              </div>
+              <Link
+                href={`/${lang}/terms`}
+                className="underline-offset-2 focus-within:underline hover:underline"
+              >
+                Terms & Privacy Policy
+              </Link>
+            </div>
           </div>
-        </div>
+        )}
       </section>
     </GoogleReCaptchaProvider>
   )
