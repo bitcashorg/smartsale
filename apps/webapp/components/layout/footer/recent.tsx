@@ -15,29 +15,41 @@ export async function RecentArticles({ lang }: LangProp) {
     'PL6BKGVqekhB_3OhFY_zpJwmaaV6sLxLwJ',
     10
   )
+  // const latestBitcoinEdu = await fetchPublicYouTubePlaylist(
+  //   'PL6BKGVqekhB8XkWgA-JWGLafKHxKDfzlM',
+  //   5
+  // )
 
   const recentMedia: MediaSection[] = [
     {
       title: 'Shorts',
       videos: latestShorts,
       link: {
-        href: '',
+        href: 'https://www.youtube.com/@bitlauncher',
         label: 'More Shorts'
       }
     },
+    // {
+    //   title: 'Bitcoin Education',
+    //   videos: latestBitcoinEdu,
+    //   link: {
+    //     href: 'https://www.youtube.com/watch?v=4skbpM8ehoA&list=PL6BKGVqekhB8XkWgA-JWGLafKHxKDfzlM',
+    //     label: 'Bitcoin Education'
+    //   }
+    // },
     {
-      title: 'Product Calls',
+      title: 'Weekly Calls',
       videos: latestProductCalls,
       link: {
-        href: '',
-        label: 'Product Calls'
+        href: 'https://www.youtube.com/watch?v=uUh8lX_YzoQ&list=PL6BKGVqekhB_R8wjPFN-p6dGkcIy_bM1D',
+        label: 'Weekly Calls'
       }
     }
   ]
 
   const recentArcticles = [
     {
-      name: 'Recent',
+      name: 'Recent Articles',
       slug: 'ai',
       articles: [
         {
@@ -145,6 +157,7 @@ export async function RecentArticles({ lang }: LangProp) {
       <BlogSections
         sections={recentArcticles as unknown as ArticlesSection[]}
         lang={lang}
+        className="mb-0 pb-0"
       />
     </Section>
   )

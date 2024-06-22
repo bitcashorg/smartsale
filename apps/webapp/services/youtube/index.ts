@@ -5,7 +5,7 @@ export async function fetchPublicYouTubePlaylist(
   const apiKey =
     process.env.YOUTUBE_API_KEY || 'AIzaSyD6lElC6MK6VJAoeQq2slM6Onj6BBCfZlM'
 
-  const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${playlistId}&key=${apiKey}&maxResults=${maxResults}`
+  const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${playlistId}&key=${apiKey}&maxResults=${maxResults}&order=date`
   // console.log('YOUTUBE_API_KEY', { apiKey, playlistId, maxResults })
   try {
     const response = await fetch(url)

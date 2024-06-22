@@ -5,13 +5,27 @@ import { ArticleCard } from '../../shared/article-card'
 import { LucideIcons } from './lucide-icons'
 import { LangProp } from '@/types/routing.type'
 
-export function BlogSections({ sections, lang, category }: BlogSectionsProps) {
+export function BlogSections({
+  sections,
+  lang,
+  category,
+  className
+}: BlogSectionsProps) {
   return (
-    <div className="flex w-full flex-col items-center justify-start py-10">
+    <div
+      className={cn(
+        'flex w-full flex-col items-center justify-start py-10',
+        className
+      )}
+    >
       {sections.map(
         section =>
           section?.articles?.length > 0 && (
-            <section className="container mb-10" key={section.name}>
+            <section
+              // this is hack be careful when passing className
+              className={cn('container mb-10', className)}
+              key={section.name}
+            >
               <div className="mb-space-32 flex items-center justify-between text-xl">
                 <span className="sub-2-lg font-semibold text-black dark:text-white">
                   / {section.name}
@@ -44,9 +58,9 @@ export function BlogSections({ sections, lang, category }: BlogSectionsProps) {
     </div>
   )
 }
-
 export interface BlogSectionsProps extends LangProp {
   children?: React.ReactNode
   sections: ArticlesSection[]
   category?: string
+  className?: string
 }
