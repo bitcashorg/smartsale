@@ -1,0 +1,536 @@
+{
+  "relatedBlogs": [],
+  "blogContent": {
+    "id": "198277124",
+    "topics": [
+      "LLM",
+      "Finance",
+      "Healthcare",
+      "Legal",
+      "Prompting"
+    ],
+    "title": "Adapting Large Language Models via Reading Comprehension",
+    "slug": "adapting-large-language-models-via-reading-comprehension",
+    "authorName": "Prof. Otto Nomos",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+    },
+    "_publishedAt": "2024-05-27T03:34:22+01:00",
+    "description": "Abstract Commentary & Rating",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Published on Sep 18"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Authors:"
+                    },
+                    {
+                      "url": "https://huggingface.co/cdxhhhh",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Daixuan Cheng"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ",Shaohan Huang,"
+                    },
+                    {
+                      "url": "https://huggingface.co/gitnlp",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Furu Wei"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Abstract"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "We explore how continued pre-training on domain-specific corpora influences large language models, revealing that training on the raw corpora endows the model with domain knowledge, but drastically hurts its prompting ability for question answering. Taken inspiration from human learning via reading comprehension--practice after reading improves the ability to answer questions based on the learned knowledge--we propose a simple method for transforming raw corpora into reading comprehension texts. Each raw text is enriched with a series of tasks related to its content. Our method, highly scalable and applicable to any pre-training corpora, consistently enhances performance across various tasks in three different domains: biomedicine, finance, and law. Notably, our 7B language model achieves competitive performance with domain-specific models of much larger scales, such as BloombergGPT-50B. Furthermore, we demonstrate that domain-specific reading comprehension texts can improve the model's performance even on general benchmarks, showing the potential to develop a general model across even more domains. Our model, code, and data will be available at https://github.com/microsoft/LMOps."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "url": "https://arxiv.org/abs/2309.09530",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "View arXiv page"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "https://arxiv.org/pdf/2309.09530",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "View PDF"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Commentary"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "The paper titled \"Adapting Large Language Models via Reading Comprehension\" addresses the adaptation of large language models to specific domains."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Key Insights:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Influence of Continued Pre-training"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": The research showcases that pre-training on domain-specific datasets provides domain knowledge but affects the model's ability to answer prompts."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Human-Inspired Learning"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": The paper draws inspiration from how humans improve their understanding of a subject—by practicing comprehension after reading. The authors transform raw data into reading comprehension tasks."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Broad Applicability"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Their method is scalable and can be applied across various domains, from biomedicine to law."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Competitive Performance"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Their 7B model shows competitive results compared to much larger models like BloombergGPT-50B, indicating efficiency in training."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Generalization Potential"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": The method is not just domain-specific. It also enhances performance in general tasks, suggesting its wider applicability."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Potential Real-World Impact:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Efficient Domain Adaptation"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Given the proliferation of domain-specific tasks in industries such as healthcare, law, and finance, having an efficient way to adapt general language models to these domains is invaluable."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Resource Conservation"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": By showing competitive results with a 7B model against larger models like BloombergGPT-50B, this method implies cost and time savings in terms of model training."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Improved Reading Comprehension"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": By transforming raw data into reading comprehension tasks, the model could be used for a variety of applications, like tutoring systems, content summarization, and more."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Wider Applicability"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": The fact that their method can also enhance general benchmarks suggests that it can be used for a broad range of tasks, making it versatile."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Challenges:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Specificity vs. Generality Trade-off"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": As always with domain adaptation, there's a balance to strike between becoming too domain-specific and retaining the ability to generalize."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Given the increased need for domain-specific models in real-world applications, the novel approach of transforming raw data into comprehension tasks, and the potential for wider applicability:"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "I'd rate the real-world impact of this paper as an 8.5 out of 10."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "This approach presents a significant potential to transform the way LLMs are adapted to domain-specific tasks, ensuring both efficiency and effectiveness."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "researchpaper9",
+            "height": 816,
+            "width": 1456,
+            "filename": "researchpaper9.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Abstract Commentary & Rating\n",
+      "title": "Adapting Large Language Models via Reading Comprehension",
+      "twitterCard": null,
+      "image": {
+        "width": 1456,
+        "height": 816,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      }
+    }
+  },
+  "i18n": {
+    "navigationTopic": {
+      "bitcoin": "Bitcoin",
+      "gems": "Gems",
+      "how_to": "How To",
+      "analysis": "Analysis",
+      "opinion": "Opinion"
+    },
+    "navigationCategories": {
+      "ai": "AI",
+      "ai-research": "AI Research",
+      "crypto": "Crypto",
+      "bitcoin": "Bitcoin",
+      "startup": "Startups",
+      "investing": "Investing",
+      "bitcash": "bitcash"
+    },
+    "searchInputPlaceholder": "Search",
+    "backHome": "Go back home",
+    "backBitcash": "Back to bitcash.org",
+    "navigationPoliciesTerms": {
+      "privacy_policy": "Privacy Policy",
+      "terms_and_conditions": "Terms and Conditions"
+    },
+    "subscriptionTitle": "Subscribe For The Latest Updates",
+    "subscriptionSubtitle": "Subscribe to the newsletter and never miss the new post every week.",
+    "subscriptionInputPlaceholder": "Enter your email here …",
+    "subscriptionCta": "Subscribe",
+    "homeFollowLinks": {
+      "telegram": "https://t.me/bitcash_org",
+      "twitter": "https://twitter.com/bitcashorg",
+      "threads": "https://threads.net/@bitcashorg"
+    },
+    "cryptoFollowLinks": {
+      "telegram": "https://t.me/bitcash_org",
+      "twitter": "https://twitter.com/bitcashorg.crypto",
+      "threads": "https://threads.net/@bitcashorg"
+    },
+    "bitcoinFollowLinks": {
+      "telegram": "https://t.me/bitcash_org",
+      "twitter": "https://twitter.com/bitcashorg.bitcoin",
+      "threads": "https://threads.net/@bitcashorg"
+    },
+    "aiFollowLinks": {
+      "telegram": "https://t.me/bitcash_org",
+      "twitter": "https://twitter.com/bitcashorg.ai",
+      "threads": "https://threads.net/@bitcashorg"
+    },
+    "investingFollowLinks": {
+      "telegram": "https://t.me/bitcash_org",
+      "twitter": "https://twitter.com/bitcashorg.investing",
+      "threads": "https://threads.net/@bitcashorg"
+    },
+    "startUpsFollowLinks": {
+      "telegram": "https://t.me/bitcash_org",
+      "twitter": "https://twitter.com/bitcashorg.startups",
+      "threads": "https://threads.net/@bitcashorg"
+    },
+    "cookieConsentDescription": "This website uses cookies to improve user experience. By using our website you consent to all cookies in accordance with our Cookie Policy.",
+    "cookieConsentCta": "Accept"
+  },
+  "topics": [
+    "LLM",
+    "Finance",
+    "Healthcare",
+    "Legal",
+    "Prompting"
+  ]
+}

@@ -6,6 +6,7 @@ import {
 import { getLayoutText } from './datocms-layout.service'
 import { getPageSeoText } from './datocms-seo.service'
 import { BlogAiRecord, SiteLocale } from './graphql/generated/cms'
+  import * as fs from 'fs';
 
 export const getBlogData = async (locale: SiteLocale) => {
   const locales = [locale]
@@ -195,7 +196,10 @@ export async function getBlogCategoryLandingData(
     }
   })
 
-  return { sections, pageSeo, i18n }
+  const result = { sections, pageSeo, i18n };
+
+
+  return result;
 }
 
 export async function getBlogArticleData(
@@ -203,6 +207,16 @@ export async function getBlogArticleData(
   category: string,
   slug: string
 ) {
+
+  const dirPath = `dictionaries/${locale}/blog/${category}`;
+  const fileName = `${slug}.json`;
+  const filePath = `${dirPath}/${fileName}`;
+
+  try {
+    const fileContents = fs.readFileSync(filePath, 'utf8');
+    return JSON.parse(fileContents);
+  } catch (error) {}
+
   // console.log('getBlogArticleData', { locale, category, slug })
   const [i18n, categories] = await Promise.all([
     getLayoutText(locale, [locale]),
@@ -253,7 +267,12 @@ export async function getBlogArticleData(
     )
   }
 
-  return { relatedBlogs, blogContent, i18n, topics }
+  // always create an english dictionary
+  const result = { relatedBlogs, blogContent, i18n, topics }
+  fs.mkdirSync(dirPath, { recursive: true });
+  fs.writeFileSync(filePath, JSON.stringify(result, null, 2));
+
+  return result
 }
 
 export type ArticlesSection = {

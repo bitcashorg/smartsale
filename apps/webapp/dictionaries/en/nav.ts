@@ -1,7 +1,7 @@
 export default{
-    wallet: "wallet",
+    wallet: "Wallet",
     connect: 'Connect your EVM Wallet',
-    about: "about",
-    security: "security",
+    about: "About",
+    security: "Security",
     login: 'Login with Bitcash'
 }as const

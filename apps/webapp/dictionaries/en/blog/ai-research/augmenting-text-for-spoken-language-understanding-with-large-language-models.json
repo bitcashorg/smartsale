@@ -1,0 +1,506 @@
+{
+  "relatedBlogs": [],
+  "blogContent": {
+    "id": "198277253",
+    "topics": [
+      "LLM",
+      "Audio"
+    ],
+    "title": "Augmenting text for spoken language understanding with Large Language Models",
+    "slug": "augmenting-text-for-spoken-language-understanding-with-large-language-models",
+    "authorName": "Prof. Otto Nomos",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+    },
+    "_publishedAt": "2024-05-25T03:37:49+01:00",
+    "description": "Abstract Commentary & Rating",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Published on Sep 17"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Authors:Roshan Sharma,Suyoun Kim,Daniel Lazar,Trang Le,Akshat Shrivastava,Kwanghoon Ahn,Piyush Kansal,Leda Sari,Ozlem Kalinli,Michael Seltzer"
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Abstract"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Spoken semantic parsing (SSP) involves generating machine-comprehensible parses from input speech. Training robust models for existing application domains represented in training data or extending to new domains requires corresponding triplets of speech-transcript-semantic parse data, which is expensive to obtain. In this paper, we address this challenge by examining methods that can use transcript-semantic parse data (unpaired text) without corresponding speech. First, when unpaired text is drawn from existing textual corpora, Joint Audio Text (JAT) and Text-to-Speech (TTS) are compared as ways to generate speech representations for unpaired text. Experiments on the STOP dataset show that unpaired text from existing and new domains improves performance by 2% and 30% in absolute Exact Match (EM) respectively. Second, we consider the setting when unpaired text is not available in existing textual corpora. We propose to prompt Large Language Models (LLMs) to generate unpaired text for existing and new domains. Experiments show that examples and words that co-occur with intents can be used to generate unpaired text with Llama 2.0. Using the generated text with JAT and TTS for spoken semantic parsing improves EM on STOP by 1.4% and 2.6% absolute for existing and new domains respectively."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "url": "https://arxiv.org/abs/2309.09390",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "View arXiv page"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "https://arxiv.org/pdf/2309.09390",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "View PDF"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Commentary"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "The paper \"Augmenting text for spoken language understanding with Large Language Models\" deals with spoken semantic parsing (SSP). SSP aims to convert spoken input into machine-readable formats. Here's the breakdown:"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Key Takeaways:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Data Challenges"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Obtaining a dataset that contains speech-transcript-semantic parse data is costly."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Utilizing Unpaired Text"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": The research investigates the generation of speech representations from transcript-semantic parse data that does not have corresponding speech."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Two Approaches"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": The paper looks at two methods, Joint Audio Text (JAT) and Text-to-Speech (TTS), to generate speech representations."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Significant Improvements"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Using unpaired text from existing and new domains showed improvements in Exact Match (EM) performance by 2% and 30%, respectively."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Generating Data with LLMs"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": In the absence of ready-to-use unpaired text, they prompt Large Language Models (like Llama 2.0) to generate suitable text, further enhancing the performance."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Potential Real-World Impact:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Cost Efficiency"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": By leveraging unpaired text, the research could substantially reduce the costs associated with collecting domain-specific speech-transcript-semantic parse data."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Domain Expansion"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": This method can be used to rapidly expand spoken language understanding capabilities to new domains, making voice assistants and other speech-based systems more versatile."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Improved Accuracy"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": The method's improvement in Exact Match (EM) scores could translate to real-world improvements in understanding and processing spoken language."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Flexibility"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Leveraging LLMs like Llama 2.0 to generate necessary data can be a powerful tool, allowing for rapid adaptation to new tasks and domains without extensive data collection."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Challenges:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Dependence on LLMs"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": The reliance on LLMs means this method might be more suited for organizations or research groups with access to such models or the computational resources to use them."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Given the ubiquity of voice assistants and other speech-based technologies and the potential this method has to improve their performance and versatility:"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "I'd rate the real-world impact of this paper as an 8.5 out of 10."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Improving spoken language understanding is crucial for the next generation of voice-driven applications. This method offers a way to enhance these systems without the traditionally high costs of data collection."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "researchpaper9",
+            "height": 816,
+            "width": 1456,
+            "filename": "researchpaper9.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Abstract Commentary & Rating\n",
+      "title": "Augmenting text for spoken language understanding ...",
+      "twitterCard": null,
+      "image": {
+        "width": 1456,
+        "height": 816,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      }
+    }
+  },
+  "i18n": {
+    "navigationTopic": {
+      "bitcoin": "Bitcoin",
+      "gems": "Gems",
+      "how_to": "How To",
+      "analysis": "Analysis",
+      "opinion": "Opinion"
+    },
+    "navigationCategories": {
+      "ai": "AI",
+      "ai-research": "AI Research",
+      "crypto": "Crypto",
+      "bitcoin": "Bitcoin",
+      "startup": "Startups",
+      "investing": "Investing",
+      "bitcash": "bitcash"
+    },
+    "searchInputPlaceholder": "Search",
+    "backHome": "Go back home",
+    "backBitcash": "Back to bitcash.org",
+    "navigationPoliciesTerms": {
+      "privacy_policy": "Privacy Policy",
+      "terms_and_conditions": "Terms and Conditions"
+    },
+    "subscriptionTitle": "Subscribe For The Latest Updates",
+    "subscriptionSubtitle": "Subscribe to the newsletter and never miss the new post every week.",
+    "subscriptionInputPlaceholder": "Enter your email here …",
+    "subscriptionCta": "Subscribe",
+    "homeFollowLinks": {
+      "telegram": "https://t.me/bitcash_org",
+      "twitter": "https://twitter.com/bitcashorg",
+      "threads": "https://threads.net/@bitcashorg"
+    },
+    "cryptoFollowLinks": {
+      "telegram": "https://t.me/bitcash_org",
+      "twitter": "https://twitter.com/bitcashorg.crypto",
+      "threads": "https://threads.net/@bitcashorg"
+    },
+    "bitcoinFollowLinks": {
+      "telegram": "https://t.me/bitcash_org",
+      "twitter": "https://twitter.com/bitcashorg.bitcoin",
+      "threads": "https://threads.net/@bitcashorg"
+    },
+    "aiFollowLinks": {
+      "telegram": "https://t.me/bitcash_org",
+      "twitter": "https://twitter.com/bitcashorg.ai",
+      "threads": "https://threads.net/@bitcashorg"
+    },
+    "investingFollowLinks": {
+      "telegram": "https://t.me/bitcash_org",
+      "twitter": "https://twitter.com/bitcashorg.investing",
+      "threads": "https://threads.net/@bitcashorg"
+    },
+    "startUpsFollowLinks": {
+      "telegram": "https://t.me/bitcash_org",
+      "twitter": "https://twitter.com/bitcashorg.startups",
+      "threads": "https://threads.net/@bitcashorg"
+    },
+    "cookieConsentDescription": "This website uses cookies to improve user experience. By using our website you consent to all cookies in accordance with our Cookie Policy.",
+    "cookieConsentCta": "Accept"
+  },
+  "topics": [
+    "LLM",
+    "Audio"
+  ]
+}
