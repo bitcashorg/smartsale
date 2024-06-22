@@ -30,9 +30,9 @@ export default async function AuctionPage({ params }: ProjectPageProps) {
     <div className="flex min-h-[calc(83vh-4rem)] flex-col">
       <ProjectHeader project={project}>
         <div className="container">
-          <div className="mb-10 flex gap-8">
+          <div className="flex gap-8 mb-10">
             <Card className="border-card/30 bg-card/60 backdrop-blur-lg">
-              <Countdown auctionId={project.auctionId!} />
+              <Countdown />
               <CardContent>
                 <ProjectPresaleData />
               </CardContent>
