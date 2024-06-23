@@ -13,9 +13,11 @@
     "type-check": "tsc --noEmit",
     "type-check:watch": "tsc --noEmit -w",
     "format": "prettier --write \"{app,lib,components}/**/*.{ts,tsx,mdx}\" --cache",
-    "format:check": "prettier --check \"{app,lib,components}**/*.{ts,tsx,mdx}\" --cache"
+    "format:check": "prettier --check \"{app,lib,components}**/*.{ts,tsx,mdx}\" --cache",
+    "translate": "bun run scripts/translate.ts"
   },
   "dependencies": {
+    "@ai-sdk/openai": "^0.0.33",
     "@blockmatic/hooks-utils": "^3.0.0",
     "@formatjs/intl-localematcher": "^0.5.4",
     "@genql/runtime": "^2.10.0",
@@ -46,6 +48,7 @@
     "@vercel/speed-insights": "^1.0.12",
     "@wagmi/connectors": "^5.0.14",
     "@wharfkit/antelope": "^1.0.7",
+    "ai": "^3.2.5",
     "axios": "^1.7.2",
     "camelize-ts": "^3.0.0",
     "class-variance-authority": "^0.7.0",

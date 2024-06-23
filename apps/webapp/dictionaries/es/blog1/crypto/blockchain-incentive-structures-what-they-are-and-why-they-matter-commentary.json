@@ -1,0 +1,610 @@
+{
+  "relatedBlogs": [
+    {
+      "id": "180563939",
+      "topics": [
+        "DAO",
+        "Tokenomics",
+        "Commentary"
+      ],
+      "title": "A Framework for Blockchain Governance Design: The Prysm Group Wheel [Commentary]",
+      "slug": "a-framework-for-blockchain-governance-design-the-prysm-group-wheel-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:19:19+01:00",
+      "description": "Navigate the complexities of blockchain governance with the Prysm Group Wheel. Your roadmap to effective blockchain governance design.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690861154-cbc11-img1.webp"
+      },
+      "seo": {
+        "description": "Navigate the complexities of blockchain governance with the Prysm Group Wheel. Your roadmap to effective blockchain governance design.",
+        "title": "A Framework for Blockchain Governance Design [Commentary]",
+        "twitterCard": null,
+        "image": {
+          "width": 1400,
+          "height": 1383,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1690861154-cbc11-img1.webp"
+        }
+      }
+    },
+    {
+      "id": "180217169",
+      "topics": [
+        "Tokenomics",
+        "Commentary"
+      ],
+      "title": "Economics of Tokenized Incentives 3: Token Value Won’t Align Stakeholders [Commentary]",
+      "slug": "economics-of-tokenized-incentives-3-token-value-won-t-align-stakeholders-commenta",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:17:23+01:00",
+      "description": "Uncover the pitfalls of using token value as a performance metric in blockchain platforms. Learn to design effective incentive systems.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690771457-cbc3-img1.png"
+      },
+      "seo": {
+        "description": "Uncover the pitfalls of using token value as a performance metric in blockchain platforms. Learn to design effective incentive systems.",
+        "title": "Economics of Tokenized Incentives 3 [Commentary]",
+        "twitterCard": null,
+        "image": {
+          "width": 862,
+          "height": 862,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1690771457-cbc3-img1.png"
+        }
+      }
+    },
+    {
+      "id": "180217123",
+      "topics": [
+        "Tokenomics",
+        "Commentary"
+      ],
+      "title": "Economics of Tokenized Incentives 2: Selecting Effective Performance Metrics [Commentary]",
+      "slug": "economics-of-tokenized-incentives-2-selecting-effective-performance-metrics-comme",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:17:05+01:00",
+      "description": "Discover the power of performance metrics in blockchain pay-for-performance systems. Learn to align incentives with platform goals effectively.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690770918-cbc2-img1.png"
+      },
+      "seo": {
+        "description": "Discover the power of performance metrics in blockchain pay-for-performance systems. Learn to align incentives with platform goals effectively.",
+        "title": "Economics of Tokenized Incentives 2 [Commentary]",
+        "twitterCard": null,
+        "image": {
+          "width": 862,
+          "height": 862,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1690770918-cbc2-img1.png"
+        }
+      }
+    },
+    {
+      "id": "180217082",
+      "topics": [
+        "Tokenomics",
+        "Commentary"
+      ],
+      "title": "Economics of Tokenized Incentives 1: Intro to Pay for Performance [Commentary]",
+      "slug": "economics-of-tokenized-incentives-1-intro-to-pay-for-performance",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:15:12+01:00",
+      "description": "Dive into the complexities of pay-for-performance incentives in blockchain platforms. Learn the trade-offs and design considerations for success.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690770568-cbc1-img1.png"
+      },
+      "seo": {
+        "description": "Dive into the complexities of pay-for-performance incentives in blockchain platforms. Learn the trade-offs and design considerations for success",
+        "title": "Economics of Tokenized Incentives 1 [Commentary]",
+        "twitterCard": null,
+        "image": {
+          "width": 862,
+          "height": 862,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1690770568-cbc1-img1.png"
+        }
+      }
+    },
+    {
+      "id": "180556627",
+      "topics": [
+        "Commentary",
+        "Smart Contracts"
+      ],
+      "title": "Incomplete Contracts and Blockchain [Commentary]",
+      "slug": "incomplete-contracts-and-blockchain-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:14:44+01:00",
+      "description": "Demystify the relationship between incomplete contracts and blockchain. Understand how blockchain can fill contractual gaps.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690856249-cbc5-img1.png"
+      },
+      "seo": {
+        "description": "Demystify the relationship between incomplete contracts and blockchain. Understand how blockchain can fill contractual gaps.",
+        "title": "Incomplete Contracts and Blockchain [Commentary]",
+        "twitterCard": null,
+        "image": {
+          "width": 862,
+          "height": 862,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1690856249-cbc5-img1.png"
+        }
+      }
+    },
+    {
+      "id": "180563918",
+      "topics": [
+        "Tokenomics",
+        "Commentary",
+        "Fundraising"
+      ],
+      "title": "Tokens: Investment Vehicle or Medium of Exchange (Not Both) [Commentary]",
+      "slug": "tokens-investment-vehicle-or-medium-of-exchange-not-both-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:13:31+01:00",
+      "description": "Delve into the dual role of tokens in the blockchain economy. Uncover the fine line between investment vehicle and medium of exchange.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690859959-cbc8-img1.png"
+      },
+      "seo": {
+        "description": "Delve into the dual role of tokens in the blockchain economy. Uncover the fine line between investment vehicle and medium of exchange.",
+        "title": "Tokens: Investment or Medium of Exchange [Commentary]",
+        "twitterCard": null,
+        "image": {
+          "width": 862,
+          "height": 862,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1690859959-cbc8-img1.png"
+        }
+      }
+    },
+    {
+      "id": "180563922",
+      "topics": [
+        "Fundraising",
+        "Tokenomics",
+        "Commentary"
+      ],
+      "title": "ICOs Leverage Network Effects [Commentary]",
+      "slug": "icos-leverage-network-effects-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:12:06+01:00",
+      "description": "Discover how ICOs harness the power of network effects to fuel their success. ICOs and network effects, a dynamic duo!",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690860184-cbc9-img1.png"
+      },
+      "seo": {
+        "description": "Discover how ICOs harness the power of network effects to fuel their success. ICOs and network effects, a dynamic duo!",
+        "title": "ICOs Leverage Network Effects [Commentary]",
+        "twitterCard": null,
+        "image": {
+          "width": 862,
+          "height": 862,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1690860184-cbc9-img1.png"
+        }
+      }
+    },
+    {
+      "id": "179948652",
+      "topics": [
+        "Tokenomics",
+        "Industry",
+        "Summary"
+      ],
+      "title": "Digital Innovation and Revenue Models [Summary]",
+      "slug": "digital-innovation-and-revenue-models-summary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:11:35+01:00",
+      "description": "Uncover how digital innovation reshapes product delivery in Prysm Group's 'Digital Innovation and Revenue Models'. Explore emerging tech economics.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690668517-cbr1-img1.png"
+      },
+      "seo": {
+        "description": "Uncover how digital innovation reshapes product delivery in Prysm Group's 'Digital Innovation and Revenue Models'. Explore emerging tech economics.",
+        "title": "Digital Innovation and Revenue Models [Summary]",
+        "twitterCard": null,
+        "image": {
+          "width": 862,
+          "height": 862,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1690668517-cbr1-img1.png"
+        }
+      }
+    },
+    {
+      "id": "180556595",
+      "topics": [
+        "Fundraising",
+        "Tokenomics",
+        "Commentary"
+      ],
+      "title": "The Blockchain Effect: Network Effects without Market Power Costs [Commentary]",
+      "slug": "the-blockchain-effect-network-effects-without-market-power-costs-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:11:14+01:00",
+      "description": "Explore how blockchain enables network effects without the downsides of market power. Discover the game-changing Blockchain Effect.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690855275-cbc4-img1.png"
+      },
+      "seo": {
+        "description": "Explore how blockchain enables network effects without the downsides of market power. Discover the game-changing Blockchain Effect.",
+        "title": "Network Effects without Market Power Costs [Commentary]",
+        "twitterCard": null,
+        "image": {
+          "width": 862,
+          "height": 862,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1690855275-cbc4-img1.png"
+        }
+      }
+    }
+  ],
+  "blogContent": {
+    "id": "180563931",
+    "topics": [
+      "Tokenomics",
+      "Comentario"
+    ],
+    "title": "Estructuras de Incentivos Blockchain: Qué son y por qué importan [Comentario]",
+    "slug": "blockchain-incentive-structures-what-they-are-and-why-they-matter-commentary",
+    "authorName": "Crypto Clairity",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+    },
+    "_publishedAt": "2023-10-05T09:10:02+01:00",
+    "description": "Comprenda el núcleo de las estructuras de incentivos blockchain y su importancia en impulsar el comportamiento del usuario y el éxito de la plataforma.",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1690860807-cbc10-img1.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Enlace Original: "
+                    },
+                    {
+                      "url": "https://medium.com/prysmeconomics/blockchain-incentives-101-what-they-are-and-why-they-matter-5127afb56aeb",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Estructuras de Incentivos Blockchain: Qué son y por qué importan"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Autor: "
+                    },
+                    {
+                      "url": "https://medium.com/@cathybarreraphd?source=post_page-----5127afb56aeb--------------------------------",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noopener follow"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Cathy Barrera, PhD"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Resumen y Comentario"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Comprender las complejidades de los incentivos es crucial para los fundadores de plataformas blockchain. Los incentivos juegan un papel clave en fomentar la cooperación de los participantes, creando así el valor que asegura el éxito de la plataforma. Los incentivos son omnipresentes y van más allá de las recompensas financieras, influyendo en el comportamiento de los participantes del sistema al alterar los costos y beneficios relativos de sus elecciones."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Algunos ejemplos incluyen las calificaciones universitarias y los sistemas de pago por desempeño. Por ejemplo, las calificaciones pueden incentivar a los estudiantes a estudiar mucho o hacer trampa, incluso sin ningún beneficio monetario involucrado. De manera similar, los sistemas de pago por desempeño recompensan a los individuos según su producción laboral."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "En el contexto de blockchain y criptomonedas, los incentivos pueden influir en el comportamiento de los usuarios. Un experimento en el MIT, que involucró dar a cada estudiante de pregrado $100 en Bitcoin, demostró que los costos y beneficios no monetarios juegan un papel significativo en influir en el comportamiento. A los estudiantes se les dio la opción de diferentes billeteras para almacenar su Bitcoin, cada una ofreciendo diferentes niveles de privacidad y facilidad de uso. A pesar de no haber diferencias monetarias entre las billeteras, el proceso de selección de billeteras de los estudiantes fue influenciado por estos factores, lo que indica el poder de los incentivos no monetarios."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Además, cómo se diseña una plataforma blockchain puede influir significativamente en los incentivos que proporciona. Incluso los elementos de diseño menores pueden tener un impacto sustancial en el comportamiento del usuario y la adopción de la plataforma. Esto resalta la importancia de ver todas las decisiones a través del lente del diseño de incentivos."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tres campos significativos de la economía - teoría de contratos, diseño de mercados y economía de la información - se centran en cómo los diseños de sistemas pueden influir en el comportamiento. En Prysm Group, estos campos se utilizan para diseñar plataformas para proyectos blockchain, incorporando tanto recompensas financieras tokenizadas como incentivos no monetarios como sistemas de reputación."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Desde una perspectiva económica, los incentivos forman el núcleo del sistema y son una parte crítica del diseño económico general de plataformas blockchain efectivas. Los incentivos van desde recompensas para mineros y mecanismos de fijación de tarifas de transacción hasta registros curados por tokens y mercados de predicción, sirviendo como la base de las plataformas blockchain."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Aquí hay algunas ideas prácticas basadas en esta discusión:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                {
+                                  "0": "s",
+                                  "1": "t",
+                                  "2": "r",
+                                  "3": "o",
+                                  "4": "n",
+                                  "5": "g"
+                                }
+                              ],
+                              "value": "Diseño de Incentivos:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " Al diseñar su plataforma blockchain, considere tanto los incentivos monetarios como los no monetarios. Comprenda cómo los diferentes elementos de diseño pueden influir en el comportamiento del usuario."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                {
+                                  "0": "s",
+                                  "1": "t",
+                                  "2": "r",
+                                  "3": "o",
+                                  "4": "n",
+                                  "5": "g"
+                                }
+                              ],
+                              "value": "Influir en el Comportamiento:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " Aproveche el poder de los incentivos para fomentar la cooperación y la creación de valor en su plataforma. Esto puede ir desde recompensas en tokens hasta sistemas de reputación."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                {
+                                  "0": "s",
+                                  "1": "t",
+                                  "2": "r",
+                                  "3": "o",
+                                  "4": "n",
+                                  "5": "g"
+                                }
+                              ],
+                              "value": "Comprender los Costos y Beneficios:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " Recuerde, los incentivos se tratan de equilibrar costos y beneficios. Comprenda cómo los diferentes costos (tanto monetarios como no monetarios) pueden influir en el comportamiento de sus usuarios."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                {
+                                  "0": "s",
+                                  "1": "t",
+                                  "2": "r",
+                                  "3": "o",
+                                  "4": "n",
+                                  "5": "g"
+                                }
+                              ],
+                              "value": "Diseño Económico:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " Considere incorporar conceptos de teoría de contratos, diseño de mercados y economía de la información en el diseño de su plataforma. Esto puede ayudarle a crear un sistema de incentivos más efectivo."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                {
+                                  "0": "s",
+                                  "1": "t",
+                                  "2": "r",
+                                  "3": "o",
+                                  "4": "n",
+                                  "5": "g"
+                                }
+                              ],
+                              "value": "Aprendizaje Continuo:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " Manténgase actualizado sobre las últimas investigaciones y desarrollos en el diseño de incentivos para plataformas blockchain para asegurar que su plataforma siga siendo efectiva y competitiva."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Recuerde, el objetivo no es solo crear incentivos, sino diseñarlos de una manera que ayude a realizar la visión de los fundadores de la plataforma y beneficie a sus usuarios."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "cbc10-img1",
+            "height": 862,
+            "width": 862,
+            "filename": "cbc10-img1.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1690860807-cbc10-img1.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Comprenda el núcleo de las estructuras de incentivos blockchain y su importancia en impulsar el comportamiento del usuario y el éxito de la plataforma.",
+      "title": "Estructuras de Incentivos Blockchain [Comentario]",
+      "twitterCard": null,
+      "image": {
+        "width": 862,
+        "height": 862,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1690860807-cbc10-img1.png"
+      }
+    }
+  },
+  "topics": [
+    "Tokenomics",
+    "Commentary"
+  ]
+}

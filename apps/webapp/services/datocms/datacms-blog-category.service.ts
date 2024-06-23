@@ -597,6 +597,12 @@ export interface MainArticleContentBlock {
             type: string
             marks: any[]
             value: string
+            children?: {
+              level?: any
+              type: string
+              marks: any[]
+              value: string
+            }[]
           }[]
         }
       }

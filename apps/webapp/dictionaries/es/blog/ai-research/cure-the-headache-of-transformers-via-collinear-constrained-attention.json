@@ -5,14 +5,14 @@
     "topics": [
       "Transformers"
     ],
-    "title": "",
+    "title": "Cura el dolor de cabeza de los Transformers a través de la Atención Restringida Colineal",
     "slug": "cure-the-headache-of-transformers-via-collinear-constrained-attention",
     "authorName": "Prof. Otto Nomos",
     "authorPicture": {
       "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
     },
     "_publishedAt": "2024-05-27T03:32:43+01:00",
-    "description": "Abstract Commentary & Rating",
+    "description": "Comentario y Calificación del Resumen",
     "thumbnail": {
       "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
     },
@@ -29,7 +29,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Published on Sep 15"
+                      "value": "Publicado el 15 de septiembre"
                     }
                   ]
                 },
@@ -38,7 +38,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Authors:"
+                      "value": "Autores:"
                     },
                     {
                       "url": "https://huggingface.co/underskies",
@@ -72,7 +72,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Abstract"
+                      "value": "Resumen"
                     }
                   ]
                 },
@@ -81,7 +81,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "As the rapid progression of practical applications based on Large Language Models continues, the importance of extrapolating performance has grown exponentially in the research domain. In our study, we identified an anomalous behavior in Transformer models that had been previously overlooked, leading to a chaos around closest tokens which carried the most important information. We've coined this discovery the \"headache of Transformers\". To address this at its core, we introduced a novel self-attention structure named Collinear Constrained Attention (CoCA). This structure can be seamlessly integrated with existing extrapolation, interpolation methods, and other optimization strategies designed for traditional Transformer models. We have achieved excellent extrapolating performance even for 16 times to 24 times of sequence lengths during inference without any fine-tuning on our model. We have also enhanced CoCA's computational and spatial efficiency to ensure its practicality. We plan to open-source CoCA shortly. In the meantime, we've made our code available in the appendix for reappearing experiments."
+                      "value": "A medida que continúa el rápido progreso de las aplicaciones prácticas basadas en Modelos de Lenguaje Grande, la importancia de extrapolar el rendimiento ha crecido exponencialmente en el ámbito de la investigación. En nuestro estudio, identificamos un comportamiento anómalo en los modelos Transformer que había sido previamente pasado por alto, lo que llevó a un caos alrededor de los tokens más cercanos que contenían la información más importante. Hemos acuñado este descubrimiento como el \"dolor de cabeza de los Transformers\". Para abordar esto en su núcleo, introdujimos una nueva estructura de autoatención llamada Atención Restringida Colineal (CoCA). Esta estructura puede integrarse sin problemas con métodos de extrapolación, interpolación y otras estrategias de optimización diseñadas para modelos Transformer tradicionales. Hemos logrado un excelente rendimiento de extrapolación incluso para 16 a 24 veces las longitudes de secuencia durante la inferencia sin ningún ajuste fino en nuestro modelo. También hemos mejorado la eficiencia computacional y espacial de CoCA para asegurar su practicidad. Planeamos hacer CoCA de código abierto en breve. Mientras tanto, hemos puesto nuestro código a disposición en el apéndice para repetir experimentos."
                     }
                   ]
                 },
@@ -104,7 +104,7 @@
                       "children": [
                         {
                           "type": "span",
-                          "value": "View arXiv page"
+                          "value": "Ver página de arXiv"
                         }
                       ]
                     },
@@ -124,7 +124,7 @@
                       "children": [
                         {
                           "type": "span",
-                          "value": "View PDF"
+                          "value": "Ver PDF"
                         }
                       ]
                     }
@@ -136,7 +136,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Commentary"
+                      "value": "Comentario"
                     }
                   ]
                 },
@@ -145,7 +145,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "The paper \"Cure the headache of Transformers via Collinear Constrained Attention\" identifies and addresses an overlooked issue in Transformer models, a dominant architecture in various natural language processing tasks and applications."
+                      "value": "El artículo \"Cura el dolor de cabeza de los Transformers a través de la Atención Restringida Colineal\" identifica y aborda un problema pasado por alto en los modelos Transformer, una arquitectura dominante en varias tareas y aplicaciones de procesamiento de lenguaje natural."
                     }
                   ]
                 },
@@ -154,7 +154,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Key Takeaways:"
+                      "value": "Puntos Clave:"
                     }
                   ]
                 },
@@ -173,11 +173,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Anomalous Behavior Identification"
+                              "value": "Identificación de Comportamiento Anómalo"
                             },
                             {
                               "type": "span",
-                              "value": ": The research identifies a behavior termed the \"headache of Transformers,\" where there's chaotic behavior around the closest tokens, which are often the most informative. This poses challenges in performance, especially in tasks that require attention over long sequences."
+                              "value": ": La investigación identifica un comportamiento denominado \"dolor de cabeza de los Transformers\", donde hay un comportamiento caótico alrededor de los tokens más cercanos, que a menudo son los más informativos. Esto plantea desafíos en el rendimiento, especialmente en tareas que requieren atención sobre secuencias largas."
                             }
                           ]
                         }
@@ -194,11 +194,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Collinear Constrained Attention (CoCA)"
+                              "value": "Atención Restringida Colineal (CoCA)"
                             },
                             {
                               "type": "span",
-                              "value": ": The authors introduce a new self-attention structure to address this issue, which is claimed to be easily integrated with other optimization methods for traditional Transformer models."
+                              "value": ": Los autores introducen una nueva estructura de autoatención para abordar este problema, que se afirma que se integra fácilmente con otros métodos de optimización para modelos Transformer tradicionales."
                             }
                           ]
                         }
@@ -215,11 +215,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Superior Extrapolation"
+                              "value": "Extrapolación Superior"
                             },
                             {
                               "type": "span",
-                              "value": ": The paper suggests that with CoCA, models can perform extrapolation efficiently over long sequence lengths without requiring additional fine-tuning."
+                              "value": ": El artículo sugiere que con CoCA, los modelos pueden realizar extrapolación de manera eficiente sobre longitudes de secuencia largas sin requerir ajuste fino adicional."
                             }
                           ]
                         }
@@ -236,11 +236,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Efficiency Enhancements"
+                              "value": "Mejoras en la Eficiencia"
                             },
                             {
                               "type": "span",
-                              "value": ": Besides the accuracy improvements, the researchers have optimized CoCA for computational and spatial efficiency, which makes it more practical for real-world deployments."
+                              "value": ": Además de las mejoras en precisión, los investigadores han optimizado CoCA para la eficiencia computacional y espacial, lo que lo hace más práctico para implementaciones en el mundo real."
                             }
                           ]
                         }
@@ -257,11 +257,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Open-Sourcing"
+                              "value": "Código Abierto"
                             },
                             {
                               "type": "span",
-                              "value": ": The researchers express intent to make CoCA open-source, which will likely encourage adoption and further exploration by the wider NLP community."
+                              "value": ": Los investigadores expresan la intención de hacer CoCA de código abierto, lo que probablemente fomentará la adopción y exploración adicional por parte de la comunidad más amplia de PLN."
                             }
                           ]
                         }
@@ -274,7 +274,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Potential Real-World Impact:"
+                      "value": "Impacto Potencial en el Mundo Real:"
                     }
                   ]
                 },
@@ -293,11 +293,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Better Model Behavior"
+                              "value": "Mejor Comportamiento del Modelo"
                             },
                             {
                               "type": "span",
-                              "value": ": By addressing an underlying issue in Transformers, models may be more stable and predictable, leading to better real-world performance, especially in tasks where understanding the context over long sequences is crucial."
+                              "value": ": Al abordar un problema subyacente en los Transformers, los modelos pueden ser más estables y predecibles, lo que lleva a un mejor rendimiento en el mundo real, especialmente en tareas donde entender el contexto sobre secuencias largas es crucial."
                             }
                           ]
                         }
@@ -314,11 +314,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Efficient Long Sequences Processing"
+                              "value": "Procesamiento Eficiente de Secuencias Largas"
                             },
                             {
                               "type": "span",
-                              "value": ": Given the extrapolation improvements, tasks such as document summarization, which require attention over longer texts, could benefit."
+                              "value": ": Dadas las mejoras en la extrapolación, tareas como la resumición de documentos, que requieren atención sobre textos más largos, podrían beneficiarse."
                             }
                           ]
                         }
@@ -335,11 +335,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "General Integration"
+                              "value": "Integración General"
                             },
                             {
                               "type": "span",
-                              "value": ": The ease of integration with other optimization methods means that a broad range of existing Transformer models can benefit without complete overhauls."
+                              "value": ": La facilidad de integración con otros métodos de optimización significa que una amplia gama de modelos Transformer existentes puede beneficiarse sin revisiones completas."
                             }
                           ]
                         }
@@ -352,7 +352,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Challenges:"
+                      "value": "Desafíos:"
                     }
                   ]
                 },
@@ -371,11 +371,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Adoption Rate"
+                              "value": "Tasa de Adopción"
                             },
                             {
                               "type": "span",
-                              "value": ": As with any novel technique, it might take time for the wider community to adopt, test, and validate the approach in diverse real-world scenarios."
+                              "value": ": Como con cualquier técnica novedosa, podría tomar tiempo para que la comunidad más amplia adopte, pruebe y valide el enfoque en diversos escenarios del mundo real."
                             }
                           ]
                         }
@@ -392,11 +392,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Potential Limitations"
+                              "value": "Limitaciones Potenciales"
                             },
                             {
                               "type": "span",
-                              "value": ": Every model or technique has its limitations, which might only become evident once applied to a wider variety of tasks."
+                              "value": ": Cada modelo o técnica tiene sus limitaciones, que podrían volverse evidentes solo una vez aplicadas a una variedad más amplia de tareas."
                             }
                           ]
                         }
@@ -409,7 +409,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Given the potential benefits of addressing a foundational challenge in Transformers, along with the practical advantages the approach seems to offer:"
+                      "value": "Dado los beneficios potenciales de abordar un desafío fundamental en los Transformers, junto con las ventajas prácticas que el enfoque parece ofrecer:"
                     }
                   ]
                 },
@@ -418,7 +418,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "I'd rate the real-world impact of this paper as an 8 out of 10."
+                      "value": "Calificaría el impacto en el mundo real de este artículo como un 8 de 10."
                     }
                   ]
                 },
@@ -427,7 +427,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "The potential improvements in efficiency and performance across a broad range of tasks could have significant implications for numerous NLP applications. However, the full impact will largely depend on how the broader research and development community receive, validate, and implement the findings."
+                      "value": "Las posibles mejoras en eficiencia y rendimiento en una amplia gama de tareas podrían tener implicaciones significativas para numerosas aplicaciones de PLN. Sin embargo, el impacto completo dependerá en gran medida de cómo la comunidad de investigación y desarrollo más amplia reciba, valide e implemente los hallazgos."
                     }
                   ]
                 }
@@ -448,47 +448,18 @@
         ]
       }
     ],
-    "seo": null
-  },
-  "i18n": {
-    "navigationTopic": {
-      "bitcoin": "Bitcoin",
-      "gems": "Gemas",
-      "how_to": "Cómo",
-      "analysis": "Análisis",
-      "opinion": "Opinión"
-    },
-    "navigationCategories": {
-      "ai": "AI",
-      "crypto": "Crypto",
-      "bitcoin": "Bitcoin",
-      "startup": "Startups",
-      "investing": "Inversiones",
-      "bitcash": "bitcash"
-    },
-    "searchInputPlaceholder": "Buscar",
-    "backHome": "Volver a casa",
-    "backBitcash": "Volver a bitcash.org",
-    "navigationPoliciesTerms": {
-      "privacy_policy": "Política de Privacidad",
-      "terms_and_conditions": "Términos y Condiciones"
-    },
-    "subscriptionTitle": "Subscríbite Para Las Últimas Actualizaciones",
-    "subscriptionSubtitle": "Suscríbete al boletín y nunca te pierdas la nueva publicación cada semana.",
-    "subscriptionInputPlaceholder": "Ingresa tu correo electrónico aquí …",
-    "subscriptionCta": "Subscribirse",
-    "homeFollowLinks": {
-      "telegram": "https://t.me/bitcash_org",
-      "twitter": "https://twitter.com/bitcashorg",
-      "medium": "https://medium.com/bitcashBank"
-    },
-    "cryptoFollowLinks": null,
-    "bitcoinFollowLinks": null,
-    "aiFollowLinks": null,
-    "investingFollowLinks": null,
-    "startUpsFollowLinks": null,
-    "cookieConsentDescription": "Este sitio web utiliza cookies para mejorar la experiencia del usuario. Al utilizar nuestro sitio web, usted acepta todas las cookies de acuerdo con nuestra Política de cookies.",
-    "cookieConsentCta": "Acceptar"
+    "seo": {
+      "description": "Comentario y Calificación del Resumen\n",
+      "title": "Cura el dolor de cabeza ... a través de la Atención Restringida Colineal",
+      "twitterCard": null,
+      "image": {
+        "width": 1456,
+        "height": 816,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
+      }
+    }
   },
   "topics": [
     "Transformers"

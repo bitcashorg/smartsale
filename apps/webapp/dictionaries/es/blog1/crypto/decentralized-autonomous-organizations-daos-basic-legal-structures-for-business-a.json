@@ -1,0 +1,287 @@
+{
+  "relatedBlogs": [
+    {
+      "id": "180563903",
+      "topics": [
+        "DAO",
+        "Resumen"
+      ],
+      "title": "¿Para qué es la votación? [Resumen]",
+      "slug": "what-is-voting-for-summary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:10:58+01:00",
+      "description": "Desentraña la esencia de la votación dentro de los sistemas descentralizados. Obtén información sobre el verdadero propósito y poder de la votación en blockchain.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690859305-cbc6-img1.png"
+      },
+      "seo": {
+        "title": "¿Para qué es la votación? [Resumen]",
+        "description": "Desentraña la esencia de la votación dentro de los sistemas descentralizados. Obtén información sobre el verdadero propósito y poder de la votación en blockchain."
+      }
+    },
+    {
+      "id": "180563908",
+      "topics": [
+        "DAO",
+        "Resumen"
+      ],
+      "title": "¿Para qué es la gobernanza? [Resumen]",
+      "slug": "what-is-governance-for-summary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:10:45+01:00",
+      "description": "Explora el papel y la importancia de la gobernanza en los sistemas blockchain. Entiende cómo la gobernanza impulsa la descentralización y el crecimiento.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690859755-cbc7-img1.png"
+      },
+      "seo": {
+        "title": "¿Para qué es la gobernanza? [Resumen]",
+        "description": "Explora el papel y la importancia de la gobernanza en los sistemas blockchain. Entiende cómo la gobernanza impulsa la descentralización y el crecimiento.\n"
+      }
+    },
+    {
+      "id": "166981063",
+      "topics": [
+        "Primeros Pasos",
+        "DAO"
+      ],
+      "title": "El futuro está aquí: El auge de las Organizaciones Autónomas Descentralizadas (DAO)",
+      "slug": "the-future-is-here-the-rise-of-decentralized-autonomous-organizations-daos",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T08:57:02+01:00",
+      "description": "Explora el auge de las Organizaciones Autónomas Descentralizadas (DAO) en nuestra guía. Entiende el futuro de los negocios y las oportunidades para startups.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1687381524-db1-img1.png"
+      },
+      "seo": {
+        "title": "El auge de las Organizaciones Autónomas Descentralizadas",
+        "description": "Explora el auge de las Organizaciones Autónomas Descentralizadas (DAO) en nuestra guía. Entiende el futuro de los negocios y las oportunidades para startups."
+      }
+    }
+  ],
+  "blogContent": {
+    "id": "166984334",
+    "topics": [
+      "DAO",
+      "Legal"
+    ],
+    "title": "Organizaciones Autónomas Descentralizadas (DAOs): Estructuras Legales Básicas para Fines Comerciales y Sin Fines de Lucro",
+    "slug": "decentralized-autonomous-organizations-daos-basic-legal-structures-for-business-a",
+    "authorName": "Crypto Clairity",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+    },
+    "_publishedAt": "2023-10-05T08:59:06+01:00",
+    "description": "Descubre las estructuras legales básicas de DAO para fines comerciales y sin fines de lucro.",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1687384353-db2-img1.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Entendiendo el Marco Legal para las DAOs"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Las Organizaciones Autónomas Descentralizadas (DAOs) son formas innovadoras de organizaciones digitales descentralizadas habilitadas por la tecnología blockchain. En el mundo de las criptomonedas y blockchain, las DAOs han capturado la imaginación de emprendedores, inversores y expertos legales por igual. Sin embargo, cuando se trata de ver las DAOs legalmente, es importante entender que pueden ser vistas como una gran sociedad general o una asociación sin fines de lucro no incorporada."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "db2-img1",
+            "height": 994,
+            "width": 994,
+            "filename": "db2-img1.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1687384353-db2-img1.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        {
+                          "0": "s",
+                          "1": "t",
+                          "2": "r",
+                          "3": "o",
+                          "4": "n",
+                          "5": "g"
+                        }
+                      ],
+                      "value": "Sociedades Generales"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Una gran sociedad general es un tipo de estructura empresarial en la que varios socios se unen para operar un negocio. En el caso de una DAO, los socios están representados por tokens digitales en manos de los poseedores de tokens. Los socios comparten ganancias, pérdidas y control sobre el negocio en proporción a sus tenencias de tokens. En una gran sociedad general, los socios son personalmente responsables de las deudas y obligaciones del negocio."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Este tipo de estructura puede ser particularmente apropiada para DAOs que operan como una empresa, buscan generar ganancias y buscan formas de atraer inversión. Por ejemplo, una DAO que opera como una gran sociedad general puede emitir tokens que son como acciones. Esto permite a la DAO recaudar capital, atraer inversión y recompensar a los poseedores de tokens con una parte de las ganancias."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Sin embargo, también hay desventajas en este tipo de estructura. Por ejemplo, los poseedores de tokens pueden no estar completamente protegidos de la responsabilidad personal por las deudas y obligaciones del negocio. Además, la estructura de sociedad puede ser menos flexible que otras estructuras y puede no permitir el mismo grado de descentralización."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": []
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        {
+                          "0": "s",
+                          "1": "t",
+                          "2": "r",
+                          "3": "o",
+                          "4": "n",
+                          "5": "g"
+                        }
+                      ],
+                      "value": "Asociaciones Sin Fines de Lucro"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Por otro lado, una asociación sin fines de lucro no incorporada es un tipo de organización que opera en beneficio de sus miembros y no con fines de lucro. En este tipo de estructura, los miembros de la asociación comparten el control sobre la organización y no son personalmente responsables de sus deudas y obligaciones. Una asociación sin fines de lucro no incorporada puede ser una buena opción para DAOs que operan como una organización sin fines de lucro y buscan una forma de gobernanza flexible y descentralizada."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Por ejemplo, una DAO que opera como una asociación sin fines de lucro no incorporada puede estructurarse como una organización descentralizada y dirigida por la comunidad. Los miembros de la DAO pueden tomar decisiones juntos y la organización puede ser gobernada de una manera más democrática. Este tipo de estructura puede ser particularmente apropiada para DAOs que se centran en causas sociales o ambientales, donde el objetivo es promover una causa o ideología particular, en lugar de generar ganancias."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Sin embargo, también hay desventajas en este tipo de estructura. Por ejemplo, una asociación sin fines de lucro no incorporada puede no tener el mismo estatus legal que una corporación y puede no ser capaz de recaudar capital de la misma manera. Además, este tipo de estructura puede no ser tan adecuada para organizaciones que buscan generar ganancias."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "En conclusión, cuando se trata de ver las DAOs legalmente, es importante entender que pueden ser vistas como una gran sociedad general o una asociación sin fines de lucro no incorporada. Ambos tipos de estructuras tienen sus propios pros y contras, y la elección de la estructura dependerá de los objetivos específicos de la DAO. Ya sea que una DAO opere como una empresa o una organización sin fines de lucro, es esencial elegir una estructura que se alinee con los objetivos de la organización y proporcione las protecciones legales necesarias para sus miembros."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "db2-img3",
+            "height": 994,
+            "width": 994,
+            "filename": "db2-img3.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1687384462-db2-img3.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Organizaciones Autónomas Descentralizadas (DAOs): Navegando Estructuras Legales para Fines Comerciales y Sin Fines de Lucro",
+      "title": "DAOs: Navegando Estructuras Legales para Fines Comerciales y Sin Fines de Lucro",
+      "twitterCard": null,
+      "image": {
+        "width": 994,
+        "height": 994,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1687384353-db2-img1.png"
+      }
+    }
+  },
+  "topics": [
+    "DAO",
+    "Legal"
+  ]
+}

@@ -6,7 +6,12 @@ import {
 import { getLayoutText } from './datocms-layout.service'
 import { getPageSeoText } from './datocms-seo.service'
 import { BlogAiRecord, SiteLocale } from './graphql/generated/cms'
-  import * as fs from 'fs';
+import * as fs from 'fs'
+import { openAiTranslate } from '../openai'
+import {
+  extractTextForTranslation,
+  injectTextAfterTranslation
+} from '@/services/datocms/translation/utils'
 
 export const getBlogData = async (locale: SiteLocale) => {
   const locales = [locale]
@@ -196,10 +201,15 @@ export async function getBlogCategoryLandingData(
     }
   })
 
-  const result = { sections, pageSeo, i18n };
+  const result = { sections, pageSeo, i18n }
 
+  return result
+}
 
-  return result;
+export type BlogArticleData = {
+  relatedBlogs: BlogArticleRecord[]
+  blogContent: BlogArticleRecord
+  topics: string[]
 }
 
 export async function getBlogArticleData(
@@ -207,15 +217,56 @@ export async function getBlogArticleData(
   category: string,
   slug: string
 ) {
+  const dirPath = `dictionaries/${locale}/blog/${category}`
+  const fileName = `${slug}.json`
+  const filePath = `${dirPath}/${fileName}`
 
-  const dirPath = `dictionaries/${locale}/blog/${category}`;
-  const fileName = `${slug}.json`;
-  const filePath = `${dirPath}/${fileName}`;
-
+  // return cached translations
   try {
-    const fileContents = fs.readFileSync(filePath, 'utf8');
-    return JSON.parse(fileContents);
-  } catch (error) {}
+    const fileContents: BlogArticleData = JSON.parse(
+      fs.readFileSync(filePath, 'utf8')
+    )
+    return fileContents
+  } catch (error) {
+    console.log('error', error)
+  }
+
+  // if cached translations are not available, translate the english version
+  // return english version by default if translation is not found
+  if (locale !== 'en') {
+    const englishVersion: BlogArticleData = JSON.parse(
+      fs.readFileSync(`dictionaries/en/blog/${category}/${slug}.json`, 'utf8')
+    )
+    return englishVersion
+    //NOTE: this is the old way of translating, we now use the new script that translates all the blogs at once
+    // try {
+    //   const optimized = extractTextForTranslation(englishVersion.blogContent)
+    //   // console.log('======================================')
+    //   // console.log('optimized', optimized)
+    //   const { translation, finishReason } = await openAiTranslate(
+    //     JSON.stringify(optimized),
+    //     locale
+    //   )
+    //   if (finishReason !== 'stop' || !translation) {
+    //     console.log('ERRRRROR TRANSLATING')
+    //     // return english
+    //     return englishVersion
+    //   }
+    //   englishVersion.blogContent = injectTextAfterTranslation(
+    //     englishVersion.blogContent,
+    //     JSON.parse(translation)
+    //   )
+    //   // console.log('==========================================')
+    //   // console.log('!!!! translation', fileContents)
+    //   fs.mkdirSync(dirPath, { recursive: true })
+    //   fs.writeFileSync(filePath, JSON.stringify(englishVersion, null, 2))
+
+    //   return englishVersion
+    // } catch (error) {
+    //   console.log('ERRRORSHSHS', error)
+    //   return englishVersion
+    // }
+  }
 
   // console.log('getBlogArticleData', { locale, category, slug })
   const [i18n, categories] = await Promise.all([
@@ -257,20 +308,26 @@ export async function getBlogArticleData(
     const escapedTitle = escapeRegExp(blogContent.title).replace(/\s+/g, '|')
     const titleRegex = new RegExp(`(${escapedTitle})`, 'gi')
 
-    relatedBlogs = relatedBlogs[`${blogCategory}Data`].filter(
-      (blog: BlogAiRecord) =>
-        (blog.topics as string[]).some((topic: string) =>
-          topics.includes(topic)
-        ) &&
-        blog.description?.match(titleRegex) &&
-        blog.title?.match(titleRegex)
-    )
+    relatedBlogs = relatedBlogs[`${blogCategory}Data`]
+      .map((blog: any) => {
+        const { contentBlock, ...rest } = blog
+        return rest
+      })
+      .filter(
+        (blog: BlogAiRecord) =>
+          (blog.topics as string[]).some((topic: string) =>
+            topics.includes(topic)
+          ) &&
+          blog.description?.match(titleRegex) &&
+          blog.title?.match(titleRegex)
+      )
   }
 
   // always create an english dictionary
-  const result = { relatedBlogs, blogContent, i18n, topics }
-  fs.mkdirSync(dirPath, { recursive: true });
-  fs.writeFileSync(filePath, JSON.stringify(result, null, 2));
+  const result: BlogArticleData = { relatedBlogs, blogContent, topics }
+
+  fs.mkdirSync(dirPath, { recursive: true })
+  fs.writeFileSync(filePath, JSON.stringify(result, null, 2))
 
   return result
 }

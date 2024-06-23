@@ -5,14 +5,14 @@
     "topics": [
       "how_to"
     ],
-    "title": "How to Register and KYC to Bitcash",
+    "title": "Cómo Registrarse y KYC en Bitcash",
     "slug": "how-to-register-and-kyc-to-bitcash",
     "authorName": "Roberto \"Andler\" Lucas",
     "authorPicture": {
       "url": "https://www.datocms-assets.com/101962/1715639160-andler-file-photo.jpg"
     },
     "_publishedAt": "2024-06-20T16:20:40+01:00",
-    "description": "We are covering a range of topics, including registering for a Bitcash account, setting up an account name and referrer, identifying and securing devices, providing identification and personal information for KYC, taking photos for KYC verification, and waiting for approval and joining the community.",
+    "description": "Estamos cubriendo una variedad de temas, incluyendo registrarse para una cuenta de Bitcash, configurar un nombre de cuenta y referente, identificar y asegurar dispositivos, proporcionar identificación e información personal para KYC, tomar fotos para la verificación KYC, y esperar la aprobación y unirse a la comunidad.",
     "thumbnail": {
       "url": "https://www.datocms-assets.com/101962/1715638953-bitcash-logo-frame-w-bg.png"
     },
@@ -29,7 +29,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "The Bitcash Wallet App offers a comprehensive web3 experience with a robust KYC process, secure passkey integration, and an engaging rewards system. These features not only enhance user security and convenience but also foster a strong community by incentivizing participation. To further improve the user experience, expanding support for additional cryptocurrencies and providing more educational resources could be considered. Overall, the Bitcash Wallet App is well-positioned to attract and retain users within the cryptocurrency, DeFi, and web3 ecosystem."
+                      "value": "La App de Billetera Bitcash ofrece una experiencia web3 integral con un robusto proceso KYC, integración de clave de acceso segura y un sistema de recompensas atractivo. Estas características no solo mejoran la seguridad y conveniencia del usuario, sino que también fomentan una comunidad fuerte al incentivar la participación. Para mejorar aún más la experiencia del usuario, se podría considerar expandir el soporte para criptomonedas adicionales y proporcionar más recursos educativos. En general, la App de Billetera Bitcash está bien posicionada para atraer y retener usuarios dentro del ecosistema de criptomonedas, DeFi y web3."
                     }
                   ]
                 }
@@ -62,7 +62,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Step 0 (Optional) - Register from Bitlauncher"
+                      "value": "Paso 0 (Opcional) - Registrarse desde Bitlauncher"
                     }
                   ]
                 },
@@ -71,7 +71,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "If you are an investor and you want to participate in the pre-sale of our upcoming "
+                      "value": "Si eres un inversor y quieres participar en la preventa de nuestro próximo "
                     },
                     {
                       "url": "https://bitlauncher.ai/bitcash-bitlauncher",
@@ -88,13 +88,13 @@
                           "marks": [
                             "strong"
                           ],
-                          "value": "BC token"
+                          "value": "token BC"
                         }
                       ]
                     },
                     {
                       "type": "span",
-                      "value": ", connect an EOS EVM wallet to your account and more, you can register your Bitcash account by following these steps:"
+                      "value": ", conectar una billetera EOS EVM a tu cuenta y más, puedes registrar tu cuenta de Bitcash siguiendo estos pasos:"
                     }
                   ]
                 },
@@ -110,7 +110,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "value": "Go to "
+                              "value": "Ve a "
                             },
                             {
                               "url": "https://bitlauncher.ai",
@@ -133,18 +133,18 @@
                             },
                             {
                               "type": "span",
-                              "value": " and scroll down to the "
+                              "value": " y desplázate hacia abajo hasta la sección "
                             },
                             {
                               "type": "span",
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Only 3 Steps Needed"
+                              "value": "Solo se Necesitan 3 Pasos"
                             },
                             {
                               "type": "span",
-                              "value": " section."
+                              "value": "."
                             }
                           ]
                         }
@@ -158,7 +158,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "value": "Click on the \"Sign Up and Complete KYC\" card where the image indicates."
+                              "value": "Haz clic en la tarjeta \"Registrarse y Completar KYC\" donde indica la imagen."
                             }
                           ]
                         }
@@ -174,7 +174,7 @@
                       "children": [
                         {
                           "type": "span",
-                          "value": "Completing these steps will take you to our Bitcash Wallet app to begin the registration."
+                          "value": "Completar estos pasos te llevará a nuestra app de Billetera Bitcash para comenzar el registro."
                         }
                       ]
                     }
@@ -199,7 +199,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Step 1 - Your Identity At The Bitcash Wallet App."
+                      "value": "Paso 1 - Tu Identidad en la App de Billetera Bitcash."
                     }
                   ]
                 },
@@ -209,7 +209,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Setting your account name."
+                      "value": "Configurar tu nombre de cuenta."
                     }
                   ]
                 },
@@ -218,7 +218,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Choose an account name that identifies you, between letters "
+                      "value": "Elige un nombre de cuenta que te identifique, entre letras "
                     },
                     {
                       "type": "span",
@@ -229,7 +229,7 @@
                     },
                     {
                       "type": "span",
-                      "value": " to "
+                      "value": " a "
                     },
                     {
                       "type": "span",
@@ -240,7 +240,7 @@
                     },
                     {
                       "type": "span",
-                      "value": "and/or numbers from "
+                      "value": "y/o números del "
                     },
                     {
                       "type": "span",
@@ -251,7 +251,7 @@
                     },
                     {
                       "type": "span",
-                      "value": "to "
+                      "value": "al "
                     },
                     {
                       "type": "span",
@@ -262,18 +262,18 @@
                     },
                     {
                       "type": "span",
-                      "value": " and "
+                      "value": " y "
                     },
                     {
                       "type": "span",
                       "marks": [
                         "strong"
                       ],
-                      "value": "up to 9"
+                      "value": "hasta 9"
                     },
                     {
                       "type": "span",
-                      "value": " characters long. It can be less and be only letters or letters with numbers. At the end of the process (and when your account is approved), it will have the "
+                      "value": " caracteres de largo. Puede ser menos y ser solo letras o letras con números. Al final del proceso (y cuando tu cuenta sea aprobada), tendrá el dominio "
                     },
                     {
                       "type": "span",
@@ -284,7 +284,7 @@
                     },
                     {
                       "type": "span",
-                      "value": "domain at the end of the name."
+                      "value": "al final del nombre."
                     }
                   ]
                 },
@@ -293,7 +293,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Be mindful of your account name, it will be forever! Ensure to follow:"
+                      "value": "Ten en cuenta tu nombre de cuenta, ¡será para siempre! Asegúrate de seguir:"
                     }
                   ]
                 },
@@ -309,7 +309,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "value": "Choose a unique and memorable name."
+                              "value": "Elige un nombre único y memorable."
                             }
                           ]
                         }
@@ -323,7 +323,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "value": "Avoid offensive, misleading, or promotional names."
+                              "value": "Evita nombres ofensivos, engañosos o promocionales."
                             }
                           ]
                         }
@@ -337,7 +337,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "value": "Represent one person; don’t use organization names."
+                              "value": "Representa a una persona; no uses nombres de organizaciones."
                             }
                           ]
                         }
@@ -351,7 +351,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "value": "Keep it simple and easy to spell for you and your peers."
+                              "value": "Mantenlo simple y fácil de deletrear para ti y tus compañeros."
                             }
                           ]
                         }
@@ -365,7 +365,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Setting a referrer."
+                      "value": "Configurar un referente."
                     }
                   ]
                 },
@@ -374,18 +374,18 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "A "
+                      "value": "Un "
                     },
                     {
                       "type": "span",
                       "marks": [
                         "strong"
                       ],
-                      "value": "referrer "
+                      "value": "referente "
                     },
                     {
                       "type": "span",
-                      "value": "is an existent and approved Bitcash account which refers you to the wallet app. It is not required to add the "
+                      "value": "es una cuenta de Bitcash existente y aprobada que te refiere a la app de billetera. No es necesario agregar el "
                     },
                     {
                       "type": "span",
@@ -396,7 +396,7 @@
                     },
                     {
                       "type": "span",
-                      "value": " at the end of the account name. If you do not have a referrer to connect, you can provide the "
+                      "value": " al final del nombre de la cuenta. Si no tienes un referente para conectar, puedes proporcionar la cuenta "
                     },
                     {
                       "type": "span",
@@ -407,7 +407,7 @@
                     },
                     {
                       "type": "span",
-                      "value": "account (our bank smart contract)."
+                      "value": "(nuestro contrato inteligente bancario)."
                     }
                   ]
                 },
@@ -419,7 +419,7 @@
                       "children": [
                         {
                           "type": "span",
-                          "value": "If you are coming from Bitlauncher or you have clicked on a share link, this field may be already filled."
+                          "value": "Si vienes de Bitlauncher o has hecho clic en un enlace compartido, este campo puede estar ya lleno."
                         }
                       ]
                     }
@@ -454,7 +454,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Step 2 - Identify Your Device"
+                      "value": "Paso 2 - Identificar tu Dispositivo"
                     }
                   ]
                 },
@@ -463,7 +463,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Giving a name tag for your main device is ideal for you to quickly identify your connected devices."
+                      "value": "Dar una etiqueta de nombre a tu dispositivo principal es ideal para que identifiques rápidamente tus dispositivos conectados."
                     }
                   ]
                 },
@@ -472,7 +472,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "With Bitcash Wallet you can link more than one mobile/tablet device, to be capable of logging in with different devices. By default, we provide you a general name, but it is always good to assign a name."
+                      "value": "Con la Billetera Bitcash puedes vincular más de un dispositivo móvil/tableta, para poder iniciar sesión con diferentes dispositivos. Por defecto, te proporcionamos un nombre general, pero siempre es bueno asignar un nombre."
                     }
                   ]
                 },
@@ -481,40 +481,40 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Once the "
+                      "value": "Una vez que se asigne el "
                     },
                     {
                       "type": "span",
                       "marks": [
                         "strong"
                       ],
-                      "value": "Device Name "
+                      "value": "Nombre del Dispositivo "
                     },
                     {
                       "type": "span",
-                      "value": "is assigned and we click on the "
-                    },
-                    {
-                      "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
-                      "value": "Next button"
-                    },
-                    {
-                      "type": "span",
-                      "value": ", it will request to create a "
+                      "value": "y hagamos clic en el "
                     },
                     {
                       "type": "span",
                       "marks": [
                         "strong"
                       ],
-                      "value": "passkey "
+                      "value": "botón Siguiente"
                     },
                     {
                       "type": "span",
-                      "value": "and create a "
+                      "value": ", solicitará crear una "
+                    },
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "clave de acceso "
+                    },
+                    {
+                      "type": "span",
+                      "value": "y crear una conexión "
                     },
                     {
                       "type": "span",
@@ -525,7 +525,7 @@
                     },
                     {
                       "type": "span",
-                      "value": "connection between your device with your new account. You can pick any of the options to authenticate your account. This is how you will be logging in with your account."
+                      "value": "entre tu dispositivo y tu nueva cuenta. Puedes elegir cualquiera de las opciones para autenticar tu cuenta. Así es como iniciarás sesión con tu cuenta."
                     }
                   ]
                 },
@@ -537,7 +537,7 @@
                       "children": [
                         {
                           "type": "span",
-                          "value": "If you cannot move forward to the next screen, first try to use either "
+                          "value": "Si no puedes avanzar a la siguiente pantalla, primero intenta usar "
                         },
                         {
                           "type": "span",
@@ -555,11 +555,11 @@
                           "marks": [
                             "strong"
                           ],
-                          "value": "Opera (Not Mini)"
+                          "value": "Opera (No Mini)"
                         },
                         {
                           "type": "span",
-                          "value": " or "
+                          "value": " o "
                         },
                         {
                           "type": "span",
@@ -570,7 +570,7 @@
                         },
                         {
                           "type": "span",
-                          "value": " mobile browsers with the latest version to ensure full compatibility and security."
+                          "value": " navegadores móviles con la última versión para asegurar la compatibilidad y seguridad completas."
                         }
                       ]
                     },
@@ -579,14 +579,14 @@
                       "children": [
                         {
                           "type": "span",
-                          "value": "If retrying is not possible to move forward after checking the mobile browser, check your smartphone security compatibility with "
+                          "value": "Si al reintentar no es posible avanzar después de verificar el navegador móvil, verifica la compatibilidad de seguridad de tu smartphone con "
                         },
                         {
                           "type": "span",
                           "marks": [
                             "strong"
                           ],
-                          "value": "passkeys"
+                          "value": "claves de acceso"
                         },
                         {
                           "type": "span",
@@ -625,7 +625,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Step 3 - Provide Your Identify (KYC)"
+                      "value": "Paso 3 - Proporcionar tu Identidad (KYC)"
                     }
                   ]
                 },
@@ -634,7 +634,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "These security measures protect your account from unauthorized access and ensure you are the rightful owner. It also enables us to accurately award app rewards tailored to your region. Therefore, it is important for us to you to provide your:"
+                      "value": "Estas medidas de seguridad protegen tu cuenta de accesos no autorizados y aseguran que eres el legítimo propietario. También nos permite otorgar con precisión recompensas de la app adaptadas a tu región. Por lo tanto, es importante para nosotros que proporciones tu:"
                     }
                   ]
                 },
@@ -653,11 +653,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Full name:"
+                              "value": "Nombre completo:"
                             },
                             {
                               "type": "span",
-                              "value": " Must match with the name of your given identification."
+                              "value": " Debe coincidir con el nombre de tu identificación proporcionada."
                             }
                           ]
                         }
@@ -674,18 +674,18 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Identification Type and Number:"
+                              "value": "Tipo y Número de Identificación:"
                             },
                             {
                               "type": "span",
-                              "value": " It can be a "
+                              "value": " Puede ser una "
                             },
                             {
                               "type": "span",
                               "marks": [
                                 "strong"
                               ],
-                              "value": "National ID"
+                              "value": "ID Nacional"
                             },
                             {
                               "type": "span",
@@ -696,18 +696,18 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": " Drivers License "
+                              "value": " Licencia de Conducir "
                             },
                             {
                               "type": "span",
-                              "value": "or "
+                              "value": "o "
                             },
                             {
                               "type": "span",
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Passport"
+                              "value": "Pasaporte"
                             },
                             {
                               "type": "span",
@@ -728,18 +728,18 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Country:"
+                              "value": "País:"
                             },
                             {
                               "type": "span",
-                              "value": " This automatically pops up, else pick the country of your "
+                              "value": " Esto aparece automáticamente, de lo contrario elige el país de tu "
                             },
                             {
                               "type": "span",
                               "marks": [
                                 "strong"
                               ],
-                              "value": "identification origin"
+                              "value": "origen de identificación"
                             },
                             {
                               "type": "span",
@@ -760,11 +760,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Phone Number:"
+                              "value": "Número de Teléfono:"
                             },
                             {
                               "type": "span",
-                              "value": " Your phone number for the Bitcash communities and security."
+                              "value": " Tu número de teléfono para las comunidades y seguridad de Bitcash."
                             }
                           ]
                         }
@@ -781,11 +781,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Email Address:"
+                              "value": "Dirección de Correo Electrónico:"
                             },
                             {
                               "type": "span",
-                              "value": " Your email address for Bitcash community communications."
+                              "value": " Tu dirección de correo electrónico para las comunicaciones de la comunidad de Bitcash."
                             }
                           ]
                         }
@@ -802,29 +802,29 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Photo ID:"
+                              "value": "Foto de Identificación:"
                             },
                             {
                               "type": "span",
-                              "value": " Your "
-                            },
-                            {
-                              "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
-                              "value": "selfie photo"
-                            },
-                            {
-                              "type": "span",
-                              "value": " holding your identification and a "
+                              "value": " Tu "
                             },
                             {
                               "type": "span",
                               "marks": [
                                 "strong"
                               ],
-                              "value": "close-up identification photo ID"
+                              "value": "foto selfie"
+                            },
+                            {
+                              "type": "span",
+                              "value": " sosteniendo tu identificación y una "
+                            },
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "foto de identificación de primer plano"
                             },
                             {
                               "type": "span",
@@ -842,7 +842,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "value": "Subscribe to our Newsletter (Optional). "
+                              "value": "Suscribirse a nuestro Boletín (Opcional). "
                             }
                           ]
                         }
@@ -869,7 +869,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Step 3.1 - How Do I Take The Pictures?"
+                      "value": "Paso 3.1 - ¿Cómo Tomo las Fotos?"
                     }
                   ]
                 },
@@ -881,7 +881,7 @@
                       "children": [
                         {
                           "type": "span",
-                          "value": "We highly recommend cleaning the camera, and the sensors and having a clean room with enough light to make the facial recognition."
+                          "value": "Recomendamos encarecidamente limpiar la cámara, los sensores y tener una habitación limpia con suficiente luz para hacer el reconocimiento facial."
                         }
                       ]
                     }
@@ -892,40 +892,40 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "To start taking the pictures, it is required for security measures to "
+                      "value": "Para comenzar a tomar las fotos, se requiere por medidas de seguridad "
                     },
                     {
                       "type": "span",
                       "marks": [
                         "strong"
                       ],
-                      "value": "Grant Permission "
+                      "value": "Conceder Permiso "
                     },
                     {
                       "type": "span",
-                      "value": "for "
-                    },
-                    {
-                      "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
-                      "value": "localization "
-                    },
-                    {
-                      "type": "span",
-                      "value": "and "
+                      "value": "para el "
                     },
                     {
                       "type": "span",
                       "marks": [
                         "strong"
                       ],
-                      "value": "camera"
+                      "value": "acceso a la localización "
                     },
                     {
                       "type": "span",
-                      "value": " access. It is important to follow up on the instructions given at each step to have a seamless experience while taking the pictures."
+                      "value": "y la "
+                    },
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "cámara"
+                    },
+                    {
+                      "type": "span",
+                      "value": ". Es importante seguir las instrucciones dadas en cada paso para tener una experiencia sin problemas al tomar las fotos."
                     }
                   ]
                 },
@@ -935,7 +935,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "When do I know that I am taking the picture right?"
+                      "value": "¿Cuándo sé que estoy tomando la foto correctamente?"
                     }
                   ]
                 },
@@ -944,7 +944,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "When taking the picture, there should be:"
+                      "value": "Al tomar la foto, debería haber:"
                     }
                   ]
                 },
@@ -960,7 +960,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "value": "A green frame with a checkmark at the right top corner of the camera recording frame."
+                              "value": "Un marco verde con una marca de verificación en la esquina superior derecha del marco de grabación de la cámara."
                             }
                           ]
                         }
@@ -974,14 +974,14 @@
                           "children": [
                             {
                               "type": "span",
-                              "value": "There should be a message below the camera recording frame "
+                              "value": "Debería haber un mensaje debajo del marco de grabación de la cámara "
                             },
                             {
                               "type": "span",
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Photo is OK"
+                              "value": "Foto está OK"
                             },
                             {
                               "type": "span",
@@ -999,18 +999,18 @@
                           "children": [
                             {
                               "type": "span",
-                              "value": "The "
+                              "value": "El color del botón "
                             },
                             {
                               "type": "span",
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Take Selfie"
+                              "value": "Tomar Selfie"
                             },
                             {
                               "type": "span",
-                              "value": " button colour has changed to a darker one."
+                              "value": " ha cambiado a uno más oscuro."
                             }
                           ]
                         }
@@ -1024,7 +1024,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "value": "After taking the "
+                              "value": "Después de tomar la "
                             },
                             {
                               "type": "span",
@@ -1035,29 +1035,29 @@
                             },
                             {
                               "type": "span",
-                              "value": ", it will process the image show again the "
+                              "value": ", procesará la imagen y mostrará nuevamente el mensaje "
                             },
                             {
                               "type": "span",
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Photo is OK "
+                              "value": "Foto está OK "
                             },
                             {
                               "type": "span",
-                              "value": "message and give a "
+                              "value": "y dará un botón de "
                             },
                             {
                               "type": "span",
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Continue "
+                              "value": "Continuar"
                             },
                             {
                               "type": "span",
-                              "value": "button."
+                              "value": "."
                             }
                           ]
                         }
@@ -1070,18 +1070,18 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "If after "
+                      "value": "Si después de "
                     },
                     {
                       "type": "span",
                       "marks": [
                         "strong"
                       ],
-                      "value": "Taking Selfie "
+                      "value": "Tomar Selfie "
                     },
                     {
                       "type": "span",
-                      "value": "it shows a red frame with a red text message, try to stay still until the validation is completed. Some devices can be affected by the sensor if moved."
+                      "value": "muestra un marco rojo con un mensaje de texto rojo, intenta quedarte quieto hasta que se complete la validación. Algunos dispositivos pueden verse afectados por el sensor si se mueven."
                     }
                   ]
                 },
@@ -1093,7 +1093,7 @@
                       "children": [
                         {
                           "type": "span",
-                          "value": "If retrying doesn't happen, make sure to have enough light and/or nothing is obscuring your face (e.g.: glasses, facial jewellery)."
+                          "value": "Si al reintentar no sucede, asegúrate de tener suficiente luz y/o que nada esté obstruyendo tu rostro (por ejemplo: gafas, joyería facial)."
                         }
                       ]
                     }
@@ -1130,18 +1130,18 @@
                       "children": [
                         {
                           "type": "span",
-                          "value": "For the "
+                          "value": "Para la "
                         },
                         {
                           "type": "span",
                           "marks": [
                             "strong"
                           ],
-                          "value": "Card ID Photo "
+                          "value": "Foto de ID de Tarjeta "
                         },
                         {
                           "type": "span",
-                          "value": "is simpler than the "
+                          "value": "es más simple que la "
                         },
                         {
                           "type": "span",
@@ -1152,7 +1152,7 @@
                         },
                         {
                           "type": "span",
-                          "value": ". Make sure to put your ID given on the KYC form before inside of the frame that appears on the camera recording frame."
+                          "value": ". Asegúrate de poner tu ID proporcionada en el formulario KYC dentro del marco que aparece en el marco de grabación de la cámara."
                         }
                       ]
                     }
@@ -1196,7 +1196,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Step 4 - Wait for Approval and Join the Community!"
+                      "value": "Paso 4 - Esperar la Aprobación y Unirse a la Comunidad!"
                     }
                   ]
                 },
@@ -1205,7 +1205,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "After ensuring the data is correct and all steps are completed, it is time now to continue and complete registration!"
+                      "value": "Después de asegurarte de que los datos son correctos y todos los pasos están completados, es hora de continuar y completar el registro!"
                     }
                   ]
                 },
@@ -1214,18 +1214,18 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "You will be taken to "
+                      "value": "Serás llevado a "
                     },
                     {
                       "type": "span",
                       "marks": [
                         "strong"
                       ],
-                      "value": "success"
+                      "value": "éxito"
                     },
                     {
                       "type": "span",
-                      "value": "! Here you will find a button that takes you to our "
+                      "value": "! Aquí encontrarás un botón que te llevará a nuestra "
                     },
                     {
                       "url": "https://discord.gg/MG38R6YbF5",
@@ -1242,13 +1242,13 @@
                           "marks": [
                             "strong"
                           ],
-                          "value": "Discord Community"
+                          "value": "Comunidad de Discord"
                         }
                       ]
                     },
                     {
                       "type": "span",
-                      "value": ". There you can follow up the onboarding process to our community."
+                      "value": ". Allí puedes seguir el proceso de incorporación a nuestra comunidad."
                     }
                   ]
                 },
@@ -1257,7 +1257,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Enjoy!"
+                      "value": "¡Disfruta!"
                     }
                   ]
                 }
@@ -1290,7 +1290,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "FAQs"
+                      "value": "Preguntas Frecuentes"
                     }
                   ]
                 },
@@ -1300,7 +1300,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "1. I registered before KYC, Do I still need to do KYC?"
+                      "value": "1. Me registré antes de KYC, ¿Todavía necesito hacer KYC?"
                     }
                   ]
                 },
@@ -1312,7 +1312,7 @@
                       "children": [
                         {
                           "type": "span",
-                          "value": "Yes you do, you can complete the process by going to Settings > Profile Settings and providing the missing information. Our team checks daily for new requests and will notify you by email when we complete the verification of the information given."
+                          "value": "Sí, puedes completar el proceso yendo a Configuración > Configuración de Perfil y proporcionando la información faltante. Nuestro equipo revisa diariamente las nuevas solicitudes y te notificará por correo electrónico cuando completemos la verificación de la información proporcionada."
                         }
                       ]
                     }
@@ -1324,7 +1324,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "2. I used to log in with my phone but now I can't after I reset my phone and/or change my phone password."
+                      "value": "2. Solía iniciar sesión con mi teléfono pero ahora no puedo después de reiniciar mi teléfono y/o cambiar la contraseña de mi teléfono."
                     }
                   ]
                 },
@@ -1336,7 +1336,7 @@
                       "children": [
                         {
                           "type": "span",
-                          "value": "Your device access is attached to your phone. Any change on the access like password updates or changing the method (face-ID, fingerprint, pin, pattern) from the original made while the account was created it may affect your app experience, losing access to it. If you experience any issues, please contact our "
+                          "value": "El acceso a tu dispositivo está vinculado a tu teléfono. Cualquier cambio en el acceso como actualizaciones de contraseña o cambiar el método (ID facial, huella digital, pin, patrón) del original hecho mientras se creó la cuenta puede afectar tu experiencia en la app, perdiendo acceso a ella. Si experimentas algún problema, por favor contacta a nuestro "
                         },
                         {
                           "url": "https://discord.com/channels/856694458388054026/1222398643210813550",
@@ -1350,13 +1350,13 @@
                           "children": [
                             {
                               "type": "span",
-                              "value": "support channel"
+                              "value": "canal de soporte"
                             }
                           ]
                         },
                         {
                           "type": "span",
-                          "value": "; we will take care of your case!"
+                          "value": "; ¡nos encargaremos de tu caso!"
                         }
                       ]
                     }
@@ -1368,7 +1368,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "What it is a \"WebAuthN\"?"
+                      "value": "¿Qué es \"WebAuthN\"?"
                     }
                   ]
                 },
@@ -1380,7 +1380,7 @@
                       "children": [
                         {
                           "type": "span",
-                          "value": "WebAuthn is a modern security standard that simplifies signing in to websites without needing a password. It allows users to use their fingerprint, face, or a security key for authentication, making it more convenient and secure."
+                          "value": "WebAuthn es un estándar de seguridad moderno que simplifica el inicio de sesión en sitios web sin necesidad de una contraseña. Permite a los usuarios usar su huella digital, rostro o una clave de seguridad para la autenticación, haciéndolo más conveniente y seguro."
                         }
                       ]
                     }
@@ -1392,7 +1392,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Why is it important to keep my phone safe?"
+                      "value": "¿Por qué es importante mantener mi teléfono seguro?"
                     }
                   ]
                 },
@@ -1404,7 +1404,7 @@
                       "children": [
                         {
                           "type": "span",
-                          "value": "Keeping and not losing your phone safe using the Bitcash Wallet app is important because a lost or stolen device can still pose a security risk if it is not properly secured."
+                          "value": "Mantener y no perder tu teléfono seguro usando la app de Billetera Bitcash es importante porque un dispositivo perdido o robado aún puede representar un riesgo de seguridad si no está debidamente asegurado."
                         }
                       ]
                     },
@@ -1413,7 +1413,7 @@
                       "children": [
                         {
                           "type": "span",
-                          "value": "By using the Bitcash Wallet app, you ensure that even if your phone is lost or stolen, the data stored on it remains inaccessible without your biometric information or security key. This helps protect your privacy and prevent identity theft, nevertheless, you will lose access to your account because your account is attached to your phone and a recovery process must be started."
+                          "value": "Al usar la app de Billetera Bitcash, aseguras que incluso si tu teléfono se pierde o es robado, los datos almacenados en él permanecen inaccesibles sin tu información biométrica o clave de seguridad. Esto ayuda a proteger tu privacidad y prevenir el robo de identidad, sin embargo, perderás acceso a tu cuenta porque tu cuenta está vinculada a tu teléfono y debe iniciarse un proceso de recuperación."
                         }
                       ]
                     }
@@ -1437,8 +1437,8 @@
       }
     ],
     "seo": {
-      "description": "We are learning how to register a Bitcash account, set up the account, identify devices, KYC, and waiting for approval and join the community!",
-      "title": "How to Register and KYC to Bitcash",
+      "description": "Estamos aprendiendo cómo registrar una cuenta de Bitcash, configurar la cuenta, identificar dispositivos, KYC, y esperar la aprobación y unirse a la comunidad!",
+      "title": "Cómo Registrarse y KYC en Bitcash",
       "twitterCard": "summary",
       "image": {
         "width": 1440,
@@ -1448,46 +1448,6 @@
         "url": "https://www.datocms-assets.com/101962/1715831775-splash-edited.png"
       }
     }
-  },
-  "i18n": {
-    "navigationTopic": {
-      "bitcoin": "Bitcoin",
-      "gems": "Gemas",
-      "how_to": "Cómo",
-      "analysis": "Análisis",
-      "opinion": "Opinión"
-    },
-    "navigationCategories": {
-      "ai": "AI",
-      "crypto": "Crypto",
-      "bitcoin": "Bitcoin",
-      "startup": "Startups",
-      "investing": "Inversiones",
-      "bitcash": "bitcash"
-    },
-    "searchInputPlaceholder": "Buscar",
-    "backHome": "Volver a casa",
-    "backBitcash": "Volver a bitcash.org",
-    "navigationPoliciesTerms": {
-      "privacy_policy": "Política de Privacidad",
-      "terms_and_conditions": "Términos y Condiciones"
-    },
-    "subscriptionTitle": "Subscríbite Para Las Últimas Actualizaciones",
-    "subscriptionSubtitle": "Suscríbete al boletín y nunca te pierdas la nueva publicación cada semana.",
-    "subscriptionInputPlaceholder": "Ingresa tu correo electrónico aquí …",
-    "subscriptionCta": "Subscribirse",
-    "homeFollowLinks": {
-      "telegram": "https://t.me/bitcash_org",
-      "twitter": "https://twitter.com/bitcashorg",
-      "medium": "https://medium.com/bitcashBank"
-    },
-    "cryptoFollowLinks": null,
-    "bitcoinFollowLinks": null,
-    "aiFollowLinks": null,
-    "investingFollowLinks": null,
-    "startUpsFollowLinks": null,
-    "cookieConsentDescription": "Este sitio web utiliza cookies para mejorar la experiencia del usuario. Al utilizar nuestro sitio web, usted acepta todas las cookies de acuerdo con nuestra Política de cookies.",
-    "cookieConsentCta": "Acceptar"
   },
   "topics": [
     "how_to"

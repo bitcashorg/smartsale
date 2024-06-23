@@ -1635,67 +1635,6 @@
       }
     }
   },
-  "i18n": {
-    "navigationTopic": {
-      "bitcoin": "Bitcoin",
-      "gems": "Gems",
-      "how_to": "How To",
-      "analysis": "Analysis",
-      "opinion": "Opinion"
-    },
-    "navigationCategories": {
-      "ai": "AI",
-      "ai-research": "AI Research",
-      "crypto": "Crypto",
-      "bitcoin": "Bitcoin",
-      "startup": "Startups",
-      "investing": "Investing",
-      "bitcash": "bitcash"
-    },
-    "searchInputPlaceholder": "Search",
-    "backHome": "Go back home",
-    "backBitcash": "Back to bitcash.org",
-    "navigationPoliciesTerms": {
-      "privacy_policy": "Privacy Policy",
-      "terms_and_conditions": "Terms and Conditions"
-    },
-    "subscriptionTitle": "Subscribe For The Latest Updates",
-    "subscriptionSubtitle": "Subscribe to the newsletter and never miss the new post every week.",
-    "subscriptionInputPlaceholder": "Enter your email here …",
-    "subscriptionCta": "Subscribe",
-    "homeFollowLinks": {
-      "telegram": "https://t.me/bitcash_org",
-      "twitter": "https://twitter.com/bitcashorg",
-      "threads": "https://threads.net/@bitcashorg"
-    },
-    "cryptoFollowLinks": {
-      "telegram": "https://t.me/bitcash_org",
-      "twitter": "https://twitter.com/bitcashorg.crypto",
-      "threads": "https://threads.net/@bitcashorg"
-    },
-    "bitcoinFollowLinks": {
-      "telegram": "https://t.me/bitcash_org",
-      "twitter": "https://twitter.com/bitcashorg.bitcoin",
-      "threads": "https://threads.net/@bitcashorg"
-    },
-    "aiFollowLinks": {
-      "telegram": "https://t.me/bitcash_org",
-      "twitter": "https://twitter.com/bitcashorg.ai",
-      "threads": "https://threads.net/@bitcashorg"
-    },
-    "investingFollowLinks": {
-      "telegram": "https://t.me/bitcash_org",
-      "twitter": "https://twitter.com/bitcashorg.investing",
-      "threads": "https://threads.net/@bitcashorg"
-    },
-    "startUpsFollowLinks": {
-      "telegram": "https://t.me/bitcash_org",
-      "twitter": "https://twitter.com/bitcashorg.startups",
-      "threads": "https://threads.net/@bitcashorg"
-    },
-    "cookieConsentDescription": "This website uses cookies to improve user experience. By using our website you consent to all cookies in accordance with our Cookie Policy.",
-    "cookieConsentCta": "Accept"
-  },
   "topics": [
     "investing",
     "bonds"

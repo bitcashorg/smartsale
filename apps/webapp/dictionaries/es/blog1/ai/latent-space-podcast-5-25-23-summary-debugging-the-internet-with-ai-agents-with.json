@@ -1,0 +1,870 @@
+{
+  "relatedBlogs": [
+    {
+      "id": "190259319",
+      "topics": [
+        "Resumen",
+        "LLM",
+        "Entrenamiento"
+      ],
+      "title": "Podcast de Latent Space 16/8/23 [Resumen] - Las Matemáticas del Entrenamiento de LLMs — con Quentin Anthony de Eleuther AI",
+      "slug": "latent-space-podcast-8-16-23-summary-the-mathematics-of-training-llms-with-que",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:19:45+01:00",
+      "description": "Explora las matemáticas detrás del entrenamiento de LLMs con Quentin Anthony de Eleuther AI. Sumérgete en el artículo Transformers Math 101 y domina las técnicas de entrenamiento distribuido para un rendimiento óptimo de GPU.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692324088-screenshot-2023-08-17-at-9-59-17-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space 16/8/23 [Resumen] Matemáticas del Entrenamiento de LLMs",
+        "description": "Sumérgete en el artículo Transformers Math 101 y domina las técnicas de entrenamiento distribuido para un rendimiento óptimo de GPU."
+      }
+    },
+    {
+      "id": "190259129",
+      "topics": [
+        "LLM",
+        "Hardware",
+        "Resumen",
+        "Edge"
+      ],
+      "title": "Podcast de Latent Space 10/8/23 [Resumen]: LLMs en todas partes: Ejecutando modelos de 70B en navegadores y iPhones usando MLC — con Tianqi Chen de CMU / OctoML",
+      "slug": "latent-space-podcast-8-10-23-summary-llms-everywhere-running-70b-models-in-browse",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:18:37+01:00",
+      "description": "Explora la magia de MLC con Tianqi Chen: desplegando modelos de 70B en navegadores y iPhones. Sumérgete en XGBoost, la creación de TVM y el futuro de los despliegues universales de IA.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1691894611-screenshot-2023-08-12-at-10-42-43-pm.png"
+      },
+      "seo": {
+        "title": "Latent Space 10/8/23 [Resumen]: LLMs en todas partes",
+        "description": "Explora el despliegue de modelos de 70B en navegadores y iPhones. Sumérgete en XGBoost, la creación de TVM y el futuro de los despliegues universales de IA."
+      }
+    },
+    {
+      "id": "190259087",
+      "topics": [
+        "Resumen",
+        "LLM",
+        "Código",
+        "Código Abierto",
+        "Modelos Pequeños"
+      ],
+      "title": "Podcast de Latent Space 4/8/23 [Resumen] Latent Space x AI Breakdown crossover pod!",
+      "slug": "latent-space-podcast-8-4-23-summary-latent-space-x-ai-breakdown-crossover-pod",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:16:33+01:00",
+      "description": "Únete a AI Breakdown y Latent Space para el resumen de tecnología de IA del verano: Sumérgete en GPT4.5, Llama 2, herramientas de IA, el creciente ingeniero de IA y más!",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1691539617-screenshot-2023-08-08-at-8-02-52-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space 4/8/23 [Resumen] AI Breakdown crossover",
+        "description": "Sumérgete en GPT4.5, Llama 2, herramientas de IA, el creciente ingeniero de IA y más!"
+      }
+    },
+    {
+      "id": "190259111",
+      "topics": [
+        "Resumen",
+        "Transformers",
+        "Entrenamiento",
+        "Código Abierto"
+      ],
+      "title": "Podcast de Latent Space 26/7/23 [Resumen] FlashAttention 2: haciendo los Transformers un 800% más rápidos - Tri Dao de Together AI",
+      "slug": "latent-space-podcast-7-26-23-summary-flashattention-2-making-transformers-800-fas",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:14:13+01:00",
+      "description": "Descubre cómo FlashAttention revolucionó la velocidad de la IA con Tri Dao, mientras revela el poder de FlashAttention 2, se sumerge en el Hazy Lab de Stanford y ofrece perspectivas futuras sobre la IA.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1691543194-screenshot-2023-08-08-at-8-43-59-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space 26/7/23 [Resumen] FlashAttention 2",
+        "description": "Descubre cómo FlashAttention revolucionó la velocidad de la IA con Tri Dao, mientras revela el poder de FlashAttention 2"
+      }
+    },
+    {
+      "id": "190259172",
+      "topics": [
+        "Resumen",
+        "LLM",
+        "Código Abierto",
+        "Modelos Pequeños"
+      ],
+      "title": "Podcast de Latent Space 19/7/23 [Resumen] - Llama 2: El Nuevo SOTA de LLM Abierto (con Nathan Lambert, Matt Bornstein, Anton Troynikov, Russell Kaplan, Whole Mars Catalog y otros)",
+      "slug": "latent-space-podcast-7-19-23-summary-llama-2-the-new-open-llm-sota-ft-nathan-lamb",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:12:38+01:00",
+      "description": "Explora Llama 2, el último avance en IA con expertos como Nathan Lambert, Matt Bornstein y más. Sumérgete en conjuntos de datos, benchmarks y predicciones de IA. ¡Perspectivas y drama de Llama te esperan en este podcast top!",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1691968295-screenshot-2023-08-13-at-7-11-06-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space 19/7/23 [Resumen] - Llama 2",
+        "description": "Sumérgete en conjuntos de datos, benchmarks y predicciones de IA. ¡Perspectivas y drama de Llama te esperan en este podcast top!"
+      }
+    },
+    {
+      "id": "190259191",
+      "topics": [
+        "Resumen",
+        "Código",
+        "LLM"
+      ],
+      "title": "Podcast de Latent Space 10/7/23 [Resumen] - Intérprete de Código == GPT 4.5 (con Simon Willison, Alex Volkov, Aravind Srinivas, Alex Graveley y otros)",
+      "slug": "latent-space-podcast-7-10-23-summary-code-interpreter-gpt-4-5-w-simon-willison-al",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:09:26+01:00",
+      "description": "Explora el Intérprete de Código de ChatGPT: un cambio de juego en la IA. Sumérgete en su salto de capacidades de 1000x con Simon, Alex y los principales expertos en IA. #CodeAugmentedInference #GPT4_5",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692048911-screenshot-2023-08-14-at-3-34-05-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space [Resumen] Intérprete de Código = GPT 4.5",
+        "description": "Explora el Intérprete de Código de ChatGPT: un cambio de juego en la IA. Sumérgete en su salto de capacidades de 1000x con Simon, Alex y los principales expertos en IA."
+      }
+    },
+    {
+      "id": "190259216",
+      "topics": [
+        "Resumen",
+        "Código Abierto"
+      ],
+      "title": "Podcast de Latent Space 2/7/23 [Resumen] Tendencias de IA: un crossover de Latent Space x Practical AI!",
+      "slug": "latent-space-podcast-7-2-23-summary-ai-trends-a-latent-space-x-practical-ai-cross",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:08:36+01:00",
+      "description": "Explora la fusión de Practical AI y Latent Space mientras profundizan en las principales tendencias de IA de 2023, reflexionan sobre episodios destacados y comparten perspectivas sobre cómo navegar la evolución de la IA.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692146916-screenshot-2023-08-15-at-5-20-38-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space 2/7/23 [Resumen] Tendencias de IA",
+        "description": "Las principales tendencias de IA de 2023, reflexionan sobre episodios destacados y comparten perspectivas sobre cómo navegar la evolución de la IA."
+      }
+    },
+    {
+      "id": "190259238",
+      "topics": [
+        "Hardware",
+        "LLM",
+        "Resumen"
+      ],
+      "title": "Podcast de Latent Space 20/6/23 [Resumen] - Commoditizando el Petaflop — con George Hotz de tiny corp",
+      "slug": "latent-space-podcast-6-20-23-summary-commoditizing-the-petaflop-with-george-ho",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:07:15+01:00",
+      "description": "¡George Hotz de tiny corp desafía a Nvidia y Google! Sumérgete en el mundo de las colaboraciones con AMD, perspectivas sobre ggml, Mojo, Elon y GPT-4, además de un vistazo a la Novia de IA.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692154615-screenshot-2023-08-15-at-10-55-40-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space 20/6/23 [Resumen] - George Hotz",
+        "description": "¡George Hotz de tiny corp desafía a Nvidia y Google! Colaboraciones con AMD, perspectivas sobre ggml, Mojo, Elon y GPT-4, además de un vistazo a la Novia de IA."
+      }
+    },
+    {
+      "id": "190259294",
+      "topics": [
+        "LLM",
+        "Funciones",
+        "Resumen"
+      ],
+      "title": "Podcast de Latent Space 14/6/23 [Resumen] - Pod de Emergencia: La nueva API de Funciones de OpenAI, Reducción de Precio del 75%, 4x Longitud de Contexto (con Alex Volkov, Simon Willison, Riley Goodside, Joshua Lochner, Stefania Druga, Eric Elliott, Mayo Oshin y otros)",
+      "slug": "latent-space-podcast-6-14-23-summary-emergency-pod-openai-s-new-functions-api-75",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:05:04+01:00",
+      "description": "Explora las actualizaciones de OpenAI de junio de 2023 con los principales ingenieros de IA de Scale, Microsoft, Pinecone y Huggingface. Sumérgete en los paradigmas de Código x LLM y descubre los Agentes de Función Recursiva.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692221668-screenshot-2023-08-16-at-5-32-29-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space 20/6/23 [Resumen] - Pod de Emergencia",
+        "description": "Explora las actualizaciones de OpenAI de junio de 2023 con los principales ingenieros de IA de Scale, Microsoft, Pinecone y Huggingface."
+      }
+    },
+    {
+      "id": "190259333",
+      "topics": [
+        "LLM",
+        "Resumen",
+        "UX"
+      ],
+      "title": "Podcast de Latent Space 8/6/23 [Resumen] - De RLHF a RLHB: El Caso de Aprender del Comportamiento Humano - con Jeffrey Wang y Joe Reeve de Amplitude",
+      "slug": "latent-space-podcast-6-8-23-summary-from-rlhf-to-rlhb-the-case-for-learning-from",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:02:33+01:00",
+      "description": "Explora la IA y la analítica con Jeffrey Wang y Joe Reeve en Latent Space Live! Sumérgete en por qué la IA valora la Analítica y el poder de los datos de comportamiento de primera mano.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692386432-screenshot-2023-08-18-at-3-17-04-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space 8/6/23 [Resumen] - De RLHF a RLHB",
+        "description": "Explora la IA y la analítica con Jeffrey Wang y Joe Reeve en Latent Space Live! Sumérgete en por qué la IA valora la Analítica y el poder de los datos de comportamiento de primera mano."
+      }
+    },
+    {
+      "id": "190260528",
+      "topics": [
+        "Resumen",
+        "LLM",
+        "UX"
+      ],
+      "title": "Podcast de Latent Space 1/6/23 [Resumen] - Construyendo el Scenius de IA × UX — con Linus Lee de Notion AI",
+      "slug": "latent-space-podcast-6-1-23-summary-building-the-ai-x-ux-scenius-with-linus-le",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:00:12+01:00",
+      "description": "Explora el enfoque transformador de Notion AI hacia la IA y la UX. Sumérgete en el futuro de los espacios de trabajo aumentados por IA, el valor más allá de las interfaces de chat y perspectivas sobre el trabajo del conocimiento efectivo. ¡Incluye resumen del meetup AI×UX NYC!",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692390655-screenshot-2023-08-18-at-4-28-51-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space 1/6/23 [Resumen] - Scenius de IA × UX",
+        "description": "Explora el enfoque transformador de Notion AI hacia la IA y la UX."
+      }
+    },
+    {
+      "id": "190260577",
+      "topics": [
+        "LLM",
+        "Modelos Pequeños"
+      ],
+      "title": "Podcast de Latent Space 20/5/23 [Resumen] - MPT-7B y El Comienzo de Contexto=Infinito — con Jonathan Frankle y Abhinav Venigalla de MosaicML",
+      "slug": "latent-space-podcast-5-20-23-summary-mpt-7b-and-the-beginning-of-context-infinity",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:57:33+01:00",
+      "description": "Sumérgete en el entrenamiento de 9 días y $200k del \"llongboi\" MPT-7B de MosaicML, perspectivas sobre la preparación de datos y el auge de los modelos de IA abiertos con los expertos Frankle y Venigalla.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692409795-screenshot-2023-08-18-at-9-49-21-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space 25/6/23 [Resumen] MosaicML",
+        "description": "Sumérgete en el entrenamiento de 9 días y $200k del \"llongboi\" MPT-7B de MosaicML, perspectivas sobre la preparación de datos y el auge de los modelos de IA abiertos"
+      }
+    },
+    {
+      "id": "190260597",
+      "topics": [
+        "LLM",
+        "Datos Estructurados"
+      ],
+      "title": "Podcast de Latent Space 15/5/23 [Resumen] - Calidad y estructura garantizadas en las salidas de LLM - con Shreya Rajpal de Guardrails AI",
+      "slug": "latent-space-podcast-5-15-23-summary-guaranteed-quality-and-structure-in-llm-outp",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:56:26+01:00",
+      "description": "Explora el Ep. 12 con Shreya Rajpal de Guardrails AI: Sumérgete en la validación de salidas de LLM, refinando respuestas a través de bucles de re-pregunta y estableciendo SLAs para modelos. Domina los matices de la garantía de calidad de IA.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692495732-screenshot-2023-08-19-at-9-38-27-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space 15/5/23 [Resumen] Salidas de LLM de Calidad",
+        "description": "Explora el Ep. 12 con Shreya Rajpal de Guardrails AI: Sumérgete en la validación de salidas de LLM."
+      }
+    },
+    {
+      "id": "190260606",
+      "topics": [
+        "LLM",
+        "Entrenamiento",
+        "Agentes",
+        "Multimodal"
+      ],
+      "title": "Podcast de Latent Space 8/5/23 [Resumen] - El Gen del Fundador de IA: Ser Temprano, Construir Rápido y Creer en la Grandeza — con Sharif Shameem de Lexica",
+      "slug": "latent-space-podcast-5-8-23-summary-the-ai-founder-gene-being-early-building-fast",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:52:09+01:00",
+      "description": "Ep.11 con Sharif Shameem de Lexica: Sumérgete en la mentalidad del fundador de IA, descubriendo los secretos para ser pionero en la innovación, construir tecnología revolucionaria, entrenar modelos y el intrigante potencial de los Agentes y la secuenciación genómica.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692501984-screenshot-2023-08-19-at-11-24-05-pm.png"
+      },
+      "seo": {
+        "title": "Pod de Latent Space 8/5/23 [Resumen] El Gen del Fundador de IA",
+        "description": "Ep.11 con Sharif Shameem de Lexica: Sumérgete en la mentalidad del fundador de IA, descubriendo los secretos para ser pionero en la innovación."
+      }
+    },
+    {
+      "id": "190260640",
+      "topics": [
+        "Resumen",
+        "Código Abierto",
+        "LLM"
+      ],
+      "title": "Podcast de Latent Space 5/5/23 [Resumen] - Sin Foso: La IA Cerrada recibe su llamada de atención de Código Abierto — con Simon Willison",
+      "slug": "latent-space-podcast-5-5-23-summary-no-moat-closed-ai-gets-its-open-source-wakeup",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:49:18+01:00",
+      "description": "Explora 'Sin Foso: El Despertar de Código Abierto de la IA Cerrada' con Simon Willison. Sumérgete en las perspectivas del memo filtrado de Google Moat, la fuga de cerebros de Google y el aumento de velocidad de Python con Mojo.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692566921-screenshot-2023-08-20-at-5-25-53-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space 5/5/23 [Resumen] - Sin Foso",
+        "description": "Explora 'Sin Foso: El Despertar de Código Abierto de la IA Cerrada' con Simon Willison. Sumérgete en las perspectivas del memo filtrado de Google Moat."
+      }
+    },
+    {
+      "id": "190260671",
+      "topics": [
+        "LLM",
+        "Código",
+        "Resumen"
+      ],
+      "title": "Podcast de Latent Space 3/5/23 [Resumen] - Entrenando un LLM de Código SOTA en 1 semana y Cuantificando las Vibras — con Reza Shabani de Replit",
+      "slug": "latent-space-podcast-5-3-23-summary-training-a-sota-code-llm-in-1-week-and-quanti",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:46:08+01:00",
+      "description": "Ep. 10 con Reza Shabani: Sumérgete en el rápido entrenamiento de un LLM de Código de última generación, explora el futuro de Replit Ghostwriter y el viaje de Finanzas a IA. Descubre la transición de Kaplan a Chinchilla y más!",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692584998-screenshot-2023-08-20-at-10-17-26-pm.png"
+      },
+      "seo": {
+        "title": "Pod de Latent Space 3/5/23 [Resumen] - LLM de Código SOTA",
+        "description": "Ep. 10 con Reza Shabani: Sumérgete en el rápido entrenamiento de un LLM de Código de última generación!"
+      }
+    },
+    {
+      "id": "190629271",
+      "topics": [
+        "LLM",
+        "Modelos Pequeños",
+        "Resumen"
+      ],
+      "title": "Podcast de Latent Space 28/4/23 [Resumen] - Mapeando el futuro de los Modelos verdaderamente Abiertos y Entrenando a Dolly por $30 — con Mike Conover de Databricks",
+      "slug": "latent-space-podcast-4-28-23-summary-mapping-the-future-of-truly-open-models-and",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:33:12+01:00",
+      "description": "Explora el futuro de los modelos abiertos con Mike Conover de Databricks. Sumérgete en la creación de Dolly, su transición de 1.0 a 2.0 y las influencias detrás de su desarrollo. El Ep.9 toca la infraestructura de modelos, la visión de Databricks y más. #IA #ModelosAbiertos #Dolly",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1694038707-screenshot-2023-09-06-at-3-12-24-pm.png"
+      },
+      "seo": {
+        "title": "Pod de Latent Space 28/4/23 [Resumen] - Mike de Databricks",
+        "description": "El Ep.9 toca la infraestructura de modelos, la visión de Databricks y más. #IA #ModelosAbiertos #Dolly"
+      }
+    },
+    {
+      "id": "191164291",
+      "topics": [
+        "LLM",
+        "Empresa",
+        "Resumen"
+      ],
+      "title": "Podcast de Latent Space 21/4/23 [Resumen] - Búsqueda impulsada por IA para la Empresa — con Deedy Das de Glean",
+      "slug": "latent-space-podcast-4-21-23-summary-ai-powered-search-for-the-enterprise-with",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:31:31+01:00",
+      "description": "Ep.8: Sumérgete en la IA en la búsqueda empresarial con Deedy Das de Glean. Desentraña los desafíos en la creación de un gigante de búsqueda de IA, comparaciones entre Google y ChatGPT, las complejidades de la infraestructura de IA, cómo detectar texto generado por IA y por qué las empresas necesitan más que solo QA de Documentos.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1694134074-screenshot-2023-09-07-at-5-43-48-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space 21/4/23 [Resumen] - con Deedy Das",
+        "description": "Ep.8: Sumérgete en la IA en la búsqueda empresarial con Deedy Das de Glean. Desentraña los desafíos en la creación de un gigante de búsqueda de IA, comparaciones entre Google y ChatGPT ..."
+      }
+    },
+    {
+      "id": "191165673",
+      "topics": [
+        "Resumen",
+        "Visión"
+      ],
+      "title": "Podcast de Latent Space 13/4/23 [Resumen] - Modelo Segment Anything y los Problemas Difíciles de la Visión por Computadora — con Joseph Nelson de Roboflow",
+      "slug": "latent-space-podcast-4-13-23-summary-segment-anything-model-and-the-hard-problems",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:30:03+01:00",
+      "description": "Explora el Ep.7 con Joseph Nelson sobre el Modelo Segment Anything de Meta. Sumérgete en el futuro de la Visión por Computadora, la importancia del OCR, la Segmentación de Imágenes y más. #Roboflow #IA",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1694150379-screenshot-2023-09-07-at-10-15-52-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space 13/4/23 [Resumen] - Segment Anything",
+        "description": "Sumérgete en el futuro de la Visión por Computadora, la importancia del OCR, la Segmentación de Imágenes y más. #Roboflow #IA"
+      }
+    }
+  ],
+  "blogContent": {
+    "id": "190260557",
+    "topics": [
+      "Resumen",
+      "Código",
+      "LLM",
+      "Agentes"
+    ],
+    "title": "Podcast de Latent Space 25/5/23 [Resumen] - Depurando Internet con agentes de IA – con Itamar Friedman de Codium AI y AutoGPT",
+    "slug": "latent-space-podcast-5-25-23-summary-debugging-the-internet-with-ai-agents-with",
+    "authorName": "Prof. Otto Nomos",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+    },
+    "_publishedAt": "2023-10-05T08:58:27+01:00",
+    "description": "Explora el futuro de la IA con Itamar Friedman de Codium AI en 'Depurando Internet'. Sumérgete en los agentes 'Extreme DRY', la rápida sincronización de especificaciones y pruebas, y el equilibrio entre código y pruebas. Además, ideas de Toran y una mirada exclusiva al roadmap de AutoGPT!",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1692397413-screenshot-2023-08-18-at-6-10-09-pm.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        {
+                          "0": "s",
+                          "1": "t",
+                          "2": "r",
+                          "3": "o",
+                          "4": "n",
+                          "5": "g"
+                        }
+                      ],
+                      "value": "Enlace Original: "
+                    },
+                    {
+                      "url": "https://www.latent.space/p/codium-agents#details",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Depurando Internet con agentes de IA – con Itamar Friedman de Codium AI y AutoGPT"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "url": "https://www.latent.space/p/codium-agents#details",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "marks": [
+                            {
+                              "0": "s",
+                              "1": "t",
+                              "2": "r",
+                              "3": "o",
+                              "4": "n",
+                              "5": "g"
+                            }
+                          ],
+                          "value": "Resumen"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        {
+                          "0": "s",
+                          "1": "t",
+                          "2": "r",
+                          "3": "o",
+                          "4": "n",
+                          "5": "g"
+                        }
+                      ],
+                      "value": "La Evolución de la IA en la Verificación de Código: Una Profunda Inmersión con Itamar Friedman"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "En un reciente episodio del podcast Latent Space, Alessio, Socio y CTO en Residencia en Decibel Partners, y Swyx, el escritor y editor de Latent Space, se sentaron con el invitado especial, Itamar Friedman, CEO y cofundador de Codium AI."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Originario de Tel Aviv y exalumno del Instituto de Tecnología de Israel Teknion (a menudo comparado con el MIT), Itamar aportó un rico trasfondo en visión por computadora y aprendizaje automático a la conversación. Es más conocido por cofundar Visualead, que eventualmente fue adquirida por Alibaba Group. El enfoque de Visualead en códigos QR con visibilidad variable ha visto una adopción significativa en China, llevando a ahorros considerables para las empresas, gracias a las mejoras en la eficiencia del escaneo de QR."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Después de su tiempo con Alibaba, Itamar colaboró con una colega de mucho tiempo, Debbie, para iniciar Codium AI, que recientemente aseguró una impresionante financiación inicial de $11 millones. La misión de la startup es proporcionar un asistente de codificación impulsado por IA que ayude a los desarrolladores a alcanzar una etapa de cero errores en su código."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Itamar arrojó luz sobre la tecnología detrás de Codium AI, enfatizando la combinación de métodos tradicionales de razonamiento lógico con el poder de la IA. Mientras que los grandes modelos de lenguaje (LLM) por sí solos podrían no ser suficientes para verificar la lógica del código, una combinación de IA y técnicas convencionales, como árboles de sintaxis abstracta (AST) y análisis dinámico de código, puede ofrecer una ventaja. Al fusionar estas técnicas, los desarrolladores pueden lograr mejores resultados en la verificación de código. Además, la IA puede profundizar en las intenciones del desarrollador, haciendo el proceso más intuitivo y dinámico."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "La filosofía de Codium AI gira en torno a mejorar la lógica del código al comprender la intención detrás del código. Esto implica transformar a los desarrolladores de simples codificadores a pilotos, donde guían y dirigen el proceso, en lugar de enredarse en las complejidades de la codificación."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "screenshot-2023-08-18-at-6-10-09-pm",
+            "height": 548,
+            "width": 1568,
+            "filename": "screenshot-2023-08-18-at-6-10-09-pm.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692397413-screenshot-2023-08-18-at-6-10-09-pm.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Codium AI: Revolucionando las Pruebas y Depuración de Código para Desarrolladores"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Alessio y Swyx discuten con Itamar, CEO de Codium AI, sobre las funcionalidades de la herramienta y cómo ayuda a los desarrolladores. Codium AI opera como una extensión de IDE, actualmente mostrada en VS Code. Una vez integrada, la IA analiza componentes de código, realiza análisis estático de código y ofrece ideas. Sugiere especificaciones de código, pruebas y análisis, que proporcionan al usuario retroalimentación inmediata sobre la calidad de su código."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Itamar enfatiza el enfoque del software en ayudar a los desarrolladores a probar su código, haciendo el proceso agradable mientras mejora sus habilidades. Muestra el formato de prueba \"dado-cuando-entonces\", enfatizando su importancia, a pesar de que muchos desarrolladores no están familiarizados con él."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Una característica intrigante es la capacidad de la herramienta para inyectar humor, con cadenas de documentación en \"estilo pirata\" como un ejemplo peculiar. Itamar proporciona una demostración práctica introduciendo intencionalmente un error en un código de cuenta bancaria, cambiando una función de depósito de una operación de suma a una de resta. Codium AI identifica la discrepancia, ofreciendo pistas y soluciones para la rectificación."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "A lo largo de la conversación, Itamar destaca la visión de la herramienta: lograr \"cero errores\", que Swyx acuña acertadamente como \"depurar Internet\"."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "abls12-img1-5",
+            "height": 956,
+            "width": 956,
+            "filename": "abls12-img1-5.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692399754-abls12-img1-5.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "El Futuro de Codium AI: Aprovechando Múltiples Modelos para Pruebas de Código Eficientes"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Swyx pregunta sobre el crecimiento de Codium AI desde su lanzamiento, enfatizando su expansión orgánica. Itamar, valorando la transparencia, revela que Codium tiene miles de usuarios activos semanales, destacando su fuerte viralidad dentro de la empresa en lugar de una amplia conciencia pública. Comparte que Codium opera utilizando diferentes modelos y algoritmos dependiendo de la tarea en cuestión, beneficiándose de las pistas proporcionadas dentro del código o su documentación. Al comparar nuevos modelos, Codium asegura que utiliza el modelo más adecuado para cada tarea. StarCoder, un modelo reciente, fue mencionado como un ejemplo de los modelos que prueban. Itamar enfatiza la importancia de comprender desafíos específicos y propiedades deseadas antes de elegir o desarrollar un modelo. Describe el objetivo futuro de Codium AI de crear modelos independientes para 2024, enfocándose primero en mejorar la experiencia del usuario y la ingeniería. Aconseja a otros desarrolladores que comprendan sus desafíos y propiedades deseadas antes de sumergirse en el entrenamiento de modelos."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "abls12-img4",
+            "height": 956,
+            "width": 956,
+            "filename": "abls12-img4.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692399487-abls12-img4.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "La Visión de Codium AI para 2025: Mejorando la Integridad del Código y Adoptando Principios Extreme DRY"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Alessio, Swyx e Itamar participaron en una discusión integral sobre el futuro del desarrollo de software, con un enfoque especial en las ofertas y planes futuros de Codium AI. Itamar discutió cómo el mundo del desarrollo de software en 2025 será drásticamente diferente al de 2020. Introdujo el cambio de paradigma hacia asistentes y agentes de codificación inteligentes."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Actualmente, Codium AI permite a los desarrolladores comenzar con la implementación del código y luego genera la especificación y las pruebas para ellos. En un futuro cercano, el objetivo es ofrecer la capacidad de generar también especificaciones técnicas y ayudar a completarlas rápidamente, a través de un asistente de especificaciones."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "La visión general, denominada \"Extreme DRY (Don't Repeat Yourself)\", propone un proceso de desarrollo fluido donde los desarrolladores pueden comenzar desde cualquier etapa, ya sea especificación, prueba o implementación, y la herramienta ayudará a generar los otros componentes. Esta visión se basa en la creencia de que las especificaciones, pruebas y código tienen elementos que se repiten, y la automatización extrema puede ayudar a reducir esta redundancia, asegurando que los desarrolladores permanezcan en el asiento del conductor pero con un apoyo significativo de la automatización. El objetivo final es fomentar un entorno de codificación donde la integridad del código sea primordial, con los agentes de Codium AI actuando como catalizadores en este proceso."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "abls12-img3",
+            "height": 956,
+            "width": 956,
+            "filename": "abls12-img3.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692399573-abls12-img3.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "La Intersección del Lenguaje, la Programación y la IA: Una Mirada a la Visión de Codium AI y su Relación con AutoGPT"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Alessio y Swyx discuten el papel evolutivo de los desarrolladores en un mundo donde Codium AI agiliza la transición entre especificaciones de producto, pruebas y código. Itamar, de Codium AI, enfatiza el enfoque de la compañía en el desarrollo backend y su objetivo de mejorar el principio \"Don't Repeat Yourself\" (DRY) en especificaciones, pruebas y código. Para 2024, Codium podría incluso incorporar especificaciones visuales como Figma. A medida que las herramientas impulsadas por IA se integran más en el proceso de desarrollo, los desarrolladores podrían necesitar adaptarse, comprendiendo requisitos de producto de alto nivel o refinando su experiencia en programación. Abordando el papel de AutoGPT en la comunidad de IA en general, Itamar destaca la colaboración de Codium AI con la plataforma, enfatizando sus enfoques complementarios. Codium AI se enfoca en crear agentes especializados para tareas específicas, mientras que AutoGPT apunta a capacidades generalizadas. Las dos organizaciones comparten una relación simbiótica, con Codium AI contribuyendo con pruebas e ideas a la comunidad de AutoGPT."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": []
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Navegando la Evolución del Código Abierto con IA: Una Profunda Inmersión con Itamar"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Alessio indaga a Itamar sobre el futuro del desarrollo de código abierto en una era de generación de código y pruebas impulsadas por IA. Itamar insinúa las limitaciones de herramientas como AutoGPT y Codium AI para comprender y optimizar completamente los repositorios, atribuyendo problemas a las inexactitudes en cascada de los resultados concatenados. Sin embargo, se mantiene optimista sobre el potencial de la IA, advirtiendo que, aunque podemos sobrestimar las capacidades actuales de la IA, probablemente estamos subestimando su poder futuro. La discusión se traslada a la floreciente escena tecnológica de Israel, donde las startups prosperan y la formación tecnológica militar se cruza con el emprendimiento. Las ideas de Itamar subrayan la importancia de la exploración práctica para los constructores. Antes de hacer afirmaciones sobre el potencial de la IA, insta a los desarrolladores a experimentar, probar e iterar. Las reflexiones sinceras de Itamar sirven como testimonio de la fluidez de las capacidades de la IA y su papel en el mundo en constante evolución de la tecnología."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "abls12-img1",
+            "height": 956,
+            "width": 956,
+            "filename": "abls12-img1.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692399818-abls12-img1.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Sumérgete en los agentes 'Extreme DRY', la rápida sincronización de especificaciones y pruebas, y el equilibrio entre código y pruebas.",
+      "title": "Podcast de Latent Space 25/5/23 [Resumen] Depurando Internet",
+      "twitterCard": null,
+      "image": {
+        "width": 1568,
+        "height": 548,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1692397413-screenshot-2023-08-18-at-6-10-09-pm.png"
+      }
+    }
+  },
+  "topics": [
+    "Summary",
+    "Code",
+    "LLM",
+    "Agents"
+  ]
+}
