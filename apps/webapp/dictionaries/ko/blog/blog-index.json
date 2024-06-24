@@ -7,16 +7,16 @@
         {
           "id": "SpdLuuYEQgW8rwSHNzhmxA",
           "topics": [
-            "Aplicaciones"
+            "앱"
           ],
-          "title": "Masterbots: Elevando la IA más allá de ChatGPT con Compartir Social e Innovación Amigable al Usuario",
+          "title": "마스터봇: 소셜 공유 및 사용자 친화적 혁신을 통해 AI를 챗지피티를 넘어서 발전시키다",
           "slug": "masterbots-elevating-ai-beyond-chatgpt-with-social-sharing-and-user-friendly-inno",
           "authorName": "Jun Dam",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
           },
           "_publishedAt": "2024-06-22T16:00:40+01:00",
-          "description": "El blog presenta Masterbots, una plataforma que revoluciona la interacción con la IA mediante chatbots específicos del dominio y una característica única de compartir socialmente, invitando a colaboradores a unirse a su desarrollo abierto y impulsado por la comunidad.",
+          "description": "이 블로그는 사용자 친화적이고 도메인 특화된 챗봇 및 독특한 소셜 공유 기능을 통해 AI 상호작용을 혁신하는 플랫폼인 마스터봇을 소개하며, 오픈 소스 및 커뮤니티 주도 개발에 참여할 협력자들을 초대합니다.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1712270604-screenshot-2024-04-04-at-3-43-11-pm.png"
           },
@@ -37,18 +37,18 @@
         {
           "id": "190259319",
           "topics": [
-            "Resumen",
+            "요약",
             "LLM",
-            "Entrenamiento"
+            "훈련"
           ],
-          "title": "Podcast del Espacio Latente 16/08/23 [Resumen] - La Matemática del Entrenamiento de LLMs — con Quentin Anthony de Eleuther AI",
+          "title": "잠재 공간 팟캐스트 8/16/23 [요약] - 엘류더 AI의 퀸틴 앤서니와 함께하는 LLM 훈련의 수학",
           "slug": "latent-space-podcast-8-16-23-summary-the-mathematics-of-training-llms-with-que",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T09:19:45+01:00",
-          "description": "Explora la matemática detrás del entrenamiento de LLMs con Quentin Anthony de Eleuther AI. Sumérgete en el artículo de Matemáticas de Transformers 101 y domina las técnicas de entrenamiento distribuido para el máximo rendimiento de GPU.",
+          "description": "엘류더 AI의 퀸틴 앤서니와 함께 LLM 훈련의 수학을 탐구하세요. 트랜스포머 수학 101 기사를 살펴보고 최고의 GPU 성능을 위한 분산 훈련 기술을 마스터하세요.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692324088-screenshot-2023-08-17-at-9-59-17-pm.png"
           },
@@ -70,18 +70,18 @@
           "id": "190259129",
           "topics": [
             "LLM",
-            "Hardware",
-            "Summary",
-            "Edge"
+            "하드웨어",
+            "요약",
+            "엣지"
           ],
-          "title": "Latent Space Podcast 8/10/23 [Summary]: LLMs Everywhere: Running 70B models in browsers and iPhones using MLC — with Tianqi Chen of CMU / OctoML",
+          "title": "잠재 공간 팟캐스트 8/10/23 [요약]: 브라우저와 아이폰에서 70B 모델을 실행하는 LLMs: CMU / OctoML의 천탁기와 함께",
           "slug": "latent-space-podcast-8-10-23-summary-llms-everywhere-running-70b-models-in-browse",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T09:18:37+01:00",
-          "description": "Explore the magic of MLC with Tianqi Chen: deploying 70B models on browsers & iPhones. Dive into XGBoost, TVM's creation, & the future of universal AI deployments. ",
+          "description": "천탁기와 함께 MLC의 마법을 탐험하세요: 브라우저 및 아이폰에서 70B 모델 배포. XGBoost, TVM의 창조 및 범용 AI 배포의 미래에 대해 알아보세요.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1691894611-screenshot-2023-08-12-at-10-42-43-pm.png"
           },
@@ -176,19 +176,19 @@
           "id": "198277124",
           "topics": [
             "LLM",
-            "Finanzas",
-            "Atencion medica",
-            "Legal",
-            "Indicaciones"
+            "금융",
+            "의료",
+            "법률",
+            "프롬프팅"
           ],
-          "title": "Adaptacion de Modelos de Lenguaje Grande mediante Comprension de Lectura",
+          "title": "독해를 통한 대형 언어 모델 적용",
           "slug": "adapting-large-language-models-via-reading-comprehension",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-27T03:34:22+01:00",
-          "description": "Comentario y Calificacion del Resumen",
+          "description": "추상적 해설 및 평가",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -210,16 +210,16 @@
           "id": "198277342",
           "topics": [
             "LLM",
-            "Multilingue"
+            "다국어"
           ],
-          "title": "OpenBA: Un Modelo Asimetrico Bilingue de 15B de Codigo Abierto Preentrenado desde Cero",
+          "title": "OpenBA: 처음부터 사전 훈련된 15B 이중 언어 비대칭 seq2seq 모델 오픈 소스화",
           "slug": "openba-an-open-sourced-15b-bilingual-asymmetric-seq2seq-model-pre-trained-from-sc",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-27T03:34:02+01:00",
-          "description": "Comentario y Calificacion del Resumen",
+          "description": "추상적 해설 및 평가",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -241,16 +241,16 @@
           "id": "198277117",
           "topics": [
             "LLM",
-            "Recuperación"
+            "검색"
           ],
-          "title": "PDFTriage: Respuesta a Preguntas sobre Documentos Largos y Estructurados",
+          "title": "PDFTriage: 긴 구조화된 문서에서의 질문 답변",
           "slug": "pdftriage-question-answering-over-long-structured-documents",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-27T03:33:49+01:00",
-          "description": "Comentario y Calificación del Resumen",
+          "description": "추상적 해설 및 평가",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -272,16 +272,16 @@
           "id": "198277138",
           "topics": [
             "LLM",
-            "Fine-tuning"
+            "미세 조정"
           ],
-          "title": "Sorted LLaMA: Unlocking the Potential of Intermediate Layers of Large Language Models for Dynamic Inference Using Sorted Fine-Tuning (SoFT)",
+          "title": "정렬된 LLaMA: 대규모 언어 모델의 중간 계층의 잠재력을 동적 추론을 위해 정렬된 미세 조정(SoFT)을 사용하여 활용",
           "slug": "sorted-llama-unlocking-the-potential-of-intermediate-layers-of-large-language-mod",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-27T03:33:31+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "초록 코멘터리 및 평가",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -303,17 +303,17 @@
           "id": "198277150",
           "topics": [
             "LLM",
-            "Ajuste de Instrucciones",
-            "Multimodal"
+            "명령 조정",
+            "다중 모드"
           ],
-          "title": "Un Estudio Empirico sobre la Escalabilidad de Modelos Multimodales Grandes Ajustados a Instrucciones",
+          "title": "명령 조정된 대규모 다중 모드 모델의 경험적 연구",
           "slug": "an-empirical-study-of-scaling-instruct-tuned-large-multimodal-models",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-27T03:33:15+01:00",
-          "description": "Comentario y Calificacion del Resumen",
+          "description": "추상적 해설 및 평가",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -345,16 +345,16 @@
         {
           "id": "CD89KaoLSh6nQbiMhxX0EQ",
           "topics": [
-            "plataforma de lanzamiento"
+            "발사대"
           ],
-          "title": "Asegurando la Confianza y la Integridad: Cumplimiento Regulatorio y Medidas de Seguridad",
+          "title": "신뢰와 진실성 보장: 규제 준수 및 보안 조치",
           "slug": "ensuring-trust-and-integrity-regulatory-compliance-and-security-measures",
           "authorName": "Jun Dam",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
           },
           "_publishedAt": "2024-06-20T16:21:42+01:00",
-          "description": "Esta seccion describe el enfoque proactivo de nuestra plataforma para adherirse a los estandares regulatorios globales e implementar medidas de seguridad avanzadas, asegurando un entorno seguro y conforme para los usuarios en los espacios de cripto y IA.",
+          "description": "이 섹션에서는 글로벌 규제 기준을 준수하고 고급 보안 조치를 구현하는 우리 플랫폼의 적극적인 접근 방식을 설명합니다. 이를 통해 암호화폐 및 AI 분야의 사용자들에게 안전하고 준수된 환경을 보장합니다.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1710562461-bitlauncherregsecimg.webp"
           },
@@ -375,16 +375,16 @@
         {
           "id": "H_DP7HFORBuw9rID5Jkhhw",
           "topics": [
-            "como_hacer"
+            "방법"
           ],
-          "title": "Cómo registrarse y KYC en Bitcash",
+          "title": "Bitcash 등록 및 KYC 방법",
           "slug": "how-to-register-and-kyc-to-bitcash",
           "authorName": "Roberto \"Andler\" Lucas",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1715639160-andler-file-photo.jpg"
           },
           "_publishedAt": "2024-06-20T16:20:40+01:00",
-          "description": "Cubrimos una variedad de temas, incluyendo el registro para una cuenta de Bitcash, configurando un nombre de cuenta y referente, identificando y asegurando dispositivos, proporcionando identificación e información personal para KYC, tomando fotos para la verificación de KYC, y esperando aprobación y unirse a la comunidad.",
+          "description": "Bitcash 계정 등록, 계정 이름 및 추천인 설정, 장치 식별 및 보안, KYC를 위한 신분증 및 개인 정보 제공, KYC 검증을 위한 사진 촬영, 승인 대기 및 커뮤니티 가입 등 다양한 주제를 다룹니다.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1715638953-bitcash-logo-frame-w-bg.png"
           },
@@ -405,16 +405,16 @@
         {
           "id": "fbM-UqrYQXGhw6HB4C6swQ",
           "topics": [
-            "plataforma de lanzamiento"
+            "발사대"
           ],
-          "title": "Hoja de Ruta Estratégica: Innovación Pionera en Blockchain y Éxito de Startups de IA",
+          "title": "전략적 로드맵: 블록체인 혁신과 AI 스타트업 성공을 선도하다",
           "slug": "strategic-roadmap-pioneering-blockchain-innovation-and-ai-startup-success",
           "authorName": "Jun Dam",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
           },
           "_publishedAt": "2024-03-15T05:13:30+00:00",
-          "description": "Esbozando el plan por etapas de bitLauncher para la implementación de tecnología innovadora, crecimiento impulsado por la comunidad y el desarrollo de la cadena Antelope equitativa, para revolucionar los paisajes de IA y criptomonedas.",
+          "description": "혁신적인 기술 배치, 커뮤니티 주도 성장 및 공정한 Antelope 체인 개발을 단계적으로 계획하여 AI 및 암호화폐 풍경을 혁신하다.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1710479575-roadmapbitlauncher.webp"
           },
@@ -501,17 +501,17 @@
         {
           "id": "166795692",
           "topics": [
-            "Primeros Pasos",
-            "Negocios y Administración"
+            "시작하기",
+            "비즈니스 및 관리"
           ],
-          "title": "Dominando el Flujo de Caja: La Guía Definitiva para Fundadores de Startups",
+          "title": "창업자를 위한 현금 흐름 마스터: 최종 가이드",
           "slug": "mastering-cash-flow-the-ultimate-guide-for-startup-founders",
           "authorName": "Bootstrap Briggs",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760071-startupblogger2.png"
           },
           "_publishedAt": "2024-06-20T16:40:26+01:00",
-          "description": "Domina el flujo de caja con nuestra guía definitiva para fundadores de startups. Aprende estrategias para mantener la liquidez, gestionar las finanzas y asegurar la estabilidad del negocio.",
+          "description": "창업자를 위한 최종 가이드로 현금 흐름을 마스터하세요. 유동성을 유지하고 재정을 관리하며 비즈니스 안정성을 보장하는 전략을 배우세요.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687312847-sb20-img1.png"
           },
@@ -532,17 +532,17 @@
         {
           "id": "166788631",
           "topics": [
-            "Comenzando",
-            "Negocios y Administracion"
+            "시작하기",
+            "비즈니스 및 관리"
           ],
-          "title": "Presupuestacion inteligente para startups: Una guia paso a paso para construir una base financiera solida",
+          "title": "스타트업을 위한 스마트 예산 편성: 강력한 재정 기반 구축을 위한 단계별 가이드",
           "slug": "smart-budgeting-for-startups-a-step-by-step-guide-to-building-a-strong-financial",
           "authorName": "Bootstrap Briggs",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760071-startupblogger2.png"
           },
           "_publishedAt": "2024-06-20T16:40:00+01:00",
-          "description": "Construye una base financiera solida con nuestra guia de presupuestacion inteligente para startups. Aprende a gestionar los fondos de manera efectiva para un crecimiento empresarial sostenible.",
+          "description": "스타트업을 위한 스마트 예산 편성 가이드로 강력한 재정 기반을 구축하세요. 지속 가능한 비즈니스 성장을 위해 자금을 효과적으로 관리하는 방법을 배우세요.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687310597-sb19-img1.png"
           },
@@ -563,17 +563,17 @@
         {
           "id": "165816954",
           "topics": [
-            "Comenzando",
-            "Equipos y RRHH"
+            "시작하기",
+            "팀 및 인사"
           ],
-          "title": "Construyendo un Equipo de Ensueño: La Guía Definitiva para Ensamblar Tu Escuadrón de Inicio",
+          "title": "꿈의 팀 구성: 스타트업 스쿼드 조립을 위한 궁극의 가이드",
           "slug": "building-a-dream-team-the-ultimate-guide-to-assembling-your-startup-squad",
           "authorName": "Bootstrap Briggs",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760071-startupblogger2.png"
           },
           "_publishedAt": "2024-06-19T03:48:19+01:00",
-          "description": "Forma tu equipo ideal de inicio con nuestra guía completa. Aumenta la eficiencia del equipo y el crecimiento de la startup con nuestro consejo experto.",
+          "description": "우리의 종합 가이드로 이상적인 스타트업 팀을 구성하세요. 우리의 전문가 조언으로 팀 효율성과 스타트업 성장을 증진시키세요.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687119615-sb5-img1.png"
           },
@@ -631,17 +631,17 @@
         {
           "id": "180217169",
           "topics": [
-            "Tokenomía",
-            "Comentario"
+            "토큰 경제학",
+            "논평"
           ],
-          "title": "Economía de Incentivos Tokenizados 3: El Valor del Token No Alineará a los Interesados [Comentario]",
+          "title": "토큰화된 인센티브의 경제학 3: 토큰 가치가 이해 관계자를 조정하지 않습니다 [논평]",
           "slug": "economics-of-tokenized-incentives-3-token-value-won-t-align-stakeholders-commenta",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T09:17:23+01:00",
-          "description": "Descubre las trampas de usar el valor del token como métrica de rendimiento en plataformas blockchain. Aprende a diseñar sistemas de incentivos efectivos.",
+          "description": "블록체인 플랫폼에서 토큰 가치를 성과 지표로 사용하는 함정을 밝힙니다. 효과적인 인센티브 시스템을 설계하는 방법을 배우세요.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690771457-cbc3-img1.png"
           },
@@ -662,17 +662,17 @@
         {
           "id": "180217123",
           "topics": [
-            "Tokenomia",
-            "Comentario"
+            "토큰 경제학",
+            "논평"
           ],
-          "title": "Economia de Incentivos Tokenizados 2: Seleccionando Metricas de Rendimiento Efectivas [Comentario]",
+          "title": "토큰화된 인센티브의 경제학 2: 효과적인 성과 지표 선택 [논평]",
           "slug": "economics-of-tokenized-incentives-2-selecting-effective-performance-metrics-comme",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T09:17:05+01:00",
-          "description": "Descubre el poder de las metricas de rendimiento en sistemas de pago por rendimiento basados en blockchain. Aprende a alinear los incentivos con los objetivos de la plataforma de manera efectiva.",
+          "description": "블록체인 성과급 시스템에서 성과 지표의 힘을 발견하세요. 플랫폼 목표와 인센티브를 효과적으로 조화시키는 방법을 배우세요.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690770918-cbc2-img1.png"
           },
@@ -693,17 +693,17 @@
         {
           "id": "180217082",
           "topics": [
-            "Tokenomía",
-            "Comentario"
+            "토크노믹스",
+            "논평"
           ],
-          "title": "Economía de Incentivos Tokenizados 1: Introducción al Pago por Desempeño [Comentario]",
+          "title": "토큰화 인센티브의 경제학 1: 성과 지불 소개 [논평]",
           "slug": "economics-of-tokenized-incentives-1-intro-to-pay-for-performance",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T09:15:12+01:00",
-          "description": "Sumérgete en las complejidades de los incentivos de pago por desempeño en plataformas blockchain. Aprende sobre los compromisos y consideraciones de diseño para el éxito.",
+          "description": "블록체인 플랫폼에서 성과 지불 인센티브의 복잡성을 파고들어 보세요. 성공을 위한 트레이드오프와 설계 고려 사항을 배우세요.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690770568-cbc1-img1.png"
           },
@@ -761,18 +761,18 @@
         {
           "id": "165362142",
           "topics": [
-            "Comenzando",
-            "Prueba de trabajo",
-            "Minería"
+            "시작하기",
+            "작업 증명",
+            "채굴"
           ],
-          "title": "Desbloqueando el poder de la minería de Bitcoin: Una introducción a los algoritmos de prueba de trabajo",
+          "title": "비트코인 채굴의 힘을 풀다: 작업 증명 알고리즘 소개",
           "slug": "unlocking-the-power-of-bitcoin-mining-an-introduction-to-proof-of-work-algorithms",
           "authorName": "Maxi Millie",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
           },
           "_publishedAt": "2023-10-05T05:55:09+01:00",
-          "description": "Sumérgete en el mundo de la minería de Bitcoin y el fascinante concepto de los algoritmos de prueba de trabajo. Explora el potencial y las recompensas de esta tecnología transformadora.",
+          "description": "비트코인 채굴과 작업 증명 알고리즘의 매력적인 개념에 대해 알아보세요. 이 혁신적인 기술의 잠재력과 보상을 탐구하세요.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686858321-bb9-img0edited.png"
           },
@@ -793,17 +793,17 @@
         {
           "id": "165340146",
           "topics": [
-            "Comenzando",
-            "Prueba de trabajo"
+            "시작하기",
+            "작업 증명"
           ],
-          "title": "La seguridad económica de Bitcoin: Cómo la Prueba de Trabajo permite una red segura y protegida",
+          "title": "비트코인의 경제적 보안: 작업 증명이 안전하고 보안된 네트워크를 가능하게 하는 방법",
           "slug": "the-economic-security-of-bitcoin-how-proof-of-work-enables-a-safe-and-secure-netw",
           "authorName": "Maxi Millie",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
           },
           "_publishedAt": "2023-10-05T05:53:43+01:00",
-          "description": "Descubre la seguridad económica de Bitcoin y el poder de la prueba de trabajo. Explora cómo esta tecnología innovadora asegura una red segura y protegida para el futuro.",
+          "description": "비트코인의 경제적 보안과 작업 증명의 힘을 발견하세요. 이 혁신적인 기술이 미래를 위한 안전하고 보안된 네트워크를 어떻게 보장하는지 탐구하세요.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686856982-bb8-img1.png"
           },
@@ -824,17 +824,17 @@
         {
           "id": "165340050",
           "topics": [
-            "Primeros pasos",
-            "Legal"
+            "시작하기",
+            "법적"
           ],
-          "title": "Navegando el paisaje legal y regulatorio de Bitcoin: Entendiendo las reglas y oportunidades",
+          "title": "비트코인의 법적 및 규제 환경 탐색: 규칙과 기회 이해하기",
           "slug": "navigating-the-legal-and-regulatory-landscape-of-bitcoin-understanding-the-rules",
           "authorName": "Maxi Millie",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
           },
           "_publishedAt": "2023-10-05T05:52:05+01:00",
-          "description": "Manténgase informado y cumpla con nuestra guía completa sobre el paisaje legal y regulatorio de Bitcoin. Navegue las complejidades de la criptomoneda con confianza.",
+          "description": "비트코인의 법적 및 규제 환경에 대한 종합적인 가이드로 정보를 얻고 준수하세요. 암호화폐의 복잡성을 자신감 있게 탐색하세요.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686855768-bb7-img1edited.png"
           },
@@ -892,17 +892,17 @@
         {
           "id": "174592759",
           "topics": [
-            "Comenzando",
-            "Alternativas"
+            "시작하기",
+            "대안"
           ],
-          "title": "Liberando el Potencial: Dominando las Inversiones Alternativas para el Éxito del Inversor",
+          "title": "잠재력을 발휘하다: 투자자 성공을 위한 대체 투자 마스터하기",
           "slug": "unleashing-the-potential-mastering-alternative-investments-for-investor-success",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:11:13+01:00",
-          "description": "¡Expande tu destreza en inversiones con inversiones alternativas! Sumérgete en el mundo de capital privado, fondos de cobertura y materias primas para potenciar tu cartera. Este blog proporciona orientación experta para inversores que buscan éxito en estrategias de inversión alternativa.",
+          "description": "대체 투자로 투자 능력을 확장하세요! 사모 펀드, 헤지 펀드, 상품 등의 세계로 뛰어들어 포트폴리오를 강화하세요. 이 블로그는 대체 투자 전략에서 성공을 추구하는 투자자들을 위한 전문 지침을 제공합니다.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689120056-ib6-img1.png"
           },
@@ -923,17 +923,17 @@
         {
           "id": "175015363",
           "topics": [
-            "Comenzando",
-            "Fondos Mutuos y ETFs"
+            "시작하기",
+            "상호 기금 및 ETF"
           ],
-          "title": "Revelando los Pros y Contras de los Fondos Cotizados en Bolsa (ETFs): Una Guía Completa para Inversores",
+          "title": "상장지수펀드(ETF)의 장단점 공개: 투자자를 위한 종합 가이드",
           "slug": "unveiling-the-pros-and-cons-of-exchange-traded-funds-etfs-a-comprehensive-guide-f",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:09:18+01:00",
-          "description": "Descubre las ventajas y desventajas de invertir en ETFs. Toma decisiones informadas y maximiza tu potencial de inversión con esta guía completa.",
+          "description": "ETF 투자의 장점과 단점을 발견하십시오. 이 종합 가이드를 통해 정보에 입각한 결정을 내리고 투자 잠재력을 극대화하십시오.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689186966-ib8-img1.png"
           },
@@ -954,17 +954,17 @@
         {
           "id": "176002890",
           "topics": [
-            "Comenzando",
-            "Gestión de Riesgos"
+            "시작하기",
+            "위험 관리"
           ],
-          "title": "Protege Tus Inversiones: Una Guía Completa para Reconocer y Evitar el Fraude de Inversión",
+          "title": "투자 보호: 투자 사기를 인식하고 피하는 종합 가이드",
           "slug": "shield-your-investments-a-comprehensive-guide-to-recognizing-and-avoiding-investm",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:08:41+01:00",
-          "description": "¡Cuida tu dinero ganado con esfuerzo! Aprende a identificar estafas de inversión y protege tu futuro financiero con nuestra guía completa para evitar el fraude de inversión",
+          "description": "고생해서 번 돈을 지키세요! 투자 사기를 알아보고 재정적 미래를 보호하는 방법을 배우세요. 투자 사기를 피하는 종합 가이드를 통해 안내합니다.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689384626-ib19-img1.png"
           },

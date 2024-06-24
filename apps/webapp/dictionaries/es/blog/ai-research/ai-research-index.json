@@ -8,9 +8,12 @@
           "id": "198277124",
           "topics": [
             "LLM",
-            "Atencion sanitaria"
+            "Finanzas",
+            "Atencion medica",
+            "Legal",
+            "Indicaciones"
           ],
-          "title": "ConjuntoAbiertoDeProteinas: Datos de entrenamiento para la biologia estructural a gran escala",
+          "title": "Adaptacion de Modelos de Lenguaje Grande mediante Comprension de Lectura",
           "slug": "adapting-large-language-models-via-reading-comprehension",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
@@ -38,20 +41,17 @@
         {
           "id": "198277342",
           "topics": [
-            "MLG",
-            "Finanzas",
-            "Atencion medica",
-            "Legal",
-            "Indicaciones"
+            "LLM",
+            "Multilingue"
           ],
-          "title": "Adaptacion de Modelos de Lenguaje Grande mediante Comprension de Lectura",
+          "title": "OpenBA: Un modelo secuencial bilingue asimetrico de 15B de codigo abierto preentrenado desde cero",
           "slug": "openba-an-open-sourced-15b-bilingual-asymmetric-seq2seq-model-pre-trained-from-sc",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-27T03:34:02+01:00",
-          "description": "Comentario y Calificacion Abstractos",
+          "description": "Comentario y calificacion del resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -73,10 +73,9 @@
           "id": "198277117",
           "topics": [
             "LLM",
-            "Código",
-            "Atención médica"
+            "Recuperación"
           ],
-          "title": "BioCoder: Un Referente para la Generación de Código en Bioinformática con Conocimiento Pragmático Contextual",
+          "title": "PDFTriage: Respuesta a Preguntas sobre Documentos Largos y Estructurados",
           "slug": "pdftriage-question-answering-over-long-structured-documents",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
@@ -105,16 +104,16 @@
           "id": "198277138",
           "topics": [
             "LLM",
-            "Atencion sanitaria"
+            "Ajuste fino"
           ],
-          "title": "Prediciendo los resultados transcripcionales de nuevas perturbaciones multigenicas con GEARS",
+          "title": "LLaMA Ordenada: Desbloqueando el Potencial de las Capas Intermedias de Modelos de Lenguaje Grande para Inferencia Dinámica Usando Ajuste Fino Ordenado (SoFT)",
           "slug": "sorted-llama-unlocking-the-potential-of-intermediate-layers-of-large-language-mod",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-27T03:33:31+01:00",
-          "description": "Comentario y Calificacion del Resumen",
+          "description": "Comentario y Calificación del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -136,10 +135,10 @@
           "id": "198277150",
           "topics": [
             "LLM",
-            "Atencion sanitaria",
-            "Resumen"
+            "Ajuste de Instrucciones",
+            "Multimodal"
           ],
-          "title": "Resumen de Texto Clinico: Adaptar Modelos de Lenguaje Grandes Puede Superar a los Expertos Humanos",
+          "title": "Un Estudio Empirico sobre la Escalabilidad de Modelos Multimodales Grandes Ajustados a Instrucciones",
           "slug": "an-empirical-study-of-scaling-instruct-tuned-large-multimodal-models",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
@@ -167,18 +166,18 @@
         {
           "id": "198277160",
           "topics": [
-            "Modelo de lenguaje de gran tamaño",
-            "Ajuste de instrucciones",
-            "Atención sanitaria"
+            "LLM",
+            "Agentes",
+            "Juegos"
           ],
-          "title": "MedAlign: Un conjunto de datos generado por clínicos para el seguimiento de instrucciones con registros médicos electrónicos",
+          "title": "MindAgent: Interacción Emergente en Juegos",
           "slug": "mindagent-emergent-gaming-interaction",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-27T03:32:58+01:00",
-          "description": "Comentario y calificación abstractos",
+          "description": "Comentario y Calificación Abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -199,17 +198,17 @@
         {
           "id": "198277196",
           "topics": [
-            "LLM",
-            "Structured Data"
+            "Modelos de Lenguaje de Gran Escala",
+            "Datos Estructurados"
           ],
-          "title": "Struc-Bench: Are Large Language Models Really Good at Generating Complex Structured Data?",
+          "title": "Struc-Bench: ¿Son realmente buenos los Modelos de Lenguaje de Gran Escala en generar Datos Estructurados Complejos?",
           "slug": "struc-bench-are-large-language-models-really-good-at-generating-complex-structure",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-25T03:38:38+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificación del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -265,14 +264,14 @@
             "LLM",
             "Chat"
           ],
-          "title": "S3-DST: Structured Open-Domain Dialogue Segmentation and State Tracking in the Era of LLMs",
+          "title": "S3-DST: Segmentación de Diálogo de Dominio Abierto Estructurado y Seguimiento del Estado en la Era de los LLMs",
           "slug": "s3-dst-structured-open-domain-dialogue-segmentation-and-state-tracking-in-the-era",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-25T03:38:11+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificación del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -296,14 +295,14 @@
             "LLM",
             "Audio"
           ],
-          "title": "Augmenting text for spoken language understanding with Large Language Models",
+          "title": "Ampliando texto para la comprensión del lenguaje hablado con Modelos de Lenguaje Grande",
           "slug": "augmenting-text-for-spoken-language-understanding-with-large-language-models",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-25T03:37:49+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificación Abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -324,17 +323,17 @@
         {
           "id": "198277277",
           "topics": [
-            "LLM",
-            "Compression"
+            "MLL",
+            "Compresion"
           ],
-          "title": "Language Modeling Is Compression",
+          "title": "La modelacion de lenguaje es compresion",
           "slug": "language-modeling-is-compression",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-25T03:37:32+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y calificacion abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -356,16 +355,16 @@
           "id": "198277345",
           "topics": [
             "LLM",
-            "Multilingual"
+            "Multilingüe"
           ],
-          "title": "Baichuan 2: Open Large-scale Language Models",
+          "title": "Baichuan 2: Modelos de Lenguaje a Gran Escala Abiertos",
           "slug": "baichuan-2-open-large-scale-language-models",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-24T05:59:10+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificación Abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -389,14 +388,14 @@
             "LLM",
             "RLHF"
           ],
-          "title": "Stabilizing RLHF through Advantage Model and Selective Rehearsal",
+          "title": "Estabilizando RLHF a través de Modelo de Ventaja y Ensayo Selectivo",
           "slug": "stabilizing-rlhf-through-advantage-model-and-selective-rehearsal",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-24T05:22:15+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificación Abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -417,17 +416,17 @@
         {
           "id": "198277446",
           "topics": [
-            "LLM",
-            "Hallucination"
+            "MLL",
+            "Alucinación"
           ],
-          "title": "Chain-of-Verification Reduces Hallucination in Large Language Models",
+          "title": "La Cadena de Verificación Reduce la Alucinación en Modelos de Lenguaje de Gran Escala",
           "slug": "chain-of-verification-reduces-hallucination-in-large-language-models",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-24T05:21:05+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificación Abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -448,19 +447,19 @@
         {
           "id": "198277458",
           "topics": [
-            "LLM",
-            "Hallucination",
-            "Entity",
-            "Structured Data"
+            "MLL",
+            "Alucinacion",
+            "Entidad",
+            "Datos Estructurados"
           ],
-          "title": "LMDX: Language Model-based Document Information Extraction and Localization",
+          "title": "LMDX: Extraccion y Localizacion de Informacion de Documentos basada en Modelos de Lenguaje",
           "slug": "lmdx-language-model-based-document-information-extraction-and-localization",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-24T05:20:31+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificacion del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -482,16 +481,16 @@
           "id": "198277209",
           "topics": [
             "LLM",
-            "Data"
+            "Datos"
           ],
-          "title": "  SlimPajama-DC: Understanding Data Combinations for LLM Training",
+          "title": "SlimPajama-DC: Entendiendo las Combinaciones de Datos para el Entrenamiento de LLM",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T23:43:32+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificacion del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -576,17 +575,17 @@
           "id": "198044929",
           "topics": [
             "LLM",
-            "Data",
-            "Agents"
+            "Datos",
+            "Agentes"
           ],
-          "title": "A Data Source for Reasoning Embodied Agents",
+          "title": "Una fuente de datos para agentes corporizados razonadores",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T07:33:25+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y calificación abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -608,17 +607,17 @@
           "id": "198044900",
           "topics": [
             "LLM",
-            "Entity",
-            "Fine-tuning"
+            "Entidad",
+            "Ajuste fino"
           ],
-          "title": "Leveraging Contextual Information for Effective Entity Salience Detection",
+          "title": "Aprovechando la Información Contextual para la Detección Eficaz de la Relevancia de Entidades",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T07:30:50+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificación Abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -640,16 +639,16 @@
           "id": "198044892",
           "topics": [
             "LLM",
-            "Agents"
+            "Agentes"
           ],
-          "title": "LASER: LLM Agent with State-Space Exploration for Web Navigation",
+          "title": "LASER: Agente LLM con Exploracion del Espacio de Estados para Navegacion Web",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T07:26:17+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificacion del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -671,17 +670,17 @@
           "id": "198044879",
           "topics": [
             "LLM",
-            "Transformers",
-            "Interpretability"
+            "Transformadores",
+            "Interpretabilidad"
           ],
-          "title": "Sparse Autoencoders Find Highly Interpretable Features in Language Models",
+          "title": "Los Autoencoders Dispersos Encuentran Características Altamente Interpretativas en Modelos de Lenguaje",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T07:23:08+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificación del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -733,18 +732,18 @@
         {
           "id": "198044746",
           "topics": [
-            "LLM",
-            "Transformers",
-            "Training"
+            "MLL",
+            "Transformadores",
+            "Entrenamiento"
           ],
-          "title": "Scaling Laws for Sparsely-Connected Foundation Models",
+          "title": "Leyes de Escalado para Modelos de Fundacion Conectados de Manera Escasa",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T07:09:44+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificacion del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -765,17 +764,17 @@
         {
           "id": "197990774",
           "topics": [
-            "LLM",
-            "Prompting"
+            "Modelos de Lenguaje Grande",
+            "Inducción"
           ],
-          "title": "Connecting Large Language Models with Evolutionary Algorithms Yields Powerful Prompt Optimizers",
+          "title": "Conectar Modelos de Lenguaje Grande con Algoritmos Evolutivos Produce Optimizadores de Inducción Poderosos",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T07:05:17+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificación del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -797,16 +796,16 @@
           "id": "197990754",
           "topics": [
             "LLM",
-            "In-Context Learning"
+            "Aprendizaje en contexto"
           ],
-          "title": "Ambiguity-Aware In-Context Learning with Large Language Models",
+          "title": "Aprendizaje en contexto consciente de la ambigüedad con modelos de lenguaje grandes",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T06:59:38+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y calificación abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -827,18 +826,18 @@
         {
           "id": "197842432",
           "topics": [
-            "LLM",
-            "Evaluation",
-            "Multilingual"
+            "MLM",
+            "Evaluación",
+            "Multilingüe"
           ],
-          "title": "Are Large Language Model-based Evaluators the Solution to Scaling Up Multilingual Evaluation?",
+          "title": "¿Son los Evaluadores Basados en Modelos de Lenguaje Grande la Solución para Escalar la Evaluación Multilingüe?",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T06:56:13+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificación del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -922,18 +921,18 @@
         {
           "id": "197990654",
           "topics": [
-            "LLM",
-            "RLHF",
-            "Reinforcement Learning"
+            "MLL",
+            "FRHL",
+            "Aprendizaje por Refuerzo"
           ],
-          "title": "Statistical Rejection Sampling Improves Preference Optimization",
+          "title": "El Muestreo de Rechazo Estadistico Mejora la Optimizacion de Preferencias",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T06:41:10+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificacion del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -954,17 +953,17 @@
         {
           "id": "197859672",
           "topics": [
-            "LLM",
-            "Code"
+            "MLL",
+            "Código"
           ],
-          "title": "Large Language Models for Compiler Optimization",
+          "title": "Modelos de Lenguaje Grande para Optimización de Compiladores",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T19:41:06+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificación Abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -1017,17 +1016,17 @@
           "id": "197838596",
           "topics": [
             "LLM",
-            "Math",
-            "Science"
+            "Matemáticas",
+            "Ciencia"
           ],
-          "title": "Large Language Model for Science: A Study on P vs. NP",
+          "title": "Modelo de Lenguaje Grande para Ciencia: Un Estudio sobre P vs. NP",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T19:17:15+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificación del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -1112,14 +1111,14 @@
           "topics": [
             "LLM"
           ],
-          "title": "Optimize Weight Rounding via Signed Gradient Descent for the Quantization of LLMs",
+          "title": "Optimizar el redondeo de peso mediante el descenso de gradiente firmado para la cuantificación de LLMs",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T18:03:55+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y calificación abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -1173,14 +1172,14 @@
           "topics": [
             "LLM"
           ],
-          "title": "Neurons in Large Language Models: Dead, N-gram, Positional",
+          "title": "Neuronas en Modelos de Lenguaje de Gran Escala: Muertas, N-grama, Posicional",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T17:56:01+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificacion Abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -1233,17 +1232,17 @@
           "id": "197621737",
           "topics": [
             "LLM",
-            "Prompting",
-            "Summarization"
+            "Inducción",
+            "Resumen"
           ],
-          "title": "DrugChat: Towards Enabling ChatGPT-Like Capabilities on Drug Molecule Graphs",
+          "title": "DrugChat: Hacia la Habilitación de Capacidades Similares a ChatGPT en Grafos de Moléculas de Drogas",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T08:54:43+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificación del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -1360,16 +1359,16 @@
           "id": "197621439",
           "topics": [
             "LLM",
-            "Math"
+            "Matemáticas"
           ],
-          "title": "GPT Can Solve Mathematical Problems Without a Calculator",
+          "title": "GPT puede resolver problemas matemáticos sin una calculadora",
           "slug": "transformer-models-an-introduction-and-catalog",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T08:39:23+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y calificación abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692937594-researchpaper7.png"
           },
@@ -1391,16 +1390,16 @@
           "id": "197621128",
           "topics": [
             "LLM",
-            "Prompting"
+            "Estimulación"
           ],
-          "title": "Large Language Models as Optimizers",
+          "title": "Modelos de Lenguaje Grande como Optimizadores",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T08:33:08+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificación Abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -1421,17 +1420,17 @@
         {
           "id": "197613974",
           "topics": [
-            "LLM",
-            "RLHF"
+            "MLL",
+            "FRHL"
           ],
-          "title": "Efficient RLHF: Reducing the Memory Usage of PPO",
+          "title": "RLHF Eficiente: Reduciendo el Uso de Memoria de PPO",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T02:03:03+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificacion del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -1517,16 +1516,16 @@
           "id": "180869081",
           "topics": [
             "LLM",
-            "Summary"
+            "Resumen"
           ],
-          "title": "Llama 2: Open Foundation and Fine-Tuned Chat Models [Commentary]",
+          "title": "Llama 2: Fundacion Abierta y Modelos de Chat Ajustados [Comentario]",
           "slug": "llama-2-open-foundation-and-fine-tuned-chat-models-commentary",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:48:17+01:00",
-          "description": "Deep dive into Llama 2: Explore the pretraining, fine-tuning, safety measures, and insightful discussions in our comprehensive summary.",
+          "description": "Inmersion profunda en Llama 2: Explora el preentrenamiento, ajuste fino, medidas de seguridad y discusiones perspicaces en nuestro resumen exhaustivo.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690935728-abr7-img1.png"
           },
@@ -1705,16 +1704,16 @@
         {
           "id": "189849276",
           "topics": [
-            "LLM"
+            "MLG"
           ],
-          "title": "Efficient Guided Generation for Large Language Models",
+          "title": "Generación Guiada Eficiente para Modelos de Lenguaje de Gran Tamaño",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:40:10+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificación Abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -1736,16 +1735,16 @@
           "id": "189849263",
           "topics": [
             "LLM",
-            "Healthcare"
+            "Atención médica"
           ],
-          "title": "Predicting transcriptional outcomes of novel multigene perturbations with GEARS ",
+          "title": "Predicción de resultados transcripcionales de perturbaciones multigénicas nuevas con GEARS",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:37:37+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y calificación del resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -1767,17 +1766,17 @@
           "id": "189845558",
           "topics": [
             "LLM",
-            "Compression",
-            "Survey"
+            "Compresion",
+            "Encuesta"
           ],
-          "title": "A Survey on Model Compression for Large Language Models",
+          "title": "Una encuesta sobre la compresion de modelos para modelos de lenguaje grandes",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:37:01+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y calificacion del resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -1831,16 +1830,16 @@
           "id": "189787126",
           "topics": [
             "LLM",
-            "Code"
+            "Código"
           ],
-          "title": "LLM As DBA",
+          "title": "LLM como DBA",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:35:41+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y calificación abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -1862,16 +1861,16 @@
           "id": "189845549",
           "topics": [
             "LLM",
-            "Instruction Tuning"
+            "Ajuste de Instrucciones"
           ],
-          "title": "Self-Alignment with Instruction Backtranslation",
+          "title": "Alineacion Automatica con Retrotraduccion de Instrucciones",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:35:15+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificacion Abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -1923,16 +1922,16 @@
         {
           "id": "189792745",
           "topics": [
-            "LLM"
+            "MLL"
           ],
-          "title": "Large Content And Behavior Models To Understand, Simulate, And Optimize Content And Behavior",
+          "title": "Modelos de Contenido y Comportamiento Grandes para Entender, Simular y Optimizar Contenido y Comportamiento",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:33:17+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificación Abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -1954,17 +1953,17 @@
           "id": "189787194",
           "topics": [
             "LLM",
-            "Code",
-            "Healthcare"
+            "Codigo",
+            "Atencion medica"
           ],
-          "title": "BioCoder: A Benchmark for Bioinformatics Code Generation with Contextual Pragmatic Knowledge",
+          "title": "BioCoder: Un Referente para la Generacion de Codigo en Bioinformatica con Conocimiento Pragmatico Contextual",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T06:26:08+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificacion del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -2335,18 +2334,18 @@
           "id": "189787086",
           "topics": [
             "LLM",
-            "Fine-tuning",
+            "Ajuste fino",
             "LORA",
-            "Data"
+            "Datos"
           ],
-          "title": "Platypus: Quick, Cheap, and Powerful Refinement of LLMs",
+          "title": "Platypus: Rapido, Economico y Potente Refinamiento de LLMs",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:51:43+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificacion del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -2368,17 +2367,17 @@
           "id": "189777877",
           "topics": [
             "LLM",
-            "Code",
-            "Instruction Tuning"
+            "Código",
+            "Ajuste de Instrucciones"
           ],
-          "title": "OctoPack: Instruction Tuning Code Large Language Models",
+          "title": "OctoPack: Código de Ajuste de Instrucciones para Modelos de Lenguaje de Gran Escala",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:50:56+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificación Abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -2400,16 +2399,16 @@
           "id": "189777872",
           "topics": [
             "LLM",
-            "Code"
+            "Código"
           ],
-          "title": "Enhancing Network Management Using Code Generated by Large Language Models",
+          "title": "Mejorando la gestión de redes mediante código generado por modelos de lenguaje extenso",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:50:28+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y calificación abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -2558,16 +2557,16 @@
           "id": "189577785",
           "topics": [
             "LLM",
-            "Healthcare"
+            "Atencion sanitaria"
           ],
-          "title": "OpenProteinSet: Training data for structural biology at scale",
+          "title": "ConjuntoAbiertoDeProteinas: Datos de entrenamiento para la biologia estructural a gran escala",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:45:47+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificacion del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692933540-researchpaper10.png"
           },
@@ -2622,16 +2621,16 @@
           "id": "189576091",
           "topics": [
             "LLM",
-            "Inference"
+            "Inferencia"
           ],
-          "title": "Accelerating LLM Inference with Staged Speculative Decoding",
+          "title": "Acelerando la Inferencia de LLM con Decodificacion Especulativa por Etapas",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T04:45:52+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificacion del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -2653,17 +2652,17 @@
           "id": "189576084",
           "topics": [
             "LLM",
-            "Data",
-            "Training"
+            "Datos",
+            "Entrenamiento"
           ],
-          "title": "Shepherd: A Critic for Language Model Generation",
+          "title": "Pastor: Un Critico para la Generacion de Modelos de Lenguaje",
           "slug": "shepherd-a-critic-for-language-model-generation",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T04:45:24+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario Abstracto y Calificacion",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -2687,14 +2686,14 @@
             "LLM",
             "Legal"
           ],
-          "title": "SILO Language Models: Isolating Legal Risk In a Nonparametric Datastore",
+          "title": "Modelos de Lenguaje SILO: Aislamiento del Riesgo Legal en un Almacén de Datos No Paramétrico",
           "slug": "silo-language-models-isolating-legal-risk-in-a-nonparametric-datastore",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T04:43:24+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificación Abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -2752,18 +2751,20 @@
         {
           "id": "198277124",
           "topics": [
-            "MLG",
-            "Privacidad",
-            "Borde"
+            "LLM",
+            "Finanzas",
+            "Atencion medica",
+            "Legal",
+            "Indicacion"
           ],
-          "title": "Recuperacion de la enmascaramiento que preserva la privacidad con modelos de lenguaje grandes",
+          "title": "Adaptacion de Modelos de Lenguaje Grande mediante Comprension de Lectura",
           "slug": "adapting-large-language-models-via-reading-comprehension",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-27T03:34:22+01:00",
-          "description": "Comentario y calificacion abstractos",
+          "description": "Comentario y Calificacion del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -2790,17 +2791,20 @@
         {
           "id": "198277124",
           "topics": [
-            "Audio",
-            "Multimodal"
+            "LLM",
+            "Finanzas",
+            "Sanidad",
+            "Legal",
+            "Inducción"
           ],
-          "title": "Supervision de Lenguaje Natural para Representaciones de Audio de Proposito General",
+          "title": "Adaptación de Modelos de Lenguaje Grande mediante Comprensión de Lectura",
           "slug": "adapting-large-language-models-via-reading-comprehension",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-27T03:34:22+01:00",
-          "description": "Comentario y Calificacion del Resumen",
+          "description": "Comentario y Calificación Abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -2822,17 +2826,17 @@
           "id": "197990687",
           "topics": [
             "LLM",
-            "Ajuste de Instrucciones",
-            "Multimodal"
+            "Atención médica",
+            "Resumen"
           ],
-          "title": "Un Estudio Empirico sobre la Escalabilidad de Modelos Multimodales Grandes Ajustados a Instrucciones",
+          "title": "Resumen de Texto Clínico: Adaptar Modelos de Lenguaje Grandes Puede Superar a los Expertos Humanos",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T06:50:58+01:00",
-          "description": "Comentario y Calificacion del Resumen",
+          "description": "Comentario y Calificación del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692933540-researchpaper10.png"
           },
@@ -2853,19 +2857,17 @@
         {
           "id": "189849263",
           "topics": [
-            "Audio",
             "LLM",
-            "Multimodal",
-            "Multilingüe"
+            "Salud"
           ],
-          "title": "Mejorando las Representaciones Conjuntas de Texto y Voz Sin Alineación",
+          "title": "Predicción de resultados transcripcionales de perturbaciones multigénicas nuevas con GEARS",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:37:37+01:00",
-          "description": "Comentario y Calificación Abstractos",
+          "description": "Comentario y Calificación del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -2887,17 +2889,17 @@
           "id": "189787194",
           "topics": [
             "LLM",
-            "Code",
-            "Healthcare"
+            "Código",
+            "Atención médica"
           ],
-          "title": "BioCoder: A Benchmark for Bioinformatics Code Generation with Contextual Pragmatic Knowledge",
+          "title": "BioCoder: Un Referente para la Generación de Código en Bioinformática con Conocimiento Pragmático Contextual",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T06:26:08+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificación Abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -2988,9 +2990,12 @@
           "id": "198277124",
           "topics": [
             "LLM",
-            "Inferencia"
+            "Finanzas",
+            "Atencion medica",
+            "Legal",
+            "Indicaciones"
           ],
-          "title": "Acelerando la Inferencia de LLM con Decodificacion Especulativa por Etapas",
+          "title": "Adaptacion de Modelos de Lenguaje Grande mediante Comprension de Lectura",
           "slug": "adapting-large-language-models-via-reading-comprehension",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
@@ -3021,14 +3026,14 @@
             "LLM",
             "Legal"
           ],
-          "title": "SILO Language Models: Isolating Legal Risk In a Nonparametric Datastore",
+          "title": "Modelos de Lenguaje SILO: Aislamiento del Riesgo Legal en un Almacen de Datos No Parametrico",
           "slug": "silo-language-models-isolating-legal-risk-in-a-nonparametric-datastore",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T04:43:24+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificacion Abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -3056,17 +3061,19 @@
           "id": "198277124",
           "topics": [
             "LLM",
-            "Datos",
-            "Entrenamiento"
+            "Finanzas",
+            "Sanidad",
+            "Legal",
+            "Inducción"
           ],
-          "title": "Pastor: Un Crítico para la Generación de Modelos de Lenguaje",
+          "title": "Adaptación de Modelos de Lenguaje Grande mediante Comprensión de Lectura",
           "slug": "adapting-large-language-models-via-reading-comprehension",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-27T03:34:22+01:00",
-          "description": "Comentario Abstracto y Calificación",
+          "description": "Comentario y Calificación Abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -3087,11 +3094,10 @@
         {
           "id": "197990774",
           "topics": [
-            "MLM",
-            "Transformadores",
-            "Entrenamiento"
+            "Modelos de Lenguaje Grande",
+            "Indicaciones"
           ],
-          "title": "Leyes de Escalado para Modelos de Fundacion Conectados de Manera Escasa",
+          "title": "Conectar Modelos de Lenguaje Grande con Algoritmos Evolutivos Produce Optimizadores de Indicaciones Poderosos",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
@@ -3119,18 +3125,18 @@
         {
           "id": "197621737",
           "topics": [
-            "MLL",
-            "Entrenamiento",
-            "Alineación"
+            "LLM",
+            "Inducción",
+            "Resumen"
           ],
-          "title": "De los Datos de Preentrenamiento a los Modelos de Lenguaje hasta las Tareas Subsecuentes: Rastreando las Huellas de Sesgos Políticos que Conducen a Modelos de PNL Injustos",
+          "title": "DrugChat: Hacia la Habilitación de Capacidades Similares a ChatGPT en Grafos de Moléculas de Drogas",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T08:54:43+01:00",
-          "description": "Comentario y Calificación Abstractos",
+          "description": "Comentario y Calificación del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -3183,17 +3189,17 @@
         {
           "id": "197621178",
           "topics": [
-            "LLM",
-            "Prompting"
+            "Modelos de lenguaje grande",
+            "Indicaciones"
           ],
-          "title": "DoLa: Decoding by Contrasting Layers Improves Factuality in Large Language Models",
+          "title": "DoLa: Decodificación por Contraste de Capas Mejora la Factualidad en Modelos de Lenguaje Grande",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T08:41:35+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificación del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -3215,16 +3221,16 @@
           "id": "197621128",
           "topics": [
             "LLM",
-            "Prompting"
+            "Estimulacion"
           ],
-          "title": "Large Language Models as Optimizers",
+          "title": "Modelos de Lenguaje Grande como Optimizadores",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T08:33:08+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificacion Abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -3245,18 +3251,18 @@
         {
           "id": "189849326",
           "topics": [
-            "LLM",
-            "Prompting",
-            "Reasoning"
+            "MLL",
+            "Inducción",
+            "Razonamiento"
           ],
-          "title": "Graph of Thoughts: Solving Elaborate Problems with Large Language Models",
+          "title": "Gráfico de Pensamientos: Resolviendo Problemas Elaborados con Modelos de Lenguaje Grande",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:42:47+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificación Abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -3278,17 +3284,17 @@
           "id": "189787144",
           "topics": [
             "LLM",
-            "Code",
-            "Prompting"
+            "Código",
+            "Indicaciones"
           ],
-          "title": "Solving Challenging Math Word Problems Using GPT-4 Code Interpreter with Code-based Self-Verification",
+          "title": "Resolviendo Problemas Difíciles de Matemáticas Usando el Intérprete de Código GPT-4 con Auto-Verificación Basada en Código",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:56:26+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificación Abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -3348,17 +3354,16 @@
           "id": "198277342",
           "topics": [
             "LLM",
-            "RLHF",
-            "Resumen"
+            "Multilingüe"
           ],
-          "title": "Problemas Abiertos y Limitaciones Fundamentales del Aprendizaje por Refuerzo a partir de Retroalimentacion Humana [Resumen]",
+          "title": "OpenBA: Un Modelo Asimétrico Bilingüe de 15B de código abierto Preentrenado desde Cero",
           "slug": "openba-an-open-sourced-15b-bilingual-asymmetric-seq2seq-model-pre-trained-from-sc",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-27T03:34:02+01:00",
-          "description": "Descubrir los desafios, limitaciones y futuro del Aprendizaje por Refuerzo a partir de Retroalimentacion Humana (RLHF) en sistemas de IA. Explorar la gobernanza, seguridad y mas.",
+          "description": "Comentario y Calificación del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -3380,16 +3385,16 @@
           "id": "198277345",
           "topics": [
             "LLM",
-            "Resumen"
+            "Multilingüe"
           ],
-          "title": "Llama 2: Fundacion Abierta y Modelos de Chat Ajustados [Comentario]",
+          "title": "Baichuan 2: Modelos de Lenguaje a Gran Escala Abiertos",
           "slug": "baichuan-2-open-large-scale-language-models",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-24T05:59:10+01:00",
-          "description": "Inmersion profunda en Llama 2: Explora el preentrenamiento, ajuste fino, medidas de seguridad y discusiones perspicaces en nuestro resumen exhaustivo.",
+          "description": "Comentario y Calificación del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -3411,16 +3416,17 @@
           "id": "198277099",
           "topics": [
             "LLM",
-            "Resumen"
+            "Multilingüe",
+            "Datos"
           ],
-          "title": "Desafios y Aplicaciones de Modelos de Lenguaje de Gran Escala [Resumen]",
+          "title": "CulturaX: Un Conjunto de Datos Enorme, Limpio y Multilingüe para Modelos de Lenguaje Grande en 167 Idiomas",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T22:14:53+01:00",
-          "description": "Explora nuestro resumen y las principales conclusiones del 'Desafios y Aplicaciones de Modelos de Lenguaje de Gran Escala', un documento de investigacion que profundiza en el potencial, los desafios y las aplicaciones de los LLMs.",
+          "description": "Comentario y Calificación del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -3441,18 +3447,18 @@
         {
           "id": "197842432",
           "topics": [
-            "LLM",
-            "Evaluation",
-            "Multilingual"
+            "MLM",
+            "Evaluación",
+            "Multilingüe"
           ],
-          "title": "Are Large Language Model-based Evaluators the Solution to Scaling Up Multilingual Evaluation?",
+          "title": "¿Son los Evaluadores Basados en Modelos de Lenguaje Grande la Solución para Escalar la Evaluación Multilingüe?",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T06:56:13+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificación del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -3474,17 +3480,17 @@
           "id": "189787170",
           "topics": [
             "LLM",
-            "Multilingual",
-            "Evaluation"
+            "Multilingüe",
+            "Evaluación"
           ],
-          "title": "The Belebele Benchmark: a Parallel Reading Comprehension Dataset in 122 Language Variants",
+          "title": "El Benchmark Belebele: un Conjunto de Datos de Comprensión Lectora Paralela en 122 Variantes de Idioma",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T06:25:24+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificación del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692933540-researchpaper10.png"
           },
@@ -3537,17 +3543,17 @@
           "id": "189787113",
           "topics": [
             "LLM",
-            "Prompting",
-            "Multilingual"
+            "Inducción",
+            "Multilingüe"
           ],
-          "title": "The Devil is in the Errors: Leveraging Large Language Models for Fine-grained Machine Translation Evaluation",
+          "title": "El Diablo está en los Errores: Aprovechando Modelos de Lenguaje Grandes para la Evaluación Detallada de Traducción Automática",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:55:30+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificación del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -3569,18 +3575,18 @@
           "id": "189777849",
           "topics": [
             "Audio",
-            "LLM",
+            "MLL",
             "Multimodal",
-            "Multilingual"
+            "Multilingüe"
           ],
-          "title": "Improving Joint Speech-Text Representations Without Alignment",
+          "title": "Mejorando las Representaciones Conjuntas de Texto y Voz Sin Alineación",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:49:52+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificación Abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -3608,16 +3614,16 @@
           "id": "198277117",
           "topics": [
             "LLM",
-            "Chat"
+            "Recuperación"
           ],
-          "title": "Investigando la capacidad de respuesta de los LLM para el cuestionario de respuestas a preguntas de forma larga",
+          "title": "PDFTriage: Respuesta a Preguntas sobre Documentos Largos y Estructurados",
           "slug": "pdftriage-question-answering-over-long-structured-documents",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-27T03:33:49+01:00",
-          "description": "Comentario y calificación del resumen",
+          "description": "Comentario y Calificación del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -3638,18 +3644,18 @@
         {
           "id": "189787148",
           "topics": [
+            "Recuperación",
             "LLM",
-            "Chat",
-            "Datos"
+            "Aprendizaje en Contexto"
           ],
-          "title": "PIPPA: Un Conjunto de Datos Conversacional Parcialmente Sintetico",
+          "title": "RAVEN: Aprendizaje en Contexto con Modelos de Lenguaje Codificador-Decodificador Mejorados por Recuperación",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:57:31+01:00",
-          "description": "Comentario Abstracto y Calificacion",
+          "description": "Comentario y Calificación del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -3676,18 +3682,17 @@
         {
           "id": "198277138",
           "topics": [
-            "Imagen",
-            "Seguridad",
-            "Difusion"
+            "LLM",
+            "Ajuste fino"
           ],
-          "title": "FLIRT: Retroalimentacion en Contexto de Equipos Rojos",
+          "title": "LLaMA Ordenada: Desbloqueando el Potencial de las Capas Intermedias de Modelos de Lenguaje de Gran Escala para Inferencia Dinámica Usando Ajuste Fino Ordenado (SoFT)",
           "slug": "sorted-llama-unlocking-the-potential-of-intermediate-layers-of-large-language-mod",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-27T03:33:31+01:00",
-          "description": "Comentario Abstracto y Calificacion",
+          "description": "Comentario y Calificación del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -3708,17 +3713,18 @@
         {
           "id": "198044900",
           "topics": [
-            "Difusión",
-            "Ciencia"
+            "MLL",
+            "Entidad",
+            "Ajuste fino"
           ],
-          "title": "PDE-Refiner: Logrando Despliegues Largos Precisos con Solucionadores de PDE Neurales",
+          "title": "Aprovechando la Informacion Contextual para la Deteccion Eficaz de la Relevancia de Entidades",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T07:30:50+01:00",
-          "description": "Comentario y Calificación del Resumen",
+          "description": "Comentario y Calificacion del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -3740,17 +3746,17 @@
           "id": "197817281",
           "topics": [
             "LLM",
-            "In-Context Learning",
-            "Fine-tuning"
+            "Aprendizaje en contexto",
+            "Ajuste fino"
           ],
-          "title": "FIAT: Fusing learning paradigms with Instruction-Accelerated Tuning",
+          "title": "FIAT: Fusionando paradigmas de aprendizaje con Ajuste Acelerado por Instrucción",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T18:07:58+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificación del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -3811,16 +3817,17 @@
           "id": "198277150",
           "topics": [
             "LLM",
-            "Codigo"
+            "Ajuste de Instrucciones",
+            "Multimodal"
           ],
-          "title": "LLM como DBA",
+          "title": "Un Estudio Empirico sobre la Escalabilidad de Modelos Multimodales Grandes con Ajuste de Instrucciones",
           "slug": "an-empirical-study-of-scaling-instruct-tuned-large-multimodal-models",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-27T03:33:15+01:00",
-          "description": "Comentario Abstracto y Calificacion",
+          "description": "Comentario y Calificacion del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -3842,16 +3849,17 @@
           "id": "197621519",
           "topics": [
             "LLM",
-            "Codigo"
+            "Código Abierto",
+            "Ajuste de Instrucciones"
           ],
-          "title": "Modelos de Lenguaje Grande para Optimizacion de Compiladores",
+          "title": "Informe Técnico XGen-7B",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T08:46:34+01:00",
-          "description": "Comentario y Calificacion Abstractos",
+          "description": "Comentario y Calificación del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692933540-researchpaper10.png"
           },
@@ -3872,18 +3880,17 @@
         {
           "id": "189845549",
           "topics": [
-            "MLL",
-            "Código",
-            "Ajuste de Instrucciones"
+            "LLM",
+            "Ajuste de instrucciones"
           ],
-          "title": "OctoPack: Código de Ajuste de Instrucciones para Modelos de Lenguaje de Gran Tamaño",
+          "title": "Alineación propia con retrotraducción de instrucciones",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:35:15+01:00",
-          "description": "Comentario y Calificación Abstractos",
+          "description": "Comentario y calificación abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -3905,17 +3912,17 @@
           "id": "189787192",
           "topics": [
             "LLM",
-            "Código",
-            "Salud"
+            "Code",
+            "Instruction Tuning"
           ],
-          "title": "BioCoder: Un Referente para la Generación de Código en Bioinformática con Conocimiento Pragmático Contextual",
+          "title": "Can Programming Languages Boost Each Other via Instruction Tuning?",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T06:24:29+01:00",
-          "description": "Comentario y Calificación del Resumen",
+          "description": "Abstract Commentary & Rating",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -3937,17 +3944,17 @@
           "id": "189787168",
           "topics": [
             "LLM",
-            "Codigo",
-            "Ajuste de Instrucciones"
+            "Instruction Tuning",
+            "Healthcare"
           ],
-          "title": "¿Pueden los Lenguajes de Programacion Potenciarse Mutuamente mediante el Ajuste de Instrucciones?",
+          "title": "MedAlign: A Clinician-Generated Dataset for Instruction Following with Electronic Medical Records",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T06:20:59+01:00",
-          "description": "Comentario y Calificacion Abstractos",
+          "description": "Abstract Commentary & Rating",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -3969,17 +3976,17 @@
           "id": "189777877",
           "topics": [
             "LLM",
-            "Codigo",
-            "Chat"
+            "Código",
+            "Ajuste de Instrucciones"
           ],
-          "title": "SoTaNa: El Asistente de Desarrollo de Software de Codigo Abierto",
+          "title": "OctoPack: Código de Ajuste de Instrucciones para Modelos de Lenguaje de Gran Escala",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:50:56+01:00",
-          "description": "Comentario y Calificacion Abstractos",
+          "description": "Comentario y Calificación Abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -4001,17 +4008,16 @@
           "id": "189777825",
           "topics": [
             "LLM",
-            "Código",
-            "Indicaciones"
+            "Instruction Tuning"
           ],
-          "title": "Resolviendo Problemas Difíciles de Matemáticas Usando el Intérprete de Código GPT-4 con Auto-Verificación Basada en Código",
+          "title": "Self-Alignment with Instruction Backtranslation",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:47:36+01:00",
-          "description": "Comentario y Calificación Abstractos",
+          "description": "Abstract Commentary & Rating",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -4039,16 +4045,17 @@
           "id": "198277150",
           "topics": [
             "LLM",
-            "Codigo"
+            "Ajuste de Instrucciones",
+            "Multimodal"
           ],
-          "title": "LLM como DBA",
+          "title": "Un Estudio Empírico sobre la Escalabilidad de Modelos Multimodales Grandes Ajustados a Instrucciones",
           "slug": "an-empirical-study-of-scaling-instruct-tuned-large-multimodal-models",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-27T03:33:15+01:00",
-          "description": "Comentario Abstracto y Calificacion",
+          "description": "Comentario y Calificación del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -4069,10 +4076,10 @@
         {
           "id": "197845061",
           "topics": [
-            "LLM",
-            "Personalización"
+            "Audio",
+            "Multimodal"
           ],
-          "title": "Enseñar a los LLM a Personalizar -- Un Enfoque inspirado en la Educación de la Escritura",
+          "title": "Supervisión del Lenguaje Natural para Representaciones de Audio de Propósito General",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
@@ -4100,18 +4107,19 @@
         {
           "id": "189777849",
           "topics": [
+            "Audio",
             "LLM",
-            "Datos",
-            "Agentes"
+            "Multimodal",
+            "Multilingue"
           ],
-          "title": "Una fuente de datos para agentes corporizados razonadores",
+          "title": "Mejorando las Representaciones Conjuntas de Texto-Habla Sin Alineacion",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:49:52+01:00",
-          "description": "Comentario y calificacion abstractos",
+          "description": "Comentario y Calificacion Abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -4138,11 +4146,11 @@
         {
           "id": "198277160",
           "topics": [
-            "Imagen",
-            "Seguridad",
-            "Difusión"
+            "LLM",
+            "Agentes",
+            "Juegos"
           ],
-          "title": "FLIRT: Retroalimentación en Contexto de Equipos Rojos",
+          "title": "MindAgent: Interacción Emergente en Juegos",
           "slug": "mindagent-emergent-gaming-interaction",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
@@ -4170,17 +4178,18 @@
         {
           "id": "198044929",
           "topics": [
-            "Imagen",
-            "LORA"
+            "LLM",
+            "Datos",
+            "Agentes"
           ],
-          "title": "StyleAdapter: Un Modelo de Una Sola Pasada Sin LoRA para la Generacion de Imagenes Estilizadas",
+          "title": "Una fuente de datos para agentes corporizados razonadores",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T07:33:25+01:00",
-          "description": "Comentario y Calificacion del Resumen",
+          "description": "Comentario abstracto y calificacion",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -4202,16 +4211,16 @@
           "id": "198044892",
           "topics": [
             "LLM",
-            "Agents"
+            "Agentes"
           ],
-          "title": "LASER: LLM Agent with State-Space Exploration for Web Navigation",
+          "title": "LASER: Agente LLM con Exploración del Espacio de Estados para Navegación Web",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T07:26:17+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificación del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -4233,16 +4242,16 @@
           "id": "197990671",
           "topics": [
             "LLM",
-            "Agents"
+            "Agentes"
           ],
-          "title": "Agents: An Open-source Framework for Autonomous Language Agents",
+          "title": "Agentes: Un Marco de Código Abierto para Agentes Autónomos de Lenguaje",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T06:47:00+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificación Abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -4264,17 +4273,17 @@
           "id": "197559951",
           "topics": [
             "LLM",
-            "Agents",
-            "Tools"
+            "Agentes",
+            "Herramientas"
           ],
-          "title": "ModelScope-Agent: Building Your Customizable Agent System with Open-source Large Language Models",
+          "title": "ModelScope-Agent: Construyendo tu Sistema de Agentes Personalizable con Modelos de Lenguaje de Gran Escala de Código Abierto",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T01:11:03+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificación del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -4296,16 +4305,16 @@
           "id": "189777845",
           "topics": [
             "LLM",
-            "Agents"
+            "Agentes"
           ],
-          "title": "BOLAA: Benchmarking and Orchestrating LLM-augmented Autonomous Agents",
+          "title": "BOLAA: Evaluación comparativa y orquestación de agentes autónomos aumentados por LLM",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:48:45+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y calificación abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -4333,9 +4342,10 @@
           "id": "198277160",
           "topics": [
             "LLM",
-            "Aprendizaje en contexto"
+            "Agentes",
+            "Juegos"
           ],
-          "title": "CausalLM no es óptimo para el aprendizaje en contexto",
+          "title": "MindAgent: Interacción Emergente en Juegos",
           "slug": "mindagent-emergent-gaming-interaction",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
@@ -4369,18 +4379,16 @@
         {
           "id": "198277182",
           "topics": [
-            "Recuperacion",
-            "LLM",
-            "Aprendizaje en Contexto"
+            "Transformadores"
           ],
-          "title": "RAVEN: Aprendizaje en Contexto con Modelos de Lenguaje Codificador-Decodificador Mejorados por Recuperacion",
+          "title": "Curar el dolor de cabeza de los Transformadores mediante la Atención Restringida Colineal",
           "slug": "cure-the-headache-of-transformers-via-collinear-constrained-attention",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-27T03:32:43+01:00",
-          "description": "Comentario y Calificacion del Resumen",
+          "description": "Comentario y Calificación Abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -4401,17 +4409,18 @@
         {
           "id": "198044879",
           "topics": [
-            "MLL",
-            "Recuperacion"
+            "LLM",
+            "Transformadores",
+            "Interpretabilidad"
           ],
-          "title": "PDFTriage: Respuesta a Preguntas sobre Documentos Largos y Estructurados",
+          "title": "Los Autoencoders Dispersos Encuentran Características Altamente Interpretativas en Modelos de Lenguaje",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T07:23:08+01:00",
-          "description": "Comentario y Calificacion del Resumen",
+          "description": "Comentario y Calificación del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -4433,17 +4442,17 @@
           "id": "198044746",
           "topics": [
             "LLM",
-            "Transformers",
-            "Training"
+            "Transformadores",
+            "Entrenamiento"
           ],
-          "title": "Scaling Laws for Sparsely-Connected Foundation Models",
+          "title": "Leyes de Escalado para Modelos de Fundacion Conectados de Manera Escasa",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T07:09:44+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificacion del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -4464,16 +4473,16 @@
         {
           "id": "197842604",
           "topics": [
-            "Transformers"
+            "Transformadores"
           ],
-          "title": "Uncovering mesa-optimization algorithms in Transformers",
+          "title": "Descubriendo algoritmos de optimizacion de mesa en Transformadores",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T19:27:51+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificacion Abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -4524,16 +4533,16 @@
         {
           "id": "197556833",
           "topics": [
-            "Transformers"
+            "Transformadores"
           ],
-          "title": "One Wide Feedforward is All You Need",
+          "title": "Un Feedforward Amplio es Todo lo que Necesitas",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T01:03:37+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificacion del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -4554,16 +4563,16 @@
         {
           "id": "189989661",
           "topics": [
-            "Transformers"
+            "Transformadores"
           ],
-          "title": "Vector Search with OpenAI Embeddings: Lucene Is All You Need",
+          "title": "Busqueda de Vectores con Incrustaciones de OpenAI: Lucene es Todo lo que Necesitas",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:41:24+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificacion del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -4584,16 +4593,16 @@
         {
           "id": "189849314",
           "topics": [
-            "Transformers"
+            "Transformadores"
           ],
-          "title": "Bayesian Flow Networks",
+          "title": "Redes de Flujo Bayesiano",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:40:37+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificación Abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -4614,16 +4623,16 @@
         {
           "id": "189787209",
           "topics": [
-            "Transformers"
+            "Transformadores"
           ],
-          "title": "YaRN: Efficient Context Window Extension of Large Language Models",
+          "title": "YaRN: Extension eficiente de la ventana de contexto de modelos de lenguaje grandes",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T06:26:47+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y calificacion del resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -4644,16 +4653,16 @@
         {
           "id": "189787174",
           "topics": [
-            "Transformers"
+            "Transformadores"
           ],
-          "title": "LM-Infinite: Simple On-the-Fly Length Generalization for Large Language Models",
+          "title": "LM-Infinite: Generalización de Longitud Simple al Vuelo para Modelos de Lenguaje Grandes",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T06:21:58+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificación del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -4674,16 +4683,16 @@
         {
           "id": "189777843",
           "topics": [
-            "Transformers"
+            "Transformadores"
           ],
-          "title": "Composable Function-preserving Expansions for Transformer Architectures",
+          "title": "Expansiones Componibles que Preservan Funciones para Arquitecturas de Transformadores",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:48:19+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificacion del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -4710,17 +4719,17 @@
         {
           "id": "198277196",
           "topics": [
-            "LLM",
-            "Datos"
+            "Modelos de Lenguaje Grande",
+            "Datos Estructurados"
           ],
-          "title": "SlimPajama-DC: Entendiendo Combinaciones de Datos para Entrenamiento de LLM",
+          "title": "Struc-Bench: ¿Son realmente buenos los Modelos de Lenguaje Grande en generar Datos Estructurados Complejos?",
           "slug": "struc-bench-are-large-language-models-really-good-at-generating-complex-structure",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-25T03:38:38+01:00",
-          "description": "Comentario y Calificacion del Resumen",
+          "description": "Comentario y Calificación del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -4741,18 +4750,19 @@
         {
           "id": "198277458",
           "topics": [
-            "LLM",
-            "Datos",
-            "Agentes"
+            "Modelo de lenguaje de largo alcance",
+            "Alucinacion",
+            "Entidad",
+            "Datos estructurados"
           ],
-          "title": "Una fuente de datos para agentes corporizados razonadores",
+          "title": "LMDX: Extraccion y localizacion de informacion de documentos basada en modelos de lenguaje",
           "slug": "lmdx-language-model-based-document-information-extraction-and-localization",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-24T05:20:31+01:00",
-          "description": "Comentario y calificación abstractos",
+          "description": "Comentario y calificacion abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -4779,18 +4789,18 @@
         {
           "id": "198277217",
           "topics": [
-            "LLM",
-            "Inducción",
-            "Resumen"
+            "MLG",
+            "Privacidad",
+            "Borde"
           ],
-          "title": "De disperso a denso: Resumen de GPT-4 con cadena de inducción de densidad",
+          "title": "Recuperacion de la enmascaramiento que preserva la privacidad con modelos de lenguaje grandes",
           "slug": "recovering-from-privacy-preserving-masking-with-large-language-models",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-25T03:38:26+01:00",
-          "description": "Comentario y calificación abstractos",
+          "description": "Comentario y calificacion abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -4818,17 +4828,17 @@
           "id": "198277217",
           "topics": [
             "LLM",
-            "Herramientas",
-            "Comentario"
+            "Privacidad",
+            "Borde"
           ],
-          "title": "ToolLLM: Facilitando a los Modelos de Lenguaje Grande Dominar mas de 16000 APIs del Mundo Real [Comentario]",
+          "title": "Recuperacion de la enmascaramiento que preserva la privacidad con modelos de lenguaje grandes",
           "slug": "recovering-from-privacy-preserving-masking-with-large-language-models",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-25T03:38:26+01:00",
-          "description": "Explora el poder de los Modelos de Lenguaje Grande (LLM) en la interaccion con APIs con nuestro resumen de 'Tool LLM'",
+          "description": "Comentario y calificacion abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -4856,17 +4866,16 @@
           "id": "198277239",
           "topics": [
             "LLM",
-            "Agentes",
-            "Juegos"
+            "Chat"
           ],
-          "title": "MindAgent: Interaccion Emergente en Juegos",
+          "title": "S3-DST: Segmentación de Diálogos de Dominio Abierto Estructurada y Seguimiento del Estado en la Era de los LLMs",
           "slug": "s3-dst-structured-open-domain-dialogue-segmentation-and-state-tracking-in-the-era",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-25T03:38:11+01:00",
-          "description": "Comentario y Calificacion Abstractos",
+          "description": "Comentario y Calificación del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -4890,14 +4899,14 @@
             "LLM",
             "Chat"
           ],
-          "title": "Investigating Answerability of LLMs for Long-Form Question Answering",
+          "title": "Investigando la capacidad de respuesta de los LLM para responder preguntas de forma extendida",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T07:18:31+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y calificación del resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -4919,17 +4928,17 @@
           "id": "189777823",
           "topics": [
             "LLM",
-            "Code",
+            "Código",
             "Chat"
           ],
-          "title": "SoTaNa: The Open-Source Software Development Assistant",
+          "title": "SoTaNa: El Asistente para el Desarrollo de Software de Código Abierto",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T06:20:32+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificación Abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692933540-researchpaper10.png"
           },
@@ -4952,16 +4961,16 @@
           "topics": [
             "LLM",
             "Chat",
-            "Data"
+            "Datos"
           ],
-          "title": "PIPPA: A Partially Synthetic Conversational Dataset",
+          "title": "PIPPA: Un Conjunto de Datos Conversacional Parcialmente Sintetico",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:48:00+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificacion del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -4989,10 +4998,9 @@
           "id": "198277253",
           "topics": [
             "LLM",
-            "Inducción",
-            "Resumen"
+            "Audio"
           ],
-          "title": "De disperso a denso: Resumen de GPT-4 con Cadena de Inducción de Densidad",
+          "title": "Ampliando texto para la comprensión del lenguaje hablado con Modelos de Lenguaje Grande",
           "slug": "augmenting-text-for-spoken-language-understanding-with-large-language-models",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
@@ -5020,11 +5028,10 @@
         {
           "id": "197845061",
           "topics": [
-            "LLM",
-            "Inducción",
-            "Resumen"
+            "Audio",
+            "Multimodal"
           ],
-          "title": "DrugChat: Hacia la Habilitación de Capacidades Similares a ChatGPT en Grafos de Moléculas de Drogas",
+          "title": "Supervisión del Lenguaje Natural para Representaciones de Audio de Propósito General",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
@@ -5052,18 +5059,19 @@
         {
           "id": "189777849",
           "topics": [
-            "LLM",
-            "Atencion sanitaria",
-            "Resumen"
+            "Audio",
+            "MLM",
+            "Multimodal",
+            "Multilingüe"
           ],
-          "title": "Resumen de Texto Clinico: Adaptar Modelos de Lenguaje Grandes Puede Superar a los Expertos Humanos",
+          "title": "Mejorando las Representaciones Conjuntas de Texto-Habla Sin Alineación",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:49:52+01:00",
-          "description": "Comentario y Calificacion del Resumen",
+          "description": "Comentario y Calificación Abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -5090,19 +5098,17 @@
         {
           "id": "198277277",
           "topics": [
-            "LLM",
-            "Ajuste fino",
-            "LORA",
-            "Datos"
+            "MLL",
+            "Compresión"
           ],
-          "title": "Platypus: Rapido, Economico y Potente Refinamiento de LLMs",
+          "title": "La modelación de lenguaje es compresión",
           "slug": "language-modeling-is-compression",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-25T03:37:32+01:00",
-          "description": "Comentario y Calificacion del Resumen",
+          "description": "Comentario y calificación abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -5123,17 +5129,18 @@
         {
           "id": "189845558",
           "topics": [
-            "Imagen",
-            "LORA"
+            "LLM",
+            "Compresión",
+            "Encuesta"
           ],
-          "title": "StyleAdapter: Un Modelo de Una Sola Pasada Sin LoRA para la Generacion de Imagenes Estilizadas",
+          "title": "Una encuesta sobre la compresión de modelos para modelos de lenguaje grandes",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:37:01+01:00",
-          "description": "Comentario y Calificacion del Resumen",
+          "description": "Comentario y calificación abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -5160,18 +5167,17 @@
         {
           "id": "198277360",
           "topics": [
-            "Imagen",
-            "Seguridad",
-            "Difusion"
+            "LLM",
+            "RLHF"
           ],
-          "title": "FLIRT: Retroalimentacion en Contexto de Equipos Rojos",
+          "title": "Estabilizando RLHF mediante el Modelo de Ventaja y Ensayo Selectivo",
           "slug": "stabilizing-rlhf-through-advantage-model-and-selective-rehearsal",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-24T05:22:15+01:00",
-          "description": "Comentario y Calificacion Abstractos",
+          "description": "Comentario y Calificacion del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -5192,18 +5198,18 @@
         {
           "id": "197990654",
           "topics": [
-            "LLM",
-            "RLHF",
-            "Reinforcement Learning"
+            "MLL",
+            "FRHL",
+            "Aprendizaje por Refuerzo"
           ],
-          "title": "Statistical Rejection Sampling Improves Preference Optimization",
+          "title": "El Muestreo de Rechazo Estadístico Mejora la Optimización de Preferencias",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T06:41:10+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificación Abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -5227,14 +5233,14 @@
             "LLM",
             "RLHF"
           ],
-          "title": "Efficient RLHF: Reducing the Memory Usage of PPO",
+          "title": "RLHF Eficiente: Reduciendo el Uso de Memoria de PPO",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T02:03:03+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificacion del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -5290,14 +5296,14 @@
             "LLM",
             "RLHF"
           ],
-          "title": "RLAIF: Scaling Reinforcement Learning from Human Feedback with AI Feedback",
+          "title": "RLAIF: Escalando el Aprendizaje por Refuerzo desde Retroalimentacion Humana con Retroalimentacion de IA",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:33:54+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificacion Abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -5324,10 +5330,10 @@
         {
           "id": "198277446",
           "topics": [
-            "Modelos de Lenguaje Grande",
-            "Datos Estructurados"
+            "LLM",
+            "Alucinación"
           ],
-          "title": "Struc-Bench: ¿Son realmente buenos los Modelos de Lenguaje Grande en generar Datos Estructurados Complejos?",
+          "title": "La Cadena de Verificación Reduce la Alucinación en Modelos de Lenguaje Grande",
           "slug": "chain-of-verification-reduces-hallucination-in-large-language-models",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
@@ -5355,19 +5361,19 @@
         {
           "id": "198277458",
           "topics": [
-            "Modelo de lenguaje de gran escala",
-            "Alucinacion",
+            "LLM",
+            "Alucinación",
             "Entidad",
-            "Datos estructurados"
+            "Datos Estructurados"
           ],
-          "title": "LMDX: Extraccion y localizacion de informacion de documentos basada en modelos de lenguaje",
+          "title": "LMDX: Extracción y Localización de Información de Documentos basada en Modelos de Lenguaje",
           "slug": "lmdx-language-model-based-document-information-extraction-and-localization",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-24T05:20:31+01:00",
-          "description": "Comentario y calificacion abstractos",
+          "description": "Comentario y Calificación del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -5394,17 +5400,19 @@
         {
           "id": "198277458",
           "topics": [
-            "LLM",
-            "RLHF"
+            "MLL",
+            "Alucinacion",
+            "Entidad",
+            "Datos Estructurados"
           ],
-          "title": "RLHF Eficiente: Reduciendo el Uso de Memoria de PPO",
+          "title": "LMDX: Extraccion y Localizacion de Informacion de Documentos basada en Modelos de Lenguaje",
           "slug": "lmdx-language-model-based-document-information-extraction-and-localization",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-24T05:20:31+01:00",
-          "description": "Comentario y Calificación del Resumen",
+          "description": "Comentario y Calificacion del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -5426,16 +5434,17 @@
           "id": "198044900",
           "topics": [
             "LLM",
-            "RLHF"
+            "Entidad",
+            "Ajuste fino"
           ],
-          "title": "Estabilizando RLHF a traves del Modelo de Ventaja y Ensayo Selectivo",
+          "title": "Aprovechando la Informacion Contextual para la Deteccion Eficaz de la Relevancia de Entidades",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T07:30:50+01:00",
-          "description": "Comentario y Calificacion del Resumen",
+          "description": "Comentario y Calificacion Abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -5463,16 +5472,16 @@
           "id": "198277209",
           "topics": [
             "LLM",
-            "Personalizacion"
+            "Datos"
           ],
-          "title": "Ensenar a los LLM a personalizar -- Un enfoque inspirado en la educacion de escritura",
+          "title": "SlimPajama-DC: Entendiendo las Combinaciones de Datos para el Entrenamiento de LLM",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T23:43:32+01:00",
-          "description": "Comentario y calificacion abstractos",
+          "description": "Comentario y Calificación del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -5494,17 +5503,17 @@
           "id": "198277099",
           "topics": [
             "LLM",
-            "Multilingual",
-            "Data"
+            "Multilingüe",
+            "Datos"
           ],
-          "title": "CulturaX: A Cleaned, Enormous, and Multilingual Dataset for Large Language Models in 167 Languages",
+          "title": "CulturaX: Un Conjunto de Datos Enorme, Limpio y Multilingüe para Modelos de Lenguaje Grande en 167 Idiomas",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T22:14:53+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificación del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -5526,17 +5535,17 @@
           "id": "198044929",
           "topics": [
             "LLM",
-            "Data",
-            "Agents"
+            "Datos",
+            "Agentes"
           ],
-          "title": "A Data Source for Reasoning Embodied Agents",
+          "title": "Una fuente de datos para agentes corporizados razonadores",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T07:33:25+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y calificación abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -5558,16 +5567,16 @@
           "id": "197813719",
           "topics": [
             "LLM",
-            "Data"
+            "Datos"
           ],
-          "title": "When Less is More: Investigating Data Pruning for Pretraining LLMs at Scale",
+          "title": "Cuando Menos es Más: Investigando la Poda de Datos para el Preentrenamiento de LLMs a Gran Escala",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T17:59:21+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificación del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -5589,18 +5598,18 @@
           "id": "189787086",
           "topics": [
             "LLM",
-            "Fine-tuning",
+            "Ajuste fino",
             "LORA",
-            "Data"
+            "Datos"
           ],
-          "title": "Platypus: Quick, Cheap, and Powerful Refinement of LLMs",
+          "title": "Platypus: Rapido, Barato y Potente Refinamiento de LLMs",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:51:43+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificacion del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -5623,16 +5632,16 @@
           "topics": [
             "LLM",
             "Chat",
-            "Data"
+            "Datos"
           ],
-          "title": "PIPPA: A Partially Synthetic Conversational Dataset",
+          "title": "PIPPA: Un Conjunto de Datos Conversacional Parcialmente Sintético",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:48:00+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificación del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -5654,17 +5663,17 @@
           "id": "189576084",
           "topics": [
             "LLM",
-            "Data",
-            "Training"
+            "Datos",
+            "Entrenamiento"
           ],
-          "title": "Shepherd: A Critic for Language Model Generation",
+          "title": "Pastor: Un Critico para la Generacion de Modelos de Lenguaje",
           "slug": "shepherd-a-critic-for-language-model-generation",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T04:45:24+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario Abstracto y Calificacion",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -5691,18 +5700,17 @@
         {
           "id": "198277109",
           "topics": [
-            "MLG",
-            "Privacidad",
-            "Borde"
+            "Modelos de lenguaje a gran escala",
+            "Razonamiento"
           ],
-          "title": "Recuperacion de la enmascaracion que preserva la privacidad con grandes modelos de lenguaje",
+          "title": "La decodificacion contrastiva mejora el razonamiento en modelos de lenguaje a gran escala",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T22:18:11+01:00",
-          "description": "Comentario y calificacion abstractos",
+          "description": "Comentario y calificacion del resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -5724,17 +5732,17 @@
           "id": "189849326",
           "topics": [
             "LLM",
-            "Prompting",
-            "Reasoning"
+            "Inducción",
+            "Razonamiento"
           ],
-          "title": "Graph of Thoughts: Solving Elaborate Problems with Large Language Models",
+          "title": "Gráfico de Pensamientos: Resolviendo Problemas Elaborados con Modelos de Lenguaje Grande",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:42:47+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificación Abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -5762,10 +5770,10 @@
           "id": "198044879",
           "topics": [
             "LLM",
-            "Evaluacion",
-            "Clima"
+            "Transformadores",
+            "Interpretabilidad"
           ],
-          "title": "WeatherBench 2: Un punto de referencia para la proxima generacion de modelos globales de clima basados en datos",
+          "title": "Los Autoencoders Dispersos Encuentran Caracteristicas Altamente Interpretativas en Modelos de Lenguaje",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
@@ -5799,17 +5807,18 @@
         {
           "id": "198044746",
           "topics": [
-            "LLM",
-            "Matemáticas"
+            "Modelos de lenguaje de gran escala",
+            "Transformadores",
+            "Entrenamiento"
           ],
-          "title": "GPT puede resolver problemas matemáticos sin una calculadora",
+          "title": "Leyes de Escalabilidad para Modelos Fundacionales Conectados de Manera Escasa",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T07:09:44+01:00",
-          "description": "Comentario y calificación abstractos",
+          "description": "Comentario y Calificación del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -5831,17 +5840,17 @@
           "id": "189845521",
           "topics": [
             "LLM",
-            "Matemáticas",
-            "Ciencia"
+            "Entrenamiento",
+            "Alineación"
           ],
-          "title": "Modelo de Lenguaje Grande para Ciencia: Un Estudio sobre P vs. NP",
+          "title": "De los datos de preentrenamiento a los modelos de lenguaje hasta las tareas secundarias: Rastreando las huellas de sesgos políticos que conducen a modelos de PNL injustos",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:36:14+01:00",
-          "description": "Comentario y Calificación del Resumen",
+          "description": "Comentario y calificación abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -5863,17 +5872,17 @@
           "id": "189576084",
           "topics": [
             "LLM",
-            "Data",
-            "Training"
+            "Datos",
+            "Entrenamiento"
           ],
-          "title": "Shepherd: A Critic for Language Model Generation",
+          "title": "Pastor: Un Critico para la Generacion de Modelos de Lenguaje",
           "slug": "shepherd-a-critic-for-language-model-generation",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T04:45:24+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario Abstracto y Calificacion",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -5901,16 +5910,16 @@
           "id": "197990754",
           "topics": [
             "LLM",
-            "Legal"
+            "Aprendizaje en contexto"
           ],
-          "title": "Modelos de Lenguaje SILO: Aislamiento del Riesgo Legal en un Almacén de Datos No Paramétrico",
+          "title": "Aprendizaje en contexto consciente de la ambigüedad con modelos de lenguaje grandes",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T06:59:38+01:00",
-          "description": "Comentario y Calificación Abstractos",
+          "description": "Comentario y calificación abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -5932,19 +5941,17 @@
           "id": "197817281",
           "topics": [
             "LLM",
-            "Finanzas",
-            "Atencion sanitaria",
-            "Legal",
-            "Indicaciones"
+            "Aprendizaje en contexto",
+            "Ajuste fino"
           ],
-          "title": "Adaptacion de Modelos de Lenguaje Grande mediante Comprension de Lectura",
+          "title": "FIAT: Fusionando paradigmas de aprendizaje con Ajuste Acelerado por Instrucción",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T18:07:58+01:00",
-          "description": "Comentario y Calificacion del Resumen",
+          "description": "Comentario y Calificación del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -5965,18 +5972,18 @@
         {
           "id": "189787148",
           "topics": [
-            "Retrieval",
+            "Recuperación",
             "LLM",
-            "In-Context Learning"
+            "Aprendizaje en Contexto"
           ],
-          "title": "RAVEN: In-Context Learning with Retrieval Augmented Encoder-Decoder Language Models",
+          "title": "RAVEN: Aprendizaje en Contexto con Modelos de Lenguaje Codificador-Decodificador Mejorados por Recuperación",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:57:31+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificación del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -5998,16 +6005,16 @@
           "id": "189777847",
           "topics": [
             "LLM",
-            "In-Context Learning"
+            "Aprendizaje en contexto"
           ],
-          "title": "CausalLM is not optimal for in-context learning",
+          "title": "CausalLM no es óptimo para el aprendizaje en contexto",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:52:46+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificación Abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -6034,18 +6041,18 @@
         {
           "id": "197842432",
           "topics": [
-            "MLL",
-            "Transformadores",
-            "Interpretabilidad"
+            "MLM",
+            "Evaluacion",
+            "Multilingue"
           ],
-          "title": "Los Autoencoders Dispersos Encuentran Caracteristicas Altamente Interpretativas en Modelos de Lenguaje",
+          "title": "Los evaluadores basados en modelos de lenguaje grande, ¿son la solucion para escalar la evaluacion multilingue?",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T06:56:13+01:00",
-          "description": "Comentario y Calificacion del Resumen",
+          "description": "Comentario y calificacion del resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -6067,17 +6074,17 @@
           "id": "189787170",
           "topics": [
             "LLM",
-            "Multilingual",
-            "Evaluation"
+            "Multilingüe",
+            "Evaluación"
           ],
-          "title": "The Belebele Benchmark: a Parallel Reading Comprehension Dataset in 122 Language Variants",
+          "title": "El Benchmark Belebele: un Conjunto de Datos de Comprensión de Lectura Paralela en 122 Variantes de Idioma",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T06:25:24+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificación del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692933540-researchpaper10.png"
           },
@@ -6099,17 +6106,17 @@
           "id": "189787190",
           "topics": [
             "LLM",
-            "Evaluation",
-            "Climate"
+            "Evaluación",
+            "Clima"
           ],
-          "title": "WeatherBench 2: A benchmark for the next generation of data-driven global weather models",
+          "title": "WeatherBench 2: Un punto de referencia para la próxima generación de modelos globales de clima basados en datos",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T06:22:58+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificación Abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -6169,17 +6176,18 @@
         {
           "id": "197990687",
           "topics": [
-            "MLL",
-            "Alineamiento"
+            "LLM",
+            "Atención médica",
+            "Resumen"
           ],
-          "title": "Datos sinteticos simples reducen la adulacion en modelos de lenguaje grandes",
+          "title": "Resumen de Texto Clínico: Adaptar Modelos de Lenguaje Grandes Puede Superar a los Expertos Humanos",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T06:50:58+01:00",
-          "description": "Comentario y Calificacion Abstractos",
+          "description": "Comentario y Calificación del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692933540-researchpaper10.png"
           },
@@ -6201,11 +6209,10 @@
           "id": "197621737",
           "topics": [
             "LLM",
-            "Alineación",
-            "Encuesta",
-            "Evaluación"
+            "Inducción",
+            "Resumen"
           ],
-          "title": "LLMs confiables: una Encuesta y Guía para Evaluar la Alineación de Modelos de Lenguaje Grandes",
+          "title": "DrugChat: Hacia la Habilitación de Capacidades Similares a ChatGPT en Grafos de Moléculas de Drogas",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
@@ -6233,11 +6240,11 @@
         {
           "id": "197621634",
           "topics": [
-            "MLL",
-            "Entrenamiento",
-            "Alineación"
+            "LLM",
+            "Inducción",
+            "Resumen"
           ],
-          "title": "De los datos de preentrenamiento a los modelos de lenguaje hasta las tareas secundarias: Rastreando las huellas de sesgos políticos que conducen a modelos de PNL injustos",
+          "title": "De disperso a denso: Resumen de GPT-4 con cadena de inducción de densidad",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
@@ -6271,10 +6278,11 @@
         {
           "id": "197990654",
           "topics": [
-            "MLG",
-            "Alucinacion"
+            "MLL",
+            "FRHL",
+            "Aprendizaje por Refuerzo"
           ],
-          "title": "Cadena de Verificacion Reduce la Alucinacion en Modelos de Lenguaje Grande",
+          "title": "El Muestreo de Rechazo Estadistico Mejora la Optimizacion de Preferencias",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
@@ -6308,11 +6316,10 @@
         {
           "id": "197859672",
           "topics": [
-            "MLL",
-            "Código",
-            "Ajuste de Instrucciones"
+            "LLM",
+            "Código"
           ],
-          "title": "OctoPack: Código de Ajuste de Instrucciones para Modelos de Lenguaje de Gran Escala",
+          "title": "Modelos de Lenguaje Grande para Optimización de Compiladores",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
@@ -6341,17 +6348,16 @@
           "id": "189787126",
           "topics": [
             "LLM",
-            "Código Abierto",
-            "Ajuste de Instrucciones"
+            "Código"
           ],
-          "title": "Informe Técnico XGen-7B",
+          "title": "LLM como DBA",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:35:41+01:00",
-          "description": "Comentario y Calificación del Resumen",
+          "description": "Comentario abstracto y calificación",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -6373,16 +6379,17 @@
           "id": "189787194",
           "topics": [
             "LLM",
-            "Ajuste de Instrucciones"
+            "Código",
+            "Atención médica"
           ],
-          "title": "Alineacion Automatica con Retrotraduccion de Instrucciones",
+          "title": "BioCoder: Un Referente para la Generación de Código en Bioinformática con Conocimiento Pragmático Contextual",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T06:26:08+01:00",
-          "description": "Comentario y Calificacion del Resumen",
+          "description": "Comentario y Calificación Abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -6404,16 +6411,17 @@
           "id": "189787192",
           "topics": [
             "LLM",
+            "Codigo",
             "Ajuste de Instrucciones"
           ],
-          "title": "Alineación Propia con Retrotraducción de Instrucciones",
+          "title": "¿Pueden los Lenguajes de Programacion Potenciarse Mutuamente mediante el Ajuste de Instrucciones?",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T06:24:29+01:00",
-          "description": "Comentario y Calificación del Resumen",
+          "description": "Comentario y Calificacion Abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -6435,17 +6443,17 @@
           "id": "189777823",
           "topics": [
             "LLM",
-            "Ajuste de Instrucciones",
-            "Salud"
+            "Codigo",
+            "Chat"
           ],
-          "title": "MedAlign: Un Conjunto de Datos Generado por Clinicos para el Seguimiento de Instrucciones con Registros Medicos Electronicos",
+          "title": "SoTaNa: El Asistente para el Desarrollo de Software de Codigo Abierto",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T06:20:32+01:00",
-          "description": "Comentario y Calificacion del Resumen",
+          "description": "Comentario y Calificacion Abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692933540-researchpaper10.png"
           },
@@ -6467,17 +6475,17 @@
           "id": "189787144",
           "topics": [
             "LLM",
-            "Ajuste de Instrucciones",
-            "Multimodal"
+            "Código",
+            "Indicaciones"
           ],
-          "title": "Un Estudio Empirico sobre la Escalabilidad de Modelos Multimodales Grandes con Ajuste de Instrucciones",
+          "title": "Resolviendo Problemas Difíciles de Matemáticas Usando el Intérprete de Código GPT-4 con Auto-Verificación Basada en Código",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:56:26+01:00",
-          "description": "Comentario y Calificacion del Resumen",
+          "description": "Comentario y Calificación Abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -6499,17 +6507,17 @@
           "id": "189777877",
           "topics": [
             "LLM",
-            "Codigo",
+            "Código",
             "Ajuste de Instrucciones"
           ],
-          "title": "¿Pueden los Lenguajes de Programacion Potenciarse Mutuamente mediante el Ajuste de Instrucciones?",
+          "title": "OctoPack: Código de Ajuste de Instrucciones para Modelos de Lenguaje de Gran Escala",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:50:56+01:00",
-          "description": "Comentario y Calificacion Abstractos",
+          "description": "Comentario y Calificación Abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -6531,16 +6539,16 @@
           "id": "189777872",
           "topics": [
             "LLM",
-            "Code"
+            "Codigo"
           ],
-          "title": "Enhancing Network Management Using Code Generated by Large Language Models",
+          "title": "Mejorando la Gestion de Redes Usando Codigo Generado por Modelos de Lenguaje Grande",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:50:28+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificacion Abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -6568,17 +6576,16 @@
           "id": "197840057",
           "topics": [
             "LLM",
-            "Matemáticas",
             "Ciencia"
           ],
-          "title": "Modelo de Lenguaje Grande para Ciencia: Un Estudio sobre P vs. NP",
+          "title": "AstroLLaMA: Hacia Modelos de Fundacion Especializados en Astronomia",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T19:21:13+01:00",
-          "description": "Comentario y Calificación del Resumen",
+          "description": "Comentario y Calificacion del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -6599,10 +6606,11 @@
         {
           "id": "197838596",
           "topics": [
-            "Difusión",
+            "LLM",
+            "Matemáticas",
             "Ciencia"
           ],
-          "title": "PDE-Refiner: Logrando Despliegues Largos Precisos con Solucionadores de EDP Neurales",
+          "title": "Modelo de Lenguaje Grande para Ciencia: Un Estudio sobre P vs. NP",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
@@ -6630,17 +6638,17 @@
         {
           "id": "189577812",
           "topics": [
-            "LLM",
+            "Difusión",
             "Ciencia"
           ],
-          "title": "AstroLLaMA: Hacia Modelos de Fundacion Especializados en Astronomia",
+          "title": "PDE-Refiner: Logrando Despliegues Largos Precisos con Solucionadores de EDP Neurales",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:46:35+01:00",
-          "description": "Comentario y Calificacion del Resumen",
+          "description": "Comentario y Calificación del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -6667,18 +6675,18 @@
         {
           "id": "197838596",
           "topics": [
-            "MLL",
-            "FRHL",
-            "Aprendizaje por Refuerzo"
+            "LLM",
+            "Matemáticas",
+            "Ciencia"
           ],
-          "title": "El Muestreo de Rechazo Estadistico Mejora la Optimizacion de Preferencias",
+          "title": "Modelo de Lenguaje Grande para Ciencia: Un Estudio sobre P vs. NP",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T19:17:15+01:00",
-          "description": "Comentario y Calificacion del Resumen",
+          "description": "Comentario y Calificación del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -6700,16 +6708,16 @@
           "id": "197621439",
           "topics": [
             "LLM",
-            "Math"
+            "Matematicas"
           ],
-          "title": "GPT Can Solve Mathematical Problems Without a Calculator",
+          "title": "GPT puede resolver problemas matematicos sin una calculadora",
           "slug": "transformer-models-an-introduction-and-catalog",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T08:39:23+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y calificacion abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692937594-researchpaper7.png"
           },
@@ -6737,17 +6745,16 @@
           "id": "197810544",
           "topics": [
             "LLM",
-            "Evaluación",
-            "Clima"
+            "Código Abierto"
           ],
-          "title": "WeatherBench 2: Un punto de referencia para la próxima generación de modelos globales de clima basados en datos",
+          "title": "Los libros de texto son todo lo que necesitas II: informe técnico phi-1.5",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T17:52:36+01:00",
-          "description": "Comentario y Calificación del Resumen",
+          "description": "Comentario y calificación del resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -6769,17 +6776,17 @@
           "id": "197621519",
           "topics": [
             "LLM",
-            "Open Source",
-            "Instruction Tuning"
+            "Código Abierto",
+            "Ajuste de Instrucciones"
           ],
-          "title": "XGen-7B Technical Report",
+          "title": "Informe Técnico XGen-7B",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T08:46:34+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificación del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692933540-researchpaper10.png"
           },
@@ -6806,10 +6813,10 @@
         {
           "id": "197613987",
           "topics": [
-            "MLM",
-            "Multilingue"
+            "Imagen",
+            "LORA"
           ],
-          "title": "Baichuan 2: Modelos de Lenguaje a Gran Escala Abiertos",
+          "title": "StyleAdapter: Un Modelo de Una Sola Pasada Sin LoRA para la Generacion de Imagenes Estilizadas",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
@@ -6837,18 +6844,18 @@
         {
           "id": "189576077",
           "topics": [
-            "LLM",
-            "Multilingue",
-            "Datos"
+            "Imagen",
+            "Seguridad",
+            "Difusion"
           ],
-          "title": "CulturaX: Un Conjunto de Datos Enorme, Limpio y Multilingue para Modelos de Lenguaje Grande en 167 Idiomas",
+          "title": "FLIRT: Retroalimentacion en Contexto de Equipos Rojos",
           "slug": "flirt-feedback-loop-in-context-red-teaming",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T04:42:55+01:00",
-          "description": "Comentario y Calificacion del Resumen",
+          "description": "Comentario y Calificacion Abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692933540-researchpaper10.png"
           },
@@ -6875,17 +6882,17 @@
         {
           "id": "197613987",
           "topics": [
-            "Audio",
-            "Multimodal"
+            "Imagen",
+            "LORA"
           ],
-          "title": "Supervisión del Lenguaje Natural para Representaciones de Audio de Propósito General",
+          "title": "StyleAdapter: Un Modelo de Una Sola Pasada Sin LoRA para la Generacion de Imagenes Estilizadas",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T02:06:42+01:00",
-          "description": "Comentario y Calificación del Resumen",
+          "description": "Comentario y Calificacion del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -6907,16 +6914,17 @@
           "id": "180927998",
           "topics": [
             "LLM",
-            "Audio"
+            "Comentario",
+            "LORA"
           ],
-          "title": "Ampliando texto para la comprensión del lenguaje hablado con Modelos de Lenguaje Grande",
+          "title": "LoraHub: Generalizacion eficiente entre tareas mediante la composicion dinamica de LoRA [Comentario]",
           "slug": "lorahub-efficient-cross-task-generalization-via-dynamic-lora-composition-commenta",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:46:29+01:00",
-          "description": "Comentario y Calificación Abstractos",
+          "description": "Explora la composicion dinamica de modulos LoRA con LoraHub para un rendimiento adaptable de LLM. Profundiza en enunciados de problemas, metodologia, evaluacion y mas.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690946901-abr8-img1.png"
           },
@@ -6937,19 +6945,19 @@
         {
           "id": "189787086",
           "topics": [
-            "Audio",
             "LLM",
-            "Multimodal",
-            "Multilingüe"
+            "Ajuste fino",
+            "LORA",
+            "Datos"
           ],
-          "title": "Mejorando las Representaciones Conjuntas de Texto y Voz Sin Alineación",
+          "title": "Platypus: Rapido, Economico y Potente Refinamiento de LLMs",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:51:43+01:00",
-          "description": "Comentario y Calificación Abstractos",
+          "description": "Comentario y Calificacion del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -6978,9 +6986,9 @@
           "topics": [
             "LLM",
             "Agentes",
-            "Juegos"
+            "Herramientas"
           ],
-          "title": "MindAgent: Interaccion Emergente en Juegos",
+          "title": "ModelScope-Agent: Construyendo tu Sistema de Agentes Personalizable con Modelos de Lenguaje Grande de Codigo Abierto",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
@@ -7009,17 +7017,17 @@
           "id": "180928004",
           "topics": [
             "LLM",
-            "Datos",
-            "Agentes"
+            "Herramientas",
+            "Comentario"
           ],
-          "title": "Una fuente de datos para agentes corporizados razonadores",
+          "title": "ToolLLM: Facilitando a los Modelos de Lenguaje Grande Dominar más de 16000 APIs del Mundo Real [Comentario]",
           "slug": "toolllm-facilitating-large-language-models-to-master-16000-real-world-apis-commen",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:46:02+01:00",
-          "description": "Comentario y calificacion abstractos",
+          "description": "Explora el poder de los Modelos de Lenguaje Grande (LLMs) en la interacción con APIs con nuestro resumen de 'Tool LLM'",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690949823-screenshot-2023-08-02-at-12-14-28-am.png"
           },
@@ -7041,16 +7049,16 @@
           "id": "189989705",
           "topics": [
             "LLM",
-            "Agentes"
+            "Herramientas"
           ],
-          "title": "Agentes: Un Marco de Código Abierto para Agentes Autónomos de Lenguaje",
+          "title": "FacTool: Detección de la Factualidad en IA Generativa -- Un Marco Potenciado por Herramientas para Escenarios Multi-Tarea y Multi-Dominio",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:44:04+01:00",
-          "description": "Comentario y Calificación Abstractos",
+          "description": "Comentario y Calificación del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -7078,18 +7086,17 @@
           "id": "180403467",
           "topics": [
             "LLM",
-            "Ajuste fino",
-            "LORA",
-            "Datos"
+            "RLHF",
+            "Resumen"
           ],
-          "title": "Platypus: Rapido, Economico y Potente Refinamiento de LLMs",
+          "title": "Problemas Abiertos y Limitaciones Fundamentales del Aprendizaje por Refuerzo a partir de Retroalimentacion Humana [Resumen]",
           "slug": "open-problems-and-fundamental-limitations-of-reinforcement-learning-from-human-fe",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:49:23+01:00",
-          "description": "Comentario y Calificacion del Resumen",
+          "description": "Descubra los desafios, limitaciones y futuro del Aprendizaje por Refuerzo a partir de Retroalimentacion Humana (RLHF) en sistemas de IA. Explore la gobernanza, seguridad y mas.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690837480-abr6-img1.png"
           },
@@ -7111,17 +7118,16 @@
           "id": "180869081",
           "topics": [
             "LLM",
-            "Aprendizaje en contexto",
-            "Ajuste fino"
+            "Resumen"
           ],
-          "title": "FIAT: Fusionando paradigmas de aprendizaje con Ajuste Acelerado por Instrucción",
+          "title": "Llama 2: Fundación Abierta y Modelos de Chat Ajustados [Comentario]",
           "slug": "llama-2-open-foundation-and-fine-tuned-chat-models-commentary",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:48:17+01:00",
-          "description": "Comentario y Calificación del Resumen",
+          "description": "Inmersión profunda en Llama 2: Explora el preentrenamiento, ajuste fino, medidas de seguridad y discusiones perspicaces en nuestro resumen exhaustivo.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690935728-abr7-img1.png"
           },
@@ -7143,17 +7149,16 @@
           "id": "179737945",
           "topics": [
             "LLM",
-            "Entidad",
-            "Ajuste fino"
+            "Resumen"
           ],
-          "title": "Aprovechando la Informacion Contextual para la Deteccion Eficaz de la Relevancia de Entidades",
+          "title": "Desafíos y Aplicaciones de Modelos de Lenguaje de Gran Escala [Resumen]",
           "slug": "challenges-and-applications-of-large-language-models-summary",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:47:49+01:00",
-          "description": "Comentario y Calificacion del Resumen",
+          "description": "Explora nuestro resumen y las principales conclusiones del 'Desafíos y Aplicaciones de Modelos de Lenguaje de Gran Escala', un artículo de investigación que profundiza en el potencial, los desafíos y las aplicaciones de los LLMs.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690575713-abr-img1.png"
           },
@@ -7181,16 +7186,17 @@
           "id": "180927998",
           "topics": [
             "LLM",
-            "Código Abierto"
+            "Comentario",
+            "LORA"
           ],
-          "title": "Los libros de texto son todo lo que necesitas II: informe técnico phi-1.5",
+          "title": "LoraHub: Generalización eficiente entre tareas mediante la composición dinámica de LoRA [Comentario]",
           "slug": "lorahub-efficient-cross-task-generalization-via-dynamic-lora-composition-commenta",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:46:29+01:00",
-          "description": "Comentario y calificación del resumen",
+          "description": "Explora la composición dinámica de módulos LoRA con LoraHub para un rendimiento adaptable de LLM. Profundiza en los planteamientos de problemas, metodología, evaluación y más.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690946901-abr8-img1.png"
           },
@@ -7212,17 +7218,17 @@
           "id": "180928004",
           "topics": [
             "LLM",
-            "Código Abierto",
-            "Ajuste de Instrucciones"
+            "Herramientas",
+            "Comentario"
           ],
-          "title": "Informe Técnico XGen-7B",
+          "title": "ToolLLM: Facilitando a los Modelos de Lenguaje Grande para Dominar más de 16000 APIs del Mundo Real [Comentario]",
           "slug": "toolllm-facilitating-large-language-models-to-master-16000-real-world-apis-commen",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:46:02+01:00",
-          "description": "Comentario y Calificación del Resumen",
+          "description": "Explora el poder de los Modelos de Lenguaje Grande (LLM) en la interacción con APIs con nuestro resumen de 'Tool LLM'",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690949823-screenshot-2023-08-02-at-12-14-28-am.png"
           },
@@ -7250,19 +7256,17 @@
           "id": "189845558",
           "topics": [
             "LLM",
-            "Finanzas",
-            "Atencion medica",
-            "Legal",
-            "Indicaciones"
+            "Compresión",
+            "Encuesta"
           ],
-          "title": "Adaptacion de Modelos de Lenguaje Grande mediante Comprension de Lectura",
+          "title": "Una encuesta sobre la compresión de modelos para modelos de lenguaje grandes",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:37:01+01:00",
-          "description": "Comentario y Calificacion del Resumen",
+          "description": "Comentario y calificación abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -7284,18 +7288,18 @@
           "id": "189577629",
           "topics": [
             "LLM",
-            "Alignment",
-            "Survey",
-            "Evaluation"
+            "Alineación",
+            "Encuesta",
+            "Evaluación"
           ],
-          "title": "Trustworthy LLMs: a Survey and Guideline for Evaluating Large Language Models' Alignment",
+          "title": "LLMs confiables: una Encuesta y Guía para Evaluar la Alineación de Modelos de Lenguaje Grande",
           "slug": "trustworthy-llms-a-survey-and-guideline-for-evaluating-large-language-models-alig",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:45:28+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y Calificación del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -7323,16 +7327,17 @@
           "id": "189845521",
           "topics": [
             "LLM",
-            "Compresion"
+            "Entrenamiento",
+            "Alineación"
           ],
-          "title": "El modelado de lenguaje es compresion",
+          "title": "De los Datos de Preentrenamiento a los Modelos de Lenguaje hasta las Tareas Subsecuentes: Rastreando las Huellas de Sesgos Políticos que Conducen a Modelos de PNL Injustos",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:36:14+01:00",
-          "description": "Comentario y calificacion abstractos",
+          "description": "Comentario y Calificación del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -7354,17 +7359,18 @@
           "id": "189577629",
           "topics": [
             "LLM",
-            "Compresión",
-            "Encuesta"
+            "Alineación",
+            "Encuesta",
+            "Evaluación"
           ],
-          "title": "Una encuesta sobre la compresión de modelos para modelos de lenguaje grandes",
+          "title": "LLMs Confiables: una Encuesta y Guía para Evaluar la Alineación de Modelos de Lenguaje Grande",
           "slug": "trustworthy-llms-a-survey-and-guideline-for-evaluating-large-language-models-alig",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:45:28+01:00",
-          "description": "Comentario y calificación del resumen",
+          "description": "Comentario y Calificación del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -7386,16 +7392,16 @@
           "id": "189576058",
           "topics": [
             "LLM",
-            "Alignment"
+            "Alineamiento"
           ],
-          "title": "Simple synthetic data reduces sycophancy in large language models",
+          "title": "Datos sintéticos simples reducen la adulación en modelos de lenguaje grandes",
           "slug": "simple-synthetic-data-reduces-sycophancy-in-large-language-models",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T04:41:07+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario y calificación abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -7423,17 +7429,17 @@
           "id": "189787190",
           "topics": [
             "LLM",
-            "Compresión",
-            "Encuesta"
+            "Evaluacion",
+            "Clima"
           ],
-          "title": "Una encuesta sobre la compresión de modelos para modelos de lenguaje grandes",
+          "title": "WeatherBench 2: Un punto de referencia para la proxima generacion de modelos globales de clima basados en datos",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T06:22:58+01:00",
-          "description": "Comentario y calificación abstractos",
+          "description": "Comentario y Calificacion del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -7460,18 +7466,17 @@
         {
           "id": "189787150",
           "topics": [
-            "Modelos de Lenguaje Grande",
-            "Inducción",
-            "Razonamiento"
+            "MLL",
+            "Personalización"
           ],
-          "title": "Gráfico de Pensamientos: Resolviendo Problemas Elaborados con Modelos de Lenguaje Grande",
+          "title": "Enseñar a los MLL a personalizar: un enfoque inspirado en la educación sobre escritura",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:58:51+01:00",
-          "description": "Comentario y Calificación Abstractos",
+          "description": "Comentario y calificación abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -7498,16 +7503,17 @@
         {
           "id": "189577812",
           "topics": [
-            "Transformadores"
+            "Difusión",
+            "Ciencia"
           ],
-          "title": "Descubriendo algoritmos de optimización de meseta en Transformadores",
+          "title": "PDE-Refiner: Logrando Despliegues Largos Precisos con Solucionadores de EDP Neurales",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:46:35+01:00",
-          "description": "Comentario y Calificación Abstractos",
+          "description": "Comentario y Calificación del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -7528,16 +7534,18 @@
         {
           "id": "189576077",
           "topics": [
-            "Transformadores"
+            "Imagen",
+            "Seguridad",
+            "Difusión"
           ],
-          "title": "Redes de Flujo Bayesianas",
+          "title": "FLIRT: Retroalimentación en Contexto de Equipos Rojos",
           "slug": "flirt-feedback-loop-in-context-red-teaming",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T04:42:55+01:00",
-          "description": "Comentario y Calificacion Abstractos",
+          "description": "Comentario y Calificación Abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692933540-researchpaper10.png"
           },
@@ -7565,18 +7573,16 @@
           "id": "189576091",
           "topics": [
             "LLM",
-            "Alucinación",
-            "Entidad",
-            "Datos Estructurados"
+            "Inferencia"
           ],
-          "title": "LMDX: Extracción y Localización de Información de Documentos basada en Modelos de Lenguaje",
+          "title": "Acelerando la Inferencia de LLM con Decodificacion Especulativa por Etapas",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T04:45:52+01:00",
-          "description": "Comentario y Calificación del Resumen",
+          "description": "Comentario y Calificacion del Resumen",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -7603,17 +7609,18 @@
         {
           "id": "189576077",
           "topics": [
-            "LLM",
-            "Herramientas"
+            "Imagen",
+            "Seguridad",
+            "Difusion"
           ],
-          "title": "FacTool: Detección de la Factualidad en IA Generativa -- Un Marco Potenciado por Herramientas para Escenarios Multi-Tarea y Multi-Dominio",
+          "title": "FLIRT: Retroalimentacion en Contexto de Equipos Rojos",
           "slug": "flirt-feedback-loop-in-context-red-teaming",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T04:42:55+01:00",
-          "description": "Comentario y Calificación del Resumen",
+          "description": "Comentario y Calificacion Abstractos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692933540-researchpaper10.png"
           },

@@ -7,16 +7,16 @@
         {
           "id": "SpdLuuYEQgW8rwSHNzhmxA",
           "topics": [
-            "Aplicaciones"
+            "Aplicativos"
           ],
-          "title": "Masterbots: Elevando la IA más allá de ChatGPT con Compartir Social e Innovación Amigable al Usuario",
+          "title": "Masterbots: Elevando a IA Alem do ChatGPT com Compartilhamento Social e Inovacao Amigavel ao Usuario",
           "slug": "masterbots-elevating-ai-beyond-chatgpt-with-social-sharing-and-user-friendly-inno",
           "authorName": "Jun Dam",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
           },
           "_publishedAt": "2024-06-22T16:00:40+01:00",
-          "description": "El blog presenta Masterbots, una plataforma que revoluciona la interacción con la IA mediante chatbots específicos del dominio y una característica única de compartir socialmente, invitando a colaboradores a unirse a su desarrollo abierto y impulsado por la comunidad.",
+          "description": "O blog apresenta o Masterbots, uma plataforma que esta revolucionando a interacao com a IA por meio de chatbots especificos de dominio e amigaveis ao usuario, e um recurso de compartilhamento social unico, convidando colaboradores a se juntarem ao seu desenvolvimento aberto e impulsionado pela comunidade.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1712270604-screenshot-2024-04-04-at-3-43-11-pm.png"
           },
@@ -37,18 +37,18 @@
         {
           "id": "190259319",
           "topics": [
-            "Resumen",
+            "Resumo",
             "LLM",
-            "Entrenamiento"
+            "Treinamento"
           ],
-          "title": "Podcast del Espacio Latente 16/08/23 [Resumen] - La Matemática del Entrenamiento de LLMs — con Quentin Anthony de Eleuther AI",
+          "title": "Podcast Espaço Latente 16/08/23 [Resumo] - A Matemática do Treinamento de LLMs — com Quentin Anthony da Eleuther AI",
           "slug": "latent-space-podcast-8-16-23-summary-the-mathematics-of-training-llms-with-que",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T09:19:45+01:00",
-          "description": "Explora la matemática detrás del entrenamiento de LLMs con Quentin Anthony de Eleuther AI. Sumérgete en el artículo de Matemáticas de Transformers 101 y domina las técnicas de entrenamiento distribuido para el máximo rendimiento de GPU.",
+          "description": "Explore a matemática por trás do treinamento de LLMs com Quentin Anthony da Eleuther AI. Mergulhe no artigo Transformers Math 101 e domine técnicas de treinamento distribuído para desempenho máximo de GPU.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692324088-screenshot-2023-08-17-at-9-59-17-pm.png"
           },
@@ -71,17 +71,17 @@
           "topics": [
             "LLM",
             "Hardware",
-            "Summary",
-            "Edge"
+            "Resumo",
+            "Borda"
           ],
-          "title": "Latent Space Podcast 8/10/23 [Summary]: LLMs Everywhere: Running 70B models in browsers and iPhones using MLC — with Tianqi Chen of CMU / OctoML",
+          "title": "Podcast Espaço Latente 8/10/23 [Resumo]: LLMs por toda parte: Executando modelos de 70B em navegadores e iPhones usando MLC — com Tianqi Chen da CMU / OctoML",
           "slug": "latent-space-podcast-8-10-23-summary-llms-everywhere-running-70b-models-in-browse",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T09:18:37+01:00",
-          "description": "Explore the magic of MLC with Tianqi Chen: deploying 70B models on browsers & iPhones. Dive into XGBoost, TVM's creation, & the future of universal AI deployments. ",
+          "description": "Explore a magia do MLC com Tianqi Chen: implantando modelos de 70B em navegadores e iPhones. Mergulhe no XGBoost, na criação do TVM e no futuro das implantações universais de IA.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1691894611-screenshot-2023-08-12-at-10-42-43-pm.png"
           },
@@ -175,20 +175,20 @@
         {
           "id": "198277124",
           "topics": [
-            "LLM",
-            "Finanzas",
-            "Atencion medica",
-            "Legal",
-            "Indicaciones"
+            "PLM",
+            "Finanças",
+            "Saúde",
+            "Jurídico",
+            "Prompting"
           ],
-          "title": "Adaptacion de Modelos de Lenguaje Grande mediante Comprension de Lectura",
+          "title": "Adaptando Modelos de Linguagem de Grande Escala através da Compreensão de Leitura",
           "slug": "adapting-large-language-models-via-reading-comprehension",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-27T03:34:22+01:00",
-          "description": "Comentario y Calificacion del Resumen",
+          "description": "Comentário e Avaliação do Resumo",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -210,16 +210,16 @@
           "id": "198277342",
           "topics": [
             "LLM",
-            "Multilingue"
+            "Multilíngue"
           ],
-          "title": "OpenBA: Un Modelo Asimetrico Bilingue de 15B de Codigo Abierto Preentrenado desde Cero",
+          "title": "OpenBA: Um Modelo Assimétrico Bilíngue de 15B de código aberto seq2seq Pré-treinado do Zero",
           "slug": "openba-an-open-sourced-15b-bilingual-asymmetric-seq2seq-model-pre-trained-from-sc",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-27T03:34:02+01:00",
-          "description": "Comentario y Calificacion del Resumen",
+          "description": "Comentário e Avaliação do Resumo",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -241,16 +241,16 @@
           "id": "198277117",
           "topics": [
             "LLM",
-            "Recuperación"
+            "Recuperacao"
           ],
-          "title": "PDFTriage: Respuesta a Preguntas sobre Documentos Largos y Estructurados",
+          "title": "PDFTriage: Respondendo Perguntas em Documentos Longos e Estruturados",
           "slug": "pdftriage-question-answering-over-long-structured-documents",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-27T03:33:49+01:00",
-          "description": "Comentario y Calificación del Resumen",
+          "description": "Comentario e Avaliacao do Resumo",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -303,17 +303,17 @@
           "id": "198277150",
           "topics": [
             "LLM",
-            "Ajuste de Instrucciones",
+            "Ajuste de Instruções",
             "Multimodal"
           ],
-          "title": "Un Estudio Empirico sobre la Escalabilidad de Modelos Multimodales Grandes Ajustados a Instrucciones",
+          "title": "Um Estudo Empírico sobre o Dimensionamento de Modelos Multimodais Grandes com Ajuste de Instruções",
           "slug": "an-empirical-study-of-scaling-instruct-tuned-large-multimodal-models",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-27T03:33:15+01:00",
-          "description": "Comentario y Calificacion del Resumen",
+          "description": "Comentário e Avaliação do Resumo",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -345,16 +345,16 @@
         {
           "id": "CD89KaoLSh6nQbiMhxX0EQ",
           "topics": [
-            "plataforma de lanzamiento"
+            "plataforma de lançamento"
           ],
-          "title": "Asegurando la Confianza y la Integridad: Cumplimiento Regulatorio y Medidas de Seguridad",
+          "title": "Garantindo Confiança e Integridade: Conformidade Regulatória e Medidas de Segurança",
           "slug": "ensuring-trust-and-integrity-regulatory-compliance-and-security-measures",
           "authorName": "Jun Dam",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
           },
           "_publishedAt": "2024-06-20T16:21:42+01:00",
-          "description": "Esta seccion describe el enfoque proactivo de nuestra plataforma para adherirse a los estandares regulatorios globales e implementar medidas de seguridad avanzadas, asegurando un entorno seguro y conforme para los usuarios en los espacios de cripto y IA.",
+          "description": "Esta seção descreve a abordagem proativa de nossa plataforma em aderir aos padrões regulatórios globais e implementar medidas de segurança avançadas, garantindo um ambiente seguro e conforme para os usuários nos espaços de cripto e IA.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1710562461-bitlauncherregsecimg.webp"
           },
@@ -375,16 +375,16 @@
         {
           "id": "H_DP7HFORBuw9rID5Jkhhw",
           "topics": [
-            "como_hacer"
+            "como_fazer"
           ],
-          "title": "Cómo registrarse y KYC en Bitcash",
+          "title": "Como se Registrar e fazer KYC no Bitcash",
           "slug": "how-to-register-and-kyc-to-bitcash",
           "authorName": "Roberto \"Andler\" Lucas",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1715639160-andler-file-photo.jpg"
           },
           "_publishedAt": "2024-06-20T16:20:40+01:00",
-          "description": "Cubrimos una variedad de temas, incluyendo el registro para una cuenta de Bitcash, configurando un nombre de cuenta y referente, identificando y asegurando dispositivos, proporcionando identificación e información personal para KYC, tomando fotos para la verificación de KYC, y esperando aprobación y unirse a la comunidad.",
+          "description": "Estamos cobrindo uma variedade de tópicos, incluindo o registro para uma conta Bitcash, configurando um nome de conta e referenciador, identificando e protegendo dispositivos, fornecendo identificação e informações pessoais para KYC, tirando fotos para verificação de KYC, e aguardando aprovação e ingresso na comunidade.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1715638953-bitcash-logo-frame-w-bg.png"
           },
@@ -405,16 +405,16 @@
         {
           "id": "fbM-UqrYQXGhw6HB4C6swQ",
           "topics": [
-            "plataforma de lanzamiento"
+            "plataforma de lançamento"
           ],
-          "title": "Hoja de Ruta Estratégica: Innovación Pionera en Blockchain y Éxito de Startups de IA",
+          "title": "Roteiro Estratégico: Inovação pioneira em Blockchain e Sucesso de Startups de IA",
           "slug": "strategic-roadmap-pioneering-blockchain-innovation-and-ai-startup-success",
           "authorName": "Jun Dam",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
           },
           "_publishedAt": "2024-03-15T05:13:30+00:00",
-          "description": "Esbozando el plan por etapas de bitLauncher para la implementación de tecnología innovadora, crecimiento impulsado por la comunidad y el desarrollo de la cadena Antelope equitativa, para revolucionar los paisajes de IA y criptomonedas.",
+          "description": "Descrevendo o plano faseado da bitLauncher para a implantação de tecnologia inovadora, crescimento impulsionado pela comunidade e o desenvolvimento da cadeia Antelope equitativa, para revolucionar as paisagens de IA e criptomoedas.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1710479575-roadmapbitlauncher.webp"
           },
@@ -501,17 +501,17 @@
         {
           "id": "166795692",
           "topics": [
-            "Primeros Pasos",
-            "Negocios y Administración"
+            "Introdução",
+            "Negócios & Administração"
           ],
-          "title": "Dominando el Flujo de Caja: La Guía Definitiva para Fundadores de Startups",
+          "title": "Dominando o Fluxo de Caixa: O Guia Definitivo para Fundadores de Startups",
           "slug": "mastering-cash-flow-the-ultimate-guide-for-startup-founders",
           "authorName": "Bootstrap Briggs",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760071-startupblogger2.png"
           },
           "_publishedAt": "2024-06-20T16:40:26+01:00",
-          "description": "Domina el flujo de caja con nuestra guía definitiva para fundadores de startups. Aprende estrategias para mantener la liquidez, gestionar las finanzas y asegurar la estabilidad del negocio.",
+          "description": "Domine o fluxo de caixa com nosso guia definitivo para fundadores de startups. Aprenda estratégias para manter a liquidez, gerenciar as finanças e garantir a estabilidade do negócio.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687312847-sb20-img1.png"
           },
@@ -532,17 +532,17 @@
         {
           "id": "166788631",
           "topics": [
-            "Comenzando",
-            "Negocios y Administracion"
+            "Introdução",
+            "Negócios e Administração"
           ],
-          "title": "Presupuestacion inteligente para startups: Una guia paso a paso para construir una base financiera solida",
+          "title": "Orçamento Inteligente para Startups: Um Guia Passo a Passo para Construir uma Base Financeira Sólida",
           "slug": "smart-budgeting-for-startups-a-step-by-step-guide-to-building-a-strong-financial",
           "authorName": "Bootstrap Briggs",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760071-startupblogger2.png"
           },
           "_publishedAt": "2024-06-20T16:40:00+01:00",
-          "description": "Construye una base financiera solida con nuestra guia de presupuestacion inteligente para startups. Aprende a gestionar los fondos de manera efectiva para un crecimiento empresarial sostenible.",
+          "description": "Construa uma base financeira sólida com nosso guia de orçamento inteligente para startups. Aprenda a gerenciar fundos eficazmente para o crescimento sustentável do negócio.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687310597-sb19-img1.png"
           },
@@ -563,17 +563,17 @@
         {
           "id": "165816954",
           "topics": [
-            "Comenzando",
-            "Equipos y RRHH"
+            "Introdução",
+            "Equipes e RH"
           ],
-          "title": "Construyendo un Equipo de Ensueño: La Guía Definitiva para Ensamblar Tu Escuadrón de Inicio",
+          "title": "Construindo uma Equipe dos Sonhos: O Guia Definitivo para Montar seu Esquadrão de Startup",
           "slug": "building-a-dream-team-the-ultimate-guide-to-assembling-your-startup-squad",
           "authorName": "Bootstrap Briggs",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760071-startupblogger2.png"
           },
           "_publishedAt": "2024-06-19T03:48:19+01:00",
-          "description": "Forma tu equipo ideal de inicio con nuestra guía completa. Aumenta la eficiencia del equipo y el crecimiento de la startup con nuestro consejo experto.",
+          "description": "Forme sua equipe ideal de startup com nosso guia abrangente. Aumente a eficiência da equipe e o crescimento da startup com nossos conselhos especializados.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687119615-sb5-img1.png"
           },
@@ -631,17 +631,17 @@
         {
           "id": "180217169",
           "topics": [
-            "Tokenomía",
-            "Comentario"
+            "Tokenômica",
+            "Comentário"
           ],
-          "title": "Economía de Incentivos Tokenizados 3: El Valor del Token No Alineará a los Interesados [Comentario]",
+          "title": "Economia dos Incentivos Tokenizados 3: Valor do Token Não Alinhará os Stakeholders [Comentário]",
           "slug": "economics-of-tokenized-incentives-3-token-value-won-t-align-stakeholders-commenta",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T09:17:23+01:00",
-          "description": "Descubre las trampas de usar el valor del token como métrica de rendimiento en plataformas blockchain. Aprende a diseñar sistemas de incentivos efectivos.",
+          "description": "Descubra as armadilhas de usar o valor do token como métrica de desempenho em plataformas blockchain. Aprenda a projetar sistemas de incentivos eficazes.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690771457-cbc3-img1.png"
           },
@@ -662,17 +662,17 @@
         {
           "id": "180217123",
           "topics": [
-            "Tokenomia",
-            "Comentario"
+            "Tokenomics",
+            "Comentário"
           ],
-          "title": "Economia de Incentivos Tokenizados 2: Seleccionando Metricas de Rendimiento Efectivas [Comentario]",
+          "title": "Economia de Incentivos Tokenizados 2: Selecionando Métricas de Desempenho Efetivas [Comentário]",
           "slug": "economics-of-tokenized-incentives-2-selecting-effective-performance-metrics-comme",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T09:17:05+01:00",
-          "description": "Descubre el poder de las metricas de rendimiento en sistemas de pago por rendimiento basados en blockchain. Aprende a alinear los incentivos con los objetivos de la plataforma de manera efectiva.",
+          "description": "Descubra o poder das métricas de desempenho em sistemas de pagamento por desempenho em blockchain. Aprenda a alinhar incentivos com os objetivos da plataforma efetivamente.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690770918-cbc2-img1.png"
           },
@@ -693,17 +693,17 @@
         {
           "id": "180217082",
           "topics": [
-            "Tokenomía",
-            "Comentario"
+            "Tokenômica",
+            "Comentário"
           ],
-          "title": "Economía de Incentivos Tokenizados 1: Introducción al Pago por Desempeño [Comentario]",
+          "title": "Economia de Incentivos Tokenizados 1: Introdução ao Pagamento por Desempenho [Comentário]",
           "slug": "economics-of-tokenized-incentives-1-intro-to-pay-for-performance",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T09:15:12+01:00",
-          "description": "Sumérgete en las complejidades de los incentivos de pago por desempeño en plataformas blockchain. Aprende sobre los compromisos y consideraciones de diseño para el éxito.",
+          "description": "Mergulhe nas complexidades dos incentivos de pagamento por desempenho em plataformas blockchain. Aprenda os compromissos e considerações de design para sucesso.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690770568-cbc1-img1.png"
           },
@@ -761,18 +761,18 @@
         {
           "id": "165362142",
           "topics": [
-            "Comenzando",
-            "Prueba de trabajo",
-            "Minería"
+            "Introdução",
+            "Prova de Trabalho",
+            "Mineração"
           ],
-          "title": "Desbloqueando el poder de la minería de Bitcoin: Una introducción a los algoritmos de prueba de trabajo",
+          "title": "Desvendando o Poder da Mineração de Bitcoin: Uma Introdução aos Algoritmos de Prova de Trabalho",
           "slug": "unlocking-the-power-of-bitcoin-mining-an-introduction-to-proof-of-work-algorithms",
           "authorName": "Maxi Millie",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
           },
           "_publishedAt": "2023-10-05T05:55:09+01:00",
-          "description": "Sumérgete en el mundo de la minería de Bitcoin y el fascinante concepto de los algoritmos de prueba de trabajo. Explora el potencial y las recompensas de esta tecnología transformadora.",
+          "description": "Mergulhe no mundo da mineração de Bitcoin e no fascinante conceito de algoritmos de prova de trabalho. Explore o potencial e as recompensas desta tecnologia transformadora.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686858321-bb9-img0edited.png"
           },
@@ -793,17 +793,17 @@
         {
           "id": "165340146",
           "topics": [
-            "Comenzando",
-            "Prueba de trabajo"
+            "Introdução",
+            "Prova-de-Trabalho"
           ],
-          "title": "La seguridad económica de Bitcoin: Cómo la Prueba de Trabajo permite una red segura y protegida",
+          "title": "A Segurança Econômica do Bitcoin: Como a Prova-de-Trabalho Garante uma Rede Segura e Protegida",
           "slug": "the-economic-security-of-bitcoin-how-proof-of-work-enables-a-safe-and-secure-netw",
           "authorName": "Maxi Millie",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
           },
           "_publishedAt": "2023-10-05T05:53:43+01:00",
-          "description": "Descubre la seguridad económica de Bitcoin y el poder de la prueba de trabajo. Explora cómo esta tecnología innovadora asegura una red segura y protegida para el futuro.",
+          "description": "Descubra a segurança econômica do Bitcoin e o poder da prova-de-trabalho. Explore como essa tecnologia inovadora garante uma rede segura e protegida para o futuro.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686856982-bb8-img1.png"
           },
@@ -824,17 +824,17 @@
         {
           "id": "165340050",
           "topics": [
-            "Primeros pasos",
-            "Legal"
+            "Introdução",
+            "Jurídico"
           ],
-          "title": "Navegando el paisaje legal y regulatorio de Bitcoin: Entendiendo las reglas y oportunidades",
+          "title": "Navegando pelo Cenário Legal e Regulatório do Bitcoin: Entendendo as Regras e Oportunidades",
           "slug": "navigating-the-legal-and-regulatory-landscape-of-bitcoin-understanding-the-rules",
           "authorName": "Maxi Millie",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
           },
           "_publishedAt": "2023-10-05T05:52:05+01:00",
-          "description": "Manténgase informado y cumpla con nuestra guía completa sobre el paisaje legal y regulatorio de Bitcoin. Navegue las complejidades de la criptomoneda con confianza.",
+          "description": "Mantenha-se informado e em conformidade com nosso guia completo sobre o cenário legal e regulatório do Bitcoin. Navegue as complexidades da criptomoeda com confiança.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686855768-bb7-img1edited.png"
           },
@@ -892,17 +892,17 @@
         {
           "id": "174592759",
           "topics": [
-            "Comenzando",
+            "Introducao",
             "Alternativas"
           ],
-          "title": "Liberando el Potencial: Dominando las Inversiones Alternativas para el Éxito del Inversor",
+          "title": "Liberando o Potencial: Dominando Investimentos Alternativos para o Sucesso do Investidor",
           "slug": "unleashing-the-potential-mastering-alternative-investments-for-investor-success",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:11:13+01:00",
-          "description": "¡Expande tu destreza en inversiones con inversiones alternativas! Sumérgete en el mundo de capital privado, fondos de cobertura y materias primas para potenciar tu cartera. Este blog proporciona orientación experta para inversores que buscan éxito en estrategias de inversión alternativa.",
+          "description": "Expanda sua habilidade de investimento com investimentos alternativos! Mergulhe no mundo do private equity, fundos de hedge e commodities para impulsionar seu portfolio. Este blog oferece orientacao especializada para investidores que buscam sucesso em estrategias de investimento alternativo.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689120056-ib6-img1.png"
           },
@@ -923,17 +923,17 @@
         {
           "id": "175015363",
           "topics": [
-            "Comenzando",
-            "Fondos Mutuos y ETFs"
+            "Introducao",
+            "Fundos Mutuos e ETFs"
           ],
-          "title": "Revelando los Pros y Contras de los Fondos Cotizados en Bolsa (ETFs): Una Guía Completa para Inversores",
+          "title": "Revelando os Prós e Contras dos Fundos Negociados em Bolsa (ETFs): Um Guia Completo para Investidores",
           "slug": "unveiling-the-pros-and-cons-of-exchange-traded-funds-etfs-a-comprehensive-guide-f",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:09:18+01:00",
-          "description": "Descubre las ventajas y desventajas de invertir en ETFs. Toma decisiones informadas y maximiza tu potencial de inversión con esta guía completa.",
+          "description": "Descubra as vantagens e desvantagens de investir em ETFs. Tome decisões informadas e maximize seu potencial de investimento com este guia completo.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689186966-ib8-img1.png"
           },
@@ -954,17 +954,17 @@
         {
           "id": "176002890",
           "topics": [
-            "Comenzando",
-            "Gestión de Riesgos"
+            "Introdução",
+            "Gestão de Riscos"
           ],
-          "title": "Protege Tus Inversiones: Una Guía Completa para Reconocer y Evitar el Fraude de Inversión",
+          "title": "Proteja Seus Investimentos: Um Guia Completo para Reconhecer e Evitar Fraudes em Investimentos",
           "slug": "shield-your-investments-a-comprehensive-guide-to-recognizing-and-avoiding-investm",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:08:41+01:00",
-          "description": "¡Cuida tu dinero ganado con esfuerzo! Aprende a identificar estafas de inversión y protege tu futuro financiero con nuestra guía completa para evitar el fraude de inversión",
+          "description": "Proteja seu dinheiro suado! Aprenda a identificar golpes de investimento e proteja seu futuro financeiro com nosso guia completo para evitar fraudes em investimentos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689384626-ib19-img1.png"
           },

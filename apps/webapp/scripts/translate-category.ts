@@ -1,187 +1,187 @@
 import { locales } from '@/dictionaries/locales'
-import { BlogArticleData, BlogArticleRecord } from '@/services/datocms'
+import { BlogArticleRecord } from '@/services/datocms'
 import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
-import {
-  extractTextForTranslation,
-  extractTitleAndDescriptionNested,
-  injectTextAfterTranslation
-} from '@/services/datocms/translation/utils'
 import { openAiTranslate } from '@/services/openai'
 
 import * as fs from 'fs/promises'
 import _ from 'lodash'
 import * as path from 'path'
+import { Dirent } from 'fs'
+import { promiseAllWithConcurrencyLimit } from '@/lib/utils'
 
-async function copyJsonFiles(locale: SiteLocale) {
-  // this is called from the root of the repo
+async function copyJsonFiles(locale: SiteLocale): Promise<void> {
   const sourceDir = path.join('./dictionaries/en/blog')
   const targetDir = path.join(`./dictionaries/${locale}/blog`)
 
-  // Ensure the target directory exists before proceeding
   await fs.mkdir(targetDir, { recursive: true })
 
   try {
     const files = await fs.readdir(sourceDir, { withFileTypes: true })
 
-    for (const file of files) {
-      if (file.isDirectory()) {
-        const subDir = path.join(sourceDir, file.name)
-        const subFiles = await fs.readdir(subDir)
-
-        for (const subFile of subFiles) {
-          if (subFile.endsWith('-index.json')) {
-            const sourcePath = path.join(subDir, subFile)
-            const targetPath = path.join(targetDir, file.name, subFile)
-
-            // // Check if the targetPath file already exists
-            // try {
-            //   await fs.access(targetPath)
-            //   console.log(`Translation already exists for ${targetPath}`)
-            //   continue
-            // } catch (err) {
-            //   // File does not exist, proceed with translation
-            // }
-            console.log('🧑🏻‍💻 New Translation Started ', targetPath)
-
-            await fs.mkdir(path.join(targetDir, file.name), { recursive: true })
-
-            try {
-              const englishVersion: BlogPageIndexProps = JSON.parse(
-                await fs.readFile(sourcePath, 'utf8')
-              )
-              const optimized = extractDataForTranslation(englishVersion)
-
-              let translatedContent: BlogPageIndexProps = {
-                sections: [] as Section[],
-                pageSeo: {}
-              }
-
-              const translatePromises: Promise<void>[] = []
-
-              // Translate page SEO
-              if (optimized.pageSeoDescription || optimized.pageSeoTitle) {
-                openAiTranslate(
-                  JSON.stringify(
-                    _.pick(optimized, 'pageSeoDescription', 'pageSeoTitle')
-                  ),
-                  locale
-                ).then(({ translation, finishReason }) => {
-                  if (finishReason === 'stop' && translation) {
-                    const textTranslated = JSON.parse(translation)
-                    translatedContent.pageSeo = {
-                      ...englishVersion.pageSeo,
-                      title: textTranslated.pageSeoTitle,
-                      description: textTranslated.pageSeoDescription
-                    }
-                  } else {
-                    console.log('ERROR TRANSLATING PAGE SEO')
-                  }
-                })
-              }
-
-              englishVersion.sections.forEach((section, index) => {
-                // Translate section name
-                translatePromises.push(
-                  openAiTranslate(
-                    JSON.stringify({ name: section.name }),
-                    locale
-                  ).then(({ translation, finishReason }) => {
-                    if (finishReason !== 'stop' || !translation) {
-                      console.log(
-                        'ERROR TRANSLATING SECTION NAME',
-                        section.name
-                      )
-                      return // Skip this section if translation fails
-                    }
-                    const translatedSection = JSON.parse(translation)
-                    const newSection: Section = {
-                      ...section,
-                      name: translatedSection.name,
-                      articles: []
-                    }
-
-                    // Translate articles within the section
-                    optimized.sections[index].articles.forEach(article => {
-                      translatePromises.push(
-                        openAiTranslate(JSON.stringify(article), locale).then(
-                          ({ translation, finishReason }) => {
-                            if (finishReason !== 'stop' || !translation) {
-                              console.log(
-                                'ERROR TRANSLATING ARTICLE',
-                                article.title
-                              )
-                              return // Skip this article if translation fails
-                            }
-                            newSection.articles.push(JSON.parse(translation))
-                          }
-                        )
-                      )
-                    })
-
-                    translatedContent.sections.push(newSection)
-                  })
-                )
-              })
-
-              // Ensure all translation promises are processed recursively
-              const processAllPromises = async () => {
-                const maxConcurrency = 1
-                while (translatePromises.length > 0) {
-                  const currentBatch = translatePromises.splice(
-                    0,
-                    maxConcurrency
-                  )
-                  await Promise.all(currentBatch)
-                    .then(() => {
-                      console.log(
-                        '🧑🏻‍💻 Translation progres ...'
-                        // translatedContent.sections.length
-                      )
-                    })
-                    .catch(error => {
-                      console.error('Error processing translations:', error)
-                    })
-                }
-              }
-
-              processAllPromises().then(async () => {
-                await fs.writeFile(
-                  targetPath,
-                  JSON.stringify(
-                    {
-                      ...englishVersion,
-                      sections: englishVersion.sections.map(
-                        (section, index) => ({
-                          ...section,
-                          articles: section.articles.map(
-                            (article, articleIndex) => ({
-                              ...article,
-                              ...translatedContent.sections[index]?.articles[
-                                articleIndex
-                              ]
-                            })
-                          )
-                        })
-                      )
-                    },
-                    null,
-                    2
-                  )
-                  // End of  Selection
-                )
-                console.log('✅ New Translation completed', targetPath)
-              })
-            } catch (error) {
-              console.log('ERRRORSHSHS', error)
-            }
-            // await fs.copyFile(sourcePath, targetPath)
-            // console.log(`Copied ${sourcePath} to ${targetPath}`)
-          }
-        }
-      }
-    }
+    await processFiles(files, sourceDir, targetDir, locale)
   } catch (err) {
     console.error('Error processing files:', err)
+  }
+}
+
+async function processFiles(
+  files: Dirent[],
+  sourceDir: string,
+  targetDir: string,
+  locale: SiteLocale
+): Promise<void> {
+  for (const file of files) {
+    if (file.isDirectory()) {
+      await processDirectory(file, sourceDir, targetDir, locale)
+    } else {
+      await processFile(file.name, sourceDir, targetDir, '', locale)
+    }
+  }
+}
+
+async function processDirectory(
+  file: Dirent,
+  sourceDir: string,
+  targetDir: string,
+  locale: SiteLocale
+): Promise<void> {
+  const subDir = path.join(sourceDir, file.name)
+  const subFiles = await fs.readdir(subDir)
+
+  for (const subFile of subFiles) {
+    if (subFile.endsWith('-index.json')) {
+      const fullPath = path.join(subDir, subFile)
+      if (await fs.stat(fullPath).catch(() => false)) {
+        console.log('🧑🏻‍💻 File already exists', fullPath)
+        return
+      }
+      await processFile(subFile, subDir, targetDir, file.name, locale)
+    }
+  }
+}
+
+async function processFile(
+  subFile: string,
+  subDir: string,
+  targetDir: string,
+  directoryName: string,
+  locale: SiteLocale
+): Promise<void> {
+  // console.log('process file', subFile, subDir, targetDir, directoryName, locale)
+  const sourcePath = path.join(subDir, subFile)
+  const targetPath = path.join(targetDir, directoryName, subFile)
+  await fs.mkdir(path.join(targetDir, directoryName), { recursive: true })
+  console.log('🧑🏻‍💻 New Translation Started ', targetPath)
+
+  try {
+    const englishVersion: BlogPageIndexProps = JSON.parse(
+      await fs.readFile(sourcePath, 'utf8')
+    )
+    const optimized = extractDataForTranslation(englishVersion)
+
+    let translatedContent: BlogPageIndexProps = {
+      sections: [] as Section[],
+      pageSeo: {}
+    }
+
+    // translate page seo
+    if (optimized.pageSeoDescription || optimized.pageSeoTitle) {
+      const seoTranslation = await openAiTranslate(
+        JSON.stringify(_.pick(optimized, 'pageSeoDescription', 'pageSeoTitle')),
+        locale
+      )
+      if (
+        seoTranslation.finishReason === 'stop' &&
+        seoTranslation.translation
+      ) {
+        const textTranslated = JSON.parse(seoTranslation.translation)
+        translatedContent.pageSeo = {
+          ...englishVersion.pageSeo,
+          title: textTranslated.pageSeoTitle,
+          description: textTranslated.pageSeoDescription
+        }
+      } else {
+        console.log('ERROR TRANSLATING PAGE SEO')
+      }
+    }
+
+    console.log('🧑🏻‍💻 PageSeo translated!')
+
+    // translate section names
+    let translatedSectionNames: string[] = []
+    const sectionTranslation = await openAiTranslate(
+      JSON.stringify(englishVersion.sections.map(s => s.name)),
+      locale
+    )
+    if (
+      sectionTranslation.finishReason === 'stop' &&
+      sectionTranslation.translation
+    ) {
+      console.log('🧑🏻‍💻 Section names translated!')
+      translatedSectionNames = JSON.parse(sectionTranslation.translation)
+    } else {
+      console.log('ERROR TRANSLATING SECTION NAMES')
+    }
+
+    //translate sections
+    const sectionPromises = englishVersion.sections.map(
+      async (section, index) => {
+        const newSection: Section = {
+          ...section,
+          name: translatedSectionNames[index],
+          articles: []
+        }
+        // translate articles in section
+        const _articles =
+          optimized.sections.find(s => s.name === section.name)?.articles || []
+        const articleOpenAICalls = _articles.map(article => async () => {
+          console.log(`🧑🏻‍💻 Translting ${article.title}!`)
+          const articleTranslation = await openAiTranslate(
+            JSON.stringify(article),
+            locale
+          )
+          if (
+            articleTranslation.finishReason === 'stop' &&
+            articleTranslation.translation
+          ) {
+            return JSON.parse(articleTranslation.translation)
+          } else {
+            console.log('ERROR TRANSLATING ARTICLE', article.title)
+          }
+        })
+
+        console.log('🧑🏻‍💻 Articles translating!')
+        newSection.articles = await promiseAllWithConcurrencyLimit(
+          articleOpenAICalls,
+          3
+        )
+        console.log('🧑🏻‍💻 Articles translated!')
+        return newSection
+      }
+    )
+
+    translatedContent.sections = await Promise.all(sectionPromises)
+
+    await fs.writeFile(
+      targetPath,
+      JSON.stringify(
+        {
+          ...englishVersion,
+          sections: englishVersion.sections.map((section, index) => ({
+            ...section,
+            articles: section.articles.map((article, articleIndex) => ({
+              ...article,
+              ...translatedContent.sections[index]?.articles[articleIndex]
+            }))
+          }))
+        },
+        null,
+        2
+      )
+    )
+    console.log('✅ New Translation completed', targetPath)
+  } catch (error) {
+    console.log('ERROR', error)
   }
 }
 
@@ -195,27 +195,21 @@ type BlogPageIndexProps = {
   pageSeo?: any
 }
 
-const maxConcurrent = 2
 let activeTasks = 0
-
-function processLocale() {
-  if (activeTasks < maxConcurrent && locales.length > 0) {
+async function processLocale(): Promise<void> {
+  while (activeTasks < 2 && locales.length > 0) {
     const locale = locales.shift()
     if (locale && locale !== 'en') {
-      // Skip if locale is 'en'
       activeTasks++
-      copyJsonFiles(locale).then(() => {
-        activeTasks--
-        processLocale() // Process next locale after finishing current one
-      })
-      processLocale() // Start another task if under maxConcurrent
-    } else {
-      processLocale() // Continue to the next locale if 'en' is skipped
+      await copyJsonFiles(locale)
+      activeTasks--
     }
   }
+  process.exit(0)
 }
 
 processLocale()
+
 type ExtractedData = {
   pageSeoTitle: string
   pageSeoDescription: string
