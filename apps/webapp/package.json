@@ -14,7 +14,8 @@
     "type-check:watch": "tsc --noEmit -w",
     "format": "prettier --write \"{app,lib,components}/**/*.{ts,tsx,mdx}\" --cache",
     "format:check": "prettier --check \"{app,lib,components}**/*.{ts,tsx,mdx}\" --cache",
-    "translate": "bun run scripts/translate.ts"
+    "translate": "bun run scripts/translate.ts",
+    "translate:category": "bun run scripts/translate-category.ts"
   },
   "dependencies": {
     "@ai-sdk/openai": "^0.0.33",

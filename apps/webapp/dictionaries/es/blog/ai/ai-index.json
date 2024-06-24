@@ -1,0 +1,1163 @@
+{
+  "sections": [
+    {
+      "name": "Resumen",
+      "slug": "summary",
+      "articles": [
+        {
+          "topics": [
+            "LLM",
+            "Resumen",
+            "Industria"
+          ],
+          "title": "McKinsey: El potencial economico de la IA generativa [Resumen]",
+          "description": "Explora la investigacion de McKinsey sobre el poder transformador de la IA generativa, su potencial economico y su impacto en el trabajo futuro y la productividad."
+        },
+        {
+          "topics": [
+            "Resumen",
+            "Transformadores"
+          ],
+          "title": "El Plano del Transformador: Una Guia Holistica para la Arquitectura de Redes Neuronales Transformadoras [Resumen]",
+          "description": "Explora 'El Plano del Transformador' - una guia completa para entender y aplicar el poder transformador de la Arquitectura de Redes Neuronales Transformadoras."
+        },
+        {
+          "topics": [
+            "LLM",
+            "Resumen"
+          ],
+          "title": "Podcast Espacio Latente 2/23 [Resumen] - ChatGPT, el entusiasmo por GPT4 y la creacion de productos nativos de LLM con Logan Kilpatrick de OpenAI",
+          "description": "Explora ChatGPT, el entusiasmo alrededor de GPT4 y la creacion de productos nativos de LLM con Logan Kilpatrick de OpenAI. Sumergente en el futuro de la IA en el Episodio 1 del Podcast Espacio Latente!"
+        },
+        {
+          "topics": [
+            "Resumen",
+            "LLM",
+            "Herramientas"
+          ],
+          "title": "Podcast Espacio Latente 23/03/23 [Resumen] - Podcast de Emergencia: El Momento de ChatGPT en la App Store (con Logan Kilpatrick de OpenAI, Florent Crivello de LindyAI y Nader Dabit)",
+          "description": "Explora el Ep.4 del podcast mientras expertos de OpenAI y LindyAI profundizan en los Plugins de ChatGPT. Descubre casos de uso, estrategias de monetización y el futuro de la integración de IA. #ChatGPT #AIPlugins"
+        },
+        {
+          "topics": [
+            "Resumen",
+            "LLM"
+          ],
+          "title": "Estado de GPT - Andrej Karpathy [Resumen]",
+          "description": "Sumérgete en las perspectivas de Andrej Karpathy sobre el desarrollo de GPT, aprendizaje poderoso, colapso de modo, uso de herramientas y recomendaciones clave. #IA #GPT #OpenAI"
+        },
+        {
+          "topics": [
+            "LLM",
+            "Resumen"
+          ],
+          "title": "Google \"No tenemos un foso, y OpenAI tampoco\" [Comentario]",
+          "description": "Explora el memo filtrado de Google y la rapida evolucion de la IA de codigo abierto en nuestro ultimo blog, rastreando el impacto revolucionario de LLaMA y la democratizacion de los Modelos de Lenguaje de Gran Escala."
+        },
+        {
+          "topics": [
+            "Resumen",
+            "LLM"
+          ],
+          "title": "Modelos de lenguaje extensos, explicados con un mínimo de matemáticas y jerga [Resumen]",
+          "description": "Explora el poder de los modelos de lenguaje AI como GPT-3 y GPT-4, su impresionante rendimiento, y el concepto de 'teoría de la mente' en AI."
+        },
+        {
+          "topics": [
+            "Resumen",
+            "LLM",
+            "Código Abierto",
+            "Modelos Pequeños"
+          ],
+          "title": "Podcast Espacio Latente 19/07/23 [Resumen] - Llama 2: El Nuevo LLM SOTA Abierto (ft. Nathan Lambert, Matt Bornstein, Anton Troynikov, Russell Kaplan, Catálogo Whole Mars et al.)",
+          "description": "Explora Llama 2, el último avance en IA con expertos como Nathan Lambert, Matt Bornstein y más. Sumérgete en conjuntos de datos, benchmarks y predicciones de IA. ¡Los detalles e intrigas de Llama te esperan en este podcast destacado!"
+        },
+        {
+          "topics": [
+            "Resumen",
+            "LLM",
+            "Codigo",
+            "Codigo Abierto",
+            "Modelos Pequenos"
+          ],
+          "title": "Podcast Espacio Latente 8/4/23 [Resumen] ¡Cruce de Espacio Latente x Desglose de IA!",
+          "description": "Unete al Desglose de IA y Espacio Latente para el resumen tecnologico de IA de verano: Sumergirse en GPT4.5, Llama 2, herramientas de IA, el ingeniero de IA en ascenso, y mas!"
+        },
+        {
+          "topics": [
+            "Resumen",
+            "LLM",
+            "Entrenamiento"
+          ],
+          "title": "Podcast del Espacio Latente 16/08/23 [Resumen] - La Matematica del Entrenamiento de LLMs con Quentin Anthony de Eleuther AI",
+          "description": "Explora la matematica detras del entrenamiento de LLMs con Quentin Anthony de Eleuther AI. Sumergente en el articulo de Matematicas de Transformers 101 y domina las tecnicas de entrenamiento distribuido para el maximo rendimiento de GPU."
+        },
+        {
+          "topics": [
+            "LLM",
+            "Resumen",
+            "Evaluación"
+          ],
+          "title": "Podcast del Espacio Latente 4/6/23 [Resumen] - Fundamentos de IA: Introducción a los Benchmarks",
+          "description": "Explora los Fundamentos de IA en 'Introducción a los Benchmarks'. Sumérgete en la historia del Benchmarking de LLM y descubre las complejidades que moldean el progreso del aprendizaje automático."
+        },
+        {
+          "topics": [
+            "LLM",
+            "Resumen",
+            "UX"
+          ],
+          "title": "Podcast Espacio Latente 6/8/23 [Resumen] - De RLHF a RLHB: El Caso para Aprender del Comportamiento Humano - con Jeffrey Wang y Joe Reeve de Amplitude",
+          "description": "Explora IA y analíticas con Jeffrey Wang y Joe Reeve en Espacio Latente en Vivo! Profundiza en por qué la IA valora las Analíticas y el poder de los datos de comportamiento de primera parte."
+        },
+        {
+          "topics": [
+            "LLM",
+            "Empresa",
+            "Resumen"
+          ],
+          "title": "Podcast del Espacio Latente 21/04/23 [Resumen] - Búsqueda potenciada por IA para la Empresa — con Deedy Das de Glean",
+          "description": "Ep.8: Sumérgete en la IA en la búsqueda empresarial con Deedy Das de Glean. Analiza los desafíos al crear un gigante de búsqueda IA, comparaciones entre Google y ChatGPT, complejidades de la infraestructura de IA, identificación de texto generado por IA, y por qué las empresas necesitan más que solo QA de Documentos."
+        },
+        {
+          "topics": [
+            "Resumen",
+            "LLMOps"
+          ],
+          "title": "Podcast del Espacio Latente 4/6/23 [Resumen] - Investigación Aplicada: De Google Brain a MLOps a LLMOps — con Shreya Shankar de UC Berkeley",
+          "description": "Explora la evolución de MLOps con Shreya Shankar desde Google Brain hasta UC Berkeley. Sumérgete en el puente entre desarrollo y producción, comprendiendo los modelos de ML como vistas únicas de bases de datos. #ML #Investigación"
+        },
+        {
+          "topics": [
+            "Resumen",
+            "Código Abierto",
+            "LLM"
+          ],
+          "title": "Podcast Espacio Latente 5/5/23 [Resumen] - Sin Foso: La IA cerrada recibe su llamada de atención de código abierto — ft. Simon Willison",
+          "description": "Explora 'Sin Foso: El Despertar de Código Abierto de la IA Cerrada' con Simon Willison. Sumérgete en las percepciones del memo filtrado de Google Moat, la fuga de cerebros de Google y el aumento de velocidad de Python con Mojo."
+        },
+        {
+          "topics": [
+            "Resumen",
+            "Código Abierto"
+          ],
+          "title": "Podcast Espacio Latente 7/2/23 [Resumen] Tendencias de IA: un crossover de Espacio Latente x IA Práctica",
+          "description": "Explora la fusión de IA Práctica y Espacio Latente mientras profundizan en las principales tendencias de IA de 2023, reflexionan sobre episodios destacados y comparten perspectivas sobre cómo navegar la evolución de la IA."
+        },
+        {
+          "topics": [
+            "Resumen",
+            "LLM",
+            "UX"
+          ],
+          "title": "Podcast del Espacio Latente 6/1/23 [Resumen] - Construyendo el Scenius de AI × UX con Linus Lee de Notion AI",
+          "description": "Explora el enfoque transformador de Notion AI hacia la IA y UX. Sumérgete en el futuro de los espacios de trabajo aumentados por IA, el valor más allá de las interfaces de chat, y las perspectivas sobre el trabajo con conocimiento efectivo. ¡Incluye resumen del encuentro AI×UX NYC!"
+        },
+        {
+          "topics": [
+            "Resumen",
+            "Código",
+            "LLM"
+          ],
+          "title": "Podcast del Espacio Latente 7/10/23 [Resumen] - Intérprete de Código == GPT 4.5 (con Simon Willison, Alex Volkov, Aravind Srinivas, Alex Graveley, et al.)",
+          "description": "Explora el Intérprete de Código de ChatGPT: un cambio radical en IA. Sumérgete en su salto de capacidades 1000x con Simon, Alex y los principales expertos en IA. #CodeAugmentedInference #GPT4_5"
+        },
+        {
+          "topics": [
+            "LLM",
+            "Resumen",
+            "Código"
+          ],
+          "title": "Podcast del Espacio Latente 3/2/23 [Resumen] - 97% más barato, más rápido, mejor, IA correcta — con Varun Mohan de Codeium Podcast del Espacio Latente Ep. 2: Por qué estás sujetando tus GPU de manera incorrecta",
+          "description": "Desbloquea la eficiencia de IA con Varun Mohan de Codeium mientras revela métodos que son 97% más baratos y rápidos. ¡Sumérgete en el Episodio 2 del Podcast del Espacio Latente para optimizar el uso de tu GPU!"
+        },
+        {
+          "topics": [
+            "Resumen",
+            "Codigo",
+            "LLM",
+            "Agentes"
+          ],
+          "title": "Podcast del Espacio Latente 25/05/23 [Resumen] - Depurando Internet con agentes de IA - con Itamar Friedman de Codium AI y AutoGPT",
+          "description": "Explora el futuro de la IA con Itamar Friedman de Codium AI en 'Depurando Internet'. Sumergente en agentes 'Extreme DRY', la sincronizacion rapida de especificaciones y pruebas, y el equilibrio entre codigo y pruebas. Ademas, perspectivas de Toran y una mirada exclusiva al roadmap de AutoGPT!"
+        },
+        {
+          "topics": [
+            "LLM",
+            "Hardware",
+            "Resumen",
+            "Borde"
+          ],
+          "title": "Podcast del Espacio Latente 8/10/23 [Resumen]: LLMs por todas partes: Ejecutando modelos de 70B en navegadores y iPhones usando MLC — con Tianqi Chen de CMU / OctoML",
+          "description": "Explora la magia del MLC con Tianqi Chen: desplegando modelos de 70B en navegadores y iPhones. Sumérgete en XGBoost, la creación de TVM, y el futuro de los despliegues universales de IA."
+        },
+        {
+          "topics": [
+            "LLM",
+            "Funciones",
+            "Resumen"
+          ],
+          "title": "Podcast Espacio Latente 6/14/23 [Resumen] - Podcast de Emergencia: Nueva API de Funciones de OpenAI, Reducción del 75% en Precios, Longitud de Contexto 4 veces mayor (con Alex Volkov, Simon Willison, Riley Goodside, Joshua Lochner, Stefania Druga, Eric Elliott, Mayo Oshin y otros)",
+          "description": "Explora las actualizaciones de OpenAI de junio de 2023 con los principales ingenieros de IA de Scale, Microsoft, Pinecone y Huggingface. Sumérgete en los paradigmas de Código x LLM y descubre los Agentes de Función Recursiva."
+        },
+        {
+          "topics": [
+            "LLM",
+            "Modelos Pequeños",
+            "Resumen"
+          ],
+          "title": "Podcast del Espacio Latente 28/04/23 [Resumen] - Mapeando el futuro de Modelos Verdaderamente Abiertos y Entrenando a Dolly por $30 — con Mike Conover de Databricks",
+          "description": "Explora el futuro de los modelos abiertos con Mike Conover de Databricks. Profundiza en la creación de Dolly, su transición de 1.0 a 2.0, y las influencias detrás de su desarrollo. Ep.9 aborda la infraestructura de modelos, la visión de Databricks y más. #IA #ModelosAbiertos #Dolly"
+        },
+        {
+          "topics": [
+            "Hardware",
+            "LLM",
+            "Resumen"
+          ],
+          "title": "Podcast del Espacio Latente 20/06/23 [Resumen] - Comoditizando el Petaflop — con George Hotz de tiny corp",
+          "description": "¡George Hotz de tiny corp desafía a Nvidia y Google! Sumérgete en el mundo de las colaboraciones de AMD, percepciones sobre ggml, Mojo, Elon y GPT-4, además de un vistazo a AI Girlfriend."
+        },
+        {
+          "topics": [
+            "Resumen",
+            "Transformadores",
+            "Entrenamiento",
+            "Código Abierto"
+          ],
+          "title": "Podcast del Espacio Latente 26/7/23 [Resumen] FlashAttention 2: haciendo los Transformadores 800% más rápidos - Tri Dao de Together AI",
+          "description": "Descubre cómo FlashAttention revolucionó la velocidad de la IA con Tri Dao, mientras él revela el poder de FlashAttention 2, se adentra en el Laboratorio Hazy de Stanford y las futuras perspectivas de la IA."
+        },
+        {
+          "topics": [
+            "Resumen",
+            "Visión"
+          ],
+          "title": "Podcast del Espacio Latente 13/04/23 [Resumen] - Modelo de Segmentar Cualquier Cosa y los Problemas Difíciles de la Visión por Computadora — con Joseph Nelson de Roboflow",
+          "description": "Explora el Ep.7 con Joseph Nelson sobre el Modelo de Segmentar Cualquier Cosa de Meta. Profundiza en el futuro de la Visión por Computadora, la importancia de OCR, Segmentación de Imágenes y más. #Roboflow #IA"
+        },
+        {
+          "topics": [
+            "LLM",
+            "Codigo",
+            "Resumen"
+          ],
+          "title": "Podcast del Espacio Latente 5/3/23 [Resumen] - Entrenando un LLM de Codigo SOTA en 1 semana y Cuantificando las Vibraciones — con Reza Shabani de Replit",
+          "description": "Ep. 10 con Reza Shabani: Sumergirse profundamente en el entrenamiento rapido de un LLM de Codigo de ultima generacion, explorar el futuro de Replit Ghostwriter y viajar desde Finanzas hasta IA. Descubre la transicion de Kaplan a Chinchilla y mas!"
+        }
+      ]
+    },
+    {
+      "name": "Industria",
+      "slug": "industry",
+      "articles": [
+        {
+          "topics": [
+            "LLM",
+            "Resumen",
+            "Industria"
+          ],
+          "title": "McKinsey: El potencial economico de la IA generativa [Resumen]",
+          "description": "Explora la investigacion de McKinsey sobre el poder transformador de la IA generativa, su potencial economico y su impacto en el trabajo futuro y la productividad."
+        },
+        {
+          "topics": [
+            "Comenzando",
+            "Industria"
+          ],
+          "title": "Empoderando el Futuro: Desplegando el Poder de los Modelos de Lenguaje de Gran Escala en Diversas Industrias",
+          "description": "Explora el poder transformador de los Modelos de Lenguaje de Gran Escala en varios sectores! Descubre historias de éxito, casos de uso y el futuro de la IA!"
+        }
+      ]
+    },
+    {
+      "name": "Modelos Pequeños",
+      "slug": "small models",
+      "articles": [
+        {
+          "topics": [
+            "Resumen",
+            "LLM",
+            "Codigo",
+            "Codigo Abierto",
+            "Modelos Pequenos"
+          ],
+          "title": "Podcast Espacio Latente 8/4/23 [Resumen] Crossover de Espacio Latente x Desglose de IA!",
+          "description": "Unete al Desglose de IA y Espacio Latente para el resumen tecnologico de IA de verano: Sumergirse en GPT4.5, Llama 2, herramientas de IA, el ingeniero de IA en ascenso, y mas!"
+        },
+        {
+          "topics": [
+            "LLM",
+            "Modelos Pequenos"
+          ],
+          "title": "Podcast del Espacio Latente 20/05/23 [Resumen] - MPT-7B y El Comienzo de Contexto=Infinito — con Jonathan Frankle y Abhinav Venigalla de MosaicML",
+          "description": "Sumergirse en el entrenamiento de 9 dias, 200 mil dolares 'llongboi' MPT-7B de MosaicML, perspectivas de preparacion de datos, y el auge de modelos de IA abiertos con los expertos Frankle y Venigalla."
+        },
+        {
+          "topics": [
+            "LLM",
+            "Modelos Pequeños",
+            "Resumen"
+          ],
+          "title": "Podcast del Espacio Latente 28/04/23 [Resumen] - Mapeando el futuro de Modelos Verdaderamente Abiertos y Entrenando a Dolly por $30 — con Mike Conover de Databricks",
+          "description": "Explora el futuro de los modelos abiertos con Mike Conover de Databricks. Profundiza en la creación de Dolly, su transición de 1.0 a 2.0, y las influencias detrás de su desarrollo. Ep.9 aborda la infraestructura de modelos, la visión de Databricks, y más. #IA #ModelosAbiertos #Dolly"
+        },
+        {
+          "topics": [
+            "Resumen",
+            "LLM",
+            "Código Abierto",
+            "Modelos Pequeños"
+          ],
+          "title": "Podcast del Espacio Latente 19/07/23 [Resumen] - Llama 2: El Nuevo LLM Abierto SOTA (con Nathan Lambert, Matt Bornstein, Anton Troynikov, Russell Kaplan, Catálogo Whole Mars et al.)",
+          "description": "Explora Llama 2, el último avance en IA con expertos como Nathan Lambert, Matt Bornstein y más. Sumérgete en conjuntos de datos, referencias y predicciones de IA. ¡Los detalles e intrigas de Llama te esperan en este podcast destacado!"
+        }
+      ]
+    },
+    {
+      "name": "Agentes",
+      "slug": "agents",
+      "articles": [
+        {
+          "topics": [
+            "LLM",
+            "Entrenamiento",
+            "Agentes",
+            "Multimodal"
+          ],
+          "title": "Podcast del Espacio Latente 5/8/23 [Resumen] - El Gen del Fundador de IA: Ser Pionero, Construir Rapido y Creer en la Grandeza — con Sharif Shameem de Lexica",
+          "description": "Ep.11 con Sharif Shameem de Lexica: Sumergirse en la mentalidad del fundador de IA, descubriendo los secretos para la innovacion pionera, construyendo tecnologia revolucionaria, entrenando modelos y el potencial intrigante de Agentes y la secuenciacion genomica."
+        },
+        {
+          "topics": [
+            "Resumen",
+            "Codigo",
+            "LLM",
+            "Agentes"
+          ],
+          "title": "Podcast del Espacio Latente 25/05/23 [Resumen] - Depurando Internet con agentes de IA - con Itamar Friedman de Codium AI y AutoGPT",
+          "description": "Explora el futuro de la IA con Itamar Friedman de Codium AI en 'Depurando Internet'. Sumergirse en agentes 'Extreme DRY', la sincronizacion rapida de especificaciones y pruebas, y el equilibrio entre codigo y pruebas. Ademas, percepciones de Toran y una mirada exclusiva al roadmap de AutoGPT!"
+        }
+      ]
+    },
+    {
+      "name": "Empresa",
+      "slug": "enterprise",
+      "articles": [
+        {
+          "topics": [
+            "LLM",
+            "Empresa",
+            "Resumen"
+          ],
+          "title": "Podcast del Espacio Latente 21/04/23 [Resumen] - Búsqueda potenciada por IA para la Empresa — con Deedy Das de Glean",
+          "description": "Ep.8: Sumérgete en la IA en la búsqueda empresarial con Deedy Das de Glean. Explora los desafíos en la creación de un gigante de búsqueda de IA, comparaciones entre Google y ChatGPT, complejidades de la infraestructura de IA, identificación de texto generado por IA y por qué las empresas necesitan más que solo QA de Documentos."
+        }
+      ]
+    },
+    {
+      "name": "Datos Estructurados",
+      "slug": "structured data",
+      "articles": [
+        {
+          "topics": [
+            "LLM",
+            "Datos estructurados"
+          ],
+          "title": "Podcast del Espacio Latente 15/05/23 [Resumen] - Calidad y estructura garantizadas en las salidas de LLM - con Shreya Rajpal de Guardrails AI",
+          "description": "Explora Ep. 12 con Shreya Rajpal de Guardrails AI: Profundiza en la validación de las salidas de LLM, refinando respuestas mediante bucles de re-preguntas, y estableciendo SLAs para modelos. Domina los matices de la garantía de calidad de IA."
+        }
+      ]
+    },
+    {
+      "name": "Entrenamiento",
+      "slug": "training",
+      "articles": [
+        {
+          "topics": [
+            "Resumen",
+            "Transformadores",
+            "Entrenamiento",
+            "Código Abierto"
+          ],
+          "title": "Podcast del Espacio Latente 26/7/23 [Resumen] FlashAttention 2: haciendo los Transformadores 800% más rápidos - Tri Dao de Together AI",
+          "description": "Descubre cómo FlashAttention revolucionó la velocidad de la IA con Tri Dao, mientras revela el poder de FlashAttention 2, se adentra en el Laboratorio Hazy de Stanford y las perspectivas futuras de la IA."
+        },
+        {
+          "topics": [
+            "Resumen",
+            "LLM",
+            "Entrenamiento"
+          ],
+          "title": "Podcast Espacio Latente 16/08/23 [Resumen] - La Matematica del Entrenamiento de LLMs con Quentin Anthony de Eleuther AI",
+          "description": "Explora la matematica detras del entrenamiento de LLMs con Quentin Anthony de Eleuther AI. Sumergente en el articulo de Matematicas de Transformers 101 y domina las tecnicas de entrenamiento distribuido para el maximo rendimiento de GPU."
+        },
+        {
+          "topics": [
+            "LLM",
+            "Entrenamiento",
+            "Agentes",
+            "Multimodal"
+          ],
+          "title": "Podcast del Espacio Latente 5/8/23 [Resumen] - El Gen del Fundador de IA: Ser Pionero, Construir Rápido y Creer en la Grandeza — con Sharif Shameem de Lexica",
+          "description": "Ep.11 con Sharif Shameem de Lexica: Sumérgete en la mentalidad del fundador de IA, descubriendo los secretos para innovar como pionero, construir tecnología revolucionaria, entrenar modelos y el intrigante potencial de los Agentes y la secuenciación genómica."
+        }
+      ]
+    },
+    {
+      "name": "Legal",
+      "slug": "legal",
+      "articles": [
+        {
+          "topics": [
+            "Comenzando",
+            "Legal"
+          ],
+          "title": "¿Copiar eso? LLMs, Derechos de Autor y el Predicamento del Plagio",
+          "description": "Descubre las complejidades de cómo los Modelos de Lenguaje Grande navegan el laberinto de las leyes de derechos de autor y la amenaza inminente del plagio."
+        }
+      ]
+    },
+    {
+      "name": "Transformadores",
+      "slug": "transformers",
+      "articles": [
+        {
+          "topics": [
+            "Resumen",
+            "Transformadores"
+          ],
+          "title": "El Plano del Transformador: Una Guia Holistica para la Arquitectura de la Red Neuronal Transformadora [Resumen]",
+          "description": "Explora 'El Plano del Transformador' - una guia completa para entender y aplicar el poder transformador de la Arquitectura de la Red Neuronal Transformadora."
+        },
+        {
+          "topics": [
+            "Resumen",
+            "Transformadores",
+            "Entrenamiento",
+            "Código Abierto"
+          ],
+          "title": "Podcast Espacio Latente 7/26/23 [Resumen] FlashAttention 2: haciendo los Transformadores 800% más rápidos - Tri Dao de Together AI",
+          "description": "Descubre cómo FlashAttention revolucionó la velocidad de la IA con Tri Dao, mientras él revela el poder de FlashAttention 2, se sumerge en el Laboratorio Hazy de Stanford y las perspectivas futuras de la IA."
+        }
+      ]
+    },
+    {
+      "name": "MLL",
+      "slug": "llm",
+      "articles": [
+        {
+          "topics": [
+            "LLM",
+            "Resumen",
+            "Industria"
+          ],
+          "title": "McKinsey: El potencial economico de la IA generativa [Resumen]",
+          "description": "Explora la investigacion de McKinsey sobre el poder transformador de la IA generativa, su potencial economico y su impacto en el trabajo futuro y la productividad."
+        },
+        {
+          "topics": [
+            "Resumen",
+            "LLM",
+            "Entrenamiento"
+          ],
+          "title": "Podcast del Espacio Latente 16/08/23 [Resumen] - La Matematica del Entrenamiento de LLMs con Quentin Anthony de Eleuther AI",
+          "description": "Explora la matematica detras del entrenamiento de LLMs con Quentin Anthony de Eleuther AI. Sumergente en el articulo de Matematicas de Transformers 101 y domina las tecnicas de entrenamiento distribuido para el maximo rendimiento de GPU."
+        },
+        {
+          "topics": [
+            "LLM",
+            "Resumen"
+          ],
+          "title": "Google \"No tenemos un foso, y OpenAI tampoco\" [Comentario]",
+          "description": "Explora el memo filtrado de Google y la rápida evolución de la IA de código abierto en nuestro último blog, siguiendo el impacto revolucionario de LLaMA y la democratización de los Modelos de Lenguaje de Gran Escala."
+        },
+        {
+          "topics": [
+            "Resumen",
+            "LLM",
+            "Herramientas"
+          ],
+          "title": "Podcast del Espacio Latente 23/03/23 [Resumen] - Podcast de Emergencia: El Momento de ChatGPT en la App Store (con Logan Kilpatrick de OpenAI, Florent Crivello de LindyAI y Nader Dabit)",
+          "description": "Explora el Ep.4 del podcast mientras expertos de OpenAI y LindyAI profundizan en los Plugins de ChatGPT. Descubre casos de uso, estrategias de monetización y el futuro de la integración de IA. #ChatGPT #AIPlugins"
+        },
+        {
+          "topics": [
+            "Resumen",
+            "Código Abierto",
+            "LLM"
+          ],
+          "title": "Podcast del Espacio Latente 5/5/23 [Resumen] - Sin Foso: La IA Cerrada recibe su llamada de atención de Código Abierto — con Simon Willison",
+          "description": "Explora 'Sin Foso: El Despertar de Código Abierto de la IA Cerrada' con Simon Willison. Sumérgete en los detalles del memorando filtrado de Google Moat, la fuga de cerebros de Google y el aumento de velocidad de Python con Mojo."
+        },
+        {
+          "topics": [
+            "Comenzando",
+            "LLM"
+          ],
+          "title": "Dominando el Arte de los LLMs: Una Guia Practica para Implementar Modelos de Lenguaje Grande",
+          "description": "Desbloquea el poder de la IA! Navega el mundo de los Modelos de Lenguaje Grande, explora plataformas populares y aprende las mejores practicas para potenciar tus aplicaciones con LLMs."
+        },
+        {
+          "topics": [
+            "Comenzando",
+            "LLM"
+          ],
+          "title": "Descifrando los Misterios de la IA: Una Inmersión Profunda en el Conocimiento y las Limitaciones de los Modelos de Lenguaje Grande",
+          "description": "Desentraña el enigma de los Modelos de Lenguaje Grande (LLMs). Entiende cómo adquieren conocimiento, sus límites y las posibles trampas en tu viaje hacia la IA."
+        },
+        {
+          "topics": [
+            "LLM",
+            "Resumen",
+            "Evaluación"
+          ],
+          "title": "Podcast del Espacio Latente 4/6/23 [Resumen] - Fundamentos de IA: Introducción a los Benchmarks",
+          "description": "Explora los Fundamentos de IA en 'Introducción a los Benchmarks.' Sumérgete en la historia de los Benchmarks de LLM y descubre las complejidades que moldean el progreso del aprendizaje automático."
+        },
+        {
+          "topics": [
+            "Comenzando",
+            "LLM"
+          ],
+          "title": "Descifrando LLMs: Tu guía definitiva para entender los Modelos de Lenguaje Grande",
+          "description": "Sumérgete en el mundo de los Modelos de Lenguaje Grande (LLMs). Descubre su arquitectura, mecanismos de aprendizaje y el poder de los transformadores. Comienza tu carrera en IA aquí."
+        },
+        {
+          "topics": [
+            "LLM",
+            "Resumen",
+            "UX"
+          ],
+          "title": "Podcast Espacio Latente 6/8/23 [Resumen] - De RLHF a RLHB: El Caso para Aprender del Comportamiento Humano - con Jeffrey Wang y Joe Reeve de Amplitude",
+          "description": "Explora IA y analiticas con Jeffrey Wang y Joe Reeve en Espacio Latente en Vivo! Profundiza en por que la IA valora las Analiticas y el poder de los datos de comportamiento de primera parte."
+        },
+        {
+          "topics": [
+            "Resumen",
+            "LLM",
+            "Codigo",
+            "Codigo Abierto",
+            "Modelos Pequenos"
+          ],
+          "title": "Podcast Espacio Latente 8/4/23 [Resumen] Crossover de Espacio Latente x Desglose de IA!",
+          "description": "Unete al Desglose de IA y Espacio Latente para el resumen tecnologico de IA de verano: Sumergirse en GPT4.5, Llama 2, herramientas de IA, el ingeniero de IA en ascenso, y mas!"
+        },
+        {
+          "topics": [
+            "LLM",
+            "Resumen",
+            "Codigo"
+          ],
+          "title": "Podcast del Espacio Latente 3/2/23 [Resumen] - 97% Mas Barato, Rapido, Mejor, Correcto IA — con Varun Mohan de Codeium Podcast del Espacio Latente Ep. 2: Por que estas sujetando tus GPU de manera incorrecta",
+          "description": "Desbloquea la eficiencia de IA con Varun Mohan de Codeium mientras revela metodos que son 97% mas baratos y rapidos. Sumergite en el Podcast del Espacio Latente Ep. 2 para optimizar el uso de tu GPU!"
+        },
+        {
+          "topics": [
+            "LLM",
+            "Resumen"
+          ],
+          "title": "Podcast Espacio Latente 2/23 [Resumen] - ChatGPT, el entusiasmo por GPT4 y la creación de productos nativos de LLM con Logan Kilpatrick de OpenAI",
+          "description": "Explora ChatGPT, el entusiasmo alrededor de GPT4 y la creación de productos nativos de LLM con Logan Kilpatrick de OpenAI. ¡Sumérgete en el futuro de la IA en el Episodio 1 del Podcast Espacio Latente!"
+        },
+        {
+          "topics": [
+            "Hardware",
+            "LLM",
+            "Resumen"
+          ],
+          "title": "Podcast del Espacio Latente 20/06/23 [Resumen] - Comoditizando el Petaflop — con George Hotz de tiny corp",
+          "description": "¡George Hotz de tiny corp desafía a Nvidia y Google! Sumérgete en el mundo de las colaboraciones de AMD, percepciones sobre ggml, Mojo, Elon y GPT-4, además de un vistazo a AI Girlfriend."
+        },
+        {
+          "topics": [
+            "Resumen",
+            "Código",
+            "LLM"
+          ],
+          "title": "Podcast del Espacio Latente 7/10/23 [Resumen] - Intérprete de Código == GPT 4.5 (con Simon Willison, Alex Volkov, Aravind Srinivas, Alex Graveley, et al.)",
+          "description": "Explora el Intérprete de Código de ChatGPT: un cambio radical en IA. Sumérgete en su salto de capacidades 1000x con Simon, Alex y los principales expertos en IA. #CodeAugmentedInference #GPT4_5"
+        },
+        {
+          "topics": [
+            "Resumen",
+            "LLM",
+            "UX"
+          ],
+          "title": "Podcast del Espacio Latente 6/1/23 [Resumen] - Construyendo el Genio Escénico de AI × UX con Linus Lee de Notion AI",
+          "description": "Explora el enfoque transformador de Notion AI hacia la IA y UX. Sumérgete en el futuro de los espacios de trabajo aumentados por IA, el valor más allá de las interfaces de chat y las perspectivas sobre el trabajo efectivo con conocimiento. ¡Incluye un resumen del encuentro AI×UX NYC!"
+        },
+        {
+          "topics": [
+            "LLM",
+            "Código",
+            "Resumen"
+          ],
+          "title": "Podcast del Espacio Latente 5/3/23 [Resumen] - Entrenando un LLM de Código SOTA en 1 semana y Cuantificando las Vibraciones — con Reza Shabani de Replit",
+          "description": "Ep. 10 con Reza Shabani: Sumérgete profundamente en el entrenamiento rápido de un LLM de Código de última generación, explora el futuro de Replit Ghostwriter y viaja desde Finanzas hasta IA. ¡Descubre la transición de Kaplan a Chinchilla y más!"
+        },
+        {
+          "topics": [
+            "LLM",
+            "Empresa",
+            "Resumen"
+          ],
+          "title": "Podcast del Espacio Latente 21/04/23 [Resumen] - Búsqueda potenciada por IA para la Empresa — con Deedy Das de Glean",
+          "description": "Ep.8: Sumérgete en la IA en la búsqueda empresarial con Deedy Das de Glean. Analiza los desafíos al crear un gigante de búsqueda IA, comparaciones entre Google y ChatGPT, complejidades de la infraestructura de IA, identificación de textos generados por IA y por qué las empresas necesitan más que solo QA de Documentos."
+        },
+        {
+          "topics": [
+            "Comenzando",
+            "LLM"
+          ],
+          "title": "Dominando el Arte de Entrenar Modelos de Lenguaje Grande: Una Guia Completa",
+          "description": "Descubre los secretos del entrenamiento de LLM. Descubre las necesidades de datos, el proceso de entrenamiento, los desafios y la huella ambiental de entrenar LLMs."
+        },
+        {
+          "topics": [
+            "Resumen",
+            "LLM"
+          ],
+          "title": "Estado de GPT - Andrej Karpathy [Resumen]",
+          "description": "Sumérgete en las perspectivas de Andrej Karpathy sobre el desarrollo de GPT, aprendizaje poderoso, colapso de modo, uso de herramientas y recomendaciones clave. #IA #GPT #OpenAI"
+        },
+        {
+          "topics": [
+            "LLM",
+            "Hardware",
+            "Resumen",
+            "Borde"
+          ],
+          "title": "Podcast del Espacio Latente 8/10/23 [Resumen]: LLMs por todas partes: Ejecutando modelos de 70B en navegadores y iPhones usando MLC — con Tianqi Chen de CMU / OctoML",
+          "description": "Explora la magia de MLC con Tianqi Chen: desplegando modelos de 70B en navegadores y iPhones. Sumérgete en XGBoost, la creación de TVM y el futuro de las implementaciones universales de IA."
+        },
+        {
+          "topics": [
+            "LLM",
+            "Datos estructurados"
+          ],
+          "title": "Podcast del Espacio Latente 15/05/23 [Resumen] - Calidad y estructura garantizadas en las salidas de LLM - con Shreya Rajpal de Guardrails AI",
+          "description": "Explora el Ep. 12 con Shreya Rajpal de Guardrails AI: Profundiza en la validacion de las salidas de LLM, refinando respuestas mediante bucles de re-pregunta y estableciendo SLAs para modelos. Domina los matices de la garantia de calidad de IA."
+        },
+        {
+          "topics": [
+            "LLM",
+            "Entrenamiento",
+            "Agentes",
+            "Multimodal"
+          ],
+          "title": "Podcast del Espacio Latente 5/8/23 [Resumen] - El Gen del Fundador de IA: Ser Pionero, Construir Rapido y Creer en la Grandeza — con Sharif Shameem de Lexica",
+          "description": "Ep.11 con Sharif Shameem de Lexica: Sumergirse en la mentalidad del fundador de IA, descubriendo los secretos para la innovacion pionera, construyendo tecnologia revolucionaria, entrenando modelos y el potencial intrigante de Agentes y secuenciacion genomica."
+        },
+        {
+          "topics": [
+            "LLM",
+            "Modelos Pequenos"
+          ],
+          "title": "Podcast del Espacio Latente 20/05/23 [Resumen] - MPT-7B y El Comienzo de Contexto=Infinito — con Jonathan Frankle y Abhinav Venigalla de MosaicML",
+          "description": "Sumergirse en el entrenamiento de 9 dias, 200 mil dolares 'llongboi' MPT-7B de MosaicML, perspectivas de preparacion de datos, y el auge de modelos de IA abiertos con los expertos Frankle y Venigalla."
+        },
+        {
+          "topics": [
+            "Resumen",
+            "LLM"
+          ],
+          "title": "Modelos de lenguaje extensos, explicados con un mínimo de matemáticas y jerga [Resumen]",
+          "description": "Explora el poder de los modelos de lenguaje AI como GPT-3 y GPT-4, su impresionante rendimiento y el concepto de 'teoría de la mente' en AI."
+        },
+        {
+          "topics": [
+            "Resumen",
+            "LLM",
+            "Código Abierto",
+            "Modelos Pequeños"
+          ],
+          "title": "Podcast del Espacio Latente 19/07/23 [Resumen] - Llama 2: El Nuevo LLM Abierto SOTA (con Nathan Lambert, Matt Bornstein, Anton Troynikov, Russell Kaplan, Catálogo Whole Mars y otros)",
+          "description": "Explora Llama 2, el último avance en IA con expertos como Nathan Lambert, Matt Bornstein y más. Sumérgete en conjuntos de datos, benchmarks y predicciones de IA. ¡Percepciones y drama de Llama te esperan en este podcast destacado!"
+        },
+        {
+          "topics": [
+            "LLM",
+            "Modelos Pequeños",
+            "Resumen"
+          ],
+          "title": "Podcast del Espacio Latente 28/04/23 [Resumen] - Mapeando el futuro de Modelos Abiertos *verdaderamente* y Entrenando a Dolly por $30 — con Mike Conover de Databricks",
+          "description": "Explora el futuro de los modelos abiertos con Mike Conover de Databricks. Profundiza en la creación de Dolly, su transición de 1.0 a 2.0, y las influencias detrás de su desarrollo. Ep.9 aborda la infraestructura de modelos, la visión de Databricks, y más. #IA #ModelosAbiertos #Dolly"
+        },
+        {
+          "topics": [
+            "LLM",
+            "Funciones",
+            "Resumen"
+          ],
+          "title": "Podcast del Espacio Latente 6/14/23 [Resumen] - Pod de Emergencia: Nueva API de Funciones de OpenAI, Reducción del 75% en Precios, Longitud de Contexto 4x (con Alex Volkov, Simon Willison, Riley Goodside, Joshua Lochner, Stefania Druga, Eric Elliott, Mayo Oshin y otros)",
+          "description": "Explora las actualizaciones de OpenAI de junio de 2023 con los principales ingenieros de IA de Scale, Microsoft, Pinecone y Huggingface. Sumérgete en los paradigmas de Código x LLM y descubre los Agentes de Función Recursiva."
+        },
+        {
+          "topics": [
+            "Resumen",
+            "Codigo",
+            "LLM",
+            "Agentes"
+          ],
+          "title": "Podcast del Espacio Latente 25/05/23 [Resumen] - Depurando Internet con agentes de IA - con Itamar Friedman de Codium AI y AutoGPT",
+          "description": "Explora el futuro de la IA con Itamar Friedman de Codium AI en 'Depurando Internet'. Sumergente en agentes 'Extreme DRY', la sincronizacion rapida de especificaciones y pruebas, y el equilibrio entre codigo y pruebas. Ademas, perspectivas de Toran y una mirada exclusiva al roadmap de AutoGPT!"
+        }
+      ]
+    },
+    {
+      "name": "Aplicaciones",
+      "slug": "apps",
+      "articles": [
+        {
+          "topics": [
+            "Aplicaciones"
+          ],
+          "title": "Masterbots: Elevando la IA más allá de ChatGPT con Compartición Social e Innovación Amigable al Usuario",
+          "description": "El blog presenta Masterbots, una plataforma que revoluciona la interacción con la IA mediante chatbots amigables y específicos por dominio, y una característica única de compartición social, invitando a colaboradores a unirse a su desarrollo abierto y impulsado por la comunidad."
+        }
+      ]
+    },
+    {
+      "name": "Herramientas",
+      "slug": "tools",
+      "articles": [
+        {
+          "topics": [
+            "Resumen",
+            "LLM",
+            "Herramientas"
+          ],
+          "title": "Podcast Espacio Latente 23/03/23 [Resumen] - Podcast de Emergencia: El Momento de ChatGPT en la App Store (con Logan Kilpatrick de OpenAI, Florent Crivello de LindyAI y Nader Dabit)",
+          "description": "Explora el Ep.4 del podcast mientras expertos de OpenAI y LindyAI profundizan en los Plugins de ChatGPT. Descubre casos de uso, estrategias de monetización y el futuro de la integración de IA. #ChatGPT #AIPlugins"
+        }
+      ]
+    },
+    {
+      "name": "Multimodal",
+      "slug": "multimodal",
+      "articles": [
+        {
+          "topics": [
+            "LLM",
+            "Entrenamiento",
+            "Agentes",
+            "Multimodal"
+          ],
+          "title": "Podcast del Espacio Latente 5/8/23 [Resumen] - El Gen del Fundador de IA: Ser Pionero, Construir Rapido y Creer en la Grandeza — con Sharif Shameem de Lexica",
+          "description": "Ep.11 con Sharif Shameem de Lexica: Sumergirse en la mentalidad del fundador de IA, descubriendo los secretos para la innovacion pionera, construyendo tecnologia revolucionaria, entrenando modelos y el potencial intrigante de Agentes y secuenciacion genomica."
+        }
+      ]
+    },
+    {
+      "name": "Experiencia de Usuario",
+      "slug": "ux",
+      "articles": [
+        {
+          "topics": [
+            "LLM",
+            "Resumen",
+            "UX"
+          ],
+          "title": "Podcast Espacio Latente 6/8/23 [Resumen] - De RLHF a RLHB: El Caso para Aprender del Comportamiento Humano - con Jeffrey Wang y Joe Reeve de Amplitude",
+          "description": "Explora IA y analiticas con Jeffrey Wang y Joe Reeve en Espacio Latente en Vivo! Profundiza en por que la IA valora las Analiticas y el poder de los datos de comportamiento de primera parte."
+        },
+        {
+          "topics": [
+            "Resumen",
+            "LLM",
+            "UX"
+          ],
+          "title": "Podcast del Espacio Latente 6/1/23 [Resumen] - Construyendo el Scenius de AI × UX con Linus Lee de Notion AI",
+          "description": "Explora el enfoque transformador de Notion AI hacia la IA y UX. Sumérgete en el futuro de los espacios de trabajo aumentados por IA, el valor más allá de las interfaces de chat, y las perspectivas sobre el trabajo con conocimiento efectivo. ¡Incluye resumen del encuentro AI×UX NYC!"
+        }
+      ]
+    },
+    {
+      "name": "Ferretería",
+      "slug": "hardware",
+      "articles": [
+        {
+          "topics": [
+            "Hardware",
+            "LLM",
+            "Resumen"
+          ],
+          "title": "Podcast del Espacio Latente 6/20/23 [Resumen] - Comoditizando el Petaflop — con George Hotz de tiny corp",
+          "description": "¡George Hotz de tiny corp desafia a Nvidia y Google! Sumergirse en el mundo de las colaboraciones de AMD, perspectivas sobre ggml, Mojo, Elon y GPT-4, ademas de un vistazo a AI Girlfriend."
+        },
+        {
+          "topics": [
+            "LLM",
+            "Hardware",
+            "Resumen",
+            "Borde"
+          ],
+          "title": "Podcast del Espacio Latente 8/10/23 [Resumen]: LLMs por todas partes: Ejecutando modelos de 70B en navegadores y iPhones usando MLC — con Tianqi Chen de CMU / OctoML",
+          "description": "Explora la magia de MLC con Tianqi Chen: desplegando modelos de 70B en navegadores y iPhones. Sumérgete en XGBoost, la creación de TVM y el futuro de las implementaciones universales de IA."
+        }
+      ]
+    },
+    {
+      "name": "Código Abierto",
+      "slug": "open source",
+      "articles": [
+        {
+          "topics": [
+            "Resumen",
+            "Código Abierto",
+            "LLM"
+          ],
+          "title": "Podcast Espacio Latente 5/5/23 [Resumen] - Sin Foso: La IA Cerrada recibe su llamada de atención de Código Abierto — ft. Simon Willison",
+          "description": "Explora 'Sin Foso: El Despertar de Código Abierto de la IA Cerrada' con Simon Willison. Sumérgete en las percepciones del memo filtrado de Google Moat, la fuga de cerebros de Google, y el aumento de velocidad de Python con Mojo."
+        },
+        {
+          "topics": [
+            "Resumen",
+            "Transformadores",
+            "Entrenamiento",
+            "Código Abierto"
+          ],
+          "title": "Podcast del Espacio Latente 26/7/23 [Resumen] FlashAttention 2: haciendo los Transformadores 800% más rápidos - Tri Dao de Together AI",
+          "description": "Descubre cómo FlashAttention revolucionó la velocidad de la IA con Tri Dao, mientras él revela el poder de FlashAttention 2, se adentra en el Laboratorio Hazy de Stanford y las perspectivas futuras de la IA."
+        },
+        {
+          "topics": [
+            "Resumen",
+            "Código Abierto"
+          ],
+          "title": "Podcast Espacio Latente 7/2/23 [Resumen] Tendencias de IA: un crossover de Espacio Latente x IA Práctica",
+          "description": "Explora la fusión de IA Práctica y Espacio Latente mientras se adentran en las principales tendencias de IA de 2023, reflexionan sobre episodios destacados y comparten perspectivas sobre cómo navegar la evolución de la IA."
+        },
+        {
+          "topics": [
+            "Resumen",
+            "LLM",
+            "Código",
+            "Código Abierto",
+            "Modelos Pequeños"
+          ],
+          "title": "Podcast Espacio Latente 8/4/23 [Resumen] ¡Cruce de Espacio Latente x Desglose de IA!",
+          "description": "Únete al Desglose de IA y Espacio Latente para el resumen tecnológico de IA de verano: Sumérgete en GPT4.5, Llama 2, herramientas de IA, el ingeniero de IA en ascenso, y más!"
+        },
+        {
+          "topics": [
+            "Resumen",
+            "LLM",
+            "Código Abierto",
+            "Modelos Pequeños"
+          ],
+          "title": "Podcast Espacio Latente 19/07/23 [Resumen] - Llama 2: El Nuevo LLM Abierto SOTA (con Nathan Lambert, Matt Bornstein, Anton Troynikov, Russell Kaplan, Catálogo Completo de Marte y otros)",
+          "description": "Explora Llama 2, el último avance en IA con expertos como Nathan Lambert, Matt Bornstein y más. Sumérgete en conjuntos de datos, benchmarks y predicciones de IA. ¡Los detalles e intrigas de Llama te esperan en este podcast destacado!"
+        }
+      ]
+    },
+    {
+      "name": "Funciones",
+      "slug": "functions",
+      "articles": [
+        {
+          "topics": [
+            "LLM",
+            "Funciones",
+            "Resumen"
+          ],
+          "title": "Podcast Espacio Latente 6/14/23 [Resumen] - Podcast de Emergencia: Nueva API de Funciones de OpenAI, Reducción del 75% en Precios, Longitud de Contexto 4x (con Alex Volkov, Simon Willison, Riley Goodside, Joshua Lochner, Stefania Druga, Eric Elliott, Mayo Oshin y otros)",
+          "description": "Explora las actualizaciones de OpenAI de junio de 2023 con los principales ingenieros de IA de Scale, Microsoft, Pinecone y Huggingface. Sumérgete en los paradigmas de Código x LLM y descubre los Agentes de Función Recursiva."
+        }
+      ]
+    },
+    {
+      "name": "LLMOps",
+      "slug": "llmops",
+      "articles": [
+        {
+          "topics": [
+            "Resumen",
+            "LLMOps"
+          ],
+          "title": "Podcast del Espacio Latente 4/6/23 [Resumen] - Investigación Aplicada: De Google Brain a MLOps a LLMOps — con Shreya Shankar de UC Berkeley",
+          "description": "Explora la evolución de MLOps con Shreya Shankar desde Google Brain hasta UC Berkeley. Sumérgete en el puente entre desarrollo y producción, comprendiendo los modelos de ML como vistas únicas de bases de datos. #ML #Investigación"
+        }
+      ]
+    },
+    {
+      "name": "Privacidad",
+      "slug": "privacy",
+      "articles": [
+        {
+          "topics": [
+            "Comenzando",
+            "Privacidad"
+          ],
+          "title": "Asegurando el Castillo: Explorando LLMs y la Frontera de la Privacidad de Datos",
+          "description": "Sumérgete en el mundo de los LLMs y la privacidad de datos. Descubre los desafíos y cómo se están conquistando, paso a paso."
+        }
+      ]
+    },
+    {
+      "name": "Visión",
+      "slug": "vision",
+      "articles": [
+        {
+          "topics": [
+            "Resumen",
+            "Visión"
+          ],
+          "title": "Podcast del Espacio Latente 13/04/23 [Resumen] - Modelo de Segmentar Cualquier Cosa y los Problemas Difíciles de la Visión por Computadora — con Joseph Nelson de Roboflow",
+          "description": "Explora el Ep.7 con Joseph Nelson sobre el Modelo de Segmentar Cualquier Cosa de Meta. Profundiza en el futuro de la Visión por Computadora, la importancia de OCR, Segmentación de Imágenes y más. #Roboflow #IA"
+        }
+      ]
+    },
+    {
+      "name": "Seguridad",
+      "slug": "safety",
+      "articles": [
+        {
+          "topics": [
+            "Comenzando",
+            "Alineación",
+            "Seguridad"
+          ],
+          "title": "Navegando el Laberinto Moral: Desentrañando la Ética de los Modelos de Lenguaje de Gran Escala",
+          "description": "Embarcate en un viaje a través del complejo paisaje de la ética de IA. Descubre cómo el sesgo se infiltra en los LLM y aprende los pasos que se están tomando para asegurar un uso responsable."
+        }
+      ]
+    },
+    {
+      "name": "Código",
+      "slug": "code",
+      "articles": [
+        {
+          "topics": [
+            "Resumen",
+            "LLM",
+            "Código",
+            "Código Abierto",
+            "Modelos Pequeños"
+          ],
+          "title": "Podcast Espacio Latente 8/4/23 [Resumen] ¡Cruce de Espacio Latente x Desglose de IA!",
+          "description": "Únete a Desglose de IA y Espacio Latente para el resumen tecnológico de IA de verano: Sumérgete en GPT4.5, Llama 2, herramientas de IA, el ingeniero de IA en ascenso, y más!"
+        },
+        {
+          "topics": [
+            "Resumen",
+            "Código",
+            "LLM"
+          ],
+          "title": "Podcast del Espacio Latente 7/10/23 [Resumen] - Intérprete de Código == GPT 4.5 (con Simon Willison, Alex Volkov, Aravind Srinivas, Alex Graveley, et al.)",
+          "description": "Explora el Intérprete de Código de ChatGPT: un cambio radical en IA. Sumérgete en su salto de capacidades 1000x con Simon, Alex y los principales expertos en IA. #CodeAugmentedInference #GPT4_5"
+        },
+        {
+          "topics": [
+            "Resumen",
+            "Código",
+            "LLM",
+            "Agentes"
+          ],
+          "title": "Podcast del Espacio Latente 25/05/23 [Resumen] - Depurando Internet con agentes de IA – con Itamar Friedman de Codium AI y AutoGPT",
+          "description": "Explora el futuro de la IA con Itamar Friedman de Codium AI en 'Depurando Internet'. Sumérgete en los agentes 'Extreme DRY', la sincronización rápida de especificaciones y pruebas, y el equilibrio entre código y pruebas. ¡Además, percepciones de Toran y una mirada exclusiva al roadmap de AutoGPT!"
+        },
+        {
+          "topics": [
+            "LLM",
+            "Código",
+            "Resumen"
+          ],
+          "title": "Podcast del Espacio Latente 5/3/23 [Resumen] - Entrenando un LLM de Código SOTA en 1 semana y Cuantificando las Vibraciones — con Reza Shabani de Replit",
+          "description": "Ep. 10 con Reza Shabani: Sumérgete en el entrenamiento rápido de un LLM de Código de última generación, explora el futuro de Replit Ghostwriter y viaja desde Finanzas hasta IA. ¡Descubre la transición de Kaplan a Chinchilla y más!"
+        },
+        {
+          "topics": [
+            "LLM",
+            "Resumen",
+            "Código"
+          ],
+          "title": "Podcast Espacio Latente 3/2/23 [Resumen] - 97% más barato, más rápido, mejor, IA correcta — con Varun Mohan de Codeium Podcast Espacio Latente Ep. 2: ¿Por qué estás sujetando tus GPU de manera incorrecta?",
+          "description": "Desbloquea la eficiencia de IA con Varun Mohan de Codeium mientras revela métodos que son 97% más baratos y rápidos. ¡Sumérgete en el Podcast Espacio Latente Ep. 2 para optimizar el uso de tu GPU!"
+        }
+      ]
+    },
+    {
+      "name": "Alineación",
+      "slug": "alignment",
+      "articles": [
+        {
+          "topics": [
+            "Comenzando",
+            "Alineación",
+            "Seguridad"
+          ],
+          "title": "Navegando el Laberinto Moral: Desentrañando la Ética de los Modelos de Lenguaje Grandes",
+          "description": "Embarcate en un viaje a través del complejo paisaje de la ética de IA. Descubre cómo el sesgo se infiltra en los LLM y aprende los pasos que se están tomando para asegurar un uso responsable."
+        }
+      ]
+    },
+    {
+      "name": "IA",
+      "slug": "agi",
+      "articles": [
+        {
+          "topics": [
+            "Comenzando",
+            "IA General"
+          ],
+          "title": "Los Titanes del Mañana: El Futuro de los Modelos de Lenguaje de Gran Escala y Su Influencia en el Mercado Laboral y la IA General",
+          "description": "Descubre el futuro de los LLMs, sus impactos potenciales en el mercado laboral y su papel en el camino hacia la Inteligencia General Artificial."
+        }
+      ]
+    },
+    {
+      "name": "Comenzando",
+      "slug": "getting started",
+      "articles": [
+        {
+          "topics": [
+            "Comenzando",
+            "Legal"
+          ],
+          "title": "¿Copiar eso? LLMs, Derechos de Autor y el Predicamento del Plagio",
+          "description": "Descubre las complejidades de cómo los Modelos de Lenguaje Grande navegan el laberinto de las leyes de derechos de autor y la amenaza inminente del plagio."
+        },
+        {
+          "topics": [
+            "Comenzando",
+            "Personalización"
+          ],
+          "title": "Modelos de Lenguaje Grandes: Creando Experiencias Digitales Personalizadas",
+          "description": "Desata el potencial de los Modelos de Lenguaje Grandes (LLMs) en la creación de experiencias digitales hiperpersonalizadas y recomendaciones de contenido. ¡Impulsa tu carrera en IA hoy!"
+        },
+        {
+          "topics": [
+            "Comenzando"
+          ],
+          "title": "Dominando la IA: Una Introduccion Exhaustiva a los Modelos de Lenguaje de Gran Escala (LLMs)",
+          "description": "Inicia tu carrera en IA con nuestra guia detallada sobre LLMs. Aprende sobre su historia, singularidad y potencial futuro en este campo en evolucion."
+        },
+        {
+          "topics": [
+            "Comenzando",
+            "Privacidad"
+          ],
+          "title": "Asegurando el Castillo: Explorando LLMs y la Frontera de la Privacidad de Datos",
+          "description": "Sumérgete en el mundo de los LLMs y la privacidad de datos. Descubre los desafíos y cómo se están conquistando, paso a paso."
+        },
+        {
+          "topics": [
+            "Comenzando",
+            "IA General"
+          ],
+          "title": "Los Titanes del Mañana: El Futuro de los Modelos de Lenguaje de Gran Escala y Su Influencia en el Mercado Laboral y la IA General",
+          "description": "Descubre el futuro de los LLMs, sus impactos potenciales en el mercado laboral y su papel en el camino hacia la Inteligencia General Artificial."
+        },
+        {
+          "topics": [
+            "Comenzando",
+            "LLM"
+          ],
+          "title": "Descifrando LLMs: Tu guía definitiva para entender los Modelos de Lenguaje Grande",
+          "description": "Sumérgete en el mundo de los Modelos de Lenguaje Grande (LLMs). Descubre su arquitectura, mecanismos de aprendizaje y el poder de los transformadores. Comienza tu carrera en IA aquí."
+        },
+        {
+          "topics": [
+            "Comenzando",
+            "Industria"
+          ],
+          "title": "Empoderando el Futuro: Desplegando el Poder de los Modelos de Lenguaje de Gran Escala en Diversas Industrias",
+          "description": "Explora el poder transformador de los Modelos de Lenguaje de Gran Escala en varios sectores! Descubre historias de éxito, casos de uso y el futuro de la IA!"
+        },
+        {
+          "topics": [
+            "Comenzando",
+            "Alineación",
+            "Seguridad"
+          ],
+          "title": "Navegando el Laberinto Moral: Desentrañando la Ética de los Modelos de Lenguaje de Gran Escala",
+          "description": "Embarcate en un viaje a través del complejo paisaje de la ética de IA. Descubre cómo el sesgo se infiltra en los LLM y aprende los pasos que se están tomando para asegurar un uso responsable."
+        },
+        {
+          "topics": [
+            "Comenzando",
+            "LLM"
+          ],
+          "title": "Dominando el Arte de los LLMs: Una Guía Práctica para Implementar Modelos de Lenguaje Extensos",
+          "description": "¡Desbloquea el poder de la IA! Navega el mundo de los Modelos de Lenguaje Extensos, explora plataformas populares y aprende las mejores prácticas para potenciar tus aplicaciones con LLMs."
+        },
+        {
+          "topics": [
+            "Comenzando",
+            "LLM"
+          ],
+          "title": "Dominando el Arte de Entrenar Modelos de Lenguaje Grande: Una Guía Completa",
+          "description": "Descubre los secretos del entrenamiento de LLM. Descubre las necesidades de datos, el proceso de entrenamiento, los desafíos y la huella ambiental de entrenar LLMs."
+        },
+        {
+          "topics": [
+            "Comenzando",
+            "LLM"
+          ],
+          "title": "Descifrando los Misterios de la IA: Una Inmersión Profunda en el Conocimiento y las Limitaciones de los Modelos de Lenguaje Grande",
+          "description": "Desentraña el enigma de los Modelos de Lenguaje Grande (LLM). Entiende cómo adquieren conocimiento, sus límites y las posibles trampas en tu viaje hacia la IA."
+        }
+      ]
+    },
+    {
+      "name": "Personalización",
+      "slug": "personalization",
+      "articles": [
+        {
+          "topics": [
+            "Comenzando",
+            "Personalización"
+          ],
+          "title": "Modelos de Lenguaje Grandes: Creando Experiencias Digitales Personalizadas",
+          "description": "Desata el potencial de los Modelos de Lenguaje Grandes (LLMs) en la creación de experiencias digitales hiperpersonalizadas y recomendaciones de contenido. ¡Impulsa tu carrera en IA hoy!"
+        }
+      ]
+    },
+    {
+      "name": "Borde",
+      "slug": "edge",
+      "articles": [
+        {
+          "topics": [
+            "LLM",
+            "Hardware",
+            "Resumen",
+            "Borde"
+          ],
+          "title": "Podcast del Espacio Latente 8/10/23 [Resumen]: LLMs por todas partes: Ejecutando modelos de 70B en navegadores y iPhones usando MLC — con Tianqi Chen de CMU / OctoML",
+          "description": "Explora la magia de MLC con Tianqi Chen: desplegando modelos de 70B en navegadores y iPhones. Sumérgete en XGBoost, la creación de TVM y el futuro de las implementaciones universales de IA."
+        }
+      ]
+    },
+    {
+      "name": "Evaluacion",
+      "slug": "evaluation",
+      "articles": [
+        {
+          "topics": [
+            "LLM",
+            "Resumen",
+            "Evaluacion"
+          ],
+          "title": "Podcast del Espacio Latente 4/6/23 [Resumen] - Fundamentos de IA: Introduccion a los Benchmarks",
+          "description": "Explora los Fundamentos de IA en 'Introduccion a los Benchmarks.' Sumergente en la historia del Benchmarking de LLM y descubre las complejidades que moldean el progreso del aprendizaje automatico."
+        }
+      ]
+    }
+  ],
+  "pageSeo": {
+    "pageSeo": {
+      "description": "Lorem ipsum dolor sit amet",
+      "image": null,
+      "title": "AI | Bitcash Blog",
+      "twitterCard": "summary_large_image"
+    },
+    "description": "Inteligencia, Reimaginada.",
+    "title": "IA",
+    "seoType": "ai",
+    "id": "178642405",
+    "_createdAt": "2023-07-24T18:38:43+01:00"
+  }
+}

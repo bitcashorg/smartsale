@@ -73,6 +73,21 @@ export async function getArticleSections(
     bitcashData,
     aiResearchData
   } = await getBlogData(locale)
+  const dirPath = `dictionaries/${locale}/blog/`
+  const fileName = `blog-index.json`
+  const filePath = `${dirPath}/${fileName}`
+
+  // return cached translations
+  try {
+    const fileContents = JSON.parse(fs.readFileSync(filePath, 'utf8'))
+    return fileContents.sections
+  } catch (error) {
+    // console.log('error', error)
+    const englishVersion = JSON.parse(
+      fs.readFileSync(`dictionaries/en/blog/${fileName}`, 'utf8')
+    )
+    if (englishVersion) return englishVersion.sections
+  }
 
   const sections: ArticlesSection[] = [
     {
@@ -116,6 +131,15 @@ export async function getArticleSections(
       articles: (investingData?.slice(1, 5) || []) as BlogArticleRecord[]
     }
   ]
+
+  sections.forEach(section => {
+    section.articles.forEach(article => {
+      article.contentBlock = []
+    })
+  })
+
+  fs.mkdirSync(dirPath, { recursive: true })
+  fs.writeFileSync(filePath, JSON.stringify({ sections }, null, 2))
 
   return sections
 }
@@ -169,6 +193,23 @@ export async function getBlogCategoryLandingData(
     getBlogCategory(category, locale, [locale], undefined, 100),
     getPageSeoText(category, locale, [locale])
   ])
+
+  const dirPath = `dictionaries/${locale}/blog/${category}`
+  const fileName = `${category}-index.json`
+  const filePath = `${dirPath}/${fileName}`
+
+  // return cached translations
+  try {
+    const fileContents = JSON.parse(fs.readFileSync(filePath, 'utf8'))
+    return fileContents
+  } catch (error) {
+    // console.log('error', error)
+    const englishVersion = JSON.parse(
+      fs.readFileSync(`dictionaries/en/blog/${category}/${fileName}`, 'utf8')
+    )
+    if (englishVersion) return englishVersion
+  }
+
   // replacing category kebab case with camel case
   const blogCategory = category.replace(/(\-\w)/g, (m: string) =>
     m[1].toUpperCase()
@@ -194,6 +235,10 @@ export async function getBlogCategoryLandingData(
     const articles = categoryContent.filter(content =>
       content.topics.includes(tp)
     )
+    articles.forEach(article => {
+      article.contentBlock = []
+    })
+
     return {
       name: tp,
       slug: `${tp.toLocaleLowerCase()}`,
@@ -201,7 +246,10 @@ export async function getBlogCategoryLandingData(
     }
   })
 
-  const result = { sections, pageSeo, i18n }
+  const result = { sections, pageSeo }
+
+  fs.mkdirSync(dirPath, { recursive: true })
+  fs.writeFileSync(filePath, JSON.stringify(result, null, 2))
 
   return result
 }
