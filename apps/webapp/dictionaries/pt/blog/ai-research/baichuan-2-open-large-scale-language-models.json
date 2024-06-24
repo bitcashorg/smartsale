@@ -1,0 +1,550 @@
+{
+  "relatedBlogs": [],
+  "blogContent": {
+    "id": "198277345",
+    "topics": [
+      "LLM",
+      "Multilíngue"
+    ],
+    "title": "Baichuan 2: Modelos de Linguagem de Grande Escala Abertos",
+    "slug": "baichuan-2-open-large-scale-language-models",
+    "authorName": "Prof. Otto Nomos",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+    },
+    "_publishedAt": "2024-05-24T05:59:10+01:00",
+    "description": "Comentário e Avaliação Resumidos",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Publicado em 18 de Setembro"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Autores: Aiyuan Yang,"
+                    },
+                    {
+                      "url": "https://huggingface.co/BinXiao",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Bin Xiao"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ",Bingning Wang, Borong Zhang, Chao Yin, Chenxu Lv, Da Pan,"
+                    },
+                    {
+                      "url": "https://huggingface.co/wangdianhellen",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Dian Wang"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ",Dong Yan, Fan Yang, Fei Deng, Feng Wang, Feng Liu, Guangwei Ai, Guosheng Dong Haizhou Zhao, Hang Xu, Haoze Sun,"
+                    },
+                    {
+                      "url": "https://huggingface.co/hongdaaaaaaaa",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Hongda Zhang"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ",Hui Liu,"
+                    },
+                    {
+                      "url": "https://huggingface.co/jijiaming",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Jiaming Ji"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/hsaest",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Jian Xie"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/calico-1226",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Juntao Dai"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": "+30 autores"
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Resumo"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Modelos de linguagem de grande escala (LLMs) demonstraram desempenho notável em uma variedade de tarefas de linguagem natural com base em apenas alguns exemplos de instruções de linguagem natural, reduzindo a necessidade de engenharia de recursos extensiva. No entanto, a maioria dos LLMs poderosos são de código fechado ou limitados em sua capacidade para idiomas que não o inglês. Neste relatório técnico, apresentamos o Baichuan 2, uma série de modelos de linguagem multilíngues de grande escala contendo 7 bilhões e 13 bilhões de parâmetros, treinados do zero, em 2,6 trilhões de tokens. Baichuan 2 iguala ou supera outros modelos de código aberto de tamanho semelhante em benchmarks públicos como MMLU, CMMLU, GSM8K e HumanEval. Além disso, Baichuan 2 se destaca em domínios verticais como medicina e direito. Vamos liberar todos os pontos de controle do modelo pré-treinamento para beneficiar a comunidade de pesquisa na melhor compreensão da dinâmica de treinamento do Baichuan 2."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "url": "https://arxiv.org/abs/2309.10305",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Ver página arXiv"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "https://arxiv.org/pdf/2309.10305",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Ver PDF"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Comentário"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "O artigo \"Baichuan 2: Modelos de Linguagem de Grande Escala Abertos\" introduz uma série de modelos de linguagem multilíngues de grande escala e enfatiza suas capacidades em várias tarefas, incluindo aplicações específicas de domínio como medicina e direito."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Principais Conclusões:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "LLM Multilíngue"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Baichuan 2 é multilíngue, tornando-o adequado para tarefas em múltiplos idiomas, abordando a limitação de outros LLMs poderosos que se concentram principalmente em inglês."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Escala Significativa"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": O modelo possui 7 bilhões e 13 bilhões de parâmetros e foi treinado em um massivo 2,6 trilhões de tokens, tornando-o um LLM poderoso."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Desempenho em Benchmarks"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Baichuan 2 apresenta desempenho competitivo em benchmarks públicos, igualando ou até superando outros modelos de código aberto de tamanho semelhante."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Especialização em Domínios"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": O modelo mostra excelência em domínios verticais como medicina e direito, indicando sua versatilidade."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Disponibilidade de Código Aberto"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Todos os pontos de controle do modelo pré-treinamento serão liberados, auxiliando a comunidade de pesquisa a entender a dinâmica de treinamento do Baichuan 2."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Impacto Potencial no Mundo Real:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Ampla Aplicabilidade"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": A natureza multilíngue do Baichuan 2 permite que seja aplicado a várias tarefas em diferentes idiomas, tornando-o uma ferramenta versátil no ecossistema global de PLN."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Domínios de Alto Valor"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": A excelência do modelo em domínios como medicina e direito pode pavimentar o caminho para aplicações específicas de domínio, como análise de documentos legais ou assistência ao diagnóstico médico com base em dados textuais."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Impulso à Pesquisa"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": A natureza de código aberto do modelo provavelmente incentivará mais pesquisas para entender e melhorar LLMs de grande escala, expandindo os limites do que eles podem alcançar."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Redução da Engenharia de Recursos"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Dado seu desempenho com exemplos mínimos, Baichuan 2 pode reduzir significativamente a necessidade de engenharia de recursos em tarefas de PLN, simplificando os processos de desenvolvimento de modelos."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Desafios:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Intensidade de Recursos"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Modelos tão grandes geralmente vêm com altos custos computacionais, tornando sua implantação em tempo real em certos ambientes desafiadora."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Viéses Potenciais"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Como outros LLMs, o risco de viéses inerentes aos dados de treinamento pode se manifestar nas saídas do modelo, especialmente dado seu tamanho."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Dado o significativo tamanho do modelo, capacidades multilíngues, alto desempenho em benchmarks e excelência específica de domínio:"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Eu classificaria o impacto real deste artigo como 9 de 10."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Baichuan 2 aborda uma lacuna crítica no espaço LLM ao fornecer um modelo multilíngue poderoso. Seu desempenho competitivo, combinado com o potencial para aplicações específicas de domínio, o torna uma contribuição impactante para o campo da PLN."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "researchpaper9",
+            "height": 816,
+            "width": 1456,
+            "filename": "researchpaper9.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Comentário e Avaliação Resumidos",
+      "title": "Baichuan 2: Modelos de Linguagem de Grande Escala Abertos",
+      "twitterCard": null,
+      "image": {
+        "width": 1456,
+        "height": 816,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      }
+    }
+  },
+  "topics": [
+    "LLM",
+    "Multilingual"
+  ]
+}

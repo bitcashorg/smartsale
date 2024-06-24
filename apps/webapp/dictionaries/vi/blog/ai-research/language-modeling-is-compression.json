@@ -1,0 +1,473 @@
+{
+  "relatedBlogs": [],
+  "blogContent": {
+    "id": "198277277",
+    "topics": [
+      "LLM",
+      "Nén"
+    ],
+    "title": "Mô hình ngôn ngữ là nén",
+    "slug": "language-modeling-is-compression",
+    "authorName": "Prof. Otto Nomos",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+    },
+    "_publishedAt": "2024-05-25T03:37:32+01:00",
+    "description": "Bình luận & Đánh giá tóm tắt",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Xuất bản vào ngày 19 tháng 9"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Các tác giả: Grégoire Delétang, Anian Ruoss,"
+                    },
+                    {
+                      "url": "https://huggingface.co/padqn",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Paul-Ambroise Duquenne"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ", Elliot Catt, Tim Genewein, Christopher Mattern, Jordi Grau-Moya, Li Kevin Wenliang, Matthew Aitchison,"
+                    },
+                    {
+                      "url": "https://huggingface.co/lorseau",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Laurent Orseau"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ", Marcus Hutter, Joel Veness"
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tóm tắt"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Đã từ lâu, các mô hình dự đoán có thể được chuyển đổi thành bộ nén không mất dữ liệu và ngược lại. Gần đây, cộng đồng học máy đã tập trung vào việc đào tạo các mô hình tự giám sát (ngôn ngữ) ngày càng lớn và mạnh mẽ. Vì các mô hình ngôn ngữ lớn này thể hiện khả năng dự đoán ấn tượng, chúng có vị trí tốt để trở thành bộ nén mạnh mẽ. Trong công trình này, chúng tôi ủng hộ việc xem xét vấn đề dự đoán qua lăng kính của nén và đánh giá khả năng nén của các mô hình (nền tảng) lớn. Chúng tôi chỉ ra rằng các mô hình ngôn ngữ lớn là những bộ dự đoán đa năng mạnh mẽ và quan điểm nén cung cấp cái nhìn mới mẻ vào các định luật tỷ lệ, mã hóa và học trong bối cảnh. Ví dụ, Chinchilla 70B, mặc dù được đào tạo chủ yếu trên văn bản, nén các miếng vá ImageNet xuống còn 43,4% và mẫu LibriSpeech xuống còn 16,4% kích thước gốc của chúng, vượt qua các bộ nén chuyên ngành như PNG (58,5%) hoặc FLAC (30,3%), tương ứng. Cuối cùng, chúng tôi chỉ ra rằng sự tương đương giữa dự đoán và nén cho phép chúng tôi sử dụng bất kỳ bộ nén nào (như gzip) để xây dựng một mô hình sinh điều kiện."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "url": "https://arxiv.org/abs/2309.10668",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Xem trang arXiv"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "https://arxiv.org/pdf/2309.10668",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Xem PDF"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Bình luận"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Bài báo \"Mô hình ngôn ngữ là nén\" xem xét lại khái niệm đã được thiết lập tốt rằng các mô hình dự đoán cũng có thể được sử dụng như các bộ nén không mất dữ liệu và đánh giá cách ý tưởng này có thể được áp dụng cho các mô hình ngôn ngữ quy mô lớn hiện đại."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Những điểm chính:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Nén như Dự đoán"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Bài báo thúc đẩy ý tưởng sử dụng các mô hình dự đoán (như LLM hiện đại) làm bộ nén hiệu quả. Với khả năng dự đoán mạnh mẽ của chúng, các mô hình này có thể nén nhiều loại dữ liệu khác nhau."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Bộ nén đa năng"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Nghiên cứu chỉ ra rằng các mô hình ngôn ngữ lớn, ngay cả khi được đào tạo chủ yếu trên văn bản, có thể nén dữ liệu phi văn bản một cách hiệu quả. Ví dụ, Chinchilla 70B có thể nén hình ảnh ImageNet và mẫu âm thanh LibriSpeech tốt hơn các bộ nén chuyên ngành như PNG và FLAC."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Thu nhận cái nhìn"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Việc xem xét dự đoán từ góc độ nén có thể cung cấp cái nhìn sâu sắc vào các khía cạnh khác nhau của học máy, chẳng hạn như các định luật tỷ lệ, mã hóa và học trong bối cảnh."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Mô hình sinh từ bộ nén"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Sự tương đương giữa dự đoán và nén cho phép tạo ra các mô hình sinh điều kiện sử dụng bất kỳ bộ nén nào."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tác động thực tế tiềm năng:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Lưu trữ và truyền tải dữ liệu"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Nếu LLM có thể được sử dụng hiệu quả như các bộ nén, chúng có thể cách mạng hóa lưu trữ và truyền tải dữ liệu, đặc biệt là đối với phương tiện phong phú như hình ảnh và âm thanh."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Vượt ra ngoài văn bản"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Việc chứng minh rằng một mô hình được đào tạo với văn bản có thể nén dữ liệu phi văn bản mở ra cánh cửa cho các ứng dụng đa phương tiện và cho thấy khả năng tổng quát hóa của các LLM hiện đại."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Hiểu biết tốt hơn về LLM"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Quan điểm nén có thể cung cấp cái nhìn sâu sắc hơn về cách thức hoạt động và các ứng dụng tiềm năng của các mô hình ngôn ngữ lớn."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Ứng dụng sinh"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Khả năng chuyển đổi bất kỳ bộ nén nào thành một mô hình sinh điều kiện có thể có những hậu quả rộng rãi trong các nhiệm vụ tạo dữ liệu, tổng hợp và tăng cường."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Thách thức:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Nguồn lực tính toán"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Sử dụng các mô hình ngôn ngữ lớn làm bộ nén có thể tốn kém về mặt tính toán, khiến chúng kém tiếp cận được cho các ứng dụng thời gian thực hoặc cho người dùng có nguồn lực hạn chế."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Chuyên môn hóa lĩnh vực"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Đối với một số lĩnh vực cụ thể, các bộ nén chuyên ngành có thể vẫn được ưa chuộng do các ràng buộc và yêu cầu cụ thể của lĩnh vực đó."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Xét đến tiềm năng cho những đột phá trong lưu trữ, truyền tải dữ liệu và hiểu biết rộng hơn về LLM:"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tôi đánh giá tác động thực tế của bài báo này là 9 trên 10."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Cầu nối giữa dự đoán và nén không hoàn toàn mới, nhưng ứng dụng của bài báo đối với các LLM hiện đại và kết quả mà nó đạt được là đáng chú ý. Nếu những phát hiện này có thể được triển khai hiệu quả, nó có thể mở đường cho các ứng dụng mới và hiểu biết sâu sắc hơn về các mô hình ngôn ngữ."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "researchpaper9",
+            "height": 816,
+            "width": 1456,
+            "filename": "researchpaper9.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Bình luận & Đánh giá tóm tắt\n",
+      "title": "Mô hình ngôn ngữ là nén",
+      "twitterCard": null,
+      "image": {
+        "width": 1456,
+        "height": 816,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      }
+    }
+  },
+  "topics": [
+    "LLM",
+    "Compression"
+  ]
+}

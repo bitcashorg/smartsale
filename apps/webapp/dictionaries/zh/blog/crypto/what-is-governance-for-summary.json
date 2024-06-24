@@ -1,0 +1,404 @@
+{
+  "relatedBlogs": [
+    {
+      "id": "180563939",
+      "topics": [
+        "DAO",
+        "代币经济学",
+        "评论"
+      ],
+      "title": "区块链治理设计框架：Prysm Group 轮 [评论]",
+      "slug": "a-framework-for-blockchain-governance-design-the-prysm-group-wheel-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:19:19+01:00",
+      "description": "使用 Prysm Group 轮导航区块链治理的复杂性。您的有效区块链治理设计路线图。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690861154-cbc11-img1.webp"
+      },
+      "seo": {
+        "title": "区块链治理设计框架 [评论]",
+        "description": "使用 Prysm Group 轮导航区块链治理的复杂性。您的有效区块链治理设计路线图。"
+      }
+    },
+    {
+      "id": "167184977",
+      "topics": [
+        "代币经济学",
+        "DAO",
+        "筹资"
+      ],
+      "title": "颠覆股权模式：代币经济学如何颠覆创业世界",
+      "slug": "revolutionizing-the-equity-model-how-tokenomics-is-disrupting-the-startup-world",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:02:51+01:00",
+      "description": "通过代币经济学解锁创业的未来！探索这一创新概念如何重塑股权模式并革新创业格局。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1687395688-tb2-img1.png"
+      },
+      "seo": {
+        "title": "代币经济学如何颠覆创业世界",
+        "description": "探索这一创新概念如何重塑股权模式并革新创业格局。"
+      }
+    },
+    {
+      "id": "166981063",
+      "topics": [
+        "入门",
+        "DAO"
+      ],
+      "title": "未来已来：去中心化自治组织（DAO）的崛起",
+      "slug": "the-future-is-here-the-rise-of-decentralized-autonomous-organizations-daos",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T08:57:02+01:00",
+      "description": "在我们的指南中探索去中心化自治组织（DAO）的崛起。了解商业的未来和创业的机会。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1687381524-db1-img1.png"
+      },
+      "seo": {
+        "title": "去中心化自治组织的崛起",
+        "description": "在我们的指南中探索去中心化自治组织（DAO）的崛起。了解商业的未来和创业的机会。"
+      }
+    }
+  ],
+  "blogContent": {
+    "id": "180563908",
+    "topics": [
+      "DAO",
+      "摘要"
+    ],
+    "title": "治理的意义是什么？[摘要]",
+    "slug": "what-is-governance-for-summary",
+    "authorName": "Crypto Clairity",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+    },
+    "_publishedAt": "2023-10-05T09:10:45+01:00",
+    "description": "探索治理在区块链系统中的角色和重要性。了解治理如何推动去中心化和增长。",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1690859755-cbc7-img1.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "原始链接："
+                    },
+                    {
+                      "url": "https://medium.com/prysmeconomics/what-is-governance-for-1bb2376a2134?source=user_profile---------10----------------------------",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noopener follow"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "治理的意义是什么？"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "作者："
+                    },
+                    {
+                      "url": "https://medium.com/@cathybarreraphd?source=post_page-----1bb2376a2134--------------------------------",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noopener follow"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Cathy Barrera, PhD"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "摘要"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "区块链治理系统在建立决策过程规则和使组织能够随时间适应方面至关重要。然而，如果在没有明确目标的情况下定义这些系统，可能会导致无效的设计。经济学可以在这个背景下为我们提供指导，因为它在治理方面提供了宝贵的见解。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "治理系统的存在是为了使组织能够在情况变化和更多信息可用时进行适应。这种适应性至关重要，因为不可能提前定义每一个潜在的决策。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "历史上，治理一直是私人公司大股东的特权，而在较大的组织中，利益相关者通常会选举董事会，然后董事会任命CEO来处理日常决策。单一决策者背后的理由通常在于信息收集和应用的效率，以及比群体决策更有效的激励对齐和问责制。然而，这并不一定意味着这是唯一有效的治理模式，特别是在考虑区块链治理时。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "那么，这对区块链治理意味着什么？"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "必须记住，治理的本质是建立未来决策的机制。区块链技术虽然带来了新的机会和挑战，但并没有改变这一基本点。指导治理设计的问题仍然是："
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "需要做出什么类型的决策？"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "这些决策需要什么信息？"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "做出这些决策需要什么专业知识？"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "应考虑谁的偏好？"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "谁应该直接参与决策过程？"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "如何选择这些人？"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "选择过程中可能出现的错误是什么，如何将其最小化？"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "如何确保决策的实施？"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "如何识别规则违规行为，应该有什么后果？"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "在区块链治理的背景下，这些问题可以以创新的方式进行探索。例如，决策可能是去中心化的，涉及代币持有者，从而减少集中控制的风险，并可能增加透明度和公平性。一个结构良好的区块链治理系统还可以使用智能合约来自动化决策实施和执行规则，减少对中央权威的依赖。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "区块链的独特性质还允许更流动和动态的治理结构，例如DAO（去中心化自治组织），其中决策权可以分配给代币持有者，创建一个更民主、基于共识的系统。这不仅扩大了参与的范围，还减轻了传统治理模式相关的某些风险。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "然而，没有一种放之四海而皆准的解决方案。不同的区块链项目可能需要不同的治理结构，具体取决于决策类型、涉及的利益相关者和所需的去中心化程度。关键是要有目的地和有意识地设计治理系统，清楚了解目标和背景。换句话说，区块链治理应该睁着眼睛设计，而不是蒙着眼睛。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "cbc7-img1",
+            "height": 862,
+            "width": 862,
+            "filename": "cbc7-img1.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1690859755-cbc7-img1.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "探索治理在区块链系统中的角色和重要性。了解治理如何推动去中心化和增长。",
+      "title": "治理的意义是什么？[摘要]",
+      "twitterCard": null,
+      "image": {
+        "width": 862,
+        "height": 862,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1690859755-cbc7-img1.png"
+      }
+    }
+  },
+  "topics": [
+    "DAO",
+    "Summary"
+  ]
+}

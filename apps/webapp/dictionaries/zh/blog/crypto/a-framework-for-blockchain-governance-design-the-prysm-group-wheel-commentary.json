@@ -1,0 +1,766 @@
+{
+  "relatedBlogs": [
+    {
+      "id": "180217169",
+      "topics": [
+        "代币经济学",
+        "评论"
+      ],
+      "title": "代币化激励经济学3：代币价值不会使利益相关者一致[评论]",
+      "slug": "economics-of-tokenized-incentives-3-token-value-won-t-align-stakeholders-commenta",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:17:23+01:00",
+      "description": "揭示在区块链平台中使用代币价值作为绩效指标的陷阱。学习设计有效的激励系统。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690771457-cbc3-img1.png"
+      },
+      "seo": {
+        "title": "代币化激励经济学3[评论]",
+        "description": "揭示在区块链平台中使用代币价值作为绩效指标的陷阱。学习设计有效的激励系统。"
+      }
+    },
+    {
+      "id": "180217123",
+      "topics": [
+        "代币经济学",
+        "评论"
+      ],
+      "title": "代币化激励经济学2：选择有效的绩效指标[评论]",
+      "slug": "economics-of-tokenized-incentives-2-selecting-effective-performance-metrics-comme",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:17:05+01:00",
+      "description": "发现绩效指标在区块链按绩效支付系统中的力量。学习如何有效地将激励与平台目标对齐。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690770918-cbc2-img1.png"
+      },
+      "seo": {
+        "title": "代币化激励经济学2[评论]",
+        "description": "发现绩效指标在区块链按绩效支付系统中的力量。学习如何有效地将激励与平台目标对齐。"
+      }
+    },
+    {
+      "id": "180217082",
+      "topics": [
+        "代币经济学",
+        "评论"
+      ],
+      "title": "代币化激励经济学1：按绩效支付简介[评论]",
+      "slug": "economics-of-tokenized-incentives-1-intro-to-pay-for-performance",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:15:12+01:00",
+      "description": "深入探讨区块链平台中按绩效支付激励的复杂性。了解成功的权衡和设计考虑。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690770568-cbc1-img1.png"
+      },
+      "seo": {
+        "title": "代币化激励经济学1[评论]",
+        "description": "深入探讨区块链平台中按绩效支付激励的复杂性。了解成功的权衡和设计考虑。"
+      }
+    },
+    {
+      "id": "180556627",
+      "topics": [
+        "评论",
+        "智能合约"
+      ],
+      "title": "不完全合同与区块链[评论]",
+      "slug": "incomplete-contracts-and-blockchain-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:14:44+01:00",
+      "description": "揭示不完全合同与区块链之间的关系。了解区块链如何填补合同空白。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690856249-cbc5-img1.png"
+      },
+      "seo": {
+        "title": "不完全合同与区块链[评论]",
+        "description": "揭示不完全合同与区块链之间的关系。了解区块链如何填补合同空白。"
+      }
+    },
+    {
+      "id": "180563918",
+      "topics": [
+        "代币经济学",
+        "评论",
+        "筹资"
+      ],
+      "title": "代币：投资工具还是交换媒介（不能兼得）[评论]",
+      "slug": "tokens-investment-vehicle-or-medium-of-exchange-not-both-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:13:31+01:00",
+      "description": "深入探讨代币在区块链经济中的双重角色。揭示投资工具与交换媒介之间的细微差别。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690859959-cbc8-img1.png"
+      },
+      "seo": {
+        "title": "代币：投资还是交换媒介[评论]",
+        "description": "深入探讨代币在区块链经济中的双重角色。揭示投资工具与交换媒介之间的细微差别。"
+      }
+    },
+    {
+      "id": "180563922",
+      "topics": [
+        "筹资",
+        "代币经济学",
+        "评论"
+      ],
+      "title": "ICO利用网络效应[评论]",
+      "slug": "icos-leverage-network-effects-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:12:06+01:00",
+      "description": "发现ICO如何利用网络效应推动其成功。ICO和网络效应，动态双雄！",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690860184-cbc9-img1.png"
+      },
+      "seo": {
+        "title": "ICO利用网络效应[评论]",
+        "description": "发现ICO如何利用网络效应推动其成功。ICO和网络效应，动态双雄！"
+      }
+    },
+    {
+      "id": "179948652",
+      "topics": [
+        "代币经济学",
+        "行业",
+        "摘要"
+      ],
+      "title": "数字创新与收入模式[摘要]",
+      "slug": "digital-innovation-and-revenue-models-summary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:11:35+01:00",
+      "description": "揭示数字创新如何在Prysm Group的《数字创新与收入模式》中重塑产品交付。探索新兴技术经济学。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690668517-cbr1-img1.png"
+      },
+      "seo": {
+        "title": "数字创新与收入模式[摘要]",
+        "description": "揭示数字创新如何在Prysm Group的《数字创新与收入模式》中重塑产品交付。探索新兴技术经济学。"
+      }
+    },
+    {
+      "id": "180556595",
+      "topics": [
+        "筹资",
+        "代币经济学",
+        "评论"
+      ],
+      "title": "区块链效应：没有市场力量成本的网络效应[评论]",
+      "slug": "the-blockchain-effect-network-effects-without-market-power-costs-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:11:14+01:00",
+      "description": "探索区块链如何在没有市场力量缺点的情况下实现网络效应。发现改变游戏规则的区块链效应。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690855275-cbc4-img1.png"
+      },
+      "seo": {
+        "title": "没有市场力量成本的网络效应[评论]",
+        "description": "探索区块链如何在没有市场力量缺点的情况下实现网络效应。发现改变游戏规则的区块链效应。"
+      }
+    },
+    {
+      "id": "180563903",
+      "topics": [
+        "DAO",
+        "摘要"
+      ],
+      "title": "投票的意义是什么？[摘要]",
+      "slug": "what-is-voting-for-summary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:10:58+01:00",
+      "description": "揭示去中心化系统中投票的本质。深入了解区块链中投票的真正目的和力量。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690859305-cbc6-img1.png"
+      },
+      "seo": {
+        "title": "投票的意义是什么？[摘要]",
+        "description": "揭示去中心化系统中投票的本质。深入了解区块链中投票的真正目的和力量。"
+      }
+    },
+    {
+      "id": "180563908",
+      "topics": [
+        "DAO",
+        "摘要"
+      ],
+      "title": "治理的意义是什么？[摘要]",
+      "slug": "what-is-governance-for-summary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:10:45+01:00",
+      "description": "探索区块链系统中治理的角色和重要性。了解治理如何推动去中心化和增长。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690859755-cbc7-img1.png"
+      },
+      "seo": {
+        "title": "治理的意义是什么？[摘要]",
+        "description": "探索区块链系统中治理的角色和重要性。了解治理如何推动去中心化和增长。"
+      }
+    },
+    {
+      "id": "180563931",
+      "topics": [
+        "代币经济学",
+        "评论"
+      ],
+      "title": "区块链激励结构：它们是什么以及为什么重要[评论]",
+      "slug": "blockchain-incentive-structures-what-they-are-and-why-they-matter-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:10:02+01:00",
+      "description": "了解区块链激励结构的核心及其在推动用户行为和平台成功中的重要性。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690860807-cbc10-img1.png"
+      },
+      "seo": {
+        "title": "区块链激励结构[评论]",
+        "description": "了解区块链激励结构的核心及其在推动用户行为和平台成功中的重要性。"
+      }
+    },
+    {
+      "id": "167184977",
+      "topics": [
+        "代币经济学",
+        "DAO",
+        "筹资"
+      ],
+      "title": "革命性的股权模式：代币经济学如何颠覆创业世界",
+      "slug": "revolutionizing-the-equity-model-how-tokenomics-is-disrupting-the-startup-world",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:02:51+01:00",
+      "description": "解锁创业的未来，探索代币经济学如何重塑股权模式并颠覆创业格局。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1687395688-tb2-img1.png"
+      },
+      "seo": {
+        "title": "代币经济学如何颠覆创业世界",
+        "description": "探索这一创新概念如何重塑股权模式并颠覆创业格局。"
+      }
+    },
+    {
+      "id": "166984334",
+      "topics": [
+        "DAO",
+        "法律"
+      ],
+      "title": "去中心化自治组织（DAO）：商业和非营利目的的基本法律结构",
+      "slug": "decentralized-autonomous-organizations-daos-basic-legal-structures-for-business-a",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T08:59:06+01:00",
+      "description": "发现商业和非营利目的的基本DAO法律结构。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1687384353-db2-img1.png"
+      },
+      "seo": {
+        "title": "DAO：导航商业和非营利的法律结构",
+        "description": "去中心化自治组织（DAO）：导航商业和非营利的法律结构"
+      }
+    },
+    {
+      "id": "167101094",
+      "topics": [
+        "入门",
+        "代币经济学"
+      ],
+      "title": "代币经济学101：释放加密货币的力量！",
+      "slug": "tokenomics-101-unleashing-the-power-of-cryptocurrency",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T08:57:58+01:00",
+      "description": "通过代币经济学101发现加密货币的力量——深入了解数字资产背后的经济学。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1687391799-tb1-img1.png"
+      },
+      "seo": {
+        "title": "代币经济学101：释放加密货币的力量！",
+        "description": "深入了解数字资产背后的经济学。"
+      }
+    },
+    {
+      "id": "166981063",
+      "topics": [
+        "入门",
+        "DAO"
+      ],
+      "title": "未来已来：去中心化自治组织（DAO）的崛起",
+      "slug": "the-future-is-here-the-rise-of-decentralized-autonomous-organizations-daos",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T08:57:02+01:00",
+      "description": "在我们的指南中探索去中心化自治组织（DAO）的崛起。了解商业的未来和创业的机会。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1687381524-db1-img1.png"
+      },
+      "seo": {
+        "title": "去中心化自治组织的崛起",
+        "description": "在我们的指南中探索去中心化自治组织（DAO）的崛起。了解商业的未来和创业的机会。"
+      }
+    }
+  ],
+  "blogContent": {
+    "id": "180563939",
+    "topics": [
+      "DAO",
+      "代币经济学",
+      "评论"
+    ],
+    "title": "区块链治理设计框架：Prysm Group 轮 [评论]",
+    "slug": "a-framework-for-blockchain-governance-design-the-prysm-group-wheel-commentary",
+    "authorName": "Crypto Clairity",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+    },
+    "_publishedAt": "2023-10-05T09:19:19+01:00",
+    "description": "使用 Prysm Group 轮导航区块链治理的复杂性。您的有效区块链治理设计路线图。",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1690861154-cbc11-img1.webp"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "原始链接： "
+                    },
+                    {
+                      "url": "https://medium.com/prysmeconomics/a-framework-for-blockchain-governance-design-the-prysm-group-wheel-703279c1b0dd?source=user_profile---------0----------------------------",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noopener follow"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "区块链治理设计框架：Prysm Group 轮"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "作者： "
+                    },
+                    {
+                      "url": "https://medium.com/@cathybarreraphd?source=post_page-----703279c1b0dd--------------------------------",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noopener follow"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Cathy Barrera, PhD"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "摘要与评论"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "本文阐明了区块链平台中操作规则和治理之间的区别，并提供了一个设计有效治理的结构化框架。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "操作规则是指导区块链平台日常运作的规定。它们决定区块奖励的大小，规定如何确定链中的下一个区块，并确保合约、市场和代币经济有效运行。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "然而，治理涉及对操作规则的更改或更新的决策过程。它处理意外事件和不可预见的变化，使系统能够随着时间的推移适应不可避免的市场变化。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "这里的关键点是，虽然操作规则是平台的支柱，但治理是其生命线，使其能够适应、成长和发展。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Prysm Group 轮被介绍为设计有效区块链治理的有用框架。它建议考虑的七个要素是："
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "决策范围"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 了解需要通过治理过程做出的决策，并相应地进行计划。"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "利益相关者/参与者"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 定义利益相关者及其各种目标，以确保决策符合他们的意愿。"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "政策研究与开发"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 准备一个具体的提案来实施决策，特别是对于需要将决策转化为代码的区块链项目。"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "提案过程"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 建立一个明确的提案提出过程。"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "信息分发系统/教育"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 有效地与所有利益相关者沟通，以确保知情决策。"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "决策程序"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 实施机制以促进利益相关者认为代表其利益的决策。"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "实施与产权"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 了解生态系统利益相关者的产权，以避免在实施阶段出现权力不平衡。"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "基于这些见解可以采取的实际行动包括："
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "区块链开发者"
+                            },
+                            {
+                              "type": "span",
+                              "value": " 应专注于开发允许适应性和变化的治理机制。他们还应努力将所有参与者纳入决策过程。"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "投资者"
+                            },
+                            {
+                              "type": "span",
+                              "value": " 在区块链项目中应寻找那些具有良好治理结构的项目，因为这些项目更有可能在长期内取得成功。"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "区块链用户"
+                            },
+                            {
+                              "type": "span",
+                              "value": " 需要了解他们使用的平台的治理结构，以确保他们对决策过程感到满意。"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "政策制定者和监管者"
+                            },
+                            {
+                              "type": "span",
+                              "value": " 应熟悉不同的区块链治理模型，以了解如何最好地监管这些平台。"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "总之，区块链平台的治理应被视为其设计的一个重要组成部分，并应给予与操作规则相同的重视。通过对所有利益相关者的仔细设计和深思熟虑的考虑，可以实现有效的区块链治理。"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "cbc11-img1",
+            "height": 1383,
+            "width": 1400,
+            "filename": "cbc11-img1.webp",
+            "format": "webp",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1690861154-cbc11-img1.webp"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "使用 Prysm Group 轮导航区块链治理的复杂性。您的有效区块链治理设计路线图。",
+      "title": "区块链治理设计框架 [评论]",
+      "twitterCard": null,
+      "image": {
+        "width": 1400,
+        "height": 1383,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1690861154-cbc11-img1.webp"
+      }
+    }
+  },
+  "topics": [
+    "DAO",
+    "Tokenomics",
+    "Commentary"
+  ]
+}

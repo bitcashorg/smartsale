@@ -1,0 +1,478 @@
+{
+  "relatedBlogs": [
+    {
+      "id": "180563939",
+      "topics": [
+        "DAO",
+        "代币经济学",
+        "评论"
+      ],
+      "title": "区块链治理设计框架：Prysm Group 轮 [评论]",
+      "slug": "a-framework-for-blockchain-governance-design-the-prysm-group-wheel-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:19:19+01:00",
+      "description": "使用 Prysm Group 轮导航区块链治理的复杂性。您的有效区块链治理设计路线图。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690861154-cbc11-img1.webp"
+      },
+      "seo": {
+        "title": "区块链治理设计框架 [评论]",
+        "description": "使用 Prysm Group 轮导航区块链治理的复杂性。您的有效区块链治理设计路线图。"
+      }
+    },
+    {
+      "id": "180217169",
+      "topics": [
+        "代币经济学",
+        "评论"
+      ],
+      "title": "代币化激励经济学 3：代币价值不会对齐利益相关者 [评论]",
+      "slug": "economics-of-tokenized-incentives-3-token-value-won-t-align-stakeholders-commenta",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:17:23+01:00",
+      "description": "揭示在区块链平台中使用代币价值作为绩效指标的陷阱。学习设计有效的激励系统。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690771457-cbc3-img1.png"
+      },
+      "seo": {
+        "title": "代币化激励经济学 3 [评论]",
+        "description": "揭示在区块链平台中使用代币价值作为绩效指标的陷阱。学习设计有效的激励系统。"
+      }
+    },
+    {
+      "id": "180217123",
+      "topics": [
+        "代币经济学",
+        "评论"
+      ],
+      "title": "代币化激励经济学 2：选择有效的绩效指标 [评论]",
+      "slug": "economics-of-tokenized-incentives-2-selecting-effective-performance-metrics-comme",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:17:05+01:00",
+      "description": "发现绩效指标在区块链按绩效支付系统中的力量。学习有效地将激励与平台目标对齐。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690770918-cbc2-img1.png"
+      },
+      "seo": {
+        "title": "代币化激励经济学 2 [评论]",
+        "description": "发现绩效指标在区块链按绩效支付系统中的力量。学习有效地将激励与平台目标对齐。"
+      }
+    },
+    {
+      "id": "180563918",
+      "topics": [
+        "代币经济学",
+        "评论",
+        "筹资"
+      ],
+      "title": "代币：投资工具还是交换媒介（不能兼得） [评论]",
+      "slug": "tokens-investment-vehicle-or-medium-of-exchange-not-both-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:13:31+01:00",
+      "description": "深入探讨代币在区块链经济中的双重角色。揭示投资工具与交换媒介之间的细微差别。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690859959-cbc8-img1.png"
+      },
+      "seo": {
+        "title": "代币：投资还是交换媒介 [评论]",
+        "description": "深入探讨代币在区块链经济中的双重角色。揭示投资工具与交换媒介之间的细微差别。"
+      }
+    },
+    {
+      "id": "180563922",
+      "topics": [
+        "筹资",
+        "代币经济学",
+        "评论"
+      ],
+      "title": "ICO 利用网络效应 [评论]",
+      "slug": "icos-leverage-network-effects-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:12:06+01:00",
+      "description": "发现 ICO 如何利用网络效应推动其成功。ICO 和网络效应，动态双雄！",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690860184-cbc9-img1.png"
+      },
+      "seo": {
+        "title": "ICO 利用网络效应 [评论]",
+        "description": "发现 ICO 如何利用网络效应推动其成功。ICO 和网络效应，动态双雄！"
+      }
+    },
+    {
+      "id": "180556595",
+      "topics": [
+        "筹资",
+        "代币经济学",
+        "评论"
+      ],
+      "title": "区块链效应：没有市场力量成本的网络效应 [评论]",
+      "slug": "the-blockchain-effect-network-effects-without-market-power-costs-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:11:14+01:00",
+      "description": "探讨区块链如何实现没有市场力量缺点的网络效应。发现改变游戏规则的区块链效应。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690855275-cbc4-img1.png"
+      },
+      "seo": {
+        "title": "没有市场力量成本的网络效应 [评论]",
+        "description": "探讨区块链如何实现没有市场力量缺点的网络效应。发现改变游戏规则的区块链效应。"
+      }
+    },
+    {
+      "id": "180563931",
+      "topics": [
+        "代币经济学",
+        "评论"
+      ],
+      "title": "区块链激励结构：它们是什么以及为什么重要 [评论]",
+      "slug": "blockchain-incentive-structures-what-they-are-and-why-they-matter-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:10:02+01:00",
+      "description": "了解区块链激励结构的核心及其在驱动用户行为和平台成功中的重要性。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690860807-cbc10-img1.png"
+      },
+      "seo": {
+        "title": "区块链激励结构 [评论]",
+        "description": "了解区块链激励结构的核心及其在驱动用户行为和平台成功中的重要性。"
+      }
+    },
+    {
+      "id": "167184977",
+      "topics": [
+        "代币经济学",
+        "DAO",
+        "筹资"
+      ],
+      "title": "革命性的股权模式：代币经济学如何颠覆创业世界",
+      "slug": "revolutionizing-the-equity-model-how-tokenomics-is-disrupting-the-startup-world",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:02:51+01:00",
+      "description": "通过代币经济学解锁创业的未来！探讨这一创新概念如何重塑股权模式并革新创业格局。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1687395688-tb2-img1.png"
+      },
+      "seo": {
+        "title": "代币经济学如何颠覆创业世界",
+        "description": "探讨这一创新概念如何重塑股权模式并革新创业格局。"
+      }
+    },
+    {
+      "id": "167101094",
+      "topics": [
+        "入门",
+        "代币经济学"
+      ],
+      "title": "代币经济学 101：释放加密货币的力量！",
+      "slug": "tokenomics-101-unleashing-the-power-of-cryptocurrency",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T08:57:58+01:00",
+      "description": "通过代币经济学 101 发现加密货币的力量——深入了解数字资产背后的经济学。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1687391799-tb1-img1.png"
+      },
+      "seo": {
+        "title": "代币经济学 101：释放加密货币的力量！",
+        "description": "深入了解数字资产背后的经济学。"
+      }
+    }
+  ],
+  "blogContent": {
+    "id": "180217082",
+    "topics": [
+      "代币经济学",
+      "评论"
+    ],
+    "title": "代币化激励经济学1：绩效支付简介[评论]",
+    "slug": "economics-of-tokenized-incentives-1-intro-to-pay-for-performance",
+    "authorName": "Crypto Clairity",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+    },
+    "_publishedAt": "2023-10-05T09:15:12+01:00",
+    "description": "深入探讨区块链平台中绩效支付激励的复杂性。了解成功的权衡和设计考量。",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1690770568-cbc1-img1.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "原始链接："
+                    },
+                    {
+                      "url": "https://medium.com/prysmeconomics/economics-of-tokenized-incentives-1-intro-to-pay-for-performance-84e3b9cfffa",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "代币化激励经济学1：绩效支付简介"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "作者："
+                    },
+                    {
+                      "url": "https://medium.com/@cathybarreraphd?source=post_page-----84e3b9cfffa--------------------------------",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noopener follow"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Cathy Barrera, PhD"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "摘要"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "绩效支付是一种基于绩效指标给予财务补偿的系统。当预期结果的关键方面无法提前指定时，通常会使用这种系统。许多区块链平台，如比特币，使用这种系统来激励活动和资源。然而，绩效支付的好处在所有情况下都不能同等利用，理解权衡在设计平台时至关重要。"
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "评论"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "绩效支付系统在某些情况下虽然有效，但需要精心设计和实施。在区块链和加密货币的背景下，这些系统可以激励参与和资源贡献，但也带来了复杂性。例如，比特币的绩效支付系统导致了矿机算力的军备竞赛，引发了对能源消耗的担忧。"
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "可操作的见解"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "理解背景"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 在实施绩效支付系统之前，了解平台的背景和具体需求。并非所有背景都适合这种激励系统。"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "考虑权衡"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 绩效支付系统伴随着风险和潜在的缺点。了解这些权衡并在决策过程中考虑它们。"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "精心设计"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 激励系统的设计会极大地影响参与者的行为和平台的整体成功。考虑使用的绩效指标和奖励的大小等因素。"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "保持灵活"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 准备好根据需要调整激励系统。监控结果，如果系统未产生预期效果，进行调整。"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "清晰沟通"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 确保参与者了解激励系统及其受益方式。清晰的沟通有助于鼓励参与并确保系统的有效使用。"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "cbc1-img1",
+            "height": 862,
+            "width": 862,
+            "filename": "cbc1-img1.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1690770568-cbc1-img1.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "深入探讨区块链平台中绩效支付激励的复杂性。了解成功的权衡和设计考量",
+      "title": "代币化激励经济学1[评论]",
+      "twitterCard": null,
+      "image": {
+        "width": 862,
+        "height": 862,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1690770568-cbc1-img1.png"
+      }
+    }
+  },
+  "topics": [
+    "Tokenomics",
+    "Commentary"
+  ]
+}

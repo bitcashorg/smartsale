@@ -1,0 +1,503 @@
+{
+  "relatedBlogs": [
+    {
+      "id": "180563939",
+      "topics": [
+        "DAO",
+        "Tokenomik",
+        "Komentar"
+      ],
+      "title": "Kerangka Kerja untuk Desain Tata Kelola Blockchain: Prysm Group Wheel [Komentar]",
+      "slug": "a-framework-for-blockchain-governance-design-the-prysm-group-wheel-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:19:19+01:00",
+      "description": "Navigasikan kompleksitas tata kelola blockchain dengan Prysm Group Wheel. Peta jalan Anda untuk desain tata kelola blockchain yang efektif.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690861154-cbc11-img1.webp"
+      },
+      "seo": {
+        "title": "Kerangka Kerja untuk Desain Tata Kelola Blockchain [Komentar]",
+        "description": "Navigasikan kompleksitas tata kelola blockchain dengan Prysm Group Wheel. Peta jalan Anda untuk desain tata kelola blockchain yang efektif."
+      }
+    },
+    {
+      "id": "180217169",
+      "topics": [
+        "Tokenomik",
+        "Komentar"
+      ],
+      "title": "Ekonomi Insentif Tokenisasi 3: Nilai Token Tidak Akan Menyelaraskan Pemangku Kepentingan [Komentar]",
+      "slug": "economics-of-tokenized-incentives-3-token-value-won-t-align-stakeholders-commenta",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:17:23+01:00",
+      "description": "Ungkap jebakan menggunakan nilai token sebagai metrik kinerja di platform blockchain. Pelajari cara merancang sistem insentif yang efektif.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690771457-cbc3-img1.png"
+      },
+      "seo": {
+        "title": "Ekonomi Insentif Tokenisasi 3 [Komentar]",
+        "description": "Ungkap jebakan menggunakan nilai token sebagai metrik kinerja di platform blockchain. Pelajari cara merancang sistem insentif yang efektif."
+      }
+    },
+    {
+      "id": "180217123",
+      "topics": [
+        "Tokenomik",
+        "Komentar"
+      ],
+      "title": "Ekonomi Insentif Tokenisasi 2: Memilih Metrik Kinerja yang Efektif [Komentar]",
+      "slug": "economics-of-tokenized-incentives-2-selecting-effective-performance-metrics-comme",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:17:05+01:00",
+      "description": "Temukan kekuatan metrik kinerja dalam sistem bayar-untuk-kinerja blockchain. Pelajari cara menyelaraskan insentif dengan tujuan platform secara efektif.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690770918-cbc2-img1.png"
+      },
+      "seo": {
+        "title": "Ekonomi Insentif Tokenisasi 2 [Komentar]",
+        "description": "Temukan kekuatan metrik kinerja dalam sistem bayar-untuk-kinerja blockchain. Pelajari cara menyelaraskan insentif dengan tujuan platform secara efektif."
+      }
+    },
+    {
+      "id": "180217082",
+      "topics": [
+        "Tokenomik",
+        "Komentar"
+      ],
+      "title": "Ekonomi Insentif Tokenisasi 1: Pengenalan Bayar untuk Kinerja [Komentar]",
+      "slug": "economics-of-tokenized-incentives-1-intro-to-pay-for-performance",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:15:12+01:00",
+      "description": "Menyelami kompleksitas insentif bayar-untuk-kinerja di platform blockchain. Pelajari pertukaran dan pertimbangan desain untuk sukses.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690770568-cbc1-img1.png"
+      },
+      "seo": {
+        "title": "Ekonomi Insentif Tokenisasi 1 [Komentar]",
+        "description": "Menyelami kompleksitas insentif bayar-untuk-kinerja di platform blockchain. Pelajari pertukaran dan pertimbangan desain untuk sukses."
+      }
+    },
+    {
+      "id": "180556627",
+      "topics": [
+        "Komentar",
+        "Kontrak Pintar"
+      ],
+      "title": "Kontrak Tidak Lengkap dan Blockchain [Komentar]",
+      "slug": "incomplete-contracts-and-blockchain-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:14:44+01:00",
+      "description": "Mengungkap hubungan antara kontrak tidak lengkap dan blockchain. Pahami bagaimana blockchain dapat mengisi kesenjangan kontraktual.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690856249-cbc5-img1.png"
+      },
+      "seo": {
+        "title": "Kontrak Tidak Lengkap dan Blockchain [Komentar]",
+        "description": "Mengungkap hubungan antara kontrak tidak lengkap dan blockchain. Pahami bagaimana blockchain dapat mengisi kesenjangan kontraktual."
+      }
+    },
+    {
+      "id": "180563918",
+      "topics": [
+        "Tokenomik",
+        "Komentar",
+        "Penggalangan Dana"
+      ],
+      "title": "Token: Kendaraan Investasi atau Alat Tukar (Bukan Keduanya) [Komentar]",
+      "slug": "tokens-investment-vehicle-or-medium-of-exchange-not-both-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:13:31+01:00",
+      "description": "Menyelami peran ganda token dalam ekonomi blockchain. Ungkap garis tipis antara kendaraan investasi dan alat tukar.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690859959-cbc8-img1.png"
+      },
+      "seo": {
+        "title": "Token: Investasi atau Alat Tukar [Komentar]",
+        "description": "Menyelami peran ganda token dalam ekonomi blockchain. Ungkap garis tipis antara kendaraan investasi dan alat tukar."
+      }
+    },
+    {
+      "id": "180563922",
+      "topics": [
+        "Penggalangan Dana",
+        "Tokenomik",
+        "Komentar"
+      ],
+      "title": "ICO Memanfaatkan Efek Jaringan [Komentar]",
+      "slug": "icos-leverage-network-effects-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:12:06+01:00",
+      "description": "Temukan bagaimana ICO memanfaatkan kekuatan efek jaringan untuk mendorong kesuksesan mereka. ICO dan efek jaringan, duo dinamis!",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690860184-cbc9-img1.png"
+      },
+      "seo": {
+        "title": "ICO Memanfaatkan Efek Jaringan [Komentar]",
+        "description": "Temukan bagaimana ICO memanfaatkan kekuatan efek jaringan untuk mendorong kesuksesan mereka. ICO dan efek jaringan, duo dinamis!"
+      }
+    },
+    {
+      "id": "179948652",
+      "topics": [
+        "Tokenomik",
+        "Industri",
+        "Ringkasan"
+      ],
+      "title": "Inovasi Digital dan Model Pendapatan [Ringkasan]",
+      "slug": "digital-innovation-and-revenue-models-summary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:11:35+01:00",
+      "description": "Ungkap bagaimana inovasi digital membentuk kembali pengiriman produk dalam 'Inovasi Digital dan Model Pendapatan' Prysm Group. Jelajahi ekonomi teknologi yang muncul.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690668517-cbr1-img1.png"
+      },
+      "seo": {
+        "title": "Inovasi Digital dan Model Pendapatan [Ringkasan]",
+        "description": "Ungkap bagaimana inovasi digital membentuk kembali pengiriman produk dalam 'Inovasi Digital dan Model Pendapatan' Prysm Group. Jelajahi ekonomi teknologi yang muncul."
+      }
+    },
+    {
+      "id": "180556595",
+      "topics": [
+        "Penggalangan Dana",
+        "Tokenomik",
+        "Komentar"
+      ],
+      "title": "Efek Blockchain: Efek Jaringan tanpa Biaya Kekuatan Pasar [Komentar]",
+      "slug": "the-blockchain-effect-network-effects-without-market-power-costs-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:11:14+01:00",
+      "description": "Jelajahi bagaimana blockchain memungkinkan efek jaringan tanpa kekurangan kekuatan pasar. Temukan Efek Blockchain yang mengubah permainan.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690855275-cbc4-img1.png"
+      },
+      "seo": {
+        "title": "Efek Jaringan tanpa Biaya Kekuatan Pasar [Komentar]",
+        "description": "Jelajahi bagaimana blockchain memungkinkan efek jaringan tanpa kekurangan kekuatan pasar. Temukan Efek Blockchain yang mengubah permainan."
+      }
+    }
+  ],
+  "blogContent": {
+    "id": "180563931",
+    "topics": [
+      "Tokenomik",
+      "Komentar"
+    ],
+    "title": "Struktur Insentif Blockchain: Apa itu dan mengapa itu penting [Komentar]",
+    "slug": "blockchain-incentive-structures-what-they-are-and-why-they-matter-commentary",
+    "authorName": "Crypto Clairity",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+    },
+    "_publishedAt": "2023-10-05T09:10:02+01:00",
+    "description": "Memahami inti dari struktur insentif blockchain dan signifikansinya dalam mendorong perilaku pengguna dan keberhasilan platform.",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1690860807-cbc10-img1.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tautan Asli: "
+                    },
+                    {
+                      "url": "https://medium.com/prysmeconomics/blockchain-incentives-101-what-they-are-and-why-they-matter-5127afb56aeb",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Struktur Insentif Blockchain: Apa itu dan mengapa itu penting"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Penulis: "
+                    },
+                    {
+                      "url": "https://medium.com/@cathybarreraphd?source=post_page-----5127afb56aeb--------------------------------",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noopener follow"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Cathy Barrera, PhD"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Ringkasan & Komentar"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Memahami nuansa insentif sangat penting bagi pendiri platform blockchain. Insentif memainkan peran kunci dalam mendorong kerjasama peserta, sehingga menciptakan nilai yang memastikan keberhasilan platform. Insentif ada di mana-mana dan melampaui imbalan finansial, mempengaruhi perilaku peserta sistem dengan mengubah biaya dan manfaat relatif dari pilihan mereka."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Beberapa contoh termasuk nilai universitas dan sistem pembayaran berdasarkan kinerja. Misalnya, nilai dapat mendorong siswa untuk belajar keras atau menyontek, bahkan tanpa manfaat moneter yang terlibat. Demikian pula, sistem pembayaran berdasarkan kinerja memberi penghargaan kepada individu berdasarkan output kerja mereka."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Dalam konteks blockchain dan cryptocurrency, insentif dapat mempengaruhi perilaku pengguna. Sebuah eksperimen di MIT, yang melibatkan pemberian Bitcoin senilai $100 kepada setiap mahasiswa sarjana, menunjukkan bahwa biaya dan manfaat non-moneter memainkan peran penting dalam mempengaruhi perilaku. Para siswa diberi pilihan dompet yang berbeda untuk menyimpan Bitcoin mereka, masing-masing menawarkan tingkat privasi dan kemudahan penggunaan yang berbeda. Meskipun tidak ada perbedaan moneter antara dompet, proses pemilihan dompet siswa dipengaruhi oleh faktor-faktor ini, menunjukkan kekuatan insentif non-moneter."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Selain itu, bagaimana sebuah platform blockchain dirancang dapat sangat mempengaruhi insentif yang diberikannya. Bahkan elemen desain kecil dapat memiliki dampak besar pada perilaku pengguna dan adopsi platform. Ini menyoroti pentingnya melihat semua keputusan melalui lensa desain insentif."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tiga bidang ekonomi yang signifikan - teori kontrak, desain pasar, dan ekonomi informasi - berfokus pada bagaimana desain sistem dapat mempengaruhi perilaku. Di Prysm Group, bidang-bidang ini digunakan untuk merancang platform untuk usaha blockchain, menggabungkan imbalan finansial yang ditokenisasi dan insentif non-moneter seperti sistem reputasi."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Dari perspektif ekonomi, insentif membentuk inti dari sistem dan merupakan bagian penting dari desain ekonomi keseluruhan platform blockchain yang efektif. Insentif berkisar dari imbalan penambang dan mekanisme penetapan biaya transaksi hingga registri yang dikurasi token dan pasar prediksi, yang berfungsi sebagai dasar platform blockchain."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Berikut adalah beberapa wawasan yang dapat ditindaklanjuti berdasarkan diskusi ini:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Desain Insentif:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " Saat merancang platform blockchain Anda, pertimbangkan insentif moneter dan non-moneter. Pahami bagaimana elemen desain yang berbeda dapat mempengaruhi perilaku pengguna."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Pengaruh Perilaku:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " Manfaatkan kekuatan insentif untuk mendorong kerjasama dan penciptaan nilai di platform Anda. Ini dapat berkisar dari imbalan token hingga sistem reputasi."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Pahami Biaya dan Manfaat:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " Ingat, insentif adalah tentang menyeimbangkan biaya dan manfaat. Pahami bagaimana biaya yang berbeda (baik moneter maupun non-moneter) dapat mempengaruhi perilaku pengguna Anda."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Desain Ekonomi:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " Pertimbangkan untuk menggabungkan konsep dari teori kontrak, desain pasar, dan ekonomi informasi dalam desain platform Anda. Ini dapat membantu Anda menciptakan sistem insentif yang lebih efektif."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Pembelajaran Berkelanjutan:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " Tetap diperbarui dengan penelitian dan perkembangan terbaru dalam desain insentif untuk platform blockchain untuk memastikan platform Anda tetap efektif dan kompetitif."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Ingat, tujuannya bukan hanya untuk menciptakan insentif, tetapi untuk merancangnya sedemikian rupa sehingga membantu mewujudkan visi pendiri platform dan menguntungkan penggunanya."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "cbc10-img1",
+            "height": 862,
+            "width": 862,
+            "filename": "cbc10-img1.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1690860807-cbc10-img1.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Memahami inti dari struktur insentif blockchain dan signifikansinya dalam mendorong perilaku pengguna dan keberhasilan platform.",
+      "title": "Struktur Insentif Blockchain [Komentar]",
+      "twitterCard": null,
+      "image": {
+        "width": 862,
+        "height": 862,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1690860807-cbc10-img1.png"
+      }
+    }
+  },
+  "topics": [
+    "Tokenomics",
+    "Commentary"
+  ]
+}

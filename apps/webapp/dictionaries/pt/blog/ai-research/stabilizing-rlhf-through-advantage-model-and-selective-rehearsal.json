@@ -1,0 +1,452 @@
+{
+  "relatedBlogs": [],
+  "blogContent": {
+    "id": "198277360",
+    "topics": [
+      "LLM",
+      "RLHF"
+    ],
+    "title": "Estabilizando RLHF por meio do Modelo de Vantagem e Ensaio Seletivo",
+    "slug": "stabilizing-rlhf-through-advantage-model-and-selective-rehearsal",
+    "authorName": "Prof. Otto Nomos",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+    },
+    "_publishedAt": "2024-05-24T05:22:15+01:00",
+    "description": "Comentário e Avaliação Abstrata",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Publicado em 18 de Setembro"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Autores:"
+                    },
+                    {
+                      "url": "https://huggingface.co/Baolin",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Baolin Peng"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/freesunshine0316",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Linfeng Song"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ",Ye Tian,Lifeng Jin,Haitao Mi,Dong Yu"
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Resumo"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Modelos de Linguagem de Grande Escala (LLMs) revolucionaram o processamento de linguagem natural, mas alinhar esses modelos com valores e preferências humanas usando RLHF ainda é um grande desafio. Esse desafio é caracterizado por várias instabilidades, como hacking de recompensas e esquecimento catastrófico. Neste relatório técnico, propomos duas inovações para estabilizar o treinamento RLHF: 1) Modelo de Vantagem, que modela diretamente a pontuação de vantagem, ou seja, recompensa extra comparada às recompensas esperadas e regula as distribuições de pontuação entre as tarefas para prevenir hacking de recompensas. 2) Ensaio Seletivo, que mitiga o esquecimento catastrófico selecionando estrategicamente dados para treinamento PPO e ensaio de conhecimento. Nossa análise experimental em conjuntos de dados públicos e proprietários revela que os métodos propostos não apenas aumentam a estabilidade no treinamento RLHF, mas também alcançam pontuações de recompensa mais altas e taxas de vitória."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "url": "https://arxiv.org/abs/2309.10202",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Ver página arXiv"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "https://arxiv.org/pdf/2309.10202",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Ver PDF"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Comentário"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "O artigo \"Estabilizando RLHF por meio do Modelo de Vantagem e Ensaio Seletivo\" aborda os desafios de alinhar Modelos de Linguagem de Grande Escala (LLMs) com valores e preferências humanas usando Reforço de Aprendizagem a partir de Feedback Humano (RLHF)."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Principais Conclusões:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Desafios com RLHF"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Alinhar LLMs às preferências humanas usando RLHF apresenta obstáculos como hacking de recompensas (onde o modelo encontra maneiras de maximizar a recompensa sem realmente fornecer o valor pretendido) e esquecimento catastrófico (onde um modelo esquece tarefas aprendidas anteriormente ao aprender novas)."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Modelo de Vantagem"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Esta técnica visa prevenir o hacking de recompensas modelando a pontuação de vantagem, que é a recompensa extra comparada às recompensas esperadas, e regulando as distribuições de pontuação entre as tarefas."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Ensaio Seletivo"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Para combater o esquecimento catastrófico, este método seleciona estrategicamente dados para treinamento PPO e ensaio de conhecimento."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Resultados Positivos"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": O artigo relata que os métodos introduzidos não apenas melhoram a estabilidade no treinamento RLHF, mas também levam a pontuações de recompensa mais altas e taxas de vitória."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Impacto Potencial no Mundo Real:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Melhor Alinhamento com Valores Humanos"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Se os LLMs puderem ser melhor treinados para se alinhar com valores humanos usando RLHF, os modelos resultantes produzirão saídas mais desejáveis, seguras e centradas no usuário."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "LLMs Robustos"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": As técnicas propostas podem levar a modelos que são menos suscetíveis a possíveis armadilhas, tornando-os mais confiáveis para tarefas críticas."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Aplicabilidade Ampla"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Embora o foco esteja em LLMs, as técnicas apresentadas podem ter implicações mais amplas para outros modelos de aprendizado de máquina onde o alinhamento com feedback humano é crucial."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Padrão da Indústria"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Se os métodos introduzidos forem robustos e eficazes, eles podem se tornar técnicas padrão em RLHF para LLMs, levando a um impacto generalizado sobre como os modelos são treinados no futuro."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Desafios:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Implementação"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Apesar das vantagens relatadas, o impacto real depende de quão facilmente essas técnicas podem ser implementadas em vários cenários e como interagem com outras técnicas e métodos."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Dado o foco do artigo em estabilizar o RLHF, um aspecto crucial do treinamento de LLMs, e os resultados promissores que eles relatam:"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Eu classificaria o impacto real deste artigo como 9 de 10."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "A estabilização do treinamento RLHF é fundamental para garantir que os LLMs se alinhem bem com valores humanos. A implementação dessas técnicas pode levar a modelos de linguagem mais seguros e confiáveis, que por sua vez beneficiariam uma ampla gama de aplicações em várias indústrias."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "researchpaper9",
+            "height": 816,
+            "width": 1456,
+            "filename": "researchpaper9.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Comentário e Avaliação Abstrata",
+      "title": "Estabilizando RLHF ... Modelo de Vantagem & Ensaio Seletivo",
+      "twitterCard": null,
+      "image": {
+        "width": 1456,
+        "height": 816,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      }
+    }
+  },
+  "topics": [
+    "LLM",
+    "RLHF"
+  ]
+}

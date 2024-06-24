@@ -1,0 +1,510 @@
+{
+  "relatedBlogs": [
+    {
+      "id": "180563939",
+      "topics": [
+        "DAO",
+        "代币经济学",
+        "评论"
+      ],
+      "title": "区块链治理设计框架：Prysm Group Wheel [评论]",
+      "slug": "a-framework-for-blockchain-governance-design-the-prysm-group-wheel-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:19:19+01:00",
+      "description": "使用Prysm Group Wheel导航区块链治理的复杂性。您的有效区块链治理设计路线图。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690861154-cbc11-img1.webp"
+      },
+      "seo": {
+        "title": "区块链治理设计框架 [评论]",
+        "description": "使用Prysm Group Wheel导航区块链治理的复杂性。您的有效区块链治理设计路线图。"
+      }
+    },
+    {
+      "id": "180217169",
+      "topics": [
+        "代币经济学",
+        "评论"
+      ],
+      "title": "代币化激励经济学3：代币价值不会对齐利益相关者 [评论]",
+      "slug": "economics-of-tokenized-incentives-3-token-value-won-t-align-stakeholders-commenta",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:17:23+01:00",
+      "description": "揭示在区块链平台中使用代币价值作为绩效指标的陷阱。学习设计有效的激励系统。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690771457-cbc3-img1.png"
+      },
+      "seo": {
+        "title": "代币化激励经济学3 [评论]",
+        "description": "揭示在区块链平台中使用代币价值作为绩效指标的陷阱。学习设计有效的激励系统。"
+      }
+    },
+    {
+      "id": "180217123",
+      "topics": [
+        "代币经济学",
+        "评论"
+      ],
+      "title": "代币化激励经济学2：选择有效的绩效指标 [评论]",
+      "slug": "economics-of-tokenized-incentives-2-selecting-effective-performance-metrics-comme",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:17:05+01:00",
+      "description": "发现绩效指标在区块链按绩效支付系统中的力量。学习有效地将激励与平台目标对齐。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690770918-cbc2-img1.png"
+      },
+      "seo": {
+        "title": "代币化激励经济学2 [评论]",
+        "description": "发现绩效指标在区块链按绩效支付系统中的力量。学习有效地将激励与平台目标对齐。"
+      }
+    },
+    {
+      "id": "180217082",
+      "topics": [
+        "代币经济学",
+        "评论"
+      ],
+      "title": "代币化激励经济学1：按绩效支付简介 [评论]",
+      "slug": "economics-of-tokenized-incentives-1-intro-to-pay-for-performance",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:15:12+01:00",
+      "description": "深入了解区块链平台中按绩效支付激励的复杂性。学习成功的权衡和设计考虑。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690770568-cbc1-img1.png"
+      },
+      "seo": {
+        "title": "代币化激励经济学1 [评论]",
+        "description": "深入了解区块链平台中按绩效支付激励的复杂性。学习成功的权衡和设计考虑。"
+      }
+    },
+    {
+      "id": "180563922",
+      "topics": [
+        "筹资",
+        "代币经济学",
+        "评论"
+      ],
+      "title": "ICO利用网络效应 [评论]",
+      "slug": "icos-leverage-network-effects-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:12:06+01:00",
+      "description": "发现ICO如何利用网络效应推动其成功。ICO和网络效应，动态二重奏！",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690860184-cbc9-img1.png"
+      },
+      "seo": {
+        "title": "ICO利用网络效应 [评论]",
+        "description": "发现ICO如何利用网络效应推动其成功。ICO和网络效应，动态二重奏！"
+      }
+    },
+    {
+      "id": "180556595",
+      "topics": [
+        "筹资",
+        "代币经济学",
+        "评论"
+      ],
+      "title": "区块链效应：没有市场力量成本的网络效应 [评论]",
+      "slug": "the-blockchain-effect-network-effects-without-market-power-costs-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:11:14+01:00",
+      "description": "探索区块链如何实现没有市场力量缺点的网络效应。发现改变游戏规则的区块链效应。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690855275-cbc4-img1.png"
+      },
+      "seo": {
+        "title": "没有市场力量成本的网络效应 [评论]",
+        "description": "探索区块链如何实现没有市场力量缺点的网络效应。发现改变游戏规则的区块链效应。"
+      }
+    },
+    {
+      "id": "180563931",
+      "topics": [
+        "代币经济学",
+        "评论"
+      ],
+      "title": "区块链激励结构：它们是什么以及为什么重要 [评论]",
+      "slug": "blockchain-incentive-structures-what-they-are-and-why-they-matter-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:10:02+01:00",
+      "description": "了解区块链激励结构的核心及其在驱动用户行为和平台成功中的重要性。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690860807-cbc10-img1.png"
+      },
+      "seo": {
+        "title": "区块链激励结构 [评论]",
+        "description": "了解区块链激励结构的核心及其在驱动用户行为和平台成功中的重要性。"
+      }
+    },
+    {
+      "id": "167184977",
+      "topics": [
+        "代币经济学",
+        "DAO",
+        "筹资"
+      ],
+      "title": "革命性的股权模式：代币经济学如何颠覆创业世界",
+      "slug": "revolutionizing-the-equity-model-how-tokenomics-is-disrupting-the-startup-world",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:02:51+01:00",
+      "description": "通过代币经济学解锁创业的未来！探索这一创新概念如何重塑股权模式并革新创业格局。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1687395688-tb2-img1.png"
+      },
+      "seo": {
+        "title": "代币经济学如何颠覆创业世界",
+        "description": "探索这一创新概念如何重塑股权模式并革新创业格局。"
+      }
+    },
+    {
+      "id": "167101094",
+      "topics": [
+        "入门",
+        "代币经济学"
+      ],
+      "title": "代币经济学101：释放加密货币的力量！",
+      "slug": "tokenomics-101-unleashing-the-power-of-cryptocurrency",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T08:57:58+01:00",
+      "description": "通过代币经济学101发现加密货币的力量——深入了解数字资产背后的经济学。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1687391799-tb1-img1.png"
+      },
+      "seo": {
+        "title": "代币经济学101：释放加密货币的力量！",
+        "description": "深入了解数字资产背后的经济学。"
+      }
+    }
+  ],
+  "blogContent": {
+    "id": "180563918",
+    "topics": [
+      "代币经济学",
+      "评论",
+      "筹资"
+    ],
+    "title": "代币：投资工具还是交换媒介（不能兼得）[评论]",
+    "slug": "tokens-investment-vehicle-or-medium-of-exchange-not-both-commentary",
+    "authorName": "Crypto Clairity",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+    },
+    "_publishedAt": "2023-10-05T09:13:31+01:00",
+    "description": "深入探讨代币在区块链经济中的双重角色。揭示投资工具和交换媒介之间的细微界限。",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1690859959-cbc8-img1.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "原始链接： "
+                    },
+                    {
+                      "url": "https://medium.com/mit-cryptoeconomics-lab/tokens-investment-vehicle-or-medium-of-exchange-not-both-6f926ffd13f1?source=user_profile---------7----------------------------",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noopener follow"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "代币：投资工具还是交换媒介（不能兼得）"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "作者： "
+                    },
+                    {
+                      "url": "https://medium.com/@cathybarreraphd?source=post_page-----6f926ffd13f1--------------------------------",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noopener follow"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Cathy Barrera, PhD"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "摘要与评论"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Catalini 和 Gans 的研究论文《首次代币发行和加密代币的价值》探讨了首次代币发行（ICO）作为区块链项目的筹资机制，从初创企业和潜在投资者的角度进行分析。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "他们论文中的一个关键见解是开发一种既能作为有吸引力的投资工具又能作为实用的交换媒介的代币之间的权衡。他们认为，单一代币可能很难甚至不可能同时高效地履行这两种角色。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "他们考虑了一种典型的“实用代币”模型，其中区块链平台通过 ICO 筹集资金，然后使用该代币在平台上购买商品或服务。这些代币的价值由三个因素决定：平台用户群的规模、代币供应量以及平台产品或服务的价值。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "论文概述了一个问题：如果代币发行者希望代币升值（成为良好的投资工具），他们应该努力迅速扩大用户群，同时限制代币供应。然而，这可能导致代币持有者囤积代币，期望进一步升值而不是花费它们，导致平台停滞。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "另一方面，如果发行者希望平台活跃（意味着代币是良好的交换媒介），他们必须鼓励消费，这反过来要求代币持有者认为代币不会显著升值。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "尽管他们的模型简化了某些方面，例如在公开市场上出售代币的选项，但它确实揭示了代币设计和政策中的基本权衡。创始团队必须决定是让代币成为有吸引力的投资（促使储蓄或出售）还是成为有吸引力的交换媒介（鼓励消费）。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "以下是这些发现的一些可操作见解："
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "明确定义代币的用途："
+                            },
+                            {
+                              "type": "span",
+                              "value": " 区块链初创公司必须及早决定他们希望代币主要作为投资工具还是交换媒介。这个决定将决定代币设计和整体 ICO 策略的许多方面。"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "考虑不同的代币模型："
+                            },
+                            {
+                              "type": "span",
+                              "value": " “实用代币”模型并不是唯一的选择。根据您的目标，其他模型如“证券代币”或“治理代币”可能更合适。还值得探索混合模型或双代币系统，其中一个代币作为投资工具，另一个代币促进交易。"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "不要忽视传统筹资途径："
+                            },
+                            {
+                              "type": "span",
+                              "value": " 虽然 ICO 可以是一种可行的筹资方式，但不应忽视传统风险投资。特别是当对实用代币的需求不明确或市场过于投机时。"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "瞄准正确的受众："
+                            },
+                            {
+                              "type": "span",
+                              "value": " 如果您的代币主要是实用代币，考虑将代币销售目标对准平台的潜在用户，而不是主要寻求投资回报的投机者。"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "探索动态货币政策："
+                            },
+                            {
+                              "type": "span",
+                              "value": " 一个设计良好的货币政策可以在 ICO 后允许代币价值初步升值以吸引投资者，然后在平台运营后稳定价格以鼓励使用。"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "记住，每个项目都是独特的，对一个项目有效的方法可能对另一个项目无效。关键是以明确的目标和对权衡的深刻理解来设计您的代币和 ICO 策略。"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "cbc8-img1",
+            "height": 862,
+            "width": 862,
+            "filename": "cbc8-img1.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1690859959-cbc8-img1.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "深入探讨代币在区块链经济中的双重角色。揭示投资工具和交换媒介之间的细微界限。",
+      "title": "代币：投资工具还是交换媒介 [评论]",
+      "twitterCard": null,
+      "image": {
+        "width": 862,
+        "height": 862,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1690859959-cbc8-img1.png"
+      }
+    }
+  },
+  "topics": [
+    "Tokenomics",
+    "Commentary",
+    "Fundraising"
+  ]
+}

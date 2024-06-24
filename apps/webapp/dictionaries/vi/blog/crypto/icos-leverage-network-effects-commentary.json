@@ -1,0 +1,301 @@
+{
+  "relatedBlogs": [
+    {
+      "id": "180556595",
+      "topics": [
+        "Gây quỹ",
+        "Tokenomics",
+        "Bình luận"
+      ],
+      "title": "Hiệu ứng Blockchain: Hiệu ứng mạng mà không tốn chi phí quyền lực thị trường [Bình luận]",
+      "slug": "the-blockchain-effect-network-effects-without-market-power-costs-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:11:14+01:00",
+      "description": "Khám phá cách blockchain tạo ra hiệu ứng mạng mà không có nhược điểm của quyền lực thị trường. Khám phá Hiệu ứng Blockchain mang tính bước ngoặt.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690855275-cbc4-img1.png"
+      },
+      "seo": {
+        "title": "Hiệu ứng mạng mà không tốn chi phí quyền lực thị trường [Bình luận]",
+        "description": "Khám phá cách blockchain tạo ra hiệu ứng mạng mà không có nhược điểm của quyền lực thị trường. Khám phá Hiệu ứng Blockchain mang tính bước ngoặt."
+      }
+    }
+  ],
+  "blogContent": {
+    "id": "180563922",
+    "topics": [
+      "Gây Quỹ",
+      "Tokenomics",
+      "Bình Luận"
+    ],
+    "title": "ICOs Tận Dụng Hiệu Ứng Mạng Lưới [Bình Luận]",
+    "slug": "icos-leverage-network-effects-commentary",
+    "authorName": "Crypto Clairity",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+    },
+    "_publishedAt": "2023-10-05T09:12:06+01:00",
+    "description": "Khám phá cách ICOs tận dụng hiệu ứng mạng lưới để thúc đẩy thành công của họ. ICOs và hiệu ứng mạng lưới, một cặp đôi động lực!",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1690860184-cbc9-img1.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Liên kết Gốc: "
+                    },
+                    {
+                      "url": "https://medium.com/mit-cryptoeconomics-lab/icos-leverage-network-effects-962c617e3063?source=user_profile---------6----------------------------",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noopener follow"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "ICOs Tận Dụng Hiệu Ứng Mạng Lưới"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tác giả: "
+                    },
+                    {
+                      "url": "https://medium.com/@cathybarreraphd?source=post_page-----962c617e3063--------------------------------",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noopener follow"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Cathy Barrera, Tiến sĩ"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tóm tắt & Bình luận"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Nghiên cứu của Catalini và Gans trong 'Initial Coin Offerings and the Value of Crypto Tokens' cung cấp một khung so sánh giữa bán token (ICOs) và bán cổ phần truyền thống như một cơ chế gây quỹ. Một đặc điểm nổi bật mà họ nhấn mạnh là khả năng của một ICO để tận dụng hiệu ứng mạng lưới, có thể tăng tỷ lệ thành công của sự kiện gây quỹ."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Một ICO có thể giúp chứng minh nhu cầu sản phẩm do mối liên kết trực tiếp giữa việc mua token (cho phép truy cập vào sản phẩm) và sự quan tâm của người tiêu dùng. Điều này khác với bán cổ phần, nơi mối quan hệ giữa việc sở hữu một phần của công ty và nhu cầu sản phẩm không rõ ràng như vậy."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Họ suy luận rằng trong các tình huống có hiệu ứng mạng lưới và nhu cầu không chắc chắn, một đợt bán token có thể công khai nhu cầu mạnh mẽ, cho phép các dự án tiến lên mà có thể không thực hiện được do thiếu thông tin công khai. Việc quan sát một đợt bán token thành công có thể khuyến khích người dùng tiềm năng áp dụng nền tảng, miễn là họ nhận thấy cơ sở người dùng đủ lớn."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tuy nhiên, vai trò thông tin này của một ICO có thể bị ảnh hưởng nếu đầu cơ chiếm ưu thế so với sự tham gia của người dùng nền tảng tương lai. Nếu tất cả người mua token là những nhà đầu cơ chứ không phải người dùng tương lai, nhu cầu trước khi ra mắt token có thể không phản ánh nhu cầu thực tế cho nền tảng hoặc sản phẩm. Do đó, các chiến lược hạn chế nhà đầu cơ (như thời gian khóa, bán không giới hạn, và cửa sổ bán dài hơn) có thể tăng cường độ tin cậy của đợt bán token."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Mặc dù vậy, việc ngăn chặn đầu cơ có thể giảm lượng vốn tiềm năng có thể thu được. Do đó, các startup phải cân bằng việc khởi động hiệu ứng mạng lưới cho thành công của nền tảng tương lai so với việc gây quỹ ngay lập tức."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Dựa trên những hiểu biết này, đây là một vài hành động có thể thực hiện:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Trưng bày Nhu cầu Sản phẩm:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " Tận dụng ICOs để chứng minh nhu cầu sản phẩm. Khuyến khích mua token bằng cách nhấn mạnh vai trò của chúng trong việc truy cập sản phẩm hoặc dịch vụ của bạn."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Tận Dụng Hiệu Ứng Mạng Lưới:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " Nhấn mạnh các đợt bán token thành công để thuyết phục người dùng nền tảng tiềm năng rằng nền tảng của bạn có cơ sở người dùng đủ lớn và đáng để áp dụng."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Hạn chế Nhà Đầu Cơ:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " Thực hiện các chiến lược hạn chế nhà đầu cơ ủng hộ người tiêu dùng. Điều này có thể bao gồm thời gian khóa, bán không giới hạn, và cửa sổ bán dài hơn. Những chiến lược này có thể tăng cường tính thông tin của đợt bán token và tốt hơn chỉ ra giá trị của nền tảng của bạn đối với người dùng tương lai."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Xác định Ưu tiên:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " Các startup nên chỉ ra ưu tiên của họ bằng cách chọn các chiến lược bán token phù hợp. Điều này có thể giúp các nhà đầu tư tiềm năng hiểu được trọng tâm của startup—dù là thu hút người dùng nền tảng tương lai hay gây quỹ ngay lập tức."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Hãy nhớ rằng, mặc dù ICOs có thể tận dụng hiệu ứng mạng lưới và trưng bày nhu cầu, thành công của chúng đáng kể bị ảnh hưởng bởi chiến lược của startup và sự cân bằng giữa người dùng tương lai tiềm năng và nhà đầu cơ."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "cbc9-img1",
+            "height": 862,
+            "width": 862,
+            "filename": "cbc9-img1.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1690860184-cbc9-img1.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Khám phá cách ICOs tận dụng hiệu ứng mạng lưới để thúc đẩy thành công của họ. ICOs và hiệu ứng mạng lưới, một cặp đôi động lực!",
+      "title": "ICOs Tận Dụng Hiệu Ứng Mạng Lưới [Bình Luận]",
+      "twitterCard": null,
+      "image": {
+        "width": 862,
+        "height": 862,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1690860184-cbc9-img1.png"
+      }
+    }
+  },
+  "topics": [
+    "Fundraising",
+    "Tokenomics",
+    "Commentary"
+  ]
+}

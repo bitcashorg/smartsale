@@ -1,0 +1,1003 @@
+{
+  "relatedBlogs": [
+    {
+      "id": "198277124",
+      "topics": [
+        "LLM",
+        "Tài chính",
+        "Chăm sóc sức khỏe",
+        "Pháp lý",
+        "Kích hoạt"
+      ],
+      "title": "Điều chỉnh các mô hình ngôn ngữ lớn thông qua đọc hiểu",
+      "slug": "adapting-large-language-models-via-reading-comprehension",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-27T03:34:22+01:00",
+      "description": "Bình luận & Đánh giá tóm tắt",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Điều chỉnh các mô hình ngôn ngữ lớn thông qua đọc hiểu",
+        "description": "Bình luận & Đánh giá tóm tắt"
+      }
+    },
+    {
+      "id": "198277342",
+      "topics": [
+        "LLM",
+        "Đa ngôn ngữ"
+      ],
+      "title": "OpenBA: Một mô hình dịch ngôn ngữ song ngữ 15B nguồn mở được huấn luyện từ đầu",
+      "slug": "openba-an-open-sourced-15b-bilingual-asymmetric-seq2seq-model-pre-trained-from-sc",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-27T03:34:02+01:00",
+      "description": "Bình luận & Đánh giá tóm tắt",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "OpenBA: Một mô hình dịch ngôn ngữ song ngữ 15B nguồn mở...",
+        "description": "Bình luận & Đánh giá tóm tắt"
+      }
+    },
+    {
+      "id": "198277117",
+      "topics": [
+        "LLM",
+        "Truy xuất"
+      ],
+      "title": "PDFTriage: Trả lời câu hỏi qua các tài liệu dài, có cấu trúc",
+      "slug": "pdftriage-question-answering-over-long-structured-documents",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-27T03:33:49+01:00",
+      "description": "Bình luận & Đánh giá tóm tắt",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "PDFTriage: Hỏi & Đáp qua các tài liệu dài, có cấu trúc",
+        "description": "Bình luận & Đánh giá tóm tắt"
+      }
+    },
+    {
+      "id": "198277138",
+      "topics": [
+        "LLM",
+        "Tinh chỉnh"
+      ],
+      "title": "Sorted LLaMA: Khai thác tiềm năng của các lớp trung gian của các mô hình ngôn ngữ lớn cho suy luận động bằng cách tinh chỉnh tốt",
+      "slug": "sorted-llama-unlocking-the-potential-of-intermediate-layers-of-large-language-mod",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-27T03:33:31+01:00",
+      "description": "Bình luận & Đánh giá tóm tắt",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Sorted LLaMA: Suy luận động bằng cách tinh chỉnh tốt",
+        "description": "Bình luận & Đánh giá tóm tắt"
+      }
+    },
+    {
+      "id": "198277150",
+      "topics": [
+        "LLM",
+        "Điều chỉnh hướng dẫn",
+        "Đa phương tiện"
+      ],
+      "title": "Nghiên cứu thực nghiệm về việc mở rộng các mô hình đa phương tiện lớn được điều chỉnh hướng dẫn",
+      "slug": "an-empirical-study-of-scaling-instruct-tuned-large-multimodal-models",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-27T03:33:15+01:00",
+      "description": "Bình luận & Đánh giá tóm tắt",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Nghiên cứu thực nghiệm về việc mở rộng các mô hình đa phương tiện lớn được điều chỉnh hướng dẫn",
+        "description": "Bình luận & Đánh giá tóm tắt"
+      }
+    },
+    {
+      "id": "198277160",
+      "topics": [
+        "LLM",
+        "Đại lý",
+        "Trò chơi"
+      ],
+      "title": "MindAgent: Tương tác trò chơi nổi bật",
+      "slug": "mindagent-emergent-gaming-interaction",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-27T03:32:58+01:00",
+      "description": "Bình luận & Đánh giá tóm tắt",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
+      },
+      "seo": {
+        "title": "MindAgent: Tương tác trò chơi nổi bật",
+        "description": "Bình luận & Đánh giá tóm tắt"
+      }
+    },
+    {
+      "id": "198277196",
+      "topics": [
+        "LLM",
+        "Dữ liệu có cấu trúc"
+      ],
+      "title": "Struc-Bench: Các mô hình ngôn ngữ lớn có thực sự giỏi trong việc tạo ra dữ liệu có cấu trúc phức tạp không?",
+      "slug": "struc-bench-are-large-language-models-really-good-at-generating-complex-structure",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-25T03:38:38+01:00",
+      "description": "Bình luận & Đánh giá tóm tắt",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Struc-Bench: Tạo ra dữ liệu có cấu trúc phức tạp?",
+        "description": "Bình luận & Đánh giá tóm tắt"
+      }
+    },
+    {
+      "id": "198277217",
+      "topics": [
+        "LLM",
+        "Bảo mật",
+        "Biên"
+      ],
+      "title": "Phục hồi từ việc che giấu bảo mật với các mô hình ngôn ngữ lớn",
+      "slug": "recovering-from-privacy-preserving-masking-with-large-language-models",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-25T03:38:26+01:00",
+      "description": "Bình luận & Đánh giá tóm tắt",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Phục hồi từ việc che giấu bảo mật với các mô hình ngôn ngữ lớn",
+        "description": "Bình luận & Đánh giá tóm tắt"
+      }
+    },
+    {
+      "id": "198277239",
+      "topics": [
+        "LLM",
+        "Trò chuyện"
+      ],
+      "title": "S3-DST: Phân đoạn và theo dõi trạng thái đối thoại mở có cấu trúc trong kỷ nguyên của các mô hình ngôn ngữ lớn",
+      "slug": "s3-dst-structured-open-domain-dialogue-segmentation-and-state-tracking-in-the-era",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-25T03:38:11+01:00",
+      "description": "Bình luận & Đánh giá tóm tắt",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "S3-DST: Phân đoạn và theo dõi trạng thái đối thoại mở có cấu trúc",
+        "description": "Bình luận & Đánh giá tóm tắt"
+      }
+    },
+    {
+      "id": "198277253",
+      "topics": [
+        "LLM",
+        "Âm thanh"
+      ],
+      "title": "Tăng cường văn bản cho hiểu biết ngôn ngữ nói với các mô hình ngôn ngữ lớn",
+      "slug": "augmenting-text-for-spoken-language-understanding-with-large-language-models",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-25T03:37:49+01:00",
+      "description": "Bình luận & Đánh giá tóm tắt",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Tăng cường văn bản cho hiểu biết ngôn ngữ nói",
+        "description": "Bình luận & Đánh giá tóm tắt"
+      }
+    },
+    {
+      "id": "198277277",
+      "topics": [
+        "LLM",
+        "Nén"
+      ],
+      "title": "Mô hình ngôn ngữ là nén",
+      "slug": "language-modeling-is-compression",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-25T03:37:32+01:00",
+      "description": "Bình luận & Đánh giá tóm tắt",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Mô hình ngôn ngữ là nén",
+        "description": "Bình luận & Đánh giá tóm tắt"
+      }
+    },
+    {
+      "id": "198277345",
+      "topics": [
+        "LLM",
+        "Đa ngôn ngữ"
+      ],
+      "title": "Baichuan 2: Mở các mô hình ngôn ngữ quy mô lớn",
+      "slug": "baichuan-2-open-large-scale-language-models",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-24T05:59:10+01:00",
+      "description": "Bình luận & Đánh giá tóm tắt",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Baichuan 2: Mở các mô hình ngôn ngữ quy mô lớn",
+        "description": "Bình luận & Đánh giá tóm tắt"
+      }
+    },
+    {
+      "id": "198277360",
+      "topics": [
+        "LLM",
+        "RLHF"
+      ],
+      "title": "Ổn định RLHF thông qua mô hình lợi thế và luyện tập chọn lọc",
+      "slug": "stabilizing-rlhf-through-advantage-model-and-selective-rehearsal",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-24T05:22:15+01:00",
+      "description": "Bình luận & Đánh giá tóm tắt",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Ổn định RLHF thông qua mô hình lợi thế và luyện tập chọn lọc",
+        "description": "Bình luận & Đánh giá tóm tắt"
+      }
+    },
+    {
+      "id": "198277446",
+      "topics": [
+        "LLM",
+        "Ảo giác"
+      ],
+      "title": "Chuỗi xác minh giảm ảo giác trong các mô hình ngôn ngữ lớn",
+      "slug": "chain-of-verification-reduces-hallucination-in-large-language-models",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-24T05:21:05+01:00",
+      "description": "Bình luận & Đánh giá tóm tắt",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Chuỗi xác minh giảm ảo giác trong các mô hình ngôn ngữ lớn",
+        "description": "Bình luận & Đánh giá tóm tắt"
+      }
+    },
+    {
+      "id": "198277458",
+      "topics": [
+        "LLM",
+        "Ảo giác",
+        "Thực thể",
+        "Dữ liệu có cấu trúc"
+      ],
+      "title": "LMDX: Trích xuất và định vị thông tin tài liệu dựa trên mô hình ngôn ngữ",
+      "slug": "lmdx-language-model-based-document-information-extraction-and-localization",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-24T05:20:31+01:00",
+      "description": "Bình luận & Đánh giá tóm tắt",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "LMDX: Trích xuất và định vị thông tin tài liệu",
+        "description": "Bình luận & Đánh giá tóm tắt"
+      }
+    },
+    {
+      "id": "198277109",
+      "topics": [
+        "LLM",
+        "Suy luận"
+      ],
+      "title": "Giải mã đối lập cải thiện suy luận trong các mô hình ngôn ngữ lớn",
+      "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-04T22:18:11+01:00",
+      "description": "Bình luận & Đánh giá tóm tắt",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Giải mã đối lập cải thiện suy luận trong các mô hình ngôn ngữ lớn",
+        "description": "Bình luận & Đánh giá tóm tắt"
+      }
+    },
+    {
+      "id": "198277099",
+      "topics": [
+        "LLM",
+        "Đa ngôn ngữ",
+        "Dữ liệu"
+      ],
+      "title": "CulturaX: Bộ dữ liệu đa ngôn ngữ lớn, sạch và khổng lồ cho các mô hình ngôn ngữ lớn trong 167 ngôn ngữ",
+      "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-04T22:14:53+01:00",
+      "description": "Bình luận & Đánh giá tóm tắt",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "CulturaX: Bộ dữ liệu đa ngôn ngữ lớn, sạch và khổng lồ",
+        "description": "Bình luận & Đánh giá tóm tắt"
+      }
+    },
+    {
+      "id": "198044900",
+      "topics": [
+        "LLM",
+        "Thực thể",
+        "Tinh chỉnh"
+      ],
+      "title": "Tận dụng thông tin ngữ cảnh để phát hiện hiệu quả sự nổi bật của thực thể",
+      "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-04T07:30:50+01:00",
+      "description": "Bình luận & Đánh giá tóm tắt",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Tận dụng thông tin ngữ cảnh để phát hiện hiệu quả sự nổi bật của thực thể",
+        "description": "Bình luận & Đánh giá tóm tắt"
+      }
+    },
+    {
+      "id": "198044892",
+      "topics": [
+        "LLM",
+        "Đại lý"
+      ],
+      "title": "LASER: Đại lý LLM với khám phá không gian trạng thái cho điều hướng web",
+      "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-04T07:26:17+01:00",
+      "description": "Bình luận & Đánh giá tóm tắt",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "LASER: Đại lý LLM với khám phá không gian trạng thái cho điều hướng web",
+        "description": "Bình luận & Đánh giá tóm tắt"
+      }
+    }
+  ],
+  "blogContent": {
+    "id": "198277209",
+    "topics": [
+      "LLM",
+      "Dữ liệu"
+    ],
+    "title": "SlimPajama-DC: Hiểu các kết hợp dữ liệu cho Đào tạo Mô hình Ngôn ngữ Lớn",
+    "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
+    "authorName": "Prof. Otto Nomos",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+    },
+    "_publishedAt": "2023-10-04T23:43:32+01:00",
+    "description": "Bình luận & Đánh giá Tóm tắt",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Được xuất bản vào Ngày 19 tháng 9"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tác giả:"
+                    },
+                    {
+                      "url": "https://huggingface.co/Jason0214",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Zhiqiang Shen"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/Tianhua",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Tianhua Tao"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/LiqunMa",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Liqun Ma"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/willieneis",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Willie Neiswanger"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/jthestness",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Joel Hestness"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/vnata",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Natalia Vassilieva"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/daria-soboleva",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Daria Soboleva"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/EricX003",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Eric Xing"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tóm tắt"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Bài báo này nhằm hiểu các tác động của các kết hợp dữ liệu khác nhau (ví dụ, văn bản web, wikipedia, github, sách) đối với việc đào tạo các mô hình ngôn ngữ lớn sử dụng SlimPajama. SlimPajama là một bộ dữ liệu đa nguồn được loại bỏ trùng lặp một cách nghiêm ngặt, đã được tinh chỉnh và loại bỏ trùng lặp thêm để giảm xuống còn 627B token từ bộ dữ liệu RedPajama 1.2T token do Together đóng góp. Chúng tôi đã đặt tên cho nghiên cứu của mình là SlimPajama-DC, một phân tích thực nghiệm được thiết kế để khám phá các đặc điểm cơ bản và các phương pháp tốt nhất liên quan đến việc sử dụng SlimPajama trong đào tạo các mô hình ngôn ngữ lớn. Trong quá trình nghiên cứu với SlimPajama, hai quan sát then chốt đã xuất hiện: (1) Loại bỏ trùng lặp toàn cầu so với loại bỏ trùng lặp địa phương. Chúng tôi phân tích và thảo luận về cách loại bỏ trùng lặp toàn cầu (trên các nguồn dữ liệu khác nhau) và loại bỏ trùng lặp địa phương (trong một nguồn dữ liệu duy nhất) ảnh hưởng đến hiệu suất của các mô hình được đào tạo. (2) Tỷ lệ của các bộ dữ liệu đa nguồn chất lượng cao/được loại bỏ trùng lặp cao trong sự kết hợp. Để nghiên cứu điều này, chúng tôi xây dựng sáu cấu hình của bộ dữ liệu SlimPajama và đào tạo từng cái sử dụng mô hình Cerebras-GPT 1.3B với Alibi và SwiGLU. Cấu hình tốt nhất của chúng tôi vượt trội hơn mô hình 1.3B được đào tạo trên RedPajama sử dụng cùng số lượng token đào tạo với một khoảng cách đáng kể. Tất cả các mô hình 1.3B của chúng tôi được đào tạo trên cụm Cerebras 16 lần CS-2 với tổng công suất 80 PFLOP/s trong độ chính xác hỗn hợp bf16. Chúng tôi tiếp tục mở rộng các phát hiện của mình (chẳng hạn như tăng đa dạng dữ liệu là rất quan trọng sau khi loại bỏ trùng lặp toàn cầu) trên một mô hình 7B với đào tạo kích thước lô lớn. Các mô hình của chúng tôi và các bộ dữ liệu SlimPajama-DC riêng biệt có sẵn tại: https://huggingface.co/MBZUAI-LLM và https://huggingface.co/datasets/cerebras/SlimPajama-627B."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "url": "https://arxiv.org/abs/2309.10818",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Xem trang arXiv"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "https://arxiv.org/pdf/2309.10818",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Xem PDF"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Bình luận"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Bài báo \"SlimPajama-DC: Hiểu các kết hợp dữ liệu cho Đào tạo Mô hình Ngôn ngữ Lớn\" khám phá ảnh hưởng của các kết hợp dữ liệu khác nhau đối với việc đào tạo các mô hình ngôn ngữ lớn (LLM) sử dụng bộ dữ liệu SlimPajama, một bộ dữ liệu đa nguồn được loại bỏ trùng lặp một cách nghiêm ngặt."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Những điểm chính:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Bộ dữ liệu SlimPajama"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Bộ dữ liệu này là phiên bản được tinh chỉnh và loại bỏ trùng lặp của bộ dữ liệu RedPajama khổng lồ 1.2T token. Mục tiêu là sử dụng một bộ dữ liệu sạch hơn và được loại bỏ trùng lặp nhiều hơn để đào tạo LLM."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Phân tích Thực nghiệm"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Nghiên cứu SlimPajama-DC khám phá các đặc điểm bản chất và các phương pháp tốt nhất khi sử dụng SlimPajama trong đào tạo LLM."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Loại bỏ Trùng lặp Toàn cầu so với Địa phương"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Một sự phân biệt quan trọng được thực hiện giữa loại bỏ trùng lặp toàn cầu (trên các nguồn dữ liệu khác nhau) và loại bỏ trùng lặp địa phương (trong một nguồn dữ liệu duy nhất) và cách mỗi loại ảnh hưởng đến hiệu suất của các mô hình được đào tạo."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Chất lượng Dữ liệu và Loại bỏ Trùng lặp"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Nghiên cứu đánh giá tác động của tỷ lệ các bộ dữ liệu đa nguồn chất lượng cao/được loại bỏ trùng lặp cao khi kết hợp."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Chỉ số Hiệu suất"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Cấu hình tốt nhất của họ vượt trội hơn đáng kể so với mô hình 1.3B được đào tạo trên bộ dữ liệu RedPajama lớn hơn, sử dụng cùng số lượng token đào tạo."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Cơ sở Hạ tầng Đào tạo Quy mô Lớn"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Họ đã sử dụng một cấu hình máy tính mạnh mẽ với tổng công suất 80 PFLOP/s trong độ chính xác hỗn hợp bf16."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tác động Thực tế Tiềm năng:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Đào tạo Mô hình Hiệu quả"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Việc hiểu các tác động của các kết hợp dữ liệu và loại bỏ trùng lặp đối với việc đào tạo mô hình có thể dẫn đến quá trình đào tạo LLM hiệu quả và hiệu quả hơn."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Cải thiện LLM"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Bằng cách tinh chỉnh bộ dữ liệu được sử dụng để đào tạo, các mô hình kết quả có thể cung cấp các đầu ra chính xác và hữu ích hơn trong các ứng dụng NLP khác nhau."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Hướng dẫn cho Nghiên cứu Tương lai"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Phân tích thực nghiệm này cung cấp các hiểu biết và các phương pháp tốt nhất cho các nhà nghiên cứu và các chuyên gia trong ngành đào tạo mô hình ngôn ngữ quy mô lớn."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Phân bổ Tài nguyên"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Nhận thức được tầm quan trọng của việc loại bỏ trùng lặp và kết hợp dữ liệu có thể hướng dẫn các tổ chức trong việc phân bổ tài nguyên cho việc làm sạch dữ liệu và loại bỏ trùng lặp."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Thách thức:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Tính khái quát"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Mặc dù bài báo cho thấy kết quả hứa hẹn với SlimPajama, vẫn còn phải xem những phát hiện này có thể được tổng quát hóa trên các bộ dữ liệu và mô hình khác hay không."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Với sự nhấn mạnh vào việc hiểu các nét tinh tế của các kết hợp dữ liệu, loại bỏ trùng lặp, và tác động của chúng đối với việc đào tạo LLM:"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tôi đánh giá tác động thực tế của bài báo này là 8 trên 10."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Nghiên cứu này cung cấp những hiểu biết quý giá về việc tối ưu hóa dữ liệu được sử dụng trong đào tạo các mô hình ngôn ngữ lớn, có thể dẫn đến các mô hình tốt hơn và các quá trình đào tạo hiệu quả hơn. Các phát hiện có thể đặc biệt liên quan đến các tổ chức và nhà nghiên cứu đang cố gắng tối đa hóa hiệu suất của LLM của họ bằng cách sử dụng nguồn lực hạn chế."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "researchpaper8a",
+            "height": 816,
+            "width": 1456,
+            "filename": "researchpaper8a.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Bình luận & Đánh giá Tóm tắt",
+      "title": "SlimPajama-DC: Hiểu các kết hợp dữ liệu cho Đào tạo Mô hình Ngôn ngữ Lớn",
+      "twitterCard": null,
+      "image": {
+        "width": 1456,
+        "height": 816,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
+      }
+    }
+  },
+  "topics": [
+    "LLM",
+    "Data"
+  ]
+}

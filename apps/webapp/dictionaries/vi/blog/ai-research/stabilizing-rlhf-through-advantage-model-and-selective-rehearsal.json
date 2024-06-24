@@ -1,0 +1,452 @@
+{
+  "relatedBlogs": [],
+  "blogContent": {
+    "id": "198277360",
+    "topics": [
+      "LLM",
+      "RLHF"
+    ],
+    "title": "Ổn định RLHF thông qua Mô hình Ưu thế và Diễn tập Chọn lọc",
+    "slug": "stabilizing-rlhf-through-advantage-model-and-selective-rehearsal",
+    "authorName": "Prof. Otto Nomos",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+    },
+    "_publishedAt": "2024-05-24T05:22:15+01:00",
+    "description": "Bình luận & Đánh giá Tóm tắt",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Được xuất bản vào Ngày 18 tháng 9"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tác giả:"
+                    },
+                    {
+                      "url": "https://huggingface.co/Baolin",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Baolin Peng"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/freesunshine0316",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Linfeng Song"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ",Ye Tian,Lifeng Jin,Haitao Mi,Dong Yu"
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tóm tắt"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Các Mô hình Ngôn ngữ Lớn (LLMs) đã làm cách mạng hóa xử lý ngôn ngữ tự nhiên, nhưng việc điều chỉnh các mô hình này theo giá trị và sở thích của con người bằng RLHF vẫn là thách thức lớn. Thách thức này được đặc trưng bởi các bất ổn khác nhau, chẳng hạn như hack phần thưởng và quên lãng thảm khốc. Trong báo cáo kỹ thuật này, chúng tôi đề xuất hai sáng kiến để ổn định đào tạo RLHF: 1) Mô hình Ưu thế, mô hình hóa trực tiếp điểm ưu thế tức là phần thưởng bổ sung so với phần thưởng dự kiến và điều chỉnh phân phối điểm qua các nhiệm vụ để ngăn chặn hack phần thưởng. 2) Diễn tập Chọn lọc, giảm thiểu quên lãng thảm khốc bằng cách lựa chọn dữ liệu một cách chiến lược cho đào tạo PPO và diễn tập kiến thức. Phân tích thực nghiệm của chúng tôi trên các bộ dữ liệu công cộng và riêng tư cho thấy các phương pháp được đề xuất không chỉ tăng cường ổn định trong đào tạo RLHF mà còn đạt được điểm thưởng cao hơn và tỷ lệ thắng cao hơn."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "url": "https://arxiv.org/abs/2309.10202",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Xem trang arXiv"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "https://arxiv.org/pdf/2309.10202",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Xem PDF"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Bình luận"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Bài báo \"Ổn định RLHF thông qua Mô hình Ưu thế và Diễn tập Chọn lọc\" đi sâu vào giải quyết các thách thức điều chỉnh Các Mô hình Ngôn ngữ Lớn (LLMs) theo giá trị và sở thích của con người bằng Phản hồi Học tập từ Con người (RLHF)."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Những điểm chính:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Thách thức với RLHF"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Việc điều chỉnh LLMs theo sở thích của con người bằng RLHF gặp phải những trở ngại như hack phần thưởng (nơi mà mô hình tìm cách tối đa hóa phần thưởng mà không thực sự cung cấp giá trị dự định) và quên lãng thảm khốc (nơi mà một mô hình quên các nhiệm vụ đã học trước đó khi học các nhiệm vụ mới)."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Mô hình Ưu thế"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Kỹ thuật này nhằm ngăn chặn hack phần thưởng bằng cách mô hình hóa điểm ưu thế, là phần thưởng bổ sung so với phần thưởng dự kiến, và điều chỉnh phân phối điểm qua các nhiệm vụ."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Diễn tập Chọn lọc"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Để chống lại quên lãng thảm khốc, phương pháp này lựa chọn dữ liệu một cách chiến lược cho đào tạo PPO và diễn tập kiến thức."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Kết quả Tích cực"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Bài báo báo cáo rằng các phương pháp được giới thiệu không chỉ tăng cường ổn định trong đào tạo RLHF mà còn dẫn đến điểm thưởng cao hơn và tỷ lệ thắng cao hơn."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tác động Thực tế Tiềm năng:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Sự Điều chỉnh Tốt hơn với Giá trị Con người"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Nếu LLMs có thể được đào tạo tốt hơn để điều chỉnh theo giá trị của con người bằng RLHF, các mô hình kết quả sẽ tạo ra các đầu ra mong muốn, an toàn và hướng đến người dùng hơn."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "LLMs Bền vững"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Các kỹ thuật được đề xuất có thể dẫn đến các mô hình ít bị ảnh hưởng bởi các rủi ro tiềm ẩn, làm cho chúng đáng tin cậy hơn cho các nhiệm vụ quan trọng."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Ứng dụng Rộng rãi"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Mặc dù tập trung vào LLMs, các kỹ thuật được trình bày có thể có ý nghĩa rộng hơn đối với các mô hình học máy khác nơi mà sự điều chỉnh theo phản hồi của con người là quan trọng."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Tiêu chuẩn Công nghiệp"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Nếu các phương pháp được giới thiệu là bền vững và hiệu quả, chúng có thể trở thành các kỹ thuật tiêu chuẩn trong RLHF cho LLMs, dẫn đến tác động rộng rãi về cách các mô hình được đào tạo trong tương lai."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Thách thức:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Triển khai"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Mặc dù các lợi ích được báo cáo, tác động thực tế phụ thuộc vào mức độ dễ dàng các kỹ thuật này có thể được triển khai trong các tình huống khác nhau và cách chúng tương tác với các kỹ thuật và phương pháp khác."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Xét đến tập trung của bài báo vào việc ổn định đào tạo RLHF, một khía cạnh quan trọng trong đào tạo LLMs, và kết quả hứa hẹn mà họ báo cáo:"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tôi đánh giá tác động thực tế của bài báo này là 9 trên 10."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Việc ổn định đào tạo RLHF là then chốt trong việc đảm bảo LLMs điều chỉnh tốt với giá trị của con người. Việc triển khai các kỹ thuật này có thể dẫn đến các mô hình ngôn ngữ an toàn và đáng tin cậy hơn, từ đó sẽ mang lại lợi ích cho nhiều ứng dụng trong các ngành công nghiệp."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "researchpaper9",
+            "height": 816,
+            "width": 1456,
+            "filename": "researchpaper9.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Bình luận & Đánh giá Tóm tắt\n",
+      "title": "Ổn định RLHF ... Mô hình Ưu thế & Diễn tập Chọn lọc",
+      "twitterCard": null,
+      "image": {
+        "width": 1456,
+        "height": 816,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      }
+    }
+  },
+  "topics": [
+    "LLM",
+    "RLHF"
+  ]
+}

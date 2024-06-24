@@ -1,0 +1,468 @@
+{
+  "relatedBlogs": [
+    {
+      "id": "180563939",
+      "topics": [
+        "DAO",
+        "Tokenomics",
+        "Commentaire"
+      ],
+      "title": "Un cadre pour la conception de la gouvernance de la blockchain : Le Prysm Group Wheel [Commentaire]",
+      "slug": "a-framework-for-blockchain-governance-design-the-prysm-group-wheel-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:19:19+01:00",
+      "description": "Naviguez dans les complexités de la gouvernance de la blockchain avec le Prysm Group Wheel. Votre feuille de route pour une conception efficace de la gouvernance de la blockchain.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690861154-cbc11-img1.webp"
+      },
+      "seo": {
+        "title": "Un cadre pour la conception de la gouvernance de la blockchain [Commentaire]",
+        "description": "Naviguez dans les complexités de la gouvernance de la blockchain avec le Prysm Group Wheel. Votre feuille de route pour une conception efficace de la gouvernance de la blockchain."
+      }
+    },
+    {
+      "id": "180217123",
+      "topics": [
+        "Tokenomics",
+        "Commentaire"
+      ],
+      "title": "Économie des incitations tokenisées 2 : Sélectionner des métriques de performance efficaces [Commentaire]",
+      "slug": "economics-of-tokenized-incentives-2-selecting-effective-performance-metrics-comme",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:17:05+01:00",
+      "description": "Découvrez la puissance des métriques de performance dans les systèmes de paiement pour performance de la blockchain. Apprenez à aligner efficacement les incitations avec les objectifs de la plateforme.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690770918-cbc2-img1.png"
+      },
+      "seo": {
+        "title": "Économie des incitations tokenisées 2 [Commentaire]",
+        "description": "Découvrez la puissance des métriques de performance dans les systèmes de paiement pour performance de la blockchain. Apprenez à aligner efficacement les incitations avec les objectifs de la plateforme."
+      }
+    },
+    {
+      "id": "180217082",
+      "topics": [
+        "Tokenomics",
+        "Commentaire"
+      ],
+      "title": "Économie des incitations tokenisées 1 : Introduction au paiement pour performance [Commentaire]",
+      "slug": "economics-of-tokenized-incentives-1-intro-to-pay-for-performance",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:15:12+01:00",
+      "description": "Plongez dans les complexités des incitations au paiement pour performance dans les plateformes de blockchain. Apprenez les compromis et les considérations de conception pour le succès.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690770568-cbc1-img1.png"
+      },
+      "seo": {
+        "title": "Économie des incitations tokenisées 1 [Commentaire]",
+        "description": "Plongez dans les complexités des incitations au paiement pour performance dans les plateformes de blockchain. Apprenez les compromis et les considérations de conception pour le succès."
+      }
+    },
+    {
+      "id": "180563918",
+      "topics": [
+        "Tokenomics",
+        "Commentaire",
+        "Levée de fonds"
+      ],
+      "title": "Tokens : Véhicule d'investissement ou moyen d'échange (pas les deux) [Commentaire]",
+      "slug": "tokens-investment-vehicle-or-medium-of-exchange-not-both-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:13:31+01:00",
+      "description": "Explorez le double rôle des tokens dans l'économie de la blockchain. Découvrez la ligne fine entre véhicule d'investissement et moyen d'échange.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690859959-cbc8-img1.png"
+      },
+      "seo": {
+        "title": "Tokens : Investissement ou moyen d'échange [Commentaire]",
+        "description": "Explorez le double rôle des tokens dans l'économie de la blockchain. Découvrez la ligne fine entre véhicule d'investissement et moyen d'échange."
+      }
+    },
+    {
+      "id": "180563922",
+      "topics": [
+        "Levée de fonds",
+        "Tokenomics",
+        "Commentaire"
+      ],
+      "title": "Les ICOs tirent parti des effets de réseau [Commentaire]",
+      "slug": "icos-leverage-network-effects-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:12:06+01:00",
+      "description": "Découvrez comment les ICOs exploitent la puissance des effets de réseau pour alimenter leur succès. Les ICOs et les effets de réseau, un duo dynamique !",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690860184-cbc9-img1.png"
+      },
+      "seo": {
+        "title": "Les ICOs tirent parti des effets de réseau [Commentaire]",
+        "description": "Découvrez comment les ICOs exploitent la puissance des effets de réseau pour alimenter leur succès. Les ICOs et les effets de réseau, un duo dynamique !"
+      }
+    },
+    {
+      "id": "180556595",
+      "topics": [
+        "Levée de fonds",
+        "Tokenomics",
+        "Commentaire"
+      ],
+      "title": "L'effet Blockchain : Effets de réseau sans les coûts de pouvoir de marché [Commentaire]",
+      "slug": "the-blockchain-effect-network-effects-without-market-power-costs-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:11:14+01:00",
+      "description": "Explorez comment la blockchain permet des effets de réseau sans les inconvénients du pouvoir de marché. Découvrez l'effet révolutionnaire de la Blockchain.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690855275-cbc4-img1.png"
+      },
+      "seo": {
+        "title": "Effets de réseau sans les coûts de pouvoir de marché [Commentaire]",
+        "description": "Explorez comment la blockchain permet des effets de réseau sans les inconvénients du pouvoir de marché. Découvrez l'effet révolutionnaire de la Blockchain."
+      }
+    },
+    {
+      "id": "180563931",
+      "topics": [
+        "Tokenomics",
+        "Commentaire"
+      ],
+      "title": "Structures d'incitation de la Blockchain : Ce qu'elles sont et pourquoi elles sont importantes [Commentaire]",
+      "slug": "blockchain-incentive-structures-what-they-are-and-why-they-matter-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:10:02+01:00",
+      "description": "Comprenez le cœur des structures d'incitation de la blockchain et leur importance dans la conduite du comportement des utilisateurs et le succès de la plateforme.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690860807-cbc10-img1.png"
+      },
+      "seo": {
+        "title": "Structures d'incitation de la Blockchain [Commentaire]",
+        "description": "Comprenez le cœur des structures d'incitation de la blockchain et leur importance dans la conduite du comportement des utilisateurs et le succès de la plateforme."
+      }
+    },
+    {
+      "id": "167184977",
+      "topics": [
+        "Tokenomics",
+        "DAO",
+        "Levée de fonds"
+      ],
+      "title": "Révolutionner le modèle de capital : Comment la Tokenomie bouleverse le monde des startups",
+      "slug": "revolutionizing-the-equity-model-how-tokenomics-is-disrupting-the-startup-world",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:02:51+01:00",
+      "description": "Débloquez l'avenir des startups avec la tokenomie ! Explorez comment ce concept innovant redéfinit le modèle de capital et révolutionne le paysage des startups.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1687395688-tb2-img1.png"
+      },
+      "seo": {
+        "title": "Comment la Tokenomie bouleverse le monde des startups",
+        "description": "Explorez comment ce concept innovant redéfinit le modèle de capital et révolutionne le paysage des startups."
+      }
+    },
+    {
+      "id": "167101094",
+      "topics": [
+        "Pour débutants",
+        "Tokenomics"
+      ],
+      "title": "Tokenomie 101 : Libérer la puissance de la cryptomonnaie !",
+      "slug": "tokenomics-101-unleashing-the-power-of-cryptocurrency",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T08:57:58+01:00",
+      "description": "Découvrez la puissance de la cryptomonnaie à travers Tokenomie 101 - un guide approfondi pour comprendre l'économie derrière les actifs numériques.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1687391799-tb1-img1.png"
+      },
+      "seo": {
+        "title": "Tokenomie 101 : Libérer la puissance de la cryptomonnaie !",
+        "description": "un guide approfondi pour comprendre l'économie derrière les actifs numériques."
+      }
+    }
+  ],
+  "blogContent": {
+    "id": "180217169",
+    "topics": [
+      "Tokenomics",
+      "Commentaire"
+    ],
+    "title": "Économie des incitations tokenisées 3 : La valeur du token n'alignera pas les parties prenantes [Commentaire]",
+    "slug": "economics-of-tokenized-incentives-3-token-value-won-t-align-stakeholders-commenta",
+    "authorName": "Crypto Clairity",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+    },
+    "_publishedAt": "2023-10-05T09:17:23+01:00",
+    "description": "Découvrez les pièges de l'utilisation de la valeur du token comme métrique de performance sur les plateformes blockchain. Apprenez à concevoir des systèmes d'incitation efficaces.",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1690771457-cbc3-img1.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Lien original : "
+                    },
+                    {
+                      "url": "https://medium.com/prysmeconomics/economics-of-tokenized-incentives-3-token-value-wont-align-stakeholders-545cffa4f58",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Économie des incitations tokenisées 3 : La valeur du token n'alignera pas les parties prenantes"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Auteur : "
+                    },
+                    {
+                      "url": "https://medium.com/@cathybarreraphd?source=post_page-----545cffa4f58--------------------------------",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noopener follow"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Cathy Barrera, PhD"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Résumé"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Alors que beaucoup dans l'espace blockchain croient que la création d'un token natif peut aligner les incitations des utilisateurs avec les intérêts de la plateforme, l'article soutient que la valeur du token est une mauvaise métrique de performance pour inciter les comportements souhaités. La valeur d'un token n'est pas nécessairement alignée avec la valeur à long terme de la plateforme, et elle n'est pas sous le contrôle des participants individuels. L'article décrit cinq problèmes qui peuvent survenir en utilisant la valeur du token comme métrique de performance : jeu innocent, jeu malveillant, multitâche, passager clandestin et désalignement des risques."
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Commentaire"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Le choix des métriques de performance dans un système de paiement pour performance peut avoir un impact significatif sur le comportement des participants et le succès global de la plateforme. Bien que la valeur du token puisse sembler un choix évident pour une métrique de performance, cela peut entraîner des conséquences non intentionnelles et peut ne pas inciter efficacement les comportements qui sont bénéfiques pour la plateforme. Il est donc crucial de choisir des métriques qui s'alignent avec les objectifs de la plateforme et qui sont sous le contrôle des participants."
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Idées à mettre en œuvre"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Choisissez les métriques avec soin"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Lors de la conception d'un système de paiement pour performance, prenez le temps de choisir les bonnes métriques de performance. Considérez si les métriques s'alignent avec les objectifs de la plateforme et sont sous le contrôle des participants."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Envisagez d'autres structures d'incitation"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Si une métrique de performance adéquate ne peut être trouvée, envisagez d'autres structures d'incitation. Par exemple, les systèmes de réputation et les mécanismes de tarification peuvent être efficaces dans certains contextes."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Comprenez les problèmes potentiels"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Soyez conscient des problèmes potentiels qui peuvent survenir en utilisant la valeur du token comme métrique de performance, tels que le jeu, la multitâche, le passager clandestin et le désalignement des risques. Surveillez ces problèmes et soyez prêt à apporter des ajustements si nécessaire."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Concevez des schémas de récompenses ciblés"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Comprenez les activités qui génèrent de la valeur pour la plateforme et concevez des schémas de récompenses ciblés pour inciter ces comportements. Les métriques de performance utilisées et la taille des récompenses devraient être optimisées pour encourager les comportements souhaités."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Communiquez clairement"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Assurez-vous que les participants comprennent le système d'incitation et comment ils peuvent en bénéficier. Une communication claire peut aider à encourager la participation et à garantir que le système est utilisé efficacement."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": []
+      }
+    ],
+    "seo": {
+      "description": "Découvrez les pièges de l'utilisation de la valeur du token comme métrique de performance sur les plateformes blockchain. Apprenez à concevoir des systèmes d'incitation efficaces.",
+      "title": "Économie des incitations tokenisées 3 [Commentaire]",
+      "twitterCard": null,
+      "image": {
+        "width": 862,
+        "height": 862,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1690771457-cbc3-img1.png"
+      }
+    }
+  },
+  "topics": [
+    "Tokenomics",
+    "Commentary"
+  ]
+}

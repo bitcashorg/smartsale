@@ -1,0 +1,467 @@
+{
+  "relatedBlogs": [],
+  "blogContent": {
+    "id": "198277182",
+    "topics": [
+      "变压器"
+    ],
+    "title": "通过共线约束注意力解决变压器头痛问题",
+    "slug": "cure-the-headache-of-transformers-via-collinear-constrained-attention",
+    "authorName": "Prof. Otto Nomos",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+    },
+    "_publishedAt": "2024-05-27T03:32:43+01:00",
+    "description": "摘要评论与评级",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "发布于 9月15日"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "作者:"
+                    },
+                    {
+                      "url": "https://huggingface.co/underskies",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "朱诗怡"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ",叶静,江伟,张琪,吴一帆,"
+                    },
+                    {
+                      "url": "https://huggingface.co/JungleLee",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "李建国"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "摘要"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "随着基于大型语言模型的实际应用的快速发展，推断性能的重要性在研究领域呈指数级增长。在我们的研究中，我们发现了变压器模型中以前被忽视的异常行为，导致最重要信息的最近令牌周围出现混乱。我们将这一发现称为“变压器的头痛”。为了从根本上解决这个问题，我们引入了一种名为共线约束注意力（CoCA）的新型自我注意结构。这种结构可以与现有的外推、内插方法以及为传统变压器模型设计的其他优化策略无缝集成。我们在推理过程中甚至对序列长度进行了16倍至24倍的优异外推表现，而无需对我们的模型进行任何微调。我们还提高了CoCA的计算和空间效率，以确保其实用性。我们计划不久后开源CoCA。与此同时，我们已在附录中提供了代码，以重新出现实验。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "url": "https://arxiv.org/abs/2309.08646",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "View arXiv page"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "https://arxiv.org/pdf/2309.08646",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "View PDF"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Commentary"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "The paper \"Cure the headache of Transformers via Collinear Constrained Attention\" identifies and addresses an overlooked issue in Transformer models, a dominant architecture in various natural language processing tasks and applications."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Key Takeaways:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Anomalous Behavior Identification"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": The research identifies a behavior termed the \"headache of Transformers,\" where there's chaotic behavior around the closest tokens, which are often the most informative. This poses challenges in performance, especially in tasks that require attention over long sequences."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Collinear Constrained Attention (CoCA)"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": The authors introduce a new self-attention structure to address this issue, which is claimed to be easily integrated with other optimization methods for traditional Transformer models."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Superior Extrapolation"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": The paper suggests that with CoCA, models can perform extrapolation efficiently over long sequence lengths without requiring additional fine-tuning."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Efficiency Enhancements"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Besides the accuracy improvements, the researchers have optimized CoCA for computational and spatial efficiency, which makes it more practical for real-world deployments."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Open-Sourcing"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": The researchers express intent to make CoCA open-source, which will likely encourage adoption and further exploration by the wider NLP community."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Potential Real-World Impact:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Better Model Behavior"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": By addressing an underlying issue in Transformers, models may be more stable and predictable, leading to better real-world performance, especially in tasks where understanding the context over long sequences is crucial."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Efficient Long Sequences Processing"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Given the extrapolation improvements, tasks such as document summarization, which require attention over longer texts, could benefit."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "General Integration"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": The ease of integration with other optimization methods means that a broad range of existing Transformer models can benefit without complete overhauls."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Challenges:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Adoption Rate"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": As with any novel technique, it might take time for the wider community to adopt, test, and validate the approach in diverse real-world scenarios."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Potential Limitations"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Every model or technique has its limitations, which might only become evident once applied to a wider variety of tasks."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Given the potential benefits of addressing a foundational challenge in Transformers, along with the practical advantages the approach seems to offer:"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "I'd rate the real-world impact of this paper as an 8 out of 10."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "The potential improvements in efficiency and performance across a broad range of tasks could have significant implications for numerous NLP applications. However, the full impact will largely depend on how the broader research and development community receive, validate, and implement the findings."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "researchpaper8a",
+            "height": 816,
+            "width": 1456,
+            "filename": "researchpaper8a.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "摘要评论与评级",
+      "title": "通过共线约束注意力解决变压器头痛问题",
+      "twitterCard": null,
+      "image": {
+        "width": 1456,
+        "height": 816,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
+      }
+    }
+  },
+  "topics": [
+    "Transformers"
+  ]
+}

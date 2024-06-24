@@ -88,6 +88,31 @@ export function BlogPage({ params, blogContent, relatedBlogs }: BlogPageProps) {
             >
               {blogContent?.contentBlock?.map(
                 ({ mainContent, topImages }, ind: number) => {
+                  // if (ind >= 2) return null
+
+                  mainContent.value.document.children =
+                    mainContent.value.document.children.map(item => {
+                      if (item.type !== 'paragraph') return item
+
+                      const sanitizedChildren = item.children?.map(child => {
+                        if (child.type !== 'span') return child
+                        if (typeof child.value === 'string') return child
+
+                        if (Array.isArray(child.value)) {
+                          return {
+                            ...child,
+                            value: (child.value as string[]).join(' ')
+                          }
+                        }
+                        return child
+                      })
+                      return { ...item, children: sanitizedChildren }
+                    }) as any
+
+                  // console.log(`================ ${ind} =================`)
+                  // console.log(
+                  //   JSON.stringify(mainContent.value.document.children)
+                  // )
                   return (
                     <div key={mainContent.value.document.level}>
                       {topImages.map(
@@ -135,13 +160,6 @@ export function BlogPage({ params, blogContent, relatedBlogs }: BlogPageProps) {
                                     key={key}
                                   >
                                     {children}
-                                    {/* <a
-                                      id={anchor}
-                                      className="pt-32"
-                                      href={`#${anchor}`}
-                                    >
-                                      Jump to section
-                                    </a> */}
                                   </HeadingTag>
                                 )
                               }

@@ -1,0 +1,475 @@
+{
+  "relatedBlogs": [],
+  "blogContent": {
+    "id": "198277124",
+    "topics": [
+      "LLM",
+      "Financas",
+      "Saude",
+      "Juridico",
+      "Prompting"
+    ],
+    "title": "Adaptando Modelos de Linguagem de Grande Escala por Meio de Compreensao de Leitura",
+    "slug": "adapting-large-language-models-via-reading-comprehension",
+    "authorName": "Prof. Otto Nomos",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+    },
+    "_publishedAt": "2024-05-27T03:34:22+01:00",
+    "description": "Comentario e Avaliacao Abstratos",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Publicado em 18 de Set"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Autores:"
+                    },
+                    {
+                      "url": "https://huggingface.co/cdxhhhh",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Daixuan Cheng"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ",Shaohan Huang,"
+                    },
+                    {
+                      "url": "https://huggingface.co/gitnlp",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Furu Wei"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Resumo"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Exploramos como o treinamento continuado em corpora especificos do dominio influencia modelos de linguagem de grande escala, revelando que o treinamento no corpora bruto confere ao modelo conhecimento do dominio, mas prejudica drasticamente sua capacidade de prompt para responder perguntas. Inspirados pela aprendizagem humana por meio da compreensao de leitura--a pratica apos a leitura melhora a capacidade de responder a perguntas com base no conhecimento adquirido--propomos um metodo simples para transformar corpora brutos em textos de compreensao de leitura. Cada texto bruto e enriquecido com uma serie de tarefas relacionadas ao seu conteudo. Nosso metodo, altamente escalavel e aplicavel a qualquer corpora de pre-treinamento, melhora consistentemente o desempenho em varias tarefas em tres dominios diferentes: biomedicina, financas e direito. Notavelmente, nosso modelo de linguagem de 7B alcancou desempenho competitivo com modelos especificos do dominio de escalas muito maiores, como BloombergGPT-50B. Alem disso, demonstramos que textos de compreensao de leitura especificos do dominio podem melhorar o desempenho do modelo ate mesmo em benchmarks gerais, mostrando o potencial para desenvolver um modelo geral em ainda mais dominios. Nosso modelo, codigo e dados estarao disponiveis em https://github.com/microsoft/LMOps."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "url": "https://arxiv.org/abs/2309.09530",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Ver pagina arXiv"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "https://arxiv.org/pdf/2309.09530",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Ver PDF"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Comentario"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "O artigo intitulado \"Adaptando Modelos de Linguagem de Grande Escala por Meio de Compreensao de Leitura\" aborda a adaptacao de modelos de linguagem de grande escala para dominios especificos."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Principais Insights:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Influencia do Treinamento Pre-continuado"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": A pesquisa mostra que o treinamento em conjuntos de dados especificos do dominio fornece conhecimento do dominio, mas afeta a capacidade do modelo de responder a prompts."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Aprendizado Inspirado no Humano"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": O artigo se inspira em como os humanos melhoram seu entendimento de um assunto--praticando a compreensao apos a leitura. Os autores transformam dados brutos em tarefas de compreensao de leitura."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Aplicabilidade Ampla"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Seu metodo e escalavel e pode ser aplicado em varios dominios, de biomedicina a direito."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Desempenho Competitivo"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Seu modelo de 7B mostra resultados competitivos em comparacao com modelos muito maiores como BloombergGPT-50B, indicando eficiencia no treinamento."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Potencial de Generalizacao"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": O metodo nao e apenas especifico do dominio. Ele tambem melhora o desempenho em tarefas gerais, sugerindo sua aplicabilidade mais ampla."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Impacto Potencial no Mundo Real:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Adaptacao Eficiente ao Dominio"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Dada a proliferacao de tarefas especificas do dominio em industrias como saude, direito e financas, ter uma maneira eficiente de adaptar modelos de linguagem gerais a esses dominios e inestimavel."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Conservacao de Recursos"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Ao mostrar resultados competitivos com um modelo de 7B contra modelos maiores como BloombergGPT-50B, esse metodo implica economia de custos e tempo em termos de treinamento de modelos."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Melhoria da Compreensao de Leitura"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Ao transformar dados brutos em tarefas de compreensao de leitura, o modelo pode ser usado para uma variedade de aplicacoes, como sistemas de tutoria, resumo de conteudo e muito mais."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Aplicabilidade Mais Ampla"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": O fato de seu metodo tambem melhorar benchmarks gerais sugere que ele pode ser usado para uma ampla gama de tarefas, tornando-o versatil."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Desafios:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Trade-off entre Especificidade e Generalidade"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Como sempre com a adaptacao ao dominio, ha um equilibrio a ser alcanzado entre se tornar muito especifico do dominio e manter a capacidade de generalizar."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Dada a necessidade crescente de modelos especificos do dominio em aplicacoes do mundo real, a abordagem inovadora de transformar dados brutos em tarefas de compreensao, e o potencial para aplicabilidade mais ampla:"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Eu classificaria o impacto real deste artigo como 8,5 de 10."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Esta abordagem apresenta um potencial significativo para transformar a maneira como os LLMs sao adaptados a tarefas especificas do dominio, garantindo eficiencia e eficacia."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "researchpaper9",
+            "height": 816,
+            "width": 1456,
+            "filename": "researchpaper9.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Comentario e Avaliacao Abstratos",
+      "title": "Adaptando Modelos de Linguagem de Grande Escala por Meio de Compreensao de Leitura",
+      "twitterCard": null,
+      "image": {
+        "width": 1456,
+        "height": 816,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      }
+    }
+  },
+  "topics": [
+    "LLM",
+    "Finance",
+    "Healthcare",
+    "Legal",
+    "Prompting"
+  ]
+}

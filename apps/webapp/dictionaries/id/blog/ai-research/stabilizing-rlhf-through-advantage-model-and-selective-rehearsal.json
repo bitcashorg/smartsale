@@ -1,0 +1,452 @@
+{
+  "relatedBlogs": [],
+  "blogContent": {
+    "id": "198277360",
+    "topics": [
+      "LLM",
+      "RLHF"
+    ],
+    "title": "Menstabilkan RLHF melalui Model Keuntungan dan Latihan Selektif",
+    "slug": "stabilizing-rlhf-through-advantage-model-and-selective-rehearsal",
+    "authorName": "Prof. Otto Nomos",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+    },
+    "_publishedAt": "2024-05-24T05:22:15+01:00",
+    "description": "Komentar & Penilaian Abstrak",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Diterbitkan pada 18 Sep"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Penulis:"
+                    },
+                    {
+                      "url": "https://huggingface.co/Baolin",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Baolin Peng"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/freesunshine0316",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Linfeng Song"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ",Ye Tian,Lifeng Jin,Haitao Mi,Dong Yu"
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Abstrak"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Model Bahasa Besar (LLMs) telah merevolusi pemrosesan bahasa alami, namun menyelaraskan model-model ini dengan nilai dan preferensi manusia menggunakan RLHF masih menjadi tantangan besar. Tantangan ini ditandai dengan berbagai ketidakstabilan, seperti peretasan hadiah dan pelupaan yang menghancurkan. Dalam laporan teknis ini, kami mengusulkan dua inovasi untuk menstabilkan pelatihan RLHF: 1) Model Keuntungan, yang langsung memodelkan skor keuntungan yaitu, hadiah tambahan dibandingkan dengan hadiah yang diharapkan dan mengatur distribusi skor di berbagai tugas untuk mencegah peretasan hadiah. 2) Latihan Selektif, yang mengurangi pelupaan yang menghancurkan dengan memilih data secara strategis untuk pelatihan PPO dan mengulang pengetahuan. Analisis eksperimental kami pada dataset publik dan milik pribadi mengungkapkan bahwa metode yang diusulkan tidak hanya meningkatkan stabilitas dalam pelatihan RLHF tetapi juga mencapai skor hadiah dan tingkat kemenangan yang lebih tinggi."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "url": "https://arxiv.org/abs/2309.10202",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Lihat halaman arXiv"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "https://arxiv.org/pdf/2309.10202",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Lihat PDF"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Komentar"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Makalah \"Menstabilkan RLHF melalui Model Keuntungan dan Latihan Selektif\" membahas tantangan yang muncul dalam menyelaraskan Model Bahasa Besar (LLMs) dengan nilai dan preferensi manusia menggunakan Reinforcement Learning dari Umpan Balik Manusia (RLHF)."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Poin Utama:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Tantangan dengan RLHF"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Menyelaraskan LLMs dengan preferensi manusia menggunakan RLHF menghadapi hambatan seperti peretasan hadiah (di mana model menemukan cara untuk memaksimalkan hadiah tanpa benar-benar memberikan nilai yang dimaksud) dan pelupaan yang menghancurkan (di mana model melupakan tugas yang telah dipelajari sebelumnya ketika belajar yang baru)."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Model Keuntungan"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Teknik ini bertujuan untuk mencegah peretasan hadiah dengan memodelkan skor keuntungan, yang merupakan hadiah tambahan dibandingkan dengan hadiah yang diharapkan, dan mengatur distribusi skor di berbagai tugas."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Latihan Selektif"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Untuk melawan pelupaan yang menghancurkan, metode ini secara strategis memilih data untuk pelatihan PPO dan mengulang pengetahuan."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Hasil Positif"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Makalah ini melaporkan bahwa metode yang diperkenalkan tidak hanya meningkatkan stabilitas dalam pelatihan RLHF tetapi juga menghasilkan skor hadiah dan tingkat kemenangan yang lebih tinggi."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Dampak Dunia Nyata yang Potensial:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Penyelarasan Lebih Baik dengan Nilai Manusia"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Jika LLMs dapat dilatih lebih baik untuk menyelaraskan dengan nilai manusia menggunakan RLHF, model yang dihasilkan akan menghasilkan output yang lebih diinginkan, aman, dan berorientasi pengguna."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "LLMs yang Kuat"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Teknik yang diusulkan dapat menghasilkan model yang kurang rentan terhadap potensi jebakan, membuatnya lebih dapat diandalkan untuk tugas kritis."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Penerapan Luas"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Meskipun fokusnya pada LLMs, teknik yang disajikan dapat memiliki implikasi yang lebih luas untuk model pembelajaran mesin lainnya di mana penyelarasan dengan umpan balik manusia sangat penting."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Standar Industri"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Jika metode yang diperkenalkan kuat dan efektif, mereka mungkin menjadi teknik standar dalam RLHF untuk LLMs, yang mengarah pada dampak luas pada cara model dilatih di masa depan."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tantangan:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Implementasi"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Meskipun keuntungan yang dilaporkan, dampak dunia nyata bergantung pada seberapa mudah teknik ini dapat diimplementasikan dalam berbagai skenario dan bagaimana mereka berinteraksi dengan teknik dan metode lainnya."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Mengingat fokus makalah pada stabilisasi pelatihan RLHF, aspek penting dari pelatihan LLMs, dan hasil yang menjanjikan yang mereka laporkan:"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Saya akan menilai dampak dunia nyata dari makalah ini sebagai 9 dari 10."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Stabilisasi pelatihan RLHF sangat penting dalam memastikan LLMs menyelaraskan dengan baik dengan nilai manusia. Mengimplementasikan teknik ini dapat menghasilkan model bahasa yang lebih aman dan lebih dapat diandalkan, yang pada gilirannya akan menguntungkan berbagai aplikasi di berbagai industri."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "researchpaper9",
+            "height": 816,
+            "width": 1456,
+            "filename": "researchpaper9.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Komentar & Penilaian Abstrak\n",
+      "title": "Menstabilkan RLHF ... Model Keuntungan & Latihan Selektif",
+      "twitterCard": null,
+      "image": {
+        "width": 1456,
+        "height": 816,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      }
+    }
+  },
+  "topics": [
+    "LLM",
+    "RLHF"
+  ]
+}

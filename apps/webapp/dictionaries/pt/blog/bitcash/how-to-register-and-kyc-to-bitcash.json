@@ -1,0 +1,1455 @@
+{
+  "relatedBlogs": [],
+  "blogContent": {
+    "id": "H_DP7HFORBuw9rID5Jkhhw",
+    "topics": [
+      "como_fazer"
+    ],
+    "title": "Como se registrar e fazer KYC no Bitcash",
+    "slug": "how-to-register-and-kyc-to-bitcash",
+    "authorName": "Roberto \"Andler\" Lucas",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1715639160-andler-file-photo.jpg"
+    },
+    "_publishedAt": "2024-06-20T16:20:40+01:00",
+    "description": "Estamos cobrindo uma variedade de tópicos, incluindo o registro para uma conta Bitcash, configurando um nome de conta e referenciador, identificando e protegendo dispositivos, fornecendo identificação e informações pessoais para KYC, tirando fotos para verificação de KYC, e aguardando aprovação e ingressando na comunidade.",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1715638953-bitcash-logo-frame-w-bg.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "O aplicativo Bitcash Wallet oferece uma experiência web3 abrangente com um robusto processo de KYC, integração segura de chave de acesso e um sistema de recompensas envolvente. Essas características não apenas aumentam a segurança e conveniência do usuário, mas também promovem uma comunidade forte incentivando a participação. Para melhorar ainda mais a experiência do usuário, poderia ser considerado expandir o suporte para criptomoedas adicionais e fornecer mais recursos educacionais. No geral, o aplicativo Bitcash Wallet está bem posicionado para atrair e reter usuários dentro do ecossistema de criptomoedas, DeFi e web3."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "splash-edited",
+            "height": 1440,
+            "width": 1440,
+            "filename": "splash-edited.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1715831775-splash-edited.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Etapa 0 (Opcional) - Registrar-se pelo Bitlauncher"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Se você é um investidor e deseja participar da pré-venda do nosso próximo "
+                    },
+                    {
+                      "url": "https://bitlauncher.ai/bitcash-bitlauncher",
+                      "meta": [
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "marks": [
+                            "strong"
+                          ],
+                          "value": "token BC"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ", conecte uma carteira EOS EVM à sua conta e mais, você pode registrar sua conta Bitcash seguindo estas etapas:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Vá para "
+                            },
+                            {
+                              "url": "https://bitlauncher.ai",
+                              "meta": [
+                                {
+                                  "id": "target",
+                                  "value": "_blank"
+                                }
+                              ],
+                              "type": "link",
+                              "children": [
+                                {
+                                  "type": "span",
+                                  "marks": [
+                                    "strong"
+                                  ],
+                                  "value": "bitlauncher.ai"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "span",
+                              "value": " e desça até a seção "
+                            },
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Apenas 3 Passos Necessários"
+                            },
+                            {
+                              "type": "span",
+                              "value": "."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Clique no cartão \"Inscreva-se e Complete o KYC\" onde a imagem indica."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "blockquote",
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Completar essas etapas o levará ao nosso aplicativo Bitcash Wallet para iniciar o registro."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": []
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Etapa 1 - Sua Identidade no Aplicativo Bitcash Wallet."
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 3,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Configurando seu nome de conta."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Escolha um nome de conta que o identifique, entre letras "
+                    },
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "a"
+                    },
+                    {
+                      "type": "span",
+                      "value": " até "
+                    },
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "z "
+                    },
+                    {
+                      "type": "span",
+                      "value": "e/ou números de "
+                    },
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "1 "
+                    },
+                    {
+                      "type": "span",
+                      "value": "até "
+                    },
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "5"
+                    },
+                    {
+                      "type": "span",
+                      "value": " e "
+                    },
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "até 9"
+                    },
+                    {
+                      "type": "span",
+                      "value": " caracteres de comprimento. Pode ser menos e ser apenas letras ou letras com números. No final do processo (e quando sua conta for aprovada), terá o domínio "
+                    },
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": ".bk "
+                    },
+                    {
+                      "type": "span",
+                      "value": "no final do nome."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tenha cuidado com seu nome de conta, ele será para sempre! Certifique-se de seguir:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Escolha um nome único e memorável."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Evite nomes ofensivos, enganosos ou promocionais."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Represente uma pessoa; não use nomes de organizações."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Mantenha-o simples e fácil de soletrar para você e seus colegas."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 3,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Configurando um referenciador."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Um "
+                    },
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "referenciador "
+                    },
+                    {
+                      "type": "span",
+                      "value": "é uma conta Bitcash existente e aprovada que o refere ao aplicativo da carteira. Não é necessário adicionar o "
+                    },
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": ".bk"
+                    },
+                    {
+                      "type": "span",
+                      "value": " no final do nome da conta. Se você não tiver um referenciador para conectar, você pode fornecer a conta "
+                    },
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "bank.bk "
+                    },
+                    {
+                      "type": "span",
+                      "value": "(nosso contrato inteligente de banco)."
+                    }
+                  ]
+                },
+                {
+                  "type": "blockquote",
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Se você está vindo do Bitlauncher ou clicou em um link compartilhado, esse campo já pode estar preenchido."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "kyc-step-frame-1",
+            "height": 1440,
+            "width": 1440,
+            "filename": "kyc-step-frame-1.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1715841179-kyc-step-frame-1.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Etapa 2 - Identifique Seu Dispositivo"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Dar um nome para seu dispositivo principal é ideal para você identificar rapidamente seus dispositivos conectados."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Com o Bitcash Wallet você pode vincular mais de um dispositivo móvel/tablet, para ser capaz de fazer login com diferentes dispositivos. Por padrão, fornecemos um nome geral, mas é sempre bom atribuir um nome."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Uma vez que o "
+                    },
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Nome do Dispositivo "
+                    },
+                    {
+                      "type": "span",
+                      "value": "é atribuído e clicamos no botão "
+                    },
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Próximo"
+                    },
+                    {
+                      "type": "span",
+                      "value": ", ele solicitará criar uma "
+                    },
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "chave de acesso "
+                    },
+                    {
+                      "type": "span",
+                      "value": "e criar uma conexão "
+                    },
+                    {
+                      "type": "span",
+                      "marks": [
+                        "code"
+                      ],
+                      "value": "WebAuthN "
+                    },
+                    {
+                      "type": "span",
+                      "value": "entre seu dispositivo com sua nova conta. Você pode escolher qualquer uma das opções para autenticar sua conta. É assim que você fará login com sua conta."
+                    }
+                  ]
+                },
+                {
+                  "type": "blockquote",
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Se não conseguir avançar para a próxima tela, primeiro tente usar os navegadores móveis "
+                        },
+                        {
+                          "type": "span",
+                          "marks": [
+                            "strong"
+                          ],
+                          "value": "Google"
+                        },
+                        {
+                          "type": "span",
+                          "value": ", "
+                        },
+                        {
+                          "type": "span",
+                          "marks": [
+                            "strong"
+                          ],
+                          "value": "Opera (Não Mini)"
+                        },
+                        {
+                          "type": "span",
+                          "value": " ou "
+                        },
+                        {
+                          "type": "span",
+                          "marks": [
+                            "strong"
+                          ],
+                          "value": "Safari"
+                        },
+                        {
+                          "type": "span",
+                          "value": " com a versão mais recente para garantir total compatibilidade e segurança."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Se tentar novamente não for possível avançar após verificar o navegador móvel, verifique a compatibilidade de segurança do seu smartphone com "
+                        },
+                        {
+                          "type": "span",
+                          "marks": [
+                            "strong"
+                          ],
+                          "value": "chaves de acesso"
+                        },
+                        {
+                          "type": "span",
+                          "value": "."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "kyc-step-frame-2",
+            "height": 1440,
+            "width": 1440,
+            "filename": "kyc-step-frame-2.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1715841173-kyc-step-frame-2.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Etapa 3 - Forneça Sua Identidade (KYC)"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Essas medidas de segurança protegem sua conta de acessos não autorizados e garantem que você é o verdadeiro dono. Também nos permite atribuir recompensas de aplicativos de forma precisa de acordo com sua região. Portanto, é importante para nós que você forneça seu:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Nome completo:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " Deve corresponder ao nome em sua identificação fornecida."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Tipo e Número de Identificação:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " Pode ser um "
+                            },
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "RG"
+                            },
+                            {
+                              "type": "span",
+                              "value": ","
+                            },
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": " Carteira de Motorista "
+                            },
+                            {
+                              "type": "span",
+                              "value": "ou "
+                            },
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Passaporte"
+                            },
+                            {
+                              "type": "span",
+                              "value": "."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "País:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " Isso aparece automaticamente, caso contrário, escolha o país de origem da "
+                            },
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "identificação"
+                            },
+                            {
+                              "type": "span",
+                              "value": "."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Número de Telefone:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " Seu número de telefone para as comunidades e segurança do Bitcash."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Endereço de Email:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " Seu endereço de email para comunicações da comunidade Bitcash."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Foto de Identificação:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " Sua "
+                            },
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "selfie"
+                            },
+                            {
+                              "type": "span",
+                              "value": " segurando sua identificação e uma "
+                            },
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "foto de identificação de close-up"
+                            },
+                            {
+                              "type": "span",
+                              "value": "."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Inscreva-se em nosso Boletim Informativo (Opcional). "
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": []
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Etapa 3.1 - Como Tirar As Fotos?"
+                    }
+                  ]
+                },
+                {
+                  "type": "blockquote",
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Recomendamos fortemente limpar a câmera, os sensores e ter um ambiente limpo com luz suficiente para fazer o reconhecimento facial."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Para começar a tirar as fotos, é necessário por medidas de segurança "
+                    },
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Permitir Permissão "
+                    },
+                    {
+                      "type": "span",
+                      "value": "para "
+                    },
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "localização "
+                    },
+                    {
+                      "type": "span",
+                      "value": "e "
+                    },
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "câmera"
+                    },
+                    {
+                      "type": "span",
+                      "value": ". É importante seguir as instruções dadas em cada etapa para ter uma experiência tranquila ao tirar as fotos."
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 3,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Quando sei que estou tirando a foto corretamente?"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Ao tirar a foto, deve haver:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Uma moldura verde com um visto no canto superior direito da moldura de gravação da câmera."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Deve haver uma mensagem abaixo da moldura de gravação da câmera "
+                            },
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Foto está OK"
+                            },
+                            {
+                              "type": "span",
+                              "value": "."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "A cor do botão "
+                            },
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Tirar Selfie"
+                            },
+                            {
+                              "type": "span",
+                              "value": " mudou para um tom mais escuro."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Após tirar a "
+                            },
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Selfie"
+                            },
+                            {
+                              "type": "span",
+                              "value": ", ela processará a imagem mostrar novamente a mensagem "
+                            },
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Foto está OK "
+                            },
+                            {
+                              "type": "span",
+                              "value": "e dará um botão "
+                            },
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Continuar"
+                            },
+                            {
+                              "type": "span",
+                              "value": "."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Se após "
+                    },
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Tirar Selfie "
+                    },
+                    {
+                      "type": "span",
+                      "value": "aparecer uma moldura vermelha com uma mensagem de texto vermelha, tente ficar parado até a validação ser concluída. Alguns dispositivos podem ser afetados pelo sensor se movidos."
+                    }
+                  ]
+                },
+                {
+                  "type": "blockquote",
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Se tentar novamente não acontecer, certifique-se de ter luz suficiente e/ou nada está obscurecendo seu rosto (por exemplo: óculos, joias faciais)."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "kyc-step-frame-3",
+            "height": 1440,
+            "width": 1440,
+            "filename": "kyc-step-frame-3.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1715841166-kyc-step-frame-3.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "blockquote",
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Para a "
+                        },
+                        {
+                          "type": "span",
+                          "marks": [
+                            "strong"
+                          ],
+                          "value": "Foto do Cartão de Identificação "
+                        },
+                        {
+                          "type": "span",
+                          "value": "é mais simples que a "
+                        },
+                        {
+                          "type": "span",
+                          "marks": [
+                            "strong"
+                          ],
+                          "value": "Selfie"
+                        },
+                        {
+                          "type": "span",
+                          "value": ". Certifique-se de colocar sua identificação dada no formulário KYC dentro da moldura que aparece na moldura de gravação da câmera."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "kyc-step-frame-4",
+            "height": 1440,
+            "width": 1440,
+            "filename": "kyc-step-frame-4.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1715841161-kyc-step-frame-4.png"
+          },
+          {
+            "basename": "kyc-step-frame-5",
+            "height": 1440,
+            "width": 1440,
+            "filename": "kyc-step-frame-5.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1715841154-kyc-step-frame-5.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Etapa 4 - Aguarde Aprovação e Junte-se à Comunidade!"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Após garantir que os dados estão corretos e todas as etapas estão concluídas, agora é hora de continuar e completar o registro!"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Você será levado ao "
+                    },
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "sucesso"
+                    },
+                    {
+                      "type": "span",
+                      "value": "! Aqui você encontrará um botão que o leva à nossa "
+                    },
+                    {
+                      "url": "https://discord.gg/MG38R6YbF5",
+                      "meta": [
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "marks": [
+                            "strong"
+                          ],
+                          "value": "Comunidade Discord"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ". Lá você pode acompanhar o processo de integração à nossa comunidade."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Aproveite!"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "kyc-step-frame-6",
+            "height": 1440,
+            "width": 1440,
+            "filename": "kyc-step-frame-6.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1715841149-kyc-step-frame-6.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "FAQs"
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 3,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "1. Eu me registrei antes do KYC, ainda preciso fazer KYC?"
+                    }
+                  ]
+                },
+                {
+                  "type": "blockquote",
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Sim, você precisa, você pode completar o processo indo para Configurações > Configurações de Perfil e fornecendo as informações faltantes. Nossa equipe verifica diariamente novos pedidos e notificará você por email quando completarmos a verificação das informações fornecidas."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 3,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "2. Eu costumava fazer login com meu telefone, mas agora não consigo depois que resetei meu telefone e/ou mudei a senha do meu telefone."
+                    }
+                  ]
+                },
+                {
+                  "type": "blockquote",
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Seu acesso ao dispositivo está vinculado ao seu telefone. Qualquer alteração no acesso como atualizações de senha ou mudança do método (reconhecimento facial, impressão digital, pin, padrão) do original feito enquanto a conta foi criada pode afetar sua experiência no aplicativo, perdendo acesso a ele. Se você enfrentar algum problema, entre em contato com nosso "
+                        },
+                        {
+                          "url": "https://discord.com/channels/856694458388054026/1222398643210813550",
+                          "meta": [
+                            {
+                              "id": "target",
+                              "value": "_blank"
+                            }
+                          ],
+                          "type": "link",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "canal de suporte"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "span",
+                          "value": "; cuidaremos do seu caso!"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 3,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "O que é um \"WebAuthN\"?"
+                    }
+                  ]
+                },
+                {
+                  "type": "blockquote",
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "WebAuthn é um padrão de segurança moderno que simplifica o login em sites sem precisar de uma senha. Ele permite que os usuários usem sua impressão digital, rosto ou uma chave de segurança para autenticação, tornando-o mais conveniente e seguro."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 3,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Por que é importante manter meu telefone seguro?"
+                    }
+                  ]
+                },
+                {
+                  "type": "blockquote",
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Manter e não perder seu telefone seguro usando o aplicativo Bitcash Wallet é importante porque um dispositivo perdido ou roubado ainda pode representar um risco de segurança se não for adequadamente protegido."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Ao usar o aplicativo Bitcash Wallet, você garante que mesmo que seu telefone seja perdido ou roubado, os dados armazenados nele permaneçam inacessíveis sem suas informações biométricas ou chave de segurança. Isso ajuda a proteger sua privacidade e prevenir roubo de identidade, no entanto, você perderá acesso à sua conta porque sua conta está vinculada ao seu telefone e um processo de recuperação deve ser iniciado."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "kyc-step-frame-7",
+            "height": 1440,
+            "width": 1440,
+            "filename": "kyc-step-frame-7.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1715841141-kyc-step-frame-7.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Estamos aprendendo como registrar uma conta Bitcash, configurar a conta, identificar dispositivos, KYC, e aguardar aprovação e ingressar na comunidade!",
+      "title": "Como se registrar e fazer KYC no Bitcash",
+      "twitterCard": "summary",
+      "image": {
+        "width": 1440,
+        "height": 1440,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1715831775-splash-edited.png"
+      }
+    }
+  },
+  "topics": [
+    "how_to"
+  ]
+}

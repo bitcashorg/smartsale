@@ -1,0 +1,580 @@
+{
+  "relatedBlogs": [
+    {
+      "id": "180563903",
+      "topics": [
+        "DAO",
+        "摘要"
+      ],
+      "title": "投票的意义是什么？[摘要]",
+      "slug": "what-is-voting-for-summary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:10:58+01:00",
+      "description": "揭示去中心化系统中投票的本质。深入了解区块链中投票的真正目的和力量。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690859305-cbc6-img1.png"
+      },
+      "seo": {
+        "title": "投票的意义是什么？[摘要]",
+        "description": "揭示去中心化系统中投票的本质。深入了解区块链中投票的真正目的和力量。"
+      }
+    },
+    {
+      "id": "180563908",
+      "topics": [
+        "DAO",
+        "摘要"
+      ],
+      "title": "治理的意义是什么？[摘要]",
+      "slug": "what-is-governance-for-summary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:10:45+01:00",
+      "description": "探讨区块链系统中治理的角色和重要性。了解治理如何推动去中心化和增长。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690859755-cbc7-img1.png"
+      },
+      "seo": {
+        "title": "治理的意义是什么？[摘要]",
+        "description": "探讨区块链系统中治理的角色和重要性。了解治理如何推动去中心化和增长。"
+      }
+    },
+    {
+      "id": "180563931",
+      "topics": [
+        "代币经济学",
+        "评论"
+      ],
+      "title": "区块链激励结构：它们是什么以及为什么重要[评论]",
+      "slug": "blockchain-incentive-structures-what-they-are-and-why-they-matter-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:10:02+01:00",
+      "description": "了解区块链激励结构的核心及其在驱动用户行为和平台成功中的重要性。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690860807-cbc10-img1.png"
+      },
+      "seo": {
+        "title": "区块链激励结构[评论]",
+        "description": "了解区块链激励结构的核心及其在驱动用户行为和平台成功中的重要性。"
+      }
+    }
+  ],
+  "blogContent": {
+    "id": "179948652",
+    "topics": [
+      "代币经济学",
+      "行业",
+      "摘要"
+    ],
+    "title": "数字创新与收入模式[摘要]",
+    "slug": "digital-innovation-and-revenue-models-summary",
+    "authorName": "Crypto Clairity",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+    },
+    "_publishedAt": "2023-10-05T09:11:35+01:00",
+    "description": "揭示数字创新如何在Prysm Group的《数字创新与收入模式》中重塑产品交付。探索新兴技术经济学。",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1690668517-cbr1-img1.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "摘要、关键见解与建议"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "原文："
+                    },
+                    {
+                      "url": "https://uploads-ssl.webflow.com/5ca64cec39c643e28bb7079f/6334fa62414f4e6b5126ee3e_Prysm%20Group%20Digital%20Innovation%20and%20Revenue%20Models.pdf",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "https://uploads-ssl.webflow.com/5ca64cec39c643e28bb7079f/6334fa62414f4e6b5126ee3e_Prysm%20Group%20Digital%20Innovation%20and%20Revenue%20Models.pdf\n\n"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": "作者：Prysm Group"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Prysm Group的《数字创新与收入模式》一文讨论了新兴技术的经济学，特别是数字通信和互联网网络基础设施，以及它们如何重塑数字产品和服务的交付方式。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "以下是关键见解："
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "引言（第3页）"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 该文件首先强调了数字技术对数字产品和服务交付的变革性影响。它强调了为提供数字产品和服务的企业建立可持续收入模式的重要性。成功的产品和定价策略应考虑数字行业所表现出的独特结构动态。"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "传统商品与数字商品的成本结构（第3页）"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 数字创新导致了高固定生产成本和低边际成本的行业。数字商品的第一份副本生产成本高昂，而额外副本的成本仅为第一份的一小部分。在某些情况下，生产的边际成本几乎降至零。"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "数字世界的可持续商业策略（第4-5页）"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 该文件讨论了数字企业的两种主要策略：主导企业模式和差异化产品模式。主导企业模式涉及创建和维护大规模经济，而差异化产品模式则通过提供某种差异化的产品来获得市场份额。"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "定价策略框架（第7页）"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 该文件介绍了在日益数字化的世界中定价商品和服务的三种关键策略：价格歧视、第三方支持的定价以及结合价格歧视和第三方支持定价的组合策略。"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "基于这些见解，以下是一些针对加密初创公司的可操作建议："
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "对齐产品和收入策略"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 确保您的产品策略与收入模式紧密结合。在制定这些策略时，考虑数字行业的独特动态。"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "利用网络效应"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 如果可能，设计您的产品以受益于网络效应。这可能涉及创建一个平台，随着更多用户的加入，其价值增加，或包含随着使用量增加而改进的功能。"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "差异化您的产品"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 如果您的产品的网络效应不强，请专注于将您的产品与市场上的其他产品区分开来。这可以通过独特的功能、卓越的技术或更好的用户体验来实现。"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "考虑定价策略"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 探索不同的定价策略，如价格歧视或第三方支持的定价。这可能涉及根据客户的支付意愿向不同客户收取不同的价格，或通过第三方渠道产生收入。"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "保护您的知识产权"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 如果您的差异化策略涉及创建独特的内容或技术，请确保您拥有必要的知识产权，以防止竞争对手复制。"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "保持敏捷"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 准备好随着市场的变化调整您的策略。数字和加密领域变化迅速，因此保持灵活性和对新趋势和机会的响应能力非常重要。"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": ""
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": []
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "音乐行业案例研究"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "该文件讨论了一个关于音乐行业的案例研究，说明了数字创新如何演变和扩展商业模式和策略。以下是音乐行业案例研究的关键见解："
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "音乐行业演变（第10页）"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 音乐行业长期以来一直采用价格歧视策略。唱片公司通过销售唱片和向第三方授权来货币化音乐。然而，1990年代后期点对点音乐共享的出现，加上MP3格式的发展，威胁到了唱片公司的收入。"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "数字分发平台（第11页）"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 唱片公司在点对点网络兴起后推出了自己的数字分发平台。推出了两个竞争服务：由环球音乐集团和索尼支持的PressPlay，以及由华纳兄弟、BMG和EMI支持的MusicNet。两项服务都向订阅者提供数字下载和流媒体服务的混合，但由于歌曲库有限和对可下载和流媒体歌曲数量的过度限制而失败。"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "iTunes和数字音乐的货币化（第11页）"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 2003年，iTunes音乐商店成功实现了数字音乐分发的货币化。苹果选择不采用PressPlay和MusicNet追求的订阅模式，而是以99美分的价格提供其库中的每首歌曲。"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "向音乐流媒体的转变（第12页）"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 如今，数字下载仅占行业总收入的不到4%，而订阅是最大的类别，占83%。音乐流媒体平台通过数字技术的进步和采用以及强大的数字版权管理的建立，取得了PressPlay和MusicNet近十年前失败的成功。"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "基于这些见解，以下是一些针对加密初创公司的可操作建议："
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "考虑订阅模式"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 音乐行业从数字下载向订阅的转变显示了经常性收入模式的潜在好处。加密初创公司可以考虑订阅模式是否适合他们的业务。"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "cbr1-img2",
+            "height": 862,
+            "width": 862,
+            "filename": "cbr1-img2.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1690668728-cbr1-img2.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "揭示数字创新如何在Prysm Group的《数字创新与收入模式》中重塑产品交付。探索新兴技术经济学。",
+      "title": "数字创新与收入模式[摘要]",
+      "twitterCard": null,
+      "image": {
+        "width": 862,
+        "height": 862,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1690668517-cbr1-img1.png"
+      }
+    }
+  },
+  "topics": [
+    "Tokenomics",
+    "Industry",
+    "Summary"
+  ]
+}

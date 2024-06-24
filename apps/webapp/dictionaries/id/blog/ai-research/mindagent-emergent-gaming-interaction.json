@@ -1,0 +1,604 @@
+{
+  "relatedBlogs": [],
+  "blogContent": {
+    "id": "198277160",
+    "topics": [
+      "LLM",
+      "Agen",
+      "Gaming"
+    ],
+    "title": "MindAgent: Interaksi Gaming yang Muncul",
+    "slug": "mindagent-emergent-gaming-interaction",
+    "authorName": "Prof. Otto Nomos",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+    },
+    "_publishedAt": "2024-05-27T03:32:58+01:00",
+    "description": "Komentar Abstrak & Penilaian",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Diterbitkan pada 18 Sep"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Penulis:"
+                    },
+                    {
+                      "url": "https://huggingface.co/nikepupu",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Ran Gong"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ",Qiuyuan Huang,"
+                    },
+                    {
+                      "url": "https://huggingface.co/jeasinema",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Xiaojian Ma"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/Hoivo63",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Hoi Vo"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/ZaneDurante",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Zane Durante"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/yusukenoda",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Yusuke Noda"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/zlzheng",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Zilong Zheng"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ",Song-Chun Zhu,Demetri Terzopoulos,Li Fei-Fei,"
+                    },
+                    {
+                      "url": "https://huggingface.co/wyngjf",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Jianfeng Gao"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Abstrak"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Model Bahasa Besar (LLM) memiliki kapasitas untuk melakukan penjadwalan kompleks dalam sistem multi-agen dan dapat mengoordinasikan agen-agen ini untuk menyelesaikan tugas-tugas rumit yang memerlukan kolaborasi ekstensif. Namun, meskipun telah diperkenalkan banyak kerangka kerja gaming, komunitas masih kekurangan tolok ukur untuk membangun infrastruktur kolaborasi multi-agen umum yang mencakup kolaborasi LLM dan NPC manusia. Dalam karya ini, kami mengusulkan infrastruktur baru - MindAgent - untuk mengevaluasi kemampuan perencanaan dan koordinasi yang muncul untuk interaksi gaming. Secara khusus, infrastruktur kami memanfaatkan kerangka kerja gaming yang ada, untuk i) memerlukan pemahaman koordinator untuk sistem multi-agen, ii) berkolaborasi dengan pemain manusia melalui instruksi yang tepat tanpa penyetelan ulang, dan iii) membangun pembelajaran dalam konteks pada prompt few-shot dengan umpan balik. Selain itu, kami memperkenalkan CUISINEWORLD, skenario gaming baru dan tolok ukur terkait yang mengirimkan efisiensi kolaborasi multi-agen dan mengawasi beberapa agen bermain game secara bersamaan. Kami melakukan evaluasi komprehensif dengan metrik otomatis baru CoS untuk menghitung efisiensi kolaborasi. Akhirnya, infrastruktur kami dapat diterapkan dalam skenario gaming dunia nyata dalam versi VR yang disesuaikan dari CUISINEWORLD dan diadaptasi dalam domain gaming Minecraft yang lebih luas. Kami berharap temuan kami tentang LLM dan infrastruktur baru untuk penjadwalan dan koordinasi tujuan umum dapat membantu menjelaskan bagaimana keterampilan tersebut dapat diperoleh dengan belajar dari korpus bahasa besar."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "url": "https://arxiv.org/abs/2309.09971",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Lihat halaman arXiv"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "https://arxiv.org/pdf/2309.09971",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Lihat PDF"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Komentar"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Makalah \"MindAgent: Interaksi Gaming yang Muncul\" mendalami persimpangan Model Bahasa Besar (LLM) dan kemampuan mereka dalam sistem multi-agen, khususnya dalam skenario gaming. Penelitian ini mengusulkan infrastruktur baru untuk mengevaluasi dan mengimplementasikan kemampuan tersebut dalam konteks gaming."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Poin Utama:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Penjadwalan Kompleks dengan LLM"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Penulis menekankan kehebatan LLM dalam mengelola dan mengoordinasikan beberapa agen untuk menyelesaikan tugas-tugas rumit."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Infrastruktur MindAgent"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Makalah ini mengusulkan infrastruktur MindAgent, yang dirancang khusus untuk menilai kemampuan yang muncul dari LLM dalam skenario gaming, mempertimbangkan perencanaan dan koordinasi."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Skenario CUISINEWORLD"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Penulis memperkenalkan skenario gaming baru - CUISINEWORLD - yang dirancang untuk mengevaluasi efisiensi kolaborasi multi-agen dalam game. Ini berfungsi sebagai tempat uji coba untuk menguji bagaimana LLM dapat berkolaborasi dengan pemain manusia dan mengoordinasikan beberapa agen yang bermain secara bersamaan."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Versi VR yang Disesuaikan"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": MindAgent tidak hanya teoretis; ia memiliki aplikasi praktis. Infrastruktur ini dapat diadaptasi dan digunakan dalam situasi gaming dunia nyata, termasuk versi VR dari CUISINEWORLD dan domain Minecraft yang luas."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Metrik Efisiensi"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Metrik baru, CoS, diperkenalkan untuk mengukur efisiensi kolaborasi, memberikan cara standar untuk mengevaluasi dan membandingkan sistem ini."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Dampak Potensial di Dunia Nyata:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Skenario Gaming Lanjutan"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Integrasi LLM ke dalam gaming dapat menghasilkan lingkungan gaming yang lebih dinamis dan kompleks, meningkatkan pengalaman pengguna dan menawarkan tantangan unik."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Di Luar Gaming"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Meskipun aplikasi langsungnya ada di gaming, koordinasi multi-agen memiliki implikasi luas di bidang seperti kendaraan otonom, robotika, dan manajemen rantai pasokan."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Kolaborasi dengan Pemain Manusia"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Dengan memfasilitasi kolaborasi yang mulus antara agen AI dan pemain manusia, penelitian ini dapat memelopori era baru gaming multipemain kooperatif, di mana pemain bekerja sama dengan agen cerdas untuk mencapai tujuan bersama."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Integrasi VR"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Adaptasi VR menunjukkan langkah menuju pengalaman gaming yang lebih imersif, menggabungkan kecanggihan AI dengan imersi realitas virtual."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Implikasi Pendidikan dan Pelatihan"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Skenario multi-agen dapat digunakan dalam simulasi pendidikan atau pelatihan, memungkinkan siswa atau peserta pelatihan untuk berinteraksi dengan agen cerdas untuk pengalaman belajar yang lebih komprehensif."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tantangan:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Keterbatasan Komputasi"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Menerapkan LLM dalam skenario gaming waktu nyata akan memerlukan daya komputasi yang besar."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Keamanan dan Permainan Adil"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Memastikan bahwa agen AI tidak mendominasi atau mengurangi pengalaman bagi pemain manusia sangat penting. Tantangannya adalah menemukan keseimbangan untuk memastikan agen AI meningkatkan daripada mengesampingkan pengalaman gaming."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Beradaptasi dengan Genre yang Berbeda"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Meskipun penelitian ini memberikan dasar yang kuat, genre game yang berbeda (misalnya, strategi, permainan peran, aksi) mungkin memerlukan implementasi atau adaptasi yang berbeda."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Mempertimbangkan implikasi dalam gaming dan aplikasi potensial di luar ranah gaming:"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Saya akan menilai dampak dunia nyata dari makalah ini sebagai 8 dari 10."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Penelitian ini membuka jalan bagi pengalaman gaming lanjutan dan menawarkan wawasan yang dapat diterapkan di berbagai domain di mana sistem multi-agen memainkan peran penting. Temuan ini dapat merevolusi cara kita memandang dan merancang pengalaman kolaboratif dalam skenario virtual dan dunia nyata."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "researchpaper8a",
+            "height": 816,
+            "width": 1456,
+            "filename": "researchpaper8a.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Komentar Abstrak & Penilaian\n",
+      "title": "MindAgent: Interaksi Gaming yang Muncul",
+      "twitterCard": null,
+      "image": {
+        "width": 1456,
+        "height": 816,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
+      }
+    }
+  },
+  "topics": [
+    "LLM",
+    "Agents",
+    "Gaming"
+  ]
+}

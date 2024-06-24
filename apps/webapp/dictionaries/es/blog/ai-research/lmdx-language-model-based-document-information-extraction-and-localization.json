@@ -1,0 +1,498 @@
+{
+  "relatedBlogs": [],
+  "blogContent": {
+    "id": "198277458",
+    "topics": [
+      "LLM",
+      "Alucinación",
+      "Entidad",
+      "Datos Estructurados"
+    ],
+    "title": "LMDX: Extracción e Localización de Información de Documentos basada en Modelos de Lenguaje",
+    "slug": "lmdx-language-model-based-document-information-extraction-and-localization",
+    "authorName": "Prof. Otto Nomos",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+    },
+    "_publishedAt": "2024-05-24T05:20:31+01:00",
+    "description": "Comentario Abstracto y Calificación",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Publicado el 19 de Sep"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Autores:"
+                    },
+                    {
+                      "url": "https://huggingface.co/vperot",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Vincent Perot"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/ghoulken",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Kai Kang"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/fluisier",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Florian Luisier"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ",Guolong Su,Xiaoyu Sun,"
+                    },
+                    {
+                      "url": "https://huggingface.co/RamyaSreeBoppana",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Ramya Sree Boppana"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/zilongwang",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Zilong Wang"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ",Jiaqi Mu,Hao Zhang,Nan Hua"
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Resumen"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Los Modelos de Lenguaje Grandes (LLM) han revolucionado el Procesamiento del Lenguaje Natural (NLP), mejorando el estado del arte en muchas tareas existentes y exhibiendo capacidades emergentes. Sin embargo, los LLM aún no se han aplicado con éxito en la extracción de información de documentos semi-estructurados, que es fundamental en muchos flujos de trabajo de procesamiento de documentos y consiste en extraer entidades clave de un documento visualmente rico (VRD) dado un esquema objetivo predefinido. Los principales obstáculos para la adopción de LLM en esa tarea han sido la ausencia de codificación de diseño dentro de los LLM, crítica para una extracción de alta calidad, y la falta de un mecanismo de fundamentación que garantice que la respuesta no sea una alucinación. En este documento, presentamos la Extracción e Localización de Información de Documentos basada en Modelos de Lenguaje (LMDX), una metodología para adaptar LLM arbitrarios para la extracción de información de documentos. LMDX puede realizar la extracción de entidades singulares, repetidas y jerárquicas, tanto con como sin datos de entrenamiento, al tiempo que proporciona garantías de fundamentación y localiza las entidades dentro del documento. En particular, aplicamos LMDX al LLM PaLM 2-S y lo evaluamos en los benchmarks VRDU y CORD, estableciendo un nuevo estado del arte y mostrando cómo LMDX permite la creación de analizadores de alta calidad y eficientes en datos."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "url": "https://arxiv.org/abs/2309.10952",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Ver página arXiv"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "https://arxiv.org/pdf/2309.10952",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Ver PDF"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Comentario"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "El documento titulado \"LMDX: Extracción e Localización de Información de Documentos basada en Modelos de Lenguaje\" tiene como objetivo abordar el desafío de extraer información estructurada de documentos visualmente ricos (VRDs) utilizando modelos de lenguaje grandes (LLMs)."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Puntos Clave:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Desafío con LLMs"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": A pesar de los avances en el procesamiento del lenguaje natural, los LLMs no han tenido éxito en la extracción de información de documentos semi-estructurados debido a la falta de codificación de diseño y mecanismos de fundamentación."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Metodología LMDX"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Los autores presentan LMDX para adaptar LLMs a esta tarea específica de extracción. Esta técnica puede extraer diferentes tipos de entidades, proporcionar la fuente de verdad y incluso localizar estas entidades dentro del documento."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Implementación Exitosa"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Cuando se aplica al LLM PaLM 2-S y se evalúa en benchmarks específicos, LMDX establece un nuevo estado del arte en el dominio, enfatizando su capacidad para crear analizadores de alta calidad con eficiencia."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Impacto Potencial en el Mundo Real:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Procesamiento Automatizado de Documentos"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": La extracción eficiente de información estructurada de documentos puede revolucionar industrias como finanzas, legal y salud, donde hay una necesidad constante de extraer datos de documentos para un análisis posterior."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Reducción de la Necesidad de Anotación Manual"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Las garantías de fundamentación pueden reducir significativamente la necesidad de supervisión manual para garantizar la validez de los datos extraídos."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Versatilidad"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": La capacidad del modelo para manejar diferentes tipos de entidades y proporcionar localización dentro de los documentos le da una ventaja en aplicaciones del mundo real donde el contexto y la ubicación en un documento pueden ser cruciales."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Ahorro de Costos Potencial"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Con analizadores eficientes en datos de alta calidad, las empresas pueden reducir costos relacionados con la extracción, verificación y corrección manual de datos."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Desafíos:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Adopción en Sistemas Heredados"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Muchas industrias ya tienen sistemas heredados en su lugar, por lo que integrar y adaptar nuevas metodologías podría requerir tiempo y recursos."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Sensibilidad de los Datos"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Los documentos de campos como finanzas y salud pueden contener información sensible. Cómo el modelo garantiza la privacidad y la seguridad sería una preocupación para su adopción más amplia."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Considerando las profundas implicaciones de la extracción efectiva y eficiente de información de documentos en numerosos sectores:"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Calificaría el impacto en el mundo real de este documento como un 9 sobre 10."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Si LMDX puede proporcionar extracciones precisas de manera consistente en una amplia gama de tipos de documentos y dominios, puede influir significativamente en las empresas que dependen en gran medida del procesamiento de documentos."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "researchpaper9",
+            "height": 816,
+            "width": 1456,
+            "filename": "researchpaper9.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Comentario Abstracto y Calificación\n",
+      "title": "LMDX: ..Extracción e Localización de Información de Documentos basada en Modelos de Lenguaje",
+      "twitterCard": null,
+      "image": {
+        "width": 1456,
+        "height": 816,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      }
+    }
+  },
+  "topics": [
+    "LLM",
+    "Hallucination",
+    "Entity",
+    "Structured Data"
+  ]
+}

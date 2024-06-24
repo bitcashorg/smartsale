@@ -1,0 +1,766 @@
+{
+  "relatedBlogs": [
+    {
+      "id": "180217169",
+      "topics": [
+        "Tokenomics",
+        "Bình luận"
+      ],
+      "title": "Kinh tế của các Kích thích Đã Token hóa 3: Giá trị Token Không Đồng nhất các Bên liên quan [Bình luận]",
+      "slug": "economics-of-tokenized-incentives-3-token-value-won-t-align-stakeholders-commenta",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:17:23+01:00",
+      "description": "Khám phá những hạn chế khi sử dụng giá trị token làm chỉ số hiệu suất trong các nền tảng blockchain. Học cách thiết kế các hệ thống kích thích hiệu quả.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690771457-cbc3-img1.png"
+      },
+      "seo": {
+        "title": "Kinh tế của các Kích thích Đã Token hóa 3 [Bình luận]",
+        "description": "Khám phá những hạn chế khi sử dụng giá trị token làm chỉ số hiệu suất trong các nền tảng blockchain. Học cách thiết kế các hệ thống kích thích hiệu quả."
+      }
+    },
+    {
+      "id": "180217123",
+      "topics": [
+        "Tokenomics",
+        "Bình luận"
+      ],
+      "title": "Kinh tế của các Kích thích Đã Token hóa 2: Lựa chọn các Chỉ số Hiệu suất Hiệu quả [Bình luận]",
+      "slug": "economics-of-tokenized-incentives-2-selecting-effective-performance-metrics-comme",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:17:05+01:00",
+      "description": "Khám phá sức mạnh của các chỉ số hiệu suất trong các hệ thống thanh toán theo hiệu suất của blockchain. Học cách điều chỉnh các kích thích phù hợp với mục tiêu nền tảng một cách hiệu quả.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690770918-cbc2-img1.png"
+      },
+      "seo": {
+        "title": "Kinh tế của các Kích thích Đã Token hóa 2 [Bình luận]",
+        "description": "Khám phá sức mạnh của các chỉ số hiệu suất trong các hệ thống thanh toán theo hiệu suất của blockchain. Học cách điều chỉnh các kích thích phù hợp với mục tiêu nền tảng một cách hiệu quả."
+      }
+    },
+    {
+      "id": "180217082",
+      "topics": [
+        "Tokenomics",
+        "Bình luận"
+      ],
+      "title": "Kinh tế của các Kích thích Đã Token hóa 1: Giới thiệu về Thanh toán theo Hiệu suất [Bình luận]",
+      "slug": "economics-of-tokenized-incentives-1-intro-to-pay-for-performance",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:15:12+01:00",
+      "description": "Khám phá sự phức tạp của các kích thích thanh toán theo hiệu suất trong các nền tảng blockchain. Học các sự đánh đổi và xem xét thiết kế cho thành công.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690770568-cbc1-img1.png"
+      },
+      "seo": {
+        "title": "Kinh tế của các Kích thích Đã Token hóa 1 [Bình luận]",
+        "description": "Khám phá sự phức tạp của các kích thích thanh toán theo hiệu suất trong các nền tảng blockchain. Học các sự đánh đổi và xem xét thiết kế cho thành công"
+      }
+    },
+    {
+      "id": "180556627",
+      "topics": [
+        "Bình luận",
+        "Hợp đồng thông minh"
+      ],
+      "title": "Hợp đồng Không Hoàn chỉnh và Blockchain [Bình luận]",
+      "slug": "incomplete-contracts-and-blockchain-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:14:44+01:00",
+      "description": "Làm sáng tỏ mối quan hệ giữa hợp đồng không hoàn chỉnh và blockchain. Hiểu cách blockchain có thể lấp đầy các khoảng trống hợp đồng.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690856249-cbc5-img1.png"
+      },
+      "seo": {
+        "title": "Hợp đồng Không Hoàn chỉnh và Blockchain [Bình luận]",
+        "description": "Làm sáng tỏ mối quan hệ giữa hợp đồng không hoàn chỉnh và blockchain. Hiểu cách blockchain có thể lấp đầy các khoảng trống hợp đồng."
+      }
+    },
+    {
+      "id": "180563918",
+      "topics": [
+        "Tokenomics",
+        "Bình luận",
+        "Gây quỹ"
+      ],
+      "title": "Token: Phương tiện Đầu tư hay Phương tiện Trao đổi (Không phải Cả Hai) [Bình luận]",
+      "slug": "tokens-investment-vehicle-or-medium-of-exchange-not-both-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:13:31+01:00",
+      "description": "Khám phá vai trò kép của token trong nền kinh tế blockchain. Tìm hiểu ranh giới mỏng manh giữa phương tiện đầu tư và phương tiện trao đổi.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690859959-cbc8-img1.png"
+      },
+      "seo": {
+        "title": "Token: Đầu tư hay Phương tiện Trao đổi [Bình luận]",
+        "description": "Khám phá vai trò kép của token trong nền kinh tế blockchain. Tìm hiểu ranh giới mỏng manh giữa phương tiện đầu tư và phương tiện trao đổi."
+      }
+    },
+    {
+      "id": "180563922",
+      "topics": [
+        "Gây quỹ",
+        "Tokenomics",
+        "Bình luận"
+      ],
+      "title": "ICO Tận dụng Hiệu ứng Mạng [Bình luận]",
+      "slug": "icos-leverage-network-effects-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:12:06+01:00",
+      "description": "Khám phá cách ICO tận dụng sức mạnh của hiệu ứng mạng để thúc đẩy thành công của họ. ICO và hiệu ứng mạng, một cặp đôi động lực!",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690860184-cbc9-img1.png"
+      },
+      "seo": {
+        "title": "ICO Tận dụng Hiệu ứng Mạng [Bình luận]",
+        "description": "Khám phá cách ICO tận dụng sức mạnh của hiệu ứng mạng để thúc đẩy thành công của họ. ICO và hiệu ứng mạng, một cặp đôi động lực!"
+      }
+    },
+    {
+      "id": "179948652",
+      "topics": [
+        "Tokenomics",
+        "Ngành",
+        "Tóm tắt"
+      ],
+      "title": "Đổi mới Kỹ thuật số và Mô hình Doanh thu [Tóm tắt]",
+      "slug": "digital-innovation-and-revenue-models-summary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:11:35+01:00",
+      "description": "Khám phá cách đổi mới kỹ thuật số làm thay đổi việc giao hàng sản phẩm trong 'Đổi mới Kỹ thuật số và Mô hình Doanh thu' của Prysm Group. Khám phá kinh tế công nghệ mới nổi.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690668517-cbr1-img1.png"
+      },
+      "seo": {
+        "title": "Đổi mới Kỹ thuật số và Mô hình Doanh thu [Tóm tắt]",
+        "description": "Khám phá cách đổi mới kỹ thuật số làm thay đổi việc giao hàng sản phẩm trong 'Đổi mới Kỹ thuật số và Mô hình Doanh thu' của Prysm Group. Khám phá kinh tế công nghệ mới nổi."
+      }
+    },
+    {
+      "id": "180556595",
+      "topics": [
+        "Gây quỹ",
+        "Tokenomics",
+        "Bình luận"
+      ],
+      "title": "Hiệu ứng Blockchain: Hiệu ứng Mạng không Chi phí Quyền lực Thị trường [Bình luận]",
+      "slug": "the-blockchain-effect-network-effects-without-market-power-costs-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:11:14+01:00",
+      "description": "Khám phá cách blockchain cho phép hiệu ứng mạng mà không có nhược điểm của quyền lực thị trường. Khám phá Hiệu ứng Blockchain mang tính đột phá.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690855275-cbc4-img1.png"
+      },
+      "seo": {
+        "title": "Hiệu ứng Mạng không Chi phí Quyền lực Thị trường [Bình luận]",
+        "description": "Khám phá cách blockchain cho phép hiệu ứng mạng mà không có nhược điểm của quyền lực thị trường. Khám phá Hiệu ứng Blockchain mang tính đột phá."
+      }
+    },
+    {
+      "id": "180563903",
+      "topics": [
+        "DAO",
+        "Tóm tắt"
+      ],
+      "title": "Bỏ phiếu để làm gì? [Tóm tắt]",
+      "slug": "what-is-voting-for-summary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:10:58+01:00",
+      "description": "Giải mã bản chất của việc bỏ phiếu trong các hệ thống phi tập trung. Hiểu rõ mục đích và sức mạnh thực sự của việc bỏ phiếu trong blockchain.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690859305-cbc6-img1.png"
+      },
+      "seo": {
+        "title": "Bỏ phiếu để làm gì? [Tóm tắt]",
+        "description": "Giải mã bản chất của việc bỏ phiếu trong các hệ thống phi tập trung. Hiểu rõ mục đích và sức mạnh thực sự của việc bỏ phiếu trong blockchain."
+      }
+    },
+    {
+      "id": "180563908",
+      "topics": [
+        "DAO",
+        "Tóm tắt"
+      ],
+      "title": "Quản trị để làm gì? [Tóm tắt]",
+      "slug": "what-is-governance-for-summary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:10:45+01:00",
+      "description": "Khám phá vai trò và tầm quan trọng của quản trị trong các hệ thống blockchain. Hiểu cách quản trị thúc đẩy sự phi tập trung và tăng trưởng.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690859755-cbc7-img1.png"
+      },
+      "seo": {
+        "title": "Quản trị để làm gì? [Tóm tắt]",
+        "description": "Khám phá vai trò và tầm quan trọng của quản trị trong các hệ thống blockchain. Hiểu cách quản trị thúc đẩy sự phi tập trung và tăng trưởng."
+      }
+    },
+    {
+      "id": "180563931",
+      "topics": [
+        "Tokenomics",
+        "Bình luận"
+      ],
+      "title": "Cấu trúc Kích thích Blockchain: Chúng là gì và tại sao chúng quan trọng [Bình luận]",
+      "slug": "blockchain-incentive-structures-what-they-are-and-why-they-matter-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:10:02+01:00",
+      "description": "Hiểu rõ bản chất của các cấu trúc kích thích blockchain và tầm quan trọng của chúng trong việc thúc đẩy hành vi người dùng và thành công của nền tảng.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690860807-cbc10-img1.png"
+      },
+      "seo": {
+        "title": "Cấu trúc Kích thích Blockchain [Bình luận]",
+        "description": "Hiểu rõ bản chất của các cấu trúc kích thích blockchain và tầm quan trọng của chúng trong việc thúc đẩy hành vi người dùng và thành công của nền tảng."
+      }
+    },
+    {
+      "id": "167184977",
+      "topics": [
+        "Tokenomics",
+        "DAO",
+        "Gây quỹ"
+      ],
+      "title": "Cách mạng hóa Mô hình Cổ phần: Làm thế nào Tokenomics làm xáo trộn Thế giới Khởi nghiệp",
+      "slug": "revolutionizing-the-equity-model-how-tokenomics-is-disrupting-the-startup-world",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:02:51+01:00",
+      "description": "Mở khóa tương lai của các công ty khởi nghiệp với tokenomics! Khám phá cách khái niệm sáng tạo này làm thay đổi mô hình cổ phần và cách mạng hóa cảnh quan khởi nghiệp.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1687395688-tb2-img1.png"
+      },
+      "seo": {
+        "title": "Làm thế nào Tokenomics làm xáo trộn Thế giới Khởi nghiệp",
+        "description": "Khám phá cách khái niệm sáng tạo này làm thay đổi mô hình cổ phần và cách mạng hóa cảnh quan khởi nghiệp."
+      }
+    },
+    {
+      "id": "166984334",
+      "topics": [
+        "DAO",
+        "Pháp lý"
+      ],
+      "title": "Tổ chức Tự trị Phân cấp (DAOs): Các Cấu trúc Pháp lý Cơ bản cho Mục đích Kinh doanh và Phi lợi nhuận",
+      "slug": "decentralized-autonomous-organizations-daos-basic-legal-structures-for-business-a",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T08:59:06+01:00",
+      "description": "Khám phá các cấu trúc pháp lý cơ bản của DAO cho mục đích kinh doanh và phi lợi nhuận.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1687384353-db2-img1.png"
+      },
+      "seo": {
+        "title": "DAOs: Điều hướng Các Cấu trúc Pháp lý cho Kinh doanh & Phi lợi nhuận",
+        "description": "Tổ chức Tự trị Phân cấp (DAOs): Điều hướng Các Cấu trúc Pháp lý cho Kinh doanh và Phi lợi nhuận"
+      }
+    },
+    {
+      "id": "167101094",
+      "topics": [
+        "Bắt đầu",
+        "Tokenomics"
+      ],
+      "title": "Tokenomics 101: Khai phá Sức mạnh của Tiền điện tử!",
+      "slug": "tokenomics-101-unleashing-the-power-of-cryptocurrency",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T08:57:58+01:00",
+      "description": "Khám phá sức mạnh của tiền điện tử thông qua Tokenomics 101 - hướng dẫn sâu sắc để hiểu biết về kinh tế đằng sau các tài sản số.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1687391799-tb1-img1.png"
+      },
+      "seo": {
+        "title": "Tokenomics 101: Khai phá Sức mạnh của Tiền điện tử!",
+        "description": "hướng dẫn sâu sắc để hiểu biết về kinh tế đằng sau các tài sản số."
+      }
+    },
+    {
+      "id": "166981063",
+      "topics": [
+        "Bắt đầu",
+        "DAO"
+      ],
+      "title": "Tương lai đã đến: Sự Trỗi dậy của các Tổ chức Tự trị Phân cấp (DAOs)",
+      "slug": "the-future-is-here-the-rise-of-decentralized-autonomous-organizations-daos",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T08:57:02+01:00",
+      "description": "Khám phá sự trỗi dậy của các Tổ chức Tự trị Phân cấp (DAOs) trong hướng dẫn của chúng tôi. Hiểu tương lai của kinh doanh và các cơ hội cho các công ty khởi nghiệp.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1687381524-db1-img1.png"
+      },
+      "seo": {
+        "title": "Sự Trỗi dậy của các Tổ chức Tự trị Phân cấp",
+        "description": "Khám phá sự trỗi dậy của các Tổ chức Tự trị Phân cấp (DAOs) trong hướng dẫn của chúng tôi. Hiểu tương lai của kinh doanh và các cơ hội cho các công ty khởi nghiệp."
+      }
+    }
+  ],
+  "blogContent": {
+    "id": "180563939",
+    "topics": [
+      "DAO",
+      "Tokenomics",
+      "Bình luận"
+    ],
+    "title": "Một Khung cho Thiết kế Quản trị Blockchain: Bánh xe Nhóm Prysm [Bình luận]",
+    "slug": "a-framework-for-blockchain-governance-design-the-prysm-group-wheel-commentary",
+    "authorName": "Crypto Clairity",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+    },
+    "_publishedAt": "2023-10-05T09:19:19+01:00",
+    "description": "Điều hướng sự phức tạp của quản trị blockchain với Bánh xe Nhóm Prysm. Lộ trình của bạn để thiết kế quản trị blockchain hiệu quả.",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1690861154-cbc11-img1.webp"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Liên kết Gốc: "
+                    },
+                    {
+                      "url": "https://medium.com/prysmeconomics/a-framework-for-blockchain-governance-design-the-prysm-group-wheel-703279c1b0dd?source=user_profile---------0----------------------------",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noopener follow"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Một Khung cho Thiết kế Quản trị Blockchain: Bánh xe Nhóm Prysm"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tác giả: "
+                    },
+                    {
+                      "url": "https://medium.com/@cathybarreraphd?source=post_page-----703279c1b0dd--------------------------------",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noopener follow"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Cathy Barrera, Tiến sĩ"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tóm tắt & Bình luận"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Bài viết làm rõ sự khác biệt giữa các quy tắc hoạt động và quản trị trong các nền tảng blockchain, cùng với việc đề xuất một khung có cấu trúc để thiết kế quản trị hiệu quả cho các hệ thống này."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Các quy tắc hoạt động là các quy định điều khiển hoạt động hàng ngày trên nền tảng blockchain. Chúng quyết định kích thước của phần thưởng khối, chỉ định cách khối tiếp theo trong chuỗi sẽ được xác định, và đảm bảo các hợp đồng, thị trường, và kinh tế token hoạt động hiệu quả."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tuy nhiên, quản trị liên quan đến các quá trình ra quyết định về các thay đổi hoặc cập nhật đối với các quy tắc hoạt động. Nó giải quyết các sự kiện bất ngờ và các thay đổi không lường trước, cho phép hệ thống thích ứng theo thời gian với các biến đổi thị trường không thể tránh khỏi."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Điểm then chốt ở đây là trong khi các quy tắc hoạt động là xương sống của một nền tảng, quản trị là dòng máu của nó, cho phép nó thích ứng, phát triển và tiến hóa."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Bánh xe Nhóm Prysm được giới thiệu như một khung hữu ích để thiết kế quản trị blockchain hiệu quả. Bảy yếu tố mà nó đề xuất xem xét bao gồm:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Phạm vi Quyết định"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Hiểu những quyết định cần được đưa ra trong quá trình quản trị và lập kế hoạch cho phù hợp."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Các bên liên quan / Người tham gia"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Xác định các bên liên quan và các mục tiêu khác nhau của họ để đảm bảo rằng các quyết định phù hợp với mong muốn của họ."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Nghiên cứu và Phát triển Chính sách"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Chuẩn bị một đề xuất cụ thể để thực hiện một quyết định, đặc biệt là đối với các dự án blockchain nơi các quyết định phải được dịch thành mã."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Quy trình Đề xuất"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Thiết lập một quy trình rõ ràng để đưa ra các đề xuất."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Hệ thống Phân phối Thông tin / Giáo dục"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Giao tiếp hiệu quả với tất cả các bên liên quan để đảm bảo quyết định thông suốt."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Quy trình Ra Quyết định"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Thực hiện các cơ chế để tạo điều kiện ra quyết định mà các bên liên quan cảm thấy đại diện cho lợi ích của họ."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Thực hiện và Quyền Sở hữu"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Hiểu quyền sở hữu của các bên liên quan trong hệ sinh thái để tránh mất cân bằng quyền lực trong giai đoạn thực hiện."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Các hành động thực tế có thể được thực hiện dựa trên những hiểu biết này bao gồm những điều sau:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Các nhà phát triển Blockchain"
+                            },
+                            {
+                              "type": "span",
+                              "value": " nên tập trung vào việc phát triển các cơ chế quản trị cho phép thích ứng và thay đổi. Họ cũng nên nhắm đến việc bao gồm tất cả các bên tham gia trong quá trình ra quyết định."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Nhà đầu tư"
+                            },
+                            {
+                              "type": "span",
+                              "value": " trong các dự án blockchain nên tìm kiếm những dự án có cấu trúc quản trị được thiết kế tốt, vì những dự án này có khả năng thành công lâu dài hơn."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Người dùng Blockchain"
+                            },
+                            {
+                              "type": "span",
+                              "value": " cần hiểu các cấu trúc quản trị của các nền tảng mà họ sử dụng để đảm bảo rằng họ thoải mái với các quy trình ra quyết định."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Nhà hoạch định chính sách và các nhà quản lý"
+                            },
+                            {
+                              "type": "span",
+                              "value": " nên làm quen với các mô hình quản trị blockchain khác nhau để hiểu cách tốt nhất để quản lý các nền tảng này."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Kết luận, quản trị trong các nền tảng blockchain nên được coi là một thành phần thiết yếu của thiết kế của chúng và nên được xem xét cùng một mức độ như các quy tắc hoạt động. Thông qua thiết kế cẩn thận và sự cân nhắc kỹ lưỡng của tất cả các bên liên quan, quản trị blockchain hiệu quả có thể được đạt được."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "cbc11-img1",
+            "height": 1383,
+            "width": 1400,
+            "filename": "cbc11-img1.webp",
+            "format": "webp",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1690861154-cbc11-img1.webp"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Điều hướng sự phức tạp của quản trị blockchain với Bánh xe Nhóm Prysm. Lộ trình của bạn để thiết kế quản trị blockchain hiệu quả.",
+      "title": "Một Khung cho Thiết kế Quản trị Blockchain [Bình luận]",
+      "twitterCard": null,
+      "image": {
+        "width": 1400,
+        "height": 1383,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1690861154-cbc11-img1.webp"
+      }
+    }
+  },
+  "topics": [
+    "DAO",
+    "Tokenomics",
+    "Commentary"
+  ]
+}

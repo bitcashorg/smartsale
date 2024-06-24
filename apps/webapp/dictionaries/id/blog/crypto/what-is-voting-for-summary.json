@@ -1,0 +1,321 @@
+{
+  "relatedBlogs": [
+    {
+      "id": "167184977",
+      "topics": [
+        "Tokenomik",
+        "DAO",
+        "Penggalangan Dana"
+      ],
+      "title": "Merevolusi Model Ekuitas: Bagaimana Tokenomik Mengganggu Dunia Startup",
+      "slug": "revolutionizing-the-equity-model-how-tokenomics-is-disrupting-the-startup-world",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:02:51+01:00",
+      "description": "Buka masa depan startup dengan tokenomik! Jelajahi bagaimana konsep inovatif ini membentuk ulang model ekuitas dan merevolusi lanskap startup.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1687395688-tb2-img1.png"
+      },
+      "seo": {
+        "title": "Bagaimana Tokenomik Mengganggu Dunia Startup",
+        "description": "Jelajahi bagaimana konsep inovatif ini membentuk ulang model ekuitas dan merevolusi lanskap startup."
+      }
+    },
+    {
+      "id": "166981063",
+      "topics": [
+        "Memulai",
+        "DAO"
+      ],
+      "title": "Masa Depan Sudah di Sini: Kebangkitan Organisasi Otonom Terdesentralisasi (DAO)",
+      "slug": "the-future-is-here-the-rise-of-decentralized-autonomous-organizations-daos",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T08:57:02+01:00",
+      "description": "Jelajahi kebangkitan Organisasi Otonom Terdesentralisasi (DAO) dalam panduan kami. Pahami masa depan bisnis dan peluang untuk startup.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1687381524-db1-img1.png"
+      },
+      "seo": {
+        "title": "Kebangkitan Organisasi Otonom Terdesentralisasi",
+        "description": "Jelajahi kebangkitan Organisasi Otonom Terdesentralisasi (DAO) dalam panduan kami. Pahami masa depan bisnis dan peluang untuk startup."
+      }
+    }
+  ],
+  "blogContent": {
+    "id": "180563903",
+    "topics": [
+      "DAO",
+      "Ringkasan"
+    ],
+    "title": "Untuk Apa Voting? [Ringkasan]",
+    "slug": "what-is-voting-for-summary",
+    "authorName": "Crypto Clairity",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+    },
+    "_publishedAt": "2023-10-05T09:10:58+01:00",
+    "description": "Mengungkap esensi voting dalam sistem terdesentralisasi. Dapatkan wawasan tentang tujuan dan kekuatan sebenarnya dari voting di blockchain.",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1690859305-cbc6-img1.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tautan Asli: "
+                    },
+                    {
+                      "url": "https://medium.com/prysmeconomics/what-is-voting-for-6e733a1d2bc9",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Untuk Apa Voting?"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "https://medium.com/@cathybarreraphd?source=post_page-----6e733a1d2bc9--------------------------------",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noopener follow"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "\n"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": "Penulis: "
+                    },
+                    {
+                      "url": "https://medium.com/@cathybarreraphd?source=post_page-----6e733a1d2bc9--------------------------------",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noopener follow"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Cathy Barrera, PhD"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Ringkasan"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Memahami apakah sistem voting pada platform berbasis blockchain dirancang dengan baik tergantung pada faktor-faktor seperti konteks voting, tujuannya (preferensi vs. informasi), dan tujuan keseluruhan sistem. Voting sangat penting ketika anggota individu dari sebuah grup memiliki preferensi yang berbeda atas hasil yang relevan bagi mereka (voting untuk preferensi), dan ketika ada preferensi bersama tetapi ketidakpastian tetap ada atas pilihan yang mengarah pada hasil yang benar (voting pada informasi)."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Untuk voting pada preferensi, pikirkan sekelompok teman yang memutuskan restoran. Setiap suara dihitung sama karena preferensi setiap orang dihargai. Dalam hal ini, tujuannya adalah mencapai kesepakatan melalui sistem yang adil yang menggabungkan berbagai preferensi menjadi satu pilihan, mendorong kohesi kelompok."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Sebaliknya, voting pada informasi lebih tentang mencapai keputusan yang tepat ketika ada tujuan bersama, tetapi informasi yang tidak pasti, seperti dalam persidangan juri. Di sini, tujuannya adalah mengumpulkan informasi dari grup untuk mencapai keputusan yang lebih terinformasi dan benar."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Merancang sistem voting oleh karena itu memerlukan pertimbangan yang cermat:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Jenis suara: Apakah berbasis preferensi atau berbasis informasi?"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Peserta: Siapa yang harus memilih? Apakah semua yang terlibat atau hanya kelompok tertentu?"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Ambang batas: Apa yang harus menjadi persyaratan minimum untuk sebuah keputusan?"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Ketersediaan informasi: Informasi apa yang dibutuhkan pemilih dan bagaimana desain dapat memastikan mereka mendapatkannya?"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Proposal surat suara: Bagaimana opsi harus diusulkan dan dimasukkan dalam surat suara?"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Dengan sistem voting blockchain, fungsi smart contract dapat dimanfaatkan untuk mengotomatisasi banyak aspek ini, seperti menetapkan ambang batas voting, memastikan peserta memiliki informasi yang diperlukan, dan mengamankan proses voting. Startup juga dapat menggunakan registri yang dikurasi token untuk memberi insentif kepada pengguna untuk mengkurasi dan memelihara daftar yang andal, akurat, dan sangat dihargai oleh komunitas, sehingga memfasilitasi proses pengambilan keputusan."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Selain itu, sistem voting terdesentralisasi pada platform blockchain dapat memungkinkan lebih banyak transparansi, keamanan, dan berpotensi mendorong proses yang lebih demokratis di mana semua suara pemangku kepentingan didengar, yang mengarah pada mekanisme konsensus yang lebih inklusif dan adil."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Namun, penting untuk diingat bahwa blockchain bukanlah obat mujarab. Merancang sistem voting yang tepat tetaplah penting. Blockchain hanya menyediakan platform di mana sistem ini dapat diimplementasikan dengan transparansi dan ketidakberubahan yang lebih besar."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Singkatnya, saat merancang atau mengevaluasi sistem voting, kuncinya adalah memastikan bahwa itu selaras dengan konteks dan tujuan proses pengambilan keputusan, memperhitungkan keragaman preferensi dan ketidakpastian informasi, dan menyediakan proses yang adil dan transparan yang mempertimbangkan setiap suara yang relevan."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "cbc6-img1",
+            "height": 862,
+            "width": 862,
+            "filename": "cbc6-img1.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1690859305-cbc6-img1.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Mengungkap esensi voting dalam sistem terdesentralisasi. Dapatkan wawasan tentang tujuan dan kekuatan sebenarnya dari voting di blockchain.",
+      "title": "Untuk Apa Voting? [Ringkasan]",
+      "twitterCard": null,
+      "image": {
+        "width": 862,
+        "height": 862,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1690859305-cbc6-img1.png"
+      }
+    }
+  },
+  "topics": [
+    "DAO",
+    "Summary"
+  ]
+}

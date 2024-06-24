@@ -1,0 +1,553 @@
+{
+  "relatedBlogs": [],
+  "blogContent": {
+    "id": "198277138",
+    "topics": [
+      "LLM",
+      "Ajuste Fino"
+    ],
+    "title": "LLaMA Ordenado: Desbloqueando o Potencial das Camadas Intermediárias de Modelos de Linguagem de Grande Escala para Inferência Dinâmica Usando Ajuste Fino Ordenado (SoFT)",
+    "slug": "sorted-llama-unlocking-the-potential-of-intermediate-layers-of-large-language-mod",
+    "authorName": "Prof. Otto Nomos",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+    },
+    "_publishedAt": "2024-05-27T03:33:31+01:00",
+    "description": "Comentário e Avaliação do Resumo",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Publicado em 16 de Setembro"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Autores:"
+                    },
+                    {
+                      "url": "https://huggingface.co/parsareal",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Parsa Kavehzadeh"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/vpcom",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Mojtaba Valipour"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/marzieh7",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Marzieh Tahaei"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/alighodsi",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Ali Ghodsi"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ",Boxing Chen,"
+                    },
+                    {
+                      "url": "https://huggingface.co/mrgzadeh",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Mehdi Rezagholizadeh"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Resumo"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "O rápido avanço dos modelos de linguagem de grande escala (LLMs) revolucionou o processamento de linguagem natural (NLP). Enquanto esses modelos são excelentes em entender e gerar texto semelhante ao humano, sua implantação em larga escala pode ser extremamente cara. SortedNet é uma técnica de treinamento recente que permite inferência dinâmica para redes neurais profundas. Ela aproveita a modularidade da rede para criar submodelos com diferentes cargas computacionais, classificando-os com base em características de computação/precisão de forma aninhada. Estendemos o SortedNet para tarefas de NLP gerativas, tornando os modelos de linguagem de grande escala dinâmicos sem qualquer pré-treinamento e apenas substituindo o Ajuste Fino Supervisionado (SFT) pelo Ajuste Fino Ordenado (SoFT) pelos mesmos custos. Nossa abordagem aumenta a eficiência do modelo, eliminando a necessidade de múltiplos modelos para vários cenários durante a inferência. Mostramos que, usando essa abordagem, somos capazes de desbloquear o potencial das camadas intermediárias dos transformadores na geração da saída alvo. Nossos submodelos permanecem componentes integrais do modelo original, minimizando requisitos de armazenamento e custos de transição entre diferentes orçamentos computacionais/latência. Ao aplicar essa abordagem no LLaMa 2 13B para ajuste no conjunto de dados Stanford Alpaca e comparando-o ao ajuste normal e saída antecipada via benchmark PandaLM, mostramos que o Ajuste Fino Ordenado pode entregar modelos duas vezes mais rápidos que o modelo original enquanto mantém ou supera o desempenho."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "url": "https://arxiv.org/abs/2309.08968",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Ver página arXiv"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "https://arxiv.org/pdf/2309.08968",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Ver PDF"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Comentário"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "O artigo intitulado \"LLaMA Ordenado: Desbloqueando o Potencial das Camadas Intermediárias de Modelos de Linguagem de Grande Escala para Inferência Dinâmica Usando Ajuste Fino Ordenado (SoFT)\" explora o domínio de tornar os Modelos de Linguagem de Grande Escala (LLMs) mais eficientes e econômicos. O foco principal é permitir inferência dinâmica sem exigir ajustes significativos nos modelos."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Principais Insights:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Problema de Eficiência"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": O artigo reconhece o desafio com os LLMs—eles são computacionalmente caros, tornando a implantação no mundo real desafiadora, especialmente em aplicações em tempo real ou sensíveis à latência."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Adaptação do SortedNet"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Os autores estendem a técnica SortedNet (anteriormente aplicada a redes neurais profundas) para tarefas de NLP, especificamente as gerativas. Essa abordagem visa ajustar dinamicamente a profundidade do modelo durante a inferência, usando apenas a computação necessária para produzir uma resposta."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "SoFT sobre SFT"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": A proposta é substituir o Ajuste Fino Supervisionado (SFT) pelo Ajuste Fino Ordenado (SoFT). Essa mudança não aumenta os custos, mas promete melhor eficiência."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Potencial das Camadas Intermediárias"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Uma conclusão importante é que nem todas as camadas de um transformador são necessariamente requeridas para cada tarefa. O potencial das camadas intermediárias pode ser desbloqueado para a geração de saída alvo, o que pode ser mais eficiente computacionalmente."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Ganhos de Desempenho"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": O método proposto oferece modelos que podem ser duas vezes mais rápidos que o original, com o mesmo ou melhor desempenho."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Impacto Potencial no Mundo Real:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Implantação Econômica"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Para empresas ou aplicações que utilizam LLMs, essa abordagem poderia reduzir significativamente os custos computacionais, tornando a implantação em larga escala mais viável."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Aplicações em Tempo Real"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Com modelos mais rápidos, aplicações que requerem processamento de linguagem em tempo real—como chatbots, assistentes virtuais e mais—podem se beneficiar imensamente."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Benefícios de Armazenamento e Transição"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Como os submodelos permanecem parte do modelo original, os requisitos de armazenamento não são aumentados. A transição entre orçamentos computacionais torna-se mais suave e eficiente."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Personalização"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Dependendo das restrições computacionais de uma aplicação específica, os usuários podem escolher a profundidade de modelo apropriada, proporcionando flexibilidade."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Aplicabilidade Ampla"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Dado que essa é uma abordagem de ajuste fino, ela poderia ser aplicada a diversos LLMs em diferentes domínios."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Desafios:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Tempo de Adoção"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Pode levar algum tempo para que empresas e desenvolvedores adotem e se ajustem a essa nova abordagem de ajuste fino."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Desafios Específicos do Domínio"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": A eficácia deste método em uma variedade diversa de domínios e tarefas ainda precisa ser amplamente testada."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Dada a crescente importância dos LLMs em numerosas aplicações e a necessidade constante de otimizar custos computacionais sem comprometer o desempenho:"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Eu classificaria o impacto real deste artigo como 9 de 10."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "A capacidade de aproveitar as capacidades dos LLMs de forma mais eficiente poderia mudar drasticamente como esses modelos são implantados, tornando-os mais ubíquos em várias aplicações."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "researchpaper9",
+            "height": 816,
+            "width": 1456,
+            "filename": "researchpaper9.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Comentário e Avaliação do Resumo\n",
+      "title": "LLaMA Ordenado: ... Inferência Usando Ajuste Fino Ordenado (SoFT)",
+      "twitterCard": null,
+      "image": {
+        "width": 1456,
+        "height": 816,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      }
+    }
+  },
+  "topics": [
+    "LLM",
+    "Fine-tuning"
+  ]
+}

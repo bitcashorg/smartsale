@@ -1,0 +1,841 @@
+{
+  "relatedBlogs": [
+    {
+      "id": "190259319",
+      "topics": [
+        "Ringkasan",
+        "LLM",
+        "Pelatihan"
+      ],
+      "title": "Podcast Ruang Laten 16/8/23 [Ringkasan] - Matematika Pelatihan LLM — bersama Quentin Anthony dari Eleuther AI",
+      "slug": "latent-space-podcast-8-16-23-summary-the-mathematics-of-training-llms-with-que",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:19:45+01:00",
+      "description": "Jelajahi matematika di balik pelatihan LLM dengan Quentin Anthony dari Eleuther AI. Menyelami artikel Matematika Transformers 101 & menguasai teknik pelatihan terdistribusi untuk kinerja GPU puncak.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692324088-screenshot-2023-08-17-at-9-59-17-pm.png"
+      },
+      "seo": {
+        "title": "Podcast Ruang Laten 16/8/23 [Ringkasan] Matematika Pelatihan LLM",
+        "description": "Menyelami artikel Matematika Transformers 101 & menguasai teknik pelatihan terdistribusi untuk kinerja GPU puncak."
+      }
+    },
+    {
+      "id": "190259129",
+      "topics": [
+        "LLM",
+        "Perangkat Keras",
+        "Ringkasan",
+        "Tepi"
+      ],
+      "title": "Podcast Ruang Laten 10/8/23 [Ringkasan]: LLM di Mana-mana: Menjalankan model 70B di browser dan iPhone menggunakan MLC — bersama Tianqi Chen dari CMU / OctoML",
+      "slug": "latent-space-podcast-8-10-23-summary-llms-everywhere-running-70b-models-in-browse",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:18:37+01:00",
+      "description": "Jelajahi keajaiban MLC dengan Tianqi Chen: menerapkan model 70B di browser & iPhone. Menyelami XGBoost, penciptaan TVM, & masa depan penyebaran AI universal.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1691894611-screenshot-2023-08-12-at-10-42-43-pm.png"
+      },
+      "seo": {
+        "title": "Ruang Laten 10/8/23 [Ringkasan]: LLM di Mana-mana",
+        "description": "Jelajahi penerapan model 70B di browser & iPhone. Menyelami XGBoost, penciptaan TVM, & masa depan penyebaran AI universal."
+      }
+    },
+    {
+      "id": "190259087",
+      "topics": [
+        "Ringkasan",
+        "LLM",
+        "Kode",
+        "Sumber Terbuka",
+        "Model Kecil"
+      ],
+      "title": "Podcast Ruang Laten 4/8/23 [Ringkasan] Ruang Laten x AI Breakdown crossover pod!",
+      "slug": "latent-space-podcast-8-4-23-summary-latent-space-x-ai-breakdown-crossover-pod",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:16:33+01:00",
+      "description": "Bergabung dengan AI Breakdown & Ruang Laten untuk rangkuman teknologi AI musim panas: Menyelami GPT4.5, Llama 2, alat AI, insinyur AI yang muncul, dan lainnya!",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1691539617-screenshot-2023-08-08-at-8-02-52-pm.png"
+      },
+      "seo": {
+        "title": "Podcast Ruang Laten 4/8/23 [Ringkasan] AI Breakdown crossover",
+        "description": "Menyelami GPT4.5, Llama 2, alat AI, insinyur AI yang muncul, dan lainnya!"
+      }
+    },
+    {
+      "id": "190259111",
+      "topics": [
+        "Ringkasan",
+        "Transformers",
+        "Pelatihan",
+        "Sumber Terbuka"
+      ],
+      "title": "Podcast Ruang Laten 26/7/23 [Ringkasan] FlashAttention 2: membuat Transformers 800% lebih cepat - Tri Dao dari Together AI",
+      "slug": "latent-space-podcast-7-26-23-summary-flashattention-2-making-transformers-800-fas",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:14:13+01:00",
+      "description": "Temukan bagaimana FlashAttention merevolusi kecepatan AI dengan Tri Dao, saat ia mengungkap kekuatan FlashAttention 2, menyelami Hazy Lab Stanford & wawasan AI masa depan.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1691543194-screenshot-2023-08-08-at-8-43-59-pm.png"
+      },
+      "seo": {
+        "title": "Podcast Ruang Laten 26/7/23 [Ringkasan] FlashAttention 2",
+        "description": "Temukan bagaimana FlashAttention merevolusi kecepatan AI dengan Tri Dao, saat ia mengungkap kekuatan FlashAttention 2"
+      }
+    },
+    {
+      "id": "190259172",
+      "topics": [
+        "Ringkasan",
+        "LLM",
+        "Sumber Terbuka",
+        "Model Kecil"
+      ],
+      "title": "Podcast Ruang Laten 19/7/23 [Ringkasan] - Llama 2: LLM Terbuka Baru SOTA (ft. Nathan Lambert, Matt Bornstein, Anton Troynikov, Russell Kaplan, Whole Mars Catalog et al.)",
+      "slug": "latent-space-podcast-7-19-23-summary-llama-2-the-new-open-llm-sota-ft-nathan-lamb",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:12:38+01:00",
+      "description": "Jelajahi Llama 2, terobosan AI terbaru dengan para ahli Nathan Lambert, Matt Bornstein & lainnya. Menyelami dataset, tolok ukur & prediksi AI. Wawasan & drama Llama menanti di podcast teratas ini!",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1691968295-screenshot-2023-08-13-at-7-11-06-pm.png"
+      },
+      "seo": {
+        "title": "Podcast Ruang Laten 19/7/23 [Ringkasan] - Llama 2",
+        "description": "Menyelami dataset, tolok ukur & prediksi AI. Wawasan & drama Llama menanti di podcast teratas ini!"
+      }
+    },
+    {
+      "id": "190259191",
+      "topics": [
+        "Ringkasan",
+        "Kode",
+        "LLM"
+      ],
+      "title": "Podcast Ruang Laten 10/7/23 [Ringkasan] - Penerjemah Kode == GPT 4.5 (dengan Simon Willison, Alex Volkov, Aravind Srinivas, Alex Graveley, et al.)",
+      "slug": "latent-space-podcast-7-10-23-summary-code-interpreter-gpt-4-5-w-simon-willison-al",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:09:26+01:00",
+      "description": "Jelajahi Penerjemah Kode ChatGPT: perubahan permainan dalam AI. Menyelami lonjakan kemampuan 1000x dengan Simon, Alex & ahli AI teratas. #CodeAugmentedInference #GPT4_5",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692048911-screenshot-2023-08-14-at-3-34-05-pm.png"
+      },
+      "seo": {
+        "title": "Podcast Ruang Laten [Ringkasan] Penerjemah Kode = GPT 4.5",
+        "description": "Jelajahi Penerjemah Kode ChatGPT: perubahan permainan dalam AI. Menyelami lonjakan kemampuan 1000x dengan Simon, Alex & ahli AI teratas."
+      }
+    },
+    {
+      "id": "190259216",
+      "topics": [
+        "Ringkasan",
+        "Sumber Terbuka"
+      ],
+      "title": "Podcast Ruang Laten 2/7/23 [Ringkasan] Tren AI: crossover pod Ruang Laten x Practical AI!",
+      "slug": "latent-space-podcast-7-2-23-summary-ai-trends-a-latent-space-x-practical-ai-cross",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:08:36+01:00",
+      "description": "Jelajahi fusi Practical AI & Ruang Laten saat mereka menyelami tren AI teratas 2023, merenungkan episode menonjol, dan berbagi wawasan tentang navigasi evolusi AI.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692146916-screenshot-2023-08-15-at-5-20-38-pm.png"
+      },
+      "seo": {
+        "title": "Podcast Ruang Laten 2/7/23 [Ringkasan] Tren AI",
+        "description": "Tren AI teratas 2023, merenungkan episode menonjol, dan berbagi wawasan tentang navigasi evolusi AI."
+      }
+    },
+    {
+      "id": "190259238",
+      "topics": [
+        "Perangkat Keras",
+        "LLM",
+        "Ringkasan"
+      ],
+      "title": "Podcast Ruang Laten 20/6/23 [Ringkasan] - Komodifikasi Petaflop — dengan George Hotz dari tiny corp",
+      "slug": "latent-space-podcast-6-20-23-summary-commoditizing-the-petaflop-with-george-ho",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:07:15+01:00",
+      "description": "George Hotz dari tiny corp menantang Nvidia & Google! Menyelami dunia kolaborasi AMD, wawasan tentang ggml, Mojo, Elon & GPT-4, serta sekilas tentang Pacar AI.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692154615-screenshot-2023-08-15-at-10-55-40-pm.png"
+      },
+      "seo": {
+        "title": "Podcast Ruang Laten 20/6/23 [Ringkasan] - George Hotz",
+        "description": "George Hotz dari tiny corp menantang Nvidia & Google! Kolaborasi AMD, wawasan tentang ggml, Mojo, Elon & GPT-4, serta sekilas tentang Pacar AI."
+      }
+    },
+    {
+      "id": "190259294",
+      "topics": [
+        "LLM",
+        "Fungsi",
+        "Ringkasan"
+      ],
+      "title": "Podcast Ruang Laten 14/6/23 [Ringkasan] - Pod Darurat: API Fungsi Baru OpenAI, Penurunan Harga 75%, Panjang Konteks 4x (dengan Alex Volkov, Simon Willison, Riley Goodside, Joshua Lochner, Stefania Druga, Eric Elliott, Mayo Oshin et al)",
+      "slug": "latent-space-podcast-6-14-23-summary-emergency-pod-openai-s-new-functions-api-75",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:05:04+01:00",
+      "description": "Jelajahi pembaruan OpenAI Juni 2023 dengan insinyur AI teratas dari Scale, Microsoft, Pinecone, & Huggingface. Menyelami paradigma Kode x LLM dan menemukan Agen Fungsi Rekursif.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692221668-screenshot-2023-08-16-at-5-32-29-pm.png"
+      },
+      "seo": {
+        "title": "Podcast Ruang Laten 20/6/23 [Ringkasan] - Pod Darurat",
+        "description": "Jelajahi pembaruan OpenAI Juni 2023 dengan insinyur AI teratas dari Scale, Microsoft, Pinecone, & Huggingface."
+      }
+    },
+    {
+      "id": "190259333",
+      "topics": [
+        "LLM",
+        "Ringkasan",
+        "UX"
+      ],
+      "title": "Podcast Ruang Laten 8/6/23 [Ringkasan] - Dari RLHF ke RLHB: Kasus untuk Belajar dari Perilaku Manusia - dengan Jeffrey Wang dan Joe Reeve dari Amplitude",
+      "slug": "latent-space-podcast-6-8-23-summary-from-rlhf-to-rlhb-the-case-for-learning-from",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:02:33+01:00",
+      "description": "Jelajahi AI & analitik dengan Jeffrey Wang & Joe Reeve di Ruang Laten Live! Menyelami mengapa AI menghargai Analitik dan kekuatan data perilaku pihak pertama.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692386432-screenshot-2023-08-18-at-3-17-04-pm.png"
+      },
+      "seo": {
+        "title": "Podcast Ruang Laten 8/6/23 [Ringkasan] - Dari RLHF ke RLHB",
+        "description": "Jelajahi AI & analitik dengan Jeffrey Wang & Joe Reeve di Ruang Laten Live! Menyelami mengapa AI menghargai Analitik dan kekuatan data perilaku pihak pertama."
+      }
+    },
+    {
+      "id": "190260528",
+      "topics": [
+        "Ringkasan",
+        "LLM",
+        "UX"
+      ],
+      "title": "Podcast Ruang Laten 1/6/23 [Ringkasan] - Membangun AI × UX Scenius — dengan Linus Lee dari Notion AI",
+      "slug": "latent-space-podcast-6-1-23-summary-building-the-ai-x-ux-scenius-with-linus-le",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:00:12+01:00",
+      "description": "Jelajahi pendekatan transformatif Notion AI terhadap AI dan UX. Menyelami masa depan ruang kerja yang diperkaya AI, nilai di luar antarmuka obrolan, dan wawasan tentang pekerjaan pengetahuan yang efektif. Rekap pertemuan AI×UX NYC termasuk!",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692390655-screenshot-2023-08-18-at-4-28-51-pm.png"
+      },
+      "seo": {
+        "title": "Podcast Ruang Laten 1/6/23 [Ringkasan] - AI × UX Scenius",
+        "description": "Jelajahi pendekatan transformatif Notion AI terhadap AI dan UX."
+      }
+    },
+    {
+      "id": "190260577",
+      "topics": [
+        "LLM",
+        "Model Kecil"
+      ],
+      "title": "Podcast Ruang Laten 20/5/23 [Ringkasan] - MPT-7B dan Awal Konteks=Infinity — dengan Jonathan Frankle dan Abhinav Venigalla dari MosaicML",
+      "slug": "latent-space-podcast-5-20-23-summary-mpt-7b-and-the-beginning-of-context-infinity",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:57:33+01:00",
+      "description": "Menyelami pelatihan MPT-7B \"llongboi\" MosaicML selama 9 hari, $200k, wawasan persiapan data, & munculnya model AI terbuka dengan para ahli Frankle & Venigalla.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692409795-screenshot-2023-08-18-at-9-49-21-pm.png"
+      },
+      "seo": {
+        "title": "Podcast Ruang Laten 25/6/23 [Ringkasan] MosaicML",
+        "description": "Menyelami pelatihan MPT-7B \"llongboi\" MosaicML selama 9 hari, $200k, wawasan persiapan data, & munculnya model AI terbuka"
+      }
+    },
+    {
+      "id": "190260597",
+      "topics": [
+        "LLM",
+        "Data Terstruktur"
+      ],
+      "title": "Podcast Ruang Laten 15/5/23 [Ringkasan] - Kualitas dan struktur terjamin dalam output LLM - dengan Shreya Rajpal dari Guardrails AI",
+      "slug": "latent-space-podcast-5-15-23-summary-guaranteed-quality-and-structure-in-llm-outp",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:56:26+01:00",
+      "description": "Jelajahi Ep. 12 dengan Shreya Rajpal dari Guardrails AI: Menyelami validasi output LLM, menyempurnakan jawaban melalui loop bertanya ulang, dan menetapkan SLA untuk model. Kuasai nuansa jaminan kualitas AI.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692495732-screenshot-2023-08-19-at-9-38-27-pm.png"
+      },
+      "seo": {
+        "title": "Podcast Ruang Laten 15/5/23 [Ringkasan] Output LLM Berkualitas",
+        "description": "Jelajahi Ep. 12 dengan Shreya Rajpal dari Guardrails AI: Menyelami validasi output LLM."
+      }
+    },
+    {
+      "id": "190260606",
+      "topics": [
+        "LLM",
+        "Pelatihan",
+        "Agen",
+        "Multimodal"
+      ],
+      "title": "Podcast Ruang Laten 8/5/23 [Ringkasan] - Gen Pendiri AI: Awal, Membangun Cepat, dan Percaya pada Kehebatan — dengan Sharif Shameem dari Lexica",
+      "slug": "latent-space-podcast-5-8-23-summary-the-ai-founder-gene-being-early-building-fast",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:52:09+01:00",
+      "description": "Ep.11 dengan Sharif Shameem dari Lexica: Menyelami pola pikir pendiri AI, mengungkap rahasia inovasi perintis, membangun teknologi yang mengubah permainan, melatih model, dan potensi menarik Agen dan pemetaan genom.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692501984-screenshot-2023-08-19-at-11-24-05-pm.png"
+      },
+      "seo": {
+        "title": "Pod Ruang Laten 8/5/23 [Ringkasan] Gen Pendiri AI",
+        "description": "Ep.11 dengan Sharif Shameem dari Lexica: Menyelami pola pikir pendiri AI, mengungkap rahasia inovasi perintis."
+      }
+    },
+    {
+      "id": "190260640",
+      "topics": [
+        "Ringkasan",
+        "Sumber Terbuka",
+        "LLM"
+      ],
+      "title": "Podcast Ruang Laten 5/5/23 [Ringkasan] - Tidak Ada Moat: AI Tertutup mendapatkan panggilan bangun Sumber Terbuka — ft. Simon Willison",
+      "slug": "latent-space-podcast-5-5-23-summary-no-moat-closed-ai-gets-its-open-source-wakeup",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:49:18+01:00",
+      "description": "Jelajahi 'Tidak Ada Moat: Kebangkitan Sumber Terbuka AI Tertutup' dengan Simon Willison. Menyelami wawasan memo Moat Google yang bocor, Drain Otak Google, dan peningkatan kecepatan Python dengan Mojo.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692566921-screenshot-2023-08-20-at-5-25-53-pm.png"
+      },
+      "seo": {
+        "title": "Podcast Ruang Laten 5/5/23 [Ringkasan] - Tidak Ada Moat",
+        "description": "Jelajahi 'Tidak Ada Moat: Kebangkitan Sumber Terbuka AI Tertutup' dengan Simon Willison. Menyelami wawasan memo Moat Google yang bocor."
+      }
+    },
+    {
+      "id": "190260671",
+      "topics": [
+        "LLM",
+        "Kode",
+        "Ringkasan"
+      ],
+      "title": "Podcast Ruang Laten 3/5/23 [Ringkasan] - Melatih LLM Kode SOTA dalam 1 minggu dan Mengkuantifikasi Vibes — dengan Reza Shabani dari Replit",
+      "slug": "latent-space-podcast-5-3-23-summary-training-a-sota-code-llm-in-1-week-and-quanti",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:46:08+01:00",
+      "description": "Ep. 10 dengan Reza Shabani: Menyelami pelatihan cepat LLM Kode mutakhir, menjelajahi masa depan Ghostwriter Replit, dan perjalanan dari Keuangan ke AI. Temukan transisi dari Kaplan ke Chinchilla dan lainnya!",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692584998-screenshot-2023-08-20-at-10-17-26-pm.png"
+      },
+      "seo": {
+        "title": "Pod Ruang Laten 3/5/23 [Ringkasan] - LLM Kode SOTA",
+        "description": "Ep. 10 dengan Reza Shabani: Menyelami pelatihan cepat LLM Kode mutakhir!"
+      }
+    },
+    {
+      "id": "190629271",
+      "topics": [
+        "LLM",
+        "Model Kecil",
+        "Ringkasan"
+      ],
+      "title": "Podcast Ruang Laten 28/4/23 [Ringkasan] - Memetakan masa depan Model Terbuka *sejati* dan Melatih Dolly dengan $30 — dengan Mike Conover dari Databricks",
+      "slug": "latent-space-podcast-4-28-23-summary-mapping-the-future-of-truly-open-models-and",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:33:12+01:00",
+      "description": "Jelajahi masa depan model terbuka dengan Mike Conover dari Databricks. Menyelami penciptaan Dolly, transisinya dari 1.0 ke 2.0, & pengaruh di balik pengembangannya. Ep.9 membahas infrastruktur model, visi Databricks, & lainnya. #AI #ModelTerbuka #Dolly",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1694038707-screenshot-2023-09-06-at-3-12-24-pm.png"
+      },
+      "seo": {
+        "title": "Pod Ruang Laten 28/4/23 [Ringkasan] - Mike dari Databricks",
+        "description": "Ep.9 membahas infrastruktur model, visi Databricks, & lainnya. #AI #ModelTerbuka #Dolly"
+      }
+    },
+    {
+      "id": "191164291",
+      "topics": [
+        "LLM",
+        "Perusahaan",
+        "Ringkasan"
+      ],
+      "title": "Podcast Ruang Laten 21/4/23 [Ringkasan] - Pencarian Berdaya AI untuk Perusahaan — dengan Deedy Das dari Glean",
+      "slug": "latent-space-podcast-4-21-23-summary-ai-powered-search-for-the-enterprise-with",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:31:31+01:00",
+      "description": "Ep.8: Menyelami AI dalam pencarian perusahaan dengan Deedy Das dari Glean. Menganalisis tantangan dalam menciptakan raksasa pencarian AI, perbandingan Google vs ChatGPT, kompleksitas infrastruktur AI, mengenali teks yang dihasilkan AI, dan mengapa bisnis membutuhkan lebih dari sekadar QA Dokumen.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1694134074-screenshot-2023-09-07-at-5-43-48-pm.png"
+      },
+      "seo": {
+        "title": "Podcast Ruang Laten 21/4/23 [Ringkasan] - dengan Deedy Das",
+        "description": "Ep.8: Menyelami AI dalam pencarian perusahaan dengan Deedy Das dari Glean. Menganalisis tantangan dalam menciptakan raksasa pencarian AI, Google vs ChatGPT ..."
+      }
+    },
+    {
+      "id": "191165673",
+      "topics": [
+        "Ringkasan",
+        "Visi"
+      ],
+      "title": "Podcast Ruang Laten 13/4/23 [Ringkasan] - Model Apa Pun dan Masalah Sulit Visi Komputer — dengan Joseph Nelson dari Roboflow",
+      "slug": "latent-space-podcast-4-13-23-summary-segment-anything-model-and-the-hard-problems",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:30:03+01:00",
+      "description": "Jelajahi Ep.7 dengan Joseph Nelson tentang Model Apa Pun oleh Meta. Menyelami masa depan Visi Komputer, pentingnya OCR, Segmentasi Gambar, dan lainnya. #Roboflow #AI",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1694150379-screenshot-2023-09-07-at-10-15-52-pm.png"
+      },
+      "seo": {
+        "title": "Podcast Ruang Laten 13/4/23 [Ringkasan] - Model Apa Pun",
+        "description": "Menyelami masa depan Visi Komputer, pentingnya OCR, Segmentasi Gambar, dan lainnya. #Roboflow #AI"
+      }
+    }
+  ],
+  "blogContent": {
+    "id": "190260557",
+    "slug": "latent-space-podcast-5-25-23-summary-debugging-the-internet-with-ai-agents-with",
+    "authorName": "Prof. Otto Nomos",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+    },
+    "_publishedAt": "2023-10-05T08:58:27+01:00",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1692397413-screenshot-2023-08-18-at-6-10-09-pm.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Tautan Asli: "
+                    },
+                    {
+                      "url": "https://www.latent.space/p/codium-agents#details",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Debugging Internet dengan Agen AI - bersama Itamar Friedman dari Codium AI dan AutoGPT"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "url": "https://www.latent.space/p/codium-agents#details",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "marks": [
+                            "strong"
+                          ],
+                          "value": "Ringkasan"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Evolusi AI dalam Verifikasi Kode: Penyelaman Mendalam dengan Itamar Friedman"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Dalam episode terbaru podcast Ruang Laten, Alessio, Mitra dan CTO-in-Residence di Decibel Partners, dan Swyx, penulis dan editor Ruang Laten, duduk bersama tamu spesial, Itamar Friedman, CEO dan pendiri bersama Codium AI."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Berawal dari Tel Aviv dan alumni Teknion Israel Institute of Technology (sering dibandingkan dengan MIT), Itamar membawa latar belakang yang kaya dalam visi komputer dan pembelajaran mesin ke percakapan. Dia paling dikenal karena mendirikan Visualead, yang akhirnya diakuisisi oleh Alibaba Group. Fokus Visualead pada kode QR dengan visibilitas bervariasi telah melihat adopsi yang signifikan di China, menghasilkan penghematan yang besar bagi bisnis, berkat peningkatan efisiensi dalam pemindaian QR."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Setelah waktunya dengan Alibaba, Itamar berkolaborasi dengan kolega lama, Debbie, untuk memulai Codium AI, yang baru-baru ini mengamankan pendanaan benih yang mengesankan sebesar $11 juta. Misi startup adalah untuk menyediakan asisten pengkodean yang ditenagai AI yang membantu pengembang mencapai tahap nol bug dalam kode mereka."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Itamar menjelaskan teknologi di balik Codium AI, menekankan perpaduan metode penalaran logis tradisional dengan kekuatan AI. Meskipun model bahasa besar (LLM) saja mungkin tidak cukup untuk memverifikasi logika kode, kombinasi AI dan teknik konvensional, seperti pohon sintaks abstrak (AST) dan analisis kode dinamis, dapat menawarkan keunggulan. Dengan menggabungkan teknik ini, pengembang dapat mencapai hasil yang lebih baik dalam verifikasi kode. Selanjutnya, AI dapat menyelami niat pengembang, membuat proses lebih intuitif dan dinamis."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Filosofi Codium AI berputar di sekitar peningkatan logika kode dengan memahami niat di balik kode. Ini melibatkan transformasi pengembang dari sekadar pengode menjadi pilot, di mana mereka memandu dan mengarahkan proses, bukan terjerat dalam nuansa pengodean."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "screenshot-2023-08-18-at-6-10-09-pm",
+            "height": 548,
+            "width": 1568,
+            "filename": "screenshot-2023-08-18-at-6-10-09-pm.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692397413-screenshot-2023-08-18-at-6-10-09-pm.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Codium AI: Merevolusi Pengujian dan Debugging Kode untuk Pengembang"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Alessio dan Swyx berdiskusi dengan Itamar, CEO Codium AI, tentang fungsionalitas alat dan bagaimana itu membantu pengembang. Codium AI beroperasi sebagai ekstensi IDE, saat ini ditampilkan di VS Code. Setelah terintegrasi, AI menganalisis komponen kode, melakukan analisis kode statis, dan menawarkan wawasan. Ini menyarankan spesifikasi kode, tes, dan analisis, yang memberikan pengguna umpan balik langsung tentang kualitas kode mereka."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Itamar menekankan fokus perangkat lunak pada membantu pengembang dalam menguji kode mereka, membuat prosesnya menyenangkan sambil meningkatkan keterampilan mereka. Dia memamerkan format pengujian \"given-when-then\", menekankan pentingnya, meskipun banyak pengembang tidak akrab dengannya."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Fitur menarik adalah kemampuan alat untuk menyuntikkan humor, dengan string dok \"gaya bajak laut\" sebagai contoh yang aneh. Itamar memberikan demonstrasi langsung dengan sengaja memperkenalkan bug ke dalam kode akun bank, mengubah fungsi setoran dari operasi penambahan menjadi pengurangan. Codium AI mengidentifikasi ketidaksesuaian, menawarkan petunjuk dan solusi untuk perbaikan."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Sepanjang waktu, Itamar ingin mencatat visi alat: mencapai \"nol bug,\" yang Swyx tepat menyebut sebagai \"debugging internet.\""
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "abls12-img1-5",
+            "height": 956,
+            "width": 956,
+            "filename": "abls12-img1-5.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692399754-abls12-img1-5.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Masa Depan Codium AI: Memanfaatkan Beberapa Model untuk Pengujian Kode yang Efisien"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Swyx menanyakan tentang pertumbuhan Codium AI sejak peluncuran, menekankan ekspansi organiknya. Itamar, menghargai transparansi, mengungkapkan bahwa Codium memiliki ribuan pengguna aktif mingguan, mencatat viralitas intra-perusahaan yang kuat daripada kesadaran publik yang luas. Dia berbagi bahwa Codium beroperasi dengan menggunakan model dan algoritme yang berbeda tergantung pada tugas yang ada, mendapat manfaat dari petunjuk yang diberikan dalam kode atau dokumentasinya. Dengan melakukan benchmark model baru, Codium memastikan bahwa mereka menggunakan model yang paling cocok untuk setiap tugas. StarCoder, model terbaru, disebutkan sebagai contoh model yang mereka uji. Itamar menekankan pentingnya memahami tantangan spesifik dan sifat yang diinginkan sebelum memilih atau mengembangkan model. Dia menguraikan tujuan masa depan Codium AI untuk menciptakan model independen pada tahun 2024, fokus pertama pada peningkatan pengalaman pengguna dan rekayasa. Dia menyarankan pengembang lain untuk memahami tantangan dan sifat yang diinginkan mereka sebelum terjun ke pelatihan model."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "abls12-img4",
+            "height": 956,
+            "width": 956,
+            "filename": "abls12-img4.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692399487-abls12-img4.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Visi Codium AI untuk 2025: Meningkatkan Integritas Kode dan Merangkul Prinsip Extreme DRY"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Alessio, Swyx, dan Itamar terlibat dalam diskusi komprehensif tentang masa depan pengembangan perangkat lunak, dengan fokus khusus pada penawaran dan rencana masa depan Codium AI. Itamar membahas bagaimana dunia pengembangan perangkat lunak pada tahun 2025 akan sangat berbeda dari tahun 2020. Dia memperkenalkan pergeseran paradigma menuju asisten pengodean cerdas dan agen."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Saat ini, Codium AI memungkinkan pengembang untuk memulai dengan implementasi kode dan kemudian menghasilkan spesifikasi dan tes untuk mereka. Dalam waktu dekat, tujuannya adalah untuk menawarkan kemampuan untuk juga menghasilkan spesifikasi teknis dan membantu mengisinya dengan cepat, melalui asisten spesifikasi."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Visi keseluruhan, yang dijuluki \"Extreme DRY (Don't Repeat Yourself)\", mengusulkan proses pengembangan yang fluid di mana pengembang dapat memulai dari tahap apa pun, baik spesifikasi, tes, atau implementasi, dan alat akan membantu menghasilkan komponen lain. Visi ini didasarkan pada keyakinan bahwa spesifikasi, tes, dan kode memiliki elemen yang berulang, dan otomatisasi ekstrem dapat membantu mengurangi redundansi ini, memastikan pengembang tetap di kursi pengemudi tetapi dengan dukungan otomatisasi yang signifikan. Tujuan utama adalah untuk membina lingkungan pengodean di mana integritas kode sangat penting, dengan agen Codium AI bertindak sebagai katalis dalam proses ini."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "abls12-img3",
+            "height": 956,
+            "width": 956,
+            "filename": "abls12-img3.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692399573-abls12-img3.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Persimpangan Bahasa, Pemrograman, dan AI: Sekilas tentang Visi dan Hubungan Codium AI dengan AutoGPT"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Alessio dan Swyx membahas peran berkembang pengembang di dunia di mana Codium AI merampingkan transisi antara spesifikasi produk, tes, dan kode. Itamar, dari Codium AI, menekankan fokus perusahaan pada pengembangan backend dan tujuan mereka untuk meningkatkan prinsip \"Don't Repeat Yourself\" (DRY) di seluruh spesifikasi, tes, dan kode. Pada tahun 2024, Codium bahkan mungkin menggabungkan spesifikasi visual seperti Figma. Seiring alat yang ditenagai AI menjadi lebih terintegrasi ke dalam proses pengembangan, pengembang mungkin perlu beradaptasi, memahami persyaratan produk tingkat lebih tinggi atau menyempurnakan keahlian pemrograman mereka. Menanggapi peran AutoGPT dalam komunitas AI yang lebih luas, Itamar menyoroti kolaborasi Codium AI dengan platform tersebut, menekankan pendekatan komplementer mereka. Codium AI berfokus pada menciptakan agen khusus untuk tugas tertentu, sementara AutoGPT bertujuan untuk kemampuan umum. Kedua organisasi berbagi hubungan simbiosis, dengan Codium AI berkontribusi tes dan wawasan ke komunitas AutoGPT."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": []
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Menavigasi Evolusi Sumber Terbuka dengan AI: Penyelaman Mendalam dengan Itamar"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Alessio menggali Itamar tentang masa depan pengembangan sumber terbuka di era generasi kode dan tes yang didorong AI. Itamar memberikan petunjuk tentang keterbatasan alat seperti AutoGPT dan Codium AI dalam memahami dan mengoptimalkan repositori sepenuhnya, mengaitkan masalah dengan ketidakakuratan berantai dari hasil yang digabungkan. Namun, dia tetap optimis tentang potensi AI, berhati-hati bahwa meskipun kita mungkin terlalu memperkirakan kemampuan AI saat ini, kita cenderung meremehkan kekuatannya di masa depan. Diskusi beralih ke adegan teknologi yang berkembang pesat di Israel, di mana startup berkembang dan pelatihan teknologi militer berpotongan dengan kewirausahaan. Wawasan Itamar menekankan pentingnya eksplorasi langsung bagi pembangun. Sebelum membuat klaim tentang potensi AI, dia mendesak pengembang untuk bereksperimen, menguji, dan mengulang. Refleksi jujur Itamar berfungsi sebagai bukti fluiditas kemampuan AI dan perannya dalam dunia teknologi yang terus berkembang."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "abls12-img1",
+            "height": 956,
+            "width": 956,
+            "filename": "abls12-img1.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692399818-abls12-img1.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Dive into 'Extreme DRY' agents, the rapid sync of specs & tests, and the balance between code & testing. ",
+      "title": "Latent Space Pod 5/25/23 [Summary] Debugging the Internet",
+      "twitterCard": null,
+      "image": {
+        "width": 1568,
+        "height": 548,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1692397413-screenshot-2023-08-18-at-6-10-09-pm.png"
+      }
+    }
+  },
+  "topics": [
+    "Summary",
+    "Code",
+    "LLM",
+    "Agents"
+  ]
+}

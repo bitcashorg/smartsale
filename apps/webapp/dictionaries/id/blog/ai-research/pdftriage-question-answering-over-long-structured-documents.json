@@ -1,0 +1,497 @@
+{
+  "relatedBlogs": [],
+  "blogContent": {
+    "id": "198277117",
+    "topics": [
+      "LLM",
+      "Retrieval"
+    ],
+    "title": "PDFTriage: Menjawab Pertanyaan pada Dokumen Panjang dan Terstruktur",
+    "slug": "pdftriage-question-answering-over-long-structured-documents",
+    "authorName": "Prof. Otto Nomos",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+    },
+    "_publishedAt": "2024-05-27T03:33:49+01:00",
+    "description": "Komentar Abstrak & Penilaian",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Diterbitkan pada 15 Sep"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Penulis:"
+                    },
+                    {
+                      "url": "https://huggingface.co/jonsaadfalcon",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Jon Saad-Falcon"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/jbarrow",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Joe Barrow"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ",Alexa Siu,Ani Nenkova,"
+                    },
+                    {
+                      "url": "https://huggingface.co/ryanrossi",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Ryan A. Rossi"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/Franck-Dernoncourt",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Franck Dernoncourt"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Abstrak"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Model Bahasa Besar (LLM) memiliki masalah dengan menjawab pertanyaan dokumen (QA) dalam situasi di mana dokumen tidak dapat masuk dalam konteks kecil dari LLM. Untuk mengatasi masalah ini, sebagian besar karya yang ada fokus pada mengambil konteks yang relevan dari dokumen, mewakili mereka sebagai teks biasa. Namun, dokumen seperti PDF, halaman web, dan presentasi secara alami terstruktur dengan halaman, tabel, bagian, dan sebagainya yang berbeda. Mewakili dokumen terstruktur seperti itu sebagai teks biasa tidak sesuai dengan model mental pengguna dari dokumen-dokumen ini dengan struktur yang kaya. Ketika sistem harus menanyakan dokumen untuk konteks, ketidaksesuaian ini menjadi jelas, dan pertanyaan yang tampaknya sepele dapat menjebak sistem QA. Untuk menjembatani kesenjangan mendasar dalam menangani dokumen terstruktur ini, kami mengusulkan pendekatan yang disebut PDFTriage yang memungkinkan model untuk mengambil konteks berdasarkan struktur atau konten. Eksperimen kami menunjukkan efektivitas model yang ditingkatkan PDFTriage di berbagai kelas pertanyaan di mana LLM yang ditingkatkan pengambilan yang ada gagal. Untuk memfasilitasi penelitian lebih lanjut tentang masalah mendasar ini, kami merilis dataset benchmark kami yang terdiri dari lebih dari 900 pertanyaan yang dihasilkan manusia pada lebih dari 80 dokumen terstruktur dari 10 kategori jenis pertanyaan yang berbeda untuk QA dokumen."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "url": "https://arxiv.org/abs/2309.08872",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Lihat halaman arXiv"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "https://arxiv.org/pdf/2309.08872",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Lihat PDF"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Komentar"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Makalah berjudul \"PDFTriage: Menjawab Pertanyaan pada Dokumen Panjang dan Terstruktur\" membahas tantangan menjawab pertanyaan (QA) pada dokumen yang terlalu panjang untuk masuk dalam konteks Model Bahasa Besar (LLM), terutama ketika dokumen-dokumen ini memiliki struktur yang rumit seperti PDF, presentasi, dan halaman web."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Wawasan Utama:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Masalah Panjang Konteks"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Makalah ini menyoroti masalah yang banyak ditemui dalam komunitas NLP—batasan ukuran konteks dalam LLM, yang menjadi masalah untuk dokumen panjang."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Struktur Dokumen"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Penulis dengan tepat menunjukkan bahwa banyak dokumen bukan hanya teks biasa; mereka terstruktur dengan bagian, tabel, dan halaman. Metode saat ini yang meratakan struktur ini dapat menyebabkan hilangnya makna kontekstual."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Pendekatan PDFTriage"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": PDFTriage menjembatani kesenjangan dengan memungkinkan model untuk mengambil konteks berdasarkan konten atau struktur bawaan dokumen, mempertahankan tata letak alaminya."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Dataset Benchmark"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Makalah ini menyediakan dataset baru dengan lebih dari 900 pertanyaan yang dihasilkan manusia pada dokumen terstruktur, mendorong penelitian lebih lanjut di area ini."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Dampak Dunia Nyata yang Potensial:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Pemahaman Dokumen yang Ditingkatkan"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Kemampuan untuk secara efektif mengekstrak informasi dari dokumen panjang dan terstruktur memiliki aplikasi luas di industri seperti hukum, penelitian akademis, keuangan, dan lainnya."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Pengalaman Pengguna"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Mempertahankan struktur alami dokumen lebih sesuai dengan cara pengguna memandang dan memahaminya, kemungkinan besar mengarah pada interaksi pengguna yang lebih baik dan kepercayaan pada sistem."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Mendukung Berbagai Jenis Dokumen"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Ini bisa menjadi penting untuk skenario profesional di mana dokumen datang dalam berbagai format, seperti laporan, makalah penelitian, kontrak hukum, dll."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Pendorong Penelitian"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Dengan merilis dataset baru, makalah ini membuka jalan untuk penelitian lebih lanjut di area ini, mendorong kemajuan dalam menjawab pertanyaan tingkat dokumen."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tantangan:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Kompleksitas Dokumen Dunia Nyata"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Dalam skenario dunia nyata, dokumen bisa lebih kompleks, dengan beberapa lapisan struktur bersarang, grafik, dan anotasi. Seberapa baik model menangani kompleksitas seperti itu masih harus dilihat."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Skalabilitas"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Meskipun pendekatan ini menjanjikan, penting untuk melihat bagaimana ia skalabel ke repositori besar dokumen terstruktur."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Mengingat pentingnya mengekstrak informasi yang bermakna dari dokumen panjang dan terstruktur dalam pengaturan profesional dan akademis, ditambah dengan pendekatan baru dan dataset benchmark baru:"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Saya akan menilai dampak dunia nyata dari makalah ini sebagai 8.5 dari 10."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Metodologi ini menghadirkan kemajuan signifikan dalam mengatasi tantangan QA tingkat dokumen, terutama untuk dokumen terstruktur, yang merajalela di lingkungan profesional."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "researchpaper9",
+            "height": 816,
+            "width": 1456,
+            "filename": "researchpaper9.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Komentar Abstrak & Penilaian\n",
+      "title": "PDFTriage: Q & A pada Dokumen Panjang dan Terstruktur",
+      "twitterCard": null,
+      "image": {
+        "width": 1456,
+        "height": 816,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      }
+    }
+  },
+  "topics": [
+    "LLM",
+    "Retrieval"
+  ]
+}

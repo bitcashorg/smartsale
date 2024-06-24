@@ -1,0 +1,445 @@
+{
+  "relatedBlogs": [],
+  "blogContent": {
+    "id": "198277253",
+    "topics": [
+      "LLM",
+      "音频"
+    ],
+    "title": "用大型语言模型增强口语理解的文本",
+    "slug": "augmenting-text-for-spoken-language-understanding-with-large-language-models",
+    "authorName": "Prof. Otto Nomos",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+    },
+    "_publishedAt": "2024-05-25T03:37:49+01:00",
+    "description": "摘要评论与评分",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "发表于9月17日"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "作者: Roshan Sharma, Suyoun Kim, Daniel Lazar, Trang Le, Akshat Shrivastava, Kwanghoon Ahn, Piyush Kansal, Leda Sari, Ozlem Kalinli, Michael Seltzer"
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "摘要"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "口语语义解析（SSP）涉及从输入语音生成机器可理解的解析。为训练数据中现有应用领域或扩展到新领域训练稳健模型需要语音-转录-语义解析数据的对应三元组，这类数据获得成本高。本文通过研究无需对应语音的转录-语义解析数据（无配对文本）的方法来解决这一挑战。首先，当无配对文本来自现有文本语料库时，将联合音频文本（JAT）和文本到语音（TTS）作为生成无配对文本语音表示的方法进行比较。在STOP数据集上的实验表明，使用现有和新领域的无配对文本分别在绝对精确匹配（EM）中提高了2%和30%。其次，当现有文本语料库中不存在无配对文本时，我们建议提示大型语言模型（LLM）为现有和新领域生成无配对文本。实验表明，可以使用与意图共同出现的例子和词汇生成无配对文本，并使用Llama 2.0进行生成。在STOP上的使用JAT和TTS进行口语语义解析，分别在现有和新领域提高了1.4%和2.6%的绝对EM。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "url": "https://arxiv.org/abs/2309.09390",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "查看arXiv页面"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "https://arxiv.org/pdf/2309.09390",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "查看PDF"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "评论"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "论文《用大型语言模型增强口语理解的文本》探讨了口语语义解析（SSP）。SSP旨在将口头输入转换为机器可读格式。以下是重点内容："
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "主要收获:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "数据挑战"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 获取包含语音-转录-语义解析数据的数据集成本高。"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "利用无配对文本"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 研究调查了从没有对应语音的转录-语义解析数据生成语音表示的方法。"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "两种方法"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 论文研究了两种生成语音表示的方法，联合音频文本（JAT）和文本到语音（TTS）。"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "显著改进"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 使用现有和新领域的无配对文本提高了2%和30%的精确匹配（EM）性能。"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "用LLM生成数据"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 在没有现成的无配对文本时，他们提议使用大型语言模型（如Llama 2.0）生成合适的文本，进一步提高性能。"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "潜在的现实世界影响:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "成本效率"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 利用无配对文本，这项研究可以显著降低收集特定领域语音-转录-语义解析数据的成本。"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "领域扩展"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 这种方法可以快速扩展到新领域，增强语音助手和其他语音系统的多功能性。"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "精度提高"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 方法的精确匹配（EM）评分改进可能会转化为对口语理解和处理的实际改进。"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "灵活性"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 利用大型语言模型如Llama 2.0生成必要的数据可以成为强大的工具，允许快速适应新任务和新领域，无需大量数据收集。"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "挑战:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "依赖LLM"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 这一方法依赖于大型语言模型，因此可能更适合拥有此类模型或计算资源的组织或研究群体。"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "鉴于语音助手和其他语音技术的普及及其提高性能和多功能性的潜力:"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "我对本文的现实世界影响评分为8.5（满分10）。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "提高口语理解对下一代语音驱动应用至关重要。这种方法提供了一种在不承担传统数据收集高成本的情况下增强这些系统的方法。"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "researchpaper9",
+            "height": 816,
+            "width": 1456,
+            "filename": "researchpaper9.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "摘要评论与评分\n",
+      "title": "用大型语言模型增强口语理解的文本",
+      "twitterCard": null,
+      "image": {
+        "width": 1456,
+        "height": 816,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      }
+    }
+  },
+  "topics": [
+    "LLM",
+    "Audio"
+  ]
+}

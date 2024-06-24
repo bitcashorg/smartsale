@@ -1,0 +1,766 @@
+{
+  "relatedBlogs": [
+    {
+      "id": "180217169",
+      "topics": [
+        "토큰노믹스",
+        "코멘터리"
+      ],
+      "title": "토큰화된 인센티브의 경제학 3: 토큰 가치가 이해관계자를 조정하지 않습니다 [코멘터리]",
+      "slug": "economics-of-tokenized-incentives-3-token-value-won-t-align-stakeholders-commenta",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:17:23+01:00",
+      "description": "블록체인 플랫폼에서 성과 지표로 토큰 가치를 사용하는 위험을 밝힙니다. 효과적인 인센티브 시스템을 설계하는 방법을 배웁니다.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690771457-cbc3-img1.png"
+      },
+      "seo": {
+        "title": "토큰화된 인센티브의 경제학 3 [코멘터리]",
+        "description": "블록체인 플랫폼에서 성과 지표로 토큰 가치를 사용하는 위험을 밝힙니다. 효과적인 인센티브 시스템을 설계하는 방법을 배웁니다."
+      }
+    },
+    {
+      "id": "180217123",
+      "topics": [
+        "토큰노믹스",
+        "코멘터리"
+      ],
+      "title": "토큰화된 인센티브의 경제학 2: 효과적인 성과 지표 선택 [코멘터리]",
+      "slug": "economics-of-tokenized-incentives-2-selecting-effective-performance-metrics-comme",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:17:05+01:00",
+      "description": "블록체인 성과 기반 시스템에서 성과 지표의 힘을 발견합니다. 플랫폼 목표와 효과적으로 인센티브를 조정하는 방법을 배웁니다.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690770918-cbc2-img1.png"
+      },
+      "seo": {
+        "title": "토큰화된 인센티브의 경제학 2 [코멘터리]",
+        "description": "블록체인 성과 기반 시스템에서 성과 지표의 힘을 발견합니다. 플랫폼 목표와 효과적으로 인센티브를 조정하는 방법을 배웁니다."
+      }
+    },
+    {
+      "id": "180217082",
+      "topics": [
+        "토큰노믹스",
+        "코멘터리"
+      ],
+      "title": "토큰화된 인센티브의 경제학 1: 성과 기반 지불 소개 [코멘터리]",
+      "slug": "economics-of-tokenized-incentives-1-intro-to-pay-for-performance",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:15:12+01:00",
+      "description": "블록체인 플랫폼에서 성과 기반 인센티브의 복잡성에 대해 알아봅니다. 성공을 위한 트레이드오프와 설계 고려 사항을 배웁니다.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690770568-cbc1-img1.png"
+      },
+      "seo": {
+        "title": "토큰화된 인센티브의 경제학 1 [코멘터리]",
+        "description": "블록체인 플랫폼에서 성과 기반 인센티브의 복잡성에 대해 알아봅니다. 성공을 위한 트레이드오프와 설계 고려 사항을 배웁니다."
+      }
+    },
+    {
+      "id": "180556627",
+      "topics": [
+        "코멘터리",
+        "스마트 계약"
+      ],
+      "title": "불완전 계약과 블록체인 [코멘터리]",
+      "slug": "incomplete-contracts-and-blockchain-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:14:44+01:00",
+      "description": "불완전 계약과 블록체인 간의 관계를 명확히 합니다. 블록체인이 계약적 격차를 어떻게 메울 수 있는지 이해합니다.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690856249-cbc5-img1.png"
+      },
+      "seo": {
+        "title": "불완전 계약과 블록체인 [코멘터리]",
+        "description": "불완전 계약과 블록체인 간의 관계를 명확히 합니다. 블록체인이 계약적 격차를 어떻게 메울 수 있는지 이해합니다."
+      }
+    },
+    {
+      "id": "180563918",
+      "topics": [
+        "토큰노믹스",
+        "코멘터리",
+        "펀드레이징"
+      ],
+      "title": "토큰: 투자 수단 또는 교환 매개체 (둘 다 아님) [코멘터리]",
+      "slug": "tokens-investment-vehicle-or-medium-of-exchange-not-both-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:13:31+01:00",
+      "description": "블록체인 경제에서 토큰의 이중 역할을 탐구합니다. 투자 수단과 교환 매개체 사이의 미묘한 차이를 밝힙니다.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690859959-cbc8-img1.png"
+      },
+      "seo": {
+        "title": "토큰: 투자 또는 교환 매개체 [코멘터리]",
+        "description": "블록체인 경제에서 토큰의 이중 역할을 탐구합니다. 투자 수단과 교환 매개체 사이의 미묘한 차이를 밝힙니다."
+      }
+    },
+    {
+      "id": "180563922",
+      "topics": [
+        "펀드레이징",
+        "토큰노믹스",
+        "코멘터리"
+      ],
+      "title": "ICO는 네트워크 효과를 활용합니다 [코멘터리]",
+      "slug": "icos-leverage-network-effects-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:12:06+01:00",
+      "description": "ICO가 성공을 위해 네트워크 효과의 힘을 어떻게 활용하는지 발견합니다. ICO와 네트워크 효과, 역동적인 듀오!",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690860184-cbc9-img1.png"
+      },
+      "seo": {
+        "title": "ICO는 네트워크 효과를 활용합니다 [코멘터리]",
+        "description": "ICO가 성공을 위해 네트워크 효과의 힘을 어떻게 활용하는지 발견합니다. ICO와 네트워크 효과, 역동적인 듀오!"
+      }
+    },
+    {
+      "id": "179948652",
+      "topics": [
+        "토큰노믹스",
+        "산업",
+        "요약"
+      ],
+      "title": "디지털 혁신과 수익 모델 [요약]",
+      "slug": "digital-innovation-and-revenue-models-summary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:11:35+01:00",
+      "description": "Prysm Group의 '디지털 혁신과 수익 모델'에서 제품 전달을 재편하는 디지털 혁신을 밝힙니다. 신흥 기술 경제를 탐구합니다.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690668517-cbr1-img1.png"
+      },
+      "seo": {
+        "title": "디지털 혁신과 수익 모델 [요약]",
+        "description": "Prysm Group의 '디지털 혁신과 수익 모델'에서 제품 전달을 재편하는 디지털 혁신을 밝힙니다. 신흥 기술 경제를 탐구합니다."
+      }
+    },
+    {
+      "id": "180556595",
+      "topics": [
+        "펀드레이징",
+        "토큰노믹스",
+        "코멘터리"
+      ],
+      "title": "블록체인 효과: 시장 권력 비용 없는 네트워크 효과 [코멘터리]",
+      "slug": "the-blockchain-effect-network-effects-without-market-power-costs-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:11:14+01:00",
+      "description": "블록체인이 시장 권력의 단점 없이 네트워크 효과를 가능하게 하는 방법을 탐구합니다. 게임 체인저인 블록체인 효과를 발견합니다.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690855275-cbc4-img1.png"
+      },
+      "seo": {
+        "title": "시장 권력 비용 없는 네트워크 효과 [코멘터리]",
+        "description": "블록체인이 시장 권력의 단점 없이 네트워크 효과를 가능하게 하는 방법을 탐구합니다. 게임 체인저인 블록체인 효과를 발견합니다."
+      }
+    },
+    {
+      "id": "180563903",
+      "topics": [
+        "DAO",
+        "요약"
+      ],
+      "title": "투표는 무엇을 위한 것인가? [요약]",
+      "slug": "what-is-voting-for-summary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:10:58+01:00",
+      "description": "분산 시스템 내에서 투표의 본질을 풀어냅니다. 블록체인에서 투표의 진정한 목적과 힘을 이해합니다.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690859305-cbc6-img1.png"
+      },
+      "seo": {
+        "title": "투표는 무엇을 위한 것인가? [요약]",
+        "description": "분산 시스템 내에서 투표의 본질을 풀어냅니다. 블록체인에서 투표의 진정한 목적과 힘을 이해합니다."
+      }
+    },
+    {
+      "id": "180563908",
+      "topics": [
+        "DAO",
+        "요약"
+      ],
+      "title": "거버넌스는 무엇을 위한 것인가? [요약]",
+      "slug": "what-is-governance-for-summary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:10:45+01:00",
+      "description": "블록체인 시스템에서 거버넌스의 역할과 중요성을 탐구합니다. 거버넌스가 분산화와 성장을 어떻게 촉진하는지 이해합니다.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690859755-cbc7-img1.png"
+      },
+      "seo": {
+        "title": "거버넌스는 무엇을 위한 것인가? [요약]",
+        "description": "블록체인 시스템에서 거버넌스의 역할과 중요성을 탐구합니다. 거버넌스가 분산화와 성장을 어떻게 촉진하는지 이해합니다."
+      }
+    },
+    {
+      "id": "180563931",
+      "topics": [
+        "토큰노믹스",
+        "코멘터리"
+      ],
+      "title": "블록체인 인센티브 구조: 그것이 무엇이며 왜 중요한가 [코멘터리]",
+      "slug": "blockchain-incentive-structures-what-they-are-and-why-they-matter-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:10:02+01:00",
+      "description": "블록체인 인센티브 구조의 핵심과 사용자 행동 및 플랫폼 성공을 추진하는 중요성을 이해합니다.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690860807-cbc10-img1.png"
+      },
+      "seo": {
+        "title": "블록체인 인센티브 구조 [코멘터리]",
+        "description": "블록체인 인센티브 구조의 핵심과 사용자 행동 및 플랫폼 성공을 추진하는 중요성을 이해합니다."
+      }
+    },
+    {
+      "id": "167184977",
+      "topics": [
+        "토큰노믹스",
+        "DAO",
+        "펀드레이징"
+      ],
+      "title": "스타트업 세계를 혁신하는 토큰노믹스: 주식 모델을 혁신하다",
+      "slug": "revolutionizing-the-equity-model-how-tokenomics-is-disrupting-the-startup-world",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:02:51+01:00",
+      "description": "토큰노믹스의 미래를 잠금 해제합니다! 이 혁신적인 개념이 주식 모델을 어떻게 재구성하고 스타트업 풍경을 혁신하는지 탐구합니다.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1687395688-tb2-img1.png"
+      },
+      "seo": {
+        "title": "토큰노믹스가 스타트업 세계를 어떻게 혁신하는지",
+        "description": "이 혁신적인 개념이 주식 모델을 어떻게 재구성하고 스타트업 풍경을 혁신하는지 탐구합니다."
+      }
+    },
+    {
+      "id": "166984334",
+      "topics": [
+        "DAO",
+        "법률"
+      ],
+      "title": "분산 자율 조직 (DAO): 비즈니스 및 비영리 목적을 위한 기본 법적 구조",
+      "slug": "decentralized-autonomous-organizations-daos-basic-legal-structures-for-business-a",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T08:59:06+01:00",
+      "description": "비즈니스 및 비영리 목적을 위한 기본 DAO 법적 구조를 발견합니다.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1687384353-db2-img1.png"
+      },
+      "seo": {
+        "title": "DAO: 비즈니스 및 비영리를 위한 법적 구조 탐색",
+        "description": "분산 자율 조직 (DAO): 비즈니스 및 비영리 목적을 위한 법적 구조 탐색"
+      }
+    },
+    {
+      "id": "167101094",
+      "topics": [
+        "시작하기",
+        "토큰노믹스"
+      ],
+      "title": "토큰노믹스 101: 암호화폐의 힘을 해방하다!",
+      "slug": "tokenomics-101-unleashing-the-power-of-cryptocurrency",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T08:57:58+01:00",
+      "description": "토큰노믹스 101을 통해 암호화폐의 힘을 발견합니다 - 디지털 자산 뒤에 있는 경제학을 이해하는 심층 가이드.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1687391799-tb1-img1.png"
+      },
+      "seo": {
+        "title": "토큰노믹스 101: 암호화폐의 힘을 해방하다!",
+        "description": "디지털 자산 뒤에 있는 경제학을 이해하는 심층 가이드."
+      }
+    },
+    {
+      "id": "166981063",
+      "topics": [
+        "시작하기",
+        "DAO"
+      ],
+      "title": "미래가 여기에 있습니다: 분산 자율 조직 (DAO)의 부상",
+      "slug": "the-future-is-here-the-rise-of-decentralized-autonomous-organizations-daos",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T08:57:02+01:00",
+      "description": "우리 가이드에서 분산 자율 조직 (DAO)의 부상을 탐구합니다. 비즈니스의 미래와 스타트업을 위한 기회를 이해합니다.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1687381524-db1-img1.png"
+      },
+      "seo": {
+        "title": "분산 자율 조직의 부상",
+        "description": "우리 가이드에서 분산 자율 조직 (DAO)의 부상을 탐구합니다. 비즈니스의 미래와 스타트업을 위한 기회를 이해합니다."
+      }
+    }
+  ],
+  "blogContent": {
+    "id": "180563939",
+    "topics": [
+      "DAO",
+      "토큰 이코노믹스",
+      "코멘터리"
+    ],
+    "title": "블록체인 거버넌스 설계를 위한 프레임워크: 프리즘 그룹 휠 [코멘터리]",
+    "slug": "a-framework-for-blockchain-governance-design-the-prysm-group-wheel-commentary",
+    "authorName": "Crypto Clairity",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+    },
+    "_publishedAt": "2023-10-05T09:19:19+01:00",
+    "description": "프리즘 그룹 휠을 사용하여 블록체인 거버넌스의 복잡성을 탐색하세요. 효과적인 블록체인 거버넌스 설계를 위한 로드맵입니다.",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1690861154-cbc11-img1.webp"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "원본 링크: "
+                    },
+                    {
+                      "url": "https://medium.com/prysmeconomics/a-framework-for-blockchain-governance-design-the-prysm-group-wheel-703279c1b0dd?source=user_profile---------0----------------------------",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noopener follow"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "블록체인 거버넌스 설계를 위한 프레임워크: 프리즘 그룹 휠"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "저자: "
+                    },
+                    {
+                      "url": "https://medium.com/@cathybarreraphd?source=post_page-----703279c1b0dd--------------------------------",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noopener follow"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "캐시 바레라, 박사"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "요약 및 코멘터리"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "이 글은 블록체인 플랫폼에서 운영 규칙과 거버넌스의 차이를 설명하고, 효과적인 거버넌스를 설계하기 위한 구조화된 프레임워크를 제공합니다."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "운영 규칙은 블록체인 플랫폼의 일상적인 운영을 지침하는 규정입니다. 블록 보상의 크기를 결정하고, 체인에서 다음 블록이 어떻게 결정될지 지시하며, 계약, 시장, 토큰 경제가 효과적으로 작동하도록 보장합니다."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "그러나 거버넌스는 운영 규칙의 변경이나 업데이트에 관한 의사 결정 과정을 포함합니다. 예상치 못한 사건과 예상치 못한 변경을 다루며, 시스템이 시장 변동에 시간이 지남에 따라 적응할 수 있도록 합니다."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "여기서 중요한 점은 운영 규칙이 플랫폼의 기반이라면 거버넌스는 그 생명력이며, 적응하고 성장하며 진화할 수 있도록 합니다."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "프리즘 그룹 휠은 효과적인 블록체인 거버넌스를 설계하기 위한 유용한 프레임워크로 소개됩니다. 고려해야 할 일곱 가지 요소는 다음과 같습니다:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "결정의 범위"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 거버넌스 과정에서 어떤 결정이 필요한지 이해하고 그에 따라 계획하세요."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "이해관계자 / 참여자"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 이해관계자와 그들의 다양한 목표를 정의하여 결정이 그들의 바람에 부합하도록 하세요."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "정책 연구 및 개발"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 특정 제안을 구현하기 위해 제안을 준비하세요, 특히 결정이 코드로 번역되어야 하는 블록체인 프로젝트의 경우."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "제안 과정"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 제안이 이루어지는 명확한 과정을 설정하세요."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "정보 배포 시스템 / 교육"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 모든 이해관계자와 효과적으로 소통하여 정보에 입각한 의사 결정을 보장하세요."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "의사 결정 절차"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 이해관계자가 자신의 이익을 대변한다고 느끼는 의사 결정을 촉진할 메커니즘을 구현하세요."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "구현 및 재산권"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 이해관계자의 생태계에서 재산권을 이해하여 구현 단계에서 권력 불균형을 방지하세요."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "이러한 통찰을 바탕으로 취할 수 있는 실질적인 조치는 다음과 같습니다:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "블록체인 개발자"
+                            },
+                            {
+                              "type": "span",
+                              "value": "는 적응성과 변화를 허용하는 거버넌스 메커니즘을 개발하는 데 집중해야 합니다. 또한 모든 참여자가 의사 결정 과정에 참여할 수 있도록 해야 합니다."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "블록체인 프로젝트에 투자하는 투자자"
+                            },
+                            {
+                              "type": "span",
+                              "value": "는 잘 설계된 거버넌스 구조를 갖춘 프로젝트를 찾아야 합니다. 이러한 프로젝트는 장기적으로 성공할 가능성이 더 높습니다."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "블록체인 사용자"
+                            },
+                            {
+                              "type": "span",
+                              "value": "는 사용하는 플랫폼의 거버넌스 구조를 이해하여 의사 결정 과정에 만족하는지 확인해야 합니다."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "정책 입안자 및 규제 기관"
+                            },
+                            {
+                              "type": "span",
+                              "value": "은 다양한 블록체인 거버넌스 모델을 숙지하여 이러한 플랫폼을 어떻게 가장 잘 규제할 수 있는지 이해해야 합니다."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "결론적으로, 블록체인 플랫폼에서 거버넌스는 그 설계의 필수적인 구성 요소로 간주되어야 하며 운영 규칙과 동일한 수준의 고려가 필요합니다. 모든 이해관계자를 신중하게 설계하고 고려함으로써 효과적인 블록체인 거버넌스를 달성할 수 있습니다."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "cbc11-img1",
+            "height": 1383,
+            "width": 1400,
+            "filename": "cbc11-img1.webp",
+            "format": "webp",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1690861154-cbc11-img1.webp"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "프리즘 그룹 휠을 사용하여 블록체인 거버넌스의 복잡성을 탐색하세요. 효과적인 블록체인 거버넌스 설계를 위한 로드맵입니다.",
+      "title": "블록체인 거버넌스 설계를 위한 프레임워크 [코멘터리]",
+      "twitterCard": null,
+      "image": {
+        "width": 1400,
+        "height": 1383,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1690861154-cbc11-img1.webp"
+      }
+    }
+  },
+  "topics": [
+    "DAO",
+    "Tokenomics",
+    "Commentary"
+  ]
+}

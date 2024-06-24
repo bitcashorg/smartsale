@@ -1,0 +1,468 @@
+{
+  "relatedBlogs": [
+    {
+      "id": "180563939",
+      "topics": [
+        "DAO",
+        "Tokenomics",
+        "Bình luận"
+      ],
+      "title": "Khung cho Thiết kế Quản trị Blockchain: Bánh xe Nhóm Prysm [Bình luận]",
+      "slug": "a-framework-for-blockchain-governance-design-the-prysm-group-wheel-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:19:19+01:00",
+      "description": "Điều hướng sự phức tạp của quản trị blockchain với Bánh xe Nhóm Prysm. Lộ trình của bạn để thiết kế quản trị blockchain hiệu quả.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690861154-cbc11-img1.webp"
+      },
+      "seo": {
+        "title": "Khung cho Thiết kế Quản trị Blockchain [Bình luận]",
+        "description": "Điều hướng sự phức tạp của quản trị blockchain với Bánh xe Nhóm Prysm. Lộ trình của bạn để thiết kế quản trị blockchain hiệu quả."
+      }
+    },
+    {
+      "id": "180217123",
+      "topics": [
+        "Tokenomics",
+        "Bình luận"
+      ],
+      "title": "Kinh tế của Khuyến khích Token hóa 2: Lựa chọn Chỉ số Hiệu suất Hiệu quả [Bình luận]",
+      "slug": "economics-of-tokenized-incentives-2-selecting-effective-performance-metrics-comme",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:17:05+01:00",
+      "description": "Khám phá sức mạnh của các chỉ số hiệu suất trong hệ thống thanh toán theo hiệu suất blockchain. Học cách phối hợp khuyến khích với mục tiêu nền tảng một cách hiệu quả.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690770918-cbc2-img1.png"
+      },
+      "seo": {
+        "title": "Kinh tế của Khuyến khích Token hóa 2 [Bình luận]",
+        "description": "Khám phá sức mạnh của các chỉ số hiệu suất trong hệ thống thanh toán theo hiệu suất blockchain. Học cách phối hợp khuyến khích với mục tiêu nền tảng một cách hiệu quả."
+      }
+    },
+    {
+      "id": "180217082",
+      "topics": [
+        "Tokenomics",
+        "Bình luận"
+      ],
+      "title": "Kinh tế của Khuyến khích Token hóa 1: Giới thiệu về Thanh toán theo Hiệu suất [Bình luận]",
+      "slug": "economics-of-tokenized-incentives-1-intro-to-pay-for-performance",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:15:12+01:00",
+      "description": "Khám phá sự phức tạp của các khuyến khích thanh toán theo hiệu suất trong các nền tảng blockchain. Tìm hiểu các sự đánh đổi và xem xét thiết kế cho thành công.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690770568-cbc1-img1.png"
+      },
+      "seo": {
+        "title": "Kinh tế của Khuyến khích Token hóa 1 [Bình luận]",
+        "description": "Khám phá sự phức tạp của các khuyến khích thanh toán theo hiệu suất trong các nền tảng blockchain. Tìm hiểu các sự đánh đổi và xem xét thiết kế cho thành công"
+      }
+    },
+    {
+      "id": "180563918",
+      "topics": [
+        "Tokenomics",
+        "Bình luận",
+        "Gây quỹ"
+      ],
+      "title": "Token: Phương tiện Đầu tư hay Phương tiện Trao đổi (Không phải Cả Hai) [Bình luận]",
+      "slug": "tokens-investment-vehicle-or-medium-of-exchange-not-both-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:13:31+01:00",
+      "description": "Khám phá vai trò kép của token trong nền kinh tế blockchain. Tìm hiểu ranh giới mỏng manh giữa phương tiện đầu tư và phương tiện trao đổi.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690859959-cbc8-img1.png"
+      },
+      "seo": {
+        "title": "Token: Đầu tư hay Phương tiện Trao đổi [Bình luận]",
+        "description": "Khám phá vai trò kép của token trong nền kinh tế blockchain. Tìm hiểu ranh giới mỏng manh giữa phương tiện đầu tư và phương tiện trao đổi."
+      }
+    },
+    {
+      "id": "180563922",
+      "topics": [
+        "Gây quỹ",
+        "Tokenomics",
+        "Bình luận"
+      ],
+      "title": "ICO Tận dụng Hiệu ứng Mạng [Bình luận]",
+      "slug": "icos-leverage-network-effects-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:12:06+01:00",
+      "description": "Khám phá cách ICO tận dụng sức mạnh của hiệu ứng mạng để thúc đẩy thành công của họ. ICO và hiệu ứng mạng, một cặp đôi động lực!",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690860184-cbc9-img1.png"
+      },
+      "seo": {
+        "title": "ICO Tận dụng Hiệu ứng Mạng [Bình luận]",
+        "description": "Khám phá cách ICO tận dụng sức mạnh của hiệu ứng mạng để thúc đẩy thành công của họ. ICO và hiệu ứng mạng, một cặp đôi động lực!"
+      }
+    },
+    {
+      "id": "180556595",
+      "topics": [
+        "Gây quỹ",
+        "Tokenomics",
+        "Bình luận"
+      ],
+      "title": "Hiệu ứng Blockchain: Hiệu ứng Mạng mà không tốn Chi phí Quyền lực Thị trường [Bình luận]",
+      "slug": "the-blockchain-effect-network-effects-without-market-power-costs-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:11:14+01:00",
+      "description": "Khám phá cách blockchain cho phép hiệu ứng mạng mà không có nhược điểm của quyền lực thị trường. Khám phá Hiệu ứng Blockchain mang tính thay đổi trò chơi.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690855275-cbc4-img1.png"
+      },
+      "seo": {
+        "title": "Hiệu ứng Mạng mà không tốn Chi phí Quyền lực Thị trường [Bình luận]",
+        "description": "Khám phá cách blockchain cho phép hiệu ứng mạng mà không có nhược điểm của quyền lực thị trường. Khám phá Hiệu ứng Blockchain mang tính thay đổi trò chơi."
+      }
+    },
+    {
+      "id": "180563931",
+      "topics": [
+        "Tokenomics",
+        "Bình luận"
+      ],
+      "title": "Cấu trúc Khuyến khích Blockchain: Chúng là gì và tại sao chúng quan trọng [Bình luận]",
+      "slug": "blockchain-incentive-structures-what-they-are-and-why-they-matter-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:10:02+01:00",
+      "description": "Hiểu rõ bản chất của các cấu trúc khuyến khích blockchain và tầm quan trọng của chúng trong việc thúc đẩy hành vi người dùng và thành công của nền tảng.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690860807-cbc10-img1.png"
+      },
+      "seo": {
+        "title": "Cấu trúc Khuyến khích Blockchain [Bình luận]",
+        "description": "Hiểu rõ bản chất của các cấu trúc khuyến khích blockchain và tầm quan trọng của chúng trong việc thúc đẩy hành vi người dùng và thành công của nền tảng."
+      }
+    },
+    {
+      "id": "167184977",
+      "topics": [
+        "Tokenomics",
+        "DAO",
+        "Gây quỹ"
+      ],
+      "title": "Cách mạng hóa Mô hình Cổ phần: Làm thế nào Tokenomics Làm Xáo trộn Thế giới Khởi nghiệp",
+      "slug": "revolutionizing-the-equity-model-how-tokenomics-is-disrupting-the-startup-world",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:02:51+01:00",
+      "description": "Mở khóa tương lai của các công ty khởi nghiệp với tokenomics! Khám phá cách khái niệm đổi mới này đang tái cấu trúc mô hình cổ phần và làm xáo trộn cảnh quan khởi nghiệp.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1687395688-tb2-img1.png"
+      },
+      "seo": {
+        "title": "Làm thế nào Tokenomics Làm Xáo trộn Thế giới Khởi nghiệp",
+        "description": "Khám phá cách khái niệm đổi mới này đang tái cấu trúc mô hình cổ phần và làm xáo trộn cảnh quan khởi nghiệp."
+      }
+    },
+    {
+      "id": "167101094",
+      "topics": [
+        "Bắt đầu",
+        "Tokenomics"
+      ],
+      "title": "Tokenomics 101: Khai phóng Sức mạnh của Tiền điện tử!",
+      "slug": "tokenomics-101-unleashing-the-power-of-cryptocurrency",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T08:57:58+01:00",
+      "description": "Khám phá sức mạnh của tiền điện tử thông qua Tokenomics 101 - hướng dẫn sâu rộng để hiểu biết về kinh tế đằng sau các tài sản số.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1687391799-tb1-img1.png"
+      },
+      "seo": {
+        "title": "Tokenomics 101: Khai phóng Sức mạnh của Tiền điện tử!",
+        "description": "hướng dẫn sâu rộng để hiểu biết về kinh tế đằng sau các tài sản số."
+      }
+    }
+  ],
+  "blogContent": {
+    "id": "180217169",
+    "topics": [
+      "Tokenomics",
+      "Bình luận"
+    ],
+    "title": "Kinh tế của các Kích thích Đã Token hóa 3: Giá trị Token Không Đồng nhất các Bên liên quan [Bình luận]",
+    "slug": "economics-of-tokenized-incentives-3-token-value-won-t-align-stakeholders-commenta",
+    "authorName": "Crypto Clairity",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+    },
+    "_publishedAt": "2023-10-05T09:17:23+01:00",
+    "description": "Khám phá những rủi ro khi sử dụng giá trị token như một chỉ số hiệu suất trong các nền tảng blockchain. Học cách thiết kế các hệ thống kích thích hiệu quả.",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1690771457-cbc3-img1.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Liên kết Gốc: "
+                    },
+                    {
+                      "url": "https://medium.com/prysmeconomics/economics-of-tokenized-incentives-3-token-value-wont-align-stakeholders-545cffa4f58",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Kinh tế của các Kích thích Đã Token hóa 3: Giá trị Token Không Đồng nhất các Bên liên quan"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tác giả: "
+                    },
+                    {
+                      "url": "https://medium.com/@cathybarreraphd?source=post_page-----545cffa4f58--------------------------------",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noopener follow"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Cathy Barrera, Tiến sĩ"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Tóm tắt"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Trong khi nhiều người trong không gian blockchain tin rằng việc tạo ra một token bản địa có thể đồng nhất các kích thích của người dùng với lợi ích của nền tảng, bài viết cho rằng giá trị token là một chỉ số hiệu suất kém để khuyến khích các hành vi mong muốn. Giá trị của một token không nhất thiết phù hợp với giá trị lâu dài của nền tảng, và nó không nằm trong tầm kiểm soát của các cá nhân tham gia. Bài viết đề cập đến năm vấn đề có thể phát sinh từ việc sử dụng giá trị token làm chỉ số hiệu suất: chơi game vô hại, chơi game ác ý, đa nhiệm, đi nhờ và sai lệch rủi ro."
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Bình luận"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Việc lựa chọn các chỉ số hiệu suất trong hệ thống trả tiền theo hiệu suất có thể ảnh hưởng đáng kể đến hành vi của các bên tham gia và thành công chung của nền tảng. Mặc dù giá trị token có vẻ như là một lựa chọn hiển nhiên cho một chỉ số hiệu suất, nó có thể dẫn đến những hậu quả không mong muốn và có thể không hiệu quả trong việc khuyến khích các hành vi có lợi cho nền tảng. Do đó, điều quan trọng là phải chọn các chỉ số phù hợp với mục tiêu của nền tảng và nằm trong tầm kiểm soát của các bên tham gia."
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Những Hiểu biết Có thể Thực hiện"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Chọn Chỉ số Cẩn thận"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Khi thiết kế một hệ thống trả tiền theo hiệu suất, hãy dành thời gian để chọn đúng các chỉ số hiệu suất. Xem xét liệu các chỉ số có phù hợp với mục tiêu của nền tảng và có nằm trong tầm kiểm soát của các bên tham gia hay không."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Xem xét Các Cấu trúc Kích thích Khác"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Nếu không tìm thấy chỉ số hiệu suất phù hợp, hãy xem xét các cấu trúc kích thích khác. Ví dụ, các hệ thống uy tín và cơ chế định giá có thể hiệu quả trong một số bối cảnh."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Hiểu các Vấn đề Có thể Phát sinh"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Hãy nhận thức về các vấn đề có thể phát sinh từ việc sử dụng giá trị token làm chỉ số hiệu suất, như chơi game, đa nhiệm, đi nhờ và sai lệch rủi ro. Theo dõi những vấn đề này và sẵn sàng điều chỉnh nếu cần thiết."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Thiết kế các Chương trình Thưởng Mục tiêu"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Hiểu các hoạt động tạo giá trị cho nền tảng và thiết kế các chương trình thưởng mục tiêu để khuyến khích các hành vi này. Các chỉ số hiệu suất được sử dụng và kích thước của các phần thưởng nên được tối ưu hóa để khuyến khích các hành vi mong muốn."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Giao tiếp Rõ ràng"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Đảm bảo rằng các bên tham gia hiểu hệ thống kích thích và cách họ có thể được hưởng lợi từ nó. Giao tiếp rõ ràng có thể giúp khuyến khích sự tham gia và đảm bảo rằng hệ thống được sử dụng một cách hiệu quả."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": []
+      }
+    ],
+    "seo": {
+      "description": "Khám phá những rủi ro khi sử dụng giá trị token như một chỉ số hiệu suất trong các nền tảng blockchain. Học cách thiết kế các hệ thống kích thích hiệu quả.",
+      "title": "Kinh tế của các Kích thích Đã Token hóa 3 [Bình luận]",
+      "twitterCard": null,
+      "image": {
+        "width": 862,
+        "height": 862,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1690771457-cbc3-img1.png"
+      }
+    }
+  },
+  "topics": [
+    "Tokenomics",
+    "Commentary"
+  ]
+}

@@ -1,0 +1,580 @@
+{
+  "relatedBlogs": [
+    {
+      "id": "180563903",
+      "topics": [
+        "DAO",
+        "Tóm tắt"
+      ],
+      "title": "Mục đích của việc bỏ phiếu là gì? [Tóm tắt]",
+      "slug": "what-is-voting-for-summary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:10:58+01:00",
+      "description": "Khám phá bản chất của việc bỏ phiếu trong các hệ thống phi tập trung. Hiểu rõ mục đích và quyền lực thực sự của việc bỏ phiếu trong blockchain.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690859305-cbc6-img1.png"
+      },
+      "seo": {
+        "title": "Mục đích của việc bỏ phiếu là gì? [Tóm tắt]",
+        "description": "Khám phá bản chất của việc bỏ phiếu trong các hệ thống phi tập trung. Hiểu rõ mục đích và quyền lực thực sự của việc bỏ phiếu trong blockchain."
+      }
+    },
+    {
+      "id": "180563908",
+      "topics": [
+        "DAO",
+        "Tóm tắt"
+      ],
+      "title": "Quản trị là gì? [Tóm tắt]",
+      "slug": "what-is-governance-for-summary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:10:45+01:00",
+      "description": "Khám phá vai trò và tầm quan trọng của quản trị trong các hệ thống blockchain. Hiểu cách quản trị thúc đẩy sự phi tập trung và tăng trưởng.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690859755-cbc7-img1.png"
+      },
+      "seo": {
+        "title": "Quản trị là gì? [Tóm tắt]",
+        "description": "Khám phá vai trò và tầm quan trọng của quản trị trong các hệ thống blockchain. Hiểu cách quản trị thúc đẩy sự phi tập trung và tăng trưởng."
+      }
+    },
+    {
+      "id": "180563931",
+      "topics": [
+        "Tokenomics",
+        "Bình luận"
+      ],
+      "title": "Cấu trúc khuyến khích Blockchain: Chúng là gì và tại sao chúng quan trọng [Bình luận]",
+      "slug": "blockchain-incentive-structures-what-they-are-and-why-they-matter-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:10:02+01:00",
+      "description": "Hiểu rõ bản chất của cấu trúc khuyến khích blockchain và tầm quan trọng của chúng trong việc thúc đẩy hành vi người dùng và thành công của nền tảng.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690860807-cbc10-img1.png"
+      },
+      "seo": {
+        "title": "Cấu trúc khuyến khích Blockchain [Bình luận]",
+        "description": "Hiểu rõ bản chất của cấu trúc khuyến khích blockchain và tầm quan trọng của chúng trong việc thúc đẩy hành vi người dùng và thành công của nền tảng."
+      }
+    }
+  ],
+  "blogContent": {
+    "id": "179948652",
+    "topics": [
+      "Tokenomics",
+      "Ngành",
+      "Tóm tắt"
+    ],
+    "title": "Đổi mới kỹ thuật số và Mô hình Doanh thu [Tóm tắt]",
+    "slug": "digital-innovation-and-revenue-models-summary",
+    "authorName": "Crypto Clairity",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+    },
+    "_publishedAt": "2023-10-05T09:11:35+01:00",
+    "description": "Khám phá cách đổi mới kỹ thuật số tái cấu trúc việc giao hàng sản phẩm tại Nhóm Prysm trong 'Đổi mới Kỹ thuật số và Mô hình Doanh thu'. Khám phá kinh tế kỹ thuật số mới nổi.",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1690668517-cbr1-img1.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tóm tắt, Những hiểu biết chính & Lời khuyên"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Bài báo gốc: "
+                    },
+                    {
+                      "url": "https://uploads-ssl.webflow.com/5ca64cec39c643e28bb7079f/6334fa62414f4e6b5126ee3e_Prysm%20Group%20Digital%20Innovation%20and%20Revenue%20Models.pdf",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "https://uploads-ssl.webflow.com/5ca64cec39c643e28bb7079f/6334fa62414f4e6b5126ee3e_Prysm%20Group%20Digital%20Innovation%20and%20Revenue%20Models.pdf\n\n"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": "Tác giả: Nhóm Prysm"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tài liệu có tựa đề \"Đổi mới Kỹ thuật số và Mô hình Doanh thu\" của Nhóm Prysm thảo luận về kinh tế của các công nghệ mới nổi, đặc biệt là truyền thông kỹ thuật số và cơ sở hạ tầng mạng internet, và cách chúng đã thay đổi cách các sản phẩm và dịch vụ kỹ thuật số được cung cấp."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Dưới đây là những hiểu biết chính:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Giới thiệu (Trang 3)"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Tài liệu bắt đầu bằng cách nhấn mạnh tác động biến đổi của công nghệ kỹ thuật số đối với việc cung cấp sản phẩm và dịch vụ kỹ thuật số. Nó nhấn mạnh tầm quan trọng của một mô hình doanh thu bền vững cho các doanh nghiệp cung cấp sản phẩm và dịch vụ kỹ thuật số. Một chiến lược sản phẩm và giá thành công nên tính đến các động lực cấu trúc độc đáo được thể hiện bởi các ngành kỹ thuật số."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Cấu trúc chi phí cho Hàng hóa Truyền thống so với Hàng hóa Kỹ thuật số (Trang 3)"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Đổi mới kỹ thuật số đã dẫn đến các ngành có chi phí sản xuất cố định cao và chi phí biên thấp. Bản sao đầu tiên của một sản phẩm kỹ thuật số tốn kém để sản xuất, trong khi các bản sao bổ sung chỉ tốn một phần của bản đầu tiên. Chi phí sản xuất biên đã giảm gần như bằng không trong một số trường hợp."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Chiến lược Kinh doanh Bền vững cho Thế giới Kỹ thuật số (Trang 4-5)"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Tài liệu thảo luận hai chiến lược chính cho các doanh nghiệp kỹ thuật số: Mô hình Doanh nghiệp Thống trị và Mô hình Sản phẩm Khác biệt. Mô hình Doanh nghiệp Thống trị liên quan đến việc tạo và bảo vệ quy mô lớn, trong khi Mô hình Sản phẩm Khác biệt liên quan đến việc giành thị phần thông qua việc cung cấp một sản phẩm được phân biệt theo một cách nào đó."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Khung cho Chiến lược Giá cả (Trang 7)"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Tài liệu giới thiệu ba chiến lược chính để định giá hàng hóa và dịch vụ trong một thế giới ngày càng kỹ thuật số: Phân biệt giá cả, giá cả được hỗ trợ bởi bên thứ ba, và chiến lược kết hợp sử dụng cả phân biệt giá cả và giá cả được hỗ trợ bởi bên thứ ba."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Dựa trên những hiểu biết này, dưới đây là một số lời khuyên hành động cho các startup tiền điện tử:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Phù hợp Chiến lược Sản phẩm và Doanh thu"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Đảm bảo chiến lược sản phẩm của bạn được tích hợp tốt với mô hình doanh thu của bạn. Xem xét các động lực độc đáo của ngành công nghiệp kỹ thuật số khi phát triển các chiến lược này."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Tận dụng Hiệu ứng Mạng"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Nếu có thể, thiết kế sản phẩm của bạn để được hưởng lợi từ hiệu ứng mạng. Điều này có thể liên quan đến việc tạo ra một nền tảng mà giá trị tăng lên khi có nhiều người dùng tham gia, hoặc kết hợp các tính năng cải thiện với việc sử dụng tăng lên."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Phân biệt Sản phẩm của Bạn"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Nếu hiệu ứng mạng không mạnh đối với sản phẩm của bạn, hãy tập trung vào việc phân biệt sản phẩm của bạn với các sản phẩm khác trên thị trường. Điều này có thể thông qua các tính năng độc đáo, công nghệ vượt trội, hoặc trải nghiệm người dùng tốt hơn."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Xem xét Chiến lược Giá cả"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Khám phá các chiến lược giá cả khác nhau như phân biệt giá cả hoặc giá cả được hỗ trợ bởi bên thứ ba. Điều này có thể liên quan đến việc tính giá khác nhau cho các khách hàng khác nhau dựa trên sự sẵn lòng chi trả của họ, hoặc tạo doanh thu thông qua các kênh bên thứ ba."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Bảo vệ Sở hữu Trí tuệ của Bạn"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Nếu chiến lược phân biệt của bạn liên quan đến việc tạo ra nội dung hoặc công nghệ độc đáo, hãy đảm bảo bạn có các quyền sở hữu trí tuệ cần thiết để bảo vệ nó khỏi bị sao chép bởi các đối thủ cạnh tranh."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Giữ sự Nhanh nhẹn"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Hãy sẵn sàng thích nghi chiến lược của bạn khi thị trường phát triển. Không gian kỹ thuật số và tiền điện tử thay đổi nhanh chóng, vì vậy điều quan trọng là phải linh hoạt và phản ứng nhanh chóng với các xu hướng và cơ hội mới."
+                            }
+                          ]
+                        },
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": ""
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": []
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Nghiên cứu điển hình về Ngành Công nghiệp Âm nhạc"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tài liệu thảo luận về một nghiên cứu điển hình về ngành công nghiệp âm nhạc, minh họa cách đổi mới kỹ thuật số đã phát triển và mở rộng các mô hình và chiến lược kinh doanh. Dưới đây là những hiểu biết chính từ Nghiên cứu điển hình về Ngành Công nghiệp Âm nhạc:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Sự tiến hóa của Ngành Công nghiệp Âm nhạc (Trang 10)"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Ngành công nghiệp âm nhạc đã lâu dùng các chiến lược phân biệt giá. Các công ty ghi âm kiếm tiền từ âm nhạc thông qua việc bán đĩa và cấp phép cho bên thứ ba. Tuy nhiên, sự xuất hiện của việc chia sẻ âm nhạc ngang hàng vào cuối những năm 1990, được hỗ trợ bởi sự phát triển của định dạng MP3, đã đe dọa doanh thu của các công ty ghi âm."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Nền tảng Phân phối Kỹ thuật số (Trang 11)"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Các hãng ghi âm đã phát động các nền tảng phân phối kỹ thuật số của riêng mình để đáp ứng sự gia tăng của các mạng ngang hàng. Hai dịch vụ cạnh tranh đã được ra mắt: PressPlay, được hỗ trợ bởi Universal Music Group và Sony, và MusicNet, được hỗ trợ bởi Warner Bros., BMG, và EMI. Cả hai dịch vụ đều cung cấp một hỗn hợp các bản tải xuống kỹ thuật số và dịch vụ phát trực tuyến cho người đăng ký với một khoản phí hàng tháng nhưng thất bại do thư viện bài hát hạn chế và các hạn chế quá mức về số lượng bài hát có thể được tải xuống và phát trực tuyến."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "iTunes và Việc Kiếm tiền từ Phân phối Âm nhạc Kỹ thuật số (Trang 11)"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Vào năm 2003, Cửa hàng Âm nhạc iTunes đã xuất hiện để thành công trong việc kiếm tiền từ phân phối âm nhạc kỹ thuật số. Apple đã không theo mô hình đăng ký mà PressPlay và MusicNet theo đuổi, thay vào đó cung cấp mỗi bài hát trong thư viện của mình với giá 99 xu."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Chuyển sang Phát trực tuyến Âm nhạc (Trang 12)"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Ngày nay, các bản tải xuống kỹ thuật số chiếm ít hơn 4% tổng doanh thu ngành, trong khi đăng ký là hạng mục lớn nhất với tỷ lệ 83%. Các nền tảng phát trực tuyến âm nhạc đã thành công nơi PressPlay và MusicNet thất bại gần một thập kỷ trước thông qua sự kết hợp của sự tiến bộ và áp dụng công nghệ kỹ thuật số, cùng với việc thiết lập quản lý quyền kỹ thuật số vững chắc."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Dựa trên những hiểu biết này, dưới đây là một số lời khuyên hành động cho các startup tiền điện tử:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Xem xét Mô hình Đăng ký"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Sự chuyển đổi từ các bản tải xuống kỹ thuật số sang đăng ký trong ngành công nghiệp âm nhạc cho thấy những lợi ích tiềm năng của các mô hình doanh thu định kỳ. Các startup tiền điện tử có thể xem xét liệu một mô hình đăng ký có thể phù hợp với doanh nghiệp của họ."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "cbr1-img2",
+            "height": 862,
+            "width": 862,
+            "filename": "cbr1-img2.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1690668728-cbr1-img2.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Khám phá cách đổi mới kỹ thuật số tái cấu trúc việc giao hàng sản phẩm tại Nhóm Prysm trong 'Đổi mới Kỹ thuật số và Mô hình Doanh thu'. Khám phá kinh tế kỹ thuật số mới nổi.",
+      "title": "Đổi mới kỹ thuật số và Mô hình Doanh thu [Tóm tắt]",
+      "twitterCard": null,
+      "image": {
+        "width": 862,
+        "height": 862,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1690668517-cbr1-img1.png"
+      }
+    }
+  },
+  "topics": [
+    "Tokenomics",
+    "Industry",
+    "Summary"
+  ]
+}

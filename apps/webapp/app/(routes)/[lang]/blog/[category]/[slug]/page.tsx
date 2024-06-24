@@ -72,7 +72,7 @@ export async function generateMetadata(props: any): Promise<Metadata> {
 }
 
 export async function generateStaticParams(): Promise<ArticlePageParams[]> {
-  const locales = ['en', 'es'] as SiteLocale[] // english only for now
+  // const locales = ['en', 'es'] as SiteLocale[] // english only for now
   const params: ArticlePageParams[] = (
     await Promise.all(
       locales.map(async (lang): Promise<ArticlePageParams[]> => {

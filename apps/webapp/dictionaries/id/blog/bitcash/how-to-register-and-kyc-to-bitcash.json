@@ -1,0 +1,1455 @@
+{
+  "relatedBlogs": [],
+  "blogContent": {
+    "id": "H_DP7HFORBuw9rID5Jkhhw",
+    "topics": [
+      "cara"
+    ],
+    "title": "Cara Mendaftar dan KYC ke Bitcash",
+    "slug": "how-to-register-and-kyc-to-bitcash",
+    "authorName": "Roberto \"Andler\" Lucas",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1715639160-andler-file-photo.jpg"
+    },
+    "_publishedAt": "2024-06-20T16:20:40+01:00",
+    "description": "Kami membahas berbagai topik, termasuk mendaftar akun Bitcash, mengatur nama akun dan referensi, mengidentifikasi dan mengamankan perangkat, memberikan identifikasi dan informasi pribadi untuk KYC, mengambil foto untuk verifikasi KYC, dan menunggu persetujuan serta bergabung dengan komunitas.",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1715638953-bitcash-logo-frame-w-bg.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Aplikasi Bitcash Wallet menawarkan pengalaman web3 yang komprehensif dengan proses KYC yang kuat, integrasi passkey yang aman, dan sistem hadiah yang menarik. Fitur-fitur ini tidak hanya meningkatkan keamanan dan kenyamanan pengguna tetapi juga membangun komunitas yang kuat dengan mendorong partisipasi. Untuk lebih meningkatkan pengalaman pengguna, dukungan untuk lebih banyak cryptocurrency dan menyediakan lebih banyak sumber daya pendidikan dapat dipertimbangkan. Secara keseluruhan, Aplikasi Bitcash Wallet berada dalam posisi yang baik untuk menarik dan mempertahankan pengguna dalam ekosistem cryptocurrency, DeFi, dan web3."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "splash-edited",
+            "height": 1440,
+            "width": 1440,
+            "filename": "splash-edited.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1715831775-splash-edited.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Langkah 0 (Opsional) - Daftar dari Bitlauncher"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Jika Anda seorang investor dan ingin berpartisipasi dalam pra-penjualan "
+                    },
+                    {
+                      "url": "https://bitlauncher.ai/bitcash-bitlauncher",
+                      "meta": [
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "marks": [
+                            "strong"
+                          ],
+                          "value": "token BC"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": " yang akan datang, hubungkan dompet EOS EVM ke akun Anda dan lainnya, Anda dapat mendaftar akun Bitcash Anda dengan mengikuti langkah-langkah ini:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Pergi ke "
+                            },
+                            {
+                              "url": "https://bitlauncher.ai",
+                              "meta": [
+                                {
+                                  "id": "target",
+                                  "value": "_blank"
+                                }
+                              ],
+                              "type": "link",
+                              "children": [
+                                {
+                                  "type": "span",
+                                  "marks": [
+                                    "strong"
+                                  ],
+                                  "value": "bitlauncher.ai"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "span",
+                              "value": " dan gulir ke bawah ke bagian "
+                            },
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Hanya 3 Langkah Diperlukan"
+                            },
+                            {
+                              "type": "span",
+                              "value": "."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Klik pada kartu \"Daftar dan Selesaikan KYC\" di mana gambar menunjukkan."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "blockquote",
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Menyelesaikan langkah-langkah ini akan membawa Anda ke aplikasi Bitcash Wallet kami untuk memulai pendaftaran."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": []
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Langkah 1 - Identitas Anda di Aplikasi Bitcash Wallet."
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 3,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Mengatur nama akun Anda."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Pilih nama akun yang mengidentifikasi Anda, antara huruf "
+                    },
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "a"
+                    },
+                    {
+                      "type": "span",
+                      "value": " hingga "
+                    },
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "z "
+                    },
+                    {
+                      "type": "span",
+                      "value": "dan/atau angka dari "
+                    },
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "1 "
+                    },
+                    {
+                      "type": "span",
+                      "value": "hingga "
+                    },
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "5"
+                    },
+                    {
+                      "type": "span",
+                      "value": " dan "
+                    },
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "hingga 9"
+                    },
+                    {
+                      "type": "span",
+                      "value": " karakter panjangnya. Bisa kurang dan hanya huruf atau huruf dengan angka. Di akhir proses (dan ketika akun Anda disetujui), akan ada domain "
+                    },
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": ".bk "
+                    },
+                    {
+                      "type": "span",
+                      "value": "di akhir nama."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Perhatikan nama akun Anda, itu akan selamanya! Pastikan untuk mengikuti:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Pilih nama yang unik dan mudah diingat."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Hindari nama yang ofensif, menyesatkan, atau promosi."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Representasikan satu orang; jangan gunakan nama organisasi."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Sederhana dan mudah dieja untuk Anda dan teman-teman Anda."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 3,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Mengatur referensi."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Referensi "
+                    },
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "adalah akun Bitcash yang sudah ada dan disetujui yang merujuk Anda ke aplikasi dompet. Tidak perlu menambahkan "
+                    },
+                    {
+                      "type": "span",
+                      "value": ".bk"
+                    },
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": " di akhir nama akun. Jika Anda tidak memiliki referensi untuk dihubungkan, Anda dapat memberikan akun "
+                    },
+                    {
+                      "type": "span",
+                      "value": "bank.bk "
+                    },
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "(kontrak pintar bank kami)."
+                    },
+                    {
+                      "type": "span",
+                      "value": "account (our bank smart contract)."
+                    }
+                  ]
+                },
+                {
+                  "type": "blockquote",
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Jika Anda datang dari Bitlauncher atau Anda telah mengklik tautan berbagi, bidang ini mungkin sudah terisi."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "kyc-step-frame-1",
+            "height": 1440,
+            "width": 1440,
+            "filename": "kyc-step-frame-1.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1715841179-kyc-step-frame-1.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Langkah 2 - Identifikasi Perangkat Anda"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Memberi nama tag untuk perangkat utama Anda ideal untuk Anda dengan cepat mengidentifikasi perangkat yang terhubung."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Dengan Bitcash Wallet Anda dapat menghubungkan lebih dari satu perangkat seluler/tablet, untuk dapat masuk dengan perangkat yang berbeda. Secara default, kami memberikan nama umum, tetapi selalu baik untuk menetapkan nama."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Setelah "
+                    },
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Nama Perangkat "
+                    },
+                    {
+                      "type": "span",
+                      "value": "ditetapkan dan kami mengklik "
+                    },
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Tombol Berikutnya"
+                    },
+                    {
+                      "type": "span",
+                      "value": ", itu akan meminta untuk membuat "
+                    },
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "passkey "
+                    },
+                    {
+                      "type": "span",
+                      "value": "dan membuat koneksi "
+                    },
+                    {
+                      "type": "span",
+                      "marks": [
+                        "code"
+                      ],
+                      "value": "WebAuthN "
+                    },
+                    {
+                      "type": "span",
+                      "value": "antara perangkat Anda dengan akun baru Anda. Anda dapat memilih salah satu opsi untuk mengautentikasi akun Anda. Ini adalah cara Anda akan masuk dengan akun Anda."
+                    }
+                  ]
+                },
+                {
+                  "type": "blockquote",
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Jika Anda tidak dapat melanjutkan ke layar berikutnya, pertama coba gunakan "
+                        },
+                        {
+                          "type": "span",
+                          "marks": [
+                            "strong"
+                          ],
+                          "value": "Google"
+                        },
+                        {
+                          "type": "span",
+                          "value": ", "
+                        },
+                        {
+                          "type": "span",
+                          "marks": [
+                            "strong"
+                          ],
+                          "value": "Opera (Bukan Mini)"
+                        },
+                        {
+                          "type": "span",
+                          "value": " atau "
+                        },
+                        {
+                          "type": "span",
+                          "marks": [
+                            "strong"
+                          ],
+                          "value": "Safari"
+                        },
+                        {
+                          "type": "span",
+                          "value": " browser seluler dengan versi terbaru untuk memastikan kompatibilitas dan keamanan penuh."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Jika mencoba lagi tidak memungkinkan untuk melanjutkan setelah memeriksa browser seluler, periksa kompatibilitas keamanan smartphone Anda dengan "
+                        },
+                        {
+                          "type": "span",
+                          "marks": [
+                            "strong"
+                          ],
+                          "value": "passkey"
+                        },
+                        {
+                          "type": "span",
+                          "value": "."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "kyc-step-frame-2",
+            "height": 1440,
+            "width": 1440,
+            "filename": "kyc-step-frame-2.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1715841173-kyc-step-frame-2.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Langkah 3 - Berikan Identitas Anda (KYC)"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Langkah-langkah keamanan ini melindungi akun Anda dari akses yang tidak sah dan memastikan Anda adalah pemilik yang sah. Ini juga memungkinkan kami untuk memberikan hadiah aplikasi yang akurat sesuai dengan wilayah Anda. Oleh karena itu, penting bagi kami untuk Anda memberikan:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Nama lengkap:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " Harus sesuai dengan nama identifikasi yang Anda berikan."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Jenis dan Nomor Identifikasi:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " Bisa berupa "
+                            },
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "KTP Nasional"
+                            },
+                            {
+                              "type": "span",
+                              "value": ","
+                            },
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": " SIM "
+                            },
+                            {
+                              "type": "span",
+                              "value": "atau "
+                            },
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Paspor"
+                            },
+                            {
+                              "type": "span",
+                              "value": "."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Negara:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " Ini muncul secara otomatis, jika tidak pilih negara asal identifikasi Anda."
+                            },
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "identification origin"
+                            },
+                            {
+                              "type": "span",
+                              "value": "."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Nomor Telepon:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " Nomor telepon Anda untuk komunitas dan keamanan Bitcash."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Alamat Email:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " Alamat email Anda untuk komunikasi komunitas Bitcash."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Foto ID:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " Foto "
+                            },
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "selfie Anda"
+                            },
+                            {
+                              "type": "span",
+                              "value": " memegang identifikasi Anda dan "
+                            },
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "foto close-up ID identifikasi"
+                            },
+                            {
+                              "type": "span",
+                              "value": "."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Berlangganan Newsletter kami (Opsional). "
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": []
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Langkah 3.1 - Bagaimana Saya Mengambil Gambar?"
+                    }
+                  ]
+                },
+                {
+                  "type": "blockquote",
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Kami sangat merekomendasikan membersihkan kamera, sensor, dan memiliki ruangan yang bersih dengan cukup cahaya untuk melakukan pengenalan wajah."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Untuk mulai mengambil gambar, diperlukan untuk langkah keamanan "
+                    },
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Memberikan Izin "
+                    },
+                    {
+                      "type": "span",
+                      "value": "untuk "
+                    },
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "lokalisasi "
+                    },
+                    {
+                      "type": "span",
+                      "value": "dan "
+                    },
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "akses kamera"
+                    },
+                    {
+                      "type": "span",
+                      "value": ". Penting untuk mengikuti instruksi yang diberikan di setiap langkah untuk memiliki pengalaman yang lancar saat mengambil gambar."
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 3,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Kapan saya tahu bahwa saya mengambil gambar dengan benar?"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Saat mengambil gambar, harus ada:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Bingkai hijau dengan tanda centang di sudut kanan atas bingkai perekaman kamera."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Harus ada pesan di bawah bingkai perekaman kamera "
+                            },
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Foto OK"
+                            },
+                            {
+                              "type": "span",
+                              "value": "."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Warna tombol "
+                            },
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Ambil Selfie"
+                            },
+                            {
+                              "type": "span",
+                              "value": " telah berubah menjadi lebih gelap."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Setelah mengambil "
+                            },
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Selfie"
+                            },
+                            {
+                              "type": "span",
+                              "value": ", itu akan memproses gambar dan menunjukkan lagi pesan "
+                            },
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Foto OK "
+                            },
+                            {
+                              "type": "span",
+                              "value": "dan memberikan tombol "
+                            },
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Lanjutkan"
+                            },
+                            {
+                              "type": "span",
+                              "value": "."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Jika setelah "
+                    },
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Mengambil Selfie "
+                    },
+                    {
+                      "type": "span",
+                      "value": "menunjukkan bingkai merah dengan pesan teks merah, coba tetap diam sampai validasi selesai. Beberapa perangkat dapat terpengaruh oleh sensor jika bergerak."
+                    }
+                  ]
+                },
+                {
+                  "type": "blockquote",
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Jika mencoba lagi tidak berhasil, pastikan memiliki cukup cahaya dan/atau tidak ada yang menghalangi wajah Anda (misalnya: kacamata, perhiasan wajah)."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "kyc-step-frame-3",
+            "height": 1440,
+            "width": 1440,
+            "filename": "kyc-step-frame-3.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1715841166-kyc-step-frame-3.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "blockquote",
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Untuk "
+                        },
+                        {
+                          "type": "span",
+                          "marks": [
+                            "strong"
+                          ],
+                          "value": "Foto ID Kartu "
+                        },
+                        {
+                          "type": "span",
+                          "value": "lebih sederhana daripada "
+                        },
+                        {
+                          "type": "span",
+                          "marks": [
+                            "strong"
+                          ],
+                          "value": "Selfie"
+                        },
+                        {
+                          "type": "span",
+                          "value": ". Pastikan untuk meletakkan ID yang Anda berikan pada formulir KYC di dalam bingkai yang muncul di bingkai perekaman kamera."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "kyc-step-frame-4",
+            "height": 1440,
+            "width": 1440,
+            "filename": "kyc-step-frame-4.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1715841161-kyc-step-frame-4.png"
+          },
+          {
+            "basename": "kyc-step-frame-5",
+            "height": 1440,
+            "width": 1440,
+            "filename": "kyc-step-frame-5.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1715841154-kyc-step-frame-5.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Langkah 4 - Tunggu Persetujuan dan Bergabung dengan Komunitas!"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Setelah memastikan data benar dan semua langkah selesai, sekarang saatnya melanjutkan dan menyelesaikan pendaftaran!"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Anda akan dibawa ke "
+                    },
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "sukses"
+                    },
+                    {
+                      "type": "span",
+                      "value": "! Di sini Anda akan menemukan tombol yang membawa Anda ke "
+                    },
+                    {
+                      "url": "https://discord.gg/MG38R6YbF5",
+                      "meta": [
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "marks": [
+                            "strong"
+                          ],
+                          "value": "Komunitas Discord"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ". Di sana Anda dapat mengikuti proses onboarding ke komunitas kami."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Nikmati!"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "kyc-step-frame-6",
+            "height": 1440,
+            "width": 1440,
+            "filename": "kyc-step-frame-6.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1715841149-kyc-step-frame-6.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "FAQ"
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 3,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "1. Saya mendaftar sebelum KYC, Apakah saya masih perlu melakukan KYC?"
+                    }
+                  ]
+                },
+                {
+                  "type": "blockquote",
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Ya, Anda perlu, Anda dapat menyelesaikan proses dengan pergi ke Pengaturan > Pengaturan Profil dan memberikan informasi yang hilang. Tim kami memeriksa setiap hari untuk permintaan baru dan akan memberi tahu Anda melalui email ketika kami menyelesaikan verifikasi informasi yang diberikan."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 3,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "2. Saya biasa masuk dengan ponsel saya tetapi sekarang saya tidak bisa setelah saya mengatur ulang ponsel saya dan/atau mengubah kata sandi ponsel saya."
+                    }
+                  ]
+                },
+                {
+                  "type": "blockquote",
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Akses perangkat Anda terhubung ke ponsel Anda. Setiap perubahan pada akses seperti pembaruan kata sandi atau mengubah metode (face-ID, sidik jari, pin, pola) dari yang asli dibuat saat akun dibuat dapat mempengaruhi pengalaman aplikasi Anda, kehilangan akses ke akun Anda. Jika Anda mengalami masalah, silakan hubungi "
+                        },
+                        {
+                          "url": "https://discord.com/channels/856694458388054026/1222398643210813550",
+                          "meta": [
+                            {
+                              "id": "target",
+                              "value": "_blank"
+                            }
+                          ],
+                          "type": "link",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "saluran dukungan"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "span",
+                          "value": "; kami akan menangani kasus Anda!"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 3,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Apa itu \"WebAuthN\"?"
+                    }
+                  ]
+                },
+                {
+                  "type": "blockquote",
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "WebAuthn adalah standar keamanan modern yang menyederhanakan masuk ke situs web tanpa perlu kata sandi. Ini memungkinkan pengguna menggunakan sidik jari, wajah, atau kunci keamanan untuk otentikasi, membuatnya lebih nyaman dan aman."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 3,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Mengapa penting untuk menjaga ponsel saya tetap aman?"
+                    }
+                  ]
+                },
+                {
+                  "type": "blockquote",
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Menjaga dan tidak kehilangan ponsel Anda tetap aman menggunakan aplikasi Bitcash Wallet penting karena perangkat yang hilang atau dicuri masih dapat menimbulkan risiko keamanan jika tidak diamankan dengan benar."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Dengan menggunakan aplikasi Bitcash Wallet, Anda memastikan bahwa meskipun ponsel Anda hilang atau dicuri, data yang disimpan di dalamnya tetap tidak dapat diakses tanpa informasi biometrik atau kunci keamanan Anda. Ini membantu melindungi privasi Anda dan mencegah pencurian identitas, namun, Anda akan kehilangan akses ke akun Anda karena akun Anda terhubung ke ponsel Anda dan proses pemulihan harus dimulai."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "kyc-step-frame-7",
+            "height": 1440,
+            "width": 1440,
+            "filename": "kyc-step-frame-7.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1715841141-kyc-step-frame-7.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Kami belajar cara mendaftar akun Bitcash, mengatur akun, mengidentifikasi perangkat, KYC, dan menunggu persetujuan serta bergabung dengan komunitas!",
+      "title": "Cara Mendaftar dan KYC ke Bitcash",
+      "twitterCard": "summary",
+      "image": {
+        "width": 1440,
+        "height": 1440,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1715831775-splash-edited.png"
+      }
+    }
+  },
+  "topics": [
+    "how_to"
+  ]
+}

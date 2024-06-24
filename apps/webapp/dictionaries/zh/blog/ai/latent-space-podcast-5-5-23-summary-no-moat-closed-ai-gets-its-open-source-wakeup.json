@@ -1,0 +1,1073 @@
+{
+  "relatedBlogs": [
+    {
+      "id": "190259319",
+      "topics": [
+        "摘要",
+        "LLM",
+        "训练"
+      ],
+      "title": "潜在空间播客 2023年8月16日 [摘要] - 训练LLM的数学 — 与Eleuther AI的Quentin Anthony",
+      "slug": "latent-space-podcast-8-16-23-summary-the-mathematics-of-training-llms-with-que",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:19:45+01:00",
+      "description": "与Eleuther AI的Quentin Anthony一起探索训练LLM背后的数学。深入了解《Transformers Math 101》文章并掌握分布式训练技术以实现GPU性能的峰值。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692324088-screenshot-2023-08-17-at-9-59-17-pm.png"
+      },
+      "seo": {
+        "title": "潜在空间播客 2023年8月16日 [摘要] 训练LLM的数学",
+        "description": "深入了解《Transformers Math 101》文章并掌握分布式训练技术以实现GPU性能的峰值。"
+      }
+    },
+    {
+      "id": "190259129",
+      "topics": [
+        "LLM",
+        "硬件",
+        "摘要",
+        "边缘"
+      ],
+      "title": "潜在空间播客 2023年8月10日 [摘要]：LLM无处不在：使用MLC在浏览器和iPhone上运行70B模型 — 与CMU / OctoML的Tianqi Chen",
+      "slug": "latent-space-podcast-8-10-23-summary-llms-everywhere-running-70b-models-in-browse",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:18:37+01:00",
+      "description": "与Tianqi Chen一起探索MLC的魔力：在浏览器和iPhone上部署70B模型。深入了解XGBoost、TVM的创建及通用AI部署的未来。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1691894611-screenshot-2023-08-12-at-10-42-43-pm.png"
+      },
+      "seo": {
+        "title": "潜在空间 2023年8月10日 [摘要]：LLM无处不在",
+        "description": "探索在浏览器和iPhone上部署70B模型。深入了解XGBoost、TVM的创建及通用AI部署的未来。"
+      }
+    },
+    {
+      "id": "190259087",
+      "topics": [
+        "摘要",
+        "LLM",
+        "代码",
+        "开源",
+        "小模型"
+      ],
+      "title": "潜在空间播客 2023年8月4日 [摘要] 潜在空间 x AI Breakdown 跨界播客！",
+      "slug": "latent-space-podcast-8-4-23-summary-latent-space-x-ai-breakdown-crossover-pod",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:16:33+01:00",
+      "description": "加入AI Breakdown & 潜在空间的夏季AI技术综述：深入了解GPT4.5、Llama 2、AI工具、崛起的AI工程师等！",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1691539617-screenshot-2023-08-08-at-8-02-52-pm.png"
+      },
+      "seo": {
+        "title": "潜在空间播客 2023年8月4日 [摘要] AI Breakdown 跨界",
+        "description": "深入了解GPT4.5、Llama 2、AI工具、崛起的AI工程师等！"
+      }
+    },
+    {
+      "id": "190259111",
+      "topics": [
+        "摘要",
+        "Transformers",
+        "训练",
+        "开源"
+      ],
+      "title": "潜在空间播客 2023年7月26日 [摘要] FlashAttention 2：使Transformers速度提高800% - Together AI的Tri Dao",
+      "slug": "latent-space-podcast-7-26-23-summary-flashattention-2-making-transformers-800-fas",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:14:13+01:00",
+      "description": "与Tri Dao一起发现FlashAttention如何通过FlashAttention 2的力量革新AI速度，深入了解斯坦福的Hazy Lab及未来的AI见解。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1691543194-screenshot-2023-08-08-at-8-43-59-pm.png"
+      },
+      "seo": {
+        "title": "潜在空间播客 2023年7月26日 [摘要] FlashAttention 2",
+        "description": "与Tri Dao一起发现FlashAttention如何通过FlashAttention 2的力量革新AI速度。"
+      }
+    },
+    {
+      "id": "190259172",
+      "topics": [
+        "摘要",
+        "LLM",
+        "开源",
+        "小模型"
+      ],
+      "title": "潜在空间播客 2023年7月19日 [摘要] - Llama 2：新的开放LLM SOTA（特邀Nathan Lambert、Matt Bornstein、Anton Troynikov、Russell Kaplan、Whole Mars Catalog等）",
+      "slug": "latent-space-podcast-7-19-23-summary-llama-2-the-new-open-llm-sota-ft-nathan-lamb",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:12:38+01:00",
+      "description": "与专家Nathan Lambert、Matt Bornstein等一起探索Llama 2，最新的AI突破。深入了解数据集、基准测试及AI预测。Llama的见解与戏剧在此顶级播客中等待着你！",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1691968295-screenshot-2023-08-13-at-7-11-06-pm.png"
+      },
+      "seo": {
+        "title": "潜在空间播客 2023年7月19日 [摘要] - Llama 2",
+        "description": "深入了解数据集、基准测试及AI预测。Llama的见解与戏剧在此顶级播客中等待着你！"
+      }
+    },
+    {
+      "id": "190259191",
+      "topics": [
+        "摘要",
+        "代码",
+        "LLM"
+      ],
+      "title": "潜在空间播客 2023年7月10日 [摘要] - 代码解释器 == GPT 4.5（与Simon Willison、Alex Volkov、Aravind Srinivas、Alex Graveley等）",
+      "slug": "latent-space-podcast-7-10-23-summary-code-interpreter-gpt-4-5-w-simon-willison-al",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:09:26+01:00",
+      "description": "探索ChatGPT的代码解释器：AI的游戏规则改变者。与Simon、Alex及顶级AI专家一起深入了解其1000倍能力提升。#代码增强推理 #GPT4_5",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692048911-screenshot-2023-08-14-at-3-34-05-pm.png"
+      },
+      "seo": {
+        "title": "潜在空间播客 [摘要] 代码解释器 = GPT 4.5",
+        "description": "探索ChatGPT的代码解释器：AI的游戏规则改变者。与Simon、Alex及顶级AI专家一起深入了解其1000倍能力提升。"
+      }
+    },
+    {
+      "id": "190259216",
+      "topics": [
+        "摘要",
+        "开源"
+      ],
+      "title": "潜在空间播客 2023年7月2日 [摘要] AI趋势：潜在空间 x Practical AI 跨界播客！",
+      "slug": "latent-space-podcast-7-2-23-summary-ai-trends-a-latent-space-x-practical-ai-cross",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:08:36+01:00",
+      "description": "探索Practical AI & 潜在空间的融合，深入探讨2023年的顶级AI趋势，回顾突出集及分享应对AI演变的见解。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692146916-screenshot-2023-08-15-at-5-20-38-pm.png"
+      },
+      "seo": {
+        "title": "潜在空间播客 2023年7月2日 [摘要] AI趋势",
+        "description": "2023年的顶级AI趋势，回顾突出集及分享应对AI演变的见解。"
+      }
+    },
+    {
+      "id": "190259238",
+      "topics": [
+        "硬件",
+        "LLM",
+        "摘要"
+      ],
+      "title": "潜在空间播客 2023年6月20日 [摘要] - 商品化Petaflop — 与tiny corp的George Hotz",
+      "slug": "latent-space-podcast-6-20-23-summary-commoditizing-the-petaflop-with-george-ho",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:07:15+01:00",
+      "description": "tiny corp的George Hotz挑战Nvidia和Google！深入了解AMD合作、ggml、Mojo、Elon和GPT-4的见解，以及AI女友的窥探。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692154615-screenshot-2023-08-15-at-10-55-40-pm.png"
+      },
+      "seo": {
+        "title": "潜在空间播客 2023年6月20日 [摘要] - George Hotz",
+        "description": "tiny corp的George Hotz挑战Nvidia和Google！AMD合作、ggml、Mojo、Elon和GPT-4的见解，以及AI女友的窥探。"
+      }
+    },
+    {
+      "id": "190259294",
+      "topics": [
+        "LLM",
+        "功能",
+        "摘要"
+      ],
+      "title": "潜在空间播客 2023年6月14日 [摘要] - 紧急播客：OpenAI的新功能API，75%价格下降，4倍上下文长度（与Alex Volkov、Simon Willison、Riley Goodside、Joshua Lochner、Stefania Druga、Eric Elliott、Mayo Oshin等）",
+      "slug": "latent-space-podcast-6-14-23-summary-emergency-pod-openai-s-new-functions-api-75",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:05:04+01:00",
+      "description": "与Scale、Microsoft、Pinecone和Huggingface的顶级AI工程师一起探索2023年6月的OpenAI更新。深入了解代码与LLM范式并发现递归函数代理。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692221668-screenshot-2023-08-16-at-5-32-29-pm.png"
+      },
+      "seo": {
+        "title": "潜在空间播客 2023年6月20日 [摘要] - 紧急播客",
+        "description": "与Scale、Microsoft、Pinecone和Huggingface的顶级AI工程师一起探索2023年6月的OpenAI更新。"
+      }
+    },
+    {
+      "id": "190259333",
+      "topics": [
+        "LLM",
+        "摘要",
+        "用户体验"
+      ],
+      "title": "潜在空间播客 2023年6月8日 [摘要] - 从RLHF到RLHB：学习人类行为的案例 - 与Amplitude的Jeffrey Wang和Joe Reeve",
+      "slug": "latent-space-podcast-6-8-23-summary-from-rlhf-to-rlhb-the-case-for-learning-from",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:02:33+01:00",
+      "description": "与Jeffrey Wang和Joe Reeve一起在潜在空间直播中探索AI和分析。深入了解为什么AI重视分析以及第一方行为数据的力量。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692386432-screenshot-2023-08-18-at-3-17-04-pm.png"
+      },
+      "seo": {
+        "title": "潜在空间播客 2023年6月8日 [摘要] - 从RLHF到RLHB",
+        "description": "与Jeffrey Wang和Joe Reeve一起在潜在空间直播中探索AI和分析。深入了解为什么AI重视分析以及第一方行为数据的力量。"
+      }
+    },
+    {
+      "id": "190260528",
+      "topics": [
+        "摘要",
+        "LLM",
+        "用户体验"
+      ],
+      "title": "潜在空间播客 2023年6月1日 [摘要] - 构建AI × UX Scenius — 与Notion AI的Linus Lee",
+      "slug": "latent-space-podcast-6-1-23-summary-building-the-ai-x-ux-scenius-with-linus-le",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:00:12+01:00",
+      "description": "探索Notion AI对AI和用户体验的变革性方法。深入了解AI增强工作空间的未来，超越聊天界面的价值，以及有效知识工作的见解。包括AI×UX NYC聚会的回顾！",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692390655-screenshot-2023-08-18-at-4-28-51-pm.png"
+      },
+      "seo": {
+        "title": "潜在空间播客 2023年6月1日 [摘要] - AI × UX Scenius",
+        "description": "探索Notion AI对AI和用户体验的变革性方法。"
+      }
+    },
+    {
+      "id": "190260557",
+      "topics": [
+        "摘要",
+        "代码",
+        "LLM",
+        "代理"
+      ],
+      "title": "潜在空间播客 2023年5月25日 [摘要] - 使用AI代理调试互联网 – 与Codium AI和AutoGPT的Itamar Friedman",
+      "slug": "latent-space-podcast-5-25-23-summary-debugging-the-internet-with-ai-agents-with",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:58:27+01:00",
+      "description": "与Codium AI的Itamar Friedman一起探索AI的未来，讨论“极端DRY”代理、规范和测试的快速同步以及代码与测试之间的平衡。还有来自Toran的见解及AutoGPT路线图的独家预览！",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692397413-screenshot-2023-08-18-at-6-10-09-pm.png"
+      },
+      "seo": {
+        "title": "潜在空间播客 2023年5月25日 [摘要] 调试互联网",
+        "description": "讨论“极端DRY”代理、规范和测试的快速同步以及代码与测试之间的平衡。"
+      }
+    },
+    {
+      "id": "190260577",
+      "topics": [
+        "LLM",
+        "小模型"
+      ],
+      "title": "潜在空间播客 2023年5月20日 [摘要] - MPT-7B和Context=Infinity的开始 — 与MosaicML的Jonathan Frankle和Abhinav Venigalla",
+      "slug": "latent-space-podcast-5-20-23-summary-mpt-7b-and-the-beginning-of-context-infinity",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:57:33+01:00",
+      "description": "深入了解MosaicML的9天、20万美元的“llongboi”MPT-7B训练、数据准备见解及开放AI模型的兴起，与专家Frankle和Venigalla一起。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692409795-screenshot-2023-08-18-at-9-49-21-pm.png"
+      },
+      "seo": {
+        "title": "潜在空间播客 2023年6月25日 [摘要] MosaicML",
+        "description": "深入了解MosaicML的9天、20万美元的“llongboi”MPT-7B训练、数据准备见解及开放AI模型的兴起。"
+      }
+    },
+    {
+      "id": "190260597",
+      "topics": [
+        "LLM",
+        "结构化数据"
+      ],
+      "title": "潜在空间播客 2023年5月15日 [摘要] - 保证LLM输出的质量和结构 - 与Guardrails AI的Shreya Rajpal",
+      "slug": "latent-space-podcast-5-15-23-summary-guaranteed-quality-and-structure-in-llm-outp",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:56:26+01:00",
+      "description": "与Guardrails AI的Shreya Rajpal一起探索第12集：深入了解验证LLM输出、通过重新提问循环优化答案及为模型建立SLA。掌握AI质量保证的细微差别。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692495732-screenshot-2023-08-19-at-9-38-27-pm.png"
+      },
+      "seo": {
+        "title": "潜在空间播客 2023年5月15日 [摘要] 质量LLM输出",
+        "description": "与Guardrails AI的Shreya Rajpal一起探索第12集：深入了解验证LLM输出。"
+      }
+    },
+    {
+      "id": "190260606",
+      "topics": [
+        "LLM",
+        "训练",
+        "代理",
+        "多模态"
+      ],
+      "title": "潜在空间播客 2023年5月8日 [摘要] - AI创始基因：早期、快速构建和相信伟大 — 与Lexica的Sharif Shameem",
+      "slug": "latent-space-podcast-5-8-23-summary-the-ai-founder-gene-being-early-building-fast",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:52:09+01:00",
+      "description": "第11集与Lexica的Sharif Shameem：深入了解AI创始人的心态，揭示开创性创新的秘密、构建改变游戏规则的技术、训练模型及代理和基因测序的有趣潜力。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692501984-screenshot-2023-08-19-at-11-24-05-pm.png"
+      },
+      "seo": {
+        "title": "潜在空间播客 2023年5月8日 [摘要] AI创始基因",
+        "description": "第11集与Lexica的Sharif Shameem：深入了解AI创始人的心态，揭示开创性创新的秘密。"
+      }
+    },
+    {
+      "id": "190260671",
+      "topics": [
+        "LLM",
+        "代码",
+        "摘要"
+      ],
+      "title": "潜在空间播客 2023年5月3日 [摘要] - 在1周内训练SOTA代码LLM并量化氛围 — 与Replit的Reza Shabani",
+      "slug": "latent-space-podcast-5-3-23-summary-training-a-sota-code-llm-in-1-week-and-quanti",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:46:08+01:00",
+      "description": "第10集与Replit的Reza Shabani：深入了解快速训练的最先进代码LLM，探索Replit Ghostwriter的未来，并从金融到AI的旅程。发现从Kaplan到Chinchilla的转变及更多！",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692584998-screenshot-2023-08-20-at-10-17-26-pm.png"
+      },
+      "seo": {
+        "title": "潜在空间播客 2023年5月3日 [摘要] - SOTA代码LLM",
+        "description": "第10集与Replit的Reza Shabani：深入了解快速训练的最先进代码LLM！"
+      }
+    },
+    {
+      "id": "190629271",
+      "topics": [
+        "LLM",
+        "小模型",
+        "摘要"
+      ],
+      "title": "潜在空间播客 2023年4月28日 [摘要] - 绘制真正开放模型的未来并以30美元训练Dolly — 与Databricks的Mike Conover",
+      "slug": "latent-space-podcast-4-28-23-summary-mapping-the-future-of-truly-open-models-and",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:33:12+01:00",
+      "description": "与Databricks的Mike Conover一起探索开放模型的未来。深入了解Dolly的创建、从1.0到2.0的过渡及其开发背后的影响。第9集涉及模型基础设施、Databricks的愿景等。#AI #开放模型 #Dolly",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1694038707-screenshot-2023-09-06-at-3-12-24-pm.png"
+      },
+      "seo": {
+        "title": "潜在空间播客 2023年4月28日 [摘要] - Mike of Databricks",
+        "description": "第9集涉及模型基础设施、Databricks的愿景等。#AI #开放模型 #Dolly"
+      }
+    },
+    {
+      "id": "191164291",
+      "topics": [
+        "LLM",
+        "企业",
+        "摘要"
+      ],
+      "title": "潜在空间播客 2023年4月21日 [摘要] - 企业的AI驱动搜索 — 与Glean的Deedy Das",
+      "slug": "latent-space-podcast-4-21-23-summary-ai-powered-search-for-the-enterprise-with",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:31:31+01:00",
+      "description": "第8集：与Glean的Deedy Das一起深入探讨企业搜索中的AI。解开创建AI搜索巨头的挑战、Google与ChatGPT的比较、AI基础设施的复杂性、识别AI生成文本及企业为何需要的不仅仅是文档QA。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1694134074-screenshot-2023-09-07-at-5-43-48-pm.png"
+      },
+      "seo": {
+        "title": "潜在空间播客 2023年4月21日 [摘要] - 与Deedy Das",
+        "description": "第8集：与Glean的Deedy Das一起深入探讨企业搜索中的AI。解开创建AI搜索巨头的挑战、Google与ChatGPT的比较..."
+      }
+    },
+    {
+      "id": "191165673",
+      "topics": [
+        "摘要",
+        "视觉"
+      ],
+      "title": "潜在空间播客 2023年4月13日 [摘要] - Segment Anything模型和计算机视觉的难题 — 与Roboflow的Joseph Nelson",
+      "slug": "latent-space-podcast-4-13-23-summary-segment-anything-model-and-the-hard-problems",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:30:03+01:00",
+      "description": "与Joseph Nelson一起探索第7集，讨论Meta的Segment Anything模型。深入了解计算机视觉的未来、OCR的重要性、图像分割等。#Roboflow #AI",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1694150379-screenshot-2023-09-07-at-10-15-52-pm.png"
+      },
+      "seo": {
+        "title": "潜在空间播客 2023年4月13日 [摘要] - Segment Anything",
+        "description": "深入了解计算机视觉的未来、OCR的重要性、图像分割等。#Roboflow #AI"
+      }
+    }
+  ],
+  "blogContent": {
+    "id": "190260640",
+    "topics": [
+      "总结",
+      "开源",
+      "LLM"
+    ],
+    "title": "潜在空间播客 2023年5月5日 [总结] - 无护城河：封闭的AI迎来开源觉醒 — 特邀 Simon Willison",
+    "slug": "latent-space-podcast-5-5-23-summary-no-moat-closed-ai-gets-its-open-source-wakeup",
+    "authorName": "Prof. Otto Nomos",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+    },
+    "_publishedAt": "2023-10-05T08:49:18+01:00",
+    "description": "探索 Simon Willison 的《无护城河：封闭AI的开源觉醒》。深入了解泄露的谷歌护城河备忘录见解、谷歌人才流失和Python的Mojo加速。",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1692566921-screenshot-2023-08-20-at-5-25-53-pm.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "原始链接：无护城河："
+                    },
+                    {
+                      "url": "https://www.latent.space/p/no-moat#details",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "封闭的AI迎来开源觉醒 — 特邀 Simon Willison"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "总结"
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 3,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "开源AI模型挑战科技巨头"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "\n谷歌备忘录与开源崛起"
+                    },
+                    {
+                      "type": "span",
+                      "value": " Simon Willison 强调了一份题为《我们没有护城河，OpenAI 也没有》的泄露备忘录，表明尽管谷歌和 OpenAI 正在构建更大的语言模型，开源项目正在迅速赶上。他提到了 Facebook 的 Lama 作为一个里程碑，以及斯坦福的 Alpaca 作为一个重大改进。备忘录反对认为更大的模型意味着更强大的观点，反而建议更小、更灵活的模型可能是未来。备忘录中分析的高质量和丰富性得到了强调。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "开源与封闭系统"
+                    },
+                    {
+                      "type": "span",
+                      "value": " swyx 评论说，传统上，叙述是开源会落后于封闭系统，因为封闭系统可以从开源中采用。然而，这份备忘录表明现在情况正好相反，开源正在超越封闭模型。Travis Fischer 也表达了同样的观点，指出 AI 进步的快速步伐只能通过开源来匹配。他质疑当模型变得商品化时的真正竞争优势，以及像谷歌这样的公司如何在不妥协其市场地位的情况下与开源互动。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "基础设施和实用性"
+                    },
+                    {
+                      "type": "span",
+                      "value": " Alessio Fanelli 认为，虽然构建最佳模型至关重要，但同样重要的是考虑运行这些模型的基础设施。尽管许多开源工具是免费提供的，但运行它们所需的成本和专业知识可能对许多人来说是难以承受的。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "在设备上运行模型"
+                    },
+                    {
+                      "type": "span",
+                      "value": " Simon 讨论了当前模型的能力，特别是它们如何在个人设备上运行。他以从 Facebook 的 Lama 派生的 Vicuna 13B 为例，作为直接在浏览器中运行的模型。他还提到了压缩这些模型的新兴技术，使它们对日常设备更加可访问。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "谷歌护城河与未来方向"
+                    },
+                    {
+                      "type": "span",
+                      "value": " swyx 提出了一个关于谷歌明显恐慌的问题，考虑到他们拥有庞大的资源和现有的用户基础，如谷歌日历、文档等。他想知道，鉴于这些优势，为什么谷歌对开源AI的进展感到紧迫。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "在整个讨论中，潜在的主题是封闭系统与快速发展的开源世界在AI中的动态变化。开源取得的快速进展、模型的“可安装”能力的可能性以及谷歌在这一变化中的地位都进行了辩论。"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "screenshot-2023-08-20-at-5-25-53-pm",
+            "height": 532,
+            "width": 1602,
+            "filename": "screenshot-2023-08-20-at-5-25-53-pm.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692566921-screenshot-2023-08-20-at-5-25-53-pm.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "AI的竞争格局：人才流失、数据循环和LoRA的承诺"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Travis Fischer 提到像谷歌这样的公司面临的一个重大挑战：留住顶尖人才。当人们认为他们在进步方面落后时，他们最好的研究人员可能会考虑其他机会，如 OpenAI 或学术机构。然而，Fischer 认为，谷歌拥有庞大的资源，不应被低估，并有可能重新获得动力。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Alessio Fanelli 强调了高质量数据的重要性。虽然谷歌拥有其平台上的大量数据，但初创公司面临着积累足够高质量数据以竞争的艰巨任务。关键不是拥有最多的数据，而是拥有正确类型的数据。这就是第一方数据循环变得至关重要的地方。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Simon Willison 和 swyx 讨论了基于公开数据训练的开源模型的出现，减少了对大规模专有数据集的依赖。他们深入探讨了 LoRA（低秩适应）的概念，这是一种冻结模型一部分并仅训练较小部分的技术，节省了计算成本和时间。然而，这些 LoRA 与特定模型版本相关，提出了兼容性和不断重新训练基础模型的相关性问题。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "总之，AI 领域正在迅速发展，重点从数据和模型的规模转向模型的质量和适应性。哪些策略在长期内最成功还有待观察。"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "abls16-img2",
+            "height": 930,
+            "width": 930,
+            "filename": "abls16-img2.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692568229-abls16-img2.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "优化AI模型和语言超集的力量"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "优化模型"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Simon Willison 和 Travis Fischer 讨论了无需外部API调用即可直接在设备上运行的专用AI模型的需求，特别是在战斗机等精度和速度至关重要的关键环境中。在这种情况下，毫秒级的差异可能会产生影响，使用外部API是不可行的。"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Mojo - 下一个大编程语言"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Simon 介绍了“Mojo”，一种新宣布的编程语言，作为Python的超集，这意味着任何Python代码都可以在Mojo中运行。然而，Mojo引入了允许高度优化代码的功能。Mojo的独特之处在于它能够显著提高现有Python代码的性能，演示中矩阵乘法性能提高了2000倍。该语言由Chris Lattner设计，他曾参与创建LLVM和Swift等重要计算产品。"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "语言超集的潜力"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": swyx 提出了语言超集及其变革潜力的概念。他对为什么在现有语言超集概念的基础上没有更早构思出Mojo感到好奇。Simon解释说，Mojo建立在一个名为MLIR的平台上，这是Lattner的另一个项目，优化了多核和GPU访问。这为Mojo提供了一个强大的基础。能够在熟悉的生态系统（如Python）中提高性能被认为是其突出特点。"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "谷歌和AI战略"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 讨论转向AI领域的战略举措。有迹象表明Facebook可能会正式发布Lama权重，这一重要发展可能会影响AI格局。"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "总体讨论触及了AI优化的重要性、Mojo编程语言的引入及其潜力，以及科技巨头在AI领域的战略举措。"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "abls16-img3",
+            "height": 930,
+            "width": 930,
+            "filename": "abls16-img3.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692568243-abls16-img3.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "谷歌与AI格局"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "谷歌泄密确认"
+                    },
+                    {
+                      "type": "span",
+                      "value": ": Simon Willison 透露，内部人士已确认泄露的谷歌文件的真实性。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "谷歌广告模式面临风险"
+                    },
+                    {
+                      "type": "span",
+                      "value": ": Simon 和 swyx 讨论了 ChatGPT 和其他不投放广告的聊天机器人如何对谷歌的广告驱动收入模式构成威胁。他们还谈到了支持广告的聊天模型的未来，如带有广告的Bing原型。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "AI安全问题"
+                    },
+                    {
+                      "type": "span",
+                      "value": ":"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Simon 区分了AI的“科幻”问题，如它对人类的反叛，与AI被滥用于诈骗等即时威胁。他特别强调了AI支持的浪漫诈骗的风险。"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "讨论暗示了关键行业人物对AI安全的潜在不安。"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "swyx 建议 Simon 可以记录今天AI带来的真实、非科幻威胁。"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "提示注入"
+                    },
+                    {
+                      "type": "span",
+                      "value": ": Simon 表达了对当前AI风险的担忧，即系统可能被攻击者轻易操纵。swyx 幽默地建议人们可能会开始在他们的简历中加入“提示注入”以检测AI抓取。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "谷歌与OpenAI"
+                    },
+                    {
+                      "type": "span",
+                      "value": ": 文件表明谷歌内部可能对AI竞争存在担忧。swyx 认为该文件提供了谷歌内部情绪的一瞥。讨论还触及了OpenAI尽管有创新，但缺乏可持续竞争优势或“护城河”的说法。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "讨论以Travis Fischer对大型语言模型最终商品化的观点结束，他同意文件对OpenAI长期优势不确定性的看法。"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "abls16-img1",
+            "height": 930,
+            "width": 930,
+            "filename": "abls16-img1.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692568257-abls16-img1.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "AI创新与担忧：与 Simon Willison 和 Travis Fischer 的对话"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Simon Willison 讨论了 Chat GPT 的能力对他开源项目“datasets”构成的挑战，该项目可以执行他为项目未来计划的许多任务。尽管如此，他强调了数据和AI的日益融合，并推广了他的博客 simonwillis.net 和他的新闻通讯，更新AI进展。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Travis Fischer 宣布成立他的新公司，旨在开发一个框架，用于为特定用例创建可靠的AI代理。他将更广泛的AI项目比作自动驾驶汽车的复杂性，并提到他希望从基础的、可靠的原语开始构建。此外，他提到了他的 Chat PT Twitter 机器人取得的成功，该机器人拥有超过125,000名粉丝，并在短暂的品牌更改后得到了OpenAI的赞助。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "讨论以 swyx 强调AI使用和版权边界的变化，并对贡献者和观众的参与表示感谢而结束。"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "abls16-img4",
+            "height": 930,
+            "width": 930,
+            "filename": "abls16-img4.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692568279-abls16-img4.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "探索 Simon Willison 的《无护城河：封闭AI的开源觉醒》。深入了解泄露的谷歌护城河备忘录见解。",
+      "title": "潜在空间播客 2023年5月5日 [总结] - 无护城河",
+      "twitterCard": null,
+      "image": {
+        "width": 1602,
+        "height": 532,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1692566921-screenshot-2023-08-20-at-5-25-53-pm.png"
+      }
+    }
+  },
+  "topics": [
+    "Summary",
+    "Open Source",
+    "LLM"
+  ]
+}

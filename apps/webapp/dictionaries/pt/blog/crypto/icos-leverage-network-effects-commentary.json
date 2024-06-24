@@ -1,0 +1,301 @@
+{
+  "relatedBlogs": [
+    {
+      "id": "180556595",
+      "topics": [
+        "Captacao de Recursos",
+        "Tokenomics",
+        "Comentario"
+      ],
+      "title": "O Efeito Blockchain: Efeitos de Rede sem Custos de Poder de Mercado [Comentario]",
+      "slug": "the-blockchain-effect-network-effects-without-market-power-costs-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:11:14+01:00",
+      "description": "Explore como o blockchain possibilita efeitos de rede sem as desvantagens do poder de mercado. Descubra o revolucionario Efeito Blockchain.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690855275-cbc4-img1.png"
+      },
+      "seo": {
+        "title": "Efeitos de Rede sem Custos de Poder de Mercado [Comentario]",
+        "description": "Explore como o blockchain possibilita efeitos de rede sem as desvantagens do poder de mercado. Descubra o revolucionario Efeito Blockchain."
+      }
+    }
+  ],
+  "blogContent": {
+    "id": "180563922",
+    "topics": [
+      "Arrecadação de Fundos",
+      "Tokenomics",
+      "Comentário"
+    ],
+    "title": "ICOs Aproveitam Efeitos de Rede [Comentário]",
+    "slug": "icos-leverage-network-effects-commentary",
+    "authorName": "Crypto Clairity",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+    },
+    "_publishedAt": "2023-10-05T09:12:06+01:00",
+    "description": "Descubra como os ICOs utilizam o poder dos efeitos de rede para impulsionar seu sucesso. ICOs e efeitos de rede, uma dupla dinâmica!",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1690860184-cbc9-img1.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Link Original: "
+                    },
+                    {
+                      "url": "https://medium.com/mit-cryptoeconomics-lab/icos-leverage-network-effects-962c617e3063?source=user_profile---------6----------------------------",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noopener follow"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "ICOs Aproveitam Efeitos de Rede"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Autor: "
+                    },
+                    {
+                      "url": "https://medium.com/@cathybarreraphd?source=post_page-----962c617e3063--------------------------------",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noopener follow"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Cathy Barrera, PhD"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Resumo & Comentário"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "A pesquisa de Catalini e Gans em 'Ofertas Iniciais de Moedas e o Valor dos Tokens Cripto' fornece uma estrutura comparativa entre as vendas de tokens (ICOs) e as vendas de equity tradicionais como mecanismo de arrecadação de fundos. Um destaque que eles enfatizam é a capacidade de um ICO de aproveitar os efeitos de rede, que podem aumentar a taxa de sucesso do evento de arrecadação."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Um ICO pode ajudar a demonstrar a demanda do produto devido à ligação direta entre as compras de tokens (que permitem acesso ao produto) e o interesse do consumidor. Isso é diferente das vendas de equity, onde a relação entre possuir uma parte da empresa e a demanda pelo produto não é tão aparente."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Eles inferem que em situações com efeitos de rede e demanda incerta, uma venda de tokens pode publicizar uma forte demanda, permitindo que projetos avancem, o que talvez não ocorresse devido à falta de informações públicas. Observar uma venda de tokens bem-sucedida pode incentivar usuários potenciais a adotar a plataforma, desde que percebam que a base de usuários é suficientemente grande."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "No entanto, esse papel informativo de um ICO pode ser comprometido se o investimento especulativo sobrecarregar a participação dos futuros usuários da plataforma. Se todos os compradores de tokens forem especuladores em vez de futuros usuários, a demanda pré-lançamento do token pode não refletir a demanda real pela plataforma ou produto. Portanto, estratégias que desencorajam especuladores (como períodos de bloqueio, vendas sem limite e janelas de venda mais longas) poderiam aumentar a confiabilidade da venda de tokens."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Apesar disso, desencorajar a especulação poderia reduzir o pool de financiamento potencial. Assim, as startups devem equilibrar o impulsionamento dos efeitos de rede para o sucesso futuro da plataforma com a captação de fundos mais imediatos."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Com base nessas percepções, aqui estão algumas dicas práticas:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Mostrar Demanda do Produto:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " Aproveite os ICOs para demonstrar a demanda do produto. Incentive as compras de tokens enfatizando seu papel em obter acesso ao seu produto ou serviço."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Aproveitar Efeitos de Rede:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " Destaque vendas de tokens bem-sucedidas para convencer usuários potenciais de que sua plataforma possui uma base de usuários suficiente e vale a pena adotar."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Desencorajar Especuladores:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " Implemente estratégias que desencorajem especuladores em favor dos consumidores. Isso pode incluir períodos de bloqueio, vendas sem limite e janelas de venda mais longas. Essas estratégias podem aumentar a informatividade da venda de tokens e melhor sinalizar o valor da sua plataforma para futuros usuários."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Definir Prioridades:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " As startups devem indicar suas prioridades selecionando estratégias de venda de tokens apropriadas. Isso pode ajudar os investidores potenciais a entender o foco da startup—seja em atrair futuros usuários da plataforma ou em arrecadar fundos imediatos."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Lembre-se, embora os ICOs possam aproveitar os efeitos de rede e mostrar demanda, seu sucesso é significativamente influenciado pelas estratégias da startup e pelo equilíbrio entre usuários futuros potenciais e especuladores."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "cbc9-img1",
+            "height": 862,
+            "width": 862,
+            "filename": "cbc9-img1.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1690860184-cbc9-img1.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Descubra como os ICOs utilizam o poder dos efeitos de rede para impulsionar seu sucesso. ICOs e efeitos de rede, uma dupla dinâmica!",
+      "title": "ICOs Aproveitam Efeitos de Rede [Comentário]",
+      "twitterCard": null,
+      "image": {
+        "width": 862,
+        "height": 862,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1690860184-cbc9-img1.png"
+      }
+    }
+  },
+  "topics": [
+    "Fundraising",
+    "Tokenomics",
+    "Commentary"
+  ]
+}

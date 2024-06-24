@@ -1,0 +1,321 @@
+{
+  "relatedBlogs": [
+    {
+      "id": "167184977",
+      "topics": [
+        "Tokenomics",
+        "DAO",
+        "Gây quỹ"
+      ],
+      "title": "Cách mạng hóa Mô hình Cổ phần: Tokenomics làm thay đổi thế giới khởi nghiệp",
+      "slug": "revolutionizing-the-equity-model-how-tokenomics-is-disrupting-the-startup-world",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:02:51+01:00",
+      "description": "Mở khóa tương lai của các startup với tokenomics! Khám phá cách khái niệm sáng tạo này đang tái cấu trúc mô hình cổ phần và làm thay đổi bức tranh khởi nghiệp.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1687395688-tb2-img1.png"
+      },
+      "seo": {
+        "title": "Tokenomics làm thay đổi thế giới khởi nghiệp",
+        "description": "Khám phá cách khái niệm sáng tạo này đang tái cấu trúc mô hình cổ phần và làm thay đổi bức tranh khởi nghiệp."
+      }
+    },
+    {
+      "id": "166981063",
+      "topics": [
+        "Bắt đầu",
+        "DAO"
+      ],
+      "title": "Tương lai đã đến: Sự trỗi dậy của các Tổ chức Tự trị Phi tập trung (DAOs)",
+      "slug": "the-future-is-here-the-rise-of-decentralized-autonomous-organizations-daos",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T08:57:02+01:00",
+      "description": "Khám phá sự trỗi dậy của các Tổ chức Tự trị Phi tập trung (DAOs) trong hướng dẫn của chúng tôi. Hiểu về tương lai của doanh nghiệp và các cơ hội dành cho các startup.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1687381524-db1-img1.png"
+      },
+      "seo": {
+        "title": "Sự trỗi dậy của các Tổ chức Tự trị Phi tập trung",
+        "description": "Khám phá sự trỗi dậy của các Tổ chức Tự trị Phi tập trung (DAOs) trong hướng dẫn của chúng tôi. Hiểu về tương lai của doanh nghiệp và các cơ hội dành cho các startup."
+      }
+    }
+  ],
+  "blogContent": {
+    "id": "180563903",
+    "topics": [
+      "DAO",
+      "Tóm tắt"
+    ],
+    "title": "Mục đích của việc bỏ phiếu là gì? [Tóm tắt]",
+    "slug": "what-is-voting-for-summary",
+    "authorName": "Crypto Clairity",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+    },
+    "_publishedAt": "2023-10-05T09:10:58+01:00",
+    "description": "Khám phá bản chất của việc bỏ phiếu trong các hệ thống phi tập trung. Hiểu sâu hơn về mục đích và quyền lực thực sự của việc bỏ phiếu trong blockchain.",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1690859305-cbc6-img1.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Liên kết gốc: "
+                    },
+                    {
+                      "url": "https://medium.com/prysmeconomics/what-is-voting-for-6e733a1d2bc9",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Mục đích của việc bỏ phiếu là gì?"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "https://medium.com/@cathybarreraphd?source=post_page-----6e733a1d2bc9--------------------------------",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noopener follow"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "\n"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": "Tác giả: "
+                    },
+                    {
+                      "url": "https://medium.com/@cathybarreraphd?source=post_page-----6e733a1d2bc9--------------------------------",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noopener follow"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Cathy Barrera, Tiến sĩ"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tóm tắt"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Việc liệu một hệ thống bỏ phiếu trên nền tảng blockchain có được thiết kế tốt hay không phụ thuộc vào các yếu tố như bối cảnh bỏ phiếu, mục đích của nó (sở thích cá nhân hay thông tin), và mục tiêu tổng thể của hệ thống. Việc bỏ phiếu là cần thiết khi các thành viên trong nhóm có sở thích khác nhau đối với kết quả liên quan đến họ (bỏ phiếu theo sở thích), và khi có sở thích chung nhưng vẫn không chắc chắn về lựa chọn dẫn đến kết quả đúng (bỏ phiếu theo thông tin)."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Đối với việc bỏ phiếu theo sở thích, hãy nghĩ đến một nhóm bạn bè quyết định chọn nhà hàng. Mỗi phiếu bầu được tính bằng nhau vì sở thích của mọi người được coi trọng. Trong trường hợp này, mục tiêu là đạt được sự đồng thuận thông qua một hệ thống công bằng mà hợp nhất các sở thích khác nhau thành một lựa chọn duy nhất, thúc đẩy sự gắn kết nhóm."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Ngược lại, việc bỏ phiếu theo thông tin là về việc đưa ra quyết định đúng khi có một mục tiêu chung nhưng thông tin không chắc chắn, như trong một phiên tòa bồi thẩm. Ở đây, mục tiêu là tổng hợp thông tin từ nhóm để đưa ra quyết định thông tin và chính xác hơn."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Việc thiết kế hệ thống bỏ phiếu do đó đòi hỏi phải cân nhắc kỹ lưỡng:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Loại phiếu bầu: Là dựa trên sở thích hay thông tin?"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Người tham gia: Ai nên bỏ phiếu? Là tất cả mọi người tham gia hay chỉ một nhóm được chọn?"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Ngưỡng: Yêu cầu tối thiểu cho một quyết định là gì?"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Khả năng tiếp cận thông tin: Người bỏ phiếu cần thông tin gì và thiết kế làm thế nào để đảm bảo họ nhận được nó?"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Đề xuất phiếu bầu: Các lựa chọn nên được đề xuất và bao gồm trong phiếu bầu như thế nào?"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Với các hệ thống bỏ phiếu blockchain, chức năng hợp đồng thông minh có thể được tận dụng để tự động hóa nhiều khía cạnh này, chẳng hạn như thiết lập ngưỡng bỏ phiếu, đảm bảo người tham gia có thông tin cần thiết, và bảo mật quá trình bỏ phiếu. Các công ty khởi nghiệp cũng có thể sử dụng các danh mục được điều chỉnh bằng token để khuyến khích người dùng lựa chọn và duy trì các danh sách đáng tin cậy, chính xác và được cộng đồng đánh giá cao, từ đó thúc đẩy quá trình ra quyết định."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Hơn nữa, các hệ thống bỏ phiếu phi tập trung trên các nền tảng blockchain có thể cho phép nhiều tính minh bạch, an toàn hơn và có thể thúc đẩy một quá trình dân chủ hơn nơi mọi tiếng nói của các bên liên quan được lắng nghe, dẫn đến một cơ chế đồng thuận công bằng và bao trùm hơn."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tuy nhiên, điều quan trọng là phải nhớ rằng blockchain không phải là giải pháp cho mọi vấn đề. Việc thiết kế hệ thống bỏ phiếu phù hợp vẫn là điều cần thiết. Blockchain chỉ cung cấp một nền tảng nơi các hệ thống này có thể được triển khai với tính minh bạch và bất biến cao hơn."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tóm lại, khi thiết kế hoặc đánh giá một hệ thống bỏ phiếu, điều quan trọng là phải đảm bảo rằng nó phù hợp với bối cảnh và mục tiêu của quá trình ra quyết định, tính đến sự đa dạng của sở thích và sự không chắc chắn của thông tin, và cung cấp một quá trình công bằng và minh bạch mà xem xét mọi phiếu bầu có liên quan."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "cbc6-img1",
+            "height": 862,
+            "width": 862,
+            "filename": "cbc6-img1.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1690859305-cbc6-img1.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Khám phá bản chất của việc bỏ phiếu trong các hệ thống phi tập trung. Hiểu sâu hơn về mục đích và quyền lực thực sự của việc bỏ phiếu trong blockchain.",
+      "title": "Mục đích của việc bỏ phiếu là gì? [Tóm tắt]",
+      "twitterCard": null,
+      "image": {
+        "width": 862,
+        "height": 862,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1690859305-cbc6-img1.png"
+      }
+    }
+  },
+  "topics": [
+    "DAO",
+    "Summary"
+  ]
+}

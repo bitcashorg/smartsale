@@ -1,0 +1,884 @@
+{
+  "relatedBlogs": [
+    {
+      "id": "198277124",
+      "topics": [
+        "LLM",
+        "Tài chính",
+        "Chăm sóc sức khỏe",
+        "Pháp lý",
+        "Đề xuất"
+      ],
+      "title": "Thích ứng Mô hình Ngôn ngữ Lớn thông qua Đọc hiểu",
+      "slug": "adapting-large-language-models-via-reading-comprehension",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-27T03:34:22+01:00",
+      "description": "Bình luận & Đánh giá Tóm tắt",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Thích ứng Mô hình Ngôn ngữ Lớn thông qua Đọc hiểu",
+        "description": "Bình luận & Đánh giá Tóm tắt"
+      }
+    },
+    {
+      "id": "198277342",
+      "topics": [
+        "LLM",
+        "Đa ngôn ngữ"
+      ],
+      "title": "OpenBA: Mô hình seq2seq Đối xứng Song ngữ 15B Mở nguồn được Tiền huấn luyện từ đầu",
+      "slug": "openba-an-open-sourced-15b-bilingual-asymmetric-seq2seq-model-pre-trained-from-sc",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-27T03:34:02+01:00",
+      "description": "Bình luận & Đánh giá Tóm tắt",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "OpenBA: Mô hình ... Song ngữ 15B ...",
+        "description": "Bình luận & Đánh giá Tóm tắt"
+      }
+    },
+    {
+      "id": "198277117",
+      "topics": [
+        "LLM",
+        "Truy xuất"
+      ],
+      "title": "PDFTriage: Trả lời Câu hỏi trên Tài liệu Dài, Có cấu trúc",
+      "slug": "pdftriage-question-answering-over-long-structured-documents",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-27T03:33:49+01:00",
+      "description": "Bình luận & Đánh giá Tóm tắt",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "PDFTriage: Hỏi & Đáp trên Tài liệu Dài, Có cấu trúc",
+        "description": "Bình luận & Đánh giá Tóm tắt"
+      }
+    },
+    {
+      "id": "198277138",
+      "topics": [
+        "LLM",
+        "Tinh chỉnh"
+      ],
+      "title": "Sorted LLaMA: Khai thác Tiềm năng của các Lớp Trung gian của Mô hình Ngôn ngữ Lớn cho Suy luận Động bằng cách Sử dụng Tinh chỉnh Đã sắp xếp (SoFT)",
+      "slug": "sorted-llama-unlocking-the-potential-of-intermediate-layers-of-large-language-mod",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-27T03:33:31+01:00",
+      "description": "Bình luận & Đánh giá Tóm tắt",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Sorted LLaMA: ... Suy luận Sử dụng Tinh chỉnh Đã sắp xếp (SoFT)",
+        "description": "Bình luận & Đánh giá Tóm tắt"
+      }
+    },
+    {
+      "id": "198277150",
+      "topics": [
+        "LLM",
+        "Chỉ đạo Hướng dẫn",
+        "Đa phương tiện"
+      ],
+      "title": "Nghiên cứu Thực nghiệm về Việc Mở rộng Mô hình Đa phương tiện Lớn Được Chỉ đạo bởi Hướng dẫn",
+      "slug": "an-empirical-study-of-scaling-instruct-tuned-large-multimodal-models",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-27T03:33:15+01:00",
+      "description": "Bình luận & Đánh giá Tóm tắt",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Nghiên cứu Thực nghiệm về Việc Mở rộng Mô hình LLM Được Chỉ đạo bởi Hướng dẫn",
+        "description": "Bình luận & Đánh giá Tóm tắt"
+      }
+    },
+    {
+      "id": "198277217",
+      "topics": [
+        "LLM",
+        "Quyền riêng tư",
+        "Biên"
+      ],
+      "title": "Phục hồi từ Che giấu Bảo mật với Mô hình Ngôn ngữ Lớn",
+      "slug": "recovering-from-privacy-preserving-masking-with-large-language-models",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-25T03:38:26+01:00",
+      "description": "Bình luận & Đánh giá Tóm tắt",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Phục hồi từ Che giấu Bảo mật với LLMs",
+        "description": "Bình luận & Đánh giá Tóm tắt"
+      }
+    },
+    {
+      "id": "198277239",
+      "topics": [
+        "LLM",
+        "Trò chuyện"
+      ],
+      "title": "S3-DST: Phân đoạn và Theo dõi Trạng thái Đối thoại Miền Mở có Cấu trúc trong Kỷ nguyên của LLMs",
+      "slug": "s3-dst-structured-open-domain-dialogue-segmentation-and-state-tracking-in-the-era",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-25T03:38:11+01:00",
+      "description": "Bình luận & Đánh giá Tóm tắt",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "S3-DST: Phân đoạn Đối thoại Miền Mở có Cấu trúc...",
+        "description": "Bình luận & Đánh giá Tóm tắt"
+      }
+    },
+    {
+      "id": "198277253",
+      "topics": [
+        "LLM",
+        "Âm thanh"
+      ],
+      "title": "Tăng cường văn bản cho hiểu biết ngôn ngữ nói với Mô hình Ngôn ngữ Lớn",
+      "slug": "augmenting-text-for-spoken-language-understanding-with-large-language-models",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-25T03:37:49+01:00",
+      "description": "Bình luận & Đánh giá Tóm tắt",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Tăng cường văn bản cho hiểu biết ngôn ngữ nói ...",
+        "description": "Bình luận & Đánh giá Tóm tắt"
+      }
+    },
+    {
+      "id": "198277277",
+      "topics": [
+        "LLM",
+        "Nén"
+      ],
+      "title": "Mô hình Ngôn ngữ là Nén",
+      "slug": "language-modeling-is-compression",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-25T03:37:32+01:00",
+      "description": "Bình luận & Đánh giá Tóm tắt",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Mô hình Ngôn ngữ là Nén",
+        "description": "Bình luận & Đánh giá Tóm tắt"
+      }
+    },
+    {
+      "id": "198277345",
+      "topics": [
+        "LLM",
+        "Đa ngôn ngữ"
+      ],
+      "title": "Baichuan 2: Mở Mô hình Ngôn ngữ Quy mô Lớn",
+      "slug": "baichuan-2-open-large-scale-language-models",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-24T05:59:10+01:00",
+      "description": "Bình luận & Đánh giá Tóm tắt",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Baichuan 2: Mở Mô hình Ngôn ngữ Quy mô Lớn",
+        "description": "Bình luận & Đánh giá Tóm tắt"
+      }
+    },
+    {
+      "id": "198277446",
+      "topics": [
+        "LLM",
+        "Ảo giác"
+      ],
+      "title": "Chuỗi Xác minh Giảm Ảo giác trong Mô hình Ngôn ngữ Lớn",
+      "slug": "chain-of-verification-reduces-hallucination-in-large-language-models",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-24T05:21:05+01:00",
+      "description": "Bình luận & Đánh giá Tóm tắt",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Chuỗi Xác minh Giảm Ảo giác trong LLMs",
+        "description": "Bình luận & Đánh giá Tóm tắt"
+      }
+    },
+    {
+      "id": "198277458",
+      "topics": [
+        "LLM",
+        "Ảo giác",
+        "Thực thể",
+        "Dữ liệu có cấu trúc"
+      ],
+      "title": "LMDX: Trích xuất và Định vị Thông tin Tài liệu dựa trên Mô hình Ngôn ngữ",
+      "slug": "lmdx-language-model-based-document-information-extraction-and-localization",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-24T05:20:31+01:00",
+      "description": "Bình luận & Đánh giá Tóm tắt",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "LMDX: ..Trích xuất và Định vị Thông tin Tài liệu",
+        "description": "Bình luận & Đánh giá Tóm tắt"
+      }
+    },
+    {
+      "id": "198277209",
+      "topics": [
+        "LLM",
+        "Dữ liệu"
+      ],
+      "title": "SlimPajama-DC: Hiểu các Kết hợp Dữ liệu cho Huấn luyện LLM",
+      "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-04T23:43:32+01:00",
+      "description": "Bình luận & Đánh giá Tóm tắt",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
+      },
+      "seo": {
+        "title": "SlimPajama-DC: Hiểu các Kết hợp Dữ liệu cho Huấn luyện LLM",
+        "description": "Bình luận & Đánh giá Tóm tắt"
+      }
+    },
+    {
+      "id": "198277109",
+      "topics": [
+        "LLM",
+        "Lý luận"
+      ],
+      "title": "Giải mã Đối lập Cải thiện Lý luận trong Mô hình Ngôn ngữ Lớn",
+      "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-04T22:18:11+01:00",
+      "description": "Bình luận & Đánh giá Tóm tắt",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Giải mã Đối lập Cải thiện Lý luận trong LLMs",
+        "description": "Bình luận & Đánh giá Tóm tắt"
+      }
+    },
+    {
+      "id": "198277099",
+      "topics": [
+        "LLM",
+        "Đa ngôn ngữ",
+        "Dữ liệu"
+      ],
+      "title": "CulturaX: Bộ Dữ liệu Đa ngôn ngữ Sạch, Khổng lồ cho Mô hình Ngôn ngữ Lớn trong 167 Ngôn ngữ",
+      "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-04T22:14:53+01:00",
+      "description": "Bình luận & Đánh giá Tóm tắt",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "CulturaX: Bộ Dữ liệu Đa ngôn ngữ Sạch, Khổng lồ...",
+        "description": "Bình luận & Đánh giá Tóm tắt"
+      }
+    },
+    {
+      "id": "198044929",
+      "topics": [
+        "LLM",
+        "Dữ liệu",
+        "Đại lý"
+      ],
+      "title": "Nguồn Dữ liệu cho Đại lý Thể hiện Lý luận",
+      "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-04T07:33:25+01:00",
+      "description": "Bình luận & Đánh giá Tóm tắt",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
+      },
+      "seo": {
+        "title": "Nguồn Dữ liệu cho Đại lý Thể hiện Lý luận",
+        "description": "Bình luận & Đánh giá Tóm tắt"
+      }
+    },
+    {
+      "id": "198044900",
+      "topics": [
+        "LLM",
+        "Thực thể",
+        "Tinh chỉnh"
+      ],
+      "title": "Tận dụng Thông tin Ngữ cảnh để Phát hiện Hiệu quả Sự Nổi bật của Thực thể",
+      "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-04T07:30:50+01:00",
+      "description": "Bình luận & Đánh giá Tóm tắt",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Tận dụng Thông tin Ngữ cảnh ...Phát hiện Sự Nổi bật của Thực thể",
+        "description": "Bình luận & Đánh giá Tóm tắt"
+      }
+    }
+  ],
+  "blogContent": {
+    "id": "198277196",
+    "topics": [
+      "LLM",
+      "Dữ liệu có cấu trúc"
+    ],
+    "title": "Struc-Bench: Các mô hình ngôn ngữ lớn có thực sự giỏi trong việc tạo ra dữ liệu cấu trúc phức tạp không?",
+    "slug": "struc-bench-are-large-language-models-really-good-at-generating-complex-structure",
+    "authorName": "Prof. Otto Nomos",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+    },
+    "_publishedAt": "2024-05-25T03:38:38+01:00",
+    "description": "Bình luận & Đánh giá Tóm tắt",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Được công bố vào Ngày 16 tháng 9·Nổi bật trong "
+                    },
+                    {
+                      "url": "https://huggingface.co/papers?date=2023-09-19",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Bài báo hàng ngày"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": " vào Ngày 18 Tác giả:Xiangru Tang,Yiming Zong,"
+                    },
+                    {
+                      "url": "https://huggingface.co/yilunzhao",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Yilun Zhao"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/armanc",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Arman Cohan"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ",Mark Gerstein"
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tóm tắt"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Mặc dù sức mạnh của các mô hình ngôn ngữ lớn (LLMs) như GPT-4, chúng vẫn gặp khó khăn với các nhiệm vụ yêu cầu tạo ra đầu ra cấu trúc phức tạp. Trong nghiên cứu này, chúng tôi đánh giá khả năng của các LLM hiện tại trong việc tạo ra dữ liệu cấu trúc phức tạp và đề xuất một phương pháp tinh chỉnh nhạy cảm với cấu trúc như một giải pháp để cải thiện khả năng này. Để thực hiện đánh giá toàn diện, chúng tôi đề xuất Struc-Bench, bao gồm năm LLM tiêu biểu (tức là GPT-NeoX 20B, GPT-3.5, GPT-4 và Vicuna) và đánh giá chúng trên các bộ dữ liệu do chúng tôi xây dựng cẩn thận bao gồm văn bản thô, HTML và bảng LaTeX. Dựa trên phân tích hiệu suất mô hình hiện tại của chúng tôi, chúng tôi xác định các lỗi định dạng phổ biến cụ thể và các lĩnh vực có thể cải thiện. Để giải quyết các yêu cầu định dạng phức tạp, chúng tôi sử dụng FormatCoT (Chuỗi suy nghĩ) để tạo ra hướng dẫn định dạng từ đầu ra mục tiêu. Các thí nghiệm của chúng tôi cho thấy phương pháp tinh chỉnh nhạy cảm với cấu trúc của chúng tôi, khi áp dụng cho LLaMA-7B, cải thiện đáng kể sự tuân thủ các ràng buộc ngôn ngữ tự nhiên, vượt trội hơn các LLM khác được đánh giá. Dựa trên các kết quả này, chúng tôi trình bày bản đồ khả năng của mô hình từ sáu khía cạnh (tức là phủ sóng, định dạng, suy luận, hiểu biết, ngữ pháp và ảo tưởng). Bản đồ này làm nổi bật điểm yếu của LLMs trong việc xử lý đầu ra cấu trúc phức tạp và đề xuất các hướng đi hứa hẹn cho công việc tương lai. Mã của chúng tôi và các mô hình có thể được tìm thấy tại https://github.com/gersteinlab/Struc-Bench."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "url": "https://arxiv.org/abs/2309.08963",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Xem trang arXiv"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "https://arxiv.org/pdf/2309.08963",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Xem PDF"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Bình luận"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Bài báo \"Struc-Bench: Các mô hình ngôn ngữ lớn có thực sự giỏi trong việc tạo ra dữ liệu cấu trúc phức tạp không?\" nhắm vào thách thức đáng kể trong lĩnh vực các mô hình ngôn ngữ lớn (LLMs) — tạo ra đầu ra cấu trúc phức tạp."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Những điểm chính:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Nhận dạng vấn đề"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Mặc dù sức mạnh của các LLM hiện đại, khả năng của họ trong việc tạo ra đầu ra cấu trúc như bảng, HTML, hoặc LaTeX, vẫn là thách thức."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Tiêu chuẩn Struc-Bench"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Công trình này giới thiệu một tiêu chuẩn toàn diện để đánh giá khả năng của LLMs trong việc tạo ra dữ liệu cấu trúc, đánh giá một số mô hình tiên tiến trên các định dạng cấu trúc khác nhau."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Phân tích chi tiết"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Các nhà nghiên cứu xác định các lỗi định dạng phổ biến trong đầu ra của LLM, cung cấp cái nhìn sâu sắc vào điểm yếu của các mô hình này khi được giao nhiệm vụ tạo ra nội dung cấu trúc."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Tinh chỉnh nhạy cảm với cấu trúc"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Một phương pháp mới, FormatCoT, được giới thiệu để tạo ra hướng dẫn định dạng từ đầu ra mục tiêu, cải thiện sự tuân thủ của mô hình đối với các yêu cầu cấu trúc phức tạp."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Bản đồ khả năng"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Các tác giả trình bày một bản đồ chi tiết về khả năng của mô hình qua sáu khía cạnh, làm nổi bật các lĩnh vực mạnh và yếu."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tác động thực tế tiềm năng:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Tạo ra đầu ra phức tạp"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Các phát hiện và giải pháp được đề xuất có thể thúc đẩy khả năng của LLMs trong việc tạo ra đầu ra cấu trúc phức tạp, quan trọng cho các nhiệm vụ như tạo tài liệu, thiết kế trang web và tạo bảng dữ liệu."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Đánh giá mô hình tốt hơn"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Struc-Bench có thể trở thành tiêu chuẩn đánh giá cho các mô hình tương lai, đảm bảo rằng chúng được kiểm tra về khả năng của họ trong việc tạo ra đầu ra cấu trúc."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Dữ liệu có cấu trúc trong các ứng dụng"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Khả năng cải thiện trong việc tạo ra dữ liệu có cấu trúc có thể nâng cao các ứng dụng như viết báo cáo tự động, tạo mã, hoặc quản lý hệ thống nội dung."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Hướng dẫn cho nghiên cứu tương lai"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Việc xác định các lỗi phổ biến và bản đồ khả năng sẽ hướng dẫn các nhà nghiên cứu về nơi tập trung nỗ lực của họ."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Thách thức:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Độ phức tạp"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Mặc dù các phương pháp được đề xuất cho thấy triển vọng, có độ phức tạp vốn có trong việc tạo ra nội dung cấu trúc, và việc hoàn thiện điều này sẽ vẫn là một thách thức."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Sự chấp nhận"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Tác động rộng rãi sẽ phụ thuộc vào cách cộng đồng áp dụng tiêu chuẩn và phương pháp tinh chỉnh nhạy cảm với cấu trúc trong nghiên cứu và ứng dụng của họ."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Xét đến bản chất quan trọng của việc tạo ra dữ liệu cấu trúc và những hàm ý tiềm năng của việc cải thiện khả năng này trong LLMs:"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tôi đánh giá tác động thực tế của bài báo này là 9 trên 10."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Việc giới thiệu một tiêu chuẩn dữ liệu có cấu trúc, cái nhìn sâu sắc vào lỗi mô hình, và một phương pháp tinh chỉnh mới có tiềm năng đẩy ranh giới của những gì LLMs có thể đạt được trong các nhiệm vụ tạo ra dữ liệu cấu trúc thực tế."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "researchpaper9",
+            "height": 816,
+            "width": 1456,
+            "filename": "researchpaper9.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Bình luận & Đánh giá Tóm tắt\n",
+      "title": "Struc-Bench:..Tạo ra dữ liệu cấu trúc phức tạp?",
+      "twitterCard": null,
+      "image": {
+        "width": 1456,
+        "height": 816,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      }
+    }
+  },
+  "topics": [
+    "LLM",
+    "Structured Data"
+  ]
+}

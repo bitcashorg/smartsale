@@ -1,0 +1,884 @@
+{
+  "relatedBlogs": [
+    {
+      "id": "198277124",
+      "topics": [
+        "LLM",
+        "Keuangan",
+        "Kesehatan",
+        "Hukum",
+        "Memancing"
+      ],
+      "title": "Menyesuaikan Model Bahasa Besar melalui Pemahaman Bacaan",
+      "slug": "adapting-large-language-models-via-reading-comprehension",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-27T03:34:22+01:00",
+      "description": "Komentar & Penilaian Abstrak",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Menyesuaikan Model Bahasa Besar melalui Pemahaman Bacaan",
+        "description": "Komentar & Penilaian Abstrak"
+      }
+    },
+    {
+      "id": "198277342",
+      "topics": [
+        "LLM",
+        "Multibahasa"
+      ],
+      "title": "OpenBA: Model Asimetris Dwi Bahasa 15B Sumber Terbuka yang Dilatih dari Awal",
+      "slug": "openba-an-open-sourced-15b-bilingual-asymmetric-seq2seq-model-pre-trained-from-sc",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-27T03:34:02+01:00",
+      "description": "Komentar & Penilaian Abstrak",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "OpenBA: Model Asimetris Dwi Bahasa 15B Sumber Terbuka...",
+        "description": "Komentar & Penilaian Abstrak"
+      }
+    },
+    {
+      "id": "198277117",
+      "topics": [
+        "LLM",
+        "Pengambilan"
+      ],
+      "title": "PDFTriage: Jawaban Pertanyaan atas Dokumen Panjang dan Terstruktur",
+      "slug": "pdftriage-question-answering-over-long-structured-documents",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-27T03:33:49+01:00",
+      "description": "Komentar & Penilaian Abstrak",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "PDFTriage: Tanya Jawab atas Dokumen Panjang dan Terstruktur",
+        "description": "Komentar & Penilaian Abstrak"
+      }
+    },
+    {
+      "id": "198277138",
+      "topics": [
+        "LLM",
+        "Penyetelan Halus"
+      ],
+      "title": "Sorted LLaMA: Membuka Potensi Lapisan Menengah Model Bahasa Besar untuk Inferensi Dinamis dengan Penyetelan Halus Terurut (SoFT)",
+      "slug": "sorted-llama-unlocking-the-potential-of-intermediate-layers-of-large-language-mod",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-27T03:33:31+01:00",
+      "description": "Komentar & Penilaian Abstrak",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Sorted LLaMA: Inferensi Dinamis dengan Penyetelan Halus Terurut (SoFT)",
+        "description": "Komentar & Penilaian Abstrak"
+      }
+    },
+    {
+      "id": "198277150",
+      "topics": [
+        "LLM",
+        "Penyetelan Instruksi",
+        "Multimodal"
+      ],
+      "title": "Studi Empiris tentang Penskalaan Model Multimodal Besar yang Disesuaikan Instruksi",
+      "slug": "an-empirical-study-of-scaling-instruct-tuned-large-multimodal-models",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-27T03:33:15+01:00",
+      "description": "Komentar & Penilaian Abstrak",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Studi Empiris tentang Penskalaan Model Multimodal Besar yang Disesuaikan Instruksi",
+        "description": "Komentar & Penilaian Abstrak"
+      }
+    },
+    {
+      "id": "198277217",
+      "topics": [
+        "LLM",
+        "Privasi",
+        "Tepi"
+      ],
+      "title": "Pemulihan dari Penyamaran Pelestarian Privasi dengan Model Bahasa Besar",
+      "slug": "recovering-from-privacy-preserving-masking-with-large-language-models",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-25T03:38:26+01:00",
+      "description": "Komentar & Penilaian Abstrak",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Pemulihan dari Penyamaran Pelestarian Privasi dengan Model Bahasa Besar",
+        "description": "Komentar & Penilaian Abstrak"
+      }
+    },
+    {
+      "id": "198277239",
+      "topics": [
+        "LLM",
+        "Obrolan"
+      ],
+      "title": "S3-DST: Segmentasi Dialog Terbuka Terstruktur dan Pelacakan Keadaan di Era Model Bahasa Besar",
+      "slug": "s3-dst-structured-open-domain-dialogue-segmentation-and-state-tracking-in-the-era",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-25T03:38:11+01:00",
+      "description": "Komentar & Penilaian Abstrak",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "S3-DST: Segmentasi Dialog Terbuka Terstruktur dan Pelacakan Keadaan...",
+        "description": "Komentar & Penilaian Abstrak"
+      }
+    },
+    {
+      "id": "198277253",
+      "topics": [
+        "LLM",
+        "Audio"
+      ],
+      "title": "Meningkatkan teks untuk pemahaman bahasa lisan dengan Model Bahasa Besar",
+      "slug": "augmenting-text-for-spoken-language-understanding-with-large-language-models",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-25T03:37:49+01:00",
+      "description": "Komentar & Penilaian Abstrak",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Meningkatkan teks untuk pemahaman bahasa lisan...",
+        "description": "Komentar & Penilaian Abstrak"
+      }
+    },
+    {
+      "id": "198277277",
+      "topics": [
+        "LLM",
+        "Kompresi"
+      ],
+      "title": "Pemodelan Bahasa adalah Kompresi",
+      "slug": "language-modeling-is-compression",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-25T03:37:32+01:00",
+      "description": "Komentar & Penilaian Abstrak",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Pemodelan Bahasa adalah Kompresi",
+        "description": "Komentar & Penilaian Abstrak"
+      }
+    },
+    {
+      "id": "198277345",
+      "topics": [
+        "LLM",
+        "Multibahasa"
+      ],
+      "title": "Baichuan 2: Model Bahasa Besar Terbuka",
+      "slug": "baichuan-2-open-large-scale-language-models",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-24T05:59:10+01:00",
+      "description": "Komentar & Penilaian Abstrak",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Baichuan 2: Model Bahasa Besar Terbuka",
+        "description": "Komentar & Penilaian Abstrak"
+      }
+    },
+    {
+      "id": "198277446",
+      "topics": [
+        "LLM",
+        "Halusinasi"
+      ],
+      "title": "Rantai-Verifikasi Mengurangi Halusinasi dalam Model Bahasa Besar",
+      "slug": "chain-of-verification-reduces-hallucination-in-large-language-models",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-24T05:21:05+01:00",
+      "description": "Komentar & Penilaian Abstrak",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Rantai-Verifikasi Mengurangi Halusinasi dalam Model Bahasa Besar",
+        "description": "Komentar & Penilaian Abstrak"
+      }
+    },
+    {
+      "id": "198277458",
+      "topics": [
+        "LLM",
+        "Halusinasi",
+        "Entitas",
+        "Data Terstruktur"
+      ],
+      "title": "LMDX: Ekstraksi dan Lokalisasi Informasi Dokumen Berbasis Model Bahasa",
+      "slug": "lmdx-language-model-based-document-information-extraction-and-localization",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-24T05:20:31+01:00",
+      "description": "Komentar & Penilaian Abstrak",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "LMDX: Ekstraksi dan Lokalisasi Informasi Dokumen Berbasis Model Bahasa",
+        "description": "Komentar & Penilaian Abstrak"
+      }
+    },
+    {
+      "id": "198277209",
+      "topics": [
+        "LLM",
+        "Data"
+      ],
+      "title": "SlimPajama-DC: Memahami Kombinasi Data untuk Pelatihan Model Bahasa Besar",
+      "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-04T23:43:32+01:00",
+      "description": "Komentar & Penilaian Abstrak",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
+      },
+      "seo": {
+        "title": "SlimPajama-DC: Memahami Kombinasi Data untuk Pelatihan Model Bahasa Besar",
+        "description": "Komentar & Penilaian Abstrak"
+      }
+    },
+    {
+      "id": "198277109",
+      "topics": [
+        "LLM",
+        "Penalaran"
+      ],
+      "title": "Dekoding Kontrastif Meningkatkan Penalaran dalam Model Bahasa Besar",
+      "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-04T22:18:11+01:00",
+      "description": "Komentar & Penilaian Abstrak",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Dekoding Kontrastif Meningkatkan Penalaran dalam Model Bahasa Besar",
+        "description": "Komentar & Penilaian Abstrak"
+      }
+    },
+    {
+      "id": "198277099",
+      "topics": [
+        "LLM",
+        "Multibahasa",
+        "Data"
+      ],
+      "title": "CulturaX: Dataset Bersih, Besar, dan Multibahasa untuk Model Bahasa Besar dalam 167 Bahasa",
+      "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-04T22:14:53+01:00",
+      "description": "Komentar & Penilaian Abstrak",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "CulturaX: Dataset Bersih, Besar, dan Multibahasa...",
+        "description": "Komentar & Penilaian Abstrak"
+      }
+    },
+    {
+      "id": "198044929",
+      "topics": [
+        "LLM",
+        "Data",
+        "Agen"
+      ],
+      "title": "Sumber Data untuk Agen Berwujud yang Beralasan",
+      "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-04T07:33:25+01:00",
+      "description": "Komentar & Penilaian Abstrak",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
+      },
+      "seo": {
+        "title": "Sumber Data untuk Agen Berwujud yang Beralasan",
+        "description": "Komentar & Penilaian Abstrak"
+      }
+    },
+    {
+      "id": "198044900",
+      "topics": [
+        "LLM",
+        "Entitas",
+        "Penyetelan Halus"
+      ],
+      "title": "Memanfaatkan Informasi Kontekstual untuk Deteksi Kepentingan Entitas yang Efektif",
+      "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-04T07:30:50+01:00",
+      "description": "Komentar & Penilaian Abstrak",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Memanfaatkan Informasi Kontekstual untuk Deteksi Kepentingan Entitas yang Efektif",
+        "description": "Komentar & Penilaian Abstrak"
+      }
+    }
+  ],
+  "blogContent": {
+    "id": "198277196",
+    "topics": [
+      "LLM",
+      "Data Terstruktur"
+    ],
+    "title": "Struc-Bench: Apakah Model Bahasa Besar Benar-benar Baik dalam Menghasilkan Data Terstruktur yang Kompleks?",
+    "slug": "struc-bench-are-large-language-models-really-good-at-generating-complex-structure",
+    "authorName": "Prof. Otto Nomos",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+    },
+    "_publishedAt": "2024-05-25T03:38:38+01:00",
+    "description": "Komentar & Penilaian Abstrak",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Diterbitkan pada 16 Sep·Ditampilkan di "
+                    },
+                    {
+                      "url": "https://huggingface.co/papers?date=2023-09-19",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Daily Papers"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": " pada 18 Sep Penulis:Xiangru Tang,Yiming Zong,"
+                    },
+                    {
+                      "url": "https://huggingface.co/yilunzhao",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Yilun Zhao"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/armanc",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Arman Cohan"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ",Mark Gerstein"
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Abstrak"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Meskipun kekuatan Model Bahasa Besar (LLM) seperti GPT-4, mereka masih kesulitan dengan tugas yang memerlukan penghasilan keluaran terstruktur yang kompleks. Dalam studi ini, kami menilai kemampuan LLM saat ini dalam menghasilkan data terstruktur yang kompleks dan mengusulkan pendekatan penyetelan halus yang sadar struktur sebagai solusi untuk meningkatkan kemampuan ini. Untuk melakukan evaluasi yang komprehensif, kami mengusulkan Struc-Bench, memasukkan lima LLM perwakilan (yaitu, GPT-NeoX 20B, GPT-3.5, GPT-4, dan Vicuna) dan mengevaluasi mereka pada dataset yang kami konstruksi dengan hati-hati yang mencakup teks mentah, tabel HTML, dan LaTeX. Berdasarkan analisis kami terhadap kinerja model saat ini, kami mengidentifikasi kesalahan pemformatan umum dan area potensial untuk peningkatan. Untuk mengatasi persyaratan pemformatan yang kompleks, kami menggunakan FormatCoT (Rantai-Pemikiran) untuk menghasilkan instruksi format dari keluaran target. Eksperimen kami menunjukkan bahwa metode penyetelan halus yang sadar struktur kami, ketika diterapkan pada LLaMA-7B, secara signifikan meningkatkan kepatuhan terhadap batasan bahasa alami, melampaui LLM lain yang dievaluasi. Berdasarkan hasil ini, kami menyajikan peta kemampuan model dari enam dimensi (yaitu, cakupan, pemformatan, penalaran, pemahaman, pragmatik, dan halusinasi). Peta ini menyoroti kelemahan LLM dalam menangani keluaran terstruktur yang kompleks dan menyarankan arah yang menjanjikan untuk pekerjaan masa depan. Kode dan model kami dapat ditemukan di https://github.com/gersteinlab/Struc-Bench."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "url": "https://arxiv.org/abs/2309.08963",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Lihat halaman arXiv"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "https://arxiv.org/pdf/2309.08963",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Lihat PDF"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Komentar"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Makalah \"Struc-Bench: Apakah Model Bahasa Besar Benar-benar Baik dalam Menghasilkan Data Terstruktur yang Kompleks?\" menargetkan tantangan signifikan dalam domain Model Bahasa Besar (LLM) — menghasilkan keluaran terstruktur yang kompleks."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Poin Utama:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Identifikasi Masalah"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Meskipun kecakapan LLM modern, kemampuan mereka untuk menghasilkan keluaran terstruktur seperti tabel, HTML, atau LaTeX, tetap menantang."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Struc-Bench Benchmark"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Pekerjaan ini memperkenalkan benchmark komprehensif untuk menilai kemampuan LLM dalam menghasilkan data terstruktur, mengevaluasi beberapa model canggih di berbagai format terstruktur."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Analisis Terperinci"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Para peneliti mengidentifikasi kesalahan pemformatan umum dalam keluaran LLM, memberikan wawasan tentang kelemahan model-model ini ketika ditugaskan untuk menghasilkan konten terstruktur."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Penyetelan Halus yang Sadar Struktur"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Metode baru, FormatCoT, diperkenalkan untuk menghasilkan instruksi format dari keluaran target, meningkatkan kepatuhan model terhadap persyaratan struktural yang kompleks."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Peta Kemampuan"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Para penulis menyajikan peta yang merinci kemampuan model di enam dimensi, menyoroti area kekuatan dan kelemahan."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Dampak Dunia Nyata yang Potensial:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Generasi Keluaran Kompleks"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Temuan dan solusi yang diusulkan dapat memajukan kemampuan LLM dalam menghasilkan keluaran terstruktur yang kompleks, vital untuk tugas seperti pembuatan dokumen, desain situs web, dan pembuatan tabel data."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Evaluasi Model yang Lebih Baik"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Struc-Bench dapat menjadi benchmark standar untuk model masa depan, memastikan mereka diuji untuk kemampuan mereka dalam generasi keluaran terstruktur."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Data Terstruktur dalam Aplikasi"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Kemampuan yang ditingkatkan dalam generasi data terstruktur dapat meningkatkan aplikasi seperti penulisan laporan otomatis, pembuatan kode, atau sistem manajemen konten."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Panduan untuk Penelitian Masa Depan"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Identifikasi kesalahan umum dan peta kemampuan akan membimbing peneliti tentang di mana harus fokus upaya mereka."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tantangan:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Kompleksitas"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Meskipun metode yang diusulkan menunjukkan janji, ada kompleksitas yang melekat dalam menghasilkan konten terstruktur, dan menyempurnakannya akan tetap menjadi tantangan."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Adopsi"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Dampak luas akan bergantung pada bagaimana komunitas mengadopsi benchmark dan metode penyetelan halus yang sadar struktur dalam penelitian dan aplikasi mereka."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Mengingat sifat kritis dari menghasilkan data terstruktur dan implikasi potensial dari peningkatan kemampuan ini dalam LLM:"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Saya akan menilai dampak dunia nyata dari makalah ini sebagai 9 dari 10."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Pengenalan benchmark data terstruktur, wawasan tentang kesalahan model, dan pendekatan penyetelan halus yang baru memiliki potensi untuk mendorong batas-batas apa yang dapat dicapai LLM dalam tugas generasi data terstruktur dunia nyata."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "researchpaper9",
+            "height": 816,
+            "width": 1456,
+            "filename": "researchpaper9.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Komentar & Penilaian Abstrak\n",
+      "title": "Struc-Bench:..Menghasilkan Data Terstruktur yang Kompleks?",
+      "twitterCard": null,
+      "image": {
+        "width": 1456,
+        "height": 816,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      }
+    }
+  },
+  "topics": [
+    "LLM",
+    "Structured Data"
+  ]
+}

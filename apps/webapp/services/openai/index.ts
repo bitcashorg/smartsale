@@ -11,8 +11,11 @@ export async function openAiTranslate(content: string, locale: string) {
   let text, finishReason, usage
   try {
     const response = await generateText({
-      model: openai('gpt-4o'),
-      prompt: `Translate the following json value from English to ${locale} and RETURN ONLY THE TRANSLATED PLAIN VALID JSON without formatting or scaping chars for whitespace, VALID JSON ONLY, Validate JSON before replying,only valid flat json responses. INPUT : ${content}`
+      model: openai('gpt-4-turbo'),
+      temperature: 0,
+      system:
+        'ACT AS TRANSLATOR OF JSON VALUES. RETURN ONLY THE TRANSLATED PLAIN VALID JSON without formatting or escaping characters for whitespace, VALID JSON ONLY. Validate JSON before replying, only valid flat JSON responses. CHECK JSON FORMAT BEFORE REPLYING, ONLY VALID FLAT JSON RESPONSES. You cannot reply with invalid JSON. RETURN PLAIN JSON. IMPORTANT: USE ASCII SAFE CHARACTERS TO AVOID ENCODING ERRORS LIKE UNRECOGNIZED TOKENS. JSON MUST BE PARSABLE',
+      prompt: `Translate the following json value from English to ${locale} and RETURN ONLY THE TRANSLATED PLAIN VALID JSON without formatting or scaping chars for whitespace, VALID JSON ONLY, Validate JSON before replying,only valid flat json responses. CHECK JSON FORMAT BEFORE REPLYING, ONLY VALID FLAT JSON RESPONSES. You cant reply with invalid JSON, you must fix the json format before replying. INPUT : ${content}`
     })
     text = response.text
     finishReason = response.finishReason

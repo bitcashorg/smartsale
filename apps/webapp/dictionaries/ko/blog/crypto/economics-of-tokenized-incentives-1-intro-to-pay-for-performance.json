@@ -1,0 +1,478 @@
+{
+  "relatedBlogs": [
+    {
+      "id": "180563939",
+      "topics": [
+        "DAO",
+        "토크노믹스",
+        "코멘터리"
+      ],
+      "title": "블록체인 거버넌스 설계를 위한 프레임워크: 프리즘 그룹 휠 [코멘터리]",
+      "slug": "a-framework-for-blockchain-governance-design-the-prysm-group-wheel-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:19:19+01:00",
+      "description": "프리즘 그룹 휠을 사용하여 블록체인 거버넌스의 복잡성을 탐색하세요. 효과적인 블록체인 거버넌스 설계를 위한 로드맵입니다.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690861154-cbc11-img1.webp"
+      },
+      "seo": {
+        "title": "블록체인 거버넌스 설계를 위한 프레임워크 [코멘터리]",
+        "description": "프리즘 그룹 휠을 사용하여 블록체인 거버넌스의 복잡성을 탐색하세요. 효과적인 블록체인 거버넌스 설계를 위한 로드맵입니다."
+      }
+    },
+    {
+      "id": "180217169",
+      "topics": [
+        "토크노믹스",
+        "코멘터리"
+      ],
+      "title": "토큰화된 인센티브의 경제학 3: 토큰 가치가 이해관계자를 조정하지 않습니다 [코멘터리]",
+      "slug": "economics-of-tokenized-incentives-3-token-value-won-t-align-stakeholders-commenta",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:17:23+01:00",
+      "description": "블록체인 플랫폼에서 토큰 가치를 성과 지표로 사용하는 위험을 밝힙니다. 효과적인 인센티브 시스템을 설계하는 방법을 배웁니다.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690771457-cbc3-img1.png"
+      },
+      "seo": {
+        "title": "토큰화된 인센티브의 경제학 3 [코멘터리]",
+        "description": "블록체인 플랫폼에서 토큰 가치를 성과 지표로 사용하는 위험을 밝힙니다. 효과적인 인센티브 시스템을 설계하는 방법을 배웁니다."
+      }
+    },
+    {
+      "id": "180217123",
+      "topics": [
+        "토크노믹스",
+        "코멘터리"
+      ],
+      "title": "토큰화된 인센티브의 경제학 2: 효과적인 성과 지표 선택 [코멘터리]",
+      "slug": "economics-of-tokenized-incentives-2-selecting-effective-performance-metrics-comme",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:17:05+01:00",
+      "description": "블록체인 성과 기반 시스템에서 성과 지표의 힘을 발견하세요. 플랫폼 목표와 효과적으로 인센티브를 조정하는 방법을 배웁니다.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690770918-cbc2-img1.png"
+      },
+      "seo": {
+        "title": "토큰화된 인센티브의 경제학 2 [코멘터리]",
+        "description": "블록체인 성과 기반 시스템에서 성과 지표의 힘을 발견하세요. 플랫폼 목표와 효과적으로 인센티브를 조정하는 방법을 배웁니다."
+      }
+    },
+    {
+      "id": "180563918",
+      "topics": [
+        "토크노믹스",
+        "코멘터리",
+        "펀드레이징"
+      ],
+      "title": "토큰: 투자 수단 또는 교환 수단 (둘 다 아님) [코멘터리]",
+      "slug": "tokens-investment-vehicle-or-medium-of-exchange-not-both-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:13:31+01:00",
+      "description": "블록체인 경제에서 토큰의 이중 역할을 탐구하세요. 투자 수단과 교환 수단 사이의 미묘한 차이를 밝힙니다.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690859959-cbc8-img1.png"
+      },
+      "seo": {
+        "title": "토큰: 투자 또는 교환 수단 [코멘터리]",
+        "description": "블록체인 경제에서 토큰의 이중 역할을 탐구하세요. 투자 수단과 교환 수단 사이의 미묘한 차이를 밝힙니다."
+      }
+    },
+    {
+      "id": "180563922",
+      "topics": [
+        "펀드레이징",
+        "토크노믹스",
+        "코멘터리"
+      ],
+      "title": "ICO는 네트워크 효과를 활용합니다 [코멘터리]",
+      "slug": "icos-leverage-network-effects-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:12:06+01:00",
+      "description": "ICO가 성공을 위해 네트워크 효과의 힘을 활용하는 방법을 발견하세요. ICO와 네트워크 효과, 역동적인 듀오!",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690860184-cbc9-img1.png"
+      },
+      "seo": {
+        "title": "ICO는 네트워크 효과를 활용합니다 [코멘터리]",
+        "description": "ICO가 성공을 위해 네트워크 효과의 힘을 활용하는 방법을 발견하세요. ICO와 네트워크 효과, 역동적인 듀오!"
+      }
+    },
+    {
+      "id": "180556595",
+      "topics": [
+        "펀드레이징",
+        "토크노믹스",
+        "코멘터리"
+      ],
+      "title": "블록체인 효과: 시장 권력 비용 없는 네트워크 효과 [코멘터리]",
+      "slug": "the-blockchain-effect-network-effects-without-market-power-costs-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:11:14+01:00",
+      "description": "블록체인이 시장 권력의 단점 없이 네트워크 효과를 가능하게 하는 방법을 탐구하세요. 게임 체인저인 블록체인 효과를 발견하세요.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690855275-cbc4-img1.png"
+      },
+      "seo": {
+        "title": "시장 권력 비용 없는 네트워크 효과 [코멘터리]",
+        "description": "블록체인이 시장 권력의 단점 없이 네트워크 효과를 가능하게 하는 방법을 탐구하세요. 게임 체인저인 블록체인 효과를 발견하세요."
+      }
+    },
+    {
+      "id": "180563931",
+      "topics": [
+        "토크노믹스",
+        "코멘터리"
+      ],
+      "title": "블록체인 인센티브 구조: 그것이 무엇이며 왜 중요한가 [코멘터리]",
+      "slug": "blockchain-incentive-structures-what-they-are-and-why-they-matter-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:10:02+01:00",
+      "description": "블록체인 인센티브 구조의 핵심을 이해하고 사용자 행동 및 플랫폼 성공을 추진하는 중요성을 알아봅니다.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690860807-cbc10-img1.png"
+      },
+      "seo": {
+        "title": "블록체인 인센티브 구조 [코멘터리]",
+        "description": "블록체인 인센티브 구조의 핵심을 이해하고 사용자 행동 및 플랫폼 성공을 추진하는 중요성을 알아봅니다."
+      }
+    },
+    {
+      "id": "167184977",
+      "topics": [
+        "토크노믹스",
+        "DAO",
+        "펀드레이징"
+      ],
+      "title": "주식 모델 혁신: 토크노믹스가 스타트업 세계를 어떻게 혁신하는가",
+      "slug": "revolutionizing-the-equity-model-how-tokenomics-is-disrupting-the-startup-world",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:02:51+01:00",
+      "description": "토크노믹스를 통해 스타트업의 미래를 열어보세요! 이 혁신적인 개념이 주식 모델을 어떻게 재구성하고 스타트업 풍경을 혁신하는지 탐구하세요.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1687395688-tb2-img1.png"
+      },
+      "seo": {
+        "title": "토크노믹스가 스타트업 세계를 어떻게 혁신하는가",
+        "description": "이 혁신적인 개념이 주식 모델을 어떻게 재구성하고 스타트업 풍경을 혁신하는지 탐구하세요."
+      }
+    },
+    {
+      "id": "167101094",
+      "topics": [
+        "시작하기",
+        "토크노믹스"
+      ],
+      "title": "토크노믹스 101: 암호화폐의 힘을 해방하다!",
+      "slug": "tokenomics-101-unleashing-the-power-of-cryptocurrency",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T08:57:58+01:00",
+      "description": "토크노믹스 101을 통해 디지털 자산 뒤에 있는 경제학을 이해하는 심층 가이드를 통해 암호화폐의 힘을 발견하세요.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1687391799-tb1-img1.png"
+      },
+      "seo": {
+        "title": "토크노믹스 101: 암호화폐의 힘을 해방하다!",
+        "description": "디지털 자산 뒤에 있는 경제학을 이해하는 심층 가이드입니다."
+      }
+    }
+  ],
+  "blogContent": {
+    "id": "180217082",
+    "topics": [
+      "토큰노믹스",
+      "해설"
+    ],
+    "title": "토큰화된 인센티브의 경제학 1: 성과에 따른 지불 소개 [해설]",
+    "slug": "economics-of-tokenized-incentives-1-intro-to-pay-for-performance",
+    "authorName": "Crypto Clairity",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+    },
+    "_publishedAt": "2023-10-05T09:15:12+01:00",
+    "description": "블록체인 플랫폼에서 성과에 따른 인센티브의 복잡성을 파헤칩니다. 성공을 위한 트레이드오프와 설계 고려 사항을 배웁니다.",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1690770568-cbc1-img1.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "원본 링크: "
+                    },
+                    {
+                      "url": "https://medium.com/prysmeconomics/economics-of-tokenized-incentives-1-intro-to-pay-for-performance-84e3b9cfffa",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "토큰화된 인센티브의 경제학 1: 성과에 따른 지불 소개"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "저자: "
+                    },
+                    {
+                      "url": "https://medium.com/@cathybarreraphd?source=post_page-----84e3b9cfffa--------------------------------",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noopener follow"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "캐시 바레라, 박사"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "요약"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "성과에 따른 지불은 성과 지표에 따라 금전적 보상이 주어지는 시스템입니다. 원하는 결과의 핵심 측면을 사전에 명시할 수 없을 때 자주 사용됩니다. 비트코인과 같은 많은 블록체인 플랫폼은 이 시스템을 사용하여 활동과 자원을 장려합니다. 그러나 성과에 따른 지불의 이점은 모든 맥락에서 동등하게 활용될 수 없으며, 플랫폼을 설계할 때 트레이드오프를 이해하는 것이 중요합니다."
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "해설"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "특정 시나리오에서 효과적인 성과에 따른 지불 시스템은 신중한 설계와 구현이 필요합니다. 블록체인과 암호화의 맥락에서 이러한 시스템은 참여와 자원 기여를 장려할 수 있지만, 복잡성도 도입됩니다. 예를 들어, 비트코인의 성과에 따른 지불 시스템은 채굴력의 경쟁을 초래하여 에너지 소비에 대한 우려를 증가시켰습니다."
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "실천 가능한 통찰력"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "맥락 이해"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 성과에 따른 지불 시스템을 구현하기 전에 맥락과 플랫폼의 특정 요구 사항을 이해하세요. 모든 맥락이 이 유형의 인센티브 시스템에 적합한 것은 아닙니다."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "트레이드오프 고려"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 성과에 따른 지불 시스템은 위험과 잠재적 단점을 수반합니다. 이러한 트레이드오프를 인식하고 의사 결정 과정에서 고려하세요."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "신중하게 설계"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 인센티브 시스템의 설계는 참가자의 행동과 플랫폼의 전반적인 성공에 큰 영향을 미칠 수 있습니다. 사용되는 성과 지표와 보상의 크기와 같은 요소를 고려하세요."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "유연하게 대처"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 필요에 따라 인센티브 시스템을 조정할 준비를 하세요. 결과를 모니터링하고 시스템이 원하는 결과를 내지 않을 경우 변경하세요."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "명확하게 소통"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 참가자들이 인센티브 시스템을 이해하고 그로부터 어떻게 혜택을 받을 수 있는지 알 수 있도록 하세요. 명확한 소통은 참여를 장려하고 시스템이 효과적으로 사용되도록 돕습니다."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "cbc1-img1",
+            "height": 862,
+            "width": 862,
+            "filename": "cbc1-img1.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1690770568-cbc1-img1.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "블록체인 플랫폼에서 성과에 따른 인센티브의 복잡성을 파헤칩니다. 성공을 위한 트레이드오프와 설계 고려 사항을 배웁니다.",
+      "title": "토큰화된 인센티브의 경제학 1 [해설]",
+      "twitterCard": null,
+      "image": {
+        "width": 862,
+        "height": 862,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1690770568-cbc1-img1.png"
+      }
+    }
+  },
+  "topics": [
+    "Tokenomics",
+    "Commentary"
+  ]
+}

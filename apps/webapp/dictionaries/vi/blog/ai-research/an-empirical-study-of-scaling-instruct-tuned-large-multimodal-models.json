@@ -1,0 +1,569 @@
+{
+  "relatedBlogs": [],
+  "blogContent": {
+    "id": "198277150",
+    "topics": [
+      "LLM",
+      "Dieu chinh chi dao",
+      "Da phuong tien"
+    ],
+    "title": "Nghien cuu thuc nghiem ve viec mo rong cac mo hinh da phuong tien lon duoc dieu chinh chi dao",
+    "slug": "an-empirical-study-of-scaling-instruct-tuned-large-multimodal-models",
+    "authorName": "Prof. Otto Nomos",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+    },
+    "_publishedAt": "2024-05-27T03:33:15+01:00",
+    "description": "Binh luan va danh gia tom tat",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Duoc cong bo vao Ngay 18 thang 9"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tac gia:"
+                    },
+                    {
+                      "url": "https://huggingface.co/Adong17",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Yadong Lu"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/Chunyuan24",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Chunyuan Li"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/liuhaotian",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Haotian Liu"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/jw2yang",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Jianwei Yang"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/wyngjf",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Jianfeng Gao"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/uuu6",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Yelong Shen"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tom tat"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Viec dieu chinh chi dao hinh anh gan day da cho thay su tien bo khich le voi cac mo hinh da phuong tien lon nguon mo (LMM) nhu LLaVA va MiniGPT-4. Tuy nhien, hau het cac nghien cuu ve LMM nguon mo duoc thuc hien voi cac mo hinh co 13B tham so hoac nho hon. Trong bai bao nay, chung toi trinh bay mot nghien cuu thuc nghiem ve viec mo rong LLaVA len toi 33B va 65B/70B, va chia se nhung phat hien tu cac kham pha cua chung toi ve do phan giai hinh anh, tron du lieu va cac phuong phap dao tao tiet kiem tham so nhu LoRA/QLoRA. Nhung nay duoc danh gia dua tren anh huong cua chung doi voi kha nang da phuong tien va ngon ngu khi hoan thanh cac nhiem vu thuc te trong moi truong hoang da. Chung toi tim thay viec mo rong LMM lien tuc cai thien hieu suat mo hinh va cai thien kha nang ngon ngu, va hieu suat cua viec dieu chinh LoRA/QLoRA cua LMM tuong duong voi hieu suat cua viec tinh chinh toan bo mo hinh. Ngoai ra, nghien cuu nay noi bat tam quan trong cua viec tang do phan giai hinh anh va tron du lieu da phuong tien-ngon ngu de cai thien hieu suat LMM, va dieu chinh chi dao hinh anh doi khi co the cai thien kha nang ngon ngu nguyen ban cua LMM. Chung toi hy vong rang nghien cuu nay lam cho nghien cuu LMM tien tien hon tai quy mo lon hon tro nen de tiep can hon, do do giup xay dung cac co so du lieu manh me hon cho cac nghien cuu tuong lai. Ma nguon va cac diem kiem tra se duoc cong khai."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "url": "https://arxiv.org/abs/2309.09958",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Xem trang arXiv"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "https://arxiv.org/pdf/2309.09958",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Xem PDF"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Binh luan"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Bai bao \"Nghien cuu thuc nghiem ve viec mo rong cac mo hinh da phuong tien lon duoc dieu chinh chi dao\" nham cau noi khoang cach trong viec hieu cac hau qua cua viec mo rong cac mo hinh da phuong tien lon (LMM). Cac mo hinh nay duoc thiet ke de xu ly ca van ban va hinh anh, lam cho chung vo cung gia tri cho cac nhiem vu doi hoi su hieu biet da phuong tien."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Nhung diem chinh:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Mo rong hon 13B"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Cac nghien cuu truoc day ve LMM nguon mo chu yeu tap trung vao cac mo hinh voi toi da 13B tham so. Nghien cuu nay dua no len mot bac cao hon bang cach mo rong LLaVA len toi 33B va tham chi 65B/70B, cung cap cac hieu biet ve dong luc cua cac mo hinh lon hon."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Cac linh vuc kham pha"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Nghien cuu tap trung vao cac khia canh nhu do phan giai hinh anh, tron du lieu, va cac phuong phap dao tao tiet kiem tham so nhu LoRA/QLoRA, dua ra anh sang ve anh huong cua chung doi voi hieu suat mo hinh."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Loi ich lien tuc tu viec mo rong"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Nghien cuu tim thay viec tang kich thuoc LMM lien tuc cai thien hieu suat cua no. Hon nua, mot so ky thuat dao tao nhu LoRA/QLoRA co the dat duoc hieu suat tuong duong voi viec tinh chinh toan bo mo hinh, nhung voi hieu qua tham so tot hon."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Do phan giai & Tron du lieu"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Nghien cuu noi bat tam quan trong cua viec tang do phan giai hinh anh va su can thiet phai tron du lieu da phuong tien-ngon ngu de nhan ra hieu suat tot hon tu LMM."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Cai thien kha nang ngon ngu"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Thu vi la, viec dieu chinh chi dao hinh anh doi khi tham chi co the tang cuong kha nang ngon ngu nguyen ban cua LMM, lam noi bat them ban chat giao thoa cua viec hoc da phuong tien."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tac dong thuc te tiem nang:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Ung dung da dang"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Voi kha nang xu ly ca van ban va hinh anh, LMM co the duoc trien khai trong mot loat cac ung dung, nhu tra loi cau hoi hinh anh, viet chu thich cho hinh anh, kiem soat noi dung, va hon nua."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Tang cuong hieu suat"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Cac to chuc va nha nghien cuu co the loi ich tu viec tang cuong hieu suat bang cach mo rong LMM, co the dan den ket qua chinh xac hon trong cac nhiem vu thuc te."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Tinh chinh hieu qua chi phi"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Cac ky thuat nhu LoRA/QLoRA co the cho phep cac nha nghien cuu dat duoc hieu suat cao ma khong can den chi phi cua viec tinh chinh toan bo mo hinh, mang lai tiet kiem chi phi va thoi gian."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Cai thien phan tich hinh anh"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Viec chu trong vao dau vao hinh anh do phan giai cao co the cai thien chat luong xu ly du lieu hinh anh trong cac linh vuc khac nhau, tu hinh anh y te den phan tich hinh anh ve tinh."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Thuc day khoa hoc mo"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Y dinh cua cac tac gia lam cho ma nguon va cac diem kiem tra cong khai khuyen khich cong dong AI rong lon thuc nghiem, sao chep, va co the cai thien cac phat hien."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Thach thuc:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Rang buoc tinh toan"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Viec mo rong len cac mo hinh lon nhu 65B/70B doi hoi nguon luc tinh toan dang ke, co the khong duoc truy cap cho nhieu nha nghien cuu va phat trien."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Chuyen doi sang kich ban thuc te"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Mac du nghien cuu cung cap cac co so du lieu vung chac, viec trien khai thuc te trong cac nganh cu the co the doi hoi nhung dieu chinh theo linh vuc."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Voi su chu trong ngay cang tang ve su hieu biet da phuong tien trong vo so ung dung, tu thuong mai dien tu den y te:"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Toi danh gia tac dong thuc te cua bai bao nay la 9 tren 10."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Nhung hieu biet do bai bao cung cap co the anh huong dang ke den viec thiet ke, dao tao, va trien khai cac he thong da phuong tien trong tuong lai, mo duong cho nhung tuong tac nguoi-may AI truc quan va hieu qua hon trong cac linh vuc."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "researchpaper9",
+            "height": 816,
+            "width": 1456,
+            "filename": "researchpaper9.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Binh luan va danh gia tom tat",
+      "title": "Nghien cuu thuc nghiem ve viec mo rong LLM duoc dieu chinh chi dao",
+      "twitterCard": null,
+      "image": {
+        "width": 1456,
+        "height": 816,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      }
+    }
+  },
+  "topics": [
+    "LLM",
+    "Instruction Tuning",
+    "Multimodal"
+  ]
+}

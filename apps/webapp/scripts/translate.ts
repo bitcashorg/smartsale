@@ -1,3 +1,4 @@
+import { locales } from '@/dictionaries/locales'
 import { BlogArticleData } from '@/services/datocms'
 import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
 import {
@@ -9,8 +10,6 @@ import { openAiTranslate } from '@/services/openai'
 
 import * as fs from 'fs/promises'
 import * as path from 'path'
-
-const locales: SiteLocale[] = ['es']
 
 async function copyJsonFiles(locale: SiteLocale) {
   // this is called from the root of the repo
@@ -121,6 +120,24 @@ async function copyJsonFiles(locale: SiteLocale) {
   }
 }
 
-locales.forEach(locale => {
-  copyJsonFiles(locale)
-})
+const maxConcurrent = 2
+let activeTasks = 0
+
+function processLocale() {
+  if (activeTasks < maxConcurrent && locales.length > 0) {
+    const locale = locales.shift()
+    if (locale && locale !== 'en') {
+      // Skip if locale is 'en'
+      activeTasks++
+      copyJsonFiles(locale).then(() => {
+        activeTasks--
+        processLocale() // Process next locale after finishing current one
+      })
+      processLocale() // Start another task if under maxConcurrent
+    } else {
+      processLocale() // Continue to the next locale if 'en' is skipped
+    }
+  }
+}
+
+processLocale()

@@ -1,0 +1,604 @@
+{
+  "relatedBlogs": [],
+  "blogContent": {
+    "id": "198277160",
+    "topics": [
+      "LLM",
+      "Agentes",
+      "Jogos"
+    ],
+    "title": "MindAgent: Interação Emergente em Jogos",
+    "slug": "mindagent-emergent-gaming-interaction",
+    "authorName": "Prof. Otto Nomos",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+    },
+    "_publishedAt": "2024-05-27T03:32:58+01:00",
+    "description": "Comentário Abstrato & Avaliação",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Publicado em 18 de Set"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Autores:"
+                    },
+                    {
+                      "url": "https://huggingface.co/nikepupu",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Ran Gong"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ",Qiuyuan Huang,"
+                    },
+                    {
+                      "url": "https://huggingface.co/jeasinema",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Xiaojian Ma"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/Hoivo63",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Hoi Vo"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/ZaneDurante",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Zane Durante"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/yusukenoda",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Yusuke Noda"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/zlzheng",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Zilong Zheng"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ",Song-Chun Zhu,Demetri Terzopoulos,Li Fei-Fei,"
+                    },
+                    {
+                      "url": "https://huggingface.co/wyngjf",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Jianfeng Gao"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Resumo"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Modelos de Linguagem de Grande Escala (LLMs) têm a capacidade de realizar agendamentos complexos em um sistema multiagente e podem coordenar esses agentes para completar tarefas sofisticadas que exigem colaboração extensiva. No entanto, apesar da introdução de numerosos frameworks de jogos, a comunidade tem benchmarks insuficientes para a construção de infraestrutura de colaboração multiagentes geral que englobe tanto colaborações LLM quanto humanos-NPCs. Neste trabalho, propomos uma infraestrutura inovadora - MindAgent - para avaliar capacidades emergentes de planejamento e coordenação para interação em jogos. Em particular, nossa infraestrutura aproveita o framework de jogos existente, para i) exigir entendimento do coordenador para um sistema multiagente, ii) colaborar com jogadores humanos através de instruções adequadas não afinadas, e iii) estabelecer um aprendizado em contexto em prompts de poucos exemplos com feedback. Além disso, introduzimos CUISINEWORLD, um novo cenário de jogo e benchmark relacionado que despacha uma eficiência de colaboração multiagente e supervisiona vários agentes jogando o jogo simultaneamente. Realizamos avaliações abrangentes com novo auto-métrico CoS para calcular a eficiência da colaboração. Finalmente, nossa infraestrutura pode ser implantada em cenários de jogos do mundo real em uma versão VR personalizada de CUISINEWORLD e adaptada no domínio de jogos mais amplo de Minecraft. Esperamos que nossas descobertas sobre LLMs e a nova infraestrutura para agendamento e coordenação de uso geral possam ajudar a lançar luz sobre como essas habilidades podem ser obtidas aprendendo com grandes corpora de linguagem."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "url": "https://arxiv.org/abs/2309.09971",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Ver página arXiv"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "https://arxiv.org/pdf/2309.09971",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Ver PDF"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Comentário"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "O artigo \"MindAgent: Interação Emergente em Jogos\" aprofunda-se na interseção de Modelos de Linguagem de Grande Escala (LLMs) e suas capacidades em sistemas multiagentes, especificamente em cenários de jogos. A pesquisa propõe uma nova infraestrutura para avaliar e implementar tais capacidades dentro de um contexto de jogo."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Principais Conclusões:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Agendamento Complexo com LLMs"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Os autores enfatizam a proeza dos LLMs em gerenciar e coordenar vários agentes para realizar tarefas intrincadas."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Infraestrutura MindAgent"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": O artigo propõe a infraestrutura MindAgent, especificamente projetada para avaliar as capacidades emergentes dos LLMs em cenários de jogos, considerando planejamento e coordenação."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Cenário CUISINEWORLD"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Os autores introduzem um novo cenário de jogo - CUISINEWORLD - feito sob medida para avaliar a eficiência da colaboração multiagente dentro de um jogo. Serve como um campo de teste para ver como os LLMs podem colaborar com jogadores humanos e coordenar vários agentes jogando simultaneamente."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Versão VR Personalizada"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": MindAgent não é apenas teórico; tem aplicações práticas. A infraestrutura pode ser adaptada e utilizada em situações de jogos do mundo real, incluindo uma versão VR de CUISINEWORLD e o domínio expansivo de Minecraft."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Métrica de Eficiência"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Uma nova métrica, CoS, é introduzida para quantificar a eficiência da colaboração, fornecendo uma maneira padronizada de avaliar e comparar esses sistemas."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Impacto Potencial no Mundo Real:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Cenários Avançados de Jogos"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": A integração de LLMs em jogos poderia levar a ambientes de jogo mais dinâmicos e complexos, melhorando a experiência do usuário e oferecendo desafios únicos."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Além dos Jogos"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Embora a aplicação imediata seja em jogos, a coordenação multiagente tem implicações de longo alcance em áreas como veículos autônomos, robótica e gestão da cadeia de suprimentos."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Colaboração com Jogadores Humanos"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Ao facilitar a colaboração perfeita entre agentes de IA e jogadores humanos, essa pesquisa poderia pioneirar uma nova era de jogos multiplayer cooperativos, onde os jogadores se unem a agentes inteligentes para alcançar objetivos comuns."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Integração VR"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": A adaptação VR sugere uma mudança para experiências de jogo mais imersivas, combinando a sofisticação da IA com a imersão da realidade virtual."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Implicações Educacionais e de Treinamento"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Cenários multiagentes poderiam ser empregados em simulações educacionais ou de treinamento, permitindo que estudantes ou trainees interajam com agentes inteligentes para uma experiência de aprendizado mais abrangente."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Desafios:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Restrições Computacionais"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Implementar LLMs em cenários de jogos em tempo real exigiria uma quantidade substancial de poder computacional."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Segurança e Jogo Justo"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Garantir que os agentes de IA não dominem ou diminuam a experiência para os jogadores humanos é crucial. O desafio está em encontrar um equilíbrio para garantir que os agentes de IA aprimorem e não ofusquem a experiência de jogo."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Adaptação a Diferentes Gêneros"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Embora a pesquisa forneça uma base sólida, diferentes gêneros de jogos (por exemplo, estratégia, RPG, ação) podem exigir diferentes implementações ou adaptações."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Considerando as implicações em jogos e aplicações potenciais além do domínio dos jogos:"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Eu classificaria o impacto real deste artigo como 8 de 10."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "A pesquisa abre caminho para experiências de jogo avançadas e oferece insights que podem ser aplicados em vários domínios onde sistemas multiagentes desempenham um papel fundamental. As descobertas poderiam revolucionar como percebemos e projetamos experiências colaborativas tanto em cenários virtuais quanto no mundo real."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "researchpaper8a",
+            "height": 816,
+            "width": 1456,
+            "filename": "researchpaper8a.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Comentário Abstrato & Avaliação\n",
+      "title": "MindAgent: Interação Emergente em Jogos",
+      "twitterCard": null,
+      "image": {
+        "width": 1456,
+        "height": 816,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
+      }
+    }
+  },
+  "topics": [
+    "LLM",
+    "Agents",
+    "Gaming"
+  ]
+}

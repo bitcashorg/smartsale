@@ -1,0 +1,1551 @@
+{
+  "relatedBlogs": [
+    {
+      "id": "190259319",
+      "topics": [
+        "摘要",
+        "LLM",
+        "训练"
+      ],
+      "title": "潜在空间播客 2023/8/16 [摘要] - 训练LLM的数学 — 与Eleuther AI的Quentin Anthony",
+      "slug": "latent-space-podcast-8-16-23-summary-the-mathematics-of-training-llms-with-que",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:19:45+01:00",
+      "description": "与Eleuther AI的Quentin Anthony一起探索训练LLM背后的数学。深入了解《Transformers Math 101》文章并掌握分布式训练技术以实现GPU性能的峰值。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692324088-screenshot-2023-08-17-at-9-59-17-pm.png"
+      },
+      "seo": {
+        "title": "潜在空间播客 2023/8/16 [摘要] 训练LLM的数学",
+        "description": "深入了解《Transformers Math 101》文章并掌握分布式训练技术以实现GPU性能的峰值。"
+      }
+    },
+    {
+      "id": "190259129",
+      "topics": [
+        "LLM",
+        "硬件",
+        "摘要",
+        "边缘"
+      ],
+      "title": "潜在空间播客 2023/8/10 [摘要]：LLM无处不在：使用MLC在浏览器和iPhone上运行70B模型 — 与CMU/OctoML的Tianqi Chen",
+      "slug": "latent-space-podcast-8-10-23-summary-llms-everywhere-running-70b-models-in-browse",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:18:37+01:00",
+      "description": "与Tianqi Chen一起探索MLC的魔力：在浏览器和iPhone上部署70B模型。深入了解XGBoost、TVM的创建及通用AI部署的未来。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1691894611-screenshot-2023-08-12-at-10-42-43-pm.png"
+      },
+      "seo": {
+        "title": "潜在空间 2023/8/10 [摘要]：LLM无处不在",
+        "description": "探索在浏览器和iPhone上部署70B模型。深入了解XGBoost、TVM的创建及通用AI部署的未来。"
+      }
+    },
+    {
+      "id": "190259087",
+      "topics": [
+        "摘要",
+        "LLM",
+        "代码",
+        "开源",
+        "小模型"
+      ],
+      "title": "潜在空间播客 2023/8/4 [摘要] 潜在空间 x AI Breakdown 跨界播客！",
+      "slug": "latent-space-podcast-8-4-23-summary-latent-space-x-ai-breakdown-crossover-pod",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:16:33+01:00",
+      "description": "加入AI Breakdown和潜在空间的夏季AI技术综述：深入了解GPT4.5、Llama 2、AI工具、崛起的AI工程师等！",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1691539617-screenshot-2023-08-08-at-8-02-52-pm.png"
+      },
+      "seo": {
+        "title": "潜在空间播客 2023/8/4 [摘要] AI Breakdown 跨界",
+        "description": "深入了解GPT4.5、Llama 2、AI工具、崛起的AI工程师等！"
+      }
+    },
+    {
+      "id": "190259111",
+      "topics": [
+        "摘要",
+        "Transformers",
+        "训练",
+        "开源"
+      ],
+      "title": "潜在空间播客 2023/7/26 [摘要] FlashAttention 2：让Transformers快800% - Together AI的Tri Dao",
+      "slug": "latent-space-podcast-7-26-23-summary-flashattention-2-making-transformers-800-fas",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:14:13+01:00",
+      "description": "与Tri Dao一起发现FlashAttention如何通过FlashAttention 2革命性地提高AI速度，深入了解斯坦福的Hazy Lab及未来的AI见解。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1691543194-screenshot-2023-08-08-at-8-43-59-pm.png"
+      },
+      "seo": {
+        "title": "潜在空间播客 2023/7/26 [摘要] FlashAttention 2",
+        "description": "与Tri Dao一起发现FlashAttention如何通过FlashAttention 2革命性地提高AI速度。"
+      }
+    },
+    {
+      "id": "190259172",
+      "topics": [
+        "摘要",
+        "LLM",
+        "开源",
+        "小模型"
+      ],
+      "title": "潜在空间播客 2023/7/19 [摘要] - Llama 2：新的开放LLM SOTA（与Nathan Lambert、Matt Bornstein、Anton Troynikov、Russell Kaplan、Whole Mars Catalog等）",
+      "slug": "latent-space-podcast-7-19-23-summary-llama-2-the-new-open-llm-sota-ft-nathan-lamb",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:12:38+01:00",
+      "description": "与专家Nathan Lambert、Matt Bornstein等一起探索Llama 2，最新的AI突破。深入了解数据集、基准测试和AI预测。Llama的见解和戏剧在这顶级播客中等待着你！",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1691968295-screenshot-2023-08-13-at-7-11-06-pm.png"
+      },
+      "seo": {
+        "title": "潜在空间播客 2023/7/19 [摘要] - Llama 2",
+        "description": "深入了解数据集、基准测试和AI预测。Llama的见解和戏剧在这顶级播客中等待着你！"
+      }
+    },
+    {
+      "id": "190259191",
+      "topics": [
+        "摘要",
+        "代码",
+        "LLM"
+      ],
+      "title": "潜在空间播客 2023/7/10 [摘要] - 代码解释器 == GPT 4.5（与Simon Willison、Alex Volkov、Aravind Srinivas、Alex Graveley等）",
+      "slug": "latent-space-podcast-7-10-23-summary-code-interpreter-gpt-4-5-w-simon-willison-al",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:09:26+01:00",
+      "description": "探索ChatGPT的代码解释器：AI的游戏规则改变者。与Simon、Alex及顶级AI专家一起深入了解其1000倍的能力飞跃。#代码增强推理 #GPT4_5",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692048911-screenshot-2023-08-14-at-3-34-05-pm.png"
+      },
+      "seo": {
+        "title": "潜在空间播客 [摘要] 代码解释器 = GPT 4.5",
+        "description": "探索ChatGPT的代码解释器：AI的游戏规则改变者。与Simon、Alex及顶级AI专家一起深入了解其1000倍的能力飞跃。"
+      }
+    },
+    {
+      "id": "190259216",
+      "topics": [
+        "摘要",
+        "开源"
+      ],
+      "title": "潜在空间播客 2023/7/2 [摘要] AI趋势：潜在空间 x Practical AI 跨界播客！",
+      "slug": "latent-space-podcast-7-2-23-summary-ai-trends-a-latent-space-x-practical-ai-cross",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:08:36+01:00",
+      "description": "探索Practical AI和潜在空间的融合，深入探讨2023年的顶级AI趋势，回顾突出的集数，并分享在AI演变中导航的见解。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692146916-screenshot-2023-08-15-at-5-20-38-pm.png"
+      },
+      "seo": {
+        "title": "潜在空间播客 2023/7/2 [摘要] AI趋势",
+        "description": "2023年的顶级AI趋势，回顾突出的集数，并分享在AI演变中导航的见解。"
+      }
+    },
+    {
+      "id": "190259238",
+      "topics": [
+        "硬件",
+        "LLM",
+        "摘要"
+      ],
+      "title": "潜在空间播客 2023/6/20 [摘要] - 商品化Petaflop — 与tiny corp的George Hotz",
+      "slug": "latent-space-podcast-6-20-23-summary-commoditizing-the-petaflop-with-george-ho",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:07:15+01:00",
+      "description": "tiny corp的George Hotz挑战Nvidia和Google！深入了解AMD合作、ggml、Mojo、Elon和GPT-4的见解，以及AI女友的窥探。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692154615-screenshot-2023-08-15-at-10-55-40-pm.png"
+      },
+      "seo": {
+        "title": "潜在空间播客 2023/6/20 [摘要] - George Hotz",
+        "description": "tiny corp的George Hotz挑战Nvidia和Google！AMD合作、ggml、Mojo、Elon和GPT-4的见解，以及AI女友的窥探。"
+      }
+    },
+    {
+      "id": "190259294",
+      "topics": [
+        "LLM",
+        "功能",
+        "摘要"
+      ],
+      "title": "潜在空间播客 2023/6/14 [摘要] - 紧急播客：OpenAI的新功能API，75%价格下降，4倍上下文长度（与Alex Volkov、Simon Willison、Riley Goodside、Joshua Lochner、Stefania Druga、Eric Elliott、Mayo Oshin等）",
+      "slug": "latent-space-podcast-6-14-23-summary-emergency-pod-openai-s-new-functions-api-75",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:05:04+01:00",
+      "description": "与Scale、Microsoft、Pinecone和Huggingface的顶级AI工程师一起探索2023年6月的OpenAI更新。深入了解代码与LLM范式并发现递归函数代理。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692221668-screenshot-2023-08-16-at-5-32-29-pm.png"
+      },
+      "seo": {
+        "title": "潜在空间播客 2023/6/20 [摘要] - 紧急播客",
+        "description": "与Scale、Microsoft、Pinecone和Huggingface的顶级AI工程师一起探索2023年6月的OpenAI更新。"
+      }
+    },
+    {
+      "id": "190260528",
+      "topics": [
+        "摘要",
+        "LLM",
+        "UX"
+      ],
+      "title": "潜在空间播客 2023/6/1 [摘要] - 构建AI × UX Scenius — 与Notion AI的Linus Lee",
+      "slug": "latent-space-podcast-6-1-23-summary-building-the-ai-x-ux-scenius-with-linus-le",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:00:12+01:00",
+      "description": "探索Notion AI对AI和UX的变革性方法。深入了解AI增强工作空间的未来，超越聊天界面的价值，以及有效知识工作的见解。包括AI×UX NYC聚会的回顾！",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692390655-screenshot-2023-08-18-at-4-28-51-pm.png"
+      },
+      "seo": {
+        "title": "潜在空间播客 2023/6/1 [摘要] - AI × UX Scenius",
+        "description": "探索Notion AI对AI和UX的变革性方法。"
+      }
+    },
+    {
+      "id": "190260557",
+      "topics": [
+        "摘要",
+        "代码",
+        "LLM",
+        "代理"
+      ],
+      "title": "潜在空间播客 2023/5/25 [摘要] - 使用AI代理调试互联网 – 与Codium AI和AutoGPT的Itamar Friedman",
+      "slug": "latent-space-podcast-5-25-23-summary-debugging-the-internet-with-ai-agents-with",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:58:27+01:00",
+      "description": "与Codium AI的Itamar Friedman一起探索AI的未来，主题为“调试互联网”。深入了解“极端DRY”代理、规范和测试的快速同步，以及代码与测试之间的平衡。还有来自Toran的见解和AutoGPT路线图的独家预览！",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692397413-screenshot-2023-08-18-at-6-10-09-pm.png"
+      },
+      "seo": {
+        "title": "潜在空间播客 2023/5/25 [摘要] 调试互联网",
+        "description": "深入了解“极端DRY”代理、规范和测试的快速同步，以及代码与测试之间的平衡。"
+      }
+    },
+    {
+      "id": "190260577",
+      "topics": [
+        "LLM",
+        "小模型"
+      ],
+      "title": "潜在空间播客 2023/5/20 [摘要] - MPT-7B和上下文=无限的开始 — 与MosaicML的Jonathan Frankle和Abhinav Venigalla",
+      "slug": "latent-space-podcast-5-20-23-summary-mpt-7b-and-the-beginning-of-context-infinity",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:57:33+01:00",
+      "description": "深入了解MosaicML的9天、20万美元的“llongboi”MPT-7B训练、数据准备见解及开放AI模型的崛起，与专家Frankle和Venigalla一起。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692409795-screenshot-2023-08-18-at-9-49-21-pm.png"
+      },
+      "seo": {
+        "title": "潜在空间播客 2023/6/25 [摘要] MosaicML",
+        "description": "深入了解MosaicML的9天、20万美元的“llongboi”MPT-7B训练、数据准备见解及开放AI模型的崛起。"
+      }
+    },
+    {
+      "id": "190260597",
+      "topics": [
+        "LLM",
+        "结构化数据"
+      ],
+      "title": "潜在空间播客 2023/5/15 [摘要] - 保证LLM输出的质量和结构 - 与Guardrails AI的Shreya Rajpal",
+      "slug": "latent-space-podcast-5-15-23-summary-guaranteed-quality-and-structure-in-llm-outp",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:56:26+01:00",
+      "description": "与Guardrails AI的Shreya Rajpal一起探索第12集：深入了解验证LLM输出，通过重新提问循环优化答案，并为模型建立SLA。掌握AI质量保证的细微差别。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692495732-screenshot-2023-08-19-at-9-38-27-pm.png"
+      },
+      "seo": {
+        "title": "潜在空间播客 2023/5/15 [摘要] 质量LLM输出",
+        "description": "与Guardrails AI的Shreya Rajpal一起探索第12集：深入了解验证LLM输出。"
+      }
+    },
+    {
+      "id": "190260606",
+      "topics": [
+        "LLM",
+        "训练",
+        "代理",
+        "多模态"
+      ],
+      "title": "潜在空间播客 2023/5/8 [摘要] - AI创始基因：早期、快速构建和相信伟大 — 与Lexica的Sharif Shameem",
+      "slug": "latent-space-podcast-5-8-23-summary-the-ai-founder-gene-being-early-building-fast",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:52:09+01:00",
+      "description": "第11集与Lexica的Sharif Shameem：深入了解AI创始人的心态，揭示开创性创新、构建改变游戏规则的技术、训练模型的秘密，以及代理和基因组测序的有趣潜力。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692501984-screenshot-2023-08-19-at-11-24-05-pm.png"
+      },
+      "seo": {
+        "title": "潜在空间播客 2023/5/8 [摘要] AI创始基因",
+        "description": "第11集与Lexica的Sharif Shameem：深入了解AI创始人的心态，揭示开创性创新的秘密。"
+      }
+    },
+    {
+      "id": "190260640",
+      "topics": [
+        "摘要",
+        "开源",
+        "LLM"
+      ],
+      "title": "潜在空间播客 2023/5/5 [摘要] - 无护城河：封闭AI的开源觉醒 — 与Simon Willison",
+      "slug": "latent-space-podcast-5-5-23-summary-no-moat-closed-ai-gets-its-open-source-wakeup",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:49:18+01:00",
+      "description": "与Simon Willison一起探索“无护城河：封闭AI的开源觉醒”。深入了解泄露的Google Moat备忘录见解、Google Brain Drain和Mojo的速度提升。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692566921-screenshot-2023-08-20-at-5-25-53-pm.png"
+      },
+      "seo": {
+        "title": "潜在空间播客 2023/5/5 [摘要] - 无护城河",
+        "description": "与Simon Willison一起探索“无护城河：封闭AI的开源觉醒”。深入了解泄露的Google Moat备忘录见解。"
+      }
+    },
+    {
+      "id": "190260671",
+      "topics": [
+        "LLM",
+        "代码",
+        "摘要"
+      ],
+      "title": "潜在空间播客 2023/5/3 [摘要] - 在1周内训练SOTA代码LLM并量化氛围 — 与Replit的Reza Shabani",
+      "slug": "latent-space-podcast-5-3-23-summary-training-a-sota-code-llm-in-1-week-and-quanti",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:46:08+01:00",
+      "description": "第10集与Replit的Reza Shabani：深入了解快速训练的最先进代码LLM，探索Replit Ghostwriter的未来，并从金融到AI的旅程。发现从Kaplan到Chinchilla的转变等！",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692584998-screenshot-2023-08-20-at-10-17-26-pm.png"
+      },
+      "seo": {
+        "title": "潜在空间播客 2023/5/3 [摘要] - SOTA代码LLM",
+        "description": "第10集与Replit的Reza Shabani：深入了解快速训练的最先进代码LLM！"
+      }
+    },
+    {
+      "id": "190629271",
+      "topics": [
+        "LLM",
+        "小模型",
+        "摘要"
+      ],
+      "title": "潜在空间播客 2023/4/28 [摘要] - 映射真正开放模型的未来并以30美元训练Dolly — 与Databricks的Mike Conover",
+      "slug": "latent-space-podcast-4-28-23-summary-mapping-the-future-of-truly-open-models-and",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:33:12+01:00",
+      "description": "与Databricks的Mike Conover一起探索开放模型的未来。深入了解Dolly的创建、从1.0到2.0的过渡及其开发背后的影响。第9集涉及模型基础设施、Databricks的愿景等。#AI #开放模型 #Dolly",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1694038707-screenshot-2023-09-06-at-3-12-24-pm.png"
+      },
+      "seo": {
+        "title": "潜在空间播客 2023/4/28 [摘要] - Mike of Databricks",
+        "description": "第9集涉及模型基础设施、Databricks的愿景等。#AI #开放模型 #Dolly"
+      }
+    },
+    {
+      "id": "191164291",
+      "topics": [
+        "LLM",
+        "企业",
+        "摘要"
+      ],
+      "title": "潜在空间播客 2023/4/21 [摘要] - 企业的AI驱动搜索 — 与Glean的Deedy Das",
+      "slug": "latent-space-podcast-4-21-23-summary-ai-powered-search-for-the-enterprise-with",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:31:31+01:00",
+      "description": "第8集：与Glean的Deedy Das一起深入探讨企业搜索中的AI。解开创建AI搜索巨头的挑战，Google与ChatGPT的比较，AI基础设施的复杂性，识别AI生成的文本，以及为什么企业需要的不仅仅是文档QA。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1694134074-screenshot-2023-09-07-at-5-43-48-pm.png"
+      },
+      "seo": {
+        "title": "潜在空间播客 2023/4/21 [摘要] - 与Deedy Das",
+        "description": "第8集：与Glean的Deedy Das一起深入探讨企业搜索中的AI。解开创建AI搜索巨头的挑战，Google与ChatGPT的比较..."
+      }
+    },
+    {
+      "id": "191165673",
+      "topics": [
+        "摘要",
+        "视觉"
+      ],
+      "title": "潜在空间播客 2023/4/13 [摘要] - Segment Anything模型和计算机视觉的难题 — 与Roboflow的Joseph Nelson",
+      "slug": "latent-space-podcast-4-13-23-summary-segment-anything-model-and-the-hard-problems",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:30:03+01:00",
+      "description": "与Joseph Nelson一起探索第7集，讨论Meta的Segment Anything模型。深入了解计算机视觉的未来，OCR的重要性，图像分割等。#Roboflow #AI",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1694150379-screenshot-2023-09-07-at-10-15-52-pm.png"
+      },
+      "seo": {
+        "title": "潜在空间播客 2023/4/13 [摘要] - Segment Anything",
+        "description": "深入了解计算机视觉的未来，OCR的重要性，图像分割等。#Roboflow #AI"
+      }
+    }
+  ],
+  "blogContent": {
+    "id": "190259333",
+    "topics": [
+      "LLM",
+      "摘要",
+      "用户体验"
+    ],
+    "title": "潜在空间播客 2023年6月8日 [摘要] - 从RLHF到RLHB：学习人类行为的案例 - 与Amplitude的Jeffrey Wang和Joe Reeve",
+    "slug": "latent-space-podcast-6-8-23-summary-from-rlhf-to-rlhb-the-case-for-learning-from",
+    "authorName": "Prof. Otto Nomos",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+    },
+    "_publishedAt": "2023-10-05T09:02:33+01:00",
+    "description": "与Jeffrey Wang和Joe Reeve一起探索潜在空间直播中的AI和分析！深入了解为什么AI重视分析以及第一方行为数据的力量。",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1692386432-screenshot-2023-08-18-at-3-17-04-pm.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "原始链接："
+                    },
+                    {
+                      "url": "https://www.latent.space/p/amplitude#details",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "从RLHF到RLHB：学习人类行为的案例 - 与Amplitude的Jeffrey Wang和Joe Reeve"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "摘要"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Amplitude的AI与Alessio、Jeffrey、Joe和Swyx"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "主持人Alessio首先解释了播客的重点是AI研究及其应用，强调了节目的技术导向。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Amplitude的联合创始人兼首席架构师Jeffrey介绍了自己。他在产品分析领域工作了大约十年，帮助企业理解用户行为数据以做出明智的产品决策。他发现最近的AI趋势特别令人兴奋，认识到AI在产品数据和开发中的重要性日益增加。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Joe Reeve分享了他在科技初创公司的背景，并提到他目前在Amplitude领导AI研发的角色。他和Jeffrey都对他们正在探索的创新表示热情。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "讨论转向Amplitude的AI之旅。Jeffrey概述了Amplitude的主要目标是帮助客户利用他们的产品数据来增强他们的产品。随着数字产品生成大量数据，筛选这些信息具有挑战性。Amplitude旨在弥合大量数据与可操作见解之间的差距，将其视为一个以AI为中心的问题。他还回顾了Amplitude的起源，强调了产品分析在游戏领域的重要性，在那里对用户数据的细致分析至关重要。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Swyx提到其他像Slack和Discord这样的科技巨头也起源于游戏项目。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "讨论转向当前的研发工作。Joe强调了他们的双重方法：在他们的产品中实施AI并支持客户也这样做。他们开发了一个框架，通过检查协作接触点、深度嵌入功能和创建补充AI工具来识别AI集成的领域。他们最近的一个工具允许用户输入查询，然后将其转换为图表。然而，他们在AI模型丢失上下文或生成错误时面临挑战。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "本质上，讨论提供了关于像Amplitude这样的科技公司如何在不断发展的AI世界中导航、应对挑战并展望未来的见解。"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "screenshot-2023-08-18-at-3-17-04-pm",
+            "height": 550,
+            "width": 1674,
+            "filename": "screenshot-2023-08-18-at-3-17-04-pm.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692386432-screenshot-2023-08-18-at-3-17-04-pm.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "在产品演变中利用AI：挑战与突破"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Swyx和Joe讨论了机器学习模型（ML）和大型语言模型（LLM）在产品开发中的演变和应用。"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "发布的产品"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Joe详细介绍了他们推出的一个名为“问题到图表”的功能，允许用户提出问题并获得图表作为响应。这个新功能是他们LLM计划的一部分，并已向AI设计合作伙伴推出。"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "与现有ML模型的对比"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Swyx指出使用传统ML模型和新AI计划之间的潜在冲突。Joe解释说，他们利用传统ML来缩小LLM的数据范围，后者处理更复杂的推理。"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "面临的挑战"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Joe提到两个关键痛点：幻觉和多查询问题。为了解决这些问题，他们正在跟踪推理并试图理解某些模型失败的原因。"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "在Amplitude产品中利用AI"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Joe强调他们使用自己的产品Amplitude来衡量和改进AI的性能。他们还在帮助公司使用Amplitude构建AI产品。"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "AI有效性的衡量"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Joe提到评估AI性能的挑战。许多公司难以理解他们的AI模型有多有效。通过衡量用户行为，如内容共享，Joe认为他们可以更准确地评估AI的价值。"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "AI的A-B测试潜力"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 他们讨论了生成用户界面和内容变体并测试其有效性的想法。这引发了关于自我改进产品和生成式AI如何自动化流程的更广泛讨论。Jeffrey举了一个例子，说明生成模型如何通过自动生成和优化内容来革新未来的文案写作。"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "本质上，讨论围绕AI在产品开发中的潜力、挑战以及为解决这些问题而创建的创新解决方案。"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "abls10-img1",
+            "height": 956,
+            "width": 956,
+            "filename": "abls10-img1.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692389086-abls10-img1.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "及时用户界面和分析的演变"
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 3,
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "emphasis"
+                      ],
+                      "value": "通过高级分析和AI塑造用户界面的未来"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Alessio"
+                            },
+                            {
+                              "type": "span",
+                              "value": "探讨了及时用户界面的概念，讨论了基于偏好的用户交互。他提到像Amplitude这样的平台如何从仅仅是仪表板驱动的设计转变为根据用户偏好提供定制显示。"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Jeffrey"
+                            },
+                            {
+                              "type": "span",
+                              "value": "设想了分析未来的多条路径。他支持SQL和代码的精确性，强调它们比自然语言更清晰。然而，他也认识到自然语言界面对那些不熟悉数据结构的人有用。Jeffrey认为自然语言表达和代码精确性之间的平衡将会演变，自然语言将引导初步查询阶段，而精确代码定义具体细节。"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Joe"
+                            },
+                            {
+                              "type": "span",
+                              "value": "强调了模型成为更集成功能的潜力。他强调用户理解模型行为并保持干预能力的必要性。Joe还强调了提供详细反馈数据以持续改进模型的重要性。"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Swyx"
+                            },
+                            {
+                              "type": "span",
+                              "value": "指出与聊天界面相关的挑战，提出了如何优化用户交互时间的问题。他提到Copilot在代码保留方面的独特指标作为衡量产品效力的成功方法。"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Jeffrey和Joe"
+                            },
+                            {
+                              "type": "span",
+                              "value": "进一步详细说明了选择合适AI模型的过程，倾向于使用通用模型进行探索。他们指出，一旦确认通用模型的效用，基于嵌入的方法在效率和成本效益方面更具优势。两人都强调了理解用户意图的重要性，Jeffrey强调了量化LLM匹配质量的挑战。"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "讨论以"
+                            },
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Alessio"
+                            },
+                            {
+                              "type": "span",
+                              "value": "提出关于模型质量与数据量和质量之间相互作用的思考结束，Jeffrey指出两者都是AI生态系统中的关键组成部分。"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "abls10-img2",
+            "height": 956,
+            "width": 956,
+            "filename": "abls10-img2.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692389129-abls10-img2.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "平衡：伦理AI训练与智能的本质"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "在Swyx、Joe、Jeffrey和Alessio之间的讨论中，主要话题围绕在用户数据上训练AI模型的伦理和最佳实践，特别是当用户可能不完全知情时。"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "使用用户数据进行训练的伦理"
+                            },
+                            {
+                              "type": "span",
+                              "value": ":"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "list",
+                          "style": "bulleted",
+                          "children": [
+                            {
+                              "type": "listItem",
+                              "children": [
+                                {
+                                  "type": "paragraph",
+                                  "children": [
+                                    {
+                                      "type": "span",
+                                      "value": "Swyx发起了讨论，询问在未经用户知情的情况下使用用户数据进行训练的伦理影响。"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "listItem",
+                              "children": [
+                                {
+                                  "type": "paragraph",
+                                  "children": [
+                                    {
+                                      "type": "span",
+                                      "value": "Joe强调了将个人身份信息（PII）排除在训练数据之外的重要性，以防止意外的信息泄露，例如AI意外生成社会安全号码。Joe提到正在进行的实验，以从提示和其他数据中剥离PII，同时仍然允许模型有效运行。"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "用户隐私与跟踪"
+                            },
+                            {
+                              "type": "span",
+                              "value": ":"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "list",
+                          "style": "bulleted",
+                          "children": [
+                            {
+                              "type": "listItem",
+                              "children": [
+                                {
+                                  "type": "paragraph",
+                                  "children": [
+                                    {
+                                      "type": "span",
+                                      "value": "Jeffrey谈到了用户隐私在跟踪方面的光谱。一方面，有些用户不希望任何跟踪，另一方面，有些用户对在互联网上被跟踪感到满意。挑战在于在跟踪一切和没有足够数据改进产品之间找到平衡。Jeffrey强调了使用伪匿名的第一方数据来改进产品而不侵犯隐私的重要性。"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "AI中的创造力与智能"
+                            },
+                            {
+                              "type": "span",
+                              "value": ":"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "list",
+                          "style": "bulleted",
+                          "children": [
+                            {
+                              "type": "listItem",
+                              "children": [
+                                {
+                                  "type": "paragraph",
+                                  "children": [
+                                    {
+                                      "type": "span",
+                                      "value": "在快速问答环节中，Jeffrey和Joe都谈到了AI在以前被认为是纯粹人类领域（如创造力）方面的进展。Jeffrey对AI在图像和文本生成等任务中的创造潜力感到惊讶，而Joe讨论了AI的快速进展，特别是它们如何与互联网集成。"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "定义智能"
+                            },
+                            {
+                              "type": "span",
+                              "value": ":"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "list",
+                          "style": "bulleted",
+                          "children": [
+                            {
+                              "type": "listItem",
+                              "children": [
+                                {
+                                  "type": "paragraph",
+                                  "children": [
+                                    {
+                                      "type": "span",
+                                      "value": "Jeffrey提出了一个关于智能本质的基本问题，指出传统的人类智能基准（如国际象棋）已被AI超越。讨论触及了自由意志等概念以及人类大脑与人工系统的效率对比。"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "收获"
+                            },
+                            {
+                              "type": "span",
+                              "value": ":"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "list",
+                          "style": "bulleted",
+                          "children": [
+                            {
+                              "type": "listItem",
+                              "children": [
+                                {
+                                  "type": "paragraph",
+                                  "children": [
+                                    {
+                                      "type": "span",
+                                      "value": "Jeffrey强调我们仍处于AI革命的早期阶段，暗示还有很多未到来。Joe强调了让机器增强人类能力而不是取代它们的重要性，倡导人类技能与机器能力之间的和谐。"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "会议以Swyx向听众开放提问结束。"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "abls10-img5",
+            "height": 956,
+            "width": 956,
+            "filename": "abls10-img5.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692389175-abls10-img5.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "定制AI查询机制在聊天机器人中的应用"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "emphasis"
+                      ],
+                      "value": "观众提问"
+                    },
+                    {
+                      "type": "span",
+                      "value": ": 一位观众询问了AI驱动的聊天机器人的内部工作，特别是对其模型及其如何将单个英语查询转化为多个子查询感兴趣。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "emphasis"
+                      ],
+                      "value": "Joe的回答"
+                    },
+                    {
+                      "type": "span",
+                      "value": ":"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "他们的系统使用自定义查询引擎而不是SQL。"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "他们对问题进行分类以确定图表类型，例如是否应该使用细分、线条或漏斗图表，以及图表命名。"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "他们最初考虑了Lang chain，这是一种很好的原型工具，但发现它有限制，因此开发了一个内部的TypeScript包装器。这使他们能够编写代码并推断系统内的事务。"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "目前，他们使用GPT-3.5，但正在考虑集成GPT-4和其他模型。他们还为不愿使用OpenAI的客户制定了备用计划，使用在较小数据集上训练的内部或开源模型。"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "emphasis"
+                      ],
+                      "value": "Jeffrey的见解"
+                    },
+                    {
+                      "type": "span",
+                      "value": ":"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "他们系统有效性的关键是充分分解问题，使他们能够引导模型做出具体决策，如图表类型选择。"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "GPT模型可能会被过多信息淹没，因此他们提供上下文提示并分解任务的方法产生了更高质量的输出。"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "emphasis"
+                      ],
+                      "value": "Swyx的问题与见解"
+                    },
+                    {
+                      "type": "span",
+                      "value": ":"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Swyx对他们使用LangChain的经验和数据库选择感兴趣。"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Joe提到他们在生产中使用嵌入或向量搜索已有一段时间，使用Postgres，最近转向PG Vector。"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Swyx强调了将分类法与实际数据分离的重要性，以确保数据保护并防止提示注入。"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "本质上，讨论围绕实现聊天机器人的复杂性、模型选择以及确保系统效率和安全性展开。"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "abls10-img6",
+            "height": 956,
+            "width": 956,
+            "filename": "abls10-img6.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692389365-abls10-img6.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "解读未来潜力：行为AI和预测模式"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "一位观众询问了一个新模型，暗示了一个“Amplitude GPT”，该模型在用户行为数据上训练，并对其能力感到好奇。Jeffrey阐明了此类模型的潜力。他预期在预测用户群体行为（如流失、购买或追加销售）方面具有更强的预测能力。Jeffrey的愿景扩展到理解会话中的更深层次模式，能够基于未来结果对用户进行无监督分类。这将有助于辨别行为差异背后的原因，并尝试回答产品分析中关于因果关系的挑战性问题。此外，Jeffrey强调了在自动记录用户会话的工具中数据解释的挑战，因为数据中存在噪音。理想情况下，一个完美的行为模型可以解释这些数据，消除手动仪表的需要。虽然这样的模型仍在猜测范围内，但目标是使分析过程更加无缝和直观。讨论以Swyx对听众表示感谢结束。"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "abls10-img4",
+            "height": 956,
+            "width": 956,
+            "filename": "abls10-img4.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692389240-abls10-img4.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "与Jeffrey Wang和Joe Reeve一起探索潜在空间直播中的AI和分析！深入了解为什么AI重视分析以及第一方行为数据的力量。",
+      "title": "潜在空间播客 2023年6月8日 [摘要] - 从RLHF到RLHB",
+      "twitterCard": null,
+      "image": {
+        "width": 1674,
+        "height": 550,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1692386432-screenshot-2023-08-18-at-3-17-04-pm.png"
+      }
+    }
+  },
+  "topics": [
+    "LLM",
+    "Summary",
+    "UX"
+  ]
+}

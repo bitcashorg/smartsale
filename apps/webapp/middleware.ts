@@ -18,7 +18,7 @@ export function middleware(request: NextRequest) {
     lang => pathname.startsWith(`/${lang}/`) || pathname === `/${lang}`
   )
 
-  console.log('🍓 has lang', pathname, hasLang)
+  console.log('🍓 has lang', hasLang, pathname)
 
   if (hasLang) return NextResponse.next()
 

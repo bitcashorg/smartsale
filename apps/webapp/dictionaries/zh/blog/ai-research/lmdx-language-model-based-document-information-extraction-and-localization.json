@@ -1,0 +1,498 @@
+{
+  "relatedBlogs": [],
+  "blogContent": {
+    "id": "198277458",
+    "topics": [
+      "LLM",
+      "幻觉",
+      "实体",
+      "结构化数据"
+    ],
+    "title": "LMDX：基于语言模型的文档信息提取和定位",
+    "slug": "lmdx-language-model-based-document-information-extraction-and-localization",
+    "authorName": "Prof. Otto Nomos",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+    },
+    "_publishedAt": "2024-05-24T05:20:31+01:00",
+    "description": "摘要评论与评分",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "发表于 9 月 19 日"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "作者："
+                    },
+                    {
+                      "url": "https://huggingface.co/vperot",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Vincent Perot"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/ghoulken",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Kai Kang"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/fluisier",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Florian Luisier"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ",Guolong Su,Xiaoyu Sun,"
+                    },
+                    {
+                      "url": "https://huggingface.co/RamyaSreeBoppana",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Ramya Sree Boppana"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/zilongwang",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Zilong Wang"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ",Jiaqi Mu,Hao Zhang,Nan Hua"
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "摘要"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "大语言模型（LLM）已经彻底改变了自然语言处理（NLP），在许多现有任务上提高了最先进的水平并展示了新兴的能力。然而，LLM 尚未成功应用于半结构化文档信息提取，这在许多文档处理工作流程的核心任务中，涉及从视觉丰富文档（VRD）中提取关键实体，给出预定义的目标模式。LLM在该任务中采用的主要障碍一直是缺乏布局编码，这是高质量提取的关键，缺乏确保答案不是虚构的基础机制。在本文中，我们介绍了基于语言模型的文档信息提取和定位（LMDX），这是一种适应任意LLM进行文档信息提取的方法。LMDX可以提取单一、重复和分层实体，无论是否有训练数据，同时提供基础保证，并在文档中定位实体。特别是，我们将LMDX应用于PaLM 2-S LLM，并在VRDU和CORD基准上进行评估，设定了新的最先进水平，并展示了LMDX如何启用高质量、数据高效的解析器的创建。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "url": "https://arxiv.org/abs/2309.10952",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "View arXiv page"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "https://arxiv.org/pdf/2309.10952",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "View PDF"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Commentary"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "The paper titled \"LMDX: Language Model-based Document Information Extraction and Localization\" aims to address the challenge of extracting structured information from visually rich documents (VRDs) using large language models (LLMs)."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Key Takeaways:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Challenge with LLMs"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Despite the strides made in natural language processing, LLMs haven't been successful with semi-structured document information extraction due to a lack of layout encoding and grounding mechanisms."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "LMDX Methodology"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": The authors introduce LMDX to adapt LLMs for this specific extraction task. This technique can extract different types of entities, provide the ground-truth source, and even locate these entities within the document."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Successful Implementation"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": When applied to the PaLM 2-S LLM and evaluated on specific benchmarks, LMDX establishes a new state-of-the-art in the domain, emphasizing its ability to create high-quality parsers with efficiency."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Potential Real-World Impact:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Automated Document Processing"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Efficient extraction of structured information from documents can revolutionize industries like finance, legal, and healthcare, where there's a constant need to extract data from documents for further analysis."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Reduced Need for Manual Annotation"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Grounding guarantees can significantly reduce the need for manual oversight to ensure the validity of extracted data."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Versatility"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": The model's ability to handle different types of entities and provide localization within documents gives it an edge in real-world applications where context and location in a document can be crucial."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Potential Cost Savings"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": With high-quality, data-efficient parsers, businesses can reduce costs related to manual data extraction, verification, and correction."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Challenges:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Adoption in Legacy Systems"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Many industries already have legacy systems in place, so integrating and adapting new methodologies might require time and resources."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Data Sensitivity"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Documents from fields like finance and healthcare can contain sensitive information. How the model ensures privacy and security would be a concern for its broader adoption."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Considering the profound implications of effective and efficient document information extraction in numerous sectors:"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "I'd rate the real-world impact of this paper as a 9 out of 10."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "If LMDX can consistently provide accurate extractions across a wide array of document types and domains, it can significantly influence businesses that rely heavily on document processing."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "researchpaper9",
+            "height": 816,
+            "width": 1456,
+            "filename": "researchpaper9.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "摘要评论与评分\n",
+      "title": "LMDX：..文档信息提取和定位",
+      "twitterCard": null,
+      "image": {
+        "width": 1456,
+        "height": 816,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      }
+    }
+  },
+  "topics": [
+    "LLM",
+    "Hallucination",
+    "Entity",
+    "Structured Data"
+  ]
+}

@@ -228,7 +228,13 @@ export async function getBlogArticleData(
     )
     return fileContents
   } catch (error) {
-    console.log('error', error)
+    // console.log('error', error)
+    const englishVersion: BlogArticleData = JSON.parse(
+      fs.readFileSync(`dictionaries/en/blog/${category}/${slug}.json`, 'utf8')
+    )
+    if (englishVersion) {
+      return englishVersion
+    }
   }
 
   // if cached translations are not available, translate the english version

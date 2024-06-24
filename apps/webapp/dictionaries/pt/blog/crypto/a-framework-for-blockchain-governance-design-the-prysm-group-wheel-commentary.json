@@ -1,0 +1,766 @@
+{
+  "relatedBlogs": [
+    {
+      "id": "180217169",
+      "topics": [
+        "Tokenomics",
+        "Comentário"
+      ],
+      "title": "Economia de Incentivos Tokenizados 3: O Valor do Token Não Alinhará os Stakeholders [Comentário]",
+      "slug": "economics-of-tokenized-incentives-3-token-value-won-t-align-stakeholders-commenta",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:17:23+01:00",
+      "description": "Descubra as armadilhas de usar o valor do token como métrica de desempenho em plataformas blockchain. Aprenda a projetar sistemas de incentivo eficazes.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690771457-cbc3-img1.png"
+      },
+      "seo": {
+        "title": "Economia de Incentivos Tokenizados 3 [Comentário]",
+        "description": "Descubra as armadilhas de usar o valor do token como métrica de desempenho em plataformas blockchain. Aprenda a projetar sistemas de incentivo eficazes."
+      }
+    },
+    {
+      "id": "180217123",
+      "topics": [
+        "Tokenomics",
+        "Comentário"
+      ],
+      "title": "Economia de Incentivos Tokenizados 2: Selecionando Métricas de Desempenho Efetivas [Comentário]",
+      "slug": "economics-of-tokenized-incentives-2-selecting-effective-performance-metrics-comme",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:17:05+01:00",
+      "description": "Descubra o poder das métricas de desempenho em sistemas de pagamento por desempenho blockchain. Aprenda a alinhar incentivos com os objetivos da plataforma efetivamente.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690770918-cbc2-img1.png"
+      },
+      "seo": {
+        "title": "Economia de Incentivos Tokenizados 2 [Comentário]",
+        "description": "Descubra o poder das métricas de desempenho em sistemas de pagamento por desempenho blockchain. Aprenda a alinhar incentivos com os objetivos da plataforma efetivamente."
+      }
+    },
+    {
+      "id": "180217082",
+      "topics": [
+        "Tokenomics",
+        "Comentário"
+      ],
+      "title": "Economia de Incentivos Tokenizados 1: Introdução ao Pagamento por Desempenho [Comentário]",
+      "slug": "economics-of-tokenized-incentives-1-intro-to-pay-for-performance",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:15:12+01:00",
+      "description": "Mergulhe nas complexidades dos incentivos de pagamento por desempenho em plataformas blockchain. Conheça os trade-offs e considerações de design para sucesso.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690770568-cbc1-img1.png"
+      },
+      "seo": {
+        "title": "Economia de Incentivos Tokenizados 1 [Comentário]",
+        "description": "Mergulhe nas complexidades dos incentivos de pagamento por desempenho em plataformas blockchain. Conheça os trade-offs e considerações de design para sucesso"
+      }
+    },
+    {
+      "id": "180556627",
+      "topics": [
+        "Comentário",
+        "Contratos Inteligentes"
+      ],
+      "title": "Contratos Incompletos e Blockchain [Comentário]",
+      "slug": "incomplete-contracts-and-blockchain-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:14:44+01:00",
+      "description": "Desmistifique a relação entre contratos incompletos e blockchain. Entenda como o blockchain pode preencher lacunas contratuais.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690856249-cbc5-img1.png"
+      },
+      "seo": {
+        "title": "Contratos Incompletos e Blockchain [Comentário]",
+        "description": "Desmistifique a relação entre contratos incompletos e blockchain. Entenda como o blockchain pode preencher lacunas contratuais."
+      }
+    },
+    {
+      "id": "180563918",
+      "topics": [
+        "Tokenomics",
+        "Comentário",
+        "Captação de Recursos"
+      ],
+      "title": "Tokens: Veículo de Investimento ou Meio de Troca (Não Ambos) [Comentário]",
+      "slug": "tokens-investment-vehicle-or-medium-of-exchange-not-both-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:13:31+01:00",
+      "description": "Explore o duplo papel dos tokens na economia blockchain. Descubra a linha tênue entre veículo de investimento e meio de troca.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690859959-cbc8-img1.png"
+      },
+      "seo": {
+        "title": "Tokens: Investimento ou Meio de Troca [Comentário]",
+        "description": "Explore o duplo papel dos tokens na economia blockchain. Descubra a linha tênue entre veículo de investimento e meio de troca."
+      }
+    },
+    {
+      "id": "180563922",
+      "topics": [
+        "Captação de Recursos",
+        "Tokenomics",
+        "Comentário"
+      ],
+      "title": "ICOs Potencializam Efeitos de Rede [Comentário]",
+      "slug": "icos-leverage-network-effects-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:12:06+01:00",
+      "description": "Descubra como as ICOs aproveitam o poder dos efeitos de rede para impulsionar seu sucesso. ICOs e efeitos de rede, uma dupla dinâmica!",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690860184-cbc9-img1.png"
+      },
+      "seo": {
+        "title": "ICOs Potencializam Efeitos de Rede [Comentário]",
+        "description": "Descubra como as ICOs aproveitam o poder dos efeitos de rede para impulsionar seu sucesso. ICOs e efeitos de rede, uma dupla dinâmica!"
+      }
+    },
+    {
+      "id": "179948652",
+      "topics": [
+        "Tokenomics",
+        "Indústria",
+        "Resumo"
+      ],
+      "title": "Inovação Digital e Modelos de Receita [Resumo]",
+      "slug": "digital-innovation-and-revenue-models-summary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:11:35+01:00",
+      "description": "Descubra como a inovação digital reformula a entrega de produtos no 'Inovação Digital e Modelos de Receita' do Grupo Prysm. Explore a economia de tecnologias emergentes.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690668517-cbr1-img1.png"
+      },
+      "seo": {
+        "title": "Inovação Digital e Modelos de Receita [Resumo]",
+        "description": "Descubra como a inovação digital reformula a entrega de produtos no 'Inovação Digital e Modelos de Receita' do Grupo Prysm. Explore a economia de tecnologias emergentes."
+      }
+    },
+    {
+      "id": "180556595",
+      "topics": [
+        "Captação de Recursos",
+        "Tokenomics",
+        "Comentário"
+      ],
+      "title": "O Efeito Blockchain: Efeitos de Rede sem os Custos de Poder de Mercado [Comentário]",
+      "slug": "the-blockchain-effect-network-effects-without-market-power-costs-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:11:14+01:00",
+      "description": "Explore como o blockchain possibilita efeitos de rede sem as desvantagens do poder de mercado. Descubra o revolucionário Efeito Blockchain.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690855275-cbc4-img1.png"
+      },
+      "seo": {
+        "title": "Efeitos de Rede sem Custos de Poder de Mercado [Comentário]",
+        "description": "Explore como o blockchain possibilita efeitos de rede sem as desvantagens do poder de mercado. Descubra o revolucionário Efeito Blockchain."
+      }
+    },
+    {
+      "id": "180563903",
+      "topics": [
+        "DAO",
+        "Resumo"
+      ],
+      "title": "Para que Serve a Votação? [Resumo]",
+      "slug": "what-is-voting-for-summary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:10:58+01:00",
+      "description": "Desvende a essência da votação dentro de sistemas descentralizados. Ganhe insights sobre o verdadeiro propósito e poder da votação em blockchain.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690859305-cbc6-img1.png"
+      },
+      "seo": {
+        "title": "Para que Serve a Votação? [Resumo]",
+        "description": "Desvende a essência da votação dentro de sistemas descentralizados. Ganhe insights sobre o verdadeiro propósito e poder da votação em blockchain."
+      }
+    },
+    {
+      "id": "180563908",
+      "topics": [
+        "DAO",
+        "Resumo"
+      ],
+      "title": "Para que Serve a Governança? [Resumo]",
+      "slug": "what-is-governance-for-summary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:10:45+01:00",
+      "description": "Explore o papel e a importância da governança em sistemas blockchain. Entenda como a governança impulsiona a descentralização e o crescimento.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690859755-cbc7-img1.png"
+      },
+      "seo": {
+        "title": "Para que Serve a Governança? [Resumo]",
+        "description": "Explore o papel e a importância da governança em sistemas blockchain. Entenda como a governança impulsiona a descentralização e o crescimento."
+      }
+    },
+    {
+      "id": "180563931",
+      "topics": [
+        "Tokenomics",
+        "Comentário"
+      ],
+      "title": "Estruturas de Incentivo Blockchain: O que são e por que importam [Comentário]",
+      "slug": "blockchain-incentive-structures-what-they-are-and-why-they-matter-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:10:02+01:00",
+      "description": "Entenda o cerne das estruturas de incentivo blockchain e sua importância para direcionar o comportamento do usuário e o sucesso da plataforma.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690860807-cbc10-img1.png"
+      },
+      "seo": {
+        "title": "Estruturas de Incentivo Blockchain [Comentário]",
+        "description": "Entenda o cerne das estruturas de incentivo blockchain e sua importância para direcionar o comportamento do usuário e o sucesso da plataforma."
+      }
+    },
+    {
+      "id": "167184977",
+      "topics": [
+        "Tokenomics",
+        "DAO",
+        "Captação de Recursos"
+      ],
+      "title": "Revolucionando o Modelo de Equidade: Como a Tokenomics está Disruptando o Mundo das Startups",
+      "slug": "revolutionizing-the-equity-model-how-tokenomics-is-disrupting-the-startup-world",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:02:51+01:00",
+      "description": "Desbloqueie o futuro das startups com tokenomics! Explore como esse conceito inovador está reformulando o modelo de equidade e revolucionando a paisagem das startups.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1687395688-tb2-img1.png"
+      },
+      "seo": {
+        "title": "Como a Tokenomics está Disruptando o Mundo das Startups",
+        "description": "Explore como esse conceito inovador está reformulando o modelo de equidade e revolucionando a paisagem das startups."
+      }
+    },
+    {
+      "id": "166984334",
+      "topics": [
+        "DAO",
+        "Legal"
+      ],
+      "title": "Organizações Autônomas Descentralizadas (DAOs): Estruturas Legais Básicas para Fins Empresariais e Sem Fins Lucrativos",
+      "slug": "decentralized-autonomous-organizations-daos-basic-legal-structures-for-business-a",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T08:59:06+01:00",
+      "description": "Descubra as estruturas legais básicas de DAO para fins empresariais e sem fins lucrativos.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1687384353-db2-img1.png"
+      },
+      "seo": {
+        "title": "DAOs: Navegando por Estruturas Legais para Negócios e Sem Fins Lucrativos",
+        "description": "Organizações Autônomas Descentralizadas (DAOs): Navegando por Estruturas Legais para Negócios e Sem Fins Lucrativos"
+      }
+    },
+    {
+      "id": "167101094",
+      "topics": [
+        "Começando",
+        "Tokenomics"
+      ],
+      "title": "Tokenomics 101: Liberando o Poder da Criptomoeda!",
+      "slug": "tokenomics-101-unleashing-the-power-of-cryptocurrency",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T08:57:58+01:00",
+      "description": "Descubra o poder da criptomoeda através do Tokenomics 101 - um guia aprofundado para entender a economia por trás dos ativos digitais.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1687391799-tb1-img1.png"
+      },
+      "seo": {
+        "title": "Tokenomics 101: Liberando o Poder da Criptomoeda!",
+        "description": "um guia aprofundado para entender a economia por trás dos ativos digitais."
+      }
+    },
+    {
+      "id": "166981063",
+      "topics": [
+        "Começando",
+        "DAO"
+      ],
+      "title": "O Futuro Está Aqui: A Ascensão das Organizações Autônomas Descentralizadas (DAOs)",
+      "slug": "the-future-is-here-the-rise-of-decentralized-autonomous-organizations-daos",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T08:57:02+01:00",
+      "description": "Explore a ascensão das Organizações Autônomas Descentralizadas (DAOs) em nosso guia. Entenda o futuro dos negócios e as oportunidades para startups.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1687381524-db1-img1.png"
+      },
+      "seo": {
+        "title": "A Ascensão das Organizações Autônomas Descentralizadas",
+        "description": "Explore a ascensão das Organizações Autônomas Descentralizadas (DAOs) em nosso guia. Entenda o futuro dos negócios e as oportunidades para startups."
+      }
+    }
+  ],
+  "blogContent": {
+    "id": "180563939",
+    "topics": [
+      "DAO",
+      "Tokenomics",
+      "Comentario"
+    ],
+    "title": "Um Framework para o Design de Governanca de Blockchain: O Volante do Grupo Prysm [Comentario]",
+    "slug": "a-framework-for-blockchain-governance-design-the-prysm-group-wheel-commentary",
+    "authorName": "Crypto Clairity",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+    },
+    "_publishedAt": "2023-10-05T09:19:19+01:00",
+    "description": "Navegue pelas complexidades da governanca de blockchain com o Volante do Grupo Prysm. Seu roteiro para um design eficaz de governanca de blockchain.",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1690861154-cbc11-img1.webp"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Link Original: "
+                    },
+                    {
+                      "url": "https://medium.com/prysmeconomics/a-framework-for-blockchain-governance-design-the-prysm-group-wheel-703279c1b0dd?source=user_profile---------0----------------------------",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noopener follow"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Um Framework para o Design de Governanca de Blockchain: O Volante do Grupo Prysm"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Autor: "
+                    },
+                    {
+                      "url": "https://medium.com/@cathybarreraphd?source=post_page-----703279c1b0dd--------------------------------",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noopener follow"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Cathy Barrera, PhD"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Resumo & Comentario"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "O artigo articula a diferenca entre regras operacionais e governanca em plataformas de blockchain, juntamente com a oferta de um framework estruturado para o design de governanca eficaz para tais sistemas."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Regras operacionais sao as regulamentacoes que guiam as operacoes diarias em uma plataforma de blockchain. Elas determinam o tamanho das recompensas de blocos, ditam como o proximo bloco na cadeia sera determinado e garantem que contratos, mercados e economias de tokens se comportem eficazmente."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Governanca, no entanto, envolve os processos de tomada de decisao sobre mudancas ou atualizacoes nas regras operacionais. Ela aborda eventos inesperados e mudancas nao antecipadas, permitindo que o sistema se adapte ao longo do tempo as inevitaveis variacoes de mercado."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "A principal conclusao aqui e que, enquanto as regras operacionais sao a espinha dorsal de uma plataforma, a governanca e seu sangue vital, permitindo que ela se adapte, cresca e evolua."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "O Volante do Grupo Prysm e apresentado como um framework util para o design de governanca de blockchain eficaz. Os sete elementos que ele sugere considerar sao:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Escopo das Decisoes"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Entenda quais decisoes precisam ser tomadas com o processo de governanca e planeje adequadamente."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Partes Interessadas / Participantes"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Defina as partes interessadas e seus diversos objetivos para garantir que as decisoes estejam alinhadas com seus desejos."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Pesquisa e Desenvolvimento de Politicas"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Prepare uma proposta especifica para implementar uma decisao, especialmente para projetos de blockchain onde as decisoes precisam ser traduzidas em codigo."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Processo de Proposta"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Estabeleca um processo claro pelo qual as propostas sao feitas."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Sistemas de Distribuicao de Informacoes / Educacao"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Comunique-se efetivamente com todas as partes interessadas para garantir uma tomada de decisao informada."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Procedimentos de Tomada de Decisao"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Implemente mecanismos para facilitar a tomada de decisao que as partes interessadas sintam que representa seus interesses."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Implementacao e Direitos de Propriedade"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Entenda os direitos de propriedade dos participantes do ecossistema para evitar desequilibrio de poder durante a fase de implementacao."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Acoes praticas que podem ser tomadas com base nessas ideias incluem o seguinte:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Desenvolvedores de Blockchain"
+                            },
+                            {
+                              "type": "span",
+                              "value": " devem focar no desenvolvimento de mecanismos de governanca que permitam adaptabilidade e mudanca. Eles tambem devem visar incluir todos os participantes nos processos de tomada de decisao."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Investidores"
+                            },
+                            {
+                              "type": "span",
+                              "value": " em projetos de blockchain devem procurar aqueles com estruturas de governanca bem projetadas, pois esses sao mais propensos a ter sucesso a longo prazo."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Usuarios de Blockchain"
+                            },
+                            {
+                              "type": "span",
+                              "value": " precisam entender as estruturas de governanca das plataformas que usam para garantir que estejam confortaveis com os processos de tomada de decisao."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Legisladores e reguladores"
+                            },
+                            {
+                              "type": "span",
+                              "value": " devem se familiarizar com diferentes modelos de governanca de blockchain para entender como melhor regular essas plataformas."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Em conclusao, a governanca em plataformas de blockchain deve ser vista como um componente essencial de seu design e deve ser dada o mesmo nivel de consideracao que as regras operacionais propriamente ditas. Atraves de um design cuidadoso e consideracao cuidadosa de todas as partes interessadas, uma governanca de blockchain eficaz pode ser alcancada."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "cbc11-img1",
+            "height": 1383,
+            "width": 1400,
+            "filename": "cbc11-img1.webp",
+            "format": "webp",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1690861154-cbc11-img1.webp"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Navegue pelas complexidades da governanca de blockchain com o Volante do Grupo Prysm. Seu roteiro para um design eficaz de governanca de blockchain.",
+      "title": "Um Framework para o Design de Governanca de Blockchain [Comentario]",
+      "twitterCard": null,
+      "image": {
+        "width": 1400,
+        "height": 1383,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1690861154-cbc11-img1.webp"
+      }
+    }
+  },
+  "topics": [
+    "DAO",
+    "Tokenomics",
+    "Commentary"
+  ]
+}
