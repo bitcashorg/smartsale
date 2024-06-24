@@ -12,8 +12,12 @@ import { useAccount } from 'wagmi'
 export function NavLinks({
   mobile = false,
   lang,
-  dict
-}: { mobile?: boolean } & NavLinksProps) {
+  dict,
+  toggleOpen
+}: {
+  mobile?: boolean
+  toggleOpen: (nextValue?: any) => void
+} & NavLinksProps) {
   const { loginRedirect, session, logout } = useSession()
   const { openConnectModal } = useConnectModal()
   const { openAccountModal } = useAccountModal()
@@ -103,7 +107,10 @@ export function NavLinks({
         onClick={e => {
           e.preventDefault()
           if (link.action) return link.action()
-          if (link.href) router.push(link.href)
+          if (link.href) {
+            router.push(link.href)
+            toggleOpen(false)
+          }
         }}
         aria-disabled={link.disabled}
       >
