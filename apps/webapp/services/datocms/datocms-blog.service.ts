@@ -7,11 +7,6 @@ import { getLayoutText } from './datocms-layout.service'
 import { getPageSeoText } from './datocms-seo.service'
 import { BlogAiRecord, SiteLocale } from './graphql/generated/cms'
 import * as fs from 'fs'
-import { openAiTranslate } from '../openai'
-import {
-  extractTextForTranslation,
-  injectTextAfterTranslation
-} from '@/services/datocms/translation/utils'
 
 export const getBlogData = async (locale: SiteLocale) => {
   const locales = [locale]
@@ -83,10 +78,12 @@ export async function getArticleSections(
     return fileContents.sections
   } catch (error) {
     // console.log('error', error)
-    const englishVersion = JSON.parse(
-      fs.readFileSync(`dictionaries/en/blog/${fileName}`, 'utf8')
-    )
-    if (englishVersion) return englishVersion.sections
+    try {
+      const englishVersion = JSON.parse(
+        fs.readFileSync(`dictionaries/en/blog/${fileName}`, 'utf8')
+      )
+      if (englishVersion) return englishVersion.sections
+    } catch (error) {}
   }
 
   const sections: ArticlesSection[] = [
@@ -143,6 +140,7 @@ export async function getArticleSections(
 
   return sections
 }
+
 export async function getRecentArticleSections(
   locale: SiteLocale
 ): Promise<ArticlesSection[]> {
@@ -204,10 +202,12 @@ export async function getBlogCategoryLandingData(
     return fileContents
   } catch (error) {
     // console.log('error', error)
-    const englishVersion = JSON.parse(
-      fs.readFileSync(`dictionaries/en/blog/${category}/${fileName}`, 'utf8')
-    )
-    if (englishVersion) return englishVersion
+    try {
+      const englishVersion = JSON.parse(
+        fs.readFileSync(`dictionaries/en/blog/${category}/${fileName}`, 'utf8')
+      )
+      if (englishVersion) return englishVersion
+    } catch (error) {}
   }
 
   // replacing category kebab case with camel case

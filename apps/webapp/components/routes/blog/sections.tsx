@@ -11,7 +11,6 @@ export function BlogSections({
   category,
   className
 }: BlogSectionsProps) {
-  console.log('sections', lang)
   return (
     <div
       className={cn(
