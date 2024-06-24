@@ -1,0 +1,1289 @@
+{
+  "sections": [
+    {
+      "name": "Commencer",
+      "slug": "getting started",
+      "articles": [
+        {
+          "id": "173914208",
+          "topics": [
+            "Commencer",
+            "Gestion de portefeuille"
+          ],
+          "title": "Maîtriser la gestion de portefeuille: L'art de la diversification, de l'allocation d'actifs et de la rééquilibration",
+          "slug": "mastering-portfolio-management-the-art-of-diversification-asset-allocation-and-re",
+          "authorName": "Mister Moneybags",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
+          },
+          "_publishedAt": "2023-10-05T02:12:40+01:00",
+          "description": "Optimisez votre portefeuille: Apprenez l'art de la diversification, de l'allocation d'actifs et de la rééquilibration pour une gestion de portefeuille réussie.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1689021197-ib2-img1.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Learn the Art of Diversification, Asset Allocation, and Rebalancing for Successful Portfolio Management.",
+            "title": "Mastering Portfolio Management",
+            "twitterCard": null,
+            "image": {
+              "width": 870,
+              "height": 870,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1689021197-ib2-img1.png"
+            }
+          }
+        },
+        {
+          "id": "174592759",
+          "topics": [
+            "Commencer",
+            "Alternatives"
+          ],
+          "title": "Liberer le potentiel: Maitriser les investissements alternatifs pour le succes des investisseurs",
+          "slug": "unleashing-the-potential-mastering-alternative-investments-for-investor-success",
+          "authorName": "Mister Moneybags",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
+          },
+          "_publishedAt": "2023-10-05T02:11:13+01:00",
+          "description": "Elargissez votre savoir-faire en matiere d'investissement avec des investissements alternatifs! Plongez dans le monde du capital-investissement, des fonds spéculatifs et des matieres premieres pour dynamiser votre portefeuille. Ce blog offre des conseils d'experts pour les investisseurs cherchant a reussir dans les strategies d'investissement alternatif.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1689120056-ib6-img1.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Dive into the world of private equity, hedge funds, and commodities to supercharge your portfolio. ",
+            "title": "Mastering Alternative Investments for Investor Success",
+            "twitterCard": null,
+            "image": {
+              "width": 870,
+              "height": 870,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1689120056-ib6-img1.png"
+            }
+          }
+        },
+        {
+          "id": "175015363",
+          "topics": [
+            "Commencer",
+            "Fonds communs de placement & ETFs"
+          ],
+          "title": "Révélation des avantages et des inconvénients des fonds négociés en bourse (ETFs) : Un guide complet pour les investisseurs",
+          "slug": "unveiling-the-pros-and-cons-of-exchange-traded-funds-etfs-a-comprehensive-guide-f",
+          "authorName": "Mister Moneybags",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
+          },
+          "_publishedAt": "2023-10-05T02:09:18+01:00",
+          "description": "Découvrez les avantages et les inconvénients de l'investissement dans les ETFs. Prenez des décisions éclairées et maximisez votre potentiel d'investissement avec ce guide complet.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1689186966-ib8-img1.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Make informed decisions and maximize your investment potential with this comprehensive guide.\n\n",
+            "title": "Unveiling the Pros and Cons of Exchange-Traded Funds (ETFs)",
+            "twitterCard": null,
+            "image": {
+              "width": 870,
+              "height": 870,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1689186966-ib8-img1.png"
+            }
+          }
+        },
+        {
+          "id": "176002890",
+          "topics": [
+            "Getting Started",
+            "Risk Management"
+          ],
+          "title": "Shield Your Investments: A Comprehensive Guide to Recognizing and Avoiding Investment Fraud",
+          "slug": "shield-your-investments-a-comprehensive-guide-to-recognizing-and-avoiding-investm",
+          "authorName": "Mister Moneybags",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
+          },
+          "_publishedAt": "2023-10-05T02:08:41+01:00",
+          "description": "Guard your hard-earned money! Learn to spot investment scams and protect your financial future with our comprehensive guide to avoiding investment fraud",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1689384626-ib19-img1.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Guard your hard-earned money! Learn to spot investment scams and protect your financial future.",
+            "title": "A Comprehensive Guide to Avoiding Investment Fraud",
+            "twitterCard": null,
+            "image": {
+              "width": 870,
+              "height": 870,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1689384626-ib19-img1.png"
+            }
+          }
+        },
+        {
+          "id": "176002763",
+          "topics": [
+            "Getting Started",
+            "Insurance"
+          ],
+          "title": "Insurance Planning 101: Navigating Life, Disability, and Long-Term Care Insurance",
+          "slug": "insurance-planning-101-navigating-life-disability-and-long-term-care-insurance",
+          "authorName": "Mister Moneybags",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
+          },
+          "_publishedAt": "2023-10-05T02:07:57+01:00",
+          "description": "Secure your future with smart insurance planning. Dive into life, disability, and long-term care insurance to safeguard your financial health.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1689381721-ib18-img1.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Dive into life, disability, and long-term care insurance to safeguard your financial health.",
+            "title": "Insurance Planning 101",
+            "twitterCard": null,
+            "image": {
+              "width": 870,
+              "height": 870,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1689381721-ib18-img1.png"
+            }
+          }
+        },
+        {
+          "id": "175940742",
+          "topics": [
+            "Getting Started",
+            "Education"
+          ],
+          "title": "Unlocking the Key to College Savings: Maximizing Education Funds with 529 Plans and Coverdell ESAs",
+          "slug": "unlocking-the-key-to-college-savings-maximizing-education-funds-with-529-plans-an",
+          "authorName": "Mister Moneybags",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
+          },
+          "_publishedAt": "2023-10-05T02:06:59+01:00",
+          "description": "Discover how 529 plans and Coverdell ESAs can help you save for your child's education. Learn effective strategies to navigate college planning and secure a bright future.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1689371480-i17-img1.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Discover how 529 plans and Coverdell ESAs can help you save for your child's education. ",
+            "title": "Maximizing Education Funds with 529 Plans and Coverdell ESAs",
+            "twitterCard": null,
+            "image": {
+              "width": 870,
+              "height": 870,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1689371480-i17-img1.png"
+            }
+          }
+        },
+        {
+          "id": "175940646",
+          "topics": [
+            "Getting Started",
+            "Retirement"
+          ],
+          "title": "Mastering Retirement Planning: Decoding 401(k)s, IRAs, and Pension Plans for a Secure Future",
+          "slug": "mastering-retirement-planning-decoding-401-k-s-iras-and-pension-plans-for-a-secur",
+          "authorName": "Mister Moneybags",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
+          },
+          "_publishedAt": "2023-10-05T02:06:05+01:00",
+          "description": "Discover the essential guide to retirement planning, unraveling the mysteries of 401(k)s, IRAs, and pension plans. Learn strategies to build a robust retirement portfolio and secure your financial future.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1689368706-ib17-img1.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Discover the essential guide to retirement planning, unraveling the mysteries of 401(k)s, IRAs, and pension plans. ",
+            "title": "Mastering Retirement Planning",
+            "twitterCard": null,
+            "image": {
+              "width": 944,
+              "height": 944,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1689368706-ib17-img1.png"
+            }
+          }
+        },
+        {
+          "id": "175685081",
+          "topics": [
+            "Getting Started",
+            "Retirement"
+          ],
+          "title": "Unlocking Social Security: Your Guide to Maximizing Retirement Benefits",
+          "slug": "unlocking-social-security-your-guide-to-maximizing-retirement-benefits",
+          "authorName": "Mister Moneybags",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
+          },
+          "_publishedAt": "2023-10-05T02:05:22+01:00",
+          "description": "Discover the key strategies and insights to optimize your Social Security benefits for a secure and fulfilling retirement. Take control of your future today",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1689311272-ib15-img1.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Discover the key strategies and insights to optimize your Social Security benefits for a secure and fulfilling retirement. ",
+            "title": "Unlocking Social Security",
+            "twitterCard": null,
+            "image": {
+              "width": 870,
+              "height": 870,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1689311272-ib15-img1.png"
+            }
+          }
+        },
+        {
+          "id": "175530377",
+          "topics": [
+            "Getting Started",
+            "Tax Planning"
+          ],
+          "title": "Maximizing Returns: The Ultimate Guide to Tax Planning for Investors",
+          "slug": "maximizing-returns-the-ultimate-guide-to-tax-planning-for-investors",
+          "authorName": "Mister Moneybags",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
+          },
+          "_publishedAt": "2023-10-05T02:04:20+01:00",
+          "description": "Learn how to optimize your investment returns by understanding capital gains, dividends, and interest income, while minimizing your tax liabilities.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1689281511-ib14-img1.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Learn how to optimize your investment returns by understanding capital gains, dividends, and interest income, while minimizing your tax liabilities.",
+            "title": "The Ultimate Guide to Tax Planning for Investors",
+            "twitterCard": null,
+            "image": {
+              "width": 870,
+              "height": 870,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1689281518-ib14-img1.png"
+            }
+          }
+        },
+        {
+          "id": "175528452",
+          "topics": [
+            "Getting Started",
+            "Estate Planning"
+          ],
+          "title": "Secure Your Legacy: A Comprehensive Guide to Estate Planning, Wills, Trusts, and Inheritance Taxes",
+          "slug": "secure-your-legacy-a-comprehensive-guide-to-estate-planning-wills-trusts-and-inhe",
+          "authorName": "Mister Moneybags",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
+          },
+          "_publishedAt": "2023-10-05T02:03:16+01:00",
+          "description": "Discover how to protect your assets and ensure a smooth transfer of wealth. Learn about wills, trusts, and minimizing inheritance taxes for financial security.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1689278418-ib13-img1.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Discover how to protect your assets and ensure a smooth transfer of wealth. ",
+            "title": "Secure Your Legacy",
+            "twitterCard": null,
+            "image": {
+              "width": 944,
+              "height": 944,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1689278418-ib13-img1.png"
+            }
+          }
+        },
+        {
+          "id": "175337478",
+          "topics": [
+            "Getting Started",
+            "Financial Planning"
+          ],
+          "title": "Mastering Your Finances: The Ultimate Guide to Budgeting, Debt Reduction, and Retirement Planning",
+          "slug": "mastering-your-finances-the-ultimate-guide-to-budgeting-debt-reduction-and-retire",
+          "authorName": "Mister Moneybags",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
+          },
+          "_publishedAt": "2023-10-05T02:00:48+01:00",
+          "description": "Achieve financial success with expert guidance on budgeting, debt reduction, and retirement planning. Take control of your future and secure a prosperous retirement.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1689220482-ib12-img1.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Achieve financial success with expert guidance on budgeting, debt reduction, and retirement planning. ",
+            "title": "Mastering Your Finances",
+            "twitterCard": null,
+            "image": {
+              "width": 870,
+              "height": 870,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1689220488-ib12-img1.png"
+            }
+          }
+        },
+        {
+          "id": "175337425",
+          "topics": [
+            "Getting Started"
+          ],
+          "title": "Mastering Your Mind: Overcoming Investor Biases for Financial Success",
+          "slug": "mastering-your-mind-overcoming-investor-biases-for-financial-success",
+          "authorName": "Mister Moneybags",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
+          },
+          "_publishedAt": "2023-10-05T02:00:04+01:00",
+          "description": "Discover how to conquer common investor biases that can hinder your financial success. Learn practical strategies to make rational decisions and achieve your investment goals.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1689218717-ib11-img1.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Discover how to conquer common investor biases that can hinder your financial success. ",
+            "title": "Overcoming Investor Biases for Financial Success",
+            "twitterCard": null,
+            "image": {
+              "width": 870,
+              "height": 870,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1689218717-ib11-img1.png"
+            }
+          }
+        },
+        {
+          "id": "176002895",
+          "topics": [
+            "Getting Started",
+            "Inflation"
+          ],
+          "title": "Navigating the Financial Seas: Understanding Inflation's Impact on Investment",
+          "slug": "navigating-the-financial-seas-understanding-inflation-s-impact-on-investment",
+          "authorName": "Mister Moneybags",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
+          },
+          "_publishedAt": "2023-10-05T01:59:28+01:00",
+          "description": "Set sail on your financial journey with our comprehensive guide on inflation. Learn how it affects your investments and strategies to weather the storm.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1689386893-ib20-img1.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Set sail on your financial journey with our comprehensive guide on inflation. ",
+            "title": "Understanding Inflation's Impact on Investments",
+            "twitterCard": null,
+            "image": {
+              "width": 870,
+              "height": 870,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1689386893-ib20-img1.png"
+            }
+          }
+        },
+        {
+          "id": "173914322",
+          "topics": [
+            "Getting Started",
+            "stocks"
+          ],
+          "title": "Understanding the Stock Market: How it Works, Market Indicators, and Historical Trends.",
+          "slug": "understanding-the-stock-market-how-it-works-market-indicators-and-historical-tren",
+          "authorName": "Mister Moneybags",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
+          },
+          "_publishedAt": "2023-10-05T01:58:31+01:00",
+          "description": "Explore How it Works, Key Indicators, and Historical Trends to Make Informed Investment Decisions.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1689023549-ib3-img1.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Explore How it Works, Key Indicators, and Historical Trends to Make Informed Investment Decisions.",
+            "title": "Understanding the Stock Market",
+            "twitterCard": null,
+            "image": {
+              "width": 870,
+              "height": 870,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1689023549-ib3-img1.png"
+            }
+          }
+        },
+        {
+          "id": "174362868",
+          "topics": [
+            "Getting Started",
+            "realestate"
+          ],
+          "title": "From Houses to High-Rises: Mastering Real Estate Investing in Residential, Commercial, and REITs",
+          "slug": "from-houses-to-high-rises-mastering-real-estate-investing-in-residential-commerci",
+          "authorName": "Mister Moneybags",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
+          },
+          "_publishedAt": "2023-10-05T01:56:35+01:00",
+          "description": "Dive into the world of real estate investing and discover how to thrive in residential properties, commercial ventures, and REITs. Unleash your wealth-building potential today!",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1689108537-ib5-img1.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Dive into the world of real estate investing and discover how to thrive in residential properties, commercial ventures, and REITs.",
+            "title": "Mastering Real Estate Investing",
+            "twitterCard": null,
+            "image": {
+              "width": 870,
+              "height": 870,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1689108537-ib5-img1.png"
+            }
+          }
+        },
+        {
+          "id": "174594216",
+          "topics": [
+            "Getting Started",
+            "Mutual Funds & ETFs"
+          ],
+          "title": "Mastering Mutual Funds: Unveiling the Types, Expenses, and Performance for Successful Investing",
+          "slug": "mastering-mutual-funds-unveiling-the-types-expenses-and-performance-for-successfu",
+          "authorName": "Mister Moneybags",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
+          },
+          "_publishedAt": "2023-10-05T01:55:44+01:00",
+          "description": "Discover the ins and outs of mutual funds - their various types, expenses, and performance metrics - to make informed investment decisions and achieve financial success.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1689128866-ib7-img1.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Discover the ins and outs of mutual funds to make informed investment decisions and achieve financial success.",
+            "title": "Mastering Mutual Funds",
+            "twitterCard": null,
+            "image": {
+              "width": 870,
+              "height": 870,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1689128866-ib7-img1.png"
+            }
+          }
+        },
+        {
+          "id": "175016379",
+          "topics": [
+            "Getting Started",
+            "Risk Management"
+          ],
+          "title": "Mastering Risk Tolerance: Unveiling Your Unique Investor DNA",
+          "slug": "mastering-risk-tolerance-unveiling-your-unique-investor-dna",
+          "authorName": "Mister Moneybags",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
+          },
+          "_publishedAt": "2023-10-05T01:54:11+01:00",
+          "description": "Discover your risk tolerance and assess your personal risk profile to make informed investment decisions. Unlock the secrets to aligning risk and reward for financial success.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1689189686-ib9-img1.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Unlock the secrets to aligning risk and reward for financial success.\n\n",
+            "title": "Mastering Risk Tolerance: Unveiling Your Unique Investor DNA",
+            "twitterCard": null,
+            "image": {
+              "width": 870,
+              "height": 870,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1689189686-ib9-img1.png"
+            }
+          }
+        },
+        {
+          "id": "175023099",
+          "topics": [
+            "Getting Started"
+          ],
+          "title": "Mastering Investment Psychology: Conquering Fear and Greed for Financial Success",
+          "slug": "mastering-investment-psychology-conquering-fear-and-greed-for-financial-success",
+          "authorName": "Mister Moneybags",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
+          },
+          "_publishedAt": "2023-10-05T01:53:04+01:00",
+          "description": "Learn how to overcome the destructive forces of fear and greed in your investment journey. Unleash the power of disciplined decision-making for long-term prosperity.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1689194001-ib10-img1.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Learn how to overcome the destructive forces of fear and greed in your investment journey. ",
+            "title": "Mastering Investment Psychology",
+            "twitterCard": null,
+            "image": {
+              "width": 870,
+              "height": 870,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1689194001-ib10-img1.png"
+            }
+          }
+        },
+        {
+          "id": "173906568",
+          "topics": [
+            "Financial Planning",
+            "Getting Started"
+          ],
+          "title": "Unraveling Investment Basics: Navigating Asset Types, Risk-Return Trade-offs, and Goal-Setting",
+          "slug": "unraveling-investment-basics-navigating-asset-types-risk-return-trade-offs-and-go",
+          "authorName": "Mister Moneybags",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
+          },
+          "_publishedAt": "2023-10-05T01:52:15+01:00",
+          "description": "Master the Art of Investing: Understand Asset Types, Risk-Return Trade-offs, and Goal-Setting for Successful Investments.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1689018579-ib1-img1.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Master the Art of Investing: Understand Asset Types, Risk-Return Trade-offs, and Goal-Setting for Successful Investments.",
+            "title": "Unraveling Investment Basics",
+            "twitterCard": null,
+            "image": {
+              "width": 944,
+              "height": 944,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1689018579-ib1-img1.png"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Gestion de portefeuille",
+      "slug": "portfolio management",
+      "articles": [
+        {
+          "id": "173914208",
+          "topics": [
+            "Commencer",
+            "Gestion de portefeuille"
+          ],
+          "title": "Maitriser la gestion de portefeuille: L'art de la diversification, de l'allocation d'actifs et de la reequilibration",
+          "slug": "mastering-portfolio-management-the-art-of-diversification-asset-allocation-and-re",
+          "authorName": "Mister Moneybags",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
+          },
+          "_publishedAt": "2023-10-05T02:12:40+01:00",
+          "description": "Optimisez votre portefeuille: Apprenez l'art de la diversification, de l'allocation d'actifs et de la reequilibration pour une gestion de portefeuille reussie.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1689021197-ib2-img1.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Learn the Art of Diversification, Asset Allocation, and Rebalancing for Successful Portfolio Management.",
+            "title": "Mastering Portfolio Management",
+            "twitterCard": null,
+            "image": {
+              "width": 870,
+              "height": 870,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1689021197-ib2-img1.png"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Alternatives",
+      "slug": "alternatives",
+      "articles": [
+        {
+          "id": "174592759",
+          "topics": [
+            "Commencer",
+            "Alternatives"
+          ],
+          "title": "Liberer le potentiel : Maitriser les investissements alternatifs pour le succes des investisseurs",
+          "slug": "unleashing-the-potential-mastering-alternative-investments-for-investor-success",
+          "authorName": "Mister Moneybags",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
+          },
+          "_publishedAt": "2023-10-05T02:11:13+01:00",
+          "description": "Elargissez votre savoir-faire en matiere d'investissement avec des investissements alternatifs! Plongez dans le monde du capital-investissement, des fonds spéculatifs et des matieres premieres pour dynamiser votre portefeuille. Ce blog offre des conseils d'experts pour les investisseurs cherchant a reussir dans les strategies d'investissement alternatif.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1689120056-ib6-img1.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Dive into the world of private equity, hedge funds, and commodities to supercharge your portfolio. ",
+            "title": "Mastering Alternative Investments for Investor Success",
+            "twitterCard": null,
+            "image": {
+              "width": 870,
+              "height": 870,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1689120056-ib6-img1.png"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Fonds communs de placement & ETFs",
+      "slug": "mutual funds & etfs",
+      "articles": [
+        {
+          "id": "175015363",
+          "topics": [
+            "Commencer",
+            "Fonds communs de placement & ETFs"
+          ],
+          "title": "Revelation des avantages et des inconvenients des fonds negocies en bourse (ETFs) : Un guide complet pour les investisseurs",
+          "slug": "unveiling-the-pros-and-cons-of-exchange-traded-funds-etfs-a-comprehensive-guide-f",
+          "authorName": "Mister Moneybags",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
+          },
+          "_publishedAt": "2023-10-05T02:09:18+01:00",
+          "description": "Decouvrez les avantages et les inconvenients de l'investissement dans les ETFs. Prenez des decisions eclairees et maximisez votre potentiel d'investissement avec ce guide complet.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1689186966-ib8-img1.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Make informed decisions and maximize your investment potential with this comprehensive guide.\n\n",
+            "title": "Unveiling the Pros and Cons of Exchange-Traded Funds (ETFs)",
+            "twitterCard": null,
+            "image": {
+              "width": 870,
+              "height": 870,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1689186966-ib8-img1.png"
+            }
+          }
+        },
+        {
+          "id": "174594216",
+          "topics": [
+            "Commencer",
+            "Fonds communs de placement & ETF"
+          ],
+          "title": "Maitriser les fonds communs de placement: Devoiler les types, les depenses et la performance pour un investissement reussi",
+          "slug": "mastering-mutual-funds-unveiling-the-types-expenses-and-performance-for-successfu",
+          "authorName": "Mister Moneybags",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
+          },
+          "_publishedAt": "2023-10-05T01:55:44+01:00",
+          "description": "Decouvrez les details des fonds communs de placement - leurs differents types, depenses et indicateurs de performance - pour prendre des decisions d'investissement eclairees et atteindre le succes financier.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1689128866-ib7-img1.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Discover the ins and outs of mutual funds to make informed investment decisions and achieve financial success.",
+            "title": "Mastering Mutual Funds",
+            "twitterCard": null,
+            "image": {
+              "width": 870,
+              "height": 870,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1689128866-ib7-img1.png"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Gestion des risques",
+      "slug": "risk management",
+      "articles": [
+        {
+          "id": "176002890",
+          "topics": [
+            "Commencer",
+            "Gestion des Risques"
+          ],
+          "title": "Protegez vos investissements: un guide complet pour reconnaitre et eviter la fraude a l'investissement",
+          "slug": "shield-your-investments-a-comprehensive-guide-to-recognizing-and-avoiding-investm",
+          "authorName": "Mister Moneybags",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
+          },
+          "_publishedAt": "2023-10-05T02:08:41+01:00",
+          "description": "Protegez votre argent durement gagne! Apprenez a identifier les escroqueries d'investissement et protegez votre avenir financier avec notre guide complet pour eviter la fraude a l'investissement",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1689384626-ib19-img1.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Guard your hard-earned money! Learn to spot investment scams and protect your financial future.",
+            "title": "A Comprehensive Guide to Avoiding Investment Fraud",
+            "twitterCard": null,
+            "image": {
+              "width": 870,
+              "height": 870,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1689384626-ib19-img1.png"
+            }
+          }
+        },
+        {
+          "id": "175016379",
+          "topics": [
+            "Commencer",
+            "Gestion des risques"
+          ],
+          "title": "Maîtriser la tolérance au risque : Révéler votre ADN d'investisseur unique",
+          "slug": "mastering-risk-tolerance-unveiling-your-unique-investor-dna",
+          "authorName": "Mister Moneybags",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
+          },
+          "_publishedAt": "2023-10-05T01:54:11+01:00",
+          "description": "Découvrez votre tolérance au risque et évaluez votre profil de risque personnel pour prendre des décisions d'investissement éclairées. Dévoilez les secrets pour aligner le risque et la récompense pour le succès financier.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1689189686-ib9-img1.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Unlock the secrets to aligning risk and reward for financial success.\n\n",
+            "title": "Mastering Risk Tolerance: Unveiling Your Unique Investor DNA",
+            "twitterCard": null,
+            "image": {
+              "width": 870,
+              "height": 870,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1689189686-ib9-img1.png"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Assurance",
+      "slug": "insurance",
+      "articles": [
+        {
+          "id": "176002763",
+          "topics": [
+            "Commencer",
+            "Assurance"
+          ],
+          "title": "Planification de l'assurance 101 : Naviguer dans l'assurance vie, invalidité et soins de longue durée",
+          "slug": "insurance-planning-101-navigating-life-disability-and-long-term-care-insurance",
+          "authorName": "Mister Moneybags",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
+          },
+          "_publishedAt": "2023-10-05T02:07:57+01:00",
+          "description": "Sécurisez votre avenir avec une planification d'assurance intelligente. Plongez dans l'assurance vie, invalidité et soins de longue durée pour protéger votre santé financière.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1689381721-ib18-img1.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Dive into life, disability, and long-term care insurance to safeguard your financial health.",
+            "title": "Insurance Planning 101",
+            "twitterCard": null,
+            "image": {
+              "width": 870,
+              "height": 870,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1689381721-ib18-img1.png"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Éducation",
+      "slug": "education",
+      "articles": [
+        {
+          "id": "175940742",
+          "topics": [
+            "Commencer",
+            "Éducation"
+          ],
+          "title": "Débloquer la clé des économies universitaires : Maximiser les fonds éducatifs avec les plans 529 et les ESAs Coverdell",
+          "slug": "unlocking-the-key-to-college-savings-maximizing-education-funds-with-529-plans-an",
+          "authorName": "Mister Moneybags",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
+          },
+          "_publishedAt": "2023-10-05T02:06:59+01:00",
+          "description": "Découvrez comment les plans 529 et les ESAs Coverdell peuvent vous aider à économiser pour l'éducation de votre enfant. Apprenez des stratégies efficaces pour naviguer dans la planification universitaire et sécuriser un avenir radieux.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1689371480-i17-img1.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Discover how 529 plans and Coverdell ESAs can help you save for your child's education. ",
+            "title": "Maximizing Education Funds with 529 Plans and Coverdell ESAs",
+            "twitterCard": null,
+            "image": {
+              "width": 870,
+              "height": 870,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1689371480-i17-img1.png"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Retraite",
+      "slug": "retirement",
+      "articles": [
+        {
+          "id": "175940646",
+          "topics": [
+            "Commencer",
+            "Retraite"
+          ],
+          "title": "Maîtriser la planification de la retraite: Décoder les 401(k), les IRA et les régimes de pension pour un avenir sécurisé",
+          "slug": "mastering-retirement-planning-decoding-401-k-s-iras-and-pension-plans-for-a-secur",
+          "authorName": "Mister Moneybags",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
+          },
+          "_publishedAt": "2023-10-05T02:06:05+01:00",
+          "description": "Découvrez le guide essentiel pour la planification de la retraite, démêlant les mystères des 401(k), des IRA et des régimes de pension. Apprenez des stratégies pour construire un portefeuille de retraite robuste et sécuriser votre avenir financier.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1689368706-ib17-img1.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Discover the essential guide to retirement planning, unraveling the mysteries of 401(k)s, IRAs, and pension plans. ",
+            "title": "Mastering Retirement Planning",
+            "twitterCard": null,
+            "image": {
+              "width": 944,
+              "height": 944,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1689368706-ib17-img1.png"
+            }
+          }
+        },
+        {
+          "id": "175685081",
+          "topics": [
+            "Commencer",
+            "Retraite"
+          ],
+          "title": "Débloquer la Sécurité Sociale : Votre guide pour maximiser les avantages de la retraite",
+          "slug": "unlocking-social-security-your-guide-to-maximizing-retirement-benefits",
+          "authorName": "Mister Moneybags",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
+          },
+          "_publishedAt": "2023-10-05T02:05:22+01:00",
+          "description": "Découvrez les stratégies clés et les insights pour optimiser vos avantages de la Sécurité Sociale pour une retraite sécurisée et épanouissante. Prenez le contrôle de votre avenir dès aujourd'hui",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1689311272-ib15-img1.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Discover the key strategies and insights to optimize your Social Security benefits for a secure and fulfilling retirement. ",
+            "title": "Unlocking Social Security",
+            "twitterCard": null,
+            "image": {
+              "width": 870,
+              "height": 870,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1689311272-ib15-img1.png"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Planification fiscale",
+      "slug": "tax planning",
+      "articles": [
+        {
+          "id": "175530377",
+          "topics": [
+            "Commencer",
+            "Planification fiscale"
+          ],
+          "title": "Maximiser les retours: Le guide ultime de la planification fiscale pour les investisseurs",
+          "slug": "maximizing-returns-the-ultimate-guide-to-tax-planning-for-investors",
+          "authorName": "Mister Moneybags",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
+          },
+          "_publishedAt": "2023-10-05T02:04:20+01:00",
+          "description": "Apprenez comment optimiser vos retours sur investissement en comprenant les plus-values, les dividendes et les revenus d'intérêts, tout en minimisant vos obligations fiscales.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1689281511-ib14-img1.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Learn how to optimize your investment returns by understanding capital gains, dividends, and interest income, while minimizing your tax liabilities.",
+            "title": "The Ultimate Guide to Tax Planning for Investors",
+            "twitterCard": null,
+            "image": {
+              "width": 870,
+              "height": 870,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1689281518-ib14-img1.png"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Planification successorale",
+      "slug": "estate planning",
+      "articles": [
+        {
+          "id": "175528452",
+          "topics": [
+            "Commencer",
+            "Planification successorale"
+          ],
+          "title": "Securisez votre heritage : Un guide complet de la planification successorale, testaments, fiducies et impots sur les successions",
+          "slug": "secure-your-legacy-a-comprehensive-guide-to-estate-planning-wills-trusts-and-inhe",
+          "authorName": "Mister Moneybags",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
+          },
+          "_publishedAt": "2023-10-05T02:03:16+01:00",
+          "description": "Decouvrez comment proteger vos actifs et assurer un transfert de patrimoine en douceur. Apprenez-en davantage sur les testaments, les fiducies et la minimisation des impots sur les successions pour la securite financiere.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1689278418-ib13-img1.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Discover how to protect your assets and ensure a smooth transfer of wealth. ",
+            "title": "Secure Your Legacy",
+            "twitterCard": null,
+            "image": {
+              "width": 944,
+              "height": 944,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1689278418-ib13-img1.png"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Planification financière",
+      "slug": "financial planning",
+      "articles": [
+        {
+          "id": "175337478",
+          "topics": [
+            "Commencer",
+            "Planification Financiere"
+          ],
+          "title": "Maitriser vos finances : Le guide ultime pour budgetiser, reduire les dettes et planifier la retraite",
+          "slug": "mastering-your-finances-the-ultimate-guide-to-budgeting-debt-reduction-and-retire",
+          "authorName": "Mister Moneybags",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
+          },
+          "_publishedAt": "2023-10-05T02:00:48+01:00",
+          "description": "Atteignez le succes financier avec des conseils d'experts sur la budgetisation, la reduction de la dette et la planification de la retraite. Prenez le controle de votre avenir et assurez une retraite prospere.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1689220482-ib12-img1.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Achieve financial success with expert guidance on budgeting, debt reduction, and retirement planning. ",
+            "title": "Mastering Your Finances",
+            "twitterCard": null,
+            "image": {
+              "width": 870,
+              "height": 870,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1689220488-ib12-img1.png"
+            }
+          }
+        },
+        {
+          "id": "173906568",
+          "topics": [
+            "Planification financière",
+            "Commencer"
+          ],
+          "title": "Démêler les bases de l'investissement : Naviguer entre types d'actifs, compromis risque-rendement et définition d'objectifs",
+          "slug": "unraveling-investment-basics-navigating-asset-types-risk-return-trade-offs-and-go",
+          "authorName": "Mister Moneybags",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
+          },
+          "_publishedAt": "2023-10-05T01:52:15+01:00",
+          "description": "Maîtrisez l'art de l'investissement : Comprenez les types d'actifs, les compromis risque-rendement et la définition d'objectifs pour des investissements réussis.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1689018579-ib1-img1.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Master the Art of Investing: Understand Asset Types, Risk-Return Trade-offs, and Goal-Setting for Successful Investments.",
+            "title": "Unraveling Investment Basics",
+            "twitterCard": null,
+            "image": {
+              "width": 944,
+              "height": 944,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1689018579-ib1-img1.png"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Inflation",
+      "slug": "inflation",
+      "articles": [
+        {
+          "id": "176002895",
+          "topics": [
+            "Commencer",
+            "Inflation"
+          ],
+          "title": "Naviguer sur les mers financières : Comprendre l'impact de l'inflation sur l'investissement",
+          "slug": "navigating-the-financial-seas-understanding-inflation-s-impact-on-investment",
+          "authorName": "Mister Moneybags",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
+          },
+          "_publishedAt": "2023-10-05T01:59:28+01:00",
+          "description": "Prenez le large sur votre voyage financier avec notre guide complet sur l'inflation. Découvrez comment elle affecte vos investissements et les stratégies pour résister à la tempête.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1689386893-ib20-img1.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Set sail on your financial journey with our comprehensive guide on inflation. ",
+            "title": "Understanding Inflation's Impact on Investments",
+            "twitterCard": null,
+            "image": {
+              "width": 870,
+              "height": 870,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1689386893-ib20-img1.png"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "actions",
+      "slug": "stocks",
+      "articles": [
+        {
+          "id": "173914322",
+          "topics": [
+            "Commencer",
+            "actions"
+          ],
+          "title": "Comprendre le marché boursier : son fonctionnement, les indicateurs de marché et les tendances historiques.",
+          "slug": "understanding-the-stock-market-how-it-works-market-indicators-and-historical-tren",
+          "authorName": "Mister Moneybags",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
+          },
+          "_publishedAt": "2023-10-05T01:58:31+01:00",
+          "description": "Explorez son fonctionnement, les indicateurs clés et les tendances historiques pour prendre des décisions d'investissement éclairées.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1689023549-ib3-img1.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Explore How it Works, Key Indicators, and Historical Trends to Make Informed Investment Decisions.",
+            "title": "Understanding the Stock Market",
+            "twitterCard": null,
+            "image": {
+              "width": 870,
+              "height": 870,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1689023549-ib3-img1.png"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "investissement",
+      "slug": "investing",
+      "articles": [
+        {
+          "id": "173980855",
+          "topics": [
+            "investissement",
+            "obligations"
+          ],
+          "title": "Maitriser les investissements a revenu fixe: Obligations, CDs et fonds du marche monetaire",
+          "slug": "mastering-fixed-income-investments-bonds-cds-and-money-market-funds",
+          "authorName": "Mister Moneybags",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
+          },
+          "_publishedAt": "2023-10-05T01:57:29+01:00",
+          "description": "Decouvrez la stabilite et le potentiel de revenu des investissements a revenu fixe. Apprenez en plus sur les obligations, les CDs et les fonds du marche monetaire, et obtenez des perspectives precieuses pour reussir dans ce domaine.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1689038686-ib4-img1.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Learn about bonds, CDs, and money market funds, and gain valuable insights to succeed in this realm.",
+            "title": "Mastering Fixed-Income Investments",
+            "twitterCard": null,
+            "image": {
+              "width": 944,
+              "height": 944,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1689038686-ib4-img1.png"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "obligations",
+      "slug": "bonds",
+      "articles": [
+        {
+          "id": "173980855",
+          "topics": [
+            "investissement",
+            "obligations"
+          ],
+          "title": "Maitriser les investissements a revenu fixe: Obligations, CDs et fonds du marche monetaire",
+          "slug": "mastering-fixed-income-investments-bonds-cds-and-money-market-funds",
+          "authorName": "Mister Moneybags",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
+          },
+          "_publishedAt": "2023-10-05T01:57:29+01:00",
+          "description": "Decouvrez la stabilite et le potentiel de revenu des investissements a revenu fixe. Apprenez en plus sur les obligations, les CDs et les fonds du marche monetaire, et obtenez des perspectives precieuses pour reussir dans ce domaine.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1689038686-ib4-img1.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Learn about bonds, CDs, and money market funds, and gain valuable insights to succeed in this realm.",
+            "title": "Mastering Fixed-Income Investments",
+            "twitterCard": null,
+            "image": {
+              "width": 944,
+              "height": 944,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1689038686-ib4-img1.png"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "immobilier",
+      "slug": "realestate",
+      "articles": [
+        {
+          "id": "174362868",
+          "topics": [
+            "Commencer",
+            "immobilier"
+          ],
+          "title": "Des maisons aux gratte-ciels: Maitriser l'investissement immobilier dans les secteurs residentiels, commerciaux et les FPI",
+          "slug": "from-houses-to-high-rises-mastering-real-estate-investing-in-residential-commerci",
+          "authorName": "Mister Moneybags",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
+          },
+          "_publishedAt": "2023-10-05T01:56:35+01:00",
+          "description": "Plongez dans le monde de l'investissement immobilier et decouvrez comment prosperer dans les proprietes residentielles, les entreprises commerciales et les FPI. Liberez votre potentiel de creation de richesse des aujourd'hui!",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1689108537-ib5-img1.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Dive into the world of real estate investing and discover how to thrive in residential properties, commercial ventures, and REITs.",
+            "title": "Mastering Real Estate Investing",
+            "twitterCard": null,
+            "image": {
+              "width": 870,
+              "height": 870,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1689108537-ib5-img1.png"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "pageSeo": {
+    "pageSeo": {
+      "description": "Lorem ipsum dolro sit amet",
+      "image": null,
+      "title": "Investing | Bitcash Blog",
+      "twitterCard": "summary_large_image"
+    },
+    "description": "Là où les futurs sont forgés.",
+    "title": "Investissement",
+    "seoType": "investing",
+    "id": "178642408",
+    "_createdAt": "2023-07-24T18:39:38+01:00"
+  }
+}
