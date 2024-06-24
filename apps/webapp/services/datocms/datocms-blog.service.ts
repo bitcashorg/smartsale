@@ -7,6 +7,7 @@ import { getLayoutText } from './datocms-layout.service'
 import { getPageSeoText } from './datocms-seo.service'
 import { BlogAiRecord, SiteLocale } from './graphql/generated/cms'
 import * as fs from 'fs'
+import path from 'path'
 
 export const getBlogData = async (locale: SiteLocale) => {
   const locales = [locale]
@@ -68,22 +69,35 @@ export async function getArticleSections(
     bitcashData,
     aiResearchData
   } = await getBlogData(locale)
-  const dirPath = `dictionaries/${locale}/blog/`
+  console.log('__dirname', __dirname)
+  const dirPath = path.resolve(
+    __dirname.replace('[project]/', ''),
+    `../../../../../dictionaries/${locale}/blog/`
+  )
   const fileName = `blog-index.json`
-  const filePath = `${dirPath}/${fileName}`
-
+  const filePath = path.resolve(dirPath, fileName)
+  console.log({ dirPath, filePath })
+  // return []
   // return cached translations
   try {
     const fileContents = JSON.parse(fs.readFileSync(filePath, 'utf8'))
     return fileContents.sections
   } catch (error) {
-    // console.log('error', error)
+    console.log('error', error)
     try {
       const englishVersion = JSON.parse(
-        fs.readFileSync(`dictionaries/en/blog/${fileName}`, 'utf8')
+        fs.readFileSync(
+          path.resolve(
+            __dirname.replace('[project]/', ''),
+            `../../../dictionaries/en/blog/${fileName}`
+          ),
+          'utf8'
+        )
       )
       if (englishVersion) return englishVersion.sections
-    } catch (error) {}
+    } catch (error) {
+      console.log('error', error)
+    }
   }
 
   const sections: ArticlesSection[] = [
@@ -192,9 +206,13 @@ export async function getBlogCategoryLandingData(
     getPageSeoText(category, locale, [locale])
   ])
 
-  const dirPath = `dictionaries/${locale}/blog/${category}`
+  const dirPath = path.resolve(
+    __dirname.replace('[project]/', ''),
+    `../../../../../dictionaries/${locale}/blog/${category}`
+  )
   const fileName = `${category}-index.json`
-  const filePath = `${dirPath}/${fileName}`
+  const filePath = path.resolve(dirPath, fileName)
+  console.log({ dirPath, filePath })
 
   // return cached translations
   try {
@@ -204,7 +222,13 @@ export async function getBlogCategoryLandingData(
     // console.log('error', error)
     try {
       const englishVersion = JSON.parse(
-        fs.readFileSync(`dictionaries/en/blog/${category}/${fileName}`, 'utf8')
+        fs.readFileSync(
+          path.resolve(
+            __dirname.replace('[project]/', ''),
+            `../../../dictionaries/en/blog/${category}/${fileName}`
+          ),
+          'utf8'
+        )
       )
       if (englishVersion) return englishVersion
     } catch (error) {}
@@ -265,9 +289,13 @@ export async function getBlogArticleData(
   category: string,
   slug: string
 ) {
-  const dirPath = `dictionaries/${locale}/blog/${category}`
+  const dirPath = path.resolve(
+    __dirname.replace('[project]/', ''),
+    `../../../../../dictionaries/${locale}/blog/${category}`
+  )
   const fileName = `${slug}.json`
-  const filePath = `${dirPath}/${fileName}`
+  const filePath = path.resolve(dirPath, fileName)
+  console.log({ dirPath, filePath })
 
   // return cached translations
   try {
@@ -276,50 +304,17 @@ export async function getBlogArticleData(
     )
     return fileContents
   } catch (error) {
-    // console.log('error', error)
+    // console.log('__dirname', __dirname)
     const englishVersion: BlogArticleData = JSON.parse(
-      fs.readFileSync(`dictionaries/en/blog/${category}/${slug}.json`, 'utf8')
+      fs.readFileSync(
+        path.resolve(
+          __dirname.replace('[project]/', ''),
+          `../../../dictionaries/en/blog/${category}/${slug}.json`
+        ),
+        'utf8'
+      )
     )
-    if (englishVersion) {
-      return englishVersion
-    }
-  }
-
-  // if cached translations are not available, translate the english version
-  // return english version by default if translation is not found
-  if (locale !== 'en') {
-    const englishVersion: BlogArticleData = JSON.parse(
-      fs.readFileSync(`dictionaries/en/blog/${category}/${slug}.json`, 'utf8')
-    )
-    return englishVersion
-    //NOTE: this is the old way of translating, we now use the new script that translates all the blogs at once
-    // try {
-    //   const optimized = extractTextForTranslation(englishVersion.blogContent)
-    //   // console.log('======================================')
-    //   // console.log('optimized', optimized)
-    //   const { translation, finishReason } = await openAiTranslate(
-    //     JSON.stringify(optimized),
-    //     locale
-    //   )
-    //   if (finishReason !== 'stop' || !translation) {
-    //     console.log('ERRRRROR TRANSLATING')
-    //     // return english
-    //     return englishVersion
-    //   }
-    //   englishVersion.blogContent = injectTextAfterTranslation(
-    //     englishVersion.blogContent,
-    //     JSON.parse(translation)
-    //   )
-    //   // console.log('==========================================')
-    //   // console.log('!!!! translation', fileContents)
-    //   fs.mkdirSync(dirPath, { recursive: true })
-    //   fs.writeFileSync(filePath, JSON.stringify(englishVersion, null, 2))
-
-    //   return englishVersion
-    // } catch (error) {
-    //   console.log('ERRRORSHSHS', error)
-    //   return englishVersion
-    // }
+    if (englishVersion) return englishVersion
   }
 
   // console.log('getBlogArticleData', { locale, category, slug })
