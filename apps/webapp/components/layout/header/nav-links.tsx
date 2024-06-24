@@ -16,7 +16,7 @@ export function NavLinks({
   toggleOpen
 }: {
   mobile?: boolean
-  toggleOpen: (nextValue?: any) => void
+  toggleOpen?: (nextValue?: any) => void
 } & NavLinksProps) {
   const { loginRedirect, session, logout } = useSession()
   const { openConnectModal } = useConnectModal()
@@ -109,7 +109,7 @@ export function NavLinks({
           if (link.action) return link.action()
           if (link.href) {
             router.push(link.href)
-            toggleOpen(false)
+            toggleOpen && toggleOpen(false)
           }
         }}
         aria-disabled={link.disabled}
