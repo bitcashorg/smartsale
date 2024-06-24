@@ -18,7 +18,6 @@ export default async function ArticlePage(props: ArticlePageProps) {
 
   const { blogContent, relatedBlogs } = data
 
-  // return null
   return (
     <section>
       <main>

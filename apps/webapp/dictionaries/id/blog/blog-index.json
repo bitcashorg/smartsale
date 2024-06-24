@@ -16,7 +16,7 @@
             "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
           },
           "_publishedAt": "2024-06-22T16:00:40+01:00",
-          "description": "Blog ini memperkenalkan Masterbots, sebuah platform yang merevolusi interaksi AI dengan chatbot yang ramah pengguna dan spesifik domain serta fitur berbagi sosial yang unik, mengundang kolaborator untuk bergabung dalam pengembangan yang bersifat open-source dan didorong oleh komunitas.",
+          "description": "Blog ini memperkenalkan Masterbots, sebuah platform yang merevolusi interaksi AI dengan chatbot yang ramah pengguna, spesifik domain dan fitur berbagi sosial yang unik, mengundang kolaborator untuk bergabung dalam pengembangan yang didorong oleh komunitas dan bersifat open-source.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1712270604-screenshot-2024-04-04-at-3-43-11-pm.png"
           },
@@ -41,14 +41,14 @@
             "LLM",
             "Pelatihan"
           ],
-          "title": "Podcast Ruang Laten 16/8/23 [Ringkasan] - Matematika Pelatihan LLM dengan Quentin Anthony dari Eleuther AI",
+          "title": "Podcast Ruang Laten 8/16/23 [Ringkasan] - Matematika Pelatihan LLM dengan Quentin Anthony dari Eleuther AI",
           "slug": "latent-space-podcast-8-16-23-summary-the-mathematics-of-training-llms-with-que",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T09:19:45+01:00",
-          "description": "Jelajahi matematika di balik pelatihan LLM dengan Quentin Anthony dari Eleuther AI. Menyelami artikel Matematika Transformers 101 & menguasai teknik pelatihan terdistribusi untuk kinerja GPU puncak.",
+          "description": "Jelajahi matematika di balik pelatihan LLM dengan Quentin Anthony dari Eleuther AI. Menyelami artikel Transformers Math 101 & menguasai teknik pelatihan terdistribusi untuk kinerja GPU puncak.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692324088-screenshot-2023-08-17-at-9-59-17-pm.png"
           },
@@ -179,9 +179,9 @@
             "Keuangan",
             "Kesehatan",
             "Hukum",
-            "Memancing"
+            "Meminta"
           ],
-          "title": "Menyesuaikan Model Bahasa Besar melalui Pemahaman Bacaan",
+          "title": "Menyesuaikan Model Bahasa Besar melalui Pemahaman Membaca",
           "slug": "adapting-large-language-models-via-reading-comprehension",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
@@ -243,7 +243,7 @@
             "LLM",
             "Pengambilan"
           ],
-          "title": "PDFTriage: Jawaban Pertanyaan atas Dokumen Panjang, Terstruktur",
+          "title": "PDFTriage: Jawaban Pertanyaan atas Dokumen Panjang dan Terstruktur",
           "slug": "pdftriage-question-answering-over-long-structured-documents",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
@@ -272,9 +272,9 @@
           "id": "198277138",
           "topics": [
             "LLM",
-            "Penyetelan Halus"
+            "Penyempurnaan"
           ],
-          "title": "Sorted LLaMA: Membuka Potensi Lapisan Menengah dari Model Bahasa Besar untuk Inferensi Dinamis Menggunakan Penyetelan Halus Terurut (SoFT)",
+          "title": "Sorted LLaMA: Membuka Potensi Lapisan Menengah dari Model Bahasa Besar untuk Inferensi Dinamis Menggunakan Penyempurnaan Terurut (SoFT)",
           "slug": "sorted-llama-unlocking-the-potential-of-intermediate-layers-of-large-language-mod",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
@@ -302,7 +302,7 @@
         {
           "id": "198277150",
           "topics": [
-            "Pembelajaran Mesin Berbahasa Besar",
+            "LLM",
             "Penalaan Instruksi",
             "Multimodal"
           ],
@@ -354,7 +354,7 @@
             "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
           },
           "_publishedAt": "2024-06-20T16:21:42+01:00",
-          "description": "Bagian ini menguraikan pendekatan proaktif platform kami dalam mematuhi standar regulasi global dan mengimplementasikan tindakan keamanan lanjutan, memastikan lingkungan yang aman dan patuh untuk pengguna di ruang kripto dan AI.",
+          "description": "Bagian ini menjelaskan pendekatan proaktif platform kami dalam mematuhi standar regulasi global dan menerapkan tindakan keamanan canggih, memastikan lingkungan yang aman dan patuh untuk pengguna di ruang kripto dan AI.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1710562461-bitlauncherregsecimg.webp"
           },
@@ -384,7 +384,7 @@
             "url": "https://www.datocms-assets.com/101962/1715639160-andler-file-photo.jpg"
           },
           "_publishedAt": "2024-06-20T16:20:40+01:00",
-          "description": "Kami membahas berbagai topik, termasuk mendaftar untuk akun Bitcash, menyiapkan nama akun dan pereferensi, mengidentifikasi dan mengamankan perangkat, menyediakan identifikasi dan informasi pribadi untuk KYC, mengambil foto untuk verifikasi KYC, dan menunggu persetujuan serta bergabung dengan komunitas.",
+          "description": "Kami membahas berbagai topik, termasuk cara mendaftar untuk akun Bitcash, menyiapkan nama akun dan pereferensi, mengidentifikasi dan mengamankan perangkat, menyediakan identifikasi dan informasi pribadi untuk KYC, mengambil foto untuk verifikasi KYC, dan menunggu persetujuan serta bergabung dengan komunitas.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1715638953-bitcash-logo-frame-w-bg.png"
           },
@@ -535,14 +535,14 @@
             "Memulai",
             "Bisnis & Admin"
           ],
-          "title": "Anggaran Cerdas untuk Startup: Panduan Langkah demi Langkah Membangun Fondasi Keuangan yang Kuat",
+          "title": "Penganggaran Cerdas untuk Startup: Panduan Langkah demi Langkah Membangun Fondasi Keuangan yang Kuat",
           "slug": "smart-budgeting-for-startups-a-step-by-step-guide-to-building-a-strong-financial",
           "authorName": "Bootstrap Briggs",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760071-startupblogger2.png"
           },
           "_publishedAt": "2024-06-20T16:40:00+01:00",
-          "description": "Bangun fondasi keuangan yang kuat dengan panduan anggaran cerdas kami untuk startup. Pelajari cara mengelola dana secara efektif untuk pertumbuhan bisnis yang berkelanjutan.",
+          "description": "Bangun fondasi keuangan yang kuat dengan panduan penganggaran cerdas kami untuk startup. Pelajari cara mengelola dana secara efektif untuk pertumbuhan bisnis yang berkelanjutan.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687310597-sb19-img1.png"
           },
@@ -566,14 +566,14 @@
             "Memulai",
             "Tim & SDM"
           ],
-          "title": "Membangun Tim Impian: Panduan Utama dalam Merakit Skuad Startup Anda",
+          "title": "Membangun Tim Impian: Panduan Utama untuk Merakit Skuad Startup Anda",
           "slug": "building-a-dream-team-the-ultimate-guide-to-assembling-your-startup-squad",
           "authorName": "Bootstrap Briggs",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760071-startupblogger2.png"
           },
           "_publishedAt": "2024-06-19T03:48:19+01:00",
-          "description": "Bentuk tim startup ideal Anda dengan panduan komprehensif kami. Tingkatkan efisiensi tim dan pertumbuhan startup dengan saran ahli kami.",
+          "description": "Bentuk tim startup ideal Anda dengan panduan kami yang lengkap. Tingkatkan efisiensi tim dan pertumbuhan startup dengan saran ahli kami.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687119615-sb5-img1.png"
           },
@@ -631,17 +631,17 @@
         {
           "id": "180217169",
           "topics": [
-            "Tokenomika",
+            "Tokenomi",
             "Komentar"
           ],
-          "title": "Ekonomi Insentif Ter-tokenisasi 3: Nilai Token Tidak Akan Menyelaraskan Pemangku Kepentingan [Komentar]",
+          "title": "Ekonomi Insentif Bertoken 3: Nilai Token Tidak Akan Menyelaraskan Pemangku Kepentingan [Komentar]",
           "slug": "economics-of-tokenized-incentives-3-token-value-won-t-align-stakeholders-commenta",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T09:17:23+01:00",
-          "description": "Mengungkap jebakan menggunakan nilai token sebagai metrik kinerja di platform blockchain. Belajar merancang sistem insentif yang efektif.",
+          "description": "Mengungkap jebakan menggunakan nilai token sebagai metrik kinerja di platform blockchain. Belajar untuk merancang sistem insentif yang efektif.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690771457-cbc3-img1.png"
           },
@@ -662,10 +662,10 @@
         {
           "id": "180217123",
           "topics": [
-            "Tokenomika",
+            "Tokenomi",
             "Komentar"
           ],
-          "title": "Ekonomi Insentif Ter-tokenisasi 2: Memilih Metrik Kinerja yang Efektif [Komentar]",
+          "title": "Ekonomi Insentif Bertoken 2: Memilih Metrik Kinerja yang Efektif [Komentar]",
           "slug": "economics-of-tokenized-incentives-2-selecting-effective-performance-metrics-comme",
           "authorName": "Crypto Clairity",
           "authorPicture": {
@@ -796,14 +796,14 @@
             "Memulai",
             "Bukti-dari-Kerja"
           ],
-          "title": "Keamanan Ekonomi Bitcoin: Bagaimana Bukti-dari-Kerja Memungkinkan Jaringan yang Aman dan Terlindungi",
+          "title": "Keamanan Ekonomi Bitcoin: Bagaimana Bukti-dari-Kerja Memungkinkan Jaringan yang Aman dan Terjamin",
           "slug": "the-economic-security-of-bitcoin-how-proof-of-work-enables-a-safe-and-secure-netw",
           "authorName": "Maxi Millie",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
           },
           "_publishedAt": "2023-10-05T05:53:43+01:00",
-          "description": "Temukan keamanan ekonomi Bitcoin dan kekuatan bukti-dari-kerja. Jelajahi bagaimana teknologi inovatif ini memastikan jaringan yang aman dan terlindungi untuk masa depan.",
+          "description": "Temukan keamanan ekonomi Bitcoin dan kekuatan bukti-dari-kerja. Jelajahi bagaimana teknologi inovatif ini memastikan jaringan yang aman dan terjamin untuk masa depan.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686856982-bb8-img1.png"
           },
@@ -834,7 +834,7 @@
             "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
           },
           "_publishedAt": "2023-10-05T05:52:05+01:00",
-          "description": "Tetap terinformasi dan patuh dengan panduan komprehensif kami untuk lanskap hukum dan regulasi Bitcoin. Navigasi kompleksitas cryptocurrency dengan percaya diri.",
+          "description": "Tetap terinformasi dan patuh dengan panduan kami yang komprehensif tentang lanskap hukum dan regulasi Bitcoin. Navigasi kompleksitas cryptocurrency dengan percaya diri.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686855768-bb7-img1edited.png"
           },
@@ -924,7 +924,7 @@
           "id": "175015363",
           "topics": [
             "Memulai",
-            "Dana Bersama & ETF"
+            "Reksa Dana & ETF"
           ],
           "title": "Mengungkap Pro dan Kontra dari Dana yang Diperdagangkan di Bursa (ETF): Panduan Lengkap untuk Investor",
           "slug": "unveiling-the-pros-and-cons-of-exchange-traded-funds-etfs-a-comprehensive-guide-f",
@@ -964,7 +964,7 @@
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:08:41+01:00",
-          "description": "Jaga uang hasil jerih payah Anda! Pelajari cara mengenali penipuan investasi dan melindungi masa depan keuangan Anda dengan panduan lengkap kami untuk menghindari penipuan investasi",
+          "description": "Jaga uang hasil jerih payah Anda! Pelajari cara mengenali penipuan investasi dan lindungi masa depan keuangan Anda dengan panduan lengkap kami untuk menghindari penipuan investasi",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689384626-ib19-img1.png"
           },

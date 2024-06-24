@@ -8,17 +8,17 @@
           "id": "180563939",
           "topics": [
             "DAO",
-            "Tokenomics",
-            "Comentario"
+            "토큰 경제",
+            "논평"
           ],
-          "title": "Un Marco para el Diseño de Gobernanza de Blockchain: La Rueda del Grupo Prysm [Comentario]",
+          "title": "블록체인 거버넌스 설계를 위한 프레임워크: 프리즘 그룹 휠 [논평]",
           "slug": "a-framework-for-blockchain-governance-design-the-prysm-group-wheel-commentary",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T09:19:19+01:00",
-          "description": "Navega las complejidades de la gobernanza de blockchain con la Rueda del Grupo Prysm. Tu hoja de ruta para un diseño efectivo de la gobernanza de blockchain.",
+          "description": "프리즘 그룹 휠로 블록체인 거버넌스의 복잡성을 탐색하세요. 효과적인 블록체인 거버넌스 설계를 위한 로드맵입니다.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690861154-cbc11-img1.webp"
           },
@@ -40,16 +40,16 @@
           "id": "180563903",
           "topics": [
             "DAO",
-            "Resumen"
+            "요약"
           ],
-          "title": "¿Para qué sirve Votar? [Resumen]",
+          "title": "투표는 무엇을 위한 것인가? [요약]",
           "slug": "what-is-voting-for-summary",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T09:10:58+01:00",
-          "description": "Descubre la esencia de votar dentro de los sistemas descentralizados. Obtén conocimientos sobre el verdadero propósito y poder de la votación en blockchain.",
+          "description": "분산 시스템 내에서 투표의 본질을 파헤치세요. 블록체인에서 투표의 진정한 목적과 힘을 이해하십시오.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690859305-cbc6-img1.png"
           },
@@ -71,16 +71,16 @@
           "id": "180563908",
           "topics": [
             "DAO",
-            "Resumen"
+            "요약"
           ],
-          "title": "¿Para qué sirve la Gobernanza? [Resumen]",
+          "title": "거버넌스의 목적은 무엇인가요? [요약]",
           "slug": "what-is-governance-for-summary",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T09:10:45+01:00",
-          "description": "Explora el papel y la importancia de la gobernanza en los sistemas de blockchain. Comprende cómo la gobernanza impulsa la descentralización y el crecimiento.",
+          "description": "블록체인 시스템에서 거버넌스의 역할과 중요성을 탐구하세요. 거버넌스가 어떻게 분산화와 성장을 촉진하는지 이해하세요.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690859755-cbc7-img1.png"
           },
@@ -164,17 +164,17 @@
         {
           "id": "166981063",
           "topics": [
-            "Getting Started",
+            "시작하기",
             "DAO"
           ],
-          "title": "The Future is Here: The Rise of Decentralized Autonomous Organizations (DAOs)",
+          "title": "미래가 여기에 있습니다: 분산 자율 조직(DAOs)의 부상",
           "slug": "the-future-is-here-the-rise-of-decentralized-autonomous-organizations-daos",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T08:57:02+01:00",
-          "description": "Explore the rise of Decentralized Autonomous Organizations (DAOs) in our guide. Understand the future of business and the opportunities for startups.",
+          "description": "우리의 가이드에서 분산 자율 조직(DAOs)의 부상을 탐구하세요. 비즈니스의 미래와 스타트업을 위한 기회를 이해하세요.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687381524-db1-img1.png"
           },
@@ -189,24 +189,24 @@
       ]
     },
     {
-      "name": "Tokenomics",
+      "name": "토큰 경제",
       "slug": "tokenomics",
       "articles": [
         {
           "id": "180563939",
           "topics": [
             "DAO",
-            "Tokenomía",
-            "Comentario"
+            "토큰 경제",
+            "논평"
           ],
-          "title": "Un Marco para el Diseño de Gobernanza de Blockchain: La Rueda del Grupo Prysm [Comentario]",
+          "title": "블록체인 거버넌스 설계를 위한 프레임워크: 프리즘 그룹 휠 [논평]",
           "slug": "a-framework-for-blockchain-governance-design-the-prysm-group-wheel-commentary",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T09:19:19+01:00",
-          "description": "Navega las complejidades de la gobernanza de blockchain con la Rueda del Grupo Prysm. Tu hoja de ruta para un diseño efectivo de la gobernanza de blockchain.",
+          "description": "프리즘 그룹 휠로 블록체인 거버넌스의 복잡성을 탐색하세요. 효과적인 블록체인 거버넌스 설계를 위한 로드맵입니다.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690861154-cbc11-img1.webp"
           },
@@ -227,17 +227,17 @@
         {
           "id": "180217169",
           "topics": [
-            "Tokenomia",
-            "Comentario"
+            "토큰 경제학",
+            "논평"
           ],
-          "title": "Economia de Incentivos Tokenizados 3: El Valor del Token No Alineará a los Interesados [Comentario]",
+          "title": "토큰화된 인센티브의 경제학 3: 토큰 가치가 이해 관계자를 조정하지 않습니다 [논평]",
           "slug": "economics-of-tokenized-incentives-3-token-value-won-t-align-stakeholders-commenta",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T09:17:23+01:00",
-          "description": "Descubre las trampas de usar el valor del token como metrica de rendimiento en plataformas blockchain. Aprende a diseñar sistemas de incentivos efectivos.",
+          "description": "블록체인 플랫폼에서 토큰 가치를 성과 지표로 사용하는 함정을 밝힙니다. 효과적인 인센티브 시스템을 설계하는 방법을 배우세요.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690771457-cbc3-img1.png"
           },
@@ -258,17 +258,17 @@
         {
           "id": "180217123",
           "topics": [
-            "Tokenomics",
-            "Commentary"
+            "토큰 경제학",
+            "논평"
           ],
-          "title": "Economics of Tokenized Incentives 2: Selecting Effective Performance Metrics [Commentary]",
+          "title": "토큰화된 인센티브의 경제학 2: 효과적인 성과 지표 선택 [논평]",
           "slug": "economics-of-tokenized-incentives-2-selecting-effective-performance-metrics-comme",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T09:17:05+01:00",
-          "description": "Discover the power of performance metrics in blockchain pay-for-performance systems. Learn to align incentives with platform goals effectively.",
+          "description": "블록체인 성과급 시스템에서 성과 지표의 힘을 발견하세요. 플랫폼 목표와 인센티브를 효과적으로 조화시키는 방법을 배우세요.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690770918-cbc2-img1.png"
           },
@@ -542,24 +542,24 @@
       ]
     },
     {
-      "name": "Comentario",
+      "name": "논평",
       "slug": "commentary",
       "articles": [
         {
           "id": "180563939",
           "topics": [
             "DAO",
-            "Tokenomia",
-            "Comentario"
+            "토큰 경제",
+            "논평"
           ],
-          "title": "Un Marco para el Diseño de Gobernanza de Blockchain: La Rueda del Grupo Prysm [Comentario]",
+          "title": "블록체인 거버넌스 설계를 위한 프레임워크: 프리즘 그룹 휠 [논평]",
           "slug": "a-framework-for-blockchain-governance-design-the-prysm-group-wheel-commentary",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T09:19:19+01:00",
-          "description": "Navega las complejidades de la gobernanza de blockchain con la Rueda del Grupo Prysm. Tu hoja de ruta para un diseño efectivo de la gobernanza de blockchain.",
+          "description": "프리즘 그룹 휠로 블록체인 거버넌스의 복잡성을 탐색하세요. 효과적인 블록체인 거버넌스 설계를 위한 로드맵입니다.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690861154-cbc11-img1.webp"
           },
@@ -580,17 +580,17 @@
         {
           "id": "180217169",
           "topics": [
-            "Tokenomia",
-            "Comentario"
+            "토큰 경제학",
+            "논평"
           ],
-          "title": "Economia de Incentivos Tokenizados 3: El Valor del Token No Alineará a los Interesados [Comentario]",
+          "title": "토큰화된 인센티브의 경제학 3: 토큰 가치가 이해 관계자를 조정하지 않습니다 [논평]",
           "slug": "economics-of-tokenized-incentives-3-token-value-won-t-align-stakeholders-commenta",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T09:17:23+01:00",
-          "description": "Descubre las trampas de usar el valor del token como metrica de rendimiento en plataformas blockchain. Aprende a diseñar sistemas de incentivos efectivos.",
+          "description": "블록체인 플랫폼에서 토큰 가치를 성과 지표로 사용하는 위험을 밝힙니다. 효과적인 인센티브 시스템을 설계하는 방법을 배우세요.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690771457-cbc3-img1.png"
           },
@@ -611,17 +611,17 @@
         {
           "id": "180217123",
           "topics": [
-            "Tokenomía",
-            "Comentario"
+            "토큰 경제학",
+            "논평"
           ],
-          "title": "Economía de Incentivos Tokenizados 2: Seleccionando Métricas de Rendimiento Efectivas [Comentario]",
+          "title": "토큰화된 인센티브의 경제학 2: 효과적인 성과 지표 선택 [논평]",
           "slug": "economics-of-tokenized-incentives-2-selecting-effective-performance-metrics-comme",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T09:17:05+01:00",
-          "description": "Descubre el poder de las métricas de rendimiento en sistemas de pago por rendimiento basados en blockchain. Aprende a alinear los incentivos con los objetivos de la plataforma de manera efectiva.",
+          "description": "블록체인 성과급 시스템에서 성과 지표의 힘을 발견하세요. 플랫폼 목표와 인센티브를 효과적으로 조화시키는 방법을 배우세요.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690770918-cbc2-img1.png"
           },
@@ -831,23 +831,23 @@
       ]
     },
     {
-      "name": "Contratos Inteligentes",
+      "name": "스마트 계약",
       "slug": "smart contracts",
       "articles": [
         {
           "id": "180556627",
           "topics": [
-            "Comentario",
-            "Contratos Inteligentes"
+            "논평",
+            "스마트 계약"
           ],
-          "title": "Contratos Incompletos y Blockchain [Comentario]",
+          "title": "불완전한 계약과 블록체인 [논평]",
           "slug": "incomplete-contracts-and-blockchain-commentary",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T09:14:44+01:00",
-          "description": "Desmitificar la relación entre contratos incompletos y blockchain. Entender cómo blockchain puede llenar los huecos contractuales.",
+          "description": "불완전한 계약과 블록체인 간의 관계를 명확히 이해하세요. 블록체인이 계약상의 공백을 어떻게 채울 수 있는지 이해하세요.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690856249-cbc5-img1.png"
           },
@@ -868,17 +868,17 @@
         {
           "id": "165614005",
           "topics": [
-            "Comenzando",
-            "Contratos Inteligentes"
+            "시작하기",
+            "스마트 계약"
           ],
-          "title": "El Poder de los Contratos Inteligentes: La Clave para Desbloquear el Futuro de los Negocios y las Finanzas",
+          "title": "스마트 계약의 힘: 비즈니스와 금융의 미래를 여는 열쇠",
           "slug": "the-power-of-smart-contracts-the-key-to-unlocking-the-future-of-business-and-fina",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T06:47:57+01:00",
-          "description": "Explora el potencial revolucionario de los contratos inteligentes. Descubre cómo esta tecnología está redefiniendo los negocios y las finanzas en nuestra publicación de blog.",
+          "description": "스마트 계약의 혁명적 잠재력을 탐구하세요. 이 기술이 비즈니스와 금융을 어떻게 재편하고 있는지 우리의 통찰력 있는 블로그 포스트에서 알아보세요.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686949167-cb10-img1edited.png"
           },
@@ -899,24 +899,24 @@
       ]
     },
     {
-      "name": "Recaudación de fondos",
+      "name": "모금",
       "slug": "fundraising",
       "articles": [
         {
           "id": "180563918",
           "topics": [
-            "Tokenomia",
-            "Comentario",
-            "Recaudacion de fondos"
+            "토큰노믹스",
+            "논평",
+            "모금"
           ],
-          "title": "Tokens: Vehiculo de Inversion o Medio de Intercambio (No Ambos) [Comentario]",
+          "title": "토큰: 투자 수단 또는 교환 매체 (둘 중 하나가 아님) [논평]",
           "slug": "tokens-investment-vehicle-or-medium-of-exchange-not-both-commentary",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T09:13:31+01:00",
-          "description": "Profundiza en el doble papel de los tokens en la economia de blockchain. Descubre la delgada linea entre vehiculo de inversion y medio de intercambio.",
+          "description": "블록체인 경제에서 토큰의 이중 역할을 탐구하십시오. 투자 수단과 교환 매체 사이의 미묘한 차이를 밝혀내십시오.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690859959-cbc8-img1.png"
           },
@@ -937,18 +937,18 @@
         {
           "id": "180563922",
           "topics": [
-            "Recaudación de fondos",
-            "Tokenomics",
-            "Comentario"
+            "모금",
+            "토큰 경제",
+            "논평"
           ],
-          "title": "ICOs aprovechan los efectos de red [Comentario]",
+          "title": "ICO가 네트워크 효과를 활용합니다 [논평]",
           "slug": "icos-leverage-network-effects-commentary",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T09:12:06+01:00",
-          "description": "Descubre cómo las ICOs aprovechan el poder de los efectos de red para impulsar su éxito. ¡ICOs y efectos de red, un dúo dinámico!",
+          "description": "ICO가 네트워크 효과의 힘을 활용하여 성공을 촉진하는 방법을 알아보세요. ICO와 네트워크 효과, 역동적인 듀오!",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690860184-cbc9-img1.png"
           },
@@ -969,18 +969,18 @@
         {
           "id": "180556595",
           "topics": [
-            "Recaudación de fondos",
-            "Tokenomics",
-            "Comentario"
+            "모금",
+            "토큰 경제",
+            "논평"
           ],
-          "title": "El Efecto Blockchain: Efectos de Red sin Costos de Poder de Mercado [Comentario]",
+          "title": "블록체인 효과: 시장 권력 비용 없는 네트워크 효과 [논평]",
           "slug": "the-blockchain-effect-network-effects-without-market-power-costs-commentary",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T09:11:14+01:00",
-          "description": "Explora cómo blockchain permite efectos de red sin las desventajas del poder de mercado. Descubre el revolucionario Efecto Blockchain.",
+          "description": "블록체인이 시장 권력의 단점 없이 네트워크 효과를 가능하게 하는 방법을 탐구하세요. 게임 체인저인 블록체인 효과를 발견하세요.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690855275-cbc4-img1.png"
           },
@@ -1095,24 +1095,24 @@
       ]
     },
     {
-      "name": "Industria",
+      "name": "산업",
       "slug": "industry",
       "articles": [
         {
           "id": "179948652",
           "topics": [
-            "Tokenomía",
-            "Industria",
-            "Resumen"
+            "토크노믹스",
+            "산업",
+            "요약"
           ],
-          "title": "Innovación Digital y Modelos de Ingresos [Resumen]",
+          "title": "디지털 혁신 및 수익 모델 [요약]",
           "slug": "digital-innovation-and-revenue-models-summary",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T09:11:35+01:00",
-          "description": "Descubre cómo la innovación digital redefine la entrega de productos en el grupo Prysm con 'Innovación Digital y Modelos de Ingresos'. Explora la economía de tecnologías emergentes.",
+          "description": "디지털 혁신이 프리즘 그룹의 '디지털 혁신 및 수익 모델'에서 제품 전달을 어떻게 변형시키는지 밝힙니다. 신흥 기술 경제학을 탐구하세요.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690668517-cbr1-img1.png"
           },
@@ -1133,17 +1133,17 @@
         {
           "id": "165634580",
           "topics": [
-            "Comenzando",
-            "Industria"
+            "시작하기",
+            "산업"
           ],
-          "title": "El futuro es ahora: Una visión general del impacto de las criptomonedas en las finanzas globales",
+          "title": "미래는 지금입니다: 암호화폐가 글로벌 금융에 미치는 영향 개요",
           "slug": "the-future-is-now-an-overview-of-cryptocurrency-s-impact-on-global-finance",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T08:30:32+01:00",
-          "description": "Descubre el futuro de las finanzas con las criptomonedas. Explora el impacto transformador de las monedas digitales en el panorama financiero global en nuestra publicación de blog.",
+          "description": "암호화폐로 금융의 미래를 발견하세요. 우리의 통찰력 있는 블로그 포스트에서 글로벌 금융 환경에 대한 디지털 화폐의 변혁적 영향을 탐구하세요.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686965402-cb15-img1.png"
           },
@@ -1164,17 +1164,17 @@
         {
           "id": "165611389",
           "topics": [
-            "Comenzando",
-            "Industria"
+            "시작하기",
+            "산업"
           ],
-          "title": "Desatando el Potencial: Cómo la Criptomoneda está Transformando Industrias",
+          "title": "잠재력을 발휘하다: 암호화폐가 산업을 변혁하는 방법",
           "slug": "unleashing-the-potential-how-cryptocurrency-is-transforming-industries",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T06:40:09+01:00",
-          "description": "Descubre el poder transformador de la criptomoneda en la revolución de las industrias. Explora su potencial para remodelar el panorama empresarial en nuestra perspicaz entrada de blog.",
+          "description": "산업을 혁신하는 암호화폐의 변혁적인 힘을 발견하세요. 우리의 통찰력 있는 블로그 포스트에서 비즈니스 환경을 재구성할 수 있는 잠재력을 탐구하세요.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686946060-cb8-img0edited.png"
           },
@@ -1195,24 +1195,24 @@
       ]
     },
     {
-      "name": "Resumen",
+      "name": "요약",
       "slug": "summary",
       "articles": [
         {
           "id": "179948652",
           "topics": [
-            "Tokenomía",
-            "Industria",
-            "Resumen"
+            "토큰 경제학",
+            "산업",
+            "요약"
           ],
-          "title": "Innovación Digital y Modelos de Ingresos [Resumen]",
+          "title": "디지털 혁신 및 수익 모델 [요약]",
           "slug": "digital-innovation-and-revenue-models-summary",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T09:11:35+01:00",
-          "description": "Descubre cómo la innovación digital redefine la entrega de productos en el grupo Prysm con 'Innovación Digital y Modelos de Ingresos'. Explora la economía de las tecnologías emergentes.",
+          "description": "디지털 혁신이 프리즘 그룹의 '디지털 혁신 및 수익 모델'에서 제품 전달을 어떻게 변형시키는지 밝힙니다. 신흥 기술 경제학을 탐구하세요.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690668517-cbr1-img1.png"
           },
@@ -1234,16 +1234,16 @@
           "id": "180563903",
           "topics": [
             "DAO",
-            "Resumen"
+            "요약"
           ],
-          "title": "¿Para qué sirve Votar? [Resumen]",
+          "title": "투표는 무엇을 위한 것인가? [요약]",
           "slug": "what-is-voting-for-summary",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T09:10:58+01:00",
-          "description": "Descubre la esencia de votar dentro de los sistemas descentralizados. Obtén conocimientos sobre el verdadero propósito y poder de la votación en blockchain.",
+          "description": "분산 시스템 내에서 투표의 본질을 파헤치세요. 블록체인에서 투표의 진정한 목적과 힘을 이해하십시오.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690859305-cbc6-img1.png"
           },
@@ -1265,16 +1265,16 @@
           "id": "180563908",
           "topics": [
             "DAO",
-            "Resumen"
+            "요약"
           ],
-          "title": "¿Para qué sirve la Gobernanza? [Resumen]",
+          "title": "거버넌스의 목적은 무엇인가요? [요약]",
           "slug": "what-is-governance-for-summary",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T09:10:45+01:00",
-          "description": "Explora el papel y la importancia de la gobernanza en los sistemas de blockchain. Comprende cómo la gobernanza impulsa la descentralización y el crecimiento.",
+          "description": "블록체인 시스템에서 거버넌스의 역할과 중요성을 탐구하세요. 거버넌스가 어떻게 분산화와 성장을 촉진하는지 이해하세요.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690859755-cbc7-img1.png"
           },
@@ -1295,23 +1295,23 @@
       ]
     },
     {
-      "name": "Legal",
+      "name": "법률",
       "slug": "legal",
       "articles": [
         {
           "id": "166984334",
           "topics": [
             "DAO",
-            "Legal"
+            "법률"
           ],
-          "title": "Organizaciones Autónomas Descentralizadas (DAOs): Estructuras Legales Básicas para Negocios y Propósitos Sin Fines de Lucro",
+          "title": "분산 자율 조직(DAOs): 비즈니스 및 비영리 목적을 위한 기본 법적 구조",
           "slug": "decentralized-autonomous-organizations-daos-basic-legal-structures-for-business-a",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T08:59:06+01:00",
-          "description": "Descubre las estructuras legales básicas de DAO para negocios y propósitos sin fines de lucro.",
+          "description": "비즈니스 및 비영리 목적을 위한 기본 DAO 법적 구조를 알아보세요.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687384353-db2-img1.png"
           },
@@ -1332,17 +1332,17 @@
         {
           "id": "165611088",
           "topics": [
-            "Primeros Pasos",
-            "Legal"
+            "시작하기",
+            "법적"
           ],
-          "title": "Navegando el Campo Minado Legal: Entendiendo el Paisaje Regulatorio de las Criptomonedas",
+          "title": "암호화폐의 규제 환경 이해: 법적 지뢰밭 탐색",
           "slug": "navigating-the-legal-minefield-understanding-the-regulatory-landscape-of-cryptocu",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T06:32:05+01:00",
-          "description": "Navega con facilidad por el complejo paisaje regulatorio de las criptomonedas. Obtén una comprensión clara de las consideraciones legales en nuestra guía completa.",
+          "description": "암호화폐의 복잡한 규제 환경을 쉽게 탐색하세요. 우리의 종합적인 가이드에서 법적 고려 사항을 명확히 이해하세요.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686944651-cb7-img1edited.png"
           },
@@ -1363,23 +1363,23 @@
       ]
     },
     {
-      "name": "Comenzando",
+      "name": "시작하기",
       "slug": "getting started",
       "articles": [
         {
           "id": "167101094",
           "topics": [
-            "Comenzando",
-            "Tokenomics"
+            "시작하기",
+            "토큰 경제"
           ],
-          "title": "Tokenomics 101: ¡Desatando el Poder de la Criptomoneda!",
+          "title": "토큰 경제 101: 암호화폐의 힘을 발휘하다!",
           "slug": "tokenomics-101-unleashing-the-power-of-cryptocurrency",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T08:57:58+01:00",
-          "description": "Descubre el poder de la criptomoneda a través de Tokenomics 101 - una guía detallada para entender la economía detrás de los activos digitales.",
+          "description": "토큰 경제 101을 통해 디지털 자산의 경제학을 이해하는 심층 가이드를 통해 암호화폐의 힘을 발견하세요.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687391799-tb1-img1.png"
           },
@@ -1400,17 +1400,17 @@
         {
           "id": "166981063",
           "topics": [
-            "Comenzando",
+            "시작하기",
             "DAO"
           ],
-          "title": "El futuro esta aqui: El auge de las Organizaciones Autonomas Descentralizadas (DAOs)",
+          "title": "미래가 여기에 있습니다: 분산 자율 조직(DAOs)의 부상",
           "slug": "the-future-is-here-the-rise-of-decentralized-autonomous-organizations-daos",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T08:57:02+01:00",
-          "description": "Explora el auge de las Organizaciones Autonomas Descentralizadas (DAOs) en nuestra guia. Comprende el futuro de los negocios y las oportunidades para las startups.",
+          "description": "우리의 가이드에서 분산 자율 조직(DAOs)의 부상을 탐구하세요. 비즈니스의 미래와 스타트업을 위한 기회를 이해하세요.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687381524-db1-img1.png"
           },
@@ -1425,17 +1425,17 @@
         {
           "id": "165744328",
           "topics": [
-            "Getting Started",
-            "How-To"
+            "시작하기",
+            "방법"
           ],
-          "title": "Stay Ahead of the Game: A Guide to Staying Informed and Educated in the World of Cryptocurrency",
+          "title": "게임의 선두에 서다: 암호화폐 세계에서 정보에 밝고 교육받는 방법 안내",
           "slug": "stay-ahead-of-the-game-a-guide-to-staying-informed-and-educated-in-the-world-of-c",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T08:52:39+01:00",
-          "description": "Stay informed and educated in the dynamic world of cryptocurrency. Explore our comprehensive guide to stay ahead of the game and navigate the ever-evolving digital landscape.",
+          "description": "암호화폐의 역동적인 세계에서 정보에 밝고 교육받으세요. 우리의 종합적인 가이드를 탐험하여 게임의 선두에 서고 계속 변화하는 디지털 환경을 탐색하세요.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687049473-cb20-img1.png"
           },
@@ -1704,17 +1704,17 @@
         {
           "id": "165614216",
           "topics": [
-            "Getting Started",
-            "Fundraising"
+            "시작하기",
+            "모금"
           ],
-          "title": "Navigating the Wild West of Initial Coin Offerings: A Beginner's Guide to Investing in the Future of Technology",
+          "title": "초보자를 위한 기술의 미래에 투자하는 가이드: 초기 코인 제공의 와일드 웨스트 탐색",
           "slug": "navigating-the-wild-west-of-initial-coin-offerings-a-beginner-s-guide-to-investin",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T07:00:44+01:00",
-          "description": "Embark on a guided journey through the world of Initial Coin Offerings (ICOs). Learn how to navigate this dynamic landscape and invest in the future of technology.",
+          "description": "초기 코인 제공(ICOs)의 세계를 통한 안내 여정에 참여하세요. 이 다이내믹한 풍경을 탐색하고 기술의 미래에 투자하는 방법을 배우세요.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686951243-cb11-img1edited.png"
           },
@@ -2013,23 +2013,23 @@
       ]
     },
     {
-      "name": "Cómo",
+      "name": "방법",
       "slug": "how-to",
       "articles": [
         {
           "id": "165744328",
           "topics": [
-            "Comenzando",
-            "Cómo hacer"
+            "시작하기",
+            "방법"
           ],
-          "title": "Mantente a la Vanguardia: Una Guía para Mantenerse Informado y Educado en el Mundo de la Criptomoneda",
+          "title": "게임의 선두를 유지하세요: 암호화폐 세계에서 정보에 밝고 교육받는 가이드",
           "slug": "stay-ahead-of-the-game-a-guide-to-staying-informed-and-educated-in-the-world-of-c",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T08:52:39+01:00",
-          "description": "Mantente informado y educado en el dinámico mundo de la criptomoneda. Explora nuestra guía completa para mantenerte a la vanguardia y navegar por el paisaje digital en constante evolución.",
+          "description": "암호화폐의 역동적인 세계에서 정보에 밝고 교육받으세요. 게임의 선두를 유지하고 끊임없이 변화하는 디지털 환경을 탐색하는 종합 가이드를 확인하세요.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687049473-cb20-img1.png"
           },
@@ -2050,18 +2050,18 @@
         {
           "id": "165610881",
           "topics": [
-            "Primeros Pasos",
-            "Cómo Hacerlo",
-            "Investigación"
+            "시작하기",
+            "방법",
+            "연구"
           ],
-          "title": "Navegando el Mercado de Criptomonedas: Una Guía para Principiantes sobre Investigación y Evaluación de Activos Digitales",
+          "title": "암호화폐 시장 탐색: 디지털 자산을 연구하고 평가하는 초보자 가이드",
           "slug": "navigating-the-cryptocurrency-market-a-beginner-s-guide-to-researching-and-evalua",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T06:30:29+01:00",
-          "description": "Descubre los secretos del mercado de criptomonedas con nuestra guía para principiantes. Aprende cómo investigar y evaluar activos digitales para inversiones exitosas.",
+          "description": "초보자를 위한 가이드로 암호화폐 시장의 비밀을 풀어보세요. 성공적인 투자를 위해 디지털 자산을 연구하고 평가하는 방법을 배워보세요.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686943620-cb6-img1edited.png"
           },
@@ -2082,17 +2082,17 @@
         {
           "id": "165399242",
           "topics": [
-            "Como hacer",
-            "Intercambio"
+            "방법",
+            "교환"
           ],
-          "title": "La guia para principiantes sobre la compra y venta de criptomonedas: Un recorrido paso a paso",
+          "title": "암호화폐 구매 및 판매 초보자 가이드: 단계별 안내",
           "slug": "the-beginner-s-guide-to-buying-and-selling-cryptocurrencies-a-step-by-step-walkth",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T06:28:00+01:00",
-          "description": "Navega el mundo del comercio de criptomonedas con facilidad. Sigue nuestra guia para principiantes con instrucciones paso a paso sobre como comprar y vender criptomonedas.",
+          "description": "암호화폐 거래 세계를 쉽게 탐색하세요. 초보자를 위한 단계별 지침을 따라 암호화폐 구매 및 판매 방법을 배우세요.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686880885-cb5-img1edited.png"
           },
@@ -2113,23 +2113,23 @@
       ]
     },
     {
-      "name": "Pagos",
+      "name": "지불",
       "slug": "payments",
       "articles": [
         {
           "id": "165742753",
           "topics": [
-            "Comenzando",
-            "Pagos"
+            "시작하기",
+            "결제"
           ],
-          "title": "Stablecoins: El futuro de las transacciones y pagos con criptomonedas",
+          "title": "스테이블코인: 암호화폐 거래 및 결제의 미래",
           "slug": "stablecoins-the-future-of-cryptocurrency-transactions-and-payments",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T08:49:51+01:00",
-          "description": "Descubre el futuro de las transacciones y pagos con criptomonedas mediante stablecoins. Explora la estabilidad y el potencial de estos innovadores activos digitales en nuestra publicación de blog.",
+          "description": "스테이블코인으로 암호화폐 거래 및 결제의 미래를 발견하세요. 이 혁신적인 디지털 자산의 안정성과 잠재력을 우리의 통찰력 있는 블로그 포스트에서 탐험하세요.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687049009-cb19-img3edited.png"
           },
@@ -2150,17 +2150,17 @@
         {
           "id": "165625675",
           "topics": [
-            "Comenzando",
-            "Pagos"
+            "시작하기",
+            "결제"
           ],
-          "title": "El futuro de las transferencias internacionales: cómo las criptomonedas están cambiando el juego",
+          "title": "국제 송금의 미래: 암호화폐가 게임을 어떻게 바꾸고 있는가",
           "slug": "the-future-of-international-transfers-how-cryptocurrency-is-changing-the-game",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T07:04:27+01:00",
-          "description": "Descubre el futuro de las transferencias internacionales con criptomonedas. Explora cómo esta tecnología innovadora está revolucionando las transacciones transfronterizas en nuestra entrada de blog.",
+          "description": "암호화폐로 국제 송금의 미래를 열어보세요. 이 혁신적인 기술이 국경 간 거래를 어떻게 혁신하고 있는지 우리의 통찰력 있는 블로그 포스트에서 탐구하세요.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686953468-cb13-img1edited.png"
           },
@@ -2181,17 +2181,17 @@
         {
           "id": "165625350",
           "topics": [
-            "Comenzando",
-            "Pagos"
+            "시작하기",
+            "결제"
           ],
-          "title": "La guía definitiva para realizar compras en línea con criptomonedas: Comprender los detalles de usar moneda digital para transacciones cotidianas.",
+          "title": "암호화폐로 온라인 구매하기: 디지털 화폐를 사용하여 일상 거래를 이해하는 최고의 가이드",
           "slug": "the-ultimate-guide-to-making-online-purchases-with-cryptocurrency-understanding-t",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T07:02:44+01:00",
-          "description": "Descubre la guía definitiva para usar criptomonedas en compras en línea. Domina el arte de las transacciones digitales seguras y convenientes en nuestra publicación de blog completa.",
+          "description": "암호화폐를 사용한 온라인 구매에 대한 최고의 가이드를 발견하세요. 우리의 종합적인 블로그 포스트에서 안전하고 편리한 디지털 거래의 기술을 마스터하세요.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686952511-cb12-img1.png"
           },
@@ -2212,23 +2212,23 @@
       ]
     },
     {
-      "name": "DeFi",
+      "name": "디파이",
       "slug": "defi",
       "articles": [
         {
           "id": "165685913",
           "topics": [
             "DeFi",
-            "Comenzando"
+            "시작하기"
           ],
-          "title": " descentraliza tu finanza: Una introduccion al mundo de DeFi",
+          "title": "당신의 재정을 분산시키세요: DeFi의 세계로의 소개",
           "slug": "decentralize-your-finance-an-introduction-to-the-world-of-defi",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T08:47:03+01:00",
-          "description": "Desbloquea el poder de las finanzas descentralizadas (DeFi). Explora el mundo innovador de las soluciones financieras basadas en blockchain en nuestra publicacion de blog completa.",
+          "description": "분산 금융(DeFi)의 힘을 해제하세요. 우리의 포괄적인 블로그 포스트에서 블록체인 기반 금융 솔루션의 혁신적인 세계를 탐험하세요.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687047143-cb18-img1.png"
           },
@@ -2249,23 +2249,23 @@
       ]
     },
     {
-      "name": "Inversión",
+      "name": "투자",
       "slug": "investment",
       "articles": [
         {
           "id": "165673014",
           "topics": [
-            "Comenzando",
-            "Inversión"
+            "시작하기",
+            "투자"
           ],
-          "title": "Inversión en Criptomonedas 101: Cómo Usar la Criptomoneda para Inversión y Gestión de Activos",
+          "title": "암호화폐 투자 101: 투자 및 자산 관리를 위한 암호화폐 사용 방법",
           "slug": "crypto-investing-101-how-to-use-cryptocurrency-for-investment-and-asset-managemen",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T08:32:00+01:00",
-          "description": "Domina el arte de invertir en cripto y la gestión de activos. Aprende cómo aprovechar la criptomoneda para estrategias de inversión óptimas en nuestra guía completa.",
+          "description": "암호화폐 투자 및 자산 관리의 기술을 마스터하세요. 우리의 종합 가이드에서 최적의 투자 전략을 위해 암호화폐를 활용하는 방법을 배워보세요.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687044673-cb16-img5.png"
           },
@@ -2286,23 +2286,23 @@
       ]
     },
     {
-      "name": "Minería",
+      "name": "채굴",
       "slug": "mining",
       "articles": [
         {
           "id": "165634456",
           "topics": [
-            "Comenzando",
-            "Minería"
+            "시작하기",
+            "채굴"
           ],
-          "title": "Desatando el Poder de la Minería de Criptomonedas: Una Visión General de los Algoritmos de Prueba de Trabajo",
+          "title": "암호화폐 채굴의 힘을 발휘하다: 작업 증명 알고리즘 개요",
           "slug": "unleashing-the-power-of-cryptocurrency-mining-an-overview-of-proof-of-work-algori",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T08:28:45+01:00",
-          "description": "Explora el poder de la minería de criptomonedas y los algoritmos de prueba de trabajo. Descubre cómo este proceso impulsa la naturaleza segura y descentralizada de las monedas digitales en nuestra publicación de blog informativa.",
+          "description": "암호화폐 채굴과 작업 증명 알고리즘의 힘을 탐구하세요. 이 과정이 디지털 화폐의 안전하고 분산된 특성을 어떻게 추진하는지 우리의 정보적인 블로그 포스트에서 알아보세요.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686959517-cb11-img0edited.png"
           },
@@ -2323,23 +2323,23 @@
       ]
     },
     {
-      "name": "Seguridad",
+      "name": "보안",
       "slug": " security",
       "articles": [
         {
           "id": "165611516",
           "topics": [
-            "Comenzando",
-            "Seguridad"
+            "시작하기",
+            "보안"
           ],
-          "title": "Desvelando los Secretos del Almacenamiento Criptográfico: Cómo Mantener Tus Activos Digitales Seguros y Protegidos",
+          "title": "암호 저장의 비밀을 푸는 방법: 디지털 자산을 안전하게 보호하는 방법",
           "slug": "unlocking-the-secrets-of-crypto-storage-how-to-keep-your-digital-assets-safe-and",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T06:40:53+01:00",
-          "description": "Protege tus activos digitales con confianza. Explora estrategias efectivas para el almacenamiento seguro de criptomonedas en nuestra guía completa.",
+          "description": "신뢰를 가지고 디지털 자산을 보호하세요. 우리의 종합 가이드에서 안전한 암호 저장을 위한 효과적인 전략을 탐구하세요.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686948319-cb9-img1edited.png"
           },
@@ -2360,17 +2360,17 @@
         {
           "id": "165367458",
           "topics": [
-            "Comenzando",
-            "Seguridad"
+            "시작하기",
+            "보안"
           ],
-          "title": "Cripto Seguridad 101: Cómo Almacenar y Asegurar Tus Criptomonedas de Forma Segura",
+          "title": "암호 보안 101: 암호화폐를 안전하게 저장하고 보호하는 방법",
           "slug": "crypto-security-101-how-to-safely-store-and-secure-your-cryptocurrencies",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T06:23:03+01:00",
-          "description": "Domina el arte de la seguridad criptográfica con nuestra guía completa. Aprende estrategias esenciales para almacenar y asegurar tus valiosas criptomonedas de manera segura.",
+          "description": "우리의 종합적인 가이드와 함께 암호 보안의 기술을 마스터하세요. 귀중한 암호화폐를 안전하게 저장하고 보호하는 필수 전략을 배우십시오.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686862662-cb3-img1edited.png"
           },
@@ -2391,24 +2391,24 @@
       ]
     },
     {
-      "name": "Investigación",
+      "name": "연구",
       "slug": "research",
       "articles": [
         {
           "id": "165610881",
           "topics": [
-            "Primeros pasos",
-            "Cómo hacer",
-            "Investigación"
+            "시작하기",
+            "방법",
+            "연구"
           ],
-          "title": "Navegando el mercado de criptomonedas: Una guía para principiantes sobre cómo investigar y evaluar activos digitales",
+          "title": "암호화폐 시장 탐색: 디지털 자산을 연구하고 평가하는 초보자 가이드",
           "slug": "navigating-the-cryptocurrency-market-a-beginner-s-guide-to-researching-and-evalua",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T06:30:29+01:00",
-          "description": "Descubre los secretos del mercado de criptomonedas con nuestra guía para principiantes. Aprende cómo investigar y evaluar activos digitales para inversiones exitosas.",
+          "description": "우리의 초보자 가이드로 암호화폐 시장의 비밀을 풀어보세요. 성공적인 투자를 위해 디지털 자산을 연구하고 평가하는 방법을 배워보세요.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686943620-cb6-img1edited.png"
           },
@@ -2429,23 +2429,23 @@
       ]
     },
     {
-      "name": "Intercambio",
+      "name": "교환",
       "slug": " exchange",
       "articles": [
         {
           "id": "165399242",
           "topics": [
-            "Cómo hacer",
-            "Intercambio"
+            "방법",
+            "교환"
           ],
-          "title": "La guía del principiante para comprar y vender criptomonedas: Un recorrido paso a paso",
+          "title": "암호화폐 구매 및 판매 초보자 가이드: 단계별 안내",
           "slug": "the-beginner-s-guide-to-buying-and-selling-cryptocurrencies-a-step-by-step-walkth",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T06:28:00+01:00",
-          "description": "Navega el mundo del comercio de criptomonedas con facilidad. Sigue nuestra guía para principiantes con instrucciones paso a paso sobre cómo comprar y vender criptomonedas.",
+          "description": "암호화폐 거래 세계를 쉽게 탐색하세요. 암호화폐 구매 및 판매에 대한 단계별 지침을 따르세요.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686880885-cb5-img1edited.png"
           },
@@ -2466,23 +2466,23 @@
       ]
     },
     {
-      "name": "Historia",
+      "name": "역사",
       "slug": "history",
       "articles": [
         {
           "id": "165365581",
           "topics": [
-            "Primeros pasos",
-            "Historia"
+            "시작하기",
+            "역사"
           ],
-          "title": "La evolución de la criptomoneda: desde Bitcoin hasta DeFi y más allá",
+          "title": "암호화폐의 진화: 비트코인에서 DeFi 그리고 그 너머로",
           "slug": "the-evolution-of-cryptocurrency-from-bitcoin-to-defi-and-beyond",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T06:10:06+01:00",
-          "description": "Embárcate en un viaje a través de la evolución de la criptomoneda, desde la creación de Bitcoin hasta el surgimiento de DeFi y más allá. Explora las emocionantes posibilidades de este paisaje digital en constante evolución.",
+          "description": "비트코인의 시작부터 DeFi의 부상까지, 암호화폐의 진화 과정을 탐험하세요. 이 지속적으로 발전하는 디지털 풍경의 흥미로운 가능성을 탐구하세요.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686861503-cb2-img1.png"
           },
@@ -2510,8 +2510,8 @@
       "title": "Crypto | Bitcash Blog",
       "twitterCard": "summary_large_image"
     },
-    "description": "Desbloqueando el poder de la moneda digital",
-    "title": "Cripto",
+    "description": "디지털 화폐의 힘을 해제",
+    "title": "암호화폐",
     "seoType": "crypto",
     "id": "178642410",
     "_createdAt": "2023-07-24T18:41:13+01:00"

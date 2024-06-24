@@ -1,23 +1,23 @@
 {
   "sections": [
     {
-      "name": "Comenzando",
+      "name": "入门",
       "slug": "getting started",
       "articles": [
         {
           "id": "165921766",
           "topics": [
-            "Comenzando",
-            "Legal"
+            "入门",
+            "法律"
           ],
-          "title": "Navegando el Paisaje Legal: Consideraciones Legales Esenciales para Fundadores de Startups",
+          "title": "导航法律环境：创业者必须知道的法律要点",
           "slug": "navigating-the-legal-landscape-essential-legal-considerations-for-startup-founder",
           "authorName": "Steve Savant",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760845-startupbloggeralt2.png"
           },
           "_publishedAt": "2024-06-20T17:21:44+01:00",
-          "description": "Navegue el paisaje legal con confianza con nuestra guía. Consideraciones legales esenciales para fundadores de startups para proteger y asegurar el crecimiento empresarial.",
+          "description": "通过我们的指南自信地导航法律环境。创业者必须考虑的法律要点，以保护和确保业务增长。",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687128753-sb8-img2.png"
           },
@@ -38,17 +38,17 @@
         {
           "id": "166795692",
           "topics": [
-            "Primeros Pasos",
-            "Negocios y Administracion"
+            "入门",
+            "商业与管理"
           ],
-          "title": "Dominando el Flujo de Caja: La Guia Definitiva para Fundadores de Startups",
+          "title": "掌握现金流：创业者的终极指南",
           "slug": "mastering-cash-flow-the-ultimate-guide-for-startup-founders",
           "authorName": "Bootstrap Briggs",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760071-startupblogger2.png"
           },
           "_publishedAt": "2024-06-20T16:40:26+01:00",
-          "description": "Domina el flujo de caja con nuestra guia definitiva para fundadores de startups. Aprende estrategias para mantener la liquidez, gestionar las finanzas y asegurar la estabilidad del negocio.",
+          "description": "通过我们的终极指南掌握现金流。学习维持流动性、管理财务和确保业务稳定的策略。",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687312847-sb20-img1.png"
           },
@@ -69,17 +69,17 @@
         {
           "id": "166788631",
           "topics": [
-            "Comenzando",
-            "Negocios y Administracion"
+            "入门",
+            "商业与管理"
           ],
-          "title": "Presupuestacion Inteligente para Startups: Una Guia Paso a Paso para Construir una Base Financiera Solida",
+          "title": "初创企业智能预算编制：构建坚实财务基础的分步指南",
           "slug": "smart-budgeting-for-startups-a-step-by-step-guide-to-building-a-strong-financial",
           "authorName": "Bootstrap Briggs",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760071-startupblogger2.png"
           },
           "_publishedAt": "2024-06-20T16:40:00+01:00",
-          "description": "Construye una base financiera solida con nuestra guia de presupuestacion inteligente para startups. Aprende a gestionar fondos de manera efectiva para el crecimiento sostenible del negocio.",
+          "description": "通过我们的初创企业智能预算指南构建坚实的财务基础。学习有效管理资金以实现可持续的业务增长。",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687310597-sb19-img1.png"
           },
@@ -440,17 +440,17 @@
         {
           "id": "165817305",
           "topics": [
-            "Getting Started",
-            "Fundraising"
+            "入门",
+            "筹款"
           ],
-          "title": "Unlocking the Secrets of Successful Startup Fundraising: A Comprehensive Guide",
+          "title": "揭开成功创业筹资的秘密：全面指南",
           "slug": "unlocking-the-secrets-of-successful-startup-fundraising-a-comprehensive-guide",
           "authorName": "Steve Savant",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760845-startupbloggeralt2.png"
           },
           "_publishedAt": "2023-10-05T01:57:06+01:00",
-          "description": "Discover the secrets of successful startup fundraising in our comprehensive guide. Learn to attract investors and secure the funding your venture needs.",
+          "description": "在我们的全面指南中发现成功创业筹资的秘密。学习吸引投资者并获得您的企业所需的资金。",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687124658-sb7-img1.png"
           },
@@ -532,16 +532,16 @@
         {
           "id": "165817167",
           "topics": [
-            "Getting Started"
+            "入门"
           ],
-          "title": "Maximizing Your Network: The Key to Unlocking Business Opportunities",
+          "title": "最大化您的网络：开启商机的关键",
           "slug": "maximizing-your-network-the-key-to-unlocking-business-opportunities",
           "authorName": "Bootstrap Briggs",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760071-startupblogger2.png"
           },
           "_publishedAt": "2023-10-05T01:53:17+01:00",
-          "description": "Unlock business opportunities by maximizing your network. Boost connections with our strategic networking guide",
+          "description": "通过最大化您的网络来解锁商业机会。利用我们的战略性网络指南增强连接",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687123001-sb6-img1.png"
           },
@@ -623,23 +623,23 @@
       ]
     },
     {
-      "name": "Legal",
+      "name": "法律",
       "slug": "legal",
       "articles": [
         {
           "id": "165921766",
           "topics": [
-            "Primeros pasos",
-            "Legal"
+            "入门",
+            "法律"
           ],
-          "title": "Navegando el Paisaje Legal: Consideraciones Legales Esenciales para Fundadores de Startups",
+          "title": "导航法律环境：创业者必须了解的法律要点",
           "slug": "navigating-the-legal-landscape-essential-legal-considerations-for-startup-founder",
           "authorName": "Steve Savant",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760845-startupbloggeralt2.png"
           },
           "_publishedAt": "2024-06-20T17:21:44+01:00",
-          "description": "Navega el paisaje legal con confianza con nuestra guía. Consideraciones legales esenciales para fundadores de startups para proteger y asegurar el crecimiento empresarial.",
+          "description": "通过我们的指南自信地导航法律环境。创业者必须考虑的法律要点，以保护和确保业务增长。",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687128753-sb8-img2.png"
           },
@@ -660,17 +660,17 @@
         {
           "id": "165927224",
           "topics": [
-            "Comenzando",
-            "Legal"
+            "入门",
+            "法律"
           ],
-          "title": "Descifrando el Laberinto de Estructuras Empresariales: Una Guía para Fundadores de Startups",
+          "title": "解码商业结构迷宫：初创企业创始人指南",
           "slug": "decoding-the-business-structure-maze-a-guide-for-start-up-founders",
           "authorName": "Steve Savant",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760845-startupbloggeralt2.png"
           },
           "_publishedAt": "2023-10-05T01:59:45+01:00",
-          "description": "Descifra el laberinto de estructuras empresariales con nuestra guía. Perspectivas vitales para que los fundadores de startups establezcan un marco de negocio sólido y sostenible.",
+          "description": "通过我们的指南解读商业结构迷宫。对初创企业创始人建立坚实可持续的商业框架的重要见解。",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687132710-sb10-img1.png"
           },
@@ -691,17 +691,17 @@
         {
           "id": "165921857",
           "topics": [
-            "Comenzando",
-            "Legal"
+            "入门",
+            "法律"
           ],
-          "title": "Protegiendo las Joyas de la Corona de tu Startup: Una Guía para Proteger tu Propiedad Intelectual",
+          "title": "保护您的创业公司的核心资产：保护知识产权指南",
           "slug": "safeguarding-your-startup-s-crown-jewels-a-guide-to-protecting-your-intellectual",
           "authorName": "Steve Savant",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760845-startupbloggeralt2.png"
           },
           "_publishedAt": "2023-10-05T01:58:48+01:00",
-          "description": "Aprende a proteger los activos más valiosos de tu startup con nuestra guía de propiedad intelectual. Estrategias esenciales para salvaguardar el futuro de tu negocio.",
+          "description": "通过我们的知识产权指南学习保护您的创业公司最宝贵的资产。保护您的商业未来的基本策略。",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687130315-sb9-img1.png"
           },
@@ -722,23 +722,23 @@
       ]
     },
     {
-      "name": "Negocios y Administración",
+      "name": "商业和管理",
       "slug": "business & admin",
       "articles": [
         {
           "id": "166795692",
           "topics": [
-            "Primeros Pasos",
-            "Negocios y Administración"
+            "入门",
+            "商业与管理"
           ],
-          "title": "Dominando el Flujo de Caja: La Guía Definitiva para Fundadores de Startups",
+          "title": "掌握现金流：创业者的终极指南",
           "slug": "mastering-cash-flow-the-ultimate-guide-for-startup-founders",
           "authorName": "Bootstrap Briggs",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760071-startupblogger2.png"
           },
           "_publishedAt": "2024-06-20T16:40:26+01:00",
-          "description": "Domina el flujo de caja con nuestra guía definitiva para fundadores de startups. Aprende estrategias para mantener la liquidez, gestionar las finanzas y asegurar la estabilidad del negocio.",
+          "description": "通过我们的终极指南掌握现金流。学习维持流动性、管理财务和确保业务稳定的策略。",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687312847-sb20-img1.png"
           },
@@ -759,17 +759,17 @@
         {
           "id": "166788631",
           "topics": [
-            "Comenzando",
-            "Negocios y Administración"
+            "入门",
+            "商业与管理"
           ],
-          "title": "Presupuestación Inteligente para Startups: Una Guía Paso a Paso para Construir una Base Financiera Sólida",
+          "title": "初创企业智能预算编制：构建坚实财务基础的分步指南",
           "slug": "smart-budgeting-for-startups-a-step-by-step-guide-to-building-a-strong-financial",
           "authorName": "Bootstrap Briggs",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760071-startupblogger2.png"
           },
           "_publishedAt": "2024-06-20T16:40:00+01:00",
-          "description": "Construye una base financiera sólida con nuestra guía de presupuestación inteligente para startups. Aprende a gestionar los fondos de manera efectiva para el crecimiento sostenible del negocio.",
+          "description": "通过我们的初创企业智能预算指南构建坚实的财务基础。学习有效管理资金以实现可持续的业务增长。",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687310597-sb19-img1.png"
           },
@@ -790,17 +790,17 @@
         {
           "id": "166788522",
           "topics": [
-            "Comenzando",
-            "Negocios y Administración"
+            "入门",
+            "商业与管理"
           ],
-          "title": "Proyectando Prosperidad: Una Guía para Establecer Proyecciones Financieras Realistas para tu Startup",
+          "title": "展望繁荣：为您的创业设定现实的财务预测指南",
           "slug": "projecting-prosperity-a-guide-to-setting-realistic-financial-projections-for-your",
           "authorName": "Bootstrap Briggs",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760071-startupblogger2.png"
           },
           "_publishedAt": "2023-10-05T02:07:18+01:00",
-          "description": "Establece proyecciones financieras realistas con nuestra guía para startups. Aprende a proyectar prosperidad, gestionar finanzas y asegurar el futuro de tu negocio.",
+          "description": "通过我们的创业指南设定现实的财务预测。学习如何展望繁荣，管理财务，并确保您的业务未来。",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687308062-sb18-img1.png"
           },
@@ -852,23 +852,23 @@
       ]
     },
     {
-      "name": "Equipos y RRHH",
+      "name": "团队与人力资源",
       "slug": "teams & hr",
       "articles": [
         {
           "id": "165816954",
           "topics": [
-            "Comenzando",
-            "Equipos y RRHH"
+            "入门",
+            "团队与人力资源"
           ],
-          "title": "Construyendo un Equipo de Ensueño: La Guía Definitiva para Armar Tu Escuadrón de Inicio",
+          "title": "组建梦之队：组装您的创业团队的终极指南",
           "slug": "building-a-dream-team-the-ultimate-guide-to-assembling-your-startup-squad",
           "authorName": "Bootstrap Briggs",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760071-startupblogger2.png"
           },
           "_publishedAt": "2024-06-19T03:48:19+01:00",
-          "description": "Forma tu equipo ideal de inicio con nuestra guía completa. Aumenta la eficiencia del equipo y el crecimiento de la startup con nuestros consejos expertos.",
+          "description": "通过我们的全面指南组建您理想的创业团队。利用我们的专家建议提升团队效率和创业增长。",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687119615-sb5-img1.png"
           },
@@ -889,23 +889,23 @@
       ]
     },
     {
-      "name": "Ventas y Marketing",
+      "name": "销售与市场",
       "slug": "sales & marketing",
       "articles": [
         {
           "id": "166322203",
           "topics": [
-            "Comenzando",
-            "Ventas y Marketing"
+            "入门",
+            "销售与市场"
           ],
-          "title": "El Plan Maestro para el Exito: Una Guia para Elaborar un Plan de Ventas Ganador para tu Startup",
+          "title": "成功蓝图：为您的初创企业制定赢销售计划指南",
           "slug": "the-blueprint-to-success-a-guide-to-crafting-a-winning-sales-plan-for-your-startu",
           "authorName": "Steve Savant",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760845-startupbloggeralt2.png"
           },
           "_publishedAt": "2023-10-05T02:08:22+01:00",
-          "description": "Elabora un plan de ventas ganador para tu startup con nuestro plan maestro para el exito. Obtén perspectivas sobre cómo generar ingresos y lograr un crecimiento sostenible.",
+          "description": "利用我们的成功蓝图为您的初创企业制定赢销售计划。了解如何推动收入和实现可持续增长。",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687212250-sb16-img1.png"
           },
@@ -926,17 +926,17 @@
         {
           "id": "166788454",
           "topics": [
-            "Comenzando",
-            "Ventas y Marketing"
+            "入门",
+            "销售与市场营销"
           ],
-          "title": "La guia definitiva para dominar los costos de adquisicion de clientes para startups",
+          "title": "初创企业掌握客户获取成本的终极指南",
           "slug": "the-ultimate-guide-to-mastering-customer-acquisition-costs-for-startups",
           "authorName": "Bootstrap Briggs",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760071-startupblogger2.png"
           },
           "_publishedAt": "2023-10-05T02:06:22+01:00",
-          "description": "Domina los costos de adquisicion de clientes con nuestra guia definitiva. Aprende a optimizar los gastos, atraer clientes y maximizar la rentabilidad de tu startup.",
+          "description": "通过我们的终极指南掌握客户获取成本。学习优化支出，吸引客户并最大化您的初创企业的盈利能力。",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687305683-sb17-img1.png"
           },
@@ -957,17 +957,17 @@
         {
           "id": "166286175",
           "topics": [
-            "Comenzando",
-            "Ventas y Marketing"
+            "入门",
+            "销售与市场"
           ],
-          "title": "Maximizando tu Alcance de Marketing: Una Guía para Utilizar las Redes Sociales en Startups",
+          "title": "最大化您的市场覆盖率：初创企业利用社交媒体的指南",
           "slug": "maximizing-your-marketing-reach-a-guide-to-utilizing-social-media-for-startups",
           "authorName": "Steve Savant",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760845-startupbloggeralt2.png"
           },
           "_publishedAt": "2023-10-05T02:05:42+01:00",
-          "description": "Maximiza tu alcance de marketing con nuestra guía sobre redes sociales para startups. Aprende a involucrar a las audiencias y aprovechar las plataformas para el crecimiento empresarial.",
+          "description": "通过我们关于初创企业社交媒体的指南最大化您的市场覆盖率。学习吸引观众并利用平台促进业务增长。",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687209924-sb15-img2.png"
           },
@@ -1112,23 +1112,23 @@
       ]
     },
     {
-      "name": "Recaudación de fondos",
+      "name": "筹款",
       "slug": "fundraising",
       "articles": [
         {
           "id": "165817305",
           "topics": [
-            "Comenzando",
-            "Recaudación de fondos"
+            "入门",
+            "筹款"
           ],
-          "title": "Descubriendo los Secretos de la Recaudación de Fondos Exitosa para Startups: Una Guía Completa",
+          "title": "揭开成功创业筹资的秘密：全面指南",
           "slug": "unlocking-the-secrets-of-successful-startup-fundraising-a-comprehensive-guide",
           "authorName": "Steve Savant",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760845-startupbloggeralt2.png"
           },
           "_publishedAt": "2023-10-05T01:57:06+01:00",
-          "description": "Descubre los secretos de la recaudación de fondos exitosa para startups en nuestra guía completa. Aprende a atraer inversores y asegurar la financiación que tu empresa necesita.",
+          "description": "在我们的全面指南中发现成功创业筹资的秘密。学习吸引投资者并获得您的企业所需的资金。",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687124658-sb7-img1.png"
           },
@@ -1156,8 +1156,8 @@
       "title": "Startups | Bitcash Blog",
       "twitterCard": "summary_large_image"
     },
-    "description": "Suenalo. Construyelo. Escalalo.",
-    "title": "Emprendimientos",
+    "description": "梦想它。建造它。扩大它。",
+    "title": "初创公司",
     "seoType": "startup",
     "id": "178642409",
     "_createdAt": "2023-07-24T18:40:21+01:00"

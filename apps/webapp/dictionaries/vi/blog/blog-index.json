@@ -9,14 +9,14 @@
           "topics": [
             "Ứng dụng"
           ],
-          "title": "Masterbots: Nâng cao AI vượt qua ChatGPT với Chia sẻ Xã hội và Đổi mới Thân thiện với Người dùng",
+          "title": "Masterbots: Nâng cao AI vượt ra ngoài ChatGPT với Chia sẻ Xã hội và Đổi mới Thân thiện với Người dùng",
           "slug": "masterbots-elevating-ai-beyond-chatgpt-with-social-sharing-and-user-friendly-inno",
           "authorName": "Jun Dam",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
           },
           "_publishedAt": "2024-06-22T16:00:40+01:00",
-          "description": "Bài viết giới thiệu Masterbots, một nền tảng cách mạng hóa tương tác AI với chatbots thân thiện với người dùng, cụ thể về lĩnh vực và tính năng chia sẻ xã hội độc đáo, mời các cộng tác viên tham gia phát triển nguồn mở, do cộng đồng dẫn dắt.",
+          "description": "Bài viết giới thiệu Masterbots, một nền tảng làm cách mạng hóa tương tác AI với chatbots thân thiện, cụ thể về lĩnh vực và tính năng chia sẻ xã hội độc đáo, mời các cộng tác viên tham gia phát triển mã nguồn mở, do cộng đồng dẫn dắt.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1712270604-screenshot-2024-04-04-at-3-43-11-pm.png"
           },
@@ -70,18 +70,18 @@
           "id": "190259129",
           "topics": [
             "LLM",
-            "Hardware",
-            "Summary",
-            "Edge"
+            "Phần cứng",
+            "Tóm tắt",
+            "Cạnh"
           ],
-          "title": "Latent Space Podcast 8/10/23 [Summary]: LLMs Everywhere: Running 70B models in browsers and iPhones using MLC — with Tianqi Chen of CMU / OctoML",
+          "title": "Podcast Không gian tiềm ẩn 8/10/23 [Tóm tắt]: LLMs Khắp nơi: Chạy mô hình 70B trong trình duyệt và iPhone sử dụng MLC — với Tianqi Chen của CMU / OctoML",
           "slug": "latent-space-podcast-8-10-23-summary-llms-everywhere-running-70b-models-in-browse",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T09:18:37+01:00",
-          "description": "Explore the magic of MLC with Tianqi Chen: deploying 70B models on browsers & iPhones. Dive into XGBoost, TVM's creation, & the future of universal AI deployments. ",
+          "description": "Khám phá phép màu của MLC với Tianqi Chen: triển khai mô hình 70B trên trình duyệt & iPhone. Đi sâu vào XGBoost, sự tạo ra của TVM, & tương lai của triển khai AI toàn cầu.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1691894611-screenshot-2023-08-12-at-10-42-43-pm.png"
           },
@@ -212,7 +212,7 @@
             "LLM",
             "Đa ngôn ngữ"
           ],
-          "title": "OpenBA: Mô hình chuỗi đối xứng song ngữ 15B nguồn mở được huấn luyện từ đầu",
+          "title": "OpenBA: Mô hình chuyển đổi ngôn ngữ song ngữ 15B nguồn mở được huấn luyện từ đầu",
           "slug": "openba-an-open-sourced-15b-bilingual-asymmetric-seq2seq-model-pre-trained-from-sc",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
@@ -243,7 +243,7 @@
             "Máy học",
             "Truy xuất"
           ],
-          "title": "PDFTriage: Trả lời câu hỏi qua các tài liệu dài, có cấu trúc",
+          "title": "PDFTriage: Trả lời câu hỏi qua các Tài liệu Dài, Có cấu trúc",
           "slug": "pdftriage-question-answering-over-long-structured-documents",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
@@ -354,7 +354,7 @@
             "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
           },
           "_publishedAt": "2024-06-20T16:21:42+01:00",
-          "description": "Phần này trình bày cách tiếp cận tích cực của nền tảng chúng tôi trong việc tuân thủ các tiêu chuẩn quy định toàn cầu và thực hiện các biện pháp an ninh tiên tiến, đảm bảo một môi trường an toàn và tuân thủ cho người dùng trong các lĩnh vực tiền điện tử và AI.",
+          "description": "Phần này trình bày cách tiếp cận tích cực của nền tảng chúng tôi trong việc tuân thủ các tiêu chuẩn quy định toàn cầu và áp dụng các biện pháp an ninh tiên tiến, đảm bảo một môi trường an toàn và tuân thủ cho người dùng trong các lĩnh vực tiền điện tử và AI.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1710562461-bitlauncherregsecimg.webp"
           },
@@ -384,7 +384,7 @@
             "url": "https://www.datocms-assets.com/101962/1715639160-andler-file-photo.jpg"
           },
           "_publishedAt": "2024-06-20T16:20:40+01:00",
-          "description": "Chung toi se bao quat mot loat cac chu de, bao gom dang ky tai khoan Bitcash, cai dat ten tai khoan va nguoi gioi thieu, xac dinh va bao mat thiet bi, cung cap thong tin can cu va thong tin ca nhan cho KYC, chup anh cho xac minh KYC, va cho doi su phe duyet va tham gia cong dong.",
+          "description": "Chung toi se bao quat mot loat cac chu de, bao gom dang ky tai khoan Bitcash, cai dat ten tai khoan va nguoi gioi thieu, xac dinh va bao mat thiet bi, cung cap thong tin can cu va thong tin ca nhan cho KYC, chup anh cho xac minh KYC, va cho phe duyet va tham gia cong dong.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1715638953-bitcash-logo-frame-w-bg.png"
           },
@@ -504,14 +504,14 @@
             "Bắt đầu",
             "Kinh doanh & Quản trị"
           ],
-          "title": "Thành thạo Dòng tiền: Hướng dẫn Tối thượng cho Nhà sáng lập Startup",
+          "title": "Thành thạo Dòng tiền: Hướng dẫn Tối thượng cho Nhà sáng lập Khởi nghiệp",
           "slug": "mastering-cash-flow-the-ultimate-guide-for-startup-founders",
           "authorName": "Bootstrap Briggs",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760071-startupblogger2.png"
           },
           "_publishedAt": "2024-06-20T16:40:26+01:00",
-          "description": "Thành thạo dòng tiền với hướng dẫn tối thượng của chúng tôi dành cho nhà sáng lập startup. Học các chiến lược để duy trì tính thanh khoản, quản lý tài chính và đảm bảo sự ổn định kinh doanh.",
+          "description": "Thành thạo dòng tiền với hướng dẫn tối thượng của chúng tôi dành cho nhà sáng lập khởi nghiệp. Học các chiến lược để duy trì tính thanh khoản, quản lý tài chính và đảm bảo sự ổn định kinh doanh.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687312847-sb20-img1.png"
           },
@@ -542,7 +542,7 @@
             "url": "https://www.datocms-assets.com/101962/1694760071-startupblogger2.png"
           },
           "_publishedAt": "2024-06-20T16:40:00+01:00",
-          "description": "Xây dựng nền tảng tài chính vững chắc với hướng dẫn ngân sách thông minh của chúng tôi dành cho các startup. Học cách quản lý quỹ hiệu quả để phát triển kinh doanh bền vững.",
+          "description": "Xây dựng nền tảng tài chính vững chắc với hướng dẫn ngân sách thông minh của chúng tôi dành cho các startup. Học cách quản lý quỹ hiệu quả để phát triển doanh nghiệp bền vững.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687310597-sb19-img1.png"
           },
@@ -566,7 +566,7 @@
             "Bắt đầu",
             "Nhóm & Nhân sự"
           ],
-          "title": "Xây dựng Đội mơ ước: Hướng dẫn Tối thượng để Tổ chức Đội ngũ Khởi nghiệp của Bạn",
+          "title": "Xây dựng Đội mơ ước: Hướng dẫn Tối thượng để Tập hợp Đội ngũ Khởi nghiệp của Bạn",
           "slug": "building-a-dream-team-the-ultimate-guide-to-assembling-your-startup-squad",
           "authorName": "Bootstrap Briggs",
           "authorPicture": {
@@ -634,14 +634,14 @@
             "Kinh tế học về mã thông báo",
             "Bình luận"
           ],
-          "title": "Kinh tế học của các khoản khích lệ được mã hóa 3: Giá trị mã thông báo không đồng nhất các bên liên quan [Bình luận]",
+          "title": "Kinh tế của các Kích thích Được Mã hóa 3: Giá trị Mã thông báo Không Đồng nhất các Bên liên quan [Bình luận]",
           "slug": "economics-of-tokenized-incentives-3-token-value-won-t-align-stakeholders-commenta",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T09:17:23+01:00",
-          "description": "Khám phá những hạn chế khi sử dụng giá trị mã thông báo như một chỉ số hiệu suất trên các nền tảng blockchain. Học cách thiết kế các hệ thống khích lệ hiệu quả.",
+          "description": "Khám phá những hạn chế của việc sử dụng giá trị mã thông báo như một chỉ số hiệu suất trên các nền tảng blockchain. Học cách thiết kế các hệ thống kích thích hiệu quả.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690771457-cbc3-img1.png"
           },
@@ -662,10 +662,10 @@
         {
           "id": "180217123",
           "topics": [
-            "Kinh tế học về mã thông báo",
+            "Kinh tế học về Token",
             "Bình luận"
           ],
-          "title": "Kinh tế của các Kích thích Mã hóa 2: Lựa chọn các Chỉ số Hiệu suất Hiệu quả [Bình luận]",
+          "title": "Kinh tế của các Kích thích Được Token hóa 2: Lựa chọn các Chỉ số Hiệu suất Hiệu quả [Bình luận]",
           "slug": "economics-of-tokenized-incentives-2-selecting-effective-performance-metrics-comme",
           "authorName": "Crypto Clairity",
           "authorPicture": {
@@ -696,14 +696,14 @@
             "Kinh tế học về Token",
             "Bình luận"
           ],
-          "title": "Kinh tế của các Kích thích Được Token hóa 1: Giới thiệu về Thanh toán theo Hiệu suất [Bình luận]",
+          "title": "Kinh tế học về Khuyến khích Token hóa 1: Giới thiệu về Thanh toán theo Hiệu suất [Bình luận]",
           "slug": "economics-of-tokenized-incentives-1-intro-to-pay-for-performance",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T09:15:12+01:00",
-          "description": "Khám phá những phức tạp của các kích thích thanh toán theo hiệu suất trên các nền tảng blockchain. Tìm hiểu các sự đánh đổi và các yếu tố thiết kế cho sự thành công.",
+          "description": "Khám phá những phức tạp của các khuyến khích thanh toán theo hiệu suất trên các nền tảng blockchain. Tìm hiểu các sự đánh đổi và các yếu tố thiết kế cho sự thành công.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690770568-cbc1-img1.png"
           },
@@ -803,7 +803,7 @@
             "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
           },
           "_publishedAt": "2023-10-05T05:53:43+01:00",
-          "description": "Khám phá an ninh kinh tế của Bitcoin và sức mạnh của chứng minh công việc. Khám phá cách công nghệ đổi mới này đảm bảo một mạng lưới an toàn và bảo mật cho tương lai.",
+          "description": "Khám phá an ninh kinh tế của Bitcoin và sức mạnh của chứng minh công việc. Khám phá cách công nghệ sáng tạo này đảm bảo một mạng lưới an toàn và bảo mật cho tương lai.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686856982-bb8-img1.png"
           },
@@ -827,14 +827,14 @@
             "Bắt đầu",
             "Pháp lý"
           ],
-          "title": "Định hướng Pháp lý và Quy định của Bitcoin: Hiểu các Quy tắc và Cơ hội",
+          "title": "Định hướng Phong cảnh Pháp lý và Quy định của Bitcoin: Hiểu các Quy tắc và Cơ hội",
           "slug": "navigating-the-legal-and-regulatory-landscape-of-bitcoin-understanding-the-rules",
           "authorName": "Maxi Millie",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
           },
           "_publishedAt": "2023-10-05T05:52:05+01:00",
-          "description": "Hãy cập nhật thông tin và tuân thủ với hướng dẫn toàn diện của chúng tôi về pháp lý và quy định của Bitcoin. Điều hướng sự phức tạp của tiền điện tử một cách tự tin.",
+          "description": "Hãy thông báo và tuân thủ với hướng dẫn toàn diện của chúng tôi về phong cảnh pháp lý và quy định của Bitcoin. Điều hướng sự phức tạp của tiền điện tử với sự tự tin.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686855768-bb7-img1edited.png"
           },
@@ -926,14 +926,14 @@
             "Bắt đầu",
             "Quỹ tương hỗ & ETFs"
           ],
-          "title": "Bật mí Ưu và Nhược điểm của Quỹ Giao dịch Trên Sàn (ETFs): Hướng dẫn Toàn diện cho Nhà đầu tư",
+          "title": "Tiết lộ Ưu và Nhược điểm của Quỹ Giao dịch Trên Sàn (ETFs): Hướng dẫn Toàn diện cho Nhà đầu tư",
           "slug": "unveiling-the-pros-and-cons-of-exchange-traded-funds-etfs-a-comprehensive-guide-f",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:09:18+01:00",
-          "description": "Khám phá các lợi ích và bất lợi khi đầu tư vào ETFs. Đưa ra quyết định thông minh và tối đa hóa tiềm năng đầu tư của bạn với hướng dẫn toàn diện này.",
+          "description": "Khám phá các lợi ích và nhược điểm khi đầu tư vào ETFs. Đưa ra quyết định thông minh và tối đa hóa tiềm năng đầu tư của bạn với hướng dẫn toàn diện này.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689186966-ib8-img1.png"
           },
@@ -964,7 +964,7 @@
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:08:41+01:00",
-          "description": "Bảo vệ tiền bạc của bạn! Học cách nhận biết các trò lừa đảo đầu tư và bảo vệ tương lai tài chính của bạn với hướng dẫn toàn diện của chúng tôi để tránh lừa đảo đầu tư",
+          "description": "Bảo vệ tiền của bạn! Học cách nhận biết các trò lừa đảo đầu tư và bảo vệ tương lai tài chính của bạn với hướng dẫn toàn diện của chúng tôi để tránh lừa đảo đầu tư",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689384626-ib19-img1.png"
           },

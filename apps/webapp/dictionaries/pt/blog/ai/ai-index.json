@@ -1,22 +1,22 @@
 {
   "sections": [
     {
-      "name": "Aplicaciones",
+      "name": "Aplicativos",
       "slug": "apps",
       "articles": [
         {
           "id": "SpdLuuYEQgW8rwSHNzhmxA",
           "topics": [
-            "Aplicaciones"
+            "Aplicativos"
           ],
-          "title": "Masterbots: Elevando la IA más allá de ChatGPT con Compartir Social e Innovación Amigable al Usuario",
+          "title": "Masterbots: Elevando a IA Além do ChatGPT com Compartilhamento Social e Inovação Amigável ao Usuário",
           "slug": "masterbots-elevating-ai-beyond-chatgpt-with-social-sharing-and-user-friendly-inno",
           "authorName": "Jun Dam",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
           },
           "_publishedAt": "2024-06-22T16:00:40+01:00",
-          "description": "El blog presenta Masterbots, una plataforma que revoluciona la interacción con IA mediante chatbots específicos del dominio y una característica única de compartir socialmente, invitando a colaboradores a unirse a su desarrollo abierto y impulsado por la comunidad.",
+          "description": "O blog apresenta Masterbots, uma plataforma que revoluciona a interação com IA por meio de chatbots específicos para cada domínio e uma característica única de compartilhamento social, convidando colaboradores a se juntarem ao seu desenvolvimento aberto e dirigido pela comunidade.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1712270604-screenshot-2024-04-04-at-3-43-11-pm.png"
           },
@@ -37,24 +37,24 @@
       ]
     },
     {
-      "name": "Resumen",
+      "name": "Resumo",
       "slug": "summary",
       "articles": [
         {
           "id": "190259319",
           "topics": [
-            "Resumen",
+            "Resumo",
             "LLM",
-            "Entrenamiento"
+            "Treinamento"
           ],
-          "title": "Podcast Espacio Latente 16/08/23 [Resumen] - La Matematica del Entrenamiento de LLMs con Quentin Anthony de Eleuther AI",
+          "title": "Podcast Espaço Latente 16/08/23 [Resumo] - A Matemática do Treinamento de LLMs — com Quentin Anthony da Eleuther AI",
           "slug": "latent-space-podcast-8-16-23-summary-the-mathematics-of-training-llms-with-que",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T09:19:45+01:00",
-          "description": "Explora la matematica detras del entrenamiento de LLMs con Quentin Anthony de Eleuther AI. Sumergente en el articulo de Matematicas de Transformers 101 y domina las tecnicas de entrenamiento distribuido para el maximo rendimiento de GPU.",
+          "description": "Explore a matemática por trás do treinamento de LLMs com Quentin Anthony da Eleuther AI. Mergulhe no artigo Transformers Math 101 e domine técnicas de treinamento distribuído para desempenho máximo de GPU.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692324088-screenshot-2023-08-17-at-9-59-17-pm.png"
           },
@@ -77,17 +77,17 @@
           "topics": [
             "LLM",
             "Hardware",
-            "Resumen",
-            "Borde"
+            "Resumo",
+            "Borda"
           ],
-          "title": "Podcast del Espacio Latente 8/10/23 [Resumen]: LLMs por todas partes: Ejecutando modelos de 70B en navegadores y iPhones usando MLC — con Tianqi Chen de CMU / OctoML",
+          "title": "Podcast Espaço Latente 8/10/23 [Resumo]: LLMs por toda parte: Executando modelos de 70B em navegadores e iPhones usando MLC — com Tianqi Chen da CMU / OctoML",
           "slug": "latent-space-podcast-8-10-23-summary-llms-everywhere-running-70b-models-in-browse",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T09:18:37+01:00",
-          "description": "Explora la magia de MLC con Tianqi Chen: desplegando modelos de 70B en navegadores y iPhones. Sumérgete en XGBoost, la creación de TVM y el futuro de las implementaciones universales de IA.",
+          "description": "Explore a magia do MLC com Tianqi Chen: implantando modelos de 70B em navegadores e iPhones. Mergulhe no XGBoost, na criação do TVM e no futuro das implantações universais de IA.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1691894611-screenshot-2023-08-12-at-10-42-43-pm.png"
           },
@@ -108,20 +108,20 @@
         {
           "id": "190259087",
           "topics": [
-            "Resumen",
+            "Resumo",
             "LLM",
             "Código",
-            "Código Abierto",
-            "Modelos Pequeños"
+            "Código Aberto",
+            "Modelos Pequenos"
           ],
-          "title": "Podcast Espacio Latente 8/4/23 [Resumen] ¡Cruce de Espacio Latente x Desglose de IA!",
+          "title": "Podcast Espaço Latente 8/4/23 [Resumo] Crossover do Espaço Latente x AI Breakdown!",
           "slug": "latent-space-podcast-8-4-23-summary-latent-space-x-ai-breakdown-crossover-pod",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T09:16:33+01:00",
-          "description": "Únete a Desglose de IA y Espacio Latente para el resumen tecnológico de IA de verano: Sumérgete en GPT4.5, Llama 2, herramientas de IA, el ingeniero de IA en ascenso, y más!",
+          "description": "Junte-se ao AI Breakdown e Espaço Latente para o resumo de tecnologia de IA do verão: Mergulhe no GPT4.5, Llama 2, ferramentas de IA, o engenheiro de IA em ascensão e muito mais!",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1691539617-screenshot-2023-08-08-at-8-02-52-pm.png"
           },
@@ -142,19 +142,19 @@
         {
           "id": "190259111",
           "topics": [
-            "Resumen",
-            "Transformadores",
-            "Entrenamiento",
-            "Código Abierto"
+            "Summary",
+            "Transformers",
+            "Training",
+            "Open Source"
           ],
-          "title": "Podcast del Espacio Latente 26/7/23 [Resumen] FlashAttention 2: haciendo los Transformadores 800% más rápidos - Tri Dao de Together AI",
+          "title": " Latent Space Podcast 7/26/23 [Summary] FlashAttention 2: making Transformers 800% faster - Tri Dao of Together AI",
           "slug": "latent-space-podcast-7-26-23-summary-flashattention-2-making-transformers-800-fas",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T09:14:13+01:00",
-          "description": "Descubre cómo FlashAttention revolucionó la velocidad de la IA con Tri Dao, mientras él revela el poder de FlashAttention 2, se adentra en el Laboratorio Hazy de Stanford y las futuras perspectivas de la IA.",
+          "description": "Discover how FlashAttention revolutionized AI speed with Tri Dao, as he unveils the power of FlashAttention 2, dives into Stanford's Hazy Lab & future AI insights.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1691543194-screenshot-2023-08-08-at-8-43-59-pm.png"
           },
@@ -240,17 +240,17 @@
         {
           "id": "190259216",
           "topics": [
-            "Summary",
-            "Open Source"
+            "Resumo",
+            "Código Aberto"
           ],
-          "title": "Latent Space Podcast 7/2/23 [Summary] AI Trends: a Latent Space x Practical AI crossover pod!",
+          "title": "Podcast Espaço Latente 7/2/23 [Resumo] Tendências de IA: um crossover de pod Espaço Latente x IA Prática!",
           "slug": "latent-space-podcast-7-2-23-summary-ai-trends-a-latent-space-x-practical-ai-cross",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T09:08:36+01:00",
-          "description": "Explore the fusion of Practical AI & Latent Space as they delve into 2023's top AI trends, reflect on standout episodes, and share insights on navigating the AI evolution.",
+          "description": "Explore a fusão de IA Prática e Espaço Latente enquanto eles mergulham nas principais tendências de IA de 2023, refletem sobre episódios de destaque e compartilham insights sobre como navegar na evolução da IA.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692146916-screenshot-2023-08-15-at-5-20-38-pm.png"
           },
@@ -719,16 +719,16 @@
           "id": "191313319",
           "topics": [
             "LLM",
-            "Summary"
+            "Resumo"
           ],
-          "title": "Latent Space Podcast 2/23 [Summary] - ChatGPT, GPT4 hype, and Building LLM-native products — with Logan Kilpatrick of OpenAI",
+          "title": "Podcast Espaço Latente 23/02 [Resumo] - ChatGPT, hype do GPT4 e Construção de produtos nativos LLM com Logan Kilpatrick da OpenAI",
           "slug": "latent-space-podcast-2-23-summary-chatgpt-gpt4-hype-and-building-llm-native-produ",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T06:48:48+01:00",
-          "description": "Explore ChatGPT, the buzz around GPT4, & creating LLM-native products with Logan Kilpatrick of OpenAI. Dive into AI's future on Latent Space Podcast Ep. 1!",
+          "description": "Explore o ChatGPT, o burburinho em torno do GPT4 e a criação de produtos nativos LLM com Logan Kilpatrick da OpenAI. Mergulhe no futuro da IA no Episódio 1 do Podcast Espaço Latente!",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1694214561-screenshot-2023-09-08-at-3-49-03-pm.png"
           },
@@ -749,17 +749,17 @@
         {
           "id": "190258948",
           "topics": [
-            "Summary",
+            "Resumo",
             "LLM"
           ],
-          "title": "Large language models, explained with a minimum of math and jargon [Summary]",
+          "title": "Modelos de linguagem de grande escala, explicados com o mínimo de matemática e jargão [Resumo]",
           "slug": "large-language-models-explained-with-a-minimum-of-math-and-jargon-eli5-summary",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T06:40:32+01:00",
-          "description": "Explore the power of AI language models like GPT-3 & GPT-4, their impressive performance, and the concept of 'theory of mind' in AI.",
+          "description": "Explore o poder dos modelos de linguagem de IA como GPT-3 e GPT-4, seu desempenho impressionante e o conceito de 'teoria da mente' em IA.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690601993-abr3-img1.png"
           },
@@ -780,17 +780,17 @@
         {
           "id": "190258977",
           "topics": [
-            "Resumen",
+            "Resumo",
             "Transformadores"
           ],
-          "title": "El Plano del Transformador: Una Guia Holistica para la Arquitectura de Red Neuronal Transformadora [Resumen]",
+          "title": "O Projeto do Transformador: Um Guia Completo para a Arquitetura de Rede Neural Transformadora [Resumo]",
           "slug": "the-transformer-blueprint-a-holistic-guide-to-the-transformer-neural-network-arch",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T06:39:30+01:00",
-          "description": "Explora 'El Plano del Transformador' - una guia integral para entender y aplicar el poder transformador de la Arquitectura de Red Neuronal Transformadora.",
+          "description": "Explore 'O Projeto do Transformador' - um guia abrangente para entender e aplicar o poder transformador da Arquitetura de Rede Neural Transformadora.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690679303-abr4-img1.png"
           },
@@ -812,17 +812,17 @@
           "id": "190259003",
           "topics": [
             "LLM",
-            "Resumen",
-            "Industria"
+            "Resumo",
+            "Indústria"
           ],
-          "title": "McKinsey: El potencial económico de la IA generativa [Resumen]",
+          "title": "McKinsey: O potencial econômico da IA gerativa [Resumo]",
           "slug": "mckinsey-the-economic-potential-of-generative-ai-eli5-summary",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T06:28:52+01:00",
-          "description": "Explora la investigación de McKinsey sobre el poder transformador de la IA generativa, su potencial económico y su impacto en el trabajo futuro y la productividad.",
+          "description": "Explore a pesquisa da McKinsey sobre o poder transformador da IA gerativa, seu potencial econômico e seu impacto no trabalho futuro e na produtividade.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690754998-ab5-img1.png"
           },
@@ -844,16 +844,16 @@
           "id": "190259043",
           "topics": [
             "LLM",
-            "Summary"
+            "Resumo"
           ],
-          "title": "Google \"We Have No Moat, And Neither Does OpenAI\" [Commentary]",
+          "title": "Google 'Nós não temos barreira, e nem a OpenAI' [Comentário]",
           "slug": "google-we-have-no-moat-and-neither-does-openai-commentary",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T06:27:10+01:00",
-          "description": "Explore Google's leaked memo and rapid evolution of open-source AI in our latest blog, tracking the groundbreaking impact of LLaMA and the democratization of Large Language Models.",
+          "description": "Explore o memorando vazado do Google e a rápida evolução da IA de código aberto em nosso último blog, acompanhando o impacto revolucionário do LLaMA e a democratização dos Modelos de Linguagem de Grande Escala.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690832197-abc1-img1.png"
           },
@@ -874,17 +874,17 @@
         {
           "id": "190259067",
           "topics": [
-            "Resumen",
+            "Resumo",
             "LLM"
           ],
-          "title": "Estado de GPT - Andrej Karpathy [Resumen]",
+          "title": "Estado do GPT - Andrej Karpathy [Resumo]",
           "slug": "state-of-gpt-andrej-karpathy-summary",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T06:24:13+01:00",
-          "description": "Sumergirse en las percepciones de Andrej Karpathy sobre el desarrollo de GPT, aprendizaje poderoso, colapso de modo, uso de herramientas y recomendaciones clave. #IA #GPT #OpenAI",
+          "description": "Mergulhe nas percepções de Andrej Karpathy sobre o desenvolvimento do GPT, aprendizado poderoso, colapso de modo, uso de ferramentas e recomendações chave. #IA #GPT #OpenAI",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1691029364-abvs1-img1.png"
           },
@@ -911,18 +911,18 @@
         {
           "id": "190259319",
           "topics": [
-            "Resumen",
+            "Resumo",
             "LLM",
-            "Entrenamiento"
+            "Treinamento"
           ],
-          "title": "Podcast Espacio Latente 16/08/23 [Resumen] - Las Matemáticas del Entrenamiento de LLMs — con Quentin Anthony de Eleuther AI",
+          "title": "Podcast Espaco Latente 16/08/23 [Resumo] - A Matematica do Treinamento de LLMs com Quentin Anthony da Eleuther AI",
           "slug": "latent-space-podcast-8-16-23-summary-the-mathematics-of-training-llms-with-que",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T09:19:45+01:00",
-          "description": "Explora las matemáticas detrás del entrenamiento de LLMs con Quentin Anthony de Eleuther AI. Sumérgete en el artículo de Matemáticas de Transformers 101 y domina las técnicas de entrenamiento distribuido para el máximo rendimiento de GPU.",
+          "description": "Explore a matematica por tras do treinamento de LLMs com Quentin Anthony da Eleuther AI. Mergulhe no artigo Transformers Math 101 e domine as tecnicas de treinamento distribuido para desempenho maximo de GPU.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692324088-screenshot-2023-08-17-at-9-59-17-pm.png"
           },
@@ -945,17 +945,17 @@
           "topics": [
             "LLM",
             "Hardware",
-            "Resumen",
-            "Borde"
+            "Resumo",
+            "Borda"
           ],
-          "title": "Podcast del Espacio Latente 8/10/23 [Resumen]: LLMs por todas partes: Ejecutando modelos de 70B en navegadores y iPhones usando MLC — con Tianqi Chen de CMU / OctoML",
+          "title": "Podcast Espaço Latente 8/10/23 [Resumo]: LLMs por toda parte: Executando modelos de 70B em navegadores e iPhones usando MLC — com Tianqi Chen da CMU / OctoML",
           "slug": "latent-space-podcast-8-10-23-summary-llms-everywhere-running-70b-models-in-browse",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T09:18:37+01:00",
-          "description": "Explora la magia de MLC con Tianqi Chen: desplegando modelos de 70B en navegadores y iPhones. Sumérgete en XGBoost, la creación de TVM y el futuro de las implementaciones universales de IA.",
+          "description": "Explore a magia do MLC com Tianqi Chen: implantando modelos de 70B em navegadores e iPhones. Mergulhe no XGBoost, na criação do TVM e no futuro das implantações universais de IA.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1691894611-screenshot-2023-08-12-at-10-42-43-pm.png"
           },
@@ -976,20 +976,20 @@
         {
           "id": "190259087",
           "topics": [
-            "Resumen",
+            "Resumo",
             "LLM",
             "Código",
-            "Código Abierto",
-            "Modelos Pequeños"
+            "Código Aberto",
+            "Modelos Pequenos"
           ],
-          "title": "Podcast Espacio Latente 8/4/23 [Resumen] ¡Cruce de Espacio Latente x Desglose de IA!",
+          "title": "Podcast Espaço Latente 8/4/23 [Resumo] Crossover do Espaço Latente x AI Breakdown!",
           "slug": "latent-space-podcast-8-4-23-summary-latent-space-x-ai-breakdown-crossover-pod",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T09:16:33+01:00",
-          "description": "Únete al Desglose de IA y Espacio Latente para el resumen tecnológico de IA de verano: Sumérgete en GPT4.5, Llama 2, herramientas de IA, el ingeniero de IA en ascenso, y más!",
+          "description": "Junte-se ao AI Breakdown & Espaço Latente para o resumo de tecnologia de IA do verão: Mergulhe no GPT4.5, Llama 2, ferramentas de IA, o engenheiro de IA em ascensão e muito mais!",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1691539617-screenshot-2023-08-08-at-8-02-52-pm.png"
           },
@@ -1077,16 +1077,16 @@
           "topics": [
             "Hardware",
             "LLM",
-            "Summary"
+            "Resumo"
           ],
-          "title": "Latent Space Podcast 6/20/23 [Summary] - Commoditizing the Petaflop — with George Hotz of the tiny corp",
+          "title": "Podcast Espaço Latente 20/06/23 [Resumo] - Tornando o Petaflop uma Commodity — com George Hotz da tiny corp",
           "slug": "latent-space-podcast-6-20-23-summary-commoditizing-the-petaflop-with-george-ho",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T09:07:15+01:00",
-          "description": "George Hotz of tiny corp challenges Nvidia & Google! Dive into the world of AMD collaborations, insights on ggml, Mojo, Elon & GPT-4, plus a peek into AI Girlfriend. ",
+          "description": "George Hotz da tiny corp desafia a Nvidia e a Google! Mergulhe no mundo das colaborações da AMD, insights sobre ggml, Mojo, Elon e GPT-4, além de uma espiada na AI Girlfriend.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692154615-screenshot-2023-08-15-at-10-55-40-pm.png"
           },
@@ -1140,17 +1140,17 @@
           "id": "190259333",
           "topics": [
             "LLM",
-            "Summary",
+            "Resumo",
             "UX"
           ],
-          "title": "Latent Space Podcast 6/8/23 [Summary] - From RLHF to RLHB: The Case for Learning from Human Behavior - with Jeffrey Wang and Joe Reeve of Amplitude",
+          "title": "Podcast Espaço Latente 6/8/23 [Resumo] - De RLHF para RLHB: O Caso para Aprender com o Comportamento Humano - com Jeffrey Wang e Joe Reeve da Amplitude",
           "slug": "latent-space-podcast-6-8-23-summary-from-rlhf-to-rlhb-the-case-for-learning-from",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T09:02:33+01:00",
-          "description": "Explore AI & analytics with Jeffrey Wang & Joe Reeve on Latent Space Live! Dive into why AI values Analytics and the power of first-party behavioral data. ",
+          "description": "Explore IA e análises com Jeffrey Wang e Joe Reeve no Espaço Latente Ao Vivo! Mergulhe em por que a IA valoriza Análises e o poder dos dados comportamentais de primeira parte.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692386432-screenshot-2023-08-18-at-3-17-04-pm.png"
           },
@@ -1460,17 +1460,17 @@
           "id": "191165920",
           "topics": [
             "LLM",
-            "Resumen",
-            "Evaluación"
+            "Summary",
+            "Evaluation"
           ],
-          "title": "Podcast del Espacio Latente 4/6/23 [Resumen] - Fundamentos de IA: Introducción a los Benchmarks",
+          "title": "Latent Space Podcast 4/6/23 [Summary] - AI Fundamentals: Benchmarks 101",
           "slug": "latent-space-podcast-4-6-23-summary-ai-fundamentals-benchmarks-101",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T07:05:35+01:00",
-          "description": "Explora los Fundamentos de IA en 'Introducción a los Benchmarks.' Sumérgete en la historia del Benchmarking de LLM y descubre las complejidades que moldean el progreso del aprendizaje automático.",
+          "description": "Explore AI Fundamentals in 'Benchmarks 101.' Dive into the history of LLM Benchmarking and uncover the intricacies that shape machine learning's progress.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1694154964-screenshot-2023-09-07-at-11-33-20-pm.png"
           },
@@ -1618,17 +1618,17 @@
           "id": "190259003",
           "topics": [
             "LLM",
-            "Summary",
-            "Industry"
+            "Resumo",
+            "Indústria"
           ],
-          "title": "McKinsey: The economic potential of generative AI [Summary]",
+          "title": "McKinsey: O potencial econômico da IA gerativa [Resumo]",
           "slug": "mckinsey-the-economic-potential-of-generative-ai-eli5-summary",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T06:28:52+01:00",
-          "description": "Explore McKinsey's research on the transformative power of generative AI, its economic potential, and its impact on future work and productivity.",
+          "description": "Explore a pesquisa da McKinsey sobre o poder transformador da IA gerativa, seu potencial econômico e seu impacto no trabalho futuro e na produtividade.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690754998-ab5-img1.png"
           },
@@ -1650,16 +1650,16 @@
           "id": "190259043",
           "topics": [
             "LLM",
-            "Summary"
+            "Resumo"
           ],
-          "title": "Google \"We Have No Moat, And Neither Does OpenAI\" [Commentary]",
+          "title": "Google 'Nós não temos barreira, e nem a OpenAI' [Comentário]",
           "slug": "google-we-have-no-moat-and-neither-does-openai-commentary",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T06:27:10+01:00",
-          "description": "Explore Google's leaked memo and rapid evolution of open-source AI in our latest blog, tracking the groundbreaking impact of LLaMA and the democratization of Large Language Models.",
+          "description": "Explore o memorando vazado do Google e a rápida evolução da IA de código aberto em nosso último blog, acompanhando o impacto revolucionário do LLaMA e a democratização dos Modelos de Linguagem de Grande Escala.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690832197-abc1-img1.png"
           },
@@ -1680,17 +1680,17 @@
         {
           "id": "190259067",
           "topics": [
-            "Resumen",
+            "Summary",
             "LLM"
           ],
-          "title": "Estado de GPT - Andrej Karpathy [Resumen]",
+          "title": "State of GPT - Andrej Karpathy [Summary]",
           "slug": "state-of-gpt-andrej-karpathy-summary",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T06:24:13+01:00",
-          "description": "Sumérgete en las percepciones de Andrej Karpathy sobre el desarrollo de GPT, aprendizaje poderoso, colapso de modo, uso de herramientas y recomendaciones clave. #IA #GPT #OpenAI",
+          "description": "Dive into Andrej Karpathy's insights on GPT's development, powerful learning, mode collapse, tool usage, and key recommendations. #AI #GPT #OpenAI",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1691029364-abvs1-img1.png"
           },
@@ -1711,17 +1711,17 @@
         {
           "id": "190258672",
           "topics": [
-            "Comenzando",
+            "Introdução",
             "LLM"
           ],
-          "title": "Descifrando los Misterios de la IA: Una Inmersión Profunda en el Conocimiento y las Limitaciones de los Modelos de Lenguaje Grande",
+          "title": "Decodificando os Mistérios da IA: Um Mergulho Profundo nos Conhecimentos e Limitações dos Modelos de Linguagem de Grande Escala",
           "slug": "decoding-the-mysteries-of-ai-a-deep-dive-into-large-language-models-knowledge-and",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T05:51:17+01:00",
-          "description": "Desentraña el enigma de los Modelos de Lenguaje Grande (LLM). Entiende cómo adquieren conocimiento, sus límites y las posibles trampas en tu viaje hacia la IA.",
+          "description": "Desvende o enigma dos Modelos de Linguagem de Grande Escala (LLMs). Entenda como eles adquirem conhecimento, seus limites e as possíveis armadilhas em sua jornada de IA.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690333798-ab4-img1.png"
           },
@@ -1742,17 +1742,17 @@
         {
           "id": "190258658",
           "topics": [
-            "Comenzando",
+            "Getting Started",
             "LLM"
           ],
-          "title": "Dominando el Arte de Entrenar Modelos de Lenguaje Grande: Una Guía Completa",
+          "title": "Mastering the Art of Training Large Language Models: A Comprehensive Guide",
           "slug": "mastering-the-art-of-training-large-language-models-a-comprehensive-guide",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T05:38:27+01:00",
-          "description": "Descubre los secretos del entrenamiento de LLM. Descubre las necesidades de datos, el proceso de entrenamiento, los desafíos y la huella ambiental de entrenar LLMs.",
+          "description": "Unlock the secrets of LLM training. Discover the data needs, training process, challenges, and the environmental footprint of training LLMs.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690330651-ab3-img1.png"
           },
@@ -1804,17 +1804,17 @@
         {
           "id": "190258905",
           "topics": [
-            "Getting Started",
+            "Introdução",
             "LLM"
           ],
-          "title": "Mastering the Art of LLMs: A Practical Guide to Implementing Large Language Models",
+          "title": "Dominando a Arte dos LLMs: Um Guia Prático para Implementar Modelos de Linguagem de Grande Escala",
           "slug": "mastering-the-art-of-llms-a-practical-guide-to-implementing-large-language-models",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T05:25:37+01:00",
-          "description": "Unlock the power of AI! Navigate the world of Large Language Models, explore popular platforms, and learn best practices to fuel your applications with LLMs.",
+          "description": "Desbloqueie o poder da IA! Navegue pelo mundo dos Modelos de Linguagem de Grande Escala, explore plataformas populares e aprenda as melhores práticas para impulsionar suas aplicações com LLMs.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690421600-ab11-img1.png"
           },
@@ -1835,24 +1835,24 @@
       ]
     },
     {
-      "name": "Entrenamiento",
+      "name": "Treinamento",
       "slug": "training",
       "articles": [
         {
           "id": "190259319",
           "topics": [
-            "Resumen",
+            "Resumo",
             "LLM",
-            "Entrenamiento"
+            "Treinamento"
           ],
-          "title": "Podcast del Espacio Latente 16/08/23 [Resumen] - La Matematica del Entrenamiento de LLMs con Quentin Anthony de Eleuther AI",
+          "title": "Podcast Espaço Latente 16/08/23 [Resumo] - A Matemática do Treinamento de LLMs — com Quentin Anthony da Eleuther AI",
           "slug": "latent-space-podcast-8-16-23-summary-the-mathematics-of-training-llms-with-que",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T09:19:45+01:00",
-          "description": "Explora la matematica detras del entrenamiento de LLMs con Quentin Anthony de Eleuther AI. Sumergente en el articulo de Matematicas de Transformers 101 y domina las tecnicas de entrenamiento distribuido para el maximo rendimiento de GPU.",
+          "description": "Explore a matemática por trás do treinamento de LLMs com Quentin Anthony da Eleuther AI. Mergulhe no artigo Transformers Math 101 e domine técnicas de treinamento distribuído para desempenho máximo de GPU.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692324088-screenshot-2023-08-17-at-9-59-17-pm.png"
           },
@@ -1873,19 +1873,19 @@
         {
           "id": "190259111",
           "topics": [
-            "Resumen",
+            "Resumo",
             "Transformadores",
-            "Entrenamiento",
-            "Código Abierto"
+            "Treinamento",
+            "Código Aberto"
           ],
-          "title": "Podcast Espacio Latente 26/07/23 [Resumen] FlashAttention 2: haciendo los Transformadores 800% más rápidos - Tri Dao de Together AI",
+          "title": "Podcast Espaço Latente 26/07/23 [Resumo] FlashAttention 2: tornando os Transformadores 800% mais rápidos - Tri Dao da Together AI",
           "slug": "latent-space-podcast-7-26-23-summary-flashattention-2-making-transformers-800-fas",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T09:14:13+01:00",
-          "description": "Descubre cómo FlashAttention revolucionó la velocidad de la IA con Tri Dao, mientras revela el poder de FlashAttention 2, se adentra en el Laboratorio Hazy de Stanford y las perspectivas futuras de la IA.",
+          "description": "Descubra como o FlashAttention revolucionou a velocidade da IA com Tri Dao, enquanto ele revela o poder do FlashAttention 2, mergulha no Laboratório Nebuloso de Stanford e nas futuras perspectivas de IA.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1691543194-screenshot-2023-08-08-at-8-43-59-pm.png"
           },
@@ -1907,18 +1907,18 @@
           "id": "190260606",
           "topics": [
             "LLM",
-            "Entrenamiento",
+            "Treinamento",
             "Agentes",
             "Multimodal"
           ],
-          "title": "Podcast del Espacio Latente 5/8/23 [Resumen] - El Gen del Fundador de IA: Ser Pionero, Construir Rapido y Creer en la Grandeza — con Sharif Shameem de Lexica",
+          "title": "Podcast Espaço Latente 5/8/23 [Resumo] - O Gene do Fundador de IA: Sendo Pioneiro, Construindo Rapidamente e Acreditando na Grandeza — com Sharif Shameem da Lexica",
           "slug": "latent-space-podcast-5-8-23-summary-the-ai-founder-gene-being-early-building-fast",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T08:52:09+01:00",
-          "description": "Ep.11 con Sharif Shameem de Lexica: Sumergirse en la mentalidad del fundador de IA, descubriendo los secretos para la innovacion pionera, construyendo tecnologia revolucionaria, entrenando modelos y el potencial intrigante de Agentes y la secuenciacion genomica.",
+          "description": "Ep.11 com Sharif Shameem da Lexica: Mergulhe na mentalidade do fundador de IA, descobrindo os segredos para inovação pioneira, construindo tecnologia revolucionária, treinando modelos e o potencial intrigante de Agentes e sequenciamento genômico.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692501984-screenshot-2023-08-19-at-11-24-05-pm.png"
           },
@@ -1947,17 +1947,17 @@
           "topics": [
             "LLM",
             "Hardware",
-            "Resumen",
-            "Borde"
+            "Resumo",
+            "Borda"
           ],
-          "title": "Podcast del Espacio Latente 8/10/23 [Resumen]: LLMs por todas partes: Ejecutando modelos de 70B en navegadores y iPhones usando MLC — con Tianqi Chen de CMU / OctoML",
+          "title": "Podcast Espaco Latente 8/10/23 [Resumo]: LLMs por toda parte: Executando modelos de 70B em navegadores e iPhones usando MLC — com Tianqi Chen da CMU / OctoML",
           "slug": "latent-space-podcast-8-10-23-summary-llms-everywhere-running-70b-models-in-browse",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T09:18:37+01:00",
-          "description": "Explora la magia de MLC con Tianqi Chen: desplegando modelos de 70B en navegadores y iPhones. Sumérgete en XGBoost, la creación de TVM y el futuro de las implementaciones universales de IA.",
+          "description": "Explore a magia do MLC com Tianqi Chen: implantando modelos de 70B em navegadores e iPhones. Mergulhe no XGBoost, criacao do TVM e o futuro das implantacoes universais de IA.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1691894611-screenshot-2023-08-12-at-10-42-43-pm.png"
           },
@@ -1980,16 +1980,16 @@
           "topics": [
             "Hardware",
             "LLM",
-            "Resumen"
+            "Resumo"
           ],
-          "title": "Podcast del Espacio Latente 20/06/23 [Resumen] - Comoditizando el Petaflop — con George Hotz de tiny corp",
+          "title": "Podcast Espaco Latente 20/06/23 [Resumo] - Tornando o Petaflop uma Commodity — com George Hotz da tiny corp",
           "slug": "latent-space-podcast-6-20-23-summary-commoditizing-the-petaflop-with-george-ho",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T09:07:15+01:00",
-          "description": "¡George Hotz de tiny corp desafía a Nvidia y Google! Sumérgete en el mundo de las colaboraciones de AMD, percepciones sobre ggml, Mojo, Elon y GPT-4, además de un vistazo a AI Girlfriend.",
+          "description": "George Hotz da tiny corp desafia a Nvidia e a Google! Mergulhe no mundo das colaboracoes da AMD, insights sobre ggml, Mojo, Elon e GPT-4, alem de uma espiada na Namorada AI.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692154615-screenshot-2023-08-15-at-10-55-40-pm.png"
           },
@@ -2010,7 +2010,7 @@
       ]
     },
     {
-      "name": "Borde",
+      "name": "Borda",
       "slug": "edge",
       "articles": [
         {
@@ -2018,17 +2018,17 @@
           "topics": [
             "LLM",
             "Hardware",
-            "Resumen",
-            "Borde"
+            "Resumo",
+            "Borda"
           ],
-          "title": "Podcast del Espacio Latente 8/10/23 [Resumen]: LLMs por todas partes: Ejecutando modelos de 70B en navegadores y iPhones usando MLC — con Tianqi Chen de CMU / OctoML",
+          "title": "Podcast Espaço Latente 8/10/23 [Resumo]: LLMs por toda parte: Executando modelos de 70B em navegadores e iPhones usando MLC — com Tianqi Chen da CMU / OctoML",
           "slug": "latent-space-podcast-8-10-23-summary-llms-everywhere-running-70b-models-in-browse",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T09:18:37+01:00",
-          "description": "Explora la magia de MLC con Tianqi Chen: desplegando modelos de 70B en navegadores y iPhones. Sumérgete en XGBoost, la creación de TVM y el futuro de las implementaciones universales de IA.",
+          "description": "Explore a magia do MLC com Tianqi Chen: implantando modelos de 70B em navegadores e iPhones. Mergulhe no XGBoost, na criação do TVM e no futuro das implantações universais de IA.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1691894611-screenshot-2023-08-12-at-10-42-43-pm.png"
           },
@@ -2049,26 +2049,26 @@
       ]
     },
     {
-      "name": "Código",
+      "name": "Codigo",
       "slug": "code",
       "articles": [
         {
           "id": "190259087",
           "topics": [
-            "Resumen",
+            "Resumo",
             "LLM",
             "Código",
-            "Código Abierto",
-            "Modelos Pequeños"
+            "Código Aberto",
+            "Modelos Pequenos"
           ],
-          "title": "Podcast Espacio Latente 8/4/23 [Resumen] ¡Cruce de Espacio Latente x Desglose de IA!",
+          "title": "Podcast Espaço Latente 8/4/23 [Resumo] Crossover do Espaço Latente x AI Breakdown!",
           "slug": "latent-space-podcast-8-4-23-summary-latent-space-x-ai-breakdown-crossover-pod",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T09:16:33+01:00",
-          "description": "Únete a Desglose de IA y Espacio Latente para el resumen tecnológico de IA de verano: Sumérgete en GPT4.5, Llama 2, herramientas de IA, el ingeniero de IA en ascenso, y más!",
+          "description": "Junte-se ao AI Breakdown e Espaço Latente para o resumo de tecnologia de IA do verão: Mergulhe no GPT4.5, Llama 2, ferramentas de IA, o engenheiro de IA em ascensão e mais!",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1691539617-screenshot-2023-08-08-at-8-02-52-pm.png"
           },
@@ -2089,18 +2089,18 @@
         {
           "id": "190259191",
           "topics": [
-            "Resumen",
+            "Resumo",
             "Código",
             "LLM"
           ],
-          "title": "Podcast del Espacio Latente 7/10/23 [Resumen] - Intérprete de Código == GPT 4.5 (con Simon Willison, Alex Volkov, Aravind Srinivas, Alex Graveley, et al.)",
+          "title": "Podcast Espaço Latente 7/10/23 [Resumo] - Interpretador de Código == GPT 4.5 (com Simon Willison, Alex Volkov, Aravind Srinivas, Alex Graveley, et al.)",
           "slug": "latent-space-podcast-7-10-23-summary-code-interpreter-gpt-4-5-w-simon-willison-al",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T09:09:26+01:00",
-          "description": "Explora el Intérprete de Código de ChatGPT: un cambio radical en la IA. Sumérgete en su salto de capacidades 1000x con Simon, Alex y los principales expertos en IA. #CodeAugmentedInference #GPT4_5",
+          "description": "Explore o Interpretador de Código do ChatGPT: uma revolução na IA. Mergulhe no salto de capacidades 1000x com Simon, Alex e os principais especialistas em IA. #InferênciaAumentadaDeCódigo #GPT4_5",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692048911-screenshot-2023-08-14-at-3-34-05-pm.png"
           },
@@ -2121,19 +2121,19 @@
         {
           "id": "190260557",
           "topics": [
-            "Resumen",
+            "Resumo",
             "Código",
             "LLM",
             "Agentes"
           ],
-          "title": "Podcast del Espacio Latente 25/05/23 [Resumen] - Depurando Internet con agentes de IA – con Itamar Friedman de Codium AI y AutoGPT",
+          "title": "Podcast Espaço Latente 25/05/23 [Resumo] - Depurando a Internet com agentes de IA – com Itamar Friedman da Codium AI e AutoGPT",
           "slug": "latent-space-podcast-5-25-23-summary-debugging-the-internet-with-ai-agents-with",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T08:58:27+01:00",
-          "description": "Explora el futuro de la IA con Itamar Friedman de Codium AI en 'Depurando Internet'. Sumérgete en los agentes 'Extreme DRY', la sincronización rápida de especificaciones y pruebas, y el equilibrio entre código y pruebas. ¡Además, percepciones de Toran y una mirada exclusiva al roadmap de AutoGPT!",
+          "description": "Explore o futuro da IA com Itamar Friedman da Codium AI em 'Depurando a Internet'. Mergulhe nos agentes 'Extreme DRY', a sincronização rápida de especificações e testes, e o equilíbrio entre código e teste. Além disso, insights de Toran e um olhar exclusivo no roteiro do AutoGPT!",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692397413-screenshot-2023-08-18-at-6-10-09-pm.png"
           },
@@ -2218,26 +2218,26 @@
       ]
     },
     {
-      "name": "Código Abierto",
+      "name": "Codigo Aberto",
       "slug": "open source",
       "articles": [
         {
           "id": "190259087",
           "topics": [
-            "Resumen",
+            "Resumo",
             "LLM",
-            "Codigo",
-            "Codigo Abierto",
+            "Código",
+            "Código Aberto",
             "Modelos Pequenos"
           ],
-          "title": "Podcast Espacio Latente 8/4/23 [Resumen] Crossover de Espacio Latente x Desglose de IA!",
+          "title": "Podcast Espaço Latente 8/4/23 [Resumo] Crossover do Espaço Latente x AI Breakdown!",
           "slug": "latent-space-podcast-8-4-23-summary-latent-space-x-ai-breakdown-crossover-pod",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T09:16:33+01:00",
-          "description": "Unete al Desglose de IA y Espacio Latente para el resumen tecnologico de IA de verano: Sumergirse en GPT4.5, Llama 2, herramientas de IA, el ingeniero de IA en ascenso, y mas!",
+          "description": "Junte-se ao AI Breakdown e Espaço Latente para o resumo de tecnologia de IA do verão: Mergulhe no GPT4.5, Llama 2, ferramentas de IA, o engenheiro de IA em ascensão e muito mais!",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1691539617-screenshot-2023-08-08-at-8-02-52-pm.png"
           },
@@ -2258,19 +2258,19 @@
         {
           "id": "190259111",
           "topics": [
-            "Resumen",
+            "Resumo",
             "Transformadores",
-            "Entrenamiento",
-            "Código Abierto"
+            "Treinamento",
+            "Código Aberto"
           ],
-          "title": "Podcast Espacio Latente 7/26/23 [Resumen] FlashAttention 2: haciendo los Transformadores 800% más rápidos - Tri Dao de Together AI",
+          "title": "Podcast Espaço Latente 26/07/23 [Resumo] FlashAttention 2: tornando os Transformadores 800% mais rápidos - Tri Dao da Together AI",
           "slug": "latent-space-podcast-7-26-23-summary-flashattention-2-making-transformers-800-fas",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T09:14:13+01:00",
-          "description": "Descubre cómo FlashAttention revolucionó la velocidad de la IA con Tri Dao, mientras revela el poder de FlashAttention 2, se adentra en el Laboratorio Hazy de Stanford y las perspectivas futuras de la IA.",
+          "description": "Descubra como o FlashAttention revolucionou a velocidade da IA com Tri Dao, enquanto ele revela o poder do FlashAttention 2, mergulha no Laboratório Nebuloso de Stanford e nas futuras perspectivas de IA.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1691543194-screenshot-2023-08-08-at-8-43-59-pm.png"
           },
@@ -2291,19 +2291,19 @@
         {
           "id": "190259172",
           "topics": [
-            "Resumen",
+            "Resumo",
             "LLM",
-            "Código Abierto",
-            "Modelos Pequeños"
+            "Código Aberto",
+            "Modelos Pequenos"
           ],
-          "title": "Podcast del Espacio Latente 19/07/23 [Resumen] - Llama 2: El Nuevo LLM Abierto SOTA (con Nathan Lambert, Matt Bornstein, Anton Troynikov, Russell Kaplan, Catálogo Whole Mars et al.)",
+          "title": "Podcast Espaço Latente 19/07/23 [Resumo] - Llama 2: O Novo Estado da Arte em LLM Aberto (com Nathan Lambert, Matt Bornstein, Anton Troynikov, Russell Kaplan, Catálogo Whole Mars et al.)",
           "slug": "latent-space-podcast-7-19-23-summary-llama-2-the-new-open-llm-sota-ft-nathan-lamb",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T09:12:38+01:00",
-          "description": "Explora Llama 2, el último avance en IA con expertos como Nathan Lambert, Matt Bornstein y más. Sumérgete en conjuntos de datos, benchmarks y predicciones de IA. ¡Percepciones de Llama y drama te esperan en este podcast destacado!",
+          "description": "Explore o Llama 2, o mais recente avanço em IA com os especialistas Nathan Lambert, Matt Bornstein e mais. Mergulhe em conjuntos de dados, benchmarks e previsões de IA. Insights e dramas de Llama esperam por você neste podcast de destaque!",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1691968295-screenshot-2023-08-13-at-7-11-06-pm.png"
           },
@@ -2324,17 +2324,17 @@
         {
           "id": "190259216",
           "topics": [
-            "Resumen",
-            "Código Abierto"
+            "Resumo",
+            "Código Aberto"
           ],
-          "title": "Podcast Espacio Latente 7/2/23 [Resumen] Tendencias de IA: un crossover de Espacio Latente x IA Práctica",
+          "title": "Podcast Espaço Latente 7/2/23 [Resumo] Tendências de IA: um crossover de Espaço Latente x IA Prática!",
           "slug": "latent-space-podcast-7-2-23-summary-ai-trends-a-latent-space-x-practical-ai-cross",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T09:08:36+01:00",
-          "description": "Explora la fusión de IA Práctica y Espacio Latente mientras profundizan en las principales tendencias de IA de 2023, reflexionan sobre episodios destacados y comparten perspectivas sobre cómo navegar la evolución de la IA.",
+          "description": "Explore a fusão de IA Prática e Espaço Latente enquanto eles investigam as principais tendências de IA de 2023, refletem sobre episódios marcantes e compartilham insights sobre como navegar na evolução da IA.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692146916-screenshot-2023-08-15-at-5-20-38-pm.png"
           },
@@ -2387,26 +2387,26 @@
       ]
     },
     {
-      "name": "Modelos Pequeños",
+      "name": "Modelos Pequenos",
       "slug": "small models",
       "articles": [
         {
           "id": "190259087",
           "topics": [
-            "Resumen",
+            "Resumo",
             "LLM",
-            "Codigo",
-            "Codigo Abierto",
+            "Código",
+            "Código Aberto",
             "Modelos Pequenos"
           ],
-          "title": "Podcast Espacio Latente 8/4/23 [Resumen] ¡Cruce de podcast Espacio Latente x Desglose de IA!",
+          "title": "Podcast Espaço Latente 8/4/23 [Resumo] Crossover do Espaço Latente x AI Breakdown!",
           "slug": "latent-space-podcast-8-4-23-summary-latent-space-x-ai-breakdown-crossover-pod",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T09:16:33+01:00",
-          "description": "Unete a Desglose de IA y Espacio Latente para el resumen tecnologico de IA de verano: Sumergirse en GPT4.5, Llama 2, herramientas de IA, el ingeniero de IA en ascenso, y mas!",
+          "description": "Junte-se ao AI Breakdown e Espaço Latente para o resumo de tecnologia de IA do verão: Mergulhe no GPT4.5, Llama 2, ferramentas de IA, o engenheiro de IA em ascensão e muito mais!",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1691539617-screenshot-2023-08-08-at-8-02-52-pm.png"
           },
@@ -2427,19 +2427,19 @@
         {
           "id": "190259172",
           "topics": [
-            "Resumen",
+            "Resumo",
             "LLM",
-            "Código Abierto",
-            "Modelos Pequeños"
+            "Código Aberto",
+            "Modelos Pequenos"
           ],
-          "title": "Podcast del Espacio Latente 19/07/23 [Resumen] - Llama 2: El Nuevo LLM Abierto SOTA (con Nathan Lambert, Matt Bornstein, Anton Troynikov, Russell Kaplan, Catálogo Whole Mars y otros)",
+          "title": "Podcast Espaço Latente 19/07/23 [Resumo] - Llama 2: O Novo Estado da Arte em LLM Aberto (com Nathan Lambert, Matt Bornstein, Anton Troynikov, Russell Kaplan, Whole Mars Catalog et al.)",
           "slug": "latent-space-podcast-7-19-23-summary-llama-2-the-new-open-llm-sota-ft-nathan-lamb",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T09:12:38+01:00",
-          "description": "Explora Llama 2, el último avance en IA con expertos como Nathan Lambert, Matt Bornstein y más. Sumérgete en conjuntos de datos, benchmarks y predicciones de IA. ¡Los detalles e intrigas de Llama te esperan en este podcast destacado!",
+          "description": "Explore o Llama 2, o mais recente avanço em IA com os especialistas Nathan Lambert, Matt Bornstein e mais. Mergulhe em conjuntos de dados, benchmarks e previsões de IA. Insights e dramas de Llama esperam por você neste podcast de destaque!",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1691968295-screenshot-2023-08-13-at-7-11-06-pm.png"
           },
@@ -2461,16 +2461,16 @@
           "id": "190260577",
           "topics": [
             "LLM",
-            "Modelos Pequeños"
+            "Modelos Pequenos"
           ],
-          "title": "Podcast del Espacio Latente 20/05/23 [Resumen] - MPT-7B y El Comienzo de Contexto=Infinito — con Jonathan Frankle y Abhinav Venigalla de MosaicML",
+          "title": "Podcast Espaco Latente 20/05/23 [Resumo] - MPT-7B e O Inicio de Contexto=Infinito — com Jonathan Frankle e Abhinav Venigalla da MosaicML",
           "slug": "latent-space-podcast-5-20-23-summary-mpt-7b-and-the-beginning-of-context-infinity",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T08:57:33+01:00",
-          "description": "Sumérgete en el entrenamiento de 9 días y $200k 'llongboi' MPT-7B de MosaicML, perspectivas de preparación de datos, y el auge de modelos de IA abiertos con los expertos Frankle y Venigalla.",
+          "description": "Mergulhe nos 9 dias de treinamento do MPT-7B da MosaicML, custando 200 mil dolares, 'llongboi', insights de preparacao de dados, e a ascensao de modelos de IA abertos com os especialistas Frankle e Venigalla.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692409795-screenshot-2023-08-18-at-9-49-21-pm.png"
           },
@@ -2529,19 +2529,19 @@
         {
           "id": "190259111",
           "topics": [
-            "Resumen",
+            "Resumo",
             "Transformadores",
-            "Entrenamiento",
-            "Código Abierto"
+            "Treinamento",
+            "Código Aberto"
           ],
-          "title": "Podcast Espacio Latente 26/7/23 [Resumen] FlashAttention 2: haciendo los Transformadores 800% más rápidos - Tri Dao de Together AI",
+          "title": "Podcast Espaço Latente 26/07/23 [Resumo] FlashAttention 2: tornando os Transformadores 800% mais rápidos - Tri Dao da Together AI",
           "slug": "latent-space-podcast-7-26-23-summary-flashattention-2-making-transformers-800-fas",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T09:14:13+01:00",
-          "description": "Descubre cómo FlashAttention revolucionó la velocidad de la IA con Tri Dao, mientras él revela el poder de FlashAttention 2, se sumerge en el Laboratorio Hazy de Stanford y las perspectivas futuras de la IA.",
+          "description": "Descubra como o FlashAttention revolucionou a velocidade da IA com Tri Dao, enquanto ele revela o poder do FlashAttention 2, mergulha no Laboratório Nebuloso de Stanford e nas futuras perspectivas de IA.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1691543194-screenshot-2023-08-08-at-8-43-59-pm.png"
           },
@@ -2562,17 +2562,17 @@
         {
           "id": "190258977",
           "topics": [
-            "Resumen",
+            "Resumo",
             "Transformadores"
           ],
-          "title": "El Plano del Transformador: Una Guia Holistica para la Arquitectura de Red Neuronal Transformadora [Resumen]",
+          "title": "O Projeto do Transformador: Um Guia Completo para a Arquitetura de Rede Neural Transformadora [Resumo]",
           "slug": "the-transformer-blueprint-a-holistic-guide-to-the-transformer-neural-network-arch",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T06:39:30+01:00",
-          "description": "Explora 'El Plano del Transformador' - una guia integral para entender y aplicar el poder transformador de la Arquitectura de Red Neuronal Transformadora.",
+          "description": "Explore 'O Projeto do Transformador' - um guia abrangente para entender e aplicar o poder transformador da Arquitetura de Rede Neural Transformadora.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690679303-abr4-img1.png"
           },
@@ -2593,24 +2593,24 @@
       ]
     },
     {
-      "name": "Funciones",
+      "name": "Funcoes",
       "slug": "functions",
       "articles": [
         {
           "id": "190259294",
           "topics": [
             "LLM",
-            "Funciones",
-            "Resumen"
+            "Funções",
+            "Resumo"
           ],
-          "title": "Podcast del Espacio Latente 6/14/23 [Resumen] - Pod de Emergencia: Nueva API de Funciones de OpenAI, Reducción del 75% en Precios, Longitud de Contexto 4 veces mayor (con Alex Volkov, Simon Willison, Riley Goodside, Joshua Lochner, Stefania Druga, Eric Elliott, Mayo Oshin y otros)",
+          "title": "Podcast Espaço Latente 14/06/23 [Resumo] - Pod de Emergência: Nova API de Funções da OpenAI, Redução de 75% no Preço, Comprimento de Contexto 4x (com Alex Volkov, Simon Willison, Riley Goodside, Joshua Lochner, Stefania Druga, Eric Elliott, Mayo Oshin e outros)",
           "slug": "latent-space-podcast-6-14-23-summary-emergency-pod-openai-s-new-functions-api-75",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T09:05:04+01:00",
-          "description": "Explora las actualizaciones de OpenAI de junio de 2023 con los principales ingenieros de IA de Scale, Microsoft, Pinecone y Huggingface. Sumérgete en los paradigmas de Código x LLM y descubre los Agentes de Función Recursiva.",
+          "description": "Explore as atualizações de junho de 2023 da OpenAI com os principais engenheiros de IA da Scale, Microsoft, Pinecone e Huggingface. Mergulhe nos paradigmas Code x LLM e descubra Agentes de Função Recursiva.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692221668-screenshot-2023-08-16-at-5-32-29-pm.png"
           },
@@ -2638,17 +2638,17 @@
           "id": "190259333",
           "topics": [
             "LLM",
-            "Resumen",
+            "Resumo",
             "UX"
           ],
-          "title": "Podcast Espacio Latente 6/8/23 [Resumen] - De RLHF a RLHB: El Caso para Aprender del Comportamiento Humano - con Jeffrey Wang y Joe Reeve de Amplitude",
+          "title": "Podcast Espaço Latente 6/8/23 [Resumo] - De RLHF para RLHB: O Caso para Aprender com o Comportamento Humano - com Jeffrey Wang e Joe Reeve da Amplitude",
           "slug": "latent-space-podcast-6-8-23-summary-from-rlhf-to-rlhb-the-case-for-learning-from",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T09:02:33+01:00",
-          "description": "Explora IA y analiticas con Jeffrey Wang y Joe Reeve en Espacio Latente en Vivo! Profundiza en por que la IA valora las Analiticas y el poder de los datos de comportamiento de primera parte.",
+          "description": "Explore IA e análises com Jeffrey Wang e Joe Reeve no Espaço Latente Ao Vivo! Mergulhe em por que a IA valoriza Análises e o poder dos dados comportamentais de primeira parte.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692386432-screenshot-2023-08-18-at-3-17-04-pm.png"
           },
@@ -2669,18 +2669,18 @@
         {
           "id": "190260528",
           "topics": [
-            "Resumen",
+            "Resumo",
             "LLM",
             "UX"
           ],
-          "title": "Podcast del Espacio Latente 6/1/23 [Resumen] - Construyendo el Scenius de AI × UX con Linus Lee de Notion AI",
+          "title": "Podcast Espaço Latente 6/1/23 [Resumo] - Construindo o Scenius AI × UX — com Linus Lee da Notion AI",
           "slug": "latent-space-podcast-6-1-23-summary-building-the-ai-x-ux-scenius-with-linus-le",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T09:00:12+01:00",
-          "description": "Explora el enfoque transformador de Notion AI hacia la IA y UX. Sumérgete en el futuro de los espacios de trabajo aumentados por IA, el valor más allá de las interfaces de chat y las percepciones sobre el trabajo con conocimiento efectivo. ¡Incluye resumen del encuentro AI×UX NYC!",
+          "description": "Explore a abordagem transformadora da Notion AI para AI e UX. Mergulhe no futuro dos espaços de trabalho aumentados por IA, o valor além das interfaces de chat e insights sobre trabalho com conhecimento eficaz. Resumo do encontro AI×UX NYC incluído!",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692390655-screenshot-2023-08-18-at-4-28-51-pm.png"
           },
@@ -2707,19 +2707,19 @@
         {
           "id": "190260557",
           "topics": [
-            "Resumen",
+            "Resumo",
             "Código",
             "LLM",
             "Agentes"
           ],
-          "title": "Podcast del Espacio Latente 25/05/23 [Resumen] - Depurando Internet con agentes de IA – con Itamar Friedman de Codium AI y AutoGPT",
+          "title": "Podcast Espaço Latente 25/05/23 [Resumo] - Depurando a Internet com agentes de IA – com Itamar Friedman da Codium AI e AutoGPT",
           "slug": "latent-space-podcast-5-25-23-summary-debugging-the-internet-with-ai-agents-with",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T08:58:27+01:00",
-          "description": "Explora el futuro de la IA con Itamar Friedman de Codium AI en 'Depurando Internet'. Sumérgete en los agentes 'Extreme DRY', la sincronización rápida de especificaciones y pruebas, y el equilibrio entre código y pruebas. ¡Además, percepciones de Toran y una mirada exclusiva al roadmap de AutoGPT!",
+          "description": "Explore o futuro da IA com Itamar Friedman da Codium AI em 'Depurando a Internet'. Mergulhe nos agentes 'Extreme DRY', a sincronização rápida de especificações e testes, e o equilíbrio entre código e teste. Além disso, insights de Toran e um olhar exclusivo no roteiro do AutoGPT!",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692397413-screenshot-2023-08-18-at-6-10-09-pm.png"
           },
@@ -2741,18 +2741,18 @@
           "id": "190260606",
           "topics": [
             "LLM",
-            "Entrenamiento",
+            "Treinamento",
             "Agentes",
             "Multimodal"
           ],
-          "title": "Podcast del Espacio Latente 5/8/23 [Resumen] - El Gen del Fundador de IA: Ser Pionero, Construir Rápido y Creer en la Grandeza — con Sharif Shameem de Lexica",
+          "title": "Podcast Espaco Latente 5/8/23 [Resumo] - O Gene do Fundador de IA: Sendo Pioneiro, Construindo Rapido e Acreditando na Grandeza — com Sharif Shameem da Lexica",
           "slug": "latent-space-podcast-5-8-23-summary-the-ai-founder-gene-being-early-building-fast",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T08:52:09+01:00",
-          "description": "Ep.11 con Sharif Shameem de Lexica: Sumérgete en la mentalidad del fundador de IA, descubriendo los secretos para la innovación pionera, construyendo tecnología revolucionaria, entrenando modelos y el intrigante potencial de Agentes y secuenciación genómica.",
+          "description": "Ep.11 com Sharif Shameem da Lexica: Mergulhe na mentalidade do fundador de IA, descobrindo os segredos para inovacao pioneira, construindo tecnologia revolucionaria, treinando modelos e o potencial intrigante de Agentes e sequenciamento genomico.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692501984-screenshot-2023-08-19-at-11-24-05-pm.png"
           },
@@ -2773,23 +2773,23 @@
       ]
     },
     {
-      "name": "Datos Estructurados",
+      "name": "Dados Estruturados",
       "slug": "structured data",
       "articles": [
         {
           "id": "190260597",
           "topics": [
             "LLM",
-            "Datos estructurados"
+            "Dados Estruturados"
           ],
-          "title": "Podcast del Espacio Latente 15/05/23 [Resumen] - Calidad y estructura garantizadas en las salidas de LLM - con Shreya Rajpal de Guardrails AI",
+          "title": "Podcast Espaco Latente 15/05/23 [Resumo] - Qualidade garantida e estrutura nos resultados de LLM - com Shreya Rajpal da Guardrails AI",
           "slug": "latent-space-podcast-5-15-23-summary-guaranteed-quality-and-structure-in-llm-outp",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T08:56:26+01:00",
-          "description": "Explora el Ep. 12 con Shreya Rajpal de Guardrails AI: Profundiza en la validación de las salidas de LLM, refinando respuestas mediante bucles de re-preguntas y estableciendo SLAs para modelos. Domina los matices de la garantía de calidad de IA.",
+          "description": "Explore o Ep. 12 com Shreya Rajpal da Guardrails AI: Mergulhe na validacao dos resultados de LLM, refinando respostas atraves de ciclos de re-perguntas e estabelecendo SLAs para modelos. Domine as nuances da garantia de qualidade de IA.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692495732-screenshot-2023-08-19-at-9-38-27-pm.png"
           },
@@ -2817,18 +2817,18 @@
           "id": "190260606",
           "topics": [
             "LLM",
-            "Entrenamiento",
+            "Treinamento",
             "Agentes",
             "Multimodal"
           ],
-          "title": "Podcast del Espacio Latente 5/8/23 [Resumen] - El Gen del Fundador de IA: Ser Pionero, Construir Rápido y Creer en la Grandeza — con Sharif Shameem de Lexica",
+          "title": "Podcast Espaço Latente 5/8/23 [Resumo] - O Gene do Fundador de IA: Sendo Pioneiro, Construindo Rapidamente e Acreditando na Grandeza — com Sharif Shameem da Lexica",
           "slug": "latent-space-podcast-5-8-23-summary-the-ai-founder-gene-being-early-building-fast",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T08:52:09+01:00",
-          "description": "Ep.11 con Sharif Shameem de Lexica: Sumérgete en la mentalidad del fundador de IA, descubriendo los secretos para innovar pioneramente, construir tecnología revolucionaria, entrenar modelos y el intrigante potencial de los Agentes y la secuenciación genómica.",
+          "description": "Ep.11 com Sharif Shameem da Lexica: Mergulhe na mentalidade do fundador de IA, descobrindo os segredos para inovação pioneira, construindo tecnologia revolucionária, treinando modelos e o potencial intrigante de Agentes e sequenciamento genômico.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692501984-screenshot-2023-08-19-at-11-24-05-pm.png"
           },
@@ -2857,16 +2857,16 @@
           "topics": [
             "LLM",
             "Empresa",
-            "Resumen"
+            "Resumo"
           ],
-          "title": "Podcast del Espacio Latente 21/04/23 [Resumen] - Búsqueda potenciada por IA para la Empresa — con Deedy Das de Glean",
+          "title": "Podcast Espaço Latente 21/04/23 [Resumo] - Busca impulsionada por IA para a Empresa — com Deedy Das da Glean",
           "slug": "latent-space-podcast-4-21-23-summary-ai-powered-search-for-the-enterprise-with",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T08:31:31+01:00",
-          "description": "Ep.8: Sumérgete en la IA en la búsqueda empresarial con Deedy Das de Glean. Explora los desafíos al crear un gigante de búsqueda IA, comparaciones entre Google y ChatGPT, complejidades de la infraestructura de IA, identificación de textos generados por IA, y por qué las empresas necesitan más que solo QA de Documentos.",
+          "description": "Ep.8: Mergulhe na IA em busca empresarial com Deedy Das da Glean. Desvende desafios na criação de um gigante de busca em IA, comparações entre Google e ChatGPT, complexidades da infraestrutura de IA, identificação de textos gerados por IA e por que as empresas precisam de mais do que apenas QA de Documentos.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1694134074-screenshot-2023-09-07-at-5-43-48-pm.png"
           },
@@ -2887,23 +2887,23 @@
       ]
     },
     {
-      "name": "Visión",
+      "name": "Visao",
       "slug": "vision",
       "articles": [
         {
           "id": "191165673",
           "topics": [
-            "Resumen",
-            "Visión"
+            "Resumo",
+            "Visão"
           ],
-          "title": "Podcast del Espacio Latente 13/04/23 [Resumen] - Modelo de Segmentar Cualquier Cosa y los Problemas Difíciles de la Visión por Computadora — con Joseph Nelson de Roboflow",
+          "title": "Podcast Espaço Latente 13/04/23 [Resumo] - Modelo de Segmentação de Qualquer Coisa e os Problemas Difíceis da Visão Computacional — com Joseph Nelson da Roboflow",
           "slug": "latent-space-podcast-4-13-23-summary-segment-anything-model-and-the-hard-problems",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T08:30:03+01:00",
-          "description": "Explora el Ep.7 con Joseph Nelson sobre el Modelo de Segmentar Cualquier Cosa de Meta. Profundiza en el futuro de la Visión por Computadora, la importancia de OCR, Segmentación de Imágenes y más. #Roboflow #IA",
+          "description": "Explore o Ep.7 com Joseph Nelson sobre o Modelo de Segmentação de Qualquer Coisa da Meta. Mergulhe profundamente no futuro da Visão Computacional, a importância do OCR, Segmentação de Imagem e além. #Roboflow #IA",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1694150379-screenshot-2023-09-07-at-10-15-52-pm.png"
           },
@@ -2924,24 +2924,24 @@
       ]
     },
     {
-      "name": "Evaluación",
+      "name": "Avaliacao",
       "slug": "evaluation",
       "articles": [
         {
           "id": "191165920",
           "topics": [
             "LLM",
-            "Resumen",
-            "Evaluacion"
+            "Resumo",
+            "Avaliacao"
           ],
-          "title": "Podcast del Espacio Latente 4/6/23 [Resumen] - Fundamentos de IA: Introduccion a los Benchmarks",
+          "title": "Podcast Espaco Latente 4/6/23 [Resumo] - Fundamentos de IA: Benchmarks 101",
           "slug": "latent-space-podcast-4-6-23-summary-ai-fundamentals-benchmarks-101",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T07:05:35+01:00",
-          "description": "Explora los Fundamentos de IA en 'Introduccion a los Benchmarks.' Sumergirse en la historia del Benchmarking de LLM y descubrir las complejidades que moldean el progreso del aprendizaje automatico.",
+          "description": "Explore os Fundamentos de IA em 'Benchmarks 101.' Mergulhe na historia do Benchmarking de LLM e descubra as complexidades que moldam o progresso da aprendizagem de maquina.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1694154964-screenshot-2023-09-07-at-11-33-20-pm.png"
           },
@@ -2968,17 +2968,17 @@
         {
           "id": "191301444",
           "topics": [
-            "Resumen",
+            "Resumo",
             "LLMOps"
           ],
-          "title": "Podcast del Espacio Latente 4/6/23 [Resumen] - Investigación Aplicada: Desde Google Brain hasta MLOps y LLMOps — con Shreya Shankar de UC Berkeley",
+          "title": "Podcast Espaco Latente 4/6/23 [Resumo] - Pesquisa Aplicada: Do Google Brain para MLOps para LLMOps — com Shreya Shankar da UC Berkeley",
           "slug": "latent-space-podcast-4-6-23-summary-grounded-research-from-google-brain-to-mlops",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T07:04:09+01:00",
-          "description": "Explora la evolución de MLOps con Shreya Shankar desde Google Brain hasta UC Berkeley. Sumérgete en el puente entre desarrollo y producción, comprendiendo los modelos de ML como vistas únicas de bases de datos. #ML #Investigación",
+          "description": "Explore a evolucao dos MLOps com Shreya Shankar do Google Brain para UC Berkeley. Mergulhe na ponte entre desenvolvimento e producao, entendendo modelos de ML como visoes unicas de banco de dados. #ML #Pesquisa",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1694196657-screenshot-2023-09-08-at-11-08-10-am.png"
           },
@@ -2999,24 +2999,24 @@
       ]
     },
     {
-      "name": "Herramientas",
+      "name": "Ferramentas",
       "slug": "tools",
       "articles": [
         {
           "id": "191310297",
           "topics": [
-            "Resumen",
+            "Resumo",
             "LLM",
-            "Herramientas"
+            "Ferramentas"
           ],
-          "title": "Podcast Espacio Latente 23/03/23 [Resumen] - Podcast de Emergencia: El Momento de ChatGPT en la App Store (con Logan Kilpatrick de OpenAI, Florent Crivello de LindyAI y Nader Dabit)",
+          "title": "Podcast Espaço Latente 23/03/23 [Resumo] - Podcast de Emergência: O Momento da ChatGPT na App Store (com Logan Kilpatrick da OpenAI, Florent Crivello da LindyAI e Nader Dabit)",
           "slug": "latent-space-podcast-3-23-23-summary-emergency-pod-chatgpt-s-app-store-moment-w-o",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T07:02:01+01:00",
-          "description": "Explora el Ep.4 del podcast mientras expertos de OpenAI y LindyAI profundizan en los Plugins de ChatGPT. Descubre casos de uso, estrategias de monetización y el futuro de la integración de IA. #ChatGPT #AIPlugins",
+          "description": "Explore o Ep.4 do podcast enquanto especialistas da OpenAI & LindyAI mergulham nos Plugins ChatGPT. Descubra casos de uso, estratégias de monetização e o futuro da integração de IA. #ChatGPT #AIPlugins",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1694201898-screenshot-2023-09-08-at-12-31-46-pm.png"
           },
@@ -3044,17 +3044,17 @@
           "id": "190259003",
           "topics": [
             "LLM",
-            "Resumen",
-            "Industria"
+            "Resumo",
+            "Indústria"
           ],
-          "title": "McKinsey: El potencial económico de la IA generativa [Resumen]",
+          "title": "McKinsey: O potencial econômico da IA gerativa [Resumo]",
           "slug": "mckinsey-the-economic-potential-of-generative-ai-eli5-summary",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T06:28:52+01:00",
-          "description": "Explora la investigación de McKinsey sobre el poder transformador de la IA generativa, su potencial económico y su impacto en el trabajo futuro y la productividad.",
+          "description": "Explore a pesquisa da McKinsey sobre o poder transformador da IA gerativa, seu potencial econômico e seu impacto no trabalho futuro e na produtividade.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690754998-ab5-img1.png"
           },
@@ -3075,17 +3075,17 @@
         {
           "id": "190258686",
           "topics": [
-            "Comenzando",
-            "Industria"
+            "Introdução",
+            "Indústria"
           ],
-          "title": "Empoderando el Futuro: Desplegando el Poder de los Modelos de Lenguaje de Gran Escala en Diversas Industrias",
+          "title": "Capacitando o Futuro: Desdobrando o Poder dos Modelos de Linguagem de Grande Escala em Diversos Setores",
           "slug": "empowering-the-future-unfolding-the-power-of-large-language-models-across-industr",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T05:53:06+01:00",
-          "description": "Explora el poder transformador de los Modelos de Lenguaje de Gran Escala en varios sectores! Descubre historias de éxito, casos de uso y el futuro de la IA!",
+          "description": "Explore o poder transformador dos Modelos de Linguagem de Grande Escala em vários setores! Descubra histórias de sucesso, casos de uso e o futuro da IA!",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690344171-ab5-img1.png"
           },
@@ -3106,23 +3106,23 @@
       ]
     },
     {
-      "name": "Comenzando",
+      "name": "Introducao",
       "slug": "getting started",
       "articles": [
         {
           "id": "190258861",
           "topics": [
-            "Comenzando",
-            "Personalización"
+            "Introdução",
+            "Personalização"
           ],
-          "title": "Modelos de Lenguaje Grandes: Creando Experiencias Digitales Personalizadas",
+          "title": "Modelos de Linguagem de Grande Escala: Criando Experiências Digitais Personalizadas",
           "slug": "large-language-models-crafting-personalized-digital-experiences",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T06:06:53+01:00",
-          "description": "Desata el potencial de los Modelos de Lenguaje Grandes (LLMs) en la creación de experiencias digitales hiperpersonalizadas y recomendaciones de contenido. ¡Impulsa tu carrera en IA hoy!",
+          "description": "Desbloqueie o potencial dos Modelos de Linguagem de Grande Escala (LLMs) na criação de experiências digitais hiper-personalizadas e recomendações de conteúdo. Inicie sua carreira em IA hoje!",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690407851-ab10-img1.png"
           },
@@ -3143,17 +3143,17 @@
         {
           "id": "190258847",
           "topics": [
-            "Comenzando",
-            "IA General"
+            "Introdução",
+            "IA Geral"
           ],
-          "title": "Los Titanes del Mañana: El Futuro de los Modelos de Lenguaje de Gran Escala y Su Influencia en el Mercado Laboral y la IA General",
+          "title": "Titãs do Amanhã: O Futuro dos Modelos de Linguagem de Grande Escala e Sua Influência no Mercado de Trabalho e IA Geral",
           "slug": "tomorrow-s-titans-the-future-of-large-language-models-and-their-influence-on-the",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T06:05:58+01:00",
-          "description": "Descubre el futuro de los LLMs, sus impactos potenciales en el mercado laboral y su papel en el camino hacia la Inteligencia General Artificial.",
+          "description": "Descubra o futuro dos LLMs, seus impactos potenciais no mercado de trabalho e seu papel na jornada em direção à Inteligência Geral Artificial.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690406895-ab9-img1.png"
           },
@@ -3174,17 +3174,17 @@
         {
           "id": "190258836",
           "topics": [
-            "Comenzando",
-            "Privacidad"
+            "Introdução",
+            "Privacidade"
           ],
-          "title": "Asegurando el Castillo: Explorando LLMs y la Frontera de la Privacidad de Datos",
+          "title": "Protegendo o Castelo: Explorando LLMs e a Fronteira da Privacidade de Dados",
           "slug": "securing-the-castle-exploring-llms-and-the-frontier-of-data-privacy",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T06:04:45+01:00",
-          "description": "Sumérgete en el mundo de los LLMs y la privacidad de datos. Descubre los desafíos y cómo se están conquistando, paso a paso.",
+          "description": "Mergulhe fundo no mundo dos LLMs e privacidade de dados. Descubra os desafios e como eles estão sendo superados, passo a passo.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690404787-ab8-img1.png"
           },
@@ -3205,17 +3205,17 @@
         {
           "id": "190258732",
           "topics": [
-            "Comenzando",
-            "Legal"
+            "Introdução",
+            "Jurídico"
           ],
-          "title": "¿Copiar eso? LLMs, Derechos de Autor y el Problema del Plagio",
+          "title": "Entendeu? LLMs, Direitos Autorais e o Dilema do Plágio",
           "slug": "copy-that-llms-copyright-and-the-plagiarism-predicament",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T05:54:04+01:00",
-          "description": "Descubre las complejidades de cómo los Modelos de Lenguaje Grande navegan el laberinto de las leyes de derechos de autor y la amenaza inminente del plagio.",
+          "description": "Descubra as complexidades de como os Modelos de Linguagem de Grande Escala navegam pelo labirinto das leis de direitos autorais e a ameaça iminente de plágio.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690402165-ab7-img1.png"
           },
@@ -3236,17 +3236,17 @@
         {
           "id": "190258686",
           "topics": [
-            "Comenzando",
-            "Industria"
+            "Introdução",
+            "Indústria"
           ],
-          "title": "Empoderando el Futuro: Desplegando el Poder de los Modelos de Lenguaje de Gran Escala en Diversas Industrias",
+          "title": "Capacitando o Futuro: Desdobrando o Poder dos Modelos de Linguagem de Grande Escala em Diversos Setores",
           "slug": "empowering-the-future-unfolding-the-power-of-large-language-models-across-industr",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T05:53:06+01:00",
-          "description": "Explora el poder transformador de los Modelos de Lenguaje de Gran Escala en varios sectores! Descubre historias de éxito, casos de uso y el futuro de la IA!",
+          "description": "Explore o poder transformador dos Modelos de Linguagem de Grande Escala em vários setores! Descubra histórias de sucesso, casos de uso e o futuro da IA!",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690344171-ab5-img1.png"
           },
@@ -3267,17 +3267,17 @@
         {
           "id": "190258672",
           "topics": [
-            "Comenzando",
+            "Introdução",
             "LLM"
           ],
-          "title": "Descifrando los Misterios de la IA: Una Inmersión Profunda en el Conocimiento y las Limitaciones de los Modelos de Lenguaje Grande",
+          "title": "Decodificando os Mistérios da IA: Um Mergulho Profundo nos Conhecimentos e Limitações dos Modelos de Linguagem de Grande Escala",
           "slug": "decoding-the-mysteries-of-ai-a-deep-dive-into-large-language-models-knowledge-and",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T05:51:17+01:00",
-          "description": "Desentraña el enigma de los Modelos de Lenguaje Grande (LLMs). Entiende cómo adquieren conocimiento, sus límites y las posibles trampas en tu viaje de IA.",
+          "description": "Desvende o enigma dos Modelos de Linguagem de Grande Escala (LLMs). Entenda como eles adquirem conhecimento, seus limites, restrições e as possíveis armadilhas em sua jornada de IA.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690333798-ab4-img1.png"
           },
@@ -3298,17 +3298,17 @@
         {
           "id": "190258658",
           "topics": [
-            "Comenzando",
+            "Introducao",
             "LLM"
           ],
-          "title": "Dominando el Arte de Entrenar Modelos de Lenguaje Grande: Una Guía Completa",
+          "title": "Dominando a Arte de Treinar Modelos de Linguagem de Grande Escala: Um Guia Completo",
           "slug": "mastering-the-art-of-training-large-language-models-a-comprehensive-guide",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T05:38:27+01:00",
-          "description": "Descubre los secretos del entrenamiento de LLM. Descubre las necesidades de datos, el proceso de entrenamiento, los desafíos y la huella ambiental de entrenar LLMs.",
+          "description": "Desvende os segredos do treinamento de LLM. Descubra as necessidades de dados, o processo de treinamento, os desafios e a pegada ambiental do treinamento de LLMs.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690330651-ab3-img1.png"
           },
@@ -3329,17 +3329,17 @@
         {
           "id": "190258582",
           "topics": [
-            "Comenzando",
+            "Introducao",
             "LLM"
           ],
-          "title": "Descifrando LLMs: Tu guía definitiva para entender los Modelos de Lenguaje Grande",
+          "title": "Decodificando LLMs: Seu Guia Definitivo para Entender Modelos de Linguagem de Grande Escala",
           "slug": "decoding-llms-your-ultimate-guide-to-understanding-large-language-models",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T05:29:16+01:00",
-          "description": "Sumérgete en el mundo de los Modelos de Lenguaje Grande (LLMs). Descubre su arquitectura, mecanismos de aprendizaje y el poder de los transformadores. Comienza tu carrera en IA aquí.",
+          "description": "Mergulhe no mundo dos Modelos de Linguagem de Grande Escala (LLMs). Descubra sua arquitetura, mecanismos de aprendizagem e o poder dos transformadores. Comece sua jornada de carreira em IA aqui.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690247138-ab2-img1.png"
           },
@@ -3392,17 +3392,17 @@
         {
           "id": "190258905",
           "topics": [
-            "Comenzando",
+            "Introdução",
             "LLM"
           ],
-          "title": "Dominando el Arte de los LLMs: Una Guía Práctica para Implementar Modelos de Lenguaje Grande",
+          "title": "Dominando a Arte dos LLMs: Um Guia Prático para Implementar Modelos de Linguagem de Grande Escala",
           "slug": "mastering-the-art-of-llms-a-practical-guide-to-implementing-large-language-models",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T05:25:37+01:00",
-          "description": "¡Desbloquea el poder de la IA! Navega el mundo de los Modelos de Lenguaje Grande, explora plataformas populares y aprende las mejores prácticas para potenciar tus aplicaciones con LLMs.",
+          "description": "Desbloqueie o poder da IA! Navegue pelo mundo dos Modelos de Linguagem de Grande Escala, explore plataformas populares e aprenda as melhores práticas para impulsionar suas aplicações com LLMs.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690421600-ab11-img1.png"
           },
@@ -3423,16 +3423,16 @@
         {
           "id": "190258562",
           "topics": [
-            "Comenzando"
+            "Introducao"
           ],
-          "title": "Dominando la IA: Una Introducción Completa a los Modelos de Lenguaje de Gran Escala (LLMs)",
+          "title": "Dominando IA: Uma Introducao Abrangente aos Modelos de Linguagem de Grande Escala (LLMs)",
           "slug": "mastering-ai-a-comprehensive-introduction-to-large-language-models-llms",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T05:24:02+01:00",
-          "description": "Inicia tu carrera en IA con nuestra guía detallada sobre LLMs. Aprende sobre su historia, singularidad y potencial futuro en este campo en evolución.",
+          "description": "Inicie sua carreira em IA com nosso guia detalhado sobre LLMs. Aprenda sobre a historia, a singularidade e o potencial futuro neste campo em evolucao.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690162707-ab-img1a.png"
           },
@@ -3453,23 +3453,23 @@
       ]
     },
     {
-      "name": "Personalización",
+      "name": "Personalizacao",
       "slug": "personalization",
       "articles": [
         {
           "id": "190258861",
           "topics": [
-            "Comenzando",
-            "Personalización"
+            "Introducao",
+            "Personalizacao"
           ],
-          "title": "Modelos de Lenguaje Grandes: Creando Experiencias Digitales Personalizadas",
+          "title": "Modelos de Linguagem de Grande Escala: Criando Experiencias Digitais Personalizadas",
           "slug": "large-language-models-crafting-personalized-digital-experiences",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T06:06:53+01:00",
-          "description": "Desata el potencial de los Modelos de Lenguaje Grandes (LLMs) en la creación de experiencias digitales hiperpersonalizadas y recomendaciones de contenido. ¡Impulsa tu carrera en IA hoy!",
+          "description": "Desbloqueie o potencial dos Modelos de Linguagem de Grande Escala (LLMs) na criacao de experiencias digitais hiper-personalizadas e recomendacoes de conteudo. Inicie sua carreira em IA hoje!",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690407851-ab10-img1.png"
           },
@@ -3496,17 +3496,17 @@
         {
           "id": "190258847",
           "topics": [
-            "Comenzando",
-            "IAF"
+            "Introdução",
+            "AGI"
           ],
-          "title": "Los Titanes del Mañana: El Futuro de los Modelos de Lenguaje Grande y Su Influencia en el Mercado Laboral y la IAF",
+          "title": "Titãs do Amanhã: O Futuro dos Grandes Modelos de Linguagem e Sua Influência no Mercado de Trabalho e AGI",
           "slug": "tomorrow-s-titans-the-future-of-large-language-models-and-their-influence-on-the",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T06:05:58+01:00",
-          "description": "Descubre el futuro de los LLMs, sus impactos potenciales en el mercado laboral y su papel en el camino hacia la Inteligencia General Artificial.",
+          "description": "Descubra o futuro dos LLMs, seus impactos potenciais no mercado de trabalho e seu papel na jornada em direção à Inteligência Geral Artificial.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690406895-ab9-img1.png"
           },
@@ -3527,23 +3527,23 @@
       ]
     },
     {
-      "name": "Privacidad",
+      "name": "Privacidade",
       "slug": "privacy",
       "articles": [
         {
           "id": "190258836",
           "topics": [
-            "Comenzando",
-            "Privacidad"
+            "Introdução",
+            "Privacidade"
           ],
-          "title": "Asegurando el Castillo: Explorando LLMs y la Frontera de la Privacidad de Datos",
+          "title": "Protegendo o Castelo: Explorando LLMs e a Fronteira da Privacidade de Dados",
           "slug": "securing-the-castle-exploring-llms-and-the-frontier-of-data-privacy",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T06:04:45+01:00",
-          "description": "Sumérgete en el mundo de los LLMs y la privacidad de datos. Descubre los desafíos y cómo se están conquistando, paso a paso.",
+          "description": "Mergulhe profundamente no mundo dos LLMs e da privacidade de dados. Descubra os desafios e como eles estão sendo superados, passo a passo.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690404787-ab8-img1.png"
           },
@@ -3570,17 +3570,17 @@
         {
           "id": "190258732",
           "topics": [
-            "Comenzando",
-            "Legal"
+            "Introdução",
+            "Jurídico"
           ],
-          "title": "¿Copiar eso? LLMs, Derechos de Autor y el Predicamento del Plagio",
+          "title": "Entendeu? LLMs, Direitos Autorais e o Dilema do Plágio",
           "slug": "copy-that-llms-copyright-and-the-plagiarism-predicament",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T05:54:04+01:00",
-          "description": "Descubre las complejidades de cómo los Modelos de Lenguaje Grande navegan el laberinto de las leyes de derechos de autor y la amenaza inminente del plagio.",
+          "description": "Descubra as complexidades de como os Modelos de Linguagem de Grande Escala navegam pelo labirinto das leis de direitos autorais e a ameaça iminente de plágio.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690402165-ab7-img1.png"
           },
@@ -3601,24 +3601,24 @@
       ]
     },
     {
-      "name": "Alineación",
+      "name": "Alinhamento",
       "slug": "alignment",
       "articles": [
         {
           "id": "190258709",
           "topics": [
-            "Comenzando",
-            "Alineación",
-            "Seguridad"
+            "Introdução",
+            "Alinhamento",
+            "Segurança"
           ],
-          "title": "Navegando el Laberinto Moral: Desentrañando la Ética de los Modelos de Lenguaje de Gran Escala",
+          "title": "Navegando pelo Labirinto Moral: Desvendando a Ética dos Modelos de Linguagem de Grande Escala",
           "slug": "navigating-the-moral-maze-unraveling-the-ethics-of-large-language-models",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T05:27:55+01:00",
-          "description": "Embarcate en un viaje a través del complejo paisaje de la ética de IA. Descubre cómo el sesgo se infiltra en los LLM y aprende los pasos que se están tomando para asegurar un uso responsable.",
+          "description": "Embarque em uma jornada pelo complexo cenário da ética em IA. Descubra como o viés se infiltra nos LLMs e aprenda os passos que estão sendo tomados para garantir o uso responsável.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690399140-ab6-img1.png"
           },
@@ -3639,24 +3639,24 @@
       ]
     },
     {
-      "name": "Seguridad",
+      "name": "Seguranca",
       "slug": "safety",
       "articles": [
         {
           "id": "190258709",
           "topics": [
-            "Comenzando",
-            "Alineación",
-            "Seguridad"
+            "Introdução",
+            "Alinhamento",
+            "Segurança"
           ],
-          "title": "Navegando el Laberinto Moral: Desentrañando la Ética de los Modelos de Lenguaje Grande",
+          "title": "Navegando pelo Labirinto Moral: Desvendando a Ética dos Modelos de Linguagem de Grande Escala",
           "slug": "navigating-the-moral-maze-unraveling-the-ethics-of-large-language-models",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T05:27:55+01:00",
-          "description": "Embarcate en un viaje a través del complejo paisaje de la ética de IA. Descubre cómo el sesgo se infiltra en los LLM y aprende los pasos que se están tomando para asegurar un uso responsable.",
+          "description": "Embarque em uma jornada pelo complexo cenário da ética em IA. Descubra como o viés se infiltra nos LLMs e aprenda os passos que estão sendo tomados para garantir o uso responsável.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690399140-ab6-img1.png"
           },
@@ -3684,7 +3684,7 @@
       "title": "AI | Bitcash Blog",
       "twitterCard": "summary_large_image"
     },
-    "description": "Inteligencia, Reimaginada.",
+    "description": "Inteligência, Reimaginada.",
     "title": "IA",
     "seoType": "ai",
     "id": "178642405",

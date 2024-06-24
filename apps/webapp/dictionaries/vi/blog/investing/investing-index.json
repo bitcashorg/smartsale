@@ -1,23 +1,23 @@
 {
   "sections": [
     {
-      "name": "Comenzando",
+      "name": "Bắt đầu",
       "slug": "getting started",
       "articles": [
         {
           "id": "173914208",
           "topics": [
-            "Comenzando",
-            "Gestión de Cartera"
+            "Bắt đầu",
+            "Quản lý Danh mục Đầu tư"
           ],
-          "title": "Dominando la Gestión de Cartera: El Arte de la Diversificación, Asignación de Activos y Reequilibrio",
+          "title": "Thành thạo Quản lý Danh mục Đầu tư: Nghệ thuật Đa dạng hóa, Phân bổ Tài sản và Cân bằng lại",
           "slug": "mastering-portfolio-management-the-art-of-diversification-asset-allocation-and-re",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:12:40+01:00",
-          "description": "Optimiza Tu Cartera: Aprende el Arte de la Diversificación, Asignación de Activos y Reequilibrio para una Gestión de Cartera Exitosa.",
+          "description": "Tối ưu hóa Danh mục Đầu tư của Bạn: Học Nghệ thuật Đa dạng hóa, Phân bổ Tài sản và Cân bằng lại cho Quản lý Danh mục Đầu tư Thành công.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689021197-ib2-img1.png"
           },
@@ -38,17 +38,17 @@
         {
           "id": "174592759",
           "topics": [
-            "Comenzando",
-            "Alternativas"
+            "Bắt đầu",
+            "Các lựa chọn"
           ],
-          "title": "Liberando el Potencial: Dominando las Inversiones Alternativas para el Éxito del Inversor",
+          "title": "Phát huy tiềm năng: Thành thạo Đầu tư Thay thế để Thành công cho Nhà đầu tư",
           "slug": "unleashing-the-potential-mastering-alternative-investments-for-investor-success",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:11:13+01:00",
-          "description": "¡Expande tu destreza en inversiones con inversiones alternativas! Sumérgete en el mundo del capital privado, los fondos de cobertura y las materias primas para potenciar tu cartera. Este blog proporciona orientación experta para inversores que buscan éxito en estrategias de inversión alternativa.",
+          "description": "Mở rộng khả năng đầu tư của bạn với các khoản đầu tư thay thế! Đắm mình vào thế giới của quỹ tư nhân, quỹ đầu cơ và hàng hóa để tăng cường danh mục đầu tư của bạn. Blog này cung cấp hướng dẫn chuyên sâu cho các nhà đầu tư tìm kiếm thành công trong các chiến lược đầu tư thay thế.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689120056-ib6-img1.png"
           },
@@ -69,17 +69,17 @@
         {
           "id": "175015363",
           "topics": [
-            "Comenzando",
-            "Fondos Mutuos y ETFs"
+            "Bắt đầu",
+            "Quỹ tương hỗ & ETFs"
           ],
-          "title": "Revelando los Pros y Contras de los Fondos Cotizados en Bolsa (ETFs): Una Guia Completa para Inversores",
+          "title": "Bật mí ưu và nhược điểm của Quỹ Giao dịch Trên Sàn (ETFs): Hướng dẫn Toàn diện cho Nhà đầu tư",
           "slug": "unveiling-the-pros-and-cons-of-exchange-traded-funds-etfs-a-comprehensive-guide-f",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:09:18+01:00",
-          "description": "Descubre las ventajas y desventajas de invertir en ETFs. Toma decisiones informadas y maximiza tu potencial de inversion con esta guia completa.",
+          "description": "Khám phá các lợi ích và bất lợi khi đầu tư vào ETFs. Đưa ra quyết định thông minh và tối đa hóa tiềm năng đầu tư của bạn với hướng dẫn toàn diện này.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689186966-ib8-img1.png"
           },
@@ -378,17 +378,17 @@
         {
           "id": "176002895",
           "topics": [
-            "Comenzando",
-            "Inflación"
+            "Getting Started",
+            "Inflation"
           ],
-          "title": "Navegando los Mares Financieros: Entendiendo el Impacto de la Inflación en la Inversión",
+          "title": "Navigating the Financial Seas: Understanding Inflation's Impact on Investment",
           "slug": "navigating-the-financial-seas-understanding-inflation-s-impact-on-investment",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T01:59:28+01:00",
-          "description": "Zarpe en su viaje financiero con nuestra guía completa sobre la inflación. Aprenda cómo afecta a sus inversiones y las estrategias para afrontar la tormenta.",
+          "description": "Set sail on your financial journey with our comprehensive guide on inflation. Learn how it affects your investments and strategies to weather the storm.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689386893-ib20-img1.png"
           },
@@ -594,23 +594,23 @@
       ]
     },
     {
-      "name": "Gestión de Cartera",
+      "name": "Quản lý Danh mục Đầu tư",
       "slug": "portfolio management",
       "articles": [
         {
           "id": "173914208",
           "topics": [
-            "Comenzando",
-            "Gestión de Cartera"
+            "Bắt đầu",
+            "Quản lý Danh mục Đầu tư"
           ],
-          "title": "Dominando la Gestión de Cartera: El Arte de la Diversificación, Asignación de Activos y Reequilibrio",
+          "title": "Thành thạo Quản lý Danh mục Đầu tư: Nghệ thuật Đa dạng hóa, Phân bổ Tài sản và Cân bằng lại",
           "slug": "mastering-portfolio-management-the-art-of-diversification-asset-allocation-and-re",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:12:40+01:00",
-          "description": "Optimiza Tu Cartera: Aprende el Arte de la Diversificación, Asignación de Activos y Reequilibrio para una Gestión de Cartera Exitosa.",
+          "description": "Tối ưu hóa Danh mục Đầu tư của Bạn: Học Nghệ thuật Đa dạng hóa, Phân bổ Tài sản và Cân bằng lại cho Quản lý Danh mục Đầu tư Thành công.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689021197-ib2-img1.png"
           },
@@ -631,23 +631,23 @@
       ]
     },
     {
-      "name": "Alternativas",
+      "name": "Các Phương án Thay thế",
       "slug": "alternatives",
       "articles": [
         {
           "id": "174592759",
           "topics": [
-            "Comenzando",
-            "Alternativas"
+            "Bắt đầu",
+            "Các lựa chọn khác"
           ],
-          "title": "Desatando el Potencial: Dominando las Inversiones Alternativas para el Éxito del Inversor",
+          "title": "Phát huy tiềm năng: Thành thạo Đầu tư Thay thế để Thành công cho Nhà đầu tư",
           "slug": "unleashing-the-potential-mastering-alternative-investments-for-investor-success",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:11:13+01:00",
-          "description": "Expande tu destreza en inversiones con inversiones alternativas. Sumérgete en el mundo de capital privado, fondos de cobertura y materias primas para potenciar tu cartera. Este blog proporciona orientación experta para inversores que buscan éxito en estrategias de inversión alternativa.",
+          "description": "Mở rộng khả năng đầu tư của bạn với các khoản đầu tư thay thế! Đắm mình vào thế giới của quỹ tư nhân, quỹ đầu cơ và hàng hóa để tăng cường danh mục đầu tư của bạn. Blog này cung cấp hướng dẫn chuyên sâu cho các nhà đầu tư tìm kiếm thành công trong các chiến lược đầu tư thay thế.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689120056-ib6-img1.png"
           },
@@ -668,23 +668,23 @@
       ]
     },
     {
-      "name": "Fondos Mutuos y ETFs",
+      "name": "Quỹ Tương hỗ & ETFs",
       "slug": "mutual funds & etfs",
       "articles": [
         {
           "id": "175015363",
           "topics": [
-            "Comenzando",
-            "Fondos Mutuos y ETFs"
+            "Bắt đầu",
+            "Quỹ tương hỗ & ETFs"
           ],
-          "title": "Revelando los Pros y Contras de los Fondos Cotizados en Bolsa (ETFs): Una Guia Completa para Inversores",
+          "title": "Bật mí ưu và nhược điểm của Quỹ giao dịch trao đổi (ETFs): Hướng dẫn toàn diện cho Nhà đầu tư",
           "slug": "unveiling-the-pros-and-cons-of-exchange-traded-funds-etfs-a-comprehensive-guide-f",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:09:18+01:00",
-          "description": "Descubre las ventajas y desventajas de invertir en ETFs. Toma decisiones informadas y maximiza tu potencial de inversion con esta guia completa.",
+          "description": "Khám phá các lợi ích và hạn chế khi đầu tư vào ETFs. Đưa ra quyết định thông minh và tối đa hóa tiềm năng đầu tư của bạn với hướng dẫn toàn diện này.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689186966-ib8-img1.png"
           },
@@ -705,17 +705,17 @@
         {
           "id": "174594216",
           "topics": [
-            "Comenzando",
-            "Fondos Mutuos y ETFs"
+            "Bắt đầu",
+            "Quỹ tương hỗ & ETFs"
           ],
-          "title": "Dominando los Fondos Mutuos: Revelando los Tipos, Gastos y Rendimiento para una Inversión Exitosa",
+          "title": "Thành thạo Quỹ tương hỗ: Tiết lộ các Loại, Chi phí và Hiệu suất cho Đầu tư Thành công",
           "slug": "mastering-mutual-funds-unveiling-the-types-expenses-and-performance-for-successfu",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T01:55:44+01:00",
-          "description": "Descubre los detalles de los fondos mutuos - sus diversos tipos, gastos y métricas de rendimiento - para tomar decisiones de inversión informadas y alcanzar el éxito financiero.",
+          "description": "Khám phá các chi tiết của quỹ tương hỗ - các loại khác nhau, chi phí và các chỉ số hiệu suất - để đưa ra các quyết định đầu tư thông minh và đạt được thành công tài chính.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689128866-ib7-img1.png"
           },
@@ -736,23 +736,23 @@
       ]
     },
     {
-      "name": "Gestión de Riesgos",
+      "name": "Quản lý Rủi ro",
       "slug": "risk management",
       "articles": [
         {
           "id": "176002890",
           "topics": [
-            "Comenzando",
-            "Gestion de Riesgos"
+            "Bắt đầu",
+            "Quản lý rủi ro"
           ],
-          "title": "Protege Tus Inversiones: Una Guia Completa para Reconocer y Evitar el Fraude de Inversion",
+          "title": "Bảo vệ Khoản Đầu tư của Bạn: Hướng dẫn Toàn diện để Nhận biết và Tránh xa Lừa đảo Đầu tư",
           "slug": "shield-your-investments-a-comprehensive-guide-to-recognizing-and-avoiding-investm",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:08:41+01:00",
-          "description": "Protege tu dinero ganado con esfuerzo! Aprende a identificar estafas de inversion y protege tu futuro financiero con nuestra guia completa para evitar el fraude de inversion",
+          "description": "Bảo vệ tiền của bạn! Học cách nhận biết các trò lừa đảo đầu tư và bảo vệ tương lai tài chính của bạn với hướng dẫn toàn diện của chúng tôi để tránh lừa đảo đầu tư",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689384626-ib19-img1.png"
           },
@@ -773,17 +773,17 @@
         {
           "id": "175016379",
           "topics": [
-            "Comenzando",
-            "Gestión de Riesgos"
+            "Bắt đầu",
+            "Quản lý rủi ro"
           ],
-          "title": "Dominando la Tolerancia al Riesgo: Revelando tu Único ADN de Inversor",
+          "title": "Thành thạo Khả năng Chấp nhận Rủi ro: Tiết lộ DNA Nhà đầu tư Độc đáo của Bạn",
           "slug": "mastering-risk-tolerance-unveiling-your-unique-investor-dna",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T01:54:11+01:00",
-          "description": "Descubre tu tolerancia al riesgo y evalúa tu perfil de riesgo personal para tomar decisiones de inversión informadas. Descubre los secretos para alinear el riesgo y la recompensa para el éxito financiero.",
+          "description": "Khám phá khả năng chấp nhận rủi ro của bạn và đánh giá hồ sơ rủi ro cá nhân để đưa ra quyết định đầu tư thông minh. Mở khóa bí mật để điều chỉnh rủi ro và phần thưởng cho thành công tài chính.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689189686-ib9-img1.png"
           },
@@ -804,23 +804,23 @@
       ]
     },
     {
-      "name": "Seguros",
+      "name": "Bảo hiểm",
       "slug": "insurance",
       "articles": [
         {
           "id": "176002763",
           "topics": [
-            "Primeros Pasos",
-            "Seguros"
+            "Bắt đầu",
+            "Bảo hiểm"
           ],
-          "title": "Planificación de Seguros 101: Navegando por los Seguros de Vida, Discapacidad y Cuidado a Largo Plazo",
+          "title": "Kế hoạch Bảo hiểm 101: Định hướng Bảo hiểm Nhân thọ, Khuyết tật và Dài hạn",
           "slug": "insurance-planning-101-navigating-life-disability-and-long-term-care-insurance",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:07:57+01:00",
-          "description": "Asegura tu futuro con una planificación de seguros inteligente. Profundiza en los seguros de vida, discapacidad y cuidado a largo plazo para proteger tu salud financiera.",
+          "description": "Bảo vệ tương lai của bạn với kế hoạch bảo hiểm thông minh. Tìm hiểu sâu về bảo hiểm nhân thọ, khuyết tật và bảo hiểm dài hạn để bảo vệ sức khỏe tài chính của bạn.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689381721-ib18-img1.png"
           },
@@ -841,23 +841,23 @@
       ]
     },
     {
-      "name": "Educación",
+      "name": "Giáo dục",
       "slug": "education",
       "articles": [
         {
           "id": "175940742",
           "topics": [
-            "Comenzando",
-            "Educación"
+            "Bắt đầu",
+            "Giáo dục"
           ],
-          "title": "Descubriendo la Clave para Ahorrar en la Universidad: Maximizando los Fondos Educativos con Planes 529 y ESAs Coverdell",
+          "title": "Mở khóa Bí quyết Tiết kiệm Đại học: Tối đa hóa Quỹ Giáo dục với các Kế hoạch 529 và Coverdell ESAs",
           "slug": "unlocking-the-key-to-college-savings-maximizing-education-funds-with-529-plans-an",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:06:59+01:00",
-          "description": "Descubre cómo los planes 529 y las ESAs Coverdell pueden ayudarte a ahorrar para la educación de tu hijo. Aprende estrategias efectivas para navegar la planificación universitaria y asegurar un futuro brillante.",
+          "description": "Khám phá cách các kế hoạch 529 và Coverdell ESAs có thể giúp bạn tiết kiệm cho giáo dục của con bạn. Tìm hiểu các chiến lược hiệu quả để điều hướng kế hoạch đại học và đảm bảo một tương lai tươi sáng.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689371480-i17-img1.png"
           },
@@ -878,23 +878,23 @@
       ]
     },
     {
-      "name": "Jubilación",
+      "name": "Nghỉ hưu",
       "slug": "retirement",
       "articles": [
         {
           "id": "175940646",
           "topics": [
-            "Comenzando",
-            "Jubilación"
+            "Bắt đầu",
+            "Nghỉ hưu"
           ],
-          "title": "Dominando la Planificación de la Jubilación: Descifrando 401(k)s, IRAs y Planes de Pensiones para un Futuro Seguro",
+          "title": "Thành thạo Kế hoạch Nghỉ hưu: Giải mã 401(k), IRA và Kế hoạch Hưu trí cho một Tương lai An toàn",
           "slug": "mastering-retirement-planning-decoding-401-k-s-iras-and-pension-plans-for-a-secur",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:06:05+01:00",
-          "description": "Descubre la guía esencial para la planificación de la jubilación, desentrañando los misterios de los 401(k)s, IRAs y planes de pensiones. Aprende estrategias para construir un portafolio de jubilación robusto y asegurar tu futuro financiero.",
+          "description": "Khám phá hướng dẫn thiết yếu để lập kế hoạch nghỉ hưu, làm sáng tỏ những bí ẩn của 401(k), IRA và các kế hoạch hưu trí. Học các chiến lược để xây dựng danh mục đầu tư nghỉ hưu vững chắc và bảo đảm tương lai tài chính của bạn.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689368706-ib17-img1.png"
           },
@@ -915,17 +915,17 @@
         {
           "id": "175685081",
           "topics": [
-            "Comenzando",
-            "Jubilación"
+            "Bắt đầu",
+            "Nghỉ hưu"
           ],
-          "title": "Desbloqueando la Seguridad Social: Tu guía para maximizar los beneficios de jubilación",
+          "title": "Mở khóa An sinh Xã hội: Hướng dẫn của bạn để Tối đa hóa Lợi ích Nghỉ hưu",
           "slug": "unlocking-social-security-your-guide-to-maximizing-retirement-benefits",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:05:22+01:00",
-          "description": "Descubre las estrategias clave y las perspectivas para optimizar tus beneficios de la Seguridad Social para una jubilación segura y satisfactoria. Toma control de tu futuro hoy",
+          "description": "Khám phá các chiến lược và hiểu biết chính để tối ưu hóa các quyền lợi An sinh Xã hội của bạn cho một cuộc sống nghỉ hưu an toàn và thỏa mãn. Hãy nắm quyền kiểm soát tương lai của bạn ngay hôm nay",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689311272-ib15-img1.png"
           },
@@ -946,23 +946,23 @@
       ]
     },
     {
-      "name": "Planificación Fiscal",
+      "name": "Lập kế hoạch Thuế",
       "slug": "tax planning",
       "articles": [
         {
           "id": "175530377",
           "topics": [
-            "Comenzando",
-            "Planificación Fiscal"
+            "Bắt đầu",
+            "Lập kế hoạch thuế"
           ],
-          "title": "Maximizando Retornos: La Guía Definitiva para la Planificación Fiscal de Inversores",
+          "title": "Tối đa hóa lợi nhuận: Hướng dẫn tối ưu về Lập kế hoạch thuế cho Nhà đầu tư",
           "slug": "maximizing-returns-the-ultimate-guide-to-tax-planning-for-investors",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:04:20+01:00",
-          "description": "Aprende cómo optimizar tus retornos de inversión entendiendo las ganancias de capital, dividendos e ingresos por intereses, mientras minimizas tus obligaciones fiscales.",
+          "description": "Tìm hiểu cách tối ưu hóa lợi nhuận đầu tư của bạn bằng cách hiểu biết về lợi nhuận vốn, cổ tức và thu nhập lãi, đồng thời giảm thiểu các khoản nợ thuế của bạn.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689281511-ib14-img1.png"
           },
@@ -983,23 +983,23 @@
       ]
     },
     {
-      "name": "Planificación Patrimonial",
+      "name": "Lập kế hoạch Di sản",
       "slug": "estate planning",
       "articles": [
         {
           "id": "175528452",
           "topics": [
-            "Comenzando",
-            "Planificación Patrimonial"
+            "Bắt đầu",
+            "Lập kế hoạch di sản"
           ],
-          "title": "Asegura Tu Legado: Una Guía Completa para la Planificación Patrimonial, Testamentos, Fideicomisos e Impuestos de Sucesiones",
+          "title": "Bảo vệ Di sản của Bạn: Hướng dẫn Toàn diện về Lập kế hoạch Di sản, Di chúc, Quỹ tín thác và Thuế thừa kế",
           "slug": "secure-your-legacy-a-comprehensive-guide-to-estate-planning-wills-trusts-and-inhe",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:03:16+01:00",
-          "description": "Descubre cómo proteger tus activos y asegurar una transferencia de riqueza sin problemas. Aprende sobre testamentos, fideicomisos y cómo minimizar los impuestos de sucesión para la seguridad financiera.",
+          "description": "Khám phá cách bảo vệ tài sản của bạn và đảm bảo việc chuyển giao tài sản suôn sẻ. Tìm hiểu về di chúc, quỹ tín thác và cách giảm thiểu thuế thừa kế để đảm bảo an ninh tài chính.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689278418-ib13-img1.png"
           },
@@ -1020,23 +1020,23 @@
       ]
     },
     {
-      "name": "Planificación Financiera",
+      "name": "Lập kế hoạch Tài chính",
       "slug": "financial planning",
       "articles": [
         {
           "id": "175337478",
           "topics": [
-            "Comenzando",
-            "Planificación Financiera"
+            "Bắt đầu",
+            "Hoạch định Tài chính"
           ],
-          "title": "Dominando tus Finanzas: La Guía Definitiva para Presupuestar, Reducción de Deuda y Planificación de Retiro",
+          "title": "Thành thạo Tài chính của Bạn: Hướng dẫn Tối thượng để Lập Ngân sách, Giảm Nợ và Hoạch định Hưu trí",
           "slug": "mastering-your-finances-the-ultimate-guide-to-budgeting-debt-reduction-and-retire",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:00:48+01:00",
-          "description": "Logra el éxito financiero con orientación experta en presupuestos, reducción de deuda y planificación de retiro. Toma control de tu futuro y asegura un retiro próspero.",
+          "description": "Đạt được thành công tài chính với sự hướng dẫn của chuyên gia về lập ngân sách, giảm nợ và hoạch định hưu trí. Kiểm soát tương lai của bạn và đảm bảo một cuộc sống hưu trí thịnh vượng.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689220482-ib12-img1.png"
           },
@@ -1057,17 +1057,17 @@
         {
           "id": "173906568",
           "topics": [
-            "Planificación Financiera",
-            "Comenzando"
+            "Hoạch định Tài chính",
+            "Bắt đầu"
           ],
-          "title": "Desentrañando los Fundamentos de la Inversión: Navegando Tipos de Activos, Compensaciones de Riesgo-Retorno y Establecimiento de Objetivos",
+          "title": "Giải mã Cơ bản Đầu tư: Điều hướng Các Loại Tài sản, Mối quan hệ Rủi ro-Lợi nhuận, và Thiết lập Mục tiêu",
           "slug": "unraveling-investment-basics-navigating-asset-types-risk-return-trade-offs-and-go",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T01:52:15+01:00",
-          "description": "Domina el Arte de Invertir: Entiende Tipos de Activos, Compensaciones de Riesgo-Retorno y Establecimiento de Objetivos para Inversiones Exitosas.",
+          "description": "Thành thạo Nghệ thuật Đầu tư: Hiểu các Loại Tài sản, Mối quan hệ Rủi ro-Lợi nhuận, và Thiết lập Mục tiêu cho Những Khoản Đầu tư Thành công.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689018579-ib1-img1.png"
           },
@@ -1088,23 +1088,23 @@
       ]
     },
     {
-      "name": "Inflación",
+      "name": "Lạm phát",
       "slug": "inflation",
       "articles": [
         {
           "id": "176002895",
           "topics": [
-            "Comenzando",
-            "Inflacion"
+            "Bắt đầu",
+            "Lạm phát"
           ],
-          "title": "Navegando los Mares Financieros: Entendiendo el Impacto de la Inflacion en la Inversion",
+          "title": "Điều hướng Biển Tài chính: Hiểu ảnh hưởng của lạm phát đối với Đầu tư",
           "slug": "navigating-the-financial-seas-understanding-inflation-s-impact-on-investment",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T01:59:28+01:00",
-          "description": "Zarpe en su viaje financiero con nuestra guia completa sobre la inflacion. Aprenda como afecta a sus inversiones y estrategias para afrontar la tormenta.",
+          "description": "Bắt đầu hành trình tài chính của bạn với hướng dẫn toàn diện về lạm phát. Tìm hiểu cách nó ảnh hưởng đến các khoản đầu tư của bạn và các chiến lược để vượt qua cơn bão.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689386893-ib20-img1.png"
           },
@@ -1125,23 +1125,23 @@
       ]
     },
     {
-      "name": "acciones",
+      "name": "cổ phiếu",
       "slug": "stocks",
       "articles": [
         {
           "id": "173914322",
           "topics": [
-            "Introducción",
-            "acciones"
+            "Bắt đầu",
+            "cổ phiếu"
           ],
-          "title": "Entendiendo el Mercado de Valores: Cómo Funciona, Indicadores del Mercado y Tendencias Históricas.",
+          "title": "Hiểu về Thị trường Chứng khoán: Cách hoạt động, Chỉ số Thị trường và Xu hướng Lịch sử.",
           "slug": "understanding-the-stock-market-how-it-works-market-indicators-and-historical-tren",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T01:58:31+01:00",
-          "description": "Explora Cómo Funciona, Indicadores Clave y Tendencias Históricas para Tomar Decisiones de Inversión Informadas.",
+          "description": "Khám phá Cách hoạt động, Chỉ số Chính và Xu hướng Lịch sử để Đưa ra Quyết định Đầu tư Thông minh.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689023549-ib3-img1.png"
           },
@@ -1162,23 +1162,23 @@
       ]
     },
     {
-      "name": "inversión",
+      "name": "đầu tư",
       "slug": "investing",
       "articles": [
         {
           "id": "173980855",
           "topics": [
-            "inversiones",
-            "bonos"
+            "đầu tư",
+            "trái phiếu"
           ],
-          "title": "Dominando las Inversiones de Renta Fija: Bonos, CDs y Fondos del Mercado Monetario",
+          "title": "Thành thạo Đầu tư Cố định: Trái phiếu, CD và Quỹ Thị trường Tiền tệ",
           "slug": "mastering-fixed-income-investments-bonds-cds-and-money-market-funds",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T01:57:29+01:00",
-          "description": "Descubre la estabilidad y el potencial de ingresos de las inversiones de renta fija. Aprende sobre bonos, CDs y fondos del mercado monetario, y obtén valiosos conocimientos para tener éxito en este ámbito.",
+          "description": "Khám phá sự ổn định và tiềm năng thu nhập của các khoản đầu tư cố định. Tìm hiểu về trái phiếu, CD và quỹ thị trường tiền tệ, và thu được những hiểu biết quý báu để thành công trong lĩnh vực này.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689038686-ib4-img1.png"
           },
@@ -1199,23 +1199,23 @@
       ]
     },
     {
-      "name": "bonos",
+      "name": "trái phiếu",
       "slug": "bonds",
       "articles": [
         {
           "id": "173980855",
           "topics": [
-            "inversión",
-            "bonos"
+            "đầu tư",
+            "trái phiếu"
           ],
-          "title": "Dominando las Inversiones de Renta Fija: Bonos, CDs y Fondos del Mercado Monetario",
+          "title": "Thành thạo Đầu tư Cố định: Trái phiếu, CD và Quỹ Thị trường Tiền tệ",
           "slug": "mastering-fixed-income-investments-bonds-cds-and-money-market-funds",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T01:57:29+01:00",
-          "description": "Descubre la estabilidad y el potencial de ingresos de las inversiones de renta fija. Aprende sobre bonos, CDs y fondos del mercado monetario, y obtén valiosos conocimientos para tener éxito en este ámbito.",
+          "description": "Khám phá sự ổn định và tiềm năng thu nhập của các khoản đầu tư cố định. Tìm hiểu về trái phiếu, CD và quỹ thị trường tiền tệ, và thu được những hiểu biết quý báu để thành công trong lĩnh vực này.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689038686-ib4-img1.png"
           },
@@ -1236,23 +1236,23 @@
       ]
     },
     {
-      "name": "bienes raíces",
+      "name": "bất động sản",
       "slug": "realestate",
       "articles": [
         {
           "id": "174362868",
           "topics": [
-            "Primeros pasos",
-            "bienes raíces"
+            "Bắt đầu",
+            "bất động sản"
           ],
-          "title": "De casas a rascacielos: Dominando la inversión inmobiliaria en residencial, comercial y REITs",
+          "title": "Từ Nhà ở đến Cao ốc: Thành thạo Đầu tư Bất động sản ở Khu dân cư, Thương mại và REITs",
           "slug": "from-houses-to-high-rises-mastering-real-estate-investing-in-residential-commerci",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T01:56:35+01:00",
-          "description": "Sumérgete en el mundo de la inversión inmobiliaria y descubre cómo prosperar en propiedades residenciales, empresas comerciales y REITs. ¡Desata tu potencial para construir riqueza hoy!",
+          "description": "Lặn vào thế giới đầu tư bất động sản và khám phá cách phát triển trong các bất động sản dân cư, doanh nghiệp thương mại và REITs. Khai thác tiềm năng xây dựng của bạn ngay hôm nay!",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689108537-ib5-img1.png"
           },
@@ -1280,8 +1280,8 @@
       "title": "Investing | Bitcash Blog",
       "twitterCard": "summary_large_image"
     },
-    "description": "Donde se forjan los futuros.",
-    "title": "Invertir",
+    "description": "Nơi tương lai được tạo dựng.",
+    "title": "Đầu tư",
     "seoType": "investing",
     "id": "178642408",
     "_createdAt": "2023-07-24T18:39:38+01:00"

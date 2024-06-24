@@ -9,16 +9,16 @@
           "topics": [
             "DAO",
             "Tokenomics",
-            "Comentario"
+            "Komentar"
           ],
-          "title": "Un Marco para el Diseño de Gobernanza de Blockchain: La Rueda del Grupo Prysm [Comentario]",
+          "title": "Kerangka untuk Desain Tata Kelola Blockchain: Roda Grup Prysm [Komentar]",
           "slug": "a-framework-for-blockchain-governance-design-the-prysm-group-wheel-commentary",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T09:19:19+01:00",
-          "description": "Navega las complejidades de la gobernanza de blockchain con la Rueda del Grupo Prysm. Tu hoja de ruta para un diseño efectivo de la gobernanza de blockchain.",
+          "description": "Navigasi kompleksitas tata kelola blockchain dengan Roda Grup Prysm. Peta jalan Anda untuk desain tata kelola blockchain yang efektif.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690861154-cbc11-img1.webp"
           },
@@ -40,16 +40,16 @@
           "id": "180563903",
           "topics": [
             "DAO",
-            "Resumen"
+            "Ringkasan"
           ],
-          "title": "¿Para qué sirve Votar? [Resumen]",
+          "title": "Apa Itu Voting? [Ringkasan]",
           "slug": "what-is-voting-for-summary",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T09:10:58+01:00",
-          "description": "Descubre la esencia de votar dentro de los sistemas descentralizados. Obtén conocimientos sobre el verdadero propósito y poder de la votación en blockchain.",
+          "description": "Mengungkap inti dari voting dalam sistem terdesentralisasi. Dapatkan wawasan tentang tujuan sebenarnya dan kekuatan voting di blockchain.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690859305-cbc6-img1.png"
           },
@@ -71,16 +71,16 @@
           "id": "180563908",
           "topics": [
             "DAO",
-            "Resumen"
+            "Ringkasan"
           ],
-          "title": "¿Para qué sirve la Gobernanza? [Resumen]",
+          "title": "Untuk Apa Tata Kelola? [Ringkasan]",
           "slug": "what-is-governance-for-summary",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T09:10:45+01:00",
-          "description": "Explora el papel y la importancia de la gobernanza en los sistemas de blockchain. Comprende cómo la gobernanza impulsa la descentralización y el crecimiento.",
+          "description": "Jelajahi peran dan pentingnya tata kelola dalam sistem blockchain. Pahami bagaimana tata kelola mendorong desentralisasi dan pertumbuhan.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690859755-cbc7-img1.png"
           },
@@ -189,24 +189,24 @@
       ]
     },
     {
-      "name": "Tokenomics",
+      "name": "Tokenomi",
       "slug": "tokenomics",
       "articles": [
         {
           "id": "180563939",
           "topics": [
             "DAO",
-            "Tokenomía",
-            "Comentario"
+            "Tokenomika",
+            "Komentar"
           ],
-          "title": "Un Marco para el Diseño de Gobernanza de Blockchain: La Rueda del Grupo Prysm [Comentario]",
+          "title": "Kerangka untuk Desain Tata Kelola Blockchain: Roda Prysm Group [Komentar]",
           "slug": "a-framework-for-blockchain-governance-design-the-prysm-group-wheel-commentary",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T09:19:19+01:00",
-          "description": "Navega las complejidades de la gobernanza de blockchain con la Rueda del Grupo Prysm. Tu hoja de ruta para un diseño efectivo de la gobernanza de blockchain.",
+          "description": "Navigasi kompleksitas tata kelola blockchain dengan Roda Prysm Group. Peta jalan Anda untuk desain tata kelola blockchain yang efektif.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690861154-cbc11-img1.webp"
           },
@@ -227,17 +227,17 @@
         {
           "id": "180217169",
           "topics": [
-            "Tokenomia",
-            "Comentario"
+            "Tokenomi",
+            "Komentar"
           ],
-          "title": "Economia de Incentivos Tokenizados 3: El Valor del Token No Alineará a los Interesados [Comentario]",
+          "title": "Ekonomi Insentif Bertoken 3: Nilai Token Tidak Akan Menyatukan Pemangku Kepentingan [Komentar]",
           "slug": "economics-of-tokenized-incentives-3-token-value-won-t-align-stakeholders-commenta",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T09:17:23+01:00",
-          "description": "Descubre las trampas de usar el valor del token como metrica de rendimiento en plataformas blockchain. Aprende a diseñar sistemas de incentivos efectivos.",
+          "description": "Mengungkap jebakan menggunakan nilai token sebagai metrik kinerja di platform blockchain. Belajar merancang sistem insentif yang efektif.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690771457-cbc3-img1.png"
           },
@@ -258,17 +258,17 @@
         {
           "id": "180217123",
           "topics": [
-            "Tokenomics",
-            "Commentary"
+            "Tokenomi",
+            "Komentar"
           ],
-          "title": "Economics of Tokenized Incentives 2: Selecting Effective Performance Metrics [Commentary]",
+          "title": "Ekonomi Insentif Bertoken 2: Memilih Metrik Kinerja yang Efektif [Komentar]",
           "slug": "economics-of-tokenized-incentives-2-selecting-effective-performance-metrics-comme",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T09:17:05+01:00",
-          "description": "Discover the power of performance metrics in blockchain pay-for-performance systems. Learn to align incentives with platform goals effectively.",
+          "description": "Temukan kekuatan metrik kinerja dalam sistem pembayaran berbasis kinerja blockchain. Pelajari cara menyelaraskan insentif dengan tujuan platform secara efektif.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690770918-cbc2-img1.png"
           },
@@ -542,24 +542,24 @@
       ]
     },
     {
-      "name": "Comentario",
+      "name": "Komentar",
       "slug": "commentary",
       "articles": [
         {
           "id": "180563939",
           "topics": [
             "DAO",
-            "Tokenomia",
-            "Comentario"
+            "Tokenomi",
+            "Komentar"
           ],
-          "title": "Un Marco para el Diseño de Gobernanza de Blockchain: La Rueda del Grupo Prysm [Comentario]",
+          "title": "Kerangka untuk Desain Tata Kelola Blockchain: Roda Prysm Group [Komentar]",
           "slug": "a-framework-for-blockchain-governance-design-the-prysm-group-wheel-commentary",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T09:19:19+01:00",
-          "description": "Navega las complejidades de la gobernanza de blockchain con la Rueda del Grupo Prysm. Tu hoja de ruta para un diseño efectivo de la gobernanza de blockchain.",
+          "description": "Navigasi kompleksitas tata kelola blockchain dengan Roda Prysm Group. Peta jalan Anda untuk desain tata kelola blockchain yang efektif.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690861154-cbc11-img1.webp"
           },
@@ -580,17 +580,17 @@
         {
           "id": "180217169",
           "topics": [
-            "Tokenomia",
-            "Comentario"
+            "Tokenomi",
+            "Komentar"
           ],
-          "title": "Economia de Incentivos Tokenizados 3: El Valor del Token No Alineará a los Interesados [Comentario]",
+          "title": "Ekonomi Insentif Bertoken 3: Nilai Token Tidak Akan Menyatukan Pemangku Kepentingan [Komentar]",
           "slug": "economics-of-tokenized-incentives-3-token-value-won-t-align-stakeholders-commenta",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T09:17:23+01:00",
-          "description": "Descubre las trampas de usar el valor del token como metrica de rendimiento en plataformas blockchain. Aprende a diseñar sistemas de incentivos efectivos.",
+          "description": "Mengungkap jebakan menggunakan nilai token sebagai metrik kinerja di platform blockchain. Belajar merancang sistem insentif yang efektif.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690771457-cbc3-img1.png"
           },
@@ -611,17 +611,17 @@
         {
           "id": "180217123",
           "topics": [
-            "Tokenomía",
-            "Comentario"
+            "Tokenomi",
+            "Komentar"
           ],
-          "title": "Economía de Incentivos Tokenizados 2: Seleccionando Métricas de Rendimiento Efectivas [Comentario]",
+          "title": "Ekonomi Insentif Bertoken 2: Memilih Metrik Kinerja yang Efektif [Komentar]",
           "slug": "economics-of-tokenized-incentives-2-selecting-effective-performance-metrics-comme",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T09:17:05+01:00",
-          "description": "Descubre el poder de las métricas de rendimiento en sistemas de pago por rendimiento basados en blockchain. Aprende a alinear los incentivos con los objetivos de la plataforma de manera efectiva.",
+          "description": "Temukan kekuatan metrik kinerja dalam sistem pembayaran berbasis kinerja blockchain. Pelajari cara menyelaraskan insentif dengan tujuan platform secara efektif.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690770918-cbc2-img1.png"
           },
@@ -831,23 +831,23 @@
       ]
     },
     {
-      "name": "Contratos Inteligentes",
+      "name": "Kontrak Cerdas",
       "slug": "smart contracts",
       "articles": [
         {
           "id": "180556627",
           "topics": [
-            "Comentario",
-            "Contratos Inteligentes"
+            "Komentar",
+            "Kontrak Cerdas"
           ],
-          "title": "Contratos Incompletos y Blockchain [Comentario]",
+          "title": "Kontrak Tidak Lengkap dan Blockchain [Komentar]",
           "slug": "incomplete-contracts-and-blockchain-commentary",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T09:14:44+01:00",
-          "description": "Desmitificar la relación entre contratos incompletos y blockchain. Entender cómo blockchain puede llenar los huecos contractuales.",
+          "description": "Mengungkap hubungan antara kontrak tidak lengkap dan blockchain. Memahami bagaimana blockchain dapat mengisi celah kontrak.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690856249-cbc5-img1.png"
           },
@@ -868,17 +868,17 @@
         {
           "id": "165614005",
           "topics": [
-            "Comenzando",
-            "Contratos Inteligentes"
+            "Memulai",
+            "Kontrak Cerdas"
           ],
-          "title": "El Poder de los Contratos Inteligentes: La Clave para Desbloquear el Futuro de los Negocios y las Finanzas",
+          "title": "Kekuatan Kontrak Cerdas: Kunci untuk Membuka Masa Depan Bisnis dan Keuangan",
           "slug": "the-power-of-smart-contracts-the-key-to-unlocking-the-future-of-business-and-fina",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T06:47:57+01:00",
-          "description": "Explora el potencial revolucionario de los contratos inteligentes. Descubre cómo esta tecnología está redefiniendo los negocios y las finanzas en nuestra publicación de blog.",
+          "description": "Jelajahi potensi revolusioner dari kontrak cerdas. Temukan bagaimana teknologi ini membentuk kembali bisnis dan keuangan dalam postingan blog kami yang penuh wawasan.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686949167-cb10-img1edited.png"
           },
@@ -899,24 +899,24 @@
       ]
     },
     {
-      "name": "Recaudación de fondos",
+      "name": "Penggalangan Dana",
       "slug": "fundraising",
       "articles": [
         {
           "id": "180563918",
           "topics": [
-            "Tokenomia",
-            "Comentario",
-            "Recaudacion de fondos"
+            "Tokenomika",
+            "Komentar",
+            "Penggalangan Dana"
           ],
-          "title": "Tokens: Vehiculo de Inversion o Medio de Intercambio (No Ambos) [Comentario]",
+          "title": "Token: Kendaraan Investasi atau Alat Tukar (Bukan Keduanya) [Komentar]",
           "slug": "tokens-investment-vehicle-or-medium-of-exchange-not-both-commentary",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T09:13:31+01:00",
-          "description": "Profundiza en el doble papel de los tokens en la economia de blockchain. Descubre la delgada linea entre vehiculo de inversion y medio de intercambio.",
+          "description": "Menyelami peran ganda token dalam ekonomi blockchain. Mengungkap garis tipis antara kendaraan investasi dan alat tukar.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690859959-cbc8-img1.png"
           },
@@ -937,18 +937,18 @@
         {
           "id": "180563922",
           "topics": [
-            "Recaudación de fondos",
-            "Tokenomics",
-            "Comentario"
+            "Penggalangan Dana",
+            "Tokenomik",
+            "Komentar"
           ],
-          "title": "ICOs aprovechan los efectos de red [Comentario]",
+          "title": "ICO Memanfaatkan Efek Jaringan [Komentar]",
           "slug": "icos-leverage-network-effects-commentary",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T09:12:06+01:00",
-          "description": "Descubre cómo las ICOs aprovechan el poder de los efectos de red para impulsar su éxito. ¡ICOs y efectos de red, un dúo dinámico!",
+          "description": "Temukan bagaimana ICO memanfaatkan kekuatan efek jaringan untuk menggerakkan kesuksesan mereka. ICO dan efek jaringan, duo dinamis!",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690860184-cbc9-img1.png"
           },
@@ -969,18 +969,18 @@
         {
           "id": "180556595",
           "topics": [
-            "Recaudación de fondos",
-            "Tokenomics",
-            "Comentario"
+            "Penggalangan Dana",
+            "Tokenomik",
+            "Komentar"
           ],
-          "title": "El Efecto Blockchain: Efectos de Red sin Costos de Poder de Mercado [Comentario]",
+          "title": "Efek Blockchain: Efek Jaringan Tanpa Biaya Kekuatan Pasar [Komentar]",
           "slug": "the-blockchain-effect-network-effects-without-market-power-costs-commentary",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T09:11:14+01:00",
-          "description": "Explora cómo blockchain permite efectos de red sin las desventajas del poder de mercado. Descubre el revolucionario Efecto Blockchain.",
+          "description": "Jelajahi bagaimana blockchain memungkinkan efek jaringan tanpa kelemahan kekuatan pasar. Temukan Efek Blockchain yang mengubah permainan.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690855275-cbc4-img1.png"
           },
@@ -1095,24 +1095,24 @@
       ]
     },
     {
-      "name": "Industria",
+      "name": "Industri",
       "slug": "industry",
       "articles": [
         {
           "id": "179948652",
           "topics": [
-            "Tokenomía",
-            "Industria",
-            "Resumen"
+            "Tokenomik",
+            "Industri",
+            "Ringkasan"
           ],
-          "title": "Innovación Digital y Modelos de Ingresos [Resumen]",
+          "title": "Inovasi Digital dan Model Pendapatan [Ringkasan]",
           "slug": "digital-innovation-and-revenue-models-summary",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T09:11:35+01:00",
-          "description": "Descubre cómo la innovación digital redefine la entrega de productos en el grupo Prysm con 'Innovación Digital y Modelos de Ingresos'. Explora la economía de tecnologías emergentes.",
+          "description": "Ungkap bagaimana inovasi digital mengubah pengiriman produk dalam 'Inovasi Digital dan Model Pendapatan' dari Prysm Group. Jelajahi ekonomi teknologi yang muncul.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690668517-cbr1-img1.png"
           },
@@ -1133,17 +1133,17 @@
         {
           "id": "165634580",
           "topics": [
-            "Comenzando",
-            "Industria"
+            "Memulai",
+            "Industri"
           ],
-          "title": "El futuro es ahora: Una visión general del impacto de las criptomonedas en las finanzas globales",
+          "title": "Masa Depan adalah Sekarang: Tinjauan Pengaruh Cryptocurrency terhadap Keuangan Global",
           "slug": "the-future-is-now-an-overview-of-cryptocurrency-s-impact-on-global-finance",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T08:30:32+01:00",
-          "description": "Descubre el futuro de las finanzas con las criptomonedas. Explora el impacto transformador de las monedas digitales en el panorama financiero global en nuestra publicación de blog.",
+          "description": "Temukan masa depan keuangan dengan cryptocurrency. Jelajahi dampak transformatif mata uang digital pada lanskap keuangan global dalam posting blog kami yang penuh wawasan.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686965402-cb15-img1.png"
           },
@@ -1164,17 +1164,17 @@
         {
           "id": "165611389",
           "topics": [
-            "Comenzando",
-            "Industria"
+            "Memulai",
+            "Industri"
           ],
-          "title": "Desatando el Potencial: Cómo la Criptomoneda está Transformando Industrias",
+          "title": "Menggali Potensi: Bagaimana Cryptocurrency Mengubah Industri",
           "slug": "unleashing-the-potential-how-cryptocurrency-is-transforming-industries",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T06:40:09+01:00",
-          "description": "Descubre el poder transformador de la criptomoneda en la revolución de las industrias. Explora su potencial para remodelar el panorama empresarial en nuestra perspicaz entrada de blog.",
+          "description": "Temukan kekuatan transformatif dari cryptocurrency dalam merevolusi industri. Jelajahi potensinya untuk membentuk kembali lanskap bisnis dalam postingan blog kami yang penuh wawasan.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686946060-cb8-img0edited.png"
           },
@@ -1195,24 +1195,24 @@
       ]
     },
     {
-      "name": "Resumen",
+      "name": "Ringkasan",
       "slug": "summary",
       "articles": [
         {
           "id": "179948652",
           "topics": [
-            "Tokenomía",
-            "Industria",
-            "Resumen"
+            "Tokenomika",
+            "Industri",
+            "Ringkasan"
           ],
-          "title": "Innovación Digital y Modelos de Ingresos [Resumen]",
+          "title": "Inovasi Digital dan Model Pendapatan [Ringkasan]",
           "slug": "digital-innovation-and-revenue-models-summary",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T09:11:35+01:00",
-          "description": "Descubre cómo la innovación digital redefine la entrega de productos en el grupo Prysm con 'Innovación Digital y Modelos de Ingresos'. Explora la economía de las tecnologías emergentes.",
+          "description": "Ungkap bagaimana inovasi digital mengubah penyampaian produk dalam 'Inovasi Digital dan Model Pendapatan' dari Prysm Group. Jelajahi ekonomi teknologi yang muncul.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690668517-cbr1-img1.png"
           },
@@ -1234,16 +1234,16 @@
           "id": "180563903",
           "topics": [
             "DAO",
-            "Resumen"
+            "Ringkasan"
           ],
-          "title": "¿Para qué sirve Votar? [Resumen]",
+          "title": "Apa itu Voting? [Ringkasan]",
           "slug": "what-is-voting-for-summary",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T09:10:58+01:00",
-          "description": "Descubre la esencia de votar dentro de los sistemas descentralizados. Obtén conocimientos sobre el verdadero propósito y poder de la votación en blockchain.",
+          "description": "Mengungkap inti dari pemungutan suara dalam sistem terdesentralisasi. Dapatkan wawasan tentang tujuan sebenarnya dan kekuatan pemungutan suara dalam blockchain.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690859305-cbc6-img1.png"
           },
@@ -1265,16 +1265,16 @@
           "id": "180563908",
           "topics": [
             "DAO",
-            "Resumen"
+            "Ringkasan"
           ],
-          "title": "¿Para qué sirve la Gobernanza? [Resumen]",
+          "title": "Untuk Apa Tata Kelola? [Ringkasan]",
           "slug": "what-is-governance-for-summary",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T09:10:45+01:00",
-          "description": "Explora el papel y la importancia de la gobernanza en los sistemas de blockchain. Comprende cómo la gobernanza impulsa la descentralización y el crecimiento.",
+          "description": "Jelajahi peran dan pentingnya tata kelola dalam sistem blockchain. Pahami bagaimana tata kelola mendorong desentralisasi dan pertumbuhan.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690859755-cbc7-img1.png"
           },
@@ -1295,23 +1295,23 @@
       ]
     },
     {
-      "name": "Legal",
+      "name": "Hukum",
       "slug": "legal",
       "articles": [
         {
           "id": "166984334",
           "topics": [
             "DAO",
-            "Legal"
+            "Hukum"
           ],
-          "title": "Organizaciones Autónomas Descentralizadas (DAOs): Estructuras Legales Básicas para Negocios y Propósitos Sin Fines de Lucro",
+          "title": "Organisasi Otonom Terdesentralisasi (DAO): Struktur Hukum Dasar untuk Bisnis dan Tujuan Non-Profit",
           "slug": "decentralized-autonomous-organizations-daos-basic-legal-structures-for-business-a",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T08:59:06+01:00",
-          "description": "Descubre las estructuras legales básicas de DAO para negocios y propósitos sin fines de lucro.",
+          "description": "Temukan struktur hukum dasar DAO untuk bisnis dan tujuan non-profit.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687384353-db2-img1.png"
           },
@@ -1332,17 +1332,17 @@
         {
           "id": "165611088",
           "topics": [
-            "Primeros Pasos",
-            "Legal"
+            "Memulai",
+            "Hukum"
           ],
-          "title": "Navegando el Campo Minado Legal: Entendiendo el Paisaje Regulatorio de las Criptomonedas",
+          "title": "Menavigasi Ranjau Hukum: Memahami Lanskap Regulasi Cryptocurrency",
           "slug": "navigating-the-legal-minefield-understanding-the-regulatory-landscape-of-cryptocu",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T06:32:05+01:00",
-          "description": "Navega con facilidad por el complejo paisaje regulatorio de las criptomonedas. Obtén una comprensión clara de las consideraciones legales en nuestra guía completa.",
+          "description": "Navigasi lanskap regulasi cryptocurrency yang kompleks dengan mudah. Dapatkan pemahaman yang jelas tentang pertimbangan hukum dalam panduan komprehensif kami.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686944651-cb7-img1edited.png"
           },
@@ -1363,23 +1363,23 @@
       ]
     },
     {
-      "name": "Comenzando",
+      "name": "Memulai",
       "slug": "getting started",
       "articles": [
         {
           "id": "167101094",
           "topics": [
-            "Comenzando",
-            "Tokenomics"
+            "Memulai",
+            "Tokenomik"
           ],
-          "title": "Tokenomics 101: ¡Desatando el Poder de la Criptomoneda!",
+          "title": "Tokenomik 101: Melepaskan Kekuatan Cryptocurrency!",
           "slug": "tokenomics-101-unleashing-the-power-of-cryptocurrency",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T08:57:58+01:00",
-          "description": "Descubre el poder de la criptomoneda a través de Tokenomics 101 - una guía detallada para entender la economía detrás de los activos digitales.",
+          "description": "Temukan kekuatan cryptocurrency melalui Tokenomik 101 - panduan mendalam untuk memahami ekonomi di balik aset digital.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687391799-tb1-img1.png"
           },
@@ -1400,17 +1400,17 @@
         {
           "id": "166981063",
           "topics": [
-            "Comenzando",
+            "Memulai",
             "DAO"
           ],
-          "title": "El futuro esta aqui: El auge de las Organizaciones Autonomas Descentralizadas (DAOs)",
+          "title": "Masa Depan Sudah Tiba: Munculnya Organisasi Otonom Terdesentralisasi (DAO)",
           "slug": "the-future-is-here-the-rise-of-decentralized-autonomous-organizations-daos",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T08:57:02+01:00",
-          "description": "Explora el auge de las Organizaciones Autonomas Descentralizadas (DAOs) en nuestra guia. Comprende el futuro de los negocios y las oportunidades para las startups.",
+          "description": "Jelajahi munculnya Organisasi Otonom Terdesentralisasi (DAO) dalam panduan kami. Pahami masa depan bisnis dan peluang untuk startup.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687381524-db1-img1.png"
           },
@@ -1425,17 +1425,17 @@
         {
           "id": "165744328",
           "topics": [
-            "Getting Started",
-            "How-To"
+            "Memulai",
+            "Cara"
           ],
-          "title": "Stay Ahead of the Game: A Guide to Staying Informed and Educated in the World of Cryptocurrency",
+          "title": "Tetap Unggul dalam Permainan: Panduan untuk Tetap Terinformasi dan Terdidik di Dunia Cryptocurrency",
           "slug": "stay-ahead-of-the-game-a-guide-to-staying-informed-and-educated-in-the-world-of-c",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T08:52:39+01:00",
-          "description": "Stay informed and educated in the dynamic world of cryptocurrency. Explore our comprehensive guide to stay ahead of the game and navigate the ever-evolving digital landscape.",
+          "description": "Tetap terinformasi dan terdidik dalam dunia cryptocurrency yang dinamis. Jelajahi panduan komprehensif kami untuk tetap unggul dalam permainan dan menavigasi lanskap digital yang terus berkembang.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687049473-cb20-img1.png"
           },
@@ -2013,23 +2013,23 @@
       ]
     },
     {
-      "name": "Cómo",
+      "name": "Cara",
       "slug": "how-to",
       "articles": [
         {
           "id": "165744328",
           "topics": [
-            "Comenzando",
-            "Cómo hacer"
+            "Memulai",
+            "Cara"
           ],
-          "title": "Mantente a la Vanguardia: Una Guía para Mantenerse Informado y Educado en el Mundo de la Criptomoneda",
+          "title": "Tetap Unggul dalam Permainan: Panduan untuk Tetap Terinformasi dan Terdidik di Dunia Cryptocurrency",
           "slug": "stay-ahead-of-the-game-a-guide-to-staying-informed-and-educated-in-the-world-of-c",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T08:52:39+01:00",
-          "description": "Mantente informado y educado en el dinámico mundo de la criptomoneda. Explora nuestra guía completa para mantenerte a la vanguardia y navegar por el paisaje digital en constante evolución.",
+          "description": "Tetap terinformasi dan terdidik dalam dunia cryptocurrency yang dinamis. Jelajahi panduan komprehensif kami untuk tetap unggul dalam permainan dan menavigasi lanskap digital yang terus berkembang.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687049473-cb20-img1.png"
           },
@@ -2050,18 +2050,18 @@
         {
           "id": "165610881",
           "topics": [
-            "Primeros Pasos",
-            "Cómo Hacerlo",
-            "Investigación"
+            "Memulai",
+            "Cara",
+            "Penelitian"
           ],
-          "title": "Navegando el Mercado de Criptomonedas: Una Guía para Principiantes sobre Investigación y Evaluación de Activos Digitales",
+          "title": "Menavigasi Pasar Cryptocurrency: Panduan Pemula untuk Meneliti dan Mengevaluasi Aset Digital",
           "slug": "navigating-the-cryptocurrency-market-a-beginner-s-guide-to-researching-and-evalua",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T06:30:29+01:00",
-          "description": "Descubre los secretos del mercado de criptomonedas con nuestra guía para principiantes. Aprende cómo investigar y evaluar activos digitales para inversiones exitosas.",
+          "description": "Buka rahasia pasar cryptocurrency dengan panduan pemula kami. Pelajari cara meneliti dan mengevaluasi aset digital untuk investasi yang sukses.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686943620-cb6-img1edited.png"
           },
@@ -2082,17 +2082,17 @@
         {
           "id": "165399242",
           "topics": [
-            "Como hacer",
-            "Intercambio"
+            "Cara",
+            "Pertukaran"
           ],
-          "title": "La guia para principiantes sobre la compra y venta de criptomonedas: Un recorrido paso a paso",
+          "title": "Panduan Pemula untuk Membeli dan Menjual Cryptocurrency: Langkah demi Langkah",
           "slug": "the-beginner-s-guide-to-buying-and-selling-cryptocurrencies-a-step-by-step-walkth",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T06:28:00+01:00",
-          "description": "Navega el mundo del comercio de criptomonedas con facilidad. Sigue nuestra guia para principiantes con instrucciones paso a paso sobre como comprar y vender criptomonedas.",
+          "description": "Kelola dunia perdagangan cryptocurrency dengan mudah. Ikuti panduan pemula kami untuk instruksi langkah demi langkah dalam membeli dan menjual cryptocurrency.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686880885-cb5-img1edited.png"
           },
@@ -2113,23 +2113,23 @@
       ]
     },
     {
-      "name": "Pagos",
+      "name": "Pembayaran",
       "slug": "payments",
       "articles": [
         {
           "id": "165742753",
           "topics": [
-            "Comenzando",
-            "Pagos"
+            "Memulai",
+            "Pembayaran"
           ],
-          "title": "Stablecoins: El futuro de las transacciones y pagos con criptomonedas",
+          "title": "Stablecoins: Masa Depan Transaksi dan Pembayaran Cryptocurrency",
           "slug": "stablecoins-the-future-of-cryptocurrency-transactions-and-payments",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T08:49:51+01:00",
-          "description": "Descubre el futuro de las transacciones y pagos con criptomonedas mediante stablecoins. Explora la estabilidad y el potencial de estos innovadores activos digitales en nuestra publicación de blog.",
+          "description": "Temukan masa depan transaksi dan pembayaran cryptocurrency dengan stablecoins. Jelajahi stabilitas dan potensi dari aset digital inovatif ini dalam postingan blog kami yang penuh wawasan.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687049009-cb19-img3edited.png"
           },
@@ -2150,17 +2150,17 @@
         {
           "id": "165625675",
           "topics": [
-            "Comenzando",
-            "Pagos"
+            "Memulai",
+            "Pembayaran"
           ],
-          "title": "El futuro de las transferencias internacionales: cómo las criptomonedas están cambiando el juego",
+          "title": "Masa Depan Transfer Internasional: Bagaimana Cryptocurrency Mengubah Permainan",
           "slug": "the-future-of-international-transfers-how-cryptocurrency-is-changing-the-game",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T07:04:27+01:00",
-          "description": "Descubre el futuro de las transferencias internacionales con criptomonedas. Explora cómo esta tecnología innovadora está revolucionando las transacciones transfronterizas en nuestra entrada de blog.",
+          "description": "Buka masa depan transfer internasional dengan cryptocurrency. Jelajahi bagaimana teknologi inovatif ini merevolusi transaksi lintas batas dalam postingan blog kami yang penuh wawasan.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686953468-cb13-img1edited.png"
           },
@@ -2181,17 +2181,17 @@
         {
           "id": "165625350",
           "topics": [
-            "Comenzando",
-            "Pagos"
+            "Memulai",
+            "Pembayaran"
           ],
-          "title": "La guía definitiva para realizar compras en línea con criptomonedas: Comprender los detalles de usar moneda digital para transacciones cotidianas.",
+          "title": "Panduan Utama untuk Melakukan Pembelian Online dengan Cryptocurrency: Memahami seluk-beluk penggunaan mata uang digital untuk transaksi sehari-hari.",
           "slug": "the-ultimate-guide-to-making-online-purchases-with-cryptocurrency-understanding-t",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T07:02:44+01:00",
-          "description": "Descubre la guía definitiva para usar criptomonedas en compras en línea. Domina el arte de las transacciones digitales seguras y convenientes en nuestra publicación de blog completa.",
+          "description": "Temukan panduan utama untuk menggunakan cryptocurrency dalam pembelian online. Kuasai seni transaksi digital yang aman dan nyaman dalam postingan blog kami yang lengkap.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686952511-cb12-img1.png"
           },
@@ -2219,16 +2219,16 @@
           "id": "165685913",
           "topics": [
             "DeFi",
-            "Comenzando"
+            "Memulai"
           ],
-          "title": " descentraliza tu finanza: Una introduccion al mundo de DeFi",
+          "title": "Desentralisasi Keuangan Anda: Pengenalan ke Dunia DeFi",
           "slug": "decentralize-your-finance-an-introduction-to-the-world-of-defi",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T08:47:03+01:00",
-          "description": "Desbloquea el poder de las finanzas descentralizadas (DeFi). Explora el mundo innovador de las soluciones financieras basadas en blockchain en nuestra publicacion de blog completa.",
+          "description": "Buka kekuatan keuangan desentralisasi (DeFi). Jelajahi dunia inovatif solusi keuangan berbasis blockchain dalam postingan blog kami yang komprehensif.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687047143-cb18-img1.png"
           },
@@ -2249,23 +2249,23 @@
       ]
     },
     {
-      "name": "Inversión",
+      "name": "Investasi",
       "slug": "investment",
       "articles": [
         {
           "id": "165673014",
           "topics": [
-            "Comenzando",
-            "Inversión"
+            "Memulai",
+            "Investasi"
           ],
-          "title": "Inversión en Criptomonedas 101: Cómo Usar la Criptomoneda para Inversión y Gestión de Activos",
+          "title": "Investasi Kripto 101: Cara Menggunakan Cryptocurrency untuk Investasi dan Manajemen Aset",
           "slug": "crypto-investing-101-how-to-use-cryptocurrency-for-investment-and-asset-managemen",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T08:32:00+01:00",
-          "description": "Domina el arte de invertir en cripto y la gestión de activos. Aprende cómo aprovechar la criptomoneda para estrategias de inversión óptimas en nuestra guía completa.",
+          "description": "Kuasai seni investasi kripto dan manajemen aset. Pelajari cara memanfaatkan cryptocurrency untuk strategi investasi optimal dalam panduan komprehensif kami.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687044673-cb16-img5.png"
           },
@@ -2286,23 +2286,23 @@
       ]
     },
     {
-      "name": "Minería",
+      "name": "Penambangan",
       "slug": "mining",
       "articles": [
         {
           "id": "165634456",
           "topics": [
-            "Comenzando",
-            "Minería"
+            "Memulai",
+            "Penambangan"
           ],
-          "title": "Desatando el Poder de la Minería de Criptomonedas: Una Visión General de los Algoritmos de Prueba de Trabajo",
+          "title": "Menggali Kekuatan Penambangan Cryptocurrency: Ikhtisar Algoritma Proof-of-Work",
           "slug": "unleashing-the-power-of-cryptocurrency-mining-an-overview-of-proof-of-work-algori",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T08:28:45+01:00",
-          "description": "Explora el poder de la minería de criptomonedas y los algoritmos de prueba de trabajo. Descubre cómo este proceso impulsa la naturaleza segura y descentralizada de las monedas digitales en nuestra publicación de blog informativa.",
+          "description": "Jelajahi kekuatan penambangan cryptocurrency dan algoritma proof-of-work. Temukan bagaimana proses ini mendorong sifat aman dan terdesentralisasi dari mata uang digital dalam posting blog informatif kami.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686959517-cb11-img0edited.png"
           },
@@ -2323,23 +2323,23 @@
       ]
     },
     {
-      "name": "Seguridad",
+      "name": "Keamanan",
       "slug": " security",
       "articles": [
         {
           "id": "165611516",
           "topics": [
-            "Comenzando",
-            "Seguridad"
+            "Memulai",
+            "Keamanan"
           ],
-          "title": "Desvelando los Secretos del Almacenamiento Criptográfico: Cómo Mantener Tus Activos Digitales Seguros y Protegidos",
+          "title": "Membuka Rahasia Penyimpanan Kripto: Bagaimana Menjaga Aset Digital Anda Aman dan Terlindungi",
           "slug": "unlocking-the-secrets-of-crypto-storage-how-to-keep-your-digital-assets-safe-and",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T06:40:53+01:00",
-          "description": "Protege tus activos digitales con confianza. Explora estrategias efectivas para el almacenamiento seguro de criptomonedas en nuestra guía completa.",
+          "description": "Lindungi aset digital Anda dengan percaya diri. Jelajahi strategi efektif untuk penyimpanan kripto yang aman dalam panduan komprehensif kami.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686948319-cb9-img1edited.png"
           },
@@ -2360,17 +2360,17 @@
         {
           "id": "165367458",
           "topics": [
-            "Comenzando",
-            "Seguridad"
+            "Memulai",
+            "Keamanan"
           ],
-          "title": "Cripto Seguridad 101: Cómo Almacenar y Asegurar Tus Criptomonedas de Forma Segura",
+          "title": "Keamanan Kripto 101: Cara Menyimpan dan Mengamankan Kripto Anda dengan Aman",
           "slug": "crypto-security-101-how-to-safely-store-and-secure-your-cryptocurrencies",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T06:23:03+01:00",
-          "description": "Domina el arte de la seguridad criptográfica con nuestra guía completa. Aprende estrategias esenciales para almacenar y asegurar tus valiosas criptomonedas de manera segura.",
+          "description": "Kuasai seni keamanan kripto dengan panduan komprehensif kami. Pelajari strategi penting untuk menyimpan dan mengamankan kripto berharga Anda dengan aman.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686862662-cb3-img1edited.png"
           },
@@ -2391,24 +2391,24 @@
       ]
     },
     {
-      "name": "Investigación",
+      "name": "Penelitian",
       "slug": "research",
       "articles": [
         {
           "id": "165610881",
           "topics": [
-            "Primeros pasos",
-            "Cómo hacer",
-            "Investigación"
+            "Memulai",
+            "Cara Melakukan",
+            "Penelitian"
           ],
-          "title": "Navegando el mercado de criptomonedas: Una guía para principiantes sobre cómo investigar y evaluar activos digitales",
+          "title": "Menavigasi Pasar Cryptocurrency: Panduan Pemula untuk Meneliti dan Mengevaluasi Aset Digital",
           "slug": "navigating-the-cryptocurrency-market-a-beginner-s-guide-to-researching-and-evalua",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T06:30:29+01:00",
-          "description": "Descubre los secretos del mercado de criptomonedas con nuestra guía para principiantes. Aprende cómo investigar y evaluar activos digitales para inversiones exitosas.",
+          "description": "Buka rahasia pasar cryptocurrency dengan panduan pemula kami. Pelajari cara meneliti dan mengevaluasi aset digital untuk investasi yang sukses.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686943620-cb6-img1edited.png"
           },
@@ -2429,23 +2429,23 @@
       ]
     },
     {
-      "name": "Intercambio",
+      "name": "Pertukaran",
       "slug": " exchange",
       "articles": [
         {
           "id": "165399242",
           "topics": [
-            "Cómo hacer",
-            "Intercambio"
+            "Cara-Melakukan",
+            "Pertukaran"
           ],
-          "title": "La guía del principiante para comprar y vender criptomonedas: Un recorrido paso a paso",
+          "title": "Panduan Pemula untuk Membeli dan Menjual Cryptocurrency: Langkah demi Langkah",
           "slug": "the-beginner-s-guide-to-buying-and-selling-cryptocurrencies-a-step-by-step-walkth",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T06:28:00+01:00",
-          "description": "Navega el mundo del comercio de criptomonedas con facilidad. Sigue nuestra guía para principiantes con instrucciones paso a paso sobre cómo comprar y vender criptomonedas.",
+          "description": "Kelola dunia perdagangan cryptocurrency dengan mudah. Ikuti panduan pemula kami untuk instruksi langkah demi langkah dalam membeli dan menjual cryptocurrency.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686880885-cb5-img1edited.png"
           },
@@ -2466,23 +2466,23 @@
       ]
     },
     {
-      "name": "Historia",
+      "name": "Sejarah",
       "slug": "history",
       "articles": [
         {
           "id": "165365581",
           "topics": [
-            "Primeros pasos",
-            "Historia"
+            "Memulai",
+            "Sejarah"
           ],
-          "title": "La evolución de la criptomoneda: desde Bitcoin hasta DeFi y más allá",
+          "title": "Evolusi Cryptocurrency: Dari Bitcoin ke DeFi dan Selanjutnya",
           "slug": "the-evolution-of-cryptocurrency-from-bitcoin-to-defi-and-beyond",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T06:10:06+01:00",
-          "description": "Embárcate en un viaje a través de la evolución de la criptomoneda, desde la creación de Bitcoin hasta el surgimiento de DeFi y más allá. Explora las emocionantes posibilidades de este paisaje digital en constante evolución.",
+          "description": "Ikuti perjalanan melalui evolusi cryptocurrency, dari awal mula Bitcoin hingga munculnya DeFi dan seterusnya. Jelajahi kemungkinan-kemungkinan menarik dari lanskap digital yang terus berkembang ini.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686861503-cb2-img1.png"
           },
@@ -2510,8 +2510,8 @@
       "title": "Crypto | Bitcash Blog",
       "twitterCard": "summary_large_image"
     },
-    "description": "Desbloqueando el poder de la moneda digital",
-    "title": "Cripto",
+    "description": "Membuka Kekuatan Mata Uang Digital",
+    "title": "Kripto",
     "seoType": "crypto",
     "id": "178642410",
     "_createdAt": "2023-07-24T18:41:13+01:00"

@@ -16,7 +16,7 @@
             "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
           },
           "_publishedAt": "2024-06-22T16:00:40+01:00",
-          "description": "O blog apresenta o Masterbots, uma plataforma que esta revolucionando a interacao com a IA por meio de chatbots especificos de dominio e amigaveis ao usuario, e um recurso de compartilhamento social unico, convidando colaboradores a se juntarem ao seu desenvolvimento aberto e impulsionado pela comunidade.",
+          "description": "O blog apresenta o Masterbots, uma plataforma que esta revolucionando a interacao com a IA por meio de chatbots especificos de dominio e amigaveis ao usuario, com um recurso de compartilhamento social unico, convidando colaboradores a se juntarem ao seu desenvolvimento aberto e impulsionado pela comunidade.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1712270604-screenshot-2024-04-04-at-3-43-11-pm.png"
           },
@@ -41,14 +41,14 @@
             "LLM",
             "Treinamento"
           ],
-          "title": "Podcast Espaço Latente 16/08/23 [Resumo] - A Matemática do Treinamento de LLMs — com Quentin Anthony da Eleuther AI",
+          "title": "Podcast Espaco Latente 16/08/23 [Resumo] - A Matematica do Treinamento de LLMs com Quentin Anthony da Eleuther AI",
           "slug": "latent-space-podcast-8-16-23-summary-the-mathematics-of-training-llms-with-que",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T09:19:45+01:00",
-          "description": "Explore a matemática por trás do treinamento de LLMs com Quentin Anthony da Eleuther AI. Mergulhe no artigo Transformers Math 101 e domine técnicas de treinamento distribuído para desempenho máximo de GPU.",
+          "description": "Explore a matematica por tras do treinamento de LLMs com Quentin Anthony da Eleuther AI. Mergulhe no artigo Transformers Math 101 e domine as tecnicas de treinamento distribuido para desempenho maximo de GPU.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692324088-screenshot-2023-08-17-at-9-59-17-pm.png"
           },
@@ -181,7 +181,7 @@
             "Jurídico",
             "Prompting"
           ],
-          "title": "Adaptando Modelos de Linguagem de Grande Escala através da Compreensão de Leitura",
+          "title": "Adaptando Modelos de Linguagem de Grande Escala via Compreensão de Leitura",
           "slug": "adapting-large-language-models-via-reading-comprehension",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
@@ -272,16 +272,16 @@
           "id": "198277138",
           "topics": [
             "LLM",
-            "Fine-tuning"
+            "Ajuste fino"
           ],
-          "title": "Sorted LLaMA: Unlocking the Potential of Intermediate Layers of Large Language Models for Dynamic Inference Using Sorted Fine-Tuning (SoFT)",
+          "title": "LLaMA Ordenada: Desbloqueando o Potencial das Camadas Intermediarias de Modelos de Linguagem de Grande Escala para Inferencia Dinamica Usando Ajuste Fino Ordenado (SoFT)",
           "slug": "sorted-llama-unlocking-the-potential-of-intermediate-layers-of-large-language-mod",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-27T03:33:31+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "Comentario e Avaliacao do Resumo",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -303,17 +303,17 @@
           "id": "198277150",
           "topics": [
             "LLM",
-            "Ajuste de Instruções",
+            "Ajuste de Instrucoes",
             "Multimodal"
           ],
-          "title": "Um Estudo Empírico sobre o Dimensionamento de Modelos Multimodais Grandes com Ajuste de Instruções",
+          "title": "Um Estudo Empirico sobre o Dimensionamento de Modelos Multimodais Grandes com Ajuste de Instrucoes",
           "slug": "an-empirical-study-of-scaling-instruct-tuned-large-multimodal-models",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-27T03:33:15+01:00",
-          "description": "Comentário e Avaliação do Resumo",
+          "description": "Comentario e Avaliacao do Resumo",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -345,16 +345,16 @@
         {
           "id": "CD89KaoLSh6nQbiMhxX0EQ",
           "topics": [
-            "plataforma de lançamento"
+            "plataforma de lancamento"
           ],
-          "title": "Garantindo Confiança e Integridade: Conformidade Regulatória e Medidas de Segurança",
+          "title": "Garantindo Confianca e Integridade: Conformidade Regulamentar e Medidas de Seguranca",
           "slug": "ensuring-trust-and-integrity-regulatory-compliance-and-security-measures",
           "authorName": "Jun Dam",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
           },
           "_publishedAt": "2024-06-20T16:21:42+01:00",
-          "description": "Esta seção descreve a abordagem proativa de nossa plataforma em aderir aos padrões regulatórios globais e implementar medidas de segurança avançadas, garantindo um ambiente seguro e conforme para os usuários nos espaços de cripto e IA.",
+          "description": "Esta secao descreve a abordagem proativa da nossa plataforma em aderir aos padroes regulamentares globais e implementar medidas de seguranca avancadas, garantindo um ambiente seguro e conforme para usuarios nos espacos de cripto e IA.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1710562461-bitlauncherregsecimg.webp"
           },
@@ -384,7 +384,7 @@
             "url": "https://www.datocms-assets.com/101962/1715639160-andler-file-photo.jpg"
           },
           "_publishedAt": "2024-06-20T16:20:40+01:00",
-          "description": "Estamos cobrindo uma variedade de tópicos, incluindo o registro para uma conta Bitcash, configurando um nome de conta e referenciador, identificando e protegendo dispositivos, fornecendo identificação e informações pessoais para KYC, tirando fotos para verificação de KYC, e aguardando aprovação e ingresso na comunidade.",
+          "description": "Estamos cobrindo uma variedade de tópicos, incluindo o registro para uma conta Bitcash, configurando um nome de conta e referenciador, identificando e protegendo dispositivos, fornecendo identificação e informações pessoais para KYC, tirando fotos para verificação de KYC, e aguardando aprovação e ingressando na comunidade.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1715638953-bitcash-logo-frame-w-bg.png"
           },
@@ -407,7 +407,7 @@
           "topics": [
             "plataforma de lançamento"
           ],
-          "title": "Roteiro Estratégico: Inovação pioneira em Blockchain e Sucesso de Startups de IA",
+          "title": "Roteiro Estratégico: Inovação Pioneira em Blockchain e Sucesso de Startups de IA",
           "slug": "strategic-roadmap-pioneering-blockchain-innovation-and-ai-startup-success",
           "authorName": "Jun Dam",
           "authorPicture": {
@@ -533,7 +533,7 @@
           "id": "166788631",
           "topics": [
             "Introdução",
-            "Negócios e Administração"
+            "Negócios & Administração"
           ],
           "title": "Orçamento Inteligente para Startups: Um Guia Passo a Passo para Construir uma Base Financeira Sólida",
           "slug": "smart-budgeting-for-startups-a-step-by-step-guide-to-building-a-strong-financial",
@@ -564,7 +564,7 @@
           "id": "165816954",
           "topics": [
             "Introdução",
-            "Equipes e RH"
+            "Equipes & RH"
           ],
           "title": "Construindo uma Equipe dos Sonhos: O Guia Definitivo para Montar seu Esquadrão de Startup",
           "slug": "building-a-dream-team-the-ultimate-guide-to-assembling-your-startup-squad",
@@ -631,17 +631,17 @@
         {
           "id": "180217169",
           "topics": [
-            "Tokenômica",
-            "Comentário"
+            "Tokenomia",
+            "Comentario"
           ],
-          "title": "Economia dos Incentivos Tokenizados 3: Valor do Token Não Alinhará os Stakeholders [Comentário]",
+          "title": "Economia dos Incentivos Tokenizados 3: Valor do Token Nao Alinhara os Stakeholders [Comentario]",
           "slug": "economics-of-tokenized-incentives-3-token-value-won-t-align-stakeholders-commenta",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T09:17:23+01:00",
-          "description": "Descubra as armadilhas de usar o valor do token como métrica de desempenho em plataformas blockchain. Aprenda a projetar sistemas de incentivos eficazes.",
+          "description": "Descubra as armadilhas de usar o valor do token como metrica de desempenho em plataformas blockchain. Aprenda a projetar sistemas de incentivos eficazes.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690771457-cbc3-img1.png"
           },
@@ -662,17 +662,17 @@
         {
           "id": "180217123",
           "topics": [
-            "Tokenomics",
-            "Comentário"
+            "Tokenomia",
+            "Comentario"
           ],
-          "title": "Economia de Incentivos Tokenizados 2: Selecionando Métricas de Desempenho Efetivas [Comentário]",
+          "title": "Economia dos Incentivos Tokenizados 2: Selecionando Metricas de Desempenho Eficazes [Comentario]",
           "slug": "economics-of-tokenized-incentives-2-selecting-effective-performance-metrics-comme",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T09:17:05+01:00",
-          "description": "Descubra o poder das métricas de desempenho em sistemas de pagamento por desempenho em blockchain. Aprenda a alinhar incentivos com os objetivos da plataforma efetivamente.",
+          "description": "Descubra o poder das metricas de desempenho em sistemas de pagamento por desempenho baseados em blockchain. Aprenda a alinhar incentivos com os objetivos da plataforma de forma eficaz.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690770918-cbc2-img1.png"
           },
@@ -696,7 +696,7 @@
             "Tokenômica",
             "Comentário"
           ],
-          "title": "Economia de Incentivos Tokenizados 1: Introdução ao Pagamento por Desempenho [Comentário]",
+          "title": "Economia dos Incentivos Tokenizados 1: Introdução ao Pagamento por Desempenho [Comentário]",
           "slug": "economics-of-tokenized-incentives-1-intro-to-pay-for-performance",
           "authorName": "Crypto Clairity",
           "authorPicture": {
@@ -761,18 +761,18 @@
         {
           "id": "165362142",
           "topics": [
-            "Introdução",
-            "Prova de Trabalho",
-            "Mineração"
+            "Introducao",
+            "Prova-de-Trabalho",
+            "Mineracao"
           ],
-          "title": "Desvendando o Poder da Mineração de Bitcoin: Uma Introdução aos Algoritmos de Prova de Trabalho",
+          "title": "Desvendando o Poder da Mineracao de Bitcoin: Uma Introducao aos Algoritmos de Prova-de-Trabalho",
           "slug": "unlocking-the-power-of-bitcoin-mining-an-introduction-to-proof-of-work-algorithms",
           "authorName": "Maxi Millie",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
           },
           "_publishedAt": "2023-10-05T05:55:09+01:00",
-          "description": "Mergulhe no mundo da mineração de Bitcoin e no fascinante conceito de algoritmos de prova de trabalho. Explore o potencial e as recompensas desta tecnologia transformadora.",
+          "description": "Mergulhe no mundo da mineracao de Bitcoin e o fascinante conceito de algoritmos de prova-de-trabalho. Explore o potencial e as recompensas desta tecnologia transformadora.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686858321-bb9-img0edited.png"
           },
@@ -892,7 +892,7 @@
         {
           "id": "174592759",
           "topics": [
-            "Introducao",
+            "Introdução",
             "Alternativas"
           ],
           "title": "Liberando o Potencial: Dominando Investimentos Alternativos para o Sucesso do Investidor",
@@ -902,7 +902,7 @@
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:11:13+01:00",
-          "description": "Expanda sua habilidade de investimento com investimentos alternativos! Mergulhe no mundo do private equity, fundos de hedge e commodities para impulsionar seu portfolio. Este blog oferece orientacao especializada para investidores que buscam sucesso em estrategias de investimento alternativo.",
+          "description": "Expanda sua habilidade de investimento com investimentos alternativos! Mergulhe no mundo do capital privado, fundos de hedge e commodities para impulsionar seu portfólio. Este blog oferece orientação especializada para investidores que buscam sucesso em estratégias de investimento alternativo.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689120056-ib6-img1.png"
           },
@@ -923,8 +923,8 @@
         {
           "id": "175015363",
           "topics": [
-            "Introducao",
-            "Fundos Mutuos e ETFs"
+            "Introdução",
+            "Fundos Mútuos e ETFs"
           ],
           "title": "Revelando os Prós e Contras dos Fundos Negociados em Bolsa (ETFs): Um Guia Completo para Investidores",
           "slug": "unveiling-the-pros-and-cons-of-exchange-traded-funds-etfs-a-comprehensive-guide-f",
@@ -955,7 +955,7 @@
           "id": "176002890",
           "topics": [
             "Introdução",
-            "Gestão de Riscos"
+            "Gestão de Risco"
           ],
           "title": "Proteja Seus Investimentos: Um Guia Completo para Reconhecer e Evitar Fraudes em Investimentos",
           "slug": "shield-your-investments-a-comprehensive-guide-to-recognizing-and-avoiding-investm",

@@ -11,6 +11,7 @@ export function BlogSections({
   category,
   className
 }: BlogSectionsProps) {
+  console.log('sections', lang)
   return (
     <div
       className={cn(
@@ -31,12 +32,14 @@ export function BlogSections({
                   / {section.name}
                 </span>
                 <Link
-                  href={`/${lang}/blog/${category || section.slug}`}
+                  // TODO: fix add lang prefix on links
+                  //       there seems to a bug where it gets ovewritten
+                  href={`/blog/${category || section.slug}`}
                   className={cn(
                     'flex items-center align-middle text-black focus-within:!text-primary-200 hover:!text-primary-200 dark:text-white'
                   )}
                 >
-                  {section.name} articles
+                  {section.name}
                   <LucideIcons.chevronRight className="h-4 w-7" />
                 </Link>
               </div>

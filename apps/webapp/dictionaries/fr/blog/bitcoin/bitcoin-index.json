@@ -1,23 +1,23 @@
 {
   "sections": [
     {
-      "name": "Comenzando",
+      "name": "Commencer",
       "slug": "getting started",
       "articles": [
         {
           "id": "165365457",
           "topics": [
-            "Primeros pasos",
-            "Pagos"
+            "Commencer",
+            "Paiements"
           ],
-          "title": "Simplificando las Compras en Línea con Bitcoin: Una Guía para Usar Bitcoin en Transacciones",
+          "title": "Rationalisation des achats en ligne avec Bitcoin : Un guide pour utiliser Bitcoin dans les transactions",
           "slug": "streamlining-online-purchases-with-bitcoin-a-guide-to-using-bitcoin-for-transacti",
           "authorName": "Maxi Millie",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
           },
           "_publishedAt": "2023-10-05T06:03:51+01:00",
-          "description": "Descubre la conveniencia de las compras en línea con Bitcoin. Aprende cómo usar Bitcoin de manera fácil para transacciones seguras y sin interrupciones en nuestra guía completa.",
+          "description": "Découvrez la commodité des achats en ligne avec Bitcoin. Apprenez à utiliser Bitcoin facilement pour des transactions sécurisées et fluides dans notre guide complet.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686858962-bb10-img1.png"
           },
@@ -38,18 +38,18 @@
         {
           "id": "165362142",
           "topics": [
-            "Comenzando",
-            "Prueba de trabajo",
-            "Minería"
+            "Commencer",
+            "Preuve de travail",
+            "Minage"
           ],
-          "title": "Desbloqueando el poder de la minería de Bitcoin: Una introducción a los algoritmos de prueba de trabajo",
+          "title": "Decouvrir le pouvoir du minage de Bitcoin: Une introduction aux algorithmes de preuve de travail",
           "slug": "unlocking-the-power-of-bitcoin-mining-an-introduction-to-proof-of-work-algorithms",
           "authorName": "Maxi Millie",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
           },
           "_publishedAt": "2023-10-05T05:55:09+01:00",
-          "description": "Sumérgete en el mundo de la minería de Bitcoin y el fascinante concepto de los algoritmos de prueba de trabajo. Explora el potencial y las recompensas de esta tecnología transformadora.",
+          "description": "Plongez dans le monde du minage de Bitcoin et le concept fascinant des algorithmes de preuve de travail. Explorez le potentiel et les recompenses de cette technologie transformatrice.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686858321-bb9-img0edited.png"
           },
@@ -70,17 +70,17 @@
         {
           "id": "165340146",
           "topics": [
-            "Getting Started",
-            "Proof-of-Work"
+            "Commencer",
+            "Preuve de Travail"
           ],
-          "title": "The Economic Security of Bitcoin: How Proof-of-Work Enables a Safe and Secure Network",
+          "title": "La sécurité économique de Bitcoin: Comment la Preuve de Travail permet un réseau sûr et sécurisé",
           "slug": "the-economic-security-of-bitcoin-how-proof-of-work-enables-a-safe-and-secure-netw",
           "authorName": "Maxi Millie",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
           },
           "_publishedAt": "2023-10-05T05:53:43+01:00",
-          "description": "Discover the economic security of Bitcoin and the power of proof-of-work. Explore how this innovative technology ensures a safe and secure network for the future.",
+          "description": "Découvrez la sécurité économique de Bitcoin et la puissance de la preuve de travail. Explorez comment cette technologie innovante assure un réseau sûr et sécurisé pour l'avenir.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686856982-bb8-img1.png"
           },
@@ -316,23 +316,23 @@
       ]
     },
     {
-      "name": "Pagos",
+      "name": "Paiements",
       "slug": " payments",
       "articles": [
         {
           "id": "165365457",
           "topics": [
-            "Primeros Pasos",
-            "Pagos"
+            "Commencer",
+            "Paiements"
           ],
-          "title": "Simplificando las Compras en Línea con Bitcoin: Una Guía para Usar Bitcoin en Transacciones",
+          "title": "Simplification des achats en ligne avec Bitcoin: Un guide pour utiliser Bitcoin pour les transactions",
           "slug": "streamlining-online-purchases-with-bitcoin-a-guide-to-using-bitcoin-for-transacti",
           "authorName": "Maxi Millie",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
           },
           "_publishedAt": "2023-10-05T06:03:51+01:00",
-          "description": "Descubre la comodidad de las compras en línea con Bitcoin. Aprende cómo usar Bitcoin de manera fácil para transacciones seguras y sin interrupciones en nuestra guía completa.",
+          "description": "Découvrez la commodité des achats en ligne avec Bitcoin. Apprenez à utiliser facilement Bitcoin pour des transactions sécurisées et fluides dans notre guide complet.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686858962-bb10-img1.png"
           },
@@ -353,24 +353,24 @@
       ]
     },
     {
-      "name": "Prueba de trabajo",
+      "name": "Preuve de travail",
       "slug": "proof-of-work",
       "articles": [
         {
           "id": "165362142",
           "topics": [
-            "Comenzando",
-            "Prueba de trabajo",
-            "Minería"
+            "Commencer",
+            "Preuve de travail",
+            "Minage"
           ],
-          "title": "Desbloqueando el poder de la minería de Bitcoin: Una introducción a los algoritmos de prueba de trabajo",
+          "title": "Débloquer le pouvoir du minage de Bitcoin: Une introduction aux algorithmes de preuve de travail",
           "slug": "unlocking-the-power-of-bitcoin-mining-an-introduction-to-proof-of-work-algorithms",
           "authorName": "Maxi Millie",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
           },
           "_publishedAt": "2023-10-05T05:55:09+01:00",
-          "description": "Sumérgete en el mundo de la minería de Bitcoin y el fascinante concepto de los algoritmos de prueba de trabajo. Explora el potencial y las recompensas de esta tecnología transformadora.",
+          "description": "Plongez dans le monde du minage de Bitcoin et le concept fascinant des algorithmes de preuve de travail. Explorez le potentiel et les récompenses de cette technologie transformatrice.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686858321-bb9-img0edited.png"
           },
@@ -391,17 +391,17 @@
         {
           "id": "165340146",
           "topics": [
-            "Comenzando",
-            "Prueba de trabajo"
+            "Commencer",
+            "Preuve de Travail"
           ],
-          "title": "La seguridad económica de Bitcoin: Cómo la Prueba de Trabajo permite una red segura y protegida",
+          "title": "La sécurité économique de Bitcoin: Comment la Preuve de Travail permet un réseau sûr et sécurisé",
           "slug": "the-economic-security-of-bitcoin-how-proof-of-work-enables-a-safe-and-secure-netw",
           "authorName": "Maxi Millie",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
           },
           "_publishedAt": "2023-10-05T05:53:43+01:00",
-          "description": "Descubre la seguridad económica de Bitcoin y el poder de la prueba de trabajo. Explora cómo esta tecnología innovadora asegura una red segura y protegida para el futuro.",
+          "description": "Découvrez la sécurité économique de Bitcoin et la puissance de la preuve de travail. Explorez comment cette technologie innovante assure un réseau sûr et sécurisé pour l'avenir.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686856982-bb8-img1.png"
           },
@@ -422,24 +422,24 @@
       ]
     },
     {
-      "name": "Minería",
+      "name": "Minage",
       "slug": "mining",
       "articles": [
         {
           "id": "165362142",
           "topics": [
-            "Comenzando",
-            "Prueba de trabajo",
-            "Minería"
+            "Commencer",
+            "Preuve de travail",
+            "Minage"
           ],
-          "title": "Desbloqueando el poder de la minería de Bitcoin: Una introducción a los algoritmos de prueba de trabajo",
+          "title": "Decouvrir le pouvoir du minage de Bitcoin: Une introduction aux algorithmes de preuve de travail",
           "slug": "unlocking-the-power-of-bitcoin-mining-an-introduction-to-proof-of-work-algorithms",
           "authorName": "Maxi Millie",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
           },
           "_publishedAt": "2023-10-05T05:55:09+01:00",
-          "description": "Adéntrate en el mundo de la minería de Bitcoin y el fascinante concepto de los algoritmos de prueba de trabajo. Explora el potencial y las recompensas de esta tecnología transformadora.",
+          "description": "Plongez dans le monde du minage de Bitcoin et le concept fascinant des algorithmes de preuve de travail. Explorez le potentiel et les recompenses de cette technologie transformatrice.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686858321-bb9-img0edited.png"
           },
@@ -460,23 +460,23 @@
       ]
     },
     {
-      "name": "Legal",
+      "name": "Juridique",
       "slug": "legal",
       "articles": [
         {
           "id": "165340050",
           "topics": [
-            "Primeros pasos",
-            "Legal"
+            "Commencer",
+            "Juridique"
           ],
-          "title": "Navegando el paisaje legal y regulatorio de Bitcoin: Entendiendo las reglas y oportunidades",
+          "title": "Naviguer dans le paysage juridique et réglementaire du Bitcoin : Comprendre les règles et les opportunités",
           "slug": "navigating-the-legal-and-regulatory-landscape-of-bitcoin-understanding-the-rules",
           "authorName": "Maxi Millie",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
           },
           "_publishedAt": "2023-10-05T05:52:05+01:00",
-          "description": "Manténgase informado y cumpla con nuestra guía completa sobre el paisaje legal y regulatorio de Bitcoin. Navegue las complejidades de la criptomoneda con confianza.",
+          "description": "Restez informé et conforme avec notre guide complet sur le paysage juridique et réglementaire du Bitcoin. Naviguez les complexités de la cryptomonnaie avec confiance.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686855768-bb7-img1edited.png"
           },
@@ -497,23 +497,23 @@
       ]
     },
     {
-      "name": "Seguridad",
+      "name": "Securite",
       "slug": "security",
       "articles": [
         {
           "id": "165337859",
           "topics": [
-            "Primeros Pasos",
-            "Seguridad"
+            "Commencer",
+            "Sécurité"
           ],
-          "title": "El Futuro del Almacenamiento de Bitcoin: Una Introducción a las Carteras de Bitcoin y Soluciones Innovadoras de Almacenamiento",
+          "title": "L'avenir du stockage de Bitcoin: Une introduction aux portefeuilles Bitcoin et aux solutions de stockage innovantes",
           "slug": "the-future-of-bitcoin-storage-an-introduction-to-bitcoin-wallets-and-innovative-s",
           "authorName": "Maxi Millie",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
           },
           "_publishedAt": "2023-10-05T05:50:52+01:00",
-          "description": "Explora el mundo de las carteras de Bitcoin y soluciones innovadoras de almacenamiento. Aprende cómo asegurar y gestionar tus activos digitales con nuestra guía introductoria completa.",
+          "description": "Explorez le monde des portefeuilles Bitcoin et des solutions de stockage innovantes. Apprenez à sécuriser et gérer vos actifs numériques avec notre guide introductif complet.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686854653-bb6-img1.png"
           },
@@ -534,17 +534,17 @@
         {
           "id": "165004875",
           "topics": [
-            "Primeros Pasos",
-            "Seguridad"
+            "Commencer",
+            "Securite"
           ],
-          "title": "Cómo mantener tus Bitcoins seguros en la era digital",
+          "title": "Comment proteger vos Bitcoins en toute securite a l'ere numerique",
           "slug": "how-to-keep-your-bitcoins-safe-in-the-digital-age",
           "authorName": "Maxi Millie",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
           },
           "_publishedAt": "2023-10-05T05:28:36+01:00",
-          "description": "Protege tus Bitcoins en la era digital con nuestros consejos y estrategias de expertos. Aprende técnicas esenciales para proteger tus valiosos activos digitales.",
+          "description": "Protegez vos Bitcoins a l'ere numerique avec nos conseils et strategies d'experts. Apprenez les techniques essentielles pour proteger vos actifs numeriques precieux.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686791711-bb3-img1.png"
           },
@@ -565,23 +565,23 @@
       ]
     },
     {
-      "name": "Historia",
+      "name": "Histoire",
       "slug": "history",
       "articles": [
         {
           "id": "164973196",
           "topics": [
-            "Primeros Pasos",
-            "Historia"
+            "Commencer",
+            "Histoire"
           ],
-          "title": "La Historia y Evolución de Bitcoin",
+          "title": "L'histoire et l'évolution du Bitcoin",
           "slug": "the-history-and-evolution-of-bitcoin",
           "authorName": "Maxi Millie",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
           },
           "_publishedAt": "2023-10-05T05:38:06+01:00",
-          "description": "Sigue el fascinante viaje de la historia y evolución de Bitcoin. Descubre los orígenes, hitos e impacto transformador de esta tecnología revolucionaria.",
+          "description": "Tracez le parcours captivant de l'histoire et de l'évolution du Bitcoin. Découvrez les origines, les étapes clés et l'impact transformateur de cette technologie révolutionnaire.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686789411-bb2-img1edited.png"
           },
@@ -602,23 +602,23 @@
       ]
     },
     {
-      "name": "Intercambio",
+      "name": "Echange",
       "slug": "exchange",
       "articles": [
         {
           "id": "165005107",
           "topics": [
-            "Primeros Pasos",
-            "Intercambio"
+            "Commencer",
+            "Echange"
           ],
-          "title": "La Guía Simplificada para Comprar y Vender Bitcoins",
+          "title": "Le Guide Simplifie pour Acheter et Vendre des Bitcoins",
           "slug": "the-simplified-guide-to-buying-and-selling-bitcoins",
           "authorName": "Maxi Millie",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
           },
           "_publishedAt": "2023-10-05T05:26:26+01:00",
-          "description": "Domina el arte de comprar y vender Bitcoin con nuestra guía simplificada. Aprende estrategias paso a paso y consejos de expertos.",
+          "description": "Maitrisez l'art d'acheter et de vendre des Bitcoin avec notre guide simplifie. Apprenez des strategies etape par etape et des conseils d'experts.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686793200-bb4-img1.png"
           },
@@ -646,7 +646,7 @@
       "title": "Bitcoin | Bitcash Blog",
       "twitterCard": "summary_large_image"
     },
-    "description": "Pionera de la Era del Oro Digital",
+    "description": "Pionnier de l'ère de l'or numérique",
     "title": "Bitcoin",
     "seoType": "bitcoin",
     "id": "178642411",

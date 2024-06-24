@@ -1,23 +1,23 @@
 {
   "sections": [
     {
-      "name": "Comenzando",
+      "name": "Memulai",
       "slug": "getting started",
       "articles": [
         {
           "id": "173914208",
           "topics": [
-            "Comenzando",
-            "Gestión de Cartera"
+            "Memulai",
+            "Manajemen Portofolio"
           ],
-          "title": "Dominando la Gestión de Cartera: El Arte de la Diversificación, Asignación de Activos y Reequilibrio",
+          "title": "Menguasai Manajemen Portofolio: Seni Diversifikasi, Alokasi Aset, dan Rebalancing",
           "slug": "mastering-portfolio-management-the-art-of-diversification-asset-allocation-and-re",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:12:40+01:00",
-          "description": "Optimiza Tu Cartera: Aprende el Arte de la Diversificación, Asignación de Activos y Reequilibrio para una Gestión de Cartera Exitosa.",
+          "description": "Optimalkan Portofolio Anda: Pelajari Seni Diversifikasi, Alokasi Aset, dan Rebalancing untuk Manajemen Portofolio yang Sukses.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689021197-ib2-img1.png"
           },
@@ -38,17 +38,17 @@
         {
           "id": "174592759",
           "topics": [
-            "Comenzando",
-            "Alternativas"
+            "Memulai",
+            "Alternatif"
           ],
-          "title": "Liberando el Potencial: Dominando las Inversiones Alternativas para el Éxito del Inversor",
+          "title": "Menggali Potensi: Menguasai Investasi Alternatif untuk Kesuksesan Investor",
           "slug": "unleashing-the-potential-mastering-alternative-investments-for-investor-success",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:11:13+01:00",
-          "description": "¡Expande tu destreza en inversiones con inversiones alternativas! Sumérgete en el mundo del capital privado, los fondos de cobertura y las materias primas para potenciar tu cartera. Este blog proporciona orientación experta para inversores que buscan éxito en estrategias de inversión alternativa.",
+          "description": "Perluas keahlian investasi Anda dengan investasi alternatif! Menyelami dunia ekuitas swasta, dana lindung nilai, dan komoditas untuk meningkatkan portofolio Anda. Blog ini menyediakan panduan ahli bagi investor yang mencari kesuksesan dalam strategi investasi alternatif.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689120056-ib6-img1.png"
           },
@@ -69,17 +69,17 @@
         {
           "id": "175015363",
           "topics": [
-            "Comenzando",
-            "Fondos Mutuos y ETFs"
+            "Memulai",
+            "Reksa Dana & ETF"
           ],
-          "title": "Revelando los Pros y Contras de los Fondos Cotizados en Bolsa (ETFs): Una Guia Completa para Inversores",
+          "title": "Mengungkap Pro dan Kontra dari Dana yang Diperdagangkan di Bursa (ETF): Panduan Lengkap untuk Investor",
           "slug": "unveiling-the-pros-and-cons-of-exchange-traded-funds-etfs-a-comprehensive-guide-f",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:09:18+01:00",
-          "description": "Descubre las ventajas y desventajas de invertir en ETFs. Toma decisiones informadas y maximiza tu potencial de inversion con esta guia completa.",
+          "description": "Temukan kelebihan dan kekurangan berinvestasi di ETF. Buat keputusan yang tepat dan maksimalkan potensi investasi Anda dengan panduan ini.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689186966-ib8-img1.png"
           },
@@ -100,17 +100,17 @@
         {
           "id": "176002890",
           "topics": [
-            "Getting Started",
-            "Risk Management"
+            "Memulai",
+            "Manajemen Risiko"
           ],
-          "title": "Shield Your Investments: A Comprehensive Guide to Recognizing and Avoiding Investment Fraud",
+          "title": "Lindungi Investasi Anda: Panduan Lengkap untuk Mengenali dan Menghindari Penipuan Investasi",
           "slug": "shield-your-investments-a-comprehensive-guide-to-recognizing-and-avoiding-investm",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:08:41+01:00",
-          "description": "Guard your hard-earned money! Learn to spot investment scams and protect your financial future with our comprehensive guide to avoiding investment fraud",
+          "description": "Jaga uang hasil jerih payah Anda! Pelajari cara mengenali penipuan investasi dan lindungi masa depan keuangan Anda dengan panduan lengkap kami untuk menghindari penipuan investasi",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689384626-ib19-img1.png"
           },
@@ -131,17 +131,17 @@
         {
           "id": "176002763",
           "topics": [
-            "Getting Started",
-            "Insurance"
+            "Memulai",
+            "Asuransi"
           ],
-          "title": "Insurance Planning 101: Navigating Life, Disability, and Long-Term Care Insurance",
+          "title": "Perencanaan Asuransi 101: Menavigasi Asuransi Jiwa, Cacat, dan Perawatan Jangka Panjang",
           "slug": "insurance-planning-101-navigating-life-disability-and-long-term-care-insurance",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:07:57+01:00",
-          "description": "Secure your future with smart insurance planning. Dive into life, disability, and long-term care insurance to safeguard your financial health.",
+          "description": "Amankan masa depan Anda dengan perencanaan asuransi yang cerdas. Menyelami asuransi jiwa, cacat, dan perawatan jangka panjang untuk melindungi kesehatan finansial Anda.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689381721-ib18-img1.png"
           },
@@ -162,17 +162,17 @@
         {
           "id": "175940742",
           "topics": [
-            "Getting Started",
-            "Education"
+            "Memulai",
+            "Pendidikan"
           ],
-          "title": "Unlocking the Key to College Savings: Maximizing Education Funds with 529 Plans and Coverdell ESAs",
+          "title": "Membuka Kunci Tabungan Kuliah: Memaksimalkan Dana Pendidikan dengan Rencana 529 dan Coverdell ESA",
           "slug": "unlocking-the-key-to-college-savings-maximizing-education-funds-with-529-plans-an",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:06:59+01:00",
-          "description": "Discover how 529 plans and Coverdell ESAs can help you save for your child's education. Learn effective strategies to navigate college planning and secure a bright future.",
+          "description": "Temukan bagaimana rencana 529 dan Coverdell ESA dapat membantu Anda menabung untuk pendidikan anak Anda. Pelajari strategi efektif untuk mengelola perencanaan kuliah dan mengamankan masa depan yang cerah.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689371480-i17-img1.png"
           },
@@ -193,17 +193,17 @@
         {
           "id": "175940646",
           "topics": [
-            "Getting Started",
-            "Retirement"
+            "Memulai",
+            "Pensiun"
           ],
-          "title": "Mastering Retirement Planning: Decoding 401(k)s, IRAs, and Pension Plans for a Secure Future",
+          "title": "Menguasai Perencanaan Pensiun: Menguraikan 401(k), IRA, dan Rencana Pensiun untuk Masa Depan yang Aman",
           "slug": "mastering-retirement-planning-decoding-401-k-s-iras-and-pension-plans-for-a-secur",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:06:05+01:00",
-          "description": "Discover the essential guide to retirement planning, unraveling the mysteries of 401(k)s, IRAs, and pension plans. Learn strategies to build a robust retirement portfolio and secure your financial future.",
+          "description": "Temukan panduan penting untuk perencanaan pensiun, mengungkap misteri 401(k), IRA, dan rencana pensiun. Pelajari strategi untuk membangun portofolio pensiun yang kuat dan mengamankan masa depan keuangan Anda.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689368706-ib17-img1.png"
           },
@@ -224,17 +224,17 @@
         {
           "id": "175685081",
           "topics": [
-            "Getting Started",
-            "Retirement"
+            "Memulai",
+            "Pensiun"
           ],
-          "title": "Unlocking Social Security: Your Guide to Maximizing Retirement Benefits",
+          "title": "Membuka Kunci Jaminan Sosial: Panduan Anda untuk Memaksimalkan Manfaat Pensiun",
           "slug": "unlocking-social-security-your-guide-to-maximizing-retirement-benefits",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:05:22+01:00",
-          "description": "Discover the key strategies and insights to optimize your Social Security benefits for a secure and fulfilling retirement. Take control of your future today",
+          "description": "Temukan strategi kunci dan wawasan untuk mengoptimalkan manfaat Jaminan Sosial Anda demi masa pensiun yang aman dan memuaskan. Ambil kendali masa depan Anda hari ini",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689311272-ib15-img1.png"
           },
@@ -255,17 +255,17 @@
         {
           "id": "175530377",
           "topics": [
-            "Getting Started",
-            "Tax Planning"
+            "Memulai",
+            "Perencanaan Pajak"
           ],
-          "title": "Maximizing Returns: The Ultimate Guide to Tax Planning for Investors",
+          "title": "Memaksimalkan Pengembalian: Panduan Utama Perencanaan Pajak untuk Investor",
           "slug": "maximizing-returns-the-ultimate-guide-to-tax-planning-for-investors",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:04:20+01:00",
-          "description": "Learn how to optimize your investment returns by understanding capital gains, dividends, and interest income, while minimizing your tax liabilities.",
+          "description": "Pelajari cara mengoptimalkan pengembalian investasi Anda dengan memahami keuntungan modal, dividen, dan pendapatan bunga, sambil meminimalkan kewajiban pajak Anda.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689281511-ib14-img1.png"
           },
@@ -286,17 +286,17 @@
         {
           "id": "175528452",
           "topics": [
-            "Getting Started",
-            "Estate Planning"
+            "Memulai",
+            "Perencanaan Warisan"
           ],
-          "title": "Secure Your Legacy: A Comprehensive Guide to Estate Planning, Wills, Trusts, and Inheritance Taxes",
+          "title": "Amankan Warisan Anda: Panduan Lengkap Perencanaan Warisan, Wasiat, Trust, dan Pajak Warisan",
           "slug": "secure-your-legacy-a-comprehensive-guide-to-estate-planning-wills-trusts-and-inhe",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:03:16+01:00",
-          "description": "Discover how to protect your assets and ensure a smooth transfer of wealth. Learn about wills, trusts, and minimizing inheritance taxes for financial security.",
+          "description": "Temukan cara melindungi aset Anda dan memastikan transfer kekayaan yang lancar. Pelajari tentang wasiat, trust, dan meminimalkan pajak warisan untuk keamanan finansial.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689278418-ib13-img1.png"
           },
@@ -317,17 +317,17 @@
         {
           "id": "175337478",
           "topics": [
-            "Getting Started",
-            "Financial Planning"
+            "Memulai",
+            "Perencanaan Keuangan"
           ],
-          "title": "Mastering Your Finances: The Ultimate Guide to Budgeting, Debt Reduction, and Retirement Planning",
+          "title": "Menguasai Keuangan Anda: Panduan Utama untuk Anggaran, Pengurangan Utang, dan Perencanaan Pensiun",
           "slug": "mastering-your-finances-the-ultimate-guide-to-budgeting-debt-reduction-and-retire",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:00:48+01:00",
-          "description": "Achieve financial success with expert guidance on budgeting, debt reduction, and retirement planning. Take control of your future and secure a prosperous retirement.",
+          "description": "Raih kesuksesan finansial dengan bimbingan ahli tentang anggaran, pengurangan utang, dan perencanaan pensiun. Ambil kendali atas masa depan Anda dan amankan pensiun yang sejahtera.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689220482-ib12-img1.png"
           },
@@ -348,16 +348,16 @@
         {
           "id": "175337425",
           "topics": [
-            "Getting Started"
+            "Memulai"
           ],
-          "title": "Mastering Your Mind: Overcoming Investor Biases for Financial Success",
+          "title": "Menguasai Pikiran Anda: Mengatasi Bias Investor untuk Kesuksesan Finansial",
           "slug": "mastering-your-mind-overcoming-investor-biases-for-financial-success",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:00:04+01:00",
-          "description": "Discover how to conquer common investor biases that can hinder your financial success. Learn practical strategies to make rational decisions and achieve your investment goals.",
+          "description": "Temukan cara mengatasi bias investor yang umum yang dapat menghambat kesuksesan finansial Anda. Pelajari strategi praktis untuk membuat keputusan rasional dan mencapai tujuan investasi Anda.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689218717-ib11-img1.png"
           },
@@ -378,17 +378,17 @@
         {
           "id": "176002895",
           "topics": [
-            "Comenzando",
-            "Inflación"
+            "Memulai",
+            "Inflasi"
           ],
-          "title": "Navegando los Mares Financieros: Entendiendo el Impacto de la Inflación en la Inversión",
+          "title": "Mengarungi Lautan Keuangan: Memahami Dampak Inflasi terhadap Investasi",
           "slug": "navigating-the-financial-seas-understanding-inflation-s-impact-on-investment",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T01:59:28+01:00",
-          "description": "Zarpe en su viaje financiero con nuestra guía completa sobre la inflación. Aprenda cómo afecta a sus inversiones y las estrategias para afrontar la tormenta.",
+          "description": "Mulailah perjalanan keuangan Anda dengan panduan lengkap kami tentang inflasi. Pelajari bagaimana itu mempengaruhi investasi Anda dan strategi untuk menghadapi badai.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689386893-ib20-img1.png"
           },
@@ -409,17 +409,17 @@
         {
           "id": "173914322",
           "topics": [
-            "Getting Started",
-            "stocks"
+            "Memulai",
+            "saham"
           ],
-          "title": "Understanding the Stock Market: How it Works, Market Indicators, and Historical Trends.",
+          "title": "Memahami Pasar Saham: Cara Kerjanya, Indikator Pasar, dan Tren Historis.",
           "slug": "understanding-the-stock-market-how-it-works-market-indicators-and-historical-tren",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T01:58:31+01:00",
-          "description": "Explore How it Works, Key Indicators, and Historical Trends to Make Informed Investment Decisions.",
+          "description": "Jelajahi Cara Kerjanya, Indikator Kunci, dan Tren Historis untuk Membuat Keputusan Investasi yang Informasi.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689023549-ib3-img1.png"
           },
@@ -440,17 +440,17 @@
         {
           "id": "174362868",
           "topics": [
-            "Getting Started",
-            "realestate"
+            "Memulai",
+            "properti"
           ],
-          "title": "From Houses to High-Rises: Mastering Real Estate Investing in Residential, Commercial, and REITs",
+          "title": "Dari Rumah ke Gedung Tinggi: Menguasai Investasi Real Estat di Residensial, Komersial, dan REITs",
           "slug": "from-houses-to-high-rises-mastering-real-estate-investing-in-residential-commerci",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T01:56:35+01:00",
-          "description": "Dive into the world of real estate investing and discover how to thrive in residential properties, commercial ventures, and REITs. Unleash your wealth-building potential today!",
+          "description": "Menyelami dunia investasi real estat dan temukan cara berkembang di properti residensial, usaha komersial, dan REITs. Lepaskan potensi membangun kekayaan Anda hari ini!",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689108537-ib5-img1.png"
           },
@@ -471,17 +471,17 @@
         {
           "id": "174594216",
           "topics": [
-            "Getting Started",
-            "Mutual Funds & ETFs"
+            "Memulai",
+            "Reksa Dana & ETF"
           ],
-          "title": "Mastering Mutual Funds: Unveiling the Types, Expenses, and Performance for Successful Investing",
+          "title": "Menguasai Reksa Dana: Mengungkap Jenis, Biaya, dan Kinerja untuk Investasi yang Sukses",
           "slug": "mastering-mutual-funds-unveiling-the-types-expenses-and-performance-for-successfu",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T01:55:44+01:00",
-          "description": "Discover the ins and outs of mutual funds - their various types, expenses, and performance metrics - to make informed investment decisions and achieve financial success.",
+          "description": "Temukan seluk-beluk reksa dana - berbagai jenisnya, biaya, dan metrik kinerja - untuk membuat keputusan investasi yang tepat dan mencapai kesuksesan finansial.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689128866-ib7-img1.png"
           },
@@ -502,17 +502,17 @@
         {
           "id": "175016379",
           "topics": [
-            "Getting Started",
-            "Risk Management"
+            "Memulai",
+            "Manajemen Risiko"
           ],
-          "title": "Mastering Risk Tolerance: Unveiling Your Unique Investor DNA",
+          "title": "Menguasai Toleransi Risiko: Mengungkap DNA Investor Unik Anda",
           "slug": "mastering-risk-tolerance-unveiling-your-unique-investor-dna",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T01:54:11+01:00",
-          "description": "Discover your risk tolerance and assess your personal risk profile to make informed investment decisions. Unlock the secrets to aligning risk and reward for financial success.",
+          "description": "Temukan toleransi risiko Anda dan nilai profil risiko pribadi Anda untuk membuat keputusan investasi yang tepat. Buka rahasia untuk menyelaraskan risiko dan imbalan demi kesuksesan finansial.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689189686-ib9-img1.png"
           },
@@ -533,16 +533,16 @@
         {
           "id": "175023099",
           "topics": [
-            "Getting Started"
+            "Memulai"
           ],
-          "title": "Mastering Investment Psychology: Conquering Fear and Greed for Financial Success",
+          "title": "Menguasai Psikologi Investasi: Mengatasi Ketakutan dan Keserakahan untuk Sukses Finansial",
           "slug": "mastering-investment-psychology-conquering-fear-and-greed-for-financial-success",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T01:53:04+01:00",
-          "description": "Learn how to overcome the destructive forces of fear and greed in your investment journey. Unleash the power of disciplined decision-making for long-term prosperity.",
+          "description": "Pelajari cara mengatasi kekuatan destruktif dari ketakutan dan keserakahan dalam perjalanan investasi Anda. Lepaskan kekuatan pengambilan keputusan yang disiplin untuk kemakmuran jangka panjang.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689194001-ib10-img1.png"
           },
@@ -563,17 +563,17 @@
         {
           "id": "173906568",
           "topics": [
-            "Financial Planning",
-            "Getting Started"
+            "Perencanaan Keuangan",
+            "Memulai"
           ],
-          "title": "Unraveling Investment Basics: Navigating Asset Types, Risk-Return Trade-offs, and Goal-Setting",
+          "title": "Mengurai Dasar Investasi: Menavigasi Jenis Aset, Tukar Rugi Risiko-Keuntungan, dan Penetapan Tujuan",
           "slug": "unraveling-investment-basics-navigating-asset-types-risk-return-trade-offs-and-go",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T01:52:15+01:00",
-          "description": "Master the Art of Investing: Understand Asset Types, Risk-Return Trade-offs, and Goal-Setting for Successful Investments.",
+          "description": "Kuasai Seni Berinvestasi: Pahami Jenis Aset, Tukar Rugi Risiko-Keuntungan, dan Penetapan Tujuan untuk Investasi yang Sukses.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689018579-ib1-img1.png"
           },
@@ -594,23 +594,23 @@
       ]
     },
     {
-      "name": "Gestión de Cartera",
+      "name": "Manajemen Portofolio",
       "slug": "portfolio management",
       "articles": [
         {
           "id": "173914208",
           "topics": [
-            "Comenzando",
-            "Gestión de Cartera"
+            "Memulai",
+            "Manajemen Portofolio"
           ],
-          "title": "Dominando la Gestión de Cartera: El Arte de la Diversificación, Asignación de Activos y Reequilibrio",
+          "title": "Menguasai Manajemen Portofolio: Seni Diversifikasi, Alokasi Aset, dan Rebalancing",
           "slug": "mastering-portfolio-management-the-art-of-diversification-asset-allocation-and-re",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:12:40+01:00",
-          "description": "Optimiza Tu Cartera: Aprende el Arte de la Diversificación, Asignación de Activos y Reequilibrio para una Gestión de Cartera Exitosa.",
+          "description": "Optimalkan Portofolio Anda: Pelajari Seni Diversifikasi, Alokasi Aset, dan Rebalancing untuk Manajemen Portofolio yang Sukses.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689021197-ib2-img1.png"
           },
@@ -631,23 +631,23 @@
       ]
     },
     {
-      "name": "Alternativas",
+      "name": "Alternatif",
       "slug": "alternatives",
       "articles": [
         {
           "id": "174592759",
           "topics": [
-            "Comenzando",
-            "Alternativas"
+            "Memulai",
+            "Alternatif"
           ],
-          "title": "Desatando el Potencial: Dominando las Inversiones Alternativas para el Éxito del Inversor",
+          "title": "Menggali Potensi: Menguasai Investasi Alternatif untuk Kesuksesan Investor",
           "slug": "unleashing-the-potential-mastering-alternative-investments-for-investor-success",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:11:13+01:00",
-          "description": "Expande tu destreza en inversiones con inversiones alternativas. Sumérgete en el mundo de capital privado, fondos de cobertura y materias primas para potenciar tu cartera. Este blog proporciona orientación experta para inversores que buscan éxito en estrategias de inversión alternativa.",
+          "description": "Perluas keahlian investasi Anda dengan investasi alternatif! Menyelami dunia ekuitas swasta, dana lindung nilai, dan komoditas untuk meningkatkan portofolio Anda. Blog ini menyediakan bimbingan ahli untuk investor yang mencari kesuksesan dalam strategi investasi alternatif.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689120056-ib6-img1.png"
           },
@@ -668,23 +668,23 @@
       ]
     },
     {
-      "name": "Fondos Mutuos y ETFs",
+      "name": "Dana Bersama & ETF",
       "slug": "mutual funds & etfs",
       "articles": [
         {
           "id": "175015363",
           "topics": [
-            "Comenzando",
-            "Fondos Mutuos y ETFs"
+            "Memulai",
+            "Reksa Dana & ETF"
           ],
-          "title": "Revelando los Pros y Contras de los Fondos Cotizados en Bolsa (ETFs): Una Guia Completa para Inversores",
+          "title": "Mengungkap Pro dan Kontra dari Dana yang Diperdagangkan di Bursa (ETF): Panduan Lengkap untuk Investor",
           "slug": "unveiling-the-pros-and-cons-of-exchange-traded-funds-etfs-a-comprehensive-guide-f",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:09:18+01:00",
-          "description": "Descubre las ventajas y desventajas de invertir en ETFs. Toma decisiones informadas y maximiza tu potencial de inversion con esta guia completa.",
+          "description": "Temukan kelebihan dan kekurangan berinvestasi di ETF. Buat keputusan yang tepat dan maksimalkan potensi investasi Anda dengan panduan ini.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689186966-ib8-img1.png"
           },
@@ -705,17 +705,17 @@
         {
           "id": "174594216",
           "topics": [
-            "Comenzando",
-            "Fondos Mutuos y ETFs"
+            "Memulai",
+            "Reksa Dana & ETF"
           ],
-          "title": "Dominando los Fondos Mutuos: Revelando los Tipos, Gastos y Rendimiento para una Inversión Exitosa",
+          "title": "Menguasai Reksa Dana: Mengungkap Jenis, Biaya, dan Kinerja untuk Investasi yang Sukses",
           "slug": "mastering-mutual-funds-unveiling-the-types-expenses-and-performance-for-successfu",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T01:55:44+01:00",
-          "description": "Descubre los detalles de los fondos mutuos - sus diversos tipos, gastos y métricas de rendimiento - para tomar decisiones de inversión informadas y alcanzar el éxito financiero.",
+          "description": "Temukan seluk-beluk reksa dana - berbagai jenisnya, biaya, dan metrik kinerja - untuk membuat keputusan investasi yang tepat dan mencapai kesuksesan finansial.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689128866-ib7-img1.png"
           },
@@ -736,23 +736,23 @@
       ]
     },
     {
-      "name": "Gestión de Riesgos",
+      "name": "Manajemen Risiko",
       "slug": "risk management",
       "articles": [
         {
           "id": "176002890",
           "topics": [
-            "Comenzando",
-            "Gestion de Riesgos"
+            "Memulai",
+            "Manajemen Risiko"
           ],
-          "title": "Protege Tus Inversiones: Una Guia Completa para Reconocer y Evitar el Fraude de Inversion",
+          "title": "Lindungi Investasi Anda: Panduan Lengkap untuk Mengenali dan Menghindari Penipuan Investasi",
           "slug": "shield-your-investments-a-comprehensive-guide-to-recognizing-and-avoiding-investm",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:08:41+01:00",
-          "description": "Protege tu dinero ganado con esfuerzo! Aprende a identificar estafas de inversion y protege tu futuro financiero con nuestra guia completa para evitar el fraude de inversion",
+          "description": "Jaga uang hasil jerih payah Anda! Pelajari cara mengenali penipuan investasi dan melindungi masa depan keuangan Anda dengan panduan kami untuk menghindari penipuan investasi",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689384626-ib19-img1.png"
           },
@@ -773,17 +773,17 @@
         {
           "id": "175016379",
           "topics": [
-            "Comenzando",
-            "Gestión de Riesgos"
+            "Memulai",
+            "Manajemen Risiko"
           ],
-          "title": "Dominando la Tolerancia al Riesgo: Revelando tu Único ADN de Inversor",
+          "title": "Menguasai Toleransi Risiko: Mengungkap DNA Investor Unik Anda",
           "slug": "mastering-risk-tolerance-unveiling-your-unique-investor-dna",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T01:54:11+01:00",
-          "description": "Descubre tu tolerancia al riesgo y evalúa tu perfil de riesgo personal para tomar decisiones de inversión informadas. Descubre los secretos para alinear el riesgo y la recompensa para el éxito financiero.",
+          "description": "Temukan toleransi risiko Anda dan nilai profil risiko pribadi Anda untuk membuat keputusan investasi yang tepat. Buka rahasia untuk menyelaraskan risiko dan imbalan demi kesuksesan finansial.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689189686-ib9-img1.png"
           },
@@ -804,23 +804,23 @@
       ]
     },
     {
-      "name": "Seguros",
+      "name": "Asuransi",
       "slug": "insurance",
       "articles": [
         {
           "id": "176002763",
           "topics": [
-            "Primeros Pasos",
-            "Seguros"
+            "Memulai",
+            "Asuransi"
           ],
-          "title": "Planificación de Seguros 101: Navegando por los Seguros de Vida, Discapacidad y Cuidado a Largo Plazo",
+          "title": "Perencanaan Asuransi 101: Menavigasi Asuransi Jiwa, Cacat, dan Perawatan Jangka Panjang",
           "slug": "insurance-planning-101-navigating-life-disability-and-long-term-care-insurance",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:07:57+01:00",
-          "description": "Asegura tu futuro con una planificación de seguros inteligente. Profundiza en los seguros de vida, discapacidad y cuidado a largo plazo para proteger tu salud financiera.",
+          "description": "Amankan masa depan Anda dengan perencanaan asuransi yang cerdas. Menyelami asuransi jiwa, cacat, dan perawatan jangka panjang untuk melindungi kesehatan finansial Anda.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689381721-ib18-img1.png"
           },
@@ -841,23 +841,23 @@
       ]
     },
     {
-      "name": "Educación",
+      "name": "Pendidikan",
       "slug": "education",
       "articles": [
         {
           "id": "175940742",
           "topics": [
-            "Comenzando",
-            "Educación"
+            "Memulai",
+            "Pendidikan"
           ],
-          "title": "Descubriendo la Clave para Ahorrar en la Universidad: Maximizando los Fondos Educativos con Planes 529 y ESAs Coverdell",
+          "title": "Membuka Kunci Tabungan Kuliah: Memaksimalkan Dana Pendidikan dengan Rencana 529 dan Coverdell ESA",
           "slug": "unlocking-the-key-to-college-savings-maximizing-education-funds-with-529-plans-an",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:06:59+01:00",
-          "description": "Descubre cómo los planes 529 y las ESAs Coverdell pueden ayudarte a ahorrar para la educación de tu hijo. Aprende estrategias efectivas para navegar la planificación universitaria y asegurar un futuro brillante.",
+          "description": "Temukan bagaimana rencana 529 dan Coverdell ESA dapat membantu Anda menabung untuk pendidikan anak Anda. Pelajari strategi efektif untuk mengelola perencanaan kuliah dan mengamankan masa depan yang cerah.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689371480-i17-img1.png"
           },
@@ -878,23 +878,23 @@
       ]
     },
     {
-      "name": "Jubilación",
+      "name": "Pensiun",
       "slug": "retirement",
       "articles": [
         {
           "id": "175940646",
           "topics": [
-            "Comenzando",
-            "Jubilación"
+            "Memulai",
+            "Pensiun"
           ],
-          "title": "Dominando la Planificación de la Jubilación: Descifrando 401(k)s, IRAs y Planes de Pensiones para un Futuro Seguro",
+          "title": "Menguasai Perencanaan Pensiun: Mendekode 401(k), IRA, dan Rencana Pensiun untuk Masa Depan yang Aman",
           "slug": "mastering-retirement-planning-decoding-401-k-s-iras-and-pension-plans-for-a-secur",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:06:05+01:00",
-          "description": "Descubre la guía esencial para la planificación de la jubilación, desentrañando los misterios de los 401(k)s, IRAs y planes de pensiones. Aprende estrategias para construir un portafolio de jubilación robusto y asegurar tu futuro financiero.",
+          "description": "Temukan panduan esensial untuk perencanaan pensiun, mengungkap misteri 401(k), IRA, dan rencana pensiun. Pelajari strategi untuk membangun portofolio pensiun yang kuat dan mengamankan masa depan keuangan Anda.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689368706-ib17-img1.png"
           },
@@ -915,17 +915,17 @@
         {
           "id": "175685081",
           "topics": [
-            "Comenzando",
-            "Jubilación"
+            "Memulai",
+            "Pensiun"
           ],
-          "title": "Desbloqueando la Seguridad Social: Tu guía para maximizar los beneficios de jubilación",
+          "title": "Membuka Manfaat Jaminan Sosial: Panduan Anda untuk Memaksimalkan Manfaat Pensiun",
           "slug": "unlocking-social-security-your-guide-to-maximizing-retirement-benefits",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:05:22+01:00",
-          "description": "Descubre las estrategias clave y las perspectivas para optimizar tus beneficios de la Seguridad Social para una jubilación segura y satisfactoria. Toma control de tu futuro hoy",
+          "description": "Temukan strategi kunci dan wawasan untuk mengoptimalkan manfaat Jaminan Sosial Anda demi masa pensiun yang aman dan memuaskan. Ambil kendali atas masa depan Anda hari ini",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689311272-ib15-img1.png"
           },
@@ -946,23 +946,23 @@
       ]
     },
     {
-      "name": "Planificación Fiscal",
+      "name": "Perencanaan Pajak",
       "slug": "tax planning",
       "articles": [
         {
           "id": "175530377",
           "topics": [
-            "Comenzando",
-            "Planificación Fiscal"
+            "Memulai",
+            "Perencanaan Pajak"
           ],
-          "title": "Maximizando Retornos: La Guía Definitiva para la Planificación Fiscal de Inversores",
+          "title": "Memaksimalkan Pengembalian: Panduan Utama Perencanaan Pajak untuk Investor",
           "slug": "maximizing-returns-the-ultimate-guide-to-tax-planning-for-investors",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:04:20+01:00",
-          "description": "Aprende cómo optimizar tus retornos de inversión entendiendo las ganancias de capital, dividendos e ingresos por intereses, mientras minimizas tus obligaciones fiscales.",
+          "description": "Pelajari cara mengoptimalkan pengembalian investasi Anda dengan memahami keuntungan modal, dividen, dan pendapatan bunga, sambil meminimalkan kewajiban pajak Anda.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689281511-ib14-img1.png"
           },
@@ -983,23 +983,23 @@
       ]
     },
     {
-      "name": "Planificación Patrimonial",
+      "name": "Perencanaan Warisan",
       "slug": "estate planning",
       "articles": [
         {
           "id": "175528452",
           "topics": [
-            "Comenzando",
-            "Planificación Patrimonial"
+            "Memulai",
+            "Perencanaan Warisan"
           ],
-          "title": "Asegura Tu Legado: Una Guía Completa para la Planificación Patrimonial, Testamentos, Fideicomisos e Impuestos de Sucesiones",
+          "title": "Amankan Warisan Anda: Panduan Lengkap Perencanaan Warisan, Wasiat, Trust, dan Pajak Warisan",
           "slug": "secure-your-legacy-a-comprehensive-guide-to-estate-planning-wills-trusts-and-inhe",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:03:16+01:00",
-          "description": "Descubre cómo proteger tus activos y asegurar una transferencia de riqueza sin problemas. Aprende sobre testamentos, fideicomisos y cómo minimizar los impuestos de sucesión para la seguridad financiera.",
+          "description": "Temukan cara melindungi aset Anda dan memastikan transfer kekayaan yang lancar. Pelajari tentang wasiat, trust, dan meminimalkan pajak warisan untuk keamanan finansial.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689278418-ib13-img1.png"
           },
@@ -1020,23 +1020,23 @@
       ]
     },
     {
-      "name": "Planificación Financiera",
+      "name": "Perencanaan Keuangan",
       "slug": "financial planning",
       "articles": [
         {
           "id": "175337478",
           "topics": [
-            "Comenzando",
-            "Planificación Financiera"
+            "Memulai",
+            "Perencanaan Keuangan"
           ],
-          "title": "Dominando tus Finanzas: La Guía Definitiva para Presupuestar, Reducción de Deuda y Planificación de Retiro",
+          "title": "Menguasai Keuangan Anda: Panduan Utama untuk Anggaran, Pengurangan Utang, dan Perencanaan Pensiun",
           "slug": "mastering-your-finances-the-ultimate-guide-to-budgeting-debt-reduction-and-retire",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:00:48+01:00",
-          "description": "Logra el éxito financiero con orientación experta en presupuestos, reducción de deuda y planificación de retiro. Toma control de tu futuro y asegura un retiro próspero.",
+          "description": "Raih kesuksesan finansial dengan bimbingan ahli tentang anggaran, pengurangan utang, dan perencanaan pensiun. Ambil kendali atas masa depan Anda dan amankan pensiun yang sejahtera.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689220482-ib12-img1.png"
           },
@@ -1057,17 +1057,17 @@
         {
           "id": "173906568",
           "topics": [
-            "Planificación Financiera",
-            "Comenzando"
+            "Perencanaan Keuangan",
+            "Memulai"
           ],
-          "title": "Desentrañando los Fundamentos de la Inversión: Navegando Tipos de Activos, Compensaciones de Riesgo-Retorno y Establecimiento de Objetivos",
+          "title": "Mengurai Dasar-dasar Investasi: Menavigasi Jenis Aset, Tukar Rugi Risiko-Imbalan, dan Penetapan Tujuan",
           "slug": "unraveling-investment-basics-navigating-asset-types-risk-return-trade-offs-and-go",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T01:52:15+01:00",
-          "description": "Domina el Arte de Invertir: Entiende Tipos de Activos, Compensaciones de Riesgo-Retorno y Establecimiento de Objetivos para Inversiones Exitosas.",
+          "description": "Kuasai Seni Berinvestasi: Memahami Jenis Aset, Tukar Rugi Risiko-Imbalan, dan Penetapan Tujuan untuk Investasi yang Sukses.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689018579-ib1-img1.png"
           },
@@ -1088,23 +1088,23 @@
       ]
     },
     {
-      "name": "Inflación",
+      "name": "Inflasi",
       "slug": "inflation",
       "articles": [
         {
           "id": "176002895",
           "topics": [
-            "Comenzando",
-            "Inflacion"
+            "Memulai",
+            "Inflasi"
           ],
-          "title": "Navegando los Mares Financieros: Entendiendo el Impacto de la Inflacion en la Inversion",
+          "title": "Mengarungi Lautan Keuangan: Memahami Dampak Inflasi terhadap Investasi",
           "slug": "navigating-the-financial-seas-understanding-inflation-s-impact-on-investment",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T01:59:28+01:00",
-          "description": "Zarpe en su viaje financiero con nuestra guia completa sobre la inflacion. Aprenda como afecta a sus inversiones y estrategias para afrontar la tormenta.",
+          "description": "Mulailah perjalanan keuangan Anda dengan panduan lengkap kami tentang inflasi. Pelajari bagaimana itu mempengaruhi investasi Anda dan strategi untuk menghadapi badai.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689386893-ib20-img1.png"
           },
@@ -1125,23 +1125,23 @@
       ]
     },
     {
-      "name": "acciones",
+      "name": "saham",
       "slug": "stocks",
       "articles": [
         {
           "id": "173914322",
           "topics": [
-            "Introducción",
-            "acciones"
+            "Memulai",
+            "saham"
           ],
-          "title": "Entendiendo el Mercado de Valores: Cómo Funciona, Indicadores del Mercado y Tendencias Históricas.",
+          "title": "Memahami Pasar Saham: Cara Kerjanya, Indikator Pasar, dan Tren Historis.",
           "slug": "understanding-the-stock-market-how-it-works-market-indicators-and-historical-tren",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T01:58:31+01:00",
-          "description": "Explora Cómo Funciona, Indicadores Clave y Tendencias Históricas para Tomar Decisiones de Inversión Informadas.",
+          "description": "Jelajahi Cara Kerjanya, Indikator Kunci, dan Tren Historis untuk Membuat Keputusan Investasi yang Informasi.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689023549-ib3-img1.png"
           },
@@ -1162,23 +1162,23 @@
       ]
     },
     {
-      "name": "inversión",
+      "name": "investasi",
       "slug": "investing",
       "articles": [
         {
           "id": "173980855",
           "topics": [
-            "inversiones",
-            "bonos"
+            "investasi",
+            "obligasi"
           ],
-          "title": "Dominando las Inversiones de Renta Fija: Bonos, CDs y Fondos del Mercado Monetario",
+          "title": "Menguasai Investasi Pendapatan Tetap: Obligasi, CD, dan Dana Pasar Uang",
           "slug": "mastering-fixed-income-investments-bonds-cds-and-money-market-funds",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T01:57:29+01:00",
-          "description": "Descubre la estabilidad y el potencial de ingresos de las inversiones de renta fija. Aprende sobre bonos, CDs y fondos del mercado monetario, y obtén valiosos conocimientos para tener éxito en este ámbito.",
+          "description": "Temukan stabilitas dan potensi pendapatan dari investasi pendapatan tetap. Pelajari tentang obligasi, CD, dan dana pasar uang, serta peroleh wawasan berharga untuk sukses di bidang ini.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689038686-ib4-img1.png"
           },
@@ -1199,23 +1199,23 @@
       ]
     },
     {
-      "name": "bonos",
+      "name": "obligasi",
       "slug": "bonds",
       "articles": [
         {
           "id": "173980855",
           "topics": [
-            "inversión",
-            "bonos"
+            "investasi",
+            "obligasi"
           ],
-          "title": "Dominando las Inversiones de Renta Fija: Bonos, CDs y Fondos del Mercado Monetario",
+          "title": "Menguasai Investasi Pendapatan Tetap: Obligasi, CD, dan Dana Pasar Uang",
           "slug": "mastering-fixed-income-investments-bonds-cds-and-money-market-funds",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T01:57:29+01:00",
-          "description": "Descubre la estabilidad y el potencial de ingresos de las inversiones de renta fija. Aprende sobre bonos, CDs y fondos del mercado monetario, y obtén valiosos conocimientos para tener éxito en este ámbito.",
+          "description": "Temukan stabilitas dan potensi pendapatan dari investasi pendapatan tetap. Pelajari tentang obligasi, CD, dan dana pasar uang, serta peroleh wawasan berharga untuk sukses di bidang ini.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689038686-ib4-img1.png"
           },
@@ -1236,23 +1236,23 @@
       ]
     },
     {
-      "name": "bienes raíces",
+      "name": "properti",
       "slug": "realestate",
       "articles": [
         {
           "id": "174362868",
           "topics": [
-            "Primeros pasos",
-            "bienes raíces"
+            "Memulai",
+            "properti"
           ],
-          "title": "De casas a rascacielos: Dominando la inversión inmobiliaria en residencial, comercial y REITs",
+          "title": "Dari Rumah ke Gedung Tinggi: Menguasai Investasi Real Estate di Residensial, Komersial, dan REITs",
           "slug": "from-houses-to-high-rises-mastering-real-estate-investing-in-residential-commerci",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T01:56:35+01:00",
-          "description": "Sumérgete en el mundo de la inversión inmobiliaria y descubre cómo prosperar en propiedades residenciales, empresas comerciales y REITs. ¡Desata tu potencial para construir riqueza hoy!",
+          "description": "Menyelami dunia investasi real estate dan temukan cara berkembang di properti residensial, usaha komersial, dan REITs. Lepaskan potensi membangun kekayaan Anda hari ini!",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689108537-ib5-img1.png"
           },
@@ -1280,8 +1280,8 @@
       "title": "Investing | Bitcash Blog",
       "twitterCard": "summary_large_image"
     },
-    "description": "Donde se forjan los futuros.",
-    "title": "Invertir",
+    "description": "Di mana Masa Depan Dibentuk.",
+    "title": "Investasi",
     "seoType": "investing",
     "id": "178642408",
     "_createdAt": "2023-07-24T18:39:38+01:00"

@@ -70,18 +70,18 @@
           "id": "190259129",
           "topics": [
             "LLM",
-            "Hardware",
-            "Summary",
-            "Edge"
+            "硬件",
+            "摘要",
+            "边缘"
           ],
-          "title": "Latent Space Podcast 8/10/23 [Summary]: LLMs Everywhere: Running 70B models in browsers and iPhones using MLC — with Tianqi Chen of CMU / OctoML",
+          "title": "潜在空间播客 8/10/23 [摘要]: LLM无处不在：在浏览器和iPhone上运行70B模型，使用MLC — 与CMU / OctoML的陈天奇",
           "slug": "latent-space-podcast-8-10-23-summary-llms-everywhere-running-70b-models-in-browse",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T09:18:37+01:00",
-          "description": "Explore the magic of MLC with Tianqi Chen: deploying 70B models on browsers & iPhones. Dive into XGBoost, TVM's creation, & the future of universal AI deployments. ",
+          "description": "探索MLC的魔力与陈天奇：在浏览器和iPhone上部署70B模型。深入了解XGBoost、TVM的创建及通用AI部署的未来。",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1691894611-screenshot-2023-08-12-at-10-42-43-pm.png"
           },
@@ -102,20 +102,20 @@
         {
           "id": "190259087",
           "topics": [
-            "Summary",
-            "LLM",
-            "Code",
-            "Open Source",
-            "Small Models"
+            "摘要",
+            "大型语言模型",
+            "代码",
+            "开源",
+            "小型模型"
           ],
-          "title": "Latent Space Podcast 8/4/23 [Summary] Latent Space x AI Breakdown crossover pod! ",
+          "title": "潜在空间播客 8/4/23 [摘要] 潜在空间 x AI 分析交叉播客！",
           "slug": "latent-space-podcast-8-4-23-summary-latent-space-x-ai-breakdown-crossover-pod",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T09:16:33+01:00",
-          "description": "Join AI Breakdown & Latent Space for the summer AI tech roundup: Dive into GPT4.5, Llama 2, AI tools, the rising AI engineer, and more!",
+          "description": "加入 AI 分析和潜在空间，参加夏季 AI 技术综述：深入了解 GPT4.5、Llama 2、AI 工具、崛起的 AI 工程师等！",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1691539617-screenshot-2023-08-08-at-8-02-52-pm.png"
           },
@@ -136,19 +136,19 @@
         {
           "id": "190259111",
           "topics": [
-            "Summary",
-            "Transformers",
-            "Training",
-            "Open Source"
+            "摘要",
+            "变压器",
+            "培训",
+            "开源"
           ],
-          "title": " Latent Space Podcast 7/26/23 [Summary] FlashAttention 2: making Transformers 800% faster - Tri Dao of Together AI",
+          "title": "潜在空间播客 7/26/23 [摘要] FlashAttention 2：使变压器速度提高 800% - Together AI 的 Tri Dao",
           "slug": "latent-space-podcast-7-26-23-summary-flashattention-2-making-transformers-800-fas",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T09:14:13+01:00",
-          "description": "Discover how FlashAttention revolutionized AI speed with Tri Dao, as he unveils the power of FlashAttention 2, dives into Stanford's Hazy Lab & future AI insights.",
+          "description": "了解 Tri Dao 如何通过 FlashAttention 2 革命性地提高 AI 速度，深入斯坦福的 Hazy Lab 和未来的 AI 洞察。",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1691543194-screenshot-2023-08-08-at-8-43-59-pm.png"
           },
@@ -212,14 +212,14 @@
             "大型语言模型",
             "多语种"
           ],
-          "title": "OpenBA：一个开源的150亿参数双语非对称序列到序列模型，从零开始预训练",
+          "title": "OpenBA：一个开源的150亿参数双语不对称序列到序列模型，从零开始预训练",
           "slug": "openba-an-open-sourced-15b-bilingual-asymmetric-seq2seq-model-pre-trained-from-sc",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-27T03:34:02+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论与评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -240,17 +240,17 @@
         {
           "id": "198277117",
           "topics": [
-            "大型语言模型",
-            "检索"
+            "LLM",
+            "Retrieval"
           ],
-          "title": "PDFTriage：对长篇结构化文档的问答",
+          "title": "PDFTriage: Question Answering over Long, Structured Documents",
           "slug": "pdftriage-question-answering-over-long-structured-documents",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-27T03:33:49+01:00",
-          "description": "摘要评论与评级",
+          "description": "Abstract Commentary & Rating",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -271,10 +271,10 @@
         {
           "id": "198277138",
           "topics": [
-            "LLM",
+            "大型语言模型",
             "微调"
           ],
-          "title": "排序的LLaMA：利用大型语言模型中间层的潜力，通过排序微调（SoFT）实现动态推理",
+          "title": "排序的LLaMA：利用排序微调（SoFT）解锁大型语言模型中间层的潜力以进行动态推理",
           "slug": "sorted-llama-unlocking-the-potential-of-intermediate-layers-of-large-language-mod",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
@@ -306,7 +306,7 @@
             "指令调整",
             "多模态"
           ],
-          "title": "关于指令调整的大型多模态模型的实证研究",
+          "title": "对规模化指令调整的大型多模态模型的实证研究",
           "slug": "an-empirical-study-of-scaling-instruct-tuned-large-multimodal-models",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
@@ -347,14 +347,14 @@
           "topics": [
             "发射台"
           ],
-          "title": "确保信任与完整性：监管合规与安全措施",
+          "title": "确保信任和完整性：监管合规与安全措施",
           "slug": "ensuring-trust-and-integrity-regulatory-compliance-and-security-measures",
           "authorName": "Jun Dam",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
           },
           "_publishedAt": "2024-06-20T16:21:42+01:00",
-          "description": "本节概述了我们平台在遵守全球监管标准和实施先进安全措施方面的积极做法，确保加密和AI领域的用户在一个安全合规的环境中。",
+          "description": "本节概述了我们平台遵守全球监管标准和实施先进安全措施的积极方法，确保加密和AI领域的用户在一个安全合规的环境中。",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1710562461-bitlauncherregsecimg.webp"
           },
@@ -377,14 +377,14 @@
           "topics": [
             "如何"
           ],
-          "title": "如何注册并进行Bitcash KYC",
+          "title": "如何注册并完成Bitcash的KYC",
           "slug": "how-to-register-and-kyc-to-bitcash",
           "authorName": "Roberto \"Andler\" Lucas",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1715639160-andler-file-photo.jpg"
           },
           "_publishedAt": "2024-06-20T16:20:40+01:00",
-          "description": "我们将涵盖一系列主题，包括注册Bitcash账户、设置账户名称和推荐人、识别和保护设备、提供身份和个人信息进行KYC、进行KYC验证的拍照以及等待批准和加入社区。",
+          "description": "我们将涵盖一系列主题，包括注册Bitcash账户、设置账户名称和推荐人、识别和保护设备、提供身份和个人信息以完成KYC、进行KYC验证的拍照，以及等待批准和加入社区。",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1715638953-bitcash-logo-frame-w-bg.png"
           },
@@ -407,14 +407,14 @@
           "topics": [
             "发射台"
           ],
-          "title": "战略路线图：开创区块链创新与人工智能初创企业成功",
+          "title": "战略路线图：开创区块链创新与AI初创公司成功",
           "slug": "strategic-roadmap-pioneering-blockchain-innovation-and-ai-startup-success",
           "authorName": "Jun Dam",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
           },
           "_publishedAt": "2024-03-15T05:13:30+00:00",
-          "description": "概述bitLauncher分阶段计划，用于突破性技术部署，社区驱动增长以及公平的Antelope链的开发，以革命化人工智能和加密货币景观。",
+          "description": "概述bitLauncher分阶段计划，用于开创性技术部署，社区驱动增长以及公平的Antelope链的开发，以革命化AI和加密货币景观。",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1710479575-roadmapbitlauncher.webp"
           },
@@ -435,16 +435,16 @@
         {
           "id": "I4jShMnWRruvJgDbrucwDw",
           "topics": [
-            "launchpad"
+            "发射台"
           ],
-          "title": "The Technological Backbone of bitLauncher",
+          "title": "bitLauncher的技术支柱",
           "slug": "the-technological-backbone-of-bitcash-launchpad",
           "authorName": "Jun Dam",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
           },
           "_publishedAt": "2024-03-14T05:33:20+00:00",
-          "description": "This section details bitLauncher's integration of cutting-edge blockchain technologies and innovative tools, including Bitcash payments, DAO governance, and a non-profit blockchain vision, setting the stage for transparent, secure, and equitable AI startup growth.",
+          "description": "本节详细介绍了bitLauncher集成尖端区块链技术和创新工具的情况，包括Bitcash支付、DAO治理以及非营利区块链愿景，为透明、安全和公平的AI创业增长搭建了舞台。",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1710011354-techsectionwpimg.webp"
           },
@@ -465,16 +465,16 @@
         {
           "id": "BEfgGhndSsCn5MBU89RO3A",
           "topics": [
-            "launchpad"
+            "发射台"
           ],
-          "title": "Empowering Innovation: Vision, Mission, and Strategic Goals of bitLauncher",
+          "title": "赋能创新：bitLauncher的愿景、使命和战略目标",
           "slug": "empowering-innovation-vision-mission-and-strategic-goals-of-bitcash-launchpad",
           "authorName": "Jun Dam",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
           },
           "_publishedAt": "2024-03-14T05:31:29+00:00",
-          "description": "This section outlines bitcash Launchpad's vision to revolutionize AI innovation with cryptocurrency, detailing our mission to democratize AI development and our strategic goals for creating a community-driven, transparent, and ethical technological future.",
+          "description": "本节概述了bitcash发射台利用加密货币革新AI创新的愿景，详细说明了我们实现AI开发民主化的使命以及创建一个社区驱动、透明和道德的技术未来的战略目标。",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1709370139-whitepaper-p4.webp"
           },
@@ -542,7 +542,7 @@
             "url": "https://www.datocms-assets.com/101962/1694760071-startupblogger2.png"
           },
           "_publishedAt": "2024-06-20T16:40:00+01:00",
-          "description": "通过我们的初创企业智能预算指南构建坚实的财务基础。学习有效管理资金以实现可持续的业务增长。",
+          "description": "通过我们的初创企业智能预算指南构建坚实的财务基础。学习有效管理资金，实现可持续的业务增长。",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687310597-sb19-img1.png"
           },
@@ -566,7 +566,7 @@
             "入门",
             "团队与人力资源"
           ],
-          "title": "构建梦之队：组建您的创业团队的终极指南",
+          "title": "组建梦之队：组建您的创业团队的终极指南",
           "slug": "building-a-dream-team-the-ultimate-guide-to-assembling-your-startup-squad",
           "authorName": "Bootstrap Briggs",
           "authorPicture": {
@@ -594,17 +594,17 @@
         {
           "id": "166322203",
           "topics": [
-            "Getting Started",
-            "Sales & Marketing"
+            "入门",
+            "销售与市场"
           ],
-          "title": "The Blueprint to Success: A Guide to Crafting a Winning Sales Plan for Your Startup",
+          "title": "成功蓝图：为您的初创企业制定赢销售计划指南",
           "slug": "the-blueprint-to-success-a-guide-to-crafting-a-winning-sales-plan-for-your-startu",
           "authorName": "Steve Savant",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760845-startupbloggeralt2.png"
           },
           "_publishedAt": "2023-10-05T02:08:22+01:00",
-          "description": "Craft a winning sales plan for your startup with our blueprint to success. Gain insights into driving revenue and achieving sustainable growth.",
+          "description": "用我们的成功蓝图为您的初创企业制定赢销售计划。了解如何推动收入和实现可持续增长。",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687212250-sb16-img1.png"
           },
@@ -672,7 +672,7 @@
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T09:17:05+01:00",
-          "description": "探索区块链绩效支付系统中绩效指标的力量。学习有效地将激励与平台目标对齐。",
+          "description": "探索区块链绩效支付系统中绩效指标的力量。学习如何有效地将激励与平台目标对齐。",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690770918-cbc2-img1.png"
           },
@@ -703,7 +703,7 @@
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T09:15:12+01:00",
-          "description": "深入了解区块链平台中的绩效支付激励的复杂性。了解成功的权衡和设计考虑。",
+          "description": "深入了解区块链平台中绩效支付激励的复杂性。学习成功的权衡和设计考虑。",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690770568-cbc1-img1.png"
           },
@@ -724,17 +724,17 @@
         {
           "id": "180556627",
           "topics": [
-            "Commentary",
-            "Smart Contracts"
+            "评论",
+            "智能合约"
           ],
-          "title": "Incomplete Contracts and Blockchain [Commentary]",
+          "title": "不完整合约与区块链[评论]",
           "slug": "incomplete-contracts-and-blockchain-commentary",
           "authorName": "Crypto Clairity",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T09:14:44+01:00",
-          "description": "Demystify the relationship between incomplete contracts and blockchain. Understand how blockchain can fill contractual gaps.",
+          "description": "揭示不完整合约与区块链之间的关系。了解区块链如何填补合约空白。",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690856249-cbc5-img1.png"
           },
@@ -794,16 +794,16 @@
           "id": "165340146",
           "topics": [
             "入门",
-            "工作证明"
+            "工作量证明"
           ],
-          "title": "比特币的经济安全性：工作证明如何确保网络的安全与稳定",
+          "title": "比特币的经济安全性：工作量证明如何确保网络的安全与稳定",
           "slug": "the-economic-security-of-bitcoin-how-proof-of-work-enables-a-safe-and-secure-netw",
           "authorName": "Maxi Millie",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
           },
           "_publishedAt": "2023-10-05T05:53:43+01:00",
-          "description": "探索比特币的经济安全性和工作证明的力量。了解这项创新技术如何确保未来网络的安全与稳定。",
+          "description": "探索比特币的经济安全性和工作量证明的力量。了解这项创新技术如何确保未来网络的安全与稳定。",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686856982-bb8-img1.png"
           },
@@ -824,17 +824,17 @@
         {
           "id": "165340050",
           "topics": [
-            "入门",
-            "法律"
+            "Getting Started",
+            "Legal"
           ],
-          "title": "导航比特币的法律和监管环境：了解规则和机会",
+          "title": "Navigating the Legal and Regulatory Landscape of Bitcoin: Understanding the Rules and Opportunities",
           "slug": "navigating-the-legal-and-regulatory-landscape-of-bitcoin-understanding-the-rules",
           "authorName": "Maxi Millie",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
           },
           "_publishedAt": "2023-10-05T05:52:05+01:00",
-          "description": "通过我们全面的比特币法律和监管环境指南，保持知情并遵守规定。自信地应对加密货币的复杂性。",
+          "description": "Stay informed and compliant with our comprehensive guide to the legal and regulatory landscape of Bitcoin. Navigate the complexities of cryptocurrency with confidence.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686855768-bb7-img1edited.png"
           },
@@ -855,17 +855,17 @@
         {
           "id": "165337859",
           "topics": [
-            "Getting Started",
-            "Security"
+            "入门",
+            "安全"
           ],
-          "title": "The Future of Bitcoin Storage: An Introduction to Bitcoin Wallets and Innovative Storage Solutions",
+          "title": "比特币存储的未来：比特币钱包和创新存储解决方案简介",
           "slug": "the-future-of-bitcoin-storage-an-introduction-to-bitcoin-wallets-and-innovative-s",
           "authorName": "Maxi Millie",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
           },
           "_publishedAt": "2023-10-05T05:50:52+01:00",
-          "description": "Explore the world of Bitcoin wallets and innovative storage solutions. Learn how to secure and manage your digital assets with our comprehensive introductory guide.",
+          "description": "探索比特币钱包和创新存储解决方案的世界。了解如何使用我们的全面入门指南来保护和管理您的数字资产。",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686854653-bb6-img1.png"
           },
@@ -893,7 +893,7 @@
           "id": "174592759",
           "topics": [
             "入门",
-            "替代方案"
+            "替代品"
           ],
           "title": "释放潜力：掌握替代投资以实现投资者成功",
           "slug": "unleashing-the-potential-mastering-alternative-investments-for-investor-success",
@@ -957,14 +957,14 @@
             "入门",
             "风险管理"
           ],
-          "title": "保护您的投资：全面识别和避免投资欺诈指南",
+          "title": "保护您的投资：全面指南，识别和避免投资欺诈",
           "slug": "shield-your-investments-a-comprehensive-guide-to-recognizing-and-avoiding-investm",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:08:41+01:00",
-          "description": "保护您辛苦赚来的钱！学会识别投资骗局，并通过我们的全面指南来避免投资欺诈，保护您的财务未来",
+          "description": "保护您辛苦赚来的钱！学会识别投资骗局，并通过我们的全面指南来保护您的财务未来，避免投资欺诈",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689384626-ib19-img1.png"
           },
@@ -985,17 +985,17 @@
         {
           "id": "176002763",
           "topics": [
-            "Getting Started",
-            "Insurance"
+            "入门",
+            "保险"
           ],
-          "title": "Insurance Planning 101: Navigating Life, Disability, and Long-Term Care Insurance",
+          "title": "保险规划101：导航人寿、残疾和长期护理保险",
           "slug": "insurance-planning-101-navigating-life-disability-and-long-term-care-insurance",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:07:57+01:00",
-          "description": "Secure your future with smart insurance planning. Dive into life, disability, and long-term care insurance to safeguard your financial health.",
+          "description": "通过智能保险规划确保您的未来。深入了解人寿、残疾和长期护理保险，以保障您的财务健康。",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689381721-ib18-img1.png"
           },

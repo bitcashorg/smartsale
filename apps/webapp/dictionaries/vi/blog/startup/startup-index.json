@@ -1,23 +1,23 @@
 {
   "sections": [
     {
-      "name": "Comenzando",
+      "name": "Bắt đầu",
       "slug": "getting started",
       "articles": [
         {
           "id": "165921766",
           "topics": [
-            "Comenzando",
-            "Legal"
+            "Bắt đầu",
+            "Pháp lý"
           ],
-          "title": "Navegando el Paisaje Legal: Consideraciones Legales Esenciales para Fundadores de Startups",
+          "title": "Định hướng Phong cảnh Pháp lý: Những Điều Cần Biết về Pháp lý Cho Người Sáng Lập Startup",
           "slug": "navigating-the-legal-landscape-essential-legal-considerations-for-startup-founder",
           "authorName": "Steve Savant",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760845-startupbloggeralt2.png"
           },
           "_publishedAt": "2024-06-20T17:21:44+01:00",
-          "description": "Navegue el paisaje legal con confianza con nuestra guía. Consideraciones legales esenciales para fundadores de startups para proteger y asegurar el crecimiento empresarial.",
+          "description": "Định hướng phong cảnh pháp lý một cách tự tin với hướng dẫn của chúng tôi. Những điều cần biết về pháp lý cho người sáng lập startup để bảo vệ và đảm bảo sự phát triển kinh doanh.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687128753-sb8-img2.png"
           },
@@ -38,17 +38,17 @@
         {
           "id": "166795692",
           "topics": [
-            "Primeros Pasos",
-            "Negocios y Administracion"
+            "Bắt đầu",
+            "Kinh doanh & Quản trị"
           ],
-          "title": "Dominando el Flujo de Caja: La Guia Definitiva para Fundadores de Startups",
+          "title": "Thành thạo Dòng tiền: Hướng dẫn Tối thượng cho Nhà sáng lập Startup",
           "slug": "mastering-cash-flow-the-ultimate-guide-for-startup-founders",
           "authorName": "Bootstrap Briggs",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760071-startupblogger2.png"
           },
           "_publishedAt": "2024-06-20T16:40:26+01:00",
-          "description": "Domina el flujo de caja con nuestra guia definitiva para fundadores de startups. Aprende estrategias para mantener la liquidez, gestionar las finanzas y asegurar la estabilidad del negocio.",
+          "description": "Thành thạo dòng tiền với hướng dẫn tối thượng của chúng tôi dành cho nhà sáng lập startup. Học các chiến lược để duy trì tính thanh khoản, quản lý tài chính và đảm bảo sự ổn định kinh doanh.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687312847-sb20-img1.png"
           },
@@ -69,17 +69,17 @@
         {
           "id": "166788631",
           "topics": [
-            "Comenzando",
-            "Negocios y Administracion"
+            "Bắt đầu",
+            "Kinh doanh & Quản trị"
           ],
-          "title": "Presupuestacion Inteligente para Startups: Una Guia Paso a Paso para Construir una Base Financiera Solida",
+          "title": "Ngân sách thông minh cho các startup: Hướng dẫn từng bước để xây dựng nền tảng tài chính vững chắc",
           "slug": "smart-budgeting-for-startups-a-step-by-step-guide-to-building-a-strong-financial",
           "authorName": "Bootstrap Briggs",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760071-startupblogger2.png"
           },
           "_publishedAt": "2024-06-20T16:40:00+01:00",
-          "description": "Construye una base financiera solida con nuestra guia de presupuestacion inteligente para startups. Aprende a gestionar fondos de manera efectiva para el crecimiento sostenible del negocio.",
+          "description": "Xây dựng nền tảng tài chính vững chắc với hướng dẫn ngân sách thông minh của chúng tôi dành cho các startup. Học cách quản lý quỹ hiệu quả để phát triển doanh nghiệp bền vững.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687310597-sb19-img1.png"
           },
@@ -623,23 +623,23 @@
       ]
     },
     {
-      "name": "Legal",
+      "name": "Pháp lý",
       "slug": "legal",
       "articles": [
         {
           "id": "165921766",
           "topics": [
-            "Primeros pasos",
-            "Legal"
+            "Bắt đầu",
+            "Pháp lý"
           ],
-          "title": "Navegando el Paisaje Legal: Consideraciones Legales Esenciales para Fundadores de Startups",
+          "title": "Định hướng Phong cảnh Pháp lý: Những Điều Cần Biết về Pháp lý Cho Người Sáng Lập Startup",
           "slug": "navigating-the-legal-landscape-essential-legal-considerations-for-startup-founder",
           "authorName": "Steve Savant",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760845-startupbloggeralt2.png"
           },
           "_publishedAt": "2024-06-20T17:21:44+01:00",
-          "description": "Navega el paisaje legal con confianza con nuestra guía. Consideraciones legales esenciales para fundadores de startups para proteger y asegurar el crecimiento empresarial.",
+          "description": "Định hướng phong cảnh pháp lý một cách tự tin với hướng dẫn của chúng tôi. Những điều cần biết về pháp lý cho người sáng lập startup để bảo vệ và đảm bảo sự phát triển kinh doanh.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687128753-sb8-img2.png"
           },
@@ -660,17 +660,17 @@
         {
           "id": "165927224",
           "topics": [
-            "Comenzando",
-            "Legal"
+            "Bắt đầu",
+            "Pháp lý"
           ],
-          "title": "Descifrando el Laberinto de Estructuras Empresariales: Una Guía para Fundadores de Startups",
+          "title": "Giải mã mê cung cấu trúc kinh doanh: Hướng dẫn cho các nhà sáng lập khởi nghiệp",
           "slug": "decoding-the-business-structure-maze-a-guide-for-start-up-founders",
           "authorName": "Steve Savant",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760845-startupbloggeralt2.png"
           },
           "_publishedAt": "2023-10-05T01:59:45+01:00",
-          "description": "Descifra el laberinto de estructuras empresariales con nuestra guía. Perspectivas vitales para que los fundadores de startups establezcan un marco de negocio sólido y sostenible.",
+          "description": "Giải mã mê cung cấu trúc kinh doanh với hướng dẫn của chúng tôi. Những hiểu biết thiết yếu cho các nhà sáng lập startup để thiết lập một khuôn khổ kinh doanh vững chắc và bền vững.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687132710-sb10-img1.png"
           },
@@ -691,17 +691,17 @@
         {
           "id": "165921857",
           "topics": [
-            "Comenzando",
-            "Legal"
+            "Bắt đầu",
+            "Pháp lý"
           ],
-          "title": "Protegiendo las Joyas de la Corona de tu Startup: Una Guía para Proteger tu Propiedad Intelectual",
+          "title": "Bảo vệ Báu vật của Startup bạn: Hướng dẫn Bảo vệ Sở hữu Trí tuệ",
           "slug": "safeguarding-your-startup-s-crown-jewels-a-guide-to-protecting-your-intellectual",
           "authorName": "Steve Savant",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760845-startupbloggeralt2.png"
           },
           "_publishedAt": "2023-10-05T01:58:48+01:00",
-          "description": "Aprende a proteger los activos más valiosos de tu startup con nuestra guía de propiedad intelectual. Estrategias esenciales para salvaguardar el futuro de tu negocio.",
+          "description": "Học cách bảo vệ tài sản quý giá nhất của startup bạn với hướng dẫn sở hữu trí tuệ của chúng tôi. Các chiến lược thiết yếu để bảo vệ tương lai kinh doanh của bạn.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687130315-sb9-img1.png"
           },
@@ -722,23 +722,23 @@
       ]
     },
     {
-      "name": "Negocios y Administración",
+      "name": "Kinh doanh & Quản trị",
       "slug": "business & admin",
       "articles": [
         {
           "id": "166795692",
           "topics": [
-            "Primeros Pasos",
-            "Negocios y Administración"
+            "Bắt đầu",
+            "Kinh doanh & Quản trị"
           ],
-          "title": "Dominando el Flujo de Caja: La Guía Definitiva para Fundadores de Startups",
+          "title": "Thành thạo Dòng tiền: Hướng dẫn Tối thượng cho Nhà sáng lập Startup",
           "slug": "mastering-cash-flow-the-ultimate-guide-for-startup-founders",
           "authorName": "Bootstrap Briggs",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760071-startupblogger2.png"
           },
           "_publishedAt": "2024-06-20T16:40:26+01:00",
-          "description": "Domina el flujo de caja con nuestra guía definitiva para fundadores de startups. Aprende estrategias para mantener la liquidez, gestionar las finanzas y asegurar la estabilidad del negocio.",
+          "description": "Thành thạo dòng tiền với hướng dẫn tối thượng của chúng tôi dành cho nhà sáng lập startup. Học các chiến lược để duy trì tính thanh khoản, quản lý tài chính và đảm bảo sự ổn định kinh doanh.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687312847-sb20-img1.png"
           },
@@ -759,17 +759,17 @@
         {
           "id": "166788631",
           "topics": [
-            "Comenzando",
-            "Negocios y Administración"
+            "Bắt đầu",
+            "Kinh doanh & Quản trị"
           ],
-          "title": "Presupuestación Inteligente para Startups: Una Guía Paso a Paso para Construir una Base Financiera Sólida",
+          "title": "Ngân sách thông minh cho các startup: Hướng dẫn từng bước để xây dựng nền tảng tài chính vững chắc",
           "slug": "smart-budgeting-for-startups-a-step-by-step-guide-to-building-a-strong-financial",
           "authorName": "Bootstrap Briggs",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760071-startupblogger2.png"
           },
           "_publishedAt": "2024-06-20T16:40:00+01:00",
-          "description": "Construye una base financiera sólida con nuestra guía de presupuestación inteligente para startups. Aprende a gestionar los fondos de manera efectiva para el crecimiento sostenible del negocio.",
+          "description": "Xây dựng nền tảng tài chính vững chắc với hướng dẫn ngân sách thông minh của chúng tôi dành cho các startup. Học cách quản lý quỹ hiệu quả để phát triển kinh doanh bền vững.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687310597-sb19-img1.png"
           },
@@ -790,17 +790,17 @@
         {
           "id": "166788522",
           "topics": [
-            "Comenzando",
-            "Negocios y Administración"
+            "Bắt đầu",
+            "Kinh doanh & Quản trị"
           ],
-          "title": "Proyectando Prosperidad: Una Guía para Establecer Proyecciones Financieras Realistas para tu Startup",
+          "title": "Dự báo Thịnh vượng: Hướng dẫn Đặt Dự báo Tài chính Thực tế cho Doanh nghiệp Khởi nghiệp của Bạn",
           "slug": "projecting-prosperity-a-guide-to-setting-realistic-financial-projections-for-your",
           "authorName": "Bootstrap Briggs",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760071-startupblogger2.png"
           },
           "_publishedAt": "2023-10-05T02:07:18+01:00",
-          "description": "Establece proyecciones financieras realistas con nuestra guía para startups. Aprende a proyectar prosperidad, gestionar finanzas y asegurar el futuro de tu negocio.",
+          "description": "Đặt dự báo tài chính thực tế với hướng dẫn khởi nghiệp của chúng tôi. Học cách dự báo sự thịnh vượng, quản lý tài chính và bảo đảm tương lai của doanh nghiệp.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687308062-sb18-img1.png"
           },
@@ -852,23 +852,23 @@
       ]
     },
     {
-      "name": "Equipos y RRHH",
+      "name": "Đội ngũ & Nhân sự",
       "slug": "teams & hr",
       "articles": [
         {
           "id": "165816954",
           "topics": [
-            "Comenzando",
-            "Equipos y RRHH"
+            "Bắt đầu",
+            "Đội ngũ & Nhân sự"
           ],
-          "title": "Construyendo un Equipo de Ensueño: La Guía Definitiva para Armar Tu Escuadrón de Inicio",
+          "title": "Xây dựng Đội mơ ước: Hướng dẫn Tối thượng để Tập hợp Đội ngũ Khởi nghiệp của Bạn",
           "slug": "building-a-dream-team-the-ultimate-guide-to-assembling-your-startup-squad",
           "authorName": "Bootstrap Briggs",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760071-startupblogger2.png"
           },
           "_publishedAt": "2024-06-19T03:48:19+01:00",
-          "description": "Forma tu equipo ideal de inicio con nuestra guía completa. Aumenta la eficiencia del equipo y el crecimiento de la startup con nuestros consejos expertos.",
+          "description": "Hình thành đội ngũ khởi nghiệp lý tưởng của bạn với hướng dẫn toàn diện của chúng tôi. Tăng hiệu quả làm việc nhóm và tăng trưởng khởi nghiệp với lời khuyên của chuyên gia.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687119615-sb5-img1.png"
           },
@@ -889,23 +889,23 @@
       ]
     },
     {
-      "name": "Ventas y Marketing",
+      "name": "Kinh doanh & Tiếp thị",
       "slug": "sales & marketing",
       "articles": [
         {
           "id": "166322203",
           "topics": [
-            "Comenzando",
-            "Ventas y Marketing"
+            "Bắt đầu",
+            "Kinh doanh & Tiếp thị"
           ],
-          "title": "El Plan Maestro para el Exito: Una Guia para Elaborar un Plan de Ventas Ganador para tu Startup",
+          "title": "Bản đồ tới thành công: Hướng dẫn tạo kế hoạch bán hàng chiến thắng cho doanh nghiệp khởi nghiệp của bạn",
           "slug": "the-blueprint-to-success-a-guide-to-crafting-a-winning-sales-plan-for-your-startu",
           "authorName": "Steve Savant",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760845-startupbloggeralt2.png"
           },
           "_publishedAt": "2023-10-05T02:08:22+01:00",
-          "description": "Elabora un plan de ventas ganador para tu startup con nuestro plan maestro para el exito. Obtén perspectivas sobre cómo generar ingresos y lograr un crecimiento sostenible.",
+          "description": "Tạo một kế hoạch bán hàng chiến thắng cho doanh nghiệp khởi nghiệp của bạn với bản đồ tới thành công của chúng tôi. Hiểu biết sâu sắc về việc thúc đẩy doanh thu và đạt được sự tăng trưởng bền vững.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687212250-sb16-img1.png"
           },
@@ -926,17 +926,17 @@
         {
           "id": "166788454",
           "topics": [
-            "Comenzando",
-            "Ventas y Marketing"
+            "Bắt đầu",
+            "Bán hàng & Tiếp thị"
           ],
-          "title": "La guia definitiva para dominar los costos de adquisicion de clientes para startups",
+          "title": "Hướng dẫn Tối thượng để Thành thạo Chi phí Thu hút Khách hàng cho Các công ty khởi nghiệp",
           "slug": "the-ultimate-guide-to-mastering-customer-acquisition-costs-for-startups",
           "authorName": "Bootstrap Briggs",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760071-startupblogger2.png"
           },
           "_publishedAt": "2023-10-05T02:06:22+01:00",
-          "description": "Domina los costos de adquisicion de clientes con nuestra guia definitiva. Aprende a optimizar los gastos, atraer clientes y maximizar la rentabilidad de tu startup.",
+          "description": "Thành thạo chi phí thu hút khách hàng với hướng dẫn tối thượng của chúng tôi. Học cách tối ưu hóa chi tiêu, thu hút khách hàng và tối đa hóa lợi nhuận của công ty khởi nghiệp của bạn.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687305683-sb17-img1.png"
           },
@@ -957,17 +957,17 @@
         {
           "id": "166286175",
           "topics": [
-            "Comenzando",
-            "Ventas y Marketing"
+            "Bắt đầu",
+            "Kinh doanh & Tiếp thị"
           ],
-          "title": "Maximizando tu Alcance de Marketing: Una Guía para Utilizar las Redes Sociales en Startups",
+          "title": "Tối đa hóa Tầm ảnh hưởng Tiếp thị của bạn: Hướng dẫn Sử dụng Mạng Xã hội cho Các Startup",
           "slug": "maximizing-your-marketing-reach-a-guide-to-utilizing-social-media-for-startups",
           "authorName": "Steve Savant",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760845-startupbloggeralt2.png"
           },
           "_publishedAt": "2023-10-05T02:05:42+01:00",
-          "description": "Maximiza tu alcance de marketing con nuestra guía sobre redes sociales para startups. Aprende a involucrar a las audiencias y aprovechar las plataformas para el crecimiento empresarial.",
+          "description": "Tối đa hóa tầm ảnh hưởng tiếp thị của bạn với hướng dẫn của chúng tôi về mạng xã hội cho các startup. Học cách thu hút khán giả và tận dụng các nền tảng cho sự phát triển kinh doanh.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687209924-sb15-img2.png"
           },
@@ -1112,23 +1112,23 @@
       ]
     },
     {
-      "name": "Recaudación de fondos",
+      "name": "Gây quỹ",
       "slug": "fundraising",
       "articles": [
         {
           "id": "165817305",
           "topics": [
-            "Comenzando",
-            "Recaudación de fondos"
+            "Bắt đầu",
+            "Gây quỹ"
           ],
-          "title": "Descubriendo los Secretos de la Recaudación de Fondos Exitosa para Startups: Una Guía Completa",
+          "title": "Khám phá Bí mật của Việc Gây quỹ Thành công cho Startup: Hướng dẫn Toàn diện",
           "slug": "unlocking-the-secrets-of-successful-startup-fundraising-a-comprehensive-guide",
           "authorName": "Steve Savant",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760845-startupbloggeralt2.png"
           },
           "_publishedAt": "2023-10-05T01:57:06+01:00",
-          "description": "Descubre los secretos de la recaudación de fondos exitosa para startups en nuestra guía completa. Aprende a atraer inversores y asegurar la financiación que tu empresa necesita.",
+          "description": "Khám phá các bí mật của việc gây quỹ thành công cho startup trong hướng dẫn toàn diện của chúng tôi. Học cách thu hút nhà đầu tư và đảm bảo nguồn vốn cần thiết cho doanh nghiệp của bạn.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687124658-sb7-img1.png"
           },
@@ -1156,8 +1156,8 @@
       "title": "Startups | Bitcash Blog",
       "twitterCard": "summary_large_image"
     },
-    "description": "Suenalo. Construyelo. Escalalo.",
-    "title": "Emprendimientos",
+    "description": "Mơ ước nó. Xây dựng nó. Phát triển nó.",
+    "title": "Khởi nghiệp",
     "seoType": "startup",
     "id": "178642409",
     "_createdAt": "2023-07-24T18:40:21+01:00"

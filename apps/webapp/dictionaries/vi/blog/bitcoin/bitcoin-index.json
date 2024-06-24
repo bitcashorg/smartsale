@@ -1,23 +1,23 @@
 {
   "sections": [
     {
-      "name": "Comenzando",
+      "name": "Bắt đầu",
       "slug": "getting started",
       "articles": [
         {
           "id": "165365457",
           "topics": [
-            "Primeros pasos",
-            "Pagos"
+            "Bắt đầu",
+            "Thanh toán"
           ],
-          "title": "Simplificando las Compras en Línea con Bitcoin: Una Guía para Usar Bitcoin en Transacciones",
+          "title": "Tối ưu hóa Mua hàng Trực tuyến với Bitcoin: Hướng dẫn Sử dụng Bitcoin cho Giao dịch",
           "slug": "streamlining-online-purchases-with-bitcoin-a-guide-to-using-bitcoin-for-transacti",
           "authorName": "Maxi Millie",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
           },
           "_publishedAt": "2023-10-05T06:03:51+01:00",
-          "description": "Descubre la conveniencia de las compras en línea con Bitcoin. Aprende cómo usar Bitcoin de manera fácil para transacciones seguras y sin interrupciones en nuestra guía completa.",
+          "description": "Khám phá sự tiện lợi của việc mua hàng trực tuyến bằng Bitcoin. Tìm hiểu cách sử dụng Bitcoin một cách dễ dàng cho các giao dịch an toàn và liền mạch trong hướng dẫn toàn diện của chúng tôi.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686858962-bb10-img1.png"
           },
@@ -38,18 +38,18 @@
         {
           "id": "165362142",
           "topics": [
-            "Comenzando",
-            "Prueba de trabajo",
-            "Minería"
+            "Bắt đầu",
+            "Chứng minh công việc",
+            "Đào"
           ],
-          "title": "Desbloqueando el poder de la minería de Bitcoin: Una introducción a los algoritmos de prueba de trabajo",
+          "title": "Khám phá sức mạnh của Đào Bitcoin: Giới thiệu về Thuật toán Chứng minh công việc",
           "slug": "unlocking-the-power-of-bitcoin-mining-an-introduction-to-proof-of-work-algorithms",
           "authorName": "Maxi Millie",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
           },
           "_publishedAt": "2023-10-05T05:55:09+01:00",
-          "description": "Sumérgete en el mundo de la minería de Bitcoin y el fascinante concepto de los algoritmos de prueba de trabajo. Explora el potencial y las recompensas de esta tecnología transformadora.",
+          "description": "Khám phá thế giới đào Bitcoin và khái niệm hấp dẫn về thuật toán chứng minh công việc. Khám phá tiềm năng và phần thưởng của công nghệ biến đổi này.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686858321-bb9-img0edited.png"
           },
@@ -70,17 +70,17 @@
         {
           "id": "165340146",
           "topics": [
-            "Getting Started",
-            "Proof-of-Work"
+            "Bắt đầu",
+            "Chứng minh công việc"
           ],
-          "title": "The Economic Security of Bitcoin: How Proof-of-Work Enables a Safe and Secure Network",
+          "title": "An ninh kinh tế của Bitcoin: Làm thế nào Chứng minh công việc tạo ra một mạng lưới an toàn và bảo mật",
           "slug": "the-economic-security-of-bitcoin-how-proof-of-work-enables-a-safe-and-secure-netw",
           "authorName": "Maxi Millie",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
           },
           "_publishedAt": "2023-10-05T05:53:43+01:00",
-          "description": "Discover the economic security of Bitcoin and the power of proof-of-work. Explore how this innovative technology ensures a safe and secure network for the future.",
+          "description": "Khám phá an ninh kinh tế của Bitcoin và sức mạnh của chứng minh công việc. Khám phá cách công nghệ sáng tạo này đảm bảo một mạng lưới an toàn và bảo mật cho tương lai.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686856982-bb8-img1.png"
           },
@@ -316,23 +316,23 @@
       ]
     },
     {
-      "name": "Pagos",
+      "name": "Thanh toán",
       "slug": " payments",
       "articles": [
         {
           "id": "165365457",
           "topics": [
-            "Primeros Pasos",
-            "Pagos"
+            "Bắt đầu",
+            "Thanh toán"
           ],
-          "title": "Simplificando las Compras en Línea con Bitcoin: Una Guía para Usar Bitcoin en Transacciones",
+          "title": "Tối ưu hóa Mua hàng Trực tuyến với Bitcoin: Hướng dẫn Sử dụng Bitcoin cho Giao dịch",
           "slug": "streamlining-online-purchases-with-bitcoin-a-guide-to-using-bitcoin-for-transacti",
           "authorName": "Maxi Millie",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
           },
           "_publishedAt": "2023-10-05T06:03:51+01:00",
-          "description": "Descubre la comodidad de las compras en línea con Bitcoin. Aprende cómo usar Bitcoin de manera fácil para transacciones seguras y sin interrupciones en nuestra guía completa.",
+          "description": "Khám phá sự tiện lợi của việc mua hàng trực tuyến bằng Bitcoin. Tìm hiểu cách sử dụng Bitcoin một cách dễ dàng cho các giao dịch an toàn và liền mạch trong hướng dẫn toàn diện của chúng tôi.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686858962-bb10-img1.png"
           },
@@ -353,24 +353,24 @@
       ]
     },
     {
-      "name": "Prueba de trabajo",
+      "name": "Chứng minh công việc",
       "slug": "proof-of-work",
       "articles": [
         {
           "id": "165362142",
           "topics": [
-            "Comenzando",
-            "Prueba de trabajo",
-            "Minería"
+            "Bắt đầu",
+            "Chứng minh công việc",
+            "Đào"
           ],
-          "title": "Desbloqueando el poder de la minería de Bitcoin: Una introducción a los algoritmos de prueba de trabajo",
+          "title": "Khám phá sức mạnh của Đào Bitcoin: Giới thiệu về Thuật toán Chứng minh công việc",
           "slug": "unlocking-the-power-of-bitcoin-mining-an-introduction-to-proof-of-work-algorithms",
           "authorName": "Maxi Millie",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
           },
           "_publishedAt": "2023-10-05T05:55:09+01:00",
-          "description": "Sumérgete en el mundo de la minería de Bitcoin y el fascinante concepto de los algoritmos de prueba de trabajo. Explora el potencial y las recompensas de esta tecnología transformadora.",
+          "description": "Khám phá thế giới đào Bitcoin và khái niệm hấp dẫn về thuật toán chứng minh công việc. Khám phá tiềm năng và phần thưởng của công nghệ biến đổi này.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686858321-bb9-img0edited.png"
           },
@@ -391,17 +391,17 @@
         {
           "id": "165340146",
           "topics": [
-            "Comenzando",
-            "Prueba de trabajo"
+            "Bắt đầu",
+            "Chứng minh công việc"
           ],
-          "title": "La seguridad económica de Bitcoin: Cómo la Prueba de Trabajo permite una red segura y protegida",
+          "title": "An ninh kinh tế của Bitcoin: Làm thế nào Chứng minh công việc tạo điều kiện cho một mạng lưới an toàn và bảo mật",
           "slug": "the-economic-security-of-bitcoin-how-proof-of-work-enables-a-safe-and-secure-netw",
           "authorName": "Maxi Millie",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
           },
           "_publishedAt": "2023-10-05T05:53:43+01:00",
-          "description": "Descubre la seguridad económica de Bitcoin y el poder de la prueba de trabajo. Explora cómo esta tecnología innovadora asegura una red segura y protegida para el futuro.",
+          "description": "Khám phá an ninh kinh tế của Bitcoin và sức mạnh của chứng minh công việc. Khám phá cách công nghệ sáng tạo này đảm bảo một mạng lưới an toàn và bảo mật cho tương lai.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686856982-bb8-img1.png"
           },
@@ -422,24 +422,24 @@
       ]
     },
     {
-      "name": "Minería",
+      "name": "Đào",
       "slug": "mining",
       "articles": [
         {
           "id": "165362142",
           "topics": [
-            "Comenzando",
-            "Prueba de trabajo",
-            "Minería"
+            "Bắt đầu",
+            "Chứng minh công việc",
+            "Đào"
           ],
-          "title": "Desbloqueando el poder de la minería de Bitcoin: Una introducción a los algoritmos de prueba de trabajo",
+          "title": "Khám phá sức mạnh của Đào Bitcoin: Giới thiệu về Thuật toán Chứng minh công việc",
           "slug": "unlocking-the-power-of-bitcoin-mining-an-introduction-to-proof-of-work-algorithms",
           "authorName": "Maxi Millie",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
           },
           "_publishedAt": "2023-10-05T05:55:09+01:00",
-          "description": "Adéntrate en el mundo de la minería de Bitcoin y el fascinante concepto de los algoritmos de prueba de trabajo. Explora el potencial y las recompensas de esta tecnología transformadora.",
+          "description": "Khám phá thế giới đào Bitcoin và khái niệm hấp dẫn về thuật toán chứng minh công việc. Khám phá tiềm năng và phần thưởng của công nghệ biến đổi này.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686858321-bb9-img0edited.png"
           },
@@ -460,23 +460,23 @@
       ]
     },
     {
-      "name": "Legal",
+      "name": "Pháp lý",
       "slug": "legal",
       "articles": [
         {
           "id": "165340050",
           "topics": [
-            "Primeros pasos",
-            "Legal"
+            "Bắt đầu",
+            "Pháp lý"
           ],
-          "title": "Navegando el paisaje legal y regulatorio de Bitcoin: Entendiendo las reglas y oportunidades",
+          "title": "Định hướng Phong cảnh Pháp lý và Quy định của Bitcoin: Hiểu các Quy tắc và Cơ hội",
           "slug": "navigating-the-legal-and-regulatory-landscape-of-bitcoin-understanding-the-rules",
           "authorName": "Maxi Millie",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
           },
           "_publishedAt": "2023-10-05T05:52:05+01:00",
-          "description": "Manténgase informado y cumpla con nuestra guía completa sobre el paisaje legal y regulatorio de Bitcoin. Navegue las complejidades de la criptomoneda con confianza.",
+          "description": "Hãy thông báo và tuân thủ với hướng dẫn toàn diện của chúng tôi về phong cảnh pháp lý và quy định của Bitcoin. Điều hướng sự phức tạp của tiền điện tử với sự tự tin.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686855768-bb7-img1edited.png"
           },
@@ -497,23 +497,23 @@
       ]
     },
     {
-      "name": "Seguridad",
+      "name": "Bảo mật",
       "slug": "security",
       "articles": [
         {
           "id": "165337859",
           "topics": [
-            "Primeros Pasos",
-            "Seguridad"
+            "Bắt đầu",
+            "Bảo mật"
           ],
-          "title": "El Futuro del Almacenamiento de Bitcoin: Una Introducción a las Carteras de Bitcoin y Soluciones Innovadoras de Almacenamiento",
+          "title": "Tương lai của việc lưu trữ Bitcoin: Giới thiệu về ví Bitcoin và các giải pháp lưu trữ sáng tạo",
           "slug": "the-future-of-bitcoin-storage-an-introduction-to-bitcoin-wallets-and-innovative-s",
           "authorName": "Maxi Millie",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
           },
           "_publishedAt": "2023-10-05T05:50:52+01:00",
-          "description": "Explora el mundo de las carteras de Bitcoin y soluciones innovadoras de almacenamiento. Aprende cómo asegurar y gestionar tus activos digitales con nuestra guía introductoria completa.",
+          "description": "Khám phá thế giới của ví Bitcoin và các giải pháp lưu trữ sáng tạo. Tìm hiểu cách bảo mật và quản lý tài sản số của bạn với hướng dẫn giới thiệu toàn diện của chúng tôi.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686854653-bb6-img1.png"
           },
@@ -534,17 +534,17 @@
         {
           "id": "165004875",
           "topics": [
-            "Primeros Pasos",
-            "Seguridad"
+            "Bắt đầu",
+            "Bảo mật"
           ],
-          "title": "Cómo mantener tus Bitcoins seguros en la era digital",
+          "title": "Làm thế nào để giữ an toàn Bitcoin của bạn trong kỷ nguyên số",
           "slug": "how-to-keep-your-bitcoins-safe-in-the-digital-age",
           "authorName": "Maxi Millie",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
           },
           "_publishedAt": "2023-10-05T05:28:36+01:00",
-          "description": "Protege tus Bitcoins en la era digital con nuestros consejos y estrategias de expertos. Aprende técnicas esenciales para proteger tus valiosos activos digitales.",
+          "description": "Bảo vệ Bitcoin của bạn trong kỷ nguyên số với các mẹo và chiến lược của chuyên gia. Học các kỹ thuật thiết yếu để bảo vệ tài sản số quý giá của bạn.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686791711-bb3-img1.png"
           },
@@ -565,23 +565,23 @@
       ]
     },
     {
-      "name": "Historia",
+      "name": "Lịch sử",
       "slug": "history",
       "articles": [
         {
           "id": "164973196",
           "topics": [
-            "Primeros Pasos",
-            "Historia"
+            "Bắt đầu",
+            "Lịch sử"
           ],
-          "title": "La Historia y Evolución de Bitcoin",
+          "title": "Lịch sử và Sự phát triển của Bitcoin",
           "slug": "the-history-and-evolution-of-bitcoin",
           "authorName": "Maxi Millie",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
           },
           "_publishedAt": "2023-10-05T05:38:06+01:00",
-          "description": "Sigue el fascinante viaje de la historia y evolución de Bitcoin. Descubre los orígenes, hitos e impacto transformador de esta tecnología revolucionaria.",
+          "description": "Theo dõi hành trình hấp dẫn của lịch sử và sự phát triển của Bitcoin. Khám phá nguồn gốc, các cột mốc quan trọng và tác động biến đổi của công nghệ mang tính bước ngoặt này.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686789411-bb2-img1edited.png"
           },
@@ -602,23 +602,23 @@
       ]
     },
     {
-      "name": "Intercambio",
+      "name": "Trao đổi",
       "slug": "exchange",
       "articles": [
         {
           "id": "165005107",
           "topics": [
-            "Primeros Pasos",
-            "Intercambio"
+            "Bắt đầu",
+            "Trao đổi"
           ],
-          "title": "La Guía Simplificada para Comprar y Vender Bitcoins",
+          "title": "Hướng dẫn Đơn giản để Mua và Bán Bitcoin",
           "slug": "the-simplified-guide-to-buying-and-selling-bitcoins",
           "authorName": "Maxi Millie",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
           },
           "_publishedAt": "2023-10-05T05:26:26+01:00",
-          "description": "Domina el arte de comprar y vender Bitcoin con nuestra guía simplificada. Aprende estrategias paso a paso y consejos de expertos.",
+          "description": "Thành thạo nghệ thuật mua và bán Bitcoin với hướng dẫn đơn giản của chúng tôi. Học các chiến lược từng bước và mẹo từ chuyên gia.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686793200-bb4-img1.png"
           },
@@ -646,7 +646,7 @@
       "title": "Bitcoin | Bitcash Blog",
       "twitterCard": "summary_large_image"
     },
-    "description": "Pionera de la Era del Oro Digital",
+    "description": "Tiên phong trong kỷ nguyên vàng số",
     "title": "Bitcoin",
     "seoType": "bitcoin",
     "id": "178642411",
