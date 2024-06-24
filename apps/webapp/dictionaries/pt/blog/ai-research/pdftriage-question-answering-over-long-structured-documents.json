@@ -1,0 +1,497 @@
+{
+  "relatedBlogs": [],
+  "blogContent": {
+    "id": "198277117",
+    "topics": [
+      "LLM",
+      "Recuperação"
+    ],
+    "title": "PDFTriage: Perguntas e Respostas em Documentos Longos e Estruturados",
+    "slug": "pdftriage-question-answering-over-long-structured-documents",
+    "authorName": "Prof. Otto Nomos",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+    },
+    "_publishedAt": "2024-05-27T03:33:49+01:00",
+    "description": "Comentário e Avaliação do Resumo",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Publicado em 15 de Setembro"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Autores:"
+                    },
+                    {
+                      "url": "https://huggingface.co/jonsaadfalcon",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Jon Saad-Falcon"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/jbarrow",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Joe Barrow"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ",Alexa Siu,Ani Nenkova,"
+                    },
+                    {
+                      "url": "https://huggingface.co/ryanrossi",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Ryan A. Rossi"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/Franck-Dernoncourt",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Franck Dernoncourt"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Resumo"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Modelos de Linguagem de Grande Escala (LLMs) têm problemas com perguntas e respostas (QA) em documentos em situações onde o documento não cabe no pequeno comprimento de contexto de um LLM. Para superar esse problema, a maioria dos trabalhos existentes foca em recuperar o contexto relevante do documento, representando-os como texto simples. No entanto, documentos como PDFs, páginas da web e apresentações são naturalmente estruturados com diferentes páginas, tabelas, seções e assim por diante. Representar esses documentos estruturados como texto simples é incongruente com o modelo mental do usuário desses documentos com rica estrutura. Quando um sistema tem que consultar o documento para contexto, essa incongruência é destacada, e perguntas aparentemente triviais podem confundir o sistema de QA. Para preencher essa lacuna fundamental no tratamento de documentos estruturados, propomos uma abordagem chamada PDFTriage que permite que os modelos recuperem o contexto com base na estrutura ou conteúdo. Nossos experimentos demonstram a eficácia dos modelos aumentados com PDFTriage em várias classes de perguntas onde LLMs aumentados de recuperação existentes falham. Para facilitar pesquisas adicionais sobre esse problema fundamental, lançamos nosso conjunto de dados de referência consistindo de mais de 900 perguntas geradas por humanos em 80 documentos estruturados de 10 categorias diferentes de tipos de perguntas para QA de documentos."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "url": "https://arxiv.org/abs/2309.08872",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Ver página arXiv"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "https://arxiv.org/pdf/2309.08872",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Ver PDF"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Comentário"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "O artigo intitulado \"PDFTriage: Perguntas e Respostas em Documentos Longos e Estruturados\" aborda o desafio de perguntas e respostas (QA) em documentos que são muito longos para caber dentro do comprimento de contexto de Modelos de Linguagem de Grande Escala (LLMs), especialmente quando esses documentos têm estruturas complexas como PDFs, apresentações e páginas da web."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Principais Insights:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Problema do Comprimento do Contexto"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": O artigo destaca um problema que muitos na comunidade de PLN encontraram — a limitação do tamanho do contexto em LLMs, que se torna problemático para documentos longos."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Estrutura do Documento"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Os autores apontam corretamente que muitos documentos não são apenas texto simples; eles são estruturados com seções, tabelas e páginas. Métodos atuais que achatam essas estruturas podem levar à perda de significado contextual."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Abordagem PDFTriage"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": PDFTriage preenche a lacuna permitindo que o modelo recupere o contexto com base no conteúdo ou na estrutura inerente do documento, preservando seu layout natural."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Conjunto de Dados de Referência"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": O artigo fornece um novo conjunto de dados com mais de 900 perguntas geradas por humanos em documentos estruturados, promovendo pesquisas adicionais nesta área."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Impacto Potencial no Mundo Real:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Melhoria na Compreensão de Documentos"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": A capacidade de extrair efetivamente informações de documentos longos e estruturados tem aplicações generalizadas em indústrias como jurídica, pesquisa acadêmica, finanças e mais."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Experiência do Usuário"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Manter a estrutura natural dos documentos se alinha melhor com como os usuários percebem e entendem eles, provavelmente levando a melhores interações com o usuário e confiança no sistema."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Suporta Tipos Variados de Documentos"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Isso pode ser crucial para cenários profissionais onde os documentos vêm em uma variedade de formatos, como relatórios, artigos de pesquisa, contratos legais, etc."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Habilitador de Pesquisa"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Com o lançamento de um novo conjunto de dados, o artigo pavimenta o caminho para pesquisas adicionais na área, impulsionando avanços no questionamento de documentos."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Desafios:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Complexidade dos Documentos do Mundo Real"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Em cenários do mundo real, os documentos podem ser ainda mais complexos, com múltiplas camadas de estruturas aninhadas, gráficos e anotações. Como o modelo lida com essas complexidades ainda está para ser visto."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Escalabilidade"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Embora a abordagem seja promissora, seria importante ver como ela se escala para repositórios maciços de documentos estruturados."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Considerando a importância de extrair informações significativas de documentos longos e estruturados em ambientes profissionais e acadêmicos, juntamente com a abordagem inovadora e o novo conjunto de dados de referência:"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Eu classificaria o impacto real deste artigo como 8,5 de 10."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Esta metodologia apresenta um avanço significativo no enfrentamento dos desafios do QA de nível de documento, especialmente para documentos estruturados, que são onipresentes em ambientes profissionais."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "researchpaper9",
+            "height": 816,
+            "width": 1456,
+            "filename": "researchpaper9.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Comentário e Avaliação do Resumo",
+      "title": "PDFTriage: Perguntas e Respostas em Documentos Longos e Estruturados",
+      "twitterCard": null,
+      "image": {
+        "width": 1456,
+        "height": 816,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      }
+    }
+  },
+  "topics": [
+    "LLM",
+    "Retrieval"
+  ]
+}

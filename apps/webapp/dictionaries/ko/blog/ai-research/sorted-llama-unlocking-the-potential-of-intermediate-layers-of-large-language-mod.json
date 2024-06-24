@@ -1,0 +1,553 @@
+{
+  "relatedBlogs": [],
+  "blogContent": {
+    "id": "198277138",
+    "topics": [
+      "LLM",
+      "미세 조정"
+    ],
+    "title": "정렬된 LLaMA: 대규모 언어 모델의 중간 계층의 잠재력을 동적 추론을 위해 정렬된 미세 조정(SoFT)을 사용하여 잠금 해제",
+    "slug": "sorted-llama-unlocking-the-potential-of-intermediate-layers-of-large-language-mod",
+    "authorName": "Prof. Otto Nomos",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+    },
+    "_publishedAt": "2024-05-27T03:33:31+01:00",
+    "description": "추상적 코멘터리 및 평가",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "9월 16일에 게시됨"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "저자:"
+                    },
+                    {
+                      "url": "https://huggingface.co/parsareal",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Parsa Kavehzadeh"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/vpcom",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Mojtaba Valipour"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/marzieh7",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Marzieh Tahaei"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/alighodsi",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Ali Ghodsi"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ",Boxing Chen,"
+                    },
+                    {
+                      "url": "https://huggingface.co/mrgzadeh",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Mehdi Rezagholizadeh"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "초록"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "대규모 언어 모델(LLMs)의 급속한 발전은 자연어 처리(NLP)를 혁신하고 있습니다. 이러한 모델은 인간과 유사한 텍스트를 이해하고 생성하는 데 뛰어나지만, 그들의 광범위한 배포는 비용이 많이 들 수 있습니다. SortedNet은 심층 신경망을 위한 동적 추론을 가능하게 하는 최근의 훈련 기술입니다. 이 기술은 네트워크 모듈성을 활용하여 다양한 계산 부하를 가진 하위 모델을 만들고, 중첩된 방식으로 계산/정확도 특성에 따라 정렬합니다. 우리는 SortedNet을 생성적 NLP 작업에 확장하여, 사전 훈련 없이 대규모 언어 모델을 동적으로 만들고 표준 감독된 미세 조정(SFT)을 동일한 비용으로 정렬된 미세 조정(SoFT)으로 대체함으로써 접근 방식을 향상시킵니다. 우리의 접근 방식은 모델 효율성을 향상시켜 추론 중 다양한 시나리오에 대해 여러 모델이 필요 없게 합니다. 이 접근 방식을 사용함으로써, 우리는 변압기의 중간 계층의 잠재력을 목표 출력 생성에 활용할 수 있음을 보여줍니다. 우리의 하위 모델은 원래 모델의 중요한 구성 요소로 남아 있어 저장 요구 사항을 최소화하고 다양한 계산/지연 예산 간의 전환 비용을 줄입니다. 이 접근 방식을 LLaMa 2 13B에 적용하여 스탠포드 알파카 데이터 세트에서 조정하고 PandaLM 벤치마크를 통해 일반 조정 및 조기 종료와 비교함으로써, 정렬된 미세 조정이 원래 모델보다 두 배 빠른 모델을 제공하면서 성능을 유지하거나 향상시킬 수 있음을 보여줍니다."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "url": "https://arxiv.org/abs/2309.08968",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "arXiv 페이지 보기"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "https://arxiv.org/pdf/2309.08968",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "PDF 보기"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "코멘터리"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "\"정렬된 LLaMA: 대규모 언어 모델의 중간 계층의 잠재력을 동적 추론을 위해 정렬된 미세 조정(SoFT)을 사용하여 잠금 해제\"라는 논문은 대규모 언어 모델(LLMs)을 더 효율적이고 비용 효과적으로 만드는 영역에 대해 다룹니다. 주요 초점은 모델에 상당한 조정이 필요 없이 동적 추론을 허용하는 것입니다."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "주요 통찰력:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "효율성 문제"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 이 논문은 LLMs가 계산적으로 비용이 많이 든다는 문제를 인정합니다. 실시간 또는 지연 시간에 민감한 응용 프로그램에서 실제 배포가 어렵습니다."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "SortedNet 적용"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 저자들은 SortedNet 기술(이전에 심층 신경망에 적용됨)을 NLP 작업, 특히 생성적 작업에 확장합니다. 이 접근 방식은 추론 중 모델의 깊이를 동적으로 조정하여 필요한 계산만을 사용하는 것을 목표로 합니다."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "SoFT 대 SFT"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 표준 감독된 미세 조정(SFT)을 정렬된 미세 조정(SoFT)으로 대체하는 제안입니다. 이 변경은 비용을 증가시키지 않지만 더 나은 효율성을 약속합니다."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "중간 계층의 잠재력"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 변압기의 모든 계층이 모든 작업에 필요한 것은 아닙니다. 중간 계층의 잠재력은 목표 출력 생성에 활용될 수 있으며, 이는 더 계산적으로 효율적일 수 있습니다."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "성능 향상"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 제안된 방법은 원래 모델보다 두 배 빠른 모델을 제공할 수 있으며, 동일하거나 더 나은 성능을 유지합니다."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "실제 세계의 영향 가능성:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "비용 효과적인 배포"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": LLMs를 활용하는 회사나 응용 프로그램의 경우, 이 접근 방식은 계산 비용을 크게 줄일 수 있어 광범위한 배포가 더 실현 가능해질 수 있습니다."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "실시간 응용 프로그램"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 더 빠른 모델을 사용하면 실시간 언어 처리가 필요한 응용 프로그램—챗봇, 가상 비서 등—이 크게 혜택을 받을 수 있습니다."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "저장 및 전환 혜택"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 하위 모델이 원래 모델의 일부로 남아 있기 때문에 저장 요구 사항이 증가하지 않습니다. 계산 예산 간의 전환은 더 부드럽고 효율적이 됩니다."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "맞춤화"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 특정 응용 프로그램의 계산 제약에 따라 사용자는 적절한 모델 깊이를 선택할 수 있어 유연성을 제공합니다."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "넓은 적용 가능성"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 이는 미세 조정 접근 방식이므로 다양한 도메인의 다양한 LLMs에 적용될 수 있습니다."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "도전 과제:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "채택 시간"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 기업과 개발자가 이 새로운 미세 조정 접근 방식에 적응하고 채택하는 데 시간이 걸릴 수 있습니다."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "도메인별 도전 과제"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 이 방법의 효과는 다양한 도메인 및 작업에서 광범위하게 테스트되어야 합니다."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "LLMs의 중요성이 계속해서 증가함에 따라 계산 비용을 최적화하면서 성능을 저해하지 않는 것이 필요합니다:"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "이 녈문의 실제 세계 영향을 10점 만점에 9점으로 평가합니다."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "LLMs의 기능을 더 효율적으로 활용할 수 있는 능력은 이 모델들이 다양한 응용 프로그램에서 더 널리 배포되는 방식을 근본적으로 변경할 수 있습니다."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "researchpaper9",
+            "height": 816,
+            "width": 1456,
+            "filename": "researchpaper9.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "추상적 코멘터리 및 평가\n",
+      "title": "정렬된 LLaMA: ... 동적 추론을 위해 정렬된 미세 조정(SoFT)을 사용하여 잠금 해제",
+      "twitterCard": null,
+      "image": {
+        "width": 1456,
+        "height": 816,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      }
+    }
+  },
+  "topics": [
+    "LLM",
+    "Fine-tuning"
+  ]
+}

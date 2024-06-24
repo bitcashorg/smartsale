@@ -1,0 +1,604 @@
+{
+  "relatedBlogs": [],
+  "blogContent": {
+    "id": "198277160",
+    "topics": [
+      "LLM",
+      "Đại lý",
+      "Trò chơi"
+    ],
+    "title": "MindAgent: Tương tác trò chơi mới nổi",
+    "slug": "mindagent-emergent-gaming-interaction",
+    "authorName": "Prof. Otto Nomos",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+    },
+    "_publishedAt": "2024-05-27T03:32:58+01:00",
+    "description": "Bình luận & Đánh giá Tóm tắt",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Được xuất bản vào Ngày 18 tháng 9"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tác giả:"
+                    },
+                    {
+                      "url": "https://huggingface.co/nikepupu",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Ran Gong"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ",Qiuyuan Huang,"
+                    },
+                    {
+                      "url": "https://huggingface.co/jeasinema",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Xiaojian Ma"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/Hoivo63",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Hoi Vo"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/ZaneDurante",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Zane Durante"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/yusukenoda",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Yusuke Noda"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/zlzheng",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Zilong Zheng"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ",Song-Chun Zhu,Demetri Terzopoulos,Li Fei-Fei,"
+                    },
+                    {
+                      "url": "https://huggingface.co/wyngjf",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Jianfeng Gao"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tóm tắt"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Các mô hình ngôn ngữ lớn (LLMs) có khả năng thực hiện lập lịch phức tạp trong hệ thống đa đại lý và có thể phối hợp các đại lý này để hoàn thành các nhiệm vụ phức tạp đòi hỏi sự hợp tác rộng rãi. Tuy nhiên, mặc dù đã giới thiệu nhiều khung trò chơi, cộng đồng vẫn thiếu các tiêu chuẩn đánh giá để xây dựng cơ sở hạ tầng hợp tác đa đại lý chung bao gồm cả LLM và sự hợp tác của con người-NPC. Trong công trình này, chúng tôi đề xuất một cơ sở hạ tầng mới - MindAgent - để đánh giá các khả năng lập kế hoạch và phối hợp mới nổi cho tương tác trò chơi. Cụ thể, cơ sở hạ tầng của chúng tôi tận dụng khung trò chơi hiện có, để i) yêu cầu hiểu biết của người điều phối cho hệ thống đa đại lý, ii) hợp tác với người chơi qua các hướng dẫn chưa được tinh chỉnh và iii) thiết lập học tập trong bối cảnh trên một số lượng ít mẫu với phản hồi. Hơn nữa, chúng tôi giới thiệu CUISINEWORLD, một kịch bản trò chơi mới và tiêu chuẩn liên quan đến việc phân phối hiệu quả hợp tác đa đại lý và giám sát nhiều đại lý chơi trò chơi cùng một lúc. Chúng tôi tiến hành đánh giá toàn diện với CoS tự động mới để tính toán hiệu quả hợp tác. Cuối cùng, cơ sở hạ tầng của chúng tôi có thể được triển khai trong các kịch bản trò chơi thực tế trong phiên bản VR tùy chỉnh của CUISINEWORLD và được điều chỉnh trong lĩnh vực trò chơi Minecraft rộng lớn hiện có. Chúng tôi hy vọng những phát hiện của mình về LLMs và cơ sở hạ tầng mới cho lập lịch và phối hợp mục đích chung có thể giúp làm sáng tỏ cách những kỹ năng như vậy có thể được thu được bằng cách học hỏi từ các kho ngôn ngữ lớn."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "url": "https://arxiv.org/abs/2309.09971",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Xem trang arXiv"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "https://arxiv.org/pdf/2309.09971",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Xem PDF"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Bình luận"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Bài báo \"MindAgent: Tương tác trò chơi mới nổi\" đi sâu vào giao điểm của các mô hình ngôn ngữ lớn (LLMs) và khả năng của chúng trong các hệ thống đa đại lý, cụ thể là trong các kịch bản trò chơi. Nghiên cứu đề xuất một cơ sở hạ tầng mới để đánh giá và triển khai các khả năng như vậy trong bối cảnh trò chơi."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Điểm chính:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Lập lịch phức tạp với LLMs"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Các tác giả nhấn mạnh sức mạnh của LLMs trong việc quản lý và phối hợp nhiều đại lý để hoàn thành các nhiệm vụ phức tạp."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Cơ sở hạ tầng MindAgent"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Bài báo đề xuất cơ sở hạ tầng MindAgent, được thiết kế đặc biệt để đánh giá các khả năng mới nổi của LLMs trong các kịch bản trò chơi, xem xét lập kế hoạch và phối hợp."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Kịch bản CUISINEWORLD"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Các tác giả giới thiệu một kịch bản trò chơi mới - CUISINEWORLD - được thiết kế để đánh giá hiệu quả hợp tác đa đại lý trong một trò chơi. Nó phục vụ như một sân chơi để kiểm tra cách LLMs có thể hợp tác với người chơi và phối hợp nhiều đại lý chơi cùng một lúc."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Phiên bản VR tùy chỉnh"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": MindAgent không chỉ là lý thuyết; nó có ứng dụng thực tế. Cơ sở hạ tầng có thể được điều chỉnh và sử dụng trong các tình huống trò chơi thực tế, bao gồm phiên bản VR của CUISINEWORLD và lĩnh vực trò chơi Minecraft rộng lớn."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Chỉ số hiệu quả"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Một chỉ số mới, CoS, được giới thiệu để định lượng hiệu quả hợp tác, cung cấp một cách tiêu chuẩn để đánh giá và đánh giá các hệ thống này."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tác động thực tế tiềm năng:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Kịch bản trò chơi nâng cao"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Sự tích hợp của LLMs vào trò chơi có thể dẫn đến môi trường trò chơi động và phức tạp hơn, nâng cao trải nghiệm người dùng và mang lại những thách thức độc đáo."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Ngoài trò chơi"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Mặc dù ứng dụng ngay lập tức là trong trò chơi, sự phối hợp đa đại lý có những hậu quả rộng rãi trong các lĩnh vực như xe tự hành, robot và quản lý chuỗi cung ứng."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Hợp tác với người chơi"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Bằng cách tạo điều kiện cho sự hợp tác liền mạch giữa các đại lý AI và người chơi, nghiên cứu này có thể mở đầu một kỷ nguyên mới của trò chơi đa người hợp tác, nơi người chơi hợp tác với các đại lý thông minh để đạt được mục tiêu chung."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Tích hợp VR"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Sự điều chỉnh VR cho thấy sự chuyển đổi sang các trải nghiệm trò chơi nhập vai hơn, kết hợp sự tinh vi của AI với sự nhập vai của thực tế ảo."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Hàm ý giáo dục và đào tạo"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Các kịch bản đa đại lý có thể được sử dụng trong các mô phỏng giáo dục hoặc đào tạo, cho phép học viên hoặc người đào tạo tương tác với các đại lý thông minh để có trải nghiệm học tập toàn diện hơn."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Thách thức:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Rào cản về tính toán"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Việc triển khai LLMs trong các kịch bản trò chơi thời gian thực sẽ đòi hỏi sức mạnh tính toán đáng kể."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "An toàn và công bằng"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Đảm bảo rằng các đại lý AI không thống trị hoặc làm giảm trải nghiệm cho người chơi là điều cần thiết. Thách thức nằm ở việc tìm kiếm sự cân bằng để đảm bảo các đại lý AI nâng cao chứ không làm lu mờ trải nghiệm trò chơi."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Thích ứng với các thể loại khác nhau"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Mặc dù nghiên cứu cung cấp một nền tảng vững chắc, các thể loại trò chơi khác nhau (ví dụ, chiến thuật, nhập vai, hành động) có thể đòi hỏi các triển khai hoặc điều chỉnh khác nhau."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Xem xét các hàm ý trong trò chơi và các ứng dụng tiềm năng ngoài lĩnh vực trò chơi:"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tôi đánh giá tác động thực tế của bài báo này là 8 trên 10."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Nghiên cứu mở đường cho các trải nghiệm trò chơi tiên tiến và cung cấp những hiểu biết có thể được áp dụng trong các lĩnh vực khác nhau nơi các hệ thống đa đại lý đóng vai trò then chốt. Những phát hiện có thể cách mạng hóa cách chúng ta nhận thức và thiết kế các trải nghiệm hợp tác trong cả các kịch bản ảo và thực tế."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "researchpaper8a",
+            "height": 816,
+            "width": 1456,
+            "filename": "researchpaper8a.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Bình luận & Đánh giá Tóm tắt",
+      "title": "MindAgent: Tương tác trò chơi mới nổi",
+      "twitterCard": null,
+      "image": {
+        "width": 1456,
+        "height": 816,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
+      }
+    }
+  },
+  "topics": [
+    "LLM",
+    "Agents",
+    "Gaming"
+  ]
+}

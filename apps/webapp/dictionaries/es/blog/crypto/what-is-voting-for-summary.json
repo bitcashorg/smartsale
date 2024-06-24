@@ -1,0 +1,321 @@
+{
+  "relatedBlogs": [
+    {
+      "id": "167184977",
+      "topics": [
+        "Tokenomía",
+        "DAO",
+        "Recaudación de Fondos"
+      ],
+      "title": "Revolucionando el Modelo de Equidad: Cómo la Tokenomía está Disruptiendo el Mundo de las Startups",
+      "slug": "revolutionizing-the-equity-model-how-tokenomics-is-disrupting-the-startup-world",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:02:51+01:00",
+      "description": "¡Desbloquea el futuro de las startups con la tokenomía! Explora cómo este concepto innovador está remodelando el modelo de equidad y revolucionando el panorama de las startups.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1687395688-tb2-img1.png"
+      },
+      "seo": {
+        "title": "Cómo la Tokenomía está Disruptiendo el Mundo de las Startups",
+        "description": "Explora cómo este concepto innovador está remodelando el modelo de equidad y revolucionando el panorama de las startups."
+      }
+    },
+    {
+      "id": "166981063",
+      "topics": [
+        "Primeros Pasos",
+        "DAO"
+      ],
+      "title": "El Futuro está Aquí: El Auge de las Organizaciones Autónomas Descentralizadas (DAOs)",
+      "slug": "the-future-is-here-the-rise-of-decentralized-autonomous-organizations-daos",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T08:57:02+01:00",
+      "description": "Explora el auge de las Organizaciones Autónomas Descentralizadas (DAOs) en nuestra guía. Entiende el futuro de los negocios y las oportunidades para las startups.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1687381524-db1-img1.png"
+      },
+      "seo": {
+        "title": "El Auge de las Organizaciones Autónomas Descentralizadas",
+        "description": "Explora el auge de las Organizaciones Autónomas Descentralizadas (DAOs) en nuestra guía. Entiende el futuro de los negocios y las oportunidades para las startups."
+      }
+    }
+  ],
+  "blogContent": {
+    "id": "180563903",
+    "topics": [
+      "DAO",
+      "Resumen"
+    ],
+    "title": "¿Para qué es la votación? [Resumen]",
+    "slug": "what-is-voting-for-summary",
+    "authorName": "Crypto Clairity",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+    },
+    "_publishedAt": "2023-10-05T09:10:58+01:00",
+    "description": "Desentraña la esencia de la votación dentro de los sistemas descentralizados. Obtén información sobre el verdadero propósito y poder de la votación en blockchain.",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1690859305-cbc6-img1.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Enlace original: "
+                    },
+                    {
+                      "url": "https://medium.com/prysmeconomics/what-is-voting-for-6e733a1d2bc9",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "¿Para qué es la votación?"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "https://medium.com/@cathybarreraphd?source=post_page-----6e733a1d2bc9--------------------------------",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noopener follow"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "\n"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": "Autor: "
+                    },
+                    {
+                      "url": "https://medium.com/@cathybarreraphd?source=post_page-----6e733a1d2bc9--------------------------------",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noopener follow"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Cathy Barrera, PhD"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Resumen"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Comprender si el sistema de votación de una plataforma habilitada por blockchain está bien diseñado depende de factores como el contexto de la votación, sus propósitos (preferencia vs. información) y los objetivos generales del sistema. La votación es esencial cuando los miembros individuales de un grupo tienen preferencias variadas sobre un resultado relevante para ellos (votación por preferencia), y cuando existen preferencias compartidas pero persiste la incertidumbre sobre la elección que conduce al resultado correcto (votación sobre información)."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Para la votación por preferencia, piensa en un grupo de amigos decidiendo sobre un restaurante. Cada voto cuenta por igual ya que se valoran las preferencias de todos. En este caso, el objetivo es llegar a un acuerdo a través de un sistema justo que amalgama diferentes preferencias en una sola elección, fomentando la cohesión del grupo."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "En contraste, la votación sobre información se trata más de llegar a la decisión correcta cuando hay un objetivo compartido, pero información incierta, como en un juicio con jurado. Aquí, el objetivo es reunir información del grupo para llegar a una decisión más informada y correcta."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Por lo tanto, diseñar un sistema de votación requiere considerar cuidadosamente:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "El tipo de voto: ¿Es basado en preferencias o en información?"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Participantes: ¿Quién debe votar? ¿Es todo el mundo involucrado o solo un grupo selecto?"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Umbrales: ¿Cuál debería ser el requisito mínimo para una decisión?"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Disponibilidad de información: ¿Qué información necesitan los votantes y cómo puede el diseño asegurar que la obtengan?"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Propuesta de boleta: ¿Cómo deben proponerse las opciones e incluirse en la boleta?"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Con los sistemas de votación en blockchain, la funcionalidad de los contratos inteligentes puede aprovecharse para automatizar muchos de estos aspectos, como establecer umbrales de votación, asegurar que los participantes tengan la información necesaria y asegurar el proceso de votación. Las startups también pueden usar registros curados por tokens para incentivar a los usuarios a curar y mantener listas que sean confiables, precisas y altamente valoradas por la comunidad, facilitando así el proceso de toma de decisiones."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Además, los sistemas de votación descentralizados en plataformas blockchain podrían permitir más transparencia, seguridad y potencialmente fomentar un proceso más democrático donde se escuchen todas las voces de los interesados, llevando a un mecanismo de consenso más inclusivo y justo."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Sin embargo, es crucial recordar que blockchain no es una panacea. Diseñar el sistema de votación correcto sigue siendo crítico. Blockchain solo proporciona una plataforma donde estos sistemas pueden implementarse con mayor transparencia e inmutabilidad."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "En resumen, al diseñar o evaluar un sistema de votación, la clave es asegurarse de que se alinee con el contexto y los objetivos del proceso de toma de decisiones, tenga en cuenta la diversidad de preferencias y la incertidumbre de la información, y proporcione un proceso justo y transparente que considere cada voto relevante."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "cbc6-img1",
+            "height": 862,
+            "width": 862,
+            "filename": "cbc6-img1.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1690859305-cbc6-img1.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Desentraña la esencia de la votación dentro de los sistemas descentralizados. Obtén información sobre el verdadero propósito y poder de la votación en blockchain.",
+      "title": "¿Para qué es la votación? [Resumen]",
+      "twitterCard": null,
+      "image": {
+        "width": 862,
+        "height": 862,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1690859305-cbc6-img1.png"
+      }
+    }
+  },
+  "topics": [
+    "DAO",
+    "Summary"
+  ]
+}

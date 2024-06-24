@@ -1,0 +1,553 @@
+{
+  "relatedBlogs": [],
+  "blogContent": {
+    "id": "198277138",
+    "topics": [
+      "LLM",
+      "Tinh chỉnh"
+    ],
+    "title": "LLaMA Đã Sắp Xếp: Khai Thác Tiềm Năng Của Các Lớp Trung Gian Của Các Mô Hình Ngôn Ngữ Lớn để Suy Luận Động Bằng Cách Sử Dụng Tinh Chỉnh Tốt Đã Sắp Xếp (SoFT)",
+    "slug": "sorted-llama-unlocking-the-potential-of-intermediate-layers-of-large-language-mod",
+    "authorName": "Prof. Otto Nomos",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+    },
+    "_publishedAt": "2024-05-27T03:33:31+01:00",
+    "description": "Bình Luận & Đánh Giá Tóm Tắt",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Được xuất bản vào Ngày 16 Tháng 9"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tác giả:"
+                    },
+                    {
+                      "url": "https://huggingface.co/parsareal",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Parsa Kavehzadeh"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/vpcom",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Mojtaba Valipour"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/marzieh7",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Marzieh Tahaei"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/alighodsi",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Ali Ghodsi"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ",Boxing Chen,"
+                    },
+                    {
+                      "url": "https://huggingface.co/mrgzadeh",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Mehdi Rezagholizadeh"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tóm Tắt"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Sự phát triển nhanh chóng của các mô hình ngôn ngữ lớn (LLMs) đã làm thay đổi ngành xử lý ngôn ngữ tự nhiên (NLP). Mặc dù các mô hình này xuất sắc trong việc hiểu và tạo ra văn bản giống như con người, nhưng việc triển khai rộng rãi của chúng có thể rất tốn kém. SortedNet là một kỹ thuật đào tạo gần đây cho phép suy luận động cho các mạng nơ-ron sâu. Nó tận dụng tính mô-đun của mạng để tạo ra các mô hình con với tải tính toán khác nhau, sắp xếp chúng dựa trên đặc điểm tính toán/độ chính xác theo cách lồng nhau. Chúng tôi mở rộng SortedNet cho các nhiệm vụ NLP sáng tạo, làm cho các mô hình ngôn ngữ lớn trở nên động mà không cần đào tạo trước và chỉ thay thế Tinh Chỉnh Giám Sát Chuẩn (SFT) bằng Tinh Chỉnh Tốt Đã Sắp Xếp (SoFT) với cùng chi phí. Cách tiếp cận của chúng tôi tăng hiệu quả mô hình, loại bỏ nhu cầu về nhiều mô hình cho các kịch bản khác nhau trong suy luận. Chúng tôi cho thấy bằng cách sử dụng cách tiếp cận này, chúng tôi có thể khai thác tiềm năng của các lớp trung gian của bộ biến đổi trong việc tạo ra đầu ra mục tiêu. Các mô hình con của chúng tôi vẫn là các thành phần không thể tách rời của mô hình gốc, giảm thiểu yêu cầu lưu trữ và chi phí chuyển đổi giữa các ngân sách tính toán/độ trễ khác nhau. Bằng cách áp dụng cách tiếp cận này trên LLaMa 2 13B để điều chỉnh trên bộ dữ liệu Stanford Alpaca và so sánh với việc điều chỉnh bình thường và thoát sớm qua chuẩn PandaLM, chúng tôi cho thấy Tinh Chỉnh Tốt Đã Sắp Xếp có thể cung cấp các mô hình nhanh gấp đôi so với mô hình gốc trong khi duy trì hoặc vượt trội về hiệu suất."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "url": "https://arxiv.org/abs/2309.08968",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Xem trang arXiv"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "https://arxiv.org/pdf/2309.08968",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Xem PDF"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Bình Luận"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Bài báo có tựa đề \"LLaMA Đã Sắp Xếp: Khai Thác Tiềm Năng Của Các Lớp Trung Gian Của Các Mô Hình Ngôn Ngữ Lớn để Suy Luận Động Bằng Cách Sử Dụng Tinh Chỉnh Tốt Đã Sắp Xếp (SoFT)\" đề cập đến lĩnh vực làm cho Các Mô Hình Ngôn Ngữ Lớn (LLMs) hiệu quả hơn và tiết kiệm chi phí hơn. Trọng tâm chính là cho phép suy luận động mà không cần điều chỉnh đáng kể các mô hình."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Những Hiểu Biết Chính:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Vấn Đề Hiệu Quả"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Bài báo thừa nhận thách thức với LLMs—chúng tốn kém về mặt tính toán, làm cho việc triển khai thực tế trở nên khó khăn, đặc biệt là trong các ứng dụng thời gian thực hoặc nhạy cảm với độ trễ."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Sự Thích Nghi của SortedNet"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Các tác giả mở rộng kỹ thuật SortedNet (trước đây áp dụng cho các mạng nơ-ron sâu) cho các nhiệm vụ NLP, cụ thể là các nhiệm vụ sáng tạo. Cách tiếp cận này nhằm điều chỉnh độ sâu của mô hình trong suy luận một cách động, cơ bản chỉ sử dụng tính toán cần thiết để tạo ra câu trả lời."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "SoFT Thay Thế SFT"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Đề xuất là thay thế Tinh Chỉnh Giám Sát Chuẩn (SFT) bằng Tinh Chỉnh Tốt Đã Sắp Xếp (SoFT). Thay đổi này không tăng chi phí nhưng hứa hẹn hiệu quả tốt hơn."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Tiềm Năng của Các Lớp Trung Gian"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Một điểm nhấn quan trọng là không phải tất cả các lớp trong một bộ biến đổi đều cần thiết cho mọi nhiệm vụ. Tiềm năng của các lớp trung gian có thể được khai thác để tạo ra đầu ra mục tiêu, điều này có thể hiệu quả hơn về mặt tính toán."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Lợi Ích Hiệu Suất"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Phương pháp đề xuất cung cấp các mô hình có thể nhanh gấp đôi so với mô hình gốc, với hiệu suất ngang bằng hoặc tốt hơn."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tác Động Thực Tế Tiềm Năng:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Triển Khai Tiết Kiệm Chi Phí"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Đối với các công ty hoặc ứng dụng sử dụng LLMs, cách tiếp cận này có thể giảm đáng kể chi phí tính toán, làm cho việc triển khai rộng rãi trở nên khả thi hơn."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Ứng Dụng Thời Gian Thực"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Với các mô hình nhanh hơn, các ứng dụng cần xử lý ngôn ngữ thời gian thực—như chatbots, trợ lý ảo và hơn thế nữa—có thể được hưởng lợi rất nhiều."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Lợi Ích Lưu Trữ và Chuyển Đổi"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Vì các mô hình con vẫn là một phần của mô hình gốc, nên không tăng yêu cầu lưu trữ. Việc chuyển đổi giữa các ngân sách tính toán trở nên trơn tru và hiệu quả hơn."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Tùy Biến"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Tùy thuộc vào các ràng buộc tính toán của một ứng dụng cụ thể, người dùng có thể chọn độ sâu mô hình phù hợp, cung cấp sự linh hoạt."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Ứng Dụng Rộng Rãi"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Vì đây là một phương pháp tinh chỉnh, nó có thể được áp dụng cho các LLMs trong nhiều lĩnh vực khác nhau."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Thách Thức:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Thời Gian Thích Nghi"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Có thể mất một thời gian để các doanh nghiệp và nhà phát triển áp dụng và điều chỉnh với phương pháp tinh chỉnh mới này."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Thách Thức Theo Lĩnh Vực Cụ Thể"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Hiệu quả của phương pháp này trong các lĩnh vực và nhiệm vụ đa dạng vẫn cần được kiểm tra kỹ lưỡng."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Với tầm quan trọng ngày càng tăng của LLMs trong nhiều ứng dụng và nhu cầu luôn hiện hữu để tối ưu hóa chi phí tính toán mà không làm giảm hiệu suất:"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tôi đánh giá tác động thực tế của bài báo này là 9 trên 10."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Khả năng tận dụng các khả năng của LLMs một cách hiệu quả hơn có thể thay đổi đáng kể cách các mô hình này được triển khai, làm cho chúng trở nên phổ biến hơn trong nhiều ứng dụng."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "researchpaper9",
+            "height": 816,
+            "width": 1456,
+            "filename": "researchpaper9.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Bình Luận & Đánh Giá Tóm Tắt\n",
+      "title": "LLaMA Đã Sắp Xếp: ... Suy Luận Động Bằng Cách Sử Dụng Tinh Chỉnh Tốt Đã Sắp Xếp (SoFT)",
+      "twitterCard": null,
+      "image": {
+        "width": 1456,
+        "height": 816,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      }
+    }
+  },
+  "topics": [
+    "LLM",
+    "Fine-tuning"
+  ]
+}

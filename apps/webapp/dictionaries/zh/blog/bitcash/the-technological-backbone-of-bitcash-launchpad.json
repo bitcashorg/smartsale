@@ -1,0 +1,320 @@
+{
+  "relatedBlogs": [
+    {
+      "id": "BEfgGhndSsCn5MBU89RO3A",
+      "topics": [
+        "launchpad"
+      ],
+      "title": "赋能创新：bitLauncher的愿景、使命和战略目标",
+      "slug": "empowering-innovation-vision-mission-and-strategic-goals-of-bitcash-launchpad",
+      "authorName": "Jun Dam",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
+      },
+      "_publishedAt": "2024-03-14T05:31:29+00:00",
+      "description": "本节概述了bitcash Launchpad通过加密货币革新AI创新的愿景，详细说明了我们民主化AI开发的使命以及创建一个社区驱动、透明和道德的技术未来的战略目标。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1709370139-whitepaper-p4.webp"
+      },
+      "seo": {
+        "title": "赋能创新：愿景、使命和战略目标",
+        "description": "本节概述了我们通过加密货币革新AI创新的愿景、使命和目标。"
+      }
+    },
+    {
+      "id": "NZeB3i5XRzuELW2UWBDyRQ",
+      "topics": [
+        "research",
+        "dao",
+        "fundraising",
+        "launchpad"
+      ],
+      "title": "驾驭融合：AI和加密货币动态的全面市场分析",
+      "slug": "navigating-the-convergence-a-comprehensive-market-analysis-of-ai-and-cryptocurren",
+      "authorName": "Jun Dam",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
+      },
+      "_publishedAt": "2024-03-14T05:30:05+00:00",
+      "description": "本节探讨了AI和加密货币的动态交汇，突出了关键趋势、挑战和机遇，并将bitcash Launchpad定位为开源AI项目的开创性平台。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1709276586-marketanalysis-img2.webp"
+      },
+      "seo": {
+        "title": "AI和加密货币动态的市场分析",
+        "description": "关键趋势、挑战和机遇，并将bitcash Launchpad定位为开源AI项目的开创性平台。"
+      }
+    },
+    {
+      "id": "MICfokr1TVuScAB4Qh9YGw",
+      "topics": [
+        "launchpad"
+      ],
+      "title": "赋能创新：bitcash的代币经济学和融资策略",
+      "slug": "empowering-innovation-tokenomics-and-funding-strategy-of-bitcash",
+      "authorName": "Jun Dam",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
+      },
+      "_publishedAt": "2024-03-14T05:27:37+00:00",
+      "description": "本节详细介绍了bitcash的铸币和销毁实用代币模型及其公平融资和价值增长的战略方法，支持Launchpad赋能AI开发的使命，具有透明和可持续的代币经济学。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1710053905-tokenomicswpimg.webp"
+      },
+      "seo": {
+        "title": "bitcash的代币经济学和融资策略",
+        "description": "本节详细介绍了bitcash的铸币和销毁实用代币模型及其公平融资和价值增长的战略方法。"
+      }
+    },
+    {
+      "id": "BSDdY8byQWipv749rApFRA",
+      "topics": [
+        "launchpad"
+      ],
+      "title": "释放潜力：bitLauncher的用例和应用",
+      "slug": "unlocking-potential-use-cases-and-applications-of-bitlauncher",
+      "authorName": "Jun Dam",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
+      },
+      "_publishedAt": "2024-03-14T05:26:22+00:00",
+      "description": "本节探讨了bitLauncher如何革新AI初创企业融资和全球市场准入，展示了可持续的开源模型、战略性初创企业文化以及通过有针对性的用例和开创性的Masterbots.ai项目的全球投资者生态系统。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1710393954-usecaseappsimg.webp"
+      },
+      "seo": {
+        "title": "释放潜力：用例和应用",
+        "description": "本节探讨了bitLauncher如何革新AI初创企业融资、全球市场准入以及开创性的Masterbots.ai项目。"
+      }
+    }
+  ],
+  "blogContent": {
+    "id": "I4jShMnWRruvJgDbrucwDw",
+    "topics": [
+      "launchpad"
+    ],
+    "title": "bitLauncher的技术支柱",
+    "slug": "the-technological-backbone-of-bitcash-launchpad",
+    "authorName": "Jun Dam",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
+    },
+    "_publishedAt": "2024-03-14T05:33:20+00:00",
+    "description": "本节详细介绍了bitLauncher整合的尖端区块链技术和创新工具，包括Bitcash支付、DAO治理和非营利区块链愿景，为透明、安全和公平的AI初创企业增长奠定基础。",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1710011354-techsectionwpimg.webp"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "技术与创新概述"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "bitLauncher的核心是致力于利用尖端技术和创新实践来赋能AI初创企业。我们的平台提供了一整套工具和资源，旨在支持AI项目在其旅程的每个阶段，从初始到扩展。通过整合先进的区块链技术和DAO（去中心化自治组织）原则，我们确保所有运营方面的透明度、效率和可信度。"
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "通过透明度和信任赋能初创企业"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "我们平台的精髓体现在我们使用的bitcash支付和DAO技术。这使得公司财库的透明管理和公开财务账簿成为可能，既在公众中也在组织内部培养了信任。通过公开构建所带来的透明度不仅增强了信任，还简化了内部操作，使新员工和贡献者的入职变得无缝，因为所有过去的工作活动都是可见和可访问的。"
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "通过Gnosis拍卖和EOS EVM进行创新"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "bitLauncher的一个基石功能是基于2021年推出的Gnosis拍卖solidity智能合约。我们的改编版本在以高性能著称的EOS EVM上使用了这个经过审计的智能合约。我们彻底改造了前端UI，大大提升了竞拍体验，使其更加直观和用户友好。此外，launchpad集成了RainbowKit以实现无缝的以太坊钱包集成，确保我们的平台始终处于技术集成和安全的前沿。为了保证最高的安全性，我们对前端和后端基础设施进行了彻底的渗透测试，依赖于之前审计过的solidity智能合约，为初创企业提供一个安全可靠的环境。"
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "初创企业成功的基础设施和工具"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "bitLauncher提供了一套针对AI初创企业需求的基础设施解决方案："
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "加密货币支付钱包和P2P加密货币入金"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 具有外汇功能，我们的钱包简化了交易，使资金转移像传统银行一样简单。"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "WebAuthn集成"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 我们的平台采用无密码系统，通过使Web3体验变得比以往任何时候都更简单和更安全来增强用户体验。"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "此外，bitcash Launchpad开发了"
+                    },
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "dBoard"
+                    },
+                    {
+                      "type": "span",
+                      "value": ", 一个全面的DAO决策和社区管理工具。这个平台使利益相关者能够参与讨论、制定策略并对关键决策进行投票，从而为组织增长创造一个协作和富有成效的环境。"
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "非营利、公平L1链的愿景"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "展望未来，bitcash计划推出一个基于Antelope技术和现代Hot-stuff共识机制构建的非营利、无预挖的Layer 1（L1）链。该计划旨在实现尽可能公平的代币分配，为平台上的每个经过验证的独特人类分配一个代币。这个雄心勃勃的项目强调了我们对公平、包容和区块链领域民主化的承诺，符合我们彻底改变AI和加密货币生态系统的总体使命。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "总之，我们的技术和创新战略不仅旨在支持AI初创企业的增长和发展，还旨在重新定义区块链技术的格局，为所有参与者创造一个更加透明、高效和公平的未来。"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "techsectionwpimg",
+            "height": 700,
+            "width": 700,
+            "filename": "techsectionwpimg.webp",
+            "format": "webp",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1710011354-techsectionwpimg.webp"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "本节详细介绍了bitLauncher整合的尖端区块链技术和创新工具。",
+      "title": "bitLauncher的技术支柱",
+      "twitterCard": null,
+      "image": {
+        "width": 700,
+        "height": 700,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1710011354-techsectionwpimg.webp"
+      }
+    }
+  },
+  "topics": [
+    "launchpad"
+  ]
+}

@@ -1,0 +1,635 @@
+{
+  "relatedBlogs": [
+    {
+      "id": "180563939",
+      "topics": [
+        "DAO",
+        "Tokenomics",
+        "Commentaire"
+      ],
+      "title": "Un cadre pour la conception de la gouvernance de la blockchain : La roue du groupe Prysm [Commentaire]",
+      "slug": "a-framework-for-blockchain-governance-design-the-prysm-group-wheel-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:19:19+01:00",
+      "description": "Naviguez dans les complexités de la gouvernance de la blockchain avec la roue du groupe Prysm. Votre feuille de route pour une conception efficace de la gouvernance de la blockchain.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690861154-cbc11-img1.webp"
+      },
+      "seo": {
+        "title": "Un cadre pour la conception de la gouvernance de la blockchain [Commentaire]",
+        "description": "Naviguez dans les complexités de la gouvernance de la blockchain avec la roue du groupe Prysm. Votre feuille de route pour une conception efficace de la gouvernance de la blockchain."
+      }
+    },
+    {
+      "id": "180556595",
+      "topics": [
+        "Levée de fonds",
+        "Tokenomics",
+        "Commentaire"
+      ],
+      "title": "L'effet Blockchain : Effets de réseau sans les coûts de pouvoir de marché [Commentaire]",
+      "slug": "the-blockchain-effect-network-effects-without-market-power-costs-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:11:14+01:00",
+      "description": "Explorez comment la blockchain permet des effets de réseau sans les inconvénients du pouvoir de marché. Découvrez l'effet révolutionnaire de la Blockchain.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690855275-cbc4-img1.png"
+      },
+      "seo": {
+        "title": "Effets de réseau sans les coûts de pouvoir de marché [Commentaire]",
+        "description": "Explorez comment la blockchain permet des effets de réseau sans les inconvénients du pouvoir de marché. Découvrez l'effet révolutionnaire de la Blockchain."
+      }
+    },
+    {
+      "id": "180563903",
+      "topics": [
+        "DAO",
+        "Résumé"
+      ],
+      "title": "À quoi sert le vote ? [Résumé]",
+      "slug": "what-is-voting-for-summary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:10:58+01:00",
+      "description": "Démêlez l'essence du vote au sein des systèmes décentralisés. Gagnez des insights sur le véritable but et le pouvoir du vote dans la blockchain.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690859305-cbc6-img1.png"
+      },
+      "seo": {
+        "title": "À quoi sert le vote ? [Résumé]",
+        "description": "Démêlez l'essence du vote au sein des systèmes décentralisés. Gagnez des insights sur le véritable but et le pouvoir du vote dans la blockchain."
+      }
+    },
+    {
+      "id": "180563908",
+      "topics": [
+        "DAO",
+        "Résumé"
+      ],
+      "title": "À quoi sert la gouvernance ? [Résumé]",
+      "slug": "what-is-governance-for-summary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:10:45+01:00",
+      "description": "Explorez le rôle et l'importance de la gouvernance dans les systèmes de blockchain. Comprenez comment la gouvernance favorise la décentralisation et la croissance.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690859755-cbc7-img1.png"
+      },
+      "seo": {
+        "title": "À quoi sert la gouvernance ? [Résumé]",
+        "description": "Explorez le rôle et l'importance de la gouvernance dans les systèmes de blockchain. Comprenez comment la gouvernance favorise la décentralisation et la croissance."
+      }
+    },
+    {
+      "id": "180563931",
+      "topics": [
+        "Tokenomics",
+        "Commentaire"
+      ],
+      "title": "Structures d'incitation de la blockchain : ce qu'elles sont et pourquoi elles sont importantes [Commentaire]",
+      "slug": "blockchain-incentive-structures-what-they-are-and-why-they-matter-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:10:02+01:00",
+      "description": "Comprenez le cœur des structures d'incitation de la blockchain et leur importance dans la conduite du comportement des utilisateurs et le succès de la plateforme.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690860807-cbc10-img1.png"
+      },
+      "seo": {
+        "title": "Structures d'incitation de la blockchain [Commentaire]",
+        "description": "Comprenez le cœur des structures d'incitation de la blockchain et leur importance dans la conduite du comportement des utilisateurs et le succès de la plateforme."
+      }
+    },
+    {
+      "id": "167101094",
+      "topics": [
+        "Pour débutants",
+        "Tokenomics"
+      ],
+      "title": "Tokenomics 101 : Libérer la puissance de la cryptomonnaie !",
+      "slug": "tokenomics-101-unleashing-the-power-of-cryptocurrency",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T08:57:58+01:00",
+      "description": "Découvrez la puissance de la cryptomonnaie à travers Tokenomics 101 - un guide approfondi pour comprendre l'économie derrière les actifs numériques.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1687391799-tb1-img1.png"
+      },
+      "seo": {
+        "title": "Tokenomics 101 : Libérer la puissance de la cryptomonnaie !",
+        "description": "un guide approfondi pour comprendre l'économie derrière les actifs numériques."
+      }
+    },
+    {
+      "id": "166981063",
+      "topics": [
+        "Pour débutants",
+        "DAO"
+      ],
+      "title": "Le futur est ici : L'essor des organisations autonomes décentralisées (DAO)",
+      "slug": "the-future-is-here-the-rise-of-decentralized-autonomous-organizations-daos",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T08:57:02+01:00",
+      "description": "Explorez l'essor des organisations autonomes décentralisées (DAO) dans notre guide. Comprenez l'avenir des affaires et les opportunités pour les startups.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1687381524-db1-img1.png"
+      },
+      "seo": {
+        "title": "L'essor des organisations autonomes décentralisées",
+        "description": "Explorez l'essor des organisations autonomes décentralisées (DAO) dans notre guide. Comprenez l'avenir des affaires et les opportunités pour les startups."
+      }
+    },
+    {
+      "id": "165685908",
+      "topics": [
+        "Pour débutants",
+        "Levée de fonds"
+      ],
+      "title": "Bouleverser le statu quo : Comment la cryptomonnaie révolutionne la levée de fonds et le financement participatif",
+      "slug": "disrupt-the-status-quo-how-cryptocurrency-is-revolutionizing-fundraising-and-crow",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T08:33:36+01:00",
+      "description": "Explorez le potentiel révolutionnaire de la cryptomonnaie dans la levée de fonds et le financement participatif. Découvrez comment les monnaies numériques bouleversent les méthodes traditionnelles dans notre article de blog perspicace.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1687046260-cb17-img1edited.png"
+      },
+      "seo": {
+        "title": "Comment la Crypto révolutionne la levée de fonds et le financement participatif",
+        "description": "Explorez le potentiel révolutionnaire de la cryptomonnaie dans la levée de fonds et le financement participatif. "
+      }
+    }
+  ],
+  "blogContent": {
+    "id": "167184977",
+    "topics": [
+      "Tokenomie",
+      "DAO",
+      "Levée de fonds"
+    ],
+    "title": "Révolutionner le modèle de participation : Comment la tokenomie bouleverse le monde des startups",
+    "slug": "revolutionizing-the-equity-model-how-tokenomics-is-disrupting-the-startup-world",
+    "authorName": "Crypto Clairity",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+    },
+    "_publishedAt": "2023-10-05T09:02:51+01:00",
+    "description": "Déverrouillez l'avenir des startups avec la tokenomie ! Explorez comment ce concept innovant redéfinit le modèle de participation et révolutionne le paysage des startups.",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1687395688-tb2-img1.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Introduction"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Dans le monde de la cryptomonnaie, le concept de tokenomie est devenu un aspect crucial de nombreux projets. Cependant, la plupart des distributions de tokens dans les projets de crypto sont basées sur une allocation fixe de tokens créés d'un coup dans un livre blanc, sans tenir compte des contributions nécessaires pour créer un écosystème durable. Cela conduit souvent à des allocations de tokens inflexibles et à la libération d'une grande partie de l'offre de tokens trop tôt, laissant peu de réserve pour récompenser les futurs contributeurs."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "tb2-img1",
+            "height": 994,
+            "width": 994,
+            "filename": "tb2-img1.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1687395688-tb2-img1.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Modèle de participation en tokens (TEM)"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Un système de tokenomie plus efficace que nous pouvons appeler Modèle de participation en tokens (TEM) serait basé sur le modèle de participation traditionnel des startups, mais tirerait parti de la technologie blockchain, de la décentralisation et des communautés mondiales pour récompenser les contributions de manière plus juste et efficace. Ce système permettrait de distribuer des tokens comme récompenses pour les contributions au prix du marché des tokens au moment de la contribution, plutôt que d'utiliser des tokens déjà émis comme incitations pour les contributions futures."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Les principaux avantages de ce système comprennent:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Une plus grande équité dans la distribution des tokens, car les contributeurs sont récompensés en temps réel pour leurs contributions au prix du marché actuel."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Plus de flexibilité dans l'allocation des tokens, car l'offre peut être ajustée en fonction des contributions réelles au projet."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Un écosystème plus durable, car il y a des tokens non émis disponibles comme incitations pour les contributions futures et l'offre totale de tokens n'est pas épuisée trop rapidement."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Cependant, il existe également certains défis à mettre en œuvre un tel système, notamment:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Difficulté à déterminer le prix du marché des tokens aux premiers stades d'un projet."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Potentiel de manipulation et de distribution injuste des tokens si le processus n'est pas transparent et décentralisé."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Difficulté à garantir que tous les contributeurs sont récompensés de manière précise et équitable pour leurs contributions."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": " Surmonter les défis du modèle de participation en tokens (TEM)"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Le concept de Modèle de participation en tokens (TEM) soulève de nouveaux défis dans la détermination d'une évaluation équitable des tokens et la prévention de la manipulation et de la distribution injuste. Cependant, la combinaison du processus de vente de tokens par enchère hollandaise et du concept innovant des Organisations Autonomes Décentralisées (DAO) offre une solution puissante pour surmonter ces défis. Le processus d'enchère hollandaise introduit une tarification dynamique, permettant aux forces du marché de dicter l'évaluation des tokens, tandis que la transparence et la décentralisation des DAO garantissent une distribution équitable et éliminent la manipulation. Ensemble, ces approches révolutionnent le processus de vente de tokens, instaurant confiance, intégrité et équité dans l'écosystème de la cryptomonnaie. Explorons comment le processus d'enchère hollandaise et les DAO peuvent aborder les défis rencontrés par le TEM et ouvrir la voie à une économie de tokens plus inclusive et durable."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "tb2-img2",
+            "height": 994,
+            "width": 994,
+            "filename": "tb2-img2.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1687396176-tb2-img2.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Processus de vente de tokens par enchère hollandaise"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Le processus de vente de tokens par enchère hollandaise aborde plusieurs défis qui ont entravé le succès des ventes de tokens traditionnelles. Tout d'abord, il aborde la difficulté de déterminer le prix du marché des tokens aux premiers stades d'un projet. En utilisant un mécanisme de tarification dynamique, l'enchère commence à un prix élevé et diminue progressivement jusqu'à ce que l'équilibre soit atteint. Cela permet aux forces du marché de dicter le prix des tokens, garantissant ainsi une évaluation juste et précise."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Deuxièmement, le processus d'enchère hollandaise atténue le potentiel de manipulation et de distribution injuste des tokens. Grâce à sa nature transparente et décentralisée, le processus d'enchère est enregistré sur la blockchain, le rendant résistant aux altérations et à la manipulation. Cela garantit que la vente de tokens se déroule de manière transparente et sans confiance, où tous les participants peuvent avoir confiance en l'intégrité du processus."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Le processus de vente de tokens par enchère hollandaise est une solution puissante qui aborde les défis de détermination du prix du marché des tokens et de prévention de la manipulation et de la distribution injuste. En utilisant une tarification dynamique et en tirant parti de la technologie blockchain, il crée un environnement transparent et décentralisé où les forces du marché dictent l'évaluation des tokens et garantissent une distribution équitable des tokens. Cette approche innovante instaure non seulement la confiance chez les participants, mais favorise également la confiance et l'intégrité dans l'ensemble du processus de vente de tokens. Avec l'enchère hollandaise, les projets peuvent naviguer dans les complexités des ventes de tokens en début de projet avec plus de transparence, d'équité et d'efficacité, ouvrant la voie à un écosystème plus inclusif et durable."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "tb2-img7",
+            "height": 994,
+            "width": 994,
+            "filename": "tb2-img7.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1687396545-tb2-img7.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Entrer dans l'Organisation Autonome Décentralisée"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Que faire du manque de transparence et de décentralisation qui pourrait conduire à une manipulation et une distribution injuste des tokens ? La solution réside dans le concept révolutionnaire des Organisations Autonomes Décentralisées, ou DAO."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Un DAO est une organisation numérique qui est dirigée par du code plutôt que par des personnes. Il fonctionne sur un réseau blockchain, le rendant complètement transparent et décentralisé. Cela signifie que chaque décision et action prise au sein de l'organisation est enregistrée sur la blockchain, permettant une transparence complète et éliminant la possibilité de manipulation."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Mais comment cela résout-il le problème de la distribution équitable des tokens ? Avec un DAO, la distribution des tokens est déterminée par un ensemble de règles prédéfinies codées dans des contrats intelligents. Ces règles garantissent que les tokens sont distribués sur la base de critères justes et objectifs, tels que la quantité de contributions apportées au projet. Cela élimine la possibilité qu'un individu ou un groupe ait trop de contrôle sur la distribution des tokens."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Mais qu'en est-il de s'assurer que tous les contributeurs sont récompensés pour leurs contributions ? Un DAO permet un système de récompense directement lié à la quantité de contributions apportées. Chaque fois qu'une contribution est faite, elle est enregistrée sur la blockchain et le contributeur est immédiatement récompensé avec un certain nombre de tokens. Cela crée un lien direct entre la quantité de contributions apportées et la quantité de tokens reçus, garantissant que toutes les contributions sont récompensées de manière précise et équitable."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "In short, DAOs provide the perfect solution to the problems of transparency, decentralization, and fair token distribution. It's time to say goodbye to the traditional, outdated models and embrace the power of DAOs in revolutionizing the world of cryptocurrency. "
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "tb2-img4",
+            "height": 994,
+            "width": 994,
+            "filename": "tb2-img4.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1687396324-tb2-img4.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Conclusion"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "En conclusion, le Modèle de participation en tokens (TEM) apporte une approche plus efficace et durable aux distributions de tokens dans l'espace crypto. En tirant parti de la puissance de la technologie blockchain, de la décentralisation et des communautés mondiales, le TEM garantit l'équité, la flexibilité et la durabilité. Le processus de vente de tokens par enchère hollandaise aborde le défi de déterminer les prix du marché en utilisant des mécanismes de tarification dynamiques et des processus transparents et décentralisés. Simultanément, les Organisations Autonomes Décentralisées (DAO) offrent la solution parfaite pour une distribution équitable des tokens et la récompense des contributeurs sur la base de règles prédéfinies codées dans des contrats intelligents. Ensemble, le processus d'enchère hollandaise et les DAO révolutionnent le paysage des ventes de tokens, instaurant la confiance, l'intégrité et l'équité dans tout l'écosystème. Il est temps d'adopter ces approches innovantes et d'ouvrir la voie à une économie de tokens plus inclusive et durable. Disons adieu aux modèles dépassés et embarquons dans une nouvelle ère de tokenomie avec le TEM, les enchères hollandaises et les DAO."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "tb2-img8",
+            "height": 994,
+            "width": 994,
+            "filename": "tb2-img8.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1687396662-tb2-img8.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Explorez comment ce concept innovant redéfinit le modèle de participation et révolutionne le paysage des startups.",
+      "title": "Comment la tokenomie bouleverse le monde des startups",
+      "twitterCard": null,
+      "image": {
+        "width": 994,
+        "height": 994,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1687395688-tb2-img1.png"
+      }
+    }
+  },
+  "topics": [
+    "Tokenomics",
+    "DAO",
+    "Fundraising"
+  ]
+}

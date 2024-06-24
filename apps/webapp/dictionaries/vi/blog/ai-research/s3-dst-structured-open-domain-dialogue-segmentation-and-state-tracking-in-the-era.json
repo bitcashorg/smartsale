@@ -1,0 +1,624 @@
+{
+  "relatedBlogs": [
+    {
+      "id": "198277124",
+      "topics": [
+        "LLM",
+        "Tài chính",
+        "Chăm sóc sức khỏe",
+        "Pháp lý",
+        "Kích hoạt"
+      ],
+      "title": "Điều chỉnh các mô hình ngôn ngữ lớn thông qua đọc hiểu",
+      "slug": "adapting-large-language-models-via-reading-comprehension",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-27T03:34:22+01:00",
+      "description": "Bình luận & Đánh giá tóm tắt",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Điều chỉnh các mô hình ngôn ngữ lớn thông qua đọc hiểu",
+        "description": "Bình luận & Đánh giá tóm tắt"
+      }
+    },
+    {
+      "id": "198277342",
+      "topics": [
+        "LLM",
+        "Đa ngôn ngữ"
+      ],
+      "title": "OpenBA: Một mô hình dịch ngôn ngữ song ngữ 15B mã nguồn mở được huấn luyện từ đầu",
+      "slug": "openba-an-open-sourced-15b-bilingual-asymmetric-seq2seq-model-pre-trained-from-sc",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-27T03:34:02+01:00",
+      "description": "Bình luận & Đánh giá tóm tắt",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "OpenBA: Một mô hình dịch ngôn ngữ song ngữ 15B mã nguồn mở...",
+        "description": "Bình luận & Đánh giá tóm tắt"
+      }
+    },
+    {
+      "id": "198277117",
+      "topics": [
+        "LLM",
+        "Truy xuất"
+      ],
+      "title": "PDFTriage: Trả lời câu hỏi qua các tài liệu dài, có cấu trúc",
+      "slug": "pdftriage-question-answering-over-long-structured-documents",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-27T03:33:49+01:00",
+      "description": "Bình luận & Đánh giá tóm tắt",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "PDFTriage: Hỏi & Đáp qua các tài liệu dài, có cấu trúc",
+        "description": "Bình luận & Đánh giá tóm tắt"
+      }
+    },
+    {
+      "id": "198277138",
+      "topics": [
+        "LLM",
+        "Tinh chỉnh"
+      ],
+      "title": "Sorted LLaMA: Khai thác tiềm năng của các lớp trung gian của các mô hình ngôn ngữ lớn cho suy luận động bằng cách sử dụng tinh chỉnh đã sắp xếp (SoFT)",
+      "slug": "sorted-llama-unlocking-the-potential-of-intermediate-layers-of-large-language-mod",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-27T03:33:31+01:00",
+      "description": "Bình luận & Đánh giá tóm tắt",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Sorted LLaMA: ... Suy luận bằng cách sử dụng tinh chỉnh đã sắp xếp (SoFT)",
+        "description": "Bình luận & Đánh giá tóm tắt"
+      }
+    },
+    {
+      "id": "198277150",
+      "topics": [
+        "LLM",
+        "Điều chỉnh hướng dẫn",
+        "Đa phương tiện"
+      ],
+      "title": "Nghiên cứu thực nghiệm về việc mở rộng các mô hình đa phương tiện lớn được điều chỉnh hướng dẫn",
+      "slug": "an-empirical-study-of-scaling-instruct-tuned-large-multimodal-models",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-27T03:33:15+01:00",
+      "description": "Bình luận & Đánh giá tóm tắt",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Nghiên cứu thực nghiệm về việc mở rộng các mô hình đa phương tiện lớn được điều chỉnh hướng dẫn",
+        "description": "Bình luận & Đánh giá tóm tắt"
+      }
+    },
+    {
+      "id": "198277160",
+      "topics": [
+        "LLM",
+        "Đại lý",
+        "Trò chơi"
+      ],
+      "title": "MindAgent: Tương tác trò chơi nổi bật",
+      "slug": "mindagent-emergent-gaming-interaction",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-27T03:32:58+01:00",
+      "description": "Bình luận & Đánh giá tóm tắt",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
+      },
+      "seo": {
+        "title": "MindAgent: Tương tác trò chơi nổi bật",
+        "description": "Bình luận & Đánh giá tóm tắt"
+      }
+    },
+    {
+      "id": "198277196",
+      "topics": [
+        "LLM",
+        "Dữ liệu có cấu trúc"
+      ],
+      "title": "Struc-Bench: Các mô hình ngôn ngữ lớn có thực sự giỏi trong việc tạo ra dữ liệu có cấu trúc phức tạp không?",
+      "slug": "struc-bench-are-large-language-models-really-good-at-generating-complex-structure",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-25T03:38:38+01:00",
+      "description": "Bình luận & Đánh giá tóm tắt",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Struc-Bench:..Tạo ra dữ liệu có cấu trúc phức tạp?",
+        "description": "Bình luận & Đánh giá tóm tắt"
+      }
+    },
+    {
+      "id": "198277217",
+      "topics": [
+        "LLM",
+        "Bảo mật",
+        "Rìa"
+      ],
+      "title": "Phục hồi từ việc che giấu bảo mật với các mô hình ngôn ngữ lớn",
+      "slug": "recovering-from-privacy-preserving-masking-with-large-language-models",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-25T03:38:26+01:00",
+      "description": "Bình luận & Đánh giá tóm tắt",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Phục hồi từ việc che giấu bảo mật với các mô hình ngôn ngữ lớn",
+        "description": "Bình luận & Đánh giá tóm tắt"
+      }
+    },
+    {
+      "id": "198277253",
+      "topics": [
+        "LLM",
+        "Âm thanh"
+      ],
+      "title": "Tăng cường văn bản cho hiểu biết ngôn ngữ nói với các mô hình ngôn ngữ lớn",
+      "slug": "augmenting-text-for-spoken-language-understanding-with-large-language-models",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-25T03:37:49+01:00",
+      "description": "Bình luận & Đánh giá tóm tắt",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Tăng cường văn bản cho hiểu biết ngôn ngữ nói ...",
+        "description": "Bình luận & Đánh giá tóm tắt"
+      }
+    },
+    {
+      "id": "198277277",
+      "topics": [
+        "LLM",
+        "Nén"
+      ],
+      "title": "Mô hình ngôn ngữ là nén",
+      "slug": "language-modeling-is-compression",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-25T03:37:32+01:00",
+      "description": "Bình luận & Đánh giá tóm tắt",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Mô hình ngôn ngữ là nén",
+        "description": "Bình luận & Đánh giá tóm tắt"
+      }
+    },
+    {
+      "id": "198277360",
+      "topics": [
+        "LLM",
+        "RLHF"
+      ],
+      "title": "Ổn định RLHF thông qua mô hình lợi thế và luyện tập chọn lọc",
+      "slug": "stabilizing-rlhf-through-advantage-model-and-selective-rehearsal",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-24T05:22:15+01:00",
+      "description": "Bình luận & Đánh giá tóm tắt",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Ổn định RLHF ... Mô hình lợi thế & Luyện tập chọn lọc",
+        "description": "Bình luận & Đánh giá tóm tắt"
+      }
+    },
+    {
+      "id": "198277446",
+      "topics": [
+        "LLM",
+        "Ảo giác"
+      ],
+      "title": "Chuỗi xác minh giảm ảo giác trong các mô hình ngôn ngữ lớn",
+      "slug": "chain-of-verification-reduces-hallucination-in-large-language-models",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-24T05:21:05+01:00",
+      "description": "Bình luận & Đánh giá tóm tắt",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Chuỗi xác minh giảm ảo giác trong các mô hình ngôn ngữ lớn",
+        "description": "Bình luận & Đánh giá tóm tắt"
+      }
+    },
+    {
+      "id": "198277458",
+      "topics": [
+        "LLM",
+        "Ảo giác",
+        "Thực thể",
+        "Dữ liệu có cấu trúc"
+      ],
+      "title": "LMDX: Trích xuất thông tin tài liệu dựa trên mô hình ngôn ngữ và định vị",
+      "slug": "lmdx-language-model-based-document-information-extraction-and-localization",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-24T05:20:31+01:00",
+      "description": "Bình luận & Đánh giá tóm tắt",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "LMDX: ..Trích xuất thông tin tài liệu và định vị",
+        "description": "Bình luận & Đánh giá tóm tắt"
+      }
+    },
+    {
+      "id": "198277209",
+      "topics": [
+        "LLM",
+        "Dữ liệu"
+      ],
+      "title": "SlimPajama-DC: Hiểu các kết hợp dữ liệu cho đào tạo mô hình ngôn ngữ lớn",
+      "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-04T23:43:32+01:00",
+      "description": "Bình luận & Đánh giá tóm tắt",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
+      },
+      "seo": {
+        "title": "SlimPajama-DC: Hiểu các kết hợp dữ liệu cho đào tạo mô hình ngôn ngữ lớn",
+        "description": "Bình luận & Đánh giá tóm tắt"
+      }
+    },
+    {
+      "id": "198277109",
+      "topics": [
+        "LLM",
+        "Suy luận"
+      ],
+      "title": "Giải mã đối lập cải thiện suy luận trong các mô hình ngôn ngữ lớn",
+      "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-04T22:18:11+01:00",
+      "description": "Bình luận & Đánh giá tóm tắt",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Giải mã đối lập cải thiện suy luận trong các mô hình ngôn ngữ lớn",
+        "description": "Bình luận & Đánh giá tóm tắt"
+      }
+    },
+    {
+      "id": "198277099",
+      "topics": [
+        "LLM",
+        "Đa ngôn ngữ",
+        "Dữ liệu"
+      ],
+      "title": "CulturaX: Bộ dữ liệu đa ngôn ngữ lớn, sạch và khổng lồ cho các mô hình ngôn ngữ lớn trong 167 ngôn ngữ",
+      "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-04T22:14:53+01:00",
+      "description": "Bình luận & Đánh giá tóm tắt",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "CulturaX: Bộ dữ liệu đa ngôn ngữ lớn, sạch và khổng lồ...",
+        "description": "Bình luận & Đánh giá tóm tắt"
+      }
+    },
+    {
+      "id": "198044929",
+      "topics": [
+        "LLM",
+        "Dữ liệu",
+        "Đại lý"
+      ],
+      "title": "Nguồn dữ liệu cho các đại lý thể hiện suy luận",
+      "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-04T07:33:25+01:00",
+      "description": "Bình luận & Đánh giá tóm tắt",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
+      },
+      "seo": {
+        "title": "Nguồn dữ liệu cho các đại lý thể hiện suy luận",
+        "description": "Bình luận & Đánh giá tóm tắt"
+      }
+    },
+    {
+      "id": "198044900",
+      "topics": [
+        "LLM",
+        "Thực thể",
+        "Tinh chỉnh"
+      ],
+      "title": "Tận dụng thông tin ngữ cảnh để phát hiện hiệu quả sự nổi bật của thực thể",
+      "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-04T07:30:50+01:00",
+      "description": "Bình luận & Đánh giá tóm tắt",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Tận dụng thông tin ngữ cảnh ...Phát hiện hiệu quả sự nổi bật của thực thể",
+        "description": "Bình luận & Đánh giá tóm tắt"
+      }
+    }
+  ],
+  "blogContent": {
+    "id": "198277239",
+    "topics": [
+      "LLM",
+      "Chat"
+    ],
+    "title": "S3-DST: Phan tich va theo doi trang thai hoi thoai mo trong ky nguyen LLM",
+    "slug": "s3-dst-structured-open-domain-dialogue-segmentation-and-state-tracking-in-the-era",
+    "authorName": "Prof. Otto Nomos",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+    },
+    "_publishedAt": "2024-05-25T03:38:11+01:00",
+    "description": "Binh luan va danh gia tom tat",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Xuat ban vao Ngay 15 thang 9"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tac gia: Sarkar Snigdha Sarathi Das, Chirag Shah, Mengting Wan, Jennifer Neville, Longqi Yang, Reid Andersen, Georg Buscher,"
+                    },
+                    {
+                      "url": "https://huggingface.co/tararootcake",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Tara Safavi"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tom tat"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Van de theo doi trang thai hoi thoai (DST) truyen thong nham theo doi so thich va y dinh cua nguoi dung trong cac cuoc tro chuyen giua nguoi dung va dai ly. Mac du du phong cho cac he thong hoi thoai huong nhiem vu ho tro cac ung dung trong linh vuc hep, su xuat hien cua cac he thong chat dua tren mo hinh ngon ngu lon (LLM) da mang lai nhieu tinh tiet phuc tap trong cac cuoc hoi thoai mo. Nhung tinh tiet phuc tap nay bieu hien dang tang do phuc tap trong cac tuong tac ngu canh, cac phien hoi thoai keo dai bao gom nhieu chu de da dang, va su thay doi ngu canh thuong xuyen hon. De xu ly nhung tinh tiet phuc tap nay phat sinh tu cac he thong chat dua tren LLM dang phat trien, chung toi de xuat phan doan hoi thoai chung va theo doi trang thai theo tung phan trong cac he thong hoi thoai mo. Gia dinh trong mot cai dat khong co kich ban phu hop voi mot he thong hoi thoai mo thuc su, chung toi de xuat S3-DST, mot ky thuat thuc day co cau truc su dung Pre-Analytical Recollection, mot co che dinh vi moi chung toi thiet ke de cai thien viec theo doi ngu canh dai. De chung minh hieu qua cua cach tiep can duoc de xuat trong viec phan doan chung va theo doi trang thai, chung toi danh gia S3-DST tren mot bo du lieu hoi thoai mo vo danh rieng cung nhu cac bo du lieu DST va phan doan cong khai. Tren tat ca cac bo du lieu va cai dat, S3-DST lien tuc vuot troi so voi trang thai cua nghe thuat, chung minh suc manh va do ben vung cua the he tiep theo cua cac he thong chat dua tren LLM."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "url": "https://arxiv.org/abs/2309.08827",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Xem trang arXiv"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "https://arxiv.org/pdf/2309.08827",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Xem PDF"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Binh luan"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "S3-DST: Phan tich va theo doi trang thai hoi thoai mo trong ky nguyen LLMXuat ban vao Ngay 15 thang 9·Noi bat trong"
+                    },
+                    {
+                      "url": "https://huggingface.co/papers?date=2023-09-19",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Bai bao hang ngay"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": " vao Ngay 18 thang 9Tac gia: Sarkar Snigdha Sarathi Das, Chirag Shah, Mengting Wan, Jennifer Neville, Longqi Yang, Reid Andersen, Georg Buscher,"
+                    },
+                    {
+                      "url": "https://huggingface.co/tararootcake",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Tara Safavi"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tom tat"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Van de theo doi trang thai hoi thoai (DST) truyen thong nham theo doi so thich va y dinh cua nguoi dung trong cac cuoc tro chuyen giua nguoi dung va dai ly. Mac du du phong cho cac he thong hoi thoai huong nhiem vu ho tro cac ung dung trong linh vuc hep, su xuat hien cua cac he thong chat dua tren mo hinh ngon ngu lon (LLM) da mang lai nhieu tinh tiet phuc tap trong cac cuoc hoi thoai mo. Nhung tinh tiet phuc tap nay bieu hien dang tang do phuc tap trong cac tuong tac ngu canh, cac phien hoi thoai keo dai bao gom nhieu chu de da dang, va su thay doi ngu canh thuong xuyen hon. De xu ly nhung tinh tiet phuc tap nay phat sinh tu cac he thong chat dua tren LLM dang phat trien, chung toi de xuat phan doan hoi thoai chung va theo doi trang thai theo tung phan trong cac he thong hoi thoai mo. Gia dinh trong mot cai dat khong co kich ban phu hop voi mot he thong hoi thoai mo thuc su, chung toi de xuat S3-DST, mot ky thuat thuc day co cau truc su dung Pre-Analytical Recollection, mot co che dinh vi moi chung toi thiet ke de cai thien viec theo doi ngu canh dai. De chung minh hieu qua cua cach tiep can duoc de xuat trong viec phan doan chung va theo doi trang thai, chung toi danh gia S3-DST tren mot bo du lieu hoi thoai mo vo danh rieng cung nhu cac bo du lieu DST va phan doan cong khai. Tren tat ca cac bo du lieu va cai dat, S3-DST lien tuc vuot troi so voi trang thai cua nghe thuat, chung minh suc manh va do ben vung cua the he tiep theo cua cac he thong chat dua tren LLM."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "researchpaper9",
+            "height": 816,
+            "width": 1456,
+            "filename": "researchpaper9.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Binh luan va danh gia tom tat",
+      "title": "S3-DST: Phan tich va theo doi trang thai hoi thoai mo...",
+      "twitterCard": null,
+      "image": {
+        "width": 1456,
+        "height": 816,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      }
+    }
+  },
+  "topics": [
+    "LLM",
+    "Chat"
+  ]
+}

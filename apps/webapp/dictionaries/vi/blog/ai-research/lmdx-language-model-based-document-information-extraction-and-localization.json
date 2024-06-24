@@ -1,0 +1,498 @@
+{
+  "relatedBlogs": [],
+  "blogContent": {
+    "id": "198277458",
+    "topics": [
+      "LLM",
+      "Ảo giác",
+      "Thực thể",
+      "Dữ liệu có cấu trúc"
+    ],
+    "title": "LMDX: Mô hình ngôn ngữ dựa trên trích xuất thông tin tài liệu và định vị",
+    "slug": "lmdx-language-model-based-document-information-extraction-and-localization",
+    "authorName": "Prof. Otto Nomos",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+    },
+    "_publishedAt": "2024-05-24T05:20:31+01:00",
+    "description": "Bình luận & Đánh giá tóm tắt",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Được xuất bản vào Ngày 19 tháng 9"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tác giả:"
+                    },
+                    {
+                      "url": "https://huggingface.co/vperot",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Vincent Perot"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/ghoulken",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Kai Kang"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/fluisier",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Florian Luisier"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ",Guolong Su,Xiaoyu Sun,"
+                    },
+                    {
+                      "url": "https://huggingface.co/RamyaSreeBoppana",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Ramya Sree Boppana"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/zilongwang",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Zilong Wang"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ",Jiaqi Mu,Hao Zhang,Nan Hua"
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tóm tắt"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Các mô hình ngôn ngữ lớn (LLM) đã làm cách mạng hóa Xử lý ngôn ngữ tự nhiên (NLP), cải thiện tiên tiến nhất trong nhiều nhiệm vụ hiện có và thể hiện các khả năng mới nổi. Tuy nhiên, LLM chưa được áp dụng thành công trong trích xuất thông tin tài liệu bán cấu trúc, đây là trọng tâm của nhiều quy trình xử lý tài liệu và bao gồm việc trích xuất các thực thể chính từ tài liệu phong phú về hình ảnh (VRD) dựa trên lược đồ mục tiêu đã xác định. Những trở ngại chính đối với việc áp dụng LLM trong nhiệm vụ đó đã là sự thiếu vắng mã hóa bố cục trong LLM, quan trọng cho việc trích xuất chất lượng cao, và thiếu cơ chế định vị đảm bảo rằng câu trả lời không bị ảo giác. Trong bài báo này, chúng tôi giới thiệu Phương pháp dựa trên Mô hình Ngôn ngữ để Trích xuất Thông tin Tài liệu và Định vị (LMDX), một phương pháp để thích ứng LLM tùy ý cho việc trích xuất thông tin tài liệu. LMDX có thể thực hiện trích xuất các thực thể đơn lẻ, lặp lại và phân cấp, cả với và không có dữ liệu đào tạo, đồng thời cung cấp các bảo đảm định vị và định vị các thực thể trong tài liệu. Cụ thể, chúng tôi áp dụng LMDX cho LLM PaLM 2-S và đánh giá nó trên các chuẩn mực VRDU và CORD, thiết lập một tiêu chuẩn mới và cho thấy cách LMDX cho phép tạo ra các bộ phân tích cú pháp chất lượng cao, hiệu quả về dữ liệu."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "url": "https://arxiv.org/abs/2309.10952",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Xem trang arXiv"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "https://arxiv.org/pdf/2309.10952",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Xem PDF"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Bình luận"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Bài báo có tựa đề \"LMDX: Mô hình ngôn ngữ dựa trên trích xuất thông tin tài liệu và định vị\" nhằm giải quyết thách thức trích xuất thông tin có cấu trúc từ tài liệu phong phú về hình ảnh (VRD) bằng cách sử dụng các mô hình ngôn ngữ lớn (LLM)."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Những điểm chính:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Thách thức với LLM"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Mặc dù đã có những bước tiến trong xử lý ngôn ngữ tự nhiên, LLM chưa thành công với trích xuất thông tin tài liệu bán cấu trúc do thiếu mã hóa bố cục và cơ chế định vị."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Phương pháp LMDX"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Các tác giả giới thiệu LMDX để thích ứng LLM cho nhiệm vụ trích xuất cụ thể này. Kỹ thuật này có thể trích xuất các loại thực thể khác nhau, cung cấp nguồn gốc sự thật, và thậm chí định vị các thực thể này trong tài liệu."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Triển khai thành công"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Khi áp dụng cho LLM PaLM 2-S và được đánh giá trên các chuẩn mực cụ thể, LMDX thiết lập một tiêu chuẩn mới trong lĩnh vực, nhấn mạnh khả năng tạo ra các bộ phân tích cú pháp chất lượng cao với hiệu quả."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tác động thực tế tiềm năng:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Xử lý tài liệu tự động"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Việc trích xuất thông tin có cấu trúc từ tài liệu một cách hiệu quả có thể làm cách mạng hóa các ngành như tài chính, pháp lý và y tế, nơi luôn cần trích xuất dữ liệu từ tài liệu để phân tích thêm."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Giảm nhu cầu ghi chú thủ công"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Các bảo đảm định vị có thể giảm đáng kể nhu cầu giám sát thủ công để đảm bảo tính hợp lệ của dữ liệu được trích xuất."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Tính linh hoạt"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Khả năng của mô hình xử lý các loại thực thể khác nhau và cung cấp định vị trong tài liệu mang lại lợi thế trong các ứng dụng thực tế nơi ngữ cảnh và vị trí trong tài liệu có thể rất quan trọng."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Tiết kiệm chi phí tiềm năng"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Với các bộ phân tích cú pháp chất lượng cao, hiệu quả về dữ liệu, các doanh nghiệp có thể giảm chi phí liên quan đến trích xuất dữ liệu thủ công, xác minh và sửa chữa."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Thách thức:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Áp dụng trong hệ thống cũ"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Nhiều ngành đã có các hệ thống cũ đang hoạt động, vì vậy việc tích hợp và thích ứng các phương pháp mới có thể đòi hỏi thời gian và nguồn lực."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Độ nhạy dữ liệu"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Tài liệu từ các lĩnh vực như tài chính và y tế có thể chứa thông tin nhạy cảm. Cách mô hình đảm bảo quyền riêng tư và an ninh sẽ là mối quan tâm cho sự áp dụng rộng rãi của nó."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Xét đến những hậu quả sâu rộng của việc trích xuất thông tin tài liệu hiệu quả và hiệu quả trong nhiều ngành:"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tôi đánh giá tác động thực tế của bài báo này là 9 trên 10."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Nếu LMDX có thể cung cấp các trích xuất chính xác một cách nhất quán trên nhiều loại tài liệu và lĩnh vực, nó có thể ảnh hưởng đáng kể đến các doanh nghiệp phụ thuộc nặng nề vào xử lý tài liệu."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "researchpaper9",
+            "height": 816,
+            "width": 1456,
+            "filename": "researchpaper9.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Bình luận & Đánh giá tóm tắt",
+      "title": "LMDX: ..Trích xuất thông tin tài liệu và định vị",
+      "twitterCard": null,
+      "image": {
+        "width": 1456,
+        "height": 816,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      }
+    }
+  },
+  "topics": [
+    "LLM",
+    "Hallucination",
+    "Entity",
+    "Structured Data"
+  ]
+}

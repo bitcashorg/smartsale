@@ -1,0 +1,1318 @@
+{
+  "relatedBlogs": [
+    {
+      "id": "190259319",
+      "topics": [
+        "Resumen",
+        "LLM",
+        "Entrenamiento"
+      ],
+      "title": "Podcast de Latent Space 16/8/23 [Resumen] - Las Matemáticas del Entrenamiento de LLMs — con Quentin Anthony de Eleuther AI",
+      "slug": "latent-space-podcast-8-16-23-summary-the-mathematics-of-training-llms-with-que",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:19:45+01:00",
+      "description": "Explora las matemáticas detrás del entrenamiento de LLMs con Quentin Anthony de Eleuther AI. Sumérgete en el artículo Transformers Math 101 y domina las técnicas de entrenamiento distribuido para un rendimiento máximo de GPU.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692324088-screenshot-2023-08-17-at-9-59-17-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space 16/8/23 [Resumen] Matemáticas del Entrenamiento de LLMs",
+        "description": "Sumérgete en el artículo Transformers Math 101 y domina las técnicas de entrenamiento distribuido para un rendimiento máximo de GPU."
+      }
+    },
+    {
+      "id": "190259129",
+      "topics": [
+        "LLM",
+        "Hardware",
+        "Resumen",
+        "Edge"
+      ],
+      "title": "Podcast de Latent Space 10/8/23 [Resumen]: LLMs en Todas Partes: Ejecutando modelos de 70B en navegadores y iPhones usando MLC — con Tianqi Chen de CMU / OctoML",
+      "slug": "latent-space-podcast-8-10-23-summary-llms-everywhere-running-70b-models-in-browse",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:18:37+01:00",
+      "description": "Explora la magia de MLC con Tianqi Chen: desplegando modelos de 70B en navegadores y iPhones. Sumérgete en XGBoost, la creación de TVM y el futuro de los despliegues universales de IA.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1691894611-screenshot-2023-08-12-at-10-42-43-pm.png"
+      },
+      "seo": {
+        "title": "Latent Space 10/8/23 [Resumen]: LLMs en Todas Partes",
+        "description": "Explora el despliegue de modelos de 70B en navegadores y iPhones. Sumérgete en XGBoost, la creación de TVM y el futuro de los despliegues universales de IA."
+      }
+    },
+    {
+      "id": "190259087",
+      "topics": [
+        "Resumen",
+        "LLM",
+        "Código",
+        "Código Abierto",
+        "Modelos Pequeños"
+      ],
+      "title": "Podcast de Latent Space 4/8/23 [Resumen] Latent Space x AI Breakdown crossover pod!",
+      "slug": "latent-space-podcast-8-4-23-summary-latent-space-x-ai-breakdown-crossover-pod",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:16:33+01:00",
+      "description": "Únete a AI Breakdown y Latent Space para el resumen de tecnología de IA del verano: Sumérgete en GPT4.5, Llama 2, herramientas de IA, el creciente ingeniero de IA y más!",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1691539617-screenshot-2023-08-08-at-8-02-52-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space 4/8/23 [Resumen] crossover de AI Breakdown",
+        "description": "Sumérgete en GPT4.5, Llama 2, herramientas de IA, el creciente ingeniero de IA y más!"
+      }
+    },
+    {
+      "id": "190259111",
+      "topics": [
+        "Resumen",
+        "Transformers",
+        "Entrenamiento",
+        "Código Abierto"
+      ],
+      "title": "Podcast de Latent Space 26/7/23 [Resumen] FlashAttention 2: haciendo los Transformers un 800% más rápidos - Tri Dao de Together AI",
+      "slug": "latent-space-podcast-7-26-23-summary-flashattention-2-making-transformers-800-fas",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:14:13+01:00",
+      "description": "Descubre cómo FlashAttention revolucionó la velocidad de la IA con Tri Dao, mientras revela el poder de FlashAttention 2, se sumerge en el Hazy Lab de Stanford y ofrece perspectivas futuras sobre la IA.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1691543194-screenshot-2023-08-08-at-8-43-59-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space 26/7/23 [Resumen] FlashAttention 2",
+        "description": "Descubre cómo FlashAttention revolucionó la velocidad de la IA con Tri Dao, mientras revela el poder de FlashAttention 2"
+      }
+    },
+    {
+      "id": "190259172",
+      "topics": [
+        "Resumen",
+        "LLM",
+        "Código Abierto",
+        "Modelos Pequeños"
+      ],
+      "title": "Podcast de Latent Space 19/7/23 [Resumen] - Llama 2: El Nuevo SOTA de LLM Abierto (con Nathan Lambert, Matt Bornstein, Anton Troynikov, Russell Kaplan, Whole Mars Catalog y otros)",
+      "slug": "latent-space-podcast-7-19-23-summary-llama-2-the-new-open-llm-sota-ft-nathan-lamb",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:12:38+01:00",
+      "description": "Explora Llama 2, el último avance en IA con expertos Nathan Lambert, Matt Bornstein y más. Sumérgete en conjuntos de datos, benchmarks y predicciones de IA. ¡Perspectivas y drama de Llama te esperan en este podcast top!",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1691968295-screenshot-2023-08-13-at-7-11-06-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space 19/7/23 [Resumen] - Llama 2",
+        "description": "Sumérgete en conjuntos de datos, benchmarks y predicciones de IA. ¡Perspectivas y drama de Llama te esperan en este podcast top!"
+      }
+    },
+    {
+      "id": "190259191",
+      "topics": [
+        "Resumen",
+        "Código",
+        "LLM"
+      ],
+      "title": "Podcast de Latent Space 10/7/23 [Resumen] - Intérprete de Código == GPT 4.5 (con Simon Willison, Alex Volkov, Aravind Srinivas, Alex Graveley y otros)",
+      "slug": "latent-space-podcast-7-10-23-summary-code-interpreter-gpt-4-5-w-simon-willison-al",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:09:26+01:00",
+      "description": "Explora el Intérprete de Código de ChatGPT: un cambio de juego en la IA. Sumérgete en su salto de capacidades de 1000x con Simon, Alex y los principales expertos en IA. #InferenciaAumentadaPorCódigo #GPT4_5",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692048911-screenshot-2023-08-14-at-3-34-05-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space [Resumen] Intérprete de Código = GPT 4.5",
+        "description": "Explora el Intérprete de Código de ChatGPT: un cambio de juego en la IA. Sumérgete en su salto de capacidades de 1000x con Simon, Alex y los principales expertos en IA."
+      }
+    },
+    {
+      "id": "190259238",
+      "topics": [
+        "Hardware",
+        "LLM",
+        "Resumen"
+      ],
+      "title": "Podcast de Latent Space 20/6/23 [Resumen] - Commoditizando el Petaflop — con George Hotz de tiny corp",
+      "slug": "latent-space-podcast-6-20-23-summary-commoditizing-the-petaflop-with-george-ho",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:07:15+01:00",
+      "description": "¡George Hotz de tiny corp desafía a Nvidia y Google! Sumérgete en el mundo de las colaboraciones con AMD, conocimientos sobre ggml, Mojo, Elon y GPT-4, además de un vistazo a la Novia de IA.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692154615-screenshot-2023-08-15-at-10-55-40-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space 20/6/23 [Resumen] - George Hotz",
+        "description": "¡George Hotz de tiny corp desafía a Nvidia y Google! Colaboraciones con AMD, conocimientos sobre ggml, Mojo, Elon y GPT-4, además de un vistazo a la Novia de IA."
+      }
+    },
+    {
+      "id": "190259294",
+      "topics": [
+        "LLM",
+        "Funciones",
+        "Resumen"
+      ],
+      "title": "Podcast de Latent Space 14/6/23 [Resumen] - Pod de Emergencia: La nueva API de Funciones de OpenAI, Reducción de Precio del 75%, 4x Longitud de Contexto (con Alex Volkov, Simon Willison, Riley Goodside, Joshua Lochner, Stefania Druga, Eric Elliott, Mayo Oshin y otros)",
+      "slug": "latent-space-podcast-6-14-23-summary-emergency-pod-openai-s-new-functions-api-75",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:05:04+01:00",
+      "description": "Explora las actualizaciones de OpenAI de junio de 2023 con los principales ingenieros de IA de Scale, Microsoft, Pinecone y Huggingface. Sumérgete en los paradigmas de Código x LLM y descubre los Agentes de Función Recursiva.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692221668-screenshot-2023-08-16-at-5-32-29-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space 20/6/23 [Resumen] - Pod de Emergencia",
+        "description": "Explora las actualizaciones de OpenAI de junio de 2023 con los principales ingenieros de IA de Scale, Microsoft, Pinecone y Huggingface."
+      }
+    },
+    {
+      "id": "190259333",
+      "topics": [
+        "LLM",
+        "Resumen",
+        "UX"
+      ],
+      "title": "Podcast de Latent Space 8/6/23 [Resumen] - De RLHF a RLHB: El Caso de Aprender del Comportamiento Humano - con Jeffrey Wang y Joe Reeve de Amplitude",
+      "slug": "latent-space-podcast-6-8-23-summary-from-rlhf-to-rlhb-the-case-for-learning-from",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:02:33+01:00",
+      "description": "Explora la IA y la analítica con Jeffrey Wang y Joe Reeve en Latent Space Live! Sumérgete en por qué la IA valora la Analítica y el poder de los datos de comportamiento de primera mano.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692386432-screenshot-2023-08-18-at-3-17-04-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space 8/6/23 [Resumen] - De RLHF a RLHB",
+        "description": "Explora la IA y la analítica con Jeffrey Wang y Joe Reeve en Latent Space Live! Sumérgete en por qué la IA valora la Analítica y el poder de los datos de comportamiento de primera mano."
+      }
+    },
+    {
+      "id": "190260528",
+      "topics": [
+        "Resumen",
+        "LLM",
+        "UX"
+      ],
+      "title": "Podcast de Latent Space 1/6/23 [Resumen] - Construyendo el Scenius de IA × UX — con Linus Lee de Notion AI",
+      "slug": "latent-space-podcast-6-1-23-summary-building-the-ai-x-ux-scenius-with-linus-le",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:00:12+01:00",
+      "description": "Explora el enfoque transformador de Notion AI hacia la IA y la UX. Sumérgete en el futuro de los espacios de trabajo aumentados por IA, el valor más allá de las interfaces de chat y conocimientos sobre el trabajo del conocimiento efectivo. ¡Incluye resumen del meetup AI×UX NYC!",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692390655-screenshot-2023-08-18-at-4-28-51-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space 1/6/23 [Resumen] - Scenius de IA × UX",
+        "description": "Explora el enfoque transformador de Notion AI hacia la IA y la UX."
+      }
+    },
+    {
+      "id": "190260557",
+      "topics": [
+        "Resumen",
+        "Código",
+        "LLM",
+        "Agentes"
+      ],
+      "title": "Podcast de Latent Space 25/5/23 [Resumen] - Depurando Internet con agentes de IA – con Itamar Friedman de Codium AI y AutoGPT",
+      "slug": "latent-space-podcast-5-25-23-summary-debugging-the-internet-with-ai-agents-with",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:58:27+01:00",
+      "description": "Explora el futuro de la IA con Itamar Friedman de Codium AI en 'Depurando Internet'. Sumérgete en los agentes 'Extreme DRY', la rápida sincronización de especificaciones y pruebas, y el equilibrio entre código y pruebas. Además, conocimientos de Toran y una mirada exclusiva al roadmap de AutoGPT!",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692397413-screenshot-2023-08-18-at-6-10-09-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space 25/5/23 [Resumen] Depurando Internet",
+        "description": "Sumérgete en los agentes 'Extreme DRY', la rápida sincronización de especificaciones y pruebas, y el equilibrio entre código y pruebas."
+      }
+    },
+    {
+      "id": "190260577",
+      "topics": [
+        "LLM",
+        "Modelos Pequeños"
+      ],
+      "title": "Podcast de Latent Space 20/5/23 [Resumen] - MPT-7B y El Comienzo de Contexto=Infinito — con Jonathan Frankle y Abhinav Venigalla de MosaicML",
+      "slug": "latent-space-podcast-5-20-23-summary-mpt-7b-and-the-beginning-of-context-infinity",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:57:33+01:00",
+      "description": "Sumérgete en el entrenamiento de 9 días y $200k del 'llongboi' MPT-7B de MosaicML, conocimientos sobre la preparación de datos y el auge de los modelos de IA abiertos con los expertos Frankle y Venigalla.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692409795-screenshot-2023-08-18-at-9-49-21-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space 25/6/23 [Resumen] MosaicML",
+        "description": "Sumérgete en el entrenamiento de 9 días y $200k del 'llongboi' MPT-7B de MosaicML, conocimientos sobre la preparación de datos y el auge de los modelos de IA abiertos"
+      }
+    },
+    {
+      "id": "190260597",
+      "topics": [
+        "LLM",
+        "Datos Estructurados"
+      ],
+      "title": "Podcast de Latent Space 15/5/23 [Resumen] - Calidad y estructura garantizadas en las salidas de LLM - con Shreya Rajpal de Guardrails AI",
+      "slug": "latent-space-podcast-5-15-23-summary-guaranteed-quality-and-structure-in-llm-outp",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:56:26+01:00",
+      "description": "Explora el Ep. 12 con Shreya Rajpal de Guardrails AI: Sumérgete en la validación de salidas de LLM, refinando respuestas a través de bucles de re-pregunta y estableciendo SLAs para modelos. Domina los matices de la garantía de calidad de IA.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692495732-screenshot-2023-08-19-at-9-38-27-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space 15/5/23 [Resumen] Salidas de LLM de Calidad",
+        "description": "Explora el Ep. 12 con Shreya Rajpal de Guardrails AI: Sumérgete en la validación de salidas de LLM."
+      }
+    },
+    {
+      "id": "190260640",
+      "topics": [
+        "Resumen",
+        "Código Abierto",
+        "LLM"
+      ],
+      "title": "Podcast de Latent Space 5/5/23 [Resumen] - No Moat: La IA Cerrada recibe su llamada de atención de Código Abierto — con Simon Willison",
+      "slug": "latent-space-podcast-5-5-23-summary-no-moat-closed-ai-gets-its-open-source-wakeup",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:49:18+01:00",
+      "description": "Explora 'No Moat: El Despertar de Código Abierto de la IA Cerrada' con Simon Willison. Sumérgete en conocimientos del memo filtrado de Google Moat, la fuga de cerebros de Google y el aumento de velocidad de Python con Mojo.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692566921-screenshot-2023-08-20-at-5-25-53-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space 5/5/23 [Resumen] - No Moat",
+        "description": "Explora 'No Moat: El Despertar de Código Abierto de la IA Cerrada' con Simon Willison. Sumérgete en conocimientos del memo filtrado de Google Moat."
+      }
+    },
+    {
+      "id": "190260671",
+      "topics": [
+        "LLM",
+        "Código",
+        "Resumen"
+      ],
+      "title": "Podcast de Latent Space 3/5/23 [Resumen] - Entrenando un LLM de Código SOTA en 1 semana y Cuantificando las Vibras — con Reza Shabani de Replit",
+      "slug": "latent-space-podcast-5-3-23-summary-training-a-sota-code-llm-in-1-week-and-quanti",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:46:08+01:00",
+      "description": "Ep. 10 con Reza Shabani: Sumérgete en el rápido entrenamiento de un LLM de Código de última generación, explora el futuro de Replit Ghostwriter y el viaje de Finanzas a IA. ¡Descubre la transición de Kaplan a Chinchilla y más!",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692584998-screenshot-2023-08-20-at-10-17-26-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space 3/5/23 [Resumen] - LLM de Código SOTA",
+        "description": "Ep. 10 con Reza Shabani: Sumérgete en el rápido entrenamiento de un LLM de Código de última generación!"
+      }
+    },
+    {
+      "id": "190629271",
+      "topics": [
+        "LLM",
+        "Modelos Pequeños",
+        "Resumen"
+      ],
+      "title": "Podcast de Latent Space 28/4/23 [Resumen] - Mapeando el futuro de los Modelos *realmente* Abiertos y Entrenando a Dolly por $30 — con Mike Conover de Databricks",
+      "slug": "latent-space-podcast-4-28-23-summary-mapping-the-future-of-truly-open-models-and",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:33:12+01:00",
+      "description": "Explora el futuro de los modelos abiertos con Mike Conover de Databricks. Sumérgete en la creación de Dolly, su transición de 1.0 a 2.0 y las influencias detrás de su desarrollo. El Ep.9 toca la infraestructura de modelos, la visión de Databricks y más. #IA #ModelosAbiertos #Dolly",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1694038707-screenshot-2023-09-06-at-3-12-24-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space 28/4/23 [Resumen] - Mike de Databricks",
+        "description": "El Ep.9 toca la infraestructura de modelos, la visión de Databricks y más. #IA #ModelosAbiertos #Dolly"
+      }
+    },
+    {
+      "id": "191164291",
+      "topics": [
+        "LLM",
+        "Empresa",
+        "Resumen"
+      ],
+      "title": "Podcast de Latent Space 21/4/23 [Resumen] - Búsqueda Potenciada por IA para la Empresa — con Deedy Das de Glean",
+      "slug": "latent-space-podcast-4-21-23-summary-ai-powered-search-for-the-enterprise-with",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:31:31+01:00",
+      "description": "Ep.8: Sumérgete en la IA en la búsqueda empresarial con Deedy Das de Glean. Desentraña los desafíos en la creación de un gigante de búsqueda de IA, comparaciones Google vs ChatGPT, las complejidades de la infraestructura de IA, la detección de texto generado por IA y por qué las empresas necesitan más que solo Document QA.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1694134074-screenshot-2023-09-07-at-5-43-48-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space 21/4/23 [Resumen] - con Deedy Das",
+        "description": "Ep.8: Sumérgete en la IA en la búsqueda empresarial con Deedy Das de Glean. Desentraña los desafíos en la creación de un gigante de búsqueda de IA, comparaciones Google vs ChatGPT ..."
+      }
+    }
+  ],
+  "blogContent": {
+    "id": "190260606",
+    "topics": [
+      "LLM",
+      "Entrenamiento",
+      "Agentes",
+      "Multimodal"
+    ],
+    "title": "Podcast de Latent Space 5/8/23 [Resumen] - El Gen del Fundador de IA: Ser Pionero, Construir Rápido y Creer en la Grandeza — con Sharif Shameem de Lexica",
+    "slug": "latent-space-podcast-5-8-23-summary-the-ai-founder-gene-being-early-building-fast",
+    "authorName": "Prof. Otto Nomos",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+    },
+    "_publishedAt": "2023-10-05T08:52:09+01:00",
+    "description": "Ep.11 con Sharif Shameem de Lexica: Sumérgete en la mentalidad del fundador de IA, descubriendo los secretos para innovar, construir tecnología revolucionaria, entrenar modelos y el intrigante potencial de los Agentes y la secuenciación genómica.",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1692501984-screenshot-2023-08-19-at-11-24-05-pm.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Enlace Original: "
+                    },
+                    {
+                      "url": "https://www.latent.space/p/sharif-shameem#details",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "El Gen del Fundador de IA: Ser Pionero, Construir Rápido y Creer en la Grandeza — con Sharif Shameem de Lexica"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Resumen"
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 3,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "La Odisea Tecnológica de Sharif Amin: De Abandonar la Universidad a Pionero en IA"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "En el episodio del podcast de Latent Space, Alessio y su coanfitrión Swyx, entrevistan a Sharif Amin. Sharif profundiza en su trayectoria educativa, compartiendo que abandonó la Universidad de Maryland para perseguir un proyecto paralelo, inspirado por el consejo de un inversor y un libro que leyó. Luego trabajó en Mitra, un centro de investigación y desarrollo financiado por el gobierno, donde estuvo involucrado en proyectos de visión por computadora."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Sharif luego fundó VectorDash, inspirado por los costosos requisitos de GPU para la investigación en aprendizaje automático frente al potencial de utilizar GPUs usadas para la minería de criptomonedas. La plataforma evolucionó a un proveedor de nube de GPU para videojuegos, algo adelantado a Stadia de Google, aunque enfrentó desafíos de ancho de banda."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "En 2020, Sharif se sintió intrigado por GPT-3 de OpenAI, lo que lo llevó a desarrollar debuild. El potencial de su proyecto se amplificó cuando un tweet que lo mostraba ganó tracción y luego fue destacado en varias publicaciones tecnológicas."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Para 2022, Sharif había hecho la transición a Lexica, un motor de búsqueda nacido de la necesidad de navegar mejor el discord de stable diffusion, que él sentía tenía una funcionalidad de búsqueda deficiente. La capacidad de Sharif para identificar brechas en las herramientas actuales y su mentalidad innovadora se destaca a lo largo de su trayectoria."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "screenshot-2023-08-19-at-11-24-05-pm",
+            "height": 550,
+            "width": 1606,
+            "filename": "screenshot-2023-08-19-at-11-24-05-pm.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692501984-screenshot-2023-08-19-at-11-24-05-pm.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "La Odisea Tecnológica de Sharif Amin: De Abandonar la Universidad a Pionero en IA"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "En el episodio del podcast de Latent Space, Alessio y su coanfitrión Swyx, entrevistan a Sharif Amin. Sharif profundiza en su trayectoria educativa, compartiendo que abandonó la Universidad de Maryland para perseguir un proyecto paralelo, inspirado por el consejo de un inversor y un libro que leyó. Luego trabajó en Mitra, un centro de investigación y desarrollo financiado por el gobierno, donde estuvo involucrado en proyectos de visión por computadora."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Sharif luego fundó VectorDash, inspirado por los costosos requisitos de GPU para la investigación en aprendizaje automático frente al potencial de utilizar GPUs usadas para la minería de criptomonedas. La plataforma evolucionó a un proveedor de nube de GPU para videojuegos, algo adelantado a Stadia de Google, aunque enfrentó desafíos de ancho de banda."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "En 2020, Sharif se sintió intrigado por GPT-3 de OpenAI, lo que lo llevó a desarrollar debuild. El potencial de su proyecto se amplificó cuando un tweet que lo mostraba ganó tracción y luego fue destacado en varias publicaciones tecnológicas."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Para 2022, Sharif había hecho la transición a Lexica, un motor de búsqueda nacido de la necesidad de navegar mejor el discord de stable diffusion, que él sentía tenía una funcionalidad de búsqueda deficiente. La capacidad de Sharif para identificar brechas en las herramientas actuales y su mentalidad innovadora se destaca a lo largo de su trayectoria."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "abls15-img1",
+            "height": 930,
+            "width": 930,
+            "filename": "abls15-img1.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692504586-abls15-img1.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "El Rápido Ascenso de Lexica y su Base Técnica"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Impacto del Lanzamiento"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Dentro de las primeras 24 horas de lanzar Lexica, la plataforma vio un asombroso número de 51,000 consultas, y para el segundo día, se duplicó a 111,000 consultas. Llegaron a servir más de 5 mil millones de imágenes por mes, una trayectoria de crecimiento impresionante que Sharif no había anticipado."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Perspectivas Técnicas"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": El sistema de búsqueda inicial de Lexica se basaba en la búsqueda de texto completo de Postgres, pero luego se inspiró en \"Same Energy\" para una búsqueda semántica de imágenes. El sistema mejorado se desarrolló en embeddings de imágenes de clip, utilizando FAISS (una biblioteca de Facebook) para una búsqueda KNN eficiente en embeddings. Esta búsqueda semántica fue un éxito con los usuarios, aumentando significativamente el compromiso."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Financiación y Enfoque"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Lexica, que comenzó como un proyecto paralelo, llamó la atención de los inversores después de un crecimiento exponencial de usuarios en sus primeras semanas. Recaudaron $5 millones de Daniel Gross y participaron en AI Grant, haciendo de Lexica el enfoque principal de sus esfuerzos."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "De la Búsqueda a la Generación"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Notando el comportamiento de los usuarios, Sharif decidió integrar funciones de generación directamente dentro de Lexica. Esto permitió a los usuarios no solo buscar, sino también editar y generar imágenes, mejorando la experiencia del usuario y optimizando su interacción."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Aprendiendo de AI Grant"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": El programa enfatizó que, aunque hay un potencial abundante en los modelos avanzados de IA, hay una escasez de productos atractivos para el usuario promedio. El objetivo es priorizar el desarrollo de productos que aborden las necesidades reales de los usuarios sobre simplemente alcanzar los puntos de referencia más avanzados."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "El Factor de los Datos"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": El éxito en el entrenamiento de modelos de alta calidad, especialmente modelos de difusión, depende en gran medida de la calidad y cantidad de datos. Para Lexica, la puntuación estética de las imágenes y las clasificaciones de los usuarios juegan un papel crítico. Usando el tráfico de su plataforma, refinan conjuntos de datos y mejoran la estética de sus modelos."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "abls15-img2",
+            "height": 930,
+            "width": 930,
+            "filename": "abls15-img2.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692504642-abls15-img2.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Cerrando la Brecha: Transición a la IA y Mejorando la Interactividad Web para Modelos"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Explorando el Aprendizaje Automático y el Entrenamiento de Modelos"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Swyx entrevistó a Sharif sobre su transición de un trasfondo de infraestructura a entrenar modelos de aprendizaje automático."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Sharif discutió los desafíos y paralelismos entre aprender programación y aprender a entrenar modelos de IA. Subrayó la importancia de la persistencia, aprovechar los recursos en línea y aprender de las comunidades de código abierto."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Ambos discutieron la singularidad de la IA en términos de costos, ya que ejecutar modelos de aprendizaje automático podría agotar créditos, a diferencia de la programación típica."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Sharif destacó la eficiencia de ajustar modelos de código abierto, mencionando modelos específicos como FLAN-T5 y GPT-J. Además, discutió el potencial de modelos más nuevos y sus avances."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Se produjo una breve discusión sobre Dolly, una versión comercial del modelo Vicuna."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Sobre el Auge de los Agentes de IA"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Alessio cambió la conversación hacia los agentes de IA y su potencial después de la demostración pasada de Sharif usando la API de GPT-3."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Sharif explicó un proyecto pasado que tenía como objetivo permitir que los agentes navegaran por la documentación, la resumieran y potencialmente realizaran tareas en línea como crear claves API."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Profundizó en los desafíos de convertir páginas web en un formato digerible para la IA y cómo la IA puede actuar sobre esta información."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Sharif introdujo una solución potencial usando navegadores basados en terminal que convierten elementos gráficos en ASCII y mantienen el contenido textual. También destacó los desafíos para hacer que una IA interactúe con precisión con elementos en una página web y propuso soluciones."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Swyx planteó una preocupación sobre cómo actuarían los modelos cuando carecen de información suficiente, y Sharif sugirió entrenar modelos usando sesiones de agentes navegando por la web."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Alessio y Sharif discutieron el potencial de remodelar el Modelo de Objeto de Documento (DOM) para hacer que las páginas web sean más accesibles e intuitivas para que los modelos de IA interactúen, destacando la importancia de una web más anotada y accesible."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "abls15-img3",
+            "height": 930,
+            "width": 930,
+            "filename": "abls15-img3.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692504683-abls15-img3.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Modelos Multimodales y la Evolución de Lexica"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Capacidades Multimodales de GPT-4"
+                            },
+                            {
+                              "type": "span",
+                              "value": ":"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "list",
+                          "style": "bulleted",
+                          "children": [
+                            {
+                              "type": "listItem",
+                              "children": [
+                                {
+                                  "type": "paragraph",
+                                  "children": [
+                                    {
+                                      "type": "span",
+                                      "value": "Sharif destaca el potencial de las capacidades multimodales de GPT-4, especialmente para páginas web gráficamente densas. Su entrada multimodal densa significa que incluso podría extraer texto de PDFs y resumir contenido de páginas web complejas."
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "listItem",
+                              "children": [
+                                {
+                                  "type": "paragraph",
+                                  "children": [
+                                    {
+                                      "type": "span",
+                                      "value": "Comparado con Clip, GPT-4 tiene tanto comprensión de texto como de visión, ofreciendo lo mejor de ambos mundos."
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "listItem",
+                              "children": [
+                                {
+                                  "type": "paragraph",
+                                  "children": [
+                                    {
+                                      "type": "span",
+                                      "value": "Los modelos en conjunto, como la combinación de Blip y Lama, pueden ser útiles. Un conjunto proporciona los beneficios de múltiples modelos, pero hay ventajas cuando diferentes modalidades se entrenan dentro del mismo modelo."
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Manual de Inicio de Sharif"
+                            },
+                            {
+                              "type": "span",
+                              "value": ":"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "list",
+                          "style": "bulleted",
+                          "children": [
+                            {
+                              "type": "listItem",
+                              "children": [
+                                {
+                                  "type": "paragraph",
+                                  "children": [
+                                    {
+                                      "type": "span",
+                                      "value": "Sharif comparte su consejo para startups, enfatizando la importancia de lanzar una versión mínima de un producto para recopilar comentarios de los usuarios."
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "listItem",
+                              "children": [
+                                {
+                                  "type": "paragraph",
+                                  "children": [
+                                    {
+                                      "type": "span",
+                                      "value": "Subraya la importancia de no sobre-ingenierizar, lanzar temprano y asegurarse de que un producto sea amado por los usuarios antes de enfocarse en el crecimiento."
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "listItem",
+                              "children": [
+                                {
+                                  "type": "paragraph",
+                                  "children": [
+                                    {
+                                      "type": "span",
+                                      "value": "El viaje de las versiones de Lexica (Aperture V1 a V3) destaca la importancia de iterar basado en los comentarios de los usuarios. V1 fue menos popular, lo que llevó a mejoras en V2 y V3 basadas en las preferencias de los usuarios por imágenes no fotorrealistas."
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Solicitud para Startup de IA - Herramientas LLM"
+                            },
+                            {
+                              "type": "span",
+                              "value": ":"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "list",
+                          "style": "bulleted",
+                          "children": [
+                            {
+                              "type": "listItem",
+                              "children": [
+                                {
+                                  "type": "paragraph",
+                                  "children": [
+                                    {
+                                      "type": "span",
+                                      "value": "Sharif expresa interés en desarrollar mejores herramientas para los modelos de lenguaje, como darles acceso a navegadores y sistemas de pago."
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "abls15-img4",
+            "height": 930,
+            "width": 930,
+            "filename": "abls15-img4.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692504751-abls15-img4.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Desbloqueando el Potencial de la Genómica y el Futuro de las Herramientas Impulsadas por IA"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Desbloqueando el Potencial de la Genómica y la IA:"
+                    },
+                    {
+                      "type": "span",
+                      "value": "\nEl podcast comienza con una discusión sobre el increíble poder de la genómica de consumo. Herramientas como 23andMe permiten a los individuos exportar su genoma completo como un archivo de texto, que luego puede ser interpretado por plataformas como Prometheus. Esta información proporciona conocimientos sobre rasgos específicos y predisposiciones que los individuos poseen, desde ser noctámbulo hasta la probabilidad de contraer ciertas enfermedades."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "La Importancia de las Ideas Nuevas en Tecnología:"
+                    },
+                    {
+                      "type": "span",
+                      "value": "\nSwyx y Sharif enfatizan la necesidad de más ideas innovadoras en el espacio tecnológico. Mientras muchos están creando aplicaciones B2B SaaS poco inspiradoras, hay un deseo de motivar a las personas a pensar fuera de la caja. Proyectos como el baby AGI y GPT Agent no son necesariamente útiles en su forma actual, pero sirven para inspirar y mostrar lo que es posible. La discusión se mueve a los videojuegos, destacando cómo los NPCs (personajes no jugables) en juegos como \"The Last of Us Part Two\" se han vuelto notablemente realistas a través de reglas condicionales. Imagina el cambio de juego que sería si cada NPC fuera impulsado por un modelo de IA como GPT-4."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "IA en Herramientas Cotidianas:"
+                    },
+                    {
+                      "type": "span",
+                      "value": "\nSharif menciona ChatGPT como uno de sus productos de IA favoritos y expresa entusiasmo por una empresa que está trabajando en una versión de VS code con un cursor impulsado por IA. Este cursor tiene como objetivo ayudar a los usuarios a refinar su código simplemente describiendo los cambios deseados. Además, discuten la necesidad de más herramientas de modelos de lenguaje que puedan realizar tareas de manera autónoma, enfatizando el potencial de tales herramientas para revolucionar muchos sectores."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Conclusión:"
+                    },
+                    {
+                      "type": "span",
+                      "value": "\nEl podcast concluye con un mensaje crucial de Sharif. Subraya que las personas a menudo creen que sus ideas ya han sido ejecutadas antes, pero en realidad, muchas de estas ideas son únicas y no se han intentado. El aliento de Sharif es para que las personas den vida a sus ideas inusuales e innovadoras, enfatizando que el mundo tecnológico necesita más de estas ideas pioneras en lugar de meras mejoras incrementales en conceptos existentes."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "abls15-img5",
+            "height": 930,
+            "width": 930,
+            "filename": "abls15-img5.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692504815-abls15-img5.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Ep.11 con Sharif Shameem de Lexica: Sumérgete en la mentalidad del fundador de IA, descubriendo los secretos para innovar.",
+      "title": "Podcast de Latent Space 5/8/23 [Resumen] El Gen del Fundador de IA",
+      "twitterCard": null,
+      "image": {
+        "width": 1606,
+        "height": 550,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1692501984-screenshot-2023-08-19-at-11-24-05-pm.png"
+      }
+    }
+  },
+  "topics": [
+    "LLM",
+    "Training",
+    "Agents",
+    "Multimodal"
+  ]
+}

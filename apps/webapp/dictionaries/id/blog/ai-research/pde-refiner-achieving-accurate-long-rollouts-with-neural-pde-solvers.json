@@ -1,0 +1,857 @@
+{
+  "relatedBlogs": [
+    {
+      "id": "198277124",
+      "topics": [
+        "LLM",
+        "Keuangan",
+        "Kesehatan",
+        "Hukum",
+        "Prompting"
+      ],
+      "title": "Mengadaptasi Model Bahasa Besar melalui Pemahaman Membaca",
+      "slug": "adapting-large-language-models-via-reading-comprehension",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-27T03:34:22+01:00",
+      "description": "Komentar Abstrak & Peringkat",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Mengadaptasi Model Bahasa Besar melalui Pemahaman Membaca",
+        "description": "Komentar Abstrak & Peringkat\n"
+      }
+    },
+    {
+      "id": "198277342",
+      "topics": [
+        "LLM",
+        "Multibahasa"
+      ],
+      "title": "OpenBA: Model Asimetris Bilingual 15B Sumber Terbuka yang Dilatih dari Awal",
+      "slug": "openba-an-open-sourced-15b-bilingual-asymmetric-seq2seq-model-pre-trained-from-sc",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-27T03:34:02+01:00",
+      "description": "Komentar Abstrak & Peringkat",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "OpenBA: Model ... Bilingual 15B Sumber Terbuka ...",
+        "description": "Komentar Abstrak & Peringkat\n"
+      }
+    },
+    {
+      "id": "198277117",
+      "topics": [
+        "LLM",
+        "Retrieval"
+      ],
+      "title": "PDFTriage: Menjawab Pertanyaan atas Dokumen Panjang dan Terstruktur",
+      "slug": "pdftriage-question-answering-over-long-structured-documents",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-27T03:33:49+01:00",
+      "description": "Komentar Abstrak & Peringkat",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "PDFTriage: Q & A atas Dokumen Panjang dan Terstruktur",
+        "description": "Komentar Abstrak & Peringkat\n"
+      }
+    },
+    {
+      "id": "198277138",
+      "topics": [
+        "LLM",
+        "Fine-tuning"
+      ],
+      "title": "Sorted LLaMA: Membuka Potensi Lapisan Menengah Model Bahasa Besar untuk Inferensi Dinamis Menggunakan Fine-Tuning Terurut (SoFT)",
+      "slug": "sorted-llama-unlocking-the-potential-of-intermediate-layers-of-large-language-mod",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-27T03:33:31+01:00",
+      "description": "Komentar Abstrak & Peringkat",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Sorted LLaMA: ... Inferensi Menggunakan Fine-Tuning Terurut (SoFT)",
+        "description": "Komentar Abstrak & Peringkat\n"
+      }
+    },
+    {
+      "id": "198277150",
+      "topics": [
+        "LLM",
+        "Penyetelan Instruksi",
+        "Multimodal"
+      ],
+      "title": "Studi Empiris tentang Skala Model Multimodal Besar yang Disetel Instruksi",
+      "slug": "an-empirical-study-of-scaling-instruct-tuned-large-multimodal-models",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-27T03:33:15+01:00",
+      "description": "Komentar Abstrak & Peringkat",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Studi Empiris tentang Skala LLM yang Disetel Instruksi",
+        "description": "Komentar Abstrak & Peringkat\n"
+      }
+    },
+    {
+      "id": "198277160",
+      "topics": [
+        "LLM",
+        "Agen",
+        "Gaming"
+      ],
+      "title": "MindAgent: Interaksi Gaming yang Muncul",
+      "slug": "mindagent-emergent-gaming-interaction",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-27T03:32:58+01:00",
+      "description": "Komentar Abstrak & Peringkat",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
+      },
+      "seo": {
+        "title": "MindAgent: Interaksi Gaming yang Muncul",
+        "description": "Komentar Abstrak & Peringkat\n"
+      }
+    },
+    {
+      "id": "198277196",
+      "topics": [
+        "LLM",
+        "Data Terstruktur"
+      ],
+      "title": "Struc-Bench: Apakah Model Bahasa Besar Benar-benar Baik dalam Menghasilkan Data Terstruktur yang Kompleks?",
+      "slug": "struc-bench-are-large-language-models-really-good-at-generating-complex-structure",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-25T03:38:38+01:00",
+      "description": "Komentar Abstrak & Peringkat",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Struc-Bench:..Menghasilkan Data Terstruktur yang Kompleks?",
+        "description": "Komentar Abstrak & Peringkat\n"
+      }
+    },
+    {
+      "id": "198277217",
+      "topics": [
+        "LLM",
+        "Privasi",
+        "Edge"
+      ],
+      "title": "Pulih dari Masking yang Melindungi Privasi dengan Model Bahasa Besar",
+      "slug": "recovering-from-privacy-preserving-masking-with-large-language-models",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-25T03:38:26+01:00",
+      "description": "Komentar Abstrak & Peringkat",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Pulih dari Masking yang Melindungi Privasi dengan LLMs",
+        "description": "Komentar Abstrak & Peringkat\n"
+      }
+    },
+    {
+      "id": "198277239",
+      "topics": [
+        "LLM",
+        "Chat"
+      ],
+      "title": "S3-DST: Segmentasi Dialog Domain Terbuka Terstruktur dan Pelacakan Status di Era LLMs",
+      "slug": "s3-dst-structured-open-domain-dialogue-segmentation-and-state-tracking-in-the-era",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-25T03:38:11+01:00",
+      "description": "Komentar Abstrak & Peringkat",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "S3-DST: Segmentasi Dialog Domain Terbuka Terstruktur...",
+        "description": "Komentar Abstrak & Peringkat\n"
+      }
+    },
+    {
+      "id": "198277253",
+      "topics": [
+        "LLM",
+        "Audio"
+      ],
+      "title": "Menambah Teks untuk Pemahaman Bahasa Lisan dengan Model Bahasa Besar",
+      "slug": "augmenting-text-for-spoken-language-understanding-with-large-language-models",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-25T03:37:49+01:00",
+      "description": "Komentar Abstrak & Peringkat",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Menambah Teks untuk Pemahaman Bahasa Lisan ...",
+        "description": "Komentar Abstrak & Peringkat\n"
+      }
+    },
+    {
+      "id": "198277277",
+      "topics": [
+        "LLM",
+        "Kompresi"
+      ],
+      "title": "Pemodelan Bahasa adalah Kompresi",
+      "slug": "language-modeling-is-compression",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-25T03:37:32+01:00",
+      "description": "Komentar Abstrak & Peringkat",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Pemodelan Bahasa adalah Kompresi",
+        "description": "Komentar Abstrak & Peringkat\n"
+      }
+    },
+    {
+      "id": "198277345",
+      "topics": [
+        "LLM",
+        "Multibahasa"
+      ],
+      "title": "Baichuan 2: Model Bahasa Skala Besar Terbuka",
+      "slug": "baichuan-2-open-large-scale-language-models",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-24T05:59:10+01:00",
+      "description": "Komentar Abstrak & Peringkat",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Baichuan 2: Model Bahasa Skala Besar Terbuka",
+        "description": "Komentar Abstrak & Peringkat\n"
+      }
+    },
+    {
+      "id": "198277360",
+      "topics": [
+        "LLM",
+        "RLHF"
+      ],
+      "title": "Menstabilkan RLHF melalui Model Keuntungan dan Latihan Selektif",
+      "slug": "stabilizing-rlhf-through-advantage-model-and-selective-rehearsal",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-24T05:22:15+01:00",
+      "description": "Komentar Abstrak & Peringkat",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Menstabilkan RLHF ... Model Keuntungan & Latihan Selektif",
+        "description": "Komentar Abstrak & Peringkat\n"
+      }
+    },
+    {
+      "id": "198277446",
+      "topics": [
+        "LLM",
+        "Halusinasi"
+      ],
+      "title": "Rantai Verifikasi Mengurangi Halusinasi dalam Model Bahasa Besar",
+      "slug": "chain-of-verification-reduces-hallucination-in-large-language-models",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-24T05:21:05+01:00",
+      "description": "Komentar Abstrak & Peringkat",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Rantai Verifikasi Mengurangi Halusinasi dalam LLMs",
+        "description": "Komentar Abstrak & Peringkat\n"
+      }
+    },
+    {
+      "id": "198277458",
+      "topics": [
+        "LLM",
+        "Halusinasi",
+        "Entitas",
+        "Data Terstruktur"
+      ],
+      "title": "LMDX: Ekstraksi dan Lokalisasi Informasi Dokumen Berbasis Model Bahasa",
+      "slug": "lmdx-language-model-based-document-information-extraction-and-localization",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-24T05:20:31+01:00",
+      "description": "Komentar Abstrak & Peringkat",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "LMDX: ..Ekstraksi dan Lokalisasi Informasi Dokumen",
+        "description": "Komentar Abstrak & Peringkat\n"
+      }
+    },
+    {
+      "id": "198277209",
+      "topics": [
+        "LLM",
+        "Data"
+      ],
+      "title": "SlimPajama-DC: Memahami Kombinasi Data untuk Pelatihan LLM",
+      "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-04T23:43:32+01:00",
+      "description": "Komentar Abstrak & Peringkat",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
+      },
+      "seo": {
+        "title": "SlimPajama-DC: Memahami Kombinasi Data untuk Pelatihan LLM",
+        "description": "Komentar Abstrak & Peringkat\n"
+      }
+    },
+    {
+      "id": "198044929",
+      "topics": [
+        "LLM",
+        "Data",
+        "Agen"
+      ],
+      "title": "Sumber Data untuk Agen Berpikir",
+      "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-04T07:33:25+01:00",
+      "description": "Komentar Abstrak & Peringkat",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
+      },
+      "seo": {
+        "title": "Sumber Data untuk Agen Berpikir",
+        "description": "Komentar Abstrak & Peringkat\n"
+      }
+    },
+    {
+      "id": "198044879",
+      "topics": [
+        "LLM",
+        "Transformers",
+        "Interpretabilitas"
+      ],
+      "title": "Autoencoder Jarang Menemukan Fitur yang Sangat Dapat Ditafsirkan dalam Model Bahasa",
+      "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-04T07:23:08+01:00",
+      "description": "Komentar Abstrak & Peringkat",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
+      },
+      "seo": {
+        "title": "Autoencoder Jarang ... Fitur yang Dapat Ditafsirkan dalam LMs",
+        "description": "Komentar Abstrak & Peringkat\n"
+      }
+    },
+    {
+      "id": "198044746",
+      "topics": [
+        "LLM",
+        "Transformers",
+        "Pelatihan"
+      ],
+      "title": "Hukum Skala untuk Model Fondasi yang Terhubung Jarang",
+      "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-04T07:09:44+01:00",
+      "description": "Komentar Abstrak & Peringkat",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
+      },
+      "seo": {
+        "title": "Hukum Skala untuk Model Fondasi yang Terhubung Jarang",
+        "description": "Komentar Abstrak & Peringkat\n"
+      }
+    }
+  ],
+  "blogContent": {
+    "id": "198277109",
+    "topics": [
+      "LLM",
+      "Penalaran"
+    ],
+    "title": "Decoding Kontrastif Meningkatkan Penalaran dalam Model Bahasa Besar",
+    "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
+    "authorName": "Prof. Otto Nomos",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+    },
+    "_publishedAt": "2023-10-04T22:18:11+01:00",
+    "description": "Komentar & Peringkat Abstrak",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Diterbitkan pada 16 Sep"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Penulis:"
+                    },
+                    {
+                      "url": "https://huggingface.co/seanobrienresearch",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Sean O'Brien"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/mikelewis0",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Mike Lewis"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Abstrak"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Kami menunjukkan bahwa Decoding Kontrastif -- metode generasi teks yang sederhana, ringan secara komputasi, dan bebas pelatihan yang diusulkan oleh Li et al 2022 -- mencapai peningkatan besar di luar kotak dibandingkan dengan decoding greedy pada berbagai tugas penalaran. Awalnya ditunjukkan untuk meningkatkan kualitas yang dirasakan dari generasi teks panjang, Decoding Kontrastif mencari string yang memaksimalkan perbedaan berbobot dalam kemungkinan antara model kuat dan lemah. Kami menunjukkan bahwa Decoding Kontrastif membuat LLaMA-65B mengungguli LLaMA 2, GPT-3.5 dan PaLM 2-L pada benchmark penalaran akal sehat HellaSwag, dan mengungguli LLaMA 2, GPT-3.5 dan PaLM-540B pada benchmark penalaran kata matematika GSM8K, selain peningkatan pada kumpulan tugas lainnya. Analisis menunjukkan bahwa Decoding Kontrastif meningkatkan metode yang ada dengan mencegah beberapa kesalahan penalaran abstrak, serta menghindari mode yang lebih sederhana seperti menyalin bagian input selama rantai pemikiran. Secara keseluruhan, Decoding Kontrastif mengungguli sampling nucleus untuk generasi panjang dan decoding greedy untuk tugas penalaran, menjadikannya metode serbaguna yang kuat untuk menghasilkan teks dari model bahasa."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "url": "https://arxiv.org/abs/2309.09117",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Lihat halaman arXiv"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "https://arxiv.org/pdf/2309.09117",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Lihat PDF"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Komentar"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Makalah berjudul \"Decoding Kontrastif Meningkatkan Penalaran dalam Model Bahasa Besar\" menyajikan pendekatan untuk meningkatkan kualitas generasi teks dan kemampuan penalaran dalam model bahasa besar."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Wawasan Utama:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Decoding Kontrastif"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Metode ini memanfaatkan perbedaan dalam kemungkinan antara model kuat dan lemah untuk menghasilkan teks. Awalnya dirancang untuk meningkatkan generasi teks panjang, penulis menunjukkan nilainya untuk tugas penalaran juga."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Kinerja Signifikan"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Decoding Kontrastif memungkinkan LLaMA-65B untuk melampaui beberapa model canggih lainnya pada benchmark penalaran tertentu, seperti benchmark penalaran akal sehat HellaSwag dan benchmark penalaran kata matematika GSM8K."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Menghindari Kesalahan"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Analisis menunjukkan bahwa metode ini dapat membantu menghindari beberapa kesalahan penalaran abstrak. Ini juga mengurangi kesalahan yang lebih sederhana seperti penyalinan bagian input yang tidak perlu selama generasi teks."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Dampak Potensial di Dunia Nyata:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Generasi Teks yang Ditingkatkan"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Metode ini menjanjikan untuk meningkatkan kualitas teks yang dihasilkan oleh model bahasa besar, membuat output lebih koheren, relevan, dan beralasan."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Penalaran yang Ditingkatkan"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Kinerja yang lebih baik pada tugas penalaran dapat memiliki banyak aplikasi mulai dari chatbot yang lebih cerdas hingga alat yang dapat membantu profesional dalam berbagai tugas analitis."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Aplikasi yang Lebih Luas"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Sebagai metode bebas pelatihan, Decoding Kontrastif menawarkan keuntungan karena tidak memerlukan sumber daya komputasi tambahan untuk pelatihan."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Serbaguna"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Pendekatan ini tampaknya serbaguna, menunjukkan peningkatan baik dalam generasi panjang maupun tugas penalaran tertentu."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tantangan:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Ketergantungan pada Model Lemah"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Efektivitas Decoding Kontrastif bergantung pada keberadaan model kuat dan lemah, yang mungkin tidak selalu tersedia atau mungkin bervariasi dalam kekuatan relatif."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Mengingat pendekatan baru untuk meningkatkan generasi teks dan penalaran, serta kemanjurannya yang terbukti:"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Saya akan menilai dampak dunia nyata dari makalah ini sebagai 8,5 dari 10."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Metode ini tampaknya menawarkan teknik serbaguna yang kuat untuk menghasilkan teks dari model bahasa. Jika dapat diterapkan secara luas pada berbagai tugas dan pengaturan, dampak dunia nyatanya bisa sangat besar, terutama dalam aplikasi di mana kemampuan penalaran model sangat penting."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "researchpaper9",
+            "height": 816,
+            "width": 1456,
+            "filename": "researchpaper9.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Komentar & Peringkat Abstrak\n",
+      "title": "Decoding Kontrastif Meningkatkan Penalaran dalam LLMs",
+      "twitterCard": null,
+      "image": {
+        "width": 1456,
+        "height": 816,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      }
+    }
+  },
+  "topics": [
+    "LLM",
+    "Reasoning"
+  ]
+}

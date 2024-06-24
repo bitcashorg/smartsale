@@ -1,0 +1,580 @@
+{
+  "relatedBlogs": [
+    {
+      "id": "180563903",
+      "topics": [
+        "DAO",
+        "Ringkasan"
+      ],
+      "title": "Untuk Apa Voting? [Ringkasan]",
+      "slug": "what-is-voting-for-summary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:10:58+01:00",
+      "description": "Mengungkap esensi voting dalam sistem terdesentralisasi. Dapatkan wawasan tentang tujuan dan kekuatan sebenarnya dari voting di blockchain.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690859305-cbc6-img1.png"
+      },
+      "seo": {
+        "title": "Untuk Apa Voting? [Ringkasan]",
+        "description": "Mengungkap esensi voting dalam sistem terdesentralisasi. Dapatkan wawasan tentang tujuan dan kekuatan sebenarnya dari voting di blockchain."
+      }
+    },
+    {
+      "id": "180563908",
+      "topics": [
+        "DAO",
+        "Ringkasan"
+      ],
+      "title": "Untuk Apa Tata Kelola? [Ringkasan]",
+      "slug": "what-is-governance-for-summary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:10:45+01:00",
+      "description": "Jelajahi peran dan pentingnya tata kelola dalam sistem blockchain. Pahami bagaimana tata kelola mendorong desentralisasi dan pertumbuhan.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690859755-cbc7-img1.png"
+      },
+      "seo": {
+        "title": "Untuk Apa Tata Kelola? [Ringkasan]",
+        "description": "Jelajahi peran dan pentingnya tata kelola dalam sistem blockchain. Pahami bagaimana tata kelola mendorong desentralisasi dan pertumbuhan."
+      }
+    },
+    {
+      "id": "180563931",
+      "topics": [
+        "Tokenomik",
+        "Komentar"
+      ],
+      "title": "Struktur Insentif Blockchain: Apa itu dan mengapa itu penting [Komentar]",
+      "slug": "blockchain-incentive-structures-what-they-are-and-why-they-matter-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:10:02+01:00",
+      "description": "Pahami inti dari struktur insentif blockchain dan signifikansinya dalam mendorong perilaku pengguna dan kesuksesan platform.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690860807-cbc10-img1.png"
+      },
+      "seo": {
+        "title": "Struktur Insentif Blockchain [Komentar]",
+        "description": "Pahami inti dari struktur insentif blockchain dan signifikansinya dalam mendorong perilaku pengguna dan kesuksesan platform."
+      }
+    }
+  ],
+  "blogContent": {
+    "id": "179948652",
+    "topics": [
+      "Tokenomik",
+      "Industri",
+      "Ringkasan"
+    ],
+    "title": "Inovasi Digital dan Model Pendapatan [Ringkasan]",
+    "slug": "digital-innovation-and-revenue-models-summary",
+    "authorName": "Crypto Clairity",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+    },
+    "_publishedAt": "2023-10-05T09:11:35+01:00",
+    "description": "Temukan bagaimana inovasi digital mengubah cara pengiriman produk dalam 'Inovasi Digital dan Model Pendapatan' dari Prysm Group. Jelajahi ekonomi teknologi yang muncul.",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1690668517-cbr1-img1.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Ringkasan, Wawasan Utama & Saran"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Makalah asli: "
+                    },
+                    {
+                      "url": "https://uploads-ssl.webflow.com/5ca64cec39c643e28bb7079f/6334fa62414f4e6b5126ee3e_Prysm%20Group%20Digital%20Innovation%20and%20Revenue%20Models.pdf",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "https://uploads-ssl.webflow.com/5ca64cec39c643e28bb7079f/6334fa62414f4e6b5126ee3e_Prysm%20Group%20Digital%20Innovation%20and%20Revenue%20Models.pdf\n\n"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": "Penulis: The Prysm Group"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Dokumen berjudul \"Inovasi Digital dan Model Pendapatan\" oleh Prysm Group membahas ekonomi teknologi yang muncul, khususnya infrastruktur komunikasi digital dan jaringan internet, dan bagaimana mereka telah mengubah cara produk dan layanan digital dikirimkan."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Berikut adalah wawasan utamanya:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Pendahuluan (Halaman 3)"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Dokumen dimulai dengan menyoroti dampak transformasional teknologi digital pada pengiriman produk dan layanan digital. Ini menekankan pentingnya model pendapatan yang berkelanjutan untuk bisnis yang menawarkan produk dan layanan digital. Strategi produk dan penetapan harga yang sukses harus memperhitungkan dinamika struktural unik yang ditunjukkan oleh industri digital."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Struktur Biaya untuk Barang Tradisional vs. Digital (Halaman 3)"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Inovasi digital telah menyebabkan industri yang ditandai dengan biaya tetap produksi yang tinggi dan biaya marjinal yang rendah. Salinan pertama dari barang digital mahal untuk diproduksi, sementara salinan tambahan hanya memerlukan sebagian kecil dari biaya salinan pertama. Biaya marjinal produksi telah menurun hampir menjadi nol dalam beberapa kasus."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Strategi Bisnis Berkelanjutan untuk Dunia Digital (Halaman 4-5)"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Dokumen ini membahas dua strategi utama untuk bisnis digital: Model Perusahaan Dominan dan Model Produk Terdiferensiasi. Model Perusahaan Dominan melibatkan penciptaan dan mempertahankan skala ekonomi yang besar, sementara Model Produk Terdiferensiasi melibatkan perolehan pangsa pasar melalui penawaran produk yang berbeda dalam beberapa cara."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Kerangka Kerja untuk Strategi Penetapan Harga (Halaman 7)"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Dokumen ini memperkenalkan tiga strategi utama untuk menetapkan harga barang dan layanan di dunia yang semakin digital: Diskriminasi Harga, Penetapan Harga yang Didukung Pihak Ketiga, dan Strategi Kombinasi yang menggunakan diskriminasi harga dan penetapan harga yang didukung pihak ketiga."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Berdasarkan wawasan ini, berikut adalah beberapa saran yang dapat ditindaklanjuti untuk startup kripto:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Selaraskan Strategi Produk dan Pendapatan"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Pastikan strategi produk Anda terintegrasi dengan baik dengan model pendapatan Anda. Pertimbangkan dinamika unik industri digital saat mengembangkan strategi ini."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Manfaatkan Efek Jaringan"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Jika memungkinkan, rancang produk Anda untuk mendapatkan manfaat dari efek jaringan. Ini bisa melibatkan pembuatan platform di mana nilainya meningkat seiring bertambahnya pengguna, atau menggabungkan fitur yang meningkat dengan peningkatan penggunaan."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Bedakan Produk Anda"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Jika efek jaringan tidak kuat untuk produk Anda, fokuslah pada membedakan produk Anda dari yang lain di pasar. Ini bisa melalui fitur unik, teknologi superior, atau pengalaman pengguna yang lebih baik."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Pertimbangkan Strategi Penetapan Harga"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Jelajahi berbagai strategi penetapan harga seperti diskriminasi harga atau penetapan harga yang didukung pihak ketiga. Ini bisa melibatkan penagihan harga yang berbeda kepada pelanggan yang berbeda berdasarkan kesediaan mereka untuk membayar, atau menghasilkan pendapatan melalui saluran pihak ketiga."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Lindungi Hak Kekayaan Intelektual Anda"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Jika strategi diferensiasi Anda melibatkan pembuatan konten atau teknologi unik, pastikan Anda memiliki hak kekayaan intelektual yang diperlukan untuk melindunginya dari peniruan oleh pesaing."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Tetap Lincah"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Bersiaplah untuk menyesuaikan strategi Anda seiring perkembangan pasar. Ruang digital dan kripto berubah dengan cepat, jadi penting untuk tetap fleksibel dan responsif terhadap tren dan peluang baru."
+                            }
+                          ]
+                        },
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": ""
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": []
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Studi Kasus Industri Musik"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Dokumen ini membahas studi kasus tentang industri musik, menggambarkan bagaimana inovasi digital telah berkembang dan memperluas model dan strategi bisnis. Berikut adalah wawasan utama dari Studi Kasus Industri Musik:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Evolusi Industri Musik (Halaman 10)"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Industri musik telah lama memanfaatkan strategi diskriminasi harga. Perusahaan rekaman memonetisasi musik melalui penjualan rekaman dan lisensi kepada pihak ketiga. Namun, munculnya berbagi musik peer-to-peer pada akhir 1990-an, yang didukung oleh pengembangan format MP3, mengancam pendapatan perusahaan rekaman."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Platform Distribusi Digital (Halaman 11)"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Label rekaman meluncurkan platform distribusi digital mereka sendiri sebagai tanggapan terhadap meningkatnya jaringan peer-to-peer. Dua layanan bersaing diluncurkan: PressPlay, didukung oleh Universal Music Group dan Sony, dan MusicNet, didukung oleh Warner Bros., BMG, dan EMI. Kedua layanan ini menawarkan campuran unduhan digital dan layanan streaming kepada pelanggan dengan biaya bulanan tetapi gagal karena perpustakaan lagu yang terbatas dan pembatasan yang terlalu ketat pada jumlah lagu yang dapat diunduh dan di-streaming."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "iTunes dan Monetisasi Musik Digital (Halaman 11)"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Pada tahun 2003, iTunes Music Store muncul untuk berhasil memonetisasi distribusi musik digital. Apple memilih untuk tidak menggunakan model berlangganan yang diikuti oleh PressPlay dan MusicNet, melainkan menawarkan setiap lagu dalam perpustakaannya seharga 99 sen."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Peralihan ke Streaming Musik (Halaman 12)"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Saat ini, unduhan digital menyumbang kurang dari 4% dari semua pendapatan industri, sementara langganan adalah kategori terbesar dengan selisih yang besar sebesar 83%. Platform streaming musik telah berhasil di mana PressPlay dan MusicNet gagal hampir satu dekade yang lalu melalui kombinasi kemajuan dan adopsi teknologi digital, bersama dengan pembentukan manajemen hak digital yang kuat."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Berdasarkan wawasan ini, berikut adalah beberapa saran yang dapat ditindaklanjuti untuk startup kripto:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Pertimbangkan Model Berlangganan"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Peralihan dari unduhan digital ke langganan dalam industri musik menunjukkan potensi manfaat dari model pendapatan berulang. Startup kripto dapat mempertimbangkan apakah model berlangganan cocok untuk bisnis mereka."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "cbr1-img2",
+            "height": 862,
+            "width": 862,
+            "filename": "cbr1-img2.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1690668728-cbr1-img2.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Temukan bagaimana inovasi digital mengubah cara pengiriman produk dalam 'Inovasi Digital dan Model Pendapatan' dari Prysm Group. Jelajahi ekonomi teknologi yang muncul.",
+      "title": "Inovasi Digital dan Model Pendapatan [Ringkasan]",
+      "twitterCard": null,
+      "image": {
+        "width": 862,
+        "height": 862,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1690668517-cbr1-img1.png"
+      }
+    }
+  },
+  "topics": [
+    "Tokenomics",
+    "Industry",
+    "Summary"
+  ]
+}

@@ -1,0 +1,467 @@
+{
+  "relatedBlogs": [],
+  "blogContent": {
+    "id": "198277182",
+    "topics": [
+      "Transformers"
+    ],
+    "title": "Chữa đau đầu của Transformers qua Sự chú ý Ràng buộc Đồng tuyến",
+    "slug": "cure-the-headache-of-transformers-via-collinear-constrained-attention",
+    "authorName": "Prof. Otto Nomos",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+    },
+    "_publishedAt": "2024-05-27T03:32:43+01:00",
+    "description": "Bình luận & Đánh giá Tóm tắt",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Được công bố vào Ngày 15 tháng 9"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tác giả:"
+                    },
+                    {
+                      "url": "https://huggingface.co/underskies",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Shiyi Zhu"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ",Jing Ye,Wei Jiang,Qi Zhang,Yifan Wu,"
+                    },
+                    {
+                      "url": "https://huggingface.co/JungleLee",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Jianguo Li"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tóm tắt"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Khi sự tiến bộ nhanh chóng của các ứng dụng thực tế dựa trên Mô hình Ngôn ngữ Lớn tiếp tục, tầm quan trọng của việc ngoại suy hiệu suất đã tăng lên đáng kể trong lĩnh vực nghiên cứu. Trong nghiên cứu của chúng tôi, chúng tôi đã xác định một hành vi bất thường trong các mô hình Transformer mà trước đây đã bị bỏ qua, dẫn đến một sự hỗn loạn xung quanh các token gần nhất mang thông tin quan trọng nhất. Chúng tôi đã đặt tên cho phát hiện này là 'đau đầu của Transformers'. Để giải quyết vấn đề này ngay từ cốt lõi, chúng tôi đã giới thiệu một cấu trúc tự chú ý mới có tên là Sự chú ý Ràng buộc Đồng tuyến (CoCA). Cấu trúc này có thể được tích hợp mượt mà với các phương pháp ngoại suy, nội suy hiện có và các chiến lược tối ưu hóa khác được thiết kế cho các mô hình Transformer truyền thống. Chúng tôi đã đạt được hiệu suất ngoại suy xuất sắc ngay cả cho 16 lần đến 24 lần độ dài chuỗi trong suốt quá trình suy luận mà không cần tinh chỉnh mô hình của chúng tôi. Chúng tôi cũng đã tăng cường hiệu quả tính toán và không gian của CoCA để đảm bảo tính thực tiễn của nó. Chúng tôi dự định sẽ mở nguồn CoCA trong thời gian ngắn. Trong khi đó, chúng tôi đã cung cấp mã của mình trong phụ lục để tái hiện các thí nghiệm."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "url": "https://arxiv.org/abs/2309.08646",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Xem trang arXiv"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "https://arxiv.org/pdf/2309.08646",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Xem PDF"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Bình luận"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Bài báo 'Chữa đau đầu của Transformers qua Sự chú ý Ràng buộc Đồng tuyến' xác định và giải quyết một vấn đề bị bỏ qua trong các mô hình Transformer, một kiến trúc thống trị trong các nhiệm vụ và ứng dụng xử lý ngôn ngữ tự nhiên khác nhau."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Những điểm chính:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Nhận dạng Hành vi Bất thường"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Nghiên cứu xác định một hành vi được gọi là 'đau đầu của Transformers,' nơi có hành vi hỗn loạn xung quanh các token gần nhất, thường là những thông tin có giá trị nhất. Điều này đặt ra thách thức trong hiệu suất, đặc biệt là trong các nhiệm vụ yêu cầu sự chú ý trên các chuỗi dài."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Sự chú ý Ràng buộc Đồng tuyến (CoCA)"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Các tác giả giới thiệu một cấu trúc tự chú ý mới để giải quyết vấn đề này, được cho là dễ dàng tích hợp với các phương pháp tối ưu hóa khác cho các mô hình Transformer truyền thống."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Ngoại suy Vượt trội"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Bài báo đề xuất rằng với CoCA, các mô hình có thể thực hiện ngoại suy hiệu quả trên các chuỗi dài mà không cần tinh chỉnh bổ sung."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Cải tiến Hiệu quả"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Ngoài các cải tiến về độ chính xác, các nhà nghiên cứu đã tối ưu hóa CoCA cho hiệu quả tính toán và không gian, làm cho nó thực tiễn hơn cho các triển khai thực tế."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Mở nguồn"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Các nhà nghiên cứu bày tỏ ý định làm cho CoCA trở thành mã nguồn mở, điều này sẽ có khả năng khuyến khích sự áp dụng và khám phá thêm bởi cộng đồng NLP rộng lớn hơn."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tác động Thực tế Tiềm năng:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Hành vi Mô hình Tốt hơn"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Bằng cách giải quyết một thách thức cơ bản trong Transformers, các mô hình có thể ổn định và dự đoán hơn, dẫn đến hiệu suất thực tế tốt hơn, đặc biệt là trong các nhiệm vụ nơi hiểu bối cảnh trên các chuỗi dài là rất quan trọng."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Xử lý Chuỗi Dài Hiệu quả"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Với các cải tiến về ngoại suy, các nhiệm vụ như tóm tắt tài liệu, yêu cầu sự chú ý trên các văn bản dài, có thể được hưởng lợi."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Tích hợp Chung"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Sự dễ dàng tích hợp với các phương pháp tối ưu hóa khác có nghĩa là một loạt các mô hình Transformer hiện có có thể được hưởng lợi mà không cần cải tạo toàn diện."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Thách thức:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Tỷ lệ Áp dụng"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Như với bất kỳ kỹ thuật mới nào, có thể mất thời gian để cộng đồng rộng lớn hơn áp dụng, kiểm tra và xác nhận phương pháp trong các tình huống thực tế đa dạng."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Giới hạn Tiềm năng"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Mọi mô hình hoặc kỹ thuật đều có giới hạn của nó, có thể chỉ trở nên rõ ràng khi được áp dụng cho nhiều loại nhiệm vụ hơn."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Xét đến những lợi ích tiềm năng của việc giải quyết một thách thức cơ bản trong Transformers, cùng với các lợi thế thực tiễn mà phương pháp này dường như mang lại:"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tôi đánh giá tác động thực tế của bài báo này là 8 trên 10."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Những cải tiến tiềm năng về hiệu quả và hiệu suất trên nhiều nhiệm vụ có thể có ý nghĩa quan trọng đối với nhiều ứng dụng NLP. Tuy nhiên, tác động đầy đủ phụ thuộc nhiều vào cách cộng đồng nghiên cứu và phát triển rộng lớn hơn tiếp nhận, xác nhận và triển khai các phát hiện."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "researchpaper8a",
+            "height": 816,
+            "width": 1456,
+            "filename": "researchpaper8a.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Bình luận & Đánh giá Tóm tắt\n",
+      "title": "Chữa đau đầu ... qua Sự chú ý Ràng buộc Đồng tuyến",
+      "twitterCard": null,
+      "image": {
+        "width": 1456,
+        "height": 816,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
+      }
+    }
+  },
+  "topics": [
+    "Transformers"
+  ]
+}

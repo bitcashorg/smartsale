@@ -17,12 +17,7 @@ import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 import { ArticleCard } from '../../shared/article-card'
 
-export function BlogPage({
-  i18n,
-  params,
-  blogContent,
-  relatedBlogs
-}: BlogPageProps) {
+export function BlogPage({ params, blogContent, relatedBlogs }: BlogPageProps) {
   const category = params.category
   const canonicalUrl =
     process.env.NEXT_PUBLIC_VERCEL_URL + `/${category}/${params.slug}`
@@ -49,10 +44,10 @@ export function BlogPage({
   // End of  Selection
   return (
     <main>
-      <article className="content-container mx-auto">
-        <div className="mx-auto flex flex-col items-start gap-2">
+      <article className="mx-auto content-container">
+        <div className="flex flex-col items-start gap-2 mx-auto">
           <header className="order-3 md:order-1">
-            <h1 className="heading flex justify-center font-bold text-black dark:text-white">
+            <h1 className="flex justify-center font-bold text-black heading dark:text-white">
               {title}
               <br className="hidden md:inline" />
             </h1>
@@ -61,8 +56,8 @@ export function BlogPage({
             </sub>
           </header>
 
-          <div className="order-2 mt-2 flex flex-col space-y-3 md:mt-5">
-            <span className="font-futura-pt-heavy text-h-text-c text-h-text font-bold dark:text-white">
+          <div className="flex flex-col order-2 mt-2 space-y-3 md:mt-5">
+            <span className="font-bold font-futura-pt-heavy text-h-text-c text-h-text dark:text-white">
               {blogContent.authorName}
             </span>
             <span className="font-futura-pt-book text-h-text-c text-h-text dark:text-white">
@@ -84,15 +79,40 @@ export function BlogPage({
           </div>
 
           <main
-            className="relative order-4 mt-5 flex flex-col items-start justify-start gap-5 md:flex-row"
+            className="relative flex flex-col items-start justify-start order-4 gap-5 mt-5 md:flex-row"
             id="scroller-wrapper"
           >
             <div
-              className="order-2 flex w-full flex-col md:order-1"
+              className="flex flex-col order-2 w-full md:order-1"
               id="extrat-blog-content"
             >
               {blogContent?.contentBlock?.map(
                 ({ mainContent, topImages }, ind: number) => {
+                  // if (ind >= 2) return null
+
+                  mainContent.value.document.children =
+                    mainContent.value.document.children.map(item => {
+                      if (item.type !== 'paragraph') return item
+
+                      const sanitizedChildren = item.children?.map(child => {
+                        if (child.type !== 'span') return child
+                        if (typeof child.value === 'string') return child
+
+                        if (Array.isArray(child.value)) {
+                          return {
+                            ...child,
+                            value: (child.value as string[]).join(' ')
+                          }
+                        }
+                        return child
+                      })
+                      return { ...item, children: sanitizedChildren }
+                    }) as any
+
+                  // console.log(`================ ${ind} =================`)
+                  // console.log(
+                  //   JSON.stringify(mainContent.value.document.children)
+                  // )
                   return (
                     <div key={mainContent.value.document.level}>
                       {topImages.map(
@@ -109,7 +129,7 @@ export function BlogPage({
                               alt={image?.alt || `blog-image-${index}`}
                               layout="fill"
                               objectFit="cover"
-                              className="m-auto flex self-center"
+                              className="flex self-center m-auto"
                             />
                           </div>
                         )
@@ -140,20 +160,13 @@ export function BlogPage({
                                     key={key}
                                   >
                                     {children}
-                                    {/* <a
-                                      id={anchor}
-                                      className="pt-32"
-                                      href={`#${anchor}`}
-                                    >
-                                      Jump to section
-                                    </a> */}
                                   </HeadingTag>
                                 )
                               }
                             ),
                             renderNodeRule(isParagraph, ({ children, key }) => {
                               return (
-                                <p className="paragraph mb-10" key={key}>
+                                <p className="mb-10 paragraph" key={key}>
                                   {children}
                                 </p>
                               )
@@ -211,8 +224,8 @@ export function BlogPage({
 
       {relatedBlogs.length > 0 && (
         <section className="container mb-10">
-          <div className="mb-space-32 flex items-center justify-between text-xl">
-            <span className="sub-2-lg font-semibold text-black dark:text-white">
+          <div className="flex items-center justify-between text-xl mb-space-32">
+            <span className="font-semibold text-black sub-2-lg dark:text-white">
               /Related stories{' '}
             </span>
             <Link href={`/blog`} className={cn('text-black dark:text-white')}>
@@ -240,7 +253,7 @@ export function BlogPage({
 }
 
 export interface BlogPageProps {
-  i18n: CMSLayoutText
+  // i18n: CMSLayoutText
   params: {
     lang: SiteLocale
     category: string

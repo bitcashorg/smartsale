@@ -1,0 +1,624 @@
+{
+  "relatedBlogs": [
+    {
+      "id": "198277124",
+      "topics": [
+        "MLG",
+        "Finanzas",
+        "Salud",
+        "Legal",
+        "Sugerencias"
+      ],
+      "title": "Adaptación de Modelos de Lenguaje Grandes a través de la Comprensión de Lectura",
+      "slug": "adapting-large-language-models-via-reading-comprehension",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-27T03:34:22+01:00",
+      "description": "Comentario y Calificación del Resumen",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Adaptación de Modelos de Lenguaje Grandes a través de la Comprensión de Lectura",
+        "description": "Comentario y Calificación del Resumen"
+      }
+    },
+    {
+      "id": "198277342",
+      "topics": [
+        "MLG",
+        "Multilingüe"
+      ],
+      "title": "OpenBA: Un Modelo Asimétrico Bilingüe de 15B de Código Abierto Preentrenado desde Cero",
+      "slug": "openba-an-open-sourced-15b-bilingual-asymmetric-seq2seq-model-pre-trained-from-sc",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-27T03:34:02+01:00",
+      "description": "Comentario y Calificación del Resumen",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "OpenBA: Un Modelo Asimétrico Bilingüe ...",
+        "description": "Comentario y Calificación del Resumen"
+      }
+    },
+    {
+      "id": "198277117",
+      "topics": [
+        "MLG",
+        "Recuperación"
+      ],
+      "title": "PDFTriage: Respuestas a Preguntas sobre Documentos Largos y Estructurados",
+      "slug": "pdftriage-question-answering-over-long-structured-documents",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-27T03:33:49+01:00",
+      "description": "Comentario y Calificación del Resumen",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "PDFTriage: Respuestas a Preguntas sobre Documentos Largos y Estructurados",
+        "description": "Comentario y Calificación del Resumen"
+      }
+    },
+    {
+      "id": "198277138",
+      "topics": [
+        "MLG",
+        "Ajuste fino"
+      ],
+      "title": "Sorted LLaMA: Desbloqueando el Potencial de las Capas Intermedias de Modelos de Lenguaje Grandes para Inferencia Dinámica Usando Ajuste Fino Ordenado (SoFT)",
+      "slug": "sorted-llama-unlocking-the-potential-of-intermediate-layers-of-large-language-mod",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-27T03:33:31+01:00",
+      "description": "Comentario y Calificación del Resumen",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Sorted LLaMA: ... Inferencia Usando Ajuste Fino Ordenado (SoFT)",
+        "description": "Comentario y Calificación del Resumen"
+      }
+    },
+    {
+      "id": "198277150",
+      "topics": [
+        "MLG",
+        "Ajuste por Instrucción",
+        "Multimodal"
+      ],
+      "title": "Un Estudio Empírico de la Escalabilidad de Modelos Multimodales Grandes Ajustados por Instrucción",
+      "slug": "an-empirical-study-of-scaling-instruct-tuned-large-multimodal-models",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-27T03:33:15+01:00",
+      "description": "Comentario y Calificación del Resumen",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Un Estudio Empírico de la Escalabilidad de Modelos Multimodales Grandes Ajustados por Instrucción",
+        "description": "Comentario y Calificación del Resumen"
+      }
+    },
+    {
+      "id": "198277160",
+      "topics": [
+        "MLG",
+        "Agentes",
+        "Juegos"
+      ],
+      "title": "MindAgent: Interacción Emergente en Juegos",
+      "slug": "mindagent-emergent-gaming-interaction",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-27T03:32:58+01:00",
+      "description": "Comentario y Calificación del Resumen",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
+      },
+      "seo": {
+        "title": "MindAgent: Interacción Emergente en Juegos",
+        "description": "Comentario y Calificación del Resumen"
+      }
+    },
+    {
+      "id": "198277196",
+      "topics": [
+        "MLG",
+        "Datos Estructurados"
+      ],
+      "title": "Struc-Bench: ¿Son Realmente Buenos los Modelos de Lenguaje Grandes en Generar Datos Estructurados Complejos?",
+      "slug": "struc-bench-are-large-language-models-really-good-at-generating-complex-structure",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-25T03:38:38+01:00",
+      "description": "Comentario y Calificación del Resumen",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Struc-Bench: ¿Son Realmente Buenos los Modelos de Lenguaje Grandes en Generar Datos Estructurados Complejos?",
+        "description": "Comentario y Calificación del Resumen"
+      }
+    },
+    {
+      "id": "198277217",
+      "topics": [
+        "MLG",
+        "Privacidad",
+        "Borde"
+      ],
+      "title": "Recuperación de Enmascaramiento de Preservación de Privacidad con Modelos de Lenguaje Grandes",
+      "slug": "recovering-from-privacy-preserving-masking-with-large-language-models",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-25T03:38:26+01:00",
+      "description": "Comentario y Calificación del Resumen",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Recuperación de Enmascaramiento de Preservación de Privacidad con Modelos de Lenguaje Grandes",
+        "description": "Comentario y Calificación del Resumen"
+      }
+    },
+    {
+      "id": "198277253",
+      "topics": [
+        "MLG",
+        "Audio"
+      ],
+      "title": "Aumentando el Texto para la Comprensión del Lenguaje Hablado con Modelos de Lenguaje Grandes",
+      "slug": "augmenting-text-for-spoken-language-understanding-with-large-language-models",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-25T03:37:49+01:00",
+      "description": "Comentario y Calificación del Resumen",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Aumentando el Texto para la Comprensión del Lenguaje Hablado con Modelos de Lenguaje Grandes",
+        "description": "Comentario y Calificación del Resumen"
+      }
+    },
+    {
+      "id": "198277277",
+      "topics": [
+        "MLG",
+        "Compresión"
+      ],
+      "title": "El Modelado del Lenguaje es Compresión",
+      "slug": "language-modeling-is-compression",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-25T03:37:32+01:00",
+      "description": "Comentario y Calificación del Resumen",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "El Modelado del Lenguaje es Compresión",
+        "description": "Comentario y Calificación del Resumen"
+      }
+    },
+    {
+      "id": "198277360",
+      "topics": [
+        "MLG",
+        "RLHF"
+      ],
+      "title": "Estabilizando RLHF a través del Modelo de Ventaja y Ensayo Selectivo",
+      "slug": "stabilizing-rlhf-through-advantage-model-and-selective-rehearsal",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-24T05:22:15+01:00",
+      "description": "Comentario y Calificación del Resumen",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Estabilizando RLHF a través del Modelo de Ventaja y Ensayo Selectivo",
+        "description": "Comentario y Calificación del Resumen"
+      }
+    },
+    {
+      "id": "198277446",
+      "topics": [
+        "MLG",
+        "Alucinación"
+      ],
+      "title": "La Cadena de Verificación Reduce la Alucinación en Modelos de Lenguaje Grandes",
+      "slug": "chain-of-verification-reduces-hallucination-in-large-language-models",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-24T05:21:05+01:00",
+      "description": "Comentario y Calificación del Resumen",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "La Cadena de Verificación Reduce la Alucinación en Modelos de Lenguaje Grandes",
+        "description": "Comentario y Calificación del Resumen"
+      }
+    },
+    {
+      "id": "198277458",
+      "topics": [
+        "MLG",
+        "Alucinación",
+        "Entidad",
+        "Datos Estructurados"
+      ],
+      "title": "LMDX: Extracción y Localización de Información de Documentos Basada en Modelos de Lenguaje",
+      "slug": "lmdx-language-model-based-document-information-extraction-and-localization",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-24T05:20:31+01:00",
+      "description": "Comentario y Calificación del Resumen",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "LMDX: Extracción y Localización de Información de Documentos Basada en Modelos de Lenguaje",
+        "description": "Comentario y Calificación del Resumen"
+      }
+    },
+    {
+      "id": "198277209",
+      "topics": [
+        "MLG",
+        "Datos"
+      ],
+      "title": "SlimPajama-DC: Comprendiendo Combinaciones de Datos para el Entrenamiento de Modelos de Lenguaje Grandes",
+      "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-04T23:43:32+01:00",
+      "description": "Comentario y Calificación del Resumen",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
+      },
+      "seo": {
+        "title": "SlimPajama-DC: Comprendiendo Combinaciones de Datos para el Entrenamiento de Modelos de Lenguaje Grandes",
+        "description": "Comentario y Calificación del Resumen"
+      }
+    },
+    {
+      "id": "198277109",
+      "topics": [
+        "MLG",
+        "Razonamiento"
+      ],
+      "title": "La Decodificación Contrastiva Mejora el Razonamiento en Modelos de Lenguaje Grandes",
+      "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-04T22:18:11+01:00",
+      "description": "Comentario y Calificación del Resumen",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "La Decodificación Contrastiva Mejora el Razonamiento en Modelos de Lenguaje Grandes",
+        "description": "Comentario y Calificación del Resumen"
+      }
+    },
+    {
+      "id": "198277099",
+      "topics": [
+        "MLG",
+        "Multilingüe",
+        "Datos"
+      ],
+      "title": "CulturaX: Un Conjunto de Datos Limpio, Enorme y Multilingüe para Modelos de Lenguaje Grandes en 167 Idiomas",
+      "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-04T22:14:53+01:00",
+      "description": "Comentario y Calificación del Resumen",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "CulturaX: Un Conjunto de Datos Limpio, Enorme y Multilingüe para Modelos de Lenguaje Grandes en 167 Idiomas",
+        "description": "Comentario y Calificación del Resumen"
+      }
+    },
+    {
+      "id": "198044929",
+      "topics": [
+        "MLG",
+        "Datos",
+        "Agentes"
+      ],
+      "title": "Una Fuente de Datos para Agentes de Razonamiento Incorporado",
+      "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-04T07:33:25+01:00",
+      "description": "Comentario y Calificación del Resumen",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
+      },
+      "seo": {
+        "title": "Una Fuente de Datos para Agentes de Razonamiento Incorporado",
+        "description": "Comentario y Calificación del Resumen"
+      }
+    },
+    {
+      "id": "198044900",
+      "topics": [
+        "MLG",
+        "Entidad",
+        "Ajuste fino"
+      ],
+      "title": "Aprovechando la Información Contextual para la Detección Eficaz de la Relevancia de Entidades",
+      "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-04T07:30:50+01:00",
+      "description": "Comentario y Calificación del Resumen",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Aprovechando la Información Contextual para la Detección Eficaz de la Relevancia de Entidades",
+        "description": "Comentario y Calificación del Resumen"
+      }
+    }
+  ],
+  "blogContent": {
+    "id": "198277239",
+    "topics": [
+      "LLM",
+      "Chat"
+    ],
+    "title": "S3-DST: Segmentación de Diálogos de Dominio Abierto Estructurados y Seguimiento de Estado en la Era de los LLMs",
+    "slug": "s3-dst-structured-open-domain-dialogue-segmentation-and-state-tracking-in-the-era",
+    "authorName": "Prof. Otto Nomos",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+    },
+    "_publishedAt": "2024-05-25T03:38:11+01:00",
+    "description": "Comentario y Calificación del Resumen",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Publicado el 15 de Sep"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Autores:Sarkar Snigdha Sarathi Das,Chirag Shah,Mengting Wan,Jennifer Neville,Longqi Yang,Reid Andersen,Georg Buscher,"
+                    },
+                    {
+                      "url": "https://huggingface.co/tararootcake",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Tara Safavi"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Resumen"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "El problema tradicional de Seguimiento de Estado de Diálogo (DST) tiene como objetivo rastrear las preferencias e intenciones del usuario en conversaciones usuario-agente. Si bien es suficiente para sistemas de diálogo orientados a tareas que apoyan aplicaciones de dominio estrecho, la llegada de sistemas de chat basados en Modelos de Lenguaje Grande (LLM) ha introducido muchas complejidades del mundo real en diálogos de dominio abierto. Estas complejidades se manifiestan en forma de mayor complejidad en las interacciones contextuales, sesiones de diálogo extendidas que abarcan una diversa gama de temas y cambios contextuales más frecuentes. Para manejar estas complejidades que surgen de los sistemas de chat basados en LLM en evolución, proponemos la segmentación conjunta de diálogos y el seguimiento de estado por segmento en sistemas de diálogo de dominio abierto. Asumiendo un entorno de cero disparos apropiado para un verdadero sistema de diálogo de dominio abierto, proponemos S3-DST, una técnica de solicitud estructurada que aprovecha la Recolección Pre-Analítica, un nuevo mecanismo de base que diseñamos para mejorar el seguimiento de contextos largos. Para demostrar la eficacia de nuestro enfoque propuesto en la segmentación conjunta y el seguimiento de estado, evaluamos S3-DST en un conjunto de datos de diálogo de dominio abierto anónimo y propietario, así como en conjuntos de datos de DST y segmentación disponibles públicamente. En todos los conjuntos de datos y configuraciones, S3-DST supera consistentemente el estado del arte, demostrando su potencia y robustez para la próxima generación de sistemas de chat basados en LLM."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "url": "https://arxiv.org/abs/2309.08827",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Ver página de arXiv"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "https://arxiv.org/pdf/2309.08827",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Ver PDF"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Comentario"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "S3-DST: Segmentación de Diálogos de Dominio Abierto Estructurados y Seguimiento de Estado en la Era de los LLMsPublicado el 15 de Sep·Destacado en "
+                    },
+                    {
+                      "url": "https://huggingface.co/papers?date=2023-09-19",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Daily Papers"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": " el 18 de SepAutores:Sarkar Snigdha Sarathi Das,Chirag Shah,Mengting Wan,Jennifer Neville,Longqi Yang,Reid Andersen,Georg Buscher,"
+                    },
+                    {
+                      "url": "https://huggingface.co/tararootcake",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Tara Safavi"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Resumen"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "El problema tradicional de Seguimiento de Estado de Diálogo (DST) tiene como objetivo rastrear las preferencias e intenciones del usuario en conversaciones usuario-agente. Si bien es suficiente para sistemas de diálogo orientados a tareas que apoyan aplicaciones de dominio estrecho, la llegada de sistemas de chat basados en Modelos de Lenguaje Grande (LLM) ha introducido muchas complejidades del mundo real en diálogos de dominio abierto. Estas complejidades se manifiestan en forma de mayor complejidad en las interacciones contextuales, sesiones de diálogo extendidas que abarcan una diversa gama de temas y cambios contextuales más frecuentes. Para manejar estas complejidades que surgen de los sistemas de chat basados en LLM en evolución, proponemos la segmentación conjunta de diálogos y el seguimiento de estado por segmento en sistemas de diálogo de dominio abierto. Asumiendo un entorno de cero disparos apropiado para un verdadero sistema de diálogo de dominio abierto, proponemos S3-DST, una técnica de solicitud estructurada que aprovecha la Recolección Pre-Analítica, un nuevo mecanismo de base que diseñamos para mejorar el seguimiento de contextos largos. Para demostrar la eficacia de nuestro enfoque propuesto en la segmentación conjunta y el seguimiento de estado, evaluamos S3-DST en un conjunto de datos de diálogo de dominio abierto anónimo y propietario, así como en conjuntos de datos de DST y segmentación disponibles públicamente. En todos los conjuntos de datos y configuraciones, S3-DST supera consistentemente el estado del arte, demostrando su potencia y robustez para la próxima generación de sistemas de chat basados en LLM."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "researchpaper9",
+            "height": 816,
+            "width": 1456,
+            "filename": "researchpaper9.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Comentario y Calificación del Resumen\n",
+      "title": "S3-DST: Segmentación de Diálogos de Dominio Abierto Estructurados...",
+      "twitterCard": null,
+      "image": {
+        "width": 1456,
+        "height": 816,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      }
+    }
+  },
+  "topics": [
+    "LLM",
+    "Chat"
+  ]
+}

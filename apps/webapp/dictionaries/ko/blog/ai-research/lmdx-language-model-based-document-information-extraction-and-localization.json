@@ -1,0 +1,498 @@
+{
+  "relatedBlogs": [],
+  "blogContent": {
+    "id": "198277458",
+    "topics": [
+      "LLM",
+      "환각",
+      "개체",
+      "구조화된 데이터"
+    ],
+    "title": "LMDX: 언어 모델 기반 문서 정보 추출 및 위치 지정",
+    "slug": "lmdx-language-model-based-document-information-extraction-and-localization",
+    "authorName": "Prof. Otto Nomos",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+    },
+    "_publishedAt": "2024-05-24T05:20:31+01:00",
+    "description": "추상적 코멘터리 및 평가",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "2019년 9월 19일 발행"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "저자:"
+                    },
+                    {
+                      "url": "https://huggingface.co/vperot",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "빈센트 페로"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/ghoulken",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "카이 강"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/fluisier",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "플로리안 루이시에"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ",구롱 수,샤오위 썬,"
+                    },
+                    {
+                      "url": "https://huggingface.co/RamyaSreeBoppana",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "람야 스리 보파나"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/zilongwang",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "질롱 왕"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ",지아치 무,하오 장,난 화"
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "초록"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "대규모 언어 모델(LLM)은 자연어 처리(NLP)를 혁신하여 많은 기존 작업에서 최첨단을 향상시키고 새로운 기능을 나타냈습니다. 그러나 LLM은 아직 반구조화된 문서 정보 추출에 성공적으로 적용되지 않았으며, 이는 많은 문서 처리 워크플로의 핵심이며 시각적으로 풍부한 문서(VRD)에서 사전 정의된 목표 스키마를 사용하여 주요 개체를 추출하는 것입니다. LLM 채택의 주요 장애물은 LLM 내에 레이아웃 인코딩이 없어 고품질 추출에 중요하며, 답변이 환각되지 않도록 보장하는 접지 메커니즘이 부족했습니다. 이 논문에서는 임의의 LLM을 문서 정보 추출에 적응시키기 위한 방법론인 언어 모델 기반 문서 정보 추출 및 위치 지정(LMDX)을 소개합니다. LMDX는 단일, 반복 및 계층적 개체의 추출을 수행할 수 있으며, 교육 데이터의 유무에 관계없이 접지 보장을 제공하고 문서 내에서 개체를 위치시킬 수 있습니다. 특히, 우리는 LMDX를 PaLM 2-S LLM에 적용하고 VRDU 및 CORD 벤치마크에서 평가하여 새로운 최첨단을 설정하고 LMDX가 고품질, 데이터 효율적인 파서를 만드는 방법을 보여줍니다."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "url": "https://arxiv.org/abs/2309.10952",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "arXiv 페이지 보기"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "https://arxiv.org/pdf/2309.10952",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "PDF 보기"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "코멘터리"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "\"LMDX: 언어 모델 기반 문서 정보 추출 및 위치 지정\"이라는 제목의 논문은 대규모 언어 모델(LLM)을 사용하여 시각적으로 풍부한 문서(VRD)에서 구조화된 정보를 추출하는 도전을 다루고자 합니다."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "주요 요약:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "LLM과의 도전"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 자연어 처리에서 이루어진 발전에도 불구하고, LLM은 레이아웃 인코딩과 접지 메커니즘이 부족하여 반구조화된 문서 정보 추출에 성공하지 못했습니다."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "LMDX 방법론"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 저자들은 이 특정 추출 작업에 LLM을 적응시키기 위해 LMDX를 도입합니다. 이 기술은 다양한 유형의 개체를 추출하고, 지상 진실 소스를 제공하며, 심지어 이러한 개체를 문서 내에서 위치시킬 수 있습니다."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "성공적인 구현"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": PaLM 2-S LLM에 적용되어 특정 벤치마크에서 평가될 때, LMDX는 해당 분야에서 새로운 최첨단을 설정하며, 효율적인 파서를 만드는 능력을 강조합니다."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "잠재적 실제 세계 영향:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "자동화된 문서 처리"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 문서에서 구조화된 정보를 효율적으로 추출하면 금융, 법률 및 의료와 같은 산업을 혁신할 수 있습니다. 이러한 산업에서는 문서에서 데이터를 추출하여 추가 분석을 위해 필요합니다."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "수동 주석의 필요성 감소"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 접지 보장은 추출된 데이터의 유효성을 보장하기 위해 필요한 수동 감독을 크게 줄일 수 있습니다."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "다재다능성"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 모델이 다양한 유형의 개체를 처리하고 문서 내에서 위치를 제공할 수 있기 때문에 문서의 맥락과 위치가 중요할 수 있는 실제 응용 프로그램에서 경쟁 우위를 가질 수 있습니다."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "잠재적 비용 절감"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 고품질, 데이터 효율적인 파서를 사용하면 수동 데이터 추출, 검증 및 수정과 관련된 비용을 줄일 수 있습니다."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "도전 과제:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "기존 시스템에서의 채택"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 많은 산업이 이미 기존 시스템을 갖추고 있으므로 새로운 방법론을 통합하고 적응하는 데 시간과 자원이 필요할 수 있습니다."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "데이터 민감성"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 금융 및 의료 분야의 문서는 민감한 정보를 포함할 수 있습니다. 모델이 개인 정보 및 보안을 어떻게 보장하는지는 그것의 보다 넓은 채택에 대한 우려가 될 수 있습니다."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "효과적이고 효율적인 문서 정보 추출의 깊은 함의를 고려할 때:"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "이 논문의 실제 세계 영향을 10점 만점에 9점으로 평가합니다."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "LMDX가 다양한 문서 유형 및 도메인에서 일관되게 정확한 추출을 제공할 수 있다면, 문서 처리에 크게 의존하는 기업에 상당한 영향을 미칠 수 있습니다."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "researchpaper9",
+            "height": 816,
+            "width": 1456,
+            "filename": "researchpaper9.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "추상적 코멘터리 및 평가\n",
+      "title": "LMDX: ..문서 정보 추출 및 위치 지정",
+      "twitterCard": null,
+      "image": {
+        "width": 1456,
+        "height": 816,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      }
+    }
+  },
+  "topics": [
+    "LLM",
+    "Hallucination",
+    "Entity",
+    "Structured Data"
+  ]
+}

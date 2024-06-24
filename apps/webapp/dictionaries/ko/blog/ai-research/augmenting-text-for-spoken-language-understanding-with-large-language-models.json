@@ -1,0 +1,445 @@
+{
+  "relatedBlogs": [],
+  "blogContent": {
+    "id": "198277253",
+    "topics": [
+      "LLM",
+      "오디오"
+    ],
+    "title": "대화 언어 이해를 위한 텍스트 증강 및 대형 언어 모델",
+    "slug": "augmenting-text-for-spoken-language-understanding-with-large-language-models",
+    "authorName": "Prof. Otto Nomos",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+    },
+    "_publishedAt": "2024-05-25T03:37:49+01:00",
+    "description": "추상적 코멘터리 및 평가",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "2023년 9월 17일 발행"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "저자: 로샨 샤르마, 수연 김, 다니엘 라자르, 트랑 레, 악샷 슈리바스타바, 광훈 안, 피우시 칸살, 레다 사리, 오즐렘 칼린리, 마이클 셀처"
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "개요"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "음성 의미 파싱(SSP)은 입력 음성에서 기계가 이해할 수 있는 파싱을 생성하는 것을 포함합니다. 기존 응용 프로그램 도메인에 대한 강력한 모델을 훈련하거나 새로운 도메인으로 확장하려면 해당하는 음성-전사-의미 파싱 데이터의 삼중항이 필요하며, 이는 비용이 많이 듭니다. 본 논문에서는 해당 음성이 없는 전사-의미 파싱 데이터(짝이 없는 텍스트)를 사용할 수 있는 방법을 검토합니다. 첫째, 짝이 없는 텍스트가 기존 텍스트 말뭉치에서 추출되는 경우, 공동 오디오 텍스트(JAT)와 텍스트-투-스피치(TTS)를 비교하여 짝이 없는 텍스트에 대한 음성 표현을 생성하는 방법을 비교합니다. STOP 데이터셋에서의 실험은 기존 및 새로운 도메인에서 짝이 없는 텍스트가 각각 2% 및 30%의 절대 정확도(EM) 향상을 보여줍니다. 둘째, 짝이 없는 텍스트가 기존 텍스트 말뭉치에서 사용할 수 없는 경우, 대형 언어 모델(LLM)에 적합한 텍스트를 생성하도록 요청합니다. 실험은 의도와 공존하는 예제 및 단어를 사용하여 짝이 없는 텍스트를 생성할 수 있음을 보여줍니다. 생성된 텍스트를 JAT 및 TTS와 함께 사용하여 음성 의미 파싱을 개선하면 STOP에서 기존 및 새로운 도메인에 대해 각각 1.4% 및 2.6%의 절대 EM을 향상시킵니다."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "url": "https://arxiv.org/abs/2309.09390",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "arXiv 페이지 보기"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "https://arxiv.org/pdf/2309.09390",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "PDF 보기"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "코멘터리"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "\"대화 언어 이해를 위한 텍스트 증강 및 대형 언어 모델\" 논문은 음성 의미 파싱(SSP)을 다룹니다. SSP는 음성 입력을 기계가 읽을 수 있는 형식으로 변환하는 것을 목표로 합니다. 여기에 대한 설명은 다음과 같습니다:"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "주요 요점:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "데이터 도전"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 음성-전사-의미 파싱 데이터가 포함된 데이터셋을 얻는 것은 비용이 많이 듭니다."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "짝이 없는 텍스트 활용"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 연구는 해당 음성이 없는 전사-의미 파싱 데이터에서 음성 표현을 생성하는 것을 조사합니다."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "두 가지 접근 방식"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 논문은 음성 표현을 생성하기 위해 공동 오디오 텍스트(JAT)와 텍스트-투-스피치(TTS) 두 가지 방법을 살펴봅니다."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "중요한 개선"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 기존 및 새로운 도메인에서 짝이 없는 텍스트를 사용하여 정확도(EM) 성능이 각각 2% 및 30% 향상되었습니다."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "LLM을 사용한 데이터 생성"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 사용 가능한 짝이 없는 텍스트가 없는 경우, 적합한 텍스트를 생성하도록 대형 언어 모델(예: Llama 2.0)에 요청하여 성능을 더욱 향상시킵니다."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "실제 세계의 잠재적 영향:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "비용 효율"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 짝이 없는 텍스트를 활용함으로써 도메인별 음성-전사-의미 파싱 데이터 수집과 관련된 비용을 상당히 줄일 수 있습니다."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "도메인 확장"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 이 방법을 사용하여 새로운 도메인으로 대화 언어 이해 기능을 빠르게 확장할 수 있으며, 음성 기반 시스템을 더욱 다양하게 만들 수 있습니다."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "정확도 향상"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 방법의 정확도(EM) 점수 향상은 실제 세계에서 음성 언어 이해 및 처리 개선으로 이어질 수 있습니다."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "유연성"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": LLM과 같은 대형 언어 모델을 사용하여 필요한 데이터를 생성하는 것은 광범위한 데이터 수집 없이도 새로운 작업 및 도메인에 빠르게 적응할 수 있는 강력한 도구가 될 수 있습니다."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "도전 과제:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "LLM에 대한 의존성"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": LLM에 대한 의존은 이 방법이 해당 모델을 사용할 수 있는 조직이나 연구 그룹에 더 적합할 수 있음을 의미합니다."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "음성 비서 및 기타 음성 기반 기술의 보편성과 이 방법이 그 성능과 다양성을 향상시킬 수 있는 잠재력을 감안할 때:"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "이 논문의 실제 세계 영향을 8.5점으로 평가합니다."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "대화 언어 이해를 개선하는 것은 다음 세대의 음성 주도 애플리케이션에 중요합니다. 이 방법은 전통적으로 높은 데이터 수집 비용 없이 이러한 시스템을 향상시킬 수 있는 방법을 제공합니다."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "researchpaper9",
+            "height": 816,
+            "width": 1456,
+            "filename": "researchpaper9.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "추상적 코멘터리 및 평가\n",
+      "title": "대화 언어 이해를 위한 텍스트 증강 ...",
+      "twitterCard": null,
+      "image": {
+        "width": 1456,
+        "height": 816,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      }
+    }
+  },
+  "topics": [
+    "LLM",
+    "Audio"
+  ]
+}

@@ -1,0 +1,467 @@
+{
+  "relatedBlogs": [],
+  "blogContent": {
+    "id": "198277182",
+    "topics": [
+      "트랜스포머"
+    ],
+    "title": "트랜스포머의 두통을 치료하다: 공선 제약 주의를 통해",
+    "slug": "cure-the-headache-of-transformers-via-collinear-constrained-attention",
+    "authorName": "Prof. Otto Nomos",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+    },
+    "_publishedAt": "2024-05-27T03:32:43+01:00",
+    "description": "추상적인 해설 및 평가",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "2015년 9월 15일 발행"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "저자:"
+                    },
+                    {
+                      "url": "https://huggingface.co/underskies",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Shiyi Zhu"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ",Jing Ye,Wei Jiang,Qi Zhang,Yifan Wu,"
+                    },
+                    {
+                      "url": "https://huggingface.co/JungleLee",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Jianguo Li"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "초록"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "대규모 언어 모델을 기반으로 한 실용적인 응용 프로그램의 빠른 진전이 계속됨에 따라, 연구 분야에서 성능을 외삽하는 것의 중요성이 기하급수적으로 증가하고 있습니다. 우리의 연구에서는 이전에 간과되었던 트랜스포머 모델에서 이상 행동을 확인했으며, 가장 중요한 정보를 담고 있는 가장 가까운 토큰 주변에서 혼란을 초래했습니다. 우리는 이 발견을 '트랜스포머의 두통'이라고 명명했습니다. 이를 근본적으로 해결하기 위해, 우리는 공선 제약 주의(CoCA)라는 새로운 자기 주의 구조를 도입했습니다. 이 구조는 기존의 외삽, 내삽 방법 및 전통적인 트랜스포머 모델을 위해 설계된 다른 최적화 전략과 원활하게 통합될 수 있습니다. 우리는 모델에 대한 어떠한 미세 조정도 없이 추론 중에 시퀀스 길이의 16배에서 24배에 이르는 우수한 외삽 성능을 달성했습니다. 또한 CoCA의 계산 및 공간 효율성을 향상시켜 실용성을 보장했습니다. 곧 CoCA를 오픈 소스로 제공할 계획입니다. 그 동안 우리는 부록에서 실험을 재현할 수 있는 코드를 제공했습니다."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "url": "https://arxiv.org/abs/2309.08646",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "arXiv 페이지 보기"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "https://arxiv.org/pdf/2309.08646",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "PDF 보기"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "해설"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "'트랜스포머의 두통을 치료하다: 공선 제약 주의를 통해' 논문은 트랜스포머 모델에서 간과된 문제를 식별하고 해결합니다. 이 모델은 다양한 자연어 처리 작업 및 응용 프로그램에서 지배적인 아키텍처입니다."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "주요 요약:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "이상 행동 식별"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 연구는 '트랜스포머의 두통'이라고 불리는 행동을 식별합니다. 이는 가장 가까운 토큰 주변에서 혼란스러운 행동이 발생하며, 이는 종종 가장 유익한 정보를 제공합니다. 이는 특히 긴 시퀀스에 대한 주의가 필요한 작업에서 성능에 도전을 제기합니다."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "공선 제약 주의 (CoCA)"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 저자들은 이 문제를 해결하기 위해 새로운 자기 주의 구조를 도입합니다. 이는 전통적인 트랜스포머 모델을 위한 다른 최적화 방법과 쉽게 통합될 수 있다고 주장됩니다."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "우수한 외삽"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 논문은 CoCA를 사용하면 모델이 추가적인 미세 조정 없이도 긴 시퀀스 길이에 대해 효율적으로 외삽을 수행할 수 있다고 제안합니다."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "효율성 향상"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 정확성 향상 외에도, 연구자들은 실제 배치에 더 적합하게 CoCA를 계산 및 공간 효율성을 최적화했습니다."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "오픈 소싱"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 연구자들은 CoCA를 오픈 소스로 만들 계획을 표명합니다. 이는 아마도 NLP 커뮤니티 전반에 걸쳐 채택 및 추가 탐색을 장려할 것입니다."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "잠재적인 실제 세계 영향:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "더 나은 모델 행동"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 트랜스포머의 근본적인 문제를 해결함으로써, 모델은 더 안정적이고 예측 가능할 수 있으며, 특히 긴 시퀀스에 대한 맥락을 이해하는 작업에서 더 나은 실제 성능을 제공할 수 있습니다."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "효율적인 긴 시퀀스 처리"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 외삽 개선을 고려할 때, 긴 텍스트에 대한 주의가 필요한 문서 요약과 같은 작업이 혜택을 받을 수 있습니다."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "일반 통합"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 다른 최적화 방법과의 통합 용이성은 기존의 다양한 트랜스포머 모델이 완전한 개편 없이도 혜택을 받을 수 있음을 의미합니다."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "도전 과제:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "채택률"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 모든 새로운 기술과 마찬가지로, 다양한 실제 시나리오에서 접근 방식을 채택, 테스트 및 검증하는 데 시간이 걸릴 수 있습니다."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "잠재적 한계"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": 모든 모델 또는 기술에는 한계가 있으며, 이는 다양한 작업에 적용될 때만 명확해질 수 있습니다."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "트랜스포머의 근본적인 도전을 해결하는 잠재적인 이점과 접근 방식이 제공하는 실용적인 이점을 고려할 때:"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "이 논문의 실제 세계 영향을 10점 만점에 8점으로 평가합니다."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "다양한 NLP 응용 프로그램에 대한 효율성 및 성능 개선의 잠재적인 개선은 상당한 함의를 가질 수 있습니다. 그러나 전체 영향은 광범위한 연구 및 개발 커뮤니티가 발견을 수용, 검증 및 구현하는 방식에 크게 의존할 것입니다."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "researchpaper8a",
+            "height": 816,
+            "width": 1456,
+            "filename": "researchpaper8a.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "추상적인 해설 및 평가",
+      "title": "트랜스포머의 두통을 치료하다: 공선 제약 주의를 통해",
+      "twitterCard": null,
+      "image": {
+        "width": 1456,
+        "height": 816,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
+      }
+    }
+  },
+  "topics": [
+    "Transformers"
+  ]
+}

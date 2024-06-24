@@ -40,8 +40,7 @@ export function Header({ lang, dict }: HeaderProps) {
               <DynamicSessionButton />
             </Suspense>
           </div>
-
-          <LangSelector lang={lang} />
+          {appConfig.features.i18n ? <LangSelector lang={lang} /> : null}
         </div>
 
         <div className="flex md:hidden">

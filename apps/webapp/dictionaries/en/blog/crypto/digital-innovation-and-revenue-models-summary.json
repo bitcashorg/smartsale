@@ -1,0 +1,604 @@
+{
+  "relatedBlogs": [
+    {
+      "id": "180563903",
+      "topics": [
+        "DAO",
+        "Summary"
+      ],
+      "title": "What is Voting For? [Summary]",
+      "slug": "what-is-voting-for-summary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:10:58+01:00",
+      "description": "Unravel the essence of voting within decentralized systems. Gain insights into the true purpose and power of voting in blockchain.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690859305-cbc6-img1.png"
+      },
+      "seo": {
+        "description": "Unravel the essence of voting within decentralized systems. Gain insights into the true purpose and power of voting in blockchain.",
+        "title": "What is Voting For? [Summary]",
+        "twitterCard": null,
+        "image": {
+          "width": 862,
+          "height": 862,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1690859305-cbc6-img1.png"
+        }
+      }
+    },
+    {
+      "id": "180563908",
+      "topics": [
+        "DAO",
+        "Summary"
+      ],
+      "title": "What is Governance For? [Summary]",
+      "slug": "what-is-governance-for-summary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:10:45+01:00",
+      "description": "Explore the role and importance of governance in blockchain systems. Understand how governance drives decentralization and growth.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690859755-cbc7-img1.png"
+      },
+      "seo": {
+        "description": "Explore the role and importance of governance in blockchain systems. Understand how governance drives decentralization and growth.\n",
+        "title": "What is Governance For? [Summary]",
+        "twitterCard": null,
+        "image": {
+          "width": 862,
+          "height": 862,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1690859755-cbc7-img1.png"
+        }
+      }
+    },
+    {
+      "id": "180563931",
+      "topics": [
+        "Tokenomics",
+        "Commentary"
+      ],
+      "title": "Blockchain Incentive Structures: What they are and why they matter [Commentary]",
+      "slug": "blockchain-incentive-structures-what-they-are-and-why-they-matter-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:10:02+01:00",
+      "description": "Understand the core of blockchain incentive structures and their significance in driving user behavior and platform success.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690860807-cbc10-img1.png"
+      },
+      "seo": {
+        "description": "Understand the core of blockchain incentive structures and their significance in driving user behavior and platform success.",
+        "title": "Blockchain Incentive Structures [Commentary]",
+        "twitterCard": null,
+        "image": {
+          "width": 862,
+          "height": 862,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1690860807-cbc10-img1.png"
+        }
+      }
+    }
+  ],
+  "blogContent": {
+    "id": "179948652",
+    "topics": [
+      "Tokenomics",
+      "Industry",
+      "Summary"
+    ],
+    "title": "Digital Innovation and Revenue Models [Summary]",
+    "slug": "digital-innovation-and-revenue-models-summary",
+    "authorName": "Crypto Clairity",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+    },
+    "_publishedAt": "2023-10-05T09:11:35+01:00",
+    "description": "Uncover how digital innovation reshapes product delivery in Prysm Group's 'Digital Innovation and Revenue Models'. Explore emerging tech economics.",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1690668517-cbr1-img1.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Summary, Key Insights & Advice"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Original paper: "
+                    },
+                    {
+                      "url": "https://uploads-ssl.webflow.com/5ca64cec39c643e28bb7079f/6334fa62414f4e6b5126ee3e_Prysm%20Group%20Digital%20Innovation%20and%20Revenue%20Models.pdf",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "https://uploads-ssl.webflow.com/5ca64cec39c643e28bb7079f/6334fa62414f4e6b5126ee3e_Prysm%20Group%20Digital%20Innovation%20and%20Revenue%20Models.pdf\n\n"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": "Author: The Prysm Group"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "The document titled \"Digital Innovation and Revenue Models\" by Prysm Group discusses the economics of emerging technologies, particularly digital communication and internet networking infrastructure, and how they have reshaped the way digital products and services are delivered."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Here are the key insights:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Introduction (Page 3)"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": The document begins by highlighting the transformative impact of digital technologies on the delivery of digital products and services. It emphasizes the importance of a sustainable revenue model for businesses offering digital products and services. A successful product and pricing strategy should account for the unique structural dynamics exhibited by digital industries."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Cost Structure for Traditional vs. Digital Goods (Page 3)"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Digital innovation has led to industries characterized by high fixed costs of production and low marginal costs. The first copy of a digital good is expensive to produce, while additional copies cost a fraction of the first. The marginal costs of production have decreased virtually to zero in some instances."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Sustainable Business Strategies for the Digital World (Pages 4-5)"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": The document discusses two main strategies for digital businesses: the Dominant Firm Model and the Differentiated Product Model. The Dominant Firm Model involves creating and defending large economies of scale, while the Differentiated Product Model involves gaining market share through offering a product that is differentiated in some way."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Framework for Pricing Strategies (Page 7)"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": The document introduces three key strategies for pricing goods and services in an increasingly digital world: Price Discrimination, Third-party supported pricing, and a Combination strategy using both price discrimination and third-party supported pricing."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Based on these insights, here are some actionable advice for crypto startups:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Align Product and Revenue Strategy"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Ensure your product strategy is well-integrated with your revenue model. Consider the unique dynamics of the digital industry when developing these strategies."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Leverage Network Effects"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": If possible, design your product to benefit from network effects. This could involve creating a platform where the value increases as more users join, or incorporating features that improve with increased usage."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Differentiate Your Product"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": If network effects are not strong for your product, focus on differentiating your product from others in the market. This could be through unique features, superior technology, or better user experience."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Consider Pricing Strategies"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Explore different pricing strategies such as price discrimination or third-party supported pricing. This could involve charging different prices to different customers based on their willingness to pay, or generating revenue through third-party channels."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Protect Your Intellectual Property"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": If your differentiation strategy involves creating unique content or technology, ensure you have the necessary intellectual property rights to protect it from being copied by competitors."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Stay Agile"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Be ready to adapt your strategies as the market evolves. The digital and crypto space is rapidly changing, so it's important to stay flexible and responsive to new trends and opportunities."
+                            }
+                          ]
+                        },
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": ""
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": []
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Music Industry Case Study"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "The document discusses a case study on the music industry, illustrating how digital innovation has evolved and expanded business models and strategies. Here are the key insights from the Music Industry Case Study:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Music Industry Evolution (Page 10)"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": The music industry has long utilized price discrimination strategies. Record companies monetized music through sales of records and licensing to third-parties. However, the advent of peer-to-peer music sharing in the late 1990s, aided by the development of the MP3 format, threatened record company revenues."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Digital Distribution Platforms (Page 11)"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Record labels launched their own digital distribution platforms in response to the rise of peer-to-peer networks. Two competing services were launched: PressPlay, backed by Universal Music Group and Sony, and MusicNet, backed by Warner Bros., BMG, and EMI. Both services offered a mix of digital downloads and streaming services to subscribers for a monthly fee but failed due to limited song libraries and overly-restrictive limitations on the number of songs that could be downloaded and streamed."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "iTunes and the Monetization of Digital Music (Page 11)"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": In 2003, the iTunes Music Store emerged to successfully monetize digital music distribution. Apple opted against the subscription model pursued by PressPlay and MusicNet, instead offering each song in its library for 99 cents."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Shift to Music Streaming (Page 12)"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Today, digital downloads account for less than 4% of all industry revenues, while subscriptions are the largest category by a wide measure at 83%. Music streaming platforms have seen success where PressPlay and MusicNet failed nearly a decade ago through the combination of the advancement and adoption of digital technologies, along with the establishment of robust digital rights management."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Based on these insights, here are some actionable advice for crypto startups:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Consider Subscription Models"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": The shift from digital downloads to subscriptions in the music industry shows the potential benefits of recurring revenue models. Crypto startups could consider whether a subscription model could be suitable for their business."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "cbr1-img2",
+            "height": 862,
+            "width": 862,
+            "filename": "cbr1-img2.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1690668728-cbr1-img2.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Uncover how digital innovation reshapes product delivery in Prysm Group's 'Digital Innovation and Revenue Models'. Explore emerging tech economics.",
+      "title": "Digital Innovation and Revenue Models [Summary]",
+      "twitterCard": null,
+      "image": {
+        "width": 862,
+        "height": 862,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1690668517-cbr1-img1.png"
+      }
+    }
+  },
+  "topics": [
+    "Tokenomics",
+    "Industry",
+    "Summary"
+  ]
+}

@@ -1,0 +1,624 @@
+{
+  "relatedBlogs": [
+    {
+      "id": "198277124",
+      "topics": [
+        "LLM",
+        "金融",
+        "医疗保健",
+        "法律",
+        "提示"
+      ],
+      "title": "通过阅读理解调整大型语言模型",
+      "slug": "adapting-large-language-models-via-reading-comprehension",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-27T03:34:22+01:00",
+      "description": "摘要评论与评分",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "通过阅读理解调整大型语言模型",
+        "description": "摘要评论与评分\n"
+      }
+    },
+    {
+      "id": "198277342",
+      "topics": [
+        "LLM",
+        "多语言"
+      ],
+      "title": "OpenBA：一个开源的15B双语不对称seq2seq模型从头预训练",
+      "slug": "openba-an-open-sourced-15b-bilingual-asymmetric-seq2seq-model-pre-trained-from-sc",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-27T03:34:02+01:00",
+      "description": "摘要评论与评分",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "OpenBA：一个开源的15B双语...模型...",
+        "description": "摘要评论与评分\n"
+      }
+    },
+    {
+      "id": "198277117",
+      "topics": [
+        "LLM",
+        "检索"
+      ],
+      "title": "PDFTriage：长篇结构化文档上的问答",
+      "slug": "pdftriage-question-answering-over-long-structured-documents",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-27T03:33:49+01:00",
+      "description": "摘要评论与评分",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "PDFTriage：长篇结构化文档上的问答",
+        "description": "摘要评论与评分\n"
+      }
+    },
+    {
+      "id": "198277138",
+      "topics": [
+        "LLM",
+        "微调"
+      ],
+      "title": "Sorted LLaMA：利用排序微调解锁大型语言模型中间层的潜力，使用排序微调（SoFT）进行动态推理",
+      "slug": "sorted-llama-unlocking-the-potential-of-intermediate-layers-of-large-language-mod",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-27T03:33:31+01:00",
+      "description": "摘要评论与评分",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Sorted LLaMA：...使用排序微调（SoFT）进行动态推理",
+        "description": "摘要评论与评分\n"
+      }
+    },
+    {
+      "id": "198277150",
+      "topics": [
+        "LLM",
+        "指导调整",
+        "多模态"
+      ],
+      "title": "大型多模态模型的指导调整实证研究",
+      "slug": "an-empirical-study-of-scaling-instruct-tuned-large-multimodal-models",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-27T03:33:15+01:00",
+      "description": "摘要评论与评分",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "大型多模态模型的指导调整实证研究",
+        "description": "摘要评论与评分\n"
+      }
+    },
+    {
+      "id": "198277160",
+      "topics": [
+        "LLM",
+        "代理",
+        "游戏"
+      ],
+      "title": "MindAgent：新兴游戏互动",
+      "slug": "mindagent-emergent-gaming-interaction",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-27T03:32:58+01:00",
+      "description": "摘要评论与评分",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
+      },
+      "seo": {
+        "title": "MindAgent：新兴游戏互动",
+        "description": "摘要评论与评分\n"
+      }
+    },
+    {
+      "id": "198277196",
+      "topics": [
+        "LLM",
+        "结构化数据"
+      ],
+      "title": "Struc-Bench：大型语言模型真的擅长生成复杂结构化数据吗？",
+      "slug": "struc-bench-are-large-language-models-really-good-at-generating-complex-structure",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-25T03:38:38+01:00",
+      "description": "摘要评论与评分",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Struc-Bench：..生成复杂结构化数据吗？",
+        "description": "摘要评论与评分\n"
+      }
+    },
+    {
+      "id": "198277217",
+      "topics": [
+        "LLM",
+        "隐私",
+        "边缘"
+      ],
+      "title": "从隐私保护掩码中恢复大型语言模型",
+      "slug": "recovering-from-privacy-preserving-masking-with-large-language-models",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-25T03:38:26+01:00",
+      "description": "摘要评论与评分",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "从隐私保护掩码中恢复大型语言模型",
+        "description": "摘要评论与评分\n"
+      }
+    },
+    {
+      "id": "198277253",
+      "topics": [
+        "LLM",
+        "音频"
+      ],
+      "title": "用大型语言模型增强口语理解的文本",
+      "slug": "augmenting-text-for-spoken-language-understanding-with-large-language-models",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-25T03:37:49+01:00",
+      "description": "摘要评论与评分",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "用大型语言模型增强口语理解的文本",
+        "description": "摘要评论与评分\n"
+      }
+    },
+    {
+      "id": "198277277",
+      "topics": [
+        "LLM",
+        "压缩"
+      ],
+      "title": "语言建模是压缩",
+      "slug": "language-modeling-is-compression",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-25T03:37:32+01:00",
+      "description": "摘要评论与评分",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "语言建模是压缩",
+        "description": "摘要评论与评分\n"
+      }
+    },
+    {
+      "id": "198277360",
+      "topics": [
+        "LLM",
+        "RLHF"
+      ],
+      "title": "通过优势模型和选择性排练稳定RLHF",
+      "slug": "stabilizing-rlhf-through-advantage-model-and-selective-rehearsal",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-24T05:22:15+01:00",
+      "description": "摘要评论与评分",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "通过优势模型和选择性排练稳定RLHF",
+        "description": "摘要评论与评分\n"
+      }
+    },
+    {
+      "id": "198277446",
+      "topics": [
+        "LLM",
+        "幻觉"
+      ],
+      "title": "链式验证减少大型语言模型中的幻觉",
+      "slug": "chain-of-verification-reduces-hallucination-in-large-language-models",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-24T05:21:05+01:00",
+      "description": "摘要评论与评分",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "链式验证减少大型语言模型中的幻觉",
+        "description": "摘要评论与评分\n"
+      }
+    },
+    {
+      "id": "198277458",
+      "topics": [
+        "LLM",
+        "幻觉",
+        "实体",
+        "结构化数据"
+      ],
+      "title": "LMDX：基于语言模型的文档信息提取和定位",
+      "slug": "lmdx-language-model-based-document-information-extraction-and-localization",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-24T05:20:31+01:00",
+      "description": "摘要评论与评分",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "LMDX：..文档信息提取和定位",
+        "description": "摘要评论与评分\n"
+      }
+    },
+    {
+      "id": "198277209",
+      "topics": [
+        "LLM",
+        "数据"
+      ],
+      "title": "SlimPajama-DC：了解LLM训练中的数据组合",
+      "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-04T23:43:32+01:00",
+      "description": "摘要评论与评分",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
+      },
+      "seo": {
+        "title": "SlimPajama-DC：了解LLM训练中的数据组合",
+        "description": "摘要评论与评分\n"
+      }
+    },
+    {
+      "id": "198277109",
+      "topics": [
+        "LLM",
+        "推理"
+      ],
+      "title": "对比解码改善大型语言模型的推理",
+      "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-04T22:18:11+01:00",
+      "description": "摘要评论与评分",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "对比解码改善大型语言模型的推理",
+        "description": "摘要评论与评分\n"
+      }
+    },
+    {
+      "id": "198277099",
+      "topics": [
+        "LLM",
+        "多语言",
+        "数据"
+      ],
+      "title": "CulturaX：用于167种语言的大型语言模型的清洁、庞大和多语言数据集",
+      "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-04T22:14:53+01:00",
+      "description": "摘要评论与评分",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "CulturaX：用于167种语言的大型语言模型的清洁、庞大和多语言数据集",
+        "description": "摘要评论与评分\n"
+      }
+    },
+    {
+      "id": "198044929",
+      "topics": [
+        "LLM",
+        "数据",
+        "代理"
+      ],
+      "title": "推理体现代理的数据源",
+      "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-04T07:33:25+01:00",
+      "description": "摘要评论与评分",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
+      },
+      "seo": {
+        "title": "推理体现代理的数据源",
+        "description": "摘要评论与评分\n"
+      }
+    },
+    {
+      "id": "198044900",
+      "topics": [
+        "LLM",
+        "实体",
+        "微调"
+      ],
+      "title": "利用上下文信息有效地检测实体显著性",
+      "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-04T07:30:50+01:00",
+      "description": "摘要评论与评分",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "利用上下文信息有效地检测实体显著性",
+        "description": "摘要评论与评分\n"
+      }
+    }
+  ],
+  "blogContent": {
+    "id": "198277239",
+    "topics": [
+      "LLM",
+      "Chat"
+    ],
+    "title": "S3-DST：在LLM时代的结构化开放领域对话分割和状态跟踪",
+    "slug": "s3-dst-structured-open-domain-dialogue-segmentation-and-state-tracking-in-the-era",
+    "authorName": "Prof. Otto Nomos",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+    },
+    "_publishedAt": "2024-05-25T03:38:11+01:00",
+    "description": "摘要评论与评级",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "发布于 Sep 15"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "作者：Sarkar Snigdha Sarathi Das,Chirag Shah,Mengting Wan,Jennifer Neville,Longqi Yang,Reid Andersen,Georg Buscher,"
+                    },
+                    {
+                      "url": "https://huggingface.co/tararootcake",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Tara Safavi"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "摘要"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "传统的对话状态跟踪（DST）问题旨在跟踪用户在用户-代理对话中的偏好和意图。虽然对于支持狭窄领域应用的任务导向型对话系统已经足够，但基于大型语言模型（LLM）的聊天系统的出现在开放领域对话中引入了许多现实世界的复杂性。这些复杂性体现在上下文交互的复杂性增加、涵盖各种主题的扩展对话会话以及更频繁的上下文转换形式。为了处理由不断发展的基于LLM的聊天系统引起的这些复杂性，我们提出了在开放领域对话系统中每个段落进行联合对话分割和状态跟踪。假设零射击设置适用于真正的开放领域对话系统，我们提出了S3-DST，这是一种结构化提示技术，利用了我们为改进长上下文跟踪而设计的一种新颖的基础机制——Pre-Analytical Recollection。为了展示我们提出的联合分割和状态跟踪方法的有效性，我们在专有的匿名开放领域对话数据集以及公开可用的DST和分割数据集上评估了S3-DST。在所有数据集和设置中，S3-DST始终优于现有技术水平，展示了它在下一代基于LLM的聊天系统中的效力和稳健性。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "url": "https://arxiv.org/abs/2309.08827",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "View arXiv page"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "https://arxiv.org/pdf/2309.08827",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "View PDF"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "查看PDF"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "评论"
+                    },
+                    {
+                      "url": "https://huggingface.co/papers?date=2023-09-19",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Daily Papers"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": " on Sep 18Authors:Sarkar Snigdha Sarathi Das,Chirag Shah,Mengting Wan,Jennifer Neville,Longqi Yang,Reid Andersen,Georg Buscher,"
+                    },
+                    {
+                      "url": "https://huggingface.co/tararootcake",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Tara Safavi"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "S3-DST：在LLM时代的结构化开放领域对话分割和状态跟踪Published on Sep 15·Featured in "
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "摘要"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "researchpaper9",
+            "height": 816,
+            "width": 1456,
+            "filename": "researchpaper9.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "摘要评论与评级",
+      "title": "S3-DST：在LLM时代的结构化开放领域对话分割...",
+      "twitterCard": null,
+      "image": {
+        "width": 1456,
+        "height": 816,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      }
+    }
+  },
+  "topics": [
+    "LLM",
+    "Chat"
+  ]
+}

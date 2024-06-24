@@ -32,7 +32,12 @@ export function MobileNav({ lang, dict }: MobileNavProps) {
         {open ? (
           <Transition duration={0.3}>
             <div className="mobile-nav">
-              <NavLinks mobile lang={lang} dict={dict} />
+              <NavLinks
+                mobile
+                lang={lang}
+                dict={dict}
+                toggleOpen={toggleOpen}
+              />
             </div>
           </Transition>
         ) : null}

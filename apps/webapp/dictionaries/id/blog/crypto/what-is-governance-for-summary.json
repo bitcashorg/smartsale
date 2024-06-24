@@ -1,0 +1,404 @@
+{
+  "relatedBlogs": [
+    {
+      "id": "180563939",
+      "topics": [
+        "DAO",
+        "Tokenomik",
+        "Komentar"
+      ],
+      "title": "Kerangka Kerja untuk Desain Tata Kelola Blockchain: Prysm Group Wheel [Komentar]",
+      "slug": "a-framework-for-blockchain-governance-design-the-prysm-group-wheel-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:19:19+01:00",
+      "description": "Navigasikan kompleksitas tata kelola blockchain dengan Prysm Group Wheel. Peta jalan Anda menuju desain tata kelola blockchain yang efektif.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690861154-cbc11-img1.webp"
+      },
+      "seo": {
+        "title": "Kerangka Kerja untuk Desain Tata Kelola Blockchain [Komentar]",
+        "description": "Navigasikan kompleksitas tata kelola blockchain dengan Prysm Group Wheel. Peta jalan Anda menuju desain tata kelola blockchain yang efektif."
+      }
+    },
+    {
+      "id": "167184977",
+      "topics": [
+        "Tokenomik",
+        "DAO",
+        "Penggalangan Dana"
+      ],
+      "title": "Merevolusi Model Ekuitas: Bagaimana Tokenomik Mengganggu Dunia Startup",
+      "slug": "revolutionizing-the-equity-model-how-tokenomics-is-disrupting-the-startup-world",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:02:51+01:00",
+      "description": "Buka masa depan startup dengan tokenomik! Jelajahi bagaimana konsep inovatif ini membentuk ulang model ekuitas dan merevolusi lanskap startup.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1687395688-tb2-img1.png"
+      },
+      "seo": {
+        "title": "Bagaimana Tokenomik Mengganggu Dunia Startup",
+        "description": "Jelajahi bagaimana konsep inovatif ini membentuk ulang model ekuitas dan merevolusi lanskap startup."
+      }
+    },
+    {
+      "id": "166981063",
+      "topics": [
+        "Memulai",
+        "DAO"
+      ],
+      "title": "Masa Depan Sudah di Sini: Kebangkitan Organisasi Otonom Terdesentralisasi (DAO)",
+      "slug": "the-future-is-here-the-rise-of-decentralized-autonomous-organizations-daos",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T08:57:02+01:00",
+      "description": "Jelajahi kebangkitan Organisasi Otonom Terdesentralisasi (DAO) dalam panduan kami. Pahami masa depan bisnis dan peluang untuk startup.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1687381524-db1-img1.png"
+      },
+      "seo": {
+        "title": "Kebangkitan Organisasi Otonom Terdesentralisasi",
+        "description": "Jelajahi kebangkitan Organisasi Otonom Terdesentralisasi (DAO) dalam panduan kami. Pahami masa depan bisnis dan peluang untuk startup."
+      }
+    }
+  ],
+  "blogContent": {
+    "id": "180563908",
+    "topics": [
+      "DAO",
+      "Ringkasan"
+    ],
+    "title": "Untuk Apa Tata Kelola? [Ringkasan]",
+    "slug": "what-is-governance-for-summary",
+    "authorName": "Crypto Clairity",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+    },
+    "_publishedAt": "2023-10-05T09:10:45+01:00",
+    "description": "Jelajahi peran dan pentingnya tata kelola dalam sistem blockchain. Pahami bagaimana tata kelola mendorong desentralisasi dan pertumbuhan.",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1690859755-cbc7-img1.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tautan Asli: "
+                    },
+                    {
+                      "url": "https://medium.com/prysmeconomics/what-is-governance-for-1bb2376a2134?source=user_profile---------10----------------------------",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noopener follow"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Untuk Apa Tata Kelola?"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Penulis: "
+                    },
+                    {
+                      "url": "https://medium.com/@cathybarreraphd?source=post_page-----1bb2376a2134--------------------------------",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noopener follow"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Cathy Barrera, PhD"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Ringkasan"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Sistem tata kelola blockchain sangat penting dalam menetapkan aturan untuk proses pengambilan keputusan dan memungkinkan organisasi untuk beradaptasi seiring waktu. Namun, mendefinisikan sistem ini tanpa mengidentifikasi apa yang harus dicapai dapat menyebabkan desain yang tidak efektif. Ekonomi dapat membantu membimbing kita dalam konteks ini karena menawarkan wawasan berharga tentang tata kelola."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Sistem tata kelola ada untuk memungkinkan organisasi beradaptasi saat keadaan berubah dan lebih banyak informasi tersedia. Adaptasi ini sangat penting karena tidak mungkin untuk mendefinisikan setiap keputusan potensial di muka."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Secara historis, tata kelola adalah hak istimewa pemilik mayoritas di perusahaan swasta, sementara di organisasi yang lebih besar, pemangku kepentingan sering memilih dewan direksi yang kemudian menunjuk CEO untuk menangani keputusan sehari-hari. Alasan di balik pengambil keputusan tunggal sering kali terletak pada efisiensi pengumpulan dan penerapan informasi, serta penyelarasan insentif dan akuntabilitas yang lebih efektif dibandingkan dengan pengambilan keputusan kelompok. Namun, ini tidak berarti bahwa ini adalah satu-satunya model tata kelola yang efektif, terutama ketika mempertimbangkan tata kelola blockchain."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Jadi, apa artinya ini untuk tata kelola blockchain?"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Penting untuk diingat bahwa esensi dari tata kelola adalah untuk menetapkan mekanisme untuk pengambilan keputusan di masa depan. Teknologi blockchain, meskipun menghadirkan peluang dan tantangan baru, tidak mengubah poin fundamental ini. Pertanyaan-pertanyaan untuk membimbing desain tata kelola tetap:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Jenis keputusan apa yang perlu dibuat?"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Informasi apa yang dibutuhkan untuk keputusan ini?"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Keahlian apa yang diperlukan untuk membuat keputusan ini?"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Preferensi siapa yang harus diperhitungkan?"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Siapa yang harus terlibat langsung dalam proses pengambilan keputusan?"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Bagaimana individu-individu ini dapat dipilih?"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Kesalahan potensial apa yang dapat terjadi dalam proses seleksi, dan bagaimana cara meminimalkannya?"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Bagaimana implementasi keputusan dapat dipastikan?"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Bagaimana pelanggaran aturan dapat diidentifikasi, dan apa konsekuensinya?"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Dalam konteks tata kelola blockchain, pertanyaan-pertanyaan ini dapat dieksplorasi dengan cara yang inovatif. Misalnya, keputusan mungkin didesentralisasi dan melibatkan pemegang token, mengurangi risiko kontrol terpusat dan berpotensi meningkatkan transparansi dan keadilan. Sistem tata kelola blockchain yang terstruktur dengan baik mungkin juga menggunakan kontrak pintar untuk mengotomatisasi implementasi keputusan dan menegakkan aturan, mengurangi ketergantungan pada otoritas pusat."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Sifat unik blockchain juga memungkinkan struktur tata kelola yang lebih cair dan dinamis, seperti DAO (Decentralized Autonomous Organizations), di mana kekuatan pengambilan keputusan dapat didistribusikan di antara pemegang token, menciptakan sistem yang lebih demokratis dan berbasis konsensus. Ini tidak hanya memperluas ruang lingkup partisipasi tetapi juga mengurangi risiko tertentu yang terkait dengan model tata kelola tradisional."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Namun, tidak ada solusi yang cocok untuk semua. Proyek blockchain yang berbeda mungkin memerlukan struktur tata kelola yang berbeda, tergantung pada faktor-faktor seperti jenis keputusan yang harus dibuat, pemangku kepentingan yang terlibat, dan tingkat desentralisasi yang diinginkan. Kuncinya adalah merancang sistem tata kelola dengan sengaja dan dengan tujuan, dengan pemahaman yang jelas tentang tujuan dan konteksnya. Dengan kata lain, tata kelola blockchain harus dirancang dengan mata terbuka, bukan dengan mata tertutup."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "cbc7-img1",
+            "height": 862,
+            "width": 862,
+            "filename": "cbc7-img1.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1690859755-cbc7-img1.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Jelajahi peran dan pentingnya tata kelola dalam sistem blockchain. Pahami bagaimana tata kelola mendorong desentralisasi dan pertumbuhan.\n",
+      "title": "Untuk Apa Tata Kelola? [Ringkasan]",
+      "twitterCard": null,
+      "image": {
+        "width": 862,
+        "height": 862,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1690859755-cbc7-img1.png"
+      }
+    }
+  },
+  "topics": [
+    "DAO",
+    "Summary"
+  ]
+}

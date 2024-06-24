@@ -1,0 +1,529 @@
+{
+  "relatedBlogs": [],
+  "blogContent": {
+    "id": "198277342",
+    "topics": [
+      "LLM",
+      "Đa ngôn ngữ"
+    ],
+    "title": "OpenBA: Mô hình seq2seq song ngữ 15B nguồn mở được huấn luyện từ đầu",
+    "slug": "openba-an-open-sourced-15b-bilingual-asymmetric-seq2seq-model-pre-trained-from-sc",
+    "authorName": "Prof. Otto Nomos",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+    },
+    "_publishedAt": "2024-05-27T03:34:02+01:00",
+    "description": "Bình luận & Đánh giá Tóm tắt",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Được xuất bản vào Ngày 19 tháng 9"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tác giả:"
+                    },
+                    {
+                      "url": "https://huggingface.co/ljtsuda",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Juntao Li"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/ZetangForward",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Zecheng Tang"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ",Yuyang Ding,"
+                    },
+                    {
+                      "url": "https://huggingface.co/PinzhengWang",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Pinzheng Wang"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ",Pei Guo,"
+                    },
+                    {
+                      "url": "https://huggingface.co/Moriarty0923",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Wangjie You"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/jorjordan",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Dan Qiao"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/jokephp",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Wenliang Chen"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ",Guohong Fu,Qiaoming Zhu,Guodong Zhou,Min Zhang"
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tóm tắt"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Các mô hình ngôn ngữ lớn (LLMs) với hàng tỷ tham số đã cho thấy hiệu suất xuất sắc trong nhiều nhiệm vụ xử lý ngôn ngữ tự nhiên. Báo cáo này giới thiệu OpenBA, một mô hình seq2seq song ngữ 15B nguồn mở, để đóng góp một biến thể LLM cho cộng đồng mô hình nguồn mở hướng đến người dùng tiếng Trung. Chúng tôi đã nâng cao OpenBA bằng các kỹ thuật hiệu quả và hiệu suất cao cũng như áp dụng chiến lược đào tạo ba giai đoạn để huấn luyện mô hình từ đầu. Giải pháp của chúng tôi cũng có thể đạt được hiệu suất cạnh tranh cao chỉ với 380B token, tốt hơn LLaMA-70B trên chuẩn BELEBELE, BLOOM-176B trên chuẩn MMLU, GLM-130B trên chuẩn C-Eval (khó). Báo cáo này cung cấp các chi tiết chính để tiền huấn luyện một mô hình tương tự, bao gồm xử lý dữ liệu tiền huấn luyện, thu thập dữ liệu Flan song ngữ, các quan sát thực nghiệm đã truyền cảm hứng cho thiết kế kiến trúc mô hình của chúng tôi, mục tiêu đào tạo của các giai đoạn khác nhau và các kỹ thuật tăng cường khác. Chúng tôi đã tái cấu trúc mã của mình để tuân theo các nguyên tắc thiết kế của Thư viện Chuyển đổi Huggingface, làm cho nó thuận tiện hơn cho các nhà phát triển sử dụng, và đã phát hành các điểm kiểm tra của các giai đoạn đào tạo khác nhau tại https://huggingface.co/openBA. Thông tin chi tiết hơn về dự án của chúng tôi có sẵn tại https://github.com/OpenNLG/openBA.git."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "url": "https://arxiv.org/abs/2309.10706",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Xem trang arXiv"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "https://arxiv.org/pdf/2309.10706",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Xem PDF"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Bình luận"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Bài báo \"OpenBA: Mô hình seq2seq song ngữ 15B nguồn mở được huấn luyện từ đầu\" giới thiệu một mô hình ngôn ngữ lớn song ngữ được thiết kế riêng cho các ứng dụng hướng đến người dùng tiếng Trung."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Những điểm chính:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Mô hình Song ngữ"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": OpenBA là một mô hình song ngữ phục vụ các nhiệm vụ hướng đến người dùng tiếng Trung, qua đó lấp đầy một khoảng trống trong cộng đồng LLM."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Kỹ thuật Hiệu quả và Chiến lược Đào tạo"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Các tác giả sử dụng các kỹ thuật hiệu quả và chiến lược đào tạo ba giai đoạn để huấn luyện mô hình từ đầu. Điều này đảm bảo mô hình cạnh tranh mặc dù được đào tạo với ít token hơn so với các mô hình lớn khác."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Hiệu suất Cạnh tranh"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": OpenBA đạt hiệu suất tốt hơn trên nhiều chuẩn so với các mô hình tiên tiến khác, với ít token hơn. Điều này cho thấy kiến trúc và chiến lược đào tạo hiệu quả."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Nguồn mở"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Các tác giả đã làm cho mô hình của họ trở thành nguồn mở và tích hợp nó với Thư viện Chuyển đổi Huggingface. Điều này giúp dễ dàng hơn cho các nhà phát triển và nhà nghiên cứu áp dụng."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tác động Thực tế Tiềm năng:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Nhiệm vụ Song ngữ"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Bản chất song ngữ của OpenBA có thể giải quyết nhiều nhiệm vụ liên quan đến ngôn ngữ Anh và Trung, mở rộng khả năng áp dụng của LLMs trong các khu vực nói tiếng Trung và các ứng dụng song ngữ."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Thúc đẩy Nghiên cứu Hướng đến Người Dùng Tiếng Trung"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Sự tập trung của mô hình vào các nhiệm vụ hướng đến người dùng tiếng Trung có thể khuyến khích nhiều nghiên cứu và ứng dụng phục vụ cho nhóm ngôn ngữ quan trọng này."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Công cụ Dễ tiếp cận"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Với việc mô hình được tích hợp vào Huggingface và mã nguồn được mở, các nhà phát triển và nhà nghiên cứu có thể dễ dàng áp dụng, sửa đổi và mở rộng mô hình này cho các ứng dụng khác nhau."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Hiệu suất Chuẩn"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Hiệu suất vượt trội trên các chuẩn ám chỉ khả năng của mô hình này trở thành tiêu chuẩn hoặc tham chiếu trong các nhiệm vụ NLP song ngữ liên quan đến tiếng Trung."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Thách thức:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Bản chất Chuyên biệt"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Mặc dù mô hình mạnh mẽ cho các nhiệm vụ song ngữ liên quan đến tiếng Trung, sự chuyên biệt của nó có thể hạn chế khả năng áp dụng rộng rãi của nó đối với các ngôn ngữ khác."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Tính Chất Tốn tài nguyên"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Như các mô hình lớn khác, các ứng dụng thời gian thực hoặc triển khai trong môi trường thiếu tài nguyên có thể gặp thách thức."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Xét đến tiềm năng đột phá trong các nhiệm vụ song ngữ liên quan đến tiếng Trung và đóng góp của nó cho cộng đồng nguồn mở:"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tôi đánh giá tác động thực tế của bài báo này là 8 trên 10."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "OpenBA lấp đầy một lĩnh vực cụ thể trong thế giới LLM bằng cách phục vụ các nhiệm vụ song ngữ liên quan đến tiếng Trung. Bản chất nguồn mở và tích hợp với các nền tảng phổ biến sẽ có khả năng thúc đẩy sự áp dụng của nó và kích thích thêm nghiên cứu trong cộng đồng NLP tiếng Trung."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "researchpaper9",
+            "height": 816,
+            "width": 1456,
+            "filename": "researchpaper9.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Bình luận & Đánh giá Tóm tắt",
+      "title": "OpenBA: Mô hình seq2seq song ngữ 15B nguồn mở ...",
+      "twitterCard": null,
+      "image": {
+        "width": 1456,
+        "height": 816,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      }
+    }
+  },
+  "topics": [
+    "LLM",
+    "Multilingual"
+  ]
+}

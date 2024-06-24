@@ -6,6 +6,7 @@ import {
 import { getLayoutText } from './datocms-layout.service'
 import { getPageSeoText } from './datocms-seo.service'
 import { BlogAiRecord, SiteLocale } from './graphql/generated/cms'
+import * as fs from 'fs'
 
 export const getBlogData = async (locale: SiteLocale) => {
   const locales = [locale]
@@ -67,6 +68,23 @@ export async function getArticleSections(
     bitcashData,
     aiResearchData
   } = await getBlogData(locale)
+  const dirPath = `dictionaries/${locale}/blog/`
+  const fileName = `blog-index.json`
+  const filePath = `${dirPath}/${fileName}`
+
+  // return cached translations
+  try {
+    const fileContents = JSON.parse(fs.readFileSync(filePath, 'utf8'))
+    return fileContents.sections
+  } catch (error) {
+    // console.log('error', error)
+    try {
+      const englishVersion = JSON.parse(
+        fs.readFileSync(`dictionaries/en/blog/${fileName}`, 'utf8')
+      )
+      if (englishVersion) return englishVersion.sections
+    } catch (error) {}
+  }
 
   const sections: ArticlesSection[] = [
     {
@@ -111,8 +129,18 @@ export async function getArticleSections(
     }
   ]
 
+  sections.forEach(section => {
+    section.articles.forEach(article => {
+      article.contentBlock = []
+    })
+  })
+
+  fs.mkdirSync(dirPath, { recursive: true })
+  fs.writeFileSync(filePath, JSON.stringify({ sections }, null, 2))
+
   return sections
 }
+
 export async function getRecentArticleSections(
   locale: SiteLocale
 ): Promise<ArticlesSection[]> {
@@ -163,6 +191,25 @@ export async function getBlogCategoryLandingData(
     getBlogCategory(category, locale, [locale], undefined, 100),
     getPageSeoText(category, locale, [locale])
   ])
+
+  const dirPath = `dictionaries/${locale}/blog/${category}`
+  const fileName = `${category}-index.json`
+  const filePath = `${dirPath}/${fileName}`
+
+  // return cached translations
+  try {
+    const fileContents = JSON.parse(fs.readFileSync(filePath, 'utf8'))
+    return fileContents
+  } catch (error) {
+    // console.log('error', error)
+    try {
+      const englishVersion = JSON.parse(
+        fs.readFileSync(`dictionaries/en/blog/${category}/${fileName}`, 'utf8')
+      )
+      if (englishVersion) return englishVersion
+    } catch (error) {}
+  }
+
   // replacing category kebab case with camel case
   const blogCategory = category.replace(/(\-\w)/g, (m: string) =>
     m[1].toUpperCase()
@@ -188,6 +235,10 @@ export async function getBlogCategoryLandingData(
     const articles = categoryContent.filter(content =>
       content.topics.includes(tp)
     )
+    articles.forEach(article => {
+      article.contentBlock = []
+    })
+
     return {
       name: tp,
       slug: `${tp.toLocaleLowerCase()}`,
@@ -195,7 +246,18 @@ export async function getBlogCategoryLandingData(
     }
   })
 
-  return { sections, pageSeo, i18n }
+  const result = { sections, pageSeo }
+
+  fs.mkdirSync(dirPath, { recursive: true })
+  fs.writeFileSync(filePath, JSON.stringify(result, null, 2))
+
+  return result
+}
+
+export type BlogArticleData = {
+  relatedBlogs: BlogArticleRecord[]
+  blogContent: BlogArticleRecord
+  topics: string[]
 }
 
 export async function getBlogArticleData(
@@ -203,6 +265,63 @@ export async function getBlogArticleData(
   category: string,
   slug: string
 ) {
+  const dirPath = `dictionaries/${locale}/blog/${category}`
+  const fileName = `${slug}.json`
+  const filePath = `${dirPath}/${fileName}`
+
+  // return cached translations
+  try {
+    const fileContents: BlogArticleData = JSON.parse(
+      fs.readFileSync(filePath, 'utf8')
+    )
+    return fileContents
+  } catch (error) {
+    // console.log('error', error)
+    const englishVersion: BlogArticleData = JSON.parse(
+      fs.readFileSync(`dictionaries/en/blog/${category}/${slug}.json`, 'utf8')
+    )
+    if (englishVersion) {
+      return englishVersion
+    }
+  }
+
+  // if cached translations are not available, translate the english version
+  // return english version by default if translation is not found
+  if (locale !== 'en') {
+    const englishVersion: BlogArticleData = JSON.parse(
+      fs.readFileSync(`dictionaries/en/blog/${category}/${slug}.json`, 'utf8')
+    )
+    return englishVersion
+    //NOTE: this is the old way of translating, we now use the new script that translates all the blogs at once
+    // try {
+    //   const optimized = extractTextForTranslation(englishVersion.blogContent)
+    //   // console.log('======================================')
+    //   // console.log('optimized', optimized)
+    //   const { translation, finishReason } = await openAiTranslate(
+    //     JSON.stringify(optimized),
+    //     locale
+    //   )
+    //   if (finishReason !== 'stop' || !translation) {
+    //     console.log('ERRRRROR TRANSLATING')
+    //     // return english
+    //     return englishVersion
+    //   }
+    //   englishVersion.blogContent = injectTextAfterTranslation(
+    //     englishVersion.blogContent,
+    //     JSON.parse(translation)
+    //   )
+    //   // console.log('==========================================')
+    //   // console.log('!!!! translation', fileContents)
+    //   fs.mkdirSync(dirPath, { recursive: true })
+    //   fs.writeFileSync(filePath, JSON.stringify(englishVersion, null, 2))
+
+    //   return englishVersion
+    // } catch (error) {
+    //   console.log('ERRRORSHSHS', error)
+    //   return englishVersion
+    // }
+  }
+
   // console.log('getBlogArticleData', { locale, category, slug })
   const [i18n, categories] = await Promise.all([
     getLayoutText(locale, [locale]),
@@ -243,17 +362,28 @@ export async function getBlogArticleData(
     const escapedTitle = escapeRegExp(blogContent.title).replace(/\s+/g, '|')
     const titleRegex = new RegExp(`(${escapedTitle})`, 'gi')
 
-    relatedBlogs = relatedBlogs[`${blogCategory}Data`].filter(
-      (blog: BlogAiRecord) =>
-        (blog.topics as string[]).some((topic: string) =>
-          topics.includes(topic)
-        ) &&
-        blog.description?.match(titleRegex) &&
-        blog.title?.match(titleRegex)
-    )
+    relatedBlogs = relatedBlogs[`${blogCategory}Data`]
+      .map((blog: any) => {
+        const { contentBlock, ...rest } = blog
+        return rest
+      })
+      .filter(
+        (blog: BlogAiRecord) =>
+          (blog.topics as string[]).some((topic: string) =>
+            topics.includes(topic)
+          ) &&
+          blog.description?.match(titleRegex) &&
+          blog.title?.match(titleRegex)
+      )
   }
 
-  return { relatedBlogs, blogContent, i18n, topics }
+  // always create an english dictionary
+  const result: BlogArticleData = { relatedBlogs, blogContent, topics }
+
+  fs.mkdirSync(dirPath, { recursive: true })
+  fs.writeFileSync(filePath, JSON.stringify(result, null, 2))
+
+  return result
 }
 
 export type ArticlesSection = {

@@ -1,0 +1,321 @@
+{
+  "relatedBlogs": [
+    {
+      "id": "167184977",
+      "topics": [
+        "代币经济学",
+        "DAO",
+        "筹资"
+      ],
+      "title": "革命性的股权模式：代币经济学如何颠覆创业世界",
+      "slug": "revolutionizing-the-equity-model-how-tokenomics-is-disrupting-the-startup-world",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:02:51+01:00",
+      "description": "通过代币经济学解锁创业的未来！探索这一创新概念如何重塑股权模式并革新创业格局。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1687395688-tb2-img1.png"
+      },
+      "seo": {
+        "title": "代币经济学如何颠覆创业世界",
+        "description": "探索这一创新概念如何重塑股权模式并革新创业格局。"
+      }
+    },
+    {
+      "id": "166981063",
+      "topics": [
+        "入门",
+        "DAO"
+      ],
+      "title": "未来已来：去中心化自治组织（DAO）的崛起",
+      "slug": "the-future-is-here-the-rise-of-decentralized-autonomous-organizations-daos",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T08:57:02+01:00",
+      "description": "在我们的指南中探索去中心化自治组织（DAO）的崛起。了解商业的未来和创业的机会。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1687381524-db1-img1.png"
+      },
+      "seo": {
+        "title": "去中心化自治组织的崛起",
+        "description": "在我们的指南中探索去中心化自治组织（DAO）的崛起。了解商业的未来和创业的机会。"
+      }
+    }
+  ],
+  "blogContent": {
+    "id": "180563903",
+    "topics": [
+      "DAO",
+      "摘要"
+    ],
+    "title": "投票的目的是什么？[摘要]",
+    "slug": "what-is-voting-for-summary",
+    "authorName": "Crypto Clairity",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+    },
+    "_publishedAt": "2023-10-05T09:10:58+01:00",
+    "description": "揭示去中心化系统中投票的本质。深入了解区块链中投票的真正目的和力量。",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1690859305-cbc6-img1.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "原始链接："
+                    },
+                    {
+                      "url": "https://medium.com/prysmeconomics/what-is-voting-for-6e733a1d2bc9",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "投票的目的是什么？"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "https://medium.com/@cathybarreraphd?source=post_page-----6e733a1d2bc9--------------------------------",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noopener follow"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "\n"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": "作者："
+                    },
+                    {
+                      "url": "https://medium.com/@cathybarreraphd?source=post_page-----6e733a1d2bc9--------------------------------",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noopener follow"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Cathy Barrera, PhD"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "摘要"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "理解一个区块链平台的投票系统是否设计良好取决于投票的背景、目的（偏好 vs. 信息）以及系统的总体目标。当一个群体的个体成员对与他们相关的结果有不同的偏好时（偏好投票），以及当存在共同的偏好但对导致正确结果的选择存在不确定性时（信息投票），投票是必不可少的。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "对于偏好投票，可以想象一群朋友决定去哪个餐馆。每一票都被平等地计算，因为每个人的偏好都被重视。在这种情况下，目标是通过一个公平的系统将不同的偏好合并为一个选择，从而促进群体的凝聚力。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "相反，信息投票更多的是在有共同目标但信息不确定的情况下做出正确的决定，比如在陪审团审判中。在这里，目标是汇集群体的信息，以做出更明智和正确的决定。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "因此，设计投票系统需要仔细考虑："
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "投票类型：是基于偏好还是基于信息？"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "参与者：谁应该投票？是所有相关人员还是仅限于特定群体？"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "门槛：决策的最低要求是什么？"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "信息可用性：投票者需要什么信息，设计如何确保他们获得这些信息？"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "选票提案：如何提出和包含选项？"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "在区块链投票系统中，可以利用智能合约功能自动化许多方面，例如设置投票门槛，确保参与者拥有必要的信息，并确保投票过程的安全性。初创公司还可以使用代币策展注册表来激励用户策展和维护社区高度重视的可靠、准确的列表，从而促进决策过程。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "此外，区块链平台上的去中心化投票系统可以实现更多的透明性、安全性，并有可能促进更民主的过程，让所有利益相关者的声音都能被听到，从而形成更包容和公平的共识机制。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "然而，必须记住，区块链并不是万能的。设计合适的投票系统仍然至关重要。区块链只是提供了一个可以实现更大透明度和不可变性的系统的平台。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "总之，在设计或评估投票系统时，关键是确保它与决策过程的背景和目标一致，考虑到偏好的多样性和信息的不确定性，并提供一个公平透明的过程，考虑到每一个相关的投票。"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "cbc6-img1",
+            "height": 862,
+            "width": 862,
+            "filename": "cbc6-img1.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1690859305-cbc6-img1.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "揭示去中心化系统中投票的本质。深入了解区块链中投票的真正目的和力量。",
+      "title": "投票的目的是什么？[摘要]",
+      "twitterCard": null,
+      "image": {
+        "width": 862,
+        "height": 862,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1690859305-cbc6-img1.png"
+      }
+    }
+  },
+  "topics": [
+    "DAO",
+    "Summary"
+  ]
+}

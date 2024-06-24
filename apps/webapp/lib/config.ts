@@ -10,7 +10,8 @@ export const appConfig = {
       process.env.NEXT_PUBLIC_ENABLE_WALLET_REDIRECT === 'true',
     newNavStruct: process.env.NEXT_PUBLIC_FEAT_NEW_NAV_STRUCT === 'true',
     presale: process.env.NEXT_PUBLIC_FEAT_PRESALE === 'true',
-    sections: process.env.NEXT_PUBLIC_NEW_SECTIONS === 'true'
+    sections: process.env.NEXT_PUBLIC_NEW_SECTIONS === 'true',
+    i18n: process.env.NEXT_PUBLIC_I18N === 'true'
   },
   ...smartsaleEnv[env],
   datocms: {

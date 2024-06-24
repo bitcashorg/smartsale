@@ -1,0 +1,1003 @@
+{
+  "relatedBlogs": [
+    {
+      "id": "198277124",
+      "topics": [
+        "LLM",
+        "Finanzas",
+        "Salud",
+        "Legal",
+        "Sugerencias"
+      ],
+      "title": "Adaptación de Modelos de Lenguaje Grandes a través de la Comprensión de Lectura",
+      "slug": "adapting-large-language-models-via-reading-comprehension",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-27T03:34:22+01:00",
+      "description": "Comentario y Calificación del Resumen",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Adaptación de Modelos de Lenguaje Grandes a través de la Comprensión de Lectura",
+        "description": "Comentario y Calificación del Resumen\n"
+      }
+    },
+    {
+      "id": "198277342",
+      "topics": [
+        "LLM",
+        "Multilingüe"
+      ],
+      "title": "OpenBA: Un Modelo Asimétrico Bilingüe de 15B de Código Abierto Preentrenado desde Cero",
+      "slug": "openba-an-open-sourced-15b-bilingual-asymmetric-seq2seq-model-pre-trained-from-sc",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-27T03:34:02+01:00",
+      "description": "Comentario y Calificación del Resumen",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "OpenBA: Un Modelo ... Bilingüe de 15B de Código Abierto ...",
+        "description": "Comentario y Calificación del Resumen\n"
+      }
+    },
+    {
+      "id": "198277117",
+      "topics": [
+        "LLM",
+        "Recuperación"
+      ],
+      "title": "PDFTriage: Respuesta a Preguntas sobre Documentos Largos y Estructurados",
+      "slug": "pdftriage-question-answering-over-long-structured-documents",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-27T03:33:49+01:00",
+      "description": "Comentario y Calificación del Resumen",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "PDFTriage: Respuesta a Preguntas sobre Documentos Largos y Estructurados",
+        "description": "Comentario y Calificación del Resumen\n"
+      }
+    },
+    {
+      "id": "198277138",
+      "topics": [
+        "LLM",
+        "Ajuste fino"
+      ],
+      "title": "Sorted LLaMA: Desbloqueando el Potencial de las Capas Intermedias de Modelos de Lenguaje Grandes para Inferencia Dinámica Usando Ajuste Fino Ordenado (SoFT)",
+      "slug": "sorted-llama-unlocking-the-potential-of-intermediate-layers-of-large-language-mod",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-27T03:33:31+01:00",
+      "description": "Comentario y Calificación del Resumen",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Sorted LLaMA: ... Inferencia Dinámica Usando Ajuste Fino Ordenado (SoFT)",
+        "description": "Comentario y Calificación del Resumen\n"
+      }
+    },
+    {
+      "id": "198277150",
+      "topics": [
+        "LLM",
+        "Ajuste por Instrucción",
+        "Multimodal"
+      ],
+      "title": "Un Estudio Empírico de la Escalabilidad de Modelos Multimodales Grandes Ajustados por Instrucción",
+      "slug": "an-empirical-study-of-scaling-instruct-tuned-large-multimodal-models",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-27T03:33:15+01:00",
+      "description": "Comentario y Calificación del Resumen",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Un Estudio Empírico de la Escalabilidad de Modelos de Lenguaje Grandes Ajustados por Instrucción",
+        "description": "Comentario y Calificación del Resumen\n"
+      }
+    },
+    {
+      "id": "198277160",
+      "topics": [
+        "LLM",
+        "Agentes",
+        "Juegos"
+      ],
+      "title": "MindAgent: Interacción Emergente en Juegos",
+      "slug": "mindagent-emergent-gaming-interaction",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-27T03:32:58+01:00",
+      "description": "Comentario y Calificación del Resumen",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
+      },
+      "seo": {
+        "title": "MindAgent: Interacción Emergente en Juegos",
+        "description": "Comentario y Calificación del Resumen\n"
+      }
+    },
+    {
+      "id": "198277196",
+      "topics": [
+        "LLM",
+        "Datos Estructurados"
+      ],
+      "title": "Struc-Bench: ¿Son Realmente Buenos los Modelos de Lenguaje Grandes Generando Datos Estructurados Complejos?",
+      "slug": "struc-bench-are-large-language-models-really-good-at-generating-complex-structure",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-25T03:38:38+01:00",
+      "description": "Comentario y Calificación del Resumen",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Struc-Bench: ¿Son Realmente Buenos los Modelos de Lenguaje Grandes Generando Datos Estructurados Complejos?",
+        "description": "Comentario y Calificación del Resumen\n"
+      }
+    },
+    {
+      "id": "198277217",
+      "topics": [
+        "LLM",
+        "Privacidad",
+        "Borde"
+      ],
+      "title": "Recuperación de Enmascaramiento de Preservación de Privacidad con Modelos de Lenguaje Grandes",
+      "slug": "recovering-from-privacy-preserving-masking-with-large-language-models",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-25T03:38:26+01:00",
+      "description": "Comentario y Calificación del Resumen",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Recuperación de Enmascaramiento de Preservación de Privacidad con Modelos de Lenguaje Grandes",
+        "description": "Comentario y Calificación del Resumen\n"
+      }
+    },
+    {
+      "id": "198277239",
+      "topics": [
+        "LLM",
+        "Chat"
+      ],
+      "title": "S3-DST: Segmentación de Diálogo de Dominio Abierto Estructurado y Seguimiento de Estado en la Era de los Modelos de Lenguaje Grandes",
+      "slug": "s3-dst-structured-open-domain-dialogue-segmentation-and-state-tracking-in-the-era",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-25T03:38:11+01:00",
+      "description": "Comentario y Calificación del Resumen",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "S3-DST: Segmentación de Diálogo de Dominio Abierto Estructurado...",
+        "description": "Comentario y Calificación del Resumen\n"
+      }
+    },
+    {
+      "id": "198277253",
+      "topics": [
+        "LLM",
+        "Audio"
+      ],
+      "title": "Aumentando el Texto para la Comprensión del Lenguaje Hablado con Modelos de Lenguaje Grandes",
+      "slug": "augmenting-text-for-spoken-language-understanding-with-large-language-models",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-25T03:37:49+01:00",
+      "description": "Comentario y Calificación del Resumen",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Aumentando el Texto para la Comprensión del Lenguaje Hablado ...",
+        "description": "Comentario y Calificación del Resumen\n"
+      }
+    },
+    {
+      "id": "198277277",
+      "topics": [
+        "LLM",
+        "Compresión"
+      ],
+      "title": "El Modelado del Lenguaje es Compresión",
+      "slug": "language-modeling-is-compression",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-25T03:37:32+01:00",
+      "description": "Comentario y Calificación del Resumen",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "El Modelado del Lenguaje es Compresión",
+        "description": "Comentario y Calificación del Resumen\n"
+      }
+    },
+    {
+      "id": "198277345",
+      "topics": [
+        "LLM",
+        "Multilingüe"
+      ],
+      "title": "Baichuan 2: Modelos de Lenguaje a Gran Escala Abiertos",
+      "slug": "baichuan-2-open-large-scale-language-models",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-24T05:59:10+01:00",
+      "description": "Comentario y Calificación del Resumen",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Baichuan 2: Modelos de Lenguaje a Gran Escala Abiertos",
+        "description": "Comentario y Calificación del Resumen\n"
+      }
+    },
+    {
+      "id": "198277360",
+      "topics": [
+        "LLM",
+        "RLHF"
+      ],
+      "title": "Estabilizando RLHF a través del Modelo de Ventaja y Ensayo Selectivo",
+      "slug": "stabilizing-rlhf-through-advantage-model-and-selective-rehearsal",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-24T05:22:15+01:00",
+      "description": "Comentario y Calificación del Resumen",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Estabilizando RLHF ... Modelo de Ventaja y Ensayo Selectivo",
+        "description": "Comentario y Calificación del Resumen\n"
+      }
+    },
+    {
+      "id": "198277446",
+      "topics": [
+        "LLM",
+        "Alucinación"
+      ],
+      "title": "La Cadena de Verificación Reduce la Alucinación en Modelos de Lenguaje Grandes",
+      "slug": "chain-of-verification-reduces-hallucination-in-large-language-models",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-24T05:21:05+01:00",
+      "description": "Comentario y Calificación del Resumen",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "La Cadena de Verificación Reduce la Alucinación en Modelos de Lenguaje Grandes",
+        "description": "Comentario y Calificación del Resumen\n"
+      }
+    },
+    {
+      "id": "198277458",
+      "topics": [
+        "LLM",
+        "Alucinación",
+        "Entidad",
+        "Datos Estructurados"
+      ],
+      "title": "LMDX: Extracción y Localización de Información de Documentos Basada en Modelos de Lenguaje",
+      "slug": "lmdx-language-model-based-document-information-extraction-and-localization",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-24T05:20:31+01:00",
+      "description": "Comentario y Calificación del Resumen",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "LMDX: Extracción y Localización de Información de Documentos Basada en Modelos de Lenguaje",
+        "description": "Comentario y Calificación del Resumen\n"
+      }
+    },
+    {
+      "id": "198277109",
+      "topics": [
+        "LLM",
+        "Razonamiento"
+      ],
+      "title": "La Decodificación Contrastiva Mejora el Razonamiento en Modelos de Lenguaje Grandes",
+      "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-04T22:18:11+01:00",
+      "description": "Comentario y Calificación del Resumen",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "La Decodificación Contrastiva Mejora el Razonamiento en Modelos de Lenguaje Grandes",
+        "description": "Comentario y Calificación del Resumen\n"
+      }
+    },
+    {
+      "id": "198277099",
+      "topics": [
+        "LLM",
+        "Multilingüe",
+        "Datos"
+      ],
+      "title": "CulturaX: Un Conjunto de Datos Limpio, Enorme y Multilingüe para Modelos de Lenguaje Grandes en 167 Idiomas",
+      "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-04T22:14:53+01:00",
+      "description": "Comentario y Calificación del Resumen",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "CulturaX: Un Conjunto de Datos Limpio, Enorme y Multilingüe...",
+        "description": "Comentario y Calificación del Resumen\n"
+      }
+    },
+    {
+      "id": "198044900",
+      "topics": [
+        "LLM",
+        "Entidad",
+        "Ajuste fino"
+      ],
+      "title": "Aprovechando la Información Contextual para la Detección Eficaz de la Relevancia de Entidades",
+      "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-04T07:30:50+01:00",
+      "description": "Comentario y Calificación del Resumen",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Aprovechando la Información Contextual para la Detección Eficaz de la Relevancia de Entidades",
+        "description": "Comentario y Calificación del Resumen\n"
+      }
+    },
+    {
+      "id": "198044892",
+      "topics": [
+        "LLM",
+        "Agentes"
+      ],
+      "title": "LASER: Agente de Modelo de Lenguaje con Exploración de Espacio de Estados para Navegación Web",
+      "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-04T07:26:17+01:00",
+      "description": "Comentario y Calificación del Resumen",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "LASER: Agente de Modelo de Lenguaje con Exploración de Espacio de Estados para Navegación Web",
+        "description": "Comentario y Calificación del Resumen\n"
+      }
+    }
+  ],
+  "blogContent": {
+    "id": "198277209",
+    "topics": [
+      "LLM",
+      "Datos"
+    ],
+    "title": "SlimPajama-DC: Entendiendo las Combinaciones de Datos para el Entrenamiento de LLM",
+    "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
+    "authorName": "Prof. Otto Nomos",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+    },
+    "_publishedAt": "2023-10-04T23:43:32+01:00",
+    "description": "Comentario y Calificación del Resumen",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Publicado el 19 de Sep"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Autores:"
+                    },
+                    {
+                      "url": "https://huggingface.co/Jason0214",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Zhiqiang Shen"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/Tianhua",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Tianhua Tao"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/LiqunMa",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Liqun Ma"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/willieneis",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Willie Neiswanger"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/jthestness",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Joel Hestness"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/vnata",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Natalia Vassilieva"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/daria-soboleva",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Daria Soboleva"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/EricX003",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Eric Xing"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Resumen"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Este artículo tiene como objetivo comprender los impactos de varias combinaciones de datos (por ejemplo, texto web, wikipedia, github, libros) en el entrenamiento de grandes modelos de lenguaje utilizando SlimPajama. SlimPajama es un conjunto de datos de múltiples fuentes rigurosamente desduplicado, que ha sido refinado y desduplicado aún más a 627B tokens del extenso conjunto de datos RedPajama de 1.2T tokens contribuido por Together. Hemos denominado nuestra investigación como SlimPajama-DC, un análisis empírico diseñado para descubrir características fundamentales y mejores prácticas asociadas con el uso de SlimPajama en el entrenamiento de grandes modelos de lenguaje. Durante nuestra investigación con SlimPajama, surgieron dos observaciones clave: (1) Desduplicación global vs. desduplicación local. Analizamos y discutimos cómo las desduplicaciones globales (a través de diferentes fuentes de conjuntos de datos) y locales (dentro de una sola fuente de conjunto de datos) afectan el rendimiento de los modelos entrenados. (2) Proporciones de conjuntos de datos de múltiples fuentes de alta calidad/altamente desduplicados en la combinación. Para estudiar esto, construimos seis configuraciones del conjunto de datos SlimPajama y entrenamos cada una utilizando el modelo Cerebras-GPT de 1.3B con Alibi y SwiGLU. Nuestra mejor configuración supera al modelo de 1.3B entrenado en RedPajama utilizando el mismo número de tokens de entrenamiento por un margen significativo. Todos nuestros modelos de 1.3B están entrenados en el clúster Cerebras 16 veces CS-2 con un total de 80 PFLOP/s en precisión mixta bf16. Extendemos aún más nuestros descubrimientos (como aumentar la diversidad de datos es crucial después de la desduplicación global) en un modelo de 7B con entrenamiento de gran tamaño de lote. Nuestros modelos y los conjuntos de datos SlimPajama-DC separados están disponibles en: https://huggingface.co/MBZUAI-LLM y https://huggingface.co/datasets/cerebras/SlimPajama-627B."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "url": "https://arxiv.org/abs/2309.10818",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Ver página de arXiv"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "https://arxiv.org/pdf/2309.10818",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Ver PDF"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Comentario"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "El artículo \"SlimPajama-DC: Entendiendo las Combinaciones de Datos para el Entrenamiento de LLM\" examina la influencia de las diferentes combinaciones de datos en el entrenamiento de grandes modelos de lenguaje (LLM) utilizando el conjunto de datos SlimPajama, un conjunto de datos de múltiples fuentes rigurosamente desduplicado."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Conclusiones Clave:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Conjunto de Datos SlimPajama"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Este conjunto de datos es una versión refinada y desduplicada del enorme conjunto de datos RedPajama de 1.2T tokens. El objetivo es utilizar un conjunto de datos más limpio y desduplicado para entrenar LLMs."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Análisis Empírico"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": La investigación SlimPajama-DC examina las características inherentes y las mejores prácticas al emplear SlimPajama en el entrenamiento de LLM."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Desduplicación Global vs. Local"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Se hace una distinción importante entre la desduplicación global (a través de varias fuentes de datos) y la desduplicación local (dentro de una sola fuente de datos) y cómo cada una influye en el rendimiento de los modelos entrenados."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Calidad de los Datos y Desduplicación"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": La investigación evalúa el impacto de las proporciones de conjuntos de datos de múltiples fuentes de alta calidad/altamente desduplicados cuando se combinan."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Métricas de Rendimiento"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Su mejor configuración supera significativamente a un modelo de 1.3B entrenado en el conjunto de datos RedPajama más grande, utilizando el mismo número de tokens de entrenamiento."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Infraestructura de Entrenamiento a Gran Escala"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Utilizaron una configuración informática poderosa con una capacidad total de 80 PFLOP/s en precisión mixta bf16."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Impacto Potencial en el Mundo Real:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Entrenamiento Eficiente de Modelos"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Comprender los efectos de las combinaciones de datos y la desduplicación en el entrenamiento de modelos puede resultar en procesos de entrenamiento de LLM más eficientes y efectivos."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Mejora de LLMs"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Al refinar el conjunto de datos utilizado para el entrenamiento, los modelos resultantes podrían proporcionar salidas más precisas y útiles en varias aplicaciones de PLN."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Guía para la Investigación Futura"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Este análisis empírico ofrece ideas y mejores prácticas para investigadores y profesionales de la industria en el dominio del entrenamiento de modelos de lenguaje a gran escala."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Asignación de Recursos"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Reconocer la importancia de la desduplicación y la combinación de datos puede guiar a las organizaciones en la asignación de recursos para la limpieza y desduplicación de datos."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Desafíos:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Generalización"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Aunque el artículo muestra resultados prometedores con SlimPajama, queda por ver cómo estos hallazgos se generalizan a otros conjuntos de datos y modelos."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Dado el énfasis en comprender los matices de las combinaciones de datos, la desduplicación y su efecto en el entrenamiento de LLMs:"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Calificaría el impacto en el mundo real de este artículo como un 8 de 10."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Esta investigación ofrece ideas valiosas para optimizar los datos utilizados en el entrenamiento de grandes modelos de lenguaje, lo que podría llevar a mejores modelos y procesos de entrenamiento más eficientes. Los hallazgos podrían ser especialmente relevantes para organizaciones e investigadores que buscan maximizar el rendimiento de sus LLMs utilizando recursos limitados."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "researchpaper8a",
+            "height": 816,
+            "width": 1456,
+            "filename": "researchpaper8a.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Comentario y Calificación del Resumen\n",
+      "title": "SlimPajama-DC: Entendiendo las Combinaciones de Datos para el Entrenamiento de LLM",
+      "twitterCard": null,
+      "image": {
+        "width": 1456,
+        "height": 816,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
+      }
+    }
+  },
+  "topics": [
+    "LLM",
+    "Data"
+  ]
+}

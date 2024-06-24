@@ -16,14 +16,14 @@ export default async function ArticlePage(props: ArticlePageProps) {
   const data = await getBlogArticleData(lang, category, slug)
   if (!data) return notFound()
 
-  const { blogContent, i18n, relatedBlogs } = data
+  const { blogContent, relatedBlogs } = data
+
   return (
     <section>
       <main>
         <BlogPage
           blogContent={blogContent}
           params={props.params}
-          i18n={i18n}
           relatedBlogs={relatedBlogs}
         />
       </main>
@@ -71,7 +71,7 @@ export async function generateMetadata(props: any): Promise<Metadata> {
 }
 
 export async function generateStaticParams(): Promise<ArticlePageParams[]> {
-  // const locales = ['en'] as SiteLocale[] // english only for now
+  // const locales = ['en', 'es'] as SiteLocale[] // english only for now
   const params: ArticlePageParams[] = (
     await Promise.all(
       locales.map(async (lang): Promise<ArticlePageParams[]> => {

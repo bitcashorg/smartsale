@@ -1,0 +1,301 @@
+{
+  "relatedBlogs": [
+    {
+      "id": "180556595",
+      "topics": [
+        "Penggalangan Dana",
+        "Tokenomik",
+        "Komentar"
+      ],
+      "title": "Efek Blockchain: Efek Jaringan tanpa Biaya Kekuatan Pasar [Komentar]",
+      "slug": "the-blockchain-effect-network-effects-without-market-power-costs-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:11:14+01:00",
+      "description": "Jelajahi bagaimana blockchain memungkinkan efek jaringan tanpa kekurangan kekuatan pasar. Temukan Efek Blockchain yang mengubah permainan.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690855275-cbc4-img1.png"
+      },
+      "seo": {
+        "title": "Efek Jaringan tanpa Biaya Kekuatan Pasar [Komentar]",
+        "description": "Jelajahi bagaimana blockchain memungkinkan efek jaringan tanpa kekurangan kekuatan pasar. Temukan Efek Blockchain yang mengubah permainan."
+      }
+    }
+  ],
+  "blogContent": {
+    "id": "180563922",
+    "topics": [
+      "Penggalangan Dana",
+      "Tokenomik",
+      "Komentar"
+    ],
+    "title": "ICO Memanfaatkan Efek Jaringan [Komentar]",
+    "slug": "icos-leverage-network-effects-commentary",
+    "authorName": "Crypto Clairity",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+    },
+    "_publishedAt": "2023-10-05T09:12:06+01:00",
+    "description": "Temukan bagaimana ICO memanfaatkan kekuatan efek jaringan untuk mendorong kesuksesan mereka. ICO dan efek jaringan, duo dinamis!",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1690860184-cbc9-img1.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tautan Asli: "
+                    },
+                    {
+                      "url": "https://medium.com/mit-cryptoeconomics-lab/icos-leverage-network-effects-962c617e3063?source=user_profile---------6----------------------------",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noopener follow"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "ICO Memanfaatkan Efek Jaringan"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Penulis: "
+                    },
+                    {
+                      "url": "https://medium.com/@cathybarreraphd?source=post_page-----962c617e3063--------------------------------",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noopener follow"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Cathy Barrera, PhD"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Ringkasan & Komentar"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Penelitian Catalini dan Gans dalam \"Initial Coin Offerings and the Value of Crypto Tokens\" menyediakan kerangka perbandingan antara penjualan token (ICO) dan penjualan ekuitas tradisional sebagai mekanisme penggalangan dana. Salah satu fitur menonjol yang mereka tekankan adalah kemampuan ICO untuk memanfaatkan efek jaringan, yang dapat meningkatkan tingkat keberhasilan acara penggalangan dana."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "ICO dapat membantu menunjukkan permintaan produk karena hubungan langsung antara pembelian token (yang memungkinkan akses ke produk) dan minat konsumen. Ini berbeda dengan penjualan ekuitas, di mana hubungan antara memiliki bagian dari perusahaan dan permintaan produk tidak begitu jelas."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Mereka menyimpulkan bahwa dalam situasi dengan efek jaringan dan permintaan yang tidak pasti, penjualan token dapat mempublikasikan permintaan yang kuat, memungkinkan proyek untuk maju yang mungkin tidak akan dilakukan karena kurangnya informasi publik. Mengamati penjualan token yang sukses dapat mendorong pengguna potensial untuk mengadopsi platform, asalkan mereka menganggap basis pengguna cukup besar."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Namun, peran informasional ICO ini dapat terganggu jika investasi spekulatif mengalahkan partisipasi pengguna platform masa depan. Jika semua pembeli token adalah spekulan daripada pengguna masa depan, permintaan token pra-peluncuran mungkin tidak mencerminkan permintaan sebenarnya untuk platform atau produk. Oleh karena itu, strategi yang mencegah spekulan (seperti periode penguncian, penjualan tanpa batas, dan jendela penjualan yang lebih lama) dapat meningkatkan keandalan penjualan token."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Meskipun demikian, mencegah spekulasi dapat mengurangi jumlah dana potensial. Dengan demikian, startup harus menyeimbangkan memulai efek jaringan untuk kesuksesan platform masa depan dengan mengumpulkan dana lebih cepat."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Berdasarkan wawasan ini, berikut beberapa langkah yang dapat diambil:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Tunjukkan Permintaan Produk:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " Manfaatkan ICO untuk menunjukkan permintaan produk. Dorong pembelian token dengan menekankan peran mereka dalam mendapatkan akses ke produk atau layanan Anda."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Manfaatkan Efek Jaringan:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " Soroti penjualan token yang sukses untuk meyakinkan pengguna platform potensial bahwa platform Anda memiliki basis pengguna yang cukup dan layak diadopsi."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Cegah Spekulan:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " Terapkan strategi yang mencegah spekulan demi konsumen. Ini bisa termasuk periode penguncian, penjualan tanpa batas, dan jendela penjualan yang lebih lama. Strategi ini dapat meningkatkan informativitas penjualan token dan lebih baik menandakan nilai platform Anda kepada pengguna masa depan."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Tentukan Prioritas:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " Startup harus menunjukkan prioritas mereka dengan memilih strategi penjualan token yang tepat. Ini dapat membantu investor potensial memahami fokus startup—apakah pada menarik pengguna platform masa depan atau mengumpulkan dana lebih cepat."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Ingat, meskipun ICO dapat memanfaatkan efek jaringan dan menunjukkan permintaan, kesuksesan mereka sangat dipengaruhi oleh strategi startup dan keseimbangan antara pengguna masa depan potensial dan spekulan."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "cbc9-img1",
+            "height": 862,
+            "width": 862,
+            "filename": "cbc9-img1.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1690860184-cbc9-img1.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Temukan bagaimana ICO memanfaatkan kekuatan efek jaringan untuk mendorong kesuksesan mereka. ICO dan efek jaringan, duo dinamis!",
+      "title": "ICO Memanfaatkan Efek Jaringan [Komentar]",
+      "twitterCard": null,
+      "image": {
+        "width": 862,
+        "height": 862,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1690860184-cbc9-img1.png"
+      }
+    }
+  },
+  "topics": [
+    "Fundraising",
+    "Tokenomics",
+    "Commentary"
+  ]
+}

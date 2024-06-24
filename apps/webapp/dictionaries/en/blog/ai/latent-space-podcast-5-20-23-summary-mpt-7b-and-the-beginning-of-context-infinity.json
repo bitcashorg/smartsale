@@ -1,0 +1,1780 @@
+{
+  "relatedBlogs": [
+    {
+      "id": "190259319",
+      "topics": [
+        "Summary",
+        "LLM",
+        "Training"
+      ],
+      "title": "Latent Space Podcast 8/16/23 [Summary] - The Mathematics of Training LLMs — with Quentin Anthony of Eleuther AI",
+      "slug": "latent-space-podcast-8-16-23-summary-the-mathematics-of-training-llms-with-que",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:19:45+01:00",
+      "description": "Explore the math behind training LLMs with Quentin Anthony from Eleuther AI. Dive into the Transformers Math 101 article & master distributed training techniques for peak GPU performance.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692324088-screenshot-2023-08-17-at-9-59-17-pm.png"
+      },
+      "seo": {
+        "description": "Dive into the Transformers Math 101 article & master distributed training techniques for peak GPU performance.",
+        "title": "Latent Space Podcast 8/16/23 [Summary] Math of Training LLMs",
+        "twitterCard": null,
+        "image": {
+          "width": 1576,
+          "height": 554,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692324088-screenshot-2023-08-17-at-9-59-17-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190259129",
+      "topics": [
+        "LLM",
+        "Hardware",
+        "Summary",
+        "Edge"
+      ],
+      "title": "Latent Space Podcast 8/10/23 [Summary]: LLMs Everywhere: Running 70B models in browsers and iPhones using MLC — with Tianqi Chen of CMU / OctoML",
+      "slug": "latent-space-podcast-8-10-23-summary-llms-everywhere-running-70b-models-in-browse",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:18:37+01:00",
+      "description": "Explore the magic of MLC with Tianqi Chen: deploying 70B models on browsers & iPhones. Dive into XGBoost, TVM's creation, & the future of universal AI deployments. ",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1691894611-screenshot-2023-08-12-at-10-42-43-pm.png"
+      },
+      "seo": {
+        "description": "Explore deploying 70B models on browsers & iPhones. Dive into XGBoost, TVM's creation, & the future of universal AI deployments. ",
+        "title": "Latent Space 8/10/23 [Summary]: LLMs Everywhere",
+        "twitterCard": null,
+        "image": {
+          "width": 1538,
+          "height": 548,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1691894611-screenshot-2023-08-12-at-10-42-43-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190259087",
+      "topics": [
+        "Summary",
+        "LLM",
+        "Code",
+        "Open Source",
+        "Small Models"
+      ],
+      "title": "Latent Space Podcast 8/4/23 [Summary] Latent Space x AI Breakdown crossover pod! ",
+      "slug": "latent-space-podcast-8-4-23-summary-latent-space-x-ai-breakdown-crossover-pod",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:16:33+01:00",
+      "description": "Join AI Breakdown & Latent Space for the summer AI tech roundup: Dive into GPT4.5, Llama 2, AI tools, the rising AI engineer, and more!",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1691539617-screenshot-2023-08-08-at-8-02-52-pm.png"
+      },
+      "seo": {
+        "description": "Dive into GPT4.5, Llama 2, AI tools, the rising AI engineer, and more!",
+        "title": "Latent Space Podcast 8/4/23 [Summary] AI Breakdown crossover",
+        "twitterCard": null,
+        "image": {
+          "width": 1578,
+          "height": 558,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1691539617-screenshot-2023-08-08-at-8-02-52-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190259172",
+      "topics": [
+        "Summary",
+        "LLM",
+        "Open Source",
+        "Small Models"
+      ],
+      "title": "Latent Space Podcast 7/19/23 [Summary] - Llama 2: The New Open LLM SOTA (ft. Nathan Lambert, Matt Bornstein, Anton Troynikov, Russell Kaplan, Whole Mars Catalog et al.)",
+      "slug": "latent-space-podcast-7-19-23-summary-llama-2-the-new-open-llm-sota-ft-nathan-lamb",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:12:38+01:00",
+      "description": "Explore Llama 2, the latest AI breakthrough with experts Nathan Lambert, Matt Bornstein & more. Dive into datasets, benchmarks & AI predictions. Llama insights & drama await in this top podcast!",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1691968295-screenshot-2023-08-13-at-7-11-06-pm.png"
+      },
+      "seo": {
+        "description": "Dive into datasets, benchmarks & AI predictions. Llama insights & drama await in this top podcast!",
+        "title": "Latent Space Podcast 7/19/23 [Summary] - Llama 2",
+        "twitterCard": null,
+        "image": {
+          "width": 1632,
+          "height": 574,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1691968295-screenshot-2023-08-13-at-7-11-06-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190259191",
+      "topics": [
+        "Summary",
+        "Code",
+        "LLM"
+      ],
+      "title": "Latent Space Podcast 7/10/23 [Summary] - Code Interpreter == GPT 4.5 (w/ Simon Willison, Alex Volkov, Aravind Srinivas, Alex Graveley, et al.)",
+      "slug": "latent-space-podcast-7-10-23-summary-code-interpreter-gpt-4-5-w-simon-willison-al",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:09:26+01:00",
+      "description": "Explore ChatGPT's Code Interpreter: a game-changer in AI. Dive into its 1000x capabilities leap with Simon, Alex & top AI experts. #CodeAugmentedInference #GPT4_5",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692048911-screenshot-2023-08-14-at-3-34-05-pm.png"
+      },
+      "seo": {
+        "description": "Explore ChatGPT's Code Interpreter: a game-changer in AI. Dive into its 1000x capabilities leap with Simon, Alex & top AI experts. ",
+        "title": "Latent Space Podcast  [Summary] Code Interpreter = GPT 4.5",
+        "twitterCard": null,
+        "image": {
+          "width": 1596,
+          "height": 582,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692048911-screenshot-2023-08-14-at-3-34-05-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190259238",
+      "topics": [
+        "Hardware",
+        "LLM",
+        "Summary"
+      ],
+      "title": "Latent Space Podcast 6/20/23 [Summary] - Commoditizing the Petaflop — with George Hotz of the tiny corp",
+      "slug": "latent-space-podcast-6-20-23-summary-commoditizing-the-petaflop-with-george-ho",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:07:15+01:00",
+      "description": "George Hotz of tiny corp challenges Nvidia & Google! Dive into the world of AMD collaborations, insights on ggml, Mojo, Elon & GPT-4, plus a peek into AI Girlfriend. ",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692154615-screenshot-2023-08-15-at-10-55-40-pm.png"
+      },
+      "seo": {
+        "description": "George Hotz of tiny corp challenges Nvidia & Google! AMD collaborations, insights on ggml, Mojo, Elon & GPT-4, plus a peek into AI Girlfriend. ",
+        "title": "Latent Space Podcast 6/20/23 [Summary] - George Hotz ",
+        "twitterCard": null,
+        "image": {
+          "width": 1586,
+          "height": 508,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692154615-screenshot-2023-08-15-at-10-55-40-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190259294",
+      "topics": [
+        "LLM",
+        "Functions",
+        "Summary"
+      ],
+      "title": "Latent Space Podcast 6/14/23 [Summary] - Emergency Pod: OpenAI's new Functions API, 75% Price Drop, 4x Context Length (w/ Alex Volkov, Simon Willison, Riley Goodside, Joshua Lochner, Stefania Druga, Eric Elliott, Mayo Oshin et al)",
+      "slug": "latent-space-podcast-6-14-23-summary-emergency-pod-openai-s-new-functions-api-75",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:05:04+01:00",
+      "description": "Explore the June 2023 OpenAI updates with top AI engineers from Scale, Microsoft, Pinecone, & Huggingface. Dive into the Code x LLM paradigms and discover Recursive Function Agents.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692221668-screenshot-2023-08-16-at-5-32-29-pm.png"
+      },
+      "seo": {
+        "description": "Explore the June 2023 OpenAI updates with top AI engineers from Scale, Microsoft, Pinecone, & Huggingface. ",
+        "title": "Latent Space Podcast 6/20/23 [Summary] - Emergency Pod",
+        "twitterCard": null,
+        "image": {
+          "width": 1626,
+          "height": 606,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692221668-screenshot-2023-08-16-at-5-32-29-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190259333",
+      "topics": [
+        "LLM",
+        "Summary",
+        "UX"
+      ],
+      "title": "Latent Space Podcast 6/8/23 [Summary] - From RLHF to RLHB: The Case for Learning from Human Behavior - with Jeffrey Wang and Joe Reeve of Amplitude",
+      "slug": "latent-space-podcast-6-8-23-summary-from-rlhf-to-rlhb-the-case-for-learning-from",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:02:33+01:00",
+      "description": "Explore AI & analytics with Jeffrey Wang & Joe Reeve on Latent Space Live! Dive into why AI values Analytics and the power of first-party behavioral data. ",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692386432-screenshot-2023-08-18-at-3-17-04-pm.png"
+      },
+      "seo": {
+        "description": "Explore AI & analytics with Jeffrey Wang & Joe Reeve on Latent Space Live! Dive into why AI values Analytics and the power of first-party behavioral data. ",
+        "title": "Latent Space Podcast 6/8/23 [Summary] - From RLHF to RLHB",
+        "twitterCard": null,
+        "image": {
+          "width": 1674,
+          "height": 550,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692386432-screenshot-2023-08-18-at-3-17-04-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190260528",
+      "topics": [
+        "Summary",
+        "LLM",
+        "UX"
+      ],
+      "title": "Latent Space Podcast 6/1/23 [Summary] - Building the AI × UX Scenius — with Linus Lee of Notion AI",
+      "slug": "latent-space-podcast-6-1-23-summary-building-the-ai-x-ux-scenius-with-linus-le",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:00:12+01:00",
+      "description": "Explore Notion AI's transformative approach to AI and UX. Dive into the future of AI-augmented workspaces, the value beyond chat interfaces, and insights on effective knowledge work. Recap of AI×UX NYC meetup included!",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692390655-screenshot-2023-08-18-at-4-28-51-pm.png"
+      },
+      "seo": {
+        "description": "Explore Notion AI's transformative approach to AI and UX. ",
+        "title": "Latent Space Podcast 6/1/23 [Summary] - AI × UX Scenius",
+        "twitterCard": null,
+        "image": {
+          "width": 1614,
+          "height": 546,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692390655-screenshot-2023-08-18-at-4-28-51-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190260557",
+      "topics": [
+        "Summary",
+        "Code",
+        "LLM",
+        "Agents"
+      ],
+      "title": "Latent Space Podcast 5/25/23 [Summary] - Debugging the Internet with AI agents – with Itamar Friedman of Codium AI and AutoGPT",
+      "slug": "latent-space-podcast-5-25-23-summary-debugging-the-internet-with-ai-agents-with",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:58:27+01:00",
+      "description": "Explore the future of AI with Itamar Friedman from Codium AI on 'Debugging the Internet'. Dive into 'Extreme DRY' agents, the rapid sync of specs & tests, and the balance between code & testing. Plus, insights from Toran & an exclusive look at AutoGPT's roadmap!",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692397413-screenshot-2023-08-18-at-6-10-09-pm.png"
+      },
+      "seo": {
+        "description": "Dive into 'Extreme DRY' agents, the rapid sync of specs & tests, and the balance between code & testing. ",
+        "title": "Latent Space Pod 5/25/23 [Summary] Debugging the Internet",
+        "twitterCard": null,
+        "image": {
+          "width": 1568,
+          "height": 548,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692397413-screenshot-2023-08-18-at-6-10-09-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190260597",
+      "topics": [
+        "LLM",
+        "Structured Data"
+      ],
+      "title": "Latent Space Podcast 5/15/23 [Summary] - Guaranteed quality and structure in LLM outputs - with Shreya Rajpal of Guardrails AI",
+      "slug": "latent-space-podcast-5-15-23-summary-guaranteed-quality-and-structure-in-llm-outp",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:56:26+01:00",
+      "description": "Explore Ep. 12 with Shreya Rajpal of Guardrails AI: Dive deep into validating LLM outputs, refining answers through re-asking loops, and establishing SLAs for models. Master the nuances of AI quality assurance.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692495732-screenshot-2023-08-19-at-9-38-27-pm.png"
+      },
+      "seo": {
+        "description": "Explore Ep. 12 with Shreya Rajpal of Guardrails AI: Dive deep into validating LLM outputs.",
+        "title": "Latent Space Podcast 5/15/23 [Summary] Quality LLM Outputs",
+        "twitterCard": null,
+        "image": {
+          "width": 1580,
+          "height": 512,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692495732-screenshot-2023-08-19-at-9-38-27-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190260606",
+      "topics": [
+        "LLM",
+        "Training",
+        "Agents",
+        "Multimodal"
+      ],
+      "title": "Latent Space Podcast 5/8/23 [Summary] - The AI Founder Gene: Being Early, Building Fast, and Believing in Greatness — with Sharif Shameem of Lexica",
+      "slug": "latent-space-podcast-5-8-23-summary-the-ai-founder-gene-being-early-building-fast",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:52:09+01:00",
+      "description": "Ep.11 with Sharif Shameem of Lexica: Dive into the AI founder mindset, uncovering the secrets to pioneering innovation, building game-changing tech, training models, and the intriguing potential of Agents and genomic sequencing. ",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692501984-screenshot-2023-08-19-at-11-24-05-pm.png"
+      },
+      "seo": {
+        "description": "Ep.11 with Sharif Shameem of Lexica: Dive into the AI founder mindset, uncovering the secrets to pioneering innovation.",
+        "title": "Latent Space Pod 5/8/23 [Summary] The AI Founder Gene",
+        "twitterCard": null,
+        "image": {
+          "width": 1606,
+          "height": 550,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692501984-screenshot-2023-08-19-at-11-24-05-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190260640",
+      "topics": [
+        "Summary",
+        "Open Source",
+        "LLM"
+      ],
+      "title": "Latent Space Podcast 5/5/23 [Summary] - No Moat: Closed AI gets its Open Source wakeup call — ft. Simon Willison",
+      "slug": "latent-space-podcast-5-5-23-summary-no-moat-closed-ai-gets-its-open-source-wakeup",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:49:18+01:00",
+      "description": "Explore 'No Moat: Closed AI's Open Source Awakening' with Simon Willison. Dive into leaked Google Moat memo insights, Google Brain Drain, and Python's speed boost with Mojo.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692566921-screenshot-2023-08-20-at-5-25-53-pm.png"
+      },
+      "seo": {
+        "description": "Explore 'No Moat: Closed AI's Open Source Awakening' with Simon Willison. Dive into leaked Google Moat memo insights.",
+        "title": "Latent Space Podcast 5/5/23 [Summary] - No Moat",
+        "twitterCard": null,
+        "image": {
+          "width": 1602,
+          "height": 532,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692566921-screenshot-2023-08-20-at-5-25-53-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190260671",
+      "topics": [
+        "LLM",
+        "Code",
+        "Summary"
+      ],
+      "title": "Latent Space Podcast 5/3/23 [Summary] - Training a SOTA Code LLM in 1 week and Quantifying the Vibes — with Reza Shabani of Replit",
+      "slug": "latent-space-podcast-5-3-23-summary-training-a-sota-code-llm-in-1-week-and-quanti",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:46:08+01:00",
+      "description": "Ep. 10 with Reza Shabani: Dive deep into the rapid training of a state-of-the-art Code LLM, explore Replit Ghostwriter's future, and journey from Finance to AI. Discover the transition from Kaplan to Chinchilla and more!",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692584998-screenshot-2023-08-20-at-10-17-26-pm.png"
+      },
+      "seo": {
+        "description": "Ep. 10 with Reza Shabani: Dive deep into the rapid training of a state-of-the-art Code LLM!",
+        "title": "Latent Space Pod 5/3/23 [Summary] - SOTA Code LLM",
+        "twitterCard": null,
+        "image": {
+          "width": 1566,
+          "height": 530,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692584998-screenshot-2023-08-20-at-10-17-26-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190629271",
+      "topics": [
+        "LLM",
+        "Small Models",
+        "Summary"
+      ],
+      "title": "Latent Space Podcast 4/28/23 [Summary] - Mapping the future of *truly* Open Models and Training Dolly for $30 — with Mike Conover of Databricks",
+      "slug": "latent-space-podcast-4-28-23-summary-mapping-the-future-of-truly-open-models-and",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:33:12+01:00",
+      "description": "Explore the future of open models with Mike Conover of Databricks. Dive deep into Dolly's creation, its transition from 1.0 to 2.0, & the influences behind its development. Ep.9 touches on model infrastructure, Databricks' vision, & more. #AI #OpenModels #Dolly",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1694038707-screenshot-2023-09-06-at-3-12-24-pm.png"
+      },
+      "seo": {
+        "description": "Ep.9 touches on model infrastructure, Databricks' vision, & more. #AI #OpenModels #Dolly",
+        "title": "Latent Space Pod 4/28/23 [Summary] - Mike of Databricks",
+        "twitterCard": null,
+        "image": {
+          "width": 1572,
+          "height": 628,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1694038707-screenshot-2023-09-06-at-3-12-24-pm.png"
+        }
+      }
+    },
+    {
+      "id": "191164291",
+      "topics": [
+        "LLM",
+        "Enterprise",
+        "Summary"
+      ],
+      "title": "Latent Space Podcast 4/21/23 [Summary] - AI-powered Search for the Enterprise — with Deedy Das of Glean",
+      "slug": "latent-space-podcast-4-21-23-summary-ai-powered-search-for-the-enterprise-with",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:31:31+01:00",
+      "description": "Ep.8: Dive into AI in enterprise search with Deedy Das of Glean. Unpack challenges in creating an AI search giant, Google vs ChatGPT comparisons, AI infrastructure intricacies, spotting AI-generated text, and why businesses need more than just Document QA.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1694134074-screenshot-2023-09-07-at-5-43-48-pm.png"
+      },
+      "seo": {
+        "description": "Ep.8: Dive into AI in enterprise search with Deedy Das of Glean. Unpack challenges in creating an AI search giant, Google vs ChatGPT ...",
+        "title": "Latent Space Podcast 4/21/23 [Summary] - with Deedy Das ",
+        "twitterCard": null,
+        "image": {
+          "width": 1608,
+          "height": 530,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1694134074-screenshot-2023-09-07-at-5-43-48-pm.png"
+        }
+      }
+    }
+  ],
+  "blogContent": {
+    "id": "190260577",
+    "topics": [
+      "LLM",
+      "Small Models"
+    ],
+    "title": "Latent Space Podcast 5/20/23 [Summary] - MPT-7B and The Beginning of Context=Infinity — with Jonathan Frankle and Abhinav Venigalla of MosaicML",
+    "slug": "latent-space-podcast-5-20-23-summary-mpt-7b-and-the-beginning-of-context-infinity",
+    "authorName": "Prof. Otto Nomos",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+    },
+    "_publishedAt": "2023-10-05T08:57:33+01:00",
+    "description": "Dive into MosaicML's 9-day, $200k \"llongboi\" MPT-7B training, data prep insights, & the rise of open AI models with experts Frankle & Venigalla.",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1692409795-screenshot-2023-08-18-at-9-49-21-pm.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Original Link: "
+                    },
+                    {
+                      "url": "https://www.latent.space/p/mosaic-mpt-7b#details",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "MPT-7B and The Beginning of Context=Infinity — with Jonathan Frankle and Abhinav Venigalla of MosaicML"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Summary"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "In an episode of the Latent Space podcast, Alessio and co-host Swyx welcome guests Jonathan and Abhinav (Abhi) from Mosaic ML."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Key Takeaways:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Introductions"
+                            },
+                            {
+                              "type": "span",
+                              "value": ":"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "list",
+                          "style": "bulleted",
+                          "children": [
+                            {
+                              "type": "listItem",
+                              "children": [
+                                {
+                                  "type": "paragraph",
+                                  "children": [
+                                    {
+                                      "type": "span",
+                                      "value": "Jonathan, a former student of Princeton and MIT, made significant contributions with his research on the \"lottery ticket hypothesis\" in 2018. He delayed his PhD defense for two years due to commitments with Mosaic and has been appointed as an assistant professor at Harvard."
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "listItem",
+                              "children": [
+                                {
+                                  "type": "paragraph",
+                                  "children": [
+                                    {
+                                      "type": "span",
+                                      "value": "Abhinav, an MIT graduate and former researcher at Cerebras, now works with Mosaic. He mentions Cerebras' innovative approach to use an entire wafer for computing, introducing a wafer-scale computing system for training models."
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Mosaic's Journey"
+                            },
+                            {
+                              "type": "span",
+                              "value": ":"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "list",
+                          "style": "bulleted",
+                          "children": [
+                            {
+                              "type": "listItem",
+                              "children": [
+                                {
+                                  "type": "paragraph",
+                                  "children": [
+                                    {
+                                      "type": "span",
+                                      "value": "Mosaic ventured into building its own model, the MPT-7B, after profiling various models and realizing training costs could be considerably lowered. Mosaic's focus is not on a single standout model but on empowering clients to create their own optimized models using Mosaic’s tools."
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Training and Model Creation"
+                            },
+                            {
+                              "type": "span",
+                              "value": ":"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "list",
+                          "style": "bulleted",
+                          "children": [
+                            {
+                              "type": "listItem",
+                              "children": [
+                                {
+                                  "type": "paragraph",
+                                  "children": [
+                                    {
+                                      "type": "span",
+                                      "value": "Mosaic initiated its MPT-7B project as a base model, inspired by LLaMA 7B, trained on a trillion tokens. They over-trained the model intentionally to ensure it was effective for inference. Abhinav mentions a term \"chinchilla laws\" which dictate efficient compute spend, and this was one principle guiding their training decisions."
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Data Choices"
+                            },
+                            {
+                              "type": "span",
+                              "value": ":"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "list",
+                          "style": "bulleted",
+                          "children": [
+                            {
+                              "type": "listItem",
+                              "children": [
+                                {
+                                  "type": "paragraph",
+                                  "children": [
+                                    {
+                                      "type": "span",
+                                      "value": "The duo discussed the challenge of determining the right balance between quality and quantity of data for model training. Repetition of high-quality data might be as effective, if not more so, than a larger volume of diverse, lower-quality data."
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "screenshot-2023-08-18-at-9-49-21-pm",
+            "height": 556,
+            "width": 1568,
+            "filename": "screenshot-2023-08-18-at-9-49-21-pm.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692409795-screenshot-2023-08-18-at-9-49-21-pm.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Deciphering the Ingredients for Optimal Language Models: Data Mixes, Evaluations, and Technical Innovations"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Discussion Topic: Mix of Data Sets for Large Language Models (LLMs)"
+                    },
+                    {
+                      "type": "span",
+                      "value": " "
+                    },
+                    {
+                      "type": "span",
+                      "marks": [
+                        "emphasis"
+                      ],
+                      "value": "Swyx"
+                    },
+                    {
+                      "type": "span",
+                      "value": " asks about the essential question of what mix of data sets should be used for training LLMs. "
+                    },
+                    {
+                      "type": "span",
+                      "marks": [
+                        "emphasis"
+                      ],
+                      "value": "Jonathan"
+                    },
+                    {
+                      "type": "span",
+                      "value": " shares his experience consulting with law students from Georgetown Law on the optimal data mix. Some considerations include:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "The volume of English text."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Multilingual data."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "The inclusion of code in the dataset."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "The value of using reputable sources like Wikipedia. He further elaborates on different data sets, including c4 and mc4, discussing their unexpected performances and preprocessing anomalies. Jonathan emphasizes the importance of diverse data for different user purposes and the challenges in model evaluation."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Evaluation Challenges for LLMs"
+                    },
+                    {
+                      "type": "span",
+                      "value": " "
+                    },
+                    {
+                      "type": "span",
+                      "marks": [
+                        "emphasis"
+                      ],
+                      "value": "Swyx"
+                    },
+                    {
+                      "type": "span",
+                      "value": " mentions benchmarks like MMLU and Big Bench. "
+                    },
+                    {
+                      "type": "span",
+                      "marks": [
+                        "emphasis"
+                      ],
+                      "value": "Jonathan"
+                    },
+                    {
+                      "type": "span",
+                      "value": " notes the difficulty in evaluating models since they are primarily used for open-ended generation, not multiple-choice questions. Existing metrics don't capture what users expect from the models. "
+                    },
+                    {
+                      "type": "span",
+                      "marks": [
+                        "emphasis"
+                      ],
+                      "value": "Abhinav"
+                    },
+                    {
+                      "type": "span",
+                      "value": " highlights challenges related to the scale of models, evaluation metrics diversity, and the variance in user purposes."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Flash Attention"
+                    },
+                    {
+                      "type": "span",
+                      "value": " "
+                    },
+                    {
+                      "type": "span",
+                      "marks": [
+                        "emphasis"
+                      ],
+                      "value": "Abhinav"
+                    },
+                    {
+                      "type": "span",
+                      "value": " introduces flash attention as a faster implementation of full attention developed by Stanford's Hazy Research, providing speed improvements during training and inference. This implementation is unique compared to other models available on Hugging Face."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Alibi Position Encodings"
+                    },
+                    {
+                      "type": "span",
+                      "value": " "
+                    },
+                    {
+                      "type": "span",
+                      "marks": [
+                        "emphasis"
+                      ],
+                      "value": "Abhinav"
+                    },
+                    {
+                      "type": "span",
+                      "value": " explains the Alibi position encoding, which eliminates the need for positional embeddings in the model, allowing models to handle longer context lengths more stably. It works by adding a bias to the attention map, which can be stretched during inference for longer positions. "
+                    },
+                    {
+                      "type": "span",
+                      "marks": [
+                        "emphasis"
+                      ],
+                      "value": "Jonathan"
+                    },
+                    {
+                      "type": "span",
+                      "value": " points out that with enough memory, the context length could technically be infinite, and they chose 84k as the practical longest length."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "The discussion also touched upon other topics like the choice of evaluation metrics, the emergence phenomenon, and training stabilities."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "abls13-img1",
+            "height": 956,
+            "width": 956,
+            "filename": "abls13-img1.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692415990-abls13-img1.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Fine-Tuning for Creative Outputs & Open Source Ethical Dilemmas"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Swyx and Jonathan discuss the nuances of fine-tuning AI models for creative tasks. Alex had once fine-tuned a model on books to achieve a story writer, emphasizing the significance of feedback in fine-tuning. Swyx draws parallels with computer vision, hinting at potential applications in the language domain, despite some strategies not always translating well from vision to text. Alessio introduces the complications around redistributing content, and the duo further dives into licensing challenges with Jonathan emphasizing the unforeseen issues surrounding AI-generated content and the implications of using open-source licenses in ways they weren't originally intended for. Swyx raises the topic of what's considered \"fair use\" in training models, while Jonathan encourages a community-driven decision on comfort levels in using AI outputs. The conversation shifts to technical details with Abhinav, as they discuss training stability enhancement. Mosaic's solution offers stability improvements to mitigate loss spikes during training. Both Jonathan and Abhinav emphasize the significance of the infrastructure, noting challenges and breakthroughs they faced, particularly with hardware failures during model training. The segment ends with a comparison between CPU and GPU failure management."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "abls13-img2",
+            "height": 956,
+            "width": 956,
+            "filename": "abls13-img2.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692416022-abls13-img2.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Data Readiness & Training Preparation"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Synchronous Data Pluralism:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " The process where every GP works in sync and averages their gradients. The aim is determinism, the ability to replicate a run perfectly."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Inference, Training, and Composer Products:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " The starting point for many customers, evolving from the traditional LOP stack. There are two main uses: using Mosaic's checkpoints or starting from Mosaic's configuration."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Data Preparedness:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " Abhinav emphasizes the importance of having proper evaluation metrics and cleaned data before training models. The goal is predictability in outcomes before significant financial investments are made."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Dynamic Real-time Model Evaluation"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Evaluation Techniques:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " Discussion on the significance of various evaluation metrics, such as human eval and vibe-based evaluation. Jonathan emphasizes the importance of real-world prompts for evaluating model performance."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Live Evaluations:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " LLM Foundry provides tools for model evaluation, boasting a fast framework compatible with multiple GPUs. It allows real-time monitoring of model training."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Open Science for Affordable AI Research"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Cost and Efficiency:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " The high cost of training has limited experiments in the past. Mosaic's objective is to reduce costs to enable more experiments and thus better insights."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Value of Openness:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " Mosaic emphasizes the importance of being open with the community. They believe in sharing insights as their primary aim is to help clients train better models and provide superior infrastructure."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "abls13-img3",
+            "height": 956,
+            "width": 956,
+            "filename": "abls13-img3.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692416037-abls13-img3.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Balancing Open Approaches and the Dynamic Journey of Mosaic in AI Evolution"
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 3,
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "The Open Approach"
+                    },
+                    {
+                      "type": "span",
+                      "value": ":"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Alessio"
+                            },
+                            {
+                              "type": "span",
+                              "value": " questions the requirements and feasibility of the open approach, mentioning GPT-4 and its state-of-the-art capabilities. He seeks insights on whether current methods will suffice or if more advancements are needed."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Jonathan"
+                            },
+                            {
+                              "type": "span",
+                              "value": " believes in the coexistence of different technologies, using Linux and Windows as an analogy. He highlights the importance of having domain-specific models and expresses concern over the diminishing open-source ecosystem. He fears the stagnation of innovation due to reduced openness and shares that the collaborative exchange of ideas was crucial for technological progress."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "The Future of Mosaic"
+                    },
+                    {
+                      "type": "span",
+                      "value": ":"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Swyx"
+                            },
+                            {
+                              "type": "span",
+                              "value": " brings up the evolution and plans of Mosaic, remarking on the company's recent dive into inference despite earlier claims."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Jonathan"
+                            },
+                            {
+                              "type": "span",
+                              "value": " emphasizes the importance of focus for startups, sharing Mosaic's initial reluctance towards inference. Despite that, they ventured into it due to customer demand and business benefits. He recalls Mosaic's vision of efficient training and its realization of the changing needs of inference. He stresses the continuous nature of model training and improvement."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Abhinav"
+                            },
+                            {
+                              "type": "span",
+                              "value": " points out the evolving nature of data and the continuous need to update models accordingly. He notes that the current models aren't the endpoint; they will evolve, improving in various aspects."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Jonathan"
+                            },
+                            {
+                              "type": "span",
+                              "value": " ends by debunking the idea of training as a one-time cost. He cites a stat from Google, illustrating the split between inference and training costs, emphasizing the significant investment in training."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "This transcript sheds light on the evolving world of AI, emphasizing the importance of the open approach, the need for continuous learning and improvement, and the dynamic nature of startups in the tech industry."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "abls13-img4",
+            "height": 956,
+            "width": 956,
+            "filename": "abls13-img4.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692416082-abls13-img4.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "The Evolution of Speed and Efficiency in AI Training"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Swyx"
+                    },
+                    {
+                      "type": "span",
+                      "value": " delves into the topic of efficiency and speed in AI model training, questioning how fast the process can get given the current durations varying from three to 10 days. "
+                    },
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Abhinav"
+                    },
+                    {
+                      "type": "span",
+                      "value": " highlights this year as crucial for training efficiency, emphasizing new hardware like Nvidia's H 100 and the new floating point format, FP8. These innovations significantly reduce training time and costs. The discussion dives into the evolution from 32-bit to 16-bit precision in training, foreseeing FP8 bringing about even greater improvements."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Furthermore, Abhinav touches on Mosaic's advancements using FP8 with H 100s and the architectural applications in the pipeline. By year's end, the cost of training could drop significantly – from 500k to an ambitious 100k for specific models. "
+                    },
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Jonathan"
+                    },
+                    {
+                      "type": "span",
+                      "value": " chimes in, stating that cost reductions for new models can be substantial because they often begin inefficient. As an example, Mosaic reduced costs by 12x for the stable diffusion model due to its newness and inherent inefficiencies."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "On the topic of model contexts, "
+                    },
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Alessio"
+                    },
+                    {
+                      "type": "span",
+                      "value": " brings up the challenge of determining the right number, suggesting customer needs and specific tasks as potential determinants. Jonathan offers a critical view of long contexts and attention methods, emphasizing the importance of firsthand implementation and testing. He raises concerns about relying solely on published papers, indicating that practical results often differ from promises made in research."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Toward the end, the group draws parallels between RAM in computers and context in AI models. "
+                    },
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Swyx"
+                    },
+                    {
+                      "type": "span",
+                      "value": " mentions a comparison made by Andrej Karpathy, suggesting context is the RAM of AI. "
+                    },
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Jonathan"
+                    },
+                    {
+                      "type": "span",
+                      "value": " humorously alludes to Bill Gates' famed statement on RAM and speculates about the future. As AI gets more ambitious, so will the demands on context. Future models might process complex data forms, like images and videos, further intensifying the need for efficient and rapid training."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "abls13-img5",
+            "height": 956,
+            "width": 956,
+            "filename": "abls13-img5.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692416098-abls13-img5.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "The Evolution and Endurance of Transformers in AI"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "During the \"Trends and Transformers\" discussion, Swyx and Jonathan explore the longevity of transformer models in AI, suggesting that, just like Convolutional Neural Networks, they could remain in use for a long time. They delve into the nuances of attention mechanisms, with Jonathan emphasizing the importance of historical model architectures and how challenging it is to find fundamental improvements. He also mentions the significance of demos for their business, as they demonstrate capabilities without giving everything away."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Discussing the open research ethos, Jonathan explains the balance they strike between open work and proprietary customer solutions. Abhinav introduces the topic of model sparsity, pointing out the current lack of hardware to accelerate sparse models, though he acknowledges certain advancements like those from Cereus. The conversation concludes with a discussion about the hardware-software co-evolution: how new architectures need to pair well with emerging hardware, much like how transformers are apt for GPUs, albeit initially designed for TPUs."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "abls11-img5-5",
+            "height": 956,
+            "width": 956,
+            "filename": "abls11-img5-5.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692416160-abls11-img5-5.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Unraveling AI's Unexpected Strides and the Road Ahead"
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 3,
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "AI's Surprising Progress and Future Predictions"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "In a lively discussion, Alessio prompted guests to share their views on AI's trajectory. Jonathan expressed surprise at the swift progress, particularly in models like GPT-3. He admitted to being wrong about the scalability and usefulness of such models. Abhinav was similarly astonished by the rapid adoption and emotional connections users are making with large-scale chatbots. They both reflected on the boundaries of AI, from Abhinav's curiosity about the potential of quantizing models down to analog levels to Jonathan's desire to explore efficient paths to achieve AI capabilities without massive scale. The conversation ended with a call for balance in the AI discourse. Jonathan urged listeners to remain grounded, avoiding hyperbolic fear and embracing the constructive tools AI provides. Abhinav emphasized the importance of open research, championing collaborative oversight for AI's safety and real-world implications. The segment closed with gratitude for keeping AI discussions and advancements open to the public."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "abls13-img5-5",
+            "height": 956,
+            "width": 956,
+            "filename": "abls13-img5-5.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692416183-abls13-img5-5.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Dive into MosaicML's 9-day, $200k \"llongboi\" MPT-7B training, data prep insights, & the rise of open AI models ",
+      "title": "Latent Space Podcast 6/25/23 [Summary] MosaicML",
+      "twitterCard": null,
+      "image": {
+        "width": 1568,
+        "height": 556,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1692409795-screenshot-2023-08-18-at-9-49-21-pm.png"
+      }
+    }
+  },
+  "topics": [
+    "LLM",
+    "Small Models"
+  ]
+}

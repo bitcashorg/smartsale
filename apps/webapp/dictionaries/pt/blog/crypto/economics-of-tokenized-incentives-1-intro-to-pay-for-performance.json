@@ -1,0 +1,478 @@
+{
+  "relatedBlogs": [
+    {
+      "id": "180563939",
+      "topics": [
+        "DAO",
+        "Tokenomics",
+        "Comentário"
+      ],
+      "title": "Um Framework para Design de Governança de Blockchain: O Prysm Group Wheel [Comentário]",
+      "slug": "a-framework-for-blockchain-governance-design-the-prysm-group-wheel-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:19:19+01:00",
+      "description": "Navegue pelas complexidades da governança de blockchain com o Prysm Group Wheel. Seu roteiro para um design eficaz de governança de blockchain.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690861154-cbc11-img1.webp"
+      },
+      "seo": {
+        "title": "Um Framework para Design de Governança de Blockchain [Comentário]",
+        "description": "Navegue pelas complexidades da governança de blockchain com o Prysm Group Wheel. Seu roteiro para um design eficaz de governança de blockchain."
+      }
+    },
+    {
+      "id": "180217169",
+      "topics": [
+        "Tokenomics",
+        "Comentário"
+      ],
+      "title": "Economia de Incentivos Tokenizados 3: O Valor do Token Não Alinhará os Stakeholders [Comentário]",
+      "slug": "economics-of-tokenized-incentives-3-token-value-won-t-align-stakeholders-commenta",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:17:23+01:00",
+      "description": "Descubra as armadilhas de usar o valor do token como métrica de desempenho em plataformas de blockchain. Aprenda a projetar sistemas de incentivos eficazes.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690771457-cbc3-img1.png"
+      },
+      "seo": {
+        "title": "Economia de Incentivos Tokenizados 3 [Comentário]",
+        "description": "Descubra as armadilhas de usar o valor do token como métrica de desempenho em plataformas de blockchain. Aprenda a projetar sistemas de incentivos eficazes."
+      }
+    },
+    {
+      "id": "180217123",
+      "topics": [
+        "Tokenomics",
+        "Comentário"
+      ],
+      "title": "Economia de Incentivos Tokenizados 2: Selecionando Métricas de Desempenho Efetivas [Comentário]",
+      "slug": "economics-of-tokenized-incentives-2-selecting-effective-performance-metrics-comme",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:17:05+01:00",
+      "description": "Descubra o poder das métricas de desempenho em sistemas de pagamento por desempenho de blockchain. Aprenda a alinhar incentivos com os objetivos da plataforma de forma eficaz.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690770918-cbc2-img1.png"
+      },
+      "seo": {
+        "title": "Economia de Incentivos Tokenizados 2 [Comentário]",
+        "description": "Descubra o poder das métricas de desempenho em sistemas de pagamento por desempenho de blockchain. Aprenda a alinhar incentivos com os objetivos da plataforma de forma eficaz."
+      }
+    },
+    {
+      "id": "180563918",
+      "topics": [
+        "Tokenomics",
+        "Comentário",
+        "Captação de Recursos"
+      ],
+      "title": "Tokens: Veículo de Investimento ou Meio de Troca (Não Ambos) [Comentário]",
+      "slug": "tokens-investment-vehicle-or-medium-of-exchange-not-both-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:13:31+01:00",
+      "description": "Explore o duplo papel dos tokens na economia blockchain. Descubra a linha tênue entre veículo de investimento e meio de troca.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690859959-cbc8-img1.png"
+      },
+      "seo": {
+        "title": "Tokens: Investimento ou Meio de Troca [Comentário]",
+        "description": "Explore o duplo papel dos tokens na economia blockchain. Descubra a linha tênue entre veículo de investimento e meio de troca."
+      }
+    },
+    {
+      "id": "180563922",
+      "topics": [
+        "Captação de Recursos",
+        "Tokenomics",
+        "Comentário"
+      ],
+      "title": "ICOs Potencializam Efeitos de Rede [Comentário]",
+      "slug": "icos-leverage-network-effects-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:12:06+01:00",
+      "description": "Descubra como as ICOs aproveitam o poder dos efeitos de rede para impulsionar seu sucesso. ICOs e efeitos de rede, uma dupla dinâmica!",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690860184-cbc9-img1.png"
+      },
+      "seo": {
+        "title": "ICOs Potencializam Efeitos de Rede [Comentário]",
+        "description": "Descubra como as ICOs aproveitam o poder dos efeitos de rede para impulsionar seu sucesso. ICOs e efeitos de rede, uma dupla dinâmica!"
+      }
+    },
+    {
+      "id": "180556595",
+      "topics": [
+        "Captação de Recursos",
+        "Tokenomics",
+        "Comentário"
+      ],
+      "title": "O Efeito Blockchain: Efeitos de Rede sem os Custos do Poder de Mercado [Comentário]",
+      "slug": "the-blockchain-effect-network-effects-without-market-power-costs-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:11:14+01:00",
+      "description": "Explore como o blockchain possibilita efeitos de rede sem as desvantagens do poder de mercado. Descubra o revolucionário Efeito Blockchain.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690855275-cbc4-img1.png"
+      },
+      "seo": {
+        "title": "Efeitos de Rede sem os Custos do Poder de Mercado [Comentário]",
+        "description": "Explore como o blockchain possibilita efeitos de rede sem as desvantagens do poder de mercado. Descubra o revolucionário Efeito Blockchain."
+      }
+    },
+    {
+      "id": "180563931",
+      "topics": [
+        "Tokenomics",
+        "Comentário"
+      ],
+      "title": "Estruturas de Incentivo Blockchain: O que são e por que são importantes [Comentário]",
+      "slug": "blockchain-incentive-structures-what-they-are-and-why-they-matter-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:10:02+01:00",
+      "description": "Entenda o núcleo das estruturas de incentivo blockchain e sua importância para impulsionar o comportamento do usuário e o sucesso da plataforma.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690860807-cbc10-img1.png"
+      },
+      "seo": {
+        "title": "Estruturas de Incentivo Blockchain [Comentário]",
+        "description": "Entenda o núcleo das estruturas de incentivo blockchain e sua importância para impulsionar o comportamento do usuário e o sucesso da plataforma."
+      }
+    },
+    {
+      "id": "167184977",
+      "topics": [
+        "Tokenomics",
+        "DAO",
+        "Captação de Recursos"
+      ],
+      "title": "Revolucionando o Modelo de Equity: Como a Tokenomics está Disruptando o Mundo das Startups",
+      "slug": "revolutionizing-the-equity-model-how-tokenomics-is-disrupting-the-startup-world",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:02:51+01:00",
+      "description": "Desbloqueie o futuro das startups com tokenomics! Explore como esse conceito inovador está remodelando o modelo de equity e revolucionando a paisagem das startups.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1687395688-tb2-img1.png"
+      },
+      "seo": {
+        "title": "Como a Tokenomics está Disruptando o Mundo das Startups",
+        "description": "Explore como esse conceito inovador está remodelando o modelo de equity e revolucionando a paisagem das startups."
+      }
+    },
+    {
+      "id": "167101094",
+      "topics": [
+        "Introdução",
+        "Tokenomics"
+      ],
+      "title": "Tokenomics 101: Liberando o Poder da Criptomoeda!",
+      "slug": "tokenomics-101-unleashing-the-power-of-cryptocurrency",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T08:57:58+01:00",
+      "description": "Descubra o poder da criptomoeda através do Tokenomics 101 - um guia aprofundado para entender a economia por trás dos ativos digitais.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1687391799-tb1-img1.png"
+      },
+      "seo": {
+        "title": "Tokenomics 101: Liberando o Poder da Criptomoeda!",
+        "description": "um guia aprofundado para entender a economia por trás dos ativos digitais."
+      }
+    }
+  ],
+  "blogContent": {
+    "id": "180217082",
+    "topics": [
+      "Tokenomics",
+      "Comentario"
+    ],
+    "title": "Economia dos Incentivos Tokenizados 1: Introducao ao Pagamento por Desempenho [Comentario]",
+    "slug": "economics-of-tokenized-incentives-1-intro-to-pay-for-performance",
+    "authorName": "Crypto Clairity",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+    },
+    "_publishedAt": "2023-10-05T09:15:12+01:00",
+    "description": "Mergulhe nas complexidades dos incentivos de pagamento por desempenho em plataformas blockchain. Aprenda os compromissos e consideracoes de design para sucesso.",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1690770568-cbc1-img1.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Link Original: "
+                    },
+                    {
+                      "url": "https://medium.com/prysmeconomics/economics-of-tokenized-incentives-1-intro-to-pay-for-performance-84e3b9cfffa",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Economia dos Incentivos Tokenizados 1: Introducao ao Pagamento por Desempenho"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Autor: "
+                    },
+                    {
+                      "url": "https://medium.com/@cathybarreraphd?source=post_page-----84e3b9cfffa--------------------------------",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noopener follow"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Cathy Barrera, PhD"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Resumo"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "O pagamento por desempenho e um sistema onde a compensacao financeira e dada com base em metricas de desempenho. E frequentemente usado quando aspectos chave do resultado desejado nao podem ser especificados antecipadamente. Muitas plataformas blockchain, como o Bitcoin, usam esse sistema para incentivar atividades e recursos. No entanto, os beneficios do pagamento por desempenho nao podem ser aproveitados igualmente em todos os contextos, e entender os compromissos e crucial ao projetar uma plataforma."
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Comentario"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Sistemas de pagamento por desempenho, embora eficazes em certos cenarios, requerem um design e implementacao cuidadosos. No contexto de blockchain e cripto, esses sistemas podem incentivar a participacao e contribuicao de recursos, mas tambem introduzem complexidades. Por exemplo, o sistema de pagamento por desempenho do Bitcoin levou a uma corrida armamentista em poder de mineracao, contribuindo para preocupacoes sobre o consumo de energia."
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Percepcoes Praticas"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Entenda o Contexto"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Antes de implementar um sistema de pagamento por desempenho, entenda o contexto e as necessidades especificas da sua plataforma. Nem todos os contextos sao adequados para esse tipo de sistema de incentivo."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Considere os Compromissos"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Sistemas de pagamento por desempenho vem com riscos e potenciais desvantagens. Esteja ciente desses compromissos e considere-os no seu processo de tomada de decisao."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Projete com Cuidado"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": O design do sistema de incentivo pode impactar grandemente o comportamento dos participantes e o sucesso geral da plataforma. Considere fatores como as metricas de desempenho usadas e o tamanho das recompensas."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Mantenha-se Flexivel"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Esteja preparado para ajustar seu sistema de incentivo conforme necessario. Monitore os resultados e faca mudancas se o sistema nao estiver produzindo os resultados desejados."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Comunique-se Claramente"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Garanta que os participantes entendam o sistema de incentivo e como podem se beneficiar dele. Uma comunicacao clara pode ajudar a incentivar a participacao e garantir que o sistema seja usado efetivamente."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "cbc1-img1",
+            "height": 862,
+            "width": 862,
+            "filename": "cbc1-img1.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1690770568-cbc1-img1.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Mergulhe nas complexidades dos incentivos de pagamento por desempenho em plataformas blockchain. Aprenda os compromissos e consideracoes de design para sucesso",
+      "title": "Economia dos Incentivos Tokenizados 1 [Comentario]",
+      "twitterCard": null,
+      "image": {
+        "width": 862,
+        "height": 862,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1690770568-cbc1-img1.png"
+      }
+    }
+  },
+  "topics": [
+    "Tokenomics",
+    "Commentary"
+  ]
+}

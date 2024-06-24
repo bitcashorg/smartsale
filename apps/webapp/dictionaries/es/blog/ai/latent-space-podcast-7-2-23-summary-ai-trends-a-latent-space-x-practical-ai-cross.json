@@ -1,0 +1,1133 @@
+{
+  "relatedBlogs": [
+    {
+      "id": "190259319",
+      "topics": [
+        "Resumen",
+        "LLM",
+        "Entrenamiento"
+      ],
+      "title": "Podcast de Latent Space 16/8/23 [Resumen] - Las Matemáticas del Entrenamiento de LLMs — con Quentin Anthony de Eleuther AI",
+      "slug": "latent-space-podcast-8-16-23-summary-the-mathematics-of-training-llms-with-que",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:19:45+01:00",
+      "description": "Explora las matemáticas detrás del entrenamiento de LLMs con Quentin Anthony de Eleuther AI. Sumérgete en el artículo Transformers Math 101 y domina las técnicas de entrenamiento distribuido para un rendimiento máximo de GPU.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692324088-screenshot-2023-08-17-at-9-59-17-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space 16/8/23 [Resumen] Matemáticas del Entrenamiento de LLMs",
+        "description": "Sumérgete en el artículo Transformers Math 101 y domina las técnicas de entrenamiento distribuido para un rendimiento máximo de GPU."
+      }
+    },
+    {
+      "id": "190259129",
+      "topics": [
+        "LLM",
+        "Hardware",
+        "Resumen",
+        "Edge"
+      ],
+      "title": "Podcast de Latent Space 10/8/23 [Resumen]: LLMs en todas partes: Ejecutando modelos de 70B en navegadores y iPhones usando MLC — con Tianqi Chen de CMU / OctoML",
+      "slug": "latent-space-podcast-8-10-23-summary-llms-everywhere-running-70b-models-in-browse",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:18:37+01:00",
+      "description": "Explora la magia de MLC con Tianqi Chen: desplegando modelos de 70B en navegadores y iPhones. Sumérgete en XGBoost, la creación de TVM y el futuro de los despliegues universales de IA.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1691894611-screenshot-2023-08-12-at-10-42-43-pm.png"
+      },
+      "seo": {
+        "title": "Latent Space 10/8/23 [Resumen]: LLMs en todas partes",
+        "description": "Explora el despliegue de modelos de 70B en navegadores y iPhones. Sumérgete en XGBoost, la creación de TVM y el futuro de los despliegues universales de IA."
+      }
+    },
+    {
+      "id": "190259087",
+      "topics": [
+        "Resumen",
+        "LLM",
+        "Código",
+        "Código Abierto",
+        "Modelos Pequeños"
+      ],
+      "title": "Podcast de Latent Space 4/8/23 [Resumen] Latent Space x AI Breakdown crossover pod!",
+      "slug": "latent-space-podcast-8-4-23-summary-latent-space-x-ai-breakdown-crossover-pod",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:16:33+01:00",
+      "description": "Únete a AI Breakdown y Latent Space para el resumen de tecnología de IA del verano: Sumérgete en GPT4.5, Llama 2, herramientas de IA, el creciente ingeniero de IA y más!",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1691539617-screenshot-2023-08-08-at-8-02-52-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space 4/8/23 [Resumen] crossover de AI Breakdown",
+        "description": "Sumérgete en GPT4.5, Llama 2, herramientas de IA, el creciente ingeniero de IA y más!"
+      }
+    },
+    {
+      "id": "190259111",
+      "topics": [
+        "Resumen",
+        "Transformers",
+        "Entrenamiento",
+        "Código Abierto"
+      ],
+      "title": "Podcast de Latent Space 26/7/23 [Resumen] FlashAttention 2: haciendo los Transformers un 800% más rápidos - Tri Dao de Together AI",
+      "slug": "latent-space-podcast-7-26-23-summary-flashattention-2-making-transformers-800-fas",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:14:13+01:00",
+      "description": "Descubre cómo FlashAttention revolucionó la velocidad de la IA con Tri Dao, mientras revela el poder de FlashAttention 2, se sumerge en el Hazy Lab de Stanford y ofrece perspectivas futuras sobre la IA.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1691543194-screenshot-2023-08-08-at-8-43-59-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space 26/7/23 [Resumen] FlashAttention 2",
+        "description": "Descubre cómo FlashAttention revolucionó la velocidad de la IA con Tri Dao, mientras revela el poder de FlashAttention 2"
+      }
+    },
+    {
+      "id": "190259172",
+      "topics": [
+        "Resumen",
+        "LLM",
+        "Código Abierto",
+        "Modelos Pequeños"
+      ],
+      "title": "Podcast de Latent Space 19/7/23 [Resumen] - Llama 2: El Nuevo SOTA de LLM Abierto (con Nathan Lambert, Matt Bornstein, Anton Troynikov, Russell Kaplan, Whole Mars Catalog y otros)",
+      "slug": "latent-space-podcast-7-19-23-summary-llama-2-the-new-open-llm-sota-ft-nathan-lamb",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:12:38+01:00",
+      "description": "Explora Llama 2, el último avance en IA con expertos como Nathan Lambert, Matt Bornstein y más. Sumérgete en conjuntos de datos, benchmarks y predicciones de IA. ¡Perspectivas y drama de Llama te esperan en este podcast top!",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1691968295-screenshot-2023-08-13-at-7-11-06-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space 19/7/23 [Resumen] - Llama 2",
+        "description": "Sumérgete en conjuntos de datos, benchmarks y predicciones de IA. ¡Perspectivas y drama de Llama te esperan en este podcast top!"
+      }
+    },
+    {
+      "id": "190259191",
+      "topics": [
+        "Resumen",
+        "Código",
+        "LLM"
+      ],
+      "title": "Podcast de Latent Space 10/7/23 [Resumen] - Intérprete de Código == GPT 4.5 (con Simon Willison, Alex Volkov, Aravind Srinivas, Alex Graveley y otros)",
+      "slug": "latent-space-podcast-7-10-23-summary-code-interpreter-gpt-4-5-w-simon-willison-al",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:09:26+01:00",
+      "description": "Explora el Intérprete de Código de ChatGPT: un cambio de juego en la IA. Sumérgete en su salto de capacidades de 1000x con Simon, Alex y los principales expertos en IA. #InferenciaAumentadaPorCódigo #GPT4_5",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692048911-screenshot-2023-08-14-at-3-34-05-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space [Resumen] Intérprete de Código = GPT 4.5",
+        "description": "Explora el Intérprete de Código de ChatGPT: un cambio de juego en la IA. Sumérgete en su salto de capacidades de 1000x con Simon, Alex y los principales expertos en IA."
+      }
+    },
+    {
+      "id": "190259238",
+      "topics": [
+        "Hardware",
+        "LLM",
+        "Resumen"
+      ],
+      "title": "Podcast de Latent Space 20/6/23 [Resumen] - Commoditizando el Petaflop — con George Hotz de tiny corp",
+      "slug": "latent-space-podcast-6-20-23-summary-commoditizing-the-petaflop-with-george-ho",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:07:15+01:00",
+      "description": "¡George Hotz de tiny corp desafía a Nvidia y Google! Sumérgete en el mundo de las colaboraciones con AMD, conocimientos sobre ggml, Mojo, Elon y GPT-4, además de un vistazo a la Novia de IA.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692154615-screenshot-2023-08-15-at-10-55-40-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space 20/6/23 [Resumen] - George Hotz",
+        "description": "¡George Hotz de tiny corp desafía a Nvidia y Google! Colaboraciones con AMD, conocimientos sobre ggml, Mojo, Elon y GPT-4, además de un vistazo a la Novia de IA."
+      }
+    },
+    {
+      "id": "190259294",
+      "topics": [
+        "LLM",
+        "Funciones",
+        "Resumen"
+      ],
+      "title": "Podcast de Latent Space 14/6/23 [Resumen] - Pod de Emergencia: Nueva API de Funciones de OpenAI, Reducción de Precio del 75%, 4x Longitud de Contexto (con Alex Volkov, Simon Willison, Riley Goodside, Joshua Lochner, Stefania Druga, Eric Elliott, Mayo Oshin y otros)",
+      "slug": "latent-space-podcast-6-14-23-summary-emergency-pod-openai-s-new-functions-api-75",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:05:04+01:00",
+      "description": "Explora las actualizaciones de OpenAI de junio de 2023 con los principales ingenieros de IA de Scale, Microsoft, Pinecone y Huggingface. Sumérgete en los paradigmas de Código x LLM y descubre los Agentes de Función Recursiva.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692221668-screenshot-2023-08-16-at-5-32-29-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space 20/6/23 [Resumen] - Pod de Emergencia",
+        "description": "Explora las actualizaciones de OpenAI de junio de 2023 con los principales ingenieros de IA de Scale, Microsoft, Pinecone y Huggingface."
+      }
+    },
+    {
+      "id": "190259333",
+      "topics": [
+        "LLM",
+        "Resumen",
+        "UX"
+      ],
+      "title": "Podcast de Latent Space 8/6/23 [Resumen] - De RLHF a RLHB: El Caso de Aprender del Comportamiento Humano - con Jeffrey Wang y Joe Reeve de Amplitude",
+      "slug": "latent-space-podcast-6-8-23-summary-from-rlhf-to-rlhb-the-case-for-learning-from",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:02:33+01:00",
+      "description": "Explora la IA y la analítica con Jeffrey Wang y Joe Reeve en Latent Space Live! Sumérgete en por qué la IA valora la Analítica y el poder de los datos de comportamiento de primera mano.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692386432-screenshot-2023-08-18-at-3-17-04-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space 8/6/23 [Resumen] - De RLHF a RLHB",
+        "description": "Explora la IA y la analítica con Jeffrey Wang y Joe Reeve en Latent Space Live! Sumérgete en por qué la IA valora la Analítica y el poder de los datos de comportamiento de primera mano."
+      }
+    },
+    {
+      "id": "190260528",
+      "topics": [
+        "Resumen",
+        "LLM",
+        "UX"
+      ],
+      "title": "Podcast de Latent Space 1/6/23 [Resumen] - Construyendo el Scenius de IA × UX — con Linus Lee de Notion AI",
+      "slug": "latent-space-podcast-6-1-23-summary-building-the-ai-x-ux-scenius-with-linus-le",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:00:12+01:00",
+      "description": "Explora el enfoque transformador de Notion AI hacia la IA y la UX. Sumérgete en el futuro de los espacios de trabajo aumentados por IA, el valor más allá de las interfaces de chat y conocimientos sobre el trabajo del conocimiento efectivo. ¡Incluye resumen del meetup AI×UX NYC!",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692390655-screenshot-2023-08-18-at-4-28-51-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space 1/6/23 [Resumen] - Scenius de IA × UX",
+        "description": "Explora el enfoque transformador de Notion AI hacia la IA y la UX."
+      }
+    },
+    {
+      "id": "190260557",
+      "topics": [
+        "Resumen",
+        "Código",
+        "LLM",
+        "Agentes"
+      ],
+      "title": "Podcast de Latent Space 25/5/23 [Resumen] - Depurando Internet con agentes de IA – con Itamar Friedman de Codium AI y AutoGPT",
+      "slug": "latent-space-podcast-5-25-23-summary-debugging-the-internet-with-ai-agents-with",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:58:27+01:00",
+      "description": "Explora el futuro de la IA con Itamar Friedman de Codium AI en 'Depurando Internet'. Sumérgete en los agentes 'Extreme DRY', la rápida sincronización de especificaciones y pruebas, y el equilibrio entre código y pruebas. Además, conocimientos de Toran y una mirada exclusiva al roadmap de AutoGPT!",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692397413-screenshot-2023-08-18-at-6-10-09-pm.png"
+      },
+      "seo": {
+        "title": "Pod de Latent Space 25/5/23 [Resumen] Depurando Internet",
+        "description": "Sumérgete en los agentes 'Extreme DRY', la rápida sincronización de especificaciones y pruebas, y el equilibrio entre código y pruebas."
+      }
+    },
+    {
+      "id": "190260640",
+      "topics": [
+        "Resumen",
+        "Código Abierto",
+        "LLM"
+      ],
+      "title": "Podcast de Latent Space 5/5/23 [Resumen] - No Moat: La IA Cerrada recibe su llamada de atención de Código Abierto — con Simon Willison",
+      "slug": "latent-space-podcast-5-5-23-summary-no-moat-closed-ai-gets-its-open-source-wakeup",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:49:18+01:00",
+      "description": "Explora 'No Moat: El Despertar de Código Abierto de la IA Cerrada' con Simon Willison. Sumérgete en conocimientos del memo filtrado de Google Moat, la fuga de cerebros de Google y el aumento de velocidad de Python con Mojo.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692566921-screenshot-2023-08-20-at-5-25-53-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space 5/5/23 [Resumen] - No Moat",
+        "description": "Explora 'No Moat: El Despertar de Código Abierto de la IA Cerrada' con Simon Willison. Sumérgete en conocimientos del memo filtrado de Google Moat."
+      }
+    },
+    {
+      "id": "190260671",
+      "topics": [
+        "LLM",
+        "Código",
+        "Resumen"
+      ],
+      "title": "Podcast de Latent Space 3/5/23 [Resumen] - Entrenando un LLM de Código SOTA en 1 semana y Cuantificando las Vibras — con Reza Shabani de Replit",
+      "slug": "latent-space-podcast-5-3-23-summary-training-a-sota-code-llm-in-1-week-and-quanti",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:46:08+01:00",
+      "description": "Ep. 10 con Reza Shabani: Sumérgete en el rápido entrenamiento de un LLM de Código de última generación, explora el futuro de Replit Ghostwriter y el viaje de Finanzas a IA. ¡Descubre la transición de Kaplan a Chinchilla y más!",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692584998-screenshot-2023-08-20-at-10-17-26-pm.png"
+      },
+      "seo": {
+        "title": "Pod de Latent Space 3/5/23 [Resumen] - LLM de Código SOTA",
+        "description": "Ep. 10 con Reza Shabani: Sumérgete en el rápido entrenamiento de un LLM de Código de última generación!"
+      }
+    },
+    {
+      "id": "190629271",
+      "topics": [
+        "LLM",
+        "Modelos Pequeños",
+        "Resumen"
+      ],
+      "title": "Podcast de Latent Space 28/4/23 [Resumen] - Mapeando el futuro de los Modelos *realmente* Abiertos y Entrenando a Dolly por $30 — con Mike Conover de Databricks",
+      "slug": "latent-space-podcast-4-28-23-summary-mapping-the-future-of-truly-open-models-and",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:33:12+01:00",
+      "description": "Explora el futuro de los modelos abiertos con Mike Conover de Databricks. Sumérgete en la creación de Dolly, su transición de 1.0 a 2.0 y las influencias detrás de su desarrollo. El Ep.9 toca la infraestructura de modelos, la visión de Databricks y más. #IA #ModelosAbiertos #Dolly",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1694038707-screenshot-2023-09-06-at-3-12-24-pm.png"
+      },
+      "seo": {
+        "title": "Pod de Latent Space 28/4/23 [Resumen] - Mike de Databricks",
+        "description": "El Ep.9 toca la infraestructura de modelos, la visión de Databricks y más. #IA #ModelosAbiertos #Dolly"
+      }
+    },
+    {
+      "id": "191164291",
+      "topics": [
+        "LLM",
+        "Empresa",
+        "Resumen"
+      ],
+      "title": "Podcast de Latent Space 21/4/23 [Resumen] - Búsqueda impulsada por IA para la Empresa — con Deedy Das de Glean",
+      "slug": "latent-space-podcast-4-21-23-summary-ai-powered-search-for-the-enterprise-with",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:31:31+01:00",
+      "description": "Ep.8: Sumérgete en la IA en la búsqueda empresarial con Deedy Das de Glean. Desentraña los desafíos en la creación de un gigante de búsqueda de IA, comparaciones entre Google y ChatGPT, las complejidades de la infraestructura de IA, la detección de texto generado por IA y por qué las empresas necesitan más que solo QA de Documentos.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1694134074-screenshot-2023-09-07-at-5-43-48-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space 21/4/23 [Resumen] - con Deedy Das",
+        "description": "Ep.8: Sumérgete en la IA en la búsqueda empresarial con Deedy Das de Glean. Desentraña los desafíos en la creación de un gigante de búsqueda de IA, comparaciones entre Google y ChatGPT ..."
+      }
+    },
+    {
+      "id": "191165673",
+      "topics": [
+        "Resumen",
+        "Visión"
+      ],
+      "title": "Podcast de Latent Space 13/4/23 [Resumen] - Modelo Segment Anything y los Problemas Difíciles de la Visión por Computadora — con Joseph Nelson de Roboflow",
+      "slug": "latent-space-podcast-4-13-23-summary-segment-anything-model-and-the-hard-problems",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:30:03+01:00",
+      "description": "Explora el Ep.7 con Joseph Nelson sobre el Modelo Segment Anything de Meta. Sumérgete en el futuro de la Visión por Computadora, la importancia del OCR, la Segmentación de Imágenes y más. #Roboflow #IA",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1694150379-screenshot-2023-09-07-at-10-15-52-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space 13/4/23 [Resumen] - Segment Anything",
+        "description": "Sumérgete en el futuro de la Visión por Computadora, la importancia del OCR, la Segmentación de Imágenes y más. #Roboflow #IA"
+      }
+    }
+  ],
+  "blogContent": {
+    "id": "190259216",
+    "topics": [
+      "Resumen",
+      "Código Abierto"
+    ],
+    "title": "Podcast de Latent Space 7/2/23 [Resumen] Tendencias de IA: ¡un podcast cruzado de Latent Space x Practical AI!",
+    "slug": "latent-space-podcast-7-2-23-summary-ai-trends-a-latent-space-x-practical-ai-cross",
+    "authorName": "Prof. Otto Nomos",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+    },
+    "_publishedAt": "2023-10-05T09:08:36+01:00",
+    "description": "Explora la fusión de Practical AI y Latent Space mientras profundizan en las principales tendencias de IA de 2023, reflexionan sobre episodios destacados y comparten ideas sobre cómo navegar la evolución de la IA.",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1692146916-screenshot-2023-08-15-at-5-20-38-pm.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Enlace Original: "
+                    },
+                    {
+                      "url": "https://www.latent.space/p/practical-ai-trends#details",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "[Practical AI] Tendencias de IA: ¡un podcast cruzado de Latent Space x Practical AI!"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Resumen"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "En un episodio cruzado con el podcast de Latent Space, el anfitrión Daniel Whitenack de Practical FM se unió a los coanfitriones Alessio Fanelli y Shawn Wang. La discusión comenzó con presentaciones, donde Whitenack destacó su experiencia en física computacional, su tiempo como científico de datos en SIL International y su reciente aventura con Prediction Guard. El podcast abordó el auge de la IA, su comunidad global y las implicaciones prácticas y usos de la tecnología de IA en la vida cotidiana."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Daniel también arrojó luz sobre episodios de Practical AI, compartiendo favoritos personales y éxitos de la audiencia. Episodios como \"Fully Connected\" son particularmente esclarecedores, ya que profundizan en temas de IA como ChatGPT, modelos de difusión y AlphaFold. Otro punto destacado fue la serie \"IA para África\", que enfatizó la importancia de que la IA sea inclusiva y se adapte a varios casos de uso globales."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "A lo largo de la conversación, hubo un tema constante de centrarse en los usos prácticos y cotidianos de la IA, en lugar de dejarse llevar por el bombo publicitario."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "screenshot-2023-08-15-at-5-20-38-pm",
+            "height": 532,
+            "width": 1600,
+            "filename": "screenshot-2023-08-15-at-5-20-38-pm.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692146916-screenshot-2023-08-15-at-5-20-38-pm.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Mesa Redonda de IA: Perspectivas, Emociones y Desafíos en el Paisaje Moderno de la IA"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "En un episodio de podcast, Shawn Wang, Alessio Fanelli y Daniel Whitenack discuten sus momentos destacados personales de episodios, tendencias en la industria de la IA y la evolución de la evaluación de modelos."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Momentos Destacados del Episodio:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "El momento destacado de Alessio Fanelli fue el episodio con Mike Conover de Databricks discutiendo DALL-E. Él enfatiza la pasión de Mike y el emocionante lanzamiento del conjunto de datos RedPajama."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Shawn Wang recordó el episodio impulsado por noticias sobre los Plugins de ChatGPT donde 4,000 personas se sintonizaron. Encuentra valor en capturar reacciones en tiempo real a desarrollos significativos de IA."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Daniel Whitenack rememora la época en que la generación de imágenes estaba en tendencia, pero ahora se encuentra inmerso en NLP y modelos de lenguaje."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Tendencias en la Industria de la IA:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "El episodio más popular fue sobre Metaflow, un paquete de Python para modelado de ciencia de datos de pila completa, que resonó con los oyentes debido a los desafíos del ciclo de vida del modelo en aplicaciones prácticas."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Daniel señala que la industria está transitando de MLOps tradicionales a un nuevo tipo de operaciones (posiblemente denominado LLMOps), centrado más en aprovechar modelos preentrenados."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Alessio menciona que sus episodios más populares giraron en torno a temas basados en modelos, incluidas discusiones sobre las limitaciones de los benchmarks tradicionales y la necesidad de mejores evaluaciones."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Evaluación de Modelos:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Alessio habló sobre la rápida evolución de los benchmarks, indicando la necesidad de mejores métricas de evaluación para modelos como GPT-4."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Shawn menciona los benchmarks generados adversarialmente de HellaSwag y la sorprendente revelación de que menos del 1% de los datos para \"Segment Anything from Meta\" fueron generados por humanos."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Daniel observa la creciente tendencia de la salida y conjuntos de datos generados por modelos, enfatizando que la escala de datos simulados o aumentados es asombrosa."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Shawn expresa preocupaciones sobre el \"colapso de modo\" y la posibilidad de que los modelos se sobreoptimicen para casos de uso medianos, potencialmente dejando de lado aplicaciones de bajos recursos."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Daniel cree que la diversidad lingüística en los grandes modelos de lenguaje puede beneficiar a los idiomas de bajos recursos."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "A lo largo de la discusión, el trío toca el paisaje evolutivo de la IA, la importancia de los benchmarks y los desafíos y el potencial de usar modelos para evaluar otros modelos."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "abls6-img1",
+            "height": 936,
+            "width": 936,
+            "filename": "abls6-img1.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692149396-abls6-img1.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Esfuerzos de IA de Base y el Paisaje Cambiante de los Modelos de IA"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "emphasis"
+                      ],
+                      "value": "Shawn Wang"
+                    },
+                    {
+                      "type": "span",
+                      "value": " explora el impacto y la misión de "
+                    },
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Masakhane"
+                    },
+                    {
+                      "type": "span",
+                      "value": ", una organización de base de investigadores de NLP africanos que crean tecnologías relevantes para África. "
+                    },
+                    {
+                      "type": "span",
+                      "marks": [
+                        "emphasis"
+                      ],
+                      "value": "Daniel Whitenack"
+                    },
+                    {
+                      "type": "span",
+                      "value": " elabora sobre los desafíos únicos que enfrentan las comunidades africanas, enfatizando la importancia de construir soluciones de IA adaptadas a necesidades específicas. Cita ejemplos de tecnología avanzada en EE.UU., como tractores que funcionan con clústeres de Kubernetes, frente a los requisitos contrastantes en África, como la identificación de sequías o el alivio de desastres."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Daniel profundiza en los episodios de \"IA para África\", destacando la gran diferencia en las aplicaciones tecnológicas entre regiones. Alienta la participación global, señalando a Masakhane como un modelo de cómo la experiencia local puede dar forma a una tecnología significativa."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Pasando al tema de los modelos de IA, Daniel hace referencia a un episodio perspicaz de "
+                    },
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Raj Shah"
+                    },
+                    {
+                      "type": "span",
+                      "value": " de Hugging Face sobre las capacidades de los Grandes Modelos de Lenguaje (LLMs). El episodio discute varios ejes como la accesibilidad del modelo, la usabilidad comercial, la especificidad de la tarea y más. Esta discusión proporciona una guía para navegar la abrumadora cantidad de modelos disponibles hoy en día."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tanto Shawn como Daniel discuten sus estrategias para mantenerse actualizados en el paisaje de IA en rápida evolución. Tocan el papel de plataformas como Twitter y Hugging Face, enfatizando la importancia de vigilar las estadísticas de descargas para medir la popularidad de los modelos."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Finalmente, Daniel destaca una colaboración interesante donde los esfuerzos de base llevaron a la creación de modelos de lenguaje en seis idiomas africanos. Estos modelos, descubiertos por Meta en Hugging Face, ahora se han incorporado en nuevos modelos lanzados por el gigante tecnológico. Esto muestra el impacto de ciclo completo de las iniciativas de IA impulsadas por la comunidad, enfatizando aún más la importancia de soluciones tecnológicas adaptadas."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "abls6-img2",
+            "height": 936,
+            "width": 936,
+            "filename": "abls6-img2.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692149410-abls6-img2.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Evolución del Paisaje de IA: De la Defensa del Código Abierto al Auge de la Ingeniería de IA"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "En un episodio de podcast, Alessio Fanelli destaca el cambio en el paisaje de la IA, señalando cómo una proliferación de modelos se está volviendo disponible en plataformas como Hugging Face, democratizando el acceso y creando oportunidades para que más jugadores participen. La conversación profundiza en la defensa de Jonathan Frankle por mantener los modelos de IA de código abierto. Shawn Wang y Daniel Whitenack discuten el potencial de incorporar mejoras de audio a los podcasts para mantener el compromiso. También discuten un episodio pasado con Kirsten Lum, quien abordó los desafíos de gestionar tareas de ML en organizaciones medianas en comparación con grandes empresas."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Una parte significativa de la conversación se centra en la implementación práctica de la IA en las empresas. Daniel subraya que, aunque muchas empresas experimentan con herramientas como ChatGPT, a menudo no progresan más allá del uso superficial. Enfatiza la necesidad de que las empresas profundicen en las aplicaciones de estos modelos, desde la ingeniería de prompts hasta operaciones más complejas. La discusión evoluciona hacia el tema de la ingeniería de prompts, su bombo publicitario y su genuina importancia en el ecosistema de IA. Shawn Wang introduce el término \"ingeniería de IA\", sugiriendo que la disciplina está evolucionando como una subcategoría de la ingeniería de software, marcando un cambio de roles tradicionales de ML a una fusión con roles generales de ingeniería de software."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "abls6-img3",
+            "height": 936,
+            "width": 936,
+            "filename": "abls6-img3.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692149425-abls6-img3.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Transición a la IA: Desafíos, la Importancia de la UX y la Evolución del Etiquetado de Datos"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Desafíos Únicos de Ingenieros vs. Científicos de Datos en la Transición a Roles de IA"
+                    },
+                    {
+                      "type": "span",
+                      "value": " Daniel Whitenack y Shawn Wang discuten los desafíos que enfrentan los desarrolladores de software y los científicos de datos al pasar a roles centrados en IA. Para los desarrolladores de software, enfrentar sistemas no deterministas, particularmente aquellos que no controlan completamente, como los modelos de caja negra de OpenAI, presenta un obstáculo único. También están trabajando con un modelo cuyas capacidades aún no se han aprovechado completamente."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Desde la perspectiva de un científico de datos, Whitenack destaca el instinto de saltar al entrenamiento y ajuste fino de modelos, aunque se pueden lograr logros significativos a través de la augmentación de datos y la creación de prompts. Subraya que los científicos de datos han lidiado con incertidumbres durante un tiempo, pero es diferente cuando no están a cargo de los conjuntos de datos o el entrenamiento."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "El Valor de la Experiencia de Usuario (UX) de IA"
+                    },
+                    {
+                      "type": "span",
+                      "value": " Wang introduce el concepto de UX de IA, enfatizando que el paso final de mostrar la salida de IA de manera amigable para el usuario puede ser tan crucial como entrenar el modelo. Esto se evidencia con ChatGPT de OpenAI, que muchos consideran un avance en UX. Whitenack está de acuerdo, sugiriendo que, aunque las innovaciones en el modelado y los datos son críticas, una mala experiencia de usuario puede anular esos avances. Cita la función de autocompletar impulsada por IA de Gmail como un ejemplo de integración de IA sin problemas que proporciona un valor inmediato a los usuarios."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Discusión sobre la Evolución y Curación de Conjuntos de Datos"
+                    },
+                    {
+                      "type": "span",
+                      "value": " Whitenack menciona la evolución en los conjuntos de datos de NLP y la popularidad de herramientas de código abierto como Label Studio para el etiquetado de datos. Wang señala que Label Studio ha introducido herramientas para el ajuste fino de modelos generativos de IA. Whitenack discute los desafíos que enfrentan las empresas para entender los modelos ajustados por instrucciones y enfatiza la importancia de herramientas claras en torno a este proceso para hacerlo más accesible."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Finalmente, Wang reflexiona sobre por qué múltiples empresas de etiquetado de datos como Label Box y Label Studio continúan surgiendo y prosperando incluso cuando gigantes como Scale ya existen en el mercado, señalando la importancia continua y la evolución de la IA centrada en datos."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "abls6-img4",
+            "height": 936,
+            "width": 936,
+            "filename": "abls6-img4.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692149436-abls6-img4.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Descifrando el Cambio de la IA de Paradigmas Centrados en Modelos a Centrados en Datos"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Personalización de IA y la Evolución del Uso de Datos"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "emphasis"
+                      ],
+                      "value": "Daniel Whitenack"
+                    },
+                    {
+                      "type": "span",
+                      "value": " discute la relación en evolución entre la IA y las empresas, enfatizando un cambio de un enfoque centrado en modelos a uno centrado en datos. Muchas empresas, señala, ahora están pensando en aprovechar los modelos de última generación para sus datos. Esto implica ya sea mejorar estos modelos con sus datos o ajustarlos, una perspectiva reflejada por el aumento de las API que ofrecen ajuste fino."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "emphasis"
+                      ],
+                      "value": "Shawn Wang"
+                    },
+                    {
+                      "type": "span",
+                      "value": " plantea un punto pertinente sobre el alejamiento de OpenAI del ajuste fino para modelos como GPT-3.5 y GPT-4. También profundiza en el área gris de conjuntos de datos no etiquetados para el aprendizaje no supervisado y auto-supervisado. La conversación profundiza en los desafíos de determinar la mezcla de datos adecuada para entrenar modelos y destaca la falta de claridad sobre las mejores prácticas."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Whitenack agrega información sobre el mundo de las mezclas de datos, sugiriendo que la composición exacta de los datos utilizados por los mejores modelos como los de OpenAI sigue siendo desconocida. Esto crea un desafío para aquellos que intentan emular tales modelos. Enfatiza la importancia de experimentar con diferentes mezclas de datos para optimizar el entrenamiento de modelos. Whitenack alienta a los entusiastas de la IA a mantenerse prácticos, aprovechando la variedad de herramientas disponibles para obtener una mejor comprensión de los modelos y fomentar la innovación."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "En una ronda relámpago, Whitenack destaca su asombro por las capacidades de propósito general de los grandes modelos de lenguaje, especialmente más allá de las tareas tradicionales de NLP. Señala el gran potencial de exploración en IA, especialmente con respecto a idiomas distintos del inglés y mandarín, y también en diversas modalidades de comunicación como el lenguaje de señas. Termina con un llamado a la acción, instando a las personas a involucrarse y ser prácticos con los modelos de IA para ganar intuición y conocimiento."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Nota Final"
+                    },
+                    {
+                      "type": "span",
+                      "value": ": La transcripción es de código abierto y está disponible en GitHub para mejoras."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "abls6-img5",
+            "height": 936,
+            "width": 936,
+            "filename": "abls6-img5.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692149458-abls6-img5.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Las principales tendencias de IA de 2023, reflexionan sobre episodios destacados y comparten ideas sobre cómo navegar la evolución de la IA.",
+      "title": "Podcast de Latent Space 7/2/23 [Resumen] Tendencias de IA",
+      "twitterCard": null,
+      "image": {
+        "width": 1600,
+        "height": 532,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1692146916-screenshot-2023-08-15-at-5-20-38-pm.png"
+      }
+    }
+  },
+  "topics": [
+    "Summary",
+    "Open Source"
+  ]
+}

@@ -1,0 +1,273 @@
+{
+  "relatedBlogs": [
+    {
+      "id": "180563903",
+      "topics": [
+        "DAO",
+        "Tóm tắt"
+      ],
+      "title": "Mục đích của việc bỏ phiếu là gì? [Tóm tắt]",
+      "slug": "what-is-voting-for-summary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:10:58+01:00",
+      "description": "Khám phá bản chất của việc bỏ phiếu trong các hệ thống phi tập trung. Hiểu rõ mục đích và quyền lực thực sự của việc bỏ phiếu trong blockchain.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690859305-cbc6-img1.png"
+      },
+      "seo": {
+        "title": "Mục đích của việc bỏ phiếu là gì? [Tóm tắt]",
+        "description": "Khám phá bản chất của việc bỏ phiếu trong các hệ thống phi tập trung. Hiểu rõ mục đích và quyền lực thực sự của việc bỏ phiếu trong blockchain."
+      }
+    },
+    {
+      "id": "180563908",
+      "topics": [
+        "DAO",
+        "Tóm tắt"
+      ],
+      "title": "Mục đích của quản trị là gì? [Tóm tắt]",
+      "slug": "what-is-governance-for-summary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:10:45+01:00",
+      "description": "Khám phá vai trò và tầm quan trọng của quản trị trong các hệ thống blockchain. Hiểu cách quản trị thúc đẩy sự phi tập trung và tăng trưởng.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690859755-cbc7-img1.png"
+      },
+      "seo": {
+        "title": "Mục đích của quản trị là gì? [Tóm tắt]",
+        "description": "Khám phá vai trò và tầm quan trọng của quản trị trong các hệ thống blockchain. Hiểu cách quản trị thúc đẩy sự phi tập trung và tăng trưởng."
+      }
+    },
+    {
+      "id": "166981063",
+      "topics": [
+        "Bắt đầu",
+        "DAO"
+      ],
+      "title": "Tương lai đã đến: Sự trỗi dậy của các Tổ chức Tự trị Phi tập trung (DAOs)",
+      "slug": "the-future-is-here-the-rise-of-decentralized-autonomous-organizations-daos",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T08:57:02+01:00",
+      "description": "Khám phá sự trỗi dậy của các Tổ chức Tự trị Phi tập trung (DAOs) trong hướng dẫn của chúng tôi. Hiểu về tương lai của doanh nghiệp và cơ hội cho các startup.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1687381524-db1-img1.png"
+      },
+      "seo": {
+        "title": "Sự trỗi dậy của các Tổ chức Tự trị Phi tập trung",
+        "description": "Khám phá sự trỗi dậy của các Tổ chức Tự trị Phi tập trung (DAOs) trong hướng dẫn của chúng tôi. Hiểu về tương lai của doanh nghiệp và cơ hội cho các startup."
+      }
+    }
+  ],
+  "blogContent": {
+    "id": "166984334",
+    "topics": [
+      "DAO",
+      "Pháp Lý"
+    ],
+    "title": "Các Tổ Chức Tự Trị Phân Cấp (DAOs): Các Cấu Trúc Pháp Lý Cơ Bản cho Doanh Nghiệp và Mục Đích Phi Lợi Nhuận",
+    "slug": "decentralized-autonomous-organizations-daos-basic-legal-structures-for-business-a",
+    "authorName": "Crypto Clairity",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+    },
+    "_publishedAt": "2023-10-05T08:59:06+01:00",
+    "description": "Khám phá các cấu trúc pháp lý cơ bản của DAO cho doanh nghiệp và mục đích phi lợi nhuận.",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1687384353-db2-img1.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Hiểu về Khung Pháp Lý cho DAOs"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Các Tổ Chức Tự Trị Phân Cấp (DAOs) là những hình thức tổ chức kỹ thuật số phân cấp sáng tạo được hỗ trợ bởi công nghệ blockchain. Trong thế giới tiền điện tử và blockchain, DAOs đã thu hút sự chú ý của các doanh nhân, nhà đầu tư và chuyên gia pháp lý. Tuy nhiên, khi xem xét DAOs về mặt pháp lý, điều quan trọng là phải hiểu rằng chúng có thể được coi là một liên danh lớn hoặc một hiệp hội phi lợi nhuận không đăng ký."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "db2-img1",
+            "height": 994,
+            "width": 994,
+            "filename": "db2-img1.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1687384353-db2-img1.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Các Liên Danh Lớn"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Một liên danh lớn là một loại hình cấu trúc kinh doanh mà trong đó nhiều đối tác cùng nhau điều hành một doanh nghiệp. Trong trường hợp của một DAO, các đối tác được đại diện bởi các token số được giữ bởi các chủ sở hữu token. Các đối tác chia sẻ lợi nhuận, thua lỗ và quyền kiểm soát doanh nghiệp theo tỷ lệ sở hữu token của họ. Trong một liên danh lớn, các đối tác có trách nhiệm cá nhân đối với các khoản nợ và nghĩa vụ của doanh nghiệp."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Loại cấu trúc này có thể đặc biệt phù hợp cho các DAO đang hoạt động như một công ty, tìm cách tạo ra lợi nhuận và tìm kiếm cách thu hút đầu tư. Ví dụ, một DAO hoạt động như một liên danh lớn có thể phát hành các token giống như cổ phiếu. Điều này cho phép DAO huy động vốn, thu hút đầu tư và thưởng cho các chủ sở hữu token với một phần lợi nhuận."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tuy nhiên, cũng có những nhược điểm của loại cấu trúc này. Ví dụ, các chủ sở hữu token có thể không được bảo vệ hoàn toàn khỏi trách nhiệm cá nhân đối với các khoản nợ và nghĩa vụ của doanh nghiệp. Ngoài ra, cấu trúc liên danh có thể kém linh hoạt hơn các cấu trúc khác và có thể không cho phép cùng một mức độ phân cấp."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": []
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Các Hiệp Hội Phi Lợi Nhuận"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Mặt khác, một hiệp hội phi lợi nhuận không đăng ký là một loại tổ chức hoạt động vì lợi ích của các thành viên của nó và không vì lợi nhuận. Trong loại cấu trúc này, các thành viên của hiệp hội chia sẻ quyền kiểm soát tổ chức và không có trách nhiệm cá nhân đối với các khoản nợ và nghĩa vụ của nó. Một hiệp hội phi lợi nhuận không đăng ký có thể là một lựa chọn tốt cho các DAO đang hoạt động như một tổ chức phi lợi nhuận và tìm kiếm một hình thức quản trị phân cấp, linh hoạt."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Ví dụ, một DAO hoạt động như một hiệp hội phi lợi nhuận không đăng ký có thể được cấu trúc như một tổ chức do cộng đồng điều hành, phân cấp. Các thành viên của DAO có thể cùng nhau đưa ra quyết định và tổ chức có thể được quản lý theo cách dân chủ hơn. Loại cấu trúc này có thể đặc biệt phù hợp cho các DAO tập trung vào các nguyên nhân xã hội hoặc môi trường, nơi mục tiêu là thúc đẩy một nguyên nhân hoặc ý thức hệ cụ thể, thay vì tạo ra lợi nhuận."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tuy nhiên, cũng có những nhược điểm của loại cấu trúc này. Ví dụ, một hiệp hội phi lợi nhuận không đăng ký có thể không có cùng tư cách pháp lý như một công ty và có thể không thể huy động vốn theo cách tương tự. Ngoài ra, loại cấu trúc này có thể không phù hợp với các tổ chức đang tìm cách tạo ra lợi nhuận."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Kết luận, khi xem xét DAOs về mặt pháp lý, điều quan trọng là phải hiểu rằng chúng có thể được coi là một liên danh lớn hoặc một hiệp hội phi lợi nhuận không đăng ký. Cả hai loại cấu trúc đều có ưu và nhược điểm riêng, và sự lựa chọn cấu trúc sẽ phụ thuộc vào các mục tiêu và mục đích cụ thể của DAO. Dù DAO đang hoạt động như một công ty hay một tổ chức phi lợi nhuận, điều cần thiết là phải chọn một cấu trúc phù hợp với các mục tiêu và mục đích của tổ chức và cung cấp các bảo vệ pháp lý cần thiết cho các thành viên của nó."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "db2-img3",
+            "height": 994,
+            "width": 994,
+            "filename": "db2-img3.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1687384462-db2-img3.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Các Tổ Chức Tự Trị Phân Cấp (DAOs): Định Hướng Các Cấu Trúc Pháp Lý cho Doanh Nghiệp và Mục Đích Phi Lợi Nhuận",
+      "title": "DAOs: Định Hướng Các Cấu Trúc Pháp Lý cho Doanh Nghiệp & Phi Lợi Nhuận",
+      "twitterCard": null,
+      "image": {
+        "width": 994,
+        "height": 994,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1687384353-db2-img1.png"
+      }
+    }
+  },
+  "topics": [
+    "DAO",
+    "Legal"
+  ]
+}

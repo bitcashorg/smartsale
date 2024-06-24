@@ -1,0 +1,273 @@
+{
+  "relatedBlogs": [
+    {
+      "id": "180563903",
+      "topics": [
+        "DAO",
+        "Résumé"
+      ],
+      "title": "A quoi sert le vote ? [Résumé]",
+      "slug": "what-is-voting-for-summary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:10:58+01:00",
+      "description": "Découvrez l'essence du vote au sein des systèmes décentralisés. Comprenez le véritable but et le pouvoir du vote dans la blockchain.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690859305-cbc6-img1.png"
+      },
+      "seo": {
+        "title": "A quoi sert le vote ? [Résumé]",
+        "description": "Découvrez l'essence du vote au sein des systèmes décentralisés. Comprenez le véritable but et le pouvoir du vote dans la blockchain."
+      }
+    },
+    {
+      "id": "180563908",
+      "topics": [
+        "DAO",
+        "Résumé"
+      ],
+      "title": "A quoi sert la gouvernance ? [Résumé]",
+      "slug": "what-is-governance-for-summary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:10:45+01:00",
+      "description": "Explorez le rôle et l'importance de la gouvernance dans les systèmes de blockchain. Comprenez comment la gouvernance favorise la décentralisation et la croissance.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690859755-cbc7-img1.png"
+      },
+      "seo": {
+        "title": "A quoi sert la gouvernance ? [Résumé]",
+        "description": "Explorez le rôle et l'importance de la gouvernance dans les systèmes de blockchain. Comprenez comment la gouvernance favorise la décentralisation et la croissance."
+      }
+    },
+    {
+      "id": "166981063",
+      "topics": [
+        "Pour commencer",
+        "DAO"
+      ],
+      "title": "Le futur est là : L'essor des organisations autonomes décentralisées (DAO)",
+      "slug": "the-future-is-here-the-rise-of-decentralized-autonomous-organizations-daos",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T08:57:02+01:00",
+      "description": "Explorez l'essor des organisations autonomes décentralisées (DAO) dans notre guide. Comprenez l'avenir des affaires et les opportunités pour les startups.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1687381524-db1-img1.png"
+      },
+      "seo": {
+        "title": "L'essor des organisations autonomes décentralisées",
+        "description": "Explorez l'essor des organisations autonomes décentralisées (DAO) dans notre guide. Comprenez l'avenir des affaires et les opportunités pour les startups."
+      }
+    }
+  ],
+  "blogContent": {
+    "id": "166984334",
+    "topics": [
+      "DAO",
+      "Juridique"
+    ],
+    "title": "Organisations Autonomes Decentralisees (DAO) : Structures Juridiques de Base pour les Entreprises et les Buts Non Lucratifs",
+    "slug": "decentralized-autonomous-organizations-daos-basic-legal-structures-for-business-a",
+    "authorName": "Crypto Clairity",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+    },
+    "_publishedAt": "2023-10-05T08:59:06+01:00",
+    "description": "Decouvrez les structures juridiques de base des DAO pour les entreprises et les buts non lucratifs.",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1687384353-db2-img1.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Comprendre le Cadre Juridique des DAO"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Les Organisations Autonomes Decentralisees (DAO) sont des formes innovantes d'organisations decentralisees et numeriques, activees par la technologie blockchain. Dans le monde de la crypto-monnaie et de la blockchain, les DAO ont capte l'imagination des entrepreneurs, des investisseurs et des experts juridiques. Cependant, il est important de comprendre que, juridiquement, elles peuvent etre considerees soit comme un grand partenariat general, soit comme une association non incorporee a but non lucratif."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "db2-img1",
+            "height": 994,
+            "width": 994,
+            "filename": "db2-img1.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1687384353-db2-img1.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Partenariats Generaux"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Un grand partenariat general est une structure d'entreprise dans laquelle plusieurs partenaires se reunissent pour exploiter une entreprise. Dans le cas d'une DAO, les partenaires sont representes par des jetons numeriques detenus par les porteurs de jetons. Les partenaires partagent les profits, les pertes et le controle de l'entreprise proportionnellement a leurs participations en jetons. Dans un grand partenariat general, les partenaires sont personnellement responsables des dettes et des obligations de l'entreprise."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Ce type de structure peut etre particulierement approprie pour les DAO qui fonctionnent comme une entreprise, cherchent a generer des profits et recherchent des moyens d'attirer des investissements. Par exemple, une DAO qui fonctionne comme un grand partenariat general peut emettre des jetons qui sont comme des actions d'une societe. Cela permet a la DAO de lever des capitaux, d'attirer des investissements et de recompenser les porteurs de jetons avec une part des profits."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Cependant, il existe egalement des inconvenients a ce type de structure. Par exemple, les porteurs de jetons peuvent ne pas etre totalement proteges contre la responsabilite personnelle pour les dettes et les obligations de l'entreprise. De plus, la structure du partenariat peut etre moins flexible que d'autres structures et peut ne pas permettre le meme degre de decentralisation."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": []
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Associations a But Non Lucratif"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "D'autre part, une association non incorporee a but non lucratif est un type d'organisation qui fonctionne au profit de ses membres et non dans un but lucratif. Dans ce type de structure, les membres de l'association partagent le controle de l'organisation et ne sont pas personnellement responsables de ses dettes et obligations. Une association non incorporee a but non lucratif peut etre un bon choix pour les DAO qui fonctionnent comme une organisation non lucrative et recherchent une forme de gouvernance flexible et decentralisee."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Par exemple, une DAO qui fonctionne comme une association non incorporee a but non lucratif peut etre structuree comme une organisation decentralisee et dirigee par la communaute. Les membres de la DAO peuvent prendre des decisions ensemble et l'organisation peut etre gouvernee de maniere plus democratique. Ce type de structure peut etre particulierement approprie pour les DAO qui se concentrent sur des causes sociales ou environnementales, ou l'objectif est de promouvoir une cause ou une ideologie particuliere, plutot que de generer des profits."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Cependant, il existe egalement des inconvenients a ce type de structure. Par exemple, une association non incorporee a but non lucratif peut ne pas avoir le meme statut juridique qu'une societe et peut ne pas pouvoir lever des capitaux de la meme maniere. De plus, ce type de structure peut ne pas etre aussi bien adapte pour les organisations qui cherchent a generer des profits."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "En conclusion, lorsqu'il s'agit de considerer les DAO d'un point de vue juridique, il est important de comprendre qu'elles peuvent etre considerees soit comme un grand partenariat general, soit comme une association non incorporee a but non lucratif. Les deux types de structures ont leurs avantages et leurs inconvenients, et le choix de la structure dependra des objectifs specifiques de la DAO. Que la DAO fonctionne comme une entreprise ou une organisation a but non lucratif, il est essentiel de choisir une structure qui soit en accord avec les objectifs de l'organisation et qui offre les protections juridiques necessaires a ses membres."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "db2-img3",
+            "height": 994,
+            "width": 994,
+            "filename": "db2-img3.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1687384462-db2-img3.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Organisations Autonomes Decentralisees (DAO) : Naviguer dans les Structures Juridiques pour les Entreprises et les Buts Non Lucratifs",
+      "title": "DAO : Naviguer dans les Structures Juridiques pour les Entreprises et Non Lucratifs",
+      "twitterCard": null,
+      "image": {
+        "width": 994,
+        "height": 994,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1687384353-db2-img1.png"
+      }
+    }
+  },
+  "topics": [
+    "DAO",
+    "Legal"
+  ]
+}

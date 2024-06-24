@@ -1,0 +1,569 @@
+{
+  "relatedBlogs": [],
+  "blogContent": {
+    "id": "198277150",
+    "topics": [
+      "LLM",
+      "Ajuste por Instrucciones",
+      "Multimodal"
+    ],
+    "title": "Un Estudio Empírico del Escalado de Modelos Multimodales Grandes Ajustados por Instrucciones",
+    "slug": "an-empirical-study-of-scaling-instruct-tuned-large-multimodal-models",
+    "authorName": "Prof. Otto Nomos",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+    },
+    "_publishedAt": "2024-05-27T03:33:15+01:00",
+    "description": "Comentario y Calificación del Resumen",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Publicado el 18 de septiembre"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Autores:"
+                    },
+                    {
+                      "url": "https://huggingface.co/Adong17",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Yadong Lu"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/Chunyuan24",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Chunyuan Li"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/liuhaotian",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Haotian Liu"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/jw2yang",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Jianwei Yang"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/wyngjf",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Jianfeng Gao"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/uuu6",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Yelong Shen"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Resumen"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "El ajuste de instrucciones visuales ha mostrado recientemente un progreso alentador con modelos multimodales grandes (LMM) de código abierto como LLaVA y MiniGPT-4. Sin embargo, la mayoría de los estudios existentes de LMM de código abierto se realizan utilizando modelos con 13B parámetros o menos. En este artículo presentamos un estudio empírico del escalado de LLaVA hasta 33B y 65B/70B, y compartimos nuestros hallazgos de nuestras exploraciones en resolución de imagen, mezcla de datos y métodos de entrenamiento eficientes en parámetros como LoRA/QLoRA. Estos se evalúan por su impacto en las capacidades multimodales y de lenguaje al completar tareas del mundo real en la naturaleza. Encontramos que el escalado de LMM mejora consistentemente el rendimiento del modelo y mejora las capacidades de lenguaje, y el rendimiento del ajuste LoRA/QLoRA de LMM es comparable al rendimiento del ajuste fino de modelo completo. Además, el estudio destaca la importancia de resoluciones de imagen más altas y la mezcla de datos multimodales-lingüísticos para mejorar el rendimiento de LMM, y el ajuste de instrucciones visuales a veces puede mejorar la capacidad de lenguaje puro de LMM. Esperamos que este estudio haga que la investigación de LMM de última generación a mayor escala sea más accesible, ayudando así a establecer bases más sólidas para futuras investigaciones. El código y los puntos de control se harán públicos."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "url": "https://arxiv.org/abs/2309.09958",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Ver página de arXiv"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "https://arxiv.org/pdf/2309.09958",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Ver PDF"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Comentario"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "El artículo \"Un Estudio Empírico del Escalado de Modelos Multimodales Grandes Ajustados por Instrucciones\" tiene como objetivo cerrar la brecha en la comprensión de las implicaciones del escalado de modelos multimodales grandes (LMM). Estos modelos están diseñados para procesar tanto texto como imágenes, lo que los hace inmensamente valiosos para tareas que requieren comprensión multimodal."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Puntos Clave:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Escalado Más Allá de 13B"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Investigaciones previas sobre LMM de código abierto se han centrado principalmente en modelos con hasta 13B parámetros. Este estudio lleva las cosas un paso más allá al escalar LLaVA hasta 33B e incluso 65B/70B, proporcionando información sobre la dinámica de modelos aún más grandes."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Dominios de Exploración"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": El estudio se centra en aspectos como la resolución de imagen, la mezcla de datos y métodos de entrenamiento eficientes en parámetros como LoRA/QLoRA, arrojando luz sobre sus efectos en el rendimiento del modelo."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Beneficios Consistentes del Escalado"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": La investigación encontró que escalar el tamaño de LMM mejora consistentemente su rendimiento. Además, ciertas técnicas de entrenamiento como LoRA/QLoRA pueden lograr un rendimiento comparable al ajuste fino de modelo completo, pero con mejor eficiencia de parámetros."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Resolución y Mezcla de Datos"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": El estudio subraya la importancia de resoluciones de imagen más altas y la necesidad de mezclar datos multimodales-lingüísticos para lograr un mejor rendimiento de los LMM."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Mejora de Capacidades Lingüísticas"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Curiosamente, el ajuste de instrucciones visuales a veces puede incluso mejorar las capacidades de lenguaje puro de LMM, enfatizando aún más la naturaleza entrelazada del aprendizaje multimodal."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Impacto Potencial en el Mundo Real:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Aplicaciones Diversas"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Con la capacidad de procesar tanto texto como imágenes, los LMM pueden desplegarse en una amplia gama de aplicaciones, como respuesta a preguntas visuales, generación de subtítulos de imágenes, moderación de contenido y más."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Mejora del Rendimiento"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Las organizaciones e investigadores pueden beneficiarse del rendimiento mejorado al escalar los LMM, lo que puede llevar a resultados más precisos en tareas del mundo real."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Ajuste de Coste Efectivo"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Técnicas como LoRA/QLoRA pueden permitir a los investigadores lograr un alto rendimiento sin los costos generales del ajuste fino de modelo completo, resultando en ahorros de costos y tiempo."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Mejor Análisis de Imágenes"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": El énfasis en la entrada de imágenes de alta resolución podría mejorar la calidad del procesamiento de datos visuales en varios dominios, desde imágenes médicas hasta análisis de imágenes satelitales."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Promoción de la Ciencia Abierta"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": La intención de los autores de hacer público el código y los puntos de control fomenta que la comunidad de IA en general experimente, replique y potencialmente mejore los hallazgos."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Desafíos:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Restricciones Computacionales"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Escalar hasta modelos tan grandes como 65B/70B requiere recursos computacionales significativos, que podrían no estar al alcance de muchos investigadores y desarrolladores."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Transferencia a Escenarios Prácticos"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Aunque la investigación proporciona bases sólidas, el despliegue en el mundo real en industrias específicas podría requerir ajustes específicos del dominio."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Dada la creciente importancia de la comprensión multimodal en una plétora de aplicaciones, desde el comercio electrónico hasta la atención médica:"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Calificaría el impacto en el mundo real de este artículo como un 9 de 10."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Los conocimientos proporcionados por el artículo pueden influir significativamente en el diseño, entrenamiento y despliegue de futuros sistemas multimodales, allanando el camino para interacciones humano-IA más intuitivas y eficientes en todos los dominios."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "researchpaper9",
+            "height": 816,
+            "width": 1456,
+            "filename": "researchpaper9.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Comentario y Calificación del Resumen\n",
+      "title": "Un Estudio Empírico del Escalado de LLMs Ajustados por Instrucciones",
+      "twitterCard": null,
+      "image": {
+        "width": 1456,
+        "height": 816,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      }
+    }
+  },
+  "topics": [
+    "LLM",
+    "Instruction Tuning",
+    "Multimodal"
+  ]
+}

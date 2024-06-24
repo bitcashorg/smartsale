@@ -1,0 +1,1018 @@
+{
+  "relatedBlogs": [
+    {
+      "id": "190259319",
+      "topics": [
+        "Resumen",
+        "LLM",
+        "Entrenamiento"
+      ],
+      "title": "Podcast de Latent Space 16/8/23 [Resumen] - Las Matemáticas del Entrenamiento de LLMs — con Quentin Anthony de Eleuther AI",
+      "slug": "latent-space-podcast-8-16-23-summary-the-mathematics-of-training-llms-with-que",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:19:45+01:00",
+      "description": "Explora las matemáticas detrás del entrenamiento de LLMs con Quentin Anthony de Eleuther AI. Sumérgete en el artículo Transformers Math 101 y domina las técnicas de entrenamiento distribuido para un rendimiento óptimo de GPU.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692324088-screenshot-2023-08-17-at-9-59-17-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space 16/8/23 [Resumen] Matemáticas del Entrenamiento de LLMs",
+        "description": "Sumérgete en el artículo Transformers Math 101 y domina las técnicas de entrenamiento distribuido para un rendimiento óptimo de GPU."
+      }
+    },
+    {
+      "id": "190259087",
+      "topics": [
+        "Resumen",
+        "LLM",
+        "Código",
+        "Código Abierto",
+        "Modelos Pequeños"
+      ],
+      "title": "Podcast de Latent Space 4/8/23 [Resumen] ¡Crossover de Latent Space x AI Breakdown!",
+      "slug": "latent-space-podcast-8-4-23-summary-latent-space-x-ai-breakdown-crossover-pod",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:16:33+01:00",
+      "description": "Únete a AI Breakdown y Latent Space para el resumen de tecnología de IA del verano: Sumérgete en GPT4.5, Llama 2, herramientas de IA, el creciente ingeniero de IA y más.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1691539617-screenshot-2023-08-08-at-8-02-52-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space 4/8/23 [Resumen] Crossover de AI Breakdown",
+        "description": "Sumérgete en GPT4.5, Llama 2, herramientas de IA, el creciente ingeniero de IA y más."
+      }
+    },
+    {
+      "id": "190259111",
+      "topics": [
+        "Resumen",
+        "Transformers",
+        "Entrenamiento",
+        "Código Abierto"
+      ],
+      "title": "Podcast de Latent Space 26/7/23 [Resumen] FlashAttention 2: haciendo los Transformers un 800% más rápidos - Tri Dao de Together AI",
+      "slug": "latent-space-podcast-7-26-23-summary-flashattention-2-making-transformers-800-fas",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:14:13+01:00",
+      "description": "Descubre cómo FlashAttention revolucionó la velocidad de la IA con Tri Dao, mientras revela el poder de FlashAttention 2, se sumerge en el Hazy Lab de Stanford y ofrece perspectivas futuras sobre la IA.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1691543194-screenshot-2023-08-08-at-8-43-59-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space 26/7/23 [Resumen] FlashAttention 2",
+        "description": "Descubre cómo FlashAttention revolucionó la velocidad de la IA con Tri Dao, mientras revela el poder de FlashAttention 2."
+      }
+    },
+    {
+      "id": "190259172",
+      "topics": [
+        "Resumen",
+        "LLM",
+        "Código Abierto",
+        "Modelos Pequeños"
+      ],
+      "title": "Podcast de Latent Space 19/7/23 [Resumen] - Llama 2: El Nuevo SOTA de LLM Abierto (con Nathan Lambert, Matt Bornstein, Anton Troynikov, Russell Kaplan, Whole Mars Catalog y otros)",
+      "slug": "latent-space-podcast-7-19-23-summary-llama-2-the-new-open-llm-sota-ft-nathan-lamb",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:12:38+01:00",
+      "description": "Explora Llama 2, el último avance en IA con expertos como Nathan Lambert, Matt Bornstein y más. Sumérgete en conjuntos de datos, benchmarks y predicciones de IA. ¡Te esperan perspectivas y drama de Llama en este podcast destacado!",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1691968295-screenshot-2023-08-13-at-7-11-06-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space 19/7/23 [Resumen] - Llama 2",
+        "description": "Sumérgete en conjuntos de datos, benchmarks y predicciones de IA. ¡Te esperan perspectivas y drama de Llama en este podcast destacado!"
+      }
+    },
+    {
+      "id": "190259191",
+      "topics": [
+        "Resumen",
+        "Código",
+        "LLM"
+      ],
+      "title": "Podcast de Latent Space 10/7/23 [Resumen] - Intérprete de Código == GPT 4.5 (con Simon Willison, Alex Volkov, Aravind Srinivas, Alex Graveley y otros)",
+      "slug": "latent-space-podcast-7-10-23-summary-code-interpreter-gpt-4-5-w-simon-willison-al",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:09:26+01:00",
+      "description": "Explora el Intérprete de Código de ChatGPT: un cambio de juego en la IA. Sumérgete en su salto de capacidades de 1000x con Simon, Alex y los principales expertos en IA. #InferenciaAumentadaPorCódigo #GPT4_5",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692048911-screenshot-2023-08-14-at-3-34-05-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space [Resumen] Intérprete de Código = GPT 4.5",
+        "description": "Explora el Intérprete de Código de ChatGPT: un cambio de juego en la IA. Sumérgete en su salto de capacidades de 1000x con Simon, Alex y los principales expertos en IA."
+      }
+    },
+    {
+      "id": "190259216",
+      "topics": [
+        "Resumen",
+        "Código Abierto"
+      ],
+      "title": "Podcast de Latent Space 2/7/23 [Resumen] Tendencias de IA: ¡un crossover de Latent Space x Practical AI!",
+      "slug": "latent-space-podcast-7-2-23-summary-ai-trends-a-latent-space-x-practical-ai-cross",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:08:36+01:00",
+      "description": "Explora la fusión de Practical AI y Latent Space mientras profundizan en las principales tendencias de IA de 2023, reflexionan sobre episodios destacados y comparten perspectivas sobre cómo navegar la evolución de la IA.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692146916-screenshot-2023-08-15-at-5-20-38-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space 2/7/23 [Resumen] Tendencias de IA",
+        "description": "Las principales tendencias de IA de 2023, reflexionan sobre episodios destacados y comparten perspectivas sobre cómo navegar la evolución de la IA."
+      }
+    },
+    {
+      "id": "190259238",
+      "topics": [
+        "Hardware",
+        "LLM",
+        "Resumen"
+      ],
+      "title": "Podcast de Latent Space 20/6/23 [Resumen] - Commoditizando el Petaflop — con George Hotz de tiny corp",
+      "slug": "latent-space-podcast-6-20-23-summary-commoditizing-the-petaflop-with-george-ho",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:07:15+01:00",
+      "description": "¡George Hotz de tiny corp desafía a Nvidia y Google! Sumérgete en el mundo de las colaboraciones con AMD, perspectivas sobre ggml, Mojo, Elon y GPT-4, además de un vistazo a la Novia de IA.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692154615-screenshot-2023-08-15-at-10-55-40-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space 20/6/23 [Resumen] - George Hotz",
+        "description": "¡George Hotz de tiny corp desafía a Nvidia y Google! Colaboraciones con AMD, perspectivas sobre ggml, Mojo, Elon y GPT-4, además de un vistazo a la Novia de IA."
+      }
+    },
+    {
+      "id": "190259294",
+      "topics": [
+        "LLM",
+        "Funciones",
+        "Resumen"
+      ],
+      "title": "Podcast de Latent Space 14/6/23 [Resumen] - Pod de Emergencia: Nueva API de Funciones de OpenAI, Reducción de Precio del 75%, 4x Longitud de Contexto (con Alex Volkov, Simon Willison, Riley Goodside, Joshua Lochner, Stefania Druga, Eric Elliott, Mayo Oshin y otros)",
+      "slug": "latent-space-podcast-6-14-23-summary-emergency-pod-openai-s-new-functions-api-75",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:05:04+01:00",
+      "description": "Explora las actualizaciones de OpenAI de junio de 2023 con los principales ingenieros de IA de Scale, Microsoft, Pinecone y Huggingface. Sumérgete en los paradigmas de Código x LLM y descubre los Agentes de Función Recursiva.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692221668-screenshot-2023-08-16-at-5-32-29-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space 20/6/23 [Resumen] - Pod de Emergencia",
+        "description": "Explora las actualizaciones de OpenAI de junio de 2023 con los principales ingenieros de IA de Scale, Microsoft, Pinecone y Huggingface."
+      }
+    },
+    {
+      "id": "190259333",
+      "topics": [
+        "LLM",
+        "Resumen",
+        "UX"
+      ],
+      "title": "Podcast de Latent Space 8/6/23 [Resumen] - De RLHF a RLHB: El Caso de Aprender del Comportamiento Humano - con Jeffrey Wang y Joe Reeve de Amplitude",
+      "slug": "latent-space-podcast-6-8-23-summary-from-rlhf-to-rlhb-the-case-for-learning-from",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:02:33+01:00",
+      "description": "Explora la IA y la analítica con Jeffrey Wang y Joe Reeve en Latent Space Live. Sumérgete en por qué la IA valora la Analítica y el poder de los datos de comportamiento de primera mano.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692386432-screenshot-2023-08-18-at-3-17-04-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space 8/6/23 [Resumen] - De RLHF a RLHB",
+        "description": "Explora la IA y la analítica con Jeffrey Wang y Joe Reeve en Latent Space Live. Sumérgete en por qué la IA valora la Analítica y el poder de los datos de comportamiento de primera mano."
+      }
+    },
+    {
+      "id": "190260528",
+      "topics": [
+        "Resumen",
+        "LLM",
+        "UX"
+      ],
+      "title": "Podcast de Latent Space 1/6/23 [Resumen] - Construyendo el Escenario de IA × UX — con Linus Lee de Notion AI",
+      "slug": "latent-space-podcast-6-1-23-summary-building-the-ai-x-ux-scenius-with-linus-le",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:00:12+01:00",
+      "description": "Explora el enfoque transformador de Notion AI hacia la IA y la UX. Sumérgete en el futuro de los espacios de trabajo aumentados por IA, el valor más allá de las interfaces de chat y perspectivas sobre el trabajo del conocimiento efectivo. ¡Incluye resumen del meetup AI×UX NYC!",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692390655-screenshot-2023-08-18-at-4-28-51-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space 1/6/23 [Resumen] - Escenario de IA × UX",
+        "description": "Explora el enfoque transformador de Notion AI hacia la IA y la UX."
+      }
+    },
+    {
+      "id": "190260557",
+      "topics": [
+        "Resumen",
+        "Código",
+        "LLM",
+        "Agentes"
+      ],
+      "title": "Podcast de Latent Space 25/5/23 [Resumen] - Depurando Internet con agentes de IA – con Itamar Friedman de Codium AI y AutoGPT",
+      "slug": "latent-space-podcast-5-25-23-summary-debugging-the-internet-with-ai-agents-with",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:58:27+01:00",
+      "description": "Explora el futuro de la IA con Itamar Friedman de Codium AI en 'Depurando Internet'. Sumérgete en los agentes 'Extreme DRY', la rápida sincronización de especificaciones y pruebas, y el equilibrio entre código y pruebas. Además, perspectivas de Toran y una mirada exclusiva al roadmap de AutoGPT.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692397413-screenshot-2023-08-18-at-6-10-09-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space 25/5/23 [Resumen] Depurando Internet",
+        "description": "Sumérgete en los agentes 'Extreme DRY', la rápida sincronización de especificaciones y pruebas, y el equilibrio entre código y pruebas."
+      }
+    },
+    {
+      "id": "190260577",
+      "topics": [
+        "LLM",
+        "Modelos Pequeños"
+      ],
+      "title": "Podcast de Latent Space 20/5/23 [Resumen] - MPT-7B y El Comienzo de Contexto=Infinito — con Jonathan Frankle y Abhinav Venigalla de MosaicML",
+      "slug": "latent-space-podcast-5-20-23-summary-mpt-7b-and-the-beginning-of-context-infinity",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:57:33+01:00",
+      "description": "Sumérgete en el entrenamiento de 9 días y $200k del 'llongboi' MPT-7B de MosaicML, perspectivas sobre la preparación de datos y el auge de los modelos de IA abiertos con los expertos Frankle y Venigalla.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692409795-screenshot-2023-08-18-at-9-49-21-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space 25/6/23 [Resumen] MosaicML",
+        "description": "Sumérgete en el entrenamiento de 9 días y $200k del 'llongboi' MPT-7B de MosaicML, perspectivas sobre la preparación de datos y el auge de los modelos de IA abiertos."
+      }
+    },
+    {
+      "id": "190260597",
+      "topics": [
+        "LLM",
+        "Datos Estructurados"
+      ],
+      "title": "Podcast de Latent Space 15/5/23 [Resumen] - Calidad y estructura garantizadas en las salidas de LLM - con Shreya Rajpal de Guardrails AI",
+      "slug": "latent-space-podcast-5-15-23-summary-guaranteed-quality-and-structure-in-llm-outp",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:56:26+01:00",
+      "description": "Explora el Ep. 12 con Shreya Rajpal de Guardrails AI: Sumérgete en la validación de salidas de LLM, refinando respuestas a través de bucles de re-pregunta y estableciendo SLAs para modelos. Domina los matices de la garantía de calidad de IA.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692495732-screenshot-2023-08-19-at-9-38-27-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space 15/5/23 [Resumen] Calidad de Salidas de LLM",
+        "description": "Explora el Ep. 12 con Shreya Rajpal de Guardrails AI: Sumérgete en la validación de salidas de LLM."
+      }
+    },
+    {
+      "id": "190260606",
+      "topics": [
+        "LLM",
+        "Entrenamiento",
+        "Agentes",
+        "Multimodal"
+      ],
+      "title": "Podcast de Latent Space 8/5/23 [Resumen] - El Gen del Fundador de IA: Ser Temprano, Construir Rápido y Creer en la Grandeza — con Sharif Shameem de Lexica",
+      "slug": "latent-space-podcast-5-8-23-summary-the-ai-founder-gene-being-early-building-fast",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:52:09+01:00",
+      "description": "Ep.11 con Sharif Shameem de Lexica: Sumérgete en la mentalidad del fundador de IA, descubriendo los secretos para innovar, construir tecnología revolucionaria, entrenar modelos y el intrigante potencial de los Agentes y la secuenciación genómica.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692501984-screenshot-2023-08-19-at-11-24-05-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space 8/5/23 [Resumen] El Gen del Fundador de IA",
+        "description": "Ep.11 con Sharif Shameem de Lexica: Sumérgete en la mentalidad del fundador de IA, descubriendo los secretos para innovar."
+      }
+    },
+    {
+      "id": "190260640",
+      "topics": [
+        "Resumen",
+        "Código Abierto",
+        "LLM"
+      ],
+      "title": "Podcast de Latent Space 5/5/23 [Resumen] - No Moat: La IA Cerrada recibe su llamada de atención de Código Abierto — con Simon Willison",
+      "slug": "latent-space-podcast-5-5-23-summary-no-moat-closed-ai-gets-its-open-source-wakeup",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:49:18+01:00",
+      "description": "Explora 'No Moat: El Despertar de Código Abierto de la IA Cerrada' con Simon Willison. Sumérgete en las perspectivas del memo filtrado de Google Moat, la fuga de cerebros de Google y el aumento de velocidad de Python con Mojo.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692566921-screenshot-2023-08-20-at-5-25-53-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space 5/5/23 [Resumen] - No Moat",
+        "description": "Explora 'No Moat: El Despertar de Código Abierto de la IA Cerrada' con Simon Willison. Sumérgete en las perspectivas del memo filtrado de Google Moat."
+      }
+    },
+    {
+      "id": "190260671",
+      "topics": [
+        "LLM",
+        "Código",
+        "Resumen"
+      ],
+      "title": "Podcast de Latent Space 3/5/23 [Resumen] - Entrenando un LLM de Código SOTA en 1 semana y Cuantificando las Vibras — con Reza Shabani de Replit",
+      "slug": "latent-space-podcast-5-3-23-summary-training-a-sota-code-llm-in-1-week-and-quanti",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:46:08+01:00",
+      "description": "Ep. 10 con Reza Shabani: Sumérgete en el rápido entrenamiento de un LLM de Código de última generación, explora el futuro de Replit Ghostwriter y el viaje de Finanzas a IA. Descubre la transición de Kaplan a Chinchilla y más.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692584998-screenshot-2023-08-20-at-10-17-26-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space 3/5/23 [Resumen] - LLM de Código SOTA",
+        "description": "Ep. 10 con Reza Shabani: Sumérgete en el rápido entrenamiento de un LLM de Código de última generación."
+      }
+    },
+    {
+      "id": "190629271",
+      "topics": [
+        "LLM",
+        "Modelos Pequeños",
+        "Resumen"
+      ],
+      "title": "Podcast de Latent Space 28/4/23 [Resumen] - Mapeando el futuro de Modelos verdaderamente Abiertos y Entrenando a Dolly por $30 — con Mike Conover de Databricks",
+      "slug": "latent-space-podcast-4-28-23-summary-mapping-the-future-of-truly-open-models-and",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:33:12+01:00",
+      "description": "Explora el futuro de los modelos abiertos con Mike Conover de Databricks. Sumérgete en la creación de Dolly, su transición de 1.0 a 2.0 y las influencias detrás de su desarrollo. El Ep.9 toca la infraestructura de modelos, la visión de Databricks y más. #IA #ModelosAbiertos #Dolly",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1694038707-screenshot-2023-09-06-at-3-12-24-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space 28/4/23 [Resumen] - Mike de Databricks",
+        "description": "El Ep.9 toca la infraestructura de modelos, la visión de Databricks y más. #IA #ModelosAbiertos #Dolly"
+      }
+    },
+    {
+      "id": "191164291",
+      "topics": [
+        "LLM",
+        "Empresa",
+        "Resumen"
+      ],
+      "title": "Podcast de Latent Space 21/4/23 [Resumen] - Búsqueda Potenciada por IA para la Empresa — con Deedy Das de Glean",
+      "slug": "latent-space-podcast-4-21-23-summary-ai-powered-search-for-the-enterprise-with",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:31:31+01:00",
+      "description": "Ep.8: Sumérgete en la IA en la búsqueda empresarial con Deedy Das de Glean. Desentraña los desafíos de crear un gigante de búsqueda de IA, comparaciones Google vs ChatGPT, las complejidades de la infraestructura de IA, detectar texto generado por IA y por qué las empresas necesitan más que solo Document QA.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1694134074-screenshot-2023-09-07-at-5-43-48-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space 21/4/23 [Resumen] - con Deedy Das",
+        "description": "Ep.8: Sumérgete en la IA en la búsqueda empresarial con Deedy Das de Glean. Desentraña los desafíos de crear un gigante de búsqueda de IA, comparaciones Google vs ChatGPT."
+      }
+    },
+    {
+      "id": "191165673",
+      "topics": [
+        "Resumen",
+        "Visión"
+      ],
+      "title": "Podcast de Latent Space 13/4/23 [Resumen] - Modelo Segment Anything y los Problemas Difíciles de la Visión por Computadora — con Joseph Nelson de Roboflow",
+      "slug": "latent-space-podcast-4-13-23-summary-segment-anything-model-and-the-hard-problems",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:30:03+01:00",
+      "description": "Explora el Ep.7 con Joseph Nelson sobre el Modelo Segment Anything de Meta. Sumérgete en el futuro de la Visión por Computadora, la importancia del OCR, la Segmentación de Imágenes y más. #Roboflow #IA",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1694150379-screenshot-2023-09-07-at-10-15-52-pm.png"
+      },
+      "seo": {
+        "title": "Podcast de Latent Space 13/4/23 [Resumen] - Segment Anything",
+        "description": "Sumérgete en el futuro de la Visión por Computadora, la importancia del OCR, la Segmentación de Imágenes y más. #Roboflow #IA"
+      }
+    }
+  ],
+  "blogContent": {
+    "id": "190259129",
+    "topics": [
+      "LLM",
+      "Hardware",
+      "Resumen",
+      "Edge"
+    ],
+    "title": "Podcast de Latent Space 8/10/23 [Resumen]: LLMs en todas partes: Ejecutando modelos de 70B en navegadores y iPhones usando MLC — con Tianqi Chen de CMU / OctoML",
+    "slug": "latent-space-podcast-8-10-23-summary-llms-everywhere-running-70b-models-in-browse",
+    "authorName": "Prof. Otto Nomos",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+    },
+    "_publishedAt": "2023-10-05T09:18:37+01:00",
+    "description": "Explora la magia de MLC con Tianqi Chen: desplegando modelos de 70B en navegadores y iPhones. Sumérgete en XGBoost, la creación de TVM y el futuro de los despliegues universales de IA.",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1691894611-screenshot-2023-08-12-at-10-42-43-pm.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Enlace original: "
+                    },
+                    {
+                      "url": "https://www.latent.space/p/llms-everywhere#details",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "LLMs en todas partes: Ejecutando modelos de 70B en navegadores y iPhones usando MLC — con Tianqi Chen de CMU / OctoML"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Resumen"
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 3,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Sobre TQ y XGBoost"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "En el reciente episodio del podcast "
+                    },
+                    {
+                      "type": "span",
+                      "marks": [
+                        "emphasis"
+                      ],
+                      "value": "Latent Space"
+                    },
+                    {
+                      "type": "span",
+                      "value": ", los anfitriones Alessio y Swyx se sentaron con Tianqi Chen (TQ), profesor asistente en la Universidad Carnegie Mellon y una figura destacada en la comunidad de aprendizaje automático. Tianqi lleva muchos sombreros, incluyendo su asociación con Catalyst Group y OctoML, y tiene una huella significativa en el ecosistema de código abierto, especialmente con proyectos como Apache TVM, XGBoost y MXNet."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "En una conversación sincera, TQ compartió que más allá de su persona técnica, tiene un hobby único de dibujar diagramas de diseño en cuadernos de bocetos reales, documentando su viaje a través de varios proyectos. Estos bocetos sirven como un plano para sus proyectos de software y proporcionan un registro tangible de sus procesos de pensamiento a lo largo de los años."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "El aclamado proyecto de Tianqi, XGBoost, surgió en la discusión, destacando sus orígenes y éxito inesperado. Originalmente diseñado como una alternativa a la creciente tendencia de los modelos de aprendizaje profundo, XGBoost terminó estableciendo su propio nicho, particularmente para datos tabulares donde los modelos basados en árboles sobresalen. La discusión gravitó hacia el equilibrio y la posible amalgama de modelos basados en árboles y aprendizaje profundo. TQ cree en la relevancia duradera de los modelos basados en árboles, especialmente considerando sus reglas naturales, escalabilidad e interoperabilidad. La charla concluyó con una visión del futuro, insinuando la fusión de modelos de transformadores y algoritmos basados en árboles para un procesamiento de datos mejorado."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "screenshot-2023-08-12-at-10-42-43-pm",
+            "height": 548,
+            "width": 1538,
+            "filename": "screenshot-2023-08-12-at-10-42-43-pm.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1691894611-screenshot-2023-08-12-at-10-42-43-pm.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Compilador TVM, MXNet"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Alessio mencionó el desarrollo del marco de compilación TVM por parte de Tianqi, que se lanzó aproximadamente al mismo tiempo que ONNX, buscando claridad sobre su relación. Tianqi recordó su historia con el aprendizaje profundo, mencionando su trabajo en la clasificación de ImageNet usando máquinas de Boltzmann restringidas convolucionales antes de la aparición de AlexNet. Compartió los desafíos enfrentados al crear manualmente núcleos NVIDIA CUDA, lo que tomó meses, solo para descubrir que el modelo no era muy efectivo. Esta experiencia le introdujo a las complejidades de optimizar el rendimiento en GPUs."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Después de su trabajo en XGBoost, Tianqi colaboró en MXNet, que precedió a marcos como CAFE y PyTorch. Reconociendo las dificultades en la optimización para diferentes hardware, Tianqi buscó crear una solución más automatizada y general, llevando al desarrollo de TVM. El compilador TVM puede recibir programas de aprendizaje automático, aplicar técnicas de optimización y generar código de bajo nivel compatible con varias plataformas, incluidas las de NVIDIA y no NVIDIA."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Mientras que el cambio de Tianqi de XGBoost a TVM parecía significativo para Alessio, Tianqi aclaró que su motivación era menos sobre el impacto y más sobre disfrutar el proceso de codificación y abordar desafíos. Se identificó como un solucionador de problemas, y cuando se enfrenta a desafíos, busca herramientas o crea nuevas para abordarlos. Este enfoque, mencionó, está en línea con una tendencia emergente en los sistemas de aprendizaje automático que consideran tanto las optimizaciones algorítmicas como las del sistema."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Discutiendo el crecimiento de la comunidad, Tianqi destacó MLsys, una conferencia centrada en sistemas de aprendizaje automático. Swyx señaló la participación de Tianqi en conferencias importantes como ICML y NeurIPS, sugiriendo que la organización comunitaria juega un papel en su trabajo, a lo que Tianqi respondió afirmativamente, señalando que es parte de sus responsabilidades académicas."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "abls3-img1",
+            "height": 936,
+            "width": 936,
+            "filename": "abls3-img1.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1691897144-abls3-img1.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "MLsys, MCLLM y MLC"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "En una conversación entre Swyx, Tianqi y Alessio, la discusión gira en torno a MLsys, MLCLLM y la compilación de aprendizaje automático (MLC). Aquí están los puntos clave:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "MLsys y MLCLLM"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Swyx menciona la reciente incursión de Tianqi en MLsys y su integración con MLCLLM en teléfonos móviles. Menciona el uso de Llama 2 y Vicuña, pero busca claridad sobre otros modelos disponibles."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "El viaje de MLC de Tianqi"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Tianqi explica su incursión en MLC como una evolución de su proyecto inicial TVM. El objetivo principal es construir un compilador de aprendizaje automático efectivo. A partir de la experiencia ganada con TVM, emprendieron una segunda iteración llamada TVM Unity. MLCLLM es esencialmente una iniciativa de MLC para desarrollar tecnología de compilación de aprendizaje automático que pueda aplicarse ampliamente. Un logro es hacer que los modelos de aprendizaje automático se ejecuten en teléfonos y otras plataformas universales, incluidas las Macs M2 de Apple."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Integración con PyTorch"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Respondiendo a la consulta de Swyx sobre integraciones de modelos, Tianqi destaca que, aunque muchos modelos se construyen en PyTorch, el objetivo es llevarlos a la representación de programas de TVM llamada TVM script. El objetivo es optimizar los modelos en varias plataformas y asegurar que sean portátiles y eficientes."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "MLC como una disciplina"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Swyx señala que, aunque muchas personas se especializan en compiladores, el nicho de Tianqi en MLC parece innovador. Tianqi cree que la compilación de aprendizaje automático crecerá como un campo, inspirándose en las optimizaciones de compiladores existentes e incorporando conocimientos de aprendizaje automático y sistemas."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Optimización y bibliotecas"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Discutiendo las limitaciones de depender de bibliotecas existentes para la optimización, Tianqi elabora sobre el enfoque de TVM, que combina el uso de bibliotecas disponibles y la generación automática de bibliotecas. Este método facilita el soporte para hardware menos soportado."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Técnicas esenciales de optimización"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Tianqi menciona cuatro técnicas esenciales de optimización: fusión de núcleos (combinando operaciones inteligentemente), planificación de memoria (asignando memoria eficientemente), transformación de bucles (asegurando que el código se ejecute eficientemente) y cuantificación de pesos (reduciendo el uso de memoria). Explica que estos métodos permiten tanto la eficiencia como la portabilidad en la ejecución de modelos de aprendizaje automático en varias plataformas."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "En esencia, la conversación subraya la importancia de MLC y la evolución de las plataformas y técnicas de optimización para hacer que los modelos de aprendizaje automático sean más universalmente aplicables y eficientes."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "abls3-img2",
+            "height": 936,
+            "width": 936,
+            "filename": "abls3-img2.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1691897165-abls3-img2.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "LLM en el navegador"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "En una discusión con Swyx, Tianqi arroja luz sobre la tendencia emergente de académicos, como él mismo, que pasan de publicar únicamente ideas a construir productos tangibles, como proyectos y aplicaciones de código abierto. Tianqi cree que este enfoque práctico permite a los académicos enfrentar problemas del mundo real directamente y asegurar que su investigación proporcione un valor inmediato al público. En su campo, los sistemas de aprendizaje automático, Tianqi ve el potencial de desplegar estos sistemas en manos de los usuarios para impulsar la innovación y resolver problemas genuinos."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Elabora sobre su experiencia ejecutando un modelo de 70 mil millones de parámetros en un navegador, destacando específicamente los desafíos y requisitos de ejecutar tal hazaña. Usando la última MacBook con un M2 Max y tecnología WebGPU, el equipo de Tianqi pudo ejecutar con éxito el modelo, demostrando la posibilidad de operar modelos poderosos en dispositivos de consumo sin necesidad de instalaciones. Él imagina diversos escenarios de aplicación, incluidos modelos híbridos que se ejecutan tanto en el borde como en componentes del servidor."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Alessio pregunta sobre las integraciones de modelos en el navegador, y Tianqi presenta un paquete NPM, WebILM, que permite a los desarrolladores incrustar sus modelos en aplicaciones web. Además, se está desarrollando una API REST compatible con OpenAI para simplificar aún más la integración."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Por último, Swyx menciona los desafíos de las descargas de modelos, donde Tianqi menciona el sistema de caché de Chrome que previene descargas redundantes para aplicaciones web similares. Cuando se le pregunta sobre la proliferación de proyectos de modelos locales, Tianqi enfatiza la importancia de mejorar las capacidades de la API y fomenta un ecosistema colaborativo que se enfoque en el despliegue universal."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "abls3-img3",
+            "height": 936,
+            "width": 936,
+            "filename": "abls3-img3.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1691897179-abls3-img3.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Octomel y conclusión"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "\nAlessio inicia la conversación discutiendo la participación de Tianqi como cofundador de Octomel y su reciente lanzamiento de OctoAI, un servicio de computación enfocado en la optimización del tiempo de ejecución de modelos. Pregunta sobre la evolución de Octomel de ser una herramienta tradicional de MLOps a su postura actual con OctoAI, particularmente en el contexto del cambio del mercado hacia modelos generativos preentrenados."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tianqi explica que identificaron desafíos relacionados con la escalabilidad, integración y optimización. A medida que el mercado se desplaza hacia la IA generativa, OctoAI busca simplificar el proceso y aliviar la complejidad para los usuarios, permitiéndoles enfocarse en sus modelos mientras Octomel maneja la infraestructura subyacente."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Alessio señala que un cuello de botella significativo en el mercado es la ejecución de modelos de IA. Anteriormente, el desafío era construir modelos debido a la falta de talento, pero ahora, con numerosos modelos disponibles, el desafío radica en ejecutarlos eficientemente."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tianqi subraya las complejidades asociadas con la \"ejecución\" de modelos de IA. Dada la diversidad en la disponibilidad de hardware y las solicitudes de usuarios en constante cambio, los desafíos de ejecución se han multiplicado. Gestionar eficientemente las ubicaciones de los modelos y asegurar la proximidad al entorno de ejecución son primordiales. El futuro, según Tianqi, implica aprovechar todo el hardware disponible para reducir costos y optimizar la interacción entre dispositivos de borde y la nube."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Cuando Alessio pregunta sobre los desafíos de abstraer los detalles del hardware de los usuarios finales, Tianqi enfatiza la importancia de la compatibilidad con varios hardware y el proceso iterativo continuo de refinar su producto basado en las necesidades y comentarios de los usuarios."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Swyx dirige la conversación hacia el panorama más amplio de la IA, donde Tianqi comparte su entusiasmo por los proyectos de código abierto, especialmente aquellos que promueven interacciones entre modelos, y la perspectiva de un ecosistema diverso de agentes de IA."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Swyx luego pregunta sobre posibles arquitecturas que sucedan a los transformadores. Tianqi menciona modelos como RWKV y otras redes recurrentes integradas con transformadores, enfatizando el crecimiento continuo en el espacio de modelos."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "En la ronda relámpago, Tianqi revela su sorpresa ante la rápida aparición de chatbots conversacionales. Cuando se le pregunta sobre la pregunta sin resolver más intrigante en IA, expresa su fascinación por el aprendizaje continuo y el aprendizaje de por vida para la IA."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Como conclusión final, Tianqi anima a los oyentes a adoptar un enfoque holístico al construir aplicaciones de IA. Un sistema de IA exitoso demanda la fusión de algoritmos, optimizaciones del sistema y curaciones de datos."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "abls3-img4",
+            "height": 936,
+            "width": 936,
+            "filename": "abls3-img4.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1691897193-abls3-img4.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Explora el despliegue de modelos de 70B en navegadores y iPhones. Sumérgete en XGBoost, la creación de TVM y el futuro de los despliegues universales de IA.",
+      "title": "Latent Space 8/10/23 [Resumen]: LLMs en todas partes",
+      "twitterCard": null,
+      "image": {
+        "width": 1538,
+        "height": 548,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1691894611-screenshot-2023-08-12-at-10-42-43-pm.png"
+      }
+    }
+  },
+  "topics": [
+    "LLM",
+    "Hardware",
+    "Summary",
+    "Edge"
+  ]
+}

@@ -1,0 +1,1568 @@
+{
+  "relatedBlogs": [
+    {
+      "id": "190259319",
+      "topics": [
+        "Summary",
+        "LLM",
+        "Training"
+      ],
+      "title": "Latent Space Podcast 8/16/23 [Summary] - The Mathematics of Training LLMs — with Quentin Anthony of Eleuther AI",
+      "slug": "latent-space-podcast-8-16-23-summary-the-mathematics-of-training-llms-with-que",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:19:45+01:00",
+      "description": "Explore the math behind training LLMs with Quentin Anthony from Eleuther AI. Dive into the Transformers Math 101 article & master distributed training techniques for peak GPU performance.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692324088-screenshot-2023-08-17-at-9-59-17-pm.png"
+      },
+      "seo": {
+        "description": "Dive into the Transformers Math 101 article & master distributed training techniques for peak GPU performance.",
+        "title": "Latent Space Podcast 8/16/23 [Summary] Math of Training LLMs",
+        "twitterCard": null,
+        "image": {
+          "width": 1576,
+          "height": 554,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692324088-screenshot-2023-08-17-at-9-59-17-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190259129",
+      "topics": [
+        "LLM",
+        "Hardware",
+        "Summary",
+        "Edge"
+      ],
+      "title": "Latent Space Podcast 8/10/23 [Summary]: LLMs Everywhere: Running 70B models in browsers and iPhones using MLC — with Tianqi Chen of CMU / OctoML",
+      "slug": "latent-space-podcast-8-10-23-summary-llms-everywhere-running-70b-models-in-browse",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:18:37+01:00",
+      "description": "Explore the magic of MLC with Tianqi Chen: deploying 70B models on browsers & iPhones. Dive into XGBoost, TVM's creation, & the future of universal AI deployments. ",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1691894611-screenshot-2023-08-12-at-10-42-43-pm.png"
+      },
+      "seo": {
+        "description": "Explore deploying 70B models on browsers & iPhones. Dive into XGBoost, TVM's creation, & the future of universal AI deployments. ",
+        "title": "Latent Space 8/10/23 [Summary]: LLMs Everywhere",
+        "twitterCard": null,
+        "image": {
+          "width": 1538,
+          "height": 548,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1691894611-screenshot-2023-08-12-at-10-42-43-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190259087",
+      "topics": [
+        "Summary",
+        "LLM",
+        "Code",
+        "Open Source",
+        "Small Models"
+      ],
+      "title": "Latent Space Podcast 8/4/23 [Summary] Latent Space x AI Breakdown crossover pod! ",
+      "slug": "latent-space-podcast-8-4-23-summary-latent-space-x-ai-breakdown-crossover-pod",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:16:33+01:00",
+      "description": "Join AI Breakdown & Latent Space for the summer AI tech roundup: Dive into GPT4.5, Llama 2, AI tools, the rising AI engineer, and more!",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1691539617-screenshot-2023-08-08-at-8-02-52-pm.png"
+      },
+      "seo": {
+        "description": "Dive into GPT4.5, Llama 2, AI tools, the rising AI engineer, and more!",
+        "title": "Latent Space Podcast 8/4/23 [Summary] AI Breakdown crossover",
+        "twitterCard": null,
+        "image": {
+          "width": 1578,
+          "height": 558,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1691539617-screenshot-2023-08-08-at-8-02-52-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190259172",
+      "topics": [
+        "Summary",
+        "LLM",
+        "Open Source",
+        "Small Models"
+      ],
+      "title": "Latent Space Podcast 7/19/23 [Summary] - Llama 2: The New Open LLM SOTA (ft. Nathan Lambert, Matt Bornstein, Anton Troynikov, Russell Kaplan, Whole Mars Catalog et al.)",
+      "slug": "latent-space-podcast-7-19-23-summary-llama-2-the-new-open-llm-sota-ft-nathan-lamb",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:12:38+01:00",
+      "description": "Explore Llama 2, the latest AI breakthrough with experts Nathan Lambert, Matt Bornstein & more. Dive into datasets, benchmarks & AI predictions. Llama insights & drama await in this top podcast!",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1691968295-screenshot-2023-08-13-at-7-11-06-pm.png"
+      },
+      "seo": {
+        "description": "Dive into datasets, benchmarks & AI predictions. Llama insights & drama await in this top podcast!",
+        "title": "Latent Space Podcast 7/19/23 [Summary] - Llama 2",
+        "twitterCard": null,
+        "image": {
+          "width": 1632,
+          "height": 574,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1691968295-screenshot-2023-08-13-at-7-11-06-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190259191",
+      "topics": [
+        "Summary",
+        "Code",
+        "LLM"
+      ],
+      "title": "Latent Space Podcast 7/10/23 [Summary] - Code Interpreter == GPT 4.5 (w/ Simon Willison, Alex Volkov, Aravind Srinivas, Alex Graveley, et al.)",
+      "slug": "latent-space-podcast-7-10-23-summary-code-interpreter-gpt-4-5-w-simon-willison-al",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:09:26+01:00",
+      "description": "Explore ChatGPT's Code Interpreter: a game-changer in AI. Dive into its 1000x capabilities leap with Simon, Alex & top AI experts. #CodeAugmentedInference #GPT4_5",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692048911-screenshot-2023-08-14-at-3-34-05-pm.png"
+      },
+      "seo": {
+        "description": "Explore ChatGPT's Code Interpreter: a game-changer in AI. Dive into its 1000x capabilities leap with Simon, Alex & top AI experts. ",
+        "title": "Latent Space Podcast  [Summary] Code Interpreter = GPT 4.5",
+        "twitterCard": null,
+        "image": {
+          "width": 1596,
+          "height": 582,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692048911-screenshot-2023-08-14-at-3-34-05-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190259216",
+      "topics": [
+        "Summary",
+        "Open Source"
+      ],
+      "title": "Latent Space Podcast 7/2/23 [Summary] AI Trends: a Latent Space x Practical AI crossover pod!",
+      "slug": "latent-space-podcast-7-2-23-summary-ai-trends-a-latent-space-x-practical-ai-cross",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:08:36+01:00",
+      "description": "Explore the fusion of Practical AI & Latent Space as they delve into 2023's top AI trends, reflect on standout episodes, and share insights on navigating the AI evolution.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692146916-screenshot-2023-08-15-at-5-20-38-pm.png"
+      },
+      "seo": {
+        "description": "2023's top AI trends, reflect on standout episodes, and share insights on navigating the AI evolution.",
+        "title": "Latent Space Podcast 7/2/23 [Summary] AI Trends ",
+        "twitterCard": null,
+        "image": {
+          "width": 1600,
+          "height": 532,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692146916-screenshot-2023-08-15-at-5-20-38-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190259238",
+      "topics": [
+        "Hardware",
+        "LLM",
+        "Summary"
+      ],
+      "title": "Latent Space Podcast 6/20/23 [Summary] - Commoditizing the Petaflop — with George Hotz of the tiny corp",
+      "slug": "latent-space-podcast-6-20-23-summary-commoditizing-the-petaflop-with-george-ho",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:07:15+01:00",
+      "description": "George Hotz of tiny corp challenges Nvidia & Google! Dive into the world of AMD collaborations, insights on ggml, Mojo, Elon & GPT-4, plus a peek into AI Girlfriend. ",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692154615-screenshot-2023-08-15-at-10-55-40-pm.png"
+      },
+      "seo": {
+        "description": "George Hotz of tiny corp challenges Nvidia & Google! AMD collaborations, insights on ggml, Mojo, Elon & GPT-4, plus a peek into AI Girlfriend. ",
+        "title": "Latent Space Podcast 6/20/23 [Summary] - George Hotz ",
+        "twitterCard": null,
+        "image": {
+          "width": 1586,
+          "height": 508,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692154615-screenshot-2023-08-15-at-10-55-40-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190259294",
+      "topics": [
+        "LLM",
+        "Functions",
+        "Summary"
+      ],
+      "title": "Latent Space Podcast 6/14/23 [Summary] - Emergency Pod: OpenAI's new Functions API, 75% Price Drop, 4x Context Length (w/ Alex Volkov, Simon Willison, Riley Goodside, Joshua Lochner, Stefania Druga, Eric Elliott, Mayo Oshin et al)",
+      "slug": "latent-space-podcast-6-14-23-summary-emergency-pod-openai-s-new-functions-api-75",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:05:04+01:00",
+      "description": "Explore the June 2023 OpenAI updates with top AI engineers from Scale, Microsoft, Pinecone, & Huggingface. Dive into the Code x LLM paradigms and discover Recursive Function Agents.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692221668-screenshot-2023-08-16-at-5-32-29-pm.png"
+      },
+      "seo": {
+        "description": "Explore the June 2023 OpenAI updates with top AI engineers from Scale, Microsoft, Pinecone, & Huggingface. ",
+        "title": "Latent Space Podcast 6/20/23 [Summary] - Emergency Pod",
+        "twitterCard": null,
+        "image": {
+          "width": 1626,
+          "height": 606,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692221668-screenshot-2023-08-16-at-5-32-29-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190259333",
+      "topics": [
+        "LLM",
+        "Summary",
+        "UX"
+      ],
+      "title": "Latent Space Podcast 6/8/23 [Summary] - From RLHF to RLHB: The Case for Learning from Human Behavior - with Jeffrey Wang and Joe Reeve of Amplitude",
+      "slug": "latent-space-podcast-6-8-23-summary-from-rlhf-to-rlhb-the-case-for-learning-from",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:02:33+01:00",
+      "description": "Explore AI & analytics with Jeffrey Wang & Joe Reeve on Latent Space Live! Dive into why AI values Analytics and the power of first-party behavioral data. ",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692386432-screenshot-2023-08-18-at-3-17-04-pm.png"
+      },
+      "seo": {
+        "description": "Explore AI & analytics with Jeffrey Wang & Joe Reeve on Latent Space Live! Dive into why AI values Analytics and the power of first-party behavioral data. ",
+        "title": "Latent Space Podcast 6/8/23 [Summary] - From RLHF to RLHB",
+        "twitterCard": null,
+        "image": {
+          "width": 1674,
+          "height": 550,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692386432-screenshot-2023-08-18-at-3-17-04-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190260528",
+      "topics": [
+        "Summary",
+        "LLM",
+        "UX"
+      ],
+      "title": "Latent Space Podcast 6/1/23 [Summary] - Building the AI × UX Scenius — with Linus Lee of Notion AI",
+      "slug": "latent-space-podcast-6-1-23-summary-building-the-ai-x-ux-scenius-with-linus-le",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:00:12+01:00",
+      "description": "Explore Notion AI's transformative approach to AI and UX. Dive into the future of AI-augmented workspaces, the value beyond chat interfaces, and insights on effective knowledge work. Recap of AI×UX NYC meetup included!",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692390655-screenshot-2023-08-18-at-4-28-51-pm.png"
+      },
+      "seo": {
+        "description": "Explore Notion AI's transformative approach to AI and UX. ",
+        "title": "Latent Space Podcast 6/1/23 [Summary] - AI × UX Scenius",
+        "twitterCard": null,
+        "image": {
+          "width": 1614,
+          "height": 546,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692390655-screenshot-2023-08-18-at-4-28-51-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190260557",
+      "topics": [
+        "Summary",
+        "Code",
+        "LLM",
+        "Agents"
+      ],
+      "title": "Latent Space Podcast 5/25/23 [Summary] - Debugging the Internet with AI agents – with Itamar Friedman of Codium AI and AutoGPT",
+      "slug": "latent-space-podcast-5-25-23-summary-debugging-the-internet-with-ai-agents-with",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:58:27+01:00",
+      "description": "Explore the future of AI with Itamar Friedman from Codium AI on 'Debugging the Internet'. Dive into 'Extreme DRY' agents, the rapid sync of specs & tests, and the balance between code & testing. Plus, insights from Toran & an exclusive look at AutoGPT's roadmap!",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692397413-screenshot-2023-08-18-at-6-10-09-pm.png"
+      },
+      "seo": {
+        "description": "Dive into 'Extreme DRY' agents, the rapid sync of specs & tests, and the balance between code & testing. ",
+        "title": "Latent Space Pod 5/25/23 [Summary] Debugging the Internet",
+        "twitterCard": null,
+        "image": {
+          "width": 1568,
+          "height": 548,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692397413-screenshot-2023-08-18-at-6-10-09-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190260606",
+      "topics": [
+        "LLM",
+        "Training",
+        "Agents",
+        "Multimodal"
+      ],
+      "title": "Latent Space Podcast 5/8/23 [Summary] - The AI Founder Gene: Being Early, Building Fast, and Believing in Greatness — with Sharif Shameem of Lexica",
+      "slug": "latent-space-podcast-5-8-23-summary-the-ai-founder-gene-being-early-building-fast",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:52:09+01:00",
+      "description": "Ep.11 with Sharif Shameem of Lexica: Dive into the AI founder mindset, uncovering the secrets to pioneering innovation, building game-changing tech, training models, and the intriguing potential of Agents and genomic sequencing. ",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692501984-screenshot-2023-08-19-at-11-24-05-pm.png"
+      },
+      "seo": {
+        "description": "Ep.11 with Sharif Shameem of Lexica: Dive into the AI founder mindset, uncovering the secrets to pioneering innovation.",
+        "title": "Latent Space Pod 5/8/23 [Summary] The AI Founder Gene",
+        "twitterCard": null,
+        "image": {
+          "width": 1606,
+          "height": 550,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692501984-screenshot-2023-08-19-at-11-24-05-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190260640",
+      "topics": [
+        "Summary",
+        "Open Source",
+        "LLM"
+      ],
+      "title": "Latent Space Podcast 5/5/23 [Summary] - No Moat: Closed AI gets its Open Source wakeup call — ft. Simon Willison",
+      "slug": "latent-space-podcast-5-5-23-summary-no-moat-closed-ai-gets-its-open-source-wakeup",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:49:18+01:00",
+      "description": "Explore 'No Moat: Closed AI's Open Source Awakening' with Simon Willison. Dive into leaked Google Moat memo insights, Google Brain Drain, and Python's speed boost with Mojo.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692566921-screenshot-2023-08-20-at-5-25-53-pm.png"
+      },
+      "seo": {
+        "description": "Explore 'No Moat: Closed AI's Open Source Awakening' with Simon Willison. Dive into leaked Google Moat memo insights.",
+        "title": "Latent Space Podcast 5/5/23 [Summary] - No Moat",
+        "twitterCard": null,
+        "image": {
+          "width": 1602,
+          "height": 532,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692566921-screenshot-2023-08-20-at-5-25-53-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190260671",
+      "topics": [
+        "LLM",
+        "Code",
+        "Summary"
+      ],
+      "title": "Latent Space Podcast 5/3/23 [Summary] - Training a SOTA Code LLM in 1 week and Quantifying the Vibes — with Reza Shabani of Replit",
+      "slug": "latent-space-podcast-5-3-23-summary-training-a-sota-code-llm-in-1-week-and-quanti",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:46:08+01:00",
+      "description": "Ep. 10 with Reza Shabani: Dive deep into the rapid training of a state-of-the-art Code LLM, explore Replit Ghostwriter's future, and journey from Finance to AI. Discover the transition from Kaplan to Chinchilla and more!",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692584998-screenshot-2023-08-20-at-10-17-26-pm.png"
+      },
+      "seo": {
+        "description": "Ep. 10 with Reza Shabani: Dive deep into the rapid training of a state-of-the-art Code LLM!",
+        "title": "Latent Space Pod 5/3/23 [Summary] - SOTA Code LLM",
+        "twitterCard": null,
+        "image": {
+          "width": 1566,
+          "height": 530,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692584998-screenshot-2023-08-20-at-10-17-26-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190629271",
+      "topics": [
+        "LLM",
+        "Small Models",
+        "Summary"
+      ],
+      "title": "Latent Space Podcast 4/28/23 [Summary] - Mapping the future of *truly* Open Models and Training Dolly for $30 — with Mike Conover of Databricks",
+      "slug": "latent-space-podcast-4-28-23-summary-mapping-the-future-of-truly-open-models-and",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:33:12+01:00",
+      "description": "Explore the future of open models with Mike Conover of Databricks. Dive deep into Dolly's creation, its transition from 1.0 to 2.0, & the influences behind its development. Ep.9 touches on model infrastructure, Databricks' vision, & more. #AI #OpenModels #Dolly",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1694038707-screenshot-2023-09-06-at-3-12-24-pm.png"
+      },
+      "seo": {
+        "description": "Ep.9 touches on model infrastructure, Databricks' vision, & more. #AI #OpenModels #Dolly",
+        "title": "Latent Space Pod 4/28/23 [Summary] - Mike of Databricks",
+        "twitterCard": null,
+        "image": {
+          "width": 1572,
+          "height": 628,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1694038707-screenshot-2023-09-06-at-3-12-24-pm.png"
+        }
+      }
+    },
+    {
+      "id": "191164291",
+      "topics": [
+        "LLM",
+        "Enterprise",
+        "Summary"
+      ],
+      "title": "Latent Space Podcast 4/21/23 [Summary] - AI-powered Search for the Enterprise — with Deedy Das of Glean",
+      "slug": "latent-space-podcast-4-21-23-summary-ai-powered-search-for-the-enterprise-with",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:31:31+01:00",
+      "description": "Ep.8: Dive into AI in enterprise search with Deedy Das of Glean. Unpack challenges in creating an AI search giant, Google vs ChatGPT comparisons, AI infrastructure intricacies, spotting AI-generated text, and why businesses need more than just Document QA.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1694134074-screenshot-2023-09-07-at-5-43-48-pm.png"
+      },
+      "seo": {
+        "description": "Ep.8: Dive into AI in enterprise search with Deedy Das of Glean. Unpack challenges in creating an AI search giant, Google vs ChatGPT ...",
+        "title": "Latent Space Podcast 4/21/23 [Summary] - with Deedy Das ",
+        "twitterCard": null,
+        "image": {
+          "width": 1608,
+          "height": 530,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1694134074-screenshot-2023-09-07-at-5-43-48-pm.png"
+        }
+      }
+    },
+    {
+      "id": "191165673",
+      "topics": [
+        "Summary",
+        "Vision"
+      ],
+      "title": "Latent Space Podcast 4/13/23 [Summary] - Segment Anything Model and the Hard Problems of Computer Vision — with Joseph Nelson of Roboflow",
+      "slug": "latent-space-podcast-4-13-23-summary-segment-anything-model-and-the-hard-problems",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:30:03+01:00",
+      "description": "Explore Ep.7 with Joseph Nelson on the Segment Anything Model by Meta. Dive deep into Computer Vision's future, the significance of OCR, Image Segmentation, and beyond. #Roboflow #AI",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1694150379-screenshot-2023-09-07-at-10-15-52-pm.png"
+      },
+      "seo": {
+        "description": "Dive deep into Computer Vision's future, the significance of OCR, Image Segmentation, and beyond. #Roboflow #AI",
+        "title": "Latent Space Podcast 4/13/23 [Summary] - Segment Anything ",
+        "twitterCard": null,
+        "image": {
+          "width": 1604,
+          "height": 604,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1694150379-screenshot-2023-09-07-at-10-15-52-pm.png"
+        }
+      }
+    }
+  ],
+  "blogContent": {
+    "id": "190259111",
+    "topics": [
+      "Summary",
+      "Transformers",
+      "Training",
+      "Open Source"
+    ],
+    "title": " Latent Space Podcast 7/26/23 [Summary] FlashAttention 2: making Transformers 800% faster - Tri Dao of Together AI",
+    "slug": "latent-space-podcast-7-26-23-summary-flashattention-2-making-transformers-800-fas",
+    "authorName": "Prof. Otto Nomos",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+    },
+    "_publishedAt": "2023-10-05T09:14:13+01:00",
+    "description": "Discover how FlashAttention revolutionized AI speed with Tri Dao, as he unveils the power of FlashAttention 2, dives into Stanford's Hazy Lab & future AI insights.",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1691543194-screenshot-2023-08-08-at-8-43-59-pm.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Introduction"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "On the Latent Space podcast, Alessio, a Partner and CTO-in-Residence at Decibel Partners, hosts a discussion with guest Tri Dao. Tri recently completed his PhD at Stanford and is a main author of the groundbreaking FlashAttention paper pivotal in the Transformers era. Tri shares insights into efficient transformer training, inference, and long-range sequence models. He is set to be an assistant professor in Computer Science at Princeton in the coming year. Tri also recently joined as the Chief Scientist at the company, Together, which is responsible for RedPajama."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tri reveals a personal tidbit that he initially intended to major in economics during his early days at Stanford, but after taking math classes, he shifted his focus to mathematics. This decision played a significant role in steering him towards his current career in math, computer science, and AI research."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "The discussion delves deep into FlashAttention and its recently released successor, FlashAttention 2. The innovation in FlashAttention is its capability to scale linearly, as opposed to the traditional quadratic scaling. Tri emphasizes the importance of avoiding approximation in attention mechanisms. He explains that while other methods focus on approximating attention, their main objective was efficiency and memory. Their approach saw a wall-clock speed up of 2 to 4 times, making training 2 to 4 times longer possible without added costs."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "A significant aspect of their innovation involves merging ideas from both machine learning and system designs, particularly kernel fusion. This technique optimizes memory reading and writing, which consumes most of the time in attention mechanisms. While kernel fusion has its merits, Tri acknowledges that it may limit flexibility, especially for researchers keen on tweaking the attention process. However, the benefits are primarily in leveraging faster memory (SRAM) compared to the more massive but slower memory (HBM), capitalizing on the asymmetric memory hierarchy present in GPUs."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "screenshot-2023-08-08-at-8-43-59-pm",
+            "height": 594,
+            "width": 1648,
+            "filename": "screenshot-2023-08-08-at-8-43-59-pm.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1691543194-screenshot-2023-08-08-at-8-43-59-pm.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Memory Hierarchies in Hardware"
+                    },
+                    {
+                      "type": "span",
+                      "value": ": There are multiple levels of memory storage in hardware systems:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "SRAM (Static Random-Access Memory) is faster but much smaller. Its size is unlikely to grow substantially due to spatial constraints on-chip."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "HBM (High Bandwidth Memory) is larger and resides off-chip. Its growth potential is larger due to having more space."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Challenges and Evolution"
+                    },
+                    {
+                      "type": "span",
+                      "value": ":"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "The inherent spatial constraints on SRAM might prevent it from getting much larger in size."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "HBM's growth is forecasted, both in size and speed."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "There's a strong emphasis on designing algorithms that account for this memory disparity. Just like CPUs have small cache sizes but vast DRAM, algorithms must learn to efficiently utilize these variances."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "FlashAttention's Relevance"
+                    },
+                    {
+                      "type": "span",
+                      "value": ":"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Attention mechanisms in neural networks, like FlashAttention, have proven their worth over time. Even though the exact implementations might change, the foundational ideas are expected to remain."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Attention is anticipated to be pivotal in state-of-the-art architectures in the coming years."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Research Popularity & Utility"
+                    },
+                    {
+                      "type": "span",
+                      "value": ":"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Tri discusses the unpredicted popularity of FlashAttention and emphasizes the significance of code as an artifact in research. It's not just about presenting an idea but ensuring that it can be efficiently and effectively utilized by others."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Hazy Research Group"
+                    },
+                    {
+                      "type": "span",
+                      "value": ":"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Hazy Research is a diverse research group at Stanford. It incorporates experts across various domains from algorithms, systems, to applications."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "This diversity facilitates a robust feedback loop where theoretical ideas can be built into systems and then practically applied. Direct feedback from applications helps refine and improve theoretical concepts."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Chris Re, an advisor at Hazy Research, emphasizes understanding fundamental concepts, which aids in creating more impactful research."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "abls2-img2",
+            "height": 936,
+            "width": 936,
+            "filename": "abls2-img2.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1691544005-abls2-img2.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Academia vs Industry in AI/ML Research"
+                    },
+                    {
+                      "type": "span",
+                      "value": ":"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Alessio inquired about the balance and comparison between academia and industry, especially in the field of AI/ML."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Tri believes both sectors play complementary roles. Industry has the advantage in scaling due to access to resources, such as computing power. However, many foundational ideas, like the Attention mechanism, originated from academia."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Post the success of models like GPT-2, companies like OpenAI emphasized scaling, achieving remarkable results."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Academia focuses on evaluations, understanding the underpinnings of models, and taking riskier research bets. They have the freedom to delve deeper into understanding and even undertake projects with a lower chance of success."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Tri suggests industry may offer better compensation and work-life balance, while academia offers more intellectual freedom. Career choice depends on individual preference."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Role of Evaluations"
+                    },
+                    {
+                      "type": "span",
+                      "value": ":"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Alessio highlighted how benchmarks can influence model development since models need to score well on them to gain attention and funding."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Tri emphasized the importance of evaluations and benchmarks. He notes that both academia and industry contribute to the field, understanding emerging use cases and ensuring advancements."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "FlashAttention 2 & NVIDIA"
+                    },
+                    {
+                      "type": "span",
+                      "value": ":"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Tri introduced FlashAttention 2, a project developed over months, which started as an exploration of NVIDIA’s CUTLASS library but evolved into a tool that is twice as fast."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Currently, FlashAttention 2 works on NVIDIA GPUs. However, the main idea of addressing memory hierarchy asymmetry is universal and can be applied across different hardware."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Hardware Lottery"
+                    },
+                    {
+                      "type": "span",
+                      "value": ":"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Alessio referred to Sara Hooker’s idea of the \"hardware lottery\", where potential better architectures may not see the light of day because they aren't optimized for the dominant hardware like NVIDIA."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Tri acknowledged the hardware lottery and the feedback loop it creates with software frameworks. For example, since transformers are currently dominant, most optimization work centers around them."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Compilers might offer a way out of this cycle. They allow for efficient performance across diverse hardware platforms. Tri cited the Mojo language as an example, as it aims to make AI models run efficiently on various devices."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "abls2-img3",
+            "height": 936,
+            "width": 936,
+            "filename": "abls2-img3.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1691544017-abls2-img3.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "AI Chips and On-chip Memory"
+                    },
+                    {
+                      "type": "span",
+                      "value": ":"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Alessio inquires about AI chip companies like Cerebras that focus on integrating everything onto the chip to combat memory bandwidth issues."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Tri acknowledges the promising direction, mentioning Tesla's Dojo supercomputer, which seeks to maximize on-chip memory speed and eliminate repetitive data transfers. A challenge is the high manufacturing cost of on-chip memory, which is pricier per gigabyte than off-chip memory. Tri cites Cerebros, which has overcome some of these obstacles with its proprietary software stack and compiler."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "He also points out the complexity of supporting tools like PyTorch on such hardware, given the rapid evolution of AI models and the longer time frame required for hardware development."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Influence of Industry Pace on PhD Research"
+                    },
+                    {
+                      "type": "span",
+                      "value": ":"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Alessio queries the influence of the rapidly progressing industry on research, particularly in cases where newer model architectures might make older topics obsolete."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Tri reflects on the challenges faced by researchers and emphasizes the importance of understanding the fundamentals. He shares his own PhD experience and believes that acquiring foundational knowledge and skills is crucial for evolving as a researcher."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Transformer Alternatives"
+                    },
+                    {
+                      "type": "span",
+                      "value": ":"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Alessio brings up the potential alternatives to Transformer models."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Tri references a wager between Jonathan Franco and Sasha Rush on this subject. He highlights several promising Transformer alternatives that have emerged, such as state space methods, which offer better performance for capturing long-range information without quadratic scaling. He also discusses the resurgence of recurrent neural networks (RNNs) adapted for today's AI landscape."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Tri emphasizes the academic quest to determine whether attention in models is essential. He suggests that alternative architectures might be more suited for applications with long sequences (like high-resolution images or audio) or those that require high-throughput generation. Tri is optimistic about RNNs for their potential in batch processing."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "abls2-img4",
+            "height": 936,
+            "width": 936,
+            "filename": "abls2-img4.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1691544032-abls2-img4.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Open-source AI:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Alessio comments on the evolution and ambiguity of what defines \"open-source\" in AI, drawing comparisons between software licenses and the transparency of AI models and datasets. He mentions the introduction of models such as Red Pajama, LLAMA1, and LLAMA2 and their impact on the AI industry. LLAMA2 is especially notable as its weightings are available to the public, amounting to $3 million of computational power donated to the public domain."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Tri acknowledges the contribution of Meta in training LLAMA1 and LLAMA2 and praises the reduced restrictions on the latter. He predicts a significant impact on the open-source AI landscape due to the usability of models like LLAMA2 in business settings. Tri emphasizes the shift in the balance of power from closed-source models to open models. He highlights the importance of democratizing decision-making in AI rather than concentrating it in the hands of a few corporations."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "The conversation shifts to datasets, with Alessio opining that open datasets have a greater impact than open models. Tri speaks about the challenges and rewards of releasing datasets, pointing out the need to incentivize data release. He cites the Dolly-15K dataset as a positive instance of a company championing open-source datasets."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Discussing his journey, Tri reveals his reasons for joining \"Together,\" a company focused on open-source models. He appreciates the company's philosophy, alignment with his values, and the chance to conduct research in areas he's passionate about."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Concluding lightning round:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Tri mentions he was surprised by AI's newfound ability to understand jokes."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "He cites \"reasoning\" as an exciting unsolved question in AI, emphasizing the potential need for dedicated reasoning modules in future AI models."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Tri's takeaway message is the importance of understanding both algorithms and the systems they run on, emphasizing the excitement and results found at the intersection of machine learning and systems."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "abls2-img1",
+            "height": 936,
+            "width": 936,
+            "filename": "abls2-img1.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1691544076-abls2-img1.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Discover how FlashAttention revolutionized AI speed with Tri Dao, as he unveils the power of FlashAttention 2",
+      "title": " Latent Space Podcast 7/26/23 [Summary] FlashAttention 2",
+      "twitterCard": null,
+      "image": {
+        "width": 1648,
+        "height": 594,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1691543194-screenshot-2023-08-08-at-8-43-59-pm.png"
+      }
+    }
+  },
+  "topics": [
+    "Summary",
+    "Transformers",
+    "Training",
+    "Open Source"
+  ]
+}

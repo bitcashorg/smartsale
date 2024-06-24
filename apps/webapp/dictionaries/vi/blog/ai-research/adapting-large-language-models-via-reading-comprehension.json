@@ -1,0 +1,475 @@
+{
+  "relatedBlogs": [],
+  "blogContent": {
+    "id": "198277124",
+    "topics": [
+      "LLM",
+      "Tài chính",
+      "Chăm sóc sức khỏe",
+      "Pháp lý",
+      "Gợi ý"
+    ],
+    "title": "Thích ứng Mô hình Ngôn ngữ Lớn thông qua Đọc hiểu",
+    "slug": "adapting-large-language-models-via-reading-comprehension",
+    "authorName": "Prof. Otto Nomos",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+    },
+    "_publishedAt": "2024-05-27T03:34:22+01:00",
+    "description": "Bình luận & Đánh giá Tóm tắt",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Được xuất bản vào Ngày 18 tháng 9"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tác giả:"
+                    },
+                    {
+                      "url": "https://huggingface.co/cdxhhhh",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Daixuan Cheng"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ",Shaohan Huang,"
+                    },
+                    {
+                      "url": "https://huggingface.co/gitnlp",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Furu Wei"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tóm tắt"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Chúng tôi khám phá việc tiếp tục đào tạo trước trên các kho dữ liệu cụ thể ngành ảnh hưởng đến mô hình ngôn ngữ lớn như thế nào, cho thấy việc đào tạo trên kho dữ liệu thô trao cho mô hình kiến thức ngành, nhưng làm giảm đáng kể khả năng gợi ý của nó cho việc trả lời câu hỏi. Lấy cảm hứng từ việc học của con người qua đọc hiểu--thực hành sau khi đọc cải thiện khả năng trả lời câu hỏi dựa trên kiến thức đã học--chúng tôi đề xuất một phương pháp đơn giản để chuyển đổi kho dữ liệu thô thành văn bản đọc hiểu. Mỗi văn bản thô được làm giàu với một loạt các nhiệm vụ liên quan đến nội dung của nó. Phương pháp của chúng tôi, có khả năng mở rộng cao và áp dụng cho bất kỳ kho dữ liệu đào tạo trước nào, liên tục cải thiện hiệu suất trên các nhiệm vụ khác nhau trong ba lĩnh vực khác nhau: sinh học y khoa, tài chính và luật. Đáng chú ý, mô hình ngôn ngữ 7B của chúng tôi đạt hiệu suất cạnh tranh với các mô hình cụ thể ngành có quy mô lớn hơn nhiều, như BloombergGPT-50B. Hơn nữa, chúng tôi chứng minh rằng các văn bản đọc hiểu cụ thể ngành có thể cải thiện hiệu suất của mô hình ngay cả trên các chuẩn mực chung, cho thấy tiềm năng phát triển một mô hình chung cho nhiều lĩnh vực hơn. Mô hình, mã và dữ liệu của chúng tôi sẽ có sẵn tại https://github.com/microsoft/LMOps."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "url": "https://arxiv.org/abs/2309.09530",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Xem trang arXiv"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "https://arxiv.org/pdf/2309.09530",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Xem PDF"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Bình luận"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Bài báo có tựa đề \"Thích ứng Mô hình Ngôn ngữ Lớn thông qua Đọc hiểu\" đề cập đến việc thích ứng mô hình ngôn ngữ lớn cho các lĩnh vực cụ thể."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Những hiểu biết chính:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Ảnh hưởng của Việc Đào tạo Trước Tiếp tục"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Nghiên cứu cho thấy việc đào tạo trước trên các tập dữ liệu cụ thể ngành cung cấp kiến thức ngành nhưng ảnh hưởng đến khả năng của mô hình trả lời các gợi ý."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Học tập Theo Cảm hứng Con Người"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Bài báo lấy cảm hứng từ cách con người cải thiện hiểu biết về một chủ đề—bằng cách thực hành đọc hiểu sau khi đọc. Các tác giả chuyển đổi dữ liệu thô thành các nhiệm vụ đọc hiểu."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Khả năng Ứng dụng Rộng"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Phương pháp của họ có thể mở rộng và áp dụng cho các lĩnh vực khác nhau, từ sinh học y khoa đến luật."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Hiệu suất Cạnh tranh"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Mô hình 7B của họ cho thấy kết quả cạnh tranh so với các mô hình lớn hơn nhiều như BloombergGPT-50B, cho thấy hiệu quả trong đào tạo."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Tiềm năng Tổng quát hóa"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Phương pháp không chỉ cụ thể cho ngành. Nó cũng cải thiện hiệu suất trong các nhiệm vụ chung, cho thấy khả năng ứng dụng rộng rãi của nó."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tác động Thực tế Tiềm năng:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Thích ứng Hiệu quả với Lĩnh vực"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Với sự gia tăng của các nhiệm vụ cụ thể ngành trong các ngành như chăm sóc sức khỏe, luật và tài chính, việc có một cách hiệu quả để thích ứng các mô hình ngôn ngữ chung cho các lĩnh vực này là vô giá."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Tiết kiệm Tài nguyên"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Bằng cách cho thấy kết quả cạnh tranh với một mô hình 7B so với các mô hình lớn hơn như BloombergGPT-50B, phương pháp này ngụ ý tiết kiệm chi phí và thời gian về mặt đào tạo mô hình."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Cải thiện Đọc hiểu"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Bằng cách chuyển đổi dữ liệu thô thành các nhiệm vụ đọc hiểu, mô hình có thể được sử dụng cho nhiều ứng dụng, như hệ thống gia sư, tóm tắt nội dung và hơn thế nữa."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Khả năng Ứng dụng Rộng"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Thực tế rằng phương pháp của họ cũng có thể cải thiện các chuẩn mực chung cho thấy rằng nó có thể được sử dụng cho nhiều nhiệm vụ, làm cho nó linh hoạt."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Thách thức:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Sự đánh đổi giữa Tính cụ thể và Tính tổng quát"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Như mọi khi với thích ứng lĩnh vực, có một sự cân bằng để đạt được giữa việc trở nên quá cụ thể cho một lĩnh vực và giữ khả năng tổng quát hóa."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Với nhu cầu tăng lên đối với các mô hình cụ thể ngành trong các ứng dụng thực tế, cách tiếp cận mới của việc chuyển đổi dữ liệu thô thành các nhiệm vụ đọc hiểu, và tiềm năng cho khả năng ứng dụng rộng rãi:"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Tôi đánh giá tác động thực tế của bài báo này là 8,5 trên 10."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Cách tiếp cận này trình bày một tiềm năng đáng kể để biến đổi cách thích ứng LLM với các nhiệm vụ cụ thể ngành, đảm bảo cả hiệu quả và hiệu quả."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "researchpaper9",
+            "height": 816,
+            "width": 1456,
+            "filename": "researchpaper9.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Bình luận & Đánh giá Tóm tắt",
+      "title": "Thích ứng Mô hình Ngôn ngữ Lớn thông qua Đọc hiểu",
+      "twitterCard": null,
+      "image": {
+        "width": 1456,
+        "height": 816,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      }
+    }
+  },
+  "topics": [
+    "LLM",
+    "Finance",
+    "Healthcare",
+    "Legal",
+    "Prompting"
+  ]
+}
