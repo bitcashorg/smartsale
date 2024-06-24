@@ -66,6 +66,21 @@ async function copyJsonFiles(locale: SiteLocale) {
                 )
               })
 
+              const countTokens = (text: string) => {
+                return text.split(/\s+/).length
+              }
+
+              if (
+                countTokens(blogContentPayload) > 4000 ||
+                countTokens(relatedBlogsPayload) > 4000
+              ) {
+                console.log(
+                  '😵‍💫 Payload exceeds 4000 tokens, skipping translation',
+                  targetPath
+                )
+                break
+              }
+
               const {
                 translation: blogTranslation,
                 finishReason: blogFinishReason
