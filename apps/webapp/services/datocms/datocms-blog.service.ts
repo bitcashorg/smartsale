@@ -76,7 +76,7 @@ export async function getArticleSections(
   )
   const fileName = `blog-index.json`
   const filePath = path.resolve(dirPath, fileName)
-  console.log({ dirPath, filePath })
+  console.log('getArticleSections', { dirPath, filePath })
   // return []
   // return cached translations
   try {
@@ -94,7 +94,10 @@ export async function getArticleSections(
           'utf8'
         )
       )
-      if (englishVersion) return englishVersion.sections
+      if (englishVersion) {
+        console.log('😬 returning english version')
+        return englishVersion.sections
+      }
     } catch (error) {
       console.log('error', error)
     }
