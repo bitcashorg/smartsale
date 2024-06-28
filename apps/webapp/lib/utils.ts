@@ -55,18 +55,15 @@ export async function promiseAllWithConcurrencyLimit<T>(
   for (let i = 0; i < tasks.length; i++) {
     const task = tasks[i]
 
-    const p = Promise.resolve().then(() =>
-      task().then(result => {
-        results[i] = result
-      })
-    )
+    const p = task().then(result => {
+      results[i] = result
+    })
 
     executing.push(p)
 
     if (executing.length >= concurrencyLimit) {
-      await Promise.race(executing).then(() => {
-        executing.splice(executing.indexOf(p), 1)
-      })
+      await Promise.race(executing)
+      executing.splice(executing.indexOf(p), 1)
     }
   }
 

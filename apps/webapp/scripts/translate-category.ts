@@ -1,7 +1,7 @@
 import { locales } from '@/dictionaries/locales'
 import { BlogArticleRecord } from '@/services/datocms'
 import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
-import { openAiTranslate } from '@/services/openai'
+import { anthropicTranslate } from '@/services/anthropic'
 
 import * as fs from 'fs/promises'
 import _ from 'lodash'
@@ -95,15 +95,17 @@ async function processFile(
 
     // translate page seo
     if (optimized.pageSeoDescription || optimized.pageSeoTitle) {
-      const seoTranslation = await openAiTranslate(
+      const seoTranslation = await anthropicTranslate(
         JSON.stringify(_.pick(optimized, 'pageSeoDescription', 'pageSeoTitle')),
         locale
       )
+      if (!seoTranslation) throw new Error('❌ seoTranslation not found')
+
       if (
         seoTranslation.finishReason === 'stop' &&
         seoTranslation.translation
       ) {
-        const textTranslated = JSON.parse(seoTranslation.translation)
+        const textTranslated = seoTranslation.translation
         translatedContent.pageSeo = {
           ...englishVersion.pageSeo,
           title: textTranslated.pageSeoTitle,
@@ -118,16 +120,17 @@ async function processFile(
 
     // translate section names
     let translatedSectionNames: string[] = []
-    const sectionTranslation = await openAiTranslate(
+    const sectionTranslation = await anthropicTranslate(
       JSON.stringify(englishVersion.sections.map(s => s.name)),
       locale
     )
+    if (!sectionTranslation) throw new Error('❌ sectionTranslation not found')
     if (
       sectionTranslation.finishReason === 'stop' &&
       sectionTranslation.translation
     ) {
       // console.log('🧑🏻‍💻 Section names translated!')
-      translatedSectionNames = JSON.parse(sectionTranslation.translation).map(
+      translatedSectionNames = sectionTranslation.translation.map(
         (name: string) => name.trim()
       )
       // console.log('translatedSectionNames', translatedSectionNames)
@@ -136,44 +139,49 @@ async function processFile(
     }
 
     //translate sections
-    const sectionPromises = englishVersion.sections.map(
-      async (section, index) => {
+    const sectionActions = englishVersion.sections.map(
+      (section, index) => async () => {
         const newSection: Section = {
           ...section,
           name: translatedSectionNames[index],
           articles: []
         }
-        // console.log('newSection.name', newSection.name)
-        // translate articles in section
+        console.log(`🧑🏻‍💻 Translting section ${newSection.name}`)
+
         const _articles =
           optimized.sections.find(s => s.name === section.name)?.articles || []
         const articleOpenAICalls = _articles.map(article => async () => {
-          // console.log(`🧑🏻‍💻 Translting ${article.title}!`)
-          const articleTranslation = await openAiTranslate(
+          console.log(`🧑🏻‍💻 Translting ${article.title}`)
+          const articleTranslation = await anthropicTranslate(
             JSON.stringify(article),
             locale
           )
+          if (!articleTranslation)
+            throw new Error('❌ articleTranslation not found')
           if (
             articleTranslation.finishReason === 'stop' &&
             articleTranslation.translation
           ) {
-            return JSON.parse(articleTranslation.translation)
+            return articleTranslation.translation
           } else {
-            console.log('ERROR TRANSLATING ARTICLE', article.title)
+            throw new Error('❌ articleTranslation not found')
           }
         })
 
         // console.log('🧑🏻‍💻 Articles translating!')
         newSection.articles = await promiseAllWithConcurrencyLimit(
           articleOpenAICalls,
-          3
+          1
         )
         // console.log('🧑🏻‍💻 Articles translated!')
         return newSection
       }
     )
 
-    translatedContent.sections = await Promise.all(sectionPromises)
+    translatedContent.sections = await promiseAllWithConcurrencyLimit(
+      sectionActions,
+      1
+    )
 
     await fs.writeFile(
       targetPath,
@@ -215,7 +223,7 @@ async function processLocale(): Promise<void> {
     locales
       .filter(locale => locale !== 'en')
       .map(locale => () => copyJsonFiles(locale)),
-    2
+    1
   )
 }
 

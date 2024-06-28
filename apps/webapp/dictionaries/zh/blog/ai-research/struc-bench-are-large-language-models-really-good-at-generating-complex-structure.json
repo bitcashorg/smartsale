@@ -4,69 +4,93 @@
       "id": "198277124",
       "topics": [
         "LLM",
-        "Finanzas",
-        "Salud",
+        "Finance",
+        "Healthcare",
         "Legal",
         "Prompting"
       ],
-      "title": "Adaptación de Modelos de Lenguaje Grandes a través de la Comprensión de Lectura",
+      "title": "Adapting Large Language Models via Reading Comprehension",
       "slug": "adapting-large-language-models-via-reading-comprehension",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
       },
       "_publishedAt": "2024-05-27T03:34:22+01:00",
-      "description": "Comentario y Calificación del Resumen",
+      "description": "Abstract Commentary & Rating",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
       },
       "seo": {
-        "title": "Adaptación de Modelos de Lenguaje Grandes a través de la Comprensión de Lectura",
-        "description": "Comentario y Calificación del Resumen\n"
+        "description": "Abstract Commentary & Rating\n",
+        "title": "Adapting Large Language Models via Reading Comprehension",
+        "twitterCard": null,
+        "image": {
+          "width": 1456,
+          "height": 816,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+        }
       }
     },
     {
       "id": "198277342",
       "topics": [
         "LLM",
-        "Multilingüe"
+        "Multilingual"
       ],
-      "title": "OpenBA: Un Modelo Asimétrico Bilingüe de 15B de Código Abierto Preentrenado desde Cero",
+      "title": "OpenBA: An Open-sourced 15B Bilingual Asymmetric seq2seq Model Pre-trained from Scratch",
       "slug": "openba-an-open-sourced-15b-bilingual-asymmetric-seq2seq-model-pre-trained-from-sc",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
       },
       "_publishedAt": "2024-05-27T03:34:02+01:00",
-      "description": "Comentario y Calificación del Resumen",
+      "description": "Abstract Commentary & Rating",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
       },
       "seo": {
-        "title": "OpenBA: Un Modelo Asimétrico Bilingüe de 15B de Código Abierto...",
-        "description": "Comentario y Calificación del Resumen\n"
+        "description": "Abstract Commentary & Rating\n",
+        "title": "OpenBA: An Open-sourced 15B Bilingual ... Model ...",
+        "twitterCard": null,
+        "image": {
+          "width": 1456,
+          "height": 816,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+        }
       }
     },
     {
       "id": "198277117",
       "topics": [
         "LLM",
-        "Recuperación"
+        "Retrieval"
       ],
-      "title": "PDFTriage: Respuesta a Preguntas sobre Documentos Largos y Estructurados",
+      "title": "PDFTriage: Question Answering over Long, Structured Documents",
       "slug": "pdftriage-question-answering-over-long-structured-documents",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
       },
       "_publishedAt": "2024-05-27T03:33:49+01:00",
-      "description": "Comentario y Calificación del Resumen",
+      "description": "Abstract Commentary & Rating",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
       },
       "seo": {
-        "title": "PDFTriage: Respuesta a Preguntas sobre Documentos Largos y Estructurados",
-        "description": "Comentario y Calificación del Resumen\n"
+        "description": "Abstract Commentary & Rating\n",
+        "title": "PDFTriage: Q & A over Long, Structured Documents",
+        "twitterCard": null,
+        "image": {
+          "width": 1456,
+          "height": 816,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+        }
       }
     },
     {
@@ -75,66 +99,90 @@
         "LLM",
         "Fine-tuning"
       ],
-      "title": "Sorted LLaMA: Desbloqueando el Potencial de las Capas Intermedias de Modelos de Lenguaje Grandes para Inferencia Dinámica Usando Fine-Tuning Ordenado (SoFT)",
+      "title": "Sorted LLaMA: Unlocking the Potential of Intermediate Layers of Large Language Models for Dynamic Inference Using Sorted Fine-Tuning (SoFT)",
       "slug": "sorted-llama-unlocking-the-potential-of-intermediate-layers-of-large-language-mod",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
       },
       "_publishedAt": "2024-05-27T03:33:31+01:00",
-      "description": "Comentario y Calificación del Resumen",
+      "description": "Abstract Commentary & Rating",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
       },
       "seo": {
-        "title": "Sorted LLaMA: Desbloqueando el Potencial de las Capas Intermedias...",
-        "description": "Comentario y Calificación del Resumen\n"
+        "description": "Abstract Commentary & Rating\n",
+        "title": "Sorted LLaMA: ... Inference Using Sorted Fine-Tuning (SoFT)",
+        "twitterCard": null,
+        "image": {
+          "width": 1456,
+          "height": 816,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+        }
       }
     },
     {
       "id": "198277150",
       "topics": [
         "LLM",
-        "Ajuste por Instrucción",
+        "Instruction Tuning",
         "Multimodal"
       ],
-      "title": "Un Estudio Empírico de la Escalabilidad de Modelos Multimodales Grandes Ajustados por Instrucción",
+      "title": "An Empirical Study of Scaling Instruct-Tuned Large Multimodal Models",
       "slug": "an-empirical-study-of-scaling-instruct-tuned-large-multimodal-models",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
       },
       "_publishedAt": "2024-05-27T03:33:15+01:00",
-      "description": "Comentario y Calificación del Resumen",
+      "description": "Abstract Commentary & Rating",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
       },
       "seo": {
-        "title": "Un Estudio Empírico de la Escalabilidad de Modelos Multimodales Grandes Ajustados por Instrucción",
-        "description": "Comentario y Calificación del Resumen\n"
+        "description": "Abstract Commentary & Rating\n",
+        "title": "An Empirical Study of Scaling Instruct-Tuned LLMs",
+        "twitterCard": null,
+        "image": {
+          "width": 1456,
+          "height": 816,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+        }
       }
     },
     {
       "id": "198277217",
       "topics": [
         "LLM",
-        "Privacidad",
+        "Privacy",
         "Edge"
       ],
-      "title": "Recuperación de Enmascaramiento de Preservación de Privacidad con Modelos de Lenguaje Grandes",
+      "title": "  Recovering from Privacy-Preserving Masking with Large Language Models",
       "slug": "recovering-from-privacy-preserving-masking-with-large-language-models",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
       },
       "_publishedAt": "2024-05-25T03:38:26+01:00",
-      "description": "Comentario y Calificación del Resumen",
+      "description": "Abstract Commentary & Rating",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
       },
       "seo": {
-        "title": "Recuperación de Enmascaramiento de Preservación de Privacidad con Modelos de Lenguaje Grandes",
-        "description": "Comentario y Calificación del Resumen\n"
+        "description": "Abstract Commentary & Rating\n",
+        "title": "  Recovering from Privacy-Preserving Masking with LLMs",
+        "twitterCard": null,
+        "image": {
+          "width": 1456,
+          "height": 816,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+        }
       }
     },
     {
@@ -143,20 +191,28 @@
         "LLM",
         "Chat"
       ],
-      "title": "S3-DST: Segmentación de Diálogos de Dominio Abierto Estructurados y Seguimiento de Estado en la Era de los Modelos de Lenguaje Grandes",
+      "title": "S3-DST: Structured Open-Domain Dialogue Segmentation and State Tracking in the Era of LLMs",
       "slug": "s3-dst-structured-open-domain-dialogue-segmentation-and-state-tracking-in-the-era",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
       },
       "_publishedAt": "2024-05-25T03:38:11+01:00",
-      "description": "Comentario y Calificación del Resumen",
+      "description": "Abstract Commentary & Rating",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
       },
       "seo": {
-        "title": "S3-DST: Segmentación de Diálogos de Dominio Abierto Estructurados...",
-        "description": "Comentario y Calificación del Resumen\n"
+        "description": "Abstract Commentary & Rating\n",
+        "title": "S3-DST: Structured Open-Domain Dialogue Segmentation...",
+        "twitterCard": null,
+        "image": {
+          "width": 1456,
+          "height": 816,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+        }
       }
     },
     {
@@ -165,240 +221,320 @@
         "LLM",
         "Audio"
       ],
-      "title": "Aumentando el Texto para la Comprensión del Lenguaje Hablado con Modelos de Lenguaje Grandes",
+      "title": "Augmenting text for spoken language understanding with Large Language Models",
       "slug": "augmenting-text-for-spoken-language-understanding-with-large-language-models",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
       },
       "_publishedAt": "2024-05-25T03:37:49+01:00",
-      "description": "Comentario y Calificación del Resumen",
+      "description": "Abstract Commentary & Rating",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
       },
       "seo": {
-        "title": "Aumentando el Texto para la Comprensión del Lenguaje Hablado...",
-        "description": "Comentario y Calificación del Resumen\n"
+        "description": "Abstract Commentary & Rating\n",
+        "title": "Augmenting text for spoken language understanding ...",
+        "twitterCard": null,
+        "image": {
+          "width": 1456,
+          "height": 816,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+        }
       }
     },
     {
       "id": "198277277",
       "topics": [
         "LLM",
-        "Compresión"
+        "Compression"
       ],
-      "title": "El Modelado del Lenguaje es Compresión",
+      "title": "Language Modeling Is Compression",
       "slug": "language-modeling-is-compression",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
       },
       "_publishedAt": "2024-05-25T03:37:32+01:00",
-      "description": "Comentario y Calificación del Resumen",
+      "description": "Abstract Commentary & Rating",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
       },
       "seo": {
-        "title": "El Modelado del Lenguaje es Compresión",
-        "description": "Comentario y Calificación del Resumen\n"
+        "description": "Abstract Commentary & Rating\n",
+        "title": "Language Modeling Is Compression",
+        "twitterCard": null,
+        "image": {
+          "width": 1456,
+          "height": 816,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+        }
       }
     },
     {
       "id": "198277345",
       "topics": [
         "LLM",
-        "Multilingüe"
+        "Multilingual"
       ],
-      "title": "Baichuan 2: Modelos de Lenguaje a Gran Escala Abiertos",
+      "title": "Baichuan 2: Open Large-scale Language Models",
       "slug": "baichuan-2-open-large-scale-language-models",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
       },
       "_publishedAt": "2024-05-24T05:59:10+01:00",
-      "description": "Comentario y Calificación del Resumen",
+      "description": "Abstract Commentary & Rating",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
       },
       "seo": {
-        "title": "Baichuan 2: Modelos de Lenguaje a Gran Escala Abiertos",
-        "description": "Comentario y Calificación del Resumen\n"
+        "description": "Abstract Commentary & Rating\n",
+        "title": "Baichuan 2: Open Large-scale Language Models",
+        "twitterCard": null,
+        "image": {
+          "width": 1456,
+          "height": 816,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+        }
       }
     },
     {
       "id": "198277446",
       "topics": [
         "LLM",
-        "Alucinación"
+        "Hallucination"
       ],
-      "title": "La Cadena de Verificación Reduce la Alucinación en Modelos de Lenguaje Grandes",
+      "title": "Chain-of-Verification Reduces Hallucination in Large Language Models",
       "slug": "chain-of-verification-reduces-hallucination-in-large-language-models",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
       },
       "_publishedAt": "2024-05-24T05:21:05+01:00",
-      "description": "Comentario y Calificación del Resumen",
+      "description": "Abstract Commentary & Rating",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
       },
       "seo": {
-        "title": "La Cadena de Verificación Reduce la Alucinación en Modelos de Lenguaje Grandes",
-        "description": "Comentario y Calificación del Resumen\n"
+        "description": "Abstract Commentary & Rating\n",
+        "title": "Chain-of-Verification Reduces Hallucination in LLMs",
+        "twitterCard": null,
+        "image": {
+          "width": 1456,
+          "height": 816,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+        }
       }
     },
     {
       "id": "198277458",
       "topics": [
         "LLM",
-        "Alucinación",
-        "Entidad",
-        "Datos Estructurados"
+        "Hallucination",
+        "Entity",
+        "Structured Data"
       ],
-      "title": "LMDX: Extracción y Localización de Información de Documentos Basada en Modelos de Lenguaje",
+      "title": "LMDX: Language Model-based Document Information Extraction and Localization",
       "slug": "lmdx-language-model-based-document-information-extraction-and-localization",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
       },
       "_publishedAt": "2024-05-24T05:20:31+01:00",
-      "description": "Comentario y Calificación del Resumen",
+      "description": "Abstract Commentary & Rating",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
       },
       "seo": {
-        "title": "LMDX: Extracción y Localización de Información de Documentos Basada en Modelos de Lenguaje",
-        "description": "Comentario y Calificación del Resumen\n"
+        "description": "Abstract Commentary & Rating\n",
+        "title": "LMDX: ..Document Information Extraction and Localization",
+        "twitterCard": null,
+        "image": {
+          "width": 1456,
+          "height": 816,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+        }
       }
     },
     {
       "id": "198277209",
       "topics": [
         "LLM",
-        "Datos"
+        "Data"
       ],
-      "title": "SlimPajama-DC: Comprendiendo Combinaciones de Datos para el Entrenamiento de Modelos de Lenguaje Grandes",
+      "title": "  SlimPajama-DC: Understanding Data Combinations for LLM Training",
       "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
       },
       "_publishedAt": "2023-10-04T23:43:32+01:00",
-      "description": "Comentario y Calificación del Resumen",
+      "description": "Abstract Commentary & Rating",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
       },
       "seo": {
-        "title": "SlimPajama-DC: Comprendiendo Combinaciones de Datos para el Entrenamiento de Modelos de Lenguaje Grandes",
-        "description": "Comentario y Calificación del Resumen\n"
+        "description": "Abstract Commentary & Rating\n",
+        "title": "  SlimPajama-DC: Understanding Data Combos for LLM Training",
+        "twitterCard": null,
+        "image": {
+          "width": 1456,
+          "height": 816,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
+        }
       }
     },
     {
       "id": "198277109",
       "topics": [
         "LLM",
-        "Razonamiento"
+        "Reasoning"
       ],
-      "title": "La Decodificación Contrastiva Mejora el Razonamiento en Modelos de Lenguaje Grandes",
+      "title": "Contrastive Decoding Improves Reasoning in Large Language Models",
       "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
       },
       "_publishedAt": "2023-10-04T22:18:11+01:00",
-      "description": "Comentario y Calificación del Resumen",
+      "description": "Abstract Commentary & Rating",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
       },
       "seo": {
-        "title": "La Decodificación Contrastiva Mejora el Razonamiento en Modelos de Lenguaje Grandes",
-        "description": "Comentario y Calificación del Resumen\n"
+        "description": "Abstract Commentary & Rating\n",
+        "title": "Contrastive Decoding Improves Reasoning in LLMs",
+        "twitterCard": null,
+        "image": {
+          "width": 1456,
+          "height": 816,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+        }
       }
     },
     {
       "id": "198277099",
       "topics": [
         "LLM",
-        "Multilingüe",
-        "Datos"
+        "Multilingual",
+        "Data"
       ],
-      "title": "CulturaX: Un Conjunto de Datos Limpio, Enorme y Multilingüe para Modelos de Lenguaje Grandes en 167 Idiomas",
+      "title": "CulturaX: A Cleaned, Enormous, and Multilingual Dataset for Large Language Models in 167 Languages",
       "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
       },
       "_publishedAt": "2023-10-04T22:14:53+01:00",
-      "description": "Comentario y Calificación del Resumen",
+      "description": "Abstract Commentary & Rating",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
       },
       "seo": {
-        "title": "CulturaX: Un Conjunto de Datos Limpio, Enorme y Multilingüe...",
-        "description": "Comentario y Calificación del Resumen\n"
+        "description": "Abstract Commentary & Rating\n",
+        "title": "CulturaX: A Cleaned, Enormous, and Multilingual Dataset...",
+        "twitterCard": null,
+        "image": {
+          "width": 1456,
+          "height": 816,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+        }
       }
     },
     {
       "id": "198044929",
       "topics": [
         "LLM",
-        "Datos",
-        "Agentes"
+        "Data",
+        "Agents"
       ],
-      "title": "Una Fuente de Datos para Agentes de Razonamiento Incorporados",
+      "title": "A Data Source for Reasoning Embodied Agents",
       "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
       },
       "_publishedAt": "2023-10-04T07:33:25+01:00",
-      "description": "Comentario y Calificación del Resumen",
+      "description": "Abstract Commentary & Rating",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
       },
       "seo": {
-        "title": "Una Fuente de Datos para Agentes de Razonamiento Incorporados",
-        "description": "Comentario y Calificación del Resumen\n"
+        "description": "Abstract Commentary & Rating\n",
+        "title": "A Data Source for Reasoning Embodied Agents",
+        "twitterCard": null,
+        "image": {
+          "width": 1456,
+          "height": 816,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
+        }
       }
     },
     {
       "id": "198044900",
       "topics": [
         "LLM",
-        "Entidad",
+        "Entity",
         "Fine-tuning"
       ],
-      "title": "Aprovechando la Información Contextual para la Detección Eficaz de la Saliencia de Entidades",
+      "title": "Leveraging Contextual Information for Effective Entity Salience Detection",
       "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
       },
       "_publishedAt": "2023-10-04T07:30:50+01:00",
-      "description": "Comentario y Calificación del Resumen",
+      "description": "Abstract Commentary & Rating",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
       },
       "seo": {
-        "title": "Aprovechando la Información Contextual para la Detección Eficaz de la Saliencia de Entidades",
-        "description": "Comentario y Calificación del Resumen\n"
+        "description": "Abstract Commentary & Rating\n",
+        "title": "Leveraging Contextual Info ...Entity Salience Detection",
+        "twitterCard": null,
+        "image": {
+          "width": 1456,
+          "height": 816,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+        }
       }
     }
   ],
   "blogContent": {
     "id": "198277196",
     "topics": [
-      "LLM",
-      "Datos Estructurados"
+      "大型语言模型",
+      "结构化数据"
     ],
-    "title": "Struc-Bench: ¿Son realmente buenos los modelos de lenguaje grandes en generar datos estructurados complejos?",
+    "title": "Struc-Bench：大型语言模型真的擅长生成复杂结构化数据吗？",
     "slug": "struc-bench-are-large-language-models-really-good-at-generating-complex-structure",
     "authorName": "Prof. Otto Nomos",
     "authorPicture": {
       "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
     },
     "_publishedAt": "2024-05-25T03:38:38+01:00",
-    "description": "Comentario y calificación del resumen",
+    "description": "摘要评论和评分",
     "thumbnail": {
       "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
     },
@@ -415,7 +551,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Publicado el 16 de septiembre·Destacado en "
+                      "value": "Published on Sep 16·Featured in "
                     },
                     {
                       "url": "https://huggingface.co/papers?date=2023-09-19",
@@ -429,7 +565,7 @@
                     },
                     {
                       "type": "span",
-                      "value": " el 18 de septiembreAutores:Xiangru Tang,Yiming Zong,"
+                      "value": " on Sep 18Authors:Xiangru Tang,Yiming Zong,"
                     },
                     {
                       "url": "https://huggingface.co/yilunzhao",
@@ -467,7 +603,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Resumen"
+                      "value": "每日论文"
                     }
                   ]
                 },
@@ -476,7 +612,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "A pesar del poder de los modelos de lenguaje grandes (LLM) como GPT-4, todavía tienen dificultades con tareas que requieren generar salidas complejas y estructuradas. En este estudio, evaluamos la capacidad de los LLM actuales para generar datos estructurados complejos y proponemos un enfoque de ajuste fino consciente de la estructura como solución para mejorar esta habilidad. Para realizar una evaluación integral, proponemos Struc-Bench, que incluye cinco LLM representativos (es decir, GPT-NeoX 20B, GPT-3.5, GPT-4 y Vicuna) y los evaluamos en nuestros conjuntos de datos cuidadosamente construidos que abarcan texto sin formato, tablas HTML y LaTeX. Basándonos en nuestro análisis del rendimiento actual del modelo, identificamos errores de formato comunes específicos y áreas de mejora potencial. Para abordar los requisitos de formato complejo, utilizamos FormatCoT (Cadena de Pensamientos) para generar instrucciones de formato a partir de salidas objetivo. Nuestros experimentos muestran que nuestro método de ajuste fino consciente de la estructura, cuando se aplica a LLaMA-7B, mejora significativamente la adherencia a las restricciones del lenguaje natural, superando a otros LLM evaluados. Basándonos en estos resultados, presentamos un mapa de habilidades de las capacidades del modelo desde seis dimensiones (es decir, cobertura, formato, razonamiento, comprensión, pragmática y alucinación). Este mapa destaca las debilidades de los LLM en el manejo de salidas estructuradas complejas y sugiere direcciones prometedoras para futuros trabajos. Nuestro código y modelos se pueden encontrar en https://github.com/gersteinlab/Struc-Bench."
+                      "value": "Despite the power of Large Language Models (LLMs) like GPT-4, they still struggle with tasks that require generating complex, structured outputs. In this study, we assess the capability of Current LLMs in generating complex structured data and propose a structure-aware fine-tuning approach as a solution to improve this ability. To perform a comprehensive evaluation, we propose Struc-Bench, include five representative LLMs (i.e., GPT-NeoX 20B, GPT-3.5, GPT-4, and Vicuna) and evaluate them on our carefully constructed datasets spanning raw text, HTML, and LaTeX tables. Based on our analysis of current model performance, we identify specific common formatting errors and areas of potential improvement. To address complex formatting requirements, we utilize FormatCoT (Chain-of-Thought) to generate format instructions from target outputs. Our experiments show that our structure-aware fine-tuning method, when applied to LLaMA-7B, significantly improves adherence to natural language constraints, outperforming other evaluated LLMs. Based on these results, we present an ability map of model capabilities from six dimensions (i.e., coverage, formatting, reasoning, comprehension, pragmatics, and hallucination). This map highlights the weaknesses of LLMs in handling complex structured outputs and suggests promising directions for future work. Our code and models can be found at https://github.com/gersteinlab/Struc-Bench."
                     }
                   ]
                 },
@@ -499,7 +635,7 @@
                       "children": [
                         {
                           "type": "span",
-                          "value": "Ver página de arXiv"
+                          "value": "View arXiv page"
                         }
                       ]
                     },
@@ -519,7 +655,7 @@
                       "children": [
                         {
                           "type": "span",
-                          "value": "Ver PDF"
+                          "value": "View PDF"
                         }
                       ]
                     }
@@ -531,7 +667,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Comentario"
+                      "value": "Commentary"
                     }
                   ]
                 },
@@ -540,7 +676,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "El artículo \"Struc-Bench: ¿Son realmente buenos los modelos de lenguaje grandes en generar datos estructurados complejos?\" aborda un desafío significativo en el dominio de los modelos de lenguaje grandes (LLM): generar salidas estructuradas complejas."
+                      "value": "阿尔曼·科汉"
                     }
                   ]
                 },
@@ -549,7 +685,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Puntos clave:"
+                      "value": "Key Takeaways:"
                     }
                   ]
                 },
@@ -568,11 +704,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Identificación del problema"
+                              "value": "Problem Identification"
                             },
                             {
                               "type": "span",
-                              "value": ": A pesar de la destreza de los LLM modernos, su capacidad para generar salidas estructuradas como tablas, HTML o LaTeX sigue siendo un desafío."
+                              "value": ": Despite the prowess of modern LLMs, their ability to generate structured outputs like tables, HTML, or LaTeX, remains challenging."
                             }
                           ]
                         }
@@ -589,11 +725,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Benchmark Struc-Bench"
+                              "value": "Struc-Bench Benchmark"
                             },
                             {
                               "type": "span",
-                              "value": ": Este trabajo introduce un benchmark integral para evaluar la capacidad de los LLM en generar datos estructurados, evaluando varios modelos de última generación en varios formatos estructurados."
+                              "value": ": This work introduces a comprehensive benchmark to assess the capability of LLMs in generating structured data, evaluating several state-of-the-art models across various structured formats."
                             }
                           ]
                         }
@@ -610,11 +746,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Análisis detallado"
+                              "value": "Detailed Analysis"
                             },
                             {
                               "type": "span",
-                              "value": ": Los investigadores identifican errores de formato comunes en las salidas de los LLM, proporcionando información sobre las debilidades de estos modelos cuando se les asigna la tarea de generar contenido estructurado."
+                              "value": ": The researchers identify common formatting errors in LLM outputs, providing insights into the weaknesses of these models when tasked with generating structured content."
                             }
                           ]
                         }
@@ -631,11 +767,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Ajuste fino consciente de la estructura"
+                              "value": "Structure-Aware Fine-tuning"
                             },
                             {
                               "type": "span",
-                              "value": ": Se introduce un método novedoso, FormatCoT, para generar instrucciones de formato a partir de salidas objetivo, mejorando la adherencia del modelo a los requisitos estructurales complejos."
+                              "value": ": A novel method, FormatCoT, is introduced to generate format instructions from target outputs, improving the model's adherence to complex structural requirements."
                             }
                           ]
                         }
@@ -652,11 +788,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Mapa de habilidades"
+                              "value": "Ability Map"
                             },
                             {
                               "type": "span",
-                              "value": ": Los autores presentan un mapa que detalla las capacidades del modelo en seis dimensiones, destacando áreas de fortalezas y debilidades."
+                              "value": ": The authors present a map detailing model capabilities across six dimensions, highlighting areas of strengths and weaknesses."
                             }
                           ]
                         }
@@ -669,7 +805,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Impacto potencial en el mundo real:"
+                      "value": "Potential Real-World Impact:"
                     }
                   ]
                 },
@@ -688,11 +824,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Generación de salidas complejas"
+                              "value": "Complex Output Generation"
                             },
                             {
                               "type": "span",
-                              "value": ": Los hallazgos y las soluciones propuestas pueden mejorar las habilidades de los LLM para generar salidas estructuradas complejas, vitales para tareas como la generación de documentos, el diseño de sitios web y la creación de tablas de datos."
+                              "value": ": The findings and proposed solutions can advance LLMs' abilities to generate complex structured outputs, vital for tasks like document generation, website design, and data table creation."
                             }
                           ]
                         }
@@ -709,11 +845,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Mejores evaluaciones de modelos"
+                              "value": "Better Model Evaluations"
                             },
                             {
                               "type": "span",
-                              "value": ": Struc-Bench puede convertirse en un benchmark estándar para futuros modelos, asegurando que se prueben sus capacidades en la generación de salidas estructuradas."
+                              "value": ": Struc-Bench can become a standard benchmark for future models, ensuring they're tested for their capabilities in structured output generation."
                             }
                           ]
                         }
@@ -730,11 +866,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Datos estructurados en aplicaciones"
+                              "value": "Structured Data in Applications"
                             },
                             {
                               "type": "span",
-                              "value": ": Las capacidades mejoradas en la generación de datos estructurados pueden mejorar aplicaciones como la redacción automática de informes, la generación de código o los sistemas de gestión de contenido."
+                              "value": ": Improved capabilities in structured data generation can enhance applications like automatic report writing, code generation, or content management systems."
                             }
                           ]
                         }
@@ -751,11 +887,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Guía para futuras investigaciones"
+                              "value": "Guidance for Future Research"
                             },
                             {
                               "type": "span",
-                              "value": ": La identificación de errores comunes y el mapa de habilidades guiarán a los investigadores sobre dónde enfocar sus esfuerzos."
+                              "value": ": The identification of common errors and the ability map will guide researchers on where to focus their efforts."
                             }
                           ]
                         }
@@ -768,7 +904,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Desafíos:"
+                      "value": "Challenges:"
                     }
                   ]
                 },
@@ -787,11 +923,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Complejidad"
+                              "value": "Complexity"
                             },
                             {
                               "type": "span",
-                              "value": ": Aunque los métodos propuestos muestran promesa, hay una complejidad inherente en la generación de contenido estructurado, y perfeccionar esto seguirá siendo un desafío."
+                              "value": ": While the proposed methods show promise, there's inherent complexity in generating structured content, and perfecting this will remain a challenge."
                             }
                           ]
                         }
@@ -808,11 +944,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Adopción"
+                              "value": "Adoption"
                             },
                             {
                               "type": "span",
-                              "value": ": El impacto más amplio dependerá de cómo la comunidad adopte el benchmark y el método de ajuste fino consciente de la estructura en su investigación y aplicaciones."
+                              "value": ": The broader impact would depend on how the community adopts the benchmark and the structure-aware fine-tuning method in their research and applications."
                             }
                           ]
                         }
@@ -825,7 +961,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Considerando la naturaleza crítica de generar datos estructurados y las posibles implicaciones de mejorar esta habilidad en los LLM:"
+                      "value": "Considering the critical nature of generating structured data and the potential implications of improving this ability in LLMs:"
                     }
                   ]
                 },
@@ -834,7 +970,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Calificaría el impacto en el mundo real de este artículo como un 9 de 10."
+                      "value": "I'd rate the real-world impact of this paper as a 9 out of 10."
                     }
                   ]
                 },
@@ -843,7 +979,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "La introducción de un benchmark de datos estructurados, las ideas sobre los errores del modelo y un enfoque novedoso de ajuste fino tienen el potencial de empujar los límites de lo que los LLM pueden lograr en tareas de generación de datos estructurados en el mundo real."
+                      "value": "The introduction of a structured data benchmark, insights into model errors, and a novel fine-tuning approach have the potential to push the boundaries of what LLMs can achieve in real-world structured data generation tasks."
                     }
                   ]
                 }
@@ -865,8 +1001,8 @@
       }
     ],
     "seo": {
-      "description": "Comentario y calificación del resumen\n",
-      "title": "Struc-Bench:..Generando datos estructurados complejos?",
+      "description": "摘要评论和评分",
+      "title": "Struc-Bench：..生成复杂结构化数据？",
       "twitterCard": null,
       "image": {
         "width": 1456,
