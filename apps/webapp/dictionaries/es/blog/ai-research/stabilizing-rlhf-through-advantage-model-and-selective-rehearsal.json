@@ -6,14 +6,14 @@
       "LLM",
       "RLHF"
     ],
-    "title": "Estabilización de RLHF a través del Modelo de Ventaja y el Ensayo Selectivo",
+    "title": "Estabilizando RLHF a traves del Modelo de Ventaja y Ensayo Selectivo",
     "slug": "stabilizing-rlhf-through-advantage-model-and-selective-rehearsal",
     "authorName": "Prof. Otto Nomos",
     "authorPicture": {
       "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
     },
     "_publishedAt": "2024-05-24T05:22:15+01:00",
-    "description": "Comentario y Calificación del Resumen",
+    "description": "Comentario y Calificacion del Resumen",
     "thumbnail": {
       "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
     },
@@ -30,7 +30,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Publicado el 18 de septiembre"
+                      "value": "Published on Sep 18"
                     }
                   ]
                 },
@@ -39,7 +39,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Autores:"
+                      "value": "Authors:"
                     },
                     {
                       "url": "https://huggingface.co/Baolin",
@@ -77,7 +77,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Resumen"
+                      "value": "Abstract"
                     }
                   ]
                 },
@@ -86,7 +86,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Los Modelos de Lenguaje Grande (LLM) han revolucionado el procesamiento del lenguaje natural, pero alinear estos modelos con los valores y preferencias humanas usando RLHF sigue siendo un desafío significativo. Este desafío se caracteriza por varias inestabilidades, como el hacking de recompensas y el olvido catastrófico. En este informe técnico, proponemos dos innovaciones para estabilizar el entrenamiento de RLHF: 1) Modelo de Ventaja, que modela directamente la puntuación de ventaja, es decir, recompensa extra en comparación con las recompensas esperadas y regula la distribución de puntuaciones a través de tareas para prevenir el hacking de recompensas. 2) Ensayo Selectivo, que mitiga el olvido catastrófico seleccionando estratégicamente los datos para el entrenamiento PPO y el ensayo de conocimientos. Nuestro análisis experimental en conjuntos de datos públicos y propietarios revela que los métodos propuestos no solo aumentan la estabilidad en el entrenamiento de RLHF, sino que también logran puntuaciones de recompensa y tasas de éxito más altas."
+                      "value": "Large Language Models (LLMs) have revolutionized natural language processing, yet aligning these models with human values and preferences using RLHF remains a significant challenge. This challenge is characterized by various instabilities, such as reward hacking and catastrophic forgetting. In this technical report, we propose two innovations to stabilize RLHF training: 1) Advantage Model, which directly models advantage score i.e., extra reward compared to the expected rewards and regulates score distributions across tasks to prevent reward hacking. 2) Selective Rehearsal, which mitigates catastrophic forgetting by strategically selecting data for PPO training and knowledge rehearsing. Our experimental analysis on public and proprietary datasets reveals that the proposed methods not only increase stability in RLHF training but also achieve higher reward scores and win rates."
                     }
                   ]
                 },
@@ -433,8 +433,8 @@
       }
     ],
     "seo": {
-      "description": "Comentario y Calificación del Resumen\n",
-      "title": "Estabilización de RLHF ... Modelo de Ventaja y Ensayo Selectivo",
+      "description": "Comentario y Calificacion del Resumen",
+      "title": "Estabilizando RLHF ... Modelo de Ventaja y Ensayo Selectivo",
       "twitterCard": null,
       "image": {
         "width": 1456,

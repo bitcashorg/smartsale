@@ -1,5 +1,5 @@
 import { getDictionary } from '@/dictionaries'
-import { locales } from '@/dictionaries/locales'
+import { Lang, locales } from '@/dictionaries/locales'
 import { AuctionBids } from '@/components/routes/auction/auction-bids'
 import { AuctionDataCard } from '@/components/routes/auction/auction-data-card'
 import { ProjectHeader } from '@/components/routes/project/project-header'
@@ -17,7 +17,6 @@ import {
   getProjectBySlug,
   getProjects
 } from '@/lib/projects'
-import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
 import { redirect } from 'next/navigation'
 
 export default async function AuctionPage({ params }: ProjectPageProps) {
@@ -75,7 +74,7 @@ export async function generateStaticParams(): Promise<ProjectPageParams[]> {
   return params
 }
 
-type ProjectPageParams = { project: string; lang: SiteLocale }
+type ProjectPageParams = { project: string; lang: Lang }
 type ProjectPageProps = {
   params: ProjectPageParams
 }

@@ -1,7 +1,7 @@
 {
   "sections": [
     {
-      "name": "LLM",
+      "name": "大语言模型",
       "slug": "llm",
       "articles": [
         {
@@ -11,16 +11,16 @@
             "金融",
             "医疗保健",
             "法律",
-            "提示"
+            "提示工程"
           ],
-          "title": "通过阅读理解适应大型语言模型",
+          "title": "通过阅读理解来适应大型语言模型",
           "slug": "adapting-large-language-models-via-reading-comprehension",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-27T03:34:22+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -41,17 +41,17 @@
         {
           "id": "198277342",
           "topics": [
-            "大型语言模型",
-            "多语种"
+            "大语言模型",
+            "多语言"
           ],
-          "title": "OpenBA：一个开源的150亿参数双语不对称序列到序列模型，从零开始预训练",
+          "title": "OpenBA: 一个从头预训练的开源150亿参数双语非对称seq2seq模型",
           "slug": "openba-an-open-sourced-15b-bilingual-asymmetric-seq2seq-model-pre-trained-from-sc",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-27T03:34:02+01:00",
-          "description": "摘要评论与评分",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -72,17 +72,17 @@
         {
           "id": "198277117",
           "topics": [
-            "大型语言模型",
+            "大语言模型",
             "检索"
           ],
-          "title": "PDFTriage: 对长篇结构化文档的问题回答",
+          "title": "PDFTriage: 长结构化文档的问答系统",
           "slug": "pdftriage-question-answering-over-long-structured-documents",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-27T03:33:49+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -103,17 +103,17 @@
         {
           "id": "198277138",
           "topics": [
-            "LLM",
-            "Fine-tuning"
+            "大型语言模型",
+            "微调"
           ],
-          "title": "Sorted LLaMA: Unlocking the Potential of Intermediate Layers of Large Language Models for Dynamic Inference Using Sorted Fine-Tuning (SoFT)",
+          "title": "排序LLaMA：通过排序微调（SoFT）解锁大型语言模型中间层的动态推理潜力",
           "slug": "sorted-llama-unlocking-the-potential-of-intermediate-layers-of-large-language-mod",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-27T03:33:31+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -134,18 +134,18 @@
         {
           "id": "198277150",
           "topics": [
-            "LLM",
-            "Instruction Tuning",
-            "Multimodal"
+            "大语言模型",
+            "指令微调",
+            "多模态"
           ],
-          "title": "An Empirical Study of Scaling Instruct-Tuned Large Multimodal Models",
+          "title": "大规模指令微调大型多模态模型的实证研究",
           "slug": "an-empirical-study-of-scaling-instruct-tuned-large-multimodal-models",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-27T03:33:15+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -166,18 +166,18 @@
         {
           "id": "198277160",
           "topics": [
-            "LLM",
-            "代理",
+            "大语言模型",
+            "智能代理",
             "游戏"
           ],
-          "title": "MindAgent: 新兴游戏互动",
+          "title": "心智代理:涌现的游戏交互",
           "slug": "mindagent-emergent-gaming-interaction",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-27T03:32:58+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -198,17 +198,17 @@
         {
           "id": "198277196",
           "topics": [
-            "LLM",
-            "Structured Data"
+            "大型语言模型",
+            "结构化数据"
           ],
-          "title": "Struc-Bench: Are Large Language Models Really Good at Generating Complex Structured Data?",
+          "title": "Struc-Bench: 大型语言模型真的擅长生成复杂的结构化数据吗?",
           "slug": "struc-bench-are-large-language-models-really-good-at-generating-complex-structure",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-25T03:38:38+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -231,16 +231,16 @@
           "topics": [
             "大型语言模型",
             "隐私",
-            "边缘"
+            "边缘计算"
           ],
-          "title": "使用大型语言模型从隐私保护掩码中恢复",
+          "title": "利用大型语言模型从隐私保护遮蔽中恢复",
           "slug": "recovering-from-privacy-preserving-masking-with-large-language-models",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-25T03:38:26+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -261,17 +261,17 @@
         {
           "id": "198277239",
           "topics": [
-            "LLM",
-            "Chat"
+            "大语言模型",
+            "聊天"
           ],
-          "title": "S3-DST: Structured Open-Domain Dialogue Segmentation and State Tracking in the Era of LLMs",
+          "title": "S3-DST: 大语言模型时代的结构化开放域对话分割和状态跟踪",
           "slug": "s3-dst-structured-open-domain-dialogue-segmentation-and-state-tracking-in-the-era",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-25T03:38:11+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -295,14 +295,14 @@
             "大型语言模型",
             "音频"
           ],
-          "title": "利用大型语言模型增强口语理解的文本",
+          "title": "使用大型语言模型增强口语理解的文本",
           "slug": "augmenting-text-for-spoken-language-understanding-with-large-language-models",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-25T03:37:49+01:00",
-          "description": "摘要评论与评分",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -323,7 +323,7 @@
         {
           "id": "198277277",
           "topics": [
-            "LLM",
+            "大语言模型",
             "压缩"
           ],
           "title": "语言建模即压缩",
@@ -333,7 +333,7 @@
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-25T03:37:32+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -354,17 +354,17 @@
         {
           "id": "198277345",
           "topics": [
-            "大型语言模型",
-            "多语种"
+            "大语言模型",
+            "多语言"
           ],
-          "title": "百川2：开放大规模语言模型",
+          "title": "百川2:开放大规模语言模型",
           "slug": "baichuan-2-open-large-scale-language-models",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-24T05:59:10+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -385,17 +385,17 @@
         {
           "id": "198277360",
           "topics": [
-            "LLM",
-            "RLHF"
+            "大语言模型",
+            "基于人类反馈的强化学习"
           ],
-          "title": "Stabilizing RLHF through Advantage Model and Selective Rehearsal",
+          "title": "通过优势模型和选择性复习稳定基于人类反馈的强化学习",
           "slug": "stabilizing-rlhf-through-advantage-model-and-selective-rehearsal",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-24T05:22:15+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -416,17 +416,17 @@
         {
           "id": "198277446",
           "topics": [
-            "大型语言模型",
+            "大语言模型",
             "幻觉"
           ],
-          "title": "验证链减少大型语言模型中的幻觉",
+          "title": "验证链减少大语言模型中的幻觉",
           "slug": "chain-of-verification-reduces-hallucination-in-large-language-models",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-24T05:21:05+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -447,19 +447,19 @@
         {
           "id": "198277458",
           "topics": [
-            "大型语言模型",
+            "大语言模型",
             "幻觉",
             "实体",
             "结构化数据"
           ],
-          "title": "LMDX：基于语言模型的文档信息提取与定位",
+          "title": "LMDX: 基于语言模型的文档信息提取和定位",
           "slug": "lmdx-language-model-based-document-information-extraction-and-localization",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-24T05:20:31+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -480,17 +480,17 @@
         {
           "id": "198277209",
           "topics": [
-            "大型语言模型",
+            "大语言模型",
             "数据"
           ],
-          "title": "SlimPajama-DC：了解大型语言模型训练的数据组合",
+          "title": "SlimPajama-DC: 理解用于大语言模型训练的数据组合",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T23:43:32+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -514,14 +514,14 @@
             "大型语言模型",
             "推理"
           ],
-          "title": "对比解码提高了大型语言模型中的推理能力",
+          "title": "对比解码提高大型语言模型的推理能力",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T22:18:11+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -542,18 +542,18 @@
         {
           "id": "198277099",
           "topics": [
-            "LLM",
-            "Multilingual",
-            "Data"
+            "大语言模型",
+            "多语言",
+            "数据"
           ],
-          "title": "CulturaX: A Cleaned, Enormous, and Multilingual Dataset for Large Language Models in 167 Languages",
+          "title": "CulturaX: 一个清洁、庞大且多语言的数据集,用于167种语言的大型语言模型",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T22:14:53+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -574,18 +574,18 @@
         {
           "id": "198044929",
           "topics": [
-            "LLM",
+            "大语言模型",
             "数据",
-            "代理"
+            "智能体"
           ],
-          "title": "用于推理的体化代理的数据源",
+          "title": "用于推理实体智能体的数据源",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T07:33:25+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -606,18 +606,18 @@
         {
           "id": "198044900",
           "topics": [
-            "大型语言模型",
+            "大语言模型",
             "实体",
             "微调"
           ],
-          "title": "利用上下文信息有效检测实体显著性",
+          "title": "利用上下文信息进行有效的实体显著性检测",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T07:30:50+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -638,17 +638,17 @@
         {
           "id": "198044892",
           "topics": [
-            "大型语言模型",
-            "代理"
+            "大语言模型",
+            "智能代理"
           ],
-          "title": "LASER：具有状态空间探索的LLM代理用于Web导航",
+          "title": "LASER: 用于网页导航的具有状态空间探索功能的大语言模型代理",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T07:26:17+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -669,18 +669,18 @@
         {
           "id": "198044879",
           "topics": [
-            "LLM",
-            "Transformers",
-            "Interpretability"
+            "大语言模型",
+            "变换器",
+            "可解释性"
           ],
-          "title": "Sparse Autoencoders Find Highly Interpretable Features in Language Models",
+          "title": "稀疏自编码器在语言模型中发现高度可解释的特征",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T07:23:08+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -701,17 +701,17 @@
         {
           "id": "198044802",
           "topics": [
-            "大型语言模型",
+            "大语言模型",
             "聊天"
           ],
-          "title": "调查大型语言模型对长形式问题解答的可回答性",
+          "title": "调查大语言模型在长篇问答中的可回答性",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T07:18:31+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -732,18 +732,18 @@
         {
           "id": "198044746",
           "topics": [
-            "LLM",
-            "Transformers",
-            "Training"
+            "大语言模型",
+            "变换器",
+            "训练"
           ],
-          "title": "Scaling Laws for Sparsely-Connected Foundation Models",
+          "title": "稀疏连接基础模型的缩放定律",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T07:09:44+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -765,16 +765,16 @@
           "id": "197990774",
           "topics": [
             "大型语言模型",
-            "提示"
+            "提示工程"
           ],
-          "title": "将大型语言模型与进化算法相结合，产生强大的提示优化器",
+          "title": "将大型语言模型与进化算法结合产生强大的提示优化器",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T07:05:17+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -798,14 +798,14 @@
             "大型语言模型",
             "上下文学习"
           ],
-          "title": "具有歧义感知的大型语言模型上下文学习",
+          "title": "大型语言模型的歧义感知上下文学习",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T06:59:38+01:00",
-          "description": "摘要评论与评分",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -830,14 +830,14 @@
             "评估",
             "多语言"
           ],
-          "title": "大型语言模型评估者是否是扩展多语言评估的解决方案？",
+          "title": "基于大型语言模型的评估器是否是扩展多语言评估的解决方案?",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T06:56:13+01:00",
-          "description": "摘要评论与评分",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -858,18 +858,18 @@
         {
           "id": "197990687",
           "topics": [
-            "LLM",
-            "Healthcare",
-            "Summarization"
+            "大型语言模型",
+            "医疗保健",
+            "摘要生成"
           ],
-          "title": "Clinical Text Summarization: Adapting Large Language Models Can Outperform Human Experts",
+          "title": "临床文本摘要:调整大型语言模型可以超越人类专家",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T06:50:58+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692933540-researchpaper10.png"
           },
@@ -890,17 +890,17 @@
         {
           "id": "197990671",
           "topics": [
-            "LLM",
-            "代理"
+            "大语言模型",
+            "智能代理"
           ],
-          "title": "代理：自主语言代理的开源框架",
+          "title": "智能代理:一个开源的自主语言代理框架",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T06:47:00+01:00",
-          "description": "摘要评论与评分",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -921,18 +921,18 @@
         {
           "id": "197990654",
           "topics": [
-            "LLM",
-            "RLHF",
-            "Reinforcement Learning"
+            "大语言模型",
+            "基于人类反馈的强化学习",
+            "强化学习"
           ],
-          "title": "Statistical Rejection Sampling Improves Preference Optimization",
+          "title": "统计拒绝采样改进偏好优化",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T06:41:10+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -953,17 +953,17 @@
         {
           "id": "197859672",
           "topics": [
-            "LLM",
-            "Code"
+            "大型语言模型",
+            "代码"
           ],
-          "title": "Large Language Models for Compiler Optimization",
+          "title": "用于编译器优化的大型语言模型",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T19:41:06+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -984,17 +984,17 @@
         {
           "id": "197840057",
           "topics": [
-            "LLM",
+            "大语言模型",
             "科学"
           ],
-          "title": "AstroLLaMA：天文学中的专业基础模型探索",
+          "title": "AstroLLaMA: 面向天文学的专业基础模型",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T19:21:13+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -1015,18 +1015,18 @@
         {
           "id": "197838596",
           "topics": [
-            "LLM",
+            "大型语言模型",
             "数学",
             "科学"
           ],
-          "title": "科学的大型语言模型：关于P与NP的研究",
+          "title": "科学领域的大型语言模型：P对NP问题的研究",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T19:17:15+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -1047,16 +1047,16 @@
         {
           "id": "197836858",
           "topics": [
-            "LLM"
+            "大型语言模型"
           ],
-          "title": "Efficient Memory Management for Large Language Model Serving with PagedAttention",
+          "title": "使用分页注意力机制实现大型语言模型服务的高效内存管理",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T19:12:37+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -1077,18 +1077,18 @@
         {
           "id": "197817281",
           "topics": [
-            "LLM",
-            "In-Context Learning",
-            "Fine-tuning"
+            "大语言模型",
+            "上下文学习",
+            "微调"
           ],
-          "title": "FIAT: Fusing learning paradigms with Instruction-Accelerated Tuning",
+          "title": "FIAT: 通过指令加速调优融合学习范式",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T18:07:58+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -1109,16 +1109,16 @@
         {
           "id": "197815488",
           "topics": [
-            "大型语言模型"
+            "LLM"
           ],
-          "title": "通过有符号梯度下降优化权重舍入以量化大型语言模型",
+          "title": "通过有符号梯度下降优化权重舍入以实现LLM量化",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T18:03:55+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -1139,17 +1139,17 @@
         {
           "id": "197813719",
           "topics": [
-            "LLM",
-            "Data"
+            "大语言模型",
+            "数据"
           ],
-          "title": "When Less is More: Investigating Data Pruning for Pretraining LLMs at Scale",
+          "title": "当少即是多:探究大规模预训练大语言模型的数据修剪",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T17:59:21+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -1170,16 +1170,16 @@
         {
           "id": "197812286",
           "topics": [
-            "LLM"
+            "大型语言模型"
           ],
-          "title": "Neurons in Large Language Models: Dead, N-gram, Positional",
+          "title": "大型语言模型中的神经元:死亡、N-gram和位置",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T17:56:01+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -1200,17 +1200,17 @@
         {
           "id": "197810544",
           "topics": [
-            "LLM",
-            "Open Source"
+            "大语言模型",
+            "开源"
           ],
-          "title": "Textbooks Are All You Need II: phi-1.5 technical report",
+          "title": "你只需要教科书 II: phi-1.5 技术报告",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T17:52:36+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -1231,18 +1231,18 @@
         {
           "id": "197621737",
           "topics": [
-            "LLM",
-            "Prompting",
-            "Summarization"
+            "大语言模型",
+            "提示工程",
+            "摘要生成"
           ],
-          "title": "DrugChat: Towards Enabling ChatGPT-Like Capabilities on Drug Molecule Graphs",
+          "title": "DrugChat: 实现药物分子图上类ChatGPT的能力",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T08:54:43+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -1263,18 +1263,18 @@
         {
           "id": "197621634",
           "topics": [
-            "LLM",
-            "Prompting",
-            "Summarization"
+            "大语言模型",
+            "提示工程",
+            "摘要生成"
           ],
-          "title": "From Sparse to Dense: GPT-4 Summarization with Chain of Density Prompting",
+          "title": "从稀疏到密集:使用密度链提示的GPT-4摘要生成",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T08:52:12+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -1295,18 +1295,18 @@
         {
           "id": "197621519",
           "topics": [
-            "大型语言模型",
+            "大语言模型",
             "开源",
-            "指令调优"
+            "指令微调"
           ],
-          "title": "XGen-7B 技术报告",
+          "title": "XGen-7B技术报告",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T08:46:34+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692933540-researchpaper10.png"
           },
@@ -1327,17 +1327,17 @@
         {
           "id": "197621178",
           "topics": [
-            "LLM",
-            "Prompting"
+            "大语言模型",
+            "提示工程"
           ],
-          "title": "DoLa: Decoding by Contrasting Layers Improves Factuality in Large Language Models",
+          "title": "DoLa: 对比层解码提高大语言模型的事实性",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T08:41:35+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -1358,17 +1358,17 @@
         {
           "id": "197621439",
           "topics": [
-            "LLM",
+            "大语言模型",
             "数学"
           ],
-          "title": "GPT可以在没有计算器的情况下解决数学问题",
+          "title": "GPT无需计算器即可解决数学问题",
           "slug": "transformer-models-an-introduction-and-catalog",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T08:39:23+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692937594-researchpaper7.png"
           },
@@ -1390,16 +1390,16 @@
           "id": "197621128",
           "topics": [
             "大型语言模型",
-            "提示"
+            "提示工程"
           ],
-          "title": "大型语言模型作为优化器",
+          "title": "作为优化器的大型语言模型",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T08:33:08+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -1420,17 +1420,17 @@
         {
           "id": "197613974",
           "topics": [
-            "LLM",
-            "RLHF"
+            "大语言模型",
+            "基于人类反馈的强化学习"
           ],
-          "title": "Efficient RLHF: Reducing the Memory Usage of PPO",
+          "title": "高效的基于人类反馈的强化学习: 降低PPO的内存使用",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T02:03:03+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -1451,18 +1451,18 @@
         {
           "id": "197559951",
           "topics": [
-            "LLM",
-            "代理",
+            "大语言模型",
+            "智能代理",
             "工具"
           ],
-          "title": "ModelScope-Agent: 使用开源大型语言模型构建您的可定制代理系统",
+          "title": "ModelScope-Agent: 使用开源大型语言模型构建可定制的代理系统",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T01:11:03+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -1485,16 +1485,16 @@
           "topics": [
             "LLM",
             "RLHF",
-            "Summary"
+            "摘要"
           ],
-          "title": "Open Problems and Fundamental Limitations of Reinforcement Learning from Human Feedback [Summary]",
+          "title": "人类反馈强化学习的开放问题和基本局限性 [摘要]",
           "slug": "open-problems-and-fundamental-limitations-of-reinforcement-learning-from-human-fe",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:49:23+01:00",
-          "description": "Uncover the challenges, limitations, and future of Reinforcement Learning from Human Feedback (RLHF) in AI systems. Explore governance, safety, and more.",
+          "description": "揭示人工智能系统中人类反馈强化学习 (RLHF) 的挑战、局限性和未来。探索治理、安全等问题。",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690837480-abr6-img1.png"
           },
@@ -1515,17 +1515,17 @@
         {
           "id": "180869081",
           "topics": [
-            "LLM",
-            "Summary"
+            "大语言模型",
+            "摘要"
           ],
-          "title": "Llama 2: Open Foundation and Fine-Tuned Chat Models [Commentary]",
+          "title": "Llama 2: 开放基础和微调聊天模型 [评论]",
           "slug": "llama-2-open-foundation-and-fine-tuned-chat-models-commentary",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:48:17+01:00",
-          "description": "Deep dive into Llama 2: Explore the pretraining, fine-tuning, safety measures, and insightful discussions in our comprehensive summary.",
+          "description": "深入探讨Llama 2: 在我们的全面摘要中探索预训练、微调、安全措施和富有洞察力的讨论。",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690935728-abr7-img1.png"
           },
@@ -1546,17 +1546,17 @@
         {
           "id": "179737945",
           "topics": [
-            "LLM",
-            "Summary"
+            "大型语言模型",
+            "摘要"
           ],
-          "title": "Challenges and Applications of Large Language Models [Summary]",
+          "title": "大型语言模型的挑战和应用 [摘要]",
           "slug": "challenges-and-applications-of-large-language-models-summary",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:47:49+01:00",
-          "description": "Explore our summary and key insights of 'Challenges and Applications of Large Language Models', a research paper that delves into the potential, challenges, and applications of LLMs.",
+          "description": "探索我们对'大型语言模型的挑战和应用'研究论文的摘要和关键见解,该论文深入探讨了大型语言模型的潜力、挑战和应用。",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690575713-abr-img1.png"
           },
@@ -1578,17 +1578,17 @@
           "id": "180927998",
           "topics": [
             "LLM",
-            "Commentary",
+            "评论",
             "LORA"
           ],
-          "title": "LoraHub: Efficient Cross-Task Generalization Via Dynamic LoRA Composition [Commentary]",
+          "title": "LoraHub: 通过动态LoRA组合实现高效跨任务泛化 [评论]",
           "slug": "lorahub-efficient-cross-task-generalization-via-dynamic-lora-composition-commenta",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:46:29+01:00",
-          "description": "Explore the dynamic composition of LoRA modules with LoraHub for adaptable LLM performance. Dive into problem statements, methodology, evaluation, and more.",
+          "description": "探索LoraHub的动态LoRA模块组合,以实现可适应的LLM性能。深入了解问题陈述,方法论,评估等内容。",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690946901-abr8-img1.png"
           },
@@ -1609,18 +1609,18 @@
         {
           "id": "180928004",
           "topics": [
-            "LLM",
-            "Tools",
-            "Commentary"
+            "大型语言模型",
+            "工具",
+            "评论"
           ],
-          "title": "ToolLLM: Facilitating Large Language Models To Master 16000+ Real-World APIs [Commentary]",
+          "title": "ToolLLM: 促进大型语言模型掌握16000多个真实世界API [评论]",
           "slug": "toolllm-facilitating-large-language-models-to-master-16000-real-world-apis-commen",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:46:02+01:00",
-          "description": "Explore the power of Large Language Models (LLMs) in API interaction with our summary of 'Tool LLM'",
+          "description": "通过我们对'Tool LLM'的总结,探索大型语言模型(LLM)在API交互中的强大能力",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690949823-screenshot-2023-08-02-at-12-14-28-am.png"
           },
@@ -1641,17 +1641,17 @@
         {
           "id": "189989705",
           "topics": [
-            "LLM",
-            "Tools"
+            "大语言模型",
+            "工具"
           ],
-          "title": "FacTool: Factuality Detection in Generative AI -- A Tool Augmented Framework for Multi-Task and Multi-Domain Scenarios",
+          "title": "FacTool: 生成式人工智能中的事实性检测 -- 一个用于多任务和多领域场景的工具增强框架",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:44:04+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -1672,18 +1672,18 @@
         {
           "id": "189849326",
           "topics": [
-            "大型语言模型",
-            "提示",
+            "大语言模型",
+            "提示工程",
             "推理"
           ],
-          "title": "思维图谱：用大型语言模型解决复杂问题",
+          "title": "思维图谱:利用大型语言模型解决复杂问题",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:42:47+01:00",
-          "description": "摘要评论与评分",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -1713,7 +1713,7 @@
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:40:10+01:00",
-          "description": "摘要评论与评分",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -1734,17 +1734,17 @@
         {
           "id": "189849263",
           "topics": [
-            "LLM",
-            "Healthcare"
+            "大语言模型",
+            "医疗保健"
           ],
-          "title": "Predicting transcriptional outcomes of novel multigene perturbations with GEARS ",
+          "title": "使用GEARS预测新型多基因扰动的转录结果",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:37:37+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -1765,18 +1765,18 @@
         {
           "id": "189845558",
           "topics": [
-            "LLM",
-            "Compression",
-            "Survey"
+            "大型语言模型",
+            "压缩",
+            "综述"
           ],
-          "title": "A Survey on Model Compression for Large Language Models",
+          "title": "大型语言模型压缩技术综述",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:37:01+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -1797,18 +1797,18 @@
         {
           "id": "189845521",
           "topics": [
-            "LLM",
-            "Training",
-            "Alignment"
+            "大语言模型",
+            "训练",
+            "对齐"
           ],
-          "title": "From Pretraining Data to Language Models to Downstream Tasks: Tracking the Trails of Political Biases Leading to Unfair NLP Models",
+          "title": "从预训练数据到语言模型再到下游任务:追踪导致不公平自然语言处理模型的政治偏见轨迹",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:36:14+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -1829,17 +1829,17 @@
         {
           "id": "189787126",
           "topics": [
-            "大型语言模型",
+            "大语言模型",
             "代码"
           ],
-          "title": "大型语言模型作为数据库管理员",
+          "title": "大语言模型作为数据库管理员",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:35:41+01:00",
-          "description": "摘要评论与评分",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -1860,17 +1860,17 @@
         {
           "id": "189845549",
           "topics": [
-            "LLM",
-            "Instruction Tuning"
+            "大语言模型",
+            "指令微调"
           ],
-          "title": "Self-Alignment with Instruction Backtranslation",
+          "title": "使用指令反向翻译进行自对齐",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:35:15+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -1891,17 +1891,17 @@
         {
           "id": "189845519",
           "topics": [
-            "LLM",
-            "RLHF"
+            "大语言模型",
+            "基于人类反馈的强化学习"
           ],
-          "title": "RLAIF: Scaling Reinforcement Learning from Human Feedback with AI Feedback",
+          "title": "RLAIF: 利用人工智能反馈扩展基于人类反馈的强化学习",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:33:54+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -1922,16 +1922,16 @@
         {
           "id": "189792745",
           "topics": [
-            "LLM"
+            "大型语言模型"
           ],
-          "title": "Large Content And Behavior Models To Understand, Simulate, And Optimize Content And Behavior",
+          "title": "大型内容和行为模型用于理解、模拟和优化内容和行为",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:33:17+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -1952,18 +1952,18 @@
         {
           "id": "189787194",
           "topics": [
-            "LLM",
-            "Code",
-            "Healthcare"
+            "大语言模型",
+            "代码",
+            "医疗保健"
           ],
-          "title": "BioCoder: A Benchmark for Bioinformatics Code Generation with Contextual Pragmatic Knowledge",
+          "title": "BioCoder: 具有上下文语用知识的生物信息学代码生成基准",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T06:26:08+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -1984,18 +1984,18 @@
         {
           "id": "189787170",
           "topics": [
-            "LLM",
-            "Multilingual",
-            "Evaluation"
+            "大语言模型",
+            "多语言",
+            "评估"
           ],
-          "title": "The Belebele Benchmark: a Parallel Reading Comprehension Dataset in 122 Language Variants",
+          "title": "Belebele基准测试:122种语言变体的平行阅读理解数据集",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T06:25:24+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692933540-researchpaper10.png"
           },
@@ -2016,18 +2016,18 @@
         {
           "id": "189787192",
           "topics": [
-            "LLM",
-            "Code",
-            "Instruction Tuning"
+            "大语言模型",
+            "代码",
+            "指令微调"
           ],
-          "title": "Can Programming Languages Boost Each Other via Instruction Tuning?",
+          "title": "编程语言能否通过指令微调相互促进?",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T06:24:29+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -2048,18 +2048,18 @@
         {
           "id": "189787190",
           "topics": [
-            "LLM",
-            "Evaluation",
-            "Climate"
+            "大语言模型",
+            "评估",
+            "气候"
           ],
-          "title": "WeatherBench 2: A benchmark for the next generation of data-driven global weather models",
+          "title": "WeatherBench 2: 下一代数据驱动全球天气模型的基准测试",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T06:22:58+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -2080,17 +2080,17 @@
         {
           "id": "189787181",
           "topics": [
-            "LLM",
-            "Multilingual"
+            "大语言模型",
+            "多语言"
           ],
-          "title": "Jais and Jais-chat: Arabic-Centric Foundation and Instruction-Tuned Open Generative Large Language Models",
+          "title": "Jais和Jais-chat:以阿拉伯语为中心的基础和指令微调开放生成大语言模型",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T06:22:28+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -2111,18 +2111,18 @@
         {
           "id": "189787168",
           "topics": [
-            "LLM",
-            "Instruction Tuning",
-            "Healthcare"
+            "大语言模型",
+            "指令微调",
+            "医疗保健"
           ],
-          "title": "MedAlign: A Clinician-Generated Dataset for Instruction Following with Electronic Medical Records",
+          "title": "MedAlign: 一个用于电子病历指令跟随的临床医生生成数据集",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T06:20:59+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -2143,18 +2143,18 @@
         {
           "id": "189777823",
           "topics": [
-            "LLM",
+            "大语言模型",
             "代码",
             "聊天"
           ],
-          "title": "SoTaNa：开源软件开发助手",
+          "title": "SoTaNa: 开源软件开发助手",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T06:20:32+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692933540-researchpaper10.png"
           },
@@ -2175,17 +2175,17 @@
         {
           "id": "189787150",
           "topics": [
-            "LLM",
-            "Personalization"
+            "大语言模型",
+            "个性化"
           ],
-          "title": "Teach LLMs to Personalize -- An Approach inspired by Writing Education",
+          "title": "教大语言模型实现个性化 -- 一种受写作教育启发的方法",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:58:51+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -2206,18 +2206,18 @@
         {
           "id": "189787148",
           "topics": [
-            "Retrieval",
-            "LLM",
-            "In-Context Learning"
+            "检索",
+            "大语言模型",
+            "上下文学习"
           ],
-          "title": "RAVEN: In-Context Learning with Retrieval Augmented Encoder-Decoder Language Models",
+          "title": "RAVEN: 使用检索增强的编码器-解码器语言模型进行上下文学习",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:57:31+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -2238,18 +2238,18 @@
         {
           "id": "189787144",
           "topics": [
-            "LLM",
-            "Code",
-            "Prompting"
+            "大语言模型",
+            "代码",
+            "提示工程"
           ],
-          "title": "Solving Challenging Math Word Problems Using GPT-4 Code Interpreter with Code-based Self-Verification",
+          "title": "使用GPT-4代码解释器和基于代码的自验证解决具有挑战性的数学应用题",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:56:26+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -2270,18 +2270,18 @@
         {
           "id": "189787113",
           "topics": [
-            "LLM",
-            "Prompting",
-            "Multilingual"
+            "大语言模型",
+            "提示工程",
+            "多语言"
           ],
-          "title": "The Devil is in the Errors: Leveraging Large Language Models for Fine-grained Machine Translation Evaluation",
+          "title": "魔鬼藏在错误中:利用大型语言模型进行细粒度机器翻译评估",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:55:30+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -2302,17 +2302,17 @@
         {
           "id": "189777847",
           "topics": [
-            "LLM",
-            "In-Context Learning"
+            "大语言模型",
+            "上下文学习"
           ],
-          "title": "CausalLM is not optimal for in-context learning",
+          "title": "因果语言模型不适合上下文学习",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:52:46+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -2333,19 +2333,19 @@
         {
           "id": "189787086",
           "topics": [
-            "LLM",
-            "Fine-tuning",
+            "大语言模型",
+            "微调",
             "LORA",
-            "Data"
+            "数据"
           ],
-          "title": "Platypus: Quick, Cheap, and Powerful Refinement of LLMs",
+          "title": "鸭嘴兽:快速,廉价且强大的大语言模型优化",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:51:43+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -2366,18 +2366,18 @@
         {
           "id": "189777877",
           "topics": [
-            "LLM",
-            "Code",
-            "Instruction Tuning"
+            "大语言模型",
+            "代码",
+            "指令微调"
           ],
-          "title": "OctoPack: Instruction Tuning Code Large Language Models",
+          "title": "OctoPack: 代码大语言模型的指令微调",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:50:56+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -2398,17 +2398,17 @@
         {
           "id": "189777872",
           "topics": [
-            "LLM",
-            "Code"
+            "大型语言模型",
+            "代码"
           ],
-          "title": "Enhancing Network Management Using Code Generated by Large Language Models",
+          "title": "使用大型语言模型生成的代码增强网络管理",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:50:28+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -2429,19 +2429,19 @@
         {
           "id": "189777849",
           "topics": [
-            "Audio",
-            "LLM",
-            "Multimodal",
-            "Multilingual"
+            "音频",
+            "大语言模型",
+            "多模态",
+            "多语言"
           ],
-          "title": "Improving Joint Speech-Text Representations Without Alignment",
+          "title": "在不对齐的情况下改进联合语音文本表示",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:49:52+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -2462,17 +2462,17 @@
         {
           "id": "189777845",
           "topics": [
-            "LLM",
-            "Agents"
+            "大语言模型",
+            "智能代理"
           ],
-          "title": "BOLAA: Benchmarking and Orchestrating LLM-augmented Autonomous Agents",
+          "title": "BOLAA: 基准测试和编排大语言模型增强的自主代理",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:48:45+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -2493,18 +2493,18 @@
         {
           "id": "189775948",
           "topics": [
-            "LLM",
+            "大语言模型",
             "聊天",
             "数据"
           ],
-          "title": "PIPPA：一个部分合成的对话数据集",
+          "title": "PIPPA: 一个部分合成的对话数据集",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:48:00+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -2525,17 +2525,17 @@
         {
           "id": "189777825",
           "topics": [
-            "大型语言模型",
-            "指令调优"
+            "大语言模型",
+            "指令微调"
           ],
-          "title": "使用指令反向翻译的自我对齐",
+          "title": "使用指令反向翻译进行自对齐",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:47:36+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -2556,17 +2556,17 @@
         {
           "id": "189577785",
           "topics": [
-            "LLM",
-            "Healthcare"
+            "大型语言模型",
+            "医疗保健"
           ],
-          "title": "OpenProteinSet: Training data for structural biology at scale",
+          "title": "OpenProteinSet: 大规模结构生物学训练数据",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:45:47+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692933540-researchpaper10.png"
           },
@@ -2587,19 +2587,19 @@
         {
           "id": "189577629",
           "topics": [
-            "LLM",
-            "Alignment",
-            "Survey",
-            "Evaluation"
+            "大型语言模型",
+            "对齐",
+            "调查",
+            "评估"
           ],
-          "title": "Trustworthy LLMs: a Survey and Guideline for Evaluating Large Language Models' Alignment",
+          "title": "可信的大型语言模型：评估大型语言模型对齐的调查和指南",
           "slug": "trustworthy-llms-a-survey-and-guideline-for-evaluating-large-language-models-alig",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:45:28+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -2620,17 +2620,17 @@
         {
           "id": "189576091",
           "topics": [
-            "大型语言模型",
+            "大语言模型",
             "推理"
           ],
-          "title": "通过分阶段推测解码加速大型语言模型推理",
+          "title": "使用分阶段推测解码加速大语言模型推理",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T04:45:52+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -2651,18 +2651,18 @@
         {
           "id": "189576084",
           "topics": [
-            "LLM",
+            "大语言模型",
             "数据",
-            "培训"
+            "训练"
           ],
-          "title": "牧羊人：语言模型生成的评论家",
+          "title": "Shepherd: 语言模型生成的评论家",
           "slug": "shepherd-a-critic-for-language-model-generation",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T04:45:24+01:00",
-          "description": "摘要评论与评分",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -2683,17 +2683,17 @@
         {
           "id": "189576080",
           "topics": [
-            "LLM",
-            "Legal"
+            "大语言模型",
+            "法律"
           ],
-          "title": "SILO Language Models: Isolating Legal Risk In a Nonparametric Datastore",
+          "title": "SILO语言模型:在非参数数据存储中隔离法律风险",
           "slug": "silo-language-models-isolating-legal-risk-in-a-nonparametric-datastore",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T04:43:24+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -2714,17 +2714,17 @@
         {
           "id": "189576058",
           "topics": [
-            "LLM",
-            "Alignment"
+            "大语言模型",
+            "对齐"
           ],
-          "title": "Simple synthetic data reduces sycophancy in large language models",
+          "title": "简单的合成数据减少了大语言模型中的谄媚行为",
           "slug": "simple-synthetic-data-reduces-sycophancy-in-large-language-models",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T04:41:07+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -2755,16 +2755,16 @@
             "金融",
             "医疗保健",
             "法律",
-            "提示"
+            "提示工程"
           ],
-          "title": "通过阅读理解适应大型语言模型",
+          "title": "通过阅读理解来适应大型语言模型",
           "slug": "adapting-large-language-models-via-reading-comprehension",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-27T03:34:22+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -2795,16 +2795,16 @@
             "金融",
             "医疗保健",
             "法律",
-            "提示"
+            "提示工程"
           ],
-          "title": "通过阅读理解适应大型语言模型",
+          "title": "通过阅读理解来适应大型语言模型",
           "slug": "adapting-large-language-models-via-reading-comprehension",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-27T03:34:22+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -2827,16 +2827,16 @@
           "topics": [
             "大型语言模型",
             "医疗保健",
-            "摘要"
+            "摘要生成"
           ],
-          "title": "临床文本摘要：适应大型语言模型可以胜过人类专家",
+          "title": "临床文本摘要:调整大型语言模型可以超越人类专家",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T06:50:58+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692933540-researchpaper10.png"
           },
@@ -2857,17 +2857,17 @@
         {
           "id": "189849263",
           "topics": [
-            "大型语言模型",
+            "大语言模型",
             "医疗保健"
           ],
-          "title": "预测新型多基因扰动的转录结果与齿轮",
+          "title": "使用GEARS预测新型多基因扰动的转录结果",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:37:37+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -2888,18 +2888,18 @@
         {
           "id": "189787194",
           "topics": [
-            "LLM",
-            "Code",
-            "Healthcare"
+            "大语言模型",
+            "代码",
+            "医疗保健"
           ],
-          "title": "BioCoder: A Benchmark for Bioinformatics Code Generation with Contextual Pragmatic Knowledge",
+          "title": "BioCoder: 具有上下文语用知识的生物信息学代码生成基准",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T06:26:08+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -2920,18 +2920,18 @@
         {
           "id": "189787168",
           "topics": [
-            "LLM",
-            "Instruction Tuning",
-            "Healthcare"
+            "大型语言模型",
+            "指令微调",
+            "医疗保健"
           ],
-          "title": "MedAlign: A Clinician-Generated Dataset for Instruction Following with Electronic Medical Records",
+          "title": "MedAlign: 一个用于电子病历指令跟随的临床医生生成数据集",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T06:20:59+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -2952,17 +2952,17 @@
         {
           "id": "189577785",
           "topics": [
-            "LLM",
-            "Healthcare"
+            "大型语言模型",
+            "医疗保健"
           ],
-          "title": "OpenProteinSet: Training data for structural biology at scale",
+          "title": "OpenProteinSet: 大规模结构生物学训练数据",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:45:47+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692933540-researchpaper10.png"
           },
@@ -2993,16 +2993,16 @@
             "金融",
             "医疗保健",
             "法律",
-            "提示"
+            "提示工程"
           ],
-          "title": "通过阅读理解适应大型语言模型",
+          "title": "通过阅读理解来适应大型语言模型",
           "slug": "adapting-large-language-models-via-reading-comprehension",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-27T03:34:22+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -3023,17 +3023,17 @@
         {
           "id": "189576080",
           "topics": [
-            "大型语言模型",
+            "大语言模型",
             "法律"
           ],
-          "title": "SILO语言模型：在非参数数据存储中隔离法律风险",
+          "title": "SILO语言模型:在非参数数据存储中隔离法律风险",
           "slug": "silo-language-models-isolating-legal-risk-in-a-nonparametric-datastore",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T04:43:24+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -3054,7 +3054,7 @@
       ]
     },
     {
-      "name": "提示",
+      "name": "提示工程",
       "slug": "prompting",
       "articles": [
         {
@@ -3064,16 +3064,16 @@
             "金融",
             "医疗保健",
             "法律",
-            "提示"
+            "提示工程"
           ],
-          "title": "通过阅读理解适应大型语言模型",
+          "title": "通过阅读理解来适应大型语言模型",
           "slug": "adapting-large-language-models-via-reading-comprehension",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-27T03:34:22+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -3095,16 +3095,16 @@
           "id": "197990774",
           "topics": [
             "大型语言模型",
-            "提示"
+            "提示工程"
           ],
-          "title": "将大型语言模型与进化算法相结合，产生强大的提示优化器",
+          "title": "将大型语言模型与进化算法结合产生强大的提示优化器",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T07:05:17+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -3125,18 +3125,18 @@
         {
           "id": "197621737",
           "topics": [
-            "LLM",
-            "提示",
-            "摘要"
+            "大语言模型",
+            "提示工程",
+            "摘要生成"
           ],
-          "title": "DrugChat：朝向在药物分子图上启用类ChatGPT能力",
+          "title": "DrugChat: 实现药物分子图上类ChatGPT的能力",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T08:54:43+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -3157,18 +3157,18 @@
         {
           "id": "197621634",
           "topics": [
-            "大型语言模型",
-            "提示",
-            "总结"
+            "大语言模型",
+            "提示工程",
+            "摘要生成"
           ],
-          "title": "从稀疏到密集：GPT-4的密集链提示总结",
+          "title": "从稀疏到密集:使用密度链提示的GPT-4摘要生成",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T08:52:12+01:00",
-          "description": "摘要评论与评分",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -3189,17 +3189,17 @@
         {
           "id": "197621178",
           "topics": [
-            "大型语言模型",
-            "提示"
+            "大语言模型",
+            "提示工程"
           ],
-          "title": "DoLa：通过对比层解码提高大型语言模型的事实性",
+          "title": "DoLa: 通过对比层解码提高大语言模型的事实性",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T08:41:35+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -3221,16 +3221,16 @@
           "id": "197621128",
           "topics": [
             "大型语言模型",
-            "提示"
+            "提示工程"
           ],
-          "title": "大型语言模型作为优化器",
+          "title": "作为优化器的大型语言模型",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T08:33:08+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -3251,18 +3251,18 @@
         {
           "id": "189849326",
           "topics": [
-            "大型语言模型",
-            "提示",
+            "大语言模型",
+            "提示工程",
             "推理"
           ],
-          "title": "思维图谱：用大型语言模型解决复杂问题",
+          "title": "思维图谱:利用大型语言模型解决复杂问题",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:42:47+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -3283,18 +3283,18 @@
         {
           "id": "189787144",
           "topics": [
-            "LLM",
-            "Code",
-            "Prompting"
+            "大语言模型",
+            "代码",
+            "提示工程"
           ],
-          "title": "Solving Challenging Math Word Problems Using GPT-4 Code Interpreter with Code-based Self-Verification",
+          "title": "使用GPT-4代码解释器和基于代码的自我验证解决具有挑战性的数学应用题",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:56:26+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -3315,18 +3315,18 @@
         {
           "id": "189787113",
           "topics": [
-            "LLM",
-            "Prompting",
-            "Multilingual"
+            "大语言模型",
+            "提示工程",
+            "多语言"
           ],
-          "title": "The Devil is in the Errors: Leveraging Large Language Models for Fine-grained Machine Translation Evaluation",
+          "title": "魔鬼藏在错误中:利用大型语言模型进行细粒度机器翻译评估",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:55:30+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -3353,17 +3353,17 @@
         {
           "id": "198277342",
           "topics": [
-            "大型语言模型",
-            "多语种"
+            "大语言模型",
+            "多语言"
           ],
-          "title": "OpenBA：一个开源的150亿参数双语不对称序列到序列模型，从零开始预训练",
+          "title": "OpenBA: 一个从头预训练的开源150亿参数双语非对称seq2seq模型",
           "slug": "openba-an-open-sourced-15b-bilingual-asymmetric-seq2seq-model-pre-trained-from-sc",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-27T03:34:02+01:00",
-          "description": "摘要评论与评分",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -3384,17 +3384,17 @@
         {
           "id": "198277345",
           "topics": [
-            "大型语言模型",
-            "多语种"
+            "大语言模型",
+            "多语言"
           ],
-          "title": "百川2：开放大规模语言模型",
+          "title": "百川2:开放大规模语言模型",
           "slug": "baichuan-2-open-large-scale-language-models",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-24T05:59:10+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -3415,18 +3415,18 @@
         {
           "id": "198277099",
           "topics": [
-            "大型语言模型",
-            "多语种",
+            "大语言模型",
+            "多语言",
             "数据"
           ],
-          "title": "CulturaX：一个清洁、庞大且多语种的数据集，适用于167种语言的大型语言模型",
+          "title": "CulturaX: 一个清洁、庞大且多语言的数据集,用于167种语言的大型语言模型",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T22:14:53+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -3447,18 +3447,18 @@
         {
           "id": "197842432",
           "topics": [
-            "LLM",
-            "Evaluation",
-            "Multilingual"
+            "大型语言模型",
+            "评估",
+            "多语言"
           ],
-          "title": "Are Large Language Model-based Evaluators the Solution to Scaling Up Multilingual Evaluation?",
+          "title": "基于大型语言模型的评估器是否是扩展多语言评估的解决方案?",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T06:56:13+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -3479,18 +3479,18 @@
         {
           "id": "189787170",
           "topics": [
-            "LLM",
-            "Multilingual",
-            "Evaluation"
+            "大语言模型",
+            "多语言",
+            "评估"
           ],
-          "title": "The Belebele Benchmark: a Parallel Reading Comprehension Dataset in 122 Language Variants",
+          "title": "Belebele基准测试:122种语言变体的平行阅读理解数据集",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T06:25:24+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692933540-researchpaper10.png"
           },
@@ -3511,17 +3511,17 @@
         {
           "id": "189787181",
           "topics": [
-            "LLM",
-            "Multilingual"
+            "大语言模型",
+            "多语言"
           ],
-          "title": "Jais and Jais-chat: Arabic-Centric Foundation and Instruction-Tuned Open Generative Large Language Models",
+          "title": "Jais和Jais-chat:以阿拉伯语为中心的基础和指令微调开放生成大语言模型",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T06:22:28+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -3542,18 +3542,18 @@
         {
           "id": "189787113",
           "topics": [
-            "LLM",
-            "Prompting",
-            "Multilingual"
+            "大语言模型",
+            "提示工程",
+            "多语言"
           ],
-          "title": "The Devil is in the Errors: Leveraging Large Language Models for Fine-grained Machine Translation Evaluation",
+          "title": "魔鬼藏在错误中:利用大型语言模型进行细粒度机器翻译评估",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:55:30+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -3575,18 +3575,18 @@
           "id": "189777849",
           "topics": [
             "音频",
-            "大型语言模型",
+            "大语言模型",
             "多模态",
             "多语言"
           ],
-          "title": "无需对齐即可改善联合语音-文本表示",
+          "title": "在不对齐的情况下改进联合语音文本表示",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:49:52+01:00",
-          "description": "摘要评论与评分",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -3613,17 +3613,17 @@
         {
           "id": "198277117",
           "topics": [
-            "大型语言模型",
+            "大语言模型",
             "检索"
           ],
-          "title": "PDFTriage：对长篇结构化文档的问答",
+          "title": "PDFTriage: 长结构化文档的问答系统",
           "slug": "pdftriage-question-answering-over-long-structured-documents",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-27T03:33:49+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -3645,17 +3645,17 @@
           "id": "189787148",
           "topics": [
             "检索",
-            "大型语言模型",
+            "大语言模型",
             "上下文学习"
           ],
-          "title": "RAVEN: 使用检索增强的编解码器语言模型进行上下文学习",
+          "title": "RAVEN: 使用检索增强的编码器-解码器语言模型进行上下文学习",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:57:31+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -3682,17 +3682,17 @@
         {
           "id": "198277138",
           "topics": [
-            "LLM",
+            "大语言模型",
             "微调"
           ],
-          "title": "排序的LLaMA：利用大型语言模型中间层的潜力，通过排序微调（SoFT）进行动态推理",
+          "title": "排序LLaMA:通过排序微调(SoFT)解锁大语言模型中间层的动态推理潜力",
           "slug": "sorted-llama-unlocking-the-potential-of-intermediate-layers-of-large-language-mod",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-27T03:33:31+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -3713,18 +3713,18 @@
         {
           "id": "198044900",
           "topics": [
-            "大型语言模型",
+            "大语言模型",
             "实体",
             "微调"
           ],
-          "title": "利用上下文信息有效检测实体显著性",
+          "title": "利用上下文信息进行有效的实体显著性检测",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T07:30:50+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -3745,18 +3745,18 @@
         {
           "id": "197817281",
           "topics": [
-            "大型语言模型",
+            "大语言模型",
             "上下文学习",
             "微调"
           ],
-          "title": "FIAT: 融合学习范式与指令加速调整",
+          "title": "FIAT: 通过指令加速调优融合学习范式",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T18:07:58+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -3777,19 +3777,19 @@
         {
           "id": "189787086",
           "topics": [
-            "LLM",
-            "Fine-tuning",
+            "大语言模型",
+            "微调",
             "LORA",
-            "Data"
+            "数据"
           ],
-          "title": "Platypus: Quick, Cheap, and Powerful Refinement of LLMs",
+          "title": "鸭嘴兽:快速,廉价且强大的大语言模型优化",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:51:43+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -3810,24 +3810,24 @@
       ]
     },
     {
-      "name": "指令调整",
+      "name": "指令调优",
       "slug": "instruction tuning",
       "articles": [
         {
           "id": "198277150",
           "topics": [
-            "大型语言模型",
-            "指令调整",
+            "大语言模型",
+            "指令微调",
             "多模态"
           ],
-          "title": "对指令调整的大型多模态模型的规模化实证研究",
+          "title": "大规模指令微调多模态大模型的实证研究",
           "slug": "an-empirical-study-of-scaling-instruct-tuned-large-multimodal-models",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-27T03:33:15+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -3848,18 +3848,18 @@
         {
           "id": "197621519",
           "topics": [
-            "大型语言模型",
+            "大语言模型",
             "开源",
-            "指令调优"
+            "指令微调"
           ],
-          "title": "XGen-7B 技术报告",
+          "title": "XGen-7B技术报告",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T08:46:34+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692933540-researchpaper10.png"
           },
@@ -3880,17 +3880,17 @@
         {
           "id": "189845549",
           "topics": [
-            "大型语言模型",
-            "指令调整"
+            "大语言模型",
+            "指令微调"
           ],
-          "title": "使用指令反向翻译的自我对齐",
+          "title": "使用指令反向翻译进行自对齐",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:35:15+01:00",
-          "description": "摘要评论与评分",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -3911,18 +3911,18 @@
         {
           "id": "189787192",
           "topics": [
-            "大型语言模型",
-            "编码",
-            "指令调优"
+            "大语言模型",
+            "代码",
+            "指令微调"
           ],
-          "title": "编程语言是否可以通过指令调优相互促进？",
+          "title": "编程语言能否通过指令微调相互促进?",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T06:24:29+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -3943,18 +3943,18 @@
         {
           "id": "189787168",
           "topics": [
-            "LLM",
-            "Instruction Tuning",
-            "Healthcare"
+            "大语言模型",
+            "指令微调",
+            "医疗保健"
           ],
-          "title": "MedAlign: A Clinician-Generated Dataset for Instruction Following with Electronic Medical Records",
+          "title": "MedAlign: 一个用于电子病历指令跟随的临床医生生成数据集",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T06:20:59+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -3975,18 +3975,18 @@
         {
           "id": "189777877",
           "topics": [
-            "大型语言模型",
+            "大语言模型",
             "代码",
-            "指令调优"
+            "指令微调"
           ],
-          "title": "OctoPack: 指令调优代码大型语言模型",
+          "title": "OctoPack: 代码大语言模型的指令微调",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:50:56+01:00",
-          "description": "摘要评论与评分",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -4007,17 +4007,17 @@
         {
           "id": "189777825",
           "topics": [
-            "大型语言模型",
-            "指令调整"
+            "大语言模型",
+            "指令微调"
           ],
-          "title": "使用指令反向翻译的自我对齐",
+          "title": "使用指令反向翻译进行自对齐",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:47:36+01:00",
-          "description": "摘要评论与评分",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -4045,17 +4045,17 @@
           "id": "198277150",
           "topics": [
             "大型语言模型",
-            "指令调整",
+            "指令微调",
             "多模态"
           ],
-          "title": "对指令调整的大型多模态模型的规模化实证研究",
+          "title": "大型多模态指令微调模型扩展的实证研究",
           "slug": "an-empirical-study-of-scaling-instruct-tuned-large-multimodal-models",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-27T03:33:15+01:00",
-          "description": "摘要评论与评分",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -4079,14 +4079,14 @@
             "音频",
             "多模态"
           ],
-          "title": "自然语言监督用于通用音频表示",
+          "title": "用于通用音频表示的自然语言监督",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T19:31:47+01:00",
-          "description": "摘要评论与评分",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -4108,18 +4108,18 @@
           "id": "189777849",
           "topics": [
             "音频",
-            "大型语言模型",
+            "大语言模型",
             "多模态",
             "多语言"
           ],
-          "title": "无需对齐即可改善联合语音-文本表示",
+          "title": "在不对齐的情况下改进联合语音文本表示",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:49:52+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -4140,24 +4140,24 @@
       ]
     },
     {
-      "name": "代理",
+      "name": "智能代理",
       "slug": "agents",
       "articles": [
         {
           "id": "198277160",
           "topics": [
-            "大型语言模型",
-            "代理",
+            "大语言模型",
+            "智能代理",
             "游戏"
           ],
-          "title": "MindAgent：新兴游戏互动",
+          "title": "心智代理:涌现的游戏交互",
           "slug": "mindagent-emergent-gaming-interaction",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-27T03:32:58+01:00",
-          "description": "摘要评论与评分",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -4178,18 +4178,18 @@
         {
           "id": "198044929",
           "topics": [
-            "LLM",
+            "大语言模型",
             "数据",
-            "代理"
+            "智能体"
           ],
-          "title": "用于推理的具身代理的数据源",
+          "title": "用于推理实体智能体的数据源",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T07:33:25+01:00",
-          "description": "摘要评论与评分",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -4210,17 +4210,17 @@
         {
           "id": "198044892",
           "topics": [
-            "LLM",
-            "代理"
+            "大语言模型",
+            "智能代理"
           ],
-          "title": "LASER: LLM代理与状态空间探索用于Web导航",
+          "title": "LASER: 用于网页导航的具有状态空间探索功能的大语言模型代理",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T07:26:17+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -4241,17 +4241,17 @@
         {
           "id": "197990671",
           "topics": [
-            "LLM",
-            "代理"
+            "大语言模型",
+            "智能代理"
           ],
-          "title": "代理：自主语言代理的开源框架",
+          "title": "智能代理:一个开源的自主语言代理框架",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T06:47:00+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -4272,18 +4272,18 @@
         {
           "id": "197559951",
           "topics": [
-            "大型语言模型",
-            "代理",
+            "大语言模型",
+            "智能代理",
             "工具"
           ],
-          "title": "ModelScope-Agent: 使用开源大型语言模型构建您的可定制代理系统",
+          "title": "ModelScope-Agent: 使用开源大型语言模型构建可定制的代理系统",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T01:11:03+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -4304,17 +4304,17 @@
         {
           "id": "189777845",
           "topics": [
-            "大型语言模型",
-            "代理"
+            "大语言模型",
+            "智能代理"
           ],
-          "title": "BOLAA：基准测试和编排增强型自主代理的大型语言模型",
+          "title": "BOLAA: 基准测试和编排大语言模型增强的自主代理",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:48:45+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -4341,18 +4341,18 @@
         {
           "id": "198277160",
           "topics": [
-            "LLM",
-            "代理",
+            "大语言模型",
+            "智能代理",
             "游戏"
           ],
-          "title": "MindAgent: 新兴游戏互动",
+          "title": "心智代理:涌现的游戏交互",
           "slug": "mindagent-emergent-gaming-interaction",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-27T03:32:58+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -4373,22 +4373,22 @@
       ]
     },
     {
-      "name": "变压器",
+      "name": "变换器",
       "slug": "transformers",
       "articles": [
         {
           "id": "198277182",
           "topics": [
-            "变压器"
+            "变形金刚"
           ],
-          "title": "通过共线约束注意治愈变压器的头痛",
+          "title": "通过共线约束注意力机制治愈变形金刚的头痛问题",
           "slug": "cure-the-headache-of-transformers-via-collinear-constrained-attention",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-27T03:32:43+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -4409,18 +4409,18 @@
         {
           "id": "198044879",
           "topics": [
-            "LLM",
-            "变压器",
+            "大语言模型",
+            "变换器",
             "可解释性"
           ],
-          "title": "稀疏自动编码器在语言模型中找到高度可解释的特征",
+          "title": "稀疏自编码器在语言模型中发现高度可解释的特征",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T07:23:08+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -4441,18 +4441,18 @@
         {
           "id": "198044746",
           "topics": [
-            "大型语言模型",
-            "变压器",
-            "培训"
+            "大语言模型",
+            "变换器",
+            "训练"
           ],
-          "title": "稀疏连接基础模型的规模定律",
+          "title": "稀疏连接基础模型的扩展定律",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T07:09:44+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -4473,16 +4473,16 @@
         {
           "id": "197842604",
           "topics": [
-            "变压器"
+            "变形金刚"
           ],
-          "title": "在变压器中揭示台地优化算法",
+          "title": "揭示变形金刚中的梅萨优化算法",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T19:27:51+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -4503,16 +4503,16 @@
         {
           "id": "197613989",
           "topics": [
-            "变压器"
+            "变形金刚"
           ],
-          "title": "门控循环神经网络发现注意力",
+          "title": "门控循环神经网络发现注意力机制",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T02:09:20+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -4533,16 +4533,16 @@
         {
           "id": "197556833",
           "topics": [
-            "变压器"
+            "变形金刚"
           ],
-          "title": "一个宽前馈就是你所需要的",
+          "title": "一个宽广的前馈网络就足够了",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T01:03:37+01:00",
-          "description": "摘要评论与评分",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -4563,16 +4563,16 @@
         {
           "id": "189989661",
           "topics": [
-            "Transformers"
+            "变形金刚"
           ],
-          "title": "Vector Search with OpenAI Embeddings: Lucene Is All You Need",
+          "title": "使用OpenAI嵌入的向量搜索:Lucene就是你所需要的",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:41:24+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -4602,7 +4602,7 @@
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:40:37+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -4623,16 +4623,16 @@
         {
           "id": "189787209",
           "topics": [
-            "Transformers"
+            "变形金刚"
           ],
-          "title": "YaRN: Efficient Context Window Extension of Large Language Models",
+          "title": "YaRN:大型语言模型的高效上下文窗口扩展",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T06:26:47+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -4653,16 +4653,16 @@
         {
           "id": "189787174",
           "topics": [
-            "Transformers"
+            "变形金刚"
           ],
-          "title": "LM-Infinite: Simple On-the-Fly Length Generalization for Large Language Models",
+          "title": "LM-Infinite: 大型语言模型的简单即时长度泛化",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T06:21:58+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -4683,16 +4683,16 @@
         {
           "id": "189777843",
           "topics": [
-            "Transformers"
+            "变形金刚"
           ],
-          "title": "Composable Function-preserving Expansions for Transformer Architectures",
+          "title": "变形金刚架构的可组合函数保持扩展",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:48:19+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -4722,14 +4722,14 @@
             "大型语言模型",
             "结构化数据"
           ],
-          "title": "结构基准：大型语言模型是否真的擅长生成复杂的结构化数据？",
+          "title": "Struc-Bench: 大型语言模型真的擅长生成复杂的结构化数据吗?",
           "slug": "struc-bench-are-large-language-models-really-good-at-generating-complex-structure",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-25T03:38:38+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -4750,19 +4750,19 @@
         {
           "id": "198277458",
           "topics": [
-            "大型语言模型",
+            "大语言模型",
             "幻觉",
             "实体",
             "结构化数据"
           ],
-          "title": "LMDX：基于语言模型的文档信息提取与定位",
+          "title": "LMDX: 基于语言模型的文档信息提取和定位",
           "slug": "lmdx-language-model-based-document-information-extraction-and-localization",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-24T05:20:31+01:00",
-          "description": "摘要评论与评分",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -4791,16 +4791,16 @@
           "topics": [
             "大型语言模型",
             "隐私",
-            "边缘"
+            "边缘计算"
           ],
-          "title": "使用大型语言模型从保护隐私的掩码中恢复",
+          "title": "利用大型语言模型从隐私保护遮蔽中恢复",
           "slug": "recovering-from-privacy-preserving-masking-with-large-language-models",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-25T03:38:26+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -4821,7 +4821,7 @@
       ]
     },
     {
-      "name": "边缘",
+      "name": "边缘计算",
       "slug": "edge",
       "articles": [
         {
@@ -4829,16 +4829,16 @@
           "topics": [
             "大型语言模型",
             "隐私",
-            "边缘"
+            "边缘计算"
           ],
-          "title": "使用大型语言模型从隐私保护掩码中恢复",
+          "title": "利用大型语言模型从隐私保护遮蔽中恢复",
           "slug": "recovering-from-privacy-preserving-masking-with-large-language-models",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-25T03:38:26+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -4865,17 +4865,17 @@
         {
           "id": "198277239",
           "topics": [
-            "大型语言模型",
+            "大语言模型",
             "聊天"
           ],
-          "title": "S3-DST：LLM时代的结构化开放域对话分割与状态跟踪",
+          "title": "S3-DST: 大语言模型时代的结构化开放域对话分割和状态跟踪",
           "slug": "s3-dst-structured-open-domain-dialogue-segmentation-and-state-tracking-in-the-era",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-25T03:38:11+01:00",
-          "description": "摘要评论与评分",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -4896,17 +4896,17 @@
         {
           "id": "198044802",
           "topics": [
-            "大型语言模型",
+            "大语言模型",
             "聊天"
           ],
-          "title": "调查大型语言模型对长形式问题解答的可回答性",
+          "title": "调查大语言模型在长篇问答中的可回答性",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T07:18:31+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -4927,18 +4927,18 @@
         {
           "id": "189777823",
           "topics": [
-            "大型语言模型",
+            "大语言模型",
             "代码",
             "聊天"
           ],
-          "title": "SoTaNa：开源软件开发助手",
+          "title": "SoTaNa: 开源软件开发助手",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T06:20:32+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692933540-researchpaper10.png"
           },
@@ -4959,18 +4959,18 @@
         {
           "id": "189775948",
           "topics": [
-            "LLM",
+            "大语言模型",
             "聊天",
             "数据"
           ],
-          "title": "PIPPA：部分合成的会话数据集",
+          "title": "PIPPA: 一个部分合成的对话数据集",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:48:00+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -5007,7 +5007,7 @@
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-25T03:37:49+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -5031,14 +5031,14 @@
             "音频",
             "多模态"
           ],
-          "title": "自然语言监督用于通用音频表示",
+          "title": "用于通用音频表示的自然语言监督",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T19:31:47+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -5060,18 +5060,18 @@
           "id": "189777849",
           "topics": [
             "音频",
-            "大型语言模型",
+            "大语言模型",
             "多模态",
             "多语言"
           ],
-          "title": "无需对齐即可改善联合语音-文本表示",
+          "title": "在不对齐的情况下改进联合语音文本表示",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:49:52+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -5098,7 +5098,7 @@
         {
           "id": "198277277",
           "topics": [
-            "LLM",
+            "大语言模型",
             "压缩"
           ],
           "title": "语言建模即压缩",
@@ -5108,7 +5108,7 @@
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-25T03:37:32+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -5131,16 +5131,16 @@
           "topics": [
             "大型语言模型",
             "压缩",
-            "调查"
+            "综述"
           ],
-          "title": "关于大型语言模型压缩的调查",
+          "title": "大型语言模型压缩技术综述",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:37:01+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -5161,23 +5161,23 @@
       ]
     },
     {
-      "name": "RLHF",
+      "name": "基于人类反馈的强化学习",
       "slug": "rlhf",
       "articles": [
         {
           "id": "198277360",
           "topics": [
-            "大型语言模型",
-            "强化学习人类反馈"
+            "大语言模型",
+            "基于人类反馈的强化学习"
           ],
-          "title": "通过优势模型和选择性复习稳定RLHF",
+          "title": "通过优势模型和选择性复习稳定基于人类反馈的强化学习",
           "slug": "stabilizing-rlhf-through-advantage-model-and-selective-rehearsal",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-24T05:22:15+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -5198,18 +5198,18 @@
         {
           "id": "197990654",
           "topics": [
-            "大型语言模型",
-            "强化学习人类反馈",
+            "大语言模型",
+            "基于人类反馈的强化学习",
             "强化学习"
           ],
-          "title": "统计拒绝抽样改善偏好优化",
+          "title": "统计拒绝采样改进偏好优化",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T06:41:10+01:00",
-          "description": "摘要评论与评分",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -5230,17 +5230,17 @@
         {
           "id": "197613974",
           "topics": [
-            "大型语言模型",
-            "强化学习人类反馈"
+            "大语言模型",
+            "基于人类反馈的强化学习"
           ],
-          "title": "高效的强化学习人类反馈：减少PPO的内存使用",
+          "title": "高效的基于人类反馈的强化学习: 降低PPO的内存使用",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T02:03:03+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -5263,16 +5263,16 @@
           "topics": [
             "LLM",
             "RLHF",
-            "Summary"
+            "摘要"
           ],
-          "title": "Open Problems and Fundamental Limitations of Reinforcement Learning from Human Feedback [Summary]",
+          "title": "人类反馈强化学习的开放问题和基本局限性 [摘要]",
           "slug": "open-problems-and-fundamental-limitations-of-reinforcement-learning-from-human-fe",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:49:23+01:00",
-          "description": "Uncover the challenges, limitations, and future of Reinforcement Learning from Human Feedback (RLHF) in AI systems. Explore governance, safety, and more.",
+          "description": "揭示人工智能系统中人类反馈强化学习 (RLHF) 的挑战、局限性和未来。探索治理、安全等问题。",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690837480-abr6-img1.png"
           },
@@ -5293,17 +5293,17 @@
         {
           "id": "189845519",
           "topics": [
-            "大型语言模型",
+            "大语言模型",
             "基于人类反馈的强化学习"
           ],
-          "title": "RLAIF：用AI反馈扩展来自人类反馈的强化学习",
+          "title": "RLAIF: 利用人工智能反馈扩展基于人类反馈的强化学习",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:33:54+01:00",
-          "description": "摘要评论与评分",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -5330,17 +5330,17 @@
         {
           "id": "198277446",
           "topics": [
-            "大型语言模型",
+            "大语言模型",
             "幻觉"
           ],
-          "title": "验证链减少大型语言模型中的幻觉",
+          "title": "验证链减少大语言模型中的幻觉",
           "slug": "chain-of-verification-reduces-hallucination-in-large-language-models",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-24T05:21:05+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -5361,19 +5361,19 @@
         {
           "id": "198277458",
           "topics": [
-            "大型语言模型",
+            "大语言模型",
             "幻觉",
             "实体",
             "结构化数据"
           ],
-          "title": "LMDX：基于语言模型的文档信息提取与定位",
+          "title": "LMDX: 基于语言模型的文档信息提取和定位",
           "slug": "lmdx-language-model-based-document-information-extraction-and-localization",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-24T05:20:31+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -5400,19 +5400,19 @@
         {
           "id": "198277458",
           "topics": [
-            "大型语言模型",
+            "大语言模型",
             "幻觉",
             "实体",
             "结构化数据"
           ],
-          "title": "LMDX: 基于语言模型的文档信息提取与定位",
+          "title": "LMDX: 基于语言模型的文档信息提取和定位",
           "slug": "lmdx-language-model-based-document-information-extraction-and-localization",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-24T05:20:31+01:00",
-          "description": "摘要评论与评分",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -5433,18 +5433,18 @@
         {
           "id": "198044900",
           "topics": [
-            "大型语言模型",
+            "大语言模型",
             "实体",
             "微调"
           ],
-          "title": "利用上下文信息有效检测实体显著性",
+          "title": "利用上下文信息进行有效的实体显著性检测",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T07:30:50+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -5471,17 +5471,17 @@
         {
           "id": "198277209",
           "topics": [
-            "大型语言模型",
+            "大语言模型",
             "数据"
           ],
-          "title": "SlimPajama-DC：了解大型语言模型训练的数据组合",
+          "title": "SlimPajama-DC: 理解用于大语言模型训练的数据组合",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T23:43:32+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -5502,18 +5502,18 @@
         {
           "id": "198277099",
           "topics": [
-            "大型语言模型",
-            "多语种",
+            "大语言模型",
+            "多语言",
             "数据"
           ],
-          "title": "CulturaX：一个清洁、庞大且多语种的数据集，适用于167种语言的大型语言模型",
+          "title": "CulturaX: 一个清洁、庞大且多语言的数据集,用于167种语言的大型语言模型",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T22:14:53+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -5534,18 +5534,18 @@
         {
           "id": "198044929",
           "topics": [
-            "LLM",
+            "大语言模型",
             "数据",
-            "代理"
+            "智能体"
           ],
-          "title": "用于推理的具身代理的数据源",
+          "title": "用于推理实体智能体的数据源",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T07:33:25+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -5566,17 +5566,17 @@
         {
           "id": "197813719",
           "topics": [
-            "大型语言模型",
+            "大语言模型",
             "数据"
           ],
-          "title": "少即是多：大规模预训练大型语言模型时的数据修剪研究",
+          "title": "当少即是多:探究大规模预训练大语言模型的数据修剪",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T17:59:21+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -5597,19 +5597,19 @@
         {
           "id": "189787086",
           "topics": [
-            "LLM",
-            "Fine-tuning",
+            "大语言模型",
+            "微调",
             "LORA",
-            "Data"
+            "数据"
           ],
-          "title": "Platypus: Quick, Cheap, and Powerful Refinement of LLMs",
+          "title": "鸭嘴兽:快速,廉价且强大的大语言模型优化",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:51:43+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -5630,18 +5630,18 @@
         {
           "id": "189775948",
           "topics": [
-            "LLM",
+            "大语言模型",
             "聊天",
             "数据"
           ],
-          "title": "PIPPA：部分合成的对话数据集",
+          "title": "PIPPA: 一个部分合成的对话数据集",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:48:00+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -5662,18 +5662,18 @@
         {
           "id": "189576084",
           "topics": [
-            "LLM",
+            "大语言模型",
             "数据",
-            "培训"
+            "训练"
           ],
-          "title": "牧羊人：语言模型生成的评论家",
+          "title": "Shepherd: 语言模型生成的评论家",
           "slug": "shepherd-a-critic-for-language-model-generation",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T04:45:24+01:00",
-          "description": "摘要评论与评分",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -5703,14 +5703,14 @@
             "大型语言模型",
             "推理"
           ],
-          "title": "对比解码提高了大型语言模型中的推理能力",
+          "title": "对比解码提高大型语言模型的推理能力",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T22:18:11+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -5731,18 +5731,18 @@
         {
           "id": "189849326",
           "topics": [
-            "大型语言模型",
-            "提示",
+            "大语言模型",
+            "提示工程",
             "推理"
           ],
-          "title": "思维图谱：用大型语言模型解决复杂问题",
+          "title": "思维图谱:利用大型语言模型解决复杂问题",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:42:47+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -5769,18 +5769,18 @@
         {
           "id": "198044879",
           "topics": [
-            "大型语言模型",
-            "变压器",
+            "大语言模型",
+            "变换器",
             "可解释性"
           ],
-          "title": "稀疏自编码器在语言模型中找到高度可解释的特征",
+          "title": "稀疏自编码器在语言模型中发现高度可解释的特征",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T07:23:08+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -5807,18 +5807,18 @@
         {
           "id": "198044746",
           "topics": [
-            "LLM",
-            "变压器",
-            "培训"
+            "大语言模型",
+            "变换器",
+            "训练"
           ],
-          "title": "稀疏连接基础模型的规模定律",
+          "title": "稀疏连接基础模型的缩放定律",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T07:09:44+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -5839,18 +5839,18 @@
         {
           "id": "189845521",
           "topics": [
-            "大型语言模型",
-            "培训",
+            "大语言模型",
+            "训练",
             "对齐"
           ],
-          "title": "从预训练数据到语言模型再到下游任务：追踪导致不公平NLP模型的政治偏见的踪迹",
+          "title": "从预训练数据到语言模型再到下游任务:追踪导致不公平自然语言处理模型的政治偏见轨迹",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:36:14+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -5871,18 +5871,18 @@
         {
           "id": "189576084",
           "topics": [
-            "LLM",
+            "大语言模型",
             "数据",
-            "培训"
+            "训练"
           ],
-          "title": "牧羊人：语言模型生成的评论家",
+          "title": "Shepherd: 语言模型生成的评论家",
           "slug": "shepherd-a-critic-for-language-model-generation",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T04:45:24+01:00",
-          "description": "摘要评论与评分",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -5912,14 +5912,14 @@
             "大型语言模型",
             "上下文学习"
           ],
-          "title": "具有歧义感知的大型语言模型上下文学习",
+          "title": "大型语言模型的歧义感知上下文学习",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T06:59:38+01:00",
-          "description": "摘要评论与评分",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -5940,18 +5940,18 @@
         {
           "id": "197817281",
           "topics": [
-            "大型语言模型",
+            "大语言模型",
             "上下文学习",
             "微调"
           ],
-          "title": "FIAT：通过指令加速调整融合学习范式",
+          "title": "FIAT: 通过指令加速调优融合学习范式",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T18:07:58+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -5973,17 +5973,17 @@
           "id": "189787148",
           "topics": [
             "检索",
-            "大型语言模型",
+            "大语言模型",
             "上下文学习"
           ],
-          "title": "RAVEN: 使用检索增强的编解码器语言模型进行上下文学习",
+          "title": "RAVEN: 使用检索增强的编码器-解码器语言模型进行上下文学习",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:57:31+01:00",
-          "description": "摘要评论与评分",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -6004,17 +6004,17 @@
         {
           "id": "189777847",
           "topics": [
-            "LLM",
-            "In-Context Learning"
+            "大语言模型",
+            "上下文学习"
           ],
-          "title": "CausalLM is not optimal for in-context learning",
+          "title": "因果语言模型不适合上下文学习",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:52:46+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -6045,14 +6045,14 @@
             "评估",
             "多语言"
           ],
-          "title": "大型语言模型评估者是否是扩展多语言评估的解决方案？",
+          "title": "基于大型语言模型的评估器是否是扩展多语言评估的解决方案?",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T06:56:13+01:00",
-          "description": "摘要评论与评分",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -6073,18 +6073,18 @@
         {
           "id": "189787170",
           "topics": [
-            "LLM",
+            "大语言模型",
             "多语言",
             "评估"
           ],
-          "title": "Belebele基准测试：122种语言变体的并行阅读理解数据集",
+          "title": "Belebele基准测试:122种语言变体的平行阅读理解数据集",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T06:25:24+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692933540-researchpaper10.png"
           },
@@ -6105,18 +6105,18 @@
         {
           "id": "189787190",
           "topics": [
-            "LLM",
+            "大语言模型",
             "评估",
             "气候"
           ],
-          "title": "WeatherBench 2：下一代数据驱动全球天气模型的基准",
+          "title": "WeatherBench 2: 下一代数据驱动全球天气模型的基准测试",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T06:22:58+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -6137,19 +6137,19 @@
         {
           "id": "189577629",
           "topics": [
-            "LLM",
-            "Alignment",
-            "Survey",
-            "Evaluation"
+            "大型语言模型",
+            "对齐",
+            "调查",
+            "评估"
           ],
-          "title": "Trustworthy LLMs: a Survey and Guideline for Evaluating Large Language Models' Alignment",
+          "title": "可信的大型语言模型：评估大型语言模型对齐的调查和指南",
           "slug": "trustworthy-llms-a-survey-and-guideline-for-evaluating-large-language-models-alig",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:45:28+01:00",
-          "description": "Abstract Commentary & Rating",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -6170,7 +6170,7 @@
       ]
     },
     {
-      "name": "总结",
+      "name": "摘要",
       "slug": "summarization",
       "articles": [
         {
@@ -6178,16 +6178,16 @@
           "topics": [
             "大型语言模型",
             "医疗保健",
-            "摘要"
+            "摘要生成"
           ],
-          "title": "临床文本摘要：适应大型语言模型可以胜过人类专家",
+          "title": "临床文本摘要:调整大型语言模型可以超越人类专家",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T06:50:58+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692933540-researchpaper10.png"
           },
@@ -6208,18 +6208,18 @@
         {
           "id": "197621737",
           "topics": [
-            "LLM",
-            "提示",
-            "总结"
+            "大语言模型",
+            "提示工程",
+            "摘要生成"
           ],
-          "title": "DrugChat：朝向在药物分子图上启用类ChatGPT功能",
+          "title": "DrugChat: 实现药物分子图上类ChatGPT的能力",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T08:54:43+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -6240,18 +6240,18 @@
         {
           "id": "197621634",
           "topics": [
-            "大型语言模型",
-            "提示",
-            "摘要"
+            "大语言模型",
+            "提示工程",
+            "摘要生成"
           ],
-          "title": "从稀疏到密集：GPT-4通过密度链提示进行摘要",
+          "title": "从稀疏到密集:使用密度链提示的GPT-4摘要生成",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T08:52:12+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -6278,18 +6278,18 @@
         {
           "id": "197990654",
           "topics": [
-            "大型语言模型",
-            "强化学习人类反馈",
+            "大语言模型",
+            "基于人类反馈的强化学习",
             "强化学习"
           ],
-          "title": "统计拒绝抽样改善偏好优化",
+          "title": "统计拒绝采样改进偏好优化",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-04T06:41:10+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -6319,14 +6319,14 @@
             "大型语言模型",
             "代码"
           ],
-          "title": "大型语言模型用于编译器优化",
+          "title": "用于编译器优化的大型语言模型",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T19:41:06+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -6347,17 +6347,17 @@
         {
           "id": "189787126",
           "topics": [
-            "大型语言模型",
+            "大语言模型",
             "代码"
           ],
-          "title": "大型语言模型作为数据库管理员",
+          "title": "大语言模型作为数据库管理员",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:35:41+01:00",
-          "description": "摘要评论与评分",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -6378,18 +6378,18 @@
         {
           "id": "189787194",
           "topics": [
-            "LLM",
+            "大语言模型",
             "代码",
             "医疗保健"
           ],
-          "title": "BioCoder：具有语境实用知识的生物信息学代码生成基准",
+          "title": "BioCoder: 具有上下文语用知识的生物信息学代码生成基准",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T06:26:08+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -6410,18 +6410,18 @@
         {
           "id": "189787192",
           "topics": [
-            "大型语言模型",
-            "编码",
-            "指令调优"
+            "大语言模型",
+            "代码",
+            "指令微调"
           ],
-          "title": "编程语言能通过指令调优相互促进吗？",
+          "title": "编程语言能否通过指令微调相互促进?",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T06:24:29+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -6442,18 +6442,18 @@
         {
           "id": "189777823",
           "topics": [
-            "LLM",
+            "大语言模型",
             "代码",
             "聊天"
           ],
-          "title": "SoTaNa：开源软件开发助手",
+          "title": "SoTaNa: 开源软件开发助手",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T06:20:32+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692933540-researchpaper10.png"
           },
@@ -6474,18 +6474,18 @@
         {
           "id": "189787144",
           "topics": [
-            "LLM",
+            "大语言模型",
             "代码",
-            "提示"
+            "提示工程"
           ],
-          "title": "使用GPT-4代码解释器解决具有挑战性的数学文字问题，并进行基于代码的自我验证",
+          "title": "使用GPT-4代码解释器和基于代码的自验证解决具有挑战性的数学应用题",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:56:26+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -6506,18 +6506,18 @@
         {
           "id": "189777877",
           "topics": [
-            "大型语言模型",
+            "大语言模型",
             "代码",
-            "指令调优"
+            "指令微调"
           ],
-          "title": "OctoPack: 指令调优代码大型语言模型",
+          "title": "OctoPack: 代码大语言模型的指令微调",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:50:56+01:00",
-          "description": "摘要评论与评分",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -6548,7 +6548,7 @@
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:50:28+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -6575,17 +6575,17 @@
         {
           "id": "197840057",
           "topics": [
-            "LLM",
+            "大语言模型",
             "科学"
           ],
-          "title": "AstroLLaMA：天文学中的专业基础模型发展",
+          "title": "AstroLLaMA: 面向天文学的专业基础模型",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T19:21:13+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -6610,14 +6610,14 @@
             "数学",
             "科学"
           ],
-          "title": "科学领域的大型语言模型：关于P与NP的研究",
+          "title": "科学领域的大型语言模型：P对NP问题的研究",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T19:17:15+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -6641,14 +6641,14 @@
             "扩散",
             "科学"
           ],
-          "title": "PDE-细化器：使用神经PDE求解器实现准确的长时间推演",
+          "title": "PDE-Refiner: 通过神经PDE求解器实现精确的长期推演",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:46:35+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -6675,18 +6675,18 @@
         {
           "id": "197838596",
           "topics": [
-            "LLM",
+            "大型语言模型",
             "数学",
             "科学"
           ],
-          "title": "科学领域的大型语言模型：P与NP的研究",
+          "title": "科学领域的大型语言模型：P对NP问题的研究",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T19:17:15+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -6707,17 +6707,17 @@
         {
           "id": "197621439",
           "topics": [
-            "LLM",
+            "大语言模型",
             "数学"
           ],
-          "title": "GPT可以在没有计算器的情况下解决数学问题",
+          "title": "GPT无需计算器即可解决数学问题",
           "slug": "transformer-models-an-introduction-and-catalog",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T08:39:23+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692937594-researchpaper7.png"
           },
@@ -6744,17 +6744,17 @@
         {
           "id": "197810544",
           "topics": [
-            "LLM",
+            "大语言模型",
             "开源"
           ],
-          "title": "教科书是你所需的一切II：phi-1.5技术报告",
+          "title": "你只需要教科书 II: phi-1.5 技术报告",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T17:52:36+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -6775,18 +6775,18 @@
         {
           "id": "197621519",
           "topics": [
-            "大型语言模型",
+            "大语言模型",
             "开源",
-            "指令调优"
+            "指令微调"
           ],
-          "title": "XGen-7B 技术报告",
+          "title": "XGen-7B技术报告",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T08:46:34+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692933540-researchpaper10.png"
           },
@@ -6816,14 +6816,14 @@
             "图像",
             "LORA"
           ],
-          "title": "StyleAdapter：一个单通道无LoRA模型用于风格化图像生成",
+          "title": "StyleAdapter: 用于风格化图像生成的单通道无LoRA模型",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T02:06:42+01:00",
-          "description": "摘要评论与评分",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -6848,14 +6848,14 @@
             "安全",
             "扩散"
           ],
-          "title": "FLIRT: 反馈环境中的红队测试",
+          "title": "FLIRT: 反馈循环情境下的红队测试",
           "slug": "flirt-feedback-loop-in-context-red-teaming",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T04:42:55+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692933540-researchpaper10.png"
           },
@@ -6876,7 +6876,7 @@
       ]
     },
     {
-      "name": "LORA",
+      "name": "低秩适应",
       "slug": "lora",
       "articles": [
         {
@@ -6885,14 +6885,14 @@
             "图像",
             "LORA"
           ],
-          "title": "StyleAdapter：一个单通道无LoRA的风格化图像生成模型",
+          "title": "StyleAdapter: 用于风格化图像生成的单通道无LoRA模型",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T02:06:42+01:00",
-          "description": "摘要评论与评分",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -6917,14 +6917,14 @@
             "评论",
             "LORA"
           ],
-          "title": "LoraHub：通过动态LoRA组合实现高效跨任务泛化[评论]",
+          "title": "LoraHub: 通过动态LoRA组合实现高效跨任务泛化 [评论]",
           "slug": "lorahub-efficient-cross-task-generalization-via-dynamic-lora-composition-commenta",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:46:29+01:00",
-          "description": "通过LoraHub探索LoRA模块的动态组合，以适应LLM性能。深入研究问题陈述、方法论、评估等。",
+          "description": "探索LoraHub的动态LoRA模块组合,以实现可适应的LLM性能。深入了解问题陈述,方法论,评估等内容。",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690946901-abr8-img1.png"
           },
@@ -6945,19 +6945,19 @@
         {
           "id": "189787086",
           "topics": [
-            "大型语言模型",
+            "大语言模型",
             "微调",
             "LORA",
             "数据"
           ],
-          "title": "鸭嘴兽：快速、经济、强大的大型语言模型精炼",
+          "title": "鸭嘴兽:快速,廉价且强大的大语言模型优化",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:51:43+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -6984,18 +6984,18 @@
         {
           "id": "197559951",
           "topics": [
-            "大型语言模型",
-            "代理",
+            "大语言模型",
+            "智能代理",
             "工具"
           ],
-          "title": "ModelScope-Agent: 使用开源大型语言模型构建您的可定制代理系统",
+          "title": "ModelScope-Agent: 使用开源大语言模型构建可定制的智能代理系统",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-03T01:11:03+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -7016,18 +7016,18 @@
         {
           "id": "180928004",
           "topics": [
-            "LLM",
+            "大型语言模型",
             "工具",
             "评论"
           ],
-          "title": "ToolLLM：帮助大型语言模型掌握16000多个真实世界API [评论]",
+          "title": "ToolLLM: 促进大型语言模型掌握16000多个真实世界API [评论]",
           "slug": "toolllm-facilitating-large-language-models-to-master-16000-real-world-apis-commen",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:46:02+01:00",
-          "description": "探索大型语言模型（LLM）在API交互中的力量，通过我们对'Tool LLM'的总结",
+          "description": "通过我们对'Tool LLM'的总结,探索大型语言模型(LLM)在API交互中的强大能力",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690949823-screenshot-2023-08-02-at-12-14-28-am.png"
           },
@@ -7048,17 +7048,17 @@
         {
           "id": "189989705",
           "topics": [
-            "LLM",
+            "大语言模型",
             "工具"
           ],
-          "title": "FacTool：生成AI中的事实性检测--用于多任务和多领域场景的工具增强框架",
+          "title": "FacTool: 生成式人工智能中的事实性检测 -- 一个用于多任务和多领域场景的工具增强框架",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:44:04+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -7079,7 +7079,7 @@
       ]
     },
     {
-      "name": "摘要",
+      "name": "总结",
       "slug": "summary",
       "articles": [
         {
@@ -7089,14 +7089,14 @@
             "RLHF",
             "摘要"
           ],
-          "title": "强化学习中的开放问题和基本限制来自人类反馈[摘要]",
+          "title": "人类反馈强化学习的开放问题和基本局限性 [摘要]",
           "slug": "open-problems-and-fundamental-limitations-of-reinforcement-learning-from-human-fe",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:49:23+01:00",
-          "description": "揭示人类反馈中强化学习的挑战、限制和未来（RLHF）在AI系统中。探索治理、安全等更多内容。",
+          "description": "揭示人工智能系统中人类反馈强化学习 (RLHF) 的挑战、局限性和未来。探索治理、安全等问题。",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690837480-abr6-img1.png"
           },
@@ -7120,14 +7120,14 @@
             "LLM",
             "摘要"
           ],
-          "title": "羊驼2：开放基础与精调聊天模型[评论]",
+          "title": "Llama 2: 开放基础和微调聊天模型 [评论]",
           "slug": "llama-2-open-foundation-and-fine-tuned-chat-models-commentary",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:48:17+01:00",
-          "description": "深入探讨羊驼2：探索预训练、精调、安全措施以及我们全面总结中的深刻讨论。",
+          "description": "深入探讨Llama 2: 在我们的全面摘要中探索预训练、微调、安全措施和富有洞察力的讨论。",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690935728-abr7-img1.png"
           },
@@ -7151,14 +7151,14 @@
             "大型语言模型",
             "摘要"
           ],
-          "title": "大型语言模型的挑战与应用[摘要]",
+          "title": "大型语言模型的挑战和应用 [摘要]",
           "slug": "challenges-and-applications-of-large-language-models-summary",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:47:49+01:00",
-          "description": "探索我们对'大型语言模型的挑战与应用'的研究论文的总结和关键见解，该论文深入探讨了LLM的潜力、挑战和应用。",
+          "description": "探索我们对'大型语言模型的挑战和应用'研究论文的摘要和关键见解,该论文深入探讨了大型语言模型的潜力、挑战和应用。",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690575713-abr-img1.png"
           },
@@ -7189,14 +7189,14 @@
             "评论",
             "LORA"
           ],
-          "title": "LoraHub：通过动态LoRA组合实现高效跨任务泛化[评论]",
+          "title": "LoraHub: 通过动态LoRA组合实现高效跨任务泛化 [评论]",
           "slug": "lorahub-efficient-cross-task-generalization-via-dynamic-lora-composition-commenta",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:46:29+01:00",
-          "description": "通过LoraHub探索LoRA模块的动态组合，以适应LLM的性能。深入研究问题陈述、方法论、评估等。",
+          "description": "探索LoraHub的动态LoRA模块组合,以实现可适应的LLM性能。深入了解问题陈述,方法论,评估等内容。",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690946901-abr8-img1.png"
           },
@@ -7217,18 +7217,18 @@
         {
           "id": "180928004",
           "topics": [
-            "LLM",
+            "大型语言模型",
             "工具",
             "评论"
           ],
-          "title": "ToolLLM：促进大型语言模型掌握16000多个真实世界API [评论]",
+          "title": "ToolLLM: 促进大型语言模型掌握16000多个真实世界API [评论]",
           "slug": "toolllm-facilitating-large-language-models-to-master-16000-real-world-apis-commen",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:46:02+01:00",
-          "description": "探索大型语言模型（LLM）在API交互中的力量，通过我们对'Tool LLM'的总结",
+          "description": "通过我们对'Tool LLM'的总结,探索大型语言模型(LLM)在API交互中的强大能力",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1690949823-screenshot-2023-08-02-at-12-14-28-am.png"
           },
@@ -7257,16 +7257,16 @@
           "topics": [
             "大型语言模型",
             "压缩",
-            "调查"
+            "综述"
           ],
-          "title": "关于大型语言模型压缩的调查",
+          "title": "大型语言模型压缩技术综述",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:37:01+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -7292,14 +7292,14 @@
             "调查",
             "评估"
           ],
-          "title": "值得信赖的大型语言模型：评估大型语言模型对齐的调查和指南",
+          "title": "可信的大型语言模型：评估大型语言模型对齐的调查和指南",
           "slug": "trustworthy-llms-a-survey-and-guideline-for-evaluating-large-language-models-alig",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:45:28+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -7326,18 +7326,18 @@
         {
           "id": "189845521",
           "topics": [
-            "大型语言模型",
-            "培训",
+            "大语言模型",
+            "训练",
             "对齐"
           ],
-          "title": "从预训练数据到语言模型再到下游任务：追踪导致不公平NLP模型的政治偏见的踪迹",
+          "title": "从预训练数据到语言模型再到下游任务:追踪导致不公平自然语言处理模型的政治偏见轨迹",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T07:36:14+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -7363,14 +7363,14 @@
             "调查",
             "评估"
           ],
-          "title": "值得信赖的大型语言模型：评估大型语言模型对齐的调查和指南",
+          "title": "可信的大型语言模型：评估大型语言模型对齐的调查和指南",
           "slug": "trustworthy-llms-a-survey-and-guideline-for-evaluating-large-language-models-alig",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:45:28+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -7391,17 +7391,17 @@
         {
           "id": "189576058",
           "topics": [
-            "大型语言模型",
+            "大语言模型",
             "对齐"
           ],
-          "title": "简单的合成数据减少了大型语言模型中的阿谀奉承",
+          "title": "简单的合成数据减少了大语言模型中的谄媚行为",
           "slug": "simple-synthetic-data-reduces-sycophancy-in-large-language-models",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T04:41:07+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -7428,18 +7428,18 @@
         {
           "id": "189787190",
           "topics": [
-            "LLM",
+            "大语言模型",
             "评估",
             "气候"
           ],
-          "title": "WeatherBench 2：下一代数据驱动的全球天气模型的基准",
+          "title": "WeatherBench 2: 下一代数据驱动全球天气模型的基准测试",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T06:22:58+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -7466,17 +7466,17 @@
         {
           "id": "189787150",
           "topics": [
-            "大型语言模型",
+            "大语言模型",
             "个性化"
           ],
-          "title": "教授大型语言模型个性化——一种受写作教育启发的方法",
+          "title": "教大语言模型实现个性化 -- 一种受写作教育启发的方法",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:58:51+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -7506,14 +7506,14 @@
             "扩散",
             "科学"
           ],
-          "title": "PDE-细化器：使用神经PDE求解器实现精确的长时间推演",
+          "title": "PDE-Refiner: 通过神经PDE求解器实现精确的长期推演",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T05:46:35+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
           },
@@ -7538,14 +7538,14 @@
             "安全",
             "扩散"
           ],
-          "title": "FLIRT: 反馈循环情境红队",
+          "title": "FLIRT: 反馈循环情境下的红队测试",
           "slug": "flirt-feedback-loop-in-context-red-teaming",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T04:42:55+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692933540-researchpaper10.png"
           },
@@ -7572,17 +7572,17 @@
         {
           "id": "189576091",
           "topics": [
-            "大型语言模型",
+            "大语言模型",
             "推理"
           ],
-          "title": "通过分阶段推测解码加速大型语言模型推理",
+          "title": "使用分阶段推测解码加速大语言模型推理",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T04:45:52+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
           },
@@ -7613,14 +7613,14 @@
             "安全",
             "扩散"
           ],
-          "title": "FLIRT: 反馈循环情境红队",
+          "title": "FLIRT: 反馈循环情境下的红队测试",
           "slug": "flirt-feedback-loop-in-context-red-teaming",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-02T04:42:55+01:00",
-          "description": "摘要评论与评级",
+          "description": "摘要评论和评分",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1692933540-researchpaper10.png"
           },
@@ -7648,7 +7648,7 @@
       "title": "AI Research",
       "twitterCard": "summary_large_image"
     },
-    "description": "策划开创性研究",
+    "description": "精选开创性研究",
     "title": "人工智能研究",
     "seoType": "ai-research",
     "id": "193455263",

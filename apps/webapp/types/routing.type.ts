@@ -1,7 +1,7 @@
-import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
+import { Lang } from '@/dictionaries/locales'
 
 export interface LangProp {
-  lang: SiteLocale
+  lang: Lang
 }
 
 export interface CommonPageParams extends LangProp {}

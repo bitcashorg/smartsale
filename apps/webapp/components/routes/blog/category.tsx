@@ -12,7 +12,7 @@ import {
 import { ArticleCard } from '../../shared/article-card'
 import { cn } from '@/lib/utils'
 import { LucideIcons } from './lucide-icons'
-import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
+import { Lang } from '@/dictionaries/locales'
 
 export function CategoryComponent({ params, sections }: BlogCategoryPageProps) {
   const [filteredSectionContent, setFilterSectionContent] = useState<
@@ -55,7 +55,7 @@ export function CategoryComponent({ params, sections }: BlogCategoryPageProps) {
   }, [topic, sections.length])
 
   return (
-    <div className="flex w-full flex-col items-center justify-start py-10">
+    <div className="flex flex-col items-center justify-start w-full py-10">
       {(filteredSectionContent || sections)?.map((section, index) => {
         const contents = topic ? section?.content : section?.content.slice(0, 4)
         //  console.log("contents::", contents)
@@ -66,8 +66,8 @@ export function CategoryComponent({ params, sections }: BlogCategoryPageProps) {
               key={index}
               id={section.topic}
             >
-              <div className="mb-space-32 flex items-center justify-between">
-                <span className="sub-2-lg font-semibold capitalize text-black dark:text-white">
+              <div className="flex items-center justify-between mb-space-32">
+                <span className="font-semibold text-black capitalize sub-2-lg dark:text-white">
                   {section.topic}
                 </span>
                 <Link
@@ -111,7 +111,7 @@ export interface BlogCategoryPageProps {
   i18n: CMSLayoutText
   params: {
     category: string
-    lang: SiteLocale
+    lang: Lang
   }
   // searchParams: {},
   topics: string[]

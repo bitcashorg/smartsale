@@ -12,10 +12,10 @@ import { BlogArticleRecord, CMSLayoutText } from '@/services/datocms'
 
 import Image from 'next/image'
 import { readingTime } from '@/lib/blog'
-import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 import { ArticleCard } from '../../shared/article-card'
+import { Lang } from '@/dictionaries/locales'
 
 export function BlogPage({ params, blogContent, relatedBlogs }: BlogPageProps) {
   const category = params.category
@@ -255,7 +255,7 @@ export function BlogPage({ params, blogContent, relatedBlogs }: BlogPageProps) {
 export interface BlogPageProps {
   // i18n: CMSLayoutText
   params: {
-    lang: SiteLocale
+    lang: Lang
     category: string
     slug: string
   }

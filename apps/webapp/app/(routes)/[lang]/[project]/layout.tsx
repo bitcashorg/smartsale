@@ -1,6 +1,6 @@
 import { getDictionary } from '@/dictionaries'
+import { Lang } from '@/dictionaries/locales'
 import { getProjectBySlug } from '@/lib/projects'
-import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
 import { Metadata } from 'next'
 
 export default function ProjectPagesLayout({ children }: ProjectPageProps) {
@@ -24,4 +24,4 @@ interface ProjectPageProps {
   children: React.ReactNode
   params: ProjectPageParams
 }
-type ProjectPageParams = { project: string; lang: SiteLocale }
+type ProjectPageParams = { project: string; lang: Lang }

@@ -13,14 +13,11 @@ import {
   BlogStartupModelFilter,
   BlogStartupRecord,
   ResearchAiRecord,
-  SeoField,
-  SiteLocale
+  SeoField
 } from '@/services/datocms/graphql/generated/cms'
 
 export async function getBlogCategory(
   category: string,
-  locale: SiteLocale,
-  fallbackLocales: SiteLocale[],
   filter?:
     | BlogBitcashModelFilter
     | BlogAiModelFilter
@@ -69,8 +66,8 @@ export async function getBlogCategory(
       [categoryRecordName]: {
         __args: {
           orderBy: ['_publishedAt_DESC'],
-          locale: locale,
-          fallbackLocales: fallbackLocales,
+          locale: 'en',
+          fallbackLocales: ['en'],
           filter,
           first
         },
@@ -141,17 +138,14 @@ export async function getBlogCategory(
   }
 }
 
-export async function getBlogCategories(
-  locale: SiteLocale,
-  fallbackLocales: SiteLocale[]
-): Promise<getBlogCategoriesTypes> {
+export async function getBlogCategories(): Promise<getBlogCategoriesTypes> {
   try {
     const data = await getCMSSdk().query({
       allBlogBitcoins: {
         __args: {
           orderBy: ['_publishedAt_DESC'],
-          locale: locale,
-          fallbackLocales: fallbackLocales
+          locale: 'en',
+          fallbackLocales: ['en']
         },
         id: true,
         topics: true,
@@ -196,8 +190,8 @@ export async function getBlogCategories(
       allBlogCryptos: {
         __args: {
           orderBy: ['_publishedAt_DESC'],
-          locale: locale,
-          fallbackLocales: fallbackLocales
+          locale: 'en',
+          fallbackLocales: ['en']
         },
         id: true,
         topics: true,
@@ -242,8 +236,8 @@ export async function getBlogCategories(
       allBlogInvestings: {
         __args: {
           orderBy: ['_publishedAt_DESC'],
-          locale: locale,
-          fallbackLocales: fallbackLocales
+          locale: 'en',
+          fallbackLocales: ['en']
         },
         id: true,
         topics: true,
@@ -287,8 +281,8 @@ export async function getBlogCategories(
       allBlogStartups: {
         __args: {
           orderBy: ['_publishedAt_DESC'],
-          locale: locale,
-          fallbackLocales: fallbackLocales
+          locale: 'en',
+          fallbackLocales: ['en']
         },
         id: true,
         topics: true,
@@ -334,8 +328,8 @@ export async function getBlogCategories(
       allBlogAis: {
         __args: {
           orderBy: ['_publishedAt_DESC'],
-          locale: locale,
-          fallbackLocales: fallbackLocales
+          locale: 'en',
+          fallbackLocales: ['en']
         },
         id: true,
         topics: true,
@@ -381,8 +375,8 @@ export async function getBlogCategories(
       allBlogNews: {
         __args: {
           orderBy: ['_publishedAt_DESC'],
-          locale: locale,
-          fallbackLocales: fallbackLocales
+          locale: 'en',
+          fallbackLocales: ['en']
         },
         id: true,
         topics: true,
@@ -428,8 +422,8 @@ export async function getBlogCategories(
       allBlogBitcashes: {
         __args: {
           orderBy: ['_publishedAt_DESC'],
-          locale: locale,
-          fallbackLocales: fallbackLocales
+          locale: 'en',
+          fallbackLocales: ['en']
         },
         id: true,
         topics: true,
@@ -474,8 +468,8 @@ export async function getBlogCategories(
       allResearchAis: {
         __args: {
           orderBy: ['_publishedAt_DESC'],
-          locale: locale,
-          fallbackLocales: fallbackLocales
+          locale: 'en',
+          fallbackLocales: ['en']
         },
         id: true,
         topics: true,

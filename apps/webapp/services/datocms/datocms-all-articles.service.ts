@@ -1,18 +1,18 @@
 import { getCMSSdk } from '@/services/datocms/graphql/cms'
-import { SeoField, SiteLocale } from '@/services/datocms/graphql/generated/cms'
-import * as fs from 'fs'
+import { SeoField } from '@/services/datocms/graphql/generated/cms'
 
-export async function getAllArticles(
-  locale: SiteLocale,
-  fallbackLocales: SiteLocale[]
-) {
+export async function getAllArticles() {
   try {
     const data = await getCMSSdk().query(
       Object.fromEntries(
         Object.entries(categoryMap).map(([key, value]) => [
           value,
           {
-            __args: { orderBy: ['_publishedAt_DESC'], locale, fallbackLocales },
+            __args: {
+              orderBy: ['_publishedAt_DESC'],
+              locale: 'en',
+              fallbackLocales: ['en']
+            },
             id: true,
             topics: true,
             title: true,

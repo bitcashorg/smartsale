@@ -7,51 +7,51 @@
         "Finanzas",
         "Salud",
         "Legal",
-        "Sugerencias"
+        "Indicaciones"
       ],
-      "title": "Adaptación de Modelos de Lenguaje Grandes a través de la Comprensión de Lectura",
+      "title": "Adaptacion de Modelos de Lenguaje Grandes mediante Comprension Lectora",
       "slug": "adapting-large-language-models-via-reading-comprehension",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
       },
       "_publishedAt": "2024-05-27T03:34:22+01:00",
-      "description": "Comentario y Calificación del Resumen",
+      "description": "Comentario y Calificacion del Resumen",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
       },
       "seo": {
-        "title": "Adaptación de Modelos de Lenguaje Grandes a través de la Comprensión de Lectura",
-        "description": "Comentario y Calificación del Resumen\n"
+        "title": "Adaptacion de Modelos de Lenguaje Grandes mediante Comprension Lectora",
+        "description": "Comentario y Calificacion del Resumen\n"
       }
     },
     {
       "id": "198277342",
       "topics": [
         "LLM",
-        "Multilingüe"
+        "Multilingue"
       ],
-      "title": "OpenBA: Un Modelo Asimétrico Bilingüe de 15B de Código Abierto Preentrenado desde Cero",
+      "title": "OpenBA: Un Modelo Bilingue Asimetrico seq2seq de 15B de Codigo Abierto Preentrenado desde Cero",
       "slug": "openba-an-open-sourced-15b-bilingual-asymmetric-seq2seq-model-pre-trained-from-sc",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
       },
       "_publishedAt": "2024-05-27T03:34:02+01:00",
-      "description": "Comentario y Calificación del Resumen",
+      "description": "Comentario y Calificacion del Resumen",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
       },
       "seo": {
-        "title": "OpenBA: Un Modelo ... Bilingüe de 15B de Código Abierto ...",
-        "description": "Comentario y Calificación del Resumen\n"
+        "title": "OpenBA: Un Modelo Bilingue ... de 15B de Codigo Abierto ...",
+        "description": "Comentario y Calificacion del Resumen\n"
       }
     },
     {
       "id": "198277117",
       "topics": [
         "LLM",
-        "Recuperación"
+        "Recuperacion"
       ],
       "title": "PDFTriage: Respuesta a Preguntas sobre Documentos Largos y Estructurados",
       "slug": "pdftriage-question-answering-over-long-structured-documents",
@@ -60,58 +60,58 @@
         "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
       },
       "_publishedAt": "2024-05-27T03:33:49+01:00",
-      "description": "Comentario y Calificación del Resumen",
+      "description": "Comentario y Calificacion del Resumen",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
       },
       "seo": {
-        "title": "PDFTriage: Respuesta a Preguntas sobre Documentos Largos y Estructurados",
-        "description": "Comentario y Calificación del Resumen\n"
+        "title": "PDFTriage: Preguntas y Respuestas sobre Documentos Largos y Estructurados",
+        "description": "Comentario y Calificacion del Resumen\n"
       }
     },
     {
       "id": "198277138",
       "topics": [
         "LLM",
-        "Ajuste Fino"
+        "Ajuste fino"
       ],
-      "title": "Sorted LLaMA: Desbloqueando el Potencial de Capas Intermedias de Modelos de Lenguaje Grandes para Inferencia Dinámica Usando Ajuste Fino Ordenado (SoFT)",
+      "title": "LLaMA Ordenado: Desbloqueando el Potencial de Capas Intermedias de Modelos de Lenguaje Grandes para Inferencia Dinamica Usando Ajuste Fino Ordenado (SoFT)",
       "slug": "sorted-llama-unlocking-the-potential-of-intermediate-layers-of-large-language-mod",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
       },
       "_publishedAt": "2024-05-27T03:33:31+01:00",
-      "description": "Comentario y Calificación del Resumen",
+      "description": "Comentario y Calificacion del Resumen",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
       },
       "seo": {
-        "title": "Sorted LLaMA: ... Inferencia Usando Ajuste Fino Ordenado (SoFT)",
-        "description": "Comentario y Calificación del Resumen\n"
+        "title": "LLaMA Ordenado: ... Inferencia Usando Ajuste Fino Ordenado (SoFT)",
+        "description": "Comentario y Calificacion del Resumen\n"
       }
     },
     {
       "id": "198277150",
       "topics": [
         "LLM",
-        "Ajuste por Instrucción",
+        "Ajuste por Instrucciones",
         "Multimodal"
       ],
-      "title": "Un Estudio Empírico del Escalado de Modelos Multimodales Grandes Ajustados por Instrucción",
+      "title": "Un Estudio Empirico del Escalado de Modelos Multimodales Grandes Instruidos",
       "slug": "an-empirical-study-of-scaling-instruct-tuned-large-multimodal-models",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
       },
       "_publishedAt": "2024-05-27T03:33:15+01:00",
-      "description": "Comentario y Calificación del Resumen",
+      "description": "Comentario y Calificacion del Resumen",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
       },
       "seo": {
-        "title": "Un Estudio Empírico del Escalado de Modelos de Lenguaje Grandes Ajustados por Instrucción",
-        "description": "Comentario y Calificación del Resumen\n"
+        "title": "Un Estudio Empirico del Escalado de MLMs Instruidos",
+        "description": "Comentario y Calificacion del Resumen\n"
       }
     },
     {
@@ -121,20 +121,20 @@
         "Agentes",
         "Juegos"
       ],
-      "title": "MindAgent: Interacción Emergente en Juegos",
+      "title": "MindAgent: Interaccion Emergente en Juegos",
       "slug": "mindagent-emergent-gaming-interaction",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
       },
       "_publishedAt": "2024-05-27T03:32:58+01:00",
-      "description": "Comentario y Calificación del Resumen",
+      "description": "Comentario y Calificacion del Resumen",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
       },
       "seo": {
-        "title": "MindAgent: Interacción Emergente en Juegos",
-        "description": "Comentario y Calificación del Resumen\n"
+        "title": "MindAgent: Interaccion Emergente en Juegos",
+        "description": "Comentario y Calificacion del Resumen\n"
       }
     },
     {
@@ -143,20 +143,20 @@
         "LLM",
         "Datos Estructurados"
       ],
-      "title": "Struc-Bench: ¿Son Realmente Buenos los Modelos de Lenguaje Grandes Generando Datos Estructurados Complejos?",
+      "title": "Struc-Bench: Son Realmente Buenos los Modelos de Lenguaje Grandes en Generar Datos Estructurados Complejos?",
       "slug": "struc-bench-are-large-language-models-really-good-at-generating-complex-structure",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
       },
       "_publishedAt": "2024-05-25T03:38:38+01:00",
-      "description": "Comentario y Calificación del Resumen",
+      "description": "Comentario y Calificacion del Resumen",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
       },
       "seo": {
-        "title": "Struc-Bench:..Generando Datos Estructurados Complejos?",
-        "description": "Comentario y Calificación del Resumen\n"
+        "title": "Struc-Bench:..Generar Datos Estructurados Complejos?",
+        "description": "Comentario y Calificacion del Resumen\n"
       }
     },
     {
@@ -166,20 +166,20 @@
         "Privacidad",
         "Borde"
       ],
-      "title": "Recuperación de Enmascaramiento de Preservación de Privacidad con Modelos de Lenguaje Grandes",
+      "title": "Recuperacion de Enmascaramiento de Preservacion de Privacidad con Modelos de Lenguaje Grandes",
       "slug": "recovering-from-privacy-preserving-masking-with-large-language-models",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
       },
       "_publishedAt": "2024-05-25T03:38:26+01:00",
-      "description": "Comentario y Calificación del Resumen",
+      "description": "Comentario y Calificacion del Resumen",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
       },
       "seo": {
-        "title": "Recuperación de Enmascaramiento de Preservación de Privacidad con Modelos de Lenguaje Grandes",
-        "description": "Comentario y Calificación del Resumen\n"
+        "title": "Recuperacion de Enmascaramiento de Preservacion de Privacidad con MLMs",
+        "description": "Comentario y Calificacion del Resumen\n"
       }
     },
     {
@@ -188,20 +188,20 @@
         "LLM",
         "Chat"
       ],
-      "title": "S3-DST: Segmentación de Diálogo de Dominio Abierto Estructurado y Seguimiento de Estado en la Era de los Modelos de Lenguaje Grandes",
+      "title": "S3-DST: Segmentacion y Seguimiento de Estado de Dialogo Estructurado de Dominio Abierto en la Era de los MLMs",
       "slug": "s3-dst-structured-open-domain-dialogue-segmentation-and-state-tracking-in-the-era",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
       },
       "_publishedAt": "2024-05-25T03:38:11+01:00",
-      "description": "Comentario y Calificación del Resumen",
+      "description": "Comentario y Calificacion del Resumen",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
       },
       "seo": {
-        "title": "S3-DST: Segmentación de Diálogo de Dominio Abierto Estructurado...",
-        "description": "Comentario y Calificación del Resumen\n"
+        "title": "S3-DST: Segmentacion y Seguimiento de Dialogo Estructurado...",
+        "description": "Comentario y Calificacion del Resumen\n"
       }
     },
     {
@@ -210,64 +210,64 @@
         "LLM",
         "Audio"
       ],
-      "title": "Aumentando el Texto para la Comprensión del Lenguaje Hablado con Modelos de Lenguaje Grandes",
+      "title": "Aumentando texto para comprension del lenguaje hablado con Modelos de Lenguaje Grandes",
       "slug": "augmenting-text-for-spoken-language-understanding-with-large-language-models",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
       },
       "_publishedAt": "2024-05-25T03:37:49+01:00",
-      "description": "Comentario y Calificación del Resumen",
+      "description": "Comentario y Calificacion del Resumen",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
       },
       "seo": {
-        "title": "Aumentando el Texto para la Comprensión del Lenguaje Hablado ...",
-        "description": "Comentario y Calificación del Resumen\n"
+        "title": "Aumentando texto para comprension del lenguaje hablado ...",
+        "description": "Comentario y Calificacion del Resumen\n"
       }
     },
     {
       "id": "198277277",
       "topics": [
         "LLM",
-        "Compresión"
+        "Compresion"
       ],
-      "title": "El Modelado del Lenguaje es Compresión",
+      "title": "El Modelado del Lenguaje es Compresion",
       "slug": "language-modeling-is-compression",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
       },
       "_publishedAt": "2024-05-25T03:37:32+01:00",
-      "description": "Comentario y Calificación del Resumen",
+      "description": "Comentario y Calificacion del Resumen",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
       },
       "seo": {
-        "title": "El Modelado del Lenguaje es Compresión",
-        "description": "Comentario y Calificación del Resumen\n"
+        "title": "El Modelado del Lenguaje es Compresion",
+        "description": "Comentario y Calificacion del Resumen\n"
       }
     },
     {
       "id": "198277345",
       "topics": [
         "LLM",
-        "Multilingüe"
+        "Multilingue"
       ],
-      "title": "Baichuan 2: Modelos de Lenguaje de Gran Escala Abiertos",
+      "title": "Baichuan 2: Modelos de Lenguaje a Gran Escala de Codigo Abierto",
       "slug": "baichuan-2-open-large-scale-language-models",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
       },
       "_publishedAt": "2024-05-24T05:59:10+01:00",
-      "description": "Comentario y Calificación del Resumen",
+      "description": "Comentario y Calificacion del Resumen",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
       },
       "seo": {
-        "title": "Baichuan 2: Modelos de Lenguaje de Gran Escala Abiertos",
-        "description": "Comentario y Calificación del Resumen\n"
+        "title": "Baichuan 2: Modelos de Lenguaje a Gran Escala de Codigo Abierto",
+        "description": "Comentario y Calificacion del Resumen\n"
       }
     },
     {
@@ -276,66 +276,66 @@
         "LLM",
         "RLHF"
       ],
-      "title": "Estabilizando RLHF a través de Modelo de Ventaja y Ensayo Selectivo",
+      "title": "Estabilizando RLHF a traves de Modelo de Ventaja y Ensayo Selectivo",
       "slug": "stabilizing-rlhf-through-advantage-model-and-selective-rehearsal",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
       },
       "_publishedAt": "2024-05-24T05:22:15+01:00",
-      "description": "Comentario y Calificación del Resumen",
+      "description": "Comentario y Calificacion del Resumen",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
       },
       "seo": {
         "title": "Estabilizando RLHF ... Modelo de Ventaja y Ensayo Selectivo",
-        "description": "Comentario y Calificación del Resumen\n"
+        "description": "Comentario y Calificacion del Resumen\n"
       }
     },
     {
       "id": "198277446",
       "topics": [
         "LLM",
-        "Alucinación"
+        "Alucinacion"
       ],
-      "title": "La Cadena de Verificación Reduce la Alucinación en Modelos de Lenguaje Grandes",
+      "title": "La Cadena de Verificacion Reduce la Alucinacion en Modelos de Lenguaje Grandes",
       "slug": "chain-of-verification-reduces-hallucination-in-large-language-models",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
       },
       "_publishedAt": "2024-05-24T05:21:05+01:00",
-      "description": "Comentario y Calificación del Resumen",
+      "description": "Comentario y Calificacion del Resumen",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
       },
       "seo": {
-        "title": "La Cadena de Verificación Reduce la Alucinación en Modelos de Lenguaje Grandes",
-        "description": "Comentario y Calificación del Resumen\n"
+        "title": "La Cadena de Verificacion Reduce la Alucinacion en MLMs",
+        "description": "Comentario y Calificacion del Resumen\n"
       }
     },
     {
       "id": "198277458",
       "topics": [
         "LLM",
-        "Alucinación",
+        "Alucinacion",
         "Entidad",
         "Datos Estructurados"
       ],
-      "title": "LMDX: Extracción y Localización de Información de Documentos Basada en Modelos de Lenguaje",
+      "title": "LMDX: Extraccion y Localizacion de Informacion de Documentos Basada en Modelos de Lenguaje",
       "slug": "lmdx-language-model-based-document-information-extraction-and-localization",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
       },
       "_publishedAt": "2024-05-24T05:20:31+01:00",
-      "description": "Comentario y Calificación del Resumen",
+      "description": "Comentario y Calificacion del Resumen",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
       },
       "seo": {
-        "title": "LMDX: ..Extracción y Localización de Información de Documentos",
-        "description": "Comentario y Calificación del Resumen\n"
+        "title": "LMDX: ..Extraccion y Localizacion de Informacion de Documentos",
+        "description": "Comentario y Calificacion del Resumen\n"
       }
     },
     {
@@ -344,20 +344,20 @@
         "LLM",
         "Datos"
       ],
-      "title": "SlimPajama-DC: Comprendiendo Combinaciones de Datos para el Entrenamiento de Modelos de Lenguaje Grandes",
+      "title": "SlimPajama-DC: Entendiendo Combinaciones de Datos para Entrenamiento de MLM",
       "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
       },
       "_publishedAt": "2023-10-04T23:43:32+01:00",
-      "description": "Comentario y Calificación del Resumen",
+      "description": "Comentario y Calificacion del Resumen",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
       },
       "seo": {
-        "title": "SlimPajama-DC: Comprendiendo Combinaciones de Datos para el Entrenamiento de Modelos de Lenguaje Grandes",
-        "description": "Comentario y Calificación del Resumen\n"
+        "title": "SlimPajama-DC: Entendiendo Combinaciones de Datos para Entrenamiento de MLM",
+        "description": "Comentario y Calificacion del Resumen\n"
       }
     },
     {
@@ -367,83 +367,83 @@
         "Datos",
         "Agentes"
       ],
-      "title": "Una Fuente de Datos para Agentes de Razonamiento Incorporado",
+      "title": "Una Fuente de Datos para Agentes Incorporados de Razonamiento",
       "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
       },
       "_publishedAt": "2023-10-04T07:33:25+01:00",
-      "description": "Comentario y Calificación del Resumen",
+      "description": "Comentario y Calificacion del Resumen",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
       },
       "seo": {
-        "title": "Una Fuente de Datos para Agentes de Razonamiento Incorporado",
-        "description": "Comentario y Calificación del Resumen\n"
+        "title": "Una Fuente de Datos para Agentes Incorporados de Razonamiento",
+        "description": "Comentario y Calificacion del Resumen\n"
       }
     },
     {
       "id": "198044879",
       "topics": [
         "LLM",
-        "Transformadores",
+        "Transformers",
         "Interpretabilidad"
       ],
-      "title": "Autoencoders Escasos Encuentran Características Altamente Interpretables en Modelos de Lenguaje",
+      "title": "Los Autoencoders Dispersos Encuentran Caracteristicas Altamente Interpretables en Modelos de Lenguaje",
       "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
       },
       "_publishedAt": "2023-10-04T07:23:08+01:00",
-      "description": "Comentario y Calificación del Resumen",
+      "description": "Comentario y Calificacion del Resumen",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
       },
       "seo": {
-        "title": "Autoencoders Escasos ... Características Altamente Interpretables en Modelos de Lenguaje",
-        "description": "Comentario y Calificación del Resumen\n"
+        "title": "Autoencoders Dispersos ... Caracteristicas Interpretables en MLs",
+        "description": "Comentario y Calificacion del Resumen\n"
       }
     },
     {
       "id": "198044746",
       "topics": [
         "LLM",
-        "Transformadores",
+        "Transformers",
         "Entrenamiento"
       ],
-      "title": "Leyes de Escalado para Modelos de Fundación Conectados Escasamente",
+      "title": "Leyes de Escalado para Modelos de Base Conectados Dispersamente",
       "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
       },
       "_publishedAt": "2023-10-04T07:09:44+01:00",
-      "description": "Comentario y Calificación del Resumen",
+      "description": "Comentario y Calificacion del Resumen",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
       },
       "seo": {
-        "title": "Leyes de Escalado para Modelos de Fundación Conectados Escasamente",
-        "description": "Comentario y Calificación del Resumen\n"
+        "title": "Leyes de Escalado para Modelos de Base Conectados Dispersamente",
+        "description": "Comentario y Calificacion del Resumen\n"
       }
     }
   ],
   "blogContent": {
     "id": "198277109",
     "topics": [
-      "LLM",
+      "MLG",
       "Razonamiento"
     ],
-    "title": "La Decodificación Contrastiva Mejora el Razonamiento en Modelos de Lenguaje Grandes",
+    "title": "La Decodificacion Contrastiva Mejora el Razonamiento en Modelos de Lenguaje Grandes",
     "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
     "authorName": "Prof. Otto Nomos",
     "authorPicture": {
       "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
     },
     "_publishedAt": "2023-10-04T22:18:11+01:00",
-    "description": "Comentario y Calificación del Resumen",
+    "description": "Comentario y Calificacion del Resumen",
     "thumbnail": {
       "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
     },
@@ -460,7 +460,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Publicado el 16 de Sep"
+                      "value": "Published on Sep 16"
                     }
                   ]
                 },
@@ -469,7 +469,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Autores:"
+                      "value": "Authors:"
                     },
                     {
                       "url": "https://huggingface.co/seanobrienresearch",
@@ -503,7 +503,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Resumen"
+                      "value": "Abstract"
                     }
                   ]
                 },
@@ -512,7 +512,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Demostramos que la Decodificación Contrastiva -- un método de generación de texto simple, computacionalmente ligero y sin entrenamiento propuesto por Li et al 2022 -- logra grandes mejoras inmediatas sobre la decodificación codiciosa en una variedad de tareas de razonamiento. Originalmente mostrado para mejorar la calidad percibida de la generación de texto de formato largo, la Decodificación Contrastiva busca cadenas que maximicen una diferencia ponderada en probabilidad entre modelos fuertes y débiles. Mostramos que la Decodificación Contrastiva lleva a LLaMA-65B a superar a LLaMA 2, GPT-3.5 y PaLM 2-L en el benchmark de razonamiento de sentido común HellaSwag, y a superar a LLaMA 2, GPT-3.5 y PaLM-540B en el benchmark de razonamiento de palabras matemáticas GSM8K, además de mejoras en una colección de otras tareas. El análisis sugiere que la Decodificación Contrastiva mejora sobre los métodos existentes al prevenir algunos errores de razonamiento abstracto, así como al evitar modos más simples como copiar secciones de la entrada durante la cadena de pensamiento. En general, la Decodificación Contrastiva supera el muestreo de núcleo para la generación de formato largo y la decodificación codiciosa para tareas de razonamiento, convirtiéndola en un método poderoso de propósito general para generar texto a partir de modelos de lenguaje."
+                      "value": "We demonstrate that Contrastive Decoding -- a simple, computationally light, and training-free text generation method proposed by Li et al 2022 -- achieves large out-of-the-box improvements over greedy decoding on a variety of reasoning tasks. Originally shown to improve the perceived quality of long-form text generation, Contrastive Decoding searches for strings that maximize a weighted difference in likelihood between strong and weak models. We show that Contrastive Decoding leads LLaMA-65B to outperform LLaMA 2, GPT-3.5 and PaLM 2-L on the HellaSwag commonsense reasoning benchmark, and to outperform LLaMA 2, GPT-3.5 and PaLM-540B on the GSM8K math word reasoning benchmark, in addition to improvements on a collection of other tasks. Analysis suggests that Contrastive Decoding improves over existing methods by preventing some abstract reasoning errors, as well as by avoiding simpler modes such as copying sections of the input during chain-of-thought. Overall, Contrastive Decoding outperforms nucleus sampling for long-form generation and greedy decoding for reasoning tasks, making it a powerful general purpose method for generating text from language models."
                     }
                   ]
                 },
@@ -535,7 +535,7 @@
                       "children": [
                         {
                           "type": "span",
-                          "value": "Ver página de arXiv"
+                          "value": "View arXiv page"
                         }
                       ]
                     },
@@ -555,7 +555,7 @@
                       "children": [
                         {
                           "type": "span",
-                          "value": "Ver PDF"
+                          "value": "View PDF"
                         }
                       ]
                     }
@@ -567,7 +567,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Comentario"
+                      "value": "Commentary"
                     }
                   ]
                 },
@@ -576,7 +576,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "El artículo titulado \"La Decodificación Contrastiva Mejora el Razonamiento en Modelos de Lenguaje Grandes\" presenta un enfoque para mejorar la calidad de la generación de texto y las capacidades de razonamiento en grandes modelos de lenguaje."
+                      "value": "The paper titled \"Contrastive Decoding Improves Reasoning in Large Language Models\" presents an approach to improving text generation quality and reasoning capabilities in large language models."
                     }
                   ]
                 },
@@ -585,7 +585,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Ideas Clave:"
+                      "value": "Key Insights:"
                     }
                   ]
                 },
@@ -604,11 +604,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Decodificación Contrastiva"
+                              "value": "Contrastive Decoding"
                             },
                             {
                               "type": "span",
-                              "value": ": Este método aprovecha la diferencia en probabilidad entre modelos fuertes y débiles para generar texto. Originalmente diseñado para mejorar la generación de texto de formato largo, los autores demuestran su valor también para tareas de razonamiento."
+                              "value": ": This method leverages the difference in likelihood between strong and weak models to generate text. Originally designed for improving long-form text generation, the authors demonstrate its value for reasoning tasks as well."
                             }
                           ]
                         }
@@ -625,11 +625,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Desempeño Significativo"
+                              "value": "Significant Outperformance"
                             },
                             {
                               "type": "span",
-                              "value": ": La Decodificación Contrastiva permite que LLaMA-65B supere a varios otros modelos de última generación en benchmarks específicos de razonamiento, como el benchmark de razonamiento de sentido común HellaSwag y el benchmark de razonamiento de palabras matemáticas GSM8K."
+                              "value": ": Contrastive Decoding allows LLaMA-65B to surpass several other state-of-the-art models on specific reasoning benchmarks, such as the HellaSwag commonsense reasoning benchmark and the GSM8K math word reasoning benchmark."
                             }
                           ]
                         }
@@ -646,11 +646,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Evitando Errores"
+                              "value": "Avoiding Errors"
                             },
                             {
                               "type": "span",
-                              "value": ": El análisis indica que este método puede ayudar a evitar algunos errores de razonamiento abstracto. También reduce errores más simples como la copia innecesaria de secciones de entrada durante la generación de texto."
+                              "value": ": The analysis indicates that this method can help in avoiding some abstract reasoning errors. It also reduces simpler errors such as unnecessary copying of input sections during text generation."
                             }
                           ]
                         }
@@ -663,7 +663,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Impacto Potencial en el Mundo Real:"
+                      "value": "Potential Real-World Impact:"
                     }
                   ]
                 },
@@ -682,11 +682,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Generación de Texto Mejorada"
+                              "value": "Enhanced Text Generation"
                             },
                             {
                               "type": "span",
-                              "value": ": El método promete mejorar la calidad del texto generado por grandes modelos de lenguaje, haciendo que los resultados sean más coherentes, relevantes y razonados."
+                              "value": ": The method promises to improve the quality of text generated by large language models, making outputs more coherent, relevant, and reasoned."
                             }
                           ]
                         }
@@ -703,11 +703,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Razonamiento Mejorado"
+                              "value": "Improved Reasoning"
                             },
                             {
                               "type": "span",
-                              "value": ": Un mejor desempeño en tareas de razonamiento puede tener numerosas aplicaciones, desde chatbots más inteligentes hasta herramientas que pueden asistir a profesionales en diversas tareas analíticas."
+                              "value": ": A better performance on reasoning tasks can have numerous applications ranging from more intelligent chatbots to tools that can assist professionals in various analytical tasks."
                             }
                           ]
                         }
@@ -724,11 +724,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Aplicabilidad Amplia"
+                              "value": "Wider Applicability"
                             },
                             {
                               "type": "span",
-                              "value": ": Como un método sin entrenamiento, la Decodificación Contrastiva ofrece una ventaja ya que no requiere recursos computacionales adicionales para el entrenamiento."
+                              "value": ": As a training-free method, Contrastive Decoding offers an advantage as it doesn't require additional computational resources for training."
                             }
                           ]
                         }
@@ -745,11 +745,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Versatilidad"
+                              "value": "Versatility"
                             },
                             {
                               "type": "span",
-                              "value": ": El enfoque parece versátil, mostrando mejoras tanto en la generación de formato largo como en tareas específicas de razonamiento."
+                              "value": ": The approach seems versatile, showing improvements across both long-form generation and specific reasoning tasks."
                             }
                           ]
                         }
@@ -762,7 +762,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Desafíos:"
+                      "value": "Challenges:"
                     }
                   ]
                 },
@@ -781,11 +781,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Dependencia de Modelos Débiles"
+                              "value": "Dependence on Weak Models"
                             },
                             {
                               "type": "span",
-                              "value": ": La efectividad de la Decodificación Contrastiva depende de la presencia de modelos tanto fuertes como débiles, que podrían no estar siempre disponibles o variar en fuerza relativa."
+                              "value": ": The effectiveness of Contrastive Decoding relies on the presence of both strong and weak models, which might not always be available or may vary in relative strength."
                             }
                           ]
                         }
@@ -798,7 +798,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Dado el enfoque novedoso para mejorar la generación de texto y el razonamiento, así como su eficacia demostrada:"
+                      "value": "Given the novel approach to improve text generation and reasoning, as well as its demonstrated efficacy:"
                     }
                   ]
                 },
@@ -807,7 +807,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Calificaría el impacto en el mundo real de este artículo como un 8.5 de 10."
+                      "value": "I'd rate the real-world impact of this paper as an 8.5 out of 10."
                     }
                   ]
                 },
@@ -816,7 +816,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "El método parece ofrecer una técnica poderosa y de propósito general para generar texto a partir de modelos de lenguaje. Si puede aplicarse ampliamente a una variedad de tareas y entornos, su impacto en el mundo real podría ser considerable, especialmente en aplicaciones donde las capacidades de razonamiento de los modelos son cruciales."
+                      "value": "The method appears to offer a powerful, general-purpose technique for generating text from language models. If it can be broadly applied to a range of tasks and settings, its real-world impact could be considerable, especially in applications where reasoning capabilities of models are crucial."
                     }
                   ]
                 }
@@ -838,8 +838,8 @@
       }
     ],
     "seo": {
-      "description": "Comentario y Calificación del Resumen\n",
-      "title": "La Decodificación Contrastiva Mejora el Razonamiento en LLMs",
+      "description": "Comentario y Calificacion del Resumen",
+      "title": "La Decodificacion Contrastiva Mejora el Razonamiento en MLG",
       "twitterCard": null,
       "image": {
         "width": 1456,
@@ -852,6 +852,6 @@
   },
   "topics": [
     "LLM",
-    "Reasoning"
+    "Razonamiento"
   ]
 }

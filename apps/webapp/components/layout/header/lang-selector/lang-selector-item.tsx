@@ -4,8 +4,8 @@ import { DropdownMenuItem } from '@/components/ui/dropdown-menu'
 import { LangSelectorOption } from './lang-selector-options'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
-import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
 import { setLanguage } from '@/app/actions/set-lang'
+import { Lang } from '@/dictionaries/locales'
 
 export function LangSelectorItem({ option, lang }: LangSelectorProps) {
   const pathname = usePathname()
@@ -26,5 +26,5 @@ export function LangSelectorItem({ option, lang }: LangSelectorProps) {
 
 export interface LangSelectorProps {
   option: LangSelectorOption
-  lang: SiteLocale
+  lang: Lang
 }

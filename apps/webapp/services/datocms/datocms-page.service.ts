@@ -1,10 +1,7 @@
 import { getCMSSdk } from '@/services/datocms/graphql/cms'
-import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
 
 export async function getPageContent(
-  category: 'terms_condition' | 'privacy_policy',
-  locale: SiteLocale,
-  fallbackLocales: SiteLocale[]
+  category: 'terms_condition' | 'privacy_policy'
 ) {
   let dataRecord: MainContentBlock | null = null
   let error
@@ -25,8 +22,8 @@ export async function getPageContent(
     const data = await getCMSSdk().query({
       [pageName]: {
         __args: {
-          locale: locale,
-          fallbackLocales: fallbackLocales
+          locale: 'en',
+          fallbackLocales: ['en']
         },
         mainContent: {
           value: true
