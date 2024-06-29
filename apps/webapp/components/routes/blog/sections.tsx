@@ -26,8 +26,8 @@ export function BlogSections({
               className={cn('container mb-10', className)}
               key={section.name}
             >
-              <div className="mb-space-32 flex items-center justify-between text-xl">
-                <span className="sub-2-lg font-semibold text-black dark:text-white">
+              <div className="flex items-center justify-between text-xl mb-space-32">
+                <span className="font-semibold text-black sub-2-lg dark:text-white">
                   / {section.name}
                 </span>
                 <Link
@@ -43,7 +43,7 @@ export function BlogSections({
                 </Link>
               </div>
 
-              <ul className="grid-cols-auto-dense grid w-full grid-cols-[repeat(auto-fill,minmax(250px,1fr))] flex-col gap-20 py-5 sm:flex-wrap md:gap-5">
+              <ul className="grid-cols-auto-dense grid w-full grid-cols-[repeat(auto-fill,minmax(350px,1fr))] flex-col gap-20 py-5 sm:flex-wrap md:gap-5">
                 {section?.articles?.map(post => (
                   <ArticleCard
                     post={post}
