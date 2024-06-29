@@ -32,7 +32,7 @@ export default function Participate({ lang, dict }: ParticipateProps) {
                 <p className="w-[calc(100%-72px)] py-3 text-sm">
                   {step.description}
                 </p>
-                {!step.title.includes('Complete KYC') ? (
+                {index > 0 ? (
                   <Link
                     href={`/${lang}/${step.href}`}
                     className={cn(
