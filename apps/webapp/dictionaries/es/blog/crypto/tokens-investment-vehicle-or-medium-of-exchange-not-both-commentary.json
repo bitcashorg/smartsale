@@ -1,0 +1,510 @@
+{
+  "relatedBlogs": [
+    {
+      "id": "180563939",
+      "topics": [
+        "DAO",
+        "Tokenomia",
+        "Comentario"
+      ],
+      "title": "Un Marco para el Diseno de Gobernanza Blockchain: La Rueda del Grupo Prysm [Comentario]",
+      "slug": "a-framework-for-blockchain-governance-design-the-prysm-group-wheel-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:19:19+01:00",
+      "description": "Navega por las complejidades de la gobernanza blockchain con la Rueda del Grupo Prysm. Tu hoja de ruta para un diseno efectivo de gobernanza blockchain.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690861154-cbc11-img1.webp"
+      },
+      "seo": {
+        "title": "Un Marco para el Diseno de Gobernanza Blockchain [Comentario]",
+        "description": "Navega por las complejidades de la gobernanza blockchain con la Rueda del Grupo Prysm. Tu hoja de ruta para un diseno efectivo de gobernanza blockchain."
+      }
+    },
+    {
+      "id": "180217169",
+      "topics": [
+        "Tokenomia",
+        "Comentario"
+      ],
+      "title": "Economia de Incentivos Tokenizados 3: El Valor del Token No Alineara a las Partes Interesadas [Comentario]",
+      "slug": "economics-of-tokenized-incentives-3-token-value-won-t-align-stakeholders-commenta",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:17:23+01:00",
+      "description": "Descubre las trampas de usar el valor del token como metrica de rendimiento en plataformas blockchain. Aprende a disenar sistemas de incentivos efectivos.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690771457-cbc3-img1.png"
+      },
+      "seo": {
+        "title": "Economia de Incentivos Tokenizados 3 [Comentario]",
+        "description": "Descubre las trampas de usar el valor del token como metrica de rendimiento en plataformas blockchain. Aprende a disenar sistemas de incentivos efectivos."
+      }
+    },
+    {
+      "id": "180217123",
+      "topics": [
+        "Tokenomia",
+        "Comentario"
+      ],
+      "title": "Economia de Incentivos Tokenizados 2: Seleccionando Metricas de Rendimiento Efectivas [Comentario]",
+      "slug": "economics-of-tokenized-incentives-2-selecting-effective-performance-metrics-comme",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:17:05+01:00",
+      "description": "Descubre el poder de las metricas de rendimiento en sistemas blockchain de pago por desempeno. Aprende a alinear incentivos con los objetivos de la plataforma de manera efectiva.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690770918-cbc2-img1.png"
+      },
+      "seo": {
+        "title": "Economia de Incentivos Tokenizados 2 [Comentario]",
+        "description": "Descubre el poder de las metricas de rendimiento en sistemas blockchain de pago por desempeno. Aprende a alinear incentivos con los objetivos de la plataforma de manera efectiva."
+      }
+    },
+    {
+      "id": "180217082",
+      "topics": [
+        "Tokenomia",
+        "Comentario"
+      ],
+      "title": "Economia de Incentivos Tokenizados 1: Introduccion al Pago por Desempeno [Comentario]",
+      "slug": "economics-of-tokenized-incentives-1-intro-to-pay-for-performance",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:15:12+01:00",
+      "description": "Sumergete en las complejidades de los incentivos de pago por desempeno en plataformas blockchain. Aprende los pros y contras y consideraciones de diseno para el exito.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690770568-cbc1-img1.png"
+      },
+      "seo": {
+        "title": "Economia de Incentivos Tokenizados 1 [Comentario]",
+        "description": "Sumergete en las complejidades de los incentivos de pago por desempeno en plataformas blockchain. Aprende los pros y contras y consideraciones de diseno para el exito"
+      }
+    },
+    {
+      "id": "180563922",
+      "topics": [
+        "Recaudacion de fondos",
+        "Tokenomia",
+        "Comentario"
+      ],
+      "title": "Las ICOs Aprovechan los Efectos de Red [Comentario]",
+      "slug": "icos-leverage-network-effects-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:12:06+01:00",
+      "description": "Descubre como las ICOs aprovechan el poder de los efectos de red para impulsar su exito. ICOs y efectos de red, un duo dinamico!",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690860184-cbc9-img1.png"
+      },
+      "seo": {
+        "title": "Las ICOs Aprovechan los Efectos de Red [Comentario]",
+        "description": "Descubre como las ICOs aprovechan el poder de los efectos de red para impulsar su exito. ICOs y efectos de red, un duo dinamico!"
+      }
+    },
+    {
+      "id": "180556595",
+      "topics": [
+        "Recaudacion de fondos",
+        "Tokenomia",
+        "Comentario"
+      ],
+      "title": "El Efecto Blockchain: Efectos de Red sin Costos de Poder de Mercado [Comentario]",
+      "slug": "the-blockchain-effect-network-effects-without-market-power-costs-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:11:14+01:00",
+      "description": "Explora como blockchain permite efectos de red sin las desventajas del poder de mercado. Descubre el revolucionario Efecto Blockchain.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690855275-cbc4-img1.png"
+      },
+      "seo": {
+        "title": "Efectos de Red sin Costos de Poder de Mercado [Comentario]",
+        "description": "Explora como blockchain permite efectos de red sin las desventajas del poder de mercado. Descubre el revolucionario Efecto Blockchain."
+      }
+    },
+    {
+      "id": "180563931",
+      "topics": [
+        "Tokenomia",
+        "Comentario"
+      ],
+      "title": "Estructuras de Incentivos Blockchain: Que son y por que importan [Comentario]",
+      "slug": "blockchain-incentive-structures-what-they-are-and-why-they-matter-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:10:02+01:00",
+      "description": "Comprende el nucleo de las estructuras de incentivos blockchain y su importancia en impulsar el comportamiento del usuario y el exito de la plataforma.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690860807-cbc10-img1.png"
+      },
+      "seo": {
+        "title": "Estructuras de Incentivos Blockchain [Comentario]",
+        "description": "Comprende el nucleo de las estructuras de incentivos blockchain y su importancia en impulsar el comportamiento del usuario y el exito de la plataforma."
+      }
+    },
+    {
+      "id": "167184977",
+      "topics": [
+        "Tokenomia",
+        "DAO",
+        "Recaudacion de fondos"
+      ],
+      "title": "Revolucionando el Modelo de Equidad: Como la Tokenomia esta Disrumpiendo el Mundo de las Startups",
+      "slug": "revolutionizing-the-equity-model-how-tokenomics-is-disrupting-the-startup-world",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:02:51+01:00",
+      "description": "Desbloquea el futuro de las startups con la tokenomia! Explora como este concepto innovador esta remodelando el modelo de equidad y revolucionando el panorama de las startups.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1687395688-tb2-img1.png"
+      },
+      "seo": {
+        "title": "Como la Tokenomia esta Disrumpiendo el Mundo de las Startups",
+        "description": "Explora como este concepto innovador esta remodelando el modelo de equidad y revolucionando el panorama de las startups."
+      }
+    },
+    {
+      "id": "167101094",
+      "topics": [
+        "Comenzando",
+        "Tokenomia"
+      ],
+      "title": "Tokenomia 101: Desatando el Poder de la Criptomoneda!",
+      "slug": "tokenomics-101-unleashing-the-power-of-cryptocurrency",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T08:57:58+01:00",
+      "description": "Descubre el poder de la criptomoneda a traves de Tokenomia 101 - una guia detallada para entender la economia detras de los activos digitales.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1687391799-tb1-img1.png"
+      },
+      "seo": {
+        "title": "Tokenomia 101: Desatando el Poder de la Criptomoneda!",
+        "description": "una guia detallada para entender la economia detras de los activos digitales."
+      }
+    }
+  ],
+  "blogContent": {
+    "id": "180563918",
+    "topics": [
+      "Tokenomia",
+      "Comentario",
+      "Recaudacion de fondos"
+    ],
+    "title": "Tokens: Vehiculo de Inversion o Medio de Intercambio (No Ambos) [Comentario]",
+    "slug": "tokens-investment-vehicle-or-medium-of-exchange-not-both-commentary",
+    "authorName": "Crypto Clairity",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+    },
+    "_publishedAt": "2023-10-05T09:13:31+01:00",
+    "description": "Profundiza en el doble papel de los tokens en la economia blockchain. Descubre la delgada linea entre vehiculo de inversion y medio de intercambio.",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1690859959-cbc8-img1.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Original Link: "
+                    },
+                    {
+                      "url": "https://medium.com/mit-cryptoeconomics-lab/tokens-investment-vehicle-or-medium-of-exchange-not-both-6f926ffd13f1?source=user_profile---------7----------------------------",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noopener follow"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Tokens: Investment Vehicle or Medium of Exchange (Not Both)"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Author: "
+                    },
+                    {
+                      "url": "https://medium.com/@cathybarreraphd?source=post_page-----6f926ffd13f1--------------------------------",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noopener follow"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Cathy Barrera, PhD"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Summary & Commentary"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Catalini and Gans's research paper, \"Initial Coin Offerings and the Value of Crypto Tokens,\" explores Initial Coin Offerings (ICOs) as a funding mechanism for blockchain ventures from both the startup's perspective and potential investors' standpoint."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "One key insight from their paper is the trade-off between developing a token that serves as an attractive investment vehicle and one that functions as a practical medium of exchange. They argue that it might be challenging, if not impossible, for a single token to fulfill both roles efficiently."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "They consider a typical \"utility token\" model in which a blockchain platform raises funds via an ICO, then uses that token to purchase goods or services on the platform. The value of these tokens is determined by three factors: the size of the platform's user base, the token supply, and the value of the platform's product or service."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "The paper outlines a problem: if a token issuer wants the token to appreciate in value (becoming a good investment vehicle), they should aim to expand the user base rapidly while restricting token supply. However, this might lead token holders to hoard tokens expecting further appreciation rather than spending them, resulting in a dormant platform."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "On the other hand, if the issuer wants an active platform (meaning the token is a good medium of exchange), they must encourage spending, which in turn requires token holders to perceive that the token won't appreciate significantly in value."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Although their model oversimplifies certain aspects, such as the option of selling tokens on an open market, it does shed light on the fundamental trade-off in token design and policy. Founding teams must decide whether to make the token an attractive investment (prompting saving or selling) or an appealing medium of exchange (encouraging spending)."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Here are a few actionable insights from these findings:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Clearly Define Your Token's Purpose:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " Blockchain startups must decide early on whether they want their token to function mainly as an investment vehicle or a medium of exchange. This decision will dictate many aspects of the token's design and the overall ICO strategy."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Consider Different Token Models:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " The \"utility token\" model is not the only option. Depending on your objectives, other models such as \"security tokens\" or \"governance tokens\" might be more appropriate. It could also be worth exploring hybrid models or dual-token systems, where one token serves as an investment vehicle while the other facilitates transactions."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Don't Overlook Traditional Funding Routes:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " While ICOs can be a viable way to raise funds, traditional venture capital shouldn't be overlooked. This is especially true if the need for a utility token isn't clear or if the market is too speculative."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Target the Right Audience:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " If your token is primarily a utility token, consider targeting the token sale towards potential users of the platform rather than speculators who are mainly looking for a return on investment."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Explore Dynamic Monetary Policies:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " A well-designed monetary policy could allow for an initial appreciation in token value post-ICO to attract investors, followed by a stabilization of prices to encourage usage once the platform is operational."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Remember, every project is unique, and what works for one might not work for another. The key is to design your token and ICO strategy with clear goals and a solid understanding of the trade-offs involved."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "cbc8-img1",
+            "height": 862,
+            "width": 862,
+            "filename": "cbc8-img1.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1690859959-cbc8-img1.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Profundiza en el doble papel de los tokens en la economia blockchain. Descubre la delgada linea entre vehiculo de inversion y medio de intercambio.",
+      "title": "Tokens: Inversion o Medio de Intercambio [Comentario]",
+      "twitterCard": null,
+      "image": {
+        "width": 862,
+        "height": 862,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1690859959-cbc8-img1.png"
+      }
+    }
+  },
+  "topics": [
+    "Tokenomia",
+    "Comentario",
+    "Recaudacion de fondos"
+  ]
+}
