@@ -9,11 +9,11 @@ import { Section } from '@/components/shared/section'
 export async function RecentArticles({ lang }: LangProp) {
   const latestProductCalls = await fetchPublicYouTubePlaylist(
     'PL6BKGVqekhB_R8wjPFN-p6dGkcIy_bM1D',
-    5
+    4
   )
   const latestShorts = await fetchPublicYouTubePlaylist(
     'PL6BKGVqekhB_3OhFY_zpJwmaaV6sLxLwJ',
-    10
+    4
   )
   // const latestBitcoinEdu = await fetchPublicYouTubePlaylist(
   //   'PL6BKGVqekhB8XkWgA-JWGLafKHxKDfzlM',
@@ -127,26 +127,26 @@ export async function RecentArticles({ lang }: LangProp) {
           },
           contentBlock: [],
           seo: null
-        },
-        {
-          id: '190259087',
-          topics: ['Summary', 'LLM', 'Code', 'Open Source', 'Small Models'],
-          title:
-            'Latent Space Podcast 8-4-23 Summary: Latent Space x AI Breakdown - Crossover Podcast',
-          slug: 'latent-space-podcast-8-4-23-summary-latent-space-x-ai-breakdown-crossover-pod',
-          authorName: 'Prof. Otto Nomos',
-          authorPicture: {
-            url: 'https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png'
-          },
-          _publishedAt: '2023-10-05T09:16:33+01:00',
-          description:
-            'Join AI Breakdown & Latent Space for the summer AI tech roundup: Dive into GPT4.5, Llama 2, AI tools, the rising AI engineer, and more!',
-          thumbnail: {
-            url: 'https://www.datocms-assets.com/101962/1691539617-screenshot-2023-08-08-at-8-02-52-pm.png'
-          },
-          contentBlock: [],
-          seo: null
         }
+        // {
+        //   id: '190259087',
+        //   topics: ['Summary', 'LLM', 'Code', 'Open Source', 'Small Models'],
+        //   title:
+        //     'Latent Space Podcast 8-4-23 Summary: Latent Space x AI Breakdown - Crossover Podcast',
+        //   slug: 'latent-space-podcast-8-4-23-summary-latent-space-x-ai-breakdown-crossover-pod',
+        //   authorName: 'Prof. Otto Nomos',
+        //   authorPicture: {
+        //     url: 'https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png'
+        //   },
+        //   _publishedAt: '2023-10-05T09:16:33+01:00',
+        //   description:
+        //     'Join AI Breakdown & Latent Space for the summer AI tech roundup: Dive into GPT4.5, Llama 2, AI tools, the rising AI engineer, and more!',
+        //   thumbnail: {
+        //     url: 'https://www.datocms-assets.com/101962/1691539617-screenshot-2023-08-08-at-8-02-52-pm.png'
+        //   },
+        //   contentBlock: [],
+        //   seo: null
+        // }
       ]
     }
   ]
@@ -157,7 +157,7 @@ export async function RecentArticles({ lang }: LangProp) {
       <BlogSections
         sections={recentArcticles as unknown as ArticlesSection[]}
         lang={lang}
-        className="mb-0 pb-0"
+        className="pb-0 mb-0"
       />
     </Section>
   )
