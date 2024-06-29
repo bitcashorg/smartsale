@@ -8,13 +8,16 @@
   "scripts": {
     "build": "bun run types && bun run schemas",
     "types": "supabase gen types typescript --project-id jvpdyxpjpodxsuvhufpw > src/supa.types.ts",
-    "schemas": "supabase-to-zod --input src/supa.types.ts --output src/supa.schemas.ts"
+    "schemas": "supabase-to-zod --input src/supa.types.ts --output src/supa.schemas.ts",
+    "fake": "bun run ./scripts/fake-orders.ts"
   },
   "author": "bitcash.org",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
-    "supabase-to-zod": "^1.0.5"
+    "supabase-to-zod": "^1.0.5",
+    "@faker-js/faker": "^8.4.1",
+    "supabase": "^1.178.2"
   }
 }
