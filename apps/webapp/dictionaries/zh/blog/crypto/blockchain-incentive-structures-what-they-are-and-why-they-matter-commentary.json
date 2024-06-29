@@ -1,0 +1,503 @@
+{
+  "relatedBlogs": [
+    {
+      "id": "180563939",
+      "topics": [
+        "DAO",
+        "代币经济学",
+        "评论"
+      ],
+      "title": "区块链治理设计框架：Prysm Group轮盘[评论]",
+      "slug": "a-framework-for-blockchain-governance-design-the-prysm-group-wheel-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:19:19+01:00",
+      "description": "通过Prysm Group轮盘导航区块链治理的复杂性。您的有效区块链治理设计路线图。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690861154-cbc11-img1.webp"
+      },
+      "seo": {
+        "title": "区块链治理设计框架[评论]",
+        "description": "通过Prysm Group轮盘导航区块链治理的复杂性。您的有效区块链治理设计路线图。"
+      }
+    },
+    {
+      "id": "180217169",
+      "topics": [
+        "代币经济学",
+        "评论"
+      ],
+      "title": "代币化激励经济学3：代币价值无法协调利益相关者[评论]",
+      "slug": "economics-of-tokenized-incentives-3-token-value-won-t-align-stakeholders-commenta",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:17:23+01:00",
+      "description": "揭示使用代币价值作为区块链平台性能指标的陷阱。学习设计有效的激励系统。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690771457-cbc3-img1.png"
+      },
+      "seo": {
+        "title": "代币化激励经济学3[评论]",
+        "description": "揭示使用代币价值作为区块链平台性能指标的陷阱。学习设计有效的激励系统。"
+      }
+    },
+    {
+      "id": "180217123",
+      "topics": [
+        "代币经济学",
+        "评论"
+      ],
+      "title": "代币化激励经济学2：选择有效的性能指标[评论]",
+      "slug": "economics-of-tokenized-incentives-2-selecting-effective-performance-metrics-comme",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:17:05+01:00",
+      "description": "发现区块链按绩效付费系统中性能指标的力量。学习有效地将激励与平台目标对齐。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690770918-cbc2-img1.png"
+      },
+      "seo": {
+        "title": "代币化激励经济学2[评论]",
+        "description": "发现区块链按绩效付费系统中性能指标的力量。学习有效地将激励与平台目标对齐。"
+      }
+    },
+    {
+      "id": "180217082",
+      "topics": [
+        "代币经济学",
+        "评论"
+      ],
+      "title": "代币化激励经济学1：按绩效付费简介[评论]",
+      "slug": "economics-of-tokenized-incentives-1-intro-to-pay-for-performance",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:15:12+01:00",
+      "description": "深入了解区块链平台中按绩效付费激励的复杂性。了解成功的权衡和设计考虑因素。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690770568-cbc1-img1.png"
+      },
+      "seo": {
+        "title": "代币化激励经济学1[评论]",
+        "description": "深入了解区块链平台中按绩效付费激励的复杂性。了解成功的权衡和设计考虑因素。"
+      }
+    },
+    {
+      "id": "180556627",
+      "topics": [
+        "评论",
+        "智能合约"
+      ],
+      "title": "不完全合约和区块链[评论]",
+      "slug": "incomplete-contracts-and-blockchain-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:14:44+01:00",
+      "description": "揭开不完全合约与区块链之间关系的神秘面纱。了解区块链如何填补合约空白。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690856249-cbc5-img1.png"
+      },
+      "seo": {
+        "title": "不完全合约和区块链[评论]",
+        "description": "揭开不完全合约与区块链之间关系的神秘面纱。了解区块链如何填补合约空白。"
+      }
+    },
+    {
+      "id": "180563918",
+      "topics": [
+        "代币经济学",
+        "评论",
+        "筹资"
+      ],
+      "title": "代币：投资工具还是交换媒介（不能兼而有之）[评论]",
+      "slug": "tokens-investment-vehicle-or-medium-of-exchange-not-both-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:13:31+01:00",
+      "description": "深入探讨代币在区块链经济中的双重角色。揭示投资工具和交换媒介之间的微妙界限。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690859959-cbc8-img1.png"
+      },
+      "seo": {
+        "title": "代币：投资还是交换媒介[评论]",
+        "description": "深入探讨代币在区块链经济中的双重角色。揭示投资工具和交换媒介之间的微妙界限。"
+      }
+    },
+    {
+      "id": "180563922",
+      "topics": [
+        "筹资",
+        "代币经济学",
+        "评论"
+      ],
+      "title": "ICO利用网络效应[评论]",
+      "slug": "icos-leverage-network-effects-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:12:06+01:00",
+      "description": "发现ICO如何利用网络效应的力量来推动其成功。ICO和网络效应，一个充满活力的二人组！",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690860184-cbc9-img1.png"
+      },
+      "seo": {
+        "title": "ICO利用网络效应[评论]",
+        "description": "发现ICO如何利用网络效应的力量来推动其成功。ICO和网络效应，一个充满活力的二人组！"
+      }
+    },
+    {
+      "id": "179948652",
+      "topics": [
+        "代币经济学",
+        "行业",
+        "摘要"
+      ],
+      "title": "数字创新和收入模式[摘要]",
+      "slug": "digital-innovation-and-revenue-models-summary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:11:35+01:00",
+      "description": "在Prysm Group的'数字创新和收入模式'中揭示数字创新如何重塑产品交付。探索新兴技术经济学。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690668517-cbr1-img1.png"
+      },
+      "seo": {
+        "title": "数字创新和收入模式[摘要]",
+        "description": "在Prysm Group的'数字创新和收入模式'中揭示数字创新如何重塑产品交付。探索新兴技术经济学。"
+      }
+    },
+    {
+      "id": "180556595",
+      "topics": [
+        "筹资",
+        "代币经济学",
+        "评论"
+      ],
+      "title": "区块链效应：无市场力量成本的网络效应[评论]",
+      "slug": "the-blockchain-effect-network-effects-without-market-power-costs-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:11:14+01:00",
+      "description": "探索区块链如何实现网络效应而不带来市场力量的弊端。发现改变游戏规则的区块链效应。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690855275-cbc4-img1.png"
+      },
+      "seo": {
+        "title": "无市场力量成本的网络效应[评论]",
+        "description": "探索区块链如何实现网络效应而不带来市场力量的弊端。发现改变游戏规则的区块链效应。"
+      }
+    }
+  ],
+  "blogContent": {
+    "id": "180563931",
+    "topics": [
+      "代币经济学",
+      "评论"
+    ],
+    "title": "区块链激励结构：它们是什么以及为什么重要 [评论]",
+    "slug": "blockchain-incentive-structures-what-they-are-and-why-they-matter-commentary",
+    "authorName": "Crypto Clairity",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+    },
+    "_publishedAt": "2023-10-05T09:10:02+01:00",
+    "description": "了解区块链激励结构的核心及其在推动用户行为和平台成功方面的重要性。",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1690860807-cbc10-img1.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Original Link: "
+                    },
+                    {
+                      "url": "https://medium.com/prysmeconomics/blockchain-incentives-101-what-they-are-and-why-they-matter-5127afb56aeb",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Blockchain Incentive Structures: What they are and why they matter"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Author: "
+                    },
+                    {
+                      "url": "https://medium.com/@cathybarreraphd?source=post_page-----5127afb56aeb--------------------------------",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noopener follow"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Cathy Barrera, PhD"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Summary & Commentary"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Understanding the nuances of incentives is crucial for founders of blockchain platforms. Incentives play a key role in encouraging participant cooperation, thus creating the value that ensures the platform's success. Incentives are ubiquitous and extend beyond financial rewards, influencing the behavior of system participants by altering the relative costs and benefits of their choices."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "A few examples include university grades and pay-for-performance systems. For instance, grades can incentivize students to study hard or cheat, even without any monetary benefit involved. Similarly, pay-for-performance systems reward individuals based on their work output."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "In the blockchain and cryptocurrency context, incentives can influence users' behavior. An experiment at MIT, which involved giving each undergraduate student $100 worth of Bitcoin, demonstrated that non-monetary costs and benefits play a significant role in influencing behavior. The students were given a choice of different wallets for storing their Bitcoin, each offering different levels of privacy and ease of use. Despite no monetary differences between the wallets, students' wallet selection process was influenced by these factors, indicating the power of non-monetary incentives."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Moreover, how a blockchain platform is designed can significantly influence the incentives it provides. Even minor design elements can have a substantial impact on user behavior and platform adoption. This highlights the importance of viewing all decisions through the lens of incentive design."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Three significant fields of economics - contract theory, market design, and the economics of information - focus on how system designs can influence behavior. At Prysm Group, these fields are used to design platforms for blockchain ventures, incorporating both tokenized financial rewards and non-monetary incentives like reputation systems."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "From an economics perspective, incentives form the crux of the system and are a critical part of the overall economic design of effective blockchain platforms. Incentives range from miner rewards and transaction fee-setting mechanisms to token-curated registries and prediction markets, serving as the foundation of blockchain platforms."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Here are some actionable insights based on this discussion:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Incentive Design:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " When designing your blockchain platform, consider both monetary and non-monetary incentives. Understand how different design elements can influence user behavior."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Influence Behavior:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " Leverage the power of incentives to encourage cooperation and value creation on your platform. This can range from token rewards to reputation systems."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Understand the Costs and Benefits:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " Remember, incentives are all about balancing costs and benefits. Understand how different costs (both monetary and non-monetary) can influence your users' behavior."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Economic Design:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " Consider incorporating concepts from contract theory, market design, and the economics of information in your platform design. This can help you create a more effective incentive system."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Continuous Learning:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " Stay updated on the latest research and developments in incentive design for blockchain platforms to ensure your platform remains effective and competitive."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Remember, the goal is not just to create incentives, but to design them in a way that helps realize the vision of the platform founders and benefit its users."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "cbc10-img1",
+            "height": 862,
+            "width": 862,
+            "filename": "cbc10-img1.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1690860807-cbc10-img1.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "了解区块链激励结构的核心及其在推动用户行为和平台成功方面的重要性。",
+      "title": "区块链激励结构 [评论]",
+      "twitterCard": null,
+      "image": {
+        "width": 862,
+        "height": 862,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1690860807-cbc10-img1.png"
+      }
+    }
+  },
+  "topics": [
+    "代币经济学",
+    "评论"
+  ]
+}

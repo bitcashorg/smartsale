@@ -1,0 +1,529 @@
+{
+  "relatedBlogs": [],
+  "blogContent": {
+    "id": "198277342",
+    "topics": [
+      "大语言模型",
+      "多语言"
+    ],
+    "title": "OpenBA: 一个开源的150亿参数双语非对称seq2seq模型,从头预训练",
+    "slug": "openba-an-open-sourced-15b-bilingual-asymmetric-seq2seq-model-pre-trained-from-sc",
+    "authorName": "Prof. Otto Nomos",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+    },
+    "_publishedAt": "2024-05-27T03:34:02+01:00",
+    "description": "摘要评论和评分",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Published on Sep 19"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Authors:"
+                    },
+                    {
+                      "url": "https://huggingface.co/ljtsuda",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Juntao Li"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/ZetangForward",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Zecheng Tang"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ",Yuyang Ding,"
+                    },
+                    {
+                      "url": "https://huggingface.co/PinzhengWang",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Pinzheng Wang"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ",Pei Guo,"
+                    },
+                    {
+                      "url": "https://huggingface.co/Moriarty0923",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Wangjie You"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/jorjordan",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Dan Qiao"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/jokephp",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Wenliang Chen"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ",Guohong Fu,Qiaoming Zhu,Guodong Zhou,Min Zhang"
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Abstract"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Large language models (LLMs) with billions of parameters have demonstrated outstanding performance on various natural language processing tasks. This report presents OpenBA, an open-sourced 15B bilingual asymmetric seq2seq model, to contribute an LLM variant to the Chinese-oriented open-source model community. We enhance OpenBA with effective and efficient techniques as well as adopt a three-stage training strategy to train the model from scratch. Our solution can also achieve very competitive performance with only 380B tokens, which is better than LLaMA-70B on the BELEBELE benchmark, BLOOM-176B on the MMLU benchmark, GLM-130B on the C-Eval (hard) benchmark. This report provides the main details to pre-train an analogous model, including pre-training data processing, Bilingual Flan data collection, the empirical observations that inspire our model architecture design, training objectives of different stages, and other enhancement techniques. We have refactored our code to follow the design principles of the Huggingface Transformers Library, making it more convenient for developers to use, and released checkpoints of different training stages at https://huggingface.co/openBA. More details of our project are available at https://github.com/OpenNLG/openBA.git."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "url": "https://arxiv.org/abs/2309.10706",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "View arXiv page"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "https://arxiv.org/pdf/2309.10706",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "View PDF"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Commentary"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "The paper \"OpenBA: An Open-sourced 15B Bilingual Asymmetric seq2seq Model Pre-trained from Scratch\" introduces a bilingual large language model tailored for Chinese-oriented applications."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Key Takeaways:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Bilingual Model"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": OpenBA is a bilingual model catering to Chinese-oriented tasks, thereby filling a gap in the LLM community."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Efficient Techniques and Training Strategy"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": The authors use efficient techniques and a three-stage training strategy to train the model from scratch. This ensures the model is competitive despite being trained on fewer tokens compared to other large models."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Competitive Performance"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": The OpenBA achieves better performance on multiple benchmarks compared to other state-of-the-art models, with fewer tokens. This suggests efficient architecture and training strategies."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Open Source"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": The authors have made their model open source and integrated it with the Huggingface Transformers Library. This facilitates easier adoption by developers and researchers."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Potential Real-World Impact:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Bilingual Tasks"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": OpenBA's bilingual nature can address a wide range of tasks that involve English and Chinese languages, expanding the applicability of LLMs in Chinese-speaking regions and bilingual applications."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Promotion of Chinese-Oriented Research"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": The model's focus on Chinese-oriented tasks can encourage more research and applications catering to this significant language group."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Accessible Tool"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": With the model being integrated into Huggingface and the associated code being open-sourced, developers and researchers can easily adopt, modify, and extend this model for various applications."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Benchmark Performance"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": The superior performance on benchmarks hints at the possibility of this model becoming a standard or reference in bilingual NLP tasks involving Chinese."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Challenges:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Specialized Nature"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": While the model is powerful for bilingual tasks involving Chinese, its specialization might limit its broader applicability across other languages."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Resource Intensiveness"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": As with other large models, real-time applications or deployments in resource-constrained environments might face challenges."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Given the potential for breakthroughs in bilingual tasks involving Chinese and its contribution to the open-source community:"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "I'd rate the real-world impact of this paper as an 8 out of 10."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "OpenBA fills a specific niche in the LLM world by catering to bilingual tasks involving Chinese. The open-source nature and integration with popular platforms will likely promote its adoption and stimulate further research in the Chinese NLP community."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "researchpaper9",
+            "height": 816,
+            "width": 1456,
+            "filename": "researchpaper9.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "摘要评论和评分",
+      "title": "OpenBA: 一个开源的150亿参数双语...模型...",
+      "twitterCard": null,
+      "image": {
+        "width": 1456,
+        "height": 816,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      }
+    }
+  },
+  "topics": [
+    "大语言模型",
+    "多语言"
+  ]
+}

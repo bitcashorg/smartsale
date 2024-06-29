@@ -1,0 +1,428 @@
+{
+  "relatedBlogs": [
+    {
+      "id": "180563939",
+      "topics": [
+        "DAO",
+        "代币经济学",
+        "评论"
+      ],
+      "title": "区块链治理设计框架：Prysm Group轮盘[评论]",
+      "slug": "a-framework-for-blockchain-governance-design-the-prysm-group-wheel-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:19:19+01:00",
+      "description": "通过Prysm Group轮盘导航区块链治理的复杂性。您的有效区块链治理设计路线图。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690861154-cbc11-img1.webp"
+      },
+      "seo": {
+        "title": "区块链治理设计框架[评论]",
+        "description": "通过Prysm Group轮盘导航区块链治理的复杂性。您的有效区块链治理设计路线图。"
+      }
+    },
+    {
+      "id": "180217169",
+      "topics": [
+        "代币经济学",
+        "评论"
+      ],
+      "title": "代币化激励经济学3：代币价值无法协调利益相关者[评论]",
+      "slug": "economics-of-tokenized-incentives-3-token-value-won-t-align-stakeholders-commenta",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:17:23+01:00",
+      "description": "揭示使用代币价值作为区块链平台性能指标的陷阱。学习设计有效的激励系统。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690771457-cbc3-img1.png"
+      },
+      "seo": {
+        "title": "代币化激励经济学3[评论]",
+        "description": "揭示使用代币价值作为区块链平台性能指标的陷阱。学习设计有效的激励系统。"
+      }
+    },
+    {
+      "id": "180217123",
+      "topics": [
+        "代币经济学",
+        "评论"
+      ],
+      "title": "代币化激励经济学2：选择有效的性能指标[评论]",
+      "slug": "economics-of-tokenized-incentives-2-selecting-effective-performance-metrics-comme",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:17:05+01:00",
+      "description": "发现区块链按绩效付费系统中性能指标的力量。学习有效地将激励与平台目标保持一致。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690770918-cbc2-img1.png"
+      },
+      "seo": {
+        "title": "代币化激励经济学2[评论]",
+        "description": "发现区块链按绩效付费系统中性能指标的力量。学习有效地将激励与平台目标保持一致。"
+      }
+    },
+    {
+      "id": "180217082",
+      "topics": [
+        "代币经济学",
+        "评论"
+      ],
+      "title": "代币化激励经济学1：按绩效付费简介[评论]",
+      "slug": "economics-of-tokenized-incentives-1-intro-to-pay-for-performance",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:15:12+01:00",
+      "description": "深入了解区块链平台中按绩效付费激励的复杂性。了解成功的权衡和设计考虑因素。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690770568-cbc1-img1.png"
+      },
+      "seo": {
+        "title": "代币化激励经济学1[评论]",
+        "description": "深入了解区块链平台中按绩效付费激励的复杂性。了解成功的权衡和设计考虑因素。"
+      }
+    },
+    {
+      "id": "180563918",
+      "topics": [
+        "代币经济学",
+        "评论",
+        "筹资"
+      ],
+      "title": "代币：投资工具还是交换媒介（不能两者兼顾）[评论]",
+      "slug": "tokens-investment-vehicle-or-medium-of-exchange-not-both-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:13:31+01:00",
+      "description": "深入探讨代币在区块链经济中的双重角色。揭示投资工具和交换媒介之间的微妙界限。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690859959-cbc8-img1.png"
+      },
+      "seo": {
+        "title": "代币：投资还是交换媒介[评论]",
+        "description": "深入探讨代币在区块链经济中的双重角色。揭示投资工具和交换媒介之间的微妙界限。"
+      }
+    },
+    {
+      "id": "180563922",
+      "topics": [
+        "筹资",
+        "代币经济学",
+        "评论"
+      ],
+      "title": "ICO利用网络效应[评论]",
+      "slug": "icos-leverage-network-effects-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:12:06+01:00",
+      "description": "发现ICO如何利用网络效应的力量来推动其成功。ICO和网络效应，一个充满活力的组合！",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690860184-cbc9-img1.png"
+      },
+      "seo": {
+        "title": "ICO利用网络效应[评论]",
+        "description": "发现ICO如何利用网络效应的力量来推动其成功。ICO和网络效应，一个充满活力的组合！"
+      }
+    },
+    {
+      "id": "180556595",
+      "topics": [
+        "筹资",
+        "代币经济学",
+        "评论"
+      ],
+      "title": "区块链效应：无市场力量成本的网络效应[评论]",
+      "slug": "the-blockchain-effect-network-effects-without-market-power-costs-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:11:14+01:00",
+      "description": "探索区块链如何实现网络效应而不带来市场力量的弊端。发现改变游戏规则的区块链效应。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690855275-cbc4-img1.png"
+      },
+      "seo": {
+        "title": "无市场力量成本的网络效应[评论]",
+        "description": "探索区块链如何实现网络效应而不带来市场力量的弊端。发现改变游戏规则的区块链效应。"
+      }
+    },
+    {
+      "id": "180563931",
+      "topics": [
+        "代币经济学",
+        "评论"
+      ],
+      "title": "区块链激励结构：它们是什么以及为什么重要[评论]",
+      "slug": "blockchain-incentive-structures-what-they-are-and-why-they-matter-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:10:02+01:00",
+      "description": "了解区块链激励结构的核心及其在推动用户行为和平台成功方面的重要性。",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690860807-cbc10-img1.png"
+      },
+      "seo": {
+        "title": "区块链激励结构[评论]",
+        "description": "了解区块链激励结构的核心及其在推动用户行为和平台成功方面的重要性。"
+      }
+    }
+  ],
+  "blogContent": {
+    "id": "180556627",
+    "topics": [
+      "评论",
+      "智能合约"
+    ],
+    "title": "不完整合同与区块链 [评论]",
+    "slug": "incomplete-contracts-and-blockchain-commentary",
+    "authorName": "Crypto Clairity",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+    },
+    "_publishedAt": "2023-10-05T09:14:44+01:00",
+    "description": "揭示不完整合同与区块链之间的关系。了解区块链如何填补合同缺口。",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1690856249-cbc5-img1.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Original Link: "
+                    },
+                    {
+                      "url": "https://medium.com/prysmeconomics/incomplete-contracts-and-blockchain-ac9f348a2e6f?source=user_profile---------12----------------------------",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noopener follow"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Incomplete Contracts and Blockchain"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": "\n\nAuthor: "
+                    },
+                    {
+                      "url": "https://medium.com/@cathybarreraphd?source=post_page-----ac9f348a2e6f--------------------------------",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noopener follow"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Cathy Barrera, PhD"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Summary & Commentary"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "The study of Contract Theory highlights how contracts, a fundamental part of economic activity, are inherently incomplete due to the impossibility of accounting for all possible contingencies and verifying all actions. This inherent incompleteness presents a unique opportunity for blockchain technology."
+                    }
+                  ]
+                },
+                {
+                  "type": "thematicBreak"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Blockchain startups should focus on:"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Improving Quality of Information"
+                    },
+                    {
+                      "type": "span",
+                      "value": ": The smart contract technology in blockchains allows for automated execution of agreements. However, the major gain is not in automating the execution of verifiable terms, which traditional institutions already handle relatively well. Instead, the most significant efficiency gains can be realized by improving the quality of information so more terms can be included in contracts."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Actionable Insight: Blockchain startups should consider how they can utilize technology to make more information verifiable. For instance, in the insurance sector, telematics devices can verify driving behavior, which was previously unverifiable."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Expanding Contingency Coverage"
+                    },
+                    {
+                      "type": "span",
+                      "value": ": Technology can help broaden the coverage of contracts, making them more complete. Artificial intelligence (AI) and big data could potentially be employed to predict and account for a wider range of contingencies."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Actionable Insight: Invest in predictive technologies like AI and machine learning to identify and manage possible contract contingencies better."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Coping with Incomplete Contracts"
+                    },
+                    {
+                      "type": "span",
+                      "value": ": Rather than trying to make contracts complete, which is unrealistic, startups should focus on establishing measures for dealing with the inherent incompleteness of contracts."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Actionable Insight: Establish procedures for dispute resolution and contract amendment. Make use of the transparency and immutability of the blockchain for recording any changes and resolutions."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Maximizing Enforceability"
+                    },
+                    {
+                      "type": "span",
+                      "value": ": Since contracts are only as good as their enforceability, startups should focus on ensuring the enforceability of contracts by leveraging blockchain's inherent transparency and security features."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Actionable Insight: Blockchain projects should be designed in a way that they maximize the enforceability of contracts, ensuring that the system does not become a bottleneck but an enabler in the enforcement process."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "The combination of blockchain technology and the principles of Contract Theory offers a new pathway to reshape our transactional relationships. Blockchain can go beyond merely facilitating transactions to revolutionize the core functioning of our contractual systems. However, for that, we need to focus on the inherent incompleteness of contracts and how blockchain can help address this limitation."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "cbc5-img1",
+            "height": 862,
+            "width": 862,
+            "filename": "cbc5-img1.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1690856249-cbc5-img1.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "揭示不完整合同与区块链之间的关系。了解区块链如何填补合同缺口。",
+      "title": "不完整合同与区块链 [评论]",
+      "twitterCard": null,
+      "image": {
+        "width": 862,
+        "height": 862,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1690856249-cbc5-img1.png"
+      }
+    }
+  },
+  "topics": [
+    "评论",
+    "智能合约"
+  ]
+}

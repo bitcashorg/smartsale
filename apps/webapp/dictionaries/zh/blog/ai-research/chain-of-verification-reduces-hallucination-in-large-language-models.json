@@ -1,0 +1,954 @@
+{
+  "relatedBlogs": [
+    {
+      "id": "198277124",
+      "topics": [
+        "大型语言模型",
+        "金融",
+        "医疗",
+        "法律",
+        "提示工程"
+      ],
+      "title": "通过阅读理解适应大型语言模型",
+      "slug": "adapting-large-language-models-via-reading-comprehension",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-27T03:34:22+01:00",
+      "description": "摘要评论与评分",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "通过阅读理解适应大型语言模型",
+        "description": "摘要评论与评分\n"
+      }
+    },
+    {
+      "id": "198277342",
+      "topics": [
+        "大型语言模型",
+        "多语言"
+      ],
+      "title": "OpenBA:一个开源的150亿参数双语非对称seq2seq模型",
+      "slug": "openba-an-open-sourced-15b-bilingual-asymmetric-seq2seq-model-pre-trained-from-sc",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-27T03:34:02+01:00",
+      "description": "摘要评论与评分",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "OpenBA:一个开源的150亿参数双语非对称seq2seq模型",
+        "description": "摘要评论与评分\n"
+      }
+    },
+    {
+      "id": "198277117",
+      "topics": [
+        "大型语言模型",
+        "检索"
+      ],
+      "title": "PDFTriage:长结构化文档的问答系统",
+      "slug": "pdftriage-question-answering-over-long-structured-documents",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-27T03:33:49+01:00",
+      "description": "摘要评论与评分",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "PDFTriage:长结构化文档的问答系统",
+        "description": "摘要评论与评分\n"
+      }
+    },
+    {
+      "id": "198277138",
+      "topics": [
+        "大型语言模型",
+        "微调"
+      ],
+      "title": "排序LLaMA:通过排序微调释放大型语言模型中间层的动态推理潜力",
+      "slug": "sorted-llama-unlocking-the-potential-of-intermediate-layers-of-large-language-mod",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-27T03:33:31+01:00",
+      "description": "摘要评论与评分",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "排序LLaMA:通过排序微调释放大型语言模型的动态推理潜力",
+        "description": "摘要评论与评分\n"
+      }
+    },
+    {
+      "id": "198277150",
+      "topics": [
+        "大型语言模型",
+        "指令调优",
+        "多模态"
+      ],
+      "title": "指令调优大型多模态模型扩展的实证研究",
+      "slug": "an-empirical-study-of-scaling-instruct-tuned-large-multimodal-models",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-27T03:33:15+01:00",
+      "description": "摘要评论与评分",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "指令调优大型多模态模型扩展的实证研究",
+        "description": "摘要评论与评分\n"
+      }
+    },
+    {
+      "id": "198277160",
+      "topics": [
+        "大型语言模型",
+        "代理",
+        "游戏"
+      ],
+      "title": "心智代理:涌现的游戏交互",
+      "slug": "mindagent-emergent-gaming-interaction",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-27T03:32:58+01:00",
+      "description": "摘要评论与评分",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
+      },
+      "seo": {
+        "title": "心智代理:涌现的游戏交互",
+        "description": "摘要评论与评分\n"
+      }
+    },
+    {
+      "id": "198277196",
+      "topics": [
+        "大型语言模型",
+        "结构化数据"
+      ],
+      "title": "Struc-Bench:大型语言模型真的擅长生成复杂结构化数据吗?",
+      "slug": "struc-bench-are-large-language-models-really-good-at-generating-complex-structure",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-25T03:38:38+01:00",
+      "description": "摘要评论与评分",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "Struc-Bench:大型语言模型真的擅长生成复杂结构化数据吗?",
+        "description": "摘要评论与评分\n"
+      }
+    },
+    {
+      "id": "198277217",
+      "topics": [
+        "大型语言模型",
+        "隐私",
+        "边缘计算"
+      ],
+      "title": "利用大型语言模型从隐私保护掩码中恢复",
+      "slug": "recovering-from-privacy-preserving-masking-with-large-language-models",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-25T03:38:26+01:00",
+      "description": "摘要评论与评分",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "利用大型语言模型从隐私保护掩码中恢复",
+        "description": "摘要评论与评分\n"
+      }
+    },
+    {
+      "id": "198277239",
+      "topics": [
+        "大型语言模型",
+        "聊天"
+      ],
+      "title": "S3-DST:大型语言模型时代的结构化开放域对话分割和状态跟踪",
+      "slug": "s3-dst-structured-open-domain-dialogue-segmentation-and-state-tracking-in-the-era",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-25T03:38:11+01:00",
+      "description": "摘要评论与评分",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "S3-DST:大型语言模型时代的结构化开放域对话分割和状态跟踪",
+        "description": "摘要评论与评分\n"
+      }
+    },
+    {
+      "id": "198277253",
+      "topics": [
+        "大型语言模型",
+        "音频"
+      ],
+      "title": "利用大型语言模型增强口语理解的文本",
+      "slug": "augmenting-text-for-spoken-language-understanding-with-large-language-models",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-25T03:37:49+01:00",
+      "description": "摘要评论与评分",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "利用大型语言模型增强口语理解的文本",
+        "description": "摘要评论与评分\n"
+      }
+    },
+    {
+      "id": "198277277",
+      "topics": [
+        "大型语言模型",
+        "压缩"
+      ],
+      "title": "语言建模即压缩",
+      "slug": "language-modeling-is-compression",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-25T03:37:32+01:00",
+      "description": "摘要评论与评分",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "语言建模即压缩",
+        "description": "摘要评论与评分\n"
+      }
+    },
+    {
+      "id": "198277345",
+      "topics": [
+        "大型语言模型",
+        "多语言"
+      ],
+      "title": "百川2:开放大规模语言模型",
+      "slug": "baichuan-2-open-large-scale-language-models",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-24T05:59:10+01:00",
+      "description": "摘要评论与评分",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "百川2:开放大规模语言模型",
+        "description": "摘要评论与评分\n"
+      }
+    },
+    {
+      "id": "198277360",
+      "topics": [
+        "大型语言模型",
+        "RLHF"
+      ],
+      "title": "通过优势模型和选择性回顾稳定RLHF",
+      "slug": "stabilizing-rlhf-through-advantage-model-and-selective-rehearsal",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-24T05:22:15+01:00",
+      "description": "摘要评论与评分",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "通过优势模型和选择性回顾稳定RLHF",
+        "description": "摘要评论与评分\n"
+      }
+    },
+    {
+      "id": "198277458",
+      "topics": [
+        "大型语言模型",
+        "幻觉",
+        "实体",
+        "结构化数据"
+      ],
+      "title": "LMDX:基于语言模型的文档信息提取和定位",
+      "slug": "lmdx-language-model-based-document-information-extraction-and-localization",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2024-05-24T05:20:31+01:00",
+      "description": "摘要评论与评分",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "LMDX:基于语言模型的文档信息提取和定位",
+        "description": "摘要评论与评分\n"
+      }
+    },
+    {
+      "id": "198277209",
+      "topics": [
+        "大型语言模型",
+        "数据"
+      ],
+      "title": "SlimPajama-DC:理解大型语言模型训练的数据组合",
+      "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-04T23:43:32+01:00",
+      "description": "摘要评论与评分",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
+      },
+      "seo": {
+        "title": "SlimPajama-DC:理解大型语言模型训练的数据组合",
+        "description": "摘要评论与评分\n"
+      }
+    },
+    {
+      "id": "198277109",
+      "topics": [
+        "大型语言模型",
+        "推理"
+      ],
+      "title": "对比解码改善大型语言模型的推理能力",
+      "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-04T22:18:11+01:00",
+      "description": "摘要评论与评分",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "对比解码改善大型语言模型的推理能力",
+        "description": "摘要评论与评分\n"
+      }
+    },
+    {
+      "id": "198277099",
+      "topics": [
+        "大型语言模型",
+        "多语言",
+        "数据"
+      ],
+      "title": "CulturaX:一个清洁、庞大、多语言的167种语言大型语言模型数据集",
+      "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-04T22:14:53+01:00",
+      "description": "摘要评论与评分",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "CulturaX:一个清洁、庞大、多语言的167种语言大型语言模型数据集",
+        "description": "摘要评论与评分\n"
+      }
+    },
+    {
+      "id": "198044929",
+      "topics": [
+        "大型语言模型",
+        "数据",
+        "代理"
+      ],
+      "title": "推理型具身代理的数据源",
+      "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-04T07:33:25+01:00",
+      "description": "摘要评论与评分",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
+      },
+      "seo": {
+        "title": "推理型具身代理的数据源",
+        "description": "摘要评论与评分\n"
+      }
+    },
+    {
+      "id": "198044900",
+      "topics": [
+        "大型语言模型",
+        "实体",
+        "微调"
+      ],
+      "title": "利用上下文信息进行有效的实体显著性检测",
+      "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-04T07:30:50+01:00",
+      "description": "摘要评论与评分",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      },
+      "seo": {
+        "title": "利用上下文信息进行有效的实体显著性检测",
+        "description": "摘要评论与评分\n"
+      }
+    }
+  ],
+  "blogContent": {
+    "id": "198277446",
+    "topics": [
+      "大型语言模型",
+      "幻觉"
+    ],
+    "title": "链式验证减少大型语言模型的幻觉",
+    "slug": "chain-of-verification-reduces-hallucination-in-large-language-models",
+    "authorName": "Prof. Otto Nomos",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+    },
+    "_publishedAt": "2024-05-24T05:21:05+01:00",
+    "description": "摘要评论和评分",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Published on Sep 20"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Authors:"
+                    },
+                    {
+                      "url": "https://huggingface.co/shehzaadzd",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Shehzaad Dhuliawala"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ",Mojtaba Komeili,Jing Xu,"
+                    },
+                    {
+                      "url": "https://huggingface.co/rraileanu",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Roberta Raileanu"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ",Xian Li,Asli Celikyilmaz,"
+                    },
+                    {
+                      "url": "https://huggingface.co/spermwhale",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Jason Weston"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Abstract"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Generation of plausible yet incorrect factual information, termed hallucination, is an unsolved issue in large language models. We study the ability of language models to deliberate on the responses they give in order to correct their mistakes. We develop the Chain-of-Verification (CoVe) method whereby the model first (i) drafts an initial response; then (ii) plans verification questions to fact-check its draft; (iii) answers those questions independently so the answers are not biased by other responses; and (iv) generates its final verified response. In experiments, we show CoVe decreases hallucinations across a variety of tasks, from list-based questions from Wikidata, closed book MultiSpanQA and longform text generation."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "url": "https://arxiv.org/abs/2309.11495",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "View arXiv page"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "https://arxiv.org/pdf/2309.11495",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "View PDF"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Commentary"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "The paper titled \"Chain-of-Verification Reduces Hallucination in Large Language Models\" tackles an important issue in large language models: the generation of plausible yet incorrect information, known as hallucination. The proposed solution is a method termed Chain-of-Verification (CoVe)."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Key Takeaways:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Hallucination Issue"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": One of the primary challenges with LLMs is that they can sometimes produce outputs that seem plausible but are factually wrong. This can mislead users and has serious implications in applications where accurate information is essential."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Chain-of-Verification"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": This method consists of a series of steps where the model:"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "list",
+                          "style": "bulleted",
+                          "children": [
+                            {
+                              "type": "listItem",
+                              "children": [
+                                {
+                                  "type": "paragraph",
+                                  "children": [
+                                    {
+                                      "type": "span",
+                                      "value": "Creates an initial response draft."
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "listItem",
+                              "children": [
+                                {
+                                  "type": "paragraph",
+                                  "children": [
+                                    {
+                                      "type": "span",
+                                      "value": "Develops verification questions to fact-check its own draft."
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "listItem",
+                              "children": [
+                                {
+                                  "type": "paragraph",
+                                  "children": [
+                                    {
+                                      "type": "span",
+                                      "value": "Answers those questions independently to ensure there's no bias based on previous responses."
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "listItem",
+                              "children": [
+                                {
+                                  "type": "paragraph",
+                                  "children": [
+                                    {
+                                      "type": "span",
+                                      "value": "Produces a final verified response after considering the verification answers."
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Positive Results"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": The experiments show that CoVe reduces the occurrence of hallucinations across different tasks, making the model's outputs more reliable."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Potential Real-World Impact:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Reliable Outputs"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": One of the most significant benefits would be the generation of more reliable and accurate information by LLMs. This can be essential in domains like healthcare, finance, and legal where accuracy is critical."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "User Trust"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Implementing such verification techniques can increase user trust in AI systems, leading to broader acceptance and usage."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Expand AI Applicability"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Reducing hallucinations can make it safer to use AI in more sensitive applications where previously, the risk of hallucinations would have been prohibitive."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Basis for More Research"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": The approach can serve as a foundation for further research on improving the accuracy and reliability of LLMs."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Challenges:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Overhead"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": The CoVe method introduces multiple steps, potentially adding overhead in terms of computation and response time."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Not Foolproof"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": While the method might reduce hallucinations, it may not eliminate them entirely. There could still be cases where the model's internal fact-checking fails."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Given the critical nature of the hallucination problem and the novelty of the Chain-of-Verification method that appears promising in addressing it:"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "I'd rate the real-world impact of this paper as an 8.5 out of 10."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "While the method promises to tackle a pivotal issue, its widespread application and effectiveness across diverse real-world scenarios would determine its true impact."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "researchpaper9",
+            "height": 816,
+            "width": 1456,
+            "filename": "researchpaper9.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "摘要评论和评分",
+      "title": "链式验证减少大型语言模型的幻觉",
+      "twitterCard": null,
+      "image": {
+        "width": 1456,
+        "height": 816,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      }
+    }
+  },
+  "topics": [
+    "大型语言模型",
+    "幻觉"
+  ]
+}
