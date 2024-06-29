@@ -13,7 +13,7 @@ export async function RecentArticles({ lang }: LangProp) {
   )
   const latestShorts = await fetchPublicYouTubePlaylist(
     'PL6BKGVqekhB_3OhFY_zpJwmaaV6sLxLwJ',
-    4
+    8
   )
   // const latestBitcoinEdu = await fetchPublicYouTubePlaylist(
   //   'PL6BKGVqekhB8XkWgA-JWGLafKHxKDfzlM',
@@ -28,7 +28,7 @@ export async function RecentArticles({ lang }: LangProp) {
         href: 'https://www.youtube.com/@bitlauncher',
         label: 'More Shorts'
       }
-    },
+    }
     // {
     //   title: 'Bitcoin Education',
     //   videos: latestBitcoinEdu,
@@ -37,14 +37,14 @@ export async function RecentArticles({ lang }: LangProp) {
     //     label: 'Bitcoin Education'
     //   }
     // },
-    {
-      title: 'Weekly Calls',
-      videos: latestProductCalls,
-      link: {
-        href: 'https://www.youtube.com/watch?v=uUh8lX_YzoQ&list=PL6BKGVqekhB_R8wjPFN-p6dGkcIy_bM1D',
-        label: 'Weekly Calls'
-      }
-    }
+    // {
+    //   title: 'Weekly Calls',
+    //   videos: latestProductCalls,
+    //   link: {
+    //     href: 'https://www.youtube.com/watch?v=uUh8lX_YzoQ&list=PL6BKGVqekhB_R8wjPFN-p6dGkcIy_bM1D',
+    //     label: 'Weekly Calls'
+    //   }
+    // }
   ]
 
   const recentArcticles = [
