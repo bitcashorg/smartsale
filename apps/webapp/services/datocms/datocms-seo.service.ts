@@ -1,20 +1,13 @@
 import { getCMSSdk } from '@/services/datocms/graphql/cms'
-import {
-  PageSeoRecord,
-  SiteLocale
-} from '@/services/datocms/graphql/generated/cms'
+import { PageSeoRecord } from '@/services/datocms/graphql/generated/cms'
 
-export async function getPageSeoText(
-  type: string,
-  locale: SiteLocale,
-  fallbackLocales: SiteLocale[]
-): Promise<CMSPageSeoText> {
+export async function getPageSeoText(type: string): Promise<CMSPageSeoText> {
   try {
     const data = await getCMSSdk().query({
       pageSeo: {
         __args: {
-          locale,
-          fallbackLocales,
+          locale: 'en',
+          fallbackLocales: ['en'],
           filter: {
             seoType: {
               eq: type

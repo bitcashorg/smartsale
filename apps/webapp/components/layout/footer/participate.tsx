@@ -1,6 +1,5 @@
 'use client'
 
-import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
 import { buttonVariants } from '@/components/ui/button'
 import { IconDownRightArrow } from '@/components/ui/icons'
 import { cn } from '@/lib/utils'
@@ -8,6 +7,7 @@ import Link from 'next/link'
 import React from 'react'
 import { BitcashAccessButton } from '@/components/layout/header/bitcash-access'
 import { Section } from '@/components/shared/section'
+import { Lang } from '@/dictionaries/locales'
 
 export default function Participate({ lang, dict }: ParticipateProps) {
   return (
@@ -63,5 +63,5 @@ export default function Participate({ lang, dict }: ParticipateProps) {
 
 export interface ParticipateProps {
   dict: any
-  lang: SiteLocale
+  lang: Lang
 }

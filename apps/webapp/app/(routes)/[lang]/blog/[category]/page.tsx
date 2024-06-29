@@ -7,8 +7,7 @@ import {
 } from '@/services/datocms'
 import { generateMetadataFromSEO } from '@/lib/seo'
 import { BlogSections } from '@/components/routes/blog/sections'
-import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
-import { locales } from '@/dictionaries/locales'
+import { Lang, locales } from '@/dictionaries/locales'
 
 export default async function Page(props: CategoryPageProps) {
   const {
@@ -59,7 +58,7 @@ export async function generateMetadata(props: any): Promise<Metadata> {
   } = props
   const locales = [lang]
 
-  const pageSeo = await getPageSeoText(category, lang, locales)
+  const pageSeo = await getPageSeoText(category)
 
   const seoData = {
     title: pageSeo?.pageSeo?.title || '',
@@ -72,5 +71,5 @@ export async function generateMetadata(props: any): Promise<Metadata> {
   return generateMetadataFromSEO(seoData)
 }
 
-type CategoryPageParams = { lang: SiteLocale; category: string }
+type CategoryPageParams = { lang: Lang; category: string }
 type CategoryPageProps = { params: CategoryPageParams }

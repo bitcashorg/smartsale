@@ -1,8 +1,9 @@
 import { Section } from '@/components/shared/section'
-import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
+
 import { FeatureContent } from '@/types/home'
 import React from 'react'
 import Image from 'next/image'
+import { Lang } from '@/dictionaries/locales'
 
 export function Features({ lang, dict }: FeaturesProps) {
   return (
@@ -44,8 +45,7 @@ export function Features({ lang, dict }: FeaturesProps) {
   )
 }
 
-
 interface FeaturesProps {
   dict: any
-  lang: SiteLocale
+  lang: Lang
 }

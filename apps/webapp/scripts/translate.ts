@@ -1,6 +1,5 @@
-import { locales } from '@/dictionaries/locales'
+import { Lang, locales } from '@/dictionaries/locales'
 import { BlogArticleData } from '@/services/datocms'
-import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
 import {
   TranslationData,
   extractTextForTranslation,
@@ -19,7 +18,7 @@ async function processFile(
   file: string,
   subDir: string,
   targetDir: string,
-  locale: SiteLocale
+  lang: Lang
 ) {
   if (file.endsWith('-index.json')) return
 
@@ -49,7 +48,7 @@ async function processFile(
           extractTitleAndDescriptionNested
         )
       }
-      const relatedBlogs = await anthropicTranslate(relatedBlogsPayload, locale)
+      const relatedBlogs = await anthropicTranslate(relatedBlogsPayload, lang)
       // console.log('relatedBlogs', relatedBlogs)
       // process.exit(0)
       if (!relatedBlogs) throw new Error('❌ Failed to translate related blogs')
@@ -58,7 +57,7 @@ async function processFile(
       // get blog content translation
       const optimized = extractTextForTranslation(englishVersion.blogContent)
       const optmizedMeta = _.omit(optimized, 'contentBlock')
-      const blogMeta = await anthropicTranslate(optmizedMeta, locale)
+      const blogMeta = await anthropicTranslate(optmizedMeta, lang)
       if (!blogMeta) throw new Error('❌ Failed to translate blog meta')
       console.log('✅ blog meta translated')
 
@@ -68,7 +67,7 @@ async function processFile(
       const optmizedContentActions = optimized.contentBlock?.map(
         block => () => {
           console.log('🧑🏻‍💻 translating blog content block ...')
-          return anthropicTranslate(block, locale)
+          return anthropicTranslate(block, lang)
         }
       )
       const blogContentResults = await promiseAllWithConcurrencyLimit(
@@ -125,19 +124,19 @@ async function processFile(
 async function processDirectory(
   directory: string,
   targetDir: string,
-  locale: SiteLocale
+  lang: Lang
 ) {
   const subDir = path.join(directory)
   const subFiles = await fs.readdir(subDir)
 
   for (const subFile of subFiles) {
-    await processFile(subFile, subDir, targetDir, locale)
+    await processFile(subFile, subDir, targetDir, lang)
   }
 }
 
-async function copyJsonFiles(locale: SiteLocale) {
+async function copyJsonFiles(lang: Lang) {
   const sourceDir = path.join('./dictionaries/en/blog')
-  const targetDir = path.join(`./dictionaries/${locale}/blog`)
+  const targetDir = path.join(`./dictionaries/${lang}/blog`)
 
   await ensureDirectoryExists(targetDir)
 
@@ -146,11 +145,7 @@ async function copyJsonFiles(locale: SiteLocale) {
 
     for (const file of files) {
       if (file.isDirectory()) {
-        await processDirectory(
-          path.join(sourceDir, file.name),
-          targetDir,
-          locale
-        )
+        await processDirectory(path.join(sourceDir, file.name), targetDir, lang)
       }
     }
   } catch (err) {
@@ -164,8 +159,8 @@ async function ensureDirectoryExists(directory: string) {
 async function processLocale(): Promise<void> {
   await promiseAllWithConcurrencyLimit(
     locales
-      .filter(locale => locale !== 'en')
-      .map(locale => () => copyJsonFiles(locale)),
+      .filter(lang => lang !== 'en')
+      .map(lang => () => copyJsonFiles(lang)),
     1
   )
 }

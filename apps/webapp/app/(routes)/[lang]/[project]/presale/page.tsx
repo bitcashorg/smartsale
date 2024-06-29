@@ -1,13 +1,12 @@
-import { Project, ProjectWithAuction, getProjectBySlug } from '@/lib/projects'
+import { ProjectWithAuction, getProjectBySlug } from '@/lib/projects'
 import { redirect } from 'next/navigation'
 import { ProjectHeader } from '@/components/routes/project/project-header'
-import { ProjectPresaleCard } from '@/components/routes/project/project-presale-card'
 import { Card, CardContent } from '@/components/ui/card'
 import { Countdown } from '@/components/shared/countdown'
 import { ProjectDataCard } from '@/components/routes/project/project-data-card'
 import { ProjectPresaleData } from '@/components/routes/project/project-presale-data'
 import { PresaleTransactionsCard } from '@/components/routes/project/presale-transactions-card'
-import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
+import { Lang } from '@/dictionaries/locales'
 
 export default async function ProjectPage({ params }: ProjectPageProps) {
   const project = (await getProjectBySlug(
@@ -38,5 +37,5 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 }
 
 type ProjectPageProps = {
-  params: { project: string; lang: SiteLocale }
+  params: { project: string; lang: Lang }
 }

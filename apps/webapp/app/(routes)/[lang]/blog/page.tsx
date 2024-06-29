@@ -4,17 +4,17 @@ import {
   getPageSeoText,
   getRecentArticleSections
 } from '@/services/datocms'
-import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
 import { generateMetadataFromSEO } from '@/lib/seo'
 import { BlogSections } from '@/components/routes/blog/sections'
 import { BlogHero } from '@/components/routes/blog/blog-hero'
 import { notFound } from 'next/navigation'
 import { HeroArticleCard } from '@/components/routes/blog/hero-card'
 import { HeroSubCard } from '@/components/routes/blog/hero-subcard'
+import { Lang } from '@/dictionaries/locales'
 
 export default async function BlogPage({ params }: BlogPageProps) {
   const sections = await getArticleSections(params.lang)
-  const recentsArticles = await getRecentArticleSections(params.lang)
+  const recentsArticles = await getRecentArticleSections()
   const singlePost = recentsArticles[0]
   const subHeroPosts =
     recentsArticles.length > 1
@@ -55,8 +55,7 @@ export default async function BlogPage({ params }: BlogPageProps) {
 export async function generateMetadata({
   params
 }: BlogPageProps): Promise<Metadata> {
-  const locale = params.lang as SiteLocale
-  const pageSeo = await getPageSeoText('home', locale, [locale])
+  const pageSeo = await getPageSeoText('home')
   const seoData = {
     title: pageSeo.pageSeo?.title || '',
     description: pageSeo.pageSeo?.description || '',
@@ -68,4 +67,4 @@ export async function generateMetadata({
   return generateMetadataFromSEO(seoData)
 }
 
-type BlogPageProps = { params: { lang: SiteLocale } }
+type BlogPageProps = { params: { lang: Lang } }
