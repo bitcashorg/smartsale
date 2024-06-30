@@ -97,22 +97,22 @@ export async function getArticleSections(
     {
       name: 'AI',
       slug: 'ai',
-      articles: (aiData?.slice(0, 5) || []) as BlogArticleRecord[]
+      articles: (aiData?.slice(0, 4) || []) as BlogArticleRecord[]
     },
     {
       name: 'AI Research',
       slug: 'ai-research',
-      articles: (aiResearchData?.slice(0, 5) || []) as BlogArticleRecord[]
+      articles: (aiResearchData?.slice(0, 4) || []) as BlogArticleRecord[]
     },
     {
       name: 'News',
       slug: 'news',
-      articles: (newsData?.slice(0, 5) || []) as BlogArticleRecord[]
+      articles: (newsData?.slice(0, 4) || []) as BlogArticleRecord[]
     },
     {
       name: 'Bitcash',
       slug: 'bitcash',
-      articles: (bitcashData?.slice(0, 5) || []) as BlogArticleRecord[]
+      articles: (bitcashData?.slice(0, 4) || []) as BlogArticleRecord[]
     },
     {
       name: 'Startup',
@@ -160,7 +160,7 @@ export async function getRecentArticleSections(): Promise<ArticlesSection[]> {
     aiResearchData
   } = await getBlogData()
 
-  const recentsArticles = [
+  const recentArticles = [
     {
       name: 'Bitcoin',
       slug: 'bitcoin',
@@ -184,7 +184,7 @@ export async function getRecentArticleSections(): Promise<ArticlesSection[]> {
     }
   ]
 
-  return recentsArticles
+  return recentArticles
 }
 
 export async function getBlogCategoryLandingData(lang: Lang, category: string) {
@@ -272,7 +272,6 @@ export async function getBlogArticleData(
   const dirPath = `dictionaries/${lang}/blog/${category}`
   const fileName = `${slug}.json`
   const filePath = path.resolve(dirPath, fileName)
-  // console.log({ dirPath, filePath })
 
   // return cached translations
   try {

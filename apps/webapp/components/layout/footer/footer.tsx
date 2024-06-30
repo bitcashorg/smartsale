@@ -6,7 +6,6 @@ import { getDictionary } from '@/dictionaries'
 import { LearnSection } from '@/components/_wip/learn-section'
 import { WhyChooseUs } from '@/components/routes/home/why-choose-us'
 import { Features } from '@/components/routes/home/features'
-import { Card } from '@/components/ui/card'
 import { appConfig } from '@/lib/config'
 import { Lang } from '@/dictionaries/locales'
 
@@ -17,7 +16,7 @@ const DynamicNewsletter = dynamic(() => import('./newsletter') as any, {
 export default async function Footer({ params }: { params: { lang: Lang } }) {
   const dict = await getDictionary(params.lang)
   return (
-    <footer className="container flex flex-col flex-1 w-full px-4 overflow-hidden">
+    <footer className="container flex w-full flex-1 flex-col overflow-hidden px-4">
       {appConfig.features.sections ? (
         <>
           <LearnSection />
