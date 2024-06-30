@@ -6,21 +6,25 @@ import {
   StructuredText,
   StructuredTextGraphQlResponse
 } from 'react-datocms'
-
 import { cn } from '@/lib/utils'
-import { BlogArticleRecord, CMSLayoutText } from '@/services/datocms'
-
+import { BlogArticleRecord } from '@/services/datocms'
 import Image from 'next/image'
 import { readingTime } from '@/lib/blog'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
-import { ArticleCard } from '../../shared/article-card'
+import { ArticleCard } from '../../../shared/article-card'
 import { Lang } from '@/dictionaries/locales'
+import { ShareArticle } from './share-article'
+import { Suspense } from 'react'
+import { ArticleIndex } from './article-index'
 
-export function BlogPage({ params, blogContent, relatedBlogs }: BlogPageProps) {
+export function BlogPage({
+  params,
+  blogContent,
+  relatedBlogs,
+  shortlink
+}: BlogPageProps) {
   const category = params.category
-  const canonicalUrl =
-    process.env.NEXT_PUBLIC_VERCEL_URL + `/${category}/${params.slug}`
 
   let block
   block = blogContent.contentBlock
@@ -41,10 +45,33 @@ export function BlogPage({ params, blogContent, relatedBlogs }: BlogPageProps) {
   const title =
     blogContent.title ||
     blogContent.slug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase())
-  // End of  Selection
+
+  const headingTexts = block
+    ?.filter(filt => filt !== undefined)
+    .map(item => {
+      const children = (
+        item[0] as unknown as {
+          type: string
+          level: number
+          children: { type: string; marks: string[]; value: string }[]
+        }
+      ).children
+      let sentence = children.map(child => child.value).join(' ')
+      const headingItem = { value: sentence }
+      return {
+        level: item[0].level,
+        text: headingItem.value,
+        anchor: headingItem.value
+          .trim()
+          .toLowerCase()
+          .replace(/ /g, '-')
+          .replace(/[^\w-]+/g, '')
+          .replace(/-$/, '')
+      }
+    })
   return (
-    <main>
-      <article className="mx-auto content-container">
+    <div>
+      <article className="flex-row mx-auto content-container">
         <div className="flex flex-col items-start gap-2 mx-auto">
           <header className="order-3 md:order-1">
             <h1 className="flex justify-center font-bold text-black heading dark:text-white">
@@ -78,14 +105,8 @@ export function BlogPage({ params, blogContent, relatedBlogs }: BlogPageProps) {
             </div>
           </div>
 
-          <main
-            className="relative flex flex-col items-start justify-start order-4 gap-5 mt-5 md:flex-row"
-            id="scroller-wrapper"
-          >
-            <div
-              className="flex flex-col order-2 w-full md:order-1"
-              id="extrat-blog-content"
-            >
+          <main className="relative flex flex-col items-start justify-start order-4 gap-5 mt-5 md:flex-row">
+            <div className="flex flex-col order-2 w-full md:order-1">
               {blogContent?.contentBlock?.map(
                 ({ mainContent, topImages }, ind: number) => {
                   // if (ind >= 2) return null
@@ -180,44 +201,18 @@ export function BlogPage({ params, blogContent, relatedBlogs }: BlogPageProps) {
               )}
             </div>
 
-            {/* <div className="md:w-space-250 top-[120px] order-1 w-full md:sticky md:order-2 md:mt-5"> */}
-            {/* <Navigator articleHeaders={headingTexts} /> */}
+            <div className="top-[120px] order-1 w-full md:sticky md:order-2 md:mt-5 md:w-space-250">
+              <ArticleIndex articleHeaders={headingTexts} />
 
-            {/* <div className="mt-5">
-              <span className="text-black underline font-futura-pt-bold text-b-1-sbold-md dark:text-white">
-                Share this article
-              </span>
-              <div className="flex mt-2 space-x-3">
-                <TelegramShareButton
-                  url={canonicalUrl}
-                  title={blogContent.title}
-                >
-                  <LucideIcons.sendIcon className="transition-all hover:stroke-primary-500 focus:stroke-primary-500" />
-                </TelegramShareButton>
-
-                <TwitterShareButton
-                  url={canonicalUrl}
-                  title={blogContent.title}
-                >
-                  <LucideIcons.twitter className="transition-all hover:stroke-primary-500 focus:stroke-primary-500" />
-                </TwitterShareButton>
-
-                <FacebookShareButton
-                  url={canonicalUrl}
-                  title={blogContent.title}
-                >
-                  <LucideIcons.facebook className="transition-all hover:stroke-primary-500 focus:stroke-primary-500" />
-                </FacebookShareButton>
-
-                <LinkedinShareButton
-                  url={canonicalUrl}
-                  title={blogContent.title}
-                >
-                  <LucideIcons.linkedin className="transition-all hover:stroke-primary-500 focus:stroke-primary-500" />
-                </LinkedinShareButton>
+              <div className="mt-5 text-center">
+                <span className="text-black underline font-futura-pt-bold text-b-1-sbold-md dark:text-white">
+                  Share this article
+                </span>
+                <Suspense fallback={<div>Loading...</div>}>
+                  <ShareArticle url={shortlink} title={title} />
+                </Suspense>
               </div>
-            </div> */}
-            {/* </div> */}
+            </div>
           </main>
         </div>
       </article>
@@ -248,7 +243,7 @@ export function BlogPage({ params, blogContent, relatedBlogs }: BlogPageProps) {
           </ul>
         </section>
       )}
-    </main>
+    </div>
   )
 }
 
@@ -259,6 +254,7 @@ export interface BlogPageProps {
     category: string
     slug: string
   }
+  shortlink: string
   //  searchParams: {},
   blogContent: BlogArticleRecord
   relatedBlogs: BlogArticleRecord[]

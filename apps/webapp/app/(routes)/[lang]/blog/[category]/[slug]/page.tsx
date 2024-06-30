@@ -6,6 +6,7 @@ import { generateMetadataFromSEO } from '@/lib/seo'
 import { BlogPage } from '@/components/routes/blog/article'
 import { getAllArticles } from '@/services/datocms/datocms-all-articles.service'
 import { Lang, locales } from '@/dictionaries/locales'
+import { generateShortLink } from '@/actions'
 
 export default async function ArticlePage(props: ArticlePageProps) {
   const {
@@ -17,17 +18,16 @@ export default async function ArticlePage(props: ArticlePageProps) {
   if (!data) return notFound()
 
   const { blogContent, relatedBlogs } = data
+  const canonicalUrl = `https://bitlauncher.ai/${lang}/${category}/${slug}`
+  const dub = await generateShortLink(canonicalUrl)
 
   return (
-    <section>
-      <main>
-        <BlogPage
-          blogContent={blogContent}
-          params={props.params}
-          relatedBlogs={relatedBlogs}
-        />
-      </main>
-    </section>
+    <BlogPage
+      blogContent={blogContent}
+      params={props.params}
+      relatedBlogs={relatedBlogs}
+      shortlink={dub.data?.shortLink || canonicalUrl}
+    />
   )
 }
 

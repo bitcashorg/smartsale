@@ -3,12 +3,9 @@
 import { useEffect, useRef, useState } from 'react'
 
 import { cn } from '@/lib/utils'
+import { Card } from '@/components/ui/card'
 
-type NavigatorProps = {
-  articleHeaders: { anchor: string; text: string; level: number }[] | undefined
-}
-
-export function Navigator({ articleHeaders }: NavigatorProps) {
+export function ArticleIndex({ articleHeaders }: ArticleIndexProps) {
   const [activeSection, setActiveSection] = useState<any>(null)
   const observer = useRef<IntersectionObserver | null>(null)
 
@@ -49,26 +46,26 @@ export function Navigator({ articleHeaders }: NavigatorProps) {
   }, [articleHeaders])
 
   return (
-    <div className="px-space-10 rounded-md bg-gray-100 py-5 dark:bg-gray-800">
-      <div className="w-full border-b">
-        <span className="text-black dark:text-white">Content:</span>
+    <Card className="p-5">
+      <div className="w-full pb-2 border-b border-muted">
+        <span>Content:</span>
       </div>
 
-      <div className="mt-space-10 flex w-full flex-col space-y-4">
+      <div className="flex flex-col w-full space-y-4 mt-space-10">
         {articleHeaders?.map((header, index) => {
           const HeadingTag = `h${header.level}` as any
           return (
             <HeadingTag
-              className={cn(
-                'font-bold',
-                header.level == 3 ? 'text-h-text ml-3' : 'text-footer-text'
-              )}
+              // className={cn(
+              //   'font-bold',
+              //   header.level == 3 ? 'ml-3 text-h-text' : 'text-footer-text'
+              // )}
               key={index}
             >
               <a
                 href={`#${header.anchor}`}
                 className={cn(
-                  'hover:text-primary-200 focus:text-primary-200 active:text-primary-200 font-semibold transition-all hover:underline focus:underline active:underline',
+                  'transition-all hover:text-primary-200 hover:underline focus:text-primary-200 focus:underline active:text-primary-200 active:underline',
                   activeSection?.anchor === header.anchor
                     ? 'text-primary-200'
                     : ''
@@ -80,6 +77,10 @@ export function Navigator({ articleHeaders }: NavigatorProps) {
           )
         })}
       </div>
-    </div>
+    </Card>
   )
+}
+
+type ArticleIndexProps = {
+  articleHeaders: { anchor: string; text: string; level: number }[] | undefined
 }

@@ -22,21 +22,17 @@ export function BlogSections({
         section =>
           section?.articles?.length > 0 && (
             <section
-              // this is hack be careful when passing className
+              // this is hack be careful when passing className to this component
               className={cn('container mb-10', className)}
               key={section.name}
             >
-              <div className="flex items-center justify-between text-xl mb-space-32">
-                <span className="font-semibold text-black sub-2-lg dark:text-white">
-                  / {section.name}
-                </span>
+              <div className="mb-space-32 flex items-center justify-between text-xl">
+                <span className="sub-2-lg font-semibold">/ {section.name}</span>
                 <Link
                   // TODO: fix add lang prefix on links
                   //       there seems to a bug where it gets ovewritten
                   href={`/blog/${category || section.slug}`}
-                  className={cn(
-                    'flex items-center align-middle text-black focus-within:!text-primary-200 hover:!text-primary-200 dark:text-white'
-                  )}
+                  className={cn('flex items-center align-middle')}
                 >
                   {section.name}
                   <LucideIcons.chevronRight className="h-4 w-7" />
@@ -44,15 +40,17 @@ export function BlogSections({
               </div>
 
               <ul className="grid-cols-auto-dense grid w-full grid-cols-[repeat(auto-fill,minmax(350px,1fr))] flex-col gap-20 py-5 sm:flex-wrap md:gap-5">
-                {section?.articles?.map(post => (
-                  <ArticleCard
-                    post={post}
-                    sectionSlug={category || section.slug}
-                    key={post.id}
-                    lang={lang}
-                    meta={true}
-                  />
-                ))}
+                {section?.articles
+                  ?.slice(0, 4)
+                  ?.map(post => (
+                    <ArticleCard
+                      post={post}
+                      sectionSlug={category || section.slug}
+                      key={post.id}
+                      lang={lang}
+                      meta={true}
+                    />
+                  ))}
               </ul>
             </section>
           )
