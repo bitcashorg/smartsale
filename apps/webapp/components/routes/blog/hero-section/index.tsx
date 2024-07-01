@@ -7,14 +7,14 @@ export function HeroSection({ recent, lang }: HeroSectionProps) {
   const main = recent[0]
   const secondary = recent.slice(1, recent.length)
   return (
-    <section className="container flex w-full justify-between gap-10 lg:flex-row">
+    <section className="container flex justify-between w-full gap-10 mb-10 lg:flex-row">
       <HeroArticleCard
         sectionSlug={main?.slug}
         post={main?.articles[0]}
         selectedTopic={null}
         lang={lang}
       />
-      <ul className="w-1/2 flex-col space-y-10">
+      <ul className="flex-col w-1/2 space-y-10">
         {secondary?.map(
           (post, index) =>
             post.articles.length > 0 && (

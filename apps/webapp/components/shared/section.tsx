@@ -6,11 +6,11 @@ export function Section({ heading, children, subheading }: SectionProps) {
       <h2 className="relative flex justify-center w-full py-0 text-3xl font-bold leading-none text-center">
         {heading}
       </h2>
-      {subheading ? (
+      {/* {subheading ? (
         <p className="mx-auto max-w-[700px] pb-0 pt-3 text-center text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
           {subheading}
         </p>
-      ) : null}
+      ) : null} */}
       <div className="pt-10">{children}</div>
     </section>
   )

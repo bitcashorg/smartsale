@@ -31,7 +31,7 @@ export function HomeHero({
         <div className="absolute top-0 blur-effect-bg" />
       </h2>
       <div
-        className="grid self-center grid-cols-1 gap-6 scroll-m-3 auto-rows-fr lg:grid-cols-3 lg:self-stretch"
+        className="grid self-center grid-cols-1 gap-6 narrow-container scroll-m-3 auto-rows-fr lg:grid-cols-3 lg:self-stretch"
         key="upcoming-auctions-description-container"
       >
         {projects.map((item, index) => (

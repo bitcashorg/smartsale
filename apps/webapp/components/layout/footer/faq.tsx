@@ -15,7 +15,7 @@ export function FAQ({ lang, dict }: FAQProps) {
           {dict.faq.questions.map(
             (item: { question: string; answer: string }, index: number) => (
               <AccordionItem key={index} value={`item-${index}`}>
-                <AccordionTrigger className="flex items-center justify-between w-full px-6 py-4 font-medium text-left transition-color focus:outline-none">
+                <AccordionTrigger className="transition-color flex w-full items-center justify-between px-6 py-4 text-left font-medium focus:outline-none data-[state=open]:bg-card">
                   {item.question}
                 </AccordionTrigger>
                 <AccordionContent className="px-6 py-4">
@@ -30,6 +30,6 @@ export function FAQ({ lang, dict }: FAQProps) {
   )
 }
 
-export interface FAQProps extends LangProp{
+export interface FAQProps extends LangProp {
   dict: any
 }
