@@ -201,7 +201,7 @@ export function BlogPage({
               )}
             </div>
 
-            <div className="top-[120px] order-1 w-full md:sticky md:order-2 md:mt-5 md:w-space-250">
+            <div className="sticky top-[120px] order-1 w-full md:order-2 md:mt-5 md:w-space-250">
               <ArticleIndex articleHeaders={headingTexts} />
 
               <div className="mt-5 text-center">
@@ -218,7 +218,7 @@ export function BlogPage({
       </article>
 
       {relatedBlogs.length > 0 && (
-        <section className="container mb-10">
+        <section className="pt-20 narrow-container">
           <div className="flex items-center justify-between text-xl mb-space-32">
             <span className="font-semibold text-black sub-2-lg dark:text-white">
               /Related stories{' '}
@@ -227,10 +227,9 @@ export function BlogPage({
               <b>See All Stories &gt;</b>
             </Link>
           </div>
-
           <ul className="grid-cols-auto-dense grid w-full grid-cols-[repeat(auto-fill,minmax(250px,1fr))] flex-col gap-20 py-5 sm:flex-wrap md:gap-5">
             {relatedBlogs
-              ?.slice(0, 4)
+              ?.slice(0, 5)
               .map(post => (
                 <ArticleCard
                   post={post}

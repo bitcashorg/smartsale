@@ -18,21 +18,18 @@ export function ProjectHeader({
           alt={project.title}
           className="pointer-events-none absolute inset-0 size-[95vh] object-cover opacity-50"
           src={project.heroImage}
-          layout="fill"
-          objectFit="cover"
-          quality={100}
-          sizes=""
+          fill
           priority
         />
       </div>
       {/* <ProjectDataCard project={project} /> */}
-      <section className="align-center container z-10 flex flex-col items-center pt-10">
-        <h1 className="align-center mx-auto flex flex-col whitespace-pre-line p-10 text-center md:mb-10">
-          <sub className="mb-16 h-8 w-full text-xl font-semibold drop-shadow-md md:mb-0 md:h-10 md:text-2xl">
+      <section className="container z-10 flex flex-col items-center pt-10 align-center">
+        <h1 className="flex flex-col p-10 mx-auto text-center whitespace-pre-line align-center md:mb-10">
+          <sub className="w-full h-8 mb-16 text-xl font-semibold drop-shadow-md md:mb-0 md:h-10 md:text-2xl">
             {project.pitch}
           </sub>
           <span
-            className="leading-16 w-full text-5xl font-normal drop-shadow-md sm:text-6xl md:text-7xl lg:text-8xl"
+            className="w-full text-5xl font-normal leading-16 drop-shadow-md sm:text-6xl md:text-7xl lg:text-8xl"
             key="upcoming-auctions-title"
           >
             {project.title.toUpperCase()}

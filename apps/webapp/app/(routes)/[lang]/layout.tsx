@@ -42,9 +42,7 @@ export default async function RootLayout({
           >
             <Header lang={params.lang} dict={dict} />
             {/* <Toaster /> */}
-            <main className="flex flex-1 flex-col overflow-auto">
-              {children}
-            </main>
+            <main className="flex flex-col flex-1">{children}</main>
             <Footer params={params} />
             <DynamicSessionDialog />
           </Providers>

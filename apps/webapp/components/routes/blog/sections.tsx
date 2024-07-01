@@ -14,7 +14,7 @@ export function BlogSections({
   return (
     <div
       className={cn(
-        'flex w-full flex-col items-center justify-start py-10',
+        'flex w-full flex-col items-center justify-start pt-10',
         className
       )}
     >
@@ -23,11 +23,15 @@ export function BlogSections({
           section?.articles?.length > 0 && (
             <section
               // this is hack be careful when passing className to this component
-              className={cn('container mb-10', className)}
+              className={cn(
+                'container',
+                section !== sections[sections.length - 1] && 'mb-10',
+                className
+              )}
               key={section.name}
             >
-              <div className="mb-space-32 flex items-center justify-between text-xl">
-                <span className="sub-2-lg font-semibold">/ {section.name}</span>
+              <div className="flex items-center justify-between text-xl mb-space-32">
+                <span className="font-semibold sub-2-lg">/ {section.name}</span>
                 <Link
                   // TODO: fix add lang prefix on links
                   //       there seems to a bug where it gets ovewritten
@@ -39,9 +43,9 @@ export function BlogSections({
                 </Link>
               </div>
 
-              <ul className="grid-cols-auto-dense grid w-full grid-cols-[repeat(auto-fill,minmax(350px,1fr))] flex-col gap-20 py-5 sm:flex-wrap md:gap-5">
+              <ul className="grid w-full grid-cols-[repeat(auto-fill,minmax(250px,1fr))] flex-col gap-20 py-5 sm:flex-wrap md:gap-5">
                 {section?.articles
-                  ?.slice(0, 4)
+                  // ?.slice(0, 4)
                   ?.map(post => (
                     <ArticleCard
                       post={post}

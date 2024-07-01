@@ -16,9 +16,9 @@ export const HeroArticleCard = ({
     <div className="w-1/2 list-none">
       <Link
         href={`/blog/${sectionSlug}/${post?.slug}`}
-        className="flex w-full flex-col rounded-md transition-all"
+        className="flex flex-col w-full transition-all rounded-md"
       >
-        <figure className="relative h-space-400 w-full overflow-hidden rounded-md">
+        <figure className="relative w-full overflow-hidden rounded-md h-space-400">
           <Image
             src={post?.thumbnail?.url}
             alt={post.title}
@@ -27,18 +27,18 @@ export const HeroArticleCard = ({
                 ? { loading: 'lazy' }
                 : { priority: true }
               : { priority: true })}
-            className="bg-zoom rounded-md transition-all ease-in"
+            className="object-cover transition-all ease-in rounded-md bg-zoom"
             fill
           />
         </figure>
 
-        <div className="mt-space-20 flex">
+        <div className="flex mt-space-20">
           {/* <p className="text-xl">
             <span className="font-semibold sub-2-lg">/Recents:</span>
           </p> */}
           {/* Meta */}
-          <div className="min-w-40 p-5">
-            <div className="mt-space-10 flex w-auto flex-col space-y-space-6">
+          <div className="p-5 min-w-40">
+            <div className="flex flex-col w-auto mt-space-10 space-y-space-6">
               <p className="font-futura-pt-heavy text-h-text-c font-bolt text-h-text">
                 {post?.authorName}
               </p>
@@ -66,7 +66,7 @@ export const HeroArticleCard = ({
           </div>
 
           {/* Content */}
-          <div className="mt-space-10 flex w-full flex-col space-y-space-10">
+          <div className="flex flex-col w-full mt-space-10 space-y-space-10">
             <h1
               title={post?.title}
               className="truncate_text truncate_text--5-lines font-bolt heading2"
