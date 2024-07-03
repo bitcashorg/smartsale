@@ -24,7 +24,6 @@ export default async function Footer({ params }: { params: { lang: Lang } }) {
       <div className="narrow-container">
         {appConfig.features.sections ? (
           <>
-            <LearnSection />
             <WhyChooseUs lang={params.lang} dict={dict} />
             <Features lang={params.lang} dict={dict} />
           </>
@@ -37,9 +36,17 @@ export default async function Footer({ params }: { params: { lang: Lang } }) {
             <FeatureThree />
           </>
         ) : null}
+        {/* Call to action, how it works sections */}
         <Participate lang={params.lang} dict={dict} />
-        <RecentArticles lang={params.lang} />
+        {appConfig.features.sections ? (
+          <>
+            <LearnSection />
+          </>
+        ) : null}
+
         <FAQ lang={params.lang} dict={dict} />
+        {/* Media and other  */}
+        <RecentArticles lang={params.lang} />
       </div>
       <DynamicNewsletter />
     </footer>

@@ -8,31 +8,31 @@ export const whyChooseUs = {
       icon: 'ShoppingBasket',
       title: 'Batch Auction for Fair Price Discovery',
       description:
-        'Our unique batch auction system ensures fair and transparent price discovery for all participants.'
+        'Bitlauncher aggregates bids over time to ensure equitable token pricing for AI startups and investors.'
     },
     {
       icon: 'Group',
       title: 'DAO Tools for Community-Driven Organization',
       description:
-        'Empower your community with our suite of DAO tools for decentralized decision-making and governance.'
+        'The platform enables decentralized governance, allowing token holders to collectively make decisions.'
     },
     {
       icon: 'Check',
       title: 'Cash-Flow Based Project Evaluation',
       description:
-        'Our innovative cash-flow based project evaluation model helps you make informed investment decisions.'
+        'Bitlauncher rigorously vets AI projects based on financial health and economic viability.'
     },
     {
       icon: 'Flame',
       title: 'Unique Burn & Mint Tokenomics',
       description:
-        'Our custom token model with built-in burn and mint mechanisms ensures sustainable growth and value appreciation.'
+        'The platform adjusts token supply dynamically, rewarding contributors while burning tokens based on transactional volume.'
     },
     {
       icon: 'Globe',
       title: 'AI and Global-First Strategy',
       description:
-        'Leveraging the power of AI and a global-first approach, we deliver unparalleled insights and opportunities.'
+        'Bitlauncher promotes AI utilization and global engagement to accelerate development of universally relevant AI solutions.'
     }
   ]
 }
