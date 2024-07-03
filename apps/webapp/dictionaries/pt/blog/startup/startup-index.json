@@ -1,23 +1,23 @@
 {
   "sections": [
     {
-      "name": "Introdução",
+      "name": "Comecando",
       "slug": "getting started",
       "articles": [
         {
           "id": "165921766",
           "topics": [
-            "Introducao",
+            "Primeiros Passos",
             "Juridico"
           ],
-          "title": "Navegando pelo Cenario Legal: Consideracoes Legais Essenciais para Fundadores de Startups",
+          "title": "Navegando pelo Cenario Juridico: Consideracoes Legais Essenciais para Fundadores de Startups",
           "slug": "navigating-the-legal-landscape-essential-legal-considerations-for-startup-founder",
           "authorName": "Steve Savant",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760845-startupbloggeralt2.png"
           },
           "_publishedAt": "2024-06-20T17:21:44+01:00",
-          "description": "Navegue pelo cenario legal com confianca com nosso guia. Consideracoes legais essenciais para fundadores de startups para proteger e garantir o crescimento do negocio.",
+          "description": "Navegue pelo cenario juridico com confianca usando nosso guia. Consideracoes legais essenciais para fundadores de startups protegerem e garantirem o crescimento do negocio.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687128753-sb8-img2.png"
           },
@@ -38,8 +38,8 @@
         {
           "id": "166795692",
           "topics": [
-            "Introducao",
-            "Negocios & Administracao"
+            "Comecando",
+            "Negocios e Administracao"
           ],
           "title": "Dominando o Fluxo de Caixa: O Guia Definitivo para Fundadores de Startups",
           "slug": "mastering-cash-flow-the-ultimate-guide-for-startup-founders",
@@ -69,17 +69,17 @@
         {
           "id": "166788631",
           "topics": [
-            "Getting Started",
-            "Business & Admin"
+            "Comecando",
+            "Negocios e Administracao"
           ],
-          "title": "Smart Budgeting for Startups: A Step-by-Step Guide to Building a Strong Financial Foundation",
+          "title": "Orcamento Inteligente para Startups: Um Guia Passo a Passo para Construir uma Base Financeira Solida",
           "slug": "smart-budgeting-for-startups-a-step-by-step-guide-to-building-a-strong-financial",
           "authorName": "Bootstrap Briggs",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760071-startupblogger2.png"
           },
           "_publishedAt": "2024-06-20T16:40:00+01:00",
-          "description": "Build a strong financial foundation with our smart budgeting guide for startups. Learn to manage funds effectively for sustainable business growth.",
+          "description": "Construa uma base financeira solida com nosso guia de orcamento inteligente para startups. Aprenda a gerenciar fundos de forma eficaz para um crescimento empresarial sustentavel.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687310597-sb19-img1.png"
           },
@@ -100,17 +100,17 @@
         {
           "id": "165816954",
           "topics": [
-            "Getting Started",
-            "Teams & HR"
+            "Comecando",
+            "Equipes e RH"
           ],
-          "title": "Building a Dream Team: The Ultimate Guide to Assembling Your Startup Squad",
+          "title": "Construindo um Time dos Sonhos: O Guia Definitivo para Montar sua Equipe de Startup",
           "slug": "building-a-dream-team-the-ultimate-guide-to-assembling-your-startup-squad",
           "authorName": "Bootstrap Briggs",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760071-startupblogger2.png"
           },
           "_publishedAt": "2024-06-19T03:48:19+01:00",
-          "description": "Form your ideal startup team with our comprehensive guide. Boost team efficiency and startup growth with our expert advice.",
+          "description": "Forme sua equipe ideal de startup com nosso guia abrangente. Aumente a eficiencia da equipe e o crescimento da startup com nossos conselhos especializados.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687119615-sb5-img1.png"
           },
@@ -131,17 +131,17 @@
         {
           "id": "166322203",
           "topics": [
-            "Getting Started",
-            "Sales & Marketing"
+            "Primeiros Passos",
+            "Vendas e Marketing"
           ],
-          "title": "The Blueprint to Success: A Guide to Crafting a Winning Sales Plan for Your Startup",
+          "title": "O Plano para o Sucesso: Um Guia para Elaborar um Plano de Vendas Vencedor para sua Startup",
           "slug": "the-blueprint-to-success-a-guide-to-crafting-a-winning-sales-plan-for-your-startu",
           "authorName": "Steve Savant",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760845-startupbloggeralt2.png"
           },
           "_publishedAt": "2023-10-05T02:08:22+01:00",
-          "description": "Craft a winning sales plan for your startup with our blueprint to success. Gain insights into driving revenue and achieving sustainable growth.",
+          "description": "Elabore um plano de vendas vencedor para sua startup com nosso plano para o sucesso. Obtenha insights para impulsionar a receita e alcançar crescimento sustentavel.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687212250-sb16-img1.png"
           },
@@ -162,17 +162,17 @@
         {
           "id": "166788522",
           "topics": [
-            "Getting Started",
-            "Business & Admin"
+            "Comecando",
+            "Negocios e Administracao"
           ],
-          "title": "Projecting Prosperity: A Guide to Setting Realistic Financial Projections for Your Startup",
+          "title": "Projetando Prosperidade: Um Guia para Definir Projecoes Financeiras Realistas para sua Startup",
           "slug": "projecting-prosperity-a-guide-to-setting-realistic-financial-projections-for-your",
           "authorName": "Bootstrap Briggs",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760071-startupblogger2.png"
           },
           "_publishedAt": "2023-10-05T02:07:18+01:00",
-          "description": "Set realistic financial projections with our startup guide. Learn to project prosperity, manage finances, and secure the future of your business.",
+          "description": "Defina projecoes financeiras realistas com nosso guia para startups. Aprenda a projetar prosperidade, gerenciar financas e garantir o futuro do seu negocio.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687308062-sb18-img1.png"
           },
@@ -193,17 +193,17 @@
         {
           "id": "166788454",
           "topics": [
-            "Getting Started",
-            "Sales & Marketing"
+            "Comecando",
+            "Vendas e Marketing"
           ],
-          "title": "The Ultimate Guide to Mastering Customer Acquisition Costs for Startups",
+          "title": "O Guia Definitivo para Dominar os Custos de Aquisicao de Clientes para Startups",
           "slug": "the-ultimate-guide-to-mastering-customer-acquisition-costs-for-startups",
           "authorName": "Bootstrap Briggs",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760071-startupblogger2.png"
           },
           "_publishedAt": "2023-10-05T02:06:22+01:00",
-          "description": "Master customer acquisition costs with our ultimate guide. Learn to optimize spending, attract customers and maximize your startup's profitability.",
+          "description": "Domine os custos de aquisicao de clientes com nosso guia definitivo. Aprenda a otimizar gastos, atrair clientes e maximizar a lucratividade da sua startup.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687305683-sb17-img1.png"
           },
@@ -224,17 +224,17 @@
         {
           "id": "166286175",
           "topics": [
-            "Getting Started",
-            "Sales & Marketing"
+            "Primeiros Passos",
+            "Vendas e Marketing"
           ],
-          "title": "Maximizing Your Marketing Reach: A Guide to Utilizing Social Media for Startups",
+          "title": "Maximizando Seu Alcance de Marketing: Um Guia para Utilizar as Redes Sociais para Startups",
           "slug": "maximizing-your-marketing-reach-a-guide-to-utilizing-social-media-for-startups",
           "authorName": "Steve Savant",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760845-startupbloggeralt2.png"
           },
           "_publishedAt": "2023-10-05T02:05:42+01:00",
-          "description": "Maximize your marketing reach with our guide on social media for startups. Learn to engage audiences and leverage platforms for business growth.",
+          "description": "Maximize seu alcance de marketing com nosso guia sobre redes sociais para startups. Aprenda a envolver o publico e aproveitar as plataformas para o crescimento do negocio.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687209924-sb15-img2.png"
           },
@@ -255,17 +255,17 @@
         {
           "id": "166286117",
           "topics": [
-            "Getting Started",
-            "Sales & Marketing"
+            "Primeiros Passos",
+            "Vendas e Marketing"
           ],
-          "title": "Branding Your Way to Success: A Guide for Start-Up Founders",
+          "title": "Construindo sua Marca para o Sucesso: Um Guia para Fundadores de Startups",
           "slug": "branding-your-way-to-success-a-guide-for-start-up-founders",
           "authorName": "Steve Savant",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760845-startupbloggeralt2.png"
           },
           "_publishedAt": "2023-10-05T02:04:38+01:00",
-          "description": "Brand your way to success with our startup guide. Learn how effective branding strategies can enhance recognition and drive your business growth.",
+          "description": "Construa sua marca rumo ao sucesso com nosso guia para startups. Aprenda como estrategias eficazes de branding podem aumentar o reconhecimento e impulsionar o crescimento do seu negocio.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687208232-sb14-img0.png"
           },
@@ -286,17 +286,17 @@
         {
           "id": "166277989",
           "topics": [
-            "Getting Started",
-            "Sales & Marketing"
+            "Primeiros Passos",
+            "Vendas e Marketing"
           ],
-          "title": "Unleashing the Power of Marketing: A Comprehensive Guide for Startup Founders",
+          "title": "Liberando o Poder do Marketing: Um Guia Abrangente para Fundadores de Startups",
           "slug": "unleashing-the-power-of-marketing-a-comprehensive-guide-for-startup-founders",
           "authorName": "Steve Savant",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760845-startupbloggeralt2.png"
           },
           "_publishedAt": "2023-10-05T02:03:38+01:00",
-          "description": "Unleash your startup's marketing potential with our comprehensive guide. Learn strategies to engage your audience and drive business growth.",
+          "description": "Libere o potencial de marketing da sua startup com nosso guia abrangente. Aprenda estrategias para envolver seu publico e impulsionar o crescimento do negocio.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687204747-sb13-img1.png"
           },
@@ -317,17 +317,17 @@
         {
           "id": "166263351",
           "topics": [
-            "Getting Started",
-            "Business & Admin"
+            "Comecando",
+            "Negocios e Administracao"
           ],
-          "title": "Discover Your Edge: Crafting a Compelling Unique Value Proposition",
+          "title": "Descubra Seu Diferencial: Criando uma Proposta de Valor Unica Convincente",
           "slug": "discover-your-edge-crafting-a-compelling-unique-value-proposition",
           "authorName": "Steve Savant",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760845-startupbloggeralt2.png"
           },
           "_publishedAt": "2023-10-05T02:02:11+01:00",
-          "description": "Craft a compelling Unique Value Proposition with our guide. Discover your edge to stand out in the market and accelerate your startup's growth.",
+          "description": "Crie uma Proposta de Valor Unica convincente com nosso guia. Descubra seu diferencial para se destacar no mercado e acelerar o crescimento da sua startup.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687202780-sb12-img1.png"
           },
@@ -348,16 +348,16 @@
         {
           "id": "166263240",
           "topics": [
-            "Getting Started"
+            "Comecando"
           ],
-          "title": "Jumpstarting Your Startup: The Ultimate Guide to Building a Minimal Viable Product",
+          "title": "Iniciando Sua Startup: O Guia Definitivo para Criar um Produto Minimo Viavel",
           "slug": "jumpstarting-your-startup-the-ultimate-guide-to-building-a-minimal-viable-product",
           "authorName": "Bootstrap Briggs",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760071-startupblogger2.png"
           },
           "_publishedAt": "2023-10-05T02:00:20+01:00",
-          "description": "Jumpstart your startup with our guide on building a minimal viable product. Essential steps to validate your idea and achieve early market traction.",
+          "description": "Inicie sua startup com nosso guia sobre como criar um produto minimo viavel. Passos essenciais para validar sua ideia e alcancar tracao inicial no mercado.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687200682-sb11-img12.png"
           },
@@ -378,17 +378,17 @@
         {
           "id": "165927224",
           "topics": [
-            "Getting Started",
-            "Legal"
+            "Comecando",
+            "Juridico"
           ],
-          "title": " Decoding the Business Structure Maze: A Guide for Start-Up Founders",
+          "title": "Decifrando o Labirinto da Estrutura Empresarial: Um Guia para Fundadores de Startups",
           "slug": "decoding-the-business-structure-maze-a-guide-for-start-up-founders",
           "authorName": "Steve Savant",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760845-startupbloggeralt2.png"
           },
           "_publishedAt": "2023-10-05T01:59:45+01:00",
-          "description": "Decipher the business structure maze with our guide. Vital insights for startup founders to establish a solid and sustainable business framework.",
+          "description": "Decifre o labirinto da estrutura empresarial com nosso guia. Insights vitais para fundadores de startups estabelecerem uma estrutura de negocios solida e sustentavel.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687132710-sb10-img1.png"
           },
@@ -409,17 +409,17 @@
         {
           "id": "165921857",
           "topics": [
-            "Getting Started",
-            "Legal"
+            "Primeiros Passos",
+            "Juridico"
           ],
-          "title": "Safeguarding Your Startup's Crown Jewels: A Guide to Protecting Your Intellectual Property",
+          "title": "Protegendo as Joias da Coroa da Sua Startup: Um Guia para Proteger Sua Propriedade Intelectual",
           "slug": "safeguarding-your-startup-s-crown-jewels-a-guide-to-protecting-your-intellectual",
           "authorName": "Steve Savant",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760845-startupbloggeralt2.png"
           },
           "_publishedAt": "2023-10-05T01:58:48+01:00",
-          "description": "Learn to protect your startup's most valuable assets with our intellectual property guide. Essential strategies for safeguarding your business future.",
+          "description": "Aprenda a proteger os ativos mais valiosos da sua startup com nosso guia de propriedade intelectual. Estrategias essenciais para salvaguardar o futuro do seu negocio.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687130315-sb9-img1.png"
           },
@@ -440,17 +440,17 @@
         {
           "id": "165817305",
           "topics": [
-            "Getting Started",
-            "Fundraising"
+            "Primeiros Passos",
+            "Captacao de Recursos"
           ],
-          "title": "Unlocking the Secrets of Successful Startup Fundraising: A Comprehensive Guide",
+          "title": "Desvendando os Segredos de uma Captacao de Recursos Bem-Sucedida para Startups: Um Guia Completo",
           "slug": "unlocking-the-secrets-of-successful-startup-fundraising-a-comprehensive-guide",
           "authorName": "Steve Savant",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760845-startupbloggeralt2.png"
           },
           "_publishedAt": "2023-10-05T01:57:06+01:00",
-          "description": "Discover the secrets of successful startup fundraising in our comprehensive guide. Learn to attract investors and secure the funding your venture needs.",
+          "description": "Descubra os segredos de uma captacao de recursos bem-sucedida para startups em nosso guia completo. Aprenda a atrair investidores e garantir o financiamento que seu empreendimento precisa.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687124658-sb7-img1.png"
           },
@@ -471,17 +471,17 @@
         {
           "id": "165812094",
           "topics": [
-            "Getting Started",
-            "Sales & Marketing"
+            "Primeiros Passos",
+            "Vendas e Marketing"
           ],
-          "title": "Unleashing the Power of Your Target Market: A Comprehensive Guide for Startup Founders",
+          "title": "Liberando o Poder do Seu Mercado-Alvo: Um Guia Abrangente para Fundadores de Startups",
           "slug": "unleashing-the-power-of-your-target-market-a-comprehensive-guide-for-startup-foun",
           "authorName": "Steve Savant",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760845-startupbloggeralt2.png"
           },
           "_publishedAt": "2023-10-05T01:56:10+01:00",
-          "description": "Unlock startup success with our guide: Understand, engage, and maximize your target market's potential. Boost growth with strategic insights.",
+          "description": "Desbloqueie o sucesso da sua startup com nosso guia: Entenda, envolva e maximize o potencial do seu mercado-alvo. Impulsione o crescimento com insights estrategicos.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687109735-sb1-img0.png"
           },
@@ -502,16 +502,16 @@
         {
           "id": "165813334",
           "topics": [
-            "Getting Started"
+            "Comecando"
           ],
-          "title": "The Ultimate Guide to Validating Your Startup Idea: From MVP to Scaling with Confidence",
+          "title": "O Guia Definitivo para Validar sua Ideia de Startup: Do MVP ao Crescimento com Confianca",
           "slug": "the-ultimate-guide-to-validating-your-startup-idea-from-mvp-to-scaling-with-confi",
           "authorName": "Steve Savant",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760845-startupbloggeralt2.png"
           },
           "_publishedAt": "2023-10-05T01:54:33+01:00",
-          "description": "Get your startup off the ground: Learn to validate your idea, build an MVP, and scale confidently with our comprehensive guide.",
+          "description": "Coloque sua startup em acao: Aprenda a validar sua ideia, construir um MVP e crescer com confianca com nosso guia abrangente.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687112539-sb2-img1.png"
           },
@@ -532,16 +532,16 @@
         {
           "id": "165817167",
           "topics": [
-            "Getting Started"
+            "Primeiros Passos"
           ],
-          "title": "Maximizing Your Network: The Key to Unlocking Business Opportunities",
+          "title": "Maximizando Sua Rede: A Chave para Desbloquear Oportunidades de Negocios",
           "slug": "maximizing-your-network-the-key-to-unlocking-business-opportunities",
           "authorName": "Bootstrap Briggs",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760071-startupblogger2.png"
           },
           "_publishedAt": "2023-10-05T01:53:17+01:00",
-          "description": "Unlock business opportunities by maximizing your network. Boost connections with our strategic networking guide",
+          "description": "Desbloqueie oportunidades de negocios maximizando sua rede. Aumente conexoes com nosso guia estrategico de networking",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687123001-sb6-img1.png"
           },
@@ -562,17 +562,17 @@
         {
           "id": "165815183",
           "topics": [
-            "Getting Started",
-            "Sales & Marketing"
+            "Primeiros Passos",
+            "Vendas e Marketing"
           ],
-          "title": "The Power of Market Research: A Guide for Startup Founders",
+          "title": "O Poder da Pesquisa de Mercado: Um Guia para Fundadores de Startups",
           "slug": "the-power-of-market-research-a-guide-for-startup-founders",
           "authorName": "Steve Savant",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760845-startupbloggeralt2.png"
           },
           "_publishedAt": "2023-10-05T01:52:41+01:00",
-          "description": "Discover the power of market research in our startup guide. Uncover insights, make informed decisions, and drive your business forward",
+          "description": "Descubra o poder da pesquisa de mercado em nosso guia para startups. Obtenha insights, tome decisoes informadas e impulsione seu negocio",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687114662-sb3-img1edited.png"
           },
@@ -593,16 +593,16 @@
         {
           "id": "165816931",
           "topics": [
-            "Getting Started"
+            "Comecando"
           ],
-          "title": "The Ultimate Guide to Crafting a Winning Business Plan for Your Startup",
+          "title": "O Guia Definitivo para Elaborar um Plano de Negocios Vencedor para sua Startup",
           "slug": "the-ultimate-guide-to-crafting-a-winning-business-plan-for-your-startup",
           "authorName": "Bootstrap Briggs",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760071-startupblogger2.png"
           },
           "_publishedAt": "2023-10-05T01:49:20+01:00",
-          "description": "Create a successful startup business plan with our ultimate guide. Boost your plan's effectiveness through strategic insights.",
+          "description": "Crie um plano de negocios de startup bem-sucedido com nosso guia definitivo. Aumente a eficacia do seu plano por meio de insights estrategicos.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687116714-cb4-img1edited.png"
           },
@@ -623,23 +623,23 @@
       ]
     },
     {
-      "name": "Jurídico",
+      "name": "Juridico",
       "slug": "legal",
       "articles": [
         {
           "id": "165921766",
           "topics": [
-            "Introducao",
+            "Primeiros Passos",
             "Juridico"
           ],
-          "title": "Navegando pelo Cenario Legal: Consideracoes Legais Essenciais para Fundadores de Startups",
+          "title": "Navegando pelo Cenario Juridico: Consideracoes Legais Essenciais para Fundadores de Startups",
           "slug": "navigating-the-legal-landscape-essential-legal-considerations-for-startup-founder",
           "authorName": "Steve Savant",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760845-startupbloggeralt2.png"
           },
           "_publishedAt": "2024-06-20T17:21:44+01:00",
-          "description": "Navegue pelo cenario legal com confianca com nosso guia. Consideracoes legais essenciais para fundadores de startups para proteger e garantir o crescimento do negocio.",
+          "description": "Navegue pelo cenario juridico com confianca usando nosso guia. Consideracoes legais essenciais para fundadores de startups protegerem e garantirem o crescimento do negocio.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687128753-sb8-img2.png"
           },
@@ -660,17 +660,17 @@
         {
           "id": "165927224",
           "topics": [
-            "Introdução",
-            "Jurídico"
+            "Comecando",
+            "Juridico"
           ],
-          "title": "Decodificando o Labirinto das Estruturas Empresariais: Um Guia para Fundadores de Startups",
+          "title": "Decifrando o Labirinto da Estrutura Empresarial: Um Guia para Fundadores de Startups",
           "slug": "decoding-the-business-structure-maze-a-guide-for-start-up-founders",
           "authorName": "Steve Savant",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760845-startupbloggeralt2.png"
           },
           "_publishedAt": "2023-10-05T01:59:45+01:00",
-          "description": "Decifre o labirinto das estruturas empresariais com nosso guia. Insights vitais para fundadores de startups estabelecerem uma estrutura de negócios sólida e sustentável.",
+          "description": "Decifre o labirinto da estrutura empresarial com nosso guia. Insights vitais para fundadores de startups estabelecerem uma estrutura de negocios solida e sustentavel.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687132710-sb10-img1.png"
           },
@@ -691,8 +691,8 @@
         {
           "id": "165921857",
           "topics": [
-            "Introdução",
-            "Jurídico"
+            "Primeiros Passos",
+            "Juridico"
           ],
           "title": "Protegendo as Joias da Coroa da Sua Startup: Um Guia para Proteger Sua Propriedade Intelectual",
           "slug": "safeguarding-your-startup-s-crown-jewels-a-guide-to-protecting-your-intellectual",
@@ -701,7 +701,7 @@
             "url": "https://www.datocms-assets.com/101962/1694760845-startupbloggeralt2.png"
           },
           "_publishedAt": "2023-10-05T01:58:48+01:00",
-          "description": "Aprenda a proteger os ativos mais valiosos da sua startup com nosso guia de propriedade intelectual. Estratégias essenciais para salvaguardar o futuro do seu negócio.",
+          "description": "Aprenda a proteger os ativos mais valiosos da sua startup com nosso guia de propriedade intelectual. Estrategias essenciais para salvaguardar o futuro do seu negocio.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687130315-sb9-img1.png"
           },
@@ -722,14 +722,14 @@
       ]
     },
     {
-      "name": "Negócios & Administração",
+      "name": "Negocios e Administracao",
       "slug": "business & admin",
       "articles": [
         {
           "id": "166795692",
           "topics": [
-            "Introducao",
-            "Negocios & Administracao"
+            "Comecando",
+            "Negocios e Administracao"
           ],
           "title": "Dominando o Fluxo de Caixa: O Guia Definitivo para Fundadores de Startups",
           "slug": "mastering-cash-flow-the-ultimate-guide-for-startup-founders",
@@ -759,17 +759,17 @@
         {
           "id": "166788631",
           "topics": [
-            "Introdução",
-            "Negócios e Administração"
+            "Primeiros Passos",
+            "Negocios e Administracao"
           ],
-          "title": "Orçamento Inteligente para Startups: Um Guia Passo a Passo para Construir uma Base Financeira Sólida",
+          "title": "Orcamento Inteligente para Startups: Um Guia Passo a Passo para Construir uma Base Financeira Solida",
           "slug": "smart-budgeting-for-startups-a-step-by-step-guide-to-building-a-strong-financial",
           "authorName": "Bootstrap Briggs",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760071-startupblogger2.png"
           },
           "_publishedAt": "2024-06-20T16:40:00+01:00",
-          "description": "Construa uma base financeira sólida com nosso guia de orçamento inteligente para startups. Aprenda a gerenciar fundos efetivamente para o crescimento sustentável do negócio.",
+          "description": "Construa uma base financeira solida com nosso guia de orcamento inteligente para startups. Aprenda a gerenciar fundos de forma eficaz para um crescimento empresarial sustentavel.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687310597-sb19-img1.png"
           },
@@ -790,17 +790,17 @@
         {
           "id": "166788522",
           "topics": [
-            "Introdução",
-            "Negócios & Administração"
+            "Comecando",
+            "Negocios e Administracao"
           ],
-          "title": "Projetando Prosperidade: Um Guia para Definir Projeções Financeiras Realistas para Sua Startup",
+          "title": "Projetando Prosperidade: Um Guia para Definir Projecoes Financeiras Realistas para sua Startup",
           "slug": "projecting-prosperity-a-guide-to-setting-realistic-financial-projections-for-your",
           "authorName": "Bootstrap Briggs",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760071-startupblogger2.png"
           },
           "_publishedAt": "2023-10-05T02:07:18+01:00",
-          "description": "Defina projeções financeiras realistas com nosso guia para startups. Aprenda a projetar prosperidade, gerenciar finanças e garantir o futuro do seu negócio.",
+          "description": "Defina projecoes financeiras realistas com nosso guia para startups. Aprenda a projetar prosperidade, gerenciar financas e garantir o futuro do seu negocio.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687308062-sb18-img1.png"
           },
@@ -821,17 +821,17 @@
         {
           "id": "166263351",
           "topics": [
-            "Getting Started",
-            "Business & Admin"
+            "Comecando",
+            "Negocios e Administracao"
           ],
-          "title": "Discover Your Edge: Crafting a Compelling Unique Value Proposition",
+          "title": "Descubra Seu Diferencial: Criando uma Proposta de Valor Unica Convincente",
           "slug": "discover-your-edge-crafting-a-compelling-unique-value-proposition",
           "authorName": "Steve Savant",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760845-startupbloggeralt2.png"
           },
           "_publishedAt": "2023-10-05T02:02:11+01:00",
-          "description": "Craft a compelling Unique Value Proposition with our guide. Discover your edge to stand out in the market and accelerate your startup's growth.",
+          "description": "Crie uma Proposta de Valor Unica convincente com nosso guia. Descubra seu diferencial para se destacar no mercado e acelerar o crescimento da sua startup.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687202780-sb12-img1.png"
           },
@@ -852,23 +852,23 @@
       ]
     },
     {
-      "name": "Equipes & RH",
+      "name": "Equipes e RH",
       "slug": "teams & hr",
       "articles": [
         {
           "id": "165816954",
           "topics": [
-            "Introducao",
+            "Comecando",
             "Equipes e RH"
           ],
-          "title": "Construindo uma Equipe dos Sonhos: O Guia Definitivo para Montar seu Esquadrao de Startup",
+          "title": "Construindo um Time dos Sonhos: O Guia Definitivo para Montar sua Equipe de Startup",
           "slug": "building-a-dream-team-the-ultimate-guide-to-assembling-your-startup-squad",
           "authorName": "Bootstrap Briggs",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760071-startupblogger2.png"
           },
           "_publishedAt": "2024-06-19T03:48:19+01:00",
-          "description": "Forme sua equipe ideal de startup com nosso guia completo. Aumente a eficiencia da equipe e o crescimento da startup com nossos conselhos especializados.",
+          "description": "Forme sua equipe ideal de startup com nosso guia abrangente. Aumente a eficiencia da equipe e o crescimento da startup com nossos conselhos especializados.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687119615-sb5-img1.png"
           },
@@ -889,23 +889,23 @@
       ]
     },
     {
-      "name": "Vendas & Marketing",
+      "name": "Vendas e Marketing",
       "slug": "sales & marketing",
       "articles": [
         {
           "id": "166322203",
           "topics": [
-            "Introdução",
-            "Vendas & Marketing"
+            "Primeiros Passos",
+            "Vendas e Marketing"
           ],
-          "title": "O Roteiro para o Sucesso: Um Guia para Criar um Plano de Vendas Vencedor para Sua Startup",
+          "title": "O Plano para o Sucesso: Um Guia para Elaborar um Plano de Vendas Vencedor para sua Startup",
           "slug": "the-blueprint-to-success-a-guide-to-crafting-a-winning-sales-plan-for-your-startu",
           "authorName": "Steve Savant",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760845-startupbloggeralt2.png"
           },
           "_publishedAt": "2023-10-05T02:08:22+01:00",
-          "description": "Crie um plano de vendas vencedor para sua startup com nosso roteiro para o sucesso. Obtenha insights sobre como gerar receita e alcançar crescimento sustentável.",
+          "description": "Elabore um plano de vendas vencedor para sua startup com nosso plano para o sucesso. Obtenha insights para impulsionar a receita e alcançar crescimento sustentavel.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687212250-sb16-img1.png"
           },
@@ -926,17 +926,17 @@
         {
           "id": "166788454",
           "topics": [
-            "Introdução",
+            "Comecando",
             "Vendas e Marketing"
           ],
-          "title": "O Guia Definitivo para Dominar os Custos de Aquisição de Clientes para Startups",
+          "title": "O Guia Definitivo para Dominar os Custos de Aquisicao de Clientes para Startups",
           "slug": "the-ultimate-guide-to-mastering-customer-acquisition-costs-for-startups",
           "authorName": "Bootstrap Briggs",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760071-startupblogger2.png"
           },
           "_publishedAt": "2023-10-05T02:06:22+01:00",
-          "description": "Domine os custos de aquisição de clientes com nosso guia definitivo. Aprenda a otimizar gastos, atrair clientes e maximizar a rentabilidade da sua startup.",
+          "description": "Domine os custos de aquisicao de clientes com nosso guia definitivo. Aprenda a otimizar gastos, atrair clientes e maximizar a lucratividade da sua startup.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687305683-sb17-img1.png"
           },
@@ -957,17 +957,17 @@
         {
           "id": "166286175",
           "topics": [
-            "Introdução",
+            "Primeiros Passos",
             "Vendas e Marketing"
           ],
-          "title": "Maximizando seu Alcance de Marketing: Um Guia para Utilizar Mídias Sociais para Startups",
+          "title": "Maximizando Seu Alcance de Marketing: Um Guia para Utilizar as Redes Sociais para Startups",
           "slug": "maximizing-your-marketing-reach-a-guide-to-utilizing-social-media-for-startups",
           "authorName": "Steve Savant",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760845-startupbloggeralt2.png"
           },
           "_publishedAt": "2023-10-05T02:05:42+01:00",
-          "description": "Maximize seu alcance de marketing com nosso guia sobre mídias sociais para startups. Aprenda a envolver o público e alavancar plataformas para o crescimento do negócio.",
+          "description": "Maximize seu alcance de marketing com nosso guia sobre redes sociais para startups. Aprenda a envolver o publico e aproveitar as plataformas para o crescimento do negocio.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687209924-sb15-img2.png"
           },
@@ -988,17 +988,17 @@
         {
           "id": "166286117",
           "topics": [
-            "Getting Started",
-            "Sales & Marketing"
+            "Primeiros Passos",
+            "Vendas e Marketing"
           ],
-          "title": "Branding Your Way to Success: A Guide for Start-Up Founders",
+          "title": "Construindo sua Marca para o Sucesso: Um Guia para Fundadores de Startups",
           "slug": "branding-your-way-to-success-a-guide-for-start-up-founders",
           "authorName": "Steve Savant",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760845-startupbloggeralt2.png"
           },
           "_publishedAt": "2023-10-05T02:04:38+01:00",
-          "description": "Brand your way to success with our startup guide. Learn how effective branding strategies can enhance recognition and drive your business growth.",
+          "description": "Construa sua marca rumo ao sucesso com nosso guia para startups. Aprenda como estrategias eficazes de branding podem aumentar o reconhecimento e impulsionar o crescimento do seu negocio.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687208232-sb14-img0.png"
           },
@@ -1019,17 +1019,17 @@
         {
           "id": "166277989",
           "topics": [
-            "Getting Started",
-            "Sales & Marketing"
+            "Primeiros Passos",
+            "Vendas e Marketing"
           ],
-          "title": "Unleashing the Power of Marketing: A Comprehensive Guide for Startup Founders",
+          "title": "Liberando o Poder do Marketing: Um Guia Abrangente para Fundadores de Startups",
           "slug": "unleashing-the-power-of-marketing-a-comprehensive-guide-for-startup-founders",
           "authorName": "Steve Savant",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760845-startupbloggeralt2.png"
           },
           "_publishedAt": "2023-10-05T02:03:38+01:00",
-          "description": "Unleash your startup's marketing potential with our comprehensive guide. Learn strategies to engage your audience and drive business growth.",
+          "description": "Libere o potencial de marketing da sua startup com nosso guia abrangente. Aprenda estrategias para envolver seu publico e impulsionar o crescimento do negocio.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687204747-sb13-img1.png"
           },
@@ -1050,17 +1050,17 @@
         {
           "id": "165812094",
           "topics": [
-            "Getting Started",
-            "Sales & Marketing"
+            "Primeiros Passos",
+            "Vendas e Marketing"
           ],
-          "title": "Unleashing the Power of Your Target Market: A Comprehensive Guide for Startup Founders",
+          "title": "Liberando o Poder do Seu Mercado-Alvo: Um Guia Abrangente para Fundadores de Startups",
           "slug": "unleashing-the-power-of-your-target-market-a-comprehensive-guide-for-startup-foun",
           "authorName": "Steve Savant",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760845-startupbloggeralt2.png"
           },
           "_publishedAt": "2023-10-05T01:56:10+01:00",
-          "description": "Unlock startup success with our guide: Understand, engage, and maximize your target market's potential. Boost growth with strategic insights.",
+          "description": "Desbloqueie o sucesso da sua startup com nosso guia: Entenda, envolva e maximize o potencial do seu mercado-alvo. Impulsione o crescimento com insights estrategicos.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687109735-sb1-img0.png"
           },
@@ -1081,17 +1081,17 @@
         {
           "id": "165815183",
           "topics": [
-            "Getting Started",
-            "Sales & Marketing"
+            "Primeiros Passos",
+            "Vendas e Marketing"
           ],
-          "title": "The Power of Market Research: A Guide for Startup Founders",
+          "title": "O Poder da Pesquisa de Mercado: Um Guia para Fundadores de Startups",
           "slug": "the-power-of-market-research-a-guide-for-startup-founders",
           "authorName": "Steve Savant",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760845-startupbloggeralt2.png"
           },
           "_publishedAt": "2023-10-05T01:52:41+01:00",
-          "description": "Discover the power of market research in our startup guide. Uncover insights, make informed decisions, and drive your business forward",
+          "description": "Descubra o poder da pesquisa de mercado em nosso guia para startups. Obtenha insights, tome decisoes informadas e impulsione seu negocio",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687114662-sb3-img1edited.png"
           },
@@ -1112,23 +1112,23 @@
       ]
     },
     {
-      "name": "Captação de Recursos",
+      "name": "Captacao de Recursos",
       "slug": "fundraising",
       "articles": [
         {
           "id": "165817305",
           "topics": [
-            "Introdução",
-            "Captação de Recursos"
+            "Primeiros Passos",
+            "Captacao de Recursos"
           ],
-          "title": "Desvendando os Segredos da Captação de Recursos para Startups de Sucesso: Um Guia Completo",
+          "title": "Desvendando os Segredos de uma Captacao de Recursos Bem-Sucedida para Startups: Um Guia Completo",
           "slug": "unlocking-the-secrets-of-successful-startup-fundraising-a-comprehensive-guide",
           "authorName": "Steve Savant",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694760845-startupbloggeralt2.png"
           },
           "_publishedAt": "2023-10-05T01:57:06+01:00",
-          "description": "Descubra os segredos da captação de recursos bem-sucedida para startups em nosso guia completo. Aprenda a atrair investidores e garantir o financiamento que seu empreendimento precisa.",
+          "description": "Descubra os segredos de uma captacao de recursos bem-sucedida para startups em nosso guia completo. Aprenda a atrair investidores e garantir o financiamento que seu empreendimento precisa.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1687124658-sb7-img1.png"
           },
@@ -1156,7 +1156,7 @@
       "title": "Startups | Bitcash Blog",
       "twitterCard": "summary_large_image"
     },
-    "description": "Sonhe. Construa. Amplie.",
+    "description": "Sonhe. Construa. Escale.",
     "title": "Startups",
     "seoType": "startup",
     "id": "178642409",

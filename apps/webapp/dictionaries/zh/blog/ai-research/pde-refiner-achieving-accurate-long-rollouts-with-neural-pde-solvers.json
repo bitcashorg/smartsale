@@ -3,233 +3,233 @@
     {
       "id": "198277124",
       "topics": [
-        "大语言模型",
+        "大型语言模型",
         "金融",
         "医疗",
         "法律",
-        "提示"
+        "提示工程"
       ],
-      "title": "通过阅读理解适应大规模语言模型",
+      "title": "通过阅读理解适应大型语言模型",
       "slug": "adapting-large-language-models-via-reading-comprehension",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
       },
       "_publishedAt": "2024-05-27T03:34:22+01:00",
-      "description": "摘要评论与评级",
+      "description": "摘要评论与评分",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
       },
       "seo": {
-        "title": "通过阅读理解适应大规模语言模型",
-        "description": "摘要评论与评级\n"
+        "title": "通过阅读理解适应大型语言模型",
+        "description": "摘要评论与评分\n"
       }
     },
     {
       "id": "198277342",
       "topics": [
-        "大语言模型",
+        "大型语言模型",
         "多语言"
       ],
-      "title": "OpenBA：一个从零开始预训练的开源15B双语非对称seq2seq模型",
+      "title": "OpenBA:一个开源的150亿参数双语非对称seq2seq模型",
       "slug": "openba-an-open-sourced-15b-bilingual-asymmetric-seq2seq-model-pre-trained-from-sc",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
       },
       "_publishedAt": "2024-05-27T03:34:02+01:00",
-      "description": "摘要评论与评级",
+      "description": "摘要评论与评分",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
       },
       "seo": {
-        "title": "OpenBA：一个开源的15B双语...模型...",
-        "description": "摘要评论与评级\n"
+        "title": "OpenBA:一个开源的150亿参数双语非对称seq2seq模型",
+        "description": "摘要评论与评分\n"
       }
     },
     {
       "id": "198277117",
       "topics": [
-        "大语言模型",
+        "大型语言模型",
         "检索"
       ],
-      "title": "PDFTriage：在长结构化文档上进行问答",
+      "title": "PDFTriage:长结构化文档的问答系统",
       "slug": "pdftriage-question-answering-over-long-structured-documents",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
       },
       "_publishedAt": "2024-05-27T03:33:49+01:00",
-      "description": "摘要评论与评级",
+      "description": "摘要评论与评分",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
       },
       "seo": {
-        "title": "PDFTriage：在长结构化文档上进行问答",
-        "description": "摘要评论与评级\n"
+        "title": "PDFTriage:长结构化文档的问答系统",
+        "description": "摘要评论与评分\n"
       }
     },
     {
       "id": "198277138",
       "topics": [
-        "大语言模型",
+        "大型语言模型",
         "微调"
       ],
-      "title": "Sorted LLaMA：通过排序微调（SoFT）利用大语言模型中间层进行动态推理",
+      "title": "排序LLaMA:通过排序微调释放大型语言模型中间层的动态推理潜力",
       "slug": "sorted-llama-unlocking-the-potential-of-intermediate-layers-of-large-language-mod",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
       },
       "_publishedAt": "2024-05-27T03:33:31+01:00",
-      "description": "摘要评论与评级",
+      "description": "摘要评论与评分",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
       },
       "seo": {
-        "title": "Sorted LLaMA：通过排序微调进行推理",
-        "description": "摘要评论与评级\n"
+        "title": "排序LLaMA:通过排序微调释放大型语言模型的动态推理潜力",
+        "description": "摘要评论与评分\n"
       }
     },
     {
       "id": "198277150",
       "topics": [
-        "大语言模型",
-        "指令调整",
+        "大型语言模型",
+        "指令调优",
         "多模态"
       ],
-      "title": "指令调整的大规模多模态模型的实证研究",
+      "title": "指令调优大型多模态模型扩展的实证研究",
       "slug": "an-empirical-study-of-scaling-instruct-tuned-large-multimodal-models",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
       },
       "_publishedAt": "2024-05-27T03:33:15+01:00",
-      "description": "摘要评论与评级",
+      "description": "摘要评论与评分",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
       },
       "seo": {
-        "title": "指令调整的大规模语言模型的实证研究",
-        "description": "摘要评论与评级\n"
+        "title": "指令调优大型多模态模型扩展的实证研究",
+        "description": "摘要评论与评分\n"
       }
     },
     {
       "id": "198277160",
       "topics": [
-        "大语言模型",
+        "大型语言模型",
         "代理",
         "游戏"
       ],
-      "title": "MindAgent：新兴游戏交互",
+      "title": "心智代理:涌现的游戏交互",
       "slug": "mindagent-emergent-gaming-interaction",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
       },
       "_publishedAt": "2024-05-27T03:32:58+01:00",
-      "description": "摘要评论与评级",
+      "description": "摘要评论与评分",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
       },
       "seo": {
-        "title": "MindAgent：新兴游戏交互",
-        "description": "摘要评论与评级\n"
+        "title": "心智代理:涌现的游戏交互",
+        "description": "摘要评论与评分\n"
       }
     },
     {
       "id": "198277196",
       "topics": [
-        "大语言模型",
+        "大型语言模型",
         "结构化数据"
       ],
-      "title": "Struc-Bench：大语言模型在生成复杂结构化数据方面真的好吗？",
+      "title": "Struc-Bench:大型语言模型真的擅长生成复杂结构化数据吗?",
       "slug": "struc-bench-are-large-language-models-really-good-at-generating-complex-structure",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
       },
       "_publishedAt": "2024-05-25T03:38:38+01:00",
-      "description": "摘要评论与评级",
+      "description": "摘要评论与评分",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
       },
       "seo": {
-        "title": "Struc-Bench：...生成复杂结构化数据？",
-        "description": "摘要评论与评级\n"
+        "title": "Struc-Bench:大型语言模型真的擅长生成复杂结构化数据吗?",
+        "description": "摘要评论与评分\n"
       }
     },
     {
       "id": "198277217",
       "topics": [
-        "大语言模型",
+        "大型语言模型",
         "隐私",
-        "边缘"
+        "边缘计算"
       ],
-      "title": "通过大语言模型从隐私保护遮罩中恢复",
+      "title": "利用大型语言模型从隐私保护掩码中恢复",
       "slug": "recovering-from-privacy-preserving-masking-with-large-language-models",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
       },
       "_publishedAt": "2024-05-25T03:38:26+01:00",
-      "description": "摘要评论与评级",
+      "description": "摘要评论与评分",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
       },
       "seo": {
-        "title": "通过大语言模型从隐私保护遮罩中恢复",
-        "description": "摘要评论与评级\n"
+        "title": "利用大型语言模型从隐私保护掩码中恢复",
+        "description": "摘要评论与评分\n"
       }
     },
     {
       "id": "198277239",
       "topics": [
-        "大语言模型",
-        "对话"
+        "大型语言模型",
+        "聊天"
       ],
-      "title": "S3-DST：大语言模型时代的结构化开放领域对话分割与状态追踪",
+      "title": "S3-DST:大型语言模型时代的结构化开放域对话分割和状态跟踪",
       "slug": "s3-dst-structured-open-domain-dialogue-segmentation-and-state-tracking-in-the-era",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
       },
       "_publishedAt": "2024-05-25T03:38:11+01:00",
-      "description": "摘要评论与评级",
+      "description": "摘要评论与评分",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
       },
       "seo": {
-        "title": "S3-DST：大语言模型时代的结构化对话分割...",
-        "description": "摘要评论与评级\n"
+        "title": "S3-DST:大型语言模型时代的结构化开放域对话分割和状态跟踪",
+        "description": "摘要评论与评分\n"
       }
     },
     {
       "id": "198277253",
       "topics": [
-        "大语言模型",
+        "大型语言模型",
         "音频"
       ],
-      "title": "利用大语言模型增强语音理解的文本",
+      "title": "利用大型语言模型增强口语理解的文本",
       "slug": "augmenting-text-for-spoken-language-understanding-with-large-language-models",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
       },
       "_publishedAt": "2024-05-25T03:37:49+01:00",
-      "description": "摘要评论与评级",
+      "description": "摘要评论与评分",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
       },
       "seo": {
-        "title": "利用大语言模型增强语音理解的文本",
-        "description": "摘要评论与评级\n"
+        "title": "利用大型语言模型增强口语理解的文本",
+        "description": "摘要评论与评分\n"
       }
     },
     {
       "id": "198277277",
       "topics": [
-        "大语言模型",
+        "大型语言模型",
         "压缩"
       ],
       "title": "语言建模即压缩",
@@ -239,211 +239,211 @@
         "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
       },
       "_publishedAt": "2024-05-25T03:37:32+01:00",
-      "description": "摘要评论与评级",
+      "description": "摘要评论与评分",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
       },
       "seo": {
         "title": "语言建模即压缩",
-        "description": "摘要评论与评级\n"
+        "description": "摘要评论与评分\n"
       }
     },
     {
       "id": "198277345",
       "topics": [
-        "大语言模型",
+        "大型语言模型",
         "多语言"
       ],
-      "title": "白川2：开放的大规模语言模型",
+      "title": "百川2:开放大规模语言模型",
       "slug": "baichuan-2-open-large-scale-language-models",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
       },
       "_publishedAt": "2024-05-24T05:59:10+01:00",
-      "description": "摘要评论与评级",
+      "description": "摘要评论与评分",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
       },
       "seo": {
-        "title": "白川2：开放的大规模语言模型",
-        "description": "摘要评论与评级\n"
+        "title": "百川2:开放大规模语言模型",
+        "description": "摘要评论与评分\n"
       }
     },
     {
       "id": "198277360",
       "topics": [
-        "大语言模型",
+        "大型语言模型",
         "RLHF"
       ],
-      "title": "通过优势模型与选择性排练稳定RLHF",
+      "title": "通过优势模型和选择性回顾稳定RLHF",
       "slug": "stabilizing-rlhf-through-advantage-model-and-selective-rehearsal",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
       },
       "_publishedAt": "2024-05-24T05:22:15+01:00",
-      "description": "摘要评论与评级",
+      "description": "摘要评论与评分",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
       },
       "seo": {
-        "title": "通过优势模型与选择性排练稳定RLHF",
-        "description": "摘要评论与评级\n"
+        "title": "通过优势模型和选择性回顾稳定RLHF",
+        "description": "摘要评论与评分\n"
       }
     },
     {
       "id": "198277446",
       "topics": [
-        "大语言模型",
+        "大型语言模型",
         "幻觉"
       ],
-      "title": "验证链减少大语言模型中的幻觉",
+      "title": "验证链减少大型语言模型的幻觉",
       "slug": "chain-of-verification-reduces-hallucination-in-large-language-models",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
       },
       "_publishedAt": "2024-05-24T05:21:05+01:00",
-      "description": "摘要评论与评级",
+      "description": "摘要评论与评分",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
       },
       "seo": {
-        "title": "验证链减少大语言模型中的幻觉",
-        "description": "摘要评论与评级\n"
+        "title": "验证链减少大型语言模型的幻觉",
+        "description": "摘要评论与评分\n"
       }
     },
     {
       "id": "198277458",
       "topics": [
-        "大语言模型",
+        "大型语言模型",
         "幻觉",
         "实体",
         "结构化数据"
       ],
-      "title": "LMDX：基于语言模型的文档信息提取与定位",
+      "title": "LMDX:基于语言模型的文档信息提取和定位",
       "slug": "lmdx-language-model-based-document-information-extraction-and-localization",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
       },
       "_publishedAt": "2024-05-24T05:20:31+01:00",
-      "description": "摘要评论与评级",
+      "description": "摘要评论与评分",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
       },
       "seo": {
-        "title": "LMDX：...文档信息提取与定位",
-        "description": "摘要评论与评级\n"
+        "title": "LMDX:基于语言模型的文档信息提取和定位",
+        "description": "摘要评论与评分\n"
       }
     },
     {
       "id": "198277209",
       "topics": [
-        "大语言模型",
+        "大型语言模型",
         "数据"
       ],
-      "title": "SlimPajama-DC：了解大语言模型训练的数据组合",
+      "title": "SlimPajama-DC:理解大型语言模型训练的数据组合",
       "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
       },
       "_publishedAt": "2023-10-04T23:43:32+01:00",
-      "description": "摘要评论与评级",
+      "description": "摘要评论与评分",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
       },
       "seo": {
-        "title": "SlimPajama-DC：了解大语言模型训练的数据组合",
-        "description": "摘要评论与评级\n"
+        "title": "SlimPajama-DC:理解大型语言模型训练的数据组合",
+        "description": "摘要评论与评分\n"
       }
     },
     {
       "id": "198044929",
       "topics": [
-        "大语言模型",
+        "大型语言模型",
         "数据",
         "代理"
       ],
-      "title": "推理化身代理的数据源",
+      "title": "推理型具身代理的数据源",
       "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
       },
       "_publishedAt": "2023-10-04T07:33:25+01:00",
-      "description": "摘要评论与评级",
+      "description": "摘要评论与评分",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
       },
       "seo": {
-        "title": "推理化身代理的数据源",
-        "description": "摘要评论与评级\n"
+        "title": "推理型具身代理的数据源",
+        "description": "摘要评论与评分\n"
       }
     },
     {
       "id": "198044879",
       "topics": [
-        "大语言模型",
-        "变压器",
+        "大型语言模型",
+        "变换器",
         "可解释性"
       ],
-      "title": "稀疏自动编码器在语言模型中发现高度可解释的特征",
+      "title": "稀疏自编码器在语言模型中发现高度可解释的特征",
       "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
       },
       "_publishedAt": "2023-10-04T07:23:08+01:00",
-      "description": "摘要评论与评级",
+      "description": "摘要评论与评分",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
       },
       "seo": {
-        "title": "稀疏自动编码器在语言模型中发现可解释特征",
-        "description": "摘要评论与评级\n"
+        "title": "稀疏自编码器在语言模型中发现高度可解释的特征",
+        "description": "摘要评论与评分\n"
       }
     },
     {
       "id": "198044746",
       "topics": [
-        "大语言模型",
-        "变压器",
+        "大型语言模型",
+        "变换器",
         "训练"
       ],
-      "title": "稀疏连接基础模型的比例定律",
+      "title": "稀疏连接基础模型的缩放定律",
       "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
       },
       "_publishedAt": "2023-10-04T07:09:44+01:00",
-      "description": "摘要评论与评级",
+      "description": "摘要评论与评分",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
       },
       "seo": {
-        "title": "稀疏连接基础模型的比例定律",
-        "description": "摘要评论与评级\n"
+        "title": "稀疏连接基础模型的缩放定律",
+        "description": "摘要评论与评分\n"
       }
     }
   ],
   "blogContent": {
     "id": "198277109",
     "topics": [
-      "LLM",
+      "大型语言模型",
       "推理"
     ],
-    "title": "对比解码提升大型语言模型的推理能力",
+    "title": "对比解码提高大型语言模型的推理能力",
     "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
     "authorName": "Prof. Otto Nomos",
     "authorPicture": {
       "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
     },
     "_publishedAt": "2023-10-04T22:18:11+01:00",
-    "description": "摘要点评与评分",
+    "description": "摘要评论和评分",
     "thumbnail": {
       "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
     },
@@ -460,7 +460,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "发布于 9月16日"
+                      "value": "Published on Sep 16"
                     }
                   ]
                 },
@@ -469,7 +469,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "作者:"
+                      "value": "Authors:"
                     },
                     {
                       "url": "https://huggingface.co/seanobrienresearch",
@@ -477,7 +477,7 @@
                       "children": [
                         {
                           "type": "span",
-                          "value": "肖恩·奥布莱恩"
+                          "value": "Sean O'Brien"
                         }
                       ]
                     },
@@ -491,7 +491,7 @@
                       "children": [
                         {
                           "type": "span",
-                          "value": "迈克·刘易斯"
+                          "value": "Mike Lewis"
                         }
                       ]
                     }
@@ -503,7 +503,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "摘要"
+                      "value": "Abstract"
                     }
                   ]
                 },
@@ -512,7 +512,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "我们展示了对比解码——由Li等人于2022年提出的一种简单、计算轻便、无需训练的文本生成方法——在各种推理任务上相对于贪婪解码的显著提升。对比解码最初被证明能提高长文生成的感知质量，它搜索最大化强弱模型之间加权差异的字符串。我们展示了对比解码使LLaMA-65B在HellaSwag常识推理基准上优于LLaMA 2、GPT-3.5和PaLM 2-L，并在GSM8K数学词推理基准上优于LLaMA 2、GPT-3.5和PaLM-540B，同时在其他任务上也有所改进。分析表明，对比解码通过防止一些抽象推理错误以及避免在链式思维过程中复制输入部分的简单模式，相较于现有的方法有所改进。总体而言，对比解码在长文生成中优于核采样，在推理任务中优于贪婪解码，使其成为从语言模型生成文本的强大通用方法。"
+                      "value": "We demonstrate that Contrastive Decoding -- a simple, computationally light, and training-free text generation method proposed by Li et al 2022 -- achieves large out-of-the-box improvements over greedy decoding on a variety of reasoning tasks. Originally shown to improve the perceived quality of long-form text generation, Contrastive Decoding searches for strings that maximize a weighted difference in likelihood between strong and weak models. We show that Contrastive Decoding leads LLaMA-65B to outperform LLaMA 2, GPT-3.5 and PaLM 2-L on the HellaSwag commonsense reasoning benchmark, and to outperform LLaMA 2, GPT-3.5 and PaLM-540B on the GSM8K math word reasoning benchmark, in addition to improvements on a collection of other tasks. Analysis suggests that Contrastive Decoding improves over existing methods by preventing some abstract reasoning errors, as well as by avoiding simpler modes such as copying sections of the input during chain-of-thought. Overall, Contrastive Decoding outperforms nucleus sampling for long-form generation and greedy decoding for reasoning tasks, making it a powerful general purpose method for generating text from language models."
                     }
                   ]
                 },
@@ -838,8 +838,8 @@
       }
     ],
     "seo": {
-      "description": "摘要点评与评分\n",
-      "title": "对比解码在LLM中的推理能力提升",
+      "description": "摘要评论和评分",
+      "title": "对比解码提高大型语言模型的推理能力",
       "twitterCard": null,
       "image": {
         "width": 1456,
@@ -851,7 +851,7 @@
     }
   },
   "topics": [
-    "LLM",
-    "Reasoning"
+    "大型语言模型",
+    "推理"
   ]
 }

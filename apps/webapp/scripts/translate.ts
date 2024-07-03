@@ -1,158 +1,167 @@
-import { locales } from '@/dictionaries/locales'
+import { Lang, locales } from '@/dictionaries/locales'
 import { BlogArticleData } from '@/services/datocms'
-import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
 import {
+  TranslationData,
   extractTextForTranslation,
   extractTitleAndDescriptionNested,
   injectTextAfterTranslation
 } from '@/services/datocms/translation/utils'
-import { openAiTranslate } from '@/services/openai'
-
+import { anthropicTranslate } from '@/services/anthropic'
 import * as fs from 'fs/promises'
 import * as path from 'path'
+import { promiseAllWithConcurrencyLimit } from '@/lib/utils'
+import _ from 'lodash'
+import { getErrorMessage } from 'smartsale-lib'
 
-async function copyJsonFiles(locale: SiteLocale) {
-  // this is called from the root of the repo
+async function processFile(
+  file: string,
+  subDir: string,
+  targetDir: string,
+  lang: Lang
+) {
+  if (file.endsWith('-index.json')) return
+
+  if (file.endsWith('.json')) {
+    const sourcePath = path.join(subDir, file)
+    const targetPath = path.join(targetDir, path.basename(subDir), file)
+
+    try {
+      await fs.access(targetPath)
+      console.log(`Translation already exists for ${targetPath}`)
+      return
+    } catch (err) {}
+
+    console.log('🧑🏻‍💻 New Translation Started ', targetPath)
+    await ensureDirectoryExists(path.join(targetDir, path.basename(subDir)))
+
+    try {
+      const englishVersion: BlogArticleData = JSON.parse(
+        await fs.readFile(sourcePath, 'utf8')
+      )
+
+      // get related blogs translataion
+      const relatedBlogsPayload = {
+        ...englishVersion,
+        blogContent: undefined,
+        relatedBlogs: englishVersion.relatedBlogs.map(
+          extractTitleAndDescriptionNested
+        )
+      }
+      const relatedBlogs = await anthropicTranslate(relatedBlogsPayload, lang)
+      // console.log('relatedBlogs', relatedBlogs)
+      // process.exit(0)
+      if (!relatedBlogs) throw new Error('❌ Failed to translate related blogs')
+      console.log('✅ related blogs and topics translated')
+
+      // get blog content translation
+      const optimized = extractTextForTranslation(englishVersion.blogContent)
+      const optmizedMeta = _.omit(optimized, 'contentBlock')
+      const blogMeta = await anthropicTranslate(optmizedMeta, lang)
+      if (!blogMeta) throw new Error('❌ Failed to translate blog meta')
+      console.log('✅ blog meta translated')
+
+      if (!optimized.contentBlock)
+        throw new Error('❌ Failed to optimize blog content')
+
+      const optmizedContentActions = optimized.contentBlock?.map(
+        block => () => {
+          console.log('🧑🏻‍💻 translating blog content block ...')
+          return anthropicTranslate(block, lang)
+        }
+      )
+      const blogContentResults = await promiseAllWithConcurrencyLimit(
+        optmizedContentActions.map(action => async () => {
+          const result = await action()
+          if (!result || !result.translation) {
+            throw new Error('❌ Failed to translate a blog content block')
+          }
+          return result
+        }),
+        1
+      ).then(results => {
+        if (results.some(result => result === null)) {
+          throw new Error(
+            '❌ One or more blog content blocks failed to translate'
+          )
+        }
+        return results
+      })
+
+      const blogContent = blogContentResults
+        .map(result => result?.translation)
+        .flat()
+
+      const translations: TranslationData = {
+        ...blogMeta.translation,
+        contentBlock: blogContent,
+        relatedBlogs: relatedBlogs.translation
+      }
+
+      const translatedContent = {
+        ...englishVersion,
+        topics: relatedBlogs.translation.topics,
+        blogContent: injectTextAfterTranslation(
+          englishVersion.blogContent,
+          translations
+        ),
+        relatedBlogs: englishVersion.relatedBlogs.map((blog, index) => {
+          return {
+            ...blog,
+            ...relatedBlogs.translation.relatedBlogs[index]
+          }
+        })
+      }
+
+      await fs.writeFile(targetPath, JSON.stringify(translatedContent, null, 2))
+      console.log('✅ New Translation completed', targetPath)
+    } catch (error) {
+      console.log(getErrorMessage(error))
+    }
+  }
+}
+
+async function processDirectory(
+  directory: string,
+  targetDir: string,
+  lang: Lang
+) {
+  const subDir = path.join(directory)
+  const subFiles = await fs.readdir(subDir)
+
+  for (const subFile of subFiles) {
+    await processFile(subFile, subDir, targetDir, lang)
+  }
+}
+
+async function copyJsonFiles(lang: Lang) {
   const sourceDir = path.join('./dictionaries/en/blog')
-  const targetDir = path.join(`./dictionaries/${locale}/blog`)
+  const targetDir = path.join(`./dictionaries/${lang}/blog`)
 
-  // Ensure the target directory exists before proceeding
-  await fs.mkdir(targetDir, { recursive: true })
+  await ensureDirectoryExists(targetDir)
 
   try {
     const files = await fs.readdir(sourceDir, { withFileTypes: true })
 
     for (const file of files) {
       if (file.isDirectory()) {
-        const subDir = path.join(sourceDir, file.name)
-        const subFiles = await fs.readdir(subDir)
-
-        for (const subFile of subFiles) {
-          if (subFile.endsWith('.json')) {
-            const sourcePath = path.join(subDir, subFile)
-            const targetPath = path.join(targetDir, file.name, subFile)
-
-            // Check if the targetPath file already exists
-            try {
-              await fs.access(targetPath)
-              console.log(`Translation already exists for ${targetPath}`)
-              continue
-            } catch (err) {
-              // File does not exist, proceed with translation
-            }
-            console.log('🧑🏻‍💻 New Translation Started ', targetPath)
-
-            await fs.mkdir(path.join(targetDir, file.name), { recursive: true })
-
-            try {
-              const englishVersion: BlogArticleData = JSON.parse(
-                await fs.readFile(sourcePath, 'utf8')
-              )
-
-              // TODO: optimize even more
-              const optimized = extractTextForTranslation(
-                englishVersion.blogContent
-              )
-
-              const blogContentPayload = JSON.stringify({
-                blogContent: optimized
-              })
-              // console.log('blogContentPayload', blogContentPayload)
-              const relatedBlogsPayload = JSON.stringify({
-                ...englishVersion,
-                blogContent: undefined,
-                relatedBlogs: englishVersion.relatedBlogs.map(
-                  extractTitleAndDescriptionNested
-                )
-              })
-
-              const countTokens = (text: string) => {
-                return text.split(/\s+/).length
-              }
-
-              if (
-                countTokens(blogContentPayload) > 4000 ||
-                countTokens(relatedBlogsPayload) > 4000
-              ) {
-                console.log(
-                  '😵‍💫 Payload exceeds 4000 tokens, skipping translation',
-                  targetPath
-                )
-                break
-              }
-
-              const {
-                translation: blogTranslation,
-                finishReason: blogFinishReason
-              } = await openAiTranslate(blogContentPayload, locale)
-              const {
-                translation: blogsTranslation,
-                finishReason: blogsFinishReason
-              } = await openAiTranslate(relatedBlogsPayload, locale)
-
-              if (
-                blogFinishReason !== 'stop' ||
-                !blogTranslation ||
-                blogsFinishReason !== 'stop' ||
-                !blogsTranslation
-              ) {
-                console.log('ERROR TRANSLATING')
-                break
-              }
-
-              const parsedBlogTranslation = JSON.parse(blogTranslation)
-              const parsedBlogsTranslation = JSON.parse(blogsTranslation)
-
-              const translatedContent = {
-                ...englishVersion,
-                blogContent: injectTextAfterTranslation(
-                  englishVersion.blogContent,
-                  parsedBlogTranslation.blogContent
-                ),
-                relatedBlogs: englishVersion.relatedBlogs.map(
-                  (blog, index) => ({
-                    ...blog,
-                    ...parsedBlogsTranslation.relatedBlogs[index]
-                  })
-                )
-              }
-              await fs.writeFile(
-                targetPath,
-                JSON.stringify(translatedContent, null, 2)
-              )
-              console.log('✅ New Translation completed', targetPath)
-            } catch (error) {
-              console.log('ERRRORSHSHS', error)
-            }
-            // await fs.copyFile(sourcePath, targetPath)
-            // console.log(`Copied ${sourcePath} to ${targetPath}`)
-          }
-        }
+        await processDirectory(path.join(sourceDir, file.name), targetDir, lang)
       }
     }
   } catch (err) {
     console.error('Error processing files:', err)
   }
 }
+async function ensureDirectoryExists(directory: string) {
+  await fs.mkdir(directory, { recursive: true })
+}
 
-const maxConcurrent = 2
-let activeTasks = 0
-
-function processLocale() {
-  if (activeTasks < maxConcurrent && locales.length > 0) {
-    const locale = locales.shift()
-    if (locale && locale !== 'en') {
-      // Skip if locale is 'en'
-      activeTasks++
-      copyJsonFiles(locale).then(() => {
-        activeTasks--
-        processLocale() // Process next locale after finishing current one
-      })
-      processLocale() // Start another task if under maxConcurrent
-    } else {
-      processLocale() // Continue to the next locale if 'en' is skipped
-    }
-  }
+async function processLocale(): Promise<void> {
+  await promiseAllWithConcurrencyLimit(
+    locales
+      .filter(lang => lang !== 'en')
+      .map(lang => () => copyJsonFiles(lang)),
+    1
+  )
 }
 
 processLocale()

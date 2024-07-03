@@ -3,17 +3,17 @@
   "blogContent": {
     "id": "198277277",
     "topics": [
-      "LLM",
-      "Compresión"
+      "MLN",
+      "Compresion"
     ],
-    "title": "El Modelado del Lenguaje es Compresión",
+    "title": "El Modelado del Lenguaje es Compresion",
     "slug": "language-modeling-is-compression",
     "authorName": "Prof. Otto Nomos",
     "authorPicture": {
       "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
     },
     "_publishedAt": "2024-05-25T03:37:32+01:00",
-    "description": "Comentario Abstracto y Calificación",
+    "description": "Comentario y Calificacion del Resumen",
     "thumbnail": {
       "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
     },
@@ -30,7 +30,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Publicado el 19 de Sep"
+                      "value": "Published on Sep 19"
                     }
                   ]
                 },
@@ -39,7 +39,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Autores:Grégoire Delétang,Anian Ruoss,"
+                      "value": "Authors:Grégoire Delétang,Anian Ruoss,"
                     },
                     {
                       "url": "https://huggingface.co/padqn",
@@ -77,7 +77,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Resumen"
+                      "value": "Abstract"
                     }
                   ]
                 },
@@ -86,7 +86,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Hace tiempo que se estableció que los modelos predictivos pueden transformarse en compresores sin pérdida y viceversa. Por cierto, en los últimos años, la comunidad de aprendizaje automático se ha centrado en entrenar modelos (de lenguaje) auto-supervisados cada vez más grandes y poderosos. Dado que estos grandes modelos de lenguaje exhiben impresionantes capacidades predictivas, están bien posicionados para ser fuertes compresores. En este trabajo, abogamos por ver el problema de la predicción a través del lente de la compresión y evaluamos las capacidades de compresión de grandes modelos (fundacionales). Mostramos que los grandes modelos de lenguaje son poderosos predictores de propósito general y que el punto de vista de la compresión proporciona nuevas ideas sobre las leyes de escalado, la tokenización y el aprendizaje en contexto. Por ejemplo, Chinchilla 70B, aunque entrenado principalmente en texto, comprime parches de ImageNet al 43.4% y muestras de LibriSpeech al 16.4% de su tamaño bruto, superando a compresores específicos de dominio como PNG (58.5%) o FLAC (30.3%), respectivamente. Finalmente, mostramos que la equivalencia predicción-compresión nos permite usar cualquier compresor (como gzip) para construir un modelo generativo condicional."
+                      "value": "It has long been established that predictive models can be transformed into lossless compressors and vice versa. Incidentally, in recent years, the machine learning community has focused on training increasingly large and powerful self-supervised (language) models. Since these large language models exhibit impressive predictive capabilities, they are well-positioned to be strong compressors. In this work, we advocate for viewing the prediction problem through the lens of compression and evaluate the compression capabilities of large (foundation) models. We show that large language models are powerful general-purpose predictors and that the compression viewpoint provides novel insights into scaling laws, tokenization, and in-context learning. For example, Chinchilla 70B, while trained primarily on text, compresses ImageNet patches to 43.4% and LibriSpeech samples to 16.4% of their raw size, beating domain-specific compressors like PNG (58.5%) or FLAC (30.3%), respectively. Finally, we show that the prediction-compression equivalence allows us to use any compressor (like gzip) to build a conditional generative model."
                     }
                   ]
                 },
@@ -109,7 +109,7 @@
                       "children": [
                         {
                           "type": "span",
-                          "value": "Ver página de arXiv"
+                          "value": "View arXiv page"
                         }
                       ]
                     },
@@ -129,7 +129,7 @@
                       "children": [
                         {
                           "type": "span",
-                          "value": "Ver PDF"
+                          "value": "View PDF"
                         }
                       ]
                     }
@@ -141,7 +141,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Comentario"
+                      "value": "Commentary"
                     }
                   ]
                 },
@@ -150,7 +150,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "El artículo \"El Modelado del Lenguaje es Compresión\" revisita el concepto bien establecido de que los modelos predictivos también pueden aprovecharse como compresores sin pérdida y evalúa cómo esta idea puede aplicarse a los modelos de lenguaje modernos y a gran escala."
+                      "value": "The paper \"Language Modeling Is Compression\" revisits the well-established concept that predictive models can also be leveraged as lossless compressors and assesses how this idea can be applied to modern, large-scale language models."
                     }
                   ]
                 },
@@ -159,7 +159,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Puntos Clave:"
+                      "value": "Key Takeaways:"
                     }
                   ]
                 },
@@ -178,11 +178,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Compresión como Predicción"
+                              "value": "Compression as Prediction"
                             },
                             {
                               "type": "span",
-                              "value": ": El artículo impulsa la idea de usar modelos predictivos (como los modernos LLMs) como compresores eficientes. Dadas sus fuertes capacidades predictivas, estos modelos pueden comprimir una amplia gama de tipos de datos."
+                              "value": ": The paper pushes the idea of using predictive models (like modern LLMs) as efficient compressors. Given their strong predictive capacities, these models can compress a wide array of data types."
                             }
                           ]
                         }
@@ -199,11 +199,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Compresores de Propósito General"
+                              "value": "General-Purpose Compressors"
                             },
                             {
                               "type": "span",
-                              "value": ": La investigación indica que los grandes modelos de lenguaje, incluso si se entrenan principalmente en texto, pueden comprimir datos no textuales de manera eficiente. Por ejemplo, Chinchilla 70B puede comprimir imágenes de ImageNet y muestras de audio de LibriSpeech mejor que compresores específicos de dominio como PNG y FLAC."
+                              "value": ": The research indicates that large language models, even if trained primarily on text, can efficiently compress non-textual data. For instance, Chinchilla 70B can compress ImageNet images and LibriSpeech audio samples better than domain-specific compressors like PNG and FLAC."
                             }
                           ]
                         }
@@ -220,11 +220,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Obteniendo Ideas"
+                              "value": "Gaining Insights"
                             },
                             {
                               "type": "span",
-                              "value": ": Ver la predicción desde una perspectiva de compresión puede proporcionar ideas sobre varios aspectos del aprendizaje automático, como las leyes de escalado, la tokenización y el aprendizaje en contexto."
+                              "value": ": Viewing prediction from a compression perspective can provide insights into various aspects of machine learning, such as scaling laws, tokenization, and in-context learning."
                             }
                           ]
                         }
@@ -241,11 +241,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Modelos Generativos a partir de Compresores"
+                              "value": "Generative Models from Compressors"
                             },
                             {
                               "type": "span",
-                              "value": ": La equivalencia de predicción y compresión permite la creación de modelos generativos condicionales usando cualquier compresor."
+                              "value": ": The equivalence of prediction and compression enables the creation of conditional generative models using any compressor."
                             }
                           ]
                         }
@@ -258,7 +258,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Impacto Potencial en el Mundo Real:"
+                      "value": "Potential Real-World Impact:"
                     }
                   ]
                 },
@@ -277,11 +277,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Almacenamiento y Transferencia de Datos"
+                              "value": "Data Storage and Transfer"
                             },
                             {
                               "type": "span",
-                              "value": ": Si los LLMs pueden usarse efectivamente como compresores, pueden revolucionar el almacenamiento y la transmisión de datos, particularmente para medios ricos como imágenes y audio."
+                              "value": ": If LLMs can be effectively used as compressors, they may revolutionize data storage and transmission, particularly for rich media like images and audio."
                             }
                           ]
                         }
@@ -298,11 +298,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Más Allá del Texto"
+                              "value": "Beyond Text"
                             },
                             {
                               "type": "span",
-                              "value": ": Demostrar que un modelo entrenado en texto puede comprimir datos no textuales abre puertas a aplicaciones multimodales y muestra la capacidad de generalización de los LLMs modernos."
+                              "value": ": Demonstrating that a text-trained model can compress non-textual data opens doors to multi-modal applications and shows the generalization capacity of modern LLMs."
                             }
                           ]
                         }
@@ -319,11 +319,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Mejor Comprensión de los LLMs"
+                              "value": "Better Understanding of LLMs"
                             },
                             {
                               "type": "span",
-                              "value": ": La perspectiva de la compresión puede proporcionar ideas más profundas sobre el funcionamiento y las posibles aplicaciones de los grandes modelos de lenguaje."
+                              "value": ": The compression viewpoint can provide deeper insights into the functioning and potential applications of large language models."
                             }
                           ]
                         }
@@ -340,11 +340,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Aplicaciones Generativas"
+                              "value": "Generative Applications"
                             },
                             {
                               "type": "span",
-                              "value": ": La capacidad de transformar cualquier compresor en un modelo generativo condicional puede tener amplias implicaciones en tareas de generación, síntesis y aumento de datos."
+                              "value": ": The ability to transform any compressor into a conditional generative model can have wide-ranging implications in data generation, synthesis, and augmentation tasks."
                             }
                           ]
                         }
@@ -357,7 +357,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Desafíos:"
+                      "value": "Challenges:"
                     }
                   ]
                 },
@@ -376,11 +376,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Recursos Computacionales"
+                              "value": "Computational Resources"
                             },
                             {
                               "type": "span",
-                              "value": ": Usar grandes modelos de lenguaje como compresores puede ser computacionalmente costoso, haciéndolos menos accesibles para aplicaciones en tiempo real o para usuarios con recursos limitados."
+                              "value": ": Using large language models as compressors may be computationally expensive, making them less accessible for real-time applications or for users with limited resources."
                             }
                           ]
                         }
@@ -397,11 +397,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Experiencia en el Dominio"
+                              "value": "Domain Expertise"
                             },
                             {
                               "type": "span",
-                              "value": ": Para algunos dominios específicos, los compresores especializados aún pueden ser preferidos debido a las restricciones y requisitos específicos del dominio."
+                              "value": ": For some specific domains, specialized compressors might still be preferred due to domain-specific constraints and requirements."
                             }
                           ]
                         }
@@ -414,7 +414,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Dado el potencial de avances en el almacenamiento de datos, la transmisión y la comprensión más amplia de los LLMs:"
+                      "value": "Given the potential for breakthroughs in data storage, transmission, and the broader understanding of LLMs:"
                     }
                   ]
                 },
@@ -423,7 +423,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Calificaría el impacto en el mundo real de este artículo como un 9 de 10."
+                      "value": "I'd rate the real-world impact of this paper as a 9 out of 10."
                     }
                   ]
                 },
@@ -432,7 +432,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "El puente entre predicción y compresión no es completamente nuevo, pero la aplicación del artículo a los LLMs modernos y los resultados que logra son notables. Si estos hallazgos pueden implementarse eficientemente, podría allanar el camino para aplicaciones novedosas y una comprensión más profunda de los modelos de lenguaje."
+                      "value": "The bridge between prediction and compression is not entirely new, but the paper's application to modern LLMs and the results it achieves are notable. If these findings can be efficiently implemented, it might pave the way for novel applications and a deeper understanding of language models."
                     }
                   ]
                 }
@@ -454,8 +454,8 @@
       }
     ],
     "seo": {
-      "description": "Comentario Abstracto y Calificación\n",
-      "title": "El Modelado del Lenguaje es Compresión",
+      "description": "Comentario y Calificacion del Resumen",
+      "title": "El Modelado del Lenguaje es Compresion",
       "twitterCard": null,
       "image": {
         "width": 1456,
@@ -468,6 +468,6 @@
   },
   "topics": [
     "LLM",
-    "Compression"
+    "Compresion"
   ]
 }

@@ -6,7 +6,7 @@
         "DAO",
         "摘要"
       ],
-      "title": "投票的意义是什么？[摘要]",
+      "title": "投票的目的是什么？[摘要]",
       "slug": "what-is-voting-for-summary",
       "authorName": "Crypto Clairity",
       "authorPicture": {
@@ -18,7 +18,7 @@
         "url": "https://www.datocms-assets.com/101962/1690859305-cbc6-img1.png"
       },
       "seo": {
-        "title": "投票的意义是什么？[摘要]",
+        "title": "投票的目的是什么？[摘要]",
         "description": "揭示去中心化系统中投票的本质。深入了解区块链中投票的真正目的和力量。"
       }
     },
@@ -28,20 +28,20 @@
         "DAO",
         "摘要"
       ],
-      "title": "治理的意义是什么？[摘要]",
+      "title": "治理的目的是什么？[摘要]",
       "slug": "what-is-governance-for-summary",
       "authorName": "Crypto Clairity",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T09:10:45+01:00",
-      "description": "探讨区块链系统中治理的角色和重要性。了解治理如何推动去中心化和增长。",
+      "description": "探索区块链系统中治理的角色和重要性。了解治理如何推动去中心化和增长。",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1690859755-cbc7-img1.png"
       },
       "seo": {
-        "title": "治理的意义是什么？[摘要]",
-        "description": "探讨区块链系统中治理的角色和重要性。了解治理如何推动去中心化和增长。"
+        "title": "治理的目的是什么？[摘要]",
+        "description": "探索区块链系统中治理的角色和重要性。了解治理如何推动去中心化和增长。"
       }
     },
     {
@@ -57,13 +57,13 @@
         "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T08:57:02+01:00",
-      "description": "在我们的指南中探索去中心化自治组织（DAO）的崛起。了解商业的未来和初创企业的机会。",
+      "description": "在我们的指南中探索去中心化自治组织（DAO）的崛起。了解商业的未来和创业机会。",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1687381524-db1-img1.png"
       },
       "seo": {
         "title": "去中心化自治组织的崛起",
-        "description": "在我们的指南中探索去中心化自治组织（DAO）的崛起。了解商业的未来和初创企业的机会。"
+        "description": "在我们的指南中探索去中心化自治组织（DAO）的崛起。了解商业的未来和创业机会。"
       }
     }
   ],
@@ -73,14 +73,14 @@
       "DAO",
       "法律"
     ],
-    "title": "去中心化自治组织（DAOs）：商业和非营利目的的基本法律结构",
+    "title": "去中心化自治组织（DAOs）：用于商业和非营利目的的基本法律结构",
     "slug": "decentralized-autonomous-organizations-daos-basic-legal-structures-for-business-a",
     "authorName": "Crypto Clairity",
     "authorPicture": {
       "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
     },
     "_publishedAt": "2023-10-05T08:59:06+01:00",
-    "description": "探索用于商业和非营利目的的基本DAO法律结构。",
+    "description": "了解用于商业和非营利目的的基本DAO法律结构。",
     "thumbnail": {
       "url": "https://www.datocms-assets.com/101962/1687384353-db2-img1.png"
     },
@@ -98,7 +98,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "理解DAOs的法律框架"
+                      "value": "Understanding the Legal Framework for DAOs"
                     }
                   ]
                 },
@@ -107,7 +107,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "去中心化自治组织（DAOs）是由区块链技术支持的创新型去中心化数字组织。在加密货币和区块链的世界中，DAOs吸引了企业家、投资者和法律专家的想象力。然而，当从法律角度看待DAOs时，重要的是要理解它们可以被视为大型普通合伙企业或非注册非营利协会。"
+                      "value": "Decentralized Autonomous Organizations (DAOs) are innovative forms of decentralized, digital organizations that are enabled by blockchain technology. In the world of crypto and blockchain, DAOs have captured the imagination of entrepreneurs, investors, and legal experts alike. However, when it comes to viewing DAOs legally, it's important to understand that they can be viewed as either a large general partnership or an unincorporated non-profit association."
                     }
                   ]
                 }
@@ -143,7 +143,7 @@
                       "marks": [
                         "strong"
                       ],
-                      "value": "普通合伙企业"
+                      "value": "General Partnerships"
                     }
                   ]
                 },
@@ -152,7 +152,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "大型普通合伙企业是一种由多个合伙人共同经营业务的商业结构。在DAO的情况下，合伙人由代币持有者持有的数字代币代表。合伙人根据其代币持有比例分享利润、损失和对业务的控制。在大型普通合伙企业中，合伙人对业务的债务和义务负有个人责任。"
+                      "value": "A large general partnership is a type of business structure in which multiple partners come together to operate a business. In the case of a DAO, the partners are represented by digital tokens held by token holders. The partners share profits, losses, and control over the business in proportion to their token holdings. In a large general partnership, the partners are personally liable for the debts and obligations of the business."
                     }
                   ]
                 },
@@ -161,7 +161,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "这种结构特别适合那些作为公司运营、寻求盈利并希望吸引投资的DAOs。例如，作为大型普通合伙企业运营的DAO可以发行类似于股票的代币。这使得DAO能够筹集资金、吸引投资并通过分享利润来奖励代币持有者。"
+                      "value": "This type of structure can be particularly appropriate for DAOs that are operating as a company, seeking to generate profits, and looking for ways to attract investment. For instance, a DAO that operates as a large general partnership can issue tokens that are like shares of stock. This allows the DAO to raise capital, attract investment, and reward token holders with a share of the profits."
                     }
                   ]
                 },
@@ -170,7 +170,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "然而，这种结构也有缺点。例如，代币持有者可能无法完全免于对业务债务和义务的个人责任。此外，合伙结构可能不如其他结构灵活，可能无法实现同样程度的去中心化。"
+                      "value": "However, there are also disadvantages to this type of structure. For example, token holders may not be fully protected from personal liability for the debts and obligations of the business. Additionally, the partnership structure can be less flexible than other structures and may not allow for the same degree of decentralization."
                     }
                   ]
                 }
@@ -196,7 +196,7 @@
                       "marks": [
                         "strong"
                       ],
-                      "value": "非营利协会"
+                      "value": "Non-profit Associations"
                     }
                   ]
                 },
@@ -205,7 +205,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "另一方面，非注册非营利协会是一种为其成员利益而非盈利运营的组织。在这种结构中，协会成员共同控制组织，并且不对其债务和义务负有个人责任。非注册非营利协会对于那些作为非营利组织运营并寻求灵活、去中心化治理形式的DAOs来说是一个不错的选择。"
+                      "value": "On the other hand, an unincorporated non-profit association is a type of organization that operates for the benefit of its members and not for profit. In this type of structure, the members of the association share control over the organization and are not personally liable for its debts and obligations. An unincorporated non-profit association can be a good choice for DAOs that are operating as a non-profit organization and looking for a flexible, decentralized form of governance."
                     }
                   ]
                 },
@@ -214,7 +214,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "例如，作为非注册非营利协会运营的DAO可以被结构化为去中心化、社区驱动的组织。DAO的成员可以共同决策，组织可以以更民主的方式治理。这种结构特别适合那些专注于社会或环境事业的DAOs，其目标是推广特定的事业或理念，而不是盈利。"
+                      "value": "For instance, a DAO that operates as an unincorporated non-profit association can be structured as a decentralized, community-driven organization. The members of the DAO can make decisions together and the organization can be governed in a more democratic way. This type of structure can be particularly appropriate for DAOs that are focused on social or environmental causes, where the goal is to promote a particular cause or ideology, rather than to generate profits."
                     }
                   ]
                 },
@@ -223,7 +223,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "然而，这种结构也有缺点。例如，非注册非营利协会可能没有与公司相同的法律地位，可能无法以同样的方式筹集资金。此外，这种结构可能不太适合那些寻求盈利的组织。"
+                      "value": "However, there are also disadvantages to this type of structure. For example, an unincorporated non-profit association may not have the same legal standing as a corporation and may not be able to raise capital in the same way. Additionally, this type of structure may not be as well-suited for organizations that are looking to generate profits."
                     }
                   ]
                 },
@@ -232,7 +232,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "总之，当从法律角度看待DAOs时，重要的是要理解它们可以被视为大型普通合伙企业或非注册非营利协会。两种结构各有优缺点，结构的选择将取决于DAO的具体目标和目的。无论DAO是作为公司还是非营利组织运营，选择与组织目标和目的相一致并为其成员提供必要法律保护的结构至关重要。"
+                      "value": "In conclusion, when it comes to viewing DAOs legally, it's important to understand that they can be viewed as either a large general partnership or an unincorporated non-profit association. Both types of structures have their own pros and cons, and the choice of structure will depend on the specific goals and objectives of the DAO. Whether a DAO is operating as a company or a non-profit organization, it's essential to choose a structure that aligns with the goals and objectives of the organization and provides the necessary legal protections for its members."
                     }
                   ]
                 }
@@ -254,8 +254,8 @@
       }
     ],
     "seo": {
-      "description": "去中心化自治组织（DAOs）：导航商业和非营利目的的法律结构",
-      "title": "DAOs：导航商业和非营利的法律结构",
+      "description": "去中心化自治组织（DAOs）：探索商业和非营利目的的法律结构",
+      "title": "DAOs：探索商业和非营利的法律结构",
       "twitterCard": null,
       "image": {
         "width": 994,
@@ -268,6 +268,6 @@
   },
   "topics": [
     "DAO",
-    "Legal"
+    "法律"
   ]
 }

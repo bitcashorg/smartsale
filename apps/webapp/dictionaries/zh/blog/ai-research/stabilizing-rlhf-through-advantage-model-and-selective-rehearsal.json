@@ -3,7 +3,7 @@
   "blogContent": {
     "id": "198277360",
     "topics": [
-      "LLM",
+      "大型语言模型",
       "RLHF"
     ],
     "title": "通过优势模型和选择性复习稳定RLHF",
@@ -13,7 +13,7 @@
       "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
     },
     "_publishedAt": "2024-05-24T05:22:15+01:00",
-    "description": "摘要评论与评分",
+    "description": "摘要评论和评分",
     "thumbnail": {
       "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
     },
@@ -30,7 +30,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "发表于9月18日"
+                      "value": "Published on Sep 18"
                     }
                   ]
                 },
@@ -39,7 +39,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "作者:"
+                      "value": "Authors:"
                     },
                     {
                       "url": "https://huggingface.co/Baolin",
@@ -47,7 +47,7 @@
                       "children": [
                         {
                           "type": "span",
-                          "value": "彭宝林"
+                          "value": "Baolin Peng"
                         }
                       ]
                     },
@@ -61,13 +61,13 @@
                       "children": [
                         {
                           "type": "span",
-                          "value": "宋林峰"
+                          "value": "Linfeng Song"
                         }
                       ]
                     },
                     {
                       "type": "span",
-                      "value": ",田野,金立峰,米海涛,于东"
+                      "value": ",Ye Tian,Lifeng Jin,Haitao Mi,Dong Yu"
                     }
                   ]
                 },
@@ -77,7 +77,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "摘要"
+                      "value": "Abstract"
                     }
                   ]
                 },
@@ -86,7 +86,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "大型语言模型（LLMs）在自然语言处理方面取得了革命性进展，但使用RLHF使这些模型与人类价值观和偏好对齐仍然是一个重大挑战。这个挑战的特点是各种不稳定性，如奖励黑客和灾难性遗忘。在这份技术报告中，我们提出了两项创新来稳定RLHF训练：1）优势模型，直接建模优势分数，即与预期奖励相比的额外奖励，并调节任务间的分数分布以防止奖励黑客。2）选择性复习，通过战略性选择数据进行PPO训练和知识复习来缓解灾难性遗忘。我们在公共和专有数据集上的实验分析表明，所提出的方法不仅增加了RLHF训练的稳定性，还实现了更高的奖励分数和胜率。"
+                      "value": "Large Language Models (LLMs) have revolutionized natural language processing, yet aligning these models with human values and preferences using RLHF remains a significant challenge. This challenge is characterized by various instabilities, such as reward hacking and catastrophic forgetting. In this technical report, we propose two innovations to stabilize RLHF training: 1) Advantage Model, which directly models advantage score i.e., extra reward compared to the expected rewards and regulates score distributions across tasks to prevent reward hacking. 2) Selective Rehearsal, which mitigates catastrophic forgetting by strategically selecting data for PPO training and knowledge rehearsing. Our experimental analysis on public and proprietary datasets reveals that the proposed methods not only increase stability in RLHF training but also achieve higher reward scores and win rates."
                     }
                   ]
                 },
@@ -433,7 +433,7 @@
       }
     ],
     "seo": {
-      "description": "摘要评论与评分\n",
+      "description": "摘要评论和评分",
       "title": "通过优势模型和选择性复习稳定RLHF",
       "twitterCard": null,
       "image": {
@@ -446,7 +446,7 @@
     }
   },
   "topics": [
-    "LLM",
-    "RLHF"
+    "大语言模型",
+    "基于人类反馈的强化学习"
   ]
 }

@@ -4,16 +4,16 @@
     "id": "198277342",
     "topics": [
       "LLM",
-      "Multilingüe"
+      "Multilingue"
     ],
-    "title": "OpenBA: Un modelo secuencial asimétrico bilingüe de 15B de código abierto preentrenado desde cero",
+    "title": "OpenBA: Un modelo seq2seq bilingue asimetrico de 15B de codigo abierto preentrenado desde cero",
     "slug": "openba-an-open-sourced-15b-bilingual-asymmetric-seq2seq-model-pre-trained-from-sc",
     "authorName": "Prof. Otto Nomos",
     "authorPicture": {
       "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
     },
     "_publishedAt": "2024-05-27T03:34:02+01:00",
-    "description": "Comentario y calificación del resumen",
+    "description": "Comentario y calificacion del resumen",
     "thumbnail": {
       "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
     },
@@ -30,7 +30,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Publicado el 19 de septiembre"
+                      "value": "Published on Sep 19"
                     }
                   ]
                 },
@@ -39,7 +39,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Autores:"
+                      "value": "Authors:"
                     },
                     {
                       "url": "https://huggingface.co/ljtsuda",
@@ -133,7 +133,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Resumen"
+                      "value": "Abstract"
                     }
                   ]
                 },
@@ -142,7 +142,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Los grandes modelos de lenguaje (LLM) con miles de millones de parámetros han demostrado un rendimiento sobresaliente en varias tareas de procesamiento de lenguaje natural. Este informe presenta OpenBA, un modelo secuencial asimétrico bilingüe de 15B de código abierto, para contribuir con una variante de LLM a la comunidad de modelos de código abierto orientada al chino. Mejoramos OpenBA con técnicas efectivas y eficientes, así como adoptamos una estrategia de entrenamiento en tres etapas para entrenar el modelo desde cero. Nuestra solución también puede lograr un rendimiento muy competitivo con solo 380B tokens, lo cual es mejor que LLaMA-70B en el benchmark BELEBELE, BLOOM-176B en el benchmark MMLU, GLM-130B en el benchmark C-Eval (difícil). Este informe proporciona los detalles principales para preentrenar un modelo análogo, incluyendo el procesamiento de datos de preentrenamiento, la recopilación de datos bilingües de Flan, las observaciones empíricas que inspiran nuestro diseño de arquitectura del modelo, los objetivos de entrenamiento de diferentes etapas y otras técnicas de mejora. Hemos reestructurado nuestro código para seguir los principios de diseño de la Biblioteca de Transformadores de Huggingface, haciéndolo más conveniente para los desarrolladores, y hemos publicado puntos de control de diferentes etapas de entrenamiento en https://huggingface.co/openBA. Más detalles de nuestro proyecto están disponibles en https://github.com/OpenNLG/openBA.git."
+                      "value": "Large language models (LLMs) with billions of parameters have demonstrated outstanding performance on various natural language processing tasks. This report presents OpenBA, an open-sourced 15B bilingual asymmetric seq2seq model, to contribute an LLM variant to the Chinese-oriented open-source model community. We enhance OpenBA with effective and efficient techniques as well as adopt a three-stage training strategy to train the model from scratch. Our solution can also achieve very competitive performance with only 380B tokens, which is better than LLaMA-70B on the BELEBELE benchmark, BLOOM-176B on the MMLU benchmark, GLM-130B on the C-Eval (hard) benchmark. This report provides the main details to pre-train an analogous model, including pre-training data processing, Bilingual Flan data collection, the empirical observations that inspire our model architecture design, training objectives of different stages, and other enhancement techniques. We have refactored our code to follow the design principles of the Huggingface Transformers Library, making it more convenient for developers to use, and released checkpoints of different training stages at https://huggingface.co/openBA. More details of our project are available at https://github.com/OpenNLG/openBA.git."
                     }
                   ]
                 },
@@ -165,7 +165,7 @@
                       "children": [
                         {
                           "type": "span",
-                          "value": "Ver página de arXiv"
+                          "value": "View arXiv page"
                         }
                       ]
                     },
@@ -185,7 +185,7 @@
                       "children": [
                         {
                           "type": "span",
-                          "value": "Ver PDF"
+                          "value": "View PDF"
                         }
                       ]
                     }
@@ -197,7 +197,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Comentario"
+                      "value": "Commentary"
                     }
                   ]
                 },
@@ -206,7 +206,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "El artículo \"OpenBA: Un modelo secuencial asimétrico bilingüe de 15B de código abierto preentrenado desde cero\" introduce un modelo de lenguaje grande bilingüe adaptado para aplicaciones orientadas al chino."
+                      "value": "The paper \"OpenBA: An Open-sourced 15B Bilingual Asymmetric seq2seq Model Pre-trained from Scratch\" introduces a bilingual large language model tailored for Chinese-oriented applications."
                     }
                   ]
                 },
@@ -215,7 +215,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Puntos clave:"
+                      "value": "Key Takeaways:"
                     }
                   ]
                 },
@@ -234,11 +234,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Modelo bilingüe"
+                              "value": "Bilingual Model"
                             },
                             {
                               "type": "span",
-                              "value": ": OpenBA es un modelo bilingüe que atiende tareas orientadas al chino, llenando así un vacío en la comunidad de LLM."
+                              "value": ": OpenBA is a bilingual model catering to Chinese-oriented tasks, thereby filling a gap in the LLM community."
                             }
                           ]
                         }
@@ -255,11 +255,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Técnicas eficientes y estrategia de entrenamiento"
+                              "value": "Efficient Techniques and Training Strategy"
                             },
                             {
                               "type": "span",
-                              "value": ": Los autores utilizan técnicas eficientes y una estrategia de entrenamiento en tres etapas para entrenar el modelo desde cero. Esto asegura que el modelo sea competitivo a pesar de ser entrenado con menos tokens en comparación con otros modelos grandes."
+                              "value": ": The authors use efficient techniques and a three-stage training strategy to train the model from scratch. This ensures the model is competitive despite being trained on fewer tokens compared to other large models."
                             }
                           ]
                         }
@@ -276,11 +276,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Rendimiento competitivo"
+                              "value": "Competitive Performance"
                             },
                             {
                               "type": "span",
-                              "value": ": OpenBA logra un mejor rendimiento en múltiples benchmarks en comparación con otros modelos de última generación, con menos tokens. Esto sugiere una arquitectura y estrategias de entrenamiento eficientes."
+                              "value": ": The OpenBA achieves better performance on multiple benchmarks compared to other state-of-the-art models, with fewer tokens. This suggests efficient architecture and training strategies."
                             }
                           ]
                         }
@@ -297,11 +297,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Código abierto"
+                              "value": "Open Source"
                             },
                             {
                               "type": "span",
-                              "value": ": Los autores han hecho su modelo de código abierto e integrado con la Biblioteca de Transformadores de Huggingface. Esto facilita una adopción más fácil por parte de desarrolladores e investigadores."
+                              "value": ": The authors have made their model open source and integrated it with the Huggingface Transformers Library. This facilitates easier adoption by developers and researchers."
                             }
                           ]
                         }
@@ -314,7 +314,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Impacto potencial en el mundo real:"
+                      "value": "Potential Real-World Impact:"
                     }
                   ]
                 },
@@ -333,11 +333,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Tareas bilingües"
+                              "value": "Bilingual Tasks"
                             },
                             {
                               "type": "span",
-                              "value": ": La naturaleza bilingüe de OpenBA puede abordar una amplia gama de tareas que involucran los idiomas inglés y chino, ampliando la aplicabilidad de los LLM en regiones de habla china y aplicaciones bilingües."
+                              "value": ": OpenBA's bilingual nature can address a wide range of tasks that involve English and Chinese languages, expanding the applicability of LLMs in Chinese-speaking regions and bilingual applications."
                             }
                           ]
                         }
@@ -354,11 +354,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Promoción de la investigación orientada al chino"
+                              "value": "Promotion of Chinese-Oriented Research"
                             },
                             {
                               "type": "span",
-                              "value": ": El enfoque del modelo en tareas orientadas al chino puede fomentar más investigación y aplicaciones que atiendan a este importante grupo lingüístico."
+                              "value": ": The model's focus on Chinese-oriented tasks can encourage more research and applications catering to this significant language group."
                             }
                           ]
                         }
@@ -375,11 +375,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Herramienta accesible"
+                              "value": "Accessible Tool"
                             },
                             {
                               "type": "span",
-                              "value": ": Con el modelo integrado en Huggingface y el código asociado siendo de código abierto, los desarrolladores e investigadores pueden adoptar, modificar y extender fácilmente este modelo para diversas aplicaciones."
+                              "value": ": With the model being integrated into Huggingface and the associated code being open-sourced, developers and researchers can easily adopt, modify, and extend this model for various applications."
                             }
                           ]
                         }
@@ -396,11 +396,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Rendimiento en benchmarks"
+                              "value": "Benchmark Performance"
                             },
                             {
                               "type": "span",
-                              "value": ": El rendimiento superior en benchmarks sugiere la posibilidad de que este modelo se convierta en un estándar o referencia en tareas de PLN bilingües que involucren el chino."
+                              "value": ": The superior performance on benchmarks hints at the possibility of this model becoming a standard or reference in bilingual NLP tasks involving Chinese."
                             }
                           ]
                         }
@@ -413,7 +413,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Desafíos:"
+                      "value": "Challenges:"
                     }
                   ]
                 },
@@ -432,11 +432,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Naturaleza especializada"
+                              "value": "Specialized Nature"
                             },
                             {
                               "type": "span",
-                              "value": ": Aunque el modelo es poderoso para tareas bilingües que involucran el chino, su especialización podría limitar su aplicabilidad más amplia en otros idiomas."
+                              "value": ": While the model is powerful for bilingual tasks involving Chinese, its specialization might limit its broader applicability across other languages."
                             }
                           ]
                         }
@@ -453,11 +453,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Intensidad de recursos"
+                              "value": "Resource Intensiveness"
                             },
                             {
                               "type": "span",
-                              "value": ": Al igual que otros modelos grandes, las aplicaciones en tiempo real o los despliegues en entornos con recursos limitados podrían enfrentar desafíos."
+                              "value": ": As with other large models, real-time applications or deployments in resource-constrained environments might face challenges."
                             }
                           ]
                         }
@@ -470,7 +470,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Dado el potencial de avances en tareas bilingües que involucren el chino y su contribución a la comunidad de código abierto:"
+                      "value": "Given the potential for breakthroughs in bilingual tasks involving Chinese and its contribution to the open-source community:"
                     }
                   ]
                 },
@@ -479,7 +479,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Calificaría el impacto en el mundo real de este artículo como un 8 de 10."
+                      "value": "I'd rate the real-world impact of this paper as an 8 out of 10."
                     }
                   ]
                 },
@@ -488,7 +488,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "OpenBA llena un nicho específico en el mundo de los LLM al atender tareas bilingües que involucran el chino. La naturaleza de código abierto y la integración con plataformas populares probablemente promoverán su adopción y estimularán más investigación en la comunidad de PLN en chino."
+                      "value": "OpenBA fills a specific niche in the LLM world by catering to bilingual tasks involving Chinese. The open-source nature and integration with popular platforms will likely promote its adoption and stimulate further research in the Chinese NLP community."
                     }
                   ]
                 }
@@ -510,8 +510,8 @@
       }
     ],
     "seo": {
-      "description": "Comentario y calificación del resumen\n",
-      "title": "OpenBA: Un modelo ... bilingüe ... de 15B de código abierto ...",
+      "description": "Comentario y calificacion del resumen",
+      "title": "OpenBA: Un modelo bilingue de 15B de codigo abierto ...",
       "twitterCard": null,
       "image": {
         "width": 1456,
@@ -523,7 +523,7 @@
     }
   },
   "topics": [
-    "LLM",
-    "Multilingual"
+    "MLN",
+    "Multilingue"
   ]
 }

@@ -5,12 +5,14 @@ import {
 } from './datacms-blog-category.service'
 import { getLayoutText } from './datocms-layout.service'
 import { getPageSeoText } from './datocms-seo.service'
-import { BlogAiRecord, SiteLocale } from './graphql/generated/cms'
+import { BlogAiRecord } from './graphql/generated/cms'
 import * as fs from 'fs'
 import path from 'path'
+import { parseFile, getFilePath } from '@/lib/file'
+import { getErrorMessage } from 'smartsale-lib'
+import { Lang } from '@/dictionaries/locales'
 
-export const getBlogData = async (locale: SiteLocale) => {
-  const locales = [locale]
+export const getBlogData = async () => {
   const [
     i18n,
     pageSeo,
@@ -23,16 +25,16 @@ export const getBlogData = async (locale: SiteLocale) => {
     { bitcashData, bitcashError },
     { aiResearchData, researchError }
   ] = await Promise.all([
-    getLayoutText(locale, locales),
-    getPageSeoText('home', locale, locales),
-    getBlogCategory('bitcoin', locale, locales, undefined, 5),
-    getBlogCategory('crypto', locale, locales, undefined, 5),
-    getBlogCategory('investing', locale, locales, undefined, 5),
-    getBlogCategory('startup', locale, locales, undefined, 5),
-    getBlogCategory('ai', locale, locales, undefined, 5),
-    getBlogCategory('news', locale, locales, undefined, 5),
-    getBlogCategory('bitcash', locale, locales, undefined, 5),
-    getBlogCategory('ai-research', locale, locales, undefined, 5)
+    getLayoutText(),
+    getPageSeoText('home'),
+    getBlogCategory('bitcoin', undefined, 5),
+    getBlogCategory('crypto', undefined, 5),
+    getBlogCategory('investing', undefined, 5),
+    getBlogCategory('startup', undefined, 5),
+    getBlogCategory('ai', undefined, 5),
+    getBlogCategory('news', undefined, 5),
+    getBlogCategory('bitcash', undefined, 5),
+    getBlogCategory('ai-research', undefined, 5)
   ])
   return {
     i18n,
@@ -57,8 +59,29 @@ export const getBlogData = async (locale: SiteLocale) => {
 }
 
 export async function getArticleSections(
-  locale: SiteLocale
+  lang: Lang
 ): Promise<ArticlesSection[]> {
+  const dirPath = `/dictionaries/${lang}/blog/`
+  const fileName = `blog-index.json`
+  const filePath = path.resolve(dirPath, fileName)
+  // return cached translations
+
+  try {
+    const fileContents = parseFile(filePath)
+    return fileContents.sections
+  } catch (error) {
+    // console.log('😬 translation not found', getErrorMessage(error))
+    try {
+      const englishVersion = parseFile(`/dictionaries/en/blog/${fileName}`)
+      if (englishVersion) {
+        // console.log('😬 returning english version')
+        return englishVersion.sections
+      }
+    } catch (error) {
+      console.log('❌ error', error)
+      return []
+    }
+  }
   const {
     bitcoinData,
     cryptoData,
@@ -68,58 +91,28 @@ export async function getArticleSections(
     newsData,
     bitcashData,
     aiResearchData
-  } = await getBlogData(locale)
-  console.log('__dirname', __dirname)
-  const dirPath = path.resolve(
-    __dirname.replace('[project]/', ''),
-    `../../../../../dictionaries/${locale}/blog/`
-  )
-  const fileName = `blog-index.json`
-  const filePath = path.resolve(dirPath, fileName)
-  console.log({ dirPath, filePath })
-  // return []
-  // return cached translations
-  try {
-    const fileContents = JSON.parse(fs.readFileSync(filePath, 'utf8'))
-    return fileContents.sections
-  } catch (error) {
-    console.log('error', error)
-    try {
-      const englishVersion = JSON.parse(
-        fs.readFileSync(
-          path.resolve(
-            __dirname.replace('[project]/', ''),
-            `../../../dictionaries/en/blog/${fileName}`
-          ),
-          'utf8'
-        )
-      )
-      if (englishVersion) return englishVersion.sections
-    } catch (error) {
-      console.log('error', error)
-    }
-  }
+  } = await getBlogData()
 
   const sections: ArticlesSection[] = [
     {
       name: 'AI',
       slug: 'ai',
-      articles: (aiData?.slice(0, 5) || []) as BlogArticleRecord[]
+      articles: (aiData?.slice(0, 4) || []) as BlogArticleRecord[]
     },
     {
       name: 'AI Research',
       slug: 'ai-research',
-      articles: (aiResearchData?.slice(0, 5) || []) as BlogArticleRecord[]
+      articles: (aiResearchData?.slice(0, 4) || []) as BlogArticleRecord[]
     },
     {
       name: 'News',
       slug: 'news',
-      articles: (newsData?.slice(0, 5) || []) as BlogArticleRecord[]
+      articles: (newsData?.slice(0, 4) || []) as BlogArticleRecord[]
     },
     {
       name: 'Bitcash',
       slug: 'bitcash',
-      articles: (bitcashData?.slice(0, 5) || []) as BlogArticleRecord[]
+      articles: (bitcashData?.slice(0, 4) || []) as BlogArticleRecord[]
     },
     {
       name: 'Startup',
@@ -155,9 +148,7 @@ export async function getArticleSections(
   return sections
 }
 
-export async function getRecentArticleSections(
-  locale: SiteLocale
-): Promise<ArticlesSection[]> {
+export async function getRecentArticleSections(): Promise<ArticlesSection[]> {
   const {
     bitcoinData,
     cryptoData,
@@ -167,9 +158,9 @@ export async function getRecentArticleSections(
     newsData,
     bitcashData,
     aiResearchData
-  } = await getBlogData(locale)
+  } = await getBlogData()
 
-  const recentsArticles = [
+  const recentArticles = [
     {
       name: 'Bitcoin',
       slug: 'bitcoin',
@@ -193,43 +184,32 @@ export async function getRecentArticleSections(
     }
   ]
 
-  return recentsArticles
+  return recentArticles
 }
 
-export async function getBlogCategoryLandingData(
-  locale: SiteLocale,
-  category: string
-) {
+export async function getBlogCategoryLandingData(lang: Lang, category: string) {
   const [i18n, categories, pageSeo] = await Promise.all([
-    getLayoutText(locale, [locale]),
-    getBlogCategory(category, locale, [locale], undefined, 100),
-    getPageSeoText(category, locale, [locale])
+    getLayoutText(),
+    getBlogCategory(category, undefined, 100),
+    getPageSeoText(category)
   ])
 
-  const dirPath = path.resolve(
-    __dirname.replace('[project]/', ''),
-    `../../../../../dictionaries/${locale}/blog/${category}`
-  )
+  const dirPath = `/dictionaries/${lang}/blog/${category}`
   const fileName = `${category}-index.json`
   const filePath = path.resolve(dirPath, fileName)
-  console.log({ dirPath, filePath })
+  // console.log('getBlogCategoryLandingData', { dirPath, filePath })
 
   // return cached translations
   try {
-    const fileContents = JSON.parse(fs.readFileSync(filePath, 'utf8'))
+    const fileContents = parseFile(filePath)
     return fileContents
   } catch (error) {
     // console.log('error', error)
     try {
-      const englishVersion = JSON.parse(
-        fs.readFileSync(
-          path.resolve(
-            __dirname.replace('[project]/', ''),
-            `../../../dictionaries/en/blog/${category}/${fileName}`
-          ),
-          'utf8'
-        )
+      const englishVersion = parseFile(
+        `/dictionaries/en/blog/${category}/${fileName}`
       )
+
       if (englishVersion) return englishVersion
     } catch (error) {}
   }
@@ -272,8 +252,8 @@ export async function getBlogCategoryLandingData(
 
   const result = { sections, pageSeo }
 
-  fs.mkdirSync(dirPath, { recursive: true })
-  fs.writeFileSync(filePath, JSON.stringify(result, null, 2))
+  fs.mkdirSync(getFilePath(dirPath), { recursive: true })
+  fs.writeFileSync(getFilePath(filePath), JSON.stringify(result, null, 2))
 
   return result
 }
@@ -285,42 +265,29 @@ export type BlogArticleData = {
 }
 
 export async function getBlogArticleData(
-  locale: SiteLocale,
+  lang: Lang,
   category: string,
   slug: string
 ) {
-  const dirPath = path.resolve(
-    __dirname.replace('[project]/', ''),
-    `../../../../../dictionaries/${locale}/blog/${category}`
-  )
+  const dirPath = `dictionaries/${lang}/blog/${category}`
   const fileName = `${slug}.json`
   const filePath = path.resolve(dirPath, fileName)
-  console.log({ dirPath, filePath })
 
   // return cached translations
   try {
-    const fileContents: BlogArticleData = JSON.parse(
-      fs.readFileSync(filePath, 'utf8')
-    )
+    const fileContents: BlogArticleData = parseFile(filePath)
     return fileContents
   } catch (error) {
-    // console.log('__dirname', __dirname)
-    const englishVersion: BlogArticleData = JSON.parse(
-      fs.readFileSync(
-        path.resolve(
-          __dirname.replace('[project]/', ''),
-          `../../../dictionaries/en/blog/${category}/${slug}.json`
-        ),
-        'utf8'
-      )
+    const englishVersion: BlogArticleData = parseFile(
+      `/dictionaries/en/blog/${category}/${slug}.json`
     )
     if (englishVersion) return englishVersion
   }
 
   // console.log('getBlogArticleData', { locale, category, slug })
   const [i18n, categories] = await Promise.all([
-    getLayoutText(locale, [locale]),
-    getBlogCategory(category, locale, [locale], {
+    getLayoutText(),
+    getBlogCategory(category, {
       slug: {
         eq: slug
       }
@@ -344,7 +311,7 @@ export async function getBlogArticleData(
   const topics = blogContent?.topics
 
   if (topics.length > 0) {
-    relatedBlogs = await getBlogCategory(category, locale, [locale], {
+    relatedBlogs = await getBlogCategory(category, {
       slug: {
         neq: slug
       }
@@ -374,9 +341,9 @@ export async function getBlogArticleData(
 
   // always create an english dictionary
   const result: BlogArticleData = { relatedBlogs, blogContent, topics }
-
-  fs.mkdirSync(dirPath, { recursive: true })
-  fs.writeFileSync(filePath, JSON.stringify(result, null, 2))
+  const fullPath = getFilePath(filePath)
+  fs.mkdirSync(path.dirname(fullPath), { recursive: true })
+  fs.writeFileSync(fullPath, JSON.stringify(result, null, 2))
 
   return result
 }

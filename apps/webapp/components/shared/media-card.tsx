@@ -23,7 +23,7 @@ export function MediaCard({ video }: MediaCardProps) {
                 alt={video.snippet.title}
                 sizes="(max-width: 768px) 350px, (max-width: 1200px) 800px, 600px"
                 loading="lazy"
-                className="transition-all ease-in-out bg-zoom"
+                className="object-cover transition-all ease-in-out rounded-md bg-zoom"
                 fill
               />
             </figure>
@@ -35,6 +35,7 @@ export function MediaCard({ video }: MediaCardProps) {
           </CardContent>
         </Card>
       </DialogTrigger>
+
       <DialogContent className="sm:max-w-[1000px]">
         <DialogHeader>
           <DialogTitle>{video.snippet.title}</DialogTitle>

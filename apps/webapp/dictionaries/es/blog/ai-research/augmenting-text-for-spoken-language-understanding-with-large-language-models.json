@@ -3,17 +3,17 @@
   "blogContent": {
     "id": "198277253",
     "topics": [
-      "LLM",
+      "MLG",
       "Audio"
     ],
-    "title": "Aumentando el texto para la comprensión del lenguaje hablado con Modelos de Lenguaje Grandes",
+    "title": "Aumentando el texto para la comprension del lenguaje hablado con Modelos de Lenguaje Grandes",
     "slug": "augmenting-text-for-spoken-language-understanding-with-large-language-models",
     "authorName": "Prof. Otto Nomos",
     "authorPicture": {
       "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
     },
     "_publishedAt": "2024-05-25T03:37:49+01:00",
-    "description": "Comentario y Calificación del Resumen",
+    "description": "Comentario y Calificacion del Resumen",
     "thumbnail": {
       "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
     },
@@ -30,7 +30,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Publicado el 17 de septiembre"
+                      "value": "Published on Sep 17"
                     }
                   ]
                 },
@@ -39,7 +39,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Autores:Roshan Sharma,Suyoun Kim,Daniel Lazar,Trang Le,Akshat Shrivastava,Kwanghoon Ahn,Piyush Kansal,Leda Sari,Ozlem Kalinli,Michael Seltzer"
+                      "value": "Authors:Roshan Sharma,Suyoun Kim,Daniel Lazar,Trang Le,Akshat Shrivastava,Kwanghoon Ahn,Piyush Kansal,Leda Sari,Ozlem Kalinli,Michael Seltzer"
                     }
                   ]
                 },
@@ -49,7 +49,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Resumen"
+                      "value": "Abstract"
                     }
                   ]
                 },
@@ -58,7 +58,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "El análisis semántico hablado (SSP) implica generar análisis comprensibles por máquinas a partir del habla de entrada. Entrenar modelos robustos para dominios de aplicación existentes representados en datos de entrenamiento o extenderse a nuevos dominios requiere tripletes correspondientes de datos de análisis semántico de transcripción de habla, lo cual es costoso de obtener. En este artículo, abordamos este desafío examinando métodos que pueden usar datos de análisis semántico de transcripción (texto no emparejado) sin el habla correspondiente. Primero, cuando el texto no emparejado se extrae de corpus textuales existentes, se comparan el Texto de Audio Conjunto (JAT) y el Texto a Voz (TTS) como formas de generar representaciones de habla para texto no emparejado. Los experimentos en el conjunto de datos STOP muestran que el texto no emparejado de dominios existentes y nuevos mejora el rendimiento en un 2% y un 30% en coincidencia exacta (EM) absoluta, respectivamente. En segundo lugar, consideramos el escenario cuando el texto no emparejado no está disponible en corpus textuales existentes. Proponemos solicitar a los Modelos de Lenguaje Grandes (LLM) que generen texto no emparejado para dominios existentes y nuevos. Los experimentos muestran que ejemplos y palabras que co-ocurren con intenciones pueden usarse para generar texto no emparejado con Llama 2.0. Usar el texto generado con JAT y TTS para el análisis semántico hablado mejora EM en STOP en un 1.4% y un 2.6% absoluto para dominios existentes y nuevos, respectivamente."
+                      "value": "Spoken semantic parsing (SSP) involves generating machine-comprehensible parses from input speech. Training robust models for existing application domains represented in training data or extending to new domains requires corresponding triplets of speech-transcript-semantic parse data, which is expensive to obtain. In this paper, we address this challenge by examining methods that can use transcript-semantic parse data (unpaired text) without corresponding speech. First, when unpaired text is drawn from existing textual corpora, Joint Audio Text (JAT) and Text-to-Speech (TTS) are compared as ways to generate speech representations for unpaired text. Experiments on the STOP dataset show that unpaired text from existing and new domains improves performance by 2% and 30% in absolute Exact Match (EM) respectively. Second, we consider the setting when unpaired text is not available in existing textual corpora. We propose to prompt Large Language Models (LLMs) to generate unpaired text for existing and new domains. Experiments show that examples and words that co-occur with intents can be used to generate unpaired text with Llama 2.0. Using the generated text with JAT and TTS for spoken semantic parsing improves EM on STOP by 1.4% and 2.6% absolute for existing and new domains respectively."
                     }
                   ]
                 },
@@ -81,7 +81,7 @@
                       "children": [
                         {
                           "type": "span",
-                          "value": "Ver página de arXiv"
+                          "value": "View arXiv page"
                         }
                       ]
                     },
@@ -101,7 +101,7 @@
                       "children": [
                         {
                           "type": "span",
-                          "value": "Ver PDF"
+                          "value": "View PDF"
                         }
                       ]
                     }
@@ -113,7 +113,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Comentario"
+                      "value": "Commentary"
                     }
                   ]
                 },
@@ -122,7 +122,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "El artículo \"Aumentando el texto para la comprensión del lenguaje hablado con Modelos de Lenguaje Grandes\" trata sobre el análisis semántico hablado (SSP). SSP tiene como objetivo convertir la entrada hablada en formatos legibles por máquinas. Aquí está el desglose:"
+                      "value": "The paper \"Augmenting text for spoken language understanding with Large Language Models\" deals with spoken semantic parsing (SSP). SSP aims to convert spoken input into machine-readable formats. Here's the breakdown:"
                     }
                   ]
                 },
@@ -131,7 +131,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Puntos Clave:"
+                      "value": "Key Takeaways:"
                     }
                   ]
                 },
@@ -150,11 +150,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Desafíos de Datos"
+                              "value": "Data Challenges"
                             },
                             {
                               "type": "span",
-                              "value": ": Obtener un conjunto de datos que contenga datos de análisis semántico de transcripción de habla es costoso."
+                              "value": ": Obtaining a dataset that contains speech-transcript-semantic parse data is costly."
                             }
                           ]
                         }
@@ -171,11 +171,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Utilización de Texto No Emparejado"
+                              "value": "Utilizing Unpaired Text"
                             },
                             {
                               "type": "span",
-                              "value": ": La investigación investiga la generación de representaciones de habla a partir de datos de análisis semántico de transcripción que no tienen habla correspondiente."
+                              "value": ": The research investigates the generation of speech representations from transcript-semantic parse data that does not have corresponding speech."
                             }
                           ]
                         }
@@ -192,11 +192,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Dos Enfoques"
+                              "value": "Two Approaches"
                             },
                             {
                               "type": "span",
-                              "value": ": El artículo examina dos métodos, Texto de Audio Conjunto (JAT) y Texto a Voz (TTS), para generar representaciones de habla."
+                              "value": ": The paper looks at two methods, Joint Audio Text (JAT) and Text-to-Speech (TTS), to generate speech representations."
                             }
                           ]
                         }
@@ -213,11 +213,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Mejoras Significativas"
+                              "value": "Significant Improvements"
                             },
                             {
                               "type": "span",
-                              "value": ": Usar texto no emparejado de dominios existentes y nuevos mostró mejoras en el rendimiento de coincidencia exacta (EM) en un 2% y un 30%, respectivamente."
+                              "value": ": Using unpaired text from existing and new domains showed improvements in Exact Match (EM) performance by 2% and 30%, respectively."
                             }
                           ]
                         }
@@ -234,11 +234,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Generación de Datos con LLMs"
+                              "value": "Generating Data with LLMs"
                             },
                             {
                               "type": "span",
-                              "value": ": En ausencia de texto no emparejado listo para usar, solicitan a los Modelos de Lenguaje Grandes (como Llama 2.0) que generen texto adecuado, mejorando aún más el rendimiento."
+                              "value": ": In the absence of ready-to-use unpaired text, they prompt Large Language Models (like Llama 2.0) to generate suitable text, further enhancing the performance."
                             }
                           ]
                         }
@@ -251,7 +251,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Impacto Potencial en el Mundo Real:"
+                      "value": "Potential Real-World Impact:"
                     }
                   ]
                 },
@@ -270,11 +270,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Eficiencia de Costos"
+                              "value": "Cost Efficiency"
                             },
                             {
                               "type": "span",
-                              "value": ": Al aprovechar el texto no emparejado, la investigación podría reducir sustancialmente los costos asociados con la recopilación de datos de análisis semántico de transcripción de habla específicos de dominio."
+                              "value": ": By leveraging unpaired text, the research could substantially reduce the costs associated with collecting domain-specific speech-transcript-semantic parse data."
                             }
                           ]
                         }
@@ -291,11 +291,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Expansión de Dominios"
+                              "value": "Domain Expansion"
                             },
                             {
                               "type": "span",
-                              "value": ": Este método puede usarse para expandir rápidamente las capacidades de comprensión del lenguaje hablado a nuevos dominios, haciendo que los asistentes de voz y otros sistemas basados en el habla sean más versátiles."
+                              "value": ": This method can be used to rapidly expand spoken language understanding capabilities to new domains, making voice assistants and other speech-based systems more versatile."
                             }
                           ]
                         }
@@ -312,11 +312,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Mejora de la Precisión"
+                              "value": "Improved Accuracy"
                             },
                             {
                               "type": "span",
-                              "value": ": La mejora del método en las puntuaciones de coincidencia exacta (EM) podría traducirse en mejoras en el mundo real en la comprensión y el procesamiento del lenguaje hablado."
+                              "value": ": The method's improvement in Exact Match (EM) scores could translate to real-world improvements in understanding and processing spoken language."
                             }
                           ]
                         }
@@ -333,11 +333,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Flexibilidad"
+                              "value": "Flexibility"
                             },
                             {
                               "type": "span",
-                              "value": ": Aprovechar los LLMs como Llama 2.0 para generar los datos necesarios puede ser una herramienta poderosa, permitiendo una rápida adaptación a nuevas tareas y dominios sin una extensa recopilación de datos."
+                              "value": ": Leveraging LLMs like Llama 2.0 to generate necessary data can be a powerful tool, allowing for rapid adaptation to new tasks and domains without extensive data collection."
                             }
                           ]
                         }
@@ -350,7 +350,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Desafíos:"
+                      "value": "Challenges:"
                     }
                   ]
                 },
@@ -369,11 +369,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Dependencia de los LLMs"
+                              "value": "Dependence on LLMs"
                             },
                             {
                               "type": "span",
-                              "value": ": La dependencia de los LLMs significa que este método podría ser más adecuado para organizaciones o grupos de investigación con acceso a dichos modelos o los recursos computacionales para usarlos."
+                              "value": ": The reliance on LLMs means this method might be more suited for organizations or research groups with access to such models or the computational resources to use them."
                             }
                           ]
                         }
@@ -386,7 +386,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Dada la ubicuidad de los asistentes de voz y otras tecnologías basadas en el habla y el potencial que tiene este método para mejorar su rendimiento y versatilidad:"
+                      "value": "Given the ubiquity of voice assistants and other speech-based technologies and the potential this method has to improve their performance and versatility:"
                     }
                   ]
                 },
@@ -395,7 +395,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Calificaría el impacto en el mundo real de este artículo como un 8.5 de 10."
+                      "value": "I'd rate the real-world impact of this paper as an 8.5 out of 10."
                     }
                   ]
                 },
@@ -404,7 +404,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Mejorar la comprensión del lenguaje hablado es crucial para la próxima generación de aplicaciones impulsadas por voz. Este método ofrece una forma de mejorar estos sistemas sin los costos tradicionalmente altos de la recopilación de datos."
+                      "value": "Improving spoken language understanding is crucial for the next generation of voice-driven applications. This method offers a way to enhance these systems without the traditionally high costs of data collection."
                     }
                   ]
                 }
@@ -426,8 +426,8 @@
       }
     ],
     "seo": {
-      "description": "Comentario y Calificación del Resumen\n",
-      "title": "Aumentando el texto para la comprensión del lenguaje hablado ...",
+      "description": "Comentario y Calificacion del Resumen",
+      "title": "Aumentando el texto para la comprension del lenguaje hablado ...",
       "twitterCard": null,
       "image": {
         "width": 1456,

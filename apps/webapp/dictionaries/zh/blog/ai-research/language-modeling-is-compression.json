@@ -13,7 +13,7 @@
       "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
     },
     "_publishedAt": "2024-05-25T03:37:32+01:00",
-    "description": "摘要评论与评分",
+    "description": "摘要评论和评分",
     "thumbnail": {
       "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
     },
@@ -30,7 +30,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "发布于9月19日"
+                      "value": "Published on Sep 19"
                     }
                   ]
                 },
@@ -39,7 +39,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "作者：Grégoire Delétang,Anian Ruoss,"
+                      "value": "Authors:Grégoire Delétang,Anian Ruoss,"
                     },
                     {
                       "url": "https://huggingface.co/padqn",
@@ -77,7 +77,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "摘要"
+                      "value": "Abstract"
                     }
                   ]
                 },
@@ -86,7 +86,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "长期以来，人们已经确立了预测模型可以转化为无损压缩器，反之亦然。近年来，机器学习社区集中在训练越来越大且强大的自监督（语言）模型上。由于这些大型语言模型表现出令人印象深刻的预测能力，它们也有能力成为强大的压缩器。在这项工作中，我们提倡通过压缩的视角来看待预测问题，并评估大型（基础）模型的压缩能力。我们展示了大型语言模型是强大的通用预测器，并且压缩视角为缩放法则、标记化和上下文学习提供了新的见解。例如，Chinchilla 70B主要训练在文本上，但它将ImageNet图片压缩到原始大小的43.4%，并将LibriSpeech样本压缩到原始大小的16.4%，分别击败了PNG（58.5%）和FLAC（30.3%）等领域特定压缩器。最后，我们展示了预测-压缩等价性使我们能够使用任何压缩器（如gzip）构建条件生成模型。"
+                      "value": "It has long been established that predictive models can be transformed into lossless compressors and vice versa. Incidentally, in recent years, the machine learning community has focused on training increasingly large and powerful self-supervised (language) models. Since these large language models exhibit impressive predictive capabilities, they are well-positioned to be strong compressors. In this work, we advocate for viewing the prediction problem through the lens of compression and evaluate the compression capabilities of large (foundation) models. We show that large language models are powerful general-purpose predictors and that the compression viewpoint provides novel insights into scaling laws, tokenization, and in-context learning. For example, Chinchilla 70B, while trained primarily on text, compresses ImageNet patches to 43.4% and LibriSpeech samples to 16.4% of their raw size, beating domain-specific compressors like PNG (58.5%) or FLAC (30.3%), respectively. Finally, we show that the prediction-compression equivalence allows us to use any compressor (like gzip) to build a conditional generative model."
                     }
                   ]
                 },
@@ -454,7 +454,7 @@
       }
     ],
     "seo": {
-      "description": "摘要评论与评分\n",
+      "description": "摘要评论和评分",
       "title": "语言建模即压缩",
       "twitterCard": null,
       "image": {
@@ -467,7 +467,7 @@
     }
   },
   "topics": [
-    "LLM",
-    "Compression"
+    "大语言模型",
+    "压缩"
   ]
 }

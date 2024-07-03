@@ -1,8 +1,8 @@
 import { Card } from '@/components/ui/card'
 import * as Icons from 'lucide-react'
 import { Section } from '@/components/shared/section'
-import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
 import { Feature } from '@/types/home'
+import { Lang } from '@/dictionaries/locales'
 
 export function WhyChooseUs({ lang, dict }: WhyChooseUsProps) {
   const content = dict.whyChooseUs
@@ -12,10 +12,10 @@ export function WhyChooseUs({ lang, dict }: WhyChooseUsProps) {
         {content.features.map((feature: Feature) => {
           const IconComponent = Icons[feature.icon] as React.ElementType
           return (
-            <Card className="flex flex-col items-center justify-center space-y-4 border-card/30 bg-card p-6 backdrop-blur-lg">
-              <IconComponent className="h-12 w-12 text-gray-900 dark:text-gray-50" />
+            <Card className="flex flex-col items-center justify-center p-6 space-y-4 border-card/30 bg-card backdrop-blur-lg">
+              <IconComponent className="w-12 h-12 text-gray-900 dark:text-gray-50" />
               <h3 className="text-lg font-semibold">{feature.title}</h3>
-              <p className="parragraph text-center text-sm text-gray-500 dark:text-gray-400">
+              <p className="text-sm text-center text-gray-500 parragraph dark:text-gray-400">
                 {feature.description}
               </p>
             </Card>
@@ -28,5 +28,5 @@ export function WhyChooseUs({ lang, dict }: WhyChooseUsProps) {
 
 export interface WhyChooseUsProps {
   dict: any
-  lang: SiteLocale
+  lang: Lang
 }

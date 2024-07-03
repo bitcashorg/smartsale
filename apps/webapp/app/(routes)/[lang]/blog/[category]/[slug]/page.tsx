@@ -5,8 +5,8 @@ import { getBlogCategory } from '@/services/datocms/datacms-blog-category.servic
 import { generateMetadataFromSEO } from '@/lib/seo'
 import { BlogPage } from '@/components/routes/blog/article'
 import { getAllArticles } from '@/services/datocms/datocms-all-articles.service'
-import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
-import { locales } from '@/dictionaries/locales'
+import { Lang, locales } from '@/dictionaries/locales'
+import { generateShortLink } from '@/actions'
 
 export default async function ArticlePage(props: ArticlePageProps) {
   const {
@@ -14,20 +14,20 @@ export default async function ArticlePage(props: ArticlePageProps) {
   } = props
 
   const data = await getBlogArticleData(lang, category, slug)
+
   if (!data) return notFound()
 
   const { blogContent, relatedBlogs } = data
+  const canonicalUrl = `https://bitlauncher.ai/${lang}/${category}/${slug}`
+  const dub = await generateShortLink(canonicalUrl)
 
   return (
-    <section>
-      <main>
-        <BlogPage
-          blogContent={blogContent}
-          params={props.params}
-          relatedBlogs={relatedBlogs}
-        />
-      </main>
-    </section>
+    <BlogPage
+      blogContent={blogContent}
+      params={props.params}
+      relatedBlogs={relatedBlogs}
+      shortlink={dub.data?.shortLink || canonicalUrl}
+    />
   )
 }
 
@@ -37,7 +37,7 @@ export async function generateMetadata(props: any): Promise<Metadata> {
   } = props
 
   const locales = [lang]
-  const categories = await getBlogCategory(category, lang, locales, {
+  const categories = await getBlogCategory(category, {
     slug: {
       eq: slug
     }
@@ -71,11 +71,10 @@ export async function generateMetadata(props: any): Promise<Metadata> {
 }
 
 export async function generateStaticParams(): Promise<ArticlePageParams[]> {
-  // const locales = ['en', 'es'] as SiteLocale[] // english only for now
   const params: ArticlePageParams[] = (
     await Promise.all(
       locales.map(async (lang): Promise<ArticlePageParams[]> => {
-        const allArticles = await getAllArticles(lang, locales)
+        const allArticles = await getAllArticles()
         if (!allArticles) throw new Error('sections not found')
 
         const staticParams: ArticlePageParams[] = allArticles
@@ -96,5 +95,5 @@ export async function generateStaticParams(): Promise<ArticlePageParams[]> {
   return params
 }
 
-type ArticlePageParams = { lang: SiteLocale; category: string; slug: string }
+type ArticlePageParams = { lang: Lang; category: string; slug: string }
 type ArticlePageProps = { params: ArticlePageParams }

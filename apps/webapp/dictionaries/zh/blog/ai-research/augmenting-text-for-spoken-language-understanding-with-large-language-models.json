@@ -3,17 +3,17 @@
   "blogContent": {
     "id": "198277253",
     "topics": [
-      "LLM",
+      "大型语言模型",
       "音频"
     ],
-    "title": "用大型语言模型增强口语理解的文本",
+    "title": "使用大型语言模型增强口语理解的文本",
     "slug": "augmenting-text-for-spoken-language-understanding-with-large-language-models",
     "authorName": "Prof. Otto Nomos",
     "authorPicture": {
       "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
     },
     "_publishedAt": "2024-05-25T03:37:49+01:00",
-    "description": "摘要评论与评分",
+    "description": "摘要评论和评分",
     "thumbnail": {
       "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
     },
@@ -30,7 +30,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "发表于9月17日"
+                      "value": "Published on Sep 17"
                     }
                   ]
                 },
@@ -39,7 +39,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "作者: Roshan Sharma, Suyoun Kim, Daniel Lazar, Trang Le, Akshat Shrivastava, Kwanghoon Ahn, Piyush Kansal, Leda Sari, Ozlem Kalinli, Michael Seltzer"
+                      "value": "Authors:Roshan Sharma,Suyoun Kim,Daniel Lazar,Trang Le,Akshat Shrivastava,Kwanghoon Ahn,Piyush Kansal,Leda Sari,Ozlem Kalinli,Michael Seltzer"
                     }
                   ]
                 },
@@ -49,7 +49,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "摘要"
+                      "value": "Abstract"
                     }
                   ]
                 },
@@ -58,7 +58,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "口语语义解析（SSP）涉及从输入语音生成机器可理解的解析。为训练数据中现有应用领域或扩展到新领域训练稳健模型需要语音-转录-语义解析数据的对应三元组，这类数据获得成本高。本文通过研究无需对应语音的转录-语义解析数据（无配对文本）的方法来解决这一挑战。首先，当无配对文本来自现有文本语料库时，将联合音频文本（JAT）和文本到语音（TTS）作为生成无配对文本语音表示的方法进行比较。在STOP数据集上的实验表明，使用现有和新领域的无配对文本分别在绝对精确匹配（EM）中提高了2%和30%。其次，当现有文本语料库中不存在无配对文本时，我们建议提示大型语言模型（LLM）为现有和新领域生成无配对文本。实验表明，可以使用与意图共同出现的例子和词汇生成无配对文本，并使用Llama 2.0进行生成。在STOP上的使用JAT和TTS进行口语语义解析，分别在现有和新领域提高了1.4%和2.6%的绝对EM。"
+                      "value": "Spoken semantic parsing (SSP) involves generating machine-comprehensible parses from input speech. Training robust models for existing application domains represented in training data or extending to new domains requires corresponding triplets of speech-transcript-semantic parse data, which is expensive to obtain. In this paper, we address this challenge by examining methods that can use transcript-semantic parse data (unpaired text) without corresponding speech. First, when unpaired text is drawn from existing textual corpora, Joint Audio Text (JAT) and Text-to-Speech (TTS) are compared as ways to generate speech representations for unpaired text. Experiments on the STOP dataset show that unpaired text from existing and new domains improves performance by 2% and 30% in absolute Exact Match (EM) respectively. Second, we consider the setting when unpaired text is not available in existing textual corpora. We propose to prompt Large Language Models (LLMs) to generate unpaired text for existing and new domains. Experiments show that examples and words that co-occur with intents can be used to generate unpaired text with Llama 2.0. Using the generated text with JAT and TTS for spoken semantic parsing improves EM on STOP by 1.4% and 2.6% absolute for existing and new domains respectively."
                     }
                   ]
                 },
@@ -81,7 +81,7 @@
                       "children": [
                         {
                           "type": "span",
-                          "value": "查看arXiv页面"
+                          "value": "View arXiv page"
                         }
                       ]
                     },
@@ -101,7 +101,7 @@
                       "children": [
                         {
                           "type": "span",
-                          "value": "查看PDF"
+                          "value": "View PDF"
                         }
                       ]
                     }
@@ -113,7 +113,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "评论"
+                      "value": "Commentary"
                     }
                   ]
                 },
@@ -122,7 +122,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "论文《用大型语言模型增强口语理解的文本》探讨了口语语义解析（SSP）。SSP旨在将口头输入转换为机器可读格式。以下是重点内容："
+                      "value": "The paper \"Augmenting text for spoken language understanding with Large Language Models\" deals with spoken semantic parsing (SSP). SSP aims to convert spoken input into machine-readable formats. Here's the breakdown:"
                     }
                   ]
                 },
@@ -131,7 +131,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "主要收获:"
+                      "value": "Key Takeaways:"
                     }
                   ]
                 },
@@ -150,11 +150,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "数据挑战"
+                              "value": "Data Challenges"
                             },
                             {
                               "type": "span",
-                              "value": ": 获取包含语音-转录-语义解析数据的数据集成本高。"
+                              "value": ": Obtaining a dataset that contains speech-transcript-semantic parse data is costly."
                             }
                           ]
                         }
@@ -171,11 +171,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "利用无配对文本"
+                              "value": "Utilizing Unpaired Text"
                             },
                             {
                               "type": "span",
-                              "value": ": 研究调查了从没有对应语音的转录-语义解析数据生成语音表示的方法。"
+                              "value": ": The research investigates the generation of speech representations from transcript-semantic parse data that does not have corresponding speech."
                             }
                           ]
                         }
@@ -192,11 +192,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "两种方法"
+                              "value": "Two Approaches"
                             },
                             {
                               "type": "span",
-                              "value": ": 论文研究了两种生成语音表示的方法，联合音频文本（JAT）和文本到语音（TTS）。"
+                              "value": ": The paper looks at two methods, Joint Audio Text (JAT) and Text-to-Speech (TTS), to generate speech representations."
                             }
                           ]
                         }
@@ -213,11 +213,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "显著改进"
+                              "value": "Significant Improvements"
                             },
                             {
                               "type": "span",
-                              "value": ": 使用现有和新领域的无配对文本提高了2%和30%的精确匹配（EM）性能。"
+                              "value": ": Using unpaired text from existing and new domains showed improvements in Exact Match (EM) performance by 2% and 30%, respectively."
                             }
                           ]
                         }
@@ -234,11 +234,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "用LLM生成数据"
+                              "value": "Generating Data with LLMs"
                             },
                             {
                               "type": "span",
-                              "value": ": 在没有现成的无配对文本时，他们提议使用大型语言模型（如Llama 2.0）生成合适的文本，进一步提高性能。"
+                              "value": ": In the absence of ready-to-use unpaired text, they prompt Large Language Models (like Llama 2.0) to generate suitable text, further enhancing the performance."
                             }
                           ]
                         }
@@ -251,7 +251,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "潜在的现实世界影响:"
+                      "value": "Potential Real-World Impact:"
                     }
                   ]
                 },
@@ -270,11 +270,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "成本效率"
+                              "value": "Cost Efficiency"
                             },
                             {
                               "type": "span",
-                              "value": ": 利用无配对文本，这项研究可以显著降低收集特定领域语音-转录-语义解析数据的成本。"
+                              "value": ": By leveraging unpaired text, the research could substantially reduce the costs associated with collecting domain-specific speech-transcript-semantic parse data."
                             }
                           ]
                         }
@@ -291,11 +291,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "领域扩展"
+                              "value": "Domain Expansion"
                             },
                             {
                               "type": "span",
-                              "value": ": 这种方法可以快速扩展到新领域，增强语音助手和其他语音系统的多功能性。"
+                              "value": ": This method can be used to rapidly expand spoken language understanding capabilities to new domains, making voice assistants and other speech-based systems more versatile."
                             }
                           ]
                         }
@@ -312,11 +312,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "精度提高"
+                              "value": "Improved Accuracy"
                             },
                             {
                               "type": "span",
-                              "value": ": 方法的精确匹配（EM）评分改进可能会转化为对口语理解和处理的实际改进。"
+                              "value": ": The method's improvement in Exact Match (EM) scores could translate to real-world improvements in understanding and processing spoken language."
                             }
                           ]
                         }
@@ -333,11 +333,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "灵活性"
+                              "value": "Flexibility"
                             },
                             {
                               "type": "span",
-                              "value": ": 利用大型语言模型如Llama 2.0生成必要的数据可以成为强大的工具，允许快速适应新任务和新领域，无需大量数据收集。"
+                              "value": ": Leveraging LLMs like Llama 2.0 to generate necessary data can be a powerful tool, allowing for rapid adaptation to new tasks and domains without extensive data collection."
                             }
                           ]
                         }
@@ -350,7 +350,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "挑战:"
+                      "value": "Challenges:"
                     }
                   ]
                 },
@@ -369,11 +369,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "依赖LLM"
+                              "value": "Dependence on LLMs"
                             },
                             {
                               "type": "span",
-                              "value": ": 这一方法依赖于大型语言模型，因此可能更适合拥有此类模型或计算资源的组织或研究群体。"
+                              "value": ": The reliance on LLMs means this method might be more suited for organizations or research groups with access to such models or the computational resources to use them."
                             }
                           ]
                         }
@@ -386,7 +386,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "鉴于语音助手和其他语音技术的普及及其提高性能和多功能性的潜力:"
+                      "value": "Given the ubiquity of voice assistants and other speech-based technologies and the potential this method has to improve their performance and versatility:"
                     }
                   ]
                 },
@@ -395,7 +395,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "我对本文的现实世界影响评分为8.5（满分10）。"
+                      "value": "I'd rate the real-world impact of this paper as an 8.5 out of 10."
                     }
                   ]
                 },
@@ -404,7 +404,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "提高口语理解对下一代语音驱动应用至关重要。这种方法提供了一种在不承担传统数据收集高成本的情况下增强这些系统的方法。"
+                      "value": "Improving spoken language understanding is crucial for the next generation of voice-driven applications. This method offers a way to enhance these systems without the traditionally high costs of data collection."
                     }
                   ]
                 }
@@ -426,8 +426,8 @@
       }
     ],
     "seo": {
-      "description": "摘要评论与评分\n",
-      "title": "用大型语言模型增强口语理解的文本",
+      "description": "摘要评论和评分",
+      "title": "使用大型语言模型增强口语理解的文本...",
       "twitterCard": null,
       "image": {
         "width": 1456,
@@ -439,7 +439,7 @@
     }
   },
   "topics": [
-    "LLM",
-    "Audio"
+    "大语言模型",
+    "音频"
   ]
 }

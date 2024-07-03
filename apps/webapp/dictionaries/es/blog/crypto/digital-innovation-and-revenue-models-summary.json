@@ -6,20 +6,20 @@
         "DAO",
         "Resumen"
       ],
-      "title": "¿Para qué es la votación? [Resumen]",
+      "title": "¿Para que sirve votar? [Resumen]",
       "slug": "what-is-voting-for-summary",
       "authorName": "Crypto Clairity",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T09:10:58+01:00",
-      "description": "Desentraña la esencia de la votación dentro de los sistemas descentralizados. Obtén información sobre el verdadero propósito y poder de la votación en blockchain.",
+      "description": "Desentrañe la esencia de la votacion en sistemas descentralizados. Obtenga informacion sobre el verdadero proposito y poder del voto en blockchain.",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1690859305-cbc6-img1.png"
       },
       "seo": {
-        "title": "¿Para qué es la votación? [Resumen]",
-        "description": "Desentraña la esencia de la votación dentro de los sistemas descentralizados. Obtén información sobre el verdadero propósito y poder de la votación en blockchain."
+        "title": "¿Para que sirve votar? [Resumen]",
+        "description": "Desentrañe la esencia de la votacion en sistemas descentralizados. Obtenga informacion sobre el verdadero proposito y poder del voto en blockchain."
       }
     },
     {
@@ -28,20 +28,20 @@
         "DAO",
         "Resumen"
       ],
-      "title": "¿Para qué es la gobernanza? [Resumen]",
+      "title": "¿Para que sirve la gobernanza? [Resumen]",
       "slug": "what-is-governance-for-summary",
       "authorName": "Crypto Clairity",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T09:10:45+01:00",
-      "description": "Explora el papel y la importancia de la gobernanza en los sistemas blockchain. Entiende cómo la gobernanza impulsa la descentralización y el crecimiento.",
+      "description": "Explore el papel y la importancia de la gobernanza en los sistemas blockchain. Comprenda como la gobernanza impulsa la descentralizacion y el crecimiento.",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1690859755-cbc7-img1.png"
       },
       "seo": {
-        "title": "¿Para qué es la gobernanza? [Resumen]",
-        "description": "Explora el papel y la importancia de la gobernanza en los sistemas blockchain. Entiende cómo la gobernanza impulsa la descentralización y el crecimiento.\n"
+        "title": "¿Para que sirve la gobernanza? [Resumen]",
+        "description": "Explore el papel y la importancia de la gobernanza en los sistemas blockchain. Comprenda como la gobernanza impulsa la descentralizacion y el crecimiento."
       }
     },
     {
@@ -50,38 +50,38 @@
         "Tokenomics",
         "Comentario"
       ],
-      "title": "Estructuras de incentivos en blockchain: Qué son y por qué importan [Comentario]",
+      "title": "Estructuras de incentivos en blockchain: Que son y por que son importantes [Comentario]",
       "slug": "blockchain-incentive-structures-what-they-are-and-why-they-matter-commentary",
       "authorName": "Crypto Clairity",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T09:10:02+01:00",
-      "description": "Entiende el núcleo de las estructuras de incentivos en blockchain y su importancia en impulsar el comportamiento del usuario y el éxito de la plataforma.",
+      "description": "Comprenda el nucleo de las estructuras de incentivos en blockchain y su importancia para impulsar el comportamiento del usuario y el exito de la plataforma.",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1690860807-cbc10-img1.png"
       },
       "seo": {
         "title": "Estructuras de incentivos en blockchain [Comentario]",
-        "description": "Entiende el núcleo de las estructuras de incentivos en blockchain y su importancia en impulsar el comportamiento del usuario y el éxito de la plataforma."
+        "description": "Comprenda el nucleo de las estructuras de incentivos en blockchain y su importancia para impulsar el comportamiento del usuario y el exito de la plataforma."
       }
     }
   ],
   "blogContent": {
     "id": "179948652",
     "topics": [
-      "Tokenomics",
+      "Tokenomia",
       "Industria",
       "Resumen"
     ],
-    "title": "Innovación Digital y Modelos de Ingresos [Resumen]",
+    "title": "Innovacion Digital y Modelos de Ingresos [Resumen]",
     "slug": "digital-innovation-and-revenue-models-summary",
     "authorName": "Crypto Clairity",
     "authorPicture": {
       "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
     },
     "_publishedAt": "2023-10-05T09:11:35+01:00",
-    "description": "Descubre cómo la innovación digital redefine la entrega de productos en 'Innovación Digital y Modelos de Ingresos' de Prysm Group. Explora la economía de las tecnologías emergentes.",
+    "description": "Descubre como la innovacion digital transforma la entrega de productos en 'Innovacion Digital y Modelos de Ingresos' de Prysm Group. Explora la economia de las tecnologias emergentes.",
     "thumbnail": {
       "url": "https://www.datocms-assets.com/101962/1690668517-cbr1-img1.png"
     },
@@ -99,7 +99,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Resumen, Perspectivas Clave y Consejos"
+                      "value": "Summary, Key Insights & Advice"
                     }
                   ]
                 },
@@ -108,7 +108,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Documento original: "
+                      "value": "Original paper: "
                     },
                     {
                       "url": "https://uploads-ssl.webflow.com/5ca64cec39c643e28bb7079f/6334fa62414f4e6b5126ee3e_Prysm%20Group%20Digital%20Innovation%20and%20Revenue%20Models.pdf",
@@ -122,7 +122,7 @@
                     },
                     {
                       "type": "span",
-                      "value": "Autor: The Prysm Group"
+                      "value": "Author: The Prysm Group"
                     }
                   ]
                 },
@@ -131,7 +131,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "El documento titulado \"Innovación Digital y Modelos de Ingresos\" de Prysm Group discute la economía de las tecnologías emergentes, particularmente la infraestructura de comunicación digital y redes de internet, y cómo han redefinido la forma en que se entregan los productos y servicios digitales."
+                      "value": "The document titled \"Digital Innovation and Revenue Models\" by Prysm Group discusses the economics of emerging technologies, particularly digital communication and internet networking infrastructure, and how they have reshaped the way digital products and services are delivered."
                     }
                   ]
                 },
@@ -140,7 +140,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Aquí están las perspectivas clave:"
+                      "value": "Here are the key insights:"
                     }
                   ]
                 },
@@ -159,11 +159,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Introducción (Página 3)"
+                              "value": "Introduction (Page 3)"
                             },
                             {
                               "type": "span",
-                              "value": ": El documento comienza destacando el impacto transformador de las tecnologías digitales en la entrega de productos y servicios digitales. Enfatiza la importancia de un modelo de ingresos sostenible para las empresas que ofrecen productos y servicios digitales. Una estrategia de producto y precios exitosa debe tener en cuenta las dinámicas estructurales únicas que exhiben las industrias digitales."
+                              "value": ": The document begins by highlighting the transformative impact of digital technologies on the delivery of digital products and services. It emphasizes the importance of a sustainable revenue model for businesses offering digital products and services. A successful product and pricing strategy should account for the unique structural dynamics exhibited by digital industries."
                             }
                           ]
                         }
@@ -180,11 +180,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Estructura de Costos para Bienes Tradicionales vs. Digitales (Página 3)"
+                              "value": "Cost Structure for Traditional vs. Digital Goods (Page 3)"
                             },
                             {
                               "type": "span",
-                              "value": ": La innovación digital ha llevado a industrias caracterizadas por altos costos fijos de producción y bajos costos marginales. La primera copia de un bien digital es costosa de producir, mientras que las copias adicionales cuestan una fracción de la primera. Los costos marginales de producción han disminuido virtualmente a cero en algunos casos."
+                              "value": ": Digital innovation has led to industries characterized by high fixed costs of production and low marginal costs. The first copy of a digital good is expensive to produce, while additional copies cost a fraction of the first. The marginal costs of production have decreased virtually to zero in some instances."
                             }
                           ]
                         }
@@ -201,11 +201,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Estrategias de Negocios Sostenibles para el Mundo Digital (Páginas 4-5)"
+                              "value": "Sustainable Business Strategies for the Digital World (Pages 4-5)"
                             },
                             {
                               "type": "span",
-                              "value": ": El documento discute dos estrategias principales para negocios digitales: el Modelo de Empresa Dominante y el Modelo de Producto Diferenciado. El Modelo de Empresa Dominante implica crear y defender grandes economías de escala, mientras que el Modelo de Producto Diferenciado implica ganar cuota de mercado ofreciendo un producto que se diferencie de alguna manera."
+                              "value": ": The document discusses two main strategies for digital businesses: the Dominant Firm Model and the Differentiated Product Model. The Dominant Firm Model involves creating and defending large economies of scale, while the Differentiated Product Model involves gaining market share through offering a product that is differentiated in some way."
                             }
                           ]
                         }
@@ -222,11 +222,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Marco para Estrategias de Precios (Página 7)"
+                              "value": "Framework for Pricing Strategies (Page 7)"
                             },
                             {
                               "type": "span",
-                              "value": ": El documento introduce tres estrategias clave para fijar precios de bienes y servicios en un mundo cada vez más digital: Discriminación de Precios, Precios Soportados por Terceros y una Estrategia Combinada que utiliza tanto la discriminación de precios como los precios soportados por terceros."
+                              "value": ": The document introduces three key strategies for pricing goods and services in an increasingly digital world: Price Discrimination, Third-party supported pricing, and a Combination strategy using both price discrimination and third-party supported pricing."
                             }
                           ]
                         }
@@ -239,7 +239,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Basado en estas perspectivas, aquí hay algunos consejos prácticos para startups de criptomonedas:"
+                      "value": "Based on these insights, here are some actionable advice for crypto startups:"
                     }
                   ]
                 },
@@ -258,11 +258,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Alinear Estrategia de Producto e Ingresos"
+                              "value": "Align Product and Revenue Strategy"
                             },
                             {
                               "type": "span",
-                              "value": ": Asegúrate de que tu estrategia de producto esté bien integrada con tu modelo de ingresos. Considera las dinámicas únicas de la industria digital al desarrollar estas estrategias."
+                              "value": ": Ensure your product strategy is well-integrated with your revenue model. Consider the unique dynamics of the digital industry when developing these strategies."
                             }
                           ]
                         }
@@ -279,11 +279,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Aprovechar los Efectos de Red"
+                              "value": "Leverage Network Effects"
                             },
                             {
                               "type": "span",
-                              "value": ": Si es posible, diseña tu producto para beneficiarse de los efectos de red. Esto podría implicar crear una plataforma donde el valor aumente a medida que más usuarios se unan, o incorporar características que mejoren con el uso incrementado."
+                              "value": ": If possible, design your product to benefit from network effects. This could involve creating a platform where the value increases as more users join, or incorporating features that improve with increased usage."
                             }
                           ]
                         }
@@ -300,11 +300,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Diferenciar tu Producto"
+                              "value": "Differentiate Your Product"
                             },
                             {
                               "type": "span",
-                              "value": ": Si los efectos de red no son fuertes para tu producto, enfócate en diferenciar tu producto de otros en el mercado. Esto podría ser a través de características únicas, tecnología superior o mejor experiencia de usuario."
+                              "value": ": If network effects are not strong for your product, focus on differentiating your product from others in the market. This could be through unique features, superior technology, or better user experience."
                             }
                           ]
                         }
@@ -321,11 +321,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Considerar Estrategias de Precios"
+                              "value": "Consider Pricing Strategies"
                             },
                             {
                               "type": "span",
-                              "value": ": Explora diferentes estrategias de precios como la discriminación de precios o los precios soportados por terceros. Esto podría implicar cobrar diferentes precios a diferentes clientes según su disposición a pagar, o generar ingresos a través de canales de terceros."
+                              "value": ": Explore different pricing strategies such as price discrimination or third-party supported pricing. This could involve charging different prices to different customers based on their willingness to pay, or generating revenue through third-party channels."
                             }
                           ]
                         }
@@ -342,11 +342,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Proteger tu Propiedad Intelectual"
+                              "value": "Protect Your Intellectual Property"
                             },
                             {
                               "type": "span",
-                              "value": ": Si tu estrategia de diferenciación implica crear contenido o tecnología únicos, asegúrate de tener los derechos de propiedad intelectual necesarios para protegerlo de ser copiado por competidores."
+                              "value": ": If your differentiation strategy involves creating unique content or technology, ensure you have the necessary intellectual property rights to protect it from being copied by competitors."
                             }
                           ]
                         }
@@ -363,11 +363,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Mantenerse Ágil"
+                              "value": "Stay Agile"
                             },
                             {
                               "type": "span",
-                              "value": ": Esté preparado para adaptar tus estrategias a medida que el mercado evoluciona. El espacio digital y de criptomonedas está cambiando rápidamente, por lo que es importante mantenerse flexible y receptivo a nuevas tendencias y oportunidades."
+                              "value": ": Be ready to adapt your strategies as the market evolves. The digital and crypto space is rapidly changing, so it's important to stay flexible and responsive to new trends and opportunities."
                             }
                           ]
                         },
@@ -403,7 +403,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Estudio de Caso de la Industria Musical"
+                      "value": "Music Industry Case Study"
                     }
                   ]
                 },
@@ -412,7 +412,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "El documento discute un estudio de caso sobre la industria musical, ilustrando cómo la innovación digital ha evolucionado y expandido los modelos y estrategias de negocio. Aquí están las perspectivas clave del Estudio de Caso de la Industria Musical:"
+                      "value": "https://uploads-ssl.webflow.com/5ca64cec39c643e28bb7079f/6334fa62414f4e6b5126ee3e_Prysm%20Group%20Digital%20Innovation%20and%20Revenue%20Models.pdf\n\n"
                     }
                   ]
                 },
@@ -431,11 +431,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Evolución de la Industria Musical (Página 10)"
+                              "value": "Music Industry Evolution (Page 10)"
                             },
                             {
                               "type": "span",
-                              "value": ": La industria musical ha utilizado durante mucho tiempo estrategias de discriminación de precios. Las compañías discográficas monetizaban la música a través de ventas de discos y licencias a terceros. Sin embargo, el advenimiento del intercambio de música peer-to-peer a finales de los años 90, ayudado por el desarrollo del formato MP3, amenazó los ingresos de las compañías discográficas."
+                              "value": ": The music industry has long utilized price discrimination strategies. Record companies monetized music through sales of records and licensing to third-parties. However, the advent of peer-to-peer music sharing in the late 1990s, aided by the development of the MP3 format, threatened record company revenues."
                             }
                           ]
                         }
@@ -452,11 +452,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Plataformas de Distribución Digital (Página 11)"
+                              "value": "Digital Distribution Platforms (Page 11)"
                             },
                             {
                               "type": "span",
-                              "value": ": Las discográficas lanzaron sus propias plataformas de distribución digital en respuesta al auge de las redes peer-to-peer. Se lanzaron dos servicios competidores: PressPlay, respaldado por Universal Music Group y Sony, y MusicNet, respaldado por Warner Bros., BMG y EMI. Ambos servicios ofrecían una mezcla de descargas digitales y servicios de streaming a suscriptores por una tarifa mensual, pero fracasaron debido a bibliotecas de canciones limitadas y restricciones excesivamente restrictivas sobre la cantidad de canciones que se podían descargar y transmitir."
+                              "value": ": Record labels launched their own digital distribution platforms in response to the rise of peer-to-peer networks. Two competing services were launched: PressPlay, backed by Universal Music Group and Sony, and MusicNet, backed by Warner Bros., BMG, and EMI. Both services offered a mix of digital downloads and streaming services to subscribers for a monthly fee but failed due to limited song libraries and overly-restrictive limitations on the number of songs that could be downloaded and streamed."
                             }
                           ]
                         }
@@ -473,11 +473,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "iTunes y la Monetización de la Música Digital (Página 11)"
+                              "value": "iTunes and the Monetization of Digital Music (Page 11)"
                             },
                             {
                               "type": "span",
-                              "value": ": En 2003, la iTunes Music Store surgió para monetizar con éxito la distribución de música digital. Apple optó por no seguir el modelo de suscripción perseguido por PressPlay y MusicNet, ofreciendo en su lugar cada canción en su biblioteca por 99 centavos."
+                              "value": ": In 2003, the iTunes Music Store emerged to successfully monetize digital music distribution. Apple opted against the subscription model pursued by PressPlay and MusicNet, instead offering each song in its library for 99 cents."
                             }
                           ]
                         }
@@ -494,11 +494,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Cambio al Streaming de Música (Página 12)"
+                              "value": "Shift to Music Streaming (Page 12)"
                             },
                             {
                               "type": "span",
-                              "value": ": Hoy en día, las descargas digitales representan menos del 4% de todos los ingresos de la industria, mientras que las suscripciones son la categoría más grande por un amplio margen con un 83%. Las plataformas de streaming de música han tenido éxito donde PressPlay y MusicNet fracasaron hace casi una década gracias a la combinación del avance y adopción de tecnologías digitales, junto con el establecimiento de una gestión robusta de derechos digitales."
+                              "value": ": Today, digital downloads account for less than 4% of all industry revenues, while subscriptions are the largest category by a wide measure at 83%. Music streaming platforms have seen success where PressPlay and MusicNet failed nearly a decade ago through the combination of the advancement and adoption of digital technologies, along with the establishment of robust digital rights management."
                             }
                           ]
                         }
@@ -511,7 +511,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Basado en estas perspectivas, aquí hay algunos consejos prácticos para startups de criptomonedas:"
+                      "value": "Based on these insights, here are some actionable advice for crypto startups:"
                     }
                   ]
                 },
@@ -530,11 +530,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "Considerar Modelos de Suscripción"
+                              "value": "Consider Subscription Models"
                             },
                             {
                               "type": "span",
-                              "value": ": El cambio de descargas digitales a suscripciones en la industria musical muestra los posibles beneficios de los modelos de ingresos recurrentes. Las startups de criptomonedas podrían considerar si un modelo de suscripción podría ser adecuado para su negocio."
+                              "value": ": The shift from digital downloads to subscriptions in the music industry shows the potential benefits of recurring revenue models. Crypto startups could consider whether a subscription model could be suitable for their business."
                             }
                           ]
                         }
@@ -560,8 +560,8 @@
       }
     ],
     "seo": {
-      "description": "Descubre cómo la innovación digital redefine la entrega de productos en 'Innovación Digital y Modelos de Ingresos' de Prysm Group. Explora la economía de las tecnologías emergentes.",
-      "title": "Innovación Digital y Modelos de Ingresos [Resumen]",
+      "description": "Descubre como la innovacion digital transforma la entrega de productos en 'Innovacion Digital y Modelos de Ingresos' de Prysm Group. Explora la economia de las tecnologias emergentes.",
+      "title": "Innovacion Digital y Modelos de Ingresos [Resumen]",
       "twitterCard": null,
       "image": {
         "width": 862,
@@ -574,7 +574,7 @@
   },
   "topics": [
     "Tokenomics",
-    "Industry",
-    "Summary"
+    "Industria",
+    "Resumen"
   ]
 }

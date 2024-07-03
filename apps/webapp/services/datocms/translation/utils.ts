@@ -3,7 +3,7 @@ import {
   MainArticleContentBlock
 } from '@/services/datocms/datacms-blog-category.service'
 
-interface TranslationData {
+export interface TranslationData {
   title: string
   topics: string[]
   description: string

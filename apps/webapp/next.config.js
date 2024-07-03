@@ -56,6 +56,9 @@ const nextConfig = {
       },
       {
         hostname: 'i.ytimg.com'
+      },
+      {
+        hostname: 'picsum.photos'
       }
     ]
   },

@@ -1,7 +1,7 @@
 import { getProjects } from '@/lib/projects'
 import { getDictionary } from '../../../dictionaries'
-import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
 import { HomeHero } from '@/components/routes/home/home-hero'
+import { Lang } from '@/dictionaries/locales'
 
 export default async function IndexPage({ params: { lang } }: IndexPageProps) {
   const dict = await getDictionary(lang)
@@ -15,5 +15,5 @@ export default async function IndexPage({ params: { lang } }: IndexPageProps) {
 }
 
 interface IndexPageProps {
-  params: { lang: SiteLocale }
+  params: { lang: Lang }
 }

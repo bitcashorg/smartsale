@@ -7,7 +7,7 @@
       "金融",
       "医疗保健",
       "法律",
-      "提示"
+      "提示工程"
     ],
     "title": "通过阅读理解适应大型语言模型",
     "slug": "adapting-large-language-models-via-reading-comprehension",
@@ -16,7 +16,7 @@
       "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
     },
     "_publishedAt": "2024-05-27T03:34:22+01:00",
-    "description": "摘要评论与评分",
+    "description": "摘要评论和评分",
     "thumbnail": {
       "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
     },
@@ -33,7 +33,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "发表于 9月18日"
+                      "value": "Published on Sep 18"
                     }
                   ]
                 },
@@ -42,7 +42,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "作者:"
+                      "value": "Authors:"
                     },
                     {
                       "url": "https://huggingface.co/cdxhhhh",
@@ -50,13 +50,13 @@
                       "children": [
                         {
                           "type": "span",
-                          "value": "程岱轩"
+                          "value": "Daixuan Cheng"
                         }
                       ]
                     },
                     {
                       "type": "span",
-                      "value": ",黄少涵,"
+                      "value": ",Shaohan Huang,"
                     },
                     {
                       "url": "https://huggingface.co/gitnlp",
@@ -64,7 +64,7 @@
                       "children": [
                         {
                           "type": "span",
-                          "value": "魏福如"
+                          "value": "Furu Wei"
                         }
                       ]
                     }
@@ -76,7 +76,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "摘要"
+                      "value": "Abstract"
                     }
                   ]
                 },
@@ -85,7 +85,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "我们探讨了在领域特定语料库上继续预训练如何影响大型语言模型，发现对原始语料库的训练赋予模型领域知识，但极大地损害了其回答问题的提示能力。受人类通过阅读理解进行学习的启发——阅读后练习提高了基于所学知识回答问题的能力——我们提出了一种将原始语料转化为阅读理解文本的简单方法。每个原始文本都通过一系列与其内容相关的任务进行丰富。我们的方法高度可扩展，适用于任何预训练语料库，在生物医学、金融和法律三个不同领域的各种任务中一致提高了性能。值得注意的是，我们的7B语言模型在性能上与规模更大的领域特定模型（如BloombergGPT-50B）竞争。此外，我们证明了领域特定的阅读理解文本甚至可以提高模型在一般基准上的表现，显示出在更多领域开发通用模型的潜力。我们的模型、代码和数据将在https://github.com/microsoft/LMOps上提供。"
+                      "value": "We explore how continued pre-training on domain-specific corpora influences large language models, revealing that training on the raw corpora endows the model with domain knowledge, but drastically hurts its prompting ability for question answering. Taken inspiration from human learning via reading comprehension--practice after reading improves the ability to answer questions based on the learned knowledge--we propose a simple method for transforming raw corpora into reading comprehension texts. Each raw text is enriched with a series of tasks related to its content. Our method, highly scalable and applicable to any pre-training corpora, consistently enhances performance across various tasks in three different domains: biomedicine, finance, and law. Notably, our 7B language model achieves competitive performance with domain-specific models of much larger scales, such as BloombergGPT-50B. Furthermore, we demonstrate that domain-specific reading comprehension texts can improve the model's performance even on general benchmarks, showing the potential to develop a general model across even more domains. Our model, code, and data will be available at https://github.com/microsoft/LMOps."
                     }
                   ]
                 },
@@ -108,7 +108,7 @@
                       "children": [
                         {
                           "type": "span",
-                          "value": "查看arXiv页面"
+                          "value": "View arXiv page"
                         }
                       ]
                     },
@@ -128,7 +128,7 @@
                       "children": [
                         {
                           "type": "span",
-                          "value": "查看PDF"
+                          "value": "View PDF"
                         }
                       ]
                     }
@@ -140,7 +140,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "评论"
+                      "value": "Commentary"
                     }
                   ]
                 },
@@ -149,7 +149,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "题为《通过阅读理解适应大型语言模型》的论文讨论了大型语言模型对特定领域的适应。"
+                      "value": "The paper titled \"Adapting Large Language Models via Reading Comprehension\" addresses the adaptation of large language models to specific domains."
                     }
                   ]
                 },
@@ -158,7 +158,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "关键见解:"
+                      "value": "Key Insights:"
                     }
                   ]
                 },
@@ -177,11 +177,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "继续预训练的影响"
+                              "value": "Influence of Continued Pre-training"
                             },
                             {
                               "type": "span",
-                              "value": ": 研究表明，在领域特定数据集上进行预训练提供了领域知识，但影响了模型回答提示的能力。"
+                              "value": ": The research showcases that pre-training on domain-specific datasets provides domain knowledge but affects the model's ability to answer prompts."
                             }
                           ]
                         }
@@ -198,11 +198,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "人类启发的学习"
+                              "value": "Human-Inspired Learning"
                             },
                             {
                               "type": "span",
-                              "value": ": 论文借鉴了人类通过阅读后练习提高理解能力的方式。作者将原始数据转化为阅读理解任务。"
+                              "value": ": The paper draws inspiration from how humans improve their understanding of a subject—by practicing comprehension after reading. The authors transform raw data into reading comprehension tasks."
                             }
                           ]
                         }
@@ -219,11 +219,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "广泛适用性"
+                              "value": "Broad Applicability"
                             },
                             {
                               "type": "span",
-                              "value": ": 他们的方法具有可扩展性，可以应用于从生物医学到法律的各个领域。"
+                              "value": ": Their method is scalable and can be applied across various domains, from biomedicine to law."
                             }
                           ]
                         }
@@ -240,11 +240,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "竞争性能"
+                              "value": "Competitive Performance"
                             },
                             {
                               "type": "span",
-                              "value": ": 他们的7B模型显示出与更大模型（如BloombergGPT-50B）竞争的结果，表明训练效率高。"
+                              "value": ": Their 7B model shows competitive results compared to much larger models like BloombergGPT-50B, indicating efficiency in training."
                             }
                           ]
                         }
@@ -261,11 +261,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "泛化潜力"
+                              "value": "Generalization Potential"
                             },
                             {
                               "type": "span",
-                              "value": ": 该方法不仅限于特定领域，还提高了一般任务的性能，表明其更广泛的适用性。"
+                              "value": ": The method is not just domain-specific. It also enhances performance in general tasks, suggesting its wider applicability."
                             }
                           ]
                         }
@@ -278,7 +278,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "潜在的现实世界影响:"
+                      "value": "Potential Real-World Impact:"
                     }
                   ]
                 },
@@ -297,11 +297,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "高效的领域适应"
+                              "value": "Efficient Domain Adaptation"
                             },
                             {
                               "type": "span",
-                              "value": ": 鉴于医疗保健、法律和金融等行业中领域特定任务的激增，拥有一种高效的方式将通用语言模型适应这些领域是非常宝贵的。"
+                              "value": ": Given the proliferation of domain-specific tasks in industries such as healthcare, law, and finance, having an efficient way to adapt general language models to these domains is invaluable."
                             }
                           ]
                         }
@@ -318,11 +318,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "资源节约"
+                              "value": "Resource Conservation"
                             },
                             {
                               "type": "span",
-                              "value": ": 通过展示7B模型与更大模型（如BloombergGPT-50B）的竞争结果，这种方法意味着在模型训练方面节省了成本和时间。"
+                              "value": ": By showing competitive results with a 7B model against larger models like BloombergGPT-50B, this method implies cost and time savings in terms of model training."
                             }
                           ]
                         }
@@ -339,11 +339,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "改进的阅读理解"
+                              "value": "Improved Reading Comprehension"
                             },
                             {
                               "type": "span",
-                              "value": ": 通过将原始数据转化为阅读理解任务，该模型可以用于多种应用，如辅导系统、内容摘要等。"
+                              "value": ": By transforming raw data into reading comprehension tasks, the model could be used for a variety of applications, like tutoring systems, content summarization, and more."
                             }
                           ]
                         }
@@ -360,11 +360,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "更广泛的适用性"
+                              "value": "Wider Applicability"
                             },
                             {
                               "type": "span",
-                              "value": ": 他们的方法也能提高一般基准的表现，表明其可以用于广泛的任务，使其具有多功能性。"
+                              "value": ": The fact that their method can also enhance general benchmarks suggests that it can be used for a broad range of tasks, making it versatile."
                             }
                           ]
                         }
@@ -377,7 +377,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "挑战:"
+                      "value": "Challenges:"
                     }
                   ]
                 },
@@ -396,11 +396,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "特异性与通用性权衡"
+                              "value": "Specificity vs. Generality Trade-off"
                             },
                             {
                               "type": "span",
-                              "value": ": 与领域适应一样，总是需要在变得过于领域特定和保持泛化能力之间找到平衡。"
+                              "value": ": As always with domain adaptation, there's a balance to strike between becoming too domain-specific and retaining the ability to generalize."
                             }
                           ]
                         }
@@ -413,7 +413,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "鉴于现实世界应用中对领域特定模型的需求增加，将原始数据转化为理解任务的新方法，以及更广泛的适用性:"
+                      "value": "Given the increased need for domain-specific models in real-world applications, the novel approach of transforming raw data into comprehension tasks, and the potential for wider applicability:"
                     }
                   ]
                 },
@@ -422,7 +422,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "我对这篇论文的现实世界影响评分为8.5分（满分10分）。"
+                      "value": "I'd rate the real-world impact of this paper as an 8.5 out of 10."
                     }
                   ]
                 },
@@ -431,7 +431,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "这种方法在确保效率和效果的同时，具有显著的潜力来改变大型语言模型适应领域特定任务的方式。"
+                      "value": "This approach presents a significant potential to transform the way LLMs are adapted to domain-specific tasks, ensuring both efficiency and effectiveness."
                     }
                   ]
                 }
@@ -453,7 +453,7 @@
       }
     ],
     "seo": {
-      "description": "摘要评论与评分\n",
+      "description": "摘要评论和评分",
       "title": "通过阅读理解适应大型语言模型",
       "twitterCard": null,
       "image": {
@@ -466,10 +466,10 @@
     }
   },
   "topics": [
-    "LLM",
-    "Finance",
-    "Healthcare",
-    "Legal",
-    "Prompting"
+    "大型语言模型",
+    "金融",
+    "医疗保健",
+    "法律",
+    "提示工程"
   ]
 }

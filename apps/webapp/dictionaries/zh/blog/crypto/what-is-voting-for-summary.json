@@ -4,10 +4,10 @@
       "id": "167184977",
       "topics": [
         "代币经济学",
-        "DAO",
-        "筹资"
+        "去中心化自治组织",
+        "融资"
       ],
-      "title": "革命性的股权模式：代币经济学如何颠覆创业世界",
+      "title": "革新股权模式：代币经济学如何颠覆创业世界",
       "slug": "revolutionizing-the-equity-model-how-tokenomics-is-disrupting-the-startup-world",
       "authorName": "Crypto Clairity",
       "authorPicture": {
@@ -26,23 +26,23 @@
     {
       "id": "166981063",
       "topics": [
-        "入门",
-        "DAO"
+        "入门指南",
+        "去中心化自治组织"
       ],
-      "title": "未来已来：去中心化自治组织（DAO）的崛起",
+      "title": "未来已来：去中心化自治组织（DAOs）的崛起",
       "slug": "the-future-is-here-the-rise-of-decentralized-autonomous-organizations-daos",
       "authorName": "Crypto Clairity",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T08:57:02+01:00",
-      "description": "在我们的指南中探索去中心化自治组织（DAO）的崛起。了解商业的未来和创业的机会。",
+      "description": "在我们的指南中探索去中心化自治组织（DAOs）的崛起。了解商业的未来和创业机会。",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1687381524-db1-img1.png"
       },
       "seo": {
         "title": "去中心化自治组织的崛起",
-        "description": "在我们的指南中探索去中心化自治组织（DAO）的崛起。了解商业的未来和创业的机会。"
+        "description": "在我们的指南中探索去中心化自治组织（DAOs）的崛起。了解商业的未来和创业机会。"
       }
     }
   ],
@@ -52,7 +52,7 @@
       "DAO",
       "摘要"
     ],
-    "title": "投票的目的是什么？[摘要]",
+    "title": "投票的目的是什么? [摘要]",
     "slug": "what-is-voting-for-summary",
     "authorName": "Crypto Clairity",
     "authorPicture": {
@@ -76,7 +76,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "原始链接："
+                      "value": "Original Link: "
                     },
                     {
                       "url": "https://medium.com/prysmeconomics/what-is-voting-for-6e733a1d2bc9",
@@ -84,7 +84,7 @@
                       "children": [
                         {
                           "type": "span",
-                          "value": "投票的目的是什么？"
+                          "value": "What is Voting For?"
                         }
                       ]
                     },
@@ -106,7 +106,7 @@
                     },
                     {
                       "type": "span",
-                      "value": "作者："
+                      "value": "Author: "
                     },
                     {
                       "url": "https://medium.com/@cathybarreraphd?source=post_page-----6e733a1d2bc9--------------------------------",
@@ -132,7 +132,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "摘要"
+                      "value": "Summary"
                     }
                   ]
                 },
@@ -141,7 +141,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "理解一个区块链平台的投票系统是否设计良好取决于投票的背景、目的（偏好 vs. 信息）以及系统的总体目标。当一个群体的个体成员对与他们相关的结果有不同的偏好时（偏好投票），以及当存在共同的偏好但对导致正确结果的选择存在不确定性时（信息投票），投票是必不可少的。"
+                      "value": "Understanding whether a blockchain-enabled platform's voting system is well-designed depends on factors such as the voting context, its purposes (preference vs. information), and the system's overarching goals. Voting is essential when individual members of a group have varying preferences over an outcome relevant to them (voting for preference), and when shared preferences exist but uncertainty persists over the choice leading to the correct outcome (voting on information)."
                     }
                   ]
                 },
@@ -150,7 +150,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "对于偏好投票，可以想象一群朋友决定去哪个餐馆。每一票都被平等地计算，因为每个人的偏好都被重视。在这种情况下，目标是通过一个公平的系统将不同的偏好合并为一个选择，从而促进群体的凝聚力。"
+                      "value": "For voting on preference, think of a group of friends deciding on a restaurant. Each vote is counted equally as everyone's preferences are valued. In this case, the goal is to reach an agreement through a fair system that amalgamates different preferences into a single choice, fostering group cohesion."
                     }
                   ]
                 },
@@ -159,7 +159,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "相反，信息投票更多的是在有共同目标但信息不确定的情况下做出正确的决定，比如在陪审团审判中。在这里，目标是汇集群体的信息，以做出更明智和正确的决定。"
+                      "value": "Contrastingly, voting on information is more about reaching the right decision when there's a shared goal, but uncertain information, like in a jury trial. Here, the objective is to pool information from the group to reach a more informed and correct decision."
                     }
                   ]
                 },
@@ -168,7 +168,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "因此，设计投票系统需要仔细考虑："
+                      "value": "Designing a voting system hence requires carefully considering:"
                     }
                   ]
                 },
@@ -184,7 +184,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "value": "投票类型：是基于偏好还是基于信息？"
+                              "value": "The type of vote: Is it preference-based or information-based?"
                             }
                           ]
                         }
@@ -198,7 +198,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "value": "参与者：谁应该投票？是所有相关人员还是仅限于特定群体？"
+                              "value": "Participants: Who should vote? Is it everyone involved or just a select group?"
                             }
                           ]
                         }
@@ -212,7 +212,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "value": "门槛：决策的最低要求是什么？"
+                              "value": "Thresholds: What should be the minimum requirement for a decision?"
                             }
                           ]
                         }
@@ -226,7 +226,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "value": "信息可用性：投票者需要什么信息，设计如何确保他们获得这些信息？"
+                              "value": "Information availability: What information do voters need and how can the design ensure they get it?"
                             }
                           ]
                         }
@@ -240,7 +240,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "value": "选票提案：如何提出和包含选项？"
+                              "value": "Ballot proposal: How should the options be proposed and included in the ballot?"
                             }
                           ]
                         }
@@ -253,7 +253,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "在区块链投票系统中，可以利用智能合约功能自动化许多方面，例如设置投票门槛，确保参与者拥有必要的信息，并确保投票过程的安全性。初创公司还可以使用代币策展注册表来激励用户策展和维护社区高度重视的可靠、准确的列表，从而促进决策过程。"
+                      "value": "With blockchain voting systems, smart contract functionality can be leveraged to automate many of these aspects, such as setting voting thresholds, ensuring participants have the necessary information, and securing the voting process. Startups can also use token-curated registries to incentivize users to curate and maintain lists that are reliable, accurate, and highly valued by the community, thereby facilitating the decision-making process."
                     }
                   ]
                 },
@@ -262,7 +262,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "此外，区块链平台上的去中心化投票系统可以实现更多的透明性、安全性，并有可能促进更民主的过程，让所有利益相关者的声音都能被听到，从而形成更包容和公平的共识机制。"
+                      "value": "Moreover, decentralized voting systems on blockchain platforms could enable more transparency, security, and potentially foster a more democratic process where all stakeholder voices are heard, leading to a more inclusive and fair consensus mechanism."
                     }
                   ]
                 },
@@ -271,7 +271,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "然而，必须记住，区块链并不是万能的。设计合适的投票系统仍然至关重要。区块链只是提供了一个可以实现更大透明度和不可变性的系统的平台。"
+                      "value": "However, it's crucial to remember that blockchain isn't a panacea. Designing the right voting system is still critical. Blockchain just provides a platform where these systems can be implemented with greater transparency and immutability."
                     }
                   ]
                 },
@@ -280,7 +280,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "总之，在设计或评估投票系统时，关键是确保它与决策过程的背景和目标一致，考虑到偏好的多样性和信息的不确定性，并提供一个公平透明的过程，考虑到每一个相关的投票。"
+                      "value": "In summary, when designing or evaluating a voting system, the key is to ensure that it aligns with the context and goals of the decision-making process, takes into account the diversity of preferences and uncertainty of information, and provides a fair and transparent process that considers every relevant vote."
                     }
                   ]
                 }
@@ -303,7 +303,7 @@
     ],
     "seo": {
       "description": "揭示去中心化系统中投票的本质。深入了解区块链中投票的真正目的和力量。",
-      "title": "投票的目的是什么？[摘要]",
+      "title": "投票的目的是什么? [摘要]",
       "twitterCard": null,
       "image": {
         "width": 862,
@@ -315,7 +315,7 @@
     }
   },
   "topics": [
-    "DAO",
-    "Summary"
+    "去中心化自治组织",
+    "摘要"
   ]
 }

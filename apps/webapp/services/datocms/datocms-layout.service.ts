@@ -1,19 +1,13 @@
 import { getCMSSdk } from '@/services/datocms/graphql/cms'
-import {
-  LayoutRecord,
-  SiteLocale
-} from '@/services/datocms/graphql/generated/cms'
+import { LayoutRecord } from '@/services/datocms/graphql/generated/cms'
 
-export async function getLayoutText(
-  locale: SiteLocale,
-  fallbackLocales: SiteLocale[]
-): Promise<CMSLayoutText> {
+export async function getLayoutText(): Promise<CMSLayoutText> {
   try {
     const data = await getCMSSdk().query({
       layout: {
         __args: {
-          locale,
-          fallbackLocales
+          locale: 'en',
+          fallbackLocales: ['en']
         },
         navigationTopic: true,
         navigationCategories: true,

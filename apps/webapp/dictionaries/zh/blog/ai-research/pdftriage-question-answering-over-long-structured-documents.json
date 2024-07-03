@@ -3,17 +3,17 @@
   "blogContent": {
     "id": "198277117",
     "topics": [
-      "LLM",
+      "大型语言模型",
       "检索"
     ],
-    "title": "PDFTriage：对长篇结构化文件的问答",
+    "title": "PDFTriage: 针对长篇结构化文档的问答系统",
     "slug": "pdftriage-question-answering-over-long-structured-documents",
     "authorName": "Prof. Otto Nomos",
     "authorPicture": {
       "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
     },
     "_publishedAt": "2024-05-27T03:33:49+01:00",
-    "description": "摘要评论与评级",
+    "description": "摘要评论和评分",
     "thumbnail": {
       "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
     },
@@ -30,7 +30,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "发布于 9月15日"
+                      "value": "Published on Sep 15"
                     }
                   ]
                 },
@@ -39,7 +39,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "作者："
+                      "value": "Authors:"
                     },
                     {
                       "url": "https://huggingface.co/jonsaadfalcon",
@@ -53,7 +53,7 @@
                     },
                     {
                       "type": "span",
-                      "value": "，"
+                      "value": ","
                     },
                     {
                       "url": "https://huggingface.co/jbarrow",
@@ -67,7 +67,7 @@
                     },
                     {
                       "type": "span",
-                      "value": "，Alexa Siu，Ani Nenkova，"
+                      "value": ",Alexa Siu,Ani Nenkova,"
                     },
                     {
                       "url": "https://huggingface.co/ryanrossi",
@@ -81,7 +81,7 @@
                     },
                     {
                       "type": "span",
-                      "value": "，"
+                      "value": ","
                     },
                     {
                       "url": "https://huggingface.co/Franck-Dernoncourt",
@@ -101,7 +101,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "摘要"
+                      "value": "Abstract"
                     }
                   ]
                 },
@@ -110,7 +110,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "大型语言模型（LLMs）在处理文档问答（QA）时遇到问题，尤其是当文档无法适应LLM的小范围上下文长度时。为了克服这一问题，大多数现有工作都集中在从文档中检索相关上下文，并将其表示为纯文本。然而，如PDF、网页和演示文稿等文件自然具有不同的页面、表格、章节等结构。将这些结构化文件表示为纯文本与用户对这些具有丰富结构的文件的心理模型不符。当系统必须查询文档以获取上下文时，这种不一致性就会显现出来，看似简单的问题可能会使QA系统困扰。为了弥合处理结构化文件的这一根本差距，我们提出了一种名为PDFTriage的方法，该方法使模型能够基于结构或内容检索上下文。我们的实验表明，所提出的PDFTriage增强型模型在几类问题上的有效性，这些问题是现有检索增强型LLM无法解决的。为了促进对这一根本问题的进一步研究，我们发布了一个基准数据集，包含900多个人工生成的问题，涵盖10种不同类别的问题类型，用于文档QA。"
+                      "value": "Large Language Models (LLMs) have issues with document question answering (QA) in situations where the document is unable to fit in the small context length of an LLM. To overcome this issue, most existing works focus on retrieving the relevant context from the document, representing them as plain text. However, documents such as PDFs, web pages, and presentations are naturally structured with different pages, tables, sections, and so on. Representing such structured documents as plain text is incongruous with the user's mental model of these documents with rich structure. When a system has to query the document for context, this incongruity is brought to the fore, and seemingly trivial questions can trip up the QA system. To bridge this fundamental gap in handling structured documents, we propose an approach called PDFTriage that enables models to retrieve the context based on either structure or content. Our experiments demonstrate the effectiveness of the proposed PDFTriage-augmented models across several classes of questions where existing retrieval-augmented LLMs fail. To facilitate further research on this fundamental problem, we release our benchmark dataset consisting of 900+ human-generated questions over 80 structured documents from 10 different categories of question types for document QA."
                     }
                   ]
                 },
@@ -165,7 +165,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "查看PDF"
+                      "value": "Commentary"
                     }
                   ]
                 },
@@ -478,8 +478,8 @@
       }
     ],
     "seo": {
-      "description": "摘要评论与评级",
-      "title": "PDFTriage：对长篇结构化文件的问答",
+      "description": "摘要评论和评分",
+      "title": "PDFTriage: 针对长篇结构化文档的问答系统",
       "twitterCard": null,
       "image": {
         "width": 1456,
@@ -491,7 +491,7 @@
     }
   },
   "topics": [
-    "LLM",
-    "Retrieval"
+    "大语言模型",
+    "检索"
   ]
 }

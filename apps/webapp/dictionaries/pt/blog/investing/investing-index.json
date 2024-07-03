@@ -1,23 +1,23 @@
 {
   "sections": [
     {
-      "name": "Introdução",
+      "name": "Comecando",
       "slug": "getting started",
       "articles": [
         {
           "id": "173914208",
           "topics": [
-            "Introdução",
-            "Gestão de Portfólio"
+            "Comecando",
+            "Gestao de Carteira"
           ],
-          "title": "Dominando a Gestão de Portfólio: A Arte da Diversificação, Alocação de Ativos e Rebalanceamento",
+          "title": "Dominando a Gestao de Carteira: A Arte da Diversificacao, Alocacao de Ativos e Rebalanceamento",
           "slug": "mastering-portfolio-management-the-art-of-diversification-asset-allocation-and-re",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:12:40+01:00",
-          "description": "Otimize Seu Portfólio: Aprenda a Arte da Diversificação, Alocação de Ativos e Rebalanceamento para uma Gestão de Portfólio Bem-Sucedida.",
+          "description": "Otimize Sua Carteira: Aprenda a Arte da Diversificacao, Alocacao de Ativos e Rebalanceamento para uma Gestao de Carteira Bem-sucedida.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689021197-ib2-img1.png"
           },
@@ -38,7 +38,7 @@
         {
           "id": "174592759",
           "topics": [
-            "Introdução",
+            "Comecando",
             "Alternativas"
           ],
           "title": "Liberando o Potencial: Dominando Investimentos Alternativos para o Sucesso do Investidor",
@@ -48,7 +48,7 @@
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:11:13+01:00",
-          "description": "Expanda sua habilidade de investimento com investimentos alternativos! Mergulhe no mundo do private equity, fundos de hedge e commodities para turbinar seu portfólio. Este blog oferece orientação especializada para investidores que buscam sucesso em estratégias de investimento alternativo.",
+          "description": "Expanda sua habilidade de investimento com investimentos alternativos! Mergulhe no mundo do private equity, fundos de hedge e commodities para impulsionar seu portfolio. Este blog fornece orientacao especializada para investidores que buscam sucesso em estrategias de investimento alternativas.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689120056-ib6-img1.png"
           },
@@ -69,17 +69,17 @@
         {
           "id": "175015363",
           "topics": [
-            "Introdução",
-            "Fundos Mútuos & ETFs"
+            "Comecando",
+            "Fundos Mutuos e ETFs"
           ],
-          "title": "Revelando os Prós e Contras dos Fundos Negociados em Bolsa (ETFs): Um Guia Completo para Investidores",
+          "title": "Revelando os Pros e Contras dos Fundos Negociados em Bolsa (ETFs): Um Guia Abrangente para Investidores",
           "slug": "unveiling-the-pros-and-cons-of-exchange-traded-funds-etfs-a-comprehensive-guide-f",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:09:18+01:00",
-          "description": "Descubra as vantagens e desvantagens de investir em ETFs. Tome decisões informadas e maximize seu potencial de investimento com este guia completo.",
+          "description": "Descubra as vantagens e desvantagens de investir em ETFs. Tome decisoes informadas e maximize seu potencial de investimento com este guia abrangente.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689186966-ib8-img1.png"
           },
@@ -100,17 +100,17 @@
         {
           "id": "176002890",
           "topics": [
-            "Introdução",
-            "Gestão de Riscos"
+            "Primeiros Passos",
+            "Gestao de Risco"
           ],
-          "title": "Proteja Seus Investimentos: Um Guia Completo para Reconhecer e Evitar Fraudes em Investimentos",
+          "title": "Proteja seus Investimentos: Um Guia Completo para Reconhecer e Evitar Fraudes em Investimentos",
           "slug": "shield-your-investments-a-comprehensive-guide-to-recognizing-and-avoiding-investm",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:08:41+01:00",
-          "description": "Proteja seu dinheiro suado! Aprenda a identificar golpes de investimento e proteja seu futuro financeiro com nosso guia completo para evitar fraudes em investimentos",
+          "description": "Proteja seu dinheiro suado! Aprenda a identificar golpes em investimentos e proteja seu futuro financeiro com nosso guia abrangente para evitar fraudes em investimentos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689384626-ib19-img1.png"
           },
@@ -131,17 +131,17 @@
         {
           "id": "176002763",
           "topics": [
-            "Introdução",
-            "Seguros"
+            "Primeiros Passos",
+            "Seguro"
           ],
-          "title": "Planejamento de Seguros 101: Navegando pelo Seguro de Vida, Incapacidade e de Longo Prazo",
+          "title": "Planejamento de Seguros 101: Navegando pelos Seguros de Vida, Invalidez e Cuidados de Longo Prazo",
           "slug": "insurance-planning-101-navigating-life-disability-and-long-term-care-insurance",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:07:57+01:00",
-          "description": "Garanta seu futuro com um planejamento inteligente de seguros. Mergulhe nos seguros de vida, incapacidade e de longo prazo para proteger sua saúde financeira.",
+          "description": "Garanta seu futuro com um planejamento inteligente de seguros. Mergulhe nos seguros de vida, invalidez e cuidados de longo prazo para proteger sua saude financeira.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689381721-ib18-img1.png"
           },
@@ -162,17 +162,17 @@
         {
           "id": "175940742",
           "topics": [
-            "Getting Started",
-            "Education"
+            "Comecando",
+            "Educacao"
           ],
-          "title": "Unlocking the Key to College Savings: Maximizing Education Funds with 529 Plans and Coverdell ESAs",
+          "title": "Desbloqueando a Chave para Economizar na Faculdade: Maximizando Fundos Educacionais com Planos 529 e Coverdell ESAs",
           "slug": "unlocking-the-key-to-college-savings-maximizing-education-funds-with-529-plans-an",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:06:59+01:00",
-          "description": "Discover how 529 plans and Coverdell ESAs can help you save for your child's education. Learn effective strategies to navigate college planning and secure a bright future.",
+          "description": "Descubra como os planos 529 e Coverdell ESAs podem ajudar voce a economizar para a educacao do seu filho. Aprenda estrategias eficazes para navegar no planejamento universitario e garantir um futuro brilhante.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689371480-i17-img1.png"
           },
@@ -193,17 +193,17 @@
         {
           "id": "175940646",
           "topics": [
-            "Getting Started",
-            "Retirement"
+            "Comecando",
+            "Aposentadoria"
           ],
-          "title": "Mastering Retirement Planning: Decoding 401(k)s, IRAs, and Pension Plans for a Secure Future",
+          "title": "Dominando o Planejamento da Aposentadoria: Decifrando 401(k)s, IRAs e Planos de Pensao para um Futuro Seguro",
           "slug": "mastering-retirement-planning-decoding-401-k-s-iras-and-pension-plans-for-a-secur",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:06:05+01:00",
-          "description": "Discover the essential guide to retirement planning, unraveling the mysteries of 401(k)s, IRAs, and pension plans. Learn strategies to build a robust retirement portfolio and secure your financial future.",
+          "description": "Descubra o guia essencial para o planejamento da aposentadoria, desvendando os misterios dos 401(k)s, IRAs e planos de pensao. Aprenda estrategias para construir uma carteira de aposentadoria robusta e garantir seu futuro financeiro.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689368706-ib17-img1.png"
           },
@@ -224,17 +224,17 @@
         {
           "id": "175685081",
           "topics": [
-            "Introdução",
+            "Comecando",
             "Aposentadoria"
           ],
-          "title": "Desbloqueando a Previdência Social: Seu Guia para Maximizar os Benefícios de Aposentadoria",
+          "title": "Desbloqueando a Previdencia Social: Seu Guia para Maximizar os Beneficios da Aposentadoria",
           "slug": "unlocking-social-security-your-guide-to-maximizing-retirement-benefits",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:05:22+01:00",
-          "description": "Descubra as principais estratégias e insights para otimizar seus benefícios da Previdência Social para uma aposentadoria segura e gratificante. Assuma o controle do seu futuro hoje",
+          "description": "Descubra as principais estrategias e insights para otimizar seus beneficios da Previdencia Social para uma aposentadoria segura e satisfatoria. Assuma o controle do seu futuro hoje",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689311272-ib15-img1.png"
           },
@@ -255,17 +255,17 @@
         {
           "id": "175530377",
           "topics": [
-            "Getting Started",
-            "Tax Planning"
+            "Comecando",
+            "Planejamento Tributario"
           ],
-          "title": "Maximizing Returns: The Ultimate Guide to Tax Planning for Investors",
+          "title": "Maximizando Retornos: O Guia Definitivo de Planejamento Tributario para Investidores",
           "slug": "maximizing-returns-the-ultimate-guide-to-tax-planning-for-investors",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:04:20+01:00",
-          "description": "Learn how to optimize your investment returns by understanding capital gains, dividends, and interest income, while minimizing your tax liabilities.",
+          "description": "Aprenda a otimizar seus retornos de investimento entendendo ganhos de capital, dividendos e renda de juros, enquanto minimiza suas obrigacoes fiscais.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689281511-ib14-img1.png"
           },
@@ -286,17 +286,17 @@
         {
           "id": "175528452",
           "topics": [
-            "Introdução",
+            "Comecando",
             "Planejamento Patrimonial"
           ],
-          "title": "Garanta Seu Legado: Um Guia Completo sobre Planejamento Patrimonial, Testamentos, Fideicomissos e Impostos sobre Herança",
+          "title": "Garanta Seu Legado: Um Guia Abrangente sobre Planejamento Patrimonial, Testamentos, Fundos Fiduciarios e Impostos sobre Heranca",
           "slug": "secure-your-legacy-a-comprehensive-guide-to-estate-planning-wills-trusts-and-inhe",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:03:16+01:00",
-          "description": "Descubra como proteger seus ativos e garantir uma transferência tranquila de riqueza. Aprenda sobre testamentos, fideicomissos e como minimizar impostos sobre herança para segurança financeira.",
+          "description": "Descubra como proteger seus bens e garantir uma transferencia tranquila de riqueza. Aprenda sobre testamentos, fundos fiduciarios e como minimizar impostos sobre heranca para seguranca financeira.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689278418-ib13-img1.png"
           },
@@ -317,17 +317,17 @@
         {
           "id": "175337478",
           "topics": [
-            "Getting Started",
-            "Financial Planning"
+            "Comecando",
+            "Planejamento Financeiro"
           ],
-          "title": "Mastering Your Finances: The Ultimate Guide to Budgeting, Debt Reduction, and Retirement Planning",
+          "title": "Dominando suas Financas: O Guia Definitivo para Orcamento, Reducao de Dividas e Planejamento de Aposentadoria",
           "slug": "mastering-your-finances-the-ultimate-guide-to-budgeting-debt-reduction-and-retire",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:00:48+01:00",
-          "description": "Achieve financial success with expert guidance on budgeting, debt reduction, and retirement planning. Take control of your future and secure a prosperous retirement.",
+          "description": "Alcance o sucesso financeiro com orientacao especializada sobre orcamento, reducao de dividas e planejamento de aposentadoria. Assuma o controle do seu futuro e garanta uma aposentadoria prospera.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689220482-ib12-img1.png"
           },
@@ -348,16 +348,16 @@
         {
           "id": "175337425",
           "topics": [
-            "Getting Started"
+            "Comecando"
           ],
-          "title": "Mastering Your Mind: Overcoming Investor Biases for Financial Success",
+          "title": "Dominando Sua Mente: Superando Vieses de Investidor para o Sucesso Financeiro",
           "slug": "mastering-your-mind-overcoming-investor-biases-for-financial-success",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:00:04+01:00",
-          "description": "Discover how to conquer common investor biases that can hinder your financial success. Learn practical strategies to make rational decisions and achieve your investment goals.",
+          "description": "Descubra como superar vieses comuns de investidores que podem atrapalhar seu sucesso financeiro. Aprenda estrategias praticas para tomar decisoes racionais e alcançar seus objetivos de investimento.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689218717-ib11-img1.png"
           },
@@ -378,17 +378,17 @@
         {
           "id": "176002895",
           "topics": [
-            "Introdução",
-            "Inflação"
+            "Comecando",
+            "Inflacao"
           ],
-          "title": "Navegando pelos Mares Financeiros: Entendendo o Impacto da Inflação nos Investimentos",
+          "title": "Navegando pelos Mares Financeiros: Entendendo o Impacto da Inflacao nos Investimentos",
           "slug": "navigating-the-financial-seas-understanding-inflation-s-impact-on-investment",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T01:59:28+01:00",
-          "description": "Embarque na sua jornada financeira com nosso guia completo sobre inflação. Aprenda como ela afeta seus investimentos e estratégias para enfrentar a tempestade.",
+          "description": "Inicie sua jornada financeira com nosso guia abrangente sobre inflacao. Aprenda como ela afeta seus investimentos e estrategias para enfrentar a tempestade.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689386893-ib20-img1.png"
           },
@@ -409,17 +409,17 @@
         {
           "id": "173914322",
           "topics": [
-            "Introdução",
-            "ações"
+            "Primeiros Passos",
+            "acoes"
           ],
-          "title": "Entendendo o Mercado de Ações: Como Funciona, Indicadores de Mercado e Tendências Históricas.",
+          "title": "Entendendo o Mercado de Acoes: Como Funciona, Indicadores de Mercado e Tendencias Historicas.",
           "slug": "understanding-the-stock-market-how-it-works-market-indicators-and-historical-tren",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T01:58:31+01:00",
-          "description": "Explore Como Funciona, Principais Indicadores e Tendências Históricas para Tomar Decisões de Investimento Informadas.",
+          "description": "Explore Como Funciona, Indicadores-Chave e Tendencias Historicas para Tomar Decisoes de Investimento Informadas.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689023549-ib3-img1.png"
           },
@@ -440,17 +440,17 @@
         {
           "id": "174362868",
           "topics": [
-            "Getting Started",
-            "realestate"
+            "Comecando",
+            "imobiliario"
           ],
-          "title": "From Houses to High-Rises: Mastering Real Estate Investing in Residential, Commercial, and REITs",
+          "title": "De Casas a Arranha-ceus: Dominando o Investimento Imobiliario em Residencial, Comercial e FIIs",
           "slug": "from-houses-to-high-rises-mastering-real-estate-investing-in-residential-commerci",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T01:56:35+01:00",
-          "description": "Dive into the world of real estate investing and discover how to thrive in residential properties, commercial ventures, and REITs. Unleash your wealth-building potential today!",
+          "description": "Mergulhe no mundo do investimento imobiliario e descubra como prosperar em propriedades residenciais, empreendimentos comerciais e FIIs. Liberte seu potencial de construcao de riqueza hoje!",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689108537-ib5-img1.png"
           },
@@ -471,17 +471,17 @@
         {
           "id": "174594216",
           "topics": [
-            "Getting Started",
-            "Mutual Funds & ETFs"
+            "Comecando",
+            "Fundos Mutuos e ETFs"
           ],
-          "title": "Mastering Mutual Funds: Unveiling the Types, Expenses, and Performance for Successful Investing",
+          "title": "Dominando Fundos Mutuos: Revelando os Tipos, Despesas e Desempenho para Investimentos Bem-Sucedidos",
           "slug": "mastering-mutual-funds-unveiling-the-types-expenses-and-performance-for-successfu",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T01:55:44+01:00",
-          "description": "Discover the ins and outs of mutual funds - their various types, expenses, and performance metrics - to make informed investment decisions and achieve financial success.",
+          "description": "Descubra os detalhes dos fundos mutuos - seus varios tipos, despesas e metricas de desempenho - para tomar decisoes de investimento informadas e alcancar o sucesso financeiro.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689128866-ib7-img1.png"
           },
@@ -502,17 +502,17 @@
         {
           "id": "175016379",
           "topics": [
-            "Getting Started",
-            "Risk Management"
+            "Comecando",
+            "Gestao de Risco"
           ],
-          "title": "Mastering Risk Tolerance: Unveiling Your Unique Investor DNA",
+          "title": "Dominando a Tolerancia ao Risco: Revelando seu DNA Unico de Investidor",
           "slug": "mastering-risk-tolerance-unveiling-your-unique-investor-dna",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T01:54:11+01:00",
-          "description": "Discover your risk tolerance and assess your personal risk profile to make informed investment decisions. Unlock the secrets to aligning risk and reward for financial success.",
+          "description": "Descubra sua tolerancia ao risco e avalie seu perfil de risco pessoal para tomar decisoes de investimento informadas. Desvende os segredos para alinhar risco e recompensa para o sucesso financeiro.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689189686-ib9-img1.png"
           },
@@ -533,16 +533,16 @@
         {
           "id": "175023099",
           "topics": [
-            "Getting Started"
+            "Comecando"
           ],
-          "title": "Mastering Investment Psychology: Conquering Fear and Greed for Financial Success",
+          "title": "Dominando a Psicologia de Investimentos: Vencendo o Medo e a Ganancia para o Sucesso Financeiro",
           "slug": "mastering-investment-psychology-conquering-fear-and-greed-for-financial-success",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T01:53:04+01:00",
-          "description": "Learn how to overcome the destructive forces of fear and greed in your investment journey. Unleash the power of disciplined decision-making for long-term prosperity.",
+          "description": "Aprenda a superar as forcas destrutivas do medo e da ganancia em sua jornada de investimentos. Libere o poder da tomada de decisoes disciplinada para a prosperidade a longo prazo.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689194001-ib10-img1.png"
           },
@@ -563,17 +563,17 @@
         {
           "id": "173906568",
           "topics": [
-            "Financial Planning",
-            "Getting Started"
+            "Planejamento Financeiro",
+            "Comecando"
           ],
-          "title": "Unraveling Investment Basics: Navigating Asset Types, Risk-Return Trade-offs, and Goal-Setting",
+          "title": "Desvendando os Fundamentos do Investimento: Navegando pelos Tipos de Ativos, Equilibrios entre Risco e Retorno e Definicao de Metas",
           "slug": "unraveling-investment-basics-navigating-asset-types-risk-return-trade-offs-and-go",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T01:52:15+01:00",
-          "description": "Master the Art of Investing: Understand Asset Types, Risk-Return Trade-offs, and Goal-Setting for Successful Investments.",
+          "description": "Domine a Arte de Investir: Entenda os Tipos de Ativos, Equilibrios entre Risco e Retorno e Definicao de Metas para Investimentos Bem-Sucedidos.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689018579-ib1-img1.png"
           },
@@ -594,23 +594,23 @@
       ]
     },
     {
-      "name": "Gestão de Carteira",
+      "name": "Gestao de Carteira",
       "slug": "portfolio management",
       "articles": [
         {
           "id": "173914208",
           "topics": [
-            "Introducao",
-            "Gestao de Portfolio"
+            "Comecando",
+            "Gestao de Carteira"
           ],
-          "title": "Dominando a Gestao de Portfolio: A Arte da Diversificacao, Alocacao de Ativos e Rebalanceamento",
+          "title": "Dominando a Gestao de Carteira: A Arte da Diversificacao, Alocacao de Ativos e Rebalanceamento",
           "slug": "mastering-portfolio-management-the-art-of-diversification-asset-allocation-and-re",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:12:40+01:00",
-          "description": "Otimize seu Portfolio: Aprenda a Arte da Diversificacao, Alocacao de Ativos e Rebalanceamento para uma Gestao de Portfolio Bem-Sucedida.",
+          "description": "Otimize Sua Carteira: Aprenda a Arte da Diversificacao, Alocacao de Ativos e Rebalanceamento para uma Gestao de Carteira Bem-sucedida.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689021197-ib2-img1.png"
           },
@@ -637,7 +637,7 @@
         {
           "id": "174592759",
           "topics": [
-            "Introdução",
+            "Comecando",
             "Alternativas"
           ],
           "title": "Liberando o Potencial: Dominando Investimentos Alternativos para o Sucesso do Investidor",
@@ -647,7 +647,7 @@
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:11:13+01:00",
-          "description": "Expanda sua habilidade de investimento com investimentos alternativos! Mergulhe no mundo do private equity, fundos de hedge e commodities para impulsionar seu portfólio. Este blog oferece orientação especializada para investidores que buscam sucesso em estratégias de investimento alternativo.",
+          "description": "Expanda sua habilidade de investimento com investimentos alternativos! Mergulhe no mundo do private equity, fundos de hedge e commodities para impulsionar seu portfolio. Este blog fornece orientacao especializada para investidores que buscam sucesso em estrategias de investimento alternativas.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689120056-ib6-img1.png"
           },
@@ -668,23 +668,23 @@
       ]
     },
     {
-      "name": "Fundos Mútuos e ETFs",
+      "name": "Fundos Mutuos e ETFs",
       "slug": "mutual funds & etfs",
       "articles": [
         {
           "id": "175015363",
           "topics": [
-            "Introdução",
-            "Fundos Mútuos e ETFs"
+            "Comecando",
+            "Fundos Mutuos e ETFs"
           ],
-          "title": "Revelando os Prós e Contras dos Fundos Negociados em Bolsa (ETFs): Um Guia Completo para Investidores",
+          "title": "Revelando os Pros e Contras dos Fundos Negociados em Bolsa (ETFs): Um Guia Abrangente para Investidores",
           "slug": "unveiling-the-pros-and-cons-of-exchange-traded-funds-etfs-a-comprehensive-guide-f",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:09:18+01:00",
-          "description": "Descubra as vantagens e desvantagens de investir em ETFs. Tome decisões informadas e maximize seu potencial de investimento com este guia completo.",
+          "description": "Descubra as vantagens e desvantagens de investir em ETFs. Tome decisoes informadas e maximize seu potencial de investimento com este guia abrangente.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689186966-ib8-img1.png"
           },
@@ -705,17 +705,17 @@
         {
           "id": "174594216",
           "topics": [
-            "Introdução",
-            "Fundos Mútuos e ETFs"
+            "Comecando",
+            "Fundos Mutuos e ETFs"
           ],
-          "title": "Dominando Fundos Mútuos: Revelando os Tipos, Despesas e Desempenho para Investir com Sucesso",
+          "title": "Dominando Fundos Mutuos: Revelando os Tipos, Despesas e Desempenho para Investimentos Bem-Sucedidos",
           "slug": "mastering-mutual-funds-unveiling-the-types-expenses-and-performance-for-successfu",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T01:55:44+01:00",
-          "description": "Descubra os detalhes dos fundos mútuos - seus diversos tipos, despesas e métricas de desempenho - para tomar decisões de investimento informadas e alcançar sucesso financeiro.",
+          "description": "Descubra os detalhes dos fundos mutuos - seus varios tipos, despesas e metricas de desempenho - para tomar decisoes de investimento informadas e alcancar o sucesso financeiro.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689128866-ib7-img1.png"
           },
@@ -736,23 +736,23 @@
       ]
     },
     {
-      "name": "Gestão de Risco",
+      "name": "Gestao de Risco",
       "slug": "risk management",
       "articles": [
         {
           "id": "176002890",
           "topics": [
-            "Introdução",
-            "Gestão de Riscos"
+            "Comecando",
+            "Gestao de Risco"
           ],
-          "title": "Proteja Seus Investimentos: Um Guia Completo para Reconhecer e Evitar Fraudes em Investimentos",
+          "title": "Proteja Seus Investimentos: Um Guia Abrangente para Reconhecer e Evitar Fraudes em Investimentos",
           "slug": "shield-your-investments-a-comprehensive-guide-to-recognizing-and-avoiding-investm",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:08:41+01:00",
-          "description": "Proteja seu dinheiro suado! Aprenda a identificar golpes de investimento e proteja seu futuro financeiro com nosso guia completo para evitar fraudes em investimentos",
+          "description": "Proteja seu dinheiro suado! Aprenda a identificar golpes em investimentos e proteja seu futuro financeiro com nosso guia abrangente para evitar fraudes em investimentos",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689384626-ib19-img1.png"
           },
@@ -773,17 +773,17 @@
         {
           "id": "175016379",
           "topics": [
-            "Introdução",
-            "Gestão de Risco"
+            "Primeiros Passos",
+            "Gestao de Risco"
           ],
-          "title": "Dominando a Tolerância ao Risco: Revelando seu DNA Único de Investidor",
+          "title": "Dominando a Tolerancia ao Risco: Revelando seu DNA Unico de Investidor",
           "slug": "mastering-risk-tolerance-unveiling-your-unique-investor-dna",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T01:54:11+01:00",
-          "description": "Descubra sua tolerância ao risco e avalie seu perfil de risco pessoal para tomar decisões de investimento informadas. Desvende os segredos para alinhar risco e recompensa para sucesso financeiro.",
+          "description": "Descubra sua tolerancia ao risco e avalie seu perfil de risco pessoal para tomar decisoes de investimento informadas. Desvende os segredos para alinhar risco e recompensa para o sucesso financeiro.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689189686-ib9-img1.png"
           },
@@ -810,17 +810,17 @@
         {
           "id": "176002763",
           "topics": [
-            "Introdução",
-            "Seguros"
+            "Primeiros Passos",
+            "Seguro"
           ],
-          "title": "Planejamento de Seguros 101: Navegando pelo Seguro de Vida, de Invalidez e de Cuidados de Longo Prazo",
+          "title": "Planejamento de Seguros 101: Navegando pelos Seguros de Vida, Invalidez e Cuidados de Longo Prazo",
           "slug": "insurance-planning-101-navigating-life-disability-and-long-term-care-insurance",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:07:57+01:00",
-          "description": "Garanta seu futuro com um planejamento de seguros inteligente. Mergulhe nos seguros de vida, invalidez e de cuidados de longo prazo para proteger sua saúde financeira.",
+          "description": "Garanta seu futuro com um planejamento inteligente de seguros. Mergulhe nos seguros de vida, invalidez e cuidados de longo prazo para proteger sua saude financeira.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689381721-ib18-img1.png"
           },
@@ -841,23 +841,23 @@
       ]
     },
     {
-      "name": "Educação",
+      "name": "Educacao",
       "slug": "education",
       "articles": [
         {
           "id": "175940742",
           "topics": [
-            "Introdução",
-            "Educação"
+            "Comecando",
+            "Educacao"
           ],
-          "title": "Desvendando a Chave para Economizar na Faculdade: Maximizando Fundos Educacionais com Planos 529 e ESAs Coverdell",
+          "title": "Desbloqueando a Chave para Economizar na Faculdade: Maximizando Fundos Educacionais com Planos 529 e Coverdell ESAs",
           "slug": "unlocking-the-key-to-college-savings-maximizing-education-funds-with-529-plans-an",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:06:59+01:00",
-          "description": "Descubra como os planos 529 e ESAs Coverdell podem ajudá-lo a economizar para a educação de seu filho. Aprenda estratégias eficazes para navegar pelo planejamento universitário e garantir um futuro brilhante.",
+          "description": "Descubra como os planos 529 e Coverdell ESAs podem ajudar voce a economizar para a educacao do seu filho. Aprenda estrategias eficazes para navegar no planejamento universitario e garantir um futuro brilhante.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689371480-i17-img1.png"
           },
@@ -884,7 +884,7 @@
         {
           "id": "175940646",
           "topics": [
-            "Introducao",
+            "Comecando",
             "Aposentadoria"
           ],
           "title": "Dominando o Planejamento da Aposentadoria: Decifrando 401(k)s, IRAs e Planos de Pensao para um Futuro Seguro",
@@ -894,7 +894,7 @@
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:06:05+01:00",
-          "description": "Descubra o guia essencial para o planejamento da aposentadoria, desvendando os misterios de 401(k)s, IRAs e planos de pensao. Aprenda estrategias para construir um portifolio de aposentadoria robusto e garantir seu futuro financeiro.",
+          "description": "Descubra o guia essencial para o planejamento da aposentadoria, desvendando os misterios dos 401(k)s, IRAs e planos de pensao. Aprenda estrategias para construir uma carteira de aposentadoria robusta e garantir seu futuro financeiro.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689368706-ib17-img1.png"
           },
@@ -915,17 +915,17 @@
         {
           "id": "175685081",
           "topics": [
-            "Introdução",
+            "Comecando",
             "Aposentadoria"
           ],
-          "title": "Desbloqueando a Previdência Social: Seu Guia para Maximizar os Benefícios de Aposentadoria",
+          "title": "Desbloqueando a Previdencia Social: Seu Guia para Maximizar os Beneficios da Aposentadoria",
           "slug": "unlocking-social-security-your-guide-to-maximizing-retirement-benefits",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:05:22+01:00",
-          "description": "Descubra as principais estratégias e insights para otimizar seus benefícios da Previdência Social para uma aposentadoria segura e gratificante. Assuma o controle do seu futuro hoje",
+          "description": "Descubra as principais estrategias e insights para otimizar seus beneficios da Previdencia Social para uma aposentadoria segura e satisfatoria. Assuma o controle do seu futuro hoje",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689311272-ib15-img1.png"
           },
@@ -946,23 +946,23 @@
       ]
     },
     {
-      "name": "Planejamento Tributário",
+      "name": "Planejamento Tributario",
       "slug": "tax planning",
       "articles": [
         {
           "id": "175530377",
           "topics": [
-            "Introdução",
-            "Planejamento Tributário"
+            "Comecando",
+            "Planejamento Tributario"
           ],
-          "title": "Maximizando Retornos: O Guia Definitivo para o Planejamento Tributário para Investidores",
+          "title": "Maximizando Retornos: O Guia Definitivo de Planejamento Tributario para Investidores",
           "slug": "maximizing-returns-the-ultimate-guide-to-tax-planning-for-investors",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:04:20+01:00",
-          "description": "Aprenda como otimizar seus retornos de investimento entendendo ganhos de capital, dividendos e renda de juros, enquanto minimiza suas obrigações fiscais.",
+          "description": "Aprenda a otimizar seus retornos de investimento entendendo ganhos de capital, dividendos e renda de juros, enquanto minimiza suas obrigacoes fiscais.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689281511-ib14-img1.png"
           },
@@ -983,23 +983,23 @@
       ]
     },
     {
-      "name": "Planejamento Patrimonial",
+      "name": "Planejamento Sucessorio",
       "slug": "estate planning",
       "articles": [
         {
           "id": "175528452",
           "topics": [
-            "Introdução",
+            "Comecando",
             "Planejamento Patrimonial"
           ],
-          "title": "Garanta Seu Legado: Um Guia Completo sobre Planejamento Patrimonial, Testamentos, Fideicomissos e Impostos sobre Herança",
+          "title": "Garanta Seu Legado: Um Guia Abrangente sobre Planejamento Patrimonial, Testamentos, Fundos Fiduciarios e Impostos sobre Heranca",
           "slug": "secure-your-legacy-a-comprehensive-guide-to-estate-planning-wills-trusts-and-inhe",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:03:16+01:00",
-          "description": "Descubra como proteger seus ativos e garantir uma transferência tranquila de riqueza. Saiba mais sobre testamentos, fideicomissos e como minimizar impostos sobre herança para segurança financeira.",
+          "description": "Descubra como proteger seus bens e garantir uma transferencia tranquila de riqueza. Aprenda sobre testamentos, fundos fiduciarios e como minimizar impostos sobre heranca para seguranca financeira.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689278418-ib13-img1.png"
           },
@@ -1026,17 +1026,17 @@
         {
           "id": "175337478",
           "topics": [
-            "Introducao",
+            "Comecando",
             "Planejamento Financeiro"
           ],
-          "title": "Dominando Suas Financas: O Guia Definitivo para Orcamento, Reducao de Dividas e Planejamento de Aposentadoria",
+          "title": "Dominando suas Financas: O Guia Definitivo para Orcamento, Reducao de Dividas e Planejamento de Aposentadoria",
           "slug": "mastering-your-finances-the-ultimate-guide-to-budgeting-debt-reduction-and-retire",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:00:48+01:00",
-          "description": "Alcance o sucesso financeiro com orientacao especializada em orcamento, reducao de dividas e planejamento de aposentadoria. Assuma o controle do seu futuro e garanta uma aposentadoria prospera.",
+          "description": "Alcance o sucesso financeiro com orientacao especializada sobre orcamento, reducao de dividas e planejamento de aposentadoria. Assuma o controle do seu futuro e garanta uma aposentadoria prospera.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689220482-ib12-img1.png"
           },
@@ -1058,16 +1058,16 @@
           "id": "173906568",
           "topics": [
             "Planejamento Financeiro",
-            "Começando"
+            "Comecando"
           ],
-          "title": "Desvendando os Fundamentos do Investimento: Navegando pelos Tipos de Ativos, Compensações de Risco-Retorno e Definição de Objetivos",
+          "title": "Desvendando os Fundamentos do Investimento: Navegando pelos Tipos de Ativos, Equilibrios entre Risco e Retorno e Definicao de Metas",
           "slug": "unraveling-investment-basics-navigating-asset-types-risk-return-trade-offs-and-go",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T01:52:15+01:00",
-          "description": "Domine a Arte de Investir: Entenda os Tipos de Ativos, Compensações de Risco-Retorno e Definição de Objetivos para Investimentos Bem-Sucedidos.",
+          "description": "Domine a Arte de Investir: Entenda os Tipos de Ativos, Equilibrios entre Risco e Retorno e Definicao de Metas para Investimentos Bem-Sucedidos.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689018579-ib1-img1.png"
           },
@@ -1088,23 +1088,23 @@
       ]
     },
     {
-      "name": "Inflação",
+      "name": "Inflacao",
       "slug": "inflation",
       "articles": [
         {
           "id": "176002895",
           "topics": [
-            "Introdução",
-            "Inflação"
+            "Comecando",
+            "Inflacao"
           ],
-          "title": "Navegando pelos Mares Financeiros: Entendendo o Impacto da Inflação nos Investimentos",
+          "title": "Navegando pelos Mares Financeiros: Entendendo o Impacto da Inflacao nos Investimentos",
           "slug": "navigating-the-financial-seas-understanding-inflation-s-impact-on-investment",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T01:59:28+01:00",
-          "description": "Embarque na sua jornada financeira com nosso guia completo sobre inflação. Aprenda como ela afeta seus investimentos e estratégias para enfrentar a tempestade.",
+          "description": "Inicie sua jornada financeira com nosso guia abrangente sobre inflacao. Aprenda como ela afeta seus investimentos e estrategias para enfrentar a tempestade.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689386893-ib20-img1.png"
           },
@@ -1125,23 +1125,23 @@
       ]
     },
     {
-      "name": "ações",
+      "name": "acoes",
       "slug": "stocks",
       "articles": [
         {
           "id": "173914322",
           "topics": [
-            "Introdução",
-            "ações"
+            "Primeiros Passos",
+            "acoes"
           ],
-          "title": "Entendendo o Mercado de Ações: Como Funciona, Indicadores de Mercado e Tendências Históricas.",
+          "title": "Entendendo o Mercado de Acoes: Como Funciona, Indicadores de Mercado e Tendencias Historicas.",
           "slug": "understanding-the-stock-market-how-it-works-market-indicators-and-historical-tren",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T01:58:31+01:00",
-          "description": "Explore Como Funciona, Principais Indicadores e Tendências Históricas para Tomar Decisões de Investimento Informadas.",
+          "description": "Explore Como Funciona, Indicadores-Chave e Tendencias Historicas para Tomar Decisoes de Investimento Informadas.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689023549-ib3-img1.png"
           },
@@ -1169,16 +1169,16 @@
           "id": "173980855",
           "topics": [
             "investimentos",
-            "títulos"
+            "titulos"
           ],
-          "title": "Dominando Investimentos de Renda Fixa: Títulos, CDs e Fundos de Mercado Monetário",
+          "title": "Dominando Investimentos de Renda Fixa: Titulos, CDs e Fundos de Mercado Monetario",
           "slug": "mastering-fixed-income-investments-bonds-cds-and-money-market-funds",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T01:57:29+01:00",
-          "description": "Descubra a estabilidade e o potencial de renda dos investimentos de renda fixa. Aprenda sobre títulos, CDs e fundos de mercado monetário, e obtenha insights valiosos para ter sucesso neste campo.",
+          "description": "Descubra a estabilidade e o potencial de renda dos investimentos de renda fixa. Aprenda sobre titulos, CDs e fundos de mercado monetario, e obtenha insights valiosos para ter sucesso nesse campo.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689038686-ib4-img1.png"
           },
@@ -1199,23 +1199,23 @@
       ]
     },
     {
-      "name": "títulos",
+      "name": "titulos",
       "slug": "bonds",
       "articles": [
         {
           "id": "173980855",
           "topics": [
             "investimentos",
-            "títulos"
+            "titulos"
           ],
-          "title": "Dominando Investimentos de Renda Fixa: Títulos, CDs e Fundos de Mercado Monetário",
+          "title": "Dominando Investimentos de Renda Fixa: Titulos, CDs e Fundos de Mercado Monetario",
           "slug": "mastering-fixed-income-investments-bonds-cds-and-money-market-funds",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T01:57:29+01:00",
-          "description": "Descubra a estabilidade e o potencial de renda dos investimentos de renda fixa. Aprenda sobre títulos, CDs e fundos de mercado monetário, e obtenha insights valiosos para ter sucesso neste campo.",
+          "description": "Descubra a estabilidade e o potencial de renda dos investimentos de renda fixa. Aprenda sobre titulos, CDs e fundos de mercado monetario, e obtenha insights valiosos para ter sucesso nesse campo.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689038686-ib4-img1.png"
           },
@@ -1236,23 +1236,23 @@
       ]
     },
     {
-      "name": "imóveis",
+      "name": "imoveis",
       "slug": "realestate",
       "articles": [
         {
           "id": "174362868",
           "topics": [
-            "Introdução",
-            "imóveis"
+            "Comecando",
+            "imobiliario"
           ],
-          "title": "De Casas a Arranha-Céus: Dominando o Investimento Imobiliário em Residenciais, Comerciais e REITs",
+          "title": "De Casas a Arranha-ceus: Dominando o Investimento Imobiliario em Residencial, Comercial e FIIs",
           "slug": "from-houses-to-high-rises-mastering-real-estate-investing-in-residential-commerci",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T01:56:35+01:00",
-          "description": "Mergulhe no mundo do investimento imobiliário e descubra como prosperar em propriedades residenciais, empreendimentos comerciais e REITs. Libere seu potencial de construção de riqueza hoje!",
+          "description": "Mergulhe no mundo do investimento imobiliario e descubra como prosperar em propriedades residenciais, empreendimentos comerciais e FIIs. Liberte seu potencial de construcao de riqueza hoje!",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689108537-ib5-img1.png"
           },
@@ -1281,7 +1281,7 @@
       "twitterCard": "summary_large_image"
     },
     "description": "Onde os Futuros sao Forjados.",
-    "title": "Investindo",
+    "title": "Investimentos",
     "seoType": "investing",
     "id": "178642408",
     "_createdAt": "2023-07-24T18:39:38+01:00"

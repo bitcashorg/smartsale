@@ -7,8 +7,8 @@ import {
 } from '@/services/datocms'
 import { generateMetadataFromSEO } from '@/lib/seo'
 import { BlogSections } from '@/components/routes/blog/sections'
-import { SiteLocale } from '@/services/datocms/graphql/generated/cms'
-import { locales } from '@/dictionaries/locales'
+import { Lang, locales } from '@/dictionaries/locales'
+import Image from 'next/image'
 
 export default async function Page(props: CategoryPageProps) {
   const {
@@ -22,20 +22,28 @@ export default async function Page(props: CategoryPageProps) {
   if (!pageSeo) notFound()
 
   return (
-    <section>
-      <header className="flex flex-col py-10 md:py-24">
-        <h1 className="heading flex justify-center">
+    <>
+      <header className="relative flex flex-col py-10 bg-center bg-cover md:py-24">
+        <Image
+          className="absolute inset-0 object-cover bg-black bg-center bg-cover opacity-50 pointer-events-none"
+          src="/images/blog/temp-bg-concept.webp"
+          fill
+          alt={pageSeo.description}
+          priority
+        />
+
+        <h1 className="flex justify-center heading drop-shadow-md">
           {pageSeo.description} <br />
         </h1>
-        <h2 className="flex justify-center text-xl font-semibold">
+        <h2 className="flex justify-center text-xl font-semibold drop-shadow-md">
           Bitlauncher {pageSeo.title} Articles
         </h2>
       </header>
 
-      <main>
+      <main className="narrow-container">
         <BlogSections sections={sections} lang={lang} category={category} />
       </main>
-    </section>
+    </>
   )
 }
 
@@ -57,9 +65,8 @@ export async function generateMetadata(props: any): Promise<Metadata> {
   const {
     params: { lang, category }
   } = props
-  const locales = [lang]
 
-  const pageSeo = await getPageSeoText(category, lang, locales)
+  const pageSeo = await getPageSeoText(category)
 
   const seoData = {
     title: pageSeo?.pageSeo?.title || '',
@@ -72,5 +79,5 @@ export async function generateMetadata(props: any): Promise<Metadata> {
   return generateMetadataFromSEO(seoData)
 }
 
-type CategoryPageParams = { lang: SiteLocale; category: string }
+type CategoryPageParams = { lang: Lang; category: string }
 type CategoryPageProps = { params: CategoryPageParams }

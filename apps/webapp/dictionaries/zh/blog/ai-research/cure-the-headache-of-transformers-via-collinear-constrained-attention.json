@@ -3,16 +3,16 @@
   "blogContent": {
     "id": "198277182",
     "topics": [
-      "变压器"
+      "Transformers模型"
     ],
-    "title": "通过共线约束注意力解决变压器头痛问题",
+    "title": "通过共线约束注意力机制治愈Transformers的头痛问题",
     "slug": "cure-the-headache-of-transformers-via-collinear-constrained-attention",
     "authorName": "Prof. Otto Nomos",
     "authorPicture": {
       "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
     },
     "_publishedAt": "2024-05-27T03:32:43+01:00",
-    "description": "摘要评论与评级",
+    "description": "摘要评论和评分",
     "thumbnail": {
       "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
     },
@@ -29,7 +29,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "发布于 9月15日"
+                      "value": "Published on Sep 15"
                     }
                   ]
                 },
@@ -38,7 +38,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "作者:"
+                      "value": "Authors:"
                     },
                     {
                       "url": "https://huggingface.co/underskies",
@@ -46,13 +46,13 @@
                       "children": [
                         {
                           "type": "span",
-                          "value": "朱诗怡"
+                          "value": "Shiyi Zhu"
                         }
                       ]
                     },
                     {
                       "type": "span",
-                      "value": ",叶静,江伟,张琪,吴一帆,"
+                      "value": ",Jing Ye,Wei Jiang,Qi Zhang,Yifan Wu,"
                     },
                     {
                       "url": "https://huggingface.co/JungleLee",
@@ -60,7 +60,7 @@
                       "children": [
                         {
                           "type": "span",
-                          "value": "李建国"
+                          "value": "Jianguo Li"
                         }
                       ]
                     }
@@ -72,7 +72,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "摘要"
+                      "value": "Abstract"
                     }
                   ]
                 },
@@ -81,7 +81,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "随着基于大型语言模型的实际应用的快速发展，推断性能的重要性在研究领域呈指数级增长。在我们的研究中，我们发现了变压器模型中以前被忽视的异常行为，导致最重要信息的最近令牌周围出现混乱。我们将这一发现称为“变压器的头痛”。为了从根本上解决这个问题，我们引入了一种名为共线约束注意力（CoCA）的新型自我注意结构。这种结构可以与现有的外推、内插方法以及为传统变压器模型设计的其他优化策略无缝集成。我们在推理过程中甚至对序列长度进行了16倍至24倍的优异外推表现，而无需对我们的模型进行任何微调。我们还提高了CoCA的计算和空间效率，以确保其实用性。我们计划不久后开源CoCA。与此同时，我们已在附录中提供了代码，以重新出现实验。"
+                      "value": "As the rapid progression of practical applications based on Large Language Models continues, the importance of extrapolating performance has grown exponentially in the research domain. In our study, we identified an anomalous behavior in Transformer models that had been previously overlooked, leading to a chaos around closest tokens which carried the most important information. We've coined this discovery the \"headache of Transformers\". To address this at its core, we introduced a novel self-attention structure named Collinear Constrained Attention (CoCA). This structure can be seamlessly integrated with existing extrapolation, interpolation methods, and other optimization strategies designed for traditional Transformer models. We have achieved excellent extrapolating performance even for 16 times to 24 times of sequence lengths during inference without any fine-tuning on our model. We have also enhanced CoCA's computational and spatial efficiency to ensure its practicality. We plan to open-source CoCA shortly. In the meantime, we've made our code available in the appendix for reappearing experiments."
                     }
                   ]
                 },
@@ -449,8 +449,8 @@
       }
     ],
     "seo": {
-      "description": "摘要评论与评级",
-      "title": "通过共线约束注意力解决变压器头痛问题",
+      "description": "摘要评论和评分",
+      "title": "通过共线约束注意力机制治愈Transformers的头痛问题",
       "twitterCard": null,
       "image": {
         "width": 1456,
@@ -462,6 +462,6 @@
     }
   },
   "topics": [
-    "Transformers"
+    "变形金刚"
   ]
 }

@@ -7,7 +7,7 @@
         "金融",
         "医疗",
         "法律",
-        "提示"
+        "提示工程"
       ],
       "title": "通过阅读理解适应大型语言模型",
       "slug": "adapting-large-language-models-via-reading-comprehension",
@@ -31,7 +31,7 @@
         "大型语言模型",
         "多语言"
       ],
-      "title": "OpenBA：一个从头开始预训练的开源15B双语不对称seq2seq模型",
+      "title": "OpenBA:一个从头预训练的开源150亿参数双语非对称seq2seq模型",
       "slug": "openba-an-open-sourced-15b-bilingual-asymmetric-seq2seq-model-pre-trained-from-sc",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
@@ -43,7 +43,7 @@
         "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
       },
       "seo": {
-        "title": "OpenBA：一个开源的15B双语...模型...",
+        "title": "OpenBA:一个从头预训练的开源150亿参数双语...模型...",
         "description": "摘要评论与评分\n"
       }
     },
@@ -53,7 +53,7 @@
         "大型语言模型",
         "检索"
       ],
-      "title": "PDFTriage：长结构文档上的问答",
+      "title": "PDFTriage:长结构化文档的问答系统",
       "slug": "pdftriage-question-answering-over-long-structured-documents",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
@@ -65,7 +65,7 @@
         "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
       },
       "seo": {
-        "title": "PDFTriage：长结构文档上的问答",
+        "title": "PDFTriage:长结构化文档的问答系统",
         "description": "摘要评论与评分\n"
       }
     },
@@ -75,7 +75,7 @@
         "大型语言模型",
         "微调"
       ],
-      "title": "Sorted LLaMA：通过排序微调（SoFT）解锁大型语言模型中间层的动态推理潜力",
+      "title": "排序LLaMA:通过排序微调(SoFT)释放大型语言模型中间层的动态推理潜力",
       "slug": "sorted-llama-unlocking-the-potential-of-intermediate-layers-of-large-language-mod",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
@@ -87,7 +87,7 @@
         "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
       },
       "seo": {
-        "title": "Sorted LLaMA：...通过排序微调（SoFT）进行推理",
+        "title": "排序LLaMA:...使用排序微调(SoFT)进行动态推理",
         "description": "摘要评论与评分\n"
       }
     },
@@ -98,7 +98,7 @@
         "指令调优",
         "多模态"
       ],
-      "title": "指令调优大型多模态模型的扩展实证研究",
+      "title": "指令调优大型多模态模型扩展的实证研究",
       "slug": "an-empirical-study-of-scaling-instruct-tuned-large-multimodal-models",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
@@ -110,7 +110,7 @@
         "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
       },
       "seo": {
-        "title": "指令调优大型语言模型的扩展实证研究",
+        "title": "指令调优大型多模态模型扩展的实证研究",
         "description": "摘要评论与评分\n"
       }
     },
@@ -118,10 +118,10 @@
       "id": "198277160",
       "topics": [
         "大型语言模型",
-        "代理",
+        "智能体",
         "游戏"
       ],
-      "title": "MindAgent：新兴的游戏互动",
+      "title": "MindAgent:涌现的游戏交互",
       "slug": "mindagent-emergent-gaming-interaction",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
@@ -133,7 +133,7 @@
         "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
       },
       "seo": {
-        "title": "MindAgent：新兴的游戏互动",
+        "title": "MindAgent:涌现的游戏交互",
         "description": "摘要评论与评分\n"
       }
     },
@@ -143,7 +143,7 @@
         "大型语言模型",
         "结构化数据"
       ],
-      "title": "Struc-Bench：大型语言模型真的擅长生成复杂结构化数据吗？",
+      "title": "Struc-Bench:大型语言模型真的擅长生成复杂结构化数据吗?",
       "slug": "struc-bench-are-large-language-models-really-good-at-generating-complex-structure",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
@@ -155,7 +155,7 @@
         "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
       },
       "seo": {
-        "title": "Struc-Bench：...生成复杂结构化数据？",
+        "title": "Struc-Bench:...生成复杂结构化数据?",
         "description": "摘要评论与评分\n"
       }
     },
@@ -164,9 +164,9 @@
       "topics": [
         "大型语言模型",
         "隐私",
-        "边缘"
+        "边缘计算"
       ],
-      "title": "通过大型语言模型从隐私保护屏蔽中恢复",
+      "title": "使用大型语言模型从隐私保护掩码中恢复",
       "slug": "recovering-from-privacy-preserving-masking-with-large-language-models",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
@@ -178,7 +178,7 @@
         "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
       },
       "seo": {
-        "title": "通过大型语言模型从隐私保护屏蔽中恢复",
+        "title": "使用大型语言模型从隐私保护掩码中恢复",
         "description": "摘要评论与评分\n"
       }
     },
@@ -188,7 +188,7 @@
         "大型语言模型",
         "聊天"
       ],
-      "title": "S3-DST：大型语言模型时代的结构化开放域对话分割和状态跟踪",
+      "title": "S3-DST:大型语言模型时代的结构化开放域对话分割和状态跟踪",
       "slug": "s3-dst-structured-open-domain-dialogue-segmentation-and-state-tracking-in-the-era",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
@@ -200,7 +200,7 @@
         "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
       },
       "seo": {
-        "title": "S3-DST：结构化开放域对话分割...",
+        "title": "S3-DST:结构化开放域对话分割...",
         "description": "摘要评论与评分\n"
       }
     },
@@ -222,7 +222,7 @@
         "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
       },
       "seo": {
-        "title": "使用大型语言模型增强口语理解的文本",
+        "title": "使用大型语言模型增强口语理解的文本...",
         "description": "摘要评论与评分\n"
       }
     },
@@ -254,7 +254,7 @@
         "大型语言模型",
         "多语言"
       ],
-      "title": "Baichuan 2：开放的大规模语言模型",
+      "title": "百川2:开放大规模语言模型",
       "slug": "baichuan-2-open-large-scale-language-models",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
@@ -266,7 +266,7 @@
         "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
       },
       "seo": {
-        "title": "Baichuan 2：开放的大规模语言模型",
+        "title": "百川2:开放大规模语言模型",
         "description": "摘要评论与评分\n"
       }
     },
@@ -276,7 +276,7 @@
         "大型语言模型",
         "RLHF"
       ],
-      "title": "通过优势模型和选择性排练稳定RLHF",
+      "title": "通过优势模型和选择性回顾稳定RLHF",
       "slug": "stabilizing-rlhf-through-advantage-model-and-selective-rehearsal",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
@@ -288,7 +288,7 @@
         "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
       },
       "seo": {
-        "title": "通过优势模型和选择性排练稳定RLHF",
+        "title": "通过优势模型和选择性回顾稳定RLHF",
         "description": "摘要评论与评分\n"
       }
     },
@@ -298,7 +298,7 @@
         "大型语言模型",
         "幻觉"
       ],
-      "title": "验证链减少大型语言模型中的幻觉",
+      "title": "验证链减少大型语言模型的幻觉",
       "slug": "chain-of-verification-reduces-hallucination-in-large-language-models",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
@@ -310,7 +310,7 @@
         "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
       },
       "seo": {
-        "title": "验证链减少大型语言模型中的幻觉",
+        "title": "验证链减少大型语言模型的幻觉",
         "description": "摘要评论与评分\n"
       }
     },
@@ -322,7 +322,7 @@
         "实体",
         "结构化数据"
       ],
-      "title": "LMDX：基于语言模型的文档信息提取和定位",
+      "title": "LMDX:基于语言模型的文档信息提取和定位",
       "slug": "lmdx-language-model-based-document-information-extraction-and-localization",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
@@ -334,7 +334,7 @@
         "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
       },
       "seo": {
-        "title": "LMDX：...文档信息提取和定位",
+        "title": "LMDX:..文档信息提取和定位",
         "description": "摘要评论与评分\n"
       }
     },
@@ -344,7 +344,7 @@
         "大型语言模型",
         "推理"
       ],
-      "title": "对比解码提高大型语言模型的推理能力",
+      "title": "对比解码改善大型语言模型的推理能力",
       "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
@@ -356,7 +356,7 @@
         "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
       },
       "seo": {
-        "title": "对比解码提高大型语言模型的推理能力",
+        "title": "对比解码改善大型语言模型的推理能力",
         "description": "摘要评论与评分\n"
       }
     },
@@ -367,7 +367,7 @@
         "多语言",
         "数据"
       ],
-      "title": "CulturaX：一个清理过的、庞大的、多语言数据集，适用于167种语言的大型语言模型",
+      "title": "CulturaX:一个清洁、庞大且多语言的167种语言大型语言模型数据集",
       "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
@@ -379,7 +379,7 @@
         "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
       },
       "seo": {
-        "title": "CulturaX：一个清理过的、庞大的、多语言数据集...",
+        "title": "CulturaX:一个清洁、庞大且多语言的数据集...",
         "description": "摘要评论与评分\n"
       }
     },
@@ -402,7 +402,7 @@
         "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
       },
       "seo": {
-        "title": "利用上下文信息进行有效的实体显著性检测",
+        "title": "利用上下文信息...实体显著性检测",
         "description": "摘要评论与评分\n"
       }
     },
@@ -410,9 +410,9 @@
       "id": "198044892",
       "topics": [
         "大型语言模型",
-        "代理"
+        "智能体"
       ],
-      "title": "LASER：用于网页导航的状态空间探索的LLM代理",
+      "title": "LASER:用于网页导航的状态空间探索LLM代理",
       "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
@@ -424,7 +424,7 @@
         "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
       },
       "seo": {
-        "title": "LASER：用于网页导航的状态空间探索的LLM代理",
+        "title": "LASER:用于网页导航的状态空间探索LLM代理",
         "description": "摘要评论与评分\n"
       }
     }
@@ -435,14 +435,14 @@
       "LLM",
       "数据"
     ],
-    "title": "SlimPajama-DC: 理解LLM训练的数据组合",
+    "title": "SlimPajama-DC: 理解用于LLM训练的数据组合",
     "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
     "authorName": "Prof. Otto Nomos",
     "authorPicture": {
       "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
     },
     "_publishedAt": "2023-10-04T23:43:32+01:00",
-    "description": "摘要评论与评分",
+    "description": "摘要评论和评分",
     "thumbnail": {
       "url": "https://www.datocms-assets.com/101962/1692841427-researchpaper8a.png"
     },
@@ -459,7 +459,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "发表于 9月19日"
+                      "value": "Published on Sep 19"
                     }
                   ]
                 },
@@ -468,7 +468,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "作者:"
+                      "value": "Authors:"
                     },
                     {
                       "url": "https://huggingface.co/Jason0214",
@@ -586,7 +586,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "摘要"
+                      "value": "Abstract"
                     }
                   ]
                 },
@@ -595,7 +595,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "本文旨在理解各种数据组合（例如，网页文本、维基百科、GitHub、书籍）对使用SlimPajama训练大型语言模型的影响。SlimPajama是一个严格去重的多源数据集，从Together贡献的1.2T tokens的RedPajama数据集中精炼并进一步去重到627B tokens。我们将我们的研究称为SlimPajama-DC，这是一项旨在揭示使用SlimPajama训练大型语言模型的基本特征和最佳实践的实证分析。在使用SlimPajama的研究中，我们发现了两个关键观察：（1）全局去重与局部去重。我们分析并讨论了全局（跨不同数据源）和局部（单一数据源内）去重如何影响训练模型的性能。（2）高质量/高度去重的多源数据集在组合中的比例。为研究这一点，我们构建了六种SlimPajama数据集配置，并使用1.3B Cerebras-GPT模型与Alibi和SwiGLU进行单独训练。我们最好的配置在使用相同数量的训练tokens的情况下，显著优于在RedPajama上训练的1.3B模型。我们所有的1.3B模型都在Cerebras 16倍CS-2集群上以总计80 PFLOP/s的bf16混合精度进行训练。我们进一步在一个7B模型上进行大批量训练，扩展了我们的发现（例如，在全局去重后增加数据多样性至关重要）。我们的模型和单独的SlimPajama-DC数据集可在以下网址获取：https://huggingface.co/MBZUAI-LLM 和 https://huggingface.co/datasets/cerebras/SlimPajama-627B。"
+                      "value": "This paper aims to understand the impacts of various data combinations (e.g., web text, wikipedia, github, books) on the training of large language models using SlimPajama. SlimPajama is a rigorously deduplicated, multi-source dataset, which has been refined and further deduplicated to 627B tokens from the extensive 1.2T tokens RedPajama dataset contributed by Together. We've termed our research as SlimPajama-DC, an empirical analysis designed to uncover fundamental characteristics and best practices associated with employing SlimPajama in the training of large language models. During our research with SlimPajama, two pivotal observations emerged: (1) Global deduplication vs. local deduplication. We analyze and discuss how global (across different sources of datasets) and local (within the single source of dataset) deduplications affect the performance of trained models. (2) Proportions of high-quality/highly-deduplicated multi-source datasets in the combination. To study this, we construct six configurations of SlimPajama dataset and train individual ones using 1.3B Cerebras-GPT model with Alibi and SwiGLU. Our best configuration outperforms the 1.3B model trained on RedPajama using the same number of training tokens by a significant margin. All our 1.3B models are trained on Cerebras 16times CS-2 cluster with a total of 80 PFLOP/s in bf16 mixed precision. We further extend our discoveries (such as increasing data diversity is crucial after global deduplication) on a 7B model with large batch-size training. Our models and the separate SlimPajama-DC datasets are available at: https://huggingface.co/MBZUAI-LLM and https://huggingface.co/datasets/cerebras/SlimPajama-627B."
                     }
                   ]
                 },
@@ -618,7 +618,7 @@
                       "children": [
                         {
                           "type": "span",
-                          "value": "查看arXiv页面"
+                          "value": "View arXiv page"
                         }
                       ]
                     },
@@ -638,7 +638,7 @@
                       "children": [
                         {
                           "type": "span",
-                          "value": "查看PDF"
+                          "value": "View PDF"
                         }
                       ]
                     }
@@ -650,7 +650,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "评论"
+                      "value": "Commentary"
                     }
                   ]
                 },
@@ -659,7 +659,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "论文\"SlimPajama-DC: 理解LLM训练的数据组合\"研究了使用SlimPajama数据集训练大型语言模型（LLM）时，不同数据组合的影响，SlimPajama是一个严格去重的多源数据集。"
+                      "value": "The paper \"SlimPajama-DC: Understanding Data Combinations for LLM Training\" examines the influence of varying data combinations on training large language models (LLMs) using the SlimPajama dataset, a rigorously deduplicated multi-source dataset."
                     }
                   ]
                 },
@@ -668,7 +668,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "关键要点:"
+                      "value": "Key Takeaways:"
                     }
                   ]
                 },
@@ -687,11 +687,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "SlimPajama数据集"
+                              "value": "SlimPajama Dataset"
                             },
                             {
                               "type": "span",
-                              "value": ": 该数据集是一个精炼和去重版本的1.2T tokens的RedPajama数据集。目的是使用更干净和去重的数据集来训练LLM。"
+                              "value": ": This dataset is a refined and deduplicated version of the massive 1.2T tokens RedPajama dataset. The aim is to use a cleaner and more deduplicated dataset to train LLMs."
                             }
                           ]
                         }
@@ -708,11 +708,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "实证分析"
+                              "value": "Empirical Analysis"
                             },
                             {
                               "type": "span",
-                              "value": ": SlimPajama-DC研究在使用SlimPajama进行LLM训练时，研究了其固有特征和最佳实践。"
+                              "value": ": The SlimPajama-DC research examines the inherent traits and best practices when employing SlimPajama in LLM training."
                             }
                           ]
                         }
@@ -729,11 +729,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "全局与局部去重"
+                              "value": "Global vs. Local Deduplication"
                             },
                             {
                               "type": "span",
-                              "value": ": 重要的是区分全局去重（跨各种数据源）和局部去重（单一数据源内）以及它们对训练模型性能的影响。"
+                              "value": ": An important distinction is made between global deduplication (across various data sources) and local deduplication (within a single data source) and how each influences the performance of trained models."
                             }
                           ]
                         }
@@ -750,11 +750,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "数据质量和去重"
+                              "value": "Data Quality and Deduplication"
                             },
                             {
                               "type": "span",
-                              "value": ": 研究评估了高质量/高度去重的多源数据集在组合中的比例的影响。"
+                              "value": ": The research evaluates the impact of the proportions of high-quality/highly-deduplicated multi-source datasets when combined."
                             }
                           ]
                         }
@@ -771,11 +771,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "性能指标"
+                              "value": "Performance Metrics"
                             },
                             {
                               "type": "span",
-                              "value": ": 他们的最佳配置显著优于使用相同数量训练tokens的RedPajama数据集上训练的1.3B模型。"
+                              "value": ": Their best configuration significantly outperforms a 1.3B model trained on the larger RedPajama dataset, using the same number of training tokens."
                             }
                           ]
                         }
@@ -792,11 +792,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "大规模训练基础设施"
+                              "value": "Large-Scale Training Infrastructure"
                             },
                             {
                               "type": "span",
-                              "value": ": 他们使用了总容量为80 PFLOP/s的bf16混合精度的强大计算设置。"
+                              "value": ": They utilized a powerful computing setup with a total capacity of 80 PFLOP/s in bf16 mixed precision."
                             }
                           ]
                         }
@@ -809,7 +809,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "潜在的现实世界影响:"
+                      "value": "Potential Real-World Impact:"
                     }
                   ]
                 },
@@ -828,11 +828,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "高效模型训练"
+                              "value": "Efficient Model Training"
                             },
                             {
                               "type": "span",
-                              "value": ": 理解数据组合和去重对模型训练的影响可以带来更高效和有效的LLM训练过程。"
+                              "value": ": Understanding the effects of data combinations and deduplication on model training can result in more efficient and effective LLM training processes."
                             }
                           ]
                         }
@@ -849,11 +849,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "改进的LLM"
+                              "value": "Improved LLMs"
                             },
                             {
                               "type": "span",
-                              "value": ": 通过精炼用于训练的数据集，生成的模型可以在各种NLP应用中提供更准确和有用的输出。"
+                              "value": ": By refining the dataset used for training, the resultant models could provide more accurate and useful outputs in various NLP applications."
                             }
                           ]
                         }
@@ -870,11 +870,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "未来研究的指导"
+                              "value": "Guidance for Future Research"
                             },
                             {
                               "type": "span",
-                              "value": ": 这项实证分析为大型语言模型训练领域的研究人员和行业专业人士提供了见解和最佳实践。"
+                              "value": ": This empirical analysis offers insights and best practices for researchers and industry professionals in the domain of large-scale language model training."
                             }
                           ]
                         }
@@ -891,11 +891,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "资源分配"
+                              "value": "Resource Allocation"
                             },
                             {
                               "type": "span",
-                              "value": ": 认识到去重和数据组合的重要性可以指导组织在数据清理和去重方面分配资源。"
+                              "value": ": Recognizing the importance of deduplication and data combination can guide organizations in allocating resources for data cleaning and deduplication."
                             }
                           ]
                         }
@@ -908,7 +908,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "挑战:"
+                      "value": "Challenges:"
                     }
                   ]
                 },
@@ -927,11 +927,11 @@
                               "marks": [
                                 "strong"
                               ],
-                              "value": "普适性"
+                              "value": "Generalizability"
                             },
                             {
                               "type": "span",
-                              "value": ": 尽管论文在SlimPajama上显示了有希望的结果，但这些发现如何在其他数据集和模型上普适仍有待观察。"
+                              "value": ": While the paper shows promising results with SlimPajama, it remains to be seen how these findings generalize across other datasets and models."
                             }
                           ]
                         }
@@ -944,7 +944,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "鉴于对理解数据组合、去重及其对LLM训练影响的重视:"
+                      "value": "Given the emphasis on understanding the nuances of data combinations, deduplication, and their effect on training LLMs:"
                     }
                   ]
                 },
@@ -953,7 +953,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "我对这篇论文的现实世界影响评分为8分（满分10分）。"
+                      "value": "I'd rate the real-world impact of this paper as an 8 out of 10."
                     }
                   ]
                 },
@@ -962,7 +962,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "这项研究为优化用于训练大型语言模型的数据提供了宝贵的见解，可能会带来更好的模型和更高效的训练过程。对于旨在利用有限资源最大化其LLM性能的组织和研究人员来说，这些发现尤其相关。"
+                      "value": "This research offers valuable insights into optimizing the data used in training large language models, potentially leading to better models and more efficient training processes. The findings could be especially relevant for organizations and researchers aiming to maximize the performance of their LLMs using limited resources."
                     }
                   ]
                 }
@@ -984,8 +984,8 @@
       }
     ],
     "seo": {
-      "description": "摘要评论与评分\n",
-      "title": "SlimPajama-DC: 理解LLM训练的数据组合",
+      "description": "摘要评论和评分",
+      "title": "SlimPajama-DC: 理解用于LLM训练的数据组合",
       "twitterCard": null,
       "image": {
         "width": 1456,
@@ -997,7 +997,7 @@
     }
   },
   "topics": [
-    "LLM",
-    "Data"
+    "大型语言模型",
+    "数据"
   ]
 }
