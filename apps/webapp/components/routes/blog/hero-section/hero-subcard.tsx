@@ -22,21 +22,19 @@ export const HeroSubCard = ({
 
   return (
     <Card
-      className="md:min-h-space-200 group cursor-pointer list-none overflow-hidden border-muted bg-transparent p-0"
+      className="p-0 overflow-hidden list-none bg-transparent cursor-pointer md:min-h-space-200 group border-muted"
       id={post.slug}
     >
       <Link
         href={`/blog/${sectionSlug}/${post.slug}`}
-        className="flex flex-col justify-between space-y-3 px-space-15 py-space-20 transition-all md:flex-row md:space-y-0"
+        className="flex flex-row justify-between space-y-3 transition-all px-space-15 py-space-20 md:space-y-0"
         onClick={event =>
           (event.target as HTMLElement).tagName === 'BUTTON' &&
           event.preventDefault()
         }
       >
-        <div className="flex flex-col items-start justify-start space-y-space-6">
-          <span className="font-futura-pt-heavy text-h-text-c text-h-text font-bold dark:text-white">
-            {post.authorName}
-          </span>
+        <div className="flex flex-col items-start justify-start p-5 min-w-40 space-y-space-6">
+          <span className="">{post.authorName}</span>
           <span className="font-futura-pt-book text-h-text-c text-h-text dark:text-white">
             {new Date(post?._publishedAt).toLocaleDateString(locale, {
               month: 'short',
@@ -57,10 +55,10 @@ export const HeroSubCard = ({
             }
           />
         </div>
-        <div className="flex max-w-[366px] flex-col items-start justify-start space-y-space-10">
+        <div className="flex flex-col items-start justify-start space-y-space-10 md:max-w-[366px]">
           <h1
             title={post?.title}
-            className="font-futura-pt-bold truncate_text truncate_text--3-lines text-sub-2-lg font-bold text-black dark:text-white"
+            className="font-bold text-black font-futura-pt-bold truncate_text truncate_text--3-lines text-sub-2-lg dark:text-white"
           >
             {post?.title}
           </h1>
