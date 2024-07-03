@@ -1,11 +1,11 @@
 import Link from 'next/link'
-import { NavSection, NavItem, navStruct } from '../nav-struct'
+import { NavSection, NavItem, footerNavStruct } from '../nav-struct'
 import { IconBitlauncher } from '@/components/ui/icons'
 
 export function FooterLinks() {
   return (
     <div className="container grid grid-cols-2 gap-10 p-10 mx-auto text-left bg-primary lg:grid-cols-6">
-      {navStruct.sections.map((section, index) =>
+      {footerNavStruct.sections.map((section, index) =>
         section.items ? (
           <SectionComponent key={index} section={section} />
         ) : null

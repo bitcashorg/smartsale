@@ -13,7 +13,7 @@ export const HeroArticleCard = ({
   lang
 }: HeroArticleCardProps) => {
   return (
-    <div className="w-1/2 list-none">
+    <div className="list-none md:w-1/2">
       <Link
         href={`/blog/${sectionSlug}/${post?.slug}`}
         className="flex flex-col w-full transition-all rounded-md"
@@ -32,7 +32,7 @@ export const HeroArticleCard = ({
           />
         </figure>
 
-        <div className="flex mt-space-20">
+        <div className="flex flex-row mt-space-20 justify-stretch">
           {/* <p className="text-xl">
             <span className="font-semibold sub-2-lg">/Recents:</span>
           </p> */}
@@ -73,7 +73,7 @@ export const HeroArticleCard = ({
             >
               {post?.title}
             </h1>
-            <p className="truncate_text md:truncate_text--4-lines truncate_text--5-lines text-sub-2-lt">
+            <p className="flex-grow w-full truncate_text md:truncate_text--4-lines truncate_text--5-lines text-sub-2-lt">
               {post?.description}
             </p>
           </div>

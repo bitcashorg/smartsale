@@ -35,6 +35,7 @@ export function MediaCard({ video }: MediaCardProps) {
           </CardContent>
         </Card>
       </DialogTrigger>
+
       <DialogContent className="sm:max-w-[1000px]">
         <DialogHeader>
           <DialogTitle>{video.snippet.title}</DialogTitle>

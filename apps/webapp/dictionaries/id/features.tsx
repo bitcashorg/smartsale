@@ -11,7 +11,7 @@ export const featuresContent: FeatureContent[] = [
     description:
       'Platform kami merevolusi pendanaan startup dengan menerapkan sistem lelang batch untuk penjualan token, memastikan penemuan harga yang adil dan transparan. Metode ini memungkinkan semua peserta untuk mengajukan penawaran dalam jangka waktu tertentu, dengan token dialokasikan pada harga kliring yang seragam. Pendekatan ini mencegah manipulasi harga dan memastikan bahwa semua investor memiliki akses yang sama terhadap peluang investasi, menjadikannya pasar yang adil bagi startup dan investor.',
     label: 'Lelang Batch',
-    imgSrc: '/images/home/wallet.png',
+    imgSrc: '/images/home/auction-bids-chart.svg',
     imgAlt: 'Batch Auctions'
   },
   {
@@ -19,7 +19,7 @@ export const featuresContent: FeatureContent[] = [
     description:
       'Bitlauncher dilengkapi dengan berbagai alat DAO canggih yang memberdayakan komunitas kami untuk terlibat langsung dalam tata kelola dan proses pengambilan keputusan. Berbagai alat ini memfasilitasi interaksi dan kolaborasi yang lancar, yang memungkinkan pemegang token untuk mengusulkan, memberikan suara, dan menerapkan perubahan dalam platform. Tingkat keterlibatan ini memastikan bahwa setiap anggota memiliki suara dalam arah proyek, meningkatkan transparansi, dan sejalan dengan komitmen kami terhadap inovasi yang digerakkan oleh komunitas.',
     label: 'Alat DAO',
-    imgSrc: '/images/home/dboard.png',
+    imgSrc: '/images/home/dao-vote.svg',
     imgAlt: 'DAO Tools'
   }
 ]

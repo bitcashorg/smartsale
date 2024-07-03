@@ -17,7 +17,7 @@ import { appConfig } from '@/lib/config'
 export function Header({ lang, dict }: HeaderProps) {
   return (
     <div className="sticky top-0 z-50 flex h-16 bg-background">
-      <div className="container flex flex-row items-center justify-between bg-background px-4">
+      <div className="container flex flex-row items-center justify-between px-4 bg-background">
         <div className="flex h-full items-center md:min-w-[300px]">
           <Link href={`/${lang}`}>
             <IconBitlauncher />
@@ -33,8 +33,8 @@ export function Header({ lang, dict }: HeaderProps) {
         </div>
 
         {/* Desktop action buttons */}
-        <div className="flex gap-5">
-          <div className="hidden items-center justify-end md:flex md:min-w-[300px] md:gap-3 lg:gap-5">
+        <div className="flex justify-end gap-5 md:min-w-[300px]">
+          <div className="items-center hidden md:flex md:gap-3 lg:gap-5">
             {/* <DiscordButton /> */}
             <Suspense fallback={<Button>Login</Button>}>
               <DynamicSessionButton />
