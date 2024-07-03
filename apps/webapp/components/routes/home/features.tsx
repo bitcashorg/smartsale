@@ -20,9 +20,9 @@ export function Features({ lang, dict }: FeaturesProps) {
             className={`flex flex-col justify-center space-y-4 ${index % 2 === 1 ? 'lg:order-last' : ''}`}
           >
             <div className="space-y-2">
-              <div className="inline-flex items-center px-2 py-1 text-sm font-semibold text-gray-800 bg-gray-200 rounded-md dark:bg-gray-700 dark:text-gray-200">
+              {/* <div className="inline-flex items-center px-2 py-1 text-sm font-semibold text-gray-800 bg-gray-200 rounded-md dark:bg-gray-700 dark:text-gray-200">
                 {content.label}
-              </div>
+              </div> */}
               <h3 className="text-2xl font-bold">{content.title}</h3>
               <p className="text-gray-500 dark:text-gray-400">
                 {content.description}
