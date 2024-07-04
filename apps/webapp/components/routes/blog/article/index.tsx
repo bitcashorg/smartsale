@@ -201,7 +201,7 @@ export function BlogPage({
               )}
             </div>
 
-            <div className="sticky top-[120px] order-1 w-full md:order-2 md:mt-5 md:w-space-250">
+            <div className="sticky top-[120px] order-1 hidden w-full md:order-2 md:mt-5 md:block md:w-space-250">
               <ArticleIndex articleHeaders={headingTexts} />
 
               <div className="mt-5 text-center">

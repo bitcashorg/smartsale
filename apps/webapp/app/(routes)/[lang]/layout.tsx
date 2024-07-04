@@ -16,6 +16,7 @@ import { Analytics } from '@vercel/analytics/react'
 import { CommonPageParams } from '@/types/routing.type'
 import { getDictionary } from '@/dictionaries'
 import '../../globals.css'
+import { isMobile } from 'react-device-detect'
 
 const openSans = Open_Sans({
   subsets: ['latin', 'latin-ext'],
@@ -43,7 +44,14 @@ export default async function RootLayout({
           >
             <Header lang={params.lang} dict={dict} />
             {/* <Toaster /> */}
-            <main className="flex flex-col flex-1">{children}</main>
+            <main
+              className={cn(
+                'flex flex-1 flex-col',
+                isMobile && 'overflow-hidden'
+              )}
+            >
+              {children}
+            </main>
             <Footer params={params} />
             <DynamicSessionDialog />
           </Providers>

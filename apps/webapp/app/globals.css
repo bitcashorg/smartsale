@@ -258,7 +258,7 @@ input[type='number'] {
 
 /* TYPOGRAPHY */
 .heading {
-  @apply text-3xl font-bold !leading-snug md:text-6xl;
+  @apply text-3xl font-bold md:text-6xl;
 }
 
 .heading2 {

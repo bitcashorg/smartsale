@@ -91,95 +91,98 @@ export default function Newsletter({ lang }: LangProp) {
   }, [email])
 
   return (
-    <GoogleReCaptchaProvider
-      reCaptchaKey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ''}
-      // language="[optional_language]"
-      container={{
-        parameters: {
-          badge: 'inline', //'[inline|bottomright|bottomleft]', // optional, default undefined
-          theme: 'dark' // optional, default undefined
-        }
-      }}
-    >
-      <section className="mt-40 newsletter-wrapper">
-        <div className="flex h-[460px] w-full max-w-[600px] flex-col items-center justify-center gap-8 px-3 text-center md:gap-11 md:px-0">
-          <div className="flex flex-col w-full gap-7">
-            <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
-              Sign up for our newsletter
-            </h2>
-            <p className="mx-auto sm:text-xl">
-              To stay up to date with our progress, announcements and exclusive
-              discounts, sign up with your email below:
-            </p>
-          </div>
-          <div className="flex flex-col items-center w-full">
-            <form
-              action={onSubmit}
-              className="flex h-[62px] w-full max-w-[342px] items-center justify-center gap-2 self-center rounded-full bg-secondary p-1 text-black/90"
-            >
-              <input
-                {...register('email', { required: 'Email is required' })}
-                placeholder="Your email"
-                type="email"
-                className="block size-full max-w-[calc(100%-58px)] rounded-full bg-transparent px-6 font-semibold placeholder:font-semibold focus-within:outline focus-within:outline-ring"
-                required
-              />
+    <div className="relative overflow-hidden" id="newsletter">
+      <GoogleReCaptchaProvider
+        reCaptchaKey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ''}
+        // language="[optional_language]"
+        container={{
+          element: '#newsletter',
+          parameters: {
+            badge: 'bottomleft', //'[inline|bottomright|bottomleft]', // optional, default undefined
+            theme: 'dark' // optional, default undefined
+          }
+        }}
+      >
+        <section className="mt-40 newsletter-wrapper">
+          <div className="flex h-[460px] w-full max-w-[600px] flex-col items-center justify-center gap-8 px-3 text-center md:gap-11 md:px-0">
+            <div className="flex flex-col w-full gap-7">
+              <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
+                Sign up for our newsletter
+              </h2>
+              <p className="mx-auto sm:text-xl">
+                To stay up to date with our progress, announcements and
+                exclusive discounts, sign up with your email below:
+              </p>
+            </div>
+            <div className="flex flex-col items-center w-full">
+              <form
+                action={onSubmit}
+                className="flex h-[62px] w-full max-w-[342px] items-center justify-center gap-2 self-center rounded-full bg-secondary p-1 text-black/90"
+              >
+                <input
+                  {...register('email', { required: 'Email is required' })}
+                  placeholder="Your email"
+                  type="email"
+                  className="block size-full max-w-[calc(100%-58px)] rounded-full bg-transparent px-6 font-semibold placeholder:font-semibold focus-within:outline focus-within:outline-ring"
+                  required
+                />
 
-              <input
-                type="hidden"
-                {...register('recaptcha', { required: true })}
-              />
-              <GoogleReCaptcha
-                onVerify={v => {
-                  const timeout = setTimeout(() => {
-                    if (v.toString() && recaptchaToken !== v.toString()) {
+                <input
+                  type="hidden"
+                  {...register('recaptcha', { required: true })}
+                />
+                <GoogleReCaptcha
+                  onVerify={v => {
+                    const timeout = setTimeout(() => {
+                      if (v.toString() && recaptchaToken !== v.toString()) {
+                        setValue('recaptcha', v.toString())
+                      }
+
+                      clearTimeout(timeout)
+                    }, 90000)
+
+                    if (!recaptchaToken) {
                       setValue('recaptcha', v.toString())
                     }
-
-                    clearTimeout(timeout)
-                  }, 90000)
-
-                  if (!recaptchaToken) {
-                    setValue('recaptcha', v.toString())
-                  }
-                }}
-              />
-              <Button
-                type="submit"
-                variant="accent"
-                size="icon"
-                radius="full"
-                className="relative m-0 mr-[2px] size-[48px] rounded-full"
-                disabled={!isReadyToSubmit}
-              >
-                {newsletterIconResponse()}
-              </Button>
-            </form>
-            {formState.errors.email || state.error ? (
-              <p
-                role="alert"
-                className="mt-2 rounded-full bg-destructive px-4 py-0.5 text-destructive-foreground"
-              >
-                {'✖ '}
-                {formState.errors.email?.message}
-                {state.error}
-              </p>
-            ) : null}
-            {state.data ? (
-              <p
-                role="alert"
-                className="mt-2 rounded-full bg-success px-4 py-0.5 text-success-foreground"
-              >
-                {'✔ '}
-                {state.data}
-              </p>
-            ) : null}
+                  }}
+                />
+                <Button
+                  type="submit"
+                  variant="accent"
+                  size="icon"
+                  radius="full"
+                  className="relative m-0 mr-[2px] size-[48px] rounded-full"
+                  disabled={!isReadyToSubmit}
+                >
+                  {newsletterIconResponse()}
+                </Button>
+              </form>
+              {formState.errors.email || state.error ? (
+                <p
+                  role="alert"
+                  className="mt-2 rounded-full bg-destructive px-4 py-0.5 text-destructive-foreground"
+                >
+                  {'✖ '}
+                  {formState.errors.email?.message}
+                  {state.error}
+                </p>
+              ) : null}
+              {state.data ? (
+                <p
+                  role="alert"
+                  className="mt-2 rounded-full bg-success px-4 py-0.5 text-success-foreground"
+                >
+                  {'✔ '}
+                  {state.data}
+                </p>
+              ) : null}
+            </div>
           </div>
-        </div>
 
-        <FooterLinks />
-      </section>
-    </GoogleReCaptchaProvider>
+          <FooterLinks />
+        </section>
+      </GoogleReCaptchaProvider>
+    </div>
   )
 }
 

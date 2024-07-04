@@ -4,14 +4,8 @@ import { FAQ } from './faq'
 import dynamic from 'next/dynamic'
 import { getDictionary } from '@/dictionaries'
 import { LearnSection } from '@/components/_wip/learn-section'
-import { WhyChooseUs } from '@/components/routes/home/why-choose-us'
-import { Features } from '@/components/routes/home/features'
 import { appConfig } from '@/lib/config'
 import { Lang } from '@/dictionaries/locales'
-import { BannerOne } from '@/components/_wip/banner-one'
-import { FeatureOne } from '@/components/_wip/feature-one'
-import { FeatureTwo } from '@/components/_wip/feature-two'
-import { FeatureThree } from '@/components/_wip/feature-three'
 
 const DynamicNewsletter = dynamic(() => import('./newsletter') as any, {
   ssr: false

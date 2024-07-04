@@ -42,16 +42,19 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           </div>
         </ProjectHeader>
 
-        <div className="container">
+        <div className="narrow-container">
           {projectContentObjectKeys.map((key, index) => {
             const pcKey = key as keyof typeof projectContent
+            const isLastItem = index === projectContentObjectKeys.length - 1
 
             return (
               <section
                 key={key}
                 className={cn(
-                  'mx-auto my-10 flex w-full flex-col gap-11 px-3 pb-12 pt-10 md:px-6 lg:px-11',
-                  index % 2 !== 0 ? 'backdrop-xl rounded-3xl bg-primary/70' : ''
+                  !isLastItem && 'my-10',
+                  index % 2 !== 0
+                    ? `backdrop-x rounded-3xl bg-primary/70 py-10`
+                    : ''
                 )}
               >
                 <h2 className="flex justify-center mt-4 mb-10 tracking-tighter heading2">
@@ -94,8 +97,6 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
             )
           })}
         </div>
-
-        <hr className="max-w-screen-xl mx-auto mt-24 border-gray-600/80" />
       </div>
     </>
   )
