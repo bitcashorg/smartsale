@@ -15,6 +15,7 @@ import { locales } from '@/dictionaries/locales'
 import { Analytics } from '@vercel/analytics/react'
 import { CommonPageParams } from '@/types/routing.type'
 import { getDictionary } from '@/dictionaries'
+import '../../globals.css'
 
 const openSans = Open_Sans({
   subsets: ['latin', 'latin-ext'],
@@ -29,7 +30,7 @@ export default async function RootLayout({
   return (
     <html
       lang={params.lang || 'en'}
-      className={cn('antialiased', openSans.className)}
+      className={cn('tk-futura-pt max-w-full text-lg antialiased')}
       suppressHydrationWarning
     >
       <body>

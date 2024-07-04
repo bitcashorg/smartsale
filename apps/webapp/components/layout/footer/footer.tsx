@@ -22,20 +22,6 @@ export default async function Footer({ params }: { params: { lang: Lang } }) {
   return (
     <footer className="flex flex-col flex-1 w-full px-4 overflow-hidden">
       <div className="narrow-container">
-        {appConfig.features.sections ? (
-          <>
-            <WhyChooseUs lang={params.lang} dict={dict} />
-            <Features lang={params.lang} dict={dict} />
-          </>
-        ) : null}
-        {appConfig.features.explorations ? (
-          <>
-            <BannerOne />
-            <FeatureOne />
-            <FeatureTwo />
-            <FeatureThree />
-          </>
-        ) : null}
         {/* Call to action, how it works sections */}
         <Participate lang={params.lang} dict={dict} />
         {appConfig.features.sections ? (
