@@ -490,11 +490,11 @@ function IconTwitterX({ className, ...props }: React.ComponentProps<'svg'>) {
     </svg>
   )
 }
-
 function IconDownRightArrow({
   className,
+  strokeColor = 'black',
   ...props
-}: React.ComponentProps<'svg'>) {
+}: React.ComponentProps<'svg'> & { strokeColor?: string }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -505,13 +505,13 @@ function IconDownRightArrow({
     >
       <path
         d="M16.9714 2.14282L16.9714 17.1999L1.91432 17.1999"
-        stroke="black"
+        stroke={strokeColor}
         strokeWidth="2.7"
         strokeLinecap="round"
       />
       <path
         d="M15.6429 16.1059L2.03985 2.5029"
-        stroke="black"
+        stroke={strokeColor}
         strokeWidth="2.7"
         strokeLinecap="round"
       />
