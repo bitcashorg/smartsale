@@ -6,6 +6,7 @@ import { Lang } from '@/dictionaries/locales'
 import { Badge } from '@/components/ui/badge'
 import { Card, CardContent } from '@/components/ui/card'
 import { cn } from '@/lib/utils'
+import Balancer from 'react-wrap-balancer'
 
 export function Features({ lang, dict }: FeaturesProps) {
   return (
@@ -26,7 +27,9 @@ export function Features({ lang, dict }: FeaturesProps) {
           >
             <div className="space-y-2">
               <Badge>{content.label}</Badge>
-              <h3 className="text-2xl font-bold">{content.title}</h3>
+              <h3 className="text-2xl font-bold">
+                <Balancer>{content.title}</Balancer>
+              </h3>
               <p className="text-gray-500 dark:text-gray-400">
                 {content.description}
               </p>
@@ -42,7 +45,7 @@ export function Features({ lang, dict }: FeaturesProps) {
                     alt={content.imgAlt}
                     fill
                     objectPosition="top"
-                    className="bg-transparent rounded-xl"
+                    className="rounded-xl bg-transparent"
                   />
                 </div>
               </CardContent>
@@ -54,7 +57,7 @@ export function Features({ lang, dict }: FeaturesProps) {
                 alt={content.imgAlt}
                 fill
                 objectPosition="top"
-                className="bg-transparent rounded-xl"
+                className="rounded-xl bg-transparent"
               />
             </div>
           )}

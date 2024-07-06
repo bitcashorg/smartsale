@@ -3,6 +3,7 @@ import { Card, CardContent } from '@/components/ui/card'
 import { LangProp } from '@/types/routing.type'
 import { YouTubePlaylistItem } from '@/services/youtube/index'
 import { VideoDialog } from '@/components/dialogs/video-dialog'
+import Balancer from 'react-wrap-balancer'
 
 export function MediaCard({ video, lang }: MediaCardProps) {
   return (
@@ -25,7 +26,7 @@ export function MediaCard({ video, lang }: MediaCardProps) {
           </div>
           <CardContent className="mt-2">
             <p className="truncate_text truncate_text--3-lines text-sub-2-sm mb-0 overflow-hidden pt-3 text-center text-white">
-              {video.snippet.title}
+              <Balancer>{video.snippet.title}</Balancer>
             </p>
           </CardContent>
         </Card>

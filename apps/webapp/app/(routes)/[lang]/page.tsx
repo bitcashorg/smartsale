@@ -1,6 +1,5 @@
 import { getProjects } from '@/lib/projects'
-import { getDictionary } from '../../../dictionaries'
-import { HomeHero } from '@/components/routes/home/home-hero'
+import { getDictionary } from '@/dictionaries'
 import { Lang } from '@/dictionaries/locales'
 import { WhyChooseUs } from '@/components/routes/home/why-choose-us'
 import { Features } from '@/components/routes/home/features'

@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { cn } from '@/lib/utils'
+import Balancer from 'react-wrap-balancer'
 
 // render standard content elements
 export function PageContent({ data }: { data: PageContentData }) {
@@ -17,7 +18,7 @@ export function PageContent({ data }: { data: PageContentData }) {
                   'text-center'
                 )}
               >
-                {item.text}
+                <Balancer>{item.text}</Balancer>
               </item.type>
             )
           case 'p':
@@ -44,6 +45,7 @@ export function PageContent({ data }: { data: PageContentData }) {
                 height={item.height}
                 layout={item.layout}
                 className={cn(item.className)}
+                loading="lazy"
               />
             )
           default:

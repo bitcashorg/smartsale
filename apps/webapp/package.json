@@ -81,6 +81,7 @@
     "react-qr-code": "^2.0.14",
     "react-use": "^17.5.0",
     "react-useanimations": "^2.10.0",
+    "react-wrap-balancer": "^1.1.1",
     "recharts": "^2.12.7",
     "resend": "^3.3.0",
     "sanity": "^3.46.1",

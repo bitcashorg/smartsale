@@ -1,5 +1,4 @@
 import { Project } from '@/lib/projects'
-import { AuctionCard } from './auction-card'
 
 export function HomeHero({
   projects,

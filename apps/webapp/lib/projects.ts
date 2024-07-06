@@ -12,7 +12,7 @@ export function getProjects(dict: any) {
 export const projects: Project[] = [
   {
     id: 1,
-    title: 'Bitcash | Bitlauncher',
+    title: 'Bitlauncher | Bitcash',
     slug: 'bitcash-bitlauncher',
     pitch: 'Building Ai & Crypto Apps For The New Global Economy.',
     fundraiseGoal: '$400,000',

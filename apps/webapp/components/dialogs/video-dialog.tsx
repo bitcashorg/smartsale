@@ -13,7 +13,7 @@ export function VideoDialog({ video, trigger }: VideoDialogProps) {
     <Dialog>
       <DialogTrigger asChild>{trigger}</DialogTrigger>
 
-      <DialogContent className="sm:max-w-[1000px]">
+      <DialogContent className="sm:max-w-[1200px]">
         <DialogHeader>
           <DialogTitle>{video.snippet.title}</DialogTitle>
           <DialogDescription>{video.snippet.description}</DialogDescription>

@@ -5,10 +5,10 @@ import { Project } from '@/lib/projects'
 export function Upcoming({ dict, projects }: UpcomingProps) {
   return (
     <Section heading={dict.home.upcomingHeading}>
-      <div
-        className="narrow-container grid scroll-m-3 auto-rows-fr grid-cols-1 gap-6 self-center lg:grid-cols-3 lg:self-stretch"
-        key="upcoming-auctions-description-container"
-      >
+      <div className="relative flex w-full justify-center py-10 text-center">
+        <div className="blur-effect-bg absolute top-0" />
+      </div>
+      <div className="narrow-container grid scroll-m-3 auto-rows-fr grid-cols-1 gap-6 self-center lg:grid-cols-3 lg:self-stretch">
         {projects.map((item, index) => (
           <AuctionCard
             key={`upcoming-auctions-item-${index}`}

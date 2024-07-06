@@ -9,6 +9,7 @@ import { Suspense } from 'react'
 import { cn } from '@/lib/utils'
 import { NestedLinkButton } from '@/components/nextjs/nested-link'
 import Link from 'next/link'
+import Balancer from 'react-wrap-balancer'
 
 export function NewHomeHero() {
   return (
@@ -26,16 +27,18 @@ export function NewHomeHero() {
         </div>
         <div className="text-left">
           <h1 className="text-6xl font-bold">
-            &nbsp; EARLY ACCESS TO <br />
-            THE NEXT <span className="text-pink-500">GLOBAL</span> <br />
-            <span className="text-pink-500">AI UNICORNS</span>
+            <Balancer>
+              &nbsp; EARLY ACCESS TO <br />
+              THE NEXT <span className="text-pink-500">GLOBAL</span> <br />
+              <span className="text-pink-500">AI UNICORNS</span>
+            </Balancer>
           </h1>
-          <Link href="/bitcash-bitlauncher">
-            <p className="mt-8 flex items-center gap-1">
-              EXPLORE MORE
-              <ArrowRightIcon className="mt-[-1px] h-5 w-5" />
-            </p>
-          </Link>
+          {/* <Link href="/bitcash-bitlauncher"> */}
+          <p className="mt-8 flex items-center gap-1 uppercase">
+            Be Part Of The Intelligent Future
+            {/* <ArrowRightIcon className="mt-[-1px] h-5 w-5" /> */}
+          </p>
+          {/* </Link> */}
         </div>
       </main>
       <footer className="flex flex-col items-center justify-between space-y-4 p-6 md:flex-row md:space-y-0">
@@ -51,10 +54,12 @@ export function NewHomeHero() {
             }
           }}
           trigger={
-            <Button variant="outline" className="flex items-center space-x-2">
-              <PlayIcon className="h-5 w-5" />
-              <span>watch features video</span>
-            </Button>
+            <div className="flex cursor-pointer items-center gap-3">
+              <div className="flex justify-center rounded-full bg-white p-2 text-center align-middle text-black">
+                <PlayIcon className="h-4 w-4" />
+              </div>
+              <span>Watch trailer</span>
+            </div>
           }
         />
 
@@ -75,8 +80,8 @@ export function NewHomeHero() {
           </div>
 
           <p className="flex items-center px-2 text-center leading-none text-black">
-            Join thousands
-            <br /> of happy users
+            Join Our Community
+            <br /> of Investors
           </p>
 
           <Suspense

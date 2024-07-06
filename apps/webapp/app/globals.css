@@ -114,6 +114,7 @@ body,
 html {
   @apply bg-background text-foreground;
 }
+
 .open-sans {
   font-family: 'Open Sans', sans-serif;
   font-optical-sizing: auto;
@@ -157,6 +158,7 @@ input[type='number'] {
   border: 1px solid #e5e7eb;
   padding: 10px;
 }
+
 .bg-zoom:hover,
 .bg-zoom:focus {
   @apply transition-all;
@@ -169,7 +171,7 @@ input[type='number'] {
 }
 
 .newsletter-wrapper {
-  @apply container flex flex-col items-center px-0 mx-auto rounded-3xl backdrop-blur-xl sm:text-center;
+  @apply container mx-auto flex flex-col items-center rounded-3xl px-0 backdrop-blur-xl sm:text-center;
   background: url('/images/newsletter-bg.webp') center center no-repeat;
   background-size: cover;
 }
@@ -258,7 +260,7 @@ input[type='number'] {
 
 /* TYPOGRAPHY */
 .heading {
-  @apply text-3xl font-bold md:text-6xl;
+  @apply text-4xl font-bold md:text-5xl;
 }
 
 .heading2 {
@@ -275,7 +277,7 @@ input[type='number'] {
 
 /* LAYOUT */
 .content-container {
-  @apply flex flex-col w-full max-w-screen-lg gap-10 py-24 mx-auto;
+  @apply mx-auto flex w-full max-w-screen-md flex-col gap-10 py-24;
 }
 
 .header-link:hover {
@@ -288,7 +290,7 @@ input[type='number'] {
   height: calc(100vh - 64px) !important;
   width: 100vw;
   overflow: hidden;
-  @apply fixed inset-x-0 flex flex-col items-center pb-20 overflow-hidden top-16 justify-evenly bg-background;
+  @apply fixed inset-x-0 top-16 flex flex-col items-center justify-evenly overflow-hidden bg-background pb-20;
 }
 
 /* BLUR EFFECT TO BACKGROUND CIRCLE */
@@ -305,7 +307,7 @@ input[type='number'] {
     hsla(293, 64%, 44%, 1)
   );
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-  z-index: -1;
+  /* z-index: -1; */
 }
 
 .truncate_text {
