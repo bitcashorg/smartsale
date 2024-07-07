@@ -6,6 +6,7 @@ export const projects: ProjectContent[] = [
     content: {
       highlights: {
         title: '하이라이트',
+        image: '/images/projects/bitlauncher/highlights-1.png',
         content: [
           [
             '보편적 접근성: bitcash는 암호화폐 및 AI와 같은 첨단 기술을 모든 사람이 이용할 수 있도록 노력하고 있습니다.',
@@ -23,6 +24,7 @@ export const projects: ProjectContent[] = [
       },
       product: {
         title: '제품개요',
+        image: '/images/projects/bitlauncher/product-1.png',
         content: [
           [
             '포용적 기술: 비트캐시는 기술 전문가뿐만 아니라 모든 사람에게 암호화폐, AI, DeFi를 제공하는 것을 목표로 합니다.',
@@ -40,6 +42,7 @@ export const projects: ProjectContent[] = [
       },
       problem: {
         title: '문제',
+        image: '/images/projects/bitlauncher/problem-1.png',
         content: [
           [
             '기술적 장애물: 암호화폐, AI 및 DeFi 발전은 일반 사용자를 방해하는 복잡한 시스템으로 인해 방해를 받습니다.',
@@ -56,6 +59,7 @@ export const projects: ProjectContent[] = [
       },
       solution: {
         title: '해결책',
+        image: '/images/projects/bitlauncher/solution-1.png',
         content: [
           [
             '직관적인 디자인: Bitcash는 직관적인 인터페이스로 블록체인 경험을 간소화하여 암호화폐와 AI에 대한 기술적 장벽을 제거합니다.',
@@ -73,6 +77,7 @@ export const projects: ProjectContent[] = [
       },
       businessModel: {
         title: '비즈니스 모델',
+        image: '/images/projects/bitlauncher/business-model-1.png',
         content: [
           [
             '유틸리티 토큰 생태계: 거래 및 서비스의 중심에 있는 역동적인 주조 및 소각 유틸리티 토큰 시스템을 구현하여 생태계 균형을 보장합니다.',
@@ -93,6 +98,7 @@ export const projects: ProjectContent[] = [
       },
       tokenomics: {
         title: '토큰경제학',
+        image: '/images/projects/bitlauncher/tokenomics-1.png',
         content: [
           [
             '듀얼 토큰 시스템: Bitcash 내의 거래 및 서비스에는 유틸리티 토큰을 활용하고 기여자와 이해관계자의 투표 및 의사 결정에는 거버넌스 토큰을 활용합니다.',
@@ -103,69 +109,10 @@ export const projects: ProjectContent[] = [
             '공평한 분배 모델: 전통적인 주주 모델과 유사한 공정한 분배 시스템을 채택하여 토큰이 실제 가치와 기여도를 반영하도록 보장합니다.',
             '투명한 토큰 가치 평가: 안정적인 경제 기반을 위해 투기를 피하고 토큰 분배의 투명성과 실제 가치 창출에 중점을 둡니다.',
             '거버넌스 참여: 토큰 보유자가 거버넌스에 참여하여 플랫폼의 방향과 정책에 기여하고 민주적 참여를 강조할 수 있도록 합니다.',
-            "경제적 적응성: 균형 잡힌 디지털 경제에 대한 커뮤니티와 플랫폼의 진화하는 요구에 부응하여 유연한 토큰경제학 전략을 유지합니다.",
+            '경제적 적응성: 균형 잡힌 디지털 경제에 대한 커뮤니티와 플랫폼의 진화하는 요구에 부응하여 유연한 토큰경제학 전략을 유지합니다.',
             '공동번영의 비전: Bitcash 토큰이 전통적인 경제적 장벽을 초월하여 혁신, 참여 및 혜택 공유 시스템을 뒷받침하는 새로운 글로벌 경제를 구축하는 것을 목표로 합니다.'
           ]
         ]
-      }
-    }
-  },
-
-  {
-    id: 2,
-    content: {
-      highlights: {
-        title: '하이라이트',
-        content: [[]]
-      },
-      product: {
-        title: '제품개요',
-        content: [[]]
-      },
-      problem: {
-        title: '문제',
-        content: [[]]
-      },
-      solution: {
-        title: '해결책',
-        content: [[]]
-      },
-      businessModel: {
-        title: '비즈니스 모델',
-        content: [[]]
-      },
-      tokenomics: {
-        title: '토큰경제학',
-        content: [[]]
-      }
-    }
-  },
-  {
-    id: 3,
-    content: {
-      highlights: {
-        title: '하이라이트',
-        content: [[]]
-      },
-      product: {
-        title: '제품개요',
-        content: [[]]
-      },
-      problem: {
-        title: '문제',
-        content: [[]]
-      },
-      solution: {
-        title: '해결책',
-        content: [[]]
-      },
-      businessModel: {
-        title: '비즈니스 모델',
-        content: [[]]
-      },
-      tokenomics: {
-        title: '토큰경제학',
-        content: [[]]
       }
     }
   }

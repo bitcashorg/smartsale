@@ -6,6 +6,7 @@ export const projects: ProjectContent[] = [
     content: {
       highlights: {
         title: 'Điểm nổi bật',
+        image: '/images/projects/bitlauncher/highlights-1.png',
         content: [
           [
             'Khả năng tiếp cận toàn cầu: bitcash cố gắng làm cho mọi người có thể tiếp cận các công nghệ tiên tiến như tiền điện tử và AI.',
@@ -23,6 +24,7 @@ export const projects: ProjectContent[] = [
       },
       product: {
         title: 'Tổng quan về sản phẩm',
+        image: '/images/projects/bitlauncher/product-1.png',
         content: [
           [
             'Công nghệ toàn diện: bitcash nhằm mục đích mang tiền điện tử, AI và DeFi đến với mọi người, không chỉ các chuyên gia công nghệ.',
@@ -40,6 +42,7 @@ export const projects: ProjectContent[] = [
       },
       problem: {
         title: 'Vấn đề',
+        image: '/images/projects/bitlauncher/problem-1.png',
         content: [
           [
             'Rào cản kỹ thuật: Những tiến bộ của tiền điện tử, AI và DeFi bị cản trở bởi các hệ thống phức tạp ngăn cản người dùng bình thường.',
@@ -56,6 +59,7 @@ export const projects: ProjectContent[] = [
       },
       solution: {
         title: 'Giải pháp',
+        image: '/images/projects/bitlauncher/solution-1.png',
         content: [
           [
             'Thiết kế trực quan: Bitcash hợp lý hóa trải nghiệm blockchain bằng giao diện trực quan, loại bỏ các rào cản kỹ thuật đối với tiền điện tử và AI.',
@@ -73,6 +77,7 @@ export const projects: ProjectContent[] = [
       },
       businessModel: {
         title: 'Mô hình kinh doanh',
+        image: '/images/projects/bitlauncher/business-model-1.png',
         content: [
           [
             'Hệ sinh thái mã thông báo tiện ích: Triển khai hệ thống mã thông báo tiện ích đúc và đốt năng động làm trung tâm cho các giao dịch và dịch vụ, đảm bảo cân bằng hệ sinh thái.',
@@ -93,6 +98,7 @@ export const projects: ProjectContent[] = [
       },
       tokenomics: {
         title: 'Tokenomics',
+        image: '/images/projects/bitlauncher/tokenomics-1.png',
         content: [
           [
             'Hệ thống mã thông báo kép: Sử dụng mã thông báo tiện ích cho các giao dịch và dịch vụ trong Bitcash cũng như mã thông báo quản trị để những người đóng góp và các bên liên quan bỏ phiếu và ra quyết định.',
@@ -103,69 +109,10 @@ export const projects: ProjectContent[] = [
             'Mô hình phân phối công bằng: Áp dụng hệ thống phân phối công bằng, giống với mô hình cổ đông truyền thống, đảm bảo mã thông báo phản ánh giá trị và đóng góp thực sự.',
             'Định giá token minh bạch: Tập trung vào tính minh bạch và tạo ra giá trị thực trong phân phối token, tránh đầu cơ để có nền tảng kinh tế ổn định.',
             'Tham gia quản trị: Cho phép chủ sở hữu token tham gia quản trị, đóng góp vào định hướng và chính sách của nền tảng, nhấn mạnh sự tham gia dân chủ.',
-            "Khả năng thích ứng kinh tế: Duy trì chiến lược kinh tế mã thông báo linh hoạt, đáp ứng nhu cầu phát triển của cộng đồng và nền tảng để có một nền kinh tế kỹ thuật số cân bằng.",
+            'Khả năng thích ứng kinh tế: Duy trì chiến lược kinh tế mã thông báo linh hoạt, đáp ứng nhu cầu phát triển của cộng đồng và nền tảng để có một nền kinh tế kỹ thuật số cân bằng.',
             'Tầm nhìn thịnh vượng chung: Nhằm mục đích xây dựng một nền kinh tế toàn cầu mới, nơi các token Bitcash củng cố một hệ thống đổi mới, sự tham gia và chia sẻ lợi ích, vượt qua các rào cản kinh tế truyền thống.'
           ]
         ]
-      }
-    }
-  },
-
-  {
-    id: 2,
-    content: {
-      highlights: {
-        title: 'Điểm nổi bật',
-        content: [[]]
-      },
-      product: {
-        title: 'Tổng quan về sản phẩm',
-        content: [[]]
-      },
-      problem: {
-        title: 'Vấn đề',
-        content: [[]]
-      },
-      solution: {
-        title: 'Giải pháp',
-        content: [[]]
-      },
-      businessModel: {
-        title: 'Mô hình kinh doanh',
-        content: [[]]
-      },
-      tokenomics: {
-        title: 'Tokenomics',
-        content: [[]]
-      }
-    }
-  },
-  {
-    id: 3,
-    content: {
-      highlights: {
-        title: 'Điểm nổi bật',
-        content: [[]]
-      },
-      product: {
-        title: 'Tổng quan về sản phẩm',
-        content: [[]]
-      },
-      problem: {
-        title: 'Vấn đề',
-        content: [[]]
-      },
-      solution: {
-        title: 'Giải pháp',
-        content: [[]]
-      },
-      businessModel: {
-        title: 'Mô hình kinh doanh',
-        content: [[]]
-      },
-      tokenomics: {
-        title: 'Tokenomics',
-        content: [[]]
       }
     }
   }

@@ -87,13 +87,19 @@ export interface Project {
     | 'solution'
     | 'businessModel'
     | 'tokenomics',
-    Record<'title' | 'content', string | string[][]>
+    ContentSection
   >
   auctionId?: number
   token?: TokenContractData
   presaleOpen?: boolean
   registrationOpen?: boolean
   auctionClosed?: boolean
+}
+
+export interface ContentSection {
+  title: string
+  content: string | string[][]
+  image: string
 }
 
 export interface ProjectContent {
@@ -105,10 +111,9 @@ export interface ProjectContent {
     | 'solution'
     | 'businessModel'
     | 'tokenomics',
-    Record<'title' | 'content', string | string[][]>
+    ContentSection
   >
 }
-
 export type ProjectWithAuction = Required<
   Pick<Project, 'auctionId' | 'token'>
 > &
