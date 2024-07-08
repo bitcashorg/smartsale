@@ -1,7 +1,11 @@
 import { init } from '@multibase/js'
 
-const YOUR_WRITE_API_KEY = ""
+const MULTIBASE_API_KEY = process.env.MULTIBASE_API_KEY || ""
+
+if (!MULTIBASE_API_KEY) {
+    throw new Error("Missing MULTIBASE_API_KEY")
+}
 
 export function initMultibase() {
-    init(YOUR_WRITE_API_KEY)
+    init(MULTIBASE_API_KEY)
 }
