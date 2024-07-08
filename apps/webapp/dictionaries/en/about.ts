@@ -5,11 +5,20 @@ export const about = {
     { type: 'h1', text: 'How Bitlauncher Works' },
     {
       type: 'p',
-      text: 'Bitlauncher is a platform enabling fair price discovery for token auctions. The aim of the platform is to make it easy for teams to discover a fair price for their token.'
+      text: 'Enabling fair price discovery for token auctions.'
     },
     {
       type: 'p',
-      text: 'Bitlauncher uses batch auctions, which are a popular mechanism for ensuring fair price for both the decentralized and traditional finance worlds. Batch auctions enable matching of limit orders of buyers and sellers with the same clearing price for all participants. From crypto use cases like Initial DEX Offerings (like those on the Mesa interface for Gnosis Protocol v1) to traditional finance auctions (like Google’s IPO and the NYSE Open Auction), batch auctions play an important role in the democratization of the auctioned assets. This function is especially important for decentralized teams which need to ensure fair token distributions while operating trustlessly and efficiently. Batch auctions are set to become a fundamental “DeFi Lego” brick for any team or community interested in offering their users the most transparent and fairest auction-mechanism for their token.'
+      text: 'The aim of the platform is to make it easy for teams to discover a fair price for their token. Bitlauncher uses batch auctions, which are a popular mechanism for ensuring fair price for both the decentralized and traditional finance worlds. Batch auctions enable matching of limit orders of buyers and sellers with the same clearing price for all participants. From crypto use cases like Initial DEX Offerings (like those on the Mesa interface for Gnosis Protocol v1) to traditional finance auctions (like Google’s IPO and the NYSE Open Auction), batch auctions play an important role in the democratization of the auctioned assets. This function is especially important for decentralized teams which need to ensure fair token distributions while operating trustlessly and efficiently. Batch auctions are set to become a fundamental “DeFi Lego” brick for any team or community interested in offering their users the most transparent and fairest auction-mechanism for their token.'
+    },
+    {
+      type: 'Image',
+      src: '/images/learn/batch-auctions/batch-auctions.webp',
+      alt: 'Comparison Chart',
+      width: 720,
+      height: 400,
+      layout: 'responsive',
+      className: 'dark:invert'
     },
     { type: 'h2', text: 'Comparison of Different Auction Mechanisms' },
     {
@@ -20,6 +29,15 @@ export const about = {
       type: 'Image',
       src: '/images/auction-comparison.webp',
       alt: 'Comparison Chart',
+      width: 720,
+      height: 400,
+      layout: 'responsive',
+      className: 'dark:invert'
+    },
+    {
+      type: 'Image',
+      src: '/images/learn/batch-auctions/batch-auction.webp',
+      alt: 'Batch Auction',
       width: 720,
       height: 400,
       layout: 'responsive',

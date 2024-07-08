@@ -1,3 +1,5 @@
+@import url('https://use.typekit.net/zgc6fnv.css');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -112,6 +114,7 @@ body,
 html {
   @apply bg-background text-foreground;
 }
+
 .open-sans {
   font-family: 'Open Sans', sans-serif;
   font-optical-sizing: auto;
@@ -155,6 +158,7 @@ input[type='number'] {
   border: 1px solid #e5e7eb;
   padding: 10px;
 }
+
 .bg-zoom:hover,
 .bg-zoom:focus {
   @apply transition-all;
@@ -174,6 +178,10 @@ input[type='number'] {
 
 .narrow-container {
   @apply container md:px-20;
+}
+
+.content-container {
+  @apply flex flex-col w-full max-w-screen-md gap-10 px-5 py-10 mx-auto md:py-24;
 }
 
 /** Scrollbar Styling */
@@ -256,7 +264,7 @@ input[type='number'] {
 
 /* TYPOGRAPHY */
 .heading {
-  @apply text-3xl font-bold !leading-snug md:text-6xl;
+  @apply text-4xl font-bold md:text-5xl;
 }
 
 .heading2 {
@@ -272,9 +280,6 @@ input[type='number'] {
 }
 
 /* LAYOUT */
-.content-container {
-  @apply flex flex-col w-full max-w-screen-lg gap-10 py-24 mx-auto;
-}
 
 .header-link:hover {
   text-decoration: underline;
@@ -303,7 +308,7 @@ input[type='number'] {
     hsla(293, 64%, 44%, 1)
   );
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-  z-index: -1;
+  /* z-index: -1; */
 }
 
 .truncate_text {

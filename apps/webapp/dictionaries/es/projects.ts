@@ -6,6 +6,7 @@ export const projects: ProjectContent[] = [
     content: {
       highlights: {
         title: 'Highlights',
+        image: '/images/projects/bitlauncher/highlights-1.png',
         content: [
           [
             'Accesibilidad Universal: Bitcash se esfuerza por hacer que tecnologías avanzadas como las criptomonedas y la inteligencia artificial sean accesibles para todos.',
@@ -23,6 +24,7 @@ export const projects: ProjectContent[] = [
       },
       product: {
         title: 'Descripción del producto',
+        image: '/images/projects/bitlauncher/product-1.png',
         content: [
           [
             'Tecnología Inclusiva: Bitcash busca llevar criptomonedas, IA y DeFi a todos, no solo a expertos en tecnología.',
@@ -40,6 +42,7 @@ export const projects: ProjectContent[] = [
       },
       problem: {
         title: 'Problema',
+        image: '/images/projects/bitlauncher/problem-1.png',
         content: [
           [
             'Obstáculos Técnicos: Los avances en criptomonedas, IA y DeFi se ven obstaculizados por sistemas complejos que disuaden a los usuarios promedio.',
@@ -56,6 +59,7 @@ export const projects: ProjectContent[] = [
       },
       solution: {
         title: 'Solución',
+        image: '/images/projects/bitlauncher/solution-1.png',
         content: [
           [
             'Diseño Intuitivo: Bitcash simplifica la experiencia blockchain con una interfaz intuitiva, eliminando barreras técnicas para criptomonedas e IA.',
@@ -73,6 +77,7 @@ export const projects: ProjectContent[] = [
       },
       businessModel: {
         title: 'Modelo de Negocio',
+        image: '/images/projects/bitlauncher/business-model-1.png',
         content: [
           [
             'Ecosistema de Tokens de Utilidad: Implementa un sistema dinámico de tokens de utilidad de emisión y quema central para transacciones y servicios, asegurando el equilibrio del ecosistema.',
@@ -87,12 +92,13 @@ export const projects: ProjectContent[] = [
             'Marketing Orientado al Crecimiento de Usuarios: Emplea marketing estratégico para atraer una base de usuarios diversa, desmitificando blockchain e IA para fomentar la adopción masiva.'
           ],
           [
-            "Este modelo de negocio representa el compromiso de Bitcash con una economía digital sostenible y equitativa, aprovechando la aportación de la comunidad y la innovación para un crecimiento colectivo."
+            'Este modelo de negocio representa el compromiso de Bitcash con una economía digital sostenible y equitativa, aprovechando la aportación de la comunidad y la innovación para un crecimiento colectivo.'
           ]
         ]
       },
       tokenomics: {
         title: 'Tokenomics',
+        image: '/images/projects/bitlauncher/tokenomics-1.png',
         content: [
           [
             'Sistema de Doble Token: Utiliza tokens de utilidad para transacciones y servicios dentro de Bitcash y tokens de gobernanza para votación y toma de decisiones por parte de contribuyentes y partes interesadas.',
@@ -103,69 +109,10 @@ export const projects: ProjectContent[] = [
             'Modelo de Distribución Equitativa: Adopta un sistema de distribución justa, similar a los modelos tradicionales de accionistas, garantizando que los tokens reflejen un valor real y contribuciones.',
             'Valoración Transparente de Tokens: Se enfoca en la transparencia y la creación de valor real en la distribución de tokens, evitando la especulación para bases económicas estables.',
             'Participación en Gobernanza: Permite a los titulares de tokens participar en la gobernanza, contribuyendo a la dirección y políticas de la plataforma, enfatizando la participación democrática.',
-            "Adaptabilidad Económica: Mantiene una estrategia de tokenómica flexible, receptiva a las necesidades en evolución de la comunidad y la plataforma para una economía digital equilibrada.",
+            'Adaptabilidad Económica: Mantiene una estrategia de tokenómica flexible, receptiva a las necesidades en evolución de la comunidad y la plataforma para una economía digital equilibrada.',
             'Visión de Prosperidad Compartida: Tiene como objetivo construir una nueva economía global donde los tokens Bitcash respalden un sistema de innovación, participación y beneficios compartidos, trascendiendo las barreras económicas tradicionales.'
           ]
         ]
-      }
-    }
-  },
-
-  {
-    id: 2,
-    content: {
-      highlights: {
-        title: 'Highlights',
-        content: [[]]
-      },
-      product: {
-        title: 'Descripción del producto',
-        content: [[]]
-      },
-      problem: {
-        title: 'Problema',
-        content: [[]]
-      },
-      solution: {
-        title: 'Solución',
-        content: [[]]
-      },
-      businessModel: {
-        title: 'Modelo de Negocio',
-        content: [[]]
-      },
-      tokenomics: {
-        title: 'Tokenomics',
-        content: [[]]
-      }
-    }
-  },
-  {
-    id: 3,
-    content: {
-      highlights: {
-        title: 'Highlights',
-        content: [[]]
-      },
-      product: {
-        title: 'Descripción del producto',
-        content: [[]]
-      },
-      problem: {
-        title: 'Problema',
-        content: [[]]
-      },
-      solution: {
-        title: 'Solución',
-        content: [[]]
-      },
-      businessModel: {
-        title: 'Modelo de Negocio',
-        content: [[]]
-      },
-      tokenomics: {
-        title: 'Tokenomics',
-        content: [[]]
       }
     }
   }

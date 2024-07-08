@@ -6,6 +6,7 @@ export const projects: ProjectContent[] = [
     content: {
       highlights: {
         title: 'Destaques',
+        image: '/images/projects/bitcash/highlights-1.png',
         content: [
           [
             'Acessibilidade Universal: O bitcash se esforça para tornar tecnologias avançadas como criptomoeda e IA acessíveis a todos.',
@@ -23,6 +24,7 @@ export const projects: ProjectContent[] = [
       },
       product: {
         title: 'Resumo do Produto',
+        image: '/images/projects/bitcash/product-1.png',
         content: [
           [
             'Tecnologia Inclusiva: O bitcash tem como objetivo levar criptomoeda, IA e DeFi para todos, não apenas para especialistas em tecnologia.',
@@ -40,6 +42,7 @@ export const projects: ProjectContent[] = [
       },
       problem: {
         title: 'Problema',
+        image: '/images/projects/bitcash/problem-1.png',
         content: [
           [
             'Obstáculos Técnicos: Os avanços em criptomoedas, IA e DeFi são dificultados por sistemas complexos que desencorajam os usuários comuns.',
@@ -56,6 +59,7 @@ export const projects: ProjectContent[] = [
       },
       solution: {
         title: 'Solução',
+        image: '/images/projects/bitcash/solution-1.png',
         content: [
           [
             'Design Intuitivo: O Bitcash agiliza a experiência blockchain com uma interface intuitiva, removendo barreiras técnicas à criptomoeda e à IA.',
@@ -73,6 +77,7 @@ export const projects: ProjectContent[] = [
       },
       businessModel: {
         title: 'Modelo de negócios',
+        image: '/images/projects/bitcash/business-model-1.png',
         content: [
           [
             'Ecossistema de token utilitário: Implementa um sistema dinâmico de tokens utilitários de criação e queima central para transações e serviços, garantindo o equilíbrio do ecossistema.',
@@ -93,6 +98,7 @@ export const projects: ProjectContent[] = [
       },
       tokenomics: {
         title: 'Tokenomia',
+        image: '/images/projects/bitcash/tokenomics-1.png',
         content: [
           [
             'Sistema de token duplo: Utiliza tokens utilitários para transações e serviços dentro do Bitcash e tokens de governança para votação e tomada de decisões por contribuidores e partes interessadas.',
@@ -103,69 +109,10 @@ export const projects: ProjectContent[] = [
             'Modelo de distribuição equitativa: Adota um sistema de distribuição justo, semelhante aos modelos tradicionais de acionistas, garantindo que os tokens reflitam o valor e as contribuições reais.',
             'Avaliação de token transparente: Concentra-se na transparência e na criação de valor real na distribuição de tokens, evitando a especulação para bases económicas estáveis.',
             'Participação na Governança: Permite que os detentores de tokens se envolvam na governança, contribuindo para a direção e as políticas da plataforma, enfatizando a participação democrática.',
-            "Adaptabilidade Económica: Mantém uma estratégia tokenomics flexível, que responde às necessidades crescentes da comunidade e da plataforma para uma economia digital equilibrada.",
+            'Adaptabilidade Económica: Mantém uma estratégia tokenomics flexível, que responde às necessidades crescentes da comunidade e da plataforma para uma economia digital equilibrada.',
             'Visão de prosperidade compartilhada: Visa construir uma nova economia global onde os tokens Bitcash sustentam um sistema de inovação, participação e benefícios partilhados, transcendendo as barreiras económicas tradicionais.'
           ]
         ]
-      }
-    }
-  },
-
-  {
-    id: 2,
-    content: {
-      highlights: {
-        title: 'Destaques',
-        content: [[]]
-      },
-      product: {
-        title: 'Resumo do Produto',
-        content: [[]]
-      },
-      problem: {
-        title: 'Problema',
-        content: [[]]
-      },
-      solution: {
-        title: 'Solução',
-        content: [[]]
-      },
-      businessModel: {
-        title: 'Modelo de negócios',
-        content: [[]]
-      },
-      tokenomics: {
-        title: 'Tokenomics',
-        content: [[]]
-      }
-    }
-  },
-  {
-    id: 3,
-    content: {
-      highlights: {
-        title: 'Destaques',
-        content: [[]]
-      },
-      product: {
-        title: 'Resumo do Produto',
-        content: [[]]
-      },
-      problem: {
-        title: 'Problema',
-        content: [[]]
-      },
-      solution: {
-        title: 'Solução',
-        content: [[]]
-      },
-      businessModel: {
-        title: 'Modelo de negócios',
-        content: [[]]
-      },
-      tokenomics: {
-        title: 'Tokenomics',
-        content: [[]]
       }
     }
   }

@@ -34,5 +34,8 @@
     "eslint": "^9.5.0",
     "prettier": "^3.3.2",
     "turbo": "^2.0.4"
+  },
+  "dependencies": {
+    "nookies": "^2.5.2"
   }
 }

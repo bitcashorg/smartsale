@@ -14,7 +14,6 @@ export default async function ArticlePage(props: ArticlePageProps) {
   } = props
 
   const data = await getBlogArticleData(lang, category, slug)
-
   if (!data) return notFound()
 
   const { blogContent, relatedBlogs } = data
@@ -31,39 +30,20 @@ export default async function ArticlePage(props: ArticlePageProps) {
   )
 }
 
-export async function generateMetadata(props: any): Promise<Metadata> {
+export async function generateMetadata(
+  props: ArticlePageProps
+): Promise<Metadata> {
   const {
     params: { lang, category, slug }
   } = props
 
-  const locales = [lang]
-  const categories = await getBlogCategory(category, {
-    slug: {
-      eq: slug
-    }
-  })
-
-  // replacing category kebab case with camel case
-  const blogCategory = category.replace(/(\-\w)/g, (m: string) =>
-    m[1].toUpperCase()
-  )
-  const data: any = categories[`${blogCategory}Data`]
-  const error: any = categories[`${blogCategory}Error`]
-
-  let categoryContent: any[]
-  categoryContent = data
-  if (categoryContent.length < 1 || error) {
-    console.log(`${blogCategory}::ERROR::`, error)
-    notFound()
-  }
-
-  const blogContent = categoryContent[0]
+  const data = await getBlogArticleData(lang, category, slug)
 
   const seoData = {
-    title: blogContent.seo?.title || '',
-    description: blogContent.seo?.description || '',
+    title: data?.blogContent.seo?.title || '',
+    description: data?.blogContent.seo?.description || '',
     ogType: 'website',
-    ogImageUrl: blogContent.seo?.image?.url || '',
+    ogImageUrl: data?.blogContent.seo?.image?.url || '',
     twitterCard: 'summary_large_image'
   }
 

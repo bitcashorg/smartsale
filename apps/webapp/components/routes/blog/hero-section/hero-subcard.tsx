@@ -4,38 +4,33 @@ import { readingTime } from '@/lib/blog'
 import { BlogArticleRecord } from '~/services/datocms'
 import { useParams, useRouter } from 'next/navigation'
 import { Button } from '@/components/ui/button'
-import { Tag } from '@/components/ui/tag'
+import { Tag } from '@/components/shared/tag'
 import { Card } from '@/components/ui/card'
 
 export interface Subcardprops {
   post: BlogArticleRecord
   sectionSlug: string
-  selectedTopic: string | null
 }
-export const HeroSubCard = ({
-  post,
-  sectionSlug,
-  selectedTopic
-}: Subcardprops) => {
+export const HeroSubCard = ({ post, sectionSlug }: Subcardprops) => {
   const router = useRouter()
   const { locale } = useParams()
 
   return (
     <Card
-      className="p-0 overflow-hidden list-none bg-transparent cursor-pointer md:min-h-space-200 group border-muted"
+      className="md:min-h-space-200 group cursor-pointer list-none overflow-hidden border-muted bg-transparent p-0"
       id={post.slug}
     >
       <Link
         href={`/blog/${sectionSlug}/${post.slug}`}
-        className="flex flex-row justify-between space-y-3 transition-all px-space-15 py-space-20 md:space-y-0"
+        className="flex flex-row justify-between space-y-3 px-space-15 py-space-20 transition-all md:space-y-0"
         onClick={event =>
           (event.target as HTMLElement).tagName === 'BUTTON' &&
           event.preventDefault()
         }
       >
-        <div className="flex flex-col items-start justify-start p-5 min-w-40 space-y-space-6">
+        <div className="flex min-w-40 flex-col items-start justify-start pr-5 text-sm">
           <span className="">{post.authorName}</span>
-          <span className="font-futura-pt-book text-h-text-c text-h-text dark:text-white">
+          <span className="font-futura-pt-book dark:text-white">
             {new Date(post?._publishedAt).toLocaleDateString(locale, {
               month: 'short',
               day: '2-digit',
@@ -45,20 +40,14 @@ export const HeroSubCard = ({
           </span>
           <Tag
             className="mt-space-6"
-            title={selectedTopic ? selectedTopic : sectionSlug}
-            onClick={() =>
-              router.push(
-                selectedTopic
-                  ? `/blog/${sectionSlug}?topic=${selectedTopic}#${selectedTopic}`
-                  : `/blog/${sectionSlug}`
-              )
-            }
+            title={sectionSlug}
+            onClick={() => router.push(`/blog/${sectionSlug}`)}
           />
         </div>
         <div className="flex flex-col items-start justify-start space-y-space-10 md:max-w-[366px]">
           <h1
             title={post?.title}
-            className="font-bold text-black font-futura-pt-bold truncate_text truncate_text--3-lines text-sub-2-lg dark:text-white"
+            className="font-futura-pt-bold truncate_text truncate_text--3-lines text-sub-2-lg font-bold text-black dark:text-white"
           >
             {post?.title}
           </h1>

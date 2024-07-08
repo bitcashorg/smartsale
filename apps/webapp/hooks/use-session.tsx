@@ -4,12 +4,15 @@ import { getSesssion } from '@/actions'
 import { genLoginSigningRequest } from '@/lib/eos'
 import { useSupabaseClient } from '@/services/supabase'
 import { createContextHook } from '@blockmatic/hooks-utils'
+import { identify } from '@multibase/js'
 import { useConnectModal } from '@rainbow-me/rainbowkit'
 import { Tables } from '@repo/supabase'
 import { usePathname, useRouter, useSearchParams } from 'next/navigation'
 import React, { ReactNode, useEffect, useState } from 'react'
 import { isMobile } from 'react-device-detect'
 import { useAsync, useLocalStorage, useToggle } from 'react-use'
+import { useAccount } from 'wagmi'
+import { v4 as uuidv4 } from 'uuid'
 
 // Exports
 export { SessionProvider, useSession }
@@ -17,7 +20,8 @@ export { SessionProvider, useSession }
 // don export this fn must be wrapped for context to work
 function useSessionFn() {
   const supabase = useSupabaseClient()
-  const [newSessionId] = useState(crypto.randomUUID())
+  const account = useAccount()
+  const [newSessionId] = useState(uuidv4())
   const searchParams = useSearchParams()
   const paramsSessionId = searchParams.get('session_id')
   const pathname = usePathname()
@@ -33,6 +37,15 @@ function useSessionFn() {
   const loginUri = loginSR?.value?.encode()
 
   let registerUri = 'https://app.bitcash.org?share=JVnL7qzrU'
+
+  const startSession = (session: Tables<'session'>) => {
+    setSession(session)
+    identify({
+      address: account.address || '0x',
+      properties: { account: session?.account ?? 'unknown' }
+    })
+  }
+
   // subscribe to supabase session table and set session state
   // this table get updated by /api/esr callback invoked by the signing wallet
   useEffect(() => {
@@ -49,8 +62,9 @@ function useSessionFn() {
           console.log('BAZINGA 🍓 new supabase session', payload.new)
           // set new session if ids match
           if (session || payload.new.id !== newSessionId) return
-          console.log(' ✅ supabase session id matches', payload.new)
-          setSession(payload.new as Tables<'session'>)
+          const newSession = payload.new as Tables<'session'>
+          console.log(' ✅ supabase session id matches', newSession)
+          startSession(newSession)
           toggleShowSessionDialog(false)
         }
       )
@@ -60,7 +74,7 @@ function useSessionFn() {
       console.log(`XX unsubscribing to session ${newSessionId}`)
       supabase.removeChannel(channel)
     }
-  }, [setSession, supabase, isMobile])
+  }, [startSession, supabase, isMobile])
 
   // // open session from url search params
   useEffect(() => {
@@ -77,7 +91,7 @@ function useSessionFn() {
       if (!session) return
       // TODO: move this logic to backend
       // set cookie session
-      setSession(session)
+      startSession(session)
       console.log('✅ session', session)
       // Encoding the query and managing search parameters
       const params = new URLSearchParams(searchParams)
@@ -115,9 +129,7 @@ function useSessionFn() {
     const encodedCallbackUrl = encodeURIComponent(callbackUrl)
     params.append('callback', encodedCallbackUrl)
     const referrer = sessionStorage.getItem('referrer')
-    if (referrer) {
-      params.append('referrer', referrer)
-    }
+    if (referrer) params.append('referrer', referrer)
     location.href = `https://app.bitcash.org?${params.toString()}`
   }
 

@@ -1,6 +1,6 @@
 import '@/app/globals.css'
 import Footer from '@/components/layout/footer/footer'
-import { Header } from '@/components/layout/header/header'
+import { Header } from '@/components/layout/header'
 import { Providers } from '@/components/layout/providers'
 import { GlobalStoreProvider } from '@/hooks/use-global-store'
 import { cn } from '@/lib/utils'
@@ -8,18 +8,24 @@ import { GoogleAnalytics } from '@next/third-parties/google'
 import '@rainbow-me/rainbowkit/styles.css'
 import { Metadata } from 'next'
 import dynamic from 'next/dynamic'
-import { Open_Sans } from 'next/font/google'
 import React from 'react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { locales } from '@/dictionaries/locales'
 import { Analytics } from '@vercel/analytics/react'
 import { CommonPageParams } from '@/types/routing.type'
 import { getDictionary } from '@/dictionaries'
+import '../../globals.css'
+import type { Viewport } from 'next'
+import { isMobile } from 'react-device-detect'
 
-const openSans = Open_Sans({
-  subsets: ['latin', 'latin-ext'],
-  weight: ['400', '500', '600', '700', '800']
-})
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false
+  // Also supported by less commonly used
+  // interactiveWidget: 'resizes-visual',
+}
 
 export default async function RootLayout({
   children,
@@ -29,10 +35,11 @@ export default async function RootLayout({
   return (
     <html
       lang={params.lang || 'en'}
-      className={cn('antialiased', openSans.className)}
+      className={cn('tk-futura-pt max-w-full text-lg antialiased')}
       suppressHydrationWarning
+      style={{ width: '100vw', maxWidth: '100vw' }}
     >
-      <body>
+      <body style={{ width: '100vw', maxWidth: '100vw' }}>
         <GlobalStoreProvider>
           <Providers
             attribute="class"
@@ -42,7 +49,14 @@ export default async function RootLayout({
           >
             <Header lang={params.lang} dict={dict} />
             {/* <Toaster /> */}
-            <main className="flex flex-col flex-1">{children}</main>
+            <main
+              className={cn(
+                'flex w-full max-w-[100vw] flex-1 flex-col',
+                isMobile && 'overflow-hidden'
+              )}
+            >
+              {children}
+            </main>
             <Footer params={params} />
             <DynamicSessionDialog />
           </Providers>
