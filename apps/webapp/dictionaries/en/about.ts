@@ -34,6 +34,15 @@ export const about = {
       layout: 'responsive',
       className: 'dark:invert'
     },
+    {
+      type: 'Image',
+      src: '/images/learn/batch-auctions/batch-auction.webp',
+      alt: 'Batch Auction',
+      width: 720,
+      height: 400,
+      layout: 'responsive',
+      className: 'dark:invert'
+    },
     { type: 'h2', text: 'Fair Price Discovery with Bitlauncher' },
     {
       type: 'p',

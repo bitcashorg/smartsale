@@ -3,7 +3,7 @@ import Participate from './participate'
 import { FAQ } from './faq'
 import dynamic from 'next/dynamic'
 import { getDictionary } from '@/dictionaries'
-import { LearnSection } from '@/components/_wip/learn-section'
+import { LearnSection } from '@/components/layout/footer/learn-section'
 import { appConfig } from '@/lib/config'
 import { Lang } from '@/dictionaries/locales'
 

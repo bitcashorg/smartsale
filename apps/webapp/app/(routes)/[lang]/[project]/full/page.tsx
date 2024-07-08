@@ -43,7 +43,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           </div>
         </ProjectHeader>
 
-        <div className="narrow-container">
+        <div className="pt-20 narrow-container">
           {projectContentObjectKeys.map((key, index) => {
             const pcKey = key as keyof typeof projectContent
             const isLastItem = index === projectContentObjectKeys.length - 1
@@ -52,22 +52,25 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               <section
                 key={key}
                 className={cn(
-                  !isLastItem && 'my-10',
+                  !isLastItem &&
+                    'backdrop-x my-10 overflow-hidden rounded-3xl bg-primary/70 pb-10',
                   index % 2 !== 0
-                    ? `backdrop-x rounded-3xl bg-primary/70 py-10`
+                    ? `backdrop-x rounded-3xl bg-primary/70 pb-10`
                     : ''
                 )}
               >
-                <h2 className="flex justify-center mt-4 mb-10 tracking-tighter heading2">
-                  {projectContent[pcKey].title}
-                </h2>
-                <div className="relative h-[300px] w-full">
+                <div className="relative mb-14 h-[400px] w-full">
                   <Image
                     src={projectContent[pcKey].image}
                     alt={projectContent[pcKey].title as string}
                     fill
+                    className="object-cover"
                   />
                 </div>
+                <h2 className="flex justify-center mt-4 tracking-tighter heading2 mb-14">
+                  {projectContent[pcKey].title}
+                </h2>
+
                 <div className="flex flex-col w-full gap-6">
                   {(projectContent[pcKey].content as string[][]).map(
                     (content, index) => {
@@ -77,7 +80,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                             key={`${index}__${(projectContent[pcKey].title as string).replace(/\s/g, '-')}`}
                             className="grid gap-16 px-6 list-disc list-outside lg:grid-flow-cols-4 sm:grid-cols-2 md:grid-cols-3"
                           >
-                            {content.map(item => {
+                            {content.slice(0, 6).map(item => {
                               const text = item.split(': ')
                               return (
                                 <div key={`${item}__list-item`}>
@@ -134,9 +137,9 @@ type ProjectPageProps = {
 
 const DynamicAddressForm = dynamic(
   () =>
-    import('../../../../components/routes/project/register-address-form').then(
-      mod => mod.RegisterAddressForm
-    ),
+    import(
+      '../../../../../components/routes/project/register-address-form'
+    ).then(mod => mod.RegisterAddressForm),
   {
     ssr: false,
     loading: () => <Button>Register</Button>
