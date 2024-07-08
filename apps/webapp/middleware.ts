@@ -21,19 +21,7 @@ export function middleware(request: NextRequest) {
   )
 
   // console.log('🍓 has lang', hasLang, pathname)
-  if (hasLang) {
-    const cookieLang = request.cookies.get('lang')
-    // set first time lang cookie
-    if (!cookieLang) {
-      const lang = getLocale(request)
-      cookieStore.set('lang', lang, {
-        path: '/',
-        httpOnly: true,
-        sameSite: 'strict'
-      })
-    }
-    return NextResponse.next()
-  }
+  if (hasLang) return NextResponse.next()
 
   const lang = getLocale(request)
   request.nextUrl.pathname = `/${lang}${pathname}`
