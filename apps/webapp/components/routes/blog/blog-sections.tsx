@@ -12,7 +12,7 @@ export function BlogSections({
   className
 }: BlogSectionsProps) {
   return (
-    <div className={cn('flex-colt flex w-full pt-10', className)}>
+    <div className={cn('flex w-full flex-col pt-10', className)}>
       {sections.map(
         section =>
           section?.articles?.length > 0 && (

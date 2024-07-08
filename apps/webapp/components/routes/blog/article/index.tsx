@@ -47,7 +47,10 @@ export function BlogPage({
   // console.log(blogContent)
   const title =
     blogContent.title ||
-    blogContent.slug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase())
+    blogContent.slug
+      ?.replace(/-/g, ' ')
+      .replace(/\b\w/g, l => l.toUpperCase()) ||
+    ''
 
   const headingTexts = block
     ?.filter(filt => filt !== undefined)

@@ -1,8 +1,10 @@
 import { appConfig } from '@/lib/config'
 
-export const locales: Lang[] = appConfig.features.i18n
-  ? ['en', 'es', 'zh', 'id', 'vi', 'ko', 'pt', 'fr']
-  : (['en'] as const)
+export const locales: Lang[] = ['en']
+
+// appConfig.features.i18n
+//   ? ['en', 'es', 'zh', 'id', 'vi', 'ko', 'pt', 'fr']
+//   : (['en'] as const)
 
 export const defaultLocale: Lang = 'en'
 
