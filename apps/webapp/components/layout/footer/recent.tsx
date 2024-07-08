@@ -1,4 +1,4 @@
-import { BlogSections } from '@/components/routes/blog/sections'
+import { BlogSections } from '@/components/routes/blog/blog-sections'
 import { ArticlesSection } from '@/services/datocms'
 import { fetchPublicYouTubePlaylist } from '@/services/youtube'
 import { LangProp } from '@/types/routing.type'
@@ -7,14 +7,14 @@ import { MediaSection, MediaSections } from '@/components/shared/media-sections'
 import { Section } from '@/components/shared/section'
 
 export async function RecentArticles({ lang }: LangProp) {
-  const latestProductCalls = await fetchPublicYouTubePlaylist(
-    'PL6BKGVqekhB_R8wjPFN-p6dGkcIy_bM1D',
-    5
-  )
-  const latestShorts = await fetchPublicYouTubePlaylist(
-    'PL6BKGVqekhB_3OhFY_zpJwmaaV6sLxLwJ',
-    5
-  )
+  // const latestProductCalls = await fetchPublicYouTubePlaylist(
+  //   'PL6BKGVqekhB_R8wjPFN-p6dGkcIy_bM1D',
+  //   5
+  // )
+  // const latestShorts = await fetchPublicYouTubePlaylist(
+  //   'PL6BKGVqekhB_3OhFY_zpJwmaaV6sLxLwJ',
+  //   5
+  // )
   // const latestBitcoinEdu = await fetchPublicYouTubePlaylist(
   //   'PL6BKGVqekhB8XkWgA-JWGLafKHxKDfzlM',
   //   5
@@ -165,3 +165,244 @@ export async function RecentArticles({ lang }: LangProp) {
     /* <ShortVideoStrip videos={latestShorts} /> */
   }
 }
+
+const latestShorts = [
+  {
+    kind: 'youtube#playlistItem',
+    etag: 'gNlGgzV_GELSlM0eMgLN2ESUYm0',
+    id: 'UEw2QktHVnFla2hCXzNPaEZZX3pwSndtYWFWNnNMeEx3Si4xRDJGOTc4RkUxMzUwMUFG',
+    snippet: {
+      publishedAt: '2024-05-20T04:55:10Z',
+      channelId: 'UChzuWZjo_PvOrRTDfkojp3w',
+      title:
+        'From Prison to Bitcoin A Journey to Freedom #bitcoin #crypto #liberty',
+      description: 'Full video here: https://youtu.be/IXhECniE6-4',
+      thumbnails: {
+        default: {
+          url: 'https://i.ytimg.com/vi/OlrfEz5dqv0/default.jpg',
+          width: 120,
+          height: 90
+        },
+        medium: {
+          url: 'https://i.ytimg.com/vi/OlrfEz5dqv0/mqdefault.jpg',
+          width: 320,
+          height: 180
+        },
+        high: {
+          url: 'https://i.ytimg.com/vi/OlrfEz5dqv0/hqdefault.jpg',
+          width: 480,
+          height: 360
+        },
+        standard: {
+          url: 'https://i.ytimg.com/vi/OlrfEz5dqv0/sddefault.jpg',
+          width: 640,
+          height: 480
+        },
+        maxres: {
+          url: 'https://i.ytimg.com/vi/OlrfEz5dqv0/maxresdefault.jpg',
+          width: 1280,
+          height: 720
+        }
+      },
+      channelTitle: 'Bitlauncher | Bitcash',
+      playlistId: 'PL6BKGVqekhB_3OhFY_zpJwmaaV6sLxLwJ',
+      position: 0,
+      resourceId: {
+        kind: 'youtube#video',
+        videoId: 'OlrfEz5dqv0'
+      },
+      videoOwnerChannelTitle: 'Bitlauncher | Bitcash',
+      videoOwnerChannelId: 'UChzuWZjo_PvOrRTDfkojp3w'
+    }
+  },
+  {
+    kind: 'youtube#playlistItem',
+    etag: 'rsf4xjYzsvYXGtBJB4U6LtE9J74',
+    id: 'UEw2QktHVnFla2hCXzNPaEZZX3pwSndtYWFWNnNMeEx3Si44NzQ1OTI1OUFFM0NFRTc5',
+    snippet: {
+      publishedAt: '2024-05-20T05:20:57Z',
+      channelId: 'UChzuWZjo_PvOrRTDfkojp3w',
+      title: 'My First Bitcoin: A Journey Begins #bitcoin #crypto',
+      description: 'Full video here: https://youtu.be/O0ZMs_UccMY',
+      thumbnails: {
+        default: {
+          url: 'https://i.ytimg.com/vi/z-dKmcv_L-M/default.jpg',
+          width: 120,
+          height: 90
+        },
+        medium: {
+          url: 'https://i.ytimg.com/vi/z-dKmcv_L-M/mqdefault.jpg',
+          width: 320,
+          height: 180
+        },
+        high: {
+          url: 'https://i.ytimg.com/vi/z-dKmcv_L-M/hqdefault.jpg',
+          width: 480,
+          height: 360
+        },
+        standard: {
+          url: 'https://i.ytimg.com/vi/z-dKmcv_L-M/sddefault.jpg',
+          width: 640,
+          height: 480
+        },
+        maxres: {
+          url: 'https://i.ytimg.com/vi/z-dKmcv_L-M/maxresdefault.jpg',
+          width: 1280,
+          height: 720
+        }
+      },
+      channelTitle: 'Bitlauncher | Bitcash',
+      playlistId: 'PL6BKGVqekhB_3OhFY_zpJwmaaV6sLxLwJ',
+      position: 1,
+      resourceId: {
+        kind: 'youtube#video',
+        videoId: 'z-dKmcv_L-M'
+      },
+      videoOwnerChannelTitle: 'Bitlauncher | Bitcash',
+      videoOwnerChannelId: 'UChzuWZjo_PvOrRTDfkojp3w'
+    }
+  },
+  {
+    kind: 'youtube#playlistItem',
+    etag: '-ZQffBSEpAK6_lpTkVvdNpYnp7s',
+    id: 'UEw2QktHVnFla2hCXzNPaEZZX3pwSndtYWFWNnNMeEx3Si5ENjg3MEUyQ0IzODMzQThB',
+    snippet: {
+      publishedAt: '2024-05-20T05:07:26Z',
+      channelId: 'UChzuWZjo_PvOrRTDfkojp3w',
+      title:
+        'Protect Your Privacy in the Digital Age #crypto #bitcoin #privacy',
+      description: 'Full video here: https://youtu.be/IXhECniE6-4',
+      thumbnails: {
+        default: {
+          url: 'https://i.ytimg.com/vi/PRXAO31uC8c/default.jpg',
+          width: 120,
+          height: 90
+        },
+        medium: {
+          url: 'https://i.ytimg.com/vi/PRXAO31uC8c/mqdefault.jpg',
+          width: 320,
+          height: 180
+        },
+        high: {
+          url: 'https://i.ytimg.com/vi/PRXAO31uC8c/hqdefault.jpg',
+          width: 480,
+          height: 360
+        },
+        standard: {
+          url: 'https://i.ytimg.com/vi/PRXAO31uC8c/sddefault.jpg',
+          width: 640,
+          height: 480
+        },
+        maxres: {
+          url: 'https://i.ytimg.com/vi/PRXAO31uC8c/maxresdefault.jpg',
+          width: 1280,
+          height: 720
+        }
+      },
+      channelTitle: 'Bitlauncher | Bitcash',
+      playlistId: 'PL6BKGVqekhB_3OhFY_zpJwmaaV6sLxLwJ',
+      position: 2,
+      resourceId: {
+        kind: 'youtube#video',
+        videoId: 'PRXAO31uC8c'
+      },
+      videoOwnerChannelTitle: 'Bitlauncher | Bitcash',
+      videoOwnerChannelId: 'UChzuWZjo_PvOrRTDfkojp3w'
+    }
+  },
+  {
+    kind: 'youtube#playlistItem',
+    etag: 'UqFm-kVdmHh0tYBqG2Kxn3pcPLU',
+    id: 'UEw2QktHVnFla2hCXzNPaEZZX3pwSndtYWFWNnNMeEx3Si42MzE1QTJBMEI3NjI4Rjk5',
+    snippet: {
+      publishedAt: '2024-06-25T02:54:26Z',
+      channelId: 'UChzuWZjo_PvOrRTDfkojp3w',
+      title:
+        'Trust is Key in Crypto Market Making #crypto #bitcoin #investing #trading',
+      description: 'Watch full video at: https://youtu.be/Kfk6T4QCUMI',
+      thumbnails: {
+        default: {
+          url: 'https://i.ytimg.com/vi/2q2MGoGdnlI/default.jpg',
+          width: 120,
+          height: 90
+        },
+        medium: {
+          url: 'https://i.ytimg.com/vi/2q2MGoGdnlI/mqdefault.jpg',
+          width: 320,
+          height: 180
+        },
+        high: {
+          url: 'https://i.ytimg.com/vi/2q2MGoGdnlI/hqdefault.jpg',
+          width: 480,
+          height: 360
+        },
+        standard: {
+          url: 'https://i.ytimg.com/vi/2q2MGoGdnlI/sddefault.jpg',
+          width: 640,
+          height: 480
+        },
+        maxres: {
+          url: 'https://i.ytimg.com/vi/2q2MGoGdnlI/maxresdefault.jpg',
+          width: 1280,
+          height: 720
+        }
+      },
+      channelTitle: 'Bitlauncher | Bitcash',
+      playlistId: 'PL6BKGVqekhB_3OhFY_zpJwmaaV6sLxLwJ',
+      position: 3,
+      resourceId: {
+        kind: 'youtube#video',
+        videoId: '2q2MGoGdnlI'
+      },
+      videoOwnerChannelTitle: 'Bitlauncher | Bitcash',
+      videoOwnerChannelId: 'UChzuWZjo_PvOrRTDfkojp3w'
+    }
+  },
+  {
+    kind: 'youtube#playlistItem',
+    etag: 'AWv0QCB9nrKPlsxW7xj5onixZCw',
+    id: 'UEw2QktHVnFla2hCXzNPaEZZX3pwSndtYWFWNnNMeEx3Si5CMUM0NzY5NzdEQzlGRjAx',
+    snippet: {
+      publishedAt: '2024-05-16T03:07:47Z',
+      channelId: 'UChzuWZjo_PvOrRTDfkojp3w',
+      title: "From NASA to Crypto: Chjango's Journey #crypto #bitcoin #cosmos",
+      description: 'Full video here: https://youtu.be/bH8Z80gspGM',
+      thumbnails: {
+        default: {
+          url: 'https://i.ytimg.com/vi/uqh9zkJI_Tk/default.jpg',
+          width: 120,
+          height: 90
+        },
+        medium: {
+          url: 'https://i.ytimg.com/vi/uqh9zkJI_Tk/mqdefault.jpg',
+          width: 320,
+          height: 180
+        },
+        high: {
+          url: 'https://i.ytimg.com/vi/uqh9zkJI_Tk/hqdefault.jpg',
+          width: 480,
+          height: 360
+        },
+        standard: {
+          url: 'https://i.ytimg.com/vi/uqh9zkJI_Tk/sddefault.jpg',
+          width: 640,
+          height: 480
+        },
+        maxres: {
+          url: 'https://i.ytimg.com/vi/uqh9zkJI_Tk/maxresdefault.jpg',
+          width: 1280,
+          height: 720
+        }
+      },
+      channelTitle: 'Bitlauncher | Bitcash',
+      playlistId: 'PL6BKGVqekhB_3OhFY_zpJwmaaV6sLxLwJ',
+      position: 4,
+      resourceId: {
+        kind: 'youtube#video',
+        videoId: 'uqh9zkJI_Tk'
+      },
+      videoOwnerChannelTitle: 'Bitlauncher | Bitcash',
+      videoOwnerChannelId: 'UChzuWZjo_PvOrRTDfkojp3w'
+    }
+  }
+]

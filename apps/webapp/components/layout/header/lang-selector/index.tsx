@@ -11,16 +11,20 @@ import {
 import { ChevronDownIcon } from 'lucide-react'
 import { langSelectorOptions } from './lang-selector-options'
 import { LangSelectorItem } from './lang-selector-item'
+import { LangSetter } from '@/components/layout/header/lang-selector/lang-setter'
 
 export function LangSelector({ lang }: LangProp) {
   return (
-    <div className="flex items-center gap-4">
+    <div className="flex items-center lg:gap-4">
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
-          <Button className="flex items-center gap-2" variant="outline">
+          <Button
+            className="flex items-center h-auto px-2 py-1 text-sm ga-1 lg:h-10 lg:px-4 lg:py-2"
+            variant="outline"
+          >
             {lang.toUpperCase()}
             <span />
-            <ChevronDownIcon className="h-4 w-4" />
+            <ChevronDownIcon className="w-4 h-4" />
           </Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent className="w-48">
@@ -31,6 +35,7 @@ export function LangSelector({ lang }: LangProp) {
           ))}
         </DropdownMenuContent>
       </DropdownMenu>
+      <LangSetter />
     </div>
   )
 }

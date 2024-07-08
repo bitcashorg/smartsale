@@ -98,6 +98,8 @@ export const auctionDetailsUpdateSchema = z.object({
   usd_amount_traded: z.number().optional().nullable(),
 });
 
+export const auctionDetailsRelationshipsSchema = z.tuple([]);
+
 export const esrRowSchema = z.object({
   account: z.string().nullable(),
   code: z.string().nullable(),
@@ -121,6 +123,8 @@ export const esrUpdateSchema = z.object({
   id: z.string().optional(),
   trx_id: z.string().optional().nullable(),
 });
+
+export const esrRelationshipsSchema = z.tuple([]);
 
 export const ordersRowSchema = z.object({
   auction_id: z.number(),
@@ -158,6 +162,8 @@ export const ordersUpdateSchema = z.object({
   volume: z.number().optional().nullable(),
 });
 
+export const ordersRelationshipsSchema = z.tuple([]);
+
 export const preSaleRowSchema = z.object({
   account: z.string().nullable(),
   address: z.string().nullable(),
@@ -185,6 +191,8 @@ export const preSaleUpdateSchema = z.object({
   signature: z.string().optional().nullable(),
 });
 
+export const preSaleRelationshipsSchema = z.tuple([]);
+
 export const sessionRowSchema = z.object({
   account: z.string(),
   created_at: z.string(),
@@ -208,6 +216,8 @@ export const sessionUpdateSchema = z.object({
   id: z.string().optional(),
   tx: z.string().optional(),
 });
+
+export const sessionRelationshipsSchema = z.tuple([]);
 
 export const transfersRowSchema = z.object({
   amount: z.number().nullable(),
@@ -245,6 +255,8 @@ export const transfersUpdateSchema = z.object({
   usdcred_trx: z.string().optional().nullable(),
 });
 
+export const transfersRelationshipsSchema = z.tuple([]);
+
 export const usersRowSchema = z.object({
   address: z.string(),
   created_at: z.string(),
@@ -262,6 +274,8 @@ export const usersUpdateSchema = z.object({
   created_at: z.string().optional(),
   id: z.number().optional(),
 });
+
+export const usersRelationshipsSchema = z.tuple([]);
 
 export const whitelistRowSchema = z.object({
   account: z.string(),
@@ -283,3 +297,5 @@ export const whitelistUpdateSchema = z.object({
   created_at: z.string().optional(),
   project_id: z.number().optional(),
 });
+
+export const whitelistRelationshipsSchema = z.tuple([]);

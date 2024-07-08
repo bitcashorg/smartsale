@@ -5,7 +5,7 @@ import {
   getRecentArticleSections
 } from '@/services/datocms'
 import { generateMetadataFromSEO } from '@/lib/seo'
-import { BlogSections } from '@/components/routes/blog/sections'
+import { BlogSections } from '@/components/routes/blog/blog-sections'
 import { notFound } from 'next/navigation'
 import { Lang } from '@/dictionaries/locales'
 import { HeroSection } from '@/components/routes/blog/hero-section/index'
@@ -16,13 +16,13 @@ export default async function BlogPage({ params }: BlogPageProps) {
   if (!sections) notFound()
 
   return (
-    <div>
+    <div className="narrow-container">
       <header>
-        <h1 className="flex justify-center py-10 heading md:py-24">
+        <h1 className="heading flex justify-center py-10 md:py-24">
           AI, Crypto & Startup Ventures
         </h1>
       </header>
-      <main className="narrow-container">
+      <main>
         <HeroSection recent={recent} lang={params.lang} />
         <BlogSections sections={sections} lang={'en'} />
       </main>

@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { Card, CardContent, CardFooter } from '@/components/ui/card'
 // import { isMobile } from 'react-device-detect'
 import { LangProp } from '@/types/routing.type'
+import { LazyImage } from './lazy-image'
 
 export const ArticleCard = ({
   post,
@@ -33,18 +34,24 @@ export const ArticleCard = ({
               className="object-cover transition-all ease-in-out bg-zoom"
               fill
             />
+            {/* <LazyImage
+              src={post?.thumbnail?.url}
+              alt={title}
+              className="object-cover transition-all ease-in-out bg-zoom"
+              fill
+            /> */}
           </figure>
         </div>
-        <CardContent className="flex-grow">
-          <p className="pt-3 mb-0 overflow-hidden text-center text-white truncate_text truncate_text--3-lines text-sub-2-sm">
+        <CardContent className="flex-grow px-3">
+          <p className="pt-3 font-semibold leading-tight text-center mb-overflow-hidden truncate_text truncate_text--3-lines text-md">
             {title}
           </p>
         </CardContent>
       </Link>
       {meta ? (
-        <CardFooter className="flex flex-wrap items-center justify-between mt-auto text-left md:flex-nowrap">
+        <CardFooter className="flex flex-wrap items-center justify-between px-2 mt-auto text-sm text-left md:flex-nowrap">
           <div className="flex-shrink-0">
-            <div className="mr-5 h-[45px] w-[45px] overflow-hidden rounded-full">
+            <div className="mr-2 h-[45px] w-[45px] overflow-hidden rounded-full">
               <Image
                 src={post.authorPicture.url}
                 width={45}
@@ -55,11 +62,9 @@ export const ArticleCard = ({
               />
             </div>
           </div>
-          <div className="flex flex-col flex-grow gap-y-2 md:gap-y-1">
-            <span className="font-bold text-h-text-c text-h-text dark:text-white">
-              {post.authorName}
-            </span>
-            <span className="text-sm dark:text-white">
+          <div className="flex flex-grow flex-col gap-y-2 !text-sm leading-tight md:gap-y-1">
+            <span className="font-semibold">{post.authorName}</span>
+            <span className="text-sm leading-tight">
               {new Date(post._publishedAt).toLocaleDateString(lang, {
                 month: 'short',
                 day: '2-digit',
