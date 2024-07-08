@@ -11,7 +11,7 @@ import {
 import { ChevronDownIcon } from 'lucide-react'
 import { langSelectorOptions } from './lang-selector-options'
 import { LangSelectorItem } from './lang-selector-item'
-import { LangSetter } from '@/components/layout/header/lang-selector/lang-setter'
+// import { LangSetter } from '@/components/layout/header/lang-selector/lang-setter'
 
 export function LangSelector({ lang }: LangProp) {
   return (

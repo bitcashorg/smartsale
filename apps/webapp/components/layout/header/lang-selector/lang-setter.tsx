@@ -11,7 +11,7 @@ export function LangSetter() {
 
     if (!lang) {
       console.log('set lang for the first time', lang)
-      setLanguage(lang)
+      setLanguage(lang || 'en')
     }
   }, [])
 
