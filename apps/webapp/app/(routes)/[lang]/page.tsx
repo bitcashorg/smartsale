@@ -10,6 +10,7 @@ import { FeatureTwo } from '@/components/_wip/feature-two'
 import { FeatureThree } from '@/components/_wip/feature-three'
 import { NewHomeHero } from '@/components/routes/home/hero/index'
 import { Upcoming } from '@/components/routes/home/upcoming'
+import { Categories } from '@/components/_wip/categories'
 
 export default async function IndexPage({ params: { lang } }: IndexPageProps) {
   const dict = await getDictionary(lang)
@@ -30,6 +31,7 @@ export default async function IndexPage({ params: { lang } }: IndexPageProps) {
 
         {appConfig.features.explorations ? (
           <>
+            <Categories />
             <BannerOne />
             <FeatureOne />
             <FeatureTwo />
