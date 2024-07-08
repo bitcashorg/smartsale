@@ -13,7 +13,7 @@ import Balancer from 'react-wrap-balancer'
 
 export function NewHomeHero() {
   return (
-    <section className="mb-0 flex min-h-[calc(100vh-4rem)] flex-col justify-between">
+    <section className="narrow-container mb-0 flex min-h-[calc(100vh-4rem)] flex-col justify-between">
       <main className="flex flex-col items-center justify-center flex-1 p-6 lg:flex-row">
         <div className="text-left">
           <h1 className="text-6xl font-bold">
