@@ -32,13 +32,13 @@ export function LazyImage({
     return Math.abs(aspectRatio - 1) <= aspectRatioThreshold
   }, [imageDimensions.height, imageDimensions.width])
 
+  // TODO: these should be variants
   return (
     <picture
       className={cn(
         className?.includes('absolute') ? 'absolute' : 'relative',
         'flex w-full overflow-hidden',
-        isLoading &&
-          'scale-110 bg-gray-300 blur-2xl grayscale dark:bg-gray-700',
+        isLoading && 'scale-110 blur-2xl grayscale',
         className?.includes('blogImages')
           ? 'rounded-images border border-black'
           : '',
@@ -46,7 +46,7 @@ export function LazyImage({
           ? 'h-[320px] md:h-[465px]'
           : '',
         className?.includes('blogImages') && !isSameDimensions
-          ? 'rounded-images sm:h-space-127 lg:h-space-157 xl:h-space-213 h-[110px]'
+          ? 'h-[110px] rounded-images sm:h-space-127 lg:h-space-157 xl:h-space-213'
           : '',
         imgWrapperClassName
       )}

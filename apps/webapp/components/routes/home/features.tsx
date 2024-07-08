@@ -7,6 +7,7 @@ import { Badge } from '@/components/ui/badge'
 import { Card, CardContent } from '@/components/ui/card'
 import { cn } from '@/lib/utils'
 import Balancer from 'react-wrap-balancer'
+import { Tag } from '@/components/shared/tag'
 
 export function Features({ lang, dict }: FeaturesProps) {
   return (
@@ -26,7 +27,7 @@ export function Features({ lang, dict }: FeaturesProps) {
             className={`flex flex-col justify-center space-y-4 text-left ${index % 2 === 1 ? 'lg:order-last' : ''}`}
           >
             <div className="space-y-2">
-              <Badge>{content.label}</Badge>
+              <Tag title={content.label} />
               <h3 className="text-2xl font-bold">
                 <Balancer>{content.title}</Balancer>
               </h3>
@@ -45,7 +46,7 @@ export function Features({ lang, dict }: FeaturesProps) {
                     alt={content.imgAlt}
                     fill
                     objectPosition="top"
-                    className="rounded-xl bg-transparent"
+                    className="bg-transparent rounded-xl"
                   />
                 </div>
               </CardContent>
@@ -57,7 +58,7 @@ export function Features({ lang, dict }: FeaturesProps) {
                 alt={content.imgAlt}
                 fill
                 objectPosition="top"
-                className="rounded-xl bg-transparent"
+                className="bg-transparent rounded-xl"
               />
             </div>
           )}

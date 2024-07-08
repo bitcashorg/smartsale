@@ -10,7 +10,7 @@ import { LucideIcons } from '@/components/routes/blog/lucide-icons'
 
 export function ShareArticle({ url, title }: { url: string; title: string }) {
   return (
-    <div className="flex justify-center mt-2 space-x-3">
+    <div className="flex justify-start pl-5 mt-2 space-x-3">
       <TelegramShareButton url={url} title={title}>
         <LucideIcons.sendIcon />
       </TelegramShareButton>

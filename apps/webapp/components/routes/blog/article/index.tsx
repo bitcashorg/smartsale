@@ -18,6 +18,8 @@ import { ShareArticle } from './share-article'
 import { Suspense } from 'react'
 import { ArticleIndex } from './article-index'
 import Balancer from 'react-wrap-balancer'
+import { Tag } from '@/components/shared/tag'
+import { LazyImage } from '@/components/shared/lazy-image'
 
 export function BlogPage({
   params,
@@ -57,13 +59,14 @@ export function BlogPage({
           children: { type: string; marks: string[]; value: string }[]
         }
       ).children
+
       let sentence = children.map(child => child.value).join(' ')
       const headingItem = { value: sentence }
       return {
         level: item[0].level,
         text: headingItem.value,
         anchor: headingItem.value
-          .trim()
+          ?.trim()
           .toLowerCase()
           .replace(/ /g, '-')
           .replace(/[^\w-]+/g, '')
@@ -72,23 +75,23 @@ export function BlogPage({
     })
   return (
     <div>
-      <article className="content-container mx-auto flex-row">
-        <div className="mx-auto flex flex-col items-start gap-2">
+      <article className="flex-row mx-auto content-container">
+        <div className="flex flex-col items-start gap-2 md:mx-auto">
           <header className="order-3 md:order-1">
-            <h1 className="heading flex justify-center font-bold text-black dark:text-white">
+            <h1 className="flex mb-5 font-bold heading md:justify-center">
               <Balancer>{title}</Balancer>
               <br className="hidden md:inline" />
             </h1>
-            <sub className="mt-2 text-sub-1-md text-neutral-400 md:mt-8">
+            <sub className="mt-2 text-sub-1-md leading-[0.5] text-neutral-400 md:mt-8">
               {blogContent.description}
             </sub>
           </header>
 
-          <div className="order-2 mt-2 flex flex-col space-y-3 md:mt-5">
-            <span className="font-futura-pt-heavy text-h-text-c text-h-text font-bold dark:text-white">
+          <div className="order-2 mt-2 flex flex-col gap-0 space-y-3 text-sm leading-[0.5] md:mt-5">
+            <span className="font-bold font-futura-pt-heavy">
               {blogContent.authorName}
             </span>
-            <span className="font-futura-pt-book text-h-text-c text-h-text dark:text-white">
+            <span className="font-futura-pt-book">
               {new Date(blogContent._publishedAt).toLocaleDateString('en-US', {
                 month: 'short',
                 day: '2-digit',
@@ -97,17 +100,15 @@ export function BlogPage({
               ∙ {readingTime(blogContent)} min read
             </span>
 
-            <div className="flex space-x-2">
+            <div className="flex gap-2">
               {blogContent.topics?.map((topic, index) => (
-                <Button className="mt-space-6" key={`${topic}-${index}`}>
-                  {topic}
-                </Button>
+                <Tag key={`${topic}-${index}`} title={topic} />
               ))}
             </div>
           </div>
 
-          <main className="relative order-4 mt-5 flex flex-col items-start justify-start gap-5 md:flex-row">
-            <div className="order-2 flex w-full flex-col md:order-1">
+          <main className="relative flex flex-col items-start justify-start order-4 gap-5 mt-5 md:flex-row">
+            <div className="flex flex-col order-2 w-full md:order-1">
               {blogContent?.contentBlock?.map(
                 ({ mainContent, topImages }, ind: number) => {
                   // if (ind >= 2) return null
@@ -146,12 +147,18 @@ export function BlogPage({
                             className="relative order-1 my-10 mt-5 flex min-h-[600px] w-full justify-center overflow-hidden text-center align-middle md:order-3"
                             key={`content-${image}-${index}`}
                           >
-                            <Image
+                            {/* <Image
                               src={image.url}
                               alt={image?.alt || `blog-image-${index}`}
                               layout="fill"
                               objectFit="cover"
-                              className="m-auto flex self-center"
+                              className="flex self-center m-auto"
+                            /> */}
+                            <LazyImage
+                              src={image.url}
+                              alt={image?.alt || `blog-image-${index}`}
+                              fill
+                              className="flex self-center object-cover m-auto"
                             />
                           </div>
                         )
@@ -180,6 +187,7 @@ export function BlogPage({
                                       node.level === 1 ? 'heading' : 'heading2'
                                     )}
                                     key={key}
+                                    id={anchor}
                                   >
                                     {children}
                                   </HeadingTag>
@@ -188,7 +196,7 @@ export function BlogPage({
                             ),
                             renderNodeRule(isParagraph, ({ children, key }) => {
                               return (
-                                <p className="paragraph mb-10" key={key}>
+                                <p className="mb-10 paragraph" key={key}>
                                   {children}
                                 </p>
                               )
@@ -202,11 +210,11 @@ export function BlogPage({
               )}
             </div>
 
-            <div className="sticky top-[120px] order-1 hidden w-full md:order-2 md:mt-5 md:block md:w-space-250">
+            <div className="sticky top-[120px] order-1 hidden w-full text-left md:order-2 md:mt-5 md:block md:w-space-250">
               <ArticleIndex articleHeaders={headingTexts} />
 
-              <div className="mt-5 text-center">
-                <span className="font-futura-pt-bold text-b-1-sbold-md text-black underline dark:text-white">
+              <div className="mt-5 text-left">
+                <span className="pl-5 text-black underline font-futura-pt-bold text-b-1-sbold-md dark:text-white">
                   Share this article
                 </span>
                 <Suspense fallback={<div>Loading...</div>}>
@@ -219,13 +227,11 @@ export function BlogPage({
       </article>
 
       {relatedBlogs.length > 0 && (
-        <section className="narrow-container pt-20">
-          <div className="mb-space-32 flex items-center justify-between text-xl">
-            <span className="sub-2-lg font-semibold text-black dark:text-white">
-              /Related stories{' '}
-            </span>
-            <Link href={`/blog`} className={cn('text-black dark:text-white')}>
-              <b>See All Stories &gt;</b>
+        <section className="pt-20 narrow-container">
+          <div className="flex items-center justify-between text-xl mb-space-32">
+            <span className="font-semibold">/Related stories</span>
+            <Link href={`/blog`}>
+              <span>See All Stories &gt;</span>
             </Link>
           </div>
           <ul className="grid-cols-auto-dense grid w-full grid-cols-[repeat(auto-fill,minmax(250px,1fr))] flex-col gap-20 py-5 sm:flex-wrap md:gap-5">

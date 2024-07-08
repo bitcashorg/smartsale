@@ -6,7 +6,7 @@ import {
   getPageSeoText
 } from '@/services/datocms'
 import { generateMetadataFromSEO } from '@/lib/seo'
-import { BlogSections } from '@/components/routes/blog/sections'
+import { BlogSections } from '@/components/routes/blog/blog-sections'
 import { Lang, locales } from '@/dictionaries/locales'
 import Image from 'next/image'
 import { BgHeader } from '@/components/shared/bg-header'

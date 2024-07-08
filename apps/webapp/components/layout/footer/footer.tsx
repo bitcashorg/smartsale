@@ -14,7 +14,7 @@ const DynamicNewsletter = dynamic(() => import('./newsletter') as any, {
 export default async function Footer({ params }: { params: { lang: Lang } }) {
   const dict = await getDictionary(params.lang)
   return (
-    <footer className="flex flex-col flex-1 w-full px-4 overflow-hidden">
+    <footer className="flex flex-col flex-1 w-full overflow-hidden">
       <div className="narrow-container">
         {/* Call to action, how it works sections */}
         <Participate lang={params.lang} dict={dict} />

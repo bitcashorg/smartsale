@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from 'react'
 
 import { cn } from '@/lib/utils'
 import { Card } from '@/components/ui/card'
+import Link from 'next/link'
 
 export function ArticleIndex({ articleHeaders }: ArticleIndexProps) {
   const [activeSection, setActiveSection] = useState<any>(null)
@@ -46,12 +47,12 @@ export function ArticleIndex({ articleHeaders }: ArticleIndexProps) {
   }, [articleHeaders])
 
   return (
-    <Card className="p-5">
+    <Card className="p-5 text-sm">
       <div className="w-full pb-2 border-b border-muted">
         <span>Content:</span>
       </div>
 
-      <div className="flex flex-col w-full space-y-4 mt-space-10">
+      <div className="flex flex-col w-full space-y-3 mt-space-10">
         {articleHeaders?.map((header, index) => {
           const HeadingTag = `h${header.level}` as any
           return (
@@ -62,17 +63,17 @@ export function ArticleIndex({ articleHeaders }: ArticleIndexProps) {
               // )}
               key={index}
             >
-              <a
+              <Link
                 href={`#${header.anchor}`}
                 className={cn(
-                  'transition-all hover:text-primary-200 hover:underline focus:text-primary-200 focus:underline active:text-primary-200 active:underline',
+                  'text-sm font-bold transition-all hover:text-primary-200 hover:underline focus:text-primary-200 focus:underline',
                   activeSection?.anchor === header.anchor
                     ? 'text-primary-200'
                     : ''
                 )}
               >
                 {header.text}
-              </a>
+              </Link>
             </HeadingTag>
           )
         })}

@@ -1,4 +1,4 @@
-import { BlogSections } from '@/components/routes/blog/sections'
+import { BlogSections } from '@/components/routes/blog/blog-sections'
 import { ArticlesSection } from '@/services/datocms'
 import { fetchPublicYouTubePlaylist } from '@/services/youtube'
 import { LangProp } from '@/types/routing.type'
@@ -157,7 +157,7 @@ export async function RecentArticles({ lang }: LangProp) {
       <BlogSections
         sections={recentArcticles as unknown as ArticlesSection[]}
         lang={lang}
-        className="pb-0 mb-0"
+        className="mb-0 pb-0"
       />
     </Section>
   )

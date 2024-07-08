@@ -3,8 +3,8 @@ import Balancer from 'react-wrap-balancer'
 
 export function Section({ heading, children, subheading }: SectionProps) {
   return (
-    <section className="align-center flex flex-col justify-center pb-0 pt-40 text-center">
-      <h2 className="relative z-10 flex w-full justify-center py-0 text-center text-3xl font-bold leading-none shadow-sm">
+    <section className="flex flex-col justify-center pt-40 pb-0 text-center align-center">
+      <h2 className="relative z-10 flex justify-center w-full py-0 text-3xl font-bold leading-none text-center shadow-sm">
         <Balancer>{heading}</Balancer>
       </h2>
       {/* {subheading ? (
@@ -12,7 +12,7 @@ export function Section({ heading, children, subheading }: SectionProps) {
           {subheading}
         </p>
       ) : null} */}
-      <div className="pt-10">{children}</div>
+      <div className="w-full pt-10">{children}</div>
     </section>
   )
 }
