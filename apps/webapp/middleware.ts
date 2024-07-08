@@ -2,8 +2,10 @@ import { match } from '@formatjs/intl-localematcher'
 import Negotiator from 'negotiator'
 import { NextResponse, NextRequest } from 'next/server'
 import { defaultLocale, locales } from './dictionaries/locales'
+import { cookies } from 'next/headers'
 
 export function middleware(request: NextRequest) {
+  const cookieStore = cookies()
   const { pathname } = request.nextUrl
 
   // Redirect all requests matching any language followed by /blog to English /blog
@@ -19,8 +21,19 @@ export function middleware(request: NextRequest) {
   )
 
   // console.log('🍓 has lang', hasLang, pathname)
-
-  if (hasLang) return NextResponse.next()
+  if (hasLang) {
+    const cookieLang = request.cookies.get('lang')
+    // set first time lang cookie
+    if (!cookieLang) {
+      const lang = getLocale(request)
+      cookieStore.set('lang', lang, {
+        path: '/',
+        httpOnly: true,
+        sameSite: 'strict'
+      })
+    }
+    return NextResponse.next()
+  }
 
   const lang = getLocale(request)
   request.nextUrl.pathname = `/${lang}${pathname}`

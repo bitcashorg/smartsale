@@ -20,7 +20,7 @@ export function LangSelector({ lang }: LangProp) {
           <Button className="flex items-center gap-2" variant="outline">
             {lang.toUpperCase()}
             <span />
-            <ChevronDownIcon className="h-4 w-4" />
+            <ChevronDownIcon className="w-4 h-4" />
           </Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent className="w-48">
