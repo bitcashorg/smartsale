@@ -17,6 +17,7 @@
   "dependencies": {
     "@blockmatic/hooks-utils": "^3.0.0",
     "@hookform/resolvers": "^3.3.4",
+    "@multibase/js": "^0.1.15",
     "@next/bundle-analyzer": "^14.2.3",
     "@next/third-parties": "latest",
     "@radix-ui/react-dialog": "^1.0.5",
