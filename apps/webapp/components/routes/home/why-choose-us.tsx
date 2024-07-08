@@ -8,7 +8,7 @@ export function WhyChooseUs({ lang, dict }: WhyChooseUsProps) {
   const content = dict.whyChooseUs
   return (
     <Section heading={content.title} subheading={content.description}>
-      <div className="grid w-full grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+      <div className="grid w-full grid-cols-1 gap-6 lg:grid-cols-5">
         {content.features.map((feature: Feature) => {
           const IconComponent = Icons[feature.icon] as React.ElementType
           return (

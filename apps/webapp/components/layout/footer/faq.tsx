@@ -30,14 +30,14 @@ export function FAQ({ lang, dict }: FAQProps) {
           )}
         </Accordion>
       </div> */}
-      <div className="grid pt-8 text-left md:grid-cols-2 md:gap-x-16 md:gap-y-8">
+      <div className="grid pt-8 text-left gap-y-10 md:grid-cols-2 md:gap-x-16 md:gap-y-8">
         {dict.faq.questions.map(
           (
             item: { question: string; answer: string; additionalInfo?: string },
             index: number
           ) => (
             <div key={index}>
-              <h3 className="flex mb-4 text-lg font-medium text-gray-900 dark:text-white">
+              <h3 className="flex mb-4 text-lg font-medium">
                 <svg
                   className="flex-shrink-0 w-5 h-5 mt-1 mr-2 text-gray-500 dark:text-gray-400"
                   fill="currentColor"

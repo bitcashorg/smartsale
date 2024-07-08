@@ -28,7 +28,7 @@ export default async function Footer({ params }: { params: { lang: Lang } }) {
         {/* Media and other  */}
         <RecentArticles lang={params.lang} />
       </div>
-      {/* <DynamicNewsletter /> */}
+      <DynamicNewsletter />
     </footer>
   )
 }

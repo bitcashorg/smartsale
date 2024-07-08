@@ -81,7 +81,7 @@ export function BlogPage({
       <article className="flex-row mx-auto content-container">
         <div className="flex flex-col items-start gap-2 md:mx-auto">
           <header className="order-3 md:order-1">
-            <h1 className="flex mb-5 font-bold heading md:justify-center">
+            <h1 className="flex justify-start mb-5 font-bold heading">
               <Balancer>{title}</Balancer>
               <br className="hidden md:inline" />
             </h1>

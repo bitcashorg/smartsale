@@ -82,7 +82,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                         return (
                           <div
                             key={`${index}__${(projectContent[pcKey].title as string).replace(/\s/g, '-')}`}
-                            className="grid gap-16 px-6 list-disc list-outside lg:grid-flow-cols-4 sm:grid-cols-2 md:grid-cols-3"
+                            className="grid gap-16 px-6 list-disc list-outside sm:grid-cols-2 md:grid-cols-3"
                           >
                             {content.slice(0, 6).map(item => {
                               const text = item.split(': ')

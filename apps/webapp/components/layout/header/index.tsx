@@ -18,7 +18,7 @@ export function Header({ lang, dict }: HeaderProps) {
   return (
     <div className="sticky top-0 z-50 flex h-16 bg-background">
       <div className="container flex flex-row items-center justify-between px-4 bg-background">
-        <div className="flex h-full items-center md:min-w-[300px]">
+        <div className="flex h-full items-center lg:min-w-[300px]">
           <Link href={`/${lang}`}>
             <IconBitlauncher />
           </Link>
@@ -33,18 +33,17 @@ export function Header({ lang, dict }: HeaderProps) {
         </div>
 
         {/* Desktop action buttons */}
-        <div className="flex justify-end gap-5 md:min-w-[300px]">
-          <div className="items-center hidden md:flex md:gap-3 lg:gap-5">
+        <div className="flex justify-end lg:min-w-[300px] lg:gap-5">
+          <div className="items-center hidden gap-5 lg:flex">
             {/* <DiscordButton /> */}
             <Suspense fallback={<Button>Login</Button>}>
               <DynamicSessionButton />
             </Suspense>
           </div>
           {appConfig.features.i18n ? <LangSelector lang={lang} /> : null}
-        </div>
-
-        <div className="flex md:hidden">
-          <DynamicMobileNav lang={lang} dict={dict} />
+          <div className="flex lg:hidden">
+            <DynamicMobileNav lang={lang} dict={dict} />
+          </div>
         </div>
       </div>
     </div>

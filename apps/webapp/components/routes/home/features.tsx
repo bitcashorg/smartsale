@@ -19,7 +19,7 @@ export function Features({ lang, dict }: FeaturesProps) {
         <div
           key={index}
           className={cn(
-            'mx-auto grid items-center gap-6 md:grid-cols-2 md:gap-20',
+            'mx-auto grid items-center gap-6 lg:grid-cols-2 lg:gap-20',
             index === 0 ? 'border-b border-muted pb-20' : 'pt-20'
           )}
         >

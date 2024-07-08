@@ -529,7 +529,7 @@ function IconBitlauncher({
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 53 51"
       fill="none"
-      className={cn('size-14', className)}
+      className={cn('size-8 sm:size-14', className)}
     >
       <path
         d="M24.7956 4L4 46.1609L16.4975 38.9027C19.9986 36.8693 22.2889 33.257 22.6345 29.223L24.7956 4Z"
@@ -545,7 +545,7 @@ function IconBitlauncher({
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 207 43"
-      className={cn('h-11 w-56', className)}
+      className={cn('h-11 w-40 md:w-56', className)}
       {...props}
     >
       <path

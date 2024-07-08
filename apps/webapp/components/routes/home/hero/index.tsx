@@ -13,18 +13,8 @@ import Balancer from 'react-wrap-balancer'
 
 export function NewHomeHero() {
   return (
-    <section className="flex min-h-[calc(100vh-4rem)] flex-col justify-between overflow-hidden">
-      <main className="flex flex-1 flex-col-reverse items-center justify-center p-6 md:flex-row-reverse">
-        <div className="relative ml-16 mt-16 md:mt-0">
-          <div className="absolute inset-0 m-auto h-[400px] w-[400px] rounded-full bg-pink-500"></div>
-          <Image
-            src="/images/home/horse.png"
-            alt="AI Unicorn"
-            width={400}
-            height={400}
-            className="relative h-[400px] w-[400px]"
-          />
-        </div>
+    <section className="mb-0 flex min-h-[calc(100vh-4rem)] flex-col justify-between">
+      <main className="flex flex-col items-center justify-center flex-1 p-6 lg:flex-row">
         <div className="text-left">
           <h1 className="text-6xl font-bold">
             <Balancer>
@@ -34,14 +24,25 @@ export function NewHomeHero() {
             </Balancer>
           </h1>
           {/* <Link href="/bitcash-bitlauncher"> */}
-          <p className="mt-8 flex items-center gap-1 uppercase">
+          <p className="flex items-center gap-1 mt-8 uppercase">
             Be Part Of The Intelligent Future
             {/* <ArrowRightIcon className="mt-[-1px] h-5 w-5" /> */}
           </p>
           {/* </Link> */}
         </div>
+        <div className="relative mt-16 lg:ml-16 lg:mt-0">
+          <div className="absolute inset-0 m-auto h-[300px] w-[300px] rounded-full bg-pink-500 sm:h-[400px] sm:w-[400px]"></div>
+          <Image
+            src="/images/home/horse.png"
+            alt="AI Unicorn"
+            width={400}
+            height={400}
+            className="relative h-[400px] w-[400px]"
+          />
+        </div>
       </main>
-      <footer className="flex flex-col items-center justify-between space-y-4 p-6 md:flex-row md:space-y-0">
+
+      <footer className="flex flex-col items-center justify-between p-6 pb-10 space-y-4 md:flex-row md:space-y-0">
         <VideoDialog
           lang={'en'}
           video={{
@@ -54,17 +55,17 @@ export function NewHomeHero() {
             }
           }}
           trigger={
-            <div className="flex cursor-pointer items-center gap-3">
-              <div className="flex justify-center rounded-full bg-white p-2 text-center align-middle text-black">
-                <PlayIcon className="h-4 w-4" />
+            <div className="flex items-center gap-3 cursor-pointer">
+              <div className="flex justify-center p-2 text-center text-black align-middle bg-white rounded-full">
+                <PlayIcon className="w-4 h-4" />
               </div>
               <span>Watch trailer</span>
             </div>
           }
         />
 
-        <Card className="flex items-center justify-center gap-3 bg-white p-3 text-center align-middle">
-          <div className="flex items-center justify-center -space-x-3 overflow-hidden">
+        <Card className="flex items-center justify-center gap-3 p-3 text-center align-middle bg-white">
+          <div className="flex items-center justify-center -space-x-3">
             <Avatar>
               <AvatarImage src="/images/home/hero/user-one.png" />
               <AvatarFallback>U1</AvatarFallback>
@@ -79,14 +80,14 @@ export function NewHomeHero() {
             </Avatar>
           </div>
 
-          <p className="flex items-center px-2 text-center leading-none text-black">
+          <p className="flex items-center px-2 leading-none text-center text-black">
             Join Our Community
             <br /> of Investors
           </p>
 
           <Suspense
             fallback={
-              <Button className="flex">
+              <Button className="flex h-14 w-14">
                 <IconDownRightArrow />
               </Button>
             }
@@ -95,17 +96,16 @@ export function NewHomeHero() {
               link={'/en/bitcash-bitlauncher'}
               className={cn(
                 buttonVariants({
-                  variant: 'secondary',
-                  size: 'lg'
+                  variant: 'secondary'
                 }),
-                'text-md group relative flex size-14 rounded-full bg-pink-500 p-0 font-bold hover:bg-pink-500'
+                'text-md group relative flex size-14 min-h-14 min-w-14 rounded-full bg-pink-500 !p-0 font-bold hover:bg-pink-500'
               )}
               aria-label={`View`}
               // data-title={title}
             >
               <IconDownRightArrow
                 strokeColor="white"
-                className="size-4 transition-all group-focus-within:-rotate-45 group-hover:-rotate-45"
+                className="!size-4 transition-all group-focus-within:-rotate-45 group-hover:-rotate-45"
               />
             </NestedLinkButton>
           </Suspense>
