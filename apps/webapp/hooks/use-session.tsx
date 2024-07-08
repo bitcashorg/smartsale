@@ -12,6 +12,7 @@ import React, { ReactNode, useEffect, useState } from 'react'
 import { isMobile } from 'react-device-detect'
 import { useAsync, useLocalStorage, useToggle } from 'react-use'
 import { useAccount } from 'wagmi'
+import { v4 as uuidv4 } from 'uuid'
 
 // Exports
 export { SessionProvider, useSession }
@@ -20,7 +21,7 @@ export { SessionProvider, useSession }
 function useSessionFn() {
   const supabase = useSupabaseClient()
   const account = useAccount()
-  const [newSessionId] = useState(crypto.randomUUID())
+  const [newSessionId] = useState(uuidv4())
   const searchParams = useSearchParams()
   const paramsSessionId = searchParams.get('session_id')
   const pathname = usePathname()

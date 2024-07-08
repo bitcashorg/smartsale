@@ -16,12 +16,17 @@ import { Analytics } from '@vercel/analytics/react'
 import { CommonPageParams } from '@/types/routing.type'
 import { getDictionary } from '@/dictionaries'
 import '../../globals.css'
+import type { Viewport } from 'next'
 import { isMobile } from 'react-device-detect'
 
-const openSans = Open_Sans({
-  subsets: ['latin', 'latin-ext'],
-  weight: ['400', '500', '600', '700', '800']
-})
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false
+  // Also supported by less commonly used
+  // interactiveWidget: 'resizes-visual',
+}
 
 export default async function RootLayout({
   children,
@@ -33,8 +38,9 @@ export default async function RootLayout({
       lang={params.lang || 'en'}
       className={cn('tk-futura-pt max-w-full text-lg antialiased')}
       suppressHydrationWarning
+      style={{ width: '100vw', maxWidth: '100vw' }}
     >
-      <body>
+      <body style={{ width: '100vw', maxWidth: '100vw' }}>
         <GlobalStoreProvider>
           <Providers
             attribute="class"
@@ -46,7 +52,7 @@ export default async function RootLayout({
             {/* <Toaster /> */}
             <main
               className={cn(
-                'flex flex-1 flex-col',
+                'flex w-full max-w-[100vw] flex-1 flex-col',
                 isMobile && 'overflow-hidden'
               )}
             >
