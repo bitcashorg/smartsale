@@ -32,7 +32,7 @@ export function LangSelector({ lang }: LangProp) {
           ))}
         </DropdownMenuContent>
       </DropdownMenu>
-      <LangSetter />
+      {/* <LangSetter /> */}
     </div>
   )
 }
