@@ -24,8 +24,8 @@ export default async function IndexPage({ params: { lang } }: IndexPageProps) {
       <div className="narrow-container">
         {appConfig.features.sections ? (
           <>
-            <WhyChooseUs lang={lang} dict={dict} />
             <Features lang={lang} dict={dict} />
+            <WhyChooseUs lang={lang} dict={dict} />
           </>
         ) : null}
 

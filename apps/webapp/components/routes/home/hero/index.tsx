@@ -18,17 +18,11 @@ export function NewHomeHero() {
         <div className="text-left">
           <h1 className="text-6xl font-bold">
             <Balancer>
-              &nbsp; EARLY ACCESS TO <br />
+              EARLY ACCESS TO <br />
               THE NEXT <span className="text-pink-500">GLOBAL</span> <br />
               <span className="text-pink-500">AI UNICORNS</span>
             </Balancer>
           </h1>
-          {/* <Link href="/bitcash-bitlauncher"> */}
-          <p className="flex items-center gap-1 mt-8 uppercase">
-            Be Part Of The Intelligent Future
-            {/* <ArrowRightIcon className="mt-[-1px] h-5 w-5" /> */}
-          </p>
-          {/* </Link> */}
         </div>
         <div className="relative mt-16 lg:ml-16 lg:mt-0">
           <div className="absolute inset-0 m-auto h-[300px] w-[300px] rounded-full bg-pink-500 sm:h-[400px] sm:w-[400px]"></div>
