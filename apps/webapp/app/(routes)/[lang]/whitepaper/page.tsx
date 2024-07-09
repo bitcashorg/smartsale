@@ -11,7 +11,7 @@ export default async function BitlauncherWhitePaper({
   return (
     <>
       <BgHeader
-        heading={'Bitluancher Whitepaper'}
+        heading={'Bitlauncher Whitepaper'}
         subheading={'Be Part of the Intelligent Future'}
         imageSrc="/images/blog/temp-bg-concept.webp"
       />

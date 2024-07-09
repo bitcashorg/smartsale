@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react'
 
 export function Countdown() {
-  const targetDate = new Date('July 15, 2024')
+  const targetDate = new Date('July 30, 2024')
   const [timeLeft, setTimeLeft] = useState({
     days: '00',
     hours: '00',
@@ -63,7 +63,7 @@ export function Countdown() {
 
 function CountdownItem({ value, label }: CountdownItemProps) {
   return (
-    <div className="flex size-32 flex-col items-center justify-center text-center">
+    <div className="flex flex-col items-center justify-center text-center size-32">
       <div className="text-4xl font-bold md:text-6xl">{value}</div>
       <div className="text-sm">{label}</div>
     </div>
