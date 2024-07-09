@@ -29,3 +29,5 @@ export const appConfig = {
     docs: 'https://docs.bitcash.org'
   }
 } as const
+
+console.log('🧑🏻‍💻 features', appConfig.features)
