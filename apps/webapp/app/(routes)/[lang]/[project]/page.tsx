@@ -12,7 +12,6 @@ import { Lang, locales } from '@/dictionaries/locales'
 import { getDictionary } from '@/dictionaries'
 import { appConfig } from '@/lib/config'
 import Image from 'next/image'
-import { BgHeader } from '@/components/shared/bg-header'
 
 export default async function ProjectPage({ params }: ProjectPageProps) {
   const dict = await getDictionary(params.lang)
@@ -24,14 +23,9 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 
   return (
     <>
-      <div className="flex flex-col">
-        <BgHeader
-          heading={project.title}
-          subheading={project.pitch}
-          imageSrc="/images/blog/temp-bg-concept.webp"
-        />
-        <div className="pt-20 narrow-container">
-          <div className="flex flex-col gap-8 pb-10 lg:flex-row">
+      <div className="flex min-h-[calc(83vh-4rem)] flex-col">
+        <ProjectHeader project={project}>
+          <div className="flex flex-col gap-8 lg:flex-row">
             <Card className="w-full pb-10 border-card/30 bg-card/60 backdrop-blur-lg">
               <Countdown />
               <div className="flex items-center justify-center gap-6 align-center">
@@ -47,7 +41,9 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 
             <ProjectDataCard project={project} />
           </div>
+        </ProjectHeader>
 
+        <div className="pt-20 narrow-container">
           {projectContentObjectKeys.map((key, index) => {
             const pcKey = key as keyof typeof projectContent
             const isLastItem = index === projectContentObjectKeys.length - 1
@@ -82,7 +78,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                         return (
                           <div
                             key={`${index}__${(projectContent[pcKey].title as string).replace(/\s/g, '-')}`}
-                            className="grid gap-16 px-6 list-disc list-outside sm:grid-cols-2 md:grid-cols-3"
+                            className="grid gap-16 px-6 list-disc list-outside lg:grid-flow-cols-4 sm:grid-cols-2 md:grid-cols-3"
                           >
                             {content.slice(0, 6).map(item => {
                               const text = item.split(': ')
