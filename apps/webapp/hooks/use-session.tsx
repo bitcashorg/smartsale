@@ -71,7 +71,7 @@ function useSessionFn() {
       .subscribe()
 
     return () => {
-      console.log(`XX unsubscribing to session ${newSessionId}`)
+      console.log(`🤖 unsubscribing to session ${newSessionId}`)
       supabase.removeChannel(channel)
     }
   }, [startSession, supabase, isMobile])
