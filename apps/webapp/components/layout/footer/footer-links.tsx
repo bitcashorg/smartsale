@@ -4,14 +4,17 @@ import { IconBitlauncher } from '@/components/ui/icons'
 
 export function FooterLinks() {
   return (
-    <div className="container flex p-10 text-left bg-primary">
-      <Link href={`/`} className="min-w-80 md:mr-40">
+    <div className="container flex flex-col p-10 text-left bg-primary lg:flex-row">
+      <Link
+        href={`/`}
+        className="min-w-80 lg:mr-[10%] lg:text-left lg:text-center"
+      >
         <IconBitlauncher className="w-full" />
-        <p className="w-full py-10 pl-2 paragraph">
+        <p className="w-full py-5 pb-10 pl-2 paragraph lg:py-10">
           Be Part Of The Intelligent Future.
         </p>
       </Link>
-      <div className="grid w-full grid-cols-2 mx-auto lg:grid-cols-3">
+      <div className="grid w-full grid-cols-2 gap-5 mx-auto lg:grid-cols-3">
         {footerNavStruct.sections.map((section, index) =>
           section.items ? (
             <SectionComponent key={index} section={section} />
