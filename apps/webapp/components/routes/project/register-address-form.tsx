@@ -70,7 +70,7 @@ export const RegisterAddressForm: FunctionComponent<{ projectId: number }> = ({
 
   return registration.data || state.value ? (
     <RegisterButton
-      text={`You are registered with address ${formatAddress(registration.data?.address || address!)}`}
+      text={`${formatAddress(registration.data?.address || address!)} is registered!`}
     />
   ) : (
     <form action={submitForm} className="flex justify-center">
@@ -96,7 +96,7 @@ function RegisterButton(props: ButtonProps & { text: string }) {
           variant: 'outline',
           radius: 'full'
         }),
-        'mx-auto mt-4 h-auto whitespace-normal border border-solid border-accent-secondary bg-background px-10 py-2'
+        'flex h-auto whitespace-normal border border-solid border-accent-secondary bg-background px-5'
       )}
       {...props}
     >

@@ -5,13 +5,14 @@ import { LucideCheck, LucideLoader2, LucideShare, LucideX } from 'lucide-react'
 
 import { generateShortLink } from '@/actions'
 import { useSession } from '@/hooks/use-session'
+import { useParams } from 'next/navigation'
 
 export function CopyShortlinkIcon() {
   const [status, setStatus] = useState<
     'default' | 'loading' | 'copied' | 'error'
   >('default')
   const { session } = useSession()
-  const existingParams = window.location.search // Get existing query parameters
+  const existingParams = useParams() // Get existing query parameters
   const param = session
     ? `${existingParams ? '&' : '?'}referrer=${session.account}`
     : ''

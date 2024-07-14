@@ -42,7 +42,7 @@ export function Countdown() {
   }, [])
 
   return (
-    <div className="mt-5 max-h-[200px] px-8 pt-5">
+    <div className="mt-5 max-h-[200px] px-8">
       <div className="flex justify-center">
         <h2 className="heading3">
           {/* <TimerIcon className="inline" /> */}
@@ -63,7 +63,7 @@ export function Countdown() {
 
 function CountdownItem({ value, label }: CountdownItemProps) {
   return (
-    <div className="flex flex-col items-center justify-center text-center size-32">
+    <div className="flex flex-col items-center justify-center text-center md:size-32">
       <div className="text-4xl font-bold md:text-6xl">{value}</div>
       <div className="text-sm">{label}</div>
     </div>
