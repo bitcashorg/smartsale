@@ -39,7 +39,7 @@ export function SessionButton() {
         <Button
           variant="ghost"
           radius="full"
-          className={cn('m-0 md:px-3 lg:px-2 lg:px-4')}
+          className={cn('m-0 md:px-3 lg:px-4')}
           onClick={openConnectModal ? openConnectModal : openAccountModal}
           suppressHydrationWarning={true}
         >

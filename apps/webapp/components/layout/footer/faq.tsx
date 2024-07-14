@@ -10,7 +10,7 @@ import { LangProp } from '@/types/routing.type'
 export function FAQ({ lang, dict }: FAQProps) {
   return (
     <Section heading={dict.faq.frequentlyAsked} subheading={dict.faq.text}>
-      {/* <div className="grid gap-8 px-4 md:px-6">
+      <div className="grid gap-8 px-4 md:px-6">
         <Accordion
           className="mx-auto w-full max-w-[1000px]"
           collapsible
@@ -19,7 +19,7 @@ export function FAQ({ lang, dict }: FAQProps) {
           {dict.faq.questions.map(
             (item: { question: string; answer: string }, index: number) => (
               <AccordionItem key={index} value={`item-${index}`}>
-                <AccordionTrigger className="transition-color flex w-full items-center justify-between px-6 py-4 text-left font-medium focus:outline-none data-[state=open]:bg-card">
+                <AccordionTrigger className="transition-color flex w-full items-center justify-between px-6 py-4 text-left font-medium focus:outline-none data-[state=open]:bg-card/50">
                   {item.question}
                 </AccordionTrigger>
                 <AccordionContent className="px-6 py-4">
@@ -29,8 +29,8 @@ export function FAQ({ lang, dict }: FAQProps) {
             )
           )}
         </Accordion>
-      </div> */}
-      <div className="grid pt-8 text-left gap-y-10 md:grid-cols-2 md:gap-x-16 md:gap-y-8">
+      </div>
+      {/* <div className="grid pt-8 text-left gap-y-10 md:grid-cols-2 md:gap-x-16 md:gap-y-8">
         {dict.faq.questions.map(
           (
             item: { question: string; answer: string; additionalInfo?: string },
@@ -61,7 +61,7 @@ export function FAQ({ lang, dict }: FAQProps) {
             </div>
           )
         )}
-      </div>
+      </div> */}
     </Section>
   )
 }

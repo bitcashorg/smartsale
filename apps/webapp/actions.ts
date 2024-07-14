@@ -124,7 +124,7 @@ export async function generateShortLink(path: string) {
             `https://api.dub.co/links?workspaceId=${process.env.DUB_WORKSPACE_ID}`,
             {
               domain: 'bitcash.to',
-              url: `https://bitlauncher.ai${path}`
+              url: path
             },
             {
               headers: {

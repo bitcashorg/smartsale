@@ -20,7 +20,7 @@ export function CopyShortlinkIcon() {
     setStatus('loading')
     try {
       const { data, error } = await generateShortLink(
-        window.location.pathname + param
+        'https://bitlauncher.ai' + window.location.pathname + param
       )
       if (error || !data) throw new Error(error?.message || 'Unknown error')
       navigator.clipboard.writeText(data.shortLink)
