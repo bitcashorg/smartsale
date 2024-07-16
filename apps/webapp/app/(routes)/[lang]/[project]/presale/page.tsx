@@ -36,6 +36,6 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
   )
 }
 
-type ProjectPageProps = {
+export type ProjectPageProps = {
   params: { project: string; lang: Lang }
 }

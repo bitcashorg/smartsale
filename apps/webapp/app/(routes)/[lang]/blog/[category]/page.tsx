@@ -70,4 +70,4 @@ export async function generateMetadata(props: any): Promise<Metadata> {
 }
 
 type CategoryPageParams = { lang: Lang; category: string }
-type CategoryPageProps = { params: CategoryPageParams }
+export type CategoryPageProps = { params: CategoryPageParams }

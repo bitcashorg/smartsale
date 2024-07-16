@@ -75,6 +75,6 @@ export async function generateStaticParams(): Promise<ProjectPageParams[]> {
 }
 
 type ProjectPageParams = { project: string; lang: Lang }
-type ProjectPageProps = {
+export type ProjectPageProps = {
   params: ProjectPageParams
 }
