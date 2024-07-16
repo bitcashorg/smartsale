@@ -27,6 +27,62 @@ Solution: Building on the foundational concepts of its predecessors, SmartSale o
 
 SmartSale is committed to compliance and security, rigorously adhering to emerging regulations such as MiCA to minimize legal risks for new projects and ensure a stable operational framework.
 
+## Project Overview
+
+This document provides an overview of the applications and packages within the project, as well as a brief description of the Hardhat setup.
+
+### Applications
+
+#### Faucet (`/apps/faucet`)
+
+The Faucet application serves as a utility for distributing test tokens or currencies in a blockchain network. It is typically used in test environments to provide developers and users with a means to obtain tokens for testing purposes.
+
+#### Indexer (`/apps/indexer`)
+
+The Indexer application is responsible for indexing blockchain data. It listens to the blockchain network, extracts relevant data from blocks, transactions, and events, and stores it in a structured format for easy querying and analysis.
+
+#### Supabase (`/apps/supabase`)
+
+This application integrates with Supabase, a scalable and open-source Firebase alternative, providing real-time database functionality, authentication, storage, and more. It's designed to leverage Supabase services for backend functionalities.
+
+For more database schema details, refer to the [Database Schema](/apps/supabase/README.md) diagram.
+
+#### Webapp (`/apps/webapp`)
+
+The Webapp is a front-end application that provides a user interface for interacting with the project's services. It includes features such as displaying blockchain data, interacting with smart contracts, and utilizing the Faucet for test tokens.
+
+Please refer to the [webapp README.md](/apps/webapp/README.md) for more details on the technologies used in the Webapp and code practices.
+
+### Packages
+
+#### Config ESLint (`/packages/config-eslint`)
+
+This package provides a shared ESLint configuration to ensure consistent coding styles and practices across the project's JavaScript and TypeScript codebases.
+
+#### Config TypeScript (`/packages/config-typescript`)
+
+Similar to `config-eslint`, this package offers a shared TypeScript configuration to standardize TypeScript compilation options across the project.
+
+#### Smartsale Contracts (`/packages/smartsale-contracts`)
+
+Contains smart contracts for the Smartsale platform, including auction contracts, ERC20 tokens, and other blockchain-based contracts. These are essential for the project's blockchain functionalities.
+
+#### Smartsale Env (`/packages/smartsale-env`)
+
+Provides environment configurations and utilities for the Smartsale platform, ensuring that different environments (development, testing, production) can be managed and configured efficiently.
+
+#### Smartsale Lib (`/packages/smartsale-lib`)
+
+A library of reusable code for the Smartsale platform, including utility functions, blockchain interaction helpers, and common components used across the project.
+
+#### TSConfig (`/packages/tsconfig`)
+
+Houses TypeScript configuration files used to compile TypeScript projects within the monorepo. It ensures consistency in TypeScript compilation settings.
+
+### Hardhat (`/hardhat`)
+
+Hardhat is a development environment for Ethereum software development. It facilitates the development, testing, and deployment of smart contracts. The `hardhat` folder contains configurations and scripts for compiling smart contracts, running tests, and deploying contracts to various Ethereum networks. It includes subfolders for different contract modules like `auction` and `erc20-token`, each containing specific smart contract implementations.
+
 ## Requirements
 
 - **NodeJS**: Recommended for managing server-side scripting and backend interactions.
@@ -90,10 +146,18 @@ bun install
 
 ## Usage
 
-Kickstart the development server:
+Kickstart the (overall) development server:
 
 ```bash
 bun run dev
+```
+
+### webapp
+
+To run the webapp:
+
+```bash
+task run app # cd apps/webapp && bun dev
 ```
 
 ## Contributing
