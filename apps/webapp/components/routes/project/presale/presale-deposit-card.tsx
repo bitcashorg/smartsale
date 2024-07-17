@@ -30,12 +30,13 @@ import {
 } from 'smartsale-contracts'
 import { parseUnits } from 'viem'
 import { useAccount, useSwitchChain, useWriteContract } from 'wagmi'
-import { useGlobalStore } from '@/hooks/use-global-store'
 import { appConfig } from '@/lib/config'
 import { cn } from '@/lib/utils'
 import { ProjectGridCard } from '@/components/routes/project/project-grid-card'
 import { ProjectInfo } from '@/components/routes/project/project-info'
 import { ProjectWithAuction } from '@/lib/projects'
+import { useSession } from '@/hooks/use-session'
+import toast from 'react-hot-toast'
 
 export function PresaleDepositCard({
   project
@@ -44,7 +45,10 @@ export function PresaleDepositCard({
 }) {
   return (
     <ProjectGridCard>
-      <ProjectInfo project={project} presale={true} />
+      <div className="mb-5">
+        <ProjectInfo project={project} presale={true} />
+      </div>
+
       <PresaleDeposit />
     </ProjectGridCard>
   )
@@ -52,31 +56,43 @@ export function PresaleDepositCard({
 
 function PresaleDeposit() {
   const { address } = useAccount()
-  const { writeContract, ...other } = useWriteContract()
-  const { setGlobalError } = useGlobalStore()
+  const { writeContract } = useWriteContract()
   const [amount, setAmount] = useState<number>(42)
   const { switchChain } = useSwitchChain()
   const [token, setToken] = useState<TokenContractData>(TestnetUSDT)
   const { requestSignature } = useSigningRequest()
+  const { loginOrConnect } = useSession()
 
   const deposit = async () => {
-    if (!address)
-      return setGlobalError('Make sure your evm wallet is connected.')
-    if (!amount) return setGlobalError('Amount is undefined')
+    console.log('😈 desposits')
+    if (!address) return loginOrConnect()
+    if (!amount) return toast.error('Amount is undefined')
 
     if (token.chainType === 'evm') {
       const evmToken = token as EVMTokenContractData
       switchChain({ chainId: evmToken.chainId })
-      writeContract({
-        abi: evmToken.abi,
-        address: evmToken.address,
-        functionName: 'transfer',
-        args: [
-          '0x2C9DAAb3F463d6c6D248aCbeaAEe98687936374a', // dev only
-          parseUnits(amount.toString(), evmToken.decimals)
-        ],
-        chainId: evmToken.chainId
-      })
+      console.log('Deposit!')
+      writeContract(
+        {
+          abi: evmToken.abi,
+          address: evmToken.address,
+          functionName: 'transfer',
+          args: [
+            '0x2C9DAAb3F463d6c6D248aCbeaAEe98687936374a', // dev only
+            parseUnits(amount.toString(), evmToken.decimals)
+          ],
+          chainId: evmToken.chainId
+        },
+        {
+          onError: error => {
+            console.log('error', error.message)
+            toast.error(error.message.split('Contract Call:')[0])
+          },
+          onSuccess: () => {
+            toast.success('Deposit successful')
+          }
+        }
+      )
     } else {
       // handle eos token bitusd and usdt
       const esr =
@@ -89,12 +105,12 @@ function PresaleDeposit() {
   return (
     <div>
       <CardHeader className="p-0 pb-5">
-        <CardTitle>Presale Deposit</CardTitle>
+        <CardTitle>Presale Contributions</CardTitle>
         <CardDescription>
-          Deposit tokens to participate in the presale.
+          Transfer tokens to participate in the presale.
         </CardDescription>
       </CardHeader>
-      <div className="flex flex-col mb-10">
+      <div className="flex flex-col mb-5">
         <label htmlFor="deposit" className="text-sm font-bold"></label>
         <div className="flex items-center justify-between">
           <div className="flex min-w-[40%] flex-col">
@@ -146,7 +162,7 @@ function PresaleDeposit() {
           // disabled={!session?.account}
           onClick={deposit}
         >
-          Deposit
+          Contribute Now
         </Button>
       </div>
     </div>

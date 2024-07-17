@@ -22,7 +22,7 @@ function ListItem({ label, value }: ItemProps) {
     <div className="flex justify-between w-full">
       <h3 className="flex justify-between w-full">
         <span className="opacity-70">{label}: </span>
-        <b>{typeof value === 'string' ? value : null}</b>
+        <b className="text-right">{typeof value === 'string' ? value : null}</b>
       </h3>
     </div>
   )
@@ -62,7 +62,7 @@ export function ProjectInfo({
         ) : (
           <div
             key={k}
-            className="flex w-full min-w-[250px] flex-col rounded-sm bg-muted px-4 py-3 text-center"
+            className="flex w-full min-w-[250px] flex-col justify-evenly rounded-sm bg-muted px-4 py-3"
           >
             {items.map((item, ik) => (
               <Fragment key={ik}>
