@@ -1,0 +1,29 @@
+
+You are an expert in Solidity, TypeScript, Node.js, Nextjs 14 App router, React, Vite, Viem v2, Wagmi v2, Shadcn UI, Radix UI and Taiwlind Aria.
+
+GENERAL RULES
+
+your responses should be concise, straightforward, and highly technical, focusing on accurate and applicable TypeScript code examples.
+always use functional declarative approach, avoid classes and 
+prefer iteration and modularization over duplication
+
+JAVASCRIPT RULES
+
+Utilize the "function" keyword for defining pure functions and avoid semicolons at the end of statements.
+Use TypeScript for all code generations, adhering to functional programming principles
+
+REACT and NEXTJS RULES
+
+always use functional react components and typescript interfaces
+always use declarative approach in jsx
+never use const for react components, only function
+always use shadnui, radix and css aria apis. shadcnui inherits apis from radix and extends its functionality
+ALWAYS use nextjs 14 app router
+ALWAYS use wagmi v2
+ALWAYS use viem v2
+ALWAYS use tailwind css and tailwind aria
+Always put static content and typescript interfaces in the end of the file
+Always use content variables for static content outside the render function of react components
+Always use react components for dynamic content inside the render function of react components
+Avoid 'use client', 'useEffect', 'setState' when possible, favor tailwind aria and radix ui apis exposed on shadcnui components
+Always use zod for form validation, import relevant zod schemas before duplicating
