@@ -33,7 +33,7 @@ export function ProjectInfo({
   presale = false
 }: {
   project: ProjectWithAuction
-  presale: boolean
+  presale?: boolean
 }) {
   const fields: Array<Array<ItemProps>> = [
     [
