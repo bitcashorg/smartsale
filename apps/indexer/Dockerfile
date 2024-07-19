@@ -12,6 +12,8 @@ COPY packages/smartsale-env/package.json ./packages/smartsale-env/package.json
 COPY packages/smartsale-contracts/package.json ./packages/smartsale-contracts/package.json
 COPY packages/smartsale-lib/package.json ./packages/smartsale-lib/package.json
 COPY packages/tsconfig/package.json ./packages/tsconfig/package.json
+COPY packages/config-typescript/package.json ./packages/config-typescript/package.json
+COPY packages/config-eslint/package.json ./packages/config-eslint/package.json
 
 # Copy the lock file
 COPY bun.lockb .
