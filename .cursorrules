@@ -22,17 +22,19 @@ JAVASCRIPT RULES
   - Static content variables
   - TypeScript types
 
+DEPENDENCY VERSIONS
+- ALWAYS use Next.js 14 App Router.
+- ALWAYS use Wagmi v2.
+- ALWAYS use Viem v2.
+
 NEXTJS RULES
 
 - Always use functional React components and TypeScript interfaces.
 - Always use a declarative approach in JSX.
 - Never use const for React components, only function.
 - Always use Shadcn UI, Radix, and CSS Aria APIs. Shadcn UI inherits APIs from Radix and extends its functionality.
-- ALWAYS responsive tailwind css
-- ALWAYS use Next.js 14 App Router.
-- ALWAYS use Wagmi v2.
-- ALWAYS use Viem v2.
-- ALWAYS use Tailwind CSS and Tailwind Aria.
+- ALWAYS responsive tailwind css best practices.
+- ALWAYS use Tailwind CSS and Tailwind Aria attribute to animate components.
 - Always put static content and TypeScript interfaces at the end of the file.
 - Always use content variables for static content outside the render function of React components.
 - Always use React components for dynamic content inside the render function of React components.
