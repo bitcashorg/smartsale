@@ -7,7 +7,7 @@ import axios from 'axios'
 import { Resend } from 'resend'
 import { z } from 'zod'
 import { createSupabaseServerClient } from '@/services/supabase'
-import { preSaleInsertSchema } from '@repo/supabase'
+import { presaleInsertSchema } from '@repo/supabase'
 
 // get session object by id
 export async function getSesssion(formData: FormData) {
@@ -36,14 +36,14 @@ export async function registerAddress(formData: FormData) {
   try {
     const o = fromEntries(formData)
     console.log('register address input', o)
-    const data = preSaleInsertSchema.parse({
+    const data = presaleInsertSchema.parse({
       ...o,
       project_id: parseInt(o.project_id),
       created_at: new Date().toDateString()
     })
     const supabase = await createSupabaseServerClient()
     const { data: createdEntry, error } = await supabase
-      .from('pre_sale')
+      .from('presale')
       .insert([data])
       .select('*')
 

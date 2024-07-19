@@ -9,7 +9,7 @@ import { useQuery } from '@tanstack/react-query'
 import { useSession } from '@/hooks/use-session'
 import { Button, ButtonProps, buttonVariants } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
-import { preSaleInsertSchema } from '@repo/supabase'
+import { presaleInsertSchema } from '@repo/supabase'
 import { useSupabaseClient } from '@/services/supabase'
 
 export const RegisterAddressForm: FunctionComponent<{ projectId: number }> = ({
@@ -25,7 +25,7 @@ export const RegisterAddressForm: FunctionComponent<{ projectId: number }> = ({
     enabled: Boolean(session), // only fetch if logged in
     queryFn: async () => {
       const { data, error } = await supabase
-        .from('pre_sale')
+        .from('presale')
         .select()
         .eq('project_id', projectId)
         .eq('account', session!.account!) // we know for sure
@@ -43,7 +43,7 @@ export const RegisterAddressForm: FunctionComponent<{ projectId: number }> = ({
       project_id: parseInt(o.project_id, 10)
     }
     // validate input
-    preSaleInsertSchema.safeParse(data)
+    presaleInsertSchema.safeParse(data)
 
     return registerAddress(formData)
   })
