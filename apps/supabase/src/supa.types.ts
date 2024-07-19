@@ -9,7 +9,7 @@ export type Json =
 export type Database = {
   public: {
     Tables: {
-      auction_details: {
+      auctions: {
         Row: {
           address_auctioning_token: string | null
           address_bidding_token: string | null
@@ -117,6 +117,21 @@ export type Database = {
         }
         Relationships: []
       }
+      indexer: {
+        Row: {
+          id: number
+          last_indexed_block: string
+        }
+        Insert: {
+          id?: number
+          last_indexed_block: string
+        }
+        Update: {
+          id?: number
+          last_indexed_block?: string
+        }
+        Relationships: []
+      }
       orders: {
         Row: {
           auction_id: number
@@ -153,7 +168,7 @@ export type Database = {
         }
         Relationships: []
       }
-      pre_sale: {
+      presale: {
         Row: {
           account: string | null
           address: string | null
