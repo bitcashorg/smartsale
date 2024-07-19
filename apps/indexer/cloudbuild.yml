@@ -2,7 +2,7 @@ options:
   logging: CLOUD_LOGGING_ONLY
 
 steps:
-  # Build the container image with caching
+  # Build the container image
   - name: 'gcr.io/cloud-builders/docker'
     args: [
         'build',
@@ -12,9 +12,7 @@ steps:
         # Dockerfile path to project
         'apps/indexer/Dockerfile',
         '--cache-from',
-        'type=registry,ref=gcr.io/$PROJECT_ID/$_PROJECT_NAME:latest',
-        '--cache-to',
-        'type=inline',
+        'gcr.io/$PROJECT_ID/$_PROJECT_NAME:latest',
         '.',
       ]
     # root directory for docker build
