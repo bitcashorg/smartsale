@@ -28,6 +28,7 @@ NEXTJS RULES
 - Always use a declarative approach in JSX.
 - Never use const for React components, only function.
 - Always use Shadcn UI, Radix, and CSS Aria APIs. Shadcn UI inherits APIs from Radix and extends its functionality.
+- ALWAYS responsive tailwind css
 - ALWAYS use Next.js 14 App Router.
 - ALWAYS use Wagmi v2.
 - ALWAYS use Viem v2.
