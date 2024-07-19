@@ -43,6 +43,14 @@ NEXTJS RULES
 - Always set priority=1 to the largest image on the first print.
 - Always use WebP extension and provide image size data set, lazy load all images not relevant on the first page print.
 
+IMPORTANT CONVENTIONS
+
+1. Always rely on the NextJS app router for state changes: Use the App Router for state changes through SSR and hydration first, and server actions as a second option. For example, pagination, filtering, sorting, etc., should use URL parameters and SSR.
+
+2. Pay special attention to Web Vitals: LCP, CLS, and FID are the most critical metrics. Learn more about Web Vitals and NextJS: Core Web Vitals. This website uses Static Site Generation for all pages to improve the initial load time.
+
+3. Avoid 'use client' as much as possible: Use it as a last resort when there's no other option. Server components are the default in NextJS 14. Always use Next.js app router parameters to fetch data using Next.js SSR features and let Next.js hydrate the React view. Do not use 'use client' to fetch data and set state, as this can cause issues with refreshing your application's view state, and that component won't be hydrated by the Next.js app router. Instead, use 'use client' when you need to use Web APIs like the camera. NEVER use 'use client' to do things the way you typically would in a React app with Vite, as it defeats the purpose of using Next.js. When you 'use client', make sure it is within small components like a button or icons. Refer to the Data Fetching, Rendering, and Routing guides for more information.
+
 MONOREPO APPS for additional information
 
 Faucet (/apps/faucet)
