@@ -5,4 +5,7 @@
 cp .env-sample .env
 
 bun install && bun start
+
+# or
+task indexer-docker
 ```

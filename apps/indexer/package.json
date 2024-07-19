@@ -16,19 +16,20 @@
   },
   "dependencies": {
     "@dfuse/client": "^0.3.21",
+    "@repo/supabase": "workspace:*",
     "@sentry/node": "^8.19.0",
+    "@supabase/supabase-js": "^2.44.4",
+    "axios": "^1.7.2",
     "bn.js": "^5.2.1",
+    "express": "^4.19.2",
     "lodash": "^4.17.21",
     "node-fetch": "2.6.4",
+    "resend": "^3.4.0",
     "smartsale-contracts": "workspace:*",
     "smartsale-env": "workspace:*",
     "smartsale-lib": "workspace:*",
-    "@repo/supabase": "workspace:*",
     "viem": "latest",
-    "ws": "^8.18.0",
-    "axios": "^1.7.2",
-    "express": "^4.19.2",
-    "resend": "^3.4.0"
+    "ws": "^8.18.0"
   },
   "devDependencies": {
     "@types/express": "^4.17.21",
