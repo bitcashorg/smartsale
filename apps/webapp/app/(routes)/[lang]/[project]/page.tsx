@@ -12,6 +12,7 @@ import { Lang, locales } from '@/dictionaries/locales'
 import { getDictionary } from '@/dictionaries'
 import { appConfig } from '@/lib/config'
 import Image from 'next/image'
+import { ProjectPageProps, ProjectPageParams } from '@/types/routing.type'
 
 export default async function ProjectPage({ params }: ProjectPageProps) {
   const dict = await getDictionary(params.lang)
@@ -130,10 +131,7 @@ export async function generateStaticParams(): Promise<ProjectPageParams[]> {
   return params
 }
 
-type ProjectPageParams = { project: string; lang: Lang }
-export type ProjectPageProps = {
-  params: ProjectPageParams
-}
+
 
 const DynamicAddressForm = dynamic(
   () =>

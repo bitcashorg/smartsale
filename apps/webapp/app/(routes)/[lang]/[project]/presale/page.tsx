@@ -6,7 +6,7 @@ import { Countdown } from '@/components/shared/countdown'
 import { ProjectDataCard } from '@/components/routes/project/project-data-card'
 import { ProjectPresaleData } from '@/components/routes/project/project-presale-data'
 import { PresaleTransactionsCard } from '@/components/routes/project/presale-transactions-card'
-import { Lang } from '@/dictionaries/locales'
+import { ProjectPageProps } from '@/types/routing.type'
 
 export default async function ProjectPage({ params }: ProjectPageProps) {
   const project = (await getProjectBySlug(
@@ -34,8 +34,4 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
       </ProjectHeader>
     </div>
   )
-}
-
-export type ProjectPageProps = {
-  params: { project: string; lang: Lang }
 }

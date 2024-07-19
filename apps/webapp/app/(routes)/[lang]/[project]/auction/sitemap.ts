@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 import { getDictionary } from '@/dictionaries'
 import { getProjects } from '@/lib/projects'
-import { ProjectPageProps } from './page'
+import { ProjectPageProps } from '@/types/routing.type'
 
 export default async function sitemap({
   params

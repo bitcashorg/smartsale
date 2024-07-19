@@ -1,6 +1,6 @@
 import { getDictionary } from '@/dictionaries'
-import { Lang } from '@/dictionaries/locales'
 import { getProjectBySlug } from '@/lib/projects'
+import { ProjectPageProps } from '@/types/routing.type'
 import { Metadata } from 'next'
 
 export default function ProjectPagesLayout({ children }: ProjectPageProps) {
@@ -20,8 +20,3 @@ export async function generateMetadata({
     }
   }
 }
-interface ProjectPageProps {
-  children: React.ReactNode
-  params: ProjectPageParams
-}
-type ProjectPageParams = { project: string; lang: Lang }
