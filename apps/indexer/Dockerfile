@@ -10,7 +10,6 @@ COPY apps/indexer/package.json ./apps/indexer/package.json
 COPY packages/smartsale-env/package.json ./packages/smartsale-env/package.json
 COPY packages/smartsale-contracts/package.json ./packages/smartsale-contracts/package.json
 COPY packages/smartsale-lib/package.json ./packages/smartsale-lib/package.json
-COPY packages/smartsale-db/package.json ./packages/smartsale-db/package.json
 COPY packages/tsconfig/package.json ./packages/tsconfig/package.json
 
 # Copy the lock file
