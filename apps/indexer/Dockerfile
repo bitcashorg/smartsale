@@ -6,6 +6,7 @@ WORKDIR /app
 
 # Copy the package.json files for the workspaces
 COPY package.json .
+COPY apps/supabase/package.json ./apps/supabase/package.json
 COPY apps/indexer/package.json ./apps/indexer/package.json
 COPY packages/smartsale-env/package.json ./packages/smartsale-env/package.json
 COPY packages/smartsale-contracts/package.json ./packages/smartsale-contracts/package.json
@@ -21,6 +22,7 @@ RUN npm install -g bun ts-node tsconfig-paths
 RUN bun install
 
 # Copy the specific workspaces
+COPY apps/supabase ./apps/supabase
 COPY apps/indexer ./apps/indexer
 COPY packages/ ./packages/
 
