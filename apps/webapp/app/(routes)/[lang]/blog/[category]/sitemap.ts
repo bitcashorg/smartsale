@@ -8,9 +8,14 @@ export default async function sitemap(
   const {
     params: { lang }
   } = props
-  const sections = await getArticleSections(lang)
-  const categories = sections.map(section => section.slug)
+  let sections;
+  try {
+    sections = await getArticleSections(lang)
+  } catch(error) {
+    return [];
+  }
 
+  const categories = sections.map(section => section.slug)
   return categories.map(category => ({
     url: `${process.env.VERCEL_URL}/${lang}/blog/${category}`,
     lastModified: new Date()
