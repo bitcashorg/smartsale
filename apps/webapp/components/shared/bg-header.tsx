@@ -11,7 +11,7 @@ export function BgHeader({
   imageSrc: string
 }) {
   return (
-    <header className="relative top-0 z-0 flex flex-col items-center bg-cover bg-center py-10 md:pb-8 md:pt-24">
+    <header className="relative top-0 z-0 flex flex-col items-center py-10 bg-center bg-cover md:pb-8 md:pt-24">
       {/* <Image
         className="absolute inset-0 object-cover bg-black bg-center bg-cover opacity-50 pointer-events-none"
         src={imageSrc}
