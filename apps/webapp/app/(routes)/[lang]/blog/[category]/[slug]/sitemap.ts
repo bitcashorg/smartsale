@@ -17,7 +17,7 @@ export default async function sitemap(
   const slugs = sections.map((section: any) => section.slug)
 
   return slugs.map((slug: any) => ({
-    url: `${process.env.VERCEL_URL}/${lang}/blog/${category}/${slug}`,
+    url: `https://${process.env.VERCEL_URL}/${lang}/blog/${category}/${slug}`,
     lastModified: new Date()
   }))
 }

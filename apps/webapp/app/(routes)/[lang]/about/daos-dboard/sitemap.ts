@@ -6,7 +6,7 @@ export default function sitemap({
 }: CommonPageProps): MetadataRoute.Sitemap {
   return [
     {
-      url: `${process.env.VERCEL_URL}/${params.lang}/about/daos-dboard`,
+      url: `https://${process.env.VERCEL_URL}/${params.lang}/about/daos-dboard`,
       lastModified: new Date()
     }
   ]

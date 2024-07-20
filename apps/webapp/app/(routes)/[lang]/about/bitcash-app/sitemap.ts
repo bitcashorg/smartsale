@@ -6,7 +6,7 @@ export default function sitemap({
 }: CommonPageProps): MetadataRoute.Sitemap {
   return [
     {
-      url: `${process.env.VERCEL_URL}/${params.lang}/about/bitcash-app`,
+      url: `https://${process.env.VERCEL_URL}/${params.lang}/about/bitcash-app`,
       lastModified: new Date()
     }
   ]

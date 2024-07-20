@@ -10,7 +10,7 @@ export default async function sitemap({
   const projects = await getProjects(dict)
 
   return projects.map(project => ({
-    url: `${process.env.VERCEL_URL}/${params.lang}/${project.slug}/presale`,
+    url: `https://${process.env.VERCEL_URL}/${params.lang}/${project.slug}/presale`,
     lastModified: new Date()
   }))
 }
