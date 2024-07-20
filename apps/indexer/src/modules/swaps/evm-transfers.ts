@@ -5,7 +5,6 @@ import { Address, Log, PublicClient, createPublicClient, http, parseAbiItem, str
 import { TransferEvent } from '~/modules/auction/auction.type'
 import { sepolia } from 'viem/chains'
 import { smartsaleChains } from 'smartsale-env'
-import { issueTokens } from './cred-issuer'
 
 const tokens: EVMTokenContractData[] = [SepoliaUSDT, TestnetUSDT]
 

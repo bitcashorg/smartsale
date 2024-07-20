@@ -9,7 +9,7 @@ export type Json =
 export type Database = {
   public: {
     Tables: {
-      auctions: {
+      auction: {
         Row: {
           address_auctioning_token: string | null
           address_bidding_token: string | null
@@ -132,7 +132,7 @@ export type Database = {
         }
         Relationships: []
       }
-      orders: {
+      order: {
         Row: {
           auction_id: number
           buy_amount: number
@@ -195,6 +195,27 @@ export type Database = {
         }
         Relationships: []
       }
+      project: {
+        Row: {
+          created_at: string
+          id: number
+          name: string | null
+          pitch: string | null
+        }
+        Insert: {
+          created_at?: string
+          id?: number
+          name?: string | null
+          pitch?: string | null
+        }
+        Update: {
+          created_at?: string
+          id?: number
+          name?: string | null
+          pitch?: string | null
+        }
+        Relationships: []
+      }
       session: {
         Row: {
           account: string
@@ -219,7 +240,7 @@ export type Database = {
         }
         Relationships: []
       }
-      transfers: {
+      transfer: {
         Row: {
           amount: number | null
           chain_id: number | null
@@ -255,7 +276,7 @@ export type Database = {
         }
         Relationships: []
       }
-      users: {
+      user: {
         Row: {
           address: string
           created_at: string
