@@ -6,7 +6,7 @@ export default function sitemap({
 }: CommonPageProps): MetadataRoute.Sitemap {
   return [
     {
-      url: `${process.env.VERCEL_URL}/${params.lang}/about/ai-startups`,
+      url: `https://${process.env.VERCEL_URL}/${params.lang}/about/ai-startups`,
       lastModified: new Date()
     }
   ]

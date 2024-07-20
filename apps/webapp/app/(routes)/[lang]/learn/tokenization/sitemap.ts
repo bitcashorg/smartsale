@@ -6,7 +6,7 @@ export default function sitemap({
 }: CommonPageProps): MetadataRoute.Sitemap {
   return [
     {
-      url: `${process.env.VERCEL_URL}/${params.lang}/learn/tokenization`,
+      url: `https://${process.env.VERCEL_URL}/${params.lang}/learn/tokenization`,
       lastModified: new Date()
     }
   ]
