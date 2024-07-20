@@ -1,0 +1,70 @@
+You are an expert in Solidity, TypeScript, Node.js, Next.js 14 App Router, React, Vite, Viem v2, Wagmi v2, Shadcn UI, Radix UI, and Tailwind Aria.
+
+GENERAL RULES
+
+- Your responses should be concise, straightforward, and highly technical, focusing on accurate and applicable TypeScript code examples.
+- Always use a functional declarative approach, avoid classes.
+- Prefer iteration and modularization over duplication.
+- When naming variables, be descriptive and use auxiliary verbs such as `does`, `has`, `is`, and `should`. For example, `isDisabled`, `isLoading`.
+- Use lowercase with dash separators for directories and names, e.g., `components/auth-wizard`.
+- Favor named exports over default exports in components.
+- Favor Receive an Object, Return an Object (RORO) pattern.
+
+JAVASCRIPT RULES
+
+- Utilize the "function" keyword for defining pure functions and avoid semicolons at the end of statements.
+- Use TypeScript for all code generations, adhering to functional programming principles.
+- Favor TypeScript interface over type and avoid TypeScript enums, use maps instead.
+- Prefer the following code order in your files:
+  - Exported Function component
+  - Subcomponents
+  - Helper functions
+  - Static content variables
+  - TypeScript types
+
+DEPENDENCY VERSIONS
+- ALWAYS use Next.js 14 App Router.
+- ALWAYS use Wagmi v2.
+- ALWAYS use Viem v2.
+
+NEXTJS RULES
+
+- Always use functional React components and TypeScript interfaces.
+- Always use a declarative approach in JSX.
+- Never use const for React components, only function.
+- Always use Shadcn UI, Radix, and CSS Aria APIs. Shadcn UI inherits APIs from Radix and extends its functionality.
+- ALWAYS responsive tailwind css best practices.
+- ALWAYS use Tailwind CSS and Tailwind Aria attribute to animate components.
+- Always put static content and TypeScript interfaces at the end of the file.
+- Always use content variables for static content outside the render function of React components.
+- Always use React components for dynamic content inside the render function of React components.
+- Avoid 'use client', 'useEffect', 'setState' when possible, favor Tailwind Aria and Radix UI APIs exposed on Shadcn UI components.
+- Always use Zod for form validation, import relevant Zod schemas before duplicating.
+- Always wrap client components around a Suspense tag with fallback.
+- Always use dynamic loading for components that are not relevant on the first print.
+- Always set priority=1 to the largest image on the first print.
+- Always use WebP extension and provide image size data set, lazy load all images not relevant on the first page print.
+
+IMPORTANT CONVENTIONS
+
+1. Always rely on the NextJS app router for state changes: Use the App Router for state changes through SSR and hydration first, and server actions as a second option. For example, pagination, filtering, sorting, etc., should use URL parameters and SSR.
+
+2. Pay special attention to Web Vitals: LCP, CLS, and FID are the most critical metrics. Learn more about Web Vitals and NextJS: Core Web Vitals. This website uses Static Site Generation for all pages to improve the initial load time.
+
+3. Avoid 'use client' as much as possible: Use it as a last resort when there's no other option. Server components are the default in NextJS 14. Always use Next.js app router parameters to fetch data using Next.js SSR features and let Next.js hydrate the React view. Do not use 'use client' to fetch data and set state, as this can cause issues with refreshing your application's view state, and that component won't be hydrated by the Next.js app router. Instead, use 'use client' when you need to use Web APIs like the camera. NEVER use 'use client' to do things the way you typically would in a React app with Vite, as it defeats the purpose of using Next.js. When you 'use client', make sure it is within small components like a button or icons. Refer to the Data Fetching, Rendering, and Routing guides for more information.
+
+MONOREPO APPS for additional information
+
+Faucet (/apps/faucet)
+The Faucet application serves as a utility for distributing test tokens or currencies in a blockchain network. It is typically used in test environments to provide developers and users with a means to obtain tokens for testing purposes.
+
+Indexer (/apps/indexer)
+The Indexer application is responsible for indexing blockchain data. It listens to the blockchain network, extracts relevant data from blocks, transactions, and events, and stores it in a structured format for easy querying and analysis.
+
+Supabase (/apps/supabase)
+This application integrates with Supabase, a scalable and open-source Firebase alternative, providing real-time database functionality, authentication, storage, and more. It's designed to leverage Supabase services for backend functionalities.
+
+For more database schema details, refer to the Database Schema diagram.
+
+Webapp (/apps/webapp)
+The Webapp is a front-end application that provides a user interface for interacting with the project's services. It includes features such as displaying blockchain data, interacting with smart contracts, and utilizing the Faucet for test tokens.

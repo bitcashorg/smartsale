@@ -148,8 +148,7 @@ export const footerNavStruct: NavStruct = {
           label: 'Security Tips',
           href: '/learn/security',
           description: 'Best practices for ensuring security in your projects.'
-        },
-        { label: 'Open Source', href: 'https://github.com/bitcashorg' }
+        }
       ]
     },
     {
@@ -166,62 +165,62 @@ export const footerNavStruct: NavStruct = {
         }
       ]
     },
-    {
-      label: 'Blog',
-      main: true,
-      items: [
-        {
-          label: 'Latest Arcticles',
-          href: '/blog'
-        },
-        {
-          label: 'Artificial Inteligence',
-          href: '/blog/ai'
-        },
-        {
-          label: 'Startups',
-          href: '/blog/startup'
-        },
-        {
-          label: 'Tokenization and Crypto',
-          href: '/blog/crypto'
-        },
-        {
-          label: 'AI Research',
-          href: '/blog/ai-research'
-        },
-        {
-          label: 'Bitcash News',
-          href: '/blog/bitcash'
-        }
-      ]
-    },
-    {
-      label: 'Videos',
-      main: true,
-      items: [
-        {
-          label: 'Bitlauncher | Bitcash Org',
-          href: 'https://www.youtube.com/watch?v=uUh8lX_YzoQ&list=PL6BKGVqekhB_R8wjPFN-p6dGkcIy_bM1D&pp=iAQB'
-        },
-        {
-          label: 'Bitcoin Education',
-          href: 'https://www.youtube.com/watch?v=4skbpM8ehoA&list=PL6BKGVqekhB8XkWgA-JWGLafKHxKDfzlM&pp=iAQB'
-        },
-        {
-          label: 'Bitcash Breakthrough',
-          href: 'https://www.youtube.com/watch?v=OlrfEz5dqv0&list=PL6BKGVqekhB_3OhFY_zpJwmaaV6sLxLwJ&pp=iAQB'
-        },
-        {
-          label: 'Cryptonomics',
-          href: 'https://www.youtube.com/watch?v=ECPRAdNasgU&list=PL6BKGVqekhB_eELWLrYZ6GK2Xv7NTSb0L&pp=iAQB'
-        },
-        {
-          label: 'Masterbots',
-          href: 'https://www.youtube.com/watch?v=8uPkSh3NZDg&list=PL6BKGVqekhB-KXDax3PvT1K8kN5SjFAsz&pp=iAQB'
-        }
-      ]
-    },
+    // {
+    //   label: 'Blog',
+    //   main: true,
+    //   items: [
+    //     {
+    //       label: 'Latest Arcticles',
+    //       href: '/blog'
+    //     },
+    //     {
+    //       label: 'Artificial Inteligence',
+    //       href: '/blog/ai'
+    //     },
+    //     {
+    //       label: 'Startups',
+    //       href: '/blog/startup'
+    //     },
+    //     {
+    //       label: 'Tokenization and Crypto',
+    //       href: '/blog/crypto'
+    //     },
+    //     {
+    //       label: 'AI Research',
+    //       href: '/blog/ai-research'
+    //     },
+    //     {
+    //       label: 'Bitcash News',
+    //       href: '/blog/bitcash'
+    //     }
+    //   ]
+    // },
+    // {
+    //   label: 'Videos',
+    //   main: true,
+    //   items: [
+    //     {
+    //       label: 'Bitlauncher | Bitcash Org',
+    //       href: 'https://www.youtube.com/watch?v=uUh8lX_YzoQ&list=PL6BKGVqekhB_R8wjPFN-p6dGkcIy_bM1D&pp=iAQB'
+    //     },
+    //     {
+    //       label: 'Bitcoin Education',
+    //       href: 'https://www.youtube.com/watch?v=4skbpM8ehoA&list=PL6BKGVqekhB8XkWgA-JWGLafKHxKDfzlM&pp=iAQB'
+    //     },
+    //     {
+    //       label: 'Bitcash Breakthrough',
+    //       href: 'https://www.youtube.com/watch?v=OlrfEz5dqv0&list=PL6BKGVqekhB_3OhFY_zpJwmaaV6sLxLwJ&pp=iAQB'
+    //     },
+    //     {
+    //       label: 'Cryptonomics',
+    //       href: 'https://www.youtube.com/watch?v=ECPRAdNasgU&list=PL6BKGVqekhB_eELWLrYZ6GK2Xv7NTSb0L&pp=iAQB'
+    //     },
+    //     {
+    //       label: 'Masterbots',
+    //       href: 'https://www.youtube.com/watch?v=8uPkSh3NZDg&list=PL6BKGVqekhB-KXDax3PvT1K8kN5SjFAsz&pp=iAQB'
+    //     }
+    //   ]
+    // },
     {
       label: 'Social Media',
       items: [

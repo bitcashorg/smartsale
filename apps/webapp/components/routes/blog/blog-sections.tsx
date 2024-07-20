@@ -12,19 +12,14 @@ export function BlogSections({
   className
 }: BlogSectionsProps) {
   return (
-    <div
-      className={cn(
-        'flex w-full flex-col items-center justify-start pt-10',
-        className
-      )}
-    >
+    <div className={cn('flex w-full flex-col pt-10', className)}>
       {sections.map(
         section =>
           section?.articles?.length > 0 && (
             <section
               // this is hack be careful when passing className to this component
               className={cn(
-                'container',
+                'w-full',
                 section !== sections[sections.length - 1] && 'mb-10',
                 className
               )}
@@ -43,19 +38,19 @@ export function BlogSections({
                 </Link>
               </div>
 
-              <ul className="grid w-full grid-cols-[repeat(auto-fill,minmax(250px,1fr))] flex-col gap-20 py-5 sm:flex-wrap md:gap-5">
+              <div className="grid w-full grid-cols-[repeat(auto-fill,minmax(250px,1fr))] flex-col gap-5 py-5 sm:flex-wrap">
                 {section?.articles
                   // ?.slice(0, 4)
-                  ?.map(post => (
+                  ?.map((post, index) => (
                     <ArticleCard
                       post={post}
                       sectionSlug={category || section.slug}
-                      key={post.id}
+                      key={post.id + '-' + index}
                       lang={lang}
                       meta={true}
                     />
                   ))}
-              </ul>
+              </div>
             </section>
           )
       )}

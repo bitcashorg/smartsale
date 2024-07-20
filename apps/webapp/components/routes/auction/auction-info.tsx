@@ -12,15 +12,15 @@ function ListItem({ label, value }: ItemProps) {
   if (!label && React.isValidElement(value)) {
     // Directly return JSX elements
     return (
-      <div className="flex w-full justify-between">
+      <div className="flex justify-between w-full">
         <b>{value}</b>
       </div>
     )
   }
 
   return (
-    <div className="flex w-full justify-between">
-      <h3 className="flex w-full justify-between">
+    <div className="flex justify-between w-full">
+      <h3 className="flex justify-between w-full">
         <span className="opacity-70">{label}: </span>
         <b>{typeof value === 'string' ? value : null}</b>
       </h3>
@@ -31,7 +31,7 @@ function ListItem({ label, value }: ItemProps) {
 export function AuctionInfo({ project }: { project: ProjectWithAuction }) {
   const fields: Array<Array<ItemProps>> = [
     [
-      { label: 'Presale', value: '7/15/24 - 7/30/24' },
+      { label: 'Presale', value: '7/30/24 - 8/31/24' },
       { label: 'Fundraising Goal', value: '$150,000' },
       { label: 'Max Allocation', value: '$1,500' }
     ],
@@ -40,7 +40,7 @@ export function AuctionInfo({ project }: { project: ProjectWithAuction }) {
       { label: 'Fundraising Goal', value: '$250,000' },
       { label: 'Max Allocation', value: '$10,000' }
     ],
-    [{ label: 'Ticker', value: 'BC' }],
+    [{ label: 'Ticker', value: 'BL' }],
     [
       // Passing `project` to `ProjectShare` if it is required as a prop
       { value: <ProjectShare project={project} /> }
@@ -62,7 +62,7 @@ export function AuctionInfo({ project }: { project: ProjectWithAuction }) {
                 <ListItem {...item} />
 
                 {ik < items.length - 1 && (
-                  <hr className="my-2 w-full border-accent-secondary/50" />
+                  <hr className="w-full my-2 border-accent-secondary/50" />
                 )}
               </Fragment>
             ))}

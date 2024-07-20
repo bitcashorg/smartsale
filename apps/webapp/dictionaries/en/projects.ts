@@ -6,6 +6,7 @@ export const projects: ProjectContent[] = [
     content: {
       highlights: {
         title: 'Highlights',
+        image: '/images/projects/bitlauncher/highlights-1.png',
         content: [
           [
             'Universal Accessibility: bitcash strives to make advanced technologies like cryptocurrency and AI accessible to everyone.',
@@ -23,6 +24,7 @@ export const projects: ProjectContent[] = [
       },
       product: {
         title: 'Product Overview',
+        image: '/images/projects/bitlauncher/product-1.png',
         content: [
           [
             'Inclusive Technology: bitcash aims to bring cryptocurrency, AI, and DeFi to everyone, not just tech experts.',
@@ -40,6 +42,7 @@ export const projects: ProjectContent[] = [
       },
       problem: {
         title: 'Problem',
+        image: '/images/projects/bitlauncher/problem-1.png',
         content: [
           [
             'Technical Hurdles: Cryptocurrency, AI, and DeFi advancements are hampered by complex systems that deter average users.',
@@ -56,6 +59,7 @@ export const projects: ProjectContent[] = [
       },
       solution: {
         title: 'Solution',
+        image: '/images/projects/bitlauncher/solution-1.png',
         content: [
           [
             'Intuitive Design: Bitcash streamlines the blockchain experience with an intuitive interface, removing technical barriers to cryptocurrency and AI.',
@@ -73,6 +77,7 @@ export const projects: ProjectContent[] = [
       },
       businessModel: {
         title: 'Business Model',
+        image: '/images/projects/bitlauncher/business-model-1.png',
         content: [
           [
             'Utility Token Ecosystem: Implements a dynamic mint-and-burn utility token system central to transactions and services, ensuring ecosystem balance.',
@@ -93,6 +98,7 @@ export const projects: ProjectContent[] = [
       },
       tokenomics: {
         title: 'Tokenomics',
+        image: '/images/projects/bitlauncher/tokenomics-1.png',
         content: [
           [
             'Dual Token System: Utilizes utility tokens for transactions and services within Bitcash and governance tokens for voting and decision-making by contributors and stakeholders.',
@@ -107,65 +113,6 @@ export const projects: ProjectContent[] = [
             'Vision of Shared Prosperity: Aims to build a new global economy where Bitcash tokens underpin a system of innovation, participation, and shared benefits, transcending traditional economic barriers.'
           ]
         ]
-      }
-    }
-  },
-
-  {
-    id: 2,
-    content: {
-      highlights: {
-        title: 'Highlights',
-        content: [[]]
-      },
-      product: {
-        title: 'Product Overview',
-        content: [[]]
-      },
-      problem: {
-        title: 'Problem',
-        content: [[]]
-      },
-      solution: {
-        title: 'Solution',
-        content: [[]]
-      },
-      businessModel: {
-        title: 'Business Model',
-        content: [[]]
-      },
-      tokenomics: {
-        title: 'Tokenomics',
-        content: [[]]
-      }
-    }
-  },
-  {
-    id: 3,
-    content: {
-      highlights: {
-        title: 'Highlights',
-        content: [[]]
-      },
-      product: {
-        title: 'Product Overview',
-        content: [[]]
-      },
-      problem: {
-        title: 'Problem',
-        content: [[]]
-      },
-      solution: {
-        title: 'Solution',
-        content: [[]]
-      },
-      businessModel: {
-        title: 'Business Model',
-        content: [[]]
-      },
-      tokenomics: {
-        title: 'Tokenomics',
-        content: [[]]
       }
     }
   }

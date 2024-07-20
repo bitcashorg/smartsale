@@ -6,6 +6,7 @@ export const projects: ProjectContent[] = [
     content: {
       highlights: {
         title: 'Highlights',
+        image: '/images/projects/bitlauncher/highlights-1.png',
         content: [
           [
             'Aksesibilitas Universal: bitcash berupaya membuat teknologi canggih seperti cryptocurrency dan AI dapat diakses oleh semua orang.',
@@ -23,6 +24,7 @@ export const projects: ProjectContent[] = [
       },
       product: {
         title: 'Ikhtisar Produk',
+        image: '/images/projects/bitlauncher/product-1.png',
         content: [
           [
             'Teknologi Inklusif: bitcash bertujuan untuk menghadirkan cryptocurrency, AI, dan DeFi kepada semua orang, bukan hanya pakar teknologi.',
@@ -40,6 +42,7 @@ export const projects: ProjectContent[] = [
       },
       problem: {
         title: 'Masalah',
+        image: '/images/projects/bitlauncher/problem-1.png',
         content: [
           [
             'Kendala Teknis: Kemajuan Cryptocurrency, AI, dan DeFi terhambat oleh sistem kompleks yang menghalangi pengguna pada umumnya.',
@@ -56,6 +59,7 @@ export const projects: ProjectContent[] = [
       },
       solution: {
         title: 'Larutan',
+        image: '/images/projects/bitlauncher/solution-1.png',
         content: [
           [
             'Desain Intuitif: Bitcash menyederhanakan pengalaman blockchain dengan antarmuka yang intuitif, menghilangkan hambatan teknis terhadap mata uang kripto dan AI.',
@@ -73,6 +77,7 @@ export const projects: ProjectContent[] = [
       },
       businessModel: {
         title: 'Model bisnis',
+        image: '/images/projects/bitlauncher/business-model-1.png',
         content: [
           [
             'Ekosistem Token Utilitas: Menerapkan sistem token utilitas mint-and-burn dinamis yang menjadi pusat transaksi dan layanan, memastikan keseimbangan ekosistem.',
@@ -93,6 +98,7 @@ export const projects: ProjectContent[] = [
       },
       tokenomics: {
         title: 'Tokenomics',
+        image: '/images/projects/bitlauncher/tokenomics-1.png',
         content: [
           [
             'Sistem Token Ganda: Memanfaatkan token utilitas untuk transaksi dan layanan dalam Bitcash dan token tata kelola untuk pemungutan suara dan pengambilan keputusan oleh kontributor dan pemangku kepentingan.',
@@ -103,69 +109,10 @@ export const projects: ProjectContent[] = [
             'Model Distribusi yang Merata: Mengadopsi sistem distribusi yang adil, serupa dengan model pemegang saham tradisional, memastikan token mencerminkan nilai dan kontribusi nyata.',
             'Penilaian Token Transparan: Berfokus pada transparansi dan penciptaan nilai nyata dalam distribusi token, menghindari spekulasi untuk landasan ekonomi yang stabil.',
             'Partisipasi Tata Kelola: Memungkinkan pemegang token untuk terlibat dalam tata kelola, berkontribusi terhadap arah dan kebijakan platform, menekankan partisipasi demokratis.',
-            "Kemampuan Beradaptasi Ekonomi: Mempertahankan strategi tokennomics yang fleksibel, responsif terhadap kebutuhan komunitas dan platform yang terus berkembang akan ekonomi digital yang seimbang.",
+            'Kemampuan Beradaptasi Ekonomi: Mempertahankan strategi tokennomics yang fleksibel, responsif terhadap kebutuhan komunitas dan platform yang terus berkembang akan ekonomi digital yang seimbang.',
             'Visi Kemakmuran Bersama: Bertujuan untuk membangun ekonomi global baru di mana token Bitcash mendukung sistem inovasi, partisipasi, dan manfaat bersama, melampaui hambatan ekonomi tradisional.'
           ]
         ]
-      }
-    }
-  },
-
-  {
-    id: 2,
-    content: {
-      highlights: {
-        title: 'Highlights',
-        content: [[]]
-      },
-      product: {
-        title: 'Ikhtisar Produk',
-        content: [[]]
-      },
-      problem: {
-        title: 'Masalah',
-        content: [[]]
-      },
-      solution: {
-        title: 'Larutan',
-        content: [[]]
-      },
-      businessModel: {
-        title: 'Model bisnis',
-        content: [[]]
-      },
-      tokenomics: {
-        title: 'Tokenomics',
-        content: [[]]
-      }
-    }
-  },
-  {
-    id: 3,
-    content: {
-      highlights: {
-        title: 'Highlights',
-        content: [[]]
-      },
-      product: {
-        title: 'Ikhtisar Produk',
-        content: [[]]
-      },
-      problem: {
-        title: 'Masalah',
-        content: [[]]
-      },
-      solution: {
-        title: 'Larutan',
-        content: [[]]
-      },
-      businessModel: {
-        title: 'Model bisnis',
-        content: [[]]
-      },
-      tokenomics: {
-        title: 'Tokenomics',
-        content: [[]]
       }
     }
   }

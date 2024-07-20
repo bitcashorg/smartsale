@@ -9,6 +9,7 @@ import {
 } from 'eosio-signing-request'
 import pako from 'pako'
 import { appConfig } from './config'
+import { v4 as uuidv4 } from 'uuid'
 
 const eos = new APIClient({
   url: appConfig.eosRpc
@@ -24,9 +25,7 @@ export const esrOptions: SigningRequestEncodingOptions = {
   zlib: pako
 }
 
-export async function genLoginSigningRequest(
-  uuid: string = crypto.randomUUID()
-) {
+export async function genLoginSigningRequest(uuid: string = uuidv4()) {
   const req = createSignatureRequest({
     action: {
       account: appConfig.bitcash.accounts,
@@ -91,7 +90,7 @@ export async function genUsdtDepositSigningRequest(
       }
     },
     info: {
-      uuid: crypto.randomUUID(),
+      uuid: uuidv4(),
       appName: 'Bitlauncher',
       edit: {
         memo: false,
@@ -104,7 +103,7 @@ export async function genUsdtDepositSigningRequest(
 
 async function createSignatureRequest({
   info = {
-    uuid: crypto.randomUUID(),
+    uuid: uuidv4(),
     appName: 'Bitlauncher'
   },
   action

@@ -8,6 +8,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { formatAddress } from 'smartsale-lib'
 import { useAccount } from 'wagmi'
+import { v4 as uuidv4 } from 'uuid'
 
 export function NavLinks({
   mobile = false,
@@ -100,7 +101,7 @@ export function NavLinks({
 
     return (
       <Link
-        key={`${mobile ? 'mobile' : 'desktop'}-link-${link.href}-${crypto.randomUUID()}`}
+        key={`${mobile ? 'mobile' : 'desktop'}-link-${link.href}-${uuidv4()}`}
         shallow
         className="flex"
         href={`/${lang}${link.href}` || location.href}

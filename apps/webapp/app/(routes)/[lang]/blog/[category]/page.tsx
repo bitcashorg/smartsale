@@ -6,9 +6,10 @@ import {
   getPageSeoText
 } from '@/services/datocms'
 import { generateMetadataFromSEO } from '@/lib/seo'
-import { BlogSections } from '@/components/routes/blog/sections'
+import { BlogSections } from '@/components/routes/blog/blog-sections'
 import { Lang, locales } from '@/dictionaries/locales'
 import Image from 'next/image'
+import { BgHeader } from '@/components/shared/bg-header'
 
 export default async function Page(props: CategoryPageProps) {
   const {
@@ -23,22 +24,11 @@ export default async function Page(props: CategoryPageProps) {
 
   return (
     <>
-      <header className="relative flex flex-col py-10 bg-center bg-cover md:py-24">
-        <Image
-          className="absolute inset-0 object-cover bg-black bg-center bg-cover opacity-50 pointer-events-none"
-          src="/images/blog/temp-bg-concept.webp"
-          fill
-          alt={pageSeo.description}
-          priority
-        />
-
-        <h1 className="flex justify-center heading drop-shadow-md">
-          {pageSeo.description} <br />
-        </h1>
-        <h2 className="flex justify-center text-xl font-semibold drop-shadow-md">
-          Bitlauncher {pageSeo.title} Articles
-        </h2>
-      </header>
+      <BgHeader
+        heading={pageSeo.description}
+        subheading={`Bitlauncher ${pageSeo.title} Articles`}
+        imageSrc="/images/blog/temp-bg-concept.webp"
+      />
 
       <main className="narrow-container">
         <BlogSections sections={sections} lang={lang} category={category} />

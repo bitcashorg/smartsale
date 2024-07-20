@@ -12,7 +12,7 @@ export function getProjects(dict: any) {
 export const projects: Project[] = [
   {
     id: 1,
-    title: 'Bitcash | Bitlauncher',
+    title: 'Bitlauncher | Bitcash',
     slug: 'bitcash-bitlauncher',
     pitch: 'Building Ai & Crypto Apps For The New Global Economy.',
     fundraiseGoal: '$400,000',
@@ -87,13 +87,19 @@ export interface Project {
     | 'solution'
     | 'businessModel'
     | 'tokenomics',
-    Record<'title' | 'content', string | string[][]>
+    ContentSection
   >
   auctionId?: number
   token?: TokenContractData
   presaleOpen?: boolean
   registrationOpen?: boolean
   auctionClosed?: boolean
+}
+
+export interface ContentSection {
+  title: string
+  content: string | string[][]
+  image: string
 }
 
 export interface ProjectContent {
@@ -105,10 +111,9 @@ export interface ProjectContent {
     | 'solution'
     | 'businessModel'
     | 'tokenomics',
-    Record<'title' | 'content', string | string[][]>
+    ContentSection
   >
 }
-
 export type ProjectWithAuction = Required<
   Pick<Project, 'auctionId' | 'token'>
 > &
@@ -117,6 +122,7 @@ export type ProjectWithAuction = Required<
 export async function getProjectBySlug(slug: string, dict: any) {
   const project = projects.find(p => p.slug == slug)
   if (!project) return null
-  const content = dict.projects.find((c: any) => c.id == project.id)?.content
+  const content =
+    dict.projects.find((c: any) => c.id == project.id)?.content || {}
   return { ...project, content } as Project
 }

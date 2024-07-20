@@ -6,6 +6,8 @@ import { Lang } from '@/dictionaries/locales'
 import { Badge } from '@/components/ui/badge'
 import { Card, CardContent } from '@/components/ui/card'
 import { cn } from '@/lib/utils'
+import Balancer from 'react-wrap-balancer'
+import { Tag } from '@/components/shared/tag'
 
 export function Features({ lang, dict }: FeaturesProps) {
   return (
@@ -17,7 +19,7 @@ export function Features({ lang, dict }: FeaturesProps) {
         <div
           key={index}
           className={cn(
-            'mx-auto grid items-center gap-6 md:grid-cols-2 md:gap-20',
+            'mx-auto grid items-center gap-6 lg:grid-cols-2 lg:gap-20',
             index === 0 ? 'border-b border-muted pb-20' : 'pt-20'
           )}
         >
@@ -25,8 +27,10 @@ export function Features({ lang, dict }: FeaturesProps) {
             className={`flex flex-col justify-center space-y-4 text-left ${index % 2 === 1 ? 'lg:order-last' : ''}`}
           >
             <div className="space-y-2">
-              <Badge>{content.label}</Badge>
-              <h3 className="text-2xl font-bold">{content.title}</h3>
+              <Tag title={content.label} />
+              <h3 className="text-2xl font-bold">
+                <Balancer>{content.title}</Balancer>
+              </h3>
               <p className="text-gray-500 dark:text-gray-400">
                 {content.description}
               </p>
