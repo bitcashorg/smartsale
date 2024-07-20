@@ -1,5 +1,5 @@
 import { ProjectWithAuction } from '@/lib/projects'
-import { ProjectShare } from '../project/project-share'
+import { ProjectShare } from './project-share'
 import React, { ReactNode, Fragment } from 'react'
 
 interface ItemProps {
@@ -22,13 +22,19 @@ function ListItem({ label, value }: ItemProps) {
     <div className="flex justify-between w-full">
       <h3 className="flex justify-between w-full">
         <span className="opacity-70">{label}: </span>
-        <b>{typeof value === 'string' ? value : null}</b>
+        <b className="text-right">{typeof value === 'string' ? value : null}</b>
       </h3>
     </div>
   )
 }
 
-export function AuctionInfo({ project }: { project: ProjectWithAuction }) {
+export function ProjectInfo({
+  project,
+  presale = false
+}: {
+  project: ProjectWithAuction
+  presale?: boolean
+}) {
   const fields: Array<Array<ItemProps>> = [
     [
       { label: 'Presale', value: '7/30/24 - 8/31/24' },
@@ -47,15 +53,16 @@ export function AuctionInfo({ project }: { project: ProjectWithAuction }) {
     ]
   ]
 
+  const filteredFields = presale ? [fields[0]] : fields
   return (
-    <div className="grid items-center gap-x-10 gap-y-2 md:grid-cols-2">
-      {fields.map((items, k) => {
+    <>
+      {filteredFields.map((items, k) => {
         return React.isValidElement(items[0].value) ? (
           items[0].value
         ) : (
           <div
             key={k}
-            className="flex w-full min-w-[250px] flex-col rounded-sm bg-muted px-4 py-3 text-center"
+            className="flex w-full min-w-[250px] flex-col justify-evenly rounded-sm bg-muted px-4 py-3"
           >
             {items.map((item, ik) => (
               <Fragment key={ik}>
@@ -69,6 +76,6 @@ export function AuctionInfo({ project }: { project: ProjectWithAuction }) {
           </div>
         )
       })}
-    </div>
+    </>
   )
 }

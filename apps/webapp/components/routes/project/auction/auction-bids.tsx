@@ -8,7 +8,6 @@ import {
   TableHeader,
   TableRow
 } from '@/components/ui/table'
-import { useGlobalStore } from '@/hooks/use-global-store'
 import { ProjectWithAuction } from '@/lib/projects'
 import { cn } from '@/lib/utils'
 import { readContract, writeContract } from '@wagmi/core'
@@ -18,7 +17,8 @@ import { TestnetEasyAuction, TestnetUSDCred } from 'smartsale-contracts'
 import { toSmallestUnit } from 'smartsale-lib'
 import { Address } from 'viem'
 import { useAccount, useWriteContract } from 'wagmi'
-import { wagmiConfig } from '../../layout/providers'
+import { wagmiConfig } from '../../../layout/providers'
+import toast from 'react-hot-toast'
 
 const queueStartElement =
   '0x0000000000000000000000000000000000000000000000000000000000000001'
@@ -34,7 +34,6 @@ export function AuctionBids({ project }: AuctionBidsProps) {
       errorMessage: ''
     })
   )
-  const { errorMessage, setGlobalError } = useGlobalStore()
 
   const handleSubmit = async () => {
     if (!address) return
@@ -61,8 +60,7 @@ export function AuctionBids({ project }: AuctionBidsProps) {
         tokenAddress: TestnetUSDCred.address
       })
 
-    if (!isBalanceSufficient)
-      return setGlobalError('Insuficient USDCred Balance')
+    if (!isBalanceSufficient) return toast.error('Insuficient USDCred Balance')
 
     if (!isAllowanceSufficient) {
       await writeContract(wagmiConfig, {
@@ -131,11 +129,10 @@ export function AuctionBids({ project }: AuctionBidsProps) {
   // show error on modal
   useEffect(() => {
     const err = tanstack.error
-    if (!err || !('shortMessage' in err) || err.shortMessage === errorMessage)
-      return
-    setGlobalError(err.shortMessage)
+    if (!err || !('shortMessage' in err)) return
+    toast.error(err.shortMessage)
     tanstack.reset()
-  }, [tanstack, errorMessage, setGlobalError])
+  }, [tanstack])
 
   return (
     <div className="grid gap-5 md:grid-cols-2 md:gap-10">

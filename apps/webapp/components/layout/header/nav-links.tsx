@@ -46,14 +46,7 @@ export function NavLinks({
           : openAccountModal && openAccountModal(),
       disabled: !bitcashAccount
     },
-    {
-      id: 'wallet',
-      href: '/wallet',
-      text: dict.nav.wallet,
-      mobile: true,
-      action: null,
-      disabled: !appConfig.features.enableWalletAccess
-    },
+
     {
       id: 'about',
       href: '/learn/batch-auctions',
@@ -77,6 +70,14 @@ export function NavLinks({
       mobile: false,
       action: null,
       disabled: false
+    },
+    {
+      id: 'wallet',
+      href: '/wallet',
+      text: dict.nav.wallet,
+      mobile: false,
+      action: null,
+      disabled: !appConfig.features.enableWalletAccess
     },
     {
       id: 'blog',

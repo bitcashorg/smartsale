@@ -1,12 +1,12 @@
 import { smartsaleEnv } from 'smartsale-env'
 import { stringify } from 'viem/utils'
 import { createFirehoseSubscription } from '~/lib/dfuse-client'
-import { issueTokens } from './cred-issuer'
+import { issueTokens } from './presale-issuer'
 
 // https://docs.dfuse.eosnation.io/platform/public-apis/search-query-language/
 // https://docs.dfuse.eosnation.io/eosio/public-apis/reference/search/terms/
 // receiver: means the account with code that has executed the action.
-export async function listenToEosTransfers(env: 'test' | 'prod' = 'test') {
+export async function listenToEosContributions(env: 'test' | 'prod' = 'test') {
   const usdt = smartsaleEnv[env].usdt.find((t) => (t.chainType = 'antelope'))?.address
   const bank = smartsaleEnv[env].bitcash.bank
   const launchpad = smartsaleEnv[env].smartsale.bk

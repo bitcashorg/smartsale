@@ -9,7 +9,7 @@ import { useQuery } from '@tanstack/react-query'
 import { useSession } from '@/hooks/use-session'
 import { Button, ButtonProps, buttonVariants } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
-import { preSaleInsertSchema } from '@repo/supabase'
+import { presaleInsertSchema } from '@repo/supabase'
 import { useSupabaseClient } from '@/services/supabase'
 
 export const RegisterAddressForm: FunctionComponent<{ projectId: number }> = ({
@@ -25,7 +25,7 @@ export const RegisterAddressForm: FunctionComponent<{ projectId: number }> = ({
     enabled: Boolean(session), // only fetch if logged in
     queryFn: async () => {
       const { data, error } = await supabase
-        .from('pre_sale')
+        .from('presale')
         .select()
         .eq('project_id', projectId)
         .eq('account', session!.account!) // we know for sure
@@ -43,7 +43,7 @@ export const RegisterAddressForm: FunctionComponent<{ projectId: number }> = ({
       project_id: parseInt(o.project_id, 10)
     }
     // validate input
-    preSaleInsertSchema.safeParse(data)
+    presaleInsertSchema.safeParse(data)
 
     return registerAddress(formData)
   })
@@ -70,7 +70,7 @@ export const RegisterAddressForm: FunctionComponent<{ projectId: number }> = ({
 
   return registration.data || state.value ? (
     <RegisterButton
-      text={`You are registered with address ${formatAddress(registration.data?.address || address!)}`}
+      text={`${formatAddress(registration.data?.address || address!)} is registered!`}
     />
   ) : (
     <form action={submitForm} className="flex justify-center">
@@ -96,7 +96,7 @@ function RegisterButton(props: ButtonProps & { text: string }) {
           variant: 'outline',
           radius: 'full'
         }),
-        'mx-auto mt-4 h-auto whitespace-normal border border-solid border-accent-secondary bg-background px-10 py-2'
+        'flex h-auto whitespace-normal border border-solid border-accent-secondary bg-background px-5'
       )}
       {...props}
     >

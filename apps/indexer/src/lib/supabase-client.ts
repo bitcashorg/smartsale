@@ -5,8 +5,8 @@ import { appenv } from '~/config'
 // Initialize Supabase client
 const supabase = createClient<Database>(appenv.supabase.url, appenv.supabase.anonKey)
 
-export async function upsertAuctionDetail(data: TablesInsert<'auction_details'>) {
-  const { data: result, error } = await supabase.from('auction_details').upsert(
+export async function upsertAuctionDetail(data: TablesInsert<'auction'>) {
+  const { data: result, error } = await supabase.from('auction').upsert(
     [
       {
         ...data,
@@ -24,8 +24,8 @@ export async function upsertAuctionDetail(data: TablesInsert<'auction_details'>)
   return data
 }
 
-export async function upsertOrder(data: TablesInsert<'orders'>) {
-  const { data: result, error } = await supabase.from('orders').upsert(
+export async function upsertOrder(data: TablesInsert<'order'>) {
+  const { data: result, error } = await supabase.from('order').upsert(
     [
       {
         ...data,

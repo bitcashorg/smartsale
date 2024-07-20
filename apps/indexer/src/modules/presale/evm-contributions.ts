@@ -8,7 +8,7 @@ import { smartsaleChains } from 'smartsale-env'
 
 const tokens: EVMTokenContractData[] = [SepoliaUSDT, TestnetUSDT]
 
-export async function listenToEvmTransfers() {
+export async function listenToEvmContributions() {
   console.log('subscribing to evm usdt transfers ...')
   tokens.map(listenToEvmTransfersFn)
 }

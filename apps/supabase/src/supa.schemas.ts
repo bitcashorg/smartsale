@@ -14,7 +14,7 @@ export const jsonSchema: z.ZodSchema<Json> = z.lazy(() =>
     .nullable(),
 );
 
-export const auctionDetailsRowSchema = z.object({
+export const auctionRowSchema = z.object({
   address_auctioning_token: z.string().nullable(),
   address_bidding_token: z.string().nullable(),
   allow_list_manager: z.string().nullable(),
@@ -42,7 +42,7 @@ export const auctionDetailsRowSchema = z.object({
   usd_amount_traded: z.number().nullable(),
 });
 
-export const auctionDetailsInsertSchema = z.object({
+export const auctionInsertSchema = z.object({
   address_auctioning_token: z.string().optional().nullable(),
   address_bidding_token: z.string().optional().nullable(),
   allow_list_manager: z.string().optional().nullable(),
@@ -70,7 +70,7 @@ export const auctionDetailsInsertSchema = z.object({
   usd_amount_traded: z.number().optional().nullable(),
 });
 
-export const auctionDetailsUpdateSchema = z.object({
+export const auctionUpdateSchema = z.object({
   address_auctioning_token: z.string().optional().nullable(),
   address_bidding_token: z.string().optional().nullable(),
   allow_list_manager: z.string().optional().nullable(),
@@ -98,7 +98,7 @@ export const auctionDetailsUpdateSchema = z.object({
   usd_amount_traded: z.number().optional().nullable(),
 });
 
-export const auctionDetailsRelationshipsSchema = z.tuple([]);
+export const auctionRelationshipsSchema = z.tuple([]);
 
 export const esrRowSchema = z.object({
   account: z.string().nullable(),
@@ -126,7 +126,24 @@ export const esrUpdateSchema = z.object({
 
 export const esrRelationshipsSchema = z.tuple([]);
 
-export const ordersRowSchema = z.object({
+export const indexerRowSchema = z.object({
+  id: z.number(),
+  last_indexed_block: z.string(),
+});
+
+export const indexerInsertSchema = z.object({
+  id: z.number().optional(),
+  last_indexed_block: z.string(),
+});
+
+export const indexerUpdateSchema = z.object({
+  id: z.number().optional(),
+  last_indexed_block: z.string().optional(),
+});
+
+export const indexerRelationshipsSchema = z.tuple([]);
+
+export const orderRowSchema = z.object({
   auction_id: z.number(),
   buy_amount: z.number(),
   created_at: z.string(),
@@ -138,7 +155,7 @@ export const ordersRowSchema = z.object({
   volume: z.number().nullable(),
 });
 
-export const ordersInsertSchema = z.object({
+export const orderInsertSchema = z.object({
   auction_id: z.number(),
   buy_amount: z.number(),
   created_at: z.string().optional(),
@@ -150,7 +167,7 @@ export const ordersInsertSchema = z.object({
   volume: z.number().optional().nullable(),
 });
 
-export const ordersUpdateSchema = z.object({
+export const orderUpdateSchema = z.object({
   auction_id: z.number().optional(),
   buy_amount: z.number().optional(),
   created_at: z.string().optional(),
@@ -162,9 +179,9 @@ export const ordersUpdateSchema = z.object({
   volume: z.number().optional().nullable(),
 });
 
-export const ordersRelationshipsSchema = z.tuple([]);
+export const orderRelationshipsSchema = z.tuple([]);
 
-export const preSaleRowSchema = z.object({
+export const presaleRowSchema = z.object({
   account: z.string().nullable(),
   address: z.string().nullable(),
   created_at: z.string(),
@@ -173,7 +190,7 @@ export const preSaleRowSchema = z.object({
   signature: z.string().nullable(),
 });
 
-export const preSaleInsertSchema = z.object({
+export const presaleInsertSchema = z.object({
   account: z.string().optional().nullable(),
   address: z.string().optional().nullable(),
   created_at: z.string().optional(),
@@ -182,7 +199,7 @@ export const preSaleInsertSchema = z.object({
   signature: z.string().optional().nullable(),
 });
 
-export const preSaleUpdateSchema = z.object({
+export const presaleUpdateSchema = z.object({
   account: z.string().optional().nullable(),
   address: z.string().optional().nullable(),
   created_at: z.string().optional(),
@@ -191,7 +208,30 @@ export const preSaleUpdateSchema = z.object({
   signature: z.string().optional().nullable(),
 });
 
-export const preSaleRelationshipsSchema = z.tuple([]);
+export const presaleRelationshipsSchema = z.tuple([]);
+
+export const projectRowSchema = z.object({
+  created_at: z.string(),
+  id: z.number(),
+  name: z.string().nullable(),
+  pitch: z.string().nullable(),
+});
+
+export const projectInsertSchema = z.object({
+  created_at: z.string().optional(),
+  id: z.number().optional(),
+  name: z.string().optional().nullable(),
+  pitch: z.string().optional().nullable(),
+});
+
+export const projectUpdateSchema = z.object({
+  created_at: z.string().optional(),
+  id: z.number().optional(),
+  name: z.string().optional().nullable(),
+  pitch: z.string().optional().nullable(),
+});
+
+export const projectRelationshipsSchema = z.tuple([]);
 
 export const sessionRowSchema = z.object({
   account: z.string(),
@@ -219,7 +259,7 @@ export const sessionUpdateSchema = z.object({
 
 export const sessionRelationshipsSchema = z.tuple([]);
 
-export const transfersRowSchema = z.object({
+export const transferRowSchema = z.object({
   amount: z.number().nullable(),
   chain_id: z.number().nullable(),
   created_at: z.string(),
@@ -231,7 +271,7 @@ export const transfersRowSchema = z.object({
   usdcred_trx: z.string().nullable(),
 });
 
-export const transfersInsertSchema = z.object({
+export const transferInsertSchema = z.object({
   amount: z.number().optional().nullable(),
   chain_id: z.number().optional().nullable(),
   created_at: z.string().optional(),
@@ -243,7 +283,7 @@ export const transfersInsertSchema = z.object({
   usdcred_trx: z.string().optional().nullable(),
 });
 
-export const transfersUpdateSchema = z.object({
+export const transferUpdateSchema = z.object({
   amount: z.number().optional().nullable(),
   chain_id: z.number().optional().nullable(),
   created_at: z.string().optional(),
@@ -255,27 +295,27 @@ export const transfersUpdateSchema = z.object({
   usdcred_trx: z.string().optional().nullable(),
 });
 
-export const transfersRelationshipsSchema = z.tuple([]);
+export const transferRelationshipsSchema = z.tuple([]);
 
-export const usersRowSchema = z.object({
+export const userRowSchema = z.object({
   address: z.string(),
   created_at: z.string(),
   id: z.number(),
 });
 
-export const usersInsertSchema = z.object({
+export const userInsertSchema = z.object({
   address: z.string(),
   created_at: z.string().optional(),
   id: z.number(),
 });
 
-export const usersUpdateSchema = z.object({
+export const userUpdateSchema = z.object({
   address: z.string().optional(),
   created_at: z.string().optional(),
   id: z.number().optional(),
 });
 
-export const usersRelationshipsSchema = z.tuple([]);
+export const userRelationshipsSchema = z.tuple([]);
 
 export const whitelistRowSchema = z.object({
   account: z.string(),

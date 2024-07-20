@@ -39,7 +39,7 @@ export function ProjectHeader({
 
         {appConfig.features.presale ? <ProjectPills project={project} /> : null}
 
-        {children}
+        <div className="container">{children}</div>
       </section>
     </header>
   )

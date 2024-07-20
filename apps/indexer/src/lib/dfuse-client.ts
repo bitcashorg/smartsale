@@ -46,8 +46,8 @@ export async function createFirehoseSubscription(query: string) {
     if (message.type === 'data') {
       const transfer = message.data.searchTransactionsForward.trace
       const data = {
-        trxId: transfer.id,
-        actions: transfer.matchingActions.map(({ json }: any) => json),
+        trxId: transfer.id as string,
+        actions: transfer.matchingActions.map(({ json }: any) => json) as {}[],
       }
       eventEmitter.emit('data', data)
       console.log('Token Transfer:', JSON.stringify(data))
