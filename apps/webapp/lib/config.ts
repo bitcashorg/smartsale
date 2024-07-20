@@ -11,6 +11,7 @@ export const appConfig = {
     newNavStruct: process.env.NEXT_PUBLIC_FEAT_NEW_NAV_STRUCT === 'true',
     presale: process.env.NEXT_PUBLIC_FEAT_PRESALE === 'true',
     sections: process.env.NEXT_PUBLIC_NEW_SECTIONS === 'true',
+    learn: process.env.NEXT_PUBLIC_LEARN_SECTION === 'true',
     i18n: process.env.NEXT_PUBLIC_NEW_I18N === 'true',
     explorations: process.env.NEXT_PUBLIC_EXPLORATIONS === 'true'
   },
