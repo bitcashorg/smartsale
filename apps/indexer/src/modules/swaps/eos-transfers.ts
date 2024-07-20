@@ -1,6 +1,6 @@
 import { smartsaleEnv } from 'smartsale-env'
 import { stringify } from 'viem/utils'
-import { createFirehoseSubscription } from './dfuse-client'
+import { createFirehoseSubscription } from '~/lib/dfuse-client'
 import { issueTokens } from './cred-issuer'
 
 // https://docs.dfuse.eosnation.io/platform/public-apis/search-query-language/
@@ -19,10 +19,10 @@ export async function listenToEosTransfers(env: 'test' | 'prod' = 'test') {
   )
 
   // only first action for now
-  usdtDeposits.on('data', ({ trxId, actions }) =>
+  usdtDeposits.on('data', ({ trxId, actions }: any) =>
     handleDeposit({ trxId, from: actions[0].from, quantity: actions[0].quantity }),
   )
-  bitusdDeposits.on('data', ({ trxId, actions }) =>
+  bitusdDeposits.on('data', ({ trxId, actions }: any) =>
     handleDeposit({ trxId, from: actions[0].from, quantity: actions[0].quantity.quantity }),
   )
 }
