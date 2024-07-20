@@ -24,7 +24,7 @@ export function TransactionsTable() {
     if (!address) return
     const fetchOrders = async (address: Address) => {
       const { data, error } = await supabase
-        .from('transfers')
+        .from('transfer')
         .select('*')
         .eq('from', address)
         .order('created_at', { ascending: false })
