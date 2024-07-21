@@ -1,4 +1,4 @@
-import { EVMContractData } from "./types";
+import { EVMContractData } from "../types";
 
 export const TestnetEasyAuction: EVMContractData = {
   address: "0x8d37219725eB0088360f744A5d894035D0f88F82",
