@@ -1,11 +1,11 @@
-import { EVMTokenContractData } from "./types";
+import { EVMTokenContractData } from "../types";
 
-export const TestnetMBOTSPL: EVMTokenContractData = {
-  address: "0x357752b66961021524b44523cD90a8B3861803E5",
-  name: "MBOTS Prelaunch Token",
-  symbol: "MBOTSPL",
+export const TestnetUSDCred: EVMTokenContractData = {
+  address: "0x1d5A4C37e60cAd0C72c057E3c191352429cDB38e",
+  name: "USD Credit Token",
+  symbol: "USDCred",
   decimals: 6,
-  indexFromBlock: 30303655,
+  indexFromBlock: 30294882,
   chainId: 15557,
   chainType: "evm",
   chainName: "EOS EVM Tesnet",
@@ -392,5 +392,5 @@ export const TestnetMBOTSPL: EVMTokenContractData = {
       stateMutability: "nonpayable",
       type: "function",
     },
-  ],
-};
+  ] as const,
+} as const;

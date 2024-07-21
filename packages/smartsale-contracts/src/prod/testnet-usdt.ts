@@ -1,12 +1,12 @@
-import { EVMTokenContractData } from "./types";
+import { EVMTokenContractData } from "../types";
 
-export const TestnetUSDCred: EVMTokenContractData = {
-  address: "0x1d5A4C37e60cAd0C72c057E3c191352429cDB38e",
-  name: "USD Credit Token",
-  symbol: "USDCred",
+export const TestnetUSDT: EVMTokenContractData = {
+  address: "0xE561021FCB5FFB86b439ae9e6AeCE0370e2394eC",
+  name: "USDT (testing)",
+  symbol: "USDT",
   decimals: 6,
-  indexFromBlock: 30294882,
-  chainId: 15557,
+  indexFromBlock: 30051449,
+  chainId: 15557, // eos_evm
   chainType: "evm",
   chainName: "EOS EVM Tesnet",
   abi: [
@@ -44,25 +44,6 @@ export const TestnetUSDCred: EVMTokenContractData = {
         },
       ],
       name: "Approval",
-      type: "event",
-    },
-    {
-      anonymous: false,
-      inputs: [
-        {
-          indexed: true,
-          internalType: "address",
-          name: "previousOwner",
-          type: "address",
-        },
-        {
-          indexed: true,
-          internalType: "address",
-          name: "newOwner",
-          type: "address",
-        },
-      ],
-      name: "OwnershipTransferred",
       type: "event",
     },
     {
@@ -158,19 +139,6 @@ export const TestnetUSDCred: EVMTokenContractData = {
       type: "function",
     },
     {
-      inputs: [
-        {
-          internalType: "uint256",
-          name: "amount",
-          type: "uint256",
-        },
-      ],
-      name: "burn",
-      outputs: [],
-      stateMutability: "nonpayable",
-      type: "function",
-    },
-    {
       inputs: [],
       name: "decimals",
       outputs: [
@@ -250,24 +218,6 @@ export const TestnetUSDCred: EVMTokenContractData = {
       type: "function",
     },
     {
-      inputs: [
-        {
-          internalType: "address",
-          name: "recipient",
-          type: "address",
-        },
-        {
-          internalType: "uint256",
-          name: "amount",
-          type: "uint256",
-        },
-      ],
-      name: "issue",
-      outputs: [],
-      stateMutability: "nonpayable",
-      type: "function",
-    },
-    {
       inputs: [],
       name: "name",
       outputs: [
@@ -278,26 +228,6 @@ export const TestnetUSDCred: EVMTokenContractData = {
         },
       ],
       stateMutability: "view",
-      type: "function",
-    },
-    {
-      inputs: [],
-      name: "owner",
-      outputs: [
-        {
-          internalType: "address",
-          name: "",
-          type: "address",
-        },
-      ],
-      stateMutability: "view",
-      type: "function",
-    },
-    {
-      inputs: [],
-      name: "renounceOwnership",
-      outputs: [],
-      stateMutability: "nonpayable",
       type: "function",
     },
     {
@@ -376,19 +306,6 @@ export const TestnetUSDCred: EVMTokenContractData = {
           type: "bool",
         },
       ],
-      stateMutability: "nonpayable",
-      type: "function",
-    },
-    {
-      inputs: [
-        {
-          internalType: "address",
-          name: "newOwner",
-          type: "address",
-        },
-      ],
-      name: "transferOwnership",
-      outputs: [],
       stateMutability: "nonpayable",
       type: "function",
     },
