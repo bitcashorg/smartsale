@@ -24,14 +24,16 @@ export function ProjectPills({ project }: { project: Project }) {
   ]
 
   return (
-    <div className="z-10 mb-6 flex gap-2 md:gap-6">
-      {links.map(l => (
-        <Link href={l.href} shallow>
+    <div className="z-10 flex gap-2 mb-6 md:gap-6">
+      {links.map((l, index) => (
+        <Link href={l.href} shallow key={`${l.label}-${index}`}>
           <Button
             variant={'outline'}
             className={cn(
               'hover:bg-white/50 md:min-w-[150px]',
-              pathname === l.href ? 'bg-white/50 text-black/90' : null
+              pathname.replace('/en', '') === l.href
+                ? 'bg-white/50 text-black/90'
+                : null
             )}
           >
             {l.label}

@@ -30,9 +30,9 @@ import {
 } from 'smartsale-contracts'
 import { parseUnits } from 'viem'
 import { useAccount, useSwitchChain, useWriteContract } from 'wagmi'
-import { useGlobalStore } from '@/hooks/use-global-store'
 import { appConfig } from '@/lib/config'
 import { cn } from '@/lib/utils'
+import toast from 'react-hot-toast'
 
 const usdtMap = new Map<string, TokenContractData>()
 appConfig.usdt.forEach(t => {
@@ -43,16 +43,14 @@ appConfig.usdt.forEach(t => {
 export function DepositCard() {
   const { address } = useAccount()
   const { writeContract, ...other } = useWriteContract()
-  const { setGlobalError } = useGlobalStore()
   const [amount, setAmount] = useState<number>(42)
   const { switchChain } = useSwitchChain()
   const [token, setToken] = useState<TokenContractData>(TestnetUSDT)
   const { requestSignature } = useSigningRequest()
 
   const deposit = async () => {
-    if (!address)
-      return setGlobalError('Make sure your evm wallet is connected.')
-    if (!amount) return setGlobalError('Amount is undefined')
+    if (!address) return toast.error('Make sure your evm wallet is connected.')
+    if (!amount) return toast.error('Amount is undefined')
 
     if (token.chainType === 'evm') {
       const evmToken = token as EVMTokenContractData

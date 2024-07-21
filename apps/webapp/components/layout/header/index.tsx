@@ -1,8 +1,7 @@
 import Link from 'next/link'
 import * as React from 'react'
-import { IconBitlauncher, IconDiscord } from '../../ui/icons'
-import { Button, buttonVariants } from '@/components/ui/button'
-import { cn } from '@/lib/utils'
+import { IconBitlauncher } from '../../ui/icons'
+import { Button } from '@/components/ui/button'
 import { NavLinks } from './nav-links'
 
 import dynamic from 'next/dynamic'
@@ -65,26 +64,6 @@ const DynamicSessionButton = dynamic(
     ssr: false
   }
 )
-
-function DiscordButton() {
-  return (
-    <Link
-      href="https://discord.gg/KuR48XUxnG"
-      target="_blank"
-      rel="noopener noreferrer"
-      className={cn(
-        buttonVariants({
-          variant: 'outline',
-          radius: 'full'
-        }),
-        'border-transparent md:border-accent-secondary md:px-3 lg:px-10'
-      )}
-    >
-      <IconDiscord className={'block size-7 fill-accent-secondary md:hidden'} />
-      <span className="hidden md:block">Discord</span>
-    </Link>
-  )
-}
 
 interface HeaderProps extends LangProp {
   dict: any

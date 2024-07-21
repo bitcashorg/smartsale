@@ -2,7 +2,6 @@ import '@/app/globals.css'
 import Footer from '@/components/layout/footer/footer'
 import { Header } from '@/components/layout/header'
 import { Providers } from '@/components/layout/providers'
-import { GlobalStoreProvider } from '@/hooks/use-global-store'
 import { cn } from '@/lib/utils'
 import { GoogleAnalytics } from '@next/third-parties/google'
 import '@rainbow-me/rainbowkit/styles.css'
@@ -14,9 +13,10 @@ import { locales } from '@/dictionaries/locales'
 import { Analytics } from '@vercel/analytics/react'
 import { CommonPageParams } from '@/types/routing.type'
 import { getDictionary } from '@/dictionaries'
-import '../../globals.css'
 import type { Viewport } from 'next'
 import { isMobile } from 'react-device-detect'
+import { Toaster } from 'react-hot-toast'
+import '../../globals.css'
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -40,27 +40,25 @@ export default async function RootLayout({
       style={{ width: '100vw', maxWidth: '100vw' }}
     >
       <body style={{ width: '100vw', maxWidth: '100vw' }}>
-        <GlobalStoreProvider>
-          <Providers
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
+        <Providers
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Header lang={params.lang} dict={dict} />
+          <Toaster />
+          <main
+            className={cn(
+              'flex w-full max-w-[100vw] flex-1 flex-col',
+              isMobile && 'overflow-hidden'
+            )}
           >
-            <Header lang={params.lang} dict={dict} />
-            {/* <Toaster /> */}
-            <main
-              className={cn(
-                'flex w-full max-w-[100vw] flex-1 flex-col',
-                isMobile && 'overflow-hidden'
-              )}
-            >
-              {children}
-            </main>
-            <Footer params={params} />
-            <DynamicSessionDialog />
-          </Providers>
-        </GlobalStoreProvider>
+            {children}
+          </main>
+          <Footer params={params} />
+          <DynamicSessionDialog />
+        </Providers>
 
         <GoogleAnalytics gaId="G-78N0Z7NPQJ" />
         <Analytics />

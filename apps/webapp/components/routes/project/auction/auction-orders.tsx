@@ -34,7 +34,7 @@ export function AuctionOrders() {
     const fetchOrders = async (userId: number) => {
       // console.log('fetch orders...')
       const { data, error } = await supabase
-        .from('orders')
+        .from('order')
         .select('*')
         .eq('user_id', userId)
         .order('created_at', { ascending: false })

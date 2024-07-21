@@ -23,16 +23,16 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 
   return (
     <>
-      <div className="flex min-h-[calc(83vh-4rem)] flex-col">
+      <div className="flex flex-col">
         <ProjectHeader project={project}>
-          <div className="flex flex-col gap-8 lg:flex-row">
-            <Card className="w-full pb-10 border-card/30 bg-card/60 backdrop-blur-lg">
+          <div className="grid grid-cols-1 gap-8 mb-10 lg:grid-cols-2">
+            <Card className="flex flex-col w-full pb-5 border-card/30 bg-card/60 backdrop-blur-lg">
               <Countdown />
-              <div className="flex items-center justify-center gap-6 align-center">
+              <div className="flex items-center justify-center gap-3 align-center">
                 <DynamicAddressForm projectId={project.id} />
 
                 {appConfig.features.presale ? (
-                  <Link href={`/${project.slug}/presale`}>
+                  <Link href={`/${project.slug}/presale`} className="flex">
                     <Button>Active Presale</Button>
                   </Link>
                 ) : null}
@@ -142,6 +142,6 @@ const DynamicAddressForm = dynamic(
     ),
   {
     ssr: false,
-    loading: () => <Button>Register</Button>
+    loading: () => <Button className="flex">Register</Button>
   }
 )

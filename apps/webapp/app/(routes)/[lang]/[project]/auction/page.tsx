@@ -1,7 +1,7 @@
 import { getDictionary } from '@/dictionaries'
 import { Lang, locales } from '@/dictionaries/locales'
-import { AuctionBids } from '@/components/routes/auction/auction-bids'
-import { AuctionDataCard } from '@/components/routes/auction/auction-data-card'
+import { AuctionBids } from '@/components/routes/project/auction/auction-bids'
+import { AuctionDataCard } from '@/components/routes/project/auction/auction-data-card'
 import { ProjectHeader } from '@/components/routes/project/project-header'
 import { ProjectPresaleData } from '@/components/routes/project/project-presale-data'
 import { Countdown } from '@/components/shared/countdown'
@@ -29,7 +29,7 @@ export default async function AuctionPage({ params }: ProjectPageProps) {
     <div className="flex min-h-[calc(83vh-4rem)] flex-col">
       <ProjectHeader project={project}>
         <div className="container">
-          <div className="flex gap-8 mb-10">
+          <div className="grid grid-cols-1 gap-8 mb-10 lg:grid-cols-2">
             <Card className="border-card/30 bg-card/60 backdrop-blur-lg">
               <Countdown />
               <CardContent>

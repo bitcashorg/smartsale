@@ -18,7 +18,7 @@ export default async function Footer({ params }: { params: { lang: Lang } }) {
       <div className="narrow-container">
         {/* Call to action, how it works sections */}
         <Participate lang={params.lang} dict={dict} />
-        {appConfig.features.sections ? (
+        {appConfig.features.learn ? (
           <>
             <LearnSection />
           </>

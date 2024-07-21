@@ -41,11 +41,11 @@ export function BlogSections({
               <div className="grid w-full grid-cols-[repeat(auto-fill,minmax(250px,1fr))] flex-col gap-5 py-5 sm:flex-wrap">
                 {section?.articles
                   // ?.slice(0, 4)
-                  ?.map(post => (
+                  ?.map((post, index) => (
                     <ArticleCard
                       post={post}
                       sectionSlug={category || section.slug}
-                      key={post.id}
+                      key={post.id + '-' + index}
                       lang={lang}
                       meta={true}
                     />

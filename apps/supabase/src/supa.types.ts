@@ -9,7 +9,7 @@ export type Json =
 export type Database = {
   public: {
     Tables: {
-      auction_details: {
+      auction: {
         Row: {
           address_auctioning_token: string | null
           address_bidding_token: string | null
@@ -117,7 +117,22 @@ export type Database = {
         }
         Relationships: []
       }
-      orders: {
+      indexer: {
+        Row: {
+          id: number
+          last_indexed_block: string
+        }
+        Insert: {
+          id?: number
+          last_indexed_block: string
+        }
+        Update: {
+          id?: number
+          last_indexed_block?: string
+        }
+        Relationships: []
+      }
+      order: {
         Row: {
           auction_id: number
           buy_amount: number
@@ -153,7 +168,7 @@ export type Database = {
         }
         Relationships: []
       }
-      pre_sale: {
+      presale: {
         Row: {
           account: string | null
           address: string | null
@@ -177,6 +192,27 @@ export type Database = {
           id?: number
           project_id?: number | null
           signature?: string | null
+        }
+        Relationships: []
+      }
+      project: {
+        Row: {
+          created_at: string
+          id: number
+          name: string | null
+          pitch: string | null
+        }
+        Insert: {
+          created_at?: string
+          id?: number
+          name?: string | null
+          pitch?: string | null
+        }
+        Update: {
+          created_at?: string
+          id?: number
+          name?: string | null
+          pitch?: string | null
         }
         Relationships: []
       }
@@ -204,7 +240,7 @@ export type Database = {
         }
         Relationships: []
       }
-      transfers: {
+      transfer: {
         Row: {
           amount: number | null
           chain_id: number | null
@@ -240,7 +276,7 @@ export type Database = {
         }
         Relationships: []
       }
-      users: {
+      user: {
         Row: {
           address: string
           created_at: string

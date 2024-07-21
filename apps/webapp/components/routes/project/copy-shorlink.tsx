@@ -5,13 +5,14 @@ import { LucideCheck, LucideLoader2, LucideShare, LucideX } from 'lucide-react'
 
 import { generateShortLink } from '@/actions'
 import { useSession } from '@/hooks/use-session'
+import { useParams } from 'next/navigation'
 
 export function CopyShortlinkIcon() {
   const [status, setStatus] = useState<
     'default' | 'loading' | 'copied' | 'error'
   >('default')
   const { session } = useSession()
-  const existingParams = window.location.search // Get existing query parameters
+  const existingParams = useParams() // Get existing query parameters
   const param = session
     ? `${existingParams ? '&' : '?'}referrer=${session.account}`
     : ''
@@ -20,7 +21,7 @@ export function CopyShortlinkIcon() {
     setStatus('loading')
     try {
       const { data, error } = await generateShortLink(
-        window.location.pathname + param
+        'https://bitlauncher.ai' + window.location.pathname + param
       )
       if (error || !data) throw new Error(error?.message || 'Unknown error')
       navigator.clipboard.writeText(data.shortLink)
