@@ -1,14 +1,14 @@
-import { EVMTokenContractData } from "./types";
+import { EVMTokenContractData } from "../types";
 
-export const SepoliaUSDT: EVMTokenContractData = {
-  address: "0x5b148580635e8b67184bcb496741e423f2c326bf",
-  name: "USDT Token",
-  symbol: "USDT",
+export const TestnetUSDCred: EVMTokenContractData = {
+  address: "0x1d5A4C37e60cAd0C72c057E3c191352429cDB38e",
+  name: "USD Credit Token",
+  symbol: "USDCred",
   decimals: 6,
-  indexFromBlock: 5394842,
-  chainId: 11155111, // sepolia
+  indexFromBlock: 30294882,
+  chainId: 15557,
   chainType: "evm",
-  chainName: "Sepolia",
+  chainName: "EOS EVM Tesnet",
   abi: [
     {
       inputs: [
@@ -44,6 +44,25 @@ export const SepoliaUSDT: EVMTokenContractData = {
         },
       ],
       name: "Approval",
+      type: "event",
+    },
+    {
+      anonymous: false,
+      inputs: [
+        {
+          indexed: true,
+          internalType: "address",
+          name: "previousOwner",
+          type: "address",
+        },
+        {
+          indexed: true,
+          internalType: "address",
+          name: "newOwner",
+          type: "address",
+        },
+      ],
+      name: "OwnershipTransferred",
       type: "event",
     },
     {
@@ -139,6 +158,19 @@ export const SepoliaUSDT: EVMTokenContractData = {
       type: "function",
     },
     {
+      inputs: [
+        {
+          internalType: "uint256",
+          name: "amount",
+          type: "uint256",
+        },
+      ],
+      name: "burn",
+      outputs: [],
+      stateMutability: "nonpayable",
+      type: "function",
+    },
+    {
       inputs: [],
       name: "decimals",
       outputs: [
@@ -218,6 +250,24 @@ export const SepoliaUSDT: EVMTokenContractData = {
       type: "function",
     },
     {
+      inputs: [
+        {
+          internalType: "address",
+          name: "recipient",
+          type: "address",
+        },
+        {
+          internalType: "uint256",
+          name: "amount",
+          type: "uint256",
+        },
+      ],
+      name: "issue",
+      outputs: [],
+      stateMutability: "nonpayable",
+      type: "function",
+    },
+    {
       inputs: [],
       name: "name",
       outputs: [
@@ -228,6 +278,26 @@ export const SepoliaUSDT: EVMTokenContractData = {
         },
       ],
       stateMutability: "view",
+      type: "function",
+    },
+    {
+      inputs: [],
+      name: "owner",
+      outputs: [
+        {
+          internalType: "address",
+          name: "",
+          type: "address",
+        },
+      ],
+      stateMutability: "view",
+      type: "function",
+    },
+    {
+      inputs: [],
+      name: "renounceOwnership",
+      outputs: [],
+      stateMutability: "nonpayable",
       type: "function",
     },
     {
@@ -306,6 +376,19 @@ export const SepoliaUSDT: EVMTokenContractData = {
           type: "bool",
         },
       ],
+      stateMutability: "nonpayable",
+      type: "function",
+    },
+    {
+      inputs: [
+        {
+          internalType: "address",
+          name: "newOwner",
+          type: "address",
+        },
+      ],
+      name: "transferOwnership",
+      outputs: [],
       stateMutability: "nonpayable",
       type: "function",
     },

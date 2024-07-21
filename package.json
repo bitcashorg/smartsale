@@ -27,15 +27,15 @@
       "**/wagmi/**"
     ]
   },
-  "packageManager": "bun@1.1.9",
+  "packageManager": "bun@1.1.20",
+  "engines": {
+    "node": "20.x"
+  },
   "devDependencies": {
     "@types/bn.js": "^5.1.5",
     "@types/node": "latest",
     "eslint": "^9.7.0",
     "prettier": "^3.3.3",
-    "turbo": "^2.0.8"
-  },
-  "dependencies": {
-    "nookies": "^2.5.2"
+    "turbo": "^2.0.9"
   }
 }
