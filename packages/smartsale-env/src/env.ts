@@ -6,6 +6,8 @@ import {
   TokenContractData,
   TestnetUSDT,
   EOSFakeBITUSD,
+  usdcContracts,
+  usdtContracts,
 } from "smartsale-contracts";
 import { Address, Chain } from "viem";
 
@@ -76,7 +78,7 @@ const canary: SmartsaleEnvConfig = {
     auction: "0x",
     bk: "bkblaunchpad",
   },
-  usdt: [EOSFakeBITUSD, EOSFakeUSDT, SepoliaUSDT, TestnetUSDT],
+  usdt: [EOSFakeBITUSD, EOSFakeUSDT, SepoliaUSDT, TestnetUSDT, ...usdcContracts, ...usdtContracts],
 };
 
 // common environment configs
