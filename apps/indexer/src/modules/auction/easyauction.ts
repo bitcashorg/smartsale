@@ -1,6 +1,6 @@
 import { getContract } from 'viem'
 import { client } from '../../lib/evm-client'
-import { TestnetEasyAuction } from 'smartsale-contracts'
+import { TestnetEasyAuction } from 'app-contracts'
 
 export const easyAuction = getContract({
   ...TestnetEasyAuction,

@@ -1,4 +1,4 @@
-import { TestnetEasyAuction } from 'smartsale-contracts'
+import { TestnetEasyAuction } from 'app-contracts'
 import { Address } from 'viem'
 import { useWriteContract } from 'wagmi'
 

@@ -8,7 +8,7 @@ import { useAccountModal } from '@rainbow-me/rainbowkit'
 import { User, Wallet } from 'lucide-react'
 import { useRouter } from 'next/navigation'
 import { isMobile } from 'react-device-detect'
-import { formatAddress } from 'smartsale-lib'
+import { formatAddress } from 'app-lib'
 import { useAccount } from 'wagmi'
 import {
   Popover,

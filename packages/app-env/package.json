@@ -1,5 +1,5 @@
 {
-  "name": "smartsale-env",
+  "name": "app-env",
   "version": "0.0.1",
   "private": true,
   "description": "bitlauncher Environment Configurations",
@@ -9,10 +9,10 @@
   "types": "./src/index.ts",
   "dependencies": {
     "viem": "latest",
-    "smartsale-contracts": "workspace:*"
+    "app-contracts": "workspace:*"
   },
   "devDependencies": {
-    "tsconfig": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
     "typescript": "^5.3.3"
   }
 }

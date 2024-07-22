@@ -14,8 +14,8 @@ import { useRouter, useSearchParams } from 'next/navigation'
 import { useEffect, useState } from 'react'
 // import { bitcashLogin } from '@/lib/esr'
 import { useToggle } from 'react-use'
-import { TestnetUSDCred } from 'smartsale-contracts'
-import { runtimeEnv } from 'smartsale-lib'
+import { TestnetUSDCred } from 'app-contracts'
+import { runtimeEnv } from 'app-lib'
 import { useAccount } from 'wagmi'
 
 export function BitcashAccessButton({

@@ -1,4 +1,4 @@
-import { getErrorMessage } from 'smartsale-lib'
+import { getErrorMessage } from 'app-lib'
 import { startAuctionIndexer } from './modules/auction'
 import { startSwapsService } from './modules/swaps'
 import { startExpress } from './routes/healthcheck'

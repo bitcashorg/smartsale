@@ -1,7 +1,7 @@
 import { http, createPublicClient, PublicClient, createWalletClient } from 'viem'
 import { sepolia } from 'viem/chains'
 import { appenv } from '../config'
-import { eosEvmTestnet } from 'smartsale-env'
+import { eosEvmTestnet } from 'app-env'
 
 export const client: PublicClient = createPublicClient({
   chain: eosEvmTestnet,
