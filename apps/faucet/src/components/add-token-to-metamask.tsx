@@ -1,4 +1,4 @@
-import { EVMTokenContractData } from "smartsale-contracts";
+import { EVMTokenContractData } from "app-contracts";
 import { useSwitchChain } from "wagmi";
 import { Button } from "./ui/button";
 

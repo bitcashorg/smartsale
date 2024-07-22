@@ -13,8 +13,8 @@ import { cn } from '@/lib/utils'
 import { readContract, writeContract } from '@wagmi/core'
 import { erc20Abi } from 'abitype/abis'
 import { useEffect, useState } from 'react'
-import { TestnetEasyAuction, TestnetUSDCred } from 'smartsale-contracts'
-import { toSmallestUnit } from 'smartsale-lib'
+import { TestnetEasyAuction, TestnetUSDCred } from 'app-contracts'
+import { toSmallestUnit } from 'app-lib'
 import { Address } from 'viem'
 import { useAccount, useWriteContract } from 'wagmi'
 import { wagmiConfig } from '../../../layout/providers'
@@ -139,8 +139,8 @@ export function AuctionBids({ project }: AuctionBidsProps) {
       <Table>
         <TableHeader>
           <TableRow>
-            <TableHead className="font-semibold bg-muted">Max Price</TableHead>
-            <TableHead className="font-semibold bg-muted">Bid Amount</TableHead>
+            <TableHead className="bg-muted font-semibold">Max Price</TableHead>
+            <TableHead className="bg-muted font-semibold">Bid Amount</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
@@ -191,7 +191,7 @@ export function AuctionBids({ project }: AuctionBidsProps) {
         </Button>
 
         <div className="flex flex-col gap-2">
-          <p className="flex justify-between w-full">
+          <p className="flex w-full justify-between">
             {textValues.currentBid.split(':').map((txt, index) =>
               !index ? (
                 <b key={txt} className="block">
@@ -202,7 +202,7 @@ export function AuctionBids({ project }: AuctionBidsProps) {
               )
             )}
           </p>
-          <p className="flex justify-between w-full">
+          <p className="flex w-full justify-between">
             {textValues.currentCost.split(':').map((txt, index) =>
               !index ? (
                 <b key={txt} className="block">
@@ -213,7 +213,7 @@ export function AuctionBids({ project }: AuctionBidsProps) {
               )
             )}
           </p>
-          <p className="mt-2 text-sm text-right">{textValues.maxTokenLimit}</p>
+          <p className="mt-2 text-right text-sm">{textValues.maxTokenLimit}</p>
         </div>
       </div>
     </div>
@@ -250,14 +250,14 @@ function CurrencyInput({ handlechange, ...props }: CurrencyInputProps) {
 
   return (
     <div className="relative">
-      <span className="absolute inset-y-0 flex items-center left-2">$</span>
+      <span className="absolute inset-y-0 left-2 flex items-center">$</span>
 
       <input
         type="text" // Changed to text to handle manual formatting
         value={value}
         onChange={handleChange}
         onBlur={handleBlur}
-        className="w-full pl-6 bg-transparent focus:outline-none"
+        className="w-full bg-transparent pl-6 focus:outline-none"
         {...props}
       />
     </div>

@@ -1,4 +1,4 @@
-import { getValidSmartsaleEnv, smartsaleEnv } from 'smartsale-env'
+import { getValidSmartsaleEnv, smartsaleEnv } from 'app-env'
 
 const env = getValidSmartsaleEnv(process.env.NEXT_PUBLIC_APP_ENV || 'test')
 

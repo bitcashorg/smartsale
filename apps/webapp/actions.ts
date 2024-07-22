@@ -1,7 +1,7 @@
 'use server'
 
 import { cookies } from 'next/headers'
-import { fromEntries } from 'smartsale-lib'
+import { fromEntries } from 'app-lib'
 import { handleAxiosError } from '@/lib/utils'
 import axios from 'axios'
 import { Resend } from 'resend'

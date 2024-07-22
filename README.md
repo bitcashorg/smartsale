@@ -63,15 +63,15 @@ This package provides a shared ESLint configuration to ensure consistent coding 
 
 Similar to `config-eslint`, this package offers a shared TypeScript configuration to standardize TypeScript compilation options across the project.
 
-#### Smartsale Contracts (`/packages/smartsale-contracts`)
+#### Smartsale Contracts (`/packages/app-contracts`)
 
 Contains smart contracts for the Smartsale platform, including auction contracts, ERC20 tokens, and other blockchain-based contracts. These are essential for the project's blockchain functionalities.
 
-#### Smartsale Env (`/packages/smartsale-env`)
+#### Smartsale Env (`/packages/app-env`)
 
 Provides environment configurations and utilities for the Smartsale platform, ensuring that different environments (development, testing, production) can be managed and configured efficiently.
 
-#### Smartsale Lib (`/packages/smartsale-lib`)
+#### Smartsale Lib (`/packages/app-lib`)
 
 A library of reusable code for the Smartsale platform, including utility functions, blockchain interaction helpers, and common components used across the project.
 

@@ -12,8 +12,8 @@ import BN from 'bn.js'
 import { format } from 'date-fns'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
-import { TestnetEasyAuction } from 'smartsale-contracts'
-import { formatAddress } from 'smartsale-lib'
+import { TestnetEasyAuction } from 'app-contracts'
+import { formatAddress } from 'app-lib'
 import { useAccount, useReadContract } from 'wagmi'
 
 export function AuctionOrders() {
@@ -80,7 +80,7 @@ export function AuctionOrders() {
 
   return (
     <>
-      <h2 className="px-2 py-5 heading3">Orders</h2>
+      <h2 className="heading3 px-2 py-5">Orders</h2>
       <Table>
         <TableHeader>
           <TableRow>
