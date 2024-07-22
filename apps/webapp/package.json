@@ -122,5 +122,11 @@
     "@types/react-dom": "18.x",
     "postcss-import": "^16.1.0",
     "postcss-nesting": "^12.1.5"
+  },
+  "resolutions": {
+    "@ledgerhq/hw-transport-node-hid/node-hid": "false"
+  },
+  "optionalDependencies": {
+    "node-hid": "latest"
   }
 }
