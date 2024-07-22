@@ -10,8 +10,7 @@
     "dev": "turbo dev --no-daemon --parallel",
     "lint": "turbo lint --no-daemon",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "clean:node_modules": "find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +",
-    "postinstall": "prebuild-install || node-gyp rebuild"
+    "clean:node_modules": "find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +"
   },
   "workspaces": {
     "packages": [
@@ -38,5 +37,11 @@
     "eslint": "^9.7.0",
     "prettier": "^3.3.3",
     "turbo": "^2.0.9"
+  },
+  "resolutions": {
+    "@ledgerhq/hw-transport-node-hid/node-hid": "false"
+  },
+  "optionalDependencies": {
+    "node-hid": "latest"
   }
 }
