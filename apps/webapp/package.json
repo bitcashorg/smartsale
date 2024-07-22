@@ -122,8 +122,5 @@
     "@types/react-dom": "18.x",
     "postcss-import": "^16.1.0",
     "postcss-nesting": "^12.1.5"
-  },
-  "optionalDependencies": {
-    "@ledgerhq/hw-transport-node-hid": "latest"
   }
 }

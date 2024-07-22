@@ -44,8 +44,5 @@
     "eslint-plugin-react-refresh": "^0.4.8",
     "typescript": "^5.5.3",
     "vite": "^5.3.4"
-  },
-  "optionalDependencies": {
-    "@ledgerhq/hw-transport-node-hid": "latest"
   }
 }
