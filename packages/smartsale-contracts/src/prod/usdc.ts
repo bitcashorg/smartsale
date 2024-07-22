@@ -1,7 +1,7 @@
-import { TokenContractData } from "./types";
+import { TokenContractData } from "../types";
 import { erc20Abi } from 'abitype/abis'
 
-const usdcContracts: TokenContractData[] = [
+export const usdcContracts: TokenContractData[] = [
   {
     address: "0xaf88d065e77c8cc2239327c5edb3a432268e5831",
     name: "USDC",
