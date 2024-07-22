@@ -8,7 +8,7 @@ import {
   EOSFakeBITUSD,
   usdcContracts,
   usdtContracts,
-} from "../../app-contracts/src";
+} from "app-contracts";
 import { Address, Chain } from "viem";
 
 const prod: SmartsaleEnvConfig = {
