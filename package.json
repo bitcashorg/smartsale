@@ -35,8 +35,10 @@
     "@types/bn.js": "^5.1.5",
     "@types/node": "latest",
     "eslint": "^9.7.0",
-    "node-hid": "3.0.0",
     "prettier": "^3.3.3",
     "turbo": "^2.0.9"
+  },
+  "optionalDependencies": {
+    "@ledgerhq/hw-transport-node-hid": "latest"
   }
 }
