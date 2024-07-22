@@ -6,7 +6,9 @@ import {
   TokenContractData,
   TestnetUSDT,
   EOSFakeBITUSD,
-} from "smartsale-contracts";
+  usdcContracts,
+  usdtContracts,
+} from "app-contracts";
 import { Address, Chain } from "viem";
 
 const prod: SmartsaleEnvConfig = {
@@ -32,12 +34,12 @@ const prod: SmartsaleEnvConfig = {
   usdt: [EOSUSDT],
 };
 
-const test: SmartsaleEnvConfig = {
+const dev: SmartsaleEnvConfig = {
    supabase: {
     url : 'https://jvpdyxpjpodxsuvhufpw.supabase.co',
     anonKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imp2cGR5eHBqcG9keHN1dmh1ZnB3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTMxMzMxMDcsImV4cCI6MjAyODcwOTEwN30.KkwK6Px8MG03QPDScsKjLc48GU-RkTs9beT946vD2vI',
   },
-  chains: smartsaleChains.test,
+  chains: smartsaleChains.dev,
   esrCallbackUrl: "https://dev.bitlauncher.ai/api/esr",
   // esrCallbackUrl: "https://192.168.23.3:3000/api/esr",
   issuer: {
@@ -61,7 +63,7 @@ const canary: SmartsaleEnvConfig = {
     url : 'https://mitkjznioyrucenuzsdb.supabase.co',
     anonKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1pdGtqem5pb3lydWNlbnV6c2RiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTMxMzA3MzgsImV4cCI6MjAyODcwNjczOH0.uVdiJfaonQfWvL--71QFAdiXGMiN1SRYlYGLNiSuNC0',
   },
-  chains: smartsaleChains.test,
+  chains: smartsaleChains.dev,
   esrCallbackUrl: "https://canary.bitlauncher.ai/api/esr",
   issuer: {
     eos: "gaboesquivel",
@@ -76,12 +78,36 @@ const canary: SmartsaleEnvConfig = {
     auction: "0x",
     bk: "bkblaunchpad",
   },
-  usdt: [EOSFakeBITUSD, EOSFakeUSDT, SepoliaUSDT, TestnetUSDT],
+  usdt: [EOSFakeBITUSD, EOSFakeUSDT, SepoliaUSDT, TestnetUSDT, ...usdcContracts, ...usdtContracts],
+};
+
+const test: SmartsaleEnvConfig = {
+   supabase: {
+    url : 'https://mitkjznioyrucenuzsdb.supabase.co',
+    anonKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1pdGtqem5pb3lydWNlbnV6c2RiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTMxMzA3MzgsImV4cCI6MjAyODcwNjczOH0.uVdiJfaonQfWvL--71QFAdiXGMiN1SRYlYGLNiSuNC0',
+  },
+  chains: smartsaleChains.prod,
+  esrCallbackUrl: "https://test.bitlauncher.ai/api/esr",
+  issuer: {
+    eos: "gaboesquivel",
+    evm: "0x",
+  },
+  bitcash: {
+    bank: "bkbbanktest3",
+    token: "bkbtokentest",
+    accounts: "bkbaccountst",
+  },
+  smartsale: {
+    auction: "0x",
+    bk: "bkblaunchpad",
+  },
+  usdt: [EOSFakeBITUSD, EOSFakeUSDT, SepoliaUSDT, TestnetUSDT, ...usdcContracts, ...usdtContracts],
 };
 
 // common environment configs
 export const smartsaleEnv = {
   prod,
+  dev,
   test,
   canary,
 };

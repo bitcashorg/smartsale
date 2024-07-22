@@ -1,4 +1,4 @@
-import { TestnetMBOTSPL, TokenContractData } from 'smartsale-contracts'
+import { TestnetMBOTSPL, TokenContractData } from 'app-contracts'
 import BitcashPic from '../assets/img/bitcash.webp'
 import MasterbotsPic from '../assets/img/masterbots.webp'
 import WizartPic from '../assets/img/wizartworld.webp'

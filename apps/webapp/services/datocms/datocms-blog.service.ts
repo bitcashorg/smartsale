@@ -9,7 +9,7 @@ import { BlogAiRecord } from './graphql/generated/cms'
 import * as fs from 'fs'
 import path from 'path'
 import { parseFile, getFilePath } from '@/lib/file'
-import { getErrorMessage } from 'smartsale-lib'
+import { getErrorMessage } from 'app-lib'
 import { Lang } from '@/dictionaries/locales'
 
 export const getBlogData = async () => {

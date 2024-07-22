@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 
 import { WagmiProvider } from "wagmi";
-import { eosEvmTestnet } from "smartsale-env";
+import { eosEvmTestnet } from "app-env";
 import {
   metaMaskWallet,
   trustWallet,

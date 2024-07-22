@@ -7,7 +7,7 @@ import {
   TableHeader,
   TableRow
 } from '@/components/ui/table'
-import { formatAddress } from 'smartsale-lib'
+import { formatAddress } from 'app-lib'
 import { format } from 'date-fns'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
@@ -71,7 +71,7 @@ export function TransactionsTable() {
 
   return (
     <div>
-      <h2 className="px-2 py-5 heading3">Transactions</h2>
+      <h2 className="heading3 px-2 py-5">Transactions</h2>
       <Table>
         <TableHeader>
           <TableRow>

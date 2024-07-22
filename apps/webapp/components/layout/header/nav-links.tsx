@@ -6,7 +6,7 @@ import { appConfig } from '@/lib/config'
 import { useAccountModal, useConnectModal } from '@rainbow-me/rainbowkit'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
-import { formatAddress } from 'smartsale-lib'
+import { formatAddress } from 'app-lib'
 import { useAccount } from 'wagmi'
 import { v4 as uuidv4 } from 'uuid'
 

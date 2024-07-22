@@ -12,7 +12,7 @@ import { useSession } from '@/hooks/use-session'
 import { useRouter } from 'next/navigation'
 import QRCode from 'react-qr-code'
 import { useEffectOnce } from 'react-use'
-import { runtimeEnv } from 'smartsale-lib'
+import { runtimeEnv } from 'app-lib'
 
 export function RegisterDialogContent({
   updateDialogContent

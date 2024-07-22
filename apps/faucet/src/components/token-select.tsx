@@ -8,7 +8,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { SelectProps } from "@radix-ui/react-select";
-import { TokenContractData } from "smartsale-contracts";
+import { TokenContractData } from "app-contracts";
 
 export function TokenSelect({ options, ...props }: TokenSelectParams) {
   return (

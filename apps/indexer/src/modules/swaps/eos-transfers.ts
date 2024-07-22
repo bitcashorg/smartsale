@@ -1,4 +1,4 @@
-import { smartsaleEnv } from 'smartsale-env'
+import { smartsaleEnv } from 'app-env'
 import { stringify } from 'viem/utils'
 import { createFirehoseSubscription } from '~/lib/dfuse-client'
 import { issueTokens } from './cred-issuer'

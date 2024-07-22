@@ -11,7 +11,7 @@ import * as fs from 'fs/promises'
 import * as path from 'path'
 import { promiseAllWithConcurrencyLimit } from '@/lib/utils'
 import _ from 'lodash'
-import { getErrorMessage } from 'smartsale-lib'
+import { getErrorMessage } from 'app-lib'
 
 async function processFile(
   file: string,

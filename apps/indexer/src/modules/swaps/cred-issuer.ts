@@ -1,5 +1,5 @@
-import { TestnetUSDCred } from 'smartsale-contracts'
-import { eosEvmTestnet } from 'smartsale-env'
+import { TestnetUSDCred } from 'app-contracts'
+import { eosEvmTestnet } from 'app-env'
 import { createWalletClient } from 'viem'
 import { appenv } from '~/config'
 import { Address, http } from 'viem'

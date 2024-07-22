@@ -11,7 +11,7 @@ import {
 import { useErc20Balance, useNativeBalance } from '@/hooks/use-balance'
 import { useEosBalances } from '@/hooks/use-eos-balances'
 
-import { TestnetMBOTSPL, TestnetUSDCred } from 'smartsale-contracts'
+import { TestnetMBOTSPL, TestnetUSDCred } from 'app-contracts'
 import { useAccount } from 'wagmi'
 
 export function BalancesTable() {

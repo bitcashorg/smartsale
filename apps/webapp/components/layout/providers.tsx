@@ -16,7 +16,7 @@ import {
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { ThemeProvider as NextThemesProvider } from 'next-themes'
 import { ThemeProviderProps } from 'next-themes/dist/types'
-import { eosEvmTestnet } from 'smartsale-env'
+import { eosEvmTestnet } from 'app-env'
 import { WagmiProvider } from 'wagmi'
 import { sepolia } from 'wagmi/chains'
 import { UseSigningRequestProvider } from '@/hooks/use-signing-request'

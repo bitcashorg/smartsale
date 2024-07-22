@@ -25,9 +25,9 @@
         "lodash": "^4.17.21",
         "node-fetch": "2.6.4",
         "resend": "^3.4.0",
-        "smartsale-contracts": "workspace:*",
-        "smartsale-env": "workspace:*",
-        "smartsale-lib": "workspace:*",
+        "app-contracts": "workspace:*",
+        "app-env": "workspace:*",
+        "app-lib": "workspace:*",
         "viem": "latest",
         "ws": "^8.18.0"
     },
@@ -40,7 +40,7 @@
         "rimraf": "^6.0.1",
         "ts-node": "^10.9.2",
         "ts-node-dev": "^2.0.0",
-        "tsconfig": "workspace:*",
+        "@repo/typescript-config": "workspace:*",
         "tsconfig-paths": "^4.2.0",
         "typescript": "^5.5.3"
     }

@@ -27,7 +27,7 @@ const testChains: Chain[] = [];
 
 // note: use .entries() to get an array
 export const smartsaleChains = {
-  test: createMapFromId(prodChains),
+  dev: createMapFromId(prodChains),
   prod: createMapFromId(testChains),
 } as const;
 

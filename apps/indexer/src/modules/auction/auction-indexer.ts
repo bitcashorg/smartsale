@@ -1,6 +1,6 @@
 import { Log, stringify } from 'viem'
 import { client } from '~/lib/evm-client'
-import { TestnetEasyAuction } from 'smartsale-contracts'
+import { TestnetEasyAuction } from 'app-contracts'
 import {
   bigintToPostgresTimestamp,
   getEvents,
@@ -10,7 +10,7 @@ import {
 import { NewAuctionEvent, NewSellOrderEvent, NewUserEvent } from '~/modules/auction/auction.type'
 
 import BN from 'bn.js'
-import { eosEvmTestnet } from 'smartsale-env'
+import { eosEvmTestnet } from 'app-env'
 import { upsertAuctionDetail, upsertOrder } from '~/lib/supabase-client'
 
 export async function startAuctionIndexer() {

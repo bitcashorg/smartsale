@@ -27,7 +27,7 @@ import {
   EVMTokenContractData,
   TestnetUSDT,
   TokenContractData
-} from 'smartsale-contracts'
+} from 'app-contracts'
 import { parseUnits } from 'viem'
 import { useAccount, useSwitchChain, useWriteContract } from 'wagmi'
 import { appConfig } from '@/lib/config'

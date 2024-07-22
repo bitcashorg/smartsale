@@ -1,4 +1,4 @@
-import { TestnetUSDCred } from "smartsale-contracts";
+import { TestnetUSDCred } from "app-contracts";
 import { formatUnits } from "viem";
 import { useAccount, useReadContract } from "wagmi";
 

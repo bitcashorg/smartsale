@@ -8,9 +8,9 @@ WORKDIR /app
 COPY package.json .
 COPY apps/supabase/package.json ./apps/supabase/package.json
 COPY apps/indexer/package.json ./apps/indexer/package.json
-COPY packages/smartsale-env/package.json ./packages/smartsale-env/package.json
-COPY packages/smartsale-contracts/package.json ./packages/smartsale-contracts/package.json
-COPY packages/smartsale-lib/package.json ./packages/smartsale-lib/package.json
+COPY packages/app-env/package.json ./packages/app-env/package.json
+COPY packages/app-contracts/package.json ./packages/app-contracts/package.json
+COPY packages/app-lib/package.json ./packages/app-lib/package.json
 COPY packages/tsconfig/package.json ./packages/tsconfig/package.json
 COPY packages/config-typescript/package.json ./packages/config-typescript/package.json
 COPY packages/config-eslint/package.json ./packages/config-eslint/package.json

@@ -2,7 +2,7 @@
 import { FunctionComponent, useState } from 'react'
 import { useAccount, useSignMessage } from 'wagmi'
 import { useAsyncFn } from 'react-use'
-import { formatAddress, fromEntries } from 'smartsale-lib'
+import { formatAddress, fromEntries } from 'app-lib'
 import { registerAddress } from '@/actions'
 import { SignMessageData } from 'wagmi/query'
 import { useQuery } from '@tanstack/react-query'

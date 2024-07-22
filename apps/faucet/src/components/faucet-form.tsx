@@ -9,7 +9,7 @@ import {
   TestnetMBOTSPL,
   TestnetUSDCred,
   TestnetUSDT,
-} from "smartsale-contracts";
+} from "app-contracts";
 import { TokenSelect } from "./token-select";
 import { parseUnits } from "viem";
 import { AddTokenToWallet } from "./add-token-to-metamask";

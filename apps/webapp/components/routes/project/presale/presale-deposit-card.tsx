@@ -27,7 +27,7 @@ import {
   EVMTokenContractData,
   TestnetUSDT,
   TokenContractData
-} from 'smartsale-contracts'
+} from 'app-contracts'
 import { parseUnits } from 'viem'
 import { useAccount, useSwitchChain, useWriteContract } from 'wagmi'
 import { appConfig } from '@/lib/config'
@@ -110,7 +110,7 @@ function PresaleDeposit() {
           Transfer tokens to participate in the presale.
         </CardDescription>
       </CardHeader>
-      <div className="flex flex-col mb-5">
+      <div className="mb-5 flex flex-col">
         <label htmlFor="deposit" className="text-sm font-bold"></label>
         <div className="flex items-center justify-between">
           <div className="flex min-w-[40%] flex-col">
