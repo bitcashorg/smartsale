@@ -15,8 +15,7 @@
   "workspaces": {
     "packages": [
       "apps/*",
-      "packages/*",
-      "hardhat/*"
+      "packages/*"
     ],
     "nohoist": [
       "**/vite",
