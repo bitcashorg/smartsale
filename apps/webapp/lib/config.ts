@@ -31,4 +31,4 @@ export const appConfig = {
   }
 } as const
 
-// console.log('🧑🏻‍💻 features', appConfig.features)
+console.log('🧑🏻‍💻 appConfig', appConfig)
