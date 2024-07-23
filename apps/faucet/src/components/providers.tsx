@@ -2,35 +2,34 @@ import { ReactNode } from "react";
 
 import { WagmiProvider } from "wagmi";
 import { eosEvmTestnet } from "app-env";
-import {
-  metaMaskWallet,
-  trustWallet,
-  walletConnectWallet
-} from '@rainbow-me/rainbowkit/wallets'
-
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { getDefaultConfig, RainbowKitProvider } from "@rainbow-me/rainbowkit";
 import { sepolia } from "wagmi/chains";
 
-const queryClient = new QueryClient();
+import { createWeb3Modal, defaultWagmiConfig } from '@web3modal/wagmi'
 
-export const wagmiConfig = getDefaultConfig({
-  appName: "Bitlauncher",
-  projectId: "25a868c834c1003aa0f0b69aba0ae056",
-   wallets: [
-    {
-      groupName: 'Popular',
-      wallets: [metaMaskWallet, trustWallet, walletConnectWallet]
-    }
-  ],
-  chains: [{ ...eosEvmTestnet, fees: undefined }, sepolia],
-});
+const queryClient = new QueryClient()
+
+export const wagmiConfig = defaultWagmiConfig({
+  metadata: {
+    name: 'Bitlauncher',
+    description: 'A platform for launching blockchain projects',
+    url: 'https://bitlauncher.com',
+    icons: ['https://bitlauncher.com/icon.png']
+  },
+  projectId: '25a868c834c1003aa0f0b69aba0ae056',
+  chains: [{ ...eosEvmTestnet, fees: undefined }, sepolia]
+})
+
+createWeb3Modal({
+  wagmiConfig,
+  projectId: '25a868c834c1003aa0f0b69aba0ae056'
+})
 
 export function Providers({ children }: { children: ReactNode }) {
   return (
     <QueryClientProvider client={queryClient}>
       <WagmiProvider config={wagmiConfig}>
-        <RainbowKitProvider>{children}</RainbowKitProvider>
+        {children}
       </WagmiProvider>
     </QueryClientProvider>
   );

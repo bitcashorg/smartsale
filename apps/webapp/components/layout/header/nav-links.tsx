@@ -3,7 +3,6 @@
 import { LangProp } from '@/types/routing.type'
 import { useSession } from '@/hooks/use-session'
 import { appConfig } from '@/lib/config'
-import { useAccountModal, useConnectModal } from '@rainbow-me/rainbowkit'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { formatAddress } from 'app-lib'
@@ -20,8 +19,7 @@ export function NavLinks({
   toggleOpen?: (nextValue?: any) => void
 } & NavLinksProps) {
   const { loginRedirect, session, logout } = useSession()
-  const { openConnectModal } = useConnectModal()
-  const { openAccountModal } = useAccountModal()
+  const { openConnectModal } = useSession()
   const { address } = useAccount()
   const router = useRouter()
   const bitcashAccount = session?.account
@@ -40,10 +38,7 @@ export function NavLinks({
       href: null,
       text: address ? formatAddress(address) : dict.nav.connect,
       mobile: true,
-      action: () =>
-        bitcashAccount
-          ? openConnectModal && openConnectModal()
-          : openAccountModal && openAccountModal(),
+      action: () => bitcashAccount && openConnectModal(),
       disabled: !bitcashAccount
     },
 

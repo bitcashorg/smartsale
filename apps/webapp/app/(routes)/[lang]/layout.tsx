@@ -1,10 +1,9 @@
 import '@/app/globals.css'
 import Footer from '@/components/layout/footer/footer'
 import { Header } from '@/components/layout/header'
-import { Providers } from '@/components/layout/providers'
+import { Providers, wagmiConfig } from '@/components/layout/providers'
 import { cn } from '@/lib/utils'
 import { GoogleAnalytics } from '@next/third-parties/google'
-import '@rainbow-me/rainbowkit/styles.css'
 import { Metadata } from 'next'
 import dynamic from 'next/dynamic'
 import React from 'react'
@@ -17,6 +16,8 @@ import type { Viewport } from 'next'
 import { isMobile } from 'react-device-detect'
 import { Toaster } from 'react-hot-toast'
 import '../../globals.css'
+import { cookieToInitialState } from 'wagmi'
+import { headers } from 'next/headers'
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -32,6 +33,10 @@ export default async function RootLayout({
   params
 }: RootLayoutProps) {
   const dict = await getDictionary(params.lang)
+  const initialState = cookieToInitialState(
+    wagmiConfig,
+    headers().get('cookie')
+  )
   return (
     <html
       lang={params.lang || 'en'}
@@ -45,6 +50,7 @@ export default async function RootLayout({
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
+          initialState={initialState}
         >
           <Header lang={params.lang} dict={dict} />
           <Toaster />

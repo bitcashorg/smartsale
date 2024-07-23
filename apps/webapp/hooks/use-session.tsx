@@ -5,7 +5,6 @@ import { genLoginSigningRequest } from '@/lib/eos'
 import { useSupabaseClient } from '@/services/supabase'
 import { createContextHook } from '@blockmatic/hooks-utils'
 import { identify } from '@multibase/js'
-import { useConnectModal } from '@rainbow-me/rainbowkit'
 import { Tables } from '@repo/supabase'
 import { usePathname, useRouter, useSearchParams } from 'next/navigation'
 import React, { ReactNode, useEffect, useState } from 'react'
@@ -13,6 +12,7 @@ import { isMobile } from 'react-device-detect'
 import { useAsync, useLocalStorage, useToggle } from 'react-use'
 import { useAccount } from 'wagmi'
 import { v4 as uuidv4 } from 'uuid'
+import { useWeb3Modal } from '@web3modal/wagmi/react'
 
 // Exports
 export { SessionProvider, useSession }
@@ -26,7 +26,7 @@ function useSessionFn() {
   const paramsSessionId = searchParams.get('session_id')
   const pathname = usePathname()
   const router = useRouter()
-  const { openConnectModal } = useConnectModal()
+  const web3Modal = useWeb3Modal()
   // this controls the session dialog with register and login qr codes
   // when login qr code is display a new esr is created and saved on db for later reference on callback call
   const [showSessionDialog, toggleShowSessionDialog] = useToggle(false)
@@ -133,12 +133,10 @@ function useSessionFn() {
     location.href = `https://app.bitcash.org?${params.toString()}`
   }
 
-  // show rainbowkit to link evm wallet if logged in
-  // else call login action depending base on viewport
   const loginOrConnect = () => {
-    console.log('login or connect', session, openConnectModal)
-    session && openConnectModal
-      ? openConnectModal()
+    console.log('login or connect', session, web3Modal)
+    session && web3Modal
+      ? web3Modal.open()
       : isMobile
         ? loginRedirect()
         : toggleShowSessionDialog(true)
@@ -158,7 +156,7 @@ function useSessionFn() {
     showSessionDialog,
     logout,
     loginRedirect,
-    openConnectModal,
+    openConnectModal: web3Modal.open,
     loginOrConnect,
     toggleShowSessionDialog
   }
