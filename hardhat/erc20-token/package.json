@@ -1,0 +1,19 @@
+{
+  "name": "smartsale-solidity-tokens",
+  "version": "1.0.0",
+  "scripts": {
+    "deployUSDCredTestnet": "hardhat run scripts/deployUSDCredWithFaucet.js --network eosevm_testnet",
+    "deployUSDCredMainnet": " hardhat run scripts/deployUSDCred.js --network eosevm_mainnet",
+    "deployMBOTSPLTestnet": " hardhat run scripts/deployMBOTSPLWithFaucet.js --network eosevm_testnet",
+    "deployUSDTSepolia": " hardhat run scripts/deployUSDTWithFaucet.js --network sepolia",
+    "deployUSDTTestnet": " hardhat run scripts/deployUSDTWithFaucet.js --network eosevm_testnet"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "chai": "^4.3.4",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.6.4"
+  }
+}
