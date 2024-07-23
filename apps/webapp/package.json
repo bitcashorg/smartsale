@@ -15,7 +15,8 @@
     "format": "prettier --write \"{app,lib,components}/**/*.{ts,tsx,mdx}\" --cache",
     "format:check": "prettier --check \"{app,lib,components}**/*.{ts,tsx,mdx}\" --cache",
     "translate": "bun run scripts/translate.ts",
-    "translate:category": "bun run scripts/translate-category.ts"
+    "translate:category": "bun run scripts/translate-category.ts",
+    "vercel:install": "../../scripts/vercel-install.sh"
   },
   "dependencies": {
     "@ai-sdk/anthropic": "^0.0.30",
