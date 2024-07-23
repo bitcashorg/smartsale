@@ -1,6 +1,6 @@
 import { getValidSmartsaleEnv, smartsaleEnv } from 'app-env'
 
-const env = getValidSmartsaleEnv(process.env.NEXT_PUBLIC_APP_ENV || 'test')
+const env = getValidSmartsaleEnv(process.env.NEXT_PUBLIC_APP_ENV || 'dev')
 
 export const appConfig = {
   env,
@@ -31,4 +31,4 @@ export const appConfig = {
   }
 } as const
 
-console.log('🧑🏻‍💻 appConfig', appConfig)
+// console.log('🧑🏻‍💻 appConfig', appConfig)
