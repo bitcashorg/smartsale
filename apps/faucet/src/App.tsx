@@ -1,7 +1,6 @@
 import { FaucetForm } from "./components/faucet-form";
 import { useUsdtBalance } from "./hooks/use-usdt-balance";
 import { Button } from "./components/ui/button";
-import { ConnectButton } from "@rainbow-me/rainbowkit";
 
 export default function Component() {
   const balance = useUsdtBalance();
@@ -29,4 +28,10 @@ export default function Component() {
       </main>
     </div>
   );
+}
+
+
+export function ConnectButton() {
+  // @ts-ignore
+  return <w3m-button />
 }

@@ -2,9 +2,7 @@
 
 import { Button } from '@/components/ui/button'
 import { useSession } from '@/hooks/use-session'
-import { appConfig } from '@/lib/config'
 import { cn } from '@/lib/utils'
-import { useAccountModal } from '@rainbow-me/rainbowkit'
 import { User, Wallet } from 'lucide-react'
 import { useRouter } from 'next/navigation'
 import { isMobile } from 'react-device-detect'
@@ -25,9 +23,7 @@ export function SessionButton() {
     openConnectModal,
     logout
   } = useSession()
-  const { openAccountModal } = useAccountModal()
   const account = useAccount()
-  const router = useRouter()
   const hasSession = session?.account
 
   const loginUser = () =>
@@ -40,7 +36,7 @@ export function SessionButton() {
           variant="ghost"
           radius="full"
           className={cn('m-0 md:px-3 lg:px-4')}
-          onClick={openConnectModal ? openConnectModal : openAccountModal}
+          onClick={() => openConnectModal()}
           suppressHydrationWarning={true}
         >
           <Wallet />

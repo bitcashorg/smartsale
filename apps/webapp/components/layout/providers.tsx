@@ -2,79 +2,60 @@
 
 import { TooltipProvider } from '@/components/ui/tooltip'
 import { SessionProvider } from '@/hooks/use-session'
-import {
-  RainbowKitProvider,
-  Theme,
-  getDefaultConfig,
-  lightTheme
-} from '@rainbow-me/rainbowkit'
-import {
-  metaMaskWallet,
-  trustWallet,
-  walletConnectWallet
-} from '@rainbow-me/rainbowkit/wallets'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { ThemeProvider as NextThemesProvider } from 'next-themes'
-import { ThemeProviderProps } from 'next-themes/dist/types'
 import { eosEvmTestnet } from 'app-env'
 import { WagmiProvider } from 'wagmi'
 import { sepolia } from 'wagmi/chains'
 import { UseSigningRequestProvider } from '@/hooks/use-signing-request'
-import { merge } from 'lodash'
+import { createWeb3Modal, defaultWagmiConfig } from '@web3modal/wagmi'
+import { cookieStorage, createStorage } from 'wagmi'
+import { ReactNode } from 'react'
 
 const queryClient = new QueryClient()
 
-export const wagmiConfig = getDefaultConfig({
-  appName: 'Bitlauncher',
+export const wagmiConfig = defaultWagmiConfig({
+  metadata: {
+    name: 'Bitlauncher',
+    description: 'Get early access to global ai unicorns.',
+    url: 'https://bitlauncher.ai',
+    icons: ['https://bitlauncher.ai/favicon-16x16.png']
+  },
   projectId: '25a868c834c1003aa0f0b69aba0ae056',
-  wallets: [
-    {
-      groupName: 'Popular',
-      wallets: [metaMaskWallet, trustWallet, walletConnectWallet]
-    }
-  ],
-  // @ts-ignore
-  chains: [{ ...eosEvmTestnet, fees: undefined }, sepolia]
+  chains: [{ ...eosEvmTestnet, fees: undefined }, sepolia],
+  ssr: true,
+  storage: createStorage({
+    storage: cookieStorage
+  })
 })
 
-const customRainbowKitTheme = merge(lightTheme(), {
-  colors: {
-    connectButtonBackground: '#fff',
-    connectButtonInnerBackground: '#fff',
-    connectButtonText: '#000'
-  },
-  radii: {
-    actionButton: '9999px', // Custom radius for action buttons,
-    connectButton: '9999px' // Custom radius for action buttons
-  }
-  // fonts: {
-  //   body: '...'
-  // }
-} as Theme)
+createWeb3Modal({
+  wagmiConfig,
+  projectId: '25a868c834c1003aa0f0b69aba0ae056'
+})
 
-export function Providers({ children, ...props }: ThemeProviderProps) {
+export function Providers({
+  children,
+  initialState,
+  ...props
+}: ProvidersProps) {
   return (
     <NextThemesProvider {...props}>
       <TooltipProvider>
         <QueryClientProvider client={queryClient}>
-          <WagmiProvider config={wagmiConfig}>
-            <RainbowKitProvider
-              theme={customRainbowKitTheme}
-              modalSize="compact"
-              showRecentTransactions={true}
-              appInfo={{
-                appName: 'Bitlauncher'
-              }}
-            >
-              <SessionProvider>
-                <UseSigningRequestProvider>
-                  {children}
-                </UseSigningRequestProvider>
-              </SessionProvider>
-            </RainbowKitProvider>
+          <WagmiProvider config={wagmiConfig} initialState={initialState}>
+            <SessionProvider>
+              <UseSigningRequestProvider>{children}</UseSigningRequestProvider>
+            </SessionProvider>
           </WagmiProvider>
         </QueryClientProvider>
       </TooltipProvider>
     </NextThemesProvider>
   )
+}
+
+interface ProvidersProps {
+  children: ReactNode
+  initialState: any
+  [key: string]: any
 }
