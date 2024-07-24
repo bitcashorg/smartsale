@@ -16,8 +16,8 @@
   "dependencies": {},
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
-    "supabase-to-zod": "^1.0.5",
+    "supabase-to-zod": "^1.0.7",
     "@faker-js/faker": "^8.4.1",
-    "supabase": "^1.178.2"
+    "supabase": "^1.187.3"
   }
 }

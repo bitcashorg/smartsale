@@ -23,8 +23,8 @@
         "bn.js": "^5.2.1",
         "express": "^4.19.2",
         "lodash": "^4.17.21",
-        "node-fetch": "2.6.4",
-        "resend": "^3.4.0",
+        "node-fetch": "3.3.2",
+        "resend": "^3.5.0",
         "app-contracts": "workspace:*",
         "app-env": "workspace:*",
         "app-lib": "workspace:*",
@@ -34,7 +34,7 @@
     "devDependencies": {
         "@types/express": "^4.17.21",
         "@types/lodash": "^4.17.7",
-        "@types/node-fetch": "^2.6.11",
+        "@types/node-fetch": " 2.6.4",
         "bun-types": "latest",
         "env-cmd": "^10.1.0",
         "rimraf": "^6.0.1",
@@ -42,6 +42,6 @@
         "ts-node-dev": "^2.0.0",
         "@repo/typescript-config": "workspace:*",
         "tsconfig-paths": "^4.2.0",
-        "typescript": "^5.5.3"
+        "typescript": "^5.5.4"
     }
 }
