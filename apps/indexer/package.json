@@ -23,7 +23,7 @@
         "bn.js": "^5.2.1",
         "express": "^4.19.2",
         "lodash": "^4.17.21",
-        "node-fetch": "3.3.2",
+        "node-fetch": "2.6.4",
         "resend": "^3.5.0",
         "app-contracts": "workspace:*",
         "app-env": "workspace:*",
