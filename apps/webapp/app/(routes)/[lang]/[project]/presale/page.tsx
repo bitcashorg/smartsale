@@ -5,7 +5,7 @@ import { Card, CardContent } from '@/components/ui/card'
 import { Countdown } from '@/components/shared/countdown'
 import { ProjectPresaleData } from '@/components/routes/project/project-presale-data'
 import { PresaleTransactionsCard } from '@/components/routes/project/presale/presale-transactions-card'
-import { Lang } from '@/dictionaries/locales'
+import { ProjectPageProps } from '@/types/routing.type'
 import { getDictionary } from '@/dictionaries'
 import { PresaleDepositCard } from '@/components/routes/project/presale/presale-deposit-card'
 
@@ -35,8 +35,4 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
       </ProjectHeader>
     </div>
   )
-}
-
-export type ProjectPageProps = {
-  params: { project: string; lang: Lang }
 }

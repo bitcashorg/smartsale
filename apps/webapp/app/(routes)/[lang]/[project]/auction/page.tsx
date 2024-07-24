@@ -18,6 +18,7 @@ import {
   getProjects
 } from '@/lib/projects'
 import { redirect } from 'next/navigation'
+import { ProjectPageProps, ProjectPageParams } from '@/types/routing.type'
 
 export default async function AuctionPage({ params }: ProjectPageProps) {
   const dict = await getDictionary(params.lang)
@@ -72,9 +73,4 @@ export async function generateStaticParams(): Promise<ProjectPageParams[]> {
   ).flat()
 
   return params
-}
-
-type ProjectPageParams = { project: string; lang: Lang }
-export type ProjectPageProps = {
-  params: ProjectPageParams
 }
