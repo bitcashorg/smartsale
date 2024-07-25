@@ -1,7 +1,7 @@
 import { CommonPageProps } from '@/types/routing.type'
 import { MetadataRoute } from 'next'
 
-export default function sitemap({
+export default async function sitemap({
   params
 }: CommonPageProps): MetadataRoute.Sitemap {
   return [
