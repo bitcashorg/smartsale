@@ -8,10 +8,10 @@ export default async function sitemap(
   const {
     params: { lang }
   } = props
-  let sections;
+  let sections = [];
   try {
-    sections = await getArticleSections(lang)
-  } catch(error) {
+    sections = await getArticleSections(lang);
+  } catch (error) {
     return [];
   }
 
