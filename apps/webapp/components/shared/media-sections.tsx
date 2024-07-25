@@ -19,7 +19,7 @@ export function MediaSections({ sections, lang }: MediaSectionsProps) {
                 <Link
                   href={section.link.href}
                   className={cn(
-                    'flex items-center align-middle text-black focus-within:!text-primary-200 hover:!text-primary-200 dark:text-white'
+                    'flex items-center align-middle text-black focus-within:!text-accent hover:!text-accent dark:text-white'
                   )}
                 >
                   {section.link.label}
@@ -28,8 +28,8 @@ export function MediaSections({ sections, lang }: MediaSectionsProps) {
               </div>
 
               {/* <ul className="grid-cols-auto-dense grid w-full grid-cols-[repeat(auto-fill,minmax(250px,1fr))] flex-col gap-5 py-5 sm:flex-wrap"> */}
-              <ul className="grid w-full grid-cols-[repeat(auto-fill,minmax(250px,1fr))] flex-col gap-5 py-5 sm:flex-wrap">
-                {section?.videos?.map(video => (
+              <ul className="grid w-full grid-cols-[repeat(auto-fill,minmax(288px,1fr))] flex-col gap-8 py-5 sm:flex-wrap">
+                {section?.videos?.slice(0, 4)?.map(video => (
                   <MediaCard video={video} key={video.id} lang={lang} />
                 ))}
               </ul>
