@@ -16,10 +16,10 @@ import { appConfig } from '@/lib/config'
 export function Header({ lang, dict }: HeaderProps) {
   return (
     <div className="sticky top-0 z-50 flex h-16 bg-background">
-      <div className="container flex flex-row items-center justify-between px-4 bg-background">
-        <div className="flex h-full items-center lg:min-w-[300px]">
+      <div className="container flex flex-row items-center justify-between px-4 bg-background py-11">
+        <div className="flex h-full items-center lg:min-w-[100px]">
           <Link href={`/${lang}`}>
-            <IconBitlauncher />
+            <IconBitlauncher className="ml-6 w-[152px]" />
           </Link>
         </div>
 
