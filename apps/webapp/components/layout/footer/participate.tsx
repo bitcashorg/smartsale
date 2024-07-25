@@ -14,7 +14,7 @@ export default function Participate({ lang, dict }: ParticipateProps) {
     <Section heading={dict.footer.stepsInfo}>
       <div
         key="steps-info-title"
-        className="flex flex-col items-center gap-12 lg:flex-row lg:items-stretch lg:justify-between"
+        className="flex flex-col items-center gap-[53px] lg:flex-row lg:items-stretch lg:justify-between"
       >
         {dict.footer.step.map(
           (
