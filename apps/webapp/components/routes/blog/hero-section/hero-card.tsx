@@ -15,9 +15,9 @@ export const HeroArticleCard = ({
     <div className="w-full list-none lg:w-1/2">
       <Link
         href={`/blog/${sectionSlug}/${post?.slug}`}
-        className="w-ful h-full rounded-md bg-red-500"
+        className="h-full bg-red-500 rounded-md w-ful"
       >
-        <figure className="relative h-space-400 w-full overflow-hidden rounded-md">
+        <figure className="relative w-full overflow-hidden rounded-md h-space-400">
           <Image
             src={post?.thumbnail?.url}
             alt={post.title}
@@ -26,18 +26,18 @@ export const HeroArticleCard = ({
                 ? { loading: 'lazy' }
                 : { priority: true }
               : { priority: true })}
-            className="bg-zoom rounded-md object-cover transition-all ease-in"
+            className="object-cover transition-all ease-in rounded-md bg-zoom"
             fill
           />
         </figure>
 
-        <div className="mt-space-20 flex w-full flex-1 flex-col md:flex-row">
+        <div className="flex flex-col flex-1 w-full mt-space-20 md:flex-row">
           {/* <p className="text-xl">
             <span className="font-semibold sub-2-lg">/Recents:</span>
           </p> */}
           {/* Meta */}
-          <div className="min-w-40 text-sm sm:pr-5">
-            <div className="mt-space-10 flex w-auto flex-col">
+          <div className="text-sm min-w-40 sm:pr-5">
+            <div className="flex flex-col w-auto mt-space-10">
               <span className="font-futura-pt-heavy font-bolt">
                 {post?.authorName}
               </span>
@@ -56,14 +56,14 @@ export const HeroArticleCard = ({
           </div>
 
           {/* Content */}
-          <div className="mt-space-10 flex w-full flex-1 flex-col space-y-space-10">
+          <div className="flex flex-col flex-1 w-full mt-space-10 space-y-space-10">
             <h1
               title={post?.title}
               className="truncate_text truncate_text--5-lines font-bolt heading2"
             >
               {post?.title}
             </h1>
-            <p className="truncate_text md:truncate_text--4-lines truncate_text--5-lines text-sub-2-lt w-full flex-grow">
+            <p className="flex-grow w-full truncate_text md:truncate_text--4-lines truncate_text--5-lines text-sub-2-lt">
               {post?.description}
             </p>
           </div>
