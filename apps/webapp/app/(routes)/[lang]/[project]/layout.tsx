@@ -1,9 +1,9 @@
 import { getDictionary } from '@/dictionaries'
-import { ProjectPageProps } from '@/types/routing.type'
+import { ProjectPageProps, ProjectPagePropsWithChildren } from '@/types/routing.type'
 import { getProjectBySlug } from '@/lib/projects'
 import { Metadata } from 'next'
 
-export default function ProjectPagesLayout({ children }: ProjectPageProps) {
+export default function ProjectPagesLayout({ children }: ProjectPagePropsWithChildren) {
   return children
 }
 

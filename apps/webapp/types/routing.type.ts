@@ -10,9 +10,12 @@ export interface CommonPageProps {
   params: CommonPageParams
 }
 
-export type ProjectPageParams = { project: string; lang: Lang }
+export interface ProjectPageParams { project: string; lang: Lang }
 
-export type ProjectPageProps = {
-  children: React.ReactNode
+export interface ProjectPageProps {
   params: ProjectPageParams
+}
+
+export interface ProjectPagePropsWithChildren {
+  children: React.ReactNode
 }

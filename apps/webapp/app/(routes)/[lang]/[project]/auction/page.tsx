@@ -1,5 +1,5 @@
 import { getDictionary } from '@/dictionaries'
-import { Lang, locales } from '@/dictionaries/locales'
+import { locales } from '@/dictionaries/locales'
 import { AuctionBids } from '@/components/routes/project/auction/auction-bids'
 import { AuctionDataCard } from '@/components/routes/project/auction/auction-data-card'
 import { ProjectHeader } from '@/components/routes/project/project-header'
