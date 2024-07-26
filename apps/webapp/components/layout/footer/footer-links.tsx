@@ -7,7 +7,7 @@ export function FooterLinks() {
     <div className="container flex flex-col p-10 text-left bg-primary lg:flex-row">
       <Link href={`/`} className="min-w-80 lg:mr-[10%] lg:text-left">
         <IconBitlauncher className="w-full" />
-        <p className="w-full py-5 pb-10 pl-2 paragraph lg:py-10">
+        <p className="w-full py-5 pb-10 paragraph lg:py-10">
           Be Part Of The Intelligent Future.
         </p>
       </Link>
