@@ -10,7 +10,9 @@ export interface CommonPageProps {
   params: CommonPageParams
 }
 
-export interface ProjectPageParams { project: string; lang: Lang }
+export interface ProjectPageParams extends CommonPageParams {
+  project: string;
+}
 
 export interface ProjectPageProps {
   params: ProjectPageParams
