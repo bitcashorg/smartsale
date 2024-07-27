@@ -31,7 +31,6 @@ export default async function RootLayout({
   children,
   params
 }: RootLayoutProps) {
-  console.log('VERCEL_URL', process.env.VERCEL_URL)
   const dict = await getDictionary(params.lang)
   return (
     <html
