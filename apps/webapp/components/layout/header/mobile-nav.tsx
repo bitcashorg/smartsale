@@ -11,7 +11,7 @@ import { LangProp } from '@/types/routing.type'
 export function MobileNav({ lang, dict }: MobileNavProps) {
   const [open, toggleOpen] = useToggle(false)
 
-  // control the body scroll
+  //* Control the body scroll
   useEffect(() => {
     document.body.style.overflow = open ? 'hidden' : 'auto'
     return () => {
@@ -29,18 +29,18 @@ export function MobileNav({ lang, dict }: MobileNavProps) {
         size={56}
       />
       <AnimatePresence>
-        {open ? (
+        {open && (
           <Transition duration={0.3}>
             <div className="mobile-nav">
               <NavLinks
                 mobile
                 lang={lang}
                 dict={dict}
-                toggleOpen={toggleOpen}
+                toggleOpen={() => toggleOpen(false)}
               />
             </div>
           </Transition>
-        ) : null}
+        )}
       </AnimatePresence>
     </div>
   )

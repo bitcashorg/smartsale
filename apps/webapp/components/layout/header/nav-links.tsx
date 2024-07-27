@@ -46,7 +46,6 @@ export function NavLinks({
           : openAccountModal && openAccountModal(),
       disabled: !bitcashAccount
     },
-
     {
       id: 'about',
       href: '/learn/batch-auctions',
@@ -105,13 +104,18 @@ export function NavLinks({
         key={`${mobile ? 'mobile' : 'desktop'}-link-${link.href}-${uuidv4()}`}
         shallow
         className="flex"
-        href={`/${lang}${link.href}` || location.href}
+        href={link.href ? `/${lang}${link.href}` : '#'}
         onClick={e => {
           e.preventDefault()
-          if (link.action) return link.action()
+          if (link.action) {
+            link.action()
+          }
           if (link.href) {
-            router.push(link.href)
-            toggleOpen && toggleOpen(false)
+            router.push(`/${lang}${link.href}`)
+          }
+          if (toggleOpen) {
+            console.log('Toggling menu closed')
+            toggleOpen(false)
           }
         }}
         aria-disabled={link.disabled}
