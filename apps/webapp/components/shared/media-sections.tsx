@@ -27,10 +27,18 @@ export function MediaSections({ sections, lang }: MediaSectionsProps) {
                 </Link>
               </div>
 
-              {/* <ul className="grid-cols-auto-dense grid w-full grid-cols-[repeat(auto-fill,minmax(250px,1fr))] flex-col gap-5 py-5 sm:flex-wrap"> */}
-              <ul className="grid w-full grid-cols-[repeat(auto-fill,minmax(288px,1fr))] flex-col gap-8 py-5 sm:flex-wrap">
-                {section?.videos?.slice(0, 4)?.map(video => (
-                  <MediaCard video={video} key={video.id} lang={lang} />
+              <ul className="grid w-full grid-cols-1 gap-8 py-5 sm:grid-cols-2 md:grid-cols-4 xl:grid-cols-5">
+                {section?.videos?.map((video, index) => (
+                  <MediaCard
+                    video={video}
+                    key={video.id}
+                    lang={lang}
+                    className={cn(
+                      index >= 2 && 'hidden sm:block',
+                      index >= 4 && 'md:block',
+                      index >= 5 && 'xl:block',
+                    )}
+                  />
                 ))}
               </ul>
             </section>

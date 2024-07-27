@@ -91,7 +91,7 @@ export default function Newsletter({ lang }: LangProp) {
   }, [email])
 
   return (
-    <div className="relative m-10 overflow-hidden" id="newsletter">
+    <div className="relative my-10 overflow-hidden" id="newsletter">
       <GoogleReCaptchaProvider
         reCaptchaKey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ''}
         // language="[optional_language]"
