@@ -1,4 +1,5 @@
-import { EVMContractData } from "../types";
+import { sepolia } from "viem/chains";
+import { EVMContractData } from "../../types";
 
 export const TestnetEasyAuction: EVMContractData = {
   address: "0x8d37219725eB0088360f744A5d894035D0f88F82",
@@ -6,6 +7,7 @@ export const TestnetEasyAuction: EVMContractData = {
   chainId: 15557,
   chainType: "evm",
   chainName: "EOS EVM Tesnet",
+  chain: sepolia,
   abi: [
     {
       inputs: [],

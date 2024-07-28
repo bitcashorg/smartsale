@@ -1,10 +1,10 @@
-import { TokenContractData } from "../types";
+import { EOSTokenContractData} from '../../types';
 
-export const EOSUSDT: TokenContractData = {
-  address: "tethertether",
-  name: "EOS USDT",
-  symbol: "USDT",
-  decimals: 4,
+export const EOSBITUSD: EOSTokenContractData = {
+  address: "bkbtokentest",
+  name: "BITUSD",
+  symbol: "BITUSD",
+  decimals: 2,
   indexFromBlock: 0,
   chainId: "aca376f206b8fc25a6ed44dbdc66547c36c6c33e3a119ffbeaef943642f0e906", // eos_evm
   chainType: "antelope",

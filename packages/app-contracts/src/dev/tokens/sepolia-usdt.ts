@@ -1,14 +1,16 @@
-import { EVMTokenContractData } from "../types";
+import { sepolia } from "viem/chains";
+import { EVMTokenContractData } from "../../types";
 
-export const TestnetMBOTSPL: EVMTokenContractData = {
-  address: "0x357752b66961021524b44523cD90a8B3861803E5",
-  name: "MBOTS Prelaunch Token",
-  symbol: "MBOTSPL",
+export const SepoliaUSDT: EVMTokenContractData = {
+  address: "0x5b148580635e8b67184bcb496741e423f2c326bf",
+  name: "USDT Token",
+  symbol: "USDT",
   decimals: 6,
-  indexFromBlock: 30303655,
-  chainId: 15557,
+  indexFromBlock: 5394842,
+  chainId: 11155111, // sepolia
   chainType: "evm",
-  chainName: "EOS EVM Tesnet",
+  chainName: "Sepolia",
+  chain: sepolia,
   abi: [
     {
       inputs: [
@@ -44,25 +46,6 @@ export const TestnetMBOTSPL: EVMTokenContractData = {
         },
       ],
       name: "Approval",
-      type: "event",
-    },
-    {
-      anonymous: false,
-      inputs: [
-        {
-          indexed: true,
-          internalType: "address",
-          name: "previousOwner",
-          type: "address",
-        },
-        {
-          indexed: true,
-          internalType: "address",
-          name: "newOwner",
-          type: "address",
-        },
-      ],
-      name: "OwnershipTransferred",
       type: "event",
     },
     {
@@ -158,19 +141,6 @@ export const TestnetMBOTSPL: EVMTokenContractData = {
       type: "function",
     },
     {
-      inputs: [
-        {
-          internalType: "uint256",
-          name: "amount",
-          type: "uint256",
-        },
-      ],
-      name: "burn",
-      outputs: [],
-      stateMutability: "nonpayable",
-      type: "function",
-    },
-    {
       inputs: [],
       name: "decimals",
       outputs: [
@@ -250,24 +220,6 @@ export const TestnetMBOTSPL: EVMTokenContractData = {
       type: "function",
     },
     {
-      inputs: [
-        {
-          internalType: "address",
-          name: "recipient",
-          type: "address",
-        },
-        {
-          internalType: "uint256",
-          name: "amount",
-          type: "uint256",
-        },
-      ],
-      name: "issue",
-      outputs: [],
-      stateMutability: "nonpayable",
-      type: "function",
-    },
-    {
       inputs: [],
       name: "name",
       outputs: [
@@ -278,26 +230,6 @@ export const TestnetMBOTSPL: EVMTokenContractData = {
         },
       ],
       stateMutability: "view",
-      type: "function",
-    },
-    {
-      inputs: [],
-      name: "owner",
-      outputs: [
-        {
-          internalType: "address",
-          name: "",
-          type: "address",
-        },
-      ],
-      stateMutability: "view",
-      type: "function",
-    },
-    {
-      inputs: [],
-      name: "renounceOwnership",
-      outputs: [],
-      stateMutability: "nonpayable",
       type: "function",
     },
     {
@@ -379,18 +311,5 @@ export const TestnetMBOTSPL: EVMTokenContractData = {
       stateMutability: "nonpayable",
       type: "function",
     },
-    {
-      inputs: [
-        {
-          internalType: "address",
-          name: "newOwner",
-          type: "address",
-        },
-      ],
-      name: "transferOwnership",
-      outputs: [],
-      stateMutability: "nonpayable",
-      type: "function",
-    },
-  ],
-};
+  ] as const,
+} as const;
