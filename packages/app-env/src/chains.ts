@@ -1,5 +1,5 @@
+import { devContracts, prodContracts } from "app-contracts";
 import { Chain } from "viem";
-import { sepolia } from "viem/chains";
 
 export const eosEvmTestnet: Chain = {
   nativeCurrency: {
@@ -20,21 +20,16 @@ export const eosEvmTestnet: Chain = {
     },
   },
   testnet: true,
-} as const;
+};
 
-const prodChains: Chain[] = [eosEvmTestnet, sepolia];
-const testChains: Chain[] = [];
+const prodChains: Chain[] = prodContracts.tokens.evm.map(t => t.chain)
+const testChains: Chain[] = devContracts.tokens.evm.map(t => t.chain).concat([eosEvmTestnet])
 
-// note: use .entries() to get an array
-export const smartsaleChains = {
+export const appChains = {
   dev: createMapFromId(prodChains),
   prod: createMapFromId(testChains),
 } as const;
 
 function createMapFromId(items: Chain[]): Map<number, Chain> {
-  const mapFromId = new Map<number, Chain>();
-
-  items.forEach((item) => mapFromId.set(item.id, item));
-
-  return mapFromId;
+  return new Map<number, Chain>(items.map(item => [item.id, item]));
 }

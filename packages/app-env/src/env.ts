@@ -1,4 +1,4 @@
-import { smartsaleChains } from "./chains";
+import { appChains } from "./chains";
 import {
   EOSFakeUSDT,
   EOSUSDT,
@@ -16,7 +16,7 @@ const prod: SmartsaleEnvConfig = {
     url : 'https://byqpuulbryhqwvxpoobc.supabase.co',
     anonKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJ5cXB1dWxicnlocXd2eHBvb2JjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTMxMjkxNTMsImV4cCI6MjAyODcwNTE1M30.2kikQFX8PhOIzTnojaE0J06E94j92dtpPBI832EktK8',
   },
-  chains: smartsaleChains.prod,
+  chains: appChains.prod,
   esrCallbackUrl: "https://bitlauncher.ai/api/esr",
   issuer: {
     eos: "launchpad.bk",
@@ -39,7 +39,7 @@ const dev: SmartsaleEnvConfig = {
     url : 'https://jvpdyxpjpodxsuvhufpw.supabase.co',
     anonKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imp2cGR5eHBqcG9keHN1dmh1ZnB3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTMxMzMxMDcsImV4cCI6MjAyODcwOTEwN30.KkwK6Px8MG03QPDScsKjLc48GU-RkTs9beT946vD2vI',
   },
-  chains: smartsaleChains.dev,
+  chains: appChains.dev,
   esrCallbackUrl: "https://dev.bitlauncher.ai/api/esr",
   issuer: {
     eos: "gaboesquivel",

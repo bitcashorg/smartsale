@@ -1,12 +1,12 @@
-import { EVMTokenContractData, SepoliaUSDT, TestnetUSDT } from 'app-contracts'
+import { EVMTokenContractData, SepoliaUSDT, TestnetUSDT, appContracts } from 'app-contracts'
 import { runPromisesInSeries } from '~/lib/utils'
 
 import { Address, Log, PublicClient, createPublicClient, http, parseAbiItem, stringify } from 'viem'
 import { TransferEvent } from '~/modules/auction/auction.type'
 import { sepolia } from 'viem/chains'
-import { smartsaleChains } from 'app-env'
+import { appChains } from 'app-env'
 
-const tokens: EVMTokenContractData[] = [SepoliaUSDT, TestnetUSDT]
+const tokens: EVMTokenContractData[] = appContracts.dev.tokens.evm
 
 export async function listenToEvmTransfers() {
   console.log('subscribing to evm usdt transfers ...')
@@ -14,7 +14,7 @@ export async function listenToEvmTransfers() {
 }
 
 async function listenToEvmTransfersFn(token: EVMTokenContractData) {
-  const chain = smartsaleChains.dev.get(token.chainId)
+  const chain = appChains.dev.get(token.chainId)
   if (!chain) return
   console.log(`listening usdt transfers for token ${token.symbol} on chain ${chain.name}`)
   const client: PublicClient = createPublicClient({

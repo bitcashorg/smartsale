@@ -1,4 +1,5 @@
 import type { Abi, Address } from "abitype";
+import { Chain } from "viem";
 export interface ContractData {
   abi: Abi;
   address: Address | string;
@@ -17,11 +18,13 @@ export interface TokenContractData extends ContractData {
 export interface EVMContractData extends ContractData {
   address: Address;
   chainId: number;
+  chain: Chain;
 }
 
 export interface EVMTokenContractData extends TokenContractData {
   address: Address;
   chainId: number;
+  chain: Chain;
 }
 
 export interface EOSContractData extends ContractData {

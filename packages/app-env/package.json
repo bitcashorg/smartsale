@@ -2,14 +2,15 @@
   "name": "app-env",
   "version": "0.0.1",
   "private": true,
-  "description": "bitlauncher Environment Configurations",
+  "description": "Environment Configurations",
   "author": "gaboesquivel.com",
   "license": "ISC",
   "main": "./src/index.ts",
   "types": "./src/index.ts",
   "dependencies": {
-    "viem": "latest",
-    "app-contracts": "workspace:*"
+    "app-contracts": "workspace:*",
+    "lodash": "^4.17.21",
+    "viem": "latest"
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
