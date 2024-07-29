@@ -1,4 +1,3 @@
-// NavLinks.js
 'use client'
 
 import { LangProp } from '@/types/routing.type'
@@ -112,6 +111,7 @@ export function NavLinks({ mobile = false, lang, dict }: { mobile?: boolean } & 
             console.log('Navigating to:', link.href)
             router.push(`/${lang}${link.href}`)
           }
+          console.log('Closing menu')
           close() // Close the menu using context
         }}
         aria-disabled={link.disabled}

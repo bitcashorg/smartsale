@@ -9,7 +9,11 @@ function useMobileNavFn() {
 
   const toggleOpen = () => {
     console.log('Toggling open state')
-    setOpen(prev => !prev)
+    setOpen(prev => {
+      const newState = !prev
+      console.log('New open state:', newState)
+      return newState
+    })
   }
 
   const close = () => {
