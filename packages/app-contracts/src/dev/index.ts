@@ -1,11 +1,3 @@
-export * from "./auction/testnet-easy-auction";
-export * from "./auction/testnet-deposit-order";
-export * from "./tokens/testnet-usd-cred";
-export * from "./tokens/testnet-mbots-prelaunch";
-export * from "./tokens/sepolia-usdt";
-export * from "./tokens/testnet-usdt";
-export * from "./tokens/eos-fake-bitusd";
-export * from "./tokens/eos-fake-usdt";
 
 import { TestnetEasyAuction } from "./auction/testnet-easy-auction";
 import { TestnetDepositOrder } from "./auction/testnet-deposit-order";
@@ -15,6 +7,7 @@ import { SepoliaUSDT } from "./tokens/sepolia-usdt";
 import { TestnetUSDT } from "./tokens/testnet-usdt";
 import { EOSFakeBITUSD } from "./tokens/eos-fake-bitusd";
 import { EOSFakeUSDT } from "./tokens/eos-fake-usdt";
+// import { TestnetBLPL } from "./tokens/testnet-blpl";
 import {ContractData, EOSTokenContractData, EVMTokenContractData} from '../types';
 
  const evmTokens: EVMTokenContractData[]  = [
@@ -22,10 +15,11 @@ import {ContractData, EOSTokenContractData, EVMTokenContractData} from '../types
   TestnetMBOTSPL,
   SepoliaUSDT,
   TestnetUSDT,
+  // TestnetBLPL
 ]
 
 const eosTokens: EOSTokenContractData[] = [
-    EOSFakeBITUSD,
+  EOSFakeBITUSD,
   EOSFakeUSDT,
 ]
 
@@ -41,3 +35,13 @@ export const devContracts = {
   },
   auctions
 }
+
+export * from "./auction/testnet-easy-auction";
+export * from "./auction/testnet-deposit-order";
+export * from "./tokens/testnet-usd-cred";
+export * from "./tokens/testnet-mbots-prelaunch";
+export * from "./tokens/sepolia-usdt";
+export * from "./tokens/testnet-usdt";
+export * from "./tokens/eos-fake-bitusd";
+export * from "./tokens/eos-fake-usdt";
+export * from "./tokens/testnet-blpl";
