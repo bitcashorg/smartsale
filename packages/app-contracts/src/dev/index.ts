@@ -7,7 +7,7 @@ import { SepoliaUSDT } from "./tokens/sepolia-usdt";
 import { TestnetUSDT } from "./tokens/testnet-usdt";
 import { EOSFakeBITUSD } from "./tokens/eos-fake-bitusd";
 import { EOSFakeUSDT } from "./tokens/eos-fake-usdt";
-// import { TestnetBLPL } from "./tokens/testnet-blpl";
+import { TestnetBLPL } from "./tokens/testnet-blpl";
 import {ContractData, EOSTokenContractData, EVMTokenContractData} from '../types';
 
  const evmTokens: EVMTokenContractData[]  = [
@@ -15,7 +15,7 @@ import {ContractData, EOSTokenContractData, EVMTokenContractData} from '../types
   TestnetMBOTSPL,
   SepoliaUSDT,
   TestnetUSDT,
-  // TestnetBLPL
+  TestnetBLPL
 ]
 
 const eosTokens: EOSTokenContractData[] = [
