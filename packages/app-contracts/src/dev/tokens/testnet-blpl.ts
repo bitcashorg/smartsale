@@ -1,6 +1,6 @@
 import { erc20Abi } from "viem";
 import { EVMTokenContractData } from "../../types";
-import {eosEvmTestnet} from 'app-env';
+import {eosEvmTestnet} from '../../../../app-env/src/chains';
 
 export const TestnetBLPL: EVMTokenContractData = {
   address: "0x2BF8feebD09B2520E69f27294768774544c98985",

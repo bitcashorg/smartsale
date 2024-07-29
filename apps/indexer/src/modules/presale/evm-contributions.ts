@@ -1,4 +1,4 @@
-import { EVMTokenContractData, SepoliaUSDT, TestnetUSDT } from 'app-contracts'
+import { EVMTokenContractData, appContracts } from 'app-contracts'
 import { runPromisesInSeries } from '~/lib/utils'
 
 import { Address, Log, PublicClient, createPublicClient, http, parseAbiItem, stringify } from 'viem'
@@ -7,7 +7,7 @@ import { sepolia } from 'viem/chains'
 import { appChains } from 'app-env'
 
 const presaleWallet = '0xf7bb6BD787FFbA43539219560E3B8162Ba8EEF09'
-const tokens: EVMTokenContractData[] = [SepoliaUSDT, TestnetUSDT]
+const tokens: EVMTokenContractData[] = appContracts.dev.tokens.evm
 
 export async function listenToEvmContributions() {
   console.log('subscribing to evm usdt transfers ...')
