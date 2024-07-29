@@ -1,5 +1,5 @@
 import express from 'express'
-import { getCurrentBlockHeight } from '../lib/evm-client'
+import { getCurrentBlockHeight } from '../lib/issuer-client'
 
 export function startExpress() {
   const app = express()

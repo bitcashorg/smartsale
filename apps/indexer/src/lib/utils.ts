@@ -1,7 +1,7 @@
 import fs from 'fs/promises'
 import { erc20Abi } from 'abitype/abis'
-import { client } from './evm-client'
-import { Abi, Address, parseUnits } from 'viem'
+import {Abi, Address, parseUnits, http, createPublicClient} from 'viem';
+import {eosEvmTestnet} from 'app-env';
 
 export async function writeToFile(data: string, filePath: string) {
   try {
@@ -38,6 +38,10 @@ export function runPromisesInSeries<T>(
 }
 
 export async function getTokenDetails({ address }: { address: Address }) {
+      const client = createPublicClient({
+      chain: eosEvmTestnet,
+      transport: http(),
+    })
   const results = await client.multicall({
     contracts: [
       {

@@ -26,7 +26,7 @@ const prodChains: Chain[] = [eosEvmTestnet, sepolia];
 const testChains: Chain[] = [];
 
 // note: use .entries() to get an array
-export const smartsaleChains = {
+export const appChains = {
   dev: createMapFromId(prodChains),
   prod: createMapFromId(testChains),
 } as const;
