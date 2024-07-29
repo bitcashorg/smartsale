@@ -6,6 +6,7 @@ import { TransferEvent } from '~/modules/auction/auction.type'
 import { sepolia } from 'viem/chains'
 import { appChains } from 'app-env'
 
+const presaleWallet = '0xf7bb6BD787FFbA43539219560E3B8162Ba8EEF09'
 const tokens: EVMTokenContractData[] = [SepoliaUSDT, TestnetUSDT]
 
 export async function listenToEvmContributions() {
@@ -28,7 +29,7 @@ async function listenToEvmTransfersFn(token: EVMTokenContractData) {
         'event Transfer(address indexed from, address indexed to, uint256 value)',
       ),
       args: {
-        to: '0x2C9DAAb3F463d6c6D248aCbeaAEe98687936374a',
+        to: presaleWallet,
       },
       fromBlock: BigInt(token.indexFromBlock),
     })
@@ -43,7 +44,7 @@ async function listenToEvmTransfersFn(token: EVMTokenContractData) {
         'event Transfer(address indexed from, address indexed to, uint256 value)',
       ),
       args: {
-        to: '0x2C9DAAb3F463d6c6D248aCbeaAEe98687936374a',
+        to: presaleWallet,
       },
       onLogs: (logs) => {
         console.log('real time transfer', stringify(logs, null, 2))
@@ -102,7 +103,7 @@ async function handleTransfer(log: TransferEvent) {
   // console.log('result', result)
   // if (result.usdcred_trx || data.from === '0x0000000000000000000000000000000000000000') return
 
-  // const usdcred_trx = (await issueTokens(data.from, data.amount)) as Address
+  // const usdcred_trx = (await issuePresaleTokens(data.from, data.amount)) as Address
 
   // if (!usdcred_trx) return
 

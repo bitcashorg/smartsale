@@ -4,7 +4,7 @@ import { createWalletClient } from 'viem'
 import { appenv } from '~/config'
 import { Address, http } from 'viem'
 
-export async function issueTokens(to: Address, amount: bigint) {
+export async function issuePresaleTokens(to: Address, amount: bigint) {
   console.log('issueTokens', {
     args: [to, amount],
   })
