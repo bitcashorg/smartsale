@@ -20,7 +20,6 @@ const eosTokens: EOSTokenContractData[] =[
   EOSBITUSD
 ]
 
-
 const auctions:ContractData[] = [
 
 ]
