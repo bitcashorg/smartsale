@@ -19,8 +19,7 @@ export function BgHeader({
         alt={heading}
         priority
       /> */}
-
-      <h1 className="heading mb-6 flex max-w-[70%] justify-center text-center text-5xl leading-loose drop-shadow-md md:text-6xl">
+      <h1 className="heading mb-6 flex max-w-[70%] justify-center text-center text-4xl leading-loose drop-shadow-md md:text-6xl">
         <Balancer>{heading}</Balancer>
       </h1>
 

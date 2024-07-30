@@ -3,7 +3,6 @@ import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3'
 import { subscribeToNewsletter } from '@/actions'
 import { Button, buttonVariants } from '@/components/ui/button'
 import {
-  IconBitlauncher,
   IconDiscord,
   IconDownRightArrow
 } from '@/components/ui/icons'

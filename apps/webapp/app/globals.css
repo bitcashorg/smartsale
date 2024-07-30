@@ -294,21 +294,39 @@ input[type='number'] {
   @apply fixed inset-x-0 flex flex-col items-center pb-20 overflow-hidden top-16 justify-evenly bg-background;
 }
 
-/* BLUR EFFECT TO BACKGROUND CIRCLE */
+/* BLUR DOT EFFECT TO BACKGROUND CIRCLE UPCOMING SECTION */
 .blur-effect-bg {
-  --size: 580px;
+  /* Default mobile size */
+  --size: 320px; /* Smaller size for mobile */
   --speed: 50s;
   --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
 
-  min-width: var(--size);
-  min-height: var(--size);
+  width: var(--size);
+  height: var(--size);
   filter: blur(calc(var(--size) / 3));
   background-image: linear-gradient(
     hsla(293, 64%, 44%, 1),
     hsla(293, 64%, 44%, 1)
   );
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-  /* z-index: -1; */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .blur-effect-bg {
+    --size: 460px; /* Intermediate size for tablets */
+  }
+}
+
+/* Large devices (desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  .blur-effect-bg {
+    --size: 460px; /* Full size for desktop and beyond */
+  }
 }
 
 .truncate_text {
