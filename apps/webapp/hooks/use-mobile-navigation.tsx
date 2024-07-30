@@ -1,4 +1,3 @@
-// MobileNavContext.tsx
 'use client'
 
 import { createContextHook } from '@blockmatic/hooks-utils'
@@ -8,22 +7,17 @@ function useMobileNavFn() {
   const [open, setOpen] = useState(false)
 
   const toggleOpen = () => {
-    console.log('Toggling open state')
     setOpen(prev => {
       const newState = !prev
-      console.log('New open state:', newState)
       return newState
     })
   }
 
   const close = () => {
-    console.log('Closing menu')
     setOpen(false)
   }
-
   // Control the body scroll
   useEffect(() => {
-    console.log(`Setting body overflow to ${open ? 'hidden' : 'auto'}`)
     document.body.style.overflow = open ? 'hidden' : 'auto'
     return () => {
       document.body.style.overflow = 'auto'
@@ -33,7 +27,7 @@ function useMobileNavFn() {
   return {
     open,
     toggleOpen,
-    close,
+    close
   }
 }
 

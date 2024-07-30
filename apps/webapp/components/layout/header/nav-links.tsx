@@ -11,7 +11,11 @@ import { useAccount } from 'wagmi'
 import { v4 as uuidv4 } from 'uuid'
 import { useMobileNav } from '@/hooks/use-mobile-navigation'
 
-export function NavLinks({ mobile = false, lang, dict }: { mobile?: boolean } & NavLinksProps) {
+export function NavLinks({
+  mobile = false,
+  lang,
+  dict
+}: { mobile?: boolean } & NavLinksProps) {
   const { loginRedirect, session, logout } = useSession()
   const { openConnectModal } = useConnectModal()
   const { openAccountModal } = useAccountModal()
@@ -19,8 +23,6 @@ export function NavLinks({ mobile = false, lang, dict }: { mobile?: boolean } & 
   const router = useRouter()
   const { close } = useMobileNav() // Use context to close the menu
   const bitcashAccount = session?.account
-
-  console.log('NavLinks rendered with mobile:', mobile)
 
   const links = [
     {
@@ -103,15 +105,12 @@ export function NavLinks({ mobile = false, lang, dict }: { mobile?: boolean } & 
         href={link.href ? `/${lang}${link.href}` : '#'}
         onClick={e => {
           e.preventDefault()
-          console.log('Link clicked:', link.text)
           if (link.action) {
             link.action()
           }
           if (link.href) {
-            console.log('Navigating to:', link.href)
             router.push(`/${lang}${link.href}`)
           }
-          console.log('Closing menu')
           close() // Close the menu using context
         }}
         aria-disabled={link.disabled}

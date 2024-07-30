@@ -1,5 +1,5 @@
-// MobileNav.js
 'use client'
+
 import UseAnimations from 'react-useanimations'
 import menu4 from 'react-useanimations/lib/menu4'
 import { NavLinks } from './nav-links'
@@ -7,20 +7,23 @@ import { Transition } from '@/components/shared/transition'
 import { AnimatePresence } from 'framer-motion'
 import { LangProp } from '@/types/routing.type'
 import { useMobileNav } from '@/hooks/use-mobile-navigation'
+import { useEffect } from 'react'
 
 export function MobileNav({ lang, dict }: MobileNavProps) {
   const { open, toggleOpen } = useMobileNav()
 
-  console.log(`MobileNav rendered with open state: ${open}`)
-
   return (
     <div>
       <UseAnimations
-        onClick={toggleOpen}
+        key={open.toString()}
+        onClick={() => {
+          toggleOpen()
+        }}
         strokeColor="white"
         animation={menu4}
         wrapperStyle={{ marginRight: '-10px' }}
         size={56}
+        reverse={open}
       />
       <AnimatePresence>
         {open && (

@@ -68,11 +68,11 @@ export function Providers({ children, ...props }: ThemeProviderProps) {
               }}
             >
               <SessionProvider>
-                <MobileNavProvider>
                 <UseSigningRequestProvider>
+                <MobileNavProvider>
                   {children}
-                </UseSigningRequestProvider>
                 </MobileNavProvider>
+                </UseSigningRequestProvider>
               </SessionProvider>
             </RainbowKitProvider>
           </WagmiProvider>
