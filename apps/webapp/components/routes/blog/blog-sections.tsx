@@ -39,9 +39,9 @@ export function BlogSections({
                 </Link>
               </div>
 
-              <div className="grid w-full grid-cols-[repeat(auto-fill,minmax(288px,1fr))] flex-col gap-8 py-5 sm:flex-wrap">
+              <div className="grid w-full grid-cols-1 gap-6 py-5 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5">
                 {section?.articles
-                  ?.slice(0, 4)
+                  // ?.slice(0, 4)
                   ?.map((post, index) => (
                     <ArticleCard
                       post={post}
