@@ -27,7 +27,7 @@ export function MediaSections({ sections, lang }: MediaSectionsProps) {
                 </Link>
               </div>
 
-              <ul className="grid w-full grid-cols-1 gap-8 py-5 sm:grid-cols-2 md:grid-cols-4 xl:grid-cols-5">
+              <ul className="grid w-full grid-cols-1 gap-6 py-5 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5">
                 {section?.videos?.map((video, index) => (
                   <MediaCard
                     video={video}

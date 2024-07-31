@@ -26,7 +26,7 @@ export function MediaCard({ video, lang, className }: MediaCardProps) {
             </figure>
           </div>
           <CardContent className="px-3 mt-2">
-            <p className="pt-3 font-semibold leading-tight text-start mb-overflow-hidden truncate_text truncate_text--3-lines text-md">
+            <p className="pt-3 font-semibold leading-tight text-center mb-overflow-hidden truncate_text truncate_text--3-lines text-md">
               <Balancer>{video.snippet.title}</Balancer>
             </p>
           </CardContent>
