@@ -14,7 +14,7 @@ export default function Participate({ lang, dict }: ParticipateProps) {
     <Section heading={dict.footer.stepsInfo}>
       <div
         key="steps-info-title"
-        className="flex flex-col items-center gap-[53px] lg:flex-row lg:items-stretch lg:justify-between"
+        className="flex flex-col items-center gap-[52px] lg:flex-row lg:justify-between"
       >
         {dict.footer.step.map(
           (
@@ -23,15 +23,13 @@ export default function Participate({ lang, dict }: ParticipateProps) {
           ) => (
             <div
               key={`${index}__step-content`}
-              className="flex min-h-[260px] flex-col items-center justify-between rounded-3xl bg-white/90 px-8 py-9 text-justify text-black/90 shadow-md backdrop-blur-xl lg:w-1/3 lg:max-w-[450px] lg:items-start"
+              className="flex min-h-[260px] flex-col items-center justify-between rounded-3xl bg-white/90 px-8 py-6 text-justify text-black/90 shadow-md backdrop-blur-xl lg:w-1/3 lg:max-w-[450px] lg:items-start xl:py-9"
             >
-              <h3 className="flex justify-center w-full h-10 font-sans text-3xl font-bold whitespace-pre-line lg:justify-start lg:text-left">
-                {' '}
+              <h3 className="flex justify-center w-full h-10 font-sans text-3xl font-bold whitespace-pre-line md:text-xl lg:justify-start lg:text-left lg:text-2xl">
                 {step.title}
               </h3>
-
-              <div className="flex items-center justify-between w-full gap-4">
-                <p className="w-[calc(100%-72px)] py-3 text-sm">
+              <div className="flex self-stretch max-w-full gap-4">
+                <p className="w-[calc(100%-75px)] sm:max-w-[324px]">
                   {step.description}
                 </p>
                 {index > 0 ? (
