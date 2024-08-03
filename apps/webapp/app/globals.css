@@ -294,6 +294,14 @@ input[type='number'] {
   @apply fixed inset-x-0 flex flex-col items-center pb-20 overflow-hidden top-16 justify-evenly bg-background;
 }
 
+/* INFOPAGES BG COVER*/
+.infopages-background {
+  @apply relative left-0 top-0 h-[510px] w-full rounded-[45px] flex items-center justify-center;
+  background: url('/images/about-bg.svg') center center no-repeat;
+  background-size: cover;
+}
+
+
 /* BLUR DOT EFFECT TO BACKGROUND CIRCLE UPCOMING SECTION */
 .blur-effect-bg {
   /* Default mobile size */

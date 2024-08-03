@@ -3,20 +3,25 @@ import { Metadata } from 'next'
 import { CommonPageProps } from '@/types/routing.type'
 import { getDictionary } from '@/dictionaries'
 import {
-  LandingPage3,
-  LandingPageContent3
-} from '@/components/_wip/landing-page3'
+  AboutPageLanding,
+  AboutPageContent
+} from '@/components/_wip/AboutPageLanding'
 
 export default async function AboutBitlauncher({ params }: CommonPageProps) {
   const dict = await getDictionary(params.lang)
   return (
     <div className="!py-10 px-7 md:px-3 md:py-24">
-      <LandingPage3 content={content} />
+      <AboutPageLanding
+        content={content}
+        params={{
+          lang: 'en'
+        }}
+      />
     </div>
   )
 }
 
-const content: LandingPageContent3 = {
+const content: AboutPageContent = {
   title: 'About',
   description: `Bitlauncher is a pioneering launchpad dedicated to transforming the landscape of artificial intelligence 
   (AI) and cryptocurrency. We are on a mission to empower the next wave of AI innovation by providing
@@ -33,8 +38,8 @@ const content: LandingPageContent3 = {
   image: {
     alt: 'dBoard',
     src: '/images/about-bg.svg',
-    width: 500,
-    height: 500
+    width: 610,
+    height: 468
   }
 }
 
