@@ -5,9 +5,11 @@ import { CommunityCard } from '@/components/shared/community-card'
 export function BgHeader({
   heading,
   subheading,
+  imageSrc
 }: {
   heading: string
   subheading?: string
+  imageSrc: string
 }) {
   return (
     <header className="relative top-0 z-0 flex flex-col items-center py-10 bg-center bg-cover md:pb-8 md:pt-24">
