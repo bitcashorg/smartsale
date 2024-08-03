@@ -6,7 +6,6 @@ import Link from 'next/link'
 export function LearnSection() {
   return (
     <Section heading={content.sectionTitle}>
-      <div className="h-[2px] bg-[#FF52EE] w-28 mx-auto mb-9"></div>
       <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
         <Link href="/blog/bitcash/how-to-register-and-kyc-to-bitcash ">
           <Card className="relative overflow-hidden min-h-96 bg-[#0F113E] rounded-[50px]">
