@@ -19,7 +19,7 @@ function ListItem({ label, value }: ItemProps) {
   }
 
   return (
-    <div className="flex justify-between w-ful">
+    <div className="flex justify-between w-full">
       <h3 className="flex justify-between w-full">
         <span className="opacity-70">{label}: </span>
         <b className="text-right">{typeof value === 'string' ? value : null}</b>
