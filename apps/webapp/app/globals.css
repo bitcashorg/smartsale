@@ -49,6 +49,8 @@
     --fifth-color: 20, 14, 64;
     --pointer-color: 112, 43, 144;
 
+    --alert: 78, 90%, 75%;
+
     --radius: 24px;
   }
 
@@ -96,6 +98,8 @@
     --fifth-color: 20, 14, 64;
     --pointer-color: 112, 43, 144;
 
+    --alert: 78, 90%, 75%;
+
     --radius: 24px;
   }
 }
@@ -113,6 +117,17 @@ a:focus-visible {
 body,
 html {
   @apply bg-background text-foreground;
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "futura-pt", sans-serif;
 }
 
 .open-sans {

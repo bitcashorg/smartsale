@@ -2,8 +2,8 @@ const {
   default: flattenColorPalette
 } = require('tailwindcss/lib/util/flattenColorPalette')
 const svgToDataUri = require('mini-svg-data-uri')
-
 const colors = require('tailwindcss/colors')
+const { fontFamily } = require("tailwindcss/defaultTheme");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -50,7 +50,9 @@ module.exports = {
           100: '#535461',
           200: '#040216',
           300: '#080821',
-          400: '#F5F5F5'
+          400: '#F5F5F5',
+          500: '#5361FF',
+          600: '#9A9EFC'
         },
         tertiary: { blue: '#0000EE' },
         destructive: {
@@ -77,6 +79,9 @@ module.exports = {
         card: {
           DEFAULT: 'hsla(var(--card))',
           foreground: 'hsla(var(--card-foreground))'
+        },
+        alert: {
+          DEFAULT: "hsla(var(--alert))"
         }
       },
       borderRadius: {
@@ -89,6 +94,11 @@ module.exports = {
         buttons: '5px',
         'inputs-shaped': '100px',
         'check-box': '4px'
+      },
+      fontFamily: {
+        sans: ["futura-pt", ...fontFamily.sans],
+        'futura-pt-bold': ['futura-pt-bold', 'sans-serif'],
+        'futura-pt-condensed': ['futura-pt-condensed', 'sans-serif'],
       },
       keyframes: {
         'accordion-down': {
