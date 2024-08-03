@@ -1,6 +1,5 @@
-import Image from 'next/image'
-import Balancer from 'react-wrap-balancer'
 import { CommunityCard } from '@/components/shared/community-card'
+import Balancer from 'react-wrap-balancer'
 
 export function BgHeader({
   heading,
@@ -21,10 +20,10 @@ export function BgHeader({
                 <Balancer>{heading}</Balancer>
               </h2>
               <div className="font-['Futura PT'] text-start text-4xl font-medium leading-[42.35px] text-[#ff51ed]">
-              {subheading}
+                {subheading}
               </div>
             </div>
-            <div className="infopages-background">
+            <div className="infopages-background infopages-background--security">
               <div className="absolute bottom-0 m-4">
                 <CommunityCard />
               </div>

@@ -296,9 +296,20 @@ input[type='number'] {
 
 /* INFOPAGES BG COVER*/
 .infopages-background {
-  @apply relative left-0 top-0 flex h-[510px] w-full items-center justify-center rounded-[45px];
-  background: url('/images/about-bg.svg') center center no-repeat;
   background-size: cover;
+  background-repeat: no-repeat;
+
+  @apply relative left-0 top-0 flex h-[510px] w-full items-center justify-center rounded-[45px];
+}
+
+.infopages-background--whitepaper {
+  background-image: url('/images/info-bg-whitepaper.webp');
+}
+.infopages-background--about {
+  background-image: url('/images/info-bg-about.webp');
+}
+.infopages-background--security {
+  background-image: url('/images/info-bg-security.webp');
 }
 
 /* BLUR DOT EFFECT TO BACKGROUND CIRCLE UPCOMING SECTION */

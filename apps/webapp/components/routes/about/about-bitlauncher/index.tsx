@@ -62,7 +62,7 @@ export async function AboutBitlauncherPageLanding({
                 </span>
               </section>
             </div>
-            <div className="infopages-background">
+            <div className="infopages-background infopages-background--about">
               <div className="absolute bottom-0 m-4">
                 <CommunityCard />
               </div>
