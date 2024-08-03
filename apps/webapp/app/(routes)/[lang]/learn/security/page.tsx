@@ -15,8 +15,7 @@ export default async function SecurityTips({ params }: CommonPageProps) {
     <>
       <BgHeader
         heading={heading}
-        subheading={'Be Part of the Intelligent Future'}
-      />
+        subheading={'Be Part of the Intelligent Future'} imageSrc={''}      />
       <div className="content-container z-30 bg-background text-center !py-10 px-7 md:px-3 md:py-24">
         <PageContent data={content} />
       </div>
