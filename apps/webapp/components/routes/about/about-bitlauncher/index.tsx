@@ -1,21 +1,21 @@
-import Image from 'next/image'
-import { WhyChooseUs } from '@/components/routes/home/why-choose-us'
 import { Features } from '@/components/routes/home/features'
-import { getDictionary } from '@/dictionaries'
-import { Lang } from '@/dictionaries/locales'
+import { WhyChooseUs } from '@/components/routes/home/why-choose-us'
 import { Banner } from '@/components/shared/banner'
 import { CommunityCard } from '@/components/shared/community-card'
+import { getDictionary } from '@/dictionaries'
+import { Lang } from '@/dictionaries/locales'
+import Image from 'next/image'
 
-export async function AboutPageLanding({
+export async function AboutBitlauncherPageLanding({
   content,
   params
-}: AboutPageProps): Promise<JSX.Element> {
+}: AboutBitlauncherPageProps): Promise<JSX.Element> {
   const lang = params.lang
   const dict = await getDictionary(lang)
   return (
     <>
       <section className="w-full py-12 narrow-container md:py-24 lg:py-32">
-        <div className="container px-4 md:px-6">
+        <div className="container px-0 md:px-6">
           <div className="grid items-center gap-4 lg:grid-cols-2">
             <div className="space-y-4">
               <h2 className="font-['Futura PT'] text-7xl tracking-tighter">
@@ -86,13 +86,13 @@ interface Image {
   height: number
 }
 
-export interface AboutPageContent {
+export interface AboutBitlauncherPageContent {
   title: string
   description: string
   image: Image
 }
 
-interface AboutPageProps {
-  content: AboutPageContent
+interface AboutBitlauncherPageProps {
+  content: AboutBitlauncherPageContent
   params: { lang: Lang }
 }

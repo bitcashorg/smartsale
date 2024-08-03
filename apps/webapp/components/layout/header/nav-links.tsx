@@ -1,15 +1,15 @@
 'use client'
 
-import { LangProp } from '@/types/routing.type'
+import { useMobileNav } from '@/hooks/use-mobile-navigation'
 import { useSession } from '@/hooks/use-session'
 import { appConfig } from '@/lib/config'
+import { LangProp } from '@/types/routing.type'
 import { useAccountModal, useConnectModal } from '@rainbow-me/rainbowkit'
+import { formatAddress } from 'app-lib'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
-import { formatAddress } from 'app-lib'
-import { useAccount } from 'wagmi'
 import { v4 as uuidv4 } from 'uuid'
-import { useMobileNav } from '@/hooks/use-mobile-navigation'
+import { useAccount } from 'wagmi'
 
 export function NavLinks({
   mobile = false,
@@ -46,9 +46,9 @@ export function NavLinks({
     },
     {
       id: 'about',
-      href: '/learn/batch-auctions',
+      href: '/about/about-bitlauncher',
       text: dict.nav.about,
-      mobile: false,
+      mobile: true,
       action: null,
       disabled: false
     },

@@ -1,10 +1,10 @@
-import Link from 'next/link'
-import { NavSection, NavItem, footerNavStruct } from '../nav-struct'
 import { IconBitlauncher } from '@/components/ui/icons'
+import Link from 'next/link'
+import { NavItem, NavSection, footerNavStruct } from '../nav-struct'
 
 export function FooterLinks() {
   return (
-    <div className="container flex flex-col px-5 py-10 text-left bg-primary lg:flex-row lg:px-10">
+    <div className="container flex flex-col px-5 py-10 text-left bg-primary lg:flex-row lg:px-10 sm:rounded-b-3xl">
       <Link href={`/`} className="min-w-80 lg:mr-[10%] lg:text-left">
         <IconBitlauncher className="w-full" />
         <p className="w-full py-5 pb-10 paragraph lg:py-10">

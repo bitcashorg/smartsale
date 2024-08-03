@@ -1,32 +1,33 @@
-import Link from 'next/link'
-import * as React from 'react'
-import { IconBitlauncher } from '../../ui/icons'
 import { Button } from '@/components/ui/button'
+import Link from 'next/link'
+import { IconBitlauncher } from '../../ui/icons'
 import { NavLinks } from './nav-links'
 
+import { appConfig } from '@/lib/config'
+import { LangProp } from '@/types/routing.type'
 import dynamic from 'next/dynamic'
 import { Suspense } from 'react'
 import { SessionButtonLoader } from '../session/session-button'
-import { MobileNavLoader } from './mobile-nav'
 import { LangSelector } from './lang-selector'
-import { LangProp } from '@/types/routing.type'
+import { MobileNavLoader } from './mobile-nav'
 import { Navigation } from './new-nav'
-import { appConfig } from '@/lib/config'
 
 export function Header({ lang, dict }: HeaderProps) {
   return (
     <div className="sticky top-0 z-50 flex h-16 bg-background">
-      <div className="container flex flex-row items-center justify-between px-4 bg-background py-11">
+      <div className="container flex flex-row items-center justify-between md:px-4 bg-background py-11">
         <div className="flex h-full items-center lg:min-w-[100px]">
           <Link href={`/${lang}`}>
-            <IconBitlauncher className="ml-6 w-[152px]" />
+            <IconBitlauncher className="w-[152px]" />
           </Link>
         </div>
 
         <div className="hidden md:flex md:gap-3 md:pl-4 lg:ml-[-1px] lg:gap-10">
+          {/* // ? Development only */}
           {appConfig.features.newNavStruct ? (
             <Navigation lang={lang} />
           ) : (
+            // ? Production only until development of newNavStruct is complete (UI/UX + content upt)
             <NavLinks lang={lang} dict={dict} />
           )}
         </div>

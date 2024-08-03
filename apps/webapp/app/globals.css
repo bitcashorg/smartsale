@@ -171,7 +171,7 @@ input[type='number'] {
 }
 
 .newsletter-wrapper {
-  @apply container flex flex-col items-center px-0 mx-auto rounded-3xl backdrop-blur-xl sm:text-center;
+  @apply mx-auto box-content flex flex-col items-center px-0 sm:rounded-3xl sm:text-center;
   background: url('/images/newsletter-bg.webp') center center no-repeat;
   background-size: cover;
 }
@@ -181,7 +181,7 @@ input[type='number'] {
 }
 
 .content-container {
-  @apply flex flex-col w-full max-w-screen-md gap-10 px-5 py-10 mx-auto md:py-24;
+  @apply mx-auto flex w-full max-w-screen-md flex-col gap-10 px-5 py-10 md:py-24;
 }
 
 /** Scrollbar Styling */
@@ -291,16 +291,15 @@ input[type='number'] {
   height: calc(100vh - 64px) !important;
   width: 100vw;
   overflow: hidden;
-  @apply fixed inset-x-0 flex flex-col items-center pb-20 overflow-hidden top-16 justify-evenly bg-background;
+  @apply fixed inset-x-0 top-16 flex flex-col items-center justify-evenly overflow-hidden bg-background pb-20;
 }
 
 /* INFOPAGES BG COVER*/
 .infopages-background {
-  @apply relative left-0 top-0 h-[510px] w-full rounded-[45px] flex items-center justify-center;
+  @apply relative left-0 top-0 flex h-[510px] w-full items-center justify-center rounded-[45px];
   background: url('/images/about-bg.svg') center center no-repeat;
   background-size: cover;
 }
-
 
 /* BLUR DOT EFFECT TO BACKGROUND CIRCLE UPCOMING SECTION */
 .blur-effect-bg {

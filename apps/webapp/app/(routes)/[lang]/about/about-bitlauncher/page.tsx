@@ -1,17 +1,16 @@
-import React from 'react'
-import { Metadata } from 'next'
-import { CommonPageProps } from '@/types/routing.type'
-import { getDictionary } from '@/dictionaries'
 import {
-  AboutPageLanding,
-  AboutPageContent
-} from '@/components/_wip/AboutPageLanding'
+  AboutBitlauncherPageContent,
+  AboutBitlauncherPageLanding
+} from '@/components/routes/about/about-bitlauncher'
+import { getDictionary } from '@/dictionaries'
+import { CommonPageProps } from '@/types/routing.type'
+import { Metadata } from 'next'
 
 export default async function AboutBitlauncher({ params }: CommonPageProps) {
   const dict = await getDictionary(params.lang)
   return (
-    <div className="!py-10 px-7 md:px-3 md:py-24">
-      <AboutPageLanding
+    <div className="!py-10 sm:px-6 md:px-3 md:py-24">
+      <AboutBitlauncherPageLanding
         content={content}
         params={{
           lang: 'en'
@@ -21,7 +20,7 @@ export default async function AboutBitlauncher({ params }: CommonPageProps) {
   )
 }
 
-const content: AboutPageContent = {
+const content: AboutBitlauncherPageContent = {
   title: 'About',
   description: `Bitlauncher is a pioneering launchpad dedicated to transforming the landscape of artificial intelligence 
   (AI) and cryptocurrency. We are on a mission to empower the next wave of AI innovation by providing
