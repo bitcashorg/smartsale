@@ -32,9 +32,6 @@ export async function saveDeposit(
       return { success: false, message: 'No data returned from database' }
     }
 
-    // Revalidate the path where this data is used
-    revalidatePath('/path-to-revalidate')
-
     return {
       success: true,
       message: 'Deposit saved successfully',
