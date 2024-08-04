@@ -5,14 +5,14 @@ export * from './tokens/usdt'
 export * from './tokens/usdc'
 
 import {usdtContracts} from './tokens/usdt'
-import {usdcContracts} from './tokens/usdc'
+// import {usdcContracts} from './tokens/usdc'
 import {EOSUSDT} from './tokens/eos-usdt';
 import {EOSBITUSD} from './tokens/eos-bitusd';
 import { ContractData, EOSTokenContractData, EVMTokenContractData } from '../types'
 
 const evmTokens: EVMTokenContractData[] = [
   ...usdtContracts,
-  ...usdcContracts
+  // ...usdcContracts
 ]
 
 const eosTokens: EOSTokenContractData[] =[

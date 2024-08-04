@@ -1,4 +1,4 @@
-import { TestnetUSDCred } from 'app-contracts'
+import { TestnetBLPL } from 'app-contracts'
 import { eosEvmTestnet } from 'app-env'
 import { createWalletClient } from 'viem'
 import { appenv } from '~/config'
@@ -17,8 +17,8 @@ export async function issuePresaleTokens(to: Address, amount: bigint) {
       account: appenv.evm.issuerAccount,
     })
     return walletClient.writeContract({
-      address: TestnetUSDCred.address,
-      abi: TestnetUSDCred.abi,
+      address: TestnetBLPL.address,
+      abi: TestnetBLPL.abi,
       functionName: 'issue',
       args: [to, amount],
     })

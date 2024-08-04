@@ -5,7 +5,7 @@ import { TransferEvent } from '~/modules/auction/auction.type'
 import { sepolia } from 'viem/chains'
 
 const presaleWallet = '0xf7bb6BD787FFbA43539219560E3B8162Ba8EEF09'
-const tokens: EVMTokenContractData[] = appContracts.dev.tokens.evm
+const tokens: EVMTokenContractData[] = appContracts.dev.tokens.evm && appContracts.prod.tokens.evm
 
 export async function listenToEvmContributions() {
   console.log('subscribing to evm usdt transfers ...')
@@ -85,30 +85,16 @@ async function handleTransfer(log: TransferEvent) {
     amount: log.args.value,
     token: log.address,
     chain_id: sepolia.id,
-    type: 'deposit',
+    type: 'presale',
   }
 
-  // const result = await db.transfers.upsert({
-  //   where: {
-  //     trx_hash: log.transactionHash!,
-  //   },
-  //   update: data,
-  //   create: data,
-  // })
+  console.log('new transfer')
+  console.log(data)
 
   // console.log('result', result)
   // if (result.usdcred_trx || data.from === '0x0000000000000000000000000000000000000000') return
 
   // const usdcred_trx = (await issuePresaleTokens(data.from, data.amount)) as Address
-
-  // if (!usdcred_trx) return
-
-  // await db.transfers.update({
-  //   where: {
-  //     trx_hash: log.transactionHash!,
-  //   },
-  //   data: { usdcred_trx },
-  // })
 
   // console.log('tokens issued', { usdcred_trx, trx: log.transactionHash })
 }
