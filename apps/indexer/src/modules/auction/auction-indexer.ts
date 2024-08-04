@@ -1,5 +1,4 @@
-import { Log, stringify } from 'viem'
-import { client } from '~/lib/evm-client'
+import {Log, stringify, http, createPublicClient} from 'viem';
 import { TestnetEasyAuction } from 'app-contracts'
 import {
   bigintToPostgresTimestamp,
@@ -7,14 +6,19 @@ import {
   getTokenDetails,
   runPromisesInSeries,
 } from '~/lib/utils'
-import { NewAuctionEvent, NewSellOrderEvent, NewUserEvent } from '~/modules/auction/auction.type'
-
+import { NewAuctionEvent, NewSellOrderEvent, NewUserEvent } from './auction.type'
 import BN from 'bn.js'
 import { eosEvmTestnet } from 'app-env'
 import { upsertAuctionDetail, upsertOrder } from '~/lib/supabase-client'
 
 export async function startAuctionIndexer() {
   console.log('indexing starting')
+
+  // TODO: create client for 
+  const client = createPublicClient({
+    chain: eosEvmTestnet,
+    transport: http(),
+  })
 
   // await writeToFile(stringify(TestnetEasyAuction.getEvents(), null, 2), './events.json')
   // Get historical event logs

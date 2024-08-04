@@ -1,12 +1,11 @@
-import { EVMTokenContractData, SepoliaUSDT, TestnetUSDT } from 'app-contracts'
+import { EVMTokenContractData, appContracts } from 'app-contracts'
 import { runPromisesInSeries } from '~/lib/utils'
-
 import { Address, Log, PublicClient, createPublicClient, http, parseAbiItem, stringify } from 'viem'
 import { TransferEvent } from '~/modules/auction/auction.type'
 import { sepolia } from 'viem/chains'
-import { smartsaleChains } from 'app-env'
 
-const tokens: EVMTokenContractData[] = [SepoliaUSDT, TestnetUSDT]
+const presaleWallet = '0xf7bb6BD787FFbA43539219560E3B8162Ba8EEF09'
+const tokens: EVMTokenContractData[] = appContracts.dev.tokens.evm && appContracts.prod.tokens.evm
 
 export async function listenToEvmContributions() {
   console.log('subscribing to evm usdt transfers ...')
@@ -14,11 +13,9 @@ export async function listenToEvmContributions() {
 }
 
 async function listenToEvmTransfersFn(token: EVMTokenContractData) {
-  const chain = smartsaleChains.dev.get(token.chainId)
-  if (!chain) return
-  console.log(`listening usdt transfers for token ${token.symbol} on chain ${chain.name}`)
+  console.log(`listening usdt transfers for token ${token.symbol} on chain ${token.chain.name}`)
   const client: PublicClient = createPublicClient({
-    chain,
+    chain: token.chain,
     transport: http(),
   })
   try {
@@ -28,7 +25,7 @@ async function listenToEvmTransfersFn(token: EVMTokenContractData) {
         'event Transfer(address indexed from, address indexed to, uint256 value)',
       ),
       args: {
-        to: '0x2C9DAAb3F463d6c6D248aCbeaAEe98687936374a',
+        to: presaleWallet,
       },
       fromBlock: BigInt(token.indexFromBlock),
     })
@@ -43,7 +40,7 @@ async function listenToEvmTransfersFn(token: EVMTokenContractData) {
         'event Transfer(address indexed from, address indexed to, uint256 value)',
       ),
       args: {
-        to: '0x2C9DAAb3F463d6c6D248aCbeaAEe98687936374a',
+        to: presaleWallet,
       },
       onLogs: (logs) => {
         console.log('real time transfer', stringify(logs, null, 2))
@@ -88,30 +85,16 @@ async function handleTransfer(log: TransferEvent) {
     amount: log.args.value,
     token: log.address,
     chain_id: sepolia.id,
-    type: 'deposit',
+    type: 'presale',
   }
 
-  // const result = await db.transfers.upsert({
-  //   where: {
-  //     trx_hash: log.transactionHash!,
-  //   },
-  //   update: data,
-  //   create: data,
-  // })
+  console.log('new transfer')
+  console.log(data)
 
   // console.log('result', result)
   // if (result.usdcred_trx || data.from === '0x0000000000000000000000000000000000000000') return
 
-  // const usdcred_trx = (await issueTokens(data.from, data.amount)) as Address
-
-  // if (!usdcred_trx) return
-
-  // await db.transfers.update({
-  //   where: {
-  //     trx_hash: log.transactionHash!,
-  //   },
-  //   data: { usdcred_trx },
-  // })
+  // const usdcred_trx = (await issuePresaleTokens(data.from, data.amount)) as Address
 
   // console.log('tokens issued', { usdcred_trx, trx: log.transactionHash })
 }
