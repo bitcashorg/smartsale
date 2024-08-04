@@ -88,8 +88,9 @@ function PresaleDeposit() {
             console.log('error', error.message)
             toast.error(error.message.split('Contract Call:')[0])
           },
-          onSuccess: () => {
-            toast.success('Deposit successful')
+          onSuccess: trxId => {
+            console.log('Transaction ID:', trxId)
+            toast.success(`Deposit successful ${trxId}`)
           }
         }
       )
