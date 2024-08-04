@@ -28,17 +28,18 @@ export function BlogSections({
               <div className="flex items-center justify-between text-xl mb-space-32">
                 <span className="font-semibold sub-2-lg">/ {section.name}</span>
                 <Link
-                  // TODO: fix add lang prefix on links
-                  //       there seems to a bug where it gets ovewritten
+                  // TODO: fix add lang prefix on links there seems to a bug where it gets ovewritten
                   href={`/blog/${category || section.slug}`}
-                  className={cn('flex items-center align-middle')}
+                  className={cn(
+                    'flex items-center align-middle text-black focus-within:!text-accent hover:!text-accent dark:text-white'
+                  )}
                 >
                   {section.name}
                   <LucideIcons.chevronRight className="h-4 w-7" />
                 </Link>
               </div>
 
-              <div className="grid w-full grid-cols-[repeat(auto-fill,minmax(250px,1fr))] flex-col gap-5 py-5 sm:flex-wrap">
+              <div className="grid w-full grid-cols-1 gap-6 py-5 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5">
                 {section?.articles
                   // ?.slice(0, 4)
                   ?.map((post, index) => (

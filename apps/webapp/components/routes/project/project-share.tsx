@@ -8,7 +8,7 @@ import { Project } from '@/lib/projects'
 export function ProjectShare({ project }: { project: Project }) {
   return (
     <div className="flex flex-col w-full gap-3 mt-5 mb-5">
-      <div className="flex items-center justify-center gap-6 md:justify">
+      <div className="flex items-center justify-center gap-4 md:justify md:gap-1.5 lg:gap-2">
         <Link
           key={'share-twitter'}
           href={`https://twitter.com/${project.twitterUsername}`}

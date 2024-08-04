@@ -1,29 +1,27 @@
 'use client'
 
-import { LangProp } from '@/types/routing.type'
+import { useMobileNav } from '@/hooks/use-mobile-navigation'
 import { useSession } from '@/hooks/use-session'
 import { appConfig } from '@/lib/config'
+import { LangProp } from '@/types/routing.type'
 import { useAccountModal, useConnectModal } from '@rainbow-me/rainbowkit'
+import { formatAddress } from 'app-lib'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
-import { formatAddress } from 'app-lib'
-import { useAccount } from 'wagmi'
 import { v4 as uuidv4 } from 'uuid'
+import { useAccount } from 'wagmi'
 
 export function NavLinks({
   mobile = false,
   lang,
-  dict,
-  toggleOpen
-}: {
-  mobile?: boolean
-  toggleOpen?: (nextValue?: any) => void
-} & NavLinksProps) {
+  dict
+}: { mobile?: boolean } & NavLinksProps) {
   const { loginRedirect, session, logout } = useSession()
   const { openConnectModal } = useConnectModal()
   const { openAccountModal } = useAccountModal()
   const { address } = useAccount()
   const router = useRouter()
+  const { close } = useMobileNav() // Use context to close the menu
   const bitcashAccount = session?.account
 
   const links = [
@@ -46,12 +44,11 @@ export function NavLinks({
           : openAccountModal && openAccountModal(),
       disabled: !bitcashAccount
     },
-
     {
       id: 'about',
-      href: '/learn/batch-auctions',
+      href: '/about/about-bitlauncher',
       text: dict.nav.about,
-      mobile: false,
+      mobile: true,
       action: null,
       disabled: false
     },
@@ -105,14 +102,16 @@ export function NavLinks({
         key={`${mobile ? 'mobile' : 'desktop'}-link-${link.href}-${uuidv4()}`}
         shallow
         className="flex"
-        href={`/${lang}${link.href}` || location.href}
+        href={link.href ? `/${lang}${link.href}` : '#'}
         onClick={e => {
           e.preventDefault()
-          if (link.action) return link.action()
-          if (link.href) {
-            router.push(link.href)
-            toggleOpen && toggleOpen(false)
+          if (link.action) {
+            link.action()
           }
+          if (link.href) {
+            router.push(`/${lang}${link.href}`)
+          }
+          close() // Close the menu using context
         }}
         aria-disabled={link.disabled}
       >

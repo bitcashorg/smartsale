@@ -43,8 +43,8 @@ export const ArticleCard = ({
           </figure>
         </div>
         <CardContent className="flex-grow px-3">
-          <p className="pt-3 font-semibold leading-tight text-center mb-overflow-hidden truncate_text truncate_text--3-lines text-md">
-            {title}
+        <p className="pt-3 font-semibold leading-tight text-left mb-overflow-hidden truncate_text truncate_text--3-lines text-md">
+        {title}
           </p>
         </CardContent>
       </Link>

@@ -12,7 +12,7 @@ import { cn } from '@/lib/utils'
 import { NestedLinkButton } from '@/components/nextjs/nested-link'
 import { ExternalLinkButton } from '@/components/nextjs/button-link'
 
-export function ProjectCardButtons({ project }: { project: Project }) {
+export function AuctionCardButtons({ project }: { project: Project }) {
   const {
     twitterUsername,
     discordServer,
@@ -30,7 +30,7 @@ export function ProjectCardButtons({ project }: { project: Project }) {
       className="flex items-center justify-between w-full "
       suppressHydrationWarning={true}
     >
-      <div className="relative z-10 flex items-center justify-center gap-3 align-center md:gap-4 xl:gap-6">
+      <div className="relative z-10 flex items-center justify-center gap-3 align-center md:gap-4 xl:gap-3.5">
         {[
           {
             icon: IconTwitterX,
@@ -74,7 +74,6 @@ export function ProjectCardButtons({ project }: { project: Project }) {
           </Suspense>
         ))}
       </div>
-
       <Suspense
         fallback={
           <Button>
@@ -93,11 +92,10 @@ export function ProjectCardButtons({ project }: { project: Project }) {
               'text-md group relative size-14 rounded-full p-0 font-bold hover:[&svg]:fill-card'
             )}
             aria-label={`View ${title}´s auction`}
-            // data-title={title}
           >
             <IconDownRightArrow className="transition-all size-4 group-focus-within:-rotate-45 group-hover:-rotate-45" />
           </NestedLinkButton>
-        )}{' '}
+        )}
       </Suspense>
     </div>
   )
