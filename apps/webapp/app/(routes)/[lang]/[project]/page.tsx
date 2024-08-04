@@ -8,10 +8,11 @@ import { Countdown } from '@/components/shared/countdown'
 import Link from 'next/link'
 import dynamic from 'next/dynamic'
 import { Button } from '@/components/ui/button'
-import { Lang, locales } from '@/dictionaries/locales'
+import { locales } from '@/dictionaries/locales'
 import { getDictionary } from '@/dictionaries'
 import { appConfig } from '@/lib/config'
 import Image from 'next/image'
+import { ProjectPageProps, ProjectPageParams } from '@/types/routing.type'
 
 export default async function ProjectPage({ params }: ProjectPageProps) {
   const dict = await getDictionary(params.lang)
@@ -128,11 +129,6 @@ export async function generateStaticParams(): Promise<ProjectPageParams[]> {
   ).flat()
 
   return params
-}
-
-type ProjectPageParams = { project: string; lang: Lang }
-type ProjectPageProps = {
-  params: ProjectPageParams
 }
 
 const DynamicAddressForm = dynamic(

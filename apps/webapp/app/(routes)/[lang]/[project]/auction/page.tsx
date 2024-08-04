@@ -1,5 +1,5 @@
 import { getDictionary } from '@/dictionaries'
-import { Lang, locales } from '@/dictionaries/locales'
+import { locales } from '@/dictionaries/locales'
 import { AuctionBids } from '@/components/routes/project/auction/auction-bids'
 import { AuctionDataCard } from '@/components/routes/project/auction/auction-data-card'
 import { ProjectHeader } from '@/components/routes/project/project-header'
@@ -18,6 +18,7 @@ import {
   getProjects
 } from '@/lib/projects'
 import { redirect } from 'next/navigation'
+import { ProjectPageProps, ProjectPageParams } from '@/types/routing.type'
 
 export default async function AuctionPage({ params }: ProjectPageProps) {
   const dict = await getDictionary(params.lang)
@@ -72,9 +73,4 @@ export async function generateStaticParams(): Promise<ProjectPageParams[]> {
   ).flat()
 
   return params
-}
-
-type ProjectPageParams = { project: string; lang: Lang }
-type ProjectPageProps = {
-  params: ProjectPageParams
 }
