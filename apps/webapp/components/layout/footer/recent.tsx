@@ -7,18 +7,6 @@ import { MediaSection, MediaSections } from '@/components/shared/media-sections'
 import { Section } from '@/components/shared/section'
 
 export async function RecentArticles({ lang }: LangProp) {
-  // const latestProductCalls = await fetchPublicYouTubePlaylist(
-  //   'PL6BKGVqekhB_R8wjPFN-p6dGkcIy_bM1D',
-  //   5
-  // )
-  // const latestShorts = await fetchPublicYouTubePlaylist(
-  //   'PL6BKGVqekhB_3OhFY_zpJwmaaV6sLxLwJ',
-  //   5
-  // )
-  // const latestBitcoinEdu = await fetchPublicYouTubePlaylist(
-  //   'PL6BKGVqekhB8XkWgA-JWGLafKHxKDfzlM',
-  //   5
-  // )
 
   const recentMedia: MediaSection[] = [
     {
@@ -29,22 +17,6 @@ export async function RecentArticles({ lang }: LangProp) {
         label: 'More Shorts'
       }
     }
-    // {
-    //   title: 'Bitcoin Education',
-    //   videos: latestBitcoinEdu,
-    //   link: {
-    //     href: 'https://www.youtube.com/watch?v=4skbpM8ehoA&list=PL6BKGVqekhB8XkWgA-JWGLafKHxKDfzlM',
-    //     label: 'Bitcoin Education'
-    //   }
-    // },
-    // {
-    //   title: 'Weekly Calls',
-    //   videos: latestProductCalls,
-    //   link: {
-    //     href: 'https://www.youtube.com/watch?v=uUh8lX_YzoQ&list=PL6BKGVqekhB_R8wjPFN-p6dGkcIy_bM1D',
-    //     label: 'Weekly Calls'
-    //   }
-    // }
   ]
 
   const recentArcticles = [

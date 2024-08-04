@@ -1,26 +1,23 @@
 'use client'
-import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3'
 import { subscribeToNewsletter } from '@/actions'
 import { Button, buttonVariants } from '@/components/ui/button'
 import {
-  IconBitlauncher,
   IconDiscord,
   IconDownRightArrow
 } from '@/components/ui/icons'
 import { cn, motionProps } from '@/lib/utils'
+import { LangProp } from '@/types/routing.type'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { motion } from 'framer-motion'
 import { LucideCheck, LucideLoader2 } from 'lucide-react'
 import Link from 'next/link'
+import { useEffect } from 'react'
 import { useFormStatus } from 'react-dom'
-import { GoogleReCaptcha } from 'react-google-recaptcha-v3'
+import { GoogleReCaptcha, GoogleReCaptchaProvider } from 'react-google-recaptcha-v3'
 import { useForm } from 'react-hook-form'
 import { useSetState } from 'react-use'
 import { z } from 'zod'
-import { useEffect } from 'react'
-import { LangProp } from '@/types/routing.type'
 import { FooterLinks } from './footer-links'
-import { appConfig } from '@/lib/config'
 
 // Schema for form validation with Zod
 const formSchema = z.object({
@@ -91,7 +88,7 @@ export default function Newsletter({ lang }: LangProp) {
   }, [email])
 
   return (
-    <div className="relative overflow-hidden" id="newsletter">
+    <div className="container px-0 sm:px-4 relative mt-40 mb-10" id="newsletter">
       <GoogleReCaptchaProvider
         reCaptchaKey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ''}
         // language="[optional_language]"
@@ -103,9 +100,9 @@ export default function Newsletter({ lang }: LangProp) {
           }
         }}
       >
-        <section className="newsletter-wrapper mt-40">
-          <div className="flex h-[460px] w-full max-w-[600px] flex-col items-center justify-center gap-8 px-3 text-center md:gap-11 md:px-0">
-            <div className="flex w-full flex-col gap-7">
+        <section className="newsletter-wrapper">
+          <div className="flex min-h-[460px] w-full max-w-[600px] flex-col items-center justify-center gap-8 px-3 text-center md:gap-11 md:px-0">
+            <div className="flex flex-col w-full gap-7">
               <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
                 Sign up for our newsletter
               </h2>
@@ -114,7 +111,7 @@ export default function Newsletter({ lang }: LangProp) {
                 exclusive discounts, sign up with your email below:
               </p>
             </div>
-            <div className="flex w-full flex-col items-center">
+            <div className="flex flex-col items-center w-full">
               <form
                 action={onSubmit}
                 className="flex h-[62px] w-full max-w-[342px] items-center justify-center gap-2 self-center rounded-full bg-secondary p-1 text-black/90"
@@ -151,7 +148,7 @@ export default function Newsletter({ lang }: LangProp) {
                   variant="accent"
                   size="icon"
                   radius="full"
-                  className="relative m-0 mr-[2px] size-[48px] rounded-full"
+                  className="relative m-0 mr-[2px] min-w-[48px] min-h-[48px] rounded-full"
                   disabled={!isReadyToSubmit}
                 >
                   {newsletterIconResponse()}

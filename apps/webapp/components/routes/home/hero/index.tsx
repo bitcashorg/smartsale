@@ -31,7 +31,7 @@ export function NewHomeHero() {
             alt="AI Unicorn"
             width={400}
             height={400}
-            className="relative h-[400px] w-[400px]"
+            className="relative object-contain h-[400px] w-[400px]"
           />
         </div>
       </main>

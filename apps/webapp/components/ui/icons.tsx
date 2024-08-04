@@ -545,7 +545,7 @@ function IconBitlauncher({
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 207 43"
-      className={cn('h-11 w-40 md:w-56', className)}
+      className={cn('h-11 w-40 md:w-[152px]', className)}
       {...props}
     >
       <path

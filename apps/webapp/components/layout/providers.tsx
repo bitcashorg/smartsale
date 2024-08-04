@@ -21,6 +21,7 @@ import { WagmiProvider } from 'wagmi'
 import { sepolia } from 'wagmi/chains'
 import { UseSigningRequestProvider } from '@/hooks/use-signing-request'
 import { merge } from 'lodash'
+import {MobileNavProvider} from '@/hooks/use-mobile-navigation';
 
 const queryClient = new QueryClient()
 
@@ -68,7 +69,9 @@ export function Providers({ children, ...props }: ThemeProviderProps) {
             >
               <SessionProvider>
                 <UseSigningRequestProvider>
+                <MobileNavProvider>
                   {children}
+                </MobileNavProvider>
                 </UseSigningRequestProvider>
               </SessionProvider>
             </RainbowKitProvider>

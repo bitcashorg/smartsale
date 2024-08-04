@@ -24,14 +24,14 @@ export function Features({ lang, dict }: FeaturesProps) {
           )}
         >
           <div
-            className={`flex flex-col justify-center space-y-4 text-left ${index % 2 === 1 ? 'lg:order-last' : ''}`}
+            className={`flex flex-col justify-center space-y-4  ${index % 2 === 1 ? 'lg:order-last' : ''}`}
           >
             <div className="space-y-2">
               <Tag title={content.label} />
-              <h3 className="text-2xl font-bold">
+              <h3 className="text-2xl font-bold text-left">
                 <Balancer>{content.title}</Balancer>
               </h3>
-              <p className="text-gray-500 dark:text-gray-400">
+              <p className="text-justify text-gray-500 dark:text-gray-400">
                 {content.description}
               </p>
             </div>

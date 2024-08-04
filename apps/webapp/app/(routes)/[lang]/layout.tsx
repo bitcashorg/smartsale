@@ -2,18 +2,18 @@ import '@/app/globals.css'
 import Footer from '@/components/layout/footer/footer'
 import { Header } from '@/components/layout/header'
 import { Providers } from '@/components/layout/providers'
+import { getDictionary } from '@/dictionaries'
+import { locales } from '@/dictionaries/locales'
 import { cn } from '@/lib/utils'
+import { CommonPageParams } from '@/types/routing.type'
 import { GoogleAnalytics } from '@next/third-parties/google'
 import '@rainbow-me/rainbowkit/styles.css'
+import { Analytics } from '@vercel/analytics/react'
+import { SpeedInsights } from '@vercel/speed-insights/next'
+import type { Viewport } from 'next'
 import { Metadata } from 'next'
 import dynamic from 'next/dynamic'
 import React from 'react'
-import { SpeedInsights } from '@vercel/speed-insights/next'
-import { locales } from '@/dictionaries/locales'
-import { Analytics } from '@vercel/analytics/react'
-import { CommonPageParams } from '@/types/routing.type'
-import { getDictionary } from '@/dictionaries'
-import type { Viewport } from 'next'
 import { isMobile } from 'react-device-detect'
 import { Toaster } from 'react-hot-toast'
 import '../../globals.css'
@@ -37,9 +37,8 @@ export default async function RootLayout({
       lang={params.lang || 'en'}
       className={cn('tk-futura-pt max-w-full text-lg antialiased')}
       suppressHydrationWarning
-      style={{ width: '100vw', maxWidth: '100vw' }}
     >
-      <body style={{ width: '100vw', maxWidth: '100vw' }}>
+      <body style={{ width: '100%', maxWidth: '100%' }}>
         <Providers
           attribute="class"
           defaultTheme="system"

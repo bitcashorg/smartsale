@@ -1,46 +1,36 @@
 'use client'
-import { useEffect } from 'react'
-import { useToggle } from 'react-use'
+
+import { Transition } from '@/components/shared/transition'
+import { useMobileNav } from '@/hooks/use-mobile-navigation'
+import { LangProp } from '@/types/routing.type'
+import { AnimatePresence } from 'framer-motion'
 import UseAnimations from 'react-useanimations'
 import menu4 from 'react-useanimations/lib/menu4'
 import { NavLinks } from './nav-links'
-import { Transition } from '@/components/shared/transition'
-import { AnimatePresence } from 'framer-motion'
-import { LangProp } from '@/types/routing.type'
 
 export function MobileNav({ lang, dict }: MobileNavProps) {
-  const [open, toggleOpen] = useToggle(false)
-
-  // control the body scroll
-  useEffect(() => {
-    document.body.style.overflow = open ? 'hidden' : 'auto'
-    return () => {
-      document.body.style.overflow = 'auto'
-    }
-  }, [open])
+  const { open, toggleOpen } = useMobileNav()
 
   return (
     <div>
       <UseAnimations
+        key="mobile-nav-animation"
         onClick={toggleOpen}
         strokeColor="white"
         animation={menu4}
         wrapperStyle={{ marginRight: '-10px' }}
         size={56}
+        speed={2.42}
+        reverse={open}
       />
       <AnimatePresence>
-        {open ? (
+        {open && (
           <Transition duration={0.3}>
             <div className="mobile-nav">
-              <NavLinks
-                mobile
-                lang={lang}
-                dict={dict}
-                toggleOpen={toggleOpen}
-              />
+              <NavLinks mobile lang={lang} dict={dict} />
             </div>
           </Transition>
-        ) : null}
+        )}
       </AnimatePresence>
     </div>
   )
