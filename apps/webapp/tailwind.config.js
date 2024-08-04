@@ -96,9 +96,9 @@ module.exports = {
         'check-box': '4px'
       },
       fontFamily: {
-        sans: ["futura-pt", ...fontFamily.sans],
-        'futura-pt-bold': ['futura-pt-bold', 'sans-serif'],
-        'futura-pt-condensed': ['futura-pt-condensed', 'sans-serif'],
+        sans: ["Futura PT", ...fontFamily.sans],
+        'futura-pt-bold': ['Futura PT Bold', 'sans-serif'],
+        'futura-pt-condensed': ['Futura PT Heavy', 'sans-serif'],
       },
       keyframes: {
         'accordion-down': {

@@ -24,7 +24,7 @@ export function LearnSection() {
                 />
               </picture>
               <CardHeader className="z-30 text-center px-3 lg:px-16 gap-y-3">
-                <CardTitle className="text-3xl lg:text-4xl font-medium text-left">
+                <CardTitle className="text-3xl lg:text-4xl font-medium text-left font-futura-pt">
                   {content.cards[0].title}
                 </CardTitle>
                 <div className="w-28 h-[2px] bg-secondary-500 mb-7" />
