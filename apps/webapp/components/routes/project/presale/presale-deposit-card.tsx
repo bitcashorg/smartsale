@@ -37,6 +37,7 @@ import { ProjectInfo } from '@/components/routes/project/project-info'
 import { ProjectWithAuction } from '@/lib/projects'
 import { useSession } from '@/hooks/use-session'
 import toast from 'react-hot-toast'
+import { saveDeposit } from '@/app/actions/save-deposit'
 
 export function PresaleDepositCard({
   project
@@ -63,6 +64,8 @@ function PresaleDeposit() {
   const { requestSignature } = useSigningRequest()
   const { loginOrConnect } = useSession()
 
+  const presaleAddress = '0x2C9DAAb3F463d6c6D248aCbeaAEe98687936374a'
+
   const deposit = async () => {
     console.log('😈 desposits')
     if (!address) return loginOrConnect()
@@ -78,7 +81,7 @@ function PresaleDeposit() {
           address: evmToken.address,
           functionName: 'transfer',
           args: [
-            '0x2C9DAAb3F463d6c6D248aCbeaAEe98687936374a', // dev only
+            presaleAddress, // dev only
             parseUnits(amount.toString(), evmToken.decimals)
           ],
           chainId: evmToken.chainId
@@ -91,6 +94,15 @@ function PresaleDeposit() {
           onSuccess: trxId => {
             console.log('Transaction ID:', trxId)
             toast.success(`Deposit successful ${trxId}`)
+            saveDeposit({
+              amount,
+              chain_id: evmToken.chainId,
+              from: address,
+              to: presaleAddress,
+              token: evmToken.address,
+              trx_hash: trxId,
+              type: 'deposit'
+            })
           }
         }
       )
