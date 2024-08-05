@@ -5,6 +5,8 @@ import { Handshake, Users } from 'lucide-react'
 import { useSupabaseClient } from '@/services/supabase'
 import { formatUnits } from 'viem'
 import { useEffect, useState } from 'react'
+import { SupabaseClient } from '@supabase/supabase-js'
+import { Tables } from '@repo/supabase'
 
 export function ProjectPresaleData() {
   const [contributors, setContributors] = useState<string[]>([])
@@ -28,9 +30,16 @@ export function ProjectPresaleData() {
         'postgres_changes',
         { event: '*', schema: 'public', table: 'transfer' },
         payload => {
+          const { eventType, new: newData, old: oldData } = payload
           if (payload.eventType === 'INSERT') {
             setContributors(prev =>
-              Array.from(new Set([...prev, payload.new.from]))
+              Array.from(
+                new Set(
+                  [...prev, payload.new.from].filter(
+                    (from): from is string => from !== null
+                  )
+                )
+              )
             )
             setTotalRaised(prev => prev + BigInt(payload.new.amount || 0))
           } else if (payload.eventType === 'DELETE') {
@@ -75,10 +84,13 @@ export function ProjectPresaleData() {
 }
 
 async function getPresaleContributors(
-  supabase: any
+  supabase: SupabaseClient
 ): Promise<PresaleContributorsResult> {
   try {
-    const { data, error } = await supabase.from('transfer').select('from')
+    const { data, error } = await supabase
+      .from('transfer')
+      .select('from')
+      .returns<{ from: string | null }[]>()
 
     if (error) throw error
 
@@ -113,12 +125,13 @@ async function getPresaleContributors(
 }
 
 async function getTotalPresaleAmount(
-  supabase: any
+  supabase: SupabaseClient
 ): Promise<PresaleTotalAmountResult> {
   try {
     const { data, error } = await supabase
       .from('transfer')
       .select('amount')
+      .returns<{ amount: number | null }[]>()
       .throwOnError()
 
     if (!data || data.length === 0) {

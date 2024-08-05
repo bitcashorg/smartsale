@@ -117,8 +117,8 @@ function PresaleDeposit() {
       // handle eos token bitusd and usdt
       const esr =
         selectedToken === 'USDT'
-          ? await genUsdtDepositSigningRequest(amount, address)
-          : await genBitusdDepositSigningRequest(amount, address)
+          ? await genUsdtDepositSigningRequest(Number(amount), address)
+          : await genBitusdDepositSigningRequest(Number(amount), address)
       requestSignature(esr)
     }
   }
