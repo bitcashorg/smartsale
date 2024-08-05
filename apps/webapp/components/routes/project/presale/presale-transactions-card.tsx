@@ -21,6 +21,8 @@ import { useSupabaseClient } from '@/services/supabase'
 import { useQuery } from '@tanstack/react-query'
 import { useAccount } from 'wagmi'
 import { Tables } from '@repo/supabase'
+import { appConfig } from '@/lib/config'
+import { formatAddress } from 'app-lib'
 
 export function PresaleTransactionsCard() {
   const { address } = useAccount()
@@ -52,7 +54,7 @@ export function PresaleTransactionsCard() {
           <CardTitle>Presale Contributions</CardTitle>
           <CardDescription>Recent presale transactions.</CardDescription>
         </div>
-        <Button asChild size="sm" className="ml-auto gap-1">
+        <Button asChild size="sm" className="gap-1 ml-auto">
           {/* <Link href="#">
             View All
             <ArrowUpRight className="w-4 h-4" />
@@ -102,13 +104,31 @@ export function PresaleTransactionsCard() {
 }
 
 function TransactionRow({ transaction }: { transaction: Tables<'transfer'> }) {
+  const chain = transaction.chain_id
+    ? appConfig.chains.get(transaction.chain_id)
+    : null
   return (
     <TableRow>
       <TableCell>
-        <div className="font-medium">{transaction.from}</div>
+        <div className="font-medium">
+          {formatAddress(transaction.from ?? '')}
+        </div>
       </TableCell>
-      <TableCell>{transaction.chain_id}</TableCell>
-      <TableCell>{transaction.trx_hash}</TableCell>
+      <TableCell>{chain?.name}</TableCell>
+      <TableCell>
+        {chain?.blockExplorers?.default ? (
+          <a
+            href={`${chain.blockExplorers.default.url}/tx/${transaction.trx_hash}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-500 hover:underline"
+          >
+            {formatAddress(transaction.trx_hash)}
+          </a>
+        ) : (
+          formatAddress(transaction.trx_hash)
+        )}
+      </TableCell>
       <TableCell>
         {new Date(transaction.created_at).toLocaleDateString()}
       </TableCell>
