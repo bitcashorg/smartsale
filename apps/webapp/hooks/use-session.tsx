@@ -11,8 +11,8 @@ import { usePathname, useRouter, useSearchParams } from 'next/navigation'
 import React, { ReactNode, useEffect, useState } from 'react'
 import { isMobile } from 'react-device-detect'
 import { useAsync, useLocalStorage, useToggle } from 'react-use'
-import { useAccount } from 'wagmi'
 import { v4 as uuidv4 } from 'uuid'
+import { useAccount } from 'wagmi'
 
 // Exports
 export { SessionProvider, useSession }
@@ -109,9 +109,8 @@ function useSessionFn() {
     if (searchParams.get('referrer')) {
       sessionStorage.setItem('referrer', searchParams.get('referrer') || '')
     }
-    registerUri = `https://app.bitcash.org/create-account?referrer=${
-      searchParams.get('referrer') || sessionStorage.getItem('referrer')
-    }&source=bitlauncher.ai`
+    registerUri = `https://app.bitcash.org/create-account?referrer=${searchParams.get('referrer') || sessionStorage.getItem('referrer')
+      }&source=bitlauncher.ai`
   }, [])
 
   // default moblie login mode is redirect
@@ -130,6 +129,7 @@ function useSessionFn() {
     params.append('callback', encodedCallbackUrl)
     const referrer = sessionStorage.getItem('referrer')
     if (referrer) params.append('referrer', referrer)
+    params.append('source', 'bitlauncher.ai')
     location.href = `https://app.bitcash.org?${params.toString()}`
   }
 
