@@ -243,6 +243,7 @@ export type Database = {
       transfer: {
         Row: {
           amount: number | null
+          bl_presale_trx: string | null
           chain_id: number | null
           created_at: string
           from: string | null
@@ -254,6 +255,7 @@ export type Database = {
         }
         Insert: {
           amount?: number | null
+          bl_presale_trx?: string | null
           chain_id?: number | null
           created_at?: string
           from?: string | null
@@ -265,6 +267,7 @@ export type Database = {
         }
         Update: {
           amount?: number | null
+          bl_presale_trx?: string | null
           chain_id?: number | null
           created_at?: string
           from?: string | null
