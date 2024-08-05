@@ -76,7 +76,7 @@ export function BalancesTable() {
       coin: 'BL',
       totalAmount: `${eosEvmBalance.formatted || 0}`,
       nertwork: 'Bitcash Chain',
-      description: 'BL token on Bitcash L1'
+      description: 'BL token on Bitcash Mainnet'
     }
   ]
 

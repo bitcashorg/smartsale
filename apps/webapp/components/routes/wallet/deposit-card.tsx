@@ -35,7 +35,7 @@ export function DepositCard() {
   const { writeContract } = useWriteContract()
   const [amount, setAmount] = useState<number>(42)
   const { switchChain } = useSwitchChain()
-  const [selectedChain, setSelectedChain] = useState<string>('Ethereum')
+  const [selectedChain, setSelectedChain] = useState<string>('')
   const [selectedToken, setSelectedToken] = useState('USDT')
   const { requestSignature } = useSigningRequest()
   const chainId = useChainId()
@@ -120,7 +120,7 @@ export function DepositCard() {
             <div className="flex min-w-[40%] flex-col">
               <Select onValueChange={setSelectedChain} value={selectedChain}>
                 <SelectTrigger id="chain-select">
-                  <SelectValue placeholder={selectedChain} />
+                  <SelectValue placeholder="Select Network" />
                 </SelectTrigger>
                 <SelectContent position="popper">
                   {availableChains.map(chain => (
@@ -144,6 +144,7 @@ export function DepositCard() {
             'h-auto w-full whitespace-normal border border-solid border-accent-secondary bg-background px-10 py-2'
           )}
           onClick={deposit}
+          disabled
         >
           Deposit
         </Button>

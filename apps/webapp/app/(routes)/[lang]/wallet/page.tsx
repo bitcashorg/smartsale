@@ -30,13 +30,13 @@ export default function WalletPage() {
 
       <PresaleTransactionsCard />
 
-      <main className="grid items-start flex-1 gap-4 md:gap-8 lg:grid-cols-3 xl:grid-cols-3">
+      {/* <main className="grid items-start flex-1 gap-4 md:gap-8 lg:grid-cols-3 xl:grid-cols-3">
         <div className="grid items-start gap-4 auto-rows-max md:gap-8 lg:col-span-2">
           <WalletTabs />
         </div>
 
         <OrderCard />
-      </main>
+      </main> */}
     </div>
   )
 }
