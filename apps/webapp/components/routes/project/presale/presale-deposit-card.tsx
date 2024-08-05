@@ -148,7 +148,7 @@ function PresaleDeposit() {
               <SelectValue placeholder={`USDT`} />
             </SelectTrigger>
             <SelectContent position="popper">
-              {['USDT', 'USDC', 'BITUSD'].map(token => (
+              {tokens.map(token => (
                 <SelectItem key={token} value={token}>
                   {token}
                 </SelectItem>
@@ -188,3 +188,6 @@ function PresaleDeposit() {
     </div>
   )
 }
+
+const tokens =
+  appConfig.env === 'dev' ? ['USDT', 'BITUSD'] : ['USDT', 'USDC', 'BITUSD']
