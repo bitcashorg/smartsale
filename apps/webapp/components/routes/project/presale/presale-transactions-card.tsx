@@ -1,3 +1,4 @@
+'use client'
 import { Button } from '@/components/ui/button'
 import {
   Card,
@@ -14,8 +15,8 @@ import {
   TableHeader,
   TableRow
 } from '@/components/ui/table'
-import { ArrowUpRight } from 'lucide-react'
-import Link from 'next/link'
+// import { ArrowUpRight } from 'lucide-react'
+// import Link from 'next/link'
 import { useSupabaseClient } from '@/services/supabase'
 import { useQuery } from '@tanstack/react-query'
 import { useAccount } from 'wagmi'

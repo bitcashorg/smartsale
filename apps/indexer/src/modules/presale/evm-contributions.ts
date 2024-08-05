@@ -2,8 +2,7 @@ import { EVMTokenContractData, appContracts } from 'app-contracts'
 import { runPromisesInSeries } from '~/lib/utils'
 import { Address, Log, PublicClient, createPublicClient, http, parseAbiItem, stringify } from 'viem'
 import { TransferEvent } from '~/modules/auction/auction.type'
-import { sepolia } from 'viem/chains'
-import { upsertTransfers } from '~/src/lib/supabase-client'
+import { upsertTransfers } from '~/lib/supabase-client'
 
 const presaleWallet = '0xf7bb6BD787FFbA43539219560E3B8162Ba8EEF09'
 const tokens: EVMTokenContractData[] = appContracts.dev.tokens.evm && appContracts.prod.tokens.evm
@@ -32,7 +31,7 @@ async function listenToEvmTransfersFn(token: EVMTokenContractData) {
     })
 
     // delay prevents idempotent transactions:
-    processLogs(logs, 3000)
+    processLogs(logs, token, 3000)
 
     // Watch for new event logs
     client.watchEvent({
@@ -83,7 +82,7 @@ async function handleTransfer(log: TransferEvent, token: EVMTokenContractData) {
     trx_hash: log.transactionHash!,
     from: log.args.from as Address,
     to: log.args.to as Address,
-    amount: log.args.value,
+    amount: Number(log.args.value),
     token: log.address,
     chain_id: token.chainId,
     type: 'presale',
