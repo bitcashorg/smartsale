@@ -20,7 +20,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
   return (
     <div className="flex min-h-[calc(83vh-4rem)] flex-col">
       <ProjectHeader project={project}>
-        <div className="grid grid-cols-1 gap-8 mb-10 lg:grid-cols-2">
+        <div className="mb-10 grid grid-cols-1 gap-8 lg:grid-cols-2">
           <Card className="border-card/30 bg-card/60 backdrop-blur-lg">
             <Countdown />
             <CardContent>
