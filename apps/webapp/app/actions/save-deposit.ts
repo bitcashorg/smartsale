@@ -1,19 +1,21 @@
 'use server'
 
 import { createSupabaseServerClient } from '@/services/supabase'
-import { TablesInsert, transferInsertSchema } from '@repo/supabase'
-import { revalidatePath } from 'next/cache'
+import { Tables, TablesInsert, transferInsertSchema } from '@repo/supabase'
 
-export async function saveDeposit(
-  transfer: TablesInsert<'transfer'>
-): Promise<{ success: boolean; message: string; data?: any }> {
+export async function saveDeposit(transfer: TablesInsert<'transfer'>): Promise<{
+  success: boolean
+  message: string
+  data?: Tables<'transfer'>
+  error?: any
+}> {
   try {
     const parseResult = transferInsertSchema.safeParse(transfer)
     if (!parseResult.success) {
       return {
         success: false,
         message: 'Invalid transfer data',
-        data: parseResult.error.flatten()
+        error: parseResult.error.flatten()
       }
     }
 
