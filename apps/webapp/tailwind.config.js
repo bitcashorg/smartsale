@@ -31,6 +31,10 @@ module.exports = {
         ring: 'hsla(var(--ring))',
         background: 'hsla(var(--background))',
         foreground: 'hsla(var(--foreground))',
+        cornflowerblue: {
+          100: "rgba(125, 129, 217, 0.2)",
+          200: "rgba(125, 129, 217, 0.2)"
+        },
         primary: {
           DEFAULT: 'hsla(var(--primary))',
           foreground: 'hsla(var(--primary-foreground))',
@@ -83,6 +87,12 @@ module.exports = {
         alert: {
           DEFAULT: "hsla(var(--alert))"
         }
+      },
+      background: {
+        cornflowerblue: {
+          100: "rgba(125, 129, 217, 0.5)",
+          200: "rgba(125, 129, 217, 0.43)"
+        },
       },
       borderRadius: {
         lg: 'var(--radius)',
