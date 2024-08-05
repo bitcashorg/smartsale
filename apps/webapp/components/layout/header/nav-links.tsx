@@ -48,7 +48,7 @@ export function NavLinks({
       id: 'about',
       href: '/about/about-bitlauncher',
       text: dict.nav.about,
-      mobile: true,
+      mobile: false,
       action: null,
       disabled: false
     },
