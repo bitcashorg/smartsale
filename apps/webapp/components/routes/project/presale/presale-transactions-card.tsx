@@ -15,37 +15,93 @@ import {
   TableHeader,
   TableRow
 } from '@/components/ui/table'
-// import { ArrowUpRight } from 'lucide-react'
-// import Link from 'next/link'
 import { useSupabaseClient } from '@/services/supabase'
-import { useQuery } from '@tanstack/react-query'
 import { useAccount } from 'wagmi'
 import { Tables } from '@repo/supabase'
 import { appConfig } from '@/lib/config'
 import { formatAddress } from 'app-lib'
+import { useEffect, useState } from 'react'
 
 export function PresaleTransactionsCard() {
   const { address } = useAccount()
   const supabase = useSupabaseClient()
+  const [transactions, setTransactions] = useState<Tables<'transfer'>[]>([])
+  const [isLoading, setIsLoading] = useState(true)
+  const [error, setError] = useState<Error | null>(null)
 
-  const {
-    data: transactions,
-    isLoading,
-    error
-  } = useQuery({
-    queryKey: ['presaleTransactions', address],
-    queryFn: async () => {
-      if (!address) return []
-      const { data, error } = await supabase
-        .from('transfer')
-        .select('*')
-        .eq('from', address)
+  useEffect(() => {
+    if (!address) {
+      setTransactions([])
+      setIsLoading(false)
+      return
+    }
 
-      if (error) throw error
-      return data as Tables<'transfer'>[]
-    },
-    enabled: !!address
-  })
+    setIsLoading(true)
+    setError(null)
+
+    const fetchInitialTransactions = async () => {
+      try {
+        const { data, error } = await supabase
+          .from('transfer')
+          .select('*')
+          .eq('from', address)
+          .order('created_at', { ascending: false })
+
+        if (error) throw error
+        setTransactions(data as Tables<'transfer'>[])
+      } catch (err) {
+        setError(err instanceof Error ? err : new Error('An error occurred'))
+      } finally {
+        setIsLoading(false)
+      }
+    }
+
+    fetchInitialTransactions()
+
+    const subscription = supabase
+      .channel('presale_transfer_changes')
+      .on(
+        'postgres_changes',
+        {
+          event: '*',
+          schema: 'public',
+          table: 'transfer',
+          filter: `from=eq.${address}`
+        },
+        payload => {
+          console.log('subscription payload')
+          if (payload.eventType === 'INSERT') {
+            setTransactions(prev => [
+              payload.new as Tables<'transfer'>,
+              ...prev
+            ])
+          } else if (payload.eventType === 'UPDATE') {
+            setTransactions(prev =>
+              prev
+                .map(t =>
+                  t.trx_hash === payload.new.trx_hash
+                    ? (payload.new as Tables<'transfer'>)
+                    : t
+                )
+                .sort(
+                  (a, b) =>
+                    new Date(b.created_at).getTime() -
+                    new Date(a.created_at).getTime()
+                )
+            )
+          } else if (payload.eventType === 'DELETE') {
+            setTransactions(prev =>
+              prev.filter(t => t.trx_hash !== payload.old.trx_hash)
+            )
+          }
+        }
+      )
+      .subscribe()
+
+    return () => {
+      subscription.unsubscribe()
+    }
+  }, [address, supabase])
 
   return (
     <Card x-chunk="dashboard-01-chunk-4">
@@ -54,12 +110,7 @@ export function PresaleTransactionsCard() {
           <CardTitle>Presale Contributions</CardTitle>
           <CardDescription>Recent presale transactions.</CardDescription>
         </div>
-        <Button asChild size="sm" className="gap-1 ml-auto">
-          {/* <Link href="#">
-            View All
-            <ArrowUpRight className="w-4 h-4" />
-          </Link> */}
-        </Button>
+        <Button asChild size="sm" className="gap-1 ml-auto"></Button>
       </CardHeader>
       <CardContent>
         <Table>
@@ -85,7 +136,7 @@ export function PresaleTransactionsCard() {
                   Error: {error.message}
                 </TableCell>
               </TableRow>
-            ) : transactions && transactions.length > 0 ? (
+            ) : transactions.length > 0 ? (
               transactions.map((transaction, index) => (
                 <TransactionRow key={index} transaction={transaction} />
               ))
@@ -132,7 +183,11 @@ function TransactionRow({ transaction }: { transaction: Tables<'transfer'> }) {
       <TableCell>
         {new Date(transaction.created_at).toLocaleDateString()}
       </TableCell>
-      <TableCell className="text-right">{transaction.amount}</TableCell>
+      <TableCell className="text-right">
+        {transaction.amount !== null
+          ? (transaction.amount / 1000000).toFixed(6)
+          : 'N/A'}
+      </TableCell>
     </TableRow>
   )
 }
