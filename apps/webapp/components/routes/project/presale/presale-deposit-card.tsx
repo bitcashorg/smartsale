@@ -64,7 +64,8 @@ function PresaleDeposit() {
 
   const deposit = async () => {
     if (!address) return loginOrConnect()
-    if (!amount) return toast.error('Amount is undefined')
+    if (!amount) return toast.error('Please enter a deposit amount')
+    if (!selectedChain) return toast.error('Please select a blockchain network')
 
     const tokenData = appConfig.stables.find(
       token =>
