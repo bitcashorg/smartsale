@@ -2,7 +2,7 @@ import { EVMTokenContractData, appContracts } from 'app-contracts'
 import { runPromisesInSeries } from '~/lib/utils'
 import { Address, Log, PublicClient, createPublicClient, http, parseAbiItem, stringify } from 'viem'
 import { TransferEvent } from '~/modules/auction/auction.type'
-import { sepolia } from 'viem/chains'
+import { upsertTransfers } from '~/lib/supabase-client'
 
 const presaleWallet = '0xf7bb6BD787FFbA43539219560E3B8162Ba8EEF09'
 const tokens: EVMTokenContractData[] = appContracts.dev.tokens.evm && appContracts.prod.tokens.evm
@@ -31,7 +31,7 @@ async function listenToEvmTransfersFn(token: EVMTokenContractData) {
     })
 
     // delay prevents idempotent transactions:
-    processLogs(logs, 3000)
+    processLogs(logs, token, 3000)
 
     // Watch for new event logs
     client.watchEvent({
@@ -44,7 +44,7 @@ async function listenToEvmTransfersFn(token: EVMTokenContractData) {
       },
       onLogs: (logs) => {
         console.log('real time transfer', stringify(logs, null, 2))
-        processLogs(logs)
+        processLogs(logs, token)
       },
     })
   } catch (error) {
@@ -54,14 +54,14 @@ async function listenToEvmTransfersFn(token: EVMTokenContractData) {
 
 // takes the generic logs and if the eventName matches one of the eventHandlers keys
 // it passes the log to corresponding hanlder function
-async function processLogs(logs: Log[], delay = 0) {
+async function processLogs(logs: Log[], token: EVMTokenContractData, delay = 0) {
   const actions = logs
     .map((log) => {
       const eventName = (log as any).eventName.toString()
       if (!(eventName in eventHandlers)) return null
       return async () => {
         try {
-          eventHandlers[eventName] && eventHandlers[eventName](log)
+          eventHandlers[eventName] && eventHandlers[eventName](log, token)
         } catch (error) {
           //TODO: sent sentry reports
           console.error(error)
@@ -73,23 +73,25 @@ async function processLogs(logs: Log[], delay = 0) {
   runPromisesInSeries(actions, delay)
 }
 
-const eventHandlers: { [key: string]: (log: any) => void } = {
+const eventHandlers: { [key: string]: (log: any, token: EVMTokenContractData) => void } = {
   Transfer: handleTransfer,
 }
 
-async function handleTransfer(log: TransferEvent) {
+async function handleTransfer(log: TransferEvent, token: EVMTokenContractData) {
   const data = {
     trx_hash: log.transactionHash!,
     from: log.args.from as Address,
     to: log.args.to as Address,
-    amount: log.args.value,
+    amount: Number(log.args.value),
     token: log.address,
-    chain_id: sepolia.id,
+    chain_id: token.chainId,
     type: 'presale',
   }
 
   console.log('new transfer')
   console.log(data)
+
+  upsertTransfers(data)
 
   // console.log('result', result)
   // if (result.usdcred_trx || data.from === '0x0000000000000000000000000000000000000000') return

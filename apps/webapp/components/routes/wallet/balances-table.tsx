@@ -11,7 +11,7 @@ import {
 import { useErc20Balance, useNativeBalance } from '@/hooks/use-balance'
 import { useEosBalances } from '@/hooks/use-eos-balances'
 
-import { TestnetMBOTSPL, TestnetUSDCred } from 'app-contracts'
+import { TestnetBLPL, TestnetMBOTSPL, TestnetUSDCred } from 'app-contracts'
 import { useAccount } from 'wagmi'
 
 export function BalancesTable() {
@@ -25,21 +25,46 @@ export function BalancesTable() {
     chainId: TestnetUSDCred.chainId
   })
 
-  const usdMbotsplBalance = useErc20Balance({
-    contract: TestnetMBOTSPL.address,
-    abi: TestnetMBOTSPL.abi,
+  const blplBalance = useErc20Balance({
+    contract: TestnetBLPL.address,
+    abi: TestnetBLPL.abi,
     address: address || '0x',
-    chainId: TestnetMBOTSPL.chainId
+    chainId: TestnetBLPL.chainId
   })
 
   const eosEvmBalance = useNativeBalance(address)
 
   const coins = [
     {
+      coin: 'BLPL',
+      totalAmount: `${blplBalance.formatted || 0}`,
+      nertwork: 'EOS EVM',
+      description: 'Bitlauncher Prelaunch Token'
+    },
+    {
+      coin: 'BITUSD',
+      totalAmount: eosBalances.bitusd || 0,
+      nertwork: 'EOS Mainnet',
+      description: 'Bitcash USD stable coin'
+    },
+    {
       coin: 'USDCred',
       totalAmount: `${usdCredBalance.formatted || 0}`,
       nertwork: 'EOS EVM',
-      description: 'USD Bidding Token'
+      description: 'Bitlaucher Bidding Token'
+    },
+
+    // {
+    //   coin: 'MBOTS',
+    //   totalAmount: eosBalances.mbots,
+    //   nertwork: 'EOS Mainnet',
+    //   description: 'MBOTS Token'
+    // },
+    {
+      coin: 'EOS (gas)',
+      totalAmount: eosBalances.eos,
+      nertwork: 'EOS Mainnet',
+      description: 'Native EOS token'
     },
     {
       coin: 'EOS (gas)',
@@ -48,28 +73,10 @@ export function BalancesTable() {
       description: 'Wrapped EOS on EOS EVM'
     },
     {
-      coin: 'MBOTSPL',
-      totalAmount: `${usdMbotsplBalance.formatted || 0}`,
-      nertwork: 'EOS EVM',
-      description: 'Auctioning Prelaunch Token'
-    },
-    {
-      coin: 'BITUSD',
-      totalAmount: eosBalances.bitusd,
-      nertwork: 'EOS Mainnet',
-      description: 'Bitcash USD stable coin'
-    },
-    {
-      coin: 'MBOTS',
-      totalAmount: eosBalances.mbots,
-      nertwork: 'EOS Mainnet',
-      description: 'MBOTS Token'
-    },
-    {
-      coin: 'EOS (gas)',
-      totalAmount: eosBalances.eos,
-      nertwork: 'EOS Mainnet',
-      description: 'Native EOS token'
+      coin: 'BL',
+      totalAmount: `${eosEvmBalance.formatted || 0}`,
+      nertwork: 'Bitcash Chain',
+      description: 'BL token on Bitcash L1'
     }
   ]
 

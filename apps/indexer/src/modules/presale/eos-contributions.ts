@@ -7,7 +7,7 @@ import { issuePresaleTokens } from './presale-issuer'
 // https://docs.dfuse.eosnation.io/eosio/public-apis/reference/search/terms/
 // receiver: means the account with code that has executed the action.
 export async function listenToEosContributions(env: 'test' | 'prod' = 'test') {
-  const usdt = smartsaleEnv[env].usdt.find((t) => (t.chainType = 'antelope'))?.address
+  const usdt = smartsaleEnv[env].stables.find((t) => (t.chainType = 'antelope'))?.address
   const bank = smartsaleEnv[env].bitcash.bank
   const launchpad = smartsaleEnv[env].smartsale.bk
 
