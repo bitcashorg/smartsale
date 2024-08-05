@@ -44,6 +44,8 @@ export function PresaleDepositCard({
   )
 }
 
+const presaleAddress = '0x2C9DAAb3F463d6c6D248aCbeaAEe98687936374a'
+
 function PresaleDeposit() {
   const { address } = useAccount()
   const { writeContract } = useWriteContract()
@@ -54,8 +56,6 @@ function PresaleDeposit() {
   const { requestSignature } = useSigningRequest()
   const { loginOrConnect } = useSession()
   const chainId = useChainId()
-
-  const presaleAddress = '0x2C9DAAb3F463d6c6D248aCbeaAEe98687936374a'
 
   const availableChains = useMemo(() => {
     return appConfig.stables

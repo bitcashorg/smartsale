@@ -76,7 +76,7 @@ export const wagmiConfig = getDefaultConfig({
       wallets: [metaMaskWallet, trustWallet, walletConnectWallet]
     }
   ],
-  chains: appConfig.env === 'dev' ? devChains : [...prodChains, ...devChains]
+  chains: [...prodChains, ...devChains]
 })
 
 const customRainbowKitTheme = merge(lightTheme(), {
