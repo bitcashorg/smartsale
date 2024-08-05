@@ -89,6 +89,7 @@ export function getValidSmartsaleEnv(env: string): SmartsaleEnv {
     throw new Error(`Invalid environment: ${env}`);
   }
 }
+
 export interface SmartsaleEnvConfig {
   chains: Map<number, Chain>
   issuer: {
