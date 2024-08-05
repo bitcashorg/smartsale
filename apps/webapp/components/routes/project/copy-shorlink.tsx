@@ -41,11 +41,11 @@ export function CopyShortlinkIcon() {
         'https://bitlauncher.ai' + window.location.pathname + param
       )
 
-      if (error) {
-        console.error('Failed to check share link:', error)
+      if (dubCoError) {
+        console.error('Failed to check share link:', dubCoError)
         setStatus('error')
 
-        return { data: null, error }
+        return { data: null, error: dubCoError }
       }
 
       await supabase.from('user').upsert(
