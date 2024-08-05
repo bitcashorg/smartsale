@@ -50,11 +50,14 @@ export function DepositCard() {
     if (!address) return toast.error('Make sure your wallet is connected.')
     if (!amount) return toast.error('Amount is undefined')
     const tokenData = appConfig.stables.find(
-      token => token.symbol === selectedToken
+      token =>
+        token.symbol === selectedToken && token.chainName === selectedChain
     )
     if (!tokenData) return toast.error('Token data not found')
+
     if (tokenData.chainType === 'evm') {
       const evmToken = tokenData as EVMTokenContractData
+
       if (chainId !== evmToken.chainId) {
         await switchChain({ chainId: evmToken.chainId })
       } else {
