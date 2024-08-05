@@ -19,6 +19,7 @@ async function listenToEvmTransfersFn(token: EVMTokenContractData) {
     transport: http(),
   })
   try {
+    const latestBlock = await client.getBlockNumber()
     const logs = await client.getLogs({
       address: token.address,
       event: parseAbiItem(
@@ -27,7 +28,7 @@ async function listenToEvmTransfersFn(token: EVMTokenContractData) {
       args: {
         to: presaleWallet,
       },
-      fromBlock: BigInt(token.indexFromBlock),
+      fromBlock: latestBlock,
     })
 
     // delay prevents idempotent transactions:
