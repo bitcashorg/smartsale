@@ -18,7 +18,7 @@ import {
 import { useState, useMemo } from 'react'
 import { EVMTokenContractData, TokenContractData } from 'app-contracts'
 import { parseUnits } from 'viem'
-import { useAccount, useSwitchChain, useWriteContract } from 'wagmi'
+import { useAccount, useSwitchChain, useWriteContract, useChainId } from 'wagmi'
 import { appConfig } from '@/lib/config'
 import { cn } from '@/lib/utils'
 import { ProjectGridCard } from '@/components/routes/project/project-grid-card'
@@ -53,6 +53,7 @@ function PresaleDeposit() {
   const [selectedChain, setSelectedChain] = useState<string>('')
   const { requestSignature } = useSigningRequest()
   const { loginOrConnect } = useSession()
+  const chainId = useChainId()
 
   const presaleAddress = '0x2C9DAAb3F463d6c6D248aCbeaAEe98687936374a'
 
@@ -64,7 +65,8 @@ function PresaleDeposit() {
 
   const deposit = async () => {
     if (!address) return loginOrConnect()
-    if (!amount) return toast.error('Amount is undefined')
+    if (!amount) return toast.error('Please enter a deposit amount')
+    if (!selectedChain) return toast.error('Please select a blockchain network')
 
     const tokenData = appConfig.stables.find(
       token =>
@@ -74,38 +76,43 @@ function PresaleDeposit() {
 
     if (tokenData.chainType === 'evm') {
       const evmToken = tokenData as EVMTokenContractData
-      switchChain({ chainId: evmToken.chainId })
-      writeContract(
-        {
-          abi: evmToken.abi,
-          address: evmToken.address,
-          functionName: 'transfer',
-          args: [
-            presaleAddress,
-            parseUnits(amount.toString(), evmToken.decimals)
-          ],
-          chainId: evmToken.chainId
-        },
-        {
-          onError: error => {
-            console.log('error', error.message)
-            toast.error(error.message.split('Contract Call:')[0])
+      if (chainId !== evmToken.chainId) {
+        await switchChain({ chainId: evmToken.chainId })
+      } else {
+        writeContract(
+          {
+            abi: evmToken.abi,
+            address: evmToken.address,
+            functionName: 'transfer',
+            args: [
+              presaleAddress,
+              parseUnits(amount.toString(), evmToken.decimals)
+            ],
+            chainId: evmToken.chainId
           },
-          onSuccess: trxId => {
-            console.log('Transaction ID:', trxId)
-            toast.success(`Deposit successful ${trxId}`)
-            saveDeposit({
-              amount,
-              chain_id: evmToken.chainId,
-              from: address,
-              to: presaleAddress,
-              token: evmToken.address,
-              trx_hash: trxId,
-              type: 'deposit'
-            })
+          {
+            onError: error => {
+              console.error('Deposit error:', error.message)
+              toast.error(
+                'Unable to complete deposit. Please try again, contact support if the problem persist.'
+              )
+            },
+            onSuccess: trxId => {
+              console.log('Transaction ID:', trxId)
+              toast.success(`Deposit successful ${trxId}`)
+              saveDeposit({
+                amount,
+                chain_id: evmToken.chainId,
+                from: address,
+                to: presaleAddress,
+                token: evmToken.address,
+                trx_hash: trxId,
+                type: 'deposit'
+              })
+            }
           }
-        }
-      )
+        )
+      }
     } else {
       // handle eos token bitusd and usdt
       const esr =
