@@ -3,6 +3,7 @@ import { runPromisesInSeries } from '~/lib/utils'
 import { Address, Log, PublicClient, createPublicClient, http, parseAbiItem, stringify } from 'viem'
 import { TransferEvent } from '~/modules/auction/auction.type'
 import { upsertTransfers } from '~/lib/supabase-client'
+import { issuePresaleTokens } from './presale-issuer'
 
 const presaleWallet = '0xf7bb6BD787FFbA43539219560E3B8162Ba8EEF09'
 const tokens: EVMTokenContractData[] = appContracts.dev.tokens.evm && appContracts.prod.tokens.evm
@@ -44,7 +45,7 @@ async function listenToEvmTransfersFn(token: EVMTokenContractData) {
         to: presaleWallet,
       },
       onLogs: (logs) => {
-        console.log('real time transfer', stringify(logs, null, 2))
+        console.log('real time transfer') // stringify(logs, null, 2)
         processLogs(logs, token)
       },
     })
@@ -59,6 +60,7 @@ async function processLogs(logs: Log[], token: EVMTokenContractData, delay = 0) 
   const actions = logs
     .map((log) => {
       const eventName = (log as any).eventName.toString()
+
       if (!(eventName in eventHandlers)) return null
       return async () => {
         try {
@@ -79,7 +81,13 @@ const eventHandlers: { [key: string]: (log: any, token: EVMTokenContractData) =>
 }
 
 async function handleTransfer(log: TransferEvent, token: EVMTokenContractData) {
-  const data = {
+  console.log('handle transfer', log)
+  const bl_presale_trx = (await issuePresaleTokens(
+    log.args.from as Address,
+    log.args.value,
+  )) as Address
+
+  upsertTransfers({
     trx_hash: log.transactionHash!,
     from: log.args.from as Address,
     to: log.args.to as Address,
@@ -87,17 +95,13 @@ async function handleTransfer(log: TransferEvent, token: EVMTokenContractData) {
     token: log.address,
     chain_id: token.chainId,
     type: 'presale',
-  }
-
-  console.log('new transfer')
-  console.log(data)
-
-  upsertTransfers(data)
+    bl_presale_trx,
+  })
 
   // console.log('result', result)
   // if (result.usdcred_trx || data.from === '0x0000000000000000000000000000000000000000') return
 
-  // const usdcred_trx = (await issuePresaleTokens(data.from, data.amount)) as Address
+  //
 
   // console.log('tokens issued', { usdcred_trx, trx: log.transactionHash })
 }
