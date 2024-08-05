@@ -44,6 +44,7 @@ export async function upsertOrder(data: TablesInsert<'order'>) {
 }
 
 export async function upsertTransfers(data: TablesInsert<'transfer'>) {
+  console.log('upsert transfers', data)
   const { data: result, error } = await supabase
     .from('transfer')
     .upsert(data, { onConflict: 'trx_hash' })
