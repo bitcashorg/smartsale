@@ -21,6 +21,7 @@ import { Tables } from '@repo/supabase'
 import { appConfig } from '@/lib/config'
 import { formatAddress } from 'app-lib'
 import { useEffect, useState } from 'react'
+import { TestnetBLPL } from '../../../../../../packages/app-contracts/src/dev/tokens/testnet-blpl'
 
 export function PresaleTransactionsCard() {
   const { address } = useAccount()
@@ -117,10 +118,11 @@ export function PresaleTransactionsCard() {
           <TableHeader>
             <TableRow>
               <TableHead>Address</TableHead>
-              <TableHead>Network</TableHead>
-              <TableHead>Trx Hash</TableHead>
+              <TableHead>Amount</TableHead>
+              <TableHead>Deposit</TableHead>
+              <TableHead>Issuance</TableHead>
               <TableHead>Date</TableHead>
-              <TableHead className="text-right">Amount</TableHead>
+              <TableHead>Network</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
@@ -165,7 +167,13 @@ function TransactionRow({ transaction }: { transaction: Tables<'transfer'> }) {
           {formatAddress(transaction.from ?? '')}
         </div>
       </TableCell>
-      <TableCell>{chain?.name}</TableCell>
+
+      <TableCell>
+        {transaction.amount !== null
+          ? (transaction.amount / 1000000).toFixed(6)
+          : 'N/A'}
+      </TableCell>
+
       <TableCell>
         {chain?.blockExplorers?.default ? (
           <a
@@ -180,14 +188,28 @@ function TransactionRow({ transaction }: { transaction: Tables<'transfer'> }) {
           formatAddress(transaction.trx_hash)
         )}
       </TableCell>
+
+      <TableCell>
+        {TestnetBLPL.chain?.blockExplorers?.default &&
+        transaction.bl_presale_trx ? (
+          <a
+            href={`${TestnetBLPL.chain.blockExplorers.default.url}/tx/${transaction.bl_presale_trx}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-500 hover:underline"
+          >
+            {formatAddress(transaction.bl_presale_trx)}
+          </a>
+        ) : transaction.bl_presale_trx ? (
+          formatAddress(transaction.bl_presale_trx)
+        ) : (
+          'pending'
+        )}
+      </TableCell>
       <TableCell>
         {new Date(transaction.created_at).toLocaleDateString()}
       </TableCell>
-      <TableCell className="text-right">
-        {transaction.amount !== null
-          ? (transaction.amount / 1000000).toFixed(6)
-          : 'N/A'}
-      </TableCell>
+      <TableCell>{chain?.name}</TableCell>
     </TableRow>
   )
 }
