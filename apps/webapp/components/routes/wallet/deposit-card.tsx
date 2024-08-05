@@ -25,7 +25,7 @@ import {
 import { useState, useMemo } from 'react'
 import { EVMTokenContractData } from 'app-contracts'
 import { parseUnits } from 'viem'
-import { useAccount, useSwitchChain, useWriteContract } from 'wagmi'
+import { useAccount, useSwitchChain, useWriteContract, useChainId } from 'wagmi'
 import { appConfig } from '@/lib/config'
 import { cn } from '@/lib/utils'
 import toast from 'react-hot-toast'
@@ -38,6 +38,7 @@ export function DepositCard() {
   const [selectedChain, setSelectedChain] = useState<string>('Ethereum')
   const [selectedToken, setSelectedToken] = useState('USDT')
   const { requestSignature } = useSigningRequest()
+  const chainId = useChainId()
 
   const availableChains = useMemo(() => {
     return appConfig.stables
@@ -49,22 +50,28 @@ export function DepositCard() {
     if (!address) return toast.error('Make sure your wallet is connected.')
     if (!amount) return toast.error('Amount is undefined')
     const tokenData = appConfig.stables.find(
-      token => token.symbol === selectedToken
+      token =>
+        token.symbol === selectedToken && token.chainName === selectedChain
     )
     if (!tokenData) return toast.error('Token data not found')
+
     if (tokenData.chainType === 'evm') {
       const evmToken = tokenData as EVMTokenContractData
-      switchChain({ chainId: evmToken.chainId })
-      writeContract({
-        abi: evmToken.abi,
-        address: evmToken.address,
-        functionName: 'transfer',
-        args: [
-          '0x2C9DAAb3F463d6c6D248aCbeaAEe98687936374a', // dev only
-          parseUnits(amount.toString(), evmToken.decimals)
-        ],
-        chainId: evmToken.chainId
-      })
+
+      if (chainId !== evmToken.chainId) {
+        await switchChain({ chainId: evmToken.chainId })
+      } else {
+        writeContract({
+          abi: evmToken.abi,
+          address: evmToken.address,
+          functionName: 'transfer',
+          args: [
+            '0x2C9DAAb3F463d6c6D248aCbeaAEe98687936374a', // dev only
+            parseUnits(amount.toString(), evmToken.decimals)
+          ],
+          chainId: evmToken.chainId
+        })
+      }
     } else {
       // handle eos token bitusd and usdt
       const esr =

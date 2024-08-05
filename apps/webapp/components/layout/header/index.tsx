@@ -14,8 +14,8 @@ import { Navigation } from './new-nav'
 
 export function Header({ lang, dict }: HeaderProps) {
   return (
-    <div className="sticky top-0 z-50 flex h-16 bg-background">
-      <div className="container flex flex-row items-center justify-between md:px-4 bg-background py-11">
+    <div className="sticky top-0 z-50 flex h-16 bg-background py-11">
+      <div className="container flex flex-row box-content items-center justify-between md:px-4 bg-inherit">
         <div className="flex h-full items-center lg:min-w-[100px]">
           <Link href={`/${lang}`}>
             <IconBitlauncher className="w-[152px]" />
