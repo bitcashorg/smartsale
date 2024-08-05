@@ -1,11 +1,50 @@
+'use client'
+
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Handshake, Users } from 'lucide-react'
-import { createSupabaseServerClient } from '@/services/supabase'
+import { useSupabaseClient } from '@/services/supabase'
 import { formatUnits } from 'viem'
+import { useEffect, useState } from 'react'
 
-export async function ProjectPresaleData() {
-  const { data: contributors } = await getPresaleContributors()
-  const { data: totalRaised } = await getTotalPresaleAmount()
+export function ProjectPresaleData() {
+  const [contributors, setContributors] = useState<string[]>([])
+  const [totalRaised, setTotalRaised] = useState<bigint>(BigInt(0))
+  const supabase = useSupabaseClient()
+
+  useEffect(() => {
+    const fetchInitialData = async () => {
+      const { data: contributorsData } = await getPresaleContributors(supabase)
+      const { data: totalRaisedData } = await getTotalPresaleAmount(supabase)
+
+      setContributors(contributorsData || [])
+      setTotalRaised(BigInt(totalRaisedData || 0))
+    }
+
+    fetchInitialData()
+
+    const subscription = supabase
+      .channel('presale_contributions')
+      .on(
+        'postgres_changes',
+        { event: '*', schema: 'public', table: 'transfer' },
+        payload => {
+          if (payload.eventType === 'INSERT') {
+            setContributors(prev =>
+              Array.from(new Set([...prev, payload.new.from]))
+            )
+            setTotalRaised(prev => prev + BigInt(payload.new.amount || 0))
+          } else if (payload.eventType === 'DELETE') {
+            setTotalRaised(prev => prev - BigInt(payload.old.amount || 0))
+          }
+        }
+      )
+      .subscribe()
+
+    return () => {
+      subscription.unsubscribe()
+    }
+  }, [supabase])
+
   return (
     <div className="grid gap-4 pt-5 md:grid-cols-2 md:gap-8">
       <Card className="bg-muted" x-chunk="dashboard-01-chunk-2">
@@ -15,9 +54,8 @@ export async function ProjectPresaleData() {
         </CardHeader>
         <CardContent>
           <div className="text-2xl font-bold">
-            ${totalRaised ? formatUnits(BigInt(totalRaised), 6) : '0'}
+            ${formatUnits(totalRaised, 6)}
           </div>
-          {/* <p className="text-xs text-muted-foreground">+19% from last hour</p> */}
         </CardContent>
       </Card>
 
@@ -28,29 +66,18 @@ export async function ProjectPresaleData() {
         </CardHeader>
         <CardContent>
           <div className="text-2xl font-bold">
-            {contributors?.length ? `+${contributors.length}` : '0'}
+            {contributors.length ? `+${contributors.length}` : '0'}
           </div>
-          {/* <p className="text-xs text-muted-foreground">
-            +180.1% from last hour
-          </p> */}
         </CardContent>
       </Card>
-      {/* <Card className="bg-muted" x-chunk="dashboard-01-chunk-3">
-        <CardHeader className="flex flex-row items-center justify-between pb-2 space-y-0">
-          <CardTitle className="text-sm font-medium">Active</CardTitle>
-          <Activity className="w-4 h-4 text-muted-foreground" />
-        </CardHeader>
-        <CardContent>
-          <div className="text-2xl font-bold">+17</div>
-          <p className="text-xs text-muted-foreground">+201 since last hour</p>
-        </CardContent>
-      </Card> */}
     </div>
   )
 }
-async function getPresaleContributors(): Promise<PresaleContributorsResult> {
+
+async function getPresaleContributors(
+  supabase: any
+): Promise<PresaleContributorsResult> {
   try {
-    const supabase = await createSupabaseServerClient()
     const { data, error } = await supabase.from('transfer').select('from')
 
     if (error) throw error
@@ -85,9 +112,10 @@ async function getPresaleContributors(): Promise<PresaleContributorsResult> {
   }
 }
 
-async function getTotalPresaleAmount(): Promise<PresaleTotalAmountResult> {
+async function getTotalPresaleAmount(
+  supabase: any
+): Promise<PresaleTotalAmountResult> {
   try {
-    const supabase = await createSupabaseServerClient()
     const { data, error } = await supabase
       .from('transfer')
       .select('amount')
