@@ -54,7 +54,7 @@ export function WithdrawCard() {
       </CardHeader>
       <CardContent>
         <div className="flex flex-col">
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between gap-2">
             <div className="flex min-w-[40%] flex-col">
               <span className="text-2xl font-semibold">
                 <Input
@@ -96,6 +96,7 @@ export function WithdrawCard() {
           )}
           // disabled={!session?.account}
           onClick={withdraw}
+          disabled
         >
           Convert
         </Button>
