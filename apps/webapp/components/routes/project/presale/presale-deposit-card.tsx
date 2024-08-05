@@ -49,7 +49,7 @@ const presaleAddress = '0x2C9DAAb3F463d6c6D248aCbeaAEe98687936374a'
 function PresaleDeposit() {
   const { address } = useAccount()
   const { writeContract } = useWriteContract()
-  const [amount, setAmount] = useState<number>(42)
+  const [amount, setAmount] = useState<string>('42')
   const { switchChain } = useSwitchChain()
   const [selectedToken, setSelectedToken] = useState('USDT')
   const [selectedChain, setSelectedChain] = useState<string>('')
@@ -99,9 +99,9 @@ function PresaleDeposit() {
             },
             onSuccess: trxId => {
               console.log('Transaction ID:', trxId)
-              toast.success(`Deposit successful ${trxId}`)
+              toast.success(`Deposit successful`)
               saveDeposit({
-                amount,
+                amount: Number(parseUnits(amount, evmToken.decimals)),
                 chain_id: evmToken.chainId,
                 from: address,
                 to: presaleAddress,
@@ -140,7 +140,7 @@ function PresaleDeposit() {
             name="deposit"
             placeholder="0.00"
             value={amount}
-            onChange={e => setAmount(parseInt(e.target.value))}
+            onChange={e => setAmount(e.target.value)}
           />
 
           <Select onValueChange={setSelectedToken} defaultValue={'USDT'}>
