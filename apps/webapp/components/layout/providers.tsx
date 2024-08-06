@@ -16,13 +16,56 @@ import {
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { ThemeProvider as NextThemesProvider } from 'next-themes'
 import { ThemeProviderProps } from 'next-themes/dist/types'
-import { eosEvmTestnet } from 'app-env'
 import { WagmiProvider } from 'wagmi'
-import { sepolia } from 'wagmi/chains'
 import { UseSigningRequestProvider } from '@/hooks/use-signing-request'
 import { merge } from 'lodash'
+import { MobileNavProvider } from '@/hooks/use-mobile-navigation'
+import { _chains } from '@rainbow-me/rainbowkit/dist/config/getDefaultConfig'
+import {
+  sepolia,
+  arbitrum,
+  avalanche,
+  base,
+  celo,
+  mainnet,
+  optimism,
+  polygon,
+  zkSync,
+  bsc,
+  fantom,
+  moonbeam,
+  cronos,
+  kava,
+  metis,
+  gnosis,
+  aurora,
+  harmonyOne
+} from 'wagmi/chains'
+import { eosEvmTestnet } from 'app-env'
+import { appConfig } from '@/lib/config'
 
 const queryClient = new QueryClient()
+
+const prodChains: _chains = [
+  arbitrum,
+  avalanche,
+  base,
+  celo,
+  mainnet,
+  optimism,
+  polygon,
+  zkSync,
+  bsc,
+  fantom,
+  moonbeam,
+  cronos,
+  kava,
+  metis,
+  gnosis,
+  aurora,
+  harmonyOne
+]
+const devChains: _chains = [eosEvmTestnet, sepolia]
 
 export const wagmiConfig = getDefaultConfig({
   appName: 'Bitlauncher',
@@ -33,8 +76,7 @@ export const wagmiConfig = getDefaultConfig({
       wallets: [metaMaskWallet, trustWallet, walletConnectWallet]
     }
   ],
-  // @ts-ignore
-  chains: [{ ...eosEvmTestnet, fees: undefined }, sepolia]
+  chains: [...prodChains, ...devChains]
 })
 
 const customRainbowKitTheme = merge(lightTheme(), {
@@ -68,7 +110,7 @@ export function Providers({ children, ...props }: ThemeProviderProps) {
             >
               <SessionProvider>
                 <UseSigningRequestProvider>
-                  {children}
+                  <MobileNavProvider>{children}</MobileNavProvider>
                 </UseSigningRequestProvider>
               </SessionProvider>
             </RainbowKitProvider>

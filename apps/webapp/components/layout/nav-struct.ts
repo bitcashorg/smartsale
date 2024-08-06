@@ -33,10 +33,16 @@ export const navStruct: NavStruct = {
           description:
             'Learn how our referral system can benefit you and your network.'
         },
+        //! This is not going to a page, its redirecting to home page
+        // {
+        //   label: 'FAQ',
+        //   href: '#faq',
+        //   description: 'Frequently asked questions and their answers.'
+        // },
         {
-          label: 'FAQ',
-          href: '#faq',
-          description: 'Frequently asked questions and their answers.'
+          label: 'About Bitlauncher',
+          href: '/about/about-bitlauncher',
+          description: 'Learn more about bitlauncher.'
         }
       ]
     },

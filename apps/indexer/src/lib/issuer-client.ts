@@ -1,12 +1,6 @@
 import { http, createPublicClient, PublicClient, createWalletClient } from 'viem'
-import { sepolia } from 'viem/chains'
 import { appenv } from '../config'
 import { eosEvmTestnet } from 'app-env'
-
-export const client: PublicClient = createPublicClient({
-  chain: eosEvmTestnet,
-  transport: http(),
-})
 
 export const walletClient = createWalletClient({
   chain: eosEvmTestnet,
@@ -15,20 +9,12 @@ export const walletClient = createWalletClient({
   account: appenv.evm.issuerAccount,
 })
 
-export const sepoliaClient: PublicClient = createPublicClient({
-  chain: {
-    ...sepolia,
-    rpcUrls: {
-      default: {
-        http: [appenv.evm.sepoliaApi],
-      },
-    },
-  },
-  transport: http(),
-})
-
 export async function getCurrentBlockHeight() {
   try {
+    const client = createPublicClient({
+      chain: eosEvmTestnet,
+      transport: http(),
+    })
     const blockNumber = await client.getBlockNumber()
     return blockNumber
   } catch (error) {

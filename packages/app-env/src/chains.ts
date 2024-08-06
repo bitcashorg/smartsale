@@ -1,5 +1,5 @@
 import { Chain } from "viem";
-import { sepolia } from "viem/chains";
+import {sepolia, arbitrum, avalanche, base, celo, mainnet, optimism, polygon, zkSync, bsc, fantom, moonbeam, cronos, kava, metis, gnosis, aurora, harmonyOne} from 'viem/chains';
 
 export const eosEvmTestnet: Chain = {
   nativeCurrency: {
@@ -22,13 +22,13 @@ export const eosEvmTestnet: Chain = {
   testnet: true,
 } as const;
 
-const prodChains: Chain[] = [eosEvmTestnet, sepolia];
-const testChains: Chain[] = [];
+const prodChains: Chain[] = [arbitrum, avalanche, base, celo, mainnet, optimism, polygon, zkSync, bsc, fantom, moonbeam, cronos, kava, metis, gnosis, aurora, harmonyOne];
+const devChains: Chain[] = [eosEvmTestnet, sepolia];
 
 // note: use .entries() to get an array
-export const smartsaleChains = {
-  dev: createMapFromId(prodChains),
-  prod: createMapFromId(testChains),
+export const appChains = {
+  dev: createMapFromId(devChains),
+  prod: createMapFromId(prodChains),
 } as const;
 
 function createMapFromId(items: Chain[]): Map<number, Chain> {

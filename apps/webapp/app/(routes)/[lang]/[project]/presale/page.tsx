@@ -5,7 +5,7 @@ import { Card, CardContent } from '@/components/ui/card'
 import { Countdown } from '@/components/shared/countdown'
 import { ProjectPresaleData } from '@/components/routes/project/project-presale-data'
 import { PresaleTransactionsCard } from '@/components/routes/project/presale/presale-transactions-card'
-import { Lang } from '@/dictionaries/locales'
+import { ProjectPageProps } from '@/types/routing.type'
 import { getDictionary } from '@/dictionaries'
 import { PresaleDepositCard } from '@/components/routes/project/presale/presale-deposit-card'
 
@@ -20,7 +20,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
   return (
     <div className="flex min-h-[calc(83vh-4rem)] flex-col">
       <ProjectHeader project={project}>
-        <div className="grid grid-cols-1 gap-8 mb-10 lg:grid-cols-2">
+        <div className="mb-10 grid grid-cols-1 gap-8 lg:grid-cols-2">
           <Card className="border-card/30 bg-card/60 backdrop-blur-lg">
             <Countdown />
             <CardContent>
@@ -35,8 +35,4 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
       </ProjectHeader>
     </div>
   )
-}
-
-type ProjectPageProps = {
-  params: { project: string; lang: Lang }
 }

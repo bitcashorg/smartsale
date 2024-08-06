@@ -1,6 +1,6 @@
-import { TokenContractData } from "../types";
+import { EOSTokenContractData} from '../../types';
 
-export const EOSBITUSD: TokenContractData = {
+export const EOSFakeBITUSD: EOSTokenContractData = {
   address: "bkbtokentest",
   name: "BITUSD",
   symbol: "BITUSD",
