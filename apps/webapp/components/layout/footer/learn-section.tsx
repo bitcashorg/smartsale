@@ -115,8 +115,8 @@ const content = {
       title: 'How to buy the Bitlauncher $BL token?',
       paragraphs: [],
       images: [
-        "/images/home/bc-coins.webp",
-        "/images/home/bc-coins.png",
+        "/images/home/bl-coins.webp",
+        "/images/home/bl-coins.png",
       ]
     },
     {
