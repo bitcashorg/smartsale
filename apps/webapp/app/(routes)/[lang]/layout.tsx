@@ -17,6 +17,33 @@ import type { Viewport } from 'next'
 import { isMobile } from 'react-device-detect'
 import { Toaster } from 'react-hot-toast'
 import '../../globals.css'
+import {
+  FuturaPTBook,
+  FuturaPTLight,
+  FuturaPTMedium,
+  FuturaPTDemi,
+  FuturaPTHeavy,
+  FuturaPTBold,
+  FuturaPTExtraBold,
+  LufgaRegular,
+  LufgaItalic,
+  LufgaThin,
+  LufgaThinItalic,
+  LufgaExtraLight,
+  LufgaExtraLightItalic,
+  LufgaLight,
+  LufgaLightItalic,
+  LufgaMedium,
+  LufgaMediumItalic,
+  LufgaSemiBold,
+  LufgaSemiBoldItalic,
+  LufgaBold,
+  LufgaBoldItalic,
+  LufgaExtraBold,
+  LufgaExtraBoldItalic,
+  LufgaBlack,
+  LufgaBlackItalic,
+} from "@/assets/fonts/fonts"
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -39,7 +66,10 @@ export default async function RootLayout({
       suppressHydrationWarning
       style={{ width: '100vw', maxWidth: '100vw' }}
     >
-      <body style={{ width: '100vw', maxWidth: '100vw' }}>
+      <body 
+        style={{ width: '100vw', maxWidth: '100vw' }}
+        className={`${FuturaPTBook.variable} ${FuturaPTLight.variable} ${FuturaPTMedium.variable} ${FuturaPTDemi.variable} ${FuturaPTHeavy.variable} ${FuturaPTBold.variable} ${FuturaPTExtraBold.variable} ${LufgaRegular.variable} ${LufgaItalic.variable} ${LufgaThin.variable} ${LufgaThinItalic.variable} ${LufgaExtraLight.variable} ${LufgaExtraLightItalic.variable} ${LufgaLight.variable} ${LufgaLightItalic.variable} ${LufgaMedium.variable} ${LufgaMediumItalic.variable} ${LufgaSemiBold.variable} ${LufgaSemiBoldItalic.variable} ${LufgaBold.variable} ${LufgaBoldItalic.variable} ${LufgaExtraBold.variable} ${LufgaExtraBoldItalic.variable} ${LufgaBlack.variable} ${LufgaBlackItalic.variable}`}
+      >
         <Providers
           attribute="class"
           defaultTheme="system"
