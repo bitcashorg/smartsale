@@ -1,7 +1,7 @@
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
-import { Section } from '../../shared/section'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import Image from 'next/image'
 import Link from 'next/link'
+import { Section } from '../../shared/section'
 
 export function LearnSection() {
   return (
@@ -12,8 +12,8 @@ export function LearnSection() {
           <Card className="relative overflow-hidden min-h-96 bg-[#0F113E] rounded-[48px]">
             <div className="flex flex-col justify-end w-auto shadow-md bg-gradient-to-br from-cornflowerblue-200">
               <picture>
-                <source srcSet={content.cards[0].images[0]} type="image/webp"/>
-                <source srcSet={content.cards[0].images[1]} type="image/png"/>
+                <source srcSet={content.cards[0].images[0]} type="image/webp" />
+                <source srcSet={content.cards[0].images[1]} type="image/png" />
                 <Image
                   src={content.cards[0].images[0]}
                   alt={content.cards[0].title}
@@ -53,8 +53,8 @@ export function LearnSection() {
                   <div className="w-28 h-[2px] bg-secondary-600 mt-7" />
                 </CardHeader>
                 <picture>
-                  <source srcSet={content.cards[1].images[0]} type="image/webp"/>
-                  <source srcSet={content.cards[1].images[1]} type="image/png"/>
+                  <source srcSet={content.cards[1].images[0]} type="image/webp" />
+                  <source srcSet={content.cards[1].images[1]} type="image/png" />
                   <Image
                     src={content.cards[1].images[0]}
                     alt={content.cards[1].title}
@@ -77,8 +77,8 @@ export function LearnSection() {
                   <div className="w-28 h-[2px] bg-alert mt-7" />
                 </CardHeader>
                 <picture>
-                  <source srcSet={content.cards[2].images[0]} type="image/webp"/>
-                  <source srcSet={content.cards[2].images[1]} type="image/png"/>
+                  <source srcSet={content.cards[2].images[0]} type="image/webp" />
+                  <source srcSet={content.cards[2].images[1]} type="image/png" />
                   <Image
                     src={content.cards[2].images[0]}
                     alt={content.cards[2].title}
