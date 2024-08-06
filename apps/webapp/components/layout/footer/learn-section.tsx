@@ -112,7 +112,7 @@ const content = {
       ]
     },
     {
-      title: 'How to buy the Bitlauncher $BC token?',
+      title: 'How to buy the Bitlauncher $BL token?',
       paragraphs: [],
       images: [
         "/images/home/bc-coins.webp",
