@@ -261,6 +261,7 @@ export const sessionRelationshipsSchema = z.tuple([]);
 
 export const transferRowSchema = z.object({
   amount: z.number().nullable(),
+  bl_presale_trx: z.string().nullable(),
   chain_id: z.number().nullable(),
   created_at: z.string(),
   from: z.string().nullable(),
@@ -273,6 +274,7 @@ export const transferRowSchema = z.object({
 
 export const transferInsertSchema = z.object({
   amount: z.number().optional().nullable(),
+  bl_presale_trx: z.string().optional().nullable(),
   chain_id: z.number().optional().nullable(),
   created_at: z.string().optional(),
   from: z.string().optional().nullable(),
@@ -285,6 +287,7 @@ export const transferInsertSchema = z.object({
 
 export const transferUpdateSchema = z.object({
   amount: z.number().optional().nullable(),
+  bl_presale_trx: z.string().optional().nullable(),
   chain_id: z.number().optional().nullable(),
   created_at: z.string().optional(),
   from: z.string().optional().nullable(),

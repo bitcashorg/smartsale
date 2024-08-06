@@ -22,53 +22,60 @@ import {
   genBitusdDepositSigningRequest,
   genUsdtDepositSigningRequest
 } from '@/lib/eos'
-import { useState } from 'react'
-import {
-  EVMTokenContractData,
-  TestnetUSDT,
-  TokenContractData
-} from 'app-contracts'
+import { useState, useMemo } from 'react'
+import { EVMTokenContractData } from 'app-contracts'
 import { parseUnits } from 'viem'
-import { useAccount, useSwitchChain, useWriteContract } from 'wagmi'
+import { useAccount, useSwitchChain, useWriteContract, useChainId } from 'wagmi'
 import { appConfig } from '@/lib/config'
 import { cn } from '@/lib/utils'
 import toast from 'react-hot-toast'
 
-const usdtMap = new Map<string, TokenContractData>()
-appConfig.usdt.forEach(t => {
-  const key = JSON.stringify(t)
-  return usdtMap.set(key, t)
-})
-
 export function DepositCard() {
   const { address } = useAccount()
-  const { writeContract, ...other } = useWriteContract()
+  const { writeContract } = useWriteContract()
   const [amount, setAmount] = useState<number>(42)
   const { switchChain } = useSwitchChain()
-  const [token, setToken] = useState<TokenContractData>(TestnetUSDT)
+  const [selectedChain, setSelectedChain] = useState<string>('')
+  const [selectedToken, setSelectedToken] = useState('USDT')
   const { requestSignature } = useSigningRequest()
+  const chainId = useChainId()
+
+  const availableChains = useMemo(() => {
+    return appConfig.stables
+      .filter(token => token.symbol === selectedToken)
+      .map(token => token.chainName)
+  }, [selectedToken])
 
   const deposit = async () => {
-    if (!address) return toast.error('Make sure your evm wallet is connected.')
+    if (!address) return toast.error('Make sure your wallet is connected.')
     if (!amount) return toast.error('Amount is undefined')
+    const tokenData = appConfig.stables.find(
+      token =>
+        token.symbol === selectedToken && token.chainName === selectedChain
+    )
+    if (!tokenData) return toast.error('Token data not found')
 
-    if (token.chainType === 'evm') {
-      const evmToken = token as EVMTokenContractData
-      switchChain({ chainId: evmToken.chainId })
-      writeContract({
-        abi: evmToken.abi,
-        address: evmToken.address,
-        functionName: 'transfer',
-        args: [
-          '0x2C9DAAb3F463d6c6D248aCbeaAEe98687936374a', // dev only
-          parseUnits(amount.toString(), evmToken.decimals)
-        ],
-        chainId: evmToken.chainId
-      })
+    if (tokenData.chainType === 'evm') {
+      const evmToken = tokenData as EVMTokenContractData
+
+      if (chainId !== evmToken.chainId) {
+        await switchChain({ chainId: evmToken.chainId })
+      } else {
+        writeContract({
+          abi: evmToken.abi,
+          address: evmToken.address,
+          functionName: 'transfer',
+          args: [
+            '0x2C9DAAb3F463d6c6D248aCbeaAEe98687936374a', // dev only
+            parseUnits(amount.toString(), evmToken.decimals)
+          ],
+          chainId: evmToken.chainId
+        })
+      }
     } else {
       // handle eos token bitusd and usdt
       const esr =
-        token.symbol === 'USDT'
+        selectedToken === 'USDT'
           ? await genUsdtDepositSigningRequest(amount, address)
           : await genBitusdDepositSigningRequest(amount, address)
       requestSignature(esr)
@@ -80,47 +87,50 @@ export function DepositCard() {
       <CardHeader>
         <CardTitle>Convert to USDCred</CardTitle>
         <CardDescription>
-          Get USD Credits on Bitlauncer to participate on the auctions.
+          Get USD Credits on Bitlauncer to participate in the auctions.
         </CardDescription>
       </CardHeader>
       <CardContent>
-        <div className="flex flex-col">
-          <label htmlFor="deposit" className="text-sm font-bold"></label>
-          <div className="flex items-center justify-between">
-            <div className="flex min-w-[40%] flex-col">
-              <span className="text-2xl font-semibold">
-                <Input
-                  type="number"
-                  id="deposit"
-                  name="deposit"
-                  placeholder="0.00"
-                  value={amount}
-                  onChange={e => setAmount(parseInt(e.target.value))}
-                />
-              </span>
+        <div className="flex flex-col space-y-4">
+          <div className="flex items-center justify-between gap-2">
+            <div className="flex min-w-[30%] flex-col">
+              <Input
+                type="number"
+                id="deposit"
+                name="deposit"
+                placeholder="0.00"
+                value={amount}
+                onChange={e => setAmount(parseInt(e.target.value))}
+              />
             </div>
-            <Select onValueChange={chainId => setToken(usdtMap.get(chainId)!)}>
-              {/* @ts-ignore */}
-              <SelectTrigger id="currency-out">
-                <SelectValue
-                  placeholder={`${token.symbol} on ${token.chainName}`}
-                />
-              </SelectTrigger>
-              {/* @ts-ignore */}
-              <SelectContent position="popper">
-                {Array.from(usdtMap.values()).map(t => {
-                  const key = JSON.stringify(t)
-                  const usdt = usdtMap.get(key)
 
-                  return (
-                    // @ts-ignore */
-                    <SelectItem key={key} value={key}>
-                      {usdt?.symbol} on {usdt?.chainName}
-                    </SelectItem>
-                  )
-                })}
+            <Select onValueChange={setSelectedToken} defaultValue={'USDT'}>
+              <SelectTrigger id="token-select">
+                <SelectValue placeholder={`USDT`} />
+              </SelectTrigger>
+              <SelectContent position="popper">
+                {['USDT', 'USDC'].map(token => (
+                  <SelectItem key={token} value={token}>
+                    {token}
+                  </SelectItem>
+                ))}
               </SelectContent>
             </Select>
+
+            <div className="flex min-w-[40%] flex-col">
+              <Select onValueChange={setSelectedChain} value={selectedChain}>
+                <SelectTrigger id="chain-select">
+                  <SelectValue placeholder="Select Network" />
+                </SelectTrigger>
+                <SelectContent position="popper">
+                  {availableChains.map(chain => (
+                    <SelectItem key={chain} value={chain}>
+                      {chain}
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+            </div>
           </div>
         </div>
       </CardContent>
@@ -133,8 +143,8 @@ export function DepositCard() {
             }),
             'h-auto w-full whitespace-normal border border-solid border-accent-secondary bg-background px-10 py-2'
           )}
-          // disabled={!session?.account}
           onClick={deposit}
+          disabled
         >
           Deposit
         </Button>

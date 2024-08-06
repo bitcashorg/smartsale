@@ -1,8 +1,8 @@
-import { TokenContractData } from "../types";
+import { EOSTokenContractData} from '../../types';
 
-export const EOSFakeUSDT: TokenContractData = {
-  address: "bkbmocktoken",
-  name: "Fake EOS USDT",
+export const EOSUSDT: EOSTokenContractData = {
+  address: "tethertether",
+  name: "EOS USDT",
   symbol: "USDT",
   decimals: 4,
   indexFromBlock: 0,

@@ -7,7 +7,7 @@
   "types": "./src/index.ts",
   "scripts": {
     "build": "bun run types && bun run schemas",
-    "types": "supabase gen types gen types --lang=typescript --project-id mitkjznioyrucenuzsdb > src/supa.types.ts",
+    "types": "supabase gen types gen types --lang=typescript --project-id jvpdyxpjpodxsuvhufpw > src/supa.types.ts",
     "schemas": "supabase-to-zod --input src/supa.types.ts --output src/supa.schemas.ts",
     "fake": "bun run ./scripts/fake-orders.ts"
   },

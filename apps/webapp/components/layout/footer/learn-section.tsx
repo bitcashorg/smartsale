@@ -33,7 +33,7 @@ export function LearnSection() {
                 <div className="flex flex-col justify-center items-start gap-y-5">
                   {
                     content.cards[0].paragraphs.map((p) => (
-                      <p key={p} className="text-base font-medium text-[#7A7CA8]">{p}</p>
+                      <p key={p} className="text-base text-justify font-medium text-[#7A7CA8]">{p}</p>
                     ))
                   }
                 </div>
@@ -42,7 +42,7 @@ export function LearnSection() {
           </Card>
         </Link>
 
-        <div className="grid grid-cols-1 gap-8 grid-rows-2 h-full">
+        <div className="grid h-full grid-cols-1 grid-rows-2 gap-8">
           <Link href="/blog/bitcash/how-to-register-and-kyc-to-bitcash ">
             <Card className="relative min-h-44 bg-[#0F113E] rounded-[48px] h-full flex jutify-center items-center">
               <div className="shadow-md bg-gradient-to-b from-cornflowerblue-200 grid grid-cols-[60%_40%] gap-2 items-center justify-center h-full">

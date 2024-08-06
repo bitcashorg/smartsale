@@ -62,7 +62,7 @@ export function ProjectInfo({
         ) : (
           <div
             key={k}
-            className="flex w-full min-w-[250px] flex-col justify-evenly rounded-sm bg-muted px-4 py-3"
+            className="flex w-full min-w-[250px] flex-col justify-evenly rounded-sm bg-muted px-4 py-3 md:min-w-[203px]"
           >
             {items.map((item, ik) => (
               <Fragment key={ik}>

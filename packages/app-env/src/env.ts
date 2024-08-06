@@ -1,4 +1,4 @@
-import { smartsaleChains } from "./chains";
+import { appChains } from "./chains";
 import {
   EOSFakeUSDT,
   EOSUSDT,
@@ -16,7 +16,7 @@ const prod: SmartsaleEnvConfig = {
     url : 'https://byqpuulbryhqwvxpoobc.supabase.co',
     anonKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJ5cXB1dWxicnlocXd2eHBvb2JjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTMxMjkxNTMsImV4cCI6MjAyODcwNTE1M30.2kikQFX8PhOIzTnojaE0J06E94j92dtpPBI832EktK8',
   },
-  chains: smartsaleChains.prod,
+  chains: appChains.prod,
   esrCallbackUrl: "https://bitlauncher.ai/api/esr",
   issuer: {
     eos: "launchpad.bk",
@@ -31,7 +31,7 @@ const prod: SmartsaleEnvConfig = {
     auction: "0x",
     bk: "launchpad.bk",
   },
-  usdt: [EOSUSDT,...usdcContracts, ...usdtContracts],
+  stables: [EOSUSDT,...usdcContracts, ...usdtContracts],
 };
 
 const dev: SmartsaleEnvConfig = {
@@ -39,7 +39,7 @@ const dev: SmartsaleEnvConfig = {
     url : 'https://jvpdyxpjpodxsuvhufpw.supabase.co',
     anonKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imp2cGR5eHBqcG9keHN1dmh1ZnB3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTMxMzMxMDcsImV4cCI6MjAyODcwOTEwN30.KkwK6Px8MG03QPDScsKjLc48GU-RkTs9beT946vD2vI',
   },
-  chains: smartsaleChains.dev,
+  chains: appChains.dev,
   esrCallbackUrl: "https://dev.bitlauncher.ai/api/esr",
   issuer: {
     eos: "gaboesquivel",
@@ -54,7 +54,7 @@ const dev: SmartsaleEnvConfig = {
     auction: "0x",
     bk: "bkblaunchpad",
   },
-  usdt: [EOSFakeBITUSD, EOSFakeUSDT, SepoliaUSDT, TestnetUSDT],
+  stables: [EOSFakeBITUSD, EOSFakeUSDT, SepoliaUSDT, TestnetUSDT],
 };
 // pre production tests
 const test: SmartsaleEnvConfig = {
@@ -89,6 +89,7 @@ export function getValidSmartsaleEnv(env: string): SmartsaleEnv {
     throw new Error(`Invalid environment: ${env}`);
   }
 }
+
 export interface SmartsaleEnvConfig {
   chains: Map<number, Chain>
   issuer: {
@@ -104,7 +105,7 @@ export interface SmartsaleEnvConfig {
     auction: Address
     bk: string
   }
-  usdt: TokenContractData[]
+  stables: TokenContractData[]
   esrCallbackUrl: string
   supabase: {
     url : string,

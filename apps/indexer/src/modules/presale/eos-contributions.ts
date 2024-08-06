@@ -1,13 +1,13 @@
 import { smartsaleEnv } from 'app-env'
 import { stringify } from 'viem/utils'
 import { createFirehoseSubscription } from '~/lib/dfuse-client'
-import { issueTokens } from './presale-issuer'
+import { issuePresaleTokens } from './presale-issuer'
 
 // https://docs.dfuse.eosnation.io/platform/public-apis/search-query-language/
 // https://docs.dfuse.eosnation.io/eosio/public-apis/reference/search/terms/
 // receiver: means the account with code that has executed the action.
 export async function listenToEosContributions(env: 'test' | 'prod' = 'test') {
-  const usdt = smartsaleEnv[env].usdt.find((t) => (t.chainType = 'antelope'))?.address
+  const usdt = smartsaleEnv[env].stables.find((t) => (t.chainType = 'antelope'))?.address
   const bank = smartsaleEnv[env].bitcash.bank
   const launchpad = smartsaleEnv[env].smartsale.bk
 
@@ -30,7 +30,7 @@ export async function listenToEosContributions(env: 'test' | 'prod' = 'test') {
 async function handleDeposit(data: { trxId: string; from: string; quantity: string }) {
   console.log('handle deposit', data)
 
-  const response = await issueTokens(
+  const response = await issuePresaleTokens(
     '0x7472312e4e1a373df751f84bd871a4c7a16128fa',
     BigInt(data.quantity),
   )
