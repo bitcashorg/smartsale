@@ -1,20 +1,30 @@
+import React from 'react'
+
+interface TextSegment {
+  text: string
+  isBold?: boolean
+}
+
 interface Paragraph {
-    text: string
-    isBold?: boolean
-  }
-  
-  interface HeroContentProps {
-    paragraphs: Paragraph[]
-  }
-  
-  export function HeroContent({ paragraphs }: HeroContentProps): JSX.Element {
-    return (
-      <section className="font-['Futura PT'] text-sm font-normal leading-snug text-[#9395af]">
-        {paragraphs.map((paragraph, index) => (
-          <span key={index} className={paragraph.isBold ? 'font-bold' : ''}>
-            {paragraph.text}
-          </span>
-        ))}
-      </section>
-    )
-  }
+  segments: TextSegment[]
+}
+
+interface HeroContentProps {
+  paragraphs: Paragraph[]
+}
+
+export function HeroContent({ paragraphs }: HeroContentProps) {
+  return (
+    <section className="text-gray-500 dark:text-gray-400 font-['Futura PT'] text-md font-normal leading-[145%] space-y-4">
+      {paragraphs.map((paragraph, index) => (
+        <p key={index}>
+          {paragraph.segments.map((segment, segmentIndex) => (
+            <span key={segmentIndex} className={segment.isBold ? 'font-bold' : ''}>
+              {segment.text}
+            </span>
+          ))}
+        </p>
+      ))}
+    </section>
+  )
+}

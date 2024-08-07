@@ -14,15 +14,27 @@ export async function AboutBitlauncherPageLanding({
   const lang = params.lang
   const dict = await getDictionary(lang)
   const paragraphs = [
-    { text: 'Bitlauncher is a ' },
-    { text: 'pioneering launchpad', isBold: true },
-    { text: ' dedicated to transforming the landscape of artificial intelligence (AI) and cryptocurrency. We are on a mission to empower the next wave of AI innovation by providing open-source AI projects with equitable fundraising opportunities and decentralized organization through the use of blockchain technology.' },
-    { text: 'At Bitlauncher, we ' },
-    { text: 'combine the transformative powers of AI and cryptocurrency', isBold: true },
-    { text: ' to address the unique challenges faced by AI startups. By integrating tokenization and decentralized autonomous organizations (DAOs), we create a seamless synergy that enables these startups to overcome funding barriers, accelerate their growth, and harness global resources.' },
-    { text: 'Our platform is built on a foundation of ' },
-    { text: 'transparency, inclusivity, and community-driven progress', isBold: true },
-    { text: '. We foster a collaborative environment where developers, investors, and AI enthusiasts can come together to share resources, exchange ideas, and shape the future of technology.' }
+    {
+      segments: [
+        { text: 'Bitlauncher is a ' },
+        { text: 'pioneering launchpad', isBold: true },
+        { text: ' dedicated to transforming the landscape of artificial intelligence (AI) and cryptocurrency. We are on a mission to empower the next wave of AI innovation by providing open-source AI projects with equitable fundraising opportunities and decentralized organization through the use of blockchain technology.' }
+      ]
+    },
+    {
+      segments: [
+        { text: 'At Bitlauncher, we ' },
+        { text: 'combine the transformative powers of AI and cryptocurrency', isBold: true },
+        { text: ' to address the unique challenges faced by AI startups. By integrating tokenization and decentralized autonomous organizations (DAOs), we create a seamless synergy that enables these startups to overcome funding barriers, accelerate their growth, and harness global resources.' }
+      ]
+    },
+    {
+      segments: [
+        { text: 'Our platform is built on a foundation of ' },
+        { text: 'transparency, inclusivity, and community-driven progress', isBold: true },
+        { text: '. We foster a collaborative environment where developers, investors, and AI enthusiasts can come together to share resources, exchange ideas, and shape the future of technology.' }
+      ]
+    }
   ]
 
   return (
