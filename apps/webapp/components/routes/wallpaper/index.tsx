@@ -88,9 +88,9 @@ export async function WhitepaperPageLanding({
               </h2>
               <HeroContent paragraphs={paragraphs} />
             </div>
-            <div className="relative">
+            <div className="relative flex items-center justify-center">
               <div className="infopages-background infopages-background--whitepaper">
-                <div className="absolute top-0 right-0 m-4">
+                <div className="absolute bottom-0 m-4">
                   <CommunityCard />
                 </div>
               </div>
