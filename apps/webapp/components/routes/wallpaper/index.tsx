@@ -4,9 +4,8 @@ import { getDictionary } from '@/dictionaries'
 import { Lang } from '@/dictionaries/locales'
 
 export async function WhitepaperPageLanding({
-  params
+  params: { lang }
 }: WhitepaperPageProps) {
-  const lang = params.lang
   const dict = await getDictionary(lang)
   const paragraphs = [
     {
