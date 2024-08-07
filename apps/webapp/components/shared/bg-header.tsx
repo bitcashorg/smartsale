@@ -19,9 +19,9 @@ export function BgHeader({
               <h2 className="font-['Futura PT'] text-7xl tracking-tighter">
                 <Balancer>{heading}</Balancer>
               </h2>
-              <div className="font-['Futura PT'] text-start text-4xl font-medium leading-[42.35px] text-[#ff51ed]">
+              { subheading ? (<div className="font-['Futura PT'] text-start text-4xl font-medium leading-[42.35px] text-[#ff51ed]">
                 {subheading}
-              </div>
+              </div>) : null}
             </div>
             <div className="infopages-background infopages-background--security">
               <div className="absolute bottom-0 m-4">

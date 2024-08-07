@@ -1,5 +1,5 @@
 import React from 'react'
-import { PageContent, PageContentData } from '@/components/shared/content'
+import { PageContent } from '@/components/shared/content'
 import { CommonPageProps } from '@/types/routing.type'
 import { getDictionary } from '@/dictionaries'
 import { BgHeader } from '@/components/shared/bg-header'
@@ -11,8 +11,8 @@ export default async function BitlauncherWhitePaper({
   return (
     <>
       <BgHeader
-        heading={'Bitlauncher Whitepaper'}
-        subheading={'Be Part of the Intelligent Future'}
+        heading={'Whitepaper'}
+        subheading={''}
         imageSrc="/images/blog/temp-bg-concept.webp"
       />
 
