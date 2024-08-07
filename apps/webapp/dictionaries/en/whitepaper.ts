@@ -2,23 +2,6 @@ import { PageContentData } from '@/components/shared/content'
 
 export const whitepaper = {
   content: [
-    { type: 'h1', text: 'Executive Summary' },
-    {
-      type: 'p',
-      text: 'In the dynamic realms of artificial intelligence (AI) and cryptocurrency, our platform emerges as a pioneering launchpad designed to redefine the landscape of innovation and investment. Addressing the critical market gap of funding and organizational challenges faced by open-source AI startups, our launchpad introduces a novel synergy of tokenization and decentralized autonomous organizations (DAOs). This whitepaper delineates our mission to democratize and decentralize the realms of AI development and ownership, thereby catalyzing a new era of technological advancement and community engagement.'
-    },
-    {
-      type: 'p',
-      text: "The problem our platform addresses is twofold: the struggle of open-source AI projects to secure sustainable funding and the broader crypto industry's quest for meaningful applications beyond financial speculation. Our solution leverages the untapped potential of cryptocurrency as a groundbreaking tool for fundraising and organization, offering a unique value proposition focused on open-source AI companies. We utilize a batch auction for equitable price discovery and rapid organizational structuring through DAO and token infrastructure, positioning ourselves as the go-to platform for AI startups seeking to navigate the complexities of growth and innovation."
-    },
-    {
-      type: 'p',
-      text: "Our tokenomics model, grounded in a mint-and-burn mechanism, promises not just a sustainable economic framework for our platform but also a potential for significant return on capital for contributors and purchasers. By aligning the incentives of all stakeholders and ensuring a fair distribution of tokens, we aim to build a robust ecosystem where the value of our utility token appreciates in tandem with the platform's success and the contributions of its community."
-    },
-    {
-      type: 'p',
-      text: 'In essence, our launchpad is not just a bridge between AI startups and the global pool of investors but a blueprint for the future of collaborative, transparent, and decentralized innovation in the AI and cryptocurrency sectors. Through this executive summary, we invite readers to explore the details of our vision, strategy, and the economic underpinnings that make our platform a revolutionary force in the intersection of AI and crypto.'
-    },
     { type: 'h1', text: 'Introduction' },
     {
       type: 'p',
