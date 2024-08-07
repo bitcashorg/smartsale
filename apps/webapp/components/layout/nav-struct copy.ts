@@ -3,90 +3,88 @@ export const navStruct: NavStruct = {
 		{
 			label: "About",
 			main: true,
-			// Disable for first release
-			//   items: [
-			//     {
-			//       label: 'For Investors',
-			//       href: '/about/investors',
-			//       description:
-			//         'Information and resources for potential and current investors.'
-			//     },
-			//     {
-			//       label: 'For AI Startups',
-			//       href: '/about/ai-startups',
-			//       description:
-			//         'Support and resources for AI startups looking to grow and innovate.'
-			//     },
-			//     {
-			//       label: 'Bitcash App',
-			//       href: '/about/bitcash-app',
-			//       description: 'Learn more about the Bitcash app and its features.'
-			//     },
-			//     {
-			//       label: 'DAOs & dBoard',
-			//       href: '/about/daos-dboard',
-			//       description: 'Discover our DAOs and the decentralized dashboard.'
-			//     },
+			items: [
+				{
+					label: "For Investors",
+					href: "/about/investors",
+					description:
+						"Information and resources for potential and current investors.",
+				},
+				{
+					label: "For AI Startups",
+					href: "/about/ai-startups",
+					description:
+						"Support and resources for AI startups looking to grow and innovate.",
+				},
+				{
+					label: "Bitcash App",
+					href: "/about/bitcash-app",
+					description: "Learn more about the Bitcash app and its features.",
+				},
+				{
+					label: "DAOs & dBoard",
+					href: "/about/daos-dboard",
+					description: "Discover our DAOs and the decentralized dashboard.",
+				},
 
-			//     {
-			//       label: 'Referral System',
-			//       href: '/about/referral-system',
-			//       description:
-			//         'Learn how our referral system can benefit you and your network.'
-			//     },
-			//     //! This is not going to a page, its redirecting to home page
-			//     // {
-			//     //   label: 'FAQ',
-			//     //   href: '#faq',
-			//     //   description: 'Frequently asked questions and their answers.'
-			//     // },
-			//     {
-			//       label: 'About Bitlauncher',
-			//       href: '/about/about-bitlauncher',
-			//       description: 'Learn more about bitlauncher.'
-			//     }
-			//   ]
+				{
+					label: "Referral System",
+					href: "/about/referral-system",
+					description:
+						"Learn how our referral system can benefit you and your network.",
+				},
+				//! This is not going to a page, its redirecting to home page
+				// {
+				//   label: 'FAQ',
+				//   href: '#faq',
+				//   description: 'Frequently asked questions and their answers.'
+				// },
+				{
+					label: "About Bitlauncher",
+					href: "/about/about-bitlauncher",
+					description: "Learn more about bitlauncher.",
+				},
+			],
 		},
 		{
 			label: "Learn",
 			main: true,
-			// Disable for first release
-			// items: [
-			// 	{
-			// 		label: "How it works",
-			// 		href: "/learn/how-it-works",
-			// 		description: "Simple explanation on how our system operates.",
-			// 	},
-			// 	{
-			// 		label: "Batch Auctions",
-			// 		href: "/learn/batch-auctions",
-			// 		description: "Understand the process and benefits of batch auctions.",
-			// 	},
-			// 	{
-			// 		label: "Tokenization",
-			// 		href: "/learn/tokenization",
-			// 		description: "Learn about tokenization and its applications.",
-			// 	},
-			// 	{
-			// 		label: "Security Tips",
-			// 		href: "/learn/security",
-			// 		description: "Best practices for ensuring security in your projects.",
-			// 	},
-			// 	{
-			// 		label: "Blog & News",
-			// 		href: "/blog",
-			// 		description: "Stay updated with our latest blog posts and news.",
-			// 	},
-			// 	{
-			// 		label: "Media",
-			// 		href: "/learn/media",
-			// 		description: "Explore our media resources and press releases.",
-			// 	},
-			// ],
+			items: [
+				{
+					label: "How it works",
+					href: "/learn/how-it-works",
+					description: "Simple explanation on how our system operates.",
+				},
+				{
+					label: "Batch Auctions",
+					href: "/learn/batch-auctions",
+					description: "Understand the process and benefits of batch auctions.",
+				},
+				{
+					label: "Tokenization",
+					href: "/learn/tokenization",
+					description: "Learn about tokenization and its applications.",
+				},
+				{
+					label: "Security Tips",
+					href: "/learn/security",
+					description: "Best practices for ensuring security in your projects.",
+				},
+				{
+					label: "Blog & News",
+					href: "/blog",
+					description: "Stay updated with our latest blog posts and news.",
+				},
+				{
+					label: "Media",
+					href: "/learn/media",
+					description: "Explore our media resources and press releases.",
+				},
+			],
 		},
 		{ label: "Whitepaper", href: "/whitepaper", main: true },
 		{
-			label: "Bitlancher",
+			label: "Bitluancher",
 			items: [
 				{ label: "Whitepaper", href: "/whitepaper" },
 				{ label: "BC Token", href: "/bc-token" },
