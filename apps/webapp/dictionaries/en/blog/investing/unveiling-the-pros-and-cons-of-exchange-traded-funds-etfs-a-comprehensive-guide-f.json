@@ -726,7 +726,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "While ETFs and mutual funds both pool contributors' money to invest in a diversified portfolio, there are key differences between the two:"
+                      "value": "While ETFs and mutual funds both pool contributors' money to contribute in a diversified portfolio, there are key differences between the two:"
                     }
                   ]
                 },
@@ -1318,7 +1318,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "ETFs and mutual funds share similarities but also have distinct characteristics. Unlike mutual funds, ETFs trade on exchanges like individual stocks. This allows for intraday trading and provides greater flexibility in buying and selling shares. ETFs typically have lower expense ratios, as they tend to be passively managed. Additionally, ETFs offer tax efficiency due to their unique structure, allowing contributors to potentially minimize capital gains distributions. However, mutual funds may be more suitable for contributors who prefer professional active management or who want to invest small amounts regularly through automatic investments."
+                      "value": "ETFs and mutual funds share similarities but also have distinct characteristics. Unlike mutual funds, ETFs trade on exchanges like individual stocks. This allows for intraday trading and provides greater flexibility in buying and selling shares. ETFs typically have lower expense ratios, as they tend to be passively managed. Additionally, ETFs offer tax efficiency due to their unique structure, allowing contributors to potentially minimize capital gains distributions. However, mutual funds may be more suitable for contributors who prefer professional active management or who want to contribute small amounts regularly through automatic investments."
                     }
                   ]
                 },
@@ -1581,7 +1581,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "value": "ESG-focused ETFs: Consider incorporating Environmental, Social, and Governance (ESG) focused ETFs into your portfolio. These funds invest in companies that meet specific sustainability and ethical criteria, allowing you to align your investments with your values."
+                              "value": "ESG-focused ETFs: Consider incorporating Environmental, Social, and Governance (ESG) focused ETFs into your portfolio. These funds contribute in companies that meet specific sustainability and ethical criteria, allowing you to align your investments with your values."
                             }
                           ]
                         }

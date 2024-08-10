@@ -172,7 +172,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Imagine a bond as a contractual agreement between an contributor and a borrower. When you invest in a bond, you essentially become a lender, providing funds to the borrower (such as a government or corporation) for a specified period. In return, the borrower promises to repay the principal amount at maturity and pay periodic interest payments throughout the bond's life."
+                      "value": "Imagine a bond as a contractual agreement between an contributor and a borrower. When you contribute in a bond, you essentially become a lender, providing funds to the borrower (such as a government or corporation) for a specified period. In return, the borrower promises to repay the principal amount at maturity and pay periodic interest payments throughout the bond's life."
                     }
                   ]
                 },
@@ -494,7 +494,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Certificates of Deposit, commonly known as CDs, are time deposits offered by banks and credit unions. When you invest in a CD, you agree to leave your funds with the institution for a specific period, known as the maturity term. In return, the institution pays you interest on your investment, which is typically higher than regular savings accounts."
+                      "value": "Certificates of Deposit, commonly known as CDs, are time deposits offered by banks and credit unions. When you contribute in a CD, you agree to leave your funds with the institution for a specific period, known as the maturity term. In return, the institution pays you interest on your investment, which is typically higher than regular savings accounts."
                     }
                   ]
                 },
@@ -649,7 +649,7 @@
                             },
                             {
                               "type": "span",
-                              "value": " If you have a substantial sum to invest, jumbo CDs provide higher interest rates for larger deposits."
+                              "value": " If you have a substantial sum to contribute, jumbo CDs provide higher interest rates for larger deposits."
                             }
                           ]
                         }
@@ -908,7 +908,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Money market funds are investment vehicles that aim to provide stability, liquidity, and a modest level of return. These funds invest in highly liquid, short-term debt securities, such as Treasury bills, commercial paper, and certificates of deposit, issued by governments, corporations, and financial institutions."
+                      "value": "Money market funds are investment vehicles that aim to provide stability, liquidity, and a modest level of return. These funds contribute in highly liquid, short-term debt securities, such as Treasury bills, commercial paper, and certificates of deposit, issued by governments, corporations, and financial institutions."
                     }
                   ]
                 },

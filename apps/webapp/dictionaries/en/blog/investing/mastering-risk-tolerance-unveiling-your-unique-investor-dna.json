@@ -565,7 +565,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "value": "Time Horizon: The length of time you have to invest is another crucial factor. Contributors with longer time horizons may be more inclined to take on higher risks, as they have more time to recover from any potential losses."
+                              "value": "Time Horizon: The length of time you have to contribute is another crucial factor. Contributors with longer time horizons may be more inclined to take on higher risks, as they have more time to recover from any potential losses."
                             }
                           ]
                         }
@@ -692,7 +692,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "B. Identifying your investment time horizon: Consider your investment time horizon—the length of time you plan to invest before needing access to the funds. Short-term goals, such as saving for a down payment on a house in a few years, may require a more conservative approach with lower risk. Conversely, long-term goals like retirement, which may be decades away, could allow for a greater tolerance for risk."
+                      "value": "B. Identifying your investment time horizon: Consider your investment time horizon—the length of time you plan to contribute before needing access to the funds. Short-term goals, such as saving for a down payment on a house in a few years, may require a more conservative approach with lower risk. Conversely, long-term goals like retirement, which may be decades away, could allow for a greater tolerance for risk."
                     }
                   ]
                 },
@@ -1081,7 +1081,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "value": "Implement systematic investment strategies: Utilize strategies like dollar-cost averaging, where you invest a fixed amount regularly regardless of market conditions, to remove emotions from the investment process and focus on long-term goals."
+                              "value": "Implement systematic investment strategies: Utilize strategies like dollar-cost averaging, where you contribute a fixed amount regularly regardless of market conditions, to remove emotions from the investment process and focus on long-term goals."
                             }
                           ]
                         }

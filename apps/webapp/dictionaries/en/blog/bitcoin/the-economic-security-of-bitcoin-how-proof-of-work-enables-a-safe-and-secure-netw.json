@@ -319,7 +319,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "One of the key features of proof-of-work is that it is costly to perform. Miners must invest in specialized hardware and pay for electricity to run their equipment. This creates a barrier to entry for potential attackers, as they would need to invest a significant amount of resources in order to mount a successful attack on the network."
+                      "value": "One of the key features of proof-of-work is that it is costly to perform. Miners must contribute in specialized hardware and pay for electricity to run their equipment. This creates a barrier to entry for potential attackers, as they would need to contribute a significant amount of resources in order to mount a successful attack on the network."
                     }
                   ]
                 }

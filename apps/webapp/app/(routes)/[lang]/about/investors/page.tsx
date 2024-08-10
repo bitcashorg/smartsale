@@ -14,7 +14,7 @@ export default async function InvestorsPage({ params }: CommonPageProps) {
 
 const content: LandingPageContent = {
   title: 'Robust Vetting Process',
-  header: 'Invest with Confidence',
+  header: 'Contribute with Confidence',
   description:
     'Our rigorous vetting process ensures only the most promising web3 and AI projects make it onto the Bitlauncher platform. This gives contributors peace of mind and helps them capitalize on the best opportunities.',
   sections: [

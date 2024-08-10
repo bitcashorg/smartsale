@@ -551,7 +551,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Mutual funds are investment vehicles that pool money from multiple contributors to invest in a diversified portfolio of securities such as stocks, bonds, or other assets. They are managed by professional fund managers who make investment decisions on behalf of the contributors."
+                      "value": "Mutual funds are investment vehicles that pool money from multiple contributors to contribute in a diversified portfolio of securities such as stocks, bonds, or other assets. They are managed by professional fund managers who make investment decisions on behalf of the contributors."
                     }
                   ]
                 },
@@ -603,7 +603,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "value": "Equity Funds: These funds invest in stocks, offering potential long-term capital appreciation."
+                              "value": "Equity Funds: These funds contribute in stocks, offering potential long-term capital appreciation."
                             }
                           ]
                         }
@@ -617,7 +617,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "value": "Bond Funds: Bond funds invest in fixed-income securities, providing regular income and stability."
+                              "value": "Bond Funds: Bond funds contribute in fixed-income securities, providing regular income and stability."
                             }
                           ]
                         }
@@ -631,7 +631,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "value": "Money Market Funds: Money market funds invest in short-term, low-risk debt instruments, providing liquidity and stability."
+                              "value": "Money Market Funds: Money market funds contribute in short-term, low-risk debt instruments, providing liquidity and stability."
                             }
                           ]
                         }
@@ -701,7 +701,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "value": "Alternative Funds: Alternative funds invest in non-traditional assets like real estate, commodities, or private equity."
+                              "value": "Alternative Funds: Alternative funds contribute in non-traditional assets like real estate, commodities, or private equity."
                             }
                           ]
                         }
