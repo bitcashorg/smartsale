@@ -35,7 +35,7 @@ export const projects: ProjectContent[] = [
             'Platform Manajemen DAO: Memperkenalkan dBoard untuk meningkatkan pengambilan keputusan dan tata kelola dalam struktur yang terdesentralisasi.',
             'Landasan Peluncuran Permulaan AI: bitlauncher membantu startup AI dengan penggalangan dana dan alat organisasi yang aman dan efisien.',
             'Standar Kepatuhan Tinggi: Menekankan kepatuhan terhadap peraturan yang kuat, termasuk kebijakan KYC dan AML, serta protokol keamanan tingkat lanjut.',
-            'Komunitas Terbuka: Mendorong lingkungan kolaboratif bagi pengguna, pengembang, dan investor untuk terlibat dan berkontribusi.',
+            'Komunitas Terbuka: Mendorong lingkungan kolaboratif bagi pengguna, pengembang, dan contributor untuk terlibat dan berkontribusi.',
             'Visi Ekonomi Digital: Mengundang partisipasi global untuk membentuk ekonomi baru di mana teknologi meningkatkan kesejahteraan dan hubungan manusia.'
           ]
         ]

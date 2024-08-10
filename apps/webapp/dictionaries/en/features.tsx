@@ -10,7 +10,7 @@ export const featuresContent: FeatureContent[] = [
     title:
       'Revolutionizing Startup Funding: Unveiling the Future of Fairness in Token Sales',
     description:
-      "Imagine a marketplace where fairness isn't just a promise but a guarantee. Our platform introduces a cutting-edge batch auction system for token sales, setting a new standard in transparent and equitable price discovery. Here's how it works: participants bid during a fixed period, and tokens are distributed at a uniform clearing price. No more manipulation, no more unfair advantages—just equal opportunities for all investors. Join us in reshaping the startup funding landscape, where every bid counts and every investor stands on an equal footing.",
+      "Imagine a marketplace where fairness isn't just a promise but a guarantee. Our platform introduces a cutting-edge batch auction system for token sales, setting a new standard in transparent and equitable price discovery. Here's how it works: participants bid during a fixed period, and tokens are distributed at a uniform clearing price. No more manipulation, no more unfair advantages—just equal opportunities for all contributors. Join us in reshaping the startup funding landscape, where every bid counts and every contributor stands on an equal footing.",
     label: 'Batch Auctions',
     imgSrc: '/images/home/auction-bids-chart.svg',
     imgAlt: 'Batch Auctions'

@@ -32,7 +32,7 @@ const content: AboutBitlauncherPageContent = {
   synergy that enables these startups to overcome funding barriers, accelerate their growth, and harness global resources.
 
   Our platform is built on a foundation of transparency, inclusivity, and community-driven progress. We foster a collaborative
-  environment where developers, investors, and AI enthusiasts can come together to share resources, exchange ideas, and shape 
+  environment where developers, contributors, and AI enthusiasts can come together to share resources, exchange ideas, and shape 
   the future of technology.`,
   image: {
     alt: 'dBoard',

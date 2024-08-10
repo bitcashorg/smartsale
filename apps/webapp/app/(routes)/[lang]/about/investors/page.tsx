@@ -1,8 +1,7 @@
-import React from 'react'
-import { Metadata } from 'next'
-import { CommonPageProps } from '@/types/routing.type'
-import { getDictionary } from '@/dictionaries'
 import { LandingPage, LandingPageContent } from '@/components/_wip/landing-page'
+import { getDictionary } from '@/dictionaries'
+import { CommonPageProps } from '@/types/routing.type'
+import { Metadata } from 'next'
 
 export default async function InvestorsPage({ params }: CommonPageProps) {
   const dict = await getDictionary(params.lang)
@@ -17,7 +16,7 @@ const content: LandingPageContent = {
   title: 'Robust Vetting Process',
   header: 'Invest with Confidence',
   description:
-    'Our rigorous vetting process ensures only the most promising web3 and AI projects make it onto the Bitlauncher platform. This gives investors peace of mind and helps them capitalize on the best opportunities.',
+    'Our rigorous vetting process ensures only the most promising web3 and AI projects make it onto the Bitlauncher platform. This gives contributors peace of mind and helps them capitalize on the best opportunities.',
   sections: [
     {
       subHeader: 'Thorough Audits',
@@ -28,26 +27,26 @@ const content: LandingPageContent = {
       text: 'Our team of industry experts carefully evaluates each project to ensure it meets our high standards.'
     },
     {
-      subHeader: 'Investor Protection',
-      text: 'Rigorous vetting protects investors from scams and low-quality projects, giving them confidence in their investments.'
+      subHeader: 'Contributor Protection',
+      text: 'Rigorous vetting protects contributors from scams and low-quality projects, giving them confidence in their investments.'
     },
     {
       subHeader: 'Curated Opportunities',
-      text: 'Our platform showcases only the most promising web3 and AI projects, saving investors time and effort.'
+      text: 'Our platform showcases only the most promising web3 and AI projects, saving contributors time and effort.'
     },
     {
       subHeader: 'Transparent Reporting',
-      text: 'We provide detailed and transparent reporting on all projects, ensuring investors have all the information they need.'
+      text: 'We provide detailed and transparent reporting on all projects, ensuring contributors have all the information they need.'
     },
     {
       subHeader: 'Community Feedback Integration',
-      text: 'We incorporate feedback from our investor community to continuously improve the projects and the platform.'
+      text: 'We incorporate feedback from our contributor community to continuously improve the projects and the platform.'
     }
   ]
 }
 
 export const metadata: Metadata = {
-  title: 'Investors | Bitlauncher',
+  title: 'Contributors | Bitlauncher',
   description:
     'Be part of the intelligent future and join the Ai/Web3 revolution now!'
 }

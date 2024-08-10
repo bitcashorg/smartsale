@@ -534,8 +534,8 @@ export async function getBlogCategories(): Promise<getBlogCategoriesTypes> {
 const defaultBlogArticle: BlogArticleRecord = {
   id: 0,
   title:
-    'The Art of Researching and Evaluating Bitcoin Exchanges: A Guide for Investors',
-  slug: 'the-art-of-researching-and-evaluating-bitcoin-exchanges-a-guide-for-investors',
+    'The Art of Researching and Evaluating Bitcoin Exchanges: A Guide for Contributors',
+  slug: 'the-art-of-researching-and-evaluating-bitcoin-exchanges-a-guide-for-contributors',
   authorName: 'Jun Dam',
   authorPicture: {
     url: 'https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png'
@@ -568,9 +568,9 @@ const defaultBlogArticle: BlogArticleRecord = {
   ],
   seo: {
     description:
-      'The Art of Researching and Evaluating Bitcoin Exchanges: A Guide for Investors',
+      'The Art of Researching and Evaluating Bitcoin Exchanges: A Guide for Contributors',
     title:
-      'The Art of Researching and Evaluating Bitcoin Exchanges: A Guide for Investors',
+      'The Art of Researching and Evaluating Bitcoin Exchanges: A Guide for Contributors',
     twitterCard: '',
     noIndex: false,
     image: null,
@@ -607,13 +607,13 @@ export interface MainArticleContentBlock {
 
 export interface BlogArticleRecord {
   id:
-    | BlogAiRecord['id']
-    | BlogNewsRecord['id']
-    | BlogBitcashRecord['id']
-    | BlogBitcoinRecord['id']
-    | BlogStartupRecord['id']
-    | BlogInvestingRecord['id']
-    | ResearchAiRecord['id']
+  | BlogAiRecord['id']
+  | BlogNewsRecord['id']
+  | BlogBitcashRecord['id']
+  | BlogBitcoinRecord['id']
+  | BlogStartupRecord['id']
+  | BlogInvestingRecord['id']
+  | ResearchAiRecord['id']
   topics: string[]
   title: string
   slug: string

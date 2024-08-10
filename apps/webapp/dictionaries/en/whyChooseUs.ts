@@ -1,4 +1,3 @@
-import { Feature } from '@/types/home'
 
 export const whyChooseUs = {
   title: 'Why Choose Us',
@@ -8,7 +7,7 @@ export const whyChooseUs = {
       icon: 'ShoppingBasket',
       title: 'Batch Auction for Fair Price Discovery',
       description:
-        'Bitlauncher aggregates bids over time to ensure equitable token pricing for AI startups and investors.'
+        'Bitlauncher aggregates bids over time to ensure equitable token pricing for AI startups and contributors.'
     },
     {
       icon: 'Group',

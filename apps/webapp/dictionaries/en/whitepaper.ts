@@ -17,7 +17,7 @@ export const whitepaper = {
     },
     {
       type: 'p',
-      text: 'In essence, our launchpad is not just a bridge between AI startups and the global pool of investors but a blueprint for the future of collaborative, transparent, and decentralized innovation in the AI and cryptocurrency sectors. Through this executive summary, we invite readers to explore the details of our vision, strategy, and the economic underpinnings that make our platform a revolutionary force in the intersection of AI and crypto.'
+      text: 'In essence, our launchpad is not just a bridge between AI startups and the global pool of contributors but a blueprint for the future of collaborative, transparent, and decentralized innovation in the AI and cryptocurrency sectors. Through this executive summary, we invite readers to explore the details of our vision, strategy, and the economic underpinnings that make our platform a revolutionary force in the intersection of AI and crypto.'
     },
     { type: 'h1', text: 'Introduction' },
     {
@@ -30,7 +30,7 @@ export const whitepaper = {
     },
     {
       type: 'p',
-      text: 'Filling the Void: The Critical Role of an AI + Crypto Launchpad. Open-source AI companies often grapple with the challenge of securing sustainable funding and establishing a competitive edge. Traditional venture capital avenues, especially outside of established tech hubs like Silicon Valley, can be fraught with barriers. Our Bitlauncher launchpad addresses this gap by enabling AI startups to access a global pool of investors and a first-mover audience of potential customers through tokenization and DAOs. This approach not only facilitates early and equitable capital opportunities but also fosters a loyal community of contributors and users, creating a formidable competitive moat for these projects.'
+      text: 'Filling the Void: The Critical Role of an AI + Crypto Launchpad. Open-source AI companies often grapple with the challenge of securing sustainable funding and establishing a competitive edge. Traditional venture capital avenues, especially outside of established tech hubs like Silicon Valley, can be fraught with barriers. Our Bitlauncher launchpad addresses this gap by enabling AI startups to access a global pool of contributors and a first-mover audience of potential customers through tokenization and DAOs. This approach not only facilitates early and equitable capital opportunities but also fosters a loyal community of contributors and users, creating a formidable competitive moat for these projects.'
     },
     {
       type: 'p',
@@ -43,11 +43,11 @@ export const whitepaper = {
     { type: 'h1', text: 'Market Analysis' },
     {
       type: 'p',
-      text: 'Overview of the Current Market Landscape for Cryptocurrencies and AI Technologies. The cryptocurrency market has experienced exponential growth over the past decade, evolving from a niche interest to a major financial market. As of the latest data, the global cryptocurrency market cap has reached unprecedented highs, with widespread adoption among both retail and institutional investors. At the same time, artificial intelligence (AI) technologies have undergone significant advancements, penetrating various sectors including healthcare, finance, logistics, and entertainment. The AI market is on an exponential growth trajectory, with predictions suggesting it could reach hundreds of billions in the coming years. This growth is fueled by advances in machine learning, natural language processing, and computer vision, alongside increasing data availability and computational power. The convergence of AI and cryptocurrency represents a burgeoning sector characterized by innovation, volatility, and vast potential for growth.'
+      text: 'Overview of the Current Market Landscape for Cryptocurrencies and AI Technologies. The cryptocurrency market has experienced exponential growth over the past decade, evolving from a niche interest to a major financial market. As of the latest data, the global cryptocurrency market cap has reached unprecedented highs, with widespread adoption among both retail and institutional contributors. At the same time, artificial intelligence (AI) technologies have undergone significant advancements, penetrating various sectors including healthcare, finance, logistics, and entertainment. The AI market is on an exponential growth trajectory, with predictions suggesting it could reach hundreds of billions in the coming years. This growth is fueled by advances in machine learning, natural language processing, and computer vision, alongside increasing data availability and computational power. The convergence of AI and cryptocurrency represents a burgeoning sector characterized by innovation, volatility, and vast potential for growth.'
     },
     {
       type: 'p',
-      text: "Analysis of Trends, Challenges, and Opportunities in the AI + Crypto Sector. Trends: Decentralized AI Marketplaces: There's a growing trend towards decentralized platforms that allow for the buying and selling of AI services using cryptocurrencies. Tokenization of AI Projects: Tokenization, facilitated by cryptocurrencies, is becoming a popular means to fund and democratize access to AI projects, allowing broader participation and investment. AI-driven Crypto Trading: The use of AI in predictive analytics for cryptocurrency trading is becoming more prevalent, offering sophisticated tools for investors."
+      text: "Analysis of Trends, Challenges, and Opportunities in the AI + Crypto Sector. Trends: Decentralized AI Marketplaces: There's a growing trend towards decentralized platforms that allow for the buying and selling of AI services using cryptocurrencies. Tokenization of AI Projects: Tokenization, facilitated by cryptocurrencies, is becoming a popular means to fund and democratize access to AI projects, allowing broader participation and investment. AI-driven Crypto Trading: The use of AI in predictive analytics for cryptocurrency trading is becoming more prevalent, offering sophisticated tools for contributors."
     },
     {
       type: 'p',
@@ -59,11 +59,11 @@ export const whitepaper = {
     },
     {
       type: 'p',
-      text: "Competitive Analysis and Bitlauncher's Positioning. The competitive landscape includes traditional VC-funded AI startups, other crypto-based funding platforms, and decentralized autonomous organizations (DAOs) focusing on technology projects. Bitlauncher differentiates itself through: Focusing exclusively on open-source AI projects, addressing a gap in the market for these ventures to secure funding and organize efficiently. Utilizing a batch auction mechanism for fair price discovery, ensuring equitable purchase opportunities. Providing comprehensive DAO tools for project organization, fostering transparency and community governance. Committing to sustainable tokenomic models that resonate with traditional startup equity principles, making it an attractive platform for serious investors and innovators in the AI and crypto space."
+      text: "Competitive Analysis and Bitlauncher's Positioning. The competitive landscape includes traditional VC-funded AI startups, other crypto-based funding platforms, and decentralized autonomous organizations (DAOs) focusing on technology projects. Bitlauncher differentiates itself through: Focusing exclusively on open-source AI projects, addressing a gap in the market for these ventures to secure funding and organize efficiently. Utilizing a batch auction mechanism for fair price discovery, ensuring equitable purchase opportunities. Providing comprehensive DAO tools for project organization, fostering transparency and community governance. Committing to sustainable tokenomic models that resonate with traditional startup equity principles, making it an attractive platform for serious contributors and innovators in the AI and crypto space."
     },
     {
       type: 'p',
-      text: "Unlike competitors, Bitlauncher addresses the market's need for transparent, ethical, and community-consensus driven AI and crypto innovations. This unique positioning allows Bitlauncher to cater to a niche yet rapidly growing segment of the market, attracting startups, investors, and developers committed to the ethical and sustainable growth of AI and cryptocurrency ecosystems."
+      text: "Unlike competitors, Bitlauncher addresses the market's need for transparent, ethical, and community-consensus driven AI and crypto innovations. This unique positioning allows Bitlauncher to cater to a niche yet rapidly growing segment of the market, attracting startups, contributors, and developers committed to the ethical and sustainable growth of AI and cryptocurrency ecosystems."
     },
     {
       type: 'p',
@@ -80,15 +80,15 @@ export const whitepaper = {
     },
     {
       type: 'p',
-      text: 'Vision. Our vision is to become the cornerstone of open-source AI innovation, where the most groundbreaking AI solutions find their footing and flourish. We envision a future where Bitlauncher acts as the catalyst for creating a sustainable ecosystem of AI technologies that are owned and shaped by a global community of contributors, investors, and users. Through democratizing access to resources and investment, we aim to unlock the full potential of AI to solve complex global challenges, fostering a world where technology advances hand in hand with ethical principles and inclusive growth.'
+      text: 'Vision. Our vision is to become the cornerstone of open-source AI innovation, where the most groundbreaking AI solutions find their footing and flourish. We envision a future where Bitlauncher acts as the catalyst for creating a sustainable ecosystem of AI technologies that are owned and shaped by a global community of contributors, contributors, and users. Through democratizing access to resources and investment, we aim to unlock the full potential of AI to solve complex global challenges, fostering a world where technology advances hand in hand with ethical principles and inclusive growth.'
     },
     {
       type: 'p',
-      text: 'Long-term Goals. Fostering Innovation: To support the development of over 100 open-source AI projects within the next five years, transforming ideas into viable solutions that address real-world problems. Revolutionize AI Project Funding: To innovate funding mechanisms through cryptocurrency, ensuring open-source AI projects have access to the capital needed to launch and scale without sacrificing their principles or potential. Community Building: To cultivate a vibrant community of over 50,000 active members, including AI developers, crypto investors, and technology enthusiasts, who actively participate in governance, funding, and collaboration. Sustainable Growth: To establish a self-sustaining ecosystem where projects not only succeed in achieving their individual goals but also contribute back to the platform, ensuring a perpetual cycle of growth and innovation. Global Impact: To make a tangible impact on the global AI and crypto communities by promoting ethical AI development, enhancing transparency in AI funding, and increasing accessibility to AI technologies for underserved regions.'
+      text: 'Long-term Goals. Fostering Innovation: To support the development of over 100 open-source AI projects within the next five years, transforming ideas into viable solutions that address real-world problems. Revolutionize AI Project Funding: To innovate funding mechanisms through cryptocurrency, ensuring open-source AI projects have access to the capital needed to launch and scale without sacrificing their principles or potential. Community Building: To cultivate a vibrant community of over 50,000 active members, including AI developers, crypto contributors, and technology enthusiasts, who actively participate in governance, funding, and collaboration. Sustainable Growth: To establish a self-sustaining ecosystem where projects not only succeed in achieving their individual goals but also contribute back to the platform, ensuring a perpetual cycle of growth and innovation. Global Impact: To make a tangible impact on the global AI and crypto communities by promoting ethical AI development, enhancing transparency in AI funding, and increasing accessibility to AI technologies for underserved regions.'
     },
     {
       type: 'p',
-      text: 'Achieving Our Goals. Strategic Partnerships: Collaborating with leading academic institutions, technology companies, and open-source communities to provide projects with the resources, expertise, and exposure they need to succeed. Innovative Funding Models: Utilizing tokenomics and DAOs to create fair, transparent, and efficient funding mechanisms that align the interests of developers and investors. Education and Outreach: Launching initiatives to educate the broader public about the potential of AI and cryptocurrency, reducing barriers to entry and fostering a more informed and engaged community. Technology Development: Continuously improving the Bitlauncher platform to enhance user experience, streamline project development, and ensure the highest standards of security and governance.'
+      text: 'Achieving Our Goals. Strategic Partnerships: Collaborating with leading academic institutions, technology companies, and open-source communities to provide projects with the resources, expertise, and exposure they need to succeed. Innovative Funding Models: Utilizing tokenomics and DAOs to create fair, transparent, and efficient funding mechanisms that align the interests of developers and contributors. Education and Outreach: Launching initiatives to educate the broader public about the potential of AI and cryptocurrency, reducing barriers to entry and fostering a more informed and engaged community. Technology Development: Continuously improving the Bitlauncher platform to enhance user experience, streamline project development, and ensure the highest standards of security and governance.'
     },
     {
       type: 'p',
@@ -130,7 +130,7 @@ export const whitepaper = {
     },
     {
       type: 'p',
-      text: "Participation and Governance: Owning Bitcash tokens places you at the heart of our DAO's consensus-driven governance processes, enabling you to vote on pivotal proposals and influence the strategic trajectory of the platform. This model nurtures a cooperative environment where each member actively shapes the project's outcomes, transcending the passive investor role found in conventional investment scenarios."
+      text: "Participation and Governance: Owning Bitcash tokens places you at the heart of our DAO's consensus-driven governance processes, enabling you to vote on pivotal proposals and influence the strategic trajectory of the platform. This model nurtures a cooperative environment where each member actively shapes the project's outcomes, transcending the passive contributor role found in conventional investment scenarios."
     },
     {
       type: 'p',
@@ -138,7 +138,7 @@ export const whitepaper = {
     },
     {
       type: 'p',
-      text: 'Commitment to Transparent Fundraising: Bitcash aims to raise up to $400k through a public token sale and presale to new members on our launchpad, ensuring equitable access for all types of capital contributions—from retail to institutional. This approach underscores our commitment to fairness and transparency, setting a standard for future offerings within our ecosystem. Note: This offering excludes U.S. investors and those from countries under U.S. sanctions.'
+      text: 'Commitment to Transparent Fundraising: Bitcash aims to raise up to $400k through a public token sale and presale to new members on our launchpad, ensuring equitable access for all types of capital contributions—from retail to institutional. This approach underscores our commitment to fairness and transparency, setting a standard for future offerings within our ecosystem. Note: This offering excludes U.S. contributors and those from countries under U.S. sanctions.'
     },
     {
       type: 'p',
@@ -151,7 +151,7 @@ export const whitepaper = {
     },
     {
       type: 'p',
-      text: "Mint-and-Burn Mechanism: Tokens in the Bitcash ecosystem are minted to reward contributions from developers, users, and investors, reflecting their value addition to the platform. This issuance could dilute token value, but our strategic use of revenue—generated from utility token purchases for service access—counters this by buying back and burning tokens. This cycle not only maintains a balanced supply but potentially enhances the token's value as the platform expands and improves. (Est. utility fees: Launchpad: 2-5% of startup valuation. Onramp/P2P: 1% tx fees.)"
+      text: "Mint-and-Burn Mechanism: Tokens in the Bitcash ecosystem are minted to reward contributions from developers, users, and contributors, reflecting their value addition to the platform. This issuance could dilute token value, but our strategic use of revenue—generated from utility token purchases for service access—counters this by buying back and burning tokens. This cycle not only maintains a balanced supply but potentially enhances the token's value as the platform expands and improves. (Est. utility fees: Launchpad: 2-5% of startup valuation. Onramp/P2P: 1% tx fees.)"
     },
     {
       type: 'p',
@@ -172,11 +172,11 @@ export const whitepaper = {
     { type: 'h1', text: 'Use Cases and Applications' },
     {
       type: 'p',
-      text: 'Use Cases and Applications: Fostering Innovation Across the AI Landscape. Bitlauncher is designed to address critical challenges and open up new opportunities for AI startups, investors, and various stakeholders within the burgeoning field of artificial intelligence. By harnessing the power of open-source models, tokenization, and decentralized governance, our platform aims to democratize access to resources, funding, and global markets.'
+      text: 'Use Cases and Applications: Fostering Innovation Across the AI Landscape. Bitlauncher is designed to address critical challenges and open up new opportunities for AI startups, contributors, and various stakeholders within the burgeoning field of artificial intelligence. By harnessing the power of open-source models, tokenization, and decentralized governance, our platform aims to democratize access to resources, funding, and global markets.'
     },
     {
       type: 'p',
-      text: 'Empowering AI Startups with Alternative Funding and Global Reach. The competitive nature of the AI industry often leaves many promising projects struggling to secure necessary funding, especially those outside the Silicon Valley bubble. Bitlauncher offers a lifeline to these projects by providing a global platform for alternative funding through a community of global investors. This not only levels the playing field but also ensures that innovation is not geographically constrained.'
+      text: 'Empowering AI Startups with Alternative Funding and Global Reach. The competitive nature of the AI industry often leaves many promising projects struggling to secure necessary funding, especially those outside the Silicon Valley bubble. Bitlauncher offers a lifeline to these projects by providing a global platform for alternative funding through a community of global contributors. This not only levels the playing field but also ensures that innovation is not geographically constrained.'
     },
     {
       type: 'p',
@@ -188,7 +188,7 @@ export const whitepaper = {
     },
     {
       type: 'p',
-      text: 'Bridging the Gap for Global Investors. Traditionally, access to premier AI projects has been limited for non-US investors. Bitlauncher dismantles these barriers, offering a global platform that brings high-quality projects from around the world to a diverse investor base. Our focus on educating both startups and investors on sound financial principles ensures a marketplace grounded in value creation and sustainable growth, steering clear of speculative and high-risk investment behaviors.'
+      text: 'Bridging the Gap for Global Contributors. Traditionally, access to premier AI projects has been limited for non-US contributors. Bitlauncher dismantles these barriers, offering a global platform that brings high-quality projects from around the world to a diverse contributor base. Our focus on educating both startups and contributors on sound financial principles ensures a marketplace grounded in value creation and sustainable growth, steering clear of speculative and high-risk investment behaviors.'
     },
     {
       type: 'p',
@@ -280,7 +280,7 @@ export const whitepaper = {
     { type: 'h1', text: 'How to Participate' },
     {
       type: 'p',
-      text: "Engaging with our launchpad's token sale is a streamlined and secure process designed to ensure fairness, transparency, and compliance with global standards. Below is a step-by-step guide for potential investors to participate in the token sale, along with important details on KYC (Know Your Customer), AML (Anti-Money Laundering) requirements, and wallet compatibility."
+      text: "Engaging with our launchpad's token sale is a streamlined and secure process designed to ensure fairness, transparency, and compliance with global standards. Below is a step-by-step guide for potential contributors to participate in the token sale, along with important details on KYC (Know Your Customer), AML (Anti-Money Laundering) requirements, and wallet compatibility."
     },
     {
       type: 'p',
@@ -304,7 +304,7 @@ export const whitepaper = {
     },
     {
       type: 'p',
-      text: 'By following these steps, investors can confidently and securely participate in the token sale, contributing to the development of a new global economy powered by blockchain and AI innovations.'
+      text: 'By following these steps, contributors can confidently and securely participate in the token sale, contributing to the development of a new global economy powered by blockchain and AI innovations.'
     },
     { type: 'h1', text: 'FAQs' },
     {
@@ -313,11 +313,11 @@ export const whitepaper = {
     },
     {
       type: 'p',
-      text: '1. What is the primary purpose of the launchpad? The launchpad is designed to empower AI startups by providing them with a platform for tokenization and access to a global pool of investors, facilitating easier funding and organization through the innovative use of DAO technology and cryptocurrency.'
+      text: '1. What is the primary purpose of the launchpad? The launchpad is designed to empower AI startups by providing them with a platform for tokenization and access to a global pool of contributors, facilitating easier funding and organization through the innovative use of DAO technology and cryptocurrency.'
     },
     {
       type: 'p',
-      text: '2. How does the token sale work? Our token sale operates as a batch auction, ensuring a fair price discovery mechanism that benefits both investors and startups. Tokens are issued based on current market valuations, allowing for equitable investment opportunities while fostering growth and adding value to the organization.'
+      text: '2. How does the token sale work? Our token sale operates as a batch auction, ensuring a fair price discovery mechanism that benefits both contributors and startups. Tokens are issued based on current market valuations, allowing for equitable investment opportunities while fostering growth and adding value to the organization.'
     },
     {
       type: 'p',
@@ -341,7 +341,7 @@ export const whitepaper = {
     },
     {
       type: 'p',
-      text: '8. How can startups and investors benefit from participating in the launchpad? Startups gain access to capital, resources, and a global community, enhancing their growth potential and market reach. Investors benefit from early access to innovative AI projects with high growth potential, contributing to a diversified and forward-looking investment portfolio.'
+      text: '8. How can startups and contributors benefit from participating in the launchpad? Startups gain access to capital, resources, and a global community, enhancing their growth potential and market reach. Contributors benefit from early access to innovative AI projects with high growth potential, contributing to a diversified and forward-looking investment portfolio.'
     },
     {
       type: 'p',

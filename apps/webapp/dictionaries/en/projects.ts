@@ -35,7 +35,7 @@ export const projects: ProjectContent[] = [
             'DAO Management Platform: Introduces dBoard for enhanced decision-making and governance within decentralized structures.',
             'AI Startup Launchpad: bitlauncher assists AI startups with secure, efficient fundraising and organizational tools.',
             'High Compliance Standards: Emphasizes strong regulatory compliance, including KYC and AML policies, and advanced security protocols.',
-            'Open Community: Encourages a collaborative environment for users, developers, and investors to engage and contribute.',
+            'Open Community: Encourages a collaborative environment for users, developers, and contributors to engage and contribute.',
             'Digital Economy Vision: Invites global participation to shape a new economy where technology enhances human prosperity and connection.'
           ]
         ]
