@@ -13,7 +13,7 @@ export const about = {
     },
     {
       type: 'p',
-      text: 'Our platform is built on a foundation of transparency, inclusivity, and community-driven progress. We foster a collaborative environment where developers, investors, and AI enthusiasts can come together to share resources, exchange ideas, and shape the future of technology.'
+      text: 'Our platform is built on a foundation of transparency, inclusivity, and community-driven progress. We foster a collaborative environment where developers, contributors, and AI enthusiasts can come together to share resources, exchange ideas, and shape the future of technology.'
     },
     {
       type: 'h2',

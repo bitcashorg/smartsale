@@ -16,7 +16,7 @@ const content: LandingPageContent = {
   title: 'Robust Vetting Process',
   header: 'Invest with Confidence',
   description:
-    'Our rigorous vetting process ensures only the most promising web3 and AI projects make it onto the Bitlauncher platform. This gives investors peace of mind and helps them capitalize on the best opportunities.',
+    'Our rigorous vetting process ensures only the most promising web3 and AI projects make it onto the Bitlauncher platform. This gives contributors peace of mind and helps them capitalize on the best opportunities.',
   sections: [
     {
       subHeader: 'Thorough Audits',
@@ -28,15 +28,15 @@ const content: LandingPageContent = {
     },
     {
       subHeader: 'Contributor Protection',
-      text: 'Rigorous vetting protects investors from scams and low-quality projects, giving them confidence in their investments.'
+      text: 'Rigorous vetting protects contributors from scams and low-quality projects, giving them confidence in their investments.'
     },
     {
       subHeader: 'Curated Opportunities',
-      text: 'Our platform showcases only the most promising web3 and AI projects, saving investors time and effort.'
+      text: 'Our platform showcases only the most promising web3 and AI projects, saving contributors time and effort.'
     },
     {
       subHeader: 'Transparent Reporting',
-      text: 'We provide detailed and transparent reporting on all projects, ensuring investors have all the information they need.'
+      text: 'We provide detailed and transparent reporting on all projects, ensuring contributors have all the information they need.'
     },
     {
       subHeader: 'Community Feedback Integration',
@@ -46,7 +46,7 @@ const content: LandingPageContent = {
 }
 
 export const metadata: Metadata = {
-  title: 'Investors | Bitlauncher',
+  title: 'Contributors | Bitlauncher',
   description:
     'Be part of the intelligent future and join the Ai/Web3 revolution now!'
 }

@@ -75,7 +75,7 @@ export function NewHomeHero() {
 
           <p className="flex items-center px-2 leading-none text-center text-black">
             Join Our Community
-            <br /> of Investors
+            <br /> of Contributors
           </p>
 
           <Suspense

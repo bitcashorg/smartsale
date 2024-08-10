@@ -47,7 +47,7 @@ export async function AboutBitlauncherPageLanding({
                 transparency, inclusivity, and community-driven progress
               </b>
               . We foster a collaborative environment where developers,
-              investors, and AI enthusiasts can come together to share
+              contributors, and AI enthusiasts can come together to share
               resources, exchange ideas, and shape the future of technology.
               <br />
               <br />

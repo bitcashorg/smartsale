@@ -43,7 +43,7 @@
         "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
       },
       "_publishedAt": "2023-10-05T02:11:13+01:00",
-      "description": "Expand your investment prowess with alternative investments! Dive into the world of private equity, hedge funds, and commodities to supercharge your portfolio. This blog provides expert guidance for investors seeking success in alternative investment strategies.",
+      "description": "Expand your investment prowess with alternative investments! Dive into the world of private equity, hedge funds, and commodities to supercharge your portfolio. This blog provides expert guidance for contributors seeking success in alternative investment strategies.",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1689120056-ib6-img1.png"
       },
@@ -66,7 +66,7 @@
         "Getting Started",
         "Mutual Funds & ETFs"
       ],
-      "title": "Unveiling the Pros and Cons of Exchange-Traded Funds (ETFs): A Comprehensive Guide for Investors",
+      "title": "Unveiling the Pros and Cons of Exchange-Traded Funds (ETFs): A Comprehensive Guide for Contributors",
       "slug": "unveiling-the-pros-and-cons-of-exchange-traded-funds-etfs-a-comprehensive-guide-f",
       "authorName": "Mister Moneybags",
       "authorPicture": {
@@ -246,8 +246,8 @@
         "Getting Started",
         "Tax Planning"
       ],
-      "title": "Maximizing Returns: The Ultimate Guide to Tax Planning for Investors",
-      "slug": "maximizing-returns-the-ultimate-guide-to-tax-planning-for-investors",
+      "title": "Maximizing Returns: The Ultimate Guide to Tax Planning for Contributors",
+      "slug": "maximizing-returns-the-ultimate-guide-to-tax-planning-for-contributors",
       "authorName": "Mister Moneybags",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
@@ -259,7 +259,7 @@
       },
       "seo": {
         "description": "Learn how to optimize your investment returns by understanding capital gains, dividends, and interest income, while minimizing your tax liabilities.",
-        "title": "The Ultimate Guide to Tax Planning for Investors",
+        "title": "The Ultimate Guide to Tax Planning for Contributors",
         "twitterCard": null,
         "image": {
           "width": 870,
@@ -1727,7 +1727,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "value": "Consider target-date funds: These funds automatically adjust asset allocation based on your expected retirement date, gradually becoming more conservative as you approach retirement. They provide a convenient option for investors seeking a hands-off approach."
+                              "value": "Consider target-date funds: These funds automatically adjust asset allocation based on your expected retirement date, gradually becoming more conservative as you approach retirement. They provide a convenient option for contributors seeking a hands-off approach."
                             }
                           ]
                         }
