@@ -25,7 +25,7 @@ export function CommunityCard() {
       </div>
       <b className="text-sm flex items-center px-2 leading-tight text-black whitespace-pre-line">
         {`Join Our Community
-        of Investors`}
+        of Contributors`}
       </b>
       <Suspense
         fallback={

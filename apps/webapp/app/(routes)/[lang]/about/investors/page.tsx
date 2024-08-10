@@ -1,8 +1,7 @@
-import React from 'react'
-import { Metadata } from 'next'
-import { CommonPageProps } from '@/types/routing.type'
-import { getDictionary } from '@/dictionaries'
 import { LandingPage, LandingPageContent } from '@/components/_wip/landing-page'
+import { getDictionary } from '@/dictionaries'
+import { CommonPageProps } from '@/types/routing.type'
+import { Metadata } from 'next'
 
 export default async function InvestorsPage({ params }: CommonPageProps) {
   const dict = await getDictionary(params.lang)
@@ -28,7 +27,7 @@ const content: LandingPageContent = {
       text: 'Our team of industry experts carefully evaluates each project to ensure it meets our high standards.'
     },
     {
-      subHeader: 'Investor Protection',
+      subHeader: 'Contributor Protection',
       text: 'Rigorous vetting protects investors from scams and low-quality projects, giving them confidence in their investments.'
     },
     {
@@ -41,7 +40,7 @@ const content: LandingPageContent = {
     },
     {
       subHeader: 'Community Feedback Integration',
-      text: 'We incorporate feedback from our investor community to continuously improve the projects and the platform.'
+      text: 'We incorporate feedback from our contributor community to continuously improve the projects and the platform.'
     }
   ]
 }

@@ -130,7 +130,7 @@ export const whitepaper = {
     },
     {
       type: 'p',
-      text: "Participation and Governance: Owning Bitcash tokens places you at the heart of our DAO's consensus-driven governance processes, enabling you to vote on pivotal proposals and influence the strategic trajectory of the platform. This model nurtures a cooperative environment where each member actively shapes the project's outcomes, transcending the passive investor role found in conventional investment scenarios."
+      text: "Participation and Governance: Owning Bitcash tokens places you at the heart of our DAO's consensus-driven governance processes, enabling you to vote on pivotal proposals and influence the strategic trajectory of the platform. This model nurtures a cooperative environment where each member actively shapes the project's outcomes, transcending the passive contributor role found in conventional investment scenarios."
     },
     {
       type: 'p',
@@ -188,7 +188,7 @@ export const whitepaper = {
     },
     {
       type: 'p',
-      text: 'Bridging the Gap for Global Investors. Traditionally, access to premier AI projects has been limited for non-US investors. Bitlauncher dismantles these barriers, offering a global platform that brings high-quality projects from around the world to a diverse investor base. Our focus on educating both startups and investors on sound financial principles ensures a marketplace grounded in value creation and sustainable growth, steering clear of speculative and high-risk investment behaviors.'
+      text: 'Bridging the Gap for Global Investors. Traditionally, access to premier AI projects has been limited for non-US investors. Bitlauncher dismantles these barriers, offering a global platform that brings high-quality projects from around the world to a diverse contributor base. Our focus on educating both startups and investors on sound financial principles ensures a marketplace grounded in value creation and sustainable growth, steering clear of speculative and high-risk investment behaviors.'
     },
     {
       type: 'p',

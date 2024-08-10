@@ -17,7 +17,7 @@ export const whitepaper = {
     },
     {
       type: 'p',
-      text: 'Intinya, landasan peluncuran kami bukan hanya jembatan antara startup AI dan kumpulan investor global, namun juga cetak biru masa depan inovasi kolaboratif, transparan, dan terdesentralisasi di sektor AI dan mata uang kripto. Melalui ringkasan eksekutif ini, kami mengundang pembaca untuk mengeksplorasi detail visi, strategi, dan landasan ekonomi kami yang menjadikan platform kami sebagai kekuatan revolusioner dalam persimpangan antara AI dan kripto.'
+      text: 'Intinya, landasan peluncuran kami bukan hanya jembatan antara startup AI dan kumpulan contributor global, namun juga cetak biru masa depan inovasi kolaboratif, transparan, dan terdesentralisasi di sektor AI dan mata uang kripto. Melalui ringkasan eksekutif ini, kami mengundang pembaca untuk mengeksplorasi detail visi, strategi, dan landasan ekonomi kami yang menjadikan platform kami sebagai kekuatan revolusioner dalam persimpangan antara AI dan kripto.'
     },
     { type: 'h1', text: 'Perkenalan' },
     {
@@ -30,7 +30,7 @@ export const whitepaper = {
     },
     {
       type: 'p',
-      text: 'Mengisi Kekosongan: Peran Penting dari AI + Crypto Launchpad. Perusahaan AI sumber terbuka sering kali menghadapi tantangan dalam mendapatkan pendanaan berkelanjutan dan membangun keunggulan kompetitif. Jalur modal ventura tradisional, terutama di luar pusat teknologi yang sudah mapan seperti Silicon Valley, bisa saja penuh dengan hambatan. Landasan peluncuran Bitlauncher kami mengatasi kesenjangan ini dengan memungkinkan startup AI mengakses kumpulan investor global dan audiens calon pelanggan penggerak pertama melalui tokenisasi dan DAO. Pendekatan ini tidak hanya memfasilitasi peluang modal awal dan adil tetapi juga menumbuhkan komunitas kontributor dan pengguna yang loyal, sehingga menciptakan persaingan yang kuat untuk proyek-proyek ini.'
+      text: 'Mengisi Kekosongan: Peran Penting dari AI + Crypto Launchpad. Perusahaan AI sumber terbuka sering kali menghadapi tantangan dalam mendapatkan pendanaan berkelanjutan dan membangun keunggulan kompetitif. Jalur modal ventura tradisional, terutama di luar pusat teknologi yang sudah mapan seperti Silicon Valley, bisa saja penuh dengan hambatan. Landasan peluncuran Bitlauncher kami mengatasi kesenjangan ini dengan memungkinkan startup AI mengakses kumpulan contributor global dan audiens calon pelanggan penggerak pertama melalui tokenisasi dan DAO. Pendekatan ini tidak hanya memfasilitasi peluang modal awal dan adil tetapi juga menumbuhkan komunitas kontributor dan pengguna yang loyal, sehingga menciptakan persaingan yang kuat untuk proyek-proyek ini.'
     },
     {
       type: 'p',
@@ -43,11 +43,11 @@ export const whitepaper = {
     { type: 'h1', text: 'Analisis Pasar' },
     {
       type: 'p',
-      text: 'Ikhtisar Lanskap Pasar Saat Ini untuk Cryptocurrency dan Teknologi AI. Pasar mata uang kripto telah mengalami pertumbuhan eksponensial selama dekade terakhir, berkembang dari pasar khusus menjadi pasar keuangan besar. Berdasarkan data terbaru, kapitalisasi pasar mata uang kripto global telah mencapai titik tertinggi yang belum pernah terjadi sebelumnya, dengan adopsi yang luas di kalangan investor ritel dan institusi. Pada saat yang sama, teknologi kecerdasan buatan (AI) telah mengalami kemajuan yang signifikan, merambah berbagai sektor termasuk kesehatan, keuangan, logistik, dan hiburan. Pasar AI berada pada lintasan pertumbuhan eksponensial, dengan prediksi yang menunjukkan bahwa pertumbuhannya bisa mencapai ratusan miliar di tahun-tahun mendatang. Pertumbuhan ini didorong oleh kemajuan dalam pembelajaran mesin, pemrosesan bahasa alami, dan visi komputer, serta peningkatan ketersediaan data dan daya komputasi. Konvergensi AI dan mata uang kripto mewakili sektor berkembang yang ditandai dengan inovasi, volatilitas, dan potensi pertumbuhan yang besar.'
+      text: 'Ikhtisar Lanskap Pasar Saat Ini untuk Cryptocurrency dan Teknologi AI. Pasar mata uang kripto telah mengalami pertumbuhan eksponensial selama dekade terakhir, berkembang dari pasar khusus menjadi pasar keuangan besar. Berdasarkan data terbaru, kapitalisasi pasar mata uang kripto global telah mencapai titik tertinggi yang belum pernah terjadi sebelumnya, dengan adopsi yang luas di kalangan contributor ritel dan institusi. Pada saat yang sama, teknologi kecerdasan buatan (AI) telah mengalami kemajuan yang signifikan, merambah berbagai sektor termasuk kesehatan, keuangan, logistik, dan hiburan. Pasar AI berada pada lintasan pertumbuhan eksponensial, dengan prediksi yang menunjukkan bahwa pertumbuhannya bisa mencapai ratusan miliar di tahun-tahun mendatang. Pertumbuhan ini didorong oleh kemajuan dalam pembelajaran mesin, pemrosesan bahasa alami, dan visi komputer, serta peningkatan ketersediaan data dan daya komputasi. Konvergensi AI dan mata uang kripto mewakili sektor berkembang yang ditandai dengan inovasi, volatilitas, dan potensi pertumbuhan yang besar.'
     },
     {
       type: 'p',
-      text: "Analisis Tren, Tantangan, dan Peluang di Sektor AI + Kripto. Tren: Pasar AI Terdesentralisasi: Ada tren yang berkembang menuju platform terdesentralisasi yang memungkinkan pembelian dan penjualan layanan AI menggunakan mata uang kripto. Tokenisasi Proyek AI: Tokenisasi, yang difasilitasi oleh mata uang kripto, menjadi cara populer untuk mendanai dan mendemokratisasi akses ke proyek AI, yang memungkinkan partisipasi dan investasi yang lebih luas. Perdagangan Kripto Berbasis AI: Penggunaan AI dalam analisis prediktif untuk perdagangan mata uang kripto menjadi lebih umum, menawarkan alat canggih bagi investor."
+      text: "Analisis Tren, Tantangan, dan Peluang di Sektor AI + Kripto. Tren: Pasar AI Terdesentralisasi: Ada tren yang berkembang menuju platform terdesentralisasi yang memungkinkan pembelian dan penjualan layanan AI menggunakan mata uang kripto. Tokenisasi Proyek AI: Tokenisasi, yang difasilitasi oleh mata uang kripto, menjadi cara populer untuk mendanai dan mendemokratisasi akses ke proyek AI, yang memungkinkan partisipasi dan investasi yang lebih luas. Perdagangan Kripto Berbasis AI: Penggunaan AI dalam analisis prediktif untuk perdagangan mata uang kripto menjadi lebih umum, menawarkan alat canggih bagi contributor."
     },
     {
       type: 'p',
@@ -59,11 +59,11 @@ export const whitepaper = {
     },
     {
       type: 'p',
-      text: "Analisis Kompetitif dan Posisi Bitlauncher. Lanskap kompetitif mencakup startup AI tradisional yang didanai oleh VC, platform pendanaan berbasis kripto lainnya, dan organisasi otonom terdesentralisasi (DAO) yang berfokus pada proyek teknologi. Bitlauncher membedakan dirinya melalui: Berfokus secara eksklusif pada proyek AI sumber terbuka, mengatasi kesenjangan pasar bagi usaha ini untuk mendapatkan pendanaan dan berorganisasi secara efisien. Memanfaatkan mekanisme lelang batch untuk penemuan harga yang adil, memastikan peluang pembelian yang adil. Menyediakan alat DAO yang komprehensif untuk organisasi proyek, mendorong transparansi dan tata kelola komunitas. Berkomitmen pada model tokenomik berkelanjutan yang sejalan dengan prinsip ekuitas startup tradisional, menjadikannya platform yang menarik bagi investor dan inovator serius di bidang AI dan kripto."
+      text: "Analisis Kompetitif dan Posisi Bitlauncher. Lanskap kompetitif mencakup startup AI tradisional yang didanai oleh VC, platform pendanaan berbasis kripto lainnya, dan organisasi otonom terdesentralisasi (DAO) yang berfokus pada proyek teknologi. Bitlauncher membedakan dirinya melalui: Berfokus secara eksklusif pada proyek AI sumber terbuka, mengatasi kesenjangan pasar bagi usaha ini untuk mendapatkan pendanaan dan berorganisasi secara efisien. Memanfaatkan mekanisme lelang batch untuk penemuan harga yang adil, memastikan peluang pembelian yang adil. Menyediakan alat DAO yang komprehensif untuk organisasi proyek, mendorong transparansi dan tata kelola komunitas. Berkomitmen pada model tokenomik berkelanjutan yang sejalan dengan prinsip ekuitas startup tradisional, menjadikannya platform yang menarik bagi contributor dan inovator serius di bidang AI dan kripto."
     },
     {
       type: 'p',
-      text: "Tidak seperti kompetitor, Bitlauncher menjawab kebutuhan pasar akan inovasi AI dan kripto yang transparan, etis, dan berdasarkan konsensus komunitas. Posisi unik ini memungkinkan Bitlauncher untuk memenuhi ceruk pasar yang berkembang pesat, menarik startup, investor, dan pengembang yang berkomitmen terhadap pertumbuhan ekosistem AI dan mata uang kripto yang etis dan berkelanjutan."
+      text: "Tidak seperti kompetitor, Bitlauncher menjawab kebutuhan pasar akan inovasi AI dan kripto yang transparan, etis, dan berdasarkan konsensus komunitas. Posisi unik ini memungkinkan Bitlauncher untuk memenuhi ceruk pasar yang berkembang pesat, menarik startup, contributor, dan pengembang yang berkomitmen terhadap pertumbuhan ekosistem AI dan mata uang kripto yang etis dan berkelanjutan."
     },
     {
       type: 'p',
@@ -80,15 +80,15 @@ export const whitepaper = {
     },
     {
       type: 'p',
-      text: 'Penglihatan. Visi kami adalah menjadi landasan inovasi AI sumber terbuka, tempat solusi AI paling inovatif menemukan pijakan dan berkembang. Kami membayangkan masa depan di mana Bitlauncher bertindak sebagai katalis untuk menciptakan ekosistem teknologi AI berkelanjutan yang dimiliki dan dibentuk oleh komunitas kontributor, investor, dan pengguna global. Melalui demokratisasi akses terhadap sumber daya dan investasi, kami bertujuan untuk memaksimalkan potensi AI untuk memecahkan tantangan global yang kompleks, mewujudkan dunia di mana kemajuan teknologi sejalan dengan prinsip-prinsip etika dan pertumbuhan inklusif.'
+      text: 'Penglihatan. Visi kami adalah menjadi landasan inovasi AI sumber terbuka, tempat solusi AI paling inovatif menemukan pijakan dan berkembang. Kami membayangkan masa depan di mana Bitlauncher bertindak sebagai katalis untuk menciptakan ekosistem teknologi AI berkelanjutan yang dimiliki dan dibentuk oleh komunitas kontributor, contributor, dan pengguna global. Melalui demokratisasi akses terhadap sumber daya dan investasi, kami bertujuan untuk memaksimalkan potensi AI untuk memecahkan tantangan global yang kompleks, mewujudkan dunia di mana kemajuan teknologi sejalan dengan prinsip-prinsip etika dan pertumbuhan inklusif.'
     },
     {
       type: 'p',
-      text: 'Tujuan jangka panjang. Membina Inovasi: Untuk mendukung pengembangan lebih dari 100 proyek AI sumber terbuka dalam lima tahun ke depan, mengubah ide menjadi solusi yang dapat mengatasi masalah dunia nyata. Merevolusi Pendanaan Proyek AI: Untuk menginovasi mekanisme pendanaan melalui mata uang kripto, memastikan proyek AI sumber terbuka memiliki akses ke modal yang diperlukan untuk diluncurkan dan ditingkatkan tanpa mengorbankan prinsip atau potensinya. Pembangunan Komunitas: Untuk menumbuhkan komunitas dinamis dengan lebih dari 50,000 anggota aktif, termasuk pengembang AI, investor kripto, dan penggemar teknologi, yang secara aktif berpartisipasi dalam tata kelola, pendanaan, dan kolaborasi. Pertumbuhan Berkelanjutan: Untuk membangun ekosistem mandiri di mana proyek tidak hanya berhasil mencapai tujuan masing-masing namun juga memberikan kontribusi kembali ke platform, memastikan siklus pertumbuhan dan inovasi yang berkelanjutan. Dampak Global: Untuk memberikan dampak nyata pada komunitas AI dan kripto global dengan mempromosikan pengembangan AI yang etis, meningkatkan transparansi dalam pendanaan AI, dan meningkatkan aksesibilitas terhadap teknologi AI untuk wilayah yang kurang terlayani.'
+      text: 'Tujuan jangka panjang. Membina Inovasi: Untuk mendukung pengembangan lebih dari 100 proyek AI sumber terbuka dalam lima tahun ke depan, mengubah ide menjadi solusi yang dapat mengatasi masalah dunia nyata. Merevolusi Pendanaan Proyek AI: Untuk menginovasi mekanisme pendanaan melalui mata uang kripto, memastikan proyek AI sumber terbuka memiliki akses ke modal yang diperlukan untuk diluncurkan dan ditingkatkan tanpa mengorbankan prinsip atau potensinya. Pembangunan Komunitas: Untuk menumbuhkan komunitas dinamis dengan lebih dari 50,000 anggota aktif, termasuk pengembang AI, contributor kripto, dan penggemar teknologi, yang secara aktif berpartisipasi dalam tata kelola, pendanaan, dan kolaborasi. Pertumbuhan Berkelanjutan: Untuk membangun ekosistem mandiri di mana proyek tidak hanya berhasil mencapai tujuan masing-masing namun juga memberikan kontribusi kembali ke platform, memastikan siklus pertumbuhan dan inovasi yang berkelanjutan. Dampak Global: Untuk memberikan dampak nyata pada komunitas AI dan kripto global dengan mempromosikan pengembangan AI yang etis, meningkatkan transparansi dalam pendanaan AI, dan meningkatkan aksesibilitas terhadap teknologi AI untuk wilayah yang kurang terlayani.'
     },
     {
       type: 'p',
-      text: 'Mencapai Tujuan Kami. Kemitraan Strategis: Berkolaborasi dengan institusi akademis terkemuka, perusahaan teknologi, dan komunitas sumber terbuka untuk menyediakan sumber daya, keahlian, dan paparan yang dibutuhkan proyek agar berhasil. Model Pendanaan Inovatif: Memanfaatkan tokenomik dan DAO untuk menciptakan mekanisme pendanaan yang adil, transparan, dan efisien yang menyelaraskan kepentingan pengembang dan investor. Edukasi dan Penjangkauan: Meluncurkan inisiatif untuk mendidik masyarakat luas tentang potensi AI dan mata uang kripto, mengurangi hambatan untuk masuk dan membina komunitas yang lebih terinformasi dan terlibat. Pengembangan Teknologi: Terus meningkatkan platform Bitlauncher untuk meningkatkan pengalaman pengguna, menyederhanakan pengembangan proyek, dan memastikan standar keamanan dan tata kelola tertinggi.'
+      text: 'Mencapai Tujuan Kami. Kemitraan Strategis: Berkolaborasi dengan institusi akademis terkemuka, perusahaan teknologi, dan komunitas sumber terbuka untuk menyediakan sumber daya, keahlian, dan paparan yang dibutuhkan proyek agar berhasil. Model Pendanaan Inovatif: Memanfaatkan tokenomik dan DAO untuk menciptakan mekanisme pendanaan yang adil, transparan, dan efisien yang menyelaraskan kepentingan pengembang dan contributor. Edukasi dan Penjangkauan: Meluncurkan inisiatif untuk mendidik masyarakat luas tentang potensi AI dan mata uang kripto, mengurangi hambatan untuk masuk dan membina komunitas yang lebih terinformasi dan terlibat. Pengembangan Teknologi: Terus meningkatkan platform Bitlauncher untuk meningkatkan pengalaman pengguna, menyederhanakan pengembangan proyek, dan memastikan standar keamanan dan tata kelola tertinggi.'
     },
     {
       type: 'p',
@@ -130,7 +130,7 @@ export const whitepaper = {
     },
     {
       type: 'p',
-      text: "Partisipasi dan Tata Kelola: Memiliki token Bitcash menempatkan Anda di jantung proses tata kelola berbasis konsensus DAO kami, memungkinkan Anda memberikan suara pada proposal penting dan memengaruhi lintasan strategis platform. Model ini memupuk lingkungan kooperatif di mana setiap anggota secara aktif menentukan hasil proyek, melampaui peran investor pasif yang ditemukan dalam skenario investasi konvensional."
+      text: "Partisipasi dan Tata Kelola: Memiliki token Bitcash menempatkan Anda di jantung proses tata kelola berbasis konsensus DAO kami, memungkinkan Anda memberikan suara pada proposal penting dan memengaruhi lintasan strategis platform. Model ini memupuk lingkungan kooperatif di mana setiap anggota secara aktif menentukan hasil proyek, melampaui peran contributor pasif yang ditemukan dalam skenario investasi konvensional."
     },
     {
       type: 'p',
@@ -138,7 +138,7 @@ export const whitepaper = {
     },
     {
       type: 'p',
-      text: 'Komitmen terhadap Penggalangan Dana Transparan: Bitcash bertujuan untuk mengumpulkan hingga $400k melalui penjualan token publik dan pra-penjualan kepada anggota baru di landasan peluncuran kami, memastikan akses yang adil untuk semua jenis kontribusi modal—dari ritel hingga institusional. Pendekatan ini menggarisbawahi komitmen kami terhadap keadilan dan transparansi, serta menetapkan standar untuk penawaran masa depan dalam ekosistem kami. Catatan: Penawaran ini tidak termasuk investor AS dan investor dari negara-negara yang terkena sanksi AS.'
+      text: 'Komitmen terhadap Penggalangan Dana Transparan: Bitcash bertujuan untuk mengumpulkan hingga $400k melalui penjualan token publik dan pra-penjualan kepada anggota baru di landasan peluncuran kami, memastikan akses yang adil untuk semua jenis kontribusi modal—dari ritel hingga institusional. Pendekatan ini menggarisbawahi komitmen kami terhadap keadilan dan transparansi, serta menetapkan standar untuk penawaran masa depan dalam ekosistem kami. Catatan: Penawaran ini tidak termasuk contributor AS dan contributor dari negara-negara yang terkena sanksi AS.'
     },
     {
       type: 'p',
@@ -151,7 +151,7 @@ export const whitepaper = {
     },
     {
       type: 'p',
-      text: "Mekanisme Pencetakan dan Pembakaran: Token dalam ekosistem Bitcash dicetak untuk menghargai kontribusi dari pengembang, pengguna, dan investor, yang mencerminkan nilai tambah mereka pada platform. Penerbitan ini dapat melemahkan nilai token, namun penggunaan pendapatan strategis kami—yang dihasilkan dari pembelian token utilitas untuk akses layanan—mengatasi hal ini dengan membeli kembali dan membakar token. Siklus ini tidak hanya menjaga keseimbangan pasokan tetapi juga berpotensi meningkatkan nilai token seiring dengan perluasan dan peningkatan platform. (Perkiraan biaya utilitas: Launchpad: 2-5% dari penilaian startup. Onramp/P2P: 1% biaya tx.)"
+      text: "Mekanisme Pencetakan dan Pembakaran: Token dalam ekosistem Bitcash dicetak untuk menghargai kontribusi dari pengembang, pengguna, dan contributor, yang mencerminkan nilai tambah mereka pada platform. Penerbitan ini dapat melemahkan nilai token, namun penggunaan pendapatan strategis kami—yang dihasilkan dari pembelian token utilitas untuk akses layanan—mengatasi hal ini dengan membeli kembali dan membakar token. Siklus ini tidak hanya menjaga keseimbangan pasokan tetapi juga berpotensi meningkatkan nilai token seiring dengan perluasan dan peningkatan platform. (Perkiraan biaya utilitas: Launchpad: 2-5% dari penilaian startup. Onramp/P2P: 1% biaya tx.)"
     },
     {
       type: 'p',
@@ -172,11 +172,11 @@ export const whitepaper = {
     { type: 'h1', text: 'Kasus Penggunaan dan Aplikasi' },
     {
       type: 'p',
-      text: 'Kasus Penggunaan dan Aplikasi: Mendorong Inovasi di Seluruh Lanskap AI. Bitlauncher dirancang untuk mengatasi tantangan kritis dan membuka peluang baru bagi startup AI, investor, dan berbagai pemangku kepentingan dalam bidang kecerdasan buatan yang sedang berkembang. Dengan memanfaatkan kekuatan model sumber terbuka, tokenisasi, dan tata kelola terdesentralisasi, platform kami bertujuan untuk mendemokratisasi akses terhadap sumber daya, pendanaan, dan pasar global.'
+      text: 'Kasus Penggunaan dan Aplikasi: Mendorong Inovasi di Seluruh Lanskap AI. Bitlauncher dirancang untuk mengatasi tantangan kritis dan membuka peluang baru bagi startup AI, contributor, dan berbagai pemangku kepentingan dalam bidang kecerdasan buatan yang sedang berkembang. Dengan memanfaatkan kekuatan model sumber terbuka, tokenisasi, dan tata kelola terdesentralisasi, platform kami bertujuan untuk mendemokratisasi akses terhadap sumber daya, pendanaan, dan pasar global.'
     },
     {
       type: 'p',
-      text: 'Memberdayakan Startup AI dengan Pendanaan Alternatif dan Jangkauan Global. Sifat kompetitif industri AI sering kali membuat banyak proyek menjanjikan kesulitan mendapatkan pendanaan yang diperlukan, terutama yang berada di luar gelembung Silicon Valley. Bitlauncher menawarkan bantuan bagi proyek-proyek ini dengan menyediakan platform global untuk pendanaan alternatif melalui komunitas investor global. Hal ini tidak hanya menyamakan persaingan namun juga memastikan bahwa inovasi tidak dibatasi secara geografis.'
+      text: 'Memberdayakan Startup AI dengan Pendanaan Alternatif dan Jangkauan Global. Sifat kompetitif industri AI sering kali membuat banyak proyek menjanjikan kesulitan mendapatkan pendanaan yang diperlukan, terutama yang berada di luar gelembung Silicon Valley. Bitlauncher menawarkan bantuan bagi proyek-proyek ini dengan menyediakan platform global untuk pendanaan alternatif melalui komunitas contributor global. Hal ini tidak hanya menyamakan persaingan namun juga memastikan bahwa inovasi tidak dibatasi secara geografis.'
     },
     {
       type: 'p',
@@ -188,7 +188,7 @@ export const whitepaper = {
     },
     {
       type: 'p',
-      text: 'Menjembatani Kesenjangan bagi Investor Global. Secara tradisional, akses terhadap proyek-proyek AI terkemuka masih terbatas bagi investor non-AS. Bitlauncher menghilangkan hambatan ini, menawarkan platform global yang menghadirkan proyek berkualitas tinggi dari seluruh dunia ke basis investor yang beragam. Fokus kami dalam mendidik startup dan investor mengenai prinsip-prinsip keuangan yang sehat memastikan pasar yang didasarkan pada penciptaan nilai dan pertumbuhan berkelanjutan, menghindari perilaku investasi spekulatif dan berisiko tinggi.'
+      text: 'Menjembatani Kesenjangan bagi Contributor Global. Secara tradisional, akses terhadap proyek-proyek AI terkemuka masih terbatas bagi contributor non-AS. Bitlauncher menghilangkan hambatan ini, menawarkan platform global yang menghadirkan proyek berkualitas tinggi dari seluruh dunia ke basis contributor yang beragam. Fokus kami dalam mendidik startup dan contributor mengenai prinsip-prinsip keuangan yang sehat memastikan pasar yang didasarkan pada penciptaan nilai dan pertumbuhan berkelanjutan, menghindari perilaku investasi spekulatif dan berisiko tinggi.'
     },
     {
       type: 'p',
@@ -280,7 +280,7 @@ export const whitepaper = {
     { type: 'h1', text: 'Cara Berpartisipasi' },
     {
       type: 'p',
-      text: "Terlibat dalam penjualan token landasan peluncuran kami adalah proses yang efisien dan aman yang dirancang untuk memastikan keadilan, transparansi, dan kepatuhan terhadap standar global. Di bawah ini adalah panduan langkah demi langkah bagi calon investor untuk berpartisipasi dalam penjualan token, bersama dengan rincian penting tentang KYC (Know Your Customer), persyaratan AML (Anti-Money Laundering), dan kompatibilitas dompet."
+      text: "Terlibat dalam penjualan token landasan peluncuran kami adalah proses yang efisien dan aman yang dirancang untuk memastikan keadilan, transparansi, dan kepatuhan terhadap standar global. Di bawah ini adalah panduan langkah demi langkah bagi calon contributor untuk berpartisipasi dalam penjualan token, bersama dengan rincian penting tentang KYC (Know Your Customer), persyaratan AML (Anti-Money Laundering), dan kompatibilitas dompet."
     },
     {
       type: 'p',
@@ -304,7 +304,7 @@ export const whitepaper = {
     },
     {
       type: 'p',
-      text: 'Dengan mengikuti langkah-langkah ini, investor dapat berpartisipasi dengan percaya diri dan aman dalam penjualan token, berkontribusi pada pengembangan ekonomi global baru yang didukung oleh inovasi blockchain dan AI.'
+      text: 'Dengan mengikuti langkah-langkah ini, contributor dapat berpartisipasi dengan percaya diri dan aman dalam penjualan token, berkontribusi pada pengembangan ekonomi global baru yang didukung oleh inovasi blockchain dan AI.'
     },
     { type: 'h1', text: 'FAQs' },
     {
@@ -313,11 +313,11 @@ export const whitepaper = {
     },
     {
       type: 'p',
-      text: '1. Apa tujuan utama landasan peluncuran? Launchpad ini dirancang untuk memberdayakan startup AI dengan menyediakan platform tokenisasi dan akses ke kumpulan investor global, memfasilitasi pendanaan dan organisasi yang lebih mudah melalui penggunaan teknologi DAO dan mata uang kripto yang inovatif.'
+      text: '1. Apa tujuan utama landasan peluncuran? Launchpad ini dirancang untuk memberdayakan startup AI dengan menyediakan platform tokenisasi dan akses ke kumpulan contributor global, memfasilitasi pendanaan dan organisasi yang lebih mudah melalui penggunaan teknologi DAO dan mata uang kripto yang inovatif.'
     },
     {
       type: 'p',
-      text: '2. Bagaimana cara kerja penjualan token? Penjualan token kami beroperasi sebagai lelang batch, memastikan mekanisme penemuan harga yang adil yang menguntungkan investor dan startup. Token diterbitkan berdasarkan penilaian pasar saat ini, memungkinkan peluang investasi yang adil sekaligus mendorong pertumbuhan dan menambah nilai bagi organisasi.'
+      text: '2. Bagaimana cara kerja penjualan token? Penjualan token kami beroperasi sebagai lelang batch, memastikan mekanisme penemuan harga yang adil yang menguntungkan contributor dan startup. Token diterbitkan berdasarkan penilaian pasar saat ini, memungkinkan peluang investasi yang adil sekaligus mendorong pertumbuhan dan menambah nilai bagi organisasi.'
     },
     {
       type: 'p',
@@ -341,7 +341,7 @@ export const whitepaper = {
     },
     {
       type: 'p',
-      text: '8. Apa manfaat yang dapat diperoleh startup dan investor dengan berpartisipasi dalam landasan peluncuran? Startup mendapatkan akses terhadap modal, sumber daya, dan komunitas global, sehingga meningkatkan potensi pertumbuhan dan jangkauan pasar mereka. Investor mendapatkan keuntungan dari akses awal terhadap proyek-proyek AI inovatif dengan potensi pertumbuhan tinggi, sehingga berkontribusi terhadap portofolio investasi yang terdiversifikasi dan berwawasan ke depan.'
+      text: '8. Apa manfaat yang dapat diperoleh startup dan contributor dengan berpartisipasi dalam landasan peluncuran? Startup mendapatkan akses terhadap modal, sumber daya, dan komunitas global, sehingga meningkatkan potensi pertumbuhan dan jangkauan pasar mereka. Contributor mendapatkan keuntungan dari akses awal terhadap proyek-proyek AI inovatif dengan potensi pertumbuhan tinggi, sehingga berkontribusi terhadap portofolio investasi yang terdiversifikasi dan berwawasan ke depan.'
     },
     {
       type: 'p',
