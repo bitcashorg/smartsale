@@ -1,7 +1,7 @@
-import React, { Suspense } from 'react'
 import { cn } from '@/lib/utils'
+import { Suspense } from 'react'
 import { NestedLinkButton } from '../nextjs/nested-link'
-import { Avatar, AvatarImage, AvatarFallback } from '../ui/avatar'
+import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar'
 import { Button, buttonVariants } from '../ui/button'
 import { Card } from '../ui/card'
 import { IconDownRightArrow } from '../ui/icons'
@@ -23,9 +23,10 @@ export function CommunityCard() {
           <AvatarFallback>U3</AvatarFallback>
         </Avatar>
       </div>
-      <p className="flex items-center px-2 leading-tight text-black">
-        Join thousands of happy users
-      </p>
+      <b className="text-sm flex items-center px-2 leading-tight text-black whitespace-pre-line">
+        {`Join Our Community
+        of Investors`}
+      </b>
       <Suspense
         fallback={
           <Button className="flex h-14 w-14">
