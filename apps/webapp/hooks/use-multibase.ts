@@ -2,14 +2,15 @@ import { init, identify, track } from '@multibase/js'
 
 const MULTIBASE_API_KEY = process.env.MULTIBASE_API_KEY || ""
 
-if (!MULTIBASE_API_KEY) {
-    throw new Error("Missing MULTIBASE_API_KEY")
-}
 
 export function useMultibase() {
+    if (!MULTIBASE_API_KEY) {
+        throw new Error("Missing MULTIBASE_API_KEY")
+    }
+    
     init(MULTIBASE_API_KEY)
 
-    const identifyUser = (properties: Record<string, any>, address = '0xd8da6bf26964af9d7eed9e03e53415d37aa96045') =>
+    const identifyUser = (properties: Record<string, any>, address: `0x${string}`) =>
         identify({
             address,
             properties
