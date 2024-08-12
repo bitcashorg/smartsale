@@ -1,25 +1,15 @@
+"use client"
+import React, { useState } from 'react'
 import { CommunityCard } from '@/components/shared/community-card'
 import { HeroContent } from '@/components/shared/hero-content'
-import { getDictionary } from '@/dictionaries'
 import { Lang } from '@/dictionaries/locales'
-import { WhitepaperSidebar } from './content'
+import { WhitepaperSidebar } from './sidebar'
 import { whitepaperParagraphs } from './static'
-import { WITHE_PAPER } from '@/dictionaries/en/whitepaperv2'
+import { WhitepaperContent } from './content'
 
-export async function WhitepaperPageLanding({
-  params: { lang }
-}: WhitepaperPageProps) {
-  const dict = await getDictionary(lang)
-  function renderContent(content: any) {
-    switch (content.type) {
-      case 'p':
-        return <p>{content.text}</p>
-      case 'h2':
-        return <h2>{content.text}</h2>
-      default:
-        return null
-    }
-  }
+export function WhitepaperPageLanding({ params: { lang } }: WhitepaperPageProps) {
+  const [activeSection, setActiveSection] = useState<string>('Introduction')
+
   return (
     <>
       <section className="w-full py-12 narrow-container md:py-24 lg:py-32">
@@ -43,19 +33,10 @@ export async function WhitepaperPageLanding({
       </section>
       <div className="container px-0 md:px-6 grid grid-cols-1 lg:grid-cols-4 gap-4">
         <div className="lg:col-span-1">
-          <WhitepaperSidebar />
+          <WhitepaperSidebar activeSection={activeSection} setActiveSection={setActiveSection} />
         </div>
         <div className="lg:col-span-3">
-          {WITHE_PAPER.sections.map((section, index) => (
-            <div key={index}>
-              <h1>{section.title}</h1>
-              {section.content.map((content, idx) => (
-                <div key={idx}>
-                  {renderContent(content)}
-                </div>
-              ))}
-            </div>
-          ))}
+          <WhitepaperContent activeSection={activeSection} />
         </div>
       </div>
     </>

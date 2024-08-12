@@ -1,36 +1,22 @@
-'use client'
-
-import { useState } from 'react'
-import Link from 'next/link'
+import React from 'react'
 import { WITHE_PAPER } from '@/dictionaries/en/whitepaperv2'
+import { PageContent, PageContentData } from '@/components/shared/content'
 
-
-interface Section {
-  type: string
-  title: string
-  content: Array<{ type: string; text: string }>
+interface WhitepaperContentProps {
+  activeSection: string
 }
 
-export function WhitepaperSidebar() {
-  const [activeSection, setActiveSection] = useState<string>('Introduction')
+export function WhitepaperContent({ activeSection }: WhitepaperContentProps) {
+  const activeSectionContent = WITHE_PAPER.sections.find(section => section.title === activeSection)
 
   return (
-    <div className="w-64 h-screen p-4">
-    <h2 className="text-xl font-bold mb-4">Bitlauncher Whitepaper</h2>
-    <nav>
-      {WITHE_PAPER.sections.map((section: Section) => (
-        <Link key={section.title} href={`#${section.title.toLowerCase().replace(/ /g, '-')}`}>
-          <div
-            className={`block py-2 px-4 rounded cursor-pointer ${
-              activeSection === section.title ? 'bg-gray-700' : 'hover:bg-gray-800'
-            }`}
-            onClick={() => setActiveSection(section.title)}
-          >
-            {section.title}
-          </div>
-        </Link>
-      ))}
-    </nav>
-  </div>
+    <div className="p-8">
+      {activeSectionContent && (
+        <div>
+          <h1 className="text-3xl font-bold text-gray-900 mb-6">{activeSectionContent.title}</h1>
+          <PageContent data={activeSectionContent.content as PageContentData} />
+        </div>
+      )}
+    </div>
   )
 }
