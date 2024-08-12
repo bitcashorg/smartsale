@@ -10,7 +10,7 @@ export function useMultibase() {
     
     init(MULTIBASE_API_KEY)
 
-    const identifyUser = (properties: Record<string, any>, address: `0x${string}`) =>
+    const identifyUser = (address: `0x${string}`, properties: Record<string, any>) =>
         identify({
             address,
             properties

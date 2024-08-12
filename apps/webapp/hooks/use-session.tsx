@@ -43,8 +43,8 @@ function useSessionFn() {
   const startSession = (session: Tables<'session'>) => {
     setSession(session)
     identifyUser(
-      { account: session?.account ?? 'unknown' },
-      account.address || '0x'
+      account.address || '0x',
+      { account: session?.account ?? 'unknown' }
     )
   }
 
