@@ -62,19 +62,16 @@ React/Next.js:
     import { z } from 'zod'
     import type { ActionResponse } from '@/types/actions'
 
-    const action = createSafeActionClient()
-
-    const myAction = action(
-      z.object({ /* input schema */ }),
-      async (input): Promise<ActionResponse> => {
+    export const submitSignedMessage = createSafeActionClient()
+      .schema(submitSignedMessageSchema)
+      .action(async (input): Promise<ActionResponse> => {
         try {
           // Action logic here
           return { success: true, data: /* result */ }
         } catch (error) {
-          return { success: false, error: /* error message */ }
+          return { success: false, error: error instanceof AppError ? error : appErrors.UNEXPECTED_ERROR, }
         }
-      }
-    )
+      })
     ```
 
 
