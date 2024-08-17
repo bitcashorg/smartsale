@@ -58,15 +58,17 @@ React/Next.js:
   - Implement consistent error handling and success responses using ActionResponse
   - Example:
     ```typescript
+    'use server'
+    
     import { createSafeActionClient } from 'next-safe-action'
     import { z } from 'zod'
-    import type { ActionResponse } from '@/types/actions'
+    import type { ActionResponse } from '@/app/actions/actions'
 
     const schema = z.object({
       value: z.string()
     })
 
-    export const submitSignedMessage = createSafeActionClient()
+    export const someAction = createSafeActionClient()
       .schema(schema)
       .action(async (input): Promise<ActionResponse> => {
         try {
