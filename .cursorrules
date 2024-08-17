@@ -62,8 +62,12 @@ React/Next.js:
     import { z } from 'zod'
     import type { ActionResponse } from '@/types/actions'
 
+    const schema = z.object({
+      value: z.string()
+    })
+
     export const submitSignedMessage = createSafeActionClient()
-      .schema(submitSignedMessageSchema)
+      .schema(schema)
       .action(async (input): Promise<ActionResponse> => {
         try {
           // Action logic here
