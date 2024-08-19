@@ -1,0 +1,15 @@
+{
+  "name": "smartsale-jobs",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "bunx trigger.dev@beta dev"
+  },
+  "dependencies": {
+    "@trigger.dev/sdk": "3.0.0-beta.54",
+    "viem": "latest",
+    "app-contracts": "workspace:*",
+    "app-env": "workspace:*",
+    "app-lib": "workspace:*"
+  }
+}
