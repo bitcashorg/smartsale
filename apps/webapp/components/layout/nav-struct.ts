@@ -5,10 +5,10 @@ export const navStruct: NavStruct = {
       main: true,
       items: [
         {
-          label: 'For Investors',
-          href: '/about/investors',
+          label: 'For Contributors',
+          href: '/about/contributors',
           description:
-            'Information and resources for potential and current investors.'
+            'Information and resources for potential and current contributors.'
         },
         {
           label: 'For AI Startups',

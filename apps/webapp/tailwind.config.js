@@ -2,8 +2,8 @@ const {
   default: flattenColorPalette
 } = require('tailwindcss/lib/util/flattenColorPalette')
 const svgToDataUri = require('mini-svg-data-uri')
-
 const colors = require('tailwindcss/colors')
+const { fontFamily } = require("tailwindcss/defaultTheme");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -31,6 +31,10 @@ module.exports = {
         ring: 'hsla(var(--ring))',
         background: 'hsla(var(--background))',
         foreground: 'hsla(var(--foreground))',
+        cornflowerblue: {
+          100: "rgba(125, 129, 217, 0.2)",
+          200: "rgba(125, 129, 217, 0.2)"
+        },
         primary: {
           DEFAULT: 'hsla(var(--primary))',
           foreground: 'hsla(var(--primary-foreground))',
@@ -50,7 +54,9 @@ module.exports = {
           100: '#535461',
           200: '#040216',
           300: '#080821',
-          400: '#F5F5F5'
+          400: '#F5F5F5',
+          500: '#5361FF',
+          600: '#9A9EFC'
         },
         tertiary: { blue: '#0000EE' },
         destructive: {
@@ -77,7 +83,16 @@ module.exports = {
         card: {
           DEFAULT: 'hsla(var(--card))',
           foreground: 'hsla(var(--card-foreground))'
+        },
+        alert: {
+          DEFAULT: "hsla(var(--alert))"
         }
+      },
+      background: {
+        cornflowerblue: {
+          100: "rgba(125, 129, 217, 0.5)",
+          200: "rgba(125, 129, 217, 0.43)"
+        },
       },
       borderRadius: {
         lg: 'var(--radius)',
@@ -89,6 +104,13 @@ module.exports = {
         buttons: '5px',
         'inputs-shaped': '100px',
         'check-box': '4px'
+      },
+      fontFamily: {
+        sans: ["Futura PT", ...fontFamily.sans],
+        'futura-pt-bold': ['Futura PT Bold', 'sans-serif'],
+        'futura-pt-condensed': ['Futura PT Heavy', 'sans-serif'],
+        'futura-pt-demi': ['Futura PT Demi', 'sans-serif'],
+        'lufga-bold': 'var(--font-lufga-bold)',
       },
       keyframes: {
         'accordion-down': {

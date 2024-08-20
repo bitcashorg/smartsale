@@ -72,7 +72,7 @@ export async function genUsdtDepositSigningRequest(
   amount: number,
   address: string
 ) {
-  const account = appConfig.usdt.find(
+  const account = appConfig.stables.find(
     c => c.chainType === 'antelope' && c.symbol === 'USDT'
   )?.address
   if (!account) throw new Error('usdt account not found')

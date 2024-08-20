@@ -9,7 +9,7 @@ export const featuresContent: FeatureContent[] = [
   {
     title: 'Lelang Batch untuk Penemuan Harga yang Adil',
     description:
-      'Platform kami merevolusi pendanaan startup dengan menerapkan sistem lelang batch untuk penjualan token, memastikan penemuan harga yang adil dan transparan. Metode ini memungkinkan semua peserta untuk mengajukan penawaran dalam jangka waktu tertentu, dengan token dialokasikan pada harga kliring yang seragam. Pendekatan ini mencegah manipulasi harga dan memastikan bahwa semua investor memiliki akses yang sama terhadap peluang investasi, menjadikannya pasar yang adil bagi startup dan investor.',
+      'Platform kami merevolusi pendanaan startup dengan menerapkan sistem lelang batch untuk penjualan token, memastikan penemuan harga yang adil dan transparan. Metode ini memungkinkan semua peserta untuk mengajukan penawaran dalam jangka waktu tertentu, dengan token dialokasikan pada harga kliring yang seragam. Pendekatan ini mencegah manipulasi harga dan memastikan bahwa semua contributor memiliki akses yang sama terhadap peluang investasi, menjadikannya pasar yang adil bagi startup dan contributor.',
     label: 'Lelang Batch',
     imgSrc: '/images/home/auction-bids-chart.svg',
     imgAlt: 'Batch Auctions'

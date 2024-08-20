@@ -4,7 +4,6 @@ import { getSesssion } from '@/actions'
 import { genLoginSigningRequest } from '@/lib/eos'
 import { useSupabaseClient } from '@/services/supabase'
 import { createContextHook } from '@blockmatic/hooks-utils'
-import { identify } from '@multibase/js'
 import { useConnectModal } from '@rainbow-me/rainbowkit'
 import { Tables } from '@repo/supabase'
 import { usePathname, useRouter, useSearchParams } from 'next/navigation'
@@ -13,6 +12,7 @@ import { isMobile } from 'react-device-detect'
 import { useAsync, useLocalStorage, useToggle } from 'react-use'
 import { v4 as uuidv4 } from 'uuid'
 import { useAccount } from 'wagmi'
+import { useMultibase } from './use-multibase'
 
 // Exports
 export { SessionProvider, useSession }
@@ -27,6 +27,7 @@ function useSessionFn() {
   const pathname = usePathname()
   const router = useRouter()
   const { openConnectModal } = useConnectModal()
+  const { identifyUser } = useMultibase()
   // this controls the session dialog with register and login qr codes
   // when login qr code is display a new esr is created and saved on db for later reference on callback call
   const [showSessionDialog, toggleShowSessionDialog] = useToggle(false)
@@ -40,10 +41,10 @@ function useSessionFn() {
 
   const startSession = (session: Tables<'session'>) => {
     setSession(session)
-    identify({
-      address: account.address || '0x',
-      properties: { account: session?.account ?? 'unknown' }
-    })
+    identifyUser(
+      account.address || '0x',
+      { account: session?.account ?? 'unknown' }
+    )
   }
 
   // subscribe to supabase session table and set session state

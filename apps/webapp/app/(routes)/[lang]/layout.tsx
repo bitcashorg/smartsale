@@ -1,4 +1,31 @@
 import '@/app/globals.css'
+import {
+  FuturaPTBold,
+  FuturaPTBook,
+  FuturaPTDemi,
+  FuturaPTExtraBold,
+  FuturaPTHeavy,
+  FuturaPTLight,
+  FuturaPTMedium,
+  LufgaBlack,
+  LufgaBlackItalic,
+  LufgaBold,
+  LufgaBoldItalic,
+  LufgaExtraBold,
+  LufgaExtraBoldItalic,
+  LufgaExtraLight,
+  LufgaExtraLightItalic,
+  LufgaItalic,
+  LufgaLight,
+  LufgaLightItalic,
+  LufgaMedium,
+  LufgaMediumItalic,
+  LufgaRegular,
+  LufgaSemiBold,
+  LufgaSemiBoldItalic,
+  LufgaThin,
+  LufgaThinItalic,
+} from "@/assets/fonts/fonts"
 import Footer from '@/components/layout/footer/footer'
 import { Header } from '@/components/layout/header'
 import { Providers } from '@/components/layout/providers'
@@ -38,7 +65,10 @@ export default async function RootLayout({
       className={cn('tk-futura-pt max-w-full text-lg antialiased')}
       suppressHydrationWarning
     >
-      <body style={{ width: '100%', maxWidth: '100%' }}>
+      <body
+        style={{ width: '100%', maxWidth: '100%' }}
+        className={`${FuturaPTBook.variable} ${FuturaPTLight.variable} ${FuturaPTMedium.variable} ${FuturaPTDemi.variable} ${FuturaPTHeavy.variable} ${FuturaPTBold.variable} ${FuturaPTExtraBold.variable} ${LufgaRegular.variable} ${LufgaItalic.variable} ${LufgaThin.variable} ${LufgaThinItalic.variable} ${LufgaExtraLight.variable} ${LufgaExtraLightItalic.variable} ${LufgaLight.variable} ${LufgaLightItalic.variable} ${LufgaMedium.variable} ${LufgaMediumItalic.variable} ${LufgaSemiBold.variable} ${LufgaSemiBoldItalic.variable} ${LufgaBold.variable} ${LufgaBoldItalic.variable} ${LufgaExtraBold.variable} ${LufgaExtraBoldItalic.variable} ${LufgaBlack.variable} ${LufgaBlackItalic.variable}`}
+      >
         <Providers
           attribute="class"
           defaultTheme="system"

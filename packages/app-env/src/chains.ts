@@ -23,12 +23,12 @@ export const eosEvmTestnet: Chain = {
 } as const;
 
 const prodChains: Chain[] = [arbitrum, avalanche, base, celo, mainnet, optimism, polygon, zkSync, bsc, fantom, moonbeam, cronos, kava, metis, gnosis, aurora, harmonyOne];
-const testChains: Chain[] = [eosEvmTestnet, sepolia];
+const devChains: Chain[] = [eosEvmTestnet, sepolia];
 
 // note: use .entries() to get an array
 export const appChains = {
-  dev: createMapFromId(prodChains),
-  prod: createMapFromId(testChains),
+  dev: createMapFromId(devChains),
+  prod: createMapFromId(prodChains),
 } as const;
 
 function createMapFromId(items: Chain[]): Map<number, Chain> {

@@ -31,7 +31,7 @@ const prod: SmartsaleEnvConfig = {
     auction: "0x",
     bk: "launchpad.bk",
   },
-  usdt: [EOSUSDT,...usdcContracts, ...usdtContracts],
+  stables: [EOSUSDT,...usdcContracts, ...usdtContracts],
 };
 
 const dev: SmartsaleEnvConfig = {
@@ -54,7 +54,7 @@ const dev: SmartsaleEnvConfig = {
     auction: "0x",
     bk: "bkblaunchpad",
   },
-  usdt: [EOSFakeBITUSD, EOSFakeUSDT, SepoliaUSDT, TestnetUSDT],
+  stables: [EOSFakeBITUSD, EOSFakeUSDT, SepoliaUSDT, TestnetUSDT],
 };
 // pre production tests
 const test: SmartsaleEnvConfig = {
@@ -89,6 +89,7 @@ export function getValidSmartsaleEnv(env: string): SmartsaleEnv {
     throw new Error(`Invalid environment: ${env}`);
   }
 }
+
 export interface SmartsaleEnvConfig {
   chains: Map<number, Chain>
   issuer: {
@@ -104,7 +105,7 @@ export interface SmartsaleEnvConfig {
     auction: Address
     bk: string
   }
-  usdt: TokenContractData[]
+  stables: TokenContractData[]
   esrCallbackUrl: string
   supabase: {
     url : string,

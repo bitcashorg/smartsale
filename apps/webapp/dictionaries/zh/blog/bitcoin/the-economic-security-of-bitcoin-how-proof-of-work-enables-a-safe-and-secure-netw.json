@@ -95,7 +95,7 @@
         "入门"
       ],
       "title": "研究和评估比特币交易所的艺术：投资者指南",
-      "slug": "the-art-of-researching-and-evaluating-bitcoin-exchanges-a-guide-for-investors",
+      "slug": "the-art-of-researching-and-evaluating-bitcoin-exchanges-a-guide-for-contributors",
       "authorName": "Maxi Millie",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
@@ -247,7 +247,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "One of the key features of proof-of-work is that it is costly to perform. Miners must invest in specialized hardware and pay for electricity to run their equipment. This creates a barrier to entry for potential attackers, as they would need to invest a significant amount of resources in order to mount a successful attack on the network."
+                      "value": "One of the key features of proof-of-work is that it is costly to perform. Miners must contribute in specialized hardware and pay for electricity to run their equipment. This creates a barrier to entry for potential attackers, as they would need to contribute a significant amount of resources in order to mount a successful attack on the network."
                     }
                   ]
                 }
