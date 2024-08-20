@@ -17,7 +17,7 @@ export function WhyChooseUs({ lang, dict }: WhyChooseUsProps) {
               <h3 className="mb-5 text-lg font-bold min-h-20">
                 {feature.title}
               </h3>
-              <p className="text-sm text-gray-500 parragraph dark:text-gray-400">
+              <p className="text-[18px] text-gray-500 parragraph dark:text-gray-400">
                 {feature.description}
               </p>
             </Card>

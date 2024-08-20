@@ -29,7 +29,7 @@ export function Features({ lang, dict }: FeaturesProps) {
               <h3 className="text-2xl font-bold text-left">
                 <Balancer>{content.title}</Balancer>
               </h3>
-              <p className="text-gray-500 dark:text-gray-400 text-left">
+              <p className="text-left text-[18px] text-gray-500 dark:text-gray-400">
                 {content.description}
               </p>
             </div>

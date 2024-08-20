@@ -178,7 +178,7 @@ module.exports = {
         'sub-1-lg': ['36px', { lineHeight: '40px' }],
         'sub-1-md': ['28px', { lineHeight: '40px' }],
         'sub-2-lg': [
-          '24px',
+          '22px',
           { lineHeight: '28px' },
           { fontFamily: 'futura-pt-bold' }
         ],

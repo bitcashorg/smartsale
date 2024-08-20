@@ -13,7 +13,7 @@ export function MediaSections({ sections, lang }: MediaSectionsProps) {
           section?.videos?.length > 0 && (
             <section className="w-full mt-10" key={section.title}>
               <div className="flex items-center justify-between text-xl mb-space-32">
-                <span className="font-semibold text-black sub-2-lg dark:text-white">
+                <span className="font-bold text-black sub-2-lg dark:text-white">
                   / {section.title}
                 </span>
                 <Link

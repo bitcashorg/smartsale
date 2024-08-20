@@ -22,14 +22,14 @@ export function LearnSection() {
                   className="mx-auto bg-[radial-gradient(#7D81D96E,transparent_43%)]"
                 />
               </picture>
-              <CardHeader className="z-30 text-center px-3 lg:px-16 gap-y-3">
-                <CardTitle className="text-3xl lg:text-4xl font-medium text-left">
+              <CardHeader className="z-30 px-3 text-center lg:px-16 gap-y-3">
+                <CardTitle className="text-3xl font-medium leading-normal text-left lg:text-4xl lg:leading-normal">
                   {content.cards[0].title}
                 </CardTitle>
                 <div className="w-28 h-[2px] bg-secondary-500 mb-7" />
               </CardHeader>
-              <CardContent className="z-30 text-left px-3 lg:px-16 pb-14">
-                <div className="flex flex-col justify-center items-start gap-y-5">
+              <CardContent className="z-30 px-3 text-left lg:px-16 pb-14">
+                <div className="flex flex-col items-start justify-center gap-y-5">
                   {
                     content.cards[0].paragraphs.map((p) => (
                       <p key={p} className="text-base font-medium text-[#7A7CA8]">{p}</p>
@@ -45,8 +45,8 @@ export function LearnSection() {
           <Link href="/blog/bitcash/how-to-register-and-kyc-to-bitcash ">
             <Card className="relative min-h-44 bg-[#0F113E] rounded-[48px] h-full flex jutify-center items-center">
               <div className="shadow-md bg-gradient-to-b from-cornflowerblue-200 grid grid-cols-[60%_40%] gap-2 items-center justify-center h-full">
-                <CardHeader className="text-center px-3 lg:px-20 lg:pr-0 py-16 pr-0 gap-y-3 lg:gap-y-14">
-                  <CardTitle className="mx-auto text-3xl lg:text-4xl text-left font-medium">
+                <CardHeader className="px-3 py-16 pr-0 text-center lg:px-20 lg:pr-0 gap-y-3 lg:gap-y-14">
+                  <CardTitle className="mx-auto text-3xl font-medium text-left lg:text-4xl">
                     {content.cards[1].title}
                   </CardTitle>
                   <div className="w-28 h-[2px] bg-secondary-600 mt-7" />
@@ -69,8 +69,8 @@ export function LearnSection() {
           <Link href="/blog/bitcash/how-to-register-and-kyc-to-bitcash ">
             <Card className="relative min-h-44 bg-[#0F113E] rounded-[48px] h-full flex jutify-center items-center">
               <div className="shadow-md bg-gradient-to-b from-cornflowerblue-200 grid grid-cols-[60%_40%] gap-2 items-center justify-center h-full">
-                <CardHeader className="text-center px-3 lg:px-20 lg:pr-0 py-16 pr-0 gap-y-3 lg:gap-y-14">
-                  <CardTitle className="mx-auto text-3xl lg:text-4xl text-left font-medium">
+                <CardHeader className="px-3 py-16 pr-0 text-center lg:px-20 lg:pr-0 gap-y-3 lg:gap-y-14">
+                  <CardTitle className="mx-auto text-3xl font-medium text-left lg:text-4xl">
                     {content.cards[2].title}
                   </CardTitle>
                   <div className="w-28 h-[2px] bg-alert mt-7" />
