@@ -281,19 +281,25 @@ export type Database = {
       }
       user: {
         Row: {
+          account: string
           address: string
           created_at: string
           id: number
+          short_links: string | null
         }
         Insert: {
+          account: string
           address: string
           created_at?: string
           id: number
+          short_links?: string | null
         }
         Update: {
+          account?: string
           address?: string
           created_at?: string
           id?: number
+          short_links?: string | null
         }
         Relationships: []
       }
