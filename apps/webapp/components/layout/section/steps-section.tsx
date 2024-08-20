@@ -8,7 +8,7 @@ import { Lang } from '@/dictionaries/locales'
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
 
-export default function Participate({ lang, dict }: ParticipateProps) {
+export default function StepsSection({ lang, dict }: StepsSectionProps) {
   return (
     <Section heading={dict.footer.stepsInfo}>
       <div
@@ -60,7 +60,7 @@ export default function Participate({ lang, dict }: ParticipateProps) {
   )
 }
 
-export interface ParticipateProps {
+export interface StepsSectionProps {
   dict: any
   lang: Lang
 }
