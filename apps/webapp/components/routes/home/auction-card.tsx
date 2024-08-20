@@ -29,7 +29,7 @@ export function AuctionCard({
   const isFutureOrComingAuction = badgeText.match(/(FUTURE|COMING SOON)/)
 
   return (
-    <div className="box-border justify-center border rounded-xl border-card/30 bg-card backdrop-blur-lg">
+    <div className="box-border border rounded-xl border-card/30 bg-card backdrop-blur-lg">
       <Link
         id={`hot-auction-${title.toLowerCase().replace(/\s/g, '-')}`}
         href={isFutureOrComingAuction ? `#` : linkPath}
@@ -50,14 +50,17 @@ export function AuctionCard({
             {...((id === 1 || !isMobile) && { priority: true })}
           />
           <Suspense fallback={<figcaption>{badgeText}</figcaption>}>
-            <MotionFigcaption label={badgeText} />
+            <MotionFigcaption
+              label={badgeText}
+              color={badgeText === 'REGISTRATION OPEN' ? 'open' : 'default'}
+            />
           </Suspense>
         </figure>
-        <div className="px-4 py-6 lg:px-9 lg:py-8">
+        <div className="px-4 py-6 text-start lg:px-9 lg:py-8">
           <h3 className="text-xl font-bold">
             <Balancer>{title}</Balancer>
           </h3>
-          <p className="max-w-sm mt-2 text-sm">{pitch}</p>
+          <p className="max-w-sm mt-2 text-sm opacity-65">{pitch}</p>
         </div>
         <div className="flex flex-col items-center justify-between w-full px-4 pb-6 md:mt-auto lg:pb-8 xl:px-6">
           <ul className="flex flex-col w-full gap-2 mb-6 lg:mb-8">
