@@ -1,16 +1,20 @@
+import dynamic from 'next/dynamic'
 import { BannerOne } from '@/components/_wip/banner-one'
 import { Categories } from '@/components/_wip/categories'
 import { FeatureOne } from '@/components/_wip/feature-one'
 import { FeatureThree } from '@/components/_wip/feature-three'
 import { FeatureTwo } from '@/components/_wip/feature-two'
-import { Features } from '@/components/routes/home/features'
 import { NewHomeHero } from '@/components/routes/home/hero/index'
-import { Upcoming } from '@/components/routes/home/upcoming'
-import { WhyChooseUs } from '@/components/routes/home/why-choose-us'
 import { getDictionary } from '@/dictionaries'
 import { Lang } from '@/dictionaries/locales'
 import { appConfig } from '@/lib/config'
 import { getProjects } from '@/lib/projects'
+
+const DynamicFeatures = dynamic(() => import('@/components/routes/home/features').then(mod => mod.Features), { ssr: false })
+
+const DynamicUpcoming = dynamic(() => import('@/components/routes/home/upcoming').then(mod => mod.Upcoming), { ssr: false })
+
+const DynamicWhyChooseUs = dynamic(() => import('@/components/routes/home/why-choose-us').then(mod => mod.WhyChooseUs), { ssr: false })
 
 export default async function IndexPage({ params: { lang } }: IndexPageProps) {
   const dict = await getDictionary(lang)
@@ -19,13 +23,13 @@ export default async function IndexPage({ params: { lang } }: IndexPageProps) {
   return (
     <div className="container max-w-[100vw] !overflow-hidden !px-4">
       <NewHomeHero />
-      <Upcoming projects={projects} dict={dict} />
+      <DynamicUpcoming projects={projects} dict={dict} />
 
       <div className="narrow-container">
         {appConfig.features.sections ? (
           <>
-            <Features lang={lang} dict={dict} />
-            <WhyChooseUs lang={lang} dict={dict} />
+            <DynamicFeatures lang={lang} dict={dict} />
+            <DynamicWhyChooseUs lang={lang} dict={dict} />
           </>
         ) : null}
 
