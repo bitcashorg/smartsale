@@ -1,35 +1,49 @@
+import { AboutBitlauncherPageContent } from '@/components/routes/about/about-bitlauncher'
 
 export function Banner() {
   return (
-    <section className="w-full py-6 narrow-container">
+    <section className="w-full pt-[80px]">
       <div className="inline-flex flex-col items-center justify-start gap-[37px]">
-        <h2 className="font-['Futura PT'] heading text-center text-4xl font-medium leading-[42.35px] text-neutral-50">
-          Driving Global AI And Crypto Advancement
-          <br />
-          Through Strategic Tokenomics
+        <h2 className="leading-[42.35px text-center text-4xl font-medium heading2">
+          {content.title}
         </h2>
         <div className="h-[2.37px] w-[118.61px] bg-[#ff51ed]"></div>
-        <p className="text-center text-[15px] font-normal paragraph">
-          Through our{' '}
-          <b>
-            unique tokenomics
-          </b>
-          {' '}
-          , including a dynamic burn and mint model, we ensure that our
-          tokens reflect true economic value, promoting stability and growth
-          within our ecosystem. Our global-first approach ensures that we
-          cater to a worldwide audience, providing tools and resources that
-          are accessible to innovators around the globe.
-          <b>
-            {' '}
-            Join us at Bitlauncher
-          </b>
-          {' '}
-          as we pave the way for a new era of technological advancement and
-          community empowerment in the AI and crypto space.
-        </p >
-      </div >
+        <div className='narrow-container'>
+          <p className="paragraph text-center text-[15px] font-normal">
+            {content.paragraph}
+          </p>
+          <br />
+          <p className="paragraph text-center text-[15px] font-normal">
+            {content.callToAction}
+          </p>
+        </div>
+      </div>
+    </section>
+  )
+}
 
-    </section >
+const content = {
+  title: (
+    <>
+      Driving Global AI And Crypto Advancement
+      <br />
+      Through Strategic Tokenomics
+    </>
+  ),
+  paragraph: (
+    <>
+      Through our <strong className='text-white'>unique tokenomics,</strong> including a dynamic burn
+      and mint model, we ensure that our tokens reflect true economic value,
+      promoting stability and growth within our ecosystem. Our global-first
+      approach ensures that we cater to a worldwide audience, providing tools
+      and resources that are accessible to innovators around the globe.
+    </>
+  ),
+  callToAction: (
+    <>
+      <strong className='text-white'>Join us at Bitlauncher</strong> as we pave the way for a new era
+      of technological advancement and community empowerment in the AI and
+      crypto space.
+    </>
   )
 }
