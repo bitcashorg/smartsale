@@ -24,11 +24,11 @@ export default function StepsSection({ lang, dict }: StepsSectionProps) {
               key={`${index}__step-content`}
               className="flex min-h-[260px] flex-col items-center justify-between rounded-3xl bg-white/90 px-9 py-6 text-black/90 shadow-md backdrop-blur-xl lg:w-1/3 lg:max-w-[450px] lg:items-start xl:py-9"
             >
-              <h3 className="flex justify-center w-full h-10 text-3xl font-bold whitespace-pre-line md:text-1xl lg:justify-start lg:text-left lg:text-2xl">
+              <h3 className="flex w-full h-10 text-3xl font-bold whitespace-pre-line md:text-1xl lg:justify-start lg:text-left lg:text-2xl">
                 {step.title}
               </h3>
               <div className="flex max-w-full gap-4">
-                <p className="w-[calc(100%-75px)] text-left text-[18px] sm:max-w-[324px]">
+                <p className="w-[calc(100%-75px)] text-center text-[18px] leading-6 font-normal sm:max-w-[324px]">
                   {step.description}
                 </p>
                 {index > 0 ? (

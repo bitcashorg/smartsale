@@ -88,7 +88,7 @@ export default function Newsletter({ lang }: LangProp) {
   }, [email])
 
   return (
-    <div className="container px-0 sm:px-4 relative mt-40 mb-10" id="newsletter">
+    <div className="container relative px-0 mt-40 mb-10 sm:px-4" id="newsletter">
       <GoogleReCaptchaProvider
         reCaptchaKey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ''}
         // language="[optional_language]"
@@ -103,7 +103,7 @@ export default function Newsletter({ lang }: LangProp) {
         <section className="newsletter-wrapper">
           <div className="flex min-h-[460px] w-full max-w-[600px] flex-col items-center justify-center gap-8 px-3 text-center md:gap-11 md:px-0">
             <div className="flex flex-col w-full gap-7">
-              <h2 className="text-3xl tracking-tight sm:text-4xl">
+              <h2 className="newsletterHeading">
                 Sign up for our newsletter
               </h2>
               <p className="mx-auto sm:text-xl">

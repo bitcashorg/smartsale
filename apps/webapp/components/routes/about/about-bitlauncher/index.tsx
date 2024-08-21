@@ -14,12 +14,10 @@ export async function AboutBitlauncherPageLanding({
   const dict = await getDictionary(lang)
   return (
     <>
-      <section className="narrow-container pb-[100px] pt-[80]">
-        <div className="grid items-center justify-between gap-4 px-0 md:px-6 lg:grid-cols-2">
+      <section className="narrow-container pt-[80]">
+        <div className="grid items-center justify-between gap-4 px-0 pb-[80px] md:px-6 lg:grid-cols-2">
           <div className="space-y-4">
-            <h2 className="text-[87px] font-normal leading-normal">
-              {content.title}
-            </h2>
+            <h2 className="sectionsHeading">{content.title}</h2>
             <section className="text-sm font-normal leading-normal opacity-60">
               {content.paragraph}
               <br />

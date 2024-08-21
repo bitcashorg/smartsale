@@ -16,7 +16,7 @@ export function BgHeader({
         <div className="container px-4 md:px-6">
           <div className="grid items-center gap-4 lg:grid-cols-2">
             <div className="space-y-4">
-              <h2 className="text-[87px] leading-normal font-normal">
+              <h2 className="sectionsHeading">
                 <Balancer>{heading}</Balancer>
               </h2>
               <div className="text-start text-[35px] font-medium leading-[42.35px] text-[#ff51ed]">

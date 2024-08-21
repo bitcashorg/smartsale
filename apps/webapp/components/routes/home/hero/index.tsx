@@ -15,7 +15,7 @@ export function NewHomeHero() {
     <section className="narrow-container mb-0 flex min-h-[calc(100vh-4rem)] flex-col justify-between">
       <main className="flex flex-col items-center justify-center flex-1 p-6 lg:flex-row">
         <div className="text-left">
-          <h1 className="text-6xl font-bold font-lufga-bold">
+          <h1 className="heroHeading">
             <Balancer>
               EARLY ACCESS TO <br />
               THE NEXT <span className="text-pink-500">GLOBAL</span> <br />
