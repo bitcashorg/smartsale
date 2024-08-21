@@ -20,7 +20,7 @@ export const eosEvmTestnet: Chain = {
     },
   },
   testnet: true,
-} as const;
+};
 
 const prodChains: Chain[] = [arbitrum, avalanche, base, celo, mainnet, optimism, polygon, zkSync, bsc, fantom, moonbeam, cronos, kava, metis, gnosis, aurora, harmonyOne];
 const devChains: Chain[] = [eosEvmTestnet, sepolia];

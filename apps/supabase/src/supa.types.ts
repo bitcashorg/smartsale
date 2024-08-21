@@ -281,19 +281,25 @@ export type Database = {
       }
       user: {
         Row: {
-          address: string
+          account: string
+          address: string[]
           created_at: string
           id: number
+          short_link: string | null
         }
         Insert: {
-          address: string
-          created_at?: string
-          id: number
-        }
-        Update: {
-          address?: string
+          account: string
+          address: string[]
           created_at?: string
           id?: number
+          short_link?: string | null
+        }
+        Update: {
+          account?: string
+          address?: string[]
+          created_at?: string
+          id?: number
+          short_link?: string | null
         }
         Relationships: []
       }

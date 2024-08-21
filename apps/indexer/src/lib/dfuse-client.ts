@@ -1,12 +1,12 @@
 import { GraphqlStreamMessage, WebSocketFactory, createDfuseClient } from '@dfuse/client'
-import { appenv } from '~/config'
+import { appConfig } from '~/config'
 import nodeFetch from 'node-fetch'
 import WebSocketClient from 'ws'
 import EventEmitter from 'events'
 import { IncomingMessage } from 'http'
 
 export const dfuse = createDfuseClient({
-  apiKey: appenv.eos.dfuseKey,
+  apiKey: appConfig.eos.dfuseKey,
   network: 'eos.dfuse.eosnation.io',
   // authentication: true,
   httpClientOptions: {
