@@ -4,7 +4,8 @@ import { PageContent } from '@/components/shared/content'
 import { CommonPageProps } from '@/types/routing.type'
 import { getDictionary } from '@/dictionaries'
 import { BgHeader } from '@/components/shared/bg-header'
-import {WhyChooseUs} from '@/components/routes/home/why-choose-us';
+import StepsSection from '@/components/layout/section/steps-section'
+import { LearnSection } from '@/components/layout/section/learn-section'
 
 export default async function SecurityTips({ params }: CommonPageProps) {
   const dict = await getDictionary(params.lang)
@@ -13,11 +14,19 @@ export default async function SecurityTips({ params }: CommonPageProps) {
 
   return (
     <>
-      <BgHeader
-        heading={heading}
-        subheading={'Be Part of the Intelligent Future'} imageSrc={''}      />
-      <div className="content-container z-30 bg-background text-center !py-10 px-7 md:px-3 md:py-24">
-        <PageContent data={content} />
+      <section className="pt-[80]">
+        <BgHeader
+          heading={heading}
+          subheading={'Be Part of the Intelligent Future'}
+          imageSrc={''}
+        />
+        <div className="content-container z-30 bg-background !py-10 px-7 text-center md:px-3 md:py-24">
+          <PageContent data={content} />
+        </div>
+      </section>
+      <div className="narrow-container">
+        <StepsSection lang={params.lang} dict={dict} />
+        <LearnSection />
       </div>
     </>
   )
