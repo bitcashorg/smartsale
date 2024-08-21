@@ -8,11 +8,11 @@ WORKDIR /app
 COPY package.json .
 COPY apps/supabase/package.json ./apps/supabase/package.json
 COPY apps/indexer/package.json ./apps/indexer/package.json
+COPY apps/trigger/package.json ./apps/trigger/package.json
 COPY packages/app-env/package.json ./packages/app-env/package.json
 COPY packages/app-contracts/package.json ./packages/app-contracts/package.json
 COPY packages/app-lib/package.json ./packages/app-lib/package.json
 COPY packages/config-typescript/package.json ./packages/config-typescript/package.json
-
 
 # Copy the lock file
 COPY bun.lockb .
@@ -25,6 +25,7 @@ RUN bun install
 # Copy the specific workspaces
 COPY apps/supabase ./apps/supabase
 COPY apps/indexer ./apps/indexer
+COPY apps/trigger ./apps/trigger
 COPY packages/ ./packages/
 
 # Set the working directory to your specific workspace
