@@ -6,7 +6,9 @@ These hooks invoke Trigger.dev jobs that process the events using Viem.
 
 ## Dependencies
 
-- [Alchemy SDK](https://www.npmjs.com/package/alchemy-sdk): Used for interacting with Alchemy's API and setting up webhooks.
+ [Alchemy SDK](https://www.npmjs.com/package/alchemy-sdk): Used for interacting with Alchemy's API and setting up webhooks.
+ [Trigger.dev](https://www.npmjs.com/package/@trigger.dev/sdk): Used for creating and managing serverless functions and workflows.
+ [Viem](https://www.npmjs.com/package/viem): Ethereum JavaScript library for interacting with the Ethereum blockchain.
 
 ## Documentation
 
