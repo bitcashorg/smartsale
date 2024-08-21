@@ -7,7 +7,7 @@ steps:
         "gcr.io/$PROJECT_ID/$_PROJECT_NAME",
         "-f",
         # Dockerfile path to project
-        "apps/bitcash-auth/Dockerfile",
+        "apps/indexer/Dockerfile",
         "--cache-from",
         "gcr.io/$PROJECT_ID/$_PROJECT_NAME:latest",
         ".",
