@@ -5,6 +5,7 @@ import { useState } from 'react'
 
 import { generateShortLink } from '@/actions'
 import { useSession } from '@/hooks/use-session'
+import { uniq } from 'lodash'
 import { useParams } from 'next/navigation'
 import { useAccount } from 'wagmi'
 import { useSupabaseClient } from '../../../services/supabase/client'
@@ -25,8 +26,9 @@ export function CopyShortlinkIcon() {
     const { data, error } = await supabase
       .from('user')
       // select shareLink from user where linkPath = 'https://bitlauncher.ai${window.location.pathname}${param}'
-      .select('shortLink')
-      .eq('address', address || '')
+      .select('id, account, address, short_link')
+      .eq('account', session?.account || '')
+      .contains('address', [address || ''])
       .single()
 
     if (error) {
@@ -36,31 +38,41 @@ export function CopyShortlinkIcon() {
       return { data: null, error }
     }
 
-    if (!data.shortLink) {
+    let returnData = data
+
+    if (!data.short_link) {
       const { data: dubCoShortLink, error: dubCoError } = await generateShortLink(
         'https://bitlauncher.ai' + window.location.pathname + param
       )
 
       if (dubCoError) {
-        console.error('Failed to check share link:', dubCoError)
+        console.error('❌ Failed to check share link:', dubCoError)
         setStatus('error')
 
         return { data: null, error: dubCoError }
       }
 
-      await supabase.from('user').upsert(
-        [
-          {
-            shareLink: dubCoShortLink?.shortLink,
-          }
-        ],
-        { returning: 'minimal' }
-      )
+      // ? Doing upsert (account, address) for current users with active sessions
+      const updatedAddresses = [
+        ...data?.address.length
+          ? [...data?.address, address as string]
+          : [address as string]
+      ]
+      await supabase.from('user').upsert({
+        id: data.id,
+        account: session?.account || '',
+        address: uniq(updatedAddresses),
+        short_link: dubCoShortLink?.shortLink,
+      }, {
+        onConflict: 'account',
+      })
+
+      returnData = { ...data, short_link: dubCoShortLink?.shortLink as string }
 
       setTimeout(() => setStatus('default'), 5000)
     }
 
-    return { data, error: null }
+    return { data: returnData, error: null }
   }
 
   const copyToClipboard = async () => {
@@ -69,7 +81,7 @@ export function CopyShortlinkIcon() {
       const { data, error } = await checkShareLink()
 
       if (error || !data) throw new Error(error?.message || 'Unknown error')
-      navigator.clipboard.writeText(data.shortLink)
+      navigator.clipboard.writeText(data?.short_link || '')
       setStatus('copied')
       setTimeout(() => setStatus('default'), 5000)
     } catch (error) {

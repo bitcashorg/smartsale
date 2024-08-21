@@ -1,13 +1,13 @@
 'use server'
 
-import { cookies } from 'next/headers'
-import { fromEntries } from 'app-lib'
 import { handleAxiosError } from '@/lib/utils'
-import axios from 'axios'
-import { Resend } from 'resend'
-import { z } from 'zod'
 import { createSupabaseServerClient } from '@/services/supabase'
 import { presaleInsertSchema } from '@repo/supabase'
+import { fromEntries } from 'app-lib'
+import axios from 'axios'
+import { cookies } from 'next/headers'
+import { Resend } from 'resend'
+import { z } from 'zod'
 
 // get session object by id
 export async function getSesssion(formData: FormData) {
@@ -114,26 +114,26 @@ export async function subscribeToNewsletter(
 }
 
 // generate dub.co links
-export async function generateShortLink(path: string) {
+export async function generateShortLink(url: string) {
   const cookieStorage = cookies()
   try {
     const getShareLinkCookies = cookieStorage.get('bitlauncher-share-link')
     const resolved: DubShareLinkResponse = !getShareLinkCookies
       ? await axios
-          .post(
-            `https://api.dub.co/links?workspaceId=${process.env.DUB_WORKSPACE_ID}`,
-            {
-              domain: 'bitcash.to',
-              url: path
-            },
-            {
-              headers: {
-                Authorization: `Bearer ${process.env.DUB_API_KEY}`,
-                'Content-Type': 'application/json'
-              }
+        .post(
+          `https://api.dub.co/links?workspaceId=${process.env.DUB_WORKSPACE_ID}`,
+          {
+            domain: 'bitcash.to',
+            url
+          },
+          {
+            headers: {
+              Authorization: `Bearer ${process.env.DUB_API_KEY}`,
+              'Content-Type': 'application/json'
             }
-          )
-          .then(res => res.data)
+          }
+        )
+        .then(res => res.data)
       : (JSON.parse(getShareLinkCookies.value) as DubShareLinkResponse)
 
     if (!resolved) throw new Error('Failed to generate short link')

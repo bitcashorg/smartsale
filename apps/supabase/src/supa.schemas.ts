@@ -302,26 +302,26 @@ export const transferRelationshipsSchema = z.tuple([]);
 
 export const userRowSchema = z.object({
   account: z.string(),
-  address: z.string(),
+  address: z.array(z.string()),
   created_at: z.string(),
   id: z.number(),
-  short_links: z.string().nullable(),
+  short_link: z.string().nullable(),
 });
 
 export const userInsertSchema = z.object({
   account: z.string(),
-  address: z.string(),
+  address: z.array(z.string()),
   created_at: z.string().optional(),
-  id: z.number(),
-  short_links: z.string().optional().nullable(),
+  id: z.number().optional(),
+  short_link: z.string().optional().nullable(),
 });
 
 export const userUpdateSchema = z.object({
   account: z.string().optional(),
-  address: z.string().optional(),
+  address: z.array(z.string()).optional(),
   created_at: z.string().optional(),
   id: z.number().optional(),
-  short_links: z.string().optional().nullable(),
+  short_link: z.string().optional().nullable(),
 });
 
 export const userRelationshipsSchema = z.tuple([]);
