@@ -1,3 +1,6 @@
+options:
+  logging: CLOUD_LOGGING_ONLY
+
 steps:
   # Build the container image
   - name: "gcr.io/cloud-builders/docker"
@@ -34,3 +37,5 @@ steps:
       ]
 images:
   - gcr.io/$PROJECT_ID/$_PROJECT_NAME
+
+serviceAccount: 'projects/$PROJECT_ID/serviceAccounts/your-service-account@$PROJECT_ID.iam.gserviceaccount.com'
