@@ -6,6 +6,7 @@ import { Section } from '../../shared/section'
 export function LearnSection() {
   return (
     <Section heading={content.sectionTitle}>
+      <div className="h-[2px] bg-accent w-28 mx-auto mb-9"></div>
       <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
         <Link href="/blog/bitcash/how-to-register-and-kyc-to-bitcash ">
           <Card className="relative overflow-hidden min-h-96 bg-[#0F113E] rounded-[48px]">
@@ -70,7 +71,7 @@ export function LearnSection() {
             <Card className="relative min-h-44 bg-[#0F113E] rounded-[48px] h-full flex jutify-center items-center">
               <div className="shadow-md bg-gradient-to-b from-cornflowerblue-200 grid grid-cols-[60%_40%] gap-2 items-center justify-center h-full">
                 <CardHeader className="text-center px-3 lg:px-20 lg:pr-0 py-16 pr-0 gap-y-3 lg:gap-y-14">
-                  <CardTitle className="mx-auto text-3xl lg:text-4xl text-left font-medium">
+                  <CardTitle className="mx-auto text-3xl lg:text-4xl text-left">
                     {content.cards[2].title}
                   </CardTitle>
                   <div className="w-28 h-[2px] bg-alert mt-7" />
