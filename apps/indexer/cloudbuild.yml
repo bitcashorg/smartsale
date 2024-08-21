@@ -1,44 +1,36 @@
-options:
-  logging: CLOUD_LOGGING_ONLY
-
 steps:
   # Build the container image
-  - name: 'gcr.io/cloud-builders/docker'
+  - name: "gcr.io/cloud-builders/docker"
     args: [
-        'build',
-        '-t',
-        'gcr.io/$PROJECT_ID/$_PROJECT_NAME',
-        '-f',
+        "build",
+        "-t",
+        "gcr.io/$PROJECT_ID/$_PROJECT_NAME",
+        "-f",
         # Dockerfile path to project
-        'apps/indexer/Dockerfile',
-        '--cache-from',
-        'gcr.io/$PROJECT_ID/$_PROJECT_NAME:latest',
-        '.',
+        "apps/bitcash-auth/Dockerfile",
+        "--cache-from",
+        "gcr.io/$PROJECT_ID/$_PROJECT_NAME:latest",
+        ".",
       ]
     # root directory for docker build
-    dir: '.'
+    dir: "."
   # Push the container image to Container Registry
-  - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'gcr.io/$PROJECT_ID/$_PROJECT_NAME']
+  - name: "gcr.io/cloud-builders/docker"
+    args: ["push", "gcr.io/$PROJECT_ID/$_PROJECT_NAME"]
   # Deploy container image to Cloud Run
-  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  - name: "gcr.io/google.com/cloudsdktool/cloud-sdk"
     entrypoint: gcloud
     args:
       [
-        'run',
-        'deploy',
-        '$_PROJECT_NAME',
-        '--image',
-        'gcr.io/$PROJECT_ID/$_PROJECT_NAME',
-        '--region',
-        'us-central1',
-        '--allow-unauthenticated',
-        '--concurrency',
-        '80',
-        '--memory',
-        '2048Mi',
-        '--cpu',
-        '1',
+        "run",
+        "deploy",
+        "$_PROJECT_NAME",
+        "--image",
+        "gcr.io/$PROJECT_ID/$_PROJECT_NAME",
+        "--region",
+        "us-central1",
+        "--timeout",
+        "1800s" 
       ]
 images:
   - gcr.io/$PROJECT_ID/$_PROJECT_NAME
