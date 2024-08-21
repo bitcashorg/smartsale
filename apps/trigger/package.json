@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "dev": "bunx trigger.dev@beta dev"
+    "dev": "bunx trigger.dev@beta dev",
+    "deploy:test": "bunx trigger.dev@beta deploy --env test",
+    "deploy:prod": "bunx trigger.dev@beta deploy --env prod"
   },
   "dependencies": {
     "@trigger.dev/sdk": "3.0.0-beta.54",

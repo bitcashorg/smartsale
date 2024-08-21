@@ -1,14 +1,15 @@
-import { logger, task, wait } from "@trigger.dev/sdk/v3";
+import { logger, task } from "@trigger.dev/sdk/v3";
 
-export const tokenTransfersTask = task({
-  id: "token-transfers",
+export const addressActivityTask = task({
+  id: "address-activity",
   run: async (payload: any, { ctx }) => {
     try {
-      logger.log("Token transfers", { payload, ctx });
+      logger.log("Address activity", { payload, ctx });
 
- 
+
+
     } catch (error) {
-      logger.error("Error issuing presale tokens", { error: (error as Error).message });
+      logger.error("Error processing address activity", { error: (error as Error).message });
       throw error;
     }
   },
