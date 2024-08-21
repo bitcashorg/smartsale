@@ -5,10 +5,10 @@ import { useState } from 'react'
 
 import { generateShortLink } from '@/actions'
 import { useSession } from '@/hooks/use-session'
+import { useSupabaseClient } from '@/services/supabase/client'
 import { uniq } from 'lodash'
 import { useParams } from 'next/navigation'
 import { useAccount } from 'wagmi'
-import { useSupabaseClient } from '@/services/supabase/client'
 
 export function CopyShortlinkIcon() {
   const [status, setStatus] = useState<
@@ -41,9 +41,10 @@ export function CopyShortlinkIcon() {
     let returnData = data
 
     if (!data.short_link) {
-      const { data: dubCoShortLink, error: dubCoError } = await generateShortLink(
-        'https://bitlauncher.ai' + window.location.pathname + param
-      )
+      const { data: dubCoShortLink, error: dubCoError } =
+        await generateShortLink(
+          'https://bitlauncher.ai' + window.location.pathname + param,
+        )
 
       if (dubCoError) {
         console.error('❌ Failed to check share link:', dubCoError)
@@ -54,18 +55,21 @@ export function CopyShortlinkIcon() {
 
       // ? Doing upsert (account, address) for current users with active sessions
       const updatedAddresses = [
-        ...data?.address.length
+        ...(data?.address.length
           ? [...data?.address, address as string]
-          : [address as string]
+          : [address as string]),
       ]
-      await supabase.from('user').upsert({
-        id: data.id,
-        account: session?.account || '',
-        address: uniq(updatedAddresses),
-        short_link: dubCoShortLink?.shortLink,
-      }, {
-        onConflict: 'account',
-      })
+      await supabase.from('user').upsert(
+        {
+          id: data.id,
+          account: session?.account || '',
+          address: uniq(updatedAddresses),
+          short_link: dubCoShortLink?.shortLink,
+        },
+        {
+          onConflict: 'account',
+        },
+      )
 
       returnData = { ...data, short_link: dubCoShortLink?.shortLink as string }
 

@@ -1,8 +1,8 @@
 'use server'
 
 import { appConfig } from '@/lib/config'
-import { Database } from '@repo/supabase'
-import { CookieOptions, createServerClient } from '@supabase/ssr'
+import type { Database } from '@repo/supabase'
+import { type CookieOptions, createServerClient } from '@supabase/ssr'
 import { cookies } from 'next/headers'
 
 export async function createSupabaseServerClient() {

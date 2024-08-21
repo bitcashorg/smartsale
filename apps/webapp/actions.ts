@@ -120,20 +120,20 @@ export async function generateShortLink(url: string) {
     const getShareLinkCookies = cookieStorage.get('bitlauncher-share-link')
     const resolved: DubShareLinkResponse = !getShareLinkCookies
       ? await axios
-        .post(
-          `https://api.dub.co/links?workspaceId=${process.env.DUB_WORKSPACE_ID}`,
-          {
-            domain: 'bitcash.to',
-            url
-          },
-          {
-            headers: {
-              Authorization: `Bearer ${process.env.DUB_API_KEY}`,
-              'Content-Type': 'application/json'
-            }
-          }
-        )
-        .then(res => res.data)
+          .post(
+            `https://api.dub.co/links?workspaceId=${process.env.DUB_WORKSPACE_ID}`,
+            {
+              domain: 'bitcash.to',
+              url,
+            },
+            {
+              headers: {
+                Authorization: `Bearer ${process.env.DUB_API_KEY}`,
+                'Content-Type': 'application/json',
+              },
+            },
+          )
+          .then((res) => res.data)
       : (JSON.parse(getShareLinkCookies.value) as DubShareLinkResponse)
 
     if (!resolved) throw new Error('Failed to generate short link')
