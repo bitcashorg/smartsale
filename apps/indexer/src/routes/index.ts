@@ -5,11 +5,15 @@ import { healthcheck } from './healthcheck'
 import { alchemyWebhook } from './alchemy'
 import pinoHttp from 'pino-http'
 import { logger } from '~/lib/logger'
+import {setupSentryErrorHandler} from '~/lib/sentry';
 
 
 export function startExpress() {
   const app = express()
   const port = 8080
+
+  // Sentry error handler
+  setupSentryErrorHandler(app)
 
   // Security Middlewares
   app.use(helmet())

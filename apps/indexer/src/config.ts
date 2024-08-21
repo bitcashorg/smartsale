@@ -2,7 +2,7 @@ import { Address } from 'viem'
 import { privateKeyToAccount } from 'viem/accounts'
 import { smartsaleEnv } from 'app-env'
 
-export const appenv = {
+export const appConfig = {
   sentry: {
     dsn: process.env.SENTRY_DSN || '',
   },

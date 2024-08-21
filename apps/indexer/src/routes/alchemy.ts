@@ -1,12 +1,12 @@
 import { Request, Response } from 'express'
 import crypto from 'crypto'
-import { appenv } from '../config'
+import { appConfig } from '../config'
 import { logger } from '~/lib/logger'
 
 function validateAlchemySignature(req: Request): boolean {
   const alchemySignature = req.headers['x-alchemy-signature'] as string
   const payload = JSON.stringify(req.body)
-  const hmac = crypto.createHmac('sha256', appenv.evm.alchemySecretKey)
+  const hmac = crypto.createHmac('sha256', appConfig.evm.alchemySecretKey)
   hmac.update(payload)
   return alchemySignature === hmac.digest('hex')
 }

@@ -17,7 +17,9 @@
     "dependencies": {
         "@dfuse/client": "^0.3.21",
         "@repo/supabase": "workspace:*",
+        "@sentry/integrations": "^7.114.0",
         "@sentry/node": "^8.19.0",
+        "@sentry/profiling-node": "^8.26.0",
         "@supabase/supabase-js": "^2.44.4",
         "@types/pino-http": "^5.8.4",
         "app-contracts": "workspace:*",

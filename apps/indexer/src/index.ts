@@ -1,15 +1,16 @@
 import { getErrorMessage } from 'app-lib'
 import { startExpress } from './routes/index'
+import { logger } from './lib/logger'
 
 async function main() {
-  console.log(`Launchpad indexer starting up ...`)
+  logger.info(`Launchpad indexer starting up ...`)
   try {
     startExpress()
     // startPresaleService()
     // startSwapsService()
     // startAuctionIndexer()
   } catch (error) {
-    console.log('ERROR:' + getErrorMessage(error), JSON.stringify(error))
+    logger.error(getErrorMessage(error))
   }
 }
 
