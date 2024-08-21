@@ -1,8 +1,9 @@
 'use client'
 
-import React, { useEffect, useMemo, useState } from 'react'
-import Image from 'next/image'
 import { cn } from '@/lib/utils'
+import Image from 'next/image'
+import type React from 'react'
+import { useEffect, useMemo, useState } from 'react'
 const aspectRatioThreshold = 0.2
 
 export function LazyImage({
@@ -15,11 +16,11 @@ export function LazyImage({
   const [isLoading, setIsLoading] = useState(true)
   const [imageDimensions, setImageDimensions] = useState({
     width: 0,
-    height: 0
+    height: 0,
   })
 
   const calculateAdjustedHeight = (
-    img: React.SyntheticEvent<HTMLImageElement>
+    img: React.SyntheticEvent<HTMLImageElement>,
   ) => {
     const width = img.currentTarget.naturalWidth
     const height = img.currentTarget.naturalHeight
@@ -48,7 +49,7 @@ export function LazyImage({
         className?.includes('blogImages') && !isSameDimensions
           ? 'h-[110px] rounded-images sm:h-space-127 lg:h-space-157 xl:h-space-213'
           : '',
-        imgWrapperClassName
+        imgWrapperClassName,
       )}
     >
       <Image
@@ -64,7 +65,7 @@ export function LazyImage({
           isSameDimensions
             ? 'object-cover'
             : 'rounded-images object-contain object-center',
-          className
+          className,
         )}
         {...props}
       />

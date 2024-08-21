@@ -3,7 +3,7 @@
 import { useMobileNav } from '@/hooks/use-mobile-navigation'
 import { useSession } from '@/hooks/use-session'
 import { appConfig } from '@/lib/config'
-import { LangProp } from '@/types/routing.type'
+import type { LangProp } from '@/types/routing.type'
 import { useAccountModal, useConnectModal } from '@rainbow-me/rainbowkit'
 import { formatAddress } from 'app-lib'
 import Link from 'next/link'
@@ -14,7 +14,7 @@ import { useAccount } from 'wagmi'
 export function NavLinks({
   mobile = false,
   lang,
-  dict
+  dict,
 }: { mobile?: boolean } & NavLinksProps) {
   const { loginRedirect, session, logout } = useSession()
   const { openConnectModal } = useConnectModal()
@@ -31,7 +31,7 @@ export function NavLinks({
       text: bitcashAccount ? bitcashAccount : dict.nav.login,
       mobile: true,
       action: bitcashAccount ? null : loginRedirect,
-      disabled: false
+      disabled: false,
     },
     {
       id: 'connect',
@@ -42,7 +42,7 @@ export function NavLinks({
         bitcashAccount
           ? openConnectModal && openConnectModal()
           : openAccountModal && openAccountModal(),
-      disabled: !bitcashAccount
+      disabled: !bitcashAccount,
     },
     {
       id: 'about',
@@ -50,7 +50,7 @@ export function NavLinks({
       text: dict.nav.about,
       mobile: false,
       action: null,
-      disabled: false
+      disabled: false,
     },
     {
       id: 'whitepaper',
@@ -58,7 +58,7 @@ export function NavLinks({
       text: 'Whitepaper',
       mobile: false,
       action: null,
-      disabled: false
+      disabled: false,
     },
     {
       id: 'security',
@@ -66,7 +66,7 @@ export function NavLinks({
       text: dict.nav.security,
       mobile: false,
       action: null,
-      disabled: false
+      disabled: false,
     },
     {
       id: 'wallet',
@@ -74,7 +74,7 @@ export function NavLinks({
       text: dict.nav.wallet,
       mobile: false,
       action: null,
-      disabled: !appConfig.features.enableWalletAccess
+      disabled: !appConfig.features.enableWalletAccess,
     },
     {
       id: 'blog',
@@ -82,7 +82,7 @@ export function NavLinks({
       text: 'Blog',
       mobile: false,
       action: null,
-      disabled: false
+      disabled: false,
     },
     {
       id: 'logout',
@@ -90,11 +90,11 @@ export function NavLinks({
       action: logout,
       text: 'Sign out',
       mobile: true,
-      disabled: !bitcashAccount
-    }
+      disabled: !bitcashAccount,
+    },
   ] as const
 
-  return links.map(link => {
+  return links.map((link) => {
     if ((link.mobile && !mobile) || link.disabled) return null
 
     return (
@@ -103,7 +103,7 @@ export function NavLinks({
         shallow
         className="flex"
         href={link.href ? `/${lang}${link.href}` : '#'}
-        onClick={e => {
+        onClick={(e) => {
           e.preventDefault()
           if (link.action) {
             link.action()

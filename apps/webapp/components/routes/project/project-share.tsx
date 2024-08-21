@@ -1,9 +1,9 @@
-import Link from 'next/link'
 import { buttonVariants } from '@/components/ui/button'
 import { IconDiscord, IconTelegram, IconTwitterX } from '@/components/ui/icons'
+import type { Project } from '@/lib/projects'
 import { cn } from '@/lib/utils'
+import Link from 'next/link'
 import { CopyShortlinkIcon } from './copy-shorlink'
-import { Project } from '@/lib/projects'
 
 export function ProjectShare({ project }: { project: Project }) {
   return (
@@ -14,7 +14,7 @@ export function ProjectShare({ project }: { project: Project }) {
           href={`https://twitter.com/${project.twitterUsername}`}
           className={cn(
             buttonVariants({ variant: 'outline', size: 'icon' }),
-            'relative size-[50px] rounded-full px-0 py-0'
+            'relative size-[50px] rounded-full px-0 py-0',
           )}
           target="_blank"
           rel="noopener noreferrer"
@@ -26,7 +26,7 @@ export function ProjectShare({ project }: { project: Project }) {
           href={`https://discord.gg/${project.discordServer}`}
           className={cn(
             buttonVariants({ variant: 'outline', size: 'icon' }),
-            'relative size-[50px] rounded-full px-0 py-0'
+            'relative size-[50px] rounded-full px-0 py-0',
           )}
           target="_blank"
           rel="noopener noreferrer"
@@ -38,7 +38,7 @@ export function ProjectShare({ project }: { project: Project }) {
           href={`https://t.me/${project.telegramGroup}`}
           className={cn(
             buttonVariants({ variant: 'outline', size: 'icon' }),
-            'relative size-[50px] rounded-full px-0 py-0 pr-1'
+            'relative size-[50px] rounded-full px-0 py-0 pr-1',
           )}
           target="_blank"
           rel="noopener noreferrer"

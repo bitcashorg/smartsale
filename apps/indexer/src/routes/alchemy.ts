@@ -1,14 +1,15 @@
-import { Request, Response } from 'express'
 import crypto from 'crypto'
-import { appConfig } from '../config'
+import type { Request, Response } from 'express'
 import { logger } from '~/lib/logger'
-import {addressActivityTask} from '@repo/trigger';
+import { appConfig } from '../config'
+import { addressActivityTask } from '@repo/trigger'
 
 
 export function alchemyWebhook(req: Request, res: Response) {
-  if (!validateAlchemySignature(req)) return res.status(401).send('Unauthorized')
+  if (!validateAlchemySignature(req))
+    return res.status(401).send('Unauthorized')
 
-   logger.info(req.body)   
+  logger.info(req.body)
 
     // TODO: validate user is whitelisted
 

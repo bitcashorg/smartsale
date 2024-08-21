@@ -1,27 +1,27 @@
-import Link from 'next/link'
 import { cn } from '@/lib/utils'
-import { ArticlesSection } from '@/services/datocms'
+import type { ArticlesSection } from '@/services/datocms'
+import type { LangProp } from '@/types/routing.type'
+import Link from 'next/link'
 import { ArticleCard } from '../../shared/article-card'
 import { LucideIcons } from './lucide-icons'
-import { LangProp } from '@/types/routing.type'
 
 export function BlogSections({
   sections,
   lang,
   category,
-  className
+  className,
 }: BlogSectionsProps) {
   return (
     <div className={cn('flex w-full flex-col pt-10', className)}>
       {sections.map(
-        section =>
+        (section) =>
           section?.articles?.length > 0 && (
             <section
               // this is hack be careful when passing className to this component
               className={cn(
                 'w-full',
                 section !== sections[sections.length - 1] && 'mb-10',
-                className
+                className,
               )}
               key={section.name}
             >
@@ -31,7 +31,7 @@ export function BlogSections({
                   // TODO: fix add lang prefix on links there seems to a bug where it gets ovewritten
                   href={`/blog/${category || section.slug}`}
                   className={cn(
-                    'flex items-center align-middle text-black focus-within:!text-accent hover:!text-accent dark:text-white'
+                    'flex items-center align-middle text-black focus-within:!text-accent hover:!text-accent dark:text-white',
                   )}
                 >
                   {section.name}
@@ -53,7 +53,7 @@ export function BlogSections({
                   ))}
               </div>
             </section>
-          )
+          ),
       )}
     </div>
   )

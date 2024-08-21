@@ -1,6 +1,6 @@
 'use client'
-import * as React from 'react'
 import Link from 'next/link'
+import * as React from 'react'
 
 import { cn } from '@/lib/utils'
 
@@ -11,16 +11,16 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-  navigationMenuTriggerStyle
+  navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu'
-import { LangProp } from '@/types/routing.type'
+import type { LangProp } from '@/types/routing.type'
 import { navStruct } from '../nav-struct'
 
 export function Navigation({ lang }: LangProp) {
   return (
     <NavigationMenu>
       <NavigationMenuList>
-        {navStruct.sections.map(section => {
+        {navStruct.sections.map((section) => {
           if (!section.main) return null
           if (section.href || !section.items)
             return (
@@ -39,10 +39,10 @@ export function Navigation({ lang }: LangProp) {
               <NavigationMenuContent>
                 <ul
                   className={cn(
-                    'grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]'
+                    'grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]',
                   )}
                 >
-                  {section.items.map(item => (
+                  {section.items.map((item) => (
                     <ListItem
                       key={item.label}
                       href={'/' + lang + item.href}
@@ -72,7 +72,7 @@ const ListItem = React.forwardRef<
           ref={ref}
           className={cn(
             'block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground',
-            className
+            className,
           )}
           {...props}
         >

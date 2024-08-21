@@ -2,10 +2,7 @@
   "relatedBlogs": [
     {
       "id": "180563903",
-      "topics": [
-        "DAO",
-        "Resumen"
-      ],
+      "topics": ["DAO", "Resumen"],
       "title": "Para que sirve votar? [Resumen]",
       "slug": "what-is-voting-for-summary",
       "authorName": "Crypto Clairity",
@@ -24,10 +21,7 @@
     },
     {
       "id": "180563908",
-      "topics": [
-        "DAO",
-        "Resumen"
-      ],
+      "topics": ["DAO", "Resumen"],
       "title": "Para que sirve la gobernanza? [Resumen]",
       "slug": "what-is-governance-for-summary",
       "authorName": "Crypto Clairity",
@@ -46,10 +40,7 @@
     },
     {
       "id": "166981063",
-      "topics": [
-        "Empezando",
-        "DAO"
-      ],
+      "topics": ["Empezando", "DAO"],
       "title": "El futuro esta aqui: El auge de las Organizaciones Autonomas Descentralizadas (DAOs)",
       "slug": "the-future-is-here-the-rise-of-decentralized-autonomous-organizations-daos",
       "authorName": "Crypto Clairity",
@@ -69,10 +60,7 @@
   ],
   "blogContent": {
     "id": "166984334",
-    "topics": [
-      "DAO",
-      "Legal"
-    ],
+    "topics": ["DAO", "Legal"],
     "title": "Organizaciones Autonomas Descentralizadas (DAOs): Estructuras Legales Basicas para Fines Empresariales y Sin Animo de Lucro",
     "slug": "decentralized-autonomous-organizations-daos-basic-legal-structures-for-business-a",
     "authorName": "Crypto Clairity",
@@ -140,9 +128,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "General Partnerships"
                     }
                   ]
@@ -193,9 +179,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Non-profit Associations"
                     }
                   ]
@@ -266,8 +250,5 @@
       }
     }
   },
-  "topics": [
-    "DAO",
-    "Legal"
-  ]
+  "topics": ["DAO", "Legal"]
 }

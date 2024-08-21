@@ -1,6 +1,8 @@
 'use client'
 
-import { useSigningRequest } from '@/hooks/use-signing-request'
+import { saveDeposit } from '@/app/actions/save-deposit'
+import { ProjectGridCard } from '@/components/routes/project/project-grid-card'
+import { ProjectInfo } from '@/components/routes/project/project-info'
 import { Button, buttonVariants } from '@/components/ui/button'
 import { CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
@@ -9,27 +11,25 @@ import {
   SelectContent,
   SelectItem,
   SelectTrigger,
-  SelectValue
+  SelectValue,
 } from '@/components/ui/select'
+import { useSession } from '@/hooks/use-session'
+import { useSigningRequest } from '@/hooks/use-signing-request'
+import { appConfig } from '@/lib/config'
 import {
   genBitusdDepositSigningRequest,
-  genUsdtDepositSigningRequest
+  genUsdtDepositSigningRequest,
 } from '@/lib/eos'
-import { useState, useMemo } from 'react'
-import { EVMTokenContractData, TokenContractData } from 'app-contracts'
-import { parseUnits } from 'viem'
-import { useAccount, useSwitchChain, useWriteContract, useChainId } from 'wagmi'
-import { appConfig } from '@/lib/config'
+import type { ProjectWithAuction } from '@/lib/projects'
 import { cn } from '@/lib/utils'
-import { ProjectGridCard } from '@/components/routes/project/project-grid-card'
-import { ProjectInfo } from '@/components/routes/project/project-info'
-import { ProjectWithAuction } from '@/lib/projects'
-import { useSession } from '@/hooks/use-session'
+import { type EVMTokenContractData, TokenContractData } from 'app-contracts'
+import { useMemo, useState } from 'react'
 import toast from 'react-hot-toast'
-import { saveDeposit } from '@/app/actions/save-deposit'
+import { parseUnits } from 'viem'
+import { useAccount, useChainId, useSwitchChain, useWriteContract } from 'wagmi'
 
 export function PresaleDepositCard({
-  project
+  project,
 }: {
   project: ProjectWithAuction
 }) {
@@ -59,8 +59,8 @@ function PresaleDeposit() {
 
   const availableChains = useMemo(() => {
     return appConfig.stables
-      .filter(token => token.symbol === selectedToken)
-      .map(token => token.chainName)
+      .filter((token) => token.symbol === selectedToken)
+      .map((token) => token.chainName)
   }, [selectedToken])
 
   const deposit = async () => {
@@ -69,8 +69,8 @@ function PresaleDeposit() {
     if (!selectedChain) return toast.error('Please select a blockchain network')
 
     const tokenData = appConfig.stables.find(
-      token =>
-        token.symbol === selectedToken && token.chainName === selectedChain
+      (token) =>
+        token.symbol === selectedToken && token.chainName === selectedChain,
     )
     if (!tokenData) return toast.error('Token data not found')
 
@@ -86,18 +86,18 @@ function PresaleDeposit() {
             functionName: 'transfer',
             args: [
               presaleAddress,
-              parseUnits(amount.toString(), evmToken.decimals)
+              parseUnits(amount.toString(), evmToken.decimals),
             ],
-            chainId: evmToken.chainId
+            chainId: evmToken.chainId,
           },
           {
-            onError: error => {
+            onError: (error) => {
               console.error('Deposit error:', error.message)
               toast.error(
-                'Unable to complete deposit. Please try again, contact support if the problem persist.'
+                'Unable to complete deposit. Please try again, contact support if the problem persist.',
               )
             },
-            onSuccess: trxId => {
+            onSuccess: (trxId) => {
               console.log('Transaction ID:', trxId)
               toast.success(`Deposit successful`)
               saveDeposit({
@@ -107,10 +107,10 @@ function PresaleDeposit() {
                 to: presaleAddress,
                 token: evmToken.address,
                 trx_hash: trxId,
-                type: 'deposit'
+                type: 'deposit',
               })
-            }
-          }
+            },
+          },
         )
       }
     } else {
@@ -140,7 +140,7 @@ function PresaleDeposit() {
             name="deposit"
             placeholder="0.00"
             value={amount}
-            onChange={e => setAmount(e.target.value)}
+            onChange={(e) => setAmount(e.target.value)}
           />
 
           <Select onValueChange={setSelectedToken} defaultValue={'USDT'}>
@@ -148,7 +148,7 @@ function PresaleDeposit() {
               <SelectValue placeholder={`USDT`} />
             </SelectTrigger>
             <SelectContent position="popper">
-              {tokens.map(token => (
+              {tokens.map((token) => (
                 <SelectItem key={token} value={token}>
                   {token}
                 </SelectItem>
@@ -162,7 +162,7 @@ function PresaleDeposit() {
             <SelectValue placeholder="Select Chain" />
           </SelectTrigger>
           <SelectContent position="popper">
-            {availableChains.map(chain => (
+            {availableChains.map((chain) => (
               <SelectItem key={chain} value={chain}>
                 {chain}
               </SelectItem>
@@ -176,9 +176,9 @@ function PresaleDeposit() {
           className={cn(
             buttonVariants({
               variant: 'outline',
-              radius: 'full'
+              radius: 'full',
             }),
-            'h-auto w-full whitespace-normal border border-solid border-accent-secondary bg-background px-10 py-2'
+            'h-auto w-full whitespace-normal border border-solid border-accent-secondary bg-background px-10 py-2',
           )}
           onClick={deposit}
         >

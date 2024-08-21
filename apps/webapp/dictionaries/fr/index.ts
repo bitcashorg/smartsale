@@ -1,15 +1,15 @@
-import { security } from './security'
 import { about } from './about'
-import home from './home'
-import { projects } from './projects'
-import { whitepaper } from './whitepaper'
-import { terms } from './terms'
 import auction from './auction'
-import footer from './footer'
 import faq from './faq'
-import { whyChooseUs } from './whyChooseUs'
 import { featuresContent } from './features'
+import footer from './footer'
+import home from './home'
 import nav from './nav'
+import { projects } from './projects'
+import { security } from './security'
+import { terms } from './terms'
+import { whitepaper } from './whitepaper'
+import { whyChooseUs } from './whyChooseUs'
 
 export default {
   home,
@@ -17,11 +17,11 @@ export default {
   whitepaper,
   about,
   security,
-  terms, 
+  terms,
   auction,
   footer,
-  faq, 
+  faq,
   whyChooseUs,
-  featuresContent, 
-  nav
+  featuresContent,
+  nav,
 } as const

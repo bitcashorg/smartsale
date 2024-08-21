@@ -1,5 +1,5 @@
 import { getCMSSdk } from '@/services/datocms/graphql/cms'
-import {
+import type {
   BlogAiModelFilter,
   BlogAiRecord,
   BlogBitcashModelFilter,
@@ -13,7 +13,7 @@ import {
   BlogStartupModelFilter,
   BlogStartupRecord,
   ResearchAiRecord,
-  SeoField
+  SeoField,
 } from '@/services/datocms/graphql/generated/cms'
 
 export async function getBlogCategory(
@@ -25,7 +25,7 @@ export async function getBlogCategory(
     | BlogCryptoModelFilter
     | BlogBitcoinModelFilter
     | BlogStartupModelFilter,
-  first?: number
+  first?: number,
 ) {
   let dataRecord: BlogArticleRecord[] = []
   let error
@@ -69,7 +69,7 @@ export async function getBlogCategory(
           locale: 'en',
           fallbackLocales: ['en'],
           filter,
-          first
+          first,
         },
         id: true,
         topics: true,
@@ -77,16 +77,16 @@ export async function getBlogCategory(
         slug: true,
         authorName: true,
         authorPicture: {
-          url: true
+          url: true,
         },
         _publishedAt: true,
         description: true,
         thumbnail: {
-          url: true
+          url: true,
         },
         contentBlock: {
           mainContent: {
-            value: true
+            value: true,
           },
           topImages: {
             basename: true,
@@ -95,8 +95,8 @@ export async function getBlogCategory(
             filename: true,
             format: true,
             alt: true,
-            url: true
-          }
+            url: true,
+          },
         },
         seo: {
           description: true,
@@ -107,10 +107,10 @@ export async function getBlogCategory(
             height: true,
             title: true,
             alt: true,
-            url: true
-          }
-        }
-      }
+            url: true,
+          },
+        },
+      },
     })
 
     dataRecord = data[
@@ -129,11 +129,11 @@ export async function getBlogCategory(
     error = (err as Error).message
   } finally {
     // replacing category kebab case with camel case
-    const blogCategory = category.replace(/(\-\w)/g, m => m[1].toUpperCase())
+    const blogCategory = category.replace(/(\-\w)/g, (m) => m[1].toUpperCase())
 
     return {
       [`${blogCategory}Data`]: dataRecord,
-      [`${blogCategory}Error`]: error
+      [`${blogCategory}Error`]: error,
     }
   }
 }
@@ -145,7 +145,7 @@ export async function getBlogCategories(): Promise<getBlogCategoriesTypes> {
         __args: {
           orderBy: ['_publishedAt_DESC'],
           locale: 'en',
-          fallbackLocales: ['en']
+          fallbackLocales: ['en'],
         },
         id: true,
         topics: true,
@@ -153,16 +153,16 @@ export async function getBlogCategories(): Promise<getBlogCategoriesTypes> {
         slug: true,
         authorName: true,
         authorPicture: {
-          url: true
+          url: true,
         },
         _publishedAt: true,
         description: true,
         thumbnail: {
-          url: true
+          url: true,
         },
         contentBlock: {
           mainContent: {
-            value: true
+            value: true,
           },
           topImages: {
             basename: true,
@@ -171,8 +171,8 @@ export async function getBlogCategories(): Promise<getBlogCategoriesTypes> {
             filename: true,
             format: true,
             alt: true,
-            url: true
-          }
+            url: true,
+          },
         },
         seo: {
           description: true,
@@ -183,15 +183,15 @@ export async function getBlogCategories(): Promise<getBlogCategoriesTypes> {
             height: true,
             title: true,
             alt: true,
-            url: true
-          }
-        }
+            url: true,
+          },
+        },
       },
       allBlogCryptos: {
         __args: {
           orderBy: ['_publishedAt_DESC'],
           locale: 'en',
-          fallbackLocales: ['en']
+          fallbackLocales: ['en'],
         },
         id: true,
         topics: true,
@@ -199,16 +199,16 @@ export async function getBlogCategories(): Promise<getBlogCategoriesTypes> {
         slug: true,
         authorName: true,
         authorPicture: {
-          url: true
+          url: true,
         },
         _publishedAt: true,
         description: true,
         thumbnail: {
-          url: true
+          url: true,
         },
         contentBlock: {
           mainContent: {
-            value: true
+            value: true,
           },
           topImages: {
             basename: true,
@@ -217,8 +217,8 @@ export async function getBlogCategories(): Promise<getBlogCategoriesTypes> {
             filename: true,
             format: true,
             alt: true,
-            url: true
-          }
+            url: true,
+          },
         },
         seo: {
           description: true,
@@ -229,15 +229,15 @@ export async function getBlogCategories(): Promise<getBlogCategoriesTypes> {
             height: true,
             title: true,
             alt: true,
-            url: true
-          }
-        }
+            url: true,
+          },
+        },
       },
       allBlogInvestings: {
         __args: {
           orderBy: ['_publishedAt_DESC'],
           locale: 'en',
-          fallbackLocales: ['en']
+          fallbackLocales: ['en'],
         },
         id: true,
         topics: true,
@@ -245,16 +245,16 @@ export async function getBlogCategories(): Promise<getBlogCategoriesTypes> {
         slug: true,
         authorName: true,
         authorPicture: {
-          url: true
+          url: true,
         },
         _publishedAt: true,
         description: true,
         thumbnail: {
-          url: true
+          url: true,
         },
         contentBlock: {
           mainContent: {
-            value: true
+            value: true,
           },
           topImages: {
             basename: true,
@@ -262,8 +262,8 @@ export async function getBlogCategories(): Promise<getBlogCategoriesTypes> {
             width: true,
             filename: true,
             format: true,
-            alt: true
-          }
+            alt: true,
+          },
         },
         seo: {
           description: true,
@@ -274,15 +274,15 @@ export async function getBlogCategories(): Promise<getBlogCategoriesTypes> {
             height: true,
             title: true,
             alt: true,
-            url: true
-          }
-        }
+            url: true,
+          },
+        },
       },
       allBlogStartups: {
         __args: {
           orderBy: ['_publishedAt_DESC'],
           locale: 'en',
-          fallbackLocales: ['en']
+          fallbackLocales: ['en'],
         },
         id: true,
         topics: true,
@@ -290,16 +290,16 @@ export async function getBlogCategories(): Promise<getBlogCategoriesTypes> {
         slug: true,
         authorName: true,
         authorPicture: {
-          url: true
+          url: true,
         },
         _publishedAt: true,
         description: true,
         thumbnail: {
-          url: true
+          url: true,
         },
         contentBlock: {
           mainContent: {
-            value: true
+            value: true,
           },
           topImages: {
             basename: true,
@@ -308,8 +308,8 @@ export async function getBlogCategories(): Promise<getBlogCategoriesTypes> {
             filename: true,
             format: true,
             alt: true,
-            url: true
-          }
+            url: true,
+          },
         },
         seo: {
           description: true,
@@ -320,16 +320,16 @@ export async function getBlogCategories(): Promise<getBlogCategoriesTypes> {
             height: true,
             title: true,
             alt: true,
-            url: true
-          }
-        }
+            url: true,
+          },
+        },
       },
 
       allBlogAis: {
         __args: {
           orderBy: ['_publishedAt_DESC'],
           locale: 'en',
-          fallbackLocales: ['en']
+          fallbackLocales: ['en'],
         },
         id: true,
         topics: true,
@@ -337,16 +337,16 @@ export async function getBlogCategories(): Promise<getBlogCategoriesTypes> {
         slug: true,
         authorName: true,
         authorPicture: {
-          url: true
+          url: true,
         },
         _publishedAt: true,
         description: true,
         thumbnail: {
-          url: true
+          url: true,
         },
         contentBlock: {
           mainContent: {
-            value: true
+            value: true,
           },
           topImages: {
             basename: true,
@@ -355,8 +355,8 @@ export async function getBlogCategories(): Promise<getBlogCategoriesTypes> {
             filename: true,
             format: true,
             alt: true,
-            url: true
-          }
+            url: true,
+          },
         },
         seo: {
           description: true,
@@ -367,16 +367,16 @@ export async function getBlogCategories(): Promise<getBlogCategoriesTypes> {
             height: true,
             title: true,
             alt: true,
-            url: true
-          }
-        }
+            url: true,
+          },
+        },
       },
 
       allBlogNews: {
         __args: {
           orderBy: ['_publishedAt_DESC'],
           locale: 'en',
-          fallbackLocales: ['en']
+          fallbackLocales: ['en'],
         },
         id: true,
         topics: true,
@@ -384,16 +384,16 @@ export async function getBlogCategories(): Promise<getBlogCategoriesTypes> {
         slug: true,
         authorName: true,
         authorPicture: {
-          url: true
+          url: true,
         },
         _publishedAt: true,
         description: true,
         thumbnail: {
-          url: true
+          url: true,
         },
         contentBlock: {
           mainContent: {
-            value: true
+            value: true,
           },
           topImages: {
             basename: true,
@@ -402,8 +402,8 @@ export async function getBlogCategories(): Promise<getBlogCategoriesTypes> {
             filename: true,
             format: true,
             alt: true,
-            url: true
-          }
+            url: true,
+          },
         },
         seo: {
           description: true,
@@ -414,16 +414,16 @@ export async function getBlogCategories(): Promise<getBlogCategoriesTypes> {
             height: true,
             title: true,
             alt: true,
-            url: true
-          }
-        }
+            url: true,
+          },
+        },
       },
 
       allBlogBitcashes: {
         __args: {
           orderBy: ['_publishedAt_DESC'],
           locale: 'en',
-          fallbackLocales: ['en']
+          fallbackLocales: ['en'],
         },
         id: true,
         topics: true,
@@ -431,16 +431,16 @@ export async function getBlogCategories(): Promise<getBlogCategoriesTypes> {
         slug: true,
         authorName: true,
         authorPicture: {
-          url: true
+          url: true,
         },
         _publishedAt: true,
         description: true,
         thumbnail: {
-          url: true
+          url: true,
         },
         contentBlock: {
           mainContent: {
-            value: true
+            value: true,
           },
           topImages: {
             basename: true,
@@ -449,8 +449,8 @@ export async function getBlogCategories(): Promise<getBlogCategoriesTypes> {
             filename: true,
             format: true,
             alt: true,
-            url: true
-          }
+            url: true,
+          },
         },
         seo: {
           description: true,
@@ -461,15 +461,15 @@ export async function getBlogCategories(): Promise<getBlogCategoriesTypes> {
             height: true,
             title: true,
             alt: true,
-            url: true
-          }
-        }
+            url: true,
+          },
+        },
       },
       allResearchAis: {
         __args: {
           orderBy: ['_publishedAt_DESC'],
           locale: 'en',
-          fallbackLocales: ['en']
+          fallbackLocales: ['en'],
         },
         id: true,
         topics: true,
@@ -477,16 +477,16 @@ export async function getBlogCategories(): Promise<getBlogCategoriesTypes> {
         slug: true,
         authorName: true,
         authorPicture: {
-          url: true
+          url: true,
         },
         _publishedAt: true,
         description: true,
         thumbnail: {
-          url: true
+          url: true,
         },
         contentBlock: {
           mainContent: {
-            value: true
+            value: true,
           },
           topImages: {
             basename: true,
@@ -494,8 +494,8 @@ export async function getBlogCategories(): Promise<getBlogCategoriesTypes> {
             width: true,
             filename: true,
             format: true,
-            alt: true
-          }
+            alt: true,
+          },
         },
         seo: {
           description: true,
@@ -505,17 +505,17 @@ export async function getBlogCategories(): Promise<getBlogCategoriesTypes> {
             width: true,
             height: true,
             title: true,
-            alt: true
-          }
-        }
-      }
+            alt: true,
+          },
+        },
+      },
     })
 
     return data as unknown as getBlogCategoriesTypes
   } catch (error) {
     console.error(
       'datocms-blog-category.service::getBlogCategories::[ERROR]',
-      error
+      error,
     )
 
     return {
@@ -526,7 +526,7 @@ export async function getBlogCategories(): Promise<getBlogCategoriesTypes> {
       allBlogAis: [defaultBlogArticle],
       allBlogNews: [defaultBlogArticle],
       allBlogBitcashes: [defaultBlogArticle],
-      allResearchAis: [defaultBlogArticle]
+      allResearchAis: [defaultBlogArticle],
     }
   }
 }
@@ -538,12 +538,12 @@ const defaultBlogArticle: BlogArticleRecord = {
   slug: 'the-art-of-researching-and-evaluating-bitcoin-exchanges-a-guide-for-contributors',
   authorName: 'Jun Dam',
   authorPicture: {
-    url: 'https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png'
+    url: 'https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png',
   },
   _publishedAt: '2023-06-15T03:14:17+01:00',
   description: '',
   thumbnail: {
-    url: 'https://www.datocms-assets.com/101962/1686794861-bb5-img1.png'
+    url: 'https://www.datocms-assets.com/101962/1686794861-bb5-img1.png',
   },
   topics: ['bitcoin'],
   contentBlock: [
@@ -557,14 +557,14 @@ const defaultBlogArticle: BlogArticleRecord = {
               {
                 type: '',
                 marks: [],
-                value: ''
-              }
-            ]
-          }
-        }
+                value: '',
+              },
+            ],
+          },
+        },
       },
-      topImages: []
-    }
+      topImages: [],
+    },
   ],
   seo: {
     description:
@@ -574,8 +574,8 @@ const defaultBlogArticle: BlogArticleRecord = {
     twitterCard: '',
     noIndex: false,
     image: null,
-    __typename: 'SeoField'
-  }
+    __typename: 'SeoField',
+  },
 }
 
 export interface MainArticleContentBlock {
@@ -607,13 +607,13 @@ export interface MainArticleContentBlock {
 
 export interface BlogArticleRecord {
   id:
-  | BlogAiRecord['id']
-  | BlogNewsRecord['id']
-  | BlogBitcashRecord['id']
-  | BlogBitcoinRecord['id']
-  | BlogStartupRecord['id']
-  | BlogInvestingRecord['id']
-  | ResearchAiRecord['id']
+    | BlogAiRecord['id']
+    | BlogNewsRecord['id']
+    | BlogBitcashRecord['id']
+    | BlogBitcoinRecord['id']
+    | BlogStartupRecord['id']
+    | BlogInvestingRecord['id']
+    | ResearchAiRecord['id']
   topics: string[]
   title: string
   slug: string

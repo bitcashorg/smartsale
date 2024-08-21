@@ -1,6 +1,6 @@
 import { AuctionCard } from '@/components/routes/home/auction-card'
 import { Section } from '@/components/shared/section'
-import { Project } from '@/lib/projects'
+import type { Project } from '@/lib/projects'
 
 export function Upcoming({ dict, projects }: UpcomingProps) {
   return (

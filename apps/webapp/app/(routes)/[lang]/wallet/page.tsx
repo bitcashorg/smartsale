@@ -1,13 +1,13 @@
 import { DepositCard } from '@/components/routes/wallet/deposit-card'
 import { WithdrawCard } from '@/components/routes/wallet/withdraw-card'
-import { Metadata } from 'next'
+import type { Metadata } from 'next'
 
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
-  CardTitle
+  CardTitle,
 } from '@/components/ui/card'
 
 import ReferralDashboard from '@/components/_wip/referral-dashboard'
@@ -31,7 +31,6 @@ export default function WalletPage() {
 
       <PresaleTransactionsCard />
 
-
       {/* <main className="grid items-start flex-1 gap-4 md:gap-8 lg:grid-cols-3 xl:grid-cols-3">
         <div className="grid items-start gap-4 auto-rows-max md:gap-8 lg:col-span-2">
           <WalletTabs />
@@ -46,7 +45,7 @@ export default function WalletPage() {
 export const metadata: Metadata = {
   title: 'Wallet | Bitlauncher',
   description:
-    'Be part of the intelligent future and join the Ai/Web3 revolution now!'
+    'Be part of the intelligent future and join the Ai/Web3 revolution now!',
 }
 
 function BalancesCard() {

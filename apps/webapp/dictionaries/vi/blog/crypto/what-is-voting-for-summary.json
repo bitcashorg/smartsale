@@ -2,11 +2,7 @@
   "relatedBlogs": [
     {
       "id": "167184977",
-      "topics": [
-        "Tokenomics",
-        "DAO",
-        "Gây quỹ"
-      ],
+      "topics": ["Tokenomics", "DAO", "Gây quỹ"],
       "title": "Cách mạng hóa Mô hình Cổ phần: Tokenomics làm thay đổi thế giới khởi nghiệp",
       "slug": "revolutionizing-the-equity-model-how-tokenomics-is-disrupting-the-startup-world",
       "authorName": "Crypto Clairity",
@@ -25,10 +21,7 @@
     },
     {
       "id": "166981063",
-      "topics": [
-        "Bắt đầu",
-        "DAO"
-      ],
+      "topics": ["Bắt đầu", "DAO"],
       "title": "Tương lai đã đến: Sự trỗi dậy của các Tổ chức Tự trị Phi tập trung (DAOs)",
       "slug": "the-future-is-here-the-rise-of-decentralized-autonomous-organizations-daos",
       "authorName": "Crypto Clairity",
@@ -48,10 +41,7 @@
   ],
   "blogContent": {
     "id": "180563903",
-    "topics": [
-      "DAO",
-      "Tóm tắt"
-    ],
+    "topics": ["DAO", "Tóm tắt"],
     "title": "Mục đích của việc bỏ phiếu là gì? [Tóm tắt]",
     "slug": "what-is-voting-for-summary",
     "authorName": "Crypto Clairity",
@@ -314,8 +304,5 @@
       }
     }
   },
-  "topics": [
-    "DAO",
-    "Summary"
-  ]
+  "topics": ["DAO", "Summary"]
 }

@@ -1,4 +1,4 @@
-import { Lang } from '@/dictionaries/locales'
+import type { Lang } from '@/dictionaries/locales'
 
 export interface LangProp {
   lang: Lang
@@ -11,7 +11,7 @@ export interface CommonPageProps {
 }
 
 export interface ProjectPageParams extends CommonPageParams {
-  project: string;
+  project: string
 }
 
 export interface ProjectPageProps {

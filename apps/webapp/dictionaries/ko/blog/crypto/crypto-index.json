@@ -6,11 +6,7 @@
       "articles": [
         {
           "id": "180563939",
-          "topics": [
-            "DAO",
-            "토큰노믹스",
-            "논평"
-          ],
+          "topics": ["DAO", "토큰노믹스", "논평"],
           "title": "블록체인 거버넌스 설계를 위한 프레임워크: 프리즘 그룹 휠 [논평]",
           "slug": "a-framework-for-blockchain-governance-design-the-prysm-group-wheel-commentary",
           "authorName": "Crypto Clairity",
@@ -38,10 +34,7 @@
         },
         {
           "id": "180563903",
-          "topics": [
-            "DAO",
-            "요약"
-          ],
+          "topics": ["DAO", "요약"],
           "title": "투표의 목적은 무엇인가? [요약]",
           "slug": "what-is-voting-for-summary",
           "authorName": "Crypto Clairity",
@@ -69,10 +62,7 @@
         },
         {
           "id": "180563908",
-          "topics": [
-            "DAO",
-            "요약"
-          ],
+          "topics": ["DAO", "요약"],
           "title": "거버넌스의 목적은 무엇인가? [요약]",
           "slug": "what-is-governance-for-summary",
           "authorName": "Crypto Clairity",
@@ -100,11 +90,7 @@
         },
         {
           "id": "167184977",
-          "topics": [
-            "토크노믹스",
-            "DAO",
-            "자금 조달"
-          ],
+          "topics": ["토크노믹스", "DAO", "자금 조달"],
           "title": "지분 모델의 혁명: 토크노믹스가 스타트업 세계를 어떻게 변화시키고 있는가",
           "slug": "revolutionizing-the-equity-model-how-tokenomics-is-disrupting-the-startup-world",
           "authorName": "Crypto Clairity",
@@ -132,10 +118,7 @@
         },
         {
           "id": "166984334",
-          "topics": [
-            "DAO",
-            "법률"
-          ],
+          "topics": ["DAO", "법률"],
           "title": "분산 자율 조직(DAO): 영리 및 비영리 목적을 위한 기본 법적 구조",
           "slug": "decentralized-autonomous-organizations-daos-basic-legal-structures-for-business-a",
           "authorName": "Crypto Clairity",
@@ -163,10 +146,7 @@
         },
         {
           "id": "166981063",
-          "topics": [
-            "시작하기",
-            "DAO"
-          ],
+          "topics": ["시작하기", "DAO"],
           "title": "미래가 여기에 있다: 탈중앙화 자율 조직(DAO)의 부상",
           "slug": "the-future-is-here-the-rise-of-decentralized-autonomous-organizations-daos",
           "authorName": "Crypto Clairity",
@@ -194,11 +174,7 @@
       "articles": [
         {
           "id": "180563939",
-          "topics": [
-            "DAO",
-            "토큰노믹스",
-            "논평"
-          ],
+          "topics": ["DAO", "토큰노믹스", "논평"],
           "title": "블록체인 거버넌스 설계를 위한 프레임워크: 프리즘 그룹 휠 [논평]",
           "slug": "a-framework-for-blockchain-governance-design-the-prysm-group-wheel-commentary",
           "authorName": "Crypto Clairity",
@@ -226,10 +202,7 @@
         },
         {
           "id": "180217169",
-          "topics": [
-            "토큰노믹스",
-            "논평"
-          ],
+          "topics": ["토큰노믹스", "논평"],
           "title": "토큰화된 인센티브의 경제학 3: 토큰 가치는 이해관계자들을 일치시키지 못할 것이다 [논평]",
           "slug": "economics-of-tokenized-incentives-3-token-value-won-t-align-stakeholders-commenta",
           "authorName": "Crypto Clairity",
@@ -257,10 +230,7 @@
         },
         {
           "id": "180217123",
-          "topics": [
-            "토크노믹스",
-            "논평"
-          ],
+          "topics": ["토크노믹스", "논평"],
           "title": "토큰화된 인센티브의 경제학 2: 효과적인 성과 지표 선택 [논평]",
           "slug": "economics-of-tokenized-incentives-2-selecting-effective-performance-metrics-comme",
           "authorName": "Crypto Clairity",
@@ -288,10 +258,7 @@
         },
         {
           "id": "180217082",
-          "topics": [
-            "토크노믹스",
-            "논평"
-          ],
+          "topics": ["토크노믹스", "논평"],
           "title": "토큰화된 인센티브의 경제학 1: 성과급 소개 [논평]",
           "slug": "economics-of-tokenized-incentives-1-intro-to-pay-for-performance",
           "authorName": "Crypto Clairity",
@@ -319,11 +286,7 @@
         },
         {
           "id": "180563918",
-          "topics": [
-            "토큰노믹스",
-            "논평",
-            "자금 조달"
-          ],
+          "topics": ["토큰노믹스", "논평", "자금 조달"],
           "title": "토큰: 투자 수단 또는 교환 수단 (둘 다는 아님) [논평]",
           "slug": "tokens-investment-vehicle-or-medium-of-exchange-not-both-commentary",
           "authorName": "Crypto Clairity",
@@ -351,11 +314,7 @@
         },
         {
           "id": "180563922",
-          "topics": [
-            "기금 모금",
-            "토큰노믹스",
-            "논평"
-          ],
+          "topics": ["기금 모금", "토큰노믹스", "논평"],
           "title": "ICO, 네트워크 효과 활용 [논평]",
           "slug": "icos-leverage-network-effects-commentary",
           "authorName": "Crypto Clairity",
@@ -383,11 +342,7 @@
         },
         {
           "id": "179948652",
-          "topics": [
-            "토큰노믹스",
-            "산업",
-            "요약"
-          ],
+          "topics": ["토큰노믹스", "산업", "요약"],
           "title": "디지털 혁신과 수익 모델 [요약]",
           "slug": "digital-innovation-and-revenue-models-summary",
           "authorName": "Crypto Clairity",
@@ -415,11 +370,7 @@
         },
         {
           "id": "180556595",
-          "topics": [
-            "기금 모금",
-            "토큰노믹스",
-            "논평"
-          ],
+          "topics": ["기금 모금", "토큰노믹스", "논평"],
           "title": "블록체인 효과: 시장 지배력 비용 없는 네트워크 효과 [논평]",
           "slug": "the-blockchain-effect-network-effects-without-market-power-costs-commentary",
           "authorName": "Crypto Clairity",
@@ -447,10 +398,7 @@
         },
         {
           "id": "180563931",
-          "topics": [
-            "토큰노믹스",
-            "논평"
-          ],
+          "topics": ["토큰노믹스", "논평"],
           "title": "블록체인 인센티브 구조: 그것이 무엇이며 왜 중요한가 [논평]",
           "slug": "blockchain-incentive-structures-what-they-are-and-why-they-matter-commentary",
           "authorName": "Crypto Clairity",
@@ -478,11 +426,7 @@
         },
         {
           "id": "167184977",
-          "topics": [
-            "토큰노믹스",
-            "DAO",
-            "자금 조달"
-          ],
+          "topics": ["토큰노믹스", "DAO", "자금 조달"],
           "title": "지분 모델의 혁명: 토큰노믹스가 스타트업 세계를 어떻게 변화시키고 있는가",
           "slug": "revolutionizing-the-equity-model-how-tokenomics-is-disrupting-the-startup-world",
           "authorName": "Crypto Clairity",
@@ -510,10 +454,7 @@
         },
         {
           "id": "167101094",
-          "topics": [
-            "시작하기",
-            "토큰노믹스"
-          ],
+          "topics": ["시작하기", "토큰노믹스"],
           "title": "토큰노믹스 101: 암호화폐의 힘을 풀어내다!",
           "slug": "tokenomics-101-unleashing-the-power-of-cryptocurrency",
           "authorName": "Crypto Clairity",
@@ -547,11 +488,7 @@
       "articles": [
         {
           "id": "180563939",
-          "topics": [
-            "DAO",
-            "토큰노믹스",
-            "논평"
-          ],
+          "topics": ["DAO", "토큰노믹스", "논평"],
           "title": "블록체인 거버넌스 설계를 위한 프레임워크: 프리즘 그룹 휠 [논평]",
           "slug": "a-framework-for-blockchain-governance-design-the-prysm-group-wheel-commentary",
           "authorName": "Crypto Clairity",
@@ -579,10 +516,7 @@
         },
         {
           "id": "180217169",
-          "topics": [
-            "토크노믹스",
-            "논평"
-          ],
+          "topics": ["토크노믹스", "논평"],
           "title": "토큰화된 인센티브의 경제학 3: 토큰 가치는 이해관계자들을 일치시키지 못할 것 [논평]",
           "slug": "economics-of-tokenized-incentives-3-token-value-won-t-align-stakeholders-commenta",
           "authorName": "Crypto Clairity",
@@ -610,10 +544,7 @@
         },
         {
           "id": "180217123",
-          "topics": [
-            "토크노믹스",
-            "논평"
-          ],
+          "topics": ["토크노믹스", "논평"],
           "title": "토큰화된 인센티브의 경제학 2: 효과적인 성과 지표 선택 [논평]",
           "slug": "economics-of-tokenized-incentives-2-selecting-effective-performance-metrics-comme",
           "authorName": "Crypto Clairity",
@@ -641,10 +572,7 @@
         },
         {
           "id": "180217082",
-          "topics": [
-            "토크노믹스",
-            "논평"
-          ],
+          "topics": ["토크노믹스", "논평"],
           "title": "토큰화된 인센티브의 경제학 1: 성과급 소개 [논평]",
           "slug": "economics-of-tokenized-incentives-1-intro-to-pay-for-performance",
           "authorName": "Crypto Clairity",
@@ -672,10 +600,7 @@
         },
         {
           "id": "180556627",
-          "topics": [
-            "논평",
-            "스마트 계약"
-          ],
+          "topics": ["논평", "스마트 계약"],
           "title": "불완전 계약과 블록체인 [논평]",
           "slug": "incomplete-contracts-and-blockchain-commentary",
           "authorName": "Crypto Clairity",
@@ -703,11 +628,7 @@
         },
         {
           "id": "180563918",
-          "topics": [
-            "토큰노믹스",
-            "논평",
-            "자금 조달"
-          ],
+          "topics": ["토큰노믹스", "논평", "자금 조달"],
           "title": "토큰: 투자 수단 또는 교환 수단 (둘 다는 아님) [논평]",
           "slug": "tokens-investment-vehicle-or-medium-of-exchange-not-both-commentary",
           "authorName": "Crypto Clairity",
@@ -735,11 +656,7 @@
         },
         {
           "id": "180563922",
-          "topics": [
-            "기금 모금",
-            "토큰노믹스",
-            "논평"
-          ],
+          "topics": ["기금 모금", "토큰노믹스", "논평"],
           "title": "ICO, 네트워크 효과 활용 [논평]",
           "slug": "icos-leverage-network-effects-commentary",
           "authorName": "Crypto Clairity",
@@ -767,11 +684,7 @@
         },
         {
           "id": "180556595",
-          "topics": [
-            "기금 모금",
-            "토큰노믹스",
-            "논평"
-          ],
+          "topics": ["기금 모금", "토큰노믹스", "논평"],
           "title": "블록체인 효과: 시장 지배력 비용 없는 네트워크 효과 [논평]",
           "slug": "the-blockchain-effect-network-effects-without-market-power-costs-commentary",
           "authorName": "Crypto Clairity",
@@ -799,10 +712,7 @@
         },
         {
           "id": "180563931",
-          "topics": [
-            "토큰노믹스",
-            "논평"
-          ],
+          "topics": ["토큰노믹스", "논평"],
           "title": "블록체인 인센티브 구조: 그것이 무엇이며 왜 중요한가 [논평]",
           "slug": "blockchain-incentive-structures-what-they-are-and-why-they-matter-commentary",
           "authorName": "Crypto Clairity",
@@ -836,10 +746,7 @@
       "articles": [
         {
           "id": "180556627",
-          "topics": [
-            "논평",
-            "스마트 계약"
-          ],
+          "topics": ["논평", "스마트 계약"],
           "title": "불완전 계약과 블록체인 [논평]",
           "slug": "incomplete-contracts-and-blockchain-commentary",
           "authorName": "Crypto Clairity",
@@ -867,10 +774,7 @@
         },
         {
           "id": "165614005",
-          "topics": [
-            "시작하기",
-            "스마트 계약"
-          ],
+          "topics": ["시작하기", "스마트 계약"],
           "title": "스마트 계약의 힘: 비즈니스와 금융의 미래를 여는 열쇠",
           "slug": "the-power-of-smart-contracts-the-key-to-unlocking-the-future-of-business-and-fina",
           "authorName": "Crypto Clairity",
@@ -904,11 +808,7 @@
       "articles": [
         {
           "id": "180563918",
-          "topics": [
-            "토큰노믹스",
-            "논평",
-            "자금 조달"
-          ],
+          "topics": ["토큰노믹스", "논평", "자금 조달"],
           "title": "토큰: 투자 수단 또는 교환 수단 (둘 다는 아님) [논평]",
           "slug": "tokens-investment-vehicle-or-medium-of-exchange-not-both-commentary",
           "authorName": "Crypto Clairity",
@@ -936,11 +836,7 @@
         },
         {
           "id": "180563922",
-          "topics": [
-            "기금 모금",
-            "토큰노믹스",
-            "논평"
-          ],
+          "topics": ["기금 모금", "토큰노믹스", "논평"],
           "title": "ICO, 네트워크 효과 활용 [논평]",
           "slug": "icos-leverage-network-effects-commentary",
           "authorName": "Crypto Clairity",
@@ -968,11 +864,7 @@
         },
         {
           "id": "180556595",
-          "topics": [
-            "기금 모금",
-            "토큰노믹스",
-            "논평"
-          ],
+          "topics": ["기금 모금", "토큰노믹스", "논평"],
           "title": "블록체인 효과: 시장 지배력 비용 없는 네트워크 효과 [논평]",
           "slug": "the-blockchain-effect-network-effects-without-market-power-costs-commentary",
           "authorName": "Crypto Clairity",
@@ -1000,11 +892,7 @@
         },
         {
           "id": "167184977",
-          "topics": [
-            "토크노믹스",
-            "DAO",
-            "자금 조달"
-          ],
+          "topics": ["토크노믹스", "DAO", "자금 조달"],
           "title": "지분 모델의 혁명: 토크노믹스가 스타트업 세계를 어떻게 변화시키고 있는가",
           "slug": "revolutionizing-the-equity-model-how-tokenomics-is-disrupting-the-startup-world",
           "authorName": "Crypto Clairity",
@@ -1032,10 +920,7 @@
         },
         {
           "id": "165685908",
-          "topics": [
-            "시작하기",
-            "모금 활동"
-          ],
+          "topics": ["시작하기", "모금 활동"],
           "title": "현상 타파: 암호화폐가 모금과 크라우드펀딩을 혁신하는 방법",
           "slug": "disrupt-the-status-quo-how-cryptocurrency-is-revolutionizing-fundraising-and-crow",
           "authorName": "Crypto Clairity",
@@ -1063,10 +948,7 @@
         },
         {
           "id": "165614216",
-          "topics": [
-            "시작하기",
-            "자금 모금"
-          ],
+          "topics": ["시작하기", "자금 모금"],
           "title": "초기 코인 공개(ICO)의 와일드 웨스트 탐험: 기술의 미래에 투자하는 초보자 가이드",
           "slug": "navigating-the-wild-west-of-initial-coin-offerings-a-beginner-s-guide-to-investin",
           "authorName": "Crypto Clairity",
@@ -1100,11 +982,7 @@
       "articles": [
         {
           "id": "179948652",
-          "topics": [
-            "토큰노믹스",
-            "산업",
-            "요약"
-          ],
+          "topics": ["토큰노믹스", "산업", "요약"],
           "title": "디지털 혁신과 수익 모델 [요약]",
           "slug": "digital-innovation-and-revenue-models-summary",
           "authorName": "Crypto Clairity",
@@ -1132,10 +1010,7 @@
         },
         {
           "id": "165634580",
-          "topics": [
-            "시작하기",
-            "산업"
-          ],
+          "topics": ["시작하기", "산업"],
           "title": "미래는 지금이다: 암호화폐가 글로벌 금융에 미치는 영향 개요",
           "slug": "the-future-is-now-an-overview-of-cryptocurrency-s-impact-on-global-finance",
           "authorName": "Crypto Clairity",
@@ -1163,10 +1038,7 @@
         },
         {
           "id": "165611389",
-          "topics": [
-            "시작하기",
-            "산업"
-          ],
+          "topics": ["시작하기", "산업"],
           "title": "잠재력 발휘: 암호화폐가 산업을 어떻게 변화시키고 있는가",
           "slug": "unleashing-the-potential-how-cryptocurrency-is-transforming-industries",
           "authorName": "Crypto Clairity",
@@ -1200,11 +1072,7 @@
       "articles": [
         {
           "id": "179948652",
-          "topics": [
-            "토큰노믹스",
-            "산업",
-            "요약"
-          ],
+          "topics": ["토큰노믹스", "산업", "요약"],
           "title": "디지털 혁신과 수익 모델 [요약]",
           "slug": "digital-innovation-and-revenue-models-summary",
           "authorName": "Crypto Clairity",
@@ -1232,10 +1100,7 @@
         },
         {
           "id": "180563903",
-          "topics": [
-            "DAO",
-            "요약"
-          ],
+          "topics": ["DAO", "요약"],
           "title": "투표의 목적은 무엇인가? [요약]",
           "slug": "what-is-voting-for-summary",
           "authorName": "Crypto Clairity",
@@ -1263,10 +1128,7 @@
         },
         {
           "id": "180563908",
-          "topics": [
-            "DAO",
-            "요약"
-          ],
+          "topics": ["DAO", "요약"],
           "title": "거버넌스의 목적은 무엇인가? [요약]",
           "slug": "what-is-governance-for-summary",
           "authorName": "Crypto Clairity",
@@ -1300,10 +1162,7 @@
       "articles": [
         {
           "id": "166984334",
-          "topics": [
-            "DAO",
-            "법률"
-          ],
+          "topics": ["DAO", "법률"],
           "title": "분산 자율 조직(DAO): 영리 및 비영리 목적을 위한 기본 법적 구조",
           "slug": "decentralized-autonomous-organizations-daos-basic-legal-structures-for-business-a",
           "authorName": "Crypto Clairity",
@@ -1331,10 +1190,7 @@
         },
         {
           "id": "165611088",
-          "topics": [
-            "시작하기",
-            "법률"
-          ],
+          "topics": ["시작하기", "법률"],
           "title": "암호화폐의 법적 지뢰밭 탐색: 규제 환경 이해하기",
           "slug": "navigating-the-legal-minefield-understanding-the-regulatory-landscape-of-cryptocu",
           "authorName": "Crypto Clairity",
@@ -1368,10 +1224,7 @@
       "articles": [
         {
           "id": "167101094",
-          "topics": [
-            "시작하기",
-            "토큰노믹스"
-          ],
+          "topics": ["시작하기", "토큰노믹스"],
           "title": "토큰노믹스 101: 암호화폐의 힘을 풀어내다!",
           "slug": "tokenomics-101-unleashing-the-power-of-cryptocurrency",
           "authorName": "Crypto Clairity",
@@ -1399,10 +1252,7 @@
         },
         {
           "id": "166981063",
-          "topics": [
-            "시작하기",
-            "DAO"
-          ],
+          "topics": ["시작하기", "DAO"],
           "title": "미래가 여기에 있다: 탈중앙화 자율 조직(DAO)의 부상",
           "slug": "the-future-is-here-the-rise-of-decentralized-autonomous-organizations-daos",
           "authorName": "Crypto Clairity",
@@ -1424,10 +1274,7 @@
         },
         {
           "id": "165744328",
-          "topics": [
-            "시작하기",
-            "방법 안내"
-          ],
+          "topics": ["시작하기", "방법 안내"],
           "title": "게임을 앞서가기: 암호화폐 세계에서 정보를 얻고 교육받는 가이드",
           "slug": "stay-ahead-of-the-game-a-guide-to-staying-informed-and-educated-in-the-world-of-c",
           "authorName": "Crypto Clairity",
@@ -1455,10 +1302,7 @@
         },
         {
           "id": "165742753",
-          "topics": [
-            "시작하기",
-            "결제"
-          ],
+          "topics": ["시작하기", "결제"],
           "title": "스테이블코인: 암호화폐 거래와 결제의 미래",
           "slug": "stablecoins-the-future-of-cryptocurrency-transactions-and-payments",
           "authorName": "Crypto Clairity",
@@ -1486,10 +1330,7 @@
         },
         {
           "id": "165685913",
-          "topics": [
-            "디파이",
-            "시작하기"
-          ],
+          "topics": ["디파이", "시작하기"],
           "title": "당신의 금융을 탈중앙화하세요: 디파이 세계에 대한 소개",
           "slug": "decentralize-your-finance-an-introduction-to-the-world-of-defi",
           "authorName": "Crypto Clairity",
@@ -1517,10 +1358,7 @@
         },
         {
           "id": "165685908",
-          "topics": [
-            "시작하기",
-            "모금 활동"
-          ],
+          "topics": ["시작하기", "모금 활동"],
           "title": "현상 타파: 암호화폐가 모금과 크라우드펀딩을 혁신하는 방법",
           "slug": "disrupt-the-status-quo-how-cryptocurrency-is-revolutionizing-fundraising-and-crow",
           "authorName": "Crypto Clairity",
@@ -1548,10 +1386,7 @@
         },
         {
           "id": "165673014",
-          "topics": [
-            "시작하기",
-            "투자"
-          ],
+          "topics": ["시작하기", "투자"],
           "title": "암호화폐 투자 101: 투자와 자산 관리를 위한 암호화폐 활용법",
           "slug": "crypto-investing-101-how-to-use-cryptocurrency-for-investment-and-asset-managemen",
           "authorName": "Crypto Clairity",
@@ -1579,10 +1414,7 @@
         },
         {
           "id": "165634580",
-          "topics": [
-            "시작하기",
-            "산업"
-          ],
+          "topics": ["시작하기", "산업"],
           "title": "미래는 지금이다: 암호화폐가 글로벌 금융에 미치는 영향 개요",
           "slug": "the-future-is-now-an-overview-of-cryptocurrency-s-impact-on-global-finance",
           "authorName": "Crypto Clairity",
@@ -1610,10 +1442,7 @@
         },
         {
           "id": "165634456",
-          "topics": [
-            "시작하기",
-            "채굴"
-          ],
+          "topics": ["시작하기", "채굴"],
           "title": "암호화폐 채굴의 힘 풀어내기: 작업증명 알고리즘 개요",
           "slug": "unleashing-the-power-of-cryptocurrency-mining-an-overview-of-proof-of-work-algori",
           "authorName": "Crypto Clairity",
@@ -1641,10 +1470,7 @@
         },
         {
           "id": "165625675",
-          "topics": [
-            "시작하기",
-            "결제"
-          ],
+          "topics": ["시작하기", "결제"],
           "title": "국제 송금의 미래: 암호화폐가 게임을 어떻게 바꾸고 있는가",
           "slug": "the-future-of-international-transfers-how-cryptocurrency-is-changing-the-game",
           "authorName": "Crypto Clairity",
@@ -1672,10 +1498,7 @@
         },
         {
           "id": "165625350",
-          "topics": [
-            "시작하기",
-            "결제"
-          ],
+          "topics": ["시작하기", "결제"],
           "title": "암호화폐로 온라인 구매하기 위한 궁극의 가이드: 일상적인 거래에 디지털 화폐를 사용하는 방법의 모든 것 이해하기",
           "slug": "the-ultimate-guide-to-making-online-purchases-with-cryptocurrency-understanding-t",
           "authorName": "Crypto Clairity",
@@ -1703,10 +1526,7 @@
         },
         {
           "id": "165614216",
-          "topics": [
-            "시작하기",
-            "자금 모금"
-          ],
+          "topics": ["시작하기", "자금 모금"],
           "title": "초기 코인 공개(ICO)의 와일드 웨스트 탐험: 기술의 미래에 투자하는 초보자 가이드",
           "slug": "navigating-the-wild-west-of-initial-coin-offerings-a-beginner-s-guide-to-investin",
           "authorName": "Crypto Clairity",
@@ -1734,10 +1554,7 @@
         },
         {
           "id": "165614005",
-          "topics": [
-            "시작하기",
-            "스마트 계약"
-          ],
+          "topics": ["시작하기", "스마트 계약"],
           "title": "스마트 계약의 힘: 비즈니스와 금융의 미래를 여는 열쇠",
           "slug": "the-power-of-smart-contracts-the-key-to-unlocking-the-future-of-business-and-fina",
           "authorName": "Crypto Clairity",
@@ -1765,10 +1582,7 @@
         },
         {
           "id": "165611516",
-          "topics": [
-            "시작하기",
-            "보안"
-          ],
+          "topics": ["시작하기", "보안"],
           "title": "암호화폐 저장의 비밀 풀기: 디지털 자산을 안전하게 보관하는 방법",
           "slug": "unlocking-the-secrets-of-crypto-storage-how-to-keep-your-digital-assets-safe-and",
           "authorName": "Crypto Clairity",
@@ -1796,10 +1610,7 @@
         },
         {
           "id": "165611389",
-          "topics": [
-            "시작하기",
-            "산업"
-          ],
+          "topics": ["시작하기", "산업"],
           "title": "잠재력 발휘: 암호화폐가 산업을 어떻게 변화시키고 있는가",
           "slug": "unleashing-the-potential-how-cryptocurrency-is-transforming-industries",
           "authorName": "Crypto Clairity",
@@ -1827,10 +1638,7 @@
         },
         {
           "id": "165611088",
-          "topics": [
-            "시작하기",
-            "법률"
-          ],
+          "topics": ["시작하기", "법률"],
           "title": "암호화폐의 법적 지뢰밭 탐색: 규제 환경 이해하기",
           "slug": "navigating-the-legal-minefield-understanding-the-regulatory-landscape-of-cryptocu",
           "authorName": "Crypto Clairity",
@@ -1858,11 +1666,7 @@
         },
         {
           "id": "165610881",
-          "topics": [
-            "시작하기",
-            "방법",
-            "연구"
-          ],
+          "topics": ["시작하기", "방법", "연구"],
           "title": "암호화폐 시장 탐색: 디지털 자산 조사 및 평가를 위한 초보자 가이드",
           "slug": "navigating-the-cryptocurrency-market-a-beginner-s-guide-to-researching-and-evalua",
           "authorName": "Crypto Clairity",
@@ -1890,9 +1694,7 @@
         },
         {
           "id": "165365494",
-          "topics": [
-            "시작하기"
-          ],
+          "topics": ["시작하기"],
           "title": "디지털 세계에서 신뢰 구축: 암호화폐에서 블록체인 기술의 역할",
           "slug": "building-trust-in-the-digital-world-the-role-of-blockchain-technology-in-cryptocu",
           "authorName": "Crypto Clairity",
@@ -1920,9 +1722,7 @@
         },
         {
           "id": "165399154",
-          "topics": [
-            "시작하기"
-          ],
+          "topics": ["시작하기"],
           "title": "암호화폐의 다양한 면모 탐구: 여러 유형과 그 용도에 대한 안내서",
           "slug": "exploring-the-many-faces-of-cryptocurrency-a-guide-to-the-different-types-and-the",
           "authorName": "Crypto Clairity",
@@ -1950,10 +1750,7 @@
         },
         {
           "id": "165367458",
-          "topics": [
-            "시작하기",
-            "보안"
-          ],
+          "topics": ["시작하기", "보안"],
           "title": "암호화폐 보안 101: 암호화폐를 안전하게 저장하고 보호하는 방법",
           "slug": "crypto-security-101-how-to-safely-store-and-secure-your-cryptocurrencies",
           "authorName": "Crypto Clairity",
@@ -1981,10 +1778,7 @@
         },
         {
           "id": "165365581",
-          "topics": [
-            "시작하기",
-            "역사"
-          ],
+          "topics": ["시작하기", "역사"],
           "title": "암호화폐의 진화: 비트코인에서 디파이 그리고 그 이후까지",
           "slug": "the-evolution-of-cryptocurrency-from-bitcoin-to-defi-and-beyond",
           "authorName": "Crypto Clairity",
@@ -2018,10 +1812,7 @@
       "articles": [
         {
           "id": "165744328",
-          "topics": [
-            "시작하기",
-            "방법 안내"
-          ],
+          "topics": ["시작하기", "방법 안내"],
           "title": "게임을 앞서가기: 암호화폐 세계에서 정보를 얻고 교육받는 가이드",
           "slug": "stay-ahead-of-the-game-a-guide-to-staying-informed-and-educated-in-the-world-of-c",
           "authorName": "Crypto Clairity",
@@ -2049,11 +1840,7 @@
         },
         {
           "id": "165610881",
-          "topics": [
-            "시작하기",
-            "방법",
-            "연구"
-          ],
+          "topics": ["시작하기", "방법", "연구"],
           "title": "암호화폐 시장 탐색: 디지털 자산 조사 및 평가를 위한 초보자 가이드",
           "slug": "navigating-the-cryptocurrency-market-a-beginner-s-guide-to-researching-and-evalua",
           "authorName": "Crypto Clairity",
@@ -2081,10 +1868,7 @@
         },
         {
           "id": "165399242",
-          "topics": [
-            "방법",
-            "거래소"
-          ],
+          "topics": ["방법", "거래소"],
           "title": "초보자를 위한 암호화폐 구매 및 판매 가이드: 단계별 안내",
           "slug": "the-beginner-s-guide-to-buying-and-selling-cryptocurrencies-a-step-by-step-walkth",
           "authorName": "Crypto Clairity",
@@ -2118,10 +1902,7 @@
       "articles": [
         {
           "id": "165742753",
-          "topics": [
-            "시작하기",
-            "결제"
-          ],
+          "topics": ["시작하기", "결제"],
           "title": "스테이블코인: 암호화폐 거래와 결제의 미래",
           "slug": "stablecoins-the-future-of-cryptocurrency-transactions-and-payments",
           "authorName": "Crypto Clairity",
@@ -2149,10 +1930,7 @@
         },
         {
           "id": "165625675",
-          "topics": [
-            "시작하기",
-            "결제"
-          ],
+          "topics": ["시작하기", "결제"],
           "title": "국제 송금의 미래: 암호화폐가 게임을 어떻게 바꾸고 있는가",
           "slug": "the-future-of-international-transfers-how-cryptocurrency-is-changing-the-game",
           "authorName": "Crypto Clairity",
@@ -2180,10 +1958,7 @@
         },
         {
           "id": "165625350",
-          "topics": [
-            "시작하기",
-            "결제"
-          ],
+          "topics": ["시작하기", "결제"],
           "title": "암호화폐로 온라인 구매하기 위한 궁극의 가이드: 일상적인 거래에 디지털 화폐를 사용하는 방법의 모든 것 이해하기",
           "slug": "the-ultimate-guide-to-making-online-purchases-with-cryptocurrency-understanding-t",
           "authorName": "Crypto Clairity",
@@ -2217,10 +1992,7 @@
       "articles": [
         {
           "id": "165685913",
-          "topics": [
-            "디파이",
-            "시작하기"
-          ],
+          "topics": ["디파이", "시작하기"],
           "title": "당신의 금융을 탈중앙화하세요: 디파이 세계에 대한 소개",
           "slug": "decentralize-your-finance-an-introduction-to-the-world-of-defi",
           "authorName": "Crypto Clairity",
@@ -2254,10 +2026,7 @@
       "articles": [
         {
           "id": "165673014",
-          "topics": [
-            "시작하기",
-            "투자"
-          ],
+          "topics": ["시작하기", "투자"],
           "title": "암호화폐 투자 101: 투자와 자산 관리를 위한 암호화폐 활용법",
           "slug": "crypto-investing-101-how-to-use-cryptocurrency-for-investment-and-asset-managemen",
           "authorName": "Crypto Clairity",
@@ -2291,10 +2060,7 @@
       "articles": [
         {
           "id": "165634456",
-          "topics": [
-            "시작하기",
-            "채굴"
-          ],
+          "topics": ["시작하기", "채굴"],
           "title": "암호화폐 채굴의 힘 풀어내기: 작업증명 알고리즘 개요",
           "slug": "unleashing-the-power-of-cryptocurrency-mining-an-overview-of-proof-of-work-algori",
           "authorName": "Crypto Clairity",
@@ -2328,10 +2094,7 @@
       "articles": [
         {
           "id": "165611516",
-          "topics": [
-            "시작하기",
-            "보안"
-          ],
+          "topics": ["시작하기", "보안"],
           "title": "암호화폐 저장의 비밀 풀기: 디지털 자산을 안전하게 보관하는 방법",
           "slug": "unlocking-the-secrets-of-crypto-storage-how-to-keep-your-digital-assets-safe-and",
           "authorName": "Crypto Clairity",
@@ -2359,10 +2122,7 @@
         },
         {
           "id": "165367458",
-          "topics": [
-            "시작하기",
-            "보안"
-          ],
+          "topics": ["시작하기", "보안"],
           "title": "암호화폐 보안 101: 암호화폐를 안전하게 저장하고 보호하는 방법",
           "slug": "crypto-security-101-how-to-safely-store-and-secure-your-cryptocurrencies",
           "authorName": "Crypto Clairity",
@@ -2396,11 +2156,7 @@
       "articles": [
         {
           "id": "165610881",
-          "topics": [
-            "시작하기",
-            "방법",
-            "연구"
-          ],
+          "topics": ["시작하기", "방법", "연구"],
           "title": "암호화폐 시장 탐색: 디지털 자산 조사 및 평가를 위한 초보자 가이드",
           "slug": "navigating-the-cryptocurrency-market-a-beginner-s-guide-to-researching-and-evalua",
           "authorName": "Crypto Clairity",
@@ -2434,10 +2190,7 @@
       "articles": [
         {
           "id": "165399242",
-          "topics": [
-            "방법",
-            "거래소"
-          ],
+          "topics": ["방법", "거래소"],
           "title": "초보자를 위한 암호화폐 구매 및 판매 가이드: 단계별 안내",
           "slug": "the-beginner-s-guide-to-buying-and-selling-cryptocurrencies-a-step-by-step-walkth",
           "authorName": "Crypto Clairity",
@@ -2471,10 +2224,7 @@
       "articles": [
         {
           "id": "165365581",
-          "topics": [
-            "시작하기",
-            "역사"
-          ],
+          "topics": ["시작하기", "역사"],
           "title": "암호화폐의 진화: 비트코인에서 디파이 그리고 그 이후까지",
           "slug": "the-evolution-of-cryptocurrency-from-bitcoin-to-defi-and-beyond",
           "authorName": "Crypto Clairity",

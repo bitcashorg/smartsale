@@ -1,7 +1,7 @@
-import * as Sentry from "@sentry/node"
-import { nodeProfilingIntegration } from "@sentry/profiling-node"
-import { Express } from "express"
-import { appConfig } from "~/config";
+import * as Sentry from '@sentry/node'
+import { nodeProfilingIntegration } from '@sentry/profiling-node'
+import type { Express } from 'express'
+import { appConfig } from '~/config'
 
 export function initSentry() {
   // Ensure to call this before requiring any other modules!
@@ -24,6 +24,5 @@ export function initSentry() {
 
 export function setupSentryErrorHandler(app: Express) {
   // The error handler must be before any other error middleware and after all controllers
-  Sentry.setupExpressErrorHandler(app);
+  Sentry.setupExpressErrorHandler(app)
 }
-

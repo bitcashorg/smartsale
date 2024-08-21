@@ -10,8 +10,6 @@
         "dev": "env-cmd ts-node-dev -r tsconfig-paths/register ./src",
         "start": "env-cmd node ./dist",
         "build": "rimraf dist && tsc -b",
-        "lint": "eslint --ignore-path .gitignore \"**/*.+(js|ts|tsx)\" --fix",
-        "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|json|ts|tsx)\"",
         "prod": "ts-node-dev -r tsconfig-paths/register ./src"
     },
     "dependencies": {

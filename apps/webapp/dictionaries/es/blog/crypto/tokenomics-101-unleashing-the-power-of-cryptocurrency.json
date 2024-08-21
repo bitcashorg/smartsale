@@ -2,11 +2,7 @@
   "relatedBlogs": [
     {
       "id": "180563939",
-      "topics": [
-        "DAO",
-        "Tokenomia",
-        "Comentario"
-      ],
+      "topics": ["DAO", "Tokenomia", "Comentario"],
       "title": "Un marco para el diseno de gobernanza blockchain: La rueda del Grupo Prysm [Comentario]",
       "slug": "a-framework-for-blockchain-governance-design-the-prysm-group-wheel-commentary",
       "authorName": "Crypto Clairity",
@@ -25,10 +21,7 @@
     },
     {
       "id": "180217169",
-      "topics": [
-        "Tokenomia",
-        "Comentario"
-      ],
+      "topics": ["Tokenomia", "Comentario"],
       "title": "Economia de incentivos tokenizados 3: El valor del token no alineara a las partes interesadas [Comentario]",
       "slug": "economics-of-tokenized-incentives-3-token-value-won-t-align-stakeholders-commenta",
       "authorName": "Crypto Clairity",
@@ -47,10 +40,7 @@
     },
     {
       "id": "180217123",
-      "topics": [
-        "Tokenomia",
-        "Comentario"
-      ],
+      "topics": ["Tokenomia", "Comentario"],
       "title": "Economia de incentivos tokenizados 2: Seleccionando metricas de rendimiento efectivas [Comentario]",
       "slug": "economics-of-tokenized-incentives-2-selecting-effective-performance-metrics-comme",
       "authorName": "Crypto Clairity",
@@ -69,10 +59,7 @@
     },
     {
       "id": "180217082",
-      "topics": [
-        "Tokenomia",
-        "Comentario"
-      ],
+      "topics": ["Tokenomia", "Comentario"],
       "title": "Economia de incentivos tokenizados 1: Introduccion al pago por desempeno [Comentario]",
       "slug": "economics-of-tokenized-incentives-1-intro-to-pay-for-performance",
       "authorName": "Crypto Clairity",
@@ -91,11 +78,7 @@
     },
     {
       "id": "180563918",
-      "topics": [
-        "Tokenomia",
-        "Comentario",
-        "Recaudacion de fondos"
-      ],
+      "topics": ["Tokenomia", "Comentario", "Recaudacion de fondos"],
       "title": "Tokens: Vehiculo de inversion o medio de intercambio (no ambos) [Comentario]",
       "slug": "tokens-investment-vehicle-or-medium-of-exchange-not-both-commentary",
       "authorName": "Crypto Clairity",
@@ -114,11 +97,7 @@
     },
     {
       "id": "180556595",
-      "topics": [
-        "Recaudacion de fondos",
-        "Tokenomia",
-        "Comentario"
-      ],
+      "topics": ["Recaudacion de fondos", "Tokenomia", "Comentario"],
       "title": "El efecto blockchain: Efectos de red sin costos de poder de mercado [Comentario]",
       "slug": "the-blockchain-effect-network-effects-without-market-power-costs-commentary",
       "authorName": "Crypto Clairity",
@@ -137,10 +116,7 @@
     },
     {
       "id": "180563931",
-      "topics": [
-        "Tokenomia",
-        "Comentario"
-      ],
+      "topics": ["Tokenomia", "Comentario"],
       "title": "Estructuras de incentivos blockchain: Que son y por que importan [Comentario]",
       "slug": "blockchain-incentive-structures-what-they-are-and-why-they-matter-commentary",
       "authorName": "Crypto Clairity",
@@ -159,11 +135,7 @@
     },
     {
       "id": "167184977",
-      "topics": [
-        "Tokenomia",
-        "DAO",
-        "Recaudacion de fondos"
-      ],
+      "topics": ["Tokenomia", "DAO", "Recaudacion de fondos"],
       "title": "Revolucionando el modelo de capital: Como la tokenomia esta disrumpiendo el mundo de las startups",
       "slug": "revolutionizing-the-equity-model-how-tokenomics-is-disrupting-the-startup-world",
       "authorName": "Crypto Clairity",
@@ -182,10 +154,7 @@
     },
     {
       "id": "166981063",
-      "topics": [
-        "Primeros pasos",
-        "DAO"
-      ],
+      "topics": ["Primeros pasos", "DAO"],
       "title": "El futuro esta aqui: El auge de las Organizaciones Autonomas Descentralizadas (DAOs)",
       "slug": "the-future-is-here-the-rise-of-decentralized-autonomous-organizations-daos",
       "authorName": "Crypto Clairity",
@@ -204,10 +173,7 @@
     },
     {
       "id": "165744328",
-      "topics": [
-        "Primeros pasos",
-        "Como hacer"
-      ],
+      "topics": ["Primeros pasos", "Como hacer"],
       "title": "Mantente a la vanguardia: Una guia para mantenerse informado y educado en el mundo de las criptomonedas",
       "slug": "stay-ahead-of-the-game-a-guide-to-staying-informed-and-educated-in-the-world-of-c",
       "authorName": "Crypto Clairity",
@@ -226,10 +192,7 @@
     },
     {
       "id": "165742753",
-      "topics": [
-        "Primeros pasos",
-        "Pagos"
-      ],
+      "topics": ["Primeros pasos", "Pagos"],
       "title": "Stablecoins: El futuro de las transacciones y pagos con criptomonedas",
       "slug": "stablecoins-the-future-of-cryptocurrency-transactions-and-payments",
       "authorName": "Crypto Clairity",
@@ -248,10 +211,7 @@
     },
     {
       "id": "165685913",
-      "topics": [
-        "DeFi",
-        "Primeros pasos"
-      ],
+      "topics": ["DeFi", "Primeros pasos"],
       "title": "Descentraliza tus finanzas: Una introduccion al mundo de DeFi",
       "slug": "decentralize-your-finance-an-introduction-to-the-world-of-defi",
       "authorName": "Crypto Clairity",
@@ -270,10 +230,7 @@
     },
     {
       "id": "165685908",
-      "topics": [
-        "Primeros pasos",
-        "Recaudacion de fondos"
-      ],
+      "topics": ["Primeros pasos", "Recaudacion de fondos"],
       "title": "Disrumpe el status quo: Como las criptomonedas estan revolucionando la recaudacion de fondos y el crowdfunding",
       "slug": "disrupt-the-status-quo-how-cryptocurrency-is-revolutionizing-fundraising-and-crow",
       "authorName": "Crypto Clairity",
@@ -292,10 +249,7 @@
     },
     {
       "id": "165673014",
-      "topics": [
-        "Primeros pasos",
-        "Inversion"
-      ],
+      "topics": ["Primeros pasos", "Inversion"],
       "title": "Inversion en criptomonedas 101: Como usar criptomonedas para inversion y gestion de activos",
       "slug": "crypto-investing-101-how-to-use-cryptocurrency-for-investment-and-asset-managemen",
       "authorName": "Crypto Clairity",
@@ -315,10 +269,7 @@
   ],
   "blogContent": {
     "id": "167101094",
-    "topics": [
-      "Comenzando",
-      "Tokenomics"
-    ],
+    "topics": ["Comenzando", "Tokenomics"],
     "title": "Tokenomics 101: Desatando el Poder de las Criptomonedas",
     "slug": "tokenomics-101-unleashing-the-power-of-cryptocurrency",
     "authorName": "Crypto Clairity",
@@ -594,9 +545,7 @@
                     },
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Tokenomics can reshape industries, economies, even societies!"
                     },
                     {
@@ -659,9 +608,7 @@
                     },
                     {
                       "type": "span",
-                      "marks": [
-                        "emphasis"
-                      ],
+                      "marks": ["emphasis"],
                       "value": "\"Why should I care about tokenomics?\""
                     },
                     {
@@ -670,9 +617,7 @@
                     },
                     {
                       "type": "span",
-                      "marks": [
-                        "emphasis"
-                      ],
+                      "marks": ["emphasis"],
                       "value": "\"Can I afford not to?\""
                     },
                     {
@@ -855,9 +800,7 @@
                     },
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "The world of tokenomics, my friends, is not a distant dream, it's here, it's now, and it's your time to embrace it!"
                     }
                   ]
@@ -898,9 +841,7 @@
                     },
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "The beat is pounding, the stage is set, your tokenomics adventure awaits!"
                     }
                   ]
@@ -935,8 +876,5 @@
       }
     }
   },
-  "topics": [
-    "Primeros pasos",
-    "Tokenomia"
-  ]
+  "topics": ["Primeros pasos", "Tokenomia"]
 }

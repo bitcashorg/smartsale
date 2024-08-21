@@ -2,13 +2,7 @@
   "relatedBlogs": [
     {
       "id": "198277124",
-      "topics": [
-        "LLM",
-        "Finanzas",
-        "Salud",
-        "Legal",
-        "Indicaciones"
-      ],
+      "topics": ["LLM", "Finanzas", "Salud", "Legal", "Indicaciones"],
       "title": "Adaptacion de Modelos de Lenguaje Grandes mediante Comprension Lectora",
       "slug": "adapting-large-language-models-via-reading-comprehension",
       "authorName": "Prof. Otto Nomos",
@@ -27,10 +21,7 @@
     },
     {
       "id": "198277342",
-      "topics": [
-        "LLM",
-        "Multilingue"
-      ],
+      "topics": ["LLM", "Multilingue"],
       "title": "OpenBA: Un Modelo Bilingue Asimetrico seq2seq de 15B de Codigo Abierto Preentrenado desde Cero",
       "slug": "openba-an-open-sourced-15b-bilingual-asymmetric-seq2seq-model-pre-trained-from-sc",
       "authorName": "Prof. Otto Nomos",
@@ -49,10 +40,7 @@
     },
     {
       "id": "198277117",
-      "topics": [
-        "LLM",
-        "Recuperacion"
-      ],
+      "topics": ["LLM", "Recuperacion"],
       "title": "PDFTriage: Respuesta a Preguntas sobre Documentos Largos y Estructurados",
       "slug": "pdftriage-question-answering-over-long-structured-documents",
       "authorName": "Prof. Otto Nomos",
@@ -71,10 +59,7 @@
     },
     {
       "id": "198277138",
-      "topics": [
-        "LLM",
-        "Ajuste fino"
-      ],
+      "topics": ["LLM", "Ajuste fino"],
       "title": "LLaMA Ordenado: Desbloqueando el Potencial de Capas Intermedias de Modelos de Lenguaje Grandes para Inferencia Dinamica Usando Ajuste Fino Ordenado (SoFT)",
       "slug": "sorted-llama-unlocking-the-potential-of-intermediate-layers-of-large-language-mod",
       "authorName": "Prof. Otto Nomos",
@@ -93,11 +78,7 @@
     },
     {
       "id": "198277150",
-      "topics": [
-        "LLM",
-        "Ajuste por Instrucciones",
-        "Multimodal"
-      ],
+      "topics": ["LLM", "Ajuste por Instrucciones", "Multimodal"],
       "title": "Un Estudio Empirico del Escalado de Modelos Multimodales Grandes Instruidos",
       "slug": "an-empirical-study-of-scaling-instruct-tuned-large-multimodal-models",
       "authorName": "Prof. Otto Nomos",
@@ -116,11 +97,7 @@
     },
     {
       "id": "198277160",
-      "topics": [
-        "LLM",
-        "Agentes",
-        "Juegos"
-      ],
+      "topics": ["LLM", "Agentes", "Juegos"],
       "title": "MindAgent: Interaccion Emergente en Juegos",
       "slug": "mindagent-emergent-gaming-interaction",
       "authorName": "Prof. Otto Nomos",
@@ -139,10 +116,7 @@
     },
     {
       "id": "198277196",
-      "topics": [
-        "LLM",
-        "Datos Estructurados"
-      ],
+      "topics": ["LLM", "Datos Estructurados"],
       "title": "Struc-Bench: Son Realmente Buenos los Modelos de Lenguaje Grandes en Generar Datos Estructurados Complejos?",
       "slug": "struc-bench-are-large-language-models-really-good-at-generating-complex-structure",
       "authorName": "Prof. Otto Nomos",
@@ -161,11 +135,7 @@
     },
     {
       "id": "198277217",
-      "topics": [
-        "LLM",
-        "Privacidad",
-        "Borde"
-      ],
+      "topics": ["LLM", "Privacidad", "Borde"],
       "title": "Recuperacion de Enmascaramiento de Preservacion de Privacidad con Modelos de Lenguaje Grandes",
       "slug": "recovering-from-privacy-preserving-masking-with-large-language-models",
       "authorName": "Prof. Otto Nomos",
@@ -184,10 +154,7 @@
     },
     {
       "id": "198277239",
-      "topics": [
-        "LLM",
-        "Chat"
-      ],
+      "topics": ["LLM", "Chat"],
       "title": "S3-DST: Segmentacion y Seguimiento de Estado de Dialogo Estructurado de Dominio Abierto en la Era de los MLMs",
       "slug": "s3-dst-structured-open-domain-dialogue-segmentation-and-state-tracking-in-the-era",
       "authorName": "Prof. Otto Nomos",
@@ -206,10 +173,7 @@
     },
     {
       "id": "198277253",
-      "topics": [
-        "LLM",
-        "Audio"
-      ],
+      "topics": ["LLM", "Audio"],
       "title": "Aumentando texto para comprension del lenguaje hablado con Modelos de Lenguaje Grandes",
       "slug": "augmenting-text-for-spoken-language-understanding-with-large-language-models",
       "authorName": "Prof. Otto Nomos",
@@ -228,10 +192,7 @@
     },
     {
       "id": "198277277",
-      "topics": [
-        "LLM",
-        "Compresion"
-      ],
+      "topics": ["LLM", "Compresion"],
       "title": "El Modelado del Lenguaje es Compresion",
       "slug": "language-modeling-is-compression",
       "authorName": "Prof. Otto Nomos",
@@ -250,10 +211,7 @@
     },
     {
       "id": "198277345",
-      "topics": [
-        "LLM",
-        "Multilingue"
-      ],
+      "topics": ["LLM", "Multilingue"],
       "title": "Baichuan 2: Modelos de Lenguaje a Gran Escala de Codigo Abierto",
       "slug": "baichuan-2-open-large-scale-language-models",
       "authorName": "Prof. Otto Nomos",
@@ -272,10 +230,7 @@
     },
     {
       "id": "198277360",
-      "topics": [
-        "LLM",
-        "RLHF"
-      ],
+      "topics": ["LLM", "RLHF"],
       "title": "Estabilizando RLHF a traves de Modelo de Ventaja y Ensayo Selectivo",
       "slug": "stabilizing-rlhf-through-advantage-model-and-selective-rehearsal",
       "authorName": "Prof. Otto Nomos",
@@ -294,10 +249,7 @@
     },
     {
       "id": "198277446",
-      "topics": [
-        "LLM",
-        "Alucinacion"
-      ],
+      "topics": ["LLM", "Alucinacion"],
       "title": "La Cadena de Verificacion Reduce la Alucinacion en Modelos de Lenguaje Grandes",
       "slug": "chain-of-verification-reduces-hallucination-in-large-language-models",
       "authorName": "Prof. Otto Nomos",
@@ -316,12 +268,7 @@
     },
     {
       "id": "198277458",
-      "topics": [
-        "LLM",
-        "Alucinacion",
-        "Entidad",
-        "Datos Estructurados"
-      ],
+      "topics": ["LLM", "Alucinacion", "Entidad", "Datos Estructurados"],
       "title": "LMDX: Extraccion y Localizacion de Informacion de Documentos Basada en Modelos de Lenguaje",
       "slug": "lmdx-language-model-based-document-information-extraction-and-localization",
       "authorName": "Prof. Otto Nomos",
@@ -340,10 +287,7 @@
     },
     {
       "id": "198277209",
-      "topics": [
-        "LLM",
-        "Datos"
-      ],
+      "topics": ["LLM", "Datos"],
       "title": "SlimPajama-DC: Entendiendo Combinaciones de Datos para Entrenamiento de MLM",
       "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
       "authorName": "Prof. Otto Nomos",
@@ -362,11 +306,7 @@
     },
     {
       "id": "198044929",
-      "topics": [
-        "LLM",
-        "Datos",
-        "Agentes"
-      ],
+      "topics": ["LLM", "Datos", "Agentes"],
       "title": "Una Fuente de Datos para Agentes Incorporados de Razonamiento",
       "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
       "authorName": "Prof. Otto Nomos",
@@ -385,11 +325,7 @@
     },
     {
       "id": "198044879",
-      "topics": [
-        "LLM",
-        "Transformers",
-        "Interpretabilidad"
-      ],
+      "topics": ["LLM", "Transformers", "Interpretabilidad"],
       "title": "Los Autoencoders Dispersos Encuentran Caracteristicas Altamente Interpretables en Modelos de Lenguaje",
       "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
       "authorName": "Prof. Otto Nomos",
@@ -408,11 +344,7 @@
     },
     {
       "id": "198044746",
-      "topics": [
-        "LLM",
-        "Transformers",
-        "Entrenamiento"
-      ],
+      "topics": ["LLM", "Transformers", "Entrenamiento"],
       "title": "Leyes de Escalado para Modelos de Base Conectados Dispersamente",
       "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
       "authorName": "Prof. Otto Nomos",
@@ -432,10 +364,7 @@
   ],
   "blogContent": {
     "id": "198277109",
-    "topics": [
-      "MLG",
-      "Razonamiento"
-    ],
+    "topics": ["MLG", "Razonamiento"],
     "title": "La Decodificacion Contrastiva Mejora el Razonamiento en Modelos de Lenguaje Grandes",
     "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
     "authorName": "Prof. Otto Nomos",
@@ -601,9 +530,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Contrastive Decoding"
                             },
                             {
@@ -622,9 +549,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Significant Outperformance"
                             },
                             {
@@ -643,9 +568,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Avoiding Errors"
                             },
                             {
@@ -679,9 +602,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Enhanced Text Generation"
                             },
                             {
@@ -700,9 +621,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Improved Reasoning"
                             },
                             {
@@ -721,9 +640,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Wider Applicability"
                             },
                             {
@@ -742,9 +659,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Versatility"
                             },
                             {
@@ -778,9 +693,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Dependence on Weak Models"
                             },
                             {
@@ -850,8 +763,5 @@
       }
     }
   },
-  "topics": [
-    "LLM",
-    "Razonamiento"
-  ]
+  "topics": ["LLM", "Razonamiento"]
 }

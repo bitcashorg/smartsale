@@ -38,8 +38,8 @@ export async function registerAddress(formData: FormData) {
     console.log('register address input', o)
     const data = presaleInsertSchema.parse({
       ...o,
-      project_id: parseInt(o.project_id),
-      created_at: new Date().toDateString()
+      project_id: Number.parseInt(o.project_id),
+      created_at: new Date().toDateString(),
     })
     const supabase = await createSupabaseServerClient()
     const { data: createdEntry, error } = await supabase
@@ -49,11 +49,11 @@ export async function registerAddress(formData: FormData) {
 
     if (error)
       throw new Error(
-        `Error creating pre-sale registration entry: ${error.message}`
+        `Error creating pre-sale registration entry: ${error.message}`,
       )
     console.log(
       'Pre-sale registration entry created successfully:',
-      createdEntry
+      createdEntry,
     )
     return createdEntry // Return the newly created entry
   } catch (error) {
@@ -69,22 +69,22 @@ async function validateRecaptcha(recaptchaToken: string): Promise<boolean> {
     {
       params: {
         secret: process.env.NEXT_PUBLIC_RECAPTCHA_SECRET_KEY,
-        response: recaptchaToken
-      }
-    }
+        response: recaptchaToken,
+      },
+    },
   )
 
   return response.data.success
 }
 
 export async function subscribeToNewsletter(
-  data: FormData
+  data: FormData,
 ): Promise<ActionState> {
   const resend = new Resend(process.env.RESEND_API_KEY)
 
   const NewsletterSchema = z.object({
     email: z.string().email(),
-    recaptcha: z.string()
+    recaptcha: z.string(),
   })
 
   // Convert FormData to a plain object to validate
@@ -100,7 +100,7 @@ export async function subscribeToNewsletter(
 
     const res = await resend.contacts.create({
       audienceId: process.env.RESEND_AUDIENCE_ID || '',
-      email: validatedData.email
+      email: validatedData.email,
     })
 
     if (res.error) throw res.error
@@ -142,16 +142,16 @@ export async function generateShortLink(url: string) {
       data: {
         key: resolved.key,
         shortLink: resolved.shortLink,
-        qrCode: resolved.qrCode
+        qrCode: resolved.qrCode,
       },
-      error: null
+      error: null,
     }
   } catch (error) {
     const errorData = handleAxiosError(error)
     console.log('Failed to generate short link: ==> ', errorData)
     return {
       data: null,
-      error: errorData.data.error.message
+      error: errorData.data.error.message,
     }
   }
 }

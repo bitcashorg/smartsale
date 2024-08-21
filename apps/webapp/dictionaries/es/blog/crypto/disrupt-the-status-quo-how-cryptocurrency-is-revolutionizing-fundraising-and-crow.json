@@ -2,11 +2,7 @@
   "relatedBlogs": [
     {
       "id": "180556595",
-      "topics": [
-        "Recaudacion de fondos",
-        "Tokenomia",
-        "Comentario"
-      ],
+      "topics": ["Recaudacion de fondos", "Tokenomia", "Comentario"],
       "title": "El Efecto Blockchain: Efectos de red sin costos de poder de mercado [Comentario]",
       "slug": "the-blockchain-effect-network-effects-without-market-power-costs-commentary",
       "authorName": "Crypto Clairity",
@@ -25,11 +21,7 @@
     },
     {
       "id": "167184977",
-      "topics": [
-        "Tokenomia",
-        "DAO",
-        "Recaudacion de fondos"
-      ],
+      "topics": ["Tokenomia", "DAO", "Recaudacion de fondos"],
       "title": "Revolucionando el modelo de capital: Como la tokenomia esta disrumpiendo el mundo de las startups",
       "slug": "revolutionizing-the-equity-model-how-tokenomics-is-disrupting-the-startup-world",
       "authorName": "Crypto Clairity",
@@ -48,10 +40,7 @@
     },
     {
       "id": "167101094",
-      "topics": [
-        "Primeros pasos",
-        "Tokenomia"
-      ],
+      "topics": ["Primeros pasos", "Tokenomia"],
       "title": "Tokenomia 101: Desatando el poder de la criptomoneda!",
       "slug": "tokenomics-101-unleashing-the-power-of-cryptocurrency",
       "authorName": "Crypto Clairity",
@@ -70,10 +59,7 @@
     },
     {
       "id": "166981063",
-      "topics": [
-        "Primeros pasos",
-        "DAO"
-      ],
+      "topics": ["Primeros pasos", "DAO"],
       "title": "El futuro esta aqui: El auge de las Organizaciones Autonomas Descentralizadas (DAOs)",
       "slug": "the-future-is-here-the-rise-of-decentralized-autonomous-organizations-daos",
       "authorName": "Crypto Clairity",
@@ -92,10 +78,7 @@
     },
     {
       "id": "165744328",
-      "topics": [
-        "Primeros pasos",
-        "Como hacer"
-      ],
+      "topics": ["Primeros pasos", "Como hacer"],
       "title": "Mantente a la vanguardia: Una guia para mantenerse informado y educado en el mundo de las criptomonedas",
       "slug": "stay-ahead-of-the-game-a-guide-to-staying-informed-and-educated-in-the-world-of-c",
       "authorName": "Crypto Clairity",
@@ -114,10 +97,7 @@
     },
     {
       "id": "165742753",
-      "topics": [
-        "Primeros pasos",
-        "Pagos"
-      ],
+      "topics": ["Primeros pasos", "Pagos"],
       "title": "Stablecoins: El futuro de las transacciones y pagos con criptomonedas",
       "slug": "stablecoins-the-future-of-cryptocurrency-transactions-and-payments",
       "authorName": "Crypto Clairity",
@@ -136,10 +116,7 @@
     },
     {
       "id": "165685913",
-      "topics": [
-        "DeFi",
-        "Primeros pasos"
-      ],
+      "topics": ["DeFi", "Primeros pasos"],
       "title": "Descentraliza tus finanzas: Una introduccion al mundo de DeFi",
       "slug": "decentralize-your-finance-an-introduction-to-the-world-of-defi",
       "authorName": "Crypto Clairity",
@@ -158,10 +135,7 @@
     },
     {
       "id": "165673014",
-      "topics": [
-        "Primeros pasos",
-        "Inversion"
-      ],
+      "topics": ["Primeros pasos", "Inversion"],
       "title": "Inversion en criptomonedas 101: Como usar criptomonedas para inversion y gestion de activos",
       "slug": "crypto-investing-101-how-to-use-cryptocurrency-for-investment-and-asset-managemen",
       "authorName": "Crypto Clairity",
@@ -181,10 +155,7 @@
   ],
   "blogContent": {
     "id": "165685908",
-    "topics": [
-      "Primeros pasos",
-      "Recaudacion de fondos"
-    ],
+    "topics": ["Primeros pasos", "Recaudacion de fondos"],
     "title": "Revoluciona el statu quo: Como las criptomonedas estan transformando la recaudacion de fondos y el crowdfunding",
     "slug": "disrupt-the-status-quo-how-cryptocurrency-is-revolutionizing-fundraising-and-crow",
     "authorName": "Crypto Clairity",
@@ -424,8 +395,5 @@
       }
     }
   },
-  "topics": [
-    "Primeros pasos",
-    "Recaudacion de fondos"
-  ]
+  "topics": ["Primeros pasos", "Recaudacion de fondos"]
 }

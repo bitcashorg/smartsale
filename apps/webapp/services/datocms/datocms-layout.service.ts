@@ -1,5 +1,5 @@
 import { getCMSSdk } from '@/services/datocms/graphql/cms'
-import { LayoutRecord } from '@/services/datocms/graphql/generated/cms'
+import type { LayoutRecord } from '@/services/datocms/graphql/generated/cms'
 
 export async function getLayoutText(): Promise<CMSLayoutText> {
   try {
@@ -7,7 +7,7 @@ export async function getLayoutText(): Promise<CMSLayoutText> {
       layout: {
         __args: {
           locale: 'en',
-          fallbackLocales: ['en']
+          fallbackLocales: ['en'],
         },
         navigationTopic: true,
         navigationCategories: true,
@@ -27,8 +27,8 @@ export async function getLayoutText(): Promise<CMSLayoutText> {
         investingFollowLinks: true,
         startUpsFollowLinks: true,
         cookieConsentDescription: true,
-        cookieConsentCta: true
-      }
+        cookieConsentCta: true,
+      },
     })
 
     return data.layout as CMSLayoutText
@@ -41,50 +41,50 @@ export async function getLayoutText(): Promise<CMSLayoutText> {
         gems: 'Gems',
         how_to: 'How To',
         analysis: 'Analysis',
-        opinion: 'Opinion'
+        opinion: 'Opinion',
       },
       navigationCategories: {
         startups: 'Start Ups',
         ai: 'AI',
         investing: 'Investing',
-        crypto: 'Cryto'
+        crypto: 'Cryto',
       },
       searchInputPlaceholder: 'Search',
       homeFollowLinks: {
         telegram: 'https://t.me/bitcash_org',
         twitter: 'https://twitter.com/bitcashorg',
-        medium: 'https://medium.com/bitcashBank'
+        medium: 'https://medium.com/bitcashBank',
       },
       cryptoFollowLinks: {
         telegram: 'https://t.me/bitcash_org',
         twitter: 'https://twitter.com/bitcashorg',
-        medium: 'https://medium.com/bitcashBank'
+        medium: 'https://medium.com/bitcashBank',
       },
       bitcoinFollowLinks: {
         telegram: 'https://t.me/bitcash_org',
         twitter: 'https://twitter.com/bitcashorg',
-        medium: 'https://medium.com/bitcashBank'
+        medium: 'https://medium.com/bitcashBank',
       },
       aiFollowLinks: {
         telegram: 'https://t.me/bitcash_org',
         twitter: 'https://twitter.com/bitcashorg',
-        medium: 'https://medium.com/bitcashBank'
+        medium: 'https://medium.com/bitcashBank',
       },
       investingFollowLinks: {
         telegram: 'https://t.me/bitcash_org',
         twitter: 'https://twitter.com/bitcashorg',
-        medium: 'https://medium.com/bitcashBank'
+        medium: 'https://medium.com/bitcashBank',
       },
       startUpsFollowLinks: {
         telegram: 'https://t.me/bitcash_org',
         twitter: 'https://twitter.com/bitcashorg',
-        medium: 'https://medium.com/bitcashBank'
+        medium: 'https://medium.com/bitcashBank',
       },
       backHome: 'back to home',
       backBitcash: 'back to bitcash.org',
       navigationPoliciesTerms: {
         privacy_policy: 'Privacy Policy',
-        terms_and_conditions: 'Terms and Conditions'
+        terms_and_conditions: 'Terms and Conditions',
       },
       subscriptionTitle: 'Subscribe For The Latest Updates',
       subscriptionSubtitle:
@@ -93,7 +93,7 @@ export async function getLayoutText(): Promise<CMSLayoutText> {
       subscriptionCta: 'Subscribe',
       cookieConsentDescription:
         'This website uses cookies to improve user experience. By using our website you consent to all cookies in accordance with our Cookie Policy.',
-      cookieConsentCta: 'Accept'
+      cookieConsentCta: 'Accept',
     }
   }
 }

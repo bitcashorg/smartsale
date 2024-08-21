@@ -8,7 +8,7 @@ import { useConnectModal } from '@rainbow-me/rainbowkit'
 import { Tables } from '@repo/supabase'
 import { uniq } from 'lodash'
 import { usePathname, useRouter, useSearchParams } from 'next/navigation'
-import React, { ReactNode, useEffect, useState } from 'react'
+import React, { type ReactNode, useEffect, useState } from 'react'
 import { isMobile } from 'react-device-detect'
 import toast from 'react-hot-toast'
 import { useAsync, useLocalStorage, useToggle } from 'react-use'
@@ -34,7 +34,7 @@ function useSessionFn() {
   // when login qr code is display a new esr is created and saved on db for later reference on callback call
   const [showSessionDialog, toggleShowSessionDialog] = useToggle(false)
   const [session, setSession] = useLocalStorage<Tables<'session'> | null>(
-    'bitcash-session'
+    'bitcash-session',
   )
   const loginSR = useAsync(() => genLoginSigningRequest(newSessionId))
   const loginUri = loginSR?.value?.encode()
@@ -89,10 +89,9 @@ function useSessionFn() {
   const startSession = (session: Tables<'session'>) => {
     verifyUpsertAccount({ session, account })
     setSession(session)
-    identifyUser(
-      account.address || '0x',
-      { account: session?.account ?? 'unknown' }
-    )
+    identifyUser(account.address || '0x', {
+      account: session?.account ?? 'unknown',
+    })
   }
 
   // subscribe to supabase session table and set session state
@@ -107,7 +106,7 @@ function useSessionFn() {
       .on(
         'postgres_changes',
         { event: 'INSERT', schema: 'public', table: 'session' },
-        payload => {
+        (payload) => {
           console.log('BAZINGA 🍓 new supabase session', payload.new)
           // set new session if ids match
           if (session || payload.new.id !== newSessionId) return
@@ -115,7 +114,7 @@ function useSessionFn() {
           console.log(' ✅ supabase session id matches', newSession)
           startSession(newSession)
           toggleShowSessionDialog(false)
-        }
+        },
       )
       .subscribe()
 
@@ -209,7 +208,7 @@ function useSessionFn() {
     loginRedirect,
     openConnectModal,
     loginOrConnect,
-    toggleShowSessionDialog
+    toggleShowSessionDialog,
   }
 }
 
@@ -223,5 +222,5 @@ function SessionProvider({ children }: { children: ReactNode }) {
 
 const [useSession, SessionProviderInner] = createContextHook(
   useSessionFn,
-  'You must wrap your application with <SessionProvider /> in order to useSession().'
+  'You must wrap your application with <SessionProvider /> in order to useSession().',
 )

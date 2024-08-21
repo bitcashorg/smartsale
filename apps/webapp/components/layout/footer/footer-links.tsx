@@ -1,6 +1,6 @@
 import { IconBitlauncher } from '@/components/ui/icons'
 import Link from 'next/link'
-import { NavItem, NavSection, footerNavStruct } from '../nav-struct'
+import { type NavItem, type NavSection, footerNavStruct } from '../nav-struct'
 
 export function FooterLinks() {
   return (
@@ -15,7 +15,7 @@ export function FooterLinks() {
         {footerNavStruct.sections.map((section, index) =>
           section.items ? (
             <SectionComponent key={index} section={section} />
-          ) : null
+          ) : null,
         )}
       </div>
     </div>

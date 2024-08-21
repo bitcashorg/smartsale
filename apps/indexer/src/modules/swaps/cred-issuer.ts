@@ -1,8 +1,8 @@
 import { TestnetUSDCred } from 'app-contracts'
 import { eosEvmTestnet } from 'app-env'
 import { createWalletClient } from 'viem'
+import { http, type Address } from 'viem'
 import { appConfig } from '~/config'
-import { Address, http } from 'viem'
 
 export async function issueTokens(to: Address, amount: bigint) {
   console.log('issueTokens', {

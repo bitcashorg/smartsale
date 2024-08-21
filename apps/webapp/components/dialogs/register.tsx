@@ -1,21 +1,21 @@
 'use client'
 
-import { BitcashAccessContentType } from '@/components/layout/header/bitcash-access'
+import type { BitcashAccessContentType } from '@/components/layout/header/bitcash-access'
 import { Button } from '@/components/ui/button'
 import {
   DialogDescription,
   DialogFooter,
   DialogHeader,
-  DialogTitle
+  DialogTitle,
 } from '@/components/ui/dialog'
 import { useSession } from '@/hooks/use-session'
+import { runtimeEnv } from 'app-lib'
 import { useRouter } from 'next/navigation'
 import QRCode from 'react-qr-code'
 import { useEffectOnce } from 'react-use'
-import { runtimeEnv } from 'app-lib'
 
 export function RegisterDialogContent({
-  updateDialogContent
+  updateDialogContent,
 }: {
   updateDialogContent: (dialog: BitcashAccessContentType) => void
 }) {
@@ -54,7 +54,7 @@ export function RegisterDialogContent({
             height: 'auto',
             maxWidth: '100%',
             width: '100%',
-            borderRadius: 4
+            borderRadius: 4,
           }}
           value={registerUri}
           viewBox={`0 0 256 256`}

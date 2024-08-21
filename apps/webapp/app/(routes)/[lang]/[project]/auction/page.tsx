@@ -1,5 +1,3 @@
-import { getDictionary } from '@/dictionaries'
-import { locales } from '@/dictionaries/locales'
 import { AuctionBids } from '@/components/routes/project/auction/auction-bids'
 import { AuctionDataCard } from '@/components/routes/project/auction/auction-data-card'
 import { ProjectHeader } from '@/components/routes/project/project-header'
@@ -10,15 +8,17 @@ import {
   CardContent,
   CardDescription,
   CardHeader,
-  CardTitle
+  CardTitle,
 } from '@/components/ui/card'
+import { getDictionary } from '@/dictionaries'
+import { locales } from '@/dictionaries/locales'
 import {
-  ProjectWithAuction,
+  type ProjectWithAuction,
   getProjectBySlug,
-  getProjects
+  getProjects,
 } from '@/lib/projects'
+import type { ProjectPageParams, ProjectPageProps } from '@/types/routing.type'
 import { redirect } from 'next/navigation'
-import { ProjectPageProps, ProjectPageParams } from '@/types/routing.type'
 
 export default async function AuctionPage({ params }: ProjectPageProps) {
   const dict = await getDictionary(params.lang)
@@ -64,11 +64,11 @@ export async function generateStaticParams(): Promise<ProjectPageParams[]> {
       locales.map(async (lang): Promise<ProjectPageParams[]> => {
         const dict = await getDictionary(lang)
         return getProjects(dict)
-          .map(project =>
-            project.slug ? { lang, project: project.slug } : null
+          .map((project) =>
+            project.slug ? { lang, project: project.slug } : null,
           )
           .filter((param): param is ProjectPageParams => param !== null)
-      })
+      }),
     )
   ).flat()
 

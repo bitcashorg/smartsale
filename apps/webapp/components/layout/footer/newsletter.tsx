@@ -1,19 +1,19 @@
 'use client'
 import { subscribeToNewsletter } from '@/actions'
 import { Button, buttonVariants } from '@/components/ui/button'
-import {
-  IconDiscord,
-  IconDownRightArrow
-} from '@/components/ui/icons'
+import { IconDiscord, IconDownRightArrow } from '@/components/ui/icons'
 import { cn, motionProps } from '@/lib/utils'
-import { LangProp } from '@/types/routing.type'
+import type { LangProp } from '@/types/routing.type'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { motion } from 'framer-motion'
 import { LucideCheck, LucideLoader2 } from 'lucide-react'
 import Link from 'next/link'
 import { useEffect } from 'react'
 import { useFormStatus } from 'react-dom'
-import { GoogleReCaptcha, GoogleReCaptchaProvider } from 'react-google-recaptcha-v3'
+import {
+  GoogleReCaptcha,
+  GoogleReCaptchaProvider,
+} from 'react-google-recaptcha-v3'
 import { useForm } from 'react-hook-form'
 import { useSetState } from 'react-use'
 import { z } from 'zod'
@@ -22,7 +22,7 @@ import { FooterLinks } from './footer-links'
 // Schema for form validation with Zod
 const formSchema = z.object({
   email: z.string().email({ message: 'Invalid email address' }),
-  recaptcha: z.string().optional()
+  recaptcha: z.string().optional(),
 })
 const formOptions = { resolver: zodResolver(formSchema) }
 type SubcriptionFormData = z.infer<typeof formSchema>
@@ -31,7 +31,7 @@ export default function Newsletter({ lang }: LangProp) {
   const [state, setState] = useSetState({
     loading: false,
     data: '',
-    error: ''
+    error: '',
   })
   const { register, setValue, watch, formState } =
     useForm<SubcriptionFormData>(formOptions)
@@ -42,7 +42,7 @@ export default function Newsletter({ lang }: LangProp) {
     setState({
       loading: false,
       data: result?.data ?? '',
-      error: result?.error ?? ''
+      error: result?.error ?? '',
     })
   }
 
@@ -75,7 +75,7 @@ export default function Newsletter({ lang }: LangProp) {
         <IconDownRightArrow
           className={cn(
             'size-4 transition-all group-focus-within:-rotate-45 group-hover:-rotate-45 [&_path]:stroke-white',
-            { '-rotate-[45deg]': isReadyToSubmit }
+            { '-rotate-[45deg]': isReadyToSubmit },
           )}
         />
       </motion.span>
@@ -88,7 +88,10 @@ export default function Newsletter({ lang }: LangProp) {
   }, [email])
 
   return (
-    <div className="container px-0 sm:px-4 relative mt-40 mb-10" id="newsletter">
+    <div
+      className="container px-0 sm:px-4 relative mt-40 mb-10"
+      id="newsletter"
+    >
       <GoogleReCaptchaProvider
         reCaptchaKey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ''}
         // language="[optional_language]"
@@ -96,8 +99,8 @@ export default function Newsletter({ lang }: LangProp) {
           element: '#newsletter',
           parameters: {
             badge: 'bottomright', //'[inline|bottomright|bottomleft]', // optional, default undefined
-            theme: 'dark' // optional, default undefined
-          }
+            theme: 'dark', // optional, default undefined
+          },
         }}
       >
         <section className="newsletter-wrapper">
@@ -129,7 +132,7 @@ export default function Newsletter({ lang }: LangProp) {
                   {...register('recaptcha', { required: true })}
                 />
                 <GoogleReCaptcha
-                  onVerify={v => {
+                  onVerify={(v) => {
                     const timeout = setTimeout(() => {
                       if (v.toString() && recaptchaToken !== v.toString()) {
                         setValue('recaptcha', v.toString())
@@ -192,9 +195,9 @@ function DiscordButton() {
       className={cn(
         buttonVariants({
           variant: 'outline',
-          radius: 'full'
+          radius: 'full',
         }),
-        'size-14 border-transparent p-3.5 md:border-accent-secondary lg:size-14'
+        'size-14 border-transparent p-3.5 md:border-accent-secondary lg:size-14',
       )}
     >
       <IconDiscord className={'block size-full fill-accent-secondary'} />

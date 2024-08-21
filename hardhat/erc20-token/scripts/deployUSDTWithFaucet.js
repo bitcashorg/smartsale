@@ -1,16 +1,19 @@
-
-const { ethers } = require("hardhat");
+const { ethers } = require('hardhat')
 
 async function main() {
-    const USDCredTokenWithFaucet = await ethers.getContractFactory("USDTTokenWithFaucet");
-    const token = await USDCredTokenWithFaucet.deploy(ethers.utils.parseUnits("1000000", 6));
+  const USDCredTokenWithFaucet = await ethers.getContractFactory(
+    'USDTTokenWithFaucet',
+  )
+  const token = await USDCredTokenWithFaucet.deploy(
+    ethers.utils.parseUnits('1000000', 6),
+  )
 
-    await token.deployed();
+  await token.deployed()
 
-    console.log("USDTTokenWithFaucet deployed to:", token.address);
+  console.log('USDTTokenWithFaucet deployed to:', token.address)
 }
 
 main().catch((error) => {
-    console.error(error);
-    process.exitCode = 1;
-});
+  console.error(error)
+  process.exitCode = 1
+})

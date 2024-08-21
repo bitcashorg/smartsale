@@ -1,6 +1,6 @@
-import { Address } from 'viem'
-import { privateKeyToAccount } from 'viem/accounts'
 import { smartsaleEnv } from 'app-env'
+import type { Address } from 'viem'
+import { privateKeyToAccount } from 'viem/accounts'
 
 export const appConfig = {
   sentry: {

@@ -2,11 +2,7 @@
   "relatedBlogs": [
     {
       "id": "180563939",
-      "topics": [
-        "DAO",
-        "Tokenomics",
-        "Bình luận"
-      ],
+      "topics": ["DAO", "Tokenomics", "Bình luận"],
       "title": "Khung cho Thiết kế Quản trị Blockchain: Bánh xe Nhóm Prysm [Bình luận]",
       "slug": "a-framework-for-blockchain-governance-design-the-prysm-group-wheel-commentary",
       "authorName": "Crypto Clairity",
@@ -25,10 +21,7 @@
     },
     {
       "id": "180217123",
-      "topics": [
-        "Tokenomics",
-        "Bình luận"
-      ],
+      "topics": ["Tokenomics", "Bình luận"],
       "title": "Kinh tế của Khuyến khích Token hóa 2: Lựa chọn Chỉ số Hiệu suất Hiệu quả [Bình luận]",
       "slug": "economics-of-tokenized-incentives-2-selecting-effective-performance-metrics-comme",
       "authorName": "Crypto Clairity",
@@ -47,10 +40,7 @@
     },
     {
       "id": "180217082",
-      "topics": [
-        "Tokenomics",
-        "Bình luận"
-      ],
+      "topics": ["Tokenomics", "Bình luận"],
       "title": "Kinh tế của Khuyến khích Token hóa 1: Giới thiệu về Thanh toán theo Hiệu suất [Bình luận]",
       "slug": "economics-of-tokenized-incentives-1-intro-to-pay-for-performance",
       "authorName": "Crypto Clairity",
@@ -69,11 +59,7 @@
     },
     {
       "id": "180563918",
-      "topics": [
-        "Tokenomics",
-        "Bình luận",
-        "Gây quỹ"
-      ],
+      "topics": ["Tokenomics", "Bình luận", "Gây quỹ"],
       "title": "Token: Phương tiện Đầu tư hay Phương tiện Trao đổi (Không phải Cả Hai) [Bình luận]",
       "slug": "tokens-investment-vehicle-or-medium-of-exchange-not-both-commentary",
       "authorName": "Crypto Clairity",
@@ -92,11 +78,7 @@
     },
     {
       "id": "180563922",
-      "topics": [
-        "Gây quỹ",
-        "Tokenomics",
-        "Bình luận"
-      ],
+      "topics": ["Gây quỹ", "Tokenomics", "Bình luận"],
       "title": "ICO Tận dụng Hiệu ứng Mạng [Bình luận]",
       "slug": "icos-leverage-network-effects-commentary",
       "authorName": "Crypto Clairity",
@@ -115,11 +97,7 @@
     },
     {
       "id": "180556595",
-      "topics": [
-        "Gây quỹ",
-        "Tokenomics",
-        "Bình luận"
-      ],
+      "topics": ["Gây quỹ", "Tokenomics", "Bình luận"],
       "title": "Hiệu ứng Blockchain: Hiệu ứng Mạng mà không tốn Chi phí Quyền lực Thị trường [Bình luận]",
       "slug": "the-blockchain-effect-network-effects-without-market-power-costs-commentary",
       "authorName": "Crypto Clairity",
@@ -138,10 +116,7 @@
     },
     {
       "id": "180563931",
-      "topics": [
-        "Tokenomics",
-        "Bình luận"
-      ],
+      "topics": ["Tokenomics", "Bình luận"],
       "title": "Cấu trúc Khuyến khích Blockchain: Chúng là gì và tại sao chúng quan trọng [Bình luận]",
       "slug": "blockchain-incentive-structures-what-they-are-and-why-they-matter-commentary",
       "authorName": "Crypto Clairity",
@@ -160,11 +135,7 @@
     },
     {
       "id": "167184977",
-      "topics": [
-        "Tokenomics",
-        "DAO",
-        "Gây quỹ"
-      ],
+      "topics": ["Tokenomics", "DAO", "Gây quỹ"],
       "title": "Cách mạng hóa Mô hình Cổ phần: Làm thế nào Tokenomics Làm Xáo trộn Thế giới Khởi nghiệp",
       "slug": "revolutionizing-the-equity-model-how-tokenomics-is-disrupting-the-startup-world",
       "authorName": "Crypto Clairity",
@@ -183,10 +154,7 @@
     },
     {
       "id": "167101094",
-      "topics": [
-        "Bắt đầu",
-        "Tokenomics"
-      ],
+      "topics": ["Bắt đầu", "Tokenomics"],
       "title": "Tokenomics 101: Khai phóng Sức mạnh của Tiền điện tử!",
       "slug": "tokenomics-101-unleashing-the-power-of-cryptocurrency",
       "authorName": "Crypto Clairity",
@@ -206,10 +174,7 @@
   ],
   "blogContent": {
     "id": "180217169",
-    "topics": [
-      "Tokenomics",
-      "Bình luận"
-    ],
+    "topics": ["Tokenomics", "Bình luận"],
     "title": "Kinh tế của các Kích thích Đã Token hóa 3: Giá trị Token Không Đồng nhất các Bên liên quan [Bình luận]",
     "slug": "economics-of-tokenized-incentives-3-token-value-won-t-align-stakeholders-commenta",
     "authorName": "Crypto Clairity",
@@ -279,9 +244,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Tóm tắt"
                     }
                   ]
@@ -301,9 +264,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Bình luận"
                     }
                   ]
@@ -323,9 +284,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Những Hiểu biết Có thể Thực hiện"
                     }
                   ]
@@ -342,9 +301,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Chọn Chỉ số Cẩn thận"
                             },
                             {
@@ -363,9 +320,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Xem xét Các Cấu trúc Kích thích Khác"
                             },
                             {
@@ -384,9 +339,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Hiểu các Vấn đề Có thể Phát sinh"
                             },
                             {
@@ -405,9 +358,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Thiết kế các Chương trình Thưởng Mục tiêu"
                             },
                             {
@@ -426,9 +377,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Giao tiếp Rõ ràng"
                             },
                             {
@@ -461,8 +410,5 @@
       }
     }
   },
-  "topics": [
-    "Tokenomics",
-    "Commentary"
-  ]
+  "topics": ["Tokenomics", "Commentary"]
 }

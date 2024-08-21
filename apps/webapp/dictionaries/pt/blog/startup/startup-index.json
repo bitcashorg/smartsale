@@ -6,10 +6,7 @@
       "articles": [
         {
           "id": "165921766",
-          "topics": [
-            "Primeiros Passos",
-            "Juridico"
-          ],
+          "topics": ["Primeiros Passos", "Juridico"],
           "title": "Navegando pelo Cenario Juridico: Consideracoes Legais Essenciais para Fundadores de Startups",
           "slug": "navigating-the-legal-landscape-essential-legal-considerations-for-startup-founder",
           "authorName": "Steve Savant",
@@ -37,10 +34,7 @@
         },
         {
           "id": "166795692",
-          "topics": [
-            "Comecando",
-            "Negocios e Administracao"
-          ],
+          "topics": ["Comecando", "Negocios e Administracao"],
           "title": "Dominando o Fluxo de Caixa: O Guia Definitivo para Fundadores de Startups",
           "slug": "mastering-cash-flow-the-ultimate-guide-for-startup-founders",
           "authorName": "Bootstrap Briggs",
@@ -68,10 +62,7 @@
         },
         {
           "id": "166788631",
-          "topics": [
-            "Comecando",
-            "Negocios e Administracao"
-          ],
+          "topics": ["Comecando", "Negocios e Administracao"],
           "title": "Orcamento Inteligente para Startups: Um Guia Passo a Passo para Construir uma Base Financeira Solida",
           "slug": "smart-budgeting-for-startups-a-step-by-step-guide-to-building-a-strong-financial",
           "authorName": "Bootstrap Briggs",
@@ -99,10 +90,7 @@
         },
         {
           "id": "165816954",
-          "topics": [
-            "Comecando",
-            "Equipes e RH"
-          ],
+          "topics": ["Comecando", "Equipes e RH"],
           "title": "Construindo um Time dos Sonhos: O Guia Definitivo para Montar sua Equipe de Startup",
           "slug": "building-a-dream-team-the-ultimate-guide-to-assembling-your-startup-squad",
           "authorName": "Bootstrap Briggs",
@@ -130,10 +118,7 @@
         },
         {
           "id": "166322203",
-          "topics": [
-            "Primeiros Passos",
-            "Vendas e Marketing"
-          ],
+          "topics": ["Primeiros Passos", "Vendas e Marketing"],
           "title": "O Plano para o Sucesso: Um Guia para Elaborar um Plano de Vendas Vencedor para sua Startup",
           "slug": "the-blueprint-to-success-a-guide-to-crafting-a-winning-sales-plan-for-your-startu",
           "authorName": "Steve Savant",
@@ -161,10 +146,7 @@
         },
         {
           "id": "166788522",
-          "topics": [
-            "Comecando",
-            "Negocios e Administracao"
-          ],
+          "topics": ["Comecando", "Negocios e Administracao"],
           "title": "Projetando Prosperidade: Um Guia para Definir Projecoes Financeiras Realistas para sua Startup",
           "slug": "projecting-prosperity-a-guide-to-setting-realistic-financial-projections-for-your",
           "authorName": "Bootstrap Briggs",
@@ -192,10 +174,7 @@
         },
         {
           "id": "166788454",
-          "topics": [
-            "Comecando",
-            "Vendas e Marketing"
-          ],
+          "topics": ["Comecando", "Vendas e Marketing"],
           "title": "O Guia Definitivo para Dominar os Custos de Aquisicao de Clientes para Startups",
           "slug": "the-ultimate-guide-to-mastering-customer-acquisition-costs-for-startups",
           "authorName": "Bootstrap Briggs",
@@ -223,10 +202,7 @@
         },
         {
           "id": "166286175",
-          "topics": [
-            "Primeiros Passos",
-            "Vendas e Marketing"
-          ],
+          "topics": ["Primeiros Passos", "Vendas e Marketing"],
           "title": "Maximizando Seu Alcance de Marketing: Um Guia para Utilizar as Redes Sociais para Startups",
           "slug": "maximizing-your-marketing-reach-a-guide-to-utilizing-social-media-for-startups",
           "authorName": "Steve Savant",
@@ -254,10 +230,7 @@
         },
         {
           "id": "166286117",
-          "topics": [
-            "Primeiros Passos",
-            "Vendas e Marketing"
-          ],
+          "topics": ["Primeiros Passos", "Vendas e Marketing"],
           "title": "Construindo sua Marca para o Sucesso: Um Guia para Fundadores de Startups",
           "slug": "branding-your-way-to-success-a-guide-for-start-up-founders",
           "authorName": "Steve Savant",
@@ -285,10 +258,7 @@
         },
         {
           "id": "166277989",
-          "topics": [
-            "Primeiros Passos",
-            "Vendas e Marketing"
-          ],
+          "topics": ["Primeiros Passos", "Vendas e Marketing"],
           "title": "Liberando o Poder do Marketing: Um Guia Abrangente para Fundadores de Startups",
           "slug": "unleashing-the-power-of-marketing-a-comprehensive-guide-for-startup-founders",
           "authorName": "Steve Savant",
@@ -316,10 +286,7 @@
         },
         {
           "id": "166263351",
-          "topics": [
-            "Comecando",
-            "Negocios e Administracao"
-          ],
+          "topics": ["Comecando", "Negocios e Administracao"],
           "title": "Descubra Seu Diferencial: Criando uma Proposta de Valor Unica Convincente",
           "slug": "discover-your-edge-crafting-a-compelling-unique-value-proposition",
           "authorName": "Steve Savant",
@@ -347,9 +314,7 @@
         },
         {
           "id": "166263240",
-          "topics": [
-            "Comecando"
-          ],
+          "topics": ["Comecando"],
           "title": "Iniciando Sua Startup: O Guia Definitivo para Criar um Produto Minimo Viavel",
           "slug": "jumpstarting-your-startup-the-ultimate-guide-to-building-a-minimal-viable-product",
           "authorName": "Bootstrap Briggs",
@@ -377,10 +342,7 @@
         },
         {
           "id": "165927224",
-          "topics": [
-            "Comecando",
-            "Juridico"
-          ],
+          "topics": ["Comecando", "Juridico"],
           "title": "Decifrando o Labirinto da Estrutura Empresarial: Um Guia para Fundadores de Startups",
           "slug": "decoding-the-business-structure-maze-a-guide-for-start-up-founders",
           "authorName": "Steve Savant",
@@ -408,10 +370,7 @@
         },
         {
           "id": "165921857",
-          "topics": [
-            "Primeiros Passos",
-            "Juridico"
-          ],
+          "topics": ["Primeiros Passos", "Juridico"],
           "title": "Protegendo as Joias da Coroa da Sua Startup: Um Guia para Proteger Sua Propriedade Intelectual",
           "slug": "safeguarding-your-startup-s-crown-jewels-a-guide-to-protecting-your-intellectual",
           "authorName": "Steve Savant",
@@ -439,10 +398,7 @@
         },
         {
           "id": "165817305",
-          "topics": [
-            "Primeiros Passos",
-            "Captacao de Recursos"
-          ],
+          "topics": ["Primeiros Passos", "Captacao de Recursos"],
           "title": "Desvendando os Segredos de uma Captacao de Recursos Bem-Sucedida para Startups: Um Guia Completo",
           "slug": "unlocking-the-secrets-of-successful-startup-fundraising-a-comprehensive-guide",
           "authorName": "Steve Savant",
@@ -470,10 +426,7 @@
         },
         {
           "id": "165812094",
-          "topics": [
-            "Primeiros Passos",
-            "Vendas e Marketing"
-          ],
+          "topics": ["Primeiros Passos", "Vendas e Marketing"],
           "title": "Liberando o Poder do Seu Mercado-Alvo: Um Guia Abrangente para Fundadores de Startups",
           "slug": "unleashing-the-power-of-your-target-market-a-comprehensive-guide-for-startup-foun",
           "authorName": "Steve Savant",
@@ -501,9 +454,7 @@
         },
         {
           "id": "165813334",
-          "topics": [
-            "Comecando"
-          ],
+          "topics": ["Comecando"],
           "title": "O Guia Definitivo para Validar sua Ideia de Startup: Do MVP ao Crescimento com Confianca",
           "slug": "the-ultimate-guide-to-validating-your-startup-idea-from-mvp-to-scaling-with-confi",
           "authorName": "Steve Savant",
@@ -531,9 +482,7 @@
         },
         {
           "id": "165817167",
-          "topics": [
-            "Primeiros Passos"
-          ],
+          "topics": ["Primeiros Passos"],
           "title": "Maximizando Sua Rede: A Chave para Desbloquear Oportunidades de Negocios",
           "slug": "maximizing-your-network-the-key-to-unlocking-business-opportunities",
           "authorName": "Bootstrap Briggs",
@@ -561,10 +510,7 @@
         },
         {
           "id": "165815183",
-          "topics": [
-            "Primeiros Passos",
-            "Vendas e Marketing"
-          ],
+          "topics": ["Primeiros Passos", "Vendas e Marketing"],
           "title": "O Poder da Pesquisa de Mercado: Um Guia para Fundadores de Startups",
           "slug": "the-power-of-market-research-a-guide-for-startup-founders",
           "authorName": "Steve Savant",
@@ -592,9 +538,7 @@
         },
         {
           "id": "165816931",
-          "topics": [
-            "Comecando"
-          ],
+          "topics": ["Comecando"],
           "title": "O Guia Definitivo para Elaborar um Plano de Negocios Vencedor para sua Startup",
           "slug": "the-ultimate-guide-to-crafting-a-winning-business-plan-for-your-startup",
           "authorName": "Bootstrap Briggs",
@@ -628,10 +572,7 @@
       "articles": [
         {
           "id": "165921766",
-          "topics": [
-            "Primeiros Passos",
-            "Juridico"
-          ],
+          "topics": ["Primeiros Passos", "Juridico"],
           "title": "Navegando pelo Cenario Juridico: Consideracoes Legais Essenciais para Fundadores de Startups",
           "slug": "navigating-the-legal-landscape-essential-legal-considerations-for-startup-founder",
           "authorName": "Steve Savant",
@@ -659,10 +600,7 @@
         },
         {
           "id": "165927224",
-          "topics": [
-            "Comecando",
-            "Juridico"
-          ],
+          "topics": ["Comecando", "Juridico"],
           "title": "Decifrando o Labirinto da Estrutura Empresarial: Um Guia para Fundadores de Startups",
           "slug": "decoding-the-business-structure-maze-a-guide-for-start-up-founders",
           "authorName": "Steve Savant",
@@ -690,10 +628,7 @@
         },
         {
           "id": "165921857",
-          "topics": [
-            "Primeiros Passos",
-            "Juridico"
-          ],
+          "topics": ["Primeiros Passos", "Juridico"],
           "title": "Protegendo as Joias da Coroa da Sua Startup: Um Guia para Proteger Sua Propriedade Intelectual",
           "slug": "safeguarding-your-startup-s-crown-jewels-a-guide-to-protecting-your-intellectual",
           "authorName": "Steve Savant",
@@ -727,10 +662,7 @@
       "articles": [
         {
           "id": "166795692",
-          "topics": [
-            "Comecando",
-            "Negocios e Administracao"
-          ],
+          "topics": ["Comecando", "Negocios e Administracao"],
           "title": "Dominando o Fluxo de Caixa: O Guia Definitivo para Fundadores de Startups",
           "slug": "mastering-cash-flow-the-ultimate-guide-for-startup-founders",
           "authorName": "Bootstrap Briggs",
@@ -758,10 +690,7 @@
         },
         {
           "id": "166788631",
-          "topics": [
-            "Primeiros Passos",
-            "Negocios e Administracao"
-          ],
+          "topics": ["Primeiros Passos", "Negocios e Administracao"],
           "title": "Orcamento Inteligente para Startups: Um Guia Passo a Passo para Construir uma Base Financeira Solida",
           "slug": "smart-budgeting-for-startups-a-step-by-step-guide-to-building-a-strong-financial",
           "authorName": "Bootstrap Briggs",
@@ -789,10 +718,7 @@
         },
         {
           "id": "166788522",
-          "topics": [
-            "Comecando",
-            "Negocios e Administracao"
-          ],
+          "topics": ["Comecando", "Negocios e Administracao"],
           "title": "Projetando Prosperidade: Um Guia para Definir Projecoes Financeiras Realistas para sua Startup",
           "slug": "projecting-prosperity-a-guide-to-setting-realistic-financial-projections-for-your",
           "authorName": "Bootstrap Briggs",
@@ -820,10 +746,7 @@
         },
         {
           "id": "166263351",
-          "topics": [
-            "Comecando",
-            "Negocios e Administracao"
-          ],
+          "topics": ["Comecando", "Negocios e Administracao"],
           "title": "Descubra Seu Diferencial: Criando uma Proposta de Valor Unica Convincente",
           "slug": "discover-your-edge-crafting-a-compelling-unique-value-proposition",
           "authorName": "Steve Savant",
@@ -857,10 +780,7 @@
       "articles": [
         {
           "id": "165816954",
-          "topics": [
-            "Comecando",
-            "Equipes e RH"
-          ],
+          "topics": ["Comecando", "Equipes e RH"],
           "title": "Construindo um Time dos Sonhos: O Guia Definitivo para Montar sua Equipe de Startup",
           "slug": "building-a-dream-team-the-ultimate-guide-to-assembling-your-startup-squad",
           "authorName": "Bootstrap Briggs",
@@ -894,10 +814,7 @@
       "articles": [
         {
           "id": "166322203",
-          "topics": [
-            "Primeiros Passos",
-            "Vendas e Marketing"
-          ],
+          "topics": ["Primeiros Passos", "Vendas e Marketing"],
           "title": "O Plano para o Sucesso: Um Guia para Elaborar um Plano de Vendas Vencedor para sua Startup",
           "slug": "the-blueprint-to-success-a-guide-to-crafting-a-winning-sales-plan-for-your-startu",
           "authorName": "Steve Savant",
@@ -925,10 +842,7 @@
         },
         {
           "id": "166788454",
-          "topics": [
-            "Comecando",
-            "Vendas e Marketing"
-          ],
+          "topics": ["Comecando", "Vendas e Marketing"],
           "title": "O Guia Definitivo para Dominar os Custos de Aquisicao de Clientes para Startups",
           "slug": "the-ultimate-guide-to-mastering-customer-acquisition-costs-for-startups",
           "authorName": "Bootstrap Briggs",
@@ -956,10 +870,7 @@
         },
         {
           "id": "166286175",
-          "topics": [
-            "Primeiros Passos",
-            "Vendas e Marketing"
-          ],
+          "topics": ["Primeiros Passos", "Vendas e Marketing"],
           "title": "Maximizando Seu Alcance de Marketing: Um Guia para Utilizar as Redes Sociais para Startups",
           "slug": "maximizing-your-marketing-reach-a-guide-to-utilizing-social-media-for-startups",
           "authorName": "Steve Savant",
@@ -987,10 +898,7 @@
         },
         {
           "id": "166286117",
-          "topics": [
-            "Primeiros Passos",
-            "Vendas e Marketing"
-          ],
+          "topics": ["Primeiros Passos", "Vendas e Marketing"],
           "title": "Construindo sua Marca para o Sucesso: Um Guia para Fundadores de Startups",
           "slug": "branding-your-way-to-success-a-guide-for-start-up-founders",
           "authorName": "Steve Savant",
@@ -1018,10 +926,7 @@
         },
         {
           "id": "166277989",
-          "topics": [
-            "Primeiros Passos",
-            "Vendas e Marketing"
-          ],
+          "topics": ["Primeiros Passos", "Vendas e Marketing"],
           "title": "Liberando o Poder do Marketing: Um Guia Abrangente para Fundadores de Startups",
           "slug": "unleashing-the-power-of-marketing-a-comprehensive-guide-for-startup-founders",
           "authorName": "Steve Savant",
@@ -1049,10 +954,7 @@
         },
         {
           "id": "165812094",
-          "topics": [
-            "Primeiros Passos",
-            "Vendas e Marketing"
-          ],
+          "topics": ["Primeiros Passos", "Vendas e Marketing"],
           "title": "Liberando o Poder do Seu Mercado-Alvo: Um Guia Abrangente para Fundadores de Startups",
           "slug": "unleashing-the-power-of-your-target-market-a-comprehensive-guide-for-startup-foun",
           "authorName": "Steve Savant",
@@ -1080,10 +982,7 @@
         },
         {
           "id": "165815183",
-          "topics": [
-            "Primeiros Passos",
-            "Vendas e Marketing"
-          ],
+          "topics": ["Primeiros Passos", "Vendas e Marketing"],
           "title": "O Poder da Pesquisa de Mercado: Um Guia para Fundadores de Startups",
           "slug": "the-power-of-market-research-a-guide-for-startup-founders",
           "authorName": "Steve Savant",
@@ -1117,10 +1016,7 @@
       "articles": [
         {
           "id": "165817305",
-          "topics": [
-            "Primeiros Passos",
-            "Captacao de Recursos"
-          ],
+          "topics": ["Primeiros Passos", "Captacao de Recursos"],
           "title": "Desvendando os Segredos de uma Captacao de Recursos Bem-Sucedida para Startups: Um Guia Completo",
           "slug": "unlocking-the-secrets-of-successful-startup-fundraising-a-comprehensive-guide",
           "authorName": "Steve Savant",

@@ -1,2 +1,2 @@
-export * from "./supa.types";
-export * from "./supa.schemas";
+export * from './supa.types'
+export * from './supa.schemas'

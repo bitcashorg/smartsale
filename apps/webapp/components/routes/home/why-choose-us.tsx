@@ -1,8 +1,8 @@
-import { Card } from '@/components/ui/card'
-import * as Icons from 'lucide-react'
 import { Section } from '@/components/shared/section'
-import { Feature } from '@/types/home'
-import { Lang } from '@/dictionaries/locales'
+import { Card } from '@/components/ui/card'
+import type { Lang } from '@/dictionaries/locales'
+import type { Feature } from '@/types/home'
+import * as Icons from 'lucide-react'
 
 export function WhyChooseUs({ lang, dict }: WhyChooseUsProps) {
   const content = dict.whyChooseUs

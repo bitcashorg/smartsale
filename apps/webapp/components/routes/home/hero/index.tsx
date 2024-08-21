@@ -43,9 +43,9 @@ export function NewHomeHero() {
               title: 'Bitlauncher: Register for Presale Now',
               description: '',
               resourceId: {
-                videoId: 'U6vn3KOEwcQ'
-              }
-            }
+                videoId: 'U6vn3KOEwcQ',
+              },
+            },
           }}
           trigger={
             <div className="flex items-center gap-3 cursor-pointer">
@@ -89,12 +89,12 @@ export function NewHomeHero() {
               link={'/en/bitcash-bitlauncher'}
               className={cn(
                 buttonVariants({
-                  variant: 'secondary'
+                  variant: 'secondary',
                 }),
-                'text-md group relative flex size-14 min-h-14 min-w-14 rounded-full bg-pink-500 !p-0 font-bold hover:bg-pink-500'
+                'text-md group relative flex size-14 min-h-14 min-w-14 rounded-full bg-pink-500 !p-0 font-bold hover:bg-pink-500',
               )}
               aria-label={`View`}
-            // data-title={title}
+              // data-title={title}
             >
               <IconDownRightArrow
                 strokeColor="white"

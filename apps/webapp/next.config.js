@@ -13,15 +13,15 @@ const nextConfig = {
           { key: 'Access-Control-Allow-Origin', value: '*' },
           {
             key: 'Access-Control-Allow-Methods',
-            value: 'GET,OPTIONS,PATCH,DELETE,POST,PUT'
+            value: 'GET,OPTIONS,PATCH,DELETE,POST,PUT',
           },
           {
             key: 'Access-Control-Allow-Headers',
             value:
-              'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version'
-          }
-        ]
-      }
+              'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version',
+          },
+        ],
+      },
     ]
   },
   experimental: {
@@ -32,11 +32,11 @@ const nextConfig = {
       rules: {
         '*.svg': {
           loaders: ['@svgr/webpack'],
-          as: '*.js'
-        }
-      }
+          as: '*.js',
+        },
+      },
     },
-    taint: true
+    taint: true,
   },
   reactStrictMode: true,
   swcMinify: true,
@@ -45,28 +45,28 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'www.datocms-assets.com'
+        hostname: 'www.datocms-assets.com',
       },
       {
         protocol: 'https',
-        hostname: 'datocms-assets.com'
+        hostname: 'datocms-assets.com',
       },
       {
-        hostname: 'cdn.sanity.io'
+        hostname: 'cdn.sanity.io',
       },
       {
-        hostname: 'i.ytimg.com'
+        hostname: 'i.ytimg.com',
       },
       {
-        hostname: 'picsum.photos'
-      }
-    ]
+        hostname: 'picsum.photos',
+      },
+    ],
   },
   logging: {
     fetches: {
-      fullUrl: true
-    }
-  }
+      fullUrl: true,
+    },
+  },
 }
 
 const withBundleAnalyzer = require('@next/bundle-analyzer')()

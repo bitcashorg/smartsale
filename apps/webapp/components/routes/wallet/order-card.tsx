@@ -1,35 +1,35 @@
+import { Button } from '@/components/ui/button'
+import {
+  Pagination,
+  PaginationContent,
+  PaginationItem,
+} from '@/components/ui/pagination'
 import {
   ChevronLeftIcon,
   ChevronRightIcon,
   CopyIcon,
   CreditCardIcon,
   MoveVerticalIcon,
-  TruckIcon
+  TruckIcon,
 } from 'lucide-react'
-import {
-  Pagination,
-  PaginationContent,
-  PaginationItem
-} from '@/components/ui/pagination'
-import { Button } from '@/components/ui/button'
 
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuSeparator,
-  DropdownMenuTrigger
+  DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
 
-import { Separator } from '@/components/ui/separator'
 import {
   Card,
   CardContent,
   CardDescription,
   CardFooter,
   CardHeader,
-  CardTitle
+  CardTitle,
 } from '@/components/ui/card'
+import { Separator } from '@/components/ui/separator'
 
 export function OrderCard() {
   return (

@@ -2,9 +2,7 @@
   "relatedBlogs": [
     {
       "id": "CD89KaoLSh6nQbiMhxX0EQ",
-      "topics": [
-        "launchpad"
-      ],
+      "topics": ["launchpad"],
       "title": "Đảm bảo niềm tin và tính toàn vẹn: Tuân thủ quy định và các biện pháp an ninh",
       "slug": "ensuring-trust-and-integrity-regulatory-compliance-and-security-measures",
       "authorName": "Jun Dam",
@@ -23,9 +21,7 @@
     },
     {
       "id": "fbM-UqrYQXGhw6HB4C6swQ",
-      "topics": [
-        "launchpad"
-      ],
+      "topics": ["launchpad"],
       "title": "Lộ trình Chiến lược: Đổi mới sáng tạo Blockchain và thành công của Startup AI",
       "slug": "strategic-roadmap-pioneering-blockchain-innovation-and-ai-startup-success",
       "authorName": "Jun Dam",
@@ -44,9 +40,7 @@
     },
     {
       "id": "I4jShMnWRruvJgDbrucwDw",
-      "topics": [
-        "launchpad"
-      ],
+      "topics": ["launchpad"],
       "title": "Xương sống Công nghệ của bitLauncher",
       "slug": "the-technological-backbone-of-bitcash-launchpad",
       "authorName": "Jun Dam",
@@ -65,9 +59,7 @@
     },
     {
       "id": "BEfgGhndSsCn5MBU89RO3A",
-      "topics": [
-        "launchpad"
-      ],
+      "topics": ["launchpad"],
       "title": "Trao quyền cho Đổi mới: Tầm nhìn, Sứ mệnh và Mục tiêu Chiến lược của bitLauncher",
       "slug": "empowering-innovation-vision-mission-and-strategic-goals-of-bitcash-launchpad",
       "authorName": "Jun Dam",
@@ -86,12 +78,7 @@
     },
     {
       "id": "NZeB3i5XRzuELW2UWBDyRQ",
-      "topics": [
-        "research",
-        "dao",
-        "fundraising",
-        "launchpad"
-      ],
+      "topics": ["research", "dao", "fundraising", "launchpad"],
       "title": "Điều hướng sự Giao thoa: Phân tích Thị trường Toàn diện về AI và Động lực Tiền điện tử",
       "slug": "navigating-the-convergence-a-comprehensive-market-analysis-of-ai-and-cryptocurren",
       "authorName": "Jun Dam",
@@ -110,9 +97,7 @@
     },
     {
       "id": "BSDdY8byQWipv749rApFRA",
-      "topics": [
-        "launchpad"
-      ],
+      "topics": ["launchpad"],
       "title": "Mở khóa Tiềm năng: Các Trường hợp Sử dụng và Ứng dụng của bitLauncher",
       "slug": "unlocking-potential-use-cases-and-applications-of-bitlauncher",
       "authorName": "Jun Dam",
@@ -132,9 +117,7 @@
   ],
   "blogContent": {
     "id": "MICfokr1TVuScAB4Qh9YGw",
-    "topics": [
-      "bệ phóng"
-    ],
+    "topics": ["bệ phóng"],
     "title": "Trao quyền cho Đổi mới: Tokenomics và Chiến lược Tài trợ của bitcash",
     "slug": "empowering-innovation-tokenomics-and-funding-strategy-of-bitcash",
     "authorName": "Jun Dam",
@@ -316,7 +299,5 @@
       }
     }
   },
-  "topics": [
-    "launchpad"
-  ]
+  "topics": ["launchpad"]
 }

@@ -25,8 +25,8 @@ export async function createSupabaseServerClient() {
         },
         remove(name: string, options: CookieOptions) {
           cookieStore.set({ name, value: '', ...options })
-        }
-      }
-    }
+        },
+      },
+    },
   )
 }

@@ -1,7 +1,5 @@
-// @ts-nocheck
 /* istanbul ignore file */
 /* tslint:disable */
-/* eslint-disable */
 
 export type Scalars = {
   Boolean: boolean
@@ -5008,7 +5006,7 @@ export interface focalPointGenqlSelection {
 
 const BlogAiRecord_possibleTypes: string[] = ['BlogAiRecord']
 export const isBlogAiRecord = (
-  obj?: { __typename?: any } | null
+  obj?: { __typename?: any } | null,
 ): obj is BlogAiRecord => {
   if (!obj?.__typename)
     throw new Error('__typename is missing in "isBlogAiRecord"')
@@ -5017,7 +5015,7 @@ export const isBlogAiRecord = (
 
 const BlogBitcashRecord_possibleTypes: string[] = ['BlogBitcashRecord']
 export const isBlogBitcashRecord = (
-  obj?: { __typename?: any } | null
+  obj?: { __typename?: any } | null,
 ): obj is BlogBitcashRecord => {
   if (!obj?.__typename)
     throw new Error('__typename is missing in "isBlogBitcashRecord"')
@@ -5026,7 +5024,7 @@ export const isBlogBitcashRecord = (
 
 const BlogBitcoinRecord_possibleTypes: string[] = ['BlogBitcoinRecord']
 export const isBlogBitcoinRecord = (
-  obj?: { __typename?: any } | null
+  obj?: { __typename?: any } | null,
 ): obj is BlogBitcoinRecord => {
   if (!obj?.__typename)
     throw new Error('__typename is missing in "isBlogBitcoinRecord"')
@@ -5035,7 +5033,7 @@ export const isBlogBitcoinRecord = (
 
 const BlogCryptoRecord_possibleTypes: string[] = ['BlogCryptoRecord']
 export const isBlogCryptoRecord = (
-  obj?: { __typename?: any } | null
+  obj?: { __typename?: any } | null,
 ): obj is BlogCryptoRecord => {
   if (!obj?.__typename)
     throw new Error('__typename is missing in "isBlogCryptoRecord"')
@@ -5044,7 +5042,7 @@ export const isBlogCryptoRecord = (
 
 const BlogInvestingRecord_possibleTypes: string[] = ['BlogInvestingRecord']
 export const isBlogInvestingRecord = (
-  obj?: { __typename?: any } | null
+  obj?: { __typename?: any } | null,
 ): obj is BlogInvestingRecord => {
   if (!obj?.__typename)
     throw new Error('__typename is missing in "isBlogInvestingRecord"')
@@ -5053,7 +5051,7 @@ export const isBlogInvestingRecord = (
 
 const BlogNewsRecord_possibleTypes: string[] = ['BlogNewsRecord']
 export const isBlogNewsRecord = (
-  obj?: { __typename?: any } | null
+  obj?: { __typename?: any } | null,
 ): obj is BlogNewsRecord => {
   if (!obj?.__typename)
     throw new Error('__typename is missing in "isBlogNewsRecord"')
@@ -5062,7 +5060,7 @@ export const isBlogNewsRecord = (
 
 const BlogStartupRecord_possibleTypes: string[] = ['BlogStartupRecord']
 export const isBlogStartupRecord = (
-  obj?: { __typename?: any } | null
+  obj?: { __typename?: any } | null,
 ): obj is BlogStartupRecord => {
   if (!obj?.__typename)
     throw new Error('__typename is missing in "isBlogStartupRecord"')
@@ -5071,7 +5069,7 @@ export const isBlogStartupRecord = (
 
 const CollectionMetadata_possibleTypes: string[] = ['CollectionMetadata']
 export const isCollectionMetadata = (
-  obj?: { __typename?: any } | null
+  obj?: { __typename?: any } | null,
 ): obj is CollectionMetadata => {
   if (!obj?.__typename)
     throw new Error('__typename is missing in "isCollectionMetadata"')
@@ -5080,7 +5078,7 @@ export const isCollectionMetadata = (
 
 const ColorField_possibleTypes: string[] = ['ColorField']
 export const isColorField = (
-  obj?: { __typename?: any } | null
+  obj?: { __typename?: any } | null,
 ): obj is ColorField => {
   if (!obj?.__typename)
     throw new Error('__typename is missing in "isColorField"')
@@ -5088,23 +5086,23 @@ export const isColorField = (
 }
 
 const ContentBlockModelMainContentField_possibleTypes: string[] = [
-  'ContentBlockModelMainContentField'
+  'ContentBlockModelMainContentField',
 ]
 export const isContentBlockModelMainContentField = (
-  obj?: { __typename?: any } | null
+  obj?: { __typename?: any } | null,
 ): obj is ContentBlockModelMainContentField => {
   if (!obj?.__typename)
     throw new Error(
-      '__typename is missing in "isContentBlockModelMainContentField"'
+      '__typename is missing in "isContentBlockModelMainContentField"',
     )
   return ContentBlockModelMainContentField_possibleTypes.includes(
-    obj.__typename
+    obj.__typename,
   )
 }
 
 const ContentBlockRecord_possibleTypes: string[] = ['ContentBlockRecord']
 export const isContentBlockRecord = (
-  obj?: { __typename?: any } | null
+  obj?: { __typename?: any } | null,
 ): obj is ContentBlockRecord => {
   if (!obj?.__typename)
     throw new Error('__typename is missing in "isContentBlockRecord"')
@@ -5113,7 +5111,7 @@ export const isContentBlockRecord = (
 
 const FileField_possibleTypes: string[] = ['FileField']
 export const isFileField = (
-  obj?: { __typename?: any } | null
+  obj?: { __typename?: any } | null,
 ): obj is FileField => {
   if (!obj?.__typename)
     throw new Error('__typename is missing in "isFileField"')
@@ -5122,7 +5120,7 @@ export const isFileField = (
 
 const FileFieldInterface_possibleTypes: string[] = ['FileField']
 export const isFileFieldInterface = (
-  obj?: { __typename?: any } | null
+  obj?: { __typename?: any } | null,
 ): obj is FileFieldInterface => {
   if (!obj?.__typename)
     throw new Error('__typename is missing in "isFileFieldInterface"')
@@ -5131,7 +5129,7 @@ export const isFileFieldInterface = (
 
 const GlobalSeoField_possibleTypes: string[] = ['GlobalSeoField']
 export const isGlobalSeoField = (
-  obj?: { __typename?: any } | null
+  obj?: { __typename?: any } | null,
 ): obj is GlobalSeoField => {
   if (!obj?.__typename)
     throw new Error('__typename is missing in "isGlobalSeoField"')
@@ -5139,10 +5137,10 @@ export const isGlobalSeoField = (
 }
 
 const JsonFieldMultiLocaleField_possibleTypes: string[] = [
-  'JsonFieldMultiLocaleField'
+  'JsonFieldMultiLocaleField',
 ]
 export const isJsonFieldMultiLocaleField = (
-  obj?: { __typename?: any } | null
+  obj?: { __typename?: any } | null,
 ): obj is JsonFieldMultiLocaleField => {
   if (!obj?.__typename)
     throw new Error('__typename is missing in "isJsonFieldMultiLocaleField"')
@@ -5151,7 +5149,7 @@ export const isJsonFieldMultiLocaleField = (
 
 const LayoutRecord_possibleTypes: string[] = ['LayoutRecord']
 export const isLayoutRecord = (
-  obj?: { __typename?: any } | null
+  obj?: { __typename?: any } | null,
 ): obj is LayoutRecord => {
   if (!obj?.__typename)
     throw new Error('__typename is missing in "isLayoutRecord"')
@@ -5160,7 +5158,7 @@ export const isLayoutRecord = (
 
 const PageSeoRecord_possibleTypes: string[] = ['PageSeoRecord']
 export const isPageSeoRecord = (
-  obj?: { __typename?: any } | null
+  obj?: { __typename?: any } | null,
 ): obj is PageSeoRecord => {
   if (!obj?.__typename)
     throw new Error('__typename is missing in "isPageSeoRecord"')
@@ -5168,37 +5166,37 @@ export const isPageSeoRecord = (
 }
 
 const PrivacyPolicyModelMainContentField_possibleTypes: string[] = [
-  'PrivacyPolicyModelMainContentField'
+  'PrivacyPolicyModelMainContentField',
 ]
 export const isPrivacyPolicyModelMainContentField = (
-  obj?: { __typename?: any } | null
+  obj?: { __typename?: any } | null,
 ): obj is PrivacyPolicyModelMainContentField => {
   if (!obj?.__typename)
     throw new Error(
-      '__typename is missing in "isPrivacyPolicyModelMainContentField"'
+      '__typename is missing in "isPrivacyPolicyModelMainContentField"',
     )
   return PrivacyPolicyModelMainContentField_possibleTypes.includes(
-    obj.__typename
+    obj.__typename,
   )
 }
 
 const PrivacyPolicyModelMainContentFieldMultiLocaleField_possibleTypes: string[] =
   ['PrivacyPolicyModelMainContentFieldMultiLocaleField']
 export const isPrivacyPolicyModelMainContentFieldMultiLocaleField = (
-  obj?: { __typename?: any } | null
+  obj?: { __typename?: any } | null,
 ): obj is PrivacyPolicyModelMainContentFieldMultiLocaleField => {
   if (!obj?.__typename)
     throw new Error(
-      '__typename is missing in "isPrivacyPolicyModelMainContentFieldMultiLocaleField"'
+      '__typename is missing in "isPrivacyPolicyModelMainContentFieldMultiLocaleField"',
     )
   return PrivacyPolicyModelMainContentFieldMultiLocaleField_possibleTypes.includes(
-    obj.__typename
+    obj.__typename,
   )
 }
 
 const PrivacyPolicyRecord_possibleTypes: string[] = ['PrivacyPolicyRecord']
 export const isPrivacyPolicyRecord = (
-  obj?: { __typename?: any } | null
+  obj?: { __typename?: any } | null,
 ): obj is PrivacyPolicyRecord => {
   if (!obj?.__typename)
     throw new Error('__typename is missing in "isPrivacyPolicyRecord"')
@@ -5225,10 +5223,10 @@ const RecordInterface_possibleTypes: string[] = [
   'PrivacyPolicyRecord',
   'ResearchAiRecord',
   'TermsAndConditionRecord',
-  'TopicRecord'
+  'TopicRecord',
 ]
 export const isRecordInterface = (
-  obj?: { __typename?: any } | null
+  obj?: { __typename?: any } | null,
 ): obj is RecordInterface => {
   if (!obj?.__typename)
     throw new Error('__typename is missing in "isRecordInterface"')
@@ -5237,7 +5235,7 @@ export const isRecordInterface = (
 
 const ResearchAiRecord_possibleTypes: string[] = ['ResearchAiRecord']
 export const isResearchAiRecord = (
-  obj?: { __typename?: any } | null
+  obj?: { __typename?: any } | null,
 ): obj is ResearchAiRecord => {
   if (!obj?.__typename)
     throw new Error('__typename is missing in "isResearchAiRecord"')
@@ -5246,7 +5244,7 @@ export const isResearchAiRecord = (
 
 const ResponsiveImage_possibleTypes: string[] = ['ResponsiveImage']
 export const isResponsiveImage = (
-  obj?: { __typename?: any } | null
+  obj?: { __typename?: any } | null,
 ): obj is ResponsiveImage => {
   if (!obj?.__typename)
     throw new Error('__typename is missing in "isResponsiveImage"')
@@ -5255,17 +5253,17 @@ export const isResponsiveImage = (
 
 const SeoField_possibleTypes: string[] = ['SeoField']
 export const isSeoField = (
-  obj?: { __typename?: any } | null
+  obj?: { __typename?: any } | null,
 ): obj is SeoField => {
   if (!obj?.__typename) throw new Error('__typename is missing in "isSeoField"')
   return SeoField_possibleTypes.includes(obj.__typename)
 }
 
 const SeoFieldMultiLocaleField_possibleTypes: string[] = [
-  'SeoFieldMultiLocaleField'
+  'SeoFieldMultiLocaleField',
 ]
 export const isSeoFieldMultiLocaleField = (
-  obj?: { __typename?: any } | null
+  obj?: { __typename?: any } | null,
 ): obj is SeoFieldMultiLocaleField => {
   if (!obj?.__typename)
     throw new Error('__typename is missing in "isSeoFieldMultiLocaleField"')
@@ -5279,10 +5277,10 @@ export const isSite = (obj?: { __typename?: any } | null): obj is Site => {
 }
 
 const StringMultiLocaleField_possibleTypes: string[] = [
-  'StringMultiLocaleField'
+  'StringMultiLocaleField',
 ]
 export const isStringMultiLocaleField = (
-  obj?: { __typename?: any } | null
+  obj?: { __typename?: any } | null,
 ): obj is StringMultiLocaleField => {
   if (!obj?.__typename)
     throw new Error('__typename is missing in "isStringMultiLocaleField"')
@@ -5296,39 +5294,39 @@ export const isTag = (obj?: { __typename?: any } | null): obj is Tag => {
 }
 
 const TermsAndConditionModelMainContentField_possibleTypes: string[] = [
-  'TermsAndConditionModelMainContentField'
+  'TermsAndConditionModelMainContentField',
 ]
 export const isTermsAndConditionModelMainContentField = (
-  obj?: { __typename?: any } | null
+  obj?: { __typename?: any } | null,
 ): obj is TermsAndConditionModelMainContentField => {
   if (!obj?.__typename)
     throw new Error(
-      '__typename is missing in "isTermsAndConditionModelMainContentField"'
+      '__typename is missing in "isTermsAndConditionModelMainContentField"',
     )
   return TermsAndConditionModelMainContentField_possibleTypes.includes(
-    obj.__typename
+    obj.__typename,
   )
 }
 
 const TermsAndConditionModelMainContentFieldMultiLocaleField_possibleTypes: string[] =
   ['TermsAndConditionModelMainContentFieldMultiLocaleField']
 export const isTermsAndConditionModelMainContentFieldMultiLocaleField = (
-  obj?: { __typename?: any } | null
+  obj?: { __typename?: any } | null,
 ): obj is TermsAndConditionModelMainContentFieldMultiLocaleField => {
   if (!obj?.__typename)
     throw new Error(
-      '__typename is missing in "isTermsAndConditionModelMainContentFieldMultiLocaleField"'
+      '__typename is missing in "isTermsAndConditionModelMainContentFieldMultiLocaleField"',
     )
   return TermsAndConditionModelMainContentFieldMultiLocaleField_possibleTypes.includes(
-    obj.__typename
+    obj.__typename,
   )
 }
 
 const TermsAndConditionRecord_possibleTypes: string[] = [
-  'TermsAndConditionRecord'
+  'TermsAndConditionRecord',
 ]
 export const isTermsAndConditionRecord = (
-  obj?: { __typename?: any } | null
+  obj?: { __typename?: any } | null,
 ): obj is TermsAndConditionRecord => {
   if (!obj?.__typename)
     throw new Error('__typename is missing in "isTermsAndConditionRecord"')
@@ -5337,7 +5335,7 @@ export const isTermsAndConditionRecord = (
 
 const TopicRecord_possibleTypes: string[] = ['TopicRecord']
 export const isTopicRecord = (
-  obj?: { __typename?: any } | null
+  obj?: { __typename?: any } | null,
 ): obj is TopicRecord => {
   if (!obj?.__typename)
     throw new Error('__typename is missing in "isTopicRecord"')
@@ -5346,7 +5344,7 @@ export const isTopicRecord = (
 
 const UploadVideoField_possibleTypes: string[] = ['UploadVideoField']
 export const isUploadVideoField = (
-  obj?: { __typename?: any } | null
+  obj?: { __typename?: any } | null,
 ): obj is UploadVideoField => {
   if (!obj?.__typename)
     throw new Error('__typename is missing in "isUploadVideoField"')
@@ -5355,7 +5353,7 @@ export const isUploadVideoField = (
 
 const focalPoint_possibleTypes: string[] = ['focalPoint']
 export const isfocalPoint = (
-  obj?: { __typename?: any } | null
+  obj?: { __typename?: any } | null,
 ): obj is focalPoint => {
   if (!obj?.__typename)
     throw new Error('__typename is missing in "isfocalPoint"')
@@ -5386,7 +5384,7 @@ export const enumBlogAiModelOrderBy = {
   description_ASC: 'description_ASC' as const,
   description_DESC: 'description_DESC' as const,
   title_ASC: 'title_ASC' as const,
-  title_DESC: 'title_DESC' as const
+  title_DESC: 'title_DESC' as const,
 }
 
 export const enumBlogBitcashModelOrderBy = {
@@ -5413,7 +5411,7 @@ export const enumBlogBitcashModelOrderBy = {
   description_ASC: 'description_ASC' as const,
   description_DESC: 'description_DESC' as const,
   title_ASC: 'title_ASC' as const,
-  title_DESC: 'title_DESC' as const
+  title_DESC: 'title_DESC' as const,
 }
 
 export const enumBlogBitcoinModelOrderBy = {
@@ -5440,7 +5438,7 @@ export const enumBlogBitcoinModelOrderBy = {
   description_ASC: 'description_ASC' as const,
   description_DESC: 'description_DESC' as const,
   title_ASC: 'title_ASC' as const,
-  title_DESC: 'title_DESC' as const
+  title_DESC: 'title_DESC' as const,
 }
 
 export const enumBlogCryptoModelOrderBy = {
@@ -5467,7 +5465,7 @@ export const enumBlogCryptoModelOrderBy = {
   description_ASC: 'description_ASC' as const,
   description_DESC: 'description_DESC' as const,
   title_ASC: 'title_ASC' as const,
-  title_DESC: 'title_DESC' as const
+  title_DESC: 'title_DESC' as const,
 }
 
 export const enumBlogInvestingModelOrderBy = {
@@ -5494,7 +5492,7 @@ export const enumBlogInvestingModelOrderBy = {
   description_ASC: 'description_ASC' as const,
   description_DESC: 'description_DESC' as const,
   title_ASC: 'title_ASC' as const,
-  title_DESC: 'title_DESC' as const
+  title_DESC: 'title_DESC' as const,
 }
 
 export const enumBlogNewsModelOrderBy = {
@@ -5521,7 +5519,7 @@ export const enumBlogNewsModelOrderBy = {
   description_ASC: 'description_ASC' as const,
   description_DESC: 'description_DESC' as const,
   title_ASC: 'title_ASC' as const,
-  title_DESC: 'title_DESC' as const
+  title_DESC: 'title_DESC' as const,
 }
 
 export const enumBlogStartupModelOrderBy = {
@@ -5548,7 +5546,7 @@ export const enumBlogStartupModelOrderBy = {
   description_ASC: 'description_ASC' as const,
   description_DESC: 'description_DESC' as const,
   title_ASC: 'title_ASC' as const,
-  title_DESC: 'title_DESC' as const
+  title_DESC: 'title_DESC' as const,
 }
 
 export const enumColorBucketType = {
@@ -5563,20 +5561,20 @@ export const enumColorBucketType = {
   brown: 'brown' as const,
   grey: 'grey' as const,
   white: 'white' as const,
-  black: 'black' as const
+  black: 'black' as const,
 }
 
 export const enumFaviconType = {
   icon: 'icon' as const,
   appleTouchIcon: 'appleTouchIcon' as const,
-  msApplication: 'msApplication' as const
+  msApplication: 'msApplication' as const,
 }
 
 export const enumImgixParamsAuto = {
   enhance: 'enhance' as const,
   format: 'format' as const,
   redeye: 'redeye' as const,
-  compress: 'compress' as const
+  compress: 'compress' as const,
 }
 
 export const enumImgixParamsBlendAlign = {
@@ -5585,7 +5583,7 @@ export const enumImgixParamsBlendAlign = {
   middle: 'middle' as const,
   left: 'left' as const,
   right: 'right' as const,
-  center: 'center' as const
+  center: 'center' as const,
 }
 
 export const enumImgixParamsBlendCrop = {
@@ -5593,7 +5591,7 @@ export const enumImgixParamsBlendCrop = {
   bottom: 'bottom' as const,
   left: 'left' as const,
   right: 'right' as const,
-  faces: 'faces' as const
+  faces: 'faces' as const,
 }
 
 export const enumImgixParamsBlendFit = {
@@ -5601,7 +5599,7 @@ export const enumImgixParamsBlendFit = {
   clip: 'clip' as const,
   crop: 'crop' as const,
   scale: 'scale' as const,
-  max: 'max' as const
+  max: 'max' as const,
 }
 
 export const enumImgixParamsBlendMode = {
@@ -5620,17 +5618,17 @@ export const enumImgixParamsBlendMode = {
   saturation: 'saturation' as const,
   screen: 'screen' as const,
   softlight: 'softlight' as const,
-  normal: 'normal' as const
+  normal: 'normal' as const,
 }
 
 export const enumImgixParamsBlendSize = {
-  inherit: 'inherit' as const
+  inherit: 'inherit' as const,
 }
 
 export const enumImgixParamsCh = {
   width: 'width' as const,
   dpr: 'dpr' as const,
-  saveData: 'saveData' as const
+  saveData: 'saveData' as const,
 }
 
 export const enumImgixParamsCrop = {
@@ -5641,19 +5639,19 @@ export const enumImgixParamsCrop = {
   faces: 'faces' as const,
   entropy: 'entropy' as const,
   edges: 'edges' as const,
-  focalpoint: 'focalpoint' as const
+  focalpoint: 'focalpoint' as const,
 }
 
 export const enumImgixParamsCs = {
   srgb: 'srgb' as const,
   adobergb1998: 'adobergb1998' as const,
   tinysrgb: 'tinysrgb' as const,
-  strip: 'strip' as const
+  strip: 'strip' as const,
 }
 
 export const enumImgixParamsFill = {
   solid: 'solid' as const,
-  blur: 'blur' as const
+  blur: 'blur' as const,
 }
 
 export const enumImgixParamsFit = {
@@ -5665,13 +5663,13 @@ export const enumImgixParamsFit = {
   fillmax: 'fillmax' as const,
   max: 'max' as const,
   min: 'min' as const,
-  scale: 'scale' as const
+  scale: 'scale' as const,
 }
 
 export const enumImgixParamsFlip = {
   h: 'h' as const,
   v: 'v' as const,
-  hv: 'hv' as const
+  hv: 'hv' as const,
 }
 
 export const enumImgixParamsFm = {
@@ -5688,12 +5686,12 @@ export const enumImgixParamsFm = {
   webp: 'webp' as const,
   webm: 'webm' as const,
   blurhash: 'blurhash' as const,
-  avif: 'avif' as const
+  avif: 'avif' as const,
 }
 
 export const enumImgixParamsIptc = {
   allow: 'allow' as const,
-  block: 'block' as const
+  block: 'block' as const,
 }
 
 export const enumImgixParamsMarkAlign = {
@@ -5702,7 +5700,7 @@ export const enumImgixParamsMarkAlign = {
   bottom: 'bottom' as const,
   left: 'left' as const,
   center: 'center' as const,
-  right: 'right' as const
+  right: 'right' as const,
 }
 
 export const enumImgixParamsMarkFit = {
@@ -5710,25 +5708,25 @@ export const enumImgixParamsMarkFit = {
   crop: 'crop' as const,
   fill: 'fill' as const,
   max: 'max' as const,
-  scale: 'scale' as const
+  scale: 'scale' as const,
 }
 
 export const enumImgixParamsMarkTile = {
-  grid: 'grid' as const
+  grid: 'grid' as const,
 }
 
 export const enumImgixParamsPalette = {
   css: 'css' as const,
-  json: 'json' as const
+  json: 'json' as const,
 }
 
 export const enumImgixParamsTransparency = {
-  grid: 'grid' as const
+  grid: 'grid' as const,
 }
 
 export const enumImgixParamsTrim = {
   auto: 'auto' as const,
-  color: 'color' as const
+  color: 'color' as const,
 }
 
 export const enumImgixParamsTxtAlign = {
@@ -5737,30 +5735,30 @@ export const enumImgixParamsTxtAlign = {
   bottom: 'bottom' as const,
   left: 'left' as const,
   center: 'center' as const,
-  right: 'right' as const
+  right: 'right' as const,
 }
 
 export const enumImgixParamsTxtClip = {
   start: 'start' as const,
   middle: 'middle' as const,
   end: 'end' as const,
-  ellipsis: 'ellipsis' as const
+  ellipsis: 'ellipsis' as const,
 }
 
 export const enumImgixParamsTxtFit = {
-  max: 'max' as const
+  max: 'max' as const,
 }
 
 export const enumItemStatus = {
   draft: 'draft' as const,
   updated: 'updated' as const,
-  published: 'published' as const
+  published: 'published' as const,
 }
 
 export const enumMuxThumbnailFormatType = {
   jpg: 'jpg' as const,
   png: 'png' as const,
-  gif: 'gif' as const
+  gif: 'gif' as const,
 }
 
 export const enumPageSeoModelOrderBy = {
@@ -5787,7 +5785,7 @@ export const enumPageSeoModelOrderBy = {
   seoType_ASC: 'seoType_ASC' as const,
   seoType_DESC: 'seoType_DESC' as const,
   title_ASC: 'title_ASC' as const,
-  title_DESC: 'title_DESC' as const
+  title_DESC: 'title_DESC' as const,
 }
 
 export const enumResearchAiModelOrderBy = {
@@ -5814,14 +5812,14 @@ export const enumResearchAiModelOrderBy = {
   description_ASC: 'description_ASC' as const,
   description_DESC: 'description_DESC' as const,
   title_ASC: 'title_ASC' as const,
-  title_DESC: 'title_DESC' as const
+  title_DESC: 'title_DESC' as const,
 }
 
 export const enumResolutionType = {
   icon: 'icon' as const,
   small: 'small' as const,
   medium: 'medium' as const,
-  large: 'large' as const
+  large: 'large' as const,
 }
 
 export const enumSiteLocale = {
@@ -5829,7 +5827,7 @@ export const enumSiteLocale = {
   es: 'es' as const,
   zh: 'zh' as const,
   id: 'id' as const,
-  vi: 'vi' as const
+  vi: 'vi' as const,
 }
 
 export const enumUploadOrderBy = {
@@ -5850,13 +5848,13 @@ export const enumUploadOrderBy = {
   _updatedAt_ASC: '_updatedAt_ASC' as const,
   _updatedAt_DESC: '_updatedAt_DESC' as const,
   id_ASC: 'id_ASC' as const,
-  id_DESC: 'id_DESC' as const
+  id_DESC: 'id_DESC' as const,
 }
 
 export const enumUploadOrientation = {
   landscape: 'landscape' as const,
   portrait: 'portrait' as const,
-  square: 'square' as const
+  square: 'square' as const,
 }
 
 export const enumUploadType = {
@@ -5867,11 +5865,11 @@ export const enumUploadType = {
   presentation: 'presentation' as const,
   spreadsheet: 'spreadsheet' as const,
   pdfdocument: 'pdfdocument' as const,
-  archive: 'archive' as const
+  archive: 'archive' as const,
 }
 
 export const enumVideoMp4Res = {
   low: 'low' as const,
   medium: 'medium' as const,
-  high: 'high' as const
+  high: 'high' as const,
 }

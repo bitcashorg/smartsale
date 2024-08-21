@@ -2,10 +2,7 @@
   "relatedBlogs": [],
   "blogContent": {
     "id": "198277277",
-    "topics": [
-      "大语言模型",
-      "压缩"
-    ],
+    "topics": ["大语言模型", "压缩"],
     "title": "语言建模即压缩",
     "slug": "language-modeling-is-compression",
     "authorName": "Prof. Otto Nomos",
@@ -175,9 +172,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Compression as Prediction"
                             },
                             {
@@ -196,9 +191,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "General-Purpose Compressors"
                             },
                             {
@@ -217,9 +210,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Gaining Insights"
                             },
                             {
@@ -238,9 +229,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Generative Models from Compressors"
                             },
                             {
@@ -274,9 +263,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Data Storage and Transfer"
                             },
                             {
@@ -295,9 +282,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Beyond Text"
                             },
                             {
@@ -316,9 +301,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Better Understanding of LLMs"
                             },
                             {
@@ -337,9 +320,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Generative Applications"
                             },
                             {
@@ -373,9 +354,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Computational Resources"
                             },
                             {
@@ -394,9 +373,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Domain Expertise"
                             },
                             {
@@ -466,8 +443,5 @@
       }
     }
   },
-  "topics": [
-    "大语言模型",
-    "压缩"
-  ]
+  "topics": ["大语言模型", "压缩"]
 }

@@ -8,7 +8,7 @@ import { useSession } from '@/hooks/use-session'
 import { uniq } from 'lodash'
 import { useParams } from 'next/navigation'
 import { useAccount } from 'wagmi'
-import { useSupabaseClient } from '../../../services/supabase/client'
+import { useSupabaseClient } from '@/services/supabase/client'
 
 export function CopyShortlinkIcon() {
   const [status, setStatus] = useState<
@@ -111,5 +111,5 @@ const iconsMap = {
   ),
   copied: <LucideCheck size={26} className="stroke-success" />,
   error: <LucideX size={26} className="stroke-destructive" />,
-  default: <LucideShare size={26} className="stroke-accent-secondary" />
+  default: <LucideShare size={26} className="stroke-accent-secondary" />,
 }

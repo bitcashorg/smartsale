@@ -4,7 +4,7 @@ import { BitcashAccessButton } from '@/components/layout/header/bitcash-access'
 import { Section } from '@/components/shared/section'
 import { buttonVariants } from '@/components/ui/button'
 import { IconDownRightArrow } from '@/components/ui/icons'
-import { Lang } from '@/dictionaries/locales'
+import type { Lang } from '@/dictionaries/locales'
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
 
@@ -18,7 +18,7 @@ export default function Participate({ lang, dict }: ParticipateProps) {
         {dict.footer.step.map(
           (
             step: { title: string; description: string; href: string },
-            index: number
+            index: number,
           ) => (
             <div
               key={`${index}__step-content`}
@@ -37,9 +37,9 @@ export default function Participate({ lang, dict }: ParticipateProps) {
                     className={cn(
                       buttonVariants({
                         variant: 'accent',
-                        size: 'icon'
+                        size: 'icon',
                       }),
-                      'text-md group relative size-14 rounded-full p-0 font-bold hover:[&svg]:fill-card'
+                      'text-md group relative size-14 rounded-full p-0 font-bold hover:[&svg]:fill-card',
                     )}
                   >
                     <IconDownRightArrow className="size-4 transition-all group-focus-within:-rotate-45 group-hover:-rotate-45 [&_path]:stroke-white" />
@@ -53,7 +53,7 @@ export default function Participate({ lang, dict }: ParticipateProps) {
                 )}
               </div>
             </div>
-          )
+          ),
         )}
       </div>
     </Section>

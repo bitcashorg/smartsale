@@ -1,19 +1,19 @@
-import { Metadata } from 'next'
-import { notFound } from 'next/navigation'
+import { BlogSections } from '@/components/routes/blog/blog-sections'
+import { BgHeader } from '@/components/shared/bg-header'
+import { type Lang, locales } from '@/dictionaries/locales'
+import { generateMetadataFromSEO } from '@/lib/seo'
 import {
   getArticleSections,
   getBlogCategoryLandingData,
-  getPageSeoText
+  getPageSeoText,
 } from '@/services/datocms'
-import { generateMetadataFromSEO } from '@/lib/seo'
-import { BlogSections } from '@/components/routes/blog/blog-sections'
-import { Lang, locales } from '@/dictionaries/locales'
+import type { Metadata } from 'next'
 import Image from 'next/image'
-import { BgHeader } from '@/components/shared/bg-header'
+import { notFound } from 'next/navigation'
 
 export default async function Page(props: CategoryPageProps) {
   const {
-    params: { lang, category }
+    params: { lang, category },
   } = props
 
   const data = await getBlogCategoryLandingData(lang, category)
@@ -43,9 +43,9 @@ export async function generateStaticParams(): Promise<CategoryPageParams[]> {
       locales.map(async (lang): Promise<CategoryPageParams[]> => {
         const sections = await getArticleSections(lang)
         if (!sections) throw 'sections not found'
-        const categories = sections.map(section => section.slug)
-        return categories.map(category => ({ lang, category }))
-      })
+        const categories = sections.map((section) => section.slug)
+        return categories.map((category) => ({ lang, category }))
+      }),
     )
   ).flat()
   return params
@@ -53,7 +53,7 @@ export async function generateStaticParams(): Promise<CategoryPageParams[]> {
 
 export async function generateMetadata(props: any): Promise<Metadata> {
   const {
-    params: { lang, category }
+    params: { lang, category },
   } = props
 
   const pageSeo = await getPageSeoText(category)
@@ -63,7 +63,7 @@ export async function generateMetadata(props: any): Promise<Metadata> {
     description: pageSeo?.pageSeo?.description || '',
     ogType: 'website',
     ogImageUrl: pageSeo?.pageSeo?.image?.url || '',
-    twitterCard: 'summary_large_image'
+    twitterCard: 'summary_large_image',
   }
 
   return generateMetadataFromSEO(seoData)
