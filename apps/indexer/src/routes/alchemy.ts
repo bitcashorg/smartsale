@@ -20,7 +20,10 @@ export function alchemyWebhook(req: Request, res: Response) {
 function validateAlchemySignature(req: Request): boolean {
   const alchemySignature = req.headers['x-alchemy-signature'] as string
   const payload = JSON.stringify(req.body)
-  const hmac = crypto.createHmac('sha256', appConfig.evm.alchemySecretKey)
+  const hmac = crypto.createHmac(
+    'sha256',
+    appConfig.evm.alchemy.activitySigningKey,
+  )
   hmac.update(payload)
   return alchemySignature === hmac.digest('hex')
 }
