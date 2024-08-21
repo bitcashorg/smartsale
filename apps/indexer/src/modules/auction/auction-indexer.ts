@@ -14,7 +14,6 @@ import { upsertAuctionDetail, upsertOrder } from '~/lib/supabase-client'
 export async function startAuctionIndexer() {
   console.log('indexing starting')
 
-  // TODO: create client for 
   const client = createPublicClient({
     chain: eosEvmTestnet,
     transport: http(),
