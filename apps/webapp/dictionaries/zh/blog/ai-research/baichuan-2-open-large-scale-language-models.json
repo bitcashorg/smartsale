@@ -2,10 +2,7 @@
   "relatedBlogs": [],
   "blogContent": {
     "id": "198277345",
-    "topics": [
-      "大语言模型",
-      "多语言"
-    ],
+    "topics": ["大语言模型", "多语言"],
     "title": "百川2：开放大规模语言模型",
     "slug": "baichuan-2-open-large-scale-language-models",
     "authorName": "Prof. Otto Nomos",
@@ -231,9 +228,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Multilingual LLM"
                             },
                             {
@@ -252,9 +247,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Significant Scale"
                             },
                             {
@@ -273,9 +266,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Benchmark Performance"
                             },
                             {
@@ -294,9 +285,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Domain Specialization"
                             },
                             {
@@ -315,9 +304,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Open-Source Availability"
                             },
                             {
@@ -351,9 +338,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Wide Applicability"
                             },
                             {
@@ -372,9 +357,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "High-Value Domains"
                             },
                             {
@@ -393,9 +376,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Research Impetus"
                             },
                             {
@@ -414,9 +395,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Reduced Feature Engineering"
                             },
                             {
@@ -450,9 +429,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Resource Intensiveness"
                             },
                             {
@@ -471,9 +448,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Potential Biases"
                             },
                             {
@@ -543,8 +518,5 @@
       }
     }
   },
-  "topics": [
-    "大语言模型",
-    "多语言"
-  ]
+  "topics": ["大语言模型", "多语言"]
 }

@@ -1,4 +1,4 @@
-import { ProjectContent } from '@/lib/projects'
+import type { ProjectContent } from '@/lib/projects'
 
 export const projects: ProjectContent[] = [
   {
@@ -18,9 +18,9 @@ export const projects: ProjectContent[] = [
             '严格的安全标准: 实施顶级KYC/AML政策和先进的安全措施以保护用户。',
             '全球赋能：致力于通过变革性的技术解决方案赋能全球用户。',
             '增强人类联系：在预期的人工智能主导未来中优先考虑真正的人类互动。',
-            '新数字经济愿景：展望一个技术与道德原则为全球福祉服务的未来经济。'
-          ]
-        ]
+            '新数字经济愿景：展望一个技术与道德原则为全球福祉服务的未来经济。',
+          ],
+        ],
       },
       product: {
         title: '產品概述',
@@ -36,9 +36,9 @@ export const projects: ProjectContent[] = [
             '人工智能初创公司发射平台：bitlauncher帮助AI初创公司进行安全、高效的筹资和组织管理。',
             '高合规标准：强调强有力的监管合规，包括KYC和AML政策，以及先进的安全协议。',
             '开放社区：鼓励用户、开发者和投资者的协作环境，促进参与和贡献。',
-            '数字经济愿景：邀请全球参与，共同塑造一个技术提升人类繁荣和联系的新经济。'
-          ]
-        ]
+            '数字经济愿景：邀请全球参与，共同塑造一个技术提升人类繁荣和联系的新经济。',
+          ],
+        ],
       },
       problem: {
         title: '問題',
@@ -53,9 +53,9 @@ export const projects: ProjectContent[] = [
             '创新的排他性：尖端技术主要惠及少数群体，造成技术赋权的不平衡。',
             '整合不足：显著缺乏一个综合平台将人工智能、区块链和去中心化金融以用户友好的方式整合在一起。',
             '采用障碍：当前区块链解决方案的威慑性质阻碍了广泛的采用和在主流中的实际使用。',
-            '经济不平等：数字金融尚未弥合技术熟练者与普通大众之间的差距，强化了经济差距。'
-          ]
-        ]
+            '经济不平等：数字金融尚未弥合技术熟练者与普通大众之间的差距，强化了经济差距。',
+          ],
+        ],
       },
       solution: {
         title: '解決方案',
@@ -71,9 +71,9 @@ export const projects: ProjectContent[] = [
             '技术民主化：旨在让先进技术对所有人都可访问和使用，实现人工智能和金融工具的民主化。',
             '变革催化剂：作为变革性应用的启动平台，推动增长并培育一个充满活力和创造力的社区。',
             '以人为本的方式：专注于在人工智能主导的未来保持人际关系和诚信。',
-            '经济重新定义：Bitcash致力于将全球经济重塑得更具包容性、公平性，并支持人类潜力的发挥。'
-          ]
-        ]
+            '经济重新定义：Bitcash致力于将全球经济重塑得更具包容性、公平性，并支持人类潜力的发挥。',
+          ],
+        ],
       },
       businessModel: {
         title: '商業模式',
@@ -89,12 +89,12 @@ export const projects: ProjectContent[] = [
             '研发投资：通过研究和开发不断改进技术和服务，保持竞争优势。',
             '合规和安全优先：投入资源确保合规监管和强大的安全性，建立信任和平台的长久性。',
             '教育计划：投资于用户教育和社区参与，赋予用户最大化平台利益并推动其发展的能力。',
-            '有针对性的用户增长营销：采用战略营销吸引多样化的用户群体，解密区块链和人工智能，鼓励主流采用。'
+            '有针对性的用户增长营销：采用战略营销吸引多样化的用户群体，解密区块链和人工智能，鼓励主流采用。',
           ],
           [
-            "This business model represents Bitcash's commitment to a sustainable, equitable digital economy, leveraging community input and innovation for collective growth."
-          ]
-        ]
+            "This business model represents Bitcash's commitment to a sustainable, equitable digital economy, leveraging community input and innovation for collective growth.",
+          ],
+        ],
       },
       tokenomics: {
         title: '代幣經濟學',
@@ -110,10 +110,10 @@ export const projects: ProjectContent[] = [
             '透明的代币估值：注重透明度和代币分配中的真实价值创造，避免投机行为，确保经济基础稳定。',
             '治理参与：允许代币持有者参与治理，为平台的方向和政策做出贡献，强调民主参与。',
             '经济适应性：保持灵活的代币经济策略，响应社区和平台不断变化的需求，以实现平衡的数字经济。',
-            '共享繁荣的愿景：旨在构建一个新的全球经济，在这个系统中，Bitcash代币支撑着创新、参与和共享利益，超越传统经济障碍。'
-          ]
-        ]
-      }
-    }
-  }
+            '共享繁荣的愿景：旨在构建一个新的全球经济，在这个系统中，Bitcash代币支撑着创新、参与和共享利益，超越传统经济障碍。',
+          ],
+        ],
+      },
+    },
+  },
 ]

@@ -1,8 +1,8 @@
-import type { TriggerConfig } from "@trigger.dev/sdk/v3";
+import type { TriggerConfig } from '@trigger.dev/sdk/v3'
 
 export const config: TriggerConfig = {
-  project: "proj_uefmifhkitjdldujpocd",
-  logLevel: "log",
+  project: 'proj_uefmifhkitjdldujpocd',
+  logLevel: 'log',
   retries: {
     enabledInDev: true,
     default: {
@@ -13,4 +13,4 @@ export const config: TriggerConfig = {
       randomize: true,
     },
   },
-};
+}

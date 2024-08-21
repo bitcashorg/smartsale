@@ -2,10 +2,7 @@
   "relatedBlogs": [
     {
       "id": "180563903",
-      "topics": [
-        "DAO",
-        "Tóm tắt"
-      ],
+      "topics": ["DAO", "Tóm tắt"],
       "title": "Mục đích của việc bỏ phiếu là gì? [Tóm tắt]",
       "slug": "what-is-voting-for-summary",
       "authorName": "Crypto Clairity",
@@ -24,10 +21,7 @@
     },
     {
       "id": "180563908",
-      "topics": [
-        "DAO",
-        "Tóm tắt"
-      ],
+      "topics": ["DAO", "Tóm tắt"],
       "title": "Mục đích của quản trị là gì? [Tóm tắt]",
       "slug": "what-is-governance-for-summary",
       "authorName": "Crypto Clairity",
@@ -46,10 +40,7 @@
     },
     {
       "id": "166981063",
-      "topics": [
-        "Bắt đầu",
-        "DAO"
-      ],
+      "topics": ["Bắt đầu", "DAO"],
       "title": "Tương lai đã đến: Sự trỗi dậy của các Tổ chức Tự trị Phi tập trung (DAOs)",
       "slug": "the-future-is-here-the-rise-of-decentralized-autonomous-organizations-daos",
       "authorName": "Crypto Clairity",
@@ -69,10 +60,7 @@
   ],
   "blogContent": {
     "id": "166984334",
-    "topics": [
-      "DAO",
-      "Pháp Lý"
-    ],
+    "topics": ["DAO", "Pháp Lý"],
     "title": "Các Tổ Chức Tự Trị Phân Cấp (DAOs): Các Cấu Trúc Pháp Lý Cơ Bản cho Doanh Nghiệp và Mục Đích Phi Lợi Nhuận",
     "slug": "decentralized-autonomous-organizations-daos-basic-legal-structures-for-business-a",
     "authorName": "Crypto Clairity",
@@ -140,9 +128,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Các Liên Danh Lớn"
                     }
                   ]
@@ -193,9 +179,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Các Hiệp Hội Phi Lợi Nhuận"
                     }
                   ]
@@ -266,8 +250,5 @@
       }
     }
   },
-  "topics": [
-    "DAO",
-    "Legal"
-  ]
+  "topics": ["DAO", "Legal"]
 }

@@ -1,5 +1,5 @@
 import { getCMSSdk } from '@/services/datocms/graphql/cms'
-import { PageSeoRecord } from '@/services/datocms/graphql/generated/cms'
+import type { PageSeoRecord } from '@/services/datocms/graphql/generated/cms'
 
 export async function getPageSeoText(type: string): Promise<CMSPageSeoText> {
   try {
@@ -10,9 +10,9 @@ export async function getPageSeoText(type: string): Promise<CMSPageSeoText> {
           fallbackLocales: ['en'],
           filter: {
             seoType: {
-              eq: type
-            }
-          }
+              eq: type,
+            },
+          },
         },
         pageSeo: {
           description: true,
@@ -22,17 +22,17 @@ export async function getPageSeoText(type: string): Promise<CMSPageSeoText> {
             url: true,
             title: true,
             size: true,
-            width: true
+            width: true,
           },
           title: true,
-          twitterCard: true
+          twitterCard: true,
         },
         description: true,
         title: true,
         seoType: true,
         id: true,
-        _createdAt: true
-      }
+        _createdAt: true,
+      },
     })
 
     return data.pageSeo as CMSPageSeoText
@@ -46,14 +46,14 @@ export async function getPageSeoText(type: string): Promise<CMSPageSeoText> {
         title: 'Eli5 | BitcashBank',
         twitterCard: null,
         noIndex: false,
-        __typename: 'SeoField'
+        __typename: 'SeoField',
       },
       description: 'Lorem ipsum dolor sit amet consort sit!',
 
       title: 'Eli5 | BitcashBank',
       seoType: 'eli5',
       id: '164119661',
-      _createdAt: '2023-06-12T06:53:45+01:00'
+      _createdAt: '2023-06-12T06:53:45+01:00',
     }
   }
 }

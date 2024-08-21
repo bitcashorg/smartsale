@@ -57,19 +57,19 @@ const sections: SectionContent[] = [
       {
         header: 'Data Replacement',
         content:
-          'Sensitive data is replaced with a non-sensitive placeholder, called a token, that maintains the essential information.'
+          'Sensitive data is replaced with a non-sensitive placeholder, called a token, that maintains the essential information.',
       },
       {
         header: 'Secure Storage',
         content:
-          'The original sensitive data is securely stored, while the token is used in place of the original data for transactions and processing.'
+          'The original sensitive data is securely stored, while the token is used in place of the original data for transactions and processing.',
       },
       {
         header: 'Reversible Process',
         content:
-          'The tokenization process is reversible, allowing the original data to be retrieved when needed, while maintaining the highest levels of security.'
-      }
-    ]
+          'The tokenization process is reversible, allowing the original data to be retrieved when needed, while maintaining the highest levels of security.',
+      },
+    ],
   },
   {
     title: 'Benefits of Tokenization',
@@ -79,20 +79,20 @@ const sections: SectionContent[] = [
       {
         header: 'Enhanced Security',
         content:
-          'Tokenization replaces sensitive data with non-sensitive placeholders, reducing the risk of data breaches and fraud.'
+          'Tokenization replaces sensitive data with non-sensitive placeholders, reducing the risk of data breaches and fraud.',
       },
       {
         header: 'Improved Compliance',
         content:
-          'Tokenization helps businesses meet regulatory requirements and industry standards, such as PCI DSS, HIPAA, and GDPR.'
+          'Tokenization helps businesses meet regulatory requirements and industry standards, such as PCI DSS, HIPAA, and GDPR.',
       },
       {
         header: 'Streamlined Data Management',
         content:
-          'Tokenization simplifies data storage, processing, and sharing, allowing businesses to focus on their core operations.'
-      }
+          'Tokenization simplifies data storage, processing, and sharing, allowing businesses to focus on their core operations.',
+      },
     ],
-    bgClass: ''
+    bgClass: '',
   },
   {
     title: 'Tokenization Use Cases',
@@ -102,25 +102,25 @@ const sections: SectionContent[] = [
       {
         header: 'Financial Services',
         content:
-          'Tokenization enables secure payment processing, reduces fraud, and simplifies compliance in the financial sector.'
+          'Tokenization enables secure payment processing, reduces fraud, and simplifies compliance in the financial sector.',
       },
       {
         header: 'Healthcare',
         content:
-          'Tokenization protects sensitive patient data and ensures HIPAA compliance in the healthcare industry.'
+          'Tokenization protects sensitive patient data and ensures HIPAA compliance in the healthcare industry.',
       },
       {
         header: 'E-commerce',
         content:
-          'Tokenization enhances online payment security and reduces the risk of data breaches for e-commerce businesses.'
+          'Tokenization enhances online payment security and reduces the risk of data breaches for e-commerce businesses.',
       },
       {
         header: 'Real Estate',
         content:
-          'Tokenization enables the fractionalization of real estate assets, making them more accessible to investors.'
-      }
-    ]
-  }
+          'Tokenization enables the fractionalization of real estate assets, making them more accessible to investors.',
+      },
+    ],
+  },
 ]
 
 type SectionContent = {

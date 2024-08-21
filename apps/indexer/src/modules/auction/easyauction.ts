@@ -1,11 +1,11 @@
-import {getContract, http, createPublicClient} from 'viem';
 import { TestnetEasyAuction } from 'app-contracts'
-import {eosEvmTestnet} from 'app-env';
+import { eosEvmTestnet } from 'app-env'
+import { http, createPublicClient, getContract } from 'viem'
 
-  const client = createPublicClient({
-    chain: eosEvmTestnet,
-    transport: http(),
-  })
+const client = createPublicClient({
+  chain: eosEvmTestnet,
+  transport: http(),
+})
 
 export const easyAuction = getContract({
   ...TestnetEasyAuction,

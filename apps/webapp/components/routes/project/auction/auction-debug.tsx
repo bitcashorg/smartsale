@@ -1,6 +1,6 @@
 'use client'
 
-import { AuctionData, useAuctionData } from '@/hooks/use-auction-data'
+import { type AuctionData, useAuctionData } from '@/hooks/use-auction-data'
 import Link from 'next/link'
 import { decodeAbiParameters, isAddress, isHex, parseAbiParameters } from 'viem'
 

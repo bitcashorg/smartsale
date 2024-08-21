@@ -6,7 +6,7 @@ import {
   TableCell,
   TableHead,
   TableHeader,
-  TableRow
+  TableRow,
 } from '@/components/ui/table'
 import { useErc20Balance, useNativeBalance } from '@/hooks/use-balance'
 import { useEosBalances } from '@/hooks/use-eos-balances'
@@ -22,14 +22,14 @@ export function BalancesTable() {
     contract: TestnetUSDCred.address,
     abi: TestnetUSDCred.abi,
     address: address || '0x',
-    chainId: TestnetUSDCred.chainId
+    chainId: TestnetUSDCred.chainId,
   })
 
   const blplBalance = useErc20Balance({
     contract: TestnetBLPL.address,
     abi: TestnetBLPL.abi,
     address: address || '0x',
-    chainId: TestnetBLPL.chainId
+    chainId: TestnetBLPL.chainId,
   })
 
   const eosEvmBalance = useNativeBalance(address)
@@ -39,19 +39,19 @@ export function BalancesTable() {
       coin: 'BLPL',
       totalAmount: `${blplBalance.formatted || 0}`,
       nertwork: 'EOS EVM',
-      description: 'Bitlauncher Prelaunch Token'
+      description: 'Bitlauncher Prelaunch Token',
     },
     {
       coin: 'BITUSD',
       totalAmount: eosBalances.bitusd || 0,
       nertwork: 'EOS Mainnet',
-      description: 'Bitcash USD stable coin'
+      description: 'Bitcash USD stable coin',
     },
     {
       coin: 'USDCred',
       totalAmount: `${usdCredBalance.formatted || 0}`,
       nertwork: 'EOS EVM',
-      description: 'Bitlaucher Bidding Token'
+      description: 'Bitlaucher Bidding Token',
     },
 
     // {
@@ -64,20 +64,20 @@ export function BalancesTable() {
       coin: 'EOS (gas)',
       totalAmount: eosBalances.eos,
       nertwork: 'EOS Mainnet',
-      description: 'Native EOS token'
+      description: 'Native EOS token',
     },
     {
       coin: 'EOS (gas)',
       totalAmount: `${eosEvmBalance.formatted || 0}`,
       nertwork: 'EOS EVM',
-      description: 'Wrapped EOS on EOS EVM'
+      description: 'Wrapped EOS on EOS EVM',
     },
     {
       coin: 'BL',
       totalAmount: `${eosEvmBalance.formatted || 0}`,
       nertwork: 'Bitcash Chain',
-      description: 'BL token on Bitcash Mainnet'
-    }
+      description: 'BL token on Bitcash Mainnet',
+    },
   ]
 
   return (
@@ -91,7 +91,7 @@ export function BalancesTable() {
         </TableRow>
       </TableHeader>
       <TableBody>
-        {coins.map(coin => (
+        {coins.map((coin) => (
           <TableRow key={coin.coin + coin.nertwork}>
             <TableCell className="font-medium">{coin.coin}</TableCell>
             <TableCell>{coin.nertwork}</TableCell>

@@ -2,10 +2,7 @@
   "relatedBlogs": [],
   "blogContent": {
     "id": "198277138",
-    "topics": [
-      "LLM",
-      "Fine-tuning"
-    ],
+    "topics": ["LLM", "Fine-tuning"],
     "title": "Sorted LLaMA: Unlocking the Potential of Intermediate Layers of Large Language Models for Dynamic Inference Using Sorted Fine-Tuning (SoFT)",
     "slug": "sorted-llama-unlocking-the-potential-of-intermediate-layers-of-large-language-mod",
     "authorName": "Prof. Otto Nomos",
@@ -213,9 +210,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Efficiency Problem"
                             },
                             {
@@ -234,9 +229,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "SortedNet Adaptation"
                             },
                             {
@@ -255,9 +248,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "SoFT Over SFT"
                             },
                             {
@@ -276,9 +267,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Potential of Intermediate Layers"
                             },
                             {
@@ -297,9 +286,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Performance Gains"
                             },
                             {
@@ -333,9 +320,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Cost-Effective Deployment"
                             },
                             {
@@ -354,9 +339,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Real-time Applications"
                             },
                             {
@@ -375,9 +358,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Storage and Transition Benefits"
                             },
                             {
@@ -396,9 +377,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Customization"
                             },
                             {
@@ -417,9 +396,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Broad Applicability"
                             },
                             {
@@ -453,9 +430,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Adoption Time"
                             },
                             {
@@ -474,9 +449,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Domain-Specific Challenges"
                             },
                             {
@@ -546,8 +519,5 @@
       }
     }
   },
-  "topics": [
-    "LLM",
-    "Fine-tuning"
-  ]
+  "topics": ["LLM", "Fine-tuning"]
 }

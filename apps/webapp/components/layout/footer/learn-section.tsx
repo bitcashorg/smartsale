@@ -31,11 +31,11 @@ export function LearnSection() {
               </CardHeader>
               <CardContent className="z-30 text-left px-3 lg:px-16 pb-14">
                 <div className="flex flex-col justify-center items-start gap-y-5">
-                  {
-                    content.cards[0].paragraphs.map((p) => (
-                      <p key={p} className="text-base font-medium text-[#7A7CA8]">{p}</p>
-                    ))
-                  }
+                  {content.cards[0].paragraphs.map((p) => (
+                    <p key={p} className="text-base font-medium text-[#7A7CA8]">
+                      {p}
+                    </p>
+                  ))}
                 </div>
               </CardContent>
             </div>
@@ -53,8 +53,14 @@ export function LearnSection() {
                   <div className="w-28 h-[2px] bg-secondary-600 mt-7" />
                 </CardHeader>
                 <picture>
-                  <source srcSet={content.cards[1].images[0]} type="image/webp" />
-                  <source srcSet={content.cards[1].images[1]} type="image/png" />
+                  <source
+                    srcSet={content.cards[1].images[0]}
+                    type="image/webp"
+                  />
+                  <source
+                    srcSet={content.cards[1].images[1]}
+                    type="image/png"
+                  />
                   <Image
                     src={content.cards[1].images[0]}
                     alt={content.cards[1].title}
@@ -77,8 +83,14 @@ export function LearnSection() {
                   <div className="w-28 h-[2px] bg-alert mt-7" />
                 </CardHeader>
                 <picture>
-                  <source srcSet={content.cards[2].images[0]} type="image/webp" />
-                  <source srcSet={content.cards[2].images[1]} type="image/png" />
+                  <source
+                    srcSet={content.cards[2].images[0]}
+                    type="image/webp"
+                  />
+                  <source
+                    srcSet={content.cards[2].images[1]}
+                    type="image/png"
+                  />
                   <Image
                     src={content.cards[2].images[0]}
                     alt={content.cards[2].title}
@@ -104,28 +116,22 @@ const content = {
       title: 'How to Participate in a Bitlauncher IDO?',
       paragraphs: [
         "A good place to start is: what is Bitlauncher? (We'll give you the brief version). Bitlauncher is a platform that connects young projects with early community members through initial decentralized offerings (IDOS). It provides a unique opportunity for contributors to engage with up-and-coming tech innovations.",
-        "By participating in an IDO on Bitlauncher, users can gain early access to tokens from new blockchain projects. This early access can potentially lead to significant benefits if the projects grow in value and popularity. Bitlauncher aims to democratize the investment process, making it accessible to a broader audience."
+        'By participating in an IDO on Bitlauncher, users can gain early access to tokens from new blockchain projects. This early access can potentially lead to significant benefits if the projects grow in value and popularity. Bitlauncher aims to democratize the investment process, making it accessible to a broader audience.',
       ],
       images: [
-        "/images/home/platform-circles.webp",
-        "/images/home/platform-circles.png",
-      ]
+        '/images/home/platform-circles.webp',
+        '/images/home/platform-circles.png',
+      ],
     },
     {
       title: 'How to buy the Bitlauncher $BL token?',
       paragraphs: [],
-      images: [
-        "/images/home/bl-coins.webp",
-        "/images/home/bl-coins.png",
-      ]
+      images: ['/images/home/bl-coins.webp', '/images/home/bl-coins.png'],
     },
     {
       title: 'What is an IDO (Initial Decentralized Offering)?',
       paragraphs: [],
-      images: [
-        "/images/home/glass.webp",
-        "/images/home/glass.png",
-      ]
-    }
-  ]
+      images: ['/images/home/glass.webp', '/images/home/glass.png'],
+    },
+  ],
 }

@@ -4,7 +4,7 @@ import { IconBitlauncher } from '../../ui/icons'
 import { NavLinks } from './nav-links'
 
 import { appConfig } from '@/lib/config'
-import { LangProp } from '@/types/routing.type'
+import type { LangProp } from '@/types/routing.type'
 import dynamic from 'next/dynamic'
 import { Suspense } from 'react'
 import { SessionButtonLoader } from '../session/session-button'
@@ -51,19 +51,19 @@ export function Header({ lang, dict }: HeaderProps) {
 }
 
 const DynamicMobileNav = dynamic(
-  () => import('./mobile-nav').then(c => c.MobileNav),
+  () => import('./mobile-nav').then((c) => c.MobileNav),
   {
     loading: MobileNavLoader,
-    ssr: false
-  }
+    ssr: false,
+  },
 )
 
 const DynamicSessionButton = dynamic(
-  () => import('../session/session-button').then(c => c.SessionButton),
+  () => import('../session/session-button').then((c) => c.SessionButton),
   {
     loading: SessionButtonLoader,
-    ssr: false
-  }
+    ssr: false,
+  },
 )
 
 interface HeaderProps extends LangProp {

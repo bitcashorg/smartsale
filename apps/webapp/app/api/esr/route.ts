@@ -1,16 +1,16 @@
-import { NextRequest, NextResponse } from 'next/server'
+import { deflateRawSync, inflateRawSync } from 'zlib'
+import { appConfig } from '@/lib/config'
 import { createSupabaseServerClient } from '@/services/supabase'
 import { APIClient } from '@wharfkit/antelope'
 import {
-  AbiProvider,
+  type AbiProvider,
   CallbackPayload,
   SigningRequest,
-  SigningRequestEncodingOptions,
-  ZlibProvider
+  type SigningRequestEncodingOptions,
+  type ZlibProvider,
 } from 'eosio-signing-request'
+import { type NextRequest, NextResponse } from 'next/server'
 import { z } from 'zod'
-import { deflateRawSync, inflateRawSync } from 'zlib'
-import { appConfig } from '@/lib/config'
 
 export async function POST(req: NextRequest) {
   try {
@@ -51,7 +51,7 @@ export async function POST(req: NextRequest) {
         code: parsed.req,
         account: parsed.sa,
         trx_id: parsed.tx,
-        created_at: new Date().toISOString()
+        created_at: new Date().toISOString(),
       })
       .select('*')
 
@@ -69,8 +69,8 @@ export async function POST(req: NextRequest) {
             id,
             tx: parsed.tx,
             account: parsed.sa,
-            esr_code: parsed.req
-          }
+            esr_code: parsed.req,
+          },
         ])
         .select('*')
 
@@ -82,33 +82,33 @@ export async function POST(req: NextRequest) {
 
     return NextResponse.json({
       success: true,
-      message: 'Successfully received esr callback'
+      message: 'Successfully received esr callback',
     })
   } catch (error: any) {
     console.error('Error handling request:', error)
     return NextResponse.json({
       success: false,
       message:
-        error.message || 'An error occurred during the request processing'
+        error.message || 'An error occurred during the request processing',
     })
   }
 }
 
 const eos = new APIClient({
-  url: appConfig.eosRpc
+  url: appConfig.eosRpc,
 })
 
 const esrNodeJSOptions: SigningRequestEncodingOptions = {
   abiProvider: {
-    getAbi: async account => {
+    getAbi: async (account) => {
       const response = await eos.v1.chain.get_abi(account.toString())
       return response.abi
-    }
+    },
   } as AbiProvider,
   zlib: {
-    deflateRaw: data => new Uint8Array(deflateRawSync(Buffer.from(data))),
-    inflateRaw: data => new Uint8Array(inflateRawSync(Buffer.from(data)))
-  } as ZlibProvider
+    deflateRaw: (data) => new Uint8Array(deflateRawSync(Buffer.from(data))),
+    inflateRaw: (data) => new Uint8Array(inflateRawSync(Buffer.from(data))),
+  } as ZlibProvider,
 }
 
 const SigningRequestCallbackPayloadSchema = z.object({
@@ -124,5 +124,5 @@ const SigningRequestCallbackPayloadSchema = z.object({
   // ex: z.string().refine(arg => !isNaN(Date.parse(arg)), {
   //   message: 'ex must be a valid ISO date string'
   // }),
-  cid: z.string()
+  cid: z.string(),
 })

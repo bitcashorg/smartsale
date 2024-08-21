@@ -2,9 +2,7 @@
   "relatedBlogs": [
     {
       "id": "BEfgGhndSsCn5MBU89RO3A",
-      "topics": [
-        "launchpad"
-      ],
+      "topics": ["launchpad"],
       "title": "Impulsando la Innovacion: Vision, Mision y Objetivos Estrategicos de bitLauncher",
       "slug": "empowering-innovation-vision-mission-and-strategic-goals-of-bitcash-launchpad",
       "authorName": "Jun Dam",
@@ -23,12 +21,7 @@
     },
     {
       "id": "NZeB3i5XRzuELW2UWBDyRQ",
-      "topics": [
-        "research",
-        "dao",
-        "fundraising",
-        "launchpad"
-      ],
+      "topics": ["research", "dao", "fundraising", "launchpad"],
       "title": "Navegando la Convergencia: Un Analisis Integral del Mercado de IA y la Dinamica de las Criptomonedas",
       "slug": "navigating-the-convergence-a-comprehensive-market-analysis-of-ai-and-cryptocurren",
       "authorName": "Jun Dam",
@@ -47,9 +40,7 @@
     },
     {
       "id": "MICfokr1TVuScAB4Qh9YGw",
-      "topics": [
-        "launchpad"
-      ],
+      "topics": ["launchpad"],
       "title": "Impulsando la Innovacion: Tokenomia y Estrategia de Financiacion de bitcash",
       "slug": "empowering-innovation-tokenomics-and-funding-strategy-of-bitcash",
       "authorName": "Jun Dam",
@@ -68,9 +59,7 @@
     },
     {
       "id": "BSDdY8byQWipv749rApFRA",
-      "topics": [
-        "launchpad"
-      ],
+      "topics": ["launchpad"],
       "title": "Desbloqueando el Potencial: Casos de Uso y Aplicaciones de bitLauncher",
       "slug": "unlocking-potential-use-cases-and-applications-of-bitlauncher",
       "authorName": "Jun Dam",
@@ -90,9 +79,7 @@
   ],
   "blogContent": {
     "id": "I4jShMnWRruvJgDbrucwDw",
-    "topics": [
-      "plataforma de lanzamiento"
-    ],
+    "topics": ["plataforma de lanzamiento"],
     "title": "La Columna Vertebral Tecnologica de bitLauncher",
     "slug": "the-technological-backbone-of-bitcash-launchpad",
     "authorName": "Jun Dam",
@@ -200,9 +187,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Cryptocurrency Payment Wallet and P2P Crypto Onramp"
                             },
                             {
@@ -221,9 +206,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "WebAuthn Integration"
                             },
                             {
@@ -245,9 +228,7 @@
                     },
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "dBoard"
                     },
                     {
@@ -314,7 +295,5 @@
       }
     }
   },
-  "topics": [
-    "launchpad"
-  ]
+  "topics": ["launchpad"]
 }

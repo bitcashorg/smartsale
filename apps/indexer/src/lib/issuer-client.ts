@@ -1,6 +1,11 @@
-import { http, createPublicClient, PublicClient, createWalletClient } from 'viem'
-import { appConfig } from '../config'
 import { eosEvmTestnet } from 'app-env'
+import {
+  http,
+  PublicClient,
+  createPublicClient,
+  createWalletClient,
+} from 'viem'
+import { appConfig } from '../config'
 
 export const walletClient = createWalletClient({
   chain: eosEvmTestnet,

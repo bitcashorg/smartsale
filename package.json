@@ -8,15 +8,12 @@
   "scripts": {
     "build": "turbo build --no-daemon",
     "dev": "turbo dev --no-daemon --parallel",
-    "lint": "turbo lint --no-daemon",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "format-and-lint": "biome check .",
+    "format-and-lint:fix": "biome check . --write",
     "clean:node_modules": "find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +"
   },
   "workspaces": {
-    "packages": [
-      "apps/*",
-      "packages/*"
-    ],
+    "packages": ["apps/*", "packages/*"],
     "nohoist": [
       "**/vite",
       "**/vite/**",
@@ -33,10 +30,9 @@
     "node": "20.x"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.8.3",
     "@types/bn.js": "^5.1.5",
     "@types/node": "latest",
-    "eslint": "^9.7.0",
-    "prettier": "^3.3.3",
     "turbo": "^2.0.9"
   }
 }

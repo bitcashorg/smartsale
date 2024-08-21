@@ -1,18 +1,18 @@
 'use client'
 
-import { useEffect, useState } from 'react'
-import Link from 'next/link'
-import { useSearchParams } from 'next/navigation'
-import {
+import type { Lang } from '@/dictionaries/locales'
+import { cn } from '@/lib/utils'
+import type {
   BlogArticleRecord,
   CMSLayoutText,
   CMSPageSeoText,
-  getBlogCategoriesTypes
+  getBlogCategoriesTypes,
 } from '@/services/datocms'
+import Link from 'next/link'
+import { useSearchParams } from 'next/navigation'
+import { useEffect, useState } from 'react'
 import { ArticleCard } from '../../shared/article-card'
-import { cn } from '@/lib/utils'
 import { LucideIcons } from './lucide-icons'
-import { Lang } from '@/dictionaries/locales'
 
 export function CategoryComponent({ params, sections }: BlogCategoryPageProps) {
   const [filteredSectionContent, setFilterSectionContent] = useState<
@@ -30,7 +30,7 @@ export function CategoryComponent({ params, sections }: BlogCategoryPageProps) {
   sections.sort((a, b) => a.topic.localeCompare(b.topic))
 
   const filterSectionContent = () => {
-    const getContents = sections.filter(content => content.topic === topic)
+    const getContents = sections.filter((content) => content.topic === topic)
 
     setFilterSectionContent(getContents)
   }
@@ -49,9 +49,8 @@ export function CategoryComponent({ params, sections }: BlogCategoryPageProps) {
     scrollTo({
       behavior: 'smooth',
       top: 0,
-      left: 0
+      left: 0,
     })
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [topic, sections.length])
 
   return (
@@ -77,7 +76,7 @@ export function CategoryComponent({ params, sections }: BlogCategoryPageProps) {
                       : `/${params.lang}/blog/${category}?topic=${section.topic}`
                   }
                   className={cn(
-                    'text-black focus-within:!text-primary-200 hover:!text-primary-200 dark:text-white'
+                    'text-black focus-within:!text-primary-200 hover:!text-primary-200 dark:text-white',
                   )}
                   shallow
                 >

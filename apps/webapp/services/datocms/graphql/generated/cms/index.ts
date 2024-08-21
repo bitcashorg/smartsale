@@ -1,38 +1,37 @@
 // @ts-nocheck
 import {
-  createClient as createClientOriginal,
-  generateGraphqlOperation,
-  GenqlError,
-  linkTypeMap,
   type ClientOptions,
   type FieldsSelection,
+  GenqlError,
   type GraphqlOperation,
-} from "./runtime"
-import type { Query, QueryGenqlSelection } from "./schema"
-import types from "./types"
+  createClient as createClientOriginal,
+  generateGraphqlOperation,
+  linkTypeMap,
+} from './runtime'
+import type { Query, QueryGenqlSelection } from './schema'
+import types from './types'
 
-export type { FieldsSelection } from "./runtime"
+export type { FieldsSelection } from './runtime'
 export { GenqlError }
 
-export * from "./schema"
+export * from './schema'
 const typeMap = linkTypeMap(types as any)
 
 export interface Client {
   query<R extends QueryGenqlSelection>(
-    request: R & { __name?: string }
+    request: R & { __name?: string },
   ): Promise<FieldsSelection<Query, R>>
 }
 
-export const createClient = function (options?: ClientOptions): Client {
-  return createClientOriginal({
-    url: "https://graphql.datocms.com",
+export const createClient = (options?: ClientOptions): Client =>
+  createClientOriginal({
+    url: 'https://graphql.datocms.com',
 
     ...options,
     queryRoot: typeMap.Query!,
     mutationRoot: typeMap.Mutation!,
     subscriptionRoot: typeMap.Subscription!,
   }) as any
-}
 
 export const everything = {
   __scalar: true,
@@ -43,7 +42,6 @@ export type QueryResult<fields extends QueryGenqlSelection> = FieldsSelection<
   fields
 >
 export const generateQueryOp: (
-  fields: QueryGenqlSelection & { __name?: string }
-) => GraphqlOperation = function (fields) {
-  return generateGraphqlOperation("query", typeMap.Query!, fields as any)
-}
+  fields: QueryGenqlSelection & { __name?: string },
+) => GraphqlOperation = (fields) =>
+  generateGraphqlOperation('query', typeMap.Query!, fields as any)

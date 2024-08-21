@@ -2,9 +2,7 @@
   "relatedBlogs": [],
   "blogContent": {
     "id": "198277182",
-    "topics": [
-      "Transformers"
-    ],
+    "topics": ["Transformers"],
     "title": "Cura el dolor de cabeza de los Transformers mediante la Atencion Restringida Colineal",
     "slug": "cure-the-headache-of-transformers-via-collinear-constrained-attention",
     "authorName": "Prof. Otto Nomos",
@@ -170,9 +168,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Anomalous Behavior Identification"
                             },
                             {
@@ -191,9 +187,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Collinear Constrained Attention (CoCA)"
                             },
                             {
@@ -212,9 +206,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Superior Extrapolation"
                             },
                             {
@@ -233,9 +225,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Efficiency Enhancements"
                             },
                             {
@@ -254,9 +244,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Open-Sourcing"
                             },
                             {
@@ -290,9 +278,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Better Model Behavior"
                             },
                             {
@@ -311,9 +297,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Efficient Long Sequences Processing"
                             },
                             {
@@ -332,9 +316,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "General Integration"
                             },
                             {
@@ -368,9 +350,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Adoption Rate"
                             },
                             {
@@ -389,9 +369,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Potential Limitations"
                             },
                             {
@@ -461,7 +439,5 @@
       }
     }
   },
-  "topics": [
-    "Transformadores"
-  ]
+  "topics": ["Transformadores"]
 }

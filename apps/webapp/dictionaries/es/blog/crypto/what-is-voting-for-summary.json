@@ -2,11 +2,7 @@
   "relatedBlogs": [
     {
       "id": "167184977",
-      "topics": [
-        "Tokenomia",
-        "DAO",
-        "Recaudacion de fondos"
-      ],
+      "topics": ["Tokenomia", "DAO", "Recaudacion de fondos"],
       "title": "Revolucionando el Modelo de Equidad: Como la Tokenomia esta Transformando el Mundo de las Startups",
       "slug": "revolutionizing-the-equity-model-how-tokenomics-is-disrupting-the-startup-world",
       "authorName": "Crypto Clairity",
@@ -25,10 +21,7 @@
     },
     {
       "id": "166981063",
-      "topics": [
-        "Primeros pasos",
-        "DAO"
-      ],
+      "topics": ["Primeros pasos", "DAO"],
       "title": "El Futuro esta Aqui: El Auge de las Organizaciones Autonomas Descentralizadas (DAOs)",
       "slug": "the-future-is-here-the-rise-of-decentralized-autonomous-organizations-daos",
       "authorName": "Crypto Clairity",
@@ -48,10 +41,7 @@
   ],
   "blogContent": {
     "id": "180563903",
-    "topics": [
-      "DAO",
-      "Resumen"
-    ],
+    "topics": ["DAO", "Resumen"],
     "title": "¿Para que sirve votar? [Resumen]",
     "slug": "what-is-voting-for-summary",
     "authorName": "Crypto Clairity",
@@ -314,8 +304,5 @@
       }
     }
   },
-  "topics": [
-    "DAO",
-    "Resumen"
-  ]
+  "topics": ["DAO", "Resumen"]
 }

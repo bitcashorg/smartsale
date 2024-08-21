@@ -1,14 +1,14 @@
-import { Metadata } from 'next'
+import { BlogSections } from '@/components/routes/blog/blog-sections'
+import { HeroSection } from '@/components/routes/blog/hero-section/index'
+import type { Lang } from '@/dictionaries/locales'
+import { generateMetadataFromSEO } from '@/lib/seo'
 import {
   getArticleSections,
   getPageSeoText,
-  getRecentArticleSections
+  getRecentArticleSections,
 } from '@/services/datocms'
-import { generateMetadataFromSEO } from '@/lib/seo'
-import { BlogSections } from '@/components/routes/blog/blog-sections'
+import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import { Lang } from '@/dictionaries/locales'
-import { HeroSection } from '@/components/routes/blog/hero-section/index'
 
 export default async function BlogPage({ params }: BlogPageProps) {
   const sections = await getArticleSections(params.lang)
@@ -31,7 +31,7 @@ export default async function BlogPage({ params }: BlogPageProps) {
 }
 
 export async function generateMetadata({
-  params
+  params,
 }: BlogPageProps): Promise<Metadata> {
   const pageSeo = await getPageSeoText('home')
   const seoData = {
@@ -39,7 +39,7 @@ export async function generateMetadata({
     description: pageSeo.pageSeo?.description || '',
     ogType: 'website',
     ogImageUrl: pageSeo.pageSeo?.image?.url || '',
-    twitterCard: 'summary_large_image'
+    twitterCard: 'summary_large_image',
   }
 
   return generateMetadataFromSEO(seoData)

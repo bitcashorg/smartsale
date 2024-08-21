@@ -1,11 +1,11 @@
 'use client'
-import Link from 'next/link'
-import { readingTime } from '@/lib/blog'
-import { BlogArticleRecord } from '~/services/datocms'
-import { useParams, useRouter } from 'next/navigation'
-import { Button } from '@/components/ui/button'
 import { Tag } from '@/components/shared/tag'
+import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
+import { readingTime } from '@/lib/blog'
+import Link from 'next/link'
+import { useParams, useRouter } from 'next/navigation'
+import type { BlogArticleRecord } from '~/services/datocms'
 
 export interface Subcardprops {
   post: BlogArticleRecord
@@ -23,7 +23,7 @@ export const HeroSubCard = ({ post, sectionSlug }: Subcardprops) => {
       <Link
         href={`/blog/${sectionSlug}/${post.slug}`}
         className="flex flex-row justify-between space-y-3 px-space-15 py-space-20 transition-all md:space-y-0"
-        onClick={event =>
+        onClick={(event) =>
           (event.target as HTMLElement).tagName === 'BUTTON' &&
           event.preventDefault()
         }
@@ -34,7 +34,7 @@ export const HeroSubCard = ({ post, sectionSlug }: Subcardprops) => {
             {new Date(post?._publishedAt).toLocaleDateString(locale, {
               month: 'short',
               day: '2-digit',
-              year: 'numeric'
+              year: 'numeric',
             })}{' '}
             ∙ {readingTime(post)} min read{' '}
           </span>

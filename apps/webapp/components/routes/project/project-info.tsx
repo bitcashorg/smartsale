@@ -1,6 +1,6 @@
-import { ProjectWithAuction } from '@/lib/projects'
+import type { ProjectWithAuction } from '@/lib/projects'
+import React, { type ReactNode, Fragment } from 'react'
 import { ProjectShare } from './project-share'
-import React, { ReactNode, Fragment } from 'react'
 
 interface ItemProps {
   label?: string
@@ -30,7 +30,7 @@ function ListItem({ label, value }: ItemProps) {
 
 export function ProjectInfo({
   project,
-  presale = false
+  presale = false,
 }: {
   project: ProjectWithAuction
   presale?: boolean
@@ -39,18 +39,18 @@ export function ProjectInfo({
     [
       { label: 'Presale', value: '7/30/24 - 8/31/24' },
       { label: 'Fundraising Goal', value: '$150,000' },
-      { label: 'Max Allocation', value: '$1,500' }
+      { label: 'Max Allocation', value: '$1,500' },
     ],
     [
       { label: 'Token Sale', value: '11/2/24 - 11/30/24' },
       { label: 'Fundraising Goal', value: '$250,000' },
-      { label: 'Max Allocation', value: '$10,000' }
+      { label: 'Max Allocation', value: '$10,000' },
     ],
     [{ label: 'Ticker', value: 'BL' }],
     [
       // Passing `project` to `ProjectShare` if it is required as a prop
-      { value: <ProjectShare project={project} /> }
-    ]
+      { value: <ProjectShare project={project} /> },
+    ],
   ]
 
   const filteredFields = presale ? [fields[0]] : fields

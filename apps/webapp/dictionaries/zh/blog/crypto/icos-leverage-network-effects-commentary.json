@@ -2,11 +2,7 @@
   "relatedBlogs": [
     {
       "id": "180556595",
-      "topics": [
-        "筹款",
-        "代币经济学",
-        "评论"
-      ],
+      "topics": ["筹款", "代币经济学", "评论"],
       "title": "区块链效应：无市场权力成本的网络效应 [评论]",
       "slug": "the-blockchain-effect-network-effects-without-market-power-costs-commentary",
       "authorName": "Crypto Clairity",
@@ -26,11 +22,7 @@
   ],
   "blogContent": {
     "id": "180563922",
-    "topics": [
-      "筹款",
-      "代币经济学",
-      "评论"
-    ],
+    "topics": ["筹款", "代币经济学", "评论"],
     "title": "ICO利用网络效应[评论]",
     "slug": "icos-leverage-network-effects-commentary",
     "authorName": "Crypto Clairity",
@@ -176,9 +168,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Showcase Product Demand:"
                             },
                             {
@@ -197,9 +187,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Leverage Network Effects:"
                             },
                             {
@@ -218,9 +206,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Discourage Speculators:"
                             },
                             {
@@ -239,9 +225,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Define Priorities:"
                             },
                             {
@@ -293,9 +277,5 @@
       }
     }
   },
-  "topics": [
-    "筹款",
-    "代币经济学",
-    "评论"
-  ]
+  "topics": ["筹款", "代币经济学", "评论"]
 }

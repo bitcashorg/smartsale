@@ -1,1 +1,1 @@
-export * from "./object.lib";
+export * from './object.lib'

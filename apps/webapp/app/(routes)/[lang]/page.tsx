@@ -1,4 +1,3 @@
-import dynamic from 'next/dynamic'
 import { BannerOne } from '@/components/_wip/banner-one'
 import { Categories } from '@/components/_wip/categories'
 import { FeatureOne } from '@/components/_wip/feature-one'
@@ -6,15 +5,28 @@ import { FeatureThree } from '@/components/_wip/feature-three'
 import { FeatureTwo } from '@/components/_wip/feature-two'
 import { NewHomeHero } from '@/components/routes/home/hero/index'
 import { getDictionary } from '@/dictionaries'
-import { Lang } from '@/dictionaries/locales'
+import type { Lang } from '@/dictionaries/locales'
 import { appConfig } from '@/lib/config'
 import { getProjects } from '@/lib/projects'
+import dynamic from 'next/dynamic'
 
-const DynamicFeatures = dynamic(() => import('@/components/routes/home/features').then(mod => mod.Features), { ssr: false })
+const DynamicFeatures = dynamic(
+  () => import('@/components/routes/home/features').then((mod) => mod.Features),
+  { ssr: false },
+)
 
-const DynamicUpcoming = dynamic(() => import('@/components/routes/home/upcoming').then(mod => mod.Upcoming), { ssr: false })
+const DynamicUpcoming = dynamic(
+  () => import('@/components/routes/home/upcoming').then((mod) => mod.Upcoming),
+  { ssr: false },
+)
 
-const DynamicWhyChooseUs = dynamic(() => import('@/components/routes/home/why-choose-us').then(mod => mod.WhyChooseUs), { ssr: false })
+const DynamicWhyChooseUs = dynamic(
+  () =>
+    import('@/components/routes/home/why-choose-us').then(
+      (mod) => mod.WhyChooseUs,
+    ),
+  { ssr: false },
+)
 
 export default async function IndexPage({ params: { lang } }: IndexPageProps) {
   const dict = await getDictionary(lang)

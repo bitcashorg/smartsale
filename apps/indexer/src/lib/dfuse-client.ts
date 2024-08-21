@@ -1,9 +1,13 @@
-import { GraphqlStreamMessage, WebSocketFactory, createDfuseClient } from '@dfuse/client'
-import { appConfig } from '~/config'
+import EventEmitter from 'events'
+import type { IncomingMessage } from 'http'
+import {
+  type GraphqlStreamMessage,
+  type WebSocketFactory,
+  createDfuseClient,
+} from '@dfuse/client'
 import nodeFetch from 'node-fetch'
 import WebSocketClient from 'ws'
-import EventEmitter from 'events'
-import { IncomingMessage } from 'http'
+import { appConfig } from '~/config'
 
 export const dfuse = createDfuseClient({
   apiKey: appConfig.eos.dfuseKey,
@@ -42,30 +46,38 @@ export async function createFirehoseSubscription(query: string) {
     }
   }`
 
-  const stream = await dfuse.graphql(streamTransfers, (message: GraphqlStreamMessage<any>) => {
-    if (message.type === 'data') {
-      const transfer = message.data.searchTransactionsForward.trace
-      const data = {
-        trxId: transfer.id as string,
-        actions: transfer.matchingActions.map(({ json }: any) => json) as {}[],
+  const stream = await dfuse.graphql(
+    streamTransfers,
+    (message: GraphqlStreamMessage<any>) => {
+      if (message.type === 'data') {
+        const transfer = message.data.searchTransactionsForward.trace
+        const data = {
+          trxId: transfer.id as string,
+          actions: transfer.matchingActions.map(
+            ({ json }: any) => json,
+          ) as {}[],
+        }
+        eventEmitter.emit('data', data)
+        console.log('Token Transfer:', JSON.stringify(data))
       }
-      eventEmitter.emit('data', data)
-      console.log('Token Transfer:', JSON.stringify(data))
-    }
 
-    if (message.type === 'error') {
-      console.error('An error occurred:', message.errors, message.terminal)
-    }
+      if (message.type === 'error') {
+        console.error('An error occurred:', message.errors, message.terminal)
+      }
 
-    if (message.type === 'complete') {
-      console.log('Stream completed')
-    }
-  })
+      if (message.type === 'complete') {
+        console.log('Stream completed')
+      }
+    },
+  )
 
   return { on: eventEmitter.on, stream }
 }
 
-async function webSocketFactory(url: string, protocols: string[] = []): Promise<WebSocketFactory> {
+async function webSocketFactory(
+  url: string,
+  protocols: string[] = [],
+): Promise<WebSocketFactory> {
   const webSocket = new WebSocketClient(url, protocols, {
     handshakeTimeout: 30 * 1000, // 30s
     maxPayload: 100 * 1024 * 100, // 100Mb
@@ -81,7 +93,6 @@ async function webSocketFactory(url: string, protocols: string[] = []): Promise<
   // @ts-ignore
   return webSocket
 }
-
 // necessary for dfuse client to work
 ;(global as any).fetch = nodeFetch
 ;(global as any).WebSocket = WebSocketClient

@@ -1,48 +1,48 @@
 'use client'
 
 import { TooltipProvider } from '@/components/ui/tooltip'
+import { MobileNavProvider } from '@/hooks/use-mobile-navigation'
 import { SessionProvider } from '@/hooks/use-session'
+import { UseSigningRequestProvider } from '@/hooks/use-signing-request'
+import { appConfig } from '@/lib/config'
 import {
   RainbowKitProvider,
-  Theme,
+  type Theme,
   getDefaultConfig,
-  lightTheme
+  lightTheme,
 } from '@rainbow-me/rainbowkit'
+import type { _chains } from '@rainbow-me/rainbowkit/dist/config/getDefaultConfig'
 import {
   metaMaskWallet,
   trustWallet,
-  walletConnectWallet
+  walletConnectWallet,
 } from '@rainbow-me/rainbowkit/wallets'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
-import { ThemeProvider as NextThemesProvider } from 'next-themes'
-import { ThemeProviderProps } from 'next-themes/dist/types'
-import { WagmiProvider } from 'wagmi'
-import { UseSigningRequestProvider } from '@/hooks/use-signing-request'
+import { eosEvmTestnet } from 'app-env'
 import { merge } from 'lodash'
-import { MobileNavProvider } from '@/hooks/use-mobile-navigation'
-import { _chains } from '@rainbow-me/rainbowkit/dist/config/getDefaultConfig'
+import { ThemeProvider as NextThemesProvider } from 'next-themes'
+import type { ThemeProviderProps } from 'next-themes/dist/types'
+import { WagmiProvider } from 'wagmi'
 import {
-  sepolia,
   arbitrum,
+  aurora,
   avalanche,
   base,
+  bsc,
   celo,
+  cronos,
+  fantom,
+  gnosis,
+  harmonyOne,
+  kava,
   mainnet,
+  metis,
+  moonbeam,
   optimism,
   polygon,
+  sepolia,
   zkSync,
-  bsc,
-  fantom,
-  moonbeam,
-  cronos,
-  kava,
-  metis,
-  gnosis,
-  aurora,
-  harmonyOne
 } from 'wagmi/chains'
-import { eosEvmTestnet } from 'app-env'
-import { appConfig } from '@/lib/config'
 
 const queryClient = new QueryClient()
 
@@ -63,7 +63,7 @@ const prodChains: _chains = [
   metis,
   gnosis,
   aurora,
-  harmonyOne
+  harmonyOne,
 ]
 const devChains: _chains = [eosEvmTestnet, sepolia]
 
@@ -73,22 +73,22 @@ export const wagmiConfig = getDefaultConfig({
   wallets: [
     {
       groupName: 'Popular',
-      wallets: [metaMaskWallet, trustWallet, walletConnectWallet]
-    }
+      wallets: [metaMaskWallet, trustWallet, walletConnectWallet],
+    },
   ],
-  chains: [...prodChains, ...devChains]
+  chains: [...prodChains, ...devChains],
 })
 
 const customRainbowKitTheme = merge(lightTheme(), {
   colors: {
     connectButtonBackground: '#fff',
     connectButtonInnerBackground: '#fff',
-    connectButtonText: '#000'
+    connectButtonText: '#000',
   },
   radii: {
     actionButton: '9999px', // Custom radius for action buttons,
-    connectButton: '9999px' // Custom radius for action buttons
-  }
+    connectButton: '9999px', // Custom radius for action buttons
+  },
   // fonts: {
   //   body: '...'
   // }
@@ -105,7 +105,7 @@ export function Providers({ children, ...props }: ThemeProviderProps) {
               modalSize="compact"
               showRecentTransactions={true}
               appInfo={{
-                appName: 'Bitlauncher'
+                appName: 'Bitlauncher',
               }}
             >
               <SessionProvider>

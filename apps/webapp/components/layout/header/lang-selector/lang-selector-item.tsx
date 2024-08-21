@@ -1,11 +1,11 @@
 'use client'
 
-import { DropdownMenuItem } from '@/components/ui/dropdown-menu'
-import { LangSelectorOption } from './lang-selector-options'
-import { usePathname } from 'next/navigation'
-import Link from 'next/link'
 import { setLanguage } from '@/app/actions/set-lang'
-import { Lang } from '@/dictionaries/locales'
+import { DropdownMenuItem } from '@/components/ui/dropdown-menu'
+import type { Lang } from '@/dictionaries/locales'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+import type { LangSelectorOption } from './lang-selector-options'
 
 export function LangSelectorItem({ option, lang }: LangSelectorProps) {
   const pathname = usePathname()

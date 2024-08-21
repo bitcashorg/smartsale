@@ -32,7 +32,7 @@ import {
   UserPlus,
   Users,
   X,
-} from "lucide-react"
+} from 'lucide-react'
 
 export type LucideIconType = any
 

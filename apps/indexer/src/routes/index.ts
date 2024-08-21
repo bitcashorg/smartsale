@@ -1,12 +1,15 @@
-import express, { NextFunction, Response, Request } from 'express'
-import helmet from 'helmet'
+import express, {
+  type NextFunction,
+  type Response,
+  type Request,
+} from 'express'
 import rateLimit from 'express-rate-limit'
-import { healthcheck } from './healthcheck'
-import { alchemyWebhook } from './alchemy'
+import helmet from 'helmet'
 import pinoHttp from 'pino-http'
 import { logger } from '~/lib/logger'
-import {setupSentryErrorHandler} from '~/lib/sentry';
-
+import { setupSentryErrorHandler } from '~/lib/sentry'
+import { alchemyWebhook } from './alchemy'
+import { healthcheck } from './healthcheck'
 
 export function startExpress() {
   const app = express()
@@ -18,10 +21,12 @@ export function startExpress() {
   // Security Middlewares
   app.use(helmet())
 
-  app.use(rateLimit({
-    windowMs: 60 * 1000, // 1 minute
-    max: 100 // limit each IP to 100 requests per windowMs
-  }))
+  app.use(
+    rateLimit({
+      windowMs: 60 * 1000, // 1 minute
+      max: 100, // limit each IP to 100 requests per windowMs
+    }),
+  )
 
   // Logging middleware
   app.use(pinoHttp({ logger }))

@@ -55,13 +55,9 @@ Please refer to the [webapp README.md](/apps/webapp/README.md) for more details 
 
 ### Packages
 
-#### Config ESLint (`/packages/config-eslint`)
-
-This package provides a shared ESLint configuration to ensure consistent coding styles and practices across the project's JavaScript and TypeScript codebases.
-
 #### Config TypeScript (`/packages/config-typescript`)
 
-Similar to `config-eslint`, this package offers a shared TypeScript configuration to standardize TypeScript compilation options across the project.
+This package offers a shared TypeScript configuration to standardize TypeScript compilation options across the project.
 
 #### Smartsale Contracts (`/packages/app-contracts`)
 

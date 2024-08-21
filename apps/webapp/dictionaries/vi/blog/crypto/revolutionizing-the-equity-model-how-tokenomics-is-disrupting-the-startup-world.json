@@ -2,11 +2,7 @@
   "relatedBlogs": [
     {
       "id": "180563939",
-      "topics": [
-        "DAO",
-        "Tokenomics",
-        "Bình luận"
-      ],
+      "topics": ["DAO", "Tokenomics", "Bình luận"],
       "title": "Một Khung cho Thiết kế Quản trị Blockchain: Bánh xe Nhóm Prysm [Bình luận]",
       "slug": "a-framework-for-blockchain-governance-design-the-prysm-group-wheel-commentary",
       "authorName": "Crypto Clairity",
@@ -25,11 +21,7 @@
     },
     {
       "id": "180556595",
-      "topics": [
-        "Gây quỹ",
-        "Tokenomics",
-        "Bình luận"
-      ],
+      "topics": ["Gây quỹ", "Tokenomics", "Bình luận"],
       "title": "Hiệu ứng Blockchain: Hiệu ứng Mạng mà không tốn Chi phí Quyền lực Thị trường [Bình luận]",
       "slug": "the-blockchain-effect-network-effects-without-market-power-costs-commentary",
       "authorName": "Crypto Clairity",
@@ -48,10 +40,7 @@
     },
     {
       "id": "180563903",
-      "topics": [
-        "DAO",
-        "Tóm tắt"
-      ],
+      "topics": ["DAO", "Tóm tắt"],
       "title": "Bỏ phiếu để làm gì? [Tóm tắt]",
       "slug": "what-is-voting-for-summary",
       "authorName": "Crypto Clairity",
@@ -70,10 +59,7 @@
     },
     {
       "id": "180563908",
-      "topics": [
-        "DAO",
-        "Tóm tắt"
-      ],
+      "topics": ["DAO", "Tóm tắt"],
       "title": "Quản trị để làm gì? [Tóm tắt]",
       "slug": "what-is-governance-for-summary",
       "authorName": "Crypto Clairity",
@@ -92,10 +78,7 @@
     },
     {
       "id": "180563931",
-      "topics": [
-        "Tokenomics",
-        "Bình luận"
-      ],
+      "topics": ["Tokenomics", "Bình luận"],
       "title": "Cấu trúc Khuyến khích Blockchain: Chúng là gì và tại sao chúng quan trọng [Bình luận]",
       "slug": "blockchain-incentive-structures-what-they-are-and-why-they-matter-commentary",
       "authorName": "Crypto Clairity",
@@ -114,10 +97,7 @@
     },
     {
       "id": "167101094",
-      "topics": [
-        "Bắt đầu",
-        "Tokenomics"
-      ],
+      "topics": ["Bắt đầu", "Tokenomics"],
       "title": "Tokenomics 101: Khai phóng Sức mạnh của Tiền điện tử!",
       "slug": "tokenomics-101-unleashing-the-power-of-cryptocurrency",
       "authorName": "Crypto Clairity",
@@ -136,10 +116,7 @@
     },
     {
       "id": "166981063",
-      "topics": [
-        "Bắt đầu",
-        "DAO"
-      ],
+      "topics": ["Bắt đầu", "DAO"],
       "title": "Tương lai đã đến: Sự Trỗi dậy của các Tổ chức Tự trị Phân cấp (DAOs)",
       "slug": "the-future-is-here-the-rise-of-decentralized-autonomous-organizations-daos",
       "authorName": "Crypto Clairity",
@@ -158,10 +135,7 @@
     },
     {
       "id": "165685908",
-      "topics": [
-        "Bắt đầu",
-        "Gây quỹ"
-      ],
+      "topics": ["Bắt đầu", "Gây quỹ"],
       "title": "Phá vỡ Trạng thái Hiện tại: Cách Tiền điện tử đang Cách mạng hóa Gây quỹ và Gọi vốn Cộng đồng",
       "slug": "disrupt-the-status-quo-how-cryptocurrency-is-revolutionizing-fundraising-and-crow",
       "authorName": "Crypto Clairity",
@@ -181,11 +155,7 @@
   ],
   "blogContent": {
     "id": "167184977",
-    "topics": [
-      "Tokenomics",
-      "DAO",
-      "Gây quỹ"
-    ],
+    "topics": ["Tokenomics", "DAO", "Gây quỹ"],
     "title": "Cách mạng hóa Mô hình Vốn: Làm thế nào Tokenomics đang làm xáo trộn Thế giới Khởi nghiệp",
     "slug": "revolutionizing-the-equity-model-how-tokenomics-is-disrupting-the-startup-world",
     "authorName": "Crypto Clairity",
@@ -211,9 +181,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Giới thiệu"
                     }
                   ]
@@ -256,9 +224,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Mô hình Vốn Token (TEM)"
                     }
                   ]
@@ -392,9 +358,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Vượt qua các Thách thức của Mô hình Vốn Token (TEM)"
                     }
                   ]
@@ -437,9 +401,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Quá trình Bán Token kiểu Đấu giá Hà Lan"
                     }
                   ]
@@ -500,9 +462,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Bước vào Tổ chức Tự trị Phân cấp"
                     }
                   ]
@@ -581,9 +541,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Kết luận"
                     }
                   ]
@@ -627,9 +585,5 @@
       }
     }
   },
-  "topics": [
-    "Tokenomics",
-    "DAO",
-    "Fundraising"
-  ]
+  "topics": ["Tokenomics", "DAO", "Fundraising"]
 }

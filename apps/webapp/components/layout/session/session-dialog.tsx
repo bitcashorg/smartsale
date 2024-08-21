@@ -6,7 +6,7 @@ import { useSession } from '@/hooks/use-session'
 import { useState } from 'react'
 
 export function SessionDialog({
-  defaultContent = 'login'
+  defaultContent = 'login',
 }: BitcashAccessProps) {
   const [dialogContent, setDialogContent] =
     useState<BitcashAccessContentType>(defaultContent)

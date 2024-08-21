@@ -1,6 +1,6 @@
-import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { PlayIcon } from 'lucide-react'
+import Link from 'next/link'
 
 export function VideoStrip() {
   return (
@@ -18,7 +18,7 @@ export function VideoStrip() {
       <div className="relative">
         <div className="overflow-x-auto scrollbar-hide">
           <div className="flex gap-4">
-            {[1, 2, 3, 4, 5, 6, 7, 8].map(item => (
+            {[1, 2, 3, 4, 5, 6, 7, 8].map((item) => (
               <div
                 key={item}
                 className="relative flex-shrink-0 w-40 group sm:w-48 md:w-56 lg:w-64"

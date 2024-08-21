@@ -2,11 +2,7 @@
   "relatedBlogs": [
     {
       "id": "180563939",
-      "topics": [
-        "DAO",
-        "代币经济学",
-        "评论"
-      ],
+      "topics": ["DAO", "代币经济学", "评论"],
       "title": "区块链治理设计框架：Prysm Group轮盘[评论]",
       "slug": "a-framework-for-blockchain-governance-design-the-prysm-group-wheel-commentary",
       "authorName": "Crypto Clairity",
@@ -25,10 +21,7 @@
     },
     {
       "id": "180217169",
-      "topics": [
-        "代币经济学",
-        "评论"
-      ],
+      "topics": ["代币经济学", "评论"],
       "title": "代币化激励经济学3：代币价值无法协调利益相关者[评论]",
       "slug": "economics-of-tokenized-incentives-3-token-value-won-t-align-stakeholders-commenta",
       "authorName": "Crypto Clairity",
@@ -47,10 +40,7 @@
     },
     {
       "id": "180217082",
-      "topics": [
-        "代币经济学",
-        "评论"
-      ],
+      "topics": ["代币经济学", "评论"],
       "title": "代币化激励经济学1：绩效薪酬简介[评论]",
       "slug": "economics-of-tokenized-incentives-1-intro-to-pay-for-performance",
       "authorName": "Crypto Clairity",
@@ -69,11 +59,7 @@
     },
     {
       "id": "180563918",
-      "topics": [
-        "代币经济学",
-        "评论",
-        "融资"
-      ],
+      "topics": ["代币经济学", "评论", "融资"],
       "title": "代币：投资工具还是交换媒介（不能兼而有之）[评论]",
       "slug": "tokens-investment-vehicle-or-medium-of-exchange-not-both-commentary",
       "authorName": "Crypto Clairity",
@@ -92,11 +78,7 @@
     },
     {
       "id": "180563922",
-      "topics": [
-        "融资",
-        "代币经济学",
-        "评论"
-      ],
+      "topics": ["融资", "代币经济学", "评论"],
       "title": "ICO利用网络效应[评论]",
       "slug": "icos-leverage-network-effects-commentary",
       "authorName": "Crypto Clairity",
@@ -115,11 +97,7 @@
     },
     {
       "id": "180556595",
-      "topics": [
-        "融资",
-        "代币经济学",
-        "评论"
-      ],
+      "topics": ["融资", "代币经济学", "评论"],
       "title": "区块链效应：无市场力量成本的网络效应[评论]",
       "slug": "the-blockchain-effect-network-effects-without-market-power-costs-commentary",
       "authorName": "Crypto Clairity",
@@ -138,10 +116,7 @@
     },
     {
       "id": "180563931",
-      "topics": [
-        "代币经济学",
-        "评论"
-      ],
+      "topics": ["代币经济学", "评论"],
       "title": "区块链激励结构：它们是什么以及为什么重要[评论]",
       "slug": "blockchain-incentive-structures-what-they-are-and-why-they-matter-commentary",
       "authorName": "Crypto Clairity",
@@ -160,10 +135,7 @@
     },
     {
       "id": "167101094",
-      "topics": [
-        "入门",
-        "代币经济学"
-      ],
+      "topics": ["入门", "代币经济学"],
       "title": "代币经济学101：释放加密货币的力量！",
       "slug": "tokenomics-101-unleashing-the-power-of-cryptocurrency",
       "authorName": "Crypto Clairity",
@@ -183,10 +155,7 @@
   ],
   "blogContent": {
     "id": "180217123",
-    "topics": [
-      "代币经济学",
-      "评论"
-    ],
+    "topics": ["代币经济学", "评论"],
     "title": "代币化激励经济学2：选择有效的绩效指标 [评论]",
     "slug": "economics-of-tokenized-incentives-2-selecting-effective-performance-metrics-comme",
     "authorName": "Crypto Clairity",
@@ -211,9 +180,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Original Link: "
                     },
                     {
@@ -222,9 +189,7 @@
                       "children": [
                         {
                           "type": "span",
-                          "marks": [
-                            "strong"
-                          ],
+                          "marks": ["strong"],
                           "value": "Economics of Tokenized Incentives 2: Selecting Effective Performance Metrics"
                         }
                       ]
@@ -236,9 +201,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Author: "
                     },
                     {
@@ -265,9 +228,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Summary"
                     }
                   ]
@@ -287,9 +248,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Commentary"
                     }
                   ]
@@ -309,9 +268,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Actionable Insights"
                     }
                   ]
@@ -328,9 +285,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Choose Metrics Carefully"
                             },
                             {
@@ -349,9 +304,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Consider Other Incentive Structures"
                             },
                             {
@@ -370,9 +323,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Monitor and Adjust"
                             },
                             {
@@ -391,9 +342,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Communicate Clearly"
                             },
                             {
@@ -436,8 +385,5 @@
       }
     }
   },
-  "topics": [
-    "代币经济学",
-    "评论"
-  ]
+  "topics": ["代币经济学", "评论"]
 }

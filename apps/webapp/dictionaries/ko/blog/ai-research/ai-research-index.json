@@ -6,13 +6,7 @@
       "articles": [
         {
           "id": "198277124",
-          "topics": [
-            "대규모 언어 모델",
-            "금융",
-            "의료",
-            "법률",
-            "프롬프팅"
-          ],
+          "topics": ["대규모 언어 모델", "금융", "의료", "법률", "프롬프팅"],
           "title": "독해력을 통한 대규모 언어 모델 적응",
           "slug": "adapting-large-language-models-via-reading-comprehension",
           "authorName": "Prof. Otto Nomos",
@@ -40,10 +34,7 @@
         },
         {
           "id": "198277342",
-          "topics": [
-            "LLM",
-            "다국어"
-          ],
+          "topics": ["LLM", "다국어"],
           "title": "OpenBA: 처음부터 사전 훈련된 오픈소스 15B 이중언어 비대칭 seq2seq 모델",
           "slug": "openba-an-open-sourced-15b-bilingual-asymmetric-seq2seq-model-pre-trained-from-sc",
           "authorName": "Prof. Otto Nomos",
@@ -71,10 +62,7 @@
         },
         {
           "id": "198277117",
-          "topics": [
-            "LLM",
-            "검색"
-          ],
+          "topics": ["LLM", "검색"],
           "title": "PDFTriage: 긴 구조화된 문서에 대한 질의응답",
           "slug": "pdftriage-question-answering-over-long-structured-documents",
           "authorName": "Prof. Otto Nomos",
@@ -102,10 +90,7 @@
         },
         {
           "id": "198277138",
-          "topics": [
-            "LLM",
-            "미세 조정"
-          ],
+          "topics": ["LLM", "미세 조정"],
           "title": "정렬된 LLaMA: 동적 추론을 위한 정렬된 미세 조정(SoFT)을 사용하여 대규모 언어 모델의 중간 계층의 잠재력 활용",
           "slug": "sorted-llama-unlocking-the-potential-of-intermediate-layers-of-large-language-mod",
           "authorName": "Prof. Otto Nomos",
@@ -133,11 +118,7 @@
         },
         {
           "id": "198277150",
-          "topics": [
-            "LLM",
-            "명령어 튜닝",
-            "멀티모달"
-          ],
+          "topics": ["LLM", "명령어 튜닝", "멀티모달"],
           "title": "명령어 튜닝된 대규모 멀티모달 모델의 확장에 대한 실증적 연구",
           "slug": "an-empirical-study-of-scaling-instruct-tuned-large-multimodal-models",
           "authorName": "Prof. Otto Nomos",
@@ -165,11 +146,7 @@
         },
         {
           "id": "198277160",
-          "topics": [
-            "LLM",
-            "에이전트",
-            "게임"
-          ],
+          "topics": ["LLM", "에이전트", "게임"],
           "title": "마인드에이전트: 창발적 게임 상호작용",
           "slug": "mindagent-emergent-gaming-interaction",
           "authorName": "Prof. Otto Nomos",
@@ -197,10 +174,7 @@
         },
         {
           "id": "198277196",
-          "topics": [
-            "LLM",
-            "구조화된 데이터"
-          ],
+          "topics": ["LLM", "구조화된 데이터"],
           "title": "Struc-Bench: 대규모 언어 모델이 정말 복잡한 구조화된 데이터를 생성하는 데 뛰어날까?",
           "slug": "struc-bench-are-large-language-models-really-good-at-generating-complex-structure",
           "authorName": "Prof. Otto Nomos",
@@ -228,11 +202,7 @@
         },
         {
           "id": "198277217",
-          "topics": [
-            "LLM",
-            "개인정보 보호",
-            "엣지"
-          ],
+          "topics": ["LLM", "개인정보 보호", "엣지"],
           "title": "대규모 언어 모델을 사용한 개인정보 보호 마스킹 복구",
           "slug": "recovering-from-privacy-preserving-masking-with-large-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -260,10 +230,7 @@
         },
         {
           "id": "198277239",
-          "topics": [
-            "LLM",
-            "채팅"
-          ],
+          "topics": ["LLM", "채팅"],
           "title": "S3-DST: LLM 시대의 구조화된 개방형 도메인 대화 분할 및 상태 추적",
           "slug": "s3-dst-structured-open-domain-dialogue-segmentation-and-state-tracking-in-the-era",
           "authorName": "Prof. Otto Nomos",
@@ -291,10 +258,7 @@
         },
         {
           "id": "198277253",
-          "topics": [
-            "대규모 언어 모델",
-            "오디오"
-          ],
+          "topics": ["대규모 언어 모델", "오디오"],
           "title": "대규모 언어 모델을 사용한 음성 언어 이해를 위한 텍스트 증강",
           "slug": "augmenting-text-for-spoken-language-understanding-with-large-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -322,10 +286,7 @@
         },
         {
           "id": "198277277",
-          "topics": [
-            "LLM",
-            "압축"
-          ],
+          "topics": ["LLM", "압축"],
           "title": "언어 모델링은 압축이다",
           "slug": "language-modeling-is-compression",
           "authorName": "Prof. Otto Nomos",
@@ -353,10 +314,7 @@
         },
         {
           "id": "198277345",
-          "topics": [
-            "LLM",
-            "다국어"
-          ],
+          "topics": ["LLM", "다국어"],
           "title": "바이추안 2: 오픈 대규모 언어 모델",
           "slug": "baichuan-2-open-large-scale-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -384,10 +342,7 @@
         },
         {
           "id": "198277360",
-          "topics": [
-            "LLM",
-            "RLHF"
-          ],
+          "topics": ["LLM", "RLHF"],
           "title": "장점 모델과 선택적 리허설을 통한 RLHF 안정화",
           "slug": "stabilizing-rlhf-through-advantage-model-and-selective-rehearsal",
           "authorName": "Prof. Otto Nomos",
@@ -415,10 +370,7 @@
         },
         {
           "id": "198277446",
-          "topics": [
-            "LLM",
-            "환각"
-          ],
+          "topics": ["LLM", "환각"],
           "title": "검증 체인이 대규모 언어 모델의 환각을 줄입니다",
           "slug": "chain-of-verification-reduces-hallucination-in-large-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -446,12 +398,7 @@
         },
         {
           "id": "198277458",
-          "topics": [
-            "LLM",
-            "환각",
-            "개체",
-            "구조화된 데이터"
-          ],
+          "topics": ["LLM", "환각", "개체", "구조화된 데이터"],
           "title": "LMDX: 언어 모델 기반 문서 정보 추출 및 위치 파악",
           "slug": "lmdx-language-model-based-document-information-extraction-and-localization",
           "authorName": "Prof. Otto Nomos",
@@ -479,10 +426,7 @@
         },
         {
           "id": "198277209",
-          "topics": [
-            "LLM",
-            "데이터"
-          ],
+          "topics": ["LLM", "데이터"],
           "title": "SlimPajama-DC: LLM 훈련을 위한 데이터 조합 이해하기",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -510,10 +454,7 @@
         },
         {
           "id": "198277109",
-          "topics": [
-            "LLM",
-            "추론"
-          ],
+          "topics": ["LLM", "추론"],
           "title": "대조적 디코딩이 대규모 언어 모델의 추론 능력을 향상시킨다",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -541,11 +482,7 @@
         },
         {
           "id": "198277099",
-          "topics": [
-            "LLM",
-            "다국어",
-            "데이터"
-          ],
+          "topics": ["LLM", "다국어", "데이터"],
           "title": "CulturaX: 167개 언어로 된 대규모 언어 모델을 위한 정제된 거대 다국어 데이터셋",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -573,11 +510,7 @@
         },
         {
           "id": "198044929",
-          "topics": [
-            "LLM",
-            "데이터",
-            "에이전트"
-          ],
+          "topics": ["LLM", "데이터", "에이전트"],
           "title": "추론 실체화 에이전트를 위한 데이터 소스",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -605,11 +538,7 @@
         },
         {
           "id": "198044900",
-          "topics": [
-            "LLM",
-            "엔티티",
-            "미세 조정"
-          ],
+          "topics": ["LLM", "엔티티", "미세 조정"],
           "title": "효과적인 엔티티 중요도 감지를 위한 맥락 정보 활용",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -637,10 +566,7 @@
         },
         {
           "id": "198044892",
-          "topics": [
-            "LLM",
-            "에이전트"
-          ],
+          "topics": ["LLM", "에이전트"],
           "title": "LASER: 웹 탐색을 위한 상태 공간 탐색 기능을 갖춘 LLM 에이전트",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -668,11 +594,7 @@
         },
         {
           "id": "198044879",
-          "topics": [
-            "LLM",
-            "트랜스포머",
-            "해석 가능성"
-          ],
+          "topics": ["LLM", "트랜스포머", "해석 가능성"],
           "title": "희소 오토인코더가 언어 모델에서 높은 해석 가능성을 가진 특징을 찾아냄",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -700,10 +622,7 @@
         },
         {
           "id": "198044802",
-          "topics": [
-            "LLM",
-            "채팅"
-          ],
+          "topics": ["LLM", "채팅"],
           "title": "장문형 질의응답을 위한 LLM의 답변 가능성 조사",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -731,11 +650,7 @@
         },
         {
           "id": "198044746",
-          "topics": [
-            "LLM",
-            "트랜스포머",
-            "훈련"
-          ],
+          "topics": ["LLM", "트랜스포머", "훈련"],
           "title": "희소 연결 기반 모델의 확장 법칙",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -763,10 +678,7 @@
         },
         {
           "id": "197990774",
-          "topics": [
-            "대규모 언어 모델",
-            "프롬프트 작성"
-          ],
+          "topics": ["대규모 언어 모델", "프롬프트 작성"],
           "title": "대규모 언어 모델과 진화 알고리즘의 결합으로 강력한 프롬프트 최적화 도구 탄생",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -794,10 +706,7 @@
         },
         {
           "id": "197990754",
-          "topics": [
-            "대규모 언어 모델",
-            "문맥 내 학습"
-          ],
+          "topics": ["대규모 언어 모델", "문맥 내 학습"],
           "title": "대규모 언어 모델을 이용한 모호성 인식 문맥 내 학습",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -825,11 +734,7 @@
         },
         {
           "id": "197842432",
-          "topics": [
-            "LLM",
-            "평가",
-            "다국어"
-          ],
+          "topics": ["LLM", "평가", "다국어"],
           "title": "대규모 언어 모델 기반 평가자가 다국어 평가 확장의 해결책인가?",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -857,11 +762,7 @@
         },
         {
           "id": "197990687",
-          "topics": [
-            "LLM",
-            "의료",
-            "요약"
-          ],
+          "topics": ["LLM", "의료", "요약"],
           "title": "임상 텍스트 요약: 대규모 언어 모델 적용이 인간 전문가를 능가할 수 있다",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
@@ -889,10 +790,7 @@
         },
         {
           "id": "197990671",
-          "topics": [
-            "LLM",
-            "에이전트"
-          ],
+          "topics": ["LLM", "에이전트"],
           "title": "에이전트: 자율 언어 에이전트를 위한 오픈소스 프레임워크",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -920,11 +818,7 @@
         },
         {
           "id": "197990654",
-          "topics": [
-            "LLM",
-            "RLHF",
-            "강화 학습"
-          ],
+          "topics": ["LLM", "RLHF", "강화 학습"],
           "title": "통계적 거부 샘플링이 선호도 최적화를 개선한다",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -952,10 +846,7 @@
         },
         {
           "id": "197859672",
-          "topics": [
-            "대규모 언어 모델",
-            "코드"
-          ],
+          "topics": ["대규모 언어 모델", "코드"],
           "title": "컴파일러 최적화를 위한 대규모 언어 모델",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -983,10 +874,7 @@
         },
         {
           "id": "197840057",
-          "topics": [
-            "LLM",
-            "과학"
-          ],
+          "topics": ["LLM", "과학"],
           "title": "AstroLLaMA: 천문학 분야의 특화된 기초 모델을 향하여",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -1014,11 +902,7 @@
         },
         {
           "id": "197838596",
-          "topics": [
-            "대규모 언어 모델",
-            "수학",
-            "과학"
-          ],
+          "topics": ["대규모 언어 모델", "수학", "과학"],
           "title": "과학을 위한 대규모 언어 모델: P 대 NP에 대한 연구",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1046,9 +930,7 @@
         },
         {
           "id": "197836858",
-          "topics": [
-            "LLM"
-          ],
+          "topics": ["LLM"],
           "title": "PagedAttention을 사용한 대규모 언어 모델 서빙을 위한 효율적인 메모리 관리",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1076,11 +958,7 @@
         },
         {
           "id": "197817281",
-          "topics": [
-            "LLM",
-            "맥락 내 학습",
-            "미세 조정"
-          ],
+          "topics": ["LLM", "맥락 내 학습", "미세 조정"],
           "title": "FIAT: 지시 가속 튜닝을 통한 학습 패러다임 융합",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1108,9 +986,7 @@
         },
         {
           "id": "197815488",
-          "topics": [
-            "LLM"
-          ],
+          "topics": ["LLM"],
           "title": "LLM 양자화를 위한 부호화된 경사 하강법을 통한 가중치 반올림 최적화",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -1138,10 +1014,7 @@
         },
         {
           "id": "197813719",
-          "topics": [
-            "LLM",
-            "데이터"
-          ],
+          "topics": ["LLM", "데이터"],
           "title": "적을수록 더 좋다: 대규모 LLM 사전 훈련을 위한 데이터 정제 조사",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1169,9 +1042,7 @@
         },
         {
           "id": "197812286",
-          "topics": [
-            "LLM"
-          ],
+          "topics": ["LLM"],
           "title": "대규모 언어 모델의 뉴런: 죽은 뉴런, N-그램 뉴런, 위치 뉴런",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -1199,10 +1070,7 @@
         },
         {
           "id": "197810544",
-          "topics": [
-            "LLM",
-            "오픈 소스"
-          ],
+          "topics": ["LLM", "오픈 소스"],
           "title": "교과서만 있으면 됩니다 II: phi-1.5 기술 보고서",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1230,11 +1098,7 @@
         },
         {
           "id": "197621737",
-          "topics": [
-            "LLM",
-            "프롬프팅",
-            "요약"
-          ],
+          "topics": ["LLM", "프롬프팅", "요약"],
           "title": "DrugChat: 약물 분자 그래프에서 ChatGPT와 유사한 기능 활성화를 향하여",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1262,11 +1126,7 @@
         },
         {
           "id": "197621634",
-          "topics": [
-            "LLM",
-            "프롬프팅",
-            "요약"
-          ],
+          "topics": ["LLM", "프롬프팅", "요약"],
           "title": "희소에서 밀집으로: 밀도 체인 프롬프팅을 통한 GPT-4 요약",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1294,11 +1154,7 @@
         },
         {
           "id": "197621519",
-          "topics": [
-            "LLM",
-            "오픈 소스",
-            "명령어 튜닝"
-          ],
+          "topics": ["LLM", "오픈 소스", "명령어 튜닝"],
           "title": "XGen-7B 기술 보고서",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
@@ -1326,10 +1182,7 @@
         },
         {
           "id": "197621178",
-          "topics": [
-            "LLM",
-            "프롬프팅"
-          ],
+          "topics": ["LLM", "프롬프팅"],
           "title": "DoLa: 계층 대비 디코딩으로 대규모 언어 모델의 사실성 향상",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1357,10 +1210,7 @@
         },
         {
           "id": "197621439",
-          "topics": [
-            "LLM",
-            "수학"
-          ],
+          "topics": ["LLM", "수학"],
           "title": "GPT는 계산기 없이 수학 문제를 해결할 수 있습니다",
           "slug": "transformer-models-an-introduction-and-catalog",
           "authorName": "Prof. Otto Nomos",
@@ -1388,10 +1238,7 @@
         },
         {
           "id": "197621128",
-          "topics": [
-            "대규모 언어 모델",
-            "프롬프팅"
-          ],
+          "topics": ["대규모 언어 모델", "프롬프팅"],
           "title": "최적화 도구로서의 대규모 언어 모델",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1419,10 +1266,7 @@
         },
         {
           "id": "197613974",
-          "topics": [
-            "LLM",
-            "RLHF"
-          ],
+          "topics": ["LLM", "RLHF"],
           "title": "효율적인 RLHF: PPO의 메모리 사용량 줄이기",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1450,11 +1294,7 @@
         },
         {
           "id": "197559951",
-          "topics": [
-            "LLM",
-            "에이전트",
-            "도구"
-          ],
+          "topics": ["LLM", "에이전트", "도구"],
           "title": "ModelScope-Agent: 오픈소스 대규모 언어 모델을 사용한 맞춤형 에이전트 시스템 구축",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1482,11 +1322,7 @@
         },
         {
           "id": "180403467",
-          "topics": [
-            "LLM",
-            "RLHF",
-            "요약"
-          ],
+          "topics": ["LLM", "RLHF", "요약"],
           "title": "인간 피드백을 통한 강화학습의 미해결 문제와 근본적 한계 [요약]",
           "slug": "open-problems-and-fundamental-limitations-of-reinforcement-learning-from-human-fe",
           "authorName": "Prof. Otto Nomos",
@@ -1514,10 +1350,7 @@
         },
         {
           "id": "180869081",
-          "topics": [
-            "LLM",
-            "요약"
-          ],
+          "topics": ["LLM", "요약"],
           "title": "라마 2: 오픈 파운데이션 및 미세 조정된 채팅 모델 [논평]",
           "slug": "llama-2-open-foundation-and-fine-tuned-chat-models-commentary",
           "authorName": "Prof. Otto Nomos",
@@ -1545,10 +1378,7 @@
         },
         {
           "id": "179737945",
-          "topics": [
-            "LLM",
-            "요약"
-          ],
+          "topics": ["LLM", "요약"],
           "title": "대규모 언어 모델의 도전과 응용 [요약]",
           "slug": "challenges-and-applications-of-large-language-models-summary",
           "authorName": "Prof. Otto Nomos",
@@ -1576,11 +1406,7 @@
         },
         {
           "id": "180927998",
-          "topics": [
-            "LLM",
-            "논평",
-            "LORA"
-          ],
+          "topics": ["LLM", "논평", "LORA"],
           "title": "LoraHub: 동적 LoRA 구성을 통한 효율적인 교차 작업 일반화 [논평]",
           "slug": "lorahub-efficient-cross-task-generalization-via-dynamic-lora-composition-commenta",
           "authorName": "Prof. Otto Nomos",
@@ -1608,11 +1434,7 @@
         },
         {
           "id": "180928004",
-          "topics": [
-            "LLM",
-            "도구",
-            "논평"
-          ],
+          "topics": ["LLM", "도구", "논평"],
           "title": "ToolLLM: 대규모 언어 모델이 16000개 이상의 실제 API를 마스터하도록 돕기 [논평]",
           "slug": "toolllm-facilitating-large-language-models-to-master-16000-real-world-apis-commen",
           "authorName": "Prof. Otto Nomos",
@@ -1640,10 +1462,7 @@
         },
         {
           "id": "189989705",
-          "topics": [
-            "LLM",
-            "도구"
-          ],
+          "topics": ["LLM", "도구"],
           "title": "FacTool: 생성형 AI의 사실성 탐지 -- 다중 작업 및 다중 도메인 시나리오를 위한 도구 증강 프레임워크",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1671,11 +1490,7 @@
         },
         {
           "id": "189849326",
-          "topics": [
-            "LLM",
-            "프롬프팅",
-            "추론"
-          ],
+          "topics": ["LLM", "프롬프팅", "추론"],
           "title": "사고의 그래프: 대규모 언어 모델을 사용한 복잡한 문제 해결",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1703,9 +1518,7 @@
         },
         {
           "id": "189849276",
-          "topics": [
-            "LLM"
-          ],
+          "topics": ["LLM"],
           "title": "대형 언어 모델을 위한 효율적인 유도 생성",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1733,10 +1546,7 @@
         },
         {
           "id": "189849263",
-          "topics": [
-            "LLM",
-            "의료"
-          ],
+          "topics": ["LLM", "의료"],
           "title": "GEARS를 사용한 새로운 다중 유전자 교란의 전사 결과 예측",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1764,11 +1574,7 @@
         },
         {
           "id": "189845558",
-          "topics": [
-            "LLM",
-            "압축",
-            "설문조사"
-          ],
+          "topics": ["LLM", "압축", "설문조사"],
           "title": "대형 언어 모델의 모델 압축에 관한 설문조사",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1796,11 +1602,7 @@
         },
         {
           "id": "189845521",
-          "topics": [
-            "LLM",
-            "훈련",
-            "정렬"
-          ],
+          "topics": ["LLM", "훈련", "정렬"],
           "title": "사전 훈련 데이터에서 언어 모델을 거쳐 하위 작업까지: 불공정한 NLP 모델로 이어지는 정치적 편향의 흔적 추적",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1828,10 +1630,7 @@
         },
         {
           "id": "189787126",
-          "topics": [
-            "LLM",
-            "코드"
-          ],
+          "topics": ["LLM", "코드"],
           "title": "데이터베이스 관리자로서의 LLM",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -1859,10 +1658,7 @@
         },
         {
           "id": "189845549",
-          "topics": [
-            "LLM",
-            "명령어 튜닝"
-          ],
+          "topics": ["LLM", "명령어 튜닝"],
           "title": "명령어 역번역을 통한 자체 정렬",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -1890,10 +1686,7 @@
         },
         {
           "id": "189845519",
-          "topics": [
-            "LLM",
-            "RLHF"
-          ],
+          "topics": ["LLM", "RLHF"],
           "title": "RLAIF: AI 피드백을 통한 인간 피드백 강화학습의 확장",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1921,9 +1714,7 @@
         },
         {
           "id": "189792745",
-          "topics": [
-            "LLM"
-          ],
+          "topics": ["LLM"],
           "title": "대규모 콘텐츠 및 행동 모델을 통한 콘텐츠와 행동의 이해, 시뮬레이션 및 최적화",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1951,11 +1742,7 @@
         },
         {
           "id": "189787194",
-          "topics": [
-            "LLM",
-            "코드",
-            "의료"
-          ],
+          "topics": ["LLM", "코드", "의료"],
           "title": "BioCoder: 맥락적 실용 지식을 활용한 생물정보학 코드 생성 벤치마크",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1983,11 +1770,7 @@
         },
         {
           "id": "189787170",
-          "topics": [
-            "LLM",
-            "다국어",
-            "평가"
-          ],
+          "topics": ["LLM", "다국어", "평가"],
           "title": "벨레벨레 벤치마크: 122개 언어 변형으로 된 병렬 독해 데이터셋",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
@@ -2015,11 +1798,7 @@
         },
         {
           "id": "189787192",
-          "topics": [
-            "LLM",
-            "코드",
-            "명령어 튜닝"
-          ],
+          "topics": ["LLM", "코드", "명령어 튜닝"],
           "title": "프로그래밍 언어가 명령어 튜닝을 통해 서로를 향상시킬 수 있을까?",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2047,11 +1826,7 @@
         },
         {
           "id": "189787190",
-          "topics": [
-            "LLM",
-            "평가",
-            "기후"
-          ],
+          "topics": ["LLM", "평가", "기후"],
           "title": "WeatherBench 2: 차세대 데이터 기반 전 세계 기상 모델을 위한 벤치마크",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2079,10 +1854,7 @@
         },
         {
           "id": "189787181",
-          "topics": [
-            "LLM",
-            "다국어"
-          ],
+          "topics": ["LLM", "다국어"],
           "title": "자이스와 자이스-챗: 아랍어 중심의 기초 및 지시 조정된 오픈 생성형 대규모 언어 모델",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2110,11 +1882,7 @@
         },
         {
           "id": "189787168",
-          "topics": [
-            "LLM",
-            "지시 튜닝",
-            "의료"
-          ],
+          "topics": ["LLM", "지시 튜닝", "의료"],
           "title": "MedAlign: 전자 의무 기록의 지시 따르기를 위한 임상의 생성 데이터셋",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2142,11 +1910,7 @@
         },
         {
           "id": "189777823",
-          "topics": [
-            "LLM",
-            "코드",
-            "채팅"
-          ],
+          "topics": ["LLM", "코드", "채팅"],
           "title": "SoTaNa: 오픈 소스 소프트웨어 개발 보조 도구",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
@@ -2174,10 +1938,7 @@
         },
         {
           "id": "189787150",
-          "topics": [
-            "LLM",
-            "개인화"
-          ],
+          "topics": ["LLM", "개인화"],
           "title": "LLM에게 개인화를 가르치다 -- 글쓰기 교육에서 영감을 받은 접근법",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2205,11 +1966,7 @@
         },
         {
           "id": "189787148",
-          "topics": [
-            "검색",
-            "LLM",
-            "문맥 내 학습"
-          ],
+          "topics": ["검색", "LLM", "문맥 내 학습"],
           "title": "RAVEN: 검색 증강 인코더-디코더 언어 모델을 이용한 문맥 내 학습",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2237,11 +1994,7 @@
         },
         {
           "id": "189787144",
-          "topics": [
-            "LLM",
-            "코드",
-            "프롬프팅"
-          ],
+          "topics": ["LLM", "코드", "프롬프팅"],
           "title": "GPT-4 코드 인터프리터와 코드 기반 자체 검증을 사용한 어려운 수학 문장제 해결",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2269,11 +2022,7 @@
         },
         {
           "id": "189787113",
-          "topics": [
-            "LLM",
-            "프롬프팅",
-            "다국어"
-          ],
+          "topics": ["LLM", "프롬프팅", "다국어"],
           "title": "오류에 악마가 있다: 세밀한 기계 번역 평가를 위한 대규모 언어 모델 활용",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2301,10 +2050,7 @@
         },
         {
           "id": "189777847",
-          "topics": [
-            "LLM",
-            "맥락 내 학습"
-          ],
+          "topics": ["LLM", "맥락 내 학습"],
           "title": "CausalLM은 맥락 내 학습에 최적화되지 않았다",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -2332,12 +2078,7 @@
         },
         {
           "id": "189787086",
-          "topics": [
-            "LLM",
-            "미세 조정",
-            "LORA",
-            "데이터"
-          ],
+          "topics": ["LLM", "미세 조정", "LORA", "데이터"],
           "title": "플라티푸스: 빠르고 저렴하며 강력한 LLM 개선",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2365,11 +2106,7 @@
         },
         {
           "id": "189777877",
-          "topics": [
-            "LLM",
-            "코드",
-            "명령어 튜닝"
-          ],
+          "topics": ["LLM", "코드", "명령어 튜닝"],
           "title": "OctoPack: 코드 대규모 언어 모델의 명령어 튜닝",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2397,10 +2134,7 @@
         },
         {
           "id": "189777872",
-          "topics": [
-            "대규모 언어 모델",
-            "코드"
-          ],
+          "topics": ["대규모 언어 모델", "코드"],
           "title": "대규모 언어 모델이 생성한 코드를 사용한 네트워크 관리 향상",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2428,12 +2162,7 @@
         },
         {
           "id": "189777849",
-          "topics": [
-            "오디오",
-            "LLM",
-            "멀티모달",
-            "다국어"
-          ],
+          "topics": ["오디오", "LLM", "멀티모달", "다국어"],
           "title": "정렬 없이 음성-텍스트 공동 표현 개선",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2461,10 +2190,7 @@
         },
         {
           "id": "189777845",
-          "topics": [
-            "LLM",
-            "에이전트"
-          ],
+          "topics": ["LLM", "에이전트"],
           "title": "BOLAA: LLM 증강 자율 에이전트의 벤치마킹 및 오케스트레이션",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2492,11 +2218,7 @@
         },
         {
           "id": "189775948",
-          "topics": [
-            "LLM",
-            "채팅",
-            "데이터"
-          ],
+          "topics": ["LLM", "채팅", "데이터"],
           "title": "PIPPA: 부분적으로 합성된 대화 데이터셋",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2524,10 +2246,7 @@
         },
         {
           "id": "189777825",
-          "topics": [
-            "LLM",
-            "명령어 튜닝"
-          ],
+          "topics": ["LLM", "명령어 튜닝"],
           "title": "명령어 역번역을 통한 자체 정렬",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -2555,10 +2274,7 @@
         },
         {
           "id": "189577785",
-          "topics": [
-            "LLM",
-            "헬스케어"
-          ],
+          "topics": ["LLM", "헬스케어"],
           "title": "OpenProteinSet: 대규모 구조 생물학을 위한 훈련 데이터",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
@@ -2586,12 +2302,7 @@
         },
         {
           "id": "189577629",
-          "topics": [
-            "LLM",
-            "정렬",
-            "설문조사",
-            "평가"
-          ],
+          "topics": ["LLM", "정렬", "설문조사", "평가"],
           "title": "신뢰할 수 있는 LLM: 대규모 언어 모델의 정렬을 평가하기 위한 설문조사 및 지침",
           "slug": "trustworthy-llms-a-survey-and-guideline-for-evaluating-large-language-models-alig",
           "authorName": "Prof. Otto Nomos",
@@ -2619,10 +2330,7 @@
         },
         {
           "id": "189576091",
-          "topics": [
-            "LLM",
-            "추론"
-          ],
+          "topics": ["LLM", "추론"],
           "title": "단계적 추측 디코딩을 통한 LLM 추론 가속화",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -2650,11 +2358,7 @@
         },
         {
           "id": "189576084",
-          "topics": [
-            "LLM",
-            "데이터",
-            "훈련"
-          ],
+          "topics": ["LLM", "데이터", "훈련"],
           "title": "셰퍼드: 언어 모델 생성을 위한 비평가",
           "slug": "shepherd-a-critic-for-language-model-generation",
           "authorName": "Prof. Otto Nomos",
@@ -2682,10 +2386,7 @@
         },
         {
           "id": "189576080",
-          "topics": [
-            "LLM",
-            "법률"
-          ],
+          "topics": ["LLM", "법률"],
           "title": "SILO 언어 모델: 비매개변수 데이터 저장소에서 법적 위험 격리",
           "slug": "silo-language-models-isolating-legal-risk-in-a-nonparametric-datastore",
           "authorName": "Prof. Otto Nomos",
@@ -2713,10 +2414,7 @@
         },
         {
           "id": "189576058",
-          "topics": [
-            "LLM",
-            "정렬"
-          ],
+          "topics": ["LLM", "정렬"],
           "title": "단순한 합성 데이터가 대규모 언어 모델의 아첨을 줄인다",
           "slug": "simple-synthetic-data-reduces-sycophancy-in-large-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -2750,13 +2448,7 @@
       "articles": [
         {
           "id": "198277124",
-          "topics": [
-            "대규모 언어 모델",
-            "금융",
-            "의료",
-            "법률",
-            "프롬프팅"
-          ],
+          "topics": ["대규모 언어 모델", "금융", "의료", "법률", "프롬프팅"],
           "title": "독해력을 통한 대규모 언어 모델 적응",
           "slug": "adapting-large-language-models-via-reading-comprehension",
           "authorName": "Prof. Otto Nomos",
@@ -2790,13 +2482,7 @@
       "articles": [
         {
           "id": "198277124",
-          "topics": [
-            "대규모 언어 모델",
-            "금융",
-            "의료",
-            "법률",
-            "프롬프팅"
-          ],
+          "topics": ["대규모 언어 모델", "금융", "의료", "법률", "프롬프팅"],
           "title": "독해력을 통한 대규모 언어 모델 적응",
           "slug": "adapting-large-language-models-via-reading-comprehension",
           "authorName": "Prof. Otto Nomos",
@@ -2824,11 +2510,7 @@
         },
         {
           "id": "197990687",
-          "topics": [
-            "LLM",
-            "의료",
-            "요약"
-          ],
+          "topics": ["LLM", "의료", "요약"],
           "title": "임상 텍스트 요약: 대규모 언어 모델 적용이 인간 전문가를 능가할 수 있다",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
@@ -2856,10 +2538,7 @@
         },
         {
           "id": "189849263",
-          "topics": [
-            "LLM",
-            "의료"
-          ],
+          "topics": ["LLM", "의료"],
           "title": "GEARS를 사용한 새로운 다중 유전자 교란의 전사 결과 예측",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2887,11 +2566,7 @@
         },
         {
           "id": "189787194",
-          "topics": [
-            "LLM",
-            "코드",
-            "의료"
-          ],
+          "topics": ["LLM", "코드", "의료"],
           "title": "BioCoder: 맥락적 실용 지식을 활용한 생물정보학 코드 생성 벤치마크",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2919,11 +2594,7 @@
         },
         {
           "id": "189787168",
-          "topics": [
-            "LLM",
-            "지시 튜닝",
-            "의료"
-          ],
+          "topics": ["LLM", "지시 튜닝", "의료"],
           "title": "MedAlign: 전자 의무 기록의 지시 따르기를 위한 임상의 생성 데이터셋",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2951,10 +2622,7 @@
         },
         {
           "id": "189577785",
-          "topics": [
-            "LLM",
-            "헬스케어"
-          ],
+          "topics": ["LLM", "헬스케어"],
           "title": "OpenProteinSet: 대규모 구조 생물학을 위한 훈련 데이터",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
@@ -2988,13 +2656,7 @@
       "articles": [
         {
           "id": "198277124",
-          "topics": [
-            "대규모 언어 모델",
-            "금융",
-            "의료",
-            "법률",
-            "프롬프팅"
-          ],
+          "topics": ["대규모 언어 모델", "금융", "의료", "법률", "프롬프팅"],
           "title": "독해력을 통한 대규모 언어 모델 적응",
           "slug": "adapting-large-language-models-via-reading-comprehension",
           "authorName": "Prof. Otto Nomos",
@@ -3022,10 +2684,7 @@
         },
         {
           "id": "189576080",
-          "topics": [
-            "LLM",
-            "법률"
-          ],
+          "topics": ["LLM", "법률"],
           "title": "SILO 언어 모델: 비매개변수 데이터 저장소에서 법적 위험 격리",
           "slug": "silo-language-models-isolating-legal-risk-in-a-nonparametric-datastore",
           "authorName": "Prof. Otto Nomos",
@@ -3059,13 +2718,7 @@
       "articles": [
         {
           "id": "198277124",
-          "topics": [
-            "대규모 언어 모델",
-            "금융",
-            "의료",
-            "법률",
-            "프롬프팅"
-          ],
+          "topics": ["대규모 언어 모델", "금융", "의료", "법률", "프롬프팅"],
           "title": "독해력을 통한 대규모 언어 모델 적응",
           "slug": "adapting-large-language-models-via-reading-comprehension",
           "authorName": "Prof. Otto Nomos",
@@ -3093,10 +2746,7 @@
         },
         {
           "id": "197990774",
-          "topics": [
-            "대규모 언어 모델",
-            "프롬프트 작성"
-          ],
+          "topics": ["대규모 언어 모델", "프롬프트 작성"],
           "title": "대규모 언어 모델과 진화 알고리즘의 결합으로 강력한 프롬프트 최적화 도구 탄생",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3124,11 +2774,7 @@
         },
         {
           "id": "197621737",
-          "topics": [
-            "LLM",
-            "프롬프팅",
-            "요약"
-          ],
+          "topics": ["LLM", "프롬프팅", "요약"],
           "title": "DrugChat: 약물 분자 그래프에서 ChatGPT와 유사한 기능 활성화를 향하여",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3156,11 +2802,7 @@
         },
         {
           "id": "197621634",
-          "topics": [
-            "LLM",
-            "프롬프팅",
-            "요약"
-          ],
+          "topics": ["LLM", "프롬프팅", "요약"],
           "title": "희소에서 밀집으로: 밀도 체인 프롬프팅을 통한 GPT-4 요약",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3188,10 +2830,7 @@
         },
         {
           "id": "197621178",
-          "topics": [
-            "LLM",
-            "프롬프팅"
-          ],
+          "topics": ["LLM", "프롬프팅"],
           "title": "DoLa: 계층 대비 디코딩으로 대규모 언어 모델의 사실성 향상",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3219,10 +2858,7 @@
         },
         {
           "id": "197621128",
-          "topics": [
-            "대규모 언어 모델",
-            "프롬프팅"
-          ],
+          "topics": ["대규모 언어 모델", "프롬프팅"],
           "title": "최적화 도구로서의 대규모 언어 모델",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3250,11 +2886,7 @@
         },
         {
           "id": "189849326",
-          "topics": [
-            "LLM",
-            "프롬프팅",
-            "추론"
-          ],
+          "topics": ["LLM", "프롬프팅", "추론"],
           "title": "사고의 그래프: 대규모 언어 모델을 사용한 복잡한 문제 해결",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3282,11 +2914,7 @@
         },
         {
           "id": "189787144",
-          "topics": [
-            "LLM",
-            "코드",
-            "프롬프팅"
-          ],
+          "topics": ["LLM", "코드", "프롬프팅"],
           "title": "GPT-4 코드 인터프리터와 코드 기반 자체 검증을 사용한 어려운 수학 문장제 문제 해결",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3314,11 +2942,7 @@
         },
         {
           "id": "189787113",
-          "topics": [
-            "LLM",
-            "프롬프팅",
-            "다국어"
-          ],
+          "topics": ["LLM", "프롬프팅", "다국어"],
           "title": "오류에 악마가 있다: 세밀한 기계 번역 평가를 위한 대규모 언어 모델 활용",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3352,10 +2976,7 @@
       "articles": [
         {
           "id": "198277342",
-          "topics": [
-            "LLM",
-            "다국어"
-          ],
+          "topics": ["LLM", "다국어"],
           "title": "OpenBA: 처음부터 사전 훈련된 오픈소스 15B 이중언어 비대칭 seq2seq 모델",
           "slug": "openba-an-open-sourced-15b-bilingual-asymmetric-seq2seq-model-pre-trained-from-sc",
           "authorName": "Prof. Otto Nomos",
@@ -3383,10 +3004,7 @@
         },
         {
           "id": "198277345",
-          "topics": [
-            "LLM",
-            "다국어"
-          ],
+          "topics": ["LLM", "다국어"],
           "title": "바이추안 2: 오픈 대규모 언어 모델",
           "slug": "baichuan-2-open-large-scale-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -3414,11 +3032,7 @@
         },
         {
           "id": "198277099",
-          "topics": [
-            "LLM",
-            "다국어",
-            "데이터"
-          ],
+          "topics": ["LLM", "다국어", "데이터"],
           "title": "CulturaX: 167개 언어로 된 대규모 언어 모델을 위한 정제된 거대 다국어 데이터셋",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3446,11 +3060,7 @@
         },
         {
           "id": "197842432",
-          "topics": [
-            "LLM",
-            "평가",
-            "다국어"
-          ],
+          "topics": ["LLM", "평가", "다국어"],
           "title": "대규모 언어 모델 기반 평가자가 다국어 평가 확장의 해결책인가?",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -3478,11 +3088,7 @@
         },
         {
           "id": "189787170",
-          "topics": [
-            "LLM",
-            "다국어",
-            "평가"
-          ],
+          "topics": ["LLM", "다국어", "평가"],
           "title": "벨레벨레 벤치마크: 122개 언어 변형으로 된 병렬 독해 데이터셋",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
@@ -3510,10 +3116,7 @@
         },
         {
           "id": "189787181",
-          "topics": [
-            "LLM",
-            "다국어"
-          ],
+          "topics": ["LLM", "다국어"],
           "title": "자이스와 자이스-챗: 아랍어 중심의 기초 및 지시 조정된 오픈 생성형 대규모 언어 모델",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3541,11 +3144,7 @@
         },
         {
           "id": "189787113",
-          "topics": [
-            "LLM",
-            "프롬프팅",
-            "다국어"
-          ],
+          "topics": ["LLM", "프롬프팅", "다국어"],
           "title": "오류에 악마가 있다: 세밀한 기계 번역 평가를 위한 대규모 언어 모델 활용",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3573,12 +3172,7 @@
         },
         {
           "id": "189777849",
-          "topics": [
-            "오디오",
-            "LLM",
-            "멀티모달",
-            "다국어"
-          ],
+          "topics": ["오디오", "LLM", "멀티모달", "다국어"],
           "title": "정렬 없이 음성-텍스트 공동 표현 개선",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3612,10 +3206,7 @@
       "articles": [
         {
           "id": "198277117",
-          "topics": [
-            "LLM",
-            "검색"
-          ],
+          "topics": ["LLM", "검색"],
           "title": "PDFTriage: 긴 구조화된 문서에 대한 질의응답",
           "slug": "pdftriage-question-answering-over-long-structured-documents",
           "authorName": "Prof. Otto Nomos",
@@ -3643,11 +3234,7 @@
         },
         {
           "id": "189787148",
-          "topics": [
-            "검색",
-            "LLM",
-            "문맥 내 학습"
-          ],
+          "topics": ["검색", "LLM", "문맥 내 학습"],
           "title": "RAVEN: 검색 증강 인코더-디코더 언어 모델을 이용한 문맥 내 학습",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3681,10 +3268,7 @@
       "articles": [
         {
           "id": "198277138",
-          "topics": [
-            "LLM",
-            "미세 조정"
-          ],
+          "topics": ["LLM", "미세 조정"],
           "title": "정렬된 LLaMA: 동적 추론을 위한 정렬된 미세 조정(SoFT)을 사용하여 대규모 언어 모델의 중간 계층의 잠재력 활용",
           "slug": "sorted-llama-unlocking-the-potential-of-intermediate-layers-of-large-language-mod",
           "authorName": "Prof. Otto Nomos",
@@ -3712,11 +3296,7 @@
         },
         {
           "id": "198044900",
-          "topics": [
-            "LLM",
-            "엔티티",
-            "미세 조정"
-          ],
+          "topics": ["LLM", "엔티티", "미세 조정"],
           "title": "효과적인 엔티티 중요도 감지를 위한 맥락 정보 활용",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3744,11 +3324,7 @@
         },
         {
           "id": "197817281",
-          "topics": [
-            "LLM",
-            "맥락 내 학습",
-            "미세 조정"
-          ],
+          "topics": ["LLM", "맥락 내 학습", "미세 조정"],
           "title": "FIAT: 지시 가속 튜닝을 통한 학습 패러다임 융합",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3776,12 +3352,7 @@
         },
         {
           "id": "189787086",
-          "topics": [
-            "LLM",
-            "미세 조정",
-            "LORA",
-            "데이터"
-          ],
+          "topics": ["LLM", "미세 조정", "LORA", "데이터"],
           "title": "플라티푸스: 빠르고 저렴하며 강력한 LLM 개선",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3815,11 +3386,7 @@
       "articles": [
         {
           "id": "198277150",
-          "topics": [
-            "LLM",
-            "명령어 튜닝",
-            "멀티모달"
-          ],
+          "topics": ["LLM", "명령어 튜닝", "멀티모달"],
           "title": "명령어 튜닝된 대규모 멀티모달 모델의 확장에 대한 실증적 연구",
           "slug": "an-empirical-study-of-scaling-instruct-tuned-large-multimodal-models",
           "authorName": "Prof. Otto Nomos",
@@ -3847,11 +3414,7 @@
         },
         {
           "id": "197621519",
-          "topics": [
-            "LLM",
-            "오픈 소스",
-            "명령어 튜닝"
-          ],
+          "topics": ["LLM", "오픈 소스", "명령어 튜닝"],
           "title": "XGen-7B 기술 보고서",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
@@ -3879,10 +3442,7 @@
         },
         {
           "id": "189845549",
-          "topics": [
-            "LLM",
-            "명령어 튜닝"
-          ],
+          "topics": ["LLM", "명령어 튜닝"],
           "title": "명령어 역번역을 통한 자체 정렬",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -3910,11 +3470,7 @@
         },
         {
           "id": "189787192",
-          "topics": [
-            "LLM",
-            "코드",
-            "명령어 튜닝"
-          ],
+          "topics": ["LLM", "코드", "명령어 튜닝"],
           "title": "프로그래밍 언어가 명령어 튜닝을 통해 서로를 향상시킬 수 있을까?",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3942,11 +3498,7 @@
         },
         {
           "id": "189787168",
-          "topics": [
-            "LLM",
-            "지시 튜닝",
-            "의료"
-          ],
+          "topics": ["LLM", "지시 튜닝", "의료"],
           "title": "MedAlign: 전자 의무 기록의 지시 따르기를 위한 임상의 생성 데이터셋",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3974,11 +3526,7 @@
         },
         {
           "id": "189777877",
-          "topics": [
-            "LLM",
-            "코드",
-            "명령어 튜닝"
-          ],
+          "topics": ["LLM", "코드", "명령어 튜닝"],
           "title": "OctoPack: 코드 대규모 언어 모델의 명령어 튜닝",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -4006,10 +3554,7 @@
         },
         {
           "id": "189777825",
-          "topics": [
-            "LLM",
-            "명령어 튜닝"
-          ],
+          "topics": ["LLM", "명령어 튜닝"],
           "title": "명령어 역번역을 통한 자체 정렬",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -4043,11 +3588,7 @@
       "articles": [
         {
           "id": "198277150",
-          "topics": [
-            "LLM",
-            "명령어 튜닝",
-            "멀티모달"
-          ],
+          "topics": ["LLM", "명령어 튜닝", "멀티모달"],
           "title": "명령어 튜닝된 대규모 멀티모달 모델의 확장에 대한 실증적 연구",
           "slug": "an-empirical-study-of-scaling-instruct-tuned-large-multimodal-models",
           "authorName": "Prof. Otto Nomos",
@@ -4075,10 +3616,7 @@
         },
         {
           "id": "197845061",
-          "topics": [
-            "오디오",
-            "멀티모달"
-          ],
+          "topics": ["오디오", "멀티모달"],
           "title": "범용 오디오 표현을 위한 자연어 지도",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -4106,12 +3644,7 @@
         },
         {
           "id": "189777849",
-          "topics": [
-            "오디오",
-            "LLM",
-            "멀티모달",
-            "다국어"
-          ],
+          "topics": ["오디오", "LLM", "멀티모달", "다국어"],
           "title": "정렬 없이 음성-텍스트 공동 표현 개선",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -4145,11 +3678,7 @@
       "articles": [
         {
           "id": "198277160",
-          "topics": [
-            "LLM",
-            "에이전트",
-            "게임"
-          ],
+          "topics": ["LLM", "에이전트", "게임"],
           "title": "마인드에이전트: 창발적 게임 상호작용",
           "slug": "mindagent-emergent-gaming-interaction",
           "authorName": "Prof. Otto Nomos",
@@ -4177,11 +3706,7 @@
         },
         {
           "id": "198044929",
-          "topics": [
-            "LLM",
-            "데이터",
-            "에이전트"
-          ],
+          "topics": ["LLM", "데이터", "에이전트"],
           "title": "추론 실체화 에이전트를 위한 데이터 소스",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -4209,10 +3734,7 @@
         },
         {
           "id": "198044892",
-          "topics": [
-            "LLM",
-            "에이전트"
-          ],
+          "topics": ["LLM", "에이전트"],
           "title": "LASER: 웹 탐색을 위한 상태 공간 탐색 기능을 갖춘 LLM 에이전트",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -4240,10 +3762,7 @@
         },
         {
           "id": "197990671",
-          "topics": [
-            "LLM",
-            "에이전트"
-          ],
+          "topics": ["LLM", "에이전트"],
           "title": "에이전트: 자율 언어 에이전트를 위한 오픈소스 프레임워크",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -4271,11 +3790,7 @@
         },
         {
           "id": "197559951",
-          "topics": [
-            "LLM",
-            "에이전트",
-            "도구"
-          ],
+          "topics": ["LLM", "에이전트", "도구"],
           "title": "ModelScope-Agent: 오픈소스 대규모 언어 모델을 사용한 맞춤형 에이전트 시스템 구축",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -4303,10 +3818,7 @@
         },
         {
           "id": "189777845",
-          "topics": [
-            "LLM",
-            "에이전트"
-          ],
+          "topics": ["LLM", "에이전트"],
           "title": "BOLAA: LLM 증강 자율 에이전트의 벤치마킹 및 오케스트레이션",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -4340,11 +3852,7 @@
       "articles": [
         {
           "id": "198277160",
-          "topics": [
-            "LLM",
-            "에이전트",
-            "게임"
-          ],
+          "topics": ["LLM", "에이전트", "게임"],
           "title": "마인드에이전트: 창발적 게임 상호작용",
           "slug": "mindagent-emergent-gaming-interaction",
           "authorName": "Prof. Otto Nomos",
@@ -4378,9 +3886,7 @@
       "articles": [
         {
           "id": "198277182",
-          "topics": [
-            "트랜스포머"
-          ],
+          "topics": ["트랜스포머"],
           "title": "병렬 제약 어텐션을 통한 트랜스포머의 두통 해결",
           "slug": "cure-the-headache-of-transformers-via-collinear-constrained-attention",
           "authorName": "Prof. Otto Nomos",
@@ -4408,11 +3914,7 @@
         },
         {
           "id": "198044879",
-          "topics": [
-            "LLM",
-            "트랜스포머",
-            "해석 가능성"
-          ],
+          "topics": ["LLM", "트랜스포머", "해석 가능성"],
           "title": "희소 오토인코더가 언어 모델에서 높은 해석 가능성을 가진 특징을 찾아냄",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -4440,11 +3942,7 @@
         },
         {
           "id": "198044746",
-          "topics": [
-            "LLM",
-            "트랜스포머",
-            "훈련"
-          ],
+          "topics": ["LLM", "트랜스포머", "훈련"],
           "title": "희소 연결 기반 모델의 확장 법칙",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -4472,9 +3970,7 @@
         },
         {
           "id": "197842604",
-          "topics": [
-            "트랜스포머"
-          ],
+          "topics": ["트랜스포머"],
           "title": "트랜스포머에서 메사 최적화 알고리즘 발견하기",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -4502,9 +3998,7 @@
         },
         {
           "id": "197613989",
-          "topics": [
-            "트랜스포머"
-          ],
+          "topics": ["트랜스포머"],
           "title": "게이트 순환 신경망이 주의 메커니즘을 발견하다",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -4532,9 +4026,7 @@
         },
         {
           "id": "197556833",
-          "topics": [
-            "트랜스포머"
-          ],
+          "topics": ["트랜스포머"],
           "title": "넓은 피드포워드 하나면 충분하다",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -4562,9 +4054,7 @@
         },
         {
           "id": "189989661",
-          "topics": [
-            "트랜스포머"
-          ],
+          "topics": ["트랜스포머"],
           "title": "OpenAI 임베딩을 사용한 벡터 검색: Lucene만으로 충분합니다",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -4592,9 +4082,7 @@
         },
         {
           "id": "189849314",
-          "topics": [
-            "트랜스포머"
-          ],
+          "topics": ["트랜스포머"],
           "title": "베이지안 플로우 네트워크",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -4622,9 +4110,7 @@
         },
         {
           "id": "189787209",
-          "topics": [
-            "트랜스포머"
-          ],
+          "topics": ["트랜스포머"],
           "title": "YaRN: 대규모 언어 모델의 효율적인 컨텍스트 윈도우 확장",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -4652,9 +4138,7 @@
         },
         {
           "id": "189787174",
-          "topics": [
-            "트랜스포머"
-          ],
+          "topics": ["트랜스포머"],
           "title": "LM-인피니트: 대규모 언어 모델을 위한 간단한 실시간 길이 일반화",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -4682,9 +4166,7 @@
         },
         {
           "id": "189777843",
-          "topics": [
-            "트랜스포머"
-          ],
+          "topics": ["트랜스포머"],
           "title": "트랜스포머 아키텍처를 위한 조합 가능한 함수 보존 확장",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -4718,10 +4200,7 @@
       "articles": [
         {
           "id": "198277196",
-          "topics": [
-            "LLM",
-            "구조화된 데이터"
-          ],
+          "topics": ["LLM", "구조화된 데이터"],
           "title": "Struc-Bench: 대규모 언어 모델이 정말 복잡한 구조화된 데이터를 생성하는 데 뛰어날까?",
           "slug": "struc-bench-are-large-language-models-really-good-at-generating-complex-structure",
           "authorName": "Prof. Otto Nomos",
@@ -4749,12 +4228,7 @@
         },
         {
           "id": "198277458",
-          "topics": [
-            "LLM",
-            "환각",
-            "개체",
-            "구조화된 데이터"
-          ],
+          "topics": ["LLM", "환각", "개체", "구조화된 데이터"],
           "title": "LMDX: 언어 모델 기반 문서 정보 추출 및 위치 파악",
           "slug": "lmdx-language-model-based-document-information-extraction-and-localization",
           "authorName": "Prof. Otto Nomos",
@@ -4788,11 +4262,7 @@
       "articles": [
         {
           "id": "198277217",
-          "topics": [
-            "LLM",
-            "개인정보 보호",
-            "엣지"
-          ],
+          "topics": ["LLM", "개인정보 보호", "엣지"],
           "title": "대규모 언어 모델을 사용한 개인정보 보호 마스킹 복구",
           "slug": "recovering-from-privacy-preserving-masking-with-large-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -4826,11 +4296,7 @@
       "articles": [
         {
           "id": "198277217",
-          "topics": [
-            "LLM",
-            "개인정보 보호",
-            "엣지"
-          ],
+          "topics": ["LLM", "개인정보 보호", "엣지"],
           "title": "대규모 언어 모델을 사용한 개인정보 보호 마스킹 복구",
           "slug": "recovering-from-privacy-preserving-masking-with-large-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -4864,10 +4330,7 @@
       "articles": [
         {
           "id": "198277239",
-          "topics": [
-            "LLM",
-            "채팅"
-          ],
+          "topics": ["LLM", "채팅"],
           "title": "S3-DST: LLM 시대의 구조화된 개방형 도메인 대화 분할 및 상태 추적",
           "slug": "s3-dst-structured-open-domain-dialogue-segmentation-and-state-tracking-in-the-era",
           "authorName": "Prof. Otto Nomos",
@@ -4895,10 +4358,7 @@
         },
         {
           "id": "198044802",
-          "topics": [
-            "LLM",
-            "채팅"
-          ],
+          "topics": ["LLM", "채팅"],
           "title": "장문형 질의응답을 위한 LLM의 답변 가능성 조사",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -4926,11 +4386,7 @@
         },
         {
           "id": "189777823",
-          "topics": [
-            "LLM",
-            "코드",
-            "채팅"
-          ],
+          "topics": ["LLM", "코드", "채팅"],
           "title": "SoTaNa: 오픈 소스 소프트웨어 개발 보조 도구",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
@@ -4958,11 +4414,7 @@
         },
         {
           "id": "189775948",
-          "topics": [
-            "LLM",
-            "채팅",
-            "데이터"
-          ],
+          "topics": ["LLM", "채팅", "데이터"],
           "title": "PIPPA: 부분적으로 합성된 대화 데이터셋",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -4996,10 +4448,7 @@
       "articles": [
         {
           "id": "198277253",
-          "topics": [
-            "대규모 언어 모델",
-            "오디오"
-          ],
+          "topics": ["대규모 언어 모델", "오디오"],
           "title": "대규모 언어 모델을 사용한 음성 언어 이해를 위한 텍스트 증강",
           "slug": "augmenting-text-for-spoken-language-understanding-with-large-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -5027,10 +4476,7 @@
         },
         {
           "id": "197845061",
-          "topics": [
-            "오디오",
-            "멀티모달"
-          ],
+          "topics": ["오디오", "멀티모달"],
           "title": "범용 오디오 표현을 위한 자연어 지도",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5058,12 +4504,7 @@
         },
         {
           "id": "189777849",
-          "topics": [
-            "오디오",
-            "LLM",
-            "멀티모달",
-            "다국어"
-          ],
+          "topics": ["오디오", "LLM", "멀티모달", "다국어"],
           "title": "정렬 없이 음성-텍스트 공동 표현 개선",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5097,10 +4538,7 @@
       "articles": [
         {
           "id": "198277277",
-          "topics": [
-            "LLM",
-            "압축"
-          ],
+          "topics": ["LLM", "압축"],
           "title": "언어 모델링은 압축이다",
           "slug": "language-modeling-is-compression",
           "authorName": "Prof. Otto Nomos",
@@ -5128,11 +4566,7 @@
         },
         {
           "id": "189845558",
-          "topics": [
-            "LLM",
-            "압축",
-            "설문조사"
-          ],
+          "topics": ["LLM", "압축", "설문조사"],
           "title": "대형 언어 모델의 모델 압축에 관한 설문조사",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5166,10 +4600,7 @@
       "articles": [
         {
           "id": "198277360",
-          "topics": [
-            "LLM",
-            "RLHF"
-          ],
+          "topics": ["LLM", "RLHF"],
           "title": "장점 모델과 선택적 리허설을 통한 RLHF 안정화",
           "slug": "stabilizing-rlhf-through-advantage-model-and-selective-rehearsal",
           "authorName": "Prof. Otto Nomos",
@@ -5197,11 +4628,7 @@
         },
         {
           "id": "197990654",
-          "topics": [
-            "LLM",
-            "RLHF",
-            "강화 학습"
-          ],
+          "topics": ["LLM", "RLHF", "강화 학습"],
           "title": "통계적 거부 샘플링이 선호도 최적화를 개선한다",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5229,10 +4656,7 @@
         },
         {
           "id": "197613974",
-          "topics": [
-            "LLM",
-            "RLHF"
-          ],
+          "topics": ["LLM", "RLHF"],
           "title": "효율적인 RLHF: PPO의 메모리 사용량 감소",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5260,11 +4684,7 @@
         },
         {
           "id": "180403467",
-          "topics": [
-            "LLM",
-            "RLHF",
-            "요약"
-          ],
+          "topics": ["LLM", "RLHF", "요약"],
           "title": "인간 피드백을 통한 강화학습의 미해결 문제와 근본적 한계 [요약]",
           "slug": "open-problems-and-fundamental-limitations-of-reinforcement-learning-from-human-fe",
           "authorName": "Prof. Otto Nomos",
@@ -5292,10 +4712,7 @@
         },
         {
           "id": "189845519",
-          "topics": [
-            "LLM",
-            "RLHF"
-          ],
+          "topics": ["LLM", "RLHF"],
           "title": "RLAIF: AI 피드백을 통한 인간 피드백 강화학습의 확장",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5329,10 +4746,7 @@
       "articles": [
         {
           "id": "198277446",
-          "topics": [
-            "LLM",
-            "환각"
-          ],
+          "topics": ["LLM", "환각"],
           "title": "검증 체인이 대규모 언어 모델의 환각을 줄입니다",
           "slug": "chain-of-verification-reduces-hallucination-in-large-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -5360,12 +4774,7 @@
         },
         {
           "id": "198277458",
-          "topics": [
-            "LLM",
-            "환각",
-            "개체",
-            "구조화된 데이터"
-          ],
+          "topics": ["LLM", "환각", "개체", "구조화된 데이터"],
           "title": "LMDX: 언어 모델 기반 문서 정보 추출 및 위치 파악",
           "slug": "lmdx-language-model-based-document-information-extraction-and-localization",
           "authorName": "Prof. Otto Nomos",
@@ -5399,12 +4808,7 @@
       "articles": [
         {
           "id": "198277458",
-          "topics": [
-            "LLM",
-            "환각",
-            "개체",
-            "구조화된 데이터"
-          ],
+          "topics": ["LLM", "환각", "개체", "구조화된 데이터"],
           "title": "LMDX: 언어 모델 기반 문서 정보 추출 및 위치 파악",
           "slug": "lmdx-language-model-based-document-information-extraction-and-localization",
           "authorName": "Prof. Otto Nomos",
@@ -5432,11 +4836,7 @@
         },
         {
           "id": "198044900",
-          "topics": [
-            "LLM",
-            "엔티티",
-            "미세 조정"
-          ],
+          "topics": ["LLM", "엔티티", "미세 조정"],
           "title": "효과적인 엔티티 중요도 감지를 위한 맥락 정보 활용",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5470,10 +4870,7 @@
       "articles": [
         {
           "id": "198277209",
-          "topics": [
-            "LLM",
-            "데이터"
-          ],
+          "topics": ["LLM", "데이터"],
           "title": "SlimPajama-DC: LLM 훈련을 위한 데이터 조합 이해하기",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -5501,11 +4898,7 @@
         },
         {
           "id": "198277099",
-          "topics": [
-            "LLM",
-            "다국어",
-            "데이터"
-          ],
+          "topics": ["LLM", "다국어", "데이터"],
           "title": "CulturaX: 167개 언어로 된 대규모 언어 모델을 위한 정제된 거대 다국어 데이터셋",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5533,11 +4926,7 @@
         },
         {
           "id": "198044929",
-          "topics": [
-            "LLM",
-            "데이터",
-            "에이전트"
-          ],
+          "topics": ["LLM", "데이터", "에이전트"],
           "title": "추론 실체화 에이전트를 위한 데이터 소스",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -5565,10 +4954,7 @@
         },
         {
           "id": "197813719",
-          "topics": [
-            "LLM",
-            "데이터"
-          ],
+          "topics": ["LLM", "데이터"],
           "title": "적을수록 더 좋다: 대규모 LLM 사전 훈련을 위한 데이터 정제 조사",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5596,12 +4982,7 @@
         },
         {
           "id": "189787086",
-          "topics": [
-            "LLM",
-            "미세 조정",
-            "LORA",
-            "데이터"
-          ],
+          "topics": ["LLM", "미세 조정", "LORA", "데이터"],
           "title": "플라티푸스: 빠르고 저렴하며 강력한 LLM 개선",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5629,11 +5010,7 @@
         },
         {
           "id": "189775948",
-          "topics": [
-            "LLM",
-            "채팅",
-            "데이터"
-          ],
+          "topics": ["LLM", "채팅", "데이터"],
           "title": "PIPPA: 부분적으로 합성된 대화 데이터셋",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5661,11 +5038,7 @@
         },
         {
           "id": "189576084",
-          "topics": [
-            "LLM",
-            "데이터",
-            "훈련"
-          ],
+          "topics": ["LLM", "데이터", "훈련"],
           "title": "셰퍼드: 언어 모델 생성을 위한 비평가",
           "slug": "shepherd-a-critic-for-language-model-generation",
           "authorName": "Prof. Otto Nomos",
@@ -5699,10 +5072,7 @@
       "articles": [
         {
           "id": "198277109",
-          "topics": [
-            "LLM",
-            "추론"
-          ],
+          "topics": ["LLM", "추론"],
           "title": "대조적 디코딩이 대규모 언어 모델의 추론 능력을 향상시킨다",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5730,11 +5100,7 @@
         },
         {
           "id": "189849326",
-          "topics": [
-            "LLM",
-            "프롬프팅",
-            "추론"
-          ],
+          "topics": ["LLM", "프롬프팅", "추론"],
           "title": "사고의 그래프: 대규모 언어 모델을 사용한 복잡한 문제 해결",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5768,11 +5134,7 @@
       "articles": [
         {
           "id": "198044879",
-          "topics": [
-            "LLM",
-            "트랜스포머",
-            "해석 가능성"
-          ],
+          "topics": ["LLM", "트랜스포머", "해석 가능성"],
           "title": "희소 오토인코더가 언어 모델에서 높은 해석 가능성을 가진 특징을 찾아냄",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -5806,11 +5168,7 @@
       "articles": [
         {
           "id": "198044746",
-          "topics": [
-            "LLM",
-            "트랜스포머",
-            "훈련"
-          ],
+          "topics": ["LLM", "트랜스포머", "훈련"],
           "title": "희소 연결 기반 모델의 확장 법칙",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -5838,11 +5196,7 @@
         },
         {
           "id": "189845521",
-          "topics": [
-            "LLM",
-            "훈련",
-            "정렬"
-          ],
+          "topics": ["LLM", "훈련", "정렬"],
           "title": "사전 훈련 데이터에서 언어 모델을 거쳐 하위 작업까지: 불공정한 NLP 모델로 이어지는 정치적 편향의 흔적 추적",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5870,11 +5224,7 @@
         },
         {
           "id": "189576084",
-          "topics": [
-            "LLM",
-            "데이터",
-            "훈련"
-          ],
+          "topics": ["LLM", "데이터", "훈련"],
           "title": "셰퍼드: 언어 모델 생성을 위한 비평가",
           "slug": "shepherd-a-critic-for-language-model-generation",
           "authorName": "Prof. Otto Nomos",
@@ -5908,10 +5258,7 @@
       "articles": [
         {
           "id": "197990754",
-          "topics": [
-            "대규모 언어 모델",
-            "문맥 내 학습"
-          ],
+          "topics": ["대규모 언어 모델", "문맥 내 학습"],
           "title": "대규모 언어 모델을 이용한 모호성 인식 문맥 내 학습",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5939,11 +5286,7 @@
         },
         {
           "id": "197817281",
-          "topics": [
-            "LLM",
-            "맥락 내 학습",
-            "미세 조정"
-          ],
+          "topics": ["LLM", "맥락 내 학습", "미세 조정"],
           "title": "FIAT: 지시 가속 튜닝을 통한 학습 패러다임 융합",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5971,11 +5314,7 @@
         },
         {
           "id": "189787148",
-          "topics": [
-            "검색",
-            "LLM",
-            "문맥 내 학습"
-          ],
+          "topics": ["검색", "LLM", "문맥 내 학습"],
           "title": "RAVEN: 검색 증강 인코더-디코더 언어 모델을 이용한 문맥 내 학습",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -6003,10 +5342,7 @@
         },
         {
           "id": "189777847",
-          "topics": [
-            "LLM",
-            "맥락 내 학습"
-          ],
+          "topics": ["LLM", "맥락 내 학습"],
           "title": "CausalLM은 맥락 내 학습에 최적화되지 않았다",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -6040,11 +5376,7 @@
       "articles": [
         {
           "id": "197842432",
-          "topics": [
-            "LLM",
-            "평가",
-            "다국어"
-          ],
+          "topics": ["LLM", "평가", "다국어"],
           "title": "대규모 언어 모델 기반 평가자가 다국어 평가 확장의 해결책인가?",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -6072,11 +5404,7 @@
         },
         {
           "id": "189787170",
-          "topics": [
-            "LLM",
-            "다국어",
-            "평가"
-          ],
+          "topics": ["LLM", "다국어", "평가"],
           "title": "벨레벨레 벤치마크: 122개 언어 변형으로 된 병렬 독해 데이터셋",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
@@ -6104,11 +5432,7 @@
         },
         {
           "id": "189787190",
-          "topics": [
-            "LLM",
-            "평가",
-            "기후"
-          ],
+          "topics": ["LLM", "평가", "기후"],
           "title": "WeatherBench 2: 차세대 데이터 기반 전 세계 기상 모델을 위한 벤치마크",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -6136,12 +5460,7 @@
         },
         {
           "id": "189577629",
-          "topics": [
-            "LLM",
-            "정렬",
-            "설문조사",
-            "평가"
-          ],
+          "topics": ["LLM", "정렬", "설문조사", "평가"],
           "title": "신뢰할 수 있는 LLM: 대규모 언어 모델의 정렬을 평가하기 위한 설문조사 및 지침",
           "slug": "trustworthy-llms-a-survey-and-guideline-for-evaluating-large-language-models-alig",
           "authorName": "Prof. Otto Nomos",
@@ -6175,11 +5494,7 @@
       "articles": [
         {
           "id": "197990687",
-          "topics": [
-            "LLM",
-            "의료",
-            "요약"
-          ],
+          "topics": ["LLM", "의료", "요약"],
           "title": "임상 텍스트 요약: 대규모 언어 모델 적용이 인간 전문가를 능가할 수 있다",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
@@ -6207,11 +5522,7 @@
         },
         {
           "id": "197621737",
-          "topics": [
-            "LLM",
-            "프롬프팅",
-            "요약"
-          ],
+          "topics": ["LLM", "프롬프팅", "요약"],
           "title": "DrugChat: 약물 분자 그래프에서 ChatGPT와 유사한 기능 활성화를 향하여",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -6239,11 +5550,7 @@
         },
         {
           "id": "197621634",
-          "topics": [
-            "LLM",
-            "프롬프팅",
-            "요약"
-          ],
+          "topics": ["LLM", "프롬프팅", "요약"],
           "title": "희소에서 밀집으로: 밀도 체인 프롬프팅을 통한 GPT-4 요약",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -6277,11 +5584,7 @@
       "articles": [
         {
           "id": "197990654",
-          "topics": [
-            "LLM",
-            "RLHF",
-            "강화 학습"
-          ],
+          "topics": ["LLM", "RLHF", "강화 학습"],
           "title": "통계적 거부 샘플링이 선호도 최적화를 개선한다",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -6315,10 +5618,7 @@
       "articles": [
         {
           "id": "197859672",
-          "topics": [
-            "대규모 언어 모델",
-            "코드"
-          ],
+          "topics": ["대규모 언어 모델", "코드"],
           "title": "컴파일러 최적화를 위한 대규모 언어 모델",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -6346,10 +5646,7 @@
         },
         {
           "id": "189787126",
-          "topics": [
-            "LLM",
-            "코드"
-          ],
+          "topics": ["LLM", "코드"],
           "title": "데이터베이스 관리자로서의 LLM",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -6377,11 +5674,7 @@
         },
         {
           "id": "189787194",
-          "topics": [
-            "LLM",
-            "코드",
-            "의료"
-          ],
+          "topics": ["LLM", "코드", "의료"],
           "title": "BioCoder: 맥락적 실용 지식을 활용한 생물정보학 코드 생성 벤치마크",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -6409,11 +5702,7 @@
         },
         {
           "id": "189787192",
-          "topics": [
-            "LLM",
-            "코드",
-            "명령어 튜닝"
-          ],
+          "topics": ["LLM", "코드", "명령어 튜닝"],
           "title": "프로그래밍 언어가 명령어 튜닝을 통해 서로를 향상시킬 수 있을까?",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -6441,11 +5730,7 @@
         },
         {
           "id": "189777823",
-          "topics": [
-            "LLM",
-            "코드",
-            "채팅"
-          ],
+          "topics": ["LLM", "코드", "채팅"],
           "title": "SoTaNa: 오픈 소스 소프트웨어 개발 보조 도구",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
@@ -6473,11 +5758,7 @@
         },
         {
           "id": "189787144",
-          "topics": [
-            "LLM",
-            "코드",
-            "프롬프팅"
-          ],
+          "topics": ["LLM", "코드", "프롬프팅"],
           "title": "GPT-4 코드 인터프리터와 코드 기반 자체 검증을 사용한 어려운 수학 문장제 문제 해결",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -6505,11 +5786,7 @@
         },
         {
           "id": "189777877",
-          "topics": [
-            "LLM",
-            "코드",
-            "명령어 튜닝"
-          ],
+          "topics": ["LLM", "코드", "명령어 튜닝"],
           "title": "OctoPack: 코드 대규모 언어 모델의 명령어 튜닝",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -6537,10 +5814,7 @@
         },
         {
           "id": "189777872",
-          "topics": [
-            "대규모 언어 모델",
-            "코드"
-          ],
+          "topics": ["대규모 언어 모델", "코드"],
           "title": "대규모 언어 모델이 생성한 코드를 사용한 네트워크 관리 향상",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -6574,10 +5848,7 @@
       "articles": [
         {
           "id": "197840057",
-          "topics": [
-            "LLM",
-            "과학"
-          ],
+          "topics": ["LLM", "과학"],
           "title": "AstroLLaMA: 천문학 분야의 특화된 기초 모델을 향하여",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -6605,11 +5876,7 @@
         },
         {
           "id": "197838596",
-          "topics": [
-            "대규모 언어 모델",
-            "수학",
-            "과학"
-          ],
+          "topics": ["대규모 언어 모델", "수학", "과학"],
           "title": "과학을 위한 대규모 언어 모델: P 대 NP에 대한 연구",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -6637,10 +5904,7 @@
         },
         {
           "id": "189577812",
-          "topics": [
-            "확산",
-            "과학"
-          ],
+          "topics": ["확산", "과학"],
           "title": "PDE-Refiner: 신경망 PDE 솔버를 사용한 정확한 장기 롤아웃 달성",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -6674,11 +5938,7 @@
       "articles": [
         {
           "id": "197838596",
-          "topics": [
-            "대규모 언어 모델",
-            "수학",
-            "과학"
-          ],
+          "topics": ["대규모 언어 모델", "수학", "과학"],
           "title": "과학을 위한 대규모 언어 모델: P 대 NP에 대한 연구",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -6706,10 +5966,7 @@
         },
         {
           "id": "197621439",
-          "topics": [
-            "LLM",
-            "수학"
-          ],
+          "topics": ["LLM", "수학"],
           "title": "GPT는 계산기 없이 수학 문제를 해결할 수 있습니다",
           "slug": "transformer-models-an-introduction-and-catalog",
           "authorName": "Prof. Otto Nomos",
@@ -6743,10 +6000,7 @@
       "articles": [
         {
           "id": "197810544",
-          "topics": [
-            "LLM",
-            "오픈 소스"
-          ],
+          "topics": ["LLM", "오픈 소스"],
           "title": "교과서만 있으면 됩니다 II: phi-1.5 기술 보고서",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -6774,11 +6028,7 @@
         },
         {
           "id": "197621519",
-          "topics": [
-            "LLM",
-            "오픈 소스",
-            "명령어 튜닝"
-          ],
+          "topics": ["LLM", "오픈 소스", "명령어 튜닝"],
           "title": "XGen-7B 기술 보고서",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
@@ -6812,10 +6062,7 @@
       "articles": [
         {
           "id": "197613987",
-          "topics": [
-            "이미지",
-            "LORA"
-          ],
+          "topics": ["이미지", "LORA"],
           "title": "StyleAdapter: 스타일화된 이미지 생성을 위한 단일 패스 LoRA 프리 모델",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -6843,11 +6090,7 @@
         },
         {
           "id": "189576077",
-          "topics": [
-            "이미지",
-            "안전성",
-            "확산"
-          ],
+          "topics": ["이미지", "안전성", "확산"],
           "title": "FLIRT: 맥락 내 피드백 루프 레드 팀",
           "slug": "flirt-feedback-loop-in-context-red-teaming",
           "authorName": "Prof. Otto Nomos",
@@ -6881,10 +6124,7 @@
       "articles": [
         {
           "id": "197613987",
-          "topics": [
-            "이미지",
-            "LORA"
-          ],
+          "topics": ["이미지", "LORA"],
           "title": "StyleAdapter: 스타일화된 이미지 생성을 위한 단일 패스 LoRA 프리 모델",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -6912,11 +6152,7 @@
         },
         {
           "id": "180927998",
-          "topics": [
-            "LLM",
-            "논평",
-            "LORA"
-          ],
+          "topics": ["LLM", "논평", "LORA"],
           "title": "LoraHub: 동적 LoRA 구성을 통한 효율적인 교차 작업 일반화 [논평]",
           "slug": "lorahub-efficient-cross-task-generalization-via-dynamic-lora-composition-commenta",
           "authorName": "Prof. Otto Nomos",
@@ -6944,12 +6180,7 @@
         },
         {
           "id": "189787086",
-          "topics": [
-            "LLM",
-            "미세 조정",
-            "LORA",
-            "데이터"
-          ],
+          "topics": ["LLM", "미세 조정", "LORA", "데이터"],
           "title": "플라티푸스: 빠르고 저렴하며 강력한 LLM 개선",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -6983,11 +6214,7 @@
       "articles": [
         {
           "id": "197559951",
-          "topics": [
-            "LLM",
-            "에이전트",
-            "도구"
-          ],
+          "topics": ["LLM", "에이전트", "도구"],
           "title": "ModelScope-Agent: 오픈소스 대규모 언어 모델을 사용한 맞춤형 에이전트 시스템 구축",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -7015,11 +6242,7 @@
         },
         {
           "id": "180928004",
-          "topics": [
-            "LLM",
-            "도구",
-            "논평"
-          ],
+          "topics": ["LLM", "도구", "논평"],
           "title": "ToolLLM: 대규모 언어 모델이 16000개 이상의 실제 API를 마스터하도록 돕기 [논평]",
           "slug": "toolllm-facilitating-large-language-models-to-master-16000-real-world-apis-commen",
           "authorName": "Prof. Otto Nomos",
@@ -7047,10 +6270,7 @@
         },
         {
           "id": "189989705",
-          "topics": [
-            "LLM",
-            "도구"
-          ],
+          "topics": ["LLM", "도구"],
           "title": "FacTool: 생성형 AI의 사실성 탐지 -- 다중 작업 및 다중 도메인 시나리오를 위한 도구 증강 프레임워크",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -7084,11 +6304,7 @@
       "articles": [
         {
           "id": "180403467",
-          "topics": [
-            "LLM",
-            "RLHF",
-            "요약"
-          ],
+          "topics": ["LLM", "RLHF", "요약"],
           "title": "인간 피드백을 통한 강화학습의 미해결 문제와 근본적 한계 [요약]",
           "slug": "open-problems-and-fundamental-limitations-of-reinforcement-learning-from-human-fe",
           "authorName": "Prof. Otto Nomos",
@@ -7116,10 +6332,7 @@
         },
         {
           "id": "180869081",
-          "topics": [
-            "LLM",
-            "요약"
-          ],
+          "topics": ["LLM", "요약"],
           "title": "라마 2: 오픈 파운데이션 및 미세 조정된 채팅 모델 [논평]",
           "slug": "llama-2-open-foundation-and-fine-tuned-chat-models-commentary",
           "authorName": "Prof. Otto Nomos",
@@ -7147,10 +6360,7 @@
         },
         {
           "id": "179737945",
-          "topics": [
-            "LLM",
-            "요약"
-          ],
+          "topics": ["LLM", "요약"],
           "title": "대규모 언어 모델의 도전과 응용 [요약]",
           "slug": "challenges-and-applications-of-large-language-models-summary",
           "authorName": "Prof. Otto Nomos",
@@ -7184,11 +6394,7 @@
       "articles": [
         {
           "id": "180927998",
-          "topics": [
-            "LLM",
-            "논평",
-            "LORA"
-          ],
+          "topics": ["LLM", "논평", "LORA"],
           "title": "LoraHub: 동적 LoRA 구성을 통한 효율적인 교차 작업 일반화 [논평]",
           "slug": "lorahub-efficient-cross-task-generalization-via-dynamic-lora-composition-commenta",
           "authorName": "Prof. Otto Nomos",
@@ -7216,11 +6422,7 @@
         },
         {
           "id": "180928004",
-          "topics": [
-            "LLM",
-            "도구",
-            "논평"
-          ],
+          "topics": ["LLM", "도구", "논평"],
           "title": "ToolLLM: 대규모 언어 모델이 16000개 이상의 실제 API를 마스터하도록 돕기 [논평]",
           "slug": "toolllm-facilitating-large-language-models-to-master-16000-real-world-apis-commen",
           "authorName": "Prof. Otto Nomos",
@@ -7254,11 +6456,7 @@
       "articles": [
         {
           "id": "189845558",
-          "topics": [
-            "LLM",
-            "압축",
-            "설문조사"
-          ],
+          "topics": ["LLM", "압축", "설문조사"],
           "title": "대형 언어 모델의 모델 압축에 관한 설문조사",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -7286,12 +6484,7 @@
         },
         {
           "id": "189577629",
-          "topics": [
-            "LLM",
-            "정렬",
-            "설문조사",
-            "평가"
-          ],
+          "topics": ["LLM", "정렬", "설문조사", "평가"],
           "title": "신뢰할 수 있는 LLM: 대규모 언어 모델의 정렬을 평가하기 위한 설문조사 및 지침",
           "slug": "trustworthy-llms-a-survey-and-guideline-for-evaluating-large-language-models-alig",
           "authorName": "Prof. Otto Nomos",
@@ -7325,11 +6518,7 @@
       "articles": [
         {
           "id": "189845521",
-          "topics": [
-            "LLM",
-            "훈련",
-            "정렬"
-          ],
+          "topics": ["LLM", "훈련", "정렬"],
           "title": "사전 훈련 데이터에서 언어 모델을 거쳐 하위 작업까지: 불공정한 NLP 모델로 이어지는 정치적 편향의 흔적 추적",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -7357,12 +6546,7 @@
         },
         {
           "id": "189577629",
-          "topics": [
-            "LLM",
-            "정렬",
-            "설문조사",
-            "평가"
-          ],
+          "topics": ["LLM", "정렬", "설문조사", "평가"],
           "title": "신뢰할 수 있는 LLM: 대규모 언어 모델의 정렬을 평가하기 위한 설문조사 및 지침",
           "slug": "trustworthy-llms-a-survey-and-guideline-for-evaluating-large-language-models-alig",
           "authorName": "Prof. Otto Nomos",
@@ -7390,10 +6574,7 @@
         },
         {
           "id": "189576058",
-          "topics": [
-            "LLM",
-            "정렬"
-          ],
+          "topics": ["LLM", "정렬"],
           "title": "단순한 합성 데이터가 대규모 언어 모델의 아첨을 줄인다",
           "slug": "simple-synthetic-data-reduces-sycophancy-in-large-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -7427,11 +6608,7 @@
       "articles": [
         {
           "id": "189787190",
-          "topics": [
-            "LLM",
-            "평가",
-            "기후"
-          ],
+          "topics": ["LLM", "평가", "기후"],
           "title": "WeatherBench 2: 차세대 데이터 기반 전 세계 기상 모델을 위한 벤치마크",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -7465,10 +6642,7 @@
       "articles": [
         {
           "id": "189787150",
-          "topics": [
-            "LLM",
-            "개인화"
-          ],
+          "topics": ["LLM", "개인화"],
           "title": "LLM에게 개인화를 가르치다 -- 글쓰기 교육에서 영감을 받은 접근법",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -7502,10 +6676,7 @@
       "articles": [
         {
           "id": "189577812",
-          "topics": [
-            "확산",
-            "과학"
-          ],
+          "topics": ["확산", "과학"],
           "title": "PDE-Refiner: 신경망 PDE 솔버를 사용한 정확한 장기 롤아웃 달성",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -7533,11 +6704,7 @@
         },
         {
           "id": "189576077",
-          "topics": [
-            "이미지",
-            "안전성",
-            "확산"
-          ],
+          "topics": ["이미지", "안전성", "확산"],
           "title": "FLIRT: 맥락 내 피드백 루프 레드 팀",
           "slug": "flirt-feedback-loop-in-context-red-teaming",
           "authorName": "Prof. Otto Nomos",
@@ -7571,10 +6738,7 @@
       "articles": [
         {
           "id": "189576091",
-          "topics": [
-            "LLM",
-            "추론"
-          ],
+          "topics": ["LLM", "추론"],
           "title": "단계적 추측 디코딩을 통한 LLM 추론 가속화",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -7608,11 +6772,7 @@
       "articles": [
         {
           "id": "189576077",
-          "topics": [
-            "이미지",
-            "안전성",
-            "확산"
-          ],
+          "topics": ["이미지", "안전성", "확산"],
           "title": "FLIRT: 맥락 내 피드백 루프 레드 팀",
           "slug": "flirt-feedback-loop-in-context-red-teaming",
           "authorName": "Prof. Otto Nomos",

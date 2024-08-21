@@ -2,9 +2,7 @@
   "relatedBlogs": [
     {
       "id": "CD89KaoLSh6nQbiMhxX0EQ",
-      "topics": [
-        "launchpad"
-      ],
+      "topics": ["launchpad"],
       "title": "Garantizando la confianza y la integridad: Cumplimiento normativo y medidas de seguridad",
       "slug": "ensuring-trust-and-integrity-regulatory-compliance-and-security-measures",
       "authorName": "Jun Dam",
@@ -23,9 +21,7 @@
     },
     {
       "id": "fbM-UqrYQXGhw6HB4C6swQ",
-      "topics": [
-        "launchpad"
-      ],
+      "topics": ["launchpad"],
       "title": "Hoja de ruta estrategica: Pioneros en innovacion blockchain y exito de startups de IA",
       "slug": "strategic-roadmap-pioneering-blockchain-innovation-and-ai-startup-success",
       "authorName": "Jun Dam",
@@ -44,9 +40,7 @@
     },
     {
       "id": "I4jShMnWRruvJgDbrucwDw",
-      "topics": [
-        "launchpad"
-      ],
+      "topics": ["launchpad"],
       "title": "La columna vertebral tecnologica de bitLauncher",
       "slug": "the-technological-backbone-of-bitcash-launchpad",
       "authorName": "Jun Dam",
@@ -65,9 +59,7 @@
     },
     {
       "id": "BEfgGhndSsCn5MBU89RO3A",
-      "topics": [
-        "launchpad"
-      ],
+      "topics": ["launchpad"],
       "title": "Potenciando la innovacion: Vision, mision y objetivos estrategicos de bitLauncher",
       "slug": "empowering-innovation-vision-mission-and-strategic-goals-of-bitcash-launchpad",
       "authorName": "Jun Dam",
@@ -86,12 +78,7 @@
     },
     {
       "id": "NZeB3i5XRzuELW2UWBDyRQ",
-      "topics": [
-        "research",
-        "dao",
-        "fundraising",
-        "launchpad"
-      ],
+      "topics": ["research", "dao", "fundraising", "launchpad"],
       "title": "Navegando la convergencia: Un analisis de mercado integral de la dinamica de IA y criptomonedas",
       "slug": "navigating-the-convergence-a-comprehensive-market-analysis-of-ai-and-cryptocurren",
       "authorName": "Jun Dam",
@@ -110,9 +97,7 @@
     },
     {
       "id": "MICfokr1TVuScAB4Qh9YGw",
-      "topics": [
-        "launchpad"
-      ],
+      "topics": ["launchpad"],
       "title": "Potenciando la innovacion: Tokenomia y estrategia de financiacion de bitcash",
       "slug": "empowering-innovation-tokenomics-and-funding-strategy-of-bitcash",
       "authorName": "Jun Dam",
@@ -131,9 +116,7 @@
     },
     {
       "id": "BSDdY8byQWipv749rApFRA",
-      "topics": [
-        "launchpad"
-      ],
+      "topics": ["launchpad"],
       "title": "Desbloqueando el potencial: Casos de uso y aplicaciones de bitLauncher",
       "slug": "unlocking-potential-use-cases-and-applications-of-bitlauncher",
       "authorName": "Jun Dam",
@@ -153,11 +136,7 @@
   ],
   "blogContent": {
     "id": "VgGHDFI9T9qzTCHPAm5WLg",
-    "topics": [
-      "dao",
-      "recaudacion de fondos",
-      "plataforma de lanzamiento"
-    ],
+    "topics": ["dao", "recaudacion de fondos", "plataforma de lanzamiento"],
     "title": "Impulsando a los Unicornios de IA de Codigo Abierto de Proxima Generacion: Una Plataforma de Lanzamiento Revolucionaria",
     "slug": "empowering-next-gen-open-source-ai-unicorns-a-revolutionary-launchpad",
     "authorName": "Jun Dam",
@@ -202,9 +181,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Unveiling the Synergy: Cryptocurrency and AI's Transformative Impact"
                     }
                   ]
@@ -224,9 +201,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Filling the Void: The Critical Role of an AI + Crypto Launchpad"
                     }
                   ]
@@ -255,9 +230,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Blueprint for Innovation: Unpacking the Whitepaper's Goals"
                     }
                   ]
@@ -301,9 +274,5 @@
       }
     }
   },
-  "topics": [
-    "dao",
-    "fundraising",
-    "launchpad"
-  ]
+  "topics": ["dao", "fundraising", "launchpad"]
 }

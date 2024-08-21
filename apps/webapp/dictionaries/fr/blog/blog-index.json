@@ -6,9 +6,7 @@
       "articles": [
         {
           "id": "SpdLuuYEQgW8rwSHNzhmxA",
-          "topics": [
-            "Applications"
-          ],
+          "topics": ["Applications"],
           "title": "Masterbots : Elever l'IA au-dela de ChatGPT avec le partage social et l'innovation conviviale",
           "slug": "masterbots-elevating-ai-beyond-chatgpt-with-social-sharing-and-user-friendly-inno",
           "authorName": "Jun Dam",
@@ -36,11 +34,7 @@
         },
         {
           "id": "190259319",
-          "topics": [
-            "Résumé",
-            "MLL",
-            "Formation"
-          ],
+          "topics": ["Résumé", "MLL", "Formation"],
           "title": "Podcast de l'Espace Latent 16/08/23 [Résumé] - Les Mathématiques de la Formation des MLL avec Quentin Anthony d'Eleuther AI",
           "slug": "latent-space-podcast-8-16-23-summary-the-mathematics-of-training-llms-with-que",
           "authorName": "Prof. Otto Nomos",
@@ -68,12 +62,7 @@
         },
         {
           "id": "190259129",
-          "topics": [
-            "LLM",
-            "Matériel",
-            "Résumé",
-            "Bord"
-          ],
+          "topics": ["LLM", "Matériel", "Résumé", "Bord"],
           "title": "Podcast de l'Espace Latent 8/10/23 [Résumé] : LLMs Partout : Exécuter des modèles de 70B dans les navigateurs et les iPhones en utilisant MLC — avec Tianqi Chen de CMU / OctoML",
           "slug": "latent-space-podcast-8-10-23-summary-llms-everywhere-running-70b-models-in-browse",
           "authorName": "Prof. Otto Nomos",
@@ -101,13 +90,7 @@
         },
         {
           "id": "190259087",
-          "topics": [
-            "Summary",
-            "LLM",
-            "Code",
-            "Open Source",
-            "Small Models"
-          ],
+          "topics": ["Summary", "LLM", "Code", "Open Source", "Small Models"],
           "title": "Latent Space Podcast 8/4/23 [Summary] Latent Space x AI Breakdown crossover pod! ",
           "slug": "latent-space-podcast-8-4-23-summary-latent-space-x-ai-breakdown-crossover-pod",
           "authorName": "Prof. Otto Nomos",
@@ -135,12 +118,7 @@
         },
         {
           "id": "190259111",
-          "topics": [
-            "Summary",
-            "Transformers",
-            "Training",
-            "Open Source"
-          ],
+          "topics": ["Summary", "Transformers", "Training", "Open Source"],
           "title": " Latent Space Podcast 7/26/23 [Summary] FlashAttention 2: making Transformers 800% faster - Tri Dao of Together AI",
           "slug": "latent-space-podcast-7-26-23-summary-flashattention-2-making-transformers-800-fas",
           "authorName": "Prof. Otto Nomos",
@@ -208,10 +186,7 @@
         },
         {
           "id": "198277342",
-          "topics": [
-            "MLM",
-            "Multilingue"
-          ],
+          "topics": ["MLM", "Multilingue"],
           "title": "OpenBA : Un modèle asymétrique bilingue de 15B open source pré-entraîné à partir de zéro",
           "slug": "openba-an-open-sourced-15b-bilingual-asymmetric-seq2seq-model-pre-trained-from-sc",
           "authorName": "Prof. Otto Nomos",
@@ -239,10 +214,7 @@
         },
         {
           "id": "198277117",
-          "topics": [
-            "MLL",
-            "Recuperation"
-          ],
+          "topics": ["MLL", "Recuperation"],
           "title": "PDFTriage: Reponse aux questions sur des documents longs et structures",
           "slug": "pdftriage-question-answering-over-long-structured-documents",
           "authorName": "Prof. Otto Nomos",
@@ -270,10 +242,7 @@
         },
         {
           "id": "198277138",
-          "topics": [
-            "MLL",
-            "Ajustement fin"
-          ],
+          "topics": ["MLL", "Ajustement fin"],
           "title": "LLaMA Trie: Exploiter le potentiel des couches intermediaires des grands modeles de langage pour l'inference dynamique en utilisant l'ajustement fin trie (SoFT)",
           "slug": "sorted-llama-unlocking-the-potential-of-intermediate-layers-of-large-language-mod",
           "authorName": "Prof. Otto Nomos",
@@ -301,11 +270,7 @@
         },
         {
           "id": "198277150",
-          "topics": [
-            "MLM",
-            "Réglage des instructions",
-            "Multimodal"
-          ],
+          "topics": ["MLM", "Réglage des instructions", "Multimodal"],
           "title": "Une étude empirique sur le dimensionnement des grands modèles multimodaux avec instructions",
           "slug": "an-empirical-study-of-scaling-instruct-tuned-large-multimodal-models",
           "authorName": "Prof. Otto Nomos",
@@ -344,9 +309,7 @@
       "articles": [
         {
           "id": "CD89KaoLSh6nQbiMhxX0EQ",
-          "topics": [
-            "aire de lancement"
-          ],
+          "topics": ["aire de lancement"],
           "title": "Assurer la confiance et l'intégrité : Conformité réglementaire et mesures de sécurité",
           "slug": "ensuring-trust-and-integrity-regulatory-compliance-and-security-measures",
           "authorName": "Jun Dam",
@@ -374,9 +337,7 @@
         },
         {
           "id": "H_DP7HFORBuw9rID5Jkhhw",
-          "topics": [
-            "comment_faire"
-          ],
+          "topics": ["comment_faire"],
           "title": "Comment s'inscrire et KYC à Bitcash",
           "slug": "how-to-register-and-kyc-to-bitcash",
           "authorName": "Roberto \"Andler\" Lucas",
@@ -404,9 +365,7 @@
         },
         {
           "id": "fbM-UqrYQXGhw6HB4C6swQ",
-          "topics": [
-            "aire de lancement"
-          ],
+          "topics": ["aire de lancement"],
           "title": "Feuille de route stratégique : Pionnier de l'innovation blockchain et succès des startups IA",
           "slug": "strategic-roadmap-pioneering-blockchain-innovation-and-ai-startup-success",
           "authorName": "Jun Dam",
@@ -434,9 +393,7 @@
         },
         {
           "id": "I4jShMnWRruvJgDbrucwDw",
-          "topics": [
-            "launchpad"
-          ],
+          "topics": ["launchpad"],
           "title": "The Technological Backbone of bitLauncher",
           "slug": "the-technological-backbone-of-bitcash-launchpad",
           "authorName": "Jun Dam",
@@ -464,9 +421,7 @@
         },
         {
           "id": "BEfgGhndSsCn5MBU89RO3A",
-          "topics": [
-            "launchpad"
-          ],
+          "topics": ["launchpad"],
           "title": "Empowering Innovation: Vision, Mission, and Strategic Goals of bitLauncher",
           "slug": "empowering-innovation-vision-mission-and-strategic-goals-of-bitcash-launchpad",
           "authorName": "Jun Dam",
@@ -500,10 +455,7 @@
       "articles": [
         {
           "id": "166795692",
-          "topics": [
-            "Commencer",
-            "Affaires & Administration"
-          ],
+          "topics": ["Commencer", "Affaires & Administration"],
           "title": "Maitriser la Tresorerie: Le Guide Ultime pour les Fondateurs de Startups",
           "slug": "mastering-cash-flow-the-ultimate-guide-for-startup-founders",
           "authorName": "Bootstrap Briggs",
@@ -531,10 +483,7 @@
         },
         {
           "id": "166788631",
-          "topics": [
-            "Commencer",
-            "Affaires & Administration"
-          ],
+          "topics": ["Commencer", "Affaires & Administration"],
           "title": "Budgetisation intelligente pour les startups: un guide étape par étape pour construire une base financière solide",
           "slug": "smart-budgeting-for-startups-a-step-by-step-guide-to-building-a-strong-financial",
           "authorName": "Bootstrap Briggs",
@@ -562,10 +511,7 @@
         },
         {
           "id": "165816954",
-          "topics": [
-            "Commencer",
-            "Équipes & RH"
-          ],
+          "topics": ["Commencer", "Équipes & RH"],
           "title": "Construire une équipe de rêve : Le guide ultime pour assembler votre équipe de démarrage",
           "slug": "building-a-dream-team-the-ultimate-guide-to-assembling-your-startup-squad",
           "authorName": "Bootstrap Briggs",
@@ -593,10 +539,7 @@
         },
         {
           "id": "166322203",
-          "topics": [
-            "Getting Started",
-            "Sales & Marketing"
-          ],
+          "topics": ["Getting Started", "Sales & Marketing"],
           "title": "The Blueprint to Success: A Guide to Crafting a Winning Sales Plan for Your Startup",
           "slug": "the-blueprint-to-success-a-guide-to-crafting-a-winning-sales-plan-for-your-startu",
           "authorName": "Steve Savant",
@@ -630,10 +573,7 @@
       "articles": [
         {
           "id": "180217169",
-          "topics": [
-            "Économie des jetons",
-            "Commentaire"
-          ],
+          "topics": ["Économie des jetons", "Commentaire"],
           "title": "Économie des incitations tokenisées 3 : La valeur du jeton n'alignera pas les parties prenantes [Commentaire]",
           "slug": "economics-of-tokenized-incentives-3-token-value-won-t-align-stakeholders-commenta",
           "authorName": "Crypto Clairity",
@@ -661,10 +601,7 @@
         },
         {
           "id": "180217123",
-          "topics": [
-            "Économie des jetons",
-            "Commentaire"
-          ],
+          "topics": ["Économie des jetons", "Commentaire"],
           "title": "Économie des incitations tokenisées 2 : Sélectionner des métriques de performance efficaces [Commentaire]",
           "slug": "economics-of-tokenized-incentives-2-selecting-effective-performance-metrics-comme",
           "authorName": "Crypto Clairity",
@@ -692,10 +629,7 @@
         },
         {
           "id": "180217082",
-          "topics": [
-            "Tokenomie",
-            "Commentaire"
-          ],
+          "topics": ["Tokenomie", "Commentaire"],
           "title": "Economie des incitations tokenisees 1 : Introduction au paiement pour performance [Commentaire]",
           "slug": "economics-of-tokenized-incentives-1-intro-to-pay-for-performance",
           "authorName": "Crypto Clairity",
@@ -723,10 +657,7 @@
         },
         {
           "id": "180556627",
-          "topics": [
-            "Commentaire",
-            "Contrats intelligents"
-          ],
+          "topics": ["Commentaire", "Contrats intelligents"],
           "title": "Contrats incomplets et blockchain [Commentaire]",
           "slug": "incomplete-contracts-and-blockchain-commentary",
           "authorName": "Crypto Clairity",
@@ -760,11 +691,7 @@
       "articles": [
         {
           "id": "165362142",
-          "topics": [
-            "Commencer",
-            "Preuve de travail",
-            "Minage"
-          ],
+          "topics": ["Commencer", "Preuve de travail", "Minage"],
           "title": "Decouvrir le pouvoir du minage de Bitcoin: Une introduction aux algorithmes de preuve de travail",
           "slug": "unlocking-the-power-of-bitcoin-mining-an-introduction-to-proof-of-work-algorithms",
           "authorName": "Maxi Millie",
@@ -792,10 +719,7 @@
         },
         {
           "id": "165340146",
-          "topics": [
-            "Commencer",
-            "Preuve de Travail"
-          ],
+          "topics": ["Commencer", "Preuve de Travail"],
           "title": "La sécurité économique de Bitcoin: Comment la Preuve de Travail permet un réseau sûr et sécurisé",
           "slug": "the-economic-security-of-bitcoin-how-proof-of-work-enables-a-safe-and-secure-netw",
           "authorName": "Maxi Millie",
@@ -823,10 +747,7 @@
         },
         {
           "id": "165340050",
-          "topics": [
-            "Commencer",
-            "Juridique"
-          ],
+          "topics": ["Commencer", "Juridique"],
           "title": "Naviguer dans le paysage legal et reglementaire du Bitcoin: Comprendre les regles et les opportunites",
           "slug": "navigating-the-legal-and-regulatory-landscape-of-bitcoin-understanding-the-rules",
           "authorName": "Maxi Millie",
@@ -854,10 +775,7 @@
         },
         {
           "id": "165337859",
-          "topics": [
-            "Commencer",
-            "Sécurité"
-          ],
+          "topics": ["Commencer", "Sécurité"],
           "title": "L'avenir du stockage de Bitcoin: Une introduction aux portefeuilles Bitcoin et aux solutions de stockage innovantes",
           "slug": "the-future-of-bitcoin-storage-an-introduction-to-bitcoin-wallets-and-innovative-s",
           "authorName": "Maxi Millie",
@@ -891,10 +809,7 @@
       "articles": [
         {
           "id": "174592759",
-          "topics": [
-            "Commencer",
-            "Alternatives"
-          ],
+          "topics": ["Commencer", "Alternatives"],
           "title": "Liberer le potentiel: Maitriser les investissements alternatifs pour le succes des investisseurs",
           "slug": "unleashing-the-potential-mastering-alternative-investments-for-contributor-success",
           "authorName": "Mister Moneybags",
@@ -922,10 +837,7 @@
         },
         {
           "id": "175015363",
-          "topics": [
-            "Commencer",
-            "Fonds communs de placement & ETFs"
-          ],
+          "topics": ["Commencer", "Fonds communs de placement & ETFs"],
           "title": "Revelation des avantages et des inconvenients des fonds negocies en bourse (ETFs) : Un guide complet pour les investisseurs",
           "slug": "unveiling-the-pros-and-cons-of-exchange-traded-funds-etfs-a-comprehensive-guide-f",
           "authorName": "Mister Moneybags",
@@ -953,10 +865,7 @@
         },
         {
           "id": "176002890",
-          "topics": [
-            "Commencer",
-            "Gestion des Risques"
-          ],
+          "topics": ["Commencer", "Gestion des Risques"],
           "title": "Protegez vos investissements: Un guide complet pour reconnaitre et eviter la fraude a l'investissement",
           "slug": "shield-your-investments-a-comprehensive-guide-to-recognizing-and-avoiding-investm",
           "authorName": "Mister Moneybags",
@@ -984,10 +893,7 @@
         },
         {
           "id": "176002763",
-          "topics": [
-            "Getting Started",
-            "Insurance"
-          ],
+          "topics": ["Getting Started", "Insurance"],
           "title": "Insurance Planning 101: Navigating Life, Disability, and Long-Term Care Insurance",
           "slug": "insurance-planning-101-navigating-life-disability-and-long-term-care-insurance",
           "authorName": "Mister Moneybags",
