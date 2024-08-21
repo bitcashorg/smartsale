@@ -15,7 +15,9 @@ export const appConfig = {
     issuerKey: process.env.ISSUER_KEY || '',
     issuerAddress: (process.env.ISSUER_ADDRESS || '') as Address,
     issuerAccount: privateKeyToAccount(`0x${process.env.ISSUER_KEY}`),
-    alchemySecretKey: process.env.ALCHEMY_SECRET_KEY || '',
+    alchemy: {
+      activitySigningKey: process.env.ALCHEMY_ACTIVITY_SIGNING_KEY || '',
+    },
   },
   ...smartsaleEnv.test,
 }
