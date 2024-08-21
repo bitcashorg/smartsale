@@ -23,7 +23,9 @@
       "**/cbw-sdk",
       "**/cbw-sdk/**",
       "**/wagmi",
-      "**/wagmi/**"
+      "**/wagmi/**",
+      "**/pino-pretty",
+      "**/pino-pretty/**"
     ]
   },
   "packageManager": "bun@1.1.20",

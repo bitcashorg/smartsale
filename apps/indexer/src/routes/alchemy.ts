@@ -1,7 +1,7 @@
 import { Request, Response } from 'express'
 import crypto from 'crypto'
 import { appenv } from '../config'
-import { logger } from 'app-lib'
+import { logger } from '~/lib/logger'
 
 function validateAlchemySignature(req: Request): boolean {
   const alchemySignature = req.headers['x-alchemy-signature'] as string

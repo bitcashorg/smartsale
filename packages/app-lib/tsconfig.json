@@ -1,5 +1,5 @@
 {
   "extends": "@repo/typescript-config/react-library.json",
-  "include": ["src"],
+  "include": ["src", "../../apps/indexer/src/lib/logger.ts"],
   "exclude": ["node_modules"]
 }

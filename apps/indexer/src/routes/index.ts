@@ -4,7 +4,7 @@ import rateLimit from 'express-rate-limit'
 import { healthcheck } from './healthcheck'
 import { alchemyWebhook } from './alchemy'
 import pinoHttp from 'pino-http'
-import { logger } from 'app-lib'
+import { logger } from '~/lib/logger'
 
 
 export function startExpress() {
