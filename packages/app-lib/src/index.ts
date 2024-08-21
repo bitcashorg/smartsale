@@ -7,3 +7,4 @@ export * from "./object";
 export * from "./runtime";
 export * from "./string";
 export * from "./url";
+export * from "./logger";
