@@ -2,7 +2,7 @@ export function Banner() {
   return (
     <section className="w-full gap-20">
       <div className="inline-flex flex-col items-center justify-start gap-[37px]">
-        <h2 className="leading-[42.35px heading2 text-center text-4xl font-medium">
+        <h2 className="text-center heading2">
           {content.title}
         </h2>
         <div className="h-[2.37px] w-[118.61px] bg-[#ff51ed]"></div>

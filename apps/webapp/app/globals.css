@@ -301,7 +301,7 @@ input[type='number'] {
 } 
 
 .heading2 {
-  @apply text-2xl font-bold md:text-4xl;
+  @apply text-2xl font-bold leading-[42px] md:text-4xl;
 }
 
 .heading3 {
