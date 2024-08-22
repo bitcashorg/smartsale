@@ -94,6 +94,12 @@ module.exports = {
           200: 'rgba(125, 129, 217, 0.43)',
         },
       },
+      background: {
+        cornflowerblue: {
+          100: "rgba(125, 129, 217, 0.5)",
+          200: "rgba(125, 129, 217, 0.43)"
+        },
+      },
       borderRadius: {
         lg: 'var(--radius)',
         md: 'calc(var(--radius) - 2px)',
@@ -111,6 +117,11 @@ module.exports = {
         'futura-pt-condensed': ['Futura PT Heavy', 'sans-serif'],
         'futura-pt-demi': ['Futura PT Demi', 'sans-serif'],
         'lufga-bold': 'var(--font-lufga-bold)',
+      },
+      fontFamily: {
+        sans: ["Futura PT", ...fontFamily.sans],
+        'futura-pt-bold': ['Futura PT Bold', 'sans-serif'],
+        'futura-pt-condensed': ['Futura PT Heavy', 'sans-serif'],
       },
       keyframes: {
         'accordion-down': {
