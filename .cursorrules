@@ -1,70 +1,92 @@
 You are an expert in Solidity, TypeScript, Node.js, Next.js 14 App Router, React, Vite, Viem v2, Wagmi v2, Shadcn UI, Radix UI, and Tailwind Aria.
 
-GENERAL RULES
-
-- Your responses should be concise, straightforward, and highly technical, focusing on accurate and applicable TypeScript code examples.
-- Always use a functional declarative approach, avoid classes.
+Key Principles:
+- Write concise, technical responses with accurate TypeScript examples.
+- Use functional, declarative programming. Avoid classes.
 - Prefer iteration and modularization over duplication.
-- When naming variables, be descriptive and use auxiliary verbs such as `does`, `has`, `is`, and `should`. For example, `isDisabled`, `isLoading`.
-- Use lowercase with dash separators for directories and names, e.g., `components/auth-wizard`.
-- Favor named exports over default exports in components.
-- Favor Receive an Object, Return an Object (RORO) pattern.
+- Use descriptive variable names with auxiliary verbs (e.g., isLoading).
+- Use lowercase with dashes for directories (e.g., components/auth-wizard).
+- Favor named exports for components.
+- Use the Receive an Object, Return an Object (RORO) pattern.
 
-JAVASCRIPT RULES
+JavaScript/TypeScript:
+- Use "function" keyword for pure functions. Omit semicolons.
+- Use TypeScript for all code. Prefer interfaces over types. Avoid enums, use maps.
+- File structure: Exported component, subcomponents, helpers, static content, types.
+- Avoid unnecessary curly braces in conditional statements.
+- For single-line statements in conditionals, omit curly braces.
+- Use concise, one-line syntax for simple conditional statements (e.g., if (condition) doSomething()).
+- Prioritize error handling and edge cases:
+  - Handle errors and edge cases at the beginning of functions.
+  - Use early returns for error conditions to avoid deeply nested if statements.
+  - Place the happy path last in the function for improved readability.
+  - Avoid unnecessary else statements; use if-return pattern instead.
+  - Use guard clauses to handle preconditions and invalid states early.
+  - Implement proper error logging and user-friendly error messages.
+  - Consider using custom error types or error factories for consistent error handling.
 
-- Utilize the "function" keyword for defining pure functions and avoid semicolons at the end of statements.
-- Use TypeScript for all code generations, adhering to functional programming principles.
-- Favor TypeScript interface over type and avoid TypeScript enums, use maps instead.
-- Prefer the following code order in your files:
-  - Exported Function component
-  - Subcomponents
-  - Helper functions
-  - Static content variables
-  - TypeScript types
+Dependencies:
+- Next.js 14 App Router
+- Wagmi v2
+- Viem v2
 
-DEPENDENCY VERSIONS
-- ALWAYS use Next.js 14 App Router.
-- ALWAYS use Wagmi v2.
-- ALWAYS use Viem v2.
+React/Next.js:
+- Use functional components and TypeScript interfaces.
+- Use declarative JSX.
+- Use function, not const, for components.
+- Use Shadcn UI, Radix, and Tailwind Aria for components and styling.
+- Implement responsive design with Tailwind CSS.
+- Use mobile-first approach for responsive design.
+- Place static content and interfaces at file end.
+- Use content variables for static content outside render functions.
+- Minimize 'use client', 'useEffect', and 'setState'. Favor RSC.
+- Use Zod for form validation.
+- Wrap client components in Suspense with fallback.
+- Use dynamic loading for non-critical components.
+- Optimize images: WebP format, size data, lazy loading.
+- Model expected errors as return values: Avoid using try/catch for expected errors in Server Actions. Use useActionState to manage these errors and return them to the client.
+- Use error boundaries for unexpected errors: Implement error boundaries using error.tsx and global-error.tsx files to handle unexpected errors and provide a fallback UI.
+- Use useActionState with react-hook-form for form validation.
+- Code in services/ dir always throw user-friendly errors that tanStackQuery can catch and show to the user.
+- Use next-safe-action for all server actions:
+  - Implement type-safe server actions with proper validation.
+  - Utilize the `action` function from next-safe-action for creating actions.
+  - Define input schemas using Zod for robust type checking and validation.
+  - Handle errors gracefully and return appropriate responses.
+  - Use import type { ActionResponse } from '@/types/actions'
+  - Ensure all server actions return the ActionResponse type
+  - Implement consistent error handling and success responses using ActionResponse
+  - Example:
+    ```typescript
+    'use server'
+    
+    import { createSafeActionClient } from 'next-safe-action'
+    import { z } from 'zod'
+    import type { ActionResponse } from '@/app/actions/actions'
 
-NEXTJS RULES
+    const schema = z.object({
+      value: z.string()
+    })
 
-- Always use functional React components and TypeScript interfaces.
-- Always use a declarative approach in JSX.
-- Never use const for React components, only function.
-- Always use Shadcn UI, Radix, and CSS Aria APIs. Shadcn UI inherits APIs from Radix and extends its functionality.
-- ALWAYS responsive tailwind css best practices.
-- ALWAYS use Tailwind CSS and Tailwind Aria attribute to animate components.
-- Always put static content and TypeScript interfaces at the end of the file.
-- Always use content variables for static content outside the render function of React components.
-- Always use React components for dynamic content inside the render function of React components.
-- Avoid 'use client', 'useEffect', 'setState' when possible, favor Tailwind Aria and Radix UI APIs exposed on Shadcn UI components.
-- Always use Zod for form validation, import relevant Zod schemas before duplicating.
-- Always wrap client components around a Suspense tag with fallback.
-- Always use dynamic loading for components that are not relevant on the first print.
-- Always set priority=1 to the largest image on the first print.
-- Always use WebP extension and provide image size data set, lazy load all images not relevant on the first page print.
+    export const someAction = createSafeActionClient()
+      .schema(schema)
+      .action(async (input): Promise<ActionResponse> => {
+        try {
+          // Action logic here
+          return { success: true, data: /* result */ }
+        } catch (error) {
+          return { success: false, error: error instanceof AppError ? error : appErrors.UNEXPECTED_ERROR, }
+        }
+      })
+    ```
 
-IMPORTANT CONVENTIONS
 
-1. Always rely on the NextJS app router for state changes: Use the App Router for state changes through SSR and hydration first, and server actions as a second option. For example, pagination, filtering, sorting, etc., should use URL parameters and SSR.
+Key Conventions:
+1. Rely on Next.js App Router for state changes.
+2. Prioritize Web Vitals (LCP, CLS, FID).
+3. Minimize 'use client' usage:
+   - Prefer server components and Next.js SSR features.
+   - Use 'use client' only for Web API access in small components.
+   - Avoid using 'use client' for data fetching or state management.
 
-2. Pay special attention to Web Vitals: LCP, CLS, and FID are the most critical metrics. Learn more about Web Vitals and NextJS: Core Web Vitals. This website uses Static Site Generation for all pages to improve the initial load time.
-
-3. Avoid 'use client' as much as possible: Use it as a last resort when there's no other option. Server components are the default in NextJS 14. Always use Next.js app router parameters to fetch data using Next.js SSR features and let Next.js hydrate the React view. Do not use 'use client' to fetch data and set state, as this can cause issues with refreshing your application's view state, and that component won't be hydrated by the Next.js app router. Instead, use 'use client' when you need to use Web APIs like the camera. NEVER use 'use client' to do things the way you typically would in a React app with Vite, as it defeats the purpose of using Next.js. When you 'use client', make sure it is within small components like a button or icons. Refer to the Data Fetching, Rendering, and Routing guides for more information.
-
-MONOREPO APPS for additional information
-
-Faucet (/apps/faucet)
-The Faucet application serves as a utility for distributing test tokens or currencies in a blockchain network. It is typically used in test environments to provide developers and users with a means to obtain tokens for testing purposes.
-
-Indexer (/apps/indexer)
-The Indexer application is responsible for indexing blockchain data. It listens to the blockchain network, extracts relevant data from blocks, transactions, and events, and stores it in a structured format for easy querying and analysis.
-
-Supabase (/apps/supabase)
-This application integrates with Supabase, a scalable and open-source Firebase alternative, providing real-time database functionality, authentication, storage, and more. It's designed to leverage Supabase services for backend functionalities.
-
-For more database schema details, refer to the Database Schema diagram.
-
-Webapp (/apps/webapp)
-The Webapp is a front-end application that provides a user interface for interacting with the project's services. It includes features such as displaying blockchain data, interacting with smart contracts, and utilizing the Faucet for test tokens.
+Refer to Next.js documentation for Data Fetching, Rendering, and Routing best practices.

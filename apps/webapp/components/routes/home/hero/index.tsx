@@ -1,14 +1,13 @@
+import { VideoDialog } from '@/components/dialogs/video-dialog'
+import { NestedLinkButton } from '@/components/nextjs/nested-link'
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Button, buttonVariants } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
-import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar'
-import { ArrowRightIcon, PlayIcon } from 'lucide-react'
-import Image from 'next/image'
-import { VideoDialog } from '@/components/dialogs/video-dialog'
 import { IconDownRightArrow } from '@/components/ui/icons'
-import { Suspense } from 'react'
 import { cn } from '@/lib/utils'
-import { NestedLinkButton } from '@/components/nextjs/nested-link'
-import Link from 'next/link'
+import { PlayIcon } from 'lucide-react'
+import Image from 'next/image'
+import { Suspense } from 'react'
 import Balancer from 'react-wrap-balancer'
 
 export function NewHomeHero() {
@@ -16,7 +15,7 @@ export function NewHomeHero() {
     <section className="narrow-container mb-0 flex min-h-[calc(100vh-4rem)] flex-col justify-between">
       <main className="flex flex-col items-center justify-center flex-1 p-6 lg:flex-row">
         <div className="text-left">
-          <h1 className="text-6xl font-bold">
+          <h1 className="text-6xl font-bold font-lufga-bold">
             <Balancer>
               EARLY ACCESS TO <br />
               THE NEXT <span className="text-pink-500">GLOBAL</span> <br />
@@ -44,9 +43,9 @@ export function NewHomeHero() {
               title: 'Bitlauncher: Register for Presale Now',
               description: '',
               resourceId: {
-                videoId: 'U6vn3KOEwcQ'
-              }
-            }
+                videoId: 'U6vn3KOEwcQ',
+              },
+            },
           }}
           trigger={
             <div className="flex items-center gap-3 cursor-pointer">
@@ -76,7 +75,7 @@ export function NewHomeHero() {
 
           <p className="flex items-center px-2 leading-none text-center text-black">
             Join Our Community
-            <br /> of Investors
+            <br /> of Contributors
           </p>
 
           <Suspense
@@ -90,9 +89,9 @@ export function NewHomeHero() {
               link={'/en/bitcash-bitlauncher'}
               className={cn(
                 buttonVariants({
-                  variant: 'secondary'
+                  variant: 'secondary',
                 }),
-                'text-md group relative flex size-14 min-h-14 min-w-14 rounded-full bg-pink-500 !p-0 font-bold hover:bg-pink-500'
+                'text-md group relative flex size-14 min-h-14 min-w-14 rounded-full bg-pink-500 !p-0 font-bold hover:bg-pink-500',
               )}
               aria-label={`View`}
               // data-title={title}

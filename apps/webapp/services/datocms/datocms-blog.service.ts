@@ -1,16 +1,16 @@
+import * as fs from 'fs'
+import path from 'path'
+import type { Lang } from '@/dictionaries/locales'
+import { getFilePath, parseFile } from '@/lib/file'
+import { getErrorMessage } from 'app-lib'
 import { uniq } from 'lodash'
 import {
-  BlogArticleRecord,
-  getBlogCategory
+  type BlogArticleRecord,
+  getBlogCategory,
 } from './datacms-blog-category.service'
 import { getLayoutText } from './datocms-layout.service'
 import { getPageSeoText } from './datocms-seo.service'
-import { BlogAiRecord } from './graphql/generated/cms'
-import * as fs from 'fs'
-import path from 'path'
-import { parseFile, getFilePath } from '@/lib/file'
-import { getErrorMessage } from 'app-lib'
-import { Lang } from '@/dictionaries/locales'
+import type { BlogAiRecord } from './graphql/generated/cms'
 
 export const getBlogData = async () => {
   const [
@@ -23,7 +23,7 @@ export const getBlogData = async () => {
     { aiData, aiError },
     { newsData, newsError },
     { bitcashData, bitcashError },
-    { aiResearchData, researchError }
+    { aiResearchData, researchError },
   ] = await Promise.all([
     getLayoutText(),
     getPageSeoText('home'),
@@ -34,7 +34,7 @@ export const getBlogData = async () => {
     getBlogCategory('ai', undefined, 5),
     getBlogCategory('news', undefined, 5),
     getBlogCategory('bitcash', undefined, 5),
-    getBlogCategory('ai-research', undefined, 5)
+    getBlogCategory('ai-research', undefined, 5),
   ])
   return {
     i18n,
@@ -54,12 +54,12 @@ export const getBlogData = async () => {
     bitcashData,
     bitcashError,
     aiResearchData,
-    researchError
+    researchError,
   }
 }
 
 export async function getArticleSections(
-  lang: Lang
+  lang: Lang,
 ): Promise<ArticlesSection[]> {
   const dirPath = `/dictionaries/${lang}/blog/`
   const fileName = `blog-index.json`
@@ -90,54 +90,54 @@ export async function getArticleSections(
     aiData,
     newsData,
     bitcashData,
-    aiResearchData
+    aiResearchData,
   } = await getBlogData()
 
   const sections: ArticlesSection[] = [
     {
       name: 'AI',
       slug: 'ai',
-      articles: (aiData?.slice(0, 4) || []) as BlogArticleRecord[]
+      articles: (aiData?.slice(0, 4) || []) as BlogArticleRecord[],
     },
     {
       name: 'AI Research',
       slug: 'ai-research',
-      articles: (aiResearchData?.slice(0, 4) || []) as BlogArticleRecord[]
+      articles: (aiResearchData?.slice(0, 4) || []) as BlogArticleRecord[],
     },
     {
       name: 'News',
       slug: 'news',
-      articles: (newsData?.slice(0, 4) || []) as BlogArticleRecord[]
+      articles: (newsData?.slice(0, 4) || []) as BlogArticleRecord[],
     },
     {
       name: 'Bitcash',
       slug: 'bitcash',
-      articles: (bitcashData?.slice(0, 4) || []) as BlogArticleRecord[]
+      articles: (bitcashData?.slice(0, 4) || []) as BlogArticleRecord[],
     },
     {
       name: 'Startup',
       slug: 'startup',
-      articles: (startupData?.slice(1, 5) || []) as BlogArticleRecord[]
+      articles: (startupData?.slice(1, 5) || []) as BlogArticleRecord[],
     },
     {
       name: 'Crypto',
       slug: 'crypto',
-      articles: (cryptoData?.slice(1, 5) || []) as BlogArticleRecord[]
+      articles: (cryptoData?.slice(1, 5) || []) as BlogArticleRecord[],
     },
     {
       name: 'Bitcoin',
       slug: 'bitcoin',
-      articles: (bitcoinData?.slice(1, 5) || []) as BlogArticleRecord[]
+      articles: (bitcoinData?.slice(1, 5) || []) as BlogArticleRecord[],
     },
     {
       name: 'Investing',
       slug: 'investing',
-      articles: (investingData?.slice(1, 5) || []) as BlogArticleRecord[]
-    }
+      articles: (investingData?.slice(1, 5) || []) as BlogArticleRecord[],
+    },
   ]
 
-  sections.forEach(section => {
-    section.articles.forEach(article => {
+  sections.forEach((section) => {
+    section.articles.forEach((article) => {
       article.contentBlock = []
     })
   })
@@ -157,31 +157,31 @@ export async function getRecentArticleSections(): Promise<ArticlesSection[]> {
     aiData,
     newsData,
     bitcashData,
-    aiResearchData
+    aiResearchData,
   } = await getBlogData()
 
   const recentArticles = [
     {
       name: 'Bitcoin',
       slug: 'bitcoin',
-      articles: (bitcoinData?.slice(0) || []) as BlogArticleRecord[]
+      articles: (bitcoinData?.slice(0) || []) as BlogArticleRecord[],
     },
     {
       name: 'Crypto',
       slug: 'crypto',
-      articles: (cryptoData?.slice(0) || []) as BlogArticleRecord[]
+      articles: (cryptoData?.slice(0) || []) as BlogArticleRecord[],
     },
     {
       name: 'Startup',
       slug: 'startup',
-      articles: (startupData?.slice(0) || []) as BlogArticleRecord[]
+      articles: (startupData?.slice(0) || []) as BlogArticleRecord[],
     },
 
     {
       name: 'Investment',
       slug: 'investing',
-      articles: (investingData?.slice(0) || []) as BlogArticleRecord[]
-    }
+      articles: (investingData?.slice(0) || []) as BlogArticleRecord[],
+    },
   ]
 
   return recentArticles
@@ -191,7 +191,7 @@ export async function getBlogCategoryLandingData(lang: Lang, category: string) {
   const [i18n, categories, pageSeo] = await Promise.all([
     getLayoutText(),
     getBlogCategory(category, undefined, 100),
-    getPageSeoText(category)
+    getPageSeoText(category),
   ])
 
   const dirPath = `/dictionaries/${lang}/blog/${category}`
@@ -207,7 +207,7 @@ export async function getBlogCategoryLandingData(lang: Lang, category: string) {
     // console.log('error', error)
     try {
       const englishVersion = parseFile(
-        `/dictionaries/en/blog/${category}/${fileName}`
+        `/dictionaries/en/blog/${category}/${fileName}`,
       )
 
       if (englishVersion) return englishVersion
@@ -216,7 +216,7 @@ export async function getBlogCategoryLandingData(lang: Lang, category: string) {
 
   // replacing category kebab case with camel case
   const blogCategory = category.replace(/(\-\w)/g, (m: string) =>
-    m[1].toUpperCase()
+    m[1].toUpperCase(),
   )
   const categoryContent: BlogArticleRecord[] | undefined = categories[
     `${blogCategory}Data`
@@ -226,7 +226,7 @@ export async function getBlogCategoryLandingData(lang: Lang, category: string) {
   // get topics
   const allTopics: string[] = []
 
-  categoryContent.forEach(blog => {
+  categoryContent.forEach((blog) => {
     blog?.topics?.forEach((topic: string) => {
       allTopics.push(topic)
     })
@@ -236,17 +236,17 @@ export async function getBlogCategoryLandingData(lang: Lang, category: string) {
   const topics = uniq(allTopics)
 
   const sections: ArticlesSection[] = topics?.map((tp, index) => {
-    const articles = categoryContent.filter(content =>
-      content.topics.includes(tp)
+    const articles = categoryContent.filter((content) =>
+      content.topics.includes(tp),
     )
-    articles.forEach(article => {
+    articles.forEach((article) => {
       article.contentBlock = []
     })
 
     return {
       name: tp,
       slug: `${tp.toLocaleLowerCase()}`,
-      articles
+      articles,
     }
   })
 
@@ -267,7 +267,7 @@ export type BlogArticleData = {
 export async function getBlogArticleData(
   lang: Lang,
   category: string,
-  slug: string
+  slug: string,
 ) {
   const dirPath = `dictionaries/${lang}/blog/${category}`
   const fileName = `${slug}.json`
@@ -279,7 +279,7 @@ export async function getBlogArticleData(
     return fileContents
   } catch (error) {
     const englishVersion: BlogArticleData = parseFile(
-      `/dictionaries/en/blog/${category}/${slug}.json`
+      `/dictionaries/en/blog/${category}/${slug}.json`,
     )
     if (englishVersion) return englishVersion
   }
@@ -289,14 +289,14 @@ export async function getBlogArticleData(
     getLayoutText(),
     getBlogCategory(category, {
       slug: {
-        eq: slug
-      }
-    })
+        eq: slug,
+      },
+    }),
   ])
 
   // replacing category kebab case with camel case
   const blogCategory = category.replace(/(\-\w)/g, (m: string) =>
-    m[1].toUpperCase()
+    m[1].toUpperCase(),
   )
   const data: any = categories[`${blogCategory}Data`]
   const error: any = categories[`${blogCategory}Error`]
@@ -313,8 +313,8 @@ export async function getBlogArticleData(
   if (topics.length > 0) {
     relatedBlogs = await getBlogCategory(category, {
       slug: {
-        neq: slug
-      }
+        neq: slug,
+      },
     })
     const escapeRegExp = (string: string): string => {
       return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') // $& means the whole matched string
@@ -332,10 +332,10 @@ export async function getBlogArticleData(
       .filter(
         (blog: BlogAiRecord) =>
           (blog.topics as string[]).some((topic: string) =>
-            topics.includes(topic)
+            topics.includes(topic),
           ) &&
           blog.description?.match(titleRegex) &&
-          blog.title?.match(titleRegex)
+          blog.title?.match(titleRegex),
       )
   }
 

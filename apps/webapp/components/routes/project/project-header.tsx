@@ -1,13 +1,13 @@
-import Image from 'next/image'
-import { Project } from '@/lib/projects'
-import { ReactNode } from 'react'
-import { ProjectPills } from './project-pills'
 import { appConfig } from '@/lib/config'
+import type { Project } from '@/lib/projects'
+import Image from 'next/image'
+import type { ReactNode } from 'react'
 import Balancer from 'react-wrap-balancer'
+import { ProjectPills } from './project-pills'
 
 export function ProjectHeader({
   project,
-  children
+  children,
 }: {
   project: Project
   children: ReactNode

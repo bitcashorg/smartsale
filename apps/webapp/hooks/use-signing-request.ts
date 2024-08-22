@@ -3,17 +3,17 @@ import { useSession } from '@/hooks/use-session'
 import { esrOptions } from '@/lib/eos'
 import { useSupabaseClient } from '@/services/supabase'
 import { createContextHook } from '@blockmatic/hooks-utils'
+import type { RealtimeChannel } from '@supabase/supabase-js'
 import { useMutation } from '@tanstack/react-query'
 import axios from 'axios'
-import { useSetState } from 'react-use'
-import { RealtimeChannel } from '@supabase/supabase-js'
 import { SigningRequest } from 'eosio-signing-request'
 import { useSearchParams } from 'next/navigation'
 import { isMobile } from 'react-device-detect'
+import { useSetState } from 'react-use'
 
 export const [useSigningRequest, UseSigningRequestProvider] = createContextHook(
   useSigningRequestFn,
-  'You must wrap your application with <UseSigningRequestProvider /> in order to useSigningRequest().'
+  'You must wrap your application with <UseSigningRequestProvider /> in order to useSigningRequest().',
 )
 
 function useSigningRequestFn() {
@@ -40,19 +40,19 @@ function useSigningRequestFn() {
         console.log('emitting event to parent')
         return window.parent.postMessage(
           { eventType: 'esr', code: esr.encode() },
-          '*'
+          '*',
         )
       }
 
       // we show the qr optimistically
       setState({
         esr,
-        open: true
+        open: true,
       })
       console.log('inserting esr', esr.encode())
       const response = await axios.post('/api/esr-entry', {
         code: esr.encode(),
-        account: session.account
+        account: session.account,
       })
       return response.data
     },
@@ -65,22 +65,22 @@ function useSigningRequestFn() {
         .on(
           'postgres_changes',
           { event: 'UPDATE', schema: 'public', table: 'esr' },
-          payload => {
+          (payload) => {
             console.log('ESR UPDATE!', payload)
             if (payload.new.id !== esr.getInfoKey('uuid')) return
             if (!payload.new.trx_id) return
             // if uuid matches remove channel and reset state
             supabase.removeChannel(state.channel!)
             setState(defaultState)
-          }
+          },
         )
         .subscribe()
       console.log('subscribed to esr channel')
 
       setState({
-        channel
+        channel,
       })
-    }
+    },
   })
 
   const toggleOpen = () =>
@@ -99,5 +99,5 @@ interface SignatureRequestState {
 const defaultState: SignatureRequestState = {
   open: false,
   esr: null,
-  channel: null
+  channel: null,
 }

@@ -1,59 +1,59 @@
-import { Label } from "@/components/ui/label";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import { useAccount, useSwitchChain, useWriteContract } from "wagmi";
-import { useEffect, useState } from "react";
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import { Label } from '@/components/ui/label'
 import {
-  EVMTokenContractData,
+  type EVMTokenContractData,
   SepoliaUSDT,
   TestnetMBOTSPL,
   TestnetUSDCred,
   TestnetUSDT,
-} from "app-contracts";
-import { TokenSelect } from "./token-select";
-import { parseUnits } from "viem";
-import { AddTokenToWallet } from "./add-token-to-metamask";
+} from 'app-contracts'
+import { useEffect, useState } from 'react'
+import { parseUnits } from 'viem'
+import { useAccount, useSwitchChain, useWriteContract } from 'wagmi'
+import { AddTokenToWallet } from './add-token-to-metamask'
+import { TokenSelect } from './token-select'
 
-const tokens = [TestnetUSDCred, SepoliaUSDT, TestnetMBOTSPL, TestnetUSDT];
+const tokens = [TestnetUSDCred, SepoliaUSDT, TestnetMBOTSPL, TestnetUSDT]
 
 export function FaucetForm() {
-  const account = useAccount();
+  const account = useAccount()
   const [address, setAddress] = useState<string | undefined>(
     account?.address ? account.address : undefined,
-  );
-  const [quantity, setQuantity] = useState<string>("100");
+  )
+  const [quantity, setQuantity] = useState<string>('100')
   const { writeContract, isPending, isSuccess, data, ...other } =
-    useWriteContract();
-  const [token, setToken] = useState<EVMTokenContractData>(TestnetUSDCred);
-  const { switchChain } = useSwitchChain();
+    useWriteContract()
+  const [token, setToken] = useState<EVMTokenContractData>(TestnetUSDCred)
+  const { switchChain } = useSwitchChain()
 
   // Execute the contract write operation
   const callFaucet = async () => {
-    const chainId = token.chainId;
-    switchChain({ chainId });
+    const chainId = token.chainId
+    switchChain({ chainId })
 
     console.log(
-      "callFaucet",
+      'callFaucet',
       JSON.stringify({
         ...token,
-        functionName: "faucet",
+        functionName: 'faucet',
         args: [address, parseUnits(quantity, token.decimals).toString()],
         chainId,
       }),
-    );
+    )
     writeContract({
       ...token,
-      functionName: "faucet",
+      functionName: 'faucet',
       args: [address, parseUnits(quantity, token.decimals)],
       chainId,
-    });
-  };
-  console.log({ data, ...other });
+    })
+  }
+  console.log({ data, ...other })
 
   // update input when user changes address on wallet
   useEffect(() => {
-    if (account.address !== address) setAddress(account.address);
-  }, [account.address, setAddress]);
+    if (account.address !== address) setAddress(account.address)
+  }, [account.address, setAddress])
 
   return (
     <div className="flex flex-col w-full max-w-[1.5*md] items-start gap-4">
@@ -74,8 +74,8 @@ export function FaucetForm() {
         />
         <TokenSelect
           options={tokens}
-          defaultValue={"0"}
-          onValueChange={(i) => setToken(tokens[parseInt(i)])}
+          defaultValue={'0'}
+          onValueChange={(i) => setToken(tokens[Number.parseInt(i)])}
         />
       </div>
       <div className="flex items-center w-full gap-4">
@@ -87,7 +87,7 @@ export function FaucetForm() {
           id="address"
           placeholder="Enter address"
           type="text"
-          value={address || ""}
+          value={address || ''}
           onChange={(e) => setAddress(e.target.value)}
         />
       </div>
@@ -107,5 +107,5 @@ export function FaucetForm() {
         <code>{JSON.stringify({ isPending, isSuccess, data })}</code>
       </div>
     </div>
-  );
+  )
 }

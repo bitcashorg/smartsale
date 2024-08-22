@@ -1,10 +1,23 @@
-import { EVMTokenContractData, SepoliaUSDT, TestnetUSDT, appContracts } from 'app-contracts'
+import {
+  type EVMTokenContractData,
+  SepoliaUSDT,
+  TestnetUSDT,
+  appContracts,
+} from 'app-contracts'
 import { runPromisesInSeries } from '~/lib/utils'
 
-import { Address, Log, PublicClient, createPublicClient, http, parseAbiItem, stringify } from 'viem'
-import { TransferEvent } from '~/modules/auction/auction.type'
-import { sepolia } from 'viem/chains'
 import { appChains } from 'app-env'
+import {
+  http,
+  type Address,
+  type Log,
+  type PublicClient,
+  createPublicClient,
+  parseAbiItem,
+  stringify,
+} from 'viem'
+import { sepolia } from 'viem/chains'
+import type { TransferEvent } from '~/modules/auction/auction.type'
 
 const tokens: EVMTokenContractData[] = appContracts.dev.tokens.evm
 
@@ -16,7 +29,9 @@ export async function listenToEvmTransfers() {
 async function listenToEvmTransfersFn(token: EVMTokenContractData) {
   const chain = appChains.dev.get(token.chainId)
   if (!chain) return
-  console.log(`listening usdt transfers for token ${token.symbol} on chain ${chain.name}`)
+  console.log(
+    `listening usdt transfers for token ${token.symbol} on chain ${chain.name}`,
+  )
   const client: PublicClient = createPublicClient({
     chain,
     transport: http(),

@@ -2,10 +2,7 @@
   "relatedBlogs": [
     {
       "id": "165365457",
-      "topics": [
-        "Primeros pasos",
-        " Pagos"
-      ],
+      "topics": ["Primeros pasos", " Pagos"],
       "title": "Agilizando las compras en linea con Bitcoin: Una guia para usar Bitcoin en transacciones",
       "slug": "streamlining-online-purchases-with-bitcoin-a-guide-to-using-bitcoin-for-transacti",
       "authorName": "Maxi Millie",
@@ -24,10 +21,7 @@
     },
     {
       "id": "165340146",
-      "topics": [
-        "Primeros pasos",
-        "Prueba de trabajo"
-      ],
+      "topics": ["Primeros pasos", "Prueba de trabajo"],
       "title": "La seguridad economica de Bitcoin: Como la prueba de trabajo permite una red segura y protegida",
       "slug": "the-economic-security-of-bitcoin-how-proof-of-work-enables-a-safe-and-secure-netw",
       "authorName": "Maxi Millie",
@@ -46,10 +40,7 @@
     },
     {
       "id": "165340050",
-      "topics": [
-        "Primeros pasos",
-        "Legal"
-      ],
+      "topics": ["Primeros pasos", "Legal"],
       "title": "Navegando el panorama legal y regulatorio de Bitcoin: Entendiendo las reglas y oportunidades",
       "slug": "navigating-the-legal-and-regulatory-landscape-of-bitcoin-understanding-the-rules",
       "authorName": "Maxi Millie",
@@ -68,10 +59,7 @@
     },
     {
       "id": "165337859",
-      "topics": [
-        "Primeros pasos",
-        "Seguridad"
-      ],
+      "topics": ["Primeros pasos", "Seguridad"],
       "title": "El futuro del almacenamiento de Bitcoin: Una introduccion a las carteras de Bitcoin y soluciones de almacenamiento innovadoras",
       "slug": "the-future-of-bitcoin-storage-an-introduction-to-bitcoin-wallets-and-innovative-s",
       "authorName": "Maxi Millie",
@@ -90,11 +78,9 @@
     },
     {
       "id": "165005184",
-      "topics": [
-        "Primeros pasos"
-      ],
+      "topics": ["Primeros pasos"],
       "title": "El arte de investigar y evaluar exchanges de Bitcoin: Una guia para inversores",
-      "slug": "the-art-of-researching-and-evaluating-bitcoin-exchanges-a-guide-for-investors",
+      "slug": "the-art-of-researching-and-evaluating-bitcoin-exchanges-a-guide-for-contributors",
       "authorName": "Maxi Millie",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
@@ -111,10 +97,7 @@
     },
     {
       "id": "164973196",
-      "topics": [
-        "Primeros pasos",
-        "Historia"
-      ],
+      "topics": ["Primeros pasos", "Historia"],
       "title": "La historia y evolucion de Bitcoin",
       "slug": "the-history-and-evolution-of-bitcoin",
       "authorName": "Maxi Millie",
@@ -133,10 +116,7 @@
     },
     {
       "id": "165004875",
-      "topics": [
-        "Primeros pasos",
-        "Seguridad"
-      ],
+      "topics": ["Primeros pasos", "Seguridad"],
       "title": "Como mantener tus Bitcoins seguros en la era digital",
       "slug": "how-to-keep-your-bitcoins-safe-in-the-digital-age",
       "authorName": "Maxi Millie",
@@ -155,10 +135,7 @@
     },
     {
       "id": "165005107",
-      "topics": [
-        "Primeros pasos",
-        "Intercambio"
-      ],
+      "topics": ["Primeros pasos", "Intercambio"],
       "title": "La guia simplificada para comprar y vender Bitcoins",
       "slug": "the-simplified-guide-to-buying-and-selling-bitcoins",
       "authorName": "Maxi Millie",
@@ -177,9 +154,7 @@
     },
     {
       "id": "164904960",
-      "topics": [
-        "Primeros pasos"
-      ],
+      "topics": ["Primeros pasos"],
       "title": "Piensa diferente sobre Bitcoin: El futuro de la moneda descentralizada",
       "slug": "think-differently-about-bitcoin-the-future-of-decentralized-currency",
       "authorName": "Maxi Millie",
@@ -199,11 +174,7 @@
   ],
   "blogContent": {
     "id": "165362142",
-    "topics": [
-      "Comenzando",
-      "Prueba de Trabajo",
-      "Mineria"
-    ],
+    "topics": ["Comenzando", "Prueba de Trabajo", "Mineria"],
     "title": "Desbloqueando el Poder de la Mineria de Bitcoin: Una Introduccion a los Algoritmos de Prueba de Trabajo",
     "slug": "unlocking-the-power-of-bitcoin-mining-an-introduction-to-proof-of-work-algorithms",
     "authorName": "Maxi Millie",
@@ -367,7 +338,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "It's important to understand the basics of Bitcoin mining and proof-of-work algorithms to fully understand the inner workings of the Bitcoin network. The mining process ensures the integrity and security of the network, and it also controls the rate at which new bitcoins are created. Understanding the basics of Bitcoin mining and proof-of-work algorithms is essential for anyone looking to invest in or work with Bitcoin."
+                      "value": "It's important to understand the basics of Bitcoin mining and proof-of-work algorithms to fully understand the inner workings of the Bitcoin network. The mining process ensures the integrity and security of the network, and it also controls the rate at which new bitcoins are created. Understanding the basics of Bitcoin mining and proof-of-work algorithms is essential for anyone looking to contribute in or work with Bitcoin."
                     }
                   ]
                 }
@@ -401,9 +372,5 @@
       }
     }
   },
-  "topics": [
-    "Primeros pasos",
-    "Prueba de trabajo",
-    "Mineria"
-  ]
+  "topics": ["Primeros pasos", "Prueba de trabajo", "Mineria"]
 }

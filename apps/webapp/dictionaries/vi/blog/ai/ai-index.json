@@ -6,9 +6,7 @@
       "articles": [
         {
           "id": "SpdLuuYEQgW8rwSHNzhmxA",
-          "topics": [
-            "Ung dung"
-          ],
+          "topics": ["Ung dung"],
           "title": "Masterbots: Nang cao AI vuot qua ChatGPT voi tinh nang chia se xa hoi va doi moi than thien voi nguoi dung",
           "slug": "masterbots-elevating-ai-beyond-chatgpt-with-social-sharing-and-user-friendly-inno",
           "authorName": "Jun Dam",
@@ -42,11 +40,7 @@
       "articles": [
         {
           "id": "190259319",
-          "topics": [
-            "Tom tat",
-            "Mo hinh ngon ngu lon",
-            "Dao tao"
-          ],
+          "topics": ["Tom tat", "Mo hinh ngon ngu lon", "Dao tao"],
           "title": "Podcast Khong gian an 16/8/23 [Tom tat] - Toan hoc trong viec dao tao cac mo hinh ngon ngu lon — voi Quentin Anthony tu Eleuther AI",
           "slug": "latent-space-podcast-8-16-23-summary-the-mathematics-of-training-llms-with-que",
           "authorName": "Prof. Otto Nomos",
@@ -74,13 +68,7 @@
         },
         {
           "id": "190259129",
-          "topics": [
-            "LLM",
-            "Phan cung",
-            "Tom tat",
-            "Bien",
-            "Canh"
-          ],
+          "topics": ["LLM", "Phan cung", "Tom tat", "Bien", "Canh"],
           "title": "Podcast Khong gian an 8/10/23 [Tom tat]: LLM o khap moi noi: Chay mo hinh 70B tren trinh duyet va iPhone bang MLC - voi Tianqi Chen tu CMU / OctoML",
           "slug": "latent-space-podcast-8-10-23-summary-llms-everywhere-running-70b-models-in-browse",
           "authorName": "Prof. Otto Nomos",
@@ -142,12 +130,7 @@
         },
         {
           "id": "190259111",
-          "topics": [
-            "Tom tat",
-            "Bien doi",
-            "Dao tao",
-            "Ma nguon mo"
-          ],
+          "topics": ["Tom tat", "Bien doi", "Dao tao", "Ma nguon mo"],
           "title": "Podcast Khong gian an 26/7/23 [Tom tat] FlashAttention 2: lam cho Transformers nhanh hon 800% - Tri Dao cua Together AI",
           "slug": "latent-space-podcast-7-26-23-summary-flashattention-2-making-transformers-800-fas",
           "authorName": "Prof. Otto Nomos",
@@ -208,11 +191,7 @@
         },
         {
           "id": "190259191",
-          "topics": [
-            "Tom tat",
-            "Ma",
-            "LLM"
-          ],
+          "topics": ["Tom tat", "Ma", "LLM"],
           "title": "Podcast Khong gian an 7/10/23 [Tom tat] - Trinh dich ma == GPT 4.5 (voi Simon Willison, Alex Volkov, Aravind Srinivas, Alex Graveley, va nhung nguoi khac)",
           "slug": "latent-space-podcast-7-10-23-summary-code-interpreter-gpt-4-5-w-simon-willison-al",
           "authorName": "Prof. Otto Nomos",
@@ -240,10 +219,7 @@
         },
         {
           "id": "190259216",
-          "topics": [
-            "Tom tat",
-            "Ma nguon mo"
-          ],
+          "topics": ["Tom tat", "Ma nguon mo"],
           "title": "Podcast Khong gian tiem an 7/2/23 [Tom tat] Xu huong AI: mot tap crossover giua Khong gian tiem an va AI Thuc te!",
           "slug": "latent-space-podcast-7-2-23-summary-ai-trends-a-latent-space-x-practical-ai-cross",
           "authorName": "Prof. Otto Nomos",
@@ -271,11 +247,7 @@
         },
         {
           "id": "190259238",
-          "topics": [
-            "Phan cung",
-            "Mo hinh ngon ngu lon",
-            "Tom tat"
-          ],
+          "topics": ["Phan cung", "Mo hinh ngon ngu lon", "Tom tat"],
           "title": "Podcast Khong gian an 20/6/23 [Tom tat] - Thuong mai hoa Petaflop - voi George Hotz cua tiny corp",
           "slug": "latent-space-podcast-6-20-23-summary-commoditizing-the-petaflop-with-george-ho",
           "authorName": "Prof. Otto Nomos",
@@ -303,11 +275,7 @@
         },
         {
           "id": "190259294",
-          "topics": [
-            "Mo hinh ngon ngu lon",
-            "Cac chuc nang",
-            "Tom tat"
-          ],
+          "topics": ["Mo hinh ngon ngu lon", "Cac chuc nang", "Tom tat"],
           "title": "Podcast Khong gian an 14/6/23 [Tom tat] - Tap khan cap: API Chuc nang moi cua OpenAI, giam gia 75%, tang do dai ngu canh len 4 lan (voi Alex Volkov, Simon Willison, Riley Goodside, Joshua Lochner, Stefania Druga, Eric Elliott, Mayo Oshin va nhung nguoi khac)",
           "slug": "latent-space-podcast-6-14-23-summary-emergency-pod-openai-s-new-functions-api-75",
           "authorName": "Prof. Otto Nomos",
@@ -335,11 +303,7 @@
         },
         {
           "id": "190259333",
-          "topics": [
-            "LLM",
-            "Tom tat",
-            "UX"
-          ],
+          "topics": ["LLM", "Tom tat", "UX"],
           "title": "Podcast Khong gian tiem an 6/8/23 [Tom tat] - Tu RLHF den RLHB: Ly do cho viec Hoc tu Hanh vi cua Con nguoi - voi Jeffrey Wang va Joe Reeve cua Amplitude",
           "slug": "latent-space-podcast-6-8-23-summary-from-rlhf-to-rlhb-the-case-for-learning-from",
           "authorName": "Prof. Otto Nomos",
@@ -399,12 +363,7 @@
         },
         {
           "id": "190260557",
-          "topics": [
-            "Tom tat",
-            "Ma",
-            "LLM",
-            "Tac nhan"
-          ],
+          "topics": ["Tom tat", "Ma", "LLM", "Tac nhan"],
           "title": "Podcast Khong gian an 25/5/23 [Tom tat] - Go loi Internet voi tac nhan AI - cung Itamar Friedman tu Codium AI va AutoGPT",
           "slug": "latent-space-podcast-5-25-23-summary-debugging-the-internet-with-ai-agents-with",
           "authorName": "Prof. Otto Nomos",
@@ -432,11 +391,7 @@
         },
         {
           "id": "190260640",
-          "topics": [
-            "Tom tat",
-            "Ma nguon mo",
-            "Mo hinh ngon ngu lon"
-          ],
+          "topics": ["Tom tat", "Ma nguon mo", "Mo hinh ngon ngu lon"],
           "title": "Podcast Khong gian an 5/5/23 [Tom tat] - Khong co ho: AI dong nhan duoc cuoc goi thuc tinh tu Ma nguon mo — voi Simon Willison",
           "slug": "latent-space-podcast-5-5-23-summary-no-moat-closed-ai-gets-its-open-source-wakeup",
           "authorName": "Prof. Otto Nomos",
@@ -464,11 +419,7 @@
         },
         {
           "id": "190260671",
-          "topics": [
-            "LLM",
-            "Ma",
-            "Tom tat"
-          ],
+          "topics": ["LLM", "Ma", "Tom tat"],
           "title": "Podcast Khong gian an 5/3/23 [Tom tat] - Dao tao mot LLM Ma hang dau trong 1 tuan va Dinh luong Cam xuc - voi Reza Shabani cua Replit",
           "slug": "latent-space-podcast-5-3-23-summary-training-a-sota-code-llm-in-1-week-and-quanti",
           "authorName": "Prof. Otto Nomos",
@@ -496,11 +447,7 @@
         },
         {
           "id": "190629271",
-          "topics": [
-            "LLM",
-            "Mo hinh nho",
-            "Tom tat"
-          ],
+          "topics": ["LLM", "Mo hinh nho", "Tom tat"],
           "title": "Podcast Khong gian an 28/4/23 [Tom tat] - Lap ban do tuong lai cua cac Mo hinh *thuc su* Mo va Huan luyen Dolly voi gia 30 do - cung Mike Conover cua Databricks",
           "slug": "latent-space-podcast-4-28-23-summary-mapping-the-future-of-truly-open-models-and",
           "authorName": "Prof. Otto Nomos",
@@ -528,11 +475,7 @@
         },
         {
           "id": "191164291",
-          "topics": [
-            "LLM",
-            "Doanh nghiep",
-            "Tom tat"
-          ],
+          "topics": ["LLM", "Doanh nghiep", "Tom tat"],
           "title": "Podcast Latent Space 21/4/23 [Tom tat] - Tim kiem ho tro boi AI cho Doanh nghiep — voi Deedy Das tu Glean",
           "slug": "latent-space-podcast-4-21-23-summary-ai-powered-search-for-the-enterprise-with",
           "authorName": "Prof. Otto Nomos",
@@ -560,10 +503,7 @@
         },
         {
           "id": "191165673",
-          "topics": [
-            "Tom tat",
-            "Thi giac"
-          ],
+          "topics": ["Tom tat", "Thi giac"],
           "title": "Podcast Khong gian an 13/4/23 [Tom tat] - Mo hinh Phan doan Bat ky va Nhung Van de Kho cua Thi giac May tinh — voi Joseph Nelson tu Roboflow",
           "slug": "latent-space-podcast-4-13-23-summary-segment-anything-model-and-the-hard-problems",
           "authorName": "Prof. Otto Nomos",
@@ -591,11 +531,7 @@
         },
         {
           "id": "191165920",
-          "topics": [
-            "Mo hinh ngon ngu lon",
-            "Tom tat",
-            "Danh gia"
-          ],
+          "topics": ["Mo hinh ngon ngu lon", "Tom tat", "Danh gia"],
           "title": "Podcast Khong gian an 4/6/23 [Tom tat] - Co so AI: Co ban ve tieu chuan danh gia",
           "slug": "latent-space-podcast-4-6-23-summary-ai-fundamentals-benchmarks-101",
           "authorName": "Prof. Otto Nomos",
@@ -623,10 +559,7 @@
         },
         {
           "id": "191301444",
-          "topics": [
-            "Tom tat",
-            "LLMOps"
-          ],
+          "topics": ["Tom tat", "LLMOps"],
           "title": "Podcast Khong gian an 4/6/23 [Tom tat] - Nghien cuu thuc te: Tu Google Brain den MLOps den LLMOps — voi Shreya Shankar cua UC Berkeley",
           "slug": "latent-space-podcast-4-6-23-summary-grounded-research-from-google-brain-to-mlops",
           "authorName": "Prof. Otto Nomos",
@@ -654,11 +587,7 @@
         },
         {
           "id": "191310297",
-          "topics": [
-            "Tom tat",
-            "Mo hinh ngon ngu lon",
-            "Cong cu"
-          ],
+          "topics": ["Tom tat", "Mo hinh ngon ngu lon", "Cong cu"],
           "title": "Podcast Khong gian an 23/3/23 [Tom tat] - Tap khan cap: Thoi diem App Store cua ChatGPT (voi Logan Kilpatrick cua OpenAI, Florent Crivello cua LindyAI va Nader Dabit)",
           "slug": "latent-space-podcast-3-23-23-summary-emergency-pod-chatgpt-s-app-store-moment-w-o",
           "authorName": "Prof. Otto Nomos",
@@ -686,11 +615,7 @@
         },
         {
           "id": "191313297",
-          "topics": [
-            "LLM",
-            "Tom tat",
-            "Ma nguon"
-          ],
+          "topics": ["LLM", "Tom tat", "Ma nguon"],
           "title": "Podcast Khong gian an 3/2/23 [Tom tat] - AI re hon 97%, nhanh hon, tot hon, chinh xac hon — voi Varun Mohan cua Codeium Podcast Khong gian an Tap 2: Tai sao ban dang su dung GPU sai cach",
           "slug": "latent-space-podcast-3-2-23-summary-97-cheaper-faster-better-correct-ai-with-v",
           "authorName": "Prof. Otto Nomos",
@@ -718,10 +643,7 @@
         },
         {
           "id": "191313319",
-          "topics": [
-            "LLM",
-            "Tom tat"
-          ],
+          "topics": ["LLM", "Tom tat"],
           "title": "Podcast Khong gian tiem an 2/23 [Tom tat] - ChatGPT, su on ao ve GPT4, va Xay dung san pham thuan LLM — voi Logan Kilpatrick cua OpenAI",
           "slug": "latent-space-podcast-2-23-summary-chatgpt-gpt4-hype-and-building-llm-native-produ",
           "authorName": "Prof. Otto Nomos",
@@ -749,10 +671,7 @@
         },
         {
           "id": "190258948",
-          "topics": [
-            "Tom tat",
-            "Mo hinh ngon ngu lon"
-          ],
+          "topics": ["Tom tat", "Mo hinh ngon ngu lon"],
           "title": "Mo hinh ngon ngu lon, duoc giai thich voi toi thieu toan hoc va thuat ngu chuyen mon [Tom tat]",
           "slug": "large-language-models-explained-with-a-minimum-of-math-and-jargon-eli5-summary",
           "authorName": "Prof. Otto Nomos",
@@ -780,10 +699,7 @@
         },
         {
           "id": "190258977",
-          "topics": [
-            "Tom tat",
-            "Bien ap"
-          ],
+          "topics": ["Tom tat", "Bien ap"],
           "title": "So do Bien ap: Huong dan toan dien ve Kien truc Mang neron Bien ap [Tom tat]",
           "slug": "the-transformer-blueprint-a-holistic-guide-to-the-transformer-neural-network-arch",
           "authorName": "Prof. Otto Nomos",
@@ -811,11 +727,7 @@
         },
         {
           "id": "190259003",
-          "topics": [
-            "LLM",
-            "Tom tat",
-            "Cong nghiep"
-          ],
+          "topics": ["LLM", "Tom tat", "Cong nghiep"],
           "title": "McKinsey: Tiem nang kinh te cua AI tao sinh [Tom tat]",
           "slug": "mckinsey-the-economic-potential-of-generative-ai-eli5-summary",
           "authorName": "Prof. Otto Nomos",
@@ -843,10 +755,7 @@
         },
         {
           "id": "190259043",
-          "topics": [
-            "LLM",
-            "Tom tat"
-          ],
+          "topics": ["LLM", "Tom tat"],
           "title": "Google \"Chung toi khong co loi the, va OpenAI cung vay\" [Binh luan]",
           "slug": "google-we-have-no-moat-and-neither-does-openai-commentary",
           "authorName": "Prof. Otto Nomos",
@@ -874,10 +783,7 @@
         },
         {
           "id": "190259067",
-          "topics": [
-            "Tom tat",
-            "Mo hinh ngon ngu lon"
-          ],
+          "topics": ["Tom tat", "Mo hinh ngon ngu lon"],
           "title": "Tinh trang cua GPT - Andrej Karpathy [Tom tat]",
           "slug": "state-of-gpt-andrej-karpathy-summary",
           "authorName": "Prof. Otto Nomos",
@@ -911,11 +817,7 @@
       "articles": [
         {
           "id": "190259319",
-          "topics": [
-            "Tom tat",
-            "Mo hinh ngon ngu lon",
-            "Dao tao"
-          ],
+          "topics": ["Tom tat", "Mo hinh ngon ngu lon", "Dao tao"],
           "title": "Podcast Khong gian an 16/8/23 [Tom tat] - Toan hoc trong viec dao tao cac mo hinh ngon ngu lon — voi Quentin Anthony tu Eleuther AI",
           "slug": "latent-space-podcast-8-16-23-summary-the-mathematics-of-training-llms-with-que",
           "authorName": "Prof. Otto Nomos",
@@ -943,13 +845,7 @@
         },
         {
           "id": "190259129",
-          "topics": [
-            "LLM",
-            "Phan cung",
-            "Tom tat",
-            "Bien",
-            "Canh"
-          ],
+          "topics": ["LLM", "Phan cung", "Tom tat", "Bien", "Canh"],
           "title": "Podcast Khong gian an 8/10/23 [Tom tat]: LLM o khap moi noi: Chay mo hinh 70B tren trinh duyet va iPhone bang MLC - voi Tianqi Chen tu CMU / OctoML",
           "slug": "latent-space-podcast-8-10-23-summary-llms-everywhere-running-70b-models-in-browse",
           "authorName": "Prof. Otto Nomos",
@@ -1044,11 +940,7 @@
         },
         {
           "id": "190259191",
-          "topics": [
-            "Tom tat",
-            "Ma",
-            "LLM"
-          ],
+          "topics": ["Tom tat", "Ma", "LLM"],
           "title": "Podcast Khong gian an 7/10/23 [Tom tat] - Trinh dich ma == GPT 4.5 (voi Simon Willison, Alex Volkov, Aravind Srinivas, Alex Graveley, va nhung nguoi khac)",
           "slug": "latent-space-podcast-7-10-23-summary-code-interpreter-gpt-4-5-w-simon-willison-al",
           "authorName": "Prof. Otto Nomos",
@@ -1076,11 +968,7 @@
         },
         {
           "id": "190259238",
-          "topics": [
-            "Phan cung",
-            "Mo hinh ngon ngu lon",
-            "Tom tat"
-          ],
+          "topics": ["Phan cung", "Mo hinh ngon ngu lon", "Tom tat"],
           "title": "Podcast Khong gian an 20/6/23 [Tom tat] - Thuong mai hoa Petaflop - voi George Hotz cua tiny corp",
           "slug": "latent-space-podcast-6-20-23-summary-commoditizing-the-petaflop-with-george-ho",
           "authorName": "Prof. Otto Nomos",
@@ -1108,11 +996,7 @@
         },
         {
           "id": "190259294",
-          "topics": [
-            "Mo hinh ngon ngu lon",
-            "Cac chuc nang",
-            "Tom tat"
-          ],
+          "topics": ["Mo hinh ngon ngu lon", "Cac chuc nang", "Tom tat"],
           "title": "Podcast Khong gian an 14/6/23 [Tom tat] - Tap khan cap: API Chuc nang moi cua OpenAI, giam gia 75%, tang do dai ngu canh len 4 lan (voi Alex Volkov, Simon Willison, Riley Goodside, Joshua Lochner, Stefania Druga, Eric Elliott, Mayo Oshin va nhung nguoi khac)",
           "slug": "latent-space-podcast-6-14-23-summary-emergency-pod-openai-s-new-functions-api-75",
           "authorName": "Prof. Otto Nomos",
@@ -1140,11 +1024,7 @@
         },
         {
           "id": "190259333",
-          "topics": [
-            "LLM",
-            "Tom tat",
-            "UX"
-          ],
+          "topics": ["LLM", "Tom tat", "UX"],
           "title": "Podcast Khong gian tiem an 6/8/23 [Tom tat] - Tu RLHF den RLHB: Ly do cho viec Hoc tu Hanh vi cua Con nguoi - voi Jeffrey Wang va Joe Reeve cua Amplitude",
           "slug": "latent-space-podcast-6-8-23-summary-from-rlhf-to-rlhb-the-case-for-learning-from",
           "authorName": "Prof. Otto Nomos",
@@ -1172,11 +1052,7 @@
         },
         {
           "id": "190260528",
-          "topics": [
-            "Tom tat",
-            "LLM",
-            "UX"
-          ],
+          "topics": ["Tom tat", "LLM", "UX"],
           "title": "Podcast Khong gian an 6/1/23 [Tom tat] - Xay dung Scenius AI × UX — voi Linus Lee cua Notion AI",
           "slug": "latent-space-podcast-6-1-23-summary-building-the-ai-x-ux-scenius-with-linus-le",
           "authorName": "Prof. Otto Nomos",
@@ -1204,12 +1080,7 @@
         },
         {
           "id": "190260557",
-          "topics": [
-            "Tom tat",
-            "Ma",
-            "LLM",
-            "Tac nhan"
-          ],
+          "topics": ["Tom tat", "Ma", "LLM", "Tac nhan"],
           "title": "Podcast Khong gian an 25/5/23 [Tom tat] - Go loi Internet voi tac nhan AI - cung Itamar Friedman tu Codium AI va AutoGPT",
           "slug": "latent-space-podcast-5-25-23-summary-debugging-the-internet-with-ai-agents-with",
           "authorName": "Prof. Otto Nomos",
@@ -1237,10 +1108,7 @@
         },
         {
           "id": "190260577",
-          "topics": [
-            "Mo hinh ngon ngu lon",
-            "Mo hinh nho"
-          ],
+          "topics": ["Mo hinh ngon ngu lon", "Mo hinh nho"],
           "title": "Podcast Khong gian an 20/5/23 [Tom tat] - MPT-7B va Su khoi dau cua Boi canh=Vo cung — voi Jonathan Frankle va Abhinav Venigalla cua MosaicML",
           "slug": "latent-space-podcast-5-20-23-summary-mpt-7b-and-the-beginning-of-context-infinity",
           "authorName": "Prof. Otto Nomos",
@@ -1268,10 +1136,7 @@
         },
         {
           "id": "190260597",
-          "topics": [
-            "LLM",
-            "Du lieu co cau truc"
-          ],
+          "topics": ["LLM", "Du lieu co cau truc"],
           "title": "Podcast Khong gian an 15/5/23 [Tom tat] - Dam bao chat luong va cau truc trong dau ra LLM - voi Shreya Rajpal cua Guardrails AI",
           "slug": "latent-space-podcast-5-15-23-summary-guaranteed-quality-and-structure-in-llm-outp",
           "authorName": "Prof. Otto Nomos",
@@ -1299,12 +1164,7 @@
         },
         {
           "id": "190260606",
-          "topics": [
-            "LLM",
-            "Dao tao",
-            "Tac nhan",
-            "Da phuong thuc"
-          ],
+          "topics": ["LLM", "Dao tao", "Tac nhan", "Da phuong thuc"],
           "title": "Podcast Khong gian an 5/8/23 [Tom tat] - Gen Sang lap AI: Som bat dau, Xay dung nhanh va Tin tuong vao su vi dai — voi Sharif Shameem cua Lexica",
           "slug": "latent-space-podcast-5-8-23-summary-the-ai-founder-gene-being-early-building-fast",
           "authorName": "Prof. Otto Nomos",
@@ -1332,11 +1192,7 @@
         },
         {
           "id": "190260640",
-          "topics": [
-            "Tom tat",
-            "Ma nguon mo",
-            "Mo hinh ngon ngu lon"
-          ],
+          "topics": ["Tom tat", "Ma nguon mo", "Mo hinh ngon ngu lon"],
           "title": "Podcast Khong gian an 5/5/23 [Tom tat] - Khong co ho: AI dong nhan duoc cuoc goi thuc tinh tu Ma nguon mo — voi Simon Willison",
           "slug": "latent-space-podcast-5-5-23-summary-no-moat-closed-ai-gets-its-open-source-wakeup",
           "authorName": "Prof. Otto Nomos",
@@ -1364,11 +1220,7 @@
         },
         {
           "id": "190260671",
-          "topics": [
-            "LLM",
-            "Ma",
-            "Tom tat"
-          ],
+          "topics": ["LLM", "Ma", "Tom tat"],
           "title": "Podcast Khong gian an 5/3/23 [Tom tat] - Dao tao mot LLM Ma hang dau trong 1 tuan va Dinh luong Cam xuc - voi Reza Shabani cua Replit",
           "slug": "latent-space-podcast-5-3-23-summary-training-a-sota-code-llm-in-1-week-and-quanti",
           "authorName": "Prof. Otto Nomos",
@@ -1396,11 +1248,7 @@
         },
         {
           "id": "190629271",
-          "topics": [
-            "LLM",
-            "Mo hinh nho",
-            "Tom tat"
-          ],
+          "topics": ["LLM", "Mo hinh nho", "Tom tat"],
           "title": "Podcast Khong gian an 28/4/23 [Tom tat] - Lap ban do tuong lai cua cac Mo hinh *thuc su* Mo va Huan luyen Dolly voi gia 30 do - cung Mike Conover cua Databricks",
           "slug": "latent-space-podcast-4-28-23-summary-mapping-the-future-of-truly-open-models-and",
           "authorName": "Prof. Otto Nomos",
@@ -1428,11 +1276,7 @@
         },
         {
           "id": "191164291",
-          "topics": [
-            "LLM",
-            "Doanh nghiep",
-            "Tom tat"
-          ],
+          "topics": ["LLM", "Doanh nghiep", "Tom tat"],
           "title": "Podcast Latent Space 21/4/23 [Tom tat] - Tim kiem ho tro boi AI cho Doanh nghiep — voi Deedy Das tu Glean",
           "slug": "latent-space-podcast-4-21-23-summary-ai-powered-search-for-the-enterprise-with",
           "authorName": "Prof. Otto Nomos",
@@ -1460,11 +1304,7 @@
         },
         {
           "id": "191165920",
-          "topics": [
-            "Mo hinh ngon ngu lon",
-            "Tom tat",
-            "Danh gia"
-          ],
+          "topics": ["Mo hinh ngon ngu lon", "Tom tat", "Danh gia"],
           "title": "Podcast Khong gian an 4/6/23 [Tom tat] - Co so AI: Co ban ve tieu chuan danh gia",
           "slug": "latent-space-podcast-4-6-23-summary-ai-fundamentals-benchmarks-101",
           "authorName": "Prof. Otto Nomos",
@@ -1492,11 +1332,7 @@
         },
         {
           "id": "191310297",
-          "topics": [
-            "Tom tat",
-            "Mo hinh ngon ngu lon",
-            "Cong cu"
-          ],
+          "topics": ["Tom tat", "Mo hinh ngon ngu lon", "Cong cu"],
           "title": "Podcast Khong gian an 23/3/23 [Tom tat] - Tap khan cap: Thoi diem App Store cua ChatGPT (voi Logan Kilpatrick cua OpenAI, Florent Crivello cua LindyAI va Nader Dabit)",
           "slug": "latent-space-podcast-3-23-23-summary-emergency-pod-chatgpt-s-app-store-moment-w-o",
           "authorName": "Prof. Otto Nomos",
@@ -1524,11 +1360,7 @@
         },
         {
           "id": "191313297",
-          "topics": [
-            "LLM",
-            "Tom tat",
-            "Ma nguon"
-          ],
+          "topics": ["LLM", "Tom tat", "Ma nguon"],
           "title": "Podcast Khong gian an 3/2/23 [Tom tat] - AI re hon 97%, nhanh hon, tot hon, chinh xac hon — voi Varun Mohan cua Codeium Podcast Khong gian an Tap 2: Tai sao ban dang su dung GPU sai cach",
           "slug": "latent-space-podcast-3-2-23-summary-97-cheaper-faster-better-correct-ai-with-v",
           "authorName": "Prof. Otto Nomos",
@@ -1556,10 +1388,7 @@
         },
         {
           "id": "191313319",
-          "topics": [
-            "LLM",
-            "Tom tat"
-          ],
+          "topics": ["LLM", "Tom tat"],
           "title": "Podcast Khong gian tiem an 2/23 [Tom tat] - ChatGPT, su on ao ve GPT4, va Xay dung san pham thuan LLM — voi Logan Kilpatrick cua OpenAI",
           "slug": "latent-space-podcast-2-23-summary-chatgpt-gpt4-hype-and-building-llm-native-produ",
           "authorName": "Prof. Otto Nomos",
@@ -1587,10 +1416,7 @@
         },
         {
           "id": "190258948",
-          "topics": [
-            "Tom tat",
-            "Mo hinh ngon ngu lon"
-          ],
+          "topics": ["Tom tat", "Mo hinh ngon ngu lon"],
           "title": "Mo hinh ngon ngu lon, duoc giai thich voi toi thieu toan hoc va thuat ngu chuyen mon [Tom tat]",
           "slug": "large-language-models-explained-with-a-minimum-of-math-and-jargon-eli5-summary",
           "authorName": "Prof. Otto Nomos",
@@ -1618,11 +1444,7 @@
         },
         {
           "id": "190259003",
-          "topics": [
-            "LLM",
-            "Tom tat",
-            "Cong nghiep"
-          ],
+          "topics": ["LLM", "Tom tat", "Cong nghiep"],
           "title": "McKinsey: Tiem nang kinh te cua AI tao sinh [Tom tat]",
           "slug": "mckinsey-the-economic-potential-of-generative-ai-eli5-summary",
           "authorName": "Prof. Otto Nomos",
@@ -1650,10 +1472,7 @@
         },
         {
           "id": "190259043",
-          "topics": [
-            "LLM",
-            "Tom tat"
-          ],
+          "topics": ["LLM", "Tom tat"],
           "title": "Google \"Chung toi khong co loi the, va OpenAI cung vay\" [Binh luan]",
           "slug": "google-we-have-no-moat-and-neither-does-openai-commentary",
           "authorName": "Prof. Otto Nomos",
@@ -1681,10 +1500,7 @@
         },
         {
           "id": "190259067",
-          "topics": [
-            "Tom tat",
-            "Mo hinh ngon ngu lon"
-          ],
+          "topics": ["Tom tat", "Mo hinh ngon ngu lon"],
           "title": "Tinh trang cua GPT - Andrej Karpathy [Tom tat]",
           "slug": "state-of-gpt-andrej-karpathy-summary",
           "authorName": "Prof. Otto Nomos",
@@ -1712,10 +1528,7 @@
         },
         {
           "id": "190258672",
-          "topics": [
-            "Bat dau",
-            "Mo hinh ngon ngu lon"
-          ],
+          "topics": ["Bat dau", "Mo hinh ngon ngu lon"],
           "title": "Giai ma bi an cua AI: Tim hieu sau ve kien thuc va gioi han cua cac Mo hinh Ngon ngu Lon",
           "slug": "decoding-the-mysteries-of-ai-a-deep-dive-into-large-language-models-knowledge-and",
           "authorName": "Prof. Otto Nomos",
@@ -1743,10 +1556,7 @@
         },
         {
           "id": "190258658",
-          "topics": [
-            "Bat dau",
-            "Mo hinh ngon ngu lon"
-          ],
+          "topics": ["Bat dau", "Mo hinh ngon ngu lon"],
           "title": "Lam chu nghe thuat dao tao cac mo hinh ngon ngu lon: Mot huong dan toan dien",
           "slug": "mastering-the-art-of-training-large-language-models-a-comprehensive-guide",
           "authorName": "Prof. Otto Nomos",
@@ -1774,10 +1584,7 @@
         },
         {
           "id": "190258582",
-          "topics": [
-            "Bat dau",
-            "Mo hinh ngon ngu lon"
-          ],
+          "topics": ["Bat dau", "Mo hinh ngon ngu lon"],
           "title": "Giai ma LLM: Huong dan toi uu de hieu Mo hinh ngon ngu lon",
           "slug": "decoding-llms-your-ultimate-guide-to-understanding-large-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -1805,10 +1612,7 @@
         },
         {
           "id": "190258905",
-          "topics": [
-            "Bat dau",
-            "Mo hinh ngon ngu lon"
-          ],
+          "topics": ["Bat dau", "Mo hinh ngon ngu lon"],
           "title": "Lam chu nghe thuat Mo hinh ngon ngu lon: Huong dan thuc te de trien khai Mo hinh ngon ngu lon",
           "slug": "mastering-the-art-of-llms-a-practical-guide-to-implementing-large-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -1842,11 +1646,7 @@
       "articles": [
         {
           "id": "190259319",
-          "topics": [
-            "Tom tat",
-            "Mo hinh ngon ngu lon",
-            "Dao tao"
-          ],
+          "topics": ["Tom tat", "Mo hinh ngon ngu lon", "Dao tao"],
           "title": "Podcast Khong gian an 16/8/23 [Tom tat] - Toan hoc trong viec dao tao cac mo hinh ngon ngu lon — voi Quentin Anthony tu Eleuther AI",
           "slug": "latent-space-podcast-8-16-23-summary-the-mathematics-of-training-llms-with-que",
           "authorName": "Prof. Otto Nomos",
@@ -1874,12 +1674,7 @@
         },
         {
           "id": "190259111",
-          "topics": [
-            "Tom tat",
-            "Bien doi",
-            "Dao tao",
-            "Ma nguon mo"
-          ],
+          "topics": ["Tom tat", "Bien doi", "Dao tao", "Ma nguon mo"],
           "title": "Podcast Khong gian an 26/7/23 [Tom tat] FlashAttention 2: lam cho Transformers nhanh hon 800% - Tri Dao cua Together AI",
           "slug": "latent-space-podcast-7-26-23-summary-flashattention-2-making-transformers-800-fas",
           "authorName": "Prof. Otto Nomos",
@@ -1907,12 +1702,7 @@
         },
         {
           "id": "190260606",
-          "topics": [
-            "LLM",
-            "Dao tao",
-            "Tac nhan",
-            "Da phuong thuc"
-          ],
+          "topics": ["LLM", "Dao tao", "Tac nhan", "Da phuong thuc"],
           "title": "Podcast Khong gian an 5/8/23 [Tom tat] - Gen Sang lap AI: Som bat dau, Xay dung nhanh va Tin tuong vao su vi dai — voi Sharif Shameem cua Lexica",
           "slug": "latent-space-podcast-5-8-23-summary-the-ai-founder-gene-being-early-building-fast",
           "authorName": "Prof. Otto Nomos",
@@ -1946,13 +1736,7 @@
       "articles": [
         {
           "id": "190259129",
-          "topics": [
-            "LLM",
-            "Phan cung",
-            "Tom tat",
-            "Bien",
-            "Canh"
-          ],
+          "topics": ["LLM", "Phan cung", "Tom tat", "Bien", "Canh"],
           "title": "Podcast Khong gian an 8/10/23 [Tom tat]: LLM o khap moi noi: Chay mo hinh 70B tren trinh duyet va iPhone bang MLC - voi Tianqi Chen tu CMU / OctoML",
           "slug": "latent-space-podcast-8-10-23-summary-llms-everywhere-running-70b-models-in-browse",
           "authorName": "Prof. Otto Nomos",
@@ -1980,11 +1764,7 @@
         },
         {
           "id": "190259238",
-          "topics": [
-            "Phan cung",
-            "Mo hinh ngon ngu lon",
-            "Tom tat"
-          ],
+          "topics": ["Phan cung", "Mo hinh ngon ngu lon", "Tom tat"],
           "title": "Podcast Khong gian an 20/6/23 [Tom tat] - Thuong mai hoa Petaflop - voi George Hotz cua tiny corp",
           "slug": "latent-space-podcast-6-20-23-summary-commoditizing-the-petaflop-with-george-ho",
           "authorName": "Prof. Otto Nomos",
@@ -2018,13 +1798,7 @@
       "articles": [
         {
           "id": "190259129",
-          "topics": [
-            "LLM",
-            "Phan cung",
-            "Tom tat",
-            "Bien",
-            "Canh"
-          ],
+          "topics": ["LLM", "Phan cung", "Tom tat", "Bien", "Canh"],
           "title": "Podcast Khong gian an 8/10/23 [Tom tat]: LLM o khap moi noi: Chay mo hinh 70B tren trinh duyet va iPhone bang MLC - voi Tianqi Chen tu CMU / OctoML",
           "slug": "latent-space-podcast-8-10-23-summary-llms-everywhere-running-70b-models-in-browse",
           "authorName": "Prof. Otto Nomos",
@@ -2092,11 +1866,7 @@
         },
         {
           "id": "190259191",
-          "topics": [
-            "Tom tat",
-            "Ma",
-            "LLM"
-          ],
+          "topics": ["Tom tat", "Ma", "LLM"],
           "title": "Podcast Khong gian an 7/10/23 [Tom tat] - Trinh dich ma == GPT 4.5 (voi Simon Willison, Alex Volkov, Aravind Srinivas, Alex Graveley, va nhung nguoi khac)",
           "slug": "latent-space-podcast-7-10-23-summary-code-interpreter-gpt-4-5-w-simon-willison-al",
           "authorName": "Prof. Otto Nomos",
@@ -2124,12 +1894,7 @@
         },
         {
           "id": "190260557",
-          "topics": [
-            "Tom tat",
-            "Ma",
-            "LLM",
-            "Tac nhan"
-          ],
+          "topics": ["Tom tat", "Ma", "LLM", "Tac nhan"],
           "title": "Podcast Khong gian an 25/5/23 [Tom tat] - Go loi Internet voi tac nhan AI - cung Itamar Friedman tu Codium AI va AutoGPT",
           "slug": "latent-space-podcast-5-25-23-summary-debugging-the-internet-with-ai-agents-with",
           "authorName": "Prof. Otto Nomos",
@@ -2157,11 +1922,7 @@
         },
         {
           "id": "190260671",
-          "topics": [
-            "LLM",
-            "Ma",
-            "Tom tat"
-          ],
+          "topics": ["LLM", "Ma", "Tom tat"],
           "title": "Podcast Khong gian an 5/3/23 [Tom tat] - Dao tao mot LLM Ma hang dau trong 1 tuan va Dinh luong Cam xuc - voi Reza Shabani cua Replit",
           "slug": "latent-space-podcast-5-3-23-summary-training-a-sota-code-llm-in-1-week-and-quanti",
           "authorName": "Prof. Otto Nomos",
@@ -2189,11 +1950,7 @@
         },
         {
           "id": "191313297",
-          "topics": [
-            "LLM",
-            "Tom tat",
-            "Ma nguon"
-          ],
+          "topics": ["LLM", "Tom tat", "Ma nguon"],
           "title": "Podcast Khong gian an 3/2/23 [Tom tat] - AI re hon 97%, nhanh hon, tot hon, chinh xac hon — voi Varun Mohan cua Codeium Podcast Khong gian an Tap 2: Tai sao ban dang su dung GPU sai cach",
           "slug": "latent-space-podcast-3-2-23-summary-97-cheaper-faster-better-correct-ai-with-v",
           "authorName": "Prof. Otto Nomos",
@@ -2261,12 +2018,7 @@
         },
         {
           "id": "190259111",
-          "topics": [
-            "Tom tat",
-            "Bien doi",
-            "Dao tao",
-            "Ma nguon mo"
-          ],
+          "topics": ["Tom tat", "Bien doi", "Dao tao", "Ma nguon mo"],
           "title": "Podcast Khong gian an 26/7/23 [Tom tat] FlashAttention 2: lam cho Transformers nhanh hon 800% - Tri Dao cua Together AI",
           "slug": "latent-space-podcast-7-26-23-summary-flashattention-2-making-transformers-800-fas",
           "authorName": "Prof. Otto Nomos",
@@ -2327,10 +2079,7 @@
         },
         {
           "id": "190259216",
-          "topics": [
-            "Tom tat",
-            "Ma nguon mo"
-          ],
+          "topics": ["Tom tat", "Ma nguon mo"],
           "title": "Podcast Khong gian tiem an 7/2/23 [Tom tat] Xu huong AI: mot tap crossover giua Khong gian tiem an va AI Thuc te!",
           "slug": "latent-space-podcast-7-2-23-summary-ai-trends-a-latent-space-x-practical-ai-cross",
           "authorName": "Prof. Otto Nomos",
@@ -2358,11 +2107,7 @@
         },
         {
           "id": "190260640",
-          "topics": [
-            "Tom tat",
-            "Ma nguon mo",
-            "Mo hinh ngon ngu lon"
-          ],
+          "topics": ["Tom tat", "Ma nguon mo", "Mo hinh ngon ngu lon"],
           "title": "Podcast Khong gian an 5/5/23 [Tom tat] - Khong co ho: AI dong nhan duoc cuoc goi thuc tinh tu Ma nguon mo — voi Simon Willison",
           "slug": "latent-space-podcast-5-5-23-summary-no-moat-closed-ai-gets-its-open-source-wakeup",
           "authorName": "Prof. Otto Nomos",
@@ -2463,10 +2208,7 @@
         },
         {
           "id": "190260577",
-          "topics": [
-            "Mo hinh ngon ngu lon",
-            "Mo hinh nho"
-          ],
+          "topics": ["Mo hinh ngon ngu lon", "Mo hinh nho"],
           "title": "Podcast Khong gian an 20/5/23 [Tom tat] - MPT-7B va Su khoi dau cua Boi canh=Vo cung — voi Jonathan Frankle va Abhinav Venigalla cua MosaicML",
           "slug": "latent-space-podcast-5-20-23-summary-mpt-7b-and-the-beginning-of-context-infinity",
           "authorName": "Prof. Otto Nomos",
@@ -2494,11 +2236,7 @@
         },
         {
           "id": "190629271",
-          "topics": [
-            "LLM",
-            "Mo hinh nho",
-            "Tom tat"
-          ],
+          "topics": ["LLM", "Mo hinh nho", "Tom tat"],
           "title": "Podcast Khong gian an 28/4/23 [Tom tat] - Lap ban do tuong lai cua cac Mo hinh *thuc su* Mo va Huan luyen Dolly voi gia 30 do - cung Mike Conover cua Databricks",
           "slug": "latent-space-podcast-4-28-23-summary-mapping-the-future-of-truly-open-models-and",
           "authorName": "Prof. Otto Nomos",
@@ -2532,12 +2270,7 @@
       "articles": [
         {
           "id": "190259111",
-          "topics": [
-            "Tom tat",
-            "Bien doi",
-            "Dao tao",
-            "Ma nguon mo"
-          ],
+          "topics": ["Tom tat", "Bien doi", "Dao tao", "Ma nguon mo"],
           "title": "Podcast Khong gian an 26/7/23 [Tom tat] FlashAttention 2: lam cho Transformers nhanh hon 800% - Tri Dao cua Together AI",
           "slug": "latent-space-podcast-7-26-23-summary-flashattention-2-making-transformers-800-fas",
           "authorName": "Prof. Otto Nomos",
@@ -2565,10 +2298,7 @@
         },
         {
           "id": "190258977",
-          "topics": [
-            "Tom tat",
-            "Bien ap"
-          ],
+          "topics": ["Tom tat", "Bien ap"],
           "title": "So do Bien ap: Huong dan toan dien ve Kien truc Mang nơ-ron Bien ap [Tom tat]",
           "slug": "the-transformer-blueprint-a-holistic-guide-to-the-transformer-neural-network-arch",
           "authorName": "Prof. Otto Nomos",
@@ -2602,11 +2332,7 @@
       "articles": [
         {
           "id": "190259294",
-          "topics": [
-            "Mo hinh ngon ngu lon",
-            "Cac chuc nang",
-            "Tom tat"
-          ],
+          "topics": ["Mo hinh ngon ngu lon", "Cac chuc nang", "Tom tat"],
           "title": "Podcast Khong gian an 14/6/23 [Tom tat] - Tap khan cap: API Chuc nang moi cua OpenAI, giam gia 75%, tang do dai ngu canh len 4 lan (voi Alex Volkov, Simon Willison, Riley Goodside, Joshua Lochner, Stefania Druga, Eric Elliott, Mayo Oshin va nhung nguoi khac)",
           "slug": "latent-space-podcast-6-14-23-summary-emergency-pod-openai-s-new-functions-api-75",
           "authorName": "Prof. Otto Nomos",
@@ -2640,11 +2366,7 @@
       "articles": [
         {
           "id": "190259333",
-          "topics": [
-            "LLM",
-            "Tom tat",
-            "UX"
-          ],
+          "topics": ["LLM", "Tom tat", "UX"],
           "title": "Podcast Khong gian tiem an 6/8/23 [Tom tat] - Tu RLHF den RLHB: Ly do cho viec Hoc tu Hanh vi cua Con nguoi - voi Jeffrey Wang va Joe Reeve cua Amplitude",
           "slug": "latent-space-podcast-6-8-23-summary-from-rlhf-to-rlhb-the-case-for-learning-from",
           "authorName": "Prof. Otto Nomos",
@@ -2672,11 +2394,7 @@
         },
         {
           "id": "190260528",
-          "topics": [
-            "Tom tat",
-            "LLM",
-            "UX"
-          ],
+          "topics": ["Tom tat", "LLM", "UX"],
           "title": "Podcast Khong gian an 6/1/23 [Tom tat] - Xay dung Scenius AI × UX — voi Linus Lee cua Notion AI",
           "slug": "latent-space-podcast-6-1-23-summary-building-the-ai-x-ux-scenius-with-linus-le",
           "authorName": "Prof. Otto Nomos",
@@ -2710,12 +2428,7 @@
       "articles": [
         {
           "id": "190260557",
-          "topics": [
-            "Tom tat",
-            "Ma",
-            "LLM",
-            "Tac nhan"
-          ],
+          "topics": ["Tom tat", "Ma", "LLM", "Tac nhan"],
           "title": "Podcast Khong gian an 25/5/23 [Tom tat] - Go loi Internet voi tac nhan AI - cung Itamar Friedman tu Codium AI va AutoGPT",
           "slug": "latent-space-podcast-5-25-23-summary-debugging-the-internet-with-ai-agents-with",
           "authorName": "Prof. Otto Nomos",
@@ -2743,12 +2456,7 @@
         },
         {
           "id": "190260606",
-          "topics": [
-            "LLM",
-            "Dao tao",
-            "Tac nhan",
-            "Da phuong thuc"
-          ],
+          "topics": ["LLM", "Dao tao", "Tac nhan", "Da phuong thuc"],
           "title": "Podcast Khong gian an 5/8/23 [Tom tat] - Gen Sang lap AI: Som bat dau, Xay dung nhanh va Tin tuong vao su vi dai — voi Sharif Shameem cua Lexica",
           "slug": "latent-space-podcast-5-8-23-summary-the-ai-founder-gene-being-early-building-fast",
           "authorName": "Prof. Otto Nomos",
@@ -2782,10 +2490,7 @@
       "articles": [
         {
           "id": "190260597",
-          "topics": [
-            "LLM",
-            "Du lieu co cau truc"
-          ],
+          "topics": ["LLM", "Du lieu co cau truc"],
           "title": "Podcast Khong gian an 15/5/23 [Tom tat] - Dam bao chat luong va cau truc trong dau ra LLM - voi Shreya Rajpal cua Guardrails AI",
           "slug": "latent-space-podcast-5-15-23-summary-guaranteed-quality-and-structure-in-llm-outp",
           "authorName": "Prof. Otto Nomos",
@@ -2819,12 +2524,7 @@
       "articles": [
         {
           "id": "190260606",
-          "topics": [
-            "LLM",
-            "Dao tao",
-            "Tac nhan",
-            "Da phuong thuc"
-          ],
+          "topics": ["LLM", "Dao tao", "Tac nhan", "Da phuong thuc"],
           "title": "Podcast Khong gian an 5/8/23 [Tom tat] - Gen Sang lap AI: Som bat dau, Xay dung nhanh va Tin tuong vao su vi dai — voi Sharif Shameem cua Lexica",
           "slug": "latent-space-podcast-5-8-23-summary-the-ai-founder-gene-being-early-building-fast",
           "authorName": "Prof. Otto Nomos",
@@ -2858,11 +2558,7 @@
       "articles": [
         {
           "id": "191164291",
-          "topics": [
-            "LLM",
-            "Doanh nghiep",
-            "Tom tat"
-          ],
+          "topics": ["LLM", "Doanh nghiep", "Tom tat"],
           "title": "Podcast Latent Space 21/4/23 [Tom tat] - Tim kiem ho tro AI cho Doanh nghiep — voi Deedy Das tu Glean",
           "slug": "latent-space-podcast-4-21-23-summary-ai-powered-search-for-the-enterprise-with",
           "authorName": "Prof. Otto Nomos",
@@ -2896,10 +2592,7 @@
       "articles": [
         {
           "id": "191165673",
-          "topics": [
-            "Tom tat",
-            "Thi giac"
-          ],
+          "topics": ["Tom tat", "Thi giac"],
           "title": "Podcast Khong gian an 13/4/23 [Tom tat] - Mo hinh Phan doan Bat ky va Nhung Van de Kho cua Thi giac May tinh — voi Joseph Nelson tu Roboflow",
           "slug": "latent-space-podcast-4-13-23-summary-segment-anything-model-and-the-hard-problems",
           "authorName": "Prof. Otto Nomos",
@@ -2933,11 +2626,7 @@
       "articles": [
         {
           "id": "191165920",
-          "topics": [
-            "Mo hinh ngon ngu lon",
-            "Tom tat",
-            "Danh gia"
-          ],
+          "topics": ["Mo hinh ngon ngu lon", "Tom tat", "Danh gia"],
           "title": "Podcast Khong gian an 4/6/23 [Tom tat] - Co so AI: Co ban ve tieu chuan danh gia",
           "slug": "latent-space-podcast-4-6-23-summary-ai-fundamentals-benchmarks-101",
           "authorName": "Prof. Otto Nomos",
@@ -2971,10 +2660,7 @@
       "articles": [
         {
           "id": "191301444",
-          "topics": [
-            "Tom tat",
-            "LLMOps"
-          ],
+          "topics": ["Tom tat", "LLMOps"],
           "title": "Podcast Khong gian an 4/6/23 [Tom tat] - Nghien cuu thuc te: Tu Google Brain den MLOps den LLMOps — voi Shreya Shankar cua UC Berkeley",
           "slug": "latent-space-podcast-4-6-23-summary-grounded-research-from-google-brain-to-mlops",
           "authorName": "Prof. Otto Nomos",
@@ -3008,11 +2694,7 @@
       "articles": [
         {
           "id": "191310297",
-          "topics": [
-            "Tom tat",
-            "Mo hinh ngon ngu lon",
-            "Cong cu"
-          ],
+          "topics": ["Tom tat", "Mo hinh ngon ngu lon", "Cong cu"],
           "title": "Podcast Khong gian an 23/3/23 [Tom tat] - Tap khan cap: Thoi diem App Store cua ChatGPT (voi Logan Kilpatrick cua OpenAI, Florent Crivello cua LindyAI va Nader Dabit)",
           "slug": "latent-space-podcast-3-23-23-summary-emergency-pod-chatgpt-s-app-store-moment-w-o",
           "authorName": "Prof. Otto Nomos",
@@ -3046,11 +2728,7 @@
       "articles": [
         {
           "id": "190259003",
-          "topics": [
-            "LLM",
-            "Tom tat",
-            "Cong nghiep"
-          ],
+          "topics": ["LLM", "Tom tat", "Cong nghiep"],
           "title": "McKinsey: Tiem nang kinh te cua AI tao sinh [Tom tat]",
           "slug": "mckinsey-the-economic-potential-of-generative-ai-eli5-summary",
           "authorName": "Prof. Otto Nomos",
@@ -3078,10 +2756,7 @@
         },
         {
           "id": "190258686",
-          "topics": [
-            "Bat dau",
-            "Nganh cong nghiep"
-          ],
+          "topics": ["Bat dau", "Nganh cong nghiep"],
           "title": "Trao quyen cho Tuong lai: Kham pha Suc manh cua Cac Mo hinh Ngon ngu Lon trong Cac Nganh Cong nghiep",
           "slug": "empowering-the-future-unfolding-the-power-of-large-language-models-across-industr",
           "authorName": "Prof. Otto Nomos",
@@ -3115,10 +2790,7 @@
       "articles": [
         {
           "id": "190258861",
-          "topics": [
-            "Bat dau",
-            "Ca nhan hoa"
-          ],
+          "topics": ["Bat dau", "Ca nhan hoa"],
           "title": "Mo hinh ngon ngu lon: Tao trai nghiem so ca nhan hoa",
           "slug": "large-language-models-crafting-personalized-digital-experiences",
           "authorName": "Prof. Otto Nomos",
@@ -3146,10 +2818,7 @@
         },
         {
           "id": "190258847",
-          "topics": [
-            "Bat dau",
-            "Tri tue nhan tao tong quat"
-          ],
+          "topics": ["Bat dau", "Tri tue nhan tao tong quat"],
           "title": "Nhung ga khong lo cua ngay mai: Tuong lai cua cac mo hinh ngon ngu lon va anh huong cua chung den thi truong lao dong va tri tue nhan tao tong quat",
           "slug": "tomorrow-s-titans-the-future-of-large-language-models-and-their-influence-on-the",
           "authorName": "Prof. Otto Nomos",
@@ -3177,10 +2846,7 @@
         },
         {
           "id": "190258836",
-          "topics": [
-            "Bat dau",
-            "Quyen rieng tu"
-          ],
+          "topics": ["Bat dau", "Quyen rieng tu"],
           "title": "Bao ve Lau dai: Kham pha LLM va Bien gioi cua Quyen rieng tu Du lieu",
           "slug": "securing-the-castle-exploring-llms-and-the-frontier-of-data-privacy",
           "authorName": "Prof. Otto Nomos",
@@ -3208,10 +2874,7 @@
         },
         {
           "id": "190258732",
-          "topics": [
-            "Bat dau",
-            "Phap ly"
-          ],
+          "topics": ["Bat dau", "Phap ly"],
           "title": "Sao chep? Mo hinh ngon ngu lon, ban quyen va tinh trang dao van",
           "slug": "copy-that-llms-copyright-and-the-plagiarism-predicament",
           "authorName": "Prof. Otto Nomos",
@@ -3239,10 +2902,7 @@
         },
         {
           "id": "190258686",
-          "topics": [
-            "Bat dau",
-            "Nganh cong nghiep"
-          ],
+          "topics": ["Bat dau", "Nganh cong nghiep"],
           "title": "Trao quyen cho Tuong lai: Kham pha Suc manh cua Cac Mo hinh Ngon ngu Lon trong Cac Nganh Cong nghiep",
           "slug": "empowering-the-future-unfolding-the-power-of-large-language-models-across-industr",
           "authorName": "Prof. Otto Nomos",
@@ -3270,10 +2930,7 @@
         },
         {
           "id": "190258672",
-          "topics": [
-            "Bat dau",
-            "Mo hinh ngon ngu lon"
-          ],
+          "topics": ["Bat dau", "Mo hinh ngon ngu lon"],
           "title": "Giai ma bi an cua AI: Tim hieu sau ve kien thuc va gioi han cua cac Mo hinh Ngon ngu Lon",
           "slug": "decoding-the-mysteries-of-ai-a-deep-dive-into-large-language-models-knowledge-and",
           "authorName": "Prof. Otto Nomos",
@@ -3301,10 +2958,7 @@
         },
         {
           "id": "190258658",
-          "topics": [
-            "Bat dau",
-            "Mo hinh ngon ngu lon"
-          ],
+          "topics": ["Bat dau", "Mo hinh ngon ngu lon"],
           "title": "Lam chu nghe thuat dao tao cac mo hinh ngon ngu lon: Mot huong dan toan dien",
           "slug": "mastering-the-art-of-training-large-language-models-a-comprehensive-guide",
           "authorName": "Prof. Otto Nomos",
@@ -3332,10 +2986,7 @@
         },
         {
           "id": "190258582",
-          "topics": [
-            "Bat dau",
-            "Mo hinh ngon ngu lon"
-          ],
+          "topics": ["Bat dau", "Mo hinh ngon ngu lon"],
           "title": "Giai ma LLM: Huong dan toi uu de hieu Mo hinh ngon ngu lon",
           "slug": "decoding-llms-your-ultimate-guide-to-understanding-large-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -3363,11 +3014,7 @@
         },
         {
           "id": "190258709",
-          "topics": [
-            "Bat dau",
-            "Su can chinh",
-            "An toan"
-          ],
+          "topics": ["Bat dau", "Su can chinh", "An toan"],
           "title": "Dieu huong qua me cung dao duc: Giai ma dao duc cua cac mo hinh ngon ngu lon",
           "slug": "navigating-the-moral-maze-unraveling-the-ethics-of-large-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -3395,10 +3042,7 @@
         },
         {
           "id": "190258905",
-          "topics": [
-            "Bat dau",
-            "Mo hinh ngon ngu lon"
-          ],
+          "topics": ["Bat dau", "Mo hinh ngon ngu lon"],
           "title": "Lam chu nghe thuat cua Mo hinh ngon ngu lon: Huong dan thuc te de trien khai cac Mo hinh ngon ngu lon",
           "slug": "mastering-the-art-of-llms-a-practical-guide-to-implementing-large-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -3426,9 +3070,7 @@
         },
         {
           "id": "190258562",
-          "topics": [
-            "Bat dau"
-          ],
+          "topics": ["Bat dau"],
           "title": "Lam chu AI: Gioi thieu toan dien ve Mo hinh Ngon ngu Lon (LLM)",
           "slug": "mastering-ai-a-comprehensive-introduction-to-large-language-models-llms",
           "authorName": "Prof. Otto Nomos",
@@ -3462,10 +3104,7 @@
       "articles": [
         {
           "id": "190258861",
-          "topics": [
-            "Bat dau",
-            "Ca nhan hoa"
-          ],
+          "topics": ["Bat dau", "Ca nhan hoa"],
           "title": "Mo hinh ngon ngu lon: Tao trai nghiem so ca nhan hoa",
           "slug": "large-language-models-crafting-personalized-digital-experiences",
           "authorName": "Prof. Otto Nomos",
@@ -3499,10 +3138,7 @@
       "articles": [
         {
           "id": "190258847",
-          "topics": [
-            "Bat dau",
-            "Tri tue nhan tao tong quat"
-          ],
+          "topics": ["Bat dau", "Tri tue nhan tao tong quat"],
           "title": "Nhung ga khong lo cua ngay mai: Tuong lai cua cac mo hinh ngon ngu lon va anh huong cua chung den thi truong lao dong va tri tue nhan tao tong quat",
           "slug": "tomorrow-s-titans-the-future-of-large-language-models-and-their-influence-on-the",
           "authorName": "Prof. Otto Nomos",
@@ -3536,10 +3172,7 @@
       "articles": [
         {
           "id": "190258836",
-          "topics": [
-            "Bat dau",
-            "Quyen rieng tu"
-          ],
+          "topics": ["Bat dau", "Quyen rieng tu"],
           "title": "Bao ve Lau dai: Kham pha LLM va Bien gioi cua Quyen rieng tu Du lieu",
           "slug": "securing-the-castle-exploring-llms-and-the-frontier-of-data-privacy",
           "authorName": "Prof. Otto Nomos",
@@ -3573,10 +3206,7 @@
       "articles": [
         {
           "id": "190258732",
-          "topics": [
-            "Bat dau",
-            "Phap ly"
-          ],
+          "topics": ["Bat dau", "Phap ly"],
           "title": "Sao chep? Mo hinh ngon ngu lon, ban quyen va tinh trang dao van",
           "slug": "copy-that-llms-copyright-and-the-plagiarism-predicament",
           "authorName": "Prof. Otto Nomos",
@@ -3610,11 +3240,7 @@
       "articles": [
         {
           "id": "190258709",
-          "topics": [
-            "Bat dau",
-            "Su can chinh",
-            "An toan"
-          ],
+          "topics": ["Bat dau", "Su can chinh", "An toan"],
           "title": "Dieu huong qua me cung dao duc: Giai ma dao duc cua cac mo hinh ngon ngu lon",
           "slug": "navigating-the-moral-maze-unraveling-the-ethics-of-large-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -3648,11 +3274,7 @@
       "articles": [
         {
           "id": "190258709",
-          "topics": [
-            "Bat dau",
-            "Su can chinh",
-            "An toan"
-          ],
+          "topics": ["Bat dau", "Su can chinh", "An toan"],
           "title": "Dieu huong qua me cung dao duc: Giai ma dao duc cua cac mo hinh ngon ngu lon",
           "slug": "navigating-the-moral-maze-unraveling-the-ethics-of-large-language-models",
           "authorName": "Prof. Otto Nomos",

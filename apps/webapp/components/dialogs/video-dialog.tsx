@@ -1,12 +1,12 @@
-import { LangProp } from '@/types/routing.type'
 import {
   Dialog,
   DialogContent,
   DialogDescription,
   DialogHeader,
   DialogTitle,
-  DialogTrigger
+  DialogTrigger,
 } from '@/components/ui/dialog'
+import type { LangProp } from '@/types/routing.type'
 
 export function VideoDialog({ video, trigger }: VideoDialogProps) {
   return (

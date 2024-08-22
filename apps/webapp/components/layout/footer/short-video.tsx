@@ -4,11 +4,11 @@ import {
   DialogDescription,
   DialogHeader,
   DialogTitle,
-  DialogTrigger
+  DialogTrigger,
 } from '@/components/ui/dialog'
-import { Card } from '../../ui/card'
-import { YouTubePlaylistItem } from '@/services/youtube/index'
+import type { YouTubePlaylistItem } from '@/services/youtube/index'
 import Image from 'next/image'
+import { Card } from '../../ui/card'
 
 export function ShortVideo({ video }: { video: YouTubePlaylistItem }) {
   return (
@@ -55,7 +55,7 @@ export function ShortVideo({ video }: { video: YouTubePlaylistItem }) {
 export function ShortVideoStrip({ videos }: { videos: YouTubePlaylistItem[] }) {
   return (
     <section className="flex items-center justify-start gap-10">
-      {videos.map(video => (
+      {videos.map((video) => (
         <ShortVideo key={video.id} video={video} />
       ))}
     </section>

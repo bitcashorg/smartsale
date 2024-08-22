@@ -6,19 +6,19 @@ import {
   TableCell,
   TableHead,
   TableHeader,
-  TableRow
+  TableRow,
 } from '@/components/ui/table'
-import { ProjectWithAuction } from '@/lib/projects'
+import type { ProjectWithAuction } from '@/lib/projects'
 import { cn } from '@/lib/utils'
 import { readContract, writeContract } from '@wagmi/core'
 import { erc20Abi } from 'abitype/abis'
-import { useEffect, useState } from 'react'
 import { TestnetEasyAuction, TestnetUSDCred } from 'app-contracts'
 import { toSmallestUnit } from 'app-lib'
-import { Address } from 'viem'
+import { useEffect, useState } from 'react'
+import toast from 'react-hot-toast'
+import type { Address } from 'viem'
 import { useAccount, useWriteContract } from 'wagmi'
 import { wagmiConfig } from '../../../layout/providers'
-import toast from 'react-hot-toast'
 
 const queueStartElement =
   '0x0000000000000000000000000000000000000000000000000000000000000001'
@@ -31,25 +31,25 @@ export function AuctionBids({ project }: AuctionBidsProps) {
       maxPrice: BigInt(0),
       bidAmount: BigInt(0),
       minBuyAmount: BigInt(0),
-      errorMessage: ''
-    })
+      errorMessage: '',
+    }),
   )
 
   const handleSubmit = async () => {
     if (!address) return
 
     // return if there's any error
-    const hasErrorMessage = bidInputs.some(item => item.errorMessage !== '')
+    const hasErrorMessage = bidInputs.some((item) => item.errorMessage !== '')
     if (hasErrorMessage) return
 
     // remove empty rows
     const bids = bidInputs.filter(
-      v => !(v.minBuyAmount <= 0 && v.bidAmount <= 0)
+      (v) => !(v.minBuyAmount <= 0 && v.bidAmount <= 0),
     )
 
     const test = {
       minBuyAmounts: [bids[0]?.minBuyAmount],
-      sellAmounts: [bids[0]?.bidAmount]
+      sellAmounts: [bids[0]?.bidAmount],
     }
 
     const { isBalanceSufficient, isAllowanceSufficient } =
@@ -57,7 +57,7 @@ export function AuctionBids({ project }: AuctionBidsProps) {
         account: address,
         spender: TestnetEasyAuction.address,
         amount: bids[0]?.bidAmount,
-        tokenAddress: TestnetUSDCred.address
+        tokenAddress: TestnetUSDCred.address,
       })
 
     if (!isBalanceSufficient) return toast.error('Insuficient USDCred Balance')
@@ -67,7 +67,7 @@ export function AuctionBids({ project }: AuctionBidsProps) {
         address: TestnetUSDCred.address,
         abi: erc20Abi,
         functionName: 'approve',
-        args: [TestnetEasyAuction.address, bids[0]?.bidAmount]
+        args: [TestnetEasyAuction.address, bids[0]?.bidAmount],
       })
     }
 
@@ -76,7 +76,7 @@ export function AuctionBids({ project }: AuctionBidsProps) {
       minBuyAmounts: test.minBuyAmounts, // uint96[] memory _minBuyAmounts 210,000000 MBOTSPL
       prevSellOrders: [], // bytes32[] memory _prevSellOrders,
       allowListCallData: '0x', // bytes calldata allowListCallData
-      sellAmounts: test.sellAmounts // uint96[] memory _sellAmounts bidding USDCred 200,000000 BidAmount
+      sellAmounts: test.sellAmounts, // uint96[] memory _sellAmounts bidding USDCred 200,000000 BidAmount
     }
     // console.log('place order', order)
 
@@ -89,8 +89,8 @@ export function AuctionBids({ project }: AuctionBidsProps) {
         order.minBuyAmounts,
         order.sellAmounts,
         [queueStartElement],
-        '0x'
-      ]
+        '0x',
+      ],
     })
   }
 
@@ -98,14 +98,14 @@ export function AuctionBids({ project }: AuctionBidsProps) {
   const handleInputChange = (
     index: number,
     name: keyof BidInput,
-    value: bigint
+    value: bigint,
   ) => {
     const newBidInputs = [...bidInputs]
     newBidInputs[index] = { ...newBidInputs[index], [name]: value }
     // calculate minBuyAmount and set error messages
     const { maxPrice, bidAmount: sellAmount } = newBidInputs[index]
 
-    let errorMessage =
+    const errorMessage =
       maxPrice <= 0
         ? 'Max price cannot be zero'
         : sellAmount <= 0
@@ -148,26 +148,26 @@ export function AuctionBids({ project }: AuctionBidsProps) {
             <TableRow key={index}>
               <TableCell
                 className={cn({
-                  'bg-accent/20': index % 2
+                  'bg-accent/20': index % 2,
                 })}
               >
                 <CurrencyInput
                   placeholder="0.00"
                   name={`maxPrice${index}`}
-                  handlechange={val =>
+                  handlechange={(val) =>
                     handleInputChange(index, 'maxPrice', val)
                   }
                 />
               </TableCell>
               <TableCell
                 className={cn({
-                  'bg-accent/20': index % 2
+                  'bg-accent/20': index % 2,
                 })}
               >
                 <CurrencyInput
                   placeholder="0.00"
                   name={`bidAmount${index}`}
-                  handlechange={val =>
+                  handlechange={(val) =>
                     handleInputChange(index, 'bidAmount', val)
                   }
                 />
@@ -180,7 +180,7 @@ export function AuctionBids({ project }: AuctionBidsProps) {
       <div className="flex flex-col justify-between gap-6 px-5 pb-5">
         <Button
           disabled={
-            !address || bidInputs.some(item => item.errorMessage !== '')
+            !address || bidInputs.some((item) => item.errorMessage !== '')
           }
           onClick={() => handleSubmit()}
           type="submit"
@@ -199,7 +199,7 @@ export function AuctionBids({ project }: AuctionBidsProps) {
                 </b>
               ) : (
                 txt
-              )
+              ),
             )}
           </p>
           <p className="flex w-full justify-between">
@@ -210,7 +210,7 @@ export function AuctionBids({ project }: AuctionBidsProps) {
                 </b>
               ) : (
                 txt
-              )
+              ),
             )}
           </p>
           <p className="mt-2 text-right text-sm">{textValues.maxTokenLimit}</p>
@@ -226,7 +226,7 @@ function CurrencyInput({ handlechange, ...props }: CurrencyInputProps) {
   const formatNumber = (num: number): string => {
     return num.toLocaleString('en-US', {
       minimumFractionDigits: 2,
-      maximumFractionDigits: 6
+      maximumFractionDigits: 6,
     })
   }
 
@@ -241,7 +241,7 @@ function CurrencyInput({ handlechange, ...props }: CurrencyInputProps) {
 
   const handleBlur = () => {
     if (value) {
-      const numberValue = parseFloat(value)
+      const numberValue = Number.parseFloat(value)
       setValue(formatNumber(numberValue)) // Format with commas and two decimal places
     } else {
       setValue('0.00') // Default to .00 when empty
@@ -293,7 +293,7 @@ const textValues = {
   currentAuctionPrice: 'Current Auction Price: $ --',
   currentBid: 'Current Bid: -- @ $ --',
   currentCost: 'Current Cost: $ --',
-  maxTokenLimit: '*Max Token Limit: -- ($ --)'
+  maxTokenLimit: '*Max Token Limit: -- ($ --)',
 }
 
 // Function to check balance and allowance
@@ -301,7 +301,7 @@ export async function checkBalanceAndAllowance({
   account,
   spender,
   amount,
-  tokenAddress
+  tokenAddress,
 }: {
   account: Address
   spender: Address
@@ -313,7 +313,7 @@ export async function checkBalanceAndAllowance({
     address: tokenAddress,
     abi: erc20Abi,
     functionName: 'balanceOf',
-    args: [account]
+    args: [account],
   })
   // console.log('USDCred balance', balance, amount, balance && balance >= amount)
 
@@ -322,7 +322,7 @@ export async function checkBalanceAndAllowance({
     address: tokenAddress,
     abi: erc20Abi,
     functionName: 'allowance',
-    args: [account, spender]
+    args: [account, spender],
   })
 
   const isBalanceSufficient = balance && balance >= amount

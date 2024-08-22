@@ -2,11 +2,7 @@
   "relatedBlogs": [
     {
       "id": "180563939",
-      "topics": [
-        "DAO",
-        "代币经济学",
-        "评论"
-      ],
+      "topics": ["DAO", "代币经济学", "评论"],
       "title": "区块链治理设计框架：Prysm Group轮盘 [评论]",
       "slug": "a-framework-for-blockchain-governance-design-the-prysm-group-wheel-commentary",
       "authorName": "Crypto Clairity",
@@ -25,11 +21,7 @@
     },
     {
       "id": "167184977",
-      "topics": [
-        "代币经济学",
-        "DAO",
-        "融资"
-      ],
+      "topics": ["代币经济学", "DAO", "融资"],
       "title": "革新股权模式：代币经济学如何颠覆创业世界",
       "slug": "revolutionizing-the-equity-model-how-tokenomics-is-disrupting-the-startup-world",
       "authorName": "Crypto Clairity",
@@ -48,10 +40,7 @@
     },
     {
       "id": "166981063",
-      "topics": [
-        "入门",
-        "DAO"
-      ],
+      "topics": ["入门", "DAO"],
       "title": "未来已来：去中心化自治组织（DAO）的崛起",
       "slug": "the-future-is-here-the-rise-of-decentralized-autonomous-organizations-daos",
       "authorName": "Crypto Clairity",
@@ -71,10 +60,7 @@
   ],
   "blogContent": {
     "id": "180563908",
-    "topics": [
-      "DAO",
-      "摘要"
-    ],
+    "topics": ["DAO", "摘要"],
     "title": "治理的目的是什么? [摘要]",
     "slug": "what-is-governance-for-summary",
     "authorName": "Crypto Clairity",
@@ -397,8 +383,5 @@
       }
     }
   },
-  "topics": [
-    "DAO",
-    "摘要"
-  ]
+  "topics": ["DAO", "摘要"]
 }

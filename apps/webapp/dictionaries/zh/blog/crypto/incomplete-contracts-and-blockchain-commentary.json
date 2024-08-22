@@ -2,11 +2,7 @@
   "relatedBlogs": [
     {
       "id": "180563939",
-      "topics": [
-        "DAO",
-        "代币经济学",
-        "评论"
-      ],
+      "topics": ["DAO", "代币经济学", "评论"],
       "title": "区块链治理设计框架：Prysm Group轮盘[评论]",
       "slug": "a-framework-for-blockchain-governance-design-the-prysm-group-wheel-commentary",
       "authorName": "Crypto Clairity",
@@ -25,10 +21,7 @@
     },
     {
       "id": "180217169",
-      "topics": [
-        "代币经济学",
-        "评论"
-      ],
+      "topics": ["代币经济学", "评论"],
       "title": "代币化激励经济学3：代币价值无法协调利益相关者[评论]",
       "slug": "economics-of-tokenized-incentives-3-token-value-won-t-align-stakeholders-commenta",
       "authorName": "Crypto Clairity",
@@ -47,10 +40,7 @@
     },
     {
       "id": "180217123",
-      "topics": [
-        "代币经济学",
-        "评论"
-      ],
+      "topics": ["代币经济学", "评论"],
       "title": "代币化激励经济学2：选择有效的性能指标[评论]",
       "slug": "economics-of-tokenized-incentives-2-selecting-effective-performance-metrics-comme",
       "authorName": "Crypto Clairity",
@@ -69,10 +59,7 @@
     },
     {
       "id": "180217082",
-      "topics": [
-        "代币经济学",
-        "评论"
-      ],
+      "topics": ["代币经济学", "评论"],
       "title": "代币化激励经济学1：按绩效付费简介[评论]",
       "slug": "economics-of-tokenized-incentives-1-intro-to-pay-for-performance",
       "authorName": "Crypto Clairity",
@@ -91,11 +78,7 @@
     },
     {
       "id": "180563918",
-      "topics": [
-        "代币经济学",
-        "评论",
-        "筹资"
-      ],
+      "topics": ["代币经济学", "评论", "筹资"],
       "title": "代币：投资工具还是交换媒介（不能两者兼顾）[评论]",
       "slug": "tokens-investment-vehicle-or-medium-of-exchange-not-both-commentary",
       "authorName": "Crypto Clairity",
@@ -114,11 +97,7 @@
     },
     {
       "id": "180563922",
-      "topics": [
-        "筹资",
-        "代币经济学",
-        "评论"
-      ],
+      "topics": ["筹资", "代币经济学", "评论"],
       "title": "ICO利用网络效应[评论]",
       "slug": "icos-leverage-network-effects-commentary",
       "authorName": "Crypto Clairity",
@@ -137,11 +116,7 @@
     },
     {
       "id": "180556595",
-      "topics": [
-        "筹资",
-        "代币经济学",
-        "评论"
-      ],
+      "topics": ["筹资", "代币经济学", "评论"],
       "title": "区块链效应：无市场力量成本的网络效应[评论]",
       "slug": "the-blockchain-effect-network-effects-without-market-power-costs-commentary",
       "authorName": "Crypto Clairity",
@@ -160,10 +135,7 @@
     },
     {
       "id": "180563931",
-      "topics": [
-        "代币经济学",
-        "评论"
-      ],
+      "topics": ["代币经济学", "评论"],
       "title": "区块链激励结构：它们是什么以及为什么重要[评论]",
       "slug": "blockchain-incentive-structures-what-they-are-and-why-they-matter-commentary",
       "authorName": "Crypto Clairity",
@@ -183,10 +155,7 @@
   ],
   "blogContent": {
     "id": "180556627",
-    "topics": [
-      "评论",
-      "智能合约"
-    ],
+    "topics": ["评论", "智能合约"],
     "title": "不完整合同与区块链 [评论]",
     "slug": "incomplete-contracts-and-blockchain-commentary",
     "authorName": "Crypto Clairity",
@@ -287,9 +256,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Improving Quality of Information"
                     },
                     {
@@ -312,9 +279,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Expanding Contingency Coverage"
                     },
                     {
@@ -328,7 +293,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Actionable Insight: Invest in predictive technologies like AI and machine learning to identify and manage possible contract contingencies better."
+                      "value": "Actionable Insight: Contribute in predictive technologies like AI and machine learning to identify and manage possible contract contingencies better."
                     }
                   ]
                 },
@@ -337,9 +302,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Coping with Incomplete Contracts"
                     },
                     {
@@ -362,9 +325,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Maximizing Enforceability"
                     },
                     {
@@ -421,8 +382,5 @@
       }
     }
   },
-  "topics": [
-    "评论",
-    "智能合约"
-  ]
+  "topics": ["评论", "智能合约"]
 }

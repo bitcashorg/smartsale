@@ -2,9 +2,7 @@
   "relatedBlogs": [
     {
       "id": "BEfgGhndSsCn5MBU89RO3A",
-      "topics": [
-        "launchpad"
-      ],
+      "topics": ["launchpad"],
       "title": "Empowering Innovation: Vision, Mission, and Strategic Goals of bitLauncher",
       "slug": "empowering-innovation-vision-mission-and-strategic-goals-of-bitcash-launchpad",
       "authorName": "Jun Dam",
@@ -31,12 +29,7 @@
     },
     {
       "id": "NZeB3i5XRzuELW2UWBDyRQ",
-      "topics": [
-        "research",
-        "dao",
-        "fundraising",
-        "launchpad"
-      ],
+      "topics": ["research", "dao", "fundraising", "launchpad"],
       "title": "Navigating the Convergence: A Comprehensive Market Analysis of AI and the Cryptocurrency Dynamic",
       "slug": "navigating-the-convergence-a-comprehensive-market-analysis-of-ai-and-cryptocurren",
       "authorName": "Jun Dam",
@@ -63,9 +56,7 @@
     },
     {
       "id": "MICfokr1TVuScAB4Qh9YGw",
-      "topics": [
-        "launchpad"
-      ],
+      "topics": ["launchpad"],
       "title": "Empowering Innovation: Tokenomics and Funding Strategy of bitcash",
       "slug": "empowering-innovation-tokenomics-and-funding-strategy-of-bitcash",
       "authorName": "Jun Dam",
@@ -92,9 +83,7 @@
     },
     {
       "id": "BSDdY8byQWipv749rApFRA",
-      "topics": [
-        "launchpad"
-      ],
+      "topics": ["launchpad"],
       "title": "Unlocking Potential: Use Cases and Applications of bitLauncher",
       "slug": "unlocking-potential-use-cases-and-applications-of-bitlauncher",
       "authorName": "Jun Dam",
@@ -102,7 +91,7 @@
         "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
       },
       "_publishedAt": "2024-03-14T05:26:22+00:00",
-      "description": "This section explores how bitLauncer revolutionizes AI startup funding and global market access, showcasing sustainable open-source models, strategic startup culture, and the global investor ecosystem through targeted use cases and the pioneering Masterbots.ai project.",
+      "description": "This section explores how bitLauncer revolutionizes AI startup funding and global market access, showcasing sustainable open-source models, strategic startup culture, and the global contributor ecosystem through targeted use cases and the pioneering Masterbots.ai project.",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1710393954-usecaseappsimg.webp"
       },
@@ -122,9 +111,7 @@
   ],
   "blogContent": {
     "id": "I4jShMnWRruvJgDbrucwDw",
-    "topics": [
-      "launchpad"
-    ],
+    "topics": ["launchpad"],
     "title": "The Technological Backbone of bitLauncher",
     "slug": "the-technological-backbone-of-bitcash-launchpad",
     "authorName": "Jun Dam",
@@ -232,9 +219,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Cryptocurrency Payment Wallet and P2P Crypto Onramp"
                             },
                             {
@@ -253,9 +238,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "WebAuthn Integration"
                             },
                             {
@@ -277,9 +260,7 @@
                     },
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "dBoard"
                     },
                     {
@@ -346,7 +327,5 @@
       }
     }
   },
-  "topics": [
-    "launchpad"
-  ]
+  "topics": ["launchpad"]
 }

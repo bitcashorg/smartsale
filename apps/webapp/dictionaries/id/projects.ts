@@ -1,4 +1,4 @@
-import { ProjectContent } from '@/lib/projects'
+import type { ProjectContent } from '@/lib/projects'
 
 export const projects: ProjectContent[] = [
   {
@@ -18,9 +18,9 @@ export const projects: ProjectContent[] = [
             'Standar Keamanan yang Ketat: Menerapkan kebijakan KYC/AML tingkat atas dan keamanan tingkat lanjut untuk perlindungan pengguna.',
             'Pemberdayaan Global: Berkomitmen untuk memberdayakan pengguna global melalui solusi teknologi transformatif.',
             'Meningkatkan Hubungan Manusia: Memprioritaskan interaksi manusia yang sesungguhnya dalam antisipasi masa depan yang didominasi AI.',
-            'Visi Ekonomi Digital Baru: Membayangkan ekonomi masa depan di mana teknologi dan prinsip etika melayani kesejahteraan global.'
-          ]
-        ]
+            'Visi Ekonomi Digital Baru: Membayangkan ekonomi masa depan di mana teknologi dan prinsip etika melayani kesejahteraan global.',
+          ],
+        ],
       },
       product: {
         title: 'Ikhtisar Produk',
@@ -35,10 +35,10 @@ export const projects: ProjectContent[] = [
             'Platform Manajemen DAO: Memperkenalkan dBoard untuk meningkatkan pengambilan keputusan dan tata kelola dalam struktur yang terdesentralisasi.',
             'Landasan Peluncuran Permulaan AI: bitlauncher membantu startup AI dengan penggalangan dana dan alat organisasi yang aman dan efisien.',
             'Standar Kepatuhan Tinggi: Menekankan kepatuhan terhadap peraturan yang kuat, termasuk kebijakan KYC dan AML, serta protokol keamanan tingkat lanjut.',
-            'Komunitas Terbuka: Mendorong lingkungan kolaboratif bagi pengguna, pengembang, dan investor untuk terlibat dan berkontribusi.',
-            'Visi Ekonomi Digital: Mengundang partisipasi global untuk membentuk ekonomi baru di mana teknologi meningkatkan kesejahteraan dan hubungan manusia.'
-          ]
-        ]
+            'Komunitas Terbuka: Mendorong lingkungan kolaboratif bagi pengguna, pengembang, dan contributor untuk terlibat dan berkontribusi.',
+            'Visi Ekonomi Digital: Mengundang partisipasi global untuk membentuk ekonomi baru di mana teknologi meningkatkan kesejahteraan dan hubungan manusia.',
+          ],
+        ],
       },
       problem: {
         title: 'Masalah',
@@ -53,9 +53,9 @@ export const projects: ProjectContent[] = [
             'Eksklusivitas dalam Inovasi: Teknologi mutakhir sebagian besar menguntungkan kelompok tertentu, menciptakan ketidakseimbangan dalam pemberdayaan teknologi.',
             'Defisiensi Integrasi: Tidak adanya platform komprehensif yang mengintegrasikan AI, blockchain, dan DeFi dengan cara yang ramah pengguna.',
             'Hambatan Adopsi: Sifat solusi blockchain yang mengintimidasi saat ini menghambat adopsi luas dan penggunaan praktis di arus utama.',
-            'Ketimpangan Ekonomi: Keuangan digital belum menjembatani kesenjangan antara masyarakat yang melek teknologi dan masyarakat umum, sehingga memperparah kesenjangan ekonomi.'
-          ]
-        ]
+            'Ketimpangan Ekonomi: Keuangan digital belum menjembatani kesenjangan antara masyarakat yang melek teknologi dan masyarakat umum, sehingga memperparah kesenjangan ekonomi.',
+          ],
+        ],
       },
       solution: {
         title: 'Larutan',
@@ -71,9 +71,9 @@ export const projects: ProjectContent[] = [
             'Demokratisasi Teknologi: Bertujuan untuk menjadikan teknologi canggih dapat diakses dan digunakan oleh semua orang, mendemokratisasi AI dan alat keuangan.',
             'Katalis untuk Perubahan: Bertindak sebagai landasan peluncuran aplikasi transformatif, mendorong pertumbuhan dan membina komunitas yang dinamis dan kreatif.',
             'Pendekatan yang Berpusat pada Manusia: Berfokus pada menjaga hubungan antarmanusia dan integritas di masa depan yang didominasi AI.',
-            'Redefinisi Ekonomi: Bitcash berupaya untuk membentuk kembali perekonomian global menjadi lebih inklusif, adil, dan mendukung potensi manusia.'
-          ]
-        ]
+            'Redefinisi Ekonomi: Bitcash berupaya untuk membentuk kembali perekonomian global menjadi lebih inklusif, adil, dan mendukung potensi manusia.',
+          ],
+        ],
       },
       businessModel: {
         title: 'Model bisnis',
@@ -89,12 +89,12 @@ export const projects: ProjectContent[] = [
             'Investasi dalam Penelitian dan Pengembangan: Terus meningkatkan teknologi dan layanan melalui penelitian dan pengembangan, mempertahankan keunggulan kompetitif.',
             'Prioritas Kepatuhan dan Keamanan: Mendedikasikan sumber daya untuk memastikan kepatuhan terhadap peraturan dan keamanan yang kuat, membangun kepercayaan dan umur panjang platform.',
             'Inisiatif Pendidikan: Berinvestasi dalam pendidikan pengguna dan keterlibatan komunitas, memberdayakan pengguna untuk memaksimalkan manfaat platform dan berkontribusi terhadap evolusinya.',
-            'Pemasaran Bertarget untuk Pertumbuhan Pengguna: Menggunakan pemasaran strategis untuk menarik basis pengguna yang beragam, mengungkap misteri blockchain dan AI untuk mendorong adopsi arus utama.'
+            'Pemasaran Bertarget untuk Pertumbuhan Pengguna: Menggunakan pemasaran strategis untuk menarik basis pengguna yang beragam, mengungkap misteri blockchain dan AI untuk mendorong adopsi arus utama.',
           ],
           [
-            "This business model represents Bitcash's commitment to a sustainable, equitable digital economy, leveraging community input and innovation for collective growth."
-          ]
-        ]
+            "This business model represents Bitcash's commitment to a sustainable, equitable digital economy, leveraging community input and innovation for collective growth.",
+          ],
+        ],
       },
       tokenomics: {
         title: 'Tokenomics',
@@ -110,10 +110,10 @@ export const projects: ProjectContent[] = [
             'Penilaian Token Transparan: Berfokus pada transparansi dan penciptaan nilai nyata dalam distribusi token, menghindari spekulasi untuk landasan ekonomi yang stabil.',
             'Partisipasi Tata Kelola: Memungkinkan pemegang token untuk terlibat dalam tata kelola, berkontribusi terhadap arah dan kebijakan platform, menekankan partisipasi demokratis.',
             'Kemampuan Beradaptasi Ekonomi: Mempertahankan strategi tokennomics yang fleksibel, responsif terhadap kebutuhan komunitas dan platform yang terus berkembang akan ekonomi digital yang seimbang.',
-            'Visi Kemakmuran Bersama: Bertujuan untuk membangun ekonomi global baru di mana token Bitcash mendukung sistem inovasi, partisipasi, dan manfaat bersama, melampaui hambatan ekonomi tradisional.'
-          ]
-        ]
-      }
-    }
-  }
+            'Visi Kemakmuran Bersama: Bertujuan untuk membangun ekonomi global baru di mana token Bitcash mendukung sistem inovasi, partisipasi, dan manfaat bersama, melampaui hambatan ekonomi tradisional.',
+          ],
+        ],
+      },
+    },
+  },
 ]

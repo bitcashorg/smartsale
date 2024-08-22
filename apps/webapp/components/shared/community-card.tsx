@@ -1,7 +1,7 @@
-import React, { Suspense } from 'react'
 import { cn } from '@/lib/utils'
+import { Suspense } from 'react'
 import { NestedLinkButton } from '../nextjs/nested-link'
-import { Avatar, AvatarImage, AvatarFallback } from '../ui/avatar'
+import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar'
 import { Button, buttonVariants } from '../ui/button'
 import { Card } from '../ui/card'
 import { IconDownRightArrow } from '../ui/icons'
@@ -23,9 +23,10 @@ export function CommunityCard() {
           <AvatarFallback>U3</AvatarFallback>
         </Avatar>
       </div>
-      <p className="flex items-center px-2 leading-tight text-black">
-        Join thousands of happy users
-      </p>
+      <b className="text-sm flex items-center px-2 leading-tight text-black whitespace-pre-line">
+        {`Join Our Community
+        of Contributors`}
+      </b>
       <Suspense
         fallback={
           <Button className="flex h-14 w-14">
@@ -37,9 +38,9 @@ export function CommunityCard() {
           link={'/en/bitcash-bitlauncher'}
           className={cn(
             buttonVariants({
-              variant: 'secondary'
+              variant: 'secondary',
             }),
-            'text-md group relative flex size-14 min-h-14 min-w-14 rounded-full bg-pink-500 !p-0 font-bold hover:bg-pink-500'
+            'text-md group relative flex size-14 min-h-14 min-w-14 rounded-full bg-pink-500 !p-0 font-bold hover:bg-pink-500',
           )}
           aria-label={`View`}
         >

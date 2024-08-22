@@ -1,31 +1,31 @@
-import { StaticImport } from 'next/dist/shared/lib/get-img-props'
+import { LazyImage } from '@/components/shared/lazy-image'
+import { Tag } from '@/components/shared/tag'
+import { Button } from '@/components/ui/button'
+import type { Lang } from '@/dictionaries/locales'
+import { readingTime } from '@/lib/blog'
+import { cn } from '@/lib/utils'
+import type { BlogArticleRecord } from '@/services/datocms'
 import { render as toPlainText } from 'datocms-structured-text-to-plain-text'
 import { isHeading, isParagraph } from 'datocms-structured-text-utils'
-import {
-  renderNodeRule,
-  StructuredText,
-  StructuredTextGraphQlResponse
-} from 'react-datocms'
-import { cn } from '@/lib/utils'
-import { BlogArticleRecord } from '@/services/datocms'
+import type { StaticImport } from 'next/dist/shared/lib/get-img-props'
 import Image from 'next/image'
-import { readingTime } from '@/lib/blog'
-import { Button } from '@/components/ui/button'
 import Link from 'next/link'
-import { ArticleCard } from '../../../shared/article-card'
-import { Lang } from '@/dictionaries/locales'
-import { ShareArticle } from './share-article'
 import { Suspense } from 'react'
-import { ArticleIndex } from './article-index'
+import {
+  StructuredText,
+  type StructuredTextGraphQlResponse,
+  renderNodeRule,
+} from 'react-datocms'
 import Balancer from 'react-wrap-balancer'
-import { Tag } from '@/components/shared/tag'
-import { LazyImage } from '@/components/shared/lazy-image'
+import { ArticleCard } from '../../../shared/article-card'
+import { ArticleIndex } from './article-index'
+import { ShareArticle } from './share-article'
 
 export function BlogPage({
   params,
   blogContent,
   relatedBlogs,
-  shortlink
+  shortlink,
 }: BlogPageProps) {
   const category = params.category
 
@@ -33,15 +33,13 @@ export function BlogPage({
   block = blogContent.contentBlock
     .map(({ mainContent }) => {
       return mainContent.value.document.children.filter(
-        ({ type, level }) => (type === 'heading' && level == 2) || level == 3
+        ({ type, level }) => (type === 'heading' && level == 2) || level == 3,
       )
     })
-    .filter(block => Boolean(block[0]))
+    .filter((block) => Boolean(block[0]))
 
   if (block[0].length > 1) {
-    const updatedBlock = block[0].map(function (item) {
-      return [item]
-    })
+    const updatedBlock = block[0].map((item) => [item])
     block = updatedBlock
   }
   // console.log(blogContent)
@@ -49,12 +47,12 @@ export function BlogPage({
     blogContent.title ||
     blogContent.slug
       ?.replace(/-/g, ' ')
-      .replace(/\b\w/g, l => l.toUpperCase()) ||
+      .replace(/\b\w/g, (l) => l.toUpperCase()) ||
     ''
 
   const headingTexts = block
-    ?.filter(filt => filt !== undefined)
-    .map(item => {
+    ?.filter((filt) => filt !== undefined)
+    .map((item) => {
       const children = (
         item[0] as unknown as {
           type: string
@@ -63,7 +61,7 @@ export function BlogPage({
         }
       ).children
 
-      let sentence = children.map(child => child.value).join(' ')
+      const sentence = children.map((child) => child.value).join(' ')
       const headingItem = { value: sentence }
       return {
         level: item[0].level,
@@ -73,7 +71,7 @@ export function BlogPage({
           .toLowerCase()
           .replace(/ /g, '-')
           .replace(/[^\w-]+/g, '')
-          .replace(/-$/, '')
+          .replace(/-$/, ''),
       }
     })
   return (
@@ -98,7 +96,7 @@ export function BlogPage({
               {new Date(blogContent._publishedAt).toLocaleDateString('en-US', {
                 month: 'short',
                 day: '2-digit',
-                year: 'numeric'
+                year: 'numeric',
               })}{' '}
               ∙ {readingTime(blogContent)} min read
             </span>
@@ -117,17 +115,17 @@ export function BlogPage({
                   // if (ind >= 2) return null
 
                   mainContent.value.document.children =
-                    mainContent.value.document.children.map(item => {
+                    mainContent.value.document.children.map((item) => {
                       if (item.type !== 'paragraph') return item
 
-                      const sanitizedChildren = item.children?.map(child => {
+                      const sanitizedChildren = item.children?.map((child) => {
                         if (child.type !== 'span') return child
                         if (typeof child.value === 'string') return child
 
                         if (Array.isArray(child.value)) {
                           return {
                             ...child,
-                            value: (child.value as string[]).join(' ')
+                            value: (child.value as string[]).join(' '),
                           }
                         }
                         return child
@@ -144,7 +142,7 @@ export function BlogPage({
                       {topImages.map(
                         (
                           image: { url: string | StaticImport; alt: string },
-                          index
+                          index,
                         ) => (
                           <div
                             className="relative order-1 my-10 mt-5 flex min-h-[600px] w-full justify-center overflow-hidden text-center align-middle md:order-3"
@@ -164,7 +162,7 @@ export function BlogPage({
                               className="flex self-center object-cover m-auto"
                             />
                           </div>
-                        )
+                        ),
                       )}
                       <div>
                         {/* { mainContent.value.document.children.values} */}
@@ -187,7 +185,7 @@ export function BlogPage({
                                   <HeadingTag
                                     className={cn(
                                       'my-5',
-                                      node.level === 1 ? 'heading' : 'heading2'
+                                      node.level === 1 ? 'heading' : 'heading2',
                                     )}
                                     key={key}
                                     id={anchor}
@@ -195,7 +193,7 @@ export function BlogPage({
                                     {children}
                                   </HeadingTag>
                                 )
-                              }
+                              },
                             ),
                             renderNodeRule(isParagraph, ({ children, key }) => {
                               return (
@@ -203,13 +201,13 @@ export function BlogPage({
                                   {children}
                                 </p>
                               )
-                            })
+                            }),
                           ]}
                         />
                       </div>
                     </div>
                   )
-                }
+                },
               )}
             </div>
 
@@ -238,17 +236,15 @@ export function BlogPage({
             </Link>
           </div>
           <ul className="grid-cols-auto-dense grid w-full grid-cols-[repeat(auto-fill,minmax(250px,1fr))] flex-col gap-20 py-5 sm:flex-wrap md:gap-5">
-            {relatedBlogs
-              ?.slice(0, 5)
-              .map(post => (
-                <ArticleCard
-                  post={post}
-                  sectionSlug={category}
-                  key={post.id}
-                  lang={params.lang}
-                  meta={true}
-                />
-              ))}
+            {relatedBlogs?.slice(0, 5).map((post) => (
+              <ArticleCard
+                post={post}
+                sectionSlug={category}
+                key={post.id}
+                lang={params.lang}
+                meta={true}
+              />
+            ))}
           </ul>
         </section>
       )}

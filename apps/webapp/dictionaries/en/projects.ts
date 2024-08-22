@@ -1,4 +1,4 @@
-import { ProjectContent } from '@/lib/projects'
+import type { ProjectContent } from '@/lib/projects'
 
 export const projects: ProjectContent[] = [
   {
@@ -18,9 +18,9 @@ export const projects: ProjectContent[] = [
             'Rigorous Security Standards: Implementing top-tier KYC/AML policies and advanced security for user protection.',
             'Global Empowerment: Committed to empowering global users through transformative technological solutions.',
             'Enhancing Human Connections: Prioritizing genuine human interaction in the anticipated AI-dominated future.',
-            'New Digital Economy Vision: Envisioning a future economy where technology and ethical principles serve global well-being.'
-          ]
-        ]
+            'New Digital Economy Vision: Envisioning a future economy where technology and ethical principles serve global well-being.',
+          ],
+        ],
       },
       product: {
         title: 'Product Overview',
@@ -35,10 +35,10 @@ export const projects: ProjectContent[] = [
             'DAO Management Platform: Introduces dBoard for enhanced decision-making and governance within decentralized structures.',
             'AI Startup Launchpad: bitlauncher assists AI startups with secure, efficient fundraising and organizational tools.',
             'High Compliance Standards: Emphasizes strong regulatory compliance, including KYC and AML policies, and advanced security protocols.',
-            'Open Community: Encourages a collaborative environment for users, developers, and investors to engage and contribute.',
-            'Digital Economy Vision: Invites global participation to shape a new economy where technology enhances human prosperity and connection.'
-          ]
-        ]
+            'Open Community: Encourages a collaborative environment for users, developers, and contributors to engage and contribute.',
+            'Digital Economy Vision: Invites global participation to shape a new economy where technology enhances human prosperity and connection.',
+          ],
+        ],
       },
       problem: {
         title: 'Problem',
@@ -53,9 +53,9 @@ export const projects: ProjectContent[] = [
             'Exclusivity in Innovation: Cutting - edge technologies largely benefit a select group, creating an imbalance in technological empowerment.',
             'Integration Deficiency: There is a notable absence of a comprehensive platform that integrates AI, blockchain, and DeFi in a user- friendly manner.',
             'Barriers to Adoption: The intimidating nature of current blockchain solutions hinders widespread adoption and practical use in the mainstream.',
-            'Economic Inequity: Digital finance has yet to bridge the gap between the tech- savvy and the general population, reinforcing economic disparities.'
-          ]
-        ]
+            'Economic Inequity: Digital finance has yet to bridge the gap between the tech- savvy and the general population, reinforcing economic disparities.',
+          ],
+        ],
       },
       solution: {
         title: 'Solution',
@@ -71,9 +71,9 @@ export const projects: ProjectContent[] = [
             'Technological Democratization: Aims to make advanced technology accessible and usable for everyone, democratizing AI and financial tools.',
             'Catalyst for Change: Acts as a launchpad for transformative applications, driving growth and fostering a dynamic, creative community.',
             'Human-Centric Approach: Focuses on maintaining human connections and integrity in an AI-dominated future.',
-            'Economic Redefinition: Bitcash strives to reshape the global economy to be more inclusive, equitable, and supportive of human potential.'
-          ]
-        ]
+            'Economic Redefinition: Bitcash strives to reshape the global economy to be more inclusive, equitable, and supportive of human potential.',
+          ],
+        ],
       },
       businessModel: {
         title: 'Business Model',
@@ -89,12 +89,12 @@ export const projects: ProjectContent[] = [
             'Investment in R&D: Continuously improves technology and services through research and development, maintaining a competitive edge.',
             'Compliance and Security Priority: Dedicates resources to ensure regulatory compliance and robust security, building trust and platform longevity.',
             'Educational Initiatives: Invests in user education and community engagement, empowering users to maximize platform benefits and contribute to its evolution.',
-            'Targeted Marketing for User Growth: Employs strategic marketing to attract a diverse user base, demystifying blockchain and AI to encourage mainstream adoption.'
+            'Targeted Marketing for User Growth: Employs strategic marketing to attract a diverse user base, demystifying blockchain and AI to encourage mainstream adoption.',
           ],
           [
-            "This business model represents Bitcash's commitment to a sustainable, equitable digital economy, leveraging community input and innovation for collective growth."
-          ]
-        ]
+            "This business model represents Bitcash's commitment to a sustainable, equitable digital economy, leveraging community input and innovation for collective growth.",
+          ],
+        ],
       },
       tokenomics: {
         title: 'Tokenomics',
@@ -110,10 +110,10 @@ export const projects: ProjectContent[] = [
             'Transparent Token Valuation: Focuses on transparency and real value creation in token distribution, avoiding speculation for stable economic foundations.',
             'Governance Participation: Allows token holders to engage in governance, contributing to the platform’s direction and policies, emphasizing democratic participation.',
             "Economic Adaptability: Maintains a flexible tokenomics strategy, responsive to the community and platform's evolving needs for a balanced digital economy.",
-            'Vision of Shared Prosperity: Aims to build a new global economy where Bitcash tokens underpin a system of innovation, participation, and shared benefits, transcending traditional economic barriers.'
-          ]
-        ]
-      }
-    }
-  }
+            'Vision of Shared Prosperity: Aims to build a new global economy where Bitcash tokens underpin a system of innovation, participation, and shared benefits, transcending traditional economic barriers.',
+          ],
+        ],
+      },
+    },
+  },
 ]

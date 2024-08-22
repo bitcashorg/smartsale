@@ -1,7 +1,7 @@
-import React from 'react'
-import { Metadata } from 'next'
-import { CommonPageProps } from '@/types/routing.type'
 import { getDictionary } from '@/dictionaries'
+import type { CommonPageProps } from '@/types/routing.type'
+import type { Metadata } from 'next'
+import React from 'react'
 
 export default async function ReferralSystemPage({ params }: CommonPageProps) {
   const dict = await getDictionary(params.lang)
@@ -15,5 +15,5 @@ export default async function ReferralSystemPage({ params }: CommonPageProps) {
 export const metadata: Metadata = {
   title: 'ReferralSystem | Bitlauncher',
   description:
-    'Be part of the intelligent future and join the Ai/Web3 revolution now!'
+    'Be part of the intelligent future and join the Ai/Web3 revolution now!',
 }

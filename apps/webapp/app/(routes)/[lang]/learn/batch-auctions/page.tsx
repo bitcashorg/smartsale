@@ -1,8 +1,8 @@
-import { getDictionary } from '@/dictionaries'
-import { CommonPageProps } from '@/types/routing.type'
-import { PageContent } from '@/components/shared/content'
-import { Metadata } from 'next'
 import { BgHeader } from '@/components/shared/bg-header'
+import { PageContent } from '@/components/shared/content'
+import { getDictionary } from '@/dictionaries'
+import type { CommonPageProps } from '@/types/routing.type'
+import type { Metadata } from 'next'
 
 export default async function AboutPage({ params }: CommonPageProps) {
   const dict = await getDictionary(params.lang)
@@ -28,5 +28,5 @@ export default async function AboutPage({ params }: CommonPageProps) {
 export const metadata: Metadata = {
   title: 'About | Bitlauncher',
   description:
-    'Be part of the intelligent future and join the Ai/Web3 revolution now!'
+    'Be part of the intelligent future and join the Ai/Web3 revolution now!',
 }

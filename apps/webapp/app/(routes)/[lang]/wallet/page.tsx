@@ -1,19 +1,18 @@
 import { DepositCard } from '@/components/routes/wallet/deposit-card'
 import { WithdrawCard } from '@/components/routes/wallet/withdraw-card'
-import { Metadata } from 'next'
+import type { Metadata } from 'next'
 
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
-  CardTitle
+  CardTitle,
 } from '@/components/ui/card'
 
-import { BalancesTable } from '@/components/routes/wallet/balances-table'
-import { WalletTabs } from '@/components/routes/wallet/tabs'
-import { OrderCard } from '@/components/routes/wallet/order-card'
+import ReferralDashboard from '@/components/_wip/referral-dashboard'
 import { PresaleTransactionsCard } from '@/components/routes/project/presale/presale-transactions-card'
+import { BalancesTable } from '@/components/routes/wallet/balances-table'
 
 export default function WalletPage() {
   return (
@@ -27,6 +26,8 @@ export default function WalletPage() {
           <WithdrawCard />
         </div>
       </div>
+
+      <ReferralDashboard />
 
       <PresaleTransactionsCard />
 
@@ -44,7 +45,7 @@ export default function WalletPage() {
 export const metadata: Metadata = {
   title: 'Wallet | Bitlauncher',
   description:
-    'Be part of the intelligent future and join the Ai/Web3 revolution now!'
+    'Be part of the intelligent future and join the Ai/Web3 revolution now!',
 }
 
 function BalancesCard() {

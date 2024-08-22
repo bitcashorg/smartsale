@@ -1,1 +1,1 @@
-export * from "./runtime.lib";
+export * from './runtime.lib'

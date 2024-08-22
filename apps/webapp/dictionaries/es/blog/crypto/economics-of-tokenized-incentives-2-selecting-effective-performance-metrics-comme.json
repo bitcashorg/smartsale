@@ -2,11 +2,7 @@
   "relatedBlogs": [
     {
       "id": "180563939",
-      "topics": [
-        "DAO",
-        "Tokenomia",
-        "Comentario"
-      ],
+      "topics": ["DAO", "Tokenomia", "Comentario"],
       "title": "Un Marco para el Diseno de Gobernanza Blockchain: La Rueda del Grupo Prysm [Comentario]",
       "slug": "a-framework-for-blockchain-governance-design-the-prysm-group-wheel-commentary",
       "authorName": "Crypto Clairity",
@@ -25,10 +21,7 @@
     },
     {
       "id": "180217169",
-      "topics": [
-        "Tokenomia",
-        "Comentario"
-      ],
+      "topics": ["Tokenomia", "Comentario"],
       "title": "Economia de Incentivos Tokenizados 3: El Valor del Token No Alineara a las Partes Interesadas [Comentario]",
       "slug": "economics-of-tokenized-incentives-3-token-value-won-t-align-stakeholders-commenta",
       "authorName": "Crypto Clairity",
@@ -47,10 +40,7 @@
     },
     {
       "id": "180217082",
-      "topics": [
-        "Tokenomia",
-        "Comentario"
-      ],
+      "topics": ["Tokenomia", "Comentario"],
       "title": "Economia de Incentivos Tokenizados 1: Introduccion al Pago por Rendimiento [Comentario]",
       "slug": "economics-of-tokenized-incentives-1-intro-to-pay-for-performance",
       "authorName": "Crypto Clairity",
@@ -69,11 +59,7 @@
     },
     {
       "id": "180563918",
-      "topics": [
-        "Tokenomia",
-        "Comentario",
-        "Recaudacion de fondos"
-      ],
+      "topics": ["Tokenomia", "Comentario", "Recaudacion de fondos"],
       "title": "Tokens: Vehiculo de Inversion o Medio de Intercambio (No Ambos) [Comentario]",
       "slug": "tokens-investment-vehicle-or-medium-of-exchange-not-both-commentary",
       "authorName": "Crypto Clairity",
@@ -92,11 +78,7 @@
     },
     {
       "id": "180563922",
-      "topics": [
-        "Recaudacion de fondos",
-        "Tokenomia",
-        "Comentario"
-      ],
+      "topics": ["Recaudacion de fondos", "Tokenomia", "Comentario"],
       "title": "Las ICOs Aprovechan los Efectos de Red [Comentario]",
       "slug": "icos-leverage-network-effects-commentary",
       "authorName": "Crypto Clairity",
@@ -115,11 +97,7 @@
     },
     {
       "id": "180556595",
-      "topics": [
-        "Recaudacion de fondos",
-        "Tokenomia",
-        "Comentario"
-      ],
+      "topics": ["Recaudacion de fondos", "Tokenomia", "Comentario"],
       "title": "El Efecto Blockchain: Efectos de Red sin Costos de Poder de Mercado [Comentario]",
       "slug": "the-blockchain-effect-network-effects-without-market-power-costs-commentary",
       "authorName": "Crypto Clairity",
@@ -138,10 +116,7 @@
     },
     {
       "id": "180563931",
-      "topics": [
-        "Tokenomia",
-        "Comentario"
-      ],
+      "topics": ["Tokenomia", "Comentario"],
       "title": "Estructuras de Incentivos Blockchain: Que son y por que importan [Comentario]",
       "slug": "blockchain-incentive-structures-what-they-are-and-why-they-matter-commentary",
       "authorName": "Crypto Clairity",
@@ -160,10 +135,7 @@
     },
     {
       "id": "167101094",
-      "topics": [
-        "Primeros pasos",
-        "Tokenomia"
-      ],
+      "topics": ["Primeros pasos", "Tokenomia"],
       "title": "Tokenomia 101: Desatando el Poder de la Criptomoneda!",
       "slug": "tokenomics-101-unleashing-the-power-of-cryptocurrency",
       "authorName": "Crypto Clairity",
@@ -183,10 +155,7 @@
   ],
   "blogContent": {
     "id": "180217123",
-    "topics": [
-      "Tokenomia",
-      "Comentario"
-    ],
+    "topics": ["Tokenomia", "Comentario"],
     "title": "Economia de Incentivos Tokenizados 2: Seleccion de Metricas de Rendimiento Efectivas [Comentario]",
     "slug": "economics-of-tokenized-incentives-2-selecting-effective-performance-metrics-comme",
     "authorName": "Crypto Clairity",
@@ -211,9 +180,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Original Link: "
                     },
                     {
@@ -222,9 +189,7 @@
                       "children": [
                         {
                           "type": "span",
-                          "marks": [
-                            "strong"
-                          ],
+                          "marks": ["strong"],
                           "value": "Economics of Tokenized Incentives 2: Selecting Effective Performance Metrics"
                         }
                       ]
@@ -236,9 +201,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Author: "
                     },
                     {
@@ -265,9 +228,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Summary"
                     }
                   ]
@@ -287,9 +248,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Commentary"
                     }
                   ]
@@ -309,9 +268,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Actionable Insights"
                     }
                   ]
@@ -328,9 +285,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Choose Metrics Carefully"
                             },
                             {
@@ -349,9 +304,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Consider Other Incentive Structures"
                             },
                             {
@@ -370,9 +323,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Monitor and Adjust"
                             },
                             {
@@ -391,9 +342,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Communicate Clearly"
                             },
                             {
@@ -436,8 +385,5 @@
       }
     }
   },
-  "topics": [
-    "Tokenomia",
-    "Comentario"
-  ]
+  "topics": ["Tokenomia", "Comentario"]
 }

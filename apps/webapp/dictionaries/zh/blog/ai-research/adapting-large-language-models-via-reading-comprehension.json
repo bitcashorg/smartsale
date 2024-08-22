@@ -2,13 +2,7 @@
   "relatedBlogs": [],
   "blogContent": {
     "id": "198277124",
-    "topics": [
-      "大型语言模型",
-      "金融",
-      "医疗保健",
-      "法律",
-      "提示工程"
-    ],
+    "topics": ["大型语言模型", "金融", "医疗保健", "法律", "提示工程"],
     "title": "通过阅读理解适应大型语言模型",
     "slug": "adapting-large-language-models-via-reading-comprehension",
     "authorName": "Prof. Otto Nomos",
@@ -174,9 +168,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Influence of Continued Pre-training"
                             },
                             {
@@ -195,9 +187,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Human-Inspired Learning"
                             },
                             {
@@ -216,9 +206,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Broad Applicability"
                             },
                             {
@@ -237,9 +225,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Competitive Performance"
                             },
                             {
@@ -258,9 +244,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Generalization Potential"
                             },
                             {
@@ -294,9 +278,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Efficient Domain Adaptation"
                             },
                             {
@@ -315,9 +297,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Resource Conservation"
                             },
                             {
@@ -336,9 +316,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Improved Reading Comprehension"
                             },
                             {
@@ -357,9 +335,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Wider Applicability"
                             },
                             {
@@ -393,9 +369,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Specificity vs. Generality Trade-off"
                             },
                             {
@@ -465,11 +439,5 @@
       }
     }
   },
-  "topics": [
-    "大型语言模型",
-    "金融",
-    "医疗保健",
-    "法律",
-    "提示工程"
-  ]
+  "topics": ["大型语言模型", "金融", "医疗保健", "法律", "提示工程"]
 }

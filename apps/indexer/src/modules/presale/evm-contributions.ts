@@ -1,12 +1,21 @@
-import { EVMTokenContractData, appContracts } from 'app-contracts'
-import { runPromisesInSeries } from '~/lib/utils'
-import { Address, Log, PublicClient, createPublicClient, http, parseAbiItem, stringify } from 'viem'
-import { TransferEvent } from '~/modules/auction/auction.type'
+import { type EVMTokenContractData, appContracts } from 'app-contracts'
+import {
+  http,
+  type Address,
+  type Log,
+  type PublicClient,
+  createPublicClient,
+  parseAbiItem,
+  stringify,
+} from 'viem'
 import { upsertTransfers } from '~/lib/supabase-client'
+import { runPromisesInSeries } from '~/lib/utils'
+import type { TransferEvent } from '~/modules/auction/auction.type'
 import { issuePresaleTokens } from './presale-issuer'
 
 const presaleWallet = '0xf7bb6BD787FFbA43539219560E3B8162Ba8EEF09'
-const tokens: EVMTokenContractData[] = appContracts.dev.tokens.evm && appContracts.prod.tokens.evm
+const tokens: EVMTokenContractData[] =
+  appContracts.dev.tokens.evm && appContracts.prod.tokens.evm
 
 export async function listenToEvmContributions() {
   console.log('subscribing to evm usdt transfers ...')
@@ -14,7 +23,9 @@ export async function listenToEvmContributions() {
 }
 
 async function listenToEvmTransfersFn(token: EVMTokenContractData) {
-  console.log(`listening usdt transfers for token ${token.symbol} on chain ${token.chain.name}`)
+  console.log(
+    `listening usdt transfers for token ${token.symbol} on chain ${token.chain.name}`,
+  )
   const client: PublicClient = createPublicClient({
     chain: token.chain,
     transport: http(),
@@ -56,7 +67,11 @@ async function listenToEvmTransfersFn(token: EVMTokenContractData) {
 
 // takes the generic logs and if the eventName matches one of the eventHandlers keys
 // it passes the log to corresponding hanlder function
-async function processLogs(logs: Log[], token: EVMTokenContractData, delay = 0) {
+async function processLogs(
+  logs: Log[],
+  token: EVMTokenContractData,
+  delay = 0,
+) {
   const actions = logs
     .map((log) => {
       const eventName = (log as any).eventName.toString()
@@ -76,7 +91,9 @@ async function processLogs(logs: Log[], token: EVMTokenContractData, delay = 0) 
   runPromisesInSeries(actions, delay)
 }
 
-const eventHandlers: { [key: string]: (log: any, token: EVMTokenContractData) => void } = {
+const eventHandlers: {
+  [key: string]: (log: any, token: EVMTokenContractData) => void
+} = {
   Transfer: handleTransfer,
 }
 

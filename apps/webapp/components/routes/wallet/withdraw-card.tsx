@@ -7,21 +7,21 @@ import {
   CardDescription,
   CardFooter,
   CardHeader,
-  CardTitle
+  CardTitle,
 } from '@/components/ui/card'
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
-  SelectValue
+  SelectValue,
 } from '@/components/ui/select'
-import { useState } from 'react'
+import { cn } from '@/lib/utils'
 import { TestnetUSDCred } from 'app-contracts'
+import { useState } from 'react'
 import { parseUnits } from 'viem'
 import { useAccount, useSwitchChain, useWriteContract } from 'wagmi'
 import { Input } from '../../ui/input'
-import { cn } from '@/lib/utils'
 
 export function WithdrawCard() {
   const { address } = useAccount()
@@ -38,7 +38,7 @@ export function WithdrawCard() {
       address: TestnetUSDCred.address,
       functionName: 'burn',
       args: [parseUnits(amount.toString(), TestnetUSDCred.decimals)],
-      chainId: TestnetUSDCred.chainId
+      chainId: TestnetUSDCred.chainId,
     })
   }
 
@@ -63,7 +63,7 @@ export function WithdrawCard() {
                   name="withdraw"
                   placeholder="0.00"
                   value={amount}
-                  onChange={e => setAmount(parseInt(e.target.value))}
+                  onChange={(e) => setAmount(Number.parseInt(e.target.value))}
                 />
               </span>
             </div>
@@ -90,9 +90,9 @@ export function WithdrawCard() {
           className={cn(
             buttonVariants({
               variant: 'outline',
-              radius: 'full'
+              radius: 'full',
             }),
-            'h-auto w-full whitespace-normal border border-solid border-accent-secondary bg-background px-10 py-2'
+            'h-auto w-full whitespace-normal border border-solid border-accent-secondary bg-background px-10 py-2',
           )}
           // disabled={!session?.account}
           onClick={withdraw}
@@ -108,8 +108,8 @@ export function WithdrawCard() {
 const coins = [
   {
     coin: 'USDCred',
-    nertwork: 'EOS EVM'
-  }
+    nertwork: 'EOS EVM',
+  },
   // {
   //   coin: 'EOS (gas)',
   //   nertwork: 'EOS EVM'

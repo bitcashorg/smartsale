@@ -25,22 +25,22 @@ import {
   LufgaSemiBoldItalic,
   LufgaThin,
   LufgaThinItalic,
-} from "@/assets/fonts/fonts"
+} from '@/assets/fonts/fonts'
 import Footer from '@/components/layout/footer/footer'
 import { Header } from '@/components/layout/header'
 import { Providers } from '@/components/layout/providers'
 import { getDictionary } from '@/dictionaries'
 import { locales } from '@/dictionaries/locales'
 import { cn } from '@/lib/utils'
-import { CommonPageParams } from '@/types/routing.type'
+import type { CommonPageParams } from '@/types/routing.type'
 import { GoogleAnalytics } from '@next/third-parties/google'
 import '@rainbow-me/rainbowkit/styles.css'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import type { Viewport } from 'next'
-import { Metadata } from 'next'
+import type { Metadata } from 'next'
 import dynamic from 'next/dynamic'
-import React from 'react'
+import type React from 'react'
 import { isMobile } from 'react-device-detect'
 import { Toaster } from 'react-hot-toast'
 import '../../globals.css'
@@ -49,14 +49,14 @@ export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
   maximumScale: 1,
-  userScalable: false
+  userScalable: false,
   // Also supported by less commonly used
   // interactiveWidget: 'resizes-visual',
 }
 
 export default async function RootLayout({
   children,
-  params
+  params,
 }: RootLayoutProps) {
   const dict = await getDictionary(params.lang)
   return (
@@ -80,7 +80,7 @@ export default async function RootLayout({
           <main
             className={cn(
               'flex w-full max-w-[100vw] flex-1 flex-col',
-              isMobile && 'overflow-hidden'
+              isMobile && 'overflow-hidden',
             )}
           >
             {children}
@@ -99,17 +99,17 @@ export default async function RootLayout({
 
 // generate static routes for a given set of locales,
 export async function generateStaticParams() {
-  return locales.map(lang => ({ lang }))
+  return locales.map((lang) => ({ lang }))
 }
 
 const DynamicSessionDialog = dynamic(
   () =>
     import('../../../components/layout/session/session-dialog').then(
-      mod => mod.SessionDialog
+      (mod) => mod.SessionDialog,
     ),
   {
-    ssr: false
-  }
+    ssr: false,
+  },
 )
 
 interface RootLayoutProps {
@@ -120,7 +120,7 @@ interface RootLayoutProps {
 export const metadata: Metadata = {
   title: {
     absolute: 'Bitlauncher',
-    template: '%s | Bitlauncher'
+    template: '%s | Bitlauncher',
   },
   description:
     'Be part of the intelligent future and join the Ai/Web3 revolution now!',
@@ -128,8 +128,8 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/',
     languages: {
-      'en-US': '/'
-    }
+      'en-US': '/',
+    },
   },
   openGraph: {
     type: 'website',
@@ -140,9 +140,9 @@ export const metadata: Metadata = {
     images: [
       {
         url: 'https://bitlauncher.ai/images/og-image.webp',
-        alt: 'bitlauncher'
-      }
-    ]
+        alt: 'bitlauncher',
+      },
+    ],
   },
   twitter: {
     creator: 'bitlauncher',
@@ -151,9 +151,9 @@ export const metadata: Metadata = {
     images: [
       {
         url: 'https://bitlauncher.ai/images/og-image.webp',
-        alt: 'bitlauncher'
-      }
-    ]
+        alt: 'bitlauncher',
+      },
+    ],
   },
   robots: 'index, search',
   keywords: [
@@ -170,6 +170,6 @@ export const metadata: Metadata = {
     'launch',
     'pad',
     'launching',
-    'launching'
-  ]
+    'launching',
+  ],
 }

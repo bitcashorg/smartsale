@@ -2,9 +2,7 @@
   "relatedBlogs": [],
   "blogContent": {
     "id": "H_DP7HFORBuw9rID5Jkhhw",
-    "topics": [
-      "how_to"
-    ],
+    "topics": ["how_to"],
     "title": "How to Register and KYC to Bitcash",
     "slug": "how-to-register-and-kyc-to-bitcash",
     "authorName": "Roberto \"Andler\" Lucas",
@@ -71,7 +69,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "If you are an investor and you want to participate in the pre-sale of our upcoming "
+                      "value": "If you are an contributor and you want to participate in the pre-sale of our upcoming "
                     },
                     {
                       "url": "https://bitlauncher.ai/bitcash-bitlauncher",
@@ -85,9 +83,7 @@
                       "children": [
                         {
                           "type": "span",
-                          "marks": [
-                            "strong"
-                          ],
+                          "marks": ["strong"],
                           "value": "BC token"
                         }
                       ]
@@ -124,9 +120,7 @@
                               "children": [
                                 {
                                   "type": "span",
-                                  "marks": [
-                                    "strong"
-                                  ],
+                                  "marks": ["strong"],
                                   "value": "bitlauncher.ai"
                                 }
                               ]
@@ -137,9 +131,7 @@
                             },
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Only 3 Steps Needed"
                             },
                             {
@@ -222,9 +214,7 @@
                     },
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "a"
                     },
                     {
@@ -233,9 +223,7 @@
                     },
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "z "
                     },
                     {
@@ -244,9 +232,7 @@
                     },
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "1 "
                     },
                     {
@@ -255,9 +241,7 @@
                     },
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "5"
                     },
                     {
@@ -266,9 +250,7 @@
                     },
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "up to 9"
                     },
                     {
@@ -277,9 +259,7 @@
                     },
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": ".bk "
                     },
                     {
@@ -378,9 +358,7 @@
                     },
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "referrer "
                     },
                     {
@@ -389,9 +367,7 @@
                     },
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": ".bk"
                     },
                     {
@@ -400,9 +376,7 @@
                     },
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "bank.bk "
                     },
                     {
@@ -485,9 +459,7 @@
                     },
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Device Name "
                     },
                     {
@@ -496,9 +468,7 @@
                     },
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Next button"
                     },
                     {
@@ -507,9 +477,7 @@
                     },
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "passkey "
                     },
                     {
@@ -518,9 +486,7 @@
                     },
                     {
                       "type": "span",
-                      "marks": [
-                        "code"
-                      ],
+                      "marks": ["code"],
                       "value": "WebAuthN "
                     },
                     {
@@ -541,9 +507,7 @@
                         },
                         {
                           "type": "span",
-                          "marks": [
-                            "strong"
-                          ],
+                          "marks": ["strong"],
                           "value": "Google"
                         },
                         {
@@ -552,9 +516,7 @@
                         },
                         {
                           "type": "span",
-                          "marks": [
-                            "strong"
-                          ],
+                          "marks": ["strong"],
                           "value": "Opera (Not Mini)"
                         },
                         {
@@ -563,9 +525,7 @@
                         },
                         {
                           "type": "span",
-                          "marks": [
-                            "strong"
-                          ],
+                          "marks": ["strong"],
                           "value": "Safari"
                         },
                         {
@@ -583,9 +543,7 @@
                         },
                         {
                           "type": "span",
-                          "marks": [
-                            "strong"
-                          ],
+                          "marks": ["strong"],
                           "value": "passkeys"
                         },
                         {
@@ -650,9 +608,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Full name:"
                             },
                             {
@@ -671,9 +627,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Identification Type and Number:"
                             },
                             {
@@ -682,9 +636,7 @@
                             },
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "National ID"
                             },
                             {
@@ -693,9 +645,7 @@
                             },
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": " Drivers License "
                             },
                             {
@@ -704,9 +654,7 @@
                             },
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Passport"
                             },
                             {
@@ -725,9 +673,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Country:"
                             },
                             {
@@ -736,9 +682,7 @@
                             },
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "identification origin"
                             },
                             {
@@ -757,9 +701,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Phone Number:"
                             },
                             {
@@ -778,9 +720,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Email Address:"
                             },
                             {
@@ -799,9 +739,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Photo ID:"
                             },
                             {
@@ -810,9 +748,7 @@
                             },
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "selfie photo"
                             },
                             {
@@ -821,9 +757,7 @@
                             },
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "close-up identification photo ID"
                             },
                             {
@@ -896,9 +830,7 @@
                     },
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Grant Permission "
                     },
                     {
@@ -907,9 +839,7 @@
                     },
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "localization "
                     },
                     {
@@ -918,9 +848,7 @@
                     },
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "camera"
                     },
                     {
@@ -978,9 +906,7 @@
                             },
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Photo is OK"
                             },
                             {
@@ -1003,9 +929,7 @@
                             },
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Take Selfie"
                             },
                             {
@@ -1028,9 +952,7 @@
                             },
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Selfie"
                             },
                             {
@@ -1039,9 +961,7 @@
                             },
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Photo is OK "
                             },
                             {
@@ -1050,9 +970,7 @@
                             },
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Continue "
                             },
                             {
@@ -1074,9 +992,7 @@
                     },
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Taking Selfie "
                     },
                     {
@@ -1134,9 +1050,7 @@
                         },
                         {
                           "type": "span",
-                          "marks": [
-                            "strong"
-                          ],
+                          "marks": ["strong"],
                           "value": "Card ID Photo "
                         },
                         {
@@ -1145,9 +1059,7 @@
                         },
                         {
                           "type": "span",
-                          "marks": [
-                            "strong"
-                          ],
+                          "marks": ["strong"],
                           "value": "Selfie"
                         },
                         {
@@ -1218,9 +1130,7 @@
                     },
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "success"
                     },
                     {
@@ -1239,9 +1149,7 @@
                       "children": [
                         {
                           "type": "span",
-                          "marks": [
-                            "strong"
-                          ],
+                          "marks": ["strong"],
                           "value": "Discord Community"
                         }
                       ]
@@ -1449,7 +1357,5 @@
       }
     }
   },
-  "topics": [
-    "how_to"
-  ]
+  "topics": ["how_to"]
 }

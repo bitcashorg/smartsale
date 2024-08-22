@@ -2,11 +2,7 @@
   "relatedBlogs": [
     {
       "id": "180563939",
-      "topics": [
-        "DAO",
-        "代币经济学",
-        "评论"
-      ],
+      "topics": ["DAO", "代币经济学", "评论"],
       "title": "区块链治理设计框架：Prysm Group轮盘[评论]",
       "slug": "a-framework-for-blockchain-governance-design-the-prysm-group-wheel-commentary",
       "authorName": "Crypto Clairity",
@@ -25,10 +21,7 @@
     },
     {
       "id": "180217169",
-      "topics": [
-        "代币经济学",
-        "评论"
-      ],
+      "topics": ["代币经济学", "评论"],
       "title": "代币化激励经济学3：代币价值无法协调利益相关者[评论]",
       "slug": "economics-of-tokenized-incentives-3-token-value-won-t-align-stakeholders-commenta",
       "authorName": "Crypto Clairity",
@@ -47,10 +40,7 @@
     },
     {
       "id": "180217123",
-      "topics": [
-        "代币经济学",
-        "评论"
-      ],
+      "topics": ["代币经济学", "评论"],
       "title": "代币化激励经济学2：选择有效的性能指标[评论]",
       "slug": "economics-of-tokenized-incentives-2-selecting-effective-performance-metrics-comme",
       "authorName": "Crypto Clairity",
@@ -69,10 +59,7 @@
     },
     {
       "id": "180217082",
-      "topics": [
-        "代币经济学",
-        "评论"
-      ],
+      "topics": ["代币经济学", "评论"],
       "title": "代币化激励经济学1：按绩效付费简介[评论]",
       "slug": "economics-of-tokenized-incentives-1-intro-to-pay-for-performance",
       "authorName": "Crypto Clairity",
@@ -91,10 +78,7 @@
     },
     {
       "id": "180556627",
-      "topics": [
-        "评论",
-        "智能合约"
-      ],
+      "topics": ["评论", "智能合约"],
       "title": "不完全合约和区块链[评论]",
       "slug": "incomplete-contracts-and-blockchain-commentary",
       "authorName": "Crypto Clairity",
@@ -113,11 +97,7 @@
     },
     {
       "id": "180563918",
-      "topics": [
-        "代币经济学",
-        "评论",
-        "筹资"
-      ],
+      "topics": ["代币经济学", "评论", "筹资"],
       "title": "代币：投资工具还是交换媒介（不能兼而有之）[评论]",
       "slug": "tokens-investment-vehicle-or-medium-of-exchange-not-both-commentary",
       "authorName": "Crypto Clairity",
@@ -136,11 +116,7 @@
     },
     {
       "id": "180563922",
-      "topics": [
-        "筹资",
-        "代币经济学",
-        "评论"
-      ],
+      "topics": ["筹资", "代币经济学", "评论"],
       "title": "ICO利用网络效应[评论]",
       "slug": "icos-leverage-network-effects-commentary",
       "authorName": "Crypto Clairity",
@@ -159,11 +135,7 @@
     },
     {
       "id": "179948652",
-      "topics": [
-        "代币经济学",
-        "行业",
-        "摘要"
-      ],
+      "topics": ["代币经济学", "行业", "摘要"],
       "title": "数字创新和收入模式[摘要]",
       "slug": "digital-innovation-and-revenue-models-summary",
       "authorName": "Crypto Clairity",
@@ -182,11 +154,7 @@
     },
     {
       "id": "180556595",
-      "topics": [
-        "筹资",
-        "代币经济学",
-        "评论"
-      ],
+      "topics": ["筹资", "代币经济学", "评论"],
       "title": "区块链效应：无市场力量成本的网络效应[评论]",
       "slug": "the-blockchain-effect-network-effects-without-market-power-costs-commentary",
       "authorName": "Crypto Clairity",
@@ -206,10 +174,7 @@
   ],
   "blogContent": {
     "id": "180563931",
-    "topics": [
-      "代币经济学",
-      "评论"
-    ],
+    "topics": ["代币经济学", "评论"],
     "title": "区块链激励结构：它们是什么以及为什么重要 [评论]",
     "slug": "blockchain-incentive-structures-what-they-are-and-why-they-matter-commentary",
     "authorName": "Crypto Clairity",
@@ -358,9 +323,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Incentive Design:"
                             },
                             {
@@ -379,9 +342,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Influence Behavior:"
                             },
                             {
@@ -400,9 +361,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Understand the Costs and Benefits:"
                             },
                             {
@@ -421,9 +380,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Economic Design:"
                             },
                             {
@@ -442,9 +399,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Continuous Learning:"
                             },
                             {
@@ -496,8 +451,5 @@
       }
     }
   },
-  "topics": [
-    "代币经济学",
-    "评论"
-  ]
+  "topics": ["代币经济学", "评论"]
 }

@@ -1,8 +1,8 @@
 import { TestnetUSDCred } from 'app-contracts'
 import { eosEvmTestnet } from 'app-env'
 import { createWalletClient } from 'viem'
-import { appenv } from '~/config'
-import { Address, http } from 'viem'
+import { http, type Address } from 'viem'
+import { appConfig } from '~/config'
 
 export async function issueTokens(to: Address, amount: bigint) {
   console.log('issueTokens', {
@@ -13,8 +13,8 @@ export async function issueTokens(to: Address, amount: bigint) {
     const walletClient = createWalletClient({
       chain: eosEvmTestnet,
       transport: http(),
-      key: appenv.evm.issuerKey,
-      account: appenv.evm.issuerAccount,
+      key: appConfig.evm.issuerKey,
+      account: appConfig.evm.issuerAccount,
     })
     return walletClient.writeContract({
       address: TestnetUSDCred.address,

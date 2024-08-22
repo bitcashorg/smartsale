@@ -1,4 +1,4 @@
-import { Address, Log } from 'viem'
+import type { Address, Log } from 'viem'
 
 export interface AuctionClearedEvent extends Log {
   eventName: 'AuctionCleared'

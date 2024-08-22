@@ -2,27 +2,27 @@
 
 import { APIClient, Asset, Name } from '@wharfkit/antelope'
 import {
-  AbiProvider,
+  type AbiProvider,
   SigningRequest,
-  SigningRequestCreateArguments,
-  SigningRequestEncodingOptions
+  type SigningRequestCreateArguments,
+  type SigningRequestEncodingOptions,
 } from 'eosio-signing-request'
 import pako from 'pako'
-import { appConfig } from './config'
 import { v4 as uuidv4 } from 'uuid'
+import { appConfig } from './config'
 
 const eos = new APIClient({
-  url: appConfig.eosRpc
+  url: appConfig.eosRpc,
 })
 
 export const esrOptions: SigningRequestEncodingOptions = {
   abiProvider: {
-    getAbi: async account => {
+    getAbi: async (account) => {
       const response = await eos.v1.chain.get_abi(account.toString())
       return response.abi
-    }
+    },
   } as AbiProvider,
-  zlib: pako
+  zlib: pako,
 }
 
 export async function genLoginSigningRequest(uuid: string = uuidv4()) {
@@ -32,13 +32,13 @@ export async function genLoginSigningRequest(uuid: string = uuidv4()) {
       name: 'login',
       authorization,
       data: {
-        account: '............1'
-      }
+        account: '............1',
+      },
     },
     info: {
       uuid,
-      appName: 'Bitlauncher'
-    }
+      appName: 'Bitlauncher',
+    },
   })
   console.log('esr', JSON.stringify((await req).data.toJSON()))
 
@@ -47,7 +47,7 @@ export async function genLoginSigningRequest(uuid: string = uuidv4()) {
 
 export async function genBitusdDepositSigningRequest(
   amount: number,
-  address: string
+  address: string,
 ) {
   const req = createSignatureRequest({
     action: {
@@ -60,20 +60,20 @@ export async function genBitusdDepositSigningRequest(
         memo: `pair_id:1 address:${address}`,
         quantity: {
           quantity: Asset.from(amount, '6,BITUSD'),
-          contract: appConfig.bitcash.bank
-        }
-      }
-    }
+          contract: appConfig.bitcash.bank,
+        },
+      },
+    },
   })
   return req
 }
 
 export async function genUsdtDepositSigningRequest(
   amount: number,
-  address: string
+  address: string,
 ) {
   const account = appConfig.stables.find(
-    c => c.chainType === 'antelope' && c.symbol === 'USDT'
+    (c) => c.chainType === 'antelope' && c.symbol === 'USDT',
   )?.address
   if (!account) throw new Error('usdt account not found')
 
@@ -86,17 +86,17 @@ export async function genUsdtDepositSigningRequest(
         from: '............1',
         to: appConfig.smartsale.bk,
         memo: `address:${address}`,
-        quantity: Asset.from(amount, '4,USDT')
-      }
+        quantity: Asset.from(amount, '4,USDT'),
+      },
     },
     info: {
       uuid: uuidv4(),
       appName: 'Bitlauncher',
       edit: {
         memo: false,
-        quantity: false
-      }
-    }
+        quantity: false,
+      },
+    },
   })
   return req
 }
@@ -104,9 +104,9 @@ export async function genUsdtDepositSigningRequest(
 async function createSignatureRequest({
   info = {
     uuid: uuidv4(),
-    appName: 'Bitlauncher'
+    appName: 'Bitlauncher',
   },
-  action
+  action,
 }: Pick<SigningRequestCreateArguments, 'info' | 'action'>) {
   return SigningRequest.create(
     {
@@ -114,25 +114,25 @@ async function createSignatureRequest({
       info,
       callback: {
         url: appConfig.esrCallbackUrl,
-        background: true
-      }
+        background: true,
+      },
     },
-    esrOptions
+    esrOptions,
   )
 }
 
 const authorization = [
   {
     actor: '............1',
-    permission: '............2'
-  }
+    permission: '............2',
+  },
 ]
 
 export async function getEosBalance(account: string) {
   const response = await eos.v1.chain.get_currency_balance(
     'eosio.token',
     account,
-    'EOS'
+    'EOS',
   )
   return response[0]?.value.toString() || '0'
 }
@@ -141,12 +141,12 @@ export async function getBitUsdBalance(account: string) {
   const response = await eos.v1.chain.get_table_rows({
     code: appConfig.bitcash.bank,
     table: 'stablev2',
-    scope: Name.from(account)
+    scope: Name.from(account),
   })
 
   return (
     response.rows
-      .find(row => row.balance.quantity.includes('BITUSD'))
+      .find((row) => row.balance.quantity.includes('BITUSD'))
       ?.balance.quantity.replace('BITUSD', '') || 'O'
   )
 }

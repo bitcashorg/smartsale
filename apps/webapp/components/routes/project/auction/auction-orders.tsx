@@ -5,15 +5,15 @@ import {
   TableCell,
   TableHead,
   TableHeader,
-  TableRow
+  TableRow,
 } from '@/components/ui/table'
 import { useSupabaseClient } from '@/services/supabase'
+import { TestnetEasyAuction } from 'app-contracts'
+import { formatAddress } from 'app-lib'
 import BN from 'bn.js'
 import { format } from 'date-fns'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
-import { TestnetEasyAuction } from 'app-contracts'
-import { formatAddress } from 'app-lib'
 import { useAccount, useReadContract } from 'wagmi'
 
 export function AuctionOrders() {
@@ -25,8 +25,8 @@ export function AuctionOrders() {
     functionName: 'getUserId',
     args: [address],
     query: {
-      enabled: !!address
-    }
+      enabled: !!address,
+    },
   })
 
   useEffect(() => {
@@ -51,7 +51,7 @@ export function AuctionOrders() {
       .on(
         'postgres_changes',
         { event: 'INSERT', schema: 'public', table: 'orders' },
-        payload => {
+        (payload) => {
           // Check if the inserted order's user_id matches the desired userId
           const isSameUserId =
             BigInt(payload.new.user_id) === BigInt(String(userId.data) || 0)
@@ -62,11 +62,11 @@ export function AuctionOrders() {
           //   isSameUserId
           // )
           if (!isSameUserId) return
-          setOrders(orders => {
+          setOrders((orders) => {
             // console.log('setOrders', payload.new, orders[0])
             return [payload.new, ...orders]
           })
-        }
+        },
       )
       .subscribe()
     // console.log('subscribed to supabase...')

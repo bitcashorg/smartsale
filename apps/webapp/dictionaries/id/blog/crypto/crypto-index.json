@@ -6,11 +6,7 @@
       "articles": [
         {
           "id": "180563939",
-          "topics": [
-            "DAO",
-            "Tokenomics",
-            "Komentar"
-          ],
+          "topics": ["DAO", "Tokenomics", "Komentar"],
           "title": "Kerangka untuk Desain Tata Kelola Blockchain: Roda Grup Prysm [Komentar]",
           "slug": "a-framework-for-blockchain-governance-design-the-prysm-group-wheel-commentary",
           "authorName": "Crypto Clairity",
@@ -38,10 +34,7 @@
         },
         {
           "id": "180563903",
-          "topics": [
-            "DAO",
-            "Ringkasan"
-          ],
+          "topics": ["DAO", "Ringkasan"],
           "title": "Apa Itu Voting? [Ringkasan]",
           "slug": "what-is-voting-for-summary",
           "authorName": "Crypto Clairity",
@@ -69,10 +62,7 @@
         },
         {
           "id": "180563908",
-          "topics": [
-            "DAO",
-            "Ringkasan"
-          ],
+          "topics": ["DAO", "Ringkasan"],
           "title": "Untuk Apa Tata Kelola? [Ringkasan]",
           "slug": "what-is-governance-for-summary",
           "authorName": "Crypto Clairity",
@@ -100,11 +90,7 @@
         },
         {
           "id": "167184977",
-          "topics": [
-            "Tokenomics",
-            "DAO",
-            "Fundraising"
-          ],
+          "topics": ["Tokenomics", "DAO", "Fundraising"],
           "title": "Revolutionizing the Equity Model: How Tokenomics is Disrupting the Startup World",
           "slug": "revolutionizing-the-equity-model-how-tokenomics-is-disrupting-the-startup-world",
           "authorName": "Crypto Clairity",
@@ -132,10 +118,7 @@
         },
         {
           "id": "166984334",
-          "topics": [
-            "DAO",
-            "Legal"
-          ],
+          "topics": ["DAO", "Legal"],
           "title": "Decentralized Autonomous Organizations (DAOs): Basic Legal Structures for Business and Non-Profit Purposes",
           "slug": "decentralized-autonomous-organizations-daos-basic-legal-structures-for-business-a",
           "authorName": "Crypto Clairity",
@@ -163,10 +146,7 @@
         },
         {
           "id": "166981063",
-          "topics": [
-            "Getting Started",
-            "DAO"
-          ],
+          "topics": ["Getting Started", "DAO"],
           "title": "The Future is Here: The Rise of Decentralized Autonomous Organizations (DAOs)",
           "slug": "the-future-is-here-the-rise-of-decentralized-autonomous-organizations-daos",
           "authorName": "Crypto Clairity",
@@ -194,11 +174,7 @@
       "articles": [
         {
           "id": "180563939",
-          "topics": [
-            "DAO",
-            "Tokenomika",
-            "Komentar"
-          ],
+          "topics": ["DAO", "Tokenomika", "Komentar"],
           "title": "Kerangka untuk Desain Tata Kelola Blockchain: Roda Prysm Group [Komentar]",
           "slug": "a-framework-for-blockchain-governance-design-the-prysm-group-wheel-commentary",
           "authorName": "Crypto Clairity",
@@ -226,10 +202,7 @@
         },
         {
           "id": "180217169",
-          "topics": [
-            "Tokenomi",
-            "Komentar"
-          ],
+          "topics": ["Tokenomi", "Komentar"],
           "title": "Ekonomi Insentif Bertoken 3: Nilai Token Tidak Akan Menyatukan Pemangku Kepentingan [Komentar]",
           "slug": "economics-of-tokenized-incentives-3-token-value-won-t-align-stakeholders-commenta",
           "authorName": "Crypto Clairity",
@@ -257,10 +230,7 @@
         },
         {
           "id": "180217123",
-          "topics": [
-            "Tokenomi",
-            "Komentar"
-          ],
+          "topics": ["Tokenomi", "Komentar"],
           "title": "Ekonomi Insentif Bertoken 2: Memilih Metrik Kinerja yang Efektif [Komentar]",
           "slug": "economics-of-tokenized-incentives-2-selecting-effective-performance-metrics-comme",
           "authorName": "Crypto Clairity",
@@ -288,10 +258,7 @@
         },
         {
           "id": "180217082",
-          "topics": [
-            "Tokenomics",
-            "Commentary"
-          ],
+          "topics": ["Tokenomics", "Commentary"],
           "title": "Economics of Tokenized Incentives 1: Intro to Pay for Performance [Commentary]",
           "slug": "economics-of-tokenized-incentives-1-intro-to-pay-for-performance",
           "authorName": "Crypto Clairity",
@@ -319,11 +286,7 @@
         },
         {
           "id": "180563918",
-          "topics": [
-            "Tokenomics",
-            "Commentary",
-            "Fundraising"
-          ],
+          "topics": ["Tokenomics", "Commentary", "Fundraising"],
           "title": "Tokens: Investment Vehicle or Medium of Exchange (Not Both) [Commentary]",
           "slug": "tokens-investment-vehicle-or-medium-of-exchange-not-both-commentary",
           "authorName": "Crypto Clairity",
@@ -351,11 +314,7 @@
         },
         {
           "id": "180563922",
-          "topics": [
-            "Fundraising",
-            "Tokenomics",
-            "Commentary"
-          ],
+          "topics": ["Fundraising", "Tokenomics", "Commentary"],
           "title": "ICOs Leverage Network Effects [Commentary]",
           "slug": "icos-leverage-network-effects-commentary",
           "authorName": "Crypto Clairity",
@@ -383,11 +342,7 @@
         },
         {
           "id": "179948652",
-          "topics": [
-            "Tokenomics",
-            "Industry",
-            "Summary"
-          ],
+          "topics": ["Tokenomics", "Industry", "Summary"],
           "title": "Digital Innovation and Revenue Models [Summary]",
           "slug": "digital-innovation-and-revenue-models-summary",
           "authorName": "Crypto Clairity",
@@ -415,11 +370,7 @@
         },
         {
           "id": "180556595",
-          "topics": [
-            "Fundraising",
-            "Tokenomics",
-            "Commentary"
-          ],
+          "topics": ["Fundraising", "Tokenomics", "Commentary"],
           "title": "The Blockchain Effect: Network Effects without Market Power Costs [Commentary]",
           "slug": "the-blockchain-effect-network-effects-without-market-power-costs-commentary",
           "authorName": "Crypto Clairity",
@@ -447,10 +398,7 @@
         },
         {
           "id": "180563931",
-          "topics": [
-            "Tokenomics",
-            "Commentary"
-          ],
+          "topics": ["Tokenomics", "Commentary"],
           "title": "Blockchain Incentive Structures: What they are and why they matter [Commentary]",
           "slug": "blockchain-incentive-structures-what-they-are-and-why-they-matter-commentary",
           "authorName": "Crypto Clairity",
@@ -478,11 +426,7 @@
         },
         {
           "id": "167184977",
-          "topics": [
-            "Tokenomics",
-            "DAO",
-            "Fundraising"
-          ],
+          "topics": ["Tokenomics", "DAO", "Fundraising"],
           "title": "Revolutionizing the Equity Model: How Tokenomics is Disrupting the Startup World",
           "slug": "revolutionizing-the-equity-model-how-tokenomics-is-disrupting-the-startup-world",
           "authorName": "Crypto Clairity",
@@ -510,10 +454,7 @@
         },
         {
           "id": "167101094",
-          "topics": [
-            "Getting Started",
-            "Tokenomics"
-          ],
+          "topics": ["Getting Started", "Tokenomics"],
           "title": "Tokenomics 101: Unleashing the Power of Cryptocurrency!",
           "slug": "tokenomics-101-unleashing-the-power-of-cryptocurrency",
           "authorName": "Crypto Clairity",
@@ -547,11 +488,7 @@
       "articles": [
         {
           "id": "180563939",
-          "topics": [
-            "DAO",
-            "Tokenomi",
-            "Komentar"
-          ],
+          "topics": ["DAO", "Tokenomi", "Komentar"],
           "title": "Kerangka untuk Desain Tata Kelola Blockchain: Roda Prysm Group [Komentar]",
           "slug": "a-framework-for-blockchain-governance-design-the-prysm-group-wheel-commentary",
           "authorName": "Crypto Clairity",
@@ -579,10 +516,7 @@
         },
         {
           "id": "180217169",
-          "topics": [
-            "Tokenomi",
-            "Komentar"
-          ],
+          "topics": ["Tokenomi", "Komentar"],
           "title": "Ekonomi Insentif Bertoken 3: Nilai Token Tidak Akan Menyatukan Pemangku Kepentingan [Komentar]",
           "slug": "economics-of-tokenized-incentives-3-token-value-won-t-align-stakeholders-commenta",
           "authorName": "Crypto Clairity",
@@ -610,10 +544,7 @@
         },
         {
           "id": "180217123",
-          "topics": [
-            "Tokenomi",
-            "Komentar"
-          ],
+          "topics": ["Tokenomi", "Komentar"],
           "title": "Ekonomi Insentif Bertoken 2: Memilih Metrik Kinerja yang Efektif [Komentar]",
           "slug": "economics-of-tokenized-incentives-2-selecting-effective-performance-metrics-comme",
           "authorName": "Crypto Clairity",
@@ -641,10 +572,7 @@
         },
         {
           "id": "180217082",
-          "topics": [
-            "Tokenomics",
-            "Commentary"
-          ],
+          "topics": ["Tokenomics", "Commentary"],
           "title": "Economics of Tokenized Incentives 1: Intro to Pay for Performance [Commentary]",
           "slug": "economics-of-tokenized-incentives-1-intro-to-pay-for-performance",
           "authorName": "Crypto Clairity",
@@ -672,10 +600,7 @@
         },
         {
           "id": "180556627",
-          "topics": [
-            "Commentary",
-            "Smart Contracts"
-          ],
+          "topics": ["Commentary", "Smart Contracts"],
           "title": "Incomplete Contracts and Blockchain [Commentary]",
           "slug": "incomplete-contracts-and-blockchain-commentary",
           "authorName": "Crypto Clairity",
@@ -703,11 +628,7 @@
         },
         {
           "id": "180563918",
-          "topics": [
-            "Tokenomics",
-            "Commentary",
-            "Fundraising"
-          ],
+          "topics": ["Tokenomics", "Commentary", "Fundraising"],
           "title": "Tokens: Investment Vehicle or Medium of Exchange (Not Both) [Commentary]",
           "slug": "tokens-investment-vehicle-or-medium-of-exchange-not-both-commentary",
           "authorName": "Crypto Clairity",
@@ -735,11 +656,7 @@
         },
         {
           "id": "180563922",
-          "topics": [
-            "Fundraising",
-            "Tokenomics",
-            "Commentary"
-          ],
+          "topics": ["Fundraising", "Tokenomics", "Commentary"],
           "title": "ICOs Leverage Network Effects [Commentary]",
           "slug": "icos-leverage-network-effects-commentary",
           "authorName": "Crypto Clairity",
@@ -767,11 +684,7 @@
         },
         {
           "id": "180556595",
-          "topics": [
-            "Fundraising",
-            "Tokenomics",
-            "Commentary"
-          ],
+          "topics": ["Fundraising", "Tokenomics", "Commentary"],
           "title": "The Blockchain Effect: Network Effects without Market Power Costs [Commentary]",
           "slug": "the-blockchain-effect-network-effects-without-market-power-costs-commentary",
           "authorName": "Crypto Clairity",
@@ -799,10 +712,7 @@
         },
         {
           "id": "180563931",
-          "topics": [
-            "Tokenomics",
-            "Commentary"
-          ],
+          "topics": ["Tokenomics", "Commentary"],
           "title": "Blockchain Incentive Structures: What they are and why they matter [Commentary]",
           "slug": "blockchain-incentive-structures-what-they-are-and-why-they-matter-commentary",
           "authorName": "Crypto Clairity",
@@ -836,10 +746,7 @@
       "articles": [
         {
           "id": "180556627",
-          "topics": [
-            "Komentar",
-            "Kontrak Cerdas"
-          ],
+          "topics": ["Komentar", "Kontrak Cerdas"],
           "title": "Kontrak Tidak Lengkap dan Blockchain [Komentar]",
           "slug": "incomplete-contracts-and-blockchain-commentary",
           "authorName": "Crypto Clairity",
@@ -867,10 +774,7 @@
         },
         {
           "id": "165614005",
-          "topics": [
-            "Memulai",
-            "Kontrak Cerdas"
-          ],
+          "topics": ["Memulai", "Kontrak Cerdas"],
           "title": "Kekuatan Kontrak Cerdas: Kunci untuk Membuka Masa Depan Bisnis dan Keuangan",
           "slug": "the-power-of-smart-contracts-the-key-to-unlocking-the-future-of-business-and-fina",
           "authorName": "Crypto Clairity",
@@ -904,11 +808,7 @@
       "articles": [
         {
           "id": "180563918",
-          "topics": [
-            "Tokenomika",
-            "Komentar",
-            "Penggalangan Dana"
-          ],
+          "topics": ["Tokenomika", "Komentar", "Penggalangan Dana"],
           "title": "Token: Kendaraan Investasi atau Alat Tukar (Bukan Keduanya) [Komentar]",
           "slug": "tokens-investment-vehicle-or-medium-of-exchange-not-both-commentary",
           "authorName": "Crypto Clairity",
@@ -936,11 +836,7 @@
         },
         {
           "id": "180563922",
-          "topics": [
-            "Penggalangan Dana",
-            "Tokenomik",
-            "Komentar"
-          ],
+          "topics": ["Penggalangan Dana", "Tokenomik", "Komentar"],
           "title": "ICO Memanfaatkan Efek Jaringan [Komentar]",
           "slug": "icos-leverage-network-effects-commentary",
           "authorName": "Crypto Clairity",
@@ -968,11 +864,7 @@
         },
         {
           "id": "180556595",
-          "topics": [
-            "Penggalangan Dana",
-            "Tokenomik",
-            "Komentar"
-          ],
+          "topics": ["Penggalangan Dana", "Tokenomik", "Komentar"],
           "title": "Efek Blockchain: Efek Jaringan Tanpa Biaya Kekuatan Pasar [Komentar]",
           "slug": "the-blockchain-effect-network-effects-without-market-power-costs-commentary",
           "authorName": "Crypto Clairity",
@@ -1000,11 +892,7 @@
         },
         {
           "id": "167184977",
-          "topics": [
-            "Tokenomics",
-            "DAO",
-            "Fundraising"
-          ],
+          "topics": ["Tokenomics", "DAO", "Fundraising"],
           "title": "Revolutionizing the Equity Model: How Tokenomics is Disrupting the Startup World",
           "slug": "revolutionizing-the-equity-model-how-tokenomics-is-disrupting-the-startup-world",
           "authorName": "Crypto Clairity",
@@ -1032,10 +920,7 @@
         },
         {
           "id": "165685908",
-          "topics": [
-            "Getting Started",
-            "Fundraising"
-          ],
+          "topics": ["Getting Started", "Fundraising"],
           "title": "Disrupt the Status Quo: How Cryptocurrency is Revolutionizing Fundraising and Crowdfunding",
           "slug": "disrupt-the-status-quo-how-cryptocurrency-is-revolutionizing-fundraising-and-crow",
           "authorName": "Crypto Clairity",
@@ -1063,10 +948,7 @@
         },
         {
           "id": "165614216",
-          "topics": [
-            "Getting Started",
-            "Fundraising"
-          ],
+          "topics": ["Getting Started", "Fundraising"],
           "title": "Navigating the Wild West of Initial Coin Offerings: A Beginner's Guide to Investing in the Future of Technology",
           "slug": "navigating-the-wild-west-of-initial-coin-offerings-a-beginner-s-guide-to-investin",
           "authorName": "Crypto Clairity",
@@ -1074,13 +956,13 @@
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T07:00:44+01:00",
-          "description": "Embark on a guided journey through the world of Initial Coin Offerings (ICOs). Learn how to navigate this dynamic landscape and invest in the future of technology.",
+          "description": "Embark on a guided journey through the world of Initial Coin Offerings (ICOs). Learn how to navigate this dynamic landscape and contribute in the future of technology.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686951243-cb11-img1edited.png"
           },
           "contentBlock": [],
           "seo": {
-            "description": "Learn how to navigate this dynamic landscape and invest in the future of technology.",
+            "description": "Learn how to navigate this dynamic landscape and contribute in the future of technology.",
             "title": "Navigating the Wild West of Initial Coin Offerings",
             "twitterCard": null,
             "image": {
@@ -1100,11 +982,7 @@
       "articles": [
         {
           "id": "179948652",
-          "topics": [
-            "Tokenomik",
-            "Industri",
-            "Ringkasan"
-          ],
+          "topics": ["Tokenomik", "Industri", "Ringkasan"],
           "title": "Inovasi Digital dan Model Pendapatan [Ringkasan]",
           "slug": "digital-innovation-and-revenue-models-summary",
           "authorName": "Crypto Clairity",
@@ -1132,10 +1010,7 @@
         },
         {
           "id": "165634580",
-          "topics": [
-            "Memulai",
-            "Industri"
-          ],
+          "topics": ["Memulai", "Industri"],
           "title": "Masa Depan adalah Sekarang: Tinjauan Pengaruh Cryptocurrency terhadap Keuangan Global",
           "slug": "the-future-is-now-an-overview-of-cryptocurrency-s-impact-on-global-finance",
           "authorName": "Crypto Clairity",
@@ -1163,10 +1038,7 @@
         },
         {
           "id": "165611389",
-          "topics": [
-            "Memulai",
-            "Industri"
-          ],
+          "topics": ["Memulai", "Industri"],
           "title": "Menggali Potensi: Bagaimana Cryptocurrency Mengubah Industri",
           "slug": "unleashing-the-potential-how-cryptocurrency-is-transforming-industries",
           "authorName": "Crypto Clairity",
@@ -1200,11 +1072,7 @@
       "articles": [
         {
           "id": "179948652",
-          "topics": [
-            "Tokenomika",
-            "Industri",
-            "Ringkasan"
-          ],
+          "topics": ["Tokenomika", "Industri", "Ringkasan"],
           "title": "Inovasi Digital dan Model Pendapatan [Ringkasan]",
           "slug": "digital-innovation-and-revenue-models-summary",
           "authorName": "Crypto Clairity",
@@ -1232,10 +1100,7 @@
         },
         {
           "id": "180563903",
-          "topics": [
-            "DAO",
-            "Ringkasan"
-          ],
+          "topics": ["DAO", "Ringkasan"],
           "title": "Apa itu Voting? [Ringkasan]",
           "slug": "what-is-voting-for-summary",
           "authorName": "Crypto Clairity",
@@ -1263,10 +1128,7 @@
         },
         {
           "id": "180563908",
-          "topics": [
-            "DAO",
-            "Ringkasan"
-          ],
+          "topics": ["DAO", "Ringkasan"],
           "title": "Untuk Apa Tata Kelola? [Ringkasan]",
           "slug": "what-is-governance-for-summary",
           "authorName": "Crypto Clairity",
@@ -1300,10 +1162,7 @@
       "articles": [
         {
           "id": "166984334",
-          "topics": [
-            "DAO",
-            "Hukum"
-          ],
+          "topics": ["DAO", "Hukum"],
           "title": "Organisasi Otonom Terdesentralisasi (DAO): Struktur Hukum Dasar untuk Bisnis dan Tujuan Non-Profit",
           "slug": "decentralized-autonomous-organizations-daos-basic-legal-structures-for-business-a",
           "authorName": "Crypto Clairity",
@@ -1331,10 +1190,7 @@
         },
         {
           "id": "165611088",
-          "topics": [
-            "Memulai",
-            "Hukum"
-          ],
+          "topics": ["Memulai", "Hukum"],
           "title": "Menavigasi Ranjau Hukum: Memahami Lanskap Regulasi Cryptocurrency",
           "slug": "navigating-the-legal-minefield-understanding-the-regulatory-landscape-of-cryptocu",
           "authorName": "Crypto Clairity",
@@ -1368,10 +1224,7 @@
       "articles": [
         {
           "id": "167101094",
-          "topics": [
-            "Memulai",
-            "Tokenomik"
-          ],
+          "topics": ["Memulai", "Tokenomik"],
           "title": "Tokenomik 101: Melepaskan Kekuatan Cryptocurrency!",
           "slug": "tokenomics-101-unleashing-the-power-of-cryptocurrency",
           "authorName": "Crypto Clairity",
@@ -1399,10 +1252,7 @@
         },
         {
           "id": "166981063",
-          "topics": [
-            "Memulai",
-            "DAO"
-          ],
+          "topics": ["Memulai", "DAO"],
           "title": "Masa Depan Sudah Tiba: Munculnya Organisasi Otonom Terdesentralisasi (DAO)",
           "slug": "the-future-is-here-the-rise-of-decentralized-autonomous-organizations-daos",
           "authorName": "Crypto Clairity",
@@ -1424,10 +1274,7 @@
         },
         {
           "id": "165744328",
-          "topics": [
-            "Memulai",
-            "Cara"
-          ],
+          "topics": ["Memulai", "Cara"],
           "title": "Tetap Unggul dalam Permainan: Panduan untuk Tetap Terinformasi dan Terdidik di Dunia Cryptocurrency",
           "slug": "stay-ahead-of-the-game-a-guide-to-staying-informed-and-educated-in-the-world-of-c",
           "authorName": "Crypto Clairity",
@@ -1455,10 +1302,7 @@
         },
         {
           "id": "165742753",
-          "topics": [
-            "Getting Started",
-            "Payments"
-          ],
+          "topics": ["Getting Started", "Payments"],
           "title": "Stablecoins: The Future of Cryptocurrency Transactions and Payments",
           "slug": "stablecoins-the-future-of-cryptocurrency-transactions-and-payments",
           "authorName": "Crypto Clairity",
@@ -1486,10 +1330,7 @@
         },
         {
           "id": "165685913",
-          "topics": [
-            "DeFi",
-            "Getting Started"
-          ],
+          "topics": ["DeFi", "Getting Started"],
           "title": "Decentralize Your Finance: An Introduction to the World of DeFi",
           "slug": "decentralize-your-finance-an-introduction-to-the-world-of-defi",
           "authorName": "Crypto Clairity",
@@ -1517,10 +1358,7 @@
         },
         {
           "id": "165685908",
-          "topics": [
-            "Getting Started",
-            "Fundraising"
-          ],
+          "topics": ["Getting Started", "Fundraising"],
           "title": "Disrupt the Status Quo: How Cryptocurrency is Revolutionizing Fundraising and Crowdfunding",
           "slug": "disrupt-the-status-quo-how-cryptocurrency-is-revolutionizing-fundraising-and-crow",
           "authorName": "Crypto Clairity",
@@ -1548,10 +1386,7 @@
         },
         {
           "id": "165673014",
-          "topics": [
-            "Getting Started",
-            "Investment"
-          ],
+          "topics": ["Getting Started", "Investment"],
           "title": "Crypto Investing 101: How to Use Cryptocurrency for Investment and Asset Management",
           "slug": "crypto-investing-101-how-to-use-cryptocurrency-for-investment-and-asset-managemen",
           "authorName": "Crypto Clairity",
@@ -1579,10 +1414,7 @@
         },
         {
           "id": "165634580",
-          "topics": [
-            "Getting Started",
-            "Industry"
-          ],
+          "topics": ["Getting Started", "Industry"],
           "title": "The Future is Now: An Overview of Cryptocurrency's Impact on Global Finance",
           "slug": "the-future-is-now-an-overview-of-cryptocurrency-s-impact-on-global-finance",
           "authorName": "Crypto Clairity",
@@ -1610,10 +1442,7 @@
         },
         {
           "id": "165634456",
-          "topics": [
-            "Getting Started",
-            "Mining"
-          ],
+          "topics": ["Getting Started", "Mining"],
           "title": " Unleashing the Power of Cryptocurrency Mining: An Overview of Proof-of-Work Algorithms",
           "slug": "unleashing-the-power-of-cryptocurrency-mining-an-overview-of-proof-of-work-algori",
           "authorName": "Crypto Clairity",
@@ -1641,10 +1470,7 @@
         },
         {
           "id": "165625675",
-          "topics": [
-            "Getting Started",
-            "Payments"
-          ],
+          "topics": ["Getting Started", "Payments"],
           "title": "The Future of International Transfers: How Cryptocurrency is Changing the Game",
           "slug": "the-future-of-international-transfers-how-cryptocurrency-is-changing-the-game",
           "authorName": "Crypto Clairity",
@@ -1672,10 +1498,7 @@
         },
         {
           "id": "165625350",
-          "topics": [
-            "Getting Started",
-            "Payments"
-          ],
+          "topics": ["Getting Started", "Payments"],
           "title": "The Ultimate Guide to Making Online Purchases with Cryptocurrency: Understanding the ins and outs of using digital currency for everyday transactions.",
           "slug": "the-ultimate-guide-to-making-online-purchases-with-cryptocurrency-understanding-t",
           "authorName": "Crypto Clairity",
@@ -1703,10 +1526,7 @@
         },
         {
           "id": "165614216",
-          "topics": [
-            "Getting Started",
-            "Fundraising"
-          ],
+          "topics": ["Getting Started", "Fundraising"],
           "title": "Navigating the Wild West of Initial Coin Offerings: A Beginner's Guide to Investing in the Future of Technology",
           "slug": "navigating-the-wild-west-of-initial-coin-offerings-a-beginner-s-guide-to-investin",
           "authorName": "Crypto Clairity",
@@ -1714,13 +1534,13 @@
             "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T07:00:44+01:00",
-          "description": "Embark on a guided journey through the world of Initial Coin Offerings (ICOs). Learn how to navigate this dynamic landscape and invest in the future of technology.",
+          "description": "Embark on a guided journey through the world of Initial Coin Offerings (ICOs). Learn how to navigate this dynamic landscape and contribute in the future of technology.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1686951243-cb11-img1edited.png"
           },
           "contentBlock": [],
           "seo": {
-            "description": "Learn how to navigate this dynamic landscape and invest in the future of technology.",
+            "description": "Learn how to navigate this dynamic landscape and contribute in the future of technology.",
             "title": "Navigating the Wild West of Initial Coin Offerings",
             "twitterCard": null,
             "image": {
@@ -1734,10 +1554,7 @@
         },
         {
           "id": "165614005",
-          "topics": [
-            "Getting Started",
-            "Smart Contracts"
-          ],
+          "topics": ["Getting Started", "Smart Contracts"],
           "title": "The Power of Smart Contracts: The Key to Unlocking the Future of Business and Finance",
           "slug": "the-power-of-smart-contracts-the-key-to-unlocking-the-future-of-business-and-fina",
           "authorName": "Crypto Clairity",
@@ -1765,10 +1582,7 @@
         },
         {
           "id": "165611516",
-          "topics": [
-            "Getting Started",
-            " Security"
-          ],
+          "topics": ["Getting Started", " Security"],
           "title": "Unlocking the Secrets of Crypto Storage: How to Keep Your Digital Assets Safe and Secure",
           "slug": "unlocking-the-secrets-of-crypto-storage-how-to-keep-your-digital-assets-safe-and",
           "authorName": "Crypto Clairity",
@@ -1796,10 +1610,7 @@
         },
         {
           "id": "165611389",
-          "topics": [
-            "Getting Started",
-            "Industry"
-          ],
+          "topics": ["Getting Started", "Industry"],
           "title": "Unleashing the Potential: How Cryptocurrency is Transforming Industries",
           "slug": "unleashing-the-potential-how-cryptocurrency-is-transforming-industries",
           "authorName": "Crypto Clairity",
@@ -1827,10 +1638,7 @@
         },
         {
           "id": "165611088",
-          "topics": [
-            "Getting Started",
-            "Legal"
-          ],
+          "topics": ["Getting Started", "Legal"],
           "title": "Navigating the Legal Minefield: Understanding the Regulatory Landscape of Cryptocurrencies",
           "slug": "navigating-the-legal-minefield-understanding-the-regulatory-landscape-of-cryptocu",
           "authorName": "Crypto Clairity",
@@ -1858,11 +1666,7 @@
         },
         {
           "id": "165610881",
-          "topics": [
-            "Getting Started",
-            "How-To",
-            "Research"
-          ],
+          "topics": ["Getting Started", "How-To", "Research"],
           "title": "Navigating the Cryptocurrency Market: A Beginner's Guide to Researching and Evaluating Digital Assets",
           "slug": "navigating-the-cryptocurrency-market-a-beginner-s-guide-to-researching-and-evalua",
           "authorName": "Crypto Clairity",
@@ -1890,9 +1694,7 @@
         },
         {
           "id": "165365494",
-          "topics": [
-            "Getting Started"
-          ],
+          "topics": ["Getting Started"],
           "title": "Building Trust in the Digital World: The Role of Blockchain Technology in Cryptocurrency",
           "slug": "building-trust-in-the-digital-world-the-role-of-blockchain-technology-in-cryptocu",
           "authorName": "Crypto Clairity",
@@ -1920,9 +1722,7 @@
         },
         {
           "id": "165399154",
-          "topics": [
-            "Getting Started"
-          ],
+          "topics": ["Getting Started"],
           "title": "Exploring the Many Faces of Cryptocurrency: A Guide to the Different Types and Their Uses",
           "slug": "exploring-the-many-faces-of-cryptocurrency-a-guide-to-the-different-types-and-the",
           "authorName": "Crypto Clairity",
@@ -1950,10 +1750,7 @@
         },
         {
           "id": "165367458",
-          "topics": [
-            "Getting Started",
-            " Security"
-          ],
+          "topics": ["Getting Started", " Security"],
           "title": "Crypto Security 101: How to Safely Store and Secure Your Cryptocurrencies",
           "slug": "crypto-security-101-how-to-safely-store-and-secure-your-cryptocurrencies",
           "authorName": "Crypto Clairity",
@@ -1981,10 +1778,7 @@
         },
         {
           "id": "165365581",
-          "topics": [
-            "Getting Started",
-            "History"
-          ],
+          "topics": ["Getting Started", "History"],
           "title": "The Evolution of Cryptocurrency: From Bitcoin to DeFi and Beyond",
           "slug": "the-evolution-of-cryptocurrency-from-bitcoin-to-defi-and-beyond",
           "authorName": "Crypto Clairity",
@@ -2018,10 +1812,7 @@
       "articles": [
         {
           "id": "165744328",
-          "topics": [
-            "Memulai",
-            "Cara"
-          ],
+          "topics": ["Memulai", "Cara"],
           "title": "Tetap Unggul dalam Permainan: Panduan untuk Tetap Terinformasi dan Terdidik di Dunia Cryptocurrency",
           "slug": "stay-ahead-of-the-game-a-guide-to-staying-informed-and-educated-in-the-world-of-c",
           "authorName": "Crypto Clairity",
@@ -2049,11 +1840,7 @@
         },
         {
           "id": "165610881",
-          "topics": [
-            "Memulai",
-            "Cara",
-            "Penelitian"
-          ],
+          "topics": ["Memulai", "Cara", "Penelitian"],
           "title": "Menavigasi Pasar Cryptocurrency: Panduan Pemula untuk Meneliti dan Mengevaluasi Aset Digital",
           "slug": "navigating-the-cryptocurrency-market-a-beginner-s-guide-to-researching-and-evalua",
           "authorName": "Crypto Clairity",
@@ -2081,10 +1868,7 @@
         },
         {
           "id": "165399242",
-          "topics": [
-            "Cara",
-            "Pertukaran"
-          ],
+          "topics": ["Cara", "Pertukaran"],
           "title": "Panduan Pemula untuk Membeli dan Menjual Cryptocurrency: Langkah demi Langkah",
           "slug": "the-beginner-s-guide-to-buying-and-selling-cryptocurrencies-a-step-by-step-walkth",
           "authorName": "Crypto Clairity",
@@ -2118,10 +1902,7 @@
       "articles": [
         {
           "id": "165742753",
-          "topics": [
-            "Memulai",
-            "Pembayaran"
-          ],
+          "topics": ["Memulai", "Pembayaran"],
           "title": "Stablecoins: Masa Depan Transaksi dan Pembayaran Cryptocurrency",
           "slug": "stablecoins-the-future-of-cryptocurrency-transactions-and-payments",
           "authorName": "Crypto Clairity",
@@ -2149,10 +1930,7 @@
         },
         {
           "id": "165625675",
-          "topics": [
-            "Memulai",
-            "Pembayaran"
-          ],
+          "topics": ["Memulai", "Pembayaran"],
           "title": "Masa Depan Transfer Internasional: Bagaimana Cryptocurrency Mengubah Permainan",
           "slug": "the-future-of-international-transfers-how-cryptocurrency-is-changing-the-game",
           "authorName": "Crypto Clairity",
@@ -2180,10 +1958,7 @@
         },
         {
           "id": "165625350",
-          "topics": [
-            "Memulai",
-            "Pembayaran"
-          ],
+          "topics": ["Memulai", "Pembayaran"],
           "title": "Panduan Utama untuk Melakukan Pembelian Online dengan Cryptocurrency: Memahami seluk-beluk penggunaan mata uang digital untuk transaksi sehari-hari.",
           "slug": "the-ultimate-guide-to-making-online-purchases-with-cryptocurrency-understanding-t",
           "authorName": "Crypto Clairity",
@@ -2217,10 +1992,7 @@
       "articles": [
         {
           "id": "165685913",
-          "topics": [
-            "DeFi",
-            "Memulai"
-          ],
+          "topics": ["DeFi", "Memulai"],
           "title": "Desentralisasi Keuangan Anda: Pengenalan ke Dunia DeFi",
           "slug": "decentralize-your-finance-an-introduction-to-the-world-of-defi",
           "authorName": "Crypto Clairity",
@@ -2254,10 +2026,7 @@
       "articles": [
         {
           "id": "165673014",
-          "topics": [
-            "Memulai",
-            "Investasi"
-          ],
+          "topics": ["Memulai", "Investasi"],
           "title": "Investasi Kripto 101: Cara Menggunakan Cryptocurrency untuk Investasi dan Manajemen Aset",
           "slug": "crypto-investing-101-how-to-use-cryptocurrency-for-investment-and-asset-managemen",
           "authorName": "Crypto Clairity",
@@ -2291,10 +2060,7 @@
       "articles": [
         {
           "id": "165634456",
-          "topics": [
-            "Memulai",
-            "Penambangan"
-          ],
+          "topics": ["Memulai", "Penambangan"],
           "title": "Menggali Kekuatan Penambangan Cryptocurrency: Ikhtisar Algoritma Proof-of-Work",
           "slug": "unleashing-the-power-of-cryptocurrency-mining-an-overview-of-proof-of-work-algori",
           "authorName": "Crypto Clairity",
@@ -2328,10 +2094,7 @@
       "articles": [
         {
           "id": "165611516",
-          "topics": [
-            "Memulai",
-            "Keamanan"
-          ],
+          "topics": ["Memulai", "Keamanan"],
           "title": "Membuka Rahasia Penyimpanan Kripto: Bagaimana Menjaga Aset Digital Anda Aman dan Terlindungi",
           "slug": "unlocking-the-secrets-of-crypto-storage-how-to-keep-your-digital-assets-safe-and",
           "authorName": "Crypto Clairity",
@@ -2359,10 +2122,7 @@
         },
         {
           "id": "165367458",
-          "topics": [
-            "Memulai",
-            "Keamanan"
-          ],
+          "topics": ["Memulai", "Keamanan"],
           "title": "Keamanan Kripto 101: Cara Menyimpan dan Mengamankan Kripto Anda dengan Aman",
           "slug": "crypto-security-101-how-to-safely-store-and-secure-your-cryptocurrencies",
           "authorName": "Crypto Clairity",
@@ -2396,11 +2156,7 @@
       "articles": [
         {
           "id": "165610881",
-          "topics": [
-            "Memulai",
-            "Cara Melakukan",
-            "Penelitian"
-          ],
+          "topics": ["Memulai", "Cara Melakukan", "Penelitian"],
           "title": "Menavigasi Pasar Cryptocurrency: Panduan Pemula untuk Meneliti dan Mengevaluasi Aset Digital",
           "slug": "navigating-the-cryptocurrency-market-a-beginner-s-guide-to-researching-and-evalua",
           "authorName": "Crypto Clairity",
@@ -2434,10 +2190,7 @@
       "articles": [
         {
           "id": "165399242",
-          "topics": [
-            "Cara-Melakukan",
-            "Pertukaran"
-          ],
+          "topics": ["Cara-Melakukan", "Pertukaran"],
           "title": "Panduan Pemula untuk Membeli dan Menjual Cryptocurrency: Langkah demi Langkah",
           "slug": "the-beginner-s-guide-to-buying-and-selling-cryptocurrencies-a-step-by-step-walkth",
           "authorName": "Crypto Clairity",
@@ -2471,10 +2224,7 @@
       "articles": [
         {
           "id": "165365581",
-          "topics": [
-            "Memulai",
-            "Sejarah"
-          ],
+          "topics": ["Memulai", "Sejarah"],
           "title": "Evolusi Cryptocurrency: Dari Bitcoin ke DeFi dan Selanjutnya",
           "slug": "the-evolution-of-cryptocurrency-from-bitcoin-to-defi-and-beyond",
           "authorName": "Crypto Clairity",

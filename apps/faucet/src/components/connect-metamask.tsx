@@ -1,21 +1,20 @@
-"use client";
-import { useConnect, useConnectors } from "wagmi";
-import { Button } from "./ui/button";
+'use client'
+import { useConnect, useConnectors } from 'wagmi'
+import { Button } from './ui/button'
 
 export function ConnectWalletButton() {
-  const connectors = useConnectors();
-  const { connect } = useConnect();
+  const connectors = useConnectors()
+  const { connect } = useConnect()
 
   const handleConnect = async () => {
     // Find the WalletConnect connector
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const injectedConnector = connectors.find(
-      (connector) => connector.id === "injected",
-    );
+      (connector) => connector.id === 'injected',
+    )
     if (injectedConnector) {
-      await connect({ connector: injectedConnector });
+      await connect({ connector: injectedConnector })
     }
-  };
+  }
 
   return (
     <div>
@@ -24,5 +23,5 @@ export function ConnectWalletButton() {
       </Button>
       {/* {error && <p style={{ color: 'red' }}>{error.message}</p>} */}
     </div>
-  );
+  )
 }

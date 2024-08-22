@@ -2,11 +2,7 @@
   "relatedBlogs": [
     {
       "id": "180556595",
-      "topics": [
-        "Recaudacion de fondos",
-        "Tokenomia",
-        "Comentario"
-      ],
+      "topics": ["Recaudacion de fondos", "Tokenomia", "Comentario"],
       "title": "El Efecto Blockchain: Efectos de Red sin Costos de Poder de Mercado [Comentario]",
       "slug": "the-blockchain-effect-network-effects-without-market-power-costs-commentary",
       "authorName": "Crypto Clairity",
@@ -26,11 +22,7 @@
   ],
   "blogContent": {
     "id": "180563922",
-    "topics": [
-      "Recaudacion de fondos",
-      "Tokenomia",
-      "Comentario"
-    ],
+    "topics": ["Recaudacion de fondos", "Tokenomia", "Comentario"],
     "title": "Las ICO aprovechan los efectos de red [Comentario]",
     "slug": "icos-leverage-network-effects-commentary",
     "authorName": "Crypto Clairity",
@@ -176,9 +168,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Showcase Product Demand:"
                             },
                             {
@@ -197,9 +187,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Leverage Network Effects:"
                             },
                             {
@@ -218,9 +206,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Discourage Speculators:"
                             },
                             {
@@ -239,14 +225,12 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Define Priorities:"
                             },
                             {
                               "type": "span",
-                              "value": " Startups should indicate their priorities by selecting appropriate token sale strategies. This can help potential investors understand the startup's focus—whether it is on attracting future platform users or raising immediate funds."
+                              "value": " Startups should indicate their priorities by selecting appropriate token sale strategies. This can help potential contributors understand the startup's focus—whether it is on attracting future platform users or raising immediate funds."
                             }
                           ]
                         }
@@ -293,9 +277,5 @@
       }
     }
   },
-  "topics": [
-    "Recaudacion de fondos",
-    "Tokenomia",
-    "Comentario"
-  ]
+  "topics": ["Recaudacion de fondos", "Tokenomia", "Comentario"]
 }

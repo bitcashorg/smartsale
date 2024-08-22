@@ -16,7 +16,7 @@ export function LandingPage({ content }: LandingPageProps) {
               {content.description}
             </p>
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-              {content.sections.map(section => (
+              {content.sections.map((section) => (
                 <div className="space-y-2">
                   <h3 className="text-lg font-bold">{section.subHeader}</h3>
                   <p className="text-gray-500 dark:text-gray-400">

@@ -1,23 +1,23 @@
-import { MetadataRoute } from 'next'
 import { getArticleSections } from '@/services/datocms'
-import { CategoryPageProps } from './page'
+import type { MetadataRoute } from 'next'
+import type { CategoryPageProps } from './page'
 
 export default async function sitemap(
-  props: CategoryPageProps
+  props: CategoryPageProps,
 ): Promise<MetadataRoute.Sitemap> {
   const {
-    params: { lang }
+    params: { lang },
   } = props
-  let sections = [];
+  let sections = []
   try {
-    sections = await getArticleSections(lang);
+    sections = await getArticleSections(lang)
   } catch (error) {
-    return [];
+    return []
   }
 
-  const categories = sections.map(section => section.slug)
-  return categories.map(category => ({
+  const categories = sections.map((section) => section.slug)
+  return categories.map((category) => ({
     url: `https://${process.env.VERCEL_URL}/${lang}/blog/${category}`,
-    lastModified: new Date()
+    lastModified: new Date(),
   }))
 }

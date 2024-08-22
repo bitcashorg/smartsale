@@ -2,10 +2,7 @@
   "relatedBlogs": [],
   "blogContent": {
     "id": "198277253",
-    "topics": [
-      "MLG",
-      "Audio"
-    ],
+    "topics": ["MLG", "Audio"],
     "title": "Aumentando el texto para la comprension del lenguaje hablado con Modelos de Lenguaje Grandes",
     "slug": "augmenting-text-for-spoken-language-understanding-with-large-language-models",
     "authorName": "Prof. Otto Nomos",
@@ -147,9 +144,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Data Challenges"
                             },
                             {
@@ -168,9 +163,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Utilizing Unpaired Text"
                             },
                             {
@@ -189,9 +182,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Two Approaches"
                             },
                             {
@@ -210,9 +201,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Significant Improvements"
                             },
                             {
@@ -231,9 +220,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Generating Data with LLMs"
                             },
                             {
@@ -267,9 +254,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Cost Efficiency"
                             },
                             {
@@ -288,9 +273,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Domain Expansion"
                             },
                             {
@@ -309,9 +292,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Improved Accuracy"
                             },
                             {
@@ -330,9 +311,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Flexibility"
                             },
                             {
@@ -366,9 +345,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Dependence on LLMs"
                             },
                             {
@@ -438,8 +415,5 @@
       }
     }
   },
-  "topics": [
-    "LLM",
-    "Audio"
-  ]
+  "topics": ["LLM", "Audio"]
 }

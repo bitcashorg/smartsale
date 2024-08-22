@@ -2,10 +2,7 @@
   "relatedBlogs": [
     {
       "id": "180563903",
-      "topics": [
-        "DAO",
-        "摘要"
-      ],
+      "topics": ["DAO", "摘要"],
       "title": "投票的目的是什么？[摘要]",
       "slug": "what-is-voting-for-summary",
       "authorName": "Crypto Clairity",
@@ -24,10 +21,7 @@
     },
     {
       "id": "180563908",
-      "topics": [
-        "DAO",
-        "摘要"
-      ],
+      "topics": ["DAO", "摘要"],
       "title": "治理的目的是什么？[摘要]",
       "slug": "what-is-governance-for-summary",
       "authorName": "Crypto Clairity",
@@ -46,10 +40,7 @@
     },
     {
       "id": "166981063",
-      "topics": [
-        "入门",
-        "DAO"
-      ],
+      "topics": ["入门", "DAO"],
       "title": "未来已来：去中心化自治组织（DAO）的崛起",
       "slug": "the-future-is-here-the-rise-of-decentralized-autonomous-organizations-daos",
       "authorName": "Crypto Clairity",
@@ -69,10 +60,7 @@
   ],
   "blogContent": {
     "id": "166984334",
-    "topics": [
-      "DAO",
-      "法律"
-    ],
+    "topics": ["DAO", "法律"],
     "title": "去中心化自治组织（DAOs）：用于商业和非营利目的的基本法律结构",
     "slug": "decentralized-autonomous-organizations-daos-basic-legal-structures-for-business-a",
     "authorName": "Crypto Clairity",
@@ -107,7 +95,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Decentralized Autonomous Organizations (DAOs) are innovative forms of decentralized, digital organizations that are enabled by blockchain technology. In the world of crypto and blockchain, DAOs have captured the imagination of entrepreneurs, investors, and legal experts alike. However, when it comes to viewing DAOs legally, it's important to understand that they can be viewed as either a large general partnership or an unincorporated non-profit association."
+                      "value": "Decentralized Autonomous Organizations (DAOs) are innovative forms of decentralized, digital organizations that are enabled by blockchain technology. In the world of crypto and blockchain, DAOs have captured the imagination of entrepreneurs, contributors, and legal experts alike. However, when it comes to viewing DAOs legally, it's important to understand that they can be viewed as either a large general partnership or an unincorporated non-profit association."
                     }
                   ]
                 }
@@ -140,9 +128,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "General Partnerships"
                     }
                   ]
@@ -193,9 +179,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Non-profit Associations"
                     }
                   ]
@@ -266,8 +250,5 @@
       }
     }
   },
-  "topics": [
-    "DAO",
-    "法律"
-  ]
+  "topics": ["DAO", "法律"]
 }

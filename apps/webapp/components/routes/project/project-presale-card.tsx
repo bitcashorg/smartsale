@@ -1,4 +1,4 @@
-import { Project, ProjectWithAuction } from '@/lib/projects'
+import type { Project, ProjectWithAuction } from '@/lib/projects'
 import { ProjectInfo } from './project-info'
 
 export function ProjectPresaleCard({ project }: { project: Project }) {

@@ -6,10 +6,7 @@
       "articles": [
         {
           "id": "165365457",
-          "topics": [
-            "시작하기",
-            "결제"
-          ],
+          "topics": ["시작하기", "결제"],
           "title": "비트코인으로 온라인 구매 간소화하기: 거래에 비트코인 사용 가이드",
           "slug": "streamlining-online-purchases-with-bitcoin-a-guide-to-using-bitcoin-for-transacti",
           "authorName": "Maxi Millie",
@@ -37,11 +34,7 @@
         },
         {
           "id": "165362142",
-          "topics": [
-            "시작하기",
-            "작업증명",
-            "채굴"
-          ],
+          "topics": ["시작하기", "작업증명", "채굴"],
           "title": "비트코인 채굴의 힘 풀기: 작업증명 알고리즘 소개",
           "slug": "unlocking-the-power-of-bitcoin-mining-an-introduction-to-proof-of-work-algorithms",
           "authorName": "Maxi Millie",
@@ -69,10 +62,7 @@
         },
         {
           "id": "165340146",
-          "topics": [
-            "시작하기",
-            "작업 증명"
-          ],
+          "topics": ["시작하기", "작업 증명"],
           "title": "비트코인의 경제적 보안: 작업 증명이 어떻게 안전하고 보안된 네트워크를 가능하게 하는가",
           "slug": "the-economic-security-of-bitcoin-how-proof-of-work-enables-a-safe-and-secure-netw",
           "authorName": "Maxi Millie",
@@ -100,10 +90,7 @@
         },
         {
           "id": "165340050",
-          "topics": [
-            "시작하기",
-            "법률"
-          ],
+          "topics": ["시작하기", "법률"],
           "title": "비트코인의 법적 및 규제 환경 탐색: 규칙과 기회 이해하기",
           "slug": "navigating-the-legal-and-regulatory-landscape-of-bitcoin-understanding-the-rules",
           "authorName": "Maxi Millie",
@@ -131,10 +118,7 @@
         },
         {
           "id": "165337859",
-          "topics": [
-            "시작하기",
-            "보안"
-          ],
+          "topics": ["시작하기", "보안"],
           "title": "비트코인 저장의 미래: 비트코인 지갑과 혁신적인 저장 솔루션 소개",
           "slug": "the-future-of-bitcoin-storage-an-introduction-to-bitcoin-wallets-and-innovative-s",
           "authorName": "Maxi Millie",
@@ -162,11 +146,9 @@
         },
         {
           "id": "165005184",
-          "topics": [
-            "시작하기"
-          ],
+          "topics": ["시작하기"],
           "title": "비트코인 거래소 조사 및 평가의 기술: 투자자를 위한 가이드",
-          "slug": "the-art-of-researching-and-evaluating-bitcoin-exchanges-a-guide-for-investors",
+          "slug": "the-art-of-researching-and-evaluating-bitcoin-exchanges-a-guide-for-contributors",
           "authorName": "Maxi Millie",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
@@ -192,10 +174,7 @@
         },
         {
           "id": "164973196",
-          "topics": [
-            "시작하기",
-            "역사"
-          ],
+          "topics": ["시작하기", "역사"],
           "title": "비트코인의 역사와 진화",
           "slug": "the-history-and-evolution-of-bitcoin",
           "authorName": "Maxi Millie",
@@ -223,10 +202,7 @@
         },
         {
           "id": "165004875",
-          "topics": [
-            "시작하기",
-            "보안"
-          ],
+          "topics": ["시작하기", "보안"],
           "title": "디지털 시대에 비트코인을 안전하게 보관하는 방법",
           "slug": "how-to-keep-your-bitcoins-safe-in-the-digital-age",
           "authorName": "Maxi Millie",
@@ -254,10 +230,7 @@
         },
         {
           "id": "165005107",
-          "topics": [
-            "시작하기",
-            "거래소"
-          ],
+          "topics": ["시작하기", "거래소"],
           "title": "비트코인 매매에 대한 간단한 가이드",
           "slug": "the-simplified-guide-to-buying-and-selling-bitcoins",
           "authorName": "Maxi Millie",
@@ -285,9 +258,7 @@
         },
         {
           "id": "164904960",
-          "topics": [
-            "시작하기"
-          ],
+          "topics": ["시작하기"],
           "title": "비트코인에 대해 다르게 생각하기: 탈중앙화 화폐의 미래",
           "slug": "think-differently-about-bitcoin-the-future-of-decentralized-currency",
           "authorName": "Maxi Millie",
@@ -321,10 +292,7 @@
       "articles": [
         {
           "id": "165365457",
-          "topics": [
-            "시작하기",
-            "결제"
-          ],
+          "topics": ["시작하기", "결제"],
           "title": "비트코인으로 온라인 구매 간소화하기: 거래에 비트코인 사용 가이드",
           "slug": "streamlining-online-purchases-with-bitcoin-a-guide-to-using-bitcoin-for-transacti",
           "authorName": "Maxi Millie",
@@ -358,11 +326,7 @@
       "articles": [
         {
           "id": "165362142",
-          "topics": [
-            "시작하기",
-            "작업증명",
-            "채굴"
-          ],
+          "topics": ["시작하기", "작업증명", "채굴"],
           "title": "비트코인 채굴의 힘 풀기: 작업증명 알고리즘 소개",
           "slug": "unlocking-the-power-of-bitcoin-mining-an-introduction-to-proof-of-work-algorithms",
           "authorName": "Maxi Millie",
@@ -390,10 +354,7 @@
         },
         {
           "id": "165340146",
-          "topics": [
-            "시작하기",
-            "작업 증명"
-          ],
+          "topics": ["시작하기", "작업 증명"],
           "title": "비트코인의 경제적 보안: 작업 증명이 어떻게 안전하고 보안된 네트워크를 가능하게 하는가",
           "slug": "the-economic-security-of-bitcoin-how-proof-of-work-enables-a-safe-and-secure-netw",
           "authorName": "Maxi Millie",
@@ -427,11 +388,7 @@
       "articles": [
         {
           "id": "165362142",
-          "topics": [
-            "시작하기",
-            "작업증명",
-            "채굴"
-          ],
+          "topics": ["시작하기", "작업증명", "채굴"],
           "title": "비트코인 채굴의 힘 풀기: 작업증명 알고리즘 소개",
           "slug": "unlocking-the-power-of-bitcoin-mining-an-introduction-to-proof-of-work-algorithms",
           "authorName": "Maxi Millie",
@@ -465,10 +422,7 @@
       "articles": [
         {
           "id": "165340050",
-          "topics": [
-            "시작하기",
-            "법률"
-          ],
+          "topics": ["시작하기", "법률"],
           "title": "비트코인의 법적 및 규제 환경 탐색: 규칙과 기회 이해하기",
           "slug": "navigating-the-legal-and-regulatory-landscape-of-bitcoin-understanding-the-rules",
           "authorName": "Maxi Millie",
@@ -502,10 +456,7 @@
       "articles": [
         {
           "id": "165337859",
-          "topics": [
-            "시작하기",
-            "보안"
-          ],
+          "topics": ["시작하기", "보안"],
           "title": "비트코인 저장의 미래: 비트코인 지갑과 혁신적인 저장 솔루션 소개",
           "slug": "the-future-of-bitcoin-storage-an-introduction-to-bitcoin-wallets-and-innovative-s",
           "authorName": "Maxi Millie",
@@ -533,10 +484,7 @@
         },
         {
           "id": "165004875",
-          "topics": [
-            "시작하기",
-            "보안"
-          ],
+          "topics": ["시작하기", "보안"],
           "title": "디지털 시대에 비트코인을 안전하게 보관하는 방법",
           "slug": "how-to-keep-your-bitcoins-safe-in-the-digital-age",
           "authorName": "Maxi Millie",
@@ -570,10 +518,7 @@
       "articles": [
         {
           "id": "164973196",
-          "topics": [
-            "시작하기",
-            "역사"
-          ],
+          "topics": ["시작하기", "역사"],
           "title": "비트코인의 역사와 진화",
           "slug": "the-history-and-evolution-of-bitcoin",
           "authorName": "Maxi Millie",
@@ -607,10 +552,7 @@
       "articles": [
         {
           "id": "165005107",
-          "topics": [
-            "시작하기",
-            "거래소"
-          ],
+          "topics": ["시작하기", "거래소"],
           "title": "비트코인 매매에 대한 간단한 가이드",
           "slug": "the-simplified-guide-to-buying-and-selling-bitcoins",
           "authorName": "Maxi Millie",

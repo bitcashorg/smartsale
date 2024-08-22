@@ -1,18 +1,18 @@
 'use client'
 
-import { BitcashAccessContentType } from '@/components/layout/session/session-dialog'
+import type { BitcashAccessContentType } from '@/components/layout/session/session-dialog'
 import { Button } from '@/components/ui/button'
 import {
   DialogDescription,
   DialogFooter,
   DialogHeader,
-  DialogTitle
+  DialogTitle,
 } from '@/components/ui/dialog'
 import { useSession } from '@/hooks/use-session'
 import QRCode from 'react-qr-code'
 
 export function SessionDialogContent({
-  updateDialogContent
+  updateDialogContent,
 }: {
   updateDialogContent: (dialog: BitcashAccessContentType) => void
 }) {
@@ -36,7 +36,7 @@ export function SessionDialogContent({
               height: 'auto',
               maxWidth: '100%',
               width: '100%',
-              borderRadius: 4
+              borderRadius: 4,
             }}
             value={loginUri}
             viewBox={`0 0 256 256`}

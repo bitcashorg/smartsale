@@ -1,19 +1,23 @@
 'use client'
-import { FunctionComponent, useState } from 'react'
-import { useAccount, useSignMessage } from 'wagmi'
-import { useAsyncFn } from 'react-use'
-import { formatAddress, fromEntries } from 'app-lib'
 import { registerAddress } from '@/actions'
-import { SignMessageData } from 'wagmi/query'
-import { useQuery } from '@tanstack/react-query'
+import {
+  Button,
+  type ButtonProps,
+  buttonVariants,
+} from '@/components/ui/button'
 import { useSession } from '@/hooks/use-session'
-import { Button, ButtonProps, buttonVariants } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
-import { presaleInsertSchema } from '@repo/supabase'
 import { useSupabaseClient } from '@/services/supabase'
+import { presaleInsertSchema } from '@repo/supabase'
+import { useQuery } from '@tanstack/react-query'
+import { formatAddress, fromEntries } from 'app-lib'
+import { type FunctionComponent, useState } from 'react'
+import { useAsyncFn } from 'react-use'
+import { useAccount, useSignMessage } from 'wagmi'
+import type { SignMessageData } from 'wagmi/query'
 
 export const RegisterAddressForm: FunctionComponent<{ projectId: number }> = ({
-  projectId
+  projectId,
 }) => {
   const { session, loginOrConnect } = useSession()
   const { address } = useAccount()
@@ -33,14 +37,14 @@ export const RegisterAddressForm: FunctionComponent<{ projectId: number }> = ({
       if (error) throw error
 
       return data[0]
-    }
+    },
   })
 
   const [state, register] = useAsyncFn(async (formData: FormData) => {
     const o = fromEntries(formData)
     const data = {
       ...o,
-      project_id: parseInt(o.project_id, 10)
+      project_id: Number.parseInt(o.project_id, 10),
     }
     // validate input
     presaleInsertSchema.safeParse(data)
@@ -55,8 +59,8 @@ export const RegisterAddressForm: FunctionComponent<{ projectId: number }> = ({
         if (!formData) return
         formData.append('signature', signature)
         register(formData)
-      }
-    }
+      },
+    },
   })
 
   const submitForm = (formData: FormData) => {
@@ -94,9 +98,9 @@ function RegisterButton(props: ButtonProps & { text: string }) {
       className={cn(
         buttonVariants({
           variant: 'outline',
-          radius: 'full'
+          radius: 'full',
         }),
-        'flex h-auto whitespace-normal border border-solid border-accent-secondary bg-background px-5'
+        'flex h-auto whitespace-normal border border-solid border-accent-secondary bg-background px-5',
       )}
       {...props}
     >

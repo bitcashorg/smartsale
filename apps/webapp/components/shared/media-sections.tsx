@@ -1,15 +1,15 @@
-import { YouTubePlaylistItem } from '@/services/youtube/index'
-import { MediaCard } from './media-card'
 import { LucideIcons } from '@/components/routes/blog/lucide-icons'
 import { cn } from '@/lib/utils'
+import type { YouTubePlaylistItem } from '@/services/youtube/index'
+import type { LangProp } from '@/types/routing.type'
 import Link from 'next/link'
-import { LangProp } from '@/types/routing.type'
+import { MediaCard } from './media-card'
 
 export function MediaSections({ sections, lang }: MediaSectionsProps) {
   return (
     <div className="flex flex-col w-full">
       {sections.map(
-        section =>
+        (section) =>
           section?.videos?.length > 0 && (
             <section className="w-full mt-10" key={section.title}>
               <div className="flex items-center justify-between text-xl mb-space-32">
@@ -19,7 +19,7 @@ export function MediaSections({ sections, lang }: MediaSectionsProps) {
                 <Link
                   href={section.link.href}
                   className={cn(
-                    'flex items-center align-middle text-black focus-within:!text-accent hover:!text-accent dark:text-white'
+                    'flex items-center align-middle text-black focus-within:!text-accent hover:!text-accent dark:text-white',
                   )}
                 >
                   {section.link.label}
@@ -42,7 +42,7 @@ export function MediaSections({ sections, lang }: MediaSectionsProps) {
                 ))}
               </ul>
             </section>
-          )
+          ),
       )}
     </div>
   )

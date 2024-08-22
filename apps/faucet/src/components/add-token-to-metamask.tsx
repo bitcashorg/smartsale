@@ -1,6 +1,6 @@
-import { EVMTokenContractData } from "app-contracts";
-import { useSwitchChain } from "wagmi";
-import { Button } from "./ui/button";
+import type { EVMTokenContractData } from 'app-contracts'
+import { useSwitchChain } from 'wagmi'
+import { Button } from './ui/button'
 
 export function AddTokenToWallet({
   address,
@@ -10,17 +10,17 @@ export function AddTokenToWallet({
   name,
   chainId,
 }: EVMTokenContractData) {
-  const { switchChain } = useSwitchChain();
+  const { switchChain } = useSwitchChain()
   // console.log({ address, symbol, decimals, image, name })
   const addTokenToMetaMask = async () => {
     try {
       if (!window.ethereum && !window.ethereum.isMetaMask)
-        alert("MetaMask is not installed");
-      if (chainId) await switchChain({ chainId });
+        alert('MetaMask is not installed')
+      if (chainId) await switchChain({ chainId })
       await window.ethereum.request({
-        method: "wallet_watchAsset",
+        method: 'wallet_watchAsset',
         params: {
-          type: "ERC20",
+          type: 'ERC20',
           options: {
             address,
             symbol,
@@ -28,13 +28,13 @@ export function AddTokenToWallet({
             image,
           },
         },
-      });
-      alert("Token added to MetaMask");
+      })
+      alert('Token added to MetaMask')
     } catch (error) {
-      console.error("Error adding token to MetaMask", error);
-      alert("Error adding token to MetaMask");
+      console.error('Error adding token to MetaMask', error)
+      alert('Error adding token to MetaMask')
     }
-  };
+  }
 
   return (
     <Button
@@ -43,12 +43,11 @@ export function AddTokenToWallet({
     >
       Add {name} to MetaMask
     </Button>
-  );
+  )
 }
 
 interface CustomWindow extends Window {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  ethereum?: any;
+  ethereum?: any
 }
 
-declare let window: CustomWindow;
+declare let window: CustomWindow

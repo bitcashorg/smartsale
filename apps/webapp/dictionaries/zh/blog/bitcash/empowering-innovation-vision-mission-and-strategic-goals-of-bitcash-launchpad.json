@@ -2,9 +2,7 @@
   "relatedBlogs": [
     {
       "id": "CD89KaoLSh6nQbiMhxX0EQ",
-      "topics": [
-        "launchpad"
-      ],
+      "topics": ["launchpad"],
       "title": "确保信任和诚信：监管合规和安全措施",
       "slug": "ensuring-trust-and-integrity-regulatory-compliance-and-security-measures",
       "authorName": "Jun Dam",
@@ -23,9 +21,7 @@
     },
     {
       "id": "fbM-UqrYQXGhw6HB4C6swQ",
-      "topics": [
-        "launchpad"
-      ],
+      "topics": ["launchpad"],
       "title": "战略路线图：开创区块链创新和人工智能创业成功",
       "slug": "strategic-roadmap-pioneering-blockchain-innovation-and-ai-startup-success",
       "authorName": "Jun Dam",
@@ -44,9 +40,7 @@
     },
     {
       "id": "I4jShMnWRruvJgDbrucwDw",
-      "topics": [
-        "launchpad"
-      ],
+      "topics": ["launchpad"],
       "title": "bitLauncher的技术支柱",
       "slug": "the-technological-backbone-of-bitcash-launchpad",
       "authorName": "Jun Dam",
@@ -65,12 +59,7 @@
     },
     {
       "id": "NZeB3i5XRzuELW2UWBDyRQ",
-      "topics": [
-        "research",
-        "dao",
-        "fundraising",
-        "launchpad"
-      ],
+      "topics": ["research", "dao", "fundraising", "launchpad"],
       "title": "驾驭融合：人工智能和加密货币动态的全面市场分析",
       "slug": "navigating-the-convergence-a-comprehensive-market-analysis-of-ai-and-cryptocurren",
       "authorName": "Jun Dam",
@@ -89,11 +78,7 @@
     },
     {
       "id": "VgGHDFI9T9qzTCHPAm5WLg",
-      "topics": [
-        "dao",
-        "fundraising",
-        "launchpad"
-      ],
+      "topics": ["dao", "fundraising", "launchpad"],
       "title": "赋能下一代开源人工智能独角兽：革命性发射台",
       "slug": "empowering-next-gen-open-source-ai-unicorns-a-revolutionary-launchpad",
       "authorName": "Jun Dam",
@@ -112,9 +97,7 @@
     },
     {
       "id": "MICfokr1TVuScAB4Qh9YGw",
-      "topics": [
-        "launchpad"
-      ],
+      "topics": ["launchpad"],
       "title": "赋能创新：bitcash的代币经济学和融资策略",
       "slug": "empowering-innovation-tokenomics-and-funding-strategy-of-bitcash",
       "authorName": "Jun Dam",
@@ -133,9 +116,7 @@
     },
     {
       "id": "BSDdY8byQWipv749rApFRA",
-      "topics": [
-        "launchpad"
-      ],
+      "topics": ["launchpad"],
       "title": "释放潜力：bitLauncher的用例和应用",
       "slug": "unlocking-potential-use-cases-and-applications-of-bitlauncher",
       "authorName": "Jun Dam",
@@ -155,9 +136,7 @@
   ],
   "blogContent": {
     "id": "BEfgGhndSsCn5MBU89RO3A",
-    "topics": [
-      "发射台"
-    ],
+    "topics": ["发射台"],
     "title": "赋能创新：bitLauncher的愿景、使命和战略目标",
     "slug": "empowering-innovation-vision-mission-and-strategic-goals-of-bitcash-launchpad",
     "authorName": "Jun Dam",
@@ -211,7 +190,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Our vision is to become the cornerstone of open-source AI innovation, where the most groundbreaking AI solutions find their footing and flourish. We envision a future where bitLauncher acts as the catalyst for creating a sustainable ecosystem of AI technologies that are owned and shaped by a global community of contributors, investors, and users. Through democratizing access to resources and investment, we aim to unlock the full potential of AI to solve complex global challenges, fostering a world where technology advances hand in hand with ethical principles and inclusive growth."
+                      "value": "Our vision is to become the cornerstone of open-source AI innovation, where the most groundbreaking AI solutions find their footing and flourish. We envision a future where bitLauncher acts as the catalyst for creating a sustainable ecosystem of AI technologies that are owned and shaped by a global community of contributors, contributors, and users. Through democratizing access to resources and investment, we aim to unlock the full potential of AI to solve complex global challenges, fostering a world where technology advances hand in hand with ethical principles and inclusive growth."
                     }
                   ]
                 },
@@ -237,9 +216,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Fostering Innovation"
                             },
                             {
@@ -258,9 +235,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Revolutionize AI Project Funding"
                             },
                             {
@@ -279,14 +254,12 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Community Building"
                             },
                             {
                               "type": "span",
-                              "value": ": To cultivate a vibrant community of over 50,000 active members, including AI developers, crypto investors, and technology enthusiasts, who actively participate in governance, funding, and collaboration."
+                              "value": ": To cultivate a vibrant community of over 50,000 active members, including AI developers, crypto contributors, and technology enthusiasts, who actively participate in governance, funding, and collaboration."
                             }
                           ]
                         }
@@ -300,9 +273,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Sustainable Growth"
                             },
                             {
@@ -321,9 +292,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Global Impact"
                             },
                             {
@@ -358,9 +327,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Strategic Partnerships"
                             },
                             {
@@ -379,14 +346,12 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Innovative Funding Models"
                             },
                             {
                               "type": "span",
-                              "value": ": Utilizing tokenomics and DAOs to create fair, transparent, and efficient funding mechanisms that align the interests of developers and investors."
+                              "value": ": Utilizing tokenomics and DAOs to create fair, transparent, and efficient funding mechanisms that align the interests of developers and contributors."
                             }
                           ]
                         }
@@ -400,9 +365,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Education and Outreach"
                             },
                             {
@@ -421,9 +384,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Technology Development"
                             },
                             {
@@ -485,7 +446,5 @@
       }
     }
   },
-  "topics": [
-    "launchpad"
-  ]
+  "topics": ["launchpad"]
 }

@@ -6,10 +6,7 @@
       "articles": [
         {
           "id": "173914208",
-          "topics": [
-            "Comecando",
-            "Gestao de Carteira"
-          ],
+          "topics": ["Comecando", "Gestao de Carteira"],
           "title": "Dominando a Gestao de Carteira: A Arte da Diversificacao, Alocacao de Ativos e Rebalanceamento",
           "slug": "mastering-portfolio-management-the-art-of-diversification-asset-allocation-and-re",
           "authorName": "Mister Moneybags",
@@ -37,12 +34,9 @@
         },
         {
           "id": "174592759",
-          "topics": [
-            "Comecando",
-            "Alternativas"
-          ],
+          "topics": ["Comecando", "Alternativas"],
           "title": "Liberando o Potencial: Dominando Investimentos Alternativos para o Sucesso do Investidor",
-          "slug": "unleashing-the-potential-mastering-alternative-investments-for-investor-success",
+          "slug": "unleashing-the-potential-mastering-alternative-investments-for-contributor-success",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
@@ -55,7 +49,7 @@
           "contentBlock": [],
           "seo": {
             "description": "Dive into the world of private equity, hedge funds, and commodities to supercharge your portfolio. ",
-            "title": "Mastering Alternative Investments for Investor Success",
+            "title": "Mastering Alternative Investments for Contributor Success",
             "twitterCard": null,
             "image": {
               "width": 870,
@@ -68,10 +62,7 @@
         },
         {
           "id": "175015363",
-          "topics": [
-            "Comecando",
-            "Fundos Mutuos e ETFs"
-          ],
+          "topics": ["Comecando", "Fundos Mutuos e ETFs"],
           "title": "Revelando os Pros e Contras dos Fundos Negociados em Bolsa (ETFs): Um Guia Abrangente para Investidores",
           "slug": "unveiling-the-pros-and-cons-of-exchange-traded-funds-etfs-a-comprehensive-guide-f",
           "authorName": "Mister Moneybags",
@@ -99,10 +90,7 @@
         },
         {
           "id": "176002890",
-          "topics": [
-            "Primeiros Passos",
-            "Gestao de Risco"
-          ],
+          "topics": ["Primeiros Passos", "Gestao de Risco"],
           "title": "Proteja seus Investimentos: Um Guia Completo para Reconhecer e Evitar Fraudes em Investimentos",
           "slug": "shield-your-investments-a-comprehensive-guide-to-recognizing-and-avoiding-investm",
           "authorName": "Mister Moneybags",
@@ -130,10 +118,7 @@
         },
         {
           "id": "176002763",
-          "topics": [
-            "Primeiros Passos",
-            "Seguro"
-          ],
+          "topics": ["Primeiros Passos", "Seguro"],
           "title": "Planejamento de Seguros 101: Navegando pelos Seguros de Vida, Invalidez e Cuidados de Longo Prazo",
           "slug": "insurance-planning-101-navigating-life-disability-and-long-term-care-insurance",
           "authorName": "Mister Moneybags",
@@ -161,10 +146,7 @@
         },
         {
           "id": "175940742",
-          "topics": [
-            "Comecando",
-            "Educacao"
-          ],
+          "topics": ["Comecando", "Educacao"],
           "title": "Desbloqueando a Chave para Economizar na Faculdade: Maximizando Fundos Educacionais com Planos 529 e Coverdell ESAs",
           "slug": "unlocking-the-key-to-college-savings-maximizing-education-funds-with-529-plans-an",
           "authorName": "Mister Moneybags",
@@ -192,10 +174,7 @@
         },
         {
           "id": "175940646",
-          "topics": [
-            "Comecando",
-            "Aposentadoria"
-          ],
+          "topics": ["Comecando", "Aposentadoria"],
           "title": "Dominando o Planejamento da Aposentadoria: Decifrando 401(k)s, IRAs e Planos de Pensao para um Futuro Seguro",
           "slug": "mastering-retirement-planning-decoding-401-k-s-iras-and-pension-plans-for-a-secur",
           "authorName": "Mister Moneybags",
@@ -223,10 +202,7 @@
         },
         {
           "id": "175685081",
-          "topics": [
-            "Comecando",
-            "Aposentadoria"
-          ],
+          "topics": ["Comecando", "Aposentadoria"],
           "title": "Desbloqueando a Previdencia Social: Seu Guia para Maximizar os Beneficios da Aposentadoria",
           "slug": "unlocking-social-security-your-guide-to-maximizing-retirement-benefits",
           "authorName": "Mister Moneybags",
@@ -254,12 +230,9 @@
         },
         {
           "id": "175530377",
-          "topics": [
-            "Comecando",
-            "Planejamento Tributario"
-          ],
+          "topics": ["Comecando", "Planejamento Tributario"],
           "title": "Maximizando Retornos: O Guia Definitivo de Planejamento Tributario para Investidores",
-          "slug": "maximizing-returns-the-ultimate-guide-to-tax-planning-for-investors",
+          "slug": "maximizing-returns-the-ultimate-guide-to-tax-planning-for-contributors",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
@@ -272,7 +245,7 @@
           "contentBlock": [],
           "seo": {
             "description": "Learn how to optimize your investment returns by understanding capital gains, dividends, and interest income, while minimizing your tax liabilities.",
-            "title": "The Ultimate Guide to Tax Planning for Investors",
+            "title": "The Ultimate Guide to Tax Planning for Contributors",
             "twitterCard": null,
             "image": {
               "width": 870,
@@ -285,10 +258,7 @@
         },
         {
           "id": "175528452",
-          "topics": [
-            "Comecando",
-            "Planejamento Patrimonial"
-          ],
+          "topics": ["Comecando", "Planejamento Patrimonial"],
           "title": "Garanta Seu Legado: Um Guia Abrangente sobre Planejamento Patrimonial, Testamentos, Fundos Fiduciarios e Impostos sobre Heranca",
           "slug": "secure-your-legacy-a-comprehensive-guide-to-estate-planning-wills-trusts-and-inhe",
           "authorName": "Mister Moneybags",
@@ -316,10 +286,7 @@
         },
         {
           "id": "175337478",
-          "topics": [
-            "Comecando",
-            "Planejamento Financeiro"
-          ],
+          "topics": ["Comecando", "Planejamento Financeiro"],
           "title": "Dominando suas Financas: O Guia Definitivo para Orcamento, Reducao de Dividas e Planejamento de Aposentadoria",
           "slug": "mastering-your-finances-the-ultimate-guide-to-budgeting-debt-reduction-and-retire",
           "authorName": "Mister Moneybags",
@@ -347,11 +314,9 @@
         },
         {
           "id": "175337425",
-          "topics": [
-            "Comecando"
-          ],
+          "topics": ["Comecando"],
           "title": "Dominando Sua Mente: Superando Vieses de Investidor para o Sucesso Financeiro",
-          "slug": "mastering-your-mind-overcoming-investor-biases-for-financial-success",
+          "slug": "mastering-your-mind-overcoming-contributor-biases-for-financial-success",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
@@ -363,8 +328,8 @@
           },
           "contentBlock": [],
           "seo": {
-            "description": "Discover how to conquer common investor biases that can hinder your financial success. ",
-            "title": "Overcoming Investor Biases for Financial Success",
+            "description": "Discover how to conquer common contributor biases that can hinder your financial success. ",
+            "title": "Overcoming Contributor Biases for Financial Success",
             "twitterCard": null,
             "image": {
               "width": 870,
@@ -377,10 +342,7 @@
         },
         {
           "id": "176002895",
-          "topics": [
-            "Comecando",
-            "Inflacao"
-          ],
+          "topics": ["Comecando", "Inflacao"],
           "title": "Navegando pelos Mares Financeiros: Entendendo o Impacto da Inflacao nos Investimentos",
           "slug": "navigating-the-financial-seas-understanding-inflation-s-impact-on-investment",
           "authorName": "Mister Moneybags",
@@ -408,10 +370,7 @@
         },
         {
           "id": "173914322",
-          "topics": [
-            "Primeiros Passos",
-            "acoes"
-          ],
+          "topics": ["Primeiros Passos", "acoes"],
           "title": "Entendendo o Mercado de Acoes: Como Funciona, Indicadores de Mercado e Tendencias Historicas.",
           "slug": "understanding-the-stock-market-how-it-works-market-indicators-and-historical-tren",
           "authorName": "Mister Moneybags",
@@ -439,10 +398,7 @@
         },
         {
           "id": "174362868",
-          "topics": [
-            "Comecando",
-            "imobiliario"
-          ],
+          "topics": ["Comecando", "imobiliario"],
           "title": "De Casas a Arranha-ceus: Dominando o Investimento Imobiliario em Residencial, Comercial e FIIs",
           "slug": "from-houses-to-high-rises-mastering-real-estate-investing-in-residential-commerci",
           "authorName": "Mister Moneybags",
@@ -470,10 +426,7 @@
         },
         {
           "id": "174594216",
-          "topics": [
-            "Comecando",
-            "Fundos Mutuos e ETFs"
-          ],
+          "topics": ["Comecando", "Fundos Mutuos e ETFs"],
           "title": "Dominando Fundos Mutuos: Revelando os Tipos, Despesas e Desempenho para Investimentos Bem-Sucedidos",
           "slug": "mastering-mutual-funds-unveiling-the-types-expenses-and-performance-for-successfu",
           "authorName": "Mister Moneybags",
@@ -501,12 +454,9 @@
         },
         {
           "id": "175016379",
-          "topics": [
-            "Comecando",
-            "Gestao de Risco"
-          ],
+          "topics": ["Comecando", "Gestao de Risco"],
           "title": "Dominando a Tolerancia ao Risco: Revelando seu DNA Unico de Investidor",
-          "slug": "mastering-risk-tolerance-unveiling-your-unique-investor-dna",
+          "slug": "mastering-risk-tolerance-unveiling-your-unique-contributor-dna",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
@@ -519,7 +469,7 @@
           "contentBlock": [],
           "seo": {
             "description": "Unlock the secrets to aligning risk and reward for financial success.\n\n",
-            "title": "Mastering Risk Tolerance: Unveiling Your Unique Investor DNA",
+            "title": "Mastering Risk Tolerance: Unveiling Your Unique Contributor DNA",
             "twitterCard": null,
             "image": {
               "width": 870,
@@ -532,9 +482,7 @@
         },
         {
           "id": "175023099",
-          "topics": [
-            "Comecando"
-          ],
+          "topics": ["Comecando"],
           "title": "Dominando a Psicologia de Investimentos: Vencendo o Medo e a Ganancia para o Sucesso Financeiro",
           "slug": "mastering-investment-psychology-conquering-fear-and-greed-for-financial-success",
           "authorName": "Mister Moneybags",
@@ -562,10 +510,7 @@
         },
         {
           "id": "173906568",
-          "topics": [
-            "Planejamento Financeiro",
-            "Comecando"
-          ],
+          "topics": ["Planejamento Financeiro", "Comecando"],
           "title": "Desvendando os Fundamentos do Investimento: Navegando pelos Tipos de Ativos, Equilibrios entre Risco e Retorno e Definicao de Metas",
           "slug": "unraveling-investment-basics-navigating-asset-types-risk-return-trade-offs-and-go",
           "authorName": "Mister Moneybags",
@@ -599,10 +544,7 @@
       "articles": [
         {
           "id": "173914208",
-          "topics": [
-            "Comecando",
-            "Gestao de Carteira"
-          ],
+          "topics": ["Comecando", "Gestao de Carteira"],
           "title": "Dominando a Gestao de Carteira: A Arte da Diversificacao, Alocacao de Ativos e Rebalanceamento",
           "slug": "mastering-portfolio-management-the-art-of-diversification-asset-allocation-and-re",
           "authorName": "Mister Moneybags",
@@ -636,12 +578,9 @@
       "articles": [
         {
           "id": "174592759",
-          "topics": [
-            "Comecando",
-            "Alternativas"
-          ],
+          "topics": ["Comecando", "Alternativas"],
           "title": "Liberando o Potencial: Dominando Investimentos Alternativos para o Sucesso do Investidor",
-          "slug": "unleashing-the-potential-mastering-alternative-investments-for-investor-success",
+          "slug": "unleashing-the-potential-mastering-alternative-investments-for-contributor-success",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
@@ -654,7 +593,7 @@
           "contentBlock": [],
           "seo": {
             "description": "Dive into the world of private equity, hedge funds, and commodities to supercharge your portfolio. ",
-            "title": "Mastering Alternative Investments for Investor Success",
+            "title": "Mastering Alternative Investments for Contributor Success",
             "twitterCard": null,
             "image": {
               "width": 870,
@@ -673,10 +612,7 @@
       "articles": [
         {
           "id": "175015363",
-          "topics": [
-            "Comecando",
-            "Fundos Mutuos e ETFs"
-          ],
+          "topics": ["Comecando", "Fundos Mutuos e ETFs"],
           "title": "Revelando os Pros e Contras dos Fundos Negociados em Bolsa (ETFs): Um Guia Abrangente para Investidores",
           "slug": "unveiling-the-pros-and-cons-of-exchange-traded-funds-etfs-a-comprehensive-guide-f",
           "authorName": "Mister Moneybags",
@@ -704,10 +640,7 @@
         },
         {
           "id": "174594216",
-          "topics": [
-            "Comecando",
-            "Fundos Mutuos e ETFs"
-          ],
+          "topics": ["Comecando", "Fundos Mutuos e ETFs"],
           "title": "Dominando Fundos Mutuos: Revelando os Tipos, Despesas e Desempenho para Investimentos Bem-Sucedidos",
           "slug": "mastering-mutual-funds-unveiling-the-types-expenses-and-performance-for-successfu",
           "authorName": "Mister Moneybags",
@@ -741,10 +674,7 @@
       "articles": [
         {
           "id": "176002890",
-          "topics": [
-            "Comecando",
-            "Gestao de Risco"
-          ],
+          "topics": ["Comecando", "Gestao de Risco"],
           "title": "Proteja Seus Investimentos: Um Guia Abrangente para Reconhecer e Evitar Fraudes em Investimentos",
           "slug": "shield-your-investments-a-comprehensive-guide-to-recognizing-and-avoiding-investm",
           "authorName": "Mister Moneybags",
@@ -772,12 +702,9 @@
         },
         {
           "id": "175016379",
-          "topics": [
-            "Primeiros Passos",
-            "Gestao de Risco"
-          ],
+          "topics": ["Primeiros Passos", "Gestao de Risco"],
           "title": "Dominando a Tolerancia ao Risco: Revelando seu DNA Unico de Investidor",
-          "slug": "mastering-risk-tolerance-unveiling-your-unique-investor-dna",
+          "slug": "mastering-risk-tolerance-unveiling-your-unique-contributor-dna",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
@@ -790,7 +717,7 @@
           "contentBlock": [],
           "seo": {
             "description": "Unlock the secrets to aligning risk and reward for financial success.\n\n",
-            "title": "Mastering Risk Tolerance: Unveiling Your Unique Investor DNA",
+            "title": "Mastering Risk Tolerance: Unveiling Your Unique Contributor DNA",
             "twitterCard": null,
             "image": {
               "width": 870,
@@ -809,10 +736,7 @@
       "articles": [
         {
           "id": "176002763",
-          "topics": [
-            "Primeiros Passos",
-            "Seguro"
-          ],
+          "topics": ["Primeiros Passos", "Seguro"],
           "title": "Planejamento de Seguros 101: Navegando pelos Seguros de Vida, Invalidez e Cuidados de Longo Prazo",
           "slug": "insurance-planning-101-navigating-life-disability-and-long-term-care-insurance",
           "authorName": "Mister Moneybags",
@@ -846,10 +770,7 @@
       "articles": [
         {
           "id": "175940742",
-          "topics": [
-            "Comecando",
-            "Educacao"
-          ],
+          "topics": ["Comecando", "Educacao"],
           "title": "Desbloqueando a Chave para Economizar na Faculdade: Maximizando Fundos Educacionais com Planos 529 e Coverdell ESAs",
           "slug": "unlocking-the-key-to-college-savings-maximizing-education-funds-with-529-plans-an",
           "authorName": "Mister Moneybags",
@@ -883,10 +804,7 @@
       "articles": [
         {
           "id": "175940646",
-          "topics": [
-            "Comecando",
-            "Aposentadoria"
-          ],
+          "topics": ["Comecando", "Aposentadoria"],
           "title": "Dominando o Planejamento da Aposentadoria: Decifrando 401(k)s, IRAs e Planos de Pensao para um Futuro Seguro",
           "slug": "mastering-retirement-planning-decoding-401-k-s-iras-and-pension-plans-for-a-secur",
           "authorName": "Mister Moneybags",
@@ -914,10 +832,7 @@
         },
         {
           "id": "175685081",
-          "topics": [
-            "Comecando",
-            "Aposentadoria"
-          ],
+          "topics": ["Comecando", "Aposentadoria"],
           "title": "Desbloqueando a Previdencia Social: Seu Guia para Maximizar os Beneficios da Aposentadoria",
           "slug": "unlocking-social-security-your-guide-to-maximizing-retirement-benefits",
           "authorName": "Mister Moneybags",
@@ -951,12 +866,9 @@
       "articles": [
         {
           "id": "175530377",
-          "topics": [
-            "Comecando",
-            "Planejamento Tributario"
-          ],
+          "topics": ["Comecando", "Planejamento Tributario"],
           "title": "Maximizando Retornos: O Guia Definitivo de Planejamento Tributario para Investidores",
-          "slug": "maximizing-returns-the-ultimate-guide-to-tax-planning-for-investors",
+          "slug": "maximizing-returns-the-ultimate-guide-to-tax-planning-for-contributors",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
@@ -969,7 +881,7 @@
           "contentBlock": [],
           "seo": {
             "description": "Learn how to optimize your investment returns by understanding capital gains, dividends, and interest income, while minimizing your tax liabilities.",
-            "title": "The Ultimate Guide to Tax Planning for Investors",
+            "title": "The Ultimate Guide to Tax Planning for Contributors",
             "twitterCard": null,
             "image": {
               "width": 870,
@@ -988,10 +900,7 @@
       "articles": [
         {
           "id": "175528452",
-          "topics": [
-            "Comecando",
-            "Planejamento Patrimonial"
-          ],
+          "topics": ["Comecando", "Planejamento Patrimonial"],
           "title": "Garanta Seu Legado: Um Guia Abrangente sobre Planejamento Patrimonial, Testamentos, Fundos Fiduciarios e Impostos sobre Heranca",
           "slug": "secure-your-legacy-a-comprehensive-guide-to-estate-planning-wills-trusts-and-inhe",
           "authorName": "Mister Moneybags",
@@ -1025,10 +934,7 @@
       "articles": [
         {
           "id": "175337478",
-          "topics": [
-            "Comecando",
-            "Planejamento Financeiro"
-          ],
+          "topics": ["Comecando", "Planejamento Financeiro"],
           "title": "Dominando suas Financas: O Guia Definitivo para Orcamento, Reducao de Dividas e Planejamento de Aposentadoria",
           "slug": "mastering-your-finances-the-ultimate-guide-to-budgeting-debt-reduction-and-retire",
           "authorName": "Mister Moneybags",
@@ -1056,10 +962,7 @@
         },
         {
           "id": "173906568",
-          "topics": [
-            "Planejamento Financeiro",
-            "Comecando"
-          ],
+          "topics": ["Planejamento Financeiro", "Comecando"],
           "title": "Desvendando os Fundamentos do Investimento: Navegando pelos Tipos de Ativos, Equilibrios entre Risco e Retorno e Definicao de Metas",
           "slug": "unraveling-investment-basics-navigating-asset-types-risk-return-trade-offs-and-go",
           "authorName": "Mister Moneybags",
@@ -1093,10 +996,7 @@
       "articles": [
         {
           "id": "176002895",
-          "topics": [
-            "Comecando",
-            "Inflacao"
-          ],
+          "topics": ["Comecando", "Inflacao"],
           "title": "Navegando pelos Mares Financeiros: Entendendo o Impacto da Inflacao nos Investimentos",
           "slug": "navigating-the-financial-seas-understanding-inflation-s-impact-on-investment",
           "authorName": "Mister Moneybags",
@@ -1130,10 +1030,7 @@
       "articles": [
         {
           "id": "173914322",
-          "topics": [
-            "Primeiros Passos",
-            "acoes"
-          ],
+          "topics": ["Primeiros Passos", "acoes"],
           "title": "Entendendo o Mercado de Acoes: Como Funciona, Indicadores de Mercado e Tendencias Historicas.",
           "slug": "understanding-the-stock-market-how-it-works-market-indicators-and-historical-tren",
           "authorName": "Mister Moneybags",
@@ -1167,10 +1064,7 @@
       "articles": [
         {
           "id": "173980855",
-          "topics": [
-            "investimentos",
-            "titulos"
-          ],
+          "topics": ["investimentos", "titulos"],
           "title": "Dominando Investimentos de Renda Fixa: Titulos, CDs e Fundos de Mercado Monetario",
           "slug": "mastering-fixed-income-investments-bonds-cds-and-money-market-funds",
           "authorName": "Mister Moneybags",
@@ -1204,10 +1098,7 @@
       "articles": [
         {
           "id": "173980855",
-          "topics": [
-            "investimentos",
-            "titulos"
-          ],
+          "topics": ["investimentos", "titulos"],
           "title": "Dominando Investimentos de Renda Fixa: Titulos, CDs e Fundos de Mercado Monetario",
           "slug": "mastering-fixed-income-investments-bonds-cds-and-money-market-funds",
           "authorName": "Mister Moneybags",
@@ -1241,10 +1132,7 @@
       "articles": [
         {
           "id": "174362868",
-          "topics": [
-            "Comecando",
-            "imobiliario"
-          ],
+          "topics": ["Comecando", "imobiliario"],
           "title": "De Casas a Arranha-ceus: Dominando o Investimento Imobiliario em Residencial, Comercial e FIIs",
           "slug": "from-houses-to-high-rises-mastering-real-estate-investing-in-residential-commerci",
           "authorName": "Mister Moneybags",

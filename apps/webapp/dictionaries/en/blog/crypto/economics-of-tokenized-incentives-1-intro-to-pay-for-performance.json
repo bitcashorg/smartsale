@@ -2,11 +2,7 @@
   "relatedBlogs": [
     {
       "id": "180563939",
-      "topics": [
-        "DAO",
-        "Tokenomics",
-        "Commentary"
-      ],
+      "topics": ["DAO", "Tokenomics", "Commentary"],
       "title": "A Framework for Blockchain Governance Design: The Prysm Group Wheel [Commentary]",
       "slug": "a-framework-for-blockchain-governance-design-the-prysm-group-wheel-commentary",
       "authorName": "Crypto Clairity",
@@ -33,10 +29,7 @@
     },
     {
       "id": "180217169",
-      "topics": [
-        "Tokenomics",
-        "Commentary"
-      ],
+      "topics": ["Tokenomics", "Commentary"],
       "title": "Economics of Tokenized Incentives 3: Token Value Won’t Align Stakeholders [Commentary]",
       "slug": "economics-of-tokenized-incentives-3-token-value-won-t-align-stakeholders-commenta",
       "authorName": "Crypto Clairity",
@@ -63,10 +56,7 @@
     },
     {
       "id": "180217123",
-      "topics": [
-        "Tokenomics",
-        "Commentary"
-      ],
+      "topics": ["Tokenomics", "Commentary"],
       "title": "Economics of Tokenized Incentives 2: Selecting Effective Performance Metrics [Commentary]",
       "slug": "economics-of-tokenized-incentives-2-selecting-effective-performance-metrics-comme",
       "authorName": "Crypto Clairity",
@@ -93,11 +83,7 @@
     },
     {
       "id": "180563918",
-      "topics": [
-        "Tokenomics",
-        "Commentary",
-        "Fundraising"
-      ],
+      "topics": ["Tokenomics", "Commentary", "Fundraising"],
       "title": "Tokens: Investment Vehicle or Medium of Exchange (Not Both) [Commentary]",
       "slug": "tokens-investment-vehicle-or-medium-of-exchange-not-both-commentary",
       "authorName": "Crypto Clairity",
@@ -124,11 +110,7 @@
     },
     {
       "id": "180563922",
-      "topics": [
-        "Fundraising",
-        "Tokenomics",
-        "Commentary"
-      ],
+      "topics": ["Fundraising", "Tokenomics", "Commentary"],
       "title": "ICOs Leverage Network Effects [Commentary]",
       "slug": "icos-leverage-network-effects-commentary",
       "authorName": "Crypto Clairity",
@@ -155,11 +137,7 @@
     },
     {
       "id": "180556595",
-      "topics": [
-        "Fundraising",
-        "Tokenomics",
-        "Commentary"
-      ],
+      "topics": ["Fundraising", "Tokenomics", "Commentary"],
       "title": "The Blockchain Effect: Network Effects without Market Power Costs [Commentary]",
       "slug": "the-blockchain-effect-network-effects-without-market-power-costs-commentary",
       "authorName": "Crypto Clairity",
@@ -186,10 +164,7 @@
     },
     {
       "id": "180563931",
-      "topics": [
-        "Tokenomics",
-        "Commentary"
-      ],
+      "topics": ["Tokenomics", "Commentary"],
       "title": "Blockchain Incentive Structures: What they are and why they matter [Commentary]",
       "slug": "blockchain-incentive-structures-what-they-are-and-why-they-matter-commentary",
       "authorName": "Crypto Clairity",
@@ -216,11 +191,7 @@
     },
     {
       "id": "167184977",
-      "topics": [
-        "Tokenomics",
-        "DAO",
-        "Fundraising"
-      ],
+      "topics": ["Tokenomics", "DAO", "Fundraising"],
       "title": "Revolutionizing the Equity Model: How Tokenomics is Disrupting the Startup World",
       "slug": "revolutionizing-the-equity-model-how-tokenomics-is-disrupting-the-startup-world",
       "authorName": "Crypto Clairity",
@@ -247,10 +218,7 @@
     },
     {
       "id": "167101094",
-      "topics": [
-        "Getting Started",
-        "Tokenomics"
-      ],
+      "topics": ["Getting Started", "Tokenomics"],
       "title": "Tokenomics 101: Unleashing the Power of Cryptocurrency!",
       "slug": "tokenomics-101-unleashing-the-power-of-cryptocurrency",
       "authorName": "Crypto Clairity",
@@ -278,10 +246,7 @@
   ],
   "blogContent": {
     "id": "180217082",
-    "topics": [
-      "Tokenomics",
-      "Commentary"
-    ],
+    "topics": ["Tokenomics", "Commentary"],
     "title": "Economics of Tokenized Incentives 1: Intro to Pay for Performance [Commentary]",
     "slug": "economics-of-tokenized-incentives-1-intro-to-pay-for-performance",
     "authorName": "Crypto Clairity",
@@ -351,9 +316,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Summary"
                     }
                   ]
@@ -373,9 +336,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Commentary"
                     }
                   ]
@@ -395,9 +356,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Actionable Insights"
                     }
                   ]
@@ -414,9 +373,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Understand the Context"
                             },
                             {
@@ -435,9 +392,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Consider the Trade-offs"
                             },
                             {
@@ -456,9 +411,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Design Carefully"
                             },
                             {
@@ -477,9 +430,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Stay Flexible"
                             },
                             {
@@ -498,9 +449,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Communicate Clearly"
                             },
                             {
@@ -543,8 +492,5 @@
       }
     }
   },
-  "topics": [
-    "Tokenomics",
-    "Commentary"
-  ]
+  "topics": ["Tokenomics", "Commentary"]
 }

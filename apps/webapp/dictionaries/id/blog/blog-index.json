@@ -6,9 +6,7 @@
       "articles": [
         {
           "id": "SpdLuuYEQgW8rwSHNzhmxA",
-          "topics": [
-            "Aplikasi"
-          ],
+          "topics": ["Aplikasi"],
           "title": "Masterbots: Meningkatkan AI Melampaui ChatGPT dengan Berbagi Sosial dan Inovasi yang Ramah Pengguna",
           "slug": "masterbots-elevating-ai-beyond-chatgpt-with-social-sharing-and-user-friendly-inno",
           "authorName": "Jun Dam",
@@ -36,11 +34,7 @@
         },
         {
           "id": "190259319",
-          "topics": [
-            "Ringkasan",
-            "LLM",
-            "Pelatihan"
-          ],
+          "topics": ["Ringkasan", "LLM", "Pelatihan"],
           "title": "Podcast Ruang Laten 8/16/23 [Ringkasan] - Matematika Pelatihan LLM dengan Quentin Anthony dari Eleuther AI",
           "slug": "latent-space-podcast-8-16-23-summary-the-mathematics-of-training-llms-with-que",
           "authorName": "Prof. Otto Nomos",
@@ -68,12 +62,7 @@
         },
         {
           "id": "190259129",
-          "topics": [
-            "LLM",
-            "Perangkat Keras",
-            "Ringkasan",
-            "Tepi"
-          ],
+          "topics": ["LLM", "Perangkat Keras", "Ringkasan", "Tepi"],
           "title": "Podcast Ruang Laten 8/10/23 [Ringkasan]: LLM di Mana-mana: Menjalankan model 70B di peramban dan iPhone menggunakan MLC — bersama Tianqi Chen dari CMU / OctoML",
           "slug": "latent-space-podcast-8-10-23-summary-llms-everywhere-running-70b-models-in-browse",
           "authorName": "Prof. Otto Nomos",
@@ -101,13 +90,7 @@
         },
         {
           "id": "190259087",
-          "topics": [
-            "Summary",
-            "LLM",
-            "Code",
-            "Open Source",
-            "Small Models"
-          ],
+          "topics": ["Summary", "LLM", "Code", "Open Source", "Small Models"],
           "title": "Latent Space Podcast 8/4/23 [Summary] Latent Space x AI Breakdown crossover pod! ",
           "slug": "latent-space-podcast-8-4-23-summary-latent-space-x-ai-breakdown-crossover-pod",
           "authorName": "Prof. Otto Nomos",
@@ -135,12 +118,7 @@
         },
         {
           "id": "190259111",
-          "topics": [
-            "Summary",
-            "Transformers",
-            "Training",
-            "Open Source"
-          ],
+          "topics": ["Summary", "Transformers", "Training", "Open Source"],
           "title": " Latent Space Podcast 7/26/23 [Summary] FlashAttention 2: making Transformers 800% faster - Tri Dao of Together AI",
           "slug": "latent-space-podcast-7-26-23-summary-flashattention-2-making-transformers-800-fas",
           "authorName": "Prof. Otto Nomos",
@@ -174,13 +152,7 @@
       "articles": [
         {
           "id": "198277124",
-          "topics": [
-            "LLM",
-            "Keuangan",
-            "Kesehatan",
-            "Hukum",
-            "Meminta"
-          ],
+          "topics": ["LLM", "Keuangan", "Kesehatan", "Hukum", "Meminta"],
           "title": "Menyesuaikan Model Bahasa Besar melalui Pemahaman Membaca",
           "slug": "adapting-large-language-models-via-reading-comprehension",
           "authorName": "Prof. Otto Nomos",
@@ -208,10 +180,7 @@
         },
         {
           "id": "198277342",
-          "topics": [
-            "LLM",
-            "Dwibahasa"
-          ],
+          "topics": ["LLM", "Dwibahasa"],
           "title": "OpenBA: Model Asimetris Dwibahasa 15B Sumber Terbuka yang Dilatih dari Awal",
           "slug": "openba-an-open-sourced-15b-bilingual-asymmetric-seq2seq-model-pre-trained-from-sc",
           "authorName": "Prof. Otto Nomos",
@@ -239,10 +208,7 @@
         },
         {
           "id": "198277117",
-          "topics": [
-            "LLM",
-            "Pengambilan"
-          ],
+          "topics": ["LLM", "Pengambilan"],
           "title": "PDFTriage: Jawaban Pertanyaan atas Dokumen Panjang dan Terstruktur",
           "slug": "pdftriage-question-answering-over-long-structured-documents",
           "authorName": "Prof. Otto Nomos",
@@ -270,10 +236,7 @@
         },
         {
           "id": "198277138",
-          "topics": [
-            "LLM",
-            "Penyempurnaan"
-          ],
+          "topics": ["LLM", "Penyempurnaan"],
           "title": "Sorted LLaMA: Membuka Potensi Lapisan Menengah dari Model Bahasa Besar untuk Inferensi Dinamis Menggunakan Penyempurnaan Terurut (SoFT)",
           "slug": "sorted-llama-unlocking-the-potential-of-intermediate-layers-of-large-language-mod",
           "authorName": "Prof. Otto Nomos",
@@ -301,11 +264,7 @@
         },
         {
           "id": "198277150",
-          "topics": [
-            "LLM",
-            "Penalaan Instruksi",
-            "Multimodal"
-          ],
+          "topics": ["LLM", "Penalaan Instruksi", "Multimodal"],
           "title": "Studi Empiris tentang Penskalaan Model Multimodal Besar yang Disesuaikan Instruksi",
           "slug": "an-empirical-study-of-scaling-instruct-tuned-large-multimodal-models",
           "authorName": "Prof. Otto Nomos",
@@ -344,9 +303,7 @@
       "articles": [
         {
           "id": "CD89KaoLSh6nQbiMhxX0EQ",
-          "topics": [
-            "peluncuran"
-          ],
+          "topics": ["peluncuran"],
           "title": "Memastikan Kepercayaan dan Integritas: Kepatuhan Regulasi dan Tindakan Keamanan",
           "slug": "ensuring-trust-and-integrity-regulatory-compliance-and-security-measures",
           "authorName": "Jun Dam",
@@ -374,9 +331,7 @@
         },
         {
           "id": "H_DP7HFORBuw9rID5Jkhhw",
-          "topics": [
-            "bagaimana_cara"
-          ],
+          "topics": ["bagaimana_cara"],
           "title": "Cara Mendaftar dan KYC di Bitcash",
           "slug": "how-to-register-and-kyc-to-bitcash",
           "authorName": "Roberto \"Andler\" Lucas",
@@ -404,9 +359,7 @@
         },
         {
           "id": "fbM-UqrYQXGhw6HB4C6swQ",
-          "topics": [
-            "peluncuran"
-          ],
+          "topics": ["peluncuran"],
           "title": "Peta Jalan Strategis: Inovasi Blockchain Perintis dan Kesuksesan Startup AI",
           "slug": "strategic-roadmap-pioneering-blockchain-innovation-and-ai-startup-success",
           "authorName": "Jun Dam",
@@ -434,9 +387,7 @@
         },
         {
           "id": "I4jShMnWRruvJgDbrucwDw",
-          "topics": [
-            "launchpad"
-          ],
+          "topics": ["launchpad"],
           "title": "The Technological Backbone of bitLauncher",
           "slug": "the-technological-backbone-of-bitcash-launchpad",
           "authorName": "Jun Dam",
@@ -464,9 +415,7 @@
         },
         {
           "id": "BEfgGhndSsCn5MBU89RO3A",
-          "topics": [
-            "launchpad"
-          ],
+          "topics": ["launchpad"],
           "title": "Empowering Innovation: Vision, Mission, and Strategic Goals of bitLauncher",
           "slug": "empowering-innovation-vision-mission-and-strategic-goals-of-bitcash-launchpad",
           "authorName": "Jun Dam",
@@ -500,10 +449,7 @@
       "articles": [
         {
           "id": "166795692",
-          "topics": [
-            "Memulai",
-            "Bisnis & Admin"
-          ],
+          "topics": ["Memulai", "Bisnis & Admin"],
           "title": "Menguasai Arus Kas: Panduan Utama untuk Pendiri Startup",
           "slug": "mastering-cash-flow-the-ultimate-guide-for-startup-founders",
           "authorName": "Bootstrap Briggs",
@@ -531,10 +477,7 @@
         },
         {
           "id": "166788631",
-          "topics": [
-            "Memulai",
-            "Bisnis & Admin"
-          ],
+          "topics": ["Memulai", "Bisnis & Admin"],
           "title": "Penganggaran Cerdas untuk Startup: Panduan Langkah demi Langkah Membangun Fondasi Keuangan yang Kuat",
           "slug": "smart-budgeting-for-startups-a-step-by-step-guide-to-building-a-strong-financial",
           "authorName": "Bootstrap Briggs",
@@ -562,10 +505,7 @@
         },
         {
           "id": "165816954",
-          "topics": [
-            "Memulai",
-            "Tim & SDM"
-          ],
+          "topics": ["Memulai", "Tim & SDM"],
           "title": "Membangun Tim Impian: Panduan Utama untuk Merakit Skuad Startup Anda",
           "slug": "building-a-dream-team-the-ultimate-guide-to-assembling-your-startup-squad",
           "authorName": "Bootstrap Briggs",
@@ -593,10 +533,7 @@
         },
         {
           "id": "166322203",
-          "topics": [
-            "Getting Started",
-            "Sales & Marketing"
-          ],
+          "topics": ["Getting Started", "Sales & Marketing"],
           "title": "The Blueprint to Success: A Guide to Crafting a Winning Sales Plan for Your Startup",
           "slug": "the-blueprint-to-success-a-guide-to-crafting-a-winning-sales-plan-for-your-startu",
           "authorName": "Steve Savant",
@@ -630,10 +567,7 @@
       "articles": [
         {
           "id": "180217169",
-          "topics": [
-            "Tokenomi",
-            "Komentar"
-          ],
+          "topics": ["Tokenomi", "Komentar"],
           "title": "Ekonomi Insentif Bertoken 3: Nilai Token Tidak Akan Menyelaraskan Pemangku Kepentingan [Komentar]",
           "slug": "economics-of-tokenized-incentives-3-token-value-won-t-align-stakeholders-commenta",
           "authorName": "Crypto Clairity",
@@ -661,10 +595,7 @@
         },
         {
           "id": "180217123",
-          "topics": [
-            "Tokenomi",
-            "Komentar"
-          ],
+          "topics": ["Tokenomi", "Komentar"],
           "title": "Ekonomi Insentif Bertoken 2: Memilih Metrik Kinerja yang Efektif [Komentar]",
           "slug": "economics-of-tokenized-incentives-2-selecting-effective-performance-metrics-comme",
           "authorName": "Crypto Clairity",
@@ -692,10 +623,7 @@
         },
         {
           "id": "180217082",
-          "topics": [
-            "Tokenomi",
-            "Komentar"
-          ],
+          "topics": ["Tokenomi", "Komentar"],
           "title": "Ekonomi Insentif Ter-tokenisasi 1: Pengantar untuk Bayar untuk Kinerja [Komentar]",
           "slug": "economics-of-tokenized-incentives-1-intro-to-pay-for-performance",
           "authorName": "Crypto Clairity",
@@ -723,10 +651,7 @@
         },
         {
           "id": "180556627",
-          "topics": [
-            "Komentar",
-            "Kontrak Cerdas"
-          ],
+          "topics": ["Komentar", "Kontrak Cerdas"],
           "title": "Kontrak Tidak Lengkap dan Blockchain [Komentar]",
           "slug": "incomplete-contracts-and-blockchain-commentary",
           "authorName": "Crypto Clairity",
@@ -760,11 +685,7 @@
       "articles": [
         {
           "id": "165362142",
-          "topics": [
-            "Memulai",
-            "Bukti-Kerja",
-            "Penambangan"
-          ],
+          "topics": ["Memulai", "Bukti-Kerja", "Penambangan"],
           "title": "Mengungkap Kekuatan Penambangan Bitcoin: Pengenalan terhadap Algoritma Bukti-Kerja",
           "slug": "unlocking-the-power-of-bitcoin-mining-an-introduction-to-proof-of-work-algorithms",
           "authorName": "Maxi Millie",
@@ -792,10 +713,7 @@
         },
         {
           "id": "165340146",
-          "topics": [
-            "Memulai",
-            "Bukti-dari-Kerja"
-          ],
+          "topics": ["Memulai", "Bukti-dari-Kerja"],
           "title": "Keamanan Ekonomi Bitcoin: Bagaimana Bukti-dari-Kerja Memungkinkan Jaringan yang Aman dan Terjamin",
           "slug": "the-economic-security-of-bitcoin-how-proof-of-work-enables-a-safe-and-secure-netw",
           "authorName": "Maxi Millie",
@@ -823,10 +741,7 @@
         },
         {
           "id": "165340050",
-          "topics": [
-            "Memulai",
-            "Hukum"
-          ],
+          "topics": ["Memulai", "Hukum"],
           "title": "Menavigasi Lanskap Hukum dan Regulasi Bitcoin: Memahami Aturan dan Peluang",
           "slug": "navigating-the-legal-and-regulatory-landscape-of-bitcoin-understanding-the-rules",
           "authorName": "Maxi Millie",
@@ -854,10 +769,7 @@
         },
         {
           "id": "165337859",
-          "topics": [
-            "Getting Started",
-            "Security"
-          ],
+          "topics": ["Getting Started", "Security"],
           "title": "The Future of Bitcoin Storage: An Introduction to Bitcoin Wallets and Innovative Storage Solutions",
           "slug": "the-future-of-bitcoin-storage-an-introduction-to-bitcoin-wallets-and-innovative-s",
           "authorName": "Maxi Millie",
@@ -891,25 +803,22 @@
       "articles": [
         {
           "id": "174592759",
-          "topics": [
-            "Memulai",
-            "Alternatif"
-          ],
-          "title": "Menggali Potensi: Menguasai Investasi Alternatif untuk Kesuksesan Investor",
-          "slug": "unleashing-the-potential-mastering-alternative-investments-for-investor-success",
+          "topics": ["Memulai", "Alternatif"],
+          "title": "Menggali Potensi: Menguasai Investasi Alternatif untuk Kesuksesan Contributor",
+          "slug": "unleashing-the-potential-mastering-alternative-investments-for-contributor-success",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:11:13+01:00",
-          "description": "Perluas keahlian investasi Anda dengan investasi alternatif! Menyelami dunia ekuitas swasta, dana lindung nilai, dan komoditas untuk meningkatkan portofolio Anda. Blog ini menyediakan panduan ahli untuk investor yang mencari kesuksesan dalam strategi investasi alternatif.",
+          "description": "Perluas keahlian investasi Anda dengan investasi alternatif! Menyelami dunia ekuitas swasta, dana lindung nilai, dan komoditas untuk meningkatkan portofolio Anda. Blog ini menyediakan panduan ahli untuk contributor yang mencari kesuksesan dalam strategi investasi alternatif.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1689120056-ib6-img1.png"
           },
           "contentBlock": [],
           "seo": {
             "description": "Dive into the world of private equity, hedge funds, and commodities to supercharge your portfolio. ",
-            "title": "Mastering Alternative Investments for Investor Success",
+            "title": "Mastering Alternative Investments for Contributor Success",
             "twitterCard": null,
             "image": {
               "width": 870,
@@ -922,11 +831,8 @@
         },
         {
           "id": "175015363",
-          "topics": [
-            "Memulai",
-            "Reksa Dana & ETF"
-          ],
-          "title": "Mengungkap Pro dan Kontra dari Dana yang Diperdagangkan di Bursa (ETF): Panduan Lengkap untuk Investor",
+          "topics": ["Memulai", "Reksa Dana & ETF"],
+          "title": "Mengungkap Pro dan Kontra dari Dana yang Diperdagangkan di Bursa (ETF): Panduan Lengkap untuk Contributor",
           "slug": "unveiling-the-pros-and-cons-of-exchange-traded-funds-etfs-a-comprehensive-guide-f",
           "authorName": "Mister Moneybags",
           "authorPicture": {
@@ -953,10 +859,7 @@
         },
         {
           "id": "176002890",
-          "topics": [
-            "Memulai",
-            "Manajemen Risiko"
-          ],
+          "topics": ["Memulai", "Manajemen Risiko"],
           "title": "Lindungi Investasi Anda: Panduan Lengkap untuk Mengenali dan Menghindari Penipuan Investasi",
           "slug": "shield-your-investments-a-comprehensive-guide-to-recognizing-and-avoiding-investm",
           "authorName": "Mister Moneybags",
@@ -984,10 +887,7 @@
         },
         {
           "id": "176002763",
-          "topics": [
-            "Getting Started",
-            "Insurance"
-          ],
+          "topics": ["Getting Started", "Insurance"],
           "title": "Insurance Planning 101: Navigating Life, Disability, and Long-Term Care Insurance",
           "slug": "insurance-planning-101-navigating-life-disability-and-long-term-care-insurance",
           "authorName": "Mister Moneybags",

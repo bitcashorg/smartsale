@@ -1,20 +1,20 @@
 'use client'
 
 import { Button } from '@/components/ui/button'
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from '@/components/ui/popover'
 import { useSession } from '@/hooks/use-session'
 import { appConfig } from '@/lib/config'
 import { cn } from '@/lib/utils'
 import { useAccountModal } from '@rainbow-me/rainbowkit'
+import { formatAddress } from 'app-lib'
 import { User, Wallet } from 'lucide-react'
 import { useRouter } from 'next/navigation'
 import { isMobile } from 'react-device-detect'
-import { formatAddress } from 'app-lib'
 import { useAccount } from 'wagmi'
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger
-} from '@/components/ui/popover'
 // import Link from 'next/link'
 
 export function SessionButton() {
@@ -23,7 +23,7 @@ export function SessionButton() {
     loginRedirect,
     toggleShowSessionDialog,
     openConnectModal,
-    logout
+    logout,
   } = useSession()
   const { openAccountModal } = useAccountModal()
   const account = useAccount()

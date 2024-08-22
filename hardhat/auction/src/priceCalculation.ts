@@ -1,93 +1,93 @@
-import { Contract, BigNumber, Wallet } from "ethers";
-import { HardhatRuntimeEnvironment } from "hardhat/types";
+import { BigNumber, type Contract, type Wallet } from 'ethers'
+import type { HardhatRuntimeEnvironment } from 'hardhat/types'
 export interface Price {
-  priceNumerator: BigNumber;
-  priceDenominator: BigNumber;
+  priceNumerator: BigNumber
+  priceDenominator: BigNumber
 }
 
 export interface ReceivedFunds {
-  auctioningTokenAmount: BigNumber;
-  biddingTokenAmount: BigNumber;
+  auctioningTokenAmount: BigNumber
+  biddingTokenAmount: BigNumber
 }
 
 export interface OrderResult {
-  auctioningToken: string;
-  biddingToken: string;
-  auctionEndDate: BigNumber;
-  orderCancellationEndDate: BigNumber;
-  initialAuctionOrder: string;
-  minimumBiddingAmountPerOrder: BigNumber;
-  interimSumBidAmount: BigNumber;
-  interimOrder: string;
-  clearingPriceOrder: string;
-  volumeClearingPriceOrder: BigNumber;
-  feeNumerator: BigNumber;
+  auctioningToken: string
+  biddingToken: string
+  auctionEndDate: BigNumber
+  orderCancellationEndDate: BigNumber
+  initialAuctionOrder: string
+  minimumBiddingAmountPerOrder: BigNumber
+  interimSumBidAmount: BigNumber
+  interimOrder: string
+  clearingPriceOrder: string
+  volumeClearingPriceOrder: BigNumber
+  feeNumerator: BigNumber
 }
 
 export interface Order {
-  sellAmount: BigNumber;
-  buyAmount: BigNumber;
-  userId: BigNumber;
+  sellAmount: BigNumber
+  buyAmount: BigNumber
+  userId: BigNumber
 }
 
 export const queueStartElement =
-  "0x0000000000000000000000000000000000000000000000000000000000000001";
+  '0x0000000000000000000000000000000000000000000000000000000000000001'
 export const queueLastElement =
-  "0xffffffffffffffffffffffffffffffffffffffff000000000000000000000001";
+  '0xffffffffffffffffffffffffffffffffffffffff000000000000000000000001'
 
 export function getClearingPriceFromInitialOrder(order: Order): Order {
   return {
     userId: BigNumber.from(0),
     sellAmount: order.buyAmount,
     buyAmount: order.sellAmount,
-  };
+  }
 }
 export function encodeOrder(order: Order): string {
   return (
-    "0x" +
-    order.userId.toHexString().slice(2).padStart(16, "0") +
-    order.buyAmount.toHexString().slice(2).padStart(24, "0") +
-    order.sellAmount.toHexString().slice(2).padStart(24, "0")
-  );
+    '0x' +
+    order.userId.toHexString().slice(2).padStart(16, '0') +
+    order.buyAmount.toHexString().slice(2).padStart(24, '0') +
+    order.sellAmount.toHexString().slice(2).padStart(24, '0')
+  )
 }
 
 export function decodeOrder(bytes: string): Order {
   return {
-    userId: BigNumber.from("0x" + bytes.substring(2, 18)),
-    sellAmount: BigNumber.from("0x" + bytes.substring(43, 66)),
-    buyAmount: BigNumber.from("0x" + bytes.substring(19, 42)),
-  };
+    userId: BigNumber.from('0x' + bytes.substring(2, 18)),
+    sellAmount: BigNumber.from('0x' + bytes.substring(43, 66)),
+    buyAmount: BigNumber.from('0x' + bytes.substring(19, 42)),
+  }
 }
 
 export function toReceivedFunds(result: [BigNumber, BigNumber]): ReceivedFunds {
   return {
     auctioningTokenAmount: result[0],
     biddingTokenAmount: result[1],
-  };
+  }
 }
 
 export async function getInitialOrder(
   easyAuction: Contract,
   auctionId: BigNumber,
 ): Promise<Order> {
-  const auctionDataStruct = await easyAuction.auctionData(auctionId);
-  return decodeOrder(auctionDataStruct.initialAuctionOrder);
+  const auctionDataStruct = await easyAuction.auctionData(auctionId)
+  return decodeOrder(auctionDataStruct.initialAuctionOrder)
 }
 
 export async function getInterimOrder(
   easyAuction: Contract,
   auctionId: BigNumber,
 ): Promise<Order> {
-  const auctionDataStruct = await easyAuction.auctionData(auctionId);
-  return decodeOrder(auctionDataStruct.interimOrder);
+  const auctionDataStruct = await easyAuction.auctionData(auctionId)
+  return decodeOrder(auctionDataStruct.interimOrder)
 }
 
 export async function getAuctionEndTimeStamp(
   easyAuction: Contract,
   auctionId: BigNumber,
 ): Promise<BigNumber> {
-  const auctionDataStruct = await easyAuction.auctionData(auctionId);
-  return auctionDataStruct.auctionEndDate;
+  const auctionDataStruct = await easyAuction.auctionData(auctionId)
+  return auctionDataStruct.auctionEndDate
 }
 
 export function hasLowerClearingPrice(order1: Order, order2: Order): number {
@@ -96,16 +96,16 @@ export function hasLowerClearingPrice(order1: Order, order2: Order): number {
       .mul(order2.sellAmount)
       .lt(order2.buyAmount.mul(order1.sellAmount))
   )
-    return -1;
-  if (order1.buyAmount.lt(order2.buyAmount)) return -1;
+    return -1
+  if (order1.buyAmount.lt(order2.buyAmount)) return -1
   if (
     order1.buyAmount
       .mul(order2.sellAmount)
       .eq(order2.buyAmount.mul(order1.sellAmount))
   ) {
-    if (order1.userId < order2.userId) return -1;
+    if (order1.userId < order2.userId) return -1
   }
-  return 1;
+  return 1
 }
 
 export async function calculateClearingPrice(
@@ -113,19 +113,17 @@ export async function calculateClearingPrice(
   auctionId: BigNumber,
   debug = false,
 ): Promise<{ clearingOrder: Order; numberOfOrdersToClear: number }> {
-  const initialOrder = await getInitialOrder(easyAuction, auctionId);
-  const sellOrders = await getAllSellOrders(easyAuction, auctionId);
-  sellOrders.sort(function (a: Order, b: Order) {
-    return hasLowerClearingPrice(a, b);
-  });
+  const initialOrder = await getInitialOrder(easyAuction, auctionId)
+  const sellOrders = await getAllSellOrders(easyAuction, auctionId)
+  sellOrders.sort((a: Order, b: Order) => hasLowerClearingPrice(a, b))
 
-  printOrders(sellOrders, false, debug);
-  printOrders([initialOrder], true, debug);
-  const clearingPriceOrder = findClearingPrice(sellOrders, initialOrder);
-  printOrders([clearingPriceOrder], false, debug);
-  const interimOrder = await getInterimOrder(easyAuction, auctionId);
-  printOrders([interimOrder], false, debug);
-  let numberOfOrdersToClear;
+  printOrders(sellOrders, false, debug)
+  printOrders([initialOrder], true, debug)
+  const clearingPriceOrder = findClearingPrice(sellOrders, initialOrder)
+  printOrders([clearingPriceOrder], false, debug)
+  const interimOrder = await getInterimOrder(easyAuction, auctionId)
+  printOrders([interimOrder], false, debug)
+  let numberOfOrdersToClear
   if (
     interimOrder ===
     {
@@ -136,48 +134,48 @@ export async function calculateClearingPrice(
   ) {
     numberOfOrdersToClear = sellOrders.filter((order) =>
       hasLowerClearingPrice(order, clearingPriceOrder),
-    ).length;
+    ).length
   } else {
     numberOfOrdersToClear = sellOrders.filter(
       (order) =>
         hasLowerClearingPrice(order, clearingPriceOrder) &&
         hasLowerClearingPrice(interimOrder, order),
-    ).length;
+    ).length
   }
 
   return {
     clearingOrder: clearingPriceOrder,
     numberOfOrdersToClear,
-  };
+  }
 }
 
 function printOrders(orders: Order[], isInitialOrder: boolean, debug = false) {
-  const log = debug ? (...a: any) => console.log(...a) : () => {};
+  const log = debug ? (...a: any) => console.log(...a) : () => {}
 
   if (isInitialOrder) {
-    log("Initial order");
+    log('Initial order')
     orders.map((order) => {
       log(
-        "selling ",
+        'selling ',
         order.sellAmount.toString(),
-        " for ",
+        ' for ',
         order.buyAmount.toString(),
-        " at price of",
+        ' at price of',
         order.sellAmount.div(order.buyAmount).toString(),
-      );
-    });
+      )
+    })
   } else {
-    log("Participation orders");
+    log('Participation orders')
     orders.map((order) => {
       log(
-        "selling ",
+        'selling ',
         order.sellAmount.toString(),
-        " for ",
+        ' for ',
         order.buyAmount.toString(),
-        " at price of",
+        ' at price of',
         order.buyAmount.div(order.sellAmount).toString(),
-      );
-    });
+      )
+    })
   }
 }
 
@@ -185,17 +183,17 @@ export function findClearingPrice(
   sellOrders: Order[],
   initialAuctionOrder: Order,
 ): Order {
-  sellOrders.forEach(function (order, index) {
+  sellOrders.forEach((order, index) => {
     if (index > 1) {
       if (!hasLowerClearingPrice(sellOrders[index - 1], order)) {
-        throw Error("The orders must be sorted");
+        throw Error('The orders must be sorted')
       }
     }
-  });
-  let totalSellVolume = BigNumber.from(0);
+  })
+  let totalSellVolume = BigNumber.from(0)
 
   for (const order of sellOrders) {
-    totalSellVolume = totalSellVolume.add(order.sellAmount);
+    totalSellVolume = totalSellVolume.add(order.sellAmount)
     if (
       totalSellVolume
         .mul(order.buyAmount)
@@ -207,18 +205,18 @@ export function findClearingPrice(
           .sub(order.sellAmount)
           .mul(order.buyAmount)
           .div(order.sellAmount),
-      );
+      )
       const sellAmountClearingOrder = coveredBuyAmount
         .mul(order.sellAmount)
-        .div(order.buyAmount);
+        .div(order.buyAmount)
       if (sellAmountClearingOrder.gt(BigNumber.from(0))) {
-        return order;
+        return order
       } else {
         return {
           userId: BigNumber.from(0),
           buyAmount: initialAuctionOrder.sellAmount,
           sellAmount: totalSellVolume.sub(order.sellAmount),
-        };
+        }
       }
     }
   }
@@ -228,13 +226,13 @@ export function findClearingPrice(
       userId: BigNumber.from(0),
       buyAmount: initialAuctionOrder.sellAmount,
       sellAmount: totalSellVolume,
-    };
+    }
   } else {
     return {
       userId: BigNumber.from(0),
       buyAmount: initialAuctionOrder.sellAmount,
       sellAmount: initialAuctionOrder.buyAmount,
-    };
+    }
   }
 }
 
@@ -247,39 +245,39 @@ export async function getAllSellOrders(
     null,
     null,
     null,
-  );
-  const logs = await easyAuction.queryFilter(filterSellOrders, 0, "latest");
-  const events = logs.map((log: any) => easyAuction.interface.parseLog(log));
+  )
+  const logs = await easyAuction.queryFilter(filterSellOrders, 0, 'latest')
+  const events = logs.map((log: any) => easyAuction.interface.parseLog(log))
   const sellOrders = events.map((x: any) => {
     const order: Order = {
       userId: x.args[1],
       sellAmount: x.args[3],
       buyAmount: x.args[2],
-    };
-    return order;
-  });
+    }
+    return order
+  })
 
-  const filterOrderCancellations = easyAuction.filters.CancellationSellOrder;
+  const filterOrderCancellations = easyAuction.filters.CancellationSellOrder
   const logsForCancellations = await easyAuction.queryFilter(
     filterOrderCancellations(),
     0,
-    "latest",
-  );
+    'latest',
+  )
   const eventsForCancellations = logsForCancellations.map((log: any) =>
     easyAuction.interface.parseLog(log),
-  );
+  )
   const sellOrdersDeletions = eventsForCancellations.map((x: any) => {
     const order: Order = {
       userId: x.args[1],
       sellAmount: x.args[3],
       buyAmount: x.args[2],
-    };
-    return order;
-  });
+    }
+    return order
+  })
   for (const orderDeletion of sellOrdersDeletions) {
-    sellOrders.splice(sellOrders.indexOf(orderDeletion), 1);
+    sellOrders.splice(sellOrders.indexOf(orderDeletion), 1)
   }
-  return sellOrders;
+  return sellOrders
 }
 
 export async function createTokensAndMintAndApprove(
@@ -287,29 +285,29 @@ export async function createTokensAndMintAndApprove(
   users: Wallet[],
   hre: HardhatRuntimeEnvironment,
 ): Promise<{ auctioningToken: Contract; biddingToken: Contract }> {
-  const ERC20 = await hre.ethers.getContractFactory("ERC20Mintable");
-  const biddingToken = await ERC20.deploy("BT", "BT");
-  const auctioningToken = await ERC20.deploy("BT", "BT");
+  const ERC20 = await hre.ethers.getContractFactory('ERC20Mintable')
+  const biddingToken = await ERC20.deploy('BT', 'BT')
+  const auctioningToken = await ERC20.deploy('BT', 'BT')
 
   for (const user of users) {
-    await biddingToken.mint(user.address, BigNumber.from(10).pow(30));
+    await biddingToken.mint(user.address, BigNumber.from(10).pow(30))
     await biddingToken
       .connect(user)
-      .approve(easyAuction.address, BigNumber.from(10).pow(30));
+      .approve(easyAuction.address, BigNumber.from(10).pow(30))
 
-    await auctioningToken.mint(user.address, BigNumber.from(10).pow(30));
+    await auctioningToken.mint(user.address, BigNumber.from(10).pow(30))
     await auctioningToken
       .connect(user)
-      .approve(easyAuction.address, BigNumber.from(10).pow(30));
+      .approve(easyAuction.address, BigNumber.from(10).pow(30))
   }
-  return { auctioningToken: auctioningToken, biddingToken: biddingToken };
+  return { auctioningToken: auctioningToken, biddingToken: biddingToken }
 }
 
 export function toPrice(result: [BigNumber, BigNumber]): Price {
   return {
     priceNumerator: result[0],
     priceDenominator: result[1],
-  };
+  }
 }
 
 export async function placeOrders(
@@ -328,7 +326,7 @@ export async function placeOrders(
         [sellOrder.buyAmount],
         [sellOrder.sellAmount],
         [queueStartElement],
-        "0x",
-      );
+        '0x',
+      )
   }
 }

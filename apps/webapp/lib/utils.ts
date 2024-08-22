@@ -1,6 +1,6 @@
 import axios from 'axios'
-import { clsx, type ClassValue } from 'clsx'
-import { MotionProps } from 'framer-motion'
+import { type ClassValue, clsx } from 'clsx'
+import type { MotionProps } from 'framer-motion'
 import { twMerge } from 'tailwind-merge'
 
 export function cn(...inputs: ClassValue[]) {
@@ -12,14 +12,14 @@ export function handleAxiosError(error: unknown) {
     return {
       data: error.response.data,
       status: error.response.status,
-      headers: error.response.headers
+      headers: error.response.headers,
     }
   } else {
     console.error('An error occurred:', error)
     return {
       data: error as Error,
       status: (error as Error).name,
-      headers: null
+      headers: null,
     }
   }
 }
@@ -29,7 +29,7 @@ export function scrollToElement(element: HTMLElement | null) {
   element.scrollIntoView({
     behavior: 'smooth',
     block: 'start',
-    inline: 'nearest'
+    inline: 'nearest',
   })
 }
 
@@ -38,16 +38,16 @@ const iconMotionProps: MotionProps & React.ComponentProps<'span'> = {
   animate: { opacity: 1, scale: 1 },
   exit: { opacity: 0, scale: 0 },
   transition: { duration: 0.3 },
-  className: 'absolute inset-0 flex items-center justify-center self-center'
+  className: 'absolute inset-0 flex items-center justify-center self-center',
 }
 
 export const motionProps = {
-  iconMotionProps
+  iconMotionProps,
 }
 
 export async function promiseAllWithConcurrencyLimit<T>(
   tasks: (() => Promise<T>)[],
-  concurrencyLimit: number
+  concurrencyLimit: number,
 ): Promise<T[]> {
   const results: T[] = new Array(tasks.length)
   const executing: Promise<void>[] = []
@@ -55,7 +55,7 @@ export async function promiseAllWithConcurrencyLimit<T>(
   for (let i = 0; i < tasks.length; i++) {
     const task = tasks[i]
 
-    const p = task().then(result => {
+    const p = task().then((result) => {
       results[i] = result
     })
 

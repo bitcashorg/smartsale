@@ -2,10 +2,7 @@
   "relatedBlogs": [],
   "blogContent": {
     "id": "173980855",
-    "topics": [
-      "投资",
-      "债券"
-    ],
+    "topics": ["投资", "债券"],
     "title": "掌握固定收益投资：债券、定期存单和货币市场基金",
     "slug": "mastering-fixed-income-investments-bonds-cds-and-money-market-funds",
     "authorName": "Mister Moneybags",
@@ -31,9 +28,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Introduction"
                     }
                   ]
@@ -43,7 +38,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Welcome, fellow investors, to a world of financial stability and steady income. Imagine a landscape adorned with towering trees, representing the pillars of fixed-income investments. These investments, like sturdy trees, provide a solid foundation for your financial journey, offering security and income even in turbulent times."
+                      "value": "Welcome, fellow contributors, to a world of financial stability and steady income. Imagine a landscape adorned with towering trees, representing the pillars of fixed-income investments. These investments, like sturdy trees, provide a solid foundation for your financial journey, offering security and income even in turbulent times."
                     }
                   ]
                 },
@@ -139,9 +134,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Bonds: The Cornerstone of Fixed-Income Investing"
                     }
                   ]
@@ -160,9 +153,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "A. What Are Bonds?"
                     }
                   ]
@@ -172,7 +163,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Imagine a bond as a contractual agreement between an investor and a borrower. When you invest in a bond, you essentially become a lender, providing funds to the borrower (such as a government or corporation) for a specified period. In return, the borrower promises to repay the principal amount at maturity and pay periodic interest payments throughout the bond's life."
+                      "value": "Imagine a bond as a contractual agreement between an contributor and a borrower. When you contribute in a bond, you essentially become a lender, providing funds to the borrower (such as a government or corporation) for a specified period. In return, the borrower promises to repay the principal amount at maturity and pay periodic interest payments throughout the bond's life."
                     }
                   ]
                 },
@@ -181,9 +172,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "B. Types of Bonds"
                     }
                   ]
@@ -200,9 +189,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Government Bonds:"
                             },
                             {
@@ -221,9 +208,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Corporate Bonds:"
                             },
                             {
@@ -242,14 +227,12 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Municipal Bonds:"
                             },
                             {
                               "type": "span",
-                              "value": " Picture municipal bonds as bridges connecting investors to local communities. These bonds are issued by municipalities, such as cities or states, to fund public projects like infrastructure development. Municipal bonds often offer tax advantages, making them an attractive choice for certain investors."
+                              "value": " Picture municipal bonds as bridges connecting contributors to local communities. These bonds are issued by municipalities, such as cities or states, to fund public projects like infrastructure development. Municipal bonds often offer tax advantages, making them an attractive choice for certain contributors."
                             }
                           ]
                         }
@@ -262,9 +245,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "C. Bond Pricing and Yield"
                     }
                   ]
@@ -283,7 +264,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Yield, the income generated by a bond, is a crucial element for investors. It represents the interest payments received relative to the bond's price. Understanding the relationship between bond prices and yields is essential for making informed investment decisions."
+                      "value": "Yield, the income generated by a bond, is a crucial element for contributors. It represents the interest payments received relative to the bond's price. Understanding the relationship between bond prices and yields is essential for making informed investment decisions."
                     }
                   ]
                 },
@@ -292,9 +273,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "D. Risks and Returns of Bonds"
                     }
                   ]
@@ -331,9 +310,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "E. Tips for Investing in Bonds"
                     }
                   ]
@@ -461,9 +438,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Certificates of Deposit (CDs): A Secure Path to Steady Returns"
                     }
                   ]
@@ -473,7 +448,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Imagine a secure vault filled with golden coins, representing the world of certificates of deposit (CDs). These financial instruments offer a safe haven for investors seeking stability and predictable returns. Let's delve into the realm of CDs, unraveling their secrets and discovering the benefits they bring to your investment journey."
+                      "value": "Imagine a secure vault filled with golden coins, representing the world of certificates of deposit (CDs). These financial instruments offer a safe haven for contributors seeking stability and predictable returns. Let's delve into the realm of CDs, unraveling their secrets and discovering the benefits they bring to your investment journey."
                     }
                   ]
                 },
@@ -482,9 +457,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "A. Understanding CDs"
                     }
                   ]
@@ -494,7 +467,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Certificates of Deposit, commonly known as CDs, are time deposits offered by banks and credit unions. When you invest in a CD, you agree to leave your funds with the institution for a specific period, known as the maturity term. In return, the institution pays you interest on your investment, which is typically higher than regular savings accounts."
+                      "value": "Certificates of Deposit, commonly known as CDs, are time deposits offered by banks and credit unions. When you contribute in a CD, you agree to leave your funds with the institution for a specific period, known as the maturity term. In return, the institution pays you interest on your investment, which is typically higher than regular savings accounts."
                     }
                   ]
                 },
@@ -503,9 +476,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "B. Benefits of CDs"
                     }
                   ]
@@ -515,7 +486,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "CDs provide several enticing benefits for investors:"
+                      "value": "CDs provide several enticing benefits for contributors:"
                     }
                   ]
                 },
@@ -531,9 +502,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Security:"
                             },
                             {
@@ -552,9 +521,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Steady Returns:"
                             },
                             {
@@ -573,9 +540,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Diverse Options:"
                             },
                             {
@@ -593,9 +558,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "C. Different Types of CDs"
                     }
                   ]
@@ -621,9 +584,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Traditional CDs:"
                             },
                             {
@@ -642,14 +603,12 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Jumbo CDs:"
                             },
                             {
                               "type": "span",
-                              "value": " If you have a substantial sum to invest, jumbo CDs provide higher interest rates for larger deposits."
+                              "value": " If you have a substantial sum to contribute, jumbo CDs provide higher interest rates for larger deposits."
                             }
                           ]
                         }
@@ -663,9 +622,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Flexible CDs:"
                             },
                             {
@@ -683,9 +640,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "D. Evaluating Risks and Returns"
                     }
                   ]
@@ -711,9 +666,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Interest Rate Risk:"
                             },
                             {
@@ -732,9 +685,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Early Withdrawal Penalties:"
                             },
                             {
@@ -752,9 +703,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "E. Strategies for CD Investing"
                     }
                   ]
@@ -780,9 +729,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "CD Laddering:"
                             },
                             {
@@ -801,9 +748,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Barbell Approach:"
                             },
                             {
@@ -822,9 +767,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "CD Alternatives:"
                             },
                             {
@@ -875,9 +818,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Money Market Funds: The Bridge Between Safety and Liquidity"
                     }
                   ]
@@ -896,9 +837,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "A. Introduction to Money Market Funds"
                     }
                   ]
@@ -908,7 +847,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Money market funds are investment vehicles that aim to provide stability, liquidity, and a modest level of return. These funds invest in highly liquid, short-term debt securities, such as Treasury bills, commercial paper, and certificates of deposit, issued by governments, corporations, and financial institutions."
+                      "value": "Money market funds are investment vehicles that aim to provide stability, liquidity, and a modest level of return. These funds contribute in highly liquid, short-term debt securities, such as Treasury bills, commercial paper, and certificates of deposit, issued by governments, corporations, and financial institutions."
                     }
                   ]
                 },
@@ -917,9 +856,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "B. Characteristics of Money Market Funds"
                     }
                   ]
@@ -945,14 +882,12 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Stability:"
                             },
                             {
                               "type": "span",
-                              "value": " Money market funds prioritize capital preservation by investing in low-risk securities with short maturities. This focus on stability makes them an attractive option for investors seeking to protect their principal."
+                              "value": " Money market funds prioritize capital preservation by investing in low-risk securities with short maturities. This focus on stability makes them an attractive option for contributors seeking to protect their principal."
                             }
                           ]
                         }
@@ -966,9 +901,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Liquidity:"
                             },
                             {
@@ -987,9 +920,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Modest Returns:"
                             },
                             {
@@ -1007,9 +938,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "C. Benefits and Risks of Money Market Funds"
                     }
                   ]
@@ -1035,14 +964,12 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Benefits:"
                             },
                             {
                               "type": "span",
-                              "value": " Money market funds offer stability, liquidity, and convenience. They serve as a valuable tool for investors seeking a safe place to hold cash temporarily or as a component of a diversified portfolio."
+                              "value": " Money market funds offer stability, liquidity, and convenience. They serve as a valuable tool for contributors seeking a safe place to hold cash temporarily or as a component of a diversified portfolio."
                             }
                           ]
                         }
@@ -1056,9 +983,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Risks:"
                             },
                             {
@@ -1076,9 +1001,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "D. Choosing the Right Money Market Fund"
                     }
                   ]
@@ -1104,9 +1027,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Expense Ratios:"
                             },
                             {
@@ -1125,9 +1046,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Fund Provider Reputation:"
                             },
                             {
@@ -1146,9 +1065,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Fund Objectives:"
                             },
                             {
@@ -1166,9 +1083,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "E. Incorporating Money Market Funds in Your Investment Strategy"
                     }
                   ]
@@ -1194,9 +1109,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Cash Reserves:"
                             },
                             {
@@ -1215,9 +1128,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Diversification:"
                             },
                             {
@@ -1236,9 +1147,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Transitionary Phase:"
                             },
                             {
@@ -1289,9 +1198,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Building a Diversified Fixed-Income Portfolio"
                     }
                   ]
@@ -1310,9 +1217,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "A. Importance of Diversification"
                     }
                   ]
@@ -1331,9 +1236,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "B. Balancing Risk and Return"
                     }
                   ]
@@ -1352,9 +1255,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "C. Strategies for Portfolio Allocation"
                     }
                   ]
@@ -1380,9 +1281,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Asset Allocation:"
                             },
                             {
@@ -1401,9 +1300,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Sector Allocation:"
                             },
                             {
@@ -1422,9 +1319,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Maturity Allocation:"
                             },
                             {
@@ -1442,9 +1337,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "D. Rebalancing Your Fixed-Income Portfolio"
                     }
                   ]
@@ -1496,9 +1389,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Conclusion"
                     }
                   ]
@@ -1565,7 +1456,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "We have discussed the importance of diversification, balancing risk and return, strategic portfolio allocation, and the significance of rebalancing to maintain your desired risk profile. By embracing these concepts, investors can navigate the fixed-income landscape with confidence."
+                      "value": "We have discussed the importance of diversification, balancing risk and return, strategic portfolio allocation, and the significance of rebalancing to maintain your desired risk profile. By embracing these concepts, contributors can navigate the fixed-income landscape with confidence."
                     }
                   ]
                 },
@@ -1574,7 +1465,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "As we conclude, let's empower investors with a final burst of encouragement and motivation. Investing in fixed-income instruments opens doors to stability, income, and diversification. But remember, successful investing requires continuous learning and adaptation. Stay curious, remain vigilant, and seize opportunities that lie beyond conventional thinking."
+                      "value": "As we conclude, let's empower contributors with a final burst of encouragement and motivation. Investing in fixed-income instruments opens doors to stability, income, and diversification. But remember, successful investing requires continuous learning and adaptation. Stay curious, remain vigilant, and seize opportunities that lie beyond conventional thinking."
                     }
                   ]
                 },
@@ -1592,7 +1483,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "As you embark on your fixed-income investment journey, envision yourself as part of a vibrant community of confident investors, standing tall and proud of the portfolios you have built. Embrace the power of fixed-income investments, knowing that your financial future is within your grasp."
+                      "value": "As you embark on your fixed-income investment journey, envision yourself as part of a vibrant community of confident contributors, standing tall and proud of the portfolios you have built. Embrace the power of fixed-income investments, knowing that your financial future is within your grasp."
                     }
                   ]
                 },
@@ -1635,8 +1526,5 @@
       }
     }
   },
-  "topics": [
-    "投资",
-    "债券"
-  ]
+  "topics": ["投资", "债券"]
 }

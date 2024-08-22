@@ -1,18 +1,18 @@
-import { getProjectBySlug, getProjects } from '@/lib/projects'
-import { redirect } from 'next/navigation'
-import { cn } from '@/lib/utils'
-import { ProjectHeader } from '@/components/routes/project/project-header'
 import { ProjectDataCard } from '@/components/routes/project/project-data-card'
-import { Card } from '@/components/ui/card'
+import { ProjectHeader } from '@/components/routes/project/project-header'
 import { Countdown } from '@/components/shared/countdown'
-import Link from 'next/link'
-import dynamic from 'next/dynamic'
 import { Button } from '@/components/ui/button'
-import { locales } from '@/dictionaries/locales'
+import { Card } from '@/components/ui/card'
 import { getDictionary } from '@/dictionaries'
+import { locales } from '@/dictionaries/locales'
 import { appConfig } from '@/lib/config'
+import { getProjectBySlug, getProjects } from '@/lib/projects'
+import { cn } from '@/lib/utils'
+import type { ProjectPageParams, ProjectPageProps } from '@/types/routing.type'
+import dynamic from 'next/dynamic'
 import Image from 'next/image'
-import { ProjectPageProps, ProjectPageParams } from '@/types/routing.type'
+import Link from 'next/link'
+import { redirect } from 'next/navigation'
 
 export default async function ProjectPage({ params }: ProjectPageProps) {
   const dict = await getDictionary(params.lang)
@@ -57,7 +57,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                     'backdrop-x my-10 overflow-hidden rounded-3xl bg-primary/70 pb-10',
                   index % 2 !== 0
                     ? `backdrop-x rounded-3xl bg-primary/70 pb-10`
-                    : ''
+                    : '',
                 )}
               >
                 <div className="relative mb-14 h-[400px] w-full">
@@ -81,7 +81,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                             key={`${index}__${(projectContent[pcKey].title as string).replace(/\s/g, '-')}`}
                             className="grid gap-16 px-6 list-disc list-outside lg:grid-flow-cols-4 sm:grid-cols-2 md:grid-cols-3"
                           >
-                            {content.slice(0, 6).map(item => {
+                            {content.slice(0, 6).map((item) => {
                               const text = item.split(': ')
                               return (
                                 <div key={`${item}__list-item`}>
@@ -102,7 +102,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                       //     {item}
                       //   </p>
                       // ))
-                    }
+                    },
                   )}
                 </div>
               </section>
@@ -120,11 +120,11 @@ export async function generateStaticParams(): Promise<ProjectPageParams[]> {
       locales.map(async (lang): Promise<ProjectPageParams[]> => {
         const dict = await getDictionary(lang)
         return getProjects(dict)
-          .map(project =>
-            project.slug ? { lang, project: project.slug } : null
+          .map((project) =>
+            project.slug ? { lang, project: project.slug } : null,
           )
           .filter((param): param is ProjectPageParams => param !== null)
-      })
+      }),
     )
   ).flat()
 
@@ -134,10 +134,10 @@ export async function generateStaticParams(): Promise<ProjectPageParams[]> {
 const DynamicAddressForm = dynamic(
   () =>
     import('../../../../components/routes/project/register-address-form').then(
-      mod => mod.RegisterAddressForm
+      (mod) => mod.RegisterAddressForm,
     ),
   {
     ssr: false,
-    loading: () => <Button className="flex">Register</Button>
-  }
+    loading: () => <Button className="flex">Register</Button>,
+  },
 )

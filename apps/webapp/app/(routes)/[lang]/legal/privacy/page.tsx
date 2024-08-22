@@ -1,8 +1,8 @@
-import React from 'react'
-import { Metadata } from 'next'
 import { PageContent } from '@/components/shared/content'
 import { getDictionary } from '@/dictionaries'
-import { CommonPageProps } from '@/types/routing.type'
+import type { CommonPageProps } from '@/types/routing.type'
+import type { Metadata } from 'next'
+import React from 'react'
 
 export default async function PrivacyPolicy({ params }: CommonPageProps) {
   const dict = await getDictionary(params.lang)
@@ -16,5 +16,5 @@ export default async function PrivacyPolicy({ params }: CommonPageProps) {
 export const metadata: Metadata = {
   title: 'Privacy Policy | Bitlauncher',
   description:
-    'Read our Privacy Policy to understand how we protect and manage your data in our crypto launchpad application.'
+    'Read our Privacy Policy to understand how we protect and manage your data in our crypto launchpad application.',
 }

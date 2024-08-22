@@ -1,12 +1,12 @@
 'use client'
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Handshake, Users } from 'lucide-react'
 import { useSupabaseClient } from '@/services/supabase'
-import { formatUnits } from 'viem'
-import { useEffect, useState } from 'react'
-import { SupabaseClient } from '@supabase/supabase-js'
 import { Tables } from '@repo/supabase'
+import type { SupabaseClient } from '@supabase/supabase-js'
+import { Handshake, Users } from 'lucide-react'
+import { useEffect, useState } from 'react'
+import { formatUnits } from 'viem'
 
 export function ProjectPresaleData() {
   const [contributors, setContributors] = useState<string[]>([])
@@ -29,23 +29,23 @@ export function ProjectPresaleData() {
       .on(
         'postgres_changes',
         { event: '*', schema: 'public', table: 'transfer' },
-        payload => {
+        (payload) => {
           const { eventType, new: newData, old: oldData } = payload
           if (payload.eventType === 'INSERT') {
-            setContributors(prev =>
+            setContributors((prev) =>
               Array.from(
                 new Set(
                   [...prev, payload.new.from].filter(
-                    (from): from is string => from !== null
-                  )
-                )
-              )
+                    (from): from is string => from !== null,
+                  ),
+                ),
+              ),
             )
-            setTotalRaised(prev => prev + BigInt(payload.new.amount || 0))
+            setTotalRaised((prev) => prev + BigInt(payload.new.amount || 0))
           } else if (payload.eventType === 'DELETE') {
-            setTotalRaised(prev => prev - BigInt(payload.old.amount || 0))
+            setTotalRaised((prev) => prev - BigInt(payload.old.amount || 0))
           }
-        }
+        },
       )
       .subscribe()
 
@@ -84,7 +84,7 @@ export function ProjectPresaleData() {
 }
 
 async function getPresaleContributors(
-  supabase: SupabaseClient
+  supabase: SupabaseClient,
 ): Promise<PresaleContributorsResult> {
   try {
     const { data, error } = await supabase
@@ -98,34 +98,34 @@ async function getPresaleContributors(
       return {
         success: true,
         data: [],
-        message: 'No data found'
+        message: 'No data found',
       }
     }
 
     const uniqueContributors = Array.from(
       new Set(
         data
-          .map(item => item.from)
-          .filter((from): from is string => from !== null)
-      )
+          .map((item) => item.from)
+          .filter((from): from is string => from !== null),
+      ),
     )
     return {
       success: true,
       data: uniqueContributors,
-      message: 'Data fetched successfully'
+      message: 'Data fetched successfully',
     }
   } catch (error) {
     console.error('Unexpected error:', error)
     return {
       success: false,
       error,
-      message: 'An unexpected error occurred'
+      message: 'An unexpected error occurred',
     }
   }
 }
 
 async function getTotalPresaleAmount(
-  supabase: SupabaseClient
+  supabase: SupabaseClient,
 ): Promise<PresaleTotalAmountResult> {
   try {
     const { data, error } = await supabase
@@ -138,7 +138,7 @@ async function getTotalPresaleAmount(
       return {
         success: true,
         data: 0,
-        message: 'No data found'
+        message: 'No data found',
       }
     }
 
@@ -147,14 +147,14 @@ async function getTotalPresaleAmount(
     return {
       success: true,
       data: totalAmount,
-      message: 'Total amount fetched successfully'
+      message: 'Total amount fetched successfully',
     }
   } catch (error) {
     console.error('Unexpected error:', error)
     return {
       success: false,
       error,
-      message: 'An unexpected error occurred'
+      message: 'An unexpected error occurred',
     }
   }
 }
