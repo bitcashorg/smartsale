@@ -122,39 +122,16 @@ const content = {
         '/images/home/platform-circles.webp',
         '/images/home/platform-circles.png',
       ],
-<<<<<<< HEAD
-=======
-      images: [
-        "/images/home/platform-circles.webp",
-        "/images/home/platform-circles.png",
-      ]
->>>>>>> main
     },
     {
       title: 'How to buy the Bitlauncher $BL token?',
       paragraphs: [],
-<<<<<<< HEAD
       images: ['/images/home/bl-coins.webp', '/images/home/bl-coins.png'],
-=======
-      images: [
-        "/images/home/bl-coins.webp",
-        "/images/home/bl-coins.png",
-      ]
->>>>>>> main
     },
     {
       title: 'What is an IDO (Initial Decentralized Offering)?',
       paragraphs: [],
-<<<<<<< HEAD
       images: ['/images/home/glass.webp', '/images/home/glass.png'],
     },
   ],
-=======
-      images: [
-        "/images/home/glass.webp",
-        "/images/home/glass.png",
-      ]
-    }
-  ]
->>>>>>> main
 }
