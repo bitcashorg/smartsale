@@ -1,11 +1,10 @@
 import crypto from 'crypto'
 import { addressActivityTask } from '@repo/trigger'
 import type { Request, Response } from 'express'
-import { logger } from '~/lib/logger'
-import { appConfig } from '../config'
+import { appConfig } from '~/config'
 
 export function alchemyWebhook(req: Request, res: Response) {
-    logger.info(JSON.stringify(req.body))
+  console.log(JSON.stringify(req.body))
 
     // TODO: fix alchemy signature validation
     // https://git.new/alchemy-hooks-ts
