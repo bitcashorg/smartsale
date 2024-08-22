@@ -32,14 +32,14 @@ export function startExpress() {
   )
 
   // Logging middleware
-  app.use(pinoHttp({ 
-    logger,
-    serializers: {
-      req: (req) => JSON.stringify(req),
-      res: (res) => JSON.stringify(res),
-      err: (err) => JSON.stringify(err)
-    }
-  }))
+  // app.use(pinoHttp({ 
+  //   logger,
+  //   serializers: {
+  //     req: (req) => JSON.stringify(req),
+  //     res: (res) => JSON.stringify(res),
+  //     err: (err) => JSON.stringify(err)
+  //   }
+  // }))
 
   // Routes
   app.get('/', healthcheck)
