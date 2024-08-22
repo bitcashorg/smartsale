@@ -2,16 +2,15 @@ import crypto from 'crypto'
 import { addressActivityTask } from '@repo/trigger'
 import type { Request, Response } from 'express'
 import { appConfig } from '~/config'
+import { logger } from '~/lib/logger'
 
 export function alchemyWebhook(req: Request, res: Response) {
-  console.log(JSON.stringify(req.body))
+  logger.info(`Alchemy webhook received: ${JSON.stringify(req.body)}`)
 
     // TODO: fix alchemy signature validation
     // https://git.new/alchemy-hooks-ts
-//   if (!validateAlchemySignature(req))
-//     return res.status(401).send('Unauthorized')
-
- 
+    //   if (!validateAlchemySignature(req))
+    //     return res.status(401).send('Unauthorized')
 
   // TODO: validate user is whitelisted
 
