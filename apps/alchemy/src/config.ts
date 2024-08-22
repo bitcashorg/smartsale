@@ -1,9 +1,5 @@
 import { z } from 'zod'
 import { isAddress } from 'viem'
-import dotenv from 'dotenv'
-import {logger} from '@/Users/gaboesquivel/Code/smartsale/apps/indexer/src/lib/logger';
-
-dotenv.config()
 
 const envSchema = z.object({
   ALCHEMY_NOTIFY_TOKEN: z.string().min(1, 'Alchemy notify token is required'),
@@ -13,7 +9,7 @@ const envSchema = z.object({
 
 const parsedEnv = envSchema.safeParse(process.env)
 if (!parsedEnv.success) {
-logger.error(`Environment validation failed: ${JSON.stringify(parsedEnv.error.format())}`)
+  console.error(`Environment validation failed: ${JSON.stringify(parsedEnv.error.format())}`)
   process.exit(1)
 }
 
