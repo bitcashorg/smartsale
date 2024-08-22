@@ -58,7 +58,7 @@ export function startExpress() {
 
   // Handle uncaught exceptions
   process.on('uncaughtException', (error: Error) => {
-    logger.error(error, 'Uncaught Exception')
+    logger.error(JSON.stringify(error), 'Uncaught Exception')
     // It's generally recommended to exit the process on uncaught exceptions
     process.exit(1)
   })

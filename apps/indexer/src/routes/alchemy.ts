@@ -8,7 +8,7 @@ export function alchemyWebhook(req: Request, res: Response) {
   if (!validateAlchemySignature(req))
     return res.status(401).send('Unauthorized')
 
-  logger.info(req.body)
+  logger.info(JSON.stringify(req.body))
 
   // TODO: validate user is whitelisted
 
