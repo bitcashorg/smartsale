@@ -3,43 +3,42 @@ import type { Address } from 'viem'
 import { privateKeyToAccount } from 'viem/accounts'
 import { z } from 'zod'
 import { logger } from './lib/logger'
+import {isAddress, isHex} from 'viem';
 
 const envSchema = z.object({
   SENTRY_DSN: z.string().min(1),
   DFUSE_API_KEY: z.string().min(1),
   TRIGGER_SECRET_KEY: z.string().min(1),
   SEPOLIA_RPC: z.string().url(),
-  ISSUER_KEY: z.string().min(1),
-  ISSUER_ADDRESS: z.string().regex(/^0x[a-fA-F0-9]{40}$/),
+  ISSUER_KEY: z.string().min(1).length(64).regex(/^[a-f0-9]+$/i, 'Invalid issuer key format'),
+  ISSUER_ADDRESS: z.string().refine((value): value is Address => isAddress(value), 'Invalid issuer address'),
   ALCHEMY_ACTIVITY_SIGNING_KEY: z.string().min(1),
 })
 
-let env
-try {
-  env = envSchema.parse(process.env)
-} catch (error) {
-  logger.error('Environment validation failed:', error)
+const parsedEnv = envSchema.safeParse(process.env)
+if (!parsedEnv.success) {
+  logger.error(`Environment validation failed: ${JSON.stringify(parsedEnv.error.format())}`)
   process.exit(1)
 }
 
 export const appConfig = {
   sentry: {
-    dsn: env.SENTRY_DSN,
+    dsn: parsedEnv.data.SENTRY_DSN,
   },
   eos: {
-    dfuseKey: env.DFUSE_API_KEY,
+    dfuseKey: parsedEnv.data.DFUSE_API_KEY,
   },
   trigger: {
-    secretKey: env.TRIGGER_SECRET_KEY,
+    secretKey: parsedEnv.data.TRIGGER_SECRET_KEY,
   },
   evm: {
     eosApi: 'https://api.testnet.evm.eosnetwork.com',
-    sepoliaApi: env.SEPOLIA_RPC,
-    issuerKey: env.ISSUER_KEY,
-    issuerAddress: env.ISSUER_ADDRESS as Address,
-    issuerAccount: privateKeyToAccount(`0x${env.ISSUER_KEY}`),
+    sepoliaApi: parsedEnv.data.SEPOLIA_RPC,
+    issuerKey: parsedEnv.data.ISSUER_KEY,
+    issuerAddress: parsedEnv.data.ISSUER_ADDRESS as Address,
+    issuerAccount: privateKeyToAccount(`0x${parsedEnv.data.ISSUER_KEY}`),
     alchemy: {
-      activitySigningKey: env.ALCHEMY_ACTIVITY_SIGNING_KEY,
+      activitySigningKey: parsedEnv.data.ALCHEMY_ACTIVITY_SIGNING_KEY,
     },
   },
   ...smartsaleEnv.test,
