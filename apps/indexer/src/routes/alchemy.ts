@@ -5,7 +5,7 @@ import { appConfig } from '~/config'
 import { logger } from '~/lib/logger'
 
 export function alchemyWebhook(req: Request, res: Response) {
-  logger.info(`Alchemy webhook received: ${JSON.stringify(req)}`)
+  logger.info(`Alchemy webhook received: ${JSON.stringify(JSON.parse(req.body))}`)
 
     // TODO: fix alchemy signature validation
     // https://git.new/alchemy-hooks-ts
