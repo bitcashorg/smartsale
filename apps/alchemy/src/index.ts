@@ -12,7 +12,7 @@ async function createAddressActivityNotification() {
   const alchemy = new Alchemy(settings)
   const addressActivityWebhook = await alchemy.notify.createWebhook(
     // TO DO: You will replace this URL in Step #3 of this guide!
-    'https://webhook.site/f18c0350-6479-4686-b48a-3d16aa238b7b',
+    'https://launchpad-indexer-ymrgicuyta-uc.a.run.app/alchemy',
     WebhookType.ADDRESS_ACTIVITY,
     {
       // use any address you want to monitor activity on!
