@@ -15,6 +15,9 @@ export function startExpress() {
   const app = express()
   const port = 8080
 
+  // Trust proxy
+  app.set('trust proxy', 1)
+
   // Sentry error handler
   setupSentryErrorHandler(app)
 
