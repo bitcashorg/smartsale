@@ -22,7 +22,7 @@ export function startExpress() {
   setupSentryErrorHandler(app)
 
   // Security Middlewares
-  app.use(helmet())
+  // app.use(helmet())
 
   app.use(
     rateLimit({
