@@ -5,6 +5,7 @@ import { Lang } from '@/dictionaries/locales'
 import Image from 'next/image'
 import { LearnSection } from '@/components/layout/section/learn-section'
 import StepsSection from '@/components/layout/section/steps-section'
+import Balancer from 'react-wrap-balancer';
 
 export async function AboutBitlauncherPageLanding({
   content,
@@ -14,10 +15,10 @@ export async function AboutBitlauncherPageLanding({
   const dict = await getDictionary(lang)
   return (
     <>
-      <section className="narrow-container pt-[80]">
+      <section className="narrow-container">
         <div className="grid items-center justify-between gap-4 px-0 pb-[80px] md:px-6 lg:grid-cols-2">
           <div className="space-y-4">
-            <h2 className="sectionsHeading">{content.title}</h2>
+            <h2 className="sectionsHeading">  <Balancer>{content.title}</Balancer></h2>
             <section className="text-[18px] font-normal leading-normal opacity-60">
               {content.paragraph}
               <br />

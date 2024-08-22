@@ -9,7 +9,7 @@ import { Metadata } from 'next'
 export default async function AboutBitlauncher({ params }: CommonPageProps) {
   const dict = await getDictionary(params.lang)
   return (
-    <div className="!py-10 sm:px-6 md:px-3 md:py-24">
+    <div className="container max-w-[100vw] !overflow-hidden mx-auto md:px-4 md:py-[5rem]">
       <AboutBitlauncherPageLanding
         content={content}
         params={{

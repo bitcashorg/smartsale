@@ -25,7 +25,7 @@ export default async function IndexPage({ params: { lang } }: IndexPageProps) {
   const projects = getProjects(dict)
 
   return (
-    <div className="container max-w-[100vw] !overflow-hidden !px-4">
+    <div className="container max-w-[100vw] !overflow-hidden mx-auto md:px-4">
       <NewHomeHero />
       <DynamicUpcoming projects={projects} dict={dict} />
 

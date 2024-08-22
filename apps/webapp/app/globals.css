@@ -296,9 +296,15 @@ input[type='number'] {
   @apply text-center text-[40.50px] font-extrabold leading-[45px] md:text-4xl sm:text-4xl;
 }
 
+/* Heading in About - Security - Whitepaper */
 .sectionsHeading {
-  @apply text-[87px] font-normal leading-normal md:text-[80px];
+  @apply text-[4.188rem] font-normal leading-normal lg:text-[5.438rem];
 } 
+
+/* Subheading in About - Security - Whitepaper */
+.sectionsSubheading{
+  @apply text-start text-2xl font-medium leading-[42.35px] text-[#ff51ed] md:text-[2.188rem];
+}
 
 .heading2 {
   @apply text-2xl font-bold leading-[42px] md:text-4xl;
