@@ -1,4 +1,4 @@
-import { createServerClient, type CookieOptions } from '@supabase/ssr'
+import { type CookieOptions, createServerClient } from '@supabase/ssr'
 import { type NextRequest, NextResponse } from 'next/server'
 
 export const updateSession = async (request: NextRequest) => {
@@ -8,8 +8,8 @@ export const updateSession = async (request: NextRequest) => {
     // Create an unmodified response
     let response = NextResponse.next({
       request: {
-        headers: request.headers
-      }
+        headers: request.headers,
+      },
     })
 
     const supabase = createServerClient(
@@ -25,17 +25,17 @@ export const updateSession = async (request: NextRequest) => {
             request.cookies.set({
               name,
               value,
-              ...options
+              ...options,
             })
             response = NextResponse.next({
               request: {
-                headers: request.headers
-              }
+                headers: request.headers,
+              },
             })
             response.cookies.set({
               name,
               value,
-              ...options
+              ...options,
             })
           },
           remove(name: string, options: CookieOptions) {
@@ -43,21 +43,21 @@ export const updateSession = async (request: NextRequest) => {
             request.cookies.set({
               name,
               value: '',
-              ...options
+              ...options,
             })
             response = NextResponse.next({
               request: {
-                headers: request.headers
-              }
+                headers: request.headers,
+              },
             })
             response.cookies.set({
               name,
               value: '',
-              ...options
+              ...options,
             })
-          }
-        }
-      }
+          },
+        },
+      },
     )
 
     // This will refresh session if expired - required for Server Components
@@ -71,8 +71,8 @@ export const updateSession = async (request: NextRequest) => {
     // Check out http://localhost:3000 for Next Steps.
     return NextResponse.next({
       request: {
-        headers: request.headers
-      }
+        headers: request.headers,
+      },
     })
   }
 }

@@ -2,10 +2,7 @@
   "relatedBlogs": [
     {
       "id": "180217169",
-      "topics": [
-        "代币经济学",
-        "评论"
-      ],
+      "topics": ["代币经济学", "评论"],
       "title": "代币化激励经济学3：代币价值无法协调利益相关者[评论]",
       "slug": "economics-of-tokenized-incentives-3-token-value-won-t-align-stakeholders-commenta",
       "authorName": "Crypto Clairity",
@@ -24,10 +21,7 @@
     },
     {
       "id": "180217123",
-      "topics": [
-        "代币经济学",
-        "评论"
-      ],
+      "topics": ["代币经济学", "评论"],
       "title": "代币化激励经济学2：选择有效的绩效指标[评论]",
       "slug": "economics-of-tokenized-incentives-2-selecting-effective-performance-metrics-comme",
       "authorName": "Crypto Clairity",
@@ -46,10 +40,7 @@
     },
     {
       "id": "180217082",
-      "topics": [
-        "代币经济学",
-        "评论"
-      ],
+      "topics": ["代币经济学", "评论"],
       "title": "代币化激励经济学1：按绩效付费简介[评论]",
       "slug": "economics-of-tokenized-incentives-1-intro-to-pay-for-performance",
       "authorName": "Crypto Clairity",
@@ -68,10 +59,7 @@
     },
     {
       "id": "180556627",
-      "topics": [
-        "评论",
-        "智能合约"
-      ],
+      "topics": ["评论", "智能合约"],
       "title": "不完全合约与区块链[评论]",
       "slug": "incomplete-contracts-and-blockchain-commentary",
       "authorName": "Crypto Clairity",
@@ -90,11 +78,7 @@
     },
     {
       "id": "180563918",
-      "topics": [
-        "代币经济学",
-        "评论",
-        "融资"
-      ],
+      "topics": ["代币经济学", "评论", "融资"],
       "title": "代币：投资工具还是交换媒介（不能两者兼顾）[评论]",
       "slug": "tokens-investment-vehicle-or-medium-of-exchange-not-both-commentary",
       "authorName": "Crypto Clairity",
@@ -113,11 +97,7 @@
     },
     {
       "id": "180563922",
-      "topics": [
-        "融资",
-        "代币经济学",
-        "评论"
-      ],
+      "topics": ["融资", "代币经济学", "评论"],
       "title": "ICO利用网络效应[评论]",
       "slug": "icos-leverage-network-effects-commentary",
       "authorName": "Crypto Clairity",
@@ -136,11 +116,7 @@
     },
     {
       "id": "179948652",
-      "topics": [
-        "代币经济学",
-        "行业",
-        "摘要"
-      ],
+      "topics": ["代币经济学", "行业", "摘要"],
       "title": "数字创新和收入模式[摘要]",
       "slug": "digital-innovation-and-revenue-models-summary",
       "authorName": "Crypto Clairity",
@@ -159,11 +135,7 @@
     },
     {
       "id": "180556595",
-      "topics": [
-        "融资",
-        "代币经济学",
-        "评论"
-      ],
+      "topics": ["融资", "代币经济学", "评论"],
       "title": "区块链效应：无市场力量成本的网络效应[评论]",
       "slug": "the-blockchain-effect-network-effects-without-market-power-costs-commentary",
       "authorName": "Crypto Clairity",
@@ -182,10 +154,7 @@
     },
     {
       "id": "180563903",
-      "topics": [
-        "DAO",
-        "摘要"
-      ],
+      "topics": ["DAO", "摘要"],
       "title": "投票的目的是什么？[摘要]",
       "slug": "what-is-voting-for-summary",
       "authorName": "Crypto Clairity",
@@ -204,10 +173,7 @@
     },
     {
       "id": "180563908",
-      "topics": [
-        "DAO",
-        "摘要"
-      ],
+      "topics": ["DAO", "摘要"],
       "title": "治理的目的是什么？[摘要]",
       "slug": "what-is-governance-for-summary",
       "authorName": "Crypto Clairity",
@@ -226,10 +192,7 @@
     },
     {
       "id": "180563931",
-      "topics": [
-        "代币经济学",
-        "评论"
-      ],
+      "topics": ["代币经济学", "评论"],
       "title": "区块链激励结构：它们是什么以及为什么重要[评论]",
       "slug": "blockchain-incentive-structures-what-they-are-and-why-they-matter-commentary",
       "authorName": "Crypto Clairity",
@@ -248,11 +211,7 @@
     },
     {
       "id": "167184977",
-      "topics": [
-        "代币经济学",
-        "DAO",
-        "融资"
-      ],
+      "topics": ["代币经济学", "DAO", "融资"],
       "title": "革新股权模式：代币经济学如何颠覆创业世界",
       "slug": "revolutionizing-the-equity-model-how-tokenomics-is-disrupting-the-startup-world",
       "authorName": "Crypto Clairity",
@@ -271,10 +230,7 @@
     },
     {
       "id": "166984334",
-      "topics": [
-        "DAO",
-        "法律"
-      ],
+      "topics": ["DAO", "法律"],
       "title": "去中心化自治组织（DAO）：商业和非营利目的的基本法律结构",
       "slug": "decentralized-autonomous-organizations-daos-basic-legal-structures-for-business-a",
       "authorName": "Crypto Clairity",
@@ -293,10 +249,7 @@
     },
     {
       "id": "167101094",
-      "topics": [
-        "入门",
-        "代币经济学"
-      ],
+      "topics": ["入门", "代币经济学"],
       "title": "代币经济学101：释放加密货币的力量！",
       "slug": "tokenomics-101-unleashing-the-power-of-cryptocurrency",
       "authorName": "Crypto Clairity",
@@ -315,10 +268,7 @@
     },
     {
       "id": "166981063",
-      "topics": [
-        "入门",
-        "DAO"
-      ],
+      "topics": ["入门", "DAO"],
       "title": "未来已来：去中心化自治组织（DAO）的崛起",
       "slug": "the-future-is-here-the-rise-of-decentralized-autonomous-organizations-daos",
       "authorName": "Crypto Clairity",
@@ -338,11 +288,7 @@
   ],
   "blogContent": {
     "id": "180563939",
-    "topics": [
-      "去中心化自治组织",
-      "代币经济学",
-      "评论"
-    ],
+    "topics": ["去中心化自治组织", "代币经济学", "评论"],
     "title": "区块链治理设计框架：Prysm集团轮盘[评论]",
     "slug": "a-framework-for-blockchain-governance-design-the-prysm-group-wheel-commentary",
     "authorName": "Crypto Clairity",
@@ -479,9 +425,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Scope of Decisions"
                             },
                             {
@@ -500,9 +444,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Stakeholders / Participants"
                             },
                             {
@@ -521,9 +463,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Policy Research and Development"
                             },
                             {
@@ -542,9 +482,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Proposal Process"
                             },
                             {
@@ -563,9 +501,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Information Distribution Systems / Education"
                             },
                             {
@@ -584,9 +520,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Decision-Making Procedures"
                             },
                             {
@@ -605,9 +539,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Implementation and Property Rights"
                             },
                             {
@@ -641,9 +573,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Blockchain developers"
                             },
                             {
@@ -662,10 +592,8 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
-                              "value": "Investors"
+                              "marks": ["strong"],
+                              "value": "Contributors"
                             },
                             {
                               "type": "span",
@@ -683,9 +611,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Blockchain users"
                             },
                             {
@@ -704,9 +630,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Policy-makers and regulators"
                             },
                             {
@@ -758,9 +682,5 @@
       }
     }
   },
-  "topics": [
-    "DAO",
-    "代币经济学",
-    "评论"
-  ]
+  "topics": ["DAO", "代币经济学", "评论"]
 }

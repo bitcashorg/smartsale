@@ -4,15 +4,17 @@ import { getSesssion } from '@/actions'
 import { genLoginSigningRequest } from '@/lib/eos'
 import { useSupabaseClient } from '@/services/supabase'
 import { createContextHook } from '@blockmatic/hooks-utils'
-import { identify } from '@multibase/js'
 import { useConnectModal } from '@rainbow-me/rainbowkit'
-import { Tables } from '@repo/supabase'
+import type { Tables } from '@repo/supabase'
+import { uniq } from 'lodash'
 import { usePathname, useRouter, useSearchParams } from 'next/navigation'
-import React, { ReactNode, useEffect, useState } from 'react'
+import React, { type ReactNode, useEffect, useState } from 'react'
 import { isMobile } from 'react-device-detect'
+import toast from 'react-hot-toast'
 import { useAsync, useLocalStorage, useToggle } from 'react-use'
-import { useAccount } from 'wagmi'
 import { v4 as uuidv4 } from 'uuid'
+import { type Config, type UseAccountReturnType, useAccount } from 'wagmi'
+import { useMultibase } from './use-multibase'
 
 // Exports
 export { SessionProvider, useSession }
@@ -27,22 +29,78 @@ function useSessionFn() {
   const pathname = usePathname()
   const router = useRouter()
   const { openConnectModal } = useConnectModal()
+  const { identifyUser } = useMultibase()
   // this controls the session dialog with register and login qr codes
   // when login qr code is display a new esr is created and saved on db for later reference on callback call
   const [showSessionDialog, toggleShowSessionDialog] = useToggle(false)
   const [session, setSession] = useLocalStorage<Tables<'session'> | null>(
-    'bitcash-session'
+    'bitcash-session',
   )
   const loginSR = useAsync(() => genLoginSigningRequest(newSessionId))
   const loginUri = loginSR?.value?.encode()
 
   let registerUri = 'https://app.bitcash.org?share=JVnL7qzrU'
 
+  const verifyUpsertAccount = async ({
+    session,
+    account,
+  }: {
+    session: Tables<'session'> | null | undefined
+    account: UseAccountReturnType<Config>
+  }) => {
+    if (!session) return
+
+    console.log('🔐 verifyAccount')
+
+    let user
+    const updatedAddresses = []
+
+    try {
+      user = await supabase
+        .from('user')
+        .select('id, address')
+        .eq('account', session.account)
+        .single()
+      updatedAddresses.push(
+        ...(user?.data?.address.length
+          ? [...user?.data?.address, account.address as string]
+          : [account.address as string]),
+      )
+    } catch (error) {
+      console.error('🔐 verifyAccount error', error)
+    }
+
+    await supabase.from('user').upsert(
+      {
+        id: user?.data?.id,
+        account: session.account,
+        address: uniq(updatedAddresses.filter(Boolean)),
+      },
+      {
+        onConflict: 'account',
+      },
+    )
+
+    // * If the address is new, we show the toaster.
+    if (
+      account.address &&
+      !user?.data?.address.includes(account.address as string)
+    ) {
+      toast('Address linked successfully!', { icon: '🔗' })
+    }
+  }
+
+  useEffect(() => {
+    if (!account.address) return
+    console.log('🔐 update account with received address')
+    verifyUpsertAccount({ session, account })
+  }, [account.address])
+
   const startSession = (session: Tables<'session'>) => {
+    verifyUpsertAccount({ session, account })
     setSession(session)
-    identify({
-      address: account.address || '0x',
-      properties: { account: session?.account ?? 'unknown' }
+    identifyUser(account.address || '0x', {
+      account: session?.account ?? 'unknown',
     })
   }
 
@@ -58,7 +116,7 @@ function useSessionFn() {
       .on(
         'postgres_changes',
         { event: 'INSERT', schema: 'public', table: 'session' },
-        payload => {
+        (payload) => {
           console.log('BAZINGA 🍓 new supabase session', payload.new)
           // set new session if ids match
           if (session || payload.new.id !== newSessionId) return
@@ -66,7 +124,7 @@ function useSessionFn() {
           console.log(' ✅ supabase session id matches', newSession)
           startSession(newSession)
           toggleShowSessionDialog(false)
-        }
+        },
       )
       .subscribe()
 
@@ -130,6 +188,7 @@ function useSessionFn() {
     params.append('callback', encodedCallbackUrl)
     const referrer = sessionStorage.getItem('referrer')
     if (referrer) params.append('referrer', referrer)
+    params.append('source', 'bitlauncher.ai')
     location.href = `https://app.bitcash.org?${params.toString()}`
   }
 
@@ -160,7 +219,7 @@ function useSessionFn() {
     loginRedirect,
     openConnectModal,
     loginOrConnect,
-    toggleShowSessionDialog
+    toggleShowSessionDialog,
   }
 }
 
@@ -174,5 +233,5 @@ function SessionProvider({ children }: { children: ReactNode }) {
 
 const [useSession, SessionProviderInner] = createContextHook(
   useSessionFn,
-  'You must wrap your application with <SessionProvider /> in order to useSession().'
+  'You must wrap your application with <SessionProvider /> in order to useSession().',
 )

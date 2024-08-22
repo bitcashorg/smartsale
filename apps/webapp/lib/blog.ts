@@ -1,6 +1,6 @@
 export const handleStyledTags = (text: string) => {
   let newTextWithLinks = ''
-  newTextWithLinks = text.replace(/(^|\s)([#@][a-z\d-]+)/gi, tag => {
+  newTextWithLinks = text.replace(/(^|\s)([#@][a-z\d-]+)/gi, (tag) => {
     const account = tag.trim().substring(1)
     return `<a href="/${account}" class="text-primary-purple text-sm md:text-2xl md:font-normal text-start">${tag}</a>`
   })
@@ -10,7 +10,7 @@ export const handleStyledTags = (text: string) => {
 export const readingTime = (blogContent: {
   contentBlock: { mainContent: any }[]
 }) => {
-  let contentGroup: any = []
+  const contentGroup: any = []
   const getContents = blogContent?.contentBlock
     ?.map(({ mainContent }) => {
       return mainContent.value.document.children
@@ -30,7 +30,7 @@ export const readingTime = (blogContent: {
             ({ children }: any) => {
               if (!children) return ''
               return children.map(({ value }: any) => value)
-            }
+            },
           )
           contentGroup?.push(baseChildren[0][0])
         } else {

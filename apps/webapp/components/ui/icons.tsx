@@ -662,5 +662,5 @@ export {
   IconTwitterX,
   IconUser,
   IconUsers,
-  IconVercel
+  IconVercel,
 }

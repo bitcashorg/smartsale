@@ -5,33 +5,33 @@ export const navStruct: NavStruct = {
       main: true,
       items: [
         {
-          label: 'For Investors',
-          href: '/about/investors',
+          label: 'For Contributors',
+          href: '/about/contributors',
           description:
-            'Information and resources for potential and current investors.'
+            'Information and resources for potential and current contributors.',
         },
         {
           label: 'For AI Startups',
           href: '/about/ai-startups',
           description:
-            'Support and resources for AI startups looking to grow and innovate.'
+            'Support and resources for AI startups looking to grow and innovate.',
         },
         {
           label: 'Bitcash App',
           href: '/about/bitcash-app',
-          description: 'Learn more about the Bitcash app and its features.'
+          description: 'Learn more about the Bitcash app and its features.',
         },
         {
           label: 'DAOs & dBoard',
           href: '/about/daos-dboard',
-          description: 'Discover our DAOs and the decentralized dashboard.'
+          description: 'Discover our DAOs and the decentralized dashboard.',
         },
 
         {
           label: 'Referral System',
           href: '/about/referral-system',
           description:
-            'Learn how our referral system can benefit you and your network.'
+            'Learn how our referral system can benefit you and your network.',
         },
         //! This is not going to a page, its redirecting to home page
         // {
@@ -42,9 +42,9 @@ export const navStruct: NavStruct = {
         {
           label: 'About Bitlauncher',
           href: '/about/about-bitlauncher',
-          description: 'Learn more about bitlauncher.'
-        }
-      ]
+          description: 'Learn more about bitlauncher.',
+        },
+      ],
     },
     {
       label: 'Learn',
@@ -53,34 +53,34 @@ export const navStruct: NavStruct = {
         {
           label: 'How it works',
           href: '/learn/how-it-works',
-          description: 'Simple explanation on how our system operates.'
+          description: 'Simple explanation on how our system operates.',
         },
         {
           label: 'Batch Auctions',
           href: '/learn/batch-auctions',
-          description: 'Understand the process and benefits of batch auctions.'
+          description: 'Understand the process and benefits of batch auctions.',
         },
         {
           label: 'Tokenization',
           href: '/learn/tokenization',
-          description: 'Learn about tokenization and its applications.'
+          description: 'Learn about tokenization and its applications.',
         },
         {
           label: 'Security Tips',
           href: '/learn/security',
-          description: 'Best practices for ensuring security in your projects.'
+          description: 'Best practices for ensuring security in your projects.',
         },
         {
           label: 'Blog & News',
           href: '/blog',
-          description: 'Stay updated with our latest blog posts and news.'
+          description: 'Stay updated with our latest blog posts and news.',
         },
         {
           label: 'Media',
           href: '/learn/media',
-          description: 'Explore our media resources and press releases.'
-        }
-      ]
+          description: 'Explore our media resources and press releases.',
+        },
+      ],
     },
     { label: 'Whitepaper', href: '/whitepaper', main: true },
     {
@@ -94,15 +94,15 @@ export const navStruct: NavStruct = {
           label: 'Privacy Policy',
           href: '/legal/privacy',
           description:
-            'Read our privacy policy to understand how we handle your data.'
+            'Read our privacy policy to understand how we handle your data.',
         },
         {
           label: 'Terms of Service',
           href: '/legal/terms',
           description:
-            'Review the terms and conditions that govern the use of our services.'
-        }
-      ]
+            'Review the terms and conditions that govern the use of our services.',
+        },
+      ],
     },
     {
       label: 'Developers',
@@ -110,19 +110,19 @@ export const navStruct: NavStruct = {
         { label: 'Open Source', href: '#' },
         {
           label: 'Engineering Blog',
-          href: '/learn/developers'
+          href: '/learn/developers',
         },
         {
           label: 'Engineering Calls',
-          href: '/learn/developers'
+          href: '/learn/developers',
         },
         {
           label: 'Bounties',
-          href: '/learn/developers'
+          href: '/learn/developers',
         },
         { label: 'Documentation', href: '/docs' },
-        { label: 'Screencasts', href: '#' }
-      ]
+        { label: 'Screencasts', href: '#' },
+      ],
     },
     {
       label: 'Communities',
@@ -132,10 +132,10 @@ export const navStruct: NavStruct = {
         { label: 'Telegram News', href: '/communities/telegram-news' },
         { label: 'Twitter', href: '/communities/twitter' },
         { label: 'YouTube', href: '/communities/youtube' },
-        { label: 'Instagram', href: '/communities/instagram' }
-      ]
-    }
-  ]
+        { label: 'Instagram', href: '/communities/instagram' },
+      ],
+    },
+  ],
 }
 
 export const footerNavStruct: NavStruct = {
@@ -148,14 +148,14 @@ export const footerNavStruct: NavStruct = {
         {
           label: 'How it works',
           href: '/learn/how-it-works',
-          description: 'Simple explanation on how our system operates.'
+          description: 'Simple explanation on how our system operates.',
         },
         {
           label: 'Security Tips',
           href: '/learn/security',
-          description: 'Best practices for ensuring security in your projects.'
-        }
-      ]
+          description: 'Best practices for ensuring security in your projects.',
+        },
+      ],
     },
     {
       label: 'Legal',
@@ -163,13 +163,13 @@ export const footerNavStruct: NavStruct = {
       items: [
         {
           label: 'Terms and Conditions',
-          href: '/terms'
+          href: '/terms',
         },
         {
           label: 'Privacy Policy',
-          href: '/terms'
-        }
-      ]
+          href: '/terms',
+        },
+      ],
     },
     // {
     //   label: 'Blog',
@@ -235,10 +235,10 @@ export const footerNavStruct: NavStruct = {
         { label: 'Telegram News', href: 'https://t.me/bitlauncherai' },
         { label: 'Twitter', href: 'https://x.com/bitlauncherai' },
         { label: 'YouTube', href: 'https://www.youtube.com/@bitlauncher' },
-        { label: 'Linktree', href: 'https://linktr.ee/bitlauncher' }
-      ]
-    }
-  ]
+        { label: 'Linktree', href: 'https://linktr.ee/bitlauncher' },
+      ],
+    },
+  ],
 }
 
 export interface NavItem {

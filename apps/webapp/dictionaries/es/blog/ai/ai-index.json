@@ -6,9 +6,7 @@
       "articles": [
         {
           "id": "SpdLuuYEQgW8rwSHNzhmxA",
-          "topics": [
-            "Aplicaciones"
-          ],
+          "topics": ["Aplicaciones"],
           "title": "Masterbots: Elevando la IA mas alla de ChatGPT con comparticion social e innovacion facil de usar",
           "slug": "masterbots-elevating-ai-beyond-chatgpt-with-social-sharing-and-user-friendly-inno",
           "authorName": "Jun Dam",
@@ -42,11 +40,7 @@
       "articles": [
         {
           "id": "190259319",
-          "topics": [
-            "Resumen",
-            "LLM",
-            "Entrenamiento"
-          ],
+          "topics": ["Resumen", "LLM", "Entrenamiento"],
           "title": "Podcast Latent Space 16/8/23 [Resumen] - Las matematicas del entrenamiento de LLMs — con Quentin Anthony de Eleuther AI",
           "slug": "latent-space-podcast-8-16-23-summary-the-mathematics-of-training-llms-with-que",
           "authorName": "Prof. Otto Nomos",
@@ -74,12 +68,7 @@
         },
         {
           "id": "190259129",
-          "topics": [
-            "LLM",
-            "Hardware",
-            "Resumen",
-            "Edge"
-          ],
+          "topics": ["LLM", "Hardware", "Resumen", "Edge"],
           "title": "Podcast Latent Space 8/10/23 [Resumen]: LLMs en todas partes: Ejecutando modelos de 70B en navegadores y iPhones usando MLC - con Tianqi Chen de CMU / OctoML",
           "slug": "latent-space-podcast-8-10-23-summary-llms-everywhere-running-70b-models-in-browse",
           "authorName": "Prof. Otto Nomos",
@@ -174,12 +163,7 @@
         },
         {
           "id": "190259172",
-          "topics": [
-            "Resumen",
-            "LLM",
-            "Codigo abierto",
-            "Modelos pequenos"
-          ],
+          "topics": ["Resumen", "LLM", "Codigo abierto", "Modelos pequenos"],
           "title": "Podcast Latent Space 19/07/23 [Resumen] - Llama 2: El nuevo estado del arte en LLM de codigo abierto (con Nathan Lambert, Matt Bornstein, Anton Troynikov, Russell Kaplan, Whole Mars Catalog y otros)",
           "slug": "latent-space-podcast-7-19-23-summary-llama-2-the-new-open-llm-sota-ft-nathan-lamb",
           "authorName": "Prof. Otto Nomos",
@@ -207,11 +191,7 @@
         },
         {
           "id": "190259191",
-          "topics": [
-            "Resumen",
-            "Codigo",
-            "LLM"
-          ],
+          "topics": ["Resumen", "Codigo", "LLM"],
           "title": "Podcast Latent Space 7/10/23 [Resumen] - Interprete de Codigo == GPT 4.5 (con Simon Willison, Alex Volkov, Aravind Srinivas, Alex Graveley, y otros)",
           "slug": "latent-space-podcast-7-10-23-summary-code-interpreter-gpt-4-5-w-simon-willison-al",
           "authorName": "Prof. Otto Nomos",
@@ -239,10 +219,7 @@
         },
         {
           "id": "190259216",
-          "topics": [
-            "Resumen",
-            "Codigo abierto"
-          ],
+          "topics": ["Resumen", "Codigo abierto"],
           "title": "Podcast Latent Space 7/2/23 [Resumen] Tendencias de IA: un episodio cruzado de Latent Space x Practical AI",
           "slug": "latent-space-podcast-7-2-23-summary-ai-trends-a-latent-space-x-practical-ai-cross",
           "authorName": "Prof. Otto Nomos",
@@ -270,11 +247,7 @@
         },
         {
           "id": "190259238",
-          "topics": [
-            "Hardware",
-            "LLM",
-            "Resumen"
-          ],
+          "topics": ["Hardware", "LLM", "Resumen"],
           "title": "Podcast Latent Space 20/06/23 [Resumen] - Comercializando el Petaflop — con George Hotz de tiny corp",
           "slug": "latent-space-podcast-6-20-23-summary-commoditizing-the-petaflop-with-george-ho",
           "authorName": "Prof. Otto Nomos",
@@ -302,11 +275,7 @@
         },
         {
           "id": "190259294",
-          "topics": [
-            "LLM",
-            "Funciones",
-            "Resumen"
-          ],
+          "topics": ["LLM", "Funciones", "Resumen"],
           "title": "Podcast Latent Space 14/06/23 [Resumen] - Episodio de emergencia: nueva API de Funciones de OpenAI, reduccion de precios del 75%, longitud de contexto 4 veces mayor (con Alex Volkov, Simon Willison, Riley Goodside, Joshua Lochner, Stefania Druga, Eric Elliott, Mayo Oshin y otros)",
           "slug": "latent-space-podcast-6-14-23-summary-emergency-pod-openai-s-new-functions-api-75",
           "authorName": "Prof. Otto Nomos",
@@ -334,11 +303,7 @@
         },
         {
           "id": "190259333",
-          "topics": [
-            "LLM",
-            "Resumen",
-            "UX"
-          ],
+          "topics": ["LLM", "Resumen", "UX"],
           "title": "Podcast Latent Space 6/8/23 [Resumen] - De RLHF a RLHB: El caso para aprender del comportamiento humano - con Jeffrey Wang y Joe Reeve de Amplitude",
           "slug": "latent-space-podcast-6-8-23-summary-from-rlhf-to-rlhb-the-case-for-learning-from",
           "authorName": "Prof. Otto Nomos",
@@ -366,11 +331,7 @@
         },
         {
           "id": "190260528",
-          "topics": [
-            "Resumen",
-            "LLM",
-            "UX"
-          ],
+          "topics": ["Resumen", "LLM", "UX"],
           "title": "Podcast Latent Space 6/1/23 [Resumen] - Construyendo el Scenius de IA × UX — con Linus Lee de Notion AI",
           "slug": "latent-space-podcast-6-1-23-summary-building-the-ai-x-ux-scenius-with-linus-le",
           "authorName": "Prof. Otto Nomos",
@@ -398,12 +359,7 @@
         },
         {
           "id": "190260557",
-          "topics": [
-            "Resumen",
-            "Codigo",
-            "LLM",
-            "Agentes"
-          ],
+          "topics": ["Resumen", "Codigo", "LLM", "Agentes"],
           "title": "Podcast Latent Space 25/05/23 [Resumen] - Depurando Internet con agentes de IA - con Itamar Friedman de Codium AI y AutoGPT",
           "slug": "latent-space-podcast-5-25-23-summary-debugging-the-internet-with-ai-agents-with",
           "authorName": "Prof. Otto Nomos",
@@ -431,11 +387,7 @@
         },
         {
           "id": "190260640",
-          "topics": [
-            "Resumen",
-            "Codigo abierto",
-            "LLM"
-          ],
+          "topics": ["Resumen", "Codigo abierto", "LLM"],
           "title": "Podcast Latent Space 5/5/23 [Resumen] - Sin ventaja: Closed AI recibe su llamada de despertar de codigo abierto — con Simon Willison",
           "slug": "latent-space-podcast-5-5-23-summary-no-moat-closed-ai-gets-its-open-source-wakeup",
           "authorName": "Prof. Otto Nomos",
@@ -463,11 +415,7 @@
         },
         {
           "id": "190260671",
-          "topics": [
-            "LLM",
-            "Codigo",
-            "Resumen"
-          ],
+          "topics": ["LLM", "Codigo", "Resumen"],
           "title": "Podcast Latent Space 5/3/23 [Resumen] - Entrenando un LLM de codigo de ultima generacion en 1 semana y Cuantificando las vibraciones — con Reza Shabani de Replit",
           "slug": "latent-space-podcast-5-3-23-summary-training-a-sota-code-llm-in-1-week-and-quanti",
           "authorName": "Prof. Otto Nomos",
@@ -495,11 +443,7 @@
         },
         {
           "id": "190629271",
-          "topics": [
-            "LLM",
-            "Modelos pequenos",
-            "Resumen"
-          ],
+          "topics": ["LLM", "Modelos pequenos", "Resumen"],
           "title": "Podcast Latent Space 28/4/23 [Resumen] - Trazando el futuro de los modelos *verdaderamente* abiertos y entrenando a Dolly por $30 - con Mike Conover de Databricks",
           "slug": "latent-space-podcast-4-28-23-summary-mapping-the-future-of-truly-open-models-and",
           "authorName": "Prof. Otto Nomos",
@@ -527,11 +471,7 @@
         },
         {
           "id": "191164291",
-          "topics": [
-            "LLM",
-            "Empresa",
-            "Resumen"
-          ],
+          "topics": ["LLM", "Empresa", "Resumen"],
           "title": "Podcast Latent Space 21/4/23 [Resumen] - Busqueda impulsada por IA para empresas — con Deedy Das de Glean",
           "slug": "latent-space-podcast-4-21-23-summary-ai-powered-search-for-the-enterprise-with",
           "authorName": "Prof. Otto Nomos",
@@ -559,10 +499,7 @@
         },
         {
           "id": "191165673",
-          "topics": [
-            "Resumen",
-            "Vision"
-          ],
+          "topics": ["Resumen", "Vision"],
           "title": "Podcast Latent Space 13/4/23 [Resumen] - Modelo de Segmentacion de Cualquier Cosa y los Problemas Dificiles de Vision por Computadora — con Joseph Nelson de Roboflow",
           "slug": "latent-space-podcast-4-13-23-summary-segment-anything-model-and-the-hard-problems",
           "authorName": "Prof. Otto Nomos",
@@ -590,11 +527,7 @@
         },
         {
           "id": "191165920",
-          "topics": [
-            "LLM",
-            "Resumen",
-            "Evaluacion"
-          ],
+          "topics": ["LLM", "Resumen", "Evaluacion"],
           "title": "Podcast Latent Space 4/6/23 [Resumen] - Fundamentos de IA: Benchmarks 101",
           "slug": "latent-space-podcast-4-6-23-summary-ai-fundamentals-benchmarks-101",
           "authorName": "Prof. Otto Nomos",
@@ -622,10 +555,7 @@
         },
         {
           "id": "191301444",
-          "topics": [
-            "Resumen",
-            "LLMOps"
-          ],
+          "topics": ["Resumen", "LLMOps"],
           "title": "Podcast Latent Space 4/6/23 [Resumen] - Investigacion Fundamentada: De Google Brain a MLOps a LLMOps — con Shreya Shankar de UC Berkeley",
           "slug": "latent-space-podcast-4-6-23-summary-grounded-research-from-google-brain-to-mlops",
           "authorName": "Prof. Otto Nomos",
@@ -653,11 +583,7 @@
         },
         {
           "id": "191310297",
-          "topics": [
-            "Resumen",
-            "LLM",
-            "Herramientas"
-          ],
+          "topics": ["Resumen", "LLM", "Herramientas"],
           "title": "Podcast Latent Space 23/3/23 [Resumen] - Episodio de emergencia: El momento App Store de ChatGPT (con Logan Kilpatrick de OpenAI, Florent Crivello de LindyAI y Nader Dabit)",
           "slug": "latent-space-podcast-3-23-23-summary-emergency-pod-chatgpt-s-app-store-moment-w-o",
           "authorName": "Prof. Otto Nomos",
@@ -685,11 +611,7 @@
         },
         {
           "id": "191313297",
-          "topics": [
-            "LLM",
-            "Resumen",
-            "Codigo"
-          ],
+          "topics": ["LLM", "Resumen", "Codigo"],
           "title": "Podcast Latent Space 3/2/23 [Resumen] - IA 97% mas barata, rapida, mejor y correcta — con Varun Mohan de Codeium Podcast Latent Space Ep. 2: Por que estas usando mal tus GPUs",
           "slug": "latent-space-podcast-3-2-23-summary-97-cheaper-faster-better-correct-ai-with-v",
           "authorName": "Prof. Otto Nomos",
@@ -717,10 +639,7 @@
         },
         {
           "id": "191313319",
-          "topics": [
-            "LLM",
-            "Resumen"
-          ],
+          "topics": ["LLM", "Resumen"],
           "title": "Podcast Latent Space 2/23 [Resumen] - ChatGPT, expectativa de GPT4 y creacion de productos nativos de LLM - con Logan Kilpatrick de OpenAI",
           "slug": "latent-space-podcast-2-23-summary-chatgpt-gpt4-hype-and-building-llm-native-produ",
           "authorName": "Prof. Otto Nomos",
@@ -748,10 +667,7 @@
         },
         {
           "id": "190258948",
-          "topics": [
-            "Resumen",
-            "MLG"
-          ],
+          "topics": ["Resumen", "MLG"],
           "title": "Modelos de lenguaje grandes, explicados con un minimo de matematicas y jerga [Resumen]",
           "slug": "large-language-models-explained-with-a-minimum-of-math-and-jargon-eli5-summary",
           "authorName": "Prof. Otto Nomos",
@@ -779,10 +695,7 @@
         },
         {
           "id": "190258977",
-          "topics": [
-            "Resumen",
-            "Transformadores"
-          ],
+          "topics": ["Resumen", "Transformadores"],
           "title": "El Plano del Transformador: Una Guia Holistica de la Arquitectura de Red Neuronal Transformer [Resumen]",
           "slug": "the-transformer-blueprint-a-holistic-guide-to-the-transformer-neural-network-arch",
           "authorName": "Prof. Otto Nomos",
@@ -810,11 +723,7 @@
         },
         {
           "id": "190259003",
-          "topics": [
-            "IA generativa",
-            "Resumen",
-            "Industria"
-          ],
+          "topics": ["IA generativa", "Resumen", "Industria"],
           "title": "McKinsey: El potencial economico de la IA generativa [Resumen]",
           "slug": "mckinsey-the-economic-potential-of-generative-ai-eli5-summary",
           "authorName": "Prof. Otto Nomos",
@@ -842,10 +751,7 @@
         },
         {
           "id": "190259043",
-          "topics": [
-            "LLM",
-            "Resumen"
-          ],
+          "topics": ["LLM", "Resumen"],
           "title": "Google \"No tenemos ventaja competitiva, y OpenAI tampoco\" [Comentario]",
           "slug": "google-we-have-no-moat-and-neither-does-openai-commentary",
           "authorName": "Prof. Otto Nomos",
@@ -873,10 +779,7 @@
         },
         {
           "id": "190259067",
-          "topics": [
-            "Resumen",
-            "LLM"
-          ],
+          "topics": ["Resumen", "LLM"],
           "title": "Estado de GPT - Andrej Karpathy [Resumen]",
           "slug": "state-of-gpt-andrej-karpathy-summary",
           "authorName": "Prof. Otto Nomos",
@@ -910,11 +813,7 @@
       "articles": [
         {
           "id": "190259319",
-          "topics": [
-            "Resumen",
-            "LLM",
-            "Entrenamiento"
-          ],
+          "topics": ["Resumen", "LLM", "Entrenamiento"],
           "title": "Podcast Latent Space 16/8/23 [Resumen] - Las matematicas del entrenamiento de LLMs — con Quentin Anthony de Eleuther AI",
           "slug": "latent-space-podcast-8-16-23-summary-the-mathematics-of-training-llms-with-que",
           "authorName": "Prof. Otto Nomos",
@@ -942,12 +841,7 @@
         },
         {
           "id": "190259129",
-          "topics": [
-            "LLM",
-            "Hardware",
-            "Resumen",
-            "Edge"
-          ],
+          "topics": ["LLM", "Hardware", "Resumen", "Edge"],
           "title": "Podcast Latent Space 8/10/23 [Resumen]: LLMs en todas partes: Ejecutando modelos de 70B en navegadores y iPhones usando MLC - con Tianqi Chen de CMU / OctoML",
           "slug": "latent-space-podcast-8-10-23-summary-llms-everywhere-running-70b-models-in-browse",
           "authorName": "Prof. Otto Nomos",
@@ -1009,12 +903,7 @@
         },
         {
           "id": "190259172",
-          "topics": [
-            "Resumen",
-            "LLM",
-            "Codigo abierto",
-            "Modelos pequenos"
-          ],
+          "topics": ["Resumen", "LLM", "Codigo abierto", "Modelos pequenos"],
           "title": "Podcast Latent Space 19/07/23 [Resumen] - Llama 2: El nuevo estado del arte en LLM de codigo abierto (con Nathan Lambert, Matt Bornstein, Anton Troynikov, Russell Kaplan, Whole Mars Catalog y otros)",
           "slug": "latent-space-podcast-7-19-23-summary-llama-2-the-new-open-llm-sota-ft-nathan-lamb",
           "authorName": "Prof. Otto Nomos",
@@ -1042,11 +931,7 @@
         },
         {
           "id": "190259191",
-          "topics": [
-            "Resumen",
-            "Codigo",
-            "LLM"
-          ],
+          "topics": ["Resumen", "Codigo", "LLM"],
           "title": "Podcast Latent Space 7/10/23 [Resumen] - Interprete de Codigo == GPT 4.5 (con Simon Willison, Alex Volkov, Aravind Srinivas, Alex Graveley, y otros)",
           "slug": "latent-space-podcast-7-10-23-summary-code-interpreter-gpt-4-5-w-simon-willison-al",
           "authorName": "Prof. Otto Nomos",
@@ -1074,11 +959,7 @@
         },
         {
           "id": "190259238",
-          "topics": [
-            "Hardware",
-            "LLM",
-            "Resumen"
-          ],
+          "topics": ["Hardware", "LLM", "Resumen"],
           "title": "Podcast Latent Space 20/06/23 [Resumen] - Comercializando el Petaflop — con George Hotz de tiny corp",
           "slug": "latent-space-podcast-6-20-23-summary-commoditizing-the-petaflop-with-george-ho",
           "authorName": "Prof. Otto Nomos",
@@ -1106,11 +987,7 @@
         },
         {
           "id": "190259294",
-          "topics": [
-            "LLM",
-            "Funciones",
-            "Resumen"
-          ],
+          "topics": ["LLM", "Funciones", "Resumen"],
           "title": "Podcast Latent Space 14/06/23 [Resumen] - Episodio de emergencia: nueva API de Funciones de OpenAI, reduccion de precios del 75%, longitud de contexto 4 veces mayor (con Alex Volkov, Simon Willison, Riley Goodside, Joshua Lochner, Stefania Druga, Eric Elliott, Mayo Oshin y otros)",
           "slug": "latent-space-podcast-6-14-23-summary-emergency-pod-openai-s-new-functions-api-75",
           "authorName": "Prof. Otto Nomos",
@@ -1138,11 +1015,7 @@
         },
         {
           "id": "190259333",
-          "topics": [
-            "LLM",
-            "Resumen",
-            "UX"
-          ],
+          "topics": ["LLM", "Resumen", "UX"],
           "title": "Podcast Latent Space 6/8/23 [Resumen] - De RLHF a RLHB: El caso para aprender del comportamiento humano - con Jeffrey Wang y Joe Reeve de Amplitude",
           "slug": "latent-space-podcast-6-8-23-summary-from-rlhf-to-rlhb-the-case-for-learning-from",
           "authorName": "Prof. Otto Nomos",
@@ -1170,11 +1043,7 @@
         },
         {
           "id": "190260528",
-          "topics": [
-            "Resumen",
-            "LLM",
-            "UX"
-          ],
+          "topics": ["Resumen", "LLM", "UX"],
           "title": "Podcast Latent Space 6/1/23 [Resumen] - Construyendo el Scenius de IA × UX — con Linus Lee de Notion AI",
           "slug": "latent-space-podcast-6-1-23-summary-building-the-ai-x-ux-scenius-with-linus-le",
           "authorName": "Prof. Otto Nomos",
@@ -1202,12 +1071,7 @@
         },
         {
           "id": "190260557",
-          "topics": [
-            "Resumen",
-            "Codigo",
-            "LLM",
-            "Agentes"
-          ],
+          "topics": ["Resumen", "Codigo", "LLM", "Agentes"],
           "title": "Podcast Latent Space 25/05/23 [Resumen] - Depurando Internet con agentes de IA - con Itamar Friedman de Codium AI y AutoGPT",
           "slug": "latent-space-podcast-5-25-23-summary-debugging-the-internet-with-ai-agents-with",
           "authorName": "Prof. Otto Nomos",
@@ -1235,10 +1099,7 @@
         },
         {
           "id": "190260577",
-          "topics": [
-            "LLM",
-            "Modelos pequenos"
-          ],
+          "topics": ["LLM", "Modelos pequenos"],
           "title": "Podcast Latent Space 20/5/23 [Resumen] - MPT-7B y el comienzo de Contexto=Infinito — con Jonathan Frankle y Abhinav Venigalla de MosaicML",
           "slug": "latent-space-podcast-5-20-23-summary-mpt-7b-and-the-beginning-of-context-infinity",
           "authorName": "Prof. Otto Nomos",
@@ -1266,10 +1127,7 @@
         },
         {
           "id": "190260597",
-          "topics": [
-            "LLM",
-            "Datos estructurados"
-          ],
+          "topics": ["LLM", "Datos estructurados"],
           "title": "Podcast Latent Space 15/5/23 [Resumen] - Calidad y estructura garantizadas en salidas de LLM - con Shreya Rajpal de Guardrails AI",
           "slug": "latent-space-podcast-5-15-23-summary-guaranteed-quality-and-structure-in-llm-outp",
           "authorName": "Prof. Otto Nomos",
@@ -1297,12 +1155,7 @@
         },
         {
           "id": "190260606",
-          "topics": [
-            "LLM",
-            "Entrenamiento",
-            "Agentes",
-            "Multimodal"
-          ],
+          "topics": ["LLM", "Entrenamiento", "Agentes", "Multimodal"],
           "title": "Podcast Latent Space 5/8/23 [Resumen] - El Gen del Fundador de IA: Ser Pionero, Construir Rapido y Creer en la Grandeza - con Sharif Shameem de Lexica",
           "slug": "latent-space-podcast-5-8-23-summary-the-ai-founder-gene-being-early-building-fast",
           "authorName": "Prof. Otto Nomos",
@@ -1330,11 +1183,7 @@
         },
         {
           "id": "190260640",
-          "topics": [
-            "Resumen",
-            "Codigo abierto",
-            "LLM"
-          ],
+          "topics": ["Resumen", "Codigo abierto", "LLM"],
           "title": "Podcast Latent Space 5/5/23 [Resumen] - Sin ventaja: Closed AI recibe su llamada de despertar de codigo abierto — con Simon Willison",
           "slug": "latent-space-podcast-5-5-23-summary-no-moat-closed-ai-gets-its-open-source-wakeup",
           "authorName": "Prof. Otto Nomos",
@@ -1362,11 +1211,7 @@
         },
         {
           "id": "190260671",
-          "topics": [
-            "LLM",
-            "Codigo",
-            "Resumen"
-          ],
+          "topics": ["LLM", "Codigo", "Resumen"],
           "title": "Podcast Latent Space 5/3/23 [Resumen] - Entrenando un LLM de codigo de ultima generacion en 1 semana y Cuantificando las vibraciones — con Reza Shabani de Replit",
           "slug": "latent-space-podcast-5-3-23-summary-training-a-sota-code-llm-in-1-week-and-quanti",
           "authorName": "Prof. Otto Nomos",
@@ -1394,11 +1239,7 @@
         },
         {
           "id": "190629271",
-          "topics": [
-            "LLM",
-            "Modelos pequenos",
-            "Resumen"
-          ],
+          "topics": ["LLM", "Modelos pequenos", "Resumen"],
           "title": "Podcast Latent Space 28/4/23 [Resumen] - Trazando el futuro de modelos *realmente* abiertos y entrenando a Dolly por $30 - con Mike Conover de Databricks",
           "slug": "latent-space-podcast-4-28-23-summary-mapping-the-future-of-truly-open-models-and",
           "authorName": "Prof. Otto Nomos",
@@ -1426,11 +1267,7 @@
         },
         {
           "id": "191164291",
-          "topics": [
-            "LLM",
-            "Empresa",
-            "Resumen"
-          ],
+          "topics": ["LLM", "Empresa", "Resumen"],
           "title": "Podcast Latent Space 21/4/23 [Resumen] - Busqueda impulsada por IA para empresas — con Deedy Das de Glean",
           "slug": "latent-space-podcast-4-21-23-summary-ai-powered-search-for-the-enterprise-with",
           "authorName": "Prof. Otto Nomos",
@@ -1458,11 +1295,7 @@
         },
         {
           "id": "191165920",
-          "topics": [
-            "LLM",
-            "Resumen",
-            "Evaluacion"
-          ],
+          "topics": ["LLM", "Resumen", "Evaluacion"],
           "title": "Podcast Latent Space 4/6/23 [Resumen] - Fundamentos de IA: Benchmarks 101",
           "slug": "latent-space-podcast-4-6-23-summary-ai-fundamentals-benchmarks-101",
           "authorName": "Prof. Otto Nomos",
@@ -1490,11 +1323,7 @@
         },
         {
           "id": "191310297",
-          "topics": [
-            "Resumen",
-            "LLM",
-            "Herramientas"
-          ],
+          "topics": ["Resumen", "LLM", "Herramientas"],
           "title": "Podcast Latent Space 23/3/23 [Resumen] - Episodio de emergencia: El momento App Store de ChatGPT (con Logan Kilpatrick de OpenAI, Florent Crivello de LindyAI y Nader Dabit)",
           "slug": "latent-space-podcast-3-23-23-summary-emergency-pod-chatgpt-s-app-store-moment-w-o",
           "authorName": "Prof. Otto Nomos",
@@ -1522,11 +1351,7 @@
         },
         {
           "id": "191313297",
-          "topics": [
-            "LLM",
-            "Resumen",
-            "Codigo"
-          ],
+          "topics": ["LLM", "Resumen", "Codigo"],
           "title": "Podcast Latent Space 3/2/23 [Resumen] - IA 97% mas barata, rapida, mejor y correcta — con Varun Mohan de Codeium Podcast Latent Space Ep. 2: Por que estas usando mal tus GPUs",
           "slug": "latent-space-podcast-3-2-23-summary-97-cheaper-faster-better-correct-ai-with-v",
           "authorName": "Prof. Otto Nomos",
@@ -1554,10 +1379,7 @@
         },
         {
           "id": "191313319",
-          "topics": [
-            "LLM",
-            "Resumen"
-          ],
+          "topics": ["LLM", "Resumen"],
           "title": "Podcast Latent Space 2/23 [Resumen] - ChatGPT, expectativa de GPT4 y creacion de productos nativos de LLM - con Logan Kilpatrick de OpenAI",
           "slug": "latent-space-podcast-2-23-summary-chatgpt-gpt4-hype-and-building-llm-native-produ",
           "authorName": "Prof. Otto Nomos",
@@ -1585,10 +1407,7 @@
         },
         {
           "id": "190258948",
-          "topics": [
-            "Resumen",
-            "MLG"
-          ],
+          "topics": ["Resumen", "MLG"],
           "title": "Modelos de lenguaje grandes, explicados con un minimo de matematicas y jerga [Resumen]",
           "slug": "large-language-models-explained-with-a-minimum-of-math-and-jargon-eli5-summary",
           "authorName": "Prof. Otto Nomos",
@@ -1616,11 +1435,7 @@
         },
         {
           "id": "190259003",
-          "topics": [
-            "IA generativa",
-            "Resumen",
-            "Industria"
-          ],
+          "topics": ["IA generativa", "Resumen", "Industria"],
           "title": "McKinsey: El potencial economico de la IA generativa [Resumen]",
           "slug": "mckinsey-the-economic-potential-of-generative-ai-eli5-summary",
           "authorName": "Prof. Otto Nomos",
@@ -1648,10 +1463,7 @@
         },
         {
           "id": "190259043",
-          "topics": [
-            "LLM",
-            "Resumen"
-          ],
+          "topics": ["LLM", "Resumen"],
           "title": "Google \"No tenemos ventaja competitiva, y OpenAI tampoco\" [Comentario]",
           "slug": "google-we-have-no-moat-and-neither-does-openai-commentary",
           "authorName": "Prof. Otto Nomos",
@@ -1679,10 +1491,7 @@
         },
         {
           "id": "190259067",
-          "topics": [
-            "Resumen",
-            "LLM"
-          ],
+          "topics": ["Resumen", "LLM"],
           "title": "Estado de GPT - Andrej Karpathy [Resumen]",
           "slug": "state-of-gpt-andrej-karpathy-summary",
           "authorName": "Prof. Otto Nomos",
@@ -1710,10 +1519,7 @@
         },
         {
           "id": "190258672",
-          "topics": [
-            "Primeros pasos",
-            "MLG"
-          ],
+          "topics": ["Primeros pasos", "MLG"],
           "title": "Descifrando los misterios de la IA: Una inmersion profunda en el conocimiento y las limitaciones de los Modelos de Lenguaje Grande",
           "slug": "decoding-the-mysteries-of-ai-a-deep-dive-into-large-language-models-knowledge-and",
           "authorName": "Prof. Otto Nomos",
@@ -1741,10 +1547,7 @@
         },
         {
           "id": "190258658",
-          "topics": [
-            "Primeros pasos",
-            "LLM"
-          ],
+          "topics": ["Primeros pasos", "LLM"],
           "title": "Dominando el arte de entrenar modelos de lenguaje grandes: Una guia completa",
           "slug": "mastering-the-art-of-training-large-language-models-a-comprehensive-guide",
           "authorName": "Prof. Otto Nomos",
@@ -1772,10 +1575,7 @@
         },
         {
           "id": "190258582",
-          "topics": [
-            "Primeros pasos",
-            "MLG"
-          ],
+          "topics": ["Primeros pasos", "MLG"],
           "title": "Descifrando los MLG: Tu guia definitiva para entender los Modelos de Lenguaje Grandes",
           "slug": "decoding-llms-your-ultimate-guide-to-understanding-large-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -1803,10 +1603,7 @@
         },
         {
           "id": "190258905",
-          "topics": [
-            "Primeros pasos",
-            "LLM"
-          ],
+          "topics": ["Primeros pasos", "LLM"],
           "title": "Dominando el arte de los LLM: Una guia practica para implementar modelos de lenguaje de gran escala",
           "slug": "mastering-the-art-of-llms-a-practical-guide-to-implementing-large-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -1840,11 +1637,7 @@
       "articles": [
         {
           "id": "190259319",
-          "topics": [
-            "Resumen",
-            "LLM",
-            "Entrenamiento"
-          ],
+          "topics": ["Resumen", "LLM", "Entrenamiento"],
           "title": "Podcast Latent Space 16/8/23 [Resumen] - Las matematicas del entrenamiento de LLMs — con Quentin Anthony de Eleuther AI",
           "slug": "latent-space-podcast-8-16-23-summary-the-mathematics-of-training-llms-with-que",
           "authorName": "Prof. Otto Nomos",
@@ -1905,12 +1698,7 @@
         },
         {
           "id": "190260606",
-          "topics": [
-            "LLM",
-            "Entrenamiento",
-            "Agentes",
-            "Multimodal"
-          ],
+          "topics": ["LLM", "Entrenamiento", "Agentes", "Multimodal"],
           "title": "Podcast Latent Space 5/8/23 [Resumen] - El Gen del Fundador de IA: Ser Pionero, Construir Rapido y Creer en la Grandeza - con Sharif Shameem de Lexica",
           "slug": "latent-space-podcast-5-8-23-summary-the-ai-founder-gene-being-early-building-fast",
           "authorName": "Prof. Otto Nomos",
@@ -1944,12 +1732,7 @@
       "articles": [
         {
           "id": "190259129",
-          "topics": [
-            "LLM",
-            "Hardware",
-            "Resumen",
-            "Edge"
-          ],
+          "topics": ["LLM", "Hardware", "Resumen", "Edge"],
           "title": "Podcast Latent Space 8/10/23 [Resumen]: LLMs en todas partes: Ejecutando modelos de 70B en navegadores y iPhones usando MLC - con Tianqi Chen de CMU / OctoML",
           "slug": "latent-space-podcast-8-10-23-summary-llms-everywhere-running-70b-models-in-browse",
           "authorName": "Prof. Otto Nomos",
@@ -1977,11 +1760,7 @@
         },
         {
           "id": "190259238",
-          "topics": [
-            "Hardware",
-            "LLM",
-            "Resumen"
-          ],
+          "topics": ["Hardware", "LLM", "Resumen"],
           "title": "Podcast Latent Space 20/06/23 [Resumen] - Comercializando el Petaflop — con George Hotz de tiny corp",
           "slug": "latent-space-podcast-6-20-23-summary-commoditizing-the-petaflop-with-george-ho",
           "authorName": "Prof. Otto Nomos",
@@ -2015,12 +1794,7 @@
       "articles": [
         {
           "id": "190259129",
-          "topics": [
-            "LLM",
-            "Hardware",
-            "Resumen",
-            "Edge"
-          ],
+          "topics": ["LLM", "Hardware", "Resumen", "Edge"],
           "title": "Podcast Latent Space 8/10/23 [Resumen]: LLMs en todas partes: Ejecutando modelos de 70B en navegadores y iPhones usando MLC - con Tianqi Chen de CMU / OctoML",
           "slug": "latent-space-podcast-8-10-23-summary-llms-everywhere-running-70b-models-in-browse",
           "authorName": "Prof. Otto Nomos",
@@ -2088,11 +1862,7 @@
         },
         {
           "id": "190259191",
-          "topics": [
-            "Resumen",
-            "Codigo",
-            "LLM"
-          ],
+          "topics": ["Resumen", "Codigo", "LLM"],
           "title": "Podcast Latent Space 7/10/23 [Resumen] - Interprete de Codigo == GPT 4.5 (con Simon Willison, Alex Volkov, Aravind Srinivas, Alex Graveley, y otros)",
           "slug": "latent-space-podcast-7-10-23-summary-code-interpreter-gpt-4-5-w-simon-willison-al",
           "authorName": "Prof. Otto Nomos",
@@ -2120,12 +1890,7 @@
         },
         {
           "id": "190260557",
-          "topics": [
-            "Resumen",
-            "Codigo",
-            "LLM",
-            "Agentes"
-          ],
+          "topics": ["Resumen", "Codigo", "LLM", "Agentes"],
           "title": "Podcast Latent Space 25/05/23 [Resumen] - Depurando Internet con agentes de IA - con Itamar Friedman de Codium AI y AutoGPT",
           "slug": "latent-space-podcast-5-25-23-summary-debugging-the-internet-with-ai-agents-with",
           "authorName": "Prof. Otto Nomos",
@@ -2153,11 +1918,7 @@
         },
         {
           "id": "190260671",
-          "topics": [
-            "LLM",
-            "Codigo",
-            "Resumen"
-          ],
+          "topics": ["LLM", "Codigo", "Resumen"],
           "title": "Podcast Latent Space 5/3/23 [Resumen] - Entrenando un LLM de codigo de ultima generacion en 1 semana y Cuantificando las vibraciones — con Reza Shabani de Replit",
           "slug": "latent-space-podcast-5-3-23-summary-training-a-sota-code-llm-in-1-week-and-quanti",
           "authorName": "Prof. Otto Nomos",
@@ -2185,11 +1946,7 @@
         },
         {
           "id": "191313297",
-          "topics": [
-            "LLM",
-            "Resumen",
-            "Codigo"
-          ],
+          "topics": ["LLM", "Resumen", "Codigo"],
           "title": "Podcast Latent Space 3/2/23 [Resumen] - IA 97% mas barata, rapida, mejor y correcta — con Varun Mohan de Codeium Podcast Latent Space Ep. 2: Por que estas usando mal tus GPUs",
           "slug": "latent-space-podcast-3-2-23-summary-97-cheaper-faster-better-correct-ai-with-v",
           "authorName": "Prof. Otto Nomos",
@@ -2290,12 +2047,7 @@
         },
         {
           "id": "190259172",
-          "topics": [
-            "Resumen",
-            "LLM",
-            "Codigo abierto",
-            "Modelos pequenos"
-          ],
+          "topics": ["Resumen", "LLM", "Codigo abierto", "Modelos pequenos"],
           "title": "Podcast Latent Space 19/07/23 [Resumen] - Llama 2: El nuevo estado del arte en LLM de codigo abierto (con Nathan Lambert, Matt Bornstein, Anton Troynikov, Russell Kaplan, Whole Mars Catalog y otros)",
           "slug": "latent-space-podcast-7-19-23-summary-llama-2-the-new-open-llm-sota-ft-nathan-lamb",
           "authorName": "Prof. Otto Nomos",
@@ -2323,10 +2075,7 @@
         },
         {
           "id": "190259216",
-          "topics": [
-            "Resumen",
-            "Codigo abierto"
-          ],
+          "topics": ["Resumen", "Codigo abierto"],
           "title": "Podcast Latent Space 7/2/23 [Resumen] Tendencias de IA: un episodio cruzado de Latent Space x Practical AI",
           "slug": "latent-space-podcast-7-2-23-summary-ai-trends-a-latent-space-x-practical-ai-cross",
           "authorName": "Prof. Otto Nomos",
@@ -2354,11 +2103,7 @@
         },
         {
           "id": "190260640",
-          "topics": [
-            "Resumen",
-            "Codigo abierto",
-            "LLM"
-          ],
+          "topics": ["Resumen", "Codigo abierto", "LLM"],
           "title": "Podcast Latent Space 5/5/23 [Resumen] - Sin ventaja: Closed AI recibe su llamada de despertar de codigo abierto — con Simon Willison",
           "slug": "latent-space-podcast-5-5-23-summary-no-moat-closed-ai-gets-its-open-source-wakeup",
           "authorName": "Prof. Otto Nomos",
@@ -2426,12 +2171,7 @@
         },
         {
           "id": "190259172",
-          "topics": [
-            "Resumen",
-            "LLM",
-            "Codigo abierto",
-            "Modelos pequenos"
-          ],
+          "topics": ["Resumen", "LLM", "Codigo abierto", "Modelos pequenos"],
           "title": "Podcast Latent Space 19/07/23 [Resumen] - Llama 2: El nuevo estado del arte en LLM de codigo abierto (con Nathan Lambert, Matt Bornstein, Anton Troynikov, Russell Kaplan, Whole Mars Catalog y otros)",
           "slug": "latent-space-podcast-7-19-23-summary-llama-2-the-new-open-llm-sota-ft-nathan-lamb",
           "authorName": "Prof. Otto Nomos",
@@ -2459,10 +2199,7 @@
         },
         {
           "id": "190260577",
-          "topics": [
-            "LLM",
-            "Modelos pequenos"
-          ],
+          "topics": ["LLM", "Modelos pequenos"],
           "title": "Podcast Latent Space 20/5/23 [Resumen] - MPT-7B y el comienzo de Contexto=Infinito — con Jonathan Frankle y Abhinav Venigalla de MosaicML",
           "slug": "latent-space-podcast-5-20-23-summary-mpt-7b-and-the-beginning-of-context-infinity",
           "authorName": "Prof. Otto Nomos",
@@ -2490,11 +2227,7 @@
         },
         {
           "id": "190629271",
-          "topics": [
-            "LLM",
-            "Modelos pequenos",
-            "Resumen"
-          ],
+          "topics": ["LLM", "Modelos pequenos", "Resumen"],
           "title": "Podcast Latent Space 28/4/23 [Resumen] - Trazando el futuro de los modelos *verdaderamente* abiertos y entrenando a Dolly por $30 - con Mike Conover de Databricks",
           "slug": "latent-space-podcast-4-28-23-summary-mapping-the-future-of-truly-open-models-and",
           "authorName": "Prof. Otto Nomos",
@@ -2561,10 +2294,7 @@
         },
         {
           "id": "190258977",
-          "topics": [
-            "Resumen",
-            "Transformadores"
-          ],
+          "topics": ["Resumen", "Transformadores"],
           "title": "El Plano del Transformador: Una Guia Holistica de la Arquitectura de Red Neuronal Transformer [Resumen]",
           "slug": "the-transformer-blueprint-a-holistic-guide-to-the-transformer-neural-network-arch",
           "authorName": "Prof. Otto Nomos",
@@ -2598,11 +2328,7 @@
       "articles": [
         {
           "id": "190259294",
-          "topics": [
-            "LLM",
-            "Funciones",
-            "Resumen"
-          ],
+          "topics": ["LLM", "Funciones", "Resumen"],
           "title": "Podcast Latent Space 14/06/23 [Resumen] - Episodio de emergencia: nueva API de Funciones de OpenAI, reduccion de precios del 75%, longitud de contexto 4 veces mayor (con Alex Volkov, Simon Willison, Riley Goodside, Joshua Lochner, Stefania Druga, Eric Elliott, Mayo Oshin y otros)",
           "slug": "latent-space-podcast-6-14-23-summary-emergency-pod-openai-s-new-functions-api-75",
           "authorName": "Prof. Otto Nomos",
@@ -2636,11 +2362,7 @@
       "articles": [
         {
           "id": "190259333",
-          "topics": [
-            "LLM",
-            "Resumen",
-            "UX"
-          ],
+          "topics": ["LLM", "Resumen", "UX"],
           "title": "Podcast Latent Space 6/8/23 [Resumen] - De RLHF a RLHB: El caso para aprender del comportamiento humano - con Jeffrey Wang y Joe Reeve de Amplitude",
           "slug": "latent-space-podcast-6-8-23-summary-from-rlhf-to-rlhb-the-case-for-learning-from",
           "authorName": "Prof. Otto Nomos",
@@ -2668,11 +2390,7 @@
         },
         {
           "id": "190260528",
-          "topics": [
-            "Resumen",
-            "LLM",
-            "UX"
-          ],
+          "topics": ["Resumen", "LLM", "UX"],
           "title": "Podcast Latent Space 6/1/23 [Resumen] - Construyendo el Scenius de IA × UX — con Linus Lee de Notion AI",
           "slug": "latent-space-podcast-6-1-23-summary-building-the-ai-x-ux-scenius-with-linus-le",
           "authorName": "Prof. Otto Nomos",
@@ -2706,12 +2424,7 @@
       "articles": [
         {
           "id": "190260557",
-          "topics": [
-            "Resumen",
-            "Codigo",
-            "LLM",
-            "Agentes"
-          ],
+          "topics": ["Resumen", "Codigo", "LLM", "Agentes"],
           "title": "Podcast Latent Space 25/05/23 [Resumen] - Depurando Internet con agentes de IA - con Itamar Friedman de Codium AI y AutoGPT",
           "slug": "latent-space-podcast-5-25-23-summary-debugging-the-internet-with-ai-agents-with",
           "authorName": "Prof. Otto Nomos",
@@ -2739,12 +2452,7 @@
         },
         {
           "id": "190260606",
-          "topics": [
-            "LLM",
-            "Entrenamiento",
-            "Agentes",
-            "Multimodal"
-          ],
+          "topics": ["LLM", "Entrenamiento", "Agentes", "Multimodal"],
           "title": "Podcast Latent Space 5/8/23 [Resumen] - El Gen del Fundador de IA: Ser Pionero, Construir Rapido y Creer en la Grandeza - con Sharif Shameem de Lexica",
           "slug": "latent-space-podcast-5-8-23-summary-the-ai-founder-gene-being-early-building-fast",
           "authorName": "Prof. Otto Nomos",
@@ -2778,10 +2486,7 @@
       "articles": [
         {
           "id": "190260597",
-          "topics": [
-            "LLM",
-            "Datos estructurados"
-          ],
+          "topics": ["LLM", "Datos estructurados"],
           "title": "Podcast Latent Space 15/5/23 [Resumen] - Calidad y estructura garantizadas en salidas de LLM - con Shreya Rajpal de Guardrails AI",
           "slug": "latent-space-podcast-5-15-23-summary-guaranteed-quality-and-structure-in-llm-outp",
           "authorName": "Prof. Otto Nomos",
@@ -2815,12 +2520,7 @@
       "articles": [
         {
           "id": "190260606",
-          "topics": [
-            "LLM",
-            "Entrenamiento",
-            "Agentes",
-            "Multimodal"
-          ],
+          "topics": ["LLM", "Entrenamiento", "Agentes", "Multimodal"],
           "title": "Podcast Latent Space 5/8/23 [Resumen] - El Gen del Fundador de IA: Ser Pionero, Construir Rapido y Creer en la Grandeza - con Sharif Shameem de Lexica",
           "slug": "latent-space-podcast-5-8-23-summary-the-ai-founder-gene-being-early-building-fast",
           "authorName": "Prof. Otto Nomos",
@@ -2854,11 +2554,7 @@
       "articles": [
         {
           "id": "191164291",
-          "topics": [
-            "LLM",
-            "Empresa",
-            "Resumen"
-          ],
+          "topics": ["LLM", "Empresa", "Resumen"],
           "title": "Podcast Latent Space 21/4/23 [Resumen] - Busqueda impulsada por IA para empresas — con Deedy Das de Glean",
           "slug": "latent-space-podcast-4-21-23-summary-ai-powered-search-for-the-enterprise-with",
           "authorName": "Prof. Otto Nomos",
@@ -2892,10 +2588,7 @@
       "articles": [
         {
           "id": "191165673",
-          "topics": [
-            "Resumen",
-            "Vision"
-          ],
+          "topics": ["Resumen", "Vision"],
           "title": "Podcast Latent Space 13/4/23 [Resumen] - Modelo de Segmentacion de Cualquier Cosa y los Problemas Dificiles de Vision por Computadora — con Joseph Nelson de Roboflow",
           "slug": "latent-space-podcast-4-13-23-summary-segment-anything-model-and-the-hard-problems",
           "authorName": "Prof. Otto Nomos",
@@ -2929,11 +2622,7 @@
       "articles": [
         {
           "id": "191165920",
-          "topics": [
-            "LLM",
-            "Resumen",
-            "Evaluacion"
-          ],
+          "topics": ["LLM", "Resumen", "Evaluacion"],
           "title": "Podcast Latent Space 4/6/23 [Resumen] - Fundamentos de IA: Benchmarks 101",
           "slug": "latent-space-podcast-4-6-23-summary-ai-fundamentals-benchmarks-101",
           "authorName": "Prof. Otto Nomos",
@@ -2967,10 +2656,7 @@
       "articles": [
         {
           "id": "191301444",
-          "topics": [
-            "Resumen",
-            "LLMOps"
-          ],
+          "topics": ["Resumen", "LLMOps"],
           "title": "Podcast Latent Space 4/6/23 [Resumen] - Investigacion Fundamentada: De Google Brain a MLOps a LLMOps — con Shreya Shankar de UC Berkeley",
           "slug": "latent-space-podcast-4-6-23-summary-grounded-research-from-google-brain-to-mlops",
           "authorName": "Prof. Otto Nomos",
@@ -3004,11 +2690,7 @@
       "articles": [
         {
           "id": "191310297",
-          "topics": [
-            "Resumen",
-            "LLM",
-            "Herramientas"
-          ],
+          "topics": ["Resumen", "LLM", "Herramientas"],
           "title": "Podcast Latent Space 23/3/23 [Resumen] - Episodio de emergencia: El momento App Store de ChatGPT (con Logan Kilpatrick de OpenAI, Florent Crivello de LindyAI y Nader Dabit)",
           "slug": "latent-space-podcast-3-23-23-summary-emergency-pod-chatgpt-s-app-store-moment-w-o",
           "authorName": "Prof. Otto Nomos",
@@ -3042,11 +2724,7 @@
       "articles": [
         {
           "id": "190259003",
-          "topics": [
-            "IA generativa",
-            "Resumen",
-            "Industria"
-          ],
+          "topics": ["IA generativa", "Resumen", "Industria"],
           "title": "McKinsey: El potencial economico de la IA generativa [Resumen]",
           "slug": "mckinsey-the-economic-potential-of-generative-ai-eli5-summary",
           "authorName": "Prof. Otto Nomos",
@@ -3074,10 +2752,7 @@
         },
         {
           "id": "190258686",
-          "topics": [
-            "Primeros pasos",
-            "Industria"
-          ],
+          "topics": ["Primeros pasos", "Industria"],
           "title": "Potenciando el futuro: Desplegando el poder de los modelos de lenguaje grande en todas las industrias",
           "slug": "empowering-the-future-unfolding-the-power-of-large-language-models-across-industr",
           "authorName": "Prof. Otto Nomos",
@@ -3111,10 +2786,7 @@
       "articles": [
         {
           "id": "190258861",
-          "topics": [
-            "Primeros pasos",
-            "Personalizacion"
-          ],
+          "topics": ["Primeros pasos", "Personalizacion"],
           "title": "Modelos de Lenguaje Grande: Creando Experiencias Digitales Personalizadas",
           "slug": "large-language-models-crafting-personalized-digital-experiences",
           "authorName": "Prof. Otto Nomos",
@@ -3142,10 +2814,7 @@
         },
         {
           "id": "190258847",
-          "topics": [
-            "Primeros pasos",
-            "AGI"
-          ],
+          "topics": ["Primeros pasos", "AGI"],
           "title": "Titanes del manana: El futuro de los modelos de lenguaje grandes y su influencia en el mercado laboral y la AGI",
           "slug": "tomorrow-s-titans-the-future-of-large-language-models-and-their-influence-on-the",
           "authorName": "Prof. Otto Nomos",
@@ -3173,10 +2842,7 @@
         },
         {
           "id": "190258836",
-          "topics": [
-            "Primeros pasos",
-            "Privacidad"
-          ],
+          "topics": ["Primeros pasos", "Privacidad"],
           "title": "Asegurando el castillo: Explorando los LLM y la frontera de la privacidad de datos",
           "slug": "securing-the-castle-exploring-llms-and-the-frontier-of-data-privacy",
           "authorName": "Prof. Otto Nomos",
@@ -3204,10 +2870,7 @@
         },
         {
           "id": "190258732",
-          "topics": [
-            "Primeros pasos",
-            "Legal"
-          ],
+          "topics": ["Primeros pasos", "Legal"],
           "title": "¿Copiar eso? MLLs, derechos de autor y el dilema del plagio",
           "slug": "copy-that-llms-copyright-and-the-plagiarism-predicament",
           "authorName": "Prof. Otto Nomos",
@@ -3235,10 +2898,7 @@
         },
         {
           "id": "190258686",
-          "topics": [
-            "Primeros pasos",
-            "Industria"
-          ],
+          "topics": ["Primeros pasos", "Industria"],
           "title": "Potenciando el futuro: Desplegando el poder de los modelos de lenguaje grande en todas las industrias",
           "slug": "empowering-the-future-unfolding-the-power-of-large-language-models-across-industr",
           "authorName": "Prof. Otto Nomos",
@@ -3266,10 +2926,7 @@
         },
         {
           "id": "190258672",
-          "topics": [
-            "Primeros pasos",
-            "MLG"
-          ],
+          "topics": ["Primeros pasos", "MLG"],
           "title": "Descifrando los misterios de la IA: Una inmersion profunda en el conocimiento y las limitaciones de los Modelos de Lenguaje Grande",
           "slug": "decoding-the-mysteries-of-ai-a-deep-dive-into-large-language-models-knowledge-and",
           "authorName": "Prof. Otto Nomos",
@@ -3297,10 +2954,7 @@
         },
         {
           "id": "190258658",
-          "topics": [
-            "Primeros pasos",
-            "LLM"
-          ],
+          "topics": ["Primeros pasos", "LLM"],
           "title": "Dominando el arte de entrenar modelos de lenguaje grandes: Una guia completa",
           "slug": "mastering-the-art-of-training-large-language-models-a-comprehensive-guide",
           "authorName": "Prof. Otto Nomos",
@@ -3328,10 +2982,7 @@
         },
         {
           "id": "190258582",
-          "topics": [
-            "Primeros pasos",
-            "MLG"
-          ],
+          "topics": ["Primeros pasos", "MLG"],
           "title": "Descifrando los MLG: Tu guia definitiva para entender los Modelos de Lenguaje Grandes",
           "slug": "decoding-llms-your-ultimate-guide-to-understanding-large-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -3359,11 +3010,7 @@
         },
         {
           "id": "190258709",
-          "topics": [
-            "Primeros pasos",
-            "Alineacion",
-            "Seguridad"
-          ],
+          "topics": ["Primeros pasos", "Alineacion", "Seguridad"],
           "title": "Navegando el laberinto moral: Desentranar la etica de los modelos de lenguaje grandes",
           "slug": "navigating-the-moral-maze-unraveling-the-ethics-of-large-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -3391,10 +3038,7 @@
         },
         {
           "id": "190258905",
-          "topics": [
-            "Primeros pasos",
-            "LLM"
-          ],
+          "topics": ["Primeros pasos", "LLM"],
           "title": "Dominando el arte de los LLM: Una guia practica para implementar modelos de lenguaje de gran escala",
           "slug": "mastering-the-art-of-llms-a-practical-guide-to-implementing-large-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -3422,9 +3066,7 @@
         },
         {
           "id": "190258562",
-          "topics": [
-            "Primeros pasos"
-          ],
+          "topics": ["Primeros pasos"],
           "title": "Dominando la IA: Una introduccion completa a los Modelos de Lenguaje Grande (LLMs)",
           "slug": "mastering-ai-a-comprehensive-introduction-to-large-language-models-llms",
           "authorName": "Prof. Otto Nomos",
@@ -3458,10 +3100,7 @@
       "articles": [
         {
           "id": "190258861",
-          "topics": [
-            "Primeros pasos",
-            "Personalizacion"
-          ],
+          "topics": ["Primeros pasos", "Personalizacion"],
           "title": "Modelos de Lenguaje Grande: Creando Experiencias Digitales Personalizadas",
           "slug": "large-language-models-crafting-personalized-digital-experiences",
           "authorName": "Prof. Otto Nomos",
@@ -3495,10 +3134,7 @@
       "articles": [
         {
           "id": "190258847",
-          "topics": [
-            "Primeros pasos",
-            "AGI"
-          ],
+          "topics": ["Primeros pasos", "AGI"],
           "title": "Titanes del manana: El futuro de los modelos de lenguaje grandes y su influencia en el mercado laboral y la AGI",
           "slug": "tomorrow-s-titans-the-future-of-large-language-models-and-their-influence-on-the",
           "authorName": "Prof. Otto Nomos",
@@ -3532,10 +3168,7 @@
       "articles": [
         {
           "id": "190258836",
-          "topics": [
-            "Primeros pasos",
-            "Privacidad"
-          ],
+          "topics": ["Primeros pasos", "Privacidad"],
           "title": "Asegurando el castillo: Explorando los LLM y la frontera de la privacidad de datos",
           "slug": "securing-the-castle-exploring-llms-and-the-frontier-of-data-privacy",
           "authorName": "Prof. Otto Nomos",
@@ -3569,10 +3202,7 @@
       "articles": [
         {
           "id": "190258732",
-          "topics": [
-            "Primeros pasos",
-            "Legal"
-          ],
+          "topics": ["Primeros pasos", "Legal"],
           "title": "¿Copiar eso? MLLs, derechos de autor y el dilema del plagio",
           "slug": "copy-that-llms-copyright-and-the-plagiarism-predicament",
           "authorName": "Prof. Otto Nomos",
@@ -3606,11 +3236,7 @@
       "articles": [
         {
           "id": "190258709",
-          "topics": [
-            "Primeros pasos",
-            "Alineacion",
-            "Seguridad"
-          ],
+          "topics": ["Primeros pasos", "Alineacion", "Seguridad"],
           "title": "Navegando el laberinto moral: Desentranar la etica de los modelos de lenguaje grandes",
           "slug": "navigating-the-moral-maze-unraveling-the-ethics-of-large-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -3644,11 +3270,7 @@
       "articles": [
         {
           "id": "190258709",
-          "topics": [
-            "Primeros pasos",
-            "Alineacion",
-            "Seguridad"
-          ],
+          "topics": ["Primeros pasos", "Alineacion", "Seguridad"],
           "title": "Navegando el laberinto moral: Desentranar la etica de los modelos de lenguaje grandes",
           "slug": "navigating-the-moral-maze-unraveling-the-ethics-of-large-language-models",
           "authorName": "Prof. Otto Nomos",

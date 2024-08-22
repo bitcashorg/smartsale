@@ -2,11 +2,7 @@
   "relatedBlogs": [
     {
       "id": "180563939",
-      "topics": [
-        "DAO",
-        "Tokenomia",
-        "Comentario"
-      ],
+      "topics": ["DAO", "Tokenomia", "Comentario"],
       "title": "Un Marco para el Diseno de Gobernanza Blockchain: La Rueda del Grupo Prysm [Comentario]",
       "slug": "a-framework-for-blockchain-governance-design-the-prysm-group-wheel-commentary",
       "authorName": "Crypto Clairity",
@@ -25,11 +21,7 @@
     },
     {
       "id": "180556595",
-      "topics": [
-        "Recaudacion de fondos",
-        "Tokenomia",
-        "Comentario"
-      ],
+      "topics": ["Recaudacion de fondos", "Tokenomia", "Comentario"],
       "title": "El Efecto Blockchain: Efectos de Red sin Costos de Poder de Mercado [Comentario]",
       "slug": "the-blockchain-effect-network-effects-without-market-power-costs-commentary",
       "authorName": "Crypto Clairity",
@@ -48,10 +40,7 @@
     },
     {
       "id": "180563903",
-      "topics": [
-        "DAO",
-        "Resumen"
-      ],
+      "topics": ["DAO", "Resumen"],
       "title": "Para que sirve Votar? [Resumen]",
       "slug": "what-is-voting-for-summary",
       "authorName": "Crypto Clairity",
@@ -70,10 +59,7 @@
     },
     {
       "id": "180563908",
-      "topics": [
-        "DAO",
-        "Resumen"
-      ],
+      "topics": ["DAO", "Resumen"],
       "title": "Para que sirve la Gobernanza? [Resumen]",
       "slug": "what-is-governance-for-summary",
       "authorName": "Crypto Clairity",
@@ -92,10 +78,7 @@
     },
     {
       "id": "180563931",
-      "topics": [
-        "Tokenomia",
-        "Comentario"
-      ],
+      "topics": ["Tokenomia", "Comentario"],
       "title": "Estructuras de Incentivos Blockchain: Que son y por que importan [Comentario]",
       "slug": "blockchain-incentive-structures-what-they-are-and-why-they-matter-commentary",
       "authorName": "Crypto Clairity",
@@ -114,10 +97,7 @@
     },
     {
       "id": "167101094",
-      "topics": [
-        "Primeros pasos",
-        "Tokenomia"
-      ],
+      "topics": ["Primeros pasos", "Tokenomia"],
       "title": "Tokenomia 101: Desatando el Poder de la Criptomoneda!",
       "slug": "tokenomics-101-unleashing-the-power-of-cryptocurrency",
       "authorName": "Crypto Clairity",
@@ -136,10 +116,7 @@
     },
     {
       "id": "166981063",
-      "topics": [
-        "Primeros pasos",
-        "DAO"
-      ],
+      "topics": ["Primeros pasos", "DAO"],
       "title": "El Futuro esta Aqui: El Auge de las Organizaciones Autonomas Descentralizadas (DAOs)",
       "slug": "the-future-is-here-the-rise-of-decentralized-autonomous-organizations-daos",
       "authorName": "Crypto Clairity",
@@ -158,10 +135,7 @@
     },
     {
       "id": "165685908",
-      "topics": [
-        "Primeros pasos",
-        "Recaudacion de fondos"
-      ],
+      "topics": ["Primeros pasos", "Recaudacion de fondos"],
       "title": "Altera el Status Quo: Como la Criptomoneda esta Revolucionando la Recaudacion de Fondos y el Crowdfunding",
       "slug": "disrupt-the-status-quo-how-cryptocurrency-is-revolutionizing-fundraising-and-crow",
       "authorName": "Crypto Clairity",
@@ -181,11 +155,7 @@
   ],
   "blogContent": {
     "id": "167184977",
-    "topics": [
-      "Tokenomia",
-      "DAO",
-      "Recaudacion de fondos"
-    ],
+    "topics": ["Tokenomia", "DAO", "Recaudacion de fondos"],
     "title": "Revolucionando el Modelo de Equidad: Como la Tokenomia esta Transformando el Mundo de las Startups",
     "slug": "revolutionizing-the-equity-model-how-tokenomics-is-disrupting-the-startup-world",
     "authorName": "Crypto Clairity",
@@ -211,9 +181,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Introduction"
                     }
                   ]
@@ -256,9 +224,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Token Equity Model (TEM)"
                     }
                   ]
@@ -392,9 +358,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": " Overcoming the Challenges of Token Equity Model (TEM)"
                     }
                   ]
@@ -437,9 +401,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Dutch Auction Token Sale Process"
                     }
                   ]
@@ -500,9 +462,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Enter the Decentralized Autonomous Organization"
                     }
                   ]
@@ -581,9 +541,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Conclusion"
                     }
                   ]
@@ -627,9 +585,5 @@
       }
     }
   },
-  "topics": [
-    "Tokenomia",
-    "DAO",
-    "Recaudacion de fondos"
-  ]
+  "topics": ["Tokenomia", "DAO", "Recaudacion de fondos"]
 }

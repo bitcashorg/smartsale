@@ -1,10 +1,10 @@
+import { wagmiConfig } from '@/components/layout/providers'
+import { watchBlockNumber } from '@wagmi/core'
+import { eosEvmTestnet } from 'app-env'
 import { numberWithCommas } from 'app-lib'
 import { useEffect } from 'react'
-import { Abi, Address, formatUnits } from 'viem'
+import { type Abi, type Address, formatUnits } from 'viem'
 import { useBalance, useReadContracts } from 'wagmi'
-import { watchBlockNumber } from '@wagmi/core'
-import { wagmiConfig } from '@/components/layout/providers'
-import { eosEvmTestnet } from 'app-env'
 
 export function useNativeBalance(address?: Address) {
   const balance = useBalance({ address, chainId: eosEvmTestnet.id })
@@ -17,7 +17,7 @@ export function useNativeBalance(address?: Address) {
     const unwatch = watchBlockNumber(wagmiConfig, {
       onBlockNumber() {
         balance.refetch()
-      }
+      },
     })
     return () => unwatch()
   })
@@ -29,12 +29,12 @@ export function useErc20Balance({
   contract,
   address,
   abi,
-  chainId
+  chainId,
 }: UseErc20BalanaceParams) {
   const common = {
     address: contract,
     abi,
-    chainId
+    chainId,
   } as const
 
   const result = useReadContracts({
@@ -42,17 +42,17 @@ export function useErc20Balance({
       {
         functionName: 'balanceOf',
         ...common,
-        args: [address]
+        args: [address],
       },
       {
         functionName: 'symbol',
-        ...common
+        ...common,
       },
       {
         functionName: 'decimals',
-        ...common
-      }
-    ]
+        ...common,
+      },
+    ],
   })
 
   // console.log('data', stringify(result.data && result.data))
@@ -60,7 +60,7 @@ export function useErc20Balance({
   const data = result.data && {
     value: BigInt((result.data[0].result as bigint) || 0),
     symbol: result.data[1].result as string,
-    decimals: result.data[2].result as number
+    decimals: result.data[2].result as number,
   }
 
   const formatted =
@@ -72,7 +72,7 @@ export function useErc20Balance({
     const unwatch = watchBlockNumber(wagmiConfig, {
       onBlockNumber() {
         result.refetch()
-      }
+      },
     })
     return () => unwatch()
   })

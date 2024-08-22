@@ -2,9 +2,7 @@
   "relatedBlogs": [
     {
       "id": "CD89KaoLSh6nQbiMhxX0EQ",
-      "topics": [
-        "launchpad"
-      ],
+      "topics": ["launchpad"],
       "title": "Garantizando la confianza y la integridad: Cumplimiento normativo y medidas de seguridad",
       "slug": "ensuring-trust-and-integrity-regulatory-compliance-and-security-measures",
       "authorName": "Jun Dam",
@@ -23,9 +21,7 @@
     },
     {
       "id": "fbM-UqrYQXGhw6HB4C6swQ",
-      "topics": [
-        "launchpad"
-      ],
+      "topics": ["launchpad"],
       "title": "Hoja de ruta estrategica: Pioneros en innovacion blockchain y exito de startups de IA",
       "slug": "strategic-roadmap-pioneering-blockchain-innovation-and-ai-startup-success",
       "authorName": "Jun Dam",
@@ -44,9 +40,7 @@
     },
     {
       "id": "I4jShMnWRruvJgDbrucwDw",
-      "topics": [
-        "launchpad"
-      ],
+      "topics": ["launchpad"],
       "title": "La columna vertebral tecnologica de bitLauncher",
       "slug": "the-technological-backbone-of-bitcash-launchpad",
       "authorName": "Jun Dam",
@@ -65,9 +59,7 @@
     },
     {
       "id": "BEfgGhndSsCn5MBU89RO3A",
-      "topics": [
-        "launchpad"
-      ],
+      "topics": ["launchpad"],
       "title": "Potenciando la innovacion: Vision, mision y objetivos estrategicos de bitLauncher",
       "slug": "empowering-innovation-vision-mission-and-strategic-goals-of-bitcash-launchpad",
       "authorName": "Jun Dam",
@@ -86,12 +78,7 @@
     },
     {
       "id": "NZeB3i5XRzuELW2UWBDyRQ",
-      "topics": [
-        "research",
-        "dao",
-        "fundraising",
-        "launchpad"
-      ],
+      "topics": ["research", "dao", "fundraising", "launchpad"],
       "title": "Navegando la convergencia: Un analisis de mercado integral de la dinamica de IA y criptomonedas",
       "slug": "navigating-the-convergence-a-comprehensive-market-analysis-of-ai-and-cryptocurren",
       "authorName": "Jun Dam",
@@ -110,9 +97,7 @@
     },
     {
       "id": "MICfokr1TVuScAB4Qh9YGw",
-      "topics": [
-        "launchpad"
-      ],
+      "topics": ["launchpad"],
       "title": "Potenciando la innovacion: Tokenomia y estrategia de financiacion de bitcash",
       "slug": "empowering-innovation-tokenomics-and-funding-strategy-of-bitcash",
       "authorName": "Jun Dam",
@@ -131,9 +116,7 @@
     },
     {
       "id": "BSDdY8byQWipv749rApFRA",
-      "topics": [
-        "launchpad"
-      ],
+      "topics": ["launchpad"],
       "title": "Desbloqueando el potencial: Casos de uso y aplicaciones de bitLauncher",
       "slug": "unlocking-potential-use-cases-and-applications-of-bitlauncher",
       "authorName": "Jun Dam",
@@ -153,11 +136,7 @@
   ],
   "blogContent": {
     "id": "VgGHDFI9T9qzTCHPAm5WLg",
-    "topics": [
-      "dao",
-      "recaudacion de fondos",
-      "plataforma de lanzamiento"
-    ],
+    "topics": ["dao", "recaudacion de fondos", "plataforma de lanzamiento"],
     "title": "Impulsando a los Unicornios de IA de Codigo Abierto de Proxima Generacion: Una Plataforma de Lanzamiento Revolucionaria",
     "slug": "empowering-next-gen-open-source-ai-unicorns-a-revolutionary-launchpad",
     "authorName": "Jun Dam",
@@ -202,9 +181,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Unveiling the Synergy: Cryptocurrency and AI's Transformative Impact"
                     }
                   ]
@@ -224,9 +201,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Filling the Void: The Critical Role of an AI + Crypto Launchpad"
                     }
                   ]
@@ -236,7 +211,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Open-source AI companies often grapple with the challenge of securing sustainable funding and establishing a competitive edge. Traditional venture capital avenues, especially outside of established tech hubs like Silicon Valley, can be fraught with barriers. Our bitLauncher launchpad addresses this gap by enabling AI startups to access a global pool of investors and a first-mover audience of potential customers through tokenization and DAOs. This approach not only facilitates early and equitable investment opportunities but also fosters a loyal community of contributors and users, creating a formidable competitive moat for these projects."
+                      "value": "Open-source AI companies often grapple with the challenge of securing sustainable funding and establishing a competitive edge. Traditional venture capital avenues, especially outside of established tech hubs like Silicon Valley, can be fraught with barriers. Our bitLauncher launchpad addresses this gap by enabling AI startups to access a global pool of contributors and a first-mover audience of potential customers through tokenization and DAOs. This approach not only facilitates early and equitable investment opportunities but also fosters a loyal community of contributors and users, creating a formidable competitive moat for these projects."
                     }
                   ]
                 },
@@ -255,9 +230,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Blueprint for Innovation: Unpacking the Whitepaper's Goals"
                     }
                   ]
@@ -267,7 +240,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "This whitepaper aims to articulate the vision, strategy, and mechanics behind our AI + Crypto launchpad. It will detail our unique value propositions, such as our focus on open-source AI projects, the use of a Dutch batch auction for equitable price discovery, and the facilitation of rapid organizational structure through DAO and token infrastructure. Furthermore, it will explore our market-driven approach to supporting AI startups, the innovative technology and tokenomics underpinning our platform, and our long-term goals for nurturing an expansive, sustainable AI ecosystem. Through this document, we invite startups, investors, and the broader community to join us in democratizing and decentralizing AI, paving the way for a future where AI's potential is fully realized and shared.\n"
+                      "value": "This whitepaper aims to articulate the vision, strategy, and mechanics behind our AI + Crypto launchpad. It will detail our unique value propositions, such as our focus on open-source AI projects, the use of a Dutch batch auction for equitable price discovery, and the facilitation of rapid organizational structure through DAO and token infrastructure. Furthermore, it will explore our market-driven approach to supporting AI startups, the innovative technology and tokenomics underpinning our platform, and our long-term goals for nurturing an expansive, sustainable AI ecosystem. Through this document, we invite startups, contributors, and the broader community to join us in democratizing and decentralizing AI, paving the way for a future where AI's potential is fully realized and shared.\n"
                     }
                   ]
                 }
@@ -301,9 +274,5 @@
       }
     }
   },
-  "topics": [
-    "dao",
-    "fundraising",
-    "launchpad"
-  ]
+  "topics": ["dao", "fundraising", "launchpad"]
 }

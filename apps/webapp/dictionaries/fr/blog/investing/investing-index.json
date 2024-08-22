@@ -6,10 +6,7 @@
       "articles": [
         {
           "id": "173914208",
-          "topics": [
-            "Premiers pas",
-            "Gestion de portefeuille"
-          ],
+          "topics": ["Premiers pas", "Gestion de portefeuille"],
           "title": "Maitriser la gestion de portefeuille : L'art de la diversification, de l'allocation d'actifs et du reequilibrage",
           "slug": "mastering-portfolio-management-the-art-of-diversification-asset-allocation-and-re",
           "authorName": "Mister Moneybags",
@@ -37,12 +34,9 @@
         },
         {
           "id": "174592759",
-          "topics": [
-            "Premiers pas",
-            "Alternatives"
-          ],
+          "topics": ["Premiers pas", "Alternatives"],
           "title": "Liberer le potentiel : Maitriser les investissements alternatifs pour le succes des investisseurs",
-          "slug": "unleashing-the-potential-mastering-alternative-investments-for-investor-success",
+          "slug": "unleashing-the-potential-mastering-alternative-investments-for-contributor-success",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
@@ -55,7 +49,7 @@
           "contentBlock": [],
           "seo": {
             "description": "Dive into the world of private equity, hedge funds, and commodities to supercharge your portfolio. ",
-            "title": "Mastering Alternative Investments for Investor Success",
+            "title": "Mastering Alternative Investments for Contributor Success",
             "twitterCard": null,
             "image": {
               "width": 870,
@@ -68,10 +62,7 @@
         },
         {
           "id": "175015363",
-          "topics": [
-            "Premiers pas",
-            "Fonds communs et FNB"
-          ],
+          "topics": ["Premiers pas", "Fonds communs et FNB"],
           "title": "Devoiler les avantages et inconvenients des fonds negocies en bourse (FNB) : Un guide complet pour les investisseurs",
           "slug": "unveiling-the-pros-and-cons-of-exchange-traded-funds-etfs-a-comprehensive-guide-f",
           "authorName": "Mister Moneybags",
@@ -99,10 +90,7 @@
         },
         {
           "id": "176002890",
-          "topics": [
-            "Premiers pas",
-            "Gestion des risques"
-          ],
+          "topics": ["Premiers pas", "Gestion des risques"],
           "title": "Protegez vos investissements : Un guide complet pour reconnaitre et eviter la fraude a l'investissement",
           "slug": "shield-your-investments-a-comprehensive-guide-to-recognizing-and-avoiding-investm",
           "authorName": "Mister Moneybags",
@@ -130,10 +118,7 @@
         },
         {
           "id": "176002763",
-          "topics": [
-            "Premiers pas",
-            "Assurance"
-          ],
+          "topics": ["Premiers pas", "Assurance"],
           "title": "Planification d'assurance 101 : Naviguer dans l'assurance vie, invalidite et soins de longue duree",
           "slug": "insurance-planning-101-navigating-life-disability-and-long-term-care-insurance",
           "authorName": "Mister Moneybags",
@@ -161,10 +146,7 @@
         },
         {
           "id": "175940742",
-          "topics": [
-            "Premiers pas",
-            "Education"
-          ],
+          "topics": ["Premiers pas", "Education"],
           "title": "Debloquer la cle de l'epargne pour les etudes : Maximiser les fonds d'education avec les plans 529 et les comptes Coverdell ESA",
           "slug": "unlocking-the-key-to-college-savings-maximizing-education-funds-with-529-plans-an",
           "authorName": "Mister Moneybags",
@@ -192,10 +174,7 @@
         },
         {
           "id": "175940646",
-          "topics": [
-            "Premiers pas",
-            "Retraite"
-          ],
+          "topics": ["Premiers pas", "Retraite"],
           "title": "Maitriser la planification de la retraite : Decoder les 401(k), les IRA et les regimes de retraite pour un avenir serein",
           "slug": "mastering-retirement-planning-decoding-401-k-s-iras-and-pension-plans-for-a-secur",
           "authorName": "Mister Moneybags",
@@ -223,10 +202,7 @@
         },
         {
           "id": "175685081",
-          "topics": [
-            "Premiers pas",
-            "Retraite"
-          ],
+          "topics": ["Premiers pas", "Retraite"],
           "title": "Dechiffrer la Securite Sociale : Votre guide pour maximiser les prestations de retraite",
           "slug": "unlocking-social-security-your-guide-to-maximizing-retirement-benefits",
           "authorName": "Mister Moneybags",
@@ -254,12 +230,9 @@
         },
         {
           "id": "175530377",
-          "topics": [
-            "Premiers pas",
-            "Planification fiscale"
-          ],
+          "topics": ["Premiers pas", "Planification fiscale"],
           "title": "Maximiser les rendements : Le guide ultime de la planification fiscale pour les investisseurs",
-          "slug": "maximizing-returns-the-ultimate-guide-to-tax-planning-for-investors",
+          "slug": "maximizing-returns-the-ultimate-guide-to-tax-planning-for-contributors",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
@@ -272,7 +245,7 @@
           "contentBlock": [],
           "seo": {
             "description": "Learn how to optimize your investment returns by understanding capital gains, dividends, and interest income, while minimizing your tax liabilities.",
-            "title": "The Ultimate Guide to Tax Planning for Investors",
+            "title": "The Ultimate Guide to Tax Planning for Contributors",
             "twitterCard": null,
             "image": {
               "width": 870,
@@ -285,10 +258,7 @@
         },
         {
           "id": "175528452",
-          "topics": [
-            "Premiers pas",
-            "Planification successorale"
-          ],
+          "topics": ["Premiers pas", "Planification successorale"],
           "title": "Securisez votre heritage : Un guide complet sur la planification successorale, les testaments, les fiducies et les droits de succession",
           "slug": "secure-your-legacy-a-comprehensive-guide-to-estate-planning-wills-trusts-and-inhe",
           "authorName": "Mister Moneybags",
@@ -316,10 +286,7 @@
         },
         {
           "id": "175337478",
-          "topics": [
-            "Premiers pas",
-            "Planification financiere"
-          ],
+          "topics": ["Premiers pas", "Planification financiere"],
           "title": "Maitriser vos finances : Le guide ultime pour budgetiser, reduire vos dettes et planifier votre retraite",
           "slug": "mastering-your-finances-the-ultimate-guide-to-budgeting-debt-reduction-and-retire",
           "authorName": "Mister Moneybags",
@@ -347,11 +314,9 @@
         },
         {
           "id": "175337425",
-          "topics": [
-            "Premiers pas"
-          ],
+          "topics": ["Premiers pas"],
           "title": "Maitriser votre esprit : Surmonter les biais des investisseurs pour reussir financierement",
-          "slug": "mastering-your-mind-overcoming-investor-biases-for-financial-success",
+          "slug": "mastering-your-mind-overcoming-contributor-biases-for-financial-success",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
@@ -363,8 +328,8 @@
           },
           "contentBlock": [],
           "seo": {
-            "description": "Discover how to conquer common investor biases that can hinder your financial success. ",
-            "title": "Overcoming Investor Biases for Financial Success",
+            "description": "Discover how to conquer common contributor biases that can hinder your financial success. ",
+            "title": "Overcoming Contributor Biases for Financial Success",
             "twitterCard": null,
             "image": {
               "width": 870,
@@ -377,10 +342,7 @@
         },
         {
           "id": "176002895",
-          "topics": [
-            "Premiers pas",
-            "Inflation"
-          ],
+          "topics": ["Premiers pas", "Inflation"],
           "title": "Naviguer sur les mers financieres : Comprendre l'impact de l'inflation sur l'investissement",
           "slug": "navigating-the-financial-seas-understanding-inflation-s-impact-on-investment",
           "authorName": "Mister Moneybags",
@@ -408,10 +370,7 @@
         },
         {
           "id": "173914322",
-          "topics": [
-            "Premiers pas",
-            "actions"
-          ],
+          "topics": ["Premiers pas", "actions"],
           "title": "Comprendre le marche boursier : son fonctionnement, les indicateurs de marche et les tendances historiques.",
           "slug": "understanding-the-stock-market-how-it-works-market-indicators-and-historical-tren",
           "authorName": "Mister Moneybags",
@@ -439,10 +398,7 @@
         },
         {
           "id": "174362868",
-          "topics": [
-            "Premiers pas",
-            "immobilier"
-          ],
+          "topics": ["Premiers pas", "immobilier"],
           "title": "Des maisons aux gratte-ciel : Maitriser l'investissement immobilier dans le residentiel, le commercial et les SCPI",
           "slug": "from-houses-to-high-rises-mastering-real-estate-investing-in-residential-commerci",
           "authorName": "Mister Moneybags",
@@ -470,10 +426,7 @@
         },
         {
           "id": "174594216",
-          "topics": [
-            "Premiers pas",
-            "Fonds communs de placement et FNB"
-          ],
+          "topics": ["Premiers pas", "Fonds communs de placement et FNB"],
           "title": "Maitriser les fonds communs de placement : Devoiler les types, les frais et la performance pour un investissement reussi",
           "slug": "mastering-mutual-funds-unveiling-the-types-expenses-and-performance-for-successfu",
           "authorName": "Mister Moneybags",
@@ -501,12 +454,9 @@
         },
         {
           "id": "175016379",
-          "topics": [
-            "Premiers pas",
-            "Gestion des risques"
-          ],
+          "topics": ["Premiers pas", "Gestion des risques"],
           "title": "Maitriser la tolerance au risque : Devoiler votre ADN unique d'investisseur",
-          "slug": "mastering-risk-tolerance-unveiling-your-unique-investor-dna",
+          "slug": "mastering-risk-tolerance-unveiling-your-unique-contributor-dna",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
@@ -519,7 +469,7 @@
           "contentBlock": [],
           "seo": {
             "description": "Unlock the secrets to aligning risk and reward for financial success.\n\n",
-            "title": "Mastering Risk Tolerance: Unveiling Your Unique Investor DNA",
+            "title": "Mastering Risk Tolerance: Unveiling Your Unique Contributor DNA",
             "twitterCard": null,
             "image": {
               "width": 870,
@@ -532,9 +482,7 @@
         },
         {
           "id": "175023099",
-          "topics": [
-            "Premiers pas"
-          ],
+          "topics": ["Premiers pas"],
           "title": "Maitriser la psychologie de l'investissement : Vaincre la peur et l'avidite pour reussir financierement",
           "slug": "mastering-investment-psychology-conquering-fear-and-greed-for-financial-success",
           "authorName": "Mister Moneybags",
@@ -562,10 +510,7 @@
         },
         {
           "id": "173906568",
-          "topics": [
-            "Planification financiere",
-            "Commencer"
-          ],
+          "topics": ["Planification financiere", "Commencer"],
           "title": "Demystifier les bases de l'investissement : Explorer les types d'actifs, les compromis risque-rendement et la definition d'objectifs",
           "slug": "unraveling-investment-basics-navigating-asset-types-risk-return-trade-offs-and-go",
           "authorName": "Mister Moneybags",
@@ -599,10 +544,7 @@
       "articles": [
         {
           "id": "173914208",
-          "topics": [
-            "Premiers pas",
-            "Gestion de portefeuille"
-          ],
+          "topics": ["Premiers pas", "Gestion de portefeuille"],
           "title": "Maitriser la gestion de portefeuille : L'art de la diversification, de l'allocation d'actifs et du reequilibrage",
           "slug": "mastering-portfolio-management-the-art-of-diversification-asset-allocation-and-re",
           "authorName": "Mister Moneybags",
@@ -636,12 +578,9 @@
       "articles": [
         {
           "id": "174592759",
-          "topics": [
-            "Premiers pas",
-            "Alternatives"
-          ],
+          "topics": ["Premiers pas", "Alternatives"],
           "title": "Liberer le potentiel : Maitriser les investissements alternatifs pour le succes des investisseurs",
-          "slug": "unleashing-the-potential-mastering-alternative-investments-for-investor-success",
+          "slug": "unleashing-the-potential-mastering-alternative-investments-for-contributor-success",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
@@ -654,7 +593,7 @@
           "contentBlock": [],
           "seo": {
             "description": "Dive into the world of private equity, hedge funds, and commodities to supercharge your portfolio. ",
-            "title": "Mastering Alternative Investments for Investor Success",
+            "title": "Mastering Alternative Investments for Contributor Success",
             "twitterCard": null,
             "image": {
               "width": 870,
@@ -673,10 +612,7 @@
       "articles": [
         {
           "id": "175015363",
-          "topics": [
-            "Premiers pas",
-            "Fonds communs et FNB"
-          ],
+          "topics": ["Premiers pas", "Fonds communs et FNB"],
           "title": "Devoiler les avantages et inconvenients des fonds negocies en bourse (FNB) : Un guide complet pour les investisseurs",
           "slug": "unveiling-the-pros-and-cons-of-exchange-traded-funds-etfs-a-comprehensive-guide-f",
           "authorName": "Mister Moneybags",
@@ -704,10 +640,7 @@
         },
         {
           "id": "174594216",
-          "topics": [
-            "Premiers pas",
-            "Fonds communs de placement et FNB"
-          ],
+          "topics": ["Premiers pas", "Fonds communs de placement et FNB"],
           "title": "Maitriser les fonds communs de placement : Devoiler les types, les frais et la performance pour un investissement reussi",
           "slug": "mastering-mutual-funds-unveiling-the-types-expenses-and-performance-for-successfu",
           "authorName": "Mister Moneybags",
@@ -741,10 +674,7 @@
       "articles": [
         {
           "id": "176002890",
-          "topics": [
-            "Premiers pas",
-            "Gestion des risques"
-          ],
+          "topics": ["Premiers pas", "Gestion des risques"],
           "title": "Protegez vos investissements : Un guide complet pour reconnaitre et eviter la fraude a l'investissement",
           "slug": "shield-your-investments-a-comprehensive-guide-to-recognizing-and-avoiding-investm",
           "authorName": "Mister Moneybags",
@@ -772,12 +702,9 @@
         },
         {
           "id": "175016379",
-          "topics": [
-            "Premiers pas",
-            "Gestion des risques"
-          ],
+          "topics": ["Premiers pas", "Gestion des risques"],
           "title": "Maitriser la tolerance au risque : Devoiler votre ADN unique d'investisseur",
-          "slug": "mastering-risk-tolerance-unveiling-your-unique-investor-dna",
+          "slug": "mastering-risk-tolerance-unveiling-your-unique-contributor-dna",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
@@ -790,7 +717,7 @@
           "contentBlock": [],
           "seo": {
             "description": "Unlock the secrets to aligning risk and reward for financial success.\n\n",
-            "title": "Mastering Risk Tolerance: Unveiling Your Unique Investor DNA",
+            "title": "Mastering Risk Tolerance: Unveiling Your Unique Contributor DNA",
             "twitterCard": null,
             "image": {
               "width": 870,
@@ -809,10 +736,7 @@
       "articles": [
         {
           "id": "176002763",
-          "topics": [
-            "Premiers pas",
-            "Assurance"
-          ],
+          "topics": ["Premiers pas", "Assurance"],
           "title": "Planification d'assurance 101 : Naviguer dans l'assurance vie, invalidite et soins de longue duree",
           "slug": "insurance-planning-101-navigating-life-disability-and-long-term-care-insurance",
           "authorName": "Mister Moneybags",
@@ -846,10 +770,7 @@
       "articles": [
         {
           "id": "175940742",
-          "topics": [
-            "Premiers pas",
-            "Education"
-          ],
+          "topics": ["Premiers pas", "Education"],
           "title": "Debloquer la cle de l'epargne pour les etudes : Maximiser les fonds d'education avec les plans 529 et les comptes Coverdell ESA",
           "slug": "unlocking-the-key-to-college-savings-maximizing-education-funds-with-529-plans-an",
           "authorName": "Mister Moneybags",
@@ -883,10 +804,7 @@
       "articles": [
         {
           "id": "175940646",
-          "topics": [
-            "Premiers pas",
-            "Retraite"
-          ],
+          "topics": ["Premiers pas", "Retraite"],
           "title": "Maitriser la planification de la retraite : Decoder les 401(k), les IRA et les regimes de retraite pour un avenir serein",
           "slug": "mastering-retirement-planning-decoding-401-k-s-iras-and-pension-plans-for-a-secur",
           "authorName": "Mister Moneybags",
@@ -914,10 +832,7 @@
         },
         {
           "id": "175685081",
-          "topics": [
-            "Premiers pas",
-            "Retraite"
-          ],
+          "topics": ["Premiers pas", "Retraite"],
           "title": "Dechiffrer la Securite Sociale : Votre guide pour maximiser les prestations de retraite",
           "slug": "unlocking-social-security-your-guide-to-maximizing-retirement-benefits",
           "authorName": "Mister Moneybags",
@@ -951,12 +866,9 @@
       "articles": [
         {
           "id": "175530377",
-          "topics": [
-            "Premiers pas",
-            "Planification fiscale"
-          ],
+          "topics": ["Premiers pas", "Planification fiscale"],
           "title": "Maximiser les rendements : Le guide ultime de la planification fiscale pour les investisseurs",
-          "slug": "maximizing-returns-the-ultimate-guide-to-tax-planning-for-investors",
+          "slug": "maximizing-returns-the-ultimate-guide-to-tax-planning-for-contributors",
           "authorName": "Mister Moneybags",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
@@ -969,7 +881,7 @@
           "contentBlock": [],
           "seo": {
             "description": "Learn how to optimize your investment returns by understanding capital gains, dividends, and interest income, while minimizing your tax liabilities.",
-            "title": "The Ultimate Guide to Tax Planning for Investors",
+            "title": "The Ultimate Guide to Tax Planning for Contributors",
             "twitterCard": null,
             "image": {
               "width": 870,
@@ -988,10 +900,7 @@
       "articles": [
         {
           "id": "175528452",
-          "topics": [
-            "Premiers pas",
-            "Planification successorale"
-          ],
+          "topics": ["Premiers pas", "Planification successorale"],
           "title": "Securisez votre heritage : Un guide complet sur la planification successorale, les testaments, les fiducies et les droits de succession",
           "slug": "secure-your-legacy-a-comprehensive-guide-to-estate-planning-wills-trusts-and-inhe",
           "authorName": "Mister Moneybags",
@@ -1025,10 +934,7 @@
       "articles": [
         {
           "id": "175337478",
-          "topics": [
-            "Premiers pas",
-            "Planification financiere"
-          ],
+          "topics": ["Premiers pas", "Planification financiere"],
           "title": "Maitriser vos finances : Le guide ultime pour budgetiser, reduire vos dettes et planifier votre retraite",
           "slug": "mastering-your-finances-the-ultimate-guide-to-budgeting-debt-reduction-and-retire",
           "authorName": "Mister Moneybags",
@@ -1056,10 +962,7 @@
         },
         {
           "id": "173906568",
-          "topics": [
-            "Planification financiere",
-            "Commencer"
-          ],
+          "topics": ["Planification financiere", "Commencer"],
           "title": "Demystifier les bases de l'investissement : Explorer les types d'actifs, les compromis risque-rendement et la definition d'objectifs",
           "slug": "unraveling-investment-basics-navigating-asset-types-risk-return-trade-offs-and-go",
           "authorName": "Mister Moneybags",
@@ -1093,10 +996,7 @@
       "articles": [
         {
           "id": "176002895",
-          "topics": [
-            "Premiers pas",
-            "Inflation"
-          ],
+          "topics": ["Premiers pas", "Inflation"],
           "title": "Naviguer sur les mers financieres : Comprendre l'impact de l'inflation sur l'investissement",
           "slug": "navigating-the-financial-seas-understanding-inflation-s-impact-on-investment",
           "authorName": "Mister Moneybags",
@@ -1130,10 +1030,7 @@
       "articles": [
         {
           "id": "173914322",
-          "topics": [
-            "Premiers pas",
-            "actions"
-          ],
+          "topics": ["Premiers pas", "actions"],
           "title": "Comprendre le marche boursier : son fonctionnement, les indicateurs de marche et les tendances historiques.",
           "slug": "understanding-the-stock-market-how-it-works-market-indicators-and-historical-tren",
           "authorName": "Mister Moneybags",
@@ -1167,10 +1064,7 @@
       "articles": [
         {
           "id": "173980855",
-          "topics": [
-            "investissement",
-            "obligations"
-          ],
+          "topics": ["investissement", "obligations"],
           "title": "Maitriser les placements a revenu fixe : obligations, certificats de depot et fonds monetaires",
           "slug": "mastering-fixed-income-investments-bonds-cds-and-money-market-funds",
           "authorName": "Mister Moneybags",
@@ -1204,10 +1098,7 @@
       "articles": [
         {
           "id": "173980855",
-          "topics": [
-            "investissement",
-            "obligations"
-          ],
+          "topics": ["investissement", "obligations"],
           "title": "Maitriser les placements a revenu fixe : obligations, certificats de depot et fonds monetaires",
           "slug": "mastering-fixed-income-investments-bonds-cds-and-money-market-funds",
           "authorName": "Mister Moneybags",
@@ -1241,10 +1132,7 @@
       "articles": [
         {
           "id": "174362868",
-          "topics": [
-            "Premiers pas",
-            "immobilier"
-          ],
+          "topics": ["Premiers pas", "immobilier"],
           "title": "Des maisons aux gratte-ciel : Maitriser l'investissement immobilier dans le residentiel, le commercial et les SCPI",
           "slug": "from-houses-to-high-rises-mastering-real-estate-investing-in-residential-commerci",
           "authorName": "Mister Moneybags",

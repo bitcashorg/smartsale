@@ -1,8 +1,8 @@
 'use client'
 
-import { useEffect } from 'react'
-import { parseCookies } from 'nookies'
 import { setLanguage } from '@/app/actions/set-lang'
+import { parseCookies } from 'nookies'
+import { useEffect } from 'react'
 
 export function LangSetter() {
   useEffect(() => {

@@ -2,11 +2,7 @@
   "relatedBlogs": [
     {
       "id": "167184977",
-      "topics": [
-        "代币经济学",
-        "去中心化自治组织",
-        "融资"
-      ],
+      "topics": ["代币经济学", "去中心化自治组织", "融资"],
       "title": "革新股权模式：代币经济学如何颠覆创业世界",
       "slug": "revolutionizing-the-equity-model-how-tokenomics-is-disrupting-the-startup-world",
       "authorName": "Crypto Clairity",
@@ -25,10 +21,7 @@
     },
     {
       "id": "166981063",
-      "topics": [
-        "入门指南",
-        "去中心化自治组织"
-      ],
+      "topics": ["入门指南", "去中心化自治组织"],
       "title": "未来已来：去中心化自治组织（DAOs）的崛起",
       "slug": "the-future-is-here-the-rise-of-decentralized-autonomous-organizations-daos",
       "authorName": "Crypto Clairity",
@@ -48,10 +41,7 @@
   ],
   "blogContent": {
     "id": "180563903",
-    "topics": [
-      "DAO",
-      "摘要"
-    ],
+    "topics": ["DAO", "摘要"],
     "title": "投票的目的是什么? [摘要]",
     "slug": "what-is-voting-for-summary",
     "authorName": "Crypto Clairity",
@@ -314,8 +304,5 @@
       }
     }
   },
-  "topics": [
-    "去中心化自治组织",
-    "摘要"
-  ]
+  "topics": ["去中心化自治组织", "摘要"]
 }

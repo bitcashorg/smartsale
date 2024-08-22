@@ -5,7 +5,7 @@ import {
   CardContent,
   CardDescription,
   CardHeader,
-  CardTitle
+  CardTitle,
 } from '@/components/ui/card'
 import {
   Table,
@@ -13,14 +13,14 @@ import {
   TableCell,
   TableHead,
   TableHeader,
-  TableRow
+  TableRow,
 } from '@/components/ui/table'
-import { useSupabaseClient } from '@/services/supabase'
-import { useAccount } from 'wagmi'
-import { Tables } from '@repo/supabase'
 import { appConfig } from '@/lib/config'
+import { useSupabaseClient } from '@/services/supabase'
+import type { Tables } from '@repo/supabase'
 import { formatAddress } from 'app-lib'
 import { useEffect, useState } from 'react'
+import { useAccount } from 'wagmi'
 import { TestnetBLPL } from '../../../../../../packages/app-contracts/src/dev/tokens/testnet-blpl'
 
 export function PresaleTransactionsCard() {
@@ -67,35 +67,35 @@ export function PresaleTransactionsCard() {
           event: '*',
           schema: 'public',
           table: 'transfer',
-          filter: `from=eq.${address}`
+          filter: `from=eq.${address}`,
         },
-        payload => {
+        (payload) => {
           console.log('subscription payload')
           if (payload.eventType === 'INSERT') {
-            setTransactions(prev => [
+            setTransactions((prev) => [
               payload.new as Tables<'transfer'>,
-              ...prev
+              ...prev,
             ])
           } else if (payload.eventType === 'UPDATE') {
-            setTransactions(prev =>
+            setTransactions((prev) =>
               prev
-                .map(t =>
+                .map((t) =>
                   t.trx_hash === payload.new.trx_hash
                     ? (payload.new as Tables<'transfer'>)
-                    : t
+                    : t,
                 )
                 .sort(
                   (a, b) =>
                     new Date(b.created_at).getTime() -
-                    new Date(a.created_at).getTime()
-                )
+                    new Date(a.created_at).getTime(),
+                ),
             )
           } else if (payload.eventType === 'DELETE') {
-            setTransactions(prev =>
-              prev.filter(t => t.trx_hash !== payload.old.trx_hash)
+            setTransactions((prev) =>
+              prev.filter((t) => t.trx_hash !== payload.old.trx_hash),
             )
           }
-        }
+        },
       )
       .subscribe()
 

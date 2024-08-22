@@ -1,15 +1,15 @@
-import { readingTime } from '@/lib/blog'
-import Link from 'next/link'
-import { BlogArticleRecord } from '@/services/datocms'
-import Image from 'next/image'
-import { isMobile } from 'react-device-detect'
 import { Tag } from '@/components/shared/tag'
-import { LangProp } from '@/types/routing.type'
+import { readingTime } from '@/lib/blog'
+import type { BlogArticleRecord } from '@/services/datocms'
+import type { LangProp } from '@/types/routing.type'
+import Image from 'next/image'
+import Link from 'next/link'
+import { isMobile } from 'react-device-detect'
 
 export const HeroArticleCard = ({
   post,
   sectionSlug,
-  lang
+  lang,
 }: HeroArticleCardProps) => {
   return (
     <div className="w-full list-none lg:w-1/2">
@@ -45,7 +45,7 @@ export const HeroArticleCard = ({
                 {new Date(post?._publishedAt).toLocaleDateString(lang, {
                   month: 'short',
                   day: '2-digit',
-                  year: 'numeric'
+                  year: 'numeric',
                 })}{' '}
                 ∙ {readingTime(post)} min read
               </span>

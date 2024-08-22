@@ -1,41 +1,41 @@
-import "hardhat-deploy";
-import "@nomiclabs/hardhat-ethers";
-import { BigNumber } from "ethers";
-import { task } from "hardhat/config";
+import 'hardhat-deploy'
+import '@nomiclabs/hardhat-ethers'
+import { BigNumber } from 'ethers'
+import { task } from 'hardhat/config'
 
-import { getAuctionEndTimeStamp } from "../priceCalculation";
+import { getAuctionEndTimeStamp } from '../priceCalculation'
 
-import { getEasyAuctionContract, getEhtersSigners } from "./utils";
+import { getEasyAuctionContract, getEhtersSigners } from './utils'
 
-const PRECALCULATION_ITERATION_STEPS = 1000;
+const PRECALCULATION_ITERATION_STEPS = 1000
 
 export const clearAuctionSimplified: () => void = () => {
-  task("clearAuctionSimplified", "Provides the clearing price to an auction")
-    .addParam("auctionId", "Id of the auction to be cleared")
+  task('clearAuctionSimplified', 'Provides the clearing price to an auction')
+    .addParam('auctionId', 'Id of the auction to be cleared')
     .addParam(
-      "numberOfOrdersToClear",
-      "The number of orders that need to be considered for clearing - in most of teh cases, this number does not need to be exact",
+      'numberOfOrdersToClear',
+      'The number of orders that need to be considered for clearing - in most of teh cases, this number does not need to be exact',
     )
     .setAction(async (taskArgs, hardhatRuntime) => {
-      const [caller] = await getEhtersSigners(hardhatRuntime);
-      console.log(`Using the account: ${caller.address}`);
+      const [caller] = await getEhtersSigners(hardhatRuntime)
+      console.log(`Using the account: ${caller.address}`)
 
-      const easyAuction = await getEasyAuctionContract(hardhatRuntime);
+      const easyAuction = await getEasyAuctionContract(hardhatRuntime)
       const auctionEndDate = await getAuctionEndTimeStamp(
         easyAuction,
         taskArgs.auctionId,
-      );
+      )
       if (auctionEndDate.gt(BigNumber.from(Math.floor(+new Date() / 1000)))) {
-        throw new Error("Auction not yet ended");
+        throw new Error('Auction not yet ended')
       }
       if (taskArgs.numberOfOrdersToClear > PRECALCULATION_ITERATION_STEPS) {
         console.log(
-          "The on-chain price calculation will be split into ",
+          'The on-chain price calculation will be split into ',
           Math.floor(
             taskArgs.numberOfOrdersToClear / PRECALCULATION_ITERATION_STEPS,
           ),
-          " separate txs",
-        );
+          ' separate txs',
+        )
         for (
           let i = 0;
           i <
@@ -49,15 +49,15 @@ export const clearAuctionSimplified: () => void = () => {
             .precalculateSellAmountSum(
               taskArgs.auctionId,
               PRECALCULATION_ITERATION_STEPS,
-            );
-          const txResult = await tx.wait();
-          console.log(txResult);
+            )
+          const txResult = await tx.wait()
+          console.log(txResult)
         }
       }
       const tx = await easyAuction
         .connect(caller)
-        .settleAuction(taskArgs.auctionId);
-      const txResult = await tx.wait();
-      console.log(txResult);
-    });
-};
+        .settleAuction(taskArgs.auctionId)
+      const txResult = await tx.wait()
+      console.log(txResult)
+    })
+}

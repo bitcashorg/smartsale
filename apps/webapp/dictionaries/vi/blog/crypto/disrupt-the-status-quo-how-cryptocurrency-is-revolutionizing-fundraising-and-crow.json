@@ -2,11 +2,7 @@
   "relatedBlogs": [
     {
       "id": "180556595",
-      "topics": [
-        "Gây quỹ",
-        "Tokenomics",
-        "Bình luận"
-      ],
+      "topics": ["Gây quỹ", "Tokenomics", "Bình luận"],
       "title": "Hiệu ứng Blockchain: Hiệu ứng mạng mà không tốn chi phí quyền lực thị trường [Bình luận]",
       "slug": "the-blockchain-effect-network-effects-without-market-power-costs-commentary",
       "authorName": "Crypto Clairity",
@@ -25,11 +21,7 @@
     },
     {
       "id": "167184977",
-      "topics": [
-        "Tokenomics",
-        "DAO",
-        "Gây quỹ"
-      ],
+      "topics": ["Tokenomics", "DAO", "Gây quỹ"],
       "title": "Cách mạng hóa mô hình cổ phần: Làm thế nào Tokenomics làm xáo trộn thế giới khởi nghiệp",
       "slug": "revolutionizing-the-equity-model-how-tokenomics-is-disrupting-the-startup-world",
       "authorName": "Crypto Clairity",
@@ -48,10 +40,7 @@
     },
     {
       "id": "167101094",
-      "topics": [
-        "Bắt đầu",
-        "Tokenomics"
-      ],
+      "topics": ["Bắt đầu", "Tokenomics"],
       "title": "Tokenomics 101: Khai phóng sức mạnh của tiền điện tử!",
       "slug": "tokenomics-101-unleashing-the-power-of-cryptocurrency",
       "authorName": "Crypto Clairity",
@@ -70,10 +59,7 @@
     },
     {
       "id": "166981063",
-      "topics": [
-        "Bắt đầu",
-        "DAO"
-      ],
+      "topics": ["Bắt đầu", "DAO"],
       "title": "Tương lai đã đến: Sự trỗi dậy của các Tổ chức Tự trị Phân cấp (DAOs)",
       "slug": "the-future-is-here-the-rise-of-decentralized-autonomous-organizations-daos",
       "authorName": "Crypto Clairity",
@@ -92,10 +78,7 @@
     },
     {
       "id": "165744328",
-      "topics": [
-        "Bắt đầu",
-        "Hướng dẫn"
-      ],
+      "topics": ["Bắt đầu", "Hướng dẫn"],
       "title": "Giữ bước trước trò chơi: Hướng dẫn để luôn được thông tin và giáo dục trong thế giới tiền điện tử",
       "slug": "stay-ahead-of-the-game-a-guide-to-staying-informed-and-educated-in-the-world-of-c",
       "authorName": "Crypto Clairity",
@@ -114,10 +97,7 @@
     },
     {
       "id": "165742753",
-      "topics": [
-        "Bắt đầu",
-        "Thanh toán"
-      ],
+      "topics": ["Bắt đầu", "Thanh toán"],
       "title": "Stablecoins: Tương lai của giao dịch và thanh toán tiền điện tử",
       "slug": "stablecoins-the-future-of-cryptocurrency-transactions-and-payments",
       "authorName": "Crypto Clairity",
@@ -136,10 +116,7 @@
     },
     {
       "id": "165685913",
-      "topics": [
-        "DeFi",
-        "Bắt đầu"
-      ],
+      "topics": ["DeFi", "Bắt đầu"],
       "title": "Phân cấp Tài chính của bạn: Giới thiệu về Thế giới Tài chính Phi tập trung (DeFi)",
       "slug": "decentralize-your-finance-an-introduction-to-the-world-of-defi",
       "authorName": "Crypto Clairity",
@@ -158,10 +135,7 @@
     },
     {
       "id": "165673014",
-      "topics": [
-        "Bắt đầu",
-        "Đầu tư"
-      ],
+      "topics": ["Bắt đầu", "Đầu tư"],
       "title": "Đầu tư tiền điện tử 101: Cách sử dụng tiền điện tử cho Đầu tư và Quản lý Tài sản",
       "slug": "crypto-investing-101-how-to-use-cryptocurrency-for-investment-and-asset-managemen",
       "authorName": "Crypto Clairity",
@@ -181,10 +155,7 @@
   ],
   "blogContent": {
     "id": "165685908",
-    "topics": [
-      "Bắt đầu",
-      "Gây quỹ"
-    ],
+    "topics": ["Bắt đầu", "Gây quỹ"],
     "title": "Phá vỡ trạng thái hiện tại: Làm thế nào tiền điện tử đang cách mạng hóa gây quỹ và gọi vốn cộng đồng",
     "slug": "disrupt-the-status-quo-how-cryptocurrency-is-revolutionizing-fundraising-and-crow",
     "authorName": "Crypto Clairity",
@@ -424,8 +395,5 @@
       }
     }
   },
-  "topics": [
-    "Getting Started",
-    "Fundraising"
-  ]
+  "topics": ["Getting Started", "Fundraising"]
 }

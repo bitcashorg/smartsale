@@ -2,7 +2,7 @@
 
 import { Transition } from '@/components/shared/transition'
 import { useMobileNav } from '@/hooks/use-mobile-navigation'
-import { LangProp } from '@/types/routing.type'
+import type { LangProp } from '@/types/routing.type'
 import { AnimatePresence } from 'framer-motion'
 import UseAnimations from 'react-useanimations'
 import menu4 from 'react-useanimations/lib/menu4'

@@ -2,10 +2,7 @@
   "relatedBlogs": [
     {
       "id": "180563903",
-      "topics": [
-        "DAO",
-        "Tóm tắt"
-      ],
+      "topics": ["DAO", "Tóm tắt"],
       "title": "Mục đích của việc bỏ phiếu là gì? [Tóm tắt]",
       "slug": "what-is-voting-for-summary",
       "authorName": "Crypto Clairity",
@@ -24,10 +21,7 @@
     },
     {
       "id": "180563908",
-      "topics": [
-        "DAO",
-        "Tóm tắt"
-      ],
+      "topics": ["DAO", "Tóm tắt"],
       "title": "Quản trị là gì? [Tóm tắt]",
       "slug": "what-is-governance-for-summary",
       "authorName": "Crypto Clairity",
@@ -46,10 +40,7 @@
     },
     {
       "id": "180563931",
-      "topics": [
-        "Tokenomics",
-        "Bình luận"
-      ],
+      "topics": ["Tokenomics", "Bình luận"],
       "title": "Cấu trúc khuyến khích Blockchain: Chúng là gì và tại sao chúng quan trọng [Bình luận]",
       "slug": "blockchain-incentive-structures-what-they-are-and-why-they-matter-commentary",
       "authorName": "Crypto Clairity",
@@ -69,11 +60,7 @@
   ],
   "blogContent": {
     "id": "179948652",
-    "topics": [
-      "Tokenomics",
-      "Ngành",
-      "Tóm tắt"
-    ],
+    "topics": ["Tokenomics", "Ngành", "Tóm tắt"],
     "title": "Đổi mới kỹ thuật số và Mô hình Doanh thu [Tóm tắt]",
     "slug": "digital-innovation-and-revenue-models-summary",
     "authorName": "Crypto Clairity",
@@ -156,9 +143,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Giới thiệu (Trang 3)"
                             },
                             {
@@ -177,9 +162,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Cấu trúc chi phí cho Hàng hóa Truyền thống so với Hàng hóa Kỹ thuật số (Trang 3)"
                             },
                             {
@@ -198,9 +181,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Chiến lược Kinh doanh Bền vững cho Thế giới Kỹ thuật số (Trang 4-5)"
                             },
                             {
@@ -219,9 +200,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Khung cho Chiến lược Giá cả (Trang 7)"
                             },
                             {
@@ -255,9 +234,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Phù hợp Chiến lược Sản phẩm và Doanh thu"
                             },
                             {
@@ -276,9 +253,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Tận dụng Hiệu ứng Mạng"
                             },
                             {
@@ -297,9 +272,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Phân biệt Sản phẩm của Bạn"
                             },
                             {
@@ -318,9 +291,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Xem xét Chiến lược Giá cả"
                             },
                             {
@@ -339,9 +310,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Bảo vệ Sở hữu Trí tuệ của Bạn"
                             },
                             {
@@ -360,9 +329,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Giữ sự Nhanh nhẹn"
                             },
                             {
@@ -428,9 +395,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Sự tiến hóa của Ngành Công nghiệp Âm nhạc (Trang 10)"
                             },
                             {
@@ -449,9 +414,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Nền tảng Phân phối Kỹ thuật số (Trang 11)"
                             },
                             {
@@ -470,9 +433,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "iTunes và Việc Kiếm tiền từ Phân phối Âm nhạc Kỹ thuật số (Trang 11)"
                             },
                             {
@@ -491,9 +452,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Chuyển sang Phát trực tuyến Âm nhạc (Trang 12)"
                             },
                             {
@@ -527,9 +486,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Xem xét Mô hình Đăng ký"
                             },
                             {
@@ -572,9 +529,5 @@
       }
     }
   },
-  "topics": [
-    "Tokenomics",
-    "Industry",
-    "Summary"
-  ]
+  "topics": ["Tokenomics", "Industry", "Summary"]
 }

@@ -1,7 +1,7 @@
 import { HeroArticleCard } from '@/components/routes/blog/hero-section/hero-card'
 import { HeroSubCard } from '@/components/routes/blog/hero-section/hero-subcard'
-import { ArticlesSection } from '@/services/datocms'
-import { LangProp } from '@/types/routing.type'
+import type { ArticlesSection } from '@/services/datocms'
+import type { LangProp } from '@/types/routing.type'
 
 export function HeroSection({ recent, lang }: HeroSectionProps) {
   const main = recent[0]
@@ -22,7 +22,7 @@ export function HeroSection({ recent, lang }: HeroSectionProps) {
                 post={post.articles[0]}
                 key={index}
               />
-            )
+            ),
         )}
       </ul>
     </section>

@@ -2,9 +2,7 @@
   "relatedBlogs": [
     {
       "id": "CD89KaoLSh6nQbiMhxX0EQ",
-      "topics": [
-        "launchpad"
-      ],
+      "topics": ["launchpad"],
       "title": "Garantizando la confianza y la integridad: Cumplimiento normativo y medidas de seguridad",
       "slug": "ensuring-trust-and-integrity-regulatory-compliance-and-security-measures",
       "authorName": "Jun Dam",
@@ -23,9 +21,7 @@
     },
     {
       "id": "fbM-UqrYQXGhw6HB4C6swQ",
-      "topics": [
-        "launchpad"
-      ],
+      "topics": ["launchpad"],
       "title": "Hoja de ruta estrategica: Pioneros en innovacion blockchain y exito de startups de IA",
       "slug": "strategic-roadmap-pioneering-blockchain-innovation-and-ai-startup-success",
       "authorName": "Jun Dam",
@@ -44,9 +40,7 @@
     },
     {
       "id": "I4jShMnWRruvJgDbrucwDw",
-      "topics": [
-        "launchpad"
-      ],
+      "topics": ["launchpad"],
       "title": "La columna vertebral tecnologica de bitLauncher",
       "slug": "the-technological-backbone-of-bitcash-launchpad",
       "authorName": "Jun Dam",
@@ -65,9 +59,7 @@
     },
     {
       "id": "BEfgGhndSsCn5MBU89RO3A",
-      "topics": [
-        "launchpad"
-      ],
+      "topics": ["launchpad"],
       "title": "Impulsando la innovacion: Vision, mision y objetivos estrategicos de bitLauncher",
       "slug": "empowering-innovation-vision-mission-and-strategic-goals-of-bitcash-launchpad",
       "authorName": "Jun Dam",
@@ -86,12 +78,7 @@
     },
     {
       "id": "NZeB3i5XRzuELW2UWBDyRQ",
-      "topics": [
-        "research",
-        "dao",
-        "fundraising",
-        "launchpad"
-      ],
+      "topics": ["research", "dao", "fundraising", "launchpad"],
       "title": "Navegando la convergencia: Un analisis de mercado integral de la dinamica de IA y criptomonedas",
       "slug": "navigating-the-convergence-a-comprehensive-market-analysis-of-ai-and-cryptocurren",
       "authorName": "Jun Dam",
@@ -110,9 +97,7 @@
     },
     {
       "id": "BSDdY8byQWipv749rApFRA",
-      "topics": [
-        "launchpad"
-      ],
+      "topics": ["launchpad"],
       "title": "Desbloqueando el potencial: Casos de uso y aplicaciones de bitLauncher",
       "slug": "unlocking-potential-use-cases-and-applications-of-bitlauncher",
       "authorName": "Jun Dam",
@@ -132,9 +117,7 @@
   ],
   "blogContent": {
     "id": "MICfokr1TVuScAB4Qh9YGw",
-    "topics": [
-      "plataforma de lanzamiento"
-    ],
+    "topics": ["plataforma de lanzamiento"],
     "title": "Impulsando la Innovacion: Tokenomics y Estrategia de Financiacion de bitcash",
     "slug": "empowering-innovation-tokenomics-and-funding-strategy-of-bitcash",
     "authorName": "Jun Dam",
@@ -188,7 +171,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Tokens within the bitcash ecosystem are issued to both open-source contributors and investors based on the current market valuations, introducing a dilutive effect with each new issuance. However, the essence of our model is to ensure that contributions and investments significantly enhance the organization's value, surpassing any potential dilution. Revenue for the platform is generated as users purchase utility tokens for accessing various services, creating a cash flow that is then strategically used to buy back tokens from circulation. This process inherently reduces token supply, creating an anti-dilutive effect that, in turn, appreciates the utility token's value."
+                      "value": "Tokens within the bitcash ecosystem are issued to both open-source contributors and contributors based on the current market valuations, introducing a dilutive effect with each new issuance. However, the essence of our model is to ensure that contributions and investments significantly enhance the organization's value, surpassing any potential dilution. Revenue for the platform is generated as users purchase utility tokens for accessing various services, creating a cash flow that is then strategically used to buy back tokens from circulation. This process inherently reduces token supply, creating an anti-dilutive effect that, in turn, appreciates the utility token's value."
                     }
                   ]
                 },
@@ -254,7 +237,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "We advocate for all startups within bitLauncher to adopt this equitable tokenomics model, promoting a transparent and fair ecosystem for AI innovation.   We also advocate for smaller seed & pre-seed raises and only further fundraising after startups achieve certain milestones in user traction or cash flow.\n\nOur own fundraising journey on the launchpad underscores our commitment to these principles, aiming to raise a $350k seed through a public token sale that also prioritizes equal participation opportunities between retail, angels and VCs. (Note: Due to regulatory pressures, US investors or those from US-sanctioned countries will be excluded)"
+                      "value": "We advocate for all startups within bitLauncher to adopt this equitable tokenomics model, promoting a transparent and fair ecosystem for AI innovation.   We also advocate for smaller seed & pre-seed raises and only further fundraising after startups achieve certain milestones in user traction or cash flow.\n\nOur own fundraising journey on the launchpad underscores our commitment to these principles, aiming to raise a $350k seed through a public token sale that also prioritizes equal participation opportunities between retail, angels and VCs. (Note: Due to regulatory pressures, US contributors or those from US-sanctioned countries will be excluded)"
                     }
                   ]
                 },
@@ -316,7 +299,5 @@
       }
     }
   },
-  "topics": [
-    "launchpad"
-  ]
+  "topics": ["launchpad"]
 }

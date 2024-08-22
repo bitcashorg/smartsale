@@ -1,10 +1,10 @@
-import Image from 'next/image'
-import { Card, CardContent } from '@/components/ui/card'
-import { LangProp } from '@/types/routing.type'
-import { YouTubePlaylistItem } from '@/services/youtube/index'
 import { VideoDialog } from '@/components/dialogs/video-dialog'
+import { Card, CardContent } from '@/components/ui/card'
+import { cn } from '@/lib/utils' // Import the utility function
+import type { YouTubePlaylistItem } from '@/services/youtube/index'
+import type { LangProp } from '@/types/routing.type'
+import Image from 'next/image'
 import Balancer from 'react-wrap-balancer'
-import { cn } from '@/lib/utils'  // Import the utility function
 
 export function MediaCard({ video, lang, className }: MediaCardProps) {
   return (
@@ -12,7 +12,12 @@ export function MediaCard({ video, lang, className }: MediaCardProps) {
       lang={lang}
       video={video}
       trigger={
-        <Card className={cn("p-0 overflow-hidden list-none bg-transparent cursor-pointer border-muted group md:max-h-space-465", className)}>
+        <Card
+          className={cn(
+            'p-0 overflow-hidden list-none bg-transparent cursor-pointer border-muted group md:max-h-space-465',
+            className,
+          )}
+        >
           <div className="m-3">
             <figure className="relative h-[215px] w-full overflow-hidden rounded-md">
               <Image
@@ -38,5 +43,5 @@ export function MediaCard({ video, lang, className }: MediaCardProps) {
 
 export interface MediaCardProps extends LangProp {
   video: YouTubePlaylistItem
-  className?: string  // Add className prop to the interface
+  className?: string // Add className prop to the interface
 }

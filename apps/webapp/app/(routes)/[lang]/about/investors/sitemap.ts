@@ -1,13 +1,13 @@
-import { CommonPageProps } from '@/types/routing.type'
-import { MetadataRoute } from 'next'
+import type { CommonPageProps } from '@/types/routing.type'
+import type { MetadataRoute } from 'next'
 
 export default async function sitemap({
-  params
+  params,
 }: CommonPageProps): Promise<MetadataRoute.Sitemap> {
   return [
     {
-      url: `https://${process.env.VERCEL_URL}/${params.lang}/about/investors`,
-      lastModified: new Date()
-    }
+      url: `https://${process.env.VERCEL_URL}/${params.lang}/about/contributors`,
+      lastModified: new Date(),
+    },
   ]
 }

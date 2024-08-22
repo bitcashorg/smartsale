@@ -1,12 +1,12 @@
 'use client'
 
+import { LucideIcons } from '@/components/routes/blog/lucide-icons'
 import {
   FacebookShareButton,
   LinkedinShareButton,
   TelegramShareButton,
-  TwitterShareButton
+  TwitterShareButton,
 } from 'next-share'
-import { LucideIcons } from '@/components/routes/blog/lucide-icons'
 
 export function ShareArticle({ url, title }: { url: string; title: string }) {
   return (

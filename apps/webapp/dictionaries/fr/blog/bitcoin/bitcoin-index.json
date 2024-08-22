@@ -6,10 +6,7 @@
       "articles": [
         {
           "id": "165365457",
-          "topics": [
-            "Premiers pas",
-            "Paiements"
-          ],
+          "topics": ["Premiers pas", "Paiements"],
           "title": "Simplifier les achats en ligne avec Bitcoin : Un guide pour utiliser Bitcoin pour les transactions",
           "slug": "streamlining-online-purchases-with-bitcoin-a-guide-to-using-bitcoin-for-transacti",
           "authorName": "Maxi Millie",
@@ -37,11 +34,7 @@
         },
         {
           "id": "165362142",
-          "topics": [
-            "Premiers pas",
-            "Preuve de travail",
-            "Minage"
-          ],
+          "topics": ["Premiers pas", "Preuve de travail", "Minage"],
           "title": "Liberer la puissance du minage de Bitcoin : Une introduction aux algorithmes de preuve de travail",
           "slug": "unlocking-the-power-of-bitcoin-mining-an-introduction-to-proof-of-work-algorithms",
           "authorName": "Maxi Millie",
@@ -69,10 +62,7 @@
         },
         {
           "id": "165340146",
-          "topics": [
-            "Premiers pas",
-            "Preuve de travail"
-          ],
+          "topics": ["Premiers pas", "Preuve de travail"],
           "title": "La securite economique de Bitcoin : Comment la preuve de travail permet un reseau sur et securise",
           "slug": "the-economic-security-of-bitcoin-how-proof-of-work-enables-a-safe-and-secure-netw",
           "authorName": "Maxi Millie",
@@ -100,10 +90,7 @@
         },
         {
           "id": "165340050",
-          "topics": [
-            "Premiers pas",
-            "Juridique"
-          ],
+          "topics": ["Premiers pas", "Juridique"],
           "title": "Naviguer dans le paysage juridique et reglementaire du Bitcoin : Comprendre les regles et les opportunites",
           "slug": "navigating-the-legal-and-regulatory-landscape-of-bitcoin-understanding-the-rules",
           "authorName": "Maxi Millie",
@@ -131,10 +118,7 @@
         },
         {
           "id": "165337859",
-          "topics": [
-            "Premiers pas",
-            "Securite"
-          ],
+          "topics": ["Premiers pas", "Securite"],
           "title": "L'avenir du stockage de Bitcoin : Une introduction aux portefeuilles Bitcoin et aux solutions de stockage innovantes",
           "slug": "the-future-of-bitcoin-storage-an-introduction-to-bitcoin-wallets-and-innovative-s",
           "authorName": "Maxi Millie",
@@ -162,11 +146,9 @@
         },
         {
           "id": "165005184",
-          "topics": [
-            "Premiers pas"
-          ],
+          "topics": ["Premiers pas"],
           "title": "L'art de rechercher et d'evaluer les plateformes d'echange de Bitcoin : Un guide pour les investisseurs",
-          "slug": "the-art-of-researching-and-evaluating-bitcoin-exchanges-a-guide-for-investors",
+          "slug": "the-art-of-researching-and-evaluating-bitcoin-exchanges-a-guide-for-contributors",
           "authorName": "Maxi Millie",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
@@ -192,10 +174,7 @@
         },
         {
           "id": "164973196",
-          "topics": [
-            "Premiers pas",
-            "Histoire"
-          ],
+          "topics": ["Premiers pas", "Histoire"],
           "title": "L'histoire et l'evolution du Bitcoin",
           "slug": "the-history-and-evolution-of-bitcoin",
           "authorName": "Maxi Millie",
@@ -223,10 +202,7 @@
         },
         {
           "id": "165004875",
-          "topics": [
-            "Premiers pas",
-            "Securite"
-          ],
+          "topics": ["Premiers pas", "Securite"],
           "title": "Comment proteger vos Bitcoins a l'ere numerique",
           "slug": "how-to-keep-your-bitcoins-safe-in-the-digital-age",
           "authorName": "Maxi Millie",
@@ -254,10 +230,7 @@
         },
         {
           "id": "165005107",
-          "topics": [
-            "Premiers pas",
-            "Echange"
-          ],
+          "topics": ["Premiers pas", "Echange"],
           "title": "Le guide simplifie pour acheter et vendre des Bitcoins",
           "slug": "the-simplified-guide-to-buying-and-selling-bitcoins",
           "authorName": "Maxi Millie",
@@ -285,9 +258,7 @@
         },
         {
           "id": "164904960",
-          "topics": [
-            "Premiers pas"
-          ],
+          "topics": ["Premiers pas"],
           "title": "Pensez differemment a propos du Bitcoin : L'avenir de la monnaie decentralisee",
           "slug": "think-differently-about-bitcoin-the-future-of-decentralized-currency",
           "authorName": "Maxi Millie",
@@ -321,10 +292,7 @@
       "articles": [
         {
           "id": "165365457",
-          "topics": [
-            "Premiers pas",
-            "Paiements"
-          ],
+          "topics": ["Premiers pas", "Paiements"],
           "title": "Simplifier les achats en ligne avec Bitcoin : Un guide pour utiliser Bitcoin pour les transactions",
           "slug": "streamlining-online-purchases-with-bitcoin-a-guide-to-using-bitcoin-for-transacti",
           "authorName": "Maxi Millie",
@@ -358,11 +326,7 @@
       "articles": [
         {
           "id": "165362142",
-          "topics": [
-            "Premiers pas",
-            "Preuve de travail",
-            "Minage"
-          ],
+          "topics": ["Premiers pas", "Preuve de travail", "Minage"],
           "title": "Liberer la puissance du minage de Bitcoin : Une introduction aux algorithmes de preuve de travail",
           "slug": "unlocking-the-power-of-bitcoin-mining-an-introduction-to-proof-of-work-algorithms",
           "authorName": "Maxi Millie",
@@ -390,10 +354,7 @@
         },
         {
           "id": "165340146",
-          "topics": [
-            "Premiers pas",
-            "Preuve de travail"
-          ],
+          "topics": ["Premiers pas", "Preuve de travail"],
           "title": "La securite economique de Bitcoin : Comment la preuve de travail permet un reseau sur et securise",
           "slug": "the-economic-security-of-bitcoin-how-proof-of-work-enables-a-safe-and-secure-netw",
           "authorName": "Maxi Millie",
@@ -427,11 +388,7 @@
       "articles": [
         {
           "id": "165362142",
-          "topics": [
-            "Premiers pas",
-            "Preuve de travail",
-            "Minage"
-          ],
+          "topics": ["Premiers pas", "Preuve de travail", "Minage"],
           "title": "Liberer la puissance du minage de Bitcoin : Une introduction aux algorithmes de preuve de travail",
           "slug": "unlocking-the-power-of-bitcoin-mining-an-introduction-to-proof-of-work-algorithms",
           "authorName": "Maxi Millie",
@@ -465,10 +422,7 @@
       "articles": [
         {
           "id": "165340050",
-          "topics": [
-            "Premiers pas",
-            "Juridique"
-          ],
+          "topics": ["Premiers pas", "Juridique"],
           "title": "Naviguer dans le paysage juridique et reglementaire du Bitcoin : Comprendre les regles et les opportunites",
           "slug": "navigating-the-legal-and-regulatory-landscape-of-bitcoin-understanding-the-rules",
           "authorName": "Maxi Millie",
@@ -502,10 +456,7 @@
       "articles": [
         {
           "id": "165337859",
-          "topics": [
-            "Premiers pas",
-            "Securite"
-          ],
+          "topics": ["Premiers pas", "Securite"],
           "title": "L'avenir du stockage de Bitcoin : Une introduction aux portefeuilles Bitcoin et aux solutions de stockage innovantes",
           "slug": "the-future-of-bitcoin-storage-an-introduction-to-bitcoin-wallets-and-innovative-s",
           "authorName": "Maxi Millie",
@@ -533,10 +484,7 @@
         },
         {
           "id": "165004875",
-          "topics": [
-            "Premiers pas",
-            "Securite"
-          ],
+          "topics": ["Premiers pas", "Securite"],
           "title": "Comment proteger vos Bitcoins a l'ere numerique",
           "slug": "how-to-keep-your-bitcoins-safe-in-the-digital-age",
           "authorName": "Maxi Millie",
@@ -570,10 +518,7 @@
       "articles": [
         {
           "id": "164973196",
-          "topics": [
-            "Premiers pas",
-            "Histoire"
-          ],
+          "topics": ["Premiers pas", "Histoire"],
           "title": "L'histoire et l'evolution du Bitcoin",
           "slug": "the-history-and-evolution-of-bitcoin",
           "authorName": "Maxi Millie",
@@ -607,10 +552,7 @@
       "articles": [
         {
           "id": "165005107",
-          "topics": [
-            "Premiers pas",
-            "Echange"
-          ],
+          "topics": ["Premiers pas", "Echange"],
           "title": "Le guide simplifie pour acheter et vendre des Bitcoins",
           "slug": "the-simplified-guide-to-buying-and-selling-bitcoins",
           "authorName": "Maxi Millie",

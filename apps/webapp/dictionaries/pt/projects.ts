@@ -1,4 +1,4 @@
-import { ProjectContent } from '@/lib/projects'
+import type { ProjectContent } from '@/lib/projects'
 
 export const projects: ProjectContent[] = [
   {
@@ -18,9 +18,9 @@ export const projects: ProjectContent[] = [
             'Padrões de segurança rigorosos: Implementação de políticas KYC/AML de alto nível e segurança avançada para proteção do usuário.',
             'Empoderamento Global: Comprometida em capacitar usuários globais por meio de soluções tecnológicas transformadoras.',
             'Melhorando as conexões humanas: Priorizando a interação humana genuína no futuro previsto dominado pela IA.',
-            'Nova Visão da Economia Digital: Prevendo uma economia futura onde a tecnologia e os princípios éticos sirvam ao bem-estar global'
-          ]
-        ]
+            'Nova Visão da Economia Digital: Prevendo uma economia futura onde a tecnologia e os princípios éticos sirvam ao bem-estar global',
+          ],
+        ],
       },
       product: {
         title: 'Resumo do Produto',
@@ -36,9 +36,9 @@ export const projects: ProjectContent[] = [
             'Plataforma de inicialização de IA: O bitlauncher auxilia startups de IA com ferramentas organizacionais e de arrecadação de fundos seguras e eficientes.',
             'Altos padrões de conformidade: Enfatiza a forte conformidade regulatória, incluindo políticas KYC e AML e protocolos de segurança avançados.',
             'Comunidade aberta: Incentiva um ambiente colaborativo para que usuários, desenvolvedores e investidores se envolvam e contribuam.',
-            'Visão da Economia Digital: Convida a participação global para moldar uma nova economia onde a tecnologia aumente a prosperidade e a conexão humana.'
-          ]
-        ]
+            'Visão da Economia Digital: Convida a participação global para moldar uma nova economia onde a tecnologia aumente a prosperidade e a conexão humana.',
+          ],
+        ],
       },
       problem: {
         title: 'Problema',
@@ -53,9 +53,9 @@ export const projects: ProjectContent[] = [
             'Exclusividade em Inovação: As tecnologias de ponta beneficiam em grande parte um grupo seleto, criando um desequilíbrio no empoderamento tecnológico.',
             'Deficiência de Integração: Há uma notável ausência de uma plataforma abrangente que integre IA, blockchain e DeFi de maneira fácil de usar.',
             'Barreiras à adoção: A natureza intimidadora das atuais soluções blockchain dificulta a adoção generalizada e o uso prático no mainstream.',
-            'Desigualdade Econômica: O financiamento digital ainda não conseguiu colmatar a lacuna entre os especialistas em tecnologia e a população em geral, reforçando as disparidades económicas.'
-          ]
-        ]
+            'Desigualdade Econômica: O financiamento digital ainda não conseguiu colmatar a lacuna entre os especialistas em tecnologia e a população em geral, reforçando as disparidades económicas.',
+          ],
+        ],
       },
       solution: {
         title: 'Solução',
@@ -71,9 +71,9 @@ export const projects: ProjectContent[] = [
             'Democratização Tecnológica: Visa tornar a tecnologia avançada acessível e utilizável para todos, democratizando a IA e as ferramentas financeiras.',
             'Catalisador para Mudança: Atua como plataforma de lançamento para aplicativos transformadores, impulsionando o crescimento e fomentando uma comunidade dinâmica e criativa.',
             'Abordagem Centrada no Ser Humano: Concentra-se na manutenção das conexões humanas e da integridade em um futuro dominado pela IA.',
-            'Redefinição Econômica: A Bitcash se esforça para remodelar a economia global para que ela seja mais inclusiva, equitativa e que apoie o potencial humano.'
-          ]
-        ]
+            'Redefinição Econômica: A Bitcash se esforça para remodelar a economia global para que ela seja mais inclusiva, equitativa e que apoie o potencial humano.',
+          ],
+        ],
       },
       businessModel: {
         title: 'Modelo de negócios',
@@ -89,12 +89,12 @@ export const projects: ProjectContent[] = [
             'Investimento em P&D: Melhora continuamente a tecnologia e os serviços por meio de pesquisa e desenvolvimento, mantendo uma vantagem competitiva.',
             'Prioridade de conformidade e segurança: Dedica recursos para garantir conformidade regulatória e segurança robusta, construindo confiança e longevidade da plataforma.',
             'Iniciativas Educacionais: Investe na educação dos usuários e no envolvimento da comunidade, capacitando os usuários a maximizar os benefícios da plataforma e contribuir para sua evolução.',
-            'Marketing direcionado para crescimento de usuários: Emprega marketing estratégico para atrair uma base diversificada de usuários, desmistificando blockchain e IA para incentivar a adoção convencional.'
+            'Marketing direcionado para crescimento de usuários: Emprega marketing estratégico para atrair uma base diversificada de usuários, desmistificando blockchain e IA para incentivar a adoção convencional.',
           ],
           [
-            "This business model represents Bitcash's commitment to a sustainable, equitable digital economy, leveraging community input and innovation for collective growth."
-          ]
-        ]
+            "This business model represents Bitcash's commitment to a sustainable, equitable digital economy, leveraging community input and innovation for collective growth.",
+          ],
+        ],
       },
       tokenomics: {
         title: 'Tokenomia',
@@ -110,10 +110,10 @@ export const projects: ProjectContent[] = [
             'Avaliação de token transparente: Concentra-se na transparência e na criação de valor real na distribuição de tokens, evitando a especulação para bases económicas estáveis.',
             'Participação na Governança: Permite que os detentores de tokens se envolvam na governança, contribuindo para a direção e as políticas da plataforma, enfatizando a participação democrática.',
             'Adaptabilidade Económica: Mantém uma estratégia tokenomics flexível, que responde às necessidades crescentes da comunidade e da plataforma para uma economia digital equilibrada.',
-            'Visão de prosperidade compartilhada: Visa construir uma nova economia global onde os tokens Bitcash sustentam um sistema de inovação, participação e benefícios partilhados, transcendendo as barreiras económicas tradicionais.'
-          ]
-        ]
-      }
-    }
-  }
+            'Visão de prosperidade compartilhada: Visa construir uma nova economia global onde os tokens Bitcash sustentam um sistema de inovação, participação e benefícios partilhados, transcendendo as barreiras económicas tradicionais.',
+          ],
+        ],
+      },
+    },
+  },
 ]

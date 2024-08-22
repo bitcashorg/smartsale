@@ -1,16 +1,16 @@
-import { Project } from '@/lib/projects'
+import type { Project } from '@/lib/projects'
 
+import { ExternalLinkButton } from '@/components/nextjs/button-link'
+import { NestedLinkButton } from '@/components/nextjs/nested-link'
 import { Button, buttonVariants } from '@/components/ui/button'
 import {
   IconDiscord,
   IconDownRightArrow,
   IconTelegram,
-  IconTwitterX
+  IconTwitterX,
 } from '@/components/ui/icons'
-import { Suspense } from 'react'
 import { cn } from '@/lib/utils'
-import { NestedLinkButton } from '@/components/nextjs/nested-link'
-import { ExternalLinkButton } from '@/components/nextjs/button-link'
+import { Suspense } from 'react'
 
 export function AuctionCardButtons({ project }: { project: Project }) {
   const {
@@ -19,10 +19,10 @@ export function AuctionCardButtons({ project }: { project: Project }) {
     telegramGroup,
     title,
     linkPath,
-    badgeText
+    badgeText,
   } = project
   const isAuctionRestricted = badgeText.match(
-    /(AUCTION CLOSED|FUTURE|COMING SOON)/
+    /(AUCTION CLOSED|FUTURE|COMING SOON)/,
   )
   const buttonLinkClassName = 'relative px-0 py-0 size-[58px] rounded-full'
   return (
@@ -35,18 +35,18 @@ export function AuctionCardButtons({ project }: { project: Project }) {
           {
             icon: IconTwitterX,
             link: `https://twitter.com/${twitterUsername}`,
-            title: 'Twitter X Profile'
+            title: 'Twitter X Profile',
           },
           {
             icon: IconDiscord,
             link: `https://discord.gg/${discordServer}`,
-            title: 'Discord Server'
+            title: 'Discord Server',
           },
           {
             icon: IconTelegram,
             link: `https://t.me/${telegramGroup}`,
-            title: 'Telegram Group'
-          }
+            title: 'Telegram Group',
+          },
         ].map(({ icon: Icon, link, title: socialTitle }, index) => (
           <Suspense
             key={`susp-${index}`}
@@ -87,9 +87,9 @@ export function AuctionCardButtons({ project }: { project: Project }) {
             className={cn(
               buttonVariants({
                 variant: 'secondary',
-                size: 'lg'
+                size: 'lg',
               }),
-              'text-md group relative size-14 rounded-full p-0 font-bold hover:[&svg]:fill-card'
+              'text-md group relative size-14 rounded-full p-0 font-bold hover:[&svg]:fill-card',
             )}
             aria-label={`View ${title}´s auction`}
           >

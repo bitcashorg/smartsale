@@ -5,11 +5,11 @@ export function useAuctionData(auctionId: number) {
   const {
     data: rawData,
     isError,
-    isLoading
+    isLoading,
   } = useReadContract({
     ...TestnetEasyAuction,
     functionName: 'auctionData',
-    args: [auctionId]
+    args: [auctionId],
   })
 
   const data = rawData ? mapArrayToAuctionData(rawData) : undefined
@@ -36,7 +36,7 @@ function mapArrayToAuctionData(data: unknown): AuctionData | undefined {
     minFundingThresholdNotReached: data[10],
     isAtomicClosureAllowed: data[11],
     feeNumerator: data[12].toString(),
-    minFundingThreshold: data[13].toString()
+    minFundingThreshold: data[13].toString(),
   }
 }
 
@@ -63,7 +63,7 @@ const encodedData = '0x...' // This should be the actual encoded data string
 // ABI parameters corresponding to the structure of initialAuctionOrder
 const abiParams = [
   { name: 'buyAmountOfInitialAuctionOrder', type: 'uint96' },
-  { name: 'sellAmountOfInitialAuctionOrder', type: 'uint96' }
+  { name: 'sellAmountOfInitialAuctionOrder', type: 'uint96' },
 ]
 
 // Decoding the encoded data
@@ -101,7 +101,7 @@ function readableOrder(order: Order) {
 
 function readableTokenQuantity(
   quantity: BN | string | number,
-  tokenSymbol: string
+  tokenSymbol: string,
 ) {
   const decimals = 6
   const divisor = new BN(10).pow(new BN(decimals))

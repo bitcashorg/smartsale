@@ -1,12 +1,12 @@
 module.exports = {
   bracketSpacing: true,
-  trailingComma: "all",
+  trailingComma: 'all',
   overrides: [
     {
-      files: "*.sol",
+      files: '*.sol',
       options: {
         bracketSpacing: false,
       },
     },
   ],
-};
+}

@@ -1,16 +1,15 @@
-
-const { ethers } = require("hardhat");
+const { ethers } = require('hardhat')
 
 async function main() {
-    const BLPLToken = await ethers.getContractFactory("BLPLToken");
-    const token = await BLPLToken.deploy(ethers.utils.parseUnits("1000000", 18));
+  const BLPLToken = await ethers.getContractFactory('BLPLToken')
+  const token = await BLPLToken.deploy(ethers.utils.parseUnits('1000000', 18))
 
-    await token.deployed();
+  await token.deployed()
 
-    console.log("BLPLToken deployed to:", token.address);
+  console.log('BLPLToken deployed to:', token.address)
 }
 
 main().catch((error) => {
-    console.error(error);
-    process.exitCode = 1;
-});
+  console.error(error)
+  process.exitCode = 1
+})

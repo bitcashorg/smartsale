@@ -1,17 +1,17 @@
-import { LangProp } from '@/types/routing.type'
+import { LangSetter } from '@/components/layout/header/lang-selector/lang-setter'
 import { Button } from '@/components/ui/button'
 import {
-  DropdownMenuTrigger,
+  DropdownMenu,
+  DropdownMenuContent,
   // DropdownMenuLabel,
   // DropdownMenuSeparator,
   DropdownMenuItem,
-  DropdownMenuContent,
-  DropdownMenu
+  DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
+import type { LangProp } from '@/types/routing.type'
 import { ChevronDownIcon } from 'lucide-react'
-import { langSelectorOptions } from './lang-selector-options'
 import { LangSelectorItem } from './lang-selector-item'
-import { LangSetter } from '@/components/layout/header/lang-selector/lang-setter'
+import { langSelectorOptions } from './lang-selector-options'
 
 export function LangSelector({ lang }: LangProp) {
   return (
@@ -30,7 +30,7 @@ export function LangSelector({ lang }: LangProp) {
         <DropdownMenuContent className="w-48">
           {/* <DropdownMenuLabel>Select Language</DropdownMenuLabel> */}
           {/* <DropdownMenuSeparator /> */}
-          {langSelectorOptions.map(option => (
+          {langSelectorOptions.map((option) => (
             <LangSelectorItem option={option} lang={lang} />
           ))}
         </DropdownMenuContent>

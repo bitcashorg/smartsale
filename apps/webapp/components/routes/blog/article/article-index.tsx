@@ -2,8 +2,8 @@
 
 import { useEffect, useRef, useState } from 'react'
 
-import { cn } from '@/lib/utils'
 import { Card } from '@/components/ui/card'
+import { cn } from '@/lib/utils'
 import Link from 'next/link'
 
 export function ArticleIndex({ articleHeaders }: ArticleIndexProps) {
@@ -12,10 +12,10 @@ export function ArticleIndex({ articleHeaders }: ArticleIndexProps) {
 
   useEffect(() => {
     const handleIntersection = (entries: IntersectionObserverEntry[]) => {
-      entries.forEach(entry => {
+      entries.forEach((entry) => {
         if (entry.isIntersecting) {
           const currentSection = articleHeaders?.find(
-            ({ anchor }) => anchor === entry.target.id
+            ({ anchor }) => anchor === entry.target.id,
           )
           if (currentSection) {
             setActiveSection(currentSection)
@@ -29,7 +29,7 @@ export function ArticleIndex({ articleHeaders }: ArticleIndexProps) {
       threshold: 0.5, // Adjust as needed
 
       //why is this not working well when content is too close to each other ?
-      rootMargin: '0px 0px -80% 0px'
+      rootMargin: '0px 0px -80% 0px',
     })
 
     // Observe each section
@@ -69,7 +69,7 @@ export function ArticleIndex({ articleHeaders }: ArticleIndexProps) {
                   'text-sm font-bold transition-all hover:text-primary-200 hover:underline focus:text-primary-200 focus:underline',
                   activeSection?.anchor === header.anchor
                     ? 'text-primary-200'
-                    : ''
+                    : '',
                 )}
               >
                 {header.text}

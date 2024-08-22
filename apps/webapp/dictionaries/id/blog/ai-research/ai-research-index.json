@@ -6,13 +6,7 @@
       "articles": [
         {
           "id": "198277124",
-          "topics": [
-            "LLM",
-            "Keuangan",
-            "Kesehatan",
-            "Hukum",
-            "Meminta"
-          ],
+          "topics": ["LLM", "Keuangan", "Kesehatan", "Hukum", "Meminta"],
           "title": "Menyesuaikan Model Bahasa Besar melalui Pemahaman Membaca",
           "slug": "adapting-large-language-models-via-reading-comprehension",
           "authorName": "Prof. Otto Nomos",
@@ -40,10 +34,7 @@
         },
         {
           "id": "198277342",
-          "topics": [
-            "LLM",
-            "Dwibahasa"
-          ],
+          "topics": ["LLM", "Dwibahasa"],
           "title": "OpenBA: Model Asimetris Dwibahasa 15B Sumber Terbuka yang Dilatih dari Awal",
           "slug": "openba-an-open-sourced-15b-bilingual-asymmetric-seq2seq-model-pre-trained-from-sc",
           "authorName": "Prof. Otto Nomos",
@@ -71,10 +62,7 @@
         },
         {
           "id": "198277117",
-          "topics": [
-            "Pembelajaran Mesin Tingkat Lanjut",
-            "Pengambilan"
-          ],
+          "topics": ["Pembelajaran Mesin Tingkat Lanjut", "Pengambilan"],
           "title": "PDFTriage: Jawaban Pertanyaan atas Dokumen Panjang dan Terstruktur",
           "slug": "pdftriage-question-answering-over-long-structured-documents",
           "authorName": "Prof. Otto Nomos",
@@ -102,10 +90,7 @@
         },
         {
           "id": "198277138",
-          "topics": [
-            "LLM",
-            "Penyempurnaan"
-          ],
+          "topics": ["LLM", "Penyempurnaan"],
           "title": "Sorted LLaMA: Membuka Potensi Lapisan Menengah dari Model Bahasa Besar untuk Inferensi Dinamis Menggunakan Penyempurnaan Terurut (SoFT)",
           "slug": "sorted-llama-unlocking-the-potential-of-intermediate-layers-of-large-language-mod",
           "authorName": "Prof. Otto Nomos",
@@ -133,11 +118,7 @@
         },
         {
           "id": "198277150",
-          "topics": [
-            "LLM",
-            "Penalaan Instruksi",
-            "Multimodal"
-          ],
+          "topics": ["LLM", "Penalaan Instruksi", "Multimodal"],
           "title": "Studi Empiris tentang Penskalaan Model Multimodal Besar yang Disesuaikan Instruksi",
           "slug": "an-empirical-study-of-scaling-instruct-tuned-large-multimodal-models",
           "authorName": "Prof. Otto Nomos",
@@ -165,11 +146,7 @@
         },
         {
           "id": "198277160",
-          "topics": [
-            "LLM",
-            "Agen",
-            "Permainan"
-          ],
+          "topics": ["LLM", "Agen", "Permainan"],
           "title": "MindAgent: Interaksi Permainan yang Muncul",
           "slug": "mindagent-emergent-gaming-interaction",
           "authorName": "Prof. Otto Nomos",
@@ -197,10 +174,7 @@
         },
         {
           "id": "198277196",
-          "topics": [
-            "LLM",
-            "Data Terstruktur"
-          ],
+          "topics": ["LLM", "Data Terstruktur"],
           "title": "Struc-Bench: Apakah Model Bahasa Besar Benar-benar Baik dalam Menghasilkan Data Terstruktur yang Kompleks?",
           "slug": "struc-bench-are-large-language-models-really-good-at-generating-complex-structure",
           "authorName": "Prof. Otto Nomos",
@@ -228,11 +202,7 @@
         },
         {
           "id": "198277217",
-          "topics": [
-            "LLM",
-            "Privasi",
-            "Tepi"
-          ],
+          "topics": ["LLM", "Privasi", "Tepi"],
           "title": "Pemulihan dari Penyamaran yang Memelihara Privasi dengan Model Bahasa Besar",
           "slug": "recovering-from-privacy-preserving-masking-with-large-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -260,10 +230,7 @@
         },
         {
           "id": "198277239",
-          "topics": [
-            "LLM",
-            "Obrolan"
-          ],
+          "topics": ["LLM", "Obrolan"],
           "title": "S3-DST: Segmentasi Dialog Terstruktur Domain Terbuka dan Pelacakan Status di Era LLM",
           "slug": "s3-dst-structured-open-domain-dialogue-segmentation-and-state-tracking-in-the-era",
           "authorName": "Prof. Otto Nomos",
@@ -291,10 +258,7 @@
         },
         {
           "id": "198277253",
-          "topics": [
-            "LLM",
-            "Audio"
-          ],
+          "topics": ["LLM", "Audio"],
           "title": "Meningkatkan teks untuk pemahaman bahasa lisan dengan Model Bahasa Besar",
           "slug": "augmenting-text-for-spoken-language-understanding-with-large-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -322,10 +286,7 @@
         },
         {
           "id": "198277277",
-          "topics": [
-            "Pemodelan Bahasa",
-            "Kompresi"
-          ],
+          "topics": ["Pemodelan Bahasa", "Kompresi"],
           "title": "Pemodelan Bahasa adalah Kompresi",
           "slug": "language-modeling-is-compression",
           "authorName": "Prof. Otto Nomos",
@@ -353,10 +314,7 @@
         },
         {
           "id": "198277345",
-          "topics": [
-            "LLM",
-            "Multilingual"
-          ],
+          "topics": ["LLM", "Multilingual"],
           "title": "Baichuan 2: Model Bahasa Berskala Besar Terbuka",
           "slug": "baichuan-2-open-large-scale-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -384,10 +342,7 @@
         },
         {
           "id": "198277360",
-          "topics": [
-            "LLM",
-            "RLHF"
-          ],
+          "topics": ["LLM", "RLHF"],
           "title": "Menstabilkan RLHF melalui Model Keuntungan dan Latihan Selektif",
           "slug": "stabilizing-rlhf-through-advantage-model-and-selective-rehearsal",
           "authorName": "Prof. Otto Nomos",
@@ -415,10 +370,7 @@
         },
         {
           "id": "198277446",
-          "topics": [
-            "LLM",
-            "Halusinasi"
-          ],
+          "topics": ["LLM", "Halusinasi"],
           "title": "Rantai-Verifikasi Mengurangi Halusinasi pada Model Bahasa Besar",
           "slug": "chain-of-verification-reduces-hallucination-in-large-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -446,12 +398,7 @@
         },
         {
           "id": "198277458",
-          "topics": [
-            "LLM",
-            "Halusinasi",
-            "Entitas",
-            "Data Terstruktur"
-          ],
+          "topics": ["LLM", "Halusinasi", "Entitas", "Data Terstruktur"],
           "title": "LMDX: Ekstraksi dan Lokalisasi Informasi Dokumen Berbasis Model Bahasa",
           "slug": "lmdx-language-model-based-document-information-extraction-and-localization",
           "authorName": "Prof. Otto Nomos",
@@ -479,10 +426,7 @@
         },
         {
           "id": "198277209",
-          "topics": [
-            "LLM",
-            "Data"
-          ],
+          "topics": ["LLM", "Data"],
           "title": "SlimPajama-DC: Memahami Kombinasi Data untuk Pelatihan LLM",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -510,10 +454,7 @@
         },
         {
           "id": "198277109",
-          "topics": [
-            "LLM",
-            "Penalaran"
-          ],
+          "topics": ["LLM", "Penalaran"],
           "title": "Dekoding Kontrastif Meningkatkan Penalaran dalam Model Bahasa Besar",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -541,11 +482,7 @@
         },
         {
           "id": "198277099",
-          "topics": [
-            "LLM",
-            "Multibahasa",
-            "Data"
-          ],
+          "topics": ["LLM", "Multibahasa", "Data"],
           "title": "CulturaX: Dataset Bersih, Besar, dan Multibahasa untuk Model Bahasa Besar dalam 167 Bahasa",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -573,11 +510,7 @@
         },
         {
           "id": "198044929",
-          "topics": [
-            "LLM",
-            "Data",
-            "Agen"
-          ],
+          "topics": ["LLM", "Data", "Agen"],
           "title": "Sumber Data untuk Penalaran Agen Berwujud",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -605,11 +538,7 @@
         },
         {
           "id": "198044900",
-          "topics": [
-            "LLM",
-            "Entitas",
-            "Penyetelan Halus"
-          ],
+          "topics": ["LLM", "Entitas", "Penyetelan Halus"],
           "title": "Memanfaatkan Informasi Kontekstual untuk Deteksi Kepentingan Entitas yang Efektif",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -637,10 +566,7 @@
         },
         {
           "id": "198044892",
-          "topics": [
-            "LLM",
-            "Agen"
-          ],
+          "topics": ["LLM", "Agen"],
           "title": "LASER: Agen LLM dengan Eksplorasi Ruang Keadaan untuk Navigasi Web",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -668,11 +594,7 @@
         },
         {
           "id": "198044879",
-          "topics": [
-            "LLM",
-            "Transformers",
-            "Interpretasi"
-          ],
+          "topics": ["LLM", "Transformers", "Interpretasi"],
           "title": "Sparse Autoencoders Menemukan Fitur yang Sangat Dapat Diinterpretasikan dalam Model Bahasa",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -700,10 +622,7 @@
         },
         {
           "id": "198044802",
-          "topics": [
-            "LLM",
-            "Obrolan"
-          ],
+          "topics": ["LLM", "Obrolan"],
           "title": "Menyelidiki Kemampuan Jawab LLM untuk Jawaban Pertanyaan Bentuk Panjang",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -731,11 +650,7 @@
         },
         {
           "id": "198044746",
-          "topics": [
-            "LLM",
-            "Transformator",
-            "Pelatihan"
-          ],
+          "topics": ["LLM", "Transformator", "Pelatihan"],
           "title": "Hukum Skala untuk Model Dasar yang Terhubung Jarang",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -763,10 +678,7 @@
         },
         {
           "id": "197990774",
-          "topics": [
-            "LLM",
-            "Memancing"
-          ],
+          "topics": ["LLM", "Memancing"],
           "title": "Menghubungkan Model Bahasa Besar dengan Algoritma Evolusioner Menghasilkan Pengoptimal Perintah yang Kuat",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -794,10 +706,7 @@
         },
         {
           "id": "197990754",
-          "topics": [
-            "LLM",
-            "Pembelajaran Kontekstual"
-          ],
+          "topics": ["LLM", "Pembelajaran Kontekstual"],
           "title": "Pembelajaran Kontekstual yang Sadar Ambiguitas dengan Model Bahasa Besar",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -825,11 +734,7 @@
         },
         {
           "id": "197842432",
-          "topics": [
-            "LLM",
-            "Evaluasi",
-            "Multibahasa"
-          ],
+          "topics": ["LLM", "Evaluasi", "Multibahasa"],
           "title": "Apakah Penilai Berbasis Model Bahasa Besar Solusi untuk Meningkatkan Evaluasi Multibahasa?",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -857,11 +762,7 @@
         },
         {
           "id": "197990687",
-          "topics": [
-            "LLM",
-            "Kesehatan",
-            "Ringkasan"
-          ],
+          "topics": ["LLM", "Kesehatan", "Ringkasan"],
           "title": "Ringkasan Teks Klinis: Adaptasi Model Bahasa Besar Dapat Melampaui Ahli Manusia",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
@@ -889,10 +790,7 @@
         },
         {
           "id": "197990671",
-          "topics": [
-            "LLM",
-            "Agen"
-          ],
+          "topics": ["LLM", "Agen"],
           "title": "Agen: Kerangka Kerja Sumber Terbuka untuk Agen Bahasa Otonom",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -920,11 +818,7 @@
         },
         {
           "id": "197990654",
-          "topics": [
-            "LLM",
-            "RLHF",
-            "Pembelajaran Penguatan"
-          ],
+          "topics": ["LLM", "RLHF", "Pembelajaran Penguatan"],
           "title": "Pengambilan Sampel Penolakan Statistik Meningkatkan Optimasi Preferensi",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -952,10 +846,7 @@
         },
         {
           "id": "197859672",
-          "topics": [
-            "LLM",
-            "Kode"
-          ],
+          "topics": ["LLM", "Kode"],
           "title": "Model Bahasa Besar untuk Optimisasi Kompilator",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -983,10 +874,7 @@
         },
         {
           "id": "197840057",
-          "topics": [
-            "LLM",
-            "Ilmu"
-          ],
+          "topics": ["LLM", "Ilmu"],
           "title": "AstroLLaMA: Menuju Model Dasar Spesialisasi dalam Astronomi",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -1014,11 +902,7 @@
         },
         {
           "id": "197838596",
-          "topics": [
-            "LLM",
-            "Matematika",
-            "Ilmu Pengetahuan"
-          ],
+          "topics": ["LLM", "Matematika", "Ilmu Pengetahuan"],
           "title": "Model Bahasa Besar untuk Ilmu Pengetahuan: Studi tentang P vs. NP",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1046,9 +930,7 @@
         },
         {
           "id": "197836858",
-          "topics": [
-            "LLM"
-          ],
+          "topics": ["LLM"],
           "title": "Manajemen Memori Efisien untuk Pelayanan Model Bahasa Besar dengan PagedAttention",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1076,11 +958,7 @@
         },
         {
           "id": "197817281",
-          "topics": [
-            "LLM",
-            "Pembelajaran Kontekstual",
-            "Penyetelan Halus"
-          ],
+          "topics": ["LLM", "Pembelajaran Kontekstual", "Penyetelan Halus"],
           "title": "FIAT: Penggabungan paradigma pembelajaran dengan Penyetelan Percepatan Instruksi",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1108,9 +986,7 @@
         },
         {
           "id": "197815488",
-          "topics": [
-            "LLM"
-          ],
+          "topics": ["LLM"],
           "title": "Mengoptimalkan Pembulatan Bobot melalui Turunan Gradien Bertanda untuk Kuantisasi LLM",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -1138,10 +1014,7 @@
         },
         {
           "id": "197813719",
-          "topics": [
-            "LLM",
-            "Data"
-          ],
+          "topics": ["LLM", "Data"],
           "title": "Ketika Lebih Sedikit adalah Lebih: Menyelidiki Pemangkasan Data untuk Pra-pelatihan LLMs dalam Skala Besar",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1169,9 +1042,7 @@
         },
         {
           "id": "197812286",
-          "topics": [
-            "LLM"
-          ],
+          "topics": ["LLM"],
           "title": "Neuron dalam Model Bahasa Besar: Mati, N-gram, Posisional",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -1199,10 +1070,7 @@
         },
         {
           "id": "197810544",
-          "topics": [
-            "LLM",
-            "Sumber Terbuka"
-          ],
+          "topics": ["LLM", "Sumber Terbuka"],
           "title": "Buku Teks Adalah Semua yang Anda Butuhkan II: laporan teknis phi-1.5",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1230,11 +1098,7 @@
         },
         {
           "id": "197621737",
-          "topics": [
-            "LLM",
-            "Meminta",
-            "Ringkasan"
-          ],
+          "topics": ["LLM", "Meminta", "Ringkasan"],
           "title": "DrugChat: Menuju Pemberdayaan Kemampuan Seperti ChatGPT pada Graf Molekul Obat",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1262,11 +1126,7 @@
         },
         {
           "id": "197621634",
-          "topics": [
-            "LLM",
-            "Memancing",
-            "Ringkasan"
-          ],
+          "topics": ["LLM", "Memancing", "Ringkasan"],
           "title": "Dari Jarang ke Padat: Ringkasan GPT-4 dengan Rantai Memancing Kepadatan",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1294,11 +1154,7 @@
         },
         {
           "id": "197621519",
-          "topics": [
-            "LLM",
-            "Sumber Terbuka",
-            "Penalaan Instruksi"
-          ],
+          "topics": ["LLM", "Sumber Terbuka", "Penalaan Instruksi"],
           "title": "Laporan Teknis XGen-7B",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
@@ -1326,10 +1182,7 @@
         },
         {
           "id": "197621178",
-          "topics": [
-            "LLM",
-            "Memancing"
-          ],
+          "topics": ["LLM", "Memancing"],
           "title": "DoLa: Mendekode dengan Melawan Lapisan Meningkatkan Faktualitas dalam Model Bahasa Besar",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1357,10 +1210,7 @@
         },
         {
           "id": "197621439",
-          "topics": [
-            "LLM",
-            "Matematika"
-          ],
+          "topics": ["LLM", "Matematika"],
           "title": "GPT Dapat Menyelesaikan Masalah Matematika Tanpa Kalkulator",
           "slug": "transformer-models-an-introduction-and-catalog",
           "authorName": "Prof. Otto Nomos",
@@ -1388,10 +1238,7 @@
         },
         {
           "id": "197621128",
-          "topics": [
-            "LLM",
-            "Memancing"
-          ],
+          "topics": ["LLM", "Memancing"],
           "title": "Model Bahasa Besar sebagai Pengoptimal",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1419,10 +1266,7 @@
         },
         {
           "id": "197613974",
-          "topics": [
-            "LLM",
-            "RLHF"
-          ],
+          "topics": ["LLM", "RLHF"],
           "title": "RLHF Efisien: Mengurangi Penggunaan Memori dari PPO",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1450,11 +1294,7 @@
         },
         {
           "id": "197559951",
-          "topics": [
-            "LLM",
-            "Agen",
-            "Alat"
-          ],
+          "topics": ["LLM", "Agen", "Alat"],
           "title": "ModelScope-Agen: Membangun Sistem Agen yang Dapat Disesuaikan dengan Model Bahasa Besar Sumber Terbuka",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1514,10 +1354,7 @@
         },
         {
           "id": "180869081",
-          "topics": [
-            "LLM",
-            "Ringkasan"
-          ],
+          "topics": ["LLM", "Ringkasan"],
           "title": "Llama 2: Dasar Terbuka dan Model Chat yang Disempurnakan [Komentar]",
           "slug": "llama-2-open-foundation-and-fine-tuned-chat-models-commentary",
           "authorName": "Prof. Otto Nomos",
@@ -1545,10 +1382,7 @@
         },
         {
           "id": "179737945",
-          "topics": [
-            "LLM",
-            "Ringkasan"
-          ],
+          "topics": ["LLM", "Ringkasan"],
           "title": "Tantangan dan Aplikasi Model Bahasa Besar [Ringkasan]",
           "slug": "challenges-and-applications-of-large-language-models-summary",
           "authorName": "Prof. Otto Nomos",
@@ -1576,11 +1410,7 @@
         },
         {
           "id": "180927998",
-          "topics": [
-            "LLM",
-            "Komentar",
-            "LORA"
-          ],
+          "topics": ["LLM", "Komentar", "LORA"],
           "title": "LoraHub: Generalisasi Lintas-Tugas yang Efisien Melalui Komposisi Dinamis LoRA [Komentar]",
           "slug": "lorahub-efficient-cross-task-generalization-via-dynamic-lora-composition-commenta",
           "authorName": "Prof. Otto Nomos",
@@ -1608,11 +1438,7 @@
         },
         {
           "id": "180928004",
-          "topics": [
-            "LLM",
-            "Alat",
-            "Komentar"
-          ],
+          "topics": ["LLM", "Alat", "Komentar"],
           "title": "ToolLLM: Memudahkan Model Bahasa Besar Untuk Menguasai 16000+ API Dunia Nyata [Komentar]",
           "slug": "toolllm-facilitating-large-language-models-to-master-16000-real-world-apis-commen",
           "authorName": "Prof. Otto Nomos",
@@ -1640,10 +1466,7 @@
         },
         {
           "id": "189989705",
-          "topics": [
-            "LLM",
-            "Alat"
-          ],
+          "topics": ["LLM", "Alat"],
           "title": "FacTool: Deteksi Faktualitas dalam AI Generatif -- Kerangka Kerja yang Diperkaya Alat untuk Skenario Multi-Tugas dan Multi-Domain",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1671,11 +1494,7 @@
         },
         {
           "id": "189849326",
-          "topics": [
-            "Model Bahasa Besar",
-            "Meminta",
-            "Penalaran"
-          ],
+          "topics": ["Model Bahasa Besar", "Meminta", "Penalaran"],
           "title": "Grafik Pemikiran: Memecahkan Masalah Rumit dengan Model Bahasa Besar",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1703,9 +1522,7 @@
         },
         {
           "id": "189849276",
-          "topics": [
-            "LLM"
-          ],
+          "topics": ["LLM"],
           "title": "Generasi Terbimbing Efisien untuk Model Bahasa Besar",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1733,10 +1550,7 @@
         },
         {
           "id": "189849263",
-          "topics": [
-            "LLM",
-            "Kesehatan"
-          ],
+          "topics": ["LLM", "Kesehatan"],
           "title": "Memprediksi hasil transkripsi dari gangguan multigen baru dengan GEARS",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1764,11 +1578,7 @@
         },
         {
           "id": "189845558",
-          "topics": [
-            "LLM",
-            "Kompresi",
-            "Survei"
-          ],
+          "topics": ["LLM", "Kompresi", "Survei"],
           "title": "Survei tentang Kompresi Model untuk Model Bahasa Besar",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1796,11 +1606,7 @@
         },
         {
           "id": "189845521",
-          "topics": [
-            "LLM",
-            "Pelatihan",
-            "Penyelarasan"
-          ],
+          "topics": ["LLM", "Pelatihan", "Penyelarasan"],
           "title": "Dari Data Pra-pelatihan ke Model Bahasa hingga Tugas Hilir: Melacak Jejak Bias Politik yang Mengarah ke Model NLP yang Tidak Adil",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1828,10 +1634,7 @@
         },
         {
           "id": "189787126",
-          "topics": [
-            "LLM",
-            "Kode"
-          ],
+          "topics": ["LLM", "Kode"],
           "title": "LLM Sebagai DBA",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -1859,10 +1662,7 @@
         },
         {
           "id": "189845549",
-          "topics": [
-            "LLM",
-            "Penyetelan Instruksi"
-          ],
+          "topics": ["LLM", "Penyetelan Instruksi"],
           "title": "Penyelarasan Diri dengan Terjemahan Balik Instruksi",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -1890,10 +1690,7 @@
         },
         {
           "id": "189845519",
-          "topics": [
-            "LLM",
-            "RLHF"
-          ],
+          "topics": ["LLM", "RLHF"],
           "title": "RLAIF: Meningkatkan Pembelajaran Penguatan dari Umpan Balik Manusia dengan Umpan Balik AI",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1921,9 +1718,7 @@
         },
         {
           "id": "189792745",
-          "topics": [
-            "LLM"
-          ],
+          "topics": ["LLM"],
           "title": "Model Konten dan Perilaku Besar untuk Memahami, Mensimulasikan, dan Mengoptimalkan Konten dan Perilaku",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1951,11 +1746,7 @@
         },
         {
           "id": "189787194",
-          "topics": [
-            "LLM",
-            "Kode",
-            "Kesehatan"
-          ],
+          "topics": ["LLM", "Kode", "Kesehatan"],
           "title": "BioCoder: Tolok Ukur untuk Generasi Kode Bioinformatika dengan Pengetahuan Pragmatis Kontekstual",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1983,11 +1774,7 @@
         },
         {
           "id": "189787170",
-          "topics": [
-            "LLM",
-            "Multibahasa",
-            "Evaluasi"
-          ],
+          "topics": ["LLM", "Multibahasa", "Evaluasi"],
           "title": "Referensi Belebele: Dataset Pemahaman Bacaan Paralel dalam 122 Variasi Bahasa",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
@@ -2015,11 +1802,7 @@
         },
         {
           "id": "189787192",
-          "topics": [
-            "LLM",
-            "Kode",
-            "Penyetelan Instruksi"
-          ],
+          "topics": ["LLM", "Kode", "Penyetelan Instruksi"],
           "title": "Bisakah Bahasa Pemrograman Meningkatkan Satu Sama Lain melalui Penyetelan Instruksi?",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2047,11 +1830,7 @@
         },
         {
           "id": "189787190",
-          "topics": [
-            "LLM",
-            "Evaluasi",
-            "Iklim"
-          ],
+          "topics": ["LLM", "Evaluasi", "Iklim"],
           "title": "WeatherBench 2: Tolok Ukur untuk Generasi Berikutnya dari Model Cuaca Global Berbasis Data",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2079,10 +1858,7 @@
         },
         {
           "id": "189787181",
-          "topics": [
-            "LLM",
-            "Multilingual"
-          ],
+          "topics": ["LLM", "Multilingual"],
           "title": "Jais dan Jais-chat: Fondasi Berpusat Bahasa Arab dan Tuning Instruksi Model Bahasa Besar Generatif Terbuka",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2110,11 +1886,7 @@
         },
         {
           "id": "189787168",
-          "topics": [
-            "LLM",
-            "Penyetelan Instruksi",
-            "Kesehatan"
-          ],
+          "topics": ["LLM", "Penyetelan Instruksi", "Kesehatan"],
           "title": "MedAlign: Dataset yang Dibuat oleh Klinisi untuk Mengikuti Instruksi dengan Catatan Medis Elektronik",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2142,11 +1914,7 @@
         },
         {
           "id": "189777823",
-          "topics": [
-            "LLM",
-            "Kode",
-            "Obrolan"
-          ],
+          "topics": ["LLM", "Kode", "Obrolan"],
           "title": "SoTaNa: Asisten Pengembangan Perangkat Lunak Sumber Terbuka",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
@@ -2174,10 +1942,7 @@
         },
         {
           "id": "189787150",
-          "topics": [
-            "LLM",
-            "Personalisasi"
-          ],
+          "topics": ["LLM", "Personalisasi"],
           "title": "Mengajarkan LLM untuk Personalisasi -- Pendekatan yang Terinspirasi oleh Pendidikan Menulis",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2205,11 +1970,7 @@
         },
         {
           "id": "189787148",
-          "topics": [
-            "Pengambilan",
-            "LLM",
-            "Pembelajaran Kontekstual"
-          ],
+          "topics": ["Pengambilan", "LLM", "Pembelajaran Kontekstual"],
           "title": "RAVEN: Pembelajaran Kontekstual dengan Model Bahasa Encoder-Decoder yang Diperkaya Pengambilan",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2237,11 +1998,7 @@
         },
         {
           "id": "189787144",
-          "topics": [
-            "LLM",
-            "Kode",
-            "Meminta"
-          ],
+          "topics": ["LLM", "Kode", "Meminta"],
           "title": "Memecahkan Masalah Kata Matematika yang Menantang Menggunakan Interpreter Kode GPT-4 dengan Verifikasi Diri Berbasis Kode",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2269,11 +2026,7 @@
         },
         {
           "id": "189787113",
-          "topics": [
-            "LLM",
-            "Meminta",
-            "Multibahasa"
-          ],
+          "topics": ["LLM", "Meminta", "Multibahasa"],
           "title": "Setan Ada di Kesalahan: Memanfaatkan Model Bahasa Besar untuk Evaluasi Terjemahan Mesin yang Detail",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2301,10 +2054,7 @@
         },
         {
           "id": "189777847",
-          "topics": [
-            "LLM",
-            "Pembelajaran Kontekstual"
-          ],
+          "topics": ["LLM", "Pembelajaran Kontekstual"],
           "title": "CausalLM tidak optimal untuk pembelajaran kontekstual",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -2332,12 +2082,7 @@
         },
         {
           "id": "189787086",
-          "topics": [
-            "LLM",
-            "Penyetelan Halus",
-            "LORA",
-            "Data"
-          ],
+          "topics": ["LLM", "Penyetelan Halus", "LORA", "Data"],
           "title": "Platypus: Cepat, Murah, dan Pemurnian LLM yang Kuat",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2365,11 +2110,7 @@
         },
         {
           "id": "189777877",
-          "topics": [
-            "LLM",
-            "Kode",
-            "Penyetelan Instruksi"
-          ],
+          "topics": ["LLM", "Kode", "Penyetelan Instruksi"],
           "title": "OctoPack: Penyetelan Instruksi Kode Model Bahasa Besar",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2397,10 +2138,7 @@
         },
         {
           "id": "189777872",
-          "topics": [
-            "LLM",
-            "Kode"
-          ],
+          "topics": ["LLM", "Kode"],
           "title": "Meningkatkan Manajemen Jaringan Menggunakan Kode yang Dihasilkan oleh Model Bahasa Besar",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2428,12 +2166,7 @@
         },
         {
           "id": "189777849",
-          "topics": [
-            "Audio",
-            "LLM",
-            "Multimodal",
-            "Multibahasa"
-          ],
+          "topics": ["Audio", "LLM", "Multimodal", "Multibahasa"],
           "title": "Meningkatkan Representasi Bersama Ucapan-Teks Tanpa Penjajaran",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2461,10 +2194,7 @@
         },
         {
           "id": "189777845",
-          "topics": [
-            "LLM",
-            "Agen"
-          ],
+          "topics": ["LLM", "Agen"],
           "title": "BOLAA: Penilaian dan Pengorkestrasi Agen Otonom yang Ditingkatkan LLM",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2492,11 +2222,7 @@
         },
         {
           "id": "189775948",
-          "topics": [
-            "LLM",
-            "Obrolan",
-            "Data"
-          ],
+          "topics": ["LLM", "Obrolan", "Data"],
           "title": "PIPPA: Dataset Percakapan Sintetis Sebagian",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2524,10 +2250,7 @@
         },
         {
           "id": "189777825",
-          "topics": [
-            "LLM",
-            "Penyetelan Instruksi"
-          ],
+          "topics": ["LLM", "Penyetelan Instruksi"],
           "title": "Penyelarasan Diri dengan Terjemahan Balik Instruksi",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -2555,10 +2278,7 @@
         },
         {
           "id": "189577785",
-          "topics": [
-            "LLM",
-            "Kesehatan"
-          ],
+          "topics": ["LLM", "Kesehatan"],
           "title": "OpenProteinSet: Data pelatihan untuk biologi struktural skala besar",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
@@ -2586,12 +2306,7 @@
         },
         {
           "id": "189577629",
-          "topics": [
-            "LLM",
-            "Penyelarasan",
-            "Survei",
-            "Evaluasi"
-          ],
+          "topics": ["LLM", "Penyelarasan", "Survei", "Evaluasi"],
           "title": "LLM yang Dapat Dipercaya: Survei dan Pedoman untuk Mengevaluasi Penyelarasan Model Bahasa Besar",
           "slug": "trustworthy-llms-a-survey-and-guideline-for-evaluating-large-language-models-alig",
           "authorName": "Prof. Otto Nomos",
@@ -2619,10 +2334,7 @@
         },
         {
           "id": "189576091",
-          "topics": [
-            "LLM",
-            "Inferensi"
-          ],
+          "topics": ["LLM", "Inferensi"],
           "title": "Mempercepat Inferensi LLM dengan Dekoding Spekulatif Bertahap",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -2650,11 +2362,7 @@
         },
         {
           "id": "189576084",
-          "topics": [
-            "LLM",
-            "Data",
-            "Pelatihan"
-          ],
+          "topics": ["LLM", "Data", "Pelatihan"],
           "title": "Shepherd: Seorang Kritikus untuk Generasi Model Bahasa",
           "slug": "shepherd-a-critic-for-language-model-generation",
           "authorName": "Prof. Otto Nomos",
@@ -2682,10 +2390,7 @@
         },
         {
           "id": "189576080",
-          "topics": [
-            "LLM",
-            "Hukum"
-          ],
+          "topics": ["LLM", "Hukum"],
           "title": "Model Bahasa SILO: Mengisolasi Risiko Hukum dalam Penyimpanan Data Nonparametrik",
           "slug": "silo-language-models-isolating-legal-risk-in-a-nonparametric-datastore",
           "authorName": "Prof. Otto Nomos",
@@ -2713,10 +2418,7 @@
         },
         {
           "id": "189576058",
-          "topics": [
-            "LLM",
-            "Penyelarasan"
-          ],
+          "topics": ["LLM", "Penyelarasan"],
           "title": "Data sintetis sederhana mengurangi sikap mengambil hati pada model bahasa besar",
           "slug": "simple-synthetic-data-reduces-sycophancy-in-large-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -2750,13 +2452,7 @@
       "articles": [
         {
           "id": "198277124",
-          "topics": [
-            "LLM",
-            "Keuangan",
-            "Kesehatan",
-            "Hukum",
-            "Meminta"
-          ],
+          "topics": ["LLM", "Keuangan", "Kesehatan", "Hukum", "Meminta"],
           "title": "Menyesuaikan Model Bahasa Besar melalui Pemahaman Membaca",
           "slug": "adapting-large-language-models-via-reading-comprehension",
           "authorName": "Prof. Otto Nomos",
@@ -2790,13 +2486,7 @@
       "articles": [
         {
           "id": "198277124",
-          "topics": [
-            "LLM",
-            "Keuangan",
-            "Kesehatan",
-            "Hukum",
-            "Meminta"
-          ],
+          "topics": ["LLM", "Keuangan", "Kesehatan", "Hukum", "Meminta"],
           "title": "Menyesuaikan Model Bahasa Besar melalui Pemahaman Membaca",
           "slug": "adapting-large-language-models-via-reading-comprehension",
           "authorName": "Prof. Otto Nomos",
@@ -2824,11 +2514,7 @@
         },
         {
           "id": "197990687",
-          "topics": [
-            "LLM",
-            "Kesehatan",
-            "Ringkasan"
-          ],
+          "topics": ["LLM", "Kesehatan", "Ringkasan"],
           "title": "Ringkasan Teks Klinis: Adaptasi Model Bahasa Besar Dapat Mengungguli Ahli Manusia",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
@@ -2856,10 +2542,7 @@
         },
         {
           "id": "189849263",
-          "topics": [
-            "LLM",
-            "Kesehatan"
-          ],
+          "topics": ["LLM", "Kesehatan"],
           "title": "Memprediksi hasil transkripsi dari gangguan multigen baru dengan GEARS",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2887,11 +2570,7 @@
         },
         {
           "id": "189787194",
-          "topics": [
-            "LLM",
-            "Kode",
-            "Kesehatan"
-          ],
+          "topics": ["LLM", "Kode", "Kesehatan"],
           "title": "BioCoder: Tolok Ukur untuk Generasi Kode Bioinformatika dengan Pengetahuan Pragmatis Kontekstual",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2919,11 +2598,7 @@
         },
         {
           "id": "189787168",
-          "topics": [
-            "LLM",
-            "Penyetelan Instruksi",
-            "Kesehatan"
-          ],
+          "topics": ["LLM", "Penyetelan Instruksi", "Kesehatan"],
           "title": "MedAlign: Dataset yang Dibuat oleh Klinisi untuk Mengikuti Instruksi dengan Catatan Medis Elektronik",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2951,10 +2626,7 @@
         },
         {
           "id": "189577785",
-          "topics": [
-            "LLM",
-            "Kesehatan"
-          ],
+          "topics": ["LLM", "Kesehatan"],
           "title": "OpenProteinSet: Data pelatihan untuk biologi struktural skala besar",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
@@ -2988,13 +2660,7 @@
       "articles": [
         {
           "id": "198277124",
-          "topics": [
-            "LLM",
-            "Keuangan",
-            "Kesehatan",
-            "Hukum",
-            "Meminta"
-          ],
+          "topics": ["LLM", "Keuangan", "Kesehatan", "Hukum", "Meminta"],
           "title": "Menyesuaikan Model Bahasa Besar melalui Pemahaman Bacaan",
           "slug": "adapting-large-language-models-via-reading-comprehension",
           "authorName": "Prof. Otto Nomos",
@@ -3022,10 +2688,7 @@
         },
         {
           "id": "189576080",
-          "topics": [
-            "LLM",
-            "Hukum"
-          ],
+          "topics": ["LLM", "Hukum"],
           "title": "Model Bahasa SILO: Mengisolasi Risiko Hukum dalam Penyimpanan Data Nonparametrik",
           "slug": "silo-language-models-isolating-legal-risk-in-a-nonparametric-datastore",
           "authorName": "Prof. Otto Nomos",
@@ -3059,13 +2722,7 @@
       "articles": [
         {
           "id": "198277124",
-          "topics": [
-            "LLM",
-            "Keuangan",
-            "Kesehatan",
-            "Hukum",
-            "Meminta"
-          ],
+          "topics": ["LLM", "Keuangan", "Kesehatan", "Hukum", "Meminta"],
           "title": "Menyesuaikan Model Bahasa Besar melalui Pemahaman Membaca",
           "slug": "adapting-large-language-models-via-reading-comprehension",
           "authorName": "Prof. Otto Nomos",
@@ -3093,10 +2750,7 @@
         },
         {
           "id": "197990774",
-          "topics": [
-            "LLM",
-            "Memancing"
-          ],
+          "topics": ["LLM", "Memancing"],
           "title": "Menghubungkan Model Bahasa Besar dengan Algoritma Evolusioner Menghasilkan Pengoptimal Prompt yang Kuat",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3124,11 +2778,7 @@
         },
         {
           "id": "197621737",
-          "topics": [
-            "LLM",
-            "Meminta",
-            "Ringkasan"
-          ],
+          "topics": ["LLM", "Meminta", "Ringkasan"],
           "title": "DrugChat: Menuju Pemberdayaan Kemampuan Seperti ChatGPT pada Graf Molekul Obat",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3156,11 +2806,7 @@
         },
         {
           "id": "197621634",
-          "topics": [
-            "LLM",
-            "Memancing",
-            "Ringkasan"
-          ],
+          "topics": ["LLM", "Memancing", "Ringkasan"],
           "title": "Dari Jarang ke Padat: Ringkasan GPT-4 dengan Rantai Memancing Kepadatan",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3188,10 +2834,7 @@
         },
         {
           "id": "197621178",
-          "topics": [
-            "LLM",
-            "Memancing"
-          ],
+          "topics": ["LLM", "Memancing"],
           "title": "DoLa: Mendekode dengan Membandingkan Lapisan Meningkatkan Faktualitas dalam Model Bahasa Besar",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3219,10 +2862,7 @@
         },
         {
           "id": "197621128",
-          "topics": [
-            "LLM",
-            "Memancing"
-          ],
+          "topics": ["LLM", "Memancing"],
           "title": "Model Bahasa Besar sebagai Pengoptimal",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3250,11 +2890,7 @@
         },
         {
           "id": "189849326",
-          "topics": [
-            "LLM",
-            "Memancing",
-            "Penalaran"
-          ],
+          "topics": ["LLM", "Memancing", "Penalaran"],
           "title": "Grafik Pemikiran: Memecahkan Masalah Rumit dengan Model Bahasa Besar",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3282,11 +2918,7 @@
         },
         {
           "id": "189787144",
-          "topics": [
-            "LLM",
-            "Kode",
-            "Meminta"
-          ],
+          "topics": ["LLM", "Kode", "Meminta"],
           "title": "Memecahkan Masalah Kata Matematika yang Menantang Menggunakan Interpreter Kode GPT-4 dengan Verifikasi Diri Berbasis Kode",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3314,11 +2946,7 @@
         },
         {
           "id": "189787113",
-          "topics": [
-            "LLM",
-            "Meminta",
-            "Multibahasa"
-          ],
+          "topics": ["LLM", "Meminta", "Multibahasa"],
           "title": "Setan Ada di Kesalahan: Memanfaatkan Model Bahasa Besar untuk Evaluasi Terjemahan Mesin yang Detail",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3352,10 +2980,7 @@
       "articles": [
         {
           "id": "198277342",
-          "topics": [
-            "LLM",
-            "Dwibahasa"
-          ],
+          "topics": ["LLM", "Dwibahasa"],
           "title": "OpenBA: Model Asimetris Dwibahasa 15B Sumber Terbuka yang Dilatih dari Awal",
           "slug": "openba-an-open-sourced-15b-bilingual-asymmetric-seq2seq-model-pre-trained-from-sc",
           "authorName": "Prof. Otto Nomos",
@@ -3383,10 +3008,7 @@
         },
         {
           "id": "198277345",
-          "topics": [
-            "LLM",
-            "Multibahasa"
-          ],
+          "topics": ["LLM", "Multibahasa"],
           "title": "Baichuan 2: Model Bahasa Berskala Besar Terbuka",
           "slug": "baichuan-2-open-large-scale-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -3414,11 +3036,7 @@
         },
         {
           "id": "198277099",
-          "topics": [
-            "LLM",
-            "Multilingual",
-            "Data"
-          ],
+          "topics": ["LLM", "Multilingual", "Data"],
           "title": "CulturaX: Dataset Bersih, Besar, dan Multibahasa untuk Model Bahasa Besar dalam 167 Bahasa",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3446,11 +3064,7 @@
         },
         {
           "id": "197842432",
-          "topics": [
-            "LLM",
-            "Evaluasi",
-            "Multibahasa"
-          ],
+          "topics": ["LLM", "Evaluasi", "Multibahasa"],
           "title": "Apakah Penilai Berbasis Model Bahasa Besar Solusi untuk Meningkatkan Evaluasi Multibahasa?",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -3478,11 +3092,7 @@
         },
         {
           "id": "189787170",
-          "topics": [
-            "LLM",
-            "Multibahasa",
-            "Evaluasi"
-          ],
+          "topics": ["LLM", "Multibahasa", "Evaluasi"],
           "title": "Tantangan Belebele: Dataset Pemahaman Bacaan Paralel dalam 122 Variasi Bahasa",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
@@ -3510,10 +3120,7 @@
         },
         {
           "id": "189787181",
-          "topics": [
-            "LLM",
-            "Multibahasa"
-          ],
+          "topics": ["LLM", "Multibahasa"],
           "title": "Jais dan Jais-chat: Fondasi Berpusat Bahasa Arab dan Model Bahasa Besar Generatif Terbuka yang Disesuaikan dengan Instruksi",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3541,11 +3148,7 @@
         },
         {
           "id": "189787113",
-          "topics": [
-            "LLM",
-            "Meminta",
-            "Multibahasa"
-          ],
+          "topics": ["LLM", "Meminta", "Multibahasa"],
           "title": "Setan Ada di Kesalahan: Memanfaatkan Model Bahasa Besar untuk Evaluasi Terjemahan Mesin yang Mendetail",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3573,12 +3176,7 @@
         },
         {
           "id": "189777849",
-          "topics": [
-            "Audio",
-            "LLM",
-            "Multimodal",
-            "Multibahasa"
-          ],
+          "topics": ["Audio", "LLM", "Multimodal", "Multibahasa"],
           "title": "Meningkatkan Representasi Bersama Teks-Ucapan Tanpa Penjajaran",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3612,10 +3210,7 @@
       "articles": [
         {
           "id": "198277117",
-          "topics": [
-            "Pembelajaran Mesin Tingkat Lanjut",
-            "Pengambilan"
-          ],
+          "topics": ["Pembelajaran Mesin Tingkat Lanjut", "Pengambilan"],
           "title": "PDFTriage: Jawaban Pertanyaan atas Dokumen Panjang dan Terstruktur",
           "slug": "pdftriage-question-answering-over-long-structured-documents",
           "authorName": "Prof. Otto Nomos",
@@ -3643,11 +3238,7 @@
         },
         {
           "id": "189787148",
-          "topics": [
-            "Pengambilan",
-            "LLM",
-            "Pembelajaran Kontekstual"
-          ],
+          "topics": ["Pengambilan", "LLM", "Pembelajaran Kontekstual"],
           "title": "RAVEN: Pembelajaran Kontekstual dengan Model Bahasa Encoder-Decoder yang Diperkaya Pengambilan",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3681,10 +3272,7 @@
       "articles": [
         {
           "id": "198277138",
-          "topics": [
-            "LLM",
-            "Penyempurnaan"
-          ],
+          "topics": ["LLM", "Penyempurnaan"],
           "title": "Sorted LLaMA: Membuka Potensi Lapisan Menengah dari Model Bahasa Besar untuk Inferensi Dinamis Menggunakan Penyempurnaan Terurut (SoFT)",
           "slug": "sorted-llama-unlocking-the-potential-of-intermediate-layers-of-large-language-mod",
           "authorName": "Prof. Otto Nomos",
@@ -3712,11 +3300,7 @@
         },
         {
           "id": "198044900",
-          "topics": [
-            "LLM",
-            "Entitas",
-            "Penyetelan Halus"
-          ],
+          "topics": ["LLM", "Entitas", "Penyetelan Halus"],
           "title": "Memanfaatkan Informasi Kontekstual untuk Deteksi Kepentingan Entitas yang Efektif",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3744,11 +3328,7 @@
         },
         {
           "id": "197817281",
-          "topics": [
-            "LLM",
-            "Pembelajaran Kontekstual",
-            "Penalaan Halus"
-          ],
+          "topics": ["LLM", "Pembelajaran Kontekstual", "Penalaan Halus"],
           "title": "FIAT: Penggabungan paradigma pembelajaran dengan Penyetelan Percepatan Instruksi",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3776,12 +3356,7 @@
         },
         {
           "id": "189787086",
-          "topics": [
-            "LLM",
-            "Penyempurnaan",
-            "LORA",
-            "Data"
-          ],
+          "topics": ["LLM", "Penyempurnaan", "LORA", "Data"],
           "title": "Platypus: Cepat, Murah, dan Penguatan LLM yang Kuat",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3815,11 +3390,7 @@
       "articles": [
         {
           "id": "198277150",
-          "topics": [
-            "LLM",
-            "Penalaan Instruksi",
-            "Multimodal"
-          ],
+          "topics": ["LLM", "Penalaan Instruksi", "Multimodal"],
           "title": "Studi Empiris tentang Penskalaan Model Multimodal Besar yang Disesuaikan Instruksi",
           "slug": "an-empirical-study-of-scaling-instruct-tuned-large-multimodal-models",
           "authorName": "Prof. Otto Nomos",
@@ -3847,11 +3418,7 @@
         },
         {
           "id": "197621519",
-          "topics": [
-            "LLM",
-            "Sumber Terbuka",
-            "Penalaan Instruksi"
-          ],
+          "topics": ["LLM", "Sumber Terbuka", "Penalaan Instruksi"],
           "title": "Laporan Teknis XGen-7B",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
@@ -3879,10 +3446,7 @@
         },
         {
           "id": "189845549",
-          "topics": [
-            "LLM",
-            "Penyetelan Instruksi"
-          ],
+          "topics": ["LLM", "Penyetelan Instruksi"],
           "title": "Penyelarasan Diri dengan Terjemahan Balik Instruksi",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -3910,11 +3474,7 @@
         },
         {
           "id": "189787192",
-          "topics": [
-            "LLM",
-            "Kode",
-            "Penyetelan Instruksi"
-          ],
+          "topics": ["LLM", "Kode", "Penyetelan Instruksi"],
           "title": "Bisakah Bahasa Pemrograman Meningkatkan Satu Sama Lain melalui Penyetelan Instruksi?",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3942,11 +3502,7 @@
         },
         {
           "id": "189787168",
-          "topics": [
-            "LLM",
-            "Penyetelan Instruksi",
-            "Kesehatan"
-          ],
+          "topics": ["LLM", "Penyetelan Instruksi", "Kesehatan"],
           "title": "MedAlign: Dataset yang Dibuat oleh Klinisi untuk Mengikuti Instruksi dengan Catatan Medis Elektronik",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3974,11 +3530,7 @@
         },
         {
           "id": "189777877",
-          "topics": [
-            "Model Bahasa Besar",
-            "Kode",
-            "Penyetelan Instruksi"
-          ],
+          "topics": ["Model Bahasa Besar", "Kode", "Penyetelan Instruksi"],
           "title": "OctoPack: Kode Penyetelan Instruksi Model Bahasa Besar",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -4006,10 +3558,7 @@
         },
         {
           "id": "189777825",
-          "topics": [
-            "LLM",
-            "Penyetelan Instruksi"
-          ],
+          "topics": ["LLM", "Penyetelan Instruksi"],
           "title": "Penyelarasan Diri dengan Terjemahan Balik Instruksi",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -4075,10 +3624,7 @@
         },
         {
           "id": "197845061",
-          "topics": [
-            "Audio",
-            "Multimodal"
-          ],
+          "topics": ["Audio", "Multimodal"],
           "title": "Pengawasan Bahasa Alami untuk Representasi Audio Tujuan Umum",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -4106,12 +3652,7 @@
         },
         {
           "id": "189777849",
-          "topics": [
-            "Audio",
-            "LLM",
-            "Multimodal",
-            "Multibahasa"
-          ],
+          "topics": ["Audio", "LLM", "Multimodal", "Multibahasa"],
           "title": "Meningkatkan Representasi Bersama Ucapan-Teks Tanpa Penjajaran",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -4145,11 +3686,7 @@
       "articles": [
         {
           "id": "198277160",
-          "topics": [
-            "LLM",
-            "Agen",
-            "Permainan"
-          ],
+          "topics": ["LLM", "Agen", "Permainan"],
           "title": "MindAgent: Interaksi Permainan yang Muncul",
           "slug": "mindagent-emergent-gaming-interaction",
           "authorName": "Prof. Otto Nomos",
@@ -4177,11 +3714,7 @@
         },
         {
           "id": "198044929",
-          "topics": [
-            "LLM",
-            "Data",
-            "Agen"
-          ],
+          "topics": ["LLM", "Data", "Agen"],
           "title": "Sumber Data untuk Penalaran Agen Berwujud",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -4209,10 +3742,7 @@
         },
         {
           "id": "198044892",
-          "topics": [
-            "LLM",
-            "Agen"
-          ],
+          "topics": ["LLM", "Agen"],
           "title": "LASER: Agen LLM dengan Eksplorasi Ruang Keadaan untuk Navigasi Web",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -4240,10 +3770,7 @@
         },
         {
           "id": "197990671",
-          "topics": [
-            "LLM",
-            "Agen"
-          ],
+          "topics": ["LLM", "Agen"],
           "title": "Agen: Kerangka Kerja Sumber Terbuka untuk Agen Bahasa Otonom",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -4271,11 +3798,7 @@
         },
         {
           "id": "197559951",
-          "topics": [
-            "LLM",
-            "Agen",
-            "Alat"
-          ],
+          "topics": ["LLM", "Agen", "Alat"],
           "title": "ModelScope-Agen: Membangun Sistem Agen yang Dapat Disesuaikan dengan Model Bahasa Besar Sumber Terbuka",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -4303,10 +3826,7 @@
         },
         {
           "id": "189777845",
-          "topics": [
-            "LLM",
-            "Agen"
-          ],
+          "topics": ["LLM", "Agen"],
           "title": "BOLAA: Penilaian dan Pengorkestrasi Agen Otonom yang Ditingkatkan oleh LLM",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -4340,11 +3860,7 @@
       "articles": [
         {
           "id": "198277160",
-          "topics": [
-            "LLM",
-            "Agen",
-            "Permainan"
-          ],
+          "topics": ["LLM", "Agen", "Permainan"],
           "title": "MindAgent: Interaksi Permainan yang Muncul",
           "slug": "mindagent-emergent-gaming-interaction",
           "authorName": "Prof. Otto Nomos",
@@ -4378,9 +3894,7 @@
       "articles": [
         {
           "id": "198277182",
-          "topics": [
-            "Transformers"
-          ],
+          "topics": ["Transformers"],
           "title": "Mengobati sakit kepala dari Transformers melalui Perhatian Terbatas Kolinear",
           "slug": "cure-the-headache-of-transformers-via-collinear-constrained-attention",
           "authorName": "Prof. Otto Nomos",
@@ -4408,11 +3922,7 @@
         },
         {
           "id": "198044879",
-          "topics": [
-            "LLM",
-            "Transformator",
-            "Interpretasi"
-          ],
+          "topics": ["LLM", "Transformator", "Interpretasi"],
           "title": "Autoencoder Jarang Menemukan Fitur yang Sangat Dapat Diinterpretasikan dalam Model Bahasa",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -4440,11 +3950,7 @@
         },
         {
           "id": "198044746",
-          "topics": [
-            "LLM",
-            "Transformator",
-            "Pelatihan"
-          ],
+          "topics": ["LLM", "Transformator", "Pelatihan"],
           "title": "Hukum Skala untuk Model Dasar yang Terhubung Secara Jarang",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -4472,9 +3978,7 @@
         },
         {
           "id": "197842604",
-          "topics": [
-            "Transformers"
-          ],
+          "topics": ["Transformers"],
           "title": "Mengungkap algoritma optimisasi mesa di Transformers",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -4502,9 +4006,7 @@
         },
         {
           "id": "197613989",
-          "topics": [
-            "Transformers"
-          ],
+          "topics": ["Transformers"],
           "title": "Jaringan saraf berulang berpagar menemukan perhatian",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -4532,9 +4034,7 @@
         },
         {
           "id": "197556833",
-          "topics": [
-            "Transformers"
-          ],
+          "topics": ["Transformers"],
           "title": "Satu Feedforward Lebar Sudah Cukup",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -4562,9 +4062,7 @@
         },
         {
           "id": "189989661",
-          "topics": [
-            "Transformers"
-          ],
+          "topics": ["Transformers"],
           "title": "Pencarian Vektor dengan OpenAI Embeddings: Lucene Adalah Semua yang Anda Butuhkan",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -4592,9 +4090,7 @@
         },
         {
           "id": "189849314",
-          "topics": [
-            "Transformers"
-          ],
+          "topics": ["Transformers"],
           "title": "Jaringan Aliran Bayesian",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -4622,9 +4118,7 @@
         },
         {
           "id": "189787209",
-          "topics": [
-            "Transformers"
-          ],
+          "topics": ["Transformers"],
           "title": "YaRN: Perluasan Jendela Konteks yang Efisien dari Model Bahasa Besar",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -4652,9 +4146,7 @@
         },
         {
           "id": "189787174",
-          "topics": [
-            "Transformers"
-          ],
+          "topics": ["Transformers"],
           "title": "LM-Infinite: Generalisasi Panjang Sederhana Saat Terbang untuk Model Bahasa Besar",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -4682,9 +4174,7 @@
         },
         {
           "id": "189777843",
-          "topics": [
-            "Transformers"
-          ],
+          "topics": ["Transformers"],
           "title": "Ekspansi yang Melestarikan Fungsi Komposabel untuk Arsitektur Transformer",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -4718,10 +4208,7 @@
       "articles": [
         {
           "id": "198277196",
-          "topics": [
-            "LLM",
-            "Data Terstruktur"
-          ],
+          "topics": ["LLM", "Data Terstruktur"],
           "title": "Struc-Bench: Apakah Model Bahasa Besar Benar-benar Baik dalam Menghasilkan Data Terstruktur yang Kompleks?",
           "slug": "struc-bench-are-large-language-models-really-good-at-generating-complex-structure",
           "authorName": "Prof. Otto Nomos",
@@ -4749,12 +4236,7 @@
         },
         {
           "id": "198277458",
-          "topics": [
-            "LLM",
-            "Halusinasi",
-            "Entitas",
-            "Data Terstruktur"
-          ],
+          "topics": ["LLM", "Halusinasi", "Entitas", "Data Terstruktur"],
           "title": "LMDX: Ekstraksi dan Lokalisasi Informasi Dokumen Berbasis Model Bahasa",
           "slug": "lmdx-language-model-based-document-information-extraction-and-localization",
           "authorName": "Prof. Otto Nomos",
@@ -4788,11 +4270,7 @@
       "articles": [
         {
           "id": "198277217",
-          "topics": [
-            "LLM",
-            "Privasi",
-            "Tepi"
-          ],
+          "topics": ["LLM", "Privasi", "Tepi"],
           "title": "Pemulihan dari Penyamaran yang Memelihara Privasi dengan Model Bahasa Besar",
           "slug": "recovering-from-privacy-preserving-masking-with-large-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -4826,11 +4304,7 @@
       "articles": [
         {
           "id": "198277217",
-          "topics": [
-            "LLM",
-            "Privasi",
-            "Tepi"
-          ],
+          "topics": ["LLM", "Privasi", "Tepi"],
           "title": "Pemulihan dari Penyamaran yang Memelihara Privasi dengan Model Bahasa Besar",
           "slug": "recovering-from-privacy-preserving-masking-with-large-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -4864,10 +4338,7 @@
       "articles": [
         {
           "id": "198277239",
-          "topics": [
-            "LLM",
-            "Obrolan"
-          ],
+          "topics": ["LLM", "Obrolan"],
           "title": "S3-DST: Segmentasi Dialog Terstruktur Berdomain Terbuka dan Pelacakan Status di Era LLM",
           "slug": "s3-dst-structured-open-domain-dialogue-segmentation-and-state-tracking-in-the-era",
           "authorName": "Prof. Otto Nomos",
@@ -4895,10 +4366,7 @@
         },
         {
           "id": "198044802",
-          "topics": [
-            "LLM",
-            "Obrolan"
-          ],
+          "topics": ["LLM", "Obrolan"],
           "title": "Menyelidiki Kemampuan Jawab LLM untuk Jawaban Pertanyaan Panjang",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -4926,11 +4394,7 @@
         },
         {
           "id": "189777823",
-          "topics": [
-            "LLM",
-            "Kode",
-            "Obrolan"
-          ],
+          "topics": ["LLM", "Kode", "Obrolan"],
           "title": "SoTaNa: Asisten Pengembangan Perangkat Lunak Sumber Terbuka",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
@@ -4958,11 +4422,7 @@
         },
         {
           "id": "189775948",
-          "topics": [
-            "LLM",
-            "Obrolan",
-            "Data"
-          ],
+          "topics": ["LLM", "Obrolan", "Data"],
           "title": "PIPPA: Dataset Percakapan yang Sebagian Sintetis",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -4996,10 +4456,7 @@
       "articles": [
         {
           "id": "198277253",
-          "topics": [
-            "LLM",
-            "Audio"
-          ],
+          "topics": ["LLM", "Audio"],
           "title": "Meningkatkan teks untuk pemahaman bahasa lisan dengan Model Bahasa Besar",
           "slug": "augmenting-text-for-spoken-language-understanding-with-large-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -5027,10 +4484,7 @@
         },
         {
           "id": "197845061",
-          "topics": [
-            "Audio",
-            "Multimodal"
-          ],
+          "topics": ["Audio", "Multimodal"],
           "title": "Pengawasan Bahasa Alami untuk Representasi Audio Tujuan Umum",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5058,12 +4512,7 @@
         },
         {
           "id": "189777849",
-          "topics": [
-            "Audio",
-            "LLM",
-            "Multimodal",
-            "Multibahasa"
-          ],
+          "topics": ["Audio", "LLM", "Multimodal", "Multibahasa"],
           "title": "Meningkatkan Representasi Bersama Ucapan-Teks Tanpa Penjajaran",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5097,10 +4546,7 @@
       "articles": [
         {
           "id": "198277277",
-          "topics": [
-            "Pemodelan Bahasa",
-            "Kompresi"
-          ],
+          "topics": ["Pemodelan Bahasa", "Kompresi"],
           "title": "Pemodelan Bahasa adalah Kompresi",
           "slug": "language-modeling-is-compression",
           "authorName": "Prof. Otto Nomos",
@@ -5128,11 +4574,7 @@
         },
         {
           "id": "189845558",
-          "topics": [
-            "LLM",
-            "Kompresi",
-            "Survei"
-          ],
+          "topics": ["LLM", "Kompresi", "Survei"],
           "title": "Survei tentang Kompresi Model untuk Model Bahasa Besar",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5166,10 +4608,7 @@
       "articles": [
         {
           "id": "198277360",
-          "topics": [
-            "LLM",
-            "RLHF"
-          ],
+          "topics": ["LLM", "RLHF"],
           "title": "Menstabilkan RLHF melalui Model Keuntungan dan Latihan Selektif",
           "slug": "stabilizing-rlhf-through-advantage-model-and-selective-rehearsal",
           "authorName": "Prof. Otto Nomos",
@@ -5229,10 +4668,7 @@
         },
         {
           "id": "197613974",
-          "topics": [
-            "LLM",
-            "RLHF"
-          ],
+          "topics": ["LLM", "RLHF"],
           "title": "RLHF Efisien: Mengurangi Penggunaan Memori dari PPO",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5260,11 +4696,7 @@
         },
         {
           "id": "180403467",
-          "topics": [
-            "LLM",
-            "RLHF",
-            "Ringkasan"
-          ],
+          "topics": ["LLM", "RLHF", "Ringkasan"],
           "title": "Masalah Terbuka dan Batasan Fundamental Pembelajaran Penguatan dari Umpan Balik Manusia [Ringkasan]",
           "slug": "open-problems-and-fundamental-limitations-of-reinforcement-learning-from-human-fe",
           "authorName": "Prof. Otto Nomos",
@@ -5292,10 +4724,7 @@
         },
         {
           "id": "189845519",
-          "topics": [
-            "LLM",
-            "RLHF"
-          ],
+          "topics": ["LLM", "RLHF"],
           "title": "RLAIF: Meningkatkan Pembelajaran Penguatan dari Umpan Balik Manusia dengan Umpan Balik AI",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5329,10 +4758,7 @@
       "articles": [
         {
           "id": "198277446",
-          "topics": [
-            "LLM",
-            "Halusinasi"
-          ],
+          "topics": ["LLM", "Halusinasi"],
           "title": "Rantai-Verifikasi Mengurangi Halusinasi pada Model Bahasa Besar",
           "slug": "chain-of-verification-reduces-hallucination-in-large-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -5360,12 +4786,7 @@
         },
         {
           "id": "198277458",
-          "topics": [
-            "LLM",
-            "Halusinasi",
-            "Entitas",
-            "Data Terstruktur"
-          ],
+          "topics": ["LLM", "Halusinasi", "Entitas", "Data Terstruktur"],
           "title": "LMDX: Ekstraksi dan Lokalisasi Informasi Dokumen Berbasis Model Bahasa",
           "slug": "lmdx-language-model-based-document-information-extraction-and-localization",
           "authorName": "Prof. Otto Nomos",
@@ -5399,12 +4820,7 @@
       "articles": [
         {
           "id": "198277458",
-          "topics": [
-            "LLM",
-            "Halusinasi",
-            "Entitas",
-            "Data Terstruktur"
-          ],
+          "topics": ["LLM", "Halusinasi", "Entitas", "Data Terstruktur"],
           "title": "LMDX: Ekstraksi dan Lokalisasi Informasi Dokumen Berbasis Model Bahasa",
           "slug": "lmdx-language-model-based-document-information-extraction-and-localization",
           "authorName": "Prof. Otto Nomos",
@@ -5432,11 +4848,7 @@
         },
         {
           "id": "198044900",
-          "topics": [
-            "LLM",
-            "Entitas",
-            "Penyetelan Halus"
-          ],
+          "topics": ["LLM", "Entitas", "Penyetelan Halus"],
           "title": "Memanfaatkan Informasi Kontekstual untuk Deteksi Kepentingan Entitas yang Efektif",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5470,10 +4882,7 @@
       "articles": [
         {
           "id": "198277209",
-          "topics": [
-            "LLM",
-            "Data"
-          ],
+          "topics": ["LLM", "Data"],
           "title": "SlimPajama-DC: Memahami Kombinasi Data untuk Pelatihan LLM",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -5501,11 +4910,7 @@
         },
         {
           "id": "198277099",
-          "topics": [
-            "LLM",
-            "Multibahasa",
-            "Data"
-          ],
+          "topics": ["LLM", "Multibahasa", "Data"],
           "title": "CulturaX: Dataset Bersih, Besar, dan Multibahasa untuk Model Bahasa Besar dalam 167 Bahasa",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5533,11 +4938,7 @@
         },
         {
           "id": "198044929",
-          "topics": [
-            "LLM",
-            "Data",
-            "Agen"
-          ],
+          "topics": ["LLM", "Data", "Agen"],
           "title": "Sumber Data untuk Agen Berwujud yang Beralasan",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -5565,10 +4966,7 @@
         },
         {
           "id": "197813719",
-          "topics": [
-            "LLM",
-            "Data"
-          ],
+          "topics": ["LLM", "Data"],
           "title": "Ketika Lebih Sedikit adalah Lebih: Menyelidiki Pemangkasan Data untuk Pra-pelatihan LLMs dalam Skala Besar",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5596,12 +4994,7 @@
         },
         {
           "id": "189787086",
-          "topics": [
-            "LLM",
-            "Penyetelan Halus",
-            "LORA",
-            "Data"
-          ],
+          "topics": ["LLM", "Penyetelan Halus", "LORA", "Data"],
           "title": "Platypus: Cepat, Murah, dan Pemurnian LLM yang Kuat",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5629,11 +5022,7 @@
         },
         {
           "id": "189775948",
-          "topics": [
-            "LLM",
-            "Obrolan",
-            "Data"
-          ],
+          "topics": ["LLM", "Obrolan", "Data"],
           "title": "PIPPA: Dataset Percakapan Sintetis Sebagian",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5661,11 +5050,7 @@
         },
         {
           "id": "189576084",
-          "topics": [
-            "LLM",
-            "Data",
-            "Pelatihan"
-          ],
+          "topics": ["LLM", "Data", "Pelatihan"],
           "title": "Shepherd: Seorang Kritikus untuk Generasi Model Bahasa",
           "slug": "shepherd-a-critic-for-language-model-generation",
           "authorName": "Prof. Otto Nomos",
@@ -5699,10 +5084,7 @@
       "articles": [
         {
           "id": "198277109",
-          "topics": [
-            "LLM",
-            "Penalaran"
-          ],
+          "topics": ["LLM", "Penalaran"],
           "title": "Dekoding Kontrastif Meningkatkan Penalaran dalam Model Bahasa Besar",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5730,11 +5112,7 @@
         },
         {
           "id": "189849326",
-          "topics": [
-            "LLM",
-            "Memancing",
-            "Penalaran"
-          ],
+          "topics": ["LLM", "Memancing", "Penalaran"],
           "title": "Grafik Pemikiran: Memecahkan Masalah Rumit dengan Model Bahasa Besar",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5768,11 +5146,7 @@
       "articles": [
         {
           "id": "198044879",
-          "topics": [
-            "LLM",
-            "Transformers",
-            "Interpretasi"
-          ],
+          "topics": ["LLM", "Transformers", "Interpretasi"],
           "title": "Sparse Autoencoders Menemukan Fitur yang Sangat Dapat Diinterpretasikan dalam Model Bahasa",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -5806,11 +5180,7 @@
       "articles": [
         {
           "id": "198044746",
-          "topics": [
-            "LLM",
-            "Transformers",
-            "Pelatihan"
-          ],
+          "topics": ["LLM", "Transformers", "Pelatihan"],
           "title": "Hukum Skala untuk Model Dasar yang Terhubung Secara Jarang",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -5838,11 +5208,7 @@
         },
         {
           "id": "189845521",
-          "topics": [
-            "LLM",
-            "Pelatihan",
-            "Penyelarasan"
-          ],
+          "topics": ["LLM", "Pelatihan", "Penyelarasan"],
           "title": "Dari Data Pra-pelatihan ke Model Bahasa hingga Tugas Hilir: Melacak Jejak Bias Politik yang Mengarah ke Model NLP yang Tidak Adil",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5870,11 +5236,7 @@
         },
         {
           "id": "189576084",
-          "topics": [
-            "LLM",
-            "Data",
-            "Pelatihan"
-          ],
+          "topics": ["LLM", "Data", "Pelatihan"],
           "title": "Shepherd: Seorang Kritikus untuk Generasi Model Bahasa",
           "slug": "shepherd-a-critic-for-language-model-generation",
           "authorName": "Prof. Otto Nomos",
@@ -5908,10 +5270,7 @@
       "articles": [
         {
           "id": "197990754",
-          "topics": [
-            "Model Bahasa Besar",
-            "Pembelajaran Kontekstual"
-          ],
+          "topics": ["Model Bahasa Besar", "Pembelajaran Kontekstual"],
           "title": "Pembelajaran Kontekstual yang Sadar Ambiguitas dengan Model Bahasa Besar",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5939,11 +5298,7 @@
         },
         {
           "id": "197817281",
-          "topics": [
-            "LLM",
-            "Pembelajaran Kontekstual",
-            "Penalaan Halus"
-          ],
+          "topics": ["LLM", "Pembelajaran Kontekstual", "Penalaan Halus"],
           "title": "FIAT: Penggabungan paradigma pembelajaran dengan Penyetelan Percepatan Instruksi",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5971,11 +5326,7 @@
         },
         {
           "id": "189787148",
-          "topics": [
-            "Pengambilan",
-            "LLM",
-            "Pembelajaran Kontekstual"
-          ],
+          "topics": ["Pengambilan", "LLM", "Pembelajaran Kontekstual"],
           "title": "RAVEN: Pembelajaran Kontekstual dengan Model Bahasa Encoder-Decoder yang Diperkaya Pengambilan",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -6003,10 +5354,7 @@
         },
         {
           "id": "189777847",
-          "topics": [
-            "LLM",
-            "Pembelajaran Kontekstual"
-          ],
+          "topics": ["LLM", "Pembelajaran Kontekstual"],
           "title": "CausalLM tidak optimal untuk pembelajaran kontekstual",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -6040,11 +5388,7 @@
       "articles": [
         {
           "id": "197842432",
-          "topics": [
-            "LLM",
-            "Evaluasi",
-            "Multibahasa"
-          ],
+          "topics": ["LLM", "Evaluasi", "Multibahasa"],
           "title": "Apakah Penilai Berbasis Model Bahasa Besar Solusi untuk Meningkatkan Evaluasi Multibahasa?",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -6072,11 +5416,7 @@
         },
         {
           "id": "189787170",
-          "topics": [
-            "LLM",
-            "Multibahasa",
-            "Evaluasi"
-          ],
+          "topics": ["LLM", "Multibahasa", "Evaluasi"],
           "title": "Referensi Belebele: Dataset Pemahaman Bacaan Paralel dalam 122 Variasi Bahasa",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
@@ -6104,11 +5444,7 @@
         },
         {
           "id": "189787190",
-          "topics": [
-            "LLM",
-            "Evaluasi",
-            "Iklim"
-          ],
+          "topics": ["LLM", "Evaluasi", "Iklim"],
           "title": "WeatherBench 2: Tolok Ukur untuk Generasi Berikutnya dari Model Cuaca Global yang Didorong Data",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -6136,12 +5472,7 @@
         },
         {
           "id": "189577629",
-          "topics": [
-            "LLM",
-            "Penyelarasan",
-            "Survei",
-            "Evaluasi"
-          ],
+          "topics": ["LLM", "Penyelarasan", "Survei", "Evaluasi"],
           "title": "LLM yang Dapat Dipercaya: Survei dan Pedoman untuk Mengevaluasi Penyelarasan Model Bahasa Besar",
           "slug": "trustworthy-llms-a-survey-and-guideline-for-evaluating-large-language-models-alig",
           "authorName": "Prof. Otto Nomos",
@@ -6175,11 +5506,7 @@
       "articles": [
         {
           "id": "197990687",
-          "topics": [
-            "LLM",
-            "Kesehatan",
-            "Ringkasan"
-          ],
+          "topics": ["LLM", "Kesehatan", "Ringkasan"],
           "title": "Ringkasan Teks Klinis: Adaptasi Model Bahasa Besar Dapat Melampaui Ahli Manusia",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
@@ -6207,11 +5534,7 @@
         },
         {
           "id": "197621737",
-          "topics": [
-            "LLM",
-            "Memancing",
-            "Ringkasan"
-          ],
+          "topics": ["LLM", "Memancing", "Ringkasan"],
           "title": "DrugChat: Menuju Pemberdayaan Kemampuan Seperti ChatGPT pada Graf Molekul Obat",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -6239,11 +5562,7 @@
         },
         {
           "id": "197621634",
-          "topics": [
-            "LLM",
-            "Memancing",
-            "Ringkasan"
-          ],
+          "topics": ["LLM", "Memancing", "Ringkasan"],
           "title": "Dari Jarang ke Padat: Ringkasan GPT-4 dengan Rantai Memancing Kepadatan",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -6315,10 +5634,7 @@
       "articles": [
         {
           "id": "197859672",
-          "topics": [
-            "LLM",
-            "Kode"
-          ],
+          "topics": ["LLM", "Kode"],
           "title": "Model Bahasa Besar untuk Optimisasi Kompilator",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -6346,10 +5662,7 @@
         },
         {
           "id": "189787126",
-          "topics": [
-            "LLM",
-            "Kode"
-          ],
+          "topics": ["LLM", "Kode"],
           "title": "LLM Sebagai DBA",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -6377,11 +5690,7 @@
         },
         {
           "id": "189787194",
-          "topics": [
-            "LLM",
-            "Kode",
-            "Kesehatan"
-          ],
+          "topics": ["LLM", "Kode", "Kesehatan"],
           "title": "BioCoder: Tolok Ukur untuk Generasi Kode Bioinformatika dengan Pengetahuan Pragmatis Kontekstual",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -6409,11 +5718,7 @@
         },
         {
           "id": "189787192",
-          "topics": [
-            "LLM",
-            "Kode",
-            "Penyetelan Instruksi"
-          ],
+          "topics": ["LLM", "Kode", "Penyetelan Instruksi"],
           "title": "Bisakah Bahasa Pemrograman Meningkatkan Satu Sama Lain melalui Penyetelan Instruksi?",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -6441,11 +5746,7 @@
         },
         {
           "id": "189777823",
-          "topics": [
-            "LLM",
-            "Kode",
-            "Obrolan"
-          ],
+          "topics": ["LLM", "Kode", "Obrolan"],
           "title": "SoTaNa: Asisten Pengembangan Perangkat Lunak Sumber Terbuka",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
@@ -6473,11 +5774,7 @@
         },
         {
           "id": "189787144",
-          "topics": [
-            "LLM",
-            "Kode",
-            "Meminta"
-          ],
+          "topics": ["LLM", "Kode", "Meminta"],
           "title": "Memecahkan Masalah Kata Matematika yang Menantang Menggunakan Interpreter Kode GPT-4 dengan Verifikasi Mandiri Berbasis Kode",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -6505,11 +5802,7 @@
         },
         {
           "id": "189777877",
-          "topics": [
-            "LLM",
-            "Kode",
-            "Penyetelan Instruksi"
-          ],
+          "topics": ["LLM", "Kode", "Penyetelan Instruksi"],
           "title": "OctoPack: Penyetelan Instruksi Kode Model Bahasa Besar",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -6537,10 +5830,7 @@
         },
         {
           "id": "189777872",
-          "topics": [
-            "LLM",
-            "Kode"
-          ],
+          "topics": ["LLM", "Kode"],
           "title": "Meningkatkan Manajemen Jaringan Menggunakan Kode yang Dihasilkan oleh Model Bahasa Besar",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -6574,10 +5864,7 @@
       "articles": [
         {
           "id": "197840057",
-          "topics": [
-            "LLM",
-            "Ilmu"
-          ],
+          "topics": ["LLM", "Ilmu"],
           "title": "AstroLLaMA: Menuju Model Dasar Spesialisasi dalam Astronomi",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -6605,11 +5892,7 @@
         },
         {
           "id": "197838596",
-          "topics": [
-            "LLM",
-            "Matematika",
-            "Ilmu Pengetahuan"
-          ],
+          "topics": ["LLM", "Matematika", "Ilmu Pengetahuan"],
           "title": "Model Bahasa Besar untuk Ilmu Pengetahuan: Studi tentang P vs. NP",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -6637,10 +5920,7 @@
         },
         {
           "id": "189577812",
-          "topics": [
-            "Difusi",
-            "Ilmu"
-          ],
+          "topics": ["Difusi", "Ilmu"],
           "title": "PDE-Refiner: Mencapai Peluncuran Jangka Panjang yang Akurat dengan Pemecah PDE Neural",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -6674,11 +5954,7 @@
       "articles": [
         {
           "id": "197838596",
-          "topics": [
-            "LLM",
-            "Matematika",
-            "Ilmu Pengetahuan"
-          ],
+          "topics": ["LLM", "Matematika", "Ilmu Pengetahuan"],
           "title": "Model Bahasa Besar untuk Ilmu Pengetahuan: Studi tentang P vs NP",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -6706,10 +5982,7 @@
         },
         {
           "id": "197621439",
-          "topics": [
-            "LLM",
-            "Matematika"
-          ],
+          "topics": ["LLM", "Matematika"],
           "title": "GPT Dapat Menyelesaikan Masalah Matematika Tanpa Kalkulator",
           "slug": "transformer-models-an-introduction-and-catalog",
           "authorName": "Prof. Otto Nomos",
@@ -6743,10 +6016,7 @@
       "articles": [
         {
           "id": "197810544",
-          "topics": [
-            "LLM",
-            "Sumber Terbuka"
-          ],
+          "topics": ["LLM", "Sumber Terbuka"],
           "title": "Buku Teks Adalah Semua yang Anda Butuhkan II: laporan teknis phi-1.5",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -6774,11 +6044,7 @@
         },
         {
           "id": "197621519",
-          "topics": [
-            "LLM",
-            "Sumber Terbuka",
-            "Penalaan Instruksi"
-          ],
+          "topics": ["LLM", "Sumber Terbuka", "Penalaan Instruksi"],
           "title": "Laporan Teknis XGen-7B",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
@@ -6812,10 +6078,7 @@
       "articles": [
         {
           "id": "197613987",
-          "topics": [
-            "Gambar",
-            "LORA"
-          ],
+          "topics": ["Gambar", "LORA"],
           "title": "StyleAdapter: Model Bebas LoRA Satu-Laluan untuk Generasi Gambar Bergaya",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -6843,11 +6106,7 @@
         },
         {
           "id": "189576077",
-          "topics": [
-            "Gambar",
-            "Keselamatan",
-            "Difusi"
-          ],
+          "topics": ["Gambar", "Keselamatan", "Difusi"],
           "title": "FLIRT: Tim Merah dalam Konteks Umpan Balik",
           "slug": "flirt-feedback-loop-in-context-red-teaming",
           "authorName": "Prof. Otto Nomos",
@@ -6881,10 +6140,7 @@
       "articles": [
         {
           "id": "197613987",
-          "topics": [
-            "Gambar",
-            "LORA"
-          ],
+          "topics": ["Gambar", "LORA"],
           "title": "StyleAdapter: Model Bebas LoRA Satu-Laluan untuk Generasi Gambar Bergaya",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -6912,11 +6168,7 @@
         },
         {
           "id": "180927998",
-          "topics": [
-            "LLM",
-            "Komentar",
-            "LORA"
-          ],
+          "topics": ["LLM", "Komentar", "LORA"],
           "title": "LoraHub: Generalisasi Lintas-Tugas yang Efisien Melalui Komposisi Dinamis LoRA [Komentar]",
           "slug": "lorahub-efficient-cross-task-generalization-via-dynamic-lora-composition-commenta",
           "authorName": "Prof. Otto Nomos",
@@ -6944,12 +6196,7 @@
         },
         {
           "id": "189787086",
-          "topics": [
-            "LLM",
-            "Penyetelan Halus",
-            "LORA",
-            "Data"
-          ],
+          "topics": ["LLM", "Penyetelan Halus", "LORA", "Data"],
           "title": "Platypus: Cepat, Murah, dan Penguatan LLM yang Kuat",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -6983,11 +6230,7 @@
       "articles": [
         {
           "id": "197559951",
-          "topics": [
-            "LLM",
-            "Agen",
-            "Alat"
-          ],
+          "topics": ["LLM", "Agen", "Alat"],
           "title": "ModelScope-Agen: Membangun Sistem Agen yang Dapat Disesuaikan dengan Model Bahasa Besar Sumber Terbuka",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -7015,11 +6258,7 @@
         },
         {
           "id": "180928004",
-          "topics": [
-            "LLM",
-            "Alat",
-            "Komentar"
-          ],
+          "topics": ["LLM", "Alat", "Komentar"],
           "title": "ToolLLM: Memudahkan Model Bahasa Besar Untuk Menguasai 16000+ API Dunia Nyata [Komentar]",
           "slug": "toolllm-facilitating-large-language-models-to-master-16000-real-world-apis-commen",
           "authorName": "Prof. Otto Nomos",
@@ -7047,10 +6286,7 @@
         },
         {
           "id": "189989705",
-          "topics": [
-            "LLM",
-            "Alat"
-          ],
+          "topics": ["LLM", "Alat"],
           "title": "FacTool: Deteksi Faktualitas dalam AI Generatif -- Kerangka Kerja yang Diperkuat Alat untuk Skenario Multi-Tugas dan Multi-Domain",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -7084,11 +6320,7 @@
       "articles": [
         {
           "id": "180403467",
-          "topics": [
-            "LLM",
-            "RLHF",
-            "Ringkasan"
-          ],
+          "topics": ["LLM", "RLHF", "Ringkasan"],
           "title": "Masalah Terbuka dan Batasan Fundamental Pembelajaran Penguatan dari Umpan Balik Manusia [Ringkasan]",
           "slug": "open-problems-and-fundamental-limitations-of-reinforcement-learning-from-human-fe",
           "authorName": "Prof. Otto Nomos",
@@ -7116,10 +6348,7 @@
         },
         {
           "id": "180869081",
-          "topics": [
-            "LLM",
-            "Ringkasan"
-          ],
+          "topics": ["LLM", "Ringkasan"],
           "title": "Llama 2: Dasar Terbuka dan Model Chat yang Disempurnakan [Komentar]",
           "slug": "llama-2-open-foundation-and-fine-tuned-chat-models-commentary",
           "authorName": "Prof. Otto Nomos",
@@ -7147,10 +6376,7 @@
         },
         {
           "id": "179737945",
-          "topics": [
-            "LLM",
-            "Ringkasan"
-          ],
+          "topics": ["LLM", "Ringkasan"],
           "title": "Tantangan dan Aplikasi Model Bahasa Besar [Ringkasan]",
           "slug": "challenges-and-applications-of-large-language-models-summary",
           "authorName": "Prof. Otto Nomos",
@@ -7184,11 +6410,7 @@
       "articles": [
         {
           "id": "180927998",
-          "topics": [
-            "LLM",
-            "Komentar",
-            "LORA"
-          ],
+          "topics": ["LLM", "Komentar", "LORA"],
           "title": "LoraHub: Generalisasi Lintas-Tugas yang Efisien Melalui Komposisi Dinamis LoRA [Komentar]",
           "slug": "lorahub-efficient-cross-task-generalization-via-dynamic-lora-composition-commenta",
           "authorName": "Prof. Otto Nomos",
@@ -7216,11 +6438,7 @@
         },
         {
           "id": "180928004",
-          "topics": [
-            "LLM",
-            "Alat",
-            "Komentar"
-          ],
+          "topics": ["LLM", "Alat", "Komentar"],
           "title": "ToolLLM: Memudahkan Model Bahasa Besar Untuk Menguasai 16000+ API Dunia Nyata [Komentar]",
           "slug": "toolllm-facilitating-large-language-models-to-master-16000-real-world-apis-commen",
           "authorName": "Prof. Otto Nomos",
@@ -7254,11 +6472,7 @@
       "articles": [
         {
           "id": "189845558",
-          "topics": [
-            "LLM",
-            "Kompresi",
-            "Survei"
-          ],
+          "topics": ["LLM", "Kompresi", "Survei"],
           "title": "Survei tentang Kompresi Model untuk Model Bahasa Besar",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -7286,12 +6500,7 @@
         },
         {
           "id": "189577629",
-          "topics": [
-            "LLM",
-            "Penyelarasan",
-            "Survei",
-            "Evaluasi"
-          ],
+          "topics": ["LLM", "Penyelarasan", "Survei", "Evaluasi"],
           "title": "LLM yang Dapat Dipercaya: Survei dan Pedoman untuk Mengevaluasi Penyelarasan Model Bahasa Besar",
           "slug": "trustworthy-llms-a-survey-and-guideline-for-evaluating-large-language-models-alig",
           "authorName": "Prof. Otto Nomos",
@@ -7325,11 +6534,7 @@
       "articles": [
         {
           "id": "189845521",
-          "topics": [
-            "LLM",
-            "Pelatihan",
-            "Penyelarasan"
-          ],
+          "topics": ["LLM", "Pelatihan", "Penyelarasan"],
           "title": "Dari Data Pra-pelatihan ke Model Bahasa hingga Tugas Hilir: Melacak Jejak Bias Politik yang Mengarah ke Model NLP yang Tidak Adil",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -7357,12 +6562,7 @@
         },
         {
           "id": "189577629",
-          "topics": [
-            "LLM",
-            "Penyelarasan",
-            "Survei",
-            "Evaluasi"
-          ],
+          "topics": ["LLM", "Penyelarasan", "Survei", "Evaluasi"],
           "title": "LLM yang Dapat Dipercaya: Survei dan Pedoman untuk Mengevaluasi Penyelarasan Model Bahasa Besar",
           "slug": "trustworthy-llms-a-survey-and-guideline-for-evaluating-large-language-models-alig",
           "authorName": "Prof. Otto Nomos",
@@ -7390,10 +6590,7 @@
         },
         {
           "id": "189576058",
-          "topics": [
-            "LLM",
-            "Penyelarasan"
-          ],
+          "topics": ["LLM", "Penyelarasan"],
           "title": "Data sintetis sederhana mengurangi sikap penjilat dalam model bahasa besar",
           "slug": "simple-synthetic-data-reduces-sycophancy-in-large-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -7427,11 +6624,7 @@
       "articles": [
         {
           "id": "189787190",
-          "topics": [
-            "LLM",
-            "Evaluasi",
-            "Iklim"
-          ],
+          "topics": ["LLM", "Evaluasi", "Iklim"],
           "title": "WeatherBench 2: Tolok ukur untuk generasi berikutnya dari model cuaca global berbasis data",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -7465,10 +6658,7 @@
       "articles": [
         {
           "id": "189787150",
-          "topics": [
-            "LLM",
-            "Personalisasi"
-          ],
+          "topics": ["LLM", "Personalisasi"],
           "title": "Mengajarkan LLM untuk Personalisasi -- Pendekatan yang Terinspirasi oleh Pendidikan Menulis",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -7502,10 +6692,7 @@
       "articles": [
         {
           "id": "189577812",
-          "topics": [
-            "Difusi",
-            "Ilmu"
-          ],
+          "topics": ["Difusi", "Ilmu"],
           "title": "PDE-Refiner: Mencapai Peluncuran Jangka Panjang yang Akurat dengan Pemecah PDE Neural",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -7533,11 +6720,7 @@
         },
         {
           "id": "189576077",
-          "topics": [
-            "Gambar",
-            "Keselamatan",
-            "Difusi"
-          ],
+          "topics": ["Gambar", "Keselamatan", "Difusi"],
           "title": "FLIRT: Umpan Balik Loop In-context Tim Merah",
           "slug": "flirt-feedback-loop-in-context-red-teaming",
           "authorName": "Prof. Otto Nomos",
@@ -7571,10 +6754,7 @@
       "articles": [
         {
           "id": "189576091",
-          "topics": [
-            "LLM",
-            "Inferensi"
-          ],
+          "topics": ["LLM", "Inferensi"],
           "title": "Mempercepat Inferensi LLM dengan Dekoding Spekulatif Bertahap",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -7608,11 +6788,7 @@
       "articles": [
         {
           "id": "189576077",
-          "topics": [
-            "Gambar",
-            "Keamanan",
-            "Difusi"
-          ],
+          "topics": ["Gambar", "Keamanan", "Difusi"],
           "title": "FLIRT: Umpan Balik Loop In-context Tim Merah",
           "slug": "flirt-feedback-loop-in-context-red-teaming",
           "authorName": "Prof. Otto Nomos",

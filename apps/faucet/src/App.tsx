@@ -1,10 +1,10 @@
-import { FaucetForm } from "./components/faucet-form";
-import { useUsdtBalance } from "./hooks/use-usdt-balance";
-import { Button } from "./components/ui/button";
-import { ConnectButton } from "@rainbow-me/rainbowkit";
+import { ConnectButton } from '@rainbow-me/rainbowkit'
+import { FaucetForm } from './components/faucet-form'
+import { Button } from './components/ui/button'
+import { useUsdtBalance } from './hooks/use-usdt-balance'
 
 export default function Component() {
-  const balance = useUsdtBalance();
+  const balance = useUsdtBalance()
   return (
     <div className="min-h-screen bg-[#f0f0f0]">
       <nav className="flex items-center justify-between p-6 bg-white shadow-md">
@@ -28,5 +28,5 @@ export default function Component() {
         </div>
       </main>
     </div>
-  );
+  )
 }

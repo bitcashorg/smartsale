@@ -2,10 +2,7 @@
   "relatedBlogs": [
     {
       "id": "167101094",
-      "topics": [
-        "入门",
-        "代币经济学"
-      ],
+      "topics": ["入门", "代币经济学"],
       "title": "代币经济学101：释放加密货币的力量！",
       "slug": "tokenomics-101-unleashing-the-power-of-cryptocurrency",
       "authorName": "Crypto Clairity",
@@ -24,10 +21,7 @@
     },
     {
       "id": "166981063",
-      "topics": [
-        "入门",
-        "DAO"
-      ],
+      "topics": ["入门", "DAO"],
       "title": "未来已来：去中心化自治组织（DAO）的崛起",
       "slug": "the-future-is-here-the-rise-of-decentralized-autonomous-organizations-daos",
       "authorName": "Crypto Clairity",
@@ -46,10 +40,7 @@
     },
     {
       "id": "165742753",
-      "topics": [
-        "入门",
-        "支付"
-      ],
+      "topics": ["入门", "支付"],
       "title": "稳定币：加密货币交易和支付的未来",
       "slug": "stablecoins-the-future-of-cryptocurrency-transactions-and-payments",
       "authorName": "Crypto Clairity",
@@ -68,10 +59,7 @@
     },
     {
       "id": "165685913",
-      "topics": [
-        "DeFi",
-        "入门"
-      ],
+      "topics": ["DeFi", "入门"],
       "title": "去中心化你的金融：DeFi世界简介",
       "slug": "decentralize-your-finance-an-introduction-to-the-world-of-defi",
       "authorName": "Crypto Clairity",
@@ -90,10 +78,7 @@
     },
     {
       "id": "165685908",
-      "topics": [
-        "入门",
-        "募资"
-      ],
+      "topics": ["入门", "募资"],
       "title": "颠覆现状：加密货币如何革新募资和众筹",
       "slug": "disrupt-the-status-quo-how-cryptocurrency-is-revolutionizing-fundraising-and-crow",
       "authorName": "Crypto Clairity",
@@ -112,10 +97,7 @@
     },
     {
       "id": "165673014",
-      "topics": [
-        "入门",
-        "投资"
-      ],
+      "topics": ["入门", "投资"],
       "title": "加密投资101：如何使用加密货币进行投资和资产管理",
       "slug": "crypto-investing-101-how-to-use-cryptocurrency-for-investment-and-asset-managemen",
       "authorName": "Crypto Clairity",
@@ -135,10 +117,7 @@
   ],
   "blogContent": {
     "id": "165744328",
-    "topics": [
-      "入门",
-      "操作指南"
-    ],
+    "topics": ["入门", "操作指南"],
     "title": "领先一步：在加密货币世界保持信息灵通和学习的指南",
     "slug": "stay-ahead-of-the-game-a-guide-to-staying-informed-and-educated-in-the-world-of-c",
     "authorName": "Crypto Clairity",
@@ -447,8 +426,5 @@
       }
     }
   },
-  "topics": [
-    "入门",
-    "操作指南"
-  ]
+  "topics": ["入门", "操作指南"]
 }

@@ -6,10 +6,7 @@
       "articles": [
         {
           "id": "165365457",
-          "topics": [
-            "Memulai",
-            "Pembayaran"
-          ],
+          "topics": ["Memulai", "Pembayaran"],
           "title": "Mempermudah Pembelian Online dengan Bitcoin: Panduan Menggunakan Bitcoin untuk Transaksi",
           "slug": "streamlining-online-purchases-with-bitcoin-a-guide-to-using-bitcoin-for-transacti",
           "authorName": "Maxi Millie",
@@ -37,11 +34,7 @@
         },
         {
           "id": "165362142",
-          "topics": [
-            "Memulai",
-            "Bukti-Kerja",
-            "Penambangan"
-          ],
+          "topics": ["Memulai", "Bukti-Kerja", "Penambangan"],
           "title": "Mengungkap Kekuatan Penambangan Bitcoin: Pengenalan terhadap Algoritma Bukti-Kerja",
           "slug": "unlocking-the-power-of-bitcoin-mining-an-introduction-to-proof-of-work-algorithms",
           "authorName": "Maxi Millie",
@@ -69,10 +62,7 @@
         },
         {
           "id": "165340146",
-          "topics": [
-            "Memulai",
-            "Bukti-dari-Kerja"
-          ],
+          "topics": ["Memulai", "Bukti-dari-Kerja"],
           "title": "Keamanan Ekonomi Bitcoin: Bagaimana Bukti-dari-Kerja Memungkinkan Jaringan yang Aman dan Terjamin",
           "slug": "the-economic-security-of-bitcoin-how-proof-of-work-enables-a-safe-and-secure-netw",
           "authorName": "Maxi Millie",
@@ -100,10 +90,7 @@
         },
         {
           "id": "165340050",
-          "topics": [
-            "Getting Started",
-            "Legal"
-          ],
+          "topics": ["Getting Started", "Legal"],
           "title": "Navigating the Legal and Regulatory Landscape of Bitcoin: Understanding the Rules and Opportunities",
           "slug": "navigating-the-legal-and-regulatory-landscape-of-bitcoin-understanding-the-rules",
           "authorName": "Maxi Millie",
@@ -131,10 +118,7 @@
         },
         {
           "id": "165337859",
-          "topics": [
-            "Getting Started",
-            "Security"
-          ],
+          "topics": ["Getting Started", "Security"],
           "title": "The Future of Bitcoin Storage: An Introduction to Bitcoin Wallets and Innovative Storage Solutions",
           "slug": "the-future-of-bitcoin-storage-an-introduction-to-bitcoin-wallets-and-innovative-s",
           "authorName": "Maxi Millie",
@@ -162,11 +146,9 @@
         },
         {
           "id": "165005184",
-          "topics": [
-            "Getting Started"
-          ],
-          "title": "The Art of Researching and Evaluating Bitcoin Exchanges: A Guide for Investors",
-          "slug": "the-art-of-researching-and-evaluating-bitcoin-exchanges-a-guide-for-investors",
+          "topics": ["Getting Started"],
+          "title": "The Art of Researching and Evaluating Bitcoin Exchanges: A Guide for Contributors",
+          "slug": "the-art-of-researching-and-evaluating-bitcoin-exchanges-a-guide-for-contributors",
           "authorName": "Maxi Millie",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
@@ -192,10 +174,7 @@
         },
         {
           "id": "164973196",
-          "topics": [
-            "Getting Started",
-            "History"
-          ],
+          "topics": ["Getting Started", "History"],
           "title": "The History and Evolution of Bitcoin",
           "slug": "the-history-and-evolution-of-bitcoin",
           "authorName": "Maxi Millie",
@@ -223,10 +202,7 @@
         },
         {
           "id": "165004875",
-          "topics": [
-            "Getting Started",
-            "Security"
-          ],
+          "topics": ["Getting Started", "Security"],
           "title": "How to Keep Your Bitcoins Safe in the Digital Age",
           "slug": "how-to-keep-your-bitcoins-safe-in-the-digital-age",
           "authorName": "Maxi Millie",
@@ -254,10 +230,7 @@
         },
         {
           "id": "165005107",
-          "topics": [
-            "Getting Started",
-            "Exchange"
-          ],
+          "topics": ["Getting Started", "Exchange"],
           "title": "The Simplified Guide to Buying and Selling Bitcoins",
           "slug": "the-simplified-guide-to-buying-and-selling-bitcoins",
           "authorName": "Maxi Millie",
@@ -285,9 +258,7 @@
         },
         {
           "id": "164904960",
-          "topics": [
-            "Getting Started"
-          ],
+          "topics": ["Getting Started"],
           "title": "Think Differently About Bitcoin: The Future of Decentralized Currency",
           "slug": "think-differently-about-bitcoin-the-future-of-decentralized-currency",
           "authorName": "Maxi Millie",
@@ -321,10 +292,7 @@
       "articles": [
         {
           "id": "165365457",
-          "topics": [
-            "Memulai",
-            "Pembayaran"
-          ],
+          "topics": ["Memulai", "Pembayaran"],
           "title": "Mempermudah Pembelian Online dengan Bitcoin: Panduan Menggunakan Bitcoin untuk Transaksi",
           "slug": "streamlining-online-purchases-with-bitcoin-a-guide-to-using-bitcoin-for-transacti",
           "authorName": "Maxi Millie",
@@ -358,11 +326,7 @@
       "articles": [
         {
           "id": "165362142",
-          "topics": [
-            "Memulai",
-            "Bukti-Kerja",
-            "Penambangan"
-          ],
+          "topics": ["Memulai", "Bukti-Kerja", "Penambangan"],
           "title": "Mengungkap Kekuatan Penambangan Bitcoin: Pengenalan terhadap Algoritma Bukti-Kerja",
           "slug": "unlocking-the-power-of-bitcoin-mining-an-introduction-to-proof-of-work-algorithms",
           "authorName": "Maxi Millie",
@@ -390,10 +354,7 @@
         },
         {
           "id": "165340146",
-          "topics": [
-            "Memulai",
-            "Bukti-Kerja"
-          ],
+          "topics": ["Memulai", "Bukti-Kerja"],
           "title": "Keamanan Ekonomi Bitcoin: Bagaimana Bukti-Kerja Menjamin Jaringan yang Aman dan Terlindungi",
           "slug": "the-economic-security-of-bitcoin-how-proof-of-work-enables-a-safe-and-secure-netw",
           "authorName": "Maxi Millie",
@@ -427,11 +388,7 @@
       "articles": [
         {
           "id": "165362142",
-          "topics": [
-            "Memulai",
-            "Bukti-Kerja",
-            "Penambangan"
-          ],
+          "topics": ["Memulai", "Bukti-Kerja", "Penambangan"],
           "title": "Mengungkap Kekuatan Penambangan Bitcoin: Pengenalan terhadap Algoritma Bukti-Kerja",
           "slug": "unlocking-the-power-of-bitcoin-mining-an-introduction-to-proof-of-work-algorithms",
           "authorName": "Maxi Millie",
@@ -465,10 +422,7 @@
       "articles": [
         {
           "id": "165340050",
-          "topics": [
-            "Memulai",
-            "Hukum"
-          ],
+          "topics": ["Memulai", "Hukum"],
           "title": "Menavigasi Lanskap Hukum dan Regulasi Bitcoin: Memahami Aturan dan Peluang",
           "slug": "navigating-the-legal-and-regulatory-landscape-of-bitcoin-understanding-the-rules",
           "authorName": "Maxi Millie",
@@ -502,10 +456,7 @@
       "articles": [
         {
           "id": "165337859",
-          "topics": [
-            "Memulai",
-            "Keamanan"
-          ],
+          "topics": ["Memulai", "Keamanan"],
           "title": "Masa Depan Penyimpanan Bitcoin: Pengenalan terhadap Dompet Bitcoin dan Solusi Penyimpanan Inovatif",
           "slug": "the-future-of-bitcoin-storage-an-introduction-to-bitcoin-wallets-and-innovative-s",
           "authorName": "Maxi Millie",
@@ -533,10 +484,7 @@
         },
         {
           "id": "165004875",
-          "topics": [
-            "Memulai",
-            "Keamanan"
-          ],
+          "topics": ["Memulai", "Keamanan"],
           "title": "Cara Menjaga Bitcoin Anda Aman di Era Digital",
           "slug": "how-to-keep-your-bitcoins-safe-in-the-digital-age",
           "authorName": "Maxi Millie",
@@ -570,10 +518,7 @@
       "articles": [
         {
           "id": "164973196",
-          "topics": [
-            "Memulai",
-            "Sejarah"
-          ],
+          "topics": ["Memulai", "Sejarah"],
           "title": "Sejarah dan Evolusi Bitcoin",
           "slug": "the-history-and-evolution-of-bitcoin",
           "authorName": "Maxi Millie",
@@ -607,10 +552,7 @@
       "articles": [
         {
           "id": "165005107",
-          "topics": [
-            "Memulai",
-            "Pertukaran"
-          ],
+          "topics": ["Memulai", "Pertukaran"],
           "title": "Panduan Sederhana untuk Membeli dan Menjual Bitcoin",
           "slug": "the-simplified-guide-to-buying-and-selling-bitcoins",
           "authorName": "Maxi Millie",

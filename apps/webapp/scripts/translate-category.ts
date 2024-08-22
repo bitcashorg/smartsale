@@ -1,12 +1,12 @@
-import { Lang, locales } from '@/dictionaries/locales'
-import { BlogArticleRecord } from '@/services/datocms'
+import { type Lang, locales } from '@/dictionaries/locales'
 import { anthropicTranslate } from '@/services/anthropic'
+import type { BlogArticleRecord } from '@/services/datocms'
 
+import type { Dirent } from 'fs'
+import * as path from 'path'
+import { promiseAllWithConcurrencyLimit } from '@/lib/utils'
 import * as fs from 'fs/promises'
 import _ from 'lodash'
-import * as path from 'path'
-import { Dirent } from 'fs'
-import { promiseAllWithConcurrencyLimit } from '@/lib/utils'
 
 async function copyJsonFiles(lang: Lang): Promise<void> {
   console.log('Copying lang', lang)
@@ -32,7 +32,7 @@ async function processFiles(
   files: Dirent[],
   sourceDir: string,
   targetDir: string,
-  lang: Lang
+  lang: Lang,
 ): Promise<void> {
   // const fileNames = files.map(file => file.name)
   // console.log('🧑🏻‍💻 process files', fileNames, sourceDir, targetDir, lang)
@@ -47,7 +47,7 @@ async function processDirectory(
   file: Dirent,
   sourceDir: string,
   targetDir: string,
-  lang: Lang
+  lang: Lang,
 ): Promise<void> {
   const subDir = path.join(targetDir, file.name)
   console.log('🧑🏻‍💻 Processing directory', subDir)
@@ -73,7 +73,7 @@ async function processFile(
   sourceDir: string,
   targetDir: string,
   directoryName: string,
-  lang: Lang
+  lang: Lang,
 ): Promise<void> {
   const sourcePath = path.join(sourceDir, directoryName, fileName)
   const targetPath = path.join(targetDir, directoryName, fileName)
@@ -83,20 +83,20 @@ async function processFile(
 
   try {
     const englishVersion: BlogPageIndexProps = JSON.parse(
-      await fs.readFile(sourcePath, 'utf8')
+      await fs.readFile(sourcePath, 'utf8'),
     )
     const optimized = extractDataForTranslation(englishVersion)
 
-    let translatedContent: BlogPageIndexProps = {
+    const translatedContent: BlogPageIndexProps = {
       sections: [] as Section[],
-      pageSeo: {}
+      pageSeo: {},
     }
 
     // translate page seo
     if (optimized.pageSeoDescription || optimized.pageSeoTitle) {
       const seoTranslation = await anthropicTranslate(
         JSON.stringify(_.pick(optimized, 'pageSeoDescription', 'pageSeoTitle')),
-        lang
+        lang,
       )
       if (!seoTranslation) throw new Error('❌ seoTranslation not found')
 
@@ -108,7 +108,7 @@ async function processFile(
         translatedContent.pageSeo = {
           ...englishVersion.pageSeo,
           title: textTranslated.pageSeoTitle,
-          description: textTranslated.pageSeoDescription
+          description: textTranslated.pageSeoDescription,
         }
       } else {
         console.log('ERROR TRANSLATING PAGE SEO')
@@ -120,8 +120,8 @@ async function processFile(
     // translate section names
     let translatedSectionNames: string[] = []
     const sectionTranslation = await anthropicTranslate(
-      JSON.stringify(englishVersion.sections.map(s => s.name)),
-      lang
+      JSON.stringify(englishVersion.sections.map((s) => s.name)),
+      lang,
     )
     if (!sectionTranslation) throw new Error('❌ sectionTranslation not found')
     if (
@@ -130,7 +130,7 @@ async function processFile(
     ) {
       // console.log('🧑🏻‍💻 Section names translated!')
       translatedSectionNames = sectionTranslation.translation.map(
-        (name: string) => name.trim()
+        (name: string) => name.trim(),
       )
       // console.log('translatedSectionNames', translatedSectionNames)
     } else {
@@ -143,17 +143,18 @@ async function processFile(
         const newSection: Section = {
           ...section,
           name: translatedSectionNames[index],
-          articles: []
+          articles: [],
         }
         console.log(`🧑🏻‍💻 Translting section ${newSection.name}`)
 
         const _articles =
-          optimized.sections.find(s => s.name === section.name)?.articles || []
-        const articleOpenAICalls = _articles.map(article => async () => {
+          optimized.sections.find((s) => s.name === section.name)?.articles ||
+          []
+        const articleOpenAICalls = _articles.map((article) => async () => {
           console.log(`🧑🏻‍💻 Translting ${article.title}`)
           const articleTranslation = await anthropicTranslate(
             JSON.stringify(article),
-            lang
+            lang,
           )
           if (!articleTranslation)
             throw new Error('❌ articleTranslation not found')
@@ -170,16 +171,16 @@ async function processFile(
         // console.log('🧑🏻‍💻 Articles translating!')
         newSection.articles = await promiseAllWithConcurrencyLimit(
           articleOpenAICalls,
-          1
+          1,
         )
         // console.log('🧑🏻‍💻 Articles translated!')
         return newSection
-      }
+      },
     )
 
     translatedContent.sections = await promiseAllWithConcurrencyLimit(
       sectionActions,
-      1
+      1,
     )
 
     await fs.writeFile(
@@ -193,13 +194,13 @@ async function processFile(
             name: translatedSectionNames[index],
             articles: section.articles.map((article, articleIndex) => ({
               ...article,
-              ...translatedContent.sections[index]?.articles[articleIndex]
-            }))
-          }))
+              ...translatedContent.sections[index]?.articles[articleIndex],
+            })),
+          })),
         },
         null,
-        2
-      )
+        2,
+      ),
     )
     console.log('✅ New Translation completed', targetPath)
   } catch (error) {
@@ -220,9 +221,9 @@ type BlogPageIndexProps = {
 async function processLocale(): Promise<void> {
   await promiseAllWithConcurrencyLimit(
     locales
-      .filter(lang => lang !== 'en')
-      .map(lang => () => copyJsonFiles(lang)),
-    1
+      .filter((lang) => lang !== 'en')
+      .map((lang) => () => copyJsonFiles(lang)),
+    1,
   )
 }
 
@@ -245,13 +246,13 @@ function extractDataForTranslation(data: BlogPageIndexProps): ExtractedData {
   return {
     pageSeoTitle: data.pageSeo?.title || '',
     pageSeoDescription: data.pageSeo?.description || '',
-    sections: data.sections.map(section => ({
+    sections: data.sections.map((section) => ({
       name: section.name,
-      articles: section.articles.map(article => ({
+      articles: section.articles.map((article) => ({
         topics: article.topics,
         title: article.title,
-        description: article.description
-      }))
-    }))
+        description: article.description,
+      })),
+    })),
   }
 }

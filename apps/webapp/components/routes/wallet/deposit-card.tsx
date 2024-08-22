@@ -1,6 +1,5 @@
 'use client'
 
-import { useSigningRequest } from '@/hooks/use-signing-request'
 import { Button, buttonVariants } from '@/components/ui/button'
 import {
   Card,
@@ -8,7 +7,7 @@ import {
   CardDescription,
   CardFooter,
   CardHeader,
-  CardTitle
+  CardTitle,
 } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
 import {
@@ -16,19 +15,20 @@ import {
   SelectContent,
   SelectItem,
   SelectTrigger,
-  SelectValue
+  SelectValue,
 } from '@/components/ui/select'
+import { useSigningRequest } from '@/hooks/use-signing-request'
+import { appConfig } from '@/lib/config'
 import {
   genBitusdDepositSigningRequest,
-  genUsdtDepositSigningRequest
+  genUsdtDepositSigningRequest,
 } from '@/lib/eos'
-import { useState, useMemo } from 'react'
-import { EVMTokenContractData } from 'app-contracts'
-import { parseUnits } from 'viem'
-import { useAccount, useSwitchChain, useWriteContract, useChainId } from 'wagmi'
-import { appConfig } from '@/lib/config'
 import { cn } from '@/lib/utils'
+import type { EVMTokenContractData } from 'app-contracts'
+import { useMemo, useState } from 'react'
 import toast from 'react-hot-toast'
+import { parseUnits } from 'viem'
+import { useAccount, useChainId, useSwitchChain, useWriteContract } from 'wagmi'
 
 export function DepositCard() {
   const { address } = useAccount()
@@ -42,16 +42,16 @@ export function DepositCard() {
 
   const availableChains = useMemo(() => {
     return appConfig.stables
-      .filter(token => token.symbol === selectedToken)
-      .map(token => token.chainName)
+      .filter((token) => token.symbol === selectedToken)
+      .map((token) => token.chainName)
   }, [selectedToken])
 
   const deposit = async () => {
     if (!address) return toast.error('Make sure your wallet is connected.')
     if (!amount) return toast.error('Amount is undefined')
     const tokenData = appConfig.stables.find(
-      token =>
-        token.symbol === selectedToken && token.chainName === selectedChain
+      (token) =>
+        token.symbol === selectedToken && token.chainName === selectedChain,
     )
     if (!tokenData) return toast.error('Token data not found')
 
@@ -67,9 +67,9 @@ export function DepositCard() {
           functionName: 'transfer',
           args: [
             '0x2C9DAAb3F463d6c6D248aCbeaAEe98687936374a', // dev only
-            parseUnits(amount.toString(), evmToken.decimals)
+            parseUnits(amount.toString(), evmToken.decimals),
           ],
-          chainId: evmToken.chainId
+          chainId: evmToken.chainId,
         })
       }
     } else {
@@ -100,7 +100,7 @@ export function DepositCard() {
                 name="deposit"
                 placeholder="0.00"
                 value={amount}
-                onChange={e => setAmount(parseInt(e.target.value))}
+                onChange={(e) => setAmount(Number.parseInt(e.target.value))}
               />
             </div>
 
@@ -109,7 +109,7 @@ export function DepositCard() {
                 <SelectValue placeholder={`USDT`} />
               </SelectTrigger>
               <SelectContent position="popper">
-                {['USDT', 'USDC'].map(token => (
+                {['USDT', 'USDC'].map((token) => (
                   <SelectItem key={token} value={token}>
                     {token}
                   </SelectItem>
@@ -123,7 +123,7 @@ export function DepositCard() {
                   <SelectValue placeholder="Select Network" />
                 </SelectTrigger>
                 <SelectContent position="popper">
-                  {availableChains.map(chain => (
+                  {availableChains.map((chain) => (
                     <SelectItem key={chain} value={chain}>
                       {chain}
                     </SelectItem>
@@ -139,9 +139,9 @@ export function DepositCard() {
           className={cn(
             buttonVariants({
               variant: 'outline',
-              radius: 'full'
+              radius: 'full',
             }),
-            'h-auto w-full whitespace-normal border border-solid border-accent-secondary bg-background px-10 py-2'
+            'h-auto w-full whitespace-normal border border-solid border-accent-secondary bg-background px-10 py-2',
           )}
           onClick={deposit}
           disabled

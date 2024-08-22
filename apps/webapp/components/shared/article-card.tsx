@@ -1,21 +1,21 @@
-import { readingTime } from '@/lib/blog'
-import Link from 'next/link'
-import { BlogArticleRecord } from '@/services/datocms'
-import Image from 'next/image'
 import { Card, CardContent, CardFooter } from '@/components/ui/card'
+import { readingTime } from '@/lib/blog'
+import type { BlogArticleRecord } from '@/services/datocms'
 // import { isMobile } from 'react-device-detect'
-import { LangProp } from '@/types/routing.type'
+import type { LangProp } from '@/types/routing.type'
+import Image from 'next/image'
+import Link from 'next/link'
 import { LazyImage } from './lazy-image'
 
 export const ArticleCard = ({
   post,
   sectionSlug,
   lang,
-  meta = false
+  meta = false,
 }: ArticleCardProps) => {
   const title =
     post.title ||
-    post.slug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase())
+    post.slug.replace(/-/g, ' ').replace(/\b\w/g, (l) => l.toUpperCase())
 
   // console.log('post', post)
   return (
@@ -43,8 +43,8 @@ export const ArticleCard = ({
           </figure>
         </div>
         <CardContent className="flex-grow px-3">
-        <p className="pt-3 font-semibold leading-tight text-left mb-overflow-hidden truncate_text truncate_text--3-lines text-md">
-        {title}
+          <p className="pt-3 font-semibold leading-tight text-left mb-overflow-hidden truncate_text truncate_text--3-lines text-md">
+            {title}
           </p>
         </CardContent>
       </Link>
@@ -68,7 +68,7 @@ export const ArticleCard = ({
               {new Date(post._publishedAt).toLocaleDateString(lang, {
                 month: 'short',
                 day: '2-digit',
-                year: 'numeric'
+                year: 'numeric',
               })}{' '}
               ∙ {readingTime(post)} min read
             </span>

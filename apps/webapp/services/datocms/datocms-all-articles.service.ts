@@ -1,5 +1,5 @@
 import { getCMSSdk } from '@/services/datocms/graphql/cms'
-import { SeoField } from '@/services/datocms/graphql/generated/cms'
+import type { SeoField } from '@/services/datocms/graphql/generated/cms'
 
 export async function getAllArticles() {
   try {
@@ -11,7 +11,7 @@ export async function getAllArticles() {
             __args: {
               orderBy: ['_publishedAt_DESC'],
               locale: 'en',
-              fallbackLocales: ['en']
+              fallbackLocales: ['en'],
             },
             id: true,
             topics: true,
@@ -31,17 +31,17 @@ export async function getAllArticles() {
                 height: true,
                 title: true,
                 alt: true,
-                url: true
-              }
-            }
-          }
-        ])
-      )
+                url: true,
+              },
+            },
+          },
+        ]),
+      ),
     )
 
     const articles = Object.entries(data).map(([key, value]) => ({
       category: getCategoryKey(key) || 'notfoundcategory',
-      articles: value as BlogArticleRecord[]
+      articles: value as BlogArticleRecord[],
     }))
 
     // Convert data to a string format
@@ -85,7 +85,7 @@ const categoryMap: Record<string, string> = {
   ai: 'allBlogAis',
   news: 'allBlogNews',
   bitcash: 'allBlogBitcashes',
-  'ai-research': 'allResearchAis'
+  'ai-research': 'allResearchAis',
 }
 
 function getCategoryKey(value: string) {

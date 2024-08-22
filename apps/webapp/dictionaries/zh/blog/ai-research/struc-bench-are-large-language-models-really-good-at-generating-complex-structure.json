@@ -2,13 +2,7 @@
   "relatedBlogs": [
     {
       "id": "198277124",
-      "topics": [
-        "大型语言模型",
-        "金融",
-        "医疗",
-        "法律",
-        "提示工程"
-      ],
+      "topics": ["大型语言模型", "金融", "医疗", "法律", "提示工程"],
       "title": "通过阅读理解适应大型语言模型",
       "slug": "adapting-large-language-models-via-reading-comprehension",
       "authorName": "Prof. Otto Nomos",
@@ -27,10 +21,7 @@
     },
     {
       "id": "198277342",
-      "topics": [
-        "大型语言模型",
-        "多语言"
-      ],
+      "topics": ["大型语言模型", "多语言"],
       "title": "OpenBA:一个从头预训练的开源150亿参数双语非对称seq2seq模型",
       "slug": "openba-an-open-sourced-15b-bilingual-asymmetric-seq2seq-model-pre-trained-from-sc",
       "authorName": "Prof. Otto Nomos",
@@ -49,10 +40,7 @@
     },
     {
       "id": "198277117",
-      "topics": [
-        "大型语言模型",
-        "检索"
-      ],
+      "topics": ["大型语言模型", "检索"],
       "title": "PDFTriage:针对长结构化文档的问答系统",
       "slug": "pdftriage-question-answering-over-long-structured-documents",
       "authorName": "Prof. Otto Nomos",
@@ -71,10 +59,7 @@
     },
     {
       "id": "198277138",
-      "topics": [
-        "大型语言模型",
-        "微调"
-      ],
+      "topics": ["大型语言模型", "微调"],
       "title": "Sorted LLaMA:通过排序微调(SoFT)释放大型语言模型中间层的动态推理潜力",
       "slug": "sorted-llama-unlocking-the-potential-of-intermediate-layers-of-large-language-mod",
       "authorName": "Prof. Otto Nomos",
@@ -93,11 +78,7 @@
     },
     {
       "id": "198277150",
-      "topics": [
-        "大型语言模型",
-        "指令调优",
-        "多模态"
-      ],
+      "topics": ["大型语言模型", "指令调优", "多模态"],
       "title": "指令调优大型多模态模型扩展的实证研究",
       "slug": "an-empirical-study-of-scaling-instruct-tuned-large-multimodal-models",
       "authorName": "Prof. Otto Nomos",
@@ -116,11 +97,7 @@
     },
     {
       "id": "198277217",
-      "topics": [
-        "大型语言模型",
-        "隐私",
-        "边缘计算"
-      ],
+      "topics": ["大型语言模型", "隐私", "边缘计算"],
       "title": "利用大型语言模型从隐私保护掩码中恢复",
       "slug": "recovering-from-privacy-preserving-masking-with-large-language-models",
       "authorName": "Prof. Otto Nomos",
@@ -139,10 +116,7 @@
     },
     {
       "id": "198277239",
-      "topics": [
-        "大型语言模型",
-        "聊天"
-      ],
+      "topics": ["大型语言模型", "聊天"],
       "title": "S3-DST:大型语言模型时代的结构化开放域对话分割和状态跟踪",
       "slug": "s3-dst-structured-open-domain-dialogue-segmentation-and-state-tracking-in-the-era",
       "authorName": "Prof. Otto Nomos",
@@ -161,10 +135,7 @@
     },
     {
       "id": "198277253",
-      "topics": [
-        "大型语言模型",
-        "音频"
-      ],
+      "topics": ["大型语言模型", "音频"],
       "title": "利用大型语言模型增强口语理解的文本",
       "slug": "augmenting-text-for-spoken-language-understanding-with-large-language-models",
       "authorName": "Prof. Otto Nomos",
@@ -183,10 +154,7 @@
     },
     {
       "id": "198277277",
-      "topics": [
-        "大型语言模型",
-        "压缩"
-      ],
+      "topics": ["大型语言模型", "压缩"],
       "title": "语言建模即压缩",
       "slug": "language-modeling-is-compression",
       "authorName": "Prof. Otto Nomos",
@@ -205,10 +173,7 @@
     },
     {
       "id": "198277345",
-      "topics": [
-        "大型语言模型",
-        "多语言"
-      ],
+      "topics": ["大型语言模型", "多语言"],
       "title": "百川2:开放大规模语言模型",
       "slug": "baichuan-2-open-large-scale-language-models",
       "authorName": "Prof. Otto Nomos",
@@ -227,10 +192,7 @@
     },
     {
       "id": "198277446",
-      "topics": [
-        "大型语言模型",
-        "幻觉"
-      ],
+      "topics": ["大型语言模型", "幻觉"],
       "title": "验证链减少大型语言模型的幻觉",
       "slug": "chain-of-verification-reduces-hallucination-in-large-language-models",
       "authorName": "Prof. Otto Nomos",
@@ -249,12 +211,7 @@
     },
     {
       "id": "198277458",
-      "topics": [
-        "大型语言模型",
-        "幻觉",
-        "实体",
-        "结构化数据"
-      ],
+      "topics": ["大型语言模型", "幻觉", "实体", "结构化数据"],
       "title": "LMDX:基于语言模型的文档信息提取和定位",
       "slug": "lmdx-language-model-based-document-information-extraction-and-localization",
       "authorName": "Prof. Otto Nomos",
@@ -273,10 +230,7 @@
     },
     {
       "id": "198277209",
-      "topics": [
-        "大型语言模型",
-        "数据"
-      ],
+      "topics": ["大型语言模型", "数据"],
       "title": "SlimPajama-DC:理解大型语言模型训练的数据组合",
       "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
       "authorName": "Prof. Otto Nomos",
@@ -295,10 +249,7 @@
     },
     {
       "id": "198277109",
-      "topics": [
-        "大型语言模型",
-        "推理"
-      ],
+      "topics": ["大型语言模型", "推理"],
       "title": "对比解码提高大型语言模型的推理能力",
       "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
       "authorName": "Prof. Otto Nomos",
@@ -317,11 +268,7 @@
     },
     {
       "id": "198277099",
-      "topics": [
-        "大型语言模型",
-        "多语言",
-        "数据"
-      ],
+      "topics": ["大型语言模型", "多语言", "数据"],
       "title": "CulturaX:一个清洁、庞大、多语言的167种语言大型语言模型数据集",
       "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
       "authorName": "Prof. Otto Nomos",
@@ -340,11 +287,7 @@
     },
     {
       "id": "198044929",
-      "topics": [
-        "大型语言模型",
-        "数据",
-        "智能体"
-      ],
+      "topics": ["大型语言模型", "数据", "智能体"],
       "title": "推理型具身智能体的数据源",
       "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
       "authorName": "Prof. Otto Nomos",
@@ -363,11 +306,7 @@
     },
     {
       "id": "198044900",
-      "topics": [
-        "大型语言模型",
-        "实体",
-        "微调"
-      ],
+      "topics": ["大型语言模型", "实体", "微调"],
       "title": "利用上下文信息进行有效的实体显著性检测",
       "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
       "authorName": "Prof. Otto Nomos",
@@ -387,10 +326,7 @@
   ],
   "blogContent": {
     "id": "198277196",
-    "topics": [
-      "大型语言模型",
-      "结构化数据"
-    ],
+    "topics": ["大型语言模型", "结构化数据"],
     "title": "Struc-Bench: 大型语言模型真的擅长生成复杂结构化数据吗?",
     "slug": "struc-bench-are-large-language-models-really-good-at-generating-complex-structure",
     "authorName": "Prof. Otto Nomos",
@@ -565,9 +501,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Problem Identification"
                             },
                             {
@@ -586,9 +520,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Struc-Bench Benchmark"
                             },
                             {
@@ -607,9 +539,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Detailed Analysis"
                             },
                             {
@@ -628,9 +558,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Structure-Aware Fine-tuning"
                             },
                             {
@@ -649,9 +577,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Ability Map"
                             },
                             {
@@ -685,9 +611,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Complex Output Generation"
                             },
                             {
@@ -706,9 +630,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Better Model Evaluations"
                             },
                             {
@@ -727,9 +649,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Structured Data in Applications"
                             },
                             {
@@ -748,9 +668,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Guidance for Future Research"
                             },
                             {
@@ -784,9 +702,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Complexity"
                             },
                             {
@@ -805,9 +721,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Adoption"
                             },
                             {
@@ -877,8 +791,5 @@
       }
     }
   },
-  "topics": [
-    "大型语言模型",
-    "结构化数据"
-  ]
+  "topics": ["大型语言模型", "结构化数据"]
 }

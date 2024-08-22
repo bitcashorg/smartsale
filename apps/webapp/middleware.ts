@@ -1,8 +1,8 @@
 import { match } from '@formatjs/intl-localematcher'
 import Negotiator from 'negotiator'
-import { NextResponse, NextRequest } from 'next/server'
-import { defaultLocale, locales } from './dictionaries/locales'
 import { cookies } from 'next/headers'
+import { type NextRequest, NextResponse } from 'next/server'
+import { defaultLocale, locales } from './dictionaries/locales'
 
 export function middleware(request: NextRequest) {
   const cookieStore = cookies()
@@ -17,7 +17,7 @@ export function middleware(request: NextRequest) {
   // }
 
   const hasLang = locales.some(
-    lang => pathname.startsWith(`/${lang}/`) || pathname === `/${lang}`
+    (lang) => pathname.startsWith(`/${lang}/`) || pathname === `/${lang}`,
   )
 
   // console.log('🍓 has lang', hasLang, pathname)
@@ -34,13 +34,15 @@ function getLocale(request: NextRequest): string {
   if (cookieLang) return cookieLang.value
 
   const negotiator = new Negotiator({
-    headers: { 'accept-language': request.headers.get('accept-language') || '' }
+    headers: {
+      'accept-language': request.headers.get('accept-language') || '',
+    },
   })
   const languages = negotiator.languages()
   return match(languages, locales, defaultLocale)
 }
 export const config = {
   matcher: [
-    '/((?!_next|_nextjs|images|api|studio|media|favicon.ico|__nextjs_original-stack-frame).*)'
-  ]
+    '/((?!_next|_nextjs|images|api|studio|media|favicon.ico|__nextjs_original-stack-frame).*)',
+  ],
 }

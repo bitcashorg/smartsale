@@ -6,9 +6,7 @@
       "articles": [
         {
           "id": "SpdLuuYEQgW8rwSHNzhmxA",
-          "topics": [
-            "应用程序"
-          ],
+          "topics": ["应用程序"],
           "title": "Masterbots：通过社交分享和用户友好创新提升AI超越ChatGPT",
           "slug": "masterbots-elevating-ai-beyond-chatgpt-with-social-sharing-and-user-friendly-inno",
           "authorName": "Jun Dam",
@@ -42,11 +40,7 @@
       "articles": [
         {
           "id": "190259319",
-          "topics": [
-            "摘要",
-            "大型语言模型",
-            "培训"
-          ],
+          "topics": ["摘要", "大型语言模型", "培训"],
           "title": "潜在空间播客 8/16/23 [摘要] - 培训大型语言模型的数学 — 与Eleuther AI的Quentin Anthony一起",
           "slug": "latent-space-podcast-8-16-23-summary-the-mathematics-of-training-llms-with-que",
           "authorName": "Prof. Otto Nomos",
@@ -74,12 +68,7 @@
         },
         {
           "id": "190259129",
-          "topics": [
-            "大型语言模型",
-            "硬件",
-            "摘要",
-            "边缘"
-          ],
+          "topics": ["大型语言模型", "硬件", "摘要", "边缘"],
           "title": "潜在空间播客 8/10/23 [摘要]：大型语言模型无处不在：使用 MLC 在浏览器和 iPhone 上运行 70B 模型 —— 与 CMU / OctoML 的陈天奇",
           "slug": "latent-space-podcast-8-10-23-summary-llms-everywhere-running-70b-models-in-browse",
           "authorName": "Prof. Otto Nomos",
@@ -107,13 +96,7 @@
         },
         {
           "id": "190259087",
-          "topics": [
-            "摘要",
-            "LLM",
-            "代码",
-            "开源",
-            "小型模型"
-          ],
+          "topics": ["摘要", "LLM", "代码", "开源", "小型模型"],
           "title": "潜在空间播客 8/4/23 [摘要] 潜在空间 x AI Breakdown 跨界播客！",
           "slug": "latent-space-podcast-8-4-23-summary-latent-space-x-ai-breakdown-crossover-pod",
           "authorName": "Prof. Otto Nomos",
@@ -141,12 +124,7 @@
         },
         {
           "id": "190259111",
-          "topics": [
-            "Summary",
-            "Transformers",
-            "Training",
-            "Open Source"
-          ],
+          "topics": ["Summary", "Transformers", "Training", "Open Source"],
           "title": " Latent Space Podcast 7/26/23 [Summary] FlashAttention 2: making Transformers 800% faster - Tri Dao of Together AI",
           "slug": "latent-space-podcast-7-26-23-summary-flashattention-2-making-transformers-800-fas",
           "authorName": "Prof. Otto Nomos",
@@ -174,12 +152,7 @@
         },
         {
           "id": "190259172",
-          "topics": [
-            "Summary",
-            "LLM",
-            "Open Source",
-            "Small Models"
-          ],
+          "topics": ["Summary", "LLM", "Open Source", "Small Models"],
           "title": "Latent Space Podcast 7/19/23 [Summary] - Llama 2: The New Open LLM SOTA (ft. Nathan Lambert, Matt Bornstein, Anton Troynikov, Russell Kaplan, Whole Mars Catalog et al.)",
           "slug": "latent-space-podcast-7-19-23-summary-llama-2-the-new-open-llm-sota-ft-nathan-lamb",
           "authorName": "Prof. Otto Nomos",
@@ -207,11 +180,7 @@
         },
         {
           "id": "190259191",
-          "topics": [
-            "Summary",
-            "Code",
-            "LLM"
-          ],
+          "topics": ["Summary", "Code", "LLM"],
           "title": "Latent Space Podcast 7/10/23 [Summary] - Code Interpreter == GPT 4.5 (w/ Simon Willison, Alex Volkov, Aravind Srinivas, Alex Graveley, et al.)",
           "slug": "latent-space-podcast-7-10-23-summary-code-interpreter-gpt-4-5-w-simon-willison-al",
           "authorName": "Prof. Otto Nomos",
@@ -239,10 +208,7 @@
         },
         {
           "id": "190259216",
-          "topics": [
-            "摘要",
-            "开源"
-          ],
+          "topics": ["摘要", "开源"],
           "title": "潜在空间播客7/2/23 [摘要] AI趋势：潜在空间x实用AI交叉播客！",
           "slug": "latent-space-podcast-7-2-23-summary-ai-trends-a-latent-space-x-practical-ai-cross",
           "authorName": "Prof. Otto Nomos",
@@ -270,11 +236,7 @@
         },
         {
           "id": "190259238",
-          "topics": [
-            "硬件",
-            "LLM",
-            "摘要"
-          ],
+          "topics": ["硬件", "LLM", "摘要"],
           "title": "潜在空间播客6/20/23 [摘要] - 与小公司的乔治·霍兹一起将千兆浮点运算商品化",
           "slug": "latent-space-podcast-6-20-23-summary-commoditizing-the-petaflop-with-george-ho",
           "authorName": "Prof. Otto Nomos",
@@ -302,11 +264,7 @@
         },
         {
           "id": "190259294",
-          "topics": [
-            "LLM",
-            "Functions",
-            "Summary"
-          ],
+          "topics": ["LLM", "Functions", "Summary"],
           "title": "Latent Space Podcast 6/14/23 [Summary] - Emergency Pod: OpenAI's new Functions API, 75% Price Drop, 4x Context Length (w/ Alex Volkov, Simon Willison, Riley Goodside, Joshua Lochner, Stefania Druga, Eric Elliott, Mayo Oshin et al)",
           "slug": "latent-space-podcast-6-14-23-summary-emergency-pod-openai-s-new-functions-api-75",
           "authorName": "Prof. Otto Nomos",
@@ -334,11 +292,7 @@
         },
         {
           "id": "190259333",
-          "topics": [
-            "LLM",
-            "摘要",
-            "用户体验"
-          ],
+          "topics": ["LLM", "摘要", "用户体验"],
           "title": "潜在空间播客 6/8/23 [摘要] - 从 RLHF 到 RLHB：从人类行为中学习的案例 - 与 Amplitude 的 Jeffrey Wang 和 Joe Reeve",
           "slug": "latent-space-podcast-6-8-23-summary-from-rlhf-to-rlhb-the-case-for-learning-from",
           "authorName": "Prof. Otto Nomos",
@@ -366,11 +320,7 @@
         },
         {
           "id": "190260528",
-          "topics": [
-            "Summary",
-            "LLM",
-            "UX"
-          ],
+          "topics": ["Summary", "LLM", "UX"],
           "title": "Latent Space Podcast 6/1/23 [Summary] - Building the AI × UX Scenius — with Linus Lee of Notion AI",
           "slug": "latent-space-podcast-6-1-23-summary-building-the-ai-x-ux-scenius-with-linus-le",
           "authorName": "Prof. Otto Nomos",
@@ -398,12 +348,7 @@
         },
         {
           "id": "190260557",
-          "topics": [
-            "Summary",
-            "Code",
-            "LLM",
-            "Agents"
-          ],
+          "topics": ["Summary", "Code", "LLM", "Agents"],
           "title": "Latent Space Podcast 5/25/23 [Summary] - Debugging the Internet with AI agents – with Itamar Friedman of Codium AI and AutoGPT",
           "slug": "latent-space-podcast-5-25-23-summary-debugging-the-internet-with-ai-agents-with",
           "authorName": "Prof. Otto Nomos",
@@ -431,11 +376,7 @@
         },
         {
           "id": "190260640",
-          "topics": [
-            "Summary",
-            "Open Source",
-            "LLM"
-          ],
+          "topics": ["Summary", "Open Source", "LLM"],
           "title": "Latent Space Podcast 5/5/23 [Summary] - No Moat: Closed AI gets its Open Source wakeup call — ft. Simon Willison",
           "slug": "latent-space-podcast-5-5-23-summary-no-moat-closed-ai-gets-its-open-source-wakeup",
           "authorName": "Prof. Otto Nomos",
@@ -463,11 +404,7 @@
         },
         {
           "id": "190260671",
-          "topics": [
-            "LLM",
-            "Code",
-            "Summary"
-          ],
+          "topics": ["LLM", "Code", "Summary"],
           "title": "Latent Space Podcast 5/3/23 [Summary] - Training a SOTA Code LLM in 1 week and Quantifying the Vibes — with Reza Shabani of Replit",
           "slug": "latent-space-podcast-5-3-23-summary-training-a-sota-code-llm-in-1-week-and-quanti",
           "authorName": "Prof. Otto Nomos",
@@ -495,11 +432,7 @@
         },
         {
           "id": "190629271",
-          "topics": [
-            "LLM",
-            "Small Models",
-            "Summary"
-          ],
+          "topics": ["LLM", "Small Models", "Summary"],
           "title": "Latent Space Podcast 4/28/23 [Summary] - Mapping the future of *truly* Open Models and Training Dolly for $30 — with Mike Conover of Databricks",
           "slug": "latent-space-podcast-4-28-23-summary-mapping-the-future-of-truly-open-models-and",
           "authorName": "Prof. Otto Nomos",
@@ -527,11 +460,7 @@
         },
         {
           "id": "191164291",
-          "topics": [
-            "LLM",
-            "Enterprise",
-            "Summary"
-          ],
+          "topics": ["LLM", "Enterprise", "Summary"],
           "title": "Latent Space Podcast 4/21/23 [Summary] - AI-powered Search for the Enterprise — with Deedy Das of Glean",
           "slug": "latent-space-podcast-4-21-23-summary-ai-powered-search-for-the-enterprise-with",
           "authorName": "Prof. Otto Nomos",
@@ -559,10 +488,7 @@
         },
         {
           "id": "191165673",
-          "topics": [
-            "Summary",
-            "Vision"
-          ],
+          "topics": ["Summary", "Vision"],
           "title": "Latent Space Podcast 4/13/23 [Summary] - Segment Anything Model and the Hard Problems of Computer Vision — with Joseph Nelson of Roboflow",
           "slug": "latent-space-podcast-4-13-23-summary-segment-anything-model-and-the-hard-problems",
           "authorName": "Prof. Otto Nomos",
@@ -590,11 +516,7 @@
         },
         {
           "id": "191165920",
-          "topics": [
-            "大型语言模型",
-            "摘要",
-            "评估"
-          ],
+          "topics": ["大型语言模型", "摘要", "评估"],
           "title": "潜在空间播客 4/6/23 [摘要] - 人工智能基础：基准测试 101",
           "slug": "latent-space-podcast-4-6-23-summary-ai-fundamentals-benchmarks-101",
           "authorName": "Prof. Otto Nomos",
@@ -622,10 +544,7 @@
         },
         {
           "id": "191301444",
-          "topics": [
-            "Summary",
-            "LLMOps"
-          ],
+          "topics": ["Summary", "LLMOps"],
           "title": "Latent Space Podcast 4/6/23 [Summary] - Grounded Research: From Google Brain to MLOps to LLMOps — with Shreya Shankar of UC Berkeley",
           "slug": "latent-space-podcast-4-6-23-summary-grounded-research-from-google-brain-to-mlops",
           "authorName": "Prof. Otto Nomos",
@@ -653,11 +572,7 @@
         },
         {
           "id": "191310297",
-          "topics": [
-            "Summary",
-            "LLM",
-            "Tools"
-          ],
+          "topics": ["Summary", "LLM", "Tools"],
           "title": "Latent Space Podcast 3/23/23 [Summary] - Emergency Pod: ChatGPT's App Store Moment (w/ OpenAI's Logan Kilpatrick, LindyAI's Florent Crivello and Nader Dabit)",
           "slug": "latent-space-podcast-3-23-23-summary-emergency-pod-chatgpt-s-app-store-moment-w-o",
           "authorName": "Prof. Otto Nomos",
@@ -685,11 +600,7 @@
         },
         {
           "id": "191313297",
-          "topics": [
-            "LLM",
-            "Summary",
-            "Code"
-          ],
+          "topics": ["LLM", "Summary", "Code"],
           "title": "Latent Space Podcast 3/2/23 [Summary] - 97% Cheaper, Faster, Better, Correct AI — with Varun Mohan of Codeium Latent Space Podcast Ep. 2: Why you are holding your GPUs wrong",
           "slug": "latent-space-podcast-3-2-23-summary-97-cheaper-faster-better-correct-ai-with-v",
           "authorName": "Prof. Otto Nomos",
@@ -717,10 +628,7 @@
         },
         {
           "id": "191313319",
-          "topics": [
-            "LLM",
-            "Summary"
-          ],
+          "topics": ["LLM", "Summary"],
           "title": "Latent Space Podcast 2/23 [Summary] - ChatGPT, GPT4 hype, and Building LLM-native products — with Logan Kilpatrick of OpenAI",
           "slug": "latent-space-podcast-2-23-summary-chatgpt-gpt4-hype-and-building-llm-native-produ",
           "authorName": "Prof. Otto Nomos",
@@ -748,10 +656,7 @@
         },
         {
           "id": "190258948",
-          "topics": [
-            "摘要",
-            "LLM"
-          ],
+          "topics": ["摘要", "LLM"],
           "title": "大型语言模型，用最少的数学和术语解释[摘要]",
           "slug": "large-language-models-explained-with-a-minimum-of-math-and-jargon-eli5-summary",
           "authorName": "Prof. Otto Nomos",
@@ -779,10 +684,7 @@
         },
         {
           "id": "190258977",
-          "topics": [
-            "摘要",
-            "变压器"
-          ],
+          "topics": ["摘要", "变压器"],
           "title": "变压器蓝图：全面指南变压器神经网络架构[摘要]",
           "slug": "the-transformer-blueprint-a-holistic-guide-to-the-transformer-neural-network-arch",
           "authorName": "Prof. Otto Nomos",
@@ -810,11 +712,7 @@
         },
         {
           "id": "190259003",
-          "topics": [
-            "LLM",
-            "摘要",
-            "行业"
-          ],
+          "topics": ["LLM", "摘要", "行业"],
           "title": "麦肯锡：生成式AI的经济潜力[摘要]",
           "slug": "mckinsey-the-economic-potential-of-generative-ai-eli5-summary",
           "authorName": "Prof. Otto Nomos",
@@ -842,10 +740,7 @@
         },
         {
           "id": "190259043",
-          "topics": [
-            "大型语言模型",
-            "摘要"
-          ],
+          "topics": ["大型语言模型", "摘要"],
           "title": "谷歌“我们没有护城河，OpenAI也没有”[评论]",
           "slug": "google-we-have-no-moat-and-neither-does-openai-commentary",
           "authorName": "Prof. Otto Nomos",
@@ -873,10 +768,7 @@
         },
         {
           "id": "190259067",
-          "topics": [
-            "摘要",
-            "LLM"
-          ],
+          "topics": ["摘要", "LLM"],
           "title": "GPT状态 - 安德烈·卡帕西 [摘要]",
           "slug": "state-of-gpt-andrej-karpathy-summary",
           "authorName": "Prof. Otto Nomos",
@@ -910,11 +802,7 @@
       "articles": [
         {
           "id": "190259319",
-          "topics": [
-            "摘要",
-            "大型语言模型",
-            "培训"
-          ],
+          "topics": ["摘要", "大型语言模型", "培训"],
           "title": "潜在空间播客 8/16/23 [摘要] - 培训大型语言模型的数学 — 与Eleuther AI的Quentin Anthony一起",
           "slug": "latent-space-podcast-8-16-23-summary-the-mathematics-of-training-llms-with-que",
           "authorName": "Prof. Otto Nomos",
@@ -942,12 +830,7 @@
         },
         {
           "id": "190259129",
-          "topics": [
-            "LLM",
-            "硬件",
-            "摘要",
-            "边缘"
-          ],
+          "topics": ["LLM", "硬件", "摘要", "边缘"],
           "title": "潜在空间播客 8/10/23 [摘要]: LLM无处不在：在浏览器和iPhone上运行70B模型，使用MLC — 与CMU / OctoML的陈天奇",
           "slug": "latent-space-podcast-8-10-23-summary-llms-everywhere-running-70b-models-in-browse",
           "authorName": "Prof. Otto Nomos",
@@ -975,13 +858,7 @@
         },
         {
           "id": "190259087",
-          "topics": [
-            "摘要",
-            "大型语言模型",
-            "代码",
-            "开源",
-            "小型模型"
-          ],
+          "topics": ["摘要", "大型语言模型", "代码", "开源", "小型模型"],
           "title": "潜在空间播客 8/4/23 [摘要] 潜在空间 x AI 分析交叉播客！",
           "slug": "latent-space-podcast-8-4-23-summary-latent-space-x-ai-breakdown-crossover-pod",
           "authorName": "Prof. Otto Nomos",
@@ -1009,12 +886,7 @@
         },
         {
           "id": "190259172",
-          "topics": [
-            "Summary",
-            "LLM",
-            "Open Source",
-            "Small Models"
-          ],
+          "topics": ["Summary", "LLM", "Open Source", "Small Models"],
           "title": "Latent Space Podcast 7/19/23 [Summary] - Llama 2: The New Open LLM SOTA (ft. Nathan Lambert, Matt Bornstein, Anton Troynikov, Russell Kaplan, Whole Mars Catalog et al.)",
           "slug": "latent-space-podcast-7-19-23-summary-llama-2-the-new-open-llm-sota-ft-nathan-lamb",
           "authorName": "Prof. Otto Nomos",
@@ -1042,11 +914,7 @@
         },
         {
           "id": "190259191",
-          "topics": [
-            "Summary",
-            "Code",
-            "LLM"
-          ],
+          "topics": ["Summary", "Code", "LLM"],
           "title": "Latent Space Podcast 7/10/23 [Summary] - Code Interpreter == GPT 4.5 (w/ Simon Willison, Alex Volkov, Aravind Srinivas, Alex Graveley, et al.)",
           "slug": "latent-space-podcast-7-10-23-summary-code-interpreter-gpt-4-5-w-simon-willison-al",
           "authorName": "Prof. Otto Nomos",
@@ -1074,11 +942,7 @@
         },
         {
           "id": "190259238",
-          "topics": [
-            "硬件",
-            "LLM",
-            "摘要"
-          ],
+          "topics": ["硬件", "LLM", "摘要"],
           "title": "潜在空间播客 6/20/23 [摘要] - 与小公司的乔治·霍兹一起将千万亿次浮点运算商品化",
           "slug": "latent-space-podcast-6-20-23-summary-commoditizing-the-petaflop-with-george-ho",
           "authorName": "Prof. Otto Nomos",
@@ -1106,11 +970,7 @@
         },
         {
           "id": "190259294",
-          "topics": [
-            "LLM",
-            "Functions",
-            "Summary"
-          ],
+          "topics": ["LLM", "Functions", "Summary"],
           "title": "Latent Space Podcast 6/14/23 [Summary] - Emergency Pod: OpenAI's new Functions API, 75% Price Drop, 4x Context Length (w/ Alex Volkov, Simon Willison, Riley Goodside, Joshua Lochner, Stefania Druga, Eric Elliott, Mayo Oshin et al)",
           "slug": "latent-space-podcast-6-14-23-summary-emergency-pod-openai-s-new-functions-api-75",
           "authorName": "Prof. Otto Nomos",
@@ -1138,11 +998,7 @@
         },
         {
           "id": "190259333",
-          "topics": [
-            "LLM",
-            "Summary",
-            "UX"
-          ],
+          "topics": ["LLM", "Summary", "UX"],
           "title": "Latent Space Podcast 6/8/23 [Summary] - From RLHF to RLHB: The Case for Learning from Human Behavior - with Jeffrey Wang and Joe Reeve of Amplitude",
           "slug": "latent-space-podcast-6-8-23-summary-from-rlhf-to-rlhb-the-case-for-learning-from",
           "authorName": "Prof. Otto Nomos",
@@ -1170,11 +1026,7 @@
         },
         {
           "id": "190260528",
-          "topics": [
-            "Summary",
-            "LLM",
-            "UX"
-          ],
+          "topics": ["Summary", "LLM", "UX"],
           "title": "Latent Space Podcast 6/1/23 [Summary] - Building the AI × UX Scenius — with Linus Lee of Notion AI",
           "slug": "latent-space-podcast-6-1-23-summary-building-the-ai-x-ux-scenius-with-linus-le",
           "authorName": "Prof. Otto Nomos",
@@ -1202,12 +1054,7 @@
         },
         {
           "id": "190260557",
-          "topics": [
-            "Summary",
-            "Code",
-            "LLM",
-            "Agents"
-          ],
+          "topics": ["Summary", "Code", "LLM", "Agents"],
           "title": "Latent Space Podcast 5/25/23 [Summary] - Debugging the Internet with AI agents – with Itamar Friedman of Codium AI and AutoGPT",
           "slug": "latent-space-podcast-5-25-23-summary-debugging-the-internet-with-ai-agents-with",
           "authorName": "Prof. Otto Nomos",
@@ -1235,10 +1082,7 @@
         },
         {
           "id": "190260577",
-          "topics": [
-            "LLM",
-            "小型模型"
-          ],
+          "topics": ["LLM", "小型模型"],
           "title": "潜在空间播客 5/20/23 [摘要] - MPT-7B 和上下文无限的开始 — 与 MosaicML 的 Jonathan Frankle 和 Abhinav Venigalla",
           "slug": "latent-space-podcast-5-20-23-summary-mpt-7b-and-the-beginning-of-context-infinity",
           "authorName": "Prof. Otto Nomos",
@@ -1266,10 +1110,7 @@
         },
         {
           "id": "190260597",
-          "topics": [
-            "大型语言模型",
-            "结构化数据"
-          ],
+          "topics": ["大型语言模型", "结构化数据"],
           "title": "潜在空间播客2023年5月15日[摘要] - 保证大型语言模型输出的质量和结构 - 与Guardrails AI的Shreya Rajpal一起",
           "slug": "latent-space-podcast-5-15-23-summary-guaranteed-quality-and-structure-in-llm-outp",
           "authorName": "Prof. Otto Nomos",
@@ -1297,12 +1138,7 @@
         },
         {
           "id": "190260606",
-          "topics": [
-            "LLM",
-            "Training",
-            "Agents",
-            "Multimodal"
-          ],
+          "topics": ["LLM", "Training", "Agents", "Multimodal"],
           "title": "Latent Space Podcast 5/8/23 [Summary] - The AI Founder Gene: Being Early, Building Fast, and Believing in Greatness — with Sharif Shameem of Lexica",
           "slug": "latent-space-podcast-5-8-23-summary-the-ai-founder-gene-being-early-building-fast",
           "authorName": "Prof. Otto Nomos",
@@ -1330,11 +1166,7 @@
         },
         {
           "id": "190260640",
-          "topics": [
-            "摘要",
-            "开源",
-            "LLM"
-          ],
+          "topics": ["摘要", "开源", "LLM"],
           "title": "潜在空间播客 2023年5月5日 [摘要] - 无护城河：封闭AI接受开源唤醒电话 — 特邀西蒙·威利森",
           "slug": "latent-space-podcast-5-5-23-summary-no-moat-closed-ai-gets-its-open-source-wakeup",
           "authorName": "Prof. Otto Nomos",
@@ -1362,11 +1194,7 @@
         },
         {
           "id": "190260671",
-          "topics": [
-            "LLM",
-            "代码",
-            "摘要"
-          ],
+          "topics": ["LLM", "代码", "摘要"],
           "title": "潜在空间播客5/3/23 [摘要] - 一周内训练SOTA代码LLM并量化Vibes —— 与Replit的Reza Shabani一起",
           "slug": "latent-space-podcast-5-3-23-summary-training-a-sota-code-llm-in-1-week-and-quanti",
           "authorName": "Prof. Otto Nomos",
@@ -1394,11 +1222,7 @@
         },
         {
           "id": "190629271",
-          "topics": [
-            "LLM",
-            "Small Models",
-            "Summary"
-          ],
+          "topics": ["LLM", "Small Models", "Summary"],
           "title": "Latent Space Podcast 4/28/23 [Summary] - Mapping the future of *truly* Open Models and Training Dolly for $30 — with Mike Conover of Databricks",
           "slug": "latent-space-podcast-4-28-23-summary-mapping-the-future-of-truly-open-models-and",
           "authorName": "Prof. Otto Nomos",
@@ -1426,11 +1250,7 @@
         },
         {
           "id": "191164291",
-          "topics": [
-            "LLM",
-            "Enterprise",
-            "Summary"
-          ],
+          "topics": ["LLM", "Enterprise", "Summary"],
           "title": "Latent Space Podcast 4/21/23 [Summary] - AI-powered Search for the Enterprise — with Deedy Das of Glean",
           "slug": "latent-space-podcast-4-21-23-summary-ai-powered-search-for-the-enterprise-with",
           "authorName": "Prof. Otto Nomos",
@@ -1458,11 +1278,7 @@
         },
         {
           "id": "191165920",
-          "topics": [
-            "LLM",
-            "Summary",
-            "Evaluation"
-          ],
+          "topics": ["LLM", "Summary", "Evaluation"],
           "title": "Latent Space Podcast 4/6/23 [Summary] - AI Fundamentals: Benchmarks 101",
           "slug": "latent-space-podcast-4-6-23-summary-ai-fundamentals-benchmarks-101",
           "authorName": "Prof. Otto Nomos",
@@ -1490,11 +1306,7 @@
         },
         {
           "id": "191310297",
-          "topics": [
-            "Summary",
-            "LLM",
-            "Tools"
-          ],
+          "topics": ["Summary", "LLM", "Tools"],
           "title": "Latent Space Podcast 3/23/23 [Summary] - Emergency Pod: ChatGPT's App Store Moment (w/ OpenAI's Logan Kilpatrick, LindyAI's Florent Crivello and Nader Dabit)",
           "slug": "latent-space-podcast-3-23-23-summary-emergency-pod-chatgpt-s-app-store-moment-w-o",
           "authorName": "Prof. Otto Nomos",
@@ -1522,11 +1334,7 @@
         },
         {
           "id": "191313297",
-          "topics": [
-            "LLM",
-            "摘要",
-            "代码"
-          ],
+          "topics": ["LLM", "摘要", "代码"],
           "title": "潜在空间播客3/2/23 [摘要] - 与Codeium的Varun Mohan一起，成本降低97%，更快，更好，更正确的AI - 潜在空间播客第2集：为什么你的GPU使用方式不对",
           "slug": "latent-space-podcast-3-2-23-summary-97-cheaper-faster-better-correct-ai-with-v",
           "authorName": "Prof. Otto Nomos",
@@ -1554,10 +1362,7 @@
         },
         {
           "id": "191313319",
-          "topics": [
-            "大型语言模型",
-            "摘要"
-          ],
+          "topics": ["大型语言模型", "摘要"],
           "title": "潜在空间播客2/23 [摘要] - ChatGPT、GPT4热潮以及与OpenAI的Logan Kilpatrick共同打造大型语言模型原生产品",
           "slug": "latent-space-podcast-2-23-summary-chatgpt-gpt4-hype-and-building-llm-native-produ",
           "authorName": "Prof. Otto Nomos",
@@ -1585,10 +1390,7 @@
         },
         {
           "id": "190258948",
-          "topics": [
-            "摘要",
-            "LLM"
-          ],
+          "topics": ["摘要", "LLM"],
           "title": "大型语言模型，用最少的数学和术语解释 [摘要]",
           "slug": "large-language-models-explained-with-a-minimum-of-math-and-jargon-eli5-summary",
           "authorName": "Prof. Otto Nomos",
@@ -1616,11 +1418,7 @@
         },
         {
           "id": "190259003",
-          "topics": [
-            "LLM",
-            "摘要",
-            "行业"
-          ],
+          "topics": ["LLM", "摘要", "行业"],
           "title": "麦肯锡：生成AI的经济潜力[摘要]",
           "slug": "mckinsey-the-economic-potential-of-generative-ai-eli5-summary",
           "authorName": "Prof. Otto Nomos",
@@ -1648,10 +1446,7 @@
         },
         {
           "id": "190259043",
-          "topics": [
-            "LLM",
-            "摘要"
-          ],
+          "topics": ["LLM", "摘要"],
           "title": "Google \"我们没有护城河，OpenAI也没有\" [评论]",
           "slug": "google-we-have-no-moat-and-neither-does-openai-commentary",
           "authorName": "Prof. Otto Nomos",
@@ -1679,10 +1474,7 @@
         },
         {
           "id": "190259067",
-          "topics": [
-            "摘要",
-            "LLM"
-          ],
+          "topics": ["摘要", "LLM"],
           "title": "GPT状态 - 安德烈·卡帕西 [摘要]",
           "slug": "state-of-gpt-andrej-karpathy-summary",
           "authorName": "Prof. Otto Nomos",
@@ -1710,10 +1502,7 @@
         },
         {
           "id": "190258672",
-          "topics": [
-            "入门",
-            "大型语言模型"
-          ],
+          "topics": ["入门", "大型语言模型"],
           "title": "解码人工智能的奥秘：深入了解大型语言模型的知识和局限性",
           "slug": "decoding-the-mysteries-of-ai-a-deep-dive-into-large-language-models-knowledge-and",
           "authorName": "Prof. Otto Nomos",
@@ -1741,10 +1530,7 @@
         },
         {
           "id": "190258658",
-          "topics": [
-            "入门",
-            "大型语言模型"
-          ],
+          "topics": ["入门", "大型语言模型"],
           "title": "掌握训练大型语言模型的艺术：全面指南",
           "slug": "mastering-the-art-of-training-large-language-models-a-comprehensive-guide",
           "authorName": "Prof. Otto Nomos",
@@ -1772,10 +1558,7 @@
         },
         {
           "id": "190258582",
-          "topics": [
-            "入门",
-            "LLM"
-          ],
+          "topics": ["入门", "LLM"],
           "title": "解码LLM：您理解大型语言模型的终极指南",
           "slug": "decoding-llms-your-ultimate-guide-to-understanding-large-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -1803,10 +1586,7 @@
         },
         {
           "id": "190258905",
-          "topics": [
-            "Getting Started",
-            "LLM"
-          ],
+          "topics": ["Getting Started", "LLM"],
           "title": "Mastering the Art of LLMs: A Practical Guide to Implementing Large Language Models",
           "slug": "mastering-the-art-of-llms-a-practical-guide-to-implementing-large-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -1840,11 +1620,7 @@
       "articles": [
         {
           "id": "190259319",
-          "topics": [
-            "摘要",
-            "大型语言模型",
-            "培训"
-          ],
+          "topics": ["摘要", "大型语言模型", "培训"],
           "title": "潜在空间播客 8/16/23 [摘要] - 与Eleuther AI的Quentin Anthony一起探讨训练大型语言模型的数学",
           "slug": "latent-space-podcast-8-16-23-summary-the-mathematics-of-training-llms-with-que",
           "authorName": "Prof. Otto Nomos",
@@ -1872,12 +1648,7 @@
         },
         {
           "id": "190259111",
-          "topics": [
-            "摘要",
-            "变压器",
-            "培训",
-            "开源"
-          ],
+          "topics": ["摘要", "变压器", "培训", "开源"],
           "title": "潜在空间播客 7/26/23 [摘要] FlashAttention 2：使变压器速度提高 800% - Together AI 的 Tri Dao",
           "slug": "latent-space-podcast-7-26-23-summary-flashattention-2-making-transformers-800-fas",
           "authorName": "Prof. Otto Nomos",
@@ -1905,12 +1676,7 @@
         },
         {
           "id": "190260606",
-          "topics": [
-            "LLM",
-            "培训",
-            "代理",
-            "多模态"
-          ],
+          "topics": ["LLM", "培训", "代理", "多模态"],
           "title": "潜在空间播客5/8/23[摘要] - AI创始人基因：早期开始，快速建设，并相信伟大 — 与Lexica的Sharif Shameem一起",
           "slug": "latent-space-podcast-5-8-23-summary-the-ai-founder-gene-being-early-building-fast",
           "authorName": "Prof. Otto Nomos",
@@ -1944,12 +1710,7 @@
       "articles": [
         {
           "id": "190259129",
-          "topics": [
-            "大型语言模型",
-            "硬件",
-            "摘要",
-            "边缘"
-          ],
+          "topics": ["大型语言模型", "硬件", "摘要", "边缘"],
           "title": "潜在空间播客8/10/23 [摘要]：大型语言模型无处不在：在浏览器和iPhone上运行70B模型，采用MLC —— 与CMU / OctoML的陈天奇",
           "slug": "latent-space-podcast-8-10-23-summary-llms-everywhere-running-70b-models-in-browse",
           "authorName": "Prof. Otto Nomos",
@@ -1977,11 +1738,7 @@
         },
         {
           "id": "190259238",
-          "topics": [
-            "硬件",
-            "LLM",
-            "摘要"
-          ],
+          "topics": ["硬件", "LLM", "摘要"],
           "title": "潜在空间播客6/20/23 [摘要] - 与小公司的乔治·霍兹一起将千万亿次浮点运算商品化",
           "slug": "latent-space-podcast-6-20-23-summary-commoditizing-the-petaflop-with-george-ho",
           "authorName": "Prof. Otto Nomos",
@@ -2015,12 +1772,7 @@
       "articles": [
         {
           "id": "190259129",
-          "topics": [
-            "LLM",
-            "硬件",
-            "摘要",
-            "边缘"
-          ],
+          "topics": ["LLM", "硬件", "摘要", "边缘"],
           "title": "潜在空间播客 8/10/23 [摘要]：LLM无处不在：使用MLC在浏览器和iPhone上运行70B模型 —— 与CMU / OctoML的陈天奇",
           "slug": "latent-space-podcast-8-10-23-summary-llms-everywhere-running-70b-models-in-browse",
           "authorName": "Prof. Otto Nomos",
@@ -2054,13 +1806,7 @@
       "articles": [
         {
           "id": "190259087",
-          "topics": [
-            "摘要",
-            "大型语言模型",
-            "代码",
-            "开源",
-            "小型模型"
-          ],
+          "topics": ["摘要", "大型语言模型", "代码", "开源", "小型模型"],
           "title": "潜在空间播客 8/4/23 [摘要] 潜在空间 x AI 分析交叉播客！",
           "slug": "latent-space-podcast-8-4-23-summary-latent-space-x-ai-breakdown-crossover-pod",
           "authorName": "Prof. Otto Nomos",
@@ -2088,11 +1834,7 @@
         },
         {
           "id": "190259191",
-          "topics": [
-            "摘要",
-            "代码",
-            "LLM"
-          ],
+          "topics": ["摘要", "代码", "LLM"],
           "title": "潜在空间播客 7/10/23 [摘要] - 代码解释器 == GPT 4.5（与 Simon Willison, Alex Volkov, Aravind Srinivas, Alex Graveley 等人）",
           "slug": "latent-space-podcast-7-10-23-summary-code-interpreter-gpt-4-5-w-simon-willison-al",
           "authorName": "Prof. Otto Nomos",
@@ -2120,12 +1862,7 @@
         },
         {
           "id": "190260557",
-          "topics": [
-            "摘要",
-            "代码",
-            "大型语言模型",
-            "代理"
-          ],
+          "topics": ["摘要", "代码", "大型语言模型", "代理"],
           "title": "潜在空间播客5/25/23 [摘要] - 用AI代理调试互联网 - 来自Codium AI和AutoGPT的Itamar Friedman",
           "slug": "latent-space-podcast-5-25-23-summary-debugging-the-internet-with-ai-agents-with",
           "authorName": "Prof. Otto Nomos",
@@ -2153,11 +1890,7 @@
         },
         {
           "id": "190260671",
-          "topics": [
-            "LLM",
-            "Code",
-            "Summary"
-          ],
+          "topics": ["LLM", "Code", "Summary"],
           "title": "Latent Space Podcast 5/3/23 [Summary] - Training a SOTA Code LLM in 1 week and Quantifying the Vibes — with Reza Shabani of Replit",
           "slug": "latent-space-podcast-5-3-23-summary-training-a-sota-code-llm-in-1-week-and-quanti",
           "authorName": "Prof. Otto Nomos",
@@ -2185,11 +1918,7 @@
         },
         {
           "id": "191313297",
-          "topics": [
-            "LLM",
-            "Summary",
-            "Code"
-          ],
+          "topics": ["LLM", "Summary", "Code"],
           "title": "Latent Space Podcast 3/2/23 [Summary] - 97% Cheaper, Faster, Better, Correct AI — with Varun Mohan of Codeium Latent Space Podcast Ep. 2: Why you are holding your GPUs wrong",
           "slug": "latent-space-podcast-3-2-23-summary-97-cheaper-faster-better-correct-ai-with-v",
           "authorName": "Prof. Otto Nomos",
@@ -2223,13 +1952,7 @@
       "articles": [
         {
           "id": "190259087",
-          "topics": [
-            "摘要",
-            "大型语言模型",
-            "代码",
-            "开源",
-            "小型模型"
-          ],
+          "topics": ["摘要", "大型语言模型", "代码", "开源", "小型模型"],
           "title": "潜在空间播客 8/4/23 [摘要] 潜在空间 x AI 分析交叉播客！",
           "slug": "latent-space-podcast-8-4-23-summary-latent-space-x-ai-breakdown-crossover-pod",
           "authorName": "Prof. Otto Nomos",
@@ -2257,12 +1980,7 @@
         },
         {
           "id": "190259111",
-          "topics": [
-            "摘要",
-            "变压器",
-            "培训",
-            "开源"
-          ],
+          "topics": ["摘要", "变压器", "培训", "开源"],
           "title": "潜在空间播客 7/26/23 [摘要] FlashAttention 2：使变压器速度提高 800% - Together AI 的 Tri Dao",
           "slug": "latent-space-podcast-7-26-23-summary-flashattention-2-making-transformers-800-fas",
           "authorName": "Prof. Otto Nomos",
@@ -2290,12 +2008,7 @@
         },
         {
           "id": "190259172",
-          "topics": [
-            "摘要",
-            "LLM",
-            "开源",
-            "小型模型"
-          ],
+          "topics": ["摘要", "LLM", "开源", "小型模型"],
           "title": "潜在空间播客7/19/23 [摘要] - 美洲驼2：新开放LLM SOTA（特邀内森·兰伯特、马特·伯恩斯坦、安东·特罗尼科夫、罗素·卡普兰、整个火星目录等）",
           "slug": "latent-space-podcast-7-19-23-summary-llama-2-the-new-open-llm-sota-ft-nathan-lamb",
           "authorName": "Prof. Otto Nomos",
@@ -2323,10 +2036,7 @@
         },
         {
           "id": "190259216",
-          "topics": [
-            "Summary",
-            "Open Source"
-          ],
+          "topics": ["Summary", "Open Source"],
           "title": "Latent Space Podcast 7/2/23 [Summary] AI Trends: a Latent Space x Practical AI crossover pod!",
           "slug": "latent-space-podcast-7-2-23-summary-ai-trends-a-latent-space-x-practical-ai-cross",
           "authorName": "Prof. Otto Nomos",
@@ -2354,11 +2064,7 @@
         },
         {
           "id": "190260640",
-          "topics": [
-            "Summary",
-            "Open Source",
-            "LLM"
-          ],
+          "topics": ["Summary", "Open Source", "LLM"],
           "title": "Latent Space Podcast 5/5/23 [Summary] - No Moat: Closed AI gets its Open Source wakeup call — ft. Simon Willison",
           "slug": "latent-space-podcast-5-5-23-summary-no-moat-closed-ai-gets-its-open-source-wakeup",
           "authorName": "Prof. Otto Nomos",
@@ -2392,13 +2098,7 @@
       "articles": [
         {
           "id": "190259087",
-          "topics": [
-            "摘要",
-            "大型语言模型",
-            "代码",
-            "开源",
-            "小型模型"
-          ],
+          "topics": ["摘要", "大型语言模型", "代码", "开源", "小型模型"],
           "title": "潜在空间播客 8/4/23 [摘要] 潜在空间 x AI 分析交叉播客！",
           "slug": "latent-space-podcast-8-4-23-summary-latent-space-x-ai-breakdown-crossover-pod",
           "authorName": "Prof. Otto Nomos",
@@ -2426,12 +2126,7 @@
         },
         {
           "id": "190259172",
-          "topics": [
-            "摘要",
-            "LLM",
-            "开源",
-            "小型模型"
-          ],
+          "topics": ["摘要", "LLM", "开源", "小型模型"],
           "title": "潜在空间播客7/19/23 [摘要] - 美洲驼2：新开放LLM SOTA（特邀内森·兰伯特、马特·伯恩斯坦、安东·特罗尼科夫、拉塞尔·卡普兰、整个火星目录等）",
           "slug": "latent-space-podcast-7-19-23-summary-llama-2-the-new-open-llm-sota-ft-nathan-lamb",
           "authorName": "Prof. Otto Nomos",
@@ -2459,10 +2154,7 @@
         },
         {
           "id": "190260577",
-          "topics": [
-            "LLM",
-            "小型模型"
-          ],
+          "topics": ["LLM", "小型模型"],
           "title": "潜在空间播客 5/20/23 [摘要] - MPT-7B 和上下文=无限的开始 — 与 MosaicML 的 Jonathan Frankle 和 Abhinav Venigalla",
           "slug": "latent-space-podcast-5-20-23-summary-mpt-7b-and-the-beginning-of-context-infinity",
           "authorName": "Prof. Otto Nomos",
@@ -2490,11 +2182,7 @@
         },
         {
           "id": "190629271",
-          "topics": [
-            "LLM",
-            "Small Models",
-            "Summary"
-          ],
+          "topics": ["LLM", "Small Models", "Summary"],
           "title": "Latent Space Podcast 4/28/23 [Summary] - Mapping the future of *truly* Open Models and Training Dolly for $30 — with Mike Conover of Databricks",
           "slug": "latent-space-podcast-4-28-23-summary-mapping-the-future-of-truly-open-models-and",
           "authorName": "Prof. Otto Nomos",
@@ -2528,12 +2216,7 @@
       "articles": [
         {
           "id": "190259111",
-          "topics": [
-            "摘要",
-            "变压器",
-            "培训",
-            "开源"
-          ],
+          "topics": ["摘要", "变压器", "培训", "开源"],
           "title": "潜在空间播客 7/26/23 [摘要] FlashAttention 2：使变压器速度提高 800% - Tri Dao 的 Together AI",
           "slug": "latent-space-podcast-7-26-23-summary-flashattention-2-making-transformers-800-fas",
           "authorName": "Prof. Otto Nomos",
@@ -2561,10 +2244,7 @@
         },
         {
           "id": "190258977",
-          "topics": [
-            "摘要",
-            "变压器"
-          ],
+          "topics": ["摘要", "变压器"],
           "title": "变压器蓝图：全面指南变压器神经网络架构[摘要]",
           "slug": "the-transformer-blueprint-a-holistic-guide-to-the-transformer-neural-network-arch",
           "authorName": "Prof. Otto Nomos",
@@ -2598,11 +2278,7 @@
       "articles": [
         {
           "id": "190259294",
-          "topics": [
-            "LLM",
-            "功能",
-            "摘要"
-          ],
+          "topics": ["LLM", "功能", "摘要"],
           "title": "潜在空间播客 6/14/23 [摘要] - 紧急播客：OpenAI的新功能 API，价格下降75%，上下文长度增加4倍（与 Alex Volkov, Simon Willison, Riley Goodside, Joshua Lochner, Stefania Druga, Eric Elliott, Mayo Oshin 等人）",
           "slug": "latent-space-podcast-6-14-23-summary-emergency-pod-openai-s-new-functions-api-75",
           "authorName": "Prof. Otto Nomos",
@@ -2636,11 +2312,7 @@
       "articles": [
         {
           "id": "190259333",
-          "topics": [
-            "大型语言模型",
-            "摘要",
-            "用户体验"
-          ],
+          "topics": ["大型语言模型", "摘要", "用户体验"],
           "title": "潜在空间播客 6/8/23 [摘要] - 从 RLHF 到 RLHB：从人类行为中学习的案例 - 与 Amplitude 的 Jeffrey Wang 和 Joe Reeve",
           "slug": "latent-space-podcast-6-8-23-summary-from-rlhf-to-rlhb-the-case-for-learning-from",
           "authorName": "Prof. Otto Nomos",
@@ -2668,11 +2340,7 @@
         },
         {
           "id": "190260528",
-          "topics": [
-            "摘要",
-            "LLM",
-            "用户体验"
-          ],
+          "topics": ["摘要", "LLM", "用户体验"],
           "title": "潜在空间播客 6/1/23 [摘要] - 构建 AI × 用户体验 Scenius — 与 Notion AI 的 Linus Lee",
           "slug": "latent-space-podcast-6-1-23-summary-building-the-ai-x-ux-scenius-with-linus-le",
           "authorName": "Prof. Otto Nomos",
@@ -2706,12 +2374,7 @@
       "articles": [
         {
           "id": "190260557",
-          "topics": [
-            "摘要",
-            "代码",
-            "大型语言模型",
-            "代理"
-          ],
+          "topics": ["摘要", "代码", "大型语言模型", "代理"],
           "title": "潜在空间播客5/25/23 [摘要] - 用AI代理调试互联网 - 来自Codium AI和AutoGPT的Itamar Friedman",
           "slug": "latent-space-podcast-5-25-23-summary-debugging-the-internet-with-ai-agents-with",
           "authorName": "Prof. Otto Nomos",
@@ -2739,12 +2402,7 @@
         },
         {
           "id": "190260606",
-          "topics": [
-            "LLM",
-            "培训",
-            "代理",
-            "多模态"
-          ],
+          "topics": ["LLM", "培训", "代理", "多模态"],
           "title": "潜在空间播客5/8/23[摘要] - AI创始人基因：早期入场，快速建设，相信伟大 — 与Lexica的Sharif Shameem一起",
           "slug": "latent-space-podcast-5-8-23-summary-the-ai-founder-gene-being-early-building-fast",
           "authorName": "Prof. Otto Nomos",
@@ -2778,10 +2436,7 @@
       "articles": [
         {
           "id": "190260597",
-          "topics": [
-            "大型语言模型",
-            "结构化数据"
-          ],
+          "topics": ["大型语言模型", "结构化数据"],
           "title": "潜在空间播客 5/15/23 [摘要] - 保证大型语言模型输出的质量和结构 - 与 Guardrails AI 的 Shreya Rajpal",
           "slug": "latent-space-podcast-5-15-23-summary-guaranteed-quality-and-structure-in-llm-outp",
           "authorName": "Prof. Otto Nomos",
@@ -2815,12 +2470,7 @@
       "articles": [
         {
           "id": "190260606",
-          "topics": [
-            "LLM",
-            "培训",
-            "代理",
-            "多模态"
-          ],
+          "topics": ["LLM", "培训", "代理", "多模态"],
           "title": "潜在空间播客5/8/23[摘要] - AI创始人基因：早期入场，快速建设，相信伟大 — 与Lexica的Sharif Shameem一起",
           "slug": "latent-space-podcast-5-8-23-summary-the-ai-founder-gene-being-early-building-fast",
           "authorName": "Prof. Otto Nomos",
@@ -2854,11 +2504,7 @@
       "articles": [
         {
           "id": "191164291",
-          "topics": [
-            "LLM",
-            "企业",
-            "摘要"
-          ],
+          "topics": ["LLM", "企业", "摘要"],
           "title": "潜在空间播客 4/21/23 [摘要] - 以 Deedy Das 的 Glean 为企业提供 AI 驱动的搜索",
           "slug": "latent-space-podcast-4-21-23-summary-ai-powered-search-for-the-enterprise-with",
           "authorName": "Prof. Otto Nomos",
@@ -2892,10 +2538,7 @@
       "articles": [
         {
           "id": "191165673",
-          "topics": [
-            "摘要",
-            "愿景"
-          ],
+          "topics": ["摘要", "愿景"],
           "title": "潜在空间播客 4/13/23 [摘要] - Meta 的 Segment Anything 模型和计算机视觉的难题 — 与 Roboflow 的 Joseph Nelson",
           "slug": "latent-space-podcast-4-13-23-summary-segment-anything-model-and-the-hard-problems",
           "authorName": "Prof. Otto Nomos",
@@ -2929,11 +2572,7 @@
       "articles": [
         {
           "id": "191165920",
-          "topics": [
-            "大型语言模型",
-            "摘要",
-            "评估"
-          ],
+          "topics": ["大型语言模型", "摘要", "评估"],
           "title": "潜在空间播客 4/6/23 [摘要] - 人工智能基础：基准测试 101",
           "slug": "latent-space-podcast-4-6-23-summary-ai-fundamentals-benchmarks-101",
           "authorName": "Prof. Otto Nomos",
@@ -2967,10 +2606,7 @@
       "articles": [
         {
           "id": "191301444",
-          "topics": [
-            "摘要",
-            "LLMOps"
-          ],
+          "topics": ["摘要", "LLMOps"],
           "title": "潜在空间播客 4/6/23 [摘要] - 扎实研究：从谷歌大脑到MLOps再到LLMOps —— 与加州大学伯克利分校的Shreya Shankar",
           "slug": "latent-space-podcast-4-6-23-summary-grounded-research-from-google-brain-to-mlops",
           "authorName": "Prof. Otto Nomos",
@@ -3004,11 +2640,7 @@
       "articles": [
         {
           "id": "191310297",
-          "topics": [
-            "摘要",
-            "LLM",
-            "工具"
-          ],
+          "topics": ["摘要", "LLM", "工具"],
           "title": "潜在空间播客 3/23/23 [摘要] - 紧急播客：ChatGPT的应用商店时刻（与OpenAI的Logan Kilpatrick、LindyAI的Florent Crivello和Nader Dabit）",
           "slug": "latent-space-podcast-3-23-23-summary-emergency-pod-chatgpt-s-app-store-moment-w-o",
           "authorName": "Prof. Otto Nomos",
@@ -3042,11 +2674,7 @@
       "articles": [
         {
           "id": "190259003",
-          "topics": [
-            "LLM",
-            "摘要",
-            "行业"
-          ],
+          "topics": ["LLM", "摘要", "行业"],
           "title": "麦肯锡：生成式AI的经济潜力[摘要]",
           "slug": "mckinsey-the-economic-potential-of-generative-ai-eli5-summary",
           "authorName": "Prof. Otto Nomos",
@@ -3074,10 +2702,7 @@
         },
         {
           "id": "190258686",
-          "topics": [
-            "入门",
-            "行业"
-          ],
+          "topics": ["入门", "行业"],
           "title": "赋能未来：在各行业中展开大型语言模型的力量",
           "slug": "empowering-the-future-unfolding-the-power-of-large-language-models-across-industr",
           "authorName": "Prof. Otto Nomos",
@@ -3111,10 +2736,7 @@
       "articles": [
         {
           "id": "190258861",
-          "topics": [
-            "入门",
-            "个性化"
-          ],
+          "topics": ["入门", "个性化"],
           "title": "大型语言模型：打造个性化数字体验",
           "slug": "large-language-models-crafting-personalized-digital-experiences",
           "authorName": "Prof. Otto Nomos",
@@ -3142,10 +2764,7 @@
         },
         {
           "id": "190258847",
-          "topics": [
-            "入门",
-            "人工通用智能"
-          ],
+          "topics": ["入门", "人工通用智能"],
           "title": "明日巨头：大型语言模型的未来及其对就业市场和人工通用智能的影响",
           "slug": "tomorrow-s-titans-the-future-of-large-language-models-and-their-influence-on-the",
           "authorName": "Prof. Otto Nomos",
@@ -3173,10 +2792,7 @@
         },
         {
           "id": "190258836",
-          "topics": [
-            "入门",
-            "隐私"
-          ],
+          "topics": ["入门", "隐私"],
           "title": "保护城堡：探索LLMs和数据隐私的前沿",
           "slug": "securing-the-castle-exploring-llms-and-the-frontier-of-data-privacy",
           "authorName": "Prof. Otto Nomos",
@@ -3204,10 +2820,7 @@
         },
         {
           "id": "190258732",
-          "topics": [
-            "入门",
-            "法律"
-          ],
+          "topics": ["入门", "法律"],
           "title": "复制那个？LLMs、版权和剽窃困境",
           "slug": "copy-that-llms-copyright-and-the-plagiarism-predicament",
           "authorName": "Prof. Otto Nomos",
@@ -3235,10 +2848,7 @@
         },
         {
           "id": "190258686",
-          "topics": [
-            "入门",
-            "行业"
-          ],
+          "topics": ["入门", "行业"],
           "title": "赋能未来：在各行业中展开大型语言模型的力量",
           "slug": "empowering-the-future-unfolding-the-power-of-large-language-models-across-industr",
           "authorName": "Prof. Otto Nomos",
@@ -3266,10 +2876,7 @@
         },
         {
           "id": "190258672",
-          "topics": [
-            "入门",
-            "大型语言模型"
-          ],
+          "topics": ["入门", "大型语言模型"],
           "title": "解码人工智能的奥秘：深入了解大型语言模型的知识和局限性",
           "slug": "decoding-the-mysteries-of-ai-a-deep-dive-into-large-language-models-knowledge-and",
           "authorName": "Prof. Otto Nomos",
@@ -3297,10 +2904,7 @@
         },
         {
           "id": "190258658",
-          "topics": [
-            "入门",
-            "大型语言模型"
-          ],
+          "topics": ["入门", "大型语言模型"],
           "title": "掌握训练大型语言模型的艺术：全面指南",
           "slug": "mastering-the-art-of-training-large-language-models-a-comprehensive-guide",
           "authorName": "Prof. Otto Nomos",
@@ -3328,10 +2932,7 @@
         },
         {
           "id": "190258582",
-          "topics": [
-            "入门",
-            "LLM"
-          ],
+          "topics": ["入门", "LLM"],
           "title": "解码LLM：您理解大型语言模型的终极指南",
           "slug": "decoding-llms-your-ultimate-guide-to-understanding-large-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -3359,11 +2960,7 @@
         },
         {
           "id": "190258709",
-          "topics": [
-            "Getting Started",
-            "Alignment",
-            "Safety"
-          ],
+          "topics": ["Getting Started", "Alignment", "Safety"],
           "title": "Navigating the Moral Maze: Unraveling the Ethics of Large Language Models",
           "slug": "navigating-the-moral-maze-unraveling-the-ethics-of-large-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -3391,10 +2988,7 @@
         },
         {
           "id": "190258905",
-          "topics": [
-            "入门",
-            "大型语言模型"
-          ],
+          "topics": ["入门", "大型语言模型"],
           "title": "掌握大型语言模型的艺术：实施大型语言模型的实用指南",
           "slug": "mastering-the-art-of-llms-a-practical-guide-to-implementing-large-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -3422,9 +3016,7 @@
         },
         {
           "id": "190258562",
-          "topics": [
-            "入门"
-          ],
+          "topics": ["入门"],
           "title": "掌握人工智能：大型语言模型（LLMs）的全面介绍",
           "slug": "mastering-ai-a-comprehensive-introduction-to-large-language-models-llms",
           "authorName": "Prof. Otto Nomos",
@@ -3458,10 +3050,7 @@
       "articles": [
         {
           "id": "190258861",
-          "topics": [
-            "入门",
-            "个性化"
-          ],
+          "topics": ["入门", "个性化"],
           "title": "大型语言模型：打造个性化数字体验",
           "slug": "large-language-models-crafting-personalized-digital-experiences",
           "authorName": "Prof. Otto Nomos",
@@ -3495,10 +3084,7 @@
       "articles": [
         {
           "id": "190258847",
-          "topics": [
-            "入门",
-            "人工通用智能"
-          ],
+          "topics": ["入门", "人工通用智能"],
           "title": "明日巨头：大型语言模型的未来及其对就业市场和人工通用智能的影响",
           "slug": "tomorrow-s-titans-the-future-of-large-language-models-and-their-influence-on-the",
           "authorName": "Prof. Otto Nomos",
@@ -3532,10 +3118,7 @@
       "articles": [
         {
           "id": "190258836",
-          "topics": [
-            "入门",
-            "隐私"
-          ],
+          "topics": ["入门", "隐私"],
           "title": "保护城堡：探索LLMs和数据隐私的前沿",
           "slug": "securing-the-castle-exploring-llms-and-the-frontier-of-data-privacy",
           "authorName": "Prof. Otto Nomos",
@@ -3569,10 +3152,7 @@
       "articles": [
         {
           "id": "190258732",
-          "topics": [
-            "入门",
-            "法律"
-          ],
+          "topics": ["入门", "法律"],
           "title": "复制了吗？LLM、版权和剽窃困境",
           "slug": "copy-that-llms-copyright-and-the-plagiarism-predicament",
           "authorName": "Prof. Otto Nomos",
@@ -3606,11 +3186,7 @@
       "articles": [
         {
           "id": "190258709",
-          "topics": [
-            "入门",
-            "对齐",
-            "安全"
-          ],
+          "topics": ["入门", "对齐", "安全"],
           "title": "导航道德迷宫：揭开大型语言模型的伦理道德",
           "slug": "navigating-the-moral-maze-unraveling-the-ethics-of-large-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -3644,11 +3220,7 @@
       "articles": [
         {
           "id": "190258709",
-          "topics": [
-            "入门",
-            "对齐",
-            "安全"
-          ],
+          "topics": ["入门", "对齐", "安全"],
           "title": "导航道德迷宫：揭开大型语言模型的伦理问题",
           "slug": "navigating-the-moral-maze-unraveling-the-ethics-of-large-language-models",
           "authorName": "Prof. Otto Nomos",

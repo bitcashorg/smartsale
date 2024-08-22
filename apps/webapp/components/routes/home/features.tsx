@@ -1,13 +1,11 @@
 import { Section } from '@/components/shared/section'
 
-import React from 'react'
-import Image from 'next/image'
-import { Lang } from '@/dictionaries/locales'
-import { Badge } from '@/components/ui/badge'
-import { Card, CardContent } from '@/components/ui/card'
-import { cn } from '@/lib/utils'
-import Balancer from 'react-wrap-balancer'
 import { Tag } from '@/components/shared/tag'
+import { Card, CardContent } from '@/components/ui/card'
+import type { Lang } from '@/dictionaries/locales'
+import { cn } from '@/lib/utils'
+import Image from 'next/image'
+import Balancer from 'react-wrap-balancer'
 
 export function Features({ lang, dict }: FeaturesProps) {
   return (
@@ -20,7 +18,7 @@ export function Features({ lang, dict }: FeaturesProps) {
           key={index}
           className={cn(
             'mx-auto grid items-center gap-6 lg:grid-cols-2 lg:gap-20',
-            index === 0 ? 'border-b border-muted pb-20' : 'pt-20'
+            index === 0 ? 'border-b border-muted pb-20' : 'pt-20',
           )}
         >
           <div
@@ -31,7 +29,7 @@ export function Features({ lang, dict }: FeaturesProps) {
               <h3 className="text-2xl font-bold text-left">
                 <Balancer>{content.title}</Balancer>
               </h3>
-              <p className="text-justify text-gray-500 dark:text-gray-400">
+              <p className="text-gray-500 dark:text-gray-400 text-left">
                 {content.description}
               </p>
             </div>

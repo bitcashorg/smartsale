@@ -1,10 +1,10 @@
 import {
-  AboutBitlauncherPageContent,
-  AboutBitlauncherPageLanding
+  type AboutBitlauncherPageContent,
+  AboutBitlauncherPageLanding,
 } from '@/components/routes/about/about-bitlauncher'
 import { getDictionary } from '@/dictionaries'
-import { CommonPageProps } from '@/types/routing.type'
-import { Metadata } from 'next'
+import type { CommonPageProps } from '@/types/routing.type'
+import type { Metadata } from 'next'
 
 export default async function AboutBitlauncher({ params }: CommonPageProps) {
   const dict = await getDictionary(params.lang)
@@ -13,7 +13,7 @@ export default async function AboutBitlauncher({ params }: CommonPageProps) {
       <AboutBitlauncherPageLanding
         content={content}
         params={{
-          lang: 'en'
+          lang: 'en',
         }}
       />
     </div>
@@ -32,18 +32,18 @@ const content: AboutBitlauncherPageContent = {
   synergy that enables these startups to overcome funding barriers, accelerate their growth, and harness global resources.
 
   Our platform is built on a foundation of transparency, inclusivity, and community-driven progress. We foster a collaborative
-  environment where developers, investors, and AI enthusiasts can come together to share resources, exchange ideas, and shape 
+  environment where developers, contributors, and AI enthusiasts can come together to share resources, exchange ideas, and shape 
   the future of technology.`,
   image: {
     alt: 'dBoard',
     src: '/images/about-bg.svg',
     width: 610,
-    height: 468
-  }
+    height: 468,
+  },
 }
 
 export const metadata: Metadata = {
   title: 'Bitlauncher',
   description:
-    'Be part of the intelligent future and join the Ai/Web3 revolution now!'
+    'Be part of the intelligent future and join the Ai/Web3 revolution now!',
 }

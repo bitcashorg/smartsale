@@ -1,8 +1,8 @@
-import { Project } from '@/lib/projects'
+import type { Project } from '@/lib/projects'
 
 export function HomeHero({
   projects,
-  dict
+  dict,
 }: {
   projects: Project[]
   dict: any
