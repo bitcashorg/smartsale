@@ -297,7 +297,7 @@ input[type='number'] {
 }
 
 .sectionsHeading {
-  @apply text-[87px] font-normal leading-normal ;
+  @apply text-[87px] font-normal leading-normal md:text-[80px];
 } 
 
 .heading2 {

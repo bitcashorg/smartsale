@@ -14,7 +14,7 @@ export function BgHeader({
     <header className="relative top-0 z-0 flex flex-col items-center bg-center bg-cover">
       <section className="w-full py-10 narrow-container">
         <div className="container px-4 md:px-6">
-          <div className="grid items-center gap-4 lg:grid-cols-2">
+          <div className="grid items-center grid-cols-1 gap-4 xl:grid-cols-2">
             <div className="space-y-4">
               <h2 className="sectionsHeading">
                 <Balancer>{heading}</Balancer>

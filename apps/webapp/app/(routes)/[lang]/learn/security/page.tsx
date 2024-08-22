@@ -14,7 +14,7 @@ export default async function SecurityTips({ params }: CommonPageProps) {
 
   return (
     <>
-      <section className="pt-[80]">
+      <section className="py-[80px] sm:px-6 md:px-3">
         <BgHeader
           heading={heading}
           subheading={'Be Part of the Intelligent Future'}
