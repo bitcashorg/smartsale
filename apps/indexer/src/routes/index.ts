@@ -20,37 +20,30 @@ export function startExpress() {
   // Trust proxy
   app.set('trust proxy', 1)
 
+  app.use(express.json())
+
   // Sentry error handler
   setupSentryErrorHandler(app)
 
   // Security Middlewares
-  // app.use(helmet())
+  app.use(helmet())
 
-  // app.use(
-  //   rateLimit({
-  //     windowMs: 60 * 1000, // 1 minute
-  //     max: 100, // limit each IP to 100 requests per windowMs
-  //   }),
-  // )
-
-  // Logging middleware
-  // app.use(pinoHttp({ 
-  //   logger,
-  //   serializers: {
-  //     req: (req) => JSON.stringify(req),
-  //     res: (res) => JSON.stringify(res),
-  //     err: (err) => JSON.stringify(err)
-  //   }
-  // }))
-
-  // Middleware needed to validate the alchemy signature
   app.use(
-    express.json({
-      verify: addAlchemyContextToRequest,
-    })
-  );
-  app.use(validateAlchemySignature(appConfig.evm.alchemy.activitySigningKey));
+    rateLimit({
+      windowMs: 60 * 1000, // 1 minute
+      max: 100, // limit each IP to 100 requests per windowMs
+    }),
+  )
 
+ //Logging middleware
+  app.use(pinoHttp({ 
+    logger,
+    serializers: {
+      req: (req) => JSON.stringify(req),
+      res: (res) => JSON.stringify(res),
+      err: (err) => JSON.stringify(err)
+    }
+  }))
   // Routes
   app.get('/', healthcheck)
   app.post('/alchemy', alchemyWebhook)

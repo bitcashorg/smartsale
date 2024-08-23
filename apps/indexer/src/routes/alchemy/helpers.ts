@@ -3,6 +3,7 @@ import { Request, Response } from "express-serve-static-core";
 
 import * as crypto from "crypto";
 import { IncomingMessage, ServerResponse } from "http";
+import { logger } from "~/lib/logger";
 
 export interface AlchemyRequest extends Request {
   alchemy: {
@@ -40,6 +41,7 @@ export function addAlchemyContextToRequest(
   encoding: BufferEncoding
 ): void {
   const signature = req.headers["x-alchemy-signature"];
+  logger.info(`Alchemy signature: ${signature}`)
   // Signature must be validated against the raw string
   var body = buf.toString(encoding || "utf8");
   (req as AlchemyRequest).alchemy = {
@@ -49,6 +51,7 @@ export function addAlchemyContextToRequest(
 }
 
 export function validateAlchemySignature(signingKey: string) {
+  logger.info(`validateAlchemySignature => signing key: ${signingKey}`)
   return (req: Request, res: Response, next: NextFunction) => {
     if (!isValidSignatureForAlchemyRequest(req as AlchemyRequest, signingKey)) {
       const errMessage = "Signature validation failed, unauthorized!";

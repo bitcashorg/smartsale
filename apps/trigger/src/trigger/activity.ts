@@ -6,6 +6,7 @@ export const addressActivityTask = task({
   run: async (payload: any, { ctx }) => {
     try {
       logger.log('Address activity', { payload, ctx })
+  
     } catch (error) {
       logger.error('Error processing address activity', {
         error: (error as Error).message,

@@ -5,7 +5,7 @@
   "main": "src/index.ts",
   "scripts": {
     "dev": "bunx trigger.dev@beta dev",
-    "deploy:test": "bunx trigger.dev@beta deploy --env test",
+    "deploy:test": "bunx trigger.dev@beta deploy --env staging",
     "deploy:prod": "bunx trigger.dev@beta deploy --env prod"
   },
   "dependencies": {
