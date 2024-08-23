@@ -36,7 +36,7 @@ export function startExpress() {
   setupSentryErrorHandler(app)
 
   // Logging middleware
-  // app.use(pinoHttp({ 
+  // app.use(pinoHttp({
   //   logger,
   //   serializers: {
   //     req: (req) => JSON.stringify({

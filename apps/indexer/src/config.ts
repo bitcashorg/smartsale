@@ -1,23 +1,34 @@
 import { smartsaleEnv } from 'app-env'
 import type { Address } from 'viem'
+import { isAddress, isHex } from 'viem'
 import { privateKeyToAccount } from 'viem/accounts'
 import { z } from 'zod'
 import { logger } from './lib/logger'
-import {isAddress, isHex} from 'viem';
 
 const envSchema = z.object({
   SENTRY_DSN: z.string().min(1),
   DFUSE_API_KEY: z.string().min(1),
   TRIGGER_SECRET_KEY: z.string().min(1),
   SEPOLIA_RPC: z.string().url(),
-  ISSUER_KEY: z.string().min(1).length(64).regex(/^[a-f0-9]+$/i, 'Invalid issuer key format'),
-  ISSUER_ADDRESS: z.string().refine((value): value is Address => isAddress(value), 'Invalid issuer address'),
+  ISSUER_KEY: z
+    .string()
+    .min(1)
+    .length(64)
+    .regex(/^[a-f0-9]+$/i, 'Invalid issuer key format'),
+  ISSUER_ADDRESS: z
+    .string()
+    .refine(
+      (value): value is Address => isAddress(value),
+      'Invalid issuer address',
+    ),
   ALCHEMY_ACTIVITY_SIGNING_KEY: z.string().min(1),
 })
 
 const parsedEnv = envSchema.safeParse(process.env)
 if (!parsedEnv.success) {
-  logger.error(`Environment validation failed: ${JSON.stringify(parsedEnv.error.format())}`)
+  logger.error(
+    `Environment validation failed: ${JSON.stringify(parsedEnv.error.format())}`,
+  )
   process.exit(1)
 }
 

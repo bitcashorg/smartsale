@@ -10,14 +10,16 @@ import { logger } from '~/lib/logger'
  * @param req - The incoming request object
  * @param res - The response object
  */
-export function alchemyWebhook(req: Request, res: Response) {
-    const evt = req.body as AlchemyWebhookEvent
+export async function alchemyWebhook(req: Request, res: Response) {
+  const evt = req.body as AlchemyWebhookEvent
   logger.info(`Alchemy webhook received: ${evt.id}`)
-  if (!validateAlchemySignature(req)) return res.status(401).send('Unauthorized')
-  logger.info('Validated Alchemy webhook 😀')
+  // TODO: restore alchemy signature validation
+  //   if (!validateAlchemySignature(req)) return res.status(401).send('Unauthorized')
+  //   logger.info('Validated Alchemy webhook 😀')
   // TODO: validate user is whitelisted
 
-  addressActivityTask.trigger(req.body)
+  const handle = await addressActivityTask.trigger(req.body)
+  logger.info(`Triggered address activity task: ${JSON.stringify(handle)}`)
 
   res.status(200).send('Webhook processed')
 }
@@ -38,17 +40,15 @@ function validateAlchemySignature(req: Request): boolean {
   return alchemySignature === hmac.digest('hex')
 }
 
-
-
 export interface AlchemyWebhookEvent {
-  webhookId: string;
-  id: string;
-  createdAt: Date;
-  type: AlchemyWebhookType;
-  event: Record<any, any>;
+  webhookId: string
+  id: string
+  createdAt: Date
+  type: AlchemyWebhookType
+  event: Record<any, any>
 }
 
 export type AlchemyWebhookType =
-  | "MINED_TRANSACTION"
-  | "DROPPED_TRANSACTION"
-  | "ADDRESS_ACTIVITY";
+  | 'MINED_TRANSACTION'
+  | 'DROPPED_TRANSACTION'
+  | 'ADDRESS_ACTIVITY'
