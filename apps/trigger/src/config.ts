@@ -25,7 +25,7 @@ if (!parsedEnv.success) {
   process.exit(1)
 }
 
-export const appenv = {
+export const appConfig = {
   eosEvmApi: 'https://api.testnet.evm.eosnetwork.com',
   issuerKey: parsedEnv.data.ISSUER_KEY,
   issuerAddress: parsedEnv.data.ISSUER_ADDRESS,
