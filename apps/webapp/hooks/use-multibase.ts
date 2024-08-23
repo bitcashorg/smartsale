@@ -7,7 +7,6 @@ if (!multibaseKey) {
   console.error('Missing MULTIBASE_API_KEY')
 } else {
   init(multibaseKey)
-  console.info('Multibase Initialized')
 }
 
 export function useMultibase() {
