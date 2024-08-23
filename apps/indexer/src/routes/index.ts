@@ -10,6 +10,8 @@ import { logger } from '~/lib/logger'
 import { setupSentryErrorHandler } from '~/lib/sentry'
 import { alchemyWebhook } from './alchemy'
 import { healthcheck } from './healthcheck'
+import { addAlchemyContextToRequest, validateAlchemySignature } from './alchemy/helpers'
+import { appConfig } from '~/config'
 
 export function startExpress() {
   const app = express()
@@ -40,6 +42,14 @@ export function startExpress() {
   //     err: (err) => JSON.stringify(err)
   //   }
   // }))
+
+  // Middleware needed to validate the alchemy signature
+  app.use(
+    express.json({
+      verify: addAlchemyContextToRequest,
+    })
+  );
+  app.use(validateAlchemySignature(appConfig.evm.alchemy.activitySigningKey));
 
   // Routes
   app.get('/', healthcheck)
