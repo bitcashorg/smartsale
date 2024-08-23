@@ -1,9 +1,9 @@
-import * as fs from 'fs'
-import path from 'path'
 import type { Lang } from '@/dictionaries/locales'
 import { getFilePath, parseFile } from '@/lib/file'
 import { getErrorMessage } from 'app-lib'
+import * as fs from 'fs'
 import { uniq } from 'lodash'
+import path from 'path'
 import {
   type BlogArticleRecord,
   getBlogCategory,
@@ -21,9 +21,10 @@ export const getBlogData = async () => {
     { investingData, investingError },
     { startupData, startupError },
     { aiData, aiError },
-    { newsData, newsError },
+    // { newsData, newsError },
     { bitcashData, bitcashError },
     { aiResearchData, researchError },
+    { bitlauncherData, bitlauncherError },
   ] = await Promise.all([
     getLayoutText(),
     getPageSeoText('home'),
@@ -32,9 +33,10 @@ export const getBlogData = async () => {
     getBlogCategory('investing', undefined, 5),
     getBlogCategory('startup', undefined, 5),
     getBlogCategory('ai', undefined, 5),
-    getBlogCategory('news', undefined, 5),
+    // getBlogCategory('news', undefined, 5),
     getBlogCategory('bitcash', undefined, 5),
     getBlogCategory('ai-research', undefined, 5),
+    getBlogCategory('bitlauncher', undefined, 5),
   ])
   return {
     i18n,
@@ -49,12 +51,14 @@ export const getBlogData = async () => {
     startupError,
     aiData,
     aiError,
-    newsData,
-    newsError,
+    // newsData,
+    // newsError,
     bitcashData,
     bitcashError,
     aiResearchData,
     researchError,
+    bitlauncherError,
+    bitlauncherData,
   }
 }
 
@@ -64,17 +68,25 @@ export async function getArticleSections(
   const dirPath = `/dictionaries/${lang}/blog/`
   const fileName = `blog-index.json`
   const filePath = path.resolve(dirPath, fileName)
+  
+  let fileContents: { sections: ArticlesSection[] } | undefined
   // return cached translations
-
   try {
-    const fileContents = parseFile(filePath)
-    return fileContents.sections
+    // ? The idea is to get the file contents and return it if it exists and it should be up to date with the latest on DatoCMS, so we can reduce the amount of requests to DatoCMS
+    fileContents = parseFile(filePath)
+    // ? Due we are not updating the file contents frequently, we can return the file contents directly
+    // ! Make sure to have always published the latest changes on DatoCMS, else we won't grab it.
+    console.info('in', process.env.NODE_ENV)
+    if (process.env.NODE_ENV === 'production') {
+      return fileContents?.sections as ArticlesSection[]
+    }
   } catch (error) {
-    // console.log('😬 translation not found', getErrorMessage(error))
+    console.log('😬 translation not found', getErrorMessage(error))
     try {
+      console.log('😬 trying english version', { dirPath, filePath, fileName })
       const englishVersion = parseFile(`/dictionaries/en/blog/${fileName}`)
       if (englishVersion) {
-        // console.log('😬 returning english version')
+        console.log('😬 returning english version')
         return englishVersion.sections
       }
     } catch (error) {
@@ -82,70 +94,95 @@ export async function getArticleSections(
       return []
     }
   }
-  const {
-    bitcoinData,
-    cryptoData,
-    investingData,
-    startupData,
-    aiData,
-    newsData,
-    bitcashData,
-    aiResearchData,
-  } = await getBlogData()
 
-  const sections: ArticlesSection[] = [
-    {
-      name: 'AI',
-      slug: 'ai',
-      articles: (aiData?.slice(0, 4) || []) as BlogArticleRecord[],
-    },
-    {
-      name: 'AI Research',
-      slug: 'ai-research',
-      articles: (aiResearchData?.slice(0, 4) || []) as BlogArticleRecord[],
-    },
-    {
-      name: 'News',
-      slug: 'news',
-      articles: (newsData?.slice(0, 4) || []) as BlogArticleRecord[],
-    },
-    {
-      name: 'Bitcash',
-      slug: 'bitcash',
-      articles: (bitcashData?.slice(0, 4) || []) as BlogArticleRecord[],
-    },
-    {
-      name: 'Startup',
-      slug: 'startup',
-      articles: (startupData?.slice(1, 5) || []) as BlogArticleRecord[],
-    },
-    {
-      name: 'Crypto',
-      slug: 'crypto',
-      articles: (cryptoData?.slice(1, 5) || []) as BlogArticleRecord[],
-    },
-    {
-      name: 'Bitcoin',
-      slug: 'bitcoin',
-      articles: (bitcoinData?.slice(1, 5) || []) as BlogArticleRecord[],
-    },
-    {
-      name: 'Investing',
-      slug: 'investing',
-      articles: (investingData?.slice(1, 5) || []) as BlogArticleRecord[],
-    },
-  ]
+  try {
+    const {
+      bitcoinData,
+      cryptoData,
+      investingData,
+      startupData,
+      aiData,
+      // newsData,
+      bitcashData,
+      aiResearchData,
+      bitlauncherData,
+    } = await getBlogData()
+  
+    const sections: ArticlesSection[] = [
+      {
+        name: 'AI',
+        slug: 'ai',
+        articles: (aiData?.slice(0, 4) || []) as BlogArticleRecord[],
+      },
+      {
+        name: 'AI Research',
+        slug: 'ai-research',
+        articles: (aiResearchData?.slice(0, 4) || []) as BlogArticleRecord[],
+      },
+      // {
+      //   name: 'News',
+      //   slug: 'news',
+      //   articles: (newsData?.slice(0, 4) || []) as BlogArticleRecord[],
+      // },
+      {
+        name: 'Bitlauncher',
+        slug: 'bitlauncher',
+        articles: (bitlauncherData?.slice(0, 4) || []) as BlogArticleRecord[],
+      },
+      {
+        name: 'Bitcash',
+        slug: 'bitcash',
+        articles: (bitcashData?.slice(0, 4) || []) as BlogArticleRecord[],
+      },
+      {
+        name: 'Startup',
+        slug: 'startup',
+        articles: (startupData?.slice(1, 5) || []) as BlogArticleRecord[],
+      },
+      {
+        name: 'Crypto',
+        slug: 'crypto',
+        articles: (cryptoData?.slice(1, 5) || []) as BlogArticleRecord[],
+      },
+      {
+        name: 'Bitcoin',
+        slug: 'bitcoin',
+        articles: (bitcoinData?.slice(1, 5) || []) as BlogArticleRecord[],
+      },
+      {
+        name: 'Investing',
+        slug: 'investing',
+        articles: (investingData?.slice(1, 5) || []) as BlogArticleRecord[],
+      },
+    ]
 
-  sections.forEach((section) => {
-    section.articles.forEach((article) => {
-      article.contentBlock = []
+    sections.forEach((section) => {
+      section.articles.forEach((article) => {
+        article.contentBlock = []
+      })
     })
-  })
+  
+    if (fileContents?.sections && fileContents?.sections.length) {
+      // Check file sections against new sections. If no section found on files, then we update the sections
+      const fileSections = fileContents.sections
+      const updatedSections = sections.map((section) => {
+        const fileSection = fileSections.find((fs) => fs.name === section.name && fs.articles[0]._publishedAt === section.articles[0]._publishedAt)
+        if (fileSection) {
+          return fileSection
+        }
+        return section
+      })
+      fileContents.sections = updatedSections
+    }
 
-  fs.mkdirSync(dirPath, { recursive: true })
-  fs.writeFileSync(filePath, JSON.stringify({ sections }, null, 2))
-
-  return sections
+    fs.mkdirSync(getFilePath(dirPath), { recursive: true })
+    fs.writeFileSync(getFilePath(filePath), JSON.stringify(fileContents, null, 2))
+  
+    return fileContents?.sections as ArticlesSection[]
+  } catch (error) {
+    console.log('❌❌❌❌ error', error)
+    return []
+  }
 }
 
 export async function getRecentArticleSections(): Promise<ArticlesSection[]> {
@@ -155,7 +192,7 @@ export async function getRecentArticleSections(): Promise<ArticlesSection[]> {
     investingData,
     startupData,
     aiData,
-    newsData,
+    // newsData,
     bitcashData,
     aiResearchData,
   } = await getBlogData()
@@ -199,10 +236,17 @@ export async function getBlogCategoryLandingData(lang: Lang, category: string) {
   const filePath = path.resolve(dirPath, fileName)
   // console.log('getBlogCategoryLandingData', { dirPath, filePath })
 
+  let fileContents: { sections: ArticlesSection[] } | undefined
   // return cached translations
   try {
-    const fileContents = parseFile(filePath)
-    return fileContents
+    // ? The idea is to get the file contents and return it if it exists and it should be up to date with the latest on DatoCMS, so we can reduce the amount of requests to DatoCMS
+    fileContents = parseFile(filePath)
+    // ? Due we are not updating the file contents frequently, we can return the file contents directly
+    // ! Make sure to have always published the latest changes on DatoCMS, else we won't grab it.
+    console.info('in', process.env.NODE_ENV)
+    if (process.env.NODE_ENV === 'production') {
+      return fileContents?.sections as ArticlesSection[]
+    }
   } catch (error) {
     // console.log('error', error)
     try {
@@ -250,11 +294,24 @@ export async function getBlogCategoryLandingData(lang: Lang, category: string) {
     }
   })
 
-  const result = { sections, pageSeo }
+  if (fileContents?.sections && fileContents?.sections.length) {
+    // Check file sections against new sections. If no section found on files, then we update the sections
+    const fileSections = fileContents.sections
+    const updatedSections = sections.map((section) => {
+      const fileSection = fileSections.find((fs) => fs.name === section.name && fs.articles[0]._publishedAt === section.articles[0]._publishedAt)
+      if (fileSection) {
+        return fileSection
+      }
+      return section
+    })
+    fileContents.sections = updatedSections
+  }
+
+  const result = { sections: fileContents?.sections as ArticlesSection[], pageSeo }
 
   fs.mkdirSync(getFilePath(dirPath), { recursive: true })
   fs.writeFileSync(getFilePath(filePath), JSON.stringify(result, null, 2))
-
+  console.log(result)
   return result
 }
 
@@ -264,6 +321,12 @@ export type BlogArticleData = {
   topics: string[]
 }
 
+/////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////
+// TODO: On build, this is not creating the new files.../
+// TODO: Check this function hoisting...                /
+/////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////
 export async function getBlogArticleData(
   lang: Lang,
   category: string,
@@ -273,10 +336,17 @@ export async function getBlogArticleData(
   const fileName = `${slug}.json`
   const filePath = path.resolve(dirPath, fileName)
 
+  let fileContents: BlogArticleData | undefined
   // return cached translations
   try {
-    const fileContents: BlogArticleData = parseFile(filePath)
-    return fileContents
+    // ? The idea is to get the file contents and return it if it exists and it should be up to date with the latest on DatoCMS, so we can reduce the amount of requests to DatoCMS
+    fileContents = parseFile(filePath)
+    // ? Due we are not updating the file contents frequently, we can return the file contents directly
+    // ! Make sure to have always published the latest changes on DatoCMS, else we won't grab it.
+    console.info('in', process.env.NODE_ENV)
+    if (process.env.NODE_ENV === 'production') {
+      return fileContents as BlogArticleData
+    }
   } catch (error) {
     const englishVersion: BlogArticleData = parseFile(
       `/dictionaries/en/blog/${category}/${slug}.json`,
@@ -342,8 +412,21 @@ export async function getBlogArticleData(
   // always create an english dictionary
   const result: BlogArticleData = { relatedBlogs, blogContent, topics }
   const fullPath = getFilePath(filePath)
-  fs.mkdirSync(path.dirname(fullPath), { recursive: true })
-  fs.writeFileSync(fullPath, JSON.stringify(result, null, 2))
+
+  if (fileContents && fileContents.blogContent) {
+    // Check file article against new article. If no updated found on files, then we update the article
+    const fileArticle = fileContents
+    if (
+      fileArticle.blogContent.title === blogContent.title &&
+      fileArticle.blogContent._publishedAt === blogContent._publishedAt
+    ) {
+      return fileArticle
+    }
+  }
+  
+  // Rewrite the file with the new data
+  fs.mkdirSync(getFilePath(dirPath), { recursive: true })
+  fs.writeFileSync(getFilePath(dirPath), JSON.stringify(result, null, 2))
 
   return result
 }

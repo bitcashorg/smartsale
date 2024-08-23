@@ -6,6 +6,7 @@ import type {
   BlogBitcashRecord,
   BlogBitcoinModelFilter,
   BlogBitcoinRecord,
+  BlogBitlauncherRecord,
   BlogCryptoModelFilter,
   BlogInvestingRecord,
   BlogNewsModelFilter,
@@ -54,6 +55,9 @@ export async function getBlogCategory(
         break
       case 'bitcash':
         categoryRecordName = 'allBlogBitcashes'
+        break
+      case 'bitlauncher':
+        categoryRecordName = 'allBlogBitlaunchers'
         break
       case 'ai-research':
         categoryRecordName = 'allResearchAis'
@@ -121,10 +125,10 @@ export async function getBlogCategory(
       throw new Error('No records has been found for  ' + category)
     }
   } catch (err) {
-    // console.log(
-    //   'datocms-blog-category.service::getBlogCategory::[ERROR]:: ' + category,
-    //   err
-    // )
+    console.log(
+      'datocms-blog-category.service::getBlogCategory::[ERROR]:: ' + category,
+      err
+    )
 
     error = (err as Error).message
   } finally {
@@ -419,6 +423,53 @@ export async function getBlogCategories(): Promise<getBlogCategoriesTypes> {
         },
       },
 
+      allBlogBitlaunchers: {
+        __args: {
+          orderBy: ['_publishedAt_DESC'],
+          locale: 'en',
+          fallbackLocales: ['en'],
+        },
+        id: true,
+        topics: true,
+        title: true,
+        slug: true,
+        authorName: true,
+        authorPicture: {
+          url: true,
+        },
+        _publishedAt: true,
+        description: true,
+        thumbnail: {
+          url: true,
+        },
+        contentBlock: {
+          mainContent: {
+            value: true,
+          },
+          topImages: {
+            basename: true,
+            height: true,
+            width: true,
+            filename: true,
+            format: true,
+            alt: true,
+            url: true,
+          },
+        },
+        seo: {
+          description: true,
+          title: true,
+          twitterCard: true,
+          image: {
+            width: true,
+            height: true,
+            title: true,
+            alt: true,
+            url: true,
+          },
+        },
+      },
+
       allBlogBitcashes: {
         __args: {
           orderBy: ['_publishedAt_DESC'],
@@ -525,6 +576,7 @@ export async function getBlogCategories(): Promise<getBlogCategoriesTypes> {
       allBlogStartups: [defaultBlogArticle],
       allBlogAis: [defaultBlogArticle],
       allBlogNews: [defaultBlogArticle],
+      allBlogBitlaunchers: [defaultBlogArticle],
       allBlogBitcashes: [defaultBlogArticle],
       allResearchAis: [defaultBlogArticle],
     }
@@ -609,6 +661,7 @@ export interface BlogArticleRecord {
   id:
     | BlogAiRecord['id']
     | BlogNewsRecord['id']
+    | BlogBitlauncherRecord['id']
     | BlogBitcashRecord['id']
     | BlogBitcoinRecord['id']
     | BlogStartupRecord['id']
@@ -637,6 +690,7 @@ export interface getBlogCategoriesTypes {
   allBlogStartups: BlogArticleRecord[]
   allBlogAis: BlogArticleRecord[]
   allBlogNews: BlogArticleRecord[]
+  allBlogBitlaunchers: BlogArticleRecord[]
   allBlogBitcashes: BlogArticleRecord[]
   allResearchAis: BlogArticleRecord[]
 }
