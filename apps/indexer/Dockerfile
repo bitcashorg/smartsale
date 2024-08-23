@@ -13,7 +13,7 @@ COPY apps/alchemy/package.json ./apps/alchemy/package.json
 COPY packages/app-env/package.json ./packages/app-env/package.json
 COPY packages/app-contracts/package.json ./packages/app-contracts/package.json
 COPY packages/app-lib/package.json ./packages/app-lib/package.json
-COPY packages/config-typescript/package.json ./packages/config-typescript/package.json
+COPY packages/config-ts/package.json ./packages/config-ts/package.json
 
 # Copy the lock file
 COPY bun.lockb .
