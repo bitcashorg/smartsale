@@ -1,23 +1,13 @@
 import type { Chain } from 'viem'
 import {
   arbitrum,
-  aurora,
   avalanche,
   base,
   bsc,
-  celo,
-  cronos,
-  fantom,
-  gnosis,
-  harmonyOne,
-  kava,
   mainnet,
-  metis,
-  moonbeam,
   optimism,
   polygon,
   sepolia,
-  zkSync,
 } from 'viem/chains'
 
 export const eosEvmTestnet: Chain = {
@@ -41,26 +31,19 @@ export const eosEvmTestnet: Chain = {
   testnet: true,
 }
 
-const prodChains: Chain[] = [
-  arbitrum,
-  avalanche,
+export const prodChains: Chain[] = [
   base,
-  celo,
-  mainnet,
+  arbitrum,
   optimism,
   polygon,
-  zkSync,
-  bsc,
-  fantom,
-  moonbeam,
-  cronos,
-  kava,
-  metis,
-  gnosis,
-  aurora,
-  harmonyOne,
+  mainnet, // Ethereum
+  avalanche,
+  bsc, // BNB Chain
 ]
-const devChains: Chain[] = [eosEvmTestnet, sepolia]
+
+// Note: Solana is not included as it's not an EVM-compatible chain and not supported by viem
+
+export const devChains: Chain[] = [eosEvmTestnet, sepolia]
 
 // note: use .entries() to get an array
 export const appChains = {

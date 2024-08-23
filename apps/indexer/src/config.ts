@@ -21,6 +21,13 @@ const envSchema = z.object({
       (value): value is Address => isAddress(value),
       'Invalid issuer address',
     ),
+    PRESALE_ADDRESS: z
+    .string()
+    .refine(
+      (value): value is Address => isAddress(value),
+      'Invalid presale address',
+    ),
+
   ALCHEMY_ACTIVITY_SIGNING_KEY: z.string().min(1),
 })
 
@@ -33,6 +40,7 @@ if (!parsedEnv.success) {
 }
 
 export const appConfig = {
+  presaleAddress: parsedEnv.data.PRESALE_ADDRESS,
   sentry: {
     dsn: parsedEnv.data.SENTRY_DSN,
   },

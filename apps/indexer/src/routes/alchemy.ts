@@ -1,8 +1,28 @@
 import crypto from 'crypto'
+import type {  AlchemyWebhookEvent } from '@repo/alchemy'
 import { addressActivityTask } from '@repo/trigger'
+import { Network } from 'alchemy-sdk'
+import { prodChains } from 'app-env'
 import type { Request, Response } from 'express'
 import { appConfig } from '~/config'
 import { logger } from '~/lib/logger'
+import {AlchemyActivityEvent} from '@/Users/gaboesquivel/Code/smartsale/apps/alchemy/src/types';
+
+const chainIdToNetwork: Record<number, Network> = {
+  1: Network.ETH_MAINNET,
+  137: Network.MATIC_MAINNET,
+  42161: Network.ARB_MAINNET,
+  10: Network.OPT_MAINNET,
+  8453: Network.BASE_MAINNET,
+  43114: Network.AVAX_MAINNET,
+  56: Network.BNB_MAINNET,
+}
+
+const networks: Network[] = prodChains.map((chain) => {
+  const network = chainIdToNetwork[chain.id]
+  if (!network) throw new Error(`Unsupported chain ID: ${chain.id}`)
+  return network
+})
 
 /**
  * Handles incoming Alchemy webhook requests.
@@ -13,15 +33,29 @@ import { logger } from '~/lib/logger'
 export async function alchemyWebhook(req: Request, res: Response) {
   const evt = req.body as AlchemyWebhookEvent
   logger.info(`Alchemy webhook received: ${evt.id}`)
-  // TODO: restore alchemy signature validation
+    // TODO: restore alchemy signature validation
   //   if (!validateAlchemySignature(req)) return res.status(401).send('Unauthorized')
   //   logger.info('Validated Alchemy webhook 😀')
-  // TODO: validate user is whitelisted
+
+  const {network, activity} = evt.event
+
+  // Validate before triggering
+  if (
+    evt.type !== 'ADDRESS_ACTIVITY' ||
+    !networks.includes(network) ||
+    (activity.asset !== 'USDC' && activity.asset !== 'USDT') ||
+    activity.toAddress === appConfig.presaleAddress
+  ) {
+    return res.status(401).send('Unauthorized')
+  }
+
+
+  // TODO: validate addres is whitelisted
 
   const handle = await addressActivityTask.trigger(req.body)
   logger.info(`Triggered address activity task: ${JSON.stringify(handle)}`)
 
-  res.status(200).send('Webhook processed')
+  res.status(200).send(`Webhook ${evt.id} processed`)
 }
 
 /**
@@ -39,16 +73,3 @@ function validateAlchemySignature(req: Request): boolean {
   hmac.update(payload)
   return alchemySignature === hmac.digest('hex')
 }
-
-export interface AlchemyWebhookEvent {
-  webhookId: string
-  id: string
-  createdAt: Date
-  type: AlchemyWebhookType
-  event: Record<any, any>
-}
-
-export type AlchemyWebhookType =
-  | 'MINED_TRANSACTION'
-  | 'DROPPED_TRANSACTION'
-  | 'ADDRESS_ACTIVITY'
