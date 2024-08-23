@@ -106,7 +106,6 @@ if (typeof window !== 'undefined') {
   }
 }
 
-
 export function Providers({ children, ...props }: ThemeProviderProps) {
   return (
     <NextThemesProvider {...props}>
