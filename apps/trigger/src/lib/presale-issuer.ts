@@ -4,6 +4,11 @@ import { http, type Address } from 'viem'
 import { appConfig } from '../config'
 import { eosEvmTestnet } from '../tmp'
 
+/**
+ * Issues presale tokens to a specified address.
+ * @param to The address to receive the presale tokens
+ * @param amount The amount of presale tokens to issue
+ */
 export async function issuePresaleTokens(to: Address, amount: bigint) {
   console.log(`Issuing ${amount} tokens to address ${to}`)
 
