@@ -1,5 +1,9 @@
 import crypto from 'crypto'
-import type { AlchemyActivityEvent, AlchemyNetwork, AlchemyWebhookEvent } from '@repo/alchemy'
+import type {
+  AlchemyActivityEvent,
+  AlchemyNetwork,
+  AlchemyWebhookEvent,
+} from '@repo/alchemy'
 import { addressActivityTask } from '@repo/trigger'
 import { Network } from 'alchemy-sdk'
 import { prodChains } from 'app-env'
@@ -45,9 +49,11 @@ export async function alchemyWebhook(req: Request, res: Response) {
   // Validate event type and network
   const isAddressActivity = evt.type === 'ADDRESS_ACTIVITY'
   const isValidNetwork = networks.includes(network)
-  
+
   if (!isAddressActivity || !isValidNetwork) {
-    const errorMsg = !isAddressActivity ? `event type: ${evt.type}` : `network: ${network}`
+    const errorMsg = !isAddressActivity
+      ? `event type: ${evt.type}`
+      : `network: ${network}`
     logger.error(`Invalid: ${errorMsg}`)
     return res.status(401).send('Unauthorized')
   }
@@ -56,9 +62,11 @@ export async function alchemyWebhook(req: Request, res: Response) {
   for (const txn of activity) {
     const isValidAsset = txn.asset === 'USDC' || txn.asset === 'USDT'
     const isValidToAddress = txn.toAddress !== appConfig.presaleAddress
-    
+
     if (!isValidAsset || !isValidToAddress) {
-      const errorMsg = !isValidAsset ? `asset: ${txn.asset}` : `to address: ${txn.toAddress}`
+      const errorMsg = !isValidAsset
+        ? `asset: ${txn.asset}`
+        : `to address: ${txn.toAddress}`
       logger.error(`Invalid transaction: ${errorMsg}`)
       return res.status(401).send('Unauthorized')
     }

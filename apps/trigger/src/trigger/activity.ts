@@ -12,11 +12,18 @@ export const addressActivityTask = task({
       const activity: AlchemyActivity = payload.event.activity[0]
       console.log(activity)
 
-      if (!isAddress(activity.toAddress)) throw new Error(`Invalid to address: ${activity.toAddress}`)
+      if (!isAddress(activity.toAddress))
+        throw new Error(`Invalid to address: ${activity.toAddress}`)
 
-      const valueInTokenUnits = parseUnits(activity.value.toString(), STABLECOIN_DECIMALS)
+      const valueInTokenUnits = parseUnits(
+        activity.value.toString(),
+        STABLECOIN_DECIMALS,
+      )
 
-      const result = await issuePresaleTokens(activity.toAddress, valueInTokenUnits)
+      const result = await issuePresaleTokens(
+        activity.toAddress,
+        valueInTokenUnits,
+      )
       console.log(result)
     } catch (error) {
       logger.error('Error processing address activity', {

@@ -31,5 +31,4 @@ export interface AlchemyActivityEvent {
   activity: AlchemyActivity[]
 }
 
-
 export type AlchemyNetwork = keyof typeof Network
