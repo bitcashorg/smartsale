@@ -4,6 +4,7 @@
   "description": "bitlauncher monorepo",
   "author": "bitcash.org",
   "license": "MIT",
+  "type": "module",
   "private": true,
   "scripts": {
     "build": "turbo build --no-daemon",
