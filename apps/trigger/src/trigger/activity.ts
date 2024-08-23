@@ -1,4 +1,4 @@
-import type { AlchemyWebhookEvent, AlchemyActivity } from '@repo/alchemy'
+import type { AlchemyActivity, AlchemyWebhookEvent } from '@repo/alchemy'
 import { logger, task } from '@trigger.dev/sdk/v3'
 
 // AlchemyWebhookEvent
@@ -16,4 +16,3 @@ export const addressActivityTask = task({
     }
   },
 })
-

@@ -1,4 +1,4 @@
-import { Network } from 'alchemy-sdk'
+import type { Network } from 'alchemy-sdk'
 export interface AlchemyWebhookEvent {
   webhookId: string
   id: string

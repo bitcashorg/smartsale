@@ -21,7 +21,7 @@ const envSchema = z.object({
       (value): value is Address => isAddress(value),
       'Invalid issuer address',
     ),
-    PRESALE_ADDRESS: z
+  PRESALE_ADDRESS: z
     .string()
     .refine(
       (value): value is Address => isAddress(value),

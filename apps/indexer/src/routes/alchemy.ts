@@ -1,12 +1,12 @@
 import crypto from 'crypto'
-import type {  AlchemyWebhookEvent } from '@repo/alchemy'
+import { AlchemyActivityEvent } from '@/Users/gaboesquivel/Code/smartsale/apps/alchemy/src/types'
+import type { AlchemyWebhookEvent } from '@repo/alchemy'
 import { addressActivityTask } from '@repo/trigger'
 import { Network } from 'alchemy-sdk'
 import { prodChains } from 'app-env'
 import type { Request, Response } from 'express'
 import { appConfig } from '~/config'
 import { logger } from '~/lib/logger'
-import {AlchemyActivityEvent} from '@/Users/gaboesquivel/Code/smartsale/apps/alchemy/src/types';
 
 const chainIdToNetwork: Record<number, Network> = {
   1: Network.ETH_MAINNET,
@@ -33,11 +33,11 @@ const networks: Network[] = prodChains.map((chain) => {
 export async function alchemyWebhook(req: Request, res: Response) {
   const evt = req.body as AlchemyWebhookEvent
   logger.info(`Alchemy webhook received: ${evt.id}`)
-    // TODO: restore alchemy signature validation
+  // TODO: restore alchemy signature validation
   //   if (!validateAlchemySignature(req)) return res.status(401).send('Unauthorized')
   //   logger.info('Validated Alchemy webhook 😀')
 
-  const {network, activity} = evt.event
+  const { network, activity } = evt.event
 
   // Validate before triggering
   if (
@@ -48,7 +48,6 @@ export async function alchemyWebhook(req: Request, res: Response) {
   ) {
     return res.status(401).send('Unauthorized')
   }
-
 
   // TODO: validate addres is whitelisted
 
