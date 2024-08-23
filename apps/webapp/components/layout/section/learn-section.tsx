@@ -24,16 +24,16 @@ export function LearnSection() {
                   className="mx-auto bg-[radial-gradient(#7D81D96E,transparent_43%)]"
                 />
               </picture>
-              <CardHeader className="z-30 px-3 text-center lg:px-16 gap-y-3">
+              <CardHeader className="z-30 px-5 text-center lg:px-16 gap-y-3">
                 <CardTitle className="text-[35px] font-semibold leading-normal text-left lg:text-4xl lg:leading-normal">
                   {mainCard.title}
                 </CardTitle>
                 <div className="w-28 h-[2px] bg-secondary-500 mb-7" />
               </CardHeader>
-              <CardContent className="z-30 px-3 text-left lg:px-16 pb-14">
+              <CardContent className="z-30 px-5 text-left lg:px-16 pb-14">
                 <div className="flex flex-col items-start justify-center gap-y-5">
                   {mainCard.paragraphs.map((p, i) => (
-                    <p key={`main-card_paragraph-${i + 1}`} className="text-base font-medium text-[#7A7CA8]">{p}</p>
+                    <p key={`main-card_paragraph-${i + 1}`} className="text-base font-medium text-infoForeground">{p}</p>
                   ))}
                 </div>
               </CardContent>
@@ -46,7 +46,7 @@ export function LearnSection() {
             <Link href={card.articleLink} target="__blank" key={`secondary-card_link-${i + 1}`}>
               <Card className="relative min-h-44 bg-[#0F113E] rounded-[48px] h-full flex jutify-center items-center">
                 <div className="shadow-md bg-gradient-to-b from-cornflowerblue-200 grid grid-cols-[60%_40%] gap-2 items-center justify-center h-full">
-                  <CardHeader className="px-3 py-16 pr-0 text-center lg:px-20 lg:pr-0 gap-y-3 lg:gap-y-14">
+                  <CardHeader className="px-5 py-16 pr-0 text-center lg:px-20 lg:pr-0 gap-y-3 lg:gap-y-14">
                     <CardTitle className="mx-auto text-[35px] font-semibold leading-normal text-left lg:text-4xl">
                       {card.title}
                     </CardTitle>

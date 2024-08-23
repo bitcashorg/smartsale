@@ -28,7 +28,7 @@ export default function StepsSection({ lang, dict }: StepsSectionProps) {
                 {step.title}
               </h3>
               <div className="flex max-w-full gap-4">
-                <p className="w-[calc(100%-75px)] text-center text-[18px] leading-6 font-normal sm:max-w-[324px] md:text-[17px] lg:text-[14px] xl:text-[18px]">
+                <p className="w-[calc(100%-75px)] text-center leading-6 sm:max-w-[324px] md:text-[17px] lg:text-[14px]">
                   {step.description}
                 </p>
                 {index > 0 ? (

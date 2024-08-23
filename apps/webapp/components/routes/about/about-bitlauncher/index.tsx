@@ -1,11 +1,11 @@
+import { LearnSection } from '@/components/layout/section/learn-section'
+import StepsSection from '@/components/layout/section/steps-section'
 import { Banner } from '@/components/shared/banner'
 import { CommunityCard } from '@/components/shared/community-card'
 import { getDictionary } from '@/dictionaries'
 import { Lang } from '@/dictionaries/locales'
 import Image from 'next/image'
-import { LearnSection } from '@/components/layout/section/learn-section'
-import StepsSection from '@/components/layout/section/steps-section'
-import Balancer from 'react-wrap-balancer';
+import Balancer from 'react-wrap-balancer'
 
 export async function AboutBitlauncherPageLanding({
   content,
@@ -19,7 +19,7 @@ export async function AboutBitlauncherPageLanding({
         <div className="grid items-center justify-between gap-4 px-0 pb-[80px] md:px-6 lg:grid-cols-2">
           <div className="space-y-4">
             <h2 className="sectionsHeading">  <Balancer>{content.title}</Balancer></h2>
-            <section className="text-[18px] font-normal leading-normal opacity-60">
+            <section className="text-base font-normal leading-normal text-infoForeground">
               {content.paragraph}
               <br />
               <br />

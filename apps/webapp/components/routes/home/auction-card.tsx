@@ -2,11 +2,11 @@ import { Project } from '@/lib/projects'
 import { cn } from '@/lib/utils'
 import Image from 'next/image'
 import Link from 'next/link'
-import React, { Suspense } from 'react'
-import { MotionFigcaption } from './motion-figcaption'
-import { AuctionCardButtons } from './auction-card-buttons'
+import { Suspense } from 'react'
 import { isMobile } from 'react-device-detect'
 import Balancer from 'react-wrap-balancer'
+import { AuctionCardButtons } from './auction-card-buttons'
+import { MotionFigcaption } from './motion-figcaption'
 
 export function AuctionCard({
   project,
@@ -60,7 +60,7 @@ export function AuctionCard({
           <h3 className="text-xl font-bold">
             <Balancer>{title}</Balancer>
           </h3>
-          <p className="max-w-sm mt-2 text-sm opacity-65">{pitch}</p>
+          <p className="max-w-sm mt-2 text-sm text-infoForeground">{pitch}</p>
         </div>
         <div className="flex flex-col items-center justify-between w-full px-4 pb-6 md:mt-auto lg:pb-8 xl:px-6">
           <ul className="flex flex-col w-full gap-2 mb-6 lg:mb-8">

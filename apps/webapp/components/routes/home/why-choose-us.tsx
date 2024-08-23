@@ -1,8 +1,8 @@
-import { Card } from '@/components/ui/card'
-import * as Icons from 'lucide-react'
 import { Section } from '@/components/shared/section'
-import { Feature } from '@/types/home'
+import { Card } from '@/components/ui/card'
 import { Lang } from '@/dictionaries/locales'
+import { Feature } from '@/types/home'
+import * as Icons from 'lucide-react'
 
 export function WhyChooseUs({ lang, dict }: WhyChooseUsProps) {
   const content = dict.whyChooseUs
@@ -17,7 +17,7 @@ export function WhyChooseUs({ lang, dict }: WhyChooseUsProps) {
               <h3 className="mb-5 text-lg font-bold min-h-20">
                 {feature.title}
               </h3>
-              <p className="text-[18px] text-gray-500 parragraph dark:text-gray-400">
+              <p className="text-gray-500 parragraph dark:text-gray-400">
                 {feature.description}
               </p>
             </Card>
