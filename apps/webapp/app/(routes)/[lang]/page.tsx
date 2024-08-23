@@ -1,4 +1,3 @@
-import dynamic from 'next/dynamic'
 import { BannerOne } from '@/components/_wip/banner-one'
 import { Categories } from '@/components/_wip/categories'
 import { FeatureOne } from '@/components/_wip/feature-one'
@@ -13,6 +12,7 @@ import { getDictionary } from '@/dictionaries'
 import { Lang } from '@/dictionaries/locales'
 import { appConfig } from '@/lib/config'
 import { getProjects } from '@/lib/projects'
+import dynamic from 'next/dynamic'
 
 const DynamicFeatures = dynamic(() => import('@/components/routes/home/features').then(mod => mod.Features), { ssr: false })
 
@@ -30,16 +30,12 @@ export default async function IndexPage({ params: { lang } }: IndexPageProps) {
       <DynamicUpcoming projects={projects} dict={dict} />
 
       <div className="narrow-container">
-        {appConfig.features.sections ? (
-          <>
-            <DynamicFeatures lang={lang} dict={dict} />
-            <DynamicWhyChooseUs lang={lang} dict={dict} />
-            <StepsSection lang={lang} dict={dict} />
-            <LearnSection />
-            <RecentArticles lang={lang} />
-            <FAQ lang={lang} dict={dict} />
-          </>
-        ) : null}
+        <DynamicFeatures lang={lang} dict={dict} />
+        <DynamicWhyChooseUs lang={lang} dict={dict} />
+        <StepsSection lang={lang} dict={dict} />
+        <LearnSection />
+        <RecentArticles lang={lang} />
+        <FAQ lang={lang} dict={dict} />
 
         {appConfig.features.explorations ? (
           <>
