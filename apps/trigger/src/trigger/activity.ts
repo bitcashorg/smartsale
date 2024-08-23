@@ -1,4 +1,5 @@
 import { logger, task } from '@trigger.dev/sdk/v3'
+import { getErrorMessage } from 'app-lib'
 
 // AlchemyWebhookEvent
 export const addressActivityTask = task({
@@ -9,7 +10,7 @@ export const addressActivityTask = task({
   
     } catch (error) {
       logger.error('Error processing address activity', {
-        error: (error as Error).message,
+        error: getErrorMessage(error),
       })
       throw error
     }

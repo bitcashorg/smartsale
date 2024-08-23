@@ -10,8 +10,6 @@ import { logger } from '~/lib/logger'
 import { setupSentryErrorHandler } from '~/lib/sentry'
 import { alchemyWebhook } from './alchemy'
 import { healthcheck } from './healthcheck'
-import { addAlchemyContextToRequest, validateAlchemySignature } from './alchemy/helpers'
-import { appConfig } from '~/config'
 
 export function startExpress() {
   const app = express()
@@ -20,30 +18,43 @@ export function startExpress() {
   // Trust proxy
   app.set('trust proxy', 1)
 
-  app.use(express.json())
-
-  // Sentry error handler
-  setupSentryErrorHandler(app)
-
   // Security Middlewares
   app.use(helmet())
+  app.use(express.json({ limit: '1mb' }))
 
+  // Rate limiting
   app.use(
     rateLimit({
       windowMs: 60 * 1000, // 1 minute
       max: 100, // limit each IP to 100 requests per windowMs
+      standardHeaders: true,
+      legacyHeaders: false,
     }),
   )
 
- //Logging middleware
-  app.use(pinoHttp({ 
-    logger,
-    serializers: {
-      req: (req) => JSON.stringify(req),
-      res: (res) => JSON.stringify(res),
-      err: (err) => JSON.stringify(err)
-    }
-  }))
+  // Sentry error handler
+  setupSentryErrorHandler(app)
+
+  // Logging middleware
+  // app.use(pinoHttp({ 
+  //   logger,
+  //   serializers: {
+  //     req: (req) => JSON.stringify({
+  //       method: req.method,
+  //       url: req.url,
+  //       headers: req.headers,
+  //     }),
+  //     res: (res) => JSON.stringify({
+  //       statusCode: res.statusCode,
+  //     }),
+  //     err: (err) => JSON.stringify({
+  //       type: err.constructor.name,
+  //       message: err.message,
+  //       stack: err.stack,
+  //     }),
+  //   },
+  // }))
+
   // Routes
   app.get('/', healthcheck)
   app.post('/alchemy', alchemyWebhook)
