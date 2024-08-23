@@ -2,7 +2,6 @@
   "name": "@repo/alchemy",
   "module": "src/index.ts",
   "types": "src/index.d.ts",
-  "type": "module",
   "scripts": {
     "create": "bun src/create.ts"
   },
