@@ -10,10 +10,12 @@ import Image from 'next/image'
 import { Suspense } from 'react'
 import Balancer from 'react-wrap-balancer'
 
+// ? Hero must be always minimum of 90vh and reducing it by coyunting the height of the header.
+// ? This way user would be able to see a hint of the next section.
 export function NewHomeHero() {
   return (
-    <section className="narrow-container mb-0 flex min-h-[calc(100vh-4rem)] flex-col justify-between">
-      <main className="flex flex-col items-center justify-center flex-1 p-6 lg:flex-row">
+    <section className="narrow-container mb-0 flex min-h-[calc(90vh-70px)] flex-col justify-between">
+      <div className="flex flex-col items-center justify-center flex-1 p-6 lg:flex-row">
         <div className="text-left">
           <h1 className="heroHeading">
             <Balancer>
@@ -33,7 +35,7 @@ export function NewHomeHero() {
             className="relative object-contain h-[400px] w-[400px]"
           />
         </div>
-      </main>
+      </div>
 
       <footer className="flex flex-col items-center justify-between p-6 pb-10 space-y-4 md:flex-row md:space-y-0">
         <VideoDialog

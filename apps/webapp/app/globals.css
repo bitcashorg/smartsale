@@ -298,7 +298,7 @@ input[type='number'] {
 
 /* Heading in About - Security - Whitepaper */
 .sectionsHeading {
-  @apply text-[4.188rem] font-normal leading-normal lg:text-[5.438rem];
+  @apply text-[4.188rem] font-normal leading-normal md:text-[4.3504rem] lg:text-[5.438rem];
 } 
 
 /* Subheading in About - Security - Whitepaper */
@@ -327,7 +327,7 @@ input[type='number'] {
 }
 
 .mobile-nav {
-  height: calc(100vh - 64px) !important;
+  height: calc(100vh - 70px) !important;
   width: 100vw;
   overflow: hidden;
   @apply fixed inset-x-0 flex flex-col items-center pb-20 overflow-hidden top-16 justify-evenly bg-background;
