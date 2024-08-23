@@ -1,4 +1,5 @@
 import crypto from 'crypto'
+import type { AlchemyWebhookEvent } from '@repo/alchemy'
 import { addressActivityTask } from '@repo/trigger'
 import type { Request, Response } from 'express'
 import { appConfig } from '~/config'
@@ -39,16 +40,3 @@ function validateAlchemySignature(req: Request): boolean {
   hmac.update(payload)
   return alchemySignature === hmac.digest('hex')
 }
-
-export interface AlchemyWebhookEvent {
-  webhookId: string
-  id: string
-  createdAt: Date
-  type: AlchemyWebhookType
-  event: Record<any, any>
-}
-
-export type AlchemyWebhookType =
-  | 'MINED_TRANSACTION'
-  | 'DROPPED_TRANSACTION'
-  | 'ADDRESS_ACTIVITY'
