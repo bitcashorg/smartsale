@@ -1,9 +1,10 @@
 {
-  "name": "alchemy-hooks",
+  "name": "@repo/alchemy",
   "module": "src/index.ts",
+  "types": "src/index.d.ts",
   "type": "module",
   "scripts": {
-    "push": "bun src/index.ts"
+    "create": "bun src/create.ts"
   },
   "devDependencies": {
     "@types/bun": "latest"
