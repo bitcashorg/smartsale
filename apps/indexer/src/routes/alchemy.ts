@@ -1,5 +1,5 @@
 import crypto from 'crypto'
-import type { AlchemyWebhookEvent } from '@repo/alchemy'
+import type { AlchemyActivityEvent, AlchemyNetwork, AlchemyWebhookEvent } from '@repo/alchemy'
 import { addressActivityTask } from '@repo/trigger'
 import { Network } from 'alchemy-sdk'
 import { prodChains } from 'app-env'
@@ -7,21 +7,24 @@ import type { Request, Response } from 'express'
 import { appConfig } from '~/config'
 import { logger } from '~/lib/logger'
 
-const chainIdToNetwork: Record<number, Network> = {
-  1: Network.ETH_MAINNET,
-  137: Network.MATIC_MAINNET,
-  42161: Network.ARB_MAINNET,
-  10: Network.OPT_MAINNET,
-  8453: Network.BASE_MAINNET,
-  43114: Network.AVAX_MAINNET,
-  56: Network.BNB_MAINNET,
+// Mapping of chain IDs to Alchemy SDK Network types
+const chainIdToNetwork: Record<number, AlchemyNetwork> = {
+  1: 'ETH_MAINNET',
+  137: 'MATIC_MAINNET',
+  42161: 'ARB_MAINNET',
+  10: 'OPT_MAINNET',
+  8453: 'BASE_MAINNET',
+  43114: 'MATIC_MAINNET',
+  56: 'BNB_MAINNET',
 }
 
-const networks: Network[] = prodChains.map((chain) => {
+// Create an array of supported networks based on production chains
+const networks: AlchemyNetwork[] = prodChains.map((chain) => {
   const network = chainIdToNetwork[chain.id]
   if (!network) throw new Error(`Unsupported chain ID: ${chain.id}`)
   return network
 })
+logger.info(`Supported networks: ${networks.join(', ')}`)
 
 /**
  * Handles incoming Alchemy webhook requests.
@@ -32,24 +35,38 @@ const networks: Network[] = prodChains.map((chain) => {
 export async function alchemyWebhook(req: Request, res: Response) {
   const evt = req.body as AlchemyWebhookEvent
   logger.info(`Alchemy webhook received: ${evt.id}`)
+  logger.info(JSON.stringify(evt))
   // TODO: restore alchemy signature validation
-  //   if (!validateAlchemySignature(req)) return res.status(401).send('Unauthorized')
-  //   logger.info('Validated Alchemy webhook 😀')
+  // if (!validateAlchemySignature(req)) return res.status(401).send('Unauthorized')
+  // logger.info('Validated Alchemy webhook 😀')
 
-  const { network, activity } = evt.event
+  const { network, activity } = evt.event as AlchemyActivityEvent
 
-  // Validate before triggering
-  if (
-    evt.type !== 'ADDRESS_ACTIVITY' ||
-    !networks.includes(network) ||
-    (activity.asset !== 'USDC' && activity.asset !== 'USDT') ||
-    activity.toAddress === appConfig.presaleAddress
-  ) {
+  // Validate event type and network
+  const isAddressActivity = evt.type === 'ADDRESS_ACTIVITY'
+  const isValidNetwork = networks.includes(network)
+  
+  if (!isAddressActivity || !isValidNetwork) {
+    const errorMsg = !isAddressActivity ? `event type: ${evt.type}` : `network: ${network}`
+    logger.error(`Invalid: ${errorMsg}`)
     return res.status(401).send('Unauthorized')
   }
 
-  // TODO: validate addres is whitelisted
+  // Validate each transaction in the activity
+  for (const txn of activity) {
+    const isValidAsset = txn.asset === 'USDC' || txn.asset === 'USDT'
+    const isValidToAddress = txn.toAddress !== appConfig.presaleAddress
+    
+    if (!isValidAsset || !isValidToAddress) {
+      const errorMsg = !isValidAsset ? `asset: ${txn.asset}` : `to address: ${txn.toAddress}`
+      logger.error(`Invalid transaction: ${errorMsg}`)
+      return res.status(401).send('Unauthorized')
+    }
+  }
 
+  // TODO: validate address is whitelisted
+
+  // Trigger the address activity task
   const handle = await addressActivityTask.trigger(req.body)
   logger.info(`Triggered address activity task: ${JSON.stringify(handle)}`)
 

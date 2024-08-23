@@ -1,5 +1,5 @@
 // import { TestnetBLPL } from 'app-contracts'
-import { createWalletClient, erc20Abi } from 'viem'
+import { createWalletClient, erc20Abi, formatUnits } from 'viem'
 import { http, type Address } from 'viem'
 import { appConfig } from '../config'
 import { eosEvmTestnet } from '../tmp'
@@ -10,8 +10,6 @@ import { eosEvmTestnet } from '../tmp'
  * @param amount The amount of presale tokens to issue
  */
 export async function issuePresaleTokens(to: Address, amount: bigint) {
-  console.log(`Issuing ${amount} tokens to address ${to}`)
-
   try {
     const walletClient = createWalletClient({
       chain: eosEvmTestnet,
@@ -19,12 +17,13 @@ export async function issuePresaleTokens(to: Address, amount: bigint) {
       key: appConfig.issuerKey,
       account: appConfig.issuerAccount,
     })
-    return walletClient.writeContract({
+    const trxHash = await walletClient.writeContract({
       address: TestnetBLPL.address,
       abi: TestnetBLPL.abi,
       functionName: 'transfer',
       args: [to, amount],
     })
+    return `Issued ${formatUnits(amount, 6)} tokens to ${to} on transaction ${trxHash}`
   } catch (error) {
     console.log((error as Error).message)
     return null

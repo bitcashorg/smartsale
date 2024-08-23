@@ -27,6 +27,9 @@ export interface AlchemyActivity {
 }
 
 export interface AlchemyActivityEvent {
-  network: Network
+  network: AlchemyNetwork
   activity: AlchemyActivity[]
 }
+
+
+export type AlchemyNetwork = keyof typeof Network
