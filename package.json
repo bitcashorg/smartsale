@@ -5,6 +5,7 @@
   "author": "bitcash.org",
   "license": "MIT",
   "private": true,
+  "type": "module",
   "scripts": {
     "build": "turbo build --no-daemon",
     "dev": "turbo dev --no-daemon --parallel",
