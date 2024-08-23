@@ -108,7 +108,6 @@ module.exports = {
       fontFamily: {
         sans: ['Futura PT', ...fontFamily.sans],
         'futura-pt-bold': ['Futura PT Bold', 'sans-serif'],
-        'futura-pt-condensed': ['Futura PT Heavy', 'sans-serif'],
         'futura-pt-demi': ['Futura PT Demi', 'sans-serif'],
         'lufga-bold': 'var(--font-lufga-bold)',
       },

@@ -1,4 +1,4 @@
-@import url('https://use.typekit.net/zgc6fnv.css');
+@import url("https://use.typekit.net/zgc6fnv.css");
 
 @tailwind base;
 @tailwind components;
@@ -136,11 +136,11 @@ h6 {
 }
 
 .open-sans {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-variation-settings: 'wdth' 100;
+  font-variation-settings: "wdth" 100;
 }
 
 input:focus {
@@ -154,7 +154,7 @@ input::-webkit-inner-spin-button {
 }
 
 /* Firefox */
-input[type='number'] {
+input[type="number"] {
   -moz-appearance: textfield;
 }
 
@@ -192,7 +192,7 @@ input[type='number'] {
 
 .newsletter-wrapper {
   @apply mx-auto box-content flex flex-col items-center px-0 sm:rounded-3xl sm:text-center;
-  background: url('/images/newsletter-bg.webp') center center no-repeat;
+  background: url("/images/newsletter-bg.webp") center center no-repeat;
   background-size: cover;
 }
 
@@ -262,7 +262,7 @@ input[type='number'] {
 *[data-title]::before {
   @apply pointer-events-none absolute left-0 h-0 w-0 border-r-[5px] border-t-[5px] border-transparent transition-all;
 
-  content: '';
+  content: "";
   top: -10px;
   left: 40%;
   transform: rotate(45deg);
@@ -323,13 +323,13 @@ input[type='number'] {
 }
 
 .infopages-background--whitepaper {
-  background-image: url('/images/info-bg-whitepaper.webp');
+  background-image: url("/images/info-bg-whitepaper.webp");
 }
 .infopages-background--about {
-  background-image: url('/images/info-bg-about.webp');
+  background-image: url("/images/info-bg-about.webp");
 }
 .infopages-background--security {
-  background-image: url('/images/info-bg-security.webp');
+  background-image: url("/images/info-bg-security.webp");
 }
 
 /* BLUR DOT EFFECT TO BACKGROUND CIRCLE UPCOMING SECTION */
