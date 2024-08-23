@@ -22,7 +22,7 @@ export async function alchemyWebhook(req: Request, res: Response) {
   const handle = await addressActivityTask.trigger(req.body)
   logger.info(`Triggered address activity task: ${JSON.stringify(handle)}`)
 
-  res.status(200).send('Webhook processed')
+  res.status(200).send(`Webhook ${evt.id} processed`)
 }
 
 /**
