@@ -24,7 +24,7 @@
     "@genql/runtime": "^2.10.0",
     "@headlessui/react": "^2.1.2",
     "@hookform/resolvers": "^3.9.0",
-    "@multibase/js": "^0.1.15",
+    "@multibase/js": "latest",
     "@next/bundle-analyzer": "^14.2.5",
     "@next/env": "14.2.5",
     "@next/third-parties": "latest",
