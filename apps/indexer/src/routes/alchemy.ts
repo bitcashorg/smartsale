@@ -1,5 +1,4 @@
 import crypto from 'crypto'
-import { AlchemyActivityEvent } from '@/Users/gaboesquivel/Code/smartsale/apps/alchemy/src/types'
 import type { AlchemyWebhookEvent } from '@repo/alchemy'
 import { addressActivityTask } from '@repo/trigger'
 import { Network } from 'alchemy-sdk'
