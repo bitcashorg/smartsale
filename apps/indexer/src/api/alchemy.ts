@@ -11,6 +11,7 @@ import { prodChains } from 'app-env'
 import type { Request, Response } from 'express'
 import { appConfig } from '~/config'
 import { logger } from '~/lib/logger'
+import {isAddressRegisteredForPresale} from '~/src/lib/supabase-client';
 
 // Mapping of chain IDs to Alchemy SDK Network types
 const chainIdToNetwork: Record<number, AlchemyNetwork> = {
@@ -51,8 +52,6 @@ export async function alchemyWebhook(req: Request, res: Response) {
   const isAddressActivity = evt.type === 'ADDRESS_ACTIVITY'
   const isValidNetwork = networks.includes(network)
 
-  // supportedTokens make sure the address is in the supportedTokens arra
-
   if (!isAddressActivity || !isValidNetwork) {
     const errorMsg = !isAddressActivity
       ? `event type: ${evt.type}`
@@ -75,6 +74,7 @@ export async function alchemyWebhook(req: Request, res: Response) {
       !isValidToAddress && `to address: ${txn.toAddress}`,
       !isSupportedToken && `token: ${txn.rawContract.address}`,
       !txn.log && 'missing transaction log',
+      // !isAddressRegisteredForPresale(txn.fromAddress, 1) && 'address is not registered for presale',
     ].filter(Boolean)
 
     if (validationErrors.length) {
