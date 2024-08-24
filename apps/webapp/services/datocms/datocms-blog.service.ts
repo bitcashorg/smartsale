@@ -93,101 +93,100 @@ export async function getArticleSections(
     }
   }
 
-  try {
-    const {
-      bitcoinData,
-      cryptoData,
-      investingData,
-      startupData,
-      aiData,
-      // newsData,
-      bitcashData,
-      aiResearchData,
-      bitlauncherData,
-    } = await getBlogData()
+  const {
+    bitcoinData,
+    cryptoData,
+    investingData,
+    startupData,
+    aiData,
+    // newsData,
+    bitcashData,
+    aiResearchData,
+    bitlauncherData,
+  } = await getBlogData()
 
-    const sections: ArticlesSection[] = [
-      {
-        name: 'AI',
-        slug: 'ai',
-        articles: (aiData?.slice(0, 4) || []) as BlogArticleRecord[],
-      },
-      {
-        name: 'AI Research',
-        slug: 'ai-research',
-        articles: (aiResearchData?.slice(0, 4) || []) as BlogArticleRecord[],
-      },
-      // {
-      //   name: 'News',
-      //   slug: 'news',
-      //   articles: (newsData?.slice(0, 4) || []) as BlogArticleRecord[],
-      // },
-      {
-        name: 'Bitlauncher',
-        slug: 'bitlauncher',
-        articles: (bitlauncherData?.slice(0, 4) || []) as BlogArticleRecord[],
-      },
-      {
-        name: 'Bitcash',
-        slug: 'bitcash',
-        articles: (bitcashData?.slice(0, 4) || []) as BlogArticleRecord[],
-      },
-      {
-        name: 'Startup',
-        slug: 'startup',
-        articles: (startupData?.slice(1, 5) || []) as BlogArticleRecord[],
-      },
-      {
-        name: 'Crypto',
-        slug: 'crypto',
-        articles: (cryptoData?.slice(1, 5) || []) as BlogArticleRecord[],
-      },
-      {
-        name: 'Bitcoin',
-        slug: 'bitcoin',
-        articles: (bitcoinData?.slice(1, 5) || []) as BlogArticleRecord[],
-      },
-      {
-        name: 'Investing',
-        slug: 'investing',
-        articles: (investingData?.slice(1, 5) || []) as BlogArticleRecord[],
-      },
-    ]
+  const sections: ArticlesSection[] = [
+    {
+      name: 'AI',
+      slug: 'ai',
+      articles: (aiData?.slice(0, 4) || []) as BlogArticleRecord[],
+    },
+    {
+      name: 'AI Research',
+      slug: 'ai-research',
+      articles: (aiResearchData?.slice(0, 4) || []) as BlogArticleRecord[],
+    },
+    // {
+    //   name: 'News',
+    //   slug: 'news',
+    //   articles: (newsData?.slice(0, 4) || []) as BlogArticleRecord[],
+    // },
+    {
+      name: 'Bitlauncher',
+      slug: 'bitlauncher',
+      articles: (bitlauncherData?.slice(0, 4) || []) as BlogArticleRecord[],
+    },
+    {
+      name: 'Bitcash',
+      slug: 'bitcash',
+      articles: (bitcashData?.slice(0, 4) || []) as BlogArticleRecord[],
+    },
+    {
+      name: 'Startup',
+      slug: 'startup',
+      articles: (startupData?.slice(1, 5) || []) as BlogArticleRecord[],
+    },
+    {
+      name: 'Crypto',
+      slug: 'crypto',
+      articles: (cryptoData?.slice(1, 5) || []) as BlogArticleRecord[],
+    },
+    {
+      name: 'Bitcoin',
+      slug: 'bitcoin',
+      articles: (bitcoinData?.slice(1, 5) || []) as BlogArticleRecord[],
+    },
+    {
+      name: 'Investing',
+      slug: 'investing',
+      articles: (investingData?.slice(1, 5) || []) as BlogArticleRecord[],
+    },
+  ]
 
-    sections.forEach((section) => {
-      section.articles.forEach((article) => {
-        article.contentBlock = []
-      })
+  sections.forEach((section) => {
+    section.articles.forEach((article) => {
+      article.contentBlock = []
     })
+  })
 
-    if (fileContents?.sections?.length) {
-      // Check file sections against new sections. If no section found on files, then we update the sections
-      const fileSections = fileContents.sections
-      const updatedSections = sections.map((section) => {
-        const fileSection = fileSections.find(
-          (fs) =>
-            fs.name === section.name &&
-            fs.articles[0]._publishedAt === section.articles[0]._publishedAt,
-        )
-        if (fileSection) {
-          return fileSection
-        }
-        return section
-      })
-      fileContents.sections = updatedSections
-    }
-
-    fs.mkdirSync(getFilePath(dirPath), { recursive: true })
-    fs.writeFileSync(
-      getFilePath(filePath),
-      JSON.stringify(fileContents, null, 2),
-    )
-
-    return fileContents?.sections as ArticlesSection[]
-  } catch (error) {
-    console.log('❌❌❌❌ error', error)
-    return []
+  if (fileContents?.sections?.length) {
+    // Check file sections against new sections. If no section found on files, then we update the sections
+    const fileSections = fileContents.sections
+    const updatedSections = sections.map((section) => {
+      const fileSection = fileSections.find(
+        (fs) =>
+          fs.name === section.name &&
+          fs.articles[0]._publishedAt === section.articles[0]._publishedAt,
+      )
+      if (fileSection) {
+        return fileSection
+      }
+      return section
+    })
+    fileContents.sections = updatedSections
   }
+
+  // TODO: Fix cache file update on production build.
+  // ! It's not updating the file and we might choose to add cache to the user's browser instead.
+  // ? Or moving this to actions.ts
+  try {
+    fs.mkdirSync(getFilePath(dirPath), { recursive: true })
+    fs.writeFileSync(getFilePath(filePath), JSON.stringify(fileContents, null, 2))
+  } catch (error) {
+    console.error('❌❌❌❌ Failed to update cache on file.', error)
+  }
+
+  return fileContents?.sections as ArticlesSection[]
 }
 
 export async function getRecentArticleSections(): Promise<ArticlesSection[]> {
@@ -321,8 +320,15 @@ export async function getBlogCategoryLandingData(lang: Lang, category: string) {
     pageSeo,
   }
 
-  fs.mkdirSync(getFilePath(dirPath), { recursive: true })
-  fs.writeFileSync(getFilePath(filePath), JSON.stringify(result, null, 2))
+  // TODO: Fix cache file update on production build.
+  // ! It's not updating the file and we might choose to add cache to the user's browser instead.
+  // ? Or moving this to actions.ts
+  try {
+    fs.mkdirSync(getFilePath(dirPath), { recursive: true })
+    fs.writeFileSync(getFilePath(filePath), JSON.stringify(result, null, 2))
+  } catch (error) {
+    console.error('❌❌❌❌ Failed to update cache on file.', error)
+  }
 
   return result
 }
@@ -433,9 +439,15 @@ export async function getBlogArticleData(
     }
   }
 
-  // Rewrite the file with the new data
-  fs.mkdirSync(getFilePath(dirPath), { recursive: true })
-  fs.writeFileSync(getFilePath(filePath), JSON.stringify(result, null, 2))
+  // TODO: Fix cache file update on production build.
+  // ! It's not updating the file and we might choose to add cache to the user's browser instead.
+  // ? Or moving this to actions.ts
+  try {
+    fs.mkdirSync(getFilePath(dirPath), { recursive: true })
+    fs.writeFileSync(getFilePath(filePath), JSON.stringify(result, null, 2))
+  } catch (error) {
+    console.error('❌❌❌❌ Failed to update cache on file.', error)
+  }
 
   return result
 }
