@@ -159,21 +159,21 @@ export async function getArticleSections(
     })
   })
 
-  if (fileContents?.sections?.length) {
-    // Check file sections against new sections. If no section found on files, then we update the sections
-    const fileSections = fileContents.sections
-    const updatedSections = sections.map((section) => {
-      const fileSection = fileSections.find(
-        (fs) =>
-          fs.name === section.name &&
-          fs.articles[0]._publishedAt === section.articles[0]._publishedAt,
-      )
-      if (fileSection) {
-        return fileSection
-      }
-      return section
-    })
-    fileContents.sections = updatedSections
+  // Check file sections against new sections. If no section found on files, then we update the sections
+  const fileSections = fileContents?.sections || []
+  const updatedSections = sections.map((section) => {
+    const fileSection = fileSections?.find(
+      (fs) =>
+        fs.name === section.name &&
+        fs.articles[0]._publishedAt === section.articles[0]._publishedAt,
+    )
+    if (fileSection) {
+      return fileSection
+    }
+    return section
+  })
+  fileContents = {
+    sections: updatedSections,
   }
 
   // TODO: Fix cache file update on production build.
@@ -186,7 +186,7 @@ export async function getArticleSections(
     console.error('❌❌❌❌ Failed to update cache on file.', error)
   }
 
-  return fileContents?.sections as ArticlesSection[]
+  return sections as ArticlesSection[]
 }
 
 export async function getRecentArticleSections(): Promise<ArticlesSection[]> {
@@ -298,21 +298,21 @@ export async function getBlogCategoryLandingData(lang: Lang, category: string) {
     }
   })
 
-  if (fileContents?.sections && fileContents?.sections.length) {
-    // Check file sections against new sections. If no section found on files, then we update the sections
-    const fileSections = fileContents.sections
-    const updatedSections = sections.map((section) => {
-      const fileSection = fileSections.find(
-        (fs) =>
-          fs.name === section.name &&
-          fs.articles[0]._publishedAt === section.articles[0]._publishedAt,
-      )
-      if (fileSection) {
-        return fileSection
-      }
-      return section
-    })
-    fileContents.sections = updatedSections
+  // Check file sections against new sections. If no section found on files, then we update the sections
+  const fileSections = fileContents?.sections || []
+  const updatedSections = sections.map((section) => {
+    const fileSection = fileSections?.find(
+      (fs) =>
+        fs.name === section.name &&
+        fs.articles[0]._publishedAt === section.articles[0]._publishedAt,
+    )
+    if (fileSection) {
+      return fileSection
+    }
+    return section
+  })
+  fileContents = {
+    sections: updatedSections,
   }
 
   const result = {
