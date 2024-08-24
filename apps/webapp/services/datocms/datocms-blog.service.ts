@@ -75,8 +75,7 @@ export async function getArticleSections(
     // ? The idea is to get the file contents and return it if it exists and it should be up to date with the latest on DatoCMS, so we can reduce the amount of requests to DatoCMS
     fileContents = parseFile(filePath)
     // ? Due we are not updating the file contents frequently, we can return the file contents directly
-    // ! Make sure to have always published the latest changes on DatoCMS, else we won't grab it.
-    console.info('in', process.env.NODE_ENV)
+    // console.info('in', process.env.NODE_ENV)
     if (process.env.NODE_ENV === 'production') {
       return fileContents?.sections as ArticlesSection[]
     }
@@ -242,8 +241,7 @@ export async function getBlogCategoryLandingData(lang: Lang, category: string) {
     // ? The idea is to get the file contents and return it if it exists and it should be up to date with the latest on DatoCMS, so we can reduce the amount of requests to DatoCMS
     fileContents = parseFile(filePath)
     // ? Due we are not updating the file contents frequently, we can return the file contents directly
-    // ! Make sure to have always published the latest changes on DatoCMS, else we won't grab it.
-    console.info('in', process.env.NODE_ENV)
+    // console.info('in', process.env.NODE_ENV)
     if (process.env.NODE_ENV === 'production') {
       return fileContents?.sections as ArticlesSection[]
     }
@@ -311,7 +309,7 @@ export async function getBlogCategoryLandingData(lang: Lang, category: string) {
 
   fs.mkdirSync(getFilePath(dirPath), { recursive: true })
   fs.writeFileSync(getFilePath(filePath), JSON.stringify(result, null, 2))
-  console.log(result)
+
   return result
 }
 
@@ -321,18 +319,12 @@ export type BlogArticleData = {
   topics: string[]
 }
 
-/////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////
-// TODO: On build, this is not creating the new files.../
-// TODO: Check this function hoisting...                /
-/////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////
 export async function getBlogArticleData(
   lang: Lang,
   category: string,
   slug: string,
 ) {
-  const dirPath = `dictionaries/${lang}/blog/${category}`
+  const dirPath = `/dictionaries/${lang}/blog/${category}`
   const fileName = `${slug}.json`
   const filePath = path.resolve(dirPath, fileName)
 
@@ -342,8 +334,7 @@ export async function getBlogArticleData(
     // ? The idea is to get the file contents and return it if it exists and it should be up to date with the latest on DatoCMS, so we can reduce the amount of requests to DatoCMS
     fileContents = parseFile(filePath)
     // ? Due we are not updating the file contents frequently, we can return the file contents directly
-    // ! Make sure to have always published the latest changes on DatoCMS, else we won't grab it.
-    console.info('in', process.env.NODE_ENV)
+    // console.info('in', process.env.NODE_ENV)
     if (process.env.NODE_ENV === 'production') {
       return fileContents as BlogArticleData
     }
@@ -426,7 +417,7 @@ export async function getBlogArticleData(
   
   // Rewrite the file with the new data
   fs.mkdirSync(getFilePath(dirPath), { recursive: true })
-  fs.writeFileSync(getFilePath(dirPath), JSON.stringify(result, null, 2))
+  fs.writeFileSync(getFilePath(filePath), JSON.stringify(result, null, 2))
 
   return result
 }
