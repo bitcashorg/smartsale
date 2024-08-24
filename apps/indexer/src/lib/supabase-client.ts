@@ -46,16 +46,39 @@ export async function upsertOrder(data: TablesInsert<'order'>) {
   return data
 }
 
-export async function upsertTransfers(data: TablesInsert<'transfer'>) {
-  console.log('upsert transfers', data)
-  const { data: result, error } = await supabase
-    .from('transfer')
-    .upsert(data, { onConflict: 'trx_hash' })
-    .select()
+// export async function upsertTransfers(data: TablesInsert<'transfer'>) {
+//   console.log('upsert transfers', data)
+//   const { data: result, error } = await supabase
+//     .from('transfer')
+//     .upsert(data, { onConflict: 'trx_hash' })
+//     .select()
 
-  if (error) console.error('Error:', error)
+//   if (error) console.error('Error:', error)
 
-  console.log('Result:', result)
+//   console.log('Result:', result)
 
-  return data
+//   return data
+// }
+
+export async function isAddressRegisteredForPresale(
+  address: string,
+  presaleId: number,
+): Promise<boolean> {
+  const { data, error } = await supabase
+    .from('presale')
+    .select('id')
+    .eq('address', address)
+    .eq('id', presaleId)
+    .single()
+
+  if (error) {
+    if (error.code === 'PGRST116') {
+      // No matching row found, address is not registered
+      return false
+    }
+    console.error('Error checking presale registration:', error)
+    throw error
+  }
+
+  return !!data
 }

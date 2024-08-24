@@ -100,15 +100,15 @@ function PresaleDeposit() {
             onSuccess: (trxId) => {
               console.log('Transaction ID:', trxId)
               toast.success(`Deposit successful`)
-              saveDeposit({
-                amount: Number(parseUnits(amount, evmToken.decimals)),
-                chain_id: evmToken.chainId,
-                from: address,
-                to: presaleAddress,
-                token: evmToken.address,
-                trx_hash: trxId,
-                type: 'deposit',
-              })
+              // saveDeposit({
+              //   amount: Number(parseUnits(amount, evmToken.decimals)),
+              //   chain_id: evmToken.chainId,
+              //   from: address,
+              //   to: presaleAddress,
+              //   token: evmToken.address,
+              //   trx_hash: trxId,
+              //   type: 'deposit',
+              // })
             },
           },
         )
