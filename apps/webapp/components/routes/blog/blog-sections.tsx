@@ -1,9 +1,9 @@
-import Link from 'next/link'
 import { cn } from '@/lib/utils'
 import { ArticlesSection } from '@/services/datocms'
+import { LangProp } from '@/types/routing.type'
+import Link from 'next/link'
 import { ArticleCard } from '../../shared/article-card'
 import { LucideIcons } from './lucide-icons'
-import { LangProp } from '@/types/routing.type'
 
 export function BlogSections({
   sections,
@@ -39,7 +39,7 @@ export function BlogSections({
                 </Link>
               </div>
 
-              <div className="grid w-full grid-cols-1 gap-6 py-5 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5">
+              <ul className="sm:grid-cols-auto-dense flex w-full flex-col gap-20 py-5 sm:grid sm:grid-cols-[repeat(auto-fill,minmax(300px,1fr))] sm:flex-wrap md:gap-5 lg:grid-cols-[repeat(auto-fill,minmax(260px,1fr))]">
                 {section?.articles
                   // ?.slice(0, 4)
                   ?.map((post, index) => (
@@ -49,9 +49,13 @@ export function BlogSections({
                       key={post.id + '-' + index}
                       lang={lang}
                       meta={true}
+                      className={cn(
+                        index === 3 ? 'md:hidden xl:block' : '',
+                        index === 4 ? 'lg:hidden 2xl:block' : '',
+                      )}
                     />
                   ))}
-              </div>
+              </ul>
             </section>
           )
       )}

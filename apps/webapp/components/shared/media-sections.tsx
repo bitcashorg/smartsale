@@ -1,9 +1,9 @@
-import { YouTubePlaylistItem } from '@/services/youtube/index'
-import { MediaCard } from './media-card'
 import { LucideIcons } from '@/components/routes/blog/lucide-icons'
 import { cn } from '@/lib/utils'
-import Link from 'next/link'
+import { YouTubePlaylistItem } from '@/services/youtube/index'
 import { LangProp } from '@/types/routing.type'
+import Link from 'next/link'
+import { MediaCard } from './media-card'
 
 export function MediaSections({ sections, lang }: MediaSectionsProps) {
   return (
@@ -27,7 +27,7 @@ export function MediaSections({ sections, lang }: MediaSectionsProps) {
                 </Link>
               </div>
 
-              <ul className="grid w-full grid-cols-1 gap-6 py-5 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5">
+              <ul className="sm:grid-cols-auto-dense flex w-full flex-col gap-20 py-5 sm:grid sm:grid-cols-[repeat(auto-fill,minmax(300px,1fr))] sm:flex-wrap md:gap-5 lg:grid-cols-[repeat(auto-fill,minmax(260px,1fr))]">
                 {section?.videos?.map((video, index) => (
                   <MediaCard
                     video={video}
@@ -35,8 +35,8 @@ export function MediaSections({ sections, lang }: MediaSectionsProps) {
                     lang={lang}
                     className={cn(
                       index >= 2 && 'hidden sm:block',
-                      index >= 4 && 'md:block',
-                      index >= 5 && 'xl:block',
+                      index === 3 ? 'md:hidden xl:block' : '',
+                      index >= 4 && 'md:block lg:hidden 2xl:block',
                     )}
                   />
                 ))}
