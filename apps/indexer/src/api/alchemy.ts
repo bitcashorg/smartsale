@@ -1,4 +1,5 @@
 import crypto from 'crypto'
+import { supportedTokens } from '@/Users/gaboesquivel/Code/smartsale/packages/tokens/src/index'
 import type {
   AlchemyActivityEvent,
   AlchemyNetwork,
@@ -10,7 +11,6 @@ import { prodChains } from 'app-env'
 import type { Request, Response } from 'express'
 import { appConfig } from '~/config'
 import { logger } from '~/lib/logger'
-import {supportedTokens} from '@/Users/gaboesquivel/Code/smartsale/packages/tokens/src/index';
 
 // Mapping of chain IDs to Alchemy SDK Network types
 const chainIdToNetwork: Record<number, AlchemyNetwork> = {
@@ -42,7 +42,8 @@ export async function alchemyWebhook(req: Request, res: Response) {
   logger.info(`Alchemy webhook received: ${JSON.stringify(evt)}`)
 
   // TODO: restore alchemy signature validation
-  if (!validateAlchemySignature(req)) return res.status(401).send('Unauthorized')
+  if (!validateAlchemySignature(req))
+    return res.status(401).send('Unauthorized')
 
   const { network, activity } = evt.event as AlchemyActivityEvent
 
@@ -66,14 +67,14 @@ export async function alchemyWebhook(req: Request, res: Response) {
     const isValidToAddress = txn.toAddress !== appConfig.presaleAddress
 
     const isSupportedToken = supportedTokens.some(
-      (token) => txn.rawContract.address === token.address
+      (token) => txn.rawContract.address === token.address,
     )
 
     const validationErrors = [
       !isValidAsset && `asset: ${txn.asset}`,
       !isValidToAddress && `to address: ${txn.toAddress}`,
       !isSupportedToken && `token: ${txn.rawContract.address}`,
-      !txn.log && 'missing transaction log'
+      !txn.log && 'missing transaction log',
     ].filter(Boolean)
 
     if (validationErrors.length) {
