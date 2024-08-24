@@ -1,6 +1,6 @@
 {
   "name": "@repo/tokens",
-  "module": "src/index.ts",
+  "main": "src/index.ts",
   "devDependencies": {
     "@types/bun": "latest"
   },

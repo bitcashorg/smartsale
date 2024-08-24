@@ -1,16 +1,16 @@
 import crypto from 'crypto'
-import { supportedTokens } from '@/Users/gaboesquivel/Code/smartsale/packages/tokens/src/index'
+
 import type {
   AlchemyActivityEvent,
   AlchemyNetwork,
   AlchemyWebhookEvent,
 } from '@repo/alchemy'
 import { addressActivityTask } from '@repo/trigger'
-import { Network } from 'alchemy-sdk'
 import { prodChains } from 'app-env'
 import type { Request, Response } from 'express'
 import { appConfig } from '~/config'
 import { logger } from '~/lib/logger'
+import { supportedTokens } from '@repo/tokens'
 
 // Mapping of chain IDs to Alchemy SDK Network types
 const chainIdToNetwork: Record<number, AlchemyNetwork> = {
