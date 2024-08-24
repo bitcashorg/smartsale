@@ -3,6 +3,10 @@
 This project sets up Alchemy webhooks to listen for blockchain events.
 These hooks invoke Trigger.dev jobs that process the events using Viem.
 
+## Getting Started
+
+This project follows the [Alchemy SDK Developer Challenge Guide](https://docs.alchemy.com/docs/sdk-developer-challenge-guide-7) to set up and configure Alchemy webhooks. The guide provides step-by-step instructions. For detailed implementation steps and best practices, refer to the guide above.
+
 
 ## Dependencies
 

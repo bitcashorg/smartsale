@@ -10,6 +10,7 @@ export default async function BitlauncherWhitePaper({
   const dict = await getDictionary(params.lang)
   return (
     <>
+      <section className="pt-[80]">
       <BgHeader
         heading={'Bitlauncher Whitepaper'}
         subheading={'Be Part of the Intelligent Future'}
@@ -19,6 +20,7 @@ export default async function BitlauncherWhitePaper({
       <div className="content-container z-30 bg-background !py-10 px-7 md:px-3 md:py-24">
         <PageContent data={dict.whitepaper.content.slice(1)} />
       </div>
+      </section>
     </>
   )
 }

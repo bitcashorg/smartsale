@@ -123,7 +123,7 @@ html {
 
 body,
 p {
-  @apply font-futura-pt-demi text-base font-normal;
+  @apply text-base font-normal font-futura-pt-demi;
 }
 
 h1,
@@ -132,7 +132,7 @@ h3,
 h4,
 h5,
 h6 {
-  @apply font-bold tracking-tight;
+  @apply tracking-tight font-futura-pt-bold;
 }
 
 .open-sans {
@@ -191,17 +191,17 @@ input[type="number"] {
 }
 
 .newsletter-wrapper {
-  @apply mx-auto box-content flex flex-col items-center px-0 sm:rounded-3xl sm:text-center;
-  background: url("/images/newsletter-bg.webp") center center no-repeat;
+  @apply box-content flex flex-col items-center px-0 mx-auto sm:rounded-3xl sm:text-center;
+  background: url('/images/newsletter-bg.webp') center center no-repeat;
   background-size: cover;
 }
 
 .narrow-container {
-  @apply container md:px-20;
+  @apply container md:px-10 xl:px-20;
 }
 
 .content-container {
-  @apply mx-auto flex w-full max-w-screen-md flex-col gap-10 px-5 py-10 md:py-24;
+  @apply flex flex-col w-full max-w-screen-md gap-10 px-5 py-10 mx-auto md:py-24;
 }
 
 /** Scrollbar Styling */
@@ -245,6 +245,17 @@ input[type="number"] {
   }
 }
 
+iframe[title="reCAPTCHA"],
+.grecaptcha-badge {
+  display: relative;
+  z-index: 0;
+  opacity: 0.333;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
 /** Tooltip Styling */
 
 *[data-title]::after {
@@ -283,12 +294,31 @@ input[type="number"] {
 }
 
 /* TYPOGRAPHY */
+
+.heroHeading {
+  @apply text-6xl font-bold leading-[76px];
+}
+
 .heading {
-  @apply text-4xl font-bold md:text-5xl;
+  @apply text-4xl font-bold leading-normal md:text-4xl;
+}
+
+.newsletterHeading {
+  @apply text-center text-[40.50px] font-extrabold leading-[45px] md:text-4xl sm:text-4xl;
+}
+
+/* Heading in About - Security - Whitepaper */
+.sectionsHeading {
+  @apply text-[4.188rem] font-normal leading-normal md:text-[4.3504rem] lg:text-[5.438rem];
+} 
+
+/* Subheading in About - Security - Whitepaper */
+.sectionsSubheading{
+  @apply text-start text-2xl font-medium leading-[42.35px] text-[#ff51ed] md:text-[2.188rem];
 }
 
 .heading2 {
-  @apply text-2xl font-bold md:text-4xl;
+  @apply text-2xl font-bold leading-[42px] md:text-4xl;
 }
 
 .heading3 {
@@ -308,10 +338,10 @@ input[type="number"] {
 }
 
 .mobile-nav {
-  height: calc(100vh - 64px) !important;
+  height: calc(100vh - 70px) !important;
   width: 100vw;
   overflow: hidden;
-  @apply fixed inset-x-0 top-16 flex flex-col items-center justify-evenly overflow-hidden bg-background pb-20;
+  @apply fixed inset-x-0 flex flex-col items-center pb-20 overflow-hidden top-16 justify-evenly bg-background;
 }
 
 /* INFOPAGES BG COVER*/

@@ -15,7 +15,7 @@ export function TokenizationLanding() {
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                   {section.title}
                 </h2>
-                <p className="max-w-[900px] text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                <p className="max-w-[900px] text-infoForeground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   {section.description}
                 </p>
               </div>
@@ -27,7 +27,7 @@ export function TokenizationLanding() {
                     <li key={detailIndex}>
                       <div className="grid gap-1">
                         <h3 className="text-xl font-bold">{detail.header}</h3>
-                        <p className="text-gray-500 dark:text-gray-400">
+                        <p className="text-infoForeground">
                           {detail.content}
                         </p>
                       </div>

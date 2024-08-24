@@ -31,6 +31,7 @@ module.exports = {
         ring: 'hsla(var(--ring))',
         background: 'hsla(var(--background))',
         foreground: 'hsla(var(--foreground))',
+        infoForeground: '#9395AF',
         cornflowerblue: {
           100: 'rgba(125, 129, 217, 0.2)',
           200: 'rgba(125, 129, 217, 0.2)',
@@ -177,7 +178,7 @@ module.exports = {
         'sub-1-lg': ['36px', { lineHeight: '40px' }],
         'sub-1-md': ['28px', { lineHeight: '40px' }],
         'sub-2-lg': [
-          '24px',
+          '22px',
           { lineHeight: '28px' },
           { fontFamily: 'futura-pt-bold' },
         ],
