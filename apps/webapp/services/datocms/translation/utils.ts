@@ -1,6 +1,6 @@
-import {
+import type {
   BlogArticleRecord,
-  MainArticleContentBlock
+  MainArticleContentBlock,
 } from '@/services/datocms/datacms-blog-category.service'
 
 export interface TranslationData {
@@ -16,7 +16,7 @@ export interface TranslationData {
 
 // Function to extract text for translation
 export function extractTextForTranslation(
-  blogData: BlogArticleRecord
+  blogData: BlogArticleRecord,
 ): TranslationData {
   return {
     title: blogData.title || '',
@@ -25,19 +25,19 @@ export function extractTextForTranslation(
     seo: blogData.seo
       ? {
           title: blogData.seo.title || '',
-          description: blogData.seo.description || ''
+          description: blogData.seo.description || '',
         }
       : {},
     contentBlock: blogData.contentBlock
       ? optimizeContentBlock(blogData.contentBlock)
-      : undefined
+      : undefined,
   }
 }
 
 // Function to inject text after translation
 export function injectTextAfterTranslation(
   blogData: BlogArticleRecord,
-  translatedData: TranslationData
+  translatedData: TranslationData,
 ): BlogArticleRecord {
   // console.log('translatedData', translatedData)
   blogData.title = translatedData.title
@@ -51,7 +51,7 @@ export function injectTextAfterTranslation(
   if (translatedData.contentBlock) {
     blogData.contentBlock = reconstructContentBlock(
       translatedData.contentBlock,
-      blogData.contentBlock
+      blogData.contentBlock,
     )
   }
   return blogData
@@ -60,7 +60,7 @@ export function injectTextAfterTranslation(
 type ContentBlockTranslation = (string | string[])[]
 
 function optimizeContentBlock(
-  contentBlock: MainArticleContentBlock['contentBlock']
+  contentBlock: MainArticleContentBlock['contentBlock'],
 ): ContentBlockTranslation {
   // console.log('optimizeContentBlock', JSON.stringify(contentBlock))
 
@@ -73,14 +73,14 @@ function optimizeContentBlock(
     return ''
   }
 
-  return contentBlock.map(block =>
-    extractValues(block.mainContent.value.document)
+  return contentBlock.map((block) =>
+    extractValues(block.mainContent.value.document),
   )
 }
 
 function reconstructContentBlock(
   translatedContentBlock: ContentBlockTranslation,
-  originalContentBlock: MainArticleContentBlock['contentBlock']
+  originalContentBlock: MainArticleContentBlock['contentBlock'],
 ): MainArticleContentBlock['contentBlock'] {
   function applyTranslation(original: any, translation: any): void {
     if (original.value && translation) {
@@ -98,7 +98,7 @@ function reconstructContentBlock(
   originalContentBlock.forEach((block: any, index: number) => {
     applyTranslation(
       block.mainContent.value.document,
-      translatedContentBlock[index]
+      translatedContentBlock[index],
     )
   })
 
@@ -112,7 +112,7 @@ export function extractTitleAndDescriptionNested(article: BlogArticleRecord) {
     topics: article.topics || [],
     seo: {
       title: article.seo?.title || '',
-      description: article.seo?.description || ''
-    }
+      description: article.seo?.description || '',
+    },
   }
 }

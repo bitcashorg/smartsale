@@ -11,7 +11,7 @@ export function useDepositAndPlaceOrder() {
     minBuyAmounts, // uint96[] memory _minBuyAmounts,
     sellAmounts, // uint96[] memory _sellAmounts,
     prevSellOrders, // bytes32[] memory _prevSellOrders,
-    allowListCallData // bytes calldata allowListCallData
+    allowListCallData, // bytes calldata allowListCallData
   }: DepositAndPlaceOrderParams) => {
     // console.log(
     //   'placing order....',
@@ -32,8 +32,8 @@ export function useDepositAndPlaceOrder() {
         minBuyAmounts,
         sellAmounts,
         prevSellOrders,
-        allowListCallData
-      ]
+        allowListCallData,
+      ],
     })
   }
 

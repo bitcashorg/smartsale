@@ -2,11 +2,7 @@
   "relatedBlogs": [],
   "blogContent": {
     "id": "198277150",
-    "topics": [
-      "大型语言模型",
-      "指令微调",
-      "多模态"
-    ],
+    "topics": ["大型语言模型", "指令微调", "多模态"],
     "title": "大型多模态模型指令微调扩展的实证研究",
     "slug": "an-empirical-study-of-scaling-instruct-tuned-large-multimodal-models",
     "authorName": "Prof. Otto Nomos",
@@ -228,9 +224,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Scaling Beyond 13B"
                             },
                             {
@@ -249,9 +243,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Exploration Domains"
                             },
                             {
@@ -270,9 +262,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Consistent Benefits from Scaling"
                             },
                             {
@@ -291,9 +281,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Resolution & Data Mixing"
                             },
                             {
@@ -312,9 +300,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Enhancing Language Capabilities"
                             },
                             {
@@ -348,9 +334,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Diverse Applications"
                             },
                             {
@@ -369,9 +353,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Performance Boost"
                             },
                             {
@@ -390,9 +372,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Cost-effective Fine-tuning"
                             },
                             {
@@ -411,9 +391,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Better Image Analysis"
                             },
                             {
@@ -432,9 +410,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Promotion of Open Science"
                             },
                             {
@@ -468,9 +444,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Computational Constraints"
                             },
                             {
@@ -489,9 +463,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Transfer to Practical Scenarios"
                             },
                             {
@@ -561,9 +533,5 @@
       }
     }
   },
-  "topics": [
-    "大语言模型",
-    "指令微调",
-    "多模态"
-  ]
+  "topics": ["大语言模型", "指令微调", "多模态"]
 }

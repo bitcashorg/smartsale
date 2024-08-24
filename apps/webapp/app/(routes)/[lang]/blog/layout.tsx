@@ -1,6 +1,6 @@
-import { Metadata } from 'next'
-import { ReactNode } from 'react'
 import { locales } from '@/dictionaries/locales'
+import type { Metadata } from 'next'
+import type { ReactNode } from 'react'
 
 export default function BlogLayout({ children }: RootLayoutProps) {
   return (
@@ -14,7 +14,7 @@ export default function BlogLayout({ children }: RootLayoutProps) {
 
 // generate static routes for a given set of locales,
 export async function generateStaticParams() {
-  return locales.map(lang => ({ lang }))
+  return locales.map((lang) => ({ lang }))
 }
 
 interface RootLayoutProps {
@@ -24,7 +24,7 @@ interface RootLayoutProps {
 export const metadata: Metadata = {
   title: {
     default: 'Blog',
-    template: `%s - Blog`
+    template: `%s - Blog`,
   },
-  description: 'Ai and Web3 articles, community with tips and latest updates.'
+  description: 'Ai and Web3 articles, community with tips and latest updates.',
 }

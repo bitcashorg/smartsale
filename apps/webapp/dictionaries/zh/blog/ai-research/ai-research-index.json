@@ -6,13 +6,7 @@
       "articles": [
         {
           "id": "198277124",
-          "topics": [
-            "大型语言模型",
-            "金融",
-            "医疗保健",
-            "法律",
-            "提示工程"
-          ],
+          "topics": ["大型语言模型", "金融", "医疗保健", "法律", "提示工程"],
           "title": "通过阅读理解来适应大型语言模型",
           "slug": "adapting-large-language-models-via-reading-comprehension",
           "authorName": "Prof. Otto Nomos",
@@ -40,10 +34,7 @@
         },
         {
           "id": "198277342",
-          "topics": [
-            "大语言模型",
-            "多语言"
-          ],
+          "topics": ["大语言模型", "多语言"],
           "title": "OpenBA: 一个从头预训练的开源150亿参数双语非对称seq2seq模型",
           "slug": "openba-an-open-sourced-15b-bilingual-asymmetric-seq2seq-model-pre-trained-from-sc",
           "authorName": "Prof. Otto Nomos",
@@ -71,10 +62,7 @@
         },
         {
           "id": "198277117",
-          "topics": [
-            "大语言模型",
-            "检索"
-          ],
+          "topics": ["大语言模型", "检索"],
           "title": "PDFTriage: 长结构化文档的问答系统",
           "slug": "pdftriage-question-answering-over-long-structured-documents",
           "authorName": "Prof. Otto Nomos",
@@ -102,10 +90,7 @@
         },
         {
           "id": "198277138",
-          "topics": [
-            "大型语言模型",
-            "微调"
-          ],
+          "topics": ["大型语言模型", "微调"],
           "title": "排序LLaMA：通过排序微调（SoFT）解锁大型语言模型中间层的动态推理潜力",
           "slug": "sorted-llama-unlocking-the-potential-of-intermediate-layers-of-large-language-mod",
           "authorName": "Prof. Otto Nomos",
@@ -133,11 +118,7 @@
         },
         {
           "id": "198277150",
-          "topics": [
-            "大语言模型",
-            "指令微调",
-            "多模态"
-          ],
+          "topics": ["大语言模型", "指令微调", "多模态"],
           "title": "大规模指令微调大型多模态模型的实证研究",
           "slug": "an-empirical-study-of-scaling-instruct-tuned-large-multimodal-models",
           "authorName": "Prof. Otto Nomos",
@@ -165,11 +146,7 @@
         },
         {
           "id": "198277160",
-          "topics": [
-            "大语言模型",
-            "智能代理",
-            "游戏"
-          ],
+          "topics": ["大语言模型", "智能代理", "游戏"],
           "title": "心智代理:涌现的游戏交互",
           "slug": "mindagent-emergent-gaming-interaction",
           "authorName": "Prof. Otto Nomos",
@@ -197,10 +174,7 @@
         },
         {
           "id": "198277196",
-          "topics": [
-            "大型语言模型",
-            "结构化数据"
-          ],
+          "topics": ["大型语言模型", "结构化数据"],
           "title": "Struc-Bench: 大型语言模型真的擅长生成复杂的结构化数据吗?",
           "slug": "struc-bench-are-large-language-models-really-good-at-generating-complex-structure",
           "authorName": "Prof. Otto Nomos",
@@ -228,11 +202,7 @@
         },
         {
           "id": "198277217",
-          "topics": [
-            "大型语言模型",
-            "隐私",
-            "边缘计算"
-          ],
+          "topics": ["大型语言模型", "隐私", "边缘计算"],
           "title": "利用大型语言模型从隐私保护遮蔽中恢复",
           "slug": "recovering-from-privacy-preserving-masking-with-large-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -260,10 +230,7 @@
         },
         {
           "id": "198277239",
-          "topics": [
-            "大语言模型",
-            "聊天"
-          ],
+          "topics": ["大语言模型", "聊天"],
           "title": "S3-DST: 大语言模型时代的结构化开放域对话分割和状态跟踪",
           "slug": "s3-dst-structured-open-domain-dialogue-segmentation-and-state-tracking-in-the-era",
           "authorName": "Prof. Otto Nomos",
@@ -291,10 +258,7 @@
         },
         {
           "id": "198277253",
-          "topics": [
-            "大型语言模型",
-            "音频"
-          ],
+          "topics": ["大型语言模型", "音频"],
           "title": "使用大型语言模型增强口语理解的文本",
           "slug": "augmenting-text-for-spoken-language-understanding-with-large-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -322,10 +286,7 @@
         },
         {
           "id": "198277277",
-          "topics": [
-            "大语言模型",
-            "压缩"
-          ],
+          "topics": ["大语言模型", "压缩"],
           "title": "语言建模即压缩",
           "slug": "language-modeling-is-compression",
           "authorName": "Prof. Otto Nomos",
@@ -353,10 +314,7 @@
         },
         {
           "id": "198277345",
-          "topics": [
-            "大语言模型",
-            "多语言"
-          ],
+          "topics": ["大语言模型", "多语言"],
           "title": "百川2:开放大规模语言模型",
           "slug": "baichuan-2-open-large-scale-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -384,10 +342,7 @@
         },
         {
           "id": "198277360",
-          "topics": [
-            "大语言模型",
-            "基于人类反馈的强化学习"
-          ],
+          "topics": ["大语言模型", "基于人类反馈的强化学习"],
           "title": "通过优势模型和选择性复习稳定基于人类反馈的强化学习",
           "slug": "stabilizing-rlhf-through-advantage-model-and-selective-rehearsal",
           "authorName": "Prof. Otto Nomos",
@@ -415,10 +370,7 @@
         },
         {
           "id": "198277446",
-          "topics": [
-            "大语言模型",
-            "幻觉"
-          ],
+          "topics": ["大语言模型", "幻觉"],
           "title": "验证链减少大语言模型中的幻觉",
           "slug": "chain-of-verification-reduces-hallucination-in-large-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -446,12 +398,7 @@
         },
         {
           "id": "198277458",
-          "topics": [
-            "大语言模型",
-            "幻觉",
-            "实体",
-            "结构化数据"
-          ],
+          "topics": ["大语言模型", "幻觉", "实体", "结构化数据"],
           "title": "LMDX: 基于语言模型的文档信息提取和定位",
           "slug": "lmdx-language-model-based-document-information-extraction-and-localization",
           "authorName": "Prof. Otto Nomos",
@@ -479,10 +426,7 @@
         },
         {
           "id": "198277209",
-          "topics": [
-            "大语言模型",
-            "数据"
-          ],
+          "topics": ["大语言模型", "数据"],
           "title": "SlimPajama-DC: 理解用于大语言模型训练的数据组合",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -510,10 +454,7 @@
         },
         {
           "id": "198277109",
-          "topics": [
-            "大型语言模型",
-            "推理"
-          ],
+          "topics": ["大型语言模型", "推理"],
           "title": "对比解码提高大型语言模型的推理能力",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -541,11 +482,7 @@
         },
         {
           "id": "198277099",
-          "topics": [
-            "大语言模型",
-            "多语言",
-            "数据"
-          ],
+          "topics": ["大语言模型", "多语言", "数据"],
           "title": "CulturaX: 一个清洁、庞大且多语言的数据集,用于167种语言的大型语言模型",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -573,11 +510,7 @@
         },
         {
           "id": "198044929",
-          "topics": [
-            "大语言模型",
-            "数据",
-            "智能体"
-          ],
+          "topics": ["大语言模型", "数据", "智能体"],
           "title": "用于推理实体智能体的数据源",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -605,11 +538,7 @@
         },
         {
           "id": "198044900",
-          "topics": [
-            "大语言模型",
-            "实体",
-            "微调"
-          ],
+          "topics": ["大语言模型", "实体", "微调"],
           "title": "利用上下文信息进行有效的实体显著性检测",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -637,10 +566,7 @@
         },
         {
           "id": "198044892",
-          "topics": [
-            "大语言模型",
-            "智能代理"
-          ],
+          "topics": ["大语言模型", "智能代理"],
           "title": "LASER: 用于网页导航的具有状态空间探索功能的大语言模型代理",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -668,11 +594,7 @@
         },
         {
           "id": "198044879",
-          "topics": [
-            "大语言模型",
-            "变换器",
-            "可解释性"
-          ],
+          "topics": ["大语言模型", "变换器", "可解释性"],
           "title": "稀疏自编码器在语言模型中发现高度可解释的特征",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -700,10 +622,7 @@
         },
         {
           "id": "198044802",
-          "topics": [
-            "大语言模型",
-            "聊天"
-          ],
+          "topics": ["大语言模型", "聊天"],
           "title": "调查大语言模型在长篇问答中的可回答性",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -731,11 +650,7 @@
         },
         {
           "id": "198044746",
-          "topics": [
-            "大语言模型",
-            "变换器",
-            "训练"
-          ],
+          "topics": ["大语言模型", "变换器", "训练"],
           "title": "稀疏连接基础模型的缩放定律",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -763,10 +678,7 @@
         },
         {
           "id": "197990774",
-          "topics": [
-            "大型语言模型",
-            "提示工程"
-          ],
+          "topics": ["大型语言模型", "提示工程"],
           "title": "将大型语言模型与进化算法结合产生强大的提示优化器",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -794,10 +706,7 @@
         },
         {
           "id": "197990754",
-          "topics": [
-            "大型语言模型",
-            "上下文学习"
-          ],
+          "topics": ["大型语言模型", "上下文学习"],
           "title": "大型语言模型的歧义感知上下文学习",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -825,11 +734,7 @@
         },
         {
           "id": "197842432",
-          "topics": [
-            "大型语言模型",
-            "评估",
-            "多语言"
-          ],
+          "topics": ["大型语言模型", "评估", "多语言"],
           "title": "基于大型语言模型的评估器是否是扩展多语言评估的解决方案?",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -857,11 +762,7 @@
         },
         {
           "id": "197990687",
-          "topics": [
-            "大型语言模型",
-            "医疗保健",
-            "摘要生成"
-          ],
+          "topics": ["大型语言模型", "医疗保健", "摘要生成"],
           "title": "临床文本摘要:调整大型语言模型可以超越人类专家",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
@@ -889,10 +790,7 @@
         },
         {
           "id": "197990671",
-          "topics": [
-            "大语言模型",
-            "智能代理"
-          ],
+          "topics": ["大语言模型", "智能代理"],
           "title": "智能代理:一个开源的自主语言代理框架",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -920,11 +818,7 @@
         },
         {
           "id": "197990654",
-          "topics": [
-            "大语言模型",
-            "基于人类反馈的强化学习",
-            "强化学习"
-          ],
+          "topics": ["大语言模型", "基于人类反馈的强化学习", "强化学习"],
           "title": "统计拒绝采样改进偏好优化",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -952,10 +846,7 @@
         },
         {
           "id": "197859672",
-          "topics": [
-            "大型语言模型",
-            "代码"
-          ],
+          "topics": ["大型语言模型", "代码"],
           "title": "用于编译器优化的大型语言模型",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -983,10 +874,7 @@
         },
         {
           "id": "197840057",
-          "topics": [
-            "大语言模型",
-            "科学"
-          ],
+          "topics": ["大语言模型", "科学"],
           "title": "AstroLLaMA: 面向天文学的专业基础模型",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -1014,11 +902,7 @@
         },
         {
           "id": "197838596",
-          "topics": [
-            "大型语言模型",
-            "数学",
-            "科学"
-          ],
+          "topics": ["大型语言模型", "数学", "科学"],
           "title": "科学领域的大型语言模型：P对NP问题的研究",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1046,9 +930,7 @@
         },
         {
           "id": "197836858",
-          "topics": [
-            "大型语言模型"
-          ],
+          "topics": ["大型语言模型"],
           "title": "使用分页注意力机制实现大型语言模型服务的高效内存管理",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1076,11 +958,7 @@
         },
         {
           "id": "197817281",
-          "topics": [
-            "大语言模型",
-            "上下文学习",
-            "微调"
-          ],
+          "topics": ["大语言模型", "上下文学习", "微调"],
           "title": "FIAT: 通过指令加速调优融合学习范式",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1108,9 +986,7 @@
         },
         {
           "id": "197815488",
-          "topics": [
-            "LLM"
-          ],
+          "topics": ["LLM"],
           "title": "通过有符号梯度下降优化权重舍入以实现LLM量化",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -1138,10 +1014,7 @@
         },
         {
           "id": "197813719",
-          "topics": [
-            "大语言模型",
-            "数据"
-          ],
+          "topics": ["大语言模型", "数据"],
           "title": "当少即是多:探究大规模预训练大语言模型的数据修剪",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1169,9 +1042,7 @@
         },
         {
           "id": "197812286",
-          "topics": [
-            "大型语言模型"
-          ],
+          "topics": ["大型语言模型"],
           "title": "大型语言模型中的神经元:死亡、N-gram和位置",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -1199,10 +1070,7 @@
         },
         {
           "id": "197810544",
-          "topics": [
-            "大语言模型",
-            "开源"
-          ],
+          "topics": ["大语言模型", "开源"],
           "title": "你只需要教科书 II: phi-1.5 技术报告",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1230,11 +1098,7 @@
         },
         {
           "id": "197621737",
-          "topics": [
-            "大语言模型",
-            "提示工程",
-            "摘要生成"
-          ],
+          "topics": ["大语言模型", "提示工程", "摘要生成"],
           "title": "DrugChat: 实现药物分子图上类ChatGPT的能力",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1262,11 +1126,7 @@
         },
         {
           "id": "197621634",
-          "topics": [
-            "大语言模型",
-            "提示工程",
-            "摘要生成"
-          ],
+          "topics": ["大语言模型", "提示工程", "摘要生成"],
           "title": "从稀疏到密集:使用密度链提示的GPT-4摘要生成",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1294,11 +1154,7 @@
         },
         {
           "id": "197621519",
-          "topics": [
-            "大语言模型",
-            "开源",
-            "指令微调"
-          ],
+          "topics": ["大语言模型", "开源", "指令微调"],
           "title": "XGen-7B技术报告",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
@@ -1326,10 +1182,7 @@
         },
         {
           "id": "197621178",
-          "topics": [
-            "大语言模型",
-            "提示工程"
-          ],
+          "topics": ["大语言模型", "提示工程"],
           "title": "DoLa: 对比层解码提高大语言模型的事实性",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1357,10 +1210,7 @@
         },
         {
           "id": "197621439",
-          "topics": [
-            "大语言模型",
-            "数学"
-          ],
+          "topics": ["大语言模型", "数学"],
           "title": "GPT无需计算器即可解决数学问题",
           "slug": "transformer-models-an-introduction-and-catalog",
           "authorName": "Prof. Otto Nomos",
@@ -1388,10 +1238,7 @@
         },
         {
           "id": "197621128",
-          "topics": [
-            "大型语言模型",
-            "提示工程"
-          ],
+          "topics": ["大型语言模型", "提示工程"],
           "title": "作为优化器的大型语言模型",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1419,10 +1266,7 @@
         },
         {
           "id": "197613974",
-          "topics": [
-            "大语言模型",
-            "基于人类反馈的强化学习"
-          ],
+          "topics": ["大语言模型", "基于人类反馈的强化学习"],
           "title": "高效的基于人类反馈的强化学习: 降低PPO的内存使用",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1450,11 +1294,7 @@
         },
         {
           "id": "197559951",
-          "topics": [
-            "大语言模型",
-            "智能代理",
-            "工具"
-          ],
+          "topics": ["大语言模型", "智能代理", "工具"],
           "title": "ModelScope-Agent: 使用开源大型语言模型构建可定制的代理系统",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1482,11 +1322,7 @@
         },
         {
           "id": "180403467",
-          "topics": [
-            "LLM",
-            "RLHF",
-            "摘要"
-          ],
+          "topics": ["LLM", "RLHF", "摘要"],
           "title": "人类反馈强化学习的开放问题和基本局限性 [摘要]",
           "slug": "open-problems-and-fundamental-limitations-of-reinforcement-learning-from-human-fe",
           "authorName": "Prof. Otto Nomos",
@@ -1514,10 +1350,7 @@
         },
         {
           "id": "180869081",
-          "topics": [
-            "大语言模型",
-            "摘要"
-          ],
+          "topics": ["大语言模型", "摘要"],
           "title": "Llama 2: 开放基础和微调聊天模型 [评论]",
           "slug": "llama-2-open-foundation-and-fine-tuned-chat-models-commentary",
           "authorName": "Prof. Otto Nomos",
@@ -1545,10 +1378,7 @@
         },
         {
           "id": "179737945",
-          "topics": [
-            "大型语言模型",
-            "摘要"
-          ],
+          "topics": ["大型语言模型", "摘要"],
           "title": "大型语言模型的挑战和应用 [摘要]",
           "slug": "challenges-and-applications-of-large-language-models-summary",
           "authorName": "Prof. Otto Nomos",
@@ -1576,11 +1406,7 @@
         },
         {
           "id": "180927998",
-          "topics": [
-            "LLM",
-            "评论",
-            "LORA"
-          ],
+          "topics": ["LLM", "评论", "LORA"],
           "title": "LoraHub: 通过动态LoRA组合实现高效跨任务泛化 [评论]",
           "slug": "lorahub-efficient-cross-task-generalization-via-dynamic-lora-composition-commenta",
           "authorName": "Prof. Otto Nomos",
@@ -1608,11 +1434,7 @@
         },
         {
           "id": "180928004",
-          "topics": [
-            "大型语言模型",
-            "工具",
-            "评论"
-          ],
+          "topics": ["大型语言模型", "工具", "评论"],
           "title": "ToolLLM: 促进大型语言模型掌握16000多个真实世界API [评论]",
           "slug": "toolllm-facilitating-large-language-models-to-master-16000-real-world-apis-commen",
           "authorName": "Prof. Otto Nomos",
@@ -1640,10 +1462,7 @@
         },
         {
           "id": "189989705",
-          "topics": [
-            "大语言模型",
-            "工具"
-          ],
+          "topics": ["大语言模型", "工具"],
           "title": "FacTool: 生成式人工智能中的事实性检测 -- 一个用于多任务和多领域场景的工具增强框架",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1671,11 +1490,7 @@
         },
         {
           "id": "189849326",
-          "topics": [
-            "大语言模型",
-            "提示工程",
-            "推理"
-          ],
+          "topics": ["大语言模型", "提示工程", "推理"],
           "title": "思维图谱:利用大型语言模型解决复杂问题",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1703,9 +1518,7 @@
         },
         {
           "id": "189849276",
-          "topics": [
-            "大型语言模型"
-          ],
+          "topics": ["大型语言模型"],
           "title": "大型语言模型的高效引导生成",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1733,10 +1546,7 @@
         },
         {
           "id": "189849263",
-          "topics": [
-            "大语言模型",
-            "医疗保健"
-          ],
+          "topics": ["大语言模型", "医疗保健"],
           "title": "使用GEARS预测新型多基因扰动的转录结果",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1764,11 +1574,7 @@
         },
         {
           "id": "189845558",
-          "topics": [
-            "大型语言模型",
-            "压缩",
-            "综述"
-          ],
+          "topics": ["大型语言模型", "压缩", "综述"],
           "title": "大型语言模型压缩技术综述",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1796,11 +1602,7 @@
         },
         {
           "id": "189845521",
-          "topics": [
-            "大语言模型",
-            "训练",
-            "对齐"
-          ],
+          "topics": ["大语言模型", "训练", "对齐"],
           "title": "从预训练数据到语言模型再到下游任务:追踪导致不公平自然语言处理模型的政治偏见轨迹",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1828,10 +1630,7 @@
         },
         {
           "id": "189787126",
-          "topics": [
-            "大语言模型",
-            "代码"
-          ],
+          "topics": ["大语言模型", "代码"],
           "title": "大语言模型作为数据库管理员",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -1859,10 +1658,7 @@
         },
         {
           "id": "189845549",
-          "topics": [
-            "大语言模型",
-            "指令微调"
-          ],
+          "topics": ["大语言模型", "指令微调"],
           "title": "使用指令反向翻译进行自对齐",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -1890,10 +1686,7 @@
         },
         {
           "id": "189845519",
-          "topics": [
-            "大语言模型",
-            "基于人类反馈的强化学习"
-          ],
+          "topics": ["大语言模型", "基于人类反馈的强化学习"],
           "title": "RLAIF: 利用人工智能反馈扩展基于人类反馈的强化学习",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1921,9 +1714,7 @@
         },
         {
           "id": "189792745",
-          "topics": [
-            "大型语言模型"
-          ],
+          "topics": ["大型语言模型"],
           "title": "大型内容和行为模型用于理解、模拟和优化内容和行为",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1951,11 +1742,7 @@
         },
         {
           "id": "189787194",
-          "topics": [
-            "大语言模型",
-            "代码",
-            "医疗保健"
-          ],
+          "topics": ["大语言模型", "代码", "医疗保健"],
           "title": "BioCoder: 具有上下文语用知识的生物信息学代码生成基准",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1983,11 +1770,7 @@
         },
         {
           "id": "189787170",
-          "topics": [
-            "大语言模型",
-            "多语言",
-            "评估"
-          ],
+          "topics": ["大语言模型", "多语言", "评估"],
           "title": "Belebele基准测试:122种语言变体的平行阅读理解数据集",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
@@ -2015,11 +1798,7 @@
         },
         {
           "id": "189787192",
-          "topics": [
-            "大语言模型",
-            "代码",
-            "指令微调"
-          ],
+          "topics": ["大语言模型", "代码", "指令微调"],
           "title": "编程语言能否通过指令微调相互促进?",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2047,11 +1826,7 @@
         },
         {
           "id": "189787190",
-          "topics": [
-            "大语言模型",
-            "评估",
-            "气候"
-          ],
+          "topics": ["大语言模型", "评估", "气候"],
           "title": "WeatherBench 2: 下一代数据驱动全球天气模型的基准测试",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2079,10 +1854,7 @@
         },
         {
           "id": "189787181",
-          "topics": [
-            "大语言模型",
-            "多语言"
-          ],
+          "topics": ["大语言模型", "多语言"],
           "title": "Jais和Jais-chat:以阿拉伯语为中心的基础和指令微调开放生成大语言模型",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2110,11 +1882,7 @@
         },
         {
           "id": "189787168",
-          "topics": [
-            "大语言模型",
-            "指令微调",
-            "医疗保健"
-          ],
+          "topics": ["大语言模型", "指令微调", "医疗保健"],
           "title": "MedAlign: 一个用于电子病历指令跟随的临床医生生成数据集",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2142,11 +1910,7 @@
         },
         {
           "id": "189777823",
-          "topics": [
-            "大语言模型",
-            "代码",
-            "聊天"
-          ],
+          "topics": ["大语言模型", "代码", "聊天"],
           "title": "SoTaNa: 开源软件开发助手",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
@@ -2174,10 +1938,7 @@
         },
         {
           "id": "189787150",
-          "topics": [
-            "大语言模型",
-            "个性化"
-          ],
+          "topics": ["大语言模型", "个性化"],
           "title": "教大语言模型实现个性化 -- 一种受写作教育启发的方法",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2205,11 +1966,7 @@
         },
         {
           "id": "189787148",
-          "topics": [
-            "检索",
-            "大语言模型",
-            "上下文学习"
-          ],
+          "topics": ["检索", "大语言模型", "上下文学习"],
           "title": "RAVEN: 使用检索增强的编码器-解码器语言模型进行上下文学习",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2237,11 +1994,7 @@
         },
         {
           "id": "189787144",
-          "topics": [
-            "大语言模型",
-            "代码",
-            "提示工程"
-          ],
+          "topics": ["大语言模型", "代码", "提示工程"],
           "title": "使用GPT-4代码解释器和基于代码的自验证解决具有挑战性的数学应用题",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2269,11 +2022,7 @@
         },
         {
           "id": "189787113",
-          "topics": [
-            "大语言模型",
-            "提示工程",
-            "多语言"
-          ],
+          "topics": ["大语言模型", "提示工程", "多语言"],
           "title": "魔鬼藏在错误中:利用大型语言模型进行细粒度机器翻译评估",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2301,10 +2050,7 @@
         },
         {
           "id": "189777847",
-          "topics": [
-            "大语言模型",
-            "上下文学习"
-          ],
+          "topics": ["大语言模型", "上下文学习"],
           "title": "因果语言模型不适合上下文学习",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -2332,12 +2078,7 @@
         },
         {
           "id": "189787086",
-          "topics": [
-            "大语言模型",
-            "微调",
-            "LORA",
-            "数据"
-          ],
+          "topics": ["大语言模型", "微调", "LORA", "数据"],
           "title": "鸭嘴兽:快速,廉价且强大的大语言模型优化",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2365,11 +2106,7 @@
         },
         {
           "id": "189777877",
-          "topics": [
-            "大语言模型",
-            "代码",
-            "指令微调"
-          ],
+          "topics": ["大语言模型", "代码", "指令微调"],
           "title": "OctoPack: 代码大语言模型的指令微调",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2397,10 +2134,7 @@
         },
         {
           "id": "189777872",
-          "topics": [
-            "大型语言模型",
-            "代码"
-          ],
+          "topics": ["大型语言模型", "代码"],
           "title": "使用大型语言模型生成的代码增强网络管理",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2428,12 +2162,7 @@
         },
         {
           "id": "189777849",
-          "topics": [
-            "音频",
-            "大语言模型",
-            "多模态",
-            "多语言"
-          ],
+          "topics": ["音频", "大语言模型", "多模态", "多语言"],
           "title": "在不对齐的情况下改进联合语音文本表示",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2461,10 +2190,7 @@
         },
         {
           "id": "189777845",
-          "topics": [
-            "大语言模型",
-            "智能代理"
-          ],
+          "topics": ["大语言模型", "智能代理"],
           "title": "BOLAA: 基准测试和编排大语言模型增强的自主代理",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2492,11 +2218,7 @@
         },
         {
           "id": "189775948",
-          "topics": [
-            "大语言模型",
-            "聊天",
-            "数据"
-          ],
+          "topics": ["大语言模型", "聊天", "数据"],
           "title": "PIPPA: 一个部分合成的对话数据集",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2524,10 +2246,7 @@
         },
         {
           "id": "189777825",
-          "topics": [
-            "大语言模型",
-            "指令微调"
-          ],
+          "topics": ["大语言模型", "指令微调"],
           "title": "使用指令反向翻译进行自对齐",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -2555,10 +2274,7 @@
         },
         {
           "id": "189577785",
-          "topics": [
-            "大型语言模型",
-            "医疗保健"
-          ],
+          "topics": ["大型语言模型", "医疗保健"],
           "title": "OpenProteinSet: 大规模结构生物学训练数据",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
@@ -2586,12 +2302,7 @@
         },
         {
           "id": "189577629",
-          "topics": [
-            "大型语言模型",
-            "对齐",
-            "调查",
-            "评估"
-          ],
+          "topics": ["大型语言模型", "对齐", "调查", "评估"],
           "title": "可信的大型语言模型：评估大型语言模型对齐的调查和指南",
           "slug": "trustworthy-llms-a-survey-and-guideline-for-evaluating-large-language-models-alig",
           "authorName": "Prof. Otto Nomos",
@@ -2619,10 +2330,7 @@
         },
         {
           "id": "189576091",
-          "topics": [
-            "大语言模型",
-            "推理"
-          ],
+          "topics": ["大语言模型", "推理"],
           "title": "使用分阶段推测解码加速大语言模型推理",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -2650,11 +2358,7 @@
         },
         {
           "id": "189576084",
-          "topics": [
-            "大语言模型",
-            "数据",
-            "训练"
-          ],
+          "topics": ["大语言模型", "数据", "训练"],
           "title": "Shepherd: 语言模型生成的评论家",
           "slug": "shepherd-a-critic-for-language-model-generation",
           "authorName": "Prof. Otto Nomos",
@@ -2682,10 +2386,7 @@
         },
         {
           "id": "189576080",
-          "topics": [
-            "大语言模型",
-            "法律"
-          ],
+          "topics": ["大语言模型", "法律"],
           "title": "SILO语言模型:在非参数数据存储中隔离法律风险",
           "slug": "silo-language-models-isolating-legal-risk-in-a-nonparametric-datastore",
           "authorName": "Prof. Otto Nomos",
@@ -2713,10 +2414,7 @@
         },
         {
           "id": "189576058",
-          "topics": [
-            "大语言模型",
-            "对齐"
-          ],
+          "topics": ["大语言模型", "对齐"],
           "title": "简单的合成数据减少了大语言模型中的谄媚行为",
           "slug": "simple-synthetic-data-reduces-sycophancy-in-large-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -2750,13 +2448,7 @@
       "articles": [
         {
           "id": "198277124",
-          "topics": [
-            "大型语言模型",
-            "金融",
-            "医疗保健",
-            "法律",
-            "提示工程"
-          ],
+          "topics": ["大型语言模型", "金融", "医疗保健", "法律", "提示工程"],
           "title": "通过阅读理解来适应大型语言模型",
           "slug": "adapting-large-language-models-via-reading-comprehension",
           "authorName": "Prof. Otto Nomos",
@@ -2790,13 +2482,7 @@
       "articles": [
         {
           "id": "198277124",
-          "topics": [
-            "大型语言模型",
-            "金融",
-            "医疗保健",
-            "法律",
-            "提示工程"
-          ],
+          "topics": ["大型语言模型", "金融", "医疗保健", "法律", "提示工程"],
           "title": "通过阅读理解来适应大型语言模型",
           "slug": "adapting-large-language-models-via-reading-comprehension",
           "authorName": "Prof. Otto Nomos",
@@ -2824,11 +2510,7 @@
         },
         {
           "id": "197990687",
-          "topics": [
-            "大型语言模型",
-            "医疗保健",
-            "摘要生成"
-          ],
+          "topics": ["大型语言模型", "医疗保健", "摘要生成"],
           "title": "临床文本摘要:调整大型语言模型可以超越人类专家",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
@@ -2856,10 +2538,7 @@
         },
         {
           "id": "189849263",
-          "topics": [
-            "大语言模型",
-            "医疗保健"
-          ],
+          "topics": ["大语言模型", "医疗保健"],
           "title": "使用GEARS预测新型多基因扰动的转录结果",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2887,11 +2566,7 @@
         },
         {
           "id": "189787194",
-          "topics": [
-            "大语言模型",
-            "代码",
-            "医疗保健"
-          ],
+          "topics": ["大语言模型", "代码", "医疗保健"],
           "title": "BioCoder: 具有上下文语用知识的生物信息学代码生成基准",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2919,11 +2594,7 @@
         },
         {
           "id": "189787168",
-          "topics": [
-            "大型语言模型",
-            "指令微调",
-            "医疗保健"
-          ],
+          "topics": ["大型语言模型", "指令微调", "医疗保健"],
           "title": "MedAlign: 一个用于电子病历指令跟随的临床医生生成数据集",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2951,10 +2622,7 @@
         },
         {
           "id": "189577785",
-          "topics": [
-            "大型语言模型",
-            "医疗保健"
-          ],
+          "topics": ["大型语言模型", "医疗保健"],
           "title": "OpenProteinSet: 大规模结构生物学训练数据",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
@@ -2988,13 +2656,7 @@
       "articles": [
         {
           "id": "198277124",
-          "topics": [
-            "大型语言模型",
-            "金融",
-            "医疗保健",
-            "法律",
-            "提示工程"
-          ],
+          "topics": ["大型语言模型", "金融", "医疗保健", "法律", "提示工程"],
           "title": "通过阅读理解来适应大型语言模型",
           "slug": "adapting-large-language-models-via-reading-comprehension",
           "authorName": "Prof. Otto Nomos",
@@ -3022,10 +2684,7 @@
         },
         {
           "id": "189576080",
-          "topics": [
-            "大语言模型",
-            "法律"
-          ],
+          "topics": ["大语言模型", "法律"],
           "title": "SILO语言模型:在非参数数据存储中隔离法律风险",
           "slug": "silo-language-models-isolating-legal-risk-in-a-nonparametric-datastore",
           "authorName": "Prof. Otto Nomos",
@@ -3059,13 +2718,7 @@
       "articles": [
         {
           "id": "198277124",
-          "topics": [
-            "大型语言模型",
-            "金融",
-            "医疗保健",
-            "法律",
-            "提示工程"
-          ],
+          "topics": ["大型语言模型", "金融", "医疗保健", "法律", "提示工程"],
           "title": "通过阅读理解来适应大型语言模型",
           "slug": "adapting-large-language-models-via-reading-comprehension",
           "authorName": "Prof. Otto Nomos",
@@ -3093,10 +2746,7 @@
         },
         {
           "id": "197990774",
-          "topics": [
-            "大型语言模型",
-            "提示工程"
-          ],
+          "topics": ["大型语言模型", "提示工程"],
           "title": "将大型语言模型与进化算法结合产生强大的提示优化器",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3124,11 +2774,7 @@
         },
         {
           "id": "197621737",
-          "topics": [
-            "大语言模型",
-            "提示工程",
-            "摘要生成"
-          ],
+          "topics": ["大语言模型", "提示工程", "摘要生成"],
           "title": "DrugChat: 实现药物分子图上类ChatGPT的能力",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3156,11 +2802,7 @@
         },
         {
           "id": "197621634",
-          "topics": [
-            "大语言模型",
-            "提示工程",
-            "摘要生成"
-          ],
+          "topics": ["大语言模型", "提示工程", "摘要生成"],
           "title": "从稀疏到密集:使用密度链提示的GPT-4摘要生成",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3188,10 +2830,7 @@
         },
         {
           "id": "197621178",
-          "topics": [
-            "大语言模型",
-            "提示工程"
-          ],
+          "topics": ["大语言模型", "提示工程"],
           "title": "DoLa: 通过对比层解码提高大语言模型的事实性",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3219,10 +2858,7 @@
         },
         {
           "id": "197621128",
-          "topics": [
-            "大型语言模型",
-            "提示工程"
-          ],
+          "topics": ["大型语言模型", "提示工程"],
           "title": "作为优化器的大型语言模型",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3250,11 +2886,7 @@
         },
         {
           "id": "189849326",
-          "topics": [
-            "大语言模型",
-            "提示工程",
-            "推理"
-          ],
+          "topics": ["大语言模型", "提示工程", "推理"],
           "title": "思维图谱:利用大型语言模型解决复杂问题",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3282,11 +2914,7 @@
         },
         {
           "id": "189787144",
-          "topics": [
-            "大语言模型",
-            "代码",
-            "提示工程"
-          ],
+          "topics": ["大语言模型", "代码", "提示工程"],
           "title": "使用GPT-4代码解释器和基于代码的自我验证解决具有挑战性的数学应用题",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3314,11 +2942,7 @@
         },
         {
           "id": "189787113",
-          "topics": [
-            "大语言模型",
-            "提示工程",
-            "多语言"
-          ],
+          "topics": ["大语言模型", "提示工程", "多语言"],
           "title": "魔鬼藏在错误中:利用大型语言模型进行细粒度机器翻译评估",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3352,10 +2976,7 @@
       "articles": [
         {
           "id": "198277342",
-          "topics": [
-            "大语言模型",
-            "多语言"
-          ],
+          "topics": ["大语言模型", "多语言"],
           "title": "OpenBA: 一个从头预训练的开源150亿参数双语非对称seq2seq模型",
           "slug": "openba-an-open-sourced-15b-bilingual-asymmetric-seq2seq-model-pre-trained-from-sc",
           "authorName": "Prof. Otto Nomos",
@@ -3383,10 +3004,7 @@
         },
         {
           "id": "198277345",
-          "topics": [
-            "大语言模型",
-            "多语言"
-          ],
+          "topics": ["大语言模型", "多语言"],
           "title": "百川2:开放大规模语言模型",
           "slug": "baichuan-2-open-large-scale-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -3414,11 +3032,7 @@
         },
         {
           "id": "198277099",
-          "topics": [
-            "大语言模型",
-            "多语言",
-            "数据"
-          ],
+          "topics": ["大语言模型", "多语言", "数据"],
           "title": "CulturaX: 一个清洁、庞大且多语言的数据集,用于167种语言的大型语言模型",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3446,11 +3060,7 @@
         },
         {
           "id": "197842432",
-          "topics": [
-            "大型语言模型",
-            "评估",
-            "多语言"
-          ],
+          "topics": ["大型语言模型", "评估", "多语言"],
           "title": "基于大型语言模型的评估器是否是扩展多语言评估的解决方案?",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -3478,11 +3088,7 @@
         },
         {
           "id": "189787170",
-          "topics": [
-            "大语言模型",
-            "多语言",
-            "评估"
-          ],
+          "topics": ["大语言模型", "多语言", "评估"],
           "title": "Belebele基准测试:122种语言变体的平行阅读理解数据集",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
@@ -3510,10 +3116,7 @@
         },
         {
           "id": "189787181",
-          "topics": [
-            "大语言模型",
-            "多语言"
-          ],
+          "topics": ["大语言模型", "多语言"],
           "title": "Jais和Jais-chat:以阿拉伯语为中心的基础和指令微调开放生成大语言模型",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3541,11 +3144,7 @@
         },
         {
           "id": "189787113",
-          "topics": [
-            "大语言模型",
-            "提示工程",
-            "多语言"
-          ],
+          "topics": ["大语言模型", "提示工程", "多语言"],
           "title": "魔鬼藏在错误中:利用大型语言模型进行细粒度机器翻译评估",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3573,12 +3172,7 @@
         },
         {
           "id": "189777849",
-          "topics": [
-            "音频",
-            "大语言模型",
-            "多模态",
-            "多语言"
-          ],
+          "topics": ["音频", "大语言模型", "多模态", "多语言"],
           "title": "在不对齐的情况下改进联合语音文本表示",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3612,10 +3206,7 @@
       "articles": [
         {
           "id": "198277117",
-          "topics": [
-            "大语言模型",
-            "检索"
-          ],
+          "topics": ["大语言模型", "检索"],
           "title": "PDFTriage: 长结构化文档的问答系统",
           "slug": "pdftriage-question-answering-over-long-structured-documents",
           "authorName": "Prof. Otto Nomos",
@@ -3643,11 +3234,7 @@
         },
         {
           "id": "189787148",
-          "topics": [
-            "检索",
-            "大语言模型",
-            "上下文学习"
-          ],
+          "topics": ["检索", "大语言模型", "上下文学习"],
           "title": "RAVEN: 使用检索增强的编码器-解码器语言模型进行上下文学习",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3681,10 +3268,7 @@
       "articles": [
         {
           "id": "198277138",
-          "topics": [
-            "大语言模型",
-            "微调"
-          ],
+          "topics": ["大语言模型", "微调"],
           "title": "排序LLaMA:通过排序微调(SoFT)解锁大语言模型中间层的动态推理潜力",
           "slug": "sorted-llama-unlocking-the-potential-of-intermediate-layers-of-large-language-mod",
           "authorName": "Prof. Otto Nomos",
@@ -3712,11 +3296,7 @@
         },
         {
           "id": "198044900",
-          "topics": [
-            "大语言模型",
-            "实体",
-            "微调"
-          ],
+          "topics": ["大语言模型", "实体", "微调"],
           "title": "利用上下文信息进行有效的实体显著性检测",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3744,11 +3324,7 @@
         },
         {
           "id": "197817281",
-          "topics": [
-            "大语言模型",
-            "上下文学习",
-            "微调"
-          ],
+          "topics": ["大语言模型", "上下文学习", "微调"],
           "title": "FIAT: 通过指令加速调优融合学习范式",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3776,12 +3352,7 @@
         },
         {
           "id": "189787086",
-          "topics": [
-            "大语言模型",
-            "微调",
-            "LORA",
-            "数据"
-          ],
+          "topics": ["大语言模型", "微调", "LORA", "数据"],
           "title": "鸭嘴兽:快速,廉价且强大的大语言模型优化",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3815,11 +3386,7 @@
       "articles": [
         {
           "id": "198277150",
-          "topics": [
-            "大语言模型",
-            "指令微调",
-            "多模态"
-          ],
+          "topics": ["大语言模型", "指令微调", "多模态"],
           "title": "大规模指令微调多模态大模型的实证研究",
           "slug": "an-empirical-study-of-scaling-instruct-tuned-large-multimodal-models",
           "authorName": "Prof. Otto Nomos",
@@ -3847,11 +3414,7 @@
         },
         {
           "id": "197621519",
-          "topics": [
-            "大语言模型",
-            "开源",
-            "指令微调"
-          ],
+          "topics": ["大语言模型", "开源", "指令微调"],
           "title": "XGen-7B技术报告",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
@@ -3879,10 +3442,7 @@
         },
         {
           "id": "189845549",
-          "topics": [
-            "大语言模型",
-            "指令微调"
-          ],
+          "topics": ["大语言模型", "指令微调"],
           "title": "使用指令反向翻译进行自对齐",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -3910,11 +3470,7 @@
         },
         {
           "id": "189787192",
-          "topics": [
-            "大语言模型",
-            "代码",
-            "指令微调"
-          ],
+          "topics": ["大语言模型", "代码", "指令微调"],
           "title": "编程语言能否通过指令微调相互促进?",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3942,11 +3498,7 @@
         },
         {
           "id": "189787168",
-          "topics": [
-            "大语言模型",
-            "指令微调",
-            "医疗保健"
-          ],
+          "topics": ["大语言模型", "指令微调", "医疗保健"],
           "title": "MedAlign: 一个用于电子病历指令跟随的临床医生生成数据集",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3974,11 +3526,7 @@
         },
         {
           "id": "189777877",
-          "topics": [
-            "大语言模型",
-            "代码",
-            "指令微调"
-          ],
+          "topics": ["大语言模型", "代码", "指令微调"],
           "title": "OctoPack: 代码大语言模型的指令微调",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -4006,10 +3554,7 @@
         },
         {
           "id": "189777825",
-          "topics": [
-            "大语言模型",
-            "指令微调"
-          ],
+          "topics": ["大语言模型", "指令微调"],
           "title": "使用指令反向翻译进行自对齐",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -4043,11 +3588,7 @@
       "articles": [
         {
           "id": "198277150",
-          "topics": [
-            "大型语言模型",
-            "指令微调",
-            "多模态"
-          ],
+          "topics": ["大型语言模型", "指令微调", "多模态"],
           "title": "大型多模态指令微调模型扩展的实证研究",
           "slug": "an-empirical-study-of-scaling-instruct-tuned-large-multimodal-models",
           "authorName": "Prof. Otto Nomos",
@@ -4075,10 +3616,7 @@
         },
         {
           "id": "197845061",
-          "topics": [
-            "音频",
-            "多模态"
-          ],
+          "topics": ["音频", "多模态"],
           "title": "用于通用音频表示的自然语言监督",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -4106,12 +3644,7 @@
         },
         {
           "id": "189777849",
-          "topics": [
-            "音频",
-            "大语言模型",
-            "多模态",
-            "多语言"
-          ],
+          "topics": ["音频", "大语言模型", "多模态", "多语言"],
           "title": "在不对齐的情况下改进联合语音文本表示",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -4145,11 +3678,7 @@
       "articles": [
         {
           "id": "198277160",
-          "topics": [
-            "大语言模型",
-            "智能代理",
-            "游戏"
-          ],
+          "topics": ["大语言模型", "智能代理", "游戏"],
           "title": "心智代理:涌现的游戏交互",
           "slug": "mindagent-emergent-gaming-interaction",
           "authorName": "Prof. Otto Nomos",
@@ -4177,11 +3706,7 @@
         },
         {
           "id": "198044929",
-          "topics": [
-            "大语言模型",
-            "数据",
-            "智能体"
-          ],
+          "topics": ["大语言模型", "数据", "智能体"],
           "title": "用于推理实体智能体的数据源",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -4209,10 +3734,7 @@
         },
         {
           "id": "198044892",
-          "topics": [
-            "大语言模型",
-            "智能代理"
-          ],
+          "topics": ["大语言模型", "智能代理"],
           "title": "LASER: 用于网页导航的具有状态空间探索功能的大语言模型代理",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -4240,10 +3762,7 @@
         },
         {
           "id": "197990671",
-          "topics": [
-            "大语言模型",
-            "智能代理"
-          ],
+          "topics": ["大语言模型", "智能代理"],
           "title": "智能代理:一个开源的自主语言代理框架",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -4271,11 +3790,7 @@
         },
         {
           "id": "197559951",
-          "topics": [
-            "大语言模型",
-            "智能代理",
-            "工具"
-          ],
+          "topics": ["大语言模型", "智能代理", "工具"],
           "title": "ModelScope-Agent: 使用开源大型语言模型构建可定制的代理系统",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -4303,10 +3818,7 @@
         },
         {
           "id": "189777845",
-          "topics": [
-            "大语言模型",
-            "智能代理"
-          ],
+          "topics": ["大语言模型", "智能代理"],
           "title": "BOLAA: 基准测试和编排大语言模型增强的自主代理",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -4340,11 +3852,7 @@
       "articles": [
         {
           "id": "198277160",
-          "topics": [
-            "大语言模型",
-            "智能代理",
-            "游戏"
-          ],
+          "topics": ["大语言模型", "智能代理", "游戏"],
           "title": "心智代理:涌现的游戏交互",
           "slug": "mindagent-emergent-gaming-interaction",
           "authorName": "Prof. Otto Nomos",
@@ -4378,9 +3886,7 @@
       "articles": [
         {
           "id": "198277182",
-          "topics": [
-            "变形金刚"
-          ],
+          "topics": ["变形金刚"],
           "title": "通过共线约束注意力机制治愈变形金刚的头痛问题",
           "slug": "cure-the-headache-of-transformers-via-collinear-constrained-attention",
           "authorName": "Prof. Otto Nomos",
@@ -4408,11 +3914,7 @@
         },
         {
           "id": "198044879",
-          "topics": [
-            "大语言模型",
-            "变换器",
-            "可解释性"
-          ],
+          "topics": ["大语言模型", "变换器", "可解释性"],
           "title": "稀疏自编码器在语言模型中发现高度可解释的特征",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -4440,11 +3942,7 @@
         },
         {
           "id": "198044746",
-          "topics": [
-            "大语言模型",
-            "变换器",
-            "训练"
-          ],
+          "topics": ["大语言模型", "变换器", "训练"],
           "title": "稀疏连接基础模型的扩展定律",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -4472,9 +3970,7 @@
         },
         {
           "id": "197842604",
-          "topics": [
-            "变形金刚"
-          ],
+          "topics": ["变形金刚"],
           "title": "揭示变形金刚中的梅萨优化算法",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -4502,9 +3998,7 @@
         },
         {
           "id": "197613989",
-          "topics": [
-            "变形金刚"
-          ],
+          "topics": ["变形金刚"],
           "title": "门控循环神经网络发现注意力机制",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -4532,9 +4026,7 @@
         },
         {
           "id": "197556833",
-          "topics": [
-            "变形金刚"
-          ],
+          "topics": ["变形金刚"],
           "title": "一个宽广的前馈网络就足够了",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -4562,9 +4054,7 @@
         },
         {
           "id": "189989661",
-          "topics": [
-            "变形金刚"
-          ],
+          "topics": ["变形金刚"],
           "title": "使用OpenAI嵌入的向量搜索:Lucene就是你所需要的",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -4592,9 +4082,7 @@
         },
         {
           "id": "189849314",
-          "topics": [
-            "变形金刚"
-          ],
+          "topics": ["变形金刚"],
           "title": "贝叶斯流网络",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -4622,9 +4110,7 @@
         },
         {
           "id": "189787209",
-          "topics": [
-            "变形金刚"
-          ],
+          "topics": ["变形金刚"],
           "title": "YaRN:大型语言模型的高效上下文窗口扩展",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -4652,9 +4138,7 @@
         },
         {
           "id": "189787174",
-          "topics": [
-            "变形金刚"
-          ],
+          "topics": ["变形金刚"],
           "title": "LM-Infinite: 大型语言模型的简单即时长度泛化",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -4682,9 +4166,7 @@
         },
         {
           "id": "189777843",
-          "topics": [
-            "变形金刚"
-          ],
+          "topics": ["变形金刚"],
           "title": "变形金刚架构的可组合函数保持扩展",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -4718,10 +4200,7 @@
       "articles": [
         {
           "id": "198277196",
-          "topics": [
-            "大型语言模型",
-            "结构化数据"
-          ],
+          "topics": ["大型语言模型", "结构化数据"],
           "title": "Struc-Bench: 大型语言模型真的擅长生成复杂的结构化数据吗?",
           "slug": "struc-bench-are-large-language-models-really-good-at-generating-complex-structure",
           "authorName": "Prof. Otto Nomos",
@@ -4749,12 +4228,7 @@
         },
         {
           "id": "198277458",
-          "topics": [
-            "大语言模型",
-            "幻觉",
-            "实体",
-            "结构化数据"
-          ],
+          "topics": ["大语言模型", "幻觉", "实体", "结构化数据"],
           "title": "LMDX: 基于语言模型的文档信息提取和定位",
           "slug": "lmdx-language-model-based-document-information-extraction-and-localization",
           "authorName": "Prof. Otto Nomos",
@@ -4788,11 +4262,7 @@
       "articles": [
         {
           "id": "198277217",
-          "topics": [
-            "大型语言模型",
-            "隐私",
-            "边缘计算"
-          ],
+          "topics": ["大型语言模型", "隐私", "边缘计算"],
           "title": "利用大型语言模型从隐私保护遮蔽中恢复",
           "slug": "recovering-from-privacy-preserving-masking-with-large-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -4826,11 +4296,7 @@
       "articles": [
         {
           "id": "198277217",
-          "topics": [
-            "大型语言模型",
-            "隐私",
-            "边缘计算"
-          ],
+          "topics": ["大型语言模型", "隐私", "边缘计算"],
           "title": "利用大型语言模型从隐私保护遮蔽中恢复",
           "slug": "recovering-from-privacy-preserving-masking-with-large-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -4864,10 +4330,7 @@
       "articles": [
         {
           "id": "198277239",
-          "topics": [
-            "大语言模型",
-            "聊天"
-          ],
+          "topics": ["大语言模型", "聊天"],
           "title": "S3-DST: 大语言模型时代的结构化开放域对话分割和状态跟踪",
           "slug": "s3-dst-structured-open-domain-dialogue-segmentation-and-state-tracking-in-the-era",
           "authorName": "Prof. Otto Nomos",
@@ -4895,10 +4358,7 @@
         },
         {
           "id": "198044802",
-          "topics": [
-            "大语言模型",
-            "聊天"
-          ],
+          "topics": ["大语言模型", "聊天"],
           "title": "调查大语言模型在长篇问答中的可回答性",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -4926,11 +4386,7 @@
         },
         {
           "id": "189777823",
-          "topics": [
-            "大语言模型",
-            "代码",
-            "聊天"
-          ],
+          "topics": ["大语言模型", "代码", "聊天"],
           "title": "SoTaNa: 开源软件开发助手",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
@@ -4958,11 +4414,7 @@
         },
         {
           "id": "189775948",
-          "topics": [
-            "大语言模型",
-            "聊天",
-            "数据"
-          ],
+          "topics": ["大语言模型", "聊天", "数据"],
           "title": "PIPPA: 一个部分合成的对话数据集",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -4996,10 +4448,7 @@
       "articles": [
         {
           "id": "198277253",
-          "topics": [
-            "大型语言模型",
-            "音频"
-          ],
+          "topics": ["大型语言模型", "音频"],
           "title": "使用大型语言模型增强口语理解的文本",
           "slug": "augmenting-text-for-spoken-language-understanding-with-large-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -5027,10 +4476,7 @@
         },
         {
           "id": "197845061",
-          "topics": [
-            "音频",
-            "多模态"
-          ],
+          "topics": ["音频", "多模态"],
           "title": "用于通用音频表示的自然语言监督",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5058,12 +4504,7 @@
         },
         {
           "id": "189777849",
-          "topics": [
-            "音频",
-            "大语言模型",
-            "多模态",
-            "多语言"
-          ],
+          "topics": ["音频", "大语言模型", "多模态", "多语言"],
           "title": "在不对齐的情况下改进联合语音文本表示",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5097,10 +4538,7 @@
       "articles": [
         {
           "id": "198277277",
-          "topics": [
-            "大语言模型",
-            "压缩"
-          ],
+          "topics": ["大语言模型", "压缩"],
           "title": "语言建模即压缩",
           "slug": "language-modeling-is-compression",
           "authorName": "Prof. Otto Nomos",
@@ -5128,11 +4566,7 @@
         },
         {
           "id": "189845558",
-          "topics": [
-            "大型语言模型",
-            "压缩",
-            "综述"
-          ],
+          "topics": ["大型语言模型", "压缩", "综述"],
           "title": "大型语言模型压缩技术综述",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5166,10 +4600,7 @@
       "articles": [
         {
           "id": "198277360",
-          "topics": [
-            "大语言模型",
-            "基于人类反馈的强化学习"
-          ],
+          "topics": ["大语言模型", "基于人类反馈的强化学习"],
           "title": "通过优势模型和选择性复习稳定基于人类反馈的强化学习",
           "slug": "stabilizing-rlhf-through-advantage-model-and-selective-rehearsal",
           "authorName": "Prof. Otto Nomos",
@@ -5197,11 +4628,7 @@
         },
         {
           "id": "197990654",
-          "topics": [
-            "大语言模型",
-            "基于人类反馈的强化学习",
-            "强化学习"
-          ],
+          "topics": ["大语言模型", "基于人类反馈的强化学习", "强化学习"],
           "title": "统计拒绝采样改进偏好优化",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5229,10 +4656,7 @@
         },
         {
           "id": "197613974",
-          "topics": [
-            "大语言模型",
-            "基于人类反馈的强化学习"
-          ],
+          "topics": ["大语言模型", "基于人类反馈的强化学习"],
           "title": "高效的基于人类反馈的强化学习: 降低PPO的内存使用",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5260,11 +4684,7 @@
         },
         {
           "id": "180403467",
-          "topics": [
-            "LLM",
-            "RLHF",
-            "摘要"
-          ],
+          "topics": ["LLM", "RLHF", "摘要"],
           "title": "人类反馈强化学习的开放问题和基本局限性 [摘要]",
           "slug": "open-problems-and-fundamental-limitations-of-reinforcement-learning-from-human-fe",
           "authorName": "Prof. Otto Nomos",
@@ -5292,10 +4712,7 @@
         },
         {
           "id": "189845519",
-          "topics": [
-            "大语言模型",
-            "基于人类反馈的强化学习"
-          ],
+          "topics": ["大语言模型", "基于人类反馈的强化学习"],
           "title": "RLAIF: 利用人工智能反馈扩展基于人类反馈的强化学习",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5329,10 +4746,7 @@
       "articles": [
         {
           "id": "198277446",
-          "topics": [
-            "大语言模型",
-            "幻觉"
-          ],
+          "topics": ["大语言模型", "幻觉"],
           "title": "验证链减少大语言模型中的幻觉",
           "slug": "chain-of-verification-reduces-hallucination-in-large-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -5360,12 +4774,7 @@
         },
         {
           "id": "198277458",
-          "topics": [
-            "大语言模型",
-            "幻觉",
-            "实体",
-            "结构化数据"
-          ],
+          "topics": ["大语言模型", "幻觉", "实体", "结构化数据"],
           "title": "LMDX: 基于语言模型的文档信息提取和定位",
           "slug": "lmdx-language-model-based-document-information-extraction-and-localization",
           "authorName": "Prof. Otto Nomos",
@@ -5399,12 +4808,7 @@
       "articles": [
         {
           "id": "198277458",
-          "topics": [
-            "大语言模型",
-            "幻觉",
-            "实体",
-            "结构化数据"
-          ],
+          "topics": ["大语言模型", "幻觉", "实体", "结构化数据"],
           "title": "LMDX: 基于语言模型的文档信息提取和定位",
           "slug": "lmdx-language-model-based-document-information-extraction-and-localization",
           "authorName": "Prof. Otto Nomos",
@@ -5432,11 +4836,7 @@
         },
         {
           "id": "198044900",
-          "topics": [
-            "大语言模型",
-            "实体",
-            "微调"
-          ],
+          "topics": ["大语言模型", "实体", "微调"],
           "title": "利用上下文信息进行有效的实体显著性检测",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5470,10 +4870,7 @@
       "articles": [
         {
           "id": "198277209",
-          "topics": [
-            "大语言模型",
-            "数据"
-          ],
+          "topics": ["大语言模型", "数据"],
           "title": "SlimPajama-DC: 理解用于大语言模型训练的数据组合",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -5501,11 +4898,7 @@
         },
         {
           "id": "198277099",
-          "topics": [
-            "大语言模型",
-            "多语言",
-            "数据"
-          ],
+          "topics": ["大语言模型", "多语言", "数据"],
           "title": "CulturaX: 一个清洁、庞大且多语言的数据集,用于167种语言的大型语言模型",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5533,11 +4926,7 @@
         },
         {
           "id": "198044929",
-          "topics": [
-            "大语言模型",
-            "数据",
-            "智能体"
-          ],
+          "topics": ["大语言模型", "数据", "智能体"],
           "title": "用于推理实体智能体的数据源",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -5565,10 +4954,7 @@
         },
         {
           "id": "197813719",
-          "topics": [
-            "大语言模型",
-            "数据"
-          ],
+          "topics": ["大语言模型", "数据"],
           "title": "当少即是多:探究大规模预训练大语言模型的数据修剪",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5596,12 +4982,7 @@
         },
         {
           "id": "189787086",
-          "topics": [
-            "大语言模型",
-            "微调",
-            "LORA",
-            "数据"
-          ],
+          "topics": ["大语言模型", "微调", "LORA", "数据"],
           "title": "鸭嘴兽:快速,廉价且强大的大语言模型优化",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5629,11 +5010,7 @@
         },
         {
           "id": "189775948",
-          "topics": [
-            "大语言模型",
-            "聊天",
-            "数据"
-          ],
+          "topics": ["大语言模型", "聊天", "数据"],
           "title": "PIPPA: 一个部分合成的对话数据集",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5661,11 +5038,7 @@
         },
         {
           "id": "189576084",
-          "topics": [
-            "大语言模型",
-            "数据",
-            "训练"
-          ],
+          "topics": ["大语言模型", "数据", "训练"],
           "title": "Shepherd: 语言模型生成的评论家",
           "slug": "shepherd-a-critic-for-language-model-generation",
           "authorName": "Prof. Otto Nomos",
@@ -5699,10 +5072,7 @@
       "articles": [
         {
           "id": "198277109",
-          "topics": [
-            "大型语言模型",
-            "推理"
-          ],
+          "topics": ["大型语言模型", "推理"],
           "title": "对比解码提高大型语言模型的推理能力",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5730,11 +5100,7 @@
         },
         {
           "id": "189849326",
-          "topics": [
-            "大语言模型",
-            "提示工程",
-            "推理"
-          ],
+          "topics": ["大语言模型", "提示工程", "推理"],
           "title": "思维图谱:利用大型语言模型解决复杂问题",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5768,11 +5134,7 @@
       "articles": [
         {
           "id": "198044879",
-          "topics": [
-            "大语言模型",
-            "变换器",
-            "可解释性"
-          ],
+          "topics": ["大语言模型", "变换器", "可解释性"],
           "title": "稀疏自编码器在语言模型中发现高度可解释的特征",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -5806,11 +5168,7 @@
       "articles": [
         {
           "id": "198044746",
-          "topics": [
-            "大语言模型",
-            "变换器",
-            "训练"
-          ],
+          "topics": ["大语言模型", "变换器", "训练"],
           "title": "稀疏连接基础模型的缩放定律",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -5838,11 +5196,7 @@
         },
         {
           "id": "189845521",
-          "topics": [
-            "大语言模型",
-            "训练",
-            "对齐"
-          ],
+          "topics": ["大语言模型", "训练", "对齐"],
           "title": "从预训练数据到语言模型再到下游任务:追踪导致不公平自然语言处理模型的政治偏见轨迹",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5870,11 +5224,7 @@
         },
         {
           "id": "189576084",
-          "topics": [
-            "大语言模型",
-            "数据",
-            "训练"
-          ],
+          "topics": ["大语言模型", "数据", "训练"],
           "title": "Shepherd: 语言模型生成的评论家",
           "slug": "shepherd-a-critic-for-language-model-generation",
           "authorName": "Prof. Otto Nomos",
@@ -5908,10 +5258,7 @@
       "articles": [
         {
           "id": "197990754",
-          "topics": [
-            "大型语言模型",
-            "上下文学习"
-          ],
+          "topics": ["大型语言模型", "上下文学习"],
           "title": "大型语言模型的歧义感知上下文学习",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5939,11 +5286,7 @@
         },
         {
           "id": "197817281",
-          "topics": [
-            "大语言模型",
-            "上下文学习",
-            "微调"
-          ],
+          "topics": ["大语言模型", "上下文学习", "微调"],
           "title": "FIAT: 通过指令加速调优融合学习范式",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5971,11 +5314,7 @@
         },
         {
           "id": "189787148",
-          "topics": [
-            "检索",
-            "大语言模型",
-            "上下文学习"
-          ],
+          "topics": ["检索", "大语言模型", "上下文学习"],
           "title": "RAVEN: 使用检索增强的编码器-解码器语言模型进行上下文学习",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -6003,10 +5342,7 @@
         },
         {
           "id": "189777847",
-          "topics": [
-            "大语言模型",
-            "上下文学习"
-          ],
+          "topics": ["大语言模型", "上下文学习"],
           "title": "因果语言模型不适合上下文学习",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -6040,11 +5376,7 @@
       "articles": [
         {
           "id": "197842432",
-          "topics": [
-            "大型语言模型",
-            "评估",
-            "多语言"
-          ],
+          "topics": ["大型语言模型", "评估", "多语言"],
           "title": "基于大型语言模型的评估器是否是扩展多语言评估的解决方案?",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -6072,11 +5404,7 @@
         },
         {
           "id": "189787170",
-          "topics": [
-            "大语言模型",
-            "多语言",
-            "评估"
-          ],
+          "topics": ["大语言模型", "多语言", "评估"],
           "title": "Belebele基准测试:122种语言变体的平行阅读理解数据集",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
@@ -6104,11 +5432,7 @@
         },
         {
           "id": "189787190",
-          "topics": [
-            "大语言模型",
-            "评估",
-            "气候"
-          ],
+          "topics": ["大语言模型", "评估", "气候"],
           "title": "WeatherBench 2: 下一代数据驱动全球天气模型的基准测试",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -6136,12 +5460,7 @@
         },
         {
           "id": "189577629",
-          "topics": [
-            "大型语言模型",
-            "对齐",
-            "调查",
-            "评估"
-          ],
+          "topics": ["大型语言模型", "对齐", "调查", "评估"],
           "title": "可信的大型语言模型：评估大型语言模型对齐的调查和指南",
           "slug": "trustworthy-llms-a-survey-and-guideline-for-evaluating-large-language-models-alig",
           "authorName": "Prof. Otto Nomos",
@@ -6175,11 +5494,7 @@
       "articles": [
         {
           "id": "197990687",
-          "topics": [
-            "大型语言模型",
-            "医疗保健",
-            "摘要生成"
-          ],
+          "topics": ["大型语言模型", "医疗保健", "摘要生成"],
           "title": "临床文本摘要:调整大型语言模型可以超越人类专家",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
@@ -6207,11 +5522,7 @@
         },
         {
           "id": "197621737",
-          "topics": [
-            "大语言模型",
-            "提示工程",
-            "摘要生成"
-          ],
+          "topics": ["大语言模型", "提示工程", "摘要生成"],
           "title": "DrugChat: 实现药物分子图上类ChatGPT的能力",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -6239,11 +5550,7 @@
         },
         {
           "id": "197621634",
-          "topics": [
-            "大语言模型",
-            "提示工程",
-            "摘要生成"
-          ],
+          "topics": ["大语言模型", "提示工程", "摘要生成"],
           "title": "从稀疏到密集:使用密度链提示的GPT-4摘要生成",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -6277,11 +5584,7 @@
       "articles": [
         {
           "id": "197990654",
-          "topics": [
-            "大语言模型",
-            "基于人类反馈的强化学习",
-            "强化学习"
-          ],
+          "topics": ["大语言模型", "基于人类反馈的强化学习", "强化学习"],
           "title": "统计拒绝采样改进偏好优化",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -6315,10 +5618,7 @@
       "articles": [
         {
           "id": "197859672",
-          "topics": [
-            "大型语言模型",
-            "代码"
-          ],
+          "topics": ["大型语言模型", "代码"],
           "title": "用于编译器优化的大型语言模型",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -6346,10 +5646,7 @@
         },
         {
           "id": "189787126",
-          "topics": [
-            "大语言模型",
-            "代码"
-          ],
+          "topics": ["大语言模型", "代码"],
           "title": "大语言模型作为数据库管理员",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -6377,11 +5674,7 @@
         },
         {
           "id": "189787194",
-          "topics": [
-            "大语言模型",
-            "代码",
-            "医疗保健"
-          ],
+          "topics": ["大语言模型", "代码", "医疗保健"],
           "title": "BioCoder: 具有上下文语用知识的生物信息学代码生成基准",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -6409,11 +5702,7 @@
         },
         {
           "id": "189787192",
-          "topics": [
-            "大语言模型",
-            "代码",
-            "指令微调"
-          ],
+          "topics": ["大语言模型", "代码", "指令微调"],
           "title": "编程语言能否通过指令微调相互促进?",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -6441,11 +5730,7 @@
         },
         {
           "id": "189777823",
-          "topics": [
-            "大语言模型",
-            "代码",
-            "聊天"
-          ],
+          "topics": ["大语言模型", "代码", "聊天"],
           "title": "SoTaNa: 开源软件开发助手",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
@@ -6473,11 +5758,7 @@
         },
         {
           "id": "189787144",
-          "topics": [
-            "大语言模型",
-            "代码",
-            "提示工程"
-          ],
+          "topics": ["大语言模型", "代码", "提示工程"],
           "title": "使用GPT-4代码解释器和基于代码的自验证解决具有挑战性的数学应用题",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -6505,11 +5786,7 @@
         },
         {
           "id": "189777877",
-          "topics": [
-            "大语言模型",
-            "代码",
-            "指令微调"
-          ],
+          "topics": ["大语言模型", "代码", "指令微调"],
           "title": "OctoPack: 代码大语言模型的指令微调",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -6537,10 +5814,7 @@
         },
         {
           "id": "189777872",
-          "topics": [
-            "大型语言模型",
-            "代码"
-          ],
+          "topics": ["大型语言模型", "代码"],
           "title": "使用大型语言模型生成的代码增强网络管理",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -6574,10 +5848,7 @@
       "articles": [
         {
           "id": "197840057",
-          "topics": [
-            "大语言模型",
-            "科学"
-          ],
+          "topics": ["大语言模型", "科学"],
           "title": "AstroLLaMA: 面向天文学的专业基础模型",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -6605,11 +5876,7 @@
         },
         {
           "id": "197838596",
-          "topics": [
-            "大型语言模型",
-            "数学",
-            "科学"
-          ],
+          "topics": ["大型语言模型", "数学", "科学"],
           "title": "科学领域的大型语言模型：P对NP问题的研究",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -6637,10 +5904,7 @@
         },
         {
           "id": "189577812",
-          "topics": [
-            "扩散",
-            "科学"
-          ],
+          "topics": ["扩散", "科学"],
           "title": "PDE-Refiner: 通过神经PDE求解器实现精确的长期推演",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -6674,11 +5938,7 @@
       "articles": [
         {
           "id": "197838596",
-          "topics": [
-            "大型语言模型",
-            "数学",
-            "科学"
-          ],
+          "topics": ["大型语言模型", "数学", "科学"],
           "title": "科学领域的大型语言模型：P对NP问题的研究",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -6706,10 +5966,7 @@
         },
         {
           "id": "197621439",
-          "topics": [
-            "大语言模型",
-            "数学"
-          ],
+          "topics": ["大语言模型", "数学"],
           "title": "GPT无需计算器即可解决数学问题",
           "slug": "transformer-models-an-introduction-and-catalog",
           "authorName": "Prof. Otto Nomos",
@@ -6743,10 +6000,7 @@
       "articles": [
         {
           "id": "197810544",
-          "topics": [
-            "大语言模型",
-            "开源"
-          ],
+          "topics": ["大语言模型", "开源"],
           "title": "你只需要教科书 II: phi-1.5 技术报告",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -6774,11 +6028,7 @@
         },
         {
           "id": "197621519",
-          "topics": [
-            "大语言模型",
-            "开源",
-            "指令微调"
-          ],
+          "topics": ["大语言模型", "开源", "指令微调"],
           "title": "XGen-7B技术报告",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
@@ -6812,10 +6062,7 @@
       "articles": [
         {
           "id": "197613987",
-          "topics": [
-            "图像",
-            "LORA"
-          ],
+          "topics": ["图像", "LORA"],
           "title": "StyleAdapter: 用于风格化图像生成的单通道无LoRA模型",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -6843,11 +6090,7 @@
         },
         {
           "id": "189576077",
-          "topics": [
-            "图像",
-            "安全",
-            "扩散"
-          ],
+          "topics": ["图像", "安全", "扩散"],
           "title": "FLIRT: 反馈循环情境下的红队测试",
           "slug": "flirt-feedback-loop-in-context-red-teaming",
           "authorName": "Prof. Otto Nomos",
@@ -6881,10 +6124,7 @@
       "articles": [
         {
           "id": "197613987",
-          "topics": [
-            "图像",
-            "LORA"
-          ],
+          "topics": ["图像", "LORA"],
           "title": "StyleAdapter: 用于风格化图像生成的单通道无LoRA模型",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -6912,11 +6152,7 @@
         },
         {
           "id": "180927998",
-          "topics": [
-            "LLM",
-            "评论",
-            "LORA"
-          ],
+          "topics": ["LLM", "评论", "LORA"],
           "title": "LoraHub: 通过动态LoRA组合实现高效跨任务泛化 [评论]",
           "slug": "lorahub-efficient-cross-task-generalization-via-dynamic-lora-composition-commenta",
           "authorName": "Prof. Otto Nomos",
@@ -6944,12 +6180,7 @@
         },
         {
           "id": "189787086",
-          "topics": [
-            "大语言模型",
-            "微调",
-            "LORA",
-            "数据"
-          ],
+          "topics": ["大语言模型", "微调", "LORA", "数据"],
           "title": "鸭嘴兽:快速,廉价且强大的大语言模型优化",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -6983,11 +6214,7 @@
       "articles": [
         {
           "id": "197559951",
-          "topics": [
-            "大语言模型",
-            "智能代理",
-            "工具"
-          ],
+          "topics": ["大语言模型", "智能代理", "工具"],
           "title": "ModelScope-Agent: 使用开源大语言模型构建可定制的智能代理系统",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -7015,11 +6242,7 @@
         },
         {
           "id": "180928004",
-          "topics": [
-            "大型语言模型",
-            "工具",
-            "评论"
-          ],
+          "topics": ["大型语言模型", "工具", "评论"],
           "title": "ToolLLM: 促进大型语言模型掌握16000多个真实世界API [评论]",
           "slug": "toolllm-facilitating-large-language-models-to-master-16000-real-world-apis-commen",
           "authorName": "Prof. Otto Nomos",
@@ -7047,10 +6270,7 @@
         },
         {
           "id": "189989705",
-          "topics": [
-            "大语言模型",
-            "工具"
-          ],
+          "topics": ["大语言模型", "工具"],
           "title": "FacTool: 生成式人工智能中的事实性检测 -- 一个用于多任务和多领域场景的工具增强框架",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -7084,11 +6304,7 @@
       "articles": [
         {
           "id": "180403467",
-          "topics": [
-            "LLM",
-            "RLHF",
-            "摘要"
-          ],
+          "topics": ["LLM", "RLHF", "摘要"],
           "title": "人类反馈强化学习的开放问题和基本局限性 [摘要]",
           "slug": "open-problems-and-fundamental-limitations-of-reinforcement-learning-from-human-fe",
           "authorName": "Prof. Otto Nomos",
@@ -7116,10 +6332,7 @@
         },
         {
           "id": "180869081",
-          "topics": [
-            "LLM",
-            "摘要"
-          ],
+          "topics": ["LLM", "摘要"],
           "title": "Llama 2: 开放基础和微调聊天模型 [评论]",
           "slug": "llama-2-open-foundation-and-fine-tuned-chat-models-commentary",
           "authorName": "Prof. Otto Nomos",
@@ -7147,10 +6360,7 @@
         },
         {
           "id": "179737945",
-          "topics": [
-            "大型语言模型",
-            "摘要"
-          ],
+          "topics": ["大型语言模型", "摘要"],
           "title": "大型语言模型的挑战和应用 [摘要]",
           "slug": "challenges-and-applications-of-large-language-models-summary",
           "authorName": "Prof. Otto Nomos",
@@ -7184,11 +6394,7 @@
       "articles": [
         {
           "id": "180927998",
-          "topics": [
-            "LLM",
-            "评论",
-            "LORA"
-          ],
+          "topics": ["LLM", "评论", "LORA"],
           "title": "LoraHub: 通过动态LoRA组合实现高效跨任务泛化 [评论]",
           "slug": "lorahub-efficient-cross-task-generalization-via-dynamic-lora-composition-commenta",
           "authorName": "Prof. Otto Nomos",
@@ -7216,11 +6422,7 @@
         },
         {
           "id": "180928004",
-          "topics": [
-            "大型语言模型",
-            "工具",
-            "评论"
-          ],
+          "topics": ["大型语言模型", "工具", "评论"],
           "title": "ToolLLM: 促进大型语言模型掌握16000多个真实世界API [评论]",
           "slug": "toolllm-facilitating-large-language-models-to-master-16000-real-world-apis-commen",
           "authorName": "Prof. Otto Nomos",
@@ -7254,11 +6456,7 @@
       "articles": [
         {
           "id": "189845558",
-          "topics": [
-            "大型语言模型",
-            "压缩",
-            "综述"
-          ],
+          "topics": ["大型语言模型", "压缩", "综述"],
           "title": "大型语言模型压缩技术综述",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -7286,12 +6484,7 @@
         },
         {
           "id": "189577629",
-          "topics": [
-            "大型语言模型",
-            "对齐",
-            "调查",
-            "评估"
-          ],
+          "topics": ["大型语言模型", "对齐", "调查", "评估"],
           "title": "可信的大型语言模型：评估大型语言模型对齐的调查和指南",
           "slug": "trustworthy-llms-a-survey-and-guideline-for-evaluating-large-language-models-alig",
           "authorName": "Prof. Otto Nomos",
@@ -7325,11 +6518,7 @@
       "articles": [
         {
           "id": "189845521",
-          "topics": [
-            "大语言模型",
-            "训练",
-            "对齐"
-          ],
+          "topics": ["大语言模型", "训练", "对齐"],
           "title": "从预训练数据到语言模型再到下游任务:追踪导致不公平自然语言处理模型的政治偏见轨迹",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -7357,12 +6546,7 @@
         },
         {
           "id": "189577629",
-          "topics": [
-            "大型语言模型",
-            "对齐",
-            "调查",
-            "评估"
-          ],
+          "topics": ["大型语言模型", "对齐", "调查", "评估"],
           "title": "可信的大型语言模型：评估大型语言模型对齐的调查和指南",
           "slug": "trustworthy-llms-a-survey-and-guideline-for-evaluating-large-language-models-alig",
           "authorName": "Prof. Otto Nomos",
@@ -7390,10 +6574,7 @@
         },
         {
           "id": "189576058",
-          "topics": [
-            "大语言模型",
-            "对齐"
-          ],
+          "topics": ["大语言模型", "对齐"],
           "title": "简单的合成数据减少了大语言模型中的谄媚行为",
           "slug": "simple-synthetic-data-reduces-sycophancy-in-large-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -7427,11 +6608,7 @@
       "articles": [
         {
           "id": "189787190",
-          "topics": [
-            "大语言模型",
-            "评估",
-            "气候"
-          ],
+          "topics": ["大语言模型", "评估", "气候"],
           "title": "WeatherBench 2: 下一代数据驱动全球天气模型的基准测试",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -7465,10 +6642,7 @@
       "articles": [
         {
           "id": "189787150",
-          "topics": [
-            "大语言模型",
-            "个性化"
-          ],
+          "topics": ["大语言模型", "个性化"],
           "title": "教大语言模型实现个性化 -- 一种受写作教育启发的方法",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -7502,10 +6676,7 @@
       "articles": [
         {
           "id": "189577812",
-          "topics": [
-            "扩散",
-            "科学"
-          ],
+          "topics": ["扩散", "科学"],
           "title": "PDE-Refiner: 通过神经PDE求解器实现精确的长期推演",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -7533,11 +6704,7 @@
         },
         {
           "id": "189576077",
-          "topics": [
-            "图像",
-            "安全",
-            "扩散"
-          ],
+          "topics": ["图像", "安全", "扩散"],
           "title": "FLIRT: 反馈循环情境下的红队测试",
           "slug": "flirt-feedback-loop-in-context-red-teaming",
           "authorName": "Prof. Otto Nomos",
@@ -7571,10 +6738,7 @@
       "articles": [
         {
           "id": "189576091",
-          "topics": [
-            "大语言模型",
-            "推理"
-          ],
+          "topics": ["大语言模型", "推理"],
           "title": "使用分阶段推测解码加速大语言模型推理",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -7608,11 +6772,7 @@
       "articles": [
         {
           "id": "189576077",
-          "topics": [
-            "图像",
-            "安全",
-            "扩散"
-          ],
+          "topics": ["图像", "安全", "扩散"],
           "title": "FLIRT: 反馈循环情境下的红队测试",
           "slug": "flirt-feedback-loop-in-context-red-teaming",
           "authorName": "Prof. Otto Nomos",

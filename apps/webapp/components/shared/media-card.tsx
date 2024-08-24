@@ -40,5 +40,5 @@ export function MediaCard({ video, lang, className }: MediaCardProps) {
 
 export interface MediaCardProps extends LangProp {
   video: YouTubePlaylistItem
-  className?: string  // Add className prop to the interface
+  className?: string // Add className prop to the interface
 }

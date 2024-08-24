@@ -20,7 +20,7 @@ function Section({
   links,
   projects,
   imageSrc,
-  imageAlt
+  imageAlt,
 }: SectionProps) {
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
@@ -37,7 +37,7 @@ function Section({
             </div>
             {links && (
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                {links.map(link => (
+                {links.map((link) => (
                   <Link
                     key={link.text}
                     className="inline-flex items-center justify-center h-10 px-8 text-sm font-medium transition-colors bg-gray-900 rounded-md shadow text-gray-50 hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
@@ -50,7 +50,7 @@ function Section({
             )}
             {projects && (
               <ul className="grid gap-6">
-                {projects.map(project => (
+                {projects.map((project) => (
                   <li key={project.name}>
                     <div className="grid gap-1">
                       <h3 className="text-xl font-bold">{project.name}</h3>
@@ -93,10 +93,10 @@ const heroSection = {
     'Discover highly-vetted Web3 projects supported by industry-leading creators and funds.',
   links: [
     { text: 'Get Early Access', href: '#' },
-    { text: 'Learn more', href: '#' }
+    { text: 'Learn more', href: '#' },
   ],
   imageSrc: '/images/placeholder.svg',
-  imageAlt: 'Hero'
+  imageAlt: 'Hero',
 }
 
 const exploreSection = {
@@ -106,20 +106,20 @@ const exploreSection = {
   projects: [
     {
       name: 'Project Alpha',
-      description: 'A decentralized platform for creators and fans.'
+      description: 'A decentralized platform for creators and fans.',
     },
     {
       name: 'Project Beta',
-      description: 'A Web3 gaming ecosystem built on the Ethereum blockchain.'
+      description: 'A Web3 gaming ecosystem built on the Ethereum blockchain.',
     },
     {
       name: 'Project Gamma',
       description:
-        'A decentralized finance (DeFi) platform for lending and borrowing.'
-    }
+        'A decentralized finance (DeFi) platform for lending and borrowing.',
+    },
   ],
   imageSrc: '/images/placeholder.svg',
-  imageAlt: 'Image'
+  imageAlt: 'Image',
 }
 
 const joinSection = {
@@ -128,8 +128,8 @@ const joinSection = {
     'Be among the first to discover and invest in the most promising Web3 projects.',
   links: [
     { text: 'Get Early Access', href: '#' },
-    { text: 'Learn more', href: '#' }
-  ]
+    { text: 'Learn more', href: '#' },
+  ],
 }
 
 const communitySection = {
@@ -138,6 +138,6 @@ const communitySection = {
     'Connect with like-minded individuals, share ideas, and stay up-to-date with the latest developments in the Web3 space. Exclusive access to events, AMAs, and networking opportunities.',
   links: [
     { text: 'Join Community', href: '#' },
-    { text: 'Learn More', href: '#' }
-  ]
+    { text: 'Learn More', href: '#' },
+  ],
 }

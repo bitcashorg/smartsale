@@ -1,23 +1,23 @@
-import { Lang, locales } from '@/dictionaries/locales'
-import { BlogArticleData } from '@/services/datocms'
+import * as path from 'path'
+import { type Lang, locales } from '@/dictionaries/locales'
+import { promiseAllWithConcurrencyLimit } from '@/lib/utils'
+import { anthropicTranslate } from '@/services/anthropic'
+import type { BlogArticleData } from '@/services/datocms'
 import {
-  TranslationData,
+  type TranslationData,
   extractTextForTranslation,
   extractTitleAndDescriptionNested,
-  injectTextAfterTranslation
+  injectTextAfterTranslation,
 } from '@/services/datocms/translation/utils'
-import { anthropicTranslate } from '@/services/anthropic'
-import * as fs from 'fs/promises'
-import * as path from 'path'
-import { promiseAllWithConcurrencyLimit } from '@/lib/utils'
-import _ from 'lodash'
 import { getErrorMessage } from 'app-lib'
+import * as fs from 'fs/promises'
+import _ from 'lodash'
 
 async function processFile(
   file: string,
   subDir: string,
   targetDir: string,
-  lang: Lang
+  lang: Lang,
 ) {
   if (file.endsWith('-index.json')) return
 
@@ -36,7 +36,7 @@ async function processFile(
 
     try {
       const englishVersion: BlogArticleData = JSON.parse(
-        await fs.readFile(sourcePath, 'utf8')
+        await fs.readFile(sourcePath, 'utf8'),
       )
 
       // get related blogs translataion
@@ -44,8 +44,8 @@ async function processFile(
         ...englishVersion,
         blogContent: undefined,
         relatedBlogs: englishVersion.relatedBlogs.map(
-          extractTitleAndDescriptionNested
-        )
+          extractTitleAndDescriptionNested,
+        ),
       }
       const relatedBlogs = await anthropicTranslate(relatedBlogsPayload, lang)
       // console.log('relatedBlogs', relatedBlogs)
@@ -64,37 +64,37 @@ async function processFile(
         throw new Error('❌ Failed to optimize blog content')
 
       const optmizedContentActions = optimized.contentBlock?.map(
-        block => () => {
+        (block) => () => {
           console.log('🧑🏻‍💻 translating blog content block ...')
           return anthropicTranslate(block, lang)
-        }
+        },
       )
       const blogContentResults = await promiseAllWithConcurrencyLimit(
-        optmizedContentActions.map(action => async () => {
+        optmizedContentActions.map((action) => async () => {
           const result = await action()
           if (!result || !result.translation) {
             throw new Error('❌ Failed to translate a blog content block')
           }
           return result
         }),
-        1
-      ).then(results => {
-        if (results.some(result => result === null)) {
+        1,
+      ).then((results) => {
+        if (results.some((result) => result === null)) {
           throw new Error(
-            '❌ One or more blog content blocks failed to translate'
+            '❌ One or more blog content blocks failed to translate',
           )
         }
         return results
       })
 
-      const blogContent = blogContentResults
-        .map(result => result?.translation)
-        .flat()
+      const blogContent = blogContentResults.flatMap(
+        (result) => result?.translation,
+      )
 
       const translations: TranslationData = {
         ...blogMeta.translation,
         contentBlock: blogContent,
-        relatedBlogs: relatedBlogs.translation
+        relatedBlogs: relatedBlogs.translation,
       }
 
       const translatedContent = {
@@ -102,14 +102,14 @@ async function processFile(
         topics: relatedBlogs.translation.topics,
         blogContent: injectTextAfterTranslation(
           englishVersion.blogContent,
-          translations
+          translations,
         ),
         relatedBlogs: englishVersion.relatedBlogs.map((blog, index) => {
           return {
             ...blog,
-            ...relatedBlogs.translation.relatedBlogs[index]
+            ...relatedBlogs.translation.relatedBlogs[index],
           }
-        })
+        }),
       }
 
       await fs.writeFile(targetPath, JSON.stringify(translatedContent, null, 2))
@@ -123,7 +123,7 @@ async function processFile(
 async function processDirectory(
   directory: string,
   targetDir: string,
-  lang: Lang
+  lang: Lang,
 ) {
   const subDir = path.join(directory)
   const subFiles = await fs.readdir(subDir)
@@ -158,9 +158,9 @@ async function ensureDirectoryExists(directory: string) {
 async function processLocale(): Promise<void> {
   await promiseAllWithConcurrencyLimit(
     locales
-      .filter(lang => lang !== 'en')
-      .map(lang => () => copyJsonFiles(lang)),
-    1
+      .filter((lang) => lang !== 'en')
+      .map((lang) => () => copyJsonFiles(lang)),
+    1,
   )
 }
 

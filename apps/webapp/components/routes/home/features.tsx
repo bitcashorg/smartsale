@@ -2,7 +2,7 @@ import { Section } from '@/components/shared/section'
 
 import { Tag } from '@/components/shared/tag'
 import { Card, CardContent } from '@/components/ui/card'
-import { Lang } from '@/dictionaries/locales'
+import type { Lang } from '@/dictionaries/locales'
 import { cn } from '@/lib/utils'
 import Image from 'next/image'
 import Balancer from 'react-wrap-balancer'
@@ -18,7 +18,7 @@ export function Features({ lang, dict }: FeaturesProps) {
           key={index}
           className={cn(
             'mx-auto grid items-center gap-6 lg:grid-cols-2 lg:gap-20',
-            index === 0 ? 'border-b border-muted pb-20' : 'pt-20'
+            index === 0 ? 'border-b border-muted pb-20' : 'pt-20',
           )}
         >
           <div

@@ -1,29 +1,29 @@
-import { EVMTokenContractData } from "../../types";
 import { erc20Abi } from 'abitype/abis'
 import { arbitrum, avalanche, polygon, zkSync } from 'viem/chains'
+import type { EVMTokenContractData } from '../../types'
 
 export const usdcContracts: EVMTokenContractData[] = [
   {
-    address: "0xaf88d065e77c8cc2239327c5edb3a432268e5831",
-    name: "USDC",
-    symbol: "USDC",
+    address: '0xaf88d065e77c8cc2239327c5edb3a432268e5831',
+    name: 'USDC',
+    symbol: 'USDC',
     decimals: 6,
     indexFromBlock: 1045000,
     chainId: 42161, // Arbitrum Mainnet
-    chainType: "evm",
-    chainName: "Arbitrum",
+    chainType: 'evm',
+    chainName: 'Arbitrum',
     abi: erc20Abi,
     chain: arbitrum,
   },
   {
-    address: "0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E",
-    name: "USDC",
-    symbol: "USDC",
+    address: '0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E',
+    name: 'USDC',
+    symbol: 'USDC',
     decimals: 6,
     indexFromBlock: 48843700,
     chainId: 43114, // Avalanche Mainnet
-    chainType: "evm",
-    chainName: "Avalanche",
+    chainType: 'evm',
+    chainName: 'Avalanche',
     abi: erc20Abi,
     chain: avalanche,
   },
@@ -80,26 +80,26 @@ export const usdcContracts: EVMTokenContractData[] = [
   //   chain: optimism,
   // },
   {
-    address: "0x3c499c542cef5e3811e1192ce70d8cc03d5c3359",
-    name: "USDC",
-    symbol: "USDC",
+    address: '0x3c499c542cef5e3811e1192ce70d8cc03d5c3359',
+    name: 'USDC',
+    symbol: 'USDC',
     decimals: 6,
     indexFromBlock: 5000000,
     chainId: 137, // Polygon PoS Mainnet
-    chainType: "evm",
-    chainName: "Polygon",
+    chainType: 'evm',
+    chainName: 'Polygon',
     abi: erc20Abi,
     chain: polygon,
   },
   {
-    address: "0x1d17CBcF0D6D143135aE902365D2E5e2A16538D4",
-    name: "USDC",
-    symbol: "USDC",
+    address: '0x1d17CBcF0D6D143135aE902365D2E5e2A16538D4',
+    name: 'USDC',
+    symbol: 'USDC',
     decimals: 6,
     indexFromBlock: 1000000,
     chainId: 324, // ZKsync Mainnet
-    chainType: "evm",
-    chainName: "ZKsync",
+    chainType: 'evm',
+    chainName: 'ZKsync',
     abi: erc20Abi,
     chain: zkSync,
   },

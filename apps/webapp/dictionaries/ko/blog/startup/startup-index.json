@@ -6,10 +6,7 @@
       "articles": [
         {
           "id": "165921766",
-          "topics": [
-            "시작하기",
-            "법률"
-          ],
+          "topics": ["시작하기", "법률"],
           "title": "법률 환경 탐색: 스타트업 창업자를 위한 필수 법률 고려사항",
           "slug": "navigating-the-legal-landscape-essential-legal-considerations-for-startup-founder",
           "authorName": "Steve Savant",
@@ -37,10 +34,7 @@
         },
         {
           "id": "166795692",
-          "topics": [
-            "시작하기",
-            "비즈니스 및 관리"
-          ],
+          "topics": ["시작하기", "비즈니스 및 관리"],
           "title": "현금 흐름 마스터하기: 스타트업 창업자를 위한 궁극의 가이드",
           "slug": "mastering-cash-flow-the-ultimate-guide-for-startup-founders",
           "authorName": "Bootstrap Briggs",
@@ -68,10 +62,7 @@
         },
         {
           "id": "166788631",
-          "topics": [
-            "시작하기",
-            "비즈니스 및 관리"
-          ],
+          "topics": ["시작하기", "비즈니스 및 관리"],
           "title": "스타트업을 위한 스마트 예산 수립: 강력한 재무 기반 구축을 위한 단계별 가이드",
           "slug": "smart-budgeting-for-startups-a-step-by-step-guide-to-building-a-strong-financial",
           "authorName": "Bootstrap Briggs",
@@ -99,10 +90,7 @@
         },
         {
           "id": "165816954",
-          "topics": [
-            "시작하기",
-            "팀 및 인사"
-          ],
+          "topics": ["시작하기", "팀 및 인사"],
           "title": "꿈의 팀 만들기: 스타트업 팀 구성을 위한 궁극의 가이드",
           "slug": "building-a-dream-team-the-ultimate-guide-to-assembling-your-startup-squad",
           "authorName": "Bootstrap Briggs",
@@ -130,10 +118,7 @@
         },
         {
           "id": "166322203",
-          "topics": [
-            "시작하기",
-            "영업 및 마케팅"
-          ],
+          "topics": ["시작하기", "영업 및 마케팅"],
           "title": "성공을 위한 청사진: 스타트업을 위한 성공적인 영업 계획 수립 가이드",
           "slug": "the-blueprint-to-success-a-guide-to-crafting-a-winning-sales-plan-for-your-startu",
           "authorName": "Steve Savant",
@@ -161,10 +146,7 @@
         },
         {
           "id": "166788522",
-          "topics": [
-            "시작하기",
-            "비즈니스 및 관리"
-          ],
+          "topics": ["시작하기", "비즈니스 및 관리"],
           "title": "번영 전망: 스타트업을 위한 현실적인 재무 예측 설정 가이드",
           "slug": "projecting-prosperity-a-guide-to-setting-realistic-financial-projections-for-your",
           "authorName": "Bootstrap Briggs",
@@ -192,10 +174,7 @@
         },
         {
           "id": "166788454",
-          "topics": [
-            "시작하기",
-            "영업 및 마케팅"
-          ],
+          "topics": ["시작하기", "영업 및 마케팅"],
           "title": "스타트업을 위한 고객 획득 비용 마스터하기 완벽 가이드",
           "slug": "the-ultimate-guide-to-mastering-customer-acquisition-costs-for-startups",
           "authorName": "Bootstrap Briggs",
@@ -223,10 +202,7 @@
         },
         {
           "id": "166286175",
-          "topics": [
-            "시작하기",
-            "영업 및 마케팅"
-          ],
+          "topics": ["시작하기", "영업 및 마케팅"],
           "title": "스타트업을 위한 소셜 미디어 활용 가이드: 마케팅 도달 범위 극대화하기",
           "slug": "maximizing-your-marketing-reach-a-guide-to-utilizing-social-media-for-startups",
           "authorName": "Steve Savant",
@@ -254,10 +230,7 @@
         },
         {
           "id": "166286117",
-          "topics": [
-            "시작하기",
-            "영업 및 마케팅"
-          ],
+          "topics": ["시작하기", "영업 및 마케팅"],
           "title": "성공을 향한 브랜딩: 스타트업 창업자를 위한 가이드",
           "slug": "branding-your-way-to-success-a-guide-for-start-up-founders",
           "authorName": "Steve Savant",
@@ -285,10 +258,7 @@
         },
         {
           "id": "166277989",
-          "topics": [
-            "시작하기",
-            "영업 및 마케팅"
-          ],
+          "topics": ["시작하기", "영업 및 마케팅"],
           "title": "마케팅의 힘 풀어내기: 스타트업 창업자를 위한 종합 가이드",
           "slug": "unleashing-the-power-of-marketing-a-comprehensive-guide-for-startup-founders",
           "authorName": "Steve Savant",
@@ -316,10 +286,7 @@
         },
         {
           "id": "166263351",
-          "topics": [
-            "시작하기",
-            "비즈니스 및 관리"
-          ],
+          "topics": ["시작하기", "비즈니스 및 관리"],
           "title": "당신의 강점을 발견하세요: 설득력 있는 고유 가치 제안 만들기",
           "slug": "discover-your-edge-crafting-a-compelling-unique-value-proposition",
           "authorName": "Steve Savant",
@@ -347,9 +314,7 @@
         },
         {
           "id": "166263240",
-          "topics": [
-            "시작하기"
-          ],
+          "topics": ["시작하기"],
           "title": "스타트업 시작하기: 최소 기능 제품 구축을 위한 궁극적인 가이드",
           "slug": "jumpstarting-your-startup-the-ultimate-guide-to-building-a-minimal-viable-product",
           "authorName": "Bootstrap Briggs",
@@ -377,10 +342,7 @@
         },
         {
           "id": "165927224",
-          "topics": [
-            "시작하기",
-            "법률"
-          ],
+          "topics": ["시작하기", "법률"],
           "title": "사업 구조의 미로 해독하기: 스타트업 창업자를 위한 가이드",
           "slug": "decoding-the-business-structure-maze-a-guide-for-start-up-founders",
           "authorName": "Steve Savant",
@@ -408,10 +370,7 @@
         },
         {
           "id": "165921857",
-          "topics": [
-            "시작하기",
-            "법률"
-          ],
+          "topics": ["시작하기", "법률"],
           "title": "스타트업의 핵심 자산 보호하기: 지적 재산권 보호 가이드",
           "slug": "safeguarding-your-startup-s-crown-jewels-a-guide-to-protecting-your-intellectual",
           "authorName": "Steve Savant",
@@ -439,10 +398,7 @@
         },
         {
           "id": "165817305",
-          "topics": [
-            "시작하기",
-            "자금 조달"
-          ],
+          "topics": ["시작하기", "자금 조달"],
           "title": "성공적인 스타트업 자금 조달의 비밀 풀기: 종합 가이드",
           "slug": "unlocking-the-secrets-of-successful-startup-fundraising-a-comprehensive-guide",
           "authorName": "Steve Savant",
@@ -470,10 +426,7 @@
         },
         {
           "id": "165812094",
-          "topics": [
-            "시작하기",
-            "영업 및 마케팅"
-          ],
+          "topics": ["시작하기", "영업 및 마케팅"],
           "title": "스타트업 창업자를 위한 타겟 시장의 힘 활용하기: 종합 가이드",
           "slug": "unleashing-the-power-of-your-target-market-a-comprehensive-guide-for-startup-foun",
           "authorName": "Steve Savant",
@@ -501,9 +454,7 @@
         },
         {
           "id": "165813334",
-          "topics": [
-            "시작하기"
-          ],
+          "topics": ["시작하기"],
           "title": "스타트업 아이디어 검증을 위한 궁극의 가이드: MVP부터 자신감 있는 확장까지",
           "slug": "the-ultimate-guide-to-validating-your-startup-idea-from-mvp-to-scaling-with-confi",
           "authorName": "Steve Savant",
@@ -531,9 +482,7 @@
         },
         {
           "id": "165817167",
-          "topics": [
-            "시작하기"
-          ],
+          "topics": ["시작하기"],
           "title": "네트워크 극대화하기: 비즈니스 기회를 여는 열쇠",
           "slug": "maximizing-your-network-the-key-to-unlocking-business-opportunities",
           "authorName": "Bootstrap Briggs",
@@ -561,10 +510,7 @@
         },
         {
           "id": "165815183",
-          "topics": [
-            "시작하기",
-            "영업 및 마케팅"
-          ],
+          "topics": ["시작하기", "영업 및 마케팅"],
           "title": "시장 조사의 힘: 스타트업 창업자를 위한 가이드",
           "slug": "the-power-of-market-research-a-guide-for-startup-founders",
           "authorName": "Steve Savant",
@@ -592,9 +538,7 @@
         },
         {
           "id": "165816931",
-          "topics": [
-            "시작하기"
-          ],
+          "topics": ["시작하기"],
           "title": "스타트업을 위한 성공적인 사업 계획 수립 완벽 가이드",
           "slug": "the-ultimate-guide-to-crafting-a-winning-business-plan-for-your-startup",
           "authorName": "Bootstrap Briggs",
@@ -628,10 +572,7 @@
       "articles": [
         {
           "id": "165921766",
-          "topics": [
-            "시작하기",
-            "법률"
-          ],
+          "topics": ["시작하기", "법률"],
           "title": "법률 환경 탐색: 스타트업 창업자를 위한 필수 법률 고려사항",
           "slug": "navigating-the-legal-landscape-essential-legal-considerations-for-startup-founder",
           "authorName": "Steve Savant",
@@ -659,10 +600,7 @@
         },
         {
           "id": "165927224",
-          "topics": [
-            "시작하기",
-            "법률"
-          ],
+          "topics": ["시작하기", "법률"],
           "title": "사업 구조의 미로 해독하기: 스타트업 창업자를 위한 가이드",
           "slug": "decoding-the-business-structure-maze-a-guide-for-start-up-founders",
           "authorName": "Steve Savant",
@@ -690,10 +628,7 @@
         },
         {
           "id": "165921857",
-          "topics": [
-            "시작하기",
-            "법률"
-          ],
+          "topics": ["시작하기", "법률"],
           "title": "스타트업의 핵심 자산 보호하기: 지적 재산권 보호 가이드",
           "slug": "safeguarding-your-startup-s-crown-jewels-a-guide-to-protecting-your-intellectual",
           "authorName": "Steve Savant",
@@ -727,10 +662,7 @@
       "articles": [
         {
           "id": "166795692",
-          "topics": [
-            "시작하기",
-            "비즈니스 및 관리"
-          ],
+          "topics": ["시작하기", "비즈니스 및 관리"],
           "title": "현금 흐름 마스터하기: 스타트업 창업자를 위한 궁극의 가이드",
           "slug": "mastering-cash-flow-the-ultimate-guide-for-startup-founders",
           "authorName": "Bootstrap Briggs",
@@ -758,10 +690,7 @@
         },
         {
           "id": "166788631",
-          "topics": [
-            "시작하기",
-            "비즈니스 및 관리"
-          ],
+          "topics": ["시작하기", "비즈니스 및 관리"],
           "title": "스타트업을 위한 스마트 예산 수립: 강력한 재무 기반 구축을 위한 단계별 가이드",
           "slug": "smart-budgeting-for-startups-a-step-by-step-guide-to-building-a-strong-financial",
           "authorName": "Bootstrap Briggs",
@@ -789,10 +718,7 @@
         },
         {
           "id": "166788522",
-          "topics": [
-            "시작하기",
-            "비즈니스 및 관리"
-          ],
+          "topics": ["시작하기", "비즈니스 및 관리"],
           "title": "번영 전망: 스타트업을 위한 현실적인 재무 예측 설정 가이드",
           "slug": "projecting-prosperity-a-guide-to-setting-realistic-financial-projections-for-your",
           "authorName": "Bootstrap Briggs",
@@ -820,10 +746,7 @@
         },
         {
           "id": "166263351",
-          "topics": [
-            "시작하기",
-            "비즈니스 및 관리"
-          ],
+          "topics": ["시작하기", "비즈니스 및 관리"],
           "title": "당신의 강점을 발견하세요: 설득력 있는 고유 가치 제안 만들기",
           "slug": "discover-your-edge-crafting-a-compelling-unique-value-proposition",
           "authorName": "Steve Savant",
@@ -857,10 +780,7 @@
       "articles": [
         {
           "id": "165816954",
-          "topics": [
-            "시작하기",
-            "팀 및 인사"
-          ],
+          "topics": ["시작하기", "팀 및 인사"],
           "title": "꿈의 팀 만들기: 스타트업 팀 구성을 위한 궁극의 가이드",
           "slug": "building-a-dream-team-the-ultimate-guide-to-assembling-your-startup-squad",
           "authorName": "Bootstrap Briggs",
@@ -894,10 +814,7 @@
       "articles": [
         {
           "id": "166322203",
-          "topics": [
-            "시작하기",
-            "영업 및 마케팅"
-          ],
+          "topics": ["시작하기", "영업 및 마케팅"],
           "title": "성공을 위한 청사진: 스타트업을 위한 성공적인 영업 계획 수립 가이드",
           "slug": "the-blueprint-to-success-a-guide-to-crafting-a-winning-sales-plan-for-your-startu",
           "authorName": "Steve Savant",
@@ -925,10 +842,7 @@
         },
         {
           "id": "166788454",
-          "topics": [
-            "시작하기",
-            "영업 및 마케팅"
-          ],
+          "topics": ["시작하기", "영업 및 마케팅"],
           "title": "스타트업을 위한 고객 획득 비용 마스터하기 궁극의 가이드",
           "slug": "the-ultimate-guide-to-mastering-customer-acquisition-costs-for-startups",
           "authorName": "Bootstrap Briggs",
@@ -956,10 +870,7 @@
         },
         {
           "id": "166286175",
-          "topics": [
-            "시작하기",
-            "영업 및 마케팅"
-          ],
+          "topics": ["시작하기", "영업 및 마케팅"],
           "title": "스타트업을 위한 소셜 미디어 활용 가이드: 마케팅 도달 범위 극대화하기",
           "slug": "maximizing-your-marketing-reach-a-guide-to-utilizing-social-media-for-startups",
           "authorName": "Steve Savant",
@@ -987,10 +898,7 @@
         },
         {
           "id": "166286117",
-          "topics": [
-            "시작하기",
-            "영업 및 마케팅"
-          ],
+          "topics": ["시작하기", "영업 및 마케팅"],
           "title": "성공을 향한 브랜딩: 스타트업 창업자를 위한 가이드",
           "slug": "branding-your-way-to-success-a-guide-for-start-up-founders",
           "authorName": "Steve Savant",
@@ -1018,10 +926,7 @@
         },
         {
           "id": "166277989",
-          "topics": [
-            "시작하기",
-            "영업 및 마케팅"
-          ],
+          "topics": ["시작하기", "영업 및 마케팅"],
           "title": "마케팅의 힘 풀어내기: 스타트업 창업자를 위한 종합 가이드",
           "slug": "unleashing-the-power-of-marketing-a-comprehensive-guide-for-startup-founders",
           "authorName": "Steve Savant",
@@ -1049,10 +954,7 @@
         },
         {
           "id": "165812094",
-          "topics": [
-            "시작하기",
-            "영업 및 마케팅"
-          ],
+          "topics": ["시작하기", "영업 및 마케팅"],
           "title": "스타트업 창업자를 위한 타겟 시장의 힘 활용하기: 종합 가이드",
           "slug": "unleashing-the-power-of-your-target-market-a-comprehensive-guide-for-startup-foun",
           "authorName": "Steve Savant",
@@ -1080,10 +982,7 @@
         },
         {
           "id": "165815183",
-          "topics": [
-            "시작하기",
-            "영업 및 마케팅"
-          ],
+          "topics": ["시작하기", "영업 및 마케팅"],
           "title": "시장 조사의 힘: 스타트업 창업자를 위한 가이드",
           "slug": "the-power-of-market-research-a-guide-for-startup-founders",
           "authorName": "Steve Savant",
@@ -1117,10 +1016,7 @@
       "articles": [
         {
           "id": "165817305",
-          "topics": [
-            "시작하기",
-            "자금 조달"
-          ],
+          "topics": ["시작하기", "자금 조달"],
           "title": "성공적인 스타트업 자금 조달의 비밀 풀기: 종합 가이드",
           "slug": "unlocking-the-secrets-of-successful-startup-fundraising-a-comprehensive-guide",
           "authorName": "Steve Savant",

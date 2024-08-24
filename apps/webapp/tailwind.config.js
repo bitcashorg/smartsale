@@ -1,9 +1,9 @@
 const {
-  default: flattenColorPalette
+  default: flattenColorPalette,
 } = require('tailwindcss/lib/util/flattenColorPalette')
 const svgToDataUri = require('mini-svg-data-uri')
 const colors = require('tailwindcss/colors')
-const { fontFamily } = require("tailwindcss/defaultTheme");
+const { fontFamily } = require('tailwindcss/defaultTheme')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -11,18 +11,18 @@ module.exports = {
   content: [
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}'
+    './src/**/*.{ts,tsx}',
   ],
   theme: {
     container: {
       center: true,
       padding: {
         DEFAULT: '0.75rem',
-        md: '2rem'
+        md: '2rem',
       },
       screens: {
-        '2xl': '1600px'
-      }
+        '2xl': '1600px',
+      },
     },
     extend: {
       colors: {
@@ -33,8 +33,8 @@ module.exports = {
         foreground: 'hsla(var(--foreground))',
         infoForeground: '#9395AF',
         cornflowerblue: {
-          100: "rgba(125, 129, 217, 0.2)",
-          200: "rgba(125, 129, 217, 0.2)"
+          100: 'rgba(125, 129, 217, 0.2)',
+          200: 'rgba(125, 129, 217, 0.2)',
         },
         primary: {
           DEFAULT: 'hsla(var(--primary))',
@@ -47,7 +47,7 @@ module.exports = {
           600: '#18AC4E',
           700: '#12813A',
           800: '#0C5627',
-          900: '#062B13'
+          900: '#062B13',
         },
         secondary: {
           DEFAULT: 'hsla(var(--secondary))',
@@ -57,42 +57,42 @@ module.exports = {
           300: '#080821',
           400: '#F5F5F5',
           500: '#5361FF',
-          600: '#9A9EFC'
+          600: '#9A9EFC',
         },
         tertiary: { blue: '#0000EE' },
         destructive: {
           DEFAULT: 'hsla(var(--destructive))',
-          foreground: 'hsla(var(--destructive-foreground))'
+          foreground: 'hsla(var(--destructive-foreground))',
         },
         success: {
           DEFAULT: 'hsla(var(--success))',
-          foreground: 'hsla(var(--success-foreground))'
+          foreground: 'hsla(var(--success-foreground))',
         },
         muted: {
           DEFAULT: 'hsla(var(--muted))',
-          foreground: 'hsla(var(--muted-foreground))'
+          foreground: 'hsla(var(--muted-foreground))',
         },
         accent: {
           DEFAULT: 'hsla(var(--accent))',
           foreground: 'hsla(var(--accent-foreground))',
-          secondary: 'hsla(var(--accent-secondary))'
+          secondary: 'hsla(var(--accent-secondary))',
         },
         popover: {
           DEFAULT: 'hsla(var(--popover))',
-          foreground: 'hsla(var(--popover-foreground))'
+          foreground: 'hsla(var(--popover-foreground))',
         },
         card: {
           DEFAULT: 'hsla(var(--card))',
-          foreground: 'hsla(var(--card-foreground))'
+          foreground: 'hsla(var(--card-foreground))',
         },
         alert: {
-          DEFAULT: "hsla(var(--alert))"
-        }
+          DEFAULT: 'hsla(var(--alert))',
+        },
       },
       background: {
         cornflowerblue: {
-          100: "rgba(125, 129, 217, 0.5)",
-          200: "rgba(125, 129, 217, 0.43)"
+          100: 'rgba(125, 129, 217, 0.5)',
+          200: 'rgba(125, 129, 217, 0.43)',
         },
       },
       borderRadius: {
@@ -104,57 +104,56 @@ module.exports = {
         images: '30px',
         buttons: '5px',
         'inputs-shaped': '100px',
-        'check-box': '4px'
+        'check-box': '4px',
       },
       fontFamily: {
-        sans: ["Futura PT", ...fontFamily.sans],
+        sans: ['Futura PT', ...fontFamily.sans],
         'futura-pt-bold': ['Futura PT Bold', 'sans-serif'],
-        'futura-pt-condensed': ['Futura PT Heavy', 'sans-serif'],
         'futura-pt-demi': ['Futura PT Demi', 'sans-serif'],
         'lufga-bold': 'var(--font-lufga-bold)',
       },
       keyframes: {
         'accordion-down': {
           from: { height: 0 },
-          to: { height: 'var(--radix-accordion-content-height)' }
+          to: { height: 'var(--radix-accordion-content-height)' },
         },
         'accordion-up': {
           from: { height: 'var(--radix-accordion-content-height)' },
-          to: { height: 0 }
+          to: { height: 0 },
         },
         moveHorizontal: {
           '0%': {
-            transform: 'translateX(-50%) translateY(-10%)'
+            transform: 'translateX(-50%) translateY(-10%)',
           },
           '50%': {
-            transform: 'translateX(50%) translateY(10%)'
+            transform: 'translateX(50%) translateY(10%)',
           },
           '100%': {
-            transform: 'translateX(-50%) translateY(-10%)'
-          }
+            transform: 'translateX(-50%) translateY(-10%)',
+          },
         },
         moveInCircle: {
           '0%': {
-            transform: 'rotate(0deg)'
+            transform: 'rotate(0deg)',
           },
           '50%': {
-            transform: 'rotate(180deg)'
+            transform: 'rotate(180deg)',
           },
           '100%': {
-            transform: 'rotate(360deg)'
-          }
+            transform: 'rotate(360deg)',
+          },
         },
         moveVertical: {
           '0%': {
-            transform: 'translateY(-50%)'
+            transform: 'translateY(-50%)',
           },
           '50%': {
-            transform: 'translateY(50%)'
+            transform: 'translateY(50%)',
           },
           '100%': {
-            transform: 'translateY(-50%)'
-          }
-        }
+            transform: 'translateY(-50%)',
+          },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
@@ -163,14 +162,14 @@ module.exports = {
         second: 'moveInCircle 20s reverse infinite',
         third: 'moveInCircle 40s linear infinite',
         fourth: 'moveHorizontal 40s ease infinite',
-        fifth: 'moveInCircle 20s ease infinite'
+        fifth: 'moveInCircle 20s ease infinite',
       },
       fontSize: {
         'h1-lg': ['64px', { lineHeight: '72px' }],
         'h1-md': [
           '60px',
           { lineHeight: '72px' },
-          { fontFamily: 'futura-pt-bold' }
+          { fontFamily: 'futura-pt-bold' },
         ],
         'h2-lg': ['64px', { lineHeight: '64px' }],
         'h2-md': ['48px', { lineHeight: '64px' }],
@@ -181,55 +180,55 @@ module.exports = {
         'sub-2-lg': [
           '22px',
           { lineHeight: '28px' },
-          { fontFamily: 'futura-pt-bold' }
+          { fontFamily: 'futura-pt-bold' },
         ],
         'sub-2-md': [
           '18px',
           { lineHeight: '28px' },
-          { fontFamily: 'futura-pt-bold' }
+          { fontFamily: 'futura-pt-bold' },
         ],
         buttons: ['18px', { lineHeight: '28px' }],
         'b-1-sbold-md': [
           '18px',
           { lineHeight: '28px' },
-          { fontFamily: 'futura-pt-bold' }
+          { fontFamily: 'futura-pt-bold' },
         ],
         'b-1-sbold-lg': ['18px', { lineHeight: '28px' }],
         'b-1-lg': [
           '18px',
           { lineHeight: '28px' },
-          { fontFamily: 'futura-pt-heavy' }
+          { fontFamily: 'futura-pt-heavy' },
         ],
         'b-1-md': ['18px', { lineHeight: '28px' }],
         'b-1-book': [
           '18px',
           { lineHeight: '28px' },
-          { fontFamily: 'futura-pt-book' }
+          { fontFamily: 'futura-pt-book' },
         ],
         'b-2-lg': [
           '16px',
           { lineHeight: '24px' },
-          { fontFamily: 'futura-pt-heavy' }
+          { fontFamily: 'futura-pt-heavy' },
         ],
         'b-2-md': [
           '16px',
           { lineHeight: '24px' },
-          { fontFamily: 'futura-pt-medium' }
+          { fontFamily: 'futura-pt-medium' },
         ],
         'h-text': [
           '16px',
           { lineHeight: '18.75px' },
-          { fontFamily: 'futura-pt-heavy' }
+          { fontFamily: 'futura-pt-heavy' },
         ],
         'p-text': [
           '20px',
           { lineHeight: '23.44px' },
-          { fontFamily: 'futura-pt-book' }
+          { fontFamily: 'futura-pt-book' },
         ],
         'footer-text': [
           '18px',
           { lineHeight: '21px' },
-          { fontFamily: 'futura-pt-book' }
+          { fontFamily: 'futura-pt-book' },
         ],
         'lp-h1-lg': ['80px', { lineHeight: '100px' }],
         'lp-h1-md': ['48px', { lineHeight: '60px' }],
@@ -239,7 +238,7 @@ module.exports = {
         'lp-sub-text-3': ['20px', { lineHeight: '25px' }],
         'lp-text': ['18px', { lineHeight: '31.5px' }],
         'lp-text-2': ['16px', { lineHeight: '26.2px' }],
-        'lp-text-3': ['34px', { lineHeight: '42.5px' }]
+        'lp-text-3': ['34px', { lineHeight: '42.5px' }],
       },
       spacing: {
         'space-4': '4px',
@@ -293,29 +292,29 @@ module.exports = {
         'hug-w-md': '86px',
         'hug-h-md': '40px',
         'hug-w-lg': '94px',
-        'hug-h-lg': '48px'
+        'hug-h-lg': '48px',
       },
       boxShadow: {
         f1: '4px 6px 20px 0px #78E7A033',
-        f2: '4px 6px 13px 0px #DEE2E680'
-      }
-    }
+        f2: '4px 6px 13px 0px #DEE2E680',
+      },
+    },
   },
   plugins: [
     require('tailwindcss-animate'),
     require('@tailwindcss/typography'),
-    addVariablesForColors
-  ]
+    addVariablesForColors,
+  ],
 }
 
 // This plugin adds each Tailwind color as a global CSS variable, e.g. var(--gray-200).
 function addVariablesForColors({ addBase, theme }) {
-  let allColors = flattenColorPalette(theme('colors'))
-  let newVars = Object.fromEntries(
-    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+  const allColors = flattenColorPalette(theme('colors'))
+  const newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val]),
   )
 
   addBase({
-    ':root': newVars
+    ':root': newVars,
   })
 }

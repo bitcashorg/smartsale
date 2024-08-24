@@ -1,13 +1,17 @@
 'use server'
 
-import { createServerClient, CookieOptions } from '@supabase/ssr'
-import { cookies } from 'next/headers'
-import { Database } from '@repo/supabase'
 import { appConfig } from '@/lib/config'
+import type { Database } from '@repo/supabase'
+import { type CookieOptions, createServerClient } from '@supabase/ssr'
+import { cookies } from 'next/headers'
 
 export async function createSupabaseServerClient() {
   const cookieStore = cookies()
 
+  // ! Signaled as deprecated: createServerClient,
+  /** (from IDE)
+   * @deprecated Please specify `getAll` and `setAll` cookie methods instead of the `get`, `set` and `remove`.These will not be supported in the next major version.
+   **/
   return createServerClient<Database>(
     appConfig.supabase.url,
     appConfig.supabase.anonKey,
@@ -21,8 +25,8 @@ export async function createSupabaseServerClient() {
         },
         remove(name: string, options: CookieOptions) {
           cookieStore.set({ name, value: '', ...options })
-        }
-      }
-    }
+        },
+      },
+    },
   )
 }

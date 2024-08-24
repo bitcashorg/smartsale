@@ -6,11 +6,7 @@
       "articles": [
         {
           "id": "180563939",
-          "topics": [
-            "DAO",
-            "Tokenomique",
-            "Commentaire"
-          ],
+          "topics": ["DAO", "Tokenomique", "Commentaire"],
           "title": "Un cadre pour la conception de la gouvernance blockchain : La roue du groupe Prysm [Commentaire]",
           "slug": "a-framework-for-blockchain-governance-design-the-prysm-group-wheel-commentary",
           "authorName": "Crypto Clairity",
@@ -38,10 +34,7 @@
         },
         {
           "id": "180563903",
-          "topics": [
-            "DAO",
-            "Resume"
-          ],
+          "topics": ["DAO", "Resume"],
           "title": "A quoi sert le vote ? [Resume]",
           "slug": "what-is-voting-for-summary",
           "authorName": "Crypto Clairity",
@@ -69,10 +62,7 @@
         },
         {
           "id": "180563908",
-          "topics": [
-            "DAO",
-            "Resume"
-          ],
+          "topics": ["DAO", "Resume"],
           "title": "A quoi sert la gouvernance ? [Resume]",
           "slug": "what-is-governance-for-summary",
           "authorName": "Crypto Clairity",
@@ -100,11 +90,7 @@
         },
         {
           "id": "167184977",
-          "topics": [
-            "Tokenomie",
-            "DAO",
-            "Levee de fonds"
-          ],
+          "topics": ["Tokenomie", "DAO", "Levee de fonds"],
           "title": "Revolutionner le modele d'actions : Comment la tokenomie bouleverse le monde des startups",
           "slug": "revolutionizing-the-equity-model-how-tokenomics-is-disrupting-the-startup-world",
           "authorName": "Crypto Clairity",
@@ -132,10 +118,7 @@
         },
         {
           "id": "166984334",
-          "topics": [
-            "DAO",
-            "Juridique"
-          ],
+          "topics": ["DAO", "Juridique"],
           "title": "Organisations Autonomes Decentralisees (DAO) : Structures Juridiques de Base a des Fins Commerciales et Non Lucratives",
           "slug": "decentralized-autonomous-organizations-daos-basic-legal-structures-for-business-a",
           "authorName": "Crypto Clairity",
@@ -163,10 +146,7 @@
         },
         {
           "id": "166981063",
-          "topics": [
-            "Premiers pas",
-            "DAO"
-          ],
+          "topics": ["Premiers pas", "DAO"],
           "title": "L'avenir est la : L'essor des Organisations Autonomes Decentralisees (DAO)",
           "slug": "the-future-is-here-the-rise-of-decentralized-autonomous-organizations-daos",
           "authorName": "Crypto Clairity",
@@ -194,11 +174,7 @@
       "articles": [
         {
           "id": "180563939",
-          "topics": [
-            "DAO",
-            "Tokenomique",
-            "Commentaire"
-          ],
+          "topics": ["DAO", "Tokenomique", "Commentaire"],
           "title": "Un cadre pour la conception de la gouvernance blockchain : La roue du groupe Prysm [Commentaire]",
           "slug": "a-framework-for-blockchain-governance-design-the-prysm-group-wheel-commentary",
           "authorName": "Crypto Clairity",
@@ -226,10 +202,7 @@
         },
         {
           "id": "180217169",
-          "topics": [
-            "Tokenomie",
-            "Commentaire"
-          ],
+          "topics": ["Tokenomie", "Commentaire"],
           "title": "Economie des incitations tokenisees 3: La valeur du token n'alignera pas les parties prenantes [Commentaire]",
           "slug": "economics-of-tokenized-incentives-3-token-value-won-t-align-stakeholders-commenta",
           "authorName": "Crypto Clairity",
@@ -257,10 +230,7 @@
         },
         {
           "id": "180217123",
-          "topics": [
-            "Tokenomie",
-            "Commentaire"
-          ],
+          "topics": ["Tokenomie", "Commentaire"],
           "title": "Economie des incitations tokenisees 2: Selectionner des metriques de performance efficaces [Commentaire]",
           "slug": "economics-of-tokenized-incentives-2-selecting-effective-performance-metrics-comme",
           "authorName": "Crypto Clairity",
@@ -288,10 +258,7 @@
         },
         {
           "id": "180217082",
-          "topics": [
-            "Tokenomie",
-            "Commentaire"
-          ],
+          "topics": ["Tokenomie", "Commentaire"],
           "title": "Economie des incitations tokenisees 1: Introduction a la remuneration au rendement [Commentaire]",
           "slug": "economics-of-tokenized-incentives-1-intro-to-pay-for-performance",
           "authorName": "Crypto Clairity",
@@ -319,11 +286,7 @@
         },
         {
           "id": "180563918",
-          "topics": [
-            "Tokenomie",
-            "Commentaire",
-            "Levee de fonds"
-          ],
+          "topics": ["Tokenomie", "Commentaire", "Levee de fonds"],
           "title": "Jetons : Vehicule d'investissement ou moyen d'echange (pas les deux) [Commentaire]",
           "slug": "tokens-investment-vehicle-or-medium-of-exchange-not-both-commentary",
           "authorName": "Crypto Clairity",
@@ -351,11 +314,7 @@
         },
         {
           "id": "180563922",
-          "topics": [
-            "Collecte de fonds",
-            "Tokenomique",
-            "Commentaire"
-          ],
+          "topics": ["Collecte de fonds", "Tokenomique", "Commentaire"],
           "title": "Les ICO tirent parti des effets de reseau [Commentaire]",
           "slug": "icos-leverage-network-effects-commentary",
           "authorName": "Crypto Clairity",
@@ -383,11 +342,7 @@
         },
         {
           "id": "179948652",
-          "topics": [
-            "Tokenomie",
-            "Industrie",
-            "Resume"
-          ],
+          "topics": ["Tokenomie", "Industrie", "Resume"],
           "title": "Innovation numerique et modeles de revenus [Resume]",
           "slug": "digital-innovation-and-revenue-models-summary",
           "authorName": "Crypto Clairity",
@@ -415,11 +370,7 @@
         },
         {
           "id": "180556595",
-          "topics": [
-            "Collecte de fonds",
-            "Tokenomique",
-            "Commentaire"
-          ],
+          "topics": ["Collecte de fonds", "Tokenomique", "Commentaire"],
           "title": "L'Effet Blockchain : Effets de reseau sans les couts du pouvoir de marche [Commentaire]",
           "slug": "the-blockchain-effect-network-effects-without-market-power-costs-commentary",
           "authorName": "Crypto Clairity",
@@ -447,10 +398,7 @@
         },
         {
           "id": "180563931",
-          "topics": [
-            "Tokenomique",
-            "Commentaire"
-          ],
+          "topics": ["Tokenomique", "Commentaire"],
           "title": "Structures d'incitation de la blockchain : Ce qu'elles sont et pourquoi elles sont importantes [Commentaire]",
           "slug": "blockchain-incentive-structures-what-they-are-and-why-they-matter-commentary",
           "authorName": "Crypto Clairity",
@@ -478,11 +426,7 @@
         },
         {
           "id": "167184977",
-          "topics": [
-            "Tokenomie",
-            "DAO",
-            "Levee de fonds"
-          ],
+          "topics": ["Tokenomie", "DAO", "Levee de fonds"],
           "title": "Revolutionner le modele d'actions : Comment la tokenomie bouleverse le monde des startups",
           "slug": "revolutionizing-the-equity-model-how-tokenomics-is-disrupting-the-startup-world",
           "authorName": "Crypto Clairity",
@@ -510,10 +454,7 @@
         },
         {
           "id": "167101094",
-          "topics": [
-            "Premiers pas",
-            "Tokenomie"
-          ],
+          "topics": ["Premiers pas", "Tokenomie"],
           "title": "Tokenomie 101 : Liberer la puissance de la cryptomonnaie !",
           "slug": "tokenomics-101-unleashing-the-power-of-cryptocurrency",
           "authorName": "Crypto Clairity",
@@ -547,11 +488,7 @@
       "articles": [
         {
           "id": "180563939",
-          "topics": [
-            "DAO",
-            "Tokenomique",
-            "Commentaire"
-          ],
+          "topics": ["DAO", "Tokenomique", "Commentaire"],
           "title": "Un cadre pour la conception de la gouvernance blockchain : La roue du groupe Prysm [Commentaire]",
           "slug": "a-framework-for-blockchain-governance-design-the-prysm-group-wheel-commentary",
           "authorName": "Crypto Clairity",
@@ -579,10 +516,7 @@
         },
         {
           "id": "180217169",
-          "topics": [
-            "Tokenomie",
-            "Commentaire"
-          ],
+          "topics": ["Tokenomie", "Commentaire"],
           "title": "Economie des incitations tokenisees 3: La valeur du token n'alignera pas les parties prenantes [Commentaire]",
           "slug": "economics-of-tokenized-incentives-3-token-value-won-t-align-stakeholders-commenta",
           "authorName": "Crypto Clairity",
@@ -610,10 +544,7 @@
         },
         {
           "id": "180217123",
-          "topics": [
-            "Tokenomie",
-            "Commentaire"
-          ],
+          "topics": ["Tokenomie", "Commentaire"],
           "title": "Economie des incitations tokenisees 2: Selectionner des metriques de performance efficaces [Commentaire]",
           "slug": "economics-of-tokenized-incentives-2-selecting-effective-performance-metrics-comme",
           "authorName": "Crypto Clairity",
@@ -641,10 +572,7 @@
         },
         {
           "id": "180217082",
-          "topics": [
-            "Tokenomie",
-            "Commentaire"
-          ],
+          "topics": ["Tokenomie", "Commentaire"],
           "title": "Economie des incitations tokenisees 1: Introduction a la remuneration au rendement [Commentaire]",
           "slug": "economics-of-tokenized-incentives-1-intro-to-pay-for-performance",
           "authorName": "Crypto Clairity",
@@ -672,10 +600,7 @@
         },
         {
           "id": "180556627",
-          "topics": [
-            "Commentaire",
-            "Contrats intelligents"
-          ],
+          "topics": ["Commentaire", "Contrats intelligents"],
           "title": "Contrats incomplets et blockchain [Commentaire]",
           "slug": "incomplete-contracts-and-blockchain-commentary",
           "authorName": "Crypto Clairity",
@@ -703,11 +628,7 @@
         },
         {
           "id": "180563918",
-          "topics": [
-            "Tokenomie",
-            "Commentaire",
-            "Levee de fonds"
-          ],
+          "topics": ["Tokenomie", "Commentaire", "Levee de fonds"],
           "title": "Jetons : Vehicule d'investissement ou moyen d'echange (pas les deux) [Commentaire]",
           "slug": "tokens-investment-vehicle-or-medium-of-exchange-not-both-commentary",
           "authorName": "Crypto Clairity",
@@ -735,11 +656,7 @@
         },
         {
           "id": "180563922",
-          "topics": [
-            "Collecte de fonds",
-            "Tokenomique",
-            "Commentaire"
-          ],
+          "topics": ["Collecte de fonds", "Tokenomique", "Commentaire"],
           "title": "Les ICO tirent parti des effets de reseau [Commentaire]",
           "slug": "icos-leverage-network-effects-commentary",
           "authorName": "Crypto Clairity",
@@ -767,11 +684,7 @@
         },
         {
           "id": "180556595",
-          "topics": [
-            "Collecte de fonds",
-            "Tokenomique",
-            "Commentaire"
-          ],
+          "topics": ["Collecte de fonds", "Tokenomique", "Commentaire"],
           "title": "L'Effet Blockchain : Effets de reseau sans les couts du pouvoir de marche [Commentaire]",
           "slug": "the-blockchain-effect-network-effects-without-market-power-costs-commentary",
           "authorName": "Crypto Clairity",
@@ -799,10 +712,7 @@
         },
         {
           "id": "180563931",
-          "topics": [
-            "Tokenomique",
-            "Commentaire"
-          ],
+          "topics": ["Tokenomique", "Commentaire"],
           "title": "Structures d'incitation de la blockchain : Ce qu'elles sont et pourquoi elles sont importantes [Commentaire]",
           "slug": "blockchain-incentive-structures-what-they-are-and-why-they-matter-commentary",
           "authorName": "Crypto Clairity",
@@ -836,10 +746,7 @@
       "articles": [
         {
           "id": "180556627",
-          "topics": [
-            "Commentaire",
-            "Contrats intelligents"
-          ],
+          "topics": ["Commentaire", "Contrats intelligents"],
           "title": "Contrats incomplets et blockchain [Commentaire]",
           "slug": "incomplete-contracts-and-blockchain-commentary",
           "authorName": "Crypto Clairity",
@@ -867,10 +774,7 @@
         },
         {
           "id": "165614005",
-          "topics": [
-            "Premiers pas",
-            "Contrats intelligents"
-          ],
+          "topics": ["Premiers pas", "Contrats intelligents"],
           "title": "La puissance des contrats intelligents : La cle pour debloquer l'avenir des affaires et de la finance",
           "slug": "the-power-of-smart-contracts-the-key-to-unlocking-the-future-of-business-and-fina",
           "authorName": "Crypto Clairity",
@@ -904,11 +808,7 @@
       "articles": [
         {
           "id": "180563918",
-          "topics": [
-            "Tokenomie",
-            "Commentaire",
-            "Levee de fonds"
-          ],
+          "topics": ["Tokenomie", "Commentaire", "Levee de fonds"],
           "title": "Jetons : Vehicule d'investissement ou moyen d'echange (pas les deux) [Commentaire]",
           "slug": "tokens-investment-vehicle-or-medium-of-exchange-not-both-commentary",
           "authorName": "Crypto Clairity",
@@ -936,11 +836,7 @@
         },
         {
           "id": "180563922",
-          "topics": [
-            "Collecte de fonds",
-            "Tokenomique",
-            "Commentaire"
-          ],
+          "topics": ["Collecte de fonds", "Tokenomique", "Commentaire"],
           "title": "Les ICO tirent parti des effets de reseau [Commentaire]",
           "slug": "icos-leverage-network-effects-commentary",
           "authorName": "Crypto Clairity",
@@ -968,11 +864,7 @@
         },
         {
           "id": "180556595",
-          "topics": [
-            "Collecte de fonds",
-            "Tokenomie",
-            "Commentaire"
-          ],
+          "topics": ["Collecte de fonds", "Tokenomie", "Commentaire"],
           "title": "L'Effet Blockchain : Effets de reseau sans les couts du pouvoir de marche [Commentaire]",
           "slug": "the-blockchain-effect-network-effects-without-market-power-costs-commentary",
           "authorName": "Crypto Clairity",
@@ -1000,11 +892,7 @@
         },
         {
           "id": "167184977",
-          "topics": [
-            "Tokenomie",
-            "DAO",
-            "Levee de fonds"
-          ],
+          "topics": ["Tokenomie", "DAO", "Levee de fonds"],
           "title": "Revolutionner le modele d'actions : Comment la tokenomie bouleverse le monde des startups",
           "slug": "revolutionizing-the-equity-model-how-tokenomics-is-disrupting-the-startup-world",
           "authorName": "Crypto Clairity",
@@ -1032,10 +920,7 @@
         },
         {
           "id": "165685908",
-          "topics": [
-            "Premiers pas",
-            "Collecte de fonds"
-          ],
+          "topics": ["Premiers pas", "Collecte de fonds"],
           "title": "Perturber le statu quo : Comment la cryptomonnaie revolutionne la collecte de fonds et le financement participatif",
           "slug": "disrupt-the-status-quo-how-cryptocurrency-is-revolutionizing-fundraising-and-crow",
           "authorName": "Crypto Clairity",
@@ -1063,10 +948,7 @@
         },
         {
           "id": "165614216",
-          "topics": [
-            "Premiers pas",
-            "Collecte de fonds"
-          ],
+          "topics": ["Premiers pas", "Collecte de fonds"],
           "title": "Naviguer dans le Far West des offres initiales de jetons : Guide du debutant pour investir dans l'avenir de la technologie",
           "slug": "navigating-the-wild-west-of-initial-coin-offerings-a-beginner-s-guide-to-investin",
           "authorName": "Crypto Clairity",
@@ -1100,11 +982,7 @@
       "articles": [
         {
           "id": "179948652",
-          "topics": [
-            "Tokenomie",
-            "Industrie",
-            "Resume"
-          ],
+          "topics": ["Tokenomie", "Industrie", "Resume"],
           "title": "Innovation numerique et modeles de revenus [Resume]",
           "slug": "digital-innovation-and-revenue-models-summary",
           "authorName": "Crypto Clairity",
@@ -1132,10 +1010,7 @@
         },
         {
           "id": "165634580",
-          "topics": [
-            "Premiers pas",
-            "Industrie"
-          ],
+          "topics": ["Premiers pas", "Industrie"],
           "title": "L'avenir est la : Un apercu de l'impact des cryptomonnaies sur la finance mondiale",
           "slug": "the-future-is-now-an-overview-of-cryptocurrency-s-impact-on-global-finance",
           "authorName": "Crypto Clairity",
@@ -1163,10 +1038,7 @@
         },
         {
           "id": "165611389",
-          "topics": [
-            "Premiers pas",
-            "Industrie"
-          ],
+          "topics": ["Premiers pas", "Industrie"],
           "title": "Liberer le potentiel : Comment la cryptomonnaie transforme les industries",
           "slug": "unleashing-the-potential-how-cryptocurrency-is-transforming-industries",
           "authorName": "Crypto Clairity",
@@ -1200,11 +1072,7 @@
       "articles": [
         {
           "id": "179948652",
-          "topics": [
-            "Tokenomie",
-            "Industrie",
-            "Resume"
-          ],
+          "topics": ["Tokenomie", "Industrie", "Resume"],
           "title": "Innovation numerique et modeles de revenus [Resume]",
           "slug": "digital-innovation-and-revenue-models-summary",
           "authorName": "Crypto Clairity",
@@ -1232,10 +1100,7 @@
         },
         {
           "id": "180563903",
-          "topics": [
-            "DAO",
-            "Resume"
-          ],
+          "topics": ["DAO", "Resume"],
           "title": "A quoi sert le vote ? [Resume]",
           "slug": "what-is-voting-for-summary",
           "authorName": "Crypto Clairity",
@@ -1263,10 +1128,7 @@
         },
         {
           "id": "180563908",
-          "topics": [
-            "DAO",
-            "Resume"
-          ],
+          "topics": ["DAO", "Resume"],
           "title": "A quoi sert la gouvernance ? [Resume]",
           "slug": "what-is-governance-for-summary",
           "authorName": "Crypto Clairity",
@@ -1300,10 +1162,7 @@
       "articles": [
         {
           "id": "166984334",
-          "topics": [
-            "DAO",
-            "Juridique"
-          ],
+          "topics": ["DAO", "Juridique"],
           "title": "Organisations Autonomes Decentralisees (DAO) : Structures Juridiques de Base a des Fins Commerciales et Non Lucratives",
           "slug": "decentralized-autonomous-organizations-daos-basic-legal-structures-for-business-a",
           "authorName": "Crypto Clairity",
@@ -1331,10 +1190,7 @@
         },
         {
           "id": "165611088",
-          "topics": [
-            "Premiers pas",
-            "Juridique"
-          ],
+          "topics": ["Premiers pas", "Juridique"],
           "title": "Naviguer dans le champ de mines juridique : Comprendre le paysage reglementaire des cryptomonnaies",
           "slug": "navigating-the-legal-minefield-understanding-the-regulatory-landscape-of-cryptocu",
           "authorName": "Crypto Clairity",
@@ -1368,10 +1224,7 @@
       "articles": [
         {
           "id": "167101094",
-          "topics": [
-            "Premiers pas",
-            "Tokenomie"
-          ],
+          "topics": ["Premiers pas", "Tokenomie"],
           "title": "Tokenomie 101 : Liberer la puissance de la cryptomonnaie !",
           "slug": "tokenomics-101-unleashing-the-power-of-cryptocurrency",
           "authorName": "Crypto Clairity",
@@ -1399,10 +1252,7 @@
         },
         {
           "id": "166981063",
-          "topics": [
-            "Premiers pas",
-            "DAO"
-          ],
+          "topics": ["Premiers pas", "DAO"],
           "title": "L'avenir est la : L'essor des Organisations Autonomes Decentralisees (DAO)",
           "slug": "the-future-is-here-the-rise-of-decentralized-autonomous-organizations-daos",
           "authorName": "Crypto Clairity",
@@ -1424,10 +1274,7 @@
         },
         {
           "id": "165744328",
-          "topics": [
-            "Premiers pas",
-            "Guide pratique"
-          ],
+          "topics": ["Premiers pas", "Guide pratique"],
           "title": "Gardez une longueur d'avance : Un guide pour rester informe et eduque dans le monde des cryptomonnaies",
           "slug": "stay-ahead-of-the-game-a-guide-to-staying-informed-and-educated-in-the-world-of-c",
           "authorName": "Crypto Clairity",
@@ -1455,10 +1302,7 @@
         },
         {
           "id": "165742753",
-          "topics": [
-            "Premiers pas",
-            "Paiements"
-          ],
+          "topics": ["Premiers pas", "Paiements"],
           "title": "Stablecoins : L'avenir des transactions et paiements en cryptomonnaie",
           "slug": "stablecoins-the-future-of-cryptocurrency-transactions-and-payments",
           "authorName": "Crypto Clairity",
@@ -1486,10 +1330,7 @@
         },
         {
           "id": "165685913",
-          "topics": [
-            "DeFi",
-            "Pour commencer"
-          ],
+          "topics": ["DeFi", "Pour commencer"],
           "title": "Decentralisez vos finances : Une introduction au monde de la DeFi",
           "slug": "decentralize-your-finance-an-introduction-to-the-world-of-defi",
           "authorName": "Crypto Clairity",
@@ -1517,10 +1358,7 @@
         },
         {
           "id": "165685908",
-          "topics": [
-            "Premiers pas",
-            "Collecte de fonds"
-          ],
+          "topics": ["Premiers pas", "Collecte de fonds"],
           "title": "Perturber le statu quo : Comment la cryptomonnaie revolutionne la collecte de fonds et le financement participatif",
           "slug": "disrupt-the-status-quo-how-cryptocurrency-is-revolutionizing-fundraising-and-crow",
           "authorName": "Crypto Clairity",
@@ -1548,10 +1386,7 @@
         },
         {
           "id": "165673014",
-          "topics": [
-            "Premiers pas",
-            "Investissement"
-          ],
+          "topics": ["Premiers pas", "Investissement"],
           "title": "Investissement en cryptomonnaies 101 : Comment utiliser les cryptomonnaies pour l'investissement et la gestion d'actifs",
           "slug": "crypto-investing-101-how-to-use-cryptocurrency-for-investment-and-asset-managemen",
           "authorName": "Crypto Clairity",
@@ -1579,10 +1414,7 @@
         },
         {
           "id": "165634580",
-          "topics": [
-            "Premiers pas",
-            "Industrie"
-          ],
+          "topics": ["Premiers pas", "Industrie"],
           "title": "L'avenir est la : Un apercu de l'impact des cryptomonnaies sur la finance mondiale",
           "slug": "the-future-is-now-an-overview-of-cryptocurrency-s-impact-on-global-finance",
           "authorName": "Crypto Clairity",
@@ -1610,10 +1442,7 @@
         },
         {
           "id": "165634456",
-          "topics": [
-            "Premiers pas",
-            "Minage"
-          ],
+          "topics": ["Premiers pas", "Minage"],
           "title": "Liberer la puissance du minage de cryptomonnaies : Un apercu des algorithmes de preuve de travail",
           "slug": "unleashing-the-power-of-cryptocurrency-mining-an-overview-of-proof-of-work-algori",
           "authorName": "Crypto Clairity",
@@ -1641,10 +1470,7 @@
         },
         {
           "id": "165625675",
-          "topics": [
-            "Premiers pas",
-            "Paiements"
-          ],
+          "topics": ["Premiers pas", "Paiements"],
           "title": "L'avenir des transferts internationaux : Comment la cryptomonnaie change la donne",
           "slug": "the-future-of-international-transfers-how-cryptocurrency-is-changing-the-game",
           "authorName": "Crypto Clairity",
@@ -1672,10 +1498,7 @@
         },
         {
           "id": "165625350",
-          "topics": [
-            "Premiers pas",
-            "Paiements"
-          ],
+          "topics": ["Premiers pas", "Paiements"],
           "title": "Le guide ultime pour effectuer des achats en ligne avec la cryptomonnaie : Comprendre les tenants et aboutissants de l'utilisation de la monnaie numerique pour les transactions quotidiennes.",
           "slug": "the-ultimate-guide-to-making-online-purchases-with-cryptocurrency-understanding-t",
           "authorName": "Crypto Clairity",
@@ -1703,10 +1526,7 @@
         },
         {
           "id": "165614216",
-          "topics": [
-            "Premiers pas",
-            "Collecte de fonds"
-          ],
+          "topics": ["Premiers pas", "Collecte de fonds"],
           "title": "Naviguer dans le Far West des offres initiales de jetons : Guide du debutant pour investir dans l'avenir de la technologie",
           "slug": "navigating-the-wild-west-of-initial-coin-offerings-a-beginner-s-guide-to-investin",
           "authorName": "Crypto Clairity",
@@ -1734,10 +1554,7 @@
         },
         {
           "id": "165614005",
-          "topics": [
-            "Premiers pas",
-            "Contrats intelligents"
-          ],
+          "topics": ["Premiers pas", "Contrats intelligents"],
           "title": "La puissance des contrats intelligents : La cle pour debloquer l'avenir des affaires et de la finance",
           "slug": "the-power-of-smart-contracts-the-key-to-unlocking-the-future-of-business-and-fina",
           "authorName": "Crypto Clairity",
@@ -1765,10 +1582,7 @@
         },
         {
           "id": "165611516",
-          "topics": [
-            "Premiers pas",
-            "Securite"
-          ],
+          "topics": ["Premiers pas", "Securite"],
           "title": "Devoiler les secrets du stockage de cryptomonnaies : Comment garder vos actifs numeriques en securite",
           "slug": "unlocking-the-secrets-of-crypto-storage-how-to-keep-your-digital-assets-safe-and",
           "authorName": "Crypto Clairity",
@@ -1796,10 +1610,7 @@
         },
         {
           "id": "165611389",
-          "topics": [
-            "Premiers pas",
-            "Industrie"
-          ],
+          "topics": ["Premiers pas", "Industrie"],
           "title": "Liberer le potentiel : Comment la cryptomonnaie transforme les industries",
           "slug": "unleashing-the-potential-how-cryptocurrency-is-transforming-industries",
           "authorName": "Crypto Clairity",
@@ -1827,10 +1638,7 @@
         },
         {
           "id": "165611088",
-          "topics": [
-            "Premiers pas",
-            "Juridique"
-          ],
+          "topics": ["Premiers pas", "Juridique"],
           "title": "Naviguer dans le champ de mines juridique : Comprendre le paysage reglementaire des cryptomonnaies",
           "slug": "navigating-the-legal-minefield-understanding-the-regulatory-landscape-of-cryptocu",
           "authorName": "Crypto Clairity",
@@ -1858,11 +1666,7 @@
         },
         {
           "id": "165610881",
-          "topics": [
-            "Premiers pas",
-            "Guide pratique",
-            "Recherche"
-          ],
+          "topics": ["Premiers pas", "Guide pratique", "Recherche"],
           "title": "Naviguer sur le marche des cryptomonnaies : Guide du debutant pour rechercher et evaluer les actifs numeriques",
           "slug": "navigating-the-cryptocurrency-market-a-beginner-s-guide-to-researching-and-evalua",
           "authorName": "Crypto Clairity",
@@ -1890,9 +1694,7 @@
         },
         {
           "id": "165365494",
-          "topics": [
-            "Premiers pas"
-          ],
+          "topics": ["Premiers pas"],
           "title": "Batir la confiance dans le monde numerique : Le role de la technologie blockchain dans la cryptomonnaie",
           "slug": "building-trust-in-the-digital-world-the-role-of-blockchain-technology-in-cryptocu",
           "authorName": "Crypto Clairity",
@@ -1920,9 +1722,7 @@
         },
         {
           "id": "165399154",
-          "topics": [
-            "Premiers pas"
-          ],
+          "topics": ["Premiers pas"],
           "title": "Explorer les multiples facettes des cryptomonnaies : Un guide sur les differents types et leurs utilisations",
           "slug": "exploring-the-many-faces-of-cryptocurrency-a-guide-to-the-different-types-and-the",
           "authorName": "Crypto Clairity",
@@ -1950,10 +1750,7 @@
         },
         {
           "id": "165367458",
-          "topics": [
-            "Premiers pas",
-            "Securite"
-          ],
+          "topics": ["Premiers pas", "Securite"],
           "title": "Securite des cryptomonnaies 101 : Comment stocker et securiser vos cryptomonnaies en toute securite",
           "slug": "crypto-security-101-how-to-safely-store-and-secure-your-cryptocurrencies",
           "authorName": "Crypto Clairity",
@@ -1981,10 +1778,7 @@
         },
         {
           "id": "165365581",
-          "topics": [
-            "Premiers pas",
-            "Histoire"
-          ],
+          "topics": ["Premiers pas", "Histoire"],
           "title": "L'evolution des cryptomonnaies : De Bitcoin a la DeFi et au-dela",
           "slug": "the-evolution-of-cryptocurrency-from-bitcoin-to-defi-and-beyond",
           "authorName": "Crypto Clairity",
@@ -2018,10 +1812,7 @@
       "articles": [
         {
           "id": "165744328",
-          "topics": [
-            "Premiers pas",
-            "Guide pratique"
-          ],
+          "topics": ["Premiers pas", "Guide pratique"],
           "title": "Gardez une longueur d'avance : Un guide pour rester informe et eduque dans le monde des cryptomonnaies",
           "slug": "stay-ahead-of-the-game-a-guide-to-staying-informed-and-educated-in-the-world-of-c",
           "authorName": "Crypto Clairity",
@@ -2049,11 +1840,7 @@
         },
         {
           "id": "165610881",
-          "topics": [
-            "Premiers pas",
-            "Guide pratique",
-            "Recherche"
-          ],
+          "topics": ["Premiers pas", "Guide pratique", "Recherche"],
           "title": "Naviguer sur le marche des cryptomonnaies : Guide du debutant pour rechercher et evaluer les actifs numeriques",
           "slug": "navigating-the-cryptocurrency-market-a-beginner-s-guide-to-researching-and-evalua",
           "authorName": "Crypto Clairity",
@@ -2081,10 +1868,7 @@
         },
         {
           "id": "165399242",
-          "topics": [
-            "Guide pratique",
-            "Echange"
-          ],
+          "topics": ["Guide pratique", "Echange"],
           "title": "Le guide du debutant pour acheter et vendre des cryptomonnaies : Un guide etape par etape",
           "slug": "the-beginner-s-guide-to-buying-and-selling-cryptocurrencies-a-step-by-step-walkth",
           "authorName": "Crypto Clairity",
@@ -2118,10 +1902,7 @@
       "articles": [
         {
           "id": "165742753",
-          "topics": [
-            "Premiers pas",
-            "Paiements"
-          ],
+          "topics": ["Premiers pas", "Paiements"],
           "title": "Stablecoins : L'avenir des transactions et paiements en cryptomonnaie",
           "slug": "stablecoins-the-future-of-cryptocurrency-transactions-and-payments",
           "authorName": "Crypto Clairity",
@@ -2149,10 +1930,7 @@
         },
         {
           "id": "165625675",
-          "topics": [
-            "Premiers pas",
-            "Paiements"
-          ],
+          "topics": ["Premiers pas", "Paiements"],
           "title": "L'avenir des transferts internationaux : Comment la cryptomonnaie change la donne",
           "slug": "the-future-of-international-transfers-how-cryptocurrency-is-changing-the-game",
           "authorName": "Crypto Clairity",
@@ -2180,10 +1958,7 @@
         },
         {
           "id": "165625350",
-          "topics": [
-            "Premiers pas",
-            "Paiements"
-          ],
+          "topics": ["Premiers pas", "Paiements"],
           "title": "Le guide ultime pour effectuer des achats en ligne avec la cryptomonnaie : Comprendre les tenants et aboutissants de l'utilisation de la monnaie numerique pour les transactions quotidiennes.",
           "slug": "the-ultimate-guide-to-making-online-purchases-with-cryptocurrency-understanding-t",
           "authorName": "Crypto Clairity",
@@ -2217,10 +1992,7 @@
       "articles": [
         {
           "id": "165685913",
-          "topics": [
-            "DeFi",
-            "Pour commencer"
-          ],
+          "topics": ["DeFi", "Pour commencer"],
           "title": "Decentralisez vos finances : Une introduction au monde de la DeFi",
           "slug": "decentralize-your-finance-an-introduction-to-the-world-of-defi",
           "authorName": "Crypto Clairity",
@@ -2254,10 +2026,7 @@
       "articles": [
         {
           "id": "165673014",
-          "topics": [
-            "Premiers pas",
-            "Investissement"
-          ],
+          "topics": ["Premiers pas", "Investissement"],
           "title": "Investissement en cryptomonnaies 101 : Comment utiliser les cryptomonnaies pour l'investissement et la gestion d'actifs",
           "slug": "crypto-investing-101-how-to-use-cryptocurrency-for-investment-and-asset-managemen",
           "authorName": "Crypto Clairity",
@@ -2291,10 +2060,7 @@
       "articles": [
         {
           "id": "165634456",
-          "topics": [
-            "Premiers pas",
-            "Minage"
-          ],
+          "topics": ["Premiers pas", "Minage"],
           "title": "Liberer la puissance du minage de cryptomonnaies : Un apercu des algorithmes de preuve de travail",
           "slug": "unleashing-the-power-of-cryptocurrency-mining-an-overview-of-proof-of-work-algori",
           "authorName": "Crypto Clairity",
@@ -2328,10 +2094,7 @@
       "articles": [
         {
           "id": "165611516",
-          "topics": [
-            "Premiers pas",
-            "Securite"
-          ],
+          "topics": ["Premiers pas", "Securite"],
           "title": "Devoiler les secrets du stockage de cryptomonnaies : Comment garder vos actifs numeriques en securite",
           "slug": "unlocking-the-secrets-of-crypto-storage-how-to-keep-your-digital-assets-safe-and",
           "authorName": "Crypto Clairity",
@@ -2359,10 +2122,7 @@
         },
         {
           "id": "165367458",
-          "topics": [
-            "Premiers pas",
-            "Securite"
-          ],
+          "topics": ["Premiers pas", "Securite"],
           "title": "Securite des cryptomonnaies 101 : Comment stocker et securiser vos cryptomonnaies en toute securite",
           "slug": "crypto-security-101-how-to-safely-store-and-secure-your-cryptocurrencies",
           "authorName": "Crypto Clairity",
@@ -2396,11 +2156,7 @@
       "articles": [
         {
           "id": "165610881",
-          "topics": [
-            "Premiers pas",
-            "Guide pratique",
-            "Recherche"
-          ],
+          "topics": ["Premiers pas", "Guide pratique", "Recherche"],
           "title": "Naviguer sur le marche des cryptomonnaies : Guide du debutant pour rechercher et evaluer les actifs numeriques",
           "slug": "navigating-the-cryptocurrency-market-a-beginner-s-guide-to-researching-and-evalua",
           "authorName": "Crypto Clairity",
@@ -2434,10 +2190,7 @@
       "articles": [
         {
           "id": "165399242",
-          "topics": [
-            "Guide pratique",
-            "Echange"
-          ],
+          "topics": ["Guide pratique", "Echange"],
           "title": "Le guide du debutant pour acheter et vendre des cryptomonnaies : Un guide etape par etape",
           "slug": "the-beginner-s-guide-to-buying-and-selling-cryptocurrencies-a-step-by-step-walkth",
           "authorName": "Crypto Clairity",
@@ -2471,10 +2224,7 @@
       "articles": [
         {
           "id": "165365581",
-          "topics": [
-            "Premiers pas",
-            "Histoire"
-          ],
+          "topics": ["Premiers pas", "Histoire"],
           "title": "L'evolution des cryptomonnaies : De Bitcoin a la DeFi et au-dela",
           "slug": "the-evolution-of-cryptocurrency-from-bitcoin-to-defi-and-beyond",
           "authorName": "Crypto Clairity",

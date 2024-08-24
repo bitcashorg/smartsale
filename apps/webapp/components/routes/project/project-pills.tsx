@@ -1,7 +1,7 @@
 'use client'
 
 import { Button } from '@/components/ui/button'
-import { Project } from '@/lib/projects'
+import type { Project } from '@/lib/projects'
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
@@ -11,16 +11,16 @@ export function ProjectPills({ project }: { project: Project }) {
   const links = [
     {
       label: 'Project Info',
-      href: `/${project.slug}`
+      href: `/${project.slug}`,
     },
     {
       label: 'Token Presale',
-      href: `/${project.slug}/presale`
+      href: `/${project.slug}/presale`,
     },
     {
       label: 'Token Sale',
-      href: `/${project.slug}/auction`
-    }
+      href: `/${project.slug}/auction`,
+    },
   ]
 
   return (
@@ -33,7 +33,7 @@ export function ProjectPills({ project }: { project: Project }) {
               'hover:bg-white/50 md:min-w-[150px]',
               pathname.replace('/en', '') === l.href
                 ? 'bg-white/50 text-black/90'
-                : null
+                : null,
             )}
           >
             {l.label}

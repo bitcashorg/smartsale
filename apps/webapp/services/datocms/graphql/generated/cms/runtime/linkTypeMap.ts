@@ -6,7 +6,7 @@ import type {
   LinkedField,
   LinkedType,
   LinkedTypeMap,
-} from "./types"
+} from './types'
 
 export interface PartialLinkedFieldMap {
   [field: string]: {
@@ -16,14 +16,14 @@ export interface PartialLinkedFieldMap {
 }
 
 export const linkTypeMap = (
-  typeMap: CompressedTypeMap<number>
+  typeMap: CompressedTypeMap<number>,
 ): LinkedTypeMap => {
   const indexToName: Record<number, string> = Object.assign(
     {},
-    ...Object.keys(typeMap.types).map((k, i) => ({ [i]: k }))
+    ...Object.keys(typeMap.types).map((k, i) => ({ [i]: k })),
   )
 
-  let intermediaryTypeMap = Object.assign(
+  const intermediaryTypeMap = Object.assign(
     {},
     ...Object.keys(typeMap.types || {}).map((k): Record<string, LinkedType> => {
       const type: CompressedType = typeMap.types[k]!
@@ -45,7 +45,7 @@ export const linkTypeMap = (
               .filter(Boolean)
 
             const hasRequiredArgs = argTypes.some(
-              (str) => str && str.endsWith("!")
+              (str) => str && str.endsWith('!'),
             )
             if (hasRequiredArgs) {
               return false
@@ -78,15 +78,15 @@ export const linkTypeMap = (
                           argTypeString || indexToName[argTypeName],
                         ],
                       }
-                    })
+                    }),
                   ),
                 },
               }
-            })
+            }),
           ),
         },
       }
-    })
+    }),
   )
   const res = resolveConcreteTypes(intermediaryTypeMap)
   return res
@@ -114,7 +114,7 @@ export const resolveConcreteTypes = (linkedTypeMap: LinkedTypeMap) => {
           if (arg) {
             const [typeName] = arg
 
-            if (typeof typeName === "string") {
+            if (typeof typeName === 'string') {
               if (!linkedTypeMap[typeName]) {
                 linkedTypeMap[typeName] = { name: typeName }
               }
@@ -127,7 +127,7 @@ export const resolveConcreteTypes = (linkedTypeMap: LinkedTypeMap) => {
 
       const typeName = field.type as LinkedType | string
 
-      if (typeof typeName === "string") {
+      if (typeof typeName === 'string') {
         if (!linkedTypeMap[typeName]) {
           linkedTypeMap[typeName] = { name: typeName }
         }

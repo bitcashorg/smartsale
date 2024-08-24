@@ -1,5 +1,5 @@
-import Image from 'next/image'
 import { cn } from '@/lib/utils'
+import Image from 'next/image'
 import Balancer from 'react-wrap-balancer'
 
 // render standard content elements
@@ -15,7 +15,7 @@ export function PageContent({ data }: { data: PageContentData }) {
                 key={index}
                 className={cn(
                   item.type === 'h1' ? 'heading' : 'heading2',
-                  'text-center'
+                  'text-center',
                 )}
               >
                 <Balancer>{item.text}

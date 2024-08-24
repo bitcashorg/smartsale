@@ -1,7 +1,7 @@
 import { getCMSSdk } from '@/services/datocms/graphql/cms'
 
 export async function getPageContent(
-  category: 'terms_condition' | 'privacy_policy'
+  category: 'terms_condition' | 'privacy_policy',
 ) {
   let dataRecord: MainContentBlock | null = null
   let error
@@ -23,12 +23,12 @@ export async function getPageContent(
       [pageName]: {
         __args: {
           locale: 'en',
-          fallbackLocales: ['en']
+          fallbackLocales: ['en'],
         },
         mainContent: {
-          value: true
-        }
-      }
+          value: true,
+        },
+      },
     })
 
     dataRecord = data[pageName as keyof typeof data] as MainContentBlock
@@ -39,14 +39,14 @@ export async function getPageContent(
   } catch (err) {
     console.log(
       'datocms-page.service::getPageContent::[ERROR]:: ' + category,
-      err
+      err,
     )
 
     error = (err as Error).message
   } finally {
     return {
       [`Data`]: dataRecord,
-      [`Error`]: error
+      [`Error`]: error,
     }
   }
 }

@@ -5,15 +5,15 @@ import {
   TableCell,
   TableHead,
   TableHeader,
-  TableRow
+  TableRow,
 } from '@/components/ui/table'
+import { useSupabaseClient } from '@/services/supabase'
 import { formatAddress } from 'app-lib'
 import { format } from 'date-fns'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
-import { Address } from 'viem'
+import type { Address } from 'viem'
 import { useAccount } from 'wagmi'
-import { useSupabaseClient } from '@/services/supabase'
 
 export function TransactionsTable() {
   const supabase = useSupabaseClient()
@@ -38,13 +38,13 @@ export function TransactionsTable() {
       .on(
         'postgres_changes',
         { event: 'INSERT', schema: 'public', table: 'transfers' },
-        payload => {
+        (payload) => {
           const isSameAddress = payload.new.from === address
           if (!isSameAddress) return
-          setTransactions(transactions => {
+          setTransactions((transactions) => {
             return [payload.new, ...transactions]
           })
-        }
+        },
       )
       .subscribe()
 
@@ -53,13 +53,13 @@ export function TransactionsTable() {
       .on(
         'postgres_changes',
         { event: 'UPDATE', schema: 'public', table: 'transfers' },
-        payload => {
+        (payload) => {
           const isSameAddress = payload.new.from === address
           if (!isSameAddress) return
-          setTransactions(transactions => {
+          setTransactions((transactions) => {
             return [payload.new, ...transactions]
           })
-        }
+        },
       )
       .subscribe()
 

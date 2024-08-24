@@ -2,10 +2,7 @@
   "relatedBlogs": [
     {
       "id": "180217169",
-      "topics": [
-        "Tokenomics",
-        "Bình luận"
-      ],
+      "topics": ["Tokenomics", "Bình luận"],
       "title": "Kinh tế của các Kích thích Đã Token hóa 3: Giá trị Token Không Đồng nhất các Bên liên quan [Bình luận]",
       "slug": "economics-of-tokenized-incentives-3-token-value-won-t-align-stakeholders-commenta",
       "authorName": "Crypto Clairity",
@@ -24,10 +21,7 @@
     },
     {
       "id": "180217123",
-      "topics": [
-        "Tokenomics",
-        "Bình luận"
-      ],
+      "topics": ["Tokenomics", "Bình luận"],
       "title": "Kinh tế của các Kích thích Đã Token hóa 2: Lựa chọn các Chỉ số Hiệu suất Hiệu quả [Bình luận]",
       "slug": "economics-of-tokenized-incentives-2-selecting-effective-performance-metrics-comme",
       "authorName": "Crypto Clairity",
@@ -46,10 +40,7 @@
     },
     {
       "id": "180217082",
-      "topics": [
-        "Tokenomics",
-        "Bình luận"
-      ],
+      "topics": ["Tokenomics", "Bình luận"],
       "title": "Kinh tế của các Kích thích Đã Token hóa 1: Giới thiệu về Thanh toán theo Hiệu suất [Bình luận]",
       "slug": "economics-of-tokenized-incentives-1-intro-to-pay-for-performance",
       "authorName": "Crypto Clairity",
@@ -68,10 +59,7 @@
     },
     {
       "id": "180556627",
-      "topics": [
-        "Bình luận",
-        "Hợp đồng thông minh"
-      ],
+      "topics": ["Bình luận", "Hợp đồng thông minh"],
       "title": "Hợp đồng Không Hoàn chỉnh và Blockchain [Bình luận]",
       "slug": "incomplete-contracts-and-blockchain-commentary",
       "authorName": "Crypto Clairity",
@@ -90,11 +78,7 @@
     },
     {
       "id": "180563918",
-      "topics": [
-        "Tokenomics",
-        "Bình luận",
-        "Gây quỹ"
-      ],
+      "topics": ["Tokenomics", "Bình luận", "Gây quỹ"],
       "title": "Token: Phương tiện Đầu tư hay Phương tiện Trao đổi (Không phải Cả Hai) [Bình luận]",
       "slug": "tokens-investment-vehicle-or-medium-of-exchange-not-both-commentary",
       "authorName": "Crypto Clairity",
@@ -113,11 +97,7 @@
     },
     {
       "id": "180563922",
-      "topics": [
-        "Gây quỹ",
-        "Tokenomics",
-        "Bình luận"
-      ],
+      "topics": ["Gây quỹ", "Tokenomics", "Bình luận"],
       "title": "ICO Tận dụng Hiệu ứng Mạng [Bình luận]",
       "slug": "icos-leverage-network-effects-commentary",
       "authorName": "Crypto Clairity",
@@ -136,11 +116,7 @@
     },
     {
       "id": "179948652",
-      "topics": [
-        "Tokenomics",
-        "Ngành",
-        "Tóm tắt"
-      ],
+      "topics": ["Tokenomics", "Ngành", "Tóm tắt"],
       "title": "Đổi mới Kỹ thuật số và Mô hình Doanh thu [Tóm tắt]",
       "slug": "digital-innovation-and-revenue-models-summary",
       "authorName": "Crypto Clairity",
@@ -159,11 +135,7 @@
     },
     {
       "id": "180556595",
-      "topics": [
-        "Gây quỹ",
-        "Tokenomics",
-        "Bình luận"
-      ],
+      "topics": ["Gây quỹ", "Tokenomics", "Bình luận"],
       "title": "Hiệu ứng Blockchain: Hiệu ứng Mạng không Chi phí Quyền lực Thị trường [Bình luận]",
       "slug": "the-blockchain-effect-network-effects-without-market-power-costs-commentary",
       "authorName": "Crypto Clairity",
@@ -182,10 +154,7 @@
     },
     {
       "id": "180563903",
-      "topics": [
-        "DAO",
-        "Tóm tắt"
-      ],
+      "topics": ["DAO", "Tóm tắt"],
       "title": "Bỏ phiếu để làm gì? [Tóm tắt]",
       "slug": "what-is-voting-for-summary",
       "authorName": "Crypto Clairity",
@@ -204,10 +173,7 @@
     },
     {
       "id": "180563908",
-      "topics": [
-        "DAO",
-        "Tóm tắt"
-      ],
+      "topics": ["DAO", "Tóm tắt"],
       "title": "Quản trị để làm gì? [Tóm tắt]",
       "slug": "what-is-governance-for-summary",
       "authorName": "Crypto Clairity",
@@ -226,10 +192,7 @@
     },
     {
       "id": "180563931",
-      "topics": [
-        "Tokenomics",
-        "Bình luận"
-      ],
+      "topics": ["Tokenomics", "Bình luận"],
       "title": "Cấu trúc Kích thích Blockchain: Chúng là gì và tại sao chúng quan trọng [Bình luận]",
       "slug": "blockchain-incentive-structures-what-they-are-and-why-they-matter-commentary",
       "authorName": "Crypto Clairity",
@@ -248,11 +211,7 @@
     },
     {
       "id": "167184977",
-      "topics": [
-        "Tokenomics",
-        "DAO",
-        "Gây quỹ"
-      ],
+      "topics": ["Tokenomics", "DAO", "Gây quỹ"],
       "title": "Cách mạng hóa Mô hình Cổ phần: Làm thế nào Tokenomics làm xáo trộn Thế giới Khởi nghiệp",
       "slug": "revolutionizing-the-equity-model-how-tokenomics-is-disrupting-the-startup-world",
       "authorName": "Crypto Clairity",
@@ -271,10 +230,7 @@
     },
     {
       "id": "166984334",
-      "topics": [
-        "DAO",
-        "Pháp lý"
-      ],
+      "topics": ["DAO", "Pháp lý"],
       "title": "Tổ chức Tự trị Phân cấp (DAOs): Các Cấu trúc Pháp lý Cơ bản cho Mục đích Kinh doanh và Phi lợi nhuận",
       "slug": "decentralized-autonomous-organizations-daos-basic-legal-structures-for-business-a",
       "authorName": "Crypto Clairity",
@@ -293,10 +249,7 @@
     },
     {
       "id": "167101094",
-      "topics": [
-        "Bắt đầu",
-        "Tokenomics"
-      ],
+      "topics": ["Bắt đầu", "Tokenomics"],
       "title": "Tokenomics 101: Khai phá Sức mạnh của Tiền điện tử!",
       "slug": "tokenomics-101-unleashing-the-power-of-cryptocurrency",
       "authorName": "Crypto Clairity",
@@ -315,10 +268,7 @@
     },
     {
       "id": "166981063",
-      "topics": [
-        "Bắt đầu",
-        "DAO"
-      ],
+      "topics": ["Bắt đầu", "DAO"],
       "title": "Tương lai đã đến: Sự Trỗi dậy của các Tổ chức Tự trị Phân cấp (DAOs)",
       "slug": "the-future-is-here-the-rise-of-decentralized-autonomous-organizations-daos",
       "authorName": "Crypto Clairity",
@@ -338,11 +288,7 @@
   ],
   "blogContent": {
     "id": "180563939",
-    "topics": [
-      "DAO",
-      "Tokenomics",
-      "Bình luận"
-    ],
+    "topics": ["DAO", "Tokenomics", "Bình luận"],
     "title": "Một Khung cho Thiết kế Quản trị Blockchain: Bánh xe Nhóm Prysm [Bình luận]",
     "slug": "a-framework-for-blockchain-governance-design-the-prysm-group-wheel-commentary",
     "authorName": "Crypto Clairity",
@@ -479,9 +425,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Phạm vi Quyết định"
                             },
                             {
@@ -500,9 +444,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Các bên liên quan / Người tham gia"
                             },
                             {
@@ -521,9 +463,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Nghiên cứu và Phát triển Chính sách"
                             },
                             {
@@ -542,9 +482,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Quy trình Đề xuất"
                             },
                             {
@@ -563,9 +501,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Hệ thống Phân phối Thông tin / Giáo dục"
                             },
                             {
@@ -584,9 +520,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Quy trình Ra Quyết định"
                             },
                             {
@@ -605,9 +539,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Thực hiện và Quyền Sở hữu"
                             },
                             {
@@ -641,9 +573,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Các nhà phát triển Blockchain"
                             },
                             {
@@ -662,9 +592,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Nhà đầu tư"
                             },
                             {
@@ -683,9 +611,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Người dùng Blockchain"
                             },
                             {
@@ -704,9 +630,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Nhà hoạch định chính sách và các nhà quản lý"
                             },
                             {
@@ -758,9 +682,5 @@
       }
     }
   },
-  "topics": [
-    "DAO",
-    "Tokenomics",
-    "Commentary"
-  ]
+  "topics": ["DAO", "Tokenomics", "Commentary"]
 }

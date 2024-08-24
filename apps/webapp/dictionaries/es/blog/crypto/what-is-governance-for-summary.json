@@ -2,11 +2,7 @@
   "relatedBlogs": [
     {
       "id": "180563939",
-      "topics": [
-        "DAO",
-        "Tokenomics",
-        "Comentario"
-      ],
+      "topics": ["DAO", "Tokenomics", "Comentario"],
       "title": "Un Marco para el Diseno de Gobernanza Blockchain: La Rueda del Grupo Prysm [Comentario]",
       "slug": "a-framework-for-blockchain-governance-design-the-prysm-group-wheel-commentary",
       "authorName": "Crypto Clairity",
@@ -25,11 +21,7 @@
     },
     {
       "id": "167184977",
-      "topics": [
-        "Tokenomics",
-        "DAO",
-        "Recaudacion de fondos"
-      ],
+      "topics": ["Tokenomics", "DAO", "Recaudacion de fondos"],
       "title": "Revolucionando el Modelo de Equidad: Como la Tokenomics esta Disrumpiendo el Mundo de las Startups",
       "slug": "revolutionizing-the-equity-model-how-tokenomics-is-disrupting-the-startup-world",
       "authorName": "Crypto Clairity",
@@ -48,10 +40,7 @@
     },
     {
       "id": "166981063",
-      "topics": [
-        "Empezando",
-        "DAO"
-      ],
+      "topics": ["Empezando", "DAO"],
       "title": "El Futuro esta Aqui: El Auge de las Organizaciones Autonomas Descentralizadas (DAOs)",
       "slug": "the-future-is-here-the-rise-of-decentralized-autonomous-organizations-daos",
       "authorName": "Crypto Clairity",
@@ -71,10 +60,7 @@
   ],
   "blogContent": {
     "id": "180563908",
-    "topics": [
-      "DAO",
-      "Resumen"
-    ],
+    "topics": ["DAO", "Resumen"],
     "title": "¿Para que sirve la gobernanza? [Resumen]",
     "slug": "what-is-governance-for-summary",
     "authorName": "Crypto Clairity",
@@ -397,8 +383,5 @@
       }
     }
   },
-  "topics": [
-    "DAO",
-    "Resumen"
-  ]
+  "topics": ["DAO", "Resumen"]
 }

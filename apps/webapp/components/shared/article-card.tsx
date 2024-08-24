@@ -1,11 +1,11 @@
 import { Card, CardContent, CardFooter } from '@/components/ui/card'
 import { readingTime } from '@/lib/blog'
-import { BlogArticleRecord } from '@/services/datocms'
-import Image from 'next/image'
-import Link from 'next/link'
+import type { BlogArticleRecord } from '@/services/datocms'
 // import { isMobile } from 'react-device-detect'
 import { cn } from '@/lib/utils'
-import { LangProp } from '@/types/routing.type'
+import type { LangProp } from '@/types/routing.type'
+import Image from 'next/image'
+import Link from 'next/link'
 
 export const ArticleCard = ({
   post,
@@ -16,7 +16,7 @@ export const ArticleCard = ({
 }: ArticleCardProps) => {
   const title =
     post.title ||
-    post.slug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase())
+    post.slug.replace(/-/g, ' ').replace(/\b\w/g, (l) => l.toUpperCase())
 
   // console.log('post', post)
   return (

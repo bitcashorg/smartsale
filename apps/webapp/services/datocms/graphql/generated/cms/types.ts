@@ -33,13 +33,13 @@ export default {
       _allSeoLocales: [
         93,
         {
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       _allTitleLocales: [
         102,
         {
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       _createdAt: [31],
@@ -68,7 +68,7 @@ export default {
         92,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       slug: [99],
@@ -77,7 +77,7 @@ export default {
         99,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       topics: [69],
@@ -111,19 +111,19 @@ export default {
       _allDescriptionLocales: [
         102,
         {
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       _allSeoLocales: [
         93,
         {
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       _allTitleLocales: [
         102,
         {
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       _createdAt: [31],
@@ -150,7 +150,7 @@ export default {
         99,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       id: [66],
@@ -158,7 +158,7 @@ export default {
         92,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       slug: [99],
@@ -167,7 +167,7 @@ export default {
         99,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       topics: [69],
@@ -201,19 +201,19 @@ export default {
       _allDescriptionLocales: [
         102,
         {
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       _allSeoLocales: [
         93,
         {
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       _allTitleLocales: [
         102,
         {
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       _createdAt: [31],
@@ -240,7 +240,7 @@ export default {
         99,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       id: [66],
@@ -248,7 +248,7 @@ export default {
         92,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       slug: [99],
@@ -257,7 +257,7 @@ export default {
         99,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       topics: [69],
@@ -291,19 +291,19 @@ export default {
       _allDescriptionLocales: [
         102,
         {
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       _allSeoLocales: [
         93,
         {
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       _allTitleLocales: [
         102,
         {
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       _createdAt: [31],
@@ -330,7 +330,7 @@ export default {
         99,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       id: [66],
@@ -338,7 +338,7 @@ export default {
         92,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       slug: [99],
@@ -347,7 +347,7 @@ export default {
         99,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       topics: [69],
@@ -381,13 +381,13 @@ export default {
       _allSeoLocales: [
         93,
         {
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       _allTitleLocales: [
         102,
         {
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       _createdAt: [31],
@@ -416,7 +416,7 @@ export default {
         92,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       slug: [99],
@@ -425,7 +425,7 @@ export default {
         99,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       topics: [69],
@@ -459,19 +459,19 @@ export default {
       _allDescriptionLocales: [
         102,
         {
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       _allSeoLocales: [
         93,
         {
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       _allTitleLocales: [
         102,
         {
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       _createdAt: [31],
@@ -498,7 +498,7 @@ export default {
         99,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       id: [66],
@@ -506,7 +506,7 @@ export default {
         92,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       slug: [99],
@@ -515,7 +515,7 @@ export default {
         99,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       topics: [69],
@@ -549,19 +549,19 @@ export default {
       _allDescriptionLocales: [
         102,
         {
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       _allSeoLocales: [
         93,
         {
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       _allTitleLocales: [
         102,
         {
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       _createdAt: [31],
@@ -588,7 +588,7 @@ export default {
         99,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       id: [66],
@@ -596,7 +596,7 @@ export default {
         92,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       slug: [99],
@@ -605,7 +605,7 @@ export default {
         99,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       topics: [69],
@@ -680,7 +680,7 @@ export default {
         99,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       author: [99],
@@ -688,9 +688,9 @@ export default {
       blurUpThumb: [
         99,
         {
-          punch: [36, "Float!"],
-          size: [64, "Int!"],
-          quality: [64, "Int!"],
+          punch: [36, 'Float!'],
+          size: [64, 'Int!'],
+          quality: [64, 'Int!'],
           imgixParams: [39],
         },
       ],
@@ -701,7 +701,7 @@ export default {
         30,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       exifInfo: [30],
@@ -710,7 +710,7 @@ export default {
         135,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       format: [99],
@@ -725,7 +725,7 @@ export default {
           imgixParams: [39],
           sizes: [99],
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       size: [65],
@@ -736,7 +736,7 @@ export default {
         99,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       url: [
@@ -757,7 +757,7 @@ export default {
         99,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       author: [99],
@@ -765,9 +765,9 @@ export default {
       blurUpThumb: [
         99,
         {
-          punch: [36, "Float!"],
-          size: [64, "Int!"],
-          quality: [64, "Int!"],
+          punch: [36, 'Float!'],
+          size: [64, 'Int!'],
+          quality: [64, 'Int!'],
           imgixParams: [39],
         },
       ],
@@ -778,7 +778,7 @@ export default {
         30,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       exifInfo: [30],
@@ -787,7 +787,7 @@ export default {
         135,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       format: [99],
@@ -802,7 +802,7 @@ export default {
           imgixParams: [39],
           sizes: [99],
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       size: [65],
@@ -813,7 +813,7 @@ export default {
         99,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       url: [
@@ -1038,127 +1038,127 @@ export default {
       _allAiFollowLinksLocales: [
         70,
         {
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       _allAiResearchFollowLinksLocales: [
         70,
         {
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       _allBackBitcashLocales: [
         102,
         {
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       _allBackHomeLocales: [
         102,
         {
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       _allBitcashNewsFollowLinksLocales: [
         70,
         {
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       _allBitcoinFollowLinksLocales: [
         70,
         {
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       _allCookieConsentCtaLocales: [
         102,
         {
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       _allCookieConsentDescriptionLocales: [
         102,
         {
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       _allCryptoFollowLinksLocales: [
         70,
         {
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       _allEli5FollowLinksLocales: [
         70,
         {
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       _allHomeFollowLinksLocales: [
         70,
         {
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       _allInvestingFollowLinksLocales: [
         70,
         {
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       _allNavigationCategoriesLocales: [
         70,
         {
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       _allNavigationPoliciesTermsLocales: [
         70,
         {
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       _allNavigationTopicLocales: [
         70,
         {
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       _allSearchInputPlaceholderLocales: [
         102,
         {
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       _allStartUpsFollowLinksLocales: [
         70,
         {
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       _allSubscriptionCtaLocales: [
         102,
         {
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       _allSubscriptionInputPlaceholderLocales: [
         102,
         {
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       _allSubscriptionSubtitleLocales: [
         102,
         {
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       _allSubscriptionTitleLocales: [
         102,
         {
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       _createdAt: [31],
@@ -1181,77 +1181,77 @@ export default {
         69,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       aiResearchFollowLinks: [
         69,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       backBitcash: [
         99,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       backHome: [
         99,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       bitcashNewsFollowLinks: [
         69,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       bitcoinFollowLinks: [
         69,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       cookieConsentCta: [
         99,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       cookieConsentDescription: [
         99,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       cryptoFollowLinks: [
         69,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       eli5FollowLinks: [
         69,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       homeFollowLinks: [
         69,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       id: [66],
@@ -1259,70 +1259,70 @@ export default {
         69,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       navigationCategories: [
         69,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       navigationPoliciesTerms: [
         69,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       navigationTopic: [
         69,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       searchInputPlaceholder: [
         99,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       startUpsFollowLinks: [
         69,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       subscriptionCta: [
         99,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       subscriptionInputPlaceholder: [
         99,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       subscriptionSubtitle: [
         99,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       subscriptionTitle: [
         99,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       __typename: [99],
@@ -1364,19 +1364,19 @@ export default {
       _allDescriptionLocales: [
         102,
         {
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       _allPageSeoLocales: [
         93,
         {
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       _allTitleLocales: [
         102,
         {
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       _createdAt: [31],
@@ -1400,7 +1400,7 @@ export default {
         99,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       id: [66],
@@ -1408,7 +1408,7 @@ export default {
         92,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       seoType: [99],
@@ -1416,7 +1416,7 @@ export default {
         99,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       __typename: [99],
@@ -1436,7 +1436,7 @@ export default {
       _allMainContentLocales: [
         81,
         {
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       _createdAt: [31],
@@ -1461,7 +1461,7 @@ export default {
         80,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       __typename: [99],
@@ -1551,228 +1551,228 @@ export default {
         95,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       allBlogAis: [
         2,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
           skip: [65],
           first: [65],
           filter: [0],
-          orderBy: [1, "[BlogAiModelOrderBy]"],
+          orderBy: [1, '[BlogAiModelOrderBy]'],
         },
       ],
       allBlogBitcashes: [
         5,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
           skip: [65],
           first: [65],
           filter: [3],
-          orderBy: [4, "[BlogBitcashModelOrderBy]"],
+          orderBy: [4, '[BlogBitcashModelOrderBy]'],
         },
       ],
       allBlogBitcoins: [
         8,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
           skip: [65],
           first: [65],
           filter: [6],
-          orderBy: [7, "[BlogBitcoinModelOrderBy]"],
+          orderBy: [7, '[BlogBitcoinModelOrderBy]'],
         },
       ],
       allBlogCryptos: [
         11,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
           skip: [65],
           first: [65],
           filter: [9],
-          orderBy: [10, "[BlogCryptoModelOrderBy]"],
+          orderBy: [10, '[BlogCryptoModelOrderBy]'],
         },
       ],
       allBlogInvestings: [
         14,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
           skip: [65],
           first: [65],
           filter: [12],
-          orderBy: [13, "[BlogInvestingModelOrderBy]"],
+          orderBy: [13, '[BlogInvestingModelOrderBy]'],
         },
       ],
       allBlogNews: [
         17,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
           skip: [65],
           first: [65],
           filter: [15],
-          orderBy: [16, "[BlogNewsModelOrderBy]"],
+          orderBy: [16, '[BlogNewsModelOrderBy]'],
         },
       ],
       allBlogStartups: [
         20,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
           skip: [65],
           first: [65],
           filter: [18],
-          orderBy: [19, "[BlogStartupModelOrderBy]"],
+          orderBy: [19, '[BlogStartupModelOrderBy]'],
         },
       ],
       allPageSeos: [
         79,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
           skip: [65],
           first: [65],
           filter: [77],
-          orderBy: [78, "[PageSeoModelOrderBy]"],
+          orderBy: [78, '[PageSeoModelOrderBy]'],
         },
       ],
       allResearchAis: [
         88,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
           skip: [65],
           first: [65],
           filter: [86],
-          orderBy: [87, "[ResearchAiModelOrderBy]"],
+          orderBy: [87, '[ResearchAiModelOrderBy]'],
         },
       ],
       allUploads: [
         33,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
           skip: [65],
           first: [65],
           filter: [117],
-          orderBy: [125, "[UploadOrderBy]"],
+          orderBy: [125, '[UploadOrderBy]'],
         },
       ],
       blogAi: [
         2,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
           filter: [0],
-          orderBy: [1, "[BlogAiModelOrderBy]"],
+          orderBy: [1, '[BlogAiModelOrderBy]'],
         },
       ],
       blogBitcash: [
         5,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
           filter: [3],
-          orderBy: [4, "[BlogBitcashModelOrderBy]"],
+          orderBy: [4, '[BlogBitcashModelOrderBy]'],
         },
       ],
       blogBitcoin: [
         8,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
           filter: [6],
-          orderBy: [7, "[BlogBitcoinModelOrderBy]"],
+          orderBy: [7, '[BlogBitcoinModelOrderBy]'],
         },
       ],
       blogCrypto: [
         11,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
           filter: [9],
-          orderBy: [10, "[BlogCryptoModelOrderBy]"],
+          orderBy: [10, '[BlogCryptoModelOrderBy]'],
         },
       ],
       blogInvesting: [
         14,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
           filter: [12],
-          orderBy: [13, "[BlogInvestingModelOrderBy]"],
+          orderBy: [13, '[BlogInvestingModelOrderBy]'],
         },
       ],
       blogNews: [
         17,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
           filter: [15],
-          orderBy: [16, "[BlogNewsModelOrderBy]"],
+          orderBy: [16, '[BlogNewsModelOrderBy]'],
         },
       ],
       blogStartup: [
         20,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
           filter: [18],
-          orderBy: [19, "[BlogStartupModelOrderBy]"],
+          orderBy: [19, '[BlogStartupModelOrderBy]'],
         },
       ],
       layout: [
         72,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       pageSeo: [
         79,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
           filter: [77],
-          orderBy: [78, "[PageSeoModelOrderBy]"],
+          orderBy: [78, '[PageSeoModelOrderBy]'],
         },
       ],
       privacyPolicy: [
         82,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       researchAi: [
         88,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
           filter: [86],
-          orderBy: [87, "[ResearchAiModelOrderBy]"],
+          orderBy: [87, '[ResearchAiModelOrderBy]'],
         },
       ],
       termsAndCondition: [
         106,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       upload: [
         33,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
           filter: [117],
-          orderBy: [125, "[UploadOrderBy]"],
+          orderBy: [125, '[UploadOrderBy]'],
         },
       ],
       __typename: [99],
@@ -1839,13 +1839,13 @@ export default {
       _allSeoLocales: [
         93,
         {
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       _allTitleLocales: [
         102,
         {
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       _createdAt: [31],
@@ -1874,7 +1874,7 @@ export default {
         92,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       slug: [99],
@@ -1883,7 +1883,7 @@ export default {
         99,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       topics: [69],
@@ -1933,14 +1933,14 @@ export default {
       faviconMetaTags: [
         103,
         {
-          variants: [32, "[FaviconType]"],
+          variants: [32, '[FaviconType]'],
         },
       ],
       globalSeo: [
         38,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       locales: [96],
@@ -2007,7 +2007,7 @@ export default {
       _allMainContentLocales: [
         105,
         {
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       _createdAt: [31],
@@ -2032,7 +2032,7 @@ export default {
         104,
         {
           locale: [96],
-          fallbackLocales: [96, "[SiteLocale!]"],
+          fallbackLocales: [96, '[SiteLocale!]'],
         },
       ],
       __typename: [99],

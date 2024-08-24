@@ -1,9 +1,12 @@
+import type { Database, TablesInsert } from '@repo/supabase'
 import { createClient } from '@supabase/supabase-js'
-import { Database, TablesInsert } from '@repo/supabase'
-import { appenv } from '~/config'
+import { appConfig } from '~/config'
 
 // Initialize Supabase client
-const supabase = createClient<Database>(appenv.supabase.url, appenv.supabase.anonKey)
+const supabase = createClient<Database>(
+  appConfig.supabase.url,
+  appConfig.supabase.anonKey,
+)
 
 export async function upsertAuctionDetail(data: TablesInsert<'auction'>) {
   const { data: result, error } = await supabase.from('auction').upsert(

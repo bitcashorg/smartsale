@@ -3,13 +3,13 @@ import StepsSection from '@/components/layout/section/steps-section'
 import { Banner } from '@/components/shared/banner'
 import { CommunityCard } from '@/components/shared/community-card'
 import { getDictionary } from '@/dictionaries'
-import { Lang } from '@/dictionaries/locales'
+import type { Lang } from '@/dictionaries/locales'
 import Image from 'next/image'
 import Balancer from 'react-wrap-balancer'
 
 export async function AboutBitlauncherPageLanding({
   content,
-  params
+  params,
 }: AboutBitlauncherPageProps): Promise<JSX.Element> {
   const lang = params.lang
   const dict = await getDictionary(lang)

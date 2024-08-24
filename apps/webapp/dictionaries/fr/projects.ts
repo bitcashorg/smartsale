@@ -1,4 +1,4 @@
-import { ProjectContent } from '@/lib/projects'
+import type { ProjectContent } from '@/lib/projects'
 
 export const projects: ProjectContent[] = [
   {
@@ -18,9 +18,9 @@ export const projects: ProjectContent[] = [
             'Normes de sécurité rigoureuses : Mise en œuvre de politiques de KYC/AML de premier ordre et de sécurité avancée pour la protection des utilisateurs.',
             'Autonomisation mondiale : Engagé à autonomiser les utilisateurs du monde entier grâce à des solutions technologiques transformatrices.',
             "Renforcer les connexions humaines : Prioriser les interactions humaines authentiques dans le futur anticipé dominé par l'IA.",
-            "Nouvelle vision de l'économie numérique : Envisager une économie future où la technologie et les principes éthiques servent le bien-être mondial."
-          ]
-        ]
+            "Nouvelle vision de l'économie numérique : Envisager une économie future où la technologie et les principes éthiques servent le bien-être mondial.",
+          ],
+        ],
       },
       product: {
         title: "Vue d'ensemble du produit",
@@ -36,9 +36,9 @@ export const projects: ProjectContent[] = [
             "Lanceur de start-up en intelligence artificielle : bitlauncher assiste les start-ups en intelligence artificielle avec des outils de collecte de fonds et d'organisation sécurisés et efficaces.",
             "Normes de conformité élevées : Met l'accent sur une conformité réglementaire stricte, y compris des politiques de KYC et de LCB-FT, ainsi que des protocoles de sécurité avancés.",
             "Communauté ouverte : Encourage un environnement collaboratif pour que les utilisateurs, les développeurs et les investisseurs puissent s'engager et contribuer.",
-            "Vision de l'économie numérique : Invite la participation mondiale pour façonner une nouvelle économie où la technologie améliore la prospérité humaine et la connexion."
-          ]
-        ]
+            "Vision de l'économie numérique : Invite la participation mondiale pour façonner une nouvelle économie où la technologie améliore la prospérité humaine et la connexion.",
+          ],
+        ],
       },
       problem: {
         title: 'Problème',
@@ -53,9 +53,9 @@ export const projects: ProjectContent[] = [
             "Exclusivité dans l'innovation: Les technologies de pointe profitent largement à un groupe sélectionné, créant un déséquilibre dans l’autonomisation technologique.",
             "Déficit d'intégration: Il existe une absence notable d’une plate-forme complète intégrant l’IA, la blockchain et la DeFi de manière conviviale.",
             'Obstacles à l’adoption: La nature intimidante des solutions blockchain actuelles entrave leur adoption généralisée et leur utilisation pratique par le grand public.',
-            'Inéquité économique: La finance numérique n’a pas encore comblé le fossé entre les férus de technologie et la population en général, renforçant ainsi les disparités économiques.'
-          ]
-        ]
+            'Inéquité économique: La finance numérique n’a pas encore comblé le fossé entre les férus de technologie et la population en général, renforçant ainsi les disparités économiques.',
+          ],
+        ],
       },
       solution: {
         title: 'Solution',
@@ -71,9 +71,9 @@ export const projects: ProjectContent[] = [
             'Démocratisation technologique: Vise à rendre la technologie avancée accessible et utilisable pour tous, en démocratisant l’IA et les outils financiers.',
             'Catalyseur de changement: Agit comme une rampe de lancement pour des applications transformatrices, stimulant la croissance et favorisant une communauté dynamique et créative.',
             'Approche centrée sur l’humain: Se concentre sur le maintien des connexions humaines et de l’intégrité dans un avenir dominé par l’IA.',
-            'Redéfinition économique: Bitcash s’efforce de remodeler l’économie mondiale pour qu’elle soit plus inclusive, équitable et favorable au potentiel humain.'
-          ]
-        ]
+            'Redéfinition économique: Bitcash s’efforce de remodeler l’économie mondiale pour qu’elle soit plus inclusive, équitable et favorable au potentiel humain.',
+          ],
+        ],
       },
       businessModel: {
         title: "Modèle d'affaires",
@@ -89,12 +89,12 @@ export const projects: ProjectContent[] = [
             'Investissement en R&D: Améliore continuellement la technologie et les services grâce à la recherche et au développement, tout en conservant un avantage concurrentiel.',
             'Priorité à la conformité et à la sécurité: Consacre des ressources pour garantir la conformité réglementaire et une sécurité robuste, en renforçant la confiance et la longévité de la plateforme.',
             "Initiatives éducatives: Investit dans l'éducation des utilisateurs et l'engagement de la communauté, permettant aux utilisateurs de maximiser les avantages de la plateforme et de contribuer à son évolution.",
-            "Marketing ciblé pour la croissance des utilisateurs: Utilise un marketing stratégique pour attirer une base d'utilisateurs diversifiée, démystifiant la blockchain et l'IA pour encourager leur adoption par le grand public."
+            "Marketing ciblé pour la croissance des utilisateurs: Utilise un marketing stratégique pour attirer une base d'utilisateurs diversifiée, démystifiant la blockchain et l'IA pour encourager leur adoption par le grand public.",
           ],
           [
-            "This business model represents Bitcash's commitment to a sustainable, equitable digital economy, leveraging community input and innovation for collective growth."
-          ]
-        ]
+            "This business model represents Bitcash's commitment to a sustainable, equitable digital economy, leveraging community input and innovation for collective growth.",
+          ],
+        ],
       },
       tokenomics: {
         title: 'Tokénomique',
@@ -110,10 +110,10 @@ export const projects: ProjectContent[] = [
             'Valorisation transparente des jetons: Se concentre sur la transparence et la création de valeur réelle dans la distribution de jetons, en évitant la spéculation sur des fondations économiques stables.',
             "Participation à la gouvernance: Permet aux détenteurs de jetons de s'engager dans la gouvernance, en contribuant à l'orientation et aux politiques de la plateforme, en mettant l'accent sur la participation démocratique.",
             'Adaptabilité économique: Maintient une stratégie tokenomics flexible, adaptée aux besoins évolutifs de la communauté et de la plateforme pour une économie numérique équilibrée.',
-            "Vision de prospérité partagée: Vise à construire une nouvelle économie mondiale dans laquelle les jetons Bitcash soutiennent un système d'innovation, de participation et de bénéfices partagés, transcendant les barrières économiques traditionnelles."
-          ]
-        ]
-      }
-    }
-  }
+            "Vision de prospérité partagée: Vise à construire une nouvelle économie mondiale dans laquelle les jetons Bitcash soutiennent un système d'innovation, de participation et de bénéfices partagés, transcendant les barrières économiques traditionnelles.",
+          ],
+        ],
+      },
+    },
+  },
 ]

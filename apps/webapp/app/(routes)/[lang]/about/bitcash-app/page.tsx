@@ -1,18 +1,18 @@
-import React from 'react'
-import { Metadata } from 'next'
-import { CommonPageProps } from '@/types/routing.type'
+import {
+  SolutionLandingPage,
+  type SolutionLandingPageContent,
+} from '@/components/_wip/solution-landing-page'
 import { getDictionary } from '@/dictionaries'
+import type { CommonPageProps } from '@/types/routing.type'
 import {
   CurrencyIcon,
   MapIcon,
   PhoneIcon,
   QrCodeIcon,
-  ShieldIcon
+  ShieldIcon,
 } from 'lucide-react'
-import {
-  SolutionLandingPageContent,
-  SolutionLandingPage
-} from '@/components/_wip/solution-landing-page'
+import type { Metadata } from 'next'
+import React from 'react'
 
 export default async function BitcashAppPage({ params }: CommonPageProps) {
   const dict = await getDictionary(params.lang)
@@ -33,51 +33,51 @@ const content: SolutionLandingPageContent = {
       title: 'Buy Crypto on the go',
       description:
         'Our mobile app allows you to buy and sell cryptocurrencies anytime, anywhere.',
-      icon: PhoneIcon
+      icon: PhoneIcon,
     },
     {
       title: 'Pay with Crypto',
       description:
         'Use our QR code payment system to pay for goods and services with your cryptocurrencies.',
-      icon: QrCodeIcon
-    }
+      icon: QrCodeIcon,
+    },
   ],
   business: {
     heading: 'Trusted by businesses worldwide',
     description:
-      'Join the growing number of businesses that accept and use cryptocurrencies for payments.'
+      'Join the growing number of businesses that accept and use cryptocurrencies for payments.',
   },
   advantages: [
     {
       title: 'Global Reach',
       description:
         'Our platform is available in over 180 countries, allowing you to transact globally.',
-      icon: MapIcon
+      icon: MapIcon,
     },
     {
       title: 'Secure Transactions',
       description:
         'We use the latest security protocols to ensure your transactions are safe and secure.',
-      icon: ShieldIcon
+      icon: ShieldIcon,
     },
     {
       title: 'Multiple Cryptocurrencies',
       description:
         'Our platform supports a wide range of cryptocurrencies, including Bitcoin, Ethereum, and more.',
-      icon: CurrencyIcon
-    }
+      icon: CurrencyIcon,
+    },
   ],
   callToAction: {
     heading: 'Get started today',
     description:
       'Join the future of payments and start accepting cryptocurrencies for your business.',
     buttonLabel: 'Get Started',
-    buttonHref: '#'
-  }
+    buttonHref: '#',
+  },
 }
 
 export const metadata: Metadata = {
   title: 'Bitcash App | Bitlauncher',
   description:
-    'Be part of the intelligent future and join the Ai/Web3 revolution now!'
+    'Be part of the intelligent future and join the Ai/Web3 revolution now!',
 }

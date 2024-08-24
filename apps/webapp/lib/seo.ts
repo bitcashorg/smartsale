@@ -1,4 +1,4 @@
-import { Metadata } from 'next'
+import type { Metadata } from 'next'
 import { headers } from 'next/headers'
 
 type OgType =
@@ -43,14 +43,14 @@ export const generateMetadataFromSEO = (pageSeo: PageSEO): Metadata => {
       title: pageSeo.title,
       description: pageSeo.description,
       url: currentUrl,
-      images: pageSeo.ogImageUrl ? [{ url: pageSeo.ogImageUrl }] : []
+      images: pageSeo.ogImageUrl ? [{ url: pageSeo.ogImageUrl }] : [],
     },
     twitter: {
       card: pageSeo.twitterCard as TwitterCard,
       site: currentUrl,
       title: pageSeo.title,
       description: pageSeo.description,
-      images: pageSeo.ogImageUrl ? [pageSeo.ogImageUrl] : []
-    }
+      images: pageSeo.ogImageUrl ? [pageSeo.ogImageUrl] : [],
+    },
   }
 }

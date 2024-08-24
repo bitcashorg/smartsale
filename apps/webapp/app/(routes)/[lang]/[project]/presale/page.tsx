@@ -1,19 +1,19 @@
-import { ProjectWithAuction, getProjectBySlug } from '@/lib/projects'
-import { redirect } from 'next/navigation'
-import { ProjectHeader } from '@/components/routes/project/project-header'
-import { Card, CardContent } from '@/components/ui/card'
-import { Countdown } from '@/components/shared/countdown'
-import { ProjectPresaleData } from '@/components/routes/project/project-presale-data'
-import { PresaleTransactionsCard } from '@/components/routes/project/presale/presale-transactions-card'
-import { ProjectPageProps } from '@/types/routing.type'
-import { getDictionary } from '@/dictionaries'
 import { PresaleDepositCard } from '@/components/routes/project/presale/presale-deposit-card'
+import { PresaleTransactionsCard } from '@/components/routes/project/presale/presale-transactions-card'
+import { ProjectHeader } from '@/components/routes/project/project-header'
+import { ProjectPresaleData } from '@/components/routes/project/project-presale-data'
+import { Countdown } from '@/components/shared/countdown'
+import { Card, CardContent } from '@/components/ui/card'
+import { getDictionary } from '@/dictionaries'
+import { type ProjectWithAuction, getProjectBySlug } from '@/lib/projects'
+import type { ProjectPageProps } from '@/types/routing.type'
+import { redirect } from 'next/navigation'
 
 export default async function ProjectPage({ params }: ProjectPageProps) {
   const dict = await getDictionary(params.lang)
   const project = (await getProjectBySlug(
     params.project,
-    dict
+    dict,
   )) as ProjectWithAuction
   if (!project) redirect('/')
 

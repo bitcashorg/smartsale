@@ -8,7 +8,7 @@ export function Countdown() {
     days: '00',
     hours: '00',
     minutes: '00',
-    seconds: '00'
+    seconds: '00',
   })
 
   useEffect(() => {
@@ -21,7 +21,7 @@ export function Countdown() {
           .toString()
           .padStart(2, '0')
         const hours = Math.floor(
-          (timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+          (timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
         )
           .toString()
           .padStart(2, '0')

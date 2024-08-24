@@ -1,7 +1,7 @@
 'use client'
 
+import { Button, type ButtonProps } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
-import { Button, ButtonProps } from '@/components/ui/button'
 
 interface ExternalLinkButtonProps extends ButtonProps {
   link: string
@@ -17,7 +17,7 @@ export function ExternalLinkButton({
     <Button
       {...props}
       className={cn(className)}
-      onClick={event => {
+      onClick={(event) => {
         event.preventDefault()
         event.stopPropagation()
         window.open(link, '_blank', 'noopener,noreferrer')

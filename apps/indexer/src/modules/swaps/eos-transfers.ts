@@ -7,7 +7,9 @@ import { issueTokens } from './cred-issuer'
 // https://docs.dfuse.eosnation.io/eosio/public-apis/reference/search/terms/
 // receiver: means the account with code that has executed the action.
 export async function listenToEosTransfers(env: 'test' | 'prod' = 'test') {
-  const usdt = smartsaleEnv[env].stables.find((t) => (t.chainType = 'antelope'))?.address
+  const usdt = smartsaleEnv[env].stables.find(
+    (t) => (t.chainType = 'antelope'),
+  )?.address
   const bank = smartsaleEnv[env].bitcash.bank
   const launchpad = smartsaleEnv[env].smartsale.bk
 
@@ -20,14 +22,26 @@ export async function listenToEosTransfers(env: 'test' | 'prod' = 'test') {
 
   // only first action for now
   usdtDeposits.on('data', ({ trxId, actions }: any) =>
-    handleDeposit({ trxId, from: actions[0].from, quantity: actions[0].quantity }),
+    handleDeposit({
+      trxId,
+      from: actions[0].from,
+      quantity: actions[0].quantity,
+    }),
   )
   bitusdDeposits.on('data', ({ trxId, actions }: any) =>
-    handleDeposit({ trxId, from: actions[0].from, quantity: actions[0].quantity.quantity }),
+    handleDeposit({
+      trxId,
+      from: actions[0].from,
+      quantity: actions[0].quantity.quantity,
+    }),
   )
 }
 
-async function handleDeposit(data: { trxId: string; from: string; quantity: string }) {
+async function handleDeposit(data: {
+  trxId: string
+  from: string
+  quantity: string
+}) {
   console.log('handle deposit', data)
 
   const response = await issueTokens(

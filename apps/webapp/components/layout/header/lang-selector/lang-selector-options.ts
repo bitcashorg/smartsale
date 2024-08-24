@@ -1,4 +1,4 @@
-import { Lang } from '@/dictionaries/locales'
+import type { Lang } from '@/dictionaries/locales'
 
 export const langSelectorOptions: LangSelectorOption[] = [
   { name: 'English', code: 'en' },
@@ -8,7 +8,7 @@ export const langSelectorOptions: LangSelectorOption[] = [
   { name: 'Tiếng Việt', code: 'vi' },
   { name: '한국어', code: 'ko' },
   { name: 'Português', code: 'pt' },
-  { name: 'Français', code: 'fr' }
+  { name: 'Français', code: 'fr' },
   // { name: 'Deutsch', code: 'de' },
   // { name: '日本語', code: 'ja' },
   // { name: 'Русский', code: 'ru' },

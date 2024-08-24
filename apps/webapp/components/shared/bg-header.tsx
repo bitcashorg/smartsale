@@ -4,7 +4,7 @@ import Balancer from 'react-wrap-balancer'
 export function BgHeader({
   heading,
   subheading,
-  imageSrc
+  imageSrc,
 }: {
   heading: string
   subheading?: string

@@ -1,12 +1,17 @@
-import { http, createPublicClient, PublicClient, createWalletClient } from 'viem'
-import { appenv } from '../config'
 import { eosEvmTestnet } from 'app-env'
+import {
+  http,
+  PublicClient,
+  createPublicClient,
+  createWalletClient,
+} from 'viem'
+import { appConfig } from '../config'
 
 export const walletClient = createWalletClient({
   chain: eosEvmTestnet,
   transport: http(),
-  key: appenv.evm.issuerKey,
-  account: appenv.evm.issuerAccount,
+  key: appConfig.evm.issuerKey,
+  account: appConfig.evm.issuerAccount,
 })
 
 export async function getCurrentBlockHeight() {

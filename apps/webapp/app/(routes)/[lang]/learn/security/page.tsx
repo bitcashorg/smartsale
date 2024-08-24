@@ -1,11 +1,10 @@
-import React from 'react'
-import { Metadata } from 'next'
-import { PageContent } from '@/components/shared/content'
-import { CommonPageProps } from '@/types/routing.type'
-import { getDictionary } from '@/dictionaries'
-import { BgHeader } from '@/components/shared/bg-header'
-import StepsSection from '@/components/layout/section/steps-section'
 import { LearnSection } from '@/components/layout/section/learn-section'
+import StepsSection from '@/components/layout/section/steps-section'
+import { BgHeader } from '@/components/shared/bg-header'
+import { PageContent } from '@/components/shared/content'
+import { getDictionary } from '@/dictionaries'
+import type { CommonPageProps } from '@/types/routing.type'
+import type { Metadata } from 'next'
 
 export default async function SecurityTips({ params }: CommonPageProps) {
   const dict = await getDictionary(params.lang)
@@ -35,5 +34,5 @@ export default async function SecurityTips({ params }: CommonPageProps) {
 export const metadata: Metadata = {
   title: 'Security Tips | Bitlauncher',
   description:
-    'Be part of the intelligent future and join the Ai/Web3 revolution now!'
+    'Be part of the intelligent future and join the Ai/Web3 revolution now!',
 }

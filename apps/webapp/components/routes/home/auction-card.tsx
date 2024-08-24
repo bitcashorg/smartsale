@@ -1,4 +1,4 @@
-import { Project } from '@/lib/projects'
+import type { Project } from '@/lib/projects'
 import { cn } from '@/lib/utils'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -10,7 +10,7 @@ import { MotionFigcaption } from './motion-figcaption'
 
 export function AuctionCard({
   project,
-  dict
+  dict,
 }: {
   project: Project
   dict: any
@@ -23,7 +23,7 @@ export function AuctionCard({
     maxAllocation,
     thumbnailImage,
     badgeText,
-    linkPath
+    linkPath,
   } = project
 
   const isFutureOrComingAuction = badgeText.match(/(FUTURE|COMING SOON)/)
@@ -34,7 +34,7 @@ export function AuctionCard({
         id={`hot-auction-${title.toLowerCase().replace(/\s/g, '-')}`}
         href={isFutureOrComingAuction ? `#` : linkPath}
         className={cn('mx-auto flex size-full flex-col', {
-          'cursor-not-allowed': isFutureOrComingAuction
+          'cursor-not-allowed': isFutureOrComingAuction,
         })}
       >
         <figure className="relative h-[216px] w-full">

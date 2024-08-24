@@ -1,28 +1,28 @@
 'use client'
 import { LoginDialogContent } from '@/components/dialogs/login'
 import { RegisterDialogContent } from '@/components/dialogs/register'
-import { Button, buttonVariants } from '@/components/ui/button'
+import { Button, type buttonVariants } from '@/components/ui/button'
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog'
 import { IconDownRightArrow } from '@/components/ui/icons'
 import { useErc20Balance } from '@/hooks/use-balance'
 import { useSession } from '@/hooks/use-session'
 import { cn } from '@/lib/utils'
-import { VariantProps } from 'class-variance-authority'
+import { TestnetUSDCred } from 'app-contracts'
+import { runtimeEnv } from 'app-lib'
+import type { VariantProps } from 'class-variance-authority'
 import { LucideWallet } from 'lucide-react'
 import Link from 'next/link'
 import { useRouter, useSearchParams } from 'next/navigation'
 import { useEffect, useState } from 'react'
 // import { bitcashLogin } from '@/lib/esr'
 import { useToggle } from 'react-use'
-import { TestnetUSDCred } from 'app-contracts'
-import { runtimeEnv } from 'app-lib'
 import { useAccount } from 'wagmi'
 
 export function BitcashAccessButton({
   defaultContent = 'login',
   buttonLabel = 'Log In',
   buttonClassName,
-  buttonStyle
+  buttonStyle,
 }: BitcashAccessProps) {
   const [open, toggleOpen] = useToggle(false)
   const [dialogContent, setDialogContent] =
@@ -34,7 +34,7 @@ export function BitcashAccessButton({
     abi: TestnetUSDCred.abi,
     contract: TestnetUSDCred.address,
     address: address || '0x',
-    chainId: TestnetUSDCred.chainId
+    chainId: TestnetUSDCred.chainId,
   })
   const isLogin = dialogContent === 'login'
   const router = useRouter()
@@ -78,9 +78,9 @@ export function BitcashAccessButton({
           className={cn(
             {
               'text-md group relative size-14 rounded-full px-0 py-0 font-bold hover:[&svg]:fill-card':
-                buttonLabel === 'down-right-icon'
+                buttonLabel === 'down-right-icon',
             },
-            buttonClassName
+            buttonClassName,
           )}
           {...buttonStyle}
         >

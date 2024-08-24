@@ -1,7 +1,7 @@
 'use client'
 
+import { Button, type ButtonProps } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
-import { Button, ButtonProps } from '@/components/ui/button'
 import { useRouter } from 'next/navigation'
 
 interface NestedLinkButtonProps extends ButtonProps {
@@ -19,7 +19,7 @@ export function NestedLinkButton({
     <Button
       {...props}
       className={cn(className)}
-      onClick={event => {
+      onClick={(event) => {
         event.preventDefault()
         router.push(link)
       }}

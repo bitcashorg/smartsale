@@ -8,7 +8,7 @@ export async function setLanguage(lang: string) {
   cookieStore.set('lang', lang, {
     path: '/',
     httpOnly: true,
-    sameSite: 'strict'
+    sameSite: 'strict',
   })
   return { message: `Language set to ${lang}` }
 }

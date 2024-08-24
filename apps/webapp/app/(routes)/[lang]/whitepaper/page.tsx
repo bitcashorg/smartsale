@@ -1,11 +1,11 @@
-import React from 'react'
-import { PageContent, PageContentData } from '@/components/shared/content'
-import { CommonPageProps } from '@/types/routing.type'
-import { getDictionary } from '@/dictionaries'
 import { BgHeader } from '@/components/shared/bg-header'
+import { PageContent, PageContentData } from '@/components/shared/content'
+import { getDictionary } from '@/dictionaries'
+import type { CommonPageProps } from '@/types/routing.type'
+import React from 'react'
 
 export default async function BitlauncherWhitePaper({
-  params
+  params,
 }: CommonPageProps) {
   const dict = await getDictionary(params.lang)
   return (

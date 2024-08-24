@@ -1,13 +1,13 @@
 'use client'
 
 import { createContextHook } from '@blockmatic/hooks-utils'
-import React, { ReactNode, useState, useEffect } from 'react'
+import React, { type ReactNode, useState, useEffect } from 'react'
 
 function useMobileNavFn() {
   const [open, setOpen] = useState(false)
 
   const toggleOpen = () => {
-    setOpen(prev => {
+    setOpen((prev) => {
       const newState = !prev
       return newState
     })
@@ -27,7 +27,7 @@ function useMobileNavFn() {
   return {
     open,
     toggleOpen,
-    close
+    close,
   }
 }
 
@@ -41,7 +41,7 @@ function MobileNavProvider({ children }: { children: ReactNode }) {
 
 const [useMobileNav, MobileNavProviderInner] = createContextHook(
   useMobileNavFn,
-  'You must wrap your application with <MobileNavProvider /> in order to useMobileNav().'
+  'You must wrap your application with <MobileNavProvider /> in order to useMobileNav().',
 )
 
 export { MobileNavProvider, useMobileNav }

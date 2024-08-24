@@ -1,22 +1,22 @@
-import { DeployFunction } from "hardhat-deploy/types";
-import { HardhatRuntimeEnvironment } from "hardhat/types";
+import type { DeployFunction } from 'hardhat-deploy/types'
+import type { HardhatRuntimeEnvironment } from 'hardhat/types'
 
 import {
   getWETH9Address,
   isAvaxNetwork,
   isEosEvmTestnetNetwork,
-} from "../tasks/utils";
-import { contractNames } from "../ts/deploy";
+} from '../tasks/utils'
+import { contractNames } from '../ts/deploy'
 
-const deployEasyContract: DeployFunction = async function (
+const deployEasyContract: DeployFunction = async (
   hre: HardhatRuntimeEnvironment,
-) {
-  const { deployments, getNamedAccounts } = hre;
-  const { deployer } = await getNamedAccounts();
-  const { deploy, get } = deployments;
-  const { depositAndPlaceOrder } = contractNames;
-  const { easyAuction } = contractNames;
-  const chainId = (await hre.ethers.provider.getNetwork()).chainId;
+) => {
+  const { deployments, getNamedAccounts } = hre
+  const { deployer } = await getNamedAccounts()
+  const { deploy, get } = deployments
+  const { depositAndPlaceOrder } = contractNames
+  const { easyAuction } = contractNames
+  const chainId = (await hre.ethers.provider.getNetwork()).chainId
 
   await deploy(easyAuction, {
     from: deployer,
@@ -24,9 +24,9 @@ const deployEasyContract: DeployFunction = async function (
     args: [],
     log: true,
     deterministicDeployment: false,
-  });
-  const easyAuctionDeployed = await get(easyAuction);
-  const weth9Address = await getWETH9Address(hre);
+  })
+  const easyAuctionDeployed = await get(easyAuction)
+  const weth9Address = await getWETH9Address(hre)
 
   await deploy(depositAndPlaceOrder, {
     from: deployer,
@@ -35,7 +35,7 @@ const deployEasyContract: DeployFunction = async function (
     log: true,
     deterministicDeployment:
       !isAvaxNetwork(chainId) && !isEosEvmTestnetNetwork(chainId),
-  });
-};
+  })
+}
 
-export default deployEasyContract;
+export default deployEasyContract

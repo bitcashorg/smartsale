@@ -1,9 +1,9 @@
-import { TestnetMBOTSPL, TokenContractData } from 'app-contracts'
+import { TestnetMBOTSPL, type TokenContractData } from 'app-contracts'
+import { merge } from 'lodash'
+import type { StaticImageData } from 'next/image'
 import BitcashPic from '../assets/img/bitcash.webp'
 import MasterbotsPic from '../assets/img/masterbots.webp'
 import WizartPic from '../assets/img/wizartworld.webp'
-import { StaticImageData } from 'next/image'
-import { merge } from 'lodash'
 
 export function getProjects(dict: any) {
   return merge(projects, dict.projects) as Project[]
@@ -26,7 +26,7 @@ export const projects: Project[] = [
     presaleOpen: false,
     twitterUsername: 'bitcashorg',
     telegramGroup: 'bitlauncher',
-    discordServer: 'KuR48XUxnG'
+    discordServer: 'KuR48XUxnG',
   },
   {
     id: 2,
@@ -45,7 +45,7 @@ export const projects: Project[] = [
     presaleOpen: true,
     twitterUsername: 'masterbotsai',
     telegramGroup: 'bitlauncher',
-    discordServer: 'KuR48XUxnG'
+    discordServer: 'KuR48XUxnG',
   },
   {
     id: 3,
@@ -62,8 +62,8 @@ export const projects: Project[] = [
     auctionId: 9,
     twitterUsername: 'wizartworld',
     telegramGroup: 'bitlauncher',
-    discordServer: 'KuR48XUxnG'
-  }
+    discordServer: 'KuR48XUxnG',
+  },
 ]
 
 export interface Project {
@@ -120,7 +120,7 @@ export type ProjectWithAuction = Required<
   Project
 
 export async function getProjectBySlug(slug: string, dict: any) {
-  const project = projects.find(p => p.slug == slug)
+  const project = projects.find((p) => p.slug == slug)
   if (!project) return null
   const content =
     dict.projects.find((c: any) => c.id == project.id)?.content || {}

@@ -1,4 +1,4 @@
-import React from 'react'
+import type React from 'react'
 import Balancer from 'react-wrap-balancer'
 
 export function Section({ heading, children }: SectionProps) {
