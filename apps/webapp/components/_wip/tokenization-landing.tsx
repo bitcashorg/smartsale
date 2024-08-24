@@ -27,9 +27,7 @@ export function TokenizationLanding() {
                     <li key={detailIndex}>
                       <div className="grid gap-1">
                         <h3 className="text-xl font-bold">{detail.header}</h3>
-                        <p className="text-infoForeground">
-                          {detail.content}
-                        </p>
+                        <p className="text-infoForeground">{detail.content}</p>
                       </div>
                     </li>
                   ))}

@@ -1,36 +1,34 @@
 'use client'
 
-import { motion } from "framer-motion";
-import { cva, VariantProps } from "class-variance-authority";
-import { cn } from "@/lib/utils";
-
+import { cn } from '@/lib/utils'
+import { type VariantProps, cva } from 'class-variance-authority'
+import { motion } from 'framer-motion'
 
 const figcaptionVariants = cva(
-  "absolute right-4 top-4 rounded-full px-4 py-1 text-sm text-left font-bold shadow-md transition-shadow hover:shadow-xl",
+  'absolute right-4 top-4 rounded-full px-4 py-1 text-sm text-left font-bold shadow-md transition-shadow hover:shadow-xl',
   {
     variants: {
       color: {
-        default: "bg-[#262626]",
-        comingSoon: "bg-[#ff51ed]",
-        open: "bg-[#70be33]",
+        default: 'bg-[#262626]',
+        comingSoon: 'bg-[#ff51ed]',
+        open: 'bg-[#70be33]',
       },
       size: {
-        sm: "text-xs",
-        lg: "text-lg",
+        sm: 'text-xs',
+        lg: 'text-lg',
       },
     },
     defaultVariants: {
-      color: "default",
-      size: "sm",
+      color: 'default',
+      size: 'sm',
     },
-  }
-);
-
+  },
+)
 
 interface MotionFigcaptionProps
   extends VariantProps<typeof figcaptionVariants> {
-  label: string;
-  className?: string;
+  label: string
+  className?: string
 }
 
 export function MotionFigcaption({
@@ -46,5 +44,5 @@ export function MotionFigcaption({
     >
       {label}
     </motion.figcaption>
-  );
+  )
 }

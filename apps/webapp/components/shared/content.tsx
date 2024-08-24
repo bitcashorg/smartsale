@@ -18,8 +18,9 @@ export function PageContent({ data }: { data: PageContentData }) {
                   'text-center',
                 )}
               >
-                <Balancer>{item.text}
-                <div className="w-1/4 h-[2.37px] bg-[#ff51ed] my-4 m-auto" />
+                <Balancer>
+                  {item.text}
+                  <div className="w-1/4 h-[2.37px] bg-[#ff51ed] my-4 m-auto" />
                 </Balancer>
               </item.type>
             )

@@ -5,12 +5,12 @@ import type {
   AlchemyNetwork,
   AlchemyWebhookEvent,
 } from '@repo/alchemy'
+import { supportedTokens } from '@repo/tokens'
 import { addressActivityTask } from '@repo/trigger'
 import { prodChains } from 'app-env'
 import type { Request, Response } from 'express'
 import { appConfig } from '~/config'
 import { logger } from '~/lib/logger'
-import { supportedTokens } from '@repo/tokens'
 
 // Mapping of chain IDs to Alchemy SDK Network types
 const chainIdToNetwork: Record<number, AlchemyNetwork> = {

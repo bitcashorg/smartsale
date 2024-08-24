@@ -4,11 +4,7 @@ export function useMultibase() {
   const identifyUser = (
     address: `0x${string}`,
     properties: Record<string, any>,
-  ) =>
-    identify(
-      address,
-      properties,
-    )
+  ) => identify(address, properties)
 
   const trackInteraction = (
     label: string,

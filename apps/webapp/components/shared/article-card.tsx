@@ -1,8 +1,8 @@
 import { Card, CardContent, CardFooter } from '@/components/ui/card'
 import { readingTime } from '@/lib/blog'
-import type { BlogArticleRecord } from '@/services/datocms'
 // import { isMobile } from 'react-device-detect'
 import { cn } from '@/lib/utils'
+import type { BlogArticleRecord } from '@/services/datocms'
 import type { LangProp } from '@/types/routing.type'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -12,7 +12,7 @@ export const ArticleCard = ({
   sectionSlug,
   lang,
   className,
-  meta = false
+  meta = false,
 }: ArticleCardProps) => {
   const title =
     post.title ||
@@ -70,7 +70,7 @@ export const ArticleCard = ({
                 {new Date(post._publishedAt).toLocaleDateString(lang, {
                   month: 'short',
                   day: '2-digit',
-                  year: 'numeric'
+                  year: 'numeric',
                 })}{' '}
                 ∙ {readingTime(post)} min read
               </span>

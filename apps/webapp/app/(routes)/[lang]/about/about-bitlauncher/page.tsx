@@ -34,8 +34,11 @@ const content: AboutBitlauncherPageContent = {
   ),
   paragraph2: (
     <>
-      At Bitlauncher, we <strong>combine the transformative powers of AI and cryptocurrency
-      </strong> to address the unique challenges faced by AI startups. By integrating
+      At Bitlauncher, we{' '}
+      <strong>
+        combine the transformative powers of AI and cryptocurrency
+      </strong>{' '}
+      to address the unique challenges faced by AI startups. By integrating
       tokenization and decentralized autonomous organizations (DAOs), we create
       a seamless synergy that enables these startups to overcome funding
       barriers, accelerate their growth, and harness global resources.
@@ -43,8 +46,9 @@ const content: AboutBitlauncherPageContent = {
   ),
   paragraph3: (
     <>
-      Our platform is built on a foundation of <strong>transparency, inclusivity, 
-      and community-driven progress.</strong> We foster a collaborative environment where developers, contributors, and
+      Our platform is built on a foundation of{' '}
+      <strong>transparency, inclusivity, and community-driven progress.</strong>{' '}
+      We foster a collaborative environment where developers, contributors, and
       AI enthusiasts can come together to share resources, exchange ideas, and
       shape the future of technology.
     </>
