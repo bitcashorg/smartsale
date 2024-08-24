@@ -85,6 +85,7 @@ const categoryMap: Record<string, string> = {
   ai: 'allBlogAis',
   news: 'allBlogNews',
   bitcash: 'allBlogBitcashes',
+  bitlauncher: 'allBlogBitlaunchers',
   'ai-research': 'allResearchAis',
 }
 

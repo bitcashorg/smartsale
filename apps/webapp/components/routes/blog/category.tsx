@@ -95,6 +95,10 @@ export function CategoryComponent({ params, sections }: BlogCategoryPageProps) {
                     key={index}
                     lang={params.lang}
                     meta={true}
+                    className={cn(
+                      index === 3 ? 'md:hidden xl:block' : '',
+                      index === 4 ? 'lg:hidden 2xl:block' : '',
+                    )}
                   />
                 ))}
               </ul>

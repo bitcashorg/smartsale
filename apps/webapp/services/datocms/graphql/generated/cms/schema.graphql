@@ -359,6 +359,129 @@ type BlogBitcoinRecord implements RecordInterface {
   topics: JsonField
 }
 
+input BlogBitlauncherModelFilter {
+  _createdAt: CreatedAtFilter
+  id: ItemIdFilter
+  _firstPublishedAt: PublishedAtFilter
+  _publicationScheduledAt: PublishedAtFilter
+  _unpublishingScheduledAt: PublishedAtFilter
+  _publishedAt: PublishedAtFilter
+  _status: StatusFilter
+  _updatedAt: UpdatedAtFilter
+  _isValid: BooleanFilter
+  authorName: StringFilter
+  authorPicture: FileFilter
+  description: StringFilter
+  seo: SeoFilter
+  slug: SlugFilter
+  thumbnail: FileFilter
+  title: StringFilter
+  topics: JsonFilter
+  OR: [BlogBitlauncherModelFilter]
+  AND: [BlogBitlauncherModelFilter]
+}
+
+enum BlogBitlauncherModelOrderBy {
+  _createdAt_ASC
+  _createdAt_DESC
+  id_ASC
+  id_DESC
+  _firstPublishedAt_ASC
+  _firstPublishedAt_DESC
+  _publicationScheduledAt_ASC
+  _publicationScheduledAt_DESC
+  _unpublishingScheduledAt_ASC
+  _unpublishingScheduledAt_DESC
+  _publishedAt_ASC
+  _publishedAt_DESC
+  _status_ASC
+  _status_DESC
+  _updatedAt_ASC
+  _updatedAt_DESC
+  _isValid_ASC
+  _isValid_DESC
+  authorName_ASC
+  authorName_DESC
+  description_ASC
+  description_DESC
+  title_ASC
+  title_DESC
+}
+
+"""Record of type Bitlauncher Blog (blog_bitlauncher)"""
+type BlogBitlauncherRecord implements RecordInterface {
+  _allDescriptionLocales(
+    """
+    If you want to fallback to a default translation when a translation has not been found
+    """
+    fallbackLocales: [SiteLocale!]
+  ): [StringMultiLocaleField!]
+  _allSeoLocales(
+    """
+    If you want to fallback to a default translation when a translation has not been found
+    """
+    fallbackLocales: [SiteLocale!]
+  ): [SeoFieldMultiLocaleField!]
+  _allTitleLocales(
+    """
+    If you want to fallback to a default translation when a translation has not been found
+    """
+    fallbackLocales: [SiteLocale!]
+  ): [StringMultiLocaleField!]
+  _createdAt: DateTime!
+
+  """Editing URL"""
+  _editingUrl: String
+  _firstPublishedAt: DateTime
+  _isValid: BooleanType!
+  _modelApiKey: String!
+  _publicationScheduledAt: DateTime
+  _publishedAt: DateTime
+
+  """Generates SEO and Social card meta tags to be used in your frontend"""
+  _seoMetaTags(
+    """The locale to use to fetch the field's content"""
+    locale: SiteLocale
+  ): [Tag!]!
+  _status: ItemStatus!
+  _unpublishingScheduledAt: DateTime
+  _updatedAt: DateTime!
+  authorName: String
+  authorPicture: FileField
+  contentBlock: [ContentBlockRecord!]!
+  description(
+    """The locale to use to fetch the field's content"""
+    locale: SiteLocale
+
+    """
+    If you want to fallback to a default translation when a translation has not been found
+    """
+    fallbackLocales: [SiteLocale!]
+  ): String
+  id: ItemId!
+  seo(
+    """The locale to use to fetch the field's content"""
+    locale: SiteLocale
+
+    """
+    If you want to fallback to a default translation when a translation has not been found
+    """
+    fallbackLocales: [SiteLocale!]
+  ): SeoField
+  slug: String
+  thumbnail: FileField
+  title(
+    """The locale to use to fetch the field's content"""
+    locale: SiteLocale
+
+    """
+    If you want to fallback to a default translation when a translation has not been found
+    """
+    fallbackLocales: [SiteLocale!]
+  ): String
+  topics: JsonField
+}
+
 input BlogCryptoModelFilter {
   _createdAt: CreatedAtFilter
   id: ItemIdFilter
@@ -1219,13 +1342,49 @@ input ImgixParams {
   auto: [ImgixParamsAuto!]
 
   """
+  Background Removal Fallback
+  
+  Overrides default fallback behavior for bg-remove failures.
+  
+  [Open Imgix reference »](https://docs.imgix.com/apis/rendering/background/bg-remove)
+  """
+  bgRemoveFallback: BooleanType
+
+  """
   Background Removal
   
   Removes background from image.
   
-  [Open Imgix reference »](https://docs.imgix.com/apis/rendering/background-removal/bg-remove)
+  [Open Imgix reference »](https://docs.imgix.com/apis/rendering/background/bg-remove)
   """
   bgRemove: BooleanType
+
+  """
+  Background Removal Fallback
+  
+  Overrides default fallback behavior for bg-replace failures.
+  
+  [Open Imgix reference »](https://docs.imgix.com/apis/rendering/background/bg-replace)
+  """
+  bgReplaceFallback: BooleanType
+
+  """
+  Background Replacement Negative Prompt
+  
+  Provides a negative text suggestion for background replacement.
+  
+  [Open Imgix reference »](https://docs.imgix.com/apis/rendering/background/bg-replace-neg-prompt)
+  """
+  bgReplaceNegPrompt: String
+
+  """
+  Background Replacement
+  
+  Replaces background from image using a string based prompt.
+  
+  [Open Imgix reference »](https://docs.imgix.com/apis/rendering/background/bg-replace)
+  """
+  bgReplace: String
 
   """
   Background Color
@@ -1656,6 +1815,149 @@ input ImgixParams {
   fillColor: String
 
   """
+  Fill Generative Fallback
+  
+  Sets the fallback behavior for generative fill.
+  
+  Depends on: `fit=fill`, `fill=gen`
+  
+  [Open Imgix reference »](https://docs.imgix.com/apis/url/fill/fill-gen-fallback)
+  """
+  fillGenFallback: BooleanType
+
+  """
+  Fill Generative Negative Prompt
+  
+  Provides a negative text suggestion to the generative fill parameter. Used to reduce the probability of a subject, detail, or object appearing in generative output.
+  
+  Depends on: `fit=fill`, `fill=gen`
+  
+  [Open Imgix reference »](https://docs.imgix.com/apis/url/fill/fill-gen-neg-prompt)
+  """
+  fillGenNegPrompt: String
+
+  """
+  Fill Generative Position
+  
+  Sets the position of the Origin Image in relation to the generative fill.
+  
+  Depends on: `fit=fill`, `fill=gen`
+  
+  [Open Imgix reference »](https://docs.imgix.com/apis/url/fill/fill-gen-pos)
+  """
+  fillGenPos: [ImgixParamsFillGenPos!]
+
+  """
+  Fill Generative Prompt
+  
+  Provides a text suggestion to the generative fill parameter.
+  
+  Depends on: `fit=fill`, `fill=gen`
+  
+  [Open Imgix reference »](https://docs.imgix.com/apis/url/fill/fill-gen-prompt)
+  """
+  fillGenPrompt: String
+
+  """
+  Fill Generative Seed
+  
+  Sets the generative seed value. Used to generate similar outputs from different prompts.
+  
+  Depends on: `fit=fill`, `fill=gen`
+  
+  [Open Imgix reference »](https://docs.imgix.com/apis/url/fill/fill-gen-seed)
+  """
+  fillGenSeed: IntType
+
+  """
+  Fill Gradient Color Space
+  
+  Defines the color space as linear, sRGB, Oklab, HSL, or LCH for gradient color interpolation
+  
+  Depends on: `fit=fill`, `fill=gradient`
+  
+  [Open Imgix reference »](https://docs.imgix.com/apis/url/fill/fill-gradient-cs)
+  """
+  fillGradientCs: ImgixParamsFillGradientCs
+
+  """
+  Fill Gradient Linear Direction
+  
+  The fill-gradient-linear-direction specifies the gradient's direction, flowing towards the bottom, top, right, or left
+  
+  Depends on: `fit=fill`, `fill=gen`
+  
+  [Open Imgix reference »](https://docs.imgix.com/apis/url/fill/fill-gradient-linear-direction)
+  """
+  fillGradientLinearDirection: [ImgixParamsFillGradientLinearDirection!]
+
+  """
+  Fill Gradient Linear
+  
+  Blends a gradient between two colors, {color1} and {color2}, along a straight path
+  
+  Depends on: `fit=fill`, `fill=gradient`
+  
+  [Open Imgix reference »](https://docs.imgix.com/apis/url/fill/fill-gradient-linear)
+  """
+  fillGradientLinear: String
+
+  """
+  Fill Gradient Radial Radius
+  
+  Parameter defines the radial gradient's radius as pixels or a percentage (0.0-1.0) of the image's smallest dimension
+  
+  Depends on: `fit=fill`, `fill=gradient`
+  
+  [Open Imgix reference »](https://docs.imgix.com/apis/url/fill/fill-gradient-radial-radius)
+  """
+  fillGradientRadialRadius: String
+
+  """
+  Fill Gradient Radial X
+  
+  Specifies the location of the radial gradient's center along the x-axis, using either a pixel value or a floating point percentage (ranging from 0.0 to 1.0) of the image's width
+  
+  Depends on: `fit=fill`, `fill=gradient`
+  
+  [Open Imgix reference »](https://docs.imgix.com/apis/url/fill/fill-gradient-radial-x)
+  """
+  fillGradientRadialX: FloatType
+
+  """
+  Fill Gradient Radial Y
+  
+  Parameter sets the radial gradient's center on the y-axis, using pixels or a 0.0 to 1.0 percentage of the image's height
+  
+  Depends on: `fit=fill`, `fill=gradient`
+  
+  [Open Imgix reference »](https://docs.imgix.com/apis/url/fill/fill-gradient-radial-y)
+  """
+  fillGradientRadialY: FloatType
+
+  """
+  Fill Gradient Radial
+  
+  The fill-gradient-radial parameter creates a circular gradient transitioning from a central color (Color1) to an outer color (Color2)
+  
+  Depends on: `fit=fill`, `fill=gradient`
+  
+  [Open Imgix reference »](https://docs.imgix.com/apis/url/fill/fill-gradient-radial)
+  """
+  fillGradientRadial: String
+
+  """
+  Fill Gradient Type
+  
+  Specifies if a gradient is radial (circular) or linear (straight)
+  
+  Depends on: `fit=fill`, `fill=gradient`
+  
+  [Open Imgix reference »](https://docs.imgix.com/apis/url/fill/fill-gradient-type)
+  """
+  fillGradientType: ImgixParamsFillGradientType
+
+  """
   Fill Mode
   
   Determines how to fill in additional space created by the fit setting
@@ -1763,6 +2065,8 @@ input ImgixParams {
   """
   Animated Gif Quality
   
+  Specifies the quality of the animated gif. The higher the value, the better more compression is applied.
+  
   Depends on: `fm=gif`
   """
   gifQ: IntType
@@ -1843,6 +2147,13 @@ input ImgixParams {
   Determine if IPTC data should be passed for JPEG images.
   """
   iptc: ImgixParamsIptc
+
+  """
+  Jpg Progressive
+  
+  Specifies whether or not a jpg/jpeg uses progressive (true) or baseline (false)
+  """
+  jpgProgressive: BooleanType
 
   """
   Animation Loop Count
@@ -2273,6 +2584,13 @@ input ImgixParams {
   skip: IntType
 
   """
+  Sanitize Svg
+  
+  Specifies whether to sanitize an SVG.
+  """
+  svgSanitize: BooleanType
+
+  """
   Transparency
   
   Adds checkerboard behind images which support transparency.
@@ -2412,17 +2730,6 @@ input ImgixParams {
   txtLead: IntType
 
   """
-  Text Ligatures
-  
-  Controls the level of ligature substitution
-  
-  Depends on: `txt`
-  
-  [Open Imgix reference »](https://docs.imgix.com/apis/url/text/txt-lig)
-  """
-  txtLig: IntType
-
-  """
   Text Outline Color
   
   Specifies a text outline color.
@@ -2531,6 +2838,24 @@ input ImgixParams {
   txt: String
 
   """
+  Super Resolution Fallback
+  
+  Overrides default fallback behavior for super resolution failures
+  
+  [Open Imgix reference »](https://docs.imgix.com/apis/rendering/super-resolution/upscale-fallback)
+  """
+  upscaleFallback: BooleanType
+
+  """
+  Super Resolution
+  
+  Uses generative AI fill to upscale low resolution images.
+  
+  [Open Imgix reference »](https://docs.imgix.com/apis/rendering/super-resolution/upscale)
+  """
+  upscale: BooleanType
+
+  """
   Unsharp Mask
   
   Sharpens the source image using an unsharp mask.
@@ -2567,6 +2892,13 @@ input ImgixParams {
   [Open Imgix reference »](https://docs.imgix.com/apis/url/size/w)
   """
   w: FloatType
+
+  """
+  Bypasses any [DatoCMS Automatic Image Optimization](https://www.datocms.com/docs/cdn-settings/advanced-asset-settings) that might be set up for the project.
+  
+  Exercise caution when using this parameter, as it could significantly increase your bandwidth costs.
+  """
+  skipDefaultOptimizations: BooleanType
 }
 
 enum ImgixParamsAuto {
@@ -2651,6 +2983,38 @@ enum ImgixParamsCs {
 enum ImgixParamsFill {
   solid
   blur
+  gen
+  generative
+  gradient
+}
+
+enum ImgixParamsFillGenPos {
+  top
+  bottom
+  middle
+  left
+  right
+  center
+}
+
+enum ImgixParamsFillGradientCs {
+  linear
+  srgb
+  oklab
+  hsl
+  lch
+}
+
+enum ImgixParamsFillGradientLinearDirection {
+  top
+  bottom
+  left
+  right
+}
+
+enum ImgixParamsFillGradientType {
+  linear
+  radial
 }
 
 enum ImgixParamsFit {
@@ -3394,6 +3758,13 @@ type Query {
   ): CollectionMetadata!
 
   """Returns meta information regarding a record collection"""
+  _allBlogBitlaunchersMeta(
+    """The locale to use to fetch the field's content"""
+    locale: SiteLocale
+    filter: BlogBitlauncherModelFilter
+  ): CollectionMetadata!
+
+  """Returns meta information regarding a record collection"""
   _allBlogCryptosMeta(
     """The locale to use to fetch the field's content"""
     locale: SiteLocale
@@ -3509,6 +3880,25 @@ type Query {
     filter: BlogBitcoinModelFilter
     orderBy: [BlogBitcoinModelOrderBy] = [_updatedAt_DESC]
   ): [BlogBitcoinRecord!]!
+
+  """Returns a collection of records"""
+  allBlogBitlaunchers(
+    """The locale to use to fetch the field's content"""
+    locale: SiteLocale
+
+    """
+    If you want to fallback to a default translation when a translation has not been found
+    """
+    fallbackLocales: [SiteLocale!]
+
+    """Skip the first results"""
+    skip: IntType
+
+    """Limit the number of results"""
+    first: IntType = 20
+    filter: BlogBitlauncherModelFilter
+    orderBy: [BlogBitlauncherModelOrderBy] = [_updatedAt_DESC]
+  ): [BlogBitlauncherRecord!]!
 
   """Returns a collection of records"""
   allBlogCryptos(
@@ -3681,6 +4071,19 @@ type Query {
     filter: BlogBitcoinModelFilter
     orderBy: [BlogBitcoinModelOrderBy] = [_updatedAt_DESC]
   ): BlogBitcoinRecord
+
+  """Returns a specific record"""
+  blogBitlauncher(
+    """The locale to use to fetch the field's content"""
+    locale: SiteLocale
+
+    """
+    If you want to fallback to a default translation when a translation has not been found
+    """
+    fallbackLocales: [SiteLocale!]
+    filter: BlogBitlauncherModelFilter
+    orderBy: [BlogBitlauncherModelOrderBy] = [_updatedAt_DESC]
+  ): BlogBitlauncherRecord
 
   """Returns a specific record"""
   blogCrypto(
@@ -4022,6 +4425,9 @@ enum SiteLocale {
   zh
   id
   vi
+  ko
+  pt
+  fr
 }
 
 """Specifies how to filter Slug fields"""
@@ -4612,8 +5018,34 @@ input UploadUpdatedAtFilter {
 }
 
 type UploadVideoField {
+  alt(
+    """The locale to use to fetch the field's content"""
+    locale: SiteLocale
+
+    """
+    If you want to fallback to a default translation when a translation has not been found
+    """
+    fallbackLocales: [SiteLocale!]
+  ): String
+  blurUpThumb(
+    """
+    Controls the "punch" value (~contrast) of the blurhash decoding algorithm (defaults to 1.0)
+    """
+    punch: Float! = 1
+
+    """Maximum image dimension (defaults to 24px)"""
+    size: Int! = 24
+
+    """Image quality (defaults to 70%)"""
+    quality: Int! = 70
+
+    """Imgix transformations to apply to the image"""
+    imgixParams: ImgixParams
+  ): String
+  blurhash: String
   duration: Int
   framerate: Int
+  height: IntType!
   mp4Url(
     """Pick highest resolution available up to the specified argument"""
     res: VideoMp4Res
@@ -4624,12 +5056,23 @@ type UploadVideoField {
   muxAssetId: String!
   muxPlaybackId: String!
   streamingUrl: String!
+  thumbhash: String
   thumbnailUrl(
     """
     The file extension of the requested image format. Either png, jpg or gif
     """
     format: MuxThumbnailFormatType = jpg
   ): String!
+  title(
+    """The locale to use to fetch the field's content"""
+    locale: SiteLocale
+
+    """
+    If you want to fallback to a default translation when a translation has not been found
+    """
+    fallbackLocales: [SiteLocale!]
+  ): String
+  width: IntType!
 }
 
 """Specifies how to filter by width"""
