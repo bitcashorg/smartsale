@@ -14,28 +14,28 @@ import { Navigation } from './new-nav'
 
 export function Header({ lang, dict }: HeaderProps) {
   return (
-    <div className="sticky top-0 z-50 flex h-16 bg-background py-11">
-      <div className="container box-content flex flex-row items-center justify-between bg-inherit md:px-4">
-        <div className="flex h-full items-center lg:min-w-[100px]">
+    <div className="sticky top-0 z-50 bg-background md:mt-8">
+      <div className="container flex items-center justify-between h-16 mx-auto md:px-4">
+        {/* Left Section with Icon */}
+        <div className="flex items-center justify-start flex-1">
           <Link href={`/${lang}`}>
             <IconBitlauncher className="w-[152px]" />
           </Link>
         </div>
 
-        <div className="hidden md:flex md:gap-3 md:pl-4 lg:ml-[-1px] lg:gap-10">
+        {/* Center Section (Navigation Links) */}
+        <div className="justify-center hidden space-x-4 md:flex md:flex-1 lg:space-x-8">
           {/* // ? Development only */}
           {appConfig.features.newNavStruct ? (
             <Navigation lang={lang} />
           ) : (
-            // ? Production only until development of newNavStruct is complete (UI/UX + content upt)
             <NavLinks lang={lang} dict={dict} />
           )}
         </div>
 
-        {/* Desktop action buttons */}
-        <div className="flex justify-end lg:min-w-[300px] lg:gap-5">
+        {/* Right Section (Buttons/Language Selector) */}
+        <div className="flex items-center justify-end flex-1 gap-5">
           <div className="items-center hidden gap-5 lg:flex">
-            {/* <DiscordButton /> */}
             <Suspense fallback={<Button>Login</Button>}>
               <DynamicSessionButton />
             </Suspense>
