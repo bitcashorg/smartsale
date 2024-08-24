@@ -2,13 +2,8 @@ import * as fs from 'fs'
 import path from 'path'
 
 export function parseFile(filePath: string) {
-  try {
-    const fullPath = getFilePath(filePath)
-    return JSON.parse(fs.readFileSync(fullPath, 'utf8'))
-  } catch (error) {
-    console.error('Failed to parse file,\nERROR:', (error as Error).message)
-    return undefined
-  }
+  const fullPath = getFilePath(filePath)
+  return JSON.parse(fs.readFileSync(fullPath, 'utf8'))
 }
 
 export function getFilePath(filePath: string) {
