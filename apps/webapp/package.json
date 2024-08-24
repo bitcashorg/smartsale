@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "launchpad-webapp",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "scripts": {
     "dev": "rm -rf .next && next dev --turbo",
     "build": "next build",
@@ -14,6 +14,7 @@
     "type-check:watch": "tsc --noEmit -w",
     "translate": "bun run scripts/translate.ts",
     "translate:category": "bun run scripts/translate-category.ts",
+    "gen-cms": "bun run scripts/gen-cms.ts",
     "vercel:install": "npm i -g node-gyp; bun install"
   },
   "dependencies": {
