@@ -161,7 +161,7 @@ export async function getArticleSections(
       })
     })
   
-    if (fileContents?.sections && fileContents?.sections.length) {
+    if (fileContents?.sections?.length) {
       // Check file sections against new sections. If no section found on files, then we update the sections
       const fileSections = fileContents.sections
       const updatedSections = sections.map((section) => {
