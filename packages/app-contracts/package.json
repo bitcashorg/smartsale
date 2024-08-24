@@ -13,6 +13,7 @@
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "@types/bun": "latest"
   }
 }

@@ -24,6 +24,17 @@ export interface AlchemyActivity {
     rawValue: string
     decimals: number
   }
+  log: {
+    address: string
+    topics: string[]
+    data: string
+    blockNumber: string
+    transactionHash: string
+    transactionIndex: string
+    blockHash: string
+    logIndex: string
+    removed: boolean
+  }
 }
 
 export interface AlchemyActivityEvent {

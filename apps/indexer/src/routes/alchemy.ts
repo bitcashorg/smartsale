@@ -10,6 +10,7 @@ import { prodChains } from 'app-env'
 import type { Request, Response } from 'express'
 import { appConfig } from '~/config'
 import { logger } from '~/lib/logger'
+import {supportedTokens} from '@/Users/gaboesquivel/Code/smartsale/packages/tokens/src/index';
 
 // Mapping of chain IDs to Alchemy SDK Network types
 const chainIdToNetwork: Record<number, AlchemyNetwork> = {
@@ -50,6 +51,9 @@ export async function alchemyWebhook(req: Request, res: Response) {
   const isAddressActivity = evt.type === 'ADDRESS_ACTIVITY'
   const isValidNetwork = networks.includes(network)
 
+  // supportedTokens make sure the address is in the supportedTokens array
+
+
   if (!isAddressActivity || !isValidNetwork) {
     const errorMsg = !isAddressActivity
       ? `event type: ${evt.type}`
@@ -62,12 +66,18 @@ export async function alchemyWebhook(req: Request, res: Response) {
   for (const txn of activity) {
     const isValidAsset = txn.asset === 'USDC' || txn.asset === 'USDT'
     const isValidToAddress = txn.toAddress !== appConfig.presaleAddress
+    const isSupportedToken = supportedTokens.some(
+      (token) => txn.log.address === token.address
+    )
 
-    if (!isValidAsset || !isValidToAddress) {
-      const errorMsg = !isValidAsset
-        ? `asset: ${txn.asset}`
-        : `to address: ${txn.toAddress}`
-      logger.error(`Invalid transaction: ${errorMsg}`)
+    const validationErrors = [
+      !isValidAsset && `asset: ${txn.asset}`,
+      !isValidToAddress && `to address: ${txn.toAddress}`,
+      !isSupportedToken && `token: ${txn.log.address}`
+    ].filter(Boolean)
+
+    if (validationErrors.length) {
+      logger.error(`Invalid transaction: ${validationErrors.join(', ')}`)
       return res.status(401).send('Unauthorized')
     }
   }
