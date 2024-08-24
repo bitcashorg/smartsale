@@ -105,8 +105,14 @@ export function BlogPage({
           </div>
         </div>
 
-        <div className="relative flex md:flex-row flex-col items-start justify-start gap-5 mt-5 order-4" id="scroller-wrapper">
-          <div className="flex flex-col w-full md:max-w-[calc(100%-250px)] md:order-1 order-2" id="extrat-blog-content">
+        <div
+          className="relative flex md:flex-row flex-col items-start justify-start gap-5 mt-5 order-4"
+          id="scroller-wrapper"
+        >
+          <div
+            className="flex flex-col w-full md:max-w-[calc(100%-250px)] md:order-1 order-2"
+            id="extrat-blog-content"
+          >
             {blogContent?.contentBlock?.map(
               ({ mainContent, topImages }, ind: number) => {
                 // if (ind >= 2) return null

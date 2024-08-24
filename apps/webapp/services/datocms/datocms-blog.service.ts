@@ -1,9 +1,9 @@
+import * as fs from 'fs'
+import path from 'path'
 import type { Lang } from '@/dictionaries/locales'
 import { getFilePath, parseFile } from '@/lib/file'
 import { getErrorMessage } from 'app-lib'
-import * as fs from 'fs'
 import { uniq } from 'lodash'
-import path from 'path'
 import {
   type BlogArticleRecord,
   getBlogCategory,
@@ -68,7 +68,7 @@ export async function getArticleSections(
   const dirPath = `/dictionaries/${lang}/blog/`
   const fileName = `blog-index.json`
   const filePath = path.resolve(dirPath, fileName)
-  
+
   let fileContents: { sections: ArticlesSection[] } | undefined
   // return cached translations
   try {
@@ -106,7 +106,7 @@ export async function getArticleSections(
       aiResearchData,
       bitlauncherData,
     } = await getBlogData()
-  
+
     const sections: ArticlesSection[] = [
       {
         name: 'AI',
@@ -160,12 +160,16 @@ export async function getArticleSections(
         article.contentBlock = []
       })
     })
-  
+
     if (fileContents?.sections?.length) {
       // Check file sections against new sections. If no section found on files, then we update the sections
       const fileSections = fileContents.sections
       const updatedSections = sections.map((section) => {
-        const fileSection = fileSections.find((fs) => fs.name === section.name && fs.articles[0]._publishedAt === section.articles[0]._publishedAt)
+        const fileSection = fileSections.find(
+          (fs) =>
+            fs.name === section.name &&
+            fs.articles[0]._publishedAt === section.articles[0]._publishedAt,
+        )
         if (fileSection) {
           return fileSection
         }
@@ -175,8 +179,11 @@ export async function getArticleSections(
     }
 
     fs.mkdirSync(getFilePath(dirPath), { recursive: true })
-    fs.writeFileSync(getFilePath(filePath), JSON.stringify(fileContents, null, 2))
-  
+    fs.writeFileSync(
+      getFilePath(filePath),
+      JSON.stringify(fileContents, null, 2),
+    )
+
     return fileContents?.sections as ArticlesSection[]
   } catch (error) {
     console.log('❌❌❌❌ error', error)
@@ -296,7 +303,11 @@ export async function getBlogCategoryLandingData(lang: Lang, category: string) {
     // Check file sections against new sections. If no section found on files, then we update the sections
     const fileSections = fileContents.sections
     const updatedSections = sections.map((section) => {
-      const fileSection = fileSections.find((fs) => fs.name === section.name && fs.articles[0]._publishedAt === section.articles[0]._publishedAt)
+      const fileSection = fileSections.find(
+        (fs) =>
+          fs.name === section.name &&
+          fs.articles[0]._publishedAt === section.articles[0]._publishedAt,
+      )
       if (fileSection) {
         return fileSection
       }
@@ -305,7 +316,10 @@ export async function getBlogCategoryLandingData(lang: Lang, category: string) {
     fileContents.sections = updatedSections
   }
 
-  const result = { sections: fileContents?.sections as ArticlesSection[], pageSeo }
+  const result = {
+    sections: fileContents?.sections as ArticlesSection[],
+    pageSeo,
+  }
 
   fs.mkdirSync(getFilePath(dirPath), { recursive: true })
   fs.writeFileSync(getFilePath(filePath), JSON.stringify(result, null, 2))
@@ -414,7 +428,7 @@ export async function getBlogArticleData(
       return fileArticle
     }
   }
-  
+
   // Rewrite the file with the new data
   fs.mkdirSync(getFilePath(dirPath), { recursive: true })
   fs.writeFileSync(getFilePath(filePath), JSON.stringify(result, null, 2))

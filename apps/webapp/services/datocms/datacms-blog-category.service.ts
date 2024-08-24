@@ -127,7 +127,7 @@ export async function getBlogCategory(
   } catch (err) {
     console.log(
       'datocms-blog-category.service::getBlogCategory::[ERROR]:: ' + category,
-      err
+      err,
     )
 
     error = (err as Error).message
