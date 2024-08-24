@@ -19,9 +19,7 @@ export function LandingPage({ content }: LandingPageProps) {
               {content.sections.map((section) => (
                 <div className="space-y-2">
                   <h3 className="text-lg font-bold">{section.subHeader}</h3>
-                  <p className="text-infoForeground">
-                    {section.text}
-                  </p>
+                  <p className="text-infoForeground">{section.text}</p>
                 </div>
               ))}
             </div>

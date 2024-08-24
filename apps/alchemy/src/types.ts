@@ -22,7 +22,19 @@ export interface AlchemyActivity {
   category: string
   rawContract: {
     rawValue: string
+    address: string
     decimals: number
+  }
+  log?: {
+    address: string
+    topics: string[]
+    data: string
+    blockNumber: string
+    transactionHash: string
+    transactionIndex: string
+    blockHash: string
+    logIndex: string
+    removed: boolean
   }
 }
 

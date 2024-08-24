@@ -2,9 +2,7 @@ export function Banner() {
   return (
     <section className="w-full gap-20">
       <div className="inline-flex flex-col items-center justify-start gap-[37px]">
-        <h2 className="text-center heading2">
-          {content.title}
-        </h2>
+        <h2 className="text-center heading2">{content.title}</h2>
         <div className="h-[2.37px] w-[118.61px] bg-[#ff51ed]"></div>
         <div className="narrow-container">
           <p className="paragraph text-center text-[15px] font-normal">
@@ -44,5 +42,5 @@ const content = {
       the way for a new era of technological advancement and community
       empowerment in the AI and crypto space.
     </>
-  )
+  ),
 }

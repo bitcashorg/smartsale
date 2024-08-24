@@ -5,6 +5,7 @@ import { MobileNavProvider } from '@/hooks/use-mobile-navigation'
 import { SessionProvider } from '@/hooks/use-session'
 import { UseSigningRequestProvider } from '@/hooks/use-signing-request'
 import { appConfig } from '@/lib/config'
+import multibase, { MultibaseProvider } from '@multibase/js'
 import {
   RainbowKitProvider,
   type Theme,
@@ -43,7 +44,6 @@ import {
   sepolia,
   zkSync,
 } from 'wagmi/chains'
-import multibase, { MultibaseProvider } from "@multibase/js"
 
 const queryClient = new QueryClient()
 

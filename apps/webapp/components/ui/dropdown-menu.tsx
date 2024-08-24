@@ -172,7 +172,7 @@ const DropdownMenuShortcut = ({
     <span
       className={cn(
         'ml-auto text-center text-xs tracking-widest text-infoForeground',
-        className
+        className,
       )}
       {...props}
     />
@@ -194,6 +194,5 @@ export {
   DropdownMenuSub,
   DropdownMenuSubContent,
   DropdownMenuSubTrigger,
-  DropdownMenuTrigger
+  DropdownMenuTrigger,
 }
-

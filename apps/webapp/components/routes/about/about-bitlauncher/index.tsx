@@ -18,7 +18,10 @@ export async function AboutBitlauncherPageLanding({
       <section className="narrow-container">
         <div className="grid items-center justify-between gap-4 px-0 pb-[80px] md:px-6 lg:grid-cols-2">
           <div className="space-y-4">
-            <h2 className="sectionsHeading">  <Balancer>{content.title}</Balancer></h2>
+            <h2 className="sectionsHeading">
+              {' '}
+              <Balancer>{content.title}</Balancer>
+            </h2>
             <section className="text-base font-normal leading-normal text-infoForeground">
               {content.paragraph}
               <br />

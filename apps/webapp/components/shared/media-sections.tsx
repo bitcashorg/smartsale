@@ -1,7 +1,7 @@
 import { LucideIcons } from '@/components/routes/blog/lucide-icons'
 import { cn } from '@/lib/utils'
-import { YouTubePlaylistItem } from '@/services/youtube/index'
-import { LangProp } from '@/types/routing.type'
+import type { YouTubePlaylistItem } from '@/services/youtube/index'
+import type { LangProp } from '@/types/routing.type'
 import Link from 'next/link'
 import { MediaCard } from './media-card'
 
