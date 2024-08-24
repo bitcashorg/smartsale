@@ -39,11 +39,10 @@ logger.info(`Supported networks: ${networks.join(', ')}`)
  */
 export async function alchemyWebhook(req: Request, res: Response) {
   const evt = req.body as AlchemyWebhookEvent
-  logger.info(`Alchemy webhook received: ${evt.id}`)
-  logger.info(JSON.stringify(evt))
+  logger.info(`Alchemy webhook received: ${JSON.stringify(evt)}`)
+
   // TODO: restore alchemy signature validation
-  // if (!validateAlchemySignature(req)) return res.status(401).send('Unauthorized')
-  // logger.info('Validated Alchemy webhook 😀')
+  if (!validateAlchemySignature(req)) return res.status(401).send('Unauthorized')
 
   const { network, activity } = evt.event as AlchemyActivityEvent
 
@@ -51,8 +50,7 @@ export async function alchemyWebhook(req: Request, res: Response) {
   const isAddressActivity = evt.type === 'ADDRESS_ACTIVITY'
   const isValidNetwork = networks.includes(network)
 
-  // supportedTokens make sure the address is in the supportedTokens array
-
+  // supportedTokens make sure the address is in the supportedTokens arra
 
   if (!isAddressActivity || !isValidNetwork) {
     const errorMsg = !isAddressActivity
@@ -66,14 +64,16 @@ export async function alchemyWebhook(req: Request, res: Response) {
   for (const txn of activity) {
     const isValidAsset = txn.asset === 'USDC' || txn.asset === 'USDT'
     const isValidToAddress = txn.toAddress !== appConfig.presaleAddress
+
     const isSupportedToken = supportedTokens.some(
-      (token) => txn.log.address === token.address
+      (token) => txn.rawContract.address === token.address
     )
 
     const validationErrors = [
       !isValidAsset && `asset: ${txn.asset}`,
       !isValidToAddress && `to address: ${txn.toAddress}`,
-      !isSupportedToken && `token: ${txn.log.address}`
+      !isSupportedToken && `token: ${txn.rawContract.address}`,
+      !txn.log && 'missing transaction log'
     ].filter(Boolean)
 
     if (validationErrors.length) {

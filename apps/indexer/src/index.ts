@@ -1,6 +1,6 @@
 import { getErrorMessage } from 'app-lib'
 import { logger } from './lib/logger'
-import { startExpress } from './routes/index'
+import { startExpress } from './api/index'
 
 async function main() {
   logger.info(`Launchpad indexer starting up ...`)

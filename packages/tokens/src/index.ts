@@ -12,7 +12,7 @@ export const supportedTokens = [
     chainId: 137
   },
   {
-    address: '0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174', // USDC on Polygon
+    address: '0x3c499c542cef5e3811e1192ce70d8cc03d5c3359', // '0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174', // USDC on Polygon
     chainId: 137
   },
   {

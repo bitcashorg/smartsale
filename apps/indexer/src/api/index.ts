@@ -61,7 +61,7 @@ export function startExpress() {
 
   // Error handling middleware
   app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
-    logger.error(err, 'Unhandled error')
+    logger.error({ err, req: { method: req.method, url: req.url } }, 'Unhandled error')
     res.status(500).json({ error: 'Internal Server Error' })
   })
 
