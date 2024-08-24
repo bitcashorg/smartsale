@@ -404,7 +404,7 @@ export async function getBlogArticleData(
   const result: BlogArticleData = { relatedBlogs, blogContent, topics }
   const fullPath = getFilePath(filePath)
 
-  if (fileContents && fileContents.blogContent) {
+  if (fileContents?.blogContent) {
     // Check file article against new article. If no updated found on files, then we update the article
     const fileArticle = fileContents
     if (
