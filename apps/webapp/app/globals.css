@@ -197,7 +197,7 @@ input[type="number"] {
 }
 
 .narrow-container {
-  @apply container md:px-20;
+  @apply container md:px-10 xl:px-20;
 }
 
 .content-container {
