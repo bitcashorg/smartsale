@@ -59,3 +59,27 @@ export async function upsertTransfers(data: TablesInsert<'transfer'>) {
 
   return data
 }
+
+export async function isAddressRegisteredForPresale(
+  address: string,
+  presaleId: number
+): Promise<boolean> {
+  const { data, error } = await supabase
+    .from('presale')
+    .select('id')
+    .eq('address', address)
+    .eq('id', presaleId)
+    .single()
+
+  if (error) {
+    if (error.code === 'PGRST116') {
+      // No matching row found, address is not registered
+      return false
+    }
+    console.error('Error checking presale registration:', error)
+    throw error
+  }
+
+  return !!data
+}
+
