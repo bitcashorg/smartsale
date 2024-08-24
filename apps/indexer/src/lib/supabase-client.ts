@@ -46,23 +46,23 @@ export async function upsertOrder(data: TablesInsert<'order'>) {
   return data
 }
 
-export async function upsertTransfers(data: TablesInsert<'transfer'>) {
-  console.log('upsert transfers', data)
-  const { data: result, error } = await supabase
-    .from('transfer')
-    .upsert(data, { onConflict: 'trx_hash' })
-    .select()
+// export async function upsertTransfers(data: TablesInsert<'transfer'>) {
+//   console.log('upsert transfers', data)
+//   const { data: result, error } = await supabase
+//     .from('transfer')
+//     .upsert(data, { onConflict: 'trx_hash' })
+//     .select()
 
-  if (error) console.error('Error:', error)
+//   if (error) console.error('Error:', error)
 
-  console.log('Result:', result)
+//   console.log('Result:', result)
 
-  return data
-}
+//   return data
+// }
 
 export async function isAddressRegisteredForPresale(
   address: string,
-  presaleId: number
+  presaleId: number,
 ): Promise<boolean> {
   const { data, error } = await supabase
     .from('presale')
@@ -82,4 +82,3 @@ export async function isAddressRegisteredForPresale(
 
   return !!data
 }
-

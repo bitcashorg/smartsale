@@ -1,9 +1,9 @@
+import * as fs from 'fs'
+import path from 'path'
 import type { Lang } from '@/dictionaries/locales'
 import { getFilePath, parseFile } from '@/lib/file'
 import { getErrorMessage } from 'app-lib'
-import * as fs from 'fs'
 import { uniq } from 'lodash'
-import path from 'path'
 import {
   type BlogArticleRecord,
   getBlogCategory,
@@ -181,7 +181,10 @@ export async function getArticleSections(
   // ? Or moving this to actions.ts
   try {
     fs.mkdirSync(getFilePath(dirPath), { recursive: true })
-    fs.writeFileSync(getFilePath(filePath), JSON.stringify(fileContents, null, 2))
+    fs.writeFileSync(
+      getFilePath(filePath),
+      JSON.stringify(fileContents, null, 2),
+    )
   } catch (error) {
     console.error('❌❌❌❌ Failed to update cache on file.', error)
   }

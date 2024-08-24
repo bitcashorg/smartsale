@@ -11,7 +11,7 @@ import { prodChains } from 'app-env'
 import type { Request, Response } from 'express'
 import { appConfig } from '~/config'
 import { logger } from '~/lib/logger'
-import {isAddressRegisteredForPresale} from '~/src/lib/supabase-client';
+// import {isAddressRegisteredForPresale} from '~/src/lib/supabase-client';
 
 // Mapping of chain IDs to Alchemy SDK Network types
 const chainIdToNetwork: Record<number, AlchemyNetwork> = {

@@ -9,6 +9,24 @@ export type Json =
 export type Database = {
   public: {
     Tables: {
+      account: {
+        Row: {
+          account: string
+          created_at: string
+          short_link: string | null
+        }
+        Insert: {
+          account: string
+          created_at?: string
+          short_link?: string | null
+        }
+        Update: {
+          account?: string
+          created_at?: string
+          short_link?: string | null
+        }
+        Relationships: []
+      }
       auction: {
         Row: {
           address_auctioning_token: string | null
@@ -32,6 +50,7 @@ export type Database = {
           min_funding_threshold: number | null
           minimum_bidding_amount_per_order: number | null
           order_cancellation_end_date: string | null
+          project_id: number | null
           starting_time_stamp: string | null
           symbol_auctioning_token: string | null
           symbol_bidding_token: string | null
@@ -59,6 +78,7 @@ export type Database = {
           min_funding_threshold?: number | null
           minimum_bidding_amount_per_order?: number | null
           order_cancellation_end_date?: string | null
+          project_id?: number | null
           starting_time_stamp?: string | null
           symbol_auctioning_token?: string | null
           symbol_bidding_token?: string | null
@@ -86,12 +106,21 @@ export type Database = {
           min_funding_threshold?: number | null
           minimum_bidding_amount_per_order?: number | null
           order_cancellation_end_date?: string | null
+          project_id?: number | null
           starting_time_stamp?: string | null
           symbol_auctioning_token?: string | null
           symbol_bidding_token?: string | null
           usd_amount_traded?: number | null
         }
-        Relationships: []
+        Relationships: [
+          {
+            foreignKeyName: 'auction_project_id_fkey'
+            columns: ['project_id']
+            isOneToOne: false
+            referencedRelation: 'project'
+            referencedColumns: ['id']
+          },
+        ]
       }
       esr: {
         Row: {
@@ -173,27 +202,100 @@ export type Database = {
           account: string | null
           address: string | null
           created_at: string
+          end_timestamptz: string | null
+          fundraising_goal: number | null
           id: number
+          max_allocation: number | null
           project_id: number | null
-          signature: string | null
+          start_timestamptz: string | null
         }
         Insert: {
           account?: string | null
           address?: string | null
           created_at?: string
+          end_timestamptz?: string | null
+          fundraising_goal?: number | null
           id?: number
+          max_allocation?: number | null
           project_id?: number | null
-          signature?: string | null
+          start_timestamptz?: string | null
         }
         Update: {
           account?: string | null
           address?: string | null
           created_at?: string
+          end_timestamptz?: string | null
+          fundraising_goal?: number | null
           id?: number
+          max_allocation?: number | null
           project_id?: number | null
-          signature?: string | null
+          start_timestamptz?: string | null
         }
-        Relationships: []
+        Relationships: [
+          {
+            foreignKeyName: 'presale_project_id_fkey'
+            columns: ['project_id']
+            isOneToOne: false
+            referencedRelation: 'project'
+            referencedColumns: ['id']
+          },
+        ]
+      }
+      presale_deposit: {
+        Row: {
+          amount: number | null
+          created_at: string
+          deposit_hash: string | null
+          id: string
+          issuance_hash: string | null
+          presale_id: number | null
+        }
+        Insert: {
+          amount?: number | null
+          created_at?: string
+          deposit_hash?: string | null
+          id?: string
+          issuance_hash?: string | null
+          presale_id?: number | null
+        }
+        Update: {
+          amount?: number | null
+          created_at?: string
+          deposit_hash?: string | null
+          id?: string
+          issuance_hash?: string | null
+          presale_id?: number | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: 'presale_deposit_deposit_hash_fkey'
+            columns: ['deposit_hash']
+            isOneToOne: false
+            referencedRelation: 'transaction'
+            referencedColumns: ['hash']
+          },
+          {
+            foreignKeyName: 'presale_deposit_issuance_hash_fkey'
+            columns: ['issuance_hash']
+            isOneToOne: false
+            referencedRelation: 'transaction'
+            referencedColumns: ['hash']
+          },
+          {
+            foreignKeyName: 'presale_deposit_presale_id_fkey'
+            columns: ['presale_id']
+            isOneToOne: false
+            referencedRelation: 'presale'
+            referencedColumns: ['id']
+          },
+          {
+            foreignKeyName: 'presale_deposits_presale_id_fkey'
+            columns: ['presale_id']
+            isOneToOne: false
+            referencedRelation: 'presale'
+            referencedColumns: ['id']
+          },
+        ]
       }
       project: {
         Row: {
@@ -240,12 +342,37 @@ export type Database = {
         }
         Relationships: []
       }
+      transaction: {
+        Row: {
+          chain_id: number | null
+          chain_type: Database['public']['Enums']['chain_type'] | null
+          created_at: string
+          final: boolean | null
+          hash: string
+          trx_type: Database['public']['Enums']['trx_type'] | null
+        }
+        Insert: {
+          chain_id?: number | null
+          chain_type?: Database['public']['Enums']['chain_type'] | null
+          created_at?: string
+          final?: boolean | null
+          hash: string
+          trx_type?: Database['public']['Enums']['trx_type'] | null
+        }
+        Update: {
+          chain_id?: number | null
+          chain_type?: Database['public']['Enums']['chain_type'] | null
+          created_at?: string
+          final?: boolean | null
+          hash?: string
+          trx_type?: Database['public']['Enums']['trx_type'] | null
+        }
+        Relationships: []
+      }
       transfer: {
         Row: {
           amount: number | null
           bl_presale_trx: string | null
-          chain_id: number | null
-          created_at: string
           from: string | null
           to: string | null
           token: string | null
@@ -256,8 +383,6 @@ export type Database = {
         Insert: {
           amount?: number | null
           bl_presale_trx?: string | null
-          chain_id?: number | null
-          created_at?: string
           from?: string | null
           to?: string | null
           token?: string | null
@@ -268,8 +393,6 @@ export type Database = {
         Update: {
           amount?: number | null
           bl_presale_trx?: string | null
-          chain_id?: number | null
-          created_at?: string
           from?: string | null
           to?: string | null
           token?: string | null
@@ -279,50 +402,37 @@ export type Database = {
         }
         Relationships: []
       }
-      user: {
-        Row: {
-          account: string
-          address: string[]
-          created_at: string
-          id: number
-          short_link: string | null
-        }
-        Insert: {
-          account: string
-          address: string[]
-          created_at?: string
-          id?: number
-          short_link?: string | null
-        }
-        Update: {
-          account?: string
-          address?: string[]
-          created_at?: string
-          id?: number
-          short_link?: string | null
-        }
-        Relationships: []
-      }
       whitelist: {
         Row: {
           account: string
           address: string
           created_at: string
           project_id: number
+          signed_message: string | null
         }
         Insert: {
           account: string
           address: string
           created_at?: string
           project_id: number
+          signed_message?: string | null
         }
         Update: {
           account?: string
           address?: string
           created_at?: string
           project_id?: number
+          signed_message?: string | null
         }
-        Relationships: []
+        Relationships: [
+          {
+            foreignKeyName: 'whitelist_project_id_fkey'
+            columns: ['project_id']
+            isOneToOne: false
+            referencedRelation: 'project'
+            referencedColumns: ['id']
+          },
+        ]
       }
     }
     Views: {
@@ -332,7 +442,8 @@ export type Database = {
       [_ in never]: never
     }
     Enums: {
-      [_ in never]: never
+      chain_type: 'evm' | 'eos' | 'solana' | 'cosmos'
+      trx_type: 'presale_deposit' | 'usdcred_deposit' | 'usdcred_withdrawal'
     }
     CompositeTypes: {
       [_ in never]: never

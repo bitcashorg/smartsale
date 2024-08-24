@@ -14,6 +14,26 @@ export const jsonSchema: z.ZodSchema<Json> = z.lazy(() =>
     .nullable(),
 )
 
+export const accountRowSchema = z.object({
+  account: z.string(),
+  created_at: z.string(),
+  short_link: z.string().nullable(),
+})
+
+export const accountInsertSchema = z.object({
+  account: z.string(),
+  created_at: z.string().optional(),
+  short_link: z.string().optional().nullable(),
+})
+
+export const accountUpdateSchema = z.object({
+  account: z.string().optional(),
+  created_at: z.string().optional(),
+  short_link: z.string().optional().nullable(),
+})
+
+export const accountRelationshipsSchema = z.tuple([])
+
 export const auctionRowSchema = z.object({
   address_auctioning_token: z.string().nullable(),
   address_bidding_token: z.string().nullable(),
@@ -36,6 +56,7 @@ export const auctionRowSchema = z.object({
   min_funding_threshold: z.number().nullable(),
   minimum_bidding_amount_per_order: z.number().nullable(),
   order_cancellation_end_date: z.string().nullable(),
+  project_id: z.number().nullable(),
   starting_time_stamp: z.string().nullable(),
   symbol_auctioning_token: z.string().nullable(),
   symbol_bidding_token: z.string().nullable(),
@@ -64,6 +85,7 @@ export const auctionInsertSchema = z.object({
   min_funding_threshold: z.number().optional().nullable(),
   minimum_bidding_amount_per_order: z.number().optional().nullable(),
   order_cancellation_end_date: z.string().optional().nullable(),
+  project_id: z.number().optional().nullable(),
   starting_time_stamp: z.string().optional().nullable(),
   symbol_auctioning_token: z.string().optional().nullable(),
   symbol_bidding_token: z.string().optional().nullable(),
@@ -92,13 +114,22 @@ export const auctionUpdateSchema = z.object({
   min_funding_threshold: z.number().optional().nullable(),
   minimum_bidding_amount_per_order: z.number().optional().nullable(),
   order_cancellation_end_date: z.string().optional().nullable(),
+  project_id: z.number().optional().nullable(),
   starting_time_stamp: z.string().optional().nullable(),
   symbol_auctioning_token: z.string().optional().nullable(),
   symbol_bidding_token: z.string().optional().nullable(),
   usd_amount_traded: z.number().optional().nullable(),
 })
 
-export const auctionRelationshipsSchema = z.tuple([])
+export const auctionRelationshipsSchema = z.tuple([
+  z.object({
+    foreignKeyName: z.literal('auction_project_id_fkey'),
+    columns: z.tuple([z.literal('project_id')]),
+    isOneToOne: z.literal(false),
+    referencedRelation: z.literal('project'),
+    referencedColumns: z.tuple([z.literal('id')]),
+  }),
+])
 
 export const esrRowSchema = z.object({
   account: z.string().nullable(),
@@ -185,30 +216,105 @@ export const presaleRowSchema = z.object({
   account: z.string().nullable(),
   address: z.string().nullable(),
   created_at: z.string(),
+  end_timestamptz: z.string().nullable(),
+  fundraising_goal: z.number().nullable(),
   id: z.number(),
+  max_allocation: z.number().nullable(),
   project_id: z.number().nullable(),
-  signature: z.string().nullable(),
+  start_timestamptz: z.string().nullable(),
 })
 
 export const presaleInsertSchema = z.object({
   account: z.string().optional().nullable(),
   address: z.string().optional().nullable(),
   created_at: z.string().optional(),
+  end_timestamptz: z.string().optional().nullable(),
+  fundraising_goal: z.number().optional().nullable(),
   id: z.number().optional(),
+  max_allocation: z.number().optional().nullable(),
   project_id: z.number().optional().nullable(),
-  signature: z.string().optional().nullable(),
+  start_timestamptz: z.string().optional().nullable(),
 })
 
 export const presaleUpdateSchema = z.object({
   account: z.string().optional().nullable(),
   address: z.string().optional().nullable(),
   created_at: z.string().optional(),
+  end_timestamptz: z.string().optional().nullable(),
+  fundraising_goal: z.number().optional().nullable(),
   id: z.number().optional(),
+  max_allocation: z.number().optional().nullable(),
   project_id: z.number().optional().nullable(),
-  signature: z.string().optional().nullable(),
+  start_timestamptz: z.string().optional().nullable(),
 })
 
-export const presaleRelationshipsSchema = z.tuple([])
+export const presaleRelationshipsSchema = z.tuple([
+  z.object({
+    foreignKeyName: z.literal('presale_project_id_fkey'),
+    columns: z.tuple([z.literal('project_id')]),
+    isOneToOne: z.literal(false),
+    referencedRelation: z.literal('project'),
+    referencedColumns: z.tuple([z.literal('id')]),
+  }),
+])
+
+export const presaleDepositRowSchema = z.object({
+  amount: z.number().nullable(),
+  created_at: z.string(),
+  deposit_hash: z.string().nullable(),
+  id: z.string(),
+  issuance_hash: z.string().nullable(),
+  presale_id: z.number().nullable(),
+})
+
+export const presaleDepositInsertSchema = z.object({
+  amount: z.number().optional().nullable(),
+  created_at: z.string().optional(),
+  deposit_hash: z.string().optional().nullable(),
+  id: z.string().optional(),
+  issuance_hash: z.string().optional().nullable(),
+  presale_id: z.number().optional().nullable(),
+})
+
+export const presaleDepositUpdateSchema = z.object({
+  amount: z.number().optional().nullable(),
+  created_at: z.string().optional(),
+  deposit_hash: z.string().optional().nullable(),
+  id: z.string().optional(),
+  issuance_hash: z.string().optional().nullable(),
+  presale_id: z.number().optional().nullable(),
+})
+
+export const presaleDepositRelationshipsSchema = z.tuple([
+  z.object({
+    foreignKeyName: z.literal('presale_deposit_deposit_hash_fkey'),
+    columns: z.tuple([z.literal('deposit_hash')]),
+    isOneToOne: z.literal(false),
+    referencedRelation: z.literal('transaction'),
+    referencedColumns: z.tuple([z.literal('hash')]),
+  }),
+  z.object({
+    foreignKeyName: z.literal('presale_deposit_issuance_hash_fkey'),
+    columns: z.tuple([z.literal('issuance_hash')]),
+    isOneToOne: z.literal(false),
+    referencedRelation: z.literal('transaction'),
+    referencedColumns: z.tuple([z.literal('hash')]),
+  }),
+  z.object({
+    foreignKeyName: z.literal('presale_deposit_presale_id_fkey'),
+    columns: z.tuple([z.literal('presale_id')]),
+    isOneToOne: z.literal(false),
+    referencedRelation: z.literal('presale'),
+    referencedColumns: z.tuple([z.literal('id')]),
+  }),
+  z.object({
+    foreignKeyName: z.literal('presale_deposits_presale_id_fkey'),
+    columns: z.tuple([z.literal('presale_id')]),
+    isOneToOne: z.literal(false),
+    referencedRelation: z.literal('presale'),
+    referencedColumns: z.tuple([z.literal('id')]),
+  }),
+])
 
 export const projectRowSchema = z.object({
   created_at: z.string(),
@@ -259,11 +365,42 @@ export const sessionUpdateSchema = z.object({
 
 export const sessionRelationshipsSchema = z.tuple([])
 
+export const chainTypeSchema = z.union([
+  z.literal('evm'),
+  z.literal('eos'),
+  z.literal('solana'),
+  z.literal('cosmos'),
+])
+
+export const trxTypeSchema = z.union([
+  z.literal('presale_deposit'),
+  z.literal('usdcred_deposit'),
+  z.literal('usdcred_withdrawal'),
+])
+
+export const transactionInsertSchema = z.object({
+  chain_id: z.number().optional().nullable(),
+  chain_type: chainTypeSchema.optional().nullable(),
+  created_at: z.string().optional(),
+  final: z.boolean().optional().nullable(),
+  hash: z.string(),
+  trx_type: trxTypeSchema.optional().nullable(),
+})
+
+export const transactionUpdateSchema = z.object({
+  chain_id: z.number().optional().nullable(),
+  chain_type: chainTypeSchema.optional().nullable(),
+  created_at: z.string().optional(),
+  final: z.boolean().optional().nullable(),
+  hash: z.string().optional(),
+  trx_type: trxTypeSchema.optional().nullable(),
+})
+
+export const transactionRelationshipsSchema = z.tuple([])
+
 export const transferRowSchema = z.object({
   amount: z.number().nullable(),
   bl_presale_trx: z.string().nullable(),
-  chain_id: z.number().nullable(),
-  created_at: z.string(),
   from: z.string().nullable(),
   to: z.string().nullable(),
   token: z.string().nullable(),
@@ -275,8 +412,6 @@ export const transferRowSchema = z.object({
 export const transferInsertSchema = z.object({
   amount: z.number().optional().nullable(),
   bl_presale_trx: z.string().optional().nullable(),
-  chain_id: z.number().optional().nullable(),
-  created_at: z.string().optional(),
   from: z.string().optional().nullable(),
   to: z.string().optional().nullable(),
   token: z.string().optional().nullable(),
@@ -288,8 +423,6 @@ export const transferInsertSchema = z.object({
 export const transferUpdateSchema = z.object({
   amount: z.number().optional().nullable(),
   bl_presale_trx: z.string().optional().nullable(),
-  chain_id: z.number().optional().nullable(),
-  created_at: z.string().optional(),
   from: z.string().optional().nullable(),
   to: z.string().optional().nullable(),
   token: z.string().optional().nullable(),
@@ -300,37 +433,12 @@ export const transferUpdateSchema = z.object({
 
 export const transferRelationshipsSchema = z.tuple([])
 
-export const userRowSchema = z.object({
-  account: z.string(),
-  address: z.array(z.string()),
-  created_at: z.string(),
-  id: z.number(),
-  short_link: z.string().nullable(),
-})
-
-export const userInsertSchema = z.object({
-  account: z.string(),
-  address: z.array(z.string()),
-  created_at: z.string().optional(),
-  id: z.number().optional(),
-  short_link: z.string().optional().nullable(),
-})
-
-export const userUpdateSchema = z.object({
-  account: z.string().optional(),
-  address: z.array(z.string()).optional(),
-  created_at: z.string().optional(),
-  id: z.number().optional(),
-  short_link: z.string().optional().nullable(),
-})
-
-export const userRelationshipsSchema = z.tuple([])
-
 export const whitelistRowSchema = z.object({
   account: z.string(),
   address: z.string(),
   created_at: z.string(),
   project_id: z.number(),
+  signed_message: z.string().nullable(),
 })
 
 export const whitelistInsertSchema = z.object({
@@ -338,6 +446,7 @@ export const whitelistInsertSchema = z.object({
   address: z.string(),
   created_at: z.string().optional(),
   project_id: z.number(),
+  signed_message: z.string().optional().nullable(),
 })
 
 export const whitelistUpdateSchema = z.object({
@@ -345,6 +454,24 @@ export const whitelistUpdateSchema = z.object({
   address: z.string().optional(),
   created_at: z.string().optional(),
   project_id: z.number().optional(),
+  signed_message: z.string().optional().nullable(),
 })
 
-export const whitelistRelationshipsSchema = z.tuple([])
+export const whitelistRelationshipsSchema = z.tuple([
+  z.object({
+    foreignKeyName: z.literal('whitelist_project_id_fkey'),
+    columns: z.tuple([z.literal('project_id')]),
+    isOneToOne: z.literal(false),
+    referencedRelation: z.literal('project'),
+    referencedColumns: z.tuple([z.literal('id')]),
+  }),
+])
+
+export const transactionRowSchema = z.object({
+  chain_id: z.number().nullable(),
+  chain_type: chainTypeSchema.nullable(),
+  created_at: z.string(),
+  final: z.boolean().nullable(),
+  hash: z.string(),
+  trx_type: trxTypeSchema.nullable(),
+})
