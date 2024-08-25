@@ -16,7 +16,7 @@
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
-    "@repo/typescript-config": "workspace:*",
+    "@repo/tsconfig": "workspace:*",
     "supabase-to-zod": "^1.0.7",
     "@faker-js/faker": "^8.4.1",
     "supabase": "^1.187.3"
