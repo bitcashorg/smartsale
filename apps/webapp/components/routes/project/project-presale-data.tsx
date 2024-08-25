@@ -50,9 +50,9 @@ export function ProjectPresaleData({
                 ),
               ),
             )
-            setTotalRaised((prev) => prev + BigInt(payload.new.amount || 0))
+            setTotalRaised(BigInt(payload.new.total_raised))
           } else if (payload.eventType === 'DELETE') {
-            setTotalRaised((prev) => prev - BigInt(payload.old.amount || 0))
+            setTotalRaised(BigInt(payload.old.total_raised))
           }
         },
       )
@@ -98,7 +98,7 @@ async function getPresaleContributors(
 ): Promise<PresaleContributorsResult> {
   try {
     const { data, error } = await supabase
-      .from('transfer')
+      .from('presale_deposits')
       .select('from')
       .eq('presale_id', presaleId)
       .returns<{ from: string | null }[]>()
