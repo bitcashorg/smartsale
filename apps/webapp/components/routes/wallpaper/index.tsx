@@ -36,7 +36,7 @@ export function WhitepaperPageLanding({ params: { lang } }: WhitepaperPageProps)
           <WhitepaperSidebar activeSection={activeSection} setActiveSection={setActiveSection} />
         </div>
         <div className="lg:col-span-3">
-          <WhitepaperContent activeSection={activeSection} />
+          <WhitepaperContent activeSection={activeSection} onSectionChange={setActiveSection} />
         </div>
       </div>
     </>

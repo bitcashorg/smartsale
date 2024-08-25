@@ -6,11 +6,11 @@ export const WITHE_PAPER = {
       "content": [
         {
           "type": "p",
-          "text": "In the rapidly evolving landscapes of artificial intelligence (AI) and cryptocurrency, a new paradigm of innovation and incentive is emerging. Our platform, positioned at the confluence of these two revolutionary technologies, aims to become the premier funding and organizational hub for the global AI unicorns of the next decade. By focusing exclusively on open-source AI companies, we leverage the transformative powers of tokenization and decentralized autonomous organizations (DAOs) to address the unique challenges and opportunities these entities face. This whitepaper outlines our mission to not only foster the growth of open-source AI projects through equitable funding mechanisms but also to democratize and decentralize AI development and ownership, thereby catalyzing a new era of technological advancement and community engagement."
+          "text": "In the rapidly evolving landscapes of artificial intelligence (AI) and cryptocurrency, a new paradigm of innovation and incentive is emerging. Our platform, positioned at the confluence of these two revolutionary technologies, aims to become the premier funding and organizational hub for the global AI unicorns of the next decade. By focusing exclusively on open-source AI companies, we leverage the transformative powers of tokenization and decentralized autonomous organizations (DAOs) to address the unique challenges and opportunities these entities face. This whitepaper outlines our mission to not only foster the growth of open-source AI projects through equitable funding mechanisms but also to democratize and decentralize AI development and ownership, thereby catalyzing a new era of technological advancement and community engagement"
         },
         {
           "type": "h2",
-          "text": "Unveiling the Synergy: Cryptocurrency and AI's Transformative Impact."
+          "text": "Unveiling the Synergy: Cryptocurrency and AI's Transformative Impact"
         },
         {
           "type": "p",
@@ -18,7 +18,7 @@ export const WITHE_PAPER = {
         },
         {
           "type": "h2",
-          "text": "Filling the Void: The Critical Role of an AI + Crypto Launchpad."
+          "text": "Filling the Void: The Critical Role of an AI + Crypto Launchpad"
         },
         {
           "type": "p",
@@ -26,19 +26,15 @@ export const WITHE_PAPER = {
         },
         {
           "type": "p",
-          "text": "Moreover, the crypto industry's struggle to find mainstream applications finds a solution in the tangible, ready-to-deploy innovations of AI technologies."
-        },
-        {
-          "type": "p",
-          "text": "Our platform leverages crypto primarily as a groundbreaking fundraising and organizational mechanism, sidestepping the consumer-facing limitations of current crypto applications."
+          "text": "Moreover, the crypto industry's struggle to find mainstream applications finds a solution in the tangible, ready-to-deploy innovations of AI technologies. Our platform leverages crypto primarily as a groundbreaking fundraising and organizational mechanism, sidestepping the consumer-facing limitations of current crypto applications."
         },
         {
           "type": "h2",
-          "text": "Blueprint for Innovation: Unpacking the Whitepaper's Goals."
+          "text": "Blueprint for Innovation: Unpacking the Whitepaper's Goals"
         },
         {
           "type": "p",
-          "text": "This whitepaper aims to articulate the vision, strategy, and mechanics behind our AI + Crypto launchpad. It will detail our unique value propositions, such as our focus on open-source AI projects, the use of a batch auction for equitable price discovery, and the facilitation of rapid organizational structure through DAO and token infrastructure. Furthermore, it will explore our market-driven approach to supporting AI startups, the innovative technology and tokenomics underpinning our platform, and our long-term goals for nurturing an expansive, sustainable AI ecosystem. Through this document, we invite startups, token purchasers, and the broader community to join us in democratizing and decentralizing AI, paving the way for a future where AI's potential is fully realized and shared."
+          "text": "This whitepaper aims to articulate the vision, strategy, and mechanics behind our AI + Crypto launchpad. It will detail our unique value propositions, such as our focus on open-source AI projects, the use of a batch auction for equitable price discovery, and the facilitation of rapid organizational structure through DAO and token infrastructure. Furthermore, it will explore our market-driven approach to supporting AI startups, the innovative technology and tokenomics underpinning our platform, and our long-term goals for nurturing an expansive, sustainable AI ecosystem.Through this document, we invite startups, token purchasers, and the broader community to join us in democratizing and decentralizing AI, paving the way for a future where AI's potential is fully realized and shared."
         }
       ]
     },
