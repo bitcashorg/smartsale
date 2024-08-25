@@ -10,11 +10,11 @@ import { useSession } from '@/hooks/use-session'
 import { appConfig } from '@/lib/config'
 import { cn } from '@/lib/utils'
 import { useAccountModal } from '@rainbow-me/rainbowkit'
+import { formatAddress } from '@repo/utils'
 import { User, Wallet } from 'lucide-react'
 import { useRouter } from 'next/navigation'
 import { isMobile } from 'react-device-detect'
 import { useAccount } from 'wagmi'
-import { formatAddress } from '../../../../../packages/utils/src'
 // import Link from 'next/link'
 
 export function SessionButton() {

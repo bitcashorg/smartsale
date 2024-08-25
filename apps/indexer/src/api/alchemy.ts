@@ -4,14 +4,16 @@ import type {
   AlchemyActivityEvent,
   AlchemyNetwork,
   AlchemyWebhookEvent,
-} from '../../../../packages/alchemy/src'
+} from '@repo/alchemy'
 
 import { addressActivityTask } from '@repo/jobs'
 import { evmTokens } from '@repo/tokens'
 import { prodChains } from 'app-env'
 import type { Request, Response } from 'express'
+import { getAddress } from 'viem'
 import { appConfig } from '~/config'
 import { logger } from '~/lib/logger'
+import { isAddressRegisteredForPresale } from '~/lib/supabase-client'
 // import {isAddressRegisteredForPresale} from '~/src/lib/supabase-client';
 
 // Mapping of chain IDs to Alchemy SDK Network types
@@ -65,30 +67,37 @@ export async function alchemyWebhook(req: Request, res: Response) {
   for (const txn of activity) {
     const isValidAsset = txn.asset === 'USDC' || txn.asset === 'USDT'
     const isValidToAddress = txn.toAddress !== appConfig.presaleAddress
+    const txnTokenAddress =
+      txn.rawContract?.address && getAddress(txn.rawContract.address)
 
-    const isSupportedToken = evmTokens.some(
-      (token) => txn.rawContract.address === token.address,
+    const isSupportedToken =
+      txnTokenAddress &&
+      evmTokens.some((token) => txnTokenAddress === getAddress(token.address))
+
+    const isRegisteredForPresale = await isAddressRegisteredForPresale(
+      txn.fromAddress,
+      1,
     )
 
     const validationErrors = [
       !isValidAsset && `asset: ${txn.asset}`,
       !isValidToAddress && `to address: ${txn.toAddress}`,
-      !isSupportedToken && `token: ${txn.rawContract.address}`,
+      !isSupportedToken && `token: ${txnTokenAddress}`,
       !txn.log && 'missing transaction log',
-      // !isAddressRegisteredForPresale(txn.fromAddress, 1) && 'address is not registered for presale',
+      !isRegisteredForPresale && 'address is not registered for presale',
     ].filter(Boolean)
 
     if (validationErrors.length) {
       logger.error(`Invalid transaction: ${validationErrors.join(', ')}`)
       return res.status(401).send('Unauthorized')
     }
+
+    // Trigger the address activity task
+    const handle = await addressActivityTask.trigger(req.body)
+    logger.info(`Triggered address activity task: ${JSON.stringify(handle)}`)
   }
 
-  // TODO: validate address is whitelisted
-
-  // Trigger the address activity task
-  const handle = await addressActivityTask.trigger(req.body)
-  logger.info(`Triggered address activity task: ${JSON.stringify(handle)}`)
+  logger.info(`Webhook ${evt.id} processed`)
 
   res.status(200).send(`Webhook ${evt.id} processed`)
 }

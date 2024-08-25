@@ -5,11 +5,11 @@ import { useSession } from '@/hooks/use-session'
 import { appConfig } from '@/lib/config'
 import type { LangProp } from '@/types/routing.type'
 import { useAccountModal, useConnectModal } from '@rainbow-me/rainbowkit'
+import { formatAddress } from '@repo/utils'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { v4 as uuidv4 } from 'uuid'
 import { useAccount } from 'wagmi'
-import { formatAddress } from '../../../../../packages/utils/src'
 
 export function NavLinks({
   mobile = false,

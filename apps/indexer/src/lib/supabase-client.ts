@@ -1,6 +1,6 @@
+import type { Database, TablesInsert } from '@repo/supabase'
 import { createClient } from '@supabase/supabase-js'
 import { appConfig } from '~/config'
-import type { Database, TablesInsert } from '../../../../packages/supabase/src'
 
 // Initialize Supabase client
 const supabase = createClient<Database>(

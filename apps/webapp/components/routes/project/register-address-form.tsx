@@ -8,13 +8,13 @@ import {
 import { useSession } from '@/hooks/use-session'
 import { cn } from '@/lib/utils'
 import { useSupabaseClient } from '@/services/supabase'
+import { presaleInsertSchema } from '@repo/supabase'
+import { formatAddress, fromEntries } from '@repo/utils'
 import { useQuery } from '@tanstack/react-query'
 import { type FunctionComponent, useState } from 'react'
 import { useAsyncFn } from 'react-use'
 import { useAccount, useSignMessage } from 'wagmi'
 import type { SignMessageData } from 'wagmi/query'
-import { presaleInsertSchema } from '../../../../../packages/supabase/src'
-import { formatAddress, fromEntries } from '../../../../../packages/utils/src'
 
 export const RegisterAddressForm: FunctionComponent<{ projectId: number }> = ({
   projectId,
