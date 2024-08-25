@@ -28,6 +28,23 @@ export function WhitepaperContent({ activeSection, onSectionChange }: Whitepaper
         return <div className="max-w-[500px] mx-auto">
           <h2 className="text-center text-[#FAFAFA] font-futura text-[26px] font-normal leading-[121%] mb-[37px]">{content.text.replaceAll('.', '')}</h2>
         </div>
+      case 'h3':
+        return <div className="max-w-[500px] mx-auto">
+          <h3 className="text-center text-[#FAFAFA] font-futura text-[20px] font-normal leading-[121%] mb-[30px]">{content.text}</h3>
+        </div>
+      case 'list':
+        return (
+          <ul className="list-disc list-inside text-gray-500 dark:text-gray-400 mb-[27px] text-[15px]">
+            {content.text.split('\n').map((item, idx) => {
+              const [title, content] = item.split(':')
+              return (
+                <li key={idx} className="mb-2">
+                  {content && <span className="font-bold">{title}:</span>} {content || title}
+                </li>
+              )
+            })}
+          </ul>
+        )
       default:
         return null
     }

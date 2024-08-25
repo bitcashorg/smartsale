@@ -43,48 +43,56 @@ export const WITHE_PAPER = {
       "title": "Market Analysis",
       "content": [
         {
+          "type": "h2",
+          "text": "Overview of the Current Market Landscape for Cryptocurrencies and AI Technologies"
+        },
+        {
           "type": "p",
-          "text": "Overview of the Current Market Landscape for Cryptocurrencies and AI Technologies. The cryptocurrency market has experienced exponential growth over the past decade, evolving from a niche interest to a major financial market. As of the latest data, the global cryptocurrency market cap has reached unprecedented highs, with widespread adoption among both retail and institutional investors. At the same time, artificial intelligence (AI) technologies have undergone significant advancements, penetrating various sectors including healthcare, finance, logistics, and entertainment. The AI market is on an exponential growth trajectory, with predictions suggesting it could reach hundreds of billions in the coming years. This growth is fueled by advances in machine learning, natural language processing, and computer vision, alongside increasing data availability and computational power. The convergence of AI and cryptocurrency represents a burgeoning sector characterized by innovation, volatility, and vast potential for growth."
+          "text": "The cryptocurrency market has experienced exponential growth over the past decade, evolving from a niche interest to a major financial market. As of the latest data, the global cryptocurrency market cap has reached unprecedented highs, with widespread adoption among both retail and institutional investors. At the same time, artificial intelligence (AI) technologies have undergone significant advancements, penetrating various sectors including healthcare, finance, logistics, and entertainment. The AI market is on an exponential growth trajectory, with predictions suggesting it could reach hundreds of billions in the coming years. This growth is fueled by advances in machine learning, natural language processing, and computer vision, alongside increasing data availability and computational power. The convergence of AI and cryptocurrency represents a burgeoning sector characterized by innovation, volatility, and vast potential for growth."
         },
         {
           "type": "h2",
-          "text": "Analysis of Trends, Challenges, and Opportunities in the AI + Crypto Sector."
+          "text": "Analysis of Trends, Challenges, and Opportunities in the AI + Crypto Sector"
         },
         {
-          "type": "p",
-          "text": "Trends: Decentralized AI Marketplaces: There's a growing trend towards decentralized platforms that allow for the buying and selling of AI services using cryptocurrencies. Tokenization of AI Projects: Tokenization, facilitated by cryptocurrencies, is becoming a popular means to fund and democratize access to AI projects, allowing broader participation and investment. AI-driven Crypto Trading: The use of AI in predictive analytics for cryptocurrency trading is becoming more prevalent, offering sophisticated tools for investors."
+          "type": "h3",
+          "text": "Trends:"
         },
         {
-          "type": "p",
-          "text": "Challenges: Regulatory Uncertainty: Both AI and cryptocurrency sectors face significant regulatory hurdles that can impact growth, innovation, and operational freedom."
+          "type": "list",
+          "text": "Decentralized AI Marketplaces: There's a growing trend towards decentralized platforms that allow for the buying and selling of AI services using cryptocurrencies.\nTokenization of AI Projects: Tokenization, facilitated by cryptocurrencies, is becoming a popular means to fund and democratize access to AI projects, allowing broader participation and investment.\nAI-driven Crypto Trading: The use of AI in predictive analytics for cryptocurrency trading is becoming more prevalent, offering sophisticated tools for investors."
         },
         {
-          "type": "p",
-          "text": "Technical Complexity: The integration of AI and blockchain technologies presents complex technical challenges, including scalability, interoperability, security, and energy consumption. Market Volatility: The inherent volatility of cryptocurrencies poses risks for investments and project funding in this intersectional space."
+          "type": "h3",
+          "text": "Challenges:"
         },
         {
-          "type": "p",
-          "text": "Opportunities: Innovative Funding Models: Tokenization opens up new avenues for funding AI projects beyond traditional venture capital, particularly those that are open-source and community-driven."
+          "type": "list",
+          "text": "Regulatory Uncertainty: Both AI and cryptocurrency sectors face significant regulatory hurdles that can impact growth, innovation, and operational freedom.\nTechnical Complexity: The integration of AI and blockchain technologies presents complex technical challenges, including scalability, interoperability, security, and energy consumption.\nMarket Volatility: The inherent volatility of cryptocurrencies poses risks for investments and project funding in this intersectional space."
         },
         {
-          "type": "p",
-          "text": "Enhanced Transparency and Trust: Blockchains can enhance the transparency and trust in transactions and interactions within AI applications. Global Access and Inclusion: Cryptocurrency and AI can democratize access to financial services and cutting-edge technologies, respectively, on a global scale. The decentralized nature of cryptocurrencies enables global participation in AI projects, fostering a diverse and inclusive ecosystem."
+          "type": "h3",
+          "text": "Opportunities:"
+        },
+        {
+          "type": "list",
+          "text": "Innovative Funding Models: Tokenization opens up new avenues for funding AI projects beyond traditional venture capital, particularly those that are open-source and community-driven.\nEnhanced Transparency and Trust: Blockchains can enhance the transparency and trust in transactions and interactions within AI applications.\nGlobal Access and Inclusion: Cryptocurrency and AI can democratize access to financial services and cutting-edge technologies, respectively, on a global scale. The decentralized nature of cryptocurrencies enables global participation in AI projects, fostering a diverse and inclusive ecosystem."
         },
         {
           "type": "h2",
-          "text": "Competitive Analysis and Bitlauncher's Positioning."
+          "text": "Competitive Analysis and Bitlauncher's Positioning"
         },
         {
           "type": "p",
-          "text": "The competitive landscape includes traditional VC-funded AI startups, other crypto-based funding platforms, and decentralized autonomous organizations (DAOs) focusing on technology projects. Bitlauncher differentiates itself through: Focusing exclusively on open-source AI projects, addressing a gap in the market for these ventures to secure funding and organize efficiently. Utilizing a batch auction mechanism for fair price discovery, ensuring equitable purchase opportunities. Providing comprehensive DAO tools for project organization, fostering transparency and community governance. Committing to sustainable tokenomic models that resonate with traditional startup equity principles, making it an attractive platform for serious investors and innovators in the AI and crypto space."
+          "text": "The competitive landscape includes traditional VC-funded AI startups, other crypto-based funding platforms, and decentralized autonomous organizations (DAOs) focusing on technology projects. Bitlauncher differentiates itself through:"
+        },
+        {
+          "type": "list",
+          "text": "Focusing exclusively on open-source AI projects, addressing a gap in the market for these ventures to secure funding and organize efficiently.\nUtilizing a batch auction mechanism for fair price discovery, ensuring equitable purchase opportunities.\nProviding comprehensive DAO tools for project organization, fostering transparency and community governance.\nCommitting to sustainable tokenomic models that resonate with traditional startup equity principles, making it an attractive platform for serious investors and innovators in the AI and crypto space."
         },
         {
           "type": "p",
-          "text": "Unlike competitors, Bitlauncher addresses the market's need for transparent, ethical, and community-consensus driven AI and crypto innovations."
-        },
-        {
-          "type": "p",
-          "text": "This unique positioning allows Bitlauncher to cater to a niche yet rapidly growing segment of the market, attracting startups, investors, and developers committed to the ethical and sustainable growth of AI and cryptocurrency ecosystems."
+          "text": "Unlike competitors, Bitlauncher addresses the market's need for transparent, ethical, and community-consensus driven AI and crypto innovations. This unique positioning allows Bitlauncher to cater to a niche yet rapidly growing segment of the market, attracting startups, investors, and developers committed to the ethical and sustainable growth of AI and cryptocurrency ecosystems."
         },
         {
           "type": "p",
@@ -92,11 +100,7 @@ export const WITHE_PAPER = {
         },
         {
           "type": "p",
-          "text": "In conclusion, the integration of AI and cryptocurrency through Bitlauncher presents a compelling value proposition in a market ripe with opportunities despite its challenges."
-        },
-        {
-          "type": "p",
-          "text": "By addressing the needs of a targeted yet expansive audience and differentiating itself through specialized services and funding mechanisms, Bitlauncher is poised to become a pivotal platform at the intersection of these transformative technologies."
+          "text": "In conclusion, the integration of AI and cryptocurrency through Bitlauncher presents a compelling value proposition in a market ripe with opportunities despite its challenges. By addressing the needs of a targeted yet expansive audience and differentiating itself through specialized services and funding mechanisms, Bitlauncher is poised to become a pivotal platform at the intersection of these transformative technologies."
         }
       ]
     },

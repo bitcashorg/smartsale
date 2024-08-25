@@ -43,18 +43,20 @@ interface NavigationContainerProps {
 }
 
 export const NavigationContainer = ({ prevTitle = '', nextTitle = '', onPrevClick, onNextClick }: NavigationContainerProps) => {
+    const nextLabel = nextTitle.length > 10 ? `${nextTitle.slice(0, 10)}...` : nextTitle
+    const prevLabel = prevTitle.length > 10 ? `${prevTitle.slice(0, 10)}...` : prevTitle
     return (
         <div className="flex flex-col md:flex-row-reverse items-center justify-between px-2.5 py-[43px] relative border-b border-solid border-[#433974] gap-4">
             <div
                 className={`inline-flex items-center justify-center gap-6 px-8 py-[9px] relative flex-[0_0_auto] bg-[#845abe] rounded-[40px] overflow-hidden cursor-pointer ${nextTitle ? 'opacity-100' : 'opacity-50'} md:min-w-[240px] md:max-w-[240px] min-w-[332px] max-w-full h-[60px]`}
                 onClick={nextTitle ? onNextClick : undefined}
             >
-                <div className="relative flex-1 font-normal text-transparent text-lg tracking-[0] leading-[25.4px] overflow-hidden text-ellipsis whitespace-nowrap">
+                <div className="relative flex-1 font-normal text-transparent text-lg tracking-[0] leading-[25.4px] overflow-hidden whitespace-nowrap">
                     <span className="text-[#433974]">
                         NEXT
                         <br />
                     </span>
-                    {nextTitle ? <span className="text-white">{nextTitle.length > 20 ? `${nextTitle.slice(0, 20)}...` : nextTitle}</span> : <span>&#8205;</span>}
+                    {nextTitle ? <span className="text-white">{nextLabel}</span> : <span>&#8205;</span>}
                 </div>
                 <NextArrowComponent />
             </div>
@@ -63,12 +65,12 @@ export const NavigationContainer = ({ prevTitle = '', nextTitle = '', onPrevClic
                 onClick={prevTitle ? onPrevClick : undefined}
             >
                 <PrevArrowComponent />
-                <div className="relative flex-1 font-normal text-[#433974] text-lg tracking-[0] leading-[25.4px] overflow-hidden text-ellipsis whitespace-nowrap">
+                <div className="relative flex-1 font-normal text-[#433974] text-lg tracking-[0] leading-[25.4px] overflow-hidden whitespace-nowrap">
                     <span className="text-[#433974]">
                         PREV
                         <br />
                     </span>
-                    {prevTitle ? <span className="text-white">{prevTitle.length > 20 ? `${prevTitle.slice(0, 20)}...` : prevTitle}</span> : <span>&#8205;</span>}
+                    {prevTitle ? <span className="text-white">{prevLabel}</span> : <span>&#8205;</span>}
                 </div>
             </div>
         </div>
