@@ -1,5 +1,5 @@
 import { getErrorMessage } from '@repo/utils'
-import { startExpress } from './api/index'
+import { startExpress } from './api'
 import { logger } from './lib/logger'
 
 async function main() {
