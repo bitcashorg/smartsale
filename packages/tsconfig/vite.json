@@ -35,7 +35,7 @@
   ],
   "references": [
     {
-      "path": "./@repo/typescript-config.node.json"
+      "path": "./@repo/tsconfig.node.json"
     }
   ]
 }

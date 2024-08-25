@@ -1,15 +1,15 @@
 import crypto from 'node:crypto'
+import type {
+  AlchemyActivityEvent,
+  AlchemyNetwork,
+  AlchemyWebhookEvent,
+} from '@repo/alchemy'
 import { addressActivityTask } from '@repo/jobs'
 import { Network } from 'alchemy-sdk'
 import { prodChains } from 'app-env'
 import type { Request, Response } from 'express'
 import { appConfig } from '~/config'
 import { logger } from '~/lib/logger'
-import type {
-  AlchemyActivityEvent,
-  AlchemyNetwork,
-  AlchemyWebhookEvent,
-} from '../../../../packages/alchemy/src'
 
 // Mapping of chain IDs to Alchemy SDK Network types
 const chainIdToNetwork: Record<number, AlchemyNetwork> = {
@@ -37,20 +37,12 @@ logger.info(`Supported networks: ${networks.join(', ')}`)
  * @param res - The response object
  */
 export async function alchemyWebhook(req: Request, res: Response) {
-  try {
-    const evt = req.body as AlchemyWebhookEvent;
-    logger.info(`Alchemy webhook received: ${evt.id}`, { eventData: evt });
-    // ... rest of the function
-  } catch (error) {
-    logger.error(`Error processing Alchemy webhook: ${error.message}`, { error });
-    res.status(500).json({ error: 'Internal Server Error' });
-  }
-}
   const evt = req.body as AlchemyWebhookEvent
   logger.info(`Alchemy webhook received: ${evt.id}`)
   logger.info(JSON.stringify(evt))
   // TODO: restore alchemy signature validation
-  if (!validateAlchemySignature(req)) return res.status(401).send('Unauthorized')
+  if (!validateAlchemySignature(req))
+    return res.status(401).send('Unauthorized')
   // logger.info('Validated Alchemy webhook 😀')
 
   const { network, activity } = evt.event as AlchemyActivityEvent
@@ -60,7 +52,9 @@ export async function alchemyWebhook(req: Request, res: Response) {
   const isValidNetwork = networks.includes(network)
 
   if (!isAddressActivity || !isValidNetwork) {
-    const errorMsg = isAddressActivity ? `network: ${network}` : `event type: ${evt.type}`
+    const errorMsg = isAddressActivity
+      ? `network: ${network}`
+      : `event type: ${evt.type}`
 
     logger.error(`Invalid: ${errorMsg}`)
     return res.status(401).send('Unauthorized')

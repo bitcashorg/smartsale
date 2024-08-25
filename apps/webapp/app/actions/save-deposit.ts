@@ -30,8 +30,7 @@ export async function saveDeposit(
       .from('transaction')
       .upsert(
         {
-          hash:
-            parseResult.data.deposit_hash,
+          hash: parseResult.data.deposit_hash,
           trx_type: 'presale_deposit',
           ...parseResult.data,
         },

@@ -12,7 +12,7 @@
     "@repo/contracts": "workspace:*"
   },
   "devDependencies": {
-    "@repo/typescript-config": "workspace:*",
+    "@repo/tsconfig": "workspace:*",
     "typescript": "^5.3.3"
   }
 }
