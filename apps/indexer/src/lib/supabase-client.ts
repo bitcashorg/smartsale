@@ -62,13 +62,13 @@ export async function upsertOrder(data: TablesInsert<'order'>) {
 
 export async function isAddressRegisteredForPresale(
   address: string,
-  presaleId: number,
+  projectId: number,
 ): Promise<boolean> {
   const { data, error } = await supabase
-    .from('presale')
-    .select('id')
+    .from('whitelist')
+    .select('*')
     .eq('address', address)
-    .eq('id', presaleId)
+    .eq('id', projectId)
     .single()
 
   if (error) {
