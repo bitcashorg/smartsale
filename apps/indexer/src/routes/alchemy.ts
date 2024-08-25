@@ -50,7 +50,7 @@ export async function alchemyWebhook(req: Request, res: Response) {
   logger.info(`Alchemy webhook received: ${evt.id}`)
   logger.info(JSON.stringify(evt))
   // TODO: restore alchemy signature validation
-  // if (!validateAlchemySignature(req)) return res.status(401).send('Unauthorized')
+  if (!validateAlchemySignature(req)) return res.status(401).send('Unauthorized')
   // logger.info('Validated Alchemy webhook 😀')
 
   const { network, activity } = evt.event as AlchemyActivityEvent
