@@ -60,9 +60,8 @@ export async function alchemyWebhook(req: Request, res: Response) {
   const isValidNetwork = networks.includes(network)
 
   if (!isAddressActivity || !isValidNetwork) {
-    const errorMsg = !isAddressActivity
-      ? `event type: ${evt.type}`
-      : `network: ${network}`
+    const errorMsg = isAddressActivity ? `network: ${network}` : `event type: ${evt.type}`
+
     logger.error(`Invalid: ${errorMsg}`)
     return res.status(401).send('Unauthorized')
   }
