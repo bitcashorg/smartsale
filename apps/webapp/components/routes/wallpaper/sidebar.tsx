@@ -38,13 +38,15 @@ export function WhitepaperSidebar({ activeSection, setActiveSection }: Whitepape
           {isMobileNavOpen && (
             <Transition duration={0.3}>
               <div className="mobile-nav bg-gray-800 p-4 rounded-lg relative left-0 w-full">
-                <button
-                  className="absolute top-4 left-4 text-white"
-                  onClick={toggleMobileNav}
-                >
-                  ✕
-                </button>
-                
+                <div className="mb-4 self-start">
+                  <button
+                    className="text-[#e728a9]"
+                    onClick={toggleMobileNav}
+                  >
+                    ✕
+                  </button>
+                  <h2 className="text-xl font-bold text-white">Bitlauncher Whitepaper</h2>
+                </div>
                 {WITHE_PAPER.sections.map((section: Section) => (
                   <div
                     key={section.title}
