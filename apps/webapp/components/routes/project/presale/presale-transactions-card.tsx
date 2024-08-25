@@ -17,11 +17,11 @@ import {
 } from '@/components/ui/table'
 import { appConfig } from '@/lib/config'
 import { useSupabaseClient } from '@/services/supabase'
-import type { Tables } from '@repo/supabase'
-import { TestnetBLPL } from 'app-contracts'
-import { formatAddress } from 'app-lib'
+import { TestnetBLPL } from '@repo/contracts'
 import { useEffect, useState } from 'react'
 import { useAccount } from 'wagmi'
+import type { Tables } from '../../../../../../packages/supabase/src'
+import { formatAddress } from '../../../../../../packages/utils/src'
 
 export function PresaleTransactionsCard() {
   const { address } = useAccount()

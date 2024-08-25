@@ -8,7 +8,7 @@ import {
   SelectValue,
 } from '@/components/ui/select'
 import type { SelectProps } from '@radix-ui/react-select'
-import type { TokenContractData } from 'app-contracts'
+import type { TokenContractData } from '@repo/contracts'
 
 export function TokenSelect({ options, ...props }: TokenSelectParams) {
   return (

@@ -9,10 +9,10 @@ import {
   DialogTitle,
 } from '@/components/ui/dialog'
 import { useSession } from '@/hooks/use-session'
-import { runtimeEnv } from 'app-lib'
 import { useRouter } from 'next/navigation'
 import QRCode from 'react-qr-code'
 import { useEffectOnce } from 'react-use'
+import { runtimeEnv } from '../../../../../packages/utils/src'
 
 export function RegisterDialogContent({
   updateDialogContent,

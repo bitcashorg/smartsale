@@ -1,5 +1,6 @@
 import type { Abi, Address } from 'abitype'
 import type { Chain } from 'viem'
+
 export interface ContractData {
   abi: Abi
   address: Address | string
@@ -8,6 +9,7 @@ export interface ContractData {
   chainName: string
   indexFromBlock: number
 }
+
 export interface TokenContractData extends ContractData {
   name: string
   symbol: string

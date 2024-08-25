@@ -24,7 +24,7 @@ import {
   genUsdtDepositSigningRequest,
 } from '@/lib/eos'
 import { cn } from '@/lib/utils'
-import type { EVMTokenContractData } from 'app-contracts'
+import type { EVMTokenContractData } from '@repo/contracts'
 import { useMemo, useState } from 'react'
 import toast from 'react-hot-toast'
 import { parseUnits } from 'viem'

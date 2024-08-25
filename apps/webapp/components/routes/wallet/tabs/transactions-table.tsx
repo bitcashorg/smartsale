@@ -8,12 +8,12 @@ import {
   TableRow,
 } from '@/components/ui/table'
 import { useSupabaseClient } from '@/services/supabase'
-import { formatAddress } from 'app-lib'
 import { format } from 'date-fns'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import type { Address } from 'viem'
 import { useAccount } from 'wagmi'
+import { formatAddress } from '../../../../../../packages/utils/src'
 
 export function TransactionsTable() {
   const supabase = useSupabaseClient()

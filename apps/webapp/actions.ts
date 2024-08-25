@@ -2,12 +2,12 @@
 
 import { handleAxiosError } from '@/lib/utils'
 import { createSupabaseServerClient } from '@/services/supabase'
-import { presaleInsertSchema } from '@repo/supabase'
-import { fromEntries } from 'app-lib'
 import axios from 'axios'
 import { cookies } from 'next/headers'
 import { Resend } from 'resend'
 import { z } from 'zod'
+import { presaleInsertSchema } from '../../packages/supabase/src'
+import { fromEntries } from '../../packages/utils/src'
 
 // get session object by id
 export async function getSesssion(formData: FormData) {

@@ -1,4 +1,4 @@
-import { getErrorMessage } from 'app-lib'
+import { getErrorMessage } from '../../../packages/utils/src'
 import { startExpress } from './api/index'
 import { logger } from './lib/logger'
 

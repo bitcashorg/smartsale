@@ -18,6 +18,7 @@
     "vercel:install": "npm i -g node-gyp; bun install"
   },
   "dependencies": {
+    "@repo/tokens": "workspace:*",
     "@ai-sdk/anthropic": "^0.0.32",
     "@ai-sdk/openai": "^0.0.39",
     "@blockmatic/hooks-utils": "^3.0.0",
@@ -50,9 +51,9 @@
     "@wagmi/connectors": "5.0.26",
     "@wharfkit/antelope": "^1.0.8",
     "ai": "^3.2.35",
-    "app-contracts": "workspace:*",
+    "@repo/contracts": "workspace:*",
     "app-env": "workspace:*",
-    "app-lib": "workspace:*",
+    "@repo/utils": "workspace:*",
     "axios": "^1.7.2",
     "camelize-ts": "^3.0.0",
     "class-variance-authority": "^0.7.0",

@@ -1,4 +1,4 @@
-# app-contracts
+# @repo/contracts
 
 To install dependencies:
 

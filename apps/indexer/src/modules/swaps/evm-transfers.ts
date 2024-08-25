@@ -3,7 +3,7 @@ import {
   SepoliaUSDT,
   TestnetUSDT,
   appContracts,
-} from 'app-contracts'
+} from '@repo/contracts'
 import { runPromisesInSeries } from '~/lib/utils'
 
 import { appChains } from 'app-env'

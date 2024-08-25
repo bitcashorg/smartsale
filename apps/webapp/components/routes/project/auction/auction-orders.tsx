@@ -8,13 +8,13 @@ import {
   TableRow,
 } from '@/components/ui/table'
 import { useSupabaseClient } from '@/services/supabase'
-import { TestnetEasyAuction } from 'app-contracts'
-import { formatAddress } from 'app-lib'
+import { TestnetEasyAuction } from '@repo/contracts'
 import BN from 'bn.js'
 import { format } from 'date-fns'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { useAccount, useReadContract } from 'wagmi'
+import { formatAddress } from '../../../../../../packages/utils/src'
 
 export function AuctionOrders() {
   const supabase = useSupabaseClient()

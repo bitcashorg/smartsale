@@ -7,7 +7,7 @@ import {
   TestnetMBOTSPL,
   TestnetUSDCred,
   TestnetUSDT,
-} from 'app-contracts'
+} from '@repo/contracts'
 import { useEffect, useState } from 'react'
 import { parseUnits } from 'viem'
 import { useAccount, useSwitchChain, useWriteContract } from 'wagmi'

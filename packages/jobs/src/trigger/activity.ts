@@ -1,6 +1,9 @@
-import type { AlchemyActivity, AlchemyWebhookEvent } from '@repo/alchemy'
 import { logger, task } from '@trigger.dev/sdk/v3'
 import { isAddress, parseUnits } from 'viem'
+import type {
+  AlchemyActivity,
+  AlchemyWebhookEvent,
+} from '../../../../packages/alchemy/src'
 import { issuePresaleTokens } from '../lib/presale-issuer'
 
 const STABLECOIN_DECIMALS = 6
