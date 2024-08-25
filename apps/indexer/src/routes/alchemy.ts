@@ -1,4 +1,4 @@
-import crypto from 'crypto'
+import crypto from 'node:crypto'
 import { addressActivityTask } from '@repo/jobs'
 import { Network } from 'alchemy-sdk'
 import { prodChains } from 'app-env'
