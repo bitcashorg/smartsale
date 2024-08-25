@@ -44,15 +44,19 @@ export function WhitepaperSidebar({ activeSection, setActiveSection }: Whitepape
                 >
                   ✕
                 </button>
-
+                
                 {WITHE_PAPER.sections.map((section: Section) => (
                   <div
                     key={section.title}
-                    className={`block py-2 px-4 rounded cursor-pointer ${activeSection === section.title ? 'bg-gray-700 text-white' : 'hover:bg-gray-800'
-                      }`}
+                    className={`self-start inline-flex flex-col items-start justify-start relative flex-[0_0_auto] ${activeSection === section.title ? 'text-white' : 'text-[#9395af]'}`}
                     onClick={() => handleSectionClick(section.title)}
                   >
-                    {section.title}
+                    <div className="relative w-fit mt-[-1.00px] font-normal text-xl tracking-[0] leading-[24.2px] whitespace-nowrap text-left">
+                      {section.title}
+                    </div>
+                    {activeSection === section.title && (
+                      <div className="absolute w-[69px] h-0.5 top-6 left-0 bg-[#ff51ed]" />
+                    )}
                   </div>
                 ))}
               </div>
