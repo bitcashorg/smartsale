@@ -1,4 +1,4 @@
-import { type EVMTokenContractData, appContracts } from 'app-contracts'
+import { type EVMTokenContractData, appContracts } from '@repo/contracts'
 import {
   http,
   type Address,

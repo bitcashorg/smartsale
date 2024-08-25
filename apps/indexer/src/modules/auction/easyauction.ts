@@ -1,4 +1,4 @@
-import { TestnetEasyAuction } from 'app-contracts'
+import { TestnetEasyAuction } from '@repo/contracts'
 import { eosEvmTestnet } from 'app-env'
 import { http, createPublicClient, getContract } from 'viem'
 

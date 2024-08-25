@@ -1,4 +1,4 @@
-// import { TestnetBLPL } from 'app-contracts'
+// import { TestnetBLPL } from '@repo/contracts'
 import { createWalletClient, erc20Abi, formatUnits } from 'viem'
 import { http, type Address } from 'viem'
 import { appConfig } from '../config'

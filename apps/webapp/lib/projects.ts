@@ -1,4 +1,4 @@
-import { TestnetMBOTSPL, type TokenContractData } from 'app-contracts'
+import { TestnetMBOTSPL, type TokenContractData } from '@repo/contracts'
 import { merge } from 'lodash'
 import type { StaticImageData } from 'next/image'
 import BitcashPic from '../assets/img/bitcash.webp'

@@ -24,7 +24,7 @@
     "@supabase/supabase-js": "^2.44.4",
     "@trigger.dev/sdk": "^2.3.19",
     "@types/pino-http": "^5.8.4",
-    "app-contracts": "workspace:*",
+    "@repo/contracts": "workspace:*",
     "app-env": "workspace:*",
     "app-lib": "workspace:*",
     "axios": "^1.7.2",

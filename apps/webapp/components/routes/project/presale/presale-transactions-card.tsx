@@ -18,7 +18,7 @@ import {
 import { appConfig } from '@/lib/config'
 import { useSupabaseClient } from '@/services/supabase'
 import type { Tables } from '@repo/supabase'
-import { TestnetBLPL } from 'app-contracts'
+import { TestnetBLPL } from '@repo/contracts'
 import { formatAddress } from 'app-lib'
 import { useEffect, useState } from 'react'
 import { useAccount } from 'wagmi'

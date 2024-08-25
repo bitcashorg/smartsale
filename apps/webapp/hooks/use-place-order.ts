@@ -1,4 +1,4 @@
-import { TestnetEasyAuction } from 'app-contracts'
+import { TestnetEasyAuction } from '@repo/contracts'
 import { Address } from 'viem'
 import { useWriteContract } from 'wagmi'
 

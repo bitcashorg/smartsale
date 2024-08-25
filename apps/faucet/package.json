@@ -24,7 +24,7 @@
     "react": "18.x",
     "react-dom": "18.x",
     "app-env": "workspace:*",
-    "app-contracts": "workspace:*",
+    "@repo/contracts": "workspace:*",
     "tailwind-merge": "^2.4.0",
     "tailwindcss": "^3.4.6",
     "tailwindcss-animate": "^1.0.7",

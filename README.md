@@ -59,7 +59,7 @@ Please refer to the [webapp README.md](/apps/webapp/README.md) for more details 
 
 This package offers a shared TypeScript configuration to standardize TypeScript compilation options across the project.
 
-#### Smartsale Contracts (`/packages/app-contracts`)
+#### Smartsale Contracts (`/packages/@repo/contracts`)
 
 Contains smart contracts for the Smartsale platform, including auction contracts, ERC20 tokens, and other blockchain-based contracts. These are essential for the project's blockchain functionalities.
 
