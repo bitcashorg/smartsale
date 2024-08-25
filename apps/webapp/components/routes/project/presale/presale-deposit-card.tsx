@@ -98,18 +98,16 @@ function PresaleDeposit() {
                 'Unable to complete deposit. Please try again, contact support if the problem persist.',
               )
             },
-            onSuccess: (trxId) => {
-              console.log('Transaction ID:', trxId)
+            onSuccess: (trxHash) => {
+              console.log('Transaction hash:', trxHash)
               toast.success(`Deposit successful`)
-              // saveDeposit({
-              //   amount: Number(parseUnits(amount, evmToken.decimals)),
-              //   chain_id: evmToken.chainId,
-              //   from: address,
-              //   to: presaleAddress,
-              //   token: evmToken.address,
-              //   trx_hash: trxId,
-              //   type: 'deposit',
-              // })
+              saveDeposit({
+                amount: Number(parseUnits(amount, evmToken.decimals)),
+                created_at: new Date().toISOString(),
+                deposit_hash: trxHash,
+                issuance_hash: null,
+                presale_id: 1
+              })
             },
           },
         )

@@ -4,17 +4,19 @@ import { createSupabaseServerClient } from '@/services/supabase'
 import {
   type Tables,
   type TablesInsert,
-  transferInsertSchema,
+  presaleDepositInsertSchema,
+  transactionInsertSchema,
 } from '@repo/supabase'
 
-export async function saveDeposit(transfer: TablesInsert<'transfer'>): Promise<{
+
+export async function saveDeposit(transfer: TablesInsert<'presale_deposit'>): Promise<{
   success: boolean
   message: string
-  data?: Tables<'transfer'>
+  data?: Tables<'presale_deposit'>
   error?: any
 }> {
   try {
-    const parseResult = transferInsertSchema.safeParse(transfer)
+    const parseResult = presaleDepositInsertSchema.safeParse(transfer)
     if (!parseResult.success) {
       return {
         success: false,
@@ -24,8 +26,25 @@ export async function saveDeposit(transfer: TablesInsert<'transfer'>): Promise<{
     }
 
     const supabase = await createSupabaseServerClient()
+    const transaction = await supabase
+      .from('transaction')
+      .upsert({
+        hash: parseResult.data.deposit_hash!,
+        trx_type: 'presale_deposit',
+        ...parseResult.data
+      }, { onConflict: 'hash' })
+      .select()
+
+    if (transaction.error) {
+      return {
+        success: false,
+        message: 'Database operation failed',
+        error: 'transaction.error',
+      }
+    }
+
     const { data, error } = await supabase
-      .from('transfer')
+      .from('presale_deposit')
       .upsert(parseResult.data, { onConflict: 'trx_hash' })
       .select()
 
