@@ -5,12 +5,13 @@ import type {
   AlchemyNetwork,
   AlchemyWebhookEvent,
 } from '@repo/alchemy'
-import { supportedTokens } from '@repo/tokens'
+
 import { addressActivityTask } from '@repo/trigger'
 import { prodChains } from 'app-env'
 import type { Request, Response } from 'express'
 import { appConfig } from '~/config'
 import { logger } from '~/lib/logger'
+import { evmTokens } from '@repo/tokens'
 // import {isAddressRegisteredForPresale} from '~/src/lib/supabase-client';
 
 // Mapping of chain IDs to Alchemy SDK Network types
@@ -65,7 +66,7 @@ export async function alchemyWebhook(req: Request, res: Response) {
     const isValidAsset = txn.asset === 'USDC' || txn.asset === 'USDT'
     const isValidToAddress = txn.toAddress !== appConfig.presaleAddress
 
-    const isSupportedToken = supportedTokens.some(
+    const isSupportedToken = evmTokens.some(
       (token) => txn.rawContract.address === token.address,
     )
 

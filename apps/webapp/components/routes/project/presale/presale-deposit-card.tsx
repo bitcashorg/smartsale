@@ -44,7 +44,7 @@ export function PresaleDepositCard({
   )
 }
 
-const presaleAddress = '0x2C9DAAb3F463d6c6D248aCbeaAEe98687936374a'
+
 
 function PresaleDeposit() {
   const { address } = useAccount()
@@ -73,6 +73,7 @@ function PresaleDeposit() {
         token.symbol === selectedToken && token.chainName === selectedChain,
     )
     if (!tokenData) return toast.error('Token data not found')
+
 
     if (tokenData.chainType === 'evm') {
       const evmToken = tokenData as EVMTokenContractData
@@ -191,3 +192,5 @@ function PresaleDeposit() {
 
 const tokens =
   appConfig.env === 'dev' ? ['USDT', 'BITUSD'] : ['USDT', 'USDC', 'BITUSD']
+
+const presaleAddress = '0x2C9DAAb3F463d6c6D248aCbeaAEe98687936374a'
