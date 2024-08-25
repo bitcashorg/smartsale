@@ -7,6 +7,7 @@ import { Card, CardContent } from '@/components/ui/card'
 import { getDictionary } from '@/dictionaries'
 import { type ProjectWithAuction, getProjectBySlug } from '@/lib/projects'
 import { createSupabaseServerClient } from '@/services/supabase/server'
+import { getPresaleData, getProjectData } from '@/services/supabase/service'
 import type { ProjectPageProps } from '@/types/routing.type'
 import { redirect } from 'next/navigation'
 
@@ -17,7 +18,9 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
     dict,
   )) as ProjectWithAuction
   if (!project) redirect('/')
-  const presaleData = await getPresaleData(project.id)
+  const supabase = await createSupabaseServerClient()
+  const presaleData = await getPresaleData({ projectId: project.id, supabase })
+  const projectData = await getProjectData({ projectId: project.id, supabase })
   if (!project) redirect('/')
 
   return (
@@ -30,7 +33,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               heading="Pre-Sale Countdown"
             />
             <CardContent>
-              <ProjectPresaleData />
+              <ProjectPresaleData presaleData={presaleData} />
             </CardContent>
           </Card>
 
@@ -41,20 +44,4 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
       </ProjectHeader>
     </div>
   )
-}
-
-async function getPresaleData(projectId: number) {
-  const supabase = await createSupabaseServerClient()
-  const { data, error } = await supabase
-    .from('presale')
-    .select('*')
-    .eq('id', projectId)
-    .single()
-
-  if (error) {
-    console.error('Error checking presale data:', error)
-    throw error
-  }
-
-  return data
 }

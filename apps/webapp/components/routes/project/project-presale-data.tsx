@@ -2,35 +2,44 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { useSupabaseClient } from '@/services/supabase'
-import { Tables } from '@repo/supabase'
+import type { Tables } from '@repo/supabase'
 import type { SupabaseClient } from '@supabase/supabase-js'
 import { Handshake, Users } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { formatUnits } from 'viem'
-
-export function ProjectPresaleData() {
+export function ProjectPresaleData({
+  presaleData,
+}: {
+  presaleData: Tables<'presale'>
+}) {
   const [contributors, setContributors] = useState<string[]>([])
-  const [totalRaised, setTotalRaised] = useState<bigint>(BigInt(0))
+  const [totalRaised, setTotalRaised] = useState<bigint>(
+    BigInt(presaleData.total_raised),
+  )
   const supabase = useSupabaseClient()
 
   useEffect(() => {
     const fetchInitialData = async () => {
-      const { data: contributorsData } = await getPresaleContributors(supabase)
-      const { data: totalRaisedData } = await getTotalPresaleAmount(supabase)
-
+      const { data: contributorsData } = await getPresaleContributors(
+        supabase,
+        presaleData.id,
+      )
       setContributors(contributorsData || [])
-      setTotalRaised(BigInt(totalRaisedData || 0))
     }
 
     fetchInitialData()
 
     const subscription = supabase
-      .channel('presale_contributions')
+      .channel(`presale_contributions_${presaleData.id}`)
       .on(
         'postgres_changes',
-        { event: '*', schema: 'public', table: 'transfer' },
+        {
+          event: '*',
+          schema: 'public',
+          table: 'transfer',
+          filter: `presale_id=eq.${presaleData.id}`,
+        },
         (payload) => {
-          const { eventType, new: newData, old: oldData } = payload
           if (payload.eventType === 'INSERT') {
             setContributors((prev) =>
               Array.from(
@@ -52,7 +61,7 @@ export function ProjectPresaleData() {
     return () => {
       subscription.unsubscribe()
     }
-  }, [supabase])
+  }, [supabase, presaleData.id])
 
   return (
     <div className="grid gap-4 pt-5 md:grid-cols-2 md:gap-8">
@@ -85,11 +94,13 @@ export function ProjectPresaleData() {
 
 async function getPresaleContributors(
   supabase: SupabaseClient,
+  presaleId: number,
 ): Promise<PresaleContributorsResult> {
   try {
     const { data, error } = await supabase
       .from('transfer')
       .select('from')
+      .eq('presale_id', presaleId)
       .returns<{ from: string | null }[]>()
 
     if (error) throw error
@@ -124,51 +135,9 @@ async function getPresaleContributors(
   }
 }
 
-async function getTotalPresaleAmount(
-  supabase: SupabaseClient,
-): Promise<PresaleTotalAmountResult> {
-  try {
-    const { data, error } = await supabase
-      .from('transfer')
-      .select('amount')
-      .returns<{ amount: number | null }[]>()
-      .throwOnError()
-
-    if (!data || data.length === 0) {
-      return {
-        success: true,
-        data: 0,
-        message: 'No data found',
-      }
-    }
-
-    const totalAmount = data.reduce((sum, item) => sum + (item.amount || 0), 0)
-
-    return {
-      success: true,
-      data: totalAmount,
-      message: 'Total amount fetched successfully',
-    }
-  } catch (error) {
-    console.error('Unexpected error:', error)
-    return {
-      success: false,
-      error,
-      message: 'An unexpected error occurred',
-    }
-  }
-}
-
 interface PresaleContributorsResult {
   success: boolean
   data?: string[]
-  error?: unknown
-  message: string
-}
-
-interface PresaleTotalAmountResult {
-  success: boolean
-  data?: number
   error?: unknown
   message: string
 }
