@@ -37,6 +37,15 @@ logger.info(`Supported networks: ${networks.join(', ')}`)
  * @param res - The response object
  */
 export async function alchemyWebhook(req: Request, res: Response) {
+  try {
+    const evt = req.body as AlchemyWebhookEvent;
+    logger.info(`Alchemy webhook received: ${evt.id}`, { eventData: evt });
+    // ... rest of the function
+  } catch (error) {
+    logger.error(`Error processing Alchemy webhook: ${error.message}`, { error });
+    res.status(500).json({ error: 'Internal Server Error' });
+  }
+}
   const evt = req.body as AlchemyWebhookEvent
   logger.info(`Alchemy webhook received: ${evt.id}`)
   logger.info(JSON.stringify(evt))
