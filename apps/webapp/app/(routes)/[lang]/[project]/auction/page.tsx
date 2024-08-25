@@ -17,6 +17,8 @@ import {
   getProjectBySlug,
   getProjects,
 } from '@/lib/projects'
+import { createSupabaseServerClient } from '@/services/supabase'
+import { getPresaleData } from '@/services/supabase/service'
 import type { ProjectPageParams, ProjectPageProps } from '@/types/routing.type'
 import { redirect } from 'next/navigation'
 
@@ -25,6 +27,8 @@ export default async function AuctionPage({ params }: ProjectPageProps) {
   const p = await getProjectBySlug(params.project, dict)
   if (!p || (!p.auctionId && !p.registrationOpen)) redirect('/')
   const project = p as ProjectWithAuction
+  const supabase = await createSupabaseServerClient()
+  const presaleData = await getPresaleData({ projectId: project.id, supabase })
 
   return (
     <div className="flex min-h-[calc(83vh-4rem)] flex-col">
@@ -34,7 +38,7 @@ export default async function AuctionPage({ params }: ProjectPageProps) {
             <Card className="border-card/30 bg-card/60 backdrop-blur-lg">
               <Countdown targetDate={new Date()} heading="Auction Countdown" />
               <CardContent>
-                <ProjectPresaleData />
+                <ProjectPresaleData presaleData={presaleData} />
               </CardContent>
             </Card>
 

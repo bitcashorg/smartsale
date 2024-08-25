@@ -114,11 +114,11 @@ export type Database = {
         }
         Relationships: [
           {
-            foreignKeyName: 'auction_project_id_fkey'
-            columns: ['project_id']
+            foreignKeyName: "auction_project_id_fkey"
+            columns: ["project_id"]
             isOneToOne: false
-            referencedRelation: 'project'
-            referencedColumns: ['id']
+            referencedRelation: "project"
+            referencedColumns: ["id"]
           },
         ]
       }
@@ -201,6 +201,7 @@ export type Database = {
         Row: {
           account: string
           address: string
+          close_timestampz: string | null
           created_at: string
           end_timestamptz: string
           fundraising_goal: number
@@ -208,10 +209,12 @@ export type Database = {
           max_allocation: number
           project_id: number
           start_timestamptz: string
+          total_raised: number
         }
         Insert: {
           account: string
           address: string
+          close_timestampz?: string | null
           created_at?: string
           end_timestamptz: string
           fundraising_goal: number
@@ -219,10 +222,12 @@ export type Database = {
           max_allocation: number
           project_id: number
           start_timestamptz: string
+          total_raised?: number
         }
         Update: {
           account?: string
           address?: string
+          close_timestampz?: string | null
           created_at?: string
           end_timestamptz?: string
           fundraising_goal?: number
@@ -230,14 +235,15 @@ export type Database = {
           max_allocation?: number
           project_id?: number
           start_timestamptz?: string
+          total_raised?: number
         }
         Relationships: [
           {
-            foreignKeyName: 'presale_project_id_fkey'
-            columns: ['project_id']
+            foreignKeyName: "presale_project_id_fkey"
+            columns: ["project_id"]
             isOneToOne: false
-            referencedRelation: 'project'
-            referencedColumns: ['id']
+            referencedRelation: "project"
+            referencedColumns: ["id"]
           },
         ]
       }
@@ -268,32 +274,32 @@ export type Database = {
         }
         Relationships: [
           {
-            foreignKeyName: 'presale_deposit_deposit_hash_fkey'
-            columns: ['deposit_hash']
+            foreignKeyName: "presale_deposit_deposit_hash_fkey"
+            columns: ["deposit_hash"]
             isOneToOne: false
-            referencedRelation: 'transaction'
-            referencedColumns: ['hash']
+            referencedRelation: "transaction"
+            referencedColumns: ["hash"]
           },
           {
-            foreignKeyName: 'presale_deposit_issuance_hash_fkey'
-            columns: ['issuance_hash']
+            foreignKeyName: "presale_deposit_issuance_hash_fkey"
+            columns: ["issuance_hash"]
             isOneToOne: false
-            referencedRelation: 'transaction'
-            referencedColumns: ['hash']
+            referencedRelation: "transaction"
+            referencedColumns: ["hash"]
           },
           {
-            foreignKeyName: 'presale_deposit_presale_id_fkey'
-            columns: ['presale_id']
+            foreignKeyName: "presale_deposit_presale_id_fkey"
+            columns: ["presale_id"]
             isOneToOne: false
-            referencedRelation: 'presale'
-            referencedColumns: ['id']
+            referencedRelation: "presale"
+            referencedColumns: ["id"]
           },
           {
-            foreignKeyName: 'presale_deposits_presale_id_fkey'
-            columns: ['presale_id']
+            foreignKeyName: "presale_deposits_presale_id_fkey"
+            columns: ["presale_id"]
             isOneToOne: false
-            referencedRelation: 'presale'
-            referencedColumns: ['id']
+            referencedRelation: "presale"
+            referencedColumns: ["id"]
           },
         ]
       }
@@ -345,27 +351,27 @@ export type Database = {
       transaction: {
         Row: {
           chain_id: number | null
-          chain_type: Database['public']['Enums']['chain_type'] | null
+          chain_type: Database["public"]["Enums"]["chain_type"] | null
           created_at: string
           final: boolean | null
           hash: string
-          trx_type: Database['public']['Enums']['trx_type'] | null
+          trx_type: Database["public"]["Enums"]["trx_type"] | null
         }
         Insert: {
           chain_id?: number | null
-          chain_type?: Database['public']['Enums']['chain_type'] | null
+          chain_type?: Database["public"]["Enums"]["chain_type"] | null
           created_at?: string
           final?: boolean | null
           hash: string
-          trx_type?: Database['public']['Enums']['trx_type'] | null
+          trx_type?: Database["public"]["Enums"]["trx_type"] | null
         }
         Update: {
           chain_id?: number | null
-          chain_type?: Database['public']['Enums']['chain_type'] | null
+          chain_type?: Database["public"]["Enums"]["chain_type"] | null
           created_at?: string
           final?: boolean | null
           hash?: string
-          trx_type?: Database['public']['Enums']['trx_type'] | null
+          trx_type?: Database["public"]["Enums"]["trx_type"] | null
         }
         Relationships: []
       }
@@ -426,11 +432,11 @@ export type Database = {
         }
         Relationships: [
           {
-            foreignKeyName: 'whitelist_project_id_fkey'
-            columns: ['project_id']
+            foreignKeyName: "whitelist_project_id_fkey"
+            columns: ["project_id"]
             isOneToOne: false
-            referencedRelation: 'project'
-            referencedColumns: ['id']
+            referencedRelation: "project"
+            referencedColumns: ["id"]
           },
         ]
       }
@@ -442,8 +448,8 @@ export type Database = {
       [_ in never]: never
     }
     Enums: {
-      chain_type: 'evm' | 'eos' | 'solana' | 'cosmos'
-      trx_type: 'presale_deposit' | 'usdcred_deposit' | 'usdcred_withdrawal'
+      chain_type: "evm" | "eos" | "solana" | "cosmos"
+      trx_type: "presale_deposit" | "usdcred_deposit" | "usdcred_withdrawal"
     }
     CompositeTypes: {
       [_ in never]: never
@@ -451,27 +457,27 @@ export type Database = {
   }
 }
 
-type PublicSchema = Database[Extract<keyof Database, 'public'>]
+type PublicSchema = Database[Extract<keyof Database, "public">]
 
 export type Tables<
   PublicTableNameOrOptions extends
-    | keyof (PublicSchema['Tables'] & PublicSchema['Views'])
+    | keyof (PublicSchema["Tables"] & PublicSchema["Views"])
     | { schema: keyof Database },
   TableName extends PublicTableNameOrOptions extends { schema: keyof Database }
-    ? keyof (Database[PublicTableNameOrOptions['schema']]['Tables'] &
-        Database[PublicTableNameOrOptions['schema']]['Views'])
+    ? keyof (Database[PublicTableNameOrOptions["schema"]]["Tables"] &
+        Database[PublicTableNameOrOptions["schema"]]["Views"])
     : never = never,
 > = PublicTableNameOrOptions extends { schema: keyof Database }
-  ? (Database[PublicTableNameOrOptions['schema']]['Tables'] &
-      Database[PublicTableNameOrOptions['schema']]['Views'])[TableName] extends {
+  ? (Database[PublicTableNameOrOptions["schema"]]["Tables"] &
+      Database[PublicTableNameOrOptions["schema"]]["Views"])[TableName] extends {
       Row: infer R
     }
     ? R
     : never
-  : PublicTableNameOrOptions extends keyof (PublicSchema['Tables'] &
-        PublicSchema['Views'])
-    ? (PublicSchema['Tables'] &
-        PublicSchema['Views'])[PublicTableNameOrOptions] extends {
+  : PublicTableNameOrOptions extends keyof (PublicSchema["Tables"] &
+        PublicSchema["Views"])
+    ? (PublicSchema["Tables"] &
+        PublicSchema["Views"])[PublicTableNameOrOptions] extends {
         Row: infer R
       }
       ? R
@@ -480,19 +486,19 @@ export type Tables<
 
 export type TablesInsert<
   PublicTableNameOrOptions extends
-    | keyof PublicSchema['Tables']
+    | keyof PublicSchema["Tables"]
     | { schema: keyof Database },
   TableName extends PublicTableNameOrOptions extends { schema: keyof Database }
-    ? keyof Database[PublicTableNameOrOptions['schema']]['Tables']
+    ? keyof Database[PublicTableNameOrOptions["schema"]]["Tables"]
     : never = never,
 > = PublicTableNameOrOptions extends { schema: keyof Database }
-  ? Database[PublicTableNameOrOptions['schema']]['Tables'][TableName] extends {
+  ? Database[PublicTableNameOrOptions["schema"]]["Tables"][TableName] extends {
       Insert: infer I
     }
     ? I
     : never
-  : PublicTableNameOrOptions extends keyof PublicSchema['Tables']
-    ? PublicSchema['Tables'][PublicTableNameOrOptions] extends {
+  : PublicTableNameOrOptions extends keyof PublicSchema["Tables"]
+    ? PublicSchema["Tables"][PublicTableNameOrOptions] extends {
         Insert: infer I
       }
       ? I
@@ -501,19 +507,19 @@ export type TablesInsert<
 
 export type TablesUpdate<
   PublicTableNameOrOptions extends
-    | keyof PublicSchema['Tables']
+    | keyof PublicSchema["Tables"]
     | { schema: keyof Database },
   TableName extends PublicTableNameOrOptions extends { schema: keyof Database }
-    ? keyof Database[PublicTableNameOrOptions['schema']]['Tables']
+    ? keyof Database[PublicTableNameOrOptions["schema"]]["Tables"]
     : never = never,
 > = PublicTableNameOrOptions extends { schema: keyof Database }
-  ? Database[PublicTableNameOrOptions['schema']]['Tables'][TableName] extends {
+  ? Database[PublicTableNameOrOptions["schema"]]["Tables"][TableName] extends {
       Update: infer U
     }
     ? U
     : never
-  : PublicTableNameOrOptions extends keyof PublicSchema['Tables']
-    ? PublicSchema['Tables'][PublicTableNameOrOptions] extends {
+  : PublicTableNameOrOptions extends keyof PublicSchema["Tables"]
+    ? PublicSchema["Tables"][PublicTableNameOrOptions] extends {
         Update: infer U
       }
       ? U
@@ -522,13 +528,13 @@ export type TablesUpdate<
 
 export type Enums<
   PublicEnumNameOrOptions extends
-    | keyof PublicSchema['Enums']
+    | keyof PublicSchema["Enums"]
     | { schema: keyof Database },
   EnumName extends PublicEnumNameOrOptions extends { schema: keyof Database }
-    ? keyof Database[PublicEnumNameOrOptions['schema']]['Enums']
+    ? keyof Database[PublicEnumNameOrOptions["schema"]]["Enums"]
     : never = never,
 > = PublicEnumNameOrOptions extends { schema: keyof Database }
-  ? Database[PublicEnumNameOrOptions['schema']]['Enums'][EnumName]
-  : PublicEnumNameOrOptions extends keyof PublicSchema['Enums']
-    ? PublicSchema['Enums'][PublicEnumNameOrOptions]
+  ? Database[PublicEnumNameOrOptions["schema"]]["Enums"][EnumName]
+  : PublicEnumNameOrOptions extends keyof PublicSchema["Enums"]
+    ? PublicSchema["Enums"][PublicEnumNameOrOptions]
     : never
