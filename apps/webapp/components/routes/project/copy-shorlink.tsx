@@ -38,11 +38,11 @@ export function CopyShortlinkIcon() {
     if (!data.short_link) {
       const { data: dubCoShortLink, error: dubCoError } =
         await generateShortLink(
-          'https://bitlauncher.ai' + window.location.pathname + param,
+          `https://bitlauncher.ai${window.location.pathname}${param}`,
         )
 
       if (dubCoError) {
-        console.error('❌ Failed to check share link:', dubCoError)
+        console.error('❌ Failed to generate short link:', dubCoError)
         setStatus('error')
 
         return { data: null, error: dubCoError }
@@ -84,16 +84,14 @@ export function CopyShortlinkIcon() {
 
   return (
     <button
+      type="button"
+      key={'share-shortlink'}
       onClick={copyToClipboard}
       className="relative size-[58px] rounded-full [&>svg]:size-[36px]"
     >
       <AnimatePresence>{iconsMap[status]}</AnimatePresence>
     </button>
   )
-}
-
-interface CopyShortlinkIconProps {
-  linkPath: string
 }
 
 const iconsMap = {

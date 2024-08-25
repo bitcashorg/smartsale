@@ -1,9 +1,12 @@
 'use client'
 
+import { differenceInSeconds } from 'date-fns'
 import { useEffect, useState } from 'react'
 
-export function Countdown() {
-  const targetDate = new Date('July 30, 2024')
+export function Countdown({
+  targetDate,
+  heading,
+}: { targetDate: Date; heading: string }) {
   const [timeLeft, setTimeLeft] = useState({
     days: '00',
     hours: '00',
@@ -14,39 +17,36 @@ export function Countdown() {
   useEffect(() => {
     const interval = setInterval(() => {
       const now = new Date()
-      const timeDiff = targetDate.getTime() - now.getTime()
+      const timeDiff = differenceInSeconds(targetDate, now)
 
       if (timeDiff > 0) {
-        const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24))
+        const days = Math.floor(timeDiff / (24 * 60 * 60))
           .toString()
           .padStart(2, '0')
-        const hours = Math.floor(
-          (timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
-        )
+        const hours = Math.floor((timeDiff % (24 * 60 * 60)) / (60 * 60))
           .toString()
           .padStart(2, '0')
-        const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60))
+        const minutes = Math.floor((timeDiff % (60 * 60)) / 60)
           .toString()
           .padStart(2, '0')
-        const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000)
-          .toString()
-          .padStart(2, '0')
+        const seconds = (timeDiff % 60).toString().padStart(2, '0')
 
         setTimeLeft({ days, hours, minutes, seconds })
       } else {
         clearInterval(interval)
+        setTimeLeft({ days: '00', hours: '00', minutes: '00', seconds: '00' })
       }
     }, 1000)
 
     return () => clearInterval(interval)
-  }, [])
+  }, [targetDate])
 
   return (
     <div className="mt-5 max-h-[200px] px-8">
       <div className="flex justify-center">
         <h2 className="heading3">
           {/* <TimerIcon className="inline" /> */}
-          Pre-Sale Countdown
+          {heading}
         </h2>
 
         <div />

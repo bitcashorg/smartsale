@@ -32,7 +32,7 @@ export default async function AuctionPage({ params }: ProjectPageProps) {
         <div className="container">
           <div className="grid grid-cols-1 gap-8 mb-10 lg:grid-cols-2">
             <Card className="border-card/30 bg-card/60 backdrop-blur-lg">
-              <Countdown />
+              <Countdown targetDate={new Date()} heading="Auction Countdown" />
               <CardContent>
                 <ProjectPresaleData />
               </CardContent>
