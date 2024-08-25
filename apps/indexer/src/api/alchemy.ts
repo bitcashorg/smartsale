@@ -6,7 +6,7 @@ import type {
   AlchemyWebhookEvent,
 } from '../../../../packages/alchemy/src'
 
-import { addressActivityTask } from '@repo/trigger'
+import { addressActivityTask } from '@repo/jobs'
 import { prodChains } from 'app-env'
 import type { Request, Response } from 'express'
 import { appConfig } from '~/config'

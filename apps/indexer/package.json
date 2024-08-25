@@ -15,7 +15,7 @@
   "dependencies": {
     "@dfuse/client": "^0.3.21",
     "@repo/supabase": "workspace:*",
-    "@repo/trigger": "workspace:*",
+    "@repo/jobs": "workspace:*",
     "@repo/alchemy": "workspace:*",
     "@repo/tokens": "workspace:*",
     "@sentry/integrations": "^7.114.0",
