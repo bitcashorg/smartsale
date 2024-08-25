@@ -53,7 +53,7 @@
     "ai": "^3.2.35",
     "@repo/contracts": "workspace:*",
     "app-env": "workspace:*",
-    "app-lib": "workspace:*",
+    "@repo/utils": "workspace:*",
     "axios": "^1.7.2",
     "camelize-ts": "^3.0.0",
     "class-variance-authority": "^0.7.0",

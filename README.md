@@ -67,7 +67,7 @@ Contains smart contracts for the Smartsale platform, including auction contracts
 
 Provides environment configurations and utilities for the Smartsale platform, ensuring that different environments (development, testing, production) can be managed and configured efficiently.
 
-#### Smartsale Lib (`/packages/app-lib`)
+#### Smartsale Lib (`/packages/@repo/utils`)
 
 A library of reusable code for the Smartsale platform, including utility functions, blockchain interaction helpers, and common components used across the project.
 

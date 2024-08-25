@@ -9,7 +9,7 @@ import {
   extractTitleAndDescriptionNested,
   injectTextAfterTranslation,
 } from '@/services/datocms/translation/utils'
-import { getErrorMessage } from 'app-lib'
+import { getErrorMessage } from '../../../packages/utils/src'
 import * as fs from 'fs/promises'
 import _ from 'lodash'
 

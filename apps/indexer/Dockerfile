@@ -12,7 +12,7 @@ COPY apps/trigger/package.json ./apps/trigger/package.json
 COPY apps/alchemy/package.json ./apps/alchemy/package.json
 COPY packages/app-env/package.json ./packages/app-env/package.json
 COPY packages/@repo/contracts/package.json ./packages/@repo/contracts/package.json
-COPY packages/app-lib/package.json ./packages/app-lib/package.json
+COPY packages/@repo/utils/package.json ./packages/@repo/utils/package.json
 COPY packages/config-ts/package.json ./packages/config-ts/package.json
 COPY packages/tokens/package.json ./packages/tokens/package.json
 # Copy the lock file

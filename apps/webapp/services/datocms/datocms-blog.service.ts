@@ -2,7 +2,7 @@ import * as fs from 'fs'
 import path from 'path'
 import type { Lang } from '@/dictionaries/locales'
 import { getFilePath, parseFile } from '@/lib/file'
-import { getErrorMessage } from 'app-lib'
+import { getErrorMessage } from '../../../../packages/utils/src'
 import { uniq } from 'lodash'
 import {
   type BlogArticleRecord,

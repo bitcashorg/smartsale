@@ -9,7 +9,7 @@ import {
 } from '@/components/ui/table'
 import { useSupabaseClient } from '@/services/supabase'
 import { TestnetEasyAuction } from '@repo/contracts'
-import { formatAddress } from 'app-lib'
+import { formatAddress } from '../../../../../../packages/utils/src'
 import BN from 'bn.js'
 import { format } from 'date-fns'
 import Link from 'next/link'
