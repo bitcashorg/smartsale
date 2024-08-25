@@ -8,7 +8,7 @@ import {
 import { useSession } from '@/hooks/use-session'
 import { cn } from '@/lib/utils'
 import { useSupabaseClient } from '@/services/supabase'
-import { presaleInsertSchema } from '@repo/supabase'
+import { presaleInsertSchema } from '../../../../../packages/supabase/src'
 import { useQuery } from '@tanstack/react-query'
 import { formatAddress, fromEntries } from '../../../../../packages/utils/src'
 import { type FunctionComponent, useState } from 'react'

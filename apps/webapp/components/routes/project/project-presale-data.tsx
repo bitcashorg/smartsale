@@ -2,7 +2,7 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { useSupabaseClient } from '@/services/supabase'
-import { Tables } from '@repo/supabase'
+import { Tables } from '../../../../../packages/supabase/src'
 import type { SupabaseClient } from '@supabase/supabase-js'
 import { Handshake, Users } from 'lucide-react'
 import { useEffect, useState } from 'react'

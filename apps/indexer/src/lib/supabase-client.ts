@@ -1,4 +1,4 @@
-import type { Database, TablesInsert } from '@repo/supabase'
+import type { Database, TablesInsert } from '../../../../packages/supabase/src'
 import { createClient } from '@supabase/supabase-js'
 import { appConfig } from '~/config'
 

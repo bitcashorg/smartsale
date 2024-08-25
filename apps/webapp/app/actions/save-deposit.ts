@@ -6,7 +6,7 @@ import {
   type TablesInsert,
   presaleDepositInsertSchema,
   transactionInsertSchema,
-} from '@repo/supabase'
+} from '../../../../packages/supabase/src'
 
 
 export async function saveDeposit(transfer: TablesInsert<'presale_deposit'>): Promise<{
