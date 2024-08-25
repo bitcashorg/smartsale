@@ -16,6 +16,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
     params.project,
     dict,
   )) as ProjectWithAuction
+  if (!project) redirect('/')
   const presaleData = await getPresaleData(project.id)
   if (!project) redirect('/')
 
