@@ -4,7 +4,7 @@ import type {
   AlchemyActivityEvent,
   AlchemyNetwork,
   AlchemyWebhookEvent,
-} from '../../../../packages/alchemy/src'
+} from '@repo/alchemy'
 
 import { addressActivityTask } from '@repo/jobs'
 import { evmTokens } from '@repo/tokens'

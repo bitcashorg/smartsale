@@ -18,10 +18,10 @@ import {
 import { appConfig } from '@/lib/config'
 import { useSupabaseClient } from '@/services/supabase'
 import { TestnetBLPL } from '@repo/contracts'
+import type { Tables } from '@repo/supabase'
+import { formatAddress } from '@repo/utils'
 import { useEffect, useState } from 'react'
 import { useAccount } from 'wagmi'
-import type { Tables } from '../../../../../../packages/supabase/src'
-import { formatAddress } from '../../../../../../packages/utils/src'
 
 export function PresaleTransactionsCard() {
   const { address } = useAccount()

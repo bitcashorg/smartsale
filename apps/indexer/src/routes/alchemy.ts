@@ -5,7 +5,6 @@ import type {
   AlchemyWebhookEvent,
 } from '@repo/alchemy'
 import { addressActivityTask } from '@repo/jobs'
-import { Network } from 'alchemy-sdk'
 import { prodChains } from 'app-env'
 import type { Request, Response } from 'express'
 import { appConfig } from '~/config'
@@ -38,13 +37,13 @@ logger.info(`Supported networks: ${networks.join(', ')}`)
  */
 export async function alchemyWebhook(req: Request, res: Response) {
   const evt = req.body as AlchemyWebhookEvent
-  logger.info(`Alchemy webhook received: ${evt.id}`)
-  logger.info(JSON.stringify(evt))
-  // TODO: restore alchemy signature validation
-  if (!validateAlchemySignature(req))
-    return res.status(401).send('Unauthorized')
-  // logger.info('Validated Alchemy webhook 😀')
+  logger.info(`Alchemy webhook received: ${JSON.stringify(evt)}`)
 
+  // TODO: restore alchemy signature validation
+  if (!validateAlchemySignature(req)) {
+    logger.error('Alchemy webhook invalid signature')
+    return res.status(401).send('Unauthorized')
+  }
   const { network, activity } = evt.event as AlchemyActivityEvent
 
   // Validate event type and network
