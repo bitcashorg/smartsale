@@ -1,15 +1,15 @@
 import crypto from 'crypto'
-import type {
-  AlchemyActivityEvent,
-  AlchemyNetwork,
-  AlchemyWebhookEvent,
-} from '../../../../packages/alchemy/src'
 import { addressActivityTask } from '@repo/jobs'
 import { Network } from 'alchemy-sdk'
 import { prodChains } from 'app-env'
 import type { Request, Response } from 'express'
 import { appConfig } from '~/config'
 import { logger } from '~/lib/logger'
+import type {
+  AlchemyActivityEvent,
+  AlchemyNetwork,
+  AlchemyWebhookEvent,
+} from '../../../../packages/alchemy/src'
 
 // Mapping of chain IDs to Alchemy SDK Network types
 const chainIdToNetwork: Record<number, AlchemyNetwork> = {

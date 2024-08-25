@@ -2,11 +2,11 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { useSupabaseClient } from '@/services/supabase'
-import { Tables } from '../../../../../packages/supabase/src'
 import type { SupabaseClient } from '@supabase/supabase-js'
 import { Handshake, Users } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { formatUnits } from 'viem'
+import { Tables } from '../../../../../packages/supabase/src'
 
 export function ProjectPresaleData() {
   const [contributors, setContributors] = useState<string[]>([])

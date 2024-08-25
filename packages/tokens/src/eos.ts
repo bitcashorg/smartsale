@@ -1,4 +1,4 @@
-import { AntelopeToken } from './types'
+import type { AntelopeToken } from './types'
 
 export const antelopeTokens: AntelopeToken[] = [
   {
@@ -8,7 +8,7 @@ export const antelopeTokens: AntelopeToken[] = [
     chainType: 'antelope',
     chainName: 'EOS',
     decimals: 4,
-    isStable: true
+    isStable: true,
   },
   {
     address: 'tethertether',
@@ -17,6 +17,6 @@ export const antelopeTokens: AntelopeToken[] = [
     chainType: 'antelope',
     chainName: 'EOS',
     decimals: 4,
-    isStable: true
+    isStable: true,
   },
 ]

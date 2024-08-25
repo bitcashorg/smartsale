@@ -5,11 +5,11 @@ import {
   type Tables,
   type TablesInsert,
   presaleDepositInsertSchema,
-  transactionInsertSchema,
-} from '../../../../packages/supabase/src'
+} from '@repo/supabase'
 
-
-export async function saveDeposit(transfer: TablesInsert<'presale_deposit'>): Promise<{
+export async function saveDeposit(
+  transfer: TablesInsert<'presale_deposit'>,
+): Promise<{
   success: boolean
   message: string
   data?: Tables<'presale_deposit'>
@@ -28,11 +28,15 @@ export async function saveDeposit(transfer: TablesInsert<'presale_deposit'>): Pr
     const supabase = await createSupabaseServerClient()
     const transaction = await supabase
       .from('transaction')
-      .upsert({
-        hash: parseResult.data.deposit_hash!,
-        trx_type: 'presale_deposit',
-        ...parseResult.data
-      }, { onConflict: 'hash' })
+      .upsert(
+        {
+          hash:
+            parseResult.data.deposit_hash,
+          trx_type: 'presale_deposit',
+          ...parseResult.data,
+        },
+        { onConflict: 'hash' },
+      )
       .select()
 
     if (transaction.error) {

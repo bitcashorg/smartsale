@@ -8,7 +8,6 @@ import { useErc20Balance } from '@/hooks/use-balance'
 import { useSession } from '@/hooks/use-session'
 import { cn } from '@/lib/utils'
 import { TestnetUSDCred } from '@repo/contracts'
-import { runtimeEnv } from '../../../../../packages/utils/src'
 import type { VariantProps } from 'class-variance-authority'
 import { LucideWallet } from 'lucide-react'
 import Link from 'next/link'
@@ -17,6 +16,7 @@ import { useEffect, useState } from 'react'
 // import { bitcashLogin } from '@/lib/esr'
 import { useToggle } from 'react-use'
 import { useAccount } from 'wagmi'
+import { runtimeEnv } from '../../../../../packages/utils/src'
 
 export function BitcashAccessButton({
   defaultContent = 'login',

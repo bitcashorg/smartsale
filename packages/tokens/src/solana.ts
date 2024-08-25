@@ -1,4 +1,4 @@
-import { type SolanaToken } from './types'
+import type { SolanaToken } from './types'
 
 const baseTokens = [
   {
@@ -11,7 +11,7 @@ const baseTokens = [
   },
 ]
 
-export const solanaTokens: SolanaToken[] = baseTokens.map(token => ({
+export const solanaTokens: SolanaToken[] = baseTokens.map((token) => ({
   ...token,
   decimals: 6,
   image: `https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/${token.address}/logo.png`,

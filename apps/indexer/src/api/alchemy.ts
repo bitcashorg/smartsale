@@ -7,11 +7,11 @@ import type {
 } from '../../../../packages/alchemy/src'
 
 import { addressActivityTask } from '@repo/jobs'
+import { evmTokens } from '@repo/tokens'
 import { prodChains } from 'app-env'
 import type { Request, Response } from 'express'
 import { appConfig } from '~/config'
 import { logger } from '~/lib/logger'
-import { evmTokens } from '@repo/tokens'
 // import {isAddressRegisteredForPresale} from '~/src/lib/supabase-client';
 
 // Mapping of chain IDs to Alchemy SDK Network types

@@ -1,4 +1,3 @@
-
 export interface BaseToken {
   symbol: string
   chainName: string

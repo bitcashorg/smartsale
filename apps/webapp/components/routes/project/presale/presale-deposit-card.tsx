@@ -21,11 +21,11 @@ import {
 } from '@/lib/eos'
 import type { ProjectWithAuction } from '@/lib/projects'
 import { cn } from '@/lib/utils'
+import { tokens } from '@repo/tokens'
 import { useMemo, useState } from 'react'
 import toast from 'react-hot-toast'
 import { erc20Abi, getAddress, parseUnits } from 'viem'
 import { useAccount, useChainId, useSwitchChain, useWriteContract } from 'wagmi'
-import { tokens } from '@repo/tokens'
 
 export function PresaleDepositCard({
   project,
@@ -40,7 +40,8 @@ export function PresaleDepositCard({
 
       <PresaleDeposit />
     </ProjectGridCard>
-  )}
+  )
+}
 
 const stables = ['USDT', 'USDC', 'BITUSD']
 
@@ -76,7 +77,7 @@ function PresaleDeposit() {
     if (!tokenData) return toast.error('Token data not found')
 
     if (tokenData.chainType === 'evm') {
-      const evmToken = tokenData 
+      const evmToken = tokenData
       if (chainId !== evmToken.chainId) {
         await switchChain({ chainId: evmToken.chainId })
       } else {
@@ -106,7 +107,7 @@ function PresaleDeposit() {
                 created_at: new Date().toISOString(),
                 deposit_hash: trxHash,
                 issuance_hash: null,
-                presale_id: 1
+                presale_id: 1,
               })
             },
           },
@@ -187,4 +188,3 @@ function PresaleDeposit() {
     </div>
   )
 }
-

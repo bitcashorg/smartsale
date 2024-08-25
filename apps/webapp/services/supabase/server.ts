@@ -1,9 +1,9 @@
 'use server'
 
 import { appConfig } from '@/lib/config'
-import type { Database } from '../../../../packages/supabase/src'
 import { type CookieOptions, createServerClient } from '@supabase/ssr'
 import { cookies } from 'next/headers'
+import type { Database } from '../../../../packages/supabase/src'
 
 export async function createSupabaseServerClient() {
   const cookieStore = cookies()

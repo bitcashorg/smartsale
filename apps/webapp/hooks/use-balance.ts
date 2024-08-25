@@ -1,10 +1,10 @@
 import { wagmiConfig } from '@/components/layout/providers'
 import { watchBlockNumber } from '@wagmi/core'
 import { eosEvmTestnet } from 'app-env'
-import { numberWithCommas } from '../../../packages/utils/src'
 import { useEffect } from 'react'
 import { type Abi, type Address, formatUnits } from 'viem'
 import { useBalance, useReadContracts } from 'wagmi'
+import { numberWithCommas } from '../../../packages/utils/src'
 
 export function useNativeBalance(address?: Address) {
   const balance = useBalance({ address, chainId: eosEvmTestnet.id })
