@@ -15,18 +15,17 @@ import {
 } from '@/components/ui/select'
 import { useSession } from '@/hooks/use-session'
 import { useSigningRequest } from '@/hooks/use-signing-request'
-import { appConfig } from '@/lib/config'
 import {
   genBitusdDepositSigningRequest,
   genUsdtDepositSigningRequest,
 } from '@/lib/eos'
 import type { ProjectWithAuction } from '@/lib/projects'
 import { cn } from '@/lib/utils'
-import { type EVMTokenContractData, TokenContractData } from 'app-contracts'
 import { useMemo, useState } from 'react'
 import toast from 'react-hot-toast'
-import { parseUnits } from 'viem'
+import { erc20Abi, getAddress, parseUnits } from 'viem'
 import { useAccount, useChainId, useSwitchChain, useWriteContract } from 'wagmi'
+import { tokens } from '@repo/tokens'
 
 export function PresaleDepositCard({
   project,
@@ -41,10 +40,11 @@ export function PresaleDepositCard({
 
       <PresaleDeposit />
     </ProjectGridCard>
-  )
-}
+  )}
 
+const stables = ['USDT', 'USDC', 'BITUSD']
 
+const presaleAddress = '0x2C9DAAb3F463d6c6D248aCbeaAEe98687936374a'
 
 function PresaleDeposit() {
   const { address } = useAccount()
@@ -58,7 +58,7 @@ function PresaleDeposit() {
   const chainId = useChainId()
 
   const availableChains = useMemo(() => {
-    return appConfig.stables
+    return tokens
       .filter((token) => token.symbol === selectedToken)
       .map((token) => token.chainName)
   }, [selectedToken])
@@ -67,23 +67,23 @@ function PresaleDeposit() {
     if (!address) return loginOrConnect()
     if (!amount) return toast.error('Please enter a deposit amount')
     if (!selectedChain) return toast.error('Please select a blockchain network')
-
-    const tokenData = appConfig.stables.find(
+    // Find the token data for the selected token and chain
+    const tokenData = tokens.find(
       (token) =>
         token.symbol === selectedToken && token.chainName === selectedChain,
     )
+    // Show an error if the token data is not found
     if (!tokenData) return toast.error('Token data not found')
 
-
     if (tokenData.chainType === 'evm') {
-      const evmToken = tokenData as EVMTokenContractData
+      const evmToken = tokenData 
       if (chainId !== evmToken.chainId) {
         await switchChain({ chainId: evmToken.chainId })
       } else {
         writeContract(
           {
-            abi: evmToken.abi,
-            address: evmToken.address,
+            abi: erc20Abi,
+            address: getAddress(evmToken.address),
             functionName: 'transfer',
             args: [
               presaleAddress,
@@ -149,7 +149,7 @@ function PresaleDeposit() {
               <SelectValue placeholder={`USDT`} />
             </SelectTrigger>
             <SelectContent position="popper">
-              {tokens.map((token) => (
+              {stables.map((token) => (
                 <SelectItem key={token} value={token}>
                   {token}
                 </SelectItem>
@@ -190,7 +190,3 @@ function PresaleDeposit() {
   )
 }
 
-const tokens =
-  appConfig.env === 'dev' ? ['USDT', 'BITUSD'] : ['USDT', 'USDC', 'BITUSD']
-
-const presaleAddress = '0x2C9DAAb3F463d6c6D248aCbeaAEe98687936374a'

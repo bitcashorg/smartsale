@@ -18,6 +18,7 @@
     "vercel:install": "npm i -g node-gyp; bun install"
   },
   "dependencies": {
+    "@repo/tokens": "workspace:*",
     "@ai-sdk/anthropic": "^0.0.32",
     "@ai-sdk/openai": "^0.0.39",
     "@blockmatic/hooks-utils": "^3.0.0",
