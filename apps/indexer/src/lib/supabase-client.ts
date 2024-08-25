@@ -82,3 +82,18 @@ export async function isAddressRegisteredForPresale(
 
   return !!data
 }
+
+export async function getPresaleData(projectId: number) {
+  const { data, error } = await supabase
+    .from('presale')
+    .select('*')
+    .eq('id', projectId)
+    .single()
+
+  if (error) {
+    console.error('Error checking presale data:', error)
+    throw error
+  }
+
+  return data
+}
