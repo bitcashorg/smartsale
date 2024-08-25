@@ -69,7 +69,12 @@ This package integrates with Supabase, providing real-time database functionalit
 
 The Tokens package likely contains definitions, interfaces, and utilities related to the various tokens used within the SmartSale ecosystem. This could include ERC20 token implementations, token standards, and related blockchain interactions.
 
-For more details on specific packages, refer to their respective README files and package.json configurations.
+For more details on specific packages, refer to their respective README files:
+- [Alchemy](./packages/alchemy/README.md)
+- [Jobs](./packages/jobs/README.md)
+- [Supabase](./packages/supabase/README.md)
+- [Tokens](./packages/tokens/README.md)
+You can also check their package.json configurations for additional information.
 
 ### Hardhat (`/hardhat`)
 
