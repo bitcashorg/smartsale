@@ -1,4 +1,4 @@
-import type { AlchemyActivity, AlchemyWebhookEvent } from '@repo/alchemy'
+import type { AlchemyActivity, AlchemyWebhookEvent } from '../../../../packages/alchemy/src'
 import { logger, task } from '@trigger.dev/sdk/v3'
 import { isAddress, parseUnits } from 'viem'
 import { issuePresaleTokens } from '../lib/presale-issuer'

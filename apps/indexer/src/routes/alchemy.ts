@@ -1,18 +1,15 @@
 import crypto from 'crypto'
-
 import type {
   AlchemyActivityEvent,
   AlchemyNetwork,
   AlchemyWebhookEvent,
 } from '../../../../packages/alchemy/src'
-
 import { addressActivityTask } from '@repo/trigger'
+import { Network } from 'alchemy-sdk'
 import { prodChains } from 'app-env'
 import type { Request, Response } from 'express'
 import { appConfig } from '~/config'
 import { logger } from '~/lib/logger'
-import { evmTokens } from '@repo/tokens'
-// import {isAddressRegisteredForPresale} from '~/src/lib/supabase-client';
 
 // Mapping of chain IDs to Alchemy SDK Network types
 const chainIdToNetwork: Record<number, AlchemyNetwork> = {
@@ -41,11 +38,11 @@ logger.info(`Supported networks: ${networks.join(', ')}`)
  */
 export async function alchemyWebhook(req: Request, res: Response) {
   const evt = req.body as AlchemyWebhookEvent
-  logger.info(`Alchemy webhook received: ${JSON.stringify(evt)}`)
-
+  logger.info(`Alchemy webhook received: ${evt.id}`)
+  logger.info(JSON.stringify(evt))
   // TODO: restore alchemy signature validation
-  if (!validateAlchemySignature(req))
-    return res.status(401).send('Unauthorized')
+  // if (!validateAlchemySignature(req)) return res.status(401).send('Unauthorized')
+  // logger.info('Validated Alchemy webhook 😀')
 
   const { network, activity } = evt.event as AlchemyActivityEvent
 
@@ -66,20 +63,11 @@ export async function alchemyWebhook(req: Request, res: Response) {
     const isValidAsset = txn.asset === 'USDC' || txn.asset === 'USDT'
     const isValidToAddress = txn.toAddress !== appConfig.presaleAddress
 
-    const isSupportedToken = evmTokens.some(
-      (token) => txn.rawContract.address === token.address,
-    )
-
-    const validationErrors = [
-      !isValidAsset && `asset: ${txn.asset}`,
-      !isValidToAddress && `to address: ${txn.toAddress}`,
-      !isSupportedToken && `token: ${txn.rawContract.address}`,
-      !txn.log && 'missing transaction log',
-      // !isAddressRegisteredForPresale(txn.fromAddress, 1) && 'address is not registered for presale',
-    ].filter(Boolean)
-
-    if (validationErrors.length) {
-      logger.error(`Invalid transaction: ${validationErrors.join(', ')}`)
+    if (!isValidAsset || !isValidToAddress) {
+      const errorMsg = !isValidAsset
+        ? `asset: ${txn.asset}`
+        : `to address: ${txn.toAddress}`
+      logger.error(`Invalid transaction: ${errorMsg}`)
       return res.status(401).send('Unauthorized')
     }
   }
