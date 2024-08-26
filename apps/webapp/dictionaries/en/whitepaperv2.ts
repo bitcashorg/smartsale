@@ -440,28 +440,36 @@ export const WITHE_PAPER = {
       "title": "DAO Roadmap",
       "content": [
         {
+          "type": "h2",
+          "text": "Proposed DAO Roadmap"
+        },
+        {
           "type": "p",
-          "text": "Proposed DAO Roadmap. The proposed DAO roadmap is a comprehensive guide outlining the strategic deployment of resources and the phased development of Bitlauncher through the Bitcash DAO organization. This document details our ambitious plans to revolutionize the AI and cryptocurrency ecosystems through innovative technology, community engagement, and continuous improvement. The roadmap reflects our dedication to creating a sustainable and forward-thinking platform that addresses the needs of startups while pushing the boundaries of blockchain technology."
+          "text": "The proposed DAO roadmap is a comprehensive guide outlining the strategic deployment of resources and the phased development of Bitlauncher through the Bitcash DAO organization. This document details our ambitious plans to revolutionize the AI and cryptocurrency ecosystems through innovative technology, community engagement, and continuous improvement. The roadmap reflects our dedication to creating a sustainable and forward-thinking platform that addresses the needs of startups while pushing the boundaries of blockchain technology."
         },
         {
           "type": "h2",
           "text": "Q2 - Q3: Launch and Initial Development."
         },
         {
-          "type": "p",
-          "text": "Q2: Platform Beta Launch: Introduction of Bitlauncher's beta version, featuring the integration of the bitcash cryptocurrency Webauthn payment wallet and integration with RainbowKit for seamless Ethereum wallet connectivity. Gnosis Auction and EOS EVM Integration: Official launch of the Gnosis Auction-based bidding system on the EOS EVM, complete with a redesigned frontend UI for an enhanced user experience. Marketing Campaign Kick-off & Presale: Roll out targeted marketing campaigns aimed at engaging our core audiences and expanding our community. These efforts will include partnerships, community engagement initiatives, and digital marketing strategies to bolster our platform's visibility and user base. Get $150k in presale commitments. dBoard Launch: Release of dBoard, a comprehensive DAO decision-making and community management tool, to foster collaboration and strategic alignment within the ecosystem. Comprehensive Security Audits: Execution of thorough penetration testing across all platform components to ensure top-notch security and reliability."
+          "type": "h3",
+          "text": "Q2:"
+        },
+        {
+          "type": "list",
+          "text": "Platform Beta Launch: Introduction of Bitlauncher's beta version, featuring the integration of the bitcash cryptocurrency Webauthn payment wallet and integration with RainbowKit for seamless Ethereum wallet connectivity.\nGnosis Auction and EOS EVM Integration: Official launch of the Gnosis Auction-based bidding system on the EOS EVM, complete with a redesigned frontend UI for an enhanced user experience.\nMarketing Campaign Kick-off & Presale: Roll out targeted marketing campaigns aimed at engaging our core audiences and expanding our community. These efforts will include partnerships, community engagement initiatives, and digital marketing strategies to bolster our platform's visibility and user base. Get $150k in presale commitments.\ndBoard Launch: Release of dBoard, a comprehensive DAO decision-making and community management tool, to foster collaboration and strategic alignment within the ecosystem.\nComprehensive Security Audits: Execution of thorough penetration testing across all platform components to ensure top-notch security and reliability."
+        },
+        {
+          "type": "h3",
+          "text": "Q3:"
+        },
+        {
+          "type": "list",
+          "text": "Fundraising Token Launch: Raise up to $250k for Bitcash/Bitlauncher as the first project on the launchpad\nCommunity Engagement Initiatives: Establishment of forums and communication channels for early adopters and community feedback.\nLaunch of Development Initiatives: Initiate comprehensive development efforts focusing on enhancing our launchpad, wallet, referral system, secondary market exchange and DAO tooling. This phase emphasizes the refinement of our existing infrastructure to cater to the dynamic needs of AI startups.\nInitiation of the Antelope Chain Development: Commencement of groundwork for the non-profit, no-premine L1 Antelope chain, aiming to set new standards for fairness and innovation in blockchain technology.\nWebAuthn and Account Recovery Improvements: Implementation of improved recovery solution that complements passwordless Webauthn system to simplify and secure user access, enhancing the overall Web3 experience."
         },
         {
           "type": "h2",
-          "text": "Q3: Fundraising Token Launch: Raise up to $250k for Bitcash/Bitlauncher as the first project on the launchpad Community Engagement Initiatives: Establishment of forums and communication channels for early adopters and community feedback."
-        },
-        {
-          "type": "p",
-          "text": "Launch of Development Initiatives: Initiate comprehensive development efforts focusing on enhancing our launchpad, wallet, referral system, secondary market exchange and DAO tooling. This phase emphasizes the refinement of our existing infrastructure to cater to the dynamic needs of AI startups. Initiation of the Antelope Chain Development: Commencement of groundwork for the non-profit, no-premine L1 Antelope chain, aiming to set new standards for fairness and innovation in blockchain technology. WebAuthn and Account Recovery Improvements: Implementation of improved recovery solution that complements passwordless Webauthn system to simplify and secure user access, enhancing the overall Web3 experience."
-        },
-        {
-          "type": "h2",
-          "text": "Q4: Expansion and Innovation."
+          "text": "Q4: Expansion and Innovation"
         },
         {
           "type": "p",

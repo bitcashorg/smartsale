@@ -43,8 +43,8 @@ interface NavigationContainerProps {
 }
 
 export const NavigationContainer = ({ prevTitle = '', nextTitle = '', onPrevClick, onNextClick }: NavigationContainerProps) => {
-    const nextLabel = nextTitle.length > 10 ? `${nextTitle.slice(0, 10)}...` : nextTitle
-    const prevLabel = prevTitle.length > 10 ? `${prevTitle.slice(0, 10)}...` : prevTitle
+    const nextLabel = nextTitle.length > 10 ? `${nextTitle.slice(0, 10).trim()}...` : nextTitle
+    const prevLabel = prevTitle.length > 10 ? `${prevTitle.slice(0, 10).trim()}...` : prevTitle
     return (
         <div className="flex flex-col md:flex-row-reverse items-center justify-between px-2.5 py-[43px] relative border-b border-solid border-[#433974] gap-4">
             <div
