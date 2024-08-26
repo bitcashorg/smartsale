@@ -110,11 +110,15 @@ export const WITHE_PAPER = {
       "content": [
         {
           "type": "p",
-          "text": "Mission Statement. To empower the next wave of AI innovation by providing open-source AI projects with a pioneering platform for equitable fundraising and decentralized organization. Bitlauncher is dedicated to transforming the landscape of AI development by making it accessible, transparent, and community-driven, thereby accelerating the journey of visionary AI projects from concept to global impact."
+          "text": "Mission Statement"
+        },
+        {
+          "type": "p",
+          "text": "To empower the next wave of AI innovation by providing open-source AI projects with a pioneering platform for equitable fundraising and decentralized organization. Bitlauncher is dedicated to transforming the landscape of AI development by making it accessible, transparent, and community-driven, thereby accelerating the journey of visionary AI projects from concept to global impact."
         },
         {
           "type": "h2",
-          "text": "Vision."
+          "text": "Vision"
         },
         {
           "type": "p",
@@ -122,23 +126,23 @@ export const WITHE_PAPER = {
         },
         {
           "type": "h2",
-          "text": "Long-term Goals."
+          "text": "Long-term Goals"
         },
         {
-          "type": "p",
-          "text": "Fostering Innovation: To support the development of over 100 open-source AI projects within the next five years, transforming ideas into viable solutions that address real-world problems. Revolutionize AI Project Funding: To innovate funding mechanisms through cryptocurrency, ensuring open-source AI projects have access to the capital needed to launch and scale without sacrificing their principles or potential. Community Building: To cultivate a vibrant community of over 50,000 active members, including AI developers, crypto investors, and technology enthusiasts, who actively participate in governance, funding, and collaboration. Sustainable Growth: To establish a self-sustaining ecosystem where projects not only succeed in achieving their individual goals but also contribute back to the platform, ensuring a perpetual cycle of growth and innovation. Global Impact: To make a tangible impact on the global AI and crypto communities by promoting ethical AI development, enhancing transparency in AI funding, and increasing accessibility to AI technologies for underserved regions."
-        },
-        {
-          "type": "h2",
-          "text": "Achieving Our Goals."
-        },
-        {
-          "type": "p",
-          "text": "Strategic Partnerships: Collaborating with leading academic institutions, technology companies, and open-source communities to provide projects with the resources, expertise, and exposure they need to succeed. Innovative Funding Models: Utilizing tokenomics and DAOs to create fair, transparent, and efficient funding mechanisms that align the interests of developers and investors. Education and Outreach: Launching initiatives to educate the broader public about the potential of AI and cryptocurrency, reducing barriers to entry and fostering a more informed and engaged community. Technology Development: Continuously improving the Bitlauncher platform to enhance user experience, streamline project development, and ensure the highest standards of security and governance."
+          "type": "list",
+          "text": "Fostering Innovation: To support the development of over 100 open-source AI projects within the next five years, transforming ideas into viable solutions that address real-world problems.\nRevolutionize AI Project Funding: To innovate funding mechanisms through cryptocurrency, ensuring open-source AI projects have access to the capital needed to launch and scale without sacrificing their principles or potential.\nCommunity Building: To cultivate a vibrant community of over 50,000 active members, including AI developers, crypto investors, and technology enthusiasts, who actively participate in governance, funding, and collaboration.\nSustainable Growth: To establish a self-sustaining ecosystem where projects not only succeed in achieving their individual goals but also contribute back to the platform, ensuring a perpetual cycle of growth and innovation.\nGlobal Impact: To make a tangible impact on the global AI and crypto communities by promoting ethical AI development, enhancing transparency in AI funding, and increasing accessibility to AI technologies for underserved regions."
         },
         {
           "type": "h2",
-          "text": "Impact on the AI and Crypto Communities."
+          "text": "Achieving Our Goals"
+        },
+        {
+          "type": "list",
+          "text": "Strategic Partnerships: Collaborating with leading academic institutions, technology companies, and open-source communities to provide projects with the resources, expertise, and exposure they need to succeed.\nInnovative Funding Models: Utilizing tokenomics and DAOs to create fair, transparent, and efficient funding mechanisms that align the interests of developers and investors.\nEducation and Outreach: Launching initiatives to educate the broader public about the potential of AI and cryptocurrency, reducing barriers to entry and fostering a more informed and engaged community.\nTechnology Development: Continuously improving the Bitlauncher platform to enhance user experience, streamline project development, and ensure the highest standards of security and governance."
+        },
+        {
+          "type": "h2",
+          "text": "Impact on the AI and Crypto Communities"
         },
         {
           "type": "p",
