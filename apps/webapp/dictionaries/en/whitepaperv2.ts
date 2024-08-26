@@ -472,28 +472,36 @@ export const WITHE_PAPER = {
           "text": "Q4: Expansion and Innovation"
         },
         {
-          "type": "p",
-          "text": "Q4: Marketing and Community Building: Aggressive marketing campaigns, hackathons and community building efforts to attract a broader audience and increase platform adoption. Bitlauncher Platform Enhancements: Iterative improvements to the platform's UI/UX based on user feedback, focusing on simplifying cryptocurrency transactions and enhancing the overall user experience. Expansion of Infrastructure Solutions: Introduction of new tools and services designed to support the growth and success of AI startups on the Bitlauncher platform. Launch of the Antelope Chain: Official release of the Antelope L1 identity chain, featuring a modern Hot-stuff consensus mechanism and a unique token distribution model aimed at maximizing fairness and inclusivity. Minimalist Cryptocurrency Payment Wallet Launch: Introduce a minimalist cryptocurrency payment wallet with forex capabilities, simplifying transactions for AI startups and everyday non-crypto users. Initiate development of multi-chain EVM wallet leveraging account abstraction tied to the identity chain to interoperate with the wider crypto ecosystem"
+          "type": "h3",
+          "text": "Q4:"
+        },
+        {
+          "type": "list",
+          "text": "Marketing and Community Building: Aggressive marketing campaigns, hackathons and community building efforts to attract a broader audience and increase platform adoption.\nBitlauncher Platform Enhancements: Iterative improvements to the platform's UI/UX based on user feedback, focusing on simplifying cryptocurrency transactions and enhancing the overall user experience.\nExpansion of Infrastructure Solutions: Introduction of new tools and services designed to support the growth and success of AI startups on the Bitlauncher platform.\nLaunch of the Antelope Chain: Official release of the Antelope L1 identity chain, featuring a modern Hot-stuff consensus mechanism and a unique token distribution model aimed at maximizing fairness and inclusivity.\nMinimalist Cryptocurrency Payment Wallet Launch: Introduce a minimalist cryptocurrency payment wallet with forex capabilities, simplifying transactions for AI startups and everyday non-crypto users. Initiate development of multi-chain EVM wallet leveraging account abstraction tied to the identity chain to interoperate with the wider crypto ecosystem."
         },
         {
           "type": "h2",
-          "text": "Q4 and Beyond: Sustaining Growth and Fostering Innovation."
+          "text": "Q4 and Beyond: Sustaining Growth and Fostering Innovation"
+        },
+        {
+          "type": "list",
+          "text": "Continuous Platform Improvement: Ongoing development efforts to refine and enhance the platform's features and services, based on community feedback and technological advancements.\nStrategic Partnerships and Collaborations: Establishment of partnerships with key industry players to expand the ecosystem and offer additional value to our users.\nGlobal Outreach and Adoption: Initiatives aimed at promoting global adoption of the Antelope chain and bitLauncher platform, including multilingual support and localization efforts.\nResearch and Development: Investment in research and development to explore new technologies and methodologies that can further advance the blockchain and AI sectors."
         },
         {
           "type": "p",
-          "text": "Continuous Platform Improvement: Ongoing development efforts to refine and enhance the platform's features and services, based on community feedback and technological advancements. Strategic Partnerships and Collaborations: Establishment of partnerships with key industry players to expand the ecosystem and offer additional value to our users. Global Outreach and Adoption: Initiatives aimed at promoting global adoption of the Antelope chain and bitLauncher platform, including multilingual support and localization efforts. Research and Development: Investment in research and development to explore new technologies and methodologies that can further advance the blockchain and AI sectors."
+          "text": "The roadmap for Bitlauncher and Bitcash is not just a plan for growth and development; it's a blueprint for a revolutionary approach to blockchain technology and AI startup support. Through our focused efforts on development, security, community engagement, and innovation, we are poised to create a more open, equitable, and innovative future for all participants in the blockchain ecosystem. Our commitment to the continuous improvement of our launchpad, wallet, and DAO tooling, coupled with the ambitious development of the Layer 1 chain, underscores our dedication to redefining the landscape and setting new standards in the blockchain space."
         },
         {
           "type": "h2",
-          "text": "The roadmap for Bitlauncher and Bitcash is not just a plan for growth and development; it's a blueprint for a revolutionary approach to blockchain technology and AI startup support."
+          "text": "Estimated Cash Budget Allocation"
         },
         {
-          "type": "p",
-          "text": "Through our focused efforts on development, security, community engagement, and innovation, we are poised to create a more open, equitable, and innovative future for all participants in the blockchain ecosystem. Our commitment to the continuous improvement of our launchpad, wallet, and DAO tooling, coupled with the ambitious development of the Layer 1 chain, underscores our dedication to redefining the landscape and setting new standards in the blockchain space."
+          "type": "list",
+          "text": "Marketing & Community (30%) $120k: Social Media, Hackathons, Events, Content, Global Ambassadors\nBusiness & Operations (30%) $120k: Startup Deal Making, DAO process improvements & AI integration\nDevelopment: (40%) $160k:"
         },
         {
-          "type": "p",
-          "text": "Estimated Cash Budget Allocation: Marketing & Community (30%) $120k: Social Media, Hackathons, Events, Content, Global Ambassadors Business & Operations (30%) $120k: Startup Deal Making, DAO process improvements & AI integration Development: (40%) $160k: Improvements/Maintenance: Launchpad, Wallet/Onramp/Forex, dBoard, Security Complete: Simple Wallet, Key Recovery, Referral System, Secondary Market Exchange Initiate/Build: Layer 1 Chain, Multi-chain EVM"
+          "type": "sub-list",
+          "text": "Improvements/Maintenance: Launchpad, Wallet/Onramp/Forex, dBoard, Security\nComplete: Simple Wallet, Key Recovery, Referral System, Secondary Market Exchange\nInitiate/Build: Layer 1 Chain, Multi-chain EVM"
         }
       ]
     },
@@ -503,63 +511,99 @@ export const WITHE_PAPER = {
       "content": [
         {
           "type": "p",
-          "text": "Jun Dam (Founder 2015 / Product / Financial Architect) Jun Dam, with a robust background in both finance and technology, has been a pioneering force in the cryptocurrency space since 2012, aiming to usher in a digital-native global economy and mainstream crypto adoption. His expertise spans nearly a decade in finance, alongside a decade in crypto, technology, and software development, showcasing a balanced blend of financial acumen and tech savvy. As a founder, business and product architect, and event co-organizer, Dam has significantly contributed to the crypto community, orchestrating conferences and events that have amassed over $850k in revenue."
-        },
-        {
-          "type": "h2",
-          "text": "Gabo Esquivel (Co-founder 2019 / Tech Architect / Full-Stack Engineer): Gabo Esquivel is a full-stack software engineer with a knack for creating innovative products that offer a stellar user experience, leveraging technologies like ReactJS, NodeJS, cloud platforms, and smart contracts, with foundational knowledge in Rust, Go, and Python."
-        },
-        {
-          "type": "p",
-          "text": "His methodology is grounded in agile practices, emphasizing precision in technology deployment. Esquivel's work is also characterized by his explorations into AI, underscoring his commitment to staying at the forefront of technology."
-        },
-        {
-          "type": "h2",
-          "text": "Roberto Lucas (Co-founder 2021 / Tech Operations / Full-Stack Engineer): Roberto Lucas, known as \"Andler\" in the web development community, boasts expertise as a full-stack developer since 2018, with a specialization in JavaScript and TypeScript."
+          "text": [
+            {
+              "bold": true,
+              "text": "Jun Dam (Founder 2015 / Product / Financial Architect)"
+            },
+            {
+              "text": " Jun Dam, with a robust background in both finance and technology, has been a pioneering force in the cryptocurrency space since 2012, aiming to usher in a digital-native global economy and mainstream crypto adoption. His expertise spans nearly a decade in finance, alongside a decade in crypto, technology, and software development, showcasing a balanced blend of financial acumen and tech savvy. As a founder, business and product architect, and event co-organizer, Dam has significantly contributed to the crypto community, orchestrating conferences and events that have amassed over $850k in revenue."
+            }
+          ]
         },
         {
           "type": "p",
-          "text": "His journey has seen him transition from a skilled coder to a leader in both software development and project management, highlighting a focus on accessible web design and innovation since 2020. Andler values continual learning and the use of cutting-edge tools to drive technological progress."
-        },
-        {
-          "type": "h2",
-          "text": "Ruben Abarca: Ruben Abarca is a full-stack engineer with a focus on web and mobile application development, blending cutting-edge technology with innovative solutions."
-        },
-        {
-          "type": "p",
-          "text": "Educated in Software Engineering at the Costa Rican Institute of Technology, his career is marked by a commitment to continuous learning, especially in blockchain and fintech. At Bitcash, Abarca plays a crucial role in backend development, enhancing data processing strategies to improve application performance and user experience."
-        },
-        {
-          "type": "h2",
-          "text": "Nathan Liu: Nathan Liu, a full-stack developer, concentrates on enhancing the website's aesthetics and functionality, utilizing tools like React, Next."
+          "text": [
+            {
+              "bold": true,
+              "text": "Gabo Esquivel (Co-founder 2019 / Tech Architect / Full-Stack Engineer):"
+            },
+            {
+              "text": " Gabo Esquivel is a full-stack software engineer with a knack for creating innovative products that offer a stellar user experience, leveraging technologies like ReactJS, NodeJS, cloud platforms, and smart contracts, with foundational knowledge in Rust, Go, and Python. His methodology is grounded in agile practices, emphasizing precision in technology deployment. Esquivel's work is also characterized by his explorations into AI, underscoring his commitment to staying at the forefront of technology."
+            }
+          ]
         },
         {
           "type": "p",
-          "text": "js, and Node.js. His role encompasses front-end design and backend support to ensure a smooth, user-friendly experience on the platform. Liu is passionate about coding and continuously seeks to improve his skills, contributing to Bitcash's commitment to offering a top-notch online service."
-        },
-        {
-          "type": "h2",
-          "text": "Brandon Fernandez: Brandon Fernandez, a Front-End Developer at Bitcash."
-        },
-        {
-          "type": "p",
-          "text": "org, is dedicated to improving user experience through innovative features and bug fixes in the web3 banking sector. His transition from CCNA to a passion for front-end development led him to acquire skills in HTML, React, JavaScript, and various modern web technologies. Fernandez's work at Bitcash involves deepening his engagement with web3 and blockchain technologies, aiming to revolutionize banking with user-friendly and secure digital finance solutions."
-        },
-        {
-          "type": "h2",
-          "text": "Anouk Rimola: Anouk Rímola is a versatile member of the Bitcash frontend team, handling various responsibilities from moderating accounts and managing rewards to customer service."
+          "text": [
+            {
+              "bold": true,
+              "text": "Roberto Lucas (Co-founder 2021 / Tech Operations / Full-Stack Engineer):"
+            },
+            {
+              "text": " Roberto Lucas, known as \"Andler\" in the web development community, boasts expertise as a full-stack developer since 2018, with a specialization in JavaScript and TypeScript. His journey has seen him transition from a skilled coder to a leader in both software development and project management, highlighting a focus on accessible web design and innovation since 2020. Andler values continual learning and the use of cutting-edge tools to drive technological progress."
+            }
+          ]
         },
         {
           "type": "p",
-          "text": "As a tester, she rigorously evaluates changes to ensure optimal platform performance, while her development work focuses on improving the user experience with ReactJS. Rímola's multifaceted role and dedication to technical excellence are vital to Bitcash's innovation and success."
-        },
-        {
-          "type": "h2",
-          "text": "Luis Carrion: Luis Carrión is a technology enthusiast focused on frontend development using the React stack."
+          "text": [
+            {
+              "bold": true,
+              "text": "Ruben Abarca:"
+            },
+            {
+              "text": " Ruben Abarca is a full-stack engineer with a focus on web and mobile application development, blending cutting-edge technology with innovative solutions. Educated in Software Engineering at the Costa Rican Institute of Technology, his career is marked by a commitment to continuous learning, especially in blockchain and fintech. At Bitcash, Abarca plays a crucial role in backend development, enhancing data processing strategies to improve application performance and user experience."
+            }
+          ]
         },
         {
           "type": "p",
-          "text": "His career has been characterized by overcoming challenges and leveraging them for growth, specifically in developing scalable solutions for Bitcash's users and customers. Carrión is committed to continuous learning and exploration of new technologies, aiming to contribute significantly to Bitcash and the broader software development landscape."
+          "text": [
+            {
+              "bold": true,
+              "text": "Nathan Liu:"
+            },
+            {
+              "text": "Nathan Liu, a full-stack developer, concentrates on enhancing the website's aesthetics and functionality, utilizing tools like React, Next.js, and Node.js. His role encompasses front-end design and backend support to ensure a smooth, user-friendly experience on the platform. Liu is passionate about coding and continuously seeks to improve his skills, contributing to Bitcash's commitment to offering a top-notch online service."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": [
+            {
+              "bold": true,
+              "text": "Brandon Fernandez:"
+            },
+            {
+              "text": " Brandon Fernandez, a Front-End Developer at Bitcash.org, is dedicated to improving user experience through innovative features and bug fixes in the web3 banking sector. His transition from CCNA to a passion for front-end development led him to acquire skills in HTML, React, JavaScript, and various modern web technologies. Fernandez's work at Bitcash involves deepening his engagement with web3 and blockchain technologies, aiming to revolutionize banking with user-friendly and secure digital finance solutions."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": [
+            {
+              "bold": true,
+              "text": "Anouk Rimola:"
+            },
+            {
+              "text": " Anouk Rímola is a versatile member of the Bitcash frontend team, handling various responsibilities from moderating accounts and managing rewards to customer service. As a tester, she rigorously evaluates changes to ensure optimal platform performance, while her development work focuses on improving the user experience with ReactJS. Rímola's multifaceted role and dedication to technical excellence are vital to Bitcash's innovation and success."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": [
+            {
+              "bold": true,
+              "text": "Luis Carrion:"
+            },
+            {
+              "text": " Luis Carrión is a technology enthusiast focused on frontend development using the React stack. His career has been characterized by overcoming challenges and leveraging them for growth, specifically in developing scalable solutions for Bitcash's users and customers. Carrión is committed to continuous learning and exploration of new technologies, aiming to contribute significantly to Bitcash and the broader software development landscape."
+            },
+          ]
         }
       ]
     },
@@ -568,24 +612,24 @@ export const WITHE_PAPER = {
       "title": "Legal Considerations and Compliance",
       "content": [
         {
+          "type": "h2",
+          "text": "Regulatory Compliance and Security Measures"
+        },
+        {
           "type": "p",
-          "text": "Regulatory Compliance and Security Measures. In the rapidly evolving landscapes of cryptocurrency and artificial intelligence, regulatory compliance and robust security measures are not just operational necessities but foundational to ensuring trust, integrity, and the long-term viability of platforms like ours. At the core of our approach to regulatory compliance and security, we have devised a comprehensive strategy that navigates the complexities of the legal frameworks governing the crypto and AI sectors and fortifies our platform against an array of cyber threats."
+          "text": "In the rapidly evolving landscapes of cryptocurrency and artificial intelligence, regulatory compliance and robust security measures are not just operational necessities but foundational to ensuring trust, integrity, and the long-term viability of platforms like ours. At the core of our approach to regulatory compliance and security, we have devised a comprehensive strategy that navigates the complexities of the legal frameworks governing the crypto and AI sectors and fortifies our platform against an array of cyber threats."
         },
         {
           "type": "h2",
-          "text": "Addressing Regulatory Compliance."
+          "text": "Addressing Regulatory Compliance"
         },
         {
           "type": "p",
-          "text": "Our platform is committed to adhering to the highest standards of regulatory compliance, meticulously designed to navigate the intricate and ever-changing regulatory environment of the cryptocurrency and AI industries. We achieve this through several key strategies: Proactive Legal Monitoring: We continuously monitor global regulatory developments in the crypto and AI spaces, ensuring that our platform remains compliant with current laws and regulations. This includes engaging with legal experts and advisors who specialize in these sectors. User Restrictions: To navigate the complex regulatory landscape, especially in jurisdictions with stringent controls over crypto assets and AI technologies, our platform restricts access for users from the United States and countries under US sanctions. This measure is a precautionary step to comply with specific regulatory requirements and avoid potential legal complications. KYC and AML Policies: We implement rigorous Know Your Customer (KYC) and Anti-Money Laundering (AML) procedures to verify the identity of our users and monitor transactions for suspicious activity. These policies are crucial for preventing financial crimes and ensuring compliance with international regulations."
+          "text": "Our platform is committed to adhering to the highest standards of regulatory compliance, meticulously designed to navigate the intricate and ever-changing regulatory environment of the cryptocurrency and AI industries. We achieve this through several key strategies:"
         },
         {
-          "type": "h2",
-          "text": "Data Protection and Privacy: In alignment with global standards such as GDPR, our platform enforces strict data protection policies to safeguard user information."
-        },
-        {
-          "type": "p",
-          "text": "We employ encryption, access controls, and regular security audits to protect personal and financial data."
+          "type": "list",
+          "text": "Proactive Legal Monitoring: We continuously monitor global regulatory developments in the crypto and AI spaces, ensuring that our platform remains compliant with current laws and regulations. This includes engaging with legal experts and advisors who specialize in these sectors.\nUser Restrictions: To navigate the complex regulatory landscape, especially in jurisdictions with stringent controls over crypto assets and AI technologies, our platform restricts access for users from the United States and countries under US sanctions. This measure is a precautionary step to comply with specific regulatory requirements and avoid potential legal complications.\nKYC and AML Policies: We implement rigorous Know Your Customer (KYC) and Anti-Money Laundering (AML) procedures to verify the identity of our users and monitor transactions for suspicious activity. These policies are crucial for preventing financial crimes and ensuring compliance with international regulations.\nData Protection and Privacy: In alignment with global standards such as GDPR, our platform enforces strict data protection policies to safeguard user information.",
         },
         {
           "type": "h2",
@@ -593,7 +637,11 @@ export const WITHE_PAPER = {
         },
         {
           "type": "p",
-          "text": "Understanding the paramount importance of security in the crypto and AI domains, our platform incorporates state-of-the-art security measures to protect against unauthorized access, data breaches, and other cyber threats: End-to-End Encryption: Data transmitted to and from our platform is protected using robust end-to-end encryption, ensuring that user data remains confidential and secure. Regular Security Audits: We conduct regular security audits and penetration testing to identify and rectify potential vulnerabilities, maintaining a fortified defense against cyber attacks. Smart Contract Audits: Given the reliance on smart contracts for transactions and operations on our platform, we plan to engage independent experts to conduct thorough audits of our smart contracts, ensuring they are free from vulnerabilities and operate as intended. Decentralized Security Practices: Leveraging the inherent security advantages of blockchain technology, we adopt decentralized security practices that reduce the risk of centralized data breaches and enhance the overall security of our platform. User Education and Awareness: Recognizing that security is a shared responsibility, we provide our users with education and resources on best practices for safeguarding their accounts and transactions."
+          "text": "Understanding the paramount importance of security in the crypto and AI domains, our platform incorporates state-of-the-art security measures to protect against unauthorized access, data breaches, and other cyber threats:"
+        },
+        {
+          "type": "list",
+          "text": "End-to-End Encryption: Data transmitted to and from our platform is protected using robust end-to-end encryption, ensuring that user data remains confidential and secure.\nRegular Security Audits: We conduct regular security audits and penetration testing to identify and rectify potential vulnerabilities, maintaining a fortified defense against cyber attacks.\nSmart Contract Audits: Given the reliance on smart contracts for transactions and operations on our platform, we plan to engage independent experts to conduct thorough audits of our smart contracts, ensuring they are free from vulnerabilities and operate as intended.\nDecentralized Security Practices: Leveraging the inherent security advantages of blockchain technology, we adopt decentralized security practices that reduce the risk of centralized data breaches and enhance the overall security of our platform.\nUser Education and Awareness: Recognizing that security is a shared responsibility, we provide our users with education and resources on best practices for safeguarding their accounts and transactions."
         }
       ]
     },
@@ -607,145 +655,43 @@ export const WITHE_PAPER = {
         },
         {
           "type": "h2",
-          "text": "Step 1: Sign Up and KYC Verification."
+          "text": "Step 1: Sign Up and KYC Verification"
         },
         {
-          "type": "p",
-          "text": "Register for a Bitcash wallet account at our official site. Complete KYC verification to ensure a secure investment environment. This process is crucial for compliance and fraud prevention. Please note: Geolocation Verification: Ensure your device’s privacy settings permit geolocation sharing to prevent sybil attacks. Restrictions: Residents of the US or countries under US sanctions are ineligible to participate."
+          "type": "list",
+          "text": "Register for a Bitcash wallet account at our official site.\nComplete KYC verification to ensure a secure investment environment. This process is crucial for compliance and fraud prevention. Please note:"
+        },
+        {
+          "type": "sub-list",
+          "text": "Geolocation Verification: Ensure your device’s privacy settings permit geolocation sharing to prevent sybil attacks.\nRestrictions: Residents of the US or countries under US sanctions are ineligible to participate."
         },
         {
           "type": "h2",
-          "text": "Step 2: Deposit Funds."
+          "text": "Step 2: Deposit Funds"
         },
         {
-          "type": "p",
-          "text": "Connect an EVM-Compatible Wallet: Use wallets like Metamask to deposit USDT or USDC into the Bitcash deposit contract available on various EVM chains, including Ethereum, Cosmos, Arbitrum, Optimism, Base, and Avalanche. Credit Allocation: Upon deposit, a USD credit equivalent will be added to your Bitlauncher platform account, which can be used to bid on token auctions."
+          "type": "list",
+          "text": "Connect an EVM-Compatible Wallet: Use wallets like Metamask to deposit USDT or USDC into the Bitcash deposit contract available on various EVM chains, including Ethereum, Cosmos, Arbitrum, Optimism, Base, and Avalanche.\nCredit Allocation: Upon deposit, a USD credit equivalent will be added to your Bitlauncher platform account, which can be used to bid on token auctions."
         },
         {
           "type": "h2",
           "text": "Step 3: Participate in the Auction."
         },
         {
-          "type": "p",
-          "text": "Fair Price Discovery: Our platform employs batch auctions for equitable price discovery, benefiting from the mechanism’s efficiency in matching buyers and sellers at a uniform clearing price. Bidding: You can place multiple bids at varying prices. The auction concludes with an equilibrium price determined, and all bids above this price will successfully purchase tokens."
+          "type": "list",
+          "text": "Fair Price Discovery: Our platform employs batch auctions for equitable price discovery, benefiting from the mechanism’s efficiency in matching buyers and sellers at a uniform clearing price.\nBidding: You can place multiple bids at varying prices. The auction concludes with an equilibrium price determined, and all bids above this price will successfully purchase tokens.\nToken Distribution: Tokens are allocated within two weeks post-sale. It's important to note that early-stage tokens might not be immediately listed on external exchanges but could gain liquidity through monthly auctions or a potential internal Bitcash exchange in the future."
         },
         {
           "type": "h2",
-          "text": "Token Distribution: Tokens are allocated within two weeks post-sale."
+          "text": "Additional Notes:"
+        },
+        {
+          "type": "list",
+          "text": "Wallets and Exchanges: Information on supported wallets and future exchange listings will be updated periodically. Stay informed through our official channels.\nCompliance: Adhering to KYC and AML regulations not only ensures your security but also underpins the integrity of our platform."
         },
         {
           "type": "p",
-          "text": "It's important to note that early-stage tokens might not be immediately listed on external exchanges but could gain liquidity through monthly auctions or a potential internal Bitcash exchange in the future."
-        },
-        {
-          "type": "h2",
-          "text": "Additional Notes: Wallets and Exchanges: Information on supported wallets and future exchange listings will be updated periodically."
-        },
-        {
-          "type": "p",
-          "text": "Stay informed through our official channels. Compliance: Adhering to KYC and AML regulations not only ensures your security but also underpins the integrity of our platform."
-        },
-        {
-          "type": "h2",
           "text": "By following these steps, investors can confidently and securely participate in the token sale, contributing to the development of a new global economy powered by blockchain and AI innovations."
-        }
-      ]
-    },
-    {
-      "type": "section",
-      "title": "FAQs",
-      "content": [
-        {
-          "type": "p",
-          "text": "FAQs: Navigating the Landscape of Our Launchpad. This section addresses the most frequently asked questions about our launchpad, its associated token sale, and the overarching vision of the project, providing clarity and insight into our mission to revolutionize the intersection of cryptocurrency and artificial intelligence."
-        },
-        {
-          "type": "h2",
-          "text": "1."
-        },
-        {
-          "type": "p",
-          "text": "What is the primary purpose of the launchpad? The launchpad is designed to empower AI startups by providing them with a platform for tokenization and access to a global pool of investors, facilitating easier funding and organization through the innovative use of DAO technology and cryptocurrency."
-        },
-        {
-          "type": "h2",
-          "text": "2."
-        },
-        {
-          "type": "p",
-          "text": "How does the token sale work? Our token sale operates as a batch auction, ensuring a fair price discovery mechanism that benefits both investors and startups. Tokens are issued based on current market valuations, allowing for equitable investment opportunities while fostering growth and adding value to the organization."
-        },
-        {
-          "type": "h2",
-          "text": "3."
-        },
-        {
-          "type": "p",
-          "text": "Who can participate in the token sale? The token sale is open to a global audience, with specific restrictions excluding participants from the US and US-sanctioned countries to comply with regulatory standards and ensure the broadest possible participation while maintaining legal integrity."
-        },
-        {
-          "type": "h2",
-          "text": "4."
-        },
-        {
-          "type": "p",
-          "text": "What sets this project apart from other ICOs or token sales? Our project uniquely focuses on the AI sector, employing a mint-and-burn model for tokenomics that mirrors the shareholder model, emphasizing sustainable growth, transparency, and community engagement in the tech startup ecosystem."
-        },
-        {
-          "type": "h2",
-          "text": "5."
-        },
-        {
-          "type": "p",
-          "text": "How will the funds raised from the token sale be used? Funds from the token sale are primarily allocated to further development and marketing of the launchpad and wallet, as well as the creation of the non-profit, no-premine L1 chain based on Antelope technology, aiming for the fairest token distribution and contributing to the ecosystem's growth and sustainability."
-        },
-        {
-          "type": "h2",
-          "text": "6."
-        },
-        {
-          "type": "p",
-          "text": "How does the launchpad ensure regulatory compliance and security? We adopt a proactive approach to regulatory compliance, including user restrictions, KYC and AML policies, and adherence to data protection laws, alongside implementing robust security measures such as end-to-end encryption and regular security audits."
-        },
-        {
-          "type": "h2",
-          "text": "7."
-        },
-        {
-          "type": "p",
-          "text": "What support does the launchpad offer to startups? Beyond funding, the launchpad offers startups access to a network of resources, including guidance on business management, marketing, and development, along with tools for efficient payment processing and organizational management through DAO technology."
-        },
-        {
-          "type": "h2",
-          "text": "8."
-        },
-        {
-          "type": "p",
-          "text": "How can startups and investors benefit from participating in the launchpad? Startups gain access to capital, resources, and a global community, enhancing their growth potential and market reach. Investors benefit from early access to innovative AI projects with high growth potential, contributing to a diversified and forward-looking investment portfolio."
-        },
-        {
-          "type": "h2",
-          "text": "9."
-        },
-        {
-          "type": "p",
-          "text": "How does the project contribute to the broader AI and crypto communities? By facilitating the growth and development of AI startups within the crypto framework, our project contributes to the advancement of technology, encourages ethical and sustainable business practices, and fosters a community of innovation at the intersection of these two dynamic fields."
-        },
-        {
-          "type": "h2",
-          "text": "10."
-        },
-        {
-          "type": "p",
-          "text": "Where can I find more information or get involved? For more detailed information, updates, and to join our community, visit our official website, join our social media channels, and subscribe to our newsletter. We welcome everyone interested in contributing to or participating in the future of AI and cryptocurrency through our launchpad."
-        },
-        {
-          "type": "h2",
-          "text": "Twitter: @bitcashorg / @bitlauncherai Blog: https://blog."
-        },
-        {
-          "type": "p",
-          "text": "bitcash.org/ Discord: https://discord.gg/KuR48XUxnG Youtube: https://www.youtube.com/@bitcashorg Telegram: https://t.me/bitcash_org"
         }
       ]
     },
@@ -755,7 +701,11 @@ export const WITHE_PAPER = {
       "content": [
         {
           "type": "p",
-          "text": "Glossary Artificial Intelligence (AI): A field of computer science dedicated to creating systems capable of performing tasks that typically require human intelligence, including but not limited to learning, problem-solving, and decision-making. Blockchain: A decentralized, distributed ledger technology that records transactions across multiple computers in a way that ensures security, transparency, and immutability. Cryptocurrency: Digital or virtual currency that uses cryptography for security and operates independently of a central bank, leveraging blockchain technology for decentralized financial transactions. Decentralized Autonomous Organization (DAO): A type of organization represented by rules encoded as a computer program that is transparent, controlled by the organization members, and not influenced by a central government. Tokenization: The process of converting rights to an asset into a digital token on a blockchain, facilitating easier and more flexible transactions. Mint-and-Burn Model: A tokenomics strategy where tokens are \"minted\" or created to increase supply and \"burned\" or destroyed to reduce supply, often used to manage a token's value and supply. Batch/Dutch Auction: A market structure in which the price of an offering is established after taking in all bids to determine the highest price at which the total offering can be sold. Gnosis Auction: A platform that allows for fair price discovery and decentralized auctions, particularly used within the Ethereum ecosystem. EOS EVM: Refers to the EOSIO Ethereum Virtual Machine, which enables Ethereum smart contracts to run on the EOS blockchain, enhancing performance and scalability. Smart Contracts: Self-executing contracts with the terms of the agreement between buyer and seller being directly written into lines of code, allowing for transactions and agreements to be carried out without the need for a central authority, legal system, or external enforcement mechanism. KYC (Know Your Customer): A process of verifying the identity of clients by businesses, particularly in the financial sector, to prevent identity theft, financial fraud, money laundering, and terrorist financing. AML (Anti-Money Laundering): A set of procedures, laws, and regulations designed to stop the practice of generating income through illegal actions and ensuring investments are not used for funding illegal activities. GDPR (General Data Protection Regulation): A regulation in EU law on data protection and privacy in the European Union and the European Economic Area, focusing on giving control to individuals over their personal data. End-to-End Encryption: A method of secure communication that prevents third-parties from accessing data while it's transferred from one end system or device to another. Penetration Testing: A simulated cyber attack against your computer system to check for exploitable vulnerabilities. Hot-stuff Consensus Mechanism: A leader-based consensus mechanism known for its high performance and strong security properties, particularly in blockchain environments. Seed Funding: An initial investment to start a business in exchange for equity or an interest in the company. WebAuthn: A web standard published by the World Wide Web Consortium (W3C) for secure and passwordless authentication on the Web, part of the FIDO2 specification. This glossary provides definitions for key technical terms and jargon used throughout the whitepaper, ensuring readers have a clear understanding of the concepts discussed in the context of our platform's mission to revolutionize the AI and cryptocurrency landscapes. Layer 1 (L1): This term refers to the base layer or underlying blockchain architecture of a decentralized network. Layer 1 is the foundational level that includes the core blockchain technology responsible for validating and recording transactions. Major cryptocurrencies like Bitcoin and Ethereum operate as Layer 1 networks, providing the fundamental infrastructure for additional layers and applications to build upon. Layer 1 solutions often focus on improving scalability, security, and decentralization directly within the main blockchain itself."
+          "text": "This glossary provides definitions for key technical terms and jargon used throughout the whitepaper, ensuring readers have a clear understanding of the concepts discussed in the context of our platform's mission to revolutionize the AI and cryptocurrency landscapes."
+        },
+        {
+          "type": "list",
+          "text": "Artificial Intelligence (AI): A field of computer science dedicated to creating systems capable of performing tasks that typically require human intelligence, including but not limited to learning, problem-solving, and decision-making.\nBlockchain: A decentralized, distributed ledger technology that records transactions across multiple computers in a way that ensures security, transparency, and immutability.\nCryptocurrency: Digital or virtual currency that uses cryptography for security and operates independently of a central bank, leveraging blockchain technology for decentralized financial transactions.\nDecentralized Autonomous Organization(DAO): A type of organization represented by rules encoded as a computer program that is transparent, controlled by the organization members, and not influenced by a central government.\nTokenization: The process of converting rights to an asset into a digital token on a blockchain, facilitating easier and more flexible transactions.\nMint- and - Burn Model: A tokenomics strategy where tokens are \",minted\", or created to increase supply and \",burned\", or destroyed to reduce supply, often used to manage a token's value and supply.\nBatch/Dutch Auction: A market structure in which the price of an offering is established after taking in all bids to determine the highest price at which the total offering can be sold.\nGnosis Auction: A platform that allows for fair price discovery and decentralized auctions, particularly used within the Ethereum ecosystem.\nEOS EVM: Refers to the EOSIO Ethereum Virtual Machine, which enables Ethereum smart contracts to run on the EOS blockchain, enhancing performance and scalability.\nSmart Contracts: Self-executing contracts with the terms of the agreement between buyer and seller being directly written into lines of code, allowing for transactions and agreements to be carried out without the need for a central authority, legal system, or external enforcement mechanism.\nKYC (Know Your Customer): A process of verifying the identity of clients by businesses, particularly in the financial sector, to prevent identity theft, financial fraud, money laundering, and terrorist financing.\nAML (Anti-Money Laundering): A set of procedures, laws, and regulations designed to stop the practice of generating income through illegal actions and ensuring investments are not used for funding illegal activities.\nGDPR (General Data Protection Regulation): A regulation in EU law on data protection and privacy in the European Union and the European Economic Area, focusing on giving control to individuals over their personal data.\nEnd - to - End Encryption: A method of secure communication that prevents third - parties from accessing data while it's transferred from one end system or device to another.\nPenetration Testing: A simulated cyber attack against your computer system to check for exploitable vulnerabilities.\nHot-stuff Consensus Mechanism: A leader-based consensus mechanism known for its high performance and strong security properties, particularly in blockchain environments.\nSeed Funding: An initial investment to start a business in exchange for equity or an interest in the company.\nWebAuthn: A web standard published by the World Wide Web Consortium (W3C) for secure and passwordless authentication on the Web, part of the FIDO2 specification.\nLayer 1 (L1): This term refers to the base layer or underlying blockchain architecture of a decentralized network. Layer 1 is the foundational level that includes the core blockchain technology responsible for validating and recording transactions. Major cryptocurrencies like Bitcoin and Ethereum operate as Layer 1 networks, providing the fundamental infrastructure for additional layers and applications to build upon.Layer 1 solutions often focus on improving scalability, security, and decentralization directly within the main blockchain itself.",
         }
       ]
     },
@@ -765,7 +715,10 @@ export const WITHE_PAPER = {
       "content": [
         {
           "type": "p",
-          "text": "For further inquiries, support, or more information about the Bitcash platform and token sale, please use the following channels to reach out to us: General Support and Inquiries: Email: support@bitcash.org Media and Press: Email: press@bitcash.org Developer Support: Email: developers@bitcash.org Social Media: Twitter: @bitcashorg / @bitlauncherai Blog: https://blog.bitcash.org/ Discord: https://discord.gg/KuR48XUxnG Youtube: https://www.youtube.com/@bitcashorg Telegram: https://t.me/bitcash_org For real-time updates and announcements, follow us on our social media platforms and join our community discussions. We are committed to transparency and open communication and look forward to your participation and feedback. If you encounter any issues or require assistance during the participation process or afterwards, our dedicated support team is available to help you resolve your queries promptly and efficiently."
+          "text": "For further inquiries, support, or more information about the Bitcash platform and token sale, please use the following channels to reach out to us:"
+        },
+        {
+          "type": "contact"
         }
       ]
     }

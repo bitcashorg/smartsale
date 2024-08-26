@@ -59,7 +59,7 @@ export function WhitepaperContent({ activeSection, onSectionChange }: Whitepaper
         )
       case 'list':
         return (
-          <ul className="list-disc list-inside text-gray-500 dark:text-gray-400 mb-[27px] text-[15px]">
+          <ul className="list-disc list-inside text-gray-500 dark:text-gray-400 text-[15px]">
             {typeof content.text === 'string' ? content.text.split('\n').map((item, idx) => {
               const [title, content] = item.split(':')
               return (
@@ -69,6 +69,46 @@ export function WhitepaperContent({ activeSection, onSectionChange }: Whitepaper
               )
             }) : null}
           </ul>
+        )
+      case 'sub-list':
+        return (
+          <ul className="list-disc list-inside text-gray-500 dark:text-gray-400 text-[15px]">
+            {typeof content.text === 'string' ? content.text.split('\n').map((item, idx) => {
+              return (
+                <li key={idx} className="pl-4">
+                  {item}
+                </li>
+              )
+            }) : null}
+          </ul>
+        )
+      case 'contact':
+        return (
+          <div className="py-8">
+            <div className="container mx-auto px-4">
+              <ul className="list-disc list-inside text-gray-500 dark:text-gray-400 space-y-4">
+                <li>
+                  <strong>General Support and Inquiries:</strong> Email: <a href="mailto:support@bitcash.org" className="text-blue-400">support@bitcash.org</a>
+                </li>
+                <li>
+                  <strong>Media and Press:</strong> Email: <a href="mailto:press@bitcash.org" className="text-blue-400">press@bitcash.org</a>
+                </li>
+                <li>
+                  <strong>Developer Support:</strong> Email: <a href="mailto:developers@bitcash.org" className="text-blue-400">developers@bitcash.org</a>
+                </li>
+                <li>
+                  <strong>Social Media:</strong>
+                  <ul className="list-disc space-y-2 mt-2 ml-8">
+                    <li>Twitter: <a href="https://twitter.com/bitcashorg" className="text-blue-400">@bitcashorg</a> / <a href="https://twitter.com/bitlauncherai" className="text-blue-400">@bitlauncherai</a></li>
+                    <li>Blog: <a href="https://bitcash.org/blog" className="text-blue-400">https://bitcash.org/blog</a></li>
+                    <li>Discord: <a href="https://discord.gg/KuR48XUxnG" className="text-blue-400">https://discord.gg/KuR48XUxnG</a></li>
+                    <li>YouTube: <a href="https://youtube.com/@bitlauncher" className="text-blue-400">https://youtube.com/@bitlauncher</a></li>
+                    <li>Telegram: <a href="https://t.me/bitcash_org" className="text-blue-400">https://t.me/bitcash_org</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
         )
       default:
         return null

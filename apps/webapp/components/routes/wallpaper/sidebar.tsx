@@ -28,7 +28,7 @@ export function WhitepaperSidebar({ activeSection, setActiveSection }: Whitepape
   return (
     <div className="w-64 p-4 md:h-screen">
       <h2 className="text-xl font-bold mb-4 hidden md:block">Bitlauncher Whitepaper</h2>
-      <div className="block md:hidden">
+      {/* <div className="block md:hidden">
         <NavigationBtn className="mb-4" onClick={toggleMobileNav} />
         <AnimatePresence>
           {isMobileNavOpen && (
@@ -61,7 +61,7 @@ export function WhitepaperSidebar({ activeSection, setActiveSection }: Whitepape
             </Transition>
           )}
         </AnimatePresence>
-      </div>
+      </div> */}
       <nav className="hidden md:block">
         {WITHE_PAPER.sections.map((section: Section) => (
           <div
@@ -112,8 +112,8 @@ interface Section {
   type: string
   title: string
   content: Array<{
-    type: string;
-    text: string | Array<{ text: string; bold?: boolean }>
+    type: string
+    text?: string | Array<{ text: string; bold?: boolean }>
   }>
 }
 
