@@ -155,12 +155,34 @@ export const WITHE_PAPER = {
       "title": "Technology Overview",
       "content": [
         {
+          "type": "h2",
+          "text": "Technology & Innovation Overview"
+        },
+        {
           "type": "p",
-          "text": "Technology & Innovation Overview. At the heart of Bitlauncher is a commitment to leveraging cutting-edge technology and innovative practices to empower AI startups. Our platform provides a comprehensive suite of tools and resources designed to support AI projects in every phase of their journey, from inception to scale. By integrating advanced blockchain technology and DAO (Decentralized Autonomous Organization) principles, we ensure transparency, efficiency, and trustworthiness in all operational facets."
+          "text": [
+            {
+              "text": "At the heart of Bitlauncher is a commitment to leveraging "
+            },
+            {
+              "text": "cutting-edge technology",
+              "bold": true
+            },
+            {
+              "text": " and innovative practices to empower AI startups. Our platform provides a comprehensive suite of tools and resources designed to support AI projects in every phase of their journey, from inception to scale. By integrating advanced blockchain technology and "
+            },
+            {
+              "text": "DAO (Decentralized Autonomous Organization) principles,",
+              "bold": true
+            },
+            {
+              "text": " we ensure transparency, efficiency, and trustworthiness in all operational facets."
+            }
+          ]
         },
         {
           "type": "h2",
-          "text": "Empowering Startups with Transparency and Trust."
+          "text": "Empowering Startups with Transparency and Trust"
         },
         {
           "type": "p",
@@ -180,7 +202,26 @@ export const WITHE_PAPER = {
         },
         {
           "type": "p",
-          "text": "Bitlauncher offers a suite of infrastructure solutions tailored to the needs of AI startups: Cryptocurrency Payment Wallet and P2P Crypto Onramp: Featuring forex capabilities, our wallet simplifies transactions, making the transfer of funds as straightforward as traditional banking. WebAuthn Integration: Our platform employs a passwordless system, enhancing the Web3 experience by making it simpler and more secure than ever before. In addition, the Bitcash team behind Bitlauncher has developed dBoard, a comprehensive DAO decision-making and community management tool. This platform enables stakeholders to engage in discussions, strategy formulation, and voting on crucial decisions, thereby fostering a collaborative and productive environment for organizational growth."
+          "text": "Bitlauncher offers a suite of infrastructure solutions tailored to the needs of AI startups:"
+        },
+        {
+          "type": "list",
+          "text": "Cryptocurrency Payment Wallet and P2P Crypto Onramp: Featuring forex capabilities, our wallet simplifies transactions, making the transfer of funds as straightforward as traditional banking.\nWebAuthn Integration: Our platform employs a passwordless system, enhancing the Web3 experience by making it simpler and more secure than ever before."
+        },
+        {
+          "type": "p",
+          "text": [
+            {
+              "text": "In addition, the Bitcash team behind Bitlauncher has developed "
+            },
+            {
+              "text": "dBoard,",
+              "bold": true
+            },
+            {
+              "text": " a comprehensive DAO decision-making and community management tool. This platform enables stakeholders to engage in discussions, strategy formulation, and voting on crucial decisions, thereby fostering a collaborative and productive environment for organizational growth."
+            }
+          ]
         },
         {
           "type": "h2",
@@ -191,7 +232,7 @@ export const WITHE_PAPER = {
           "text": "Looking ahead, the Bitlauncher/Bitcash organization plans to introduce a non-profit, no-premine Layer 1 (L1) chain built on the foundational Antelope technology with a modern Hot-stuff consensus mechanism. This initiative aims to achieve the fairest token distribution possible, allocating one token to each verified unique human on the platform. This ambitious project underscores our commitment to fairness, inclusivity, and democratization in the blockchain space, aligning with our overarching mission to revolutionize the AI and cryptocurrency ecosystems."
         },
         {
-          "type": "h2",
+          "type": "p",
           "text": "In summary, our technology and innovation strategy is designed to not only support the growth and development of AI startups but also to redefine the landscape of blockchain technology, fostering a more transparent, efficient, and equitable future for all participants."
         }
       ]
@@ -201,40 +242,62 @@ export const WITHE_PAPER = {
       "title": "Token Sale",
       "content": [
         {
+          "type": "h2",
+          "text": "Bitcash Tokens Explained"
+        },
+        {
           "type": "p",
-          "text": "Bitcash Tokens Explained: Bitcash tokens are designed as keys to unlock a comprehensive array of services on our platform, including access to the launchpad, wallet, and participatory rights in DAO governance. These tokens are integral for fostering active user engagement and ensuring all members contribute to both management and evolutionary processes of the platform, promoting a deeply collaborative and participative governance structure."
+          "text": "Bitcash tokens are designed as keys to unlock a comprehensive array of services on our platform, including access to the launchpad, wallet, and participatory rights in DAO governance. These tokens are integral for fostering active user engagement and ensuring all members contribute to both management and evolutionary processes of the platform, promoting a deeply collaborative and participative governance structure."
         },
         {
           "type": "h2",
-          "text": "Purchase Details: Acquiring Bitcash tokens is akin to securing a membership that grants you access to a dynamic suite of tools and features."
+          "text": "Purchase Details"
         },
         {
           "type": "p",
-          "text": "This approach is structured like a subscription, where you gain the ability to leverage existing services and those that will be developed based on collective decisions made by the DAO community. Funds generated from token sales can be reinvested to enhance and broaden the platform’s capabilities, affirming the transaction’s non-speculative, utility-focused nature."
-        },
-        {
-          "type": "p",
-          "text": "Participation and Governance: Owning Bitcash tokens places you at the heart of our DAO's consensus-driven governance processes, enabling you to vote on pivotal proposals and influence the strategic trajectory of the platform."
-        },
-        {
-          "type": "p",
-          "text": "This model nurtures a cooperative environment where each member actively shapes the project's outcomes, transcending the passive investor role found in conventional investment scenarios."
-        },
-        {
-          "type": "p",
-          "text": "Economic Considerations: While the intrinsic value of Bitcash tokens may grow as the platform expands and user demand increases, any financial appreciation is inherently tied to the collective efforts and strategic choices of the DAO community."
-        },
-        {
-          "type": "p",
-          "text": "Success and potential returns are directly correlated with the active participation and collaborative achievements of all token holders."
+          "text": "Acquiring Bitlauncher tokens is akin to securing a membership that grants you access to a dynamic suite of tools and features. This approach is structured like a subscription, where you gain the ability to leverage existing services and those that will be developed based on collective decisions made by the DAO community. Funds generated from token sales can be reinvested to enhance and broaden the platform's capabilities, affirming the transaction's non-speculative, utility-focused nature."
         },
         {
           "type": "h2",
-          "text": "Commitment to Transparent Fundraising: Bitcash aims to raise up to $400k through a public token sale and presale to new members on our launchpad, ensuring equitable access for all types of capital contributions—from retail to institutional."
+          "text": "Participation and Governance"
         },
         {
           "type": "p",
-          "text": "This approach underscores our commitment to fairness and transparency, setting a standard for future offerings within our ecosystem. Note: This offering excludes U.S. investors and those from countries under U.S. sanctions."
+          "text": [
+            {
+              "text": "Owning Bitlauncher tokens places you at the heart of our DAO's "
+            },
+            {
+              "text": "consensus-driven governance processes,",
+              "bold": true
+            },
+            {
+              "text": "enabling you to vote on pivotal proposals and influence the strategic trajectory of the platform. This model nurtures a "
+            },
+            {
+              "text": "cooperative environment",
+              "bold": true
+            },
+            {
+              "text": "where each member actively shapes the project's outcomes, transcending the passive investor role found in conventional investment scenarios."
+            },
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Economic Considerations"
+        },
+        {
+          "type": "p",
+          "text": "While the intrinsic value of Bitlauncher tokens may grow as the platform expands and user demand increases, any financial appreciation is inherently tied to the collective efforts and strategic choices of the DAO community. Success and potential returns are directly correlated with the active participation and collaborative achievements of all token holders."
+        },
+        {
+          "type": "h2",
+          "text": "Commitment to Transparent Fundraising"
+        },
+        {
+          "type": "p2",
+          "text": "Bitlauncher aims to raise up to $400k through a public token sale and presale to new members on our launchpad, ensuring equitable access for all types of capital contributions—from retail to institutional. This approach underscores our commitment to fairness and transparency, setting a standard for future offerings within our ecosystem. Note: This offering excludes U.S. investors and those from countries under U.S. sanctions."
         },
         {
           "type": "h2",
@@ -242,12 +305,8 @@ export const WITHE_PAPER = {
         },
         {
           "type": "p",
-          "text": "The Bitcash token sale transcends traditional product offerings by inviting you to join a vibrant, consensus and community-driven ecosystem."
+          "text": "The Bitlauncher token sale transcends traditional product offerings by inviting you to join a vibrant, consensus and community-driven ecosystem. This initiative is dedicated to forging a decentralized and collaborative space where every participant actively contributes to shaping the future. We invite you to join this transformative journey, embracing a novel model of interaction and ownership in the digital age, where each member plays a crucial role in driving our collective success."
         },
-        {
-          "type": "p",
-          "text": "This initiative is dedicated to forging a decentralized and collaborative space where every participant actively contributes to shaping the future. We invite you to join this transformative journey, embracing a novel model of interaction and ownership in the digital age, where each member plays a crucial role in driving our collective success."
-        }
       ]
     },
     {
@@ -255,49 +314,67 @@ export const WITHE_PAPER = {
       "title": "Tokenomics",
       "content": [
         {
+          "type": "h2",
+          "text": "Overview"
+        },
+        {
           "type": "p",
-          "text": "Overview: The Bitcash ecosystem is underpinned by a robust tokenomics structure utilizing a utility token that follows a mint-and-burn model. This model ensures that the token supply is dynamically aligned with the platform's growth and the active contributions of its community members."
+          "text": "The Bitcash ecosystem is underpinned by a robust tokenomics structure utilizing a utility token that follows a mint-and-burn model. This model ensures that the token supply is dynamically aligned with the platform's growth and the active contributions of its community members."
         },
         {
           "type": "h2",
-          "text": "Mint-and-Burn Mechanism: Tokens in the Bitcash ecosystem are minted to reward contributions from developers, users, and investors, reflecting their value addition to the platform."
+          "text": "Mint-and-Burn Mechanism"
         },
         {
           "type": "p",
-          "text": "This issuance could dilute token value, but our strategic use of revenue—generated from utility token purchases for service access—counters this by buying back and burning tokens. This cycle not only maintains a balanced supply but potentially enhances the token's value as the platform expands and improves. (Est. utility fees: Launchpad: 2-5% of startup valuation. Onramp/P2P: 1% tx fees.)"
+          "text": "Tokens in the Bitlauncher ecosystem are minted to reward contributions from developers, users, and investors, reflecting their value addition to the platform. This issuance could dilute token value, but our strategic use of revenue—generated from utility token purchases for service access—counters this by buying back and burning tokens. This cycle not only maintains a balanced supply but potentially enhances the token's value as the platform expands and improves. (Est. utility fees: Launchpad: 2-5% of startup valuation. Onramp/P2P: 1% tx fees.)."
         },
         {
           "type": "h2",
-          "text": "Modeling After Traditional Equity: Bitcash's approach to token distribution is inspired by traditional equity models but adapted for the decentralized and dynamic nature of blockchain technology."
+          "text": "Modeling After Traditional Equity"
         },
         {
           "type": "p",
-          "text": "Tokens may be continuously issued to reflect ongoing contributions, similar to how a company might issue shares. This system parallels the corporate practice of using retained earnings for share buybacks, which we replicate in our mint-and-burn process to reward contributors and enhance the overall value of the ecosystem."
+          "text": "Bitlauncher's approach to token distribution is inspired by traditional equity models but adapted for the decentralized and dynamic nature of blockchain technology. Tokens may be continuously issued to reflect ongoing contributions, similar to how a company might issue shares. This system parallels the corporate practice of using retained earnings for share buybacks, which we replicate in our mint-and-burn process to reward contributors and enhance the overall value of the ecosystem."
         },
         {
           "type": "h2",
-          "text": "Equity Distribution and Token Valuation: Equity distribution in Bitcash is direct and aligns with our values of fairness and transparency, assigning tokens based on the tangible value of each contribution—be it capital, labor, or intellectual input."
+          "text": "Equity Distribution and Token Valuation"
         },
         {
           "type": "p",
-          "text": "This process ensures a fair and ongoing allocation of tokens, mirroring an individual's involvement and impact within the ecosystem."
+          "text": [
+            {
+              "text": "Equity distribution in Bitlauncher is direct and aligns with our values of "
+            },
+            {
+              "text": "fairness",
+              "bold": true
+            },
+            {
+              "text": " and "
+            },
+            {
+              "text": "transparency,",
+              "bold": true
+            },
+            {
+              "text": " assigning tokens based on the tangible value of each contribution—be it capital, labor, or intellectual input. This process ensures a fair and ongoing allocation of tokens, mirroring an individual’s involvement and impact within the ecosystem."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Tokens are initially valued at the cost of contribution, sidestepping potential complications from speculative future valuations and maintaining clarity and fairness in initial distributions. This approach eschews traditional startup equity practices like vesting schedules or cliffs, focusing instead on a transparent and immediate recognition of value."
         },
         {
           "type": "h2",
-          "text": "Tokens are initially valued at the cost of contribution, sidestepping potential complications from speculative future valuations and maintaining clarity and fairness in initial distributions."
+          "text": "Encouraging Adoption Among Launchpad Startups"
         },
         {
           "type": "p",
-          "text": "This approach eschews traditional startup equity practices like vesting schedules or cliffs, focusing instead on a transparent and immediate recognition of value."
+          "text": "Bitlauncher champions the adoption of this equitable tokenomics model across all startups within the Bitlauncher ecosystem, fostering a culture of transparency and fairness that is essential for nurturing innovation in the AI sector. We encourage startups to engage in smaller initial fundraising rounds, progressing to larger raises only upon achieving predefined milestones in development, user engagement, or revenue generation."
         },
-        {
-          "type": "h2",
-          "text": "Encouraging Adoption Among Launchpad Startups: Bitcash champions the adoption of this equitable tokenomics model across all startups within the Bitlauncher ecosystem, fostering a culture of transparency and fairness that is essential for nurturing innovation in the AI sector."
-        },
-        {
-          "type": "p",
-          "text": "We encourage startups to engage in smaller initial fundraising rounds, progressing to larger raises only upon achieving predefined milestones in development, user engagement, or revenue generation."
-        }
       ]
     },
     {
@@ -305,12 +382,16 @@ export const WITHE_PAPER = {
       "title": "Use Cases and Applications",
       "content": [
         {
+          "type": "h2",
+          "text": "Use Cases and Applications: Fostering Innovation Across the AI Landscape."
+        },
+        {
           "type": "p",
-          "text": "Use Cases and Applications: Fostering Innovation Across the AI Landscape. Bitlauncher is designed to address critical challenges and open up new opportunities for AI startups, investors, and various stakeholders within the burgeoning field of artificial intelligence. By harnessing the power of open-source models, tokenization, and decentralized governance, our platform aims to democratize access to resources, funding, and global markets."
+          "text": "Bitlauncher is designed to address critical challenges and open up new opportunities for AI startups, investors, and various stakeholders within the burgeoning field of artificial intelligence. By harnessing the power of open-source models, tokenization, and decentralized governance, our platform aims to democratize access to resources, funding, and global markets."
         },
         {
           "type": "h2",
-          "text": "Empowering AI Startups with Alternative Funding and Global Reach."
+          "text": "Empowering AI Startups with Alternative Funding and Global Reach"
         },
         {
           "type": "p",
@@ -318,7 +399,7 @@ export const WITHE_PAPER = {
         },
         {
           "type": "h2",
-          "text": "Open-Source Sustainability through Token Incentives."
+          "text": "Open-Source Sustainability through Token Incentives"
         },
         {
           "type": "p",
@@ -326,7 +407,7 @@ export const WITHE_PAPER = {
         },
         {
           "type": "h2",
-          "text": "Building Best-in-Class Startup Culture."
+          "text": "Building Best-in-Class Startup Culture"
         },
         {
           "type": "p",
@@ -334,7 +415,7 @@ export const WITHE_PAPER = {
         },
         {
           "type": "h2",
-          "text": "Bridging the Gap for Global Investors."
+          "text": "Bridging the Gap for Global Investors"
         },
         {
           "type": "p",
@@ -342,20 +423,16 @@ export const WITHE_PAPER = {
         },
         {
           "type": "h2",
-          "text": "Launching Masterbots."
+          "text": "Launching Masterbots.ai: A Case Study in Innovation"
         },
         {
           "type": "p",
-          "text": "ai: A Case Study in Innovation. One of the first projects to benefit from Bitauncher is Masterbots.ai, an initiative set to challenge the likes of ChatGPT with superior user experience and domain-specific improvements. Masterbots.ai is dedicated to crafting custom language and multimodal models, specialized for distinct regional dialects and specific industry needs."
-        },
-        {
-          "type": "h2",
-          "text": "Our mission extends to supporting startups in creating advanced image, video, multimodal, and coding models."
+          "text": "One of the first projects to benefit from Bitauncher is Masterbots.ai, an initiative set to challenge the likes of ChatGPT with superior user experience and domain-specific improvements. Masterbots.ai is dedicated to crafting custom language and multimodal models, specialized for distinct regional dialects and specific industry needs. We envision fostering a vibrant community of thousands of startups focused on specialized AI applications across various regions and industries, ensuring a collaborative and synergistic ecosystem within Bitlauncher where every participant benefits from shared knowledge and technologies."
         },
         {
           "type": "p",
-          "text": "We envision fostering a vibrant community of thousands of startups focused on specialized AI applications across various regions and industries, ensuring a collaborative and synergistic ecosystem within Bitlauncher where every participant benefits from shared knowledge and technologies."
-        }
+          "text": "Our mission extends to supporting startups in creating advanced image, video, multimodal, and coding models. We envision fostering a vibrant community of thousands of startups focused on specialized AI applications across various regions and industries, ensuring a collaborative and synergistic ecosystem within Bitlauncher where every participant benefits from shared knowledge and technologies."
+        },
       ]
     },
     {

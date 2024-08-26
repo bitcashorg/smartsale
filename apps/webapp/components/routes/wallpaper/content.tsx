@@ -9,6 +9,11 @@ interface WhitepaperContentProps {
   onSectionChange: (section: string) => void
 }
 
+interface Content {
+  type: string
+  text: string | { text: string, bold?: boolean }[]
+}
+
 export function WhitepaperContent({ activeSection, onSectionChange }: WhitepaperContentProps) {
   const contentRef = useRef<HTMLDivElement>(null)
 
@@ -20,29 +25,49 @@ export function WhitepaperContent({ activeSection, onSectionChange }: Whitepaper
     }
   }, [activeSection])
 
-  function renderContent(content: { type: string, text: string }) {
+  function renderContent(content: Content) {
     switch (content.type) {
       case 'p':
-        return <p className="text-center font-futura text-[15px] font-normal leading-[145%] text-gray-500 dark:text-gray-400 mb-[27px]">{content.text}</p>
+        return (
+          <p className="text-center font-futura text-[15px] font-normal leading-[145%] text-gray-500 dark:text-gray-400 mb-[27px]">
+            {typeof content.text === 'string' ? (
+              content.text
+            ) : (
+              content.text.map((part, idx) => (
+                <span key={idx} className={part.bold ? 'font-bold' : ''}>
+                  {part.text}
+                </span>
+              ))
+            )}
+          </p>
+        )
       case 'h2':
-        return <div className="max-w-[500px] mx-auto">
-          <h2 className="text-center text-[#FAFAFA] font-futura text-[26px] font-normal leading-[121%] mb-[37px]">{content.text.replaceAll('.', '')}</h2>
-        </div>
+        return (
+          <div className="max-w-[500px] mx-auto">
+            <h2 className="text-center text-[#FAFAFA] font-futura text-[26px] font-normal leading-[121%] mb-[37px]">
+              {typeof content.text === 'string' ? content.text : content.text.map(part => part.text).join('')}
+            </h2>
+          </div>
+        )
       case 'h3':
-        return <div className="max-w-[500px] mx-auto">
-          <h3 className="text-center text-[#FAFAFA] font-futura text-[20px] font-normal leading-[121%] mb-[30px]">{content.text}</h3>
-        </div>
+        return (
+          <div className="max-w-[500px] mx-auto">
+            <h3 className="text-center text-[#FAFAFA] font-futura text-[20px] font-normal leading-[121%] mb-[30px]">
+              {typeof content.text === 'string' ? content.text : content.text.map(part => part.text).join('')}
+            </h3>
+          </div>
+        )
       case 'list':
         return (
           <ul className="list-disc list-inside text-gray-500 dark:text-gray-400 mb-[27px] text-[15px]">
-            {content.text.split('\n').map((item, idx) => {
+            {typeof content.text === 'string' ? content.text.split('\n').map((item, idx) => {
               const [title, content] = item.split(':')
               return (
                 <li key={idx} className="mb-2">
                   {content && <span className="font-bold">{title}:</span>} {content || title}
                 </li>
               )
-            })}
+            }) : null}
           </ul>
         )
       default:

@@ -1,12 +1,8 @@
 import React, { useState, SVGProps, useEffect } from 'react'
 import { WITHE_PAPER } from '@/dictionaries/en/whitepaperv2'
-import * as Dialog from '@radix-ui/react-dialog'
 import { Transition } from '@/components/shared/transition'
 import { AnimatePresence } from 'framer-motion'
-import UseAnimations from 'react-useanimations'
-import menu4 from 'react-useanimations/lib/menu4'
 
-// Exported Function component
 export function WhitepaperSidebar({ activeSection, setActiveSection }: WhitepaperSidebarProps) {
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false)
@@ -82,7 +78,6 @@ export function WhitepaperSidebar({ activeSection, setActiveSection }: Whitepape
   )
 }
 
-// Subcomponents
 const NavigationIcon = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -113,11 +108,13 @@ const NavigationBtn = ({ className, onClick }: { className: string, onClick: () 
   )
 }
 
-// TypeScript types
 interface Section {
   type: string
   title: string
-  content: Array<{ type: string; text: string }>
+  content: Array<{
+    type: string;
+    text: string | Array<{ text: string; bold?: boolean }>
+  }>
 }
 
 interface WhitepaperSidebarProps {
