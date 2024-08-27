@@ -110,6 +110,7 @@ function useSessionFn() {
 
   // Function to handle login redirect (mobile)
   const loginRedirect = () => {
+    console.log('loginRedirect', loginUri, openConnectModal)
     if (!loginUri || !open) return
     const params = new URLSearchParams()
     params.append('esr_code', loginUri.replace('esr://', ''))
@@ -123,7 +124,7 @@ function useSessionFn() {
 
   // Function to handle login or connect wallet
   const loginOrConnect = () => {
-    console.log('login or connect', session, openConnectModal)
+    console.log('login or connect', session, openConnectModal, isMobile)
     session && openConnectModal
       ? openConnectModal()
       : isMobile

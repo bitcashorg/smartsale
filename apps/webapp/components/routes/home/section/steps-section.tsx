@@ -1,6 +1,5 @@
 'use client'
 
-import { SessionButton } from '@/components/dialogs/session/session-button'
 import { Section } from '@/components/shared/section'
 import { buttonVariants } from '@/components/ui/button'
 import { IconDownRightArrow } from '@/components/ui/icons'
@@ -33,22 +32,34 @@ export default function StepsSection({ lang, dict }: StepsSectionProps) {
                 <p className="w-[calc(100%-75px)] text-left leading-6 sm:max-w-[324px] text-sm xl:text-base">
                   {step.description}
                 </p>
-
-                <Link
-                  href={`/${lang}/${step.href}`}
-                  className={cn(
-                    buttonVariants({
-                      variant: 'accent',
-                      size: 'icon',
-                    }),
-                    'text-md group relative size-14 rounded-full p-0 font-bold hover:[&svg]:fill-card',
-                  )}
-                >
-                  <IconDownRightArrow
-                    onClick={index === 0 ? loginOrConnect : () => {}}
-                    className="size-4 transition-all group-focus-within:-rotate-45 group-hover:-rotate-45 [&_path]:stroke-white"
-                  />
-                </Link>
+                {index > 0 ? (
+                  <Link
+                    href={`/${lang}/${step.href}`}
+                    className={cn(
+                      buttonVariants({
+                        variant: 'accent',
+                        size: 'icon',
+                      }),
+                      'text-md group relative size-14 rounded-full p-0 font-bold hover:[&svg]:fill-card',
+                    )}
+                  >
+                    <IconDownRightArrow className="size-4 transition-all group-focus-within:-rotate-45 group-hover:-rotate-45 [&_path]:stroke-white" />
+                  </Link>
+                ) : (
+                  // biome-ignore lint/a11y/useKeyWithClickEvents: <explanation>
+                  <div
+                    onClick={loginOrConnect}
+                    className={cn(
+                      buttonVariants({
+                        variant: 'accent',
+                        size: 'icon',
+                      }),
+                      'text-md group relative size-14 rounded-full p-0 font-bold hover:[&svg]:fill-card',
+                    )}
+                  >
+                    <IconDownRightArrow className="size-4 transition-all group-focus-within:-rotate-45 group-hover:-rotate-45 [&_path]:stroke-white" />
+                  </div>
+                )}
               </div>
             </div>
           ),
