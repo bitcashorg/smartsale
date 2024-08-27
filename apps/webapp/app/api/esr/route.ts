@@ -62,6 +62,21 @@ export async function POST(req: NextRequest) {
 
     // create a session is if the signed action is login
     if (action === 'login') {
+      // Upsert account in Supabase
+      const { data: accountData, error: accountError } = await supabase
+        .from('account')
+        .upsert(
+          { account: parsed.sa },
+          { onConflict: 'account', ignoreDuplicates: false },
+        )
+        .select('*')
+        .single()
+
+      if (accountError) {
+        throw new Error(`Error upserting account: ${accountError.message}`)
+      }
+
+      console.log('Account upserted successfully:', accountData)
       const { data: session, error: sessionError } = await supabase
         .from('session')
         .insert([
