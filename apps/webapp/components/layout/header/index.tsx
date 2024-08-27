@@ -14,7 +14,7 @@ import { Navigation } from './new-nav'
 
 export function Header({ lang, dict }: HeaderProps) {
   return (
-    <div className="sticky top-0 z-50 bg-background md:mt-8">
+    <header className="sticky top-0 z-50 bg-background md:pt-4 md:-top-4">
       <div className="container flex items-center justify-between h-16 mx-auto md:px-4">
         {/* Left Section with Icon */}
         <div className="flex items-center justify-start flex-1">
@@ -46,7 +46,7 @@ export function Header({ lang, dict }: HeaderProps) {
           </div>
         </div>
       </div>
-    </div>
+    </header>
   )
 }
 

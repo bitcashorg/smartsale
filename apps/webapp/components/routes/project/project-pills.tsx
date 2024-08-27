@@ -24,7 +24,7 @@ export function ProjectPills({ project }: { project: Project }) {
   ]
 
   return (
-    <div className="z-10 flex gap-2 mb-6 md:gap-6">
+    <div className="z-10 flex gap-2 mb-6 sm:gap-3 md:gap-6">
       {links.map((l, index) => (
         <Link href={l.href} shallow key={`${l.label}-${index}`}>
           <Button
