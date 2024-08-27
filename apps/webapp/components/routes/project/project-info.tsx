@@ -61,11 +61,11 @@ export function ProjectInfo({
           items[0].value
         ) : (
           <div
-            key={k}
+            key={`project-info-${project.id}-${k}`}
             className="flex w-full min-w-[250px] flex-col justify-evenly rounded-sm bg-muted px-4 py-3 md:min-w-[203px]"
           >
             {items.map((item, ik) => (
-              <Fragment key={ik}>
+              <Fragment key={`project-info-${project.id}-${k}-${ik}`}>
                 <ListItem {...item} />
 
                 {ik < items.length - 1 && (

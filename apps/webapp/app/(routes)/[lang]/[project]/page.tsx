@@ -5,9 +5,10 @@ import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { getDictionary } from '@/dictionaries'
 import { locales } from '@/dictionaries/locales'
-import { appConfig } from '@/lib/config'
 import { getProjectBySlug, getProjects } from '@/lib/projects'
 import { cn } from '@/lib/utils'
+import { createSupabaseServerClient } from '@/services/supabase'
+import { getPresaleData } from '@/services/supabase/service'
 import type { ProjectPageParams, ProjectPageProps } from '@/types/routing.type'
 import dynamic from 'next/dynamic'
 import Image from 'next/image'
@@ -22,8 +23,15 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
   const projectContentObjectKeys = Object.keys(project.content)
   const projectContent = project.content
 
-  // is presale upcoming
-  // const isPresaleUpcoming = new Date(project.presaleData.start_timestamptz) > new Date()
+  const supabase = await createSupabaseServerClient()
+  const presaleData =
+    project.presaleId &&
+    (await getPresaleData({ supabase, projectId: project.id }))
+
+  // const isPresaleUpcoming =
+  //   presaleData && new Date(presaleData.start_timestamptz) > new Date()
+
+  const isPresaleClosed = Boolean(presaleData?.close_timestamptz)
 
   return (
     <>
@@ -35,7 +43,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               <div className="flex items-center justify-center gap-3 align-center">
                 <DynamicAddressForm projectId={project.id} />
 
-                {appConfig.features.presale ? (
+                {!isPresaleClosed ? (
                   <Link href={`/${project.slug}/presale`} className="flex">
                     <Button>Active Presale</Button>
                   </Link>
@@ -136,7 +144,7 @@ export async function generateStaticParams(): Promise<ProjectPageParams[]> {
 
 const DynamicAddressForm = dynamic(
   () =>
-    import('../../../../components/routes/project/register-address-form').then(
+    import('@/components/routes/project/register-address-form').then(
       (mod) => mod.RegisterAddressForm,
     ),
   {
