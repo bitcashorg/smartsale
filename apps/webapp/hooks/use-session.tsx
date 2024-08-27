@@ -1,6 +1,7 @@
 'use client'
 
 import { getSesssion } from '@/app/actions/general'
+import { upsertAccount } from '@/app/actions/upsert-account'
 import { genLoginSigningRequest } from '@/lib/eos'
 import { useSupabaseClient } from '@/services/supabase'
 import { createContextHook } from '@blockmatic/hooks-utils'
@@ -48,6 +49,7 @@ function useSessionFn() {
   const startSession = useCallback(
     (session: Tables<'session'>) => {
       setSession(session)
+      upsertAccount({ account: session.account })
       identifyUser(account.address || '0x', {
         account: session?.account ?? 'unknown',
       })
