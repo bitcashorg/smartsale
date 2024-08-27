@@ -1,5 +1,5 @@
-// @ts-nocheck
 import { GenqlError } from './error'
+// @ts-nocheck
 import type { GraphqlOperation } from './generateGraphqlOperation'
 
 type Variables = Record<string, any>
@@ -46,28 +46,41 @@ function dispatchQueueBatch(client: QueryBatcher, queue: Queue): void {
   if (batchedQuery.length === 1) {
     batchedQuery = batchedQuery[0]
   }
+  ;(() => {
+    try {
+      return client.fetcher(batchedQuery)
+    } catch (e) {
+      return Promise.reject(e)
+    }
+  })()
+    .then((responses: any) => {
+      if (queue.length === 1 && !Array.isArray(responses)) {
+        if (responses.errors && responses.errors.length) {
+          queue[0].reject(new GenqlError(responses.errors, responses.data))
+          return
+        }
 
-  client.fetcher(batchedQuery).then((responses: any) => {
-    if (queue.length === 1 && !Array.isArray(responses)) {
-      if (responses.errors && responses.errors.length) {
-        queue[0].reject(new GenqlError(responses.errors, responses.data))
+        queue[0].resolve(responses)
         return
+      } else if (responses.length !== queue.length) {
+        throw new Error('response length did not match query length')
       }
 
-      queue[0].resolve(responses)
-      return
-    } else if (responses.length !== queue.length) {
-      throw new Error('response length did not match query length')
-    }
-
-    for (let i = 0; i < queue.length; i++) {
-      if (responses[i].errors && responses[i].errors.length) {
-        queue[i].reject(new GenqlError(responses[i].errors, responses[i].data))
-      } else {
-        queue[i].resolve(responses[i])
+      for (let i = 0; i < queue.length; i++) {
+        if (responses[i].errors && responses[i].errors.length) {
+          queue[i].reject(
+            new GenqlError(responses[i].errors, responses[i].data),
+          )
+        } else {
+          queue[i].resolve(responses[i])
+        }
       }
-    }
-  })
+    })
+    .catch((e) => {
+      for (let i = 0; i < queue.length; i++) {
+        queue[i].reject(e)
+      }
+    })
 }
 
 /**

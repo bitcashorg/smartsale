@@ -1,4 +1,4 @@
-import { TestnetMBOTSPL, type TokenContractData } from 'app-contracts'
+import { TestnetMBOTSPL, type TokenContractData } from '@repo/contracts'
 import { merge } from 'lodash'
 import type { StaticImageData } from 'next/image'
 import BitcashPic from '../assets/img/bitcash.webp'
@@ -27,6 +27,7 @@ export const projects: Project[] = [
     twitterUsername: 'bitcashorg',
     telegramGroup: 'bitlauncher',
     discordServer: 'KuR48XUxnG',
+    presaleId: 1, // in database
   },
   {
     id: 2,
@@ -94,6 +95,7 @@ export interface Project {
   presaleOpen?: boolean
   registrationOpen?: boolean
   auctionClosed?: boolean
+  presaleId?: number
 }
 
 export interface ContentSection {

@@ -1,4 +1,4 @@
-import { TestnetEasyAuction } from 'app-contracts'
+import { TestnetEasyAuction } from '@repo/contracts'
 import { eosEvmTestnet } from 'app-env'
 import BN from 'bn.js'
 import { http, type Log, createPublicClient, stringify } from 'viem'

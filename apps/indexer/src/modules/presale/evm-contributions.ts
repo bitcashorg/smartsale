@@ -1,4 +1,4 @@
-import { type EVMTokenContractData, appContracts } from 'app-contracts'
+import { type EVMTokenContractData, appContracts } from '@repo/contracts'
 import {
   http,
   type Address,
@@ -8,7 +8,7 @@ import {
   parseAbiItem,
   stringify,
 } from 'viem'
-import { upsertTransfers } from '~/lib/supabase-client'
+// import { upsertTransfers } from '~/lib/supabase-client'
 import { runPromisesInSeries } from '~/lib/utils'
 import type { TransferEvent } from '~/modules/auction/auction.type'
 import { issuePresaleTokens } from './presale-issuer'
@@ -104,16 +104,16 @@ async function handleTransfer(log: TransferEvent, token: EVMTokenContractData) {
     log.args.value,
   )) as Address
 
-  upsertTransfers({
-    trx_hash: log.transactionHash!,
-    from: log.args.from as Address,
-    to: log.args.to as Address,
-    amount: Number(log.args.value),
-    token: log.address,
-    chain_id: token.chainId,
-    type: 'presale',
-    bl_presale_trx,
-  })
+  // upsertTransfers({
+  //   trx_hash: log.transactionHash!,
+  //   from: log.args.from as Address,
+  //   to: log.args.to as Address,
+  //   amount: Number(log.args.value),
+  //   token: log.address,
+  //   chain_id: token.chainId,
+  //   type: 'presale',
+  //   bl_presale_trx,
+  // })
 
   // console.log('result', result)
   // if (result.usdcred_trx || data.from === '0x0000000000000000000000000000000000000000') return

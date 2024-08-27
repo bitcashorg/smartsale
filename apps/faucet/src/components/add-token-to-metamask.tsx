@@ -1,4 +1,4 @@
-import type { EVMTokenContractData } from 'app-contracts'
+import type { EVMTokenContractData } from '@repo/contracts'
 import { useSwitchChain } from 'wagmi'
 import { Button } from './ui/button'
 

@@ -6,26 +6,26 @@ WORKDIR /app
 
 # Copy the package.json files for the workspaces
 COPY package.json .
-COPY apps/supabase/package.json ./apps/supabase/package.json
 COPY apps/indexer/package.json ./apps/indexer/package.json
-COPY apps/trigger/package.json ./apps/trigger/package.json
+COPY packages/jobs/package.json ./packages/jobs/package.json
+COPY packages/supabase/package.json ./packages/supabase/package.json
+COPY packages/alchemy/package.json ./packages/alchemy/package.json
 COPY packages/app-env/package.json ./packages/app-env/package.json
-COPY packages/app-contracts/package.json ./packages/app-contracts/package.json
-COPY packages/app-lib/package.json ./packages/app-lib/package.json
-COPY packages/config-typescript/package.json ./packages/config-typescript/package.json
-
+COPY packages/contracts/package.json ./packages/contracts/package.json
+COPY packages/utils/package.json ./packages/utils/package.json
+COPY packages/tsconfig/package.json ./packages/tsconfig/package.json
+COPY packages/tokens/package.json ./packages/tokens/package.json
 # Copy the lock file
 COPY bun.lockb .
 
 # Install dependencies for the entire monorepo
 RUN mkdir hardhat
-RUN npm install -g bun ts-node tsconfig-paths
+RUN npm install -g bun 
+RUN bun install -g ts-node tsconfig-paths ts-node-dev
 RUN bun install
 
 # Copy the specific workspaces
-COPY apps/supabase ./apps/supabase
 COPY apps/indexer ./apps/indexer
-COPY apps/trigger ./apps/trigger
 COPY packages/ ./packages/
 
 # Set the working directory to your specific workspace

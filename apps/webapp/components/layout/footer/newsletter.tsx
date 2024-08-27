@@ -89,7 +89,7 @@ export default function Newsletter({ lang }: LangProp) {
 
   return (
     <div
-      className="container px-0 sm:px-4 relative mt-40 mb-10"
+      className="container relative px-0 mt-40 mb-10 sm:px-4"
       id="newsletter"
     >
       <GoogleReCaptchaProvider
@@ -103,12 +103,10 @@ export default function Newsletter({ lang }: LangProp) {
           },
         }}
       >
-        <section className="newsletter-wrapper">
+        <section className="newsletter-wrapper relative z-10">
           <div className="flex min-h-[460px] w-full max-w-[600px] flex-col items-center justify-center gap-8 px-3 text-center md:gap-11 md:px-0">
             <div className="flex flex-col w-full gap-7">
-              <h2 className="text-3xl tracking-tight sm:text-4xl">
-                Sign up for our newsletter
-              </h2>
+              <h2 className="newsletterHeading">Sign up for our newsletter</h2>
               <p className="mx-auto sm:text-xl">
                 To stay up to date with our progress, announcements and
                 exclusive discounts, sign up with your email below:

@@ -17,7 +17,7 @@ import {
   SelectValue,
 } from '@/components/ui/select'
 import { cn } from '@/lib/utils'
-import { TestnetUSDCred } from 'app-contracts'
+import { TestnetUSDCred } from '@repo/contracts'
 import { useState } from 'react'
 import { parseUnits } from 'viem'
 import { useAccount, useSwitchChain, useWriteContract } from 'wagmi'

@@ -17,10 +17,13 @@ import { redirect } from 'next/navigation'
 export default async function ProjectPage({ params }: ProjectPageProps) {
   const dict = await getDictionary(params.lang)
   const project = await getProjectBySlug(params.project, dict)
-  if (!project) redirect('/')
+  if (!project || !project.content) redirect('/')
 
-  const projectContentObjectKeys = Object.keys(project.content!)
-  const projectContent = project.content!
+  const projectContentObjectKeys = Object.keys(project.content)
+  const projectContent = project.content
+
+  // is presale upcoming
+  // const isPresaleUpcoming = new Date(project.presaleData.start_timestamptz) > new Date()
 
   return (
     <>
@@ -28,7 +31,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         <ProjectHeader project={project}>
           <div className="grid grid-cols-1 gap-8 mb-10 lg:grid-cols-2">
             <Card className="flex flex-col w-full pb-5 border-card/30 bg-card/60 backdrop-blur-lg">
-              <Countdown />
+              <Countdown targetDate={new Date()} heading="Pre-Sale Countdown" />
               <div className="flex items-center justify-center gap-3 align-center">
                 <DynamicAddressForm projectId={project.id} />
 
@@ -56,7 +59,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                   !isLastItem &&
                     'backdrop-x my-10 overflow-hidden rounded-3xl bg-primary/70 pb-10',
                   index % 2 !== 0
-                    ? `backdrop-x rounded-3xl bg-primary/70 pb-10`
+                    ? 'backdrop-x rounded-3xl bg-primary/70 pb-10'
                     : '',
                 )}
               >

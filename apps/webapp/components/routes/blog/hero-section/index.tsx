@@ -20,7 +20,7 @@ export function HeroSection({ recent, lang }: HeroSectionProps) {
               <HeroSubCard
                 sectionSlug={post?.slug}
                 post={post.articles[0]}
-                key={index}
+                key={`hero-section_sub-card-${index}`}
               />
             ),
         )}

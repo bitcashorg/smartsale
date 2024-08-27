@@ -11,7 +11,7 @@ export function FeatureThree() {
           <h2 className="mt-3 mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white md:text-3xl">
             Trusted by over 600 million users and 10,000 teams
           </h2>
-          <p className="font-light text-gray-500 dark:text-gray-400 sm:text-xl">
+          <p className="font-light text-infoForeground sm:text-xl">
             Our rigorous security and compliance standards are at the heart of
             all we do. We work tirelessly to protect you and your customers.
           </p>
@@ -75,7 +75,7 @@ export function FeatureThree() {
             <h3 className="mb-2 text-2xl font-bold dark:text-white">
               99.99% uptime
             </h3>
-            <p className="font-light text-gray-500 dark:text-gray-400">
+            <p className="font-light text-infoForeground">
               For Landwind, with zero maintenance downtime
             </p>
           </div>
@@ -91,7 +91,7 @@ export function FeatureThree() {
             <h3 className="mb-2 text-2xl font-bold dark:text-white">
               600M+ Users
             </h3>
-            <p className="font-light text-gray-500 dark:text-gray-400">
+            <p className="font-light text-infoForeground">
               Trusted by over 600 milion users around the world
             </p>
           </div>
@@ -111,7 +111,7 @@ export function FeatureThree() {
             <h3 className="mb-2 text-2xl font-bold dark:text-white">
               100+ countries
             </h3>
-            <p className="font-light text-gray-500 dark:text-gray-400">
+            <p className="font-light text-infoForeground">
               Have used Landwind to create functional websites
             </p>
           </div>
@@ -127,7 +127,7 @@ export function FeatureThree() {
             <h3 className="mb-2 text-2xl font-bold dark:text-white">
               5+ Million
             </h3>
-            <p className="font-light text-gray-500 dark:text-gray-400">
+            <p className="font-light text-infoForeground">
               Transactions per day
             </p>
           </div>

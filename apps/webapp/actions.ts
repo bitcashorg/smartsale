@@ -3,7 +3,7 @@
 import { handleAxiosError } from '@/lib/utils'
 import { createSupabaseServerClient } from '@/services/supabase'
 import { presaleInsertSchema } from '@repo/supabase'
-import { fromEntries } from 'app-lib'
+import { fromEntries } from '@repo/utils'
 import axios from 'axios'
 import { cookies } from 'next/headers'
 import { Resend } from 'resend'

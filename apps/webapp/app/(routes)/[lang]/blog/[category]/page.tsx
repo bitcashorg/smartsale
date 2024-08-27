@@ -8,7 +8,6 @@ import {
   getPageSeoText,
 } from '@/services/datocms'
 import type { Metadata } from 'next'
-import Image from 'next/image'
 import { notFound } from 'next/navigation'
 
 export default async function Page(props: CategoryPageProps) {
@@ -23,17 +22,17 @@ export default async function Page(props: CategoryPageProps) {
   if (!pageSeo) notFound()
 
   return (
-    <>
+    <section className="py-10">
       <BgHeader
-        heading={pageSeo.description}
-        subheading={`Bitlauncher ${pageSeo.title} Articles`}
+        heading={pageSeo.title}
+        subheading={pageSeo.description}
+        className="!text-6xl [&_+_div]:md:!text-2xl [&_+_div]:md:!py-0"
         imageSrc="/images/blog/temp-bg-concept.webp"
       />
-
-      <main className="narrow-container">
+      <div className="narrow-container">
         <BlogSections sections={sections} lang={lang} category={category} />
-      </main>
-    </>
+      </div>
+    </section>
   )
 }
 

@@ -31,7 +31,7 @@ function Section({
               <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
                 {title}
               </h1>
-              <p className="max-w-[600px] text-gray-500 dark:text-gray-400 md:text-xl">
+              <p className="max-w-[600px] text-infoForeground md:text-xl">
                 {description}
               </p>
             </div>
@@ -54,7 +54,7 @@ function Section({
                   <li key={project.name}>
                     <div className="grid gap-1">
                       <h3 className="text-xl font-bold">{project.name}</h3>
-                      <p className="text-gray-500 dark:text-gray-400">
+                      <p className="text-infoForeground">
                         {project.description}
                       </p>
                     </div>

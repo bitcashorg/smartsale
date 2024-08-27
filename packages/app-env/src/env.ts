@@ -7,7 +7,7 @@ import {
   type TokenContractData,
   usdcContracts,
   usdtContracts,
-} from 'app-contracts'
+} from '@repo/contracts'
 import type { Address, Chain } from 'viem'
 import { appChains } from './chains'
 

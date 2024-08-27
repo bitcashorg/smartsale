@@ -5,6 +5,7 @@ import { MobileNavProvider } from '@/hooks/use-mobile-navigation'
 import { SessionProvider } from '@/hooks/use-session'
 import { UseSigningRequestProvider } from '@/hooks/use-signing-request'
 import { appConfig } from '@/lib/config'
+import multibase, { MultibaseProvider } from '@multibase/js'
 import {
   RainbowKitProvider,
   type Theme,
@@ -94,6 +95,17 @@ const customRainbowKitTheme = merge(lightTheme(), {
   // }
 } as Theme)
 
+if (typeof window !== 'undefined') {
+  const multibaseKey = appConfig.multibase.key
+
+  if (!multibaseKey) {
+    console.error('Missing MULTIBASE_API_KEY')
+  } else {
+    multibase.init(multibaseKey)
+    console.info('Multibase Initialized')
+  }
+}
+
 export function Providers({ children, ...props }: ThemeProviderProps) {
   return (
     <NextThemesProvider {...props}>
@@ -108,11 +120,13 @@ export function Providers({ children, ...props }: ThemeProviderProps) {
                 appName: 'Bitlauncher',
               }}
             >
-              <SessionProvider>
-                <UseSigningRequestProvider>
-                  <MobileNavProvider>{children}</MobileNavProvider>
-                </UseSigningRequestProvider>
-              </SessionProvider>
+              <MultibaseProvider client={multibase}>
+                <SessionProvider>
+                  <UseSigningRequestProvider>
+                    <MobileNavProvider>{children}</MobileNavProvider>
+                  </UseSigningRequestProvider>
+                </SessionProvider>
+              </MultibaseProvider>
             </RainbowKitProvider>
           </WagmiProvider>
         </QueryClientProvider>
