@@ -192,7 +192,7 @@ input[type="number"] {
 
 .newsletter-wrapper {
   @apply box-content flex flex-col items-center px-0 mx-auto sm:rounded-3xl sm:text-center;
-  background: url('/images/newsletter-bg.webp') center center no-repeat;
+  background: url("/images/newsletter-bg.webp") center center no-repeat;
   background-size: cover;
 }
 
@@ -310,10 +310,10 @@ iframe[title="reCAPTCHA"],
 /* Heading in About - Security - Whitepaper */
 .sectionsHeading {
   @apply text-[4.188rem] font-normal leading-normal md:text-[4.3504rem] lg:text-[5.438rem];
-} 
+}
 
 /* Subheading in About - Security - Whitepaper */
-.sectionsSubheading{
+.sectionsSubheading {
   @apply text-start text-2xl font-medium leading-[42.35px] text-[#ff51ed] md:text-[2.188rem];
 }
 

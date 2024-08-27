@@ -1,9 +1,9 @@
-import * as fs from 'fs'
-import path from 'path'
 import type { Lang } from '@/dictionaries/locales'
 import { getFilePath, parseFile } from '@/lib/file'
 import { getErrorMessage } from '@repo/utils'
+import * as fs from 'fs'
 import { uniq } from 'lodash'
+import path from 'path'
 import {
   type BlogArticleRecord,
   getBlogCategory,

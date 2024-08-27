@@ -1,6 +1,6 @@
 import { smartsaleEnv } from 'app-env'
 import type { Address } from 'viem'
-import { isAddress, isHex } from 'viem'
+import { isAddress } from 'viem'
 import { privateKeyToAccount } from 'viem/accounts'
 import { z } from 'zod'
 import { logger } from './lib/logger'

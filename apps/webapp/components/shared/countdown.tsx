@@ -1,7 +1,7 @@
 'use client'
 
-import { differenceInSeconds } from 'date-fns'
-import { useEffect, useState } from 'react'
+import { differenceInSeconds } from 'date-fns';
+import { useEffect, useState } from 'react';
 
 export function Countdown({
   targetDate,

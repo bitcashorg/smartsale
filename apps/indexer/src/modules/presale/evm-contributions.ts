@@ -1,12 +1,11 @@
 import { type EVMTokenContractData, appContracts } from '@repo/contracts'
 import {
-  http,
   type Address,
   type Log,
   type PublicClient,
   createPublicClient,
-  parseAbiItem,
-  stringify,
+  http,
+  parseAbiItem
 } from 'viem'
 // import { upsertTransfers } from '~/lib/supabase-client'
 import { runPromisesInSeries } from '~/lib/utils'
