@@ -1,5 +1,5 @@
 'use client'
-import { generateShortLink } from '@/actions'
+import { generateShortLink } from '@/app/actions/general'
 import { useSession } from '@/hooks/use-session'
 import { useSupabaseClient } from '@/services/supabase/client'
 import { AnimatePresence } from 'framer-motion'

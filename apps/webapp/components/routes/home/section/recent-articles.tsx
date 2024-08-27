@@ -1,12 +1,10 @@
 import { BlogSections } from '@/components/routes/blog/blog-sections'
-// import { ShortVideoStrip } from '@/components/layout/footer/short-video'
 import {
   type MediaSection,
   MediaSections,
 } from '@/components/shared/media-sections'
 import { Section } from '@/components/shared/section'
 import type { ArticlesSection } from '@/services/datocms'
-import { fetchPublicYouTubePlaylist } from '@/services/youtube'
 import type { LangProp } from '@/types/routing.type'
 
 export async function RecentArticles({ lang }: LangProp) {

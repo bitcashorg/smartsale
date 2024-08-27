@@ -103,7 +103,7 @@ export async function generateStaticParams() {
 
 const DynamicSessionDialog = dynamic(
   () =>
-    import('../../../components/layout/session/session-dialog').then(
+    import('../../../components/dialogs/session/session-dialog').then(
       (mod) => mod.SessionDialog,
     ),
   {

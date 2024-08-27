@@ -1,14 +1,15 @@
 'use client'
 
-import { BitcashAccessButton } from '@/components/layout/header/bitcash-access'
 import { Section } from '@/components/shared/section'
 import { buttonVariants } from '@/components/ui/button'
 import { IconDownRightArrow } from '@/components/ui/icons'
 import type { Lang } from '@/dictionaries/locales'
+import { useSession } from '@/hooks/use-session'
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
 
 export default function StepsSection({ lang, dict }: StepsSectionProps) {
+  const { loginOrConnect } = useSession()
   return (
     <Section heading={dict.footer.stepsInfo}>
       <div
@@ -45,11 +46,19 @@ export default function StepsSection({ lang, dict }: StepsSectionProps) {
                     <IconDownRightArrow className="size-4 transition-all group-focus-within:-rotate-45 group-hover:-rotate-45 [&_path]:stroke-white" />
                   </Link>
                 ) : (
-                  <BitcashAccessButton
-                    buttonLabel="down-right-icon"
-                    buttonStyle={{ size: 'icon', variant: 'accent' }}
-                    defaultContent="register"
-                  />
+                  // biome-ignore lint/a11y/useKeyWithClickEvents: <explanation>
+                  <div
+                    onClick={loginOrConnect}
+                    className={cn(
+                      buttonVariants({
+                        variant: 'accent',
+                        size: 'icon',
+                      }),
+                      'text-md group relative size-14 rounded-full p-0 font-bold hover:[&svg]:fill-card',
+                    )}
+                  >
+                    <IconDownRightArrow className="size-4 transition-all group-focus-within:-rotate-45 group-hover:-rotate-45 [&_path]:stroke-white" />
+                  </div>
                 )}
               </div>
             </div>

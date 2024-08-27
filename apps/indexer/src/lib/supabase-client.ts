@@ -1,5 +1,6 @@
 import type { Database, TablesInsert } from '@repo/supabase'
 import { createClient } from '@supabase/supabase-js'
+import { Address } from 'viem'
 import { appConfig } from '~/config'
 
 // Initialize Supabase client
@@ -91,7 +92,25 @@ export async function getPresaleData(projectId: number) {
     .single()
 
   if (error) {
-    console.error('Error checking presale data:', error)
+    console.error('Error getting presale data:', error)
+    throw error
+  }
+
+  return data
+}
+
+export async function getPresaleDeposits({
+  address,
+  projectId,
+}: { address: Address; projectId: number }) {
+  const { data, error } = await supabase
+    .from('presale_deposit')
+    .select('*')
+    .eq('project_id', projectId)
+    .eq('address', address)
+
+  if (error) {
+    console.error('Error getting presale deposits data:', error)
     throw error
   }
 
