@@ -15,6 +15,7 @@ import { appConfig } from '~/config'
 import { logger } from '~/lib/logger'
 import {
   getPresaleData,
+  getPresaleDeposits,
   isAddressRegisteredForPresale,
 } from '~/lib/supabase-client'
 // import {isAddressRegisteredForPresale} from '~/src/lib/supabase-client';
@@ -92,7 +93,18 @@ export async function alchemyWebhook(req: Request, res: Response) {
 
     // Get presale data and validate amount and timing
     const presaleData = await getPresaleData(1)
-    const isValidAmount = txn.value <= presaleData.max_allocation
+
+    // Check if account already bought
+    const deposits = await getPresaleDeposits({
+      address: getAddress(txn.fromAddress),
+      projectId: 1,
+    })
+    const totalDeposits = deposits.reduce(
+      (acc, deposit) => acc + Number(deposit.amount),
+      0,
+    )
+    const isValidAmount =
+      txn.value + totalDeposits <= presaleData.max_allocation
     const currentTimestamp = Math.floor(Date.now() / 1000) // Current time in seconds
     const isWithinPresalePeriod =
       currentTimestamp >= Number(presaleData.start_timestamptz) &&
