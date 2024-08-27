@@ -1,7 +1,7 @@
 import { TestnetEasyAuction } from '@repo/contracts'
 import { eosEvmTestnet } from 'app-env'
 import BN from 'bn.js'
-import { http, type Log, createPublicClient, stringify } from 'viem'
+import { createPublicClient, http, stringify, type Log } from 'viem'
 import { upsertAuctionDetail, upsertOrder } from '~/lib/supabase-client'
 import {
   bigintToPostgresTimestamp,
