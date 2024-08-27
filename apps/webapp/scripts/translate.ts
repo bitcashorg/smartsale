@@ -1,4 +1,3 @@
-import * as path from 'path'
 import { type Lang, locales } from '@/dictionaries/locales'
 import { promiseAllWithConcurrencyLimit } from '@/lib/utils'
 import { anthropicTranslate } from '@/services/anthropic'
@@ -12,6 +11,7 @@ import {
 import { getErrorMessage } from '@repo/utils'
 import * as fs from 'fs/promises'
 import _ from 'lodash'
+import * as path from 'path'
 
 async function processFile(
   file: string,

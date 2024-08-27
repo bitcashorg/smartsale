@@ -1,11 +1,11 @@
-import { Section } from '@/components/shared/section'
+import { Section } from '@/components/shared/section';
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from '@/components/ui/accordion'
-import type { LangProp } from '@/types/routing.type'
+} from '@/components/ui/accordion';
+import type { LangProp } from '@/types/routing.type';
 
 export function FAQ({ lang, dict }: FAQProps) {
   return (

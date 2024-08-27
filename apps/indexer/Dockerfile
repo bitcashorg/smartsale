@@ -26,6 +26,7 @@ RUN bun install
 
 # Copy the specific workspaces
 COPY apps/indexer ./apps/indexer
+COPY apps/trigger ./apps/trigger
 COPY packages/ ./packages/
 
 # Set the working directory to your specific workspace
