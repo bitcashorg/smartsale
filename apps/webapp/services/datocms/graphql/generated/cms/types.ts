@@ -1684,7 +1684,6 @@ export default {
           first: [72],
           filter: [0],
           orderBy: [1, '[BlogAiModelOrderBy]'],
-          orderBy: [1, '[BlogAiModelOrderBy]'],
         },
       ],
       allBlogBitcashes: [
@@ -1696,7 +1695,6 @@ export default {
           first: [72],
           filter: [3],
           orderBy: [4, '[BlogBitcashModelOrderBy]'],
-          orderBy: [4, '[BlogBitcashModelOrderBy]'],
         },
       ],
       allBlogBitcoins: [
@@ -1707,7 +1705,6 @@ export default {
           skip: [72],
           first: [72],
           filter: [6],
-          orderBy: [7, '[BlogBitcoinModelOrderBy]'],
           orderBy: [7, '[BlogBitcoinModelOrderBy]'],
         },
       ],
@@ -1806,7 +1803,6 @@ export default {
           fallbackLocales: [103, '[SiteLocale!]'],
           filter: [0],
           orderBy: [1, '[BlogAiModelOrderBy]'],
-          orderBy: [1, '[BlogAiModelOrderBy]'],
         },
       ],
       blogBitcash: [
@@ -1816,7 +1812,6 @@ export default {
           fallbackLocales: [103, '[SiteLocale!]'],
           filter: [3],
           orderBy: [4, '[BlogBitcashModelOrderBy]'],
-          orderBy: [4, '[BlogBitcashModelOrderBy]'],
         },
       ],
       blogBitcoin: [
@@ -1825,7 +1820,6 @@ export default {
           locale: [103],
           fallbackLocales: [103, '[SiteLocale!]'],
           filter: [6],
-          orderBy: [7, '[BlogBitcoinModelOrderBy]'],
           orderBy: [7, '[BlogBitcoinModelOrderBy]'],
         },
       ],
