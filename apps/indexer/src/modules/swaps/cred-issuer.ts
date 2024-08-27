@@ -1,4 +1,4 @@
-import { TestnetUSDCred } from 'app-contracts'
+import { TestnetUSDCred } from '@repo/contracts'
 import { eosEvmTestnet } from 'app-env'
 import { createWalletClient } from 'viem'
 import { http, type Address } from 'viem'

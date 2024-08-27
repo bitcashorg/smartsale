@@ -1,0 +1,16 @@
+{
+  "extends": "../../packages/tsconfig/node16.json",
+  "include": ["./src/**/*", "src/lib/utils.ts", "trigger.config.ts"],
+  "exclude": ["node_modules"],
+  "compilerOptions": {
+    "sourceMap": true,
+    "inlineSources": true,
+    "sourceRoot": "/",
+    "outDir": "dist",
+    "baseUrl": "./src",
+    "paths": {
+      "~/*": ["./*"],
+      "@/*": ["./*"]
+    }
+  }
+}

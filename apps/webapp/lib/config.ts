@@ -6,7 +6,7 @@ export const appConfig = {
   env,
   eosRpc: 'https://eos.greymass.com',
   multibase: {
-    key: process.env.MULTIBASE_API_KEY || '',
+    key: process.env.NEXT_PUBLIC_MULTIBASE_API_KEY || '',
   },
   features: {
     enableWalletAccess:

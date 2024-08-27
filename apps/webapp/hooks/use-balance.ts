@@ -1,7 +1,7 @@
 import { wagmiConfig } from '@/components/layout/providers'
+import { numberWithCommas } from '@repo/utils'
 import { watchBlockNumber } from '@wagmi/core'
 import { eosEvmTestnet } from 'app-env'
-import { numberWithCommas } from 'app-lib'
 import { useEffect } from 'react'
 import { type Abi, type Address, formatUnits } from 'viem'
 import { useBalance, useReadContracts } from 'wagmi'

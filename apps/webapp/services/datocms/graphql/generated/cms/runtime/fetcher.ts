@@ -1,5 +1,6 @@
 // @ts-nocheck
 import { QueryBatcher } from './batcher'
+
 import type { ClientOptions } from './createClient'
 import { GenqlError } from './error'
 import type { GraphqlOperation } from './generateGraphqlOperation'

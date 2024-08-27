@@ -12,16 +12,14 @@ export function LandingPage({ content }: LandingPageProps) {
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
               {content.header}
             </h2>
-            <p className="max-w-[600px] text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+            <p className="max-w-[600px] text-infoForeground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               {content.description}
             </p>
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
               {content.sections.map((section) => (
                 <div className="space-y-2">
                   <h3 className="text-lg font-bold">{section.subHeader}</h3>
-                  <p className="text-gray-500 dark:text-gray-400">
-                    {section.text}
-                  </p>
+                  <p className="text-infoForeground">{section.text}</p>
                 </div>
               ))}
             </div>

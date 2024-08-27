@@ -8,7 +8,7 @@ import {
   TableRow,
 } from '@/components/ui/table'
 import { useSupabaseClient } from '@/services/supabase'
-import { formatAddress } from 'app-lib'
+import { formatAddress } from '@repo/utils'
 import { format } from 'date-fns'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'

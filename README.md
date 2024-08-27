@@ -41,12 +41,6 @@ The Faucet application serves as a utility for distributing test tokens or curre
 
 The Indexer application is responsible for indexing blockchain data. It listens to the blockchain network, extracts relevant data from blocks, transactions, and events, and stores it in a structured format for easy querying and analysis.
 
-#### Supabase (`/apps/supabase`)
-
-This application integrates with Supabase, a scalable and open-source Firebase alternative, providing real-time database functionality, authentication, storage, and more. It's designed to leverage Supabase services for backend functionalities.
-
-For more database schema details, refer to the [Database Schema](/apps/supabase/README.md) diagram.
-
 #### Webapp (`/apps/webapp`)
 
 The Webapp is a front-end application that provides a user interface for interacting with the project's services. It includes features such as displaying blockchain data, interacting with smart contracts, and utilizing the Faucet for test tokens.
@@ -55,25 +49,33 @@ Please refer to the [webapp README.md](/apps/webapp/README.md) for more details 
 
 ### Packages
 
-#### Config TypeScript (`/packages/config-typescript`)
+#### Alchemy (`/packages/alchemy`)
 
-This package offers a shared TypeScript configuration to standardize TypeScript compilation options across the project.
+This package integrates with the Alchemy SDK, providing a robust interface for interacting with Ethereum and other blockchain networks. It includes utilities for creating and managing blockchain interactions, leveraging Alchemy's powerful API services.
 
-#### Smartsale Contracts (`/packages/app-contracts`)
+#### Config TypeScript (`/packages/tsconfig`)
 
-Contains smart contracts for the Smartsale platform, including auction contracts, ERC20 tokens, and other blockchain-based contracts. These are essential for the project's blockchain functionalities.
+This package offers shared TypeScript configurations to standardize TypeScript compilation options across the project. It includes specific configurations for different environments and Node.js versions.
 
-#### Smartsale Env (`/packages/app-env`)
+#### Jobs (`/packages/jobs`)
 
-Provides environment configurations and utilities for the Smartsale platform, ensuring that different environments (development, testing, production) can be managed and configured efficiently.
+The Jobs package contains background tasks and scheduled processes for the SmartSale platform. It utilizes Trigger.dev for managing and deploying these jobs, ensuring efficient handling of asynchronous operations and scheduled tasks.
 
-#### Smartsale Lib (`/packages/app-lib`)
+#### Supabase (`/packages/supabase`)
 
-A library of reusable code for the Smartsale platform, including utility functions, blockchain interaction helpers, and common components used across the project.
+This package integrates with Supabase, providing real-time database functionality, authentication, and storage services. It includes type generation and schema validation tools to ensure type safety when interacting with the Supabase backend.
 
-#### TSConfig (`/packages/tsconfig`)
+#### Tokens (`/packages/tokens`)
 
-Houses TypeScript configuration files used to compile TypeScript projects within the monorepo. It ensures consistency in TypeScript compilation settings.
+The Tokens package contains definitions, interfaces, and utilities related to the various tokens used within the SmartSale ecosystem. This includes ERC20 token implementations, token standards, and related blockchain interactions.
+
+For more details on specific packages, refer to their respective README files:
+
+- [Alchemy](./packages/alchemy/README.md)
+- [Jobs](./packages/jobs/README.md)
+- [Supabase](./packages/supabase/README.md)
+- [Tokens](./packages/tokens/README.md)
+You can also check their package.json configurations for additional information.
 
 ### Hardhat (`/hardhat`)
 

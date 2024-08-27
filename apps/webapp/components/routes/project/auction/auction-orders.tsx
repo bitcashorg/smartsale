@@ -8,8 +8,8 @@ import {
   TableRow,
 } from '@/components/ui/table'
 import { useSupabaseClient } from '@/services/supabase'
-import { TestnetEasyAuction } from 'app-contracts'
-import { formatAddress } from 'app-lib'
+import { TestnetEasyAuction } from '@repo/contracts'
+import { formatAddress } from '@repo/utils'
 import BN from 'bn.js'
 import { format } from 'date-fns'
 import Link from 'next/link'

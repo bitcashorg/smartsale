@@ -7,10 +7,9 @@ import {
   PopoverTrigger,
 } from '@/components/ui/popover'
 import { useSession } from '@/hooks/use-session'
-import { appConfig } from '@/lib/config'
 import { cn } from '@/lib/utils'
 import { useAccountModal } from '@rainbow-me/rainbowkit'
-import { formatAddress } from 'app-lib'
+import { formatAddress } from '@repo/utils'
 import { User, Wallet } from 'lucide-react'
 import { useRouter } from 'next/navigation'
 import { isMobile } from 'react-device-detect'

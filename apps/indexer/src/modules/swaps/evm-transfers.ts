@@ -1,18 +1,16 @@
 import {
   type EVMTokenContractData,
-  SepoliaUSDT,
-  TestnetUSDT,
-  appContracts,
-} from 'app-contracts'
+  appContracts
+} from '@repo/contracts'
 import { runPromisesInSeries } from '~/lib/utils'
 
 import { appChains } from 'app-env'
 import {
-  http,
   type Address,
   type Log,
   type PublicClient,
   createPublicClient,
+  http,
   parseAbiItem,
   stringify,
 } from 'viem'

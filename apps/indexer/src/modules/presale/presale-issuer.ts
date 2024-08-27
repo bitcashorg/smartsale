@@ -1,4 +1,4 @@
-import { TestnetBLPL } from 'app-contracts'
+import { TestnetBLPL } from '@repo/contracts'
 import { eosEvmTestnet } from 'app-env'
 import { createWalletClient } from 'viem'
 import { http, type Address } from 'viem'

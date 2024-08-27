@@ -30,7 +30,7 @@ export function ProjectHeader({
             {project.pitch}
           </sub>
           <span
-            className="w-full text-5xl font-normal leading-16 drop-shadow-md sm:text-6xl md:text-7xl lg:text-8xl"
+            className="w-full text-3xl font-normal leading-16 drop-shadow-md sm:text-6xl md:text-7xl lg:text-8xl"
             key="upcoming-auctions-title"
           >
             <Balancer>{project.title.toUpperCase()}</Balancer>

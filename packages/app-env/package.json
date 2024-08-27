@@ -9,10 +9,10 @@
   "types": "./src/index.ts",
   "dependencies": {
     "viem": "latest",
-    "app-contracts": "workspace:*"
+    "@repo/contracts": "workspace:*"
   },
   "devDependencies": {
-    "@repo/typescript-config": "workspace:*",
+    "@repo/tsconfig": "workspace:*",
     "typescript": "^5.3.3"
   }
 }

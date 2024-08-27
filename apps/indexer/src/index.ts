@@ -1,9 +1,9 @@
-import { getErrorMessage } from 'app-lib'
+import { getErrorMessage } from '@repo/utils'
+import { startExpress } from './api'
 import { logger } from './lib/logger'
-import { startExpress } from './routes/index'
 
 async function main() {
-  logger.info(`Launchpad indexer starting up ...`)
+  logger.info('Launchpad indexer starting up ...')
   try {
     startExpress()
     // startPresaleService()

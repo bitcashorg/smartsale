@@ -190,6 +190,63 @@ export interface BlogBitcoinRecord {
   __typename: 'BlogBitcoinRecord'
 }
 
+export type BlogBitlauncherModelOrderBy =
+  | '_createdAt_ASC'
+  | '_createdAt_DESC'
+  | 'id_ASC'
+  | 'id_DESC'
+  | '_firstPublishedAt_ASC'
+  | '_firstPublishedAt_DESC'
+  | '_publicationScheduledAt_ASC'
+  | '_publicationScheduledAt_DESC'
+  | '_unpublishingScheduledAt_ASC'
+  | '_unpublishingScheduledAt_DESC'
+  | '_publishedAt_ASC'
+  | '_publishedAt_DESC'
+  | '_status_ASC'
+  | '_status_DESC'
+  | '_updatedAt_ASC'
+  | '_updatedAt_DESC'
+  | '_isValid_ASC'
+  | '_isValid_DESC'
+  | 'authorName_ASC'
+  | 'authorName_DESC'
+  | 'description_ASC'
+  | 'description_DESC'
+  | 'title_ASC'
+  | 'title_DESC'
+
+/** Record of type Bitlauncher Blog (blog_bitlauncher) */
+export interface BlogBitlauncherRecord {
+  _allDescriptionLocales: StringMultiLocaleField[] | null
+  _allSeoLocales: SeoFieldMultiLocaleField[] | null
+  _allTitleLocales: StringMultiLocaleField[] | null
+  _createdAt: Scalars['DateTime']
+  /** Editing URL */
+  _editingUrl: Scalars['String'] | null
+  _firstPublishedAt: Scalars['DateTime'] | null
+  _isValid: Scalars['BooleanType']
+  _modelApiKey: Scalars['String']
+  _publicationScheduledAt: Scalars['DateTime'] | null
+  _publishedAt: Scalars['DateTime'] | null
+  /** Generates SEO and Social card meta tags to be used in your frontend */
+  _seoMetaTags: Tag[]
+  _status: ItemStatus
+  _unpublishingScheduledAt: Scalars['DateTime'] | null
+  _updatedAt: Scalars['DateTime']
+  authorName: Scalars['String'] | null
+  authorPicture: FileField | null
+  contentBlock: ContentBlockRecord[]
+  description: Scalars['String'] | null
+  id: Scalars['ItemId']
+  seo: SeoField | null
+  slug: Scalars['String'] | null
+  thumbnail: FileField | null
+  title: Scalars['String'] | null
+  topics: Scalars['JsonField'] | null
+  __typename: 'BlogBitlauncherRecord'
+}
+
 export type BlogCryptoModelOrderBy =
   | '_createdAt_ASC'
   | '_createdAt_DESC'
@@ -573,7 +630,35 @@ export type ImgixParamsCrop =
 
 export type ImgixParamsCs = 'srgb' | 'adobergb1998' | 'tinysrgb' | 'strip'
 
-export type ImgixParamsFill = 'solid' | 'blur'
+export type ImgixParamsFill =
+  | 'solid'
+  | 'blur'
+  | 'gen'
+  | 'generative'
+  | 'gradient'
+
+export type ImgixParamsFillGenPos =
+  | 'top'
+  | 'bottom'
+  | 'middle'
+  | 'left'
+  | 'right'
+  | 'center'
+
+export type ImgixParamsFillGradientCs =
+  | 'linear'
+  | 'srgb'
+  | 'oklab'
+  | 'hsl'
+  | 'lch'
+
+export type ImgixParamsFillGradientLinearDirection =
+  | 'top'
+  | 'bottom'
+  | 'left'
+  | 'right'
+
+export type ImgixParamsFillGradientType = 'linear' | 'radial'
 
 export type ImgixParamsFit =
   | 'clamp'
@@ -806,6 +891,8 @@ export interface Query {
   /** Returns meta information regarding a record collection */
   _allBlogBitcoinsMeta: CollectionMetadata
   /** Returns meta information regarding a record collection */
+  _allBlogBitlaunchersMeta: CollectionMetadata
+  /** Returns meta information regarding a record collection */
   _allBlogCryptosMeta: CollectionMetadata
   /** Returns meta information regarding a record collection */
   _allBlogInvestingsMeta: CollectionMetadata
@@ -828,6 +915,8 @@ export interface Query {
   /** Returns a collection of records */
   allBlogBitcoins: BlogBitcoinRecord[]
   /** Returns a collection of records */
+  allBlogBitlaunchers: BlogBitlauncherRecord[]
+  /** Returns a collection of records */
   allBlogCryptos: BlogCryptoRecord[]
   /** Returns a collection of records */
   allBlogInvestings: BlogInvestingRecord[]
@@ -847,6 +936,8 @@ export interface Query {
   blogBitcash: BlogBitcashRecord | null
   /** Returns a specific record */
   blogBitcoin: BlogBitcoinRecord | null
+  /** Returns a specific record */
+  blogBitlauncher: BlogBitlauncherRecord | null
   /** Returns a specific record */
   blogCrypto: BlogCryptoRecord | null
   /** Returns a specific record */
@@ -874,6 +965,7 @@ export type RecordInterface = (
   | BlogAiRecord
   | BlogBitcashRecord
   | BlogBitcoinRecord
+  | BlogBitlauncherRecord
   | BlogCryptoRecord
   | BlogInvestingRecord
   | BlogNewsRecord
@@ -1089,13 +1181,20 @@ export type UploadType =
   | 'archive'
 
 export interface UploadVideoField {
+  alt: Scalars['String'] | null
+  blurUpThumb: Scalars['String'] | null
+  blurhash: Scalars['String'] | null
   duration: Scalars['Int'] | null
   framerate: Scalars['Int'] | null
+  height: Scalars['IntType']
   mp4Url: Scalars['String'] | null
   muxAssetId: Scalars['String']
   muxPlaybackId: Scalars['String']
   streamingUrl: Scalars['String']
+  thumbhash: Scalars['String'] | null
   thumbnailUrl: Scalars['String']
+  title: Scalars['String'] | null
+  width: Scalars['IntType']
   __typename: 'UploadVideoField'
 }
 
@@ -1346,6 +1445,107 @@ export interface BlogBitcoinRecordGenqlSelection {
   _firstPublishedAt?: boolean | number
   _isValid?: boolean | number
   _locales?: boolean | number
+  _modelApiKey?: boolean | number
+  _publicationScheduledAt?: boolean | number
+  _publishedAt?: boolean | number
+  /** Generates SEO and Social card meta tags to be used in your frontend */
+  _seoMetaTags?: TagGenqlSelection & {
+    __args?: {
+      /** The locale to use to fetch the field's content */
+      locale?: SiteLocale | null
+    }
+  }
+  _status?: boolean | number
+  _unpublishingScheduledAt?: boolean | number
+  _updatedAt?: boolean | number
+  authorName?: boolean | number
+  authorPicture?: FileFieldGenqlSelection
+  contentBlock?: ContentBlockRecordGenqlSelection
+  description?:
+    | {
+        __args: {
+          /** The locale to use to fetch the field's content */
+          locale?: SiteLocale | null
+          /** If you want to fallback to a default translation when a translation has not been found */
+          fallbackLocales?: SiteLocale[] | null
+        }
+      }
+    | boolean
+    | number
+  id?: boolean | number
+  seo?: SeoFieldGenqlSelection & {
+    __args?: {
+      /** The locale to use to fetch the field's content */
+      locale?: SiteLocale | null
+      /** If you want to fallback to a default translation when a translation has not been found */
+      fallbackLocales?: SiteLocale[] | null
+    }
+  }
+  slug?: boolean | number
+  thumbnail?: FileFieldGenqlSelection
+  title?:
+    | {
+        __args: {
+          /** The locale to use to fetch the field's content */
+          locale?: SiteLocale | null
+          /** If you want to fallback to a default translation when a translation has not been found */
+          fallbackLocales?: SiteLocale[] | null
+        }
+      }
+    | boolean
+    | number
+  topics?: boolean | number
+  __typename?: boolean | number
+  __scalar?: boolean | number
+}
+
+export interface BlogBitlauncherModelFilter {
+  _createdAt?: CreatedAtFilter | null
+  id?: ItemIdFilter | null
+  _firstPublishedAt?: PublishedAtFilter | null
+  _publicationScheduledAt?: PublishedAtFilter | null
+  _unpublishingScheduledAt?: PublishedAtFilter | null
+  _publishedAt?: PublishedAtFilter | null
+  _status?: StatusFilter | null
+  _updatedAt?: UpdatedAtFilter | null
+  _isValid?: BooleanFilter | null
+  authorName?: StringFilter | null
+  authorPicture?: FileFilter | null
+  description?: StringFilter | null
+  seo?: SeoFilter | null
+  slug?: SlugFilter | null
+  thumbnail?: FileFilter | null
+  title?: StringFilter | null
+  topics?: JsonFilter | null
+  OR?: (BlogBitlauncherModelFilter | null)[] | null
+  AND?: (BlogBitlauncherModelFilter | null)[] | null
+}
+
+/** Record of type Bitlauncher Blog (blog_bitlauncher) */
+export interface BlogBitlauncherRecordGenqlSelection {
+  _allDescriptionLocales?: StringMultiLocaleFieldGenqlSelection & {
+    __args?: {
+      /** If you want to fallback to a default translation when a translation has not been found */
+      fallbackLocales?: SiteLocale[] | null
+    }
+  }
+  _allSeoLocales?: SeoFieldMultiLocaleFieldGenqlSelection & {
+    __args?: {
+      /** If you want to fallback to a default translation when a translation has not been found */
+      fallbackLocales?: SiteLocale[] | null
+    }
+  }
+  _allTitleLocales?: StringMultiLocaleFieldGenqlSelection & {
+    __args?: {
+      /** If you want to fallback to a default translation when a translation has not been found */
+      fallbackLocales?: SiteLocale[] | null
+    }
+  }
+  _createdAt?: boolean | number
+  /** Editing URL */
+  _editingUrl?: boolean | number
+  _firstPublishedAt?: boolean | number
+  _isValid?: boolean | number
   _modelApiKey?: boolean | number
   _publicationScheduledAt?: boolean | number
   _publishedAt?: boolean | number
@@ -2127,13 +2327,45 @@ export interface ImgixParams {
    */
   auto?: ImgixParamsAuto[] | null
   /**
+   * Background Removal Fallback
+   *
+   * Overrides default fallback behavior for bg-remove failures.
+   *
+   * [Open Imgix reference »](https://docs.imgix.com/apis/rendering/background/bg-remove)
+   */
+  bgRemoveFallback?: Scalars['BooleanType'] | null
+  /**
    * Background Removal
    *
    * Removes background from image.
    *
-   * [Open Imgix reference »](https://docs.imgix.com/apis/rendering/background-removal/bg-remove)
+   * [Open Imgix reference »](https://docs.imgix.com/apis/rendering/background/bg-remove)
    */
   bgRemove?: Scalars['BooleanType'] | null
+  /**
+   * Background Removal Fallback
+   *
+   * Overrides default fallback behavior for bg-replace failures.
+   *
+   * [Open Imgix reference »](https://docs.imgix.com/apis/rendering/background/bg-replace)
+   */
+  bgReplaceFallback?: Scalars['BooleanType'] | null
+  /**
+   * Background Replacement Negative Prompt
+   *
+   * Provides a negative text suggestion for background replacement.
+   *
+   * [Open Imgix reference »](https://docs.imgix.com/apis/rendering/background/bg-replace-neg-prompt)
+   */
+  bgReplaceNegPrompt?: Scalars['String'] | null
+  /**
+   * Background Replacement
+   *
+   * Replaces background from image using a string based prompt.
+   *
+   * [Open Imgix reference »](https://docs.imgix.com/apis/rendering/background/bg-replace)
+   */
+  bgReplace?: Scalars['String'] | null
   /**
    * Background Color
    *
@@ -2521,6 +2753,136 @@ export interface ImgixParams {
    */
   fillColor?: Scalars['String'] | null
   /**
+   * Fill Generative Fallback
+   *
+   * Sets the fallback behavior for generative fill.
+   *
+   * Depends on: `fit=fill`, `fill=gen`
+   *
+   * [Open Imgix reference »](https://docs.imgix.com/apis/url/fill/fill-gen-fallback)
+   */
+  fillGenFallback?: Scalars['BooleanType'] | null
+  /**
+   * Fill Generative Negative Prompt
+   *
+   * Provides a negative text suggestion to the generative fill parameter. Used to reduce the probability of a subject, detail, or object appearing in generative output.
+   *
+   * Depends on: `fit=fill`, `fill=gen`
+   *
+   * [Open Imgix reference »](https://docs.imgix.com/apis/url/fill/fill-gen-neg-prompt)
+   */
+  fillGenNegPrompt?: Scalars['String'] | null
+  /**
+   * Fill Generative Position
+   *
+   * Sets the position of the Origin Image in relation to the generative fill.
+   *
+   * Depends on: `fit=fill`, `fill=gen`
+   *
+   * [Open Imgix reference »](https://docs.imgix.com/apis/url/fill/fill-gen-pos)
+   */
+  fillGenPos?: ImgixParamsFillGenPos[] | null
+  /**
+   * Fill Generative Prompt
+   *
+   * Provides a text suggestion to the generative fill parameter.
+   *
+   * Depends on: `fit=fill`, `fill=gen`
+   *
+   * [Open Imgix reference »](https://docs.imgix.com/apis/url/fill/fill-gen-prompt)
+   */
+  fillGenPrompt?: Scalars['String'] | null
+  /**
+   * Fill Generative Seed
+   *
+   * Sets the generative seed value. Used to generate similar outputs from different prompts.
+   *
+   * Depends on: `fit=fill`, `fill=gen`
+   *
+   * [Open Imgix reference »](https://docs.imgix.com/apis/url/fill/fill-gen-seed)
+   */
+  fillGenSeed?: Scalars['IntType'] | null
+  /**
+   * Fill Gradient Color Space
+   *
+   * Defines the color space as linear, sRGB, Oklab, HSL, or LCH for gradient color interpolation
+   *
+   * Depends on: `fit=fill`, `fill=gradient`
+   *
+   * [Open Imgix reference »](https://docs.imgix.com/apis/url/fill/fill-gradient-cs)
+   */
+  fillGradientCs?: ImgixParamsFillGradientCs | null
+  /**
+   * Fill Gradient Linear Direction
+   *
+   * The fill-gradient-linear-direction specifies the gradient's direction, flowing towards the bottom, top, right, or left
+   *
+   * Depends on: `fit=fill`, `fill=gen`
+   *
+   * [Open Imgix reference »](https://docs.imgix.com/apis/url/fill/fill-gradient-linear-direction)
+   */
+  fillGradientLinearDirection?: ImgixParamsFillGradientLinearDirection[] | null
+  /**
+   * Fill Gradient Linear
+   *
+   * Blends a gradient between two colors, {color1} and {color2}, along a straight path
+   *
+   * Depends on: `fit=fill`, `fill=gradient`
+   *
+   * [Open Imgix reference »](https://docs.imgix.com/apis/url/fill/fill-gradient-linear)
+   */
+  fillGradientLinear?: Scalars['String'] | null
+  /**
+   * Fill Gradient Radial Radius
+   *
+   * Parameter defines the radial gradient's radius as pixels or a percentage (0.0-1.0) of the image's smallest dimension
+   *
+   * Depends on: `fit=fill`, `fill=gradient`
+   *
+   * [Open Imgix reference »](https://docs.imgix.com/apis/url/fill/fill-gradient-radial-radius)
+   */
+  fillGradientRadialRadius?: Scalars['String'] | null
+  /**
+   * Fill Gradient Radial X
+   *
+   * Specifies the location of the radial gradient's center along the x-axis, using either a pixel value or a floating point percentage (ranging from 0.0 to 1.0) of the image's width
+   *
+   * Depends on: `fit=fill`, `fill=gradient`
+   *
+   * [Open Imgix reference »](https://docs.imgix.com/apis/url/fill/fill-gradient-radial-x)
+   */
+  fillGradientRadialX?: Scalars['FloatType'] | null
+  /**
+   * Fill Gradient Radial Y
+   *
+   * Parameter sets the radial gradient's center on the y-axis, using pixels or a 0.0 to 1.0 percentage of the image's height
+   *
+   * Depends on: `fit=fill`, `fill=gradient`
+   *
+   * [Open Imgix reference »](https://docs.imgix.com/apis/url/fill/fill-gradient-radial-y)
+   */
+  fillGradientRadialY?: Scalars['FloatType'] | null
+  /**
+   * Fill Gradient Radial
+   *
+   * The fill-gradient-radial parameter creates a circular gradient transitioning from a central color (Color1) to an outer color (Color2)
+   *
+   * Depends on: `fit=fill`, `fill=gradient`
+   *
+   * [Open Imgix reference »](https://docs.imgix.com/apis/url/fill/fill-gradient-radial)
+   */
+  fillGradientRadial?: Scalars['String'] | null
+  /**
+   * Fill Gradient Type
+   *
+   * Specifies if a gradient is radial (circular) or linear (straight)
+   *
+   * Depends on: `fit=fill`, `fill=gradient`
+   *
+   * [Open Imgix reference »](https://docs.imgix.com/apis/url/fill/fill-gradient-type)
+   */
+  fillGradientType?: ImgixParamsFillGradientType | null
+  /**
    * Fill Mode
    *
    * Determines how to fill in additional space created by the fit setting
@@ -2617,6 +2979,8 @@ export interface ImgixParams {
   /**
    * Animated Gif Quality
    *
+   * Specifies the quality of the animated gif. The higher the value, the better more compression is applied.
+   *
    * Depends on: `fm=gif`
    */
   gifQ?: Scalars['IntType'] | null
@@ -2688,6 +3052,12 @@ export interface ImgixParams {
    * Determine if IPTC data should be passed for JPEG images.
    */
   iptc?: ImgixParamsIptc | null
+  /**
+   * Jpg Progressive
+   *
+   * Specifies whether or not a jpg/jpeg uses progressive (true) or baseline (false)
+   */
+  jpgProgressive?: Scalars['BooleanType'] | null
   /**
    * Animation Loop Count
    *
@@ -3073,6 +3443,12 @@ export interface ImgixParams {
    */
   skip?: Scalars['IntType'] | null
   /**
+   * Sanitize Svg
+   *
+   * Specifies whether to sanitize an SVG.
+   */
+  svgSanitize?: Scalars['BooleanType'] | null
+  /**
    * Transparency
    *
    * Adds checkerboard behind images which support transparency.
@@ -3199,16 +3575,6 @@ export interface ImgixParams {
    */
   txtLead?: Scalars['IntType'] | null
   /**
-   * Text Ligatures
-   *
-   * Controls the level of ligature substitution
-   *
-   * Depends on: `txt`
-   *
-   * [Open Imgix reference »](https://docs.imgix.com/apis/url/text/txt-lig)
-   */
-  txtLig?: Scalars['IntType'] | null
-  /**
    * Text Outline Color
    *
    * Specifies a text outline color.
@@ -3307,6 +3673,22 @@ export interface ImgixParams {
    */
   txt?: Scalars['String'] | null
   /**
+   * Super Resolution Fallback
+   *
+   * Overrides default fallback behavior for super resolution failures
+   *
+   * [Open Imgix reference »](https://docs.imgix.com/apis/rendering/super-resolution/upscale-fallback)
+   */
+  upscaleFallback?: Scalars['BooleanType'] | null
+  /**
+   * Super Resolution
+   *
+   * Uses generative AI fill to upscale low resolution images.
+   *
+   * [Open Imgix reference »](https://docs.imgix.com/apis/rendering/super-resolution/upscale)
+   */
+  upscale?: Scalars['BooleanType'] | null
+  /**
    * Unsharp Mask
    *
    * Sharpens the source image using an unsharp mask.
@@ -3340,6 +3722,12 @@ export interface ImgixParams {
    * [Open Imgix reference »](https://docs.imgix.com/apis/url/size/w)
    */
   w?: Scalars['FloatType'] | null
+  /**
+   * Bypasses any [DatoCMS Automatic Image Optimization](https://www.datocms.com/docs/cdn-settings/advanced-asset-settings) that might be set up for the project.
+   *
+   * Exercise caution when using this parameter, as it could significantly increase your bandwidth costs.
+   */
+  skipDefaultOptimizations?: Scalars['BooleanType'] | null
 }
 
 /** Specifies how to filter by usage */
@@ -3967,6 +4355,14 @@ export interface QueryGenqlSelection {
     }
   }
   /** Returns meta information regarding a record collection */
+  _allBlogBitlaunchersMeta?: CollectionMetadataGenqlSelection & {
+    __args?: {
+      /** The locale to use to fetch the field's content */
+      locale?: SiteLocale | null
+      filter?: BlogBitlauncherModelFilter | null
+    }
+  }
+  /** Returns meta information regarding a record collection */
   _allBlogCryptosMeta?: CollectionMetadataGenqlSelection & {
     __args?: {
       /** The locale to use to fetch the field's content */
@@ -4074,6 +4470,21 @@ export interface QueryGenqlSelection {
       first?: Scalars['IntType'] | null
       filter?: BlogBitcoinModelFilter | null
       orderBy?: (BlogBitcoinModelOrderBy | null)[] | null
+    }
+  }
+  /** Returns a collection of records */
+  allBlogBitlaunchers?: BlogBitlauncherRecordGenqlSelection & {
+    __args?: {
+      /** The locale to use to fetch the field's content */
+      locale?: SiteLocale | null
+      /** If you want to fallback to a default translation when a translation has not been found */
+      fallbackLocales?: SiteLocale[] | null
+      /** Skip the first results */
+      skip?: Scalars['IntType'] | null
+      /** Limit the number of results */
+      first?: Scalars['IntType'] | null
+      filter?: BlogBitlauncherModelFilter | null
+      orderBy?: (BlogBitlauncherModelOrderBy | null)[] | null
     }
   }
   /** Returns a collection of records */
@@ -4215,6 +4626,17 @@ export interface QueryGenqlSelection {
     }
   }
   /** Returns a specific record */
+  blogBitlauncher?: BlogBitlauncherRecordGenqlSelection & {
+    __args?: {
+      /** The locale to use to fetch the field's content */
+      locale?: SiteLocale | null
+      /** If you want to fallback to a default translation when a translation has not been found */
+      fallbackLocales?: SiteLocale[] | null
+      filter?: BlogBitlauncherModelFilter | null
+      orderBy?: (BlogBitlauncherModelOrderBy | null)[] | null
+    }
+  }
+  /** Returns a specific record */
   blogCrypto?: BlogCryptoRecordGenqlSelection & {
     __args?: {
       /** The locale to use to fetch the field's content */
@@ -4345,6 +4767,7 @@ export interface RecordInterfaceGenqlSelection {
   on_BlogAiRecord?: BlogAiRecordGenqlSelection
   on_BlogBitcashRecord?: BlogBitcashRecordGenqlSelection
   on_BlogBitcoinRecord?: BlogBitcoinRecordGenqlSelection
+  on_BlogBitlauncherRecord?: BlogBitlauncherRecordGenqlSelection
   on_BlogCryptoRecord?: BlogCryptoRecordGenqlSelection
   on_BlogInvestingRecord?: BlogInvestingRecordGenqlSelection
   on_BlogNewsRecord?: BlogNewsRecordGenqlSelection
@@ -4952,8 +5375,36 @@ export interface UploadUpdatedAtFilter {
 }
 
 export interface UploadVideoFieldGenqlSelection {
+  alt?:
+    | {
+        __args: {
+          /** The locale to use to fetch the field's content */
+          locale?: SiteLocale | null
+          /** If you want to fallback to a default translation when a translation has not been found */
+          fallbackLocales?: SiteLocale[] | null
+        }
+      }
+    | boolean
+    | number
+  blurUpThumb?:
+    | {
+        __args: {
+          /** Controls the "punch" value (~contrast) of the blurhash decoding algorithm (defaults to 1.0) */
+          punch?: Scalars['Float']
+          /** Maximum image dimension (defaults to 24px) */
+          size?: Scalars['Int']
+          /** Image quality (defaults to 70%) */
+          quality?: Scalars['Int']
+          /** Imgix transformations to apply to the image */
+          imgixParams?: ImgixParams | null
+        }
+      }
+    | boolean
+    | number
+  blurhash?: boolean | number
   duration?: boolean | number
   framerate?: boolean | number
+  height?: boolean | number
   mp4Url?:
     | {
         __args: {
@@ -4968,6 +5419,7 @@ export interface UploadVideoFieldGenqlSelection {
   muxAssetId?: boolean | number
   muxPlaybackId?: boolean | number
   streamingUrl?: boolean | number
+  thumbhash?: boolean | number
   thumbnailUrl?:
     | {
         __args: {
@@ -4977,6 +5429,18 @@ export interface UploadVideoFieldGenqlSelection {
       }
     | boolean
     | number
+  title?:
+    | {
+        __args: {
+          /** The locale to use to fetch the field's content */
+          locale?: SiteLocale | null
+          /** If you want to fallback to a default translation when a translation has not been found */
+          fallbackLocales?: SiteLocale[] | null
+        }
+      }
+    | boolean
+    | number
+  width?: boolean | number
   __typename?: boolean | number
   __scalar?: boolean | number
 }
@@ -5029,6 +5493,15 @@ export const isBlogBitcoinRecord = (
   if (!obj?.__typename)
     throw new Error('__typename is missing in "isBlogBitcoinRecord"')
   return BlogBitcoinRecord_possibleTypes.includes(obj.__typename)
+}
+
+const BlogBitlauncherRecord_possibleTypes: string[] = ['BlogBitlauncherRecord']
+export const isBlogBitlauncherRecord = (
+  obj?: { __typename?: any } | null,
+): obj is BlogBitlauncherRecord => {
+  if (!obj?.__typename)
+    throw new Error('__typename is missing in "isBlogBitlauncherRecord"')
+  return BlogBitlauncherRecord_possibleTypes.includes(obj.__typename)
 }
 
 const BlogCryptoRecord_possibleTypes: string[] = ['BlogCryptoRecord']
@@ -5213,6 +5686,7 @@ const RecordInterface_possibleTypes: string[] = [
   'BlogAiRecord',
   'BlogBitcashRecord',
   'BlogBitcoinRecord',
+  'BlogBitlauncherRecord',
   'BlogCryptoRecord',
   'BlogInvestingRecord',
   'BlogNewsRecord',
@@ -5415,6 +5889,33 @@ export const enumBlogBitcashModelOrderBy = {
 }
 
 export const enumBlogBitcoinModelOrderBy = {
+  _createdAt_ASC: '_createdAt_ASC' as const,
+  _createdAt_DESC: '_createdAt_DESC' as const,
+  id_ASC: 'id_ASC' as const,
+  id_DESC: 'id_DESC' as const,
+  _firstPublishedAt_ASC: '_firstPublishedAt_ASC' as const,
+  _firstPublishedAt_DESC: '_firstPublishedAt_DESC' as const,
+  _publicationScheduledAt_ASC: '_publicationScheduledAt_ASC' as const,
+  _publicationScheduledAt_DESC: '_publicationScheduledAt_DESC' as const,
+  _unpublishingScheduledAt_ASC: '_unpublishingScheduledAt_ASC' as const,
+  _unpublishingScheduledAt_DESC: '_unpublishingScheduledAt_DESC' as const,
+  _publishedAt_ASC: '_publishedAt_ASC' as const,
+  _publishedAt_DESC: '_publishedAt_DESC' as const,
+  _status_ASC: '_status_ASC' as const,
+  _status_DESC: '_status_DESC' as const,
+  _updatedAt_ASC: '_updatedAt_ASC' as const,
+  _updatedAt_DESC: '_updatedAt_DESC' as const,
+  _isValid_ASC: '_isValid_ASC' as const,
+  _isValid_DESC: '_isValid_DESC' as const,
+  authorName_ASC: 'authorName_ASC' as const,
+  authorName_DESC: 'authorName_DESC' as const,
+  description_ASC: 'description_ASC' as const,
+  description_DESC: 'description_DESC' as const,
+  title_ASC: 'title_ASC' as const,
+  title_DESC: 'title_DESC' as const,
+}
+
+export const enumBlogBitlauncherModelOrderBy = {
   _createdAt_ASC: '_createdAt_ASC' as const,
   _createdAt_DESC: '_createdAt_DESC' as const,
   id_ASC: 'id_ASC' as const,
@@ -5652,6 +6153,38 @@ export const enumImgixParamsCs = {
 export const enumImgixParamsFill = {
   solid: 'solid' as const,
   blur: 'blur' as const,
+  gen: 'gen' as const,
+  generative: 'generative' as const,
+  gradient: 'gradient' as const,
+}
+
+export const enumImgixParamsFillGenPos = {
+  top: 'top' as const,
+  bottom: 'bottom' as const,
+  middle: 'middle' as const,
+  left: 'left' as const,
+  right: 'right' as const,
+  center: 'center' as const,
+}
+
+export const enumImgixParamsFillGradientCs = {
+  linear: 'linear' as const,
+  srgb: 'srgb' as const,
+  oklab: 'oklab' as const,
+  hsl: 'hsl' as const,
+  lch: 'lch' as const,
+}
+
+export const enumImgixParamsFillGradientLinearDirection = {
+  top: 'top' as const,
+  bottom: 'bottom' as const,
+  left: 'left' as const,
+  right: 'right' as const,
+}
+
+export const enumImgixParamsFillGradientType = {
+  linear: 'linear' as const,
+  radial: 'radial' as const,
 }
 
 export const enumImgixParamsFit = {
@@ -5828,6 +6361,9 @@ export const enumSiteLocale = {
   zh: 'zh' as const,
   id: 'id' as const,
   vi: 'vi' as const,
+  ko: 'ko' as const,
+  pt: 'pt' as const,
+  fr: 'fr' as const,
 }
 
 export const enumUploadOrderBy = {

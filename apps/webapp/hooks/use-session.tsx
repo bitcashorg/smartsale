@@ -6,11 +6,9 @@ import { useSupabaseClient } from '@/services/supabase'
 import { createContextHook } from '@blockmatic/hooks-utils'
 import { useConnectModal } from '@rainbow-me/rainbowkit'
 import type { Tables } from '@repo/supabase'
-import { uniq } from 'lodash'
 import { usePathname, useRouter, useSearchParams } from 'next/navigation'
 import React, { type ReactNode, useEffect, useState } from 'react'
 import { isMobile } from 'react-device-detect'
-import toast from 'react-hot-toast'
 import { useAsync, useLocalStorage, useToggle } from 'react-use'
 import { v4 as uuidv4 } from 'uuid'
 import { type Config, type UseAccountReturnType, useAccount } from 'wagmi'
@@ -53,41 +51,25 @@ function useSessionFn() {
     console.log('🔐 verifyAccount')
 
     let user
-    const updatedAddresses = []
 
     try {
       user = await supabase
-        .from('user')
-        .select('id, address')
+        .from('account')
+        .select('account')
         .eq('account', session.account)
         .single()
-      updatedAddresses.push(
-        ...(user?.data?.address.length
-          ? [...user?.data?.address, account.address as string]
-          : [account.address as string]),
-      )
     } catch (error) {
       console.error('🔐 verifyAccount error', error)
     }
 
-    await supabase.from('user').upsert(
+    await supabase.from('account').upsert(
       {
-        id: user?.data?.id,
         account: session.account,
-        address: uniq(updatedAddresses.filter(Boolean)),
       },
       {
         onConflict: 'account',
       },
     )
-
-    // * If the address is new, we show the toaster.
-    if (
-      account.address &&
-      !user?.data?.address.includes(account.address as string)
-    ) {
-      toast('Address linked successfully!', { icon: '🔗' })
-    }
   }
 
   useEffect(() => {

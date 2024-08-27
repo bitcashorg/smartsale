@@ -1,21 +1,17 @@
 'use client'
-import { AnimatePresence } from 'framer-motion'
-import { LucideCheck, LucideLoader2, LucideShare, LucideX } from 'lucide-react'
-import { useState } from 'react'
-
 import { generateShortLink } from '@/actions'
 import { useSession } from '@/hooks/use-session'
 import { useSupabaseClient } from '@/services/supabase/client'
-import { uniq } from 'lodash'
+import { AnimatePresence } from 'framer-motion'
+import { LucideCheck, LucideLoader2, LucideShare, LucideX } from 'lucide-react'
 import { useParams } from 'next/navigation'
-import { useAccount } from 'wagmi'
+import { useState } from 'react'
 
 export function CopyShortlinkIcon() {
   const [status, setStatus] = useState<
     'default' | 'loading' | 'copied' | 'error'
   >('default')
   const { session } = useSession()
-  const { address } = useAccount()
   const supabase = useSupabaseClient()
   const existingParams = useParams() // Get existing query parameters
   const param = session
@@ -24,11 +20,10 @@ export function CopyShortlinkIcon() {
 
   const checkShareLink = async () => {
     const { data, error } = await supabase
-      .from('user')
+      .from('account')
       // select shareLink from user where linkPath = 'https://bitlauncher.ai${window.location.pathname}${param}'
-      .select('id, account, address, short_link')
+      .select('account, short_link')
       .eq('account', session?.account || '')
-      .contains('address', [address || ''])
       .single()
 
     if (error) {
@@ -43,27 +38,19 @@ export function CopyShortlinkIcon() {
     if (!data.short_link) {
       const { data: dubCoShortLink, error: dubCoError } =
         await generateShortLink(
-          'https://bitlauncher.ai' + window.location.pathname + param,
+          `https://bitlauncher.ai${window.location.pathname}${param}`,
         )
 
       if (dubCoError) {
-        console.error('❌ Failed to check share link:', dubCoError)
+        console.error('❌ Failed to generate short link:', dubCoError)
         setStatus('error')
 
         return { data: null, error: dubCoError }
       }
 
-      // ? Doing upsert (account, address) for current users with active sessions
-      const updatedAddresses = [
-        ...(data?.address.length
-          ? [...data?.address, address as string]
-          : [address as string]),
-      ]
-      await supabase.from('user').upsert(
+      await supabase.from('account').upsert(
         {
-          id: data.id,
           account: session?.account || '',
-          address: uniq(updatedAddresses),
           short_link: dubCoShortLink?.shortLink,
         },
         {
@@ -97,16 +84,14 @@ export function CopyShortlinkIcon() {
 
   return (
     <button
+      type="button"
+      key={'share-shortlink'}
       onClick={copyToClipboard}
       className="relative size-[58px] rounded-full [&>svg]:size-[36px]"
     >
       <AnimatePresence>{iconsMap[status]}</AnimatePresence>
     </button>
   )
-}
-
-interface CopyShortlinkIconProps {
-  linkPath: string
 }
 
 const iconsMap = {
