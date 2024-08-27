@@ -11,7 +11,7 @@ interface WhitepaperContentProps {
 
 interface Content {
   type: string
-  text: string | { text: string, bold?: boolean }[]
+  text?: string | { text: string, bold?: boolean }[]
 }
 
 export function WhitepaperContent({ activeSection, onSectionChange }: WhitepaperContentProps) {
@@ -33,7 +33,7 @@ export function WhitepaperContent({ activeSection, onSectionChange }: Whitepaper
             {typeof content.text === 'string' ? (
               content.text
             ) : (
-              content.text.map((part, idx) => (
+              content.text?.map((part, idx) => (
                 <span key={idx} className={part.bold ? 'font-bold' : ''}>
                   {part.text}
                 </span>
@@ -45,7 +45,7 @@ export function WhitepaperContent({ activeSection, onSectionChange }: Whitepaper
         return (
           <div className="max-w-[500px] mx-auto">
             <h2 className="text-center text-[#FAFAFA] font-futura text-[26px] font-normal leading-[121%] mb-[37px]">
-              {typeof content.text === 'string' ? content.text : content.text.map(part => part.text).join('')}
+              {typeof content.text === 'string' ? content.text : content.text?.map(part => part.text).join('')}
             </h2>
           </div>
         )
@@ -53,7 +53,7 @@ export function WhitepaperContent({ activeSection, onSectionChange }: Whitepaper
         return (
           <div className="max-w-[500px] mx-auto">
             <h3 className="text-center text-[#FAFAFA] font-futura text-[20px] font-normal leading-[121%] mb-[30px]">
-              {typeof content.text === 'string' ? content.text : content.text.map(part => part.text).join('')}
+              {typeof content.text === 'string' ? content.text : content.text?.map(part => part.text).join('')}
             </h3>
           </div>
         )
