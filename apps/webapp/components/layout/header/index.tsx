@@ -7,7 +7,7 @@ import { appConfig } from '@/lib/config'
 import type { LangProp } from '@/types/routing.type'
 import dynamic from 'next/dynamic'
 import { Suspense } from 'react'
-import { SessionButtonLoader } from '../session/session-button'
+import { SessionButtonLoader } from '../../dialogs/session/session-button'
 import { LangSelector } from './lang-selector'
 import { MobileNavLoader } from './mobile-nav'
 import { Navigation } from './new-nav'
@@ -59,7 +59,8 @@ const DynamicMobileNav = dynamic(
 )
 
 const DynamicSessionButton = dynamic(
-  () => import('../session/session-button').then((c) => c.SessionButton),
+  () =>
+    import('../../dialogs/session/session-button').then((c) => c.SessionButton),
   {
     loading: SessionButtonLoader,
     ssr: false,

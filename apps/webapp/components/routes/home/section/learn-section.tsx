@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Section } from '../../shared/section'
+import { Section } from '../../../shared/section'
 
 export function LearnSection() {
   const mainCard = content.cards[0]

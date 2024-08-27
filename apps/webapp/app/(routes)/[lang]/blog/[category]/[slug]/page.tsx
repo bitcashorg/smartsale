@@ -1,4 +1,4 @@
-import { generateShortLink } from '@/actions'
+import { generateShortLink } from '@/app/actions/general'
 import { BlogPage } from '@/components/routes/blog/article'
 import { type Lang, locales } from '@/dictionaries/locales'
 import { generateMetadataFromSEO } from '@/lib/seo'

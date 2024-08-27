@@ -1,6 +1,6 @@
 'use client'
 
-import { BitcashAccessButton } from '@/components/layout/header/bitcash-access'
+import { SessionButton } from '@/components/dialogs/session/session-button'
 import { Section } from '@/components/shared/section'
 import { buttonVariants } from '@/components/ui/button'
 import { IconDownRightArrow } from '@/components/ui/icons'
@@ -45,11 +45,7 @@ export default function StepsSection({ lang, dict }: StepsSectionProps) {
                     <IconDownRightArrow className="size-4 transition-all group-focus-within:-rotate-45 group-hover:-rotate-45 [&_path]:stroke-white" />
                   </Link>
                 ) : (
-                  <BitcashAccessButton
-                    buttonLabel="down-right-icon"
-                    buttonStyle={{ size: 'icon', variant: 'accent' }}
-                    defaultContent="register"
-                  />
+                  <SessionButton />
                 )}
               </div>
             </div>

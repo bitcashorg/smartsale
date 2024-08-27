@@ -1,24 +1,26 @@
 'use client'
 
-import { getSesssion } from '@/actions'
+import { getSesssion } from '@/app/actions/general'
 import { genLoginSigningRequest } from '@/lib/eos'
 import { useSupabaseClient } from '@/services/supabase'
 import { createContextHook } from '@blockmatic/hooks-utils'
 import { useConnectModal } from '@rainbow-me/rainbowkit'
 import type { Tables } from '@repo/supabase'
 import { usePathname, useRouter, useSearchParams } from 'next/navigation'
-import React, { type ReactNode, useEffect, useState } from 'react'
+import React, { type ReactNode, useCallback, useEffect, useState } from 'react'
 import { isMobile } from 'react-device-detect'
 import { useAsync, useLocalStorage, useToggle } from 'react-use'
 import { v4 as uuidv4 } from 'uuid'
 import { useAccount } from 'wagmi'
 import { useMultibase } from './use-multibase'
+import { useReferral } from './use-referral'
 
-// Exports
+// Export SessionProvider and useSession hook
 export { SessionProvider, useSession }
 
-// don export this fn must be wrapped for context to work
+// Main session hook function
 function useSessionFn() {
+  // Initialize necessary hooks and state
   const supabase = useSupabaseClient()
   const account = useAccount()
   const [newSessionId] = useState(uuidv4())
@@ -28,29 +30,34 @@ function useSessionFn() {
   const router = useRouter()
   const { openConnectModal } = useConnectModal()
   const { identifyUser } = useMultibase()
-  // this controls the session dialog with register and login qr codes
-  // when login qr code is display a new esr is created and saved on db for later reference on callback call
+  const { bitcashRegisterUri } = useReferral()
+
+  // Toggle for session dialog visibility
   const [showSessionDialog, toggleShowSessionDialog] = useToggle(false)
+
+  // Local storage for session data
   const [session, setSession] = useLocalStorage<Tables<'session'> | null>(
     'bitcash-session',
   )
+
+  // Generate login signing request
   const loginSR = useAsync(() => genLoginSigningRequest(newSessionId))
   const loginUri = loginSR?.value?.encode()
 
-  let registerUri = 'https://app.bitcash.org?share=JVnL7qzrU'
+  // Function to start a new session
+  const startSession = useCallback(
+    (session: Tables<'session'>) => {
+      setSession(session)
+      identifyUser(account.address || '0x', {
+        account: session?.account ?? 'unknown',
+      })
+    },
+    [setSession, identifyUser, account.address],
+  )
 
-  const startSession = (session: Tables<'session'>) => {
-    setSession(session)
-    identifyUser(account.address || '0x', {
-      account: session?.account ?? 'unknown',
-    })
-  }
-
-  // subscribe to supabase session table and set session state
-  // this table get updated by /api/esr callback invoked by the signing wallet
+  // Effect to subscribe to Supabase session changes
   useEffect(() => {
-    //  we dont need to subscribe on mobile
-    if (isMobile) return
+    if (isMobile) return // Skip subscription on mobile
 
     console.log(`🧑🏻‍💻 🍓 subscribing to session ${newSessionId}`)
     const channel = supabase
@@ -60,7 +67,6 @@ function useSessionFn() {
         { event: 'INSERT', schema: 'public', table: 'session' },
         (payload) => {
           console.log('BAZINGA 🍓 new supabase session', payload.new)
-          // set new session if ids match
           if (session || payload.new.id !== newSessionId) return
           const newSession = payload.new as Tables<'session'>
           console.log(' ✅ supabase session id matches', newSession)
@@ -74,13 +80,13 @@ function useSessionFn() {
       console.log(`🤖 unsubscribing to session ${newSessionId}`)
       supabase.removeChannel(channel)
     }
-  }, [startSession, supabase, isMobile])
+  }, [startSession, supabase, toggleShowSessionDialog, newSessionId, session])
 
-  // // open session from url search params
+  // Effect to handle session from URL parameters
   useEffect(() => {
     if (!paramsSessionId) return
     console.log(`💥💥 url session effect  ${paramsSessionId}`)
-    // get session from server action and remove
+
     const getSession = async () => {
       console.log(`getting session ${paramsSessionId}`)
       const formData = new FormData()
@@ -89,52 +95,33 @@ function useSessionFn() {
       const session = await getSesssion(formData)
       console.log(`session ${paramsSessionId}`, session)
       if (!session) return
-      // TODO: move this logic to backend
-      // set cookie session
+
       startSession(session)
       console.log('✅ session', session)
-      // Encoding the query and managing search parameters
+
+      // Clean up URL parameters
       const params = new URLSearchParams(searchParams)
       params.delete('session_id')
       router.replace(`${pathname}`)
     }
 
     getSession()
-  }, [paramsSessionId])
+  }, [paramsSessionId, startSession, pathname, router, searchParams])
 
-  // save referrer to session storage
-  useEffect(() => {
-    if (!searchParams.get('referrer') && !sessionStorage.getItem('referrer'))
-      return
-    if (searchParams.get('referrer')) {
-      sessionStorage.setItem('referrer', searchParams.get('referrer') || '')
-    }
-    registerUri = `https://app.bitcash.org/create-account?referrer=${
-      searchParams.get('referrer') || sessionStorage.getItem('referrer')
-    }&source=bitlauncher.ai`
-  }, [])
-
-  // default moblie login mode is redirect
+  // Function to handle login redirect (mobile)
   const loginRedirect = () => {
     if (!loginUri || !open) return
-    // post request to parent if present
-    window.parent &&
-      window.parent.postMessage({ eventType: 'esr', code: loginUri }, '*')
-
-    // redirect with esr and callback on mobile
     const params = new URLSearchParams()
     params.append('esr_code', loginUri.replace('esr://', ''))
+    const url = new URL(bitcashRegisterUri)
     const callbackUrl = `${window.location.href}?session_id=${newSessionId}`
-    console.log('💥 callbackUrl', callbackUrl)
     const encodedCallbackUrl = encodeURIComponent(callbackUrl)
-    params.append('callback', encodedCallbackUrl)
-    const referrer = sessionStorage.getItem('referrer')
-    if (referrer) params.append('referrer', referrer)
-    location.href = `https://app.bitcash.org?${params.toString()}`
+    url.searchParams.append('callback', encodedCallbackUrl)
+    url.searchParams.append('esr_code', loginUri.replace('esr://', ''))
+    location.href = url.toString()
   }
 
-  // show rainbowkit to link evm wallet if logged in
-  // else call login action depending base on viewport
+  // Function to handle login or connect wallet
   const loginOrConnect = () => {
     console.log('login or connect', session, openConnectModal)
     session && openConnectModal
@@ -144,17 +131,18 @@ function useSessionFn() {
         : toggleShowSessionDialog(true)
   }
 
+  // Function to handle logout
   const logout = () => {
     console.log('logout')
     setSession(null)
     router.refresh()
   }
 
+  // Return session-related data and functions
   return {
     newSessionId,
     session,
     loginUri,
-    registerUri,
     showSessionDialog,
     logout,
     loginRedirect,
@@ -164,6 +152,7 @@ function useSessionFn() {
   }
 }
 
+// SessionProvider component
 function SessionProvider({ children }: { children: ReactNode }) {
   return (
     <React.Suspense fallback={<div />}>
@@ -172,6 +161,7 @@ function SessionProvider({ children }: { children: ReactNode }) {
   )
 }
 
+// Create context hook for session
 const [useSession, SessionProviderInner] = createContextHook(
   useSessionFn,
   'You must wrap your application with <SessionProvider /> in order to useSession().',

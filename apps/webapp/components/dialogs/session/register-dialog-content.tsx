@@ -1,6 +1,5 @@
 'use client'
 
-import type { BitcashAccessContentType } from '@/components/layout/session/session-dialog'
 import { Button } from '@/components/ui/button'
 import {
   DialogDescription,
@@ -8,36 +7,26 @@ import {
   DialogHeader,
   DialogTitle,
 } from '@/components/ui/dialog'
+import { useReferral } from '@/hooks/use-referral'
 import { useSession } from '@/hooks/use-session'
-import { runtimeEnv } from '@repo/utils'
-import { useRouter } from 'next/navigation'
 import QRCode from 'react-qr-code'
-import { useEffectOnce } from 'react-use'
+import type { BitcashAccessContentType } from './session-dialog.type'
 
 export function RegisterDialogContent({
   updateDialogContent,
 }: {
   updateDialogContent: (dialog: BitcashAccessContentType) => void
 }) {
-  const { session, registerUri } = useSession()
-  const router = useRouter()
-
-  useEffectOnce(() => {
-    const compatibleDevice = runtimeEnv.isMobile || runtimeEnv.isIpad
-
-    if (compatibleDevice) {
-      router.push(registerUri)
-    }
-  })
-
+  const { session } = useSession()
   const isUserLoggedIn = Boolean(session?.account)
+  const { bitcashRegisterUri } = useReferral()
   const buttonText = isUserLoggedIn
     ? `You're already logged in with ${session?.account} account.`
     : 'Already have an account? Log in!'
 
   return (
     <>
-      <DialogHeader className="gap-4">
+      <DialogHeader>
         {/* @ts-ignore */}
         <DialogTitle>Register to Bitcash Wallet</DialogTitle>
         {/* @ts-ignore */}
@@ -56,8 +45,8 @@ export function RegisterDialogContent({
             width: '100%',
             borderRadius: 4,
           }}
-          value={registerUri}
-          viewBox={`0 0 256 256`}
+          value={bitcashRegisterUri}
+          viewBox={'0 0 256 256'}
         />
         {/* <Image
           src="/images/qr-bitcash-reg-bitlauncher.webp"

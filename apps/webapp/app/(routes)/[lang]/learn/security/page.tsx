@@ -1,5 +1,5 @@
-import { LearnSection } from '@/components/layout/section/learn-section'
-import StepsSection from '@/components/layout/section/steps-section'
+import { LearnSection } from '@/components/routes/home/section/learn-section'
+import StepsSection from '@/components/routes/home/section/steps-section'
 import { BgHeader } from '@/components/shared/bg-header'
 import { PageContent } from '@/components/shared/content'
 import { getDictionary } from '@/dictionaries'

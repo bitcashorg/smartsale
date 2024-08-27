@@ -1,9 +1,10 @@
 'use client'
-import { SessionDialogContent } from '@/components/layout/session/login-dialog-content'
-import { RegisterDialogContent } from '@/components/layout/session/register-dialog-content'
+import { RegisterDialogContent } from '@/components/dialogs/session/register-dialog-content'
 import { Dialog, DialogContent } from '@/components/ui/dialog'
 import { useSession } from '@/hooks/use-session'
 import { useState } from 'react'
+import { SessionDialogContent } from './login-dialog-content'
+import type { BitcashAccessContentType } from './session-dialog.type'
 
 export function SessionDialog({
   defaultContent = 'login',
@@ -30,5 +31,3 @@ export function SessionDialog({
 interface BitcashAccessProps {
   defaultContent?: BitcashAccessContentType
 }
-
-export type BitcashAccessContentType = 'login' | 'register'
