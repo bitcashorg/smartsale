@@ -39,7 +39,7 @@ export function ProjectInfo({
 }) {
   const fields: Array<Array<ItemProps>> = [
     [
-      { label: 'Presale', value: '9/15/24 - 10/15/24' },
+      { label: 'Presale', value: '9/15/24 - 11/15/24' },
       { label: 'Fundraising Goal', value: '$150,000' },
       { label: 'Max Allocation', value: '$1,500' },
     ],

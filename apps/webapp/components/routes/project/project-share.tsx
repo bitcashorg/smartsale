@@ -39,6 +39,8 @@ export function ProjectShare({ project }: { project: Project }) {
           className={cn(
             buttonVariants({ variant: 'outline', size: 'icon' }),
             'relative size-[50px] rounded-full px-0 py-0 pr-1',
+            // ? Currently, Bitlauncher Community does not have a Telegram group (got blocked). Only Bitcash but the legacy channel.
+            { 'pointer-events-none cursor-not-allowed opacity-50': project.id === 1 },
           )}
           target="_blank"
           rel="noopener noreferrer"
