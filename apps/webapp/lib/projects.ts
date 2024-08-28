@@ -1,4 +1,3 @@
-import { appConfig } from '@/lib/config'
 import { TestnetMBOTSPL, type TokenContractData } from '@repo/contracts'
 import { merge } from 'lodash'
 import type { StaticImageData } from 'next/image'
@@ -20,10 +19,7 @@ export const projects: Project[] = [
     maxAllocation: '$1,500',
     heroImage: '/images/projects/bitcash-cover.webp',
     thumbnailImage: BitcashPic,
-    // TODO: Dynamic badge text based on auction status. For now, hardcoding it by environment.
-    badgeText: appConfig.env !== 'prod'
-      ? 'COMING PRE-SALE'
-      : 'REGISTRATION OPEN',
+    badgeText: 'COMING PRE-SALE',
     linkPath: '/bitcash-bitlauncher',
     token: TestnetMBOTSPL,
     auctionId: 9,
