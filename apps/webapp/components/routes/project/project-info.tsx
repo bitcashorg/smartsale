@@ -22,7 +22,9 @@ function ListItem({ label, value }: ItemProps) {
     <div className="flex justify-between w-full">
       <h3 className="flex items-center justify-between w-full">
         <span className="font-futura-pt-demi opacity-70">{label}: </span>
-        <span className="text-right text-sm">{typeof value === 'string' ? value : null}</span>
+        <span className="text-right text-sm">
+          {typeof value === 'string' ? value : null}
+        </span>
       </h3>
     </div>
   )
@@ -42,7 +44,7 @@ export function ProjectInfo({
       { label: 'Max Allocation', value: '$1,500' },
     ],
     [
-      { label: 'Token Sale', value: '11/2/24 - 11/30/24' },
+      { label: 'Token Sale', value: 'TBD' },
       { label: 'Fundraising Goal', value: '$250,000' },
       { label: 'Max Allocation', value: '$10,000' },
     ],
@@ -65,7 +67,9 @@ export function ProjectInfo({
             className="flex w-full min-w-[250px] flex-col justify-evenly rounded-sm bg-muted px-4 py-3 md:min-w-[203px]"
           >
             {items.map((item, ik) => (
-              <Fragment key={`pre-sale-field-${(item.label || 'default').replace(/\s/g, '_')}`}>
+              <Fragment
+                key={`pre-sale-field-${(item.label || 'default').replace(/\s/g, '_')}`}
+              >
                 <ListItem {...item} />
 
                 {ik < items.length - 1 && (
