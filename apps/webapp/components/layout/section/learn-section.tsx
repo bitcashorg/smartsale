@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Section } from '../../../shared/section'
+import { Section } from '../../shared/section'
 
 export function LearnSection() {
   const mainCard = content.cards[0]
@@ -101,7 +101,7 @@ const content = {
         '/images/home/platform-circles.png',
       ],
       articleLink:
-        '/blog/bitlauncher/welcome-to-the-bitlauncher-presale-starting-september-15th',
+        '/blog/bitlauncher/welcome-to-the-bitlauncher-presale-starting-august-31st',
     },
     {
       title: 'What is the Bitlauncher ($BL) Token?',

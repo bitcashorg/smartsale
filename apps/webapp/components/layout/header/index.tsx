@@ -24,24 +24,24 @@ export function Header({ lang, dict }: HeaderProps) {
         </div>
 
         {/* Center Section (Navigation Links) */}
-        <div className="justify-center hidden space-x-4 md:flex md:flex-1 lg:space-x-8">
+        <nav className="justify-center hidden space-x-4 sm:text-sm lg:text-base md:flex md:flex-1 lg:space-x-8">
           {/* // ? Development only */}
           {appConfig.features.newNavStruct ? (
             <Navigation lang={lang} />
           ) : (
             <NavLinks lang={lang} dict={dict} />
           )}
-        </div>
+        </nav>
 
         {/* Right Section (Buttons/Language Selector) */}
-        <div className="flex items-center justify-end flex-1 gap-5">
-          <div className="items-center hidden gap-5 lg:flex">
+        <div className="flex items-center justify-end flex-1 gap-2.5 lg:gap-5 sm:text-sm lg:text-base">
+          <div className="items-center hidden gap-2.5 lg:gap-5 md:flex">
             <Suspense fallback={<Button>Login</Button>}>
               <DynamicSessionButton />
             </Suspense>
           </div>
           {appConfig.features.i18n ? <LangSelector lang={lang} /> : null}
-          <div className="flex lg:hidden">
+          <div className="flex md:hidden">
             <DynamicMobileNav lang={lang} dict={dict} />
           </div>
         </div>

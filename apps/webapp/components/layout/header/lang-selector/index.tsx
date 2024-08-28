@@ -3,10 +3,7 @@ import { Button } from '@/components/ui/button'
 import {
   DropdownMenu,
   DropdownMenuContent,
-  // DropdownMenuLabel,
-  // DropdownMenuSeparator,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
+  DropdownMenuTrigger
 } from '@/components/ui/dropdown-menu'
 import type { LangProp } from '@/types/routing.type'
 import { ChevronDownIcon } from 'lucide-react'
@@ -19,7 +16,7 @@ export function LangSelector({ lang }: LangProp) {
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <Button
-            className="flex items-center h-auto px-2 py-1 text-sm ga-1 lg:h-10 lg:px-4 lg:py-2"
+            className="flex items-center h-auto px-3 py-1 text-sm ga-1 lg:h-10 lg:px-4 lg:py-2"
             variant="outline"
           >
             {lang.toUpperCase()}

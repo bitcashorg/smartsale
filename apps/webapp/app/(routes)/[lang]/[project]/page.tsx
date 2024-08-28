@@ -22,15 +22,10 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 
   const projectContentObjectKeys = Object.keys(project.content)
   const projectContent = project.content
-
   const supabase = await createSupabaseServerClient()
-  const presaleData =
-    project.presaleId &&
-    (await getPresaleData({ supabase, projectId: project.id }))
-
-  // const isPresaleUpcoming =
-  //   presaleData && new Date(presaleData.start_timestamptz) > new Date()
-
+  const presaleData = await getPresaleData({ projectId: project.id, supabase })
+  const presaleDataStartDate = new Date(presaleData.start_timestamptz)
+  const presaleDataEndDate = new Date(presaleData.end_timestamptz)
   const isPresaleClosed = Boolean(presaleData?.close_timestamptz)
 
   return (
@@ -39,7 +34,10 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         <ProjectHeader project={project}>
           <div className="grid grid-cols-1 gap-8 mb-10 lg:grid-cols-2">
             <Card className="flex flex-col w-full pb-5 border-card/30 bg-card/60 backdrop-blur-lg">
-              <Countdown targetDate={new Date()} heading="Pre-Sale Countdown" />
+              <Countdown
+                targetDate={presaleDataStartDate}
+                heading="Pre-Sale Countdown"
+              />
               <div className="flex items-center justify-center gap-3 align-center">
                 <DynamicAddressForm projectId={project.id} />
 
@@ -51,6 +49,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               </div>
             </Card>
 
+            {/* // TODO: Update project table to add bitlauncher project. */}
             <ProjectDataCard project={project} />
           </div>
         </ProjectHeader>
