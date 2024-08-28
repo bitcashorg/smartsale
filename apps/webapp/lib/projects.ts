@@ -1,3 +1,4 @@
+import { appConfig } from '@/lib/config'
 import { TestnetMBOTSPL, type TokenContractData } from '@repo/contracts'
 import { merge } from 'lodash'
 import type { StaticImageData } from 'next/image'
@@ -19,7 +20,10 @@ export const projects: Project[] = [
     maxAllocation: '$1,500',
     heroImage: '/images/projects/bitcash-cover.webp',
     thumbnailImage: BitcashPic,
-    badgeText: 'REGISTRATION OPEN',
+    // TODO: Dynamic badge text based on auction status. For now, hardcoding it by environment.
+    badgeText: appConfig.env !== 'prod'
+      ? 'COMING PRE-SALE'
+      : 'REGISTRATION OPEN',
     linkPath: '/bitcash-bitlauncher',
     token: TestnetMBOTSPL,
     auctionId: 9,
@@ -27,6 +31,8 @@ export const projects: Project[] = [
     twitterUsername: 'bitcashorg',
     telegramGroup: 'bitlauncher',
     discordServer: 'KuR48XUxnG',
+    // September 15, 2024
+    presaleStart: '2024-09-15T00:00:00Z',
     presaleId: 1, // in database
   },
   {
@@ -47,6 +53,7 @@ export const projects: Project[] = [
     twitterUsername: 'masterbotsai',
     telegramGroup: 'bitlauncher',
     discordServer: 'KuR48XUxnG',
+    presaleStart: '',
   },
   {
     id: 3,
@@ -64,6 +71,7 @@ export const projects: Project[] = [
     twitterUsername: 'wizartworld',
     telegramGroup: 'bitlauncher',
     discordServer: 'KuR48XUxnG',
+    presaleStart: '2024-09-15T00:00:00Z',
   },
 ]
 
@@ -96,6 +104,7 @@ export interface Project {
   registrationOpen?: boolean
   auctionClosed?: boolean
   presaleId?: number
+  presaleStart?: string
 }
 
 export interface ContentSection {

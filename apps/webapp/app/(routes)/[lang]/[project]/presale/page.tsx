@@ -17,11 +17,12 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
     params.project,
     dict,
   )) as ProjectWithAuction
+
   if (!project) redirect('/')
+
   const supabase = await createSupabaseServerClient()
   const presaleData = await getPresaleData({ projectId: project.id, supabase })
   const projectData = await getProjectData({ projectId: project.id, supabase })
-  if (!project) redirect('/')
 
   return (
     <div className="flex min-h-[calc(83vh-4rem)] flex-col">

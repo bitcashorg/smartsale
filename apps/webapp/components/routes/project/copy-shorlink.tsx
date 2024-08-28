@@ -87,8 +87,8 @@ export function CopyShortlinkIcon() {
       type="button"
       key={'share-shortlink'}
       onClick={copyToClipboard}
-      className="relative size-[58px] rounded-full [&>svg]:size-[36px]"
-    >
+      className="transition-all relative flex justify-center items-center size-[50px] hover:bg-white/10 rounded-full [&>svg]:size-[32px]"
+      >
       <AnimatePresence>{iconsMap[status]}</AnimatePresence>
     </button>
   )
