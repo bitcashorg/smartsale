@@ -23,7 +23,7 @@ import { useAccount } from 'wagmi'
 export function PresaleTransactionsCard() {
   const { address } = useAccount()
   const supabase = useSupabaseClient()
-  const [transactions, setTransactions] = useState<Tables<'transfer'>[]>([])
+  const [transactions, setTransactions] = useState<>([])
   const [isLoading, setIsLoading] = useState(true)
   const [error, setError] = useState<Error | null>(null)
 
@@ -40,13 +40,13 @@ export function PresaleTransactionsCard() {
     const fetchInitialTransactions = async () => {
       try {
         const { data, error } = await supabase
-          .from('transfer')
-          .select('*')
+          .from('presale_deposit')
+          .select('*, deposit_hash(*)')
           .eq('from', address)
           .order('created_at', { ascending: false })
 
         if (error) throw error
-        setTransactions(data as Tables<'transfer'>[])
+        // setTransactions(data as Tables<'transfer'>[])
       } catch (err) {
         setError(err instanceof Error ? err : new Error('An error occurred'))
       } finally {
@@ -56,49 +56,49 @@ export function PresaleTransactionsCard() {
 
     fetchInitialTransactions()
 
-    const subscription = supabase
-      .channel('presale_transfer_changes')
-      .on(
-        'postgres_changes',
-        {
-          event: '*',
-          schema: 'public',
-          table: 'transfer',
-          filter: `from=eq.${address}`,
-        },
-        (payload) => {
-          console.log('subscription payload')
-          if (payload.eventType === 'INSERT') {
-            setTransactions((prev) => [
-              payload.new as Tables<'transfer'>,
-              ...prev,
-            ])
-          } else if (payload.eventType === 'UPDATE') {
-            setTransactions(
-              (prev) =>
-                prev.map((t) =>
-                  t.trx_hash === payload.new.trx_hash
-                    ? (payload.new as Tables<'transfer'>)
-                    : t,
-                ),
-              // .sort(
-              //   (a, b) =>
-              //     new Date(b.created_at).getTime() -
-              //     new Date(a.created_at).getTime(),
-              // ),
-            )
-          } else if (payload.eventType === 'DELETE') {
-            setTransactions((prev) =>
-              prev.filter((t) => t.trx_hash !== payload.old.trx_hash),
-            )
-          }
-        },
-      )
-      .subscribe()
+    // const subscription = supabase
+    //   .channel('presale_transfer_changes')
+    //   .on(
+    //     'postgres_changes',
+    //     {
+    //       event: '*',
+    //       schema: 'public',
+    //       table: 'presale_deposit',
+    //       filter: `from=eq.${address}`,
+    //     },
+    //     (payload) => {
+    //       console.log('subscription payload')
+    //       if (payload.eventType === 'INSERT') {
+    //         setTransactions((prev) => [
+    //           payload.new as Tables<'transfer'>,
+    //           ...prev,
+    //         ])
+    //       } else if (payload.eventType === 'UPDATE') {
+    //         setTransactions(
+    //           (prev) =>
+    //             prev.map((t) =>
+    //               t.trx_hash === payload.new.trx_hash
+    //                 ? (payload.new as Tables<'transfer'>)
+    //                 : t,
+    //             ),
+    //           // .sort(
+    //           //   (a, b) =>
+    //           //     new Date(b.created_at).getTime() -
+    //           //     new Date(a.created_at).getTime(),
+    //           // ),
+    //         )
+    //       } else if (payload.eventType === 'DELETE') {
+    //         setTransactions((prev) =>
+    //           prev.filter((t) => t.trx_hash !== payload.old.trx_hash),
+    //         )
+    //       }
+    //     },
+    //   )
+    //   .subscribe()
 
-    return () => {
-      subscription.unsubscribe()
-    }
+    // return () => {
+    //   subscription.unsubscribe()
+    // }
   }, [address, supabase])
 
   return (
