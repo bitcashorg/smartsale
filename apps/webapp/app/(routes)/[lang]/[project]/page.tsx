@@ -8,6 +8,8 @@ import { locales } from '@/dictionaries/locales'
 import { appConfig } from '@/lib/config'
 import { getProjectBySlug, getProjects } from '@/lib/projects'
 import { cn } from '@/lib/utils'
+import { createSupabaseServerClient } from '@/services/supabase'
+import { getPresaleData } from '@/services/supabase/service'
 import type { ProjectPageParams, ProjectPageProps } from '@/types/routing.type'
 import dynamic from 'next/dynamic'
 import Image from 'next/image'
@@ -21,17 +23,18 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 
   const projectContentObjectKeys = Object.keys(project.content)
   const projectContent = project.content
-
-  // is presale upcoming
-  // const isPresaleUpcoming = new Date(project.presaleData.start_timestamptz) > new Date()
-
+  const supabase = await createSupabaseServerClient()
+  const presaleData = await getPresaleData({ projectId: project.id, supabase })
+  const presaleDataStartDate = new Date(presaleData.start_timestamptz)
+  const presaleDataEndDate = new Date(presaleData.end_timestamptz)
+  
   return (
     <>
       <div className="flex flex-col">
         <ProjectHeader project={project}>
           <div className="grid grid-cols-1 gap-8 mb-10 lg:grid-cols-2">
             <Card className="flex flex-col w-full pb-5 border-card/30 bg-card/60 backdrop-blur-lg">
-              <Countdown targetDate={new Date()} heading="Pre-Sale Countdown" />
+              <Countdown targetDate={presaleDataStartDate} heading="Pre-Sale Countdown" />
               <div className="flex items-center justify-center gap-3 align-center">
                 <DynamicAddressForm projectId={project.id} />
 
@@ -43,6 +46,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               </div>
             </Card>
 
+            {/* // TODO: Update project table to add bitlauncher project. */}
             <ProjectDataCard project={project} />
           </div>
         </ProjectHeader>

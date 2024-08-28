@@ -309,7 +309,7 @@ iframe[title="reCAPTCHA"],
 
 /* Heading in About - Security - Whitepaper */
 .sectionsHeading {
-  @apply text-[4.188rem] font-normal leading-normal md:text-[4.3504rem] lg:text-[5.438rem];
+  @apply text-[4.188rem] font-normal leading-tight md:text-[4.3504rem] lg:text-[5.438rem];
 }
 
 /* Subheading in About - Security - Whitepaper */
