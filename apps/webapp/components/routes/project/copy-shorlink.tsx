@@ -6,6 +6,7 @@ import { AnimatePresence } from 'framer-motion'
 import { LucideCheck, LucideLoader2, LucideShare, LucideX } from 'lucide-react'
 import { useParams } from 'next/navigation'
 import { useState } from 'react'
+import toast from 'react-hot-toast'
 
 export function CopyShortlinkIcon() {
   const [status, setStatus] = useState<
@@ -19,23 +20,20 @@ export function CopyShortlinkIcon() {
     : ''
 
   const checkShareLink = async () => {
+    if (!session?.account) {
+      return { data: null, error: 'Please log in to share this project and refer friends.' }
+    }
+
     const { data, error } = await supabase
       .from('account')
       // select shareLink from user where linkPath = 'https://bitlauncher.ai${window.location.pathname}${param}'
       .select('account, short_link')
-      .eq('account', session?.account || '')
+      .eq('account', session?.account)
       .single()
-
-    if (error) {
-      console.error('Failed to check share link:', error)
-      setStatus('error')
-
-      return { data: null, error }
-    }
 
     let returnData = data
 
-    if (!data.short_link) {
+    if (!returnData?.short_link) {
       const { data: dubCoShortLink, error: dubCoError } =
         await generateShortLink(
           `https://bitlauncher.ai${window.location.pathname}${param}`,
@@ -48,7 +46,7 @@ export function CopyShortlinkIcon() {
         return { data: null, error: dubCoError }
       }
 
-      await supabase.from('account').upsert(
+      const { data: user } = await supabase.from('account').upsert(
         {
           account: session?.account || '',
           short_link: dubCoShortLink?.shortLink,
@@ -57,8 +55,10 @@ export function CopyShortlinkIcon() {
           onConflict: 'account',
         },
       )
+        .select('*')
+        .single()
 
-      returnData = { ...data, short_link: dubCoShortLink?.shortLink as string }
+      returnData = { account: user?.account as string, short_link: dubCoShortLink?.shortLink || null }
 
       setTimeout(() => setStatus('default'), 5000)
     }
@@ -71,13 +71,15 @@ export function CopyShortlinkIcon() {
     try {
       const { data, error } = await checkShareLink()
 
-      if (error || !data) throw new Error(error?.message || 'Unknown error')
+      if (error || !data) throw new Error(error || 'Unknown error')
       navigator.clipboard.writeText(data?.short_link || '')
       setStatus('copied')
+      toast.success('Link copied to clipboard!')
       setTimeout(() => setStatus('default'), 5000)
     } catch (error) {
       console.error('Failed to copy share link:', error)
       setStatus('error')
+      toast.error((error as Error).message)
       setTimeout(() => setStatus('default'), 5000)
     }
   }
