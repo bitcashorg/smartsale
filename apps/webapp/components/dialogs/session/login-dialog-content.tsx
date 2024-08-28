@@ -1,6 +1,5 @@
 'use client'
 
-import type { BitcashAccessContentType } from '@/components/layout/session/session-dialog'
 import { Button } from '@/components/ui/button'
 import {
   DialogDescription,
@@ -10,6 +9,7 @@ import {
 } from '@/components/ui/dialog'
 import { useSession } from '@/hooks/use-session'
 import QRCode from 'react-qr-code'
+import type { BitcashAccessContentType } from './session-dialog.type'
 
 export function SessionDialogContent({
   updateDialogContent,

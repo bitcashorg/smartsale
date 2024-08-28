@@ -14,7 +14,6 @@ import { User, Wallet } from 'lucide-react'
 import { useRouter } from 'next/navigation'
 import { isMobile } from 'react-device-detect'
 import { useAccount } from 'wagmi'
-// import Link from 'next/link'
 
 export function SessionButton() {
   const {
@@ -33,12 +32,12 @@ export function SessionButton() {
     isMobile ? loginRedirect() : toggleShowSessionDialog()
 
   return (
-    <div className="flex justify-end gap-4">
+    <div className="flex justify-end gap-1.5 lg:gap-5">
       {hasSession && (
         <Button
           variant="ghost"
           radius="full"
-          className={cn('m-0 md:px-3 lg:px-4')}
+          className={cn('px-3 m-0 lg:px-4')}
           onClick={openConnectModal ? openConnectModal : openAccountModal}
           suppressHydrationWarning={true}
         >
@@ -63,7 +62,7 @@ export function SessionButton() {
             <Button
               variant="secondary"
               radius="full"
-              className={cn('min-w-[170px] md:px-3 lg:px-4')}
+              className={cn('lg:min-w-[170px] md:px-3 lg:px-4')}
             >
               <User /> &nbsp; {session?.account}
             </Button>
@@ -73,9 +72,7 @@ export function SessionButton() {
             className="w-44 border-[#845BBF] bg-background text-center"
           >
             <ul className="flex flex-col gap-5 py-2">
-              {/* <li>
-                <Link href={`/en/wallet`}>Wallet</Link>
-              </li> */}
+              {/* biome-ignore lint/a11y/useKeyWithClickEvents: not needed rn */}
               <li onClick={logout} className="cursor-pointer">
                 Sign Out
               </li>

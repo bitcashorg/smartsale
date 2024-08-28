@@ -1,5 +1,5 @@
 'use client'
-import { registerAddress } from '@/actions'
+import { registerAddress } from '@/app/actions/general'
 import {
   Button,
   type ButtonProps,

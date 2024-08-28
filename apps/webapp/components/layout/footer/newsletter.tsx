@@ -1,5 +1,5 @@
 'use client'
-import { subscribeToNewsletter } from '@/actions'
+import { subscribeToNewsletter } from '@/app/actions/general'
 import { Button, buttonVariants } from '@/components/ui/button'
 import { IconDiscord, IconDownRightArrow } from '@/components/ui/icons'
 import { cn, motionProps } from '@/lib/utils'

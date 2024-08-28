@@ -1,4 +1,3 @@
-import { Card } from '@/components/ui/card'
 import {
   Dialog,
   DialogContent,
@@ -9,6 +8,7 @@ import {
 } from '@/components/ui/dialog'
 import type { YouTubePlaylistItem } from '@/services/youtube/index'
 import Image from 'next/image'
+import { Card } from '../../../ui/card'
 
 export function ShortVideo({ video }: { video: YouTubePlaylistItem }) {
   return (
