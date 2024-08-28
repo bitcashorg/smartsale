@@ -31,7 +31,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           <Card className="border-card/30 bg-card/60 backdrop-blur-lg">
             <Countdown
               targetDate={new Date(presaleData.end_timestamptz)}
-              heading="Pre-Sale Countdown"
+              heading="Pre-Sale End Countdown"
             />
             <CardContent>
               <ProjectPresaleData presaleData={presaleData} />

@@ -64,6 +64,8 @@ export function AuctionCardButtons({ project }: { project: Project }) {
             <ExternalLinkButton
               key={`card-button-${index}`}
               variant="outline"
+              // ? Currently, Bitlauncher Community does not have a Telegram group (got blocked). Only Bitcash but the legacy channel.
+              disabled={project.id === 1 && socialTitle === 'Telegram Group'}
               size="icon"
               link={link}
               className={buttonLinkClassName}

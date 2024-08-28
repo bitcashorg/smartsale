@@ -75,7 +75,7 @@ export default async function RootLayout({
           disableTransitionOnChange
         >
           <Header lang={params.lang} dict={dict} />
-          <Toaster />
+          <Toaster position="bottom-right" />
           <main
             className={cn(
               'flex w-full max-w-[100vw] flex-1 flex-col',

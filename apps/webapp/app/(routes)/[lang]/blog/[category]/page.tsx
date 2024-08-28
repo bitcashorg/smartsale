@@ -27,7 +27,7 @@ export default async function Page(props: CategoryPageProps) {
         heading={pageSeo.title}
         subheading={pageSeo.description}
         className="!text-6xl [&_+_div]:md:!text-2xl [&_+_div]:md:!py-0"
-        imageSrc="/images/blog/temp-bg-concept.webp"
+        background="about"
       />
       <div className="narrow-container">
         <BlogSections sections={sections} lang={lang} category={category} />
