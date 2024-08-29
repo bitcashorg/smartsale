@@ -11,8 +11,8 @@ import Link from 'next/link'
 import { useEffect } from 'react'
 import { useFormStatus } from 'react-dom'
 import {
-  GoogleReCaptcha,
-  GoogleReCaptchaProvider,
+    GoogleReCaptcha,
+    GoogleReCaptchaProvider,
 } from 'react-google-recaptcha-v3'
 import { useForm } from 'react-hook-form'
 import { useSetState } from 'react-use'
@@ -195,10 +195,10 @@ function DiscordButton() {
           variant: 'outline',
           radius: 'full',
         }),
-        'size-14 border-transparent p-3.5 md:border-accent-secondary lg:size-14',
+        'size-14 border-transparent p-3.5 md:border-accent-500 lg:size-14',
       )}
     >
-      <IconDiscord className={'block size-full fill-accent-secondary'} />
+      <IconDiscord className={'block size-full fill-accent-500'} />
       <span className="sr-only">Discord</span>
     </Link>
   )

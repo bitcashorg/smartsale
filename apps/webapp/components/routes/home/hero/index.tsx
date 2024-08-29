@@ -20,13 +20,13 @@ export function NewHomeHero() {
           <h1 className="heroHeading">
             <Balancer>
               EARLY ACCESS TO <br />
-              THE NEXT <span className="text-pink-500">GLOBAL</span> <br />
-              <span className="text-pink-500">AI UNICORNS</span>
+              THE NEXT <span className="text-accent-400">GLOBAL</span> <br />
+              <span className="text-accent-400">AI UNICORNS</span>
             </Balancer>
           </h1>
         </div>
         <div className="relative mt-16 lg:ml-16 lg:mt-0">
-          <div className="absolute inset-0 m-auto h-[300px] w-[300px] rounded-full bg-pink-500 sm:h-[400px] sm:w-[400px]"></div>
+          <div className="absolute inset-0 m-auto h-[300px] w-[300px] rounded-full bg-accent-400 sm:h-[400px] sm:w-[400px]"></div>
           <Image
             src="/images/home/horse.png"
             alt="AI Unicorn"

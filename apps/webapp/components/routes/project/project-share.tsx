@@ -19,7 +19,7 @@ export function ProjectShare({ project }: { project: Project }) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <IconTwitterX className="size-6 fill-accent-secondary" />
+          <IconTwitterX className="size-6 fill-accent-500" />
         </Link>
         <Link
           key={'share-discord'}
@@ -31,7 +31,7 @@ export function ProjectShare({ project }: { project: Project }) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <IconDiscord className="size-7 fill-accent-secondary" />
+          <IconDiscord className="size-7 fill-accent-500" />
         </Link>
         <Link
           key={'share-telegram'}
@@ -45,7 +45,7 @@ export function ProjectShare({ project }: { project: Project }) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <IconTelegram className="size-7 fill-accent-secondary" />
+          <IconTelegram className="size-7 fill-accent-500" />
         </Link>
 
         <CopyShortlinkIcon key={'share-shortlink'} />

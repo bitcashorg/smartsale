@@ -19,7 +19,7 @@ export function HomeHero({
         >
           {dict.home.title.split('AI/WEB3')[0]}{' '}
           <span className="!text-[#E94FB8]">
-            AI <span className="font-light !text-[#845BBF]">/</span> WEB3
+            AI <span className="font-light !text-accent-500">/</span> WEB3
           </span>
           {'\n'}
           {dict.home.title.split('AI/WEB3')[1]}
