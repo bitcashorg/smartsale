@@ -94,7 +94,7 @@ const content = {
       title: 'How to Partcipate in the Bitlauncher Presale?',
       paragraphs: [
         "Explore our blog post on how to participate in the Bitlauncher Presale, your gateway to early involvement in a revolutionary platform blending AI and cryptocurrency. This guide will outline the presale process, from initial sign-up and KYC verification to the final purchase of tokens at a fixed price.",
-        "We'll also cover key compliance details and the secure setup of your investments using EVM-compatible wallets. This is an essential read for anyone looking to understand and engage with the future of technology and finance through Bitlauncher.",
+        "We'll also cover key compliance details and the secure setup of your contribution using EVM-compatible wallets. This is an essential read for anyone looking to understand and engage with the future of technology and finance through Bitlauncher.",
       ],
       images: [
         '/images/home/platform-circles.webp',
