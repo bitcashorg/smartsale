@@ -93,8 +93,8 @@ const content = {
     {
       title: 'How to Partcipate in the Bitlauncher Presale?',
       paragraphs: [
-        "A good place to start is: what is Bitlauncher? (We'll give you the brief version). Bitlauncher is a platform that connects young projects with early community members through initial decentralized offerings (IDOS). It provides a unique opportunity for contributors to engage with up-and-coming tech innovations.",
-        'By participating in an IDO on Bitlauncher, users can gain early access to tokens from new blockchain projects. This early access can potentially lead to significant benefits if the projects grow in value and popularity. Bitlauncher aims to democratize the investment process, making it accessible to a broader audience.',
+        "Explore our blog post on how to participate in the Bitlauncher Presale, your gateway to early involvement in a revolutionary platform blending AI and cryptocurrency. This guide will outline the presale process, from initial sign-up and KYC verification to the final purchase of tokens at a fixed price.",
+        "We'll also cover key compliance details and the secure setup of your investments using EVM-compatible wallets. This is an essential read for anyone looking to understand and engage with the future of technology and finance through Bitlauncher.",
       ],
       images: [
         '/images/home/platform-circles.webp',
