@@ -73,7 +73,7 @@ export function ProjectInfo({
                 <ListItem {...item} />
 
                 {ik < items.length - 1 && (
-                  <hr className="w-full my-2 border-accent-secondary/50" />
+                  <hr className="w-full my-2 border-accent-500/50" />
                 )}
               </Fragment>
             ))}

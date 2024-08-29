@@ -60,6 +60,13 @@ module.exports = {
           600: '#9A9EFC',
         },
         tertiary: { blue: '#0000EE' },
+        accent: {
+          DEFAULT: 'hsla(var(--accent))',
+          foreground: 'hsla(var(--accent-foreground))',
+          400: '#FF51ED',
+          500: '#845BBF',
+          600: '#433974',
+        },
         destructive: {
           DEFAULT: 'hsla(var(--destructive))',
           foreground: 'hsla(var(--destructive-foreground))',
@@ -71,11 +78,6 @@ module.exports = {
         muted: {
           DEFAULT: 'hsla(var(--muted))',
           foreground: 'hsla(var(--muted-foreground))',
-        },
-        accent: {
-          DEFAULT: 'hsla(var(--accent))',
-          foreground: 'hsla(var(--accent-foreground))',
-          secondary: 'hsla(var(--accent-secondary))',
         },
         popover: {
           DEFAULT: 'hsla(var(--popover))',
