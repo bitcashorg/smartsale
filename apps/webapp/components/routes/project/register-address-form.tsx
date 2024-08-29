@@ -1,9 +1,9 @@
 'use client'
 import { registerAddress } from '@/app/actions/general'
 import {
-  Button,
-  type ButtonProps,
-  buttonVariants,
+    Button,
+    type ButtonProps,
+    buttonVariants,
 } from '@/components/ui/button'
 import { useSession } from '@/hooks/use-session'
 import { cn } from '@/lib/utils'
@@ -100,7 +100,7 @@ function RegisterButton(props: ButtonProps & { text: string }) {
           variant: 'outline',
           radius: 'full',
         }),
-        'flex h-auto whitespace-normal border border-solid border-accent-secondary bg-background px-5',
+        'flex h-auto whitespace-normal border border-solid border-accent-500 bg-background px-5',
       )}
       {...props}
     >

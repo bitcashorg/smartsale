@@ -7,7 +7,7 @@ export function Section({ heading, children }: SectionProps) {
       <h2 className="relative z-10 flex justify-center w-full pb-10 text-center shadow-sm heading">
         <Balancer>{heading}</Balancer>
       </h2>
-      <div className="m-auto mb-4 h-[2.37px] w-[118.61px] bg-[#ff51ed]" />
+      <div className="m-auto mb-4 h-[2.37px] w-[118.61px] bg-accent-400" />
       <div className="w-full pt-10">{children}</div>
     </section>
   )

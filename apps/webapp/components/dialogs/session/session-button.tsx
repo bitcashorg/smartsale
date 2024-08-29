@@ -69,7 +69,7 @@ export function SessionButton() {
           </PopoverTrigger>
           <PopoverContent
             align="end"
-            className="w-44 border-[#845BBF] bg-background text-center"
+            className="w-44 border-accent-500 bg-background text-center"
           >
             <ul className="flex flex-col gap-5 py-2">
               {/* biome-ignore lint/a11y/useKeyWithClickEvents: not needed rn */}

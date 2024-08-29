@@ -2,19 +2,19 @@
 
 import { Button, buttonVariants } from '@/components/ui/button'
 import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
+    Card,
+    CardContent,
+    CardDescription,
+    CardFooter,
+    CardHeader,
+    CardTitle,
 } from '@/components/ui/card'
 import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
+    Select,
+    SelectContent,
+    SelectItem,
+    SelectTrigger,
+    SelectValue,
 } from '@/components/ui/select'
 import { cn } from '@/lib/utils'
 import { TestnetUSDCred } from '@repo/contracts'
@@ -92,7 +92,7 @@ export function WithdrawCard() {
               variant: 'outline',
               radius: 'full',
             }),
-            'h-auto w-full whitespace-normal border border-solid border-accent-secondary bg-background px-10 py-2',
+            'h-auto w-full whitespace-normal border border-solid border-accent-500 bg-background px-10 py-2',
           )}
           // disabled={!session?.account}
           onClick={withdraw}
