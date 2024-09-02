@@ -69,7 +69,7 @@ export const RegisterAddressForm: FunctionComponent<{ projectId: number }> = ({
     // save form data for later use in register function as sign message success callback
     setFormData(formData)
     // request sign message
-    signMessage({ message: `Sign me up for bitlauncher | bitcash pre-sale` })
+    signMessage({ message: `Sign me up for bitlauncher | bitcash presale` })
   }
 
   return registration.data || state.value ? (

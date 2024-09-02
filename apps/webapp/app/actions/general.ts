@@ -49,10 +49,10 @@ export async function registerAddress(formData: FormData) {
 
     if (error)
       throw new Error(
-        `Error creating pre-sale registration entry: ${error.message}`,
+        `Error creating presale registration entry: ${error.message}`,
       )
     console.log(
-      'Pre-sale registration entry created successfully:',
+      'Presale registration entry created successfully:',
       createdEntry,
     )
     return createdEntry // Return the newly created entry

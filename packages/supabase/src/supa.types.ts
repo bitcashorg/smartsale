@@ -249,30 +249,53 @@ export type Database = {
       }
       presale_deposit: {
         Row: {
+          account: string
+          address: string
           amount: number
           created_at: string
           deposit_hash: string
           id: string
           issuance_hash: string | null
           presale_id: number
+          project_id: number
         }
         Insert: {
+          account: string
+          address: string
           amount: number
           created_at?: string
           deposit_hash: string
           id?: string
           issuance_hash?: string | null
           presale_id: number
+          project_id: number
         }
         Update: {
+          account?: string
+          address?: string
           amount?: number
           created_at?: string
           deposit_hash?: string
           id?: string
           issuance_hash?: string | null
           presale_id?: number
+          project_id?: number
         }
         Relationships: [
+          {
+            foreignKeyName: "presale_deposit_account_fkey"
+            columns: ["account"]
+            isOneToOne: false
+            referencedRelation: "account"
+            referencedColumns: ["account"]
+          },
+          {
+            foreignKeyName: "presale_deposit_address_project_id_account_fkey"
+            columns: ["address", "project_id", "account"]
+            isOneToOne: false
+            referencedRelation: "whitelist"
+            referencedColumns: ["address", "project_id", "account"]
+          },
           {
             foreignKeyName: "presale_deposit_deposit_hash_fkey"
             columns: ["deposit_hash"]
@@ -292,6 +315,13 @@ export type Database = {
             columns: ["presale_id"]
             isOneToOne: false
             referencedRelation: "presale"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "presale_deposit_project_id_fkey"
+            columns: ["project_id"]
+            isOneToOne: false
+            referencedRelation: "project"
             referencedColumns: ["id"]
           },
           {

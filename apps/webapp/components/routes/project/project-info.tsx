@@ -68,7 +68,7 @@ export function ProjectInfo({
           >
             {items.map((item, ik) => (
               <Fragment
-                key={`pre-sale-field-${(item.label || 'default').replace(/\s/g, '_')}`}
+                key={`presale-field-${(item.label || 'default').replace(/\s/g, '_')}`}
               >
                 <ListItem {...item} />
 

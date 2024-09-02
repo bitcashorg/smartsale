@@ -38,7 +38,10 @@ export default async function AuctionPage({ params }: ProjectPageProps) {
             <Card className="border-card/30 bg-card/60 backdrop-blur-lg">
               <Countdown targetDate={new Date()} heading="Auction Countdown" />
               <CardContent>
-                <ProjectPresaleData presaleData={presaleData} />
+                <ProjectPresaleData
+                  presaleData={presaleData}
+                  numberOfContributors={0}
+                />
               </CardContent>
             </Card>
 

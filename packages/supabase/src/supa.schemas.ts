@@ -265,33 +265,66 @@ export const presaleRelationshipsSchema = z.tuple([
 ]);
 
 export const presaleDepositRowSchema = z.object({
+  account: z.string(),
+  address: z.string(),
   amount: z.number(),
   created_at: z.string(),
   deposit_hash: z.string(),
   id: z.string(),
   issuance_hash: z.string().nullable(),
   presale_id: z.number(),
+  project_id: z.number(),
 });
 
 export const presaleDepositInsertSchema = z.object({
+  account: z.string(),
+  address: z.string(),
   amount: z.number(),
   created_at: z.string().optional(),
   deposit_hash: z.string(),
   id: z.string().optional(),
   issuance_hash: z.string().optional().nullable(),
   presale_id: z.number(),
+  project_id: z.number(),
 });
 
 export const presaleDepositUpdateSchema = z.object({
+  account: z.string().optional(),
+  address: z.string().optional(),
   amount: z.number().optional(),
   created_at: z.string().optional(),
   deposit_hash: z.string().optional(),
   id: z.string().optional(),
   issuance_hash: z.string().optional().nullable(),
   presale_id: z.number().optional(),
+  project_id: z.number().optional(),
 });
 
 export const presaleDepositRelationshipsSchema = z.tuple([
+  z.object({
+    foreignKeyName: z.literal("presale_deposit_account_fkey"),
+    columns: z.tuple([z.literal("account")]),
+    isOneToOne: z.literal(false),
+    referencedRelation: z.literal("account"),
+    referencedColumns: z.tuple([z.literal("account")]),
+  }),
+  z.object({
+    foreignKeyName: z.literal(
+      "presale_deposit_address_project_id_account_fkey",
+    ),
+    columns: z.tuple([
+      z.literal("address"),
+      z.literal("project_id"),
+      z.literal("account"),
+    ]),
+    isOneToOne: z.literal(false),
+    referencedRelation: z.literal("whitelist"),
+    referencedColumns: z.tuple([
+      z.literal("address"),
+      z.literal("project_id"),
+      z.literal("account"),
+    ]),
+  }),
   z.object({
     foreignKeyName: z.literal("presale_deposit_deposit_hash_fkey"),
     columns: z.tuple([z.literal("deposit_hash")]),
@@ -311,6 +344,13 @@ export const presaleDepositRelationshipsSchema = z.tuple([
     columns: z.tuple([z.literal("presale_id")]),
     isOneToOne: z.literal(false),
     referencedRelation: z.literal("presale"),
+    referencedColumns: z.tuple([z.literal("id")]),
+  }),
+  z.object({
+    foreignKeyName: z.literal("presale_deposit_project_id_fkey"),
+    columns: z.tuple([z.literal("project_id")]),
+    isOneToOne: z.literal(false),
+    referencedRelation: z.literal("project"),
     referencedColumns: z.tuple([z.literal("id")]),
   }),
   z.object({

@@ -36,14 +36,15 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
             <Card className="flex flex-col w-full pb-5 border-card/30 bg-card/60 backdrop-blur-lg">
               <Countdown
                 targetDate={presaleDataStartDate}
-                heading="Pre-Sale Countdown"
+                // heading="Presale Countdown"
+                heading="Presale Ends In:"
               />
               <div className="flex items-center justify-center gap-3 align-center">
-                <DynamicAddressForm projectId={project.id} />
+                {/* <DynamicAddressForm projectId={project.id} /> */}
 
                 {!isPresaleClosed ? (
                   <Link href={`/${project.slug}/presale`} className="flex">
-                    <Button>Active Presale</Button>
+                    <Button variant="accent">Join Presale Now</Button>
                   </Link>
                 ) : null}
               </div>

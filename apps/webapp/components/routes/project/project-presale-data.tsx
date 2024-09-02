@@ -3,32 +3,25 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { useSupabaseClient } from '@/services/supabase'
 import type { Tables } from '@repo/supabase'
-import type { SupabaseClient } from '@supabase/supabase-js'
 import { Handshake, Users } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { formatUnits } from 'viem'
+
 export function ProjectPresaleData({
   presaleData,
+  numberOfContributors,
 }: {
   presaleData: Tables<'presale'>
+  numberOfContributors: number
 }) {
-  const [contributors, setContributors] = useState<string[]>([])
+  const [contributors, setContributors] = useState<number>(numberOfContributors)
   const [totalRaised, setTotalRaised] = useState<bigint>(
     BigInt(presaleData.total_raised),
   )
   const supabase = useSupabaseClient()
 
   useEffect(() => {
-    const fetchInitialData = async () => {
-      const { data: contributorsData } = await getPresaleContributors(
-        supabase,
-        presaleData.id,
-      )
-      setContributors(contributorsData || [])
-    }
-
-    fetchInitialData()
-
+    // TODO: subscribe to presale contributors
     const subscription = supabase
       .channel(`presale_contributions_${presaleData.id}`)
       .on(
@@ -41,15 +34,6 @@ export function ProjectPresaleData({
         },
         (payload) => {
           if (payload.eventType === 'INSERT') {
-            setContributors((prev) =>
-              Array.from(
-                new Set(
-                  [...prev, payload.new.from].filter(
-                    (from): from is string => from !== null,
-                  ),
-                ),
-              ),
-            )
             setTotalRaised(BigInt(payload.new.total_raised))
           } else if (payload.eventType === 'DELETE') {
             setTotalRaised(BigInt(payload.old.total_raised))
@@ -83,61 +67,9 @@ export function ProjectPresaleData({
           <Users className="w-4 h-4 text-muted-foreground" />
         </CardHeader>
         <CardContent>
-          <div className="text-2xl font-bold">
-            {contributors.length ? `+${contributors.length}` : '0'}
-          </div>
+          <div className="text-2xl font-bold">{contributors || '0'}</div>
         </CardContent>
       </Card>
     </div>
   )
-}
-
-async function getPresaleContributors(
-  supabase: SupabaseClient,
-  presaleId: number,
-): Promise<PresaleContributorsResult> {
-  try {
-    const { data, error } = await supabase
-      .from('presale_deposits')
-      .select('from')
-      .eq('presale_id', presaleId)
-      .returns<{ from: string | null }[]>()
-
-    if (error) throw error
-
-    if (!data) {
-      return {
-        success: true,
-        data: [],
-        message: 'No data found',
-      }
-    }
-
-    const uniqueContributors = Array.from(
-      new Set(
-        data
-          .map((item) => item.from)
-          .filter((from): from is string => from !== null),
-      ),
-    )
-    return {
-      success: true,
-      data: uniqueContributors,
-      message: 'Data fetched successfully',
-    }
-  } catch (error) {
-    console.error('Unexpected error:', error)
-    return {
-      success: false,
-      error,
-      message: 'An unexpected error occurred',
-    }
-  }
-}
-
-interface PresaleContributorsResult {
-  success: boolean
-  data?: string[]
-  error?: unknown
-  message: string
 }
