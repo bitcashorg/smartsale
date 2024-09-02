@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from 'react'
 import { CommunityCard } from '@/components/shared/community-card'
-import { HeroContentInfoPages } from '@/components/shared/hero-content-info-pages'
+import { HeroWhitepaper } from './hero'
 import { Lang } from '@/dictionaries/locales'
 import { WhitepaperSidebar } from './sidebar'
 import { WHITE_PAPER_HERO_CONTENT } from './static-content'
@@ -12,21 +12,17 @@ export function WhitepaperPageLanding({ params: { lang } }: WhitepaperPageProps)
 
   return (
     <>
-      <section className="w-full py-12 narrow-container md:py-24 lg:py-32">
-        <div className="container px-0 md:px-6">
-          <div className="grid items-start gap-4 lg:grid-cols-2">
-            <div className="space-y-4">
-              <h2 className="font-['Futura PT'] text-7xl tracking-tighter">
-                Whitepaper
-              </h2>
-              <HeroContentInfoPages paragraphs={WHITE_PAPER_HERO_CONTENT} />
-            </div>
-            <div className="relative flex items-center justify-center">
-              <div className="infopages-background infopages-background--whitepaper">
-                <div className="absolute bottom-0 m-4">
-                  <CommunityCard />
-                </div>
-              </div>
+      <section className="narrow-container">
+        <div className="grid items-center justify-between gap-4 px-0 pb-[80px] md:px-6 lg:grid-cols-2">
+          <div className="space-y-4">
+            <h2 className="sectionsHeading">
+              Whitepaper
+            </h2>
+            <HeroWhitepaper paragraphs={WHITE_PAPER_HERO_CONTENT} />
+          </div>
+          <div className="infopages-background infopages-background--whitepaper">
+            <div className="absolute bottom-0 m-4">
+              <CommunityCard />
             </div>
           </div>
         </div>

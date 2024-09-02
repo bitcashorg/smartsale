@@ -14,7 +14,7 @@ export async function AboutBitlauncherPageLanding({
   const lang = params.lang
   const dict = await getDictionary(lang)
   return (
-    <>@
+    <>
       <section className="narrow-container">
         <div className="grid items-center justify-between gap-4 px-0 pb-[80px] md:px-6 lg:grid-cols-2">
           <div className="space-y-4">
