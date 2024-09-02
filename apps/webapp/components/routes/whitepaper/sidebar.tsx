@@ -49,6 +49,8 @@ export function WhitepaperSidebar({ activeSection, onSectionChange }: Whitepaper
                   key={section.title}
                   className={`self-start inline-flex flex-col items-start justify-start relative flex-[0_0_auto] ${activeSection === section.title ? 'text-white' : 'text-[#9395af]'}`}
                   onClick={() => handleSectionClick(section.title)}
+                  onKeyDown={(e) => e.key === 'Enter' && handleSectionClick(section.title)}
+                tabIndex={0}
                 >
                   <div className="relative w-fit paragraph whitespace-nowrap text-left">
                     {section.title}
@@ -68,6 +70,8 @@ export function WhitepaperSidebar({ activeSection, onSectionChange }: Whitepaper
             key={section.title}
             className={`block py-2 cursor-pointer ${activeSection === section.title ? 'border-b-2 border-accent-400 inline-block text-white' : 'paragraph'}`}
             onClick={() => onSectionChange(section.title)}
+            onKeyDown={(e) => e.key === 'Enter' && onSectionChange(section.title)}
+            tabIndex={0}
           >
             {section.title}
           </div>
@@ -86,6 +90,7 @@ const NavigationIcon = (props: SVGProps<SVGSVGElement>) => (
     viewBox="0 0 32 33"
     {...props}
   >
+    <title>Navigation Icon</title>
     <path
       stroke="#fff"
       strokeLinecap="round"

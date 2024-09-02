@@ -9,6 +9,7 @@ export const NextArrowComponent = (props: SVGProps<SVGSVGElement>) => (
         viewBox="0 0 26 27"
         {...props}
     >
+        <title>Next</title>
         <path
             stroke="#fff"
             strokeLinecap="round"
@@ -26,6 +27,7 @@ export const PrevArrowComponent = (props: SVGProps<SVGSVGElement>) => (
         fill="none"
         {...props}
     >
+        <title>Prev</title>
         <path
             stroke="#fff"
             strokeLinecap="round"
@@ -50,6 +52,12 @@ export const NavigationContainer = ({ prevTitle = '', nextTitle = '', onPrevClic
             <div
                 className={`inline-flex items-center justify-center gap-6 px-8 py-[9px] relative flex-[0_0_auto] bg-[#845abe] rounded-[40px] overflow-hidden cursor-pointer ${nextTitle ? 'opacity-100' : 'opacity-50'} md:min-w-[240px] md:max-w-[240px] min-w-[332px] max-w-full h-[60px]`}
                 onClick={nextTitle ? onNextClick : undefined}
+                onKeyDown={(e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        onNextClick();
+                    }
+                }}
+                tabIndex={0}
             >
                 <div className="relative flex-1 font-normal text-transparent text-lg tracking-[0] leading-[25.4px] overflow-hidden whitespace-nowrap">
                     <span className="text-[#433974]">
@@ -63,6 +71,12 @@ export const NavigationContainer = ({ prevTitle = '', nextTitle = '', onPrevClic
             <div
                 className={`inline-flex items-center justify-center gap-6 px-8 py-[9px] relative flex-[0_0_auto] bg-[#845abe] rounded-[40px] overflow-hidden cursor-pointer ${prevTitle ? 'opacity-100' : 'opacity-50'} md:min-w-[240px] md:max-w-[240px] min-w-[332px] max-w-full h-[60px]`}
                 onClick={prevTitle ? onPrevClick : undefined}
+                onKeyDown={(e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        onPrevClick();
+                    }
+                }}
+                tabIndex={0}
             >
                 <PrevArrowComponent />
                 <div className="relative flex-1 font-normal text-[#433974] text-lg tracking-[0] leading-[25.4px] overflow-hidden whitespace-nowrap">
