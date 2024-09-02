@@ -20,8 +20,8 @@ export const HeroWhitepaper = ({ paragraphs }: HeroContentProps) => {
       <div className="grid items-center justify-between gap-8 px-0 pb-[80px] md:px-6 lg:grid-cols-2">
         <div className="space-y-4 space-x-2">
           <h2 className="sectionsHeading">Whitepaper</h2>
-          {paragraphs.map((paragraph, index) => (
-            <p key={index} className="text-base font-normal leading-normal text-infoForeground">
+          {paragraphs.map((paragraph) => (
+            <p className="paragraph">
               {paragraph.segments.map((segment, segmentIndex) => (
                 <span key={segmentIndex} className={segment.isBold ? 'font-bold' : ''}>
                   {segment.text}

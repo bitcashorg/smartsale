@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react'
-import { WITHE_PAPER } from '@/dictionaries/en/whitepaper'
+import { WHITE_PAPER } from '@/dictionaries/en/whitepaper'
 import Balancer from 'react-wrap-balancer'
 import { NavigationContainer } from './navigator'
 
@@ -106,20 +106,20 @@ export const WhitepaperContent = ({ activeSection, onSectionChange, contentRef }
     }
   }
 
-  const activeSectionContentIndex = WITHE_PAPER.sections.findIndex(section => section.title === activeSection)
-  const activeSectionContent = WITHE_PAPER.sections[activeSectionContentIndex]
-  const prevTitle = WITHE_PAPER.sections[activeSectionContentIndex - 1]?.title
-  const nextTitle = WITHE_PAPER.sections[activeSectionContentIndex + 1]?.title
+  const activeSectionContentIndex = WHITE_PAPER.sections.findIndex(section => section.title === activeSection)
+  const activeSectionContent = WHITE_PAPER.sections[activeSectionContentIndex]
+  const prevTitle = WHITE_PAPER.sections[activeSectionContentIndex - 1]?.title
+  const nextTitle = WHITE_PAPER.sections[activeSectionContentIndex + 1]?.title
 
   function handlePrevClick() {
     if (activeSectionContentIndex > 0) {
-      onSectionChange(WITHE_PAPER.sections[activeSectionContentIndex - 1].title)
+      onSectionChange(WHITE_PAPER.sections[activeSectionContentIndex - 1].title)
     }
   }
 
   function handleNextClick() {
-    if (activeSectionContentIndex < WITHE_PAPER.sections.length - 1) {
-      onSectionChange(WITHE_PAPER.sections[activeSectionContentIndex + 1].title)
+    if (activeSectionContentIndex < WHITE_PAPER.sections.length - 1) {
+      onSectionChange(WHITE_PAPER.sections[activeSectionContentIndex + 1].title)
     }
   }
 

@@ -1,5 +1,5 @@
 
-export const WITHE_PAPER = {
+export const WHITE_PAPER = {
   "sections": [
     {
       "type": "section",

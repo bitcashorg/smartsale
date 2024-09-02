@@ -1,5 +1,5 @@
 import React, { useState, SVGProps, useEffect } from 'react'
-import { WITHE_PAPER } from '@/dictionaries/en/whitepaper'
+import { WHITE_PAPER } from '@/dictionaries/en/whitepaper'
 import { AnimatePresence } from 'framer-motion'
 import { Transition } from '@/components/shared/transition'
 
@@ -44,7 +44,7 @@ export function WhitepaperSidebar({ activeSection, onSectionChange }: Whitepaper
                 </button>
                 <h2 className="text-xl font-bold text-white">Bitlauncher Whitepaper</h2>
               </div>
-              {WITHE_PAPER.sections.map((section: Section) => (
+              {WHITE_PAPER.sections.map((section: Section) => (
                 <div
                   key={section.title}
                   className={`self-start inline-flex flex-col items-start justify-start relative flex-[0_0_auto] ${activeSection === section.title ? 'text-white' : 'text-[#9395af]'}`}
@@ -63,7 +63,7 @@ export function WhitepaperSidebar({ activeSection, onSectionChange }: Whitepaper
         )}
       </AnimatePresence>
       <nav className="hidden md:block">
-        {WITHE_PAPER.sections.map((section: Section) => (
+        {WHITE_PAPER.sections.map((section: Section) => (
           <div
             key={section.title}
             className={`block py-2 cursor-pointer ${activeSection === section.title ? 'border-b-2 border-accent-400 inline-block text-white' : 'paragraph'}`}
