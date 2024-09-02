@@ -50,11 +50,11 @@ export function WhitepaperSidebar({ activeSection, onSectionChange }: Whitepaper
                   className={`self-start inline-flex flex-col items-start justify-start relative flex-[0_0_auto] ${activeSection === section.title ? 'text-white' : 'text-[#9395af]'}`}
                   onClick={() => handleSectionClick(section.title)}
                 >
-                  <div className="relative w-fit mt-[-1.00px] font-normal text-xl tracking-[0] leading-[24.2px] whitespace-nowrap text-left">
+                  <div className="relative w-fit paragraph whitespace-nowrap text-left">
                     {section.title}
                   </div>
                   {activeSection === section.title && (
-                    <div className="absolute w-[69px] h-0.5 top-6 left-0 bg-[#ff51ed]" />
+                    <div className="absolute w-full h-0.5 top-6 left-0 bg-accent-400" />
                   )}
                 </div>
               ))}
