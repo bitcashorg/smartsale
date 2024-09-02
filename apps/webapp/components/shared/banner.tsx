@@ -3,7 +3,7 @@ export function Banner() {
     <section className="w-full gap-20">
       <div className="inline-flex flex-col items-center justify-start gap-[37px]">
         <h2 className="text-center heading2">{content.title}</h2>
-        <div className="h-[2.37px] w-[118.61px] bg-[#ff51ed]"></div>
+        <div className="h-[2.37px] w-[118.61px] bg-accent-400"></div>
         <div className="narrow-container">
           <p className="paragraph text-center text-[15px] font-normal">
             {content.paragraph}

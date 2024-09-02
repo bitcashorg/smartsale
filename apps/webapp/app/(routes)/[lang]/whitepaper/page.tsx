@@ -14,7 +14,7 @@ export default async function BitlauncherWhitePaper({
         <BgHeader
           heading={'Bitlauncher Whitepaper'}
           subheading={'Be Part of the Intelligent Future'}
-          imageSrc="/images/blog/temp-bg-concept.webp"
+          background="whitepaper"
         />
 
         <div className="content-container z-30 bg-background !py-10 px-7 md:px-3 md:py-24">

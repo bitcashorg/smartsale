@@ -5,11 +5,11 @@ import Balancer from 'react-wrap-balancer'
 export function BgHeader({
   heading,
   subheading,
-  imageSrc,
+  background = 'security',
   className,
 }: {
   heading: string
-  imageSrc: string
+  background?: 'security' | 'whitepaper' | 'about'
   subheading?: string
   className?: string
 }) {
@@ -22,7 +22,10 @@ export function BgHeader({
           </h2>
           <div className="sectionsSubheading">{subheading}</div>
         </div>
-        <div className="infopages-background infopages-background--security">
+        <div className={cn(
+          'infopages-background',
+          `infopages-background--${background}`
+        )}>
           <div className="absolute bottom-0 m-4">
             <CommunityCard />
           </div>

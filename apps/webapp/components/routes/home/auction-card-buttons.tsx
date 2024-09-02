@@ -4,10 +4,10 @@ import { ExternalLinkButton } from '@/components/nextjs/button-link'
 import { NestedLinkButton } from '@/components/nextjs/nested-link'
 import { Button, buttonVariants } from '@/components/ui/button'
 import {
-  IconDiscord,
-  IconDownRightArrow,
-  IconTelegram,
-  IconTwitterX,
+    IconDiscord,
+    IconDownRightArrow,
+    IconTelegram,
+    IconTwitterX,
 } from '@/components/ui/icons'
 import { cn } from '@/lib/utils'
 import { Suspense } from 'react'
@@ -57,19 +57,21 @@ export function AuctionCardButtons({ project }: { project: Project }) {
                 className={buttonLinkClassName}
                 data-title={`${title}´s ${socialTitle}`}
               >
-                <Icon className="size-7 fill-accent-secondary" />
+                <Icon className="size-7 fill-accent-500" />
               </Button>
             }
           >
             <ExternalLinkButton
               key={`card-button-${index}`}
               variant="outline"
+              // ? Currently, Bitlauncher Community does not have a Telegram group (got blocked). Only Bitcash but the legacy channel.
+              disabled={project.id === 1 && socialTitle === 'Telegram Group'}
               size="icon"
               link={link}
               className={buttonLinkClassName}
               data-title={`${title}´s ${socialTitle}`}
             >
-              <Icon className="size-7 fill-accent-secondary" />
+              <Icon className="size-7 fill-accent-500" />
             </ExternalLinkButton>
           </Suspense>
         ))}

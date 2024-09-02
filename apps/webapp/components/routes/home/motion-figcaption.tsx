@@ -10,7 +10,7 @@ const figcaptionVariants = cva(
     variants: {
       color: {
         default: 'bg-[#262626]',
-        comingSoon: 'bg-[#ff51ed]',
+        comingSoon: 'bg-accent-400',
         open: 'bg-[#70be33]',
       },
       size: {

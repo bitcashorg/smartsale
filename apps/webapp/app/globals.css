@@ -29,7 +29,7 @@
 
     --accent: 319.38, 80.67%, 53.33%;
     --accent-foreground: 0, 0%, 98%;
-    --accent-secondary: 261, 29%, 56%;
+    --accent-500: 261, 29%, 56%;
 
     --destructive: 0, 62.8%, 30.6%;
     --destructive-foreground: 0, 85.7%, 97.3%;
@@ -78,7 +78,7 @@
 
     --accent: 319.38, 80.67%, 53.33%;
     --accent-foreground: 0, 0%, 98%;
-    --accent-secondary: 261, 29%, 56%;
+    --accent-500: 261, 29%, 56%;
 
     --destructive: 0, 62.8%, 30.6%;
     --destructive-foreground: 0, 85.7%, 97.3%;
@@ -309,12 +309,12 @@ iframe[title="reCAPTCHA"],
 
 /* Heading in About - Security - Whitepaper */
 .sectionsHeading {
-  @apply text-[4.188rem] font-normal leading-tight md:text-[4.3504rem] lg:text-[5.438rem];
+  @apply text-[3.5rem] sm:text-[4.2rem] font-bold leading-[1.1] lg:text-[4.5rem];
 }
 
 /* Subheading in About - Security - Whitepaper */
 .sectionsSubheading {
-  @apply text-start text-2xl font-medium leading-[42.35px] text-[#ff51ed] md:text-[2.188rem];
+  @apply text-start text-2xl font-medium leading-[42.35px] text-accent-400 md:text-[2.188rem];
 }
 
 .heading2 {

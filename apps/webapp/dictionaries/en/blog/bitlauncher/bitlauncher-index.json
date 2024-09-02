@@ -1,27 +1,133 @@
 {
   "sections": [
     {
+      "name": "how_to",
+      "slug": "how_to",
+      "articles": [
+        {
+          "id": "W8caLxKNTdahoemkXQT_sg",
+          "topics": [
+            "how_to",
+            "launchpad",
+            "dao"
+          ],
+          "title": "Welcome to the Bitlauncher Presale Starting September 15th!",
+          "slug": "welcome-to-the-bitlauncher-presale-starting-september-15th",
+          "authorName": "Jun Dam",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
+          },
+          "_publishedAt": "2024-08-28T01:36:20+01:00",
+          "description": "Bitlauncher Presale begins September 15th, 2024, offering a unique opportunity to invest in the intersection of AI and cryptocurrency. Secure your presale tokens at $1 each and be part of this transformative venture.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1724390484-bitlauncherpresale2.jpg"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Bitlauncher Presale starts September 15th, 2024. Join the AI-crypto revolution by securing presale tokens at $1 each.",
+            "title": "Bitlauncher Presale Starting August 31st!",
+            "twitterCard": "summary_large_image",
+            "image": {
+              "width": 1312,
+              "height": 736,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1724390484-bitlauncherpresale2.jpg"
+            }
+          }
+        }
+      ]
+    },
+    {
       "name": "launchpad",
       "slug": "launchpad",
       "articles": [
         {
+          "id": "W8caLxKNTdahoemkXQT_sg",
+          "topics": [
+            "how_to",
+            "launchpad",
+            "dao"
+          ],
+          "title": "Welcome to the Bitlauncher Presale Starting September 15th!",
+          "slug": "welcome-to-the-bitlauncher-presale-starting-september-15th",
+          "authorName": "Jun Dam",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
+          },
+          "_publishedAt": "2024-08-28T01:36:20+01:00",
+          "description": "Bitlauncher Presale begins September 15th, 2024, offering a unique opportunity to invest in the intersection of AI and cryptocurrency. Secure your presale tokens at $1 each and be part of this transformative venture.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1724390484-bitlauncherpresale2.jpg"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Bitlauncher Presale starts September 15th, 2024. Join the AI-crypto revolution by securing presale tokens at $1 each.",
+            "title": "Bitlauncher Presale Starting August 31st!",
+            "twitterCard": "summary_large_image",
+            "image": {
+              "width": 1312,
+              "height": 736,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1724390484-bitlauncherpresale2.jpg"
+            }
+          }
+        },
+        {
           "id": "TBAOoPr9SPihQxeeKTGUQw",
-          "topics": ["launchpad", "investment", "fundraising"],
+          "topics": [
+            "launchpad",
+            "investment",
+            "fundraising"
+          ],
           "title": "What is a Public Token Presale?",
           "slug": "what-is-a-public-token-presale",
           "authorName": "Jun Dam",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
           },
-          "_publishedAt": "2024-08-23T06:22:36+01:00",
+          "_publishedAt": "2024-08-27T05:32:23+01:00",
           "description": "Public token presales provide early investment chances at fixed prices before main sales. They help projects raise pre-launch funds, gauge interest, and build community, offering potential benefits for participants.",
           "thumbnail": {
-            "url": "https://www.datocms-assets.com/101962/1724356923-bl-thumbnail.png"
+            "url": "https://www.datocms-assets.com/101962/1724733057-pre-sale-bitlauncher-blog.png"
           },
           "contentBlock": [],
           "seo": {
             "description": "Public token presales offer early investment opportunities before main sale, helping projects raise pre-launch capital.",
             "title": "What is a Public Token Presale?",
+            "twitterCard": "summary_large_image",
+            "image": {
+              "width": 1312,
+              "height": 736,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1724733057-pre-sale-bitlauncher-blog.png"
+            }
+          }
+        },
+        {
+          "id": "ecAGoOkaROa09DcoVKyOCA",
+          "topics": [
+            "dao",
+            "analysis",
+            "launchpad"
+          ],
+          "title": "What is the Bitlauncher ($BL) Token?",
+          "slug": "what-is-the-bitlauncher-bl-token",
+          "authorName": "Jun Dam",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
+          },
+          "_publishedAt": "2024-08-27T05:06:47+01:00",
+          "description": "Bitlauncher's public token presale offers early investment opportunities in AI and blockchain projects. Secure tokens at $1 each, contribute to pre-launch funding, and join the growing community.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1724389825-whatisbltoken1.webp"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Bitlauncher ($BL) token: Powering the AI-focused launchpad, enabling governance, transactions, and ecosystem growth.",
+            "title": "What is the Bitlauncher ($BL) Token?",
             "twitterCard": "summary_large_image",
             "image": {
               "width": 1797,
@@ -31,24 +137,34 @@
               "url": "https://www.datocms-assets.com/101962/1724356923-bl-thumbnail.png"
             }
           }
-        },
+        }
+      ]
+    },
+    {
+      "name": "dao",
+      "slug": "dao",
+      "articles": [
         {
           "id": "W8caLxKNTdahoemkXQT_sg",
-          "topics": ["how_to", "launchpad", "dao"],
-          "title": "Welcome to the Bitlauncher Presale Starting August 31st!",
-          "slug": "welcome-to-the-bitlauncher-presale-starting-august-31st",
+          "topics": [
+            "how_to",
+            "launchpad",
+            "dao"
+          ],
+          "title": "Welcome to the Bitlauncher Presale Starting September 15th!",
+          "slug": "welcome-to-the-bitlauncher-presale-starting-september-15th",
           "authorName": "Jun Dam",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
           },
-          "_publishedAt": "2024-08-23T06:22:18+01:00",
-          "description": "Bitlauncher Presale begins August 31st, offering a unique opportunity to invest in the intersection of AI and cryptocurrency. Secure your presale tokens at $1 each and be part of this transformative venture.",
+          "_publishedAt": "2024-08-28T01:36:20+01:00",
+          "description": "Bitlauncher Presale begins September 15th, 2024, offering a unique opportunity to invest in the intersection of AI and cryptocurrency. Secure your presale tokens at $1 each and be part of this transformative venture.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1724390484-bitlauncherpresale2.jpg"
           },
           "contentBlock": [],
           "seo": {
-            "description": "Bitlauncher Presale starts August 31st. Join the AI-crypto revolution by securing presale tokens at $1 each.",
+            "description": "Bitlauncher Presale starts September 15th, 2024. Join the AI-crypto revolution by securing presale tokens at $1 each.",
             "title": "Bitlauncher Presale Starting August 31st!",
             "twitterCard": "summary_large_image",
             "image": {
@@ -62,14 +178,18 @@
         },
         {
           "id": "ecAGoOkaROa09DcoVKyOCA",
-          "topics": ["dao", "analysis", "launchpad"],
+          "topics": [
+            "dao",
+            "analysis",
+            "launchpad"
+          ],
           "title": "What is the Bitlauncher ($BL) Token?",
           "slug": "what-is-the-bitlauncher-bl-token",
           "authorName": "Jun Dam",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
           },
-          "_publishedAt": "2024-08-23T06:12:11+01:00",
+          "_publishedAt": "2024-08-27T05:06:47+01:00",
           "description": "Bitlauncher's public token presale offers early investment opportunities in AI and blockchain projects. Secure tokens at $1 each, contribute to pre-launch funding, and join the growing community.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1724389825-whatisbltoken1.webp"
@@ -96,17 +216,21 @@
       "articles": [
         {
           "id": "TBAOoPr9SPihQxeeKTGUQw",
-          "topics": ["launchpad", "investment", "fundraising"],
+          "topics": [
+            "launchpad",
+            "investment",
+            "fundraising"
+          ],
           "title": "What is a Public Token Presale?",
           "slug": "what-is-a-public-token-presale",
           "authorName": "Jun Dam",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
           },
-          "_publishedAt": "2024-08-23T06:22:36+01:00",
+          "_publishedAt": "2024-08-27T05:32:23+01:00",
           "description": "Public token presales provide early investment chances at fixed prices before main sales. They help projects raise pre-launch funds, gauge interest, and build community, offering potential benefits for participants.",
           "thumbnail": {
-            "url": "https://www.datocms-assets.com/101962/1724356923-bl-thumbnail.png"
+            "url": "https://www.datocms-assets.com/101962/1724733057-pre-sale-bitlauncher-blog.png"
           },
           "contentBlock": [],
           "seo": {
@@ -114,11 +238,11 @@
             "title": "What is a Public Token Presale?",
             "twitterCard": "summary_large_image",
             "image": {
-              "width": 1797,
-              "height": 603,
+              "width": 1312,
+              "height": 736,
               "title": null,
               "alt": null,
-              "url": "https://www.datocms-assets.com/101962/1724356923-bl-thumbnail.png"
+              "url": "https://www.datocms-assets.com/101962/1724733057-pre-sale-bitlauncher-blog.png"
             }
           }
         }
@@ -130,17 +254,21 @@
       "articles": [
         {
           "id": "TBAOoPr9SPihQxeeKTGUQw",
-          "topics": ["launchpad", "investment", "fundraising"],
+          "topics": [
+            "launchpad",
+            "investment",
+            "fundraising"
+          ],
           "title": "What is a Public Token Presale?",
           "slug": "what-is-a-public-token-presale",
           "authorName": "Jun Dam",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
           },
-          "_publishedAt": "2024-08-23T06:22:36+01:00",
+          "_publishedAt": "2024-08-27T05:32:23+01:00",
           "description": "Public token presales provide early investment chances at fixed prices before main sales. They help projects raise pre-launch funds, gauge interest, and build community, offering potential benefits for participants.",
           "thumbnail": {
-            "url": "https://www.datocms-assets.com/101962/1724356923-bl-thumbnail.png"
+            "url": "https://www.datocms-assets.com/101962/1724733057-pre-sale-bitlauncher-blog.png"
           },
           "contentBlock": [],
           "seo": {
@@ -148,107 +276,11 @@
             "title": "What is a Public Token Presale?",
             "twitterCard": "summary_large_image",
             "image": {
-              "width": 1797,
-              "height": 603,
-              "title": null,
-              "alt": null,
-              "url": "https://www.datocms-assets.com/101962/1724356923-bl-thumbnail.png"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "name": "how_to",
-      "slug": "how_to",
-      "articles": [
-        {
-          "id": "W8caLxKNTdahoemkXQT_sg",
-          "topics": ["how_to", "launchpad", "dao"],
-          "title": "Welcome to the Bitlauncher Presale Starting August 31st!",
-          "slug": "welcome-to-the-bitlauncher-presale-starting-august-31st",
-          "authorName": "Jun Dam",
-          "authorPicture": {
-            "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
-          },
-          "_publishedAt": "2024-08-23T06:22:18+01:00",
-          "description": "Bitlauncher Presale begins August 31st, offering a unique opportunity to invest in the intersection of AI and cryptocurrency. Secure your presale tokens at $1 each and be part of this transformative venture.",
-          "thumbnail": {
-            "url": "https://www.datocms-assets.com/101962/1724390484-bitlauncherpresale2.jpg"
-          },
-          "contentBlock": [],
-          "seo": {
-            "description": "Bitlauncher Presale starts August 31st. Join the AI-crypto revolution by securing presale tokens at $1 each.",
-            "title": "Bitlauncher Presale Starting August 31st!",
-            "twitterCard": "summary_large_image",
-            "image": {
               "width": 1312,
               "height": 736,
               "title": null,
               "alt": null,
-              "url": "https://www.datocms-assets.com/101962/1724390484-bitlauncherpresale2.jpg"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "name": "dao",
-      "slug": "dao",
-      "articles": [
-        {
-          "id": "W8caLxKNTdahoemkXQT_sg",
-          "topics": ["how_to", "launchpad", "dao"],
-          "title": "Welcome to the Bitlauncher Presale Starting August 31st!",
-          "slug": "welcome-to-the-bitlauncher-presale-starting-august-31st",
-          "authorName": "Jun Dam",
-          "authorPicture": {
-            "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
-          },
-          "_publishedAt": "2024-08-23T06:22:18+01:00",
-          "description": "Bitlauncher Presale begins August 31st, offering a unique opportunity to invest in the intersection of AI and cryptocurrency. Secure your presale tokens at $1 each and be part of this transformative venture.",
-          "thumbnail": {
-            "url": "https://www.datocms-assets.com/101962/1724390484-bitlauncherpresale2.jpg"
-          },
-          "contentBlock": [],
-          "seo": {
-            "description": "Bitlauncher Presale starts August 31st. Join the AI-crypto revolution by securing presale tokens at $1 each.",
-            "title": "Bitlauncher Presale Starting August 31st!",
-            "twitterCard": "summary_large_image",
-            "image": {
-              "width": 1312,
-              "height": 736,
-              "title": null,
-              "alt": null,
-              "url": "https://www.datocms-assets.com/101962/1724390484-bitlauncherpresale2.jpg"
-            }
-          }
-        },
-        {
-          "id": "ecAGoOkaROa09DcoVKyOCA",
-          "topics": ["dao", "analysis", "launchpad"],
-          "title": "What is the Bitlauncher ($BL) Token?",
-          "slug": "what-is-the-bitlauncher-bl-token",
-          "authorName": "Jun Dam",
-          "authorPicture": {
-            "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
-          },
-          "_publishedAt": "2024-08-23T06:12:11+01:00",
-          "description": "Bitlauncher's public token presale offers early investment opportunities in AI and blockchain projects. Secure tokens at $1 each, contribute to pre-launch funding, and join the growing community.",
-          "thumbnail": {
-            "url": "https://www.datocms-assets.com/101962/1724389825-whatisbltoken1.webp"
-          },
-          "contentBlock": [],
-          "seo": {
-            "description": "Bitlauncher ($BL) token: Powering the AI-focused launchpad, enabling governance, transactions, and ecosystem growth.",
-            "title": "What is the Bitlauncher ($BL) Token?",
-            "twitterCard": "summary_large_image",
-            "image": {
-              "width": 1797,
-              "height": 603,
-              "title": null,
-              "alt": null,
-              "url": "https://www.datocms-assets.com/101962/1724356923-bl-thumbnail.png"
+              "url": "https://www.datocms-assets.com/101962/1724733057-pre-sale-bitlauncher-blog.png"
             }
           }
         }
@@ -260,14 +292,18 @@
       "articles": [
         {
           "id": "ecAGoOkaROa09DcoVKyOCA",
-          "topics": ["dao", "analysis", "launchpad"],
+          "topics": [
+            "dao",
+            "analysis",
+            "launchpad"
+          ],
           "title": "What is the Bitlauncher ($BL) Token?",
           "slug": "what-is-the-bitlauncher-bl-token",
           "authorName": "Jun Dam",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
           },
-          "_publishedAt": "2024-08-23T06:12:11+01:00",
+          "_publishedAt": "2024-08-27T05:06:47+01:00",
           "description": "Bitlauncher's public token presale offers early investment opportunities in AI and blockchain projects. Secure tokens at $1 each, contribute to pre-launch funding, and join the growing community.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1724389825-whatisbltoken1.webp"
