@@ -1,5 +1,7 @@
 import React, { useState, SVGProps, useEffect } from 'react'
-    import { WITHE_PAPER } from '@/dictionaries/en/whitepaper'
+import { WITHE_PAPER } from '@/dictionaries/en/whitepaper'
+import { AnimatePresence } from 'framer-motion'
+import { Transition } from '@/components/shared/transition'
 
 export function WhitepaperSidebar({ activeSection, onSectionChange }: WhitepaperSidebarProps) {
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -24,42 +26,42 @@ export function WhitepaperSidebar({ activeSection, onSectionChange }: Whitepaper
   }, [isModalOpen, isMobileNavOpen])
 
   return (
-    <div className="w-64 p-4 md:h-screen">
+    <div className="p-4 md:w-64 md:p-4 md:h-screen h-0">
       <h2 className="text-xl font-bold mb-4 hidden md:block">Bitlauncher Whitepaper</h2>
-      {/* <div className="block md:hidden">
-        <NavigationBtn className="mb-4" onClick={toggleMobileNav} />
-        <AnimatePresence>
-          {isMobileNavOpen && (
-            <Transition duration={0.3}>
-              <div className="mobile-nav bg-gray-800 p-4 rounded-lg relative left-0 w-full">
-                <div className="mb-4 self-start">
-                  <button
-                    className="text-[#e728a9]"
-                    onClick={toggleMobileNav}
-                  >
-                    ✕
-                  </button>
-                  <h2 className="text-xl font-bold text-white">Bitlauncher Whitepaper</h2>
-                </div>
-                {WITHE_PAPER.sections.map((section: Section) => (
-                  <div
-                    key={section.title}
-                    className={`self-start inline-flex flex-col items-start justify-start relative flex-[0_0_auto] ${activeSection === section.title ? 'text-white' : 'text-[#9395af]'}`}
-                    onClick={() => handleSectionClick(section.title)}
-                  >
-                    <div className="relative w-fit mt-[-1.00px] font-normal text-xl tracking-[0] leading-[24.2px] whitespace-nowrap text-left">
-                      {section.title}
-                    </div>
-                    {activeSection === section.title && (
-                      <div className="absolute w-[69px] h-0.5 top-6 left-0 bg-[#ff51ed]" />
-                    )}
-                  </div>
-                ))}
+      <div className="md:hidden">
+        <NavigationBtn onClick={toggleMobileNav} className="mb-2"/>
+      </div>
+      <AnimatePresence>
+        {isMobileNavOpen && (
+          <Transition duration={0.3}>
+            <div className="mobile-nav bg-gray-800 p-4 relative left-0 w-full">
+              <div className="mb-4 self-start">
+                <button
+                  className="text-accent-400"
+                  onClick={toggleMobileNav}
+                >
+                  ✕
+                </button>
+                <h2 className="text-xl font-bold text-white">Bitlauncher Whitepaper</h2>
               </div>
-            </Transition>
-          )}
-        </AnimatePresence>
-      </div> */}
+              {WITHE_PAPER.sections.map((section: Section) => (
+                <div
+                  key={section.title}
+                  className={`self-start inline-flex flex-col items-start justify-start relative flex-[0_0_auto] ${activeSection === section.title ? 'text-white' : 'text-[#9395af]'}`}
+                  onClick={() => handleSectionClick(section.title)}
+                >
+                  <div className="relative w-fit mt-[-1.00px] font-normal text-xl tracking-[0] leading-[24.2px] whitespace-nowrap text-left">
+                    {section.title}
+                  </div>
+                  {activeSection === section.title && (
+                    <div className="absolute w-[69px] h-0.5 top-6 left-0 bg-[#ff51ed]" />
+                  )}
+                </div>
+              ))}
+            </div>
+          </Transition>
+        )}
+      </AnimatePresence>
       <nav className="hidden md:block">
         {WITHE_PAPER.sections.map((section: Section) => (
           <div
@@ -97,7 +99,7 @@ const NavigationIcon = (props: SVGProps<SVGSVGElement>) => (
 const NavigationBtn = ({ className, onClick }: { className: string, onClick: () => void }) => {
   return (
     <div
-      className={`flex items-center justify-center w-13 h-13 rounded-full bg-[#e728a9] ${className} w-[52px] h-[52px]`}
+      className={`flex items-center justify-center w-13 rounded-full bg-accent-400 ${className} w-[52px] h-[52px]`}
       onClick={onClick}
     >
       <NavigationIcon className="w-8 h-8" />
