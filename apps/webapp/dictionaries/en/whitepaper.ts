@@ -111,10 +111,6 @@ export const WITHE_PAPER = {
       "content": [
         {
           "type": "p",
-          "text": "Mission Statement"
-        },
-        {
-          "type": "p",
           "text": "To empower the next wave of AI innovation by providing open-source AI projects with a pioneering platform for equitable fundraising and decentralized organization. Bitlauncher is dedicated to transforming the landscape of AI development by making it accessible, transparent, and community-driven, thereby accelerating the journey of visionary AI projects from concept to global impact."
         },
         {

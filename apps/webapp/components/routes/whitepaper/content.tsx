@@ -28,7 +28,7 @@ export function WhitepaperContent({ activeSection, onSectionChange }: Whitepaper
     switch (content.type) {
       case 'p':
         return (
-          <p className="text-center font-futura text-[15px] font-normal leading-[145%] text-gray-500 dark:text-gray-400 mb-[27px]">
+          <p className="paragraph mb-[27px]">
             {typeof content.text === 'string' ? (
               content.text
             ) : (
@@ -42,23 +42,23 @@ export function WhitepaperContent({ activeSection, onSectionChange }: Whitepaper
         )
       case 'h2':
         return (
-          <div className="max-w-[500px] mx-auto">
-            <h2 className="text-center text-[#FAFAFA] font-futura text-[26px] font-normal leading-[121%] mb-[37px]">
+          <div className="mx-auto text-center">
+            <h2 className="heading2 mb-[37px]">
               {typeof content.text === 'string' ? content.text : content.text?.map(part => part.text).join('')}
             </h2>
           </div>
         )
       case 'h3':
         return (
-          <div className="max-w-[500px] mx-auto">
-            <h3 className="text-center text-[#FAFAFA] font-futura text-[20px] font-normal leading-[121%] mb-[30px]">
+          <div className="mx-auto text-center">
+            <h3 className="heading3 mb-[30px]">
               {typeof content.text === 'string' ? content.text : content.text?.map(part => part.text).join('')}
             </h3>
           </div>
         )
       case 'list':
         return (
-          <ul className="list-disc list-inside text-gray-500 dark:text-gray-400 text-[15px]">
+          <ul className="list-disc list-inside text-infoForeground paragraph mb-6">
             {typeof content.text === 'string' ? content.text.split('\n').map((item, idx) => {
               const [title, content] = item.split(':')
               return (
@@ -71,7 +71,7 @@ export function WhitepaperContent({ activeSection, onSectionChange }: Whitepaper
         )
       case 'sub-list':
         return (
-          <ul className="list-disc list-inside text-gray-500 dark:text-gray-400 text-[15px]">
+          <ul className="list-disc list-inside text-infoForeground paragraph mb-4">
             {typeof content.text === 'string' ? content.text.split('\n').map((item, idx) => {
               return (
                 <li key={idx} className="pl-4">
@@ -85,7 +85,7 @@ export function WhitepaperContent({ activeSection, onSectionChange }: Whitepaper
         return (
           <div className="py-8">
             <div className="container mx-auto px-4">
-              <ul className="list-disc list-inside text-gray-500 dark:text-gray-400 space-y-4">
+              <ul className="list-disc list-inside text-infoForeground space-y-4">
                 <li>
                   <strong>General Support and Inquiries:</strong> Email: <a href="mailto:support@bitcash.org" className="text-blue-400">support@bitcash.org</a>
                 </li>
@@ -137,7 +137,7 @@ export function WhitepaperContent({ activeSection, onSectionChange }: Whitepaper
         <div>
           <h2 className='heading2 text-center'>
             <Balancer>{activeSectionContent.title}
-              <div className="w-full h-[2.37px] bg-[#ff51ed] my-4" />
+              <div className="w-auto h-[2.37px] bg-accent-400 my-4 mx-auto" />
             </Balancer>
           </h2>
 

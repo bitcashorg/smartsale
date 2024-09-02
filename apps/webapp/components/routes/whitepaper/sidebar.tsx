@@ -64,8 +64,7 @@ export function WhitepaperSidebar({ activeSection, setActiveSection }: Whitepape
         {WITHE_PAPER.sections.map((section: Section) => (
           <div
             key={section.title}
-            className={`block py-2 px-4 rounded cursor-pointer ${activeSection === section.title ? 'bg-gray-700 text-white' : 'hover:bg-gray-800'
-              }`}
+            className={`block py-2 cursor-pointer ${activeSection === section.title ? 'border-b-2 border-accent-400 inline-block text-white' : 'paragraph'}`}
             onClick={() => setActiveSection(section.title)}
           >
             {section.title}
