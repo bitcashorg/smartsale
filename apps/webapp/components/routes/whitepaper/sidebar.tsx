@@ -1,12 +1,12 @@
 import React, { useState, SVGProps, useEffect } from 'react'
-import { WITHE_PAPER } from '@/dictionaries/en/whitepaper'
+    import { WITHE_PAPER } from '@/dictionaries/en/whitepaper'
 
-export function WhitepaperSidebar({ activeSection, setActiveSection }: WhitepaperSidebarProps) {
+export function WhitepaperSidebar({ activeSection, onSectionChange }: WhitepaperSidebarProps) {
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false)
 
   function handleSectionClick(sectionTitle: string) {
-    setActiveSection(sectionTitle)
+    onSectionChange(sectionTitle)
     setIsModalOpen(false)
     setIsMobileNavOpen(false)
   }
@@ -65,7 +65,7 @@ export function WhitepaperSidebar({ activeSection, setActiveSection }: Whitepape
           <div
             key={section.title}
             className={`block py-2 cursor-pointer ${activeSection === section.title ? 'border-b-2 border-accent-400 inline-block text-white' : 'paragraph'}`}
-            onClick={() => setActiveSection(section.title)}
+            onClick={() => onSectionChange(section.title)}
           >
             {section.title}
           </div>
@@ -116,5 +116,5 @@ interface Section {
 
 interface WhitepaperSidebarProps {
   activeSection: string
-  setActiveSection: (section: string) => void
+  onSectionChange: (section: string) => void
 }

@@ -6,6 +6,7 @@ import { NavigationContainer } from './navigator'
 interface WhitepaperContentProps {
   activeSection: string
   onSectionChange: (section: string) => void
+  contentRef: React.RefObject<HTMLDivElement> | null
 }
 
 interface Content {
@@ -13,16 +14,7 @@ interface Content {
   text?: string | { text: string, bold?: boolean }[]
 }
 
-export function WhitepaperContent({ activeSection, onSectionChange }: WhitepaperContentProps) {
-  const contentRef = useRef<HTMLDivElement>(null)
-
-  useEffect(() => {
-    if (contentRef.current) {
-      const offset = 64 // 64px offset
-      const topPosition = contentRef.current.getBoundingClientRect().top + window.pageYOffset - offset
-      window.scrollTo({ top: topPosition, behavior: 'smooth' })
-    }
-  }, [activeSection])
+export const WhitepaperContent = ({ activeSection, onSectionChange, contentRef }: WhitepaperContentProps) => {
 
   function renderContent(content: Content) {
     switch (content.type) {
