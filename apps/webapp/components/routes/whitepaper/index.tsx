@@ -4,6 +4,7 @@ import { HeroWhitepaper } from './hero'
 import { WhitepaperSidebar } from './sidebar'
 import { WHITE_PAPER_HERO_CONTENT } from './static-content'
 import { WhitepaperContent } from './content'
+import { FAQ } from '../home/section/faq-section'
 
 const useScrollToSection = () => {
   const contentRef = useRef<HTMLDivElement>(null)

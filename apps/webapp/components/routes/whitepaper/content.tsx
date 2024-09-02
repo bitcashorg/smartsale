@@ -124,7 +124,7 @@ export const WhitepaperContent = ({ activeSection, onSectionChange, contentRef }
   }
 
   return (
-    <div className="p-8" ref={contentRef}>
+    <div className="p-4 md:p-8" ref={contentRef}>
       {activeSectionContent && (
         <div>
           <h2 className='heading2 text-center'>
