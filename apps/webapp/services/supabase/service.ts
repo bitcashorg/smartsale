@@ -1,4 +1,7 @@
+import type { Tables } from '@repo/supabase'
 import type { SupabaseClient } from '@supabase/supabase-js'
+
+// NOTE: This functions can be used on both server and client
 
 /**
  * Fetches presale data for a specific project from Supabase
@@ -13,7 +16,7 @@ export async function getPresaleData({
   const { data, error } = await supabase
     .from('presale')
     .select('*')
-    .eq('id', projectId)
+    .eq('project_id', projectId)
     .single()
 
   if (error) {
@@ -52,4 +55,49 @@ export async function getProjectData({
 interface ProjectDataParams {
   projectId: number
   supabase: SupabaseClient
+}
+
+/**
+ * Retrieves contributions for a specific presale from Supabase
+ * @param {number} presaleId - The ID of the presale to retrieve contributions for
+ * @param {SupabaseClient} supabase - The Supabase client instance
+ * @returns {Promise<PresaleContributionsResult>} An object containing contributions and the count of unique contributors
+ * @throws {Error} If an error occurs while fetching the contributions
+ */
+export async function getPresaleContributions({
+  presaleId,
+  supabase,
+}: PresaleContributionsParams): Promise<PresaleContributionsResult> {
+  const { data, error } = await supabase
+    .from('presale_deposit')
+    .select('*, transaction!presale_deposit_deposit_hash_fkey(*)')
+    .eq('presale_id', presaleId)
+    .order('created_at', { ascending: false })
+    .returns<PresaleContribution[]>()
+
+  if (error) throw error
+
+  // set of unique contributors
+  const uniqueContributors = new Set(
+    data?.map((deposit) => deposit.address).filter(Boolean),
+  )
+
+  return {
+    contributions: data,
+    contributors: uniqueContributors.size,
+  }
+}
+
+interface PresaleContributionsParams {
+  presaleId: number
+  supabase: SupabaseClient
+}
+
+export type PresaleContribution = Tables<'presale_deposit'> & {
+  transaction: Tables<'transaction'>
+}
+
+interface PresaleContributionsResult {
+  contributions: PresaleContribution[]
+  contributors: number
 }

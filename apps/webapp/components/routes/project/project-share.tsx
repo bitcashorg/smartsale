@@ -3,6 +3,8 @@ import { IconDiscord, IconTelegram, IconTwitterX } from '@/components/ui/icons'
 import type { Project } from '@/lib/projects'
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
+
+import { Fragment } from 'react'
 import { CopyShortlinkIcon } from './copy-shorlink'
 
 export function ProjectShare({ project }: { project: Project }) {
@@ -10,7 +12,7 @@ export function ProjectShare({ project }: { project: Project }) {
     <div className="flex flex-col w-full gap-3 mt-5 mb-5">
       <div className="flex items-center justify-center gap-4 md:justify md:gap-1.5 lg:gap-2">
         <Link
-          key={'share-twitter'}
+          key={`share-twitter-${project.id}`}
           href={`https://twitter.com/${project.twitterUsername}`}
           className={cn(
             buttonVariants({ variant: 'outline', size: 'icon' }),
@@ -22,7 +24,7 @@ export function ProjectShare({ project }: { project: Project }) {
           <IconTwitterX className="size-6 fill-accent-500" />
         </Link>
         <Link
-          key={'share-discord'}
+          key={`share-discord-${project.id}`}
           href={`https://discord.gg/${project.discordServer}`}
           className={cn(
             buttonVariants({ variant: 'outline', size: 'icon' }),
@@ -34,7 +36,7 @@ export function ProjectShare({ project }: { project: Project }) {
           <IconDiscord className="size-7 fill-accent-500" />
         </Link>
         <Link
-          key={'share-telegram'}
+          key={`share-telegram-${project.id}`}
           href={`https://t.me/${project.telegramGroup}`}
           className={cn(
             buttonVariants({ variant: 'outline', size: 'icon' }),
@@ -48,7 +50,9 @@ export function ProjectShare({ project }: { project: Project }) {
           <IconTelegram className="size-7 fill-accent-500" />
         </Link>
 
-        <CopyShortlinkIcon key={'share-shortlink'} />
+        <Fragment key={`share-shortlink-${project.id}`}>
+          <CopyShortlinkIcon />
+        </Fragment>
       </div>
     </div>
   )

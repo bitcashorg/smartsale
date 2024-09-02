@@ -184,7 +184,7 @@ export function AuctionBids({ project }: AuctionBidsProps) {
           }
           onClick={() => handleSubmit()}
           type="submit"
-          variant="secondary"
+          variant="accent"
           size="lg"
         >
           Submit Bids

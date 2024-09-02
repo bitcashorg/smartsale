@@ -15,47 +15,21 @@ import {
   TableHeader,
   TableRow,
 } from '@/components/ui/table'
+import { appConfig } from '@/lib/config'
 import { useSupabaseClient } from '@/services/supabase'
-import type { Tables } from '@repo/supabase'
+import type { PresaleContribution } from '@/services/supabase/service'
+import { TestnetBLPL } from '@repo/contracts'
+import { formatAddress } from '@repo/utils'
 import { useEffect, useState } from 'react'
 import { useAccount } from 'wagmi'
 
 export function PresaleTransactionsCard() {
   const { address } = useAccount()
   const supabase = useSupabaseClient()
-  const [transactions, setTransactions] = useState<Tables<'transfer'>[]>([])
-  const [isLoading, setIsLoading] = useState(true)
+  const [contributions, setTransactions] = useState<PresaleContribution[]>([])
   const [error, setError] = useState<Error | null>(null)
 
   useEffect(() => {
-    if (!address) {
-      setTransactions([])
-      setIsLoading(false)
-      return
-    }
-
-    setIsLoading(true)
-    setError(null)
-
-    const fetchInitialTransactions = async () => {
-      try {
-        const { data, error } = await supabase
-          .from('transfer')
-          .select('*')
-          .eq('from', address)
-          .order('created_at', { ascending: false })
-
-        if (error) throw error
-        setTransactions(data as Tables<'transfer'>[])
-      } catch (err) {
-        setError(err instanceof Error ? err : new Error('An error occurred'))
-      } finally {
-        setIsLoading(false)
-      }
-    }
-
-    fetchInitialTransactions()
-
     const subscription = supabase
       .channel('presale_transfer_changes')
       .on(
@@ -63,34 +37,32 @@ export function PresaleTransactionsCard() {
         {
           event: '*',
           schema: 'public',
-          table: 'transfer',
+          table: 'presale_deposit',
           filter: `from=eq.${address}`,
         },
         (payload) => {
           console.log('subscription payload')
           if (payload.eventType === 'INSERT') {
-            setTransactions((prev) => [
-              payload.new as Tables<'transfer'>,
-              ...prev,
-            ])
+            console.log('insert', payload)
+            // setTransactions((prev) => [
+            //   payload.new as Tables<'transfer'>,
+            //   ...prev,
+            // ])
           } else if (payload.eventType === 'UPDATE') {
-            setTransactions(
-              (prev) =>
-                prev.map((t) =>
-                  t.trx_hash === payload.new.trx_hash
-                    ? (payload.new as Tables<'transfer'>)
-                    : t,
-                ),
-              // .sort(
-              //   (a, b) =>
-              //     new Date(b.created_at).getTime() -
-              //     new Date(a.created_at).getTime(),
-              // ),
-            )
-          } else if (payload.eventType === 'DELETE') {
-            setTransactions((prev) =>
-              prev.filter((t) => t.trx_hash !== payload.old.trx_hash),
-            )
+            console.log('update', payload)
+            // setTransactions(
+            //   (prev) =>
+            //     prev.map((t) =>
+            //       t.hash === payload.new.hash
+            //         ? (payload.new as Tables<'transfer'>)
+            //         : t,
+            //     ),
+            //   // .sort(
+            //   //   (a, b) =>
+            //   //     new Date(b.created_at).getTime() -
+            //   //     new Date(a.created_at).getTime(),
+            //   // ),
+            // )
           }
         },
       )
@@ -108,7 +80,7 @@ export function PresaleTransactionsCard() {
           <CardTitle>Presale Contributions</CardTitle>
           <CardDescription>Recent presale transactions.</CardDescription>
         </div>
-        <Button asChild size="sm" className="gap-1 ml-auto"></Button>
+        {/* <Button asChild size="sm" className="gap-1 ml-auto"></Button> */}
       </CardHeader>
       <CardContent>
         <Table>
@@ -123,21 +95,18 @@ export function PresaleTransactionsCard() {
             </TableRow>
           </TableHeader>
           <TableBody>
-            {isLoading ? (
-              <TableRow>
-                <TableCell colSpan={5} className="text-center">
-                  Loading...
-                </TableCell>
-              </TableRow>
-            ) : error ? (
+            {error ? (
               <TableRow>
                 <TableCell colSpan={5} className="text-center text-red-500">
                   Error: {error.message}
                 </TableCell>
               </TableRow>
-            ) : transactions.length > 0 ? (
-              transactions.map((transaction, index) => (
-                <TransactionRow key={index} transaction={transaction} />
+            ) : contributions.length > 0 ? (
+              contributions.map((contribution) => (
+                <TransactionRow
+                  key={contribution.id}
+                  contribution={contribution}
+                />
               ))
             ) : (
               <TableRow>
@@ -153,61 +122,61 @@ export function PresaleTransactionsCard() {
   )
 }
 
-function TransactionRow({ transaction }: { transaction: Tables<'transfer'> }) {
-  return <></>
-  // const chain = transaction.chain_id
-  //   ? appConfig.chains.get(transaction.chain_id)
-  //   : null
-  // return (
-  //   <TableRow>
-  //     <TableCell>
-  //       <div className="font-medium">
-  //         {formatAddress(transaction.from ?? '')}
-  //       </div>
-  //     </TableCell>
+function TransactionRow({
+  contribution,
+}: { contribution: PresaleContribution }) {
+  const chain = contribution.transaction.chain_id
+    ? appConfig.chains.get(contribution.transaction.chain_id)
+    : null
 
-  //     <TableCell>
-  //       {transaction.amount !== null
-  //         ? (transaction.amount / 1000000).toFixed(6)
-  //         : 'N/A'}
-  //     </TableCell>
+  return (
+    <TableRow>
+      <TableCell>
+        <div className="font-medium">{formatAddress(contribution.address)}</div>
+      </TableCell>
 
-  //     <TableCell>
-  //       {chain?.blockExplorers?.default ? (
-  //         <a
-  //           href={`${chain.blockExplorers.default.url}/tx/${transaction.trx_hash}`}
-  //           target="_blank"
-  //           rel="noopener noreferrer"
-  //           className="text-blue-500 hover:underline"
-  //         >
-  //           {formatAddress(transaction.trx_hash)}
-  //         </a>
-  //       ) : (
-  //         formatAddress(transaction.trx_hash)
-  //       )}
-  //     </TableCell>
+      <TableCell>
+        {contribution.amount !== null
+          ? (contribution.amount / 1000000).toFixed(6)
+          : 'N/A'}
+      </TableCell>
 
-  //     <TableCell>
-  //       {TestnetBLPL.chain?.blockExplorers?.default &&
-  //       transaction.bl_presale_trx ? (
-  //         <a
-  //           href={`${TestnetBLPL.chain.blockExplorers.default.url}/tx/${transaction.bl_presale_trx}`}
-  //           target="_blank"
-  //           rel="noopener noreferrer"
-  //           className="text-blue-500 hover:underline"
-  //         >
-  //           {formatAddress(transaction.bl_presale_trx)}
-  //         </a>
-  //       ) : transaction.bl_presale_trx ? (
-  //         formatAddress(transaction.bl_presale_trx)
-  //       ) : (
-  //         'pending'
-  //       )}
-  //     </TableCell>
-  //     <TableCell>
-  //       {new Date(transaction.created_at).toLocaleDateString()}
-  //     </TableCell>
-  //     <TableCell>{chain?.name}</TableCell>
-  //   </TableRow>
-  // )
+      <TableCell>
+        {chain?.blockExplorers?.default ? (
+          <a
+            href={`${chain.blockExplorers.default.url}/tx/${contribution.transaction.hash}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-500 hover:underline"
+          >
+            {formatAddress(contribution.transaction.hash)}
+          </a>
+        ) : (
+          formatAddress(contribution.transaction.hash)
+        )}
+      </TableCell>
+
+      <TableCell>
+        {TestnetBLPL.chain?.blockExplorers?.default &&
+        contribution.transaction.hash ? (
+          <a
+            href={`${TestnetBLPL.chain.blockExplorers.default.url}/tx/${contribution.transaction.hash}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-500 hover:underline"
+          >
+            {formatAddress(contribution.transaction.hash)}
+          </a>
+        ) : contribution.transaction.hash ? (
+          formatAddress(contribution.transaction.hash)
+        ) : (
+          'pending'
+        )}
+      </TableCell>
+      <TableCell>
+        {new Date(contribution.transaction.created_at).toLocaleDateString()}
+      </TableCell>
+      <TableCell>{chain?.name}</TableCell>
+    </TableRow>
+  )
 }

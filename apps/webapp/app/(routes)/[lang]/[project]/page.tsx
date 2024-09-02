@@ -5,7 +5,6 @@ import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { getDictionary } from '@/dictionaries'
 import { locales } from '@/dictionaries/locales'
-import { appConfig } from '@/lib/config'
 import { getProjectBySlug, getProjects } from '@/lib/projects'
 import { cn } from '@/lib/utils'
 import { createSupabaseServerClient } from '@/services/supabase'
@@ -27,20 +26,25 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
   const presaleData = await getPresaleData({ projectId: project.id, supabase })
   const presaleDataStartDate = new Date(presaleData.start_timestamptz)
   const presaleDataEndDate = new Date(presaleData.end_timestamptz)
-  
+  const isPresaleClosed = Boolean(presaleData?.close_timestamptz)
+
   return (
     <>
       <div className="flex flex-col">
         <ProjectHeader project={project}>
           <div className="grid grid-cols-1 gap-8 mb-10 lg:grid-cols-2">
             <Card className="flex flex-col w-full pb-5 border-card/30 bg-card/60 backdrop-blur-lg">
-              <Countdown targetDate={presaleDataStartDate} heading="Pre-Sale Countdown" />
+              <Countdown
+                targetDate={presaleDataStartDate}
+                // heading="Presale Countdown"
+                heading="Presale Ends In:"
+              />
               <div className="flex items-center justify-center gap-3 align-center">
-                <DynamicAddressForm projectId={project.id} />
+                {/* <DynamicAddressForm projectId={project.id} /> */}
 
-                {appConfig.features.presale ? (
+                {!isPresaleClosed ? (
                   <Link href={`/${project.slug}/presale`} className="flex">
-                    <Button>Active Presale</Button>
+                    <Button variant="accent">Join Presale Now</Button>
                   </Link>
                 ) : null}
               </div>
@@ -140,7 +144,7 @@ export async function generateStaticParams(): Promise<ProjectPageParams[]> {
 
 const DynamicAddressForm = dynamic(
   () =>
-    import('../../../../components/routes/project/register-address-form').then(
+    import('@/components/routes/project/register-address-form').then(
       (mod) => mod.RegisterAddressForm,
     ),
   {

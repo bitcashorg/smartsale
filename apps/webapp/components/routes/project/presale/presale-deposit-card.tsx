@@ -7,20 +7,19 @@ import { Button, buttonVariants } from '@/components/ui/button'
 import { CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
 import {
-    Select,
-    SelectContent,
-    SelectItem,
-    SelectTrigger,
-    SelectValue,
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
 } from '@/components/ui/select'
 import { useSession } from '@/hooks/use-session'
 import { useSigningRequest } from '@/hooks/use-signing-request'
 import {
-    genBitusdDepositSigningRequest,
-    genUsdtDepositSigningRequest,
+  genBitusdDepositSigningRequest,
+  genUsdtDepositSigningRequest,
 } from '@/lib/eos'
 import type { ProjectWithAuction } from '@/lib/projects'
-import { cn } from '@/lib/utils'
 import { tokens } from '@repo/tokens'
 import { useMemo, useState } from 'react'
 import toast from 'react-hot-toast'
@@ -55,7 +54,7 @@ function PresaleDeposit() {
   const [selectedToken, setSelectedToken] = useState('USDT')
   const [selectedChain, setSelectedChain] = useState<string>('')
   const { requestSignature } = useSigningRequest()
-  const { loginOrConnect } = useSession()
+  const { loginOrConnect, session } = useSession()
   const chainId = useChainId()
 
   const availableChains = useMemo(() => {
@@ -65,7 +64,7 @@ function PresaleDeposit() {
   }, [selectedToken])
 
   const deposit = async () => {
-    if (!address) return loginOrConnect()
+    if (!session?.account || !address) return loginOrConnect()
     if (!amount) return toast.error('Please enter a deposit amount')
     if (!selectedChain) return toast.error('Please select a blockchain network')
     // Find the token data for the selected token and chain
@@ -101,13 +100,16 @@ function PresaleDeposit() {
             },
             onSuccess: (trxHash) => {
               console.log('Transaction hash:', trxHash)
-              toast.success(`Deposit successful`)
+              toast.success('Deposit successful')
               saveDeposit({
                 amount: Number(parseUnits(amount, evmToken.decimals)),
                 created_at: new Date().toISOString(),
                 deposit_hash: trxHash,
                 issuance_hash: null,
                 presale_id: 1,
+                address,
+                project_id: 1,
+                account: session?.account,
               })
             },
           },
@@ -132,7 +134,7 @@ function PresaleDeposit() {
         </CardDescription>
       </CardHeader>
       <div className="flex flex-col mb-5">
-        <label htmlFor="deposit" className="text-sm font-bold"></label>
+        <label htmlFor="deposit" className="text-sm font-bold" />
         <div className="flex items-center justify-between gap-2 mb-5">
           <Input
             type="number"
@@ -145,7 +147,7 @@ function PresaleDeposit() {
 
           <Select onValueChange={setSelectedToken} defaultValue={'USDT'}>
             <SelectTrigger id="token-select">
-              <SelectValue placeholder={`USDT`} />
+              <SelectValue placeholder={'USDT'} />
             </SelectTrigger>
             <SelectContent position="popper">
               {stables.map((token) => (
@@ -172,16 +174,7 @@ function PresaleDeposit() {
       </div>
 
       <div className="flex flex-col space-y-2">
-        <Button
-          className={cn(
-            buttonVariants({
-              variant: 'outline',
-              radius: 'full',
-            }),
-            'h-auto w-full whitespace-normal border border-solid border-accent-500 bg-background px-10 py-2',
-          )}
-          onClick={deposit}
-        >
+        <Button variant="accent" onClick={deposit}>
           Contribute Now
         </Button>
       </div>

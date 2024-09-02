@@ -7,7 +7,11 @@ import { Card, CardContent } from '@/components/ui/card'
 import { getDictionary } from '@/dictionaries'
 import { type ProjectWithAuction, getProjectBySlug } from '@/lib/projects'
 import { createSupabaseServerClient } from '@/services/supabase/server'
-import { getPresaleData, getProjectData } from '@/services/supabase/service'
+import {
+  getPresaleContributions,
+  getPresaleData,
+  getProjectData,
+} from '@/services/supabase/service'
 import type { ProjectPageProps } from '@/types/routing.type'
 import { redirect } from 'next/navigation'
 
@@ -21,8 +25,13 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
   if (!project) redirect('/')
 
   const supabase = await createSupabaseServerClient()
+  // TODO: optimize this in a single query
   const presaleData = await getPresaleData({ projectId: project.id, supabase })
-  const projectData = await getProjectData({ projectId: project.id, supabase })
+  // const projectData = await getProjectData({ projectId: project.id, supabase })
+  const presaleContributions = await getPresaleContributions({
+    presaleId: presaleData.id,
+    supabase,
+  })
 
   return (
     <div className="flex min-h-[calc(83vh-4rem)] flex-col">
@@ -31,10 +40,13 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           <Card className="border-card/30 bg-card/60 backdrop-blur-lg">
             <Countdown
               targetDate={new Date(presaleData.end_timestamptz)}
-              heading="Pre-Sale End Countdown"
+              heading="Presale Ends In:"
             />
             <CardContent>
-              <ProjectPresaleData presaleData={presaleData} />
+              <ProjectPresaleData
+                presaleData={presaleData}
+                numberOfContributors={presaleContributions.contributors}
+              />
             </CardContent>
           </Card>
 
