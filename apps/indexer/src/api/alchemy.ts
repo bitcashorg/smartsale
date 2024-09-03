@@ -1,10 +1,12 @@
-import crypto from 'crypto'
+import crypto from 'node:crypto'
 
 import type {
   AlchemyActivityEvent,
   AlchemyNetwork,
   AlchemyWebhookEvent,
 } from '@repo/alchemy'
+
+import { chainIdAlchemyNetwork } from '@repo/alchemy'
 
 import { addressActivityTask } from '@repo/jobs'
 import { evmTokens } from '@repo/tokens'
@@ -20,20 +22,9 @@ import {
 } from '~/lib/supabase-client'
 // import {isAddressRegisteredForPresale} from '~/src/lib/supabase-client';
 
-// Mapping of chain IDs to Alchemy SDK Network types
-const chainIdToNetwork: Record<number, AlchemyNetwork> = {
-  1: 'ETH_MAINNET',
-  137: 'MATIC_MAINNET',
-  42161: 'ARB_MAINNET',
-  10: 'OPT_MAINNET',
-  8453: 'BASE_MAINNET',
-  43114: 'MATIC_MAINNET',
-  56: 'BNB_MAINNET',
-}
-
 // Create an array of supported networks based on production chains
 const networks: AlchemyNetwork[] = prodChains.map((chain) => {
-  const network = chainIdToNetwork[chain.id]
+  const network = chainIdAlchemyNetwork[chain.id]
   if (!network) throw new Error(`Unsupported chain ID: ${chain.id}`)
   return network
 })

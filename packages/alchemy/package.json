@@ -3,7 +3,7 @@
   "module": "src/index.ts",
   "types": "src/index.d.ts",
   "scripts": {
-    "create": "bun src/create.ts"
+    "create-activities": "bun webhooks/activity.ts"
   },
   "devDependencies": {
     "@types/bun": "latest"
@@ -12,6 +12,7 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
+    "app-env": "workspace:*",
     "@repo/tokens": "workspace:*",
     "alchemy-sdk": "^3.4.1",
     "viem": "^2.20.0",
