@@ -5,7 +5,7 @@ import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover
 import { useSession } from '@/hooks/use-session'
 import { cn } from '@/lib/utils'
 import { useAccountModal } from '@rainbow-me/rainbowkit'
-import { formatAddress } from '@repo/utils'
+import { formatAddressShort } from '@repo/utils'
 import { User, Wallet } from 'lucide-react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
@@ -24,19 +24,6 @@ export function SessionButton() {
 
   return (
     <div className="flex justify-end gap-1.5 lg:gap-5">
-      {hasSession && (
-        <Button
-          variant="ghost"
-          radius="full"
-          className={cn('px-3 m-0 lg:px-4')}
-          onClick={openConnectModal ? openConnectModal : openAccountModal}
-          suppressHydrationWarning={true}
-        >
-          <Wallet />
-          &nbsp; {account?.address ? formatAddress(account.address) : 'Connect'}
-        </Button>
-      )}
-
       {!hasSession ? (
         <Button
           variant="secondary"
@@ -63,6 +50,18 @@ export function SessionButton() {
             className="w-44 border-accent-500 bg-background text-center"
           >
             <ul className="flex flex-col gap-5 py-2">
+              {hasSession && (
+                // biome-ignore lint/a11y/useKeyWithClickEvents: <explanation>
+                <li
+                  onClick={openConnectModal ? openConnectModal : openAccountModal}
+                  className="cursor-pointer text-center flex justify-center"
+                >
+                  <Wallet />
+                  &nbsp;{' '}
+                  {account?.address ? formatAddressShort(account.address) : 'Connect'}
+                </li>
+              )}
+
               <li>
                 <Link href="/wallet" className="cursor-pointer">
                   Wallet

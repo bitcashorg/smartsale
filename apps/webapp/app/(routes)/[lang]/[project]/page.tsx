@@ -26,7 +26,10 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
   const presaleData = await getPresaleData({ projectId: project.id, supabase })
   const presaleDataStartDate = new Date(presaleData.start_timestamptz)
   const presaleDataEndDate = new Date(presaleData.end_timestamptz)
-  const isPresaleClosed = Boolean(presaleData?.close_timestamptz)
+  const isPresaleActive =
+    new Date() > presaleDataStartDate && new Date() < presaleDataEndDate
+  // TODO: handle this dynamically
+  const isAuctionActive = false
 
   return (
     <>
@@ -40,13 +43,17 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                 heading="Presale Ends In:"
               />
               <div className="flex items-center justify-center gap-3 align-center">
-                {/* <DynamicAddressForm projectId={project.id} /> */}
-
-                {!isPresaleClosed ? (
-                  <Link href={`/${project.slug}/presale`} className="flex">
+                {isPresaleActive ? (
+                  <Link href={`/${project.slug}/presale`}>
                     <Button variant="accent">Join Presale Now</Button>
                   </Link>
-                ) : null}
+                ) : isAuctionActive ? (
+                  <Link href={`/${project.slug}/auction`}>
+                    <Button variant="accent">Join Auction Now</Button>
+                  </Link>
+                ) : (
+                  <DynamicAddressForm projectId={project.id} />
+                )}
               </div>
             </Card>
 
@@ -55,7 +62,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           </div>
         </ProjectHeader>
 
-        <div className="pt-20 narrow-container">
+        {/* <div className="pt-20 narrow-container">
           {projectContentObjectKeys.map((key, index) => {
             const pcKey = key as keyof typeof projectContent
             const isLastItem = index === projectContentObjectKeys.length - 1
@@ -66,9 +73,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                 className={cn(
                   !isLastItem &&
                     'backdrop-x my-10 overflow-hidden rounded-3xl bg-primary/70 pb-10',
-                  index % 2 !== 0
-                    ? 'backdrop-x rounded-3xl bg-primary/70 pb-10'
-                    : '',
+                  index % 2 !== 0 ? 'backdrop-x rounded-3xl bg-primary/70 pb-10' : '',
                 )}
               >
                 <div className="relative mb-14 h-[400px] w-full">
@@ -84,42 +89,40 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                 </h2>
 
                 <div className="flex flex-col w-full gap-6">
-                  {(projectContent[pcKey].content as string[][]).map(
-                    (content, index) => {
-                      if (content.every((c, i) => c.includes(':'))) {
-                        return (
-                          <div
-                            key={`${index}__${(projectContent[pcKey].title as string).replace(/\s/g, '-')}`}
-                            className="grid gap-16 px-6 list-disc list-outside lg:grid-flow-cols-4 sm:grid-cols-2 md:grid-cols-3"
-                          >
-                            {content.slice(0, 6).map((item) => {
-                              const text = item.split(': ')
-                              return (
-                                <div key={`${item}__list-item`}>
-                                  <h3 className="mb-2 heading3">{text[0]}</h3>
-                                  <p className="paragraph">{text[1]}</p>
-                                </div>
-                              )
-                            })}
-                          </div>
-                        )
-                      }
+                  {(projectContent[pcKey].content as string[][]).map((content, index) => {
+                    if (content.every((c, i) => c.includes(':'))) {
+                      return (
+                        <div
+                          key={`${index}__${(projectContent[pcKey].title as string).replace(/\s/g, '-')}`}
+                          className="grid gap-16 px-6 list-disc list-outside lg:grid-flow-cols-4 sm:grid-cols-2 md:grid-cols-3"
+                        >
+                          {content.slice(0, 6).map((item) => {
+                            const text = item.split(': ')
+                            return (
+                              <div key={`${item}__list-item`}>
+                                <h3 className="mb-2 heading3">{text[0]}</h3>
+                                <p className="paragraph">{text[1]}</p>
+                              </div>
+                            )
+                          })}
+                        </div>
+                      )
+                    }
 
-                      // return content.map((item, index) => (
-                      //   <p
-                      //     key={`${index}__${(projectContent[pcKey].title as string).replace(/\s/g, '-')}`}
-                      //     className="paragraph"
-                      //   >
-                      //     {item}
-                      //   </p>
-                      // ))
-                    },
-                  )}
+                    // return content.map((item, index) => (
+                    //   <p
+                    //     key={`${index}__${(projectContent[pcKey].title as string).replace(/\s/g, '-')}`}
+                    //     className="paragraph"
+                    //   >
+                    //     {item}
+                    //   </p>
+                    // ))
+                  })}
                 </div>
               </section>
             )
           })}
-        </div>
+        </div> */}
       </div>
     </>
   )
@@ -131,9 +134,7 @@ export async function generateStaticParams(): Promise<ProjectPageParams[]> {
       locales.map(async (lang): Promise<ProjectPageParams[]> => {
         const dict = await getDictionary(lang)
         return getProjects(dict)
-          .map((project) =>
-            project.slug ? { lang, project: project.slug } : null,
-          )
+          .map((project) => (project.slug ? { lang, project: project.slug } : null))
           .filter((param): param is ProjectPageParams => param !== null)
       }),
     )
@@ -149,6 +150,6 @@ const DynamicAddressForm = dynamic(
     ),
   {
     ssr: false,
-    loading: () => <Button className="flex">Register</Button>,
+    loading: () => <Button variant="accent">Register</Button>,
   },
 )

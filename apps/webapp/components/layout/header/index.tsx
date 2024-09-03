@@ -3,11 +3,11 @@ import Link from 'next/link'
 import { IconBitlauncher } from '../../ui/icons'
 import { NavLinks } from './nav-links'
 
+import { SessionButtonLoader } from '@/components/dialogs/session/session-button'
 import { appConfig } from '@/lib/config'
 import type { LangProp } from '@/types/routing.type'
 import dynamic from 'next/dynamic'
 import { Suspense } from 'react'
-import { SessionButtonLoader } from '../../dialogs/session/session-button'
 import { LangSelector } from './lang-selector'
 import { MobileNavLoader } from './mobile-nav'
 import { Navigation } from './new-nav'
@@ -50,17 +50,14 @@ export function Header({ lang, dict }: HeaderProps) {
   )
 }
 
-const DynamicMobileNav = dynamic(
-  () => import('./mobile-nav').then((c) => c.MobileNav),
-  {
-    loading: MobileNavLoader,
-    ssr: false,
-  },
-)
+const DynamicMobileNav = dynamic(() => import('./mobile-nav').then((c) => c.MobileNav), {
+  loading: MobileNavLoader,
+  ssr: false,
+})
 
 const DynamicSessionButton = dynamic(
   () =>
-    import('../../dialogs/session/session-button').then((c) => c.SessionButton),
+    import('@/components/dialogs/session/session-button').then((c) => c.SessionButton),
   {
     loading: SessionButtonLoader,
     ssr: false,
