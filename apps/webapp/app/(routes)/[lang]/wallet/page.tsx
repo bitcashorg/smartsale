@@ -10,7 +10,6 @@ import {
   CardTitle,
 } from '@/components/ui/card'
 
-import ReferralDashboard from '@/components/_wip/referral-dashboard'
 import { PresaleTransactionsCard } from '@/components/routes/project/presale/presale-transactions-card'
 import { BalancesTable } from '@/components/routes/wallet/balances-table'
 
@@ -27,9 +26,7 @@ export default function WalletPage() {
         </div>
       </div>
 
-      {/* <ReferralDashboard />
-
-      <PresaleTransactionsCard presaleData={presaleData} /> */}
+      {/* <PresaleTransactionsCard presaleData={presaleData} /> */}
 
       {/* <main className="grid items-start flex-1 gap-4 md:gap-8 lg:grid-cols-3 xl:grid-cols-3">
         <div className="grid items-start gap-4 auto-rows-max md:gap-8 lg:col-span-2">

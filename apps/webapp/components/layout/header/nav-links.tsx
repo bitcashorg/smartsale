@@ -38,10 +38,7 @@ export function NavLinks({
       href: null,
       text: address ? formatAddress(address) : dict.nav.connect,
       mobile: true,
-      action: () =>
-        bitcashAccount
-          ? openConnectModal && openConnectModal()
-          : openAccountModal && openAccountModal(),
+      action: () => (bitcashAccount ? openConnectModal?.() : openAccountModal?.()),
       disabled: !bitcashAccount,
     },
     {
@@ -72,7 +69,7 @@ export function NavLinks({
       id: 'wallet',
       href: '/wallet',
       text: dict.nav.wallet,
-      mobile: false,
+      mobile: true,
       action: null,
       disabled: !appConfig.features.enableWalletAccess,
     },
