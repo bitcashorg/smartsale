@@ -27,9 +27,9 @@ export default function WalletPage() {
         </div>
       </div>
 
-      <ReferralDashboard />
+      {/* <ReferralDashboard />
 
-      <PresaleTransactionsCard />
+      <PresaleTransactionsCard presaleData={presaleData} /> */}
 
       {/* <main className="grid items-start flex-1 gap-4 md:gap-8 lg:grid-cols-3 xl:grid-cols-3">
         <div className="grid items-start gap-4 auto-rows-max md:gap-8 lg:col-span-2">
@@ -44,8 +44,7 @@ export default function WalletPage() {
 
 export const metadata: Metadata = {
   title: 'Wallet | Bitlauncher',
-  description:
-    'Be part of the intelligent future and join the Ai/Web3 revolution now!',
+  description: 'Be part of the intelligent future and join the Ai/Web3 revolution now!',
 }
 
 function BalancesCard() {
@@ -54,8 +53,8 @@ function BalancesCard() {
       <CardHeader>
         <CardTitle>Wallet Balances</CardTitle>
         <CardDescription>
-          Your balances on the Bitcash | Bitlauncher ecosystem. Connect your
-          Bitcash and EVM wallets.
+          Your balances on the Bitcash | Bitlauncher ecosystem. Connect your Bitcash and
+          EVM wallets.
         </CardDescription>
       </CardHeader>
       <CardContent>

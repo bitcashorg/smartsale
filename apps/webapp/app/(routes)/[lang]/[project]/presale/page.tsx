@@ -14,13 +14,11 @@ import {
 } from '@/services/supabase/service'
 import type { ProjectPageProps } from '@/types/routing.type'
 import { redirect } from 'next/navigation'
+import { getAddress } from 'viem'
 
 export default async function ProjectPage({ params }: ProjectPageProps) {
   const dict = await getDictionary(params.lang)
-  const project = (await getProjectBySlug(
-    params.project,
-    dict,
-  )) as ProjectWithAuction
+  const project = (await getProjectBySlug(params.project, dict)) as ProjectWithAuction
 
   if (!project) redirect('/')
 
@@ -50,10 +48,10 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
             </CardContent>
           </Card>
 
-          <PresaleDepositCard project={project} />
+          <PresaleDepositCard project={project} presaleAddress={getAddress(presaleData.address)} />
         </div>
 
-        <PresaleTransactionsCard />
+        <PresaleTransactionsCard presaleData={presaleData} />
       </ProjectHeader>
     </div>
   )

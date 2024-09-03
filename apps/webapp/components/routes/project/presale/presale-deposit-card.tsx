@@ -1,6 +1,6 @@
 'use client'
 
-import { saveDeposit } from '@/app/actions/save-deposit'
+import { savePresaleDepositIntent } from '@/app/actions/save-deposit'
 import { ProjectGridCard } from '@/components/routes/project/project-grid-card'
 import { ProjectInfo } from '@/components/routes/project/project-info'
 import { Button, buttonVariants } from '@/components/ui/button'
@@ -15,21 +15,20 @@ import {
 } from '@/components/ui/select'
 import { useSession } from '@/hooks/use-session'
 import { useSigningRequest } from '@/hooks/use-signing-request'
-import {
-  genBitusdDepositSigningRequest,
-  genUsdtDepositSigningRequest,
-} from '@/lib/eos'
+import { genBitusdDepositSigningRequest, genUsdtDepositSigningRequest } from '@/lib/eos'
 import type { ProjectWithAuction } from '@/lib/projects'
 import { tokens } from '@repo/tokens'
 import { useMemo, useState } from 'react'
 import toast from 'react-hot-toast'
-import { erc20Abi, getAddress, parseUnits } from 'viem'
+import { type Address, erc20Abi, getAddress, parseUnits } from 'viem'
 import { useAccount, useChainId, useSwitchChain, useWriteContract } from 'wagmi'
 
 export function PresaleDepositCard({
   project,
+  presaleAddress,
 }: {
   project: ProjectWithAuction
+  presaleAddress: Address
 }) {
   return (
     <ProjectGridCard>
@@ -37,16 +36,14 @@ export function PresaleDepositCard({
         <ProjectInfo project={project} presale={true} />
       </div>
 
-      <PresaleDeposit />
+      <PresaleDeposit presaleAddress={presaleAddress} />
     </ProjectGridCard>
   )
 }
 
 const stables = ['USDT', 'USDC', 'BITUSD']
 
-const presaleAddress = '0x2C9DAAb3F463d6c6D248aCbeaAEe98687936374a'
-
-function PresaleDeposit() {
+function PresaleDeposit({ presaleAddress }: { presaleAddress: Address }) {
   const { address } = useAccount()
   const { writeContract } = useWriteContract()
   const [amount, setAmount] = useState<string>('42')
@@ -58,9 +55,7 @@ function PresaleDeposit() {
   const chainId = useChainId()
 
   const availableChains = useMemo(() => {
-    return tokens
-      .filter((token) => token.symbol === selectedToken)
-      .map((token) => token.chainName)
+    return tokens.filter((token) => token.symbol === selectedToken).map((token) => token.chainName)
   }, [selectedToken])
 
   const deposit = async () => {
@@ -69,8 +64,7 @@ function PresaleDeposit() {
     if (!selectedChain) return toast.error('Please select a blockchain network')
     // Find the token data for the selected token and chain
     const tokenData = tokens.find(
-      (token) =>
-        token.symbol === selectedToken && token.chainName === selectedChain,
+      (token) => token.symbol === selectedToken && token.chainName === selectedChain,
     )
     // Show an error if the token data is not found
     if (!tokenData) return toast.error('Token data not found')
@@ -85,10 +79,7 @@ function PresaleDeposit() {
             abi: erc20Abi,
             address: getAddress(evmToken.address),
             functionName: 'transfer',
-            args: [
-              presaleAddress,
-              parseUnits(amount.toString(), evmToken.decimals),
-            ],
+            args: [presaleAddress, parseUnits(amount.toString(), evmToken.decimals)],
             chainId: evmToken.chainId,
           },
           {
@@ -101,7 +92,7 @@ function PresaleDeposit() {
             onSuccess: (trxHash) => {
               console.log('Transaction hash:', trxHash)
               toast.success('Deposit successful')
-              saveDeposit({
+              savePresaleDepositIntent({
                 amount: Number(parseUnits(amount, evmToken.decimals)),
                 created_at: new Date().toISOString(),
                 deposit_hash: trxHash,
@@ -129,9 +120,7 @@ function PresaleDeposit() {
     <div>
       <CardHeader className="p-0 pb-5">
         <CardTitle>Presale Contributions</CardTitle>
-        <CardDescription>
-          Transfer tokens to participate in the presale.
-        </CardDescription>
+        <CardDescription>Transfer tokens to participate in the presale.</CardDescription>
       </CardHeader>
       <div className="flex flex-col mb-5">
         <label htmlFor="deposit" className="text-sm font-bold" />
