@@ -1,12 +1,6 @@
 'use client'
 import { Button } from '@/components/ui/button'
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from '@/components/ui/card'
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import {
   Table,
   TableBody,
@@ -19,11 +13,12 @@ import { appConfig } from '@/lib/config'
 import { useSupabaseClient } from '@/services/supabase'
 import type { PresaleContribution } from '@/services/supabase/service'
 import { TestnetBLPL } from '@repo/contracts'
+import type { Tables } from '@repo/supabase'
 import { formatAddress } from '@repo/utils'
 import { useEffect, useState } from 'react'
 import { useAccount } from 'wagmi'
 
-export function PresaleTransactionsCard() {
+export function PresaleTransactionsCard({ presaleData }: { presaleData: Tables<'presale'> }) {
   const { address } = useAccount()
   const supabase = useSupabaseClient()
   const [contributions, setTransactions] = useState<PresaleContribution[]>([])
@@ -103,10 +98,7 @@ export function PresaleTransactionsCard() {
               </TableRow>
             ) : contributions.length > 0 ? (
               contributions.map((contribution) => (
-                <TransactionRow
-                  key={contribution.id}
-                  contribution={contribution}
-                />
+                <TransactionRow key={contribution.id} contribution={contribution} />
               ))
             ) : (
               <TableRow>
@@ -122,9 +114,7 @@ export function PresaleTransactionsCard() {
   )
 }
 
-function TransactionRow({
-  contribution,
-}: { contribution: PresaleContribution }) {
+function TransactionRow({ contribution }: { contribution: PresaleContribution }) {
   const chain = contribution.transaction.chain_id
     ? appConfig.chains.get(contribution.transaction.chain_id)
     : null
@@ -136,9 +126,7 @@ function TransactionRow({
       </TableCell>
 
       <TableCell>
-        {contribution.amount !== null
-          ? (contribution.amount / 1000000).toFixed(6)
-          : 'N/A'}
+        {contribution.amount !== null ? (contribution.amount / 1000000).toFixed(6) : 'N/A'}
       </TableCell>
 
       <TableCell>
@@ -157,8 +145,7 @@ function TransactionRow({
       </TableCell>
 
       <TableCell>
-        {TestnetBLPL.chain?.blockExplorers?.default &&
-        contribution.transaction.hash ? (
+        {TestnetBLPL.chain?.blockExplorers?.default && contribution.transaction.hash ? (
           <a
             href={`${TestnetBLPL.chain.blockExplorers.default.url}/tx/${contribution.transaction.hash}`}
             target="_blank"
@@ -173,9 +160,7 @@ function TransactionRow({
           'pending'
         )}
       </TableCell>
-      <TableCell>
-        {new Date(contribution.transaction.created_at).toLocaleDateString()}
-      </TableCell>
+      <TableCell>{new Date(contribution.transaction.created_at).toLocaleDateString()}</TableCell>
       <TableCell>{chain?.name}</TableCell>
     </TableRow>
   )

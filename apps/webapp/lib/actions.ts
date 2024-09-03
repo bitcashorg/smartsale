@@ -15,11 +15,25 @@
  * that are clear and actionable for the end-user.
  */
 
-import type { AppErrorData } from '@/lib/app-errors/errors'
+import { type AppError, type AppErrorCode, logAppErr } from '@/lib/errors'
 
+// DEPRECATED: Use ActionResult instead as next-safe-action return type
 export interface ActionResponse<T = unknown> {
   success: boolean
   message?: string
   data?: T
-  error?: AppErrorData
+  error?: AppError
+}
+
+export type ActionResult<T> = Success<T> | Failure
+
+export type Success<T> = { success: true; result: T }
+export type Failure = { success: false; error: AppError }
+
+export function success<T>(result: T): Success<T> {
+  return { success: true, result }
+}
+
+export function failure(code: AppErrorCode, error: unknown): Failure {
+  return { success: false, error: logAppErr(code, error) }
 }

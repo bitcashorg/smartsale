@@ -1,35 +1,26 @@
 'use client'
 
 import { Button } from '@/components/ui/button'
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from '@/components/ui/popover'
+import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover'
 import { useSession } from '@/hooks/use-session'
 import { cn } from '@/lib/utils'
 import { useAccountModal } from '@rainbow-me/rainbowkit'
 import { formatAddress } from '@repo/utils'
 import { User, Wallet } from 'lucide-react'
+import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { isMobile } from 'react-device-detect'
 import { useAccount } from 'wagmi'
 
 export function SessionButton() {
-  const {
-    session,
-    loginRedirect,
-    toggleShowSessionDialog,
-    openConnectModal,
-    logout,
-  } = useSession()
+  const { session, loginRedirect, toggleShowSessionDialog, openConnectModal, logout } =
+    useSession()
   const { openAccountModal } = useAccountModal()
   const account = useAccount()
   const router = useRouter()
   const hasSession = session?.account
 
-  const loginUser = () =>
-    isMobile ? loginRedirect() : toggleShowSessionDialog()
+  const loginUser = () => (isMobile ? loginRedirect() : toggleShowSessionDialog())
 
   return (
     <div className="flex justify-end gap-1.5 lg:gap-5">
@@ -72,6 +63,16 @@ export function SessionButton() {
             className="w-44 border-accent-500 bg-background text-center"
           >
             <ul className="flex flex-col gap-5 py-2">
+              <li>
+                <Link href="/wallet" className="cursor-pointer">
+                  Wallet
+                </Link>
+              </li>
+              <li>
+                <Link href="/referrals" className="cursor-pointer">
+                  Referrals
+                </Link>
+              </li>
               {/* biome-ignore lint/a11y/useKeyWithClickEvents: not needed rn */}
               <li onClick={logout} className="cursor-pointer">
                 Sign Out

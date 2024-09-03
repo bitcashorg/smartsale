@@ -68,7 +68,6 @@
     "lucide-react": "^0.414.0",
     "mini-svg-data-uri": "^1.4.4",
     "negotiator": "^0.6.3",
-    "neverthrow": "^7.1.0",
     "next": "14.2.5",
     "next-safe-action": "^7.7.1",
     "next-share": "^0.27.0",
@@ -101,6 +100,7 @@
   "devDependencies": {
     "@genql/cli": "^6.3.3",
     "@tailwindcss/typography": "^0.5.13",
+    "@total-typescript/ts-reset": "total-typescript/ts-reset",
     "@types/lodash": "^4.17.7",
     "@types/negotiator": "^0.6.3",
     "@types/pako": "^2.0.3",

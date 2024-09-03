@@ -54,7 +54,9 @@ export const appChains = {
 function createMapFromId(items: Chain[]): Map<number, Chain> {
   const mapFromId = new Map<number, Chain>()
 
-  items.forEach((item) => mapFromId.set(item.id, item))
+  for (const item of items) {
+    mapFromId.set(item.id, item)
+  }
 
   return mapFromId
 }

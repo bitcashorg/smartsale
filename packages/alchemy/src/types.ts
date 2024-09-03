@@ -4,6 +4,7 @@ export interface AlchemyWebhookEvent {
   id: string
   createdAt: Date
   type: AlchemyWebhookType
+  // biome-ignore lint/suspicious/noExplicitAny: <explanation>
   event: Record<any, any>
 }
 

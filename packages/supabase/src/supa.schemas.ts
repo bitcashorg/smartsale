@@ -215,7 +215,7 @@ export const orderRelationshipsSchema = z.tuple([]);
 export const presaleRowSchema = z.object({
   account: z.string(),
   address: z.string(),
-  close_timestampz: z.string().nullable(),
+  close_timestamptz: z.string().nullable(),
   created_at: z.string(),
   end_timestamptz: z.string(),
   fundraising_goal: z.number(),
@@ -229,7 +229,7 @@ export const presaleRowSchema = z.object({
 export const presaleInsertSchema = z.object({
   account: z.string(),
   address: z.string(),
-  close_timestampz: z.string().optional().nullable(),
+  close_timestamptz: z.string().optional().nullable(),
   created_at: z.string().optional(),
   end_timestamptz: z.string(),
   fundraising_goal: z.number(),
@@ -243,7 +243,7 @@ export const presaleInsertSchema = z.object({
 export const presaleUpdateSchema = z.object({
   account: z.string().optional(),
   address: z.string().optional(),
-  close_timestampz: z.string().optional().nullable(),
+  close_timestamptz: z.string().optional().nullable(),
   created_at: z.string().optional(),
   end_timestamptz: z.string().optional(),
   fundraising_goal: z.number().optional(),

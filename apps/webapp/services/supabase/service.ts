@@ -9,10 +9,7 @@ import type { SupabaseClient } from '@supabase/supabase-js'
  * @returns {Promise<any>} Presale data for the specified project
  * @throws {Error} If there's an error fetching the data
  */
-export async function getPresaleData({
-  projectId,
-  supabase,
-}: ProjectDataParams) {
+export async function getPresaleData({ projectId, supabase }: ProjectDataParams) {
   const { data, error } = await supabase
     .from('presale')
     .select('*')
@@ -24,7 +21,7 @@ export async function getPresaleData({
     throw error
   }
 
-  return data
+  return data as Tables<'presale'>
 }
 
 /**
@@ -33,22 +30,15 @@ export async function getPresaleData({
  * @returns {Promise<any>} Project data for the specified project
  * @throws {Error} If there's an error fetching the data
  */
-export async function getProjectData({
-  projectId,
-  supabase,
-}: ProjectDataParams) {
-  const { data, error } = await supabase
-    .from('project')
-    .select('*')
-    .eq('id', projectId)
-    .single()
+export async function getProjectData({ projectId, supabase }: ProjectDataParams) {
+  const { data, error } = await supabase.from('project').select('*').eq('id', projectId).single()
 
   if (error) {
     console.error('Error fetching project data:', error)
     throw error
   }
 
-  return data
+  return data as Tables<'project'>
 }
 
 // Interface for function parameters
@@ -78,9 +68,7 @@ export async function getPresaleContributions({
   if (error) throw error
 
   // set of unique contributors
-  const uniqueContributors = new Set(
-    data?.map((deposit) => deposit.address).filter(Boolean),
-  )
+  const uniqueContributors = new Set(data?.map((deposit) => deposit.address).filter(Boolean))
 
   return {
     contributions: data,
