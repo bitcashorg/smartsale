@@ -17,14 +17,6 @@
 
 import { type AppError, type AppErrorCode, logAppErr } from '@/lib/errors'
 
-// DEPRECATED: Use ActionResult instead as next-safe-action return type
-export interface ActionResponse<T = unknown> {
-  success: boolean
-  message?: string
-  data?: T
-  error?: AppError
-}
-
 export type ActionResult<T> = Success<T> | Failure
 
 export type Success<T> = { success: true; result: T }
@@ -36,4 +28,12 @@ export function success<T>(result: T): Success<T> {
 
 export function failure(code: AppErrorCode, error: unknown): Failure {
   return { success: false, error: logAppErr(code, error) }
+}
+
+// DEPRECATED: Use ActionResult instead as next-safe-action return type
+export interface ActionResponse<T = unknown> {
+  success: boolean
+  message?: string
+  data?: T
+  error?: AppError
 }
