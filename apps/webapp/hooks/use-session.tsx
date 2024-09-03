@@ -43,7 +43,10 @@ function useSessionFn() {
 
   // Generate login signing request
   const loginSR = useAsync(() => genLoginSigningRequest(newSessionId))
-  const loginUri = loginSR?.value?.encode()
+  const esrCode = loginSR?.value?.encode().toString().replace('esr://', '')
+  const loginUri = `${bitcashRegisterUri}&esr=${esrCode}`
+
+  console.log('loginUri', loginUri)
 
   // Function to start a new session
   const startSession = useCallback(
