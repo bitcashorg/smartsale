@@ -201,7 +201,7 @@ export type Database = {
         Row: {
           account: string
           address: string
-          close_timestampz: string | null
+          close_timestamptz: string | null
           created_at: string
           end_timestamptz: string
           fundraising_goal: number
@@ -214,7 +214,7 @@ export type Database = {
         Insert: {
           account: string
           address: string
-          close_timestampz?: string | null
+          close_timestamptz?: string | null
           created_at?: string
           end_timestamptz: string
           fundraising_goal: number
@@ -227,7 +227,7 @@ export type Database = {
         Update: {
           account?: string
           address?: string
-          close_timestampz?: string | null
+          close_timestamptz?: string | null
           created_at?: string
           end_timestamptz?: string
           fundraising_goal?: number

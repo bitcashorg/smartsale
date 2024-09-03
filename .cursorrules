@@ -49,35 +49,52 @@ React/Next.js:
 - Use useActionState with react-hook-form for form validation.
 - Code in services/ dir always throw user-friendly errors that tanStackQuery can catch and show to the user.
 - Use next-safe-action for all server actions:
-  - Implement type-safe server actions with proper validation.
-  - Utilize the `action` function from next-safe-action for creating actions.
-  - Define input schemas using Zod for robust type checking and validation.
-  - Handle errors gracefully and return appropriate responses.
-  - Use import type { ActionResponse } from '@/types/actions'
-  - Ensure all server actions return the ActionResponse type
-  - Implement consistent error handling and success responses using ActionResponse
+  - Handle errors gracefully and return appropriate responses using logAppErr.
+  - Implement consistent error handling and success responses using ActionResult
+  - Always use ok() from 'neverthrow' for success responses.
   - Example:
     ```typescript
     'use server'
-    
+
+    import type { ActionResult } from '@/app/actions/actions.d.ts'
+    import { logAppErr } from '@/lib/errors/index'
+    import { createSupabaseServerClient } from '@/services/supabase'
+    import { type Tables, presaleDepositInsertSchema } from '@repo/supabase'
+    import { ok } from 'neverthrow'
     import { createSafeActionClient } from 'next-safe-action'
-    import { z } from 'zod'
-    import type { ActionResponse } from '@/app/actions/actions'
 
-    const schema = z.object({
-      value: z.string()
-    })
+    //Stores a deposit intent in the database, creating a pending transaction and a deposit record.
+    export const savePresaleDepositIntent = createSafeActionClient()
+      .schema(presaleDepositInsertSchema)
+      .action(
+        async ({
+          parsedInput: transfer,
+        }): Promise<ActionResult<Tables<'presale_deposit'>>> => {
+          try {
+            const supabase = await createSupabaseServerClient()
 
-    export const someAction = createSafeActionClient()
-      .schema(schema)
-      .action(async (input): Promise<ActionResponse> => {
-        try {
-          // Action logic here
-          return { success: true, data: /* result */ }
-        } catch (error) {
-          return { success: false, error: error instanceof AppError ? error : appErrors.UNEXPECTED_ERROR, }
-        }
-      })
+            const transaction = await supabase
+              .from('transaction')
+              .upsert(
+                {
+                  hash: transfer.deposit_hash,
+                  trx_type: 'presale_deposit',
+                  ...transfer,
+                },
+                { onConflict: 'hash' },
+              )
+              .select()
+
+            if (transaction.error)
+              return logAppErr('DB_OP_FAILURE', transaction.error)
+
+            return ok(deposit.data[0])
+          } catch (error) {
+            return logAppErr('UNEXPECTED_ERROR', error)
+          }
+        },
+      )
+
     ```
 
 
