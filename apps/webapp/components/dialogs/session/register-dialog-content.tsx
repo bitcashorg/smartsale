@@ -31,8 +31,8 @@ export function RegisterDialogContent({
         <DialogTitle>Register to Bitcash Wallet</DialogTitle>
         {/* @ts-ignore */}
         <DialogDescription>
-          Scan this QR code with your smartphone camera or a QR reader to create
-          a bitcash account.
+          Scan this QR code with your smartphone camera or a QR reader to create a bitcash
+          account.
         </DialogDescription>
       </DialogHeader>
 
@@ -61,7 +61,7 @@ export function RegisterDialogContent({
           On your phone you can also register at <b>bitcash.to/reg</b>!
         </p>
         <Button
-          variant="link"
+          variant="accent"
           onClick={() => updateDialogContent('login')}
           disabled={isUserLoggedIn}
         >

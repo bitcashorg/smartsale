@@ -24,8 +24,7 @@ export function SessionDialogContent({
         <DialogTitle>Connect bitcash Wallet</DialogTitle>
         {/* @ts-ignore */}
         <DialogDescription>
-          Scan this QR code with the bitcash wallet QR reader and sign to log
-          in.
+          Scan this QR code with the bitcash wallet QR reader and sign to log in.
         </DialogDescription>
       </DialogHeader>
       {loginUri ? (
@@ -45,9 +44,7 @@ export function SessionDialogContent({
       ) : null}
 
       <DialogFooter className="flex !flex-col gap-4 border-t border-t-gray-300 pt-2 dark:border-t-gray-800 sm:justify-center">
-        <Button onClick={() => updateDialogContent('register')}>
-          Get Bitcash App
-        </Button>
+        <Button onClick={() => updateDialogContent('register')}>Get Bitcash App</Button>
       </DialogFooter>
     </>
   )
