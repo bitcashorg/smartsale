@@ -3,6 +3,7 @@
 import { Button } from '@/components/ui/button'
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover'
 import { useSession } from '@/hooks/use-session'
+import { appConfig } from '@/lib/config'
 import { cn } from '@/lib/utils'
 import { useAccountModal } from '@rainbow-me/rainbowkit'
 import { formatAddressShort } from '@repo/utils'
@@ -50,7 +51,7 @@ export function SessionButton() {
             className="w-44 border-accent-500 bg-background text-center"
           >
             <ul className="flex flex-col gap-5 py-2">
-              {hasSession && (
+              {appConfig.features.presale && hasSession && (
                 // biome-ignore lint/a11y/useKeyWithClickEvents: <explanation>
                 <li
                   onClick={openConnectModal ? openConnectModal : openAccountModal}
@@ -61,17 +62,20 @@ export function SessionButton() {
                   {account?.address ? formatAddressShort(account.address) : 'Connect'}
                 </li>
               )}
-
-              <li>
-                <Link href="/wallet" className="cursor-pointer">
-                  Wallet
-                </Link>
-              </li>
-              <li>
-                <Link href="/referrals" className="cursor-pointer">
-                  Referrals
-                </Link>
-              </li>
+              {appConfig.features.presale && (
+                <>
+                  <li>
+                    <Link href="/wallet" className="cursor-pointer">
+                      Wallet
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/referrals" className="cursor-pointer">
+                      Referrals
+                    </Link>
+                  </li>
+                </>
+              )}
               {/* biome-ignore lint/a11y/useKeyWithClickEvents: not needed rn */}
               <li onClick={logout} className="cursor-pointer">
                 Sign Out
