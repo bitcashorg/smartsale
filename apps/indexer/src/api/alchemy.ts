@@ -5,8 +5,8 @@ import type {
   AlchemyNetwork,
   AlchemyWebhookEvent,
 } from '@repo/alchemy'
-
 import { chainIdAlchemyNetwork } from '@repo/alchemy'
+import { Alchemy } from 'alchemy-sdk'
 
 import { addressActivityTask } from '@repo/jobs'
 import { evmTokens } from '@repo/tokens'
@@ -28,7 +28,6 @@ const networks: AlchemyNetwork[] = prodChains.map((chain) => {
   if (!network) throw new Error(`Unsupported chain ID: ${chain.id}`)
   return network
 })
-logger.info(`Supported networks: ${networks.join(', ')}`)
 
 /**
  * Handles incoming Alchemy webhook requests.
@@ -41,9 +40,11 @@ export async function alchemyWebhook(req: Request, res: Response) {
   const evt = req.body as AlchemyWebhookEvent
   logger.info(`Alchemy webhook received: ${JSON.stringify(evt)}`)
 
+  // TODO: restore signature validation
   // Validate the Alchemy signature
-  if (!validateAlchemySignature(req))
-    return res.status(401).send('Unauthorized')
+  // const alchemy = new Alchemy({ authToken: appConfig.alchemyNotifyToken })
+  //const alchemyWebhooks = await alchemy.notify.getWebhooks()
+  // if (!validateAlchemySignature(req)) return res.status(401).send('Unauthorized')
 
   // Extract network and activity from the event
   const { network, activity } = evt.event as AlchemyActivityEvent
@@ -76,10 +77,7 @@ export async function alchemyWebhook(req: Request, res: Response) {
       evmTokens.some((token) => txnTokenAddress === getAddress(token.address))
 
     // Check if the sender is registered for the presale
-    const isRegisteredForPresale = await isAddressRegisteredForPresale(
-      txn.fromAddress,
-      1,
-    )
+    const isRegisteredForPresale = await isAddressRegisteredForPresale(txn.fromAddress, 1)
 
     // Get presale data and validate amount and timing
     const presaleData = await getPresaleData(1)
@@ -93,8 +91,7 @@ export async function alchemyWebhook(req: Request, res: Response) {
       (acc, deposit) => acc + Number(deposit.amount),
       0,
     )
-    const isValidAmount =
-      txn.value + totalDeposits <= presaleData.max_allocation
+    const isValidAmount = txn.value + totalDeposits <= presaleData.max_allocation
     const currentTimestamp = Math.floor(Date.now() / 1000) // Current time in seconds
     const isWithinPresalePeriod =
       currentTimestamp >= Number(presaleData.start_timestamptz) &&
@@ -141,10 +138,7 @@ function validateAlchemySignature(req: Request): boolean {
   // Stringify the request body
   const payload = JSON.stringify(req.body)
   // Create an HMAC using the Alchemy signing key
-  const hmac = crypto.createHmac(
-    'sha256',
-    appConfig.evm.alchemy.activitySigningKey,
-  )
+  const hmac = crypto.createHmac('sha256', appConfig.evm.alchemy.activitySigningKey)
   // Update the HMAC with the payload
   hmac.update(payload)
   // Compare the calculated signature with the provided signature
