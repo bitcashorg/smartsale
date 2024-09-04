@@ -1,18 +1,14 @@
 'use client'
-import { registerAddress } from '@/app/actions/general'
-import {
-    Button,
-    type ButtonProps,
-    buttonVariants,
-} from '@/components/ui/button'
+
+import { registerAddress } from '@/app/actions/register-address'
+import { Button, type ButtonProps } from '@/components/ui/button'
 import { useSession } from '@/hooks/use-session'
-import { cn } from '@/lib/utils'
 import { useSupabaseClient } from '@/services/supabase'
-import { presaleInsertSchema } from '@repo/supabase'
-import { formatAddress, fromEntries } from '@repo/utils'
+import { formatAddress } from '@repo/utils'
 import { useQuery } from '@tanstack/react-query'
+import { useAction } from 'next-safe-action/hooks'
 import { type FunctionComponent, useState } from 'react'
-import { useAsyncFn } from 'react-use'
+import toast from 'react-hot-toast'
 import { useAccount, useSignMessage } from 'wagmi'
 import type { SignMessageData } from 'wagmi/query'
 
@@ -21,89 +17,78 @@ export const RegisterAddressForm: FunctionComponent<{ projectId: number }> = ({
 }) => {
   const { session, loginOrConnect } = useSession()
   const { address } = useAccount()
-  const [formData, setFormData] = useState<FormData>()
   const supabase = useSupabaseClient()
+  const { execute } = useAction(registerAddress)
 
+  // check if the address is already registered
   const registration = useQuery({
-    queryKey: ['registration', session?.account || 'nobody'], // unique query key per user
-    enabled: Boolean(session), // only fetch if logged in
+    queryKey: ['registration', session?.account || 'nobody'],
+    enabled: Boolean(session?.account),
     queryFn: async () => {
-      const { data, error } = await supabase
-        .from('presale')
-        .select()
-        .eq('project_id', projectId)
-        .eq('account', session!.account!) // we know for sure
+      try {
+        if (!address || !session?.account) throw new Error('No address or account')
 
-      if (error) throw error
+        const { data, error } = await supabase
+          .from('whitelist')
+          .select()
+          .eq('project_id', projectId)
+          .eq('account', session.account)
+          .eq('address', address)
+          .single()
 
-      return data[0]
+        if (error) throw error
+
+        return data
+      } catch (error) {
+        console.error('Registration error:', error)
+        toast.error('Failed to fetch registration data')
+        throw error
+      }
     },
   })
 
-  const [state, register] = useAsyncFn(async (formData: FormData) => {
-    const o = fromEntries(formData)
-    const data = {
-      ...o,
-      project_id: Number.parseInt(o.project_id, 10),
-    }
-    // validate input
-    presaleInsertSchema.safeParse(data)
-
-    return registerAddress(formData)
-  })
-
+  // sign the message to register the address
   const { signMessage, isPending } = useSignMessage({
     mutation: {
-      onSuccess: (signature: SignMessageData) => {
-        // append signature to form data and apply
-        if (!formData) return
-        formData.append('signature', signature)
-        register(formData)
+      onSuccess: async (signed_message: SignMessageData) => {
+        if (!session || !address) return
+
+        await execute({
+          address,
+          project_id: projectId,
+          account: session.account,
+          signed_message,
+        })
       },
     },
   })
 
-  const submitForm = (formData: FormData) => {
-    // force login and connect
+  const handleRegister = () => {
     if (!address || !session) return loginOrConnect()
-    // save form data for later use in register function as sign message success callback
-    setFormData(formData)
-    // request sign message
-    signMessage({ message: `Sign me up for bitlauncher | bitcash presale` })
+    signMessage({ message: 'Sign me up for bitlauncher | bitcash presale' })
   }
 
-  return registration.data || state.value ? (
+  return registration.data?.address ? (
     <RegisterButton
-      text={`${formatAddress(registration.data?.address || address!)} is registered!`}
+      text={`${formatAddress(registration.data?.address)} is registered!`}
     />
   ) : (
-    <form action={submitForm} className="flex justify-center">
-      <input type="hidden" name="address" value={address} />
-      <input type="hidden" name="project_id" value={projectId} />
-      <input type="hidden" name="account" value={session?.account} />
+    <div className="flex justify-center">
       <RegisterButton
         text={
-          state.loading || isPending
-            ? `Registering ${formatAddress(address!)}`
-            : 'Register'
+          isPending && address
+            ? `Registering ${formatAddress(address)}`
+            : 'Sign to Register'
         }
+        onClick={handleRegister}
       />
-    </form>
+    </div>
   )
 }
 
 function RegisterButton(props: ButtonProps & { text: string }) {
   return (
-    <Button
-      className={cn(
-        buttonVariants({
-          variant: 'outline',
-          radius: 'full',
-        }),
-        'flex h-auto whitespace-normal border border-solid border-accent-500 bg-background px-5',
-      )}
-      {...props}
-    >
+    <Button variant="accent" {...props}>
       {props.text}
     </Button>
   )
