@@ -48,7 +48,7 @@ export function Countdown({
 
         <div />
       </div>
-      <div className="flex justify-between">
+      <div className="flex justify-between mt-5 md:mt-0">
         <CountdownItem value={timeLeft.days} label="DAYS" />
         <CountdownItem value={timeLeft.hours} label="HOURS" />
         <CountdownItem value={timeLeft.minutes} label="MINUTES" />
