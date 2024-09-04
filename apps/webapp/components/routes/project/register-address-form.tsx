@@ -31,7 +31,6 @@ export function RegisterAddressForm({ projectId }: { projectId: number }) {
           .select()
           .eq('project_id', projectId)
           .eq('account', session.account)
-          .eq('address', address)
           .single()
 
         if (error) throw error
@@ -39,8 +38,6 @@ export function RegisterAddressForm({ projectId }: { projectId: number }) {
         return data
       } catch (error) {
         console.error('Registration error:', error)
-        toast.error('Failed to fetch registration data')
-        throw error
       }
     },
   })
