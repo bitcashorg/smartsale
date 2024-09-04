@@ -1,7 +1,7 @@
 'use client'
 
-import { differenceInSeconds } from 'date-fns';
-import { useEffect, useState } from 'react';
+import { differenceInSeconds } from 'date-fns'
+import { useEffect, useState } from 'react'
 
 export function Countdown({
   targetDate,
@@ -44,14 +44,11 @@ export function Countdown({
   return (
     <div className="mt-5 max-h-[200px] px-8">
       <div className="flex justify-center">
-        <h2 className="heading3">
-          {/* <TimerIcon className="inline" /> */}
-          {heading}
-        </h2>
+        <h2 className="heading3">{heading}</h2>
 
         <div />
       </div>
-      <div className="flex justify-between">
+      <div className="flex justify-between mt-5 md:mt-0">
         <CountdownItem value={timeLeft.days} label="DAYS" />
         <CountdownItem value={timeLeft.hours} label="HOURS" />
         <CountdownItem value={timeLeft.minutes} label="MINUTES" />

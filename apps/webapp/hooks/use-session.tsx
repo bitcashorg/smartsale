@@ -132,11 +132,22 @@ function useSessionFn() {
   // Function to handle login or connect wallet
   const loginOrConnect = () => {
     console.log('login or connect', session, openConnectModal, isMobile)
-    session && openConnectModal
+
+    if (isMobile) {
+      session?.account && openConnectModal ? openConnectModal() : loginRedirect()
+      return
+    }
+
+    session?.account && openConnectModal
       ? openConnectModal()
-      : isMobile
-        ? loginRedirect()
-        : toggleShowSessionDialog(true)
+      : toggleShowSessionDialog(true)
+  }
+
+  // hack until new qr system is implemented
+  const createAccount = () => {
+    if (!isMobile) return loginOrConnect()
+    // redirect to create account uri on mobile
+    location.href = bitcashRegisterUri
   }
 
   // Function to handle logout
@@ -157,6 +168,7 @@ function useSessionFn() {
     openConnectModal,
     loginOrConnect,
     toggleShowSessionDialog,
+    createAccount,
   }
 }
 

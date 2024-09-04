@@ -1,6 +1,8 @@
 {
   "name": "@repo/alchemy",
-  "module": "src/index.ts",
+  "version": "0.0.1",
+  "private": true,
+  "main": "src/index.ts",
   "types": "src/index.d.ts",
   "scripts": {
     "create-activities": "bun webhooks/activity.ts"

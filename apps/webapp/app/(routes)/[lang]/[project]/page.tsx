@@ -19,17 +19,33 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
   const dict = await getDictionary(params.lang)
   const project = await getProjectBySlug(params.project, dict)
   if (!project || !project.content) redirect('/')
-
   const projectContentObjectKeys = Object.keys(project.content)
   const projectContent = project.content
   const supabase = await createSupabaseServerClient()
-  const presaleData = await getPresaleData({ projectId: project.id, supabase })
-  const presaleDataStartDate = new Date(presaleData.start_timestamptz)
-  const presaleDataEndDate = new Date(presaleData.end_timestamptz)
-  const isPresaleActive =
-    new Date() > presaleDataStartDate && new Date() < presaleDataEndDate
-  // TODO: handle this dynamically
-  const isAuctionActive = false
+  const presale = await getPresaleData({ projectId: project.id, supabase })
+  const presaleStartDate = new Date(presale.start_timestamptz)
+  const presaleEndDate = new Date(presale.end_timestamptz)
+  const now = new Date()
+  const isPresaleUpcoming = now < presaleStartDate
+  const isPresaleActive = now > presaleStartDate && now < presaleEndDate
+  const isAuctionActive = false // TODO: implement auction logic
+  const auctionStartDate = new Date() // TODO: set actual auction start date
+  const auctionEndDate = new Date() // TODO: set actual auction end date
+
+  const countdownDate = (() => {
+    if (isPresaleUpcoming) return presaleStartDate
+    if (isPresaleActive) return presaleEndDate
+    if (isAuctionActive) return auctionEndDate
+    return auctionStartDate
+  })()
+
+  const countdownHeading = isPresaleUpcoming
+    ? 'Presale Starts In:'
+    : isPresaleActive
+      ? 'Presale Ends In:'
+      : isAuctionActive
+        ? 'Auction Ends In:'
+        : 'Auction Starts In:'
 
   return (
     <>
@@ -37,12 +53,8 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         <ProjectHeader project={project}>
           <div className="grid grid-cols-1 gap-8 mb-10 lg:grid-cols-2">
             <Card className="flex flex-col w-full pb-5 border-card/30 bg-card/60 backdrop-blur-lg">
-              <Countdown
-                targetDate={presaleDataStartDate}
-                // heading="Presale Countdown"
-                heading="Presale Ends In:"
-              />
-              <div className="flex items-center justify-center gap-3 align-center">
+              <Countdown targetDate={countdownDate} heading={countdownHeading} />
+              <div className="flex items-center justify-center gap-3 align-center py-3 mt-5 md:mt-0">
                 {isPresaleActive ? (
                   <Link href={`/${project.slug}/presale`}>
                     <Button variant="accent">Join Presale Now</Button>
@@ -57,12 +69,11 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               </div>
             </Card>
 
-            {/* // TODO: Update project table to add bitlauncher project. */}
             <ProjectDataCard project={project} />
           </div>
         </ProjectHeader>
 
-        {/* <div className="pt-20 narrow-container">
+        <div className="pt-20 narrow-container">
           {projectContentObjectKeys.map((key, index) => {
             const pcKey = key as keyof typeof projectContent
             const isLastItem = index === projectContentObjectKeys.length - 1
@@ -122,7 +133,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               </section>
             )
           })}
-        </div> */}
+        </div>
       </div>
     </>
   )
