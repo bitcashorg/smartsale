@@ -29,7 +29,7 @@ export function useReferral() {
     params.append('referrer', referrer)
     params.append('source', 'bitlauncher.ai')
     
-    setBitcashRegisterUri(DEFAULT_URI + params.toString())
+    setBitcashRegisterUri(`${DEFAULT_URI}?${params.toString()}`)
   }, [searchParams])
 
   return { bitcashRegisterUri }

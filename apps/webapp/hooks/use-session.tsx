@@ -117,13 +117,17 @@ function useSessionFn() {
   const loginRedirect = () => {
     console.log('loginRedirect', loginUri, openConnectModal)
     if (!loginUri || !open) return
-    const params = new URLSearchParams()
-    params.append('esr_code', loginUri.replace('esr://', ''))
+
+    const params = new URLSearchParams(loginUri)
     const url = new URL(bitcashRegisterUri)
     const callbackUrl = `${window.location.href}?session_id=${newSessionId}`
     const encodedCallbackUrl = encodeURIComponent(callbackUrl)
+
     url.searchParams.append('callback', encodedCallbackUrl)
-    url.searchParams.append('esr_code', loginUri.replace('esr://', ''))
+    url.searchParams.append('esr', params.get('esr') || '')
+
+    alert('Please scan the QR code to login or register.\n\n' + url.toString())
+
     location.href = url.toString()
   }
 

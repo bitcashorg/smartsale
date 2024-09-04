@@ -7,6 +7,7 @@ import {
   DialogTitle,
 } from '@/components/ui/dialog'
 import { useSession } from '@/hooks/use-session'
+import { ChevronRight } from 'lucide-react'
 import Link from 'next/link'
 import QRCode from 'react-qr-code'
 
@@ -14,14 +15,15 @@ export function SessionDialogContent() {
   const { loginUri, toggleShowSessionDialog } = useSession()
   return (
     <>
-      <DialogHeader className="gap-4 ">
+      <DialogHeader className="gap-4">
         {/* @ts-ignore */}
-        <DialogTitle className="text-center text-green-500">
-          Login or Register with Bitcash
+        <DialogTitle className="text-center text-2xl whitespace-pre-line">
+          {`Login or Register
+          with bitcash Wallet`}
         </DialogTitle>
         {/* @ts-ignore */}
-        <DialogDescription className="text-center">
-          Scan this QR code to login or register.
+        <DialogDescription className="text-center text-infoForeground">
+          Scan this QR code with your smartphone to login or register.
         </DialogDescription>
       </DialogHeader>
       {loginUri ? (
@@ -40,13 +42,14 @@ export function SessionDialogContent() {
         </div>
       ) : null}
 
-      <DialogFooter className="flex !flex-col gap-4 border-t border-t-gray-300 pt-2 dark:border-t-gray-800 sm:justify-center">
+      <DialogFooter className="flex !flex-col border-t border-t-accent-600/50 pt-4 sm:justify-center">
         <Link
           href="/blog/bitcash/how-to-register-and-kyc-to-bitcash"
-          className="text-center text-accent cursor-pointer"
+          className="transition-all items-center justify-center text-center text-accent-400 hover:text-accent focus-within:text-accent flex gap-2 cursor-pointer"
           onClick={toggleShowSessionDialog}
         >
           Learn more about the Bitcash KYC process
+          <ChevronRight className="w-6 h-6" />
         </Link>
       </DialogFooter>
     </>

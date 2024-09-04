@@ -61,7 +61,9 @@ module.exports = {
         },
         tertiary: { blue: '#0000EE' },
         accent: {
-          DEFAULT: 'hsla(var(--accent))',
+          // TODO: upt to secondary the var(--accent) colour
+          // DEFAULT: 'hsla(var(--accent))',
+          DEFAULT: '#845BBF',
           foreground: 'hsla(var(--accent-foreground))',
           400: '#FF51ED',
           500: '#845BBF',
