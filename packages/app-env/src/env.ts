@@ -13,9 +13,9 @@ import { appChains } from './chains'
 
 const prod: SmartsaleEnvConfig = {
   supabase: {
-    url: 'https://byqpuulbryhqwvxpoobc.supabase.co',
+    url: 'https://xixdelvapxmudvieqlis.supabase.co',
     anonKey:
-      'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJ5cXB1dWxicnlocXd2eHBvb2JjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTMxMjkxNTMsImV4cCI6MjAyODcwNTE1M30.2kikQFX8PhOIzTnojaE0J06E94j92dtpPBI832EktK8',
+      'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhpeGRlbHZhcHhtdWR2aWVxbGlzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjU0NjMzNzAsImV4cCI6MjA0MTAzOTM3MH0.pxt5u1YKYZFl9mWEZm7CJornqI0UAbLjw-26juti5Yk',
   },
   chains: appChains.prod,
   esrCallbackUrl: 'https://bitlauncher.ai/api/esr',

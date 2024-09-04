@@ -12,12 +12,6 @@ export async function createSupabaseServerClient() {
   /** (from IDE)
    * @deprecated Please specify `getAll` and `setAll` cookie methods instead of the `get`, `set` and `remove`.These will not be supported in the next major version.
    **/
-
-  console.log(
-    '🥵 createSupabaseServerClient',
-    appConfig.supabase.url,
-    appConfig.supabase.anonKey,
-  )
   return createServerClient<Database>(
     appConfig.supabase.url,
     appConfig.supabase.anonKey,
