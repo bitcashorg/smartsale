@@ -5,7 +5,8 @@
   "main": "src/index.ts",
   "types": "src/index.d.ts",
   "scripts": {
-    "create-activities": "bun webhooks/activity.ts"
+    "create-activities": "bun webhooks/activity.ts",
+    "create-test-hook": "bun webhooks/activity-test.ts"
   },
   "devDependencies": {
     "@types/bun": "latest"
