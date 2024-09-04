@@ -1,6 +1,5 @@
 'use client'
 
-import { Button } from '@/components/ui/button'
 import {
   DialogDescription,
   DialogFooter,
@@ -36,7 +35,7 @@ export function SessionDialogContent() {
               borderRadius: 4,
             }}
             value={loginUri}
-            viewBox={'0 0 256 256'}
+            viewBox="0 0 256 256"
           />
         </div>
       ) : null}
