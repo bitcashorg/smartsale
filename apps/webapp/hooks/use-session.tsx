@@ -113,10 +113,10 @@ function useSessionFn() {
   // Function to handle login redirect (mobile)
   const loginRedirect = () => {
     console.log('loginRedirect', loginUri, openConnectModal)
-    if (!loginUri || !open) return
+    if (!loginUri) return
     const params = new URLSearchParams()
     params.append('esr_code', loginUri.replace('esr://', ''))
-    const url = new URL(bitcashRegisterUri)
+    const url = new URL(window.location.href)
     const callbackUrl = `${window.location.href}?session_id=${newSessionId}`
     const encodedCallbackUrl = encodeURIComponent(callbackUrl)
     url.searchParams.append('callback', encodedCallbackUrl)
@@ -132,6 +132,13 @@ function useSessionFn() {
       : isMobile
         ? loginRedirect()
         : toggleShowSessionDialog(true)
+  }
+
+  // hack until new qr system is implemented
+  const createAccount = () => {
+    if (!isMobile) return loginOrConnect()
+    // redirect to create account uri on mobile
+    location.href = bitcashRegisterUri
   }
 
   // Function to handle logout
@@ -152,6 +159,7 @@ function useSessionFn() {
     openConnectModal,
     loginOrConnect,
     toggleShowSessionDialog,
+    createAccount,
   }
 }
 

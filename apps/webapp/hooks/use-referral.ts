@@ -12,13 +12,10 @@ export function useReferral() {
   useEffect(() => {
     sessionStorage.setItem('referrer', searchParams.get('referrer') || '')
     const params = new URLSearchParams()
-    const referrer =
-      searchParams.get('referrer') || sessionStorage.getItem('referrer')
+    const referrer = searchParams.get('referrer') || sessionStorage.getItem('referrer')
     if (referrer) params.append('referrer', referrer)
     params.append('source', 'bitlauncher.ai')
-    setBitcashRegisterUri(
-      `https://app.bitcash.org/create-account?${params.toString()}`,
-    )
+    setBitcashRegisterUri(`https://app.bitcash.org/create-account?${params.toString()}`)
   }, [searchParams])
 
   return { bitcashRegisterUri }
