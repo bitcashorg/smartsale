@@ -116,7 +116,7 @@ function useSessionFn() {
     if (!loginUri) return
     const params = new URLSearchParams()
     params.append('esr_code', loginUri.replace('esr://', ''))
-    const url = new URL(window.location.href)
+    const url = new URL('https://app.bitcash.org')
     const callbackUrl = `${window.location.href}?session_id=${newSessionId}`
     const encodedCallbackUrl = encodeURIComponent(callbackUrl)
     url.searchParams.append('callback', encodedCallbackUrl)
@@ -127,11 +127,15 @@ function useSessionFn() {
   // Function to handle login or connect wallet
   const loginOrConnect = () => {
     console.log('login or connect', session, openConnectModal, isMobile)
-    session && openConnectModal
+
+    if (isMobile) {
+      session?.account && openConnectModal ? openConnectModal() : loginRedirect()
+      return
+    }
+
+    session?.account && openConnectModal
       ? openConnectModal()
-      : isMobile
-        ? loginRedirect()
-        : toggleShowSessionDialog(true)
+      : toggleShowSessionDialog(true)
   }
 
   // hack until new qr system is implemented
