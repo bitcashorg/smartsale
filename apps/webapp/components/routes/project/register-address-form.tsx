@@ -7,25 +7,23 @@ import { useSupabaseClient } from '@/services/supabase'
 import { formatAddress } from '@repo/utils'
 import { useQuery } from '@tanstack/react-query'
 import { useAction } from 'next-safe-action/hooks'
-import { type FunctionComponent, useState } from 'react'
 import toast from 'react-hot-toast'
 import { useAccount, useSignMessage } from 'wagmi'
 import type { SignMessageData } from 'wagmi/query'
 
-export const RegisterAddressForm: FunctionComponent<{ projectId: number }> = ({
-  projectId,
-}) => {
+export function RegisterAddressForm({ projectId }: { projectId: number }) {
   const { session, loginOrConnect } = useSession()
   const { address } = useAccount()
   const supabase = useSupabaseClient()
-  const { execute } = useAction(registerAddress)
+  const { execute, result } = useAction(registerAddress)
 
   // check if the address is already registered
   const registration = useQuery({
-    queryKey: ['registration', session?.account || 'nobody'],
-    enabled: Boolean(session?.account),
+    queryKey: ['registration', session?.account, address],
+    enabled: Boolean(session?.account && address),
     queryFn: async () => {
       try {
+        // this should never happen. see enabled: Boolean(session?.account && address)
         if (!address || !session?.account) throw new Error('No address or account')
 
         const { data, error } = await supabase
@@ -68,10 +66,8 @@ export const RegisterAddressForm: FunctionComponent<{ projectId: number }> = ({
     signMessage({ message: 'Sign me up for bitlauncher | bitcash presale' })
   }
 
-  return registration.data?.address ? (
-    <RegisterButton
-      text={`${formatAddress(registration.data?.address)} is registered!`}
-    />
+  return registration.data?.address || result.data?.info?.address ? (
+    <RegisterButton text={'Your are registered!'} />
   ) : (
     <div className="flex justify-center">
       <RegisterButton

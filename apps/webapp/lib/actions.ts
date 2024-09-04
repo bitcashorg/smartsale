@@ -1,33 +1,31 @@
 /**
  * Represents a standardized response structure for actions.
- * This pattern is useful for several reasons:
- * 1. Consistency: Provides a uniform structure for all action responses.
- * 2. Type safety: Allows for type-checking of the response data.
- * 3. Error handling: Includes a field for user-friendly error messages.
- * 4. Flexibility: The generic type T allows for different data structures.
+ * This pattern ensures:
+ * 1. Consistency: A uniform structure for all action responses.
+ * 2. Type safety: Type-checking for response data.
+ * 3. Error handling: A field for user-friendly error messages.
+ * 4. Flexibility: The generic type T accommodates various data structures.
  *
  * When success is true:
- * - message and data are optional
+ * - info is required; error is null
  * When success is false:
- * - error is required and should contain a user-friendly error message
+ * - error is required and must contain a user-friendly error message
  *
- * Note: It's important to always return user-friendly error messages
- * that are clear and actionable for the end-user.
  */
 
 import { type AppError, type AppErrorCode, logAppErr } from '@/lib/errors'
 
 export type ActionResult<T> = Success<T> | Failure
 
-export type Success<T> = { success: true; result: T }
-export type Failure = { success: false; error: AppError }
+export type Success<T> = { success: true; info: T; error: null }
+export type Failure = { success: false; error: AppError; info: null }
 
-export function success<T>(result: T): Success<T> {
-  return { success: true, result }
+export function success<T>(info: T): Success<T> {
+  return { success: true, info, error: null }
 }
 
 export function failure(code: AppErrorCode, error: unknown): Failure {
-  return { success: false, error: logAppErr(code, error) }
+  return { success: false, error: logAppErr(code, error), info: null }
 }
 
 // DEPRECATED: Use ActionResult instead as next-safe-action return type

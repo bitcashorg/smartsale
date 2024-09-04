@@ -1,10 +1,19 @@
 {
   "name": "smartsale",
   "version": "1.0.0",
-  "description": "bitlauncher monorepo",
   "author": "bitcash.org",
+  "devDependencies": {
+    "@biomejs/biome": "1.8.3",
+    "@types/bn.js": "^5.1.5",
+    "@types/node": "latest",
+    "turbo": "^2.0.9"
+  },
+  "description": "bitlauncher monorepo",
+  "engines": {
+    "node": "20.x"
+  },
   "license": "MIT",
-  "type": "module",
+  "packageManager": "bun@1.1.20",
   "private": true,
   "scripts": {
     "build": "turbo build --no-daemon",
@@ -13,6 +22,7 @@
     "format-and-lint:fix": "biome check . --write",
     "clean:node_modules": "find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +"
   },
+  "type": "module",
   "workspaces": {
     "packages": ["apps/*", "packages/*"],
     "nohoist": [
@@ -25,15 +35,5 @@
       "**/pino-pretty",
       "**/pino-pretty/**"
     ]
-  },
-  "packageManager": "bun@1.1.20",
-  "engines": {
-    "node": "20.x"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "1.8.3",
-    "@types/bn.js": "^5.1.5",
-    "@types/node": "latest",
-    "turbo": "^2.0.9"
   }
 }
