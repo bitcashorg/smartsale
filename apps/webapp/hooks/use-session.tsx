@@ -126,8 +126,6 @@ function useSessionFn() {
     url.searchParams.append('callback', encodedCallbackUrl)
     url.searchParams.append('esr', params.get('esr') || '')
 
-    alert('Please scan the QR code to login or register.\n\n' + url.toString())
-
     location.href = url.toString()
   }
 
