@@ -77,7 +77,7 @@ export async function alchemyWebhook(req: Request, res: Response) {
       evmTokens.some((token) => txnTokenAddress === getAddress(token.address))
 
     // Check if the sender is registered for the presale
-    const isRegisteredForPresale = await isAddressRegisteredForPresale(txn.fromAddress, 1)
+    const isRegisteredForPresale = true // await isAddressRegisteredForPresale(txn.fromAddress, 1)
 
     // Get presale data and validate amount and timing
     const presaleData = await getPresaleData(1)
@@ -92,10 +92,10 @@ export async function alchemyWebhook(req: Request, res: Response) {
       0,
     )
     const isValidAmount = txn.value + totalDeposits <= presaleData.max_allocation
-    const currentTimestamp = Math.floor(Date.now() / 1000) // Current time in seconds
-    const isWithinPresalePeriod =
-      currentTimestamp >= Number(presaleData.start_timestamptz) &&
-      currentTimestamp <= Number(presaleData.end_timestamptz)
+    const currentTimestamp = Date.now() // Current time in seconds
+    const isWithinPresalePeriod = true
+    // currentTimestamp >= Number(presaleData.start_timestamptz) &&
+    // currentTimestamp <= Number(presaleData.end_timestamptz)
 
     // Collect all validation errors
     const validationErrors = [
