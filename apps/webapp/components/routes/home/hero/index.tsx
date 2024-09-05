@@ -2,7 +2,7 @@
 
 import { VideoDialog } from '@/components/dialogs/video-dialog'
 import { NestedLinkButton } from '@/components/nextjs/nested-link'
-import ReferalHomeBanner from '@/components/shared/referal-hero-banner'
+import ReferralHomeBanner from '@/components/shared/referral-hero-banner'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Button, buttonVariants } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
@@ -47,7 +47,7 @@ export function NewHomeHero() {
   return (
     <section className="narrow-container mb-0 flex min-h-[calc(90vh-70px)] flex-col justify-between relative">
       {showBanner && (
-        <ReferalHomeBanner
+        <ReferralHomeBanner
           onClose={() => setShowBanner(false)}
           onJoinNow={() => scrollToSection('steps')}
           onHowItWorks={() => scrollToSection('features')}

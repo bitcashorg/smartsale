@@ -4,7 +4,7 @@ import { FeatureOne } from '@/components/_wip/feature-one'
 import { FeatureThree } from '@/components/_wip/feature-three'
 import { FeatureTwo } from '@/components/_wip/feature-two'
 import { NewHomeHero } from '@/components/routes/home/hero/index'
-import { ReferalSection } from '@/components/routes/home/section/referal-section'
+import { ReferralSection } from '@/components/routes/home/section/referral-section'
 import { getDictionary } from '@/dictionaries'
 import type { Lang } from '@/dictionaries/locales'
 import { appConfig } from '@/lib/config'
@@ -24,7 +24,7 @@ export default async function IndexPage({ params: { lang } }: IndexPageProps) {
         <DynamicFeatures lang={lang} dict={dict} id="features" />
         <DynamicWhyChooseUs lang={lang} dict={dict} />
         <DynamicStepsSection lang={lang} dict={dict} id="steps" />
-        <ReferalSection />
+        <ReferralSection />
         <DynamicLearnSection />
         <DynamicRecentArticles lang={lang} />
         <DynamicFAQ lang={lang} dict={dict} />

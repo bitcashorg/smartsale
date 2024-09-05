@@ -8,7 +8,7 @@ interface ReferalHomeBannerProps {
   onHowItWorks: () => void
 }
 
-export default function ReferalHomeBanner({
+export default function ReferralHomeBanner({
   onClose,
   onJoinNow,
   onHowItWorks,

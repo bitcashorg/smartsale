@@ -10,7 +10,7 @@ import { isMobile } from 'react-device-detect'
 
 import React from 'react'
 
-export function ReferalSection() {
+export function ReferralSection() {
   const [isModalOpen, setIsModalOpen] = React.useState(false)
   const { session, toggleShowSessionDialog, loginRedirect } = useSession()
   const router = useRouter()
