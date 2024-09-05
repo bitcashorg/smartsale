@@ -60,6 +60,7 @@
     "clsx": "^2.1.1",
     "date-fns": "^3.6.0",
     "datocms-structured-text-to-plain-text": "^4.0.1",
+    "embla-carousel-react": "^8.2.1",
     "eosio-signing-request": "^2.5.3",
     "framer-motion": "^11.3.17",
     "graphql": "^16.9.0",
