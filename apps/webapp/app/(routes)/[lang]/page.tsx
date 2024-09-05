@@ -4,7 +4,6 @@ import { FeatureOne } from '@/components/_wip/feature-one'
 import { FeatureThree } from '@/components/_wip/feature-three'
 import { FeatureTwo } from '@/components/_wip/feature-two'
 import { NewHomeHero } from '@/components/routes/home/hero/index'
-import { ReferralSection } from '@/components/routes/home/section/referral-section'
 import { getDictionary } from '@/dictionaries'
 import type { Lang } from '@/dictionaries/locales'
 import { appConfig } from '@/lib/config'
@@ -24,7 +23,7 @@ export default async function IndexPage({ params: { lang } }: IndexPageProps) {
         <DynamicFeatures lang={lang} dict={dict} id="features" />
         <DynamicWhyChooseUs lang={lang} dict={dict} />
         <DynamicStepsSection lang={lang} dict={dict} id="steps" />
-        <ReferralSection />
+        <DynamicReferralSection />
         <DynamicLearnSection />
         <DynamicRecentArticles lang={lang} />
         <DynamicFAQ lang={lang} dict={dict} />
@@ -84,5 +83,13 @@ const DynamicRecentArticles = dynamic(
 
 const DynamicFAQ = dynamic(
   () => import('@/components/routes/home/section/faq-section').then((mod) => mod.FAQ),
+  { ssr: false },
+)
+
+const DynamicReferralSection = dynamic(
+  () =>
+    import('@/components/routes/home/section/referral-section').then(
+      (mod) => mod.ReferralSection,
+    ),
   { ssr: false },
 )
