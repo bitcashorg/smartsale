@@ -34,7 +34,7 @@ export default function StepsSection({ lang, dict, id }: StepsSectionProps) {
                     {step.description}
                   </div>
                 </div>
-                <div className="w-[3.818rem] h-[4.5rem] pt-[0.938rem] flex-col justify-start items-start inline-flex">
+                <div className="w-[3.818rem] h-[4.5rem] pt-[0.938rem] flex-col-3 justify-start items-start inline-flex">
                   <div className="w-[3.818rem] h-[3.938rem] px-[1.346rem] py-[1.406rem] bg-[#e728a9] rounded-full justify-center items-center inline-flex">
                     {index > 0 ? (
                       <Link

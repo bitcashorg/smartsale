@@ -10,16 +10,21 @@ import { IconDownRightArrow } from '@/components/ui/icons'
 import { cn } from '@/lib/utils'
 import { PlayIcon } from 'lucide-react'
 import Image from 'next/image'
-import { Suspense } from 'react'
+import { useSearchParams } from 'next/navigation'
+import { Suspense, useEffect } from 'react'
 import React from 'react'
 import Balancer from 'react-wrap-balancer'
 
 // ? Hero must be always minimum of 90vh and reducing it by coyunting the height of the header.
 // ? This way user would be able to see a hint of the next section.
 export function NewHomeHero() {
-  const [showBanner, setShowBanner] = React.useState(true)
+  const searchParams = useSearchParams()
+  const referrer = searchParams.get('referrer')
+  const [showBanner, setShowBanner] = React.useState(!!referrer)
 
-  React.useEffect(() => {
+  // biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
+  useEffect(() => {
+    if (!referrer) return
     const handleScroll = () => {
       const scrollPosition = window.scrollY
       const windowHeight = window.innerHeight
@@ -46,7 +51,7 @@ export function NewHomeHero() {
 
   return (
     <section className="narrow-container mb-0 flex min-h-[calc(90vh-70px)] flex-col justify-between relative">
-      {showBanner && (
+      {showBanner && referrer && (
         <ReferralHomeBanner
           onClose={() => setShowBanner(false)}
           onJoinNow={() => scrollToSection('steps')}
