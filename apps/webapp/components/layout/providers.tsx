@@ -66,7 +66,7 @@ const prodChains: _chains = [
   aurora,
   harmonyOne,
 ]
-const devChains: _chains = [eosEvmTestnet, sepolia]
+const devChains: _chains = [{ ...eosEvmTestnet, fees: undefined }, sepolia]
 
 export const wagmiConfig = getDefaultConfig({
   appName: 'Bitlauncher',
