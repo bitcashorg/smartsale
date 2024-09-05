@@ -254,7 +254,6 @@ export type Database = {
           amount: number
           created_at: string
           deposit_hash: string
-          id: string
           issuance_hash: string | null
           presale_id: number
           project_id: number
@@ -265,7 +264,6 @@ export type Database = {
           amount: number
           created_at?: string
           deposit_hash: string
-          id?: string
           issuance_hash?: string | null
           presale_id: number
           project_id: number
@@ -276,7 +274,6 @@ export type Database = {
           amount?: number
           created_at?: string
           deposit_hash?: string
-          id?: string
           issuance_hash?: string | null
           presale_id?: number
           project_id?: number
@@ -299,7 +296,7 @@ export type Database = {
           {
             foreignKeyName: "presale_deposit_deposit_hash_fkey"
             columns: ["deposit_hash"]
-            isOneToOne: false
+            isOneToOne: true
             referencedRelation: "transaction"
             referencedColumns: ["hash"]
           },
@@ -380,28 +377,28 @@ export type Database = {
       }
       transaction: {
         Row: {
-          chain_id: number | null
-          chain_type: Database["public"]["Enums"]["chain_type"] | null
+          chain_id: number
+          chain_type: Database["public"]["Enums"]["chain_type"]
           created_at: string
-          final: boolean | null
+          final: boolean
           hash: string
-          trx_type: Database["public"]["Enums"]["trx_type"] | null
+          trx_type: Database["public"]["Enums"]["trx_type"]
         }
         Insert: {
-          chain_id?: number | null
-          chain_type?: Database["public"]["Enums"]["chain_type"] | null
+          chain_id: number
+          chain_type: Database["public"]["Enums"]["chain_type"]
           created_at?: string
-          final?: boolean | null
+          final?: boolean
           hash: string
-          trx_type?: Database["public"]["Enums"]["trx_type"] | null
+          trx_type: Database["public"]["Enums"]["trx_type"]
         }
         Update: {
-          chain_id?: number | null
-          chain_type?: Database["public"]["Enums"]["chain_type"] | null
+          chain_id?: number
+          chain_type?: Database["public"]["Enums"]["chain_type"]
           created_at?: string
-          final?: boolean | null
+          final?: boolean
           hash?: string
-          trx_type?: Database["public"]["Enums"]["trx_type"] | null
+          trx_type?: Database["public"]["Enums"]["trx_type"]
         }
         Relationships: []
       }
