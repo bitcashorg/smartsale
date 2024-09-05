@@ -31,7 +31,6 @@ export function PresaleTransactionsCard(params: {
   )
 
   useEffect(() => {
-
     const subscription = supabase
       .channel('presale_transfer_changes')
       .on(
@@ -40,25 +39,21 @@ export function PresaleTransactionsCard(params: {
           event: '*',
           schema: 'public',
           table: 'presale_deposit, transaction!presale_deposit_deposit_hash_fkey(*)',
-         // filter: `from=eq.${address}`,
+          // filter: `from=eq.${address}`,
         },
         (payload) => {
           console.log('subscription payload')
           if (payload.eventType === 'INSERT') {
             console.log('insert', payload)
-            setContributions((prev) => [
-              payload.new as PresaleContribution,
-              ...prev,
-            ])
+            setContributions((prev) => [payload.new as PresaleContribution, ...prev])
           } else if (payload.eventType === 'UPDATE') {
             console.log('update', payload)
-            setContributions(
-              (prev) =>
-                prev.map((t) =>
-                  t.deposit_hash=== payload.new.deposit_hash
-                    ? (payload.new as PresaleContribution)
-                    : t,
-                )
+            setContributions((prev) =>
+              prev.map((t) =>
+                t.deposit_hash === payload.new.deposit_hash
+                  ? (payload.new as PresaleContribution)
+                  : t,
+              ),
             )
           }
         },
@@ -111,10 +106,9 @@ export function PresaleTransactionsCard(params: {
 }
 
 function TransactionRow({ contribution }: { contribution: PresaleContribution }) {
+  const chain = prodChains.find((chain) => chain.id === contribution.transaction.chain_id)
 
-const chain = prodChains.find(chain => chain.id === contribution.transaction.chain_id)
-
-console.log('chain', chain)
+  console.log('chain', chain)
   return (
     <TableRow>
       <TableCell>
@@ -159,8 +153,11 @@ console.log('chain', chain)
         )}
       </TableCell>
       <TableCell>
-        {contribution.transaction.created_at ? new Date(contribution.transaction.created_at).toLocaleDateString() : 'N/A'}
+        {contribution.transaction.created_at
+          ? new Date(contribution.transaction.created_at).toLocaleDateString()
+          : 'N/A'}
       </TableCell>
       <TableCell>{chain?.name ?? 'Unknown Chain'}</TableCell>
     </TableRow>
   )
+}
