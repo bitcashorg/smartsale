@@ -1,6 +1,12 @@
 'use client'
-import { Button } from '@/components/ui/button'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from '@/components/ui/card'
 import {
   Table,
   TableBody,
@@ -9,22 +15,23 @@ import {
   TableHeader,
   TableRow,
 } from '@/components/ui/table'
-import { appConfig } from '@/lib/config'
 import { useSupabaseClient } from '@/services/supabase'
 import type { PresaleContribution } from '@/services/supabase/service'
 import { TestnetBLPL } from '@repo/contracts'
-import type { Tables } from '@repo/supabase'
 import { formatAddress } from '@repo/utils'
+import { prodChains } from 'app-env'
 import { useEffect, useState } from 'react'
-import { useAccount } from 'wagmi'
 
-export function PresaleTransactionsCard({ presaleData }: { presaleData: Tables<'presale'> }) {
-  const { address } = useAccount()
+export function PresaleTransactionsCard(params: {
+  contributions: PresaleContribution[]
+}) {
   const supabase = useSupabaseClient()
-  const [contributions, setTransactions] = useState<PresaleContribution[]>([])
-  const [error, setError] = useState<Error | null>(null)
+  const [contributions, setContributions] = useState<PresaleContribution[]>(
+    params.contributions,
+  )
 
   useEffect(() => {
+
     const subscription = supabase
       .channel('presale_transfer_changes')
       .on(
@@ -32,32 +39,27 @@ export function PresaleTransactionsCard({ presaleData }: { presaleData: Tables<'
         {
           event: '*',
           schema: 'public',
-          table: 'presale_deposit',
-          filter: `from=eq.${address}`,
+          table: 'presale_deposit, transaction!presale_deposit_deposit_hash_fkey(*)',
+         // filter: `from=eq.${address}`,
         },
         (payload) => {
           console.log('subscription payload')
           if (payload.eventType === 'INSERT') {
             console.log('insert', payload)
-            // setTransactions((prev) => [
-            //   payload.new as Tables<'transfer'>,
-            //   ...prev,
-            // ])
+            setContributions((prev) => [
+              payload.new as PresaleContribution,
+              ...prev,
+            ])
           } else if (payload.eventType === 'UPDATE') {
             console.log('update', payload)
-            // setTransactions(
-            //   (prev) =>
-            //     prev.map((t) =>
-            //       t.hash === payload.new.hash
-            //         ? (payload.new as Tables<'transfer'>)
-            //         : t,
-            //     ),
-            //   // .sort(
-            //   //   (a, b) =>
-            //   //     new Date(b.created_at).getTime() -
-            //   //     new Date(a.created_at).getTime(),
-            //   // ),
-            // )
+            setContributions(
+              (prev) =>
+                prev.map((t) =>
+                  t.deposit_hash=== payload.new.deposit_hash
+                    ? (payload.new as PresaleContribution)
+                    : t,
+                )
+            )
           }
         },
       )
@@ -66,7 +68,7 @@ export function PresaleTransactionsCard({ presaleData }: { presaleData: Tables<'
     return () => {
       subscription.unsubscribe()
     }
-  }, [address, supabase])
+  }, [supabase])
 
   return (
     <Card x-chunk="dashboard-01-chunk-4">
@@ -90,19 +92,13 @@ export function PresaleTransactionsCard({ presaleData }: { presaleData: Tables<'
             </TableRow>
           </TableHeader>
           <TableBody>
-            {error ? (
-              <TableRow>
-                <TableCell colSpan={5} className="text-center text-red-500">
-                  Error: {error.message}
-                </TableCell>
-              </TableRow>
-            ) : contributions.length > 0 ? (
+            {contributions.length > 0 ? (
               contributions.map((contribution) => (
                 <TransactionRow key={contribution.id} contribution={contribution} />
               ))
             ) : (
               <TableRow>
-                <TableCell colSpan={5} className="text-center">
+                <TableCell colSpan={6} className="text-center">
                   No transactions found
                 </TableCell>
               </TableRow>
@@ -115,10 +111,10 @@ export function PresaleTransactionsCard({ presaleData }: { presaleData: Tables<'
 }
 
 function TransactionRow({ contribution }: { contribution: PresaleContribution }) {
-  const chain = contribution.transaction.chain_id
-    ? appConfig.chains.get(contribution.transaction.chain_id)
-    : null
 
+const chain = prodChains.find(chain => chain.id === contribution.transaction.chain_id)
+
+console.log('chain', chain)
   return (
     <TableRow>
       <TableCell>
@@ -126,7 +122,9 @@ function TransactionRow({ contribution }: { contribution: PresaleContribution })
       </TableCell>
 
       <TableCell>
-        {contribution.amount !== null ? (contribution.amount / 1000000).toFixed(6) : 'N/A'}
+        {contribution.amount !== null
+          ? (contribution.amount / 1000000).toFixed(6)
+          : 'N/A'}
       </TableCell>
 
       <TableCell>
@@ -160,8 +158,9 @@ function TransactionRow({ contribution }: { contribution: PresaleContribution })
           'pending'
         )}
       </TableCell>
-      <TableCell>{new Date(contribution.transaction.created_at).toLocaleDateString()}</TableCell>
-      <TableCell>{chain?.name}</TableCell>
+      <TableCell>
+        {contribution.transaction.created_at ? new Date(contribution.transaction.created_at).toLocaleDateString() : 'N/A'}
+      </TableCell>
+      <TableCell>{chain?.name ?? 'Unknown Chain'}</TableCell>
     </TableRow>
   )
-}
