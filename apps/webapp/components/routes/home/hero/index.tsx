@@ -58,9 +58,10 @@ export function NewHomeHero() {
         <div className="text-left">
           <h1 className="heroHeading">
             <Balancer>
-              EARLY ACCESS TO <br />
-              THE NEXT <span className="text-accent-400">GLOBAL</span> <br />
-              <span className="text-accent-400">AI UNICORNS</span>
+              EARLY ACCESS
+              <br />
+              TO THE NEXT <span className="text-accent-400">GLOBAL AI</span> <br />
+              <span className="text-accent-400">UNICORNS</span>
             </Balancer>
           </h1>
         </div>
