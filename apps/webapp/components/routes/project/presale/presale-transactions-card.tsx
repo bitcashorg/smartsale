@@ -89,7 +89,10 @@ export function PresaleTransactionsCard(params: {
           <TableBody>
             {contributions.length > 0 ? (
               contributions.map((contribution) => (
-                <TransactionRow key={contribution.id} contribution={contribution} />
+                <TransactionRow
+                  key={contribution.transaction.hash}
+                  contribution={contribution}
+                />
               ))
             ) : (
               <TableRow>
