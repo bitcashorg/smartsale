@@ -12,7 +12,7 @@ import { addressActivityTask } from '@repo/jobs'
 import { evmTokens } from '@repo/tokens'
 import { prodChains } from 'app-env'
 import type { Request, Response } from 'express'
-import { getAddress } from 'viem'
+import { getAddress, parseUnits } from 'viem'
 import { appConfig } from '~/config'
 import { logger } from '~/lib/logger'
 import {
@@ -82,6 +82,14 @@ export async function alchemyWebhook(req: Request, res: Response) {
     // Get presale data and validate amount and timing
     const presaleData = await getPresaleData(1)
 
+    const stableCoinDecimals = 6 // USDC/USDT has 6 decimal places
+
+    // Define maxAllocationInUnits based on presaleData
+    const maxAllocationInUnits = parseUnits(
+      presaleData.max_allocation.toString(),
+      stableCoinDecimals,
+    ) // Convert to smallest unit
+
     // Check if account already bought
     const deposits = await getPresaleDeposits({
       address: getAddress(txn.fromAddress),
@@ -91,7 +99,14 @@ export async function alchemyWebhook(req: Request, res: Response) {
       (acc, deposit) => acc + Number(deposit.amount),
       0,
     )
-    const isValidAmount = txn.value + totalDeposits <= presaleData.max_allocation
+
+    // Convert txn.value to its smallest unit
+    // TODO: handle USDC 18 using the tokens package info
+    const txnValueInUnits = parseUnits(txn.value.toString(), stableCoinDecimals)
+    const totalDepositsInUnits = BigInt(totalDeposits) // Convert totalDeposits to bigint
+
+    const isValidAmount =
+      txnValueInUnits + totalDepositsInUnits >= presaleData.max_allocation
     const currentTimestamp = Date.now() // Current time in seconds
     const isWithinPresalePeriod = true
     // currentTimestamp >= Number(presaleData.start_timestamptz) &&

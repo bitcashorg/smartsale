@@ -131,6 +131,44 @@ export const auctionRelationshipsSchema = z.tuple([
   }),
 ]);
 
+export const auctionOrderRowSchema = z.object({
+  auction_id: z.number(),
+  buy_amount: z.number(),
+  created_at: z.string(),
+  price: z.number().nullable(),
+  sell_amount: z.number(),
+  timestamp: z.string().nullable(),
+  transactionHash: z.string(),
+  user_id: z.number(),
+  volume: z.number().nullable(),
+});
+
+export const auctionOrderInsertSchema = z.object({
+  auction_id: z.number(),
+  buy_amount: z.number(),
+  created_at: z.string().optional(),
+  price: z.number().optional().nullable(),
+  sell_amount: z.number(),
+  timestamp: z.string().optional().nullable(),
+  transactionHash: z.string(),
+  user_id: z.number(),
+  volume: z.number().optional().nullable(),
+});
+
+export const auctionOrderUpdateSchema = z.object({
+  auction_id: z.number().optional(),
+  buy_amount: z.number().optional(),
+  created_at: z.string().optional(),
+  price: z.number().optional().nullable(),
+  sell_amount: z.number().optional(),
+  timestamp: z.string().optional().nullable(),
+  transactionHash: z.string().optional(),
+  user_id: z.number().optional(),
+  volume: z.number().optional().nullable(),
+});
+
+export const auctionOrderRelationshipsSchema = z.tuple([]);
+
 export const esrRowSchema = z.object({
   account: z.string(),
   code: z.string(),
@@ -157,65 +195,28 @@ export const esrUpdateSchema = z.object({
 
 export const esrRelationshipsSchema = z.tuple([]);
 
-export const indexerRowSchema = z.object({
+export const indexerMetaRowSchema = z.object({
   id: z.number(),
   last_indexed_block: z.string(),
 });
 
-export const indexerInsertSchema = z.object({
+export const indexerMetaInsertSchema = z.object({
   id: z.number().optional(),
   last_indexed_block: z.string(),
 });
 
-export const indexerUpdateSchema = z.object({
+export const indexerMetaUpdateSchema = z.object({
   id: z.number().optional(),
   last_indexed_block: z.string().optional(),
 });
 
-export const indexerRelationshipsSchema = z.tuple([]);
-
-export const orderRowSchema = z.object({
-  auction_id: z.number(),
-  buy_amount: z.number(),
-  created_at: z.string(),
-  price: z.number().nullable(),
-  sell_amount: z.number(),
-  timestamp: z.string().nullable(),
-  transactionHash: z.string(),
-  user_id: z.number(),
-  volume: z.number().nullable(),
-});
-
-export const orderInsertSchema = z.object({
-  auction_id: z.number(),
-  buy_amount: z.number(),
-  created_at: z.string().optional(),
-  price: z.number().optional().nullable(),
-  sell_amount: z.number(),
-  timestamp: z.string().optional().nullable(),
-  transactionHash: z.string(),
-  user_id: z.number(),
-  volume: z.number().optional().nullable(),
-});
-
-export const orderUpdateSchema = z.object({
-  auction_id: z.number().optional(),
-  buy_amount: z.number().optional(),
-  created_at: z.string().optional(),
-  price: z.number().optional().nullable(),
-  sell_amount: z.number().optional(),
-  timestamp: z.string().optional().nullable(),
-  transactionHash: z.string().optional(),
-  user_id: z.number().optional(),
-  volume: z.number().optional().nullable(),
-});
-
-export const orderRelationshipsSchema = z.tuple([]);
+export const indexerMetaRelationshipsSchema = z.tuple([]);
 
 export const presaleRowSchema = z.object({
   account: z.string(),
   address: z.string(),
   close_timestamptz: z.string().nullable(),
+  contributors: z.number(),
   created_at: z.string(),
   end_timestamptz: z.string(),
   fundraising_goal: z.number(),
@@ -230,6 +231,7 @@ export const presaleInsertSchema = z.object({
   account: z.string(),
   address: z.string(),
   close_timestamptz: z.string().optional().nullable(),
+  contributors: z.number().optional(),
   created_at: z.string().optional(),
   end_timestamptz: z.string(),
   fundraising_goal: z.number(),
@@ -244,6 +246,7 @@ export const presaleUpdateSchema = z.object({
   account: z.string().optional(),
   address: z.string().optional(),
   close_timestamptz: z.string().optional().nullable(),
+  contributors: z.number().optional(),
   created_at: z.string().optional(),
   end_timestamptz: z.string().optional(),
   fundraising_goal: z.number().optional(),
@@ -441,41 +444,6 @@ export const transactionUpdateSchema = z.object({
 });
 
 export const transactionRelationshipsSchema = z.tuple([]);
-
-export const transferRowSchema = z.object({
-  amount: z.number().nullable(),
-  bl_presale_trx: z.string().nullable(),
-  from: z.string().nullable(),
-  to: z.string().nullable(),
-  token: z.string().nullable(),
-  trx_hash: z.string(),
-  type: z.string().nullable(),
-  usdcred_trx: z.string().nullable(),
-});
-
-export const transferInsertSchema = z.object({
-  amount: z.number().optional().nullable(),
-  bl_presale_trx: z.string().optional().nullable(),
-  from: z.string().optional().nullable(),
-  to: z.string().optional().nullable(),
-  token: z.string().optional().nullable(),
-  trx_hash: z.string(),
-  type: z.string().optional().nullable(),
-  usdcred_trx: z.string().optional().nullable(),
-});
-
-export const transferUpdateSchema = z.object({
-  amount: z.number().optional().nullable(),
-  bl_presale_trx: z.string().optional().nullable(),
-  from: z.string().optional().nullable(),
-  to: z.string().optional().nullable(),
-  token: z.string().optional().nullable(),
-  trx_hash: z.string().optional(),
-  type: z.string().optional().nullable(),
-  usdcred_trx: z.string().optional().nullable(),
-});
-
-export const transferRelationshipsSchema = z.tuple([]);
 
 export const whitelistRowSchema = z.object({
   account: z.string(),

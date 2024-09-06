@@ -1,0 +1,260 @@
+revoke delete on table "public"."indexer" from "anon";
+
+revoke insert on table "public"."indexer" from "anon";
+
+revoke references on table "public"."indexer" from "anon";
+
+revoke select on table "public"."indexer" from "anon";
+
+revoke trigger on table "public"."indexer" from "anon";
+
+revoke truncate on table "public"."indexer" from "anon";
+
+revoke update on table "public"."indexer" from "anon";
+
+revoke delete on table "public"."indexer" from "authenticated";
+
+revoke insert on table "public"."indexer" from "authenticated";
+
+revoke references on table "public"."indexer" from "authenticated";
+
+revoke select on table "public"."indexer" from "authenticated";
+
+revoke trigger on table "public"."indexer" from "authenticated";
+
+revoke truncate on table "public"."indexer" from "authenticated";
+
+revoke update on table "public"."indexer" from "authenticated";
+
+revoke delete on table "public"."indexer" from "service_role";
+
+revoke insert on table "public"."indexer" from "service_role";
+
+revoke references on table "public"."indexer" from "service_role";
+
+revoke select on table "public"."indexer" from "service_role";
+
+revoke trigger on table "public"."indexer" from "service_role";
+
+revoke truncate on table "public"."indexer" from "service_role";
+
+revoke update on table "public"."indexer" from "service_role";
+
+revoke delete on table "public"."order" from "anon";
+
+revoke insert on table "public"."order" from "anon";
+
+revoke references on table "public"."order" from "anon";
+
+revoke select on table "public"."order" from "anon";
+
+revoke trigger on table "public"."order" from "anon";
+
+revoke truncate on table "public"."order" from "anon";
+
+revoke update on table "public"."order" from "anon";
+
+revoke delete on table "public"."order" from "authenticated";
+
+revoke insert on table "public"."order" from "authenticated";
+
+revoke references on table "public"."order" from "authenticated";
+
+revoke select on table "public"."order" from "authenticated";
+
+revoke trigger on table "public"."order" from "authenticated";
+
+revoke truncate on table "public"."order" from "authenticated";
+
+revoke update on table "public"."order" from "authenticated";
+
+revoke delete on table "public"."order" from "service_role";
+
+revoke insert on table "public"."order" from "service_role";
+
+revoke references on table "public"."order" from "service_role";
+
+revoke select on table "public"."order" from "service_role";
+
+revoke trigger on table "public"."order" from "service_role";
+
+revoke truncate on table "public"."order" from "service_role";
+
+revoke update on table "public"."order" from "service_role";
+
+revoke delete on table "public"."transfer" from "anon";
+
+revoke insert on table "public"."transfer" from "anon";
+
+revoke references on table "public"."transfer" from "anon";
+
+revoke select on table "public"."transfer" from "anon";
+
+revoke trigger on table "public"."transfer" from "anon";
+
+revoke truncate on table "public"."transfer" from "anon";
+
+revoke update on table "public"."transfer" from "anon";
+
+revoke delete on table "public"."transfer" from "authenticated";
+
+revoke insert on table "public"."transfer" from "authenticated";
+
+revoke references on table "public"."transfer" from "authenticated";
+
+revoke select on table "public"."transfer" from "authenticated";
+
+revoke trigger on table "public"."transfer" from "authenticated";
+
+revoke truncate on table "public"."transfer" from "authenticated";
+
+revoke update on table "public"."transfer" from "authenticated";
+
+revoke delete on table "public"."transfer" from "service_role";
+
+revoke insert on table "public"."transfer" from "service_role";
+
+revoke references on table "public"."transfer" from "service_role";
+
+revoke select on table "public"."transfer" from "service_role";
+
+revoke trigger on table "public"."transfer" from "service_role";
+
+revoke truncate on table "public"."transfer" from "service_role";
+
+revoke update on table "public"."transfer" from "service_role";
+
+alter table "public"."transfer" drop constraint "transfer_bl_presale_trx_key";
+
+alter table "public"."indexer" drop constraint "indexer_pkey";
+
+alter table "public"."order" drop constraint "orders_pkey";
+
+alter table "public"."transfer" drop constraint "transfers_pkey";
+
+drop index if exists "public"."transfer_bl_presale_trx_key";
+
+drop index if exists "public"."transfers_pkey";
+
+drop index if exists "public"."indexer_pkey";
+
+drop index if exists "public"."orders_pkey";
+
+drop table "public"."indexer";
+
+drop table "public"."order";
+
+drop table "public"."transfer";
+
+create table "public"."auction_order" (
+    "created_at" timestamp(6) with time zone not null default CURRENT_TIMESTAMP,
+    "auction_id" bigint not null,
+    "sell_amount" bigint not null,
+    "buy_amount" bigint not null,
+    "user_id" bigint not null,
+    "price" integer,
+    "volume" bigint,
+    "timestamp" timestamp(6) without time zone,
+    "transactionHash" text not null
+);
+
+
+create table "public"."indexer_meta" (
+    "id" bigint generated by default as identity not null,
+    "last_indexed_block" text not null
+);
+
+
+CREATE UNIQUE INDEX indexer_pkey ON public.indexer_meta USING btree (id);
+
+CREATE UNIQUE INDEX orders_pkey ON public.auction_order USING btree ("transactionHash");
+
+alter table "public"."auction_order" add constraint "orders_pkey" PRIMARY KEY using index "orders_pkey";
+
+alter table "public"."indexer_meta" add constraint "indexer_pkey" PRIMARY KEY using index "indexer_pkey";
+
+grant delete on table "public"."auction_order" to "anon";
+
+grant insert on table "public"."auction_order" to "anon";
+
+grant references on table "public"."auction_order" to "anon";
+
+grant select on table "public"."auction_order" to "anon";
+
+grant trigger on table "public"."auction_order" to "anon";
+
+grant truncate on table "public"."auction_order" to "anon";
+
+grant update on table "public"."auction_order" to "anon";
+
+grant delete on table "public"."auction_order" to "authenticated";
+
+grant insert on table "public"."auction_order" to "authenticated";
+
+grant references on table "public"."auction_order" to "authenticated";
+
+grant select on table "public"."auction_order" to "authenticated";
+
+grant trigger on table "public"."auction_order" to "authenticated";
+
+grant truncate on table "public"."auction_order" to "authenticated";
+
+grant update on table "public"."auction_order" to "authenticated";
+
+grant delete on table "public"."auction_order" to "service_role";
+
+grant insert on table "public"."auction_order" to "service_role";
+
+grant references on table "public"."auction_order" to "service_role";
+
+grant select on table "public"."auction_order" to "service_role";
+
+grant trigger on table "public"."auction_order" to "service_role";
+
+grant truncate on table "public"."auction_order" to "service_role";
+
+grant update on table "public"."auction_order" to "service_role";
+
+grant delete on table "public"."indexer_meta" to "anon";
+
+grant insert on table "public"."indexer_meta" to "anon";
+
+grant references on table "public"."indexer_meta" to "anon";
+
+grant select on table "public"."indexer_meta" to "anon";
+
+grant trigger on table "public"."indexer_meta" to "anon";
+
+grant truncate on table "public"."indexer_meta" to "anon";
+
+grant update on table "public"."indexer_meta" to "anon";
+
+grant delete on table "public"."indexer_meta" to "authenticated";
+
+grant insert on table "public"."indexer_meta" to "authenticated";
+
+grant references on table "public"."indexer_meta" to "authenticated";
+
+grant select on table "public"."indexer_meta" to "authenticated";
+
+grant trigger on table "public"."indexer_meta" to "authenticated";
+
+grant truncate on table "public"."indexer_meta" to "authenticated";
+
+grant update on table "public"."indexer_meta" to "authenticated";
+
+grant delete on table "public"."indexer_meta" to "service_role";
+
+grant insert on table "public"."indexer_meta" to "service_role";
+
+grant references on table "public"."indexer_meta" to "service_role";
+
+grant select on table "public"."indexer_meta" to "service_role";
+
+grant trigger on table "public"."indexer_meta" to "service_role";
+
+grant truncate on table "public"."indexer_meta" to "service_role";
+
+grant update on table "public"."indexer_meta" to "service_role";
+
+
