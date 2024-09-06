@@ -31,20 +31,21 @@ export function PresaleTransactionsCard(params: {
   )
 
   useEffect(() => {
+    console.log('🔥 subscribing to supabase deposit changes')
     const subscription = supabase
-      .channel('presale_transfer_changes')
+      .channel('presale_deposit_updates')
       .on(
         'postgres_changes',
         {
           event: '*',
           schema: 'public',
-          table: 'presale_deposit, transaction!presale_deposit_deposit_hash_fkey(*)',
+          table: 'presale_deposit!transaction(*), transaction',
           // filter: `from=eq.${address}`,
         },
         (payload) => {
           console.log('subscription payload')
           if (payload.eventType === 'INSERT') {
-            console.log('insert', payload)
+            console.log('😤 insert', payload)
             setContributions((prev) => [payload.new as PresaleContribution, ...prev])
           } else if (payload.eventType === 'UPDATE') {
             console.log('update', payload)
@@ -111,8 +112,6 @@ export function PresaleTransactionsCard(params: {
 
 function TransactionRow({ contribution }: { contribution: PresaleContribution }) {
   const chain = prodChains.find((chain) => chain.id === contribution.transaction.chain_id)
-
-  console.log('chain', chain)
   return (
     <TableRow>
       <TableCell>

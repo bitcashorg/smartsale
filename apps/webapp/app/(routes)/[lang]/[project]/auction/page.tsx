@@ -26,7 +26,7 @@ export default async function AuctionPage({ params }: ProjectPageProps) {
   if (!p || (!p.auctionId && !p.registrationOpen)) redirect('/')
   const project = p as ProjectWithAuction
   const supabase = await createSupabaseServerClient()
-  const presaleData = await getPresaleData({ projectId: project.id, supabase })
+  const presale = await getPresaleData({ projectId: project.id, supabase })
 
   return (
     <div className="flex min-h-[calc(83vh-4rem)] flex-col">
@@ -36,7 +36,7 @@ export default async function AuctionPage({ params }: ProjectPageProps) {
             <Card className="border-card/30 bg-card/60 backdrop-blur-lg">
               <Countdown targetDate={new Date()} heading="Auction Countdown" />
               <CardContent>
-                <ProjectPresaleData presaleData={presaleData} numberOfContributors={0} />
+                <ProjectPresaleData presale={presale} numberOfContributors={0} />
               </CardContent>
             </Card>
 
@@ -48,6 +48,7 @@ export default async function AuctionPage({ params }: ProjectPageProps) {
                 </CardDescription>
               </CardHeader>
               <CardContent>
+                {/* biome-ignore lint/style/noNonNullAssertion: <explanation> */}
                 <AuctionBids project={project!} />
               </CardContent>
             </Card>

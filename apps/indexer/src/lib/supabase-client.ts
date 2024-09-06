@@ -28,8 +28,8 @@ export async function upsertAuctionDetail(data: TablesInsert<'auction'>) {
   return data
 }
 
-export async function upsertOrder(data: TablesInsert<'order'>) {
-  const { data: result, error } = await supabase.from('order').upsert(
+export async function upsertOrder(data: TablesInsert<'auction_order'>) {
+  const { data: result, error } = await supabase.from('auction_order').upsert(
     [
       {
         ...data,

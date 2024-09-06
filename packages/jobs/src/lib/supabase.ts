@@ -1,5 +1,6 @@
 import type { Database, Tables, TablesInsert } from '@repo/supabase'
 import { createClient } from '@supabase/supabase-js'
+import { uniq, uniqBy } from 'lodash'
 import { appConfig } from '~/config'
 
 // Initialize Supabase client
@@ -53,6 +54,21 @@ export async function upsertPresaleDeposits({
     console.error('Error fetching current total raised:', currentPresale.error)
     return false
   }
+  const allAccounts = await supabase
+    .from('presale_deposit')
+    .select('account')
+    .eq('presale_id', deposit.data.presale_id)
+
+  if (allAccounts.error) {
+    console.error('Error fetching counting accounts:')
+    return false
+  }
+
+  const uniqueAccounts = uniqBy(allAccounts.data, 'account')
+
+  console.log('🚀 uniqueAccounts', uniqueAccounts)
+
+  console.log('Total unique presale_deposit accounts:', uniqueAccounts)
 
   const newTotalRaised =
     Number(currentPresale.data.total_raised) + Number(valueInTokenUnits)
@@ -61,6 +77,7 @@ export async function upsertPresaleDeposits({
     .from('presale')
     .update({
       total_raised: newTotalRaised,
+      contributors: uniqueAccounts.length,
     })
     .eq('id', deposit.data.presale_id)
     .select()

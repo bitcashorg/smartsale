@@ -20,54 +20,54 @@ export function TransactionsTable() {
   const { address } = useAccount()
   const [transactions, setTransactions] = useState<any[]>([])
 
-  useEffect(() => {
-    if (!address) return
-    const fetchOrders = async (address: Address) => {
-      const { data, error } = await supabase
-        .from('transfer')
-        .select('*')
-        .eq('from', address)
-        .order('created_at', { ascending: false })
+  // useEffect(() => {
+  //   if (!address) return
+  //   const fetchOrders = async (address: Address) => {
+  //     const { data, error } = await supabase
+  //       .from('transfer')
+  //       .select('*')
+  //       .eq('from', address)
+  //       .order('created_at', { ascending: false })
 
-      if (error) return
-      setTransactions(data)
-    }
-    fetchOrders(address)
-    const channel1 = supabase
-      .channel('transfers')
-      .on(
-        'postgres_changes',
-        { event: 'INSERT', schema: 'public', table: 'transfers' },
-        (payload) => {
-          const isSameAddress = payload.new.from === address
-          if (!isSameAddress) return
-          setTransactions((transactions) => {
-            return [payload.new, ...transactions]
-          })
-        },
-      )
-      .subscribe()
+  //     if (error) return
+  //     setTransactions(data)
+  //   }
+  //   fetchOrders(address)
+  //   const channel1 = supabase
+  //     .channel('transfers')
+  //     .on(
+  //       'postgres_changes',
+  //       { event: 'INSERT', schema: 'public', table: 'transfers' },
+  //       (payload) => {
+  //         const isSameAddress = payload.new.from === address
+  //         if (!isSameAddress) return
+  //         setTransactions((transactions) => {
+  //           return [payload.new, ...transactions]
+  //         })
+  //       },
+  //     )
+  //     .subscribe()
 
-    const channel2 = supabase
-      .channel('transfers')
-      .on(
-        'postgres_changes',
-        { event: 'UPDATE', schema: 'public', table: 'transfers' },
-        (payload) => {
-          const isSameAddress = payload.new.from === address
-          if (!isSameAddress) return
-          setTransactions((transactions) => {
-            return [payload.new, ...transactions]
-          })
-        },
-      )
-      .subscribe()
+  //   const channel2 = supabase
+  //     .channel('transfers')
+  //     .on(
+  //       'postgres_changes',
+  //       { event: 'UPDATE', schema: 'public', table: 'transfers' },
+  //       (payload) => {
+  //         const isSameAddress = payload.new.from === address
+  //         if (!isSameAddress) return
+  //         setTransactions((transactions) => {
+  //           return [payload.new, ...transactions]
+  //         })
+  //       },
+  //     )
+  //     .subscribe()
 
-    return () => {
-      supabase.removeChannel(channel1)
-      supabase.removeChannel(channel2)
-    }
-  }, [setTransactions, address, supabase])
+  //   return () => {
+  //     supabase.removeChannel(channel1)
+  //     supabase.removeChannel(channel2)
+  //   }
+  // }, [setTransactions, address, supabase])
 
   return (
     <div>

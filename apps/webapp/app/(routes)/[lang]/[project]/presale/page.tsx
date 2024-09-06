@@ -24,10 +24,10 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 
   const supabase = await createSupabaseServerClient()
   // TODO: optimize this in a single query
-  const presaleData = await getPresaleData({ projectId: project.id, supabase })
+  const presale = await getPresaleData({ projectId: project.id, supabase })
   // const projectData = await getProjectData({ projectId: project.id, supabase })
   const presaleContributions = await getPresaleContributions({
-    presaleId: presaleData.id,
+    presaleId: presale.id,
     supabase,
   })
 
@@ -37,20 +37,20 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         <div className="mb-10 grid grid-cols-1 gap-8 lg:grid-cols-2">
           <Card className="border-card/30 bg-card/60 backdrop-blur-lg">
             <Countdown
-              targetDate={new Date(presaleData.end_timestamptz)}
+              targetDate={new Date(presale.end_timestamptz)}
               heading="Presale Ends In:"
             />
             <CardContent>
               <ProjectPresaleData
-                presaleData={presaleData}
-                numberOfContributors={presaleContributions.contributors}
+                presale={presale}
+                numberOfContributors={presale.contributors}
               />
             </CardContent>
           </Card>
 
           <PresaleDepositCard
             project={project}
-            presaleAddress={getAddress(presaleData.address)}
+            presaleAddress={getAddress(presale.address)}
           />
         </div>
 

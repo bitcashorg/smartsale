@@ -122,46 +122,7 @@ export type Database = {
           },
         ]
       }
-      esr: {
-        Row: {
-          account: string
-          code: string
-          created_at: string
-          id: string
-          trx_id: string
-        }
-        Insert: {
-          account: string
-          code: string
-          created_at?: string
-          id?: string
-          trx_id: string
-        }
-        Update: {
-          account?: string
-          code?: string
-          created_at?: string
-          id?: string
-          trx_id?: string
-        }
-        Relationships: []
-      }
-      indexer: {
-        Row: {
-          id: number
-          last_indexed_block: string
-        }
-        Insert: {
-          id?: number
-          last_indexed_block: string
-        }
-        Update: {
-          id?: number
-          last_indexed_block?: string
-        }
-        Relationships: []
-      }
-      order: {
+      auction_order: {
         Row: {
           auction_id: number
           buy_amount: number
@@ -197,11 +158,51 @@ export type Database = {
         }
         Relationships: []
       }
+      esr: {
+        Row: {
+          account: string
+          code: string
+          created_at: string
+          id: string
+          trx_id: string
+        }
+        Insert: {
+          account: string
+          code: string
+          created_at?: string
+          id?: string
+          trx_id: string
+        }
+        Update: {
+          account?: string
+          code?: string
+          created_at?: string
+          id?: string
+          trx_id?: string
+        }
+        Relationships: []
+      }
+      indexer_meta: {
+        Row: {
+          id: number
+          last_indexed_block: string
+        }
+        Insert: {
+          id?: number
+          last_indexed_block: string
+        }
+        Update: {
+          id?: number
+          last_indexed_block?: string
+        }
+        Relationships: []
+      }
       presale: {
         Row: {
           account: string
           address: string
           close_timestamptz: string | null
+          contributors: number
           created_at: string
           end_timestamptz: string
           fundraising_goal: number
@@ -215,6 +216,7 @@ export type Database = {
           account: string
           address: string
           close_timestamptz?: string | null
+          contributors?: number
           created_at?: string
           end_timestamptz: string
           fundraising_goal: number
@@ -228,6 +230,7 @@ export type Database = {
           account?: string
           address?: string
           close_timestamptz?: string | null
+          contributors?: number
           created_at?: string
           end_timestamptz?: string
           fundraising_goal?: number
@@ -399,39 +402,6 @@ export type Database = {
           final?: boolean
           hash?: string
           trx_type?: Database["public"]["Enums"]["trx_type"]
-        }
-        Relationships: []
-      }
-      transfer: {
-        Row: {
-          amount: number | null
-          bl_presale_trx: string | null
-          from: string | null
-          to: string | null
-          token: string | null
-          trx_hash: string
-          type: string | null
-          usdcred_trx: string | null
-        }
-        Insert: {
-          amount?: number | null
-          bl_presale_trx?: string | null
-          from?: string | null
-          to?: string | null
-          token?: string | null
-          trx_hash: string
-          type?: string | null
-          usdcred_trx?: string | null
-        }
-        Update: {
-          amount?: number | null
-          bl_presale_trx?: string | null
-          from?: string | null
-          to?: string | null
-          token?: string | null
-          trx_hash?: string
-          type?: string | null
-          usdcred_trx?: string | null
         }
         Relationships: []
       }
