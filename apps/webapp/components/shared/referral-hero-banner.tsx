@@ -64,13 +64,13 @@ export default function ReferralHomeBanner({
           <div className="bg-[#0F113E] md:w-1/2 px-16 py-[2.625rem] mx-auto shadow-md bg-gradient-to-br to-cornflowerblue-20 rounded-lg justify-between items-center">
             <Button
               variant="accent"
-              className="flex items-center gap-6 px-6 py-3 mx-auto font-semibold rounded-full md:px-10"
+              className="flex items-center gap-6 p-6 mx-auto font-semibold rounded-full group"
               onClick={onJoinNow}
             >
               {content.callToAction}
               <IconDownRightArrow className="size-4 transition-all group-focus-within:-rotate-45 group-hover:-rotate-45 [&_path]:stroke-white" />
             </Button>
-            <Button variant="cta" onClick={onHowItWorks}>
+            <Button variant="cta" className="text-sm py-0" onClick={onHowItWorks}>
               {content.callToAction2}
               <span className="block max-w-0 group-hover:max-w-full group-focus-within:max-w-full transition-all duration-500 h-0.5 bg-[#ff00aa]" />
             </Button>

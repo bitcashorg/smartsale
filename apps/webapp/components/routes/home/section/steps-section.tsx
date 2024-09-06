@@ -1,7 +1,7 @@
 'use client'
 
 import { Section } from '@/components/shared/section'
-import { buttonVariants } from '@/components/ui/button'
+import { Button, buttonVariants } from '@/components/ui/button'
 import { IconDownRightArrow } from '@/components/ui/icons'
 import type { Lang } from '@/dictionaries/locales'
 import { useSession } from '@/hooks/use-session'
@@ -51,18 +51,14 @@ export default function StepsSection({ lang, dict, id }: StepsSectionProps) {
                       </Link>
                     ) : (
                       // biome-ignore lint/a11y/useKeyWithClickEvents: <explanation>
-                      <div
+                      <Button
+                        variant="accent"
+                        size="icon"
                         onClick={createAccount}
-                        className={cn(
-                          buttonVariants({
-                            variant: 'accent',
-                            size: 'icon',
-                          }),
-                          'text-md group relative size-14 rounded-full p-0 font-bold hover:[&svg]:fill-card',
-                        )}
+                        className="text-md group relative size-14 rounded-full p-0 font-bold hover:[&svg]:fill-card"
                       >
                         <IconDownRightArrow className="size-4 transition-all group-focus-within:-rotate-45 group-hover:-rotate-45 [&_path]:stroke-white" />
-                      </div>
+                      </Button>
                     )}
                   </div>
                 </div>

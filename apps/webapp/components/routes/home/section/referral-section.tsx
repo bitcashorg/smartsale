@@ -37,16 +37,15 @@ export function ReferralSection() {
           <h2 className="mb-4 text-cente text-[2.188rem] font-bold leading-normal text-white">
             {content.title}
           </h2>
-          {/* biome-ignore lint/style/useSelfClosingElements: <explanation> */}
-          <div className="w-12 h-1 bg-[#ff00aa] mb-4"></div>
+          <div className="w-12 h-1 bg-[#ff00aa] mb-4" />
           <p className="mb-4 text-xl font-normal text-white opacity-40">
             {content.paragraph}
           </p>
           <p className="mb-6 font-bold text-white">{content.paragraph2}</p>
-          <div className="flex flex-col items-center gap-4 text-xl">
+          <div className="flex flex-col items-center gap-3 text-xl">
             <Button
               variant="accent"
-              className="flex items-center gap-6 px-6 py-3 mx-auto font-semibold rounded-full md:px-10"
+              className="flex items-center gap-6 p-6 mx-auto font-semibold rounded-full group"
               onClick={handleCallToAction}
             >
               {content.callToAction}
@@ -54,10 +53,9 @@ export function ReferralSection() {
             </Button>
             <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
               <DialogTrigger asChild>
-                <Button variant="cta" onClick={() => setIsModalOpen(true)}>
+                <Button variant="cta" className="text-sm py-0 h-auto" onClick={() => setIsModalOpen(true)}>
                   {content.callToAction2}
-                  {/* biome-ignore lint/style/useSelfClosingElements: <explanation> */}
-                  <span className="block max-w-0 group-hover:max-w-full group-focus-within:max-w-full transition-all duration-500 h-0.5 bg-[#ff00aa]"></span>
+                  <span className="block max-w-0 group-hover:max-w-full group-focus-within:max-w-full transition-all duration-500 h-0.5 bg-[#ff00aa]" />
                 </Button>
               </DialogTrigger>
               <DialogContent className="w-auto p-0 bg-transparent border-none shadow-none max-w-none">

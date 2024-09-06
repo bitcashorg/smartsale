@@ -88,9 +88,9 @@ export function OnboardingCarousel({ onClose }: OnboardingCarouselProps) {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <div className="absolute left-0 right-0 px-4 bottom-4">
+        <div className="absolute left-0 right-0 bottom-0 px-4">
           <div className="grid items-center grid-cols-3">
-            <div className="flex justify-center">
+            <div className="flex justify-center mt-8">
               <CarouselPrevious className="relative w-10 h-10 text-white scale-125 bg-transparent border-none hover:text-black" />
             </div>
             <div className="flex justify-center space-x-2">
@@ -103,7 +103,7 @@ export function OnboardingCarousel({ onClose }: OnboardingCarouselProps) {
                 />
               ))}
             </div>
-            <div className="flex justify-center">
+            <div className="flex justify-center mt-8">
               <CarouselNext className="relative w-10 h-10 text-white scale-125 bg-transparent border-none hover:text-black" />
             </div>
           </div>
