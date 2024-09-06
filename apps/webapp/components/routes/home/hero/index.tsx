@@ -7,53 +7,45 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Button, buttonVariants } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { IconDownRightArrow } from '@/components/ui/icons'
+import { useReferral } from '@/hooks/use-referral'
 import { cn } from '@/lib/utils'
 import { PlayIcon } from 'lucide-react'
 import Image from 'next/image'
-import { useSearchParams } from 'next/navigation'
 import { Suspense, useEffect } from 'react'
 import React from 'react'
 import Balancer from 'react-wrap-balancer'
 
-// ? Hero must be always minimum of 90vh and reducing it by coyunting the height of the header.
+// ? Hero must be always minimum of 90vh and reducing it by counting the height of the header.
 // ? This way user would be able to see a hint of the next section.
 export function NewHomeHero() {
-  const searchParams = useSearchParams()
-  const referrer = searchParams.get('referrer')
-  const [showBanner, setShowBanner] = React.useState(!!referrer)
+  const { bitcashRegisterUri } = useReferral()
+  const [showBanner, setShowBanner] = React.useState(false)
 
-  // biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
   useEffect(() => {
-    if (!referrer) return
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY
-      const windowHeight = window.innerHeight
-      const documentHeight = document.documentElement.scrollHeight
-
-      if (scrollPosition > (documentHeight - windowHeight) * 0.2) {
-        setShowBanner(false)
-      } else {
-        setShowBanner(true)
-      }
+    const bannerClosed = localStorage.getItem('referralBannerClosed')
+    if (!bannerClosed && bitcashRegisterUri) {
+      setShowBanner(true)
     }
+  }, [bitcashRegisterUri])
 
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+  const handleCloseBanner = () => {
+    setShowBanner(false)
+    localStorage.setItem('referralBannerClosed', 'true')
+  }
 
   const scrollToSection = (sectionId: string) => {
     const section = document.getElementById(sectionId)
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' })
-      setShowBanner(false) //? Hide the banner after scrolling
     }
   }
 
   return (
     <section className="narrow-container mb-0 flex min-h-[calc(90vh-70px)] flex-col justify-between relative">
-      {showBanner && referrer && (
+      {showBanner && (
         <ReferralHomeBanner
-          onClose={() => setShowBanner(false)}
+          isOpen={showBanner}
+          onClose={handleCloseBanner}
           onJoinNow={() => scrollToSection('steps')}
           onHowItWorks={() => scrollToSection('features')}
         />
@@ -71,8 +63,7 @@ export function NewHomeHero() {
           </h1>
         </div>
         <div className="relative mt-16 lg:ml-16 lg:mt-0">
-          {/* biome-ignore lint/style/useSelfClosingElements: <explanation> */}
-          <div className="absolute inset-0 m-auto h-[300px] w-[300px] rounded-full bg-accent-400 sm:h-[400px] sm:w-[400px]"></div>
+          <div className="absolute inset-0 m-auto h-[300px] w-[300px] rounded-full bg-accent-400 sm:h-[400px] sm:w-[400px]" />
           <Image
             src="/images/home/horse.png"
             alt="AI Unicorn"
@@ -144,9 +135,7 @@ export function NewHomeHero() {
                 }),
                 'text-md group relative flex size-14 min-h-14 min-w-14 rounded-full bg-pink-500 !p-0 font-bold hover:bg-pink-500',
               )}
-              // biome-ignore lint/style/noUnusedTemplateLiteral: <explanation>
-              aria-label={`View`}
-              // data-title={title}
+              aria-label={'View'}
             >
               <IconDownRightArrow
                 strokeColor="white"
