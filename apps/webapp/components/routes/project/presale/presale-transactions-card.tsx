@@ -80,6 +80,7 @@ export function PresaleTransactionsCard(params: {
             <TableRow>
               <TableHead>Address</TableHead>
               <TableHead>Amount</TableHead>
+              <TableHead>Status</TableHead>
               <TableHead>Deposit</TableHead>
               <TableHead>Issuance</TableHead>
               <TableHead>Date</TableHead>
@@ -124,6 +125,8 @@ function TransactionRow({ contribution }: { contribution: PresaleContribution })
           : 'N/A'}
       </TableCell>
 
+      <TableCell> {contribution.transaction.final ? 'Finalized' : 'Pending'}</TableCell>
+
       <TableCell>
         {chain?.blockExplorers?.default ? (
           <a
@@ -140,19 +143,19 @@ function TransactionRow({ contribution }: { contribution: PresaleContribution })
       </TableCell>
 
       <TableCell>
-        {TestnetBLPL.chain?.blockExplorers?.default && contribution.transaction.hash ? (
+        {TestnetBLPL.chain?.blockExplorers?.default && contribution.issuance_hash ? (
           <a
-            href={`${TestnetBLPL.chain.blockExplorers.default.url}/tx/${contribution.transaction.hash}`}
+            href={`${TestnetBLPL.chain.blockExplorers.default.url}tx/${contribution.issuance_hash}`}
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-500 hover:underline"
           >
-            {formatAddress(contribution.transaction.hash)}
+            {formatAddress(contribution.issuance_hash)}
           </a>
-        ) : contribution.transaction.hash ? (
-          formatAddress(contribution.transaction.hash)
+        ) : contribution.issuance_hash ? (
+          formatAddress(contribution.issuance_hash)
         ) : (
-          'pending'
+          'Pending'
         )}
       </TableCell>
       <TableCell>
