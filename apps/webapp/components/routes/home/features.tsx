@@ -27,7 +27,7 @@ export function Features({ lang, dict, id }: FeaturesProps) {
           >
             <div className="space-y-2">
               <Tag title={content.label} />
-              <h3 className="text-2xl font-bold text-left">
+              <h3 className="text-3xl font-bold text-left">
                 <Balancer>{content.title}</Balancer>
               </h3>
               <p className="text-left text-infoForeground">{content.description}</p>

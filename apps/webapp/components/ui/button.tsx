@@ -13,6 +13,8 @@ const buttonVariants = cva(
           'bg-primary text-primary-foreground hover:bg-primary/90 focus-within:bg-primary/90',
         secondary:
           'bg-secondary text-secondary-foreground hover:bg-secondary/80 focus-within:bg-secondary/80',
+        tertiary:
+          'text-bold bg-tertiary text-accent-foreground focus-within:bg-tertiary/70 hover:bg-tertiary/70',
         accent:
           'text-bold bg-accent text-accent-foreground focus-within:bg-accent/80 hover:bg-accent/80',
         destructive:

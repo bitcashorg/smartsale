@@ -63,7 +63,7 @@ export default function ReferralHomeBanner({
           </p>
           <div className="bg-[#0F113E] md:w-1/2 px-16 py-[2.625rem] mx-auto shadow-md bg-gradient-to-br to-cornflowerblue-20 rounded-lg justify-between items-center">
             <Button
-              variant="accent"
+              variant="tertiary"
               className="flex items-center gap-6 p-6 mx-auto font-semibold rounded-full group"
               onClick={onJoinNow}
             >
