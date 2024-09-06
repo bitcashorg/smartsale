@@ -54,7 +54,10 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           />
         </div>
 
-        <PresaleTransactionsCard contributions={presaleContributions.contributions} />
+        <PresaleTransactionsCard
+          contributions={presaleContributions.contributions}
+          presaleId={presale.id}
+        />
       </ProjectHeader>
     </div>
   )

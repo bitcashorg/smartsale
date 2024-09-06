@@ -16,7 +16,10 @@ import {
   TableRow,
 } from '@/components/ui/table'
 import { useSupabaseClient } from '@/services/supabase'
-import type { PresaleContribution } from '@/services/supabase/service'
+import {
+  type PresaleContribution,
+  getPresaleContributions,
+} from '@/services/supabase/service'
 import { TestnetBLPL } from '@repo/contracts'
 import { formatAddress } from '@repo/utils'
 import { prodChains } from 'app-env'
@@ -24,6 +27,7 @@ import { useEffect, useState } from 'react'
 
 export function PresaleTransactionsCard(params: {
   contributions: PresaleContribution[]
+  presaleId: number
 }) {
   const supabase = useSupabaseClient()
   const [contributions, setContributions] = useState<PresaleContribution[]>(
@@ -39,24 +43,29 @@ export function PresaleTransactionsCard(params: {
         {
           event: '*',
           schema: 'public',
-          table: 'presale_deposit!transaction(*), transaction',
-          // filter: `from=eq.${address}`,
+          table: 'presale_deposit',
         },
-        (payload) => {
-          console.log('subscription payload')
-          if (payload.eventType === 'INSERT') {
-            console.log('😤 insert', payload)
-            setContributions((prev) => [payload.new as PresaleContribution, ...prev])
-          } else if (payload.eventType === 'UPDATE') {
-            console.log('update', payload)
-            setContributions((prev) =>
-              prev.map((t) =>
-                t.deposit_hash === payload.new.deposit_hash
-                  ? (payload.new as PresaleContribution)
-                  : t,
-              ),
-            )
-          }
+        async (payload) => {
+          console.log('🚀 subscription payload', payload)
+          const presaleContributions = await getPresaleContributions({
+            presaleId: params.presaleId,
+            supabase,
+          })
+          setContributions(presaleContributions.contributions)
+
+          // if (payload.eventType === 'INSERT') {
+          //   console.log('😤 insert', payload)
+          //   setContributions((prev) => [payload.new as PresaleContribution, ...prev])
+          // } else if (payload.eventType === 'UPDATE') {
+          //   console.log('update', payload)
+          //   setContributions((prev) =>
+          //     prev.map((t) =>
+          //       t.deposit_hash === payload.new.deposit_hash
+          //         ? (payload.new as PresaleContribution)
+          //         : t,
+          //     ),
+          //   )
+          // }
         },
       )
       .subscribe()
@@ -64,7 +73,7 @@ export function PresaleTransactionsCard(params: {
     return () => {
       subscription.unsubscribe()
     }
-  }, [supabase])
+  }, [supabase, params.presaleId])
 
   return (
     <Card x-chunk="dashboard-01-chunk-4">

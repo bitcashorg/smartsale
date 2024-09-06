@@ -31,7 +31,11 @@ export async function getPresaleData({ projectId, supabase }: ProjectDataParams)
  * @throws {Error} If there's an error fetching the data
  */
 export async function getProjectData({ projectId, supabase }: ProjectDataParams) {
-  const { data, error } = await supabase.from('project').select('*').eq('id', projectId).single()
+  const { data, error } = await supabase
+    .from('project')
+    .select('*')
+    .eq('id', projectId)
+    .single()
 
   if (error) {
     console.error('Error fetching project data:', error)
@@ -68,7 +72,9 @@ export async function getPresaleContributions({
   if (error) throw error
 
   // set of unique contributors
-  const uniqueContributors = new Set(data?.map((deposit) => deposit.address).filter(Boolean))
+  const uniqueContributors = new Set(
+    data?.map((deposit) => deposit.address).filter(Boolean),
+  )
 
   return {
     contributions: data,

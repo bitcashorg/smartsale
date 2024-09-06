@@ -19,8 +19,6 @@ export function ProjectPresaleData({
   const supabase = useSupabaseClient()
 
   useEffect(() => {
-    // TODO: subscribe to presale contributors
-    console.log('😎 subscribing to presale contributions')
     const subscription = supabase
       .channel(`presale_data_${presale.id}`)
       .on(
@@ -32,7 +30,6 @@ export function ProjectPresaleData({
           filter: `id=eq.${presale.id}`,
         },
         (payload) => {
-          console.log('😎 raised payload', payload)
           if (payload.eventType === 'INSERT' || payload.eventType === 'UPDATE') {
             setTotalRaised(BigInt(payload.new.total_raised))
             setContributors(payload.new.contributors)
@@ -42,7 +39,6 @@ export function ProjectPresaleData({
       .subscribe()
 
     return () => {
-      console.log('💀 unsubscribing to presale contributions')
       subscription.unsubscribe()
     }
   }, [supabase, presale.id])
