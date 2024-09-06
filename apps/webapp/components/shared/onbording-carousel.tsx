@@ -19,28 +19,28 @@ const steps = [
   {
     title: 'Step 1: Share your link',
     description:
-      'Lorem ipsum dolor sit amet consort sit emet lorem ipsum dolor sit amet consort sit emet lorem ipsum dolor sit amet consort.',
+      'Unlock the power of your network! Grab your unique referral link and spread the word about Bitlauncher across social media, email, and messaging apps. Be the catalyst for change and innovation.',
     image: '/images/home/bl-coins.webp',
     id: 'step-1',
   },
   {
     title: 'Step 2: Wait referrer to register',
     description:
-      'Lorem ipsum dolor sit amet consort sit emet lorem ipsum dolor sit amet consort sit emet lorem ipsum dolor sit amet consort. Consort sit emet lorem ipsum dolor sit amet consort.',
+      'Your referred friends sign up using your special link, joining the Bitlauncher community and gaining access to innovative projects.',
     image: '/images/referal/step2.webp',
     id: 'step-2',
   },
   {
     title: 'Step 3: Do contributions',
     description:
-      'Lorem ipsum dolor sit amet consort sit emet lorem ipsum dolor sit amet consort sit emet lorem ipsum dolor sit amet consort.',
+      'Your friends explore the frontier of innovation, discovering and contributing to the AI and web3 projects that ignite their passion. Their support fuels the future of technology.',
     image: '/images/referal/step3.webp',
     id: 'step-3',
   },
   {
     title: 'Step 4: Receive your earnings!',
     description:
-      'Lorem ipsum dolor sit amet consort sit emet lorem ipsum dolor sit amet consort sit emet lorem ipsum dolor sit amet consort.',
+      "As auctions close, you'll earn up to 20% of your friends' contributions in project tokens. Watch your rewards grow as you champion innovation!",
     image: '/images/referal/step4.webp',
     id: 'step-4',
   },
@@ -88,7 +88,7 @@ export function OnboardingCarousel({ onClose }: OnboardingCarouselProps) {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <div className="absolute left-0 right-0 bottom-0 px-4">
+        <div className="absolute bottom-0 left-0 right-0 px-4">
           <div className="grid items-center grid-cols-3">
             <div className="flex justify-center mt-8">
               <CarouselPrevious className="relative w-10 h-10 text-white scale-125 bg-transparent border-none hover:text-black" />
