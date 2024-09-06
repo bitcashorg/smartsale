@@ -1,6 +1,6 @@
 import type { Database, TablesInsert } from '@repo/supabase'
 import { createClient } from '@supabase/supabase-js'
-import { Address } from 'viem'
+import type { Address } from 'viem'
 import { appConfig } from '~/config'
 
 // Initialize Supabase client

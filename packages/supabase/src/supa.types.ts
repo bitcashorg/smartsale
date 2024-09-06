@@ -476,7 +476,11 @@ export type Database = {
     }
     Enums: {
       chain_type: "evm" | "eos" | "solana" | "cosmos"
-      trx_type: "presale_deposit" | "usdcred_deposit" | "usdcred_withdrawal"
+      trx_type:
+        | "presale_deposit"
+        | "usdcred_deposit"
+        | "usdcred_withdrawal"
+        | "presale_token_issuance"
     }
     CompositeTypes: {
       [_ in never]: never

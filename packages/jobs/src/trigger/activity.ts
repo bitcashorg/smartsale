@@ -2,6 +2,7 @@ import type { AlchemyActivity, AlchemyWebhookEvent } from '@repo/alchemy'
 import { logger, task } from '@trigger.dev/sdk/v3'
 import { isAddress, parseUnits } from 'viem'
 import { issuePresaleTokens } from '../lib/presale-issuer'
+import { upsertPresaleDeposits } from '../lib/supabase'
 
 const STABLECOIN_DECIMALS = 6
 
@@ -15,16 +16,19 @@ export const addressActivityTask = task({
       if (!isAddress(activity.toAddress))
         throw new Error(`Invalid to address: ${activity.toAddress}`)
 
-      const valueInTokenUnits = parseUnits(
-        activity.value.toString(),
-        STABLECOIN_DECIMALS,
-      )
+      const valueInTokenUnits = parseUnits(activity.value.toString(), STABLECOIN_DECIMALS)
 
-      const result = await issuePresaleTokens(
-        activity.toAddress,
+      const issuanceHash = await issuePresaleTokens(activity.toAddress, valueInTokenUnits)
+      console.log(issuanceHash)
+      if (!issuanceHash) throw new Error('Failed to get issuance hash')
+
+      const updatedPresale = await upsertPresaleDeposits({
         valueInTokenUnits,
-      )
-      console.log(result)
+        depositHash: activity.hash,
+        issuanceHash,
+      })
+
+      console.log('Updated presale', updatedPresale)
     } catch (error) {
       logger.error('Error processing address activity', {
         error: error instanceof Error ? error.message : String(error),
