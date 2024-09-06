@@ -18,7 +18,7 @@ export async function upsertPresaleDeposits({
     .update({
       final: true,
     })
-    .eq('trx_hash', depositHash)
+    .eq('hash', depositHash)
     .select()
     .single()
 
