@@ -44,7 +44,7 @@ export function ReferralSection() {
           <p className="mb-6 font-bold text-white">{content.paragraph2}</p>
           <div className="flex flex-col items-center gap-3 text-xl">
             <Button
-              variant="accent"
+              variant="tertiary"
               className="flex items-center gap-6 p-6 mx-auto font-semibold rounded-full group"
               onClick={handleCallToAction}
             >
@@ -53,7 +53,11 @@ export function ReferralSection() {
             </Button>
             <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
               <DialogTrigger asChild>
-                <Button variant="cta" className="text-sm py-0 h-auto" onClick={() => setIsModalOpen(true)}>
+                <Button
+                  variant="cta"
+                  className="h-auto py-0 text-sm"
+                  onClick={() => setIsModalOpen(true)}
+                >
                   {content.callToAction2}
                   <span className="block max-w-0 group-hover:max-w-full group-focus-within:max-w-full transition-all duration-500 h-0.5 bg-[#ff00aa]" />
                 </Button>

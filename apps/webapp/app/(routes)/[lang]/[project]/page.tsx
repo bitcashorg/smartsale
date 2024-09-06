@@ -54,14 +54,14 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           <div className="grid grid-cols-1 gap-8 mb-10 lg:grid-cols-2">
             <Card className="flex flex-col w-full pb-5 border-card/30 bg-card/60 backdrop-blur-lg">
               <Countdown targetDate={countdownDate} heading={countdownHeading} />
-              <div className="flex items-center justify-center gap-3 align-center py-3 mt-5 md:mt-0">
+              <div className="flex items-center justify-center gap-3 py-3 mt-5 align-center md:mt-0">
                 {isPresaleActive ? (
                   <Link href={`/${project.slug}/presale`}>
-                    <Button variant="accent">Join Presale Now</Button>
+                    <Button variant="tertiary">Join Presale Now</Button>
                   </Link>
                 ) : isAuctionActive ? (
                   <Link href={`/${project.slug}/auction`}>
-                    <Button variant="accent">Join Auction Now</Button>
+                    <Button variant="tertiary">Join Auction Now</Button>
                   </Link>
                 ) : (
                   <DynamicAddressForm projectId={project.id} />

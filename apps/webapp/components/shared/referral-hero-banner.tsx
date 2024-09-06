@@ -1,32 +1,42 @@
 import { IconDownRightArrow } from '@/components/ui/icons'
+import { useReferral } from '@/hooks/use-referral'
 import { X } from 'lucide-react'
-import { useSearchParams } from 'next/navigation'
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Button } from '../ui/button'
 
 interface ReferalHomeBannerProps {
   onClose: () => void
   onJoinNow: () => void
   onHowItWorks: () => void
+  isOpen: boolean
 }
 
 export default function ReferralHomeBanner({
+  isOpen,
   onClose,
   onJoinNow,
   onHowItWorks,
 }: ReferalHomeBannerProps) {
-  const [isVisible, setIsVisible] = React.useState(true)
-  const searchParams = useSearchParams()
-  const referrer = searchParams.get('referrer') || 'merivercap'
+  const { bitcashRegisterUri } = useReferral()
+  const referrer =
+    new URL(bitcashRegisterUri).searchParams.get('referrer') || 'merivercap'
+  const [isVisible, setIsVisible] = useState(isOpen)
 
   useEffect(() => {
+    setIsVisible(isOpen)
+  }, [isOpen])
+
+  useEffect(() => {
+    if (!isOpen) return
+
     const handleScroll = () => {
       const scrollPosition = window.scrollY
       const windowHeight = window.innerHeight
       const documentHeight = document.documentElement.scrollHeight
 
-      //? Hides banner when user has scrolled past 80% of the page
-      if (scrollPosition > (documentHeight - windowHeight) * 0.8) {
+      //? Hides banner when user has scrolled past 40% of the page
+      //TODO: Replicate this with CSS as performance feat @bran18
+      if (scrollPosition > (documentHeight - windowHeight) * 0.1) {
         setIsVisible(false)
       } else {
         setIsVisible(true)
@@ -35,10 +45,9 @@ export default function ReferralHomeBanner({
 
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+  }, [isOpen])
 
   if (!isVisible) return null
-
   return (
     <div className="fixed top-0 left-0 right-0 z-50 bg-[#0a0a29] bg-opacity-50 min-h-screen flex items-center justify-center p-4">
       <div className="bg-gradient-to-br from-[#1a1a4ab4] to-[#0d0d35a0] backdrop-blur-[30px] rounded-3xl p-8 max-w-6xl w-full relative">
@@ -56,8 +65,7 @@ export default function ReferralHomeBanner({
             Contribute In The Next{' '}
             <span className="text-[#ec4899] font-bold">GLOBAL AI UNICORNS</span>
           </p>
-          {/* biome-ignore lint/style/useSelfClosingElements: <explanation> */}
-          <div className="mx-auto w-[120px] h-[2.37px] bg-[#ff51ed]"></div>
+          <div className="mx-auto w-[120px] h-[2.37px] bg-[#ff51ed]" />
           <p className="max-w-md mx-auto text-[#7a7ca8] text-lg md:text-xl font-semibold leading-[29px]">
             {content.paragraph2}
           </p>
@@ -70,7 +78,7 @@ export default function ReferralHomeBanner({
               {content.callToAction}
               <IconDownRightArrow className="size-4 transition-all group-focus-within:-rotate-45 group-hover:-rotate-45 [&_path]:stroke-white" />
             </Button>
-            <Button variant="cta" className="text-sm py-0" onClick={onHowItWorks}>
+            <Button variant="cta" className="py-0 text-sm" onClick={onHowItWorks}>
               {content.callToAction2}
               <span className="block max-w-0 group-hover:max-w-full group-focus-within:max-w-full transition-all duration-500 h-0.5 bg-[#ff00aa]" />
             </Button>
