@@ -62,7 +62,7 @@ export async function upsertPresaleDeposits({
     .update({
       total_raised: newTotalRaised,
     })
-    .eq('presale_id', deposit.data.presale_id)
+    .eq('id', deposit.data.presale_id)
     .select()
     .single()
 
