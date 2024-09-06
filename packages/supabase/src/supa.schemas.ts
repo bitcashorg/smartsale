@@ -270,7 +270,6 @@ export const presaleDepositRowSchema = z.object({
   amount: z.number(),
   created_at: z.string(),
   deposit_hash: z.string(),
-  id: z.string(),
   issuance_hash: z.string().nullable(),
   presale_id: z.number(),
   project_id: z.number(),
@@ -282,7 +281,6 @@ export const presaleDepositInsertSchema = z.object({
   amount: z.number(),
   created_at: z.string().optional(),
   deposit_hash: z.string(),
-  id: z.string().optional(),
   issuance_hash: z.string().optional().nullable(),
   presale_id: z.number(),
   project_id: z.number(),
@@ -294,7 +292,6 @@ export const presaleDepositUpdateSchema = z.object({
   amount: z.number().optional(),
   created_at: z.string().optional(),
   deposit_hash: z.string().optional(),
-  id: z.string().optional(),
   issuance_hash: z.string().optional().nullable(),
   presale_id: z.number().optional(),
   project_id: z.number().optional(),
@@ -328,7 +325,7 @@ export const presaleDepositRelationshipsSchema = z.tuple([
   z.object({
     foreignKeyName: z.literal("presale_deposit_deposit_hash_fkey"),
     columns: z.tuple([z.literal("deposit_hash")]),
-    isOneToOne: z.literal(false),
+    isOneToOne: z.literal(true),
     referencedRelation: z.literal("transaction"),
     referencedColumns: z.tuple([z.literal("hash")]),
   }),
@@ -425,21 +422,21 @@ export const trxTypeSchema = z.union([
 ]);
 
 export const transactionInsertSchema = z.object({
-  chain_id: z.number().optional().nullable(),
-  chain_type: chainTypeSchema.optional().nullable(),
+  chain_id: z.number(),
+  chain_type: chainTypeSchema,
   created_at: z.string().optional(),
-  final: z.boolean().optional().nullable(),
+  final: z.boolean().optional(),
   hash: z.string(),
-  trx_type: trxTypeSchema.optional().nullable(),
+  trx_type: trxTypeSchema,
 });
 
 export const transactionUpdateSchema = z.object({
-  chain_id: z.number().optional().nullable(),
-  chain_type: chainTypeSchema.optional().nullable(),
+  chain_id: z.number().optional(),
+  chain_type: chainTypeSchema.optional(),
   created_at: z.string().optional(),
-  final: z.boolean().optional().nullable(),
+  final: z.boolean().optional(),
   hash: z.string().optional(),
-  trx_type: trxTypeSchema.optional().nullable(),
+  trx_type: trxTypeSchema.optional(),
 });
 
 export const transactionRelationshipsSchema = z.tuple([]);
@@ -514,10 +511,10 @@ export const whitelistRelationshipsSchema = z.tuple([
 ]);
 
 export const transactionRowSchema = z.object({
-  chain_id: z.number().nullable(),
-  chain_type: chainTypeSchema.nullable(),
+  chain_id: z.number(),
+  chain_type: chainTypeSchema,
   created_at: z.string(),
-  final: z.boolean().nullable(),
+  final: z.boolean(),
   hash: z.string(),
-  trx_type: trxTypeSchema.nullable(),
+  trx_type: trxTypeSchema,
 });

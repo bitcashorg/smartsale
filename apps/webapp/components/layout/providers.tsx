@@ -26,46 +26,18 @@ import type { ThemeProviderProps } from 'next-themes/dist/types'
 import { WagmiProvider } from 'wagmi'
 import {
   arbitrum,
-  aurora,
   avalanche,
   base,
   bsc,
-  celo,
-  cronos,
-  fantom,
-  gnosis,
-  harmonyOne,
-  kava,
   mainnet,
-  metis,
-  moonbeam,
   optimism,
   polygon,
   sepolia,
-  zkSync,
 } from 'wagmi/chains'
 
 const queryClient = new QueryClient()
 
-const prodChains: _chains = [
-  arbitrum,
-  avalanche,
-  base,
-  celo,
-  mainnet,
-  optimism,
-  polygon,
-  zkSync,
-  bsc,
-  fantom,
-  moonbeam,
-  cronos,
-  kava,
-  metis,
-  gnosis,
-  aurora,
-  harmonyOne,
-]
+const prodChains: _chains = [arbitrum, avalanche, base, mainnet, optimism, polygon, bsc]
 const devChains: _chains = [{ ...eosEvmTestnet, fees: undefined }, sepolia]
 
 export const wagmiConfig = getDefaultConfig({

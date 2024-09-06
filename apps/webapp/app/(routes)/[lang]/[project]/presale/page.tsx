@@ -48,10 +48,13 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
             </CardContent>
           </Card>
 
-          <PresaleDepositCard project={project} presaleAddress={getAddress(presaleData.address)} />
+          <PresaleDepositCard
+            project={project}
+            presaleAddress={getAddress(presaleData.address)}
+          />
         </div>
 
-        <PresaleTransactionsCard presaleData={presaleData} />
+        <PresaleTransactionsCard contributions={presaleContributions.contributions} />
       </ProjectHeader>
     </div>
   )

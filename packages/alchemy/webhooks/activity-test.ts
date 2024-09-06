@@ -13,7 +13,7 @@ async function createAddressActivityNotification({
 
     const alchemy = new Alchemy(settings)
     const addressActivityWebhook = await alchemy.notify.createWebhook(
-      'https://a95d-2803-f340-105d-350d-6157-ab3a-e6c9-bf6c.ngrok-free.app',
+      'https://12e4-186-151-104-174.ngrok-free.app/alchemy',
       WebhookType.ADDRESS_ACTIVITY,
       {
         addresses,
