@@ -20,6 +20,7 @@ const buttonVariants = cva(
         outline:
           'border border-accent-500 bg-transparent hover:bg-accent-foreground focus-within:bg-accent-foreground hover:text-black/90 focus-within:text-black/90',
         ghost: 'bg-transparent',
+        cta: 'text-white text-base font-semibold hover:text-[#e728a9] focus-within:text-[#ff00aa] transition-colors group inline-block pt-3',
         link: 'text-link underline-offset-4 hover:underline',
       },
       size: {

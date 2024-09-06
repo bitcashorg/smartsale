@@ -7,11 +7,12 @@ import { cn } from '@/lib/utils'
 import Image from 'next/image'
 import Balancer from 'react-wrap-balancer'
 
-export function Features({ lang, dict }: FeaturesProps) {
+export function Features({ lang, dict, id }: FeaturesProps) {
   return (
     <Section
       heading={dict.featuresContent[0].title}
       subheading={dict.featuresContent[0].description}
+      id={id}
     >
       {dict.featuresContent.slice(1).map((content: any, index: number) => (
         <div
@@ -29,9 +30,7 @@ export function Features({ lang, dict }: FeaturesProps) {
               <h3 className="text-2xl font-bold text-left">
                 <Balancer>{content.title}</Balancer>
               </h3>
-              <p className="text-left text-infoForeground">
-                {content.description}
-              </p>
+              <p className="text-left text-infoForeground">{content.description}</p>
             </div>
           </div>
 
@@ -69,4 +68,5 @@ export function Features({ lang, dict }: FeaturesProps) {
 interface FeaturesProps {
   dict: any
   lang: Lang
+  id?: string
 }
