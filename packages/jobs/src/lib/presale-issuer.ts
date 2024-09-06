@@ -3,6 +3,7 @@ import { createWalletClient, erc20Abi, formatUnits } from 'viem'
 import { http, type Address } from 'viem'
 import { appConfig } from '../config'
 import { eosEvmTestnet } from '../tmp'
+import { insertTransaction } from './supabase'
 
 /**
  * Issues presale tokens to a specified address.
@@ -26,6 +27,13 @@ export async function issuePresaleTokens(to: Address, amount: bigint) {
     console.log(
       `Issued ${formatUnits(amount, 6)} tokens to ${to} on transaction ${trxHash}`,
     )
+
+    await insertTransaction({
+      hash: trxHash,
+      chain_id: TestnetBLPL.chainId,
+      chain_type: TestnetBLPL.chainType,
+      trx_type: 'presale_token_issuance',
+    })
     return trxHash
   } catch (error) {
     console.log((error as Error).message)

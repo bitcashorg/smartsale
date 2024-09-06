@@ -419,6 +419,7 @@ export const trxTypeSchema = z.union([
   z.literal("presale_deposit"),
   z.literal("usdcred_deposit"),
   z.literal("usdcred_withdrawal"),
+  z.literal("presale_token_issuance"),
 ]);
 
 export const transactionInsertSchema = z.object({

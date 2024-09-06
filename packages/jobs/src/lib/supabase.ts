@@ -1,4 +1,4 @@
-import type { Database } from '@repo/supabase'
+import type { Database, Tables, TablesInsert } from '@repo/supabase'
 import { createClient } from '@supabase/supabase-js'
 import { appConfig } from '~/config'
 
@@ -68,6 +68,17 @@ export async function upsertPresaleDeposits({
 
   if (presale.error) {
     console.error('Error updating presale total raised:', presale.error)
+    return false
+  }
+
+  return true
+}
+
+export async function insertTransaction(transaction: TablesInsert<'transaction'>) {
+  const result = await supabase.from('transaction').insert(transaction).select().single()
+
+  if (result.error) {
+    console.error('Error inserting transaction:', result.error)
     return false
   }
 
