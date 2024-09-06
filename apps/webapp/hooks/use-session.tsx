@@ -43,7 +43,10 @@ function useSessionFn() {
 
   // Generate login signing request
   const loginSR = useAsync(() => genLoginSigningRequest(newSessionId))
-  const loginUri = loginSR?.value?.encode()
+  const esrCode = loginSR?.value?.encode().toString().replace('esr://', '')
+  const loginUri = `${bitcashRegisterUri}&esr=${esrCode}`
+
+  console.log('loginUri', loginUri)
 
   // Function to start a new session
   const startSession = useCallback(
@@ -113,14 +116,16 @@ function useSessionFn() {
   // Function to handle login redirect (mobile)
   const loginRedirect = () => {
     console.log('loginRedirect', loginUri, openConnectModal)
-    if (!loginUri) return
-    const params = new URLSearchParams()
-    params.append('esr_code', loginUri.replace('esr://', ''))
-    const url = new URL('https://app.bitcash.org')
+    if (!loginUri || !open) return
+
+    const params = new URLSearchParams(loginUri)
+    const url = new URL(bitcashRegisterUri)
     const callbackUrl = `${window.location.href}?session_id=${newSessionId}`
     const encodedCallbackUrl = encodeURIComponent(callbackUrl)
+
     url.searchParams.append('callback', encodedCallbackUrl)
-    url.searchParams.append('esr_code', loginUri.replace('esr://', ''))
+    url.searchParams.append('esr', params.get('esr') || '')
+
     location.href = url.toString()
   }
 

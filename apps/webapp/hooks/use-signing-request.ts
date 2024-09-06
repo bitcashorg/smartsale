@@ -30,7 +30,7 @@ function useSigningRequestFn() {
       // redirect with esr and callback on mobile if not within bitcash explorer
       if (isMobile && !searchParams.has('bitcash_explorer')) {
         const params = new URLSearchParams()
-        params.append('esr_code', esr.encode())
+        params.append('esr', esr.encode())
         params.append('callback', encodeURIComponent(window.location.href))
         window.location.href = `https://test.bitcash.org/login?${params.toString()}`
       }

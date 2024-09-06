@@ -18,7 +18,6 @@ export function SessionButton() {
     useSession()
   const { openAccountModal } = useAccountModal()
   const account = useAccount()
-  const router = useRouter()
   const hasSession = session?.account
 
   const loginUser = () => (isMobile ? loginRedirect() : toggleShowSessionDialog())
@@ -33,7 +32,7 @@ export function SessionButton() {
           onClick={loginUser}
           suppressHydrationWarning={true}
         >
-          Login
+          Login / Register
         </Button>
       ) : (
         <Popover>

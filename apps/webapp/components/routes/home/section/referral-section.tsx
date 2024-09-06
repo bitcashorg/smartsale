@@ -65,7 +65,7 @@ export function ReferralSection() {
           </div>
         </div>
       </div>
-      <SessionDialog defaultContent="login" />
+      <SessionDialog />
     </div>
   )
 }
