@@ -46,7 +46,7 @@ export async function upsertPresaleDeposits({
   const currentPresale = await supabase
     .from('presale')
     .select('total_raised')
-    .eq('presale_id', deposit.data.presale_id)
+    .eq('id', deposit.data.presale_id)
     .single()
 
   if (currentPresale.error) {
