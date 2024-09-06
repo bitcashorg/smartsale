@@ -10,10 +10,7 @@ import { LucideCheck, LucideLoader2 } from 'lucide-react'
 import Link from 'next/link'
 import { useEffect } from 'react'
 import { useFormStatus } from 'react-dom'
-import {
-    GoogleReCaptcha,
-    GoogleReCaptchaProvider,
-} from 'react-google-recaptcha-v3'
+import { GoogleReCaptcha, GoogleReCaptchaProvider } from 'react-google-recaptcha-v3'
 import { useForm } from 'react-hook-form'
 import { useSetState } from 'react-use'
 import { z } from 'zod'
@@ -50,11 +47,9 @@ export default function Newsletter({ lang }: LangProp) {
 
   const recaptchaToken = watch('recaptcha')
   const email = watch('email')
-  const isEmailValid =
-    !formState.errors.email && email && email.match(/.+@.+\..+/)
+  const isEmailValid = !formState.errors.email && email && email.match(/.+@.+\..+/)
   const isReadyToSubmit =
-    (recaptchaToken && !Boolean(formState.errors.email) && isEmailValid) ||
-    pending
+    (recaptchaToken && !Boolean(formState.errors.email) && isEmailValid) || pending
 
   const newsletterIconResponse = () => {
     if (pending || state.loading)
@@ -88,10 +83,7 @@ export default function Newsletter({ lang }: LangProp) {
   }, [email])
 
   return (
-    <div
-      className="container relative px-0 mt-40 mb-10 sm:px-4"
-      id="newsletter"
-    >
+    <div className="container relative px-0 mt-40 mb-10 sm:px-4" id="newsletter">
       <GoogleReCaptchaProvider
         reCaptchaKey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ''}
         // language="[optional_language]"
@@ -103,13 +95,13 @@ export default function Newsletter({ lang }: LangProp) {
           },
         }}
       >
-        <section className="newsletter-wrapper relative z-10">
+        <section className="relative z-10 newsletter-wrapper">
           <div className="flex min-h-[460px] w-full max-w-[600px] flex-col items-center justify-center gap-8 px-3 text-center md:gap-11 md:px-0">
             <div className="flex flex-col w-full gap-7">
               <h2 className="newsletterHeading">Sign up for our newsletter</h2>
               <p className="mx-auto sm:text-xl">
-                To stay up to date with our progress, announcements and
-                exclusive discounts, sign up with your email below:
+                To stay up to date with our progress, announcements and exclusive
+                discounts, sign up with your email below:
               </p>
             </div>
             <div className="flex flex-col items-center w-full">
@@ -125,10 +117,7 @@ export default function Newsletter({ lang }: LangProp) {
                   required
                 />
 
-                <input
-                  type="hidden"
-                  {...register('recaptcha', { required: true })}
-                />
+                <input type="hidden" {...register('recaptcha', { required: true })} />
                 <GoogleReCaptcha
                   onVerify={(v) => {
                     const timeout = setTimeout(() => {
@@ -146,7 +135,7 @@ export default function Newsletter({ lang }: LangProp) {
                 />
                 <Button
                   type="submit"
-                  variant="accent"
+                  variant="tertiary"
                   size="icon"
                   radius="full"
                   className="relative m-0 mr-[2px] min-w-[48px] min-h-[48px] rounded-full"
