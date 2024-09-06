@@ -7,10 +7,10 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Button, buttonVariants } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { IconDownRightArrow } from '@/components/ui/icons'
-import { useReferral } from '@/hooks/use-referral'
 import { cn } from '@/lib/utils'
 import { PlayIcon } from 'lucide-react'
 import Image from 'next/image'
+import { useSearchParams } from 'next/navigation'
 import { Suspense, useEffect } from 'react'
 import React from 'react'
 import Balancer from 'react-wrap-balancer'
@@ -18,15 +18,16 @@ import Balancer from 'react-wrap-balancer'
 // ? Hero must be always minimum of 90vh and reducing it by counting the height of the header.
 // ? This way user would be able to see a hint of the next section.
 export function NewHomeHero() {
-  const { bitcashRegisterUri } = useReferral()
   const [showBanner, setShowBanner] = React.useState(false)
+  const searchParams = useSearchParams()
+  const referrer = searchParams.get('referrer')
 
   useEffect(() => {
     const bannerClosed = localStorage.getItem('referralBannerClosed')
-    if (!bannerClosed && bitcashRegisterUri) {
+    if (!bannerClosed && referrer) {
       setShowBanner(true)
     }
-  }, [bitcashRegisterUri])
+  }, [referrer])
 
   const handleCloseBanner = () => {
     setShowBanner(false)
