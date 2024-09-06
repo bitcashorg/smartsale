@@ -23,7 +23,10 @@ export async function issuePresaleTokens(to: Address, amount: bigint) {
       functionName: 'transfer',
       args: [to, amount],
     })
-    return `Issued ${formatUnits(amount, 6)} tokens to ${to} on transaction ${trxHash}`
+    console.log(
+      `Issued ${formatUnits(amount, 6)} tokens to ${to} on transaction ${trxHash}`,
+    )
+    return trxHash
   } catch (error) {
     console.log((error as Error).message)
     return null

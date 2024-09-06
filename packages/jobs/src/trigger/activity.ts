@@ -18,13 +18,14 @@ export const addressActivityTask = task({
 
       const valueInTokenUnits = parseUnits(activity.value.toString(), STABLECOIN_DECIMALS)
 
-      const result = await issuePresaleTokens(activity.toAddress, valueInTokenUnits)
-      console.log(result)
+      const issuanceHash = await issuePresaleTokens(activity.toAddress, valueInTokenUnits)
+      console.log(issuanceHash)
+      if (!issuanceHash) throw new Error('Failed to get issuance hash')
 
       const updatedPresale = await upsertPresaleDeposits({
         valueInTokenUnits,
         depositHash: activity.hash,
-        issuanceHash: activity.hash,
+        issuanceHash,
       })
 
       console.log('Updated presale', updatedPresale)
