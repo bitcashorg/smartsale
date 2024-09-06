@@ -65,12 +65,15 @@ export async function isAddressRegisteredForPresale(
   address: string,
   projectId: number,
 ): Promise<boolean> {
+  console.log('address', address)
   const { data, error } = await supabase
     .from('whitelist')
     .select('*')
     .eq('address', address)
-    .eq('id', projectId)
+    .eq('project_id', projectId)
     .single()
+
+  console.log('data', data)
 
   if (error) {
     if (error.code === 'PGRST116') {
@@ -81,7 +84,7 @@ export async function isAddressRegisteredForPresale(
     throw error
   }
 
-  return !!data
+  return Boolean(data && !error)
 }
 
 export async function getPresaleData(projectId: number) {

@@ -20,13 +20,13 @@ export default async function IndexPage({ params: { lang } }: IndexPageProps) {
       <DynamicUpcoming projects={projects} dict={dict} />
 
       <div className="narrow-container">
-        <DynamicFeatures lang={lang} dict={dict} />
+        <DynamicFeatures lang={lang} dict={dict} id="features" />
         <DynamicWhyChooseUs lang={lang} dict={dict} />
-        <DynamicStepsSection lang={lang} dict={dict} />
+        <DynamicStepsSection lang={lang} dict={dict} id="steps" />
+        <DynamicReferralSection />
         <DynamicLearnSection />
         <DynamicRecentArticles lang={lang} />
         <DynamicFAQ lang={lang} dict={dict} />
-
         {appConfig.features.explorations ? (
           <>
             <Categories />
@@ -56,10 +56,7 @@ const DynamicUpcoming = dynamic(
 )
 
 const DynamicWhyChooseUs = dynamic(
-  () =>
-    import('@/components/routes/home/why-choose-us').then(
-      (mod) => mod.WhyChooseUs,
-    ),
+  () => import('@/components/routes/home/why-choose-us').then((mod) => mod.WhyChooseUs),
   { ssr: false },
 )
 
@@ -85,9 +82,14 @@ const DynamicRecentArticles = dynamic(
 )
 
 const DynamicFAQ = dynamic(
+  () => import('@/components/routes/home/section/faq-section').then((mod) => mod.FAQ),
+  { ssr: false },
+)
+
+const DynamicReferralSection = dynamic(
   () =>
-    import('@/components/routes/home/section/faq-section').then(
-      (mod) => mod.FAQ,
+    import('@/components/routes/home/section/referral-section').then(
+      (mod) => mod.ReferralSection,
     ),
   { ssr: false },
 )

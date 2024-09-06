@@ -1,13 +1,8 @@
 import { eosEvmTestnet } from 'app-env'
-import {
-  http,
-  PublicClient,
-  createPublicClient,
-  createWalletClient,
-} from 'viem'
+import { http, type WalletClient, createPublicClient, createWalletClient } from 'viem'
 import { appConfig } from '../config'
 
-export const walletClient = createWalletClient({
+export const walletClient: WalletClient = createWalletClient({
   chain: eosEvmTestnet,
   transport: http(),
   key: appConfig.evm.issuerKey,

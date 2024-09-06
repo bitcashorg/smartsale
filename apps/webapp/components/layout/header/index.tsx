@@ -19,7 +19,7 @@ export function Header({ lang, dict }: HeaderProps) {
         {/* Left Section with Icon */}
         <div className="flex items-center justify-start flex-1">
           <Link href={`/${lang}`}>
-            <IconBitlauncher className="w-[152px]" />
+            <IconBitlauncher className="w-[9.625rem]" />
           </Link>
         </div>
 

@@ -1,9 +1,10 @@
 'use client'
 
 import { savePresaleDepositIntent } from '@/app/actions/save-deposit'
+import { PresaleTokenBalance } from '@/components/routes/project/presale/presale-token-balance'
 import { ProjectGridCard } from '@/components/routes/project/project-grid-card'
 import { ProjectInfo } from '@/components/routes/project/project-info'
-import { Button, buttonVariants } from '@/components/ui/button'
+import { Button } from '@/components/ui/button'
 import { CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
 import {
@@ -34,6 +35,7 @@ export function PresaleDepositCard({
     <ProjectGridCard>
       <div className="mb-5">
         <ProjectInfo project={project} presale={true} />
+        <PresaleTokenBalance />
       </div>
 
       <PresaleDeposit presaleAddress={presaleAddress} />
@@ -55,7 +57,9 @@ function PresaleDeposit({ presaleAddress }: { presaleAddress: Address }) {
   const chainId = useChainId()
 
   const availableChains = useMemo(() => {
-    return tokens.filter((token) => token.symbol === selectedToken).map((token) => token.chainName)
+    return tokens
+      .filter((token) => token.symbol === selectedToken)
+      .map((token) => token.chainName)
   }, [selectedToken])
 
   const deposit = async () => {
@@ -89,10 +93,10 @@ function PresaleDeposit({ presaleAddress }: { presaleAddress: Address }) {
                 'Unable to complete deposit. Please try again, contact support if the problem persist.',
               )
             },
-            onSuccess: (trxHash) => {
+            onSuccess: async (trxHash) => {
               console.log('Transaction hash:', trxHash)
               toast.success('Deposit successful')
-              savePresaleDepositIntent({
+              const deposit = await savePresaleDepositIntent({
                 amount: Number(parseUnits(amount, evmToken.decimals)),
                 created_at: new Date().toISOString(),
                 deposit_hash: trxHash,
@@ -101,7 +105,10 @@ function PresaleDeposit({ presaleAddress }: { presaleAddress: Address }) {
                 address,
                 project_id: 1,
                 account: session?.account,
+                chain_type: evmToken.chainType,
+                chainId: evmToken.chainId,
               })
+              console.log('deposit', deposit)
             },
           },
         )

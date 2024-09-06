@@ -296,11 +296,11 @@ iframe[title="reCAPTCHA"],
 /* TYPOGRAPHY */
 
 .heroHeading {
-  @apply text-6xl font-bold leading-[76px];
+  @apply text-5xl md:text-6xl font-bold leading-[76px];
 }
 
 .heading {
-  @apply text-4xl font-bold leading-normal md:text-4xl;
+  @apply text-3xl font-bold leading-normal md:text-4xl;
 }
 
 .newsletterHeading {
@@ -309,7 +309,7 @@ iframe[title="reCAPTCHA"],
 
 /* Heading in About - Security - Whitepaper */
 .sectionsHeading {
-  @apply text-[3.5rem] sm:text-[4.2rem] font-bold leading-[1.1] lg:text-[4.5rem];
+  @apply text-[3.5rem] sm:text-[3.8rem] font-bold leading-[1.1] lg:text-[4.5rem];
 }
 
 /* Subheading in About - Security - Whitepaper */
