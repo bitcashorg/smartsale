@@ -66,6 +66,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                 ) : (
                   <DynamicAddressForm projectId={project.id} />
                 )}
+                <DynamicAddressForm projectId={project.id} />
               </div>
             </Card>
 

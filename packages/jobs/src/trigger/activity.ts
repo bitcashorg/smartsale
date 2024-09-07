@@ -13,12 +13,15 @@ export const addressActivityTask = task({
       const activity: AlchemyActivity = payload.event.activity[0]
       console.log(activity)
 
-      if (!isAddress(activity.toAddress))
-        throw new Error(`Invalid to address: ${activity.toAddress}`)
+      if (!isAddress(activity.fromAddress))
+        throw new Error(`Invalid from address: ${activity.fromAddress}`)
 
       const valueInTokenUnits = parseUnits(activity.value.toString(), STABLECOIN_DECIMALS)
 
-      const issuanceHash = await issuePresaleTokens(activity.toAddress, valueInTokenUnits)
+      const issuanceHash = await issuePresaleTokens(
+        activity.fromAddress,
+        valueInTokenUnits,
+      )
       console.log(issuanceHash)
       if (!issuanceHash) throw new Error('Failed to get issuance hash')
 

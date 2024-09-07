@@ -126,8 +126,8 @@ function PresaleDeposit({ presaleAddress }: { presaleAddress: Address }) {
   return (
     <div>
       <CardHeader className="p-0 pb-5">
-        <CardTitle>Presale Contributions</CardTitle>
-        <CardDescription>Transfer tokens to participate in the presale.</CardDescription>
+        <CardTitle>Deposit USD</CardTitle>
+        <CardDescription>Deposit USD tokens to participate.</CardDescription>
       </CardHeader>
       <div className="flex flex-col mb-5">
         <label htmlFor="deposit" className="text-sm font-bold" />
@@ -170,7 +170,7 @@ function PresaleDeposit({ presaleAddress }: { presaleAddress: Address }) {
       </div>
 
       <div className="flex flex-col space-y-2">
-        <Button variant="accent" onClick={deposit}>
+        <Button variant="tertiary" onClick={deposit}>
           Contribute Now
         </Button>
       </div>

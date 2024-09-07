@@ -69,9 +69,11 @@ export function RegisterAddressForm({ projectId }: { projectId: number }) {
     <div className="flex justify-center">
       <RegisterButton
         text={
-          isPending && address
-            ? `Registering ${formatAddress(address)}`
-            : 'Sign to Register'
+          !address
+            ? 'Connect EVM Wallet'
+            : isPending && address
+              ? `Registering ${formatAddress(address)}`
+              : 'Get Whitelisted'
         }
         onClick={handleRegister}
       />

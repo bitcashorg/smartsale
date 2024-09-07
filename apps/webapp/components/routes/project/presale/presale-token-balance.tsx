@@ -14,5 +14,11 @@ export function PresaleTokenBalance() {
     chainId: TestnetBLPL.chainId,
   })
 
-  return <div className="text-lg mt-5 text-center">{formatted} BPBL</div>
+  return (
+    <div className="text-5xl mt-5 font-bold text-center">
+      <span className="text-green-500">{formatted}</span> <br />
+      <span className="text-4xl ">BLPL</span>
+      <p>Bitlauncher Presale Tokens</p>
+    </div>
+  )
 }
