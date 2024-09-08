@@ -11,6 +11,10 @@ import { insertTransaction } from './supabase'
  * @param amount The amount of presale tokens to issue
  */
 export async function issuePresaleTokens(to: Address, amount: bigint) {
+  if (!appConfig.issuerKey || !appConfig.issuerAddress) {
+    console.log('💀 Issuer key or address not set')
+    return
+  }
   try {
     const walletClient = createWalletClient({
       chain: eosEvmTestnet,
