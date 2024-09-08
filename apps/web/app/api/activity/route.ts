@@ -11,8 +11,8 @@ import type {
 } from '@repo/alchemy'
 import { chainIdAlchemyNetwork } from '@repo/alchemy'
 import { evmChains } from '@repo/chains'
-import { addressActivityTask } from '@repo/jobs'
 import { evmTokens } from '@repo/tokens'
+import { TriggerClient } from '@trigger.dev/sdk'
 import { NextResponse } from 'next/server'
 import { type Address, getAddress, parseUnits } from 'viem'
 
@@ -95,12 +95,21 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
     }
 
-    const handle = await addressActivityTask.trigger(evt)
-    console.info(`Triggered address activity task: ${JSON.stringify(handle)}`)
-  }
+    const client = new TriggerClient({
+      id: 'your-client-id',
+      apiKey: process.env.TRIGGER_API_KEY,
+    })
 
-  console.info(`Webhook ${evt.id} processed`)
-  return NextResponse.json({ message: `Webhook ${evt.id} processed` }, { status: 200 })
+    await client.sendEvent({
+      name: 'address.activity',
+      payload: evt,
+    })
+
+    console.info(`Triggered address activity event for webhook ${evt.id}`)
+
+    console.info(`Webhook ${evt.id} processed`)
+    return NextResponse.json({ message: `Webhook ${evt.id} processed` }, { status: 200 })
+  }
 }
 
 async function validateAlchemySignature(req: Request): Promise<boolean> {

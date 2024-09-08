@@ -1,9 +1,17 @@
 // import { TestnetBLPL } from '@repo/auction'
 import { createWalletClient, erc20Abi, formatUnits } from 'viem'
-import { http, type Address } from 'viem'
-import { appConfig } from '../config'
+import { http, type Address, isAddress } from 'viem'
+import { z } from 'zod'
 import { eosEvmTestnet } from '../tmp'
 import { insertTransaction } from './supabase'
+
+const envSchema = z.object({
+  ISSUER_KEY: z
+    .string()
+    .length(64)
+    .regex(/^[a-f0-9]+$/i, 'Invalid issuer key format'),
+  ISSUER_ADDRESS: z.string().refine(isAddress, 'Invalid issuer address'),
+})
 
 /**
  * Issues presale tokens to a specified address.
@@ -11,22 +19,22 @@ import { insertTransaction } from './supabase'
  * @param amount The amount of presale tokens to issue
  */
 export async function issuePresaleTokens(to: Address, amount: bigint) {
-  if (!appConfig.issuerKey || !appConfig.issuerAddress) {
-    console.log('💀 Issuer key or address not set')
-    return
-  }
   try {
+    const parsedEnv = envSchema.safeParse(process.env)
+    if (!parsedEnv.success)
+      throw new Error(`Environment validation failed: ${parsedEnv.error.message}`)
     const walletClient = createWalletClient({
       chain: eosEvmTestnet,
       transport: http(),
-      key: appConfig.issuerKey,
-      account: appConfig.issuerAccount,
+      key: parsedEnv.data.ISSUER_KEY,
+      account: parsedEnv.data.ISSUER_ADDRESS,
     })
     const trxHash = await walletClient.writeContract({
       address: TestnetBLPL.address,
       abi: TestnetBLPL.abi,
       functionName: 'transfer',
       args: [to, amount],
+      account: parsedEnv.data.ISSUER_ADDRESS,
     })
     console.log(
       `Issued ${formatUnits(amount, 6)} tokens to ${to} on transaction ${trxHash}`,
