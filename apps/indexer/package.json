@@ -1,5 +1,5 @@
 {
-  "name": "launchpad-indexer",
+  "name": "@repo/indexer",
   "version": "0.0.1",
   "description": "",
   "main": "src/index.ts",
@@ -15,7 +15,7 @@
   "dependencies": {
     "@dfuse/client": "^0.3.21",
     "@repo/alchemy": "workspace:*",
-    "@repo/contracts": "workspace:*",
+    "@repo/auction": "workspace:*",
     "@repo/jobs": "workspace:*",
     "@repo/supabase": "workspace:*",
     "@repo/tokens": "workspace:*",
@@ -27,7 +27,7 @@
     "@trigger.dev/sdk": "^2.3.19",
     "@types/pino-http": "^5.8.4",
     "alchemy-sdk": "^3.4.1",
-    "app-env": "workspace:*",
+    "@repo/config": "workspace:*",
     "axios": "^1.7.2",
     "bn.js": "^5.2.1",
     "express": "^4.19.2",

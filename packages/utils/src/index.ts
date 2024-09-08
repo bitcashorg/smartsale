@@ -1,6 +1,5 @@
 export * from './crypto'
 export * from './date'
-export * from './error'
 export * from './evm'
 export * from './number'
 export * from './object'

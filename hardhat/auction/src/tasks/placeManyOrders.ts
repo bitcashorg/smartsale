@@ -16,10 +16,7 @@ export const placeManyOrders: () => void = () => {
     .addParam('auctionId', 'ID of the auction')
     .addParam('nrOfOrders', 'number of orders to place')
     .addParam('sellAmount', 'The amount of bidding tokens to provide')
-    .addParam(
-      'minBuyAmount',
-      'The amount of auctioning tokens to receive at least',
-    )
+    .addParam('minBuyAmount', 'The amount of auctioning tokens to receive at least')
     .setAction(async (taskArgs, hardhatRuntime) => {
       const [caller] = await getEhtersSigners(hardhatRuntime)
       console.log(`Using the account: ${caller.address}`)
@@ -28,9 +25,7 @@ export const placeManyOrders: () => void = () => {
       if (easyAuction.address != '0xC5992c0e0A3267C7F75493D0F717201E26BE35f7') {
         throw new Error('Use the script only on rinkeby')
       }
-      const auctionData = await easyAuction.callStatic.auctionData(
-        taskArgs.auctionId,
-      )
+      const auctionData = await easyAuction.callStatic.auctionData(taskArgs.auctionId)
       const biddingToken = await hardhatRuntime.ethers.getContractAt(
         'ERC20',
         auctionData.biddingToken,
@@ -51,9 +46,7 @@ export const placeManyOrders: () => void = () => {
       console.log('Using EasyAuction deployed to:', easyAuction.address)
 
       const balance = await biddingToken.callStatic.balanceOf(caller.address)
-      const totalSellingAmountInAtoms = sellAmountsInAtoms.mul(
-        taskArgs.nrOfOrders,
-      )
+      const totalSellingAmountInAtoms = sellAmountsInAtoms.mul(taskArgs.nrOfOrders)
 
       if (totalSellingAmountInAtoms.gt(balance)) {
         throw new Error('Balance not sufficient')

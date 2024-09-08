@@ -1,13 +1,16 @@
+import type { ChainType } from '@repo/chains'
+import type { Address } from 'viem'
 export interface BaseToken {
   symbol: string
   chainName: string
   image?: string
   decimals: number
   isStable: boolean
+  chainType: ChainType
 }
 
 export interface EVMToken extends BaseToken {
-  address: string
+  address: Address
   chainId: number
   chainType: 'evm'
 }
@@ -27,8 +30,7 @@ export interface CosmosToken extends BaseToken {
   denom: string // Cosmos uses denom instead of address
   chainId: string
   chainType: 'cosmos'
+  address: null
 }
 
 export type Token = EVMToken | AntelopeToken | SolanaToken | CosmosToken
-
-export type ChainType = 'evm' | 'antelope' | 'solana' | 'cosmos'

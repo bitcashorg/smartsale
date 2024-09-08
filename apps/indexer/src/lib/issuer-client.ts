@@ -1,4 +1,4 @@
-import { eosEvmTestnet } from 'app-env'
+import { eosEvmTestnet } from '@repo/chains'
 import { http, type WalletClient, createPublicClient, createWalletClient } from 'viem'
 import { appConfig } from '../config'
 

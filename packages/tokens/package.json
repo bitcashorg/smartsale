@@ -2,9 +2,12 @@
   "name": "@repo/tokens",
   "main": "src/index.ts",
   "devDependencies": {
-    "@types/bun": "latest"
+    "@repo/chains": "workspace:*"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "viem": "^2.21.3"
   }
 }

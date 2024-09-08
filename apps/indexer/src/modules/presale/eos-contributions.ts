@@ -1,4 +1,4 @@
-import { smartsaleEnv } from 'app-env'
+import { environment } from '@repo/config'
 import { stringify } from 'viem/utils'
 import { createFirehoseSubscription } from '~/lib/dfuse-client'
 import { issuePresaleTokens } from './presale-issuer'
@@ -7,34 +7,30 @@ import { issuePresaleTokens } from './presale-issuer'
 // https://docs.dfuse.eosnation.io/eosio/public-apis/reference/search/terms/
 // receiver: means the account with code that has executed the action.
 export async function listenToEosContributions(env: 'test' | 'prod' = 'test') {
-  const usdt = smartsaleEnv[env].stables.find(
-    (t) => (t.chainType = 'antelope'),
-  )?.address
-  const bank = smartsaleEnv[env].bitcash.bank
-  const launchpad = smartsaleEnv[env].smartsale.bk
-
-  const usdtDeposits = await createFirehoseSubscription(
-    `receiver:${bank} action:stbtransfer data.to:${launchpad}`,
-  )
-  const bitusdDeposits = await createFirehoseSubscription(
-    `receiver:${usdt} action:transfer data.to:${launchpad}`,
-  )
-
-  // only first action for now
-  usdtDeposits.on('data', ({ trxId, actions }: any) =>
-    handleDeposit({
-      trxId,
-      from: actions[0].from,
-      quantity: actions[0].quantity,
-    }),
-  )
-  bitusdDeposits.on('data', ({ trxId, actions }: any) =>
-    handleDeposit({
-      trxId,
-      from: actions[0].from,
-      quantity: actions[0].quantity.quantity,
-    }),
-  )
+  // const usdt = environment[env].stables.find((t) => (t.chainType = 'antelope'))?.address
+  // const bank = environment[env].bitcash.bank
+  // const launchpad = environment[env].smartsale.bk
+  // const usdtDeposits = await createFirehoseSubscription(
+  //   `receiver:${bank} action:stbtransfer data.to:${launchpad}`,
+  // )
+  // const bitusdDeposits = await createFirehoseSubscription(
+  //   `receiver:${usdt} action:transfer data.to:${launchpad}`,
+  // )
+  // // only first action for now
+  // usdtDeposits.on('data', ({ trxId, actions }: any) =>
+  //   handleDeposit({
+  //     trxId,
+  //     from: actions[0].from,
+  //     quantity: actions[0].quantity,
+  //   }),
+  // )
+  // bitusdDeposits.on('data', ({ trxId, actions }: any) =>
+  //   handleDeposit({
+  //     trxId,
+  //     from: actions[0].from,
+  //     quantity: actions[0].quantity.quantity,
+  //   }),
+  // )
 }
 
 async function handleDeposit(data: {

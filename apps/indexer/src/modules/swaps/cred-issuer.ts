@@ -1,5 +1,5 @@
-import { TestnetUSDCred } from '@repo/contracts'
-import { eosEvmTestnet } from 'app-env'
+import { TestnetUSDCred } from '@repo/auction'
+import { eosEvmTestnet } from '@repo/chains'
 import { createWalletClient } from 'viem'
 import { http, type Address } from 'viem'
 import { appConfig } from '~/config'
@@ -21,6 +21,7 @@ export async function issueTokens(to: Address, amount: bigint) {
       abi: TestnetUSDCred.abi,
       functionName: 'issue',
       args: [to, amount],
+      account: appConfig.evm.issuerAccount,
     })
   } catch (error) {
     console.log((error as Error).message)

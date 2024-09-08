@@ -1,14 +1,9 @@
-import express, {
-  type NextFunction,
-  type Response,
-  type Request,
-} from 'express'
+import express, { type NextFunction, type Response, type Request } from 'express'
 import rateLimit from 'express-rate-limit'
 import helmet from 'helmet'
 import pinoHttp from 'pino-http'
 import { logger } from '~/lib/logger'
 import { setupSentryErrorHandler } from '~/lib/sentry'
-import { alchemyWebhook } from './alchemy'
 import { healthcheck } from './healthcheck'
 
 export function startExpress() {
@@ -57,14 +52,10 @@ export function startExpress() {
 
   // Routes
   app.get('/', healthcheck)
-  app.post('/alchemy', alchemyWebhook)
 
   // Error handling middleware
   app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
-    logger.error(
-      { err, req: { method: req.method, url: req.url } },
-      'Unhandled error',
-    )
+    logger.error({ err, req: { method: req.method, url: req.url } }, 'Unhandled error')
     res.status(500).json({ error: 'Internal Server Error' })
   })
 

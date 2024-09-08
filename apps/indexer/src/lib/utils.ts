@@ -1,13 +1,7 @@
+import fs from 'node:fs/promises'
+import { eosEvmTestnet } from '@repo/chains'
 import { erc20Abi } from 'abitype/abis'
-import { eosEvmTestnet } from 'app-env'
-import fs from 'fs/promises'
-import {
-  http,
-  type Abi,
-  type Address,
-  createPublicClient,
-  parseUnits,
-} from 'viem'
+import { http, type Abi, type Address, createPublicClient, parseUnits } from 'viem'
 
 export async function writeToFile(data: string, filePath: string) {
   try {
@@ -26,24 +20,21 @@ export function runPromisesInSeries<T>(
   delay?: number,
 ): Promise<T | void> {
   // Start with a Promise<void> to ensure compatibility with the accumulator's type
-  return promiseFns.reduce<Promise<T | void>>(
-    (prevPromise, currentPromiseFn) => {
-      // Chain the current promise to the accumulator after the previous one completes
-      // Here, we ignore the result of the previous promise, as we're focusing on chaining
-      return prevPromise.then(() => {
-        if (delay) {
-          // Introduce a delay before executing the current promise
-          return new Promise<void>((resolve) => {
-            setTimeout(() => resolve(), delay)
-          }).then(() => currentPromiseFn())
-        } else {
-          // If no delay is provided, execute the current promise immediately
-          return currentPromiseFn()
-        }
-      })
-    },
-    Promise.resolve(),
-  )
+  return promiseFns.reduce<Promise<T | void>>((prevPromise, currentPromiseFn) => {
+    // Chain the current promise to the accumulator after the previous one completes
+    // Here, we ignore the result of the previous promise, as we're focusing on chaining
+    return prevPromise.then(() => {
+      if (delay) {
+        // Introduce a delay before executing the current promise
+        return new Promise<void>((resolve) => {
+          setTimeout(() => resolve(), delay)
+        }).then(() => currentPromiseFn())
+      } else {
+        // If no delay is provided, execute the current promise immediately
+        return currentPromiseFn()
+      }
+    })
+  }, Promise.resolve())
 }
 
 export async function getTokenDetails({ address }: { address: Address }) {
@@ -81,8 +72,7 @@ export function bigintToPostgresTimestamp(timestamp: bigint): string {
   return date.toISOString()
 }
 
-export const getEvents = (abi: Abi) =>
-  abi.filter((item) => item.type === 'event')
+export const getEvents = (abi: Abi) => abi.filter((item) => item.type === 'event')
 
 export function convertToBigIntWithDecimals(quantity: string): bigint {
   // Extract the numeric value as a string

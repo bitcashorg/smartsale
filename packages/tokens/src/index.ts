@@ -1,15 +1,11 @@
 import type { Token } from './types'
 export * from './types'
-export * from './eos'
+export * from './antelope'
 export * from './evm'
 export * from './solana'
 
-import { antelopeTokens } from './eos'
+import { antelopeTokens } from './antelope'
 import { evmTokens } from './evm'
 import { solanaTokens } from './solana'
 
-export const tokens: Token[] = [
-  ...antelopeTokens,
-  ...evmTokens,
-  ...solanaTokens,
-]
+export const tokens: Token[] = [...antelopeTokens, ...evmTokens, ...solanaTokens]

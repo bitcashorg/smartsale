@@ -13,10 +13,7 @@ import {
 } from './utils'
 
 export const generateSignatures: () => void = () => {
-  task(
-    'generateSignatures',
-    'Generates the signatures for the allowListManager',
-  )
+  task('generateSignatures', 'Generates the signatures for the allowListManager')
     .addParam('auctionId', 'Id of the auction ')
     .addParam(
       'fileWithAddress',
@@ -35,8 +32,7 @@ export const generateSignatures: () => void = () => {
       console.log(`Using the account: ${caller.address}`)
 
       // Loading dependencies
-      const allowListContract =
-        await getAllowListOffChainManagedContract(hardhatRuntime)
+      const allowListContract = await getAllowListOffChainManagedContract(hardhatRuntime)
       const { chainId } = await hardhatRuntime.ethers.provider.getNetwork()
       const contractDomain = domain(chainId, allowListContract.address)
 
@@ -66,9 +62,7 @@ export const generateSignatures: () => void = () => {
             hardhatRuntime.ethers.utils.defaultAbiCoder.encode(
               ['bytes32', 'address', 'uint256'],
               [
-                hardhatRuntime.ethers.utils._TypedDataEncoder.hashDomain(
-                  contractDomain,
-                ),
+                hardhatRuntime.ethers.utils._TypedDataEncoder.hashDomain(contractDomain),
                 address,
                 taskArgs.auctionId,
               ],
@@ -77,8 +71,7 @@ export const generateSignatures: () => void = () => {
           const auctioneerSignature = await caller.signMessage(
             hardhatRuntime.ethers.utils.arrayify(auctioneerMessage),
           )
-          const sig =
-            hardhatRuntime.ethers.utils.splitSignature(auctioneerSignature)
+          const sig = hardhatRuntime.ethers.utils.splitSignature(auctioneerSignature)
           const auctioneerSignatureEncoded =
             hardhatRuntime.ethers.utils.defaultAbiCoder.encode(
               ['uint8', 'bytes32', 'bytes32'],

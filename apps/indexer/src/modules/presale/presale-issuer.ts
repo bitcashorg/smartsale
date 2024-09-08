@@ -1,5 +1,5 @@
-import { TestnetBLPL } from '@repo/contracts'
-import { eosEvmTestnet } from 'app-env'
+import { TestnetBLPL } from '@repo/auction'
+import { eosEvmTestnet } from '@repo/chains'
 import { createWalletClient } from 'viem'
 import { http, type Address } from 'viem'
 import { appConfig } from '~/config'

@@ -1,7 +1,7 @@
-import { TestnetEasyAuction } from '@repo/contracts'
-import { eosEvmTestnet } from 'app-env'
+import { TestnetEasyAuction } from '@repo/auction'
+import { eosEvmTestnet } from '@repo/chains'
 import BN from 'bn.js'
-import { createPublicClient, http, stringify, type Log } from 'viem'
+import { http, type Log, createPublicClient, stringify } from 'viem'
 import { upsertAuctionDetail, upsertOrder } from '~/lib/supabase-client'
 import {
   bigintToPostgresTimestamp,
@@ -9,11 +9,7 @@ import {
   getTokenDetails,
   runPromisesInSeries,
 } from '~/lib/utils'
-import type {
-  NewAuctionEvent,
-  NewSellOrderEvent,
-  NewUserEvent,
-} from './auction.type'
+import type { NewAuctionEvent, NewSellOrderEvent, NewUserEvent } from './auction.type'
 
 export async function startAuctionIndexer() {
   console.log('indexing starting')
@@ -45,9 +41,7 @@ export async function startAuctionIndexer() {
   client.watchEvent({
     events,
     onLogs: (logs) => {
-      const filteredlogs = logs.filter(
-        (log) => log.eventName !== 'OwnershipTransferred',
-      )
+      const filteredlogs = logs.filter((log) => log.eventName !== 'OwnershipTransferred')
       console.log('real time', stringify(filteredlogs, null, 2))
       processLogs(logs)
     },

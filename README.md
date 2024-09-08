@@ -29,61 +29,34 @@ SmartSale is committed to compliance and security, rigorously adhering to emergi
 
 ## Project Overview
 
-This document provides an overview of the applications and packages within the project, as well as a brief description of the Hardhat setup.
-
-### Applications
-
-#### Faucet (`/apps/faucet`)
-
-The Faucet application serves as a utility for distributing test tokens or currencies in a blockchain network. It is typically used in test environments to provide developers and users with a means to obtain tokens for testing purposes.
-
-#### Indexer (`/apps/indexer`)
-
-The Indexer application is responsible for indexing blockchain data. It listens to the blockchain network, extracts relevant data from blocks, transactions, and events, and stores it in a structured format for easy querying and analysis.
-
-#### Webapp (`/apps/webapp`)
-
-The Webapp is a front-end application that provides a user interface for interacting with the project's services. It includes features such as displaying blockchain data, interacting with smart contracts, and utilizing the Faucet for test tokens.
-
-Please refer to the [webapp README.md](/apps/webapp/README.md) for more details on the technologies used in the Webapp and code practices.
-
-### Packages
-
-#### Alchemy (`/packages/alchemy`)
-
-This package integrates with the Alchemy SDK, providing a robust interface for interacting with Ethereum and other blockchain networks. It includes utilities for creating and managing blockchain interactions, leveraging Alchemy's powerful API services.
-
-#### Config TypeScript (`/packages/tsconfig`)
-
-This package offers shared TypeScript configurations to standardize TypeScript compilation options across the project. It includes specific configurations for different environments and Node.js versions.
-
-#### Jobs (`/packages/jobs`)
-
-The Jobs package contains background tasks and scheduled processes for the SmartSale platform. It utilizes Trigger.dev for managing and deploying these jobs, ensuring efficient handling of asynchronous operations and scheduled tasks.
-
-#### Supabase (`/packages/supabase`)
-
-This package integrates with Supabase, providing real-time database functionality, authentication, and storage services. It includes type generation and schema validation tools to ensure type safety when interacting with the Supabase backend.
-
-#### Tokens (`/packages/tokens`)
-
-The Tokens package contains definitions, interfaces, and utilities related to the various tokens used within the SmartSale ecosystem. This includes ERC20 token implementations, token standards, and related blockchain interactions.
-
-For more details on specific packages, refer to their respective README files:
-
-- [Alchemy](./packages/alchemy/README.md)
-- [Jobs](./packages/jobs/README.md)
-- [Supabase](./packages/supabase/README.md)
-- [Tokens](./packages/tokens/README.md)
-You can also check their package.json configurations for additional information.
+This document provides an overview of the applications and packages within the project, along with a brief description of the Hardhat setup.
 
 ### Hardhat (`/hardhat`)
+- [Hardhat](https://hardhat.org/): Development environment for Ethereum software, including configurations and scripts for compiling, testing, and deploying smart contracts.
 
-Hardhat is a development environment for Ethereum software development. It facilitates the development, testing, and deployment of smart contracts. The `hardhat` folder contains configurations and scripts for compiling smart contracts, running tests, and deploying contracts to various Ethereum networks. It includes subfolders for different contract modules like `auction` and `erc20-token`, each containing specific smart contract implementations.
+### Applications
+- [Faucet](https://github.com/your-repo/smartsale/tree/main/apps/faucet): Distributes test tokens or currencies in blockchain networks for testing purposes.
+- [Indexer](https://github.com/your-repo/smartsale/tree/main/apps/indexer): Indexes blockchain data by listening to the network, extracting data from blocks, transactions, and events, and storing it for easy querying.
+- [Webapp](https://github.com/your-repo/smartsale/tree/main/apps/webapp): Front-end application providing a user interface for displaying blockchain data, interacting with smart contracts.
+
+### Services
+- [Alchemy](https://github.com/your-repo/smartsale/tree/main/packages/alchemy): Integrates with the Alchemy SDK for interacting with Ethereum and other blockchain networks.
+- [Jobs](https://github.com/your-repo/smartsale/tree/main/packages/jobs): Contains background tasks and scheduled processes using Trigger.dev for efficient asynchronous operations.
+- [Supabase](https://github.com/your-repo/smartsale/tree/main/packages/supabase): Integrates with Supabase for real-time database functionality, authentication, and storage services.
+
+### Packages
+- [Config](https://github.com/your-repo/smartsale/tree/main/packages/config): Provides shared configuration.
+- [Chains](https://github.com/your-repo/smartsale/tree/main/packages/chains): Contains definitions, interfaces, and utilities for various tokens in the SmartSale ecosystem.
+- [Tokens](https://github.com/your-repo/smartsale/tree/main/packages/tokens): Includes definitions and utilities for ERC20 token implementations.
+- [Auction](https://github.com/your-repo/smartsale/tree/main/packages/auction): Includes auction contracts and utilities.
+- [Errors](https://github.com/your-repo/smartsale/tree/main/packages/errors): Contains an error catalog and utilities.
+- [Utils](https://github.com/your-repo/smartsale/tree/main/packages/utils): Provides utility functions and helpers.
+
+### Tooling
+- [Config TypeScript](https://github.com/your-repo/smartsale/tree/main/tooling/tsconfig): Offers shared TypeScript configurations for standardizing compilation options across the project.
 
 ## Requirements
 
-- **NodeJS**: Recommended for managing server-side scripting and backend interactions.
 - **Bun**: Provides a faster runtime for JavaScript, enhancing development efficiency.
 - **Supabase CLI**: Facilitates local development and effective database schema management.
 - **Docker**: Essential for creating isolated environments, ensuring consistent operation across different setups.

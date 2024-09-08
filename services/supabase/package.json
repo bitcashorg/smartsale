@@ -1,0 +1,24 @@
+{
+  "name": "@repo/supabase",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "description": "supabase module for smartevm",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "supa:gen": "bun run types && bun run schemas",
+    "types": "supabase gen types gen types --lang=typescript --project-id jvpdyxpjpodxsuvhufpw > src/supa.types.ts",
+    "schemas": "supabase-to-zod --input src/supa.types.ts --output src/supa.schemas.ts",
+    "fake": "bun run ./scripts/fake-orders.ts"
+  },
+  "author": "bitcash.org",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@repo/tsconfig": "workspace:*",
+    "supabase-to-zod": "^1.0.7",
+    "@faker-js/faker": "^8.4.1",
+    "supabase": "^1.187.3"
+  }
+}

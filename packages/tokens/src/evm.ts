@@ -1,3 +1,4 @@
+import { getAddress } from 'viem'
 import type { EVMToken } from './types'
 
 const baseTokens = [
@@ -93,4 +94,5 @@ export const evmTokens: EVMToken[] = baseTokens.map((token) => ({
   // On BNB Chain (chainId 56), both USDT and USDC are implemented with 18 decimal places instead of the usual 6.
   decimals: token.chainId === 56 ? 18 : 6,
   isStable: true,
+  address: getAddress(token.address),
 }))

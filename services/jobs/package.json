@@ -1,0 +1,27 @@
+{
+  "name": "@repo/jobs",
+  "version": "0.0.1",
+  "private": true,
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "bunx trigger.dev@beta dev",
+    "clean": "rm -rf .turbo node_modules",
+    "lint": "biome check .",
+    "jobs": "bunx trigger.dev@beta dev",
+    "format": "biome format --write .",
+    "typecheck": "tsc --noEmit",
+    "deploy:staging": "bunx trigger.dev@beta deploy --env staging",
+    "deploy:prod": "bunx trigger.dev@beta deploy --env prod"
+  },
+  "dependencies": {
+    "@repo/alchemy": "workspace:*",
+    "@repo/supabase": "workspace:*",
+    "@repo/utils": "workspace:*",
+    "@repo/config": "workspace:*",
+    "@supabase/supabase-js": "^2.45.3",
+    "@trigger.dev/sdk": "3.0.0-beta.56",
+    "alchemy-sdk": "^3.4.1",
+    "lodash": "^4.17.21",
+    "viem": "latest"
+  }
+}

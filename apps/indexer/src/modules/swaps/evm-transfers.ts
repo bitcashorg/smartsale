@@ -1,16 +1,12 @@
-import {
-  type EVMTokenContractData,
-  appContracts
-} from '@repo/contracts'
+import { type EVMTokenContractData, appContracts } from '@repo/auction'
 import { runPromisesInSeries } from '~/lib/utils'
 
-import { appChains } from 'app-env'
 import {
+  http,
   type Address,
   type Log,
   type PublicClient,
   createPublicClient,
-  http,
   parseAbiItem,
   stringify,
 } from 'viem'
@@ -25,47 +21,46 @@ export async function listenToEvmTransfers() {
 }
 
 async function listenToEvmTransfersFn(token: EVMTokenContractData) {
-  const chain = appChains.dev.get(token.chainId)
-  if (!chain) return
-  console.log(
-    `listening usdt transfers for token ${token.symbol} on chain ${chain.name}`,
-  )
-  const client: PublicClient = createPublicClient({
-    chain,
-    transport: http(),
-  })
-  try {
-    const logs = await client.getLogs({
-      address: token.address,
-      event: parseAbiItem(
-        'event Transfer(address indexed from, address indexed to, uint256 value)',
-      ),
-      args: {
-        to: '0x2C9DAAb3F463d6c6D248aCbeaAEe98687936374a',
-      },
-      fromBlock: BigInt(token.indexFromBlock),
-    })
+  console.log('token', token)
+  // const chain = appChains.dev.get(token.chainId)
+  // if (!chain) return
+  // console.log(`listening usdt transfers for token ${token.symbol} on chain ${chain.name}`)
+  // const client: PublicClient = createPublicClient({
+  //   chain,
+  //   transport: http(),
+  // })
+  // try {
+  //   const logs = await client.getLogs({
+  //     address: token.address,
+  //     event: parseAbiItem(
+  //       'event Transfer(address indexed from, address indexed to, uint256 value)',
+  //     ),
+  //     args: {
+  //       to: '0x2C9DAAb3F463d6c6D248aCbeaAEe98687936374a',
+  //     },
+  //     fromBlock: BigInt(token.indexFromBlock),
+  //   })
 
-    // delay prevents idempotent transactions:
-    processLogs(logs, 3000)
+  //   // delay prevents idempotent transactions:
+  //   processLogs(logs, 3000)
 
-    // Watch for new event logs
-    client.watchEvent({
-      address: token.address,
-      event: parseAbiItem(
-        'event Transfer(address indexed from, address indexed to, uint256 value)',
-      ),
-      args: {
-        to: '0x2C9DAAb3F463d6c6D248aCbeaAEe98687936374a',
-      },
-      onLogs: (logs) => {
-        console.log('real time transfer', stringify(logs, null, 2))
-        processLogs(logs)
-      },
-    })
-  } catch (error) {
-    console.error(error)
-  }
+  //   // Watch for new event logs
+  //   client.watchEvent({
+  //     address: token.address,
+  //     event: parseAbiItem(
+  //       'event Transfer(address indexed from, address indexed to, uint256 value)',
+  //     ),
+  //     args: {
+  //       to: '0x2C9DAAb3F463d6c6D248aCbeaAEe98687936374a',
+  //     },
+  //     onLogs: (logs) => {
+  //       console.log('real time transfer', stringify(logs, null, 2))
+  //       processLogs(logs)
+  //     },
+  //   })
+  // } catch (error) {
+  //   console.error(error)
+  // }
 }
 
 // takes the generic logs and if the eventName matches one of the eventHandlers keys

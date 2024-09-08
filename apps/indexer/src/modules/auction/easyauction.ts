@@ -1,6 +1,6 @@
-import { TestnetEasyAuction } from '@repo/contracts'
-import { eosEvmTestnet } from 'app-env'
-import { createPublicClient, getContract, http } from 'viem'
+import { TestnetEasyAuction } from '@repo/auction'
+import { eosEvmTestnet } from '@repo/chains'
+import { http, createPublicClient, getContract } from 'viem'
 
 const client = createPublicClient({
   chain: eosEvmTestnet,

@@ -1,4 +1,4 @@
-import { getErrorMessage } from '@repo/utils'
+import { getErrorMessage } from '@repo/errors'
 import { startExpress } from './api'
 import { logger } from './lib/logger'
 

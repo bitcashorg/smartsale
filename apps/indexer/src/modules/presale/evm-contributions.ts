@@ -1,11 +1,11 @@
-import { type EVMTokenContractData, appContracts } from '@repo/contracts'
+import { type EVMTokenContractData, appContracts } from '@repo/auction'
 import {
+  http,
   type Address,
   type Log,
   type PublicClient,
   createPublicClient,
-  http,
-  parseAbiItem
+  parseAbiItem,
 } from 'viem'
 // import { upsertTransfers } from '~/lib/supabase-client'
 import { runPromisesInSeries } from '~/lib/utils'
@@ -66,11 +66,7 @@ async function listenToEvmTransfersFn(token: EVMTokenContractData) {
 
 // takes the generic logs and if the eventName matches one of the eventHandlers keys
 // it passes the log to corresponding hanlder function
-async function processLogs(
-  logs: Log[],
-  token: EVMTokenContractData,
-  delay = 0,
-) {
+async function processLogs(logs: Log[], token: EVMTokenContractData, delay = 0) {
   const actions = logs
     .map((log) => {
       const eventName = (log as any).eventName.toString()
