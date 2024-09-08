@@ -7,8 +7,14 @@ const envSchema = z.object({
   ISSUER_KEY: z
     .string()
     .length(64)
-    .regex(/^[a-f0-9]+$/i, 'Invalid issuer key format'),
-  ISSUER_ADDRESS: z.string().refine(isAddress, 'Invalid issuer address'),
+    .regex(/^[a-f0-9]+$/i, 'Invalid issuer key format')
+    .nullable()
+    .optional(),
+  ISSUER_ADDRESS: z
+    .string()
+    .refine(isAddress, 'Invalid issuer address')
+    .nullable()
+    .optional(),
 })
 
 const parsedEnv = envSchema.safeParse(process.env)
@@ -29,4 +35,4 @@ export const appConfig = {
     anonKey:
       'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imp2cGR5eHBqcG9keHN1dmh1ZnB3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTMxMzMxMDcsImV4cCI6MjAyODcwOTEwN30.KkwK6Px8MG03QPDScsKjLc48GU-RkTs9beT946vD2vI',
   },
-}
+} as const
