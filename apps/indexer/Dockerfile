@@ -13,7 +13,7 @@ COPY packages/alchemy/package.json ./packages/alchemy/package.json
 COPY packages/app-env/package.json ./packages/app-env/package.json
 COPY packages/contracts/package.json ./packages/contracts/package.json
 COPY packages/utils/package.json ./packages/utils/package.json
-COPY packages/tsconfig/package.json ./packages/tsconfig/package.json
+COPY tooling/tsconfig/package.json ./tooling/tsconfig/package.json
 COPY packages/tokens/package.json ./packages/tokens/package.json
 # Copy the lock file
 COPY bun.lockb .

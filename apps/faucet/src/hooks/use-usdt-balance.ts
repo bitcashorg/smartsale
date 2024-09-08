@@ -1,4 +1,4 @@
-import { TestnetUSDCred } from '@repo/contracts'
+import { TestnetUSDCred } from '@repo/auction'
 import { formatUnits } from 'viem'
 import { useAccount, useReadContract } from 'wagmi'
 

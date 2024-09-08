@@ -91,17 +91,11 @@ export async function getAuctionEndTimeStamp(
 }
 
 export function hasLowerClearingPrice(order1: Order, order2: Order): number {
-  if (
-    order1.buyAmount
-      .mul(order2.sellAmount)
-      .lt(order2.buyAmount.mul(order1.sellAmount))
-  )
+  if (order1.buyAmount.mul(order2.sellAmount).lt(order2.buyAmount.mul(order1.sellAmount)))
     return -1
   if (order1.buyAmount.lt(order2.buyAmount)) return -1
   if (
-    order1.buyAmount
-      .mul(order2.sellAmount)
-      .eq(order2.buyAmount.mul(order1.sellAmount))
+    order1.buyAmount.mul(order2.sellAmount).eq(order2.buyAmount.mul(order1.sellAmount))
   ) {
     if (order1.userId < order2.userId) return -1
   }
@@ -201,10 +195,7 @@ export function findClearingPrice(
         .gte(initialAuctionOrder.sellAmount)
     ) {
       const coveredBuyAmount = initialAuctionOrder.sellAmount.sub(
-        totalSellVolume
-          .sub(order.sellAmount)
-          .mul(order.buyAmount)
-          .div(order.sellAmount),
+        totalSellVolume.sub(order.sellAmount).mul(order.buyAmount).div(order.sellAmount),
       )
       const sellAmountClearingOrder = coveredBuyAmount
         .mul(order.sellAmount)
@@ -240,12 +231,7 @@ export async function getAllSellOrders(
   easyAuction: Contract,
   auctionId: BigNumber,
 ): Promise<Order[]> {
-  const filterSellOrders = easyAuction.filters.NewSellOrder(
-    auctionId,
-    null,
-    null,
-    null,
-  )
+  const filterSellOrders = easyAuction.filters.NewSellOrder(auctionId, null, null, null)
   const logs = await easyAuction.queryFilter(filterSellOrders, 0, 'latest')
   const events = logs.map((log: any) => easyAuction.interface.parseLog(log))
   const sellOrders = events.map((x: any) => {
@@ -318,9 +304,7 @@ export async function placeOrders(
 ): Promise<void> {
   for (const sellOrder of sellOrders) {
     await easyAuction
-      .connect(
-        hre.waffle.provider.getWallets()[sellOrder.userId.toNumber() - 1],
-      )
+      .connect(hre.waffle.provider.getWallets()[sellOrder.userId.toNumber() - 1])
       .placeSellOrders(
         auctionId,
         [sellOrder.buyAmount],

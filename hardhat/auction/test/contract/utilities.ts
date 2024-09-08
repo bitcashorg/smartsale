@@ -9,9 +9,7 @@ export async function closeAuction(
   instance: Contract,
   auctionId: BigNumber,
 ): Promise<void> {
-  const time_remaining = (
-    await instance.getSecondsRemainingInBatch(auctionId)
-  ).toNumber()
+  const time_remaining = (await instance.getSecondsRemainingInBatch(auctionId)).toNumber()
   await increaseTime(time_remaining + 1)
 }
 

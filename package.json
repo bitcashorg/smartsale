@@ -2,29 +2,34 @@
   "name": "smartsale",
   "version": "1.0.0",
   "author": "bitcash.org",
+  "license": "MIT",
+  "description": "bitlauncher monorepo",
+  "private": true,
+  "type": "module",
   "devDependencies": {
     "@biomejs/biome": "1.8.3",
     "@types/bn.js": "^5.1.5",
-    "@types/node": "latest",
+    "@types/bun": "latest",
     "turbo": "^2.0.9"
   },
-  "description": "bitlauncher monorepo",
-  "engines": {
-    "node": "20.x"
-  },
-  "license": "MIT",
-  "packageManager": "bun@1.1.20",
-  "private": true,
   "scripts": {
     "build": "turbo build --no-daemon",
     "dev": "turbo dev --no-daemon --parallel",
+    "dev:web": "turbo dev --filter=@repo/web",
+    "dev:jobs": "turbo jobs --filter=@repo/jobs",
+    "dev:faucet": "turbo dev --filter=@repo/faucet",
+    "clean": "git clean -xdf node_modules",
+    "clean:workspaces": "turbo clean",
     "format-and-lint": "biome check .",
     "format-and-lint:fix": "biome check . --write",
     "clean:node_modules": "find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +"
   },
-  "type": "module",
+  "engines": {
+    "bun": "1.x"
+  },
+  "packageManager": "bun@1.1.20",
   "workspaces": {
-    "packages": ["apps/*", "packages/*"],
+    "packages": ["apps/*", "packages/*", "services/*", "tooling/*"],
     "nohoist": [
       "**/vite",
       "**/vite/**",

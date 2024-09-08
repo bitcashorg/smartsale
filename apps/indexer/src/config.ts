@@ -1,4 +1,4 @@
-import { smartsaleEnv } from 'app-env'
+import { environment } from '@repo/config'
 import type { Account, Address } from 'viem'
 import { isAddress } from 'viem'
 import { privateKeyToAccount } from 'viem/accounts'
@@ -54,5 +54,5 @@ export const appConfig = {
       activitySigningKey: parsedEnv.data.ALCHEMY_ACTIVITY_SIGNING_KEY,
     },
   },
-  ...smartsaleEnv.test,
+  ...environment.test,
 }

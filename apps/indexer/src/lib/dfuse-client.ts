@@ -1,5 +1,5 @@
-import EventEmitter from 'events'
-import type { IncomingMessage } from 'http'
+import EventEmitter from 'node:events'
+import type { IncomingMessage } from 'node:http'
 import {
   type GraphqlStreamMessage,
   type WebSocketFactory,
@@ -53,9 +53,7 @@ export async function createFirehoseSubscription(query: string) {
         const transfer = message.data.searchTransactionsForward.trace
         const data = {
           trxId: transfer.id as string,
-          actions: transfer.matchingActions.map(
-            ({ json }: any) => json,
-          ) as {}[],
+          actions: transfer.matchingActions.map(({ json }: any) => json) as {}[],
         }
         eventEmitter.emit('data', data)
         console.log('Token Transfer:', JSON.stringify(data))

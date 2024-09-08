@@ -7,7 +7,7 @@ import {
   TestnetMBOTSPL,
   TestnetUSDCred,
   TestnetUSDT,
-} from '@repo/contracts'
+} from '@repo/auction'
 import { useEffect, useState } from 'react'
 import { parseUnits } from 'viem'
 import { useAccount, useSwitchChain, useWriteContract } from 'wagmi'
@@ -22,8 +22,7 @@ export function FaucetForm() {
     account?.address ? account.address : undefined,
   )
   const [quantity, setQuantity] = useState<string>('100')
-  const { writeContract, isPending, isSuccess, data, ...other } =
-    useWriteContract()
+  const { writeContract, isPending, isSuccess, data, ...other } = useWriteContract()
   const [token, setToken] = useState<EVMTokenContractData>(TestnetUSDCred)
   const { switchChain } = useSwitchChain()
 
@@ -92,12 +91,7 @@ export function FaucetForm() {
         />
       </div>
       <div className="flex justify-center w-full gap-5 pt-2">
-        <Button
-          className="w-1/4"
-          type="submit"
-          disabled={isPending}
-          onClick={callFaucet}
-        >
+        <Button className="w-1/4" type="submit" disabled={isPending} onClick={callFaucet}>
           Submit
         </Button>
         <AddTokenToWallet {...token} />
