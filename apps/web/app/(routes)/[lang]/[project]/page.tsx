@@ -55,6 +55,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
             <Card className="flex flex-col w-full pb-5 border-card/30 bg-card/60 backdrop-blur-lg">
               <Countdown targetDate={countdownDate} heading={countdownHeading} />
               <div className="flex items-center justify-center gap-3 py-3 mt-5 align-center md:mt-0">
+                <DynamicAddressForm projectId={project.id} />
                 {isPresaleActive ? (
                   <Link href={`/${project.slug}/presale`}>
                     <Button variant="tertiary">Join Presale Now</Button>
@@ -66,7 +67,6 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                 ) : (
                   <DynamicAddressForm projectId={project.id} />
                 )}
-                <DynamicAddressForm projectId={project.id} />
               </div>
             </Card>
 

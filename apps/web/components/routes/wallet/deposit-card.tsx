@@ -24,7 +24,7 @@ import { cn } from '@/lib/utils'
 import type { EVMTokenContractData } from '@repo/auction'
 import { type EVMToken, tokens } from '@repo/tokens'
 import { useMemo, useState } from 'react'
-import toast from 'react-hot-toast'
+import { toast } from 'sonner'
 import { erc20Abi, parseUnits } from 'viem'
 import { useAccount, useChainId, useSwitchChain, useWriteContract } from 'wagmi'
 

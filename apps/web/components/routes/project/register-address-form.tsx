@@ -7,7 +7,7 @@ import { useSupabaseClient } from '@/services/supabase'
 import { formatAddress } from '@repo/utils'
 import { useQuery } from '@tanstack/react-query'
 import { useAction } from 'next-safe-action/hooks'
-import toast from 'react-hot-toast'
+import { toast } from 'sonner'
 import { useAccount, useSignMessage } from 'wagmi'
 import type { SignMessageData } from 'wagmi/query'
 
@@ -64,7 +64,7 @@ export function RegisterAddressForm({ projectId }: { projectId: number }) {
   }
 
   return registration.data?.address || result.data?.info?.address ? (
-    <RegisterButton text={'Your are registered!'} />
+    <RegisterButton text={'You are whitelisted!'} />
   ) : (
     <div className="flex justify-center">
       <RegisterButton
@@ -72,7 +72,7 @@ export function RegisterAddressForm({ projectId }: { projectId: number }) {
           !address
             ? 'Connect EVM Wallet'
             : isPending && address
-              ? `Registering ${formatAddress(address)}`
+              ? `Whitelisting ${formatAddress(address)}`
               : 'Get Whitelisted'
         }
         onClick={handleRegister}

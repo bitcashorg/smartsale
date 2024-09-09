@@ -21,7 +21,6 @@ export const savePresaleDepositIntent = createSafeActionClient()
       parsedInput: transfer,
     }): Promise<ActionResult<Tables<'presale_deposit'>>> => {
       try {
-        console.log('savePresaleDepositIntent', transfer)
         const supabase = await createSupabaseServerClient()
 
         const transaction = await supabase
