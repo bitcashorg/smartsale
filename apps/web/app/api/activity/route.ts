@@ -1,4 +1,5 @@
 import crypto from 'node:crypto'
+import { appConfig } from '@/lib/config'
 import {
   createSupabaseServerClient,
   getPresaleData,
@@ -13,8 +14,14 @@ import { chainIdAlchemyNetwork } from '@repo/alchemy'
 import { evmChains } from '@repo/chains'
 import { evmTokens } from '@repo/tokens'
 import { TriggerClient } from '@trigger.dev/sdk'
+import { Alchemy, type Network } from 'alchemy-sdk'
 import { NextResponse } from 'next/server'
 import { type Address, getAddress, parseUnits } from 'viem'
+
+const trigger = new TriggerClient({
+  id: 'web',
+  apiKey: appConfig.trigger.apiKey,
+})
 
 const networks: AlchemyNetwork[] = evmChains
   .map((chain) => chainIdAlchemyNetwork[chain.id])
@@ -24,17 +31,21 @@ const networks: AlchemyNetwork[] = evmChains
 const presaleAddress: Address = '0x6F76670A66e7909Af9B76f0D84E39317FCc0B2e1'
 
 export async function POST(req: Request) {
-  if (!(await validateAlchemySignature(req))) {
-    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
-  }
-
-  const evt = (await req.json()) as AlchemyWebhookEvent
-  console.info(`Alchemy webhook received: ${JSON.stringify(evt)}`)
-
+  const payload = await req.text()
+  const evt = JSON.parse(payload) as AlchemyWebhookEvent
   const { network, activity } = evt.event as AlchemyActivityEvent
+
+  const isValidSignature = await validateAlchemySignature(
+    req,
+    evt.webhookId,
+    evt.event.network,
+    payload,
+  )
+  if (!isValidSignature)
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+
   const isAddressActivity = evt.type === 'ADDRESS_ACTIVITY'
   const isValidNetwork = networks.includes(network)
-
   if (!isAddressActivity || !isValidNetwork) {
     const errorMsg = !isAddressActivity
       ? `event type: ${evt.type}`
@@ -57,10 +68,8 @@ export async function POST(req: Request) {
     const presaleData = await getPresaleData({ projectId: 1, supabase })
     const stableCoinDecimals = 6
 
-    const maxAllocationInUnits = parseUnits(
-      presaleData.max_allocation.toString(),
-      stableCoinDecimals,
-    )
+    const maxAllocationInUnits = presaleData.max_allocation
+
     const deposits = await getPresaleDeposits({
       address: getAddress(txn.fromAddress),
       projectId: 1,
@@ -70,11 +79,9 @@ export async function POST(req: Request) {
       (acc, deposit) => acc + Number(deposit.amount),
       0,
     )
-    const txnValueInUnits = parseUnits(txn.value.toString(), stableCoinDecimals)
+    const txnValueInUnits = parseUnits(txn.value?.toString() ?? '0', stableCoinDecimals)
     const totalDepositsInUnits = BigInt(totalDeposits)
-
-    const isValidAmount =
-      txnValueInUnits + totalDepositsInUnits >= presaleData.max_allocation
+    const isValidAmount = txnValueInUnits + totalDepositsInUnits >= maxAllocationInUnits
     const currentTimestamp = Date.now()
     const isWithinPresalePeriod = true // currentTimestamp >= Number(presaleData.start_timestamptz) && currentTimestamp <= Number(presaleData.end_timestamptz)
 
@@ -85,7 +92,7 @@ export async function POST(req: Request) {
       !txn.log && 'missing transaction log',
       !isRegisteredForPresale && 'address is not registered for presale',
       !isValidAmount &&
-        `amount exceeds max allocation: ${txn.value} > ${presaleData.max_allocation}`,
+        `amount exceeds max allocation: ${txn.value} > ${maxAllocationInUnits}`,
       !isWithinPresalePeriod &&
         `transaction outside presale period: current time ${currentTimestamp}, presale start ${presaleData.start_timestamptz}, presale end ${presaleData.end_timestamptz}`,
     ].filter(Boolean)
@@ -95,13 +102,8 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
     }
 
-    const client = new TriggerClient({
-      id: 'your-client-id',
-      apiKey: process.env.TRIGGER_API_KEY,
-    })
-
-    await client.sendEvent({
-      name: 'address.activity',
+    await trigger.sendEvent({
+      name: 'address-activity',
       payload: evt,
     })
 
@@ -112,14 +114,29 @@ export async function POST(req: Request) {
   }
 }
 
-async function validateAlchemySignature(req: Request): Promise<boolean> {
+async function validateAlchemySignature(
+  req: Request,
+  webhookId: string,
+  network: Network,
+  payload: string,
+): Promise<boolean> {
   const alchemySignature = req.headers.get('x-alchemy-signature')
-  if (!alchemySignature) return false
-  // TODO: get from db
-  const activitySigningKey = ''
 
-  const payload = await req.text()
-  const hmac = crypto.createHmac('sha256', activitySigningKey)
+  if (!alchemySignature) return false
+  const settings = {
+    authToken: appConfig.alchemy.notifyToken,
+    network,
+  }
+
+  const alchemy = new Alchemy(settings)
+  const { webhooks } = await alchemy.notify.getAllWebhooks()
+  const signingKey = webhooks.find((webhook) => webhook.id === webhookId)?.signingKey
+  if (!signingKey) {
+    console.error(`Webhook ${webhookId} not found`)
+    return false
+  }
+
+  const hmac = crypto.createHmac('sha256', signingKey)
   hmac.update(payload)
   return alchemySignature === hmac.digest('hex')
 }

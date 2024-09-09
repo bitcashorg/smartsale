@@ -17,6 +17,7 @@
   "dependencies": {
     "@repo/config": "workspace:*",
     "@repo/tokens": "workspace:*",
+    "@repo/chains": "workspace:*",
     "alchemy-sdk": "^3.4.1",
     "viem": "^2.20.0",
     "zod": "^3.23.8"

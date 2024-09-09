@@ -13,6 +13,8 @@ export const addressActivityTask = task({
       const activity: AlchemyActivity = payload.event.activity[0]
       console.log(activity)
 
+      // TODO: save activity id to supabase and check if it's already been processed
+
       if (!isAddress(activity.fromAddress))
         throw new Error(`Invalid from address: ${activity.fromAddress}`)
 

@@ -1,5 +1,6 @@
 import { Alchemy, Network, WebhookType } from 'alchemy-sdk'
-import { prodChains } from 'app-env'
+
+import { evmChains } from '@repo/chains'
 import { chainIdAlchemyNetwork } from '~/utils'
 import { appConfig } from '../src/config'
 
@@ -34,7 +35,7 @@ async function createAddressActivityNotification({
   }
 }
 
-for (const chain of prodChains) {
+for (const chain of evmChains) {
   createAddressActivityNotification({
     addresses: [appConfig.presaleAddress],
     network: Network[chainIdAlchemyNetwork[chain.id]],
