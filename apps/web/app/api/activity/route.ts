@@ -18,12 +18,6 @@ import { Alchemy, type Network } from 'alchemy-sdk'
 import { NextResponse } from 'next/server'
 import { type Address, getAddress, parseUnits } from 'viem'
 
-console.log('appConfig.trigger.apiKey', appConfig.trigger.apiKey)
-const trigger = new TriggerClient({
-  id: 'web',
-  apiKey: appConfig.trigger.apiKey,
-})
-
 const networks: AlchemyNetwork[] = evmChains
   .map((chain) => chainIdAlchemyNetwork[chain.id])
   .filter((network): network is AlchemyNetwork => network !== undefined)
@@ -102,6 +96,12 @@ export async function POST(req: Request) {
       console.error(`Invalid transaction: ${validationErrors.join(', ')}`)
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
     }
+
+    console.log('appConfig.trigger.apiKey', appConfig.trigger.apiKey)
+    const trigger = new TriggerClient({
+      id: 'web',
+      apiKey: appConfig.trigger.apiKey,
+    })
 
     const result = await trigger.sendEvent({
       name: 'address-activity',
