@@ -103,12 +103,12 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
     }
 
-    await trigger.sendEvent({
+    const result = await trigger.sendEvent({
       name: 'address-activity',
       payload: evt,
     })
 
-    console.info(`Triggered address activity event for webhook ${evt.id}`)
+    console.info(`Triggered address activity event for webhook ${evt.id}`, result)
 
     console.info(`Webhook ${evt.id} processed`)
     return NextResponse.json({ message: `Webhook ${evt.id} processed` }, { status: 200 })
