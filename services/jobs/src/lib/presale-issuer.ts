@@ -2,7 +2,7 @@
 import { createWalletClient, erc20Abi, formatUnits } from 'viem'
 import { http, type Address, isAddress } from 'viem'
 import { z } from 'zod'
-import { eosEvmTestnet } from '../tmp'
+import { eosEvmTestnet } from '../../../../packages/chains'
 import { insertTransaction } from './supabase'
 
 const envSchema = z.object({
