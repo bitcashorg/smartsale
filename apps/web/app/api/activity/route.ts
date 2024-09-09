@@ -18,6 +18,7 @@ import { Alchemy, type Network } from 'alchemy-sdk'
 import { NextResponse } from 'next/server'
 import { type Address, getAddress, parseUnits } from 'viem'
 
+console.log('appConfig.trigger.apiKey', appConfig.trigger.apiKey)
 const trigger = new TriggerClient({
   id: 'web',
   apiKey: appConfig.trigger.apiKey,

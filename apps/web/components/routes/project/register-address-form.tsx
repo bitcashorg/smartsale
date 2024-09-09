@@ -64,7 +64,7 @@ export function RegisterAddressForm({ projectId }: { projectId: number }) {
   }
 
   return registration.data?.address || result.data?.info?.address ? (
-    <RegisterButton text={'Your are registered!'} />
+    <RegisterButton text={'Your are whitelisted!'} />
   ) : (
     <div className="flex justify-center">
       <RegisterButton
@@ -72,7 +72,7 @@ export function RegisterAddressForm({ projectId }: { projectId: number }) {
           !address
             ? 'Connect EVM Wallet'
             : isPending && address
-              ? `Registering ${formatAddress(address)}`
+              ? `Whitelisting ${formatAddress(address)}`
               : 'Get Whitelisted'
         }
         onClick={handleRegister}
