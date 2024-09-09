@@ -79,6 +79,14 @@ export function NavLinks({
       text: 'Blog',
       mobile: false,
       action: null,
+      disabled: true,
+    },
+    {
+      id: 'referrals',
+      href: '/referrals',
+      text: 'Referrals program',
+      mobile: false,
+      action: null,
       disabled: false,
     },
     {
