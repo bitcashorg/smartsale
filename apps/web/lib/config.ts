@@ -10,8 +10,8 @@ const envSchema = z.object({
   NEXT_PUBLIC_LEARN_SECTION: z.string().default('false'),
   NEXT_PUBLIC_NEW_I18N: z.string().default('false'),
   NEXT_PUBLIC_EXPLORATIONS: z.string().default('false'),
-  // NEXT_PUBLIC_CMS_GRAPHQL_API: z.string().min(1),
-  // NEXT_PUBLIC_CMS_API_KEY: z.string().min(1),
+  NEXT_PUBLIC_CMS_GRAPHQL_API: z.string().default(''),
+  NEXT_PUBLIC_CMS_API_KEY: z.string().default(''),
   APP_ENV: z
     .string()
     .refine(isValidEnv, {
