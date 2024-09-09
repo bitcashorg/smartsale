@@ -7,7 +7,7 @@ import { useSupabaseClient } from '@/services/supabase'
 import { formatAddress } from '@repo/utils'
 import { useQuery } from '@tanstack/react-query'
 import { useAction } from 'next-safe-action/hooks'
-import toast from 'react-hot-toast'
+import { toast } from 'sonner'
 import { useAccount, useSignMessage } from 'wagmi'
 import type { SignMessageData } from 'wagmi/query'
 

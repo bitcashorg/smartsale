@@ -20,7 +20,7 @@ import { genBitusdDepositSigningRequest, genUsdtDepositSigningRequest } from '@/
 import type { ProjectWithAuction } from '@/lib/projects'
 import { tokens } from '@repo/tokens'
 import { useMemo, useState } from 'react'
-import toast from 'react-hot-toast'
+import { toast } from 'sonner'
 import { type Address, erc20Abi, getAddress, parseUnits } from 'viem'
 import { useAccount, useChainId, useSwitchChain, useWriteContract } from 'wagmi'
 
