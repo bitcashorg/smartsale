@@ -25,7 +25,7 @@ export const addressActivityTask = task({
         valueInTokenUnits,
       )
       console.log(issuanceHash)
-      if (!issuanceHash) throw new Error('Failed to get issuance hash')
+      if (!issuanceHash) throw new Error('Failed to issue presale tokens')
 
       const updatedPresale = await upsertPresaleDeposits({
         valueInTokenUnits,

@@ -48,7 +48,7 @@ export async function issuePresaleTokens(to: Address, amount: bigint) {
     })
     return trxHash
   } catch (error) {
-    console.log((error as Error).message)
+    console.error(error)
     return null
   }
 }

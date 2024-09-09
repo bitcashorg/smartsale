@@ -13,7 +13,7 @@ import type {
 import { chainIdAlchemyNetwork } from '@repo/alchemy'
 import { evmChains } from '@repo/chains'
 import { evmTokens } from '@repo/tokens'
-import { TriggerClient } from '@trigger.dev/sdk'
+import { tasks } from '@trigger.dev/sdk/v3'
 import { Alchemy, type Network } from 'alchemy-sdk'
 import { NextResponse } from 'next/server'
 import { type Address, getAddress, parseUnits } from 'viem'
@@ -29,6 +29,7 @@ export async function POST(req: Request) {
   const payload = await req.text()
   const evt = JSON.parse(payload) as AlchemyWebhookEvent
   const { network, activity } = evt.event as AlchemyActivityEvent
+  console.log('Received webhook', evt.id, evt.event.network)
 
   const isValidSignature = await validateAlchemySignature(
     req,
@@ -98,15 +99,12 @@ export async function POST(req: Request) {
     }
 
     console.log('appConfig.trigger.apiKey', appConfig.trigger.apiKey)
-    const trigger = new TriggerClient({
-      id: 'web',
-      apiKey: appConfig.trigger.apiKey,
-    })
+    // const trigger = new TriggerClient({
+    //   id: 'proj_uefmifhkitjdldujpocd',
+    //   apiKey: appConfig.trigger.apiKey,
+    // })
 
-    const result = await trigger.sendEvent({
-      name: 'address-activity',
-      payload: evt,
-    })
+    const result = await tasks.trigger('address-activity', evt)
 
     console.info(`Triggered address activity event for webhook ${evt.id}`, result)
 
