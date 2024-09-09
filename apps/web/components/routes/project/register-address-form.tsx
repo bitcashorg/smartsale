@@ -64,7 +64,7 @@ export function RegisterAddressForm({ projectId }: { projectId: number }) {
   }
 
   return registration.data?.address || result.data?.info?.address ? (
-    <RegisterButton text={'Your are whitelisted!'} />
+    <RegisterButton text={'You are whitelisted!'} />
   ) : (
     <div className="flex justify-center">
       <RegisterButton
