@@ -153,7 +153,7 @@ function TransactionRow({ contribution }: { contribution: PresaleContribution })
       <TableCell>
         {TestnetBLPL.chain?.blockExplorers?.default && contribution.issuance_hash ? (
           <a
-            href={`${TestnetBLPL.chain.blockExplorers.default.url}tx/${contribution.issuance_hash}`}
+            href={`${TestnetBLPL.chain.blockExplorers.default.url}/tx/${contribution.issuance_hash}`}
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-500 hover:underline"

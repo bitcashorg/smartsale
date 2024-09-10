@@ -84,7 +84,9 @@ export async function POST(req: Request) {
     )
     const txnValueInUnits = parseUnits(txn.value?.toString() ?? '0', stableCoinDecimals)
     const totalDepositsInUnits = BigInt(totalDeposits)
-    const isValidAmount = txnValueInUnits + totalDepositsInUnits >= maxAllocationInUnits
+    // TODO: restore this check
+    // const isValidAmount = txnValueInUnits + totalDepositsInUnits >= maxAllocationInUnits
+    const isValidAmount = true
     const currentTimestamp = Date.now()
     const isWithinPresalePeriod = true // currentTimestamp >= Number(presaleData.start_timestamptz) && currentTimestamp <= Number(presaleData.end_timestamptz)
 
