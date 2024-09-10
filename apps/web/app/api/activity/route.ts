@@ -1,10 +1,12 @@
 import crypto from 'node:crypto'
 import { appConfig } from '@/lib/config'
+import { createSupabaseServerClient, getPresaleData } from '@/services/supabase'
 import {
-  createSupabaseServerClient,
-  getPresaleData,
-  getPresaleDeposits,
-} from '@/services/supabase'
+  getPresaleByAddress,
+  getProcessedPresaleDeposits,
+  isDepositProcessing,
+  setPresaleDepositStatus,
+} from '@/services/supabase/service'
 import type {
   AlchemyActivityEvent,
   AlchemyNetwork,
@@ -21,9 +23,6 @@ import { type Address, getAddress, parseUnits } from 'viem'
 const networks: AlchemyNetwork[] = evmChains
   .map((chain) => chainIdAlchemyNetwork[chain.id])
   .filter((network): network is AlchemyNetwork => network !== undefined)
-
-// TODO: get from db
-const presaleAddress: Address = '0x6F76670A66e7909Af9B76f0D84E39317FCc0B2e1'
 
 export async function POST(req: Request) {
   const payload = await req.text()
@@ -54,7 +53,11 @@ export async function POST(req: Request) {
 
   for (const txn of activity) {
     const isValidAsset = txn.asset === 'USDC' || txn.asset === 'USDT'
-    const isValidToAddress = txn.toAddress !== presaleAddress
+    const presaleByAddress = await getPresaleByAddress(
+      txn.fromAddress as Address,
+      supabase,
+    )
+
     const txnTokenAddress =
       txn.rawContract?.address && getAddress(txn.rawContract.address)
     const isSupportedToken =
@@ -66,9 +69,13 @@ export async function POST(req: Request) {
 
     const maxAllocationInUnits = presaleData.max_allocation
 
-    const deposits = await getPresaleDeposits({
+    const deposits = await getProcessedPresaleDeposits({
       address: getAddress(txn.fromAddress),
       projectId: 1,
+      supabase,
+    })
+    const isDepositProcessed = await isDepositProcessing({
+      depositHash: txn.hash,
       supabase,
     })
     const totalDeposits = deposits.reduce(
@@ -82,8 +89,9 @@ export async function POST(req: Request) {
     const isWithinPresalePeriod = true // currentTimestamp >= Number(presaleData.start_timestamptz) && currentTimestamp <= Number(presaleData.end_timestamptz)
 
     const validationErrors = [
+      isDepositProcessed && 'deposit already processed',
       !isValidAsset && `asset: ${txn.asset}`,
-      !isValidToAddress && `to address: ${txn.toAddress}`,
+      !presaleByAddress && `to address: ${txn.toAddress}`,
       !isSupportedToken && `token: ${txnTokenAddress}`,
       !txn.log && 'missing transaction log',
       !isRegisteredForPresale && 'address is not registered for presale',
@@ -98,12 +106,15 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
     }
 
-    console.log('appConfig.trigger.apiKey', appConfig.trigger.apiKey)
-    // const trigger = new TriggerClient({
-    //   id: 'proj_uefmifhkitjdldujpocd',
-    //   apiKey: appConfig.trigger.apiKey,
-    // })
-
+    const processingDeposit = await setPresaleDepositStatus({
+      depositHash: txn.hash,
+      supabase,
+      state: 'processing',
+    })
+    if (!processingDeposit) {
+      console.error(`Error processing deposit: ${txn.hash}`)
+      return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+    }
     const result = await tasks.trigger('address-activity', evt)
 
     console.info(`Triggered address activity event for webhook ${evt.id}`, result)

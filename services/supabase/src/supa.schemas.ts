@@ -34,6 +34,41 @@ export const accountUpdateSchema = z.object({
 
 export const accountRelationshipsSchema = z.tuple([])
 
+export const alchemyEventsRowSchema = z.object({
+  id: z.string(),
+  is_active: z.boolean(),
+  network: z.string(),
+  signing_key: z.string(),
+  time_created: z.string(),
+  type: z.string(),
+  url: z.string(),
+  version: z.string(),
+})
+
+export const alchemyEventsInsertSchema = z.object({
+  id: z.string(),
+  is_active: z.boolean(),
+  network: z.string(),
+  signing_key: z.string(),
+  time_created: z.string(),
+  type: z.string(),
+  url: z.string(),
+  version: z.string(),
+})
+
+export const alchemyEventsUpdateSchema = z.object({
+  id: z.string().optional(),
+  is_active: z.boolean().optional(),
+  network: z.string().optional(),
+  signing_key: z.string().optional(),
+  time_created: z.string().optional(),
+  type: z.string().optional(),
+  url: z.string().optional(),
+  version: z.string().optional(),
+})
+
+export const alchemyEventsRelationshipsSchema = z.tuple([])
+
 export const auctionRowSchema = z.object({
   address_auctioning_token: z.string().nullable(),
   address_bidding_token: z.string().nullable(),
@@ -267,16 +302,11 @@ export const presaleRelationshipsSchema = z.tuple([
   }),
 ])
 
-export const presaleDepositRowSchema = z.object({
-  account: z.string(),
-  address: z.string(),
-  amount: z.number(),
-  created_at: z.string(),
-  deposit_hash: z.string(),
-  issuance_hash: z.string().nullable(),
-  presale_id: z.number(),
-  project_id: z.number(),
-})
+export const stateSchema = z.union([
+  z.literal('created'),
+  z.literal('processing'),
+  z.literal('processed'),
+])
 
 export const presaleDepositInsertSchema = z.object({
   account: z.string(),
@@ -287,6 +317,7 @@ export const presaleDepositInsertSchema = z.object({
   issuance_hash: z.string().optional().nullable(),
   presale_id: z.number(),
   project_id: z.number(),
+  state: stateSchema.optional(),
 })
 
 export const presaleDepositUpdateSchema = z.object({
@@ -298,6 +329,7 @@ export const presaleDepositUpdateSchema = z.object({
   issuance_hash: z.string().optional().nullable(),
   presale_id: z.number().optional(),
   project_id: z.number().optional(),
+  state: stateSchema.optional(),
 })
 
 export const presaleDepositRelationshipsSchema = z.tuple([
@@ -365,6 +397,7 @@ export const projectRowSchema = z.object({
   id: z.number(),
   name: z.string(),
   pitch: z.string(),
+  token_address: z.string().nullable(),
 })
 
 export const projectInsertSchema = z.object({
@@ -372,6 +405,7 @@ export const projectInsertSchema = z.object({
   id: z.number().optional(),
   name: z.string(),
   pitch: z.string(),
+  token_address: z.string().optional().nullable(),
 })
 
 export const projectUpdateSchema = z.object({
@@ -379,6 +413,7 @@ export const projectUpdateSchema = z.object({
   id: z.number().optional(),
   name: z.string().optional(),
   pitch: z.string().optional(),
+  token_address: z.string().optional().nullable(),
 })
 
 export const projectRelationshipsSchema = z.tuple([])
@@ -476,6 +511,18 @@ export const whitelistRelationshipsSchema = z.tuple([
     referencedColumns: z.tuple([z.literal('id')]),
   }),
 ])
+
+export const presaleDepositRowSchema = z.object({
+  account: z.string(),
+  address: z.string(),
+  amount: z.number(),
+  created_at: z.string(),
+  deposit_hash: z.string(),
+  issuance_hash: z.string().nullable(),
+  presale_id: z.number(),
+  project_id: z.number(),
+  state: stateSchema,
+})
 
 export const transactionRowSchema = z.object({
   chain_id: z.number(),

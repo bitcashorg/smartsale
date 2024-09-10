@@ -39,4 +39,4 @@ export interface EOSTokenContractData extends TokenContractData {
   chainId: string
 }
 
-export type ChainType = 'evm' | 'antelope'
+export type ChainType = 'evm' | 'antelope' | 'eos' | 'solana'
