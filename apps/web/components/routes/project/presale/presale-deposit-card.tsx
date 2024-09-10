@@ -27,15 +27,17 @@ import { useAccount, useChainId, useSwitchChain, useWriteContract } from 'wagmi'
 export function PresaleDepositCard({
   project,
   presaleAddress,
+  tokenAddress,
 }: {
   project: ProjectWithAuction
   presaleAddress: Address
+  tokenAddress: Address
 }) {
   return (
     <ProjectGridCard>
       <div className="mb-5">
         <ProjectInfo project={project} presale={true} />
-        <PresaleTokenBalance />
+        <PresaleTokenBalance tokenAddress={tokenAddress} />
       </div>
 
       <PresaleDeposit presaleAddress={presaleAddress} />
@@ -43,7 +45,7 @@ export function PresaleDepositCard({
   )
 }
 
-const stables = ['USDT', 'USDC', 'BITUSD']
+const stables = ['USDT', 'USDC'] // 'BITUSD'
 
 function PresaleDeposit({ presaleAddress }: { presaleAddress: Address }) {
   const { address } = useAccount()
@@ -58,7 +60,7 @@ function PresaleDeposit({ presaleAddress }: { presaleAddress: Address }) {
 
   const availableChains = useMemo(() => {
     return tokens
-      .filter((token) => token.symbol === selectedToken)
+      .filter((token) => token.symbol === selectedToken && token.chainType === 'evm')
       .map((token) => token.chainName)
   }, [selectedToken])
 

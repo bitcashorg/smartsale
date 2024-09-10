@@ -27,6 +27,39 @@ export type Database = {
         }
         Relationships: []
       }
+      alchemy_events: {
+        Row: {
+          id: string
+          is_active: boolean
+          network: string
+          signing_key: string
+          time_created: string
+          type: string
+          url: string
+          version: string
+        }
+        Insert: {
+          id: string
+          is_active: boolean
+          network: string
+          signing_key: string
+          time_created: string
+          type: string
+          url: string
+          version: string
+        }
+        Update: {
+          id?: string
+          is_active?: boolean
+          network?: string
+          signing_key?: string
+          time_created?: string
+          type?: string
+          url?: string
+          version?: string
+        }
+        Relationships: []
+      }
       auction: {
         Row: {
           address_auctioning_token: string | null
@@ -260,6 +293,7 @@ export type Database = {
           issuance_hash: string | null
           presale_id: number
           project_id: number
+          state: Database['public']['Enums']['state']
         }
         Insert: {
           account: string
@@ -270,6 +304,7 @@ export type Database = {
           issuance_hash?: string | null
           presale_id: number
           project_id: number
+          state?: Database['public']['Enums']['state']
         }
         Update: {
           account?: string
@@ -280,6 +315,7 @@ export type Database = {
           issuance_hash?: string | null
           presale_id?: number
           project_id?: number
+          state?: Database['public']['Enums']['state']
         }
         Relationships: [
           {
@@ -339,18 +375,21 @@ export type Database = {
           id: number
           name: string
           pitch: string
+          token_address: string | null
         }
         Insert: {
           created_at?: string
           id?: number
           name: string
           pitch: string
+          token_address?: string | null
         }
         Update: {
           created_at?: string
           id?: number
           name?: string
           pitch?: string
+          token_address?: string | null
         }
         Relationships: []
       }
@@ -446,6 +485,7 @@ export type Database = {
     }
     Enums: {
       chain_type: 'evm' | 'eos' | 'solana' | 'cosmos'
+      state: 'created' | 'processing' | 'processed'
       trx_type:
         | 'presale_deposit'
         | 'usdcred_deposit'
