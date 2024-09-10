@@ -30,15 +30,33 @@ export async function POST(req: Request) {
   const { network, activity } = evt.event as AlchemyActivityEvent
   console.log('Received webhook', evt.id, evt.event.network)
 
-  const isValidSignature = await validateAlchemySignature(
-    req,
-    evt.webhookId,
-    evt.event.network,
-    payload,
-  )
-  if (!isValidSignature)
+  if (!(await validateAlchemySignature(req, evt.webhookId, evt.event.network, payload)))
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
 
+  if (!isValidEvent(evt, network))
+    return NextResponse.json({ error: 'Invalid event' }, { status: 400 })
+
+  const supabase = await createSupabaseServerClient()
+
+  for (const txn of activity) {
+    const validationResult = await validateTransaction(txn, supabase)
+    if (!validationResult.isValid) {
+      console.error(`Invalid transaction: ${validationResult.errors.join(', ')}`)
+      return NextResponse.json({ error: 'Invalid transaction' }, { status: 400 })
+    }
+
+    if (!(await processDeposit(txn, supabase)))
+      return NextResponse.json({ error: 'Error processing deposit' }, { status: 500 })
+
+    const result = await tasks.trigger('address-activity', evt)
+    console.info(`Triggered address activity event for webhook ${evt.id}`, result)
+  }
+
+  console.info(`Webhook ${evt.id} processed`)
+  return NextResponse.json({ message: `Webhook ${evt.id} processed` }, { status: 200 })
+}
+
+function isValidEvent(evt: AlchemyWebhookEvent, network: AlchemyNetwork): boolean {
   const isAddressActivity = evt.type === 'ADDRESS_ACTIVITY'
   const isValidNetwork = networks.includes(network)
   if (!isAddressActivity || !isValidNetwork) {
@@ -46,84 +64,67 @@ export async function POST(req: Request) {
       ? `event type: ${evt.type}`
       : `network: ${network}`
     console.error(`Invalid: ${errorMsg}`)
-    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+    return false
   }
+  return true
+}
 
-  const supabase = await createSupabaseServerClient()
+async function validateTransaction(txn: any, supabase: any) {
+  const isValidAsset = txn.asset === 'USDC' || txn.asset === 'USDT'
+  const presaleByAddress = await getPresaleByAddress(txn.fromAddress as Address, supabase)
+  const txnTokenAddress = txn.rawContract?.address && getAddress(txn.rawContract.address)
+  const isSupportedToken =
+    txnTokenAddress &&
+    evmTokens.some((token) => txnTokenAddress === getAddress(token.address))
+  const isRegisteredForPresale = true // await isAddressRegisteredForPresale(txn.fromAddress, 1)
+  const presaleData = await getPresaleData({ projectId: 1, supabase })
+  const stableCoinDecimals = 6
 
-  for (const txn of activity) {
-    const isValidAsset = txn.asset === 'USDC' || txn.asset === 'USDT'
-    const presaleByAddress = await getPresaleByAddress(
-      txn.fromAddress as Address,
-      supabase,
-    )
+  const maxAllocationInUnits = presaleData.max_allocation
+  const deposits = await getProcessedPresaleDeposits({
+    address: getAddress(txn.fromAddress),
+    projectId: 1,
+    supabase,
+  })
+  const isDepositProcessed = await isDepositProcessing({
+    depositHash: txn.hash,
+    supabase,
+  })
+  const totalDeposits = deposits.reduce((acc, deposit) => acc + Number(deposit.amount), 0)
+  const txnValueInUnits = parseUnits(txn.value?.toString() ?? '0', stableCoinDecimals)
+  const totalDepositsInUnits = BigInt(totalDeposits)
+  const isValidAmount = true // TODO: restore this check
+  // const isValidAmount = txnValueInUnits + totalDepositsInUnits >= maxAllocationInUnits
+  const currentTimestamp = Date.now()
+  const isWithinPresalePeriod = true // currentTimestamp >= Number(presaleData.start_timestamptz) && currentTimestamp <= Number(presaleData.end_timestamptz)
 
-    const txnTokenAddress =
-      txn.rawContract?.address && getAddress(txn.rawContract.address)
-    const isSupportedToken =
-      txnTokenAddress &&
-      evmTokens.some((token) => txnTokenAddress === getAddress(token.address))
-    const isRegisteredForPresale = true // await isAddressRegisteredForPresale(txn.fromAddress, 1)
-    const presaleData = await getPresaleData({ projectId: 1, supabase })
-    const stableCoinDecimals = 6
+  const errors = [
+    isDepositProcessed && 'deposit already processed',
+    !isValidAsset && `asset: ${txn.asset}`,
+    !presaleByAddress && `to address: ${txn.toAddress}`,
+    !isSupportedToken && `token: ${txnTokenAddress}`,
+    !txn.log && 'missing transaction log',
+    !isRegisteredForPresale && 'address is not registered for presale',
+    !isValidAmount &&
+      `amount exceeds max allocation: ${txn.value} > ${maxAllocationInUnits}`,
+    !isWithinPresalePeriod &&
+      `transaction outside presale period: current time ${currentTimestamp}, presale start ${presaleData.start_timestamptz}, presale end ${presaleData.end_timestamptz}`,
+  ].filter(Boolean)
 
-    const maxAllocationInUnits = presaleData.max_allocation
+  return { isValid: errors.length === 0, errors }
+}
 
-    const deposits = await getProcessedPresaleDeposits({
-      address: getAddress(txn.fromAddress),
-      projectId: 1,
-      supabase,
-    })
-    const isDepositProcessed = await isDepositProcessing({
-      depositHash: txn.hash,
-      supabase,
-    })
-    const totalDeposits = deposits.reduce(
-      (acc, deposit) => acc + Number(deposit.amount),
-      0,
-    )
-    const txnValueInUnits = parseUnits(txn.value?.toString() ?? '0', stableCoinDecimals)
-    const totalDepositsInUnits = BigInt(totalDeposits)
-    // TODO: restore this check
-    // const isValidAmount = txnValueInUnits + totalDepositsInUnits >= maxAllocationInUnits
-    const isValidAmount = true
-    const currentTimestamp = Date.now()
-    const isWithinPresalePeriod = true // currentTimestamp >= Number(presaleData.start_timestamptz) && currentTimestamp <= Number(presaleData.end_timestamptz)
-
-    const validationErrors = [
-      isDepositProcessed && 'deposit already processed',
-      !isValidAsset && `asset: ${txn.asset}`,
-      !presaleByAddress && `to address: ${txn.toAddress}`,
-      !isSupportedToken && `token: ${txnTokenAddress}`,
-      !txn.log && 'missing transaction log',
-      !isRegisteredForPresale && 'address is not registered for presale',
-      !isValidAmount &&
-        `amount exceeds max allocation: ${txn.value} > ${maxAllocationInUnits}`,
-      !isWithinPresalePeriod &&
-        `transaction outside presale period: current time ${currentTimestamp}, presale start ${presaleData.start_timestamptz}, presale end ${presaleData.end_timestamptz}`,
-    ].filter(Boolean)
-
-    if (validationErrors.length) {
-      console.error(`Invalid transaction: ${validationErrors.join(', ')}`)
-      return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
-    }
-
-    const processingDeposit = await setPresaleDepositStatus({
-      depositHash: txn.hash,
-      supabase,
-      state: 'processing',
-    })
-    if (!processingDeposit) {
-      console.error(`Error processing deposit: ${txn.hash}`)
-      return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
-    }
-    const result = await tasks.trigger('address-activity', evt)
-
-    console.info(`Triggered address activity event for webhook ${evt.id}`, result)
-
-    console.info(`Webhook ${evt.id} processed`)
-    return NextResponse.json({ message: `Webhook ${evt.id} processed` }, { status: 200 })
+async function processDeposit(txn: any, supabase: any): Promise<boolean> {
+  const processingDeposit = await setPresaleDepositStatus({
+    depositHash: txn.hash,
+    supabase,
+    state: 'processing',
+  })
+  if (!processingDeposit) {
+    console.error(`Error processing deposit: ${txn.hash}`)
+    return false
   }
+  return true
 }
 
 async function validateAlchemySignature(
