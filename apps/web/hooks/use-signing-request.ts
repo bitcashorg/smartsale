@@ -32,7 +32,7 @@ function useSigningRequestFn() {
         const params = new URLSearchParams()
         params.append('esr', esr.encode())
         params.append('callback', encodeURIComponent(window.location.href))
-        window.location.href = `https://test.bitcash.org/login?${params.toString()}`
+        window.location.href = `https://app.bitcash.org/login?${params.toString()}`
       }
 
       // post request event on bitcash explorer
