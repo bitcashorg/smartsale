@@ -8,6 +8,7 @@ import {
   setPresaleDepositStatus,
 } from '@/services/supabase/service'
 import type {
+  AlchemyActivity,
   AlchemyActivityEvent,
   AlchemyNetwork,
   AlchemyWebhookEvent,
@@ -15,6 +16,7 @@ import type {
 import { chainIdAlchemyNetwork } from '@repo/alchemy'
 import { evmChains } from '@repo/chains'
 import { evmTokens } from '@repo/tokens'
+import type { SupabaseClient } from '@supabase/supabase-js'
 import { tasks } from '@trigger.dev/sdk/v3'
 import { Alchemy, type Network } from 'alchemy-sdk'
 import { NextResponse } from 'next/server'
@@ -69,9 +71,9 @@ function isValidEvent(evt: AlchemyWebhookEvent, network: AlchemyNetwork): boolea
   return true
 }
 
-async function validateTransaction(txn: any, supabase: any) {
+async function validateTransaction(txn: AlchemyActivity, supabase: SupabaseClient) {
   const isValidAsset = txn.asset === 'USDC' || txn.asset === 'USDT'
-  const presaleByAddress = await getPresaleByAddress(txn.fromAddress as Address, supabase)
+  const presaleByAddress = await getPresaleByAddress(txn.toAddress as Address, supabase)
   const txnTokenAddress = txn.rawContract?.address && getAddress(txn.rawContract.address)
   const isSupportedToken =
     txnTokenAddress &&
@@ -114,7 +116,10 @@ async function validateTransaction(txn: any, supabase: any) {
   return { isValid: errors.length === 0, errors }
 }
 
-async function processDeposit(txn: any, supabase: any): Promise<boolean> {
+async function processDeposit(
+  txn: AlchemyActivity,
+  supabase: SupabaseClient,
+): Promise<boolean> {
   const processingDeposit = await setPresaleDepositStatus({
     depositHash: txn.hash,
     supabase,
