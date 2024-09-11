@@ -71,7 +71,7 @@ export function NavLinks({
       text: dict.nav.wallet,
       mobile: true,
       action: null,
-      disabled: !appConfig.features.enableWalletAccess,
+      disabled: !appConfig.features.wallet,
     },
     {
       id: 'blog',

@@ -13,6 +13,7 @@ import {
 } from '@/components/ui/card'
 import { getDictionary } from '@/dictionaries'
 import { locales } from '@/dictionaries/locales'
+import { appConfig } from '@/lib/config'
 import { type ProjectWithAuction, getProjectBySlug, getProjects } from '@/lib/projects'
 import { createSupabaseServerClient } from '@/services/supabase'
 import { getPresaleData } from '@/services/supabase/service'
@@ -24,6 +25,7 @@ export default async function AuctionPage({ params }: ProjectPageProps) {
   const dict = await getDictionary(params.lang)
   const p = await getProjectBySlug(params.project, dict)
   if (!p || (!p.auctionId && !p.registrationOpen)) redirect('/')
+  if (!appConfig.features.auction) redirect('/')
   const project = p as ProjectWithAuction
   const supabase = await createSupabaseServerClient()
   const presale = await getPresaleData({ projectId: project.id, supabase })

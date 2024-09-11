@@ -1,6 +1,7 @@
 'use client'
 
 import { Button } from '@/components/ui/button'
+import { appConfig } from '@/lib/config'
 import type { Project } from '@/lib/projects'
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
@@ -17,11 +18,13 @@ export function ProjectPills({ project }: { project: Project }) {
       label: 'Token Presale',
       href: `/${project.slug}/presale`,
     },
-    {
-      label: 'Token Sale',
-      href: `/${project.slug}/auction`,
-    },
-  ]
+    appConfig.features.auction
+      ? {
+          label: 'Token Sale',
+          href: `/${project.slug}/auction`,
+        }
+      : null,
+  ].filter(Boolean) as { label: string; href: string }[]
 
   return (
     <div className="z-10 flex gap-2 mb-4 sm:gap-1 md:gap-4">
