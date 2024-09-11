@@ -1,24 +1,24 @@
-'use client'
-import * as ToggleGroup from '@radix-ui/react-toggle-group'
-import { motion } from 'framer-motion'
-import type * as React from 'react'
-import { cn } from '../utils'
-import { tabTransition } from '../utils/constants'
-import { Heading } from './heading'
-import { IconHideSidebar } from './icons/icon-hide-sidebar'
-import { IconMonitor } from './icons/icon-monitor'
-import { IconPhone } from './icons/icon-phone'
-import { IconSource } from './icons/icon-source'
-import { Send } from './send'
-import { Tooltip } from './tooltip'
+'use client';
+import * as ToggleGroup from '@radix-ui/react-toggle-group';
+import { motion } from 'framer-motion';
+import * as React from 'react';
+import { cn } from '../utils';
+import { tabTransition } from '../utils/constants';
+import { Heading } from './heading';
+import { IconHideSidebar } from './icons/icon-hide-sidebar';
+import { IconMonitor } from './icons/icon-monitor';
+import { IconPhone } from './icons/icon-phone';
+import { IconSource } from './icons/icon-source';
+import { Send } from './send';
+import { Tooltip } from './tooltip';
 
 interface TopbarProps {
-  currentEmailOpenSlug: string
-  pathSeparator: string
-  activeView?: string
-  markup?: string
-  onToggleSidebar?: () => void
-  setActiveView?: (view: string) => void
+  currentEmailOpenSlug: string;
+  pathSeparator: string;
+  activeView?: string;
+  markup?: string;
+  onToggleSidebar?: () => void;
+  setActiveView?: (view: string) => void;
 }
 
 export const Topbar: React.FC<Readonly<TopbarProps>> = ({
@@ -38,7 +38,7 @@ export const Topbar: React.FC<Readonly<TopbarProps>> = ({
               className="hidden lg:flex rounded-lg px-2 py-2 transition ease-in-out duration-200 relative hover:bg-slate-5 text-slate-11 hover:text-slate-12"
               onClick={() => {
                 if (onToggleSidebar) {
-                  onToggleSidebar()
+                  onToggleSidebar();
                 }
               }}
               type="button"
@@ -60,7 +60,7 @@ export const Topbar: React.FC<Readonly<TopbarProps>> = ({
             aria-label="View mode"
             className="inline-block items-center bg-slate-2 border border-slate-6 rounded-md overflow-hidden h-[36px]"
             onValueChange={(value) => {
-              if (value) setActiveView?.(value)
+              if (value) setActiveView?.(value);
             }}
             type="single"
             value={activeView}
@@ -159,5 +159,5 @@ export const Topbar: React.FC<Readonly<TopbarProps>> = ({
         </div>
       </header>
     </Tooltip.Provider>
-  )
-}
+  );
+};

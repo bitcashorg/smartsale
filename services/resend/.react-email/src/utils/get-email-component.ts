@@ -1,31 +1,31 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
-import path from 'node:path'
-import vm from 'node:vm'
-import type { render } from '@react-email/render'
-import { type BuildFailure, type OutputFile, build } from 'esbuild'
-import type React from 'react'
-import type { RawSourceMap } from 'source-map-js'
-import { renderingUtilitiesExporter } from './esbuild/renderring-utilities-exporter'
-import { improveErrorWithSourceMap } from './improve-error-with-sourcemap'
-import { staticNodeModulesForVM } from './static-node-modules-for-vm'
-import type { EmailTemplate as EmailComponent } from './types/email-template'
-import type { ErrorObject } from './types/error-object'
+import path from 'node:path';
+import vm from 'node:vm';
+import type React from 'react';
+import { type RawSourceMap } from 'source-map-js';
+import { type OutputFile, build, type BuildFailure } from 'esbuild';
+import type { render } from '@react-email/render';
+import type { EmailTemplate as EmailComponent } from './types/email-template';
+import type { ErrorObject } from './types/error-object';
+import { improveErrorWithSourceMap } from './improve-error-with-sourcemap';
+import { staticNodeModulesForVM } from './static-node-modules-for-vm';
+import { renderingUtilitiesExporter } from './esbuild/renderring-utilities-exporter';
 
 export const getEmailComponent = async (
   emailPath: string,
 ): Promise<
   | {
-      emailComponent: EmailComponent
+      emailComponent: EmailComponent;
 
-      createElement: typeof React.createElement
+      createElement: typeof React.createElement;
 
-      render: typeof render
+      render: typeof render;
 
-      sourceMapToOriginalFile: RawSourceMap
+      sourceMapToOriginalFile: RawSourceMap;
     }
   | { error: ErrorObject }
 > => {
-  let outputFiles: OutputFile[]
+  let outputFiles: OutputFile[];
   try {
     const buildData = await build({
       bundle: true,
@@ -43,10 +43,10 @@ export const getEmailComponent = async (
       },
       outdir: 'stdout', // just a stub for esbuild, it won't actually write to this folder
       sourcemap: 'external',
-    })
-    outputFiles = buildData.outputFiles
+    });
+    outputFiles = buildData.outputFiles;
   } catch (exception) {
-    const buildFailure = exception as BuildFailure
+    const buildFailure = exception as BuildFailure;
     return {
       error: {
         message: buildFailure.message,
@@ -54,12 +54,12 @@ export const getEmailComponent = async (
         name: buildFailure.name,
         cause: buildFailure.cause,
       },
-    }
+    };
   }
 
-  const sourceMapFile = outputFiles[0]!
-  const bundledEmailFile = outputFiles[1]!
-  const builtEmailCode = bundledEmailFile.text
+  const sourceMapFile = outputFiles[0]!;
+  const bundledEmailFile = outputFiles[1]!;
+  const builtEmailCode = bundledEmailFile.text;
 
   const fakeContext = {
     ...global,
@@ -83,18 +83,18 @@ export const getEmailComponent = async (
     __filename: emailPath,
     __dirname: path.dirname(emailPath),
     require: (specifiedModule: string) => {
-      let m = specifiedModule
+      let m = specifiedModule;
       if (specifiedModule.startsWith('node:')) {
-        m = m.split(':')[1]!
+        m = m.split(':')[1]!;
       }
 
       if (m in staticNodeModulesForVM) {
         // eslint-disable-next-line @typescript-eslint/no-unsafe-return
-        return staticNodeModulesForVM[m]
+        return staticNodeModulesForVM[m];
       }
 
       // eslint-disable-next-line @typescript-eslint/no-var-requires, @typescript-eslint/no-useless-template-literals
-      return require(`${specifiedModule}`) as unknown
+      return require(`${specifiedModule}`) as unknown;
       // this stupid string templating was necessary to not have
       // webpack warnings like:
       //
@@ -105,23 +105,23 @@ export const getEmailComponent = async (
       // Critical dependency: the request of a dependency is an expression
     },
     process,
-  }
-  const sourceMapToEmail = JSON.parse(sourceMapFile.text) as RawSourceMap
+  };
+  const sourceMapToEmail = JSON.parse(sourceMapFile.text) as RawSourceMap;
   // because it will have a path like <tsconfigLocation>/stdout/email.js.map
-  sourceMapToEmail.sourceRoot = path.resolve(sourceMapFile.path, '../..')
+  sourceMapToEmail.sourceRoot = path.resolve(sourceMapFile.path, '../..');
   sourceMapToEmail.sources = sourceMapToEmail.sources.map((source) =>
     path.resolve(sourceMapFile.path, '..', source),
-  )
+  );
   try {
-    vm.runInNewContext(builtEmailCode, fakeContext, { filename: emailPath })
+    vm.runInNewContext(builtEmailCode, fakeContext, { filename: emailPath });
   } catch (exception) {
-    const error = exception as Error
+    const error = exception as Error;
 
-    error.stack &&= error.stack.split('at Script.runInContext (node:vm')[0]
+    error.stack &&= error.stack.split('at Script.runInContext (node:vm')[0];
 
     return {
       error: improveErrorWithSourceMap(error, emailPath, sourceMapToEmail),
-    }
+    };
   }
 
   if (fakeContext.module.exports.default === undefined) {
@@ -133,7 +133,7 @@ export const getEmailComponent = async (
         emailPath,
         sourceMapToEmail,
       ),
-    }
+    };
   }
 
   return {
@@ -143,5 +143,5 @@ export const getEmailComponent = async (
       .reactEmailCreateReactElement as typeof React.createElement,
 
     sourceMapToOriginalFile: sourceMapToEmail,
-  }
-}
+  };
+};

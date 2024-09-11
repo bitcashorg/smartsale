@@ -1,22 +1,22 @@
-import * as Collapsible from '@radix-ui/react-collapsible'
-import { AnimatePresence, LayoutGroup, motion } from 'framer-motion'
-import Link from 'next/link'
-import { useSearchParams } from 'next/navigation'
-import type { EmailsDirectory } from '../../actions/get-emails-directory-metadata'
-import { cn } from '../../utils'
-import { emailsDirectoryAbsolutePath } from '../../utils/emails-directory-absolute-path'
-import { IconFile } from '../icons/icon-file'
-import { SidebarDirectory } from './sidebar-directory'
+import { AnimatePresence, LayoutGroup, motion } from 'framer-motion';
+import * as Collapsible from '@radix-ui/react-collapsible';
+import Link from 'next/link';
+import { useSearchParams } from 'next/navigation';
+import type { EmailsDirectory } from '../../actions/get-emails-directory-metadata';
+import { emailsDirectoryAbsolutePath } from '../../utils/emails-directory-absolute-path';
+import { cn } from '../../utils';
+import { IconFile } from '../icons/icon-file';
+import { SidebarDirectory } from './sidebar-directory';
 
 export const SidebarDirectoryChildren = (props: {
-  emailsDirectoryMetadata: EmailsDirectory
-  currentEmailOpenSlug?: string
-  open: boolean
-  isRoot?: boolean
+  emailsDirectoryMetadata: EmailsDirectory;
+  currentEmailOpenSlug?: string;
+  open: boolean;
+  isRoot?: boolean;
 }) => {
-  const searchParams = useSearchParams()
+  const searchParams = useSearchParams();
   const isBaseEmailsDirectory =
-    props.emailsDirectoryMetadata.absolutePath === emailsDirectoryAbsolutePath
+    props.emailsDirectoryMetadata.absolutePath === emailsDirectoryAbsolutePath;
 
   return (
     <AnimatePresence initial={false}>
@@ -37,20 +37,22 @@ export const SidebarDirectoryChildren = (props: {
 
             <div className="data-[root=true]:py-2 flex flex-col truncate">
               <LayoutGroup id="sidebar">
-                {props.emailsDirectoryMetadata.subDirectories.map((subDirectory) => (
-                  <SidebarDirectory
-                    className="pl-4 py-0"
-                    currentEmailOpenSlug={props.currentEmailOpenSlug}
-                    emailsDirectoryMetadata={subDirectory}
-                    key={subDirectory.absolutePath}
-                  />
-                ))}
+                {props.emailsDirectoryMetadata.subDirectories.map(
+                  (subDirectory) => (
+                    <SidebarDirectory
+                      className="pl-4 py-0"
+                      currentEmailOpenSlug={props.currentEmailOpenSlug}
+                      emailsDirectoryMetadata={subDirectory}
+                      key={subDirectory.absolutePath}
+                    />
+                  ),
+                )}
 
                 {props.emailsDirectoryMetadata.emailFilenames.map(
                   (emailFilename, index) => {
                     const emailSlug = isBaseEmailsDirectory
                       ? emailFilename
-                      : `${props.emailsDirectoryMetadata.relativePath}/${emailFilename}`
+                      : `${props.emailsDirectoryMetadata.relativePath}/${emailFilename}`;
 
                     const removeExtensionFrom = (path: string) => {
                       if (
@@ -58,14 +60,15 @@ export const SidebarDirectoryChildren = (props: {
                         path.split('.').pop() === 'jsx' ||
                         path.split('.').pop() === 'js'
                       ) {
-                        return path.split('.').slice(0, -1).join('.')
+                        return path.split('.').slice(0, -1).join('.');
                       }
 
-                      return path
-                    }
+                      return path;
+                    };
                     const isCurrentPage = props.currentEmailOpenSlug
-                      ? removeExtensionFrom(props.currentEmailOpenSlug) === emailSlug
-                      : false
+                      ? removeExtensionFrom(props.currentEmailOpenSlug) ===
+                        emailSlug
+                      : false;
 
                     return (
                       <Link
@@ -111,7 +114,7 @@ export const SidebarDirectoryChildren = (props: {
                           <span className="truncate pl-8">{emailFilename}</span>
                         </motion.span>
                       </Link>
-                    )
+                    );
                   },
                 )}
               </LayoutGroup>
@@ -120,5 +123,5 @@ export const SidebarDirectoryChildren = (props: {
         </Collapsible.Content>
       ) : null}
     </AnimatePresence>
-  )
-}
+  );
+};

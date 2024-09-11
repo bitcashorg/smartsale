@@ -1,25 +1,25 @@
-import { LayoutGroup, motion } from 'framer-motion'
-import type { Language } from 'prism-react-renderer'
-import * as React from 'react'
-import { copyTextToClipboard } from '../utils'
-import { tabTransition } from '../utils/constants'
-import languageMap from '../utils/language-map'
-import { Code } from './code'
-import { IconButton } from './icons/icon-button'
-import { IconCheck } from './icons/icon-check'
-import { IconClipboard } from './icons/icon-clipboard'
-import { IconDownload } from './icons/icon-download'
-import { Tooltip } from './tooltip'
+import { LayoutGroup, motion } from 'framer-motion';
+import type { Language } from 'prism-react-renderer';
+import * as React from 'react';
+import { copyTextToClipboard } from '../utils';
+import languageMap from '../utils/language-map';
+import { tabTransition } from '../utils/constants';
+import { Code } from './code';
+import { IconButton } from './icons/icon-button';
+import { IconCheck } from './icons/icon-check';
+import { IconClipboard } from './icons/icon-clipboard';
+import { IconDownload } from './icons/icon-download';
+import { Tooltip } from './tooltip';
 
 interface CodeContainerProps {
-  markups: MarkupProps[]
-  activeLang: string
-  setActiveLang: (lang: string) => void
+  markups: MarkupProps[];
+  activeLang: string;
+  setActiveLang: (lang: string) => void;
 }
 
 interface MarkupProps {
-  language: Language
-  content: string
+  language: Language;
+  content: string;
 }
 
 export const CodeContainer: React.FC<Readonly<CodeContainerProps>> = ({
@@ -27,13 +27,13 @@ export const CodeContainer: React.FC<Readonly<CodeContainerProps>> = ({
   activeLang,
   setActiveLang,
 }) => {
-  const [isCopied, setIsCopied] = React.useState(false)
+  const [isCopied, setIsCopied] = React.useState(false);
 
   const renderDownloadIcon = () => {
-    const value = markups.filter((markup) => markup.language === activeLang)
-    if (typeof value[0] === 'undefined') return
-    const file = new File([value[0].content], `email.${value[0].language}`)
-    const url = URL.createObjectURL(file)
+    const value = markups.filter((markup) => markup.language === activeLang);
+    if (typeof value[0] === 'undefined') return;
+    const file = new File([value[0].content], `email.${value[0].language}`);
+    const url = URL.createObjectURL(file);
 
     return (
       <a
@@ -43,32 +43,32 @@ export const CodeContainer: React.FC<Readonly<CodeContainerProps>> = ({
       >
         <IconDownload />
       </a>
-    )
-  }
+    );
+  };
 
   const renderClipboardIcon = () => {
     const handleClipboard = async () => {
       const activeContent = markups.filter(({ language }) => {
-        return activeLang === language
-      })
-      setIsCopied(true)
+        return activeLang === language;
+      });
+      setIsCopied(true);
       // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-      await copyTextToClipboard(activeContent[0]!.content)
+      await copyTextToClipboard(activeContent[0]!.content);
       setTimeout(() => {
-        setIsCopied(false)
-      }, 3000)
-    }
+        setIsCopied(false);
+      }, 3000);
+    };
 
     return (
       <IconButton onClick={() => void handleClipboard()}>
         {isCopied ? <IconCheck /> : <IconClipboard />}
       </IconButton>
-    )
-  }
+    );
+  };
 
   React.useEffect(() => {
-    setIsCopied(false)
-  }, [activeLang])
+    setIsCopied(false);
+  }, [activeLang]);
 
   return (
     <div
@@ -84,7 +84,7 @@ export const CodeContainer: React.FC<Readonly<CodeContainerProps>> = ({
         <div className="flex">
           <LayoutGroup id="code">
             {markups.map(({ language }) => {
-              const isCurrentLang = activeLang === language
+              const isCurrentLang = activeLang === language;
               return (
                 <motion.button
                   className={`relative py-[8px] px-4 text-sm font-medium font-sans transition ease-in-out duration-200 hover:text-slate-12 ${
@@ -92,7 +92,7 @@ export const CodeContainer: React.FC<Readonly<CodeContainerProps>> = ({
                   }`}
                   key={language}
                   onClick={() => {
-                    setActiveLang(language)
+                    setActiveLang(language);
                   }}
                 >
                   {isCurrentLang ? (
@@ -107,12 +107,15 @@ export const CodeContainer: React.FC<Readonly<CodeContainerProps>> = ({
                   ) : null}
                   {languageMap[language]}
                 </motion.button>
-              )
+              );
             })}
           </LayoutGroup>
         </div>
         <Tooltip>
-          <Tooltip.Trigger asChild className="absolute top-2 right-2 hidden md:block">
+          <Tooltip.Trigger
+            asChild
+            className="absolute top-2 right-2 hidden md:block"
+          >
             {renderClipboardIcon()}
           </Tooltip.Trigger>
           <Tooltip.Content>Copy to Clipboard</Tooltip.Content>
@@ -129,11 +132,14 @@ export const CodeContainer: React.FC<Readonly<CodeContainerProps>> = ({
       </div>
       {markups.map(({ language, content }) => {
         return (
-          <div className={`${activeLang !== language && 'hidden'}`} key={language}>
+          <div
+            className={`${activeLang !== language && 'hidden'}`}
+            key={language}
+          >
             <Code language={language}>{content}</Code>
           </div>
-        )
+        );
       })}
     </div>
-  )
-}
+  );
+};

@@ -1,7 +1,7 @@
-import { promises as fs } from 'node:fs'
-import path from 'node:path'
-import type { Loader, PluginBuild, ResolveOptions } from 'esbuild'
-import { escapeStringForRegex } from './escape-string-for-regex'
+import path from 'node:path';
+import { promises as fs } from 'node:fs';
+import type { Loader, PluginBuild, ResolveOptions } from 'esbuild';
+import { escapeStringForRegex } from './escape-string-for-regex';
 
 /**
  * Made to export the `render` function out of the user's email template
@@ -20,7 +20,9 @@ export const renderingUtilitiesExporter = (emailTemplates: string[]) => ({
     b.onLoad(
       {
         filter: new RegExp(
-          emailTemplates.map((emailPath) => escapeStringForRegex(emailPath)).join('|'),
+          emailTemplates
+            .map((emailPath) => escapeStringForRegex(emailPath))
+            .join('|'),
         ),
       },
       async ({ path: pathToFile }) => {
@@ -30,9 +32,9 @@ export const renderingUtilitiesExporter = (emailTemplates: string[]) => ({
           export { createElement as reactEmailCreateReactElement } from 'react';
         `,
           loader: path.extname(pathToFile).slice(1) as Loader,
-        }
+        };
       },
-    )
+    );
 
     b.onResolve(
       { filter: /^react-email-module-that-will-export-render$/ },
@@ -42,20 +44,20 @@ export const renderingUtilitiesExporter = (emailTemplates: string[]) => ({
           importer: args.importer,
           resolveDir: args.resolveDir,
           namespace: args.namespace,
-        }
-        let result = await b.resolve('@react-email/render', options)
+        };
+        let result = await b.resolve('@react-email/render', options);
         if (result.errors.length === 0) {
-          return result
+          return result;
         }
 
         // If @react-email/render does not exist, resolve to @react-email/components
-        result = await b.resolve('@react-email/components', options)
+        result = await b.resolve('@react-email/components', options);
         if (result.errors.length > 0 && result.errors[0]) {
           result.errors[0].text =
-            "Failed trying to import `render` from either `@react-email/render` or `@react-email/components` to be able to render your email template.\n Maybe you don't have either of them installed?"
+            "Failed trying to import `render` from either `@react-email/render` or `@react-email/components` to be able to render your email template.\n Maybe you don't have either of them installed?";
         }
-        return result
+        return result;
       },
-    )
+    );
   },
-})
+});

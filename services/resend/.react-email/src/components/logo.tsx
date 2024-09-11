@@ -1,4 +1,4 @@
-import * as React from 'react'
+import * as React from 'react';
 
 export const Logo = () => (
   <svg
@@ -61,4 +61,4 @@ export const Logo = () => (
       </clipPath>
     </defs>
   </svg>
-)
+);

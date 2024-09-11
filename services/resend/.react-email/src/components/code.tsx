@@ -1,12 +1,12 @@
-import type { Language } from 'prism-react-renderer'
-import { Highlight } from 'prism-react-renderer'
-import * as React from 'react'
-import { cn } from '../utils'
+import type { Language } from 'prism-react-renderer';
+import { Highlight } from 'prism-react-renderer';
+import * as React from 'react';
+import { cn } from '../utils';
 
 interface CodeProps {
-  children: string
-  className?: string
-  language?: Language
+  children: string;
+  className?: string;
+  language?: Language;
 }
 
 const theme = {
@@ -41,10 +41,13 @@ const theme = {
       },
     },
   ],
-}
+};
 
-export const Code: React.FC<Readonly<CodeProps>> = ({ children, language = 'html' }) => {
-  const value = children.trim()
+export const Code: React.FC<Readonly<CodeProps>> = ({
+  children,
+  language = 'html',
+}) => {
+  const value = children.trim();
 
   return (
     <Highlight code={value} language={language} theme={theme}>
@@ -62,7 +65,7 @@ export const Code: React.FC<Readonly<CodeProps>> = ({ children, language = 'html
               const lineProps = getLineProps({
                 line,
                 key: i,
-              })
+              });
               return (
                 <div
                   key={i}
@@ -76,22 +79,23 @@ export const Code: React.FC<Readonly<CodeProps>> = ({ children, language = 'html
                     const tokenProps = getTokenProps({
                       token,
                       key,
-                    })
+                    });
                     const isException =
-                      token.content === 'from' && line[key + 1]?.content === ':'
+                      token.content === 'from' &&
+                      line[key + 1]?.content === ':';
                     const newTypes = isException
                       ? [...token.types, 'key-white']
-                      : token.types
-                    token.types = newTypes
+                      : token.types;
+                    token.types = newTypes;
 
                     return (
                       <React.Fragment key={key}>
                         <span {...tokenProps} />
                       </React.Fragment>
-                    )
+                    );
                   })}
                 </div>
-              )
+              );
             })}
           </pre>
           <div
@@ -104,5 +108,5 @@ export const Code: React.FC<Readonly<CodeProps>> = ({ children, language = 'html
         </>
       )}
     </Highlight>
-  )
-}
+  );
+};

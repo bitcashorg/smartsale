@@ -1,22 +1,22 @@
-'use client'
+'use client';
 
-import { usePathname, useRouter, useSearchParams } from 'next/navigation'
-import React from 'react'
-import { Toaster } from 'sonner'
-import type { EmailRenderingResult } from '../../../actions/render-email-by-path'
-import { CodeContainer } from '../../../components/code-container'
-import { Shell } from '../../../components/shell'
-import { Tooltip } from '../../../components/tooltip'
-import { useEmails } from '../../../contexts/emails'
-import { useHotreload } from '../../../hooks/use-hot-reload'
-import { useRenderingMetadata } from '../../../hooks/use-rendering-metadata'
-import { RenderingError } from './rendering-error'
+import { usePathname, useRouter, useSearchParams } from 'next/navigation';
+import React from 'react';
+import { Toaster } from 'sonner';
+import { useHotreload } from '../../../hooks/use-hot-reload';
+import type { EmailRenderingResult } from '../../../actions/render-email-by-path';
+import { CodeContainer } from '../../../components/code-container';
+import { Shell } from '../../../components/shell';
+import { Tooltip } from '../../../components/tooltip';
+import { useEmails } from '../../../contexts/emails';
+import { useRenderingMetadata } from '../../../hooks/use-rendering-metadata';
+import { RenderingError } from './rendering-error';
 
 interface PreviewProps {
-  slug: string
-  emailPath: string
-  pathSeparator: string
-  renderingResult: EmailRenderingResult
+  slug: string;
+  emailPath: string;
+  pathSeparator: string;
+  renderingResult: EmailRenderingResult;
 }
 
 const Preview = ({
@@ -25,51 +25,56 @@ const Preview = ({
   pathSeparator,
   renderingResult: initialRenderingResult,
 }: PreviewProps) => {
-  const router = useRouter()
-  const pathname = usePathname()
-  const searchParams = useSearchParams()
+  const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
 
-  const activeView = searchParams.get('view') ?? 'desktop'
-  const activeLang = searchParams.get('lang') ?? 'jsx'
-  const { useEmailRenderingResult } = useEmails()
+  const activeView = searchParams.get('view') ?? 'desktop';
+  const activeLang = searchParams.get('lang') ?? 'jsx';
+  const { useEmailRenderingResult } = useEmails();
 
-  const renderingResult = useEmailRenderingResult(emailPath, initialRenderingResult)
+  const renderingResult = useEmailRenderingResult(
+    emailPath,
+    initialRenderingResult,
+  );
 
   const renderedEmailMetadata = useRenderingMetadata(
     emailPath,
     renderingResult,
     initialRenderingResult,
-  )
+  );
 
   if (process.env.NEXT_PUBLIC_IS_BUILDING !== 'true') {
     // this will not change on runtime so it doesn't violate
     // the rules of hooks
     // eslint-disable-next-line react-hooks/rules-of-hooks
     useHotreload((changes) => {
-      const changeForThisEmail = changes.find((change) => change.filename.includes(slug))
+      const changeForThisEmail = changes.find((change) =>
+        change.filename.includes(slug),
+      );
 
       if (typeof changeForThisEmail !== 'undefined') {
         if (changeForThisEmail.event === 'unlink') {
-          router.push('/')
+          router.push('/');
         }
       }
-    })
+    });
   }
 
   const handleViewChange = (view: string) => {
-    const params = new URLSearchParams(searchParams)
-    params.set('view', view)
-    router.push(`${pathname}?${params.toString()}`)
-  }
+    const params = new URLSearchParams(searchParams);
+    params.set('view', view);
+    router.push(`${pathname}?${params.toString()}`);
+  };
 
   const handleLangChange = (lang: string) => {
-    const params = new URLSearchParams(searchParams)
-    params.set('view', 'source')
-    params.set('lang', lang)
-    router.push(`${pathname}?${params.toString()}`)
-  }
+    const params = new URLSearchParams(searchParams);
+    params.set('view', 'source');
+    params.set('lang', lang);
+    router.push(`${pathname}?${params.toString()}`);
+  };
 
-  const hasNoErrors = typeof renderedEmailMetadata !== 'undefined'
+  const hasNoErrors = typeof renderedEmailMetadata !== 'undefined';
 
   return (
     <Shell
@@ -133,7 +138,7 @@ const Preview = ({
         <Toaster />
       </div>
     </Shell>
-  )
-}
+  );
+};
 
-export default Preview
+export default Preview;

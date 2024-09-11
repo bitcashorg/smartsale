@@ -1,11 +1,11 @@
-import type { Config } from 'tailwindcss'
-import colors = require('@radix-ui/colors')
-import { fontFamily } from 'tailwindcss/defaultTheme'
-import plugin from 'tailwindcss/plugin'
+import type { Config } from 'tailwindcss';
+import colors = require('@radix-ui/colors');
+import { fontFamily } from 'tailwindcss/defaultTheme';
+import plugin from 'tailwindcss/plugin';
 
 const iOsHeight = plugin(({ addUtilities }) => {
-  const supportsTouchRule = '@supports (-webkit-touch-callout: none)'
-  const webkitFillAvailable = '-webkit-fill-available'
+  const supportsTouchRule = '@supports (-webkit-touch-callout: none)';
+  const webkitFillAvailable = '-webkit-fill-available';
 
   const utilities = {
     '.min-h-screen-ios': {
@@ -18,11 +18,11 @@ const iOsHeight = plugin(({ addUtilities }) => {
         height: webkitFillAvailable,
       },
     },
-  }
+  };
 
   // @ts-expect-error This works normally, not sure what this error is
-  addUtilities(utilities, ['responsive'])
-})
+  addUtilities(utilities, ['responsive']);
+});
 
 const config: Config = {
   content: {
@@ -90,5 +90,5 @@ const config: Config = {
     },
   },
   plugins: [iOsHeight],
-}
-export default config
+};
+export default config;

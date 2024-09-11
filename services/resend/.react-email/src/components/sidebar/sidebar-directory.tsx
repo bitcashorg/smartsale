@@ -1,21 +1,21 @@
-'use client'
-import * as Collapsible from '@radix-ui/react-collapsible'
-import * as React from 'react'
-import type { EmailsDirectory } from '../../actions/get-emails-directory-metadata'
-import { cn } from '../../utils'
-import { Heading } from '../heading'
-import { IconArrowDown } from '../icons/icon-arrow-down'
-import { IconFolder } from '../icons/icon-folder'
-import { IconFolderOpen } from '../icons/icon-folder-open'
-import { SidebarDirectoryChildren } from './sidebar-directory-children'
+'use client';
+import * as Collapsible from '@radix-ui/react-collapsible';
+import * as React from 'react';
+import { cn } from '../../utils';
+import { type EmailsDirectory } from '../../actions/get-emails-directory-metadata';
+import { Heading } from '../heading';
+import { IconFolder } from '../icons/icon-folder';
+import { IconFolderOpen } from '../icons/icon-folder-open';
+import { IconArrowDown } from '../icons/icon-arrow-down';
+import { SidebarDirectoryChildren } from './sidebar-directory-children';
 
 interface SidebarDirectoryProps {
-  emailsDirectoryMetadata: EmailsDirectory
-  className?: string
-  currentEmailOpenSlug?: string
+  emailsDirectoryMetadata: EmailsDirectory;
+  className?: string;
+  currentEmailOpenSlug?: string;
 }
 
-const persistedOpenDirectories = new Set<string>()
+const persistedOpenDirectories = new Set<string>();
 
 export const SidebarDirectory = ({
   emailsDirectoryMetadata: directoryMetadata,
@@ -24,28 +24,28 @@ export const SidebarDirectory = ({
 }: SidebarDirectoryProps) => {
   const doesDirectoryContainCurrentEmailOpen = currentEmailOpenSlug
     ? currentEmailOpenSlug.includes(directoryMetadata.relativePath)
-    : false
+    : false;
 
   const isEmpty =
     directoryMetadata.emailFilenames.length === 0 &&
-    directoryMetadata.subDirectories.length === 0
+    directoryMetadata.subDirectories.length === 0;
 
   const [open, setOpen] = React.useState(
     persistedOpenDirectories.has(directoryMetadata.absolutePath) ||
       doesDirectoryContainCurrentEmailOpen,
-  )
+  );
 
   return (
     <Collapsible.Root
       className={cn('group', className)}
       onOpenChange={(isOpening) => {
         if (isOpening) {
-          persistedOpenDirectories.add(directoryMetadata.absolutePath)
+          persistedOpenDirectories.add(directoryMetadata.absolutePath);
         } else {
-          persistedOpenDirectories.delete(directoryMetadata.absolutePath)
+          persistedOpenDirectories.delete(directoryMetadata.absolutePath);
         }
 
-        setOpen(isOpening)
+        setOpen(isOpening);
       }}
       open={open}
     >
@@ -89,5 +89,5 @@ export const SidebarDirectory = ({
         />
       ) : null}
     </Collapsible.Root>
-  )
-}
+  );
+};

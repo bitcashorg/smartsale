@@ -1,13 +1,13 @@
-import path from 'node:path'
-import Image from 'next/image'
-import Link from 'next/link'
-import { Button, Heading, Text } from '../components'
-import { Shell } from '../components/shell'
-import { emailsDirectoryAbsolutePath } from '../utils/emails-directory-absolute-path'
-import logo from './logo.png'
+import path from 'node:path';
+import Link from 'next/link';
+import Image from 'next/image';
+import { Button, Heading, Text } from '../components';
+import { Shell } from '../components/shell';
+import { emailsDirectoryAbsolutePath } from '../utils/emails-directory-absolute-path';
+import logo from './logo.png';
 
 const Home = () => {
-  const baseEmailsDirectoryName = path.basename(emailsDirectoryAbsolutePath)
+  const baseEmailsDirectoryName = path.basename(emailsDirectoryAbsolutePath);
 
   return (
     <Shell>
@@ -31,7 +31,8 @@ const Home = () => {
             To start developing your emails, you can create a<br />
             <code className="text-slate-12">.jsx</code> or{' '}
             <code className="text-slate-12">.tsx</code> file under your{' '}
-            <code className="text-slate-12">{baseEmailsDirectoryName}</code> folder.
+            <code className="text-slate-12">{baseEmailsDirectoryName}</code>{' '}
+            folder.
           </Text>
 
           <Button asChild size="3">
@@ -40,7 +41,7 @@ const Home = () => {
         </div>
       </div>
     </Shell>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

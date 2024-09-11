@@ -1,5 +1,5 @@
-import path from 'node:path'
-import { getEmailComponent } from './get-email-component'
+import path from 'node:path';
+import { getEmailComponent } from './get-email-component';
 
 test('getEmailComponent() with a demo email template', async () => {
   const result = await getEmailComponent(
@@ -7,18 +7,21 @@ test('getEmailComponent() with a demo email template', async () => {
       __dirname,
       '../../../../apps/demo/emails/notifications/vercel-invite-user.tsx',
     ),
-  )
+  );
 
   if ('error' in result) {
-    console.log(result.error)
-    expect('error' in result).toBe(false)
+    console.log(result.error);
+    expect('error' in result).toBe(false);
   } else {
-    expect(result.emailComponent).toBeTruthy()
-    expect(result.sourceMapToOriginalFile).toBeTruthy()
+    expect(result.emailComponent).toBeTruthy();
+    expect(result.sourceMapToOriginalFile).toBeTruthy();
 
     const emailHtml = await result.render(
-      result.createElement(result.emailComponent, result.emailComponent.PreviewProps),
-    )
-    expect(emailHtml).toMatchSnapshot()
+      result.createElement(
+        result.emailComponent,
+        result.emailComponent.PreviewProps,
+      ),
+    );
+    expect(emailHtml).toMatchSnapshot();
   }
-})
+});

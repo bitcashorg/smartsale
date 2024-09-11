@@ -1,20 +1,20 @@
-import * as Popover from '@radix-ui/react-popover'
-import * as React from 'react'
-import { toast } from 'sonner'
-import { inter } from '../app/inter'
-import { Button } from './button'
-import { Text } from './text'
+import * as Popover from '@radix-ui/react-popover';
+import * as React from 'react';
+import { toast } from 'sonner';
+import { inter } from '../app/inter';
+import { Button } from './button';
+import { Text } from './text';
 
 export const Send = ({ markup }: { markup: string }) => {
-  const [to, setTo] = React.useState('')
-  const [subject, setSubject] = React.useState('Testing React Email')
-  const [isSending, setIsSending] = React.useState(false)
-  const [isPopOverOpen, setIsPopOverOpen] = React.useState(false)
+  const [to, setTo] = React.useState('');
+  const [subject, setSubject] = React.useState('Testing React Email');
+  const [isSending, setIsSending] = React.useState(false);
+  const [isPopOverOpen, setIsPopOverOpen] = React.useState(false);
 
   const onFormSubmit = async (e: React.FormEvent) => {
     try {
-      e.preventDefault()
-      setIsSending(true)
+      e.preventDefault();
+      setIsSending(true);
 
       const response = await fetch('https://react.email/api/send/test', {
         method: 'POST',
@@ -24,30 +24,30 @@ export const Send = ({ markup }: { markup: string }) => {
           subject,
           html: markup,
         }),
-      })
+      });
 
       if (response.status === 429) {
-        const { error } = (await response.json()) as { error: string }
-        toast.error(error)
+        const { error } = (await response.json()) as { error: string };
+        toast.error(error);
       }
 
-      toast.success('Email sent! Check your inbox.')
+      toast.success('Email sent! Check your inbox.');
     } catch (exception) {
-      toast.error('Something went wrong. Please try again.')
+      toast.error('Something went wrong. Please try again.');
     } finally {
-      setIsSending(false)
+      setIsSending(false);
     }
-  }
+  };
 
   return (
     <Popover.Root
       onOpenChange={() => {
         if (!isPopOverOpen) {
-          document.body.classList.add('popup-open')
-          setIsPopOverOpen(true)
+          document.body.classList.add('popup-open');
+          setIsPopOverOpen(true);
         } else {
-          document.body.classList.remove('popup-open')
-          setIsPopOverOpen(false)
+          document.body.classList.remove('popup-open');
+          setIsPopOverOpen(false);
         }
       }}
       open={isPopOverOpen}
@@ -68,7 +68,10 @@ export const Send = ({ markup }: { markup: string }) => {
           sideOffset={48}
         >
           <form className="mt-1" onSubmit={(e) => void onFormSubmit(e)}>
-            <label className="text-slate-10 text-xs uppercase mb-2 block" htmlFor="to">
+            <label
+              className="text-slate-10 text-xs uppercase mb-2 block"
+              htmlFor="to"
+            >
               Recipient
             </label>
             <input
@@ -77,7 +80,7 @@ export const Send = ({ markup }: { markup: string }) => {
               defaultValue={to}
               id="to"
               onChange={(e) => {
-                setTo(e.target.value)
+                setTo(e.target.value);
               }}
               placeholder="you@example.com"
               required
@@ -94,13 +97,16 @@ export const Send = ({ markup }: { markup: string }) => {
               defaultValue={subject}
               id="subject"
               onChange={(e) => {
-                setSubject(e.target.value)
+                setSubject(e.target.value);
               }}
               placeholder="My Email"
               required
               type="text"
             />
-            <input className="appearance-none checked:bg-blue-500" type="checkbox" />
+            <input
+              className="appearance-none checked:bg-blue-500"
+              type="checkbox"
+            />
             <div className="flex items-center justify-between mt-3">
               <Text className="inline-block" size="1">
                 Powered by{' '}
@@ -125,5 +131,5 @@ export const Send = ({ markup }: { markup: string }) => {
         </Popover.Content>
       </Popover.Portal>
     </Popover.Root>
-  )
-}
+  );
+};

@@ -4,5 +4,5 @@ export const unreachable = (
     typeof condition === 'string' ? condition : JSON.stringify(condition)
   }'.`,
 ): never => {
-  throw new TypeError(message)
-}
+  throw new TypeError(message);
+};

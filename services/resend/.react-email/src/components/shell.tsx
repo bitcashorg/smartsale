@@ -1,18 +1,18 @@
-'use client'
-import * as React from 'react'
-import { cn } from '../utils'
-import { Logo } from './logo'
-import { Sidebar } from './sidebar'
-import { Topbar } from './topbar'
+'use client';
+import * as React from 'react';
+import { cn } from '../utils';
+import { Logo } from './logo';
+import { Sidebar } from './sidebar';
+import { Topbar } from './topbar';
 
-type RootProps = React.ComponentPropsWithoutRef<'div'>
+type RootProps = React.ComponentPropsWithoutRef<'div'>;
 
 interface ShellProps extends RootProps {
-  markup?: string
-  currentEmailOpenSlug?: string
-  pathSeparator?: string
-  activeView?: string
-  setActiveView?: (view: string) => void
+  markup?: string;
+  currentEmailOpenSlug?: string;
+  pathSeparator?: string;
+  activeView?: string;
+  setActiveView?: (view: string) => void;
 }
 
 export const Shell = ({
@@ -23,8 +23,8 @@ export const Shell = ({
   activeView,
   setActiveView,
 }: ShellProps) => {
-  const [sidebarToggled, setSidebarToggled] = React.useState(false)
-  const [triggerTransition, setTriggerTransition] = React.useState(false)
+  const [sidebarToggled, setSidebarToggled] = React.useState(false);
+  const [triggerTransition, setTriggerTransition] = React.useState(false);
 
   return (
     <div className="flex bg-black text-white flex-col h-screen overflow-x-hidden">
@@ -36,7 +36,7 @@ export const Shell = ({
         <button
           className="h-6 w-6 rounded flex items-center justify-center text-white"
           onClick={() => {
-            setSidebarToggled((v) => !v)
+            setSidebarToggled((v) => !v);
           }}
           type="button"
         >
@@ -74,10 +74,13 @@ export const Shell = ({
         />
 
         <main
-          className={cn('absolute will-change-width h-screen w-[100vw] right-0', {
-            'lg:translate-x-0 lg:w-[calc(100vw)]': sidebarToggled,
-            'lg:translate-x-0 lg:w-[calc(100vw-275px)]': !sidebarToggled,
-          })}
+          className={cn(
+            'absolute will-change-width h-screen w-[100vw] right-0',
+            {
+              'lg:translate-x-0 lg:w-[calc(100vw)]': sidebarToggled,
+              'lg:translate-x-0 lg:w-[calc(100vw-275px)]': !sidebarToggled,
+            },
+          )}
           style={{
             transition: triggerTransition
               ? 'width 0.2s ease-in-out, transform 0.2s ease-in-out'
@@ -90,24 +93,26 @@ export const Shell = ({
               currentEmailOpenSlug={currentEmailOpenSlug}
               markup={markup}
               onToggleSidebar={() => {
-                setTriggerTransition(true)
+                setTriggerTransition(true);
 
                 requestAnimationFrame(() => {
-                  setSidebarToggled((v) => !v)
-                })
+                  setSidebarToggled((v) => !v);
+                });
 
                 setTimeout(() => {
-                  setTriggerTransition(false)
-                }, 300)
+                  setTriggerTransition(false);
+                }, 300);
               }}
               pathSeparator={pathSeparator}
               setActiveView={setActiveView}
             />
           ) : null}
 
-          <div className="h-[calc(100vh_-_70px)] overflow-auto mx-auto">{children}</div>
+          <div className="h-[calc(100vh_-_70px)] overflow-auto mx-auto">
+            {children}
+          </div>
         </main>
       </div>
     </div>
-  )
-}
+  );
+};

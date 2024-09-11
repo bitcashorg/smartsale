@@ -1,20 +1,24 @@
-'use client'
+'use client';
 
-import * as Collapsible from '@radix-ui/react-collapsible'
-import * as React from 'react'
-import { useEmails } from '../../contexts/emails'
-import { cn } from '../../utils'
-import { Logo } from '../logo'
-import { SidebarDirectoryChildren } from './sidebar-directory-children'
+import * as React from 'react';
+import * as Collapsible from '@radix-ui/react-collapsible';
+import { useEmails } from '../../contexts/emails';
+import { cn } from '../../utils';
+import { Logo } from '../logo';
+import { SidebarDirectoryChildren } from './sidebar-directory-children';
 
 interface SidebarProps {
-  className?: string
-  currentEmailOpenSlug?: string
-  style?: React.CSSProperties
+  className?: string;
+  currentEmailOpenSlug?: string;
+  style?: React.CSSProperties;
 }
 
-export const Sidebar = ({ className, currentEmailOpenSlug, style }: SidebarProps) => {
-  const { emailsDirectoryMetadata } = useEmails()
+export const Sidebar = ({
+  className,
+  currentEmailOpenSlug,
+  style,
+}: SidebarProps) => {
+  const { emailsDirectoryMetadata } = useEmails();
 
   return (
     <aside
@@ -37,5 +41,5 @@ export const Sidebar = ({ className, currentEmailOpenSlug, style }: SidebarProps
         </Collapsible.Root>
       </nav>
     </aside>
-  )
-}
+  );
+};

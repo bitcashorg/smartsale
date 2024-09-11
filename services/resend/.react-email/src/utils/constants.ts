@@ -3,4 +3,4 @@ export const tabTransition = {
   stiffness: 2000,
   damping: 80,
   mass: 1,
-}
+};
