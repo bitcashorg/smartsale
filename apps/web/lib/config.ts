@@ -23,7 +23,7 @@ export const appConfig = {
     learn: process.env.NEXT_PUBLIC_LEARN_SECTION === 'true',
     i18n: process.env.NEXT_PUBLIC_NEW_I18N === 'true',
     explorations: process.env.NEXT_PUBLIC_EXPLORATIONS === 'true',
-    auction: process.env.auction === 'true',
+    auction: process.env.NEXT_PUBLIC_FEAT_AUCTION === 'true',
   },
   datocms: {
     endpoint: process.env.NEXT_PUBLIC_CMS_GRAPHQL_API || '',
