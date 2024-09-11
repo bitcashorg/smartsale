@@ -35,7 +35,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 
   const tokenAddress = getAddress(projectData.token_address)
 
-  console.log('🔥 tokenAddress', tokenAddress)
+  console.log('😍 tokenAddress', tokenAddress)
 
   return (
     <div className="flex min-h-[calc(83vh-4rem)] flex-col">
