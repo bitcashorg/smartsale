@@ -25,11 +25,17 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
   const supabase = await createSupabaseServerClient()
   // TODO: optimize this in a single query
   const presale = await getPresaleData({ projectId: project.id, supabase })
-  // const projectData = await getProjectData({ projectId: project.id, supabase })
+  const projectData = await getProjectData({ projectId: project.id, supabase })
   const presaleContributions = await getPresaleContributions({
     presaleId: presale.id,
     supabase,
   })
+
+  if (!projectData.token_address) redirect('/')
+
+  const tokenAddress = getAddress(projectData.token_address)
+
+  console.log('😍 tokenAddress', tokenAddress)
 
   return (
     <div className="flex min-h-[calc(83vh-4rem)] flex-col">
@@ -51,6 +57,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           <PresaleDepositCard
             project={project}
             presaleAddress={getAddress(presale.address)}
+            tokenAddress={tokenAddress}
           />
         </div>
 

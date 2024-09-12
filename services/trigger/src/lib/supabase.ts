@@ -1,6 +1,7 @@
 import type { Database, TablesInsert } from '@repo/supabase'
-import { createClient } from '@supabase/supabase-js'
+import { SupabaseClient, createClient } from '@supabase/supabase-js'
 import { uniqBy } from 'lodash'
+import type { Address } from 'viem'
 import { appConfig } from '../config'
 
 // Initialize Supabase client
@@ -43,6 +44,7 @@ export async function upsertPresaleDeposits({
     console.error('Error updating presale deposit:', deposit.error)
     return false
   }
+  console.log('🚀 deposit', deposit.data)
 
   const currentPresale = await supabase
     .from('presale')
@@ -72,6 +74,14 @@ export async function upsertPresaleDeposits({
 
   const newTotalRaised =
     Number(currentPresale.data.total_raised) + Number(valueInTokenUnits)
+  console.log(
+    '==> 😎 Current Total Raised:',
+    currentPresale.data.total_raised,
+    'Value in Token Units:',
+    valueInTokenUnits,
+    'New Total Raised:',
+    newTotalRaised,
+  )
 
   const presale = await supabase
     .from('presale')
@@ -81,7 +91,6 @@ export async function upsertPresaleDeposits({
     })
     .eq('id', deposit.data.presale_id)
     .select()
-    .single()
 
   if (presale.error) {
     console.error('Error updating presale total raised:', presale.error)
@@ -92,12 +101,50 @@ export async function upsertPresaleDeposits({
 }
 
 export async function insertTransaction(transaction: TablesInsert<'transaction'>) {
-  const result = await supabase.from('transaction').insert(transaction).select().single()
-
-  if (result.error) {
-    console.error('Error inserting transaction:', result.error)
+  const result = await supabase.from('transaction').insert(transaction).select()
+  console.log('🚀 result', result)
+  if (!result) {
+    console.error('Error inserting transaction:', transaction)
     return false
   }
 
   return true
+}
+
+export async function getPresaleByAddress(address: Address) {
+  console.log('🚀 getPresaleByAddress', address)
+  const { data, error } = await supabase
+    .from('presale')
+    .select('*, project(*)') // Fetch associated project through presale.project_id
+    .ilike('address', address)
+    .single()
+
+  if (error) {
+    console.error('Error fetching presale by address:', error)
+    return null
+  }
+
+  return data
+}
+
+export async function setPresaleDepositStatus({
+  depositHash,
+  state,
+}: {
+  depositHash: string
+  state: Database['public']['Enums']['state']
+}) {
+  const { data, error } = await supabase
+    .from('presale_deposit')
+    .update({ state })
+    .eq('deposit_hash', depositHash)
+    .select()
+    .single()
+
+  if (error) {
+    console.error('Error updating presale deposit status:', error)
+    return null
+  }
+
+  return data
 }

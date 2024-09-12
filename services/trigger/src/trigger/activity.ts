@@ -1,8 +1,12 @@
 import type { AlchemyActivity, AlchemyWebhookEvent } from '@repo/alchemy'
 import { logger, task } from '@trigger.dev/sdk/v3'
-import { isAddress, parseUnits } from 'viem'
+import { type Address, isAddress, parseUnits } from 'viem'
 import { issuePresaleTokens } from '../lib/presale-issuer'
-import { upsertPresaleDeposits } from '../lib/supabase'
+import {
+  getPresaleByAddress,
+  setPresaleDepositStatus,
+  upsertPresaleDeposits,
+} from '../lib/supabase'
 
 const STABLECOIN_DECIMALS = 6
 
@@ -11,19 +15,31 @@ export const addressActivityTask = task({
   run: async (payload: AlchemyWebhookEvent) => {
     try {
       const activity: AlchemyActivity = payload.event.activity[0]
-      console.log(activity)
+      // console.log(activity)
+
+      // TODO: save activity id to supabase and check if it's already been processed to prevent double issuance
 
       if (!isAddress(activity.fromAddress))
         throw new Error(`Invalid from address: ${activity.fromAddress}`)
+
+      const presale = await getPresaleByAddress(activity.toAddress as Address)
+      if (!presale) throw new Error('Presale not found')
+      if (!presale.project) throw new Error('Project not found')
+      if (!presale.project.token_address)
+        throw new Error('Project token address not found')
+      if (!activity.value) throw new Error('Value not found in alchemy event')
+
+      // TODO: check if processed. check if processing
 
       const valueInTokenUnits = parseUnits(activity.value.toString(), STABLECOIN_DECIMALS)
 
       const issuanceHash = await issuePresaleTokens(
         activity.fromAddress,
         valueInTokenUnits,
+        presale.project.token_address as Address,
       )
       console.log(issuanceHash)
-      if (!issuanceHash) throw new Error('Failed to get issuance hash')
+      if (!issuanceHash) throw new Error('Failed to issue presale tokens')
 
       const updatedPresale = await upsertPresaleDeposits({
         valueInTokenUnits,
@@ -31,6 +47,10 @@ export const addressActivityTask = task({
         issuanceHash,
       })
 
+      await setPresaleDepositStatus({
+        depositHash: activity.hash,
+        state: 'processed',
+      })
       console.log('Updated presale', updatedPresale)
     } catch (error) {
       logger.error('Error processing address activity', {

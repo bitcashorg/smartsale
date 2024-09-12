@@ -7,6 +7,6 @@ export const chainIdAlchemyNetwork: Record<number, AlchemyNetwork> = {
   42161: 'ARB_MAINNET',
   10: 'OPT_MAINNET',
   8453: 'BASE_MAINNET',
-  43114: 'MATIC_MAINNET',
+  43114: 'AVAX_MAINNET',
   56: 'BNB_MAINNET',
 }

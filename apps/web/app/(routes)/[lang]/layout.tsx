@@ -41,7 +41,7 @@ import type { Metadata, Viewport } from 'next'
 import dynamic from 'next/dynamic'
 import type React from 'react'
 import { isMobile } from 'react-device-detect'
-import { Toaster } from 'react-hot-toast'
+import { Toaster } from 'sonner'
 import '../../globals.css'
 
 export const viewport: Viewport = {

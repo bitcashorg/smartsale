@@ -2,14 +2,16 @@
 
 import { useErc20Balance } from '@/hooks/use-balance'
 import { TestnetBLPL } from '@repo/auction'
-import type { Address } from 'viem'
+import { type Address, erc20Abi } from 'viem'
 import { useAccount } from 'wagmi'
 
-export function PresaleTokenBalance() {
+// TODO: make this generic for any token on any chain
+export function PresaleTokenBalance({ tokenAddress }: { tokenAddress: Address }) {
+  console.log('🔥 PresaleTokenBalance tokenAddress', tokenAddress)
   const { address } = useAccount()
   const { formatted } = useErc20Balance({
-    contract: TestnetBLPL.address,
-    abi: TestnetBLPL.abi,
+    contract: tokenAddress,
+    abi: erc20Abi,
     address: address as Address,
     chainId: TestnetBLPL.chainId,
   })

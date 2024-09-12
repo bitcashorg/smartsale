@@ -6,7 +6,7 @@ import { AnimatePresence } from 'framer-motion'
 import { LucideCheck, LucideLoader2, LucideShare, LucideX } from 'lucide-react'
 import { useParams } from 'next/navigation'
 import { useState } from 'react'
-import toast from 'react-hot-toast'
+import { toast } from 'sonner'
 
 export function CopyShortlinkIcon() {
   const [status, setStatus] = useState<'default' | 'loading' | 'copied' | 'error'>(

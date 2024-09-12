@@ -4,8 +4,7 @@ import { appConfig } from '@/lib/config'
 import { useSearchParams } from 'next/navigation'
 import { useEffect, useState } from 'react'
 
-const DEFAULT_URI =
-  appConfig.env !== 'prod' ? 'https://test.bitcash.org' : 'https://app.bitcash.org'
+const DEFAULT_URI = 'https://app.bitcash.org'
 const DEFAULT_REFERRER = appConfig.env !== 'prod' ? 'bitlautst.bk' : 'bitlaunch.bk'
 
 export function useReferral() {

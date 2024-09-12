@@ -12,8 +12,11 @@ import {
 
 import { PresaleTransactionsCard } from '@/components/routes/project/presale/presale-transactions-card'
 import { BalancesTable } from '@/components/routes/wallet/balances-table'
+import { appConfig } from '@/lib/config'
+import { redirect } from 'next/navigation'
 
 export default function WalletPage() {
+  if (!appConfig.features.wallet) redirect('/')
   return (
     <div className="container flex flex-col gap-16 px-7 md:pt-24">
       <div className="flex flex-col gap-10 space-between md:flex-row">
