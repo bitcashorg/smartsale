@@ -8,6 +8,7 @@ async function createAddressActivityNotification({
   addresses,
   network,
 }: { addresses: string[]; network: Network }) {
+  console.log('🚀 createAddressActivityNotification', addresses, network)
   try {
     const settings = {
       authToken: appConfig.alchemyNotifyToken,
@@ -34,13 +35,47 @@ async function createAddressActivityNotification({
     )
   }
 }
+const depositAddresses = [
+  {
+    deposit_address: '0x0b66FA29FE366194Ea684AD3fA6B92E992316DF5',
+    chain_id: '1',
+    network: Network.ETH_MAINNET,
+  },
+  {
+    deposit_address: '0x0b66FA29FE366194Ea684AD3fA6B92E992316DF5',
+    chain_id: '10',
+    network: Network.OPT_MAINNET,
+  },
+  {
+    deposit_address: '0x0b66FA29FE366194Ea684AD3fA6B92E992316DF5',
+    chain_id: '42161',
+    network: Network.ARB_MAINNET,
+  },
+  {
+    deposit_address: '0x0b66FA29FE366194Ea684AD3fA6B92E992316DF5',
+    chain_id: '8453',
+    network: Network.BASE_MAINNET,
+  },
+  {
+    deposit_address: '0x0b66FA29FE366194Ea684AD3fA6B92E992316DF5',
+    chain_id: '56',
+    network: Network.BNB_MAINNET,
+  },
+  {
+    deposit_address: '0x0b66FA29FE366194Ea684AD3fA6B92E992316DF5',
+    chain_id: '43114',
+    network: Network.AVAX_MAINNET,
+  },
+  {
+    deposit_address: '0x0b66FA29FE366194Ea684AD3fA6B92E992316DF5',
+    chain_id: '137',
+    network: Network.MATIC_MAINNET,
+  },
+]
 
-for (const chain of evmChains) {
+for (const { deposit_address, network } of depositAddresses) {
   createAddressActivityNotification({
-    addresses: [
-      // '0x6F76670A66e7909Af9B76f0D84E39317FCc0B2e1', //dev
-      '0x4122Dd5f83eeebD16f33Ce15730dea53e6eaC41d', //test
-    ],
-    network: Network[chainIdAlchemyNetwork[chain.id]],
+    addresses: [deposit_address],
+    network,
   })
 }
