@@ -175,9 +175,14 @@ function PresaleDeposit({
             type="number"
             id="deposit"
             name="deposit"
-            placeholder="0.00"
+            placeholder="type amount"
             value={amount}
             onChange={(e) => setAmount(e.target.value)}
+            onKeyDown={(e) => {
+              if (e.key === '.' || e.key === ',') {
+                e.preventDefault()
+              }
+            }}
           />
 
           <Select onValueChange={setSelectedToken} defaultValue={'USDT'}>

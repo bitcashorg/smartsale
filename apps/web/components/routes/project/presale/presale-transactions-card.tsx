@@ -129,7 +129,7 @@ function TransactionRow({ contribution }: { contribution: PresaleContribution })
 
       <TableCell>
         {contribution.amount !== null
-          ? (contribution.amount / 1000000).toFixed(6)
+          ? (contribution.amount / 1000000).toFixed(6).split('.')[0]
           : 'N/A'}
       </TableCell>
 

@@ -51,7 +51,9 @@ export function ProjectPresaleData({
           <Handshake className="w-4 h-4 text-muted-foreground" />
         </CardHeader>
         <CardContent>
-          <div className="text-2xl font-bold">${formatUnits(totalRaised, 6)}</div>
+          <div className="text-2xl font-bold">
+            ${formatUnits(totalRaised, 6).split('.')[0]}
+          </div>
         </CardContent>
       </Card>
 
