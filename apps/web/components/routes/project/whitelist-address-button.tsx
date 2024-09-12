@@ -7,11 +7,10 @@ import { useSupabaseClient } from '@/services/supabase'
 import { formatAddress } from '@repo/utils'
 import { useQuery } from '@tanstack/react-query'
 import { useAction } from 'next-safe-action/hooks'
-import { toast } from 'sonner'
 import { useAccount, useSignMessage } from 'wagmi'
 import type { SignMessageData } from 'wagmi/query'
 
-export function RegisterAddressForm({ projectId }: { projectId: number }) {
+export function WhitelistAddressButton({ projectId }: { projectId: number }) {
   const { session, loginOrConnect } = useSession()
   const { address } = useAccount()
   const supabase = useSupabaseClient()
@@ -59,7 +58,7 @@ export function RegisterAddressForm({ projectId }: { projectId: number }) {
   })
 
   const handleRegister = () => {
-    if (!address || !session) return loginOrConnect()
+    if (!address || !session?.account) return loginOrConnect()
     signMessage({ message: 'Sign me up for bitlauncher | bitcash presale' })
   }
 
@@ -69,11 +68,13 @@ export function RegisterAddressForm({ projectId }: { projectId: number }) {
     <div className="flex justify-center">
       <RegisterButton
         text={
-          !address
-            ? 'Connect EVM Wallet'
-            : isPending && address
-              ? `Whitelisting ${formatAddress(address)}`
-              : 'Get Whitelisted'
+          !session?.account
+            ? 'Login with Bitcash'
+            : !address
+              ? 'Connect EVM Wallet'
+              : isPending && address
+                ? `Whitelisting ${formatAddress(address)}`
+                : 'Get Whitelisted'
         }
         onClick={handleRegister}
       />
@@ -83,7 +84,7 @@ export function RegisterAddressForm({ projectId }: { projectId: number }) {
 
 function RegisterButton(props: ButtonProps & { text: string }) {
   return (
-    <Button variant="accent" {...props}>
+    <Button variant="tertiary" {...props}>
       {props.text}
     </Button>
   )

@@ -18,20 +18,29 @@ import { useSession } from '@/hooks/use-session'
 import { useSigningRequest } from '@/hooks/use-signing-request'
 import { genBitusdDepositSigningRequest, genUsdtDepositSigningRequest } from '@/lib/eos'
 import type { ProjectWithAuction } from '@/lib/projects'
+import { useSupabaseClient } from '@/services/supabase'
+import { isAddressRegisteredForPresale } from '@/services/supabase/service'
 import { tokens } from '@repo/tokens'
+import { useQuery } from '@tanstack/react-query'
+import Link from 'next/link'
 import { useMemo, useState } from 'react'
 import { toast } from 'sonner'
 import { type Address, erc20Abi, getAddress, parseUnits } from 'viem'
 import { useAccount, useChainId, useSwitchChain, useWriteContract } from 'wagmi'
+import { WhitelistAddressButton } from '../whitelist-address-button'
 
 export function PresaleDepositCard({
   project,
   presaleAddress,
   tokenAddress,
+  isPresaleActive,
+  isAuctionActive,
 }: {
   project: ProjectWithAuction
   presaleAddress: Address
   tokenAddress: Address
+  isPresaleActive: boolean
+  isAuctionActive: boolean
 }) {
   return (
     <ProjectGridCard>
@@ -40,14 +49,30 @@ export function PresaleDepositCard({
         <PresaleTokenBalance tokenAddress={tokenAddress} />
       </div>
 
-      <PresaleDeposit presaleAddress={presaleAddress} />
+      <PresaleDeposit
+        project={project}
+        presaleAddress={presaleAddress}
+        isPresaleActive={isPresaleActive}
+        isAuctionActive={isAuctionActive}
+      />
     </ProjectGridCard>
   )
 }
 
 const stables = ['USDT', 'USDC'] // 'BITUSD'
 
-function PresaleDeposit({ presaleAddress }: { presaleAddress: Address }) {
+function PresaleDeposit({
+  project,
+  presaleAddress,
+  isPresaleActive,
+  isAuctionActive,
+}: {
+  project: ProjectWithAuction
+  presaleAddress: Address
+  isPresaleActive: boolean
+  isAuctionActive: boolean
+}) {
+  const supabase = useSupabaseClient()
   const { address } = useAccount()
   const { writeContract } = useWriteContract()
   const [amount, setAmount] = useState<string>('42')
@@ -57,6 +82,12 @@ function PresaleDeposit({ presaleAddress }: { presaleAddress: Address }) {
   const { requestSignature } = useSigningRequest()
   const { loginOrConnect, session } = useSession()
   const chainId = useChainId()
+
+  const { data: isUserWhitelisted } = useQuery({
+    queryKey: ['presale-cat whitelist', address, project.id],
+    enabled: Boolean(address),
+    queryFn: () => isAddressRegisteredForPresale(address as string, project.id, supabase),
+  })
 
   const availableChains = useMemo(() => {
     return tokens
@@ -172,9 +203,17 @@ function PresaleDeposit({ presaleAddress }: { presaleAddress: Address }) {
       </div>
 
       <div className="flex flex-col space-y-2">
-        <Button variant="tertiary" onClick={deposit}>
-          Contribute Now
-        </Button>
+        {!isUserWhitelisted ? (
+          <WhitelistAddressButton projectId={project.id} />
+        ) : isPresaleActive ? (
+          <Button variant="tertiary" onClick={deposit}>
+            Contribute Now
+          </Button>
+        ) : isAuctionActive ? (
+          <Link href={`/${project.slug}/auction`}>
+            <Button variant="tertiary">Join Auction Now</Button>
+          </Link>
+        ) : null}
       </div>
     </div>
   )

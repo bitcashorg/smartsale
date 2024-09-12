@@ -31,6 +31,12 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
     supabase,
   })
 
+  const presaleStartDate = new Date(presale.start_timestamptz)
+  const presaleEndDate = new Date(presale.end_timestamptz)
+  const now = new Date()
+  const isPresaleActive = now > presaleStartDate && now < presaleEndDate
+  const isAuctionActive = false // TODO: implement auction logic
+
   if (!projectData.token_address) redirect('/')
 
   const tokenAddress = getAddress(projectData.token_address)
@@ -58,6 +64,8 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
             project={project}
             presaleAddress={getAddress(presale.address)}
             tokenAddress={tokenAddress}
+            isPresaleActive={isPresaleActive}
+            isAuctionActive={isAuctionActive}
           />
         </div>
 
