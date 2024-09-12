@@ -35,8 +35,9 @@ export async function POST(req: Request) {
   console.log('Received webhook', evt.id, evt.event.network)
 
   // validate if it's comming from alchemy and if we are interested in the event
-  if (!(await validateAlchemySignature(req, evt.webhookId, evt.event.network, payload)))
-    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+  // if (!(await validateAlchemySignature(req, evt.webhookId, evt.event.network, payload)))
+  //   return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+
   if (!isValidEvent(evt, network))
     return NextResponse.json({ error: 'Invalid event' }, { status: 400 })
 
