@@ -149,7 +149,7 @@ export async function getPresaleByAddress(address: Address, supabase: SupabaseCl
     .select('*')
     .ilike('deposit_address', address)
 
-  console.log('🚀 getPresaleByAddress', address)
+  console.log('🚀 getPresaleByAddress', address, presaleAddress)
   const { data, error } = await supabase
     .from('presale')
     .select('*, project(*)') // Fetch associated project through presale.project_id
