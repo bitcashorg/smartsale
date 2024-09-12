@@ -41,8 +41,6 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 
   const tokenAddress = getAddress(projectData.token_address)
 
-  console.log('😍 tokenAddress', tokenAddress)
-
   return (
     <div className="flex min-h-[calc(83vh-4rem)] flex-col">
       <ProjectHeader project={project}>
@@ -62,7 +60,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 
           <PresaleDepositCard
             project={project}
-            presaleAddress={getAddress(presale.address)}
+            presaleAddresses={presale.presale_address}
             tokenAddress={tokenAddress}
             isPresaleActive={isPresaleActive}
             isAuctionActive={isAuctionActive}

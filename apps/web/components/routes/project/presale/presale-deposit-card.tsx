@@ -20,6 +20,7 @@ import { genBitusdDepositSigningRequest, genUsdtDepositSigningRequest } from '@/
 import type { ProjectWithAuction } from '@/lib/projects'
 import { useSupabaseClient } from '@/services/supabase'
 import { isAddressRegisteredForPresale } from '@/services/supabase/service'
+import type { Tables } from '@repo/supabase'
 import { tokens } from '@repo/tokens'
 import { useQuery } from '@tanstack/react-query'
 import Link from 'next/link'
@@ -31,13 +32,13 @@ import { WhitelistAddressButton } from '../whitelist-address-button'
 
 export function PresaleDepositCard({
   project,
-  presaleAddress,
+  presaleAddresses,
   tokenAddress,
   isPresaleActive,
   isAuctionActive,
 }: {
   project: ProjectWithAuction
-  presaleAddress: Address
+  presaleAddresses: Tables<'presale_address'>[]
   tokenAddress: Address
   isPresaleActive: boolean
   isAuctionActive: boolean
@@ -51,7 +52,7 @@ export function PresaleDepositCard({
 
       <PresaleDeposit
         project={project}
-        presaleAddress={presaleAddress}
+        presaleAddresses={presaleAddresses}
         isPresaleActive={isPresaleActive}
         isAuctionActive={isAuctionActive}
       />
@@ -63,18 +64,18 @@ const stables = ['USDT', 'USDC'] // 'BITUSD'
 
 function PresaleDeposit({
   project,
-  presaleAddress,
+  presaleAddresses,
   isPresaleActive,
   isAuctionActive,
 }: {
   project: ProjectWithAuction
-  presaleAddress: Address
+  presaleAddresses: Tables<'presale_address'>[]
   isPresaleActive: boolean
   isAuctionActive: boolean
 }) {
   const supabase = useSupabaseClient()
   const { address } = useAccount()
-  const { writeContract } = useWriteContract()
+  const { status, writeContract } = useWriteContract()
   const [amount, setAmount] = useState<string>('42')
   const { switchChain } = useSwitchChain()
   const [selectedToken, setSelectedToken] = useState('USDT')
@@ -106,6 +107,11 @@ function PresaleDeposit({
     // Show an error if the token data is not found
     if (!tokenData) return toast.error('Token data not found')
 
+    const depositAddress = presaleAddresses.find(
+      (presaleAddress) => presaleAddress.chain_id === tokenData.chainId.toString(),
+    )?.deposit_address as Address
+    if (!depositAddress) return toast.error('Deposit address not found')
+
     if (tokenData.chainType === 'evm') {
       const evmToken = tokenData
       if (chainId !== evmToken.chainId) {
@@ -116,7 +122,7 @@ function PresaleDeposit({
             abi: erc20Abi,
             address: getAddress(evmToken.address),
             functionName: 'transfer',
-            args: [presaleAddress, parseUnits(amount.toString(), evmToken.decimals)],
+            args: [depositAddress, parseUnits(amount.toString(), evmToken.decimals)],
             chainId: evmToken.chainId,
           },
           {
@@ -206,8 +212,8 @@ function PresaleDeposit({
         {!isUserWhitelisted ? (
           <WhitelistAddressButton projectId={project.id} />
         ) : isPresaleActive ? (
-          <Button variant="tertiary" onClick={deposit}>
-            Contribute Now
+          <Button variant="tertiary" onClick={deposit} disabled={status === 'pending'}>
+            {status === 'pending' ? 'Pending Signature' : 'Contribute Now'}
           </Button>
         ) : isAuctionActive ? (
           <Link href={`/${project.slug}/auction`}>

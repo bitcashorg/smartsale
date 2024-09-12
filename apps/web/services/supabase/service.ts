@@ -13,7 +13,7 @@ import type { Address } from 'viem'
 export async function getPresaleData({ projectId, supabase }: ProjectDataParams) {
   const { data, error } = await supabase
     .from('presale')
-    .select('*')
+    .select('*, presale_address(*)')
     .eq('project_id', projectId)
     .single()
 
@@ -22,7 +22,7 @@ export async function getPresaleData({ projectId, supabase }: ProjectDataParams)
     throw error
   }
 
-  return data as Tables<'presale'>
+  return data as Tables<'presale'> & { presale_address: Tables<'presale_address'>[] }
 }
 
 /**
@@ -144,15 +144,20 @@ export async function getPresaleDeposits({
 }
 
 export async function getPresaleByAddress(address: Address, supabase: SupabaseClient) {
+  const { data: presaleAddress, error: presaleAddressError } = await supabase
+    .from('presale_address')
+    .select('*')
+    .ilike('deposit_address', address)
+
   console.log('🚀 getPresaleByAddress', address)
   const { data, error } = await supabase
     .from('presale')
     .select('*, project(*)') // Fetch associated project through presale.project_id
-    .ilike('address', address)
+    .eq('id', presaleAddress?.[0]?.presale_id) // Use optional chaining to avoid TypeError
     .single()
 
-  if (error) {
-    console.error('Error fetching presale by address:', error)
+  if (presaleAddressError || error) {
+    console.error('Error fetching presale by address:', presaleAddressError || error)
     return null
   }
 

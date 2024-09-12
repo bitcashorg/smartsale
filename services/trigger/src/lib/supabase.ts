@@ -1,5 +1,5 @@
 import type { Database, TablesInsert } from '@repo/supabase'
-import { SupabaseClient, createClient } from '@supabase/supabase-js'
+import { createClient } from '@supabase/supabase-js'
 import { uniqBy } from 'lodash'
 import type { Address } from 'viem'
 import { appConfig } from '../config'
@@ -112,11 +112,21 @@ export async function insertTransaction(transaction: TablesInsert<'transaction'>
 }
 
 export async function getPresaleByAddress(address: Address) {
+  const { data: presaleAddress, error: presaleAddressError } = await supabase
+    .from('presale_address')
+    .select('*')
+    .ilike('deposit_address', address)
+
+  if (!presaleAddress?.[0]?.presale_id) {
+    console.error('Error fetching presale by address:', presaleAddressError)
+    return null
+  }
+
   console.log('🚀 getPresaleByAddress', address)
   const { data, error } = await supabase
     .from('presale')
     .select('*, project(*)') // Fetch associated project through presale.project_id
-    .ilike('address', address)
+    .eq('id', presaleAddress?.[0]?.presale_id) // Use optional chaining to avoid TypeError
     .single()
 
   if (error) {
