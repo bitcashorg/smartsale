@@ -41,7 +41,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
   const countdownHeading = isPresaleUpcoming
     ? 'Presale Starts In:'
     : isPresaleActive
-      ? 'Presale Ends In:'
+      ? 'Presale Ends In (If Not Sold Out):'
       : isAuctionActive
         ? 'Auction Ends In:'
         : 'Auction Starts In:'
