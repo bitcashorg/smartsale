@@ -33,7 +33,7 @@ const baseTokens = [
     chainName: 'Arbitrum',
   },
   {
-    address: '0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8',
+    address: '0xaf88d065e77c8cC2239327C5EDb3A432268e5831',
     chainId: 42161,
     symbol: 'USDC',
     chainName: 'Arbitrum',
@@ -45,7 +45,7 @@ const baseTokens = [
     chainName: 'Optimism',
   },
   {
-    address: '0x7F5c764cBc14f9669B88837ca1490cCa17c31607',
+    address: '0x0b2C639c533813f4Aa9D7837CAf62653d097Ff85',
     chainId: 10,
     symbol: 'USDC',
     chainName: 'Optimism',
