@@ -67,6 +67,7 @@ module.exports = {
           400: '#FF51ED',
           500: '#845BBF',
           600: '#433974',
+          700: '#E828AA'
         },
         destructive: {
           DEFAULT: 'hsla(var(--destructive))',

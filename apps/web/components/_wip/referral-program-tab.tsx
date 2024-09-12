@@ -1,13 +1,35 @@
 import Image from "next/image";
 import { Card, CardContent, CardHeader } from "../ui/card";
 import ReferralShareButton from "./referral-share-button";
-import ReferralItem from "./referral-item";
 import { Copy } from "lucide-react"
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
-import { Button } from "@/components/ui/button"
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
+import ReferralDesktopList from "./referral-desktop-list";
+import ReferralMobileList from "./referral-mobile-list";
 
 export default function ReferralProgramTab() {
+    const referralList = [
+        {
+            id: 1,
+            date: "12/09/2024 17:09",
+            referralUser: "Test",
+            contribution: 100,
+            myReward: 20,
+            contributionDate: "12/09/2024 17:09",
+            project: "Bitlauncher",
+            accreditation: "Test",
+            contributionToken: "EOS"
+        },
+        {
+            id: 2,
+            date: "12/09/2024 17:09",
+            referralUser: "Test",
+            contribution: 100,
+            myReward: 20,
+            contributionDate: "12/09/2024 17:09",
+            project: "Bitlauncher",
+            accreditation: "Test",
+            contributionToken: "EOS"
+        },
+    ];
     return (
         <>
             <h1 className="text-3xl font-bold text-center">
@@ -15,7 +37,7 @@ export default function ReferralProgramTab() {
             </h1>
 
             <Card className="bg-gradient-to-br from-cornflowerblue-200 md:overflow-visible mt-9 mb-14">
-                <CardContent className="max-w-[1147px] mx-auto flex justify-center items-center gap-x-28 md:pt-16 md:pb-12 md:px-5">
+                <CardContent className="max-w-[1180px] mx-auto flex justify-center items-center gap-x-28 md:pt-16 md:pb-12 md:px-5">
                     <picture className="hidden relative after:content-[''] after:h-56 after:w-56 after:absolute after:-top-2 after:right-3 after:bg-[radial-gradient(#7D81D96E,transparent_75%)] after:scale-125 after:z-10 md:block">
                         <source srcSet="/images/referrals/referral-program.png" type="image/png" />
                         <Image
@@ -75,9 +97,9 @@ export default function ReferralProgramTab() {
                                 </Card>
 
                                 <div className="w-full flex justify-between items-center gap-x-5 col-start-1 col-end-3 row-start-2 row-end-3 max-h-[81px] md:max-h-[64px]">
-                                    <Card className="w-full h-full">
-                                        <CardContent className="bg-accent-600 rounded-2xl px-6 py-4 flex justify-between items-center gap-x-8 w-full md:py-0 md:max-w-[470px] overflow-hidden h-full">
-                                            <p className="text-base text-white opacity-80 md:text-xl md:font-medium">Bitlauncher/ref=1234#</p>
+                                    <Card className="w-full h-full lg:min-w-[360px] xl:min-w-[470px]">
+                                        <CardContent className="bg-accent-600 rounded-2xl px-6 py-4 flex justify-between items-center gap-x-4 w-full md:py-0 md:max-w-[360px] xl:min-w-[470px] overflow-auto lg:overflow-hidden h-full">
+                                            <p className="text-base lg:min-w-36 lg:max-w-36 lg:overflow-hidden lg:text-ellipsis xl:min-w-52 xl:max-w-52 text-white opacity-80 md:text-xl md:font-medium">Bitlauncher/ref=1234#</p>
                                             <div className="bg-primary rounded-[8px] px-4 py-2 w-32 min-w-32 max-w-32 flex justify-start items-center gap-x-3 cursor-pointer"><span className="text-sm text-white opacity-40 select-none">Copy link</span> <Copy color="#747394" height={17} width={16} />
 
                                             </div>
@@ -99,70 +121,8 @@ export default function ReferralProgramTab() {
                     <h2 className="text-2xl font-bold text-left text-white">My Referrals</h2>
                 </CardHeader>
                 <CardContent className="px-7">
-                    <Accordion type="single" collapsible className="w-full">
-                        <AccordionItem className="data-[state=open]:bg-accent-600 rounded-lg border-none" value={"1"} key={1}>
-                            <AccordionTrigger className="hover:no-underline">
-                                <Table>
-                                    <TableHeader className="md:hidden">
-                                        <TableRow>
-                                            <TableHead className="text-base text-white opacity-80 font-medium">Date</TableHead>
-                                            <TableHead className="text-base text-white opacity-80 font-medium">Referral User</TableHead>
-                                            <TableHead className="text-base text-white opacity-80 font-medium">Contribution</TableHead>
-                                            <TableHead className="text-base text-white opacity-80 font-medium">My Reward</TableHead>
-                                            <TableHead></TableHead>
-                                        </TableRow>
-                                    </TableHeader>
-                                    <TableBody>
-                                        <TableRow>
-                                            <TableCell className="text-left">23.01 16:23</TableCell>
-                                            <TableCell className="text-left">Laubits 123</TableCell>
-                                            <TableCell className="text-left">$500</TableCell>
-                                            <TableCell className="flex justify-start items-center gap-x-2">
-                                                <p className="text-[#4DF0C9] text-base font-semibold">+ $100</p>
-                                                <picture>
-                                                    <source srcSet="/images/home/bl-coins.webp" type="image/webp" />
-                                                    <source srcSet="/images/home/bl-coins.png" type="image/png" />
-                                                    <Image
-                                                        src="/images/home/bl-coins.webp"
-                                                        alt="My reward"
-                                                        loading="lazy"
-                                                        width={26}
-                                                        height={32}
-                                                        className="min-w-7 min-h-8"
-                                                    />
-                                                </picture>
-                                            </TableCell>
-                                            <TableCell></TableCell>
-                                        </TableRow>
-                                    </TableBody>
-                                </Table>
-                            </AccordionTrigger>
-                            <AccordionContent>
-                                <Table>
-                                    <TableHeader>
-                                        <TableRow>
-                                            <TableHead className="text-base text-white opacity-80 font-medium">Contribution date</TableHead>
-                                            <TableHead className="text-base text-white opacity-80 font-medium">Project</TableHead>
-                                            <TableHead className="flex justify-start items-center gap-x-3">                            <p className="text-base text-white opacity-80 font-medium">Accreditation</p>
-                                                <div className="h-1 w-1 rounded-full bg-[#4DF0C9]"></div></TableHead>
-                                            <TableHead className="text-base text-white opacity-80 font-medium">Contribution token</TableHead>
-                                            <TableHead></TableHead>
-                                        </TableRow>
-                                    </TableHeader>
-                                    <TableBody>
-                                        <TableRow>
-                                            <TableCell className="text-left">23.01 13:00</TableCell>
-                                            <TableCell className="text-left">Project_001</TableCell>
-                                            <TableCell className="text-left">24.01 13:00</TableCell>
-                                            <TableCell className="text-left">EOS</TableCell>
-                                            <TableCell></TableCell>
-                                        </TableRow>
-                                    </TableBody>
-                                </Table>
-                            </AccordionContent>
-                        </AccordionItem>
-                        {/* <ReferralItem /> */}
-                    </Accordion>
+                    <ReferralDesktopList referralList={referralList} />
+                    <ReferralMobileList referralList={referralList} />
                 </CardContent>
             </Card>
 
