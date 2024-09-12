@@ -3,6 +3,8 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link"
+import { Button } from "@/components/ui/button"
+import { Megaphone, Users, Copy, Share, ChevronDown, ChevronUp } from "lucide-react"
 
 export default function ReferralShareButton() {
     const [isOpen, setIsOpen] = useState(false);
@@ -69,12 +71,9 @@ export default function ReferralShareButton() {
                 ) : ""
             }
 
-            <div onClick={() => setIsOpen(!isOpen)} className="bg-accent-400 px-4 py-2 w-32 min-w-32 max-w-32 flex justify-center items-center gap-x-3 cursor-pointer rounded-full relative h-full md:min-w-48 md:max-w-48"><span className="text-base text-white select-none">Share</span> <svg width="30" height="24" viewBox="0 0 30 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5 12V19.6667C5 20.175 5.26339 20.6625 5.73223 21.022C6.20107 21.3814 6.83696 21.5833 7.5 21.5833H22.5C23.163 21.5833 23.7989 21.3814 24.2678 21.022C24.7366 20.6625 25 20.175 25 19.6667V12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M20 6.25002L15 2.41669L10 6.25002" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M15 2.41669V14.875" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-
+            <Button onClick={() => setIsOpen(!isOpen)} className="bg-accent-400 relative rounded-full w-full h-full max-w-56">
+                Share
+                <Share className="w-4 h-4 mr-2" />
                 {
                     isOpen ? (
                         <div onClick={(e) => {
@@ -106,7 +105,7 @@ export default function ReferralShareButton() {
                     ) : ""
                 }
 
-            </div>
+            </Button>
 
 
         </>
