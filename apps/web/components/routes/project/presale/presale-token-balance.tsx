@@ -7,7 +7,6 @@ import { useAccount } from 'wagmi'
 
 // TODO: make this generic for any token on any chain
 export function PresaleTokenBalance({ tokenAddress }: { tokenAddress: Address }) {
-  console.log('🔥 PresaleTokenBalance tokenAddress', tokenAddress)
   const { address } = useAccount()
   const { formatted } = useErc20Balance({
     contract: tokenAddress,
