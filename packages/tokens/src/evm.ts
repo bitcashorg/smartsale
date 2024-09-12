@@ -3,13 +3,13 @@ import type { EVMToken } from './types'
 
 const baseTokens = [
   {
-    address: '0xdAC17F958D2ee523a2206206994597C13D831ec7',
+    address: '0xdac17f958d2ee523a2206206994597c13d831ec7',
     chainId: 1,
     symbol: 'USDT',
     chainName: 'Ethereum',
   },
   {
-    address: '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48',
+    address: '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48',
     chainId: 1,
     symbol: 'USDC',
     chainName: 'Ethereum',
@@ -50,12 +50,12 @@ const baseTokens = [
     symbol: 'USDC',
     chainName: 'Optimism',
   },
-  {
-    address: '0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb',
-    chainId: 8453,
-    symbol: 'USDT',
-    chainName: 'Base',
-  },
+  // {
+  //   address: '0x',
+  //   chainId: 8453,
+  //   symbol: 'USDT',
+  //   chainName: 'Base',
+  // },
   {
     address: '0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913',
     chainId: 8453,
@@ -75,13 +75,13 @@ const baseTokens = [
     chainName: 'Avalanche',
   },
   {
-    address: '0x55d398326f99059fF775485246999027B3197955',
+    address: '0x524bc91dc82d6b90ef29f76a3ecaabafffd490bc',
     chainId: 56,
     symbol: 'USDT',
     chainName: 'BNB Chain',
   },
   {
-    address: '0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d',
+    address: '0xb04906e95ab5d797ada81508115611fee694c2b3',
     chainId: 56,
     symbol: 'USDC',
     chainName: 'BNB Chain',
@@ -91,8 +91,7 @@ const baseTokens = [
 export const evmTokens: EVMToken[] = baseTokens.map((token) => ({
   ...token,
   chainType: 'evm',
-  // On BNB Chain (chainId 56), both USDT and USDC are implemented with 18 decimal places instead of the usual 6.
-  decimals: token.chainId === 56 ? 18 : 6,
+  decimals: 6,
   isStable: true,
   address: getAddress(token.address),
 }))
