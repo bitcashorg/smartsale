@@ -98,7 +98,7 @@ const content = {
       ],
       images: ['/images/home/platform-circles.webp', '/images/home/platform-circles.png'],
       articleLink:
-        '/blog/bitlauncher/welcome-to-the-bitlauncher-presale-starting-september-15th',
+        '/blog/bitlauncher/welcome-to-the-bitlauncher-presale-starting-september-16th',
     },
     {
       title: 'What is the Bitlauncher ($BL) Token?',
