@@ -117,7 +117,7 @@ export async function isAddressRegisteredForPresale(
       // No matching row found, address is not registered
       return false
     }
-    console.error('Error checking presale registration:', error)
+    console.error('Error checking presale whitelist:', error)
     throw error
   }
 

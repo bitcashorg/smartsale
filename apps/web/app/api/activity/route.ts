@@ -4,6 +4,7 @@ import { createSupabaseServerClient, getPresaleData } from '@/services/supabase'
 import {
   getPresaleByAddress,
   getProcessedPresaleDeposits,
+  isAddressRegisteredForPresale,
   isDepositProcessing,
   setPresaleDepositStatus,
 } from '@/services/supabase/service'
@@ -27,19 +28,21 @@ const networks: AlchemyNetwork[] = evmChains
   .filter((network): network is AlchemyNetwork => network !== undefined)
 
 export async function POST(req: Request) {
+  // parse and log the request
   const payload = await req.text()
   const evt = JSON.parse(payload) as AlchemyWebhookEvent
   const { network, activity } = evt.event as AlchemyActivityEvent
   console.log('Received webhook', evt.id, evt.event.network)
 
+  // validate if it's comming from alchemy and if we are interested in the event
   if (!(await validateAlchemySignature(req, evt.webhookId, evt.event.network, payload)))
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
-
   if (!isValidEvent(evt, network))
     return NextResponse.json({ error: 'Invalid event' }, { status: 400 })
 
   const supabase = await createSupabaseServerClient()
 
+  // validate each transaction in the alchemy activity event
   for (const txn of activity) {
     const validationResult = await validateTransaction(txn, supabase)
     if (!validationResult.isValid) {
@@ -47,9 +50,11 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: 'Invalid transaction' }, { status: 400 })
     }
 
+    // update the deposit status to processing
     if (!(await processDeposit(txn, supabase)))
       return NextResponse.json({ error: 'Error processing deposit' }, { status: 500 })
 
+    // trigger the address activity event
     const result = await tasks.trigger('address-activity', evt)
     console.info(`Triggered address activity event for webhook ${evt.id}`, result)
   }
@@ -78,7 +83,11 @@ async function validateTransaction(txn: AlchemyActivity, supabase: SupabaseClien
   const isSupportedToken =
     txnTokenAddress &&
     evmTokens.some((token) => txnTokenAddress === getAddress(token.address))
-  const isRegisteredForPresale = true // await isAddressRegisteredForPresale(txn.fromAddress, 1)
+  const isRegisteredForPresale = await isAddressRegisteredForPresale(
+    txn.fromAddress,
+    1,
+    supabase,
+  )
   const presaleData = await getPresaleData({ projectId: 1, supabase })
   const stableCoinDecimals = 6
 
@@ -95,8 +104,15 @@ async function validateTransaction(txn: AlchemyActivity, supabase: SupabaseClien
   const totalDeposits = deposits.reduce((acc, deposit) => acc + Number(deposit.amount), 0)
   const txnValueInUnits = parseUnits(txn.value?.toString() ?? '0', stableCoinDecimals)
   const totalDepositsInUnits = BigInt(totalDeposits)
-  const isValidAmount = true // TODO: restore this check
-  // const isValidAmount = txnValueInUnits + totalDepositsInUnits >= maxAllocationInUnits
+  // const isValidAmount = true // TODO: check
+
+  const isValidAmount = txnValueInUnits + totalDepositsInUnits >= maxAllocationInUnits
+  console.info({
+    txnValueInUnits,
+    totalDepositsInUnits,
+    maxAllocationInUnits,
+    isValidAmount,
+  })
   const currentTimestamp = Date.now()
   const isWithinPresalePeriod = true // currentTimestamp >= Number(presaleData.start_timestamptz) && currentTimestamp <= Number(presaleData.end_timestamptz)
 
