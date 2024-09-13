@@ -19,7 +19,6 @@ import { useSigningRequest } from '@/hooks/use-signing-request'
 import { genBitusdDepositSigningRequest, genUsdtDepositSigningRequest } from '@/lib/eos'
 import type { ProjectWithAuction } from '@/lib/projects'
 import { useSupabaseClient } from '@/services/supabase'
-import { isAddressRegisteredForPresale } from '@/services/supabase/service'
 import type { Tables } from '@repo/supabase'
 import { tokens } from '@repo/tokens'
 import { useQuery } from '@tanstack/react-query'
@@ -84,6 +83,8 @@ function PresaleDeposit({
   const { loginOrConnect, session } = useSession()
   const chainId = useChainId()
 
+  console.log('🥵 result')
+
   const whitelist = useQuery({
     queryKey: ['presale-cat whitelist', address, project.id],
     enabled: Boolean(address),
@@ -146,8 +147,14 @@ function PresaleDeposit({
             type: 'function',
           },
         ]
-        console.log('🥵 isEthUsdt', isEthUsdt)
+        console.log('🥵 isEthUsdt', {
+          isEthUsdt,
+          amount,
+          parseUnits: parseUnits(amount, evmToken.decimals),
+          evmToken,
+        })
         const abi = isEthUsdt ? ethUsdtTransferAbi : erc20Abi
+
         writeContract(
           {
             abi,
