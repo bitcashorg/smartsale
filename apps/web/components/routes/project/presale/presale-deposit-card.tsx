@@ -115,26 +115,25 @@ function PresaleDeposit({
     if (!amount) return toast.error('Please enter a deposit amount')
     if (!selectedChain) return toast.error('Please select a blockchain network')
     // Find the token data for the selected token and chain
-    const tokenData = tokens.find(
+    const token = tokens.find(
       (token) => token.symbol === selectedToken && token.chainName === selectedChain,
     )
     // Show an error if the token data is not found
-    if (!tokenData) return toast.error('Token data not found')
+    if (!token) return toast.error('Token data not found')
 
     const depositAddress = presaleAddresses.find(
-      (presaleAddress) => presaleAddress.chain_id === tokenData.chainId.toString(),
+      (presaleAddress) => presaleAddress.chain_id === token.chainId.toString(),
     )?.deposit_address as Address
     if (!depositAddress) return toast.error('Deposit address not found')
 
-    if (tokenData.chainType === 'evm') {
-      const evmToken = tokenData
+    if (token.chainType === 'evm') {
+      const evmToken = token
       if (chainId !== evmToken.chainId) {
         await switchChain({ chainId: evmToken.chainId })
       } else {
-        const isEthUsdt = tokenData.chainId === 1 && tokenData.symbol === 'USDT'
-        const ethUsdtAbi = {
-          ...erc20Abi,
-          ...{
+        const isEthUsdt = token.chainId === 1 && token.symbol === 'USDT'
+        const ethUsdtTransferAbi = [
+          {
             constant: false,
             inputs: [
               { name: '_to', type: 'address' },
@@ -142,16 +141,19 @@ function PresaleDeposit({
             ],
             name: 'transfer',
             outputs: [],
+            payable: false,
+            stateMutability: 'nonpayable',
             type: 'function',
           },
-        }
-        const abi = isEthUsdt ? ethUsdtAbi : erc20Abi
+        ]
+        console.log('🥵 isEthUsdt', isEthUsdt)
+        const abi = isEthUsdt ? ethUsdtTransferAbi : erc20Abi
         writeContract(
           {
             abi,
             address: getAddress(evmToken.address),
             functionName: 'transfer',
-            args: [depositAddress, parseUnits(amount.toString(), evmToken.decimals)],
+            args: [depositAddress, parseUnits(amount, evmToken.decimals)],
             chainId: evmToken.chainId,
           },
           {
