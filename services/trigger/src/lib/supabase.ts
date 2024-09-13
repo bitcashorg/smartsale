@@ -44,7 +44,7 @@ export async function upsertPresaleDeposits({
     console.error('Error updating presale deposit:', deposit.error)
     return false
   }
-  console.log('🚀 deposit', deposit.data)
+  console.log('Update deposit in supabase', deposit.data)
 
   const currentPresale = await supabase
     .from('presale')
@@ -68,14 +68,12 @@ export async function upsertPresaleDeposits({
 
   const uniqueAccounts = uniqBy(allAccounts.data, 'account')
 
-  console.log('🚀 uniqueAccounts', uniqueAccounts)
-
   console.log('Total unique presale_deposit accounts:', uniqueAccounts)
 
   const newTotalRaised =
     Number(currentPresale.data.total_raised) + Number(valueInTokenUnits)
   console.log(
-    '==> 😎 Current Total Raised:',
+    'Current Total Raised:',
     currentPresale.data.total_raised,
     'Value in Token Units:',
     valueInTokenUnits,
@@ -102,12 +100,10 @@ export async function upsertPresaleDeposits({
 
 export async function insertTransaction(transaction: TablesInsert<'transaction'>) {
   const result = await supabase.from('transaction').insert(transaction).select()
-  console.log('🚀 result', result)
   if (!result) {
     console.error('Error inserting transaction:', transaction)
     return false
   }
-
   return true
 }
 
@@ -122,7 +118,7 @@ export async function getPresaleByAddress(address: Address) {
     return null
   }
 
-  console.log('🚀 getPresaleByAddress', address)
+  console.log('GetPresaleByAddress', address)
   const { data, error } = await supabase
     .from('presale')
     .select('*, project(*)') // Fetch associated project through presale.project_id

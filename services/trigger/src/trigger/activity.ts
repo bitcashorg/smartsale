@@ -13,7 +13,6 @@ import type { EVMToken } from '../../../../packages/tokens/src/types'
 import { issuePresaleTokens } from '../lib/presale-issuer'
 import {
   getPresaleByAddress,
-  getPresaleData,
   getProcessedPresaleDeposits,
   isDepositProcessing,
   setPresaleDepositStatus,
