@@ -75,13 +75,13 @@ const baseTokens = [
     chainName: 'Avalanche',
   },
   {
-    address: '0x524bc91dc82d6b90ef29f76a3ecaabafffd490bc',
+    address: '0x55d398326f99059fF775485246999027B3197955',
     chainId: 56,
     symbol: 'USDT',
     chainName: 'BNB Chain',
   },
   {
-    address: '0xb04906e95ab5d797ada81508115611fee694c2b3',
+    address: '0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d',
     chainId: 56,
     symbol: 'USDC',
     chainName: 'BNB Chain',
