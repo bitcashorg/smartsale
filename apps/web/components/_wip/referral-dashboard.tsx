@@ -1,4 +1,4 @@
-"use client"
+'use client'
 
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs"
 import { cn } from '@/lib/utils'
@@ -14,7 +14,14 @@ export default function ReferralDashboard() {
         {/* <TabsTrigger value="leaderboard" className={cn(activeTab === 'leaderboard' ? "!text-accent-700 border-accent-700" : "text-white border-[#27272A]", "font-medium text-base rounded-full border bg-[#060A32] w-min px-4 py-2")} >Bitlauncher's leaderboard</TabsTrigger>
           <TabsTrigger value="wallet" className={cn(activeTab === 'wallet' ? "!text-accent-700 border-accent-700" : "text-white border-[#27272A]",  "font-medium text-base rounded-full border bg-[#060A32] w-min px-4 py-2")} >Wallet</TabsTrigger>
           <TabsTrigger value="history" className={cn(activeTab === 'history' ? "!text-accent-700 border-accent-700" : "text-white border-[#27272A]", "font-medium text-base rounded-full border bg-[#060A32] w-min px-4 py-2")} >Contribution History</TabsTrigger> */}
-        <TabsTrigger value="referral" className={cn(activeTab === 'referral' ? "!text-accent-700 border-accent-700" : "text-white border-[#27272A]", "font-medium text-base rounded-full border bg-[#060A32] w-min px-4 py-2")} >Referral Program</TabsTrigger>
+        <TabsTrigger
+          value="referral"
+          className={cn(
+            activeTab === 'referral' ? "!text-accent-700 border-accent-700" : "text-white border-[#27272A]",
+            "font-medium text-base rounded-full border bg-[#060A32] w-min px-4 py-2"
+          )}>
+          Referral Program
+        </TabsTrigger>
       </TabsList>
 
       <TabsContent value="referral">

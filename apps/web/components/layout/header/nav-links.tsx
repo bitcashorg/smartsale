@@ -83,9 +83,9 @@ export function NavLinks({
     },
     {
       id: 'referrals',
-      href: '/referrals',
+      href: '/dashboard/referrals',
       text: 'Referrals program',
-      mobile: false,
+      mobile: true,
       action: null,
       disabled: false,
     },
