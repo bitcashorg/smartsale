@@ -14,9 +14,8 @@ type OgType =
   | 'video.episode'
   | 'video.tv_show'
   | 'video.other'
-  | undefined
 
-type TwitterCard = 'summary' | 'summary_large_image' | 'player' | 'app' | undefined
+type TwitterCard = 'summary' | 'summary_large_image' | 'player' | 'app'
 
 interface PageSEO {
   title: string
