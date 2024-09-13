@@ -33,6 +33,6 @@ async function createAddressActivityNotification({
 }
 
 createAddressActivityNotification({
-  addresses: [appConfig.presaleAddress],
+  addresses: ['0x0b66FA29FE366194Ea684AD3fA6B92E992316DF5'],
   network: Network.MATIC_MAINNET,
 })

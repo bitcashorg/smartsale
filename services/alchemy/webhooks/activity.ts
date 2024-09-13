@@ -1,7 +1,4 @@
 import { Alchemy, Network, WebhookType } from 'alchemy-sdk'
-
-import { evmChains } from '@repo/chains'
-import { chainIdAlchemyNetwork } from '~/utils'
 import { appConfig } from '../src/config'
 
 async function createAddressActivityNotification({
@@ -17,7 +14,7 @@ async function createAddressActivityNotification({
 
     const alchemy = new Alchemy(settings)
     const addressActivityWebhook = await alchemy.notify.createWebhook(
-      appConfig.alchemyActivityWebhookUrl,
+      'https://test.bitlauncher.ai/api/activity',
       WebhookType.ADDRESS_ACTIVITY,
       {
         addresses,
