@@ -3,34 +3,27 @@
 import Image from "next/image";
 import { Card, CardContent, CardHeader } from "../ui/card";
 import ReferralShareButton from "./referral-share-button";
-import { Copy } from "lucide-react"
+import { Copy, LucideCheck, LucideLoader2, LucideX } from "lucide-react"
 import ReferralDesktopList from "./referral-desktop-list";
 import ReferralMobileList from "./referral-mobile-list";
-import { useReferral } from "@/hooks/use-referral"
-import { useState } from "react";
 import { IconReferral } from "../ui/icons";
 import { useAsync } from "react-use";
 import { useSession } from "@/hooks/use-session";
 import { chaingraphService } from "@repo/chaingraph";
+import { useCopyShortLink } from "@/hooks/use-copy-shortlink";
+import { AnimatePresence } from "framer-motion";
 
 export default function ReferralProgramTab() {
-  const { userShortLink } = useReferral();
-  const session = useSession()
+  // Hook is created separated due useSession is being used somewhere where the referral hook is not at the useSession context, even though the SessionProvider is being used in the main layout.tsx
+  const { copyToClipboard, checkShareLink, status } = useCopyShortLink()
+  const { session } = useSession()
+  const { value: shareLinkData, loading: loadingShareLink } = useAsync(checkShareLink, [session?.account])
   const { value: accountReferrals, loading } = useAsync(async () =>
-    await chaingraphService.checkAccountReferral(session?.session?.account || '')
-  )
+    await chaingraphService.checkAccountReferral(session?.account || '')
+    , [session?.account])
 
-  console.log('accountReferrals', accountReferrals)
-
-  const [isShareLinkCopied, setIsShareLinkCopied] = useState(false)
-
-  const copyShareLink = () => {
-    navigator.clipboard.writeText(userShortLink);
-    setIsShareLinkCopied(!isShareLinkCopied);
-    setTimeout(() => {
-      setIsShareLinkCopied(!isShareLinkCopied);
-    }, 5000)
-  }
+  console.log('accountReferrals 💁', accountReferrals)
+  console.log('shareLinkData 💁', shareLinkData)
 
   const referralList = [
     {
@@ -120,23 +113,25 @@ export default function ReferralProgramTab() {
                   <Card className="w-2/3 h-full md:h-16 lg:max-w-[340px] xl:min-w-[470px]">
                     <CardContent className="bg-accent-600/70 rounded-2xl px-4 py-4 flex justify-between items-center gap-x-4 w-full md:py-0 md:max-w-[360px] xl:min-w-[470px] overflow-auto lg:overflow-hidden h-full">
                       <p className="text-base opacity-70 w-full lg:max-w-36 lg:overflow-hidden lg:text-ellipsis xl:min-w-52 xl:max-w-52 text-white md:text-xl md:font-medium">
-                        {userShortLink.replace('https://', '')}
+                        {(shareLinkData?.data?.short_link || '').replace('https://', '')}
                       </p>
                       <button
                         type="button"
-                        onClick={copyShareLink}
-                        className="bg-primary rounded-[8px] px-4 py-2 w-32 min-w-32 max-w-32 flex justify-start items-center gap-x-3 cursor-pointer"
+                        onClick={copyToClipboard}
+                        className="bg-primary rounded-[8px] px-4 py-2 w-32 min-w-32 max-w-32 flex justify-center items-center gap-x-3 cursor-pointer"
                       >
-                        <span className="text-sm text-white opacity-40 select-none">
-                          {isShareLinkCopied ? "Copied!" : "Copy link"}
+                        <span className="text-sm text-accent-500 select-none">
+                          {status === 'copied' ? "Copied!" : "Copy link"}
                         </span>
-                        <Copy color="#747394" height={17} width={16} />
+                        <AnimatePresence>
+                          {iconsMap[status]}
+                        </AnimatePresence>
                       </button>
                     </CardContent>
                   </Card>
 
                   <div className="hidden h-full w-1/3 justify-end items-center md:flex">
-                    <ReferralShareButton title="Signup in Bitcash App!" url={userShortLink} />
+                    <ReferralShareButton title="Signup in Bitcash App!" url={(shareLinkData?.data?.short_link || '')} />
                   </div>
                 </div>
               </div>
@@ -156,11 +151,24 @@ export default function ReferralProgramTab() {
       </Card>
 
       <div className="w-full min-h-20 flex justify-center items-center gap-x-14 py-5 px-6 fixed bottom-0 left-0 z-50 bg-card opacity-90 md:hidden">
-        <div onClick={copyShareLink} className="bg-primary px-4 py-2 w-32 min-w-32 max-w-32 flex justify-start items-center gap-x-3 cursor-pointer border rounded-full border-[#747394]"><span className="text-base text-white opacity-40 select-none">{isShareLinkCopied ? "Copied!" : "Copy link"}</span> <Copy color="#747394" height={17} width={16} />
+        <div onClick={copyToClipboard} className="bg-primary px-4 py-2 w-32 min-w-32 max-w-32 flex justify-start items-center gap-x-3 cursor-pointer border rounded-full border-[#747394]">
+          <span className="text-sm text-accent-500 select-none">
+            {status === 'copied' ? "Copied!" : "Copy link"}
+          </span>
+          <AnimatePresence>
+            {iconsMap[status]}
+          </AnimatePresence>
         </div>
 
-        <ReferralShareButton title="Signup in Bitcash App!" url={userShortLink} />
+        <ReferralShareButton title="Signup in Bitcash App!" url={(shareLinkData?.data?.short_link || '')} />
       </div>
     </>
   )
+}
+
+const iconsMap = {
+  loading: <LucideLoader2 size={17} className="animate-spin stroke-accent-500" />,
+  copied: <LucideCheck size={17} className="stroke-success" />,
+  error: <LucideX size={17} className="stroke-destructive" />,
+  default: <Copy size={17} className="stroke-accent-500" />,
 }

@@ -14,6 +14,7 @@ const DEFAULT_REFERRER = appConfig.env !== 'prod' ? 'bitlautst.bk' : 'bitlaunch.
 export function useReferral() {
   const searchParams = useSearchParams()
   // ? For some reason, this hook cannot be called into this hook... We have to check where we are using this hook
+  // const { session } = useSession()
   const [{ bitcashRegisterUri, userShortLink }, setReferralState] = useSetState({
     bitcashRegisterUri: DEFAULT_URI,
     userShortLink: "",
