@@ -91,7 +91,8 @@ const baseTokens = [
 export const evmTokens: EVMToken[] = baseTokens.map((token) => ({
   ...token,
   chainType: 'evm',
-  decimals: 6,
+  // BNB Chain uses 18 decimals
+  decimals: token.chainId === 56 ? 18 : 6,
   isStable: true,
   address: getAddress(token.address),
 }))
