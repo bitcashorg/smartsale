@@ -1,11 +1,26 @@
+"use client"
+
 import Image from "next/image";
 import { Card, CardContent, CardHeader } from "../ui/card";
 import ReferralShareButton from "./referral-share-button";
 import { Copy } from "lucide-react"
 import ReferralDesktopList from "./referral-desktop-list";
 import ReferralMobileList from "./referral-mobile-list";
+import { useReferral } from "@/hooks/use-referral"
+import { useState } from "react";
 
 export default function ReferralProgramTab() {
+    const { userShortLink } = useReferral();
+    const [isShareLinkCopied, setIsShareLinkCopied] = useState(false)
+
+    const copyShareLink = () => {
+        navigator.clipboard.writeText(userShortLink);
+        setIsShareLinkCopied(!isShareLinkCopied);
+        setTimeout(() => {
+            setIsShareLinkCopied(!isShareLinkCopied);
+        }, 5000)
+    }
+
     const referralList = [
         {
             id: 1,
@@ -99,15 +114,13 @@ export default function ReferralProgramTab() {
                                 <div className="w-full flex justify-between items-center gap-x-5 col-start-1 col-end-3 row-start-2 row-end-3 max-h-[81px] md:max-h-[64px]">
                                     <Card className="w-full h-full lg:min-w-[360px] xl:min-w-[470px]">
                                         <CardContent className="bg-accent-600 rounded-2xl px-6 py-4 flex justify-between items-center gap-x-4 w-full md:py-0 md:max-w-[360px] xl:min-w-[470px] overflow-auto lg:overflow-hidden h-full">
-                                            <p className="text-base lg:min-w-36 lg:max-w-36 lg:overflow-hidden lg:text-ellipsis xl:min-w-52 xl:max-w-52 text-white opacity-80 md:text-xl md:font-medium">Bitlauncher/ref=1234#</p>
-                                            <div className="bg-primary rounded-[8px] px-4 py-2 w-32 min-w-32 max-w-32 flex justify-start items-center gap-x-3 cursor-pointer"><span className="text-sm text-white opacity-40 select-none">Copy link</span> <Copy color="#747394" height={17} width={16} />
-
-                                            </div>
+                                            <p className="text-base lg:min-w-36 lg:max-w-36 lg:overflow-hidden lg:text-ellipsis xl:min-w-52 xl:max-w-52 text-white opacity-80 md:text-xl md:font-medium">{userShortLink}</p>
+                                            <div onClick={copyShareLink} className="bg-primary rounded-[8px] px-4 py-2 w-32 min-w-32 max-w-32 flex justify-start items-center gap-x-3 cursor-pointer"><span className="text-sm text-white opacity-40 select-none">{isShareLinkCopied ? "Copied!" : "Copy link"}</span> <Copy color="#747394" height={17} width={16} /></div>
                                         </CardContent>
                                     </Card>
 
                                     <div className="hidden h-full w-full justify-end items-center md:flex">
-                                        <ReferralShareButton />
+                                        <ReferralShareButton title="Signup in Bitcash App!" url={userShortLink} />
                                     </div>
                                 </div>
                             </div>
@@ -127,12 +140,10 @@ export default function ReferralProgramTab() {
             </Card>
 
             <div className="w-full min-h-20 flex justify-center items-center gap-x-14 py-5 px-6 fixed bottom-0 left-0 z-50 bg-card opacity-90 md:hidden">
-                <div className="bg-primary px-4 py-2 w-32 min-w-32 max-w-32 flex justify-start items-center gap-x-3 cursor-pointer border rounded-full border-[#747394]"><span className="text-base text-white opacity-40 select-none">Copy link</span> <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10.75 10.25H12.85C13.6901 10.25 14.11 10.25 14.4308 10.0865C14.7131 9.94268 14.9429 9.71327 15.0867 9.43102C15.2502 9.11015 15.2502 8.69012 15.2502 7.85004V3.65002C15.2502 2.80994 15.2502 2.3899 15.0867 2.06903C14.9429 1.78679 14.7131 1.5573 14.4308 1.41349C14.11 1.25 13.6902 1.25 12.8501 1.25H8.65015C7.81007 1.25 7.38972 1.25 7.06885 1.41349C6.7866 1.5573 6.5573 1.78679 6.41349 2.06903C6.25 2.3899 6.25 2.80998 6.25 3.65005V5.75005M1.75 12.3501V8.15005C1.75 7.30998 1.75 6.8899 1.91349 6.56903C2.0573 6.28679 2.2866 6.0573 2.56885 5.91349C2.88972 5.75 3.31007 5.75 4.15015 5.75H8.35015C9.19023 5.75 9.60997 5.75 9.93084 5.91349C10.2131 6.0573 10.4429 6.28679 10.5867 6.56903C10.7502 6.8899 10.7502 7.30994 10.7502 8.15002V12.35C10.7502 13.1901 10.7502 13.6102 10.5867 13.931C10.4429 14.2133 10.2131 14.4427 9.93084 14.5865C9.60997 14.75 9.19023 14.75 8.35015 14.75H4.15015C3.31007 14.75 2.88972 14.75 2.56885 14.5865C2.2866 14.4427 2.0573 14.2133 1.91349 13.931C1.75 13.6102 1.75 13.1901 1.75 12.3501Z" stroke="#747394" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
+                <div onClick={copyShareLink} className="bg-primary px-4 py-2 w-32 min-w-32 max-w-32 flex justify-start items-center gap-x-3 cursor-pointer border rounded-full border-[#747394]"><span className="text-base text-white opacity-40 select-none">{isShareLinkCopied ? "Copied!" : "Copy link"}</span> <Copy color="#747394" height={17} width={16} />
                 </div>
 
-                <ReferralShareButton />
+                <ReferralShareButton title="Signup in Bitcash App!" url={userShortLink} />
             </div>
         </>
     )

@@ -2,11 +2,17 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Megaphone, Users, Copy, Share, ChevronDown, ChevronUp } from "lucide-react"
+import { Share } from "lucide-react"
+import {
+    FacebookShareButton,
+    LinkedinShareButton,
+    TelegramShareButton,
+    TwitterShareButton,
+    WhatsappShareButton,
+} from 'next-share'
 
-export default function ReferralShareButton() {
+export default function ReferralShareButton({ url, title }: { url: string, title: string }) {
     const [isOpen, setIsOpen] = useState(false);
     return (
         <>
@@ -22,50 +28,71 @@ export default function ReferralShareButton() {
                         </div>
 
                         <div className="w-full flex justify-start items-center gap-x-14 overflow-auto scroll">
-                            <Link className="flex flex-col justify-center items-center gap-y-3 cursor-pointer" href="#" target="_blank">
-                                <Image
-                                    src="/images/social-media/x-icon.png"
-                                    width={24}
-                                    height={24}
-                                    alt="Share on X"
-                                    title="Share on X"
-                                    className="min-w-6 min-h-6"
-                                />
-                                <p className="text-base font-medium text-secondary-300">X</p>
-                            </Link>
-                            <Link className="flex flex-col justify-center items-center gap-y-3 cursor-pointer" href="#" target="_blank">
-                                <Image
-                                    src="/images/social-media/x-icon.png"
-                                    width={24}
-                                    height={24}
-                                    alt="Share on Discod"
-                                    title="Share on Discord"
-                                    className="min-w-6 min-h-6"
-                                />
-                                <p className="text-base font-medium text-secondary-300">Discord</p>
-                            </Link>
-                            <Link className="flex flex-col justify-center items-center gap-y-3 cursor-pointer" href="#" target="_blank">
-                                <Image
-                                    src="/images/social-media/x-icon.png"
-                                    width={24}
-                                    height={24}
-                                    alt="Share on Facebook"
-                                    title="Share on Facebook"
-                                    className="min-w-6 min-h-6"
-                                />
-                                <p className="text-base font-medium text-secondary-300">Facebook</p>
-                            </Link>
-                            <Link className="flex flex-col justify-center items-center gap-y-3 cursor-pointer" href="#" target="_blank">
-                                <Image
-                                    src="/images/social-media/x-icon.png"
-                                    width={24}
-                                    height={24}
-                                    alt="Share on Telegram"
-                                    title="Share on Telegram"
-                                    className="min-w-6 min-h-6"
-                                />
-                                <p className="text-base font-medium text-secondary-300">Telegram</p>
-                            </Link>
+                            <TwitterShareButton url={url} title={title}>
+                                <div className="flex flex-col justify-center items-center gap-y-3 cursor-pointer">
+                                    <Image
+                                        src="/images/social-media/x-icon.png"
+                                        width={24}
+                                        height={24}
+                                        alt="Share on X"
+                                        title="Share on X"
+                                        className="min-w-6 min-h-6"
+                                    />
+                                    <p className="text-base font-medium text-secondary-300">X</p>
+                                </div>
+                            </TwitterShareButton>
+                            <LinkedinShareButton url={url} title={title}>
+                                <div className="flex flex-col justify-center items-center gap-y-3 cursor-pointer">
+                                    <Image
+                                        src="/images/social-media/x-icon.png"
+                                        width={24}
+                                        height={24}
+                                        alt="Share on LinkedIn"
+                                        title="Share on LinkedIn"
+                                        className="min-w-6 min-h-6"
+                                    />
+                                    <p className="text-base font-medium text-secondary-300">LinkedIn</p>
+                                </div>
+                            </LinkedinShareButton>
+                            <FacebookShareButton url={url} title={title}>
+                                <div className="flex flex-col justify-center items-center gap-y-3 cursor-pointer">
+                                    <Image
+                                        src="/images/social-media/x-icon.png"
+                                        width={24}
+                                        height={24}
+                                        alt="Share on Facebook"
+                                        title="Share on Facebook"
+                                        className="min-w-6 min-h-6"
+                                    />
+                                    <p className="text-base font-medium text-secondary-300">Facebook</p>
+                                </div>
+                            </FacebookShareButton>
+                            <TelegramShareButton url={url} title={title}>
+                                <div className="flex flex-col justify-center items-center gap-y-3 cursor-pointer">
+                                    <Image
+                                        src="/images/social-media/x-icon.png"
+                                        width={24}
+                                        height={24}
+                                        alt="Share on Telegram"
+                                        title="Share on Telegram"
+                                        className="min-w-6 min-h-6"
+                                    />
+                                    <p className="text-base font-medium text-secondary-300">Telegram</p>
+                                </div>
+                            </TelegramShareButton>
+                            <WhatsappShareButton url={url} title={title}>
+                                <div className="flex flex-col justify-center items-center gap-y-3 cursor-pointer">
+                                    <Image
+                                        src="/images/social-media/x-icon.png"
+                                        width={24}
+                                        height={24}
+                                        alt="Share on WhatsApp"
+                                        title="Share on WhatsApp"
+                                        className="min-w-6 min-h-6"
+                                    />
+                                    <p className="text-base font-medium text-secondary-300">WhatsApp</p>
+                                </div>
+                            </WhatsappShareButton>
                         </div>
                     </div>
                 ) : ""
@@ -79,28 +106,71 @@ export default function ReferralShareButton() {
                         <div onClick={(e) => {
                             e.stopPropagation()
                         }} className="hidden w-full absolute left-0 flex-col justify-start items-start gap-y-3 p-4 bg-white rounded-sm top-20 after:content-[''] after:w-6 after:h-6 after:bg-white after:rotate-45 after:-top-2 after:left-0 after:right-0 after:mx-auto after:absolute md:flex">
-                            <Link className="flex justify-center items-center gap-x-3 cursor-pointer" href="#" target="_blank">
-                                <Image
-                                    src="/images/social-media/x-icon.png"
-                                    width={24}
-                                    height={24}
-                                    alt="Share on X"
-                                    title="Share on X"
-                                    className="min-w-6 min-h-6"
-                                />
-                                <p className="text-base font-medium text-secondary-300">X</p>
-                            </Link>
-                            <Link className="flex justify-center items-center gap-x-3 cursor-pointer" href="#" target="_blank">
-                                <Image
-                                    src="/images/social-media/x-icon.png"
-                                    width={24}
-                                    height={24}
-                                    alt="Share on Discod"
-                                    title="Share on Discord"
-                                    className="min-w-6 min-h-6"
-                                />
-                                <p className="text-base font-medium text-secondary-300">Discord</p>
-                            </Link>
+                            <TwitterShareButton url={url} title={title}>
+                                <div className="flex justify-center items-center gap-x-3 cursor-pointer">
+                                    <Image
+                                        src="/images/social-media/x-icon.png"
+                                        width={24}
+                                        height={24}
+                                        alt="Share on X"
+                                        title="Share on X"
+                                        className="min-w-6 min-h-6"
+                                    />
+                                    <p className="text-base font-medium text-secondary-300">X</p>
+                                </div>
+                            </TwitterShareButton>
+                            <LinkedinShareButton url={url} title={title}>
+                                <div className="flex justify-center items-center gap-x-3 cursor-pointer">
+                                    <Image
+                                        src="/images/social-media/x-icon.png"
+                                        width={24}
+                                        height={24}
+                                        alt="Share on LinkedIn"
+                                        title="Share on LinkedIn"
+                                        className="min-w-6 min-h-6"
+                                    />
+                                    <p className="text-base font-medium text-secondary-300">LinkedIn</p>
+                                </div>
+                            </LinkedinShareButton>
+                            <FacebookShareButton url={url} title={title}>
+                                <div className="flex justify-center items-center gap-x-3 cursor-pointer">
+                                    <Image
+                                        src="/images/social-media/x-icon.png"
+                                        width={24}
+                                        height={24}
+                                        alt="Share on Discod"
+                                        title="Share on Discord"
+                                        className="min-w-6 min-h-6"
+                                    />
+                                    <p className="text-base font-medium text-secondary-300">Facebook</p>
+                                </div>
+                            </FacebookShareButton>
+                            <TelegramShareButton url={url} title={title}>
+                                <div className="flex justify-center items-center gap-x-3 cursor-pointer">
+                                    <Image
+                                        src="/images/social-media/x-icon.png"
+                                        width={24}
+                                        height={24}
+                                        alt="Share on Discod"
+                                        title="Share on Discord"
+                                        className="min-w-6 min-h-6"
+                                    />
+                                    <p className="text-base font-medium text-secondary-300">Telegram</p>
+                                </div>
+                            </TelegramShareButton>
+                            <WhatsappShareButton url={url} title={title}>
+                                <div className="flex justify-center items-center gap-x-3 cursor-pointer">
+                                    <Image
+                                        src="/images/social-media/x-icon.png"
+                                        width={24}
+                                        height={24}
+                                        alt="Share on WhatsApp"
+                                        title="Share on WhatsApp"
+                                        className="min-w-6 min-h-6"
+                                    />
+                                    <p className="text-base font-medium text-secondary-300">WhatsApp</p>
+                                </div>
+                            </WhatsappShareButton>
                         </div>
                     ) : ""
                 }

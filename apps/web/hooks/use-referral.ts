@@ -3,6 +3,7 @@
 import { appConfig } from '@/lib/config'
 import { useSearchParams } from 'next/navigation'
 import { useEffect, useState } from 'react'
+import { generateShortLink } from '@/app/actions/general'
 
 const DEFAULT_URI = 'https://app.bitcash.org'
 const DEFAULT_REFERRER = appConfig.env !== 'prod' ? 'bitlautst.bk' : 'bitlaunch.bk'
@@ -10,7 +11,7 @@ const DEFAULT_REFERRER = appConfig.env !== 'prod' ? 'bitlautst.bk' : 'bitlaunch.
 export function useReferral() {
   const searchParams = useSearchParams()
   const [bitcashRegisterUri, setBitcashRegisterUri] = useState(DEFAULT_URI)
-
+  const [userShortLink, setUserShortLink] = useState("");
   // save referrer to session storage to be able to access it
   // even if the user navigates away from the page and params are lost
   useEffect(() => {
@@ -24,7 +25,21 @@ export function useReferral() {
     params.append('source', 'bitlauncher.ai')
 
     setBitcashRegisterUri(`${DEFAULT_URI}?${params.toString()}`)
+
+    const fetchShortLink = async () => {
+      try {
+        const response = await generateShortLink(bitcashRegisterUri);
+        setUserShortLink(response.data?.shortLink || "");
+      } catch (error) {
+        console.error('Error fetching short link:', error);
+      }
+    };
+
+    fetchShortLink();
+
+    return () => {};
   }, [searchParams])
 
-  return { bitcashRegisterUri }
+
+  return { bitcashRegisterUri, userShortLink }
 }
