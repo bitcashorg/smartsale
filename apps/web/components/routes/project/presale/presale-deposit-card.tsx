@@ -131,9 +131,24 @@ function PresaleDeposit({
       if (chainId !== evmToken.chainId) {
         await switchChain({ chainId: evmToken.chainId })
       } else {
+        const isEthUsdt = tokenData.chainId === 1 && tokenData.symbol === 'USDT'
+        const ethUsdtAbi = {
+          ...erc20Abi,
+          ...{
+            constant: false,
+            inputs: [
+              { name: '_to', type: 'address' },
+              { name: '_value', type: 'uint256' },
+            ],
+            name: 'transfer',
+            outputs: [],
+            type: 'function',
+          },
+        }
+        const abi = isEthUsdt ? ethUsdtAbi : erc20Abi
         writeContract(
           {
-            abi: erc20Abi,
+            abi,
             address: getAddress(evmToken.address),
             functionName: 'transfer',
             args: [depositAddress, parseUnits(amount.toString(), evmToken.decimals)],
@@ -150,7 +165,7 @@ function PresaleDeposit({
               console.log('Transaction hash:', trxHash)
               toast.success('Deposit successful')
               const deposit = await savePresaleDepositIntent({
-                amount: Number(parseUnits(amount, evmToken.decimals)),
+                amount: Number(parseUnits(amount, 6)),
                 created_at: new Date().toISOString(),
                 deposit_hash: trxHash,
                 issuance_hash: null,

@@ -34,7 +34,7 @@ export const accountUpdateSchema = z.object({
 
 export const accountRelationshipsSchema = z.tuple([]);
 
-export const alchemyEventsRowSchema = z.object({
+export const alchemyHooksRowSchema = z.object({
   id: z.string(),
   is_active: z.boolean(),
   network: z.string(),
@@ -45,7 +45,7 @@ export const alchemyEventsRowSchema = z.object({
   version: z.string(),
 });
 
-export const alchemyEventsInsertSchema = z.object({
+export const alchemyHooksInsertSchema = z.object({
   id: z.string(),
   is_active: z.boolean(),
   network: z.string(),
@@ -56,7 +56,7 @@ export const alchemyEventsInsertSchema = z.object({
   version: z.string(),
 });
 
-export const alchemyEventsUpdateSchema = z.object({
+export const alchemyHooksUpdateSchema = z.object({
   id: z.string().optional(),
   is_active: z.boolean().optional(),
   network: z.string().optional(),
@@ -67,7 +67,7 @@ export const alchemyEventsUpdateSchema = z.object({
   version: z.string().optional(),
 });
 
-export const alchemyEventsRelationshipsSchema = z.tuple([]);
+export const alchemyHooksRelationshipsSchema = z.tuple([]);
 
 export const auctionRowSchema = z.object({
   address_auctioning_token: z.string().nullable(),
@@ -336,6 +336,7 @@ export const stateSchema = z.union([
   z.literal("created"),
   z.literal("processing"),
   z.literal("processed"),
+  z.literal("error"),
 ]);
 
 export const presaleDepositInsertSchema = z.object({

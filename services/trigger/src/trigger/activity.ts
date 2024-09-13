@@ -1,12 +1,18 @@
 import type { AlchemyActivity, AlchemyWebhookEvent } from '@repo/alchemy'
 import { logger, task } from '@trigger.dev/sdk/v3'
-import { type Address, getAddress, hexToBigInt, isAddressEqual, parseUnits } from 'viem'
+import {
+  type Address,
+  formatUnits,
+  getAddress,
+  hexToBigInt,
+  isAddressEqual,
+  parseUnits,
+} from 'viem'
 import { evmTokens } from '../../../../packages/tokens/src/evm'
-import { EVMToken } from '../../../../packages/tokens/src/types'
+import type { EVMToken } from '../../../../packages/tokens/src/types'
 import { issuePresaleTokens } from '../lib/presale-issuer'
 import {
   getPresaleByAddress,
-  getPresaleData,
   getProcessedPresaleDeposits,
   isDepositProcessing,
   setPresaleDepositStatus,
@@ -26,36 +32,46 @@ export const addressActivityTask = task({
         txn,
       )
 
-      // get supported token, throw and stop before processing if not supported
-      const token = await getSupportedToken(txn.rawContract?.address)
+      try {
+        // get supported token, throw and stop before processing if not supported
+        const token = await getSupportedToken(txn.rawContract?.address)
 
-      // set deposit to processing if not already processed or processing
-      await setDepositToProcessing(txn)
+        // set deposit to processing if not already processed or processing
+        await setDepositToProcessing(txn)
 
-      // validate transaction inputs
-      const { presale, valueInTokenUnits } = await validateTransaction(txn, token)
+        // validate transaction inputs
+        const { presale, valueInTokenUnits } = await validateTransaction(txn, token)
 
-      // issue presale tokens
-      const issuanceHash = await issuePresaleTokens(
-        txn.fromAddress,
-        valueInTokenUnits,
-        presale.project?.token_address as Address,
-      )
-      if (!issuanceHash) throw new Error('Failed to issue presale tokens')
+        // issue presale tokens
+        const issuanceHash = await issuePresaleTokens(
+          txn.fromAddress,
+          valueInTokenUnits,
+          presale.project?.token_address as Address,
+        )
+        if (!issuanceHash) throw new Error('Failed to issue presale tokens')
 
-      // update presale stats
-      const updatedPresale = await upsertPresaleDeposits({
-        valueInTokenUnits,
-        depositHash: txn.hash,
-        issuanceHash,
-      })
+        // update presale stats
+        const updatedPresale = await upsertPresaleDeposits({
+          valueInTokenUnits,
+          depositHash: txn.hash,
+          issuanceHash,
+        })
 
-      // set deposit to processed
-      await setPresaleDepositStatus({
-        depositHash: txn.hash,
-        state: 'processed',
-      })
-      console.log('Updated presale', updatedPresale)
+        // set deposit to processed
+        await setPresaleDepositStatus({
+          depositHash: txn.hash,
+          state: 'processed',
+        })
+        console.log('Updated presale', updatedPresale)
+      } catch (error) {
+        console.error('Error processing transaction', error)
+        // set deposit to processed
+        await setPresaleDepositStatus({
+          depositHash: txn.hash,
+          state: 'error',
+        })
+        throw error
+      }
     }
   },
 })
@@ -99,20 +115,33 @@ async function validateTransaction(txn: AlchemyActivity, token: EVMToken) {
     )
   }
 
-  const transferValue = txn.value
-    ? BigInt(txn.value)
-    : txn.rawContract?.rawValue
-      ? hexToBigInt(txn.rawContract?.rawValue || txn.log?.data || '0x')
-      : hexToBigInt('0x')
+  const transferData = txn.rawContract?.rawValue || txn.log?.data
+  const transferValue = transferData
+    ? hexToBigInt(transferData)
+    : txn.value
+      ? parseUnits(txn.value.toString().split('.')[0], 6)
+      : 0n
+
   if (!transferValue) throw new Error('Value not found in alchemy event')
 
-  console.log('😀', { transferValue })
+  // we only want the integer part of the value
+  const valueInTokenUnits = parseUnits(
+    formatUnits(transferValue, token.decimals).split('.')[0],
+    6,
+  )
 
-  const valueInTokenUnits = parseUnits(transferValue.toString(), token.decimals)
+  console.log('💰', {
+    log: {
+      transferValue,
+      units: formatUnits(transferValue, token.decimals),
+    },
+    six: {
+      valueInTokenUnits,
+      six: formatUnits(valueInTokenUnits, 6),
+    },
+  })
 
-  // get presale data
-
-  return { presale, transferValue, valueInTokenUnits }
+  return { presale, valueInTokenUnits }
 }
 
 async function setDepositToProcessing(txn: AlchemyActivity) {

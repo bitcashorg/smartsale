@@ -49,6 +49,8 @@ export async function issuePresaleTokens(
       transport: http(),
     })
 
+    console.log(`Issuing ${formatUnits(amount, 6)} tokens to ${to}`, amount)
+
     const trxHash = await walletClient.writeContract({
       address: tokenAddress,
       abi: erc20Abi,
