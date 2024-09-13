@@ -1,6 +1,13 @@
 import type { AlchemyActivity, AlchemyWebhookEvent } from '@repo/alchemy'
 import { logger, task } from '@trigger.dev/sdk/v3'
-import { type Address, hexToNumber, isAddress, parseUnits, toHex } from 'viem'
+import {
+  type Address,
+  hexToBigInt,
+  hexToNumber,
+  isAddress,
+  parseUnits,
+  stringToHex,
+} from 'viem'
 import { issuePresaleTokens } from '../lib/presale-issuer'
 import {
   getPresaleByAddress,
@@ -15,15 +22,21 @@ export const addressActivityTask = task({
   run: async (payload: AlchemyWebhookEvent) => {
     try {
       const activity: AlchemyActivity = payload.event.activity[0]
-      // console.log(activity)
+      console.log(activity)
+      // // console.log(activity)
 
-      // TODO: save activity id to supabase and check if it's already been processed to prevent double issuance
+      // // TODO: save activity id to supabase and check if it's already been processed to prevent double issuance
 
       if (!isAddress(activity.fromAddress))
         throw new Error(`Invalid from address: ${activity.fromAddress}`)
 
-      const transferValue =
-        activity.value || hexToNumber(toHex(activity.rawContract?.rawValue))
+      const transferValue = activity.value
+        ? BigInt(activity.value)
+        : activity.rawContract?.rawValue
+          ? hexToBigInt(activity.rawContract?.rawValue || activity.log?.data || '0x')
+          : hexToBigInt('0x')
+
+      console.log('😀', { transferValue })
       const presale = await getPresaleByAddress(activity.toAddress as Address)
       if (!presale) throw new Error('Presale not found')
       if (!presale.project) throw new Error('Project not found')
