@@ -32,9 +32,8 @@ export async function POST(req: Request) {
   const { network, activity } = evt.event as AlchemyActivityEvent
   console.log('Received webhook', evt.id, evt.event.network)
 
-  // TODO: retore alchemy signature validation
-  // if (!(await validateAlchemySignature(req, evt.webhookId, evt.event.network, payload)))
-  //   return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+  if (!(await validateAlchemySignature(req, evt.webhookId, evt.event.network, payload)))
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
 
   if (!isValidEvent(evt, network))
     return NextResponse.json({ error: 'Invalid event' }, { status: 400 })
