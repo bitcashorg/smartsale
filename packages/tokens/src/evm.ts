@@ -3,7 +3,7 @@ import type { EVMToken } from './types'
 
 const baseTokens = [
   {
-    address: '0xdac17f958d2ee523a2206206994597c13d831ec7',
+    address: '0xdAC17F958D2ee523a2206206994597C13D831ec7',
     chainId: 1,
     symbol: 'USDT',
     chainName: 'Ethereum',
