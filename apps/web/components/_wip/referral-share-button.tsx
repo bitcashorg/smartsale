@@ -70,7 +70,7 @@ export default function ReferralShareButton({ url, title }: { url: string, title
                 ) : ""
             }
 
-            <Button onClick={() => setIsOpen(!isOpen)} className="bg-accent-400 relative rounded-full w-full h-full max-w-28 md:max-w-56 gap-x-2">
+            <Button onClick={() => setIsOpen(!isOpen)} variant="tertiary" className="relative rounded-full w-full h-full max-w-28 md:max-w-56 gap-x-2">
                 Share
                 <Share className="w-4 h-4 mr-2" />
                 {

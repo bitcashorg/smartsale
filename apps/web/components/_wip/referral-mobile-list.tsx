@@ -20,7 +20,7 @@ export default function ReferralMobileList({ referralList }: { referralList: Ref
         <Accordion type="single" collapsible className="w-full lg:hidden">
             {
                 referralList.map(({ id, date, referralUser, contribution, myReward, contributionDate, project, accreditation, contributionToken }) => (
-                    <AccordionItem key={id} className="data-[state=open]:bg-accent-600 rounded-lg border-none overflow-auto" value={id.toString()}>
+                    <AccordionItem key={id} className="data-[state=open]:bg-accent-600 rounded-lg border-none overflow-auto [&_svg]:self-start [&_svg]:mt-5" value={id.toString()}>
                         <AccordionTrigger className="hover:no-underline">
                             <Table>
                                 <TableBody>

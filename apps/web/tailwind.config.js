@@ -99,6 +99,9 @@ module.exports = {
           200: 'rgba(125, 129, 217, 0.43)',
         },
       },
+      backgroundImage: {
+        headerBlue: 'linear-gradient(334deg, rgba(255, 255, 255, 0.00) 57.71%, rgba(255, 255, 255, 0.15) 245.65%), #0F113E;'
+      },
       borderRadius: {
         lg: 'var(--radius)',
         md: 'calc(var(--radius) - 2px)',

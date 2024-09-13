@@ -20,7 +20,7 @@ export default function ReferralDesktopList({ referralList }: { referralList: Re
         <Accordion type="single" collapsible className="w-full hidden lg:block">
             {
                 referralList.map(({ id, date, referralUser, contribution, myReward, contributionDate, project, accreditation, contributionToken }, index) => (
-                    <AccordionItem key={id} className="data-[state=open]:bg-accent-600 rounded-lg border-none" value={id.toString()}>
+                    <AccordionItem key={id} className={cn(index === 0 ? "[&_svg]:self-start [&_svg]:mt-5" : "", "data-[state=open]:bg-accent-600 rounded-lg border-none px-[72px]")} value={id.toString()}>
                         <AccordionTrigger className="hover:no-underline">
                             <Table>
                                 <TableHeader className={cn(index !== 0 ? "hidden" : "", "w-full")}>
