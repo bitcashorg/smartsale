@@ -27,7 +27,7 @@ export type Database = {
         }
         Relationships: []
       }
-      alchemy_events: {
+      alchemy_hooks: {
         Row: {
           id: string
           is_active: boolean
@@ -514,7 +514,7 @@ export type Database = {
     }
     Enums: {
       chain_type: "evm" | "eos" | "solana" | "cosmos"
-      state: "created" | "processing" | "processed"
+      state: "created" | "processing" | "processed" | "error"
       trx_type:
         | "presale_deposit"
         | "usdcred_deposit"

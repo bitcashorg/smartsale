@@ -1,4 +1,4 @@
-import { Database, Tables, TablesInsert } from '@repo/supabase'
+import type { Database, Tables, TablesInsert } from '@repo/supabase'
 import { type SupabaseClient, createClient } from '@supabase/supabase-js'
 import { uniqBy } from 'lodash'
 import type { Address } from 'viem'
