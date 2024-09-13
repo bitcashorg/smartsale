@@ -113,4 +113,5 @@ export const LucideIcons = {
   linkedin: Linkedin,
   threadIcon: AtSign,
   globe: Globe,
+  x: X
 }
