@@ -84,10 +84,24 @@ function PresaleDeposit({
   const { loginOrConnect, session } = useSession()
   const chainId = useChainId()
 
-  const { data: isUserWhitelisted } = useQuery({
+  const whitelist = useQuery({
     queryKey: ['presale-cat whitelist', address, project.id],
     enabled: Boolean(address),
-    queryFn: () => isAddressRegisteredForPresale(address as string, project.id, supabase),
+    queryFn: async () => {
+      // this should never happen. see enabled: Boolean(session?.account && address)
+      if (!address || !session?.account) throw new Error('No address or account')
+
+      const { data, error } = await supabase
+        .from('whitelist')
+        .select()
+        .eq('project_id', project.id)
+        .eq('account', session.account)
+        .single()
+
+      if (error) throw error
+
+      return data
+    },
   })
 
   const availableChains = useMemo(() => {
@@ -214,17 +228,20 @@ function PresaleDeposit({
       </div>
 
       <div className="flex flex-col space-y-2">
-        {!isUserWhitelisted ? (
-          <WhitelistAddressButton projectId={project.id} />
-        ) : isPresaleActive ? (
-          <Button variant="tertiary" onClick={deposit} disabled={status === 'pending'}>
-            {status === 'pending' ? 'Pending Signature' : 'Contribute Now'}
-          </Button>
-        ) : isAuctionActive ? (
-          <Link href={`/${project.slug}/auction`}>
-            <Button variant="tertiary">Join Auction Now</Button>
-          </Link>
-        ) : null}
+        {
+          // if the current address is not in the whitelist, show the whitelist button
+          whitelist.data?.address !== address ? (
+            <WhitelistAddressButton projectId={project.id} />
+          ) : isPresaleActive ? (
+            <Button variant="tertiary" onClick={deposit} disabled={status === 'pending'}>
+              {status === 'pending' ? 'Pending Signature' : 'Contribute Now'}
+            </Button>
+          ) : isAuctionActive ? (
+            <Link href={`/${project.slug}/auction`}>
+              <Button variant="tertiary">Join Auction Now</Button>
+            </Link>
+          ) : null
+        }
       </div>
     </div>
   )

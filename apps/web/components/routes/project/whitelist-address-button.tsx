@@ -4,7 +4,7 @@ import { registerAddress } from '@/app/actions/register-address'
 import { Button, type ButtonProps } from '@/components/ui/button'
 import { useSession } from '@/hooks/use-session'
 import { useSupabaseClient } from '@/services/supabase'
-import { formatAddress } from '@repo/utils'
+import { formatAddress, formatAddressShort } from '@repo/utils'
 import { useQuery } from '@tanstack/react-query'
 import { useAction } from 'next-safe-action/hooks'
 import { useAccount, useSignMessage } from 'wagmi'
@@ -21,23 +21,19 @@ export function WhitelistAddressButton({ projectId }: { projectId: number }) {
     queryKey: ['registration', session?.account, address],
     enabled: Boolean(session?.account && address),
     queryFn: async () => {
-      try {
-        // this should never happen. see enabled: Boolean(session?.account && address)
-        if (!address || !session?.account) throw new Error('No address or account')
+      // this should never happen. see enabled: Boolean(session?.account && address)
+      if (!address || !session?.account) throw new Error('No address or account')
 
-        const { data, error } = await supabase
-          .from('whitelist')
-          .select()
-          .eq('project_id', projectId)
-          .eq('account', session.account)
-          .single()
+      const { data, error } = await supabase
+        .from('whitelist')
+        .select()
+        .eq('project_id', projectId)
+        .eq('account', session.account)
+        .single()
 
-        if (error) throw error
+      if (error) throw error
 
-        return data
-      } catch (error) {
-        console.error('Registration error:', error)
-      }
+      return data
     },
   })
 
@@ -62,8 +58,14 @@ export function WhitelistAddressButton({ projectId }: { projectId: number }) {
     signMessage({ message: 'Sign me up for bitlauncher | bitcash presale' })
   }
 
-  return registration.data?.address || result.data?.info?.address ? (
+  const whitelistedAddress = registration.data?.address || result.data?.info?.address
+
+  return whitelistedAddress === address ? (
     <RegisterButton text={'You are whitelisted!'} />
+  ) : whitelistedAddress && whitelistedAddress !== address ? (
+    <RegisterButton
+      text={`Whitelisted address ${formatAddressShort(whitelistedAddress)}!`}
+    />
   ) : (
     <div className="flex justify-center">
       <RegisterButton
@@ -72,7 +74,7 @@ export function WhitelistAddressButton({ projectId }: { projectId: number }) {
             ? 'Login with Bitcash'
             : !address
               ? 'Connect EVM Wallet'
-              : isPending && address
+              : isPending
                 ? `Whitelisting ${formatAddress(address)}`
                 : 'Get Whitelisted'
         }

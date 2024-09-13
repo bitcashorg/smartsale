@@ -1,9 +1,9 @@
 'use client'
 
 import { Button } from '@/components/ui/button'
+import { useSession } from '@/hooks/use-session'
 import type { Project } from '@/lib/projects'
 import { useSupabaseClient } from '@/services/supabase'
-import { isAddressRegisteredForPresale } from '@/services/supabase/service'
 import { useQuery } from '@tanstack/react-query'
 import Link from 'next/link'
 import { useAccount } from 'wagmi'
@@ -16,14 +16,30 @@ export function ProjectCtaButton({
 }: { isPresaleActive: boolean; isAuctionActive: boolean; project: Project }) {
   const supabase = useSupabaseClient()
   const { address } = useAccount()
+  const { session } = useSession()
 
-  const { data: isUserWhitelisted } = useQuery({
+  const { data } = useQuery({
     queryKey: ['project-cta-whitelist', address, project.id],
     enabled: Boolean(address),
-    queryFn: () => isAddressRegisteredForPresale(address as string, project.id, supabase),
+    queryFn: async () => {
+      // this should never happen. see enabled: Boolean(session?.account && address)
+      if (!address || !session?.account) throw new Error('No address or account')
+
+      const { data, error } = await supabase
+        .from('whitelist')
+        .select()
+        .eq('project_id', project.id)
+        .eq('account', session.account)
+        .single()
+
+      if (error) throw error
+
+      return data
+    },
   })
 
-  return !isUserWhitelisted ? (
+  // if the current address is not in the whitelist, show the whitelist button
+  return data?.address !== address ? (
     <WhitelistAddressButton projectId={project.id} />
   ) : isPresaleActive ? (
     <Link href={`/${project.slug}/presale`}>
