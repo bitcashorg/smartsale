@@ -1,6 +1,6 @@
 import type { AlchemyActivity, AlchemyWebhookEvent } from '@repo/alchemy'
 import { logger, task } from '@trigger.dev/sdk/v3'
-import { type Address, isAddress, parseUnits } from 'viem'
+import { type Address, hexToNumber, isAddress, parseUnits, toHex } from 'viem'
 import { issuePresaleTokens } from '../lib/presale-issuer'
 import {
   getPresaleByAddress,
@@ -22,16 +22,18 @@ export const addressActivityTask = task({
       if (!isAddress(activity.fromAddress))
         throw new Error(`Invalid from address: ${activity.fromAddress}`)
 
+      const transferValue =
+        activity.value || hexToNumber(toHex(activity.rawContract?.rawValue))
       const presale = await getPresaleByAddress(activity.toAddress as Address)
       if (!presale) throw new Error('Presale not found')
       if (!presale.project) throw new Error('Project not found')
       if (!presale.project.token_address)
         throw new Error('Project token address not found')
-      if (!activity.value) throw new Error('Value not found in alchemy event')
+      if (!transferValue) throw new Error('Value not found in alchemy event')
 
       // TODO: check if processed. check if processing
 
-      const valueInTokenUnits = parseUnits(activity.value.toString(), STABLECOIN_DECIMALS)
+      const valueInTokenUnits = parseUnits(transferValue.toString(), STABLECOIN_DECIMALS)
 
       const issuanceHash = await issuePresaleTokens(
         activity.fromAddress,
