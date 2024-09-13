@@ -20,7 +20,7 @@ import type { SupabaseClient } from '@supabase/supabase-js'
 import { tasks } from '@trigger.dev/sdk/v3'
 import { Alchemy, type Network } from 'alchemy-sdk'
 import { NextResponse } from 'next/server'
-import { type Address, getAddress, parseUnits } from 'viem'
+import { type Address, getAddress, isAddressEqual, parseUnits } from 'viem'
 
 const networks: AlchemyNetwork[] = evmChains
   .map((chain) => chainIdAlchemyNetwork[chain.id])
@@ -30,7 +30,7 @@ export async function POST(req: Request) {
   const payload = await req.text()
   const evt = JSON.parse(payload) as AlchemyWebhookEvent
   const { network, activity } = evt.event as AlchemyActivityEvent
-  console.log('Received webhook', evt.id, evt.event.network)
+  console.log('====> Webhook received', evt.id, evt.event.network, evt)
 
   if (!(await validateAlchemySignature(req, evt.webhookId, evt.event.network, payload)))
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
@@ -54,7 +54,7 @@ export async function POST(req: Request) {
     console.info(`Triggered address activity event for webhook ${evt.id}`, result)
   }
 
-  console.info(`Webhook ${evt.id} processed`)
+  console.log('====> Webhook processed', evt.id, evt.event.network, evt)
   return NextResponse.json({ message: `Webhook ${evt.id} processed` }, { status: 200 })
 }
 
@@ -72,17 +72,35 @@ function isValidEvent(evt: AlchemyWebhookEvent, network: AlchemyNetwork): boolea
 }
 
 async function validateTransaction(txn: AlchemyActivity, supabase: SupabaseClient) {
-  const isValidAsset = txn.asset === 'USDC' || txn.asset === 'USDT'
+  console.log(
+    `Processing transaction ${txn.hash} in contract: ${txn.rawContract?.address || 'unknown'}`,
+    txn,
+  )
+  if (!txn.rawContract?.address) {
+    console.error('Missing transaction contract address')
+    return { isValid: false, errors: ['Missing transaction contract address'] }
+  }
+  console.log(
+    `Token ${evmTokens.find((token) => isAddressEqual(token.address, getAddress(txn.rawContract?.address)))?.symbol}`,
+    txn,
+  )
+
   const presaleByAddress = await getPresaleByAddress(txn.toAddress as Address, supabase)
   const txnTokenAddress = txn.rawContract?.address && getAddress(txn.rawContract.address)
   const isSupportedToken =
     txnTokenAddress &&
-    evmTokens.some((token) => txnTokenAddress === getAddress(token.address))
+    evmTokens.some((token) => isAddressEqual(txnTokenAddress, token.address))
+
+  if (!isSupportedToken) {
+    console.error(`Unsupported token: ${txnTokenAddress}`)
+    return { isValid: false, errors: [`Unsupported token: ${txnTokenAddress}`] }
+  }
+
+  // TODO: check if address is registered for presale
   const isRegisteredForPresale = true // await isAddressRegisteredForPresale(txn.fromAddress, 1)
   const presaleData = await getPresaleData({ projectId: 1, supabase })
-  const stableCoinDecimals = 6
 
-  const maxAllocationInUnits = presaleData.max_allocation
+  // check if deposit has been already processed
   const deposits = await getProcessedPresaleDeposits({
     address: getAddress(txn.fromAddress),
     projectId: 1,
@@ -92,17 +110,22 @@ async function validateTransaction(txn: AlchemyActivity, supabase: SupabaseClien
     depositHash: txn.hash,
     supabase,
   })
+
+  // TODO: check if amount is within the max deposit amount
+  const stableCoinDecimals = 6
+  const maxAllocationInUnits = presaleData.max_allocation
   const totalDeposits = deposits.reduce((acc, deposit) => acc + Number(deposit.amount), 0)
   const txnValueInUnits = parseUnits(txn.value?.toString() ?? '0', stableCoinDecimals)
   const totalDepositsInUnits = BigInt(totalDeposits)
-  const isValidAmount = true // TODO: restore this check
+  const isValidAmount = true
   // const isValidAmount = txnValueInUnits + totalDepositsInUnits >= maxAllocationInUnits
+
+  // TODO: check if deposit is within the presale period
   const currentTimestamp = Date.now()
   const isWithinPresalePeriod = true // currentTimestamp >= Number(presaleData.start_timestamptz) && currentTimestamp <= Number(presaleData.end_timestamptz)
 
   const errors = [
     isDepositProcessed && 'deposit already processed',
-    !isValidAsset && `asset: ${txn.asset}`,
     !presaleByAddress && `to address: ${txn.toAddress}`,
     !isSupportedToken && `token: ${txnTokenAddress}`,
     !txn.log && 'missing transaction log',

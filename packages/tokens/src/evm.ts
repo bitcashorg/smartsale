@@ -3,7 +3,7 @@ import type { EVMToken } from './types'
 
 const baseTokens = [
   {
-    address: '0xdac17f958d2ee523a2206206994597c13d831ec7',
+    address: '0xdAC17F958D2ee523a2206206994597C13D831ec7',
     chainId: 1,
     symbol: 'USDT',
     chainName: 'Ethereum',
@@ -75,13 +75,13 @@ const baseTokens = [
     chainName: 'Avalanche',
   },
   {
-    address: '0x524bc91dc82d6b90ef29f76a3ecaabafffd490bc',
+    address: '0x55d398326f99059fF775485246999027B3197955',
     chainId: 56,
     symbol: 'USDT',
     chainName: 'BNB Chain',
   },
   {
-    address: '0xb04906e95ab5d797ada81508115611fee694c2b3',
+    address: '0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d',
     chainId: 56,
     symbol: 'USDC',
     chainName: 'BNB Chain',
@@ -91,7 +91,8 @@ const baseTokens = [
 export const evmTokens: EVMToken[] = baseTokens.map((token) => ({
   ...token,
   chainType: 'evm',
-  decimals: 6,
+  // BNB Chain uses 18 decimals
+  decimals: token.chainId === 56 ? 18 : 6,
   isStable: true,
   address: getAddress(token.address),
 }))
