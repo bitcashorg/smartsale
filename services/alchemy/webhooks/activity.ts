@@ -1,7 +1,4 @@
 import { Alchemy, Network, WebhookType } from 'alchemy-sdk'
-
-import { evmChains } from '@repo/chains'
-import { chainIdAlchemyNetwork } from '~/utils'
 import { appConfig } from '../src/config'
 
 async function createAddressActivityNotification({
@@ -17,7 +14,7 @@ async function createAddressActivityNotification({
 
     const alchemy = new Alchemy(settings)
     const addressActivityWebhook = await alchemy.notify.createWebhook(
-      appConfig.alchemyActivityWebhookUrl,
+      'https://test.bitlauncher.ai/api/activity',
       WebhookType.ADDRESS_ACTIVITY,
       {
         addresses,
@@ -37,37 +34,37 @@ async function createAddressActivityNotification({
 }
 const depositAddresses = [
   {
-    deposit_address: '0x0b66FA29FE366194Ea684AD3fA6B92E992316DF5',
+    deposit_address: '0x4122Dd5f83eeebD16f33Ce15730dea53e6eaC41d',
     chain_id: '1',
     network: Network.ETH_MAINNET,
   },
   {
-    deposit_address: '0x0b66FA29FE366194Ea684AD3fA6B92E992316DF5',
+    deposit_address: '0xf5355c2508E2FC9d0cF9c994B0C7ECf2a1121632',
     chain_id: '10',
     network: Network.OPT_MAINNET,
   },
   {
-    deposit_address: '0x0b66FA29FE366194Ea684AD3fA6B92E992316DF5',
+    deposit_address: '0x6dB76788459687A2716E27852E5783f822155278',
     chain_id: '42161',
     network: Network.ARB_MAINNET,
   },
   {
-    deposit_address: '0x0b66FA29FE366194Ea684AD3fA6B92E992316DF5',
+    deposit_address: '0xf5355c2508E2FC9d0cF9c994B0C7ECf2a1121632',
     chain_id: '8453',
     network: Network.BASE_MAINNET,
   },
   {
-    deposit_address: '0x0b66FA29FE366194Ea684AD3fA6B92E992316DF5',
+    deposit_address: '0x6dB76788459687A2716E27852E5783f822155278',
     chain_id: '56',
     network: Network.BNB_MAINNET,
   },
   {
-    deposit_address: '0x0b66FA29FE366194Ea684AD3fA6B92E992316DF5',
+    deposit_address: '0xf5355c2508E2FC9d0cF9c994B0C7ECf2a1121632',
     chain_id: '43114',
     network: Network.AVAX_MAINNET,
   },
   {
-    deposit_address: '0x0b66FA29FE366194Ea684AD3fA6B92E992316DF5',
+    deposit_address: '0x6dB76788459687A2716E27852E5783f822155278',
     chain_id: '137',
     network: Network.MATIC_MAINNET,
   },
