@@ -115,11 +115,13 @@ async function validateTransaction(txn: AlchemyActivity, token: EVMToken) {
     )
   }
 
-  const transferValue = txn.value
-    ? BigInt(txn.value)
-    : txn.rawContract?.rawValue
-      ? hexToBigInt(txn.rawContract?.rawValue || txn.log?.data || '0x')
-      : hexToBigInt('0x')
+  const transferData = txn.rawContract?.rawValue || txn.log?.data
+  const transferValue = transferData
+    ? hexToBigInt(transferData)
+    : txn.value
+      ? parseUnits(txn.value.toString().split('.')[0], 6)
+      : 0n
+
   if (!transferValue) throw new Error('Value not found in alchemy event')
 
   // we only want the integer part of the value
@@ -129,9 +131,14 @@ async function validateTransaction(txn: AlchemyActivity, token: EVMToken) {
   )
 
   console.log('💰', {
-    transferValue,
-    valueInTokenUnits,
-    human: formatUnits(valueInTokenUnits, token.decimals),
+    log: {
+      transferValue,
+      units: formatUnits(transferValue, token.decimals),
+    },
+    six: {
+      valueInTokenUnits,
+      six: formatUnits(valueInTokenUnits, 6),
+    },
   })
 
   return { presale, valueInTokenUnits }

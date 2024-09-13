@@ -150,7 +150,7 @@ function PresaleDeposit({
               console.log('Transaction hash:', trxHash)
               toast.success('Deposit successful')
               const deposit = await savePresaleDepositIntent({
-                amount: Number(parseUnits(amount, evmToken.decimals)),
+                amount: Number(parseUnits(amount, 6)),
                 created_at: new Date().toISOString(),
                 deposit_hash: trxHash,
                 issuance_hash: null,
