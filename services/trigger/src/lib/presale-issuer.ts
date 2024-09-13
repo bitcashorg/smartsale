@@ -1,18 +1,13 @@
-import type { Database } from '@repo/supabase'
 import {
   http,
   type Address,
   type Chain,
   ContractFunctionExecutionError,
-  Hex,
   HttpRequestError,
   createWalletClient,
-  encodeFunctionData,
   erc20Abi,
   formatUnits,
   isAddress,
-  isHex,
-  stringify,
 } from 'viem'
 
 import { privateKeyToAccount } from 'viem/accounts'
