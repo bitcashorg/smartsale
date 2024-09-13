@@ -1,5 +1,6 @@
 import type { Network } from 'alchemy-sdk'
-import { Address, Hex } from 'viem'
+import type { Address, Hex } from 'viem'
+
 export interface AlchemyWebhookEvent {
   webhookId: string
   id: string
