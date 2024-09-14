@@ -87,7 +87,7 @@ export function NavLinks({
       text: 'Referrals program',
       mobile: true,
       action: null,
-      disabled: false,
+      disabled: !bitcashAccount,
     },
     {
       id: 'logout',

@@ -22,7 +22,7 @@ export default function ReferralProgramTab() {
   const { value: accountReferrals, loading } = useAsync(async () =>
     await chaingraphService.checkAccountReferral(session?.account || '')
     , [session?.account])
-    
+
   const referralList = [
     {
       id: 1,
@@ -111,10 +111,10 @@ export default function ReferralProgramTab() {
                   <Card className="md:w-2/3 w-full h-full md:h-16 lg:max-w-[340px] xl:min-w-[470px]">
                     <CardContent className="bg-accent-600/70 rounded-2xl px-4 py-4 flex justify-between items-center gap-x-4 w-full md:py-0 md:max-w-[360px] xl:min-w-[470px] overflow-auto lg:overflow-hidden h-full">
                       {!loadingShareLink && shareLinkData?.data?.short_link
-                          ? (
-                            <p className="text-base opacity-70 w-full lg:max-w-36 lg:overflow-hidden lg:text-ellipsis xl:min-w-52 xl:max-w-52 text-white md:text-xl md:font-medium">
-                              {shareLinkData?.data?.short_link.replace('https://', '')}
-                            </p>
+                        ? (
+                          <p className="text-base opacity-70 w-full lg:max-w-36 lg:overflow-hidden lg:text-ellipsis xl:min-w-52 xl:max-w-52 text-white md:text-xl md:font-medium">
+                            {shareLinkData?.data?.short_link.replace('https://', '')}
+                          </p>
                         ) : <Skeleton className="w-[200px] h-[24px] rounded-full" />
                       }
                       <button
@@ -153,7 +153,13 @@ export default function ReferralProgramTab() {
       </Card> */}
 
       <div className="w-full min-h-20 flex justify-center items-center gap-x-14 py-5 px-6 fixed bottom-0 left-0 z-50 bg-card opacity-90 md:hidden">
-        <div onClick={copyToClipboard} className="bg-primary px-4 py-2 w-32 min-w-32 max-w-32 flex justify-start items-center gap-x-3 cursor-pointer border rounded-full border-[#747394]">
+        <div onClick={copyToClipboard} onKeyDown={(e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            copyToClipboard();
+          }
+        }}
+          tabIndex={0}
+          role="button" className="bg-primary px-4 py-2 w-32 min-w-32 max-w-32 flex justify-start items-center gap-x-3 cursor-pointer border rounded-full border-[#747394]">
           <span className="text-sm text-accent-500 select-none">
             {status === 'copied' ? "Copied!" : "Copy link"}
           </span>
