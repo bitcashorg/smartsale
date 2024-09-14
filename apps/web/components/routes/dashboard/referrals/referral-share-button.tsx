@@ -10,7 +10,7 @@ import {
   TwitterShareButton,
   WhatsappShareButton,
 } from 'next-share'
-import { X, Twitter, Linkedin, Facebook, Send, Phone } from 'lucide-react'
+import { X, Linkedin, Facebook, Phone } from 'lucide-react'
 import { IconTelegram, IconTwitterX } from "@/components/ui/icons";
 import { useMediaQuery } from "@/hooks/use-media-query";
 import {
@@ -24,10 +24,39 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover"
+import { cn } from "@/lib/utils";
 
 export default function ReferralShareButton({ url, title }: { url: string, title: string }) {
   const [isOpen, setIsOpen] = useState(false);
-  const isDesktop = useMediaQuery("(min-width: 768px)")
+  const isDesktop = useMediaQuery("(min-width: 768px)");
+
+  const socialMediaList = [
+    {
+      name: "X",
+      shareComponent: TwitterShareButton,
+      Icon: IconTwitterX
+    },
+    {
+      name: "LinkedIn",
+      shareComponent: LinkedinShareButton,
+      Icon: Linkedin
+    },
+    {
+      name: "Telegram",
+      shareComponent: TelegramShareButton,
+      Icon: IconTelegram
+    },
+    {
+      name: "Facebook",
+      shareComponent: FacebookShareButton,
+      Icon: Facebook
+    },
+    {
+      name: "WhatsApp",
+      shareComponent: WhatsappShareButton,
+      Icon: Phone
+    },
+  ]
 
   if (isDesktop) {
     return (
@@ -39,45 +68,20 @@ export default function ReferralShareButton({ url, title }: { url: string, title
           </Button>
         </PopoverTrigger>
         <PopoverContent className="my-5 w-[210px] p-0 bg-[#433974] px-6 py-5 flex flex-col justify-center items-start gap-y-4 border-none rounded-md" align="start">
-          <TwitterShareButton url={url} title={title}>
-            <div className="flex justify-center items-center gap-x-3 cursor-pointer">
-              <Twitter fill="white" stroke="white" />
-              <p className="text-base font-medium text-white">X</p>
-            </div>
-          </TwitterShareButton>
-          <LinkedinShareButton url={url} title={title}>
-            <div className="flex justify-center items-center gap-x-3 cursor-pointer">
-              <Linkedin
-                fill="white"
-                stroke="white"
-              />
-              <p className="text-base font-medium text-white">LinkedIn</p>
-            </div>
-          </LinkedinShareButton>
-          <FacebookShareButton url={url} title={title}>
-            <div className="flex justify-center items-center gap-x-3 cursor-pointer">
-              <Facebook fill="white"
-                stroke="white"
-              />
-              <p className="text-base font-medium text-white">Facebook</p>
-            </div>
-          </FacebookShareButton>
-          <TelegramShareButton url={url} title={title}>
-            <div className="flex justify-center items-center gap-x-3 cursor-pointer">
-              <Send fill="transparent"
-                stroke="white"
-              />
-              <p className="text-base font-medium text-white">Telegram</p>
-            </div>
-          </TelegramShareButton>
-          <WhatsappShareButton url={url} title={title}>
-            <div className="flex justify-center items-center gap-x-3 cursor-pointer">
-              <Phone fill="white" className="rounded-full border border-white p-0.5"
-                stroke="white"
-              />
-              <p className="text-base font-medium text-white">WhatsApp</p>
-            </div>
-          </WhatsappShareButton>
+            {
+              socialMediaList.map((network) => (
+                <network.shareComponent key={network.name} url={url} title={title}>
+                  <div className="flex justify-center items-center gap-x-3 cursor-pointer">
+                    <network.Icon 
+                      className={cn(network.name === "WhatsApp" ? "rounded-full border border-white p-0.5" : "")} 
+                      fill="white"
+                      stroke="transparent"
+                    />
+                    <p className="text-base font-medium text-white">{network.name}</p>
+                  </div>
+                </network.shareComponent>
+              ))
+            }
         </PopoverContent>
       </Popover>
     )
@@ -98,45 +102,17 @@ export default function ReferralShareButton({ url, title }: { url: string, title
         </div>
 
         <div className="w-full flex justify-start items-center gap-x-14 overflow-auto scroll">
-          <TwitterShareButton url={url} title={title}>
-            <div className="flex flex-col justify-center items-center gap-y-3 cursor-pointer">
-              <IconTwitterX fill="text-textInfoForeground" stroke="text-textInfoForeground" />
-              <p className="text-base font-medium text-textInfoForeground">X</p>
-            </div>
-          </TwitterShareButton>
-          <LinkedinShareButton url={url} title={title}>
-            <div className="flex flex-col justify-center items-center gap-y-3 cursor-pointer">
-              <Linkedin
-                fill="text-textInfoForeground"
-                stroke="text-textInfoForeground"
-              />
-              <p className="text-base font-medium text-textInfoForeground">LinkedIn</p>
-            </div>
-          </LinkedinShareButton>
-          <FacebookShareButton url={url} title={title}>
-            <div className="flex flex-col justify-center items-center gap-y-3 cursor-pointer">
-              <Facebook fill="text-textInfoForeground"
-                stroke="text-textInfoForeground"
-              />
-              <p className="text-base font-medium text-textInfoForeground">Facebook</p>
-            </div>
-          </FacebookShareButton>
-          <TelegramShareButton url={url} title={title}>
-            <div className="flex flex-col justify-center items-center gap-y-3 cursor-pointer">
-              <IconTelegram
-                stroke="text-textInfoForeground"
-              />
-              <p className="text-base font-medium text-textInfoForeground">Telegram</p>
-            </div>
-          </TelegramShareButton>
-          <WhatsappShareButton url={url} title={title}>
-            <div className="flex flex-col justify-center items-center gap-y-3 cursor-pointer">
-              <Phone fill="text-textInfoForeground" className="rounded-full border border-text-textInfoForeground p-0.5"
-                stroke="text-textInfoForeground"
-              />
-              <p className="text-base font-medium text-textInfoForeground">WhatsApp</p>
-            </div>
-          </WhatsappShareButton>
+          {
+            socialMediaList.map((network) => (
+              <network.shareComponent key={network.name} url={url} title={title} >
+                <network.Icon 
+                  className={cn("w-8 h-8", network.name === "WhatsApp" ? "rounded-full border border-text-textInfoForeground p-0.5" : "")} 
+                  fill="text-textInfoForeground"
+                  stroke="transparent"
+                />
+              </network.shareComponent>
+            ))
+          }
         </div>
       </DrawerContent>
     </Drawer>
