@@ -105,7 +105,7 @@ export default function ReferralProgramTab() {
                     </picture>
                     <div className="flex flex-col justify-center items-start gap-y-1">
                       <p className="text-white opacity-80 font-bold text-xl">Referrals</p>
-                      <p className="text-white font-bold text-2xl">{referralList.length}</p>
+                      <p className="text-white font-bold text-2xl">{accountReferrals?.referrals?.length || 0}</p>
                     </div>
                   </CardContent>
                 </Card>
