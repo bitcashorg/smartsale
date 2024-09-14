@@ -1,17 +1,18 @@
 "use client"
 
-import Image from "next/image";
-import { Card, CardContent, CardHeader } from "../ui/card";
-import ReferralShareButton from "./referral-share-button";
-import { Copy, LucideCheck, LucideLoader2, LucideX } from "lucide-react"
-import ReferralDesktopList from "./referral-desktop-list";
-import ReferralMobileList from "./referral-mobile-list";
-import { IconReferral } from "../ui/icons";
-import { useAsync } from "react-use";
+import { Skeleton } from "@/components/ui/skeleton";
+import { useCopyShortLink } from "@/hooks/use-copy-shortlink";
 import { useSession } from "@/hooks/use-session";
 import { chaingraphService } from "@repo/chaingraph";
-import { useCopyShortLink } from "@/hooks/use-copy-shortlink";
 import { AnimatePresence } from "framer-motion";
+import { Copy, LucideCheck, LucideLoader2, LucideX } from "lucide-react";
+import Image from "next/image";
+import { useAsync } from "react-use";
+import { Card, CardContent, CardHeader } from "../ui/card";
+import { IconReferral } from "../ui/icons";
+import ReferralDesktopList from "./referral-desktop-list";
+import ReferralMobileList from "./referral-mobile-list";
+import ReferralShareButton from "./referral-share-button";
 
 export default function ReferralProgramTab() {
   // Hook is created separated due useSession is being used somewhere where the referral hook is not at the useSession context, even though the SessionProvider is being used in the main layout.tsx
@@ -104,7 +105,7 @@ export default function ReferralProgramTab() {
                     </picture>
                     <div className="flex flex-col justify-center items-start gap-y-1">
                       <p className="text-white opacity-80 font-bold text-xl">Referrals</p>
-                      <p className="text-white font-bold text-2xl">05</p>
+                      <p className="text-white font-bold text-2xl">{referralList.length}</p>
                     </div>
                   </CardContent>
                 </Card>
@@ -112,9 +113,13 @@ export default function ReferralProgramTab() {
                 <div className="w-full flex justify-between items-center gap-x-5 col-start-1 col-end-3 row-start-2 row-end-3 max-h-[81px] md:max-h-[64px]">
                   <Card className="w-2/3 h-full md:h-16 lg:max-w-[340px] xl:min-w-[470px]">
                     <CardContent className="bg-accent-600/70 rounded-2xl px-4 py-4 flex justify-between items-center gap-x-4 w-full md:py-0 md:max-w-[360px] xl:min-w-[470px] overflow-auto lg:overflow-hidden h-full">
-                      <p className="text-base opacity-70 w-full lg:max-w-36 lg:overflow-hidden lg:text-ellipsis xl:min-w-52 xl:max-w-52 text-white md:text-xl md:font-medium">
-                        {(shareLinkData?.data?.short_link || '').replace('https://', '')}
-                      </p>
+                      {!loadingShareLink && shareLinkData?.data?.short_link
+                          ? (
+                            <p className="text-base opacity-70 w-full lg:max-w-36 lg:overflow-hidden lg:text-ellipsis xl:min-w-52 xl:max-w-52 text-white md:text-xl md:font-medium">
+                              {shareLinkData?.data?.short_link.replace('https://', '')}
+                            </p>
+                        ) : <Skeleton className="w-[200px] h-[24px] rounded-full" />
+                      }
                       <button
                         type="button"
                         onClick={copyToClipboard}
