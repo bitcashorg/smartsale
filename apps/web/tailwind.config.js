@@ -27,6 +27,7 @@ module.exports = {
         ring: 'hsla(var(--ring))',
         background: 'hsla(var(--background))',
         foreground: 'hsla(var(--foreground))',
+        textInfoForeground: "#17154C",
         infoForeground: '#9395AF',
         cornflowerblue: {
           100: 'rgba(125, 129, 217, 0.2)',

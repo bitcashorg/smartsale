@@ -3,7 +3,7 @@
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs"
 import { cn } from '@/lib/utils'
 import { useState } from 'react'
-import ReferralProgramTab from './referral-program-tab'
+import ReferralProgramTab from "../routes/dashboard/referrals/referral-program-tab"
 
 export default function ReferralDashboard() {
   const [activeTab, setActiveTab] = useState("referral")

@@ -1,12 +1,12 @@
 "use client"
 
 import Image from "next/image";
-import { Card, CardContent, CardHeader } from "../ui/card";
+import { Card, CardContent, CardHeader } from "../../../ui/card";
 import ReferralShareButton from "./referral-share-button";
 import { Copy, LucideCheck, LucideLoader2, LucideX } from "lucide-react"
 import ReferralDesktopList from "./referral-desktop-list";
 import ReferralMobileList from "./referral-mobile-list";
-import { IconReferral } from "../ui/icons";
+import { IconReferral } from "../../../ui/icons";
 import { useAsync } from "react-use";
 import { useSession } from "@/hooks/use-session";
 import { chaingraphService } from "@repo/chaingraph";
@@ -21,10 +21,7 @@ export default function ReferralProgramTab() {
   const { value: accountReferrals, loading } = useAsync(async () =>
     await chaingraphService.checkAccountReferral(session?.account || '')
     , [session?.account])
-
-  console.log('accountReferrals 💁', accountReferrals)
-  console.log('shareLinkData 💁', shareLinkData)
-
+    
   const referralList = [
     {
       id: 1,
@@ -64,12 +61,12 @@ export default function ReferralProgramTab() {
           </div>
           <Card className='mt-6 md:mt-0 w-full md:bg-transparent border-none md:overflow-visible'>
             <CardHeader className="px-3 md:p-0 md:mb-6">
-              <h2 className="text-2xl md:text-3xl font-bold text-left text-infoForeground/90">Earn <span className="text-white/100">up to 20%</span> of founds raised!</h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-left text-infoForeground/90">Earn <span className="text-white/100 text-4xl md:text-5xl">up to 20%</span> of founds raised!</h2>
             </CardHeader>
             <CardContent className="px-3 md:p-0">
               <div className="w-full grid grid-cols-2 grid-rows-auto gap-3 md:gap-16">
-                <Card>
-                  <CardContent className="w-full bg-accent-600/70 rounded-2xl p-4 flex justify-center items-center items-center gap-x-3 max-h-[81px] md:max-h-[102px] overflow-x-auto overflow-y-hidden lg:py-6 lg:max-h-24">
+                {/* <Card>
+                  <CardContent className="w-full bg-accent-600/70 rounded-2xl p-4 flex justify-center items-center gap-x-3 max-h-[81px] md:max-h-[102px] overflow-x-auto overflow-y-hidden lg:py-6 lg:max-h-24">
                     <picture>
                       <source srcSet="/images/home/bl-coins.webp" type="image/webp" />
                       <source srcSet="/images/home/bl-coins.png" type="image/png" />
@@ -87,10 +84,10 @@ export default function ReferralProgramTab() {
                       <p className="text-white font-bold text-2xl">$500</p>
                     </div>
                   </CardContent>
-                </Card>
+                </Card> */}
 
-                <Card>
-                  <CardContent className="w-full bg-accent-600/70 rounded-2xl p-4 flex justify-center items-center items-center gap-x-3 max-h-[81px] md:max-h-[102px] overflow-x-auto overflow-y-hidden lg:py-6 lg:max-h-24">
+                <Card className="col-start-1 col-end-3">
+                  <CardContent className="w-full bg-accent-600/70 rounded-2xl p-4 flex justify-start items-center gap-x-3 max-h-[81px] md:max-h-[102px] overflow-x-auto overflow-y-hidden lg:py-6 lg:max-h-24">
                     <picture>
                       <source srcSet="/images/referrals/referrals-icon.svg" type="image/png" />
                       <Image
@@ -110,7 +107,7 @@ export default function ReferralProgramTab() {
                 </Card>
 
                 <div className="w-full flex justify-between items-center gap-x-5 col-start-1 col-end-3 row-start-2 row-end-3 max-h-[81px] md:max-h-[64px]">
-                  <Card className="w-2/3 h-full md:h-16 lg:max-w-[340px] xl:min-w-[470px]">
+                  <Card className="md:w-2/3 w-full h-full md:h-16 lg:max-w-[340px] xl:min-w-[470px]">
                     <CardContent className="bg-accent-600/70 rounded-2xl px-4 py-4 flex justify-between items-center gap-x-4 w-full md:py-0 md:max-w-[360px] xl:min-w-[470px] overflow-auto lg:overflow-hidden h-full">
                       <p className="text-base opacity-70 w-full lg:max-w-36 lg:overflow-hidden lg:text-ellipsis xl:min-w-52 xl:max-w-52 text-white md:text-xl md:font-medium">
                         {(shareLinkData?.data?.short_link || '').replace('https://', '')}
@@ -140,7 +137,7 @@ export default function ReferralProgramTab() {
         </CardContent>
       </Card>
 
-      <Card className="md:mt-14">
+      {/* <Card className="md:mt-14">
         <CardHeader className="px-7">
           <h2 className="text-2xl font-bold text-left text-white">My Referrals</h2>
         </CardHeader>
@@ -148,7 +145,7 @@ export default function ReferralProgramTab() {
           <ReferralDesktopList referralList={referralList} />
           <ReferralMobileList referralList={referralList} />
         </CardContent>
-      </Card>
+      </Card> */}
 
       <div className="w-full min-h-20 flex justify-center items-center gap-x-14 py-5 px-6 fixed bottom-0 left-0 z-50 bg-card opacity-90 md:hidden">
         <div onClick={copyToClipboard} className="bg-primary px-4 py-2 w-32 min-w-32 max-w-32 flex justify-start items-center gap-x-3 cursor-pointer border rounded-full border-[#747394]">
