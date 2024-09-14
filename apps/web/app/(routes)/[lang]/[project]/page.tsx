@@ -12,7 +12,6 @@ import { getPresaleData } from '@/services/supabase/service'
 import type { ProjectPageParams, ProjectPageProps } from '@/types/routing.type'
 import dynamic from 'next/dynamic'
 import Image from 'next/image'
-import Link from 'next/link'
 import { redirect } from 'next/navigation'
 
 export default async function ProjectPage({ params }: ProjectPageProps) {
@@ -42,7 +41,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
   const countdownHeading = isPresaleUpcoming
     ? 'Presale Starts In:'
     : isPresaleActive
-      ? 'Presale Ends In:'
+      ? 'Presale Ends In (If Not Sold Out):'
       : isAuctionActive
         ? 'Auction Ends In:'
         : 'Auction Starts In:'
@@ -55,18 +54,11 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
             <Card className="flex flex-col w-full pb-5 border-card/30 bg-card/60 backdrop-blur-lg">
               <Countdown targetDate={countdownDate} heading={countdownHeading} />
               <div className="flex items-center justify-center gap-3 py-3 mt-5 align-center md:mt-0">
-                <DynamicAddressForm projectId={project.id} />
-                {isPresaleActive ? (
-                  <Link href={`/${project.slug}/presale`}>
-                    <Button variant="tertiary">Join Presale Now</Button>
-                  </Link>
-                ) : isAuctionActive ? (
-                  <Link href={`/${project.slug}/auction`}>
-                    <Button variant="tertiary">Join Auction Now</Button>
-                  </Link>
-                ) : (
-                  <DynamicAddressForm projectId={project.id} />
-                )}
+                <DynamicCtaButton
+                  isPresaleActive={isPresaleActive}
+                  isAuctionActive={isAuctionActive}
+                  project={project}
+                />
               </div>
             </Card>
 
@@ -155,13 +147,13 @@ export async function generateStaticParams(): Promise<ProjectPageParams[]> {
   return params
 }
 
-const DynamicAddressForm = dynamic(
+const DynamicCtaButton = dynamic(
   () =>
-    import('@/components/routes/project/register-address-form').then(
-      (mod) => mod.RegisterAddressForm,
+    import('@/components/routes/project/project-cta-button').then(
+      (mod) => mod.ProjectCtaButton,
     ),
   {
     ssr: false,
-    loading: () => <Button variant="accent">Register</Button>,
+    loading: () => <Button variant="accent">Get Whitelisted</Button>,
   },
 )

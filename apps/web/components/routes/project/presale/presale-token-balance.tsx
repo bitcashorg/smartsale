@@ -7,7 +7,6 @@ import { useAccount } from 'wagmi'
 
 // TODO: make this generic for any token on any chain
 export function PresaleTokenBalance({ tokenAddress }: { tokenAddress: Address }) {
-  console.log('🔥 PresaleTokenBalance tokenAddress', tokenAddress)
   const { address } = useAccount()
   const { formatted } = useErc20Balance({
     contract: tokenAddress,
@@ -15,10 +14,11 @@ export function PresaleTokenBalance({ tokenAddress }: { tokenAddress: Address })
     address: address as Address,
     chainId: TestnetBLPL.chainId,
   })
+  const withoutDecimals = formatted ? formatted.toString().split('.')[0] : 0
 
   return (
     <div className="text-5xl mt-5 font-bold text-center">
-      <span className="text-green-500">{formatted}</span> <br />
+      <span className="text-green-500">{withoutDecimals}</span> <br />
       <span className="text-4xl ">BLPL</span>
       <p>Bitlauncher Presale Tokens</p>
     </div>

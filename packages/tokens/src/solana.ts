@@ -17,5 +17,6 @@ export const solanaTokens: SolanaToken[] = baseTokens.map((token) => ({
   image: `https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/${token.address}/logo.png`,
   chainName: 'Solana',
   isStable: true,
+  chainId: 'solana-mainnet',
   chainType: 'solana' as const,
 }))

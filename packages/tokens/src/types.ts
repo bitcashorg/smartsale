@@ -24,6 +24,7 @@ export interface AntelopeToken extends BaseToken {
 export interface SolanaToken extends BaseToken {
   address: string // Solana uses public key as address
   chainType: 'solana'
+  chainId: string
 }
 
 export interface CosmosToken extends BaseToken {

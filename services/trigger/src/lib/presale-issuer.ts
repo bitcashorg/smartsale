@@ -1,18 +1,13 @@
-import type { Database } from '@repo/supabase'
 import {
   http,
   type Address,
   type Chain,
   ContractFunctionExecutionError,
-  Hex,
   HttpRequestError,
   createWalletClient,
-  encodeFunctionData,
   erc20Abi,
   formatUnits,
   isAddress,
-  isHex,
-  stringify,
 } from 'viem'
 
 import { privateKeyToAccount } from 'viem/accounts'
@@ -53,6 +48,8 @@ export async function issuePresaleTokens(
       chain: eosEvmTestnet, // TODO: make this dynamic based on token data
       transport: http(),
     })
+
+    console.log(`Issuing ${formatUnits(amount, 6)} tokens to ${to}`, amount)
 
     const trxHash = await walletClient.writeContract({
       address: tokenAddress,

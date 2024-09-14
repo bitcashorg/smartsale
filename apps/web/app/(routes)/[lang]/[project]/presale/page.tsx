@@ -31,11 +31,15 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
     supabase,
   })
 
+  const presaleStartDate = new Date(presale.start_timestamptz)
+  const presaleEndDate = new Date(presale.end_timestamptz)
+  const now = new Date()
+  const isPresaleActive = now > presaleStartDate && now < presaleEndDate
+  const isAuctionActive = false // TODO: implement auction logic
+
   if (!projectData.token_address) redirect('/')
 
   const tokenAddress = getAddress(projectData.token_address)
-
-  console.log('😍 tokenAddress', tokenAddress)
 
   return (
     <div className="flex min-h-[calc(83vh-4rem)] flex-col">
@@ -44,7 +48,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           <Card className="border-card/30 bg-card/60 backdrop-blur-lg">
             <Countdown
               targetDate={new Date(presale.end_timestamptz)}
-              heading="Presale Ends In:"
+              heading="Presale Ends In: (if not sold out)"
             />
             <CardContent>
               <ProjectPresaleData
@@ -56,8 +60,10 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 
           <PresaleDepositCard
             project={project}
-            presaleAddress={getAddress(presale.address)}
+            presaleAddresses={presale.presale_address}
             tokenAddress={tokenAddress}
+            isPresaleActive={isPresaleActive}
+            isAuctionActive={isAuctionActive}
           />
         </div>
 

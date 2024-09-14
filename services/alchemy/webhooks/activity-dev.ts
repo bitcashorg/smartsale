@@ -13,7 +13,7 @@ async function createAddressActivityNotification({
 
     const alchemy = new Alchemy(settings)
     const addressActivityWebhook = await alchemy.notify.createWebhook(
-      'https://984b-152-231-128-159.ngrok-free.app/api/activity',
+      'https://0963-152-231-128-159.ngrok-free.app/api/activity',
       WebhookType.ADDRESS_ACTIVITY,
       {
         addresses,
@@ -33,6 +33,6 @@ async function createAddressActivityNotification({
 }
 
 createAddressActivityNotification({
-  addresses: [appConfig.presaleAddress],
+  addresses: ['0x0b66FA29FE366194Ea684AD3fA6B92E992316DF5'],
   network: Network.MATIC_MAINNET,
 })

@@ -77,13 +77,13 @@ export async function generateStaticParams(): Promise<ProjectPageParams[]> {
   return params
 }
 
-const DynamicAddressForm = dynamic(
-  () =>
-    import('@/components/routes/project/register-address-form').then(
-      (mod) => mod.RegisterAddressForm,
-    ),
-  {
-    ssr: false,
-    loading: () => <Button variant="accent">Register</Button>,
-  },
-)
+// const DynamicAddressForm = dynamic(
+//   () =>
+//     import('@/components/routes/project/whitelist-address-form').then(
+//       (mod) => mod.WhitelistAddressForm,
+//     ),
+//   {
+//     ssr: false,
+//     loading: () => <Button variant="accent">Register</Button>,
+//   },
+// )
