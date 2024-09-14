@@ -2,11 +2,8 @@
 
 import { appConfig } from '@/lib/config'
 import { useSearchParams } from 'next/navigation'
-import { useEffect, useState } from 'react'
-import { generateShortLink } from '@/app/actions/general'
-import { useAsync, useSetState } from 'react-use'
-import { chaingraphService } from '@repo/chaingraph'
-import { useSession } from '@/hooks/use-session'
+import { useEffect } from 'react'
+import { useSetState } from 'react-use'
 
 const DEFAULT_URI = 'https://app.bitcash.org'
 const DEFAULT_REFERRER = appConfig.env !== 'prod' ? 'bitlautst.bk' : 'bitlaunch.bk'
@@ -34,18 +31,6 @@ export function useReferral() {
     params.append('source', 'bitlauncher.ai')
 
     setReferralState({ bitcashRegisterUri: `${DEFAULT_URI}?${params.toString()}` })
-
-    const fetchShortLink = async () => {
-      try {
-        // const response = await generateShortLink(bitcashRegisterUri);
-        // setReferralState({ userShortLink: response.shortLink });
-      } catch (error) {
-        console.error('Error fetching short link:', error);
-      }
-    };
-
-    fetchShortLink();
-
     return () => {};
   }, [searchParams])
 

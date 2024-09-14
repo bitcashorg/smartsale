@@ -1,7 +1,6 @@
 import { generateShortLink } from "@/app/actions/general"
 import { useSession } from "@/hooks/use-session"
 import { useSupabaseClient } from "@/services/supabase"
-import { useParams } from "next/navigation"
 import { useState } from "react"
 import { toast } from "sonner"
 
@@ -11,10 +10,8 @@ export function useCopyShortLink(config?: { isProject?: boolean }) {
   )
   const { session } = useSession()
   const supabase = useSupabaseClient()
-  const existingParams = useParams() // Get existing query parameters
-  const param = session
-    ? `${existingParams ? '&' : '?'}referrer=${session.account}`
-    : ''
+  // ? This will be always true due the param "lang" is always present in the URL
+  // const existingParams = useParams() // Get existing query parameters
 
   const checkShareLink = async () => {
     if (!session?.account) {
@@ -36,7 +33,7 @@ export function useCopyShortLink(config?: { isProject?: boolean }) {
     if (!returnData?.short_link) {
       const { data: dubCoShortLink, error: dubCoError } = await generateShortLink(
         // `https://bitlauncher.ai${config?.isProject ? window.location.pathname : ''}${param}`,
-        `https://bitlauncher.ai${param}`,
+        `https://bitlauncher.ai?referrer=${session.account}`,
       )
 
       if (dubCoError) {
