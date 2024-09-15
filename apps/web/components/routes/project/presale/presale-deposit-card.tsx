@@ -25,7 +25,7 @@ import { useQuery } from '@tanstack/react-query'
 import Link from 'next/link'
 import { useMemo, useState } from 'react'
 import { toast } from 'sonner'
-import { type Address, erc20Abi, getAddress, parseUnits } from 'viem'
+import { type Address, erc20Abi, getAddress, isAddressEqual, parseUnits } from 'viem'
 import { useAccount, useChainId, useSwitchChain, useWriteContract } from 'wagmi'
 import { WhitelistAddressButton } from '../whitelist-address-button'
 
