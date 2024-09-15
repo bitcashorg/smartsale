@@ -32,6 +32,26 @@ export const eosEvmTestnet: Chain = {
   testnet: true,
 }
 
+export const eosEvmMainnet: Chain = {
+  nativeCurrency: {
+    name: 'EOS',
+    symbol: 'EOS',
+    decimals: 18,
+  },
+  id: 15558,
+  name: 'EOS EVM Mainnet',
+  rpcUrls: {
+    default: { http: ['https://api.mainnet.evm.eosnetwork.com'] },
+    public: { http: ['https://api.mainnet.evm.eosnetwork.com'] },
+  },
+  blockExplorers: {
+    default: {
+      name: 'EOS EVM Mainnet Explorer',
+      url: 'https://explorer.mainnet.evm.eosnetwork.com',
+    },
+  },
+}
+
 export const evmChains: Chain[] = [
   base,
   arbitrum,

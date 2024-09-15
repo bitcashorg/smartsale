@@ -7,7 +7,8 @@
     "deployMBOTSPLTestnet": " hardhat run scripts/deployMBOTSPLWithFaucet.js --network eosevm_testnet",
     "deployUSDTSepolia": " hardhat run scripts/deployUSDTWithFaucet.js --network sepolia",
     "deployUSDTTestnet": " hardhat run scripts/deployUSDTWithFaucet.js --network eosevm_testnet",
-    "deployBLPL": "hardhat run scripts/deployBLPL.js --network eosevm_testnet"
+    "deployBLPL": "hardhat run scripts/deployBLPL.js --network eosevm_testnet",
+    "deployBLPL-mainnet": "hardhat run scripts/deployBLPL.js --network eosevm_mainnet"
   },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.2",
