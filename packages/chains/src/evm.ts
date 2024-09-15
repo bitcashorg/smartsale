@@ -41,8 +41,8 @@ export const eosEvmMainnet: Chain = {
   id: 15558,
   name: 'EOS EVM Mainnet',
   rpcUrls: {
-    default: { http: ['https://api.mainnet.evm.eosnetwork.com'] },
-    public: { http: ['https://api.mainnet.evm.eosnetwork.com'] },
+    default: { http: ['https://api.evm.eosnetwork.com'] },
+    public: { http: ['https://api.evm.eosnetwork.com'] },
   },
   blockExplorers: {
     default: {
