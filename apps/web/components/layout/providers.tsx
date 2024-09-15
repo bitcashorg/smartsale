@@ -18,7 +18,7 @@ import {
   trustWallet,
   walletConnectWallet,
 } from '@rainbow-me/rainbowkit/wallets'
-import { eosEvmTestnet } from '@repo/chains'
+import { eosEvmMainnet, eosEvmTestnet } from '@repo/chains'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { merge } from 'lodash'
 import { ThemeProvider as NextThemesProvider } from 'next-themes'
@@ -37,7 +37,16 @@ import {
 
 const queryClient = new QueryClient()
 
-const prodChains: _chains = [arbitrum, avalanche, base, mainnet, optimism, polygon, bsc]
+const prodChains: _chains = [
+  arbitrum,
+  avalanche,
+  base,
+  mainnet,
+  optimism,
+  polygon,
+  bsc,
+  { ...eosEvmMainnet, fees: undefined },
+]
 const devChains: _chains = [{ ...eosEvmTestnet, fees: undefined }, sepolia]
 
 export const wagmiConfig = getDefaultConfig({

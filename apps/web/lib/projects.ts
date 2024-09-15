@@ -79,7 +79,7 @@ export const projects: Project[] = [
     heroImage: '/images/projects/bitcash-cover.webp',
     thumbnailImage: BitcashPic,
     badgeText: 'COMING PRESALE',
-    linkPath: '/bitcash-bitlauncher',
+    linkPath: '/bitlauncher-test',
     token: TestnetMBOTSPL,
     auctionId: 9,
     presaleOpen: true,
