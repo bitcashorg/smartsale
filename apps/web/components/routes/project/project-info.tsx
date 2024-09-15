@@ -24,6 +24,9 @@ function ListItem({ label, value }: ItemProps) {
         <span className="font-futura-pt-demi opacity-70">{label}: </span>
         <span className="text-right text-sm">
           {typeof value === 'string' ? value : null}
+          {label === 'Presale' ? (
+            <span className="text-xs text-infoForeground">(Or When Sold Out)</span>
+          ) : null}
         </span>
       </h3>
     </div>
@@ -39,7 +42,7 @@ export function ProjectInfo({
 }) {
   const fields: Array<Array<ItemProps>> = [
     [
-      { label: 'Presale', value: '9/15/24 - 11/15/24' },
+      { label: 'Presale', value: '9/16/24 - 11/15/24\n' },
       { label: 'Fundraising Goal', value: '$150,000' },
       { label: 'Max Allocation', value: '$1,500' },
     ],
@@ -64,7 +67,7 @@ export function ProjectInfo({
         ) : (
           <div
             key={`project-info-${project.id}-${k}`}
-            className="flex w-full min-w-[250px] flex-col justify-evenly rounded-sm bg-muted px-4 py-3 md:min-w-[203px]"
+            className="flex w-full min-w-[250px] flex-col justify-evenly rounded-sm bg-muted px-4 py-3 md:min-w-[203px] whitespace-pre-line"
           >
             {items.map((item, ik) => (
               <Fragment
