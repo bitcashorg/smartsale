@@ -47,7 +47,7 @@ export const eosEvmMainnet: Chain = {
   blockExplorers: {
     default: {
       name: 'EOS EVM Mainnet Explorer',
-      url: 'https://explorer.mainnet.evm.eosnetwork.com',
+      url: 'https://explorer.evm.eosnetwork.com',
     },
   },
 }
