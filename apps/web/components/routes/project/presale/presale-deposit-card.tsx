@@ -264,7 +264,9 @@ function PresaleDeposit({
             <Link href={`/${project.slug}/auction`}>
               <Button variant="tertiary">Join Auction Now</Button>
             </Link>
-          ) : null
+          ) : (
+            <WhitelistAddressButton projectId={project.id} />
+          )
         }
       </div>
     </div>
