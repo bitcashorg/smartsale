@@ -27,6 +27,7 @@ module.exports = {
         ring: 'hsla(var(--ring))',
         background: 'hsla(var(--background))',
         foreground: 'hsla(var(--foreground))',
+        textInfoForeground: "#17154C",
         infoForeground: '#9395AF',
         cornflowerblue: {
           100: 'rgba(125, 129, 217, 0.2)',
@@ -67,6 +68,7 @@ module.exports = {
           400: '#FF51ED',
           500: '#845BBF',
           600: '#433974',
+          700: '#E828AA'
         },
         destructive: {
           DEFAULT: 'hsla(var(--destructive))',
@@ -97,6 +99,9 @@ module.exports = {
           100: 'rgba(125, 129, 217, 0.5)',
           200: 'rgba(125, 129, 217, 0.43)',
         },
+      },
+      backgroundImage: {
+        headerBlue: 'linear-gradient(334deg, rgba(255, 255, 255, 0.00) 57.71%, rgba(255, 255, 255, 0.15) 245.65%), #0F113E;'
       },
       borderRadius: {
         lg: 'var(--radius)',

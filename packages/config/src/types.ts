@@ -24,4 +24,8 @@ export interface EnvConfig {
     url: string
     anonKey: string
   }
+  chaingraph: {
+    url: string
+    key: string
+  }
 }

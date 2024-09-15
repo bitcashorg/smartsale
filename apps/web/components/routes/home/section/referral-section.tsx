@@ -3,7 +3,7 @@
 import { SessionDialog } from '@/components/dialogs/session/session-dialog'
 import { OnboardingCarousel } from '@/components/shared/onbording-carousel'
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog'
-import { IconDownRightArrow, IconReferal } from '@/components/ui/icons'
+import { IconDownRightArrow, IconReferral } from '@/components/ui/icons'
 import { useSession } from '@/hooks/use-session'
 import { useRouter } from 'next/navigation'
 import { isMobile } from 'react-device-detect'
@@ -31,7 +31,7 @@ export function ReferralSection() {
       <div className="flex flex-col items-center w-full max-w-4xl gap-8 p-8 bg-[#0F113E] rounded-xl md:flex-row">
         <div className="flex-shrink-0 w-[245px] h-[245px]">
           <div className="w-[207px] h-[186.71px] bg-[#7c80d9]/40 rounded-full blur-[135.70px] translate-y-[-50%] shadow-lg absolute" />
-          <IconReferal className="relative" />
+          <IconReferral className="relative" />
         </div>
         <div className="flex flex-col items-center flex-grow text-center ">
           <h2 className="mb-4 text-cente text-[2.188rem] font-bold leading-normal text-white">

@@ -616,7 +616,7 @@ function IconTelegram({ className, ...props }: React.ComponentProps<'svg'>) {
   )
 }
 
-function IconReferal({ className, ...props }: React.ComponentProps<'svg'>) {
+function IconReferral({ className, ...props }: React.ComponentProps<'svg'>) {
   return (
     <svg
       className={cn('flex items-center justify-center', className)}
@@ -1061,5 +1061,5 @@ export {
   IconUser,
   IconUsers,
   IconVercel,
-  IconReferal,
+  IconReferral,
 }

@@ -74,7 +74,7 @@ export function SessionButton() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/referrals" className="cursor-pointer">
+                    <Link href="/dashboard/referrals" className="cursor-pointer">
                       Referrals
                     </Link>
                   </li>
