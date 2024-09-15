@@ -77,7 +77,7 @@ function PresaleDeposit({
   const { status, writeContract } = useWriteContract()
   const [amount, setAmount] = useState<string>('42')
   const { switchChain } = useSwitchChain()
-  const [selectedToken, setSelectedToken] = useState('USDT')
+  const [selectedToken, setSelectedToken] = useState('USDC')
   const [selectedChain, setSelectedChain] = useState<string>('Ethereum')
   const { requestSignature } = useSigningRequest()
   const { loginOrConnect, session } = useSession()
