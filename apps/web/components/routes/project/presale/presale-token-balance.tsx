@@ -13,7 +13,7 @@ export function PresaleTokenBalance({ tokenAddress }: { tokenAddress: Address })
     contract: tokenAddress,
     abi: erc20Abi,
     address: address as Address,
-    chainId: appConfig.env === 'production' ? eosEvmMainnet.id : eosEvmMainnet.id,
+    chainId: appConfig.env === 'prod' ? eosEvmMainnet.id : eosEvmMainnet.id,
   })
   const withoutDecimals = formatted ? formatted.toString().split('.')[0] : 0
 

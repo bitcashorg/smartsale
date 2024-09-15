@@ -14,7 +14,7 @@ async function createAddressActivityNotification({
 
     const alchemy = new Alchemy(settings)
     const addressActivityWebhook = await alchemy.notify.createWebhook(
-      'https://test.bitlauncher.ai/api/activity',
+      'https://bitlauncher.ai/api/activity',
       WebhookType.ADDRESS_ACTIVITY,
       {
         addresses,
