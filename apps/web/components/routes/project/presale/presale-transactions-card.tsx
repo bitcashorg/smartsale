@@ -21,8 +21,7 @@ import {
   type PresaleContribution,
   getPresaleContributions,
 } from '@/services/supabase/service'
-import { TestnetBLPL } from '@repo/auction'
-import { eosEvmMainnet, evmChains } from '@repo/chains'
+import { eosEvmMainnet, eosEvmTestnet, evmChains } from '@repo/chains'
 import { formatAddress } from '@repo/utils'
 import { useEffect, useState } from 'react'
 

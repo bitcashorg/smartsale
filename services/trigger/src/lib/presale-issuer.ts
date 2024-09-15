@@ -1,7 +1,6 @@
 import {
   http,
   type Address,
-  type Chain,
   ContractFunctionExecutionError,
   HttpRequestError,
   createWalletClient,
@@ -12,6 +11,8 @@ import {
 
 import { privateKeyToAccount } from 'viem/accounts'
 import { z } from 'zod'
+import { eosEvmMainnet, eosEvmTestnet } from '../../../../packages/chains'
+import { appConfig } from '../config'
 import { insertTransaction } from './supabase'
 
 const envSchema = z.object({
@@ -45,7 +46,7 @@ export async function issuePresaleTokens(
     const walletClient = createWalletClient({
       // key: parsedEnv.data.ISSUER_KEY,
       account,
-      chain: eosEvmTestnet, // TODO: make this dynamic based on token data
+      chain: appConfig.env === 'prod' ? eosEvmMainnet : eosEvmTestnet,
       transport: http(),
     })
 
@@ -88,26 +89,4 @@ export async function issuePresaleTokens(
     console.log('===========================================')
     return null
   }
-}
-
-// import from packages arent working
-export const eosEvmTestnet: Chain = {
-  nativeCurrency: {
-    name: 'EOS',
-    symbol: 'EOS',
-    decimals: 18,
-  },
-  id: 15557,
-  name: 'EOS EVM Testnet',
-  rpcUrls: {
-    default: { http: ['https://api.testnet.evm.eosnetwork.com'] },
-    public: { http: ['https://api.testnet.evm.eosnetwork.com'] },
-  },
-  blockExplorers: {
-    default: {
-      name: 'EOS EVM Testnet Explorer',
-      url: 'https://explorer.testnet.evm.eosnetwork.com',
-    },
-  },
-  testnet: true,
 }
