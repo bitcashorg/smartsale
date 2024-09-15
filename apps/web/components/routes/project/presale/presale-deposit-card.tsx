@@ -83,8 +83,6 @@ function PresaleDeposit({
   const { loginOrConnect, session } = useSession()
   const chainId = useChainId()
 
-  console.log('🥵 result')
-
   const whitelist = useQuery({
     queryKey: ['presale-cat whitelist', address, project.id],
     enabled: Boolean(address),
