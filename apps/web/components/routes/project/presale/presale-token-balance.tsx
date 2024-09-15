@@ -1,7 +1,8 @@
 'use client'
 
 import { useErc20Balance } from '@/hooks/use-balance'
-import { TestnetBLPL } from '@repo/auction'
+import { appConfig } from '@/lib/config'
+import { eosEvmMainnet } from '@repo/chains'
 import { type Address, erc20Abi } from 'viem'
 import { useAccount } from 'wagmi'
 
@@ -12,7 +13,7 @@ export function PresaleTokenBalance({ tokenAddress }: { tokenAddress: Address })
     contract: tokenAddress,
     abi: erc20Abi,
     address: address as Address,
-    chainId: TestnetBLPL.chainId,
+    chainId: appConfig.env === 'production' ? eosEvmMainnet.id : eosEvmMainnet.id,
   })
   const withoutDecimals = formatted ? formatted.toString().split('.')[0] : 0
 
