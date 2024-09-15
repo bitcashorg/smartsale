@@ -88,7 +88,7 @@ export const projects: Project[] = [
     discordServer: 'KuR48XUxnG',
     // September 15, 2024
     presaleStart: '2024-09-15T00:00:00Z',
-    presaleId: 1, // in database
+    presaleId: 2, // in database
   },
 ]
 
