@@ -38,7 +38,7 @@ export const eosEvmMainnet: Chain = {
     symbol: 'EOS',
     decimals: 18,
   },
-  id: 15558,
+  id: 17777,
   name: 'EOS EVM Mainnet',
   rpcUrls: {
     default: { http: ['https://api.evm.eosnetwork.com'] },
