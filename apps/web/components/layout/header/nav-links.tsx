@@ -79,7 +79,15 @@ export function NavLinks({
       text: 'Blog',
       mobile: false,
       action: null,
-      disabled: false,
+      disabled: true,
+    },
+    {
+      id: 'referrals',
+      href: '/dashboard/referrals',
+      text: 'Referrals program',
+      mobile: true,
+      action: null,
+      disabled: !bitcashAccount,
     },
     {
       id: 'logout',
