@@ -15,15 +15,20 @@ import {
   TableHeader,
   TableRow,
 } from '@/components/ui/table'
+import { appConfig } from '@/lib/config'
 import { useSupabaseClient } from '@/services/supabase'
 import {
   type PresaleContribution,
   getPresaleContributions,
 } from '@/services/supabase/service'
-import { TestnetBLPL } from '@repo/auction'
-import { evmChains } from '@repo/chains'
+import { eosEvmMainnet, eosEvmTestnet, evmChains } from '@repo/chains'
 import { formatAddress } from '@repo/utils'
 import { useEffect, useState } from 'react'
+
+const explorerUrl =
+  appConfig.env === 'prod'
+    ? eosEvmMainnet.blockExplorers?.default.url
+    : eosEvmTestnet.blockExplorers?.default.url
 
 export function PresaleTransactionsCard(params: {
   contributions: PresaleContribution[]
@@ -151,9 +156,9 @@ function TransactionRow({ contribution }: { contribution: PresaleContribution })
       </TableCell>
 
       <TableCell>
-        {TestnetBLPL.chain?.blockExplorers?.default && contribution.issuance_hash ? (
+        {explorerUrl && contribution.issuance_hash ? (
           <a
-            href={`${TestnetBLPL.chain.blockExplorers.default.url}/tx/${contribution.issuance_hash}`}
+            href={`${explorerUrl}/tx/${contribution.issuance_hash}`}
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-500 hover:underline"

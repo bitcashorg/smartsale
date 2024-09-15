@@ -77,7 +77,7 @@ function PresaleDeposit({
   const { status, writeContract } = useWriteContract()
   const [amount, setAmount] = useState<string>('42')
   const { switchChain } = useSwitchChain()
-  const [selectedToken, setSelectedToken] = useState('USDT')
+  const [selectedToken, setSelectedToken] = useState('USDC')
   const [selectedChain, setSelectedChain] = useState<string>('Ethereum')
   const { requestSignature } = useSigningRequest()
   const { loginOrConnect, session } = useSession()
@@ -176,9 +176,9 @@ function PresaleDeposit({
                 created_at: new Date().toISOString(),
                 deposit_hash: trxHash,
                 issuance_hash: null,
-                presale_id: 1,
+                presale_id: project.presaleId as number,
                 address,
-                project_id: 1,
+                project_id: project.id,
                 account: session?.account,
                 chain_type: evmToken.chainType,
                 chainId: evmToken.chainId,
