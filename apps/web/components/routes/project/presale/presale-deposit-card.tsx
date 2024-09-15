@@ -25,7 +25,7 @@ import { useQuery } from '@tanstack/react-query'
 import Link from 'next/link'
 import { useMemo, useState } from 'react'
 import { toast } from 'sonner'
-import { type Address, erc20Abi, getAddress, parseUnits } from 'viem'
+import { type Address, erc20Abi, getAddress, isAddressEqual, parseUnits } from 'viem'
 import { useAccount, useChainId, useSwitchChain, useWriteContract } from 'wagmi'
 import { WhitelistAddressButton } from '../whitelist-address-button'
 
@@ -82,8 +82,6 @@ function PresaleDeposit({
   const { requestSignature } = useSigningRequest()
   const { loginOrConnect, session } = useSession()
   const chainId = useChainId()
-
-  console.log('🥵 result')
 
   const whitelist = useQuery({
     queryKey: ['presale-cat whitelist', address, project.id],
@@ -264,7 +262,9 @@ function PresaleDeposit({
             <Link href={`/${project.slug}/auction`}>
               <Button variant="tertiary">Join Auction Now</Button>
             </Link>
-          ) : null
+          ) : (
+            <WhitelistAddressButton projectId={project.id} />
+          )
         }
       </div>
     </div>

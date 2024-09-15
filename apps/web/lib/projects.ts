@@ -69,6 +69,27 @@ export const projects: Project[] = [
     discordServer: 'KuR48XUxnG',
     presaleStart: '2024-09-15T00:00:00Z',
   },
+  {
+    id: 4,
+    title: 'Bitlauncher Test',
+    slug: 'bitlauncher-test',
+    pitch: 'Building Ai & Crypto Apps For The New Global Economy.',
+    fundraiseGoal: '$400,000',
+    maxAllocation: '$1,500',
+    heroImage: '/images/projects/bitcash-cover.webp',
+    thumbnailImage: BitcashPic,
+    badgeText: 'COMING PRESALE',
+    linkPath: '/bitlauncher-test',
+    token: TestnetMBOTSPL,
+    auctionId: 9,
+    presaleOpen: true,
+    twitterUsername: 'bitcashorg',
+    telegramGroup: 'bitlauncher',
+    discordServer: 'KuR48XUxnG',
+    // September 15, 2024
+    presaleStart: '2024-09-15T00:00:00Z',
+    presaleId: 2, // in database
+  },
 ]
 
 export interface Project {
