@@ -68,11 +68,13 @@ export function SessionButton() {
                       Presale
                     </Link>
                   </li>
-                  <li>
-                    <Link href="/wallet" className="cursor-pointer">
-                      Wallet
-                    </Link>
-                  </li>
+                  {appConfig.features.wallet ? (
+                    <li>
+                      <Link href="/wallet" className="cursor-pointer">
+                        Wallet
+                      </Link>
+                    </li>
+                  ) : null}
                   <li>
                     <Link href="/dashboard/referrals" className="cursor-pointer">
                       Referrals
