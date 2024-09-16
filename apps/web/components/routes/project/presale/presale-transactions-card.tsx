@@ -112,7 +112,7 @@ export function PresaleTransactionsCard(params: {
               ))
             ) : (
               <TableRow>
-                <TableCell colSpan={6} className="text-center">
+                <TableCell colSpan={7} className="text-center">
                   No transactions found
                 </TableCell>
               </TableRow>
