@@ -7,7 +7,7 @@ import { appConfig } from '../config'
 // Initialize Supabase client
 export const supabase = createClient<Database>(
   appConfig.supabase.url,
-  appConfig.supabase.anonKey,
+  process.env.SUPABASE_SERVICE_ROLE_KEY!,
 )
 
 export async function upsertPresaleDeposits({
