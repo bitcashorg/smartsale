@@ -221,7 +221,7 @@ function PresaleDeposit({
             }}
           />
 
-          <Select onValueChange={setSelectedToken} defaultValue={'USDT'}>
+          <Select onValueChange={setSelectedToken} defaultValue={'USDC'}>
             <SelectTrigger id="token-select">
               <SelectValue placeholder={'USDT'} />
             </SelectTrigger>

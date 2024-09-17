@@ -52,7 +52,7 @@ export function AuctionCard({
           <Suspense fallback={<figcaption>{badgeText}</figcaption>}>
             <MotionFigcaption
               label={badgeText}
-              color={badgeText === 'REGISTRATION OPEN' ? 'open' : 'default'}
+              color={badgeText === 'LIVE' ? 'open' : 'default'}
             />
           </Suspense>
         </figure>
