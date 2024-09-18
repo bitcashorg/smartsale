@@ -54,7 +54,7 @@ export async function genBitusdDepositSigningRequest(amount: number, address: st
       authorization,
       data: {
         from: '............1',
-        to: appConfig.smartsale.bk,
+        to: 'gaboesquivel',
         memo: `pair_id:1 address:${address}`,
         quantity: {
           quantity: Asset.from(amount, '6,BITUSD'),
@@ -79,7 +79,7 @@ export async function genUsdtDepositSigningRequest(amount: number, address: stri
       authorization,
       data: {
         from: '............1',
-        to: appConfig.smartsale.bk,
+        to: 'gaboesquivel',
         memo: `address:${address}`,
         quantity: Asset.from(amount, '4,USDT'),
       },

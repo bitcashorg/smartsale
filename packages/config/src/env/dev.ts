@@ -14,7 +14,6 @@ export const dev: EnvConfig = {
   },
   smartsale: {
     auction: '0x',
-    bk: 'bkblaunchpad',
   },
   supabase: {
     url: 'https://jvpdyxpjpodxsuvhufpw.supabase.co',
