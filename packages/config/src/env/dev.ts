@@ -7,10 +7,15 @@ export const dev: EnvConfig = {
     eos: 'gaboesquivel',
     evm: '0x',
   },
+  // bitcash: {
+  //   bank: 'bkbbanktest3',
+  //   token: 'bkbtokentest',
+  //   accounts: 'bkbaccountst',
+  // },
   bitcash: {
-    bank: 'bkbbanktest3',
-    token: 'bkbtokentest',
-    accounts: 'bkbaccountst',
+    bank: 'bank.bk',
+    token: 'token.bk',
+    accounts: 'accounts.bk',
   },
   smartsale: {
     auction: '0x',
