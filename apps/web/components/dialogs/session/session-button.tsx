@@ -9,7 +9,6 @@ import { useAccountModal } from '@rainbow-me/rainbowkit'
 import { formatAddressShort } from '@repo/utils'
 import { User, Wallet } from 'lucide-react'
 import Link from 'next/link'
-import { useRouter } from 'next/navigation'
 import { isMobile } from 'react-device-detect'
 import { useAccount } from 'wagmi'
 

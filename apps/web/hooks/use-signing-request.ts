@@ -7,8 +7,6 @@ import type { RealtimeChannel } from '@supabase/supabase-js'
 import { useMutation } from '@tanstack/react-query'
 import axios from 'axios'
 import { SigningRequest } from 'eosio-signing-request'
-import { useSearchParams } from 'next/navigation'
-import { isMobile } from 'react-device-detect'
 import { useSetState } from 'react-use'
 
 export const [useSigningRequest, UseSigningRequestProvider] = createContextHook(
@@ -19,35 +17,27 @@ export const [useSigningRequest, UseSigningRequestProvider] = createContextHook(
 function useSigningRequestFn() {
   const supabase = useSupabaseClient()
   const { session } = useSession()
-  const searchParams = useSearchParams()
   const [state, setState] = useSetState<SignatureRequestState>(defaultState)
 
   const { mutate: requestSignature, ...props } = useMutation({
     mutationFn: async (esr: SigningRequest) => {
-      console.log('requestSignature', esr)
+      console.log('requesting signature', esr.encode())
       if (!session?.account) throw new Error('bitcash account not found')
+      const params = new URLSearchParams()
 
-      // redirect with esr and callback on mobile if not within bitcash explorer
-      if (isMobile && !searchParams.has('bitcash_explorer')) {
-        const params = new URLSearchParams()
-        params.append('esr', esr.encode())
-        params.append('callback', encodeURIComponent(window.location.href))
-        window.location.href = `https://app.bitcash.org/login?${params.toString()}`
-      }
-
-      // post request event on bitcash explorer
-      if (searchParams.has('bitcash_explorer')) {
-        console.log('emitting event to parent')
-        return window.parent.postMessage({ eventType: 'esr', code: esr.encode() }, '*')
-      }
+      params.append('source', 'bitlauncher.ai')
+      const esrCode = esr.encode().replace('esr://', '')
+      console.log('esrCode', esrCode)
+      params.append('esr', esrCode)
 
       // we show the qr optimistically
       setState({
         esr,
+        esrUrl: `https://app.bitcash.org?${params.toString()}`,
         open: true,
       })
       console.log('inserting esr', esr.encode())
-      const response = await axios.post('/api/esr-entry', {
+      const response = await axios.post('/api/esr', {
         code: esr.encode(),
         account: session.account,
       })
@@ -80,8 +70,7 @@ function useSigningRequestFn() {
     },
   })
 
-  const toggleOpen = () =>
-    !searchParams.has('bitcash_explorer') && setState(({ open }) => ({ open: !open }))
+  const toggleOpen = () => setState(({ open }) => ({ open: !open }))
 
   return { toggleOpen, requestSignature, ...state, ...props }
 }
@@ -90,10 +79,12 @@ interface SignatureRequestState {
   open: boolean
   esr: SigningRequest | null
   channel: RealtimeChannel | null
+  esrUrl: string | null
 }
 
 const defaultState: SignatureRequestState = {
   open: false,
   esr: null,
   channel: null,
+  esrUrl: null,
 }
