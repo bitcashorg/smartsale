@@ -49,15 +49,15 @@ export async function genLoginSigningRequest(uuid: string = uuidv4()) {
 export async function genBitusdDepositSigningRequest(amount: number, address: string) {
   const req = createSignatureRequest({
     action: {
-      account: 'bkbbanktest3',
+      account: appConfig.bitcash.bank,
       name: 'stbtransfer',
       authorization,
       data: {
         from: '............1',
         to: 'gaboesquivel',
-        memo: `pair_id:1 address:${address}`,
+        memo: 'pair_id:1', //address:${address}
         quantity: {
-          quantity: Asset.from(amount, '6,BITUSD'),
+          quantity: Asset.from(amount, '4,BITUSD'),
           contract: appConfig.bitcash.bank,
         },
       },

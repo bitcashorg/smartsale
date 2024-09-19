@@ -1,4 +1,4 @@
-import type { Database, Tables, TablesInsert } from '@repo/supabase'
+import type { Database, Enums, Tables, TablesInsert } from '@repo/supabase'
 import { type SupabaseClient, createClient } from '@supabase/supabase-js'
 import { uniqBy } from 'lodash'
 import type { Address } from 'viem'
@@ -14,7 +14,11 @@ export async function upsertPresaleDeposits({
   valueInTokenUnits,
   depositHash,
   issuanceHash,
-}: { valueInTokenUnits: bigint; depositHash: string; issuanceHash: string }) {
+}: {
+  valueInTokenUnits: bigint
+  depositHash: string
+  issuanceHash: string
+}) {
   const transaction = await supabase
     .from('transaction')
     .update({
@@ -107,7 +111,7 @@ export async function insertTransaction(transaction: TablesInsert<'transaction'>
   return true
 }
 
-export async function getPresaleByAddress(address: Address) {
+export async function getPresaleByAddress(address: string) {
   const { data: presaleAddress, error: presaleAddressError } = await supabase
     .from('presale_address')
     .select('*')
@@ -209,4 +213,19 @@ export async function getPresaleData({ projectId }: { projectId: number }) {
   }
 
   return data as Tables<'presale'> & { presale_address: Tables<'presale_address'>[] }
+}
+
+export async function getWhitelistedAddress(account: string) {
+  const { data, error } = await supabase
+    .from('whitelist')
+    .select('*')
+    .eq('account', account)
+    .single()
+
+  if (error || !data.address) {
+    console.error('Error fetching whitelisted address:', error)
+    throw new Error('Error fetching whitelisted address')
+  }
+
+  return data.address as Address
 }

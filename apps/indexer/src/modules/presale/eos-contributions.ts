@@ -11,13 +11,13 @@ export async function listenToEosContributions(env: 'test' | 'prod' = 'test') {
   const usdt = antelopeTokens.find((token) => token.symbol === 'USDT')
   if (!usdt) throw new Error('USDT token not found')
 
-  const bank = environment[env].bitcash.bank
+  const bank = 'bank.bk'
   const launchpad = 'gaboesquivel'
   const usdtDeposits = await createFirehoseSubscription(
     `receiver:${bank} action:stbtransfer data.to:${launchpad}`,
   )
   const bitusdDeposits = await createFirehoseSubscription(
-    `receiver:${usdt} action:transfer data.to:${launchpad}`,
+    `receiver:${usdt.address} action:transfer data.to:${launchpad}`,
   )
 
   // only first action for now
@@ -26,6 +26,7 @@ export async function listenToEosContributions(env: 'test' | 'prod' = 'test') {
       trxId,
       from: actions[0].from,
       quantity: actions[0].quantity,
+      to: actions[0].to,
     }),
   )
   bitusdDeposits.on('data', ({ trxId, actions }: any) =>
@@ -33,6 +34,7 @@ export async function listenToEosContributions(env: 'test' | 'prod' = 'test') {
       trxId,
       from: actions[0].from,
       quantity: actions[0].quantity.quantity,
+      to: actions[0].to,
     }),
   )
 }
@@ -41,9 +43,8 @@ async function handleDeposit(data: {
   trxId: string
   from: string
   quantity: string
+  to: string
 }) {
-  console.log('handle deposit', data)
-
-  // const result = await tasks.trigger('address-activity', evt)
-  // console.info(`Triggered address activity event for webhook ${evt.id}`, result)
+  const result = await tasks.trigger('eos-presale-deposit', data)
+  console.info(`Triggered address activity event for webhook ${data.trxId}`, result)
 }

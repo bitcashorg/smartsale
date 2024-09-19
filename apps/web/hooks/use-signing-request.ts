@@ -7,6 +7,7 @@ import type { RealtimeChannel } from '@supabase/supabase-js'
 import { useMutation } from '@tanstack/react-query'
 import axios from 'axios'
 import { SigningRequest } from 'eosio-signing-request'
+import { useEffect } from 'react'
 import { useSetState } from 'react-use'
 
 export const [useSigningRequest, UseSigningRequestProvider] = createContextHook(
@@ -27,7 +28,6 @@ function useSigningRequestFn() {
 
       params.append('source', 'bitlauncher.ai')
       const esrCode = esr.encode().replace('esr://', '')
-      console.log('esrCode', esrCode)
       params.append('esr', esrCode)
 
       // we show the qr optimistically
@@ -44,6 +44,7 @@ function useSigningRequestFn() {
       return response.data
     },
     onSuccess: ({ data }) => {
+      console.log('esr success', data)
       const esr = SigningRequest.from(data.code, esrOptions)
 
       // handle success, possibly setting up a subscription to listen for changes
@@ -53,10 +54,11 @@ function useSigningRequestFn() {
           'postgres_changes',
           { event: 'UPDATE', schema: 'public', table: 'esr' },
           (payload) => {
-            console.log('ESR UPDATE!', payload)
+            console.log('🚀 ESR UPDATE!', payload)
             if (payload.new.id !== esr.getInfoKey('uuid')) return
             if (!payload.new.trx_id) return
             // if uuid matches remove channel and reset state
+            console.log('🚀 unsubscribing from esr channel')
             supabase.removeChannel(state.channel!)
             setState(defaultState)
           },
@@ -69,6 +71,13 @@ function useSigningRequestFn() {
       })
     },
   })
+
+  useEffect(() => {
+    return () => {
+      console.log('unsubscribing from esr channel')
+      state.channel && supabase.removeChannel(state.channel)
+    }
+  }, [state.channel, supabase])
 
   const toggleOpen = () => setState(({ open }) => ({ open: !open }))
 
