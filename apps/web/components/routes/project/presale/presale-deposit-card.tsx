@@ -59,7 +59,7 @@ export function PresaleDepositCard({
   )
 }
 
-const stables = ['USDT', 'USDC'] // 'BITUSD'
+const stables = ['USDT', 'USDC', 'BITUSD']
 
 function PresaleDeposit({
   project,
@@ -105,7 +105,7 @@ function PresaleDeposit({
 
   const availableChains = useMemo(() => {
     return tokens
-      .filter((token) => token.symbol === selectedToken && token.chainType === 'evm')
+      .filter((token) => token.symbol === selectedToken)
       .map((token) => token.chainName)
   }, [selectedToken])
 
@@ -120,12 +120,11 @@ function PresaleDeposit({
     // Show an error if the token data is not found
     if (!token) return toast.error('Token data not found')
 
-    const depositAddress = presaleAddresses.find(
-      (presaleAddress) => presaleAddress.chain_id === token.chainId.toString(),
-    )?.deposit_address as Address
-    if (!depositAddress) return toast.error('Deposit address not found')
-
     if (token.chainType === 'evm') {
+      const depositAddress = presaleAddresses.find(
+        (presaleAddress) => presaleAddress.chain_id === token.chainId.toString(),
+      )?.deposit_address as Address
+      if (!depositAddress) return toast.error('Deposit address not found')
       const evmToken = token
       if (chainId !== evmToken.chainId) {
         await switchChain({ chainId: evmToken.chainId })
@@ -190,11 +189,20 @@ function PresaleDeposit({
       }
     } else {
       // handle eos token bitusd and usdt
+      const info = { presale: true }
       const esr =
         selectedToken === 'USDT'
-          ? await genUsdtDepositSigningRequest(Number(amount), address)
-          : await genBitusdDepositSigningRequest(Number(amount), address)
-      requestSignature(esr)
+          ? await genUsdtDepositSigningRequest(Number(amount), 'gaboesquivel', info)
+          : await genBitusdDepositSigningRequest(Number(amount), 'gaboesquivel', info)
+
+      requestSignature({
+        esr,
+        callback: async (esr) => {
+          console.log('deposit success', esr)
+          // NOTE: we dont save the deposit intent here
+          // because its handled by trigger job
+        },
+      })
     }
   }
 

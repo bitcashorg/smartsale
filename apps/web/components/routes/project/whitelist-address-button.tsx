@@ -60,7 +60,6 @@ export function WhitelistAddressButton({ projectId }: { projectId: number }) {
 
   const whitelistedAddress = registration.data?.address || result.data?.info?.address
 
-  console.log('😍 whitelist', { whitelistedAddress, address })
   return whitelistedAddress && whitelistedAddress === address ? (
     <RegisterButton text={'You are whitelisted!'} />
   ) : whitelistedAddress && whitelistedAddress !== address ? (

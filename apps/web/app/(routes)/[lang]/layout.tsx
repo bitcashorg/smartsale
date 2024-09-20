@@ -63,6 +63,7 @@ export default async function RootLayout({ children, params }: RootLayoutProps) 
           </main>
           <Footer params={params} />
           <DynamicSessionDialog />
+          <DynamicEsrDialog />
         </Providers>
 
         <GoogleAnalytics gaId="G-78N0Z7NPQJ" />
@@ -83,6 +84,12 @@ const DynamicSessionDialog = dynamic(
     import('../../../components/dialogs/session/session-dialog').then(
       (mod) => mod.SessionDialog,
     ),
+  {
+    ssr: false,
+  },
+)
+const DynamicEsrDialog = dynamic(
+  () => import('../../../components/dialogs/esr/esr-dialog').then((mod) => mod.EsrDialog),
   {
     ssr: false,
   },

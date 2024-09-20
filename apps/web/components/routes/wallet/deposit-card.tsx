@@ -75,7 +75,7 @@ export function DepositCard() {
         selectedToken === 'USDT'
           ? await genUsdtDepositSigningRequest(amount, address)
           : await genBitusdDepositSigningRequest(amount, address)
-      requestSignature(esr)
+      requestSignature({ esr })
     }
   }
 
