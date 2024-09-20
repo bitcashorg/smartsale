@@ -16,7 +16,7 @@ export function MobileNav({ lang, dict }: MobileNavProps) {
       <AnimatePresence>
         {open && (
           <Transition duration={0.3}>
-            <div className="mobile-nav">
+            <div className="mobile-nav gap-y-8 !overflow-auto py-6">
               <NavLinks mobile lang={lang} dict={dict} />
             </div>
           </Transition>

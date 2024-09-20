@@ -11,6 +11,7 @@ import { User, Wallet } from 'lucide-react'
 import Link from 'next/link'
 import { isMobile } from 'react-device-detect'
 import { useAccount } from 'wagmi'
+import Image from "next/image"
 
 export function SessionButton() {
   const { session, loginRedirect, toggleShowSessionDialog, openConnectModal, logout } =
@@ -39,52 +40,75 @@ export function SessionButton() {
             <Button
               variant="secondary"
               radius="full"
-              className={cn('lg:min-w-[170px] md:px-3 lg:px-4')}
+              className={cn('lg:min-w-52 md:px-3 lg:px-4')}
             >
               <User /> &nbsp; {session?.account}
             </Button>
           </PopoverTrigger>
           <PopoverContent
             align="end"
-            className="w-44 border-accent-500 bg-background text-center"
+            className="w-52 mt-5 bg-accent-600 border-none font-semibold text-center relative after:content-[''] after:absolute after:-top-3 after:mx-auto after:-translate-x-2 after:w-6 after:h-6 after:rotate-45 after:bg-accent-600"
           >
-            <ul className="flex flex-col gap-5 py-2">
-              {appConfig.features.presale && hasSession && (
-                // biome-ignore lint/a11y/useKeyWithClickEvents: <explanation>
-                <li
-                  onClick={openConnectModal ? openConnectModal : openAccountModal}
-                  className="cursor-pointer text-center flex justify-center"
-                >
-                  <Wallet />
-                  &nbsp;{' '}
-                  {account?.address ? formatAddressShort(account.address) : 'Connect'}
-                </li>
-              )}
-              {appConfig.features.presale && (
-                <>
-                  <li>
-                    <Link href="/bitcash-bitlauncher/presale" className="cursor-pointer">
-                      Presale
-                    </Link>
+            <ul className="flex flex-col gap-5 py-2 justify-center items-start text-left">
+              {appConfig.features.wallet ? (
+                <Link className="w-full" href="/wallet" className="cursor-pointer">
+                  <li className="w-full">
+                    My Wallet
                   </li>
-                  {appConfig.features.wallet ? (
-                    <li>
-                      <Link href="/wallet" className="cursor-pointer">
-                        Wallet
-                      </Link>
-                    </li>
-                  ) : null}
-                  <li>
-                    <Link href="/dashboard/referrals" className="cursor-pointer">
-                      Referrals
-                    </Link>
-                  </li>
-                </>
-              )}
-              {/* biome-ignore lint/a11y/useKeyWithClickEvents: not needed rn */}
-              <li onClick={logout} className="cursor-pointer">
-                Sign Out
+                </Link>
+              ) : null}
+
+              <li
+                onClick={openConnectModal ? openConnectModal : openAccountModal}
+                className="w-full cursor-pointer text-center flex justify-start"
+              >
+                <Wallet />
+                &nbsp;{' '}
+                {account?.address ? formatAddressShort(account.address) : 'Connect'}
               </li>
+
+              <li onClick={logout} className="cursor-pointer flex justify-start items-center gap-x-3 pb-5 border-b w-full border-b-textInfoForeground">
+                <span>Sign Out</span>
+                <Image
+                  src="/images/sign-out.svg"
+                  alt="Sign out"
+                  title="Sign out"
+                  width={24}
+                  height={24}
+                />
+              </li>
+
+              {appConfig.features.presale ? (
+                <Link href="/bitcash-bitlauncher/presale" className="w-full cursor-pointer">
+                  <li className="w-full">
+                    Presale
+                  </li>
+                </Link>
+              ) : null}
+
+              <Link href="/about/about-bitlauncher" className="w-full cursor-pointer">
+                <li className="w-full">
+                  About
+                </li>
+              </Link>
+
+              <Link href="/whitepaper" className="w-full cursor-pointer">
+                <li className="w-full">
+                  Whitepaper
+                </li>
+              </Link>
+
+              <Link href="/learn/security" className="w-full cursor-pointer">
+                <li className="w-full">
+                  Security
+                </li>
+              </Link>
+
+              <Link href="/dashboard/referrals" className="w-full cursor-pointer">
+                <li className="w-full">
+                  Referrals
+                </li>
+              </Link>
             </ul>
           </PopoverContent>
         </Popover>
