@@ -57,8 +57,8 @@ export async function genBitusdDepositSigningRequest(amount: number, address: st
         to: 'gaboesquivel',
         memo: 'pair_id:1', //address:${address}
         quantity: {
-          quantity: Asset.from(amount, '4,BITUSD'),
-          contract: appConfig.bitcash.bank,
+          quantity: Asset.from(amount, '2,BITUSD'),
+          contract: appConfig.bitcash.token,
         },
       },
     },
@@ -80,7 +80,7 @@ export async function genUsdtDepositSigningRequest(amount: number, address: stri
       data: {
         from: '............1',
         to: 'gaboesquivel',
-        memo: `address:${address}`,
+        // memo: `address:${address}`,
         quantity: Asset.from(amount, '4,USDT'),
       },
     },
