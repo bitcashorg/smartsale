@@ -4,6 +4,7 @@ import { type Address, formatUnits, getAddress, hexToBigInt, parseUnits } from '
 import type { EVMToken } from '../../../../packages/tokens/src/types'
 import { issuePresaleTokens } from '../lib/presale-issuer'
 import {
+  createDepositAsProcessing,
   getPresaleByAddress,
   getProcessedPresaleDeposits,
   getWhitelistedAddress,
@@ -23,9 +24,6 @@ export const addressActivityTask = task({
     )
 
     try {
-      // set deposit to processing if not already processed or processing
-      await setDepositToProcessing(payload.trxId)
-
       // get user whitelisted address
       const whitelistedAddress = await getWhitelistedAddress(payload.from)
 
@@ -39,6 +37,16 @@ export const addressActivityTask = task({
       // floor and convert quantity to token units
       const valueInTokenUnits = parseUnits(payload.quantity.split('.')[0], 6)
 
+      // create deposit as processing
+      const processingDeposit = await createDepositAsProcessing({
+        deposit_hash: payload.trxId,
+        address: whitelistedAddress,
+        account: payload.from,
+        amount: Number(valueInTokenUnits),
+        presale_id: presale.id,
+        project_id: presale.project_id,
+      })
+      if (!processingDeposit) throw new Error('Failed to create processing deposit')
       // issue presale tokens
       const issuanceHash = await issuePresaleTokens(
         whitelistedAddress,

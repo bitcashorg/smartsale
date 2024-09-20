@@ -229,3 +229,33 @@ export async function getWhitelistedAddress(account: string) {
 
   return data.address as Address
 }
+
+export async function createDepositAsProcessing({
+  deposit_hash,
+  address,
+  account,
+  amount,
+  presale_id,
+  project_id,
+}: TablesInsert<'presale_deposit'>): Promise<Tables<'presale_deposit'> | null> {
+  const { data, error } = await supabase
+    .from('presale_deposit')
+    .insert({
+      account,
+      deposit_hash,
+      address,
+      amount,
+      presale_id,
+      project_id,
+      state: 'processing',
+    })
+    .select()
+    .single()
+
+  if (error) {
+    console.error('Error creating deposit as processing:', error)
+    throw error
+  }
+
+  return data
+}
