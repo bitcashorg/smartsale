@@ -80,6 +80,19 @@ export function NavLinks({
       }
     },
     {
+      id: 'presale',
+      href: '/bitcash-bitlauncher/presale',
+      text: 'Presale',
+      mobile: true,
+      action: null,
+      disabled: appConfig.features.presale && !bitcashAccount,
+      icon: {
+        path: "",
+        left: false,
+        right: false
+      }
+    },
+    {
       id: 'about',
       href: '/about/about-bitlauncher',
       text: dict.nav.about,
@@ -169,7 +182,7 @@ export function NavLinks({
       >
         {
           link?.icon?.left && (
-            <Image 
+            <Image
               src={link?.icon?.path}
               alt={link?.text}
               title={link?.text}
@@ -180,8 +193,8 @@ export function NavLinks({
         }
         {link.text}
         {
-          link?.icon?.right  && (
-            <Image 
+          link?.icon?.right && (
+            <Image
               src={link?.icon?.path}
               alt={link?.text}
               title={link?.text}

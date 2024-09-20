@@ -14,7 +14,7 @@ export async function createSupabaseServerClient() {
    **/
   return createServerClient<Database>(
     appConfig.supabase.url,
-    appConfig.supabase.anonKey,
+    process.env.SUPABASE_SERVICE_ROLE_KEY,
     {
       cookies: {
         get(name: string) {

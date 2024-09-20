@@ -61,6 +61,7 @@ export async function issuePresaleTokens(
 
     console.log(
       `Issued ${formatUnits(amount, 6)} tokens to ${to} on transaction ${trxHash}`,
+      eosEvmMainnet,
     )
 
     const result = await insertTransaction({

@@ -51,7 +51,7 @@ export function SessionButton() {
           >
             <ul className="flex flex-col gap-5 py-2 justify-center items-start text-left">
               {appConfig.features.wallet ? (
-                <Link className="w-full" href="/wallet" className="cursor-pointer">
+                <Link className="w-full cursor-pointer" href="/wallet">
                   <li className="w-full">
                     My Wallet
                   </li>
