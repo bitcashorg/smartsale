@@ -7,14 +7,20 @@ WORKDIR /app
 # Copy the package.json files for the workspaces
 COPY package.json .
 COPY apps/indexer/package.json ./apps/indexer/package.json
-COPY packages/jobs/package.json ./packages/jobs/package.json
-COPY packages/supabase/package.json ./packages/supabase/package.json
-COPY packages/alchemy/package.json ./packages/alchemy/package.json
-COPY packages/app-env/package.json ./packages/app-env/package.json
-COPY packages/contracts/package.json ./packages/contracts/package.json
+
+COPY services/trigger/package.json ./services/trigger/package.json
+COPY services/supabase/package.json ./services/supabase/package.json
+COPY services/alchemy/package.json ./services/alchemy/package.json
+
+COPY packages/config/package.json ./packages/config/package.json
+COPY packages/auction/package.json ./packages/auction/package.json
 COPY packages/utils/package.json ./packages/utils/package.json
-COPY tooling/tsconfig/package.json ./tooling/tsconfig/package.json
+COPY packages/errors/package.json ./packages/errors/package.json
 COPY packages/tokens/package.json ./packages/tokens/package.json
+COPY packages/chains/package.json ./packages/chains/package.json
+
+COPY tooling/tsconfig/package.json ./tooling/tsconfig/package.json
+
 # Copy the lock file
 COPY bun.lockb .
 
@@ -27,6 +33,8 @@ RUN bun install
 # Copy the specific workspaces
 COPY apps/indexer ./apps/indexer
 COPY packages/ ./packages/
+COPY services/ ./services/
+COPY tooling/ ./tooling/
 
 # Set the working directory to your specific workspace
 WORKDIR /app/apps/indexer
