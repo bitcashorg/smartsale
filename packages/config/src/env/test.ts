@@ -24,6 +24,5 @@ export const test: EnvConfig = {
   },
   smartsale: {
     auction: '0x',
-    bk: 'launchpad.bk',
   },
 }

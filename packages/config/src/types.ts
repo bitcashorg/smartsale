@@ -18,7 +18,6 @@ export interface EnvConfig {
   }
   smartsale: {
     auction: Address
-    bk: string
   }
   supabase: {
     url: string

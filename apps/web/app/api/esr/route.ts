@@ -1,6 +1,8 @@
 import { deflateRawSync, inflateRawSync } from 'zlib'
+import { savePresaleDepositIntent } from '@/app/actions/save-deposit'
 import { appConfig } from '@/lib/config'
 import { createSupabaseServerClient } from '@/services/supabase'
+import { insertTransaction } from '@/services/supabase/service'
 import { APIClient } from '@wharfkit/antelope'
 import {
   type AbiProvider,
@@ -10,6 +12,7 @@ import {
   type ZlibProvider,
 } from 'eosio-signing-request'
 import { type NextRequest, NextResponse } from 'next/server'
+import { parseUnits } from 'viem'
 import { z } from 'zod'
 
 export async function POST(req: NextRequest) {
@@ -38,8 +41,9 @@ export async function POST(req: NextRequest) {
     const esr = SigningRequest.from(parsed.req, esrNodeJSOptions)
     const id = esr.getInfoKey('uuid')
     const action = esr.getRawActions()[0].name.toString()
+    const isPresale = Boolean(esr.getInfoKey('presale'))
 
-    console.log('👋 esr data input ', JSON.stringify({ id, action, esr }))
+    console.log('👋 esr data input ', JSON.stringify({ id, action, isPresale, esr }))
 
     // esr request with trx id
     // TODO: review this logic, inserting for now on single go
@@ -78,6 +82,39 @@ export async function POST(req: NextRequest) {
         throw new Error(`Error creating session: ${sessionError.message}`)
       }
       console.log('Session created successfully:', session)
+    }
+
+    if (isPresale) {
+      const transaction = await insertTransaction(
+        {
+          hash: parsed.tx,
+          trx_type: 'presale_deposit',
+          final: false,
+          chain_id: 1,
+          chain_type: 'eos',
+        },
+        supabase,
+      )
+      if (!transaction) {
+        throw new Error('Error creating transaction')
+      }
+      // TODO: save deposit intent here instead of trigger job
+      // console.log('Transaction hash:', trxHash)
+      // const deposit = await savePresaleDepositIntent({
+      //   amount: Number(parseUnits(amount, 6)),
+      //   created_at: new Date().toISOString(),
+      //   deposit_hash: trxHash,
+      //   issuance_hash: null,
+      //   presale_id: project.presaleId as number,
+      //   address,
+      //   project_id: project.id,
+      //   account: session?.account,
+      //   chain_type: evmToken.chainType,
+      //   chainId: evmToken.chainId,
+      // })
+      // console.log('deposit', deposit)
+
+      console.log('Saved transaction:', transaction)
     }
 
     return NextResponse.json({
