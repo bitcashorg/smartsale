@@ -11,7 +11,6 @@ import QRCode from 'react-qr-code'
 
 export function SessionDialogContent() {
   const { esrUrl } = useSigningRequest()
-  console.log('esrUrl', esrUrl)
   return (
     <>
       <DialogHeader className="gap-4">

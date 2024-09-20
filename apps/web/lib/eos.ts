@@ -46,7 +46,11 @@ export async function genLoginSigningRequest(uuid: string = uuidv4()) {
   return req
 }
 
-export async function genBitusdDepositSigningRequest(amount: number, address: string) {
+export async function genBitusdDepositSigningRequest(
+  amount: number,
+  to: string,
+  info = {},
+) {
   const req = createSignatureRequest({
     action: {
       account: appConfig.bitcash.bank,
@@ -54,7 +58,7 @@ export async function genBitusdDepositSigningRequest(amount: number, address: st
       authorization,
       data: {
         from: '............1',
-        to: 'gaboesquivel',
+        to,
         memo: 'pair_id:1', //address:${address}
         quantity: {
           quantity: Asset.from(amount, '2,BITUSD'),
@@ -62,11 +66,24 @@ export async function genBitusdDepositSigningRequest(amount: number, address: st
         },
       },
     },
+    info: {
+      uuid: uuidv4(),
+      appName: 'Bitlauncher',
+      edit: {
+        memo: false,
+        quantity: false,
+      },
+      ...info,
+    },
   })
   return req
 }
 
-export async function genUsdtDepositSigningRequest(amount: number, address: string) {
+export async function genUsdtDepositSigningRequest(
+  amount: number,
+  to: string,
+  info = {},
+) {
   const account = tokens.find(
     (c) => c.chainType === 'antelope' && c.symbol === 'USDT',
   )?.address
@@ -79,7 +96,7 @@ export async function genUsdtDepositSigningRequest(amount: number, address: stri
       authorization,
       data: {
         from: '............1',
-        to: 'gaboesquivel',
+        to,
         // memo: `address:${address}`,
         quantity: Asset.from(amount, '4,USDT'),
       },
@@ -91,6 +108,7 @@ export async function genUsdtDepositSigningRequest(amount: number, address: stri
         memo: false,
         quantity: false,
       },
+      ...info,
     },
   })
   return req

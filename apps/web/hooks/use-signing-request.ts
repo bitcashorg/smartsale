@@ -48,7 +48,8 @@ function useSigningRequestFn() {
       if (response.status !== 200) throw new Error('Failed to request signature')
 
       // handle success, possibly setting up a subscription to listen for changes
-      console.log('🍓 subscribing to esr channel')
+      const channelId = `esr-${esr.getInfoKey('uuid')}`
+      console.log('🍓 subscribing to esr channel', channelId)
       const channel = supabase
         .channel(`esr-${esr.getInfoKey('uuid')}`)
         .on(
@@ -67,7 +68,6 @@ function useSigningRequestFn() {
           },
         )
         .subscribe()
-      console.log('subscribed to esr channel')
 
       setState({
         channel,
@@ -77,12 +77,15 @@ function useSigningRequestFn() {
     },
   })
 
+  // biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
   useEffect(() => {
     return () => {
-      console.log('unsubscribing from esr channel')
-      state.channel && supabase.removeChannel(state.channel)
+      if (state.channel) {
+        console.log('💀 unsubscribing from esr channel')
+        supabase.removeChannel(state.channel)
+      }
     }
-  }, [state.channel, supabase])
+  }, [])
 
   const toggleOpen = () => setState(({ open }) => ({ open: !open }))
 
