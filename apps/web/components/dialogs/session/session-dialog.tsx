@@ -3,7 +3,6 @@
 import { Dialog, DialogContent } from '@/components/ui/dialog'
 import { useSession } from '@/hooks/use-session'
 import { SessionDialogContent } from './login-dialog-content'
-import type { BitcashAccessContentType } from './session-dialog.type'
 
 export function SessionDialog() {
   const { showSessionDialog, toggleShowSessionDialog } = useSession()
@@ -16,8 +15,4 @@ export function SessionDialog() {
       </DialogContent>
     </Dialog>
   )
-}
-
-interface BitcashAccessProps {
-  defaultContent?: BitcashAccessContentType
 }

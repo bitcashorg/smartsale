@@ -1,4 +1,4 @@
-import type { Database, Tables } from '@repo/supabase'
+import type { Database, Tables, TablesInsert } from '@repo/supabase'
 import type { SupabaseClient } from '@supabase/supabase-js'
 import type { Address } from 'viem'
 
@@ -141,4 +141,16 @@ export async function getPresaleDeposits({
   }
 
   return data
+}
+
+export async function insertTransaction(
+  transaction: TablesInsert<'transaction'>,
+  supabase: SupabaseClient,
+) {
+  const result = await supabase.from('transaction').insert(transaction).select()
+  if (!result) {
+    console.error('Error inserting transaction:', transaction)
+    return false
+  }
+  return true
 }
