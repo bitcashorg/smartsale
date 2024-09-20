@@ -42,6 +42,14 @@ export function NavLinks({
       disabled: !bitcashAccount,
     },
     {
+      id: 'presale',
+      href: '/bitcash-bitlauncher/presale',
+      text: 'Pre Sale',
+      mobile: true,
+      action: null,
+      disabled: !bitcashAccount,
+    },
+    {
       id: 'about',
       href: '/about/about-bitlauncher',
       text: dict.nav.about,

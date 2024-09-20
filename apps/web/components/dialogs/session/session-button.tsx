@@ -64,7 +64,7 @@ export function SessionButton() {
                 <>
                   <li>
                     <Link href="/bitcash-bitlauncher/presale" className="cursor-pointer">
-                      Presale
+                      Pre Sale
                     </Link>
                   </li>
                   {appConfig.features.wallet ? (
