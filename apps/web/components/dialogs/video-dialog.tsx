@@ -8,7 +8,10 @@ import {
 } from '@/components/ui/dialog'
 import type { LangProp } from '@/types/routing.type'
 
+const BASE_YT_EMBED_URL = 'https://www.youtube.com/embed/'
+
 export function VideoDialog({ video, trigger }: VideoDialogProps) {
+  const videoSource = BASE_YT_EMBED_URL + video.snippet.resourceId.videoId
   return (
     <Dialog>
       <DialogTrigger asChild>{trigger}</DialogTrigger>
@@ -21,7 +24,8 @@ export function VideoDialog({ video, trigger }: VideoDialogProps) {
 
         <div className="flex min-h-[70vh] w-full">
           <iframe
-            src={`https://www.youtube.com/embed/${video.snippet.resourceId.videoId}?autoplay=1&rel=0`}
+            src={videoSource}
+            rel='0'
             frameBorder="0"
             allowFullScreen
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
