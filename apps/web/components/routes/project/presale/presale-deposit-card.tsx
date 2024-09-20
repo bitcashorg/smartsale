@@ -194,22 +194,12 @@ function PresaleDeposit({
           ? await genUsdtDepositSigningRequest(Number(amount), address)
           : await genBitusdDepositSigningRequest(Number(amount), address)
 
-      requestSignature(esr, {
-        onSuccess: async ({ data }) => {
-          console.log('deposit success', data)
-          // const deposit = await savePresaleDepositIntent({
-          //   amount: Number(parseUnits(amount, 6)),
-          //   created_at: new Date().toISOString(),
-          //   deposit_hash: trxHash,
-          //   issuance_hash: null,
-          //   presale_id: project.presaleId as number,
-          //   address,
-          //   project_id: project.id,
-          //   account: session?.account,
-          //   chain_type: evmToken.chainType,
-          //   chainId: eosToken.chainId,
-          // })
-          console.log('deposit', deposit)
+      requestSignature({
+        esr,
+        callback: async (esr) => {
+          console.log('deposit success', esr)
+          // NOTE: we dont save the deposit intent here
+          // because its handled by trigger job
         },
       })
     }

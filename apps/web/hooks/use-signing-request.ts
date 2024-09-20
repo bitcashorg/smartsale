@@ -1,12 +1,12 @@
 'use client'
 import { useSession } from '@/hooks/use-session'
-import { esrOptions } from '@/lib/eos'
 import { useSupabaseClient } from '@/services/supabase'
 import { createContextHook } from '@blockmatic/hooks-utils'
+import type { Tables } from '@repo/supabase'
 import type { RealtimeChannel } from '@supabase/supabase-js'
 import { useMutation } from '@tanstack/react-query'
 import axios from 'axios'
-import { SigningRequest } from 'eosio-signing-request'
+import type { SigningRequest } from 'eosio-signing-request'
 import { useEffect } from 'react'
 import { useSetState } from 'react-use'
 
@@ -21,7 +21,10 @@ function useSigningRequestFn() {
   const [state, setState] = useSetState<SignatureRequestState>(defaultState)
 
   const { mutate: requestSignature, ...props } = useMutation({
-    mutationFn: async (esr: SigningRequest) => {
+    mutationFn: async ({
+      esr,
+      callback,
+    }: { esr: SigningRequest; callback?: (payload: Tables<'esr'>) => void }) => {
       console.log('requesting signature', esr.encode())
       if (!session?.account) throw new Error('bitcash account not found')
       const params = new URLSearchParams()
@@ -41,15 +44,13 @@ function useSigningRequestFn() {
         code: esr.encode(),
         account: session.account,
       })
-      return response.data
-    },
-    onSuccess: ({ data }) => {
-      console.log('esr success', data)
-      const esr = SigningRequest.from(data.code, esrOptions)
+
+      if (response.status !== 200) throw new Error('Failed to request signature')
 
       // handle success, possibly setting up a subscription to listen for changes
+      console.log('🍓 subscribing to esr channel')
       const channel = supabase
-        .channel('esr')
+        .channel(`esr-${esr.getInfoKey('uuid')}`)
         .on(
           'postgres_changes',
           { event: 'UPDATE', schema: 'public', table: 'esr' },
@@ -57,6 +58,8 @@ function useSigningRequestFn() {
             console.log('🚀 ESR UPDATE!', payload)
             if (payload.new.id !== esr.getInfoKey('uuid')) return
             if (!payload.new.trx_id) return
+            // call callback
+            callback?.(payload.new as unknown as Tables<'esr'>)
             // if uuid matches remove channel and reset state
             console.log('🚀 unsubscribing from esr channel')
             supabase.removeChannel(state.channel!)
@@ -69,6 +72,8 @@ function useSigningRequestFn() {
       setState({
         channel,
       })
+
+      return response.data
     },
   })
 
