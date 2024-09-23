@@ -169,7 +169,7 @@ const SigningRequestCallbackPayloadSchema = z.object({
   req: z.string(),
   sa: z.string(),
   rid: z.string(),
-  bn: z.string(),
+  bn: z.string().optional(),
   tx: z.string(),
   sig: z.string(),
   rbn: z.string(),
