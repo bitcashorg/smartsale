@@ -1,5 +1,6 @@
 import type { ChainType } from '@repo/chains'
 import type { Address } from 'viem'
+
 export interface BaseToken {
   symbol: string
   chainName: string

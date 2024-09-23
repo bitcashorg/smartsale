@@ -3,7 +3,6 @@ import { AuctionDataCard } from '@/components/routes/project/auction/auction-dat
 import { ProjectHeader } from '@/components/routes/project/project-header'
 import { ProjectPresaleData } from '@/components/routes/project/project-presale-data'
 import { Countdown } from '@/components/shared/countdown'
-import { Button } from '@/components/ui/button'
 import {
   Card,
   CardContent,
