@@ -3,6 +3,7 @@ import { savePresaleDepositIntent } from '@/app/actions/save-deposit'
 import { appConfig } from '@/lib/config'
 import { createSupabaseServerClient } from '@/services/supabase'
 import { insertTransaction } from '@/services/supabase/service'
+import { getErrorMessage } from '@repo/errors'
 import { tasks } from '@trigger.dev/sdk/v3'
 import { APIClient } from '@wharfkit/antelope'
 import {
@@ -18,13 +19,11 @@ import { z } from 'zod'
 
 export async function POST(req: NextRequest) {
   try {
-    // const parsed = SigningRequestCallbackPayloadSchema.safeParse(await req.json())
-    const parsed = await req.json()
-    console.log('CAllBACK PARAMS 😎😎😎', parsed)
-    if (!parsed) throw new Error('Invalid ESR CallbackPayload')
-    console.log('🦚🦚🦚 ALL GOOD ', parsed)
+    const parsed = SigningRequestCallbackPayloadSchema.safeParse(await req.json())
 
-    console.log(`🚀 callbackPayload for ${parsed.req}`, JSON.stringify(parsed))
+    if (!parsed.data || parsed.error) throw new Error('Invalid ESR CallbackPayload')
+
+    const payload = parsed.data
     // callbackPayload example
     // {
     //   sp: 'active',
@@ -39,7 +38,9 @@ export async function POST(req: NextRequest) {
     //   cid: 'aca376f206b8fc25a6ed44dbdc66547c36c6c33e3a119ffbeaef943642f0e906'
     // }
 
-    const esr = SigningRequest.from(parsed.req, esrNodeJSOptions)
+    const esr = SigningRequest.from(payload.req, esrNodeJSOptions)
+
+    console.log('ESR callback payload', payload, esr.toJSON())
     const id = esr.getInfoKey('uuid')
     const action = esr.getRawActions()[0].name.toString()
     const isPresale = Boolean(esr.getInfoKey('presale'))
@@ -53,9 +54,9 @@ export async function POST(req: NextRequest) {
       .from('esr')
       .insert({
         id,
-        code: parsed.req,
-        account: parsed.sa,
-        trx_id: parsed.tx,
+        code: payload.req,
+        account: payload.sa,
+        trx_id: payload.tx,
         created_at: new Date().toISOString(),
       })
       .select('*')
@@ -72,9 +73,9 @@ export async function POST(req: NextRequest) {
         .insert([
           {
             id,
-            tx: parsed.tx,
-            account: parsed.sa,
-            esr_code: parsed.req,
+            tx: payload.tx,
+            account: payload.sa,
+            esr_code: payload.req,
           },
         ])
         .select('*')
@@ -88,7 +89,7 @@ export async function POST(req: NextRequest) {
     if (isPresale) {
       const transaction = await insertTransaction(
         {
-          hash: parsed.tx,
+          hash: payload.tx,
           trx_type: 'presale_deposit',
           final: false,
           chain_id: 1,
@@ -100,10 +101,10 @@ export async function POST(req: NextRequest) {
 
       // NOTE: hotfix for now, we dont wait finality as indexer is in progress
       const eosDeposit = {
-        trxId: parsed.tx,
-        from: parsed.sa,
-        quantity: parsed.bn,
-        to: parsed.sa,
+        trxId: payload.tx,
+        from: payload.sa,
+        quantity: payload.bn,
+        to: payload.sa,
       }
       const result = await tasks.trigger('eos-presale-deposit', eosDeposit)
       console.info(
@@ -134,11 +135,12 @@ export async function POST(req: NextRequest) {
       success: true,
       message: 'Successfully received esr callback',
     })
-  } catch (error: any) {
+  } catch (error) {
     console.error('Error handling request:', error)
     return NextResponse.json({
       success: false,
-      message: error.message || 'An error occurred during the request processing',
+      message:
+        getErrorMessage(error) || 'An error occurred during the request processing',
     })
   }
 }
