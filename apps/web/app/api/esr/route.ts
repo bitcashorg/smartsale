@@ -8,19 +8,19 @@ import { tasks } from '@trigger.dev/sdk/v3'
 import { APIClient } from '@wharfkit/antelope'
 import {
   type AbiProvider,
-  CallbackPayload,
   SigningRequest,
   type SigningRequestEncodingOptions,
   type ZlibProvider,
 } from 'eosio-signing-request'
 import { type NextRequest, NextResponse } from 'next/server'
-import { parseUnits } from 'viem'
 import { z } from 'zod'
 
 export async function POST(req: NextRequest) {
   try {
-    const parsed = SigningRequestCallbackPayloadSchema.safeParse(await req.json())
+    const request = await req.json()
+    console.log('Request', request)
 
+    const parsed = SigningRequestCallbackPayloadSchema.safeParse(request)
     if (!parsed.data || parsed.error) throw new Error('Invalid ESR CallbackPayload')
 
     const payload = parsed.data
