@@ -173,9 +173,9 @@ const SigningRequestCallbackPayloadSchema = z.object({
   tx: z.string(),
   sig: z.string(),
   rbn: z.string(),
-  ex: z.string(),
+  ex: z.string().optional(),
   // ex: z.string().refine(arg => !isNaN(Date.parse(arg)), {
   //   message: 'ex must be a valid ISO date string'
   // }),
-  cid: z.string(),
+  cid: z.string().optional(),
 })
