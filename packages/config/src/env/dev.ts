@@ -1,6 +1,7 @@
 import type { EnvConfig } from '../types'
 
 export const dev: EnvConfig = {
+  // esrCallbackUrl: 'https://dev.bitlauncher.ai/api/esr',
   esrCallbackUrl: 'https://dev.bitlauncher.ai/api/esr',
   chains: [],
   issuer: {
