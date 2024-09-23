@@ -21,6 +21,8 @@ export async function POST(req: NextRequest) {
     console.log('Request', request)
 
     const parsed = SigningRequestCallbackPayloadSchema.safeParse(request)
+    if (parsed.error)
+      console.error('Invalid ESR CallbackPayload', parsed.error, parsed.data)
     if (!parsed.data || parsed.error) throw new Error('Invalid ESR CallbackPayload')
 
     const payload = parsed.data
