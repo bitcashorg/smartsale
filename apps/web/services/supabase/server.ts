@@ -8,13 +8,9 @@ import { cookies } from 'next/headers'
 export async function createSupabaseServerClient() {
   const cookieStore = cookies()
 
-  // ! Signaled as deprecated: createServerClient,
-  /** (from IDE)
-   * @deprecated Please specify `getAll` and `setAll` cookie methods instead of the `get`, `set` and `remove`.These will not be supported in the next major version.
-   **/
-  return createServerClient<Database>(
+  return createServerClient(
     appConfig.supabase.url,
-    process.env.SUPABASE_SERVICE_ROLE_KEY,
+    process.env.SUPABASE_SERVICE_ROLE_KEY as string,
     {
       cookies: {
         get(name: string) {

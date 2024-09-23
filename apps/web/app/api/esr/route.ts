@@ -3,6 +3,7 @@ import { savePresaleDepositIntent } from '@/app/actions/save-deposit'
 import { appConfig } from '@/lib/config'
 import { createSupabaseServerClient } from '@/services/supabase'
 import { insertTransaction } from '@/services/supabase/service'
+import { tasks } from '@trigger.dev/sdk/v3'
 import { APIClient } from '@wharfkit/antelope'
 import {
   type AbiProvider,
@@ -95,9 +96,21 @@ export async function POST(req: NextRequest) {
         },
         supabase,
       )
-      if (!transaction) {
-        throw new Error('Error creating transaction')
+      if (!transaction) throw new Error('Error creating transaction')
+
+      // NOTE: hotfix for now, we dont wait finality as indexer is in progress
+      const eosDeposit = {
+        trxId: parsed.tx,
+        from: parsed.sa,
+        quantity: parsed.bn,
+        to: parsed.sa,
       }
+      const result = await tasks.trigger('eos-presale-deposit', eosDeposit)
+      console.info(
+        `Triggered address activity event for webhook ${eosDeposit.trxId}`,
+        result,
+      )
+
       // TODO: save deposit intent here instead of trigger job
       // console.log('Transaction hash:', trxHash)
       // const deposit = await savePresaleDepositIntent({
