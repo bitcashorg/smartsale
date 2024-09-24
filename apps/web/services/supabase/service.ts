@@ -161,6 +161,7 @@ export async function getWhitelistedAddress(account: string, supabase: SupabaseC
     .from('whitelist')
     .select('*')
     .eq('account', account)
+    .eq('project_id', 1) // TODO: make this dynamic
     .single()
 
   if (error || !data.address) {
