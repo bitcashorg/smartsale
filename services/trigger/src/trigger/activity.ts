@@ -145,7 +145,7 @@ async function validateTransaction(txn: AlchemyActivity, token: EVMToken) {
 }
 
 async function setDepositToProcessing(txn: AlchemyActivity) {
-  const isProccessed = await isDepositProcessing({ depositHash: txn.hash, supabase })
+  const isProccessed = await isDepositProcessing({ depositHash: txn.hash })
   if (isProccessed) throw new Error(`Deposit already processed: ${txn.hash}`)
 
   const processingDeposit = await setPresaleDepositStatus({

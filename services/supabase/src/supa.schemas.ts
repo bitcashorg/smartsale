@@ -485,7 +485,7 @@ export const trxTypeSchema = z.union([
 ]);
 
 export const transactionInsertSchema = z.object({
-  chain_id: z.number(),
+  chain_id: z.string(),
   chain_type: chainTypeSchema,
   created_at: z.string().optional(),
   final: z.boolean().optional(),
@@ -494,7 +494,7 @@ export const transactionInsertSchema = z.object({
 });
 
 export const transactionUpdateSchema = z.object({
-  chain_id: z.number().optional(),
+  chain_id: z.string().optional(),
   chain_type: chainTypeSchema.optional(),
   created_at: z.string().optional(),
   final: z.boolean().optional(),
@@ -559,7 +559,7 @@ export const presaleDepositRowSchema = z.object({
 });
 
 export const transactionRowSchema = z.object({
-  chain_id: z.number(),
+  chain_id: z.string(),
   chain_type: chainTypeSchema,
   created_at: z.string(),
   final: z.boolean(),

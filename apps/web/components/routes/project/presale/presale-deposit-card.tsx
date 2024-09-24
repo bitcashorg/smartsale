@@ -126,7 +126,7 @@ function PresaleDeposit({
       )?.deposit_address as Address
       if (!depositAddress) return toast.error('Deposit address not found')
       const evmToken = token
-      if (chainId !== evmToken.chainId) {
+      if (chainId.toString() !== evmToken.chainId.toString()) {
         await switchChain({ chainId: evmToken.chainId })
       } else {
         const isEthUsdt = token.chainId === 1 && token.symbol === 'USDT'
@@ -180,7 +180,7 @@ function PresaleDeposit({
                 project_id: project.id,
                 account: session?.account,
                 chain_type: evmToken.chainType,
-                chainId: evmToken.chainId,
+                chainId: evmToken.chainId.toString(),
               })
               console.log('deposit', deposit)
             },
@@ -192,8 +192,8 @@ function PresaleDeposit({
       const info = { presale: true }
       const esr =
         selectedToken === 'USDT'
-          ? await genUsdtDepositSigningRequest(Number(amount), 'gaboesquivel', info)
-          : await genBitusdDepositSigningRequest(Number(amount), 'gaboesquivel', info)
+          ? await genUsdtDepositSigningRequest(Number(amount), 'bldeposit.bk', info)
+          : await genBitusdDepositSigningRequest(Number(amount), 'bldeposit.bk', info)
 
       requestSignature({
         esr,

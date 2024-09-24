@@ -448,7 +448,7 @@ export type Database = {
       }
       transaction: {
         Row: {
-          chain_id: number
+          chain_id: string
           chain_type: Database["public"]["Enums"]["chain_type"]
           created_at: string
           final: boolean
@@ -456,7 +456,7 @@ export type Database = {
           trx_type: Database["public"]["Enums"]["trx_type"]
         }
         Insert: {
-          chain_id: number
+          chain_id: string
           chain_type: Database["public"]["Enums"]["chain_type"]
           created_at?: string
           final?: boolean
@@ -464,7 +464,7 @@ export type Database = {
           trx_type: Database["public"]["Enums"]["trx_type"]
         }
         Update: {
-          chain_id?: number
+          chain_id?: string
           chain_type?: Database["public"]["Enums"]["chain_type"]
           created_at?: string
           final?: boolean

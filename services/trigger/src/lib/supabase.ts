@@ -181,10 +181,8 @@ export async function getProcessedPresaleDeposits({
 
 export async function isDepositProcessing({
   depositHash,
-  supabase,
 }: {
   depositHash: string
-  supabase: SupabaseClient
 }): Promise<boolean> {
   const { data, error } = await supabase
     .from('presale_deposit')
@@ -220,6 +218,7 @@ export async function getWhitelistedAddress(account: string) {
     .from('whitelist')
     .select('*')
     .eq('account', account)
+    .eq('project_id', 1) // TODO: make this dynamic
     .single()
 
   if (error || !data.address) {

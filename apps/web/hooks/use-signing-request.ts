@@ -54,7 +54,7 @@ function useSigningRequestFn() {
         .channel(`esr-${esr.getInfoKey('uuid')}`)
         .on(
           'postgres_changes',
-          { event: 'UPDATE', schema: 'public', table: 'esr' },
+          { event: 'INSERT', schema: 'public', table: 'esr' },
           (payload) => {
             console.log('🚀 ESR UPDATE!', payload)
             if (payload.new.id !== esr.getInfoKey('uuid')) return
@@ -63,7 +63,7 @@ function useSigningRequestFn() {
             callback?.(payload.new as unknown as Tables<'esr'>)
             // if uuid matches remove channel and reset state
             console.log('🚀 unsubscribing from esr channel')
-            supabase.removeChannel(state.channel!)
+            state.channel && supabase.removeChannel(state.channel)
             setState(defaultState)
           },
         )

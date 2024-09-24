@@ -66,7 +66,10 @@ export async function issuePresaleTokens(
 
     const result = await insertTransaction({
       hash: trxHash,
-      chain_id: appConfig.env === 'prod' ? eosEvmMainnet.id : eosEvmTestnet.id,
+      chain_id: (appConfig.env === 'prod'
+        ? eosEvmMainnet.id
+        : eosEvmTestnet.id
+      ).toString(),
       chain_type: 'evm',
       trx_type: 'presale_token_issuance',
     })
