@@ -2,6 +2,7 @@ import type { AntelopeChain } from './types'
 
 export const antelopeChains: AntelopeChain[] = [
   {
+    chainType: 'antelope',
     id: 'aca376f206b8fc25a6ed44dbdc66547cce914bab6a707060b5f7c8eac02ccb67',
     chainId: 'aca376f206b8fc25a6ed44dbdc66547cce914bab6a707060b5f7c8eac02ccb67', // Mainnet Chain ID
     // symbol: 'EOS',

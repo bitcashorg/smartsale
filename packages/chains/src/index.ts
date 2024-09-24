@@ -8,11 +8,11 @@ import { antelopeChains } from './antelope'
 // import { cosmosChains } from './cosmos'
 import { evmChains } from './evm'
 // import { solanaChains } from './solana'
-import type { AnyChain } from './types'
+import type { AnyChain, ChainType } from './types'
 
 export const allChains: AnyChain[] = [
-  ...antelopeChains,
-  ...evmChains,
+  ...antelopeChains.map((chain) => ({ ...chain, chainType: 'antelope' as ChainType })),
+  ...evmChains.map((chain) => ({ ...chain, chainType: 'evm' as ChainType })),
   // ...solanaChains,
   // ...cosmosChains,
 ]
