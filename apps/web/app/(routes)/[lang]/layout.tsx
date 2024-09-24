@@ -151,6 +151,10 @@ export const metadata: Metadata = {
     'launch',
     'pad',
     'launching',
-    'launching',
   ],
+  other: {
+    'google-site-verification': process.env.GOOGLE_SITE_VERIFICATION_TOKEN as string,
+    'theme-color': '#080e44',
+    'apple-mobile-web-app-status-bar-style': 'black-translucent',
+  }
 }
