@@ -8,7 +8,7 @@ export const antelopeChains: AntelopeChain[] = [
     name: 'EOS Mainnet', // Name of the network
     rpcUrl: 'https://api.eosn.io',
     rpcUrls: { default: { http: ['https://api.eosn.io'] } },
-    explorerUrl: 'https://eos.bloks.io',
+    explorerUrl: 'https://bloks.io',
     blockExplorers: {
       default: {
         name: 'bloks',

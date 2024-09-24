@@ -181,10 +181,8 @@ export async function getProcessedPresaleDeposits({
 
 export async function isDepositProcessing({
   depositHash,
-  supabase,
 }: {
   depositHash: string
-  supabase: SupabaseClient
 }): Promise<boolean> {
   const { data, error } = await supabase
     .from('presale_deposit')
