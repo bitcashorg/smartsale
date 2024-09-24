@@ -69,7 +69,7 @@ export async function POST(req: NextRequest) {
     console.log('ESR entry updated successfully:', esrUpdate)
 
     // create a session is if the signed action is login
-    if (action.name.toString() === 'login') {
+    if (esr.getRawActions()[0].name.toString() === 'login') {
       const { data: session, error: sessionError } = await supabase
         .from('session')
         .insert([
