@@ -93,7 +93,7 @@ export async function POST(req: NextRequest) {
 				trxId: payload.tx,
 				from: payload.sa,
 				quantity: isBankTransfer
-					? JSON.parse(action.data.quantity.toString()).quantity
+					? JSON.parse(JSON.stringify(action.data.quantity)).quantity
 					: action.data.quantity,
 				to: action.data.to,
 			};
