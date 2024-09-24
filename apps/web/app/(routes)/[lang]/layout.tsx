@@ -151,6 +151,10 @@ export const metadata: Metadata = {
     'launch',
     'pad',
     'launching',
-    'launching',
   ],
+  other: {
+    'google-site-verification': 'By9aM0DbPDDO9qa7Y3zNwDFyYuSPslVzje76EVOCcY0'
+    // 'theme-color': '#ffffff',
+    // 'apple-mobile-web-app-status-bar-style': 'black-translucent',
+  }
 }
