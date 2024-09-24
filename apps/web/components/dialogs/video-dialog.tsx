@@ -1,3 +1,5 @@
+'use client'
+
 import {
   Dialog,
   DialogContent,
@@ -7,11 +9,32 @@ import {
   DialogTrigger,
 } from '@/components/ui/dialog'
 import type { LangProp } from '@/types/routing.type'
+import { useEffect } from 'react'
 
 const BASE_YT_EMBED_URL = 'https://www.youtube.com/embed/'
 
 export function VideoDialog({ video, trigger }: VideoDialogProps) {
   const videoSource = BASE_YT_EMBED_URL + video.snippet.resourceId.videoId
+  const isPlaylist = videoSource.includes('videoseries')
+
+  useEffect(() => {
+    if (!isPlaylist) return
+
+    const timeout = setTimeout(() => {
+      const playlistArrow = document.querySelector('.playlist-pointer')
+
+      if (!playlistArrow) return
+
+      playlistArrow.classList.remove('playlist-pointer')
+
+      clearTimeout(timeout)
+    }, 30000)
+
+    return () => {
+      clearTimeout(timeout)
+    }
+  }, [])
+
   return (
     <Dialog>
       <DialogTrigger asChild>{trigger}</DialogTrigger>
@@ -22,7 +45,10 @@ export function VideoDialog({ video, trigger }: VideoDialogProps) {
           <DialogDescription>{video.snippet.description}</DialogDescription>
         </DialogHeader>
 
-        <div className="flex min-h-[70vh] w-full">
+        <div className="video-wrapper">
+          {isPlaylist && (
+            <div className="playlist-pointer" />
+          )}
           <iframe
             src={videoSource}
             rel='0'
