@@ -126,7 +126,7 @@ function PresaleDeposit({
       )?.deposit_address as Address
       if (!depositAddress) return toast.error('Deposit address not found')
       const evmToken = token
-      if (chainId !== evmToken.chainId) {
+      if (chainId.toString() !== evmToken.chainId.toString()) {
         await switchChain({ chainId: evmToken.chainId })
       } else {
         const isEthUsdt = token.chainId === 1 && token.symbol === 'USDT'

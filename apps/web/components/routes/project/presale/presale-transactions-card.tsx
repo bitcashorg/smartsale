@@ -125,7 +125,9 @@ export function PresaleTransactionsCard(params: {
 }
 
 function TransactionRow({ contribution }: { contribution: PresaleContribution }) {
-  const chain = allChains.find((chain) => chain.id === contribution.transaction.chain_id)
+  const chain = allChains.find(
+    (chain) => chain.id.toString() === contribution.transaction.chain_id.toString(),
+  )
   return (
     <TableRow>
       <TableCell>
