@@ -153,8 +153,8 @@ export const metadata: Metadata = {
     'launching',
   ],
   other: {
-    'google-site-verification': 'By9aM0DbPDDO9qa7Y3zNwDFyYuSPslVzje76EVOCcY0'
-    // 'theme-color': '#ffffff',
-    // 'apple-mobile-web-app-status-bar-style': 'black-translucent',
+    'google-site-verification': process.env.GOOGLE_SITE_VERIFICATION_TOKEN as string,
+    'theme-color': '#080e44',
+    'apple-mobile-web-app-status-bar-style': 'black-translucent',
   }
 }
