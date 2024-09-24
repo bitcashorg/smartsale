@@ -5,7 +5,7 @@ import { createSupabaseServerClient } from '@/services/supabase'
 import { insertTransaction } from '@/services/supabase/service'
 import { getErrorMessage } from '@repo/errors'
 import { tasks } from '@trigger.dev/sdk/v3'
-import { APIClient } from '@wharfkit/antelope'
+import { ABI, APIClient, Action } from '@wharfkit/antelope'
 import {
   type AbiProvider,
   SigningRequest,
@@ -44,7 +44,7 @@ export async function POST(req: NextRequest) {
 
     console.log('ESR callback payload', payload, esr.toJSON())
     const id = esr.getInfoKey('uuid')
-    const action = esr.getRawActions()[0].name.toString()
+    const action = esr.data.req.toJSON()
     const isPresale = Boolean(esr.getInfoKey('presale'))
 
     console.log('👋 esr data input ', JSON.stringify({ id, action, isPresale, esr }))
@@ -69,7 +69,7 @@ export async function POST(req: NextRequest) {
     console.log('ESR entry updated successfully:', esrUpdate)
 
     // create a session is if the signed action is login
-    if (action === 'login') {
+    if (action.name.toString() === 'login') {
       const { data: session, error: sessionError } = await supabase
         .from('session')
         .insert([
@@ -102,17 +102,20 @@ export async function POST(req: NextRequest) {
       if (!transaction) throw new Error('Error creating transaction')
 
       // NOTE: hotfix for now, we dont wait finality as indexer is in progress
-      const eosDeposit = {
-        trxId: payload.tx,
-        from: payload.sa,
-        quantity: payload.bn,
-        to: payload.sa,
-      }
-      const result = await tasks.trigger('eos-presale-deposit', eosDeposit)
-      console.info(
-        `Triggered address activity event for webhook ${eosDeposit.trxId}`,
-        result,
-      )
+
+      // const actionData = Action.from(action.data,abi}
+
+      // const eosDeposit = {
+      //   trxId: payload.tx,
+      //   from: payload.sa,
+      //   quantity: payload.bn,
+      //   to:
+      // }
+      // const result = await tasks.trigger('eos-presale-deposit', eosDeposit)
+      // console.info(
+      //   `Triggered address activity event for webhook ${eosDeposit.trxId}`,
+      //   result,
+      // )
 
       // TODO: save deposit intent here instead of trigger job
       // console.log('Transaction hash:', trxHash)
@@ -178,4 +181,37 @@ const SigningRequestCallbackPayloadSchema = z.object({
   //   message: 'ex must be a valid ISO date string'
   // }),
   cid: z.string().optional(),
+})
+
+const abi = ABI.from({
+  version: 'eosio::abi/1.0',
+  types: [],
+  variants: [],
+  structs: [
+    {
+      name: 'transfer',
+      base: '',
+      fields: [
+        {
+          name: 'from',
+          type: 'name',
+        },
+        {
+          name: 'to',
+          type: 'name',
+        },
+        {
+          name: 'quantity',
+          type: 'asset',
+        },
+        {
+          name: 'memo',
+          type: 'string',
+        },
+      ],
+    },
+  ],
+  actions: [],
+  tables: [],
+  ricardian_clauses: [],
 })
