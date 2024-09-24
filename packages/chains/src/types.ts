@@ -1,8 +1,7 @@
 import type { Chain as ViemChain } from 'viem'
 
 export type ChainType = 'evm' | 'antelope' | 'solana' | 'cosmos'
-
-export type EVMChain = ViemChain
+export type EVMChain = ViemChain & { chainType: 'evm' }
 
 // NOTE: work in progress to support all chains
 export type AnyChain = EVMChain | AntelopeChain
@@ -22,6 +21,7 @@ export type CosmosChain = {
 }
 
 export interface AntelopeChain {
+  chainType: 'antelope'
   id: string
   chainId: string
   name: string
