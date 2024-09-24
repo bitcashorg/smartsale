@@ -128,10 +128,13 @@ function TransactionRow({ contribution }: { contribution: PresaleContribution })
   const chain = allChains.find(
     (chain) => chain.id.toString() === contribution.transaction.chain_id.toString(),
   )
+  const isEvm = chain?.chainType === 'evm'
   return (
     <TableRow>
       <TableCell>
-        <div className="font-medium">{formatAddress(contribution.address)}</div>
+        <div className="font-medium">
+          {isEvm ? formatAddress(contribution.address) : contribution.account}
+        </div>
       </TableCell>
 
       <TableCell>
