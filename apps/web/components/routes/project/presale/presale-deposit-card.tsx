@@ -192,8 +192,8 @@ function PresaleDeposit({
       const info = { presale: true }
       const esr =
         selectedToken === 'USDT'
-          ? await genUsdtDepositSigningRequest(Number(amount), 'gaboesquivel', info)
-          : await genBitusdDepositSigningRequest(Number(amount), 'gaboesquivel', info)
+          ? await genUsdtDepositSigningRequest(Number(amount), 'bldeposit.bk', info)
+          : await genBitusdDepositSigningRequest(Number(amount), 'bldeposit.bk', info)
 
       requestSignature({
         esr,
