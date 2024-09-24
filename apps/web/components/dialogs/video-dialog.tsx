@@ -8,6 +8,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from '@/components/ui/dialog'
+import { cn } from '@/lib/utils'
 import type { LangProp } from '@/types/routing.type'
 import { useEffect } from 'react'
 
@@ -46,9 +47,7 @@ export function VideoDialog({ video, trigger }: VideoDialogProps) {
         </DialogHeader>
 
         <div className="video-wrapper">
-          {isPlaylist && (
-            <div className="playlist-pointer" />
-          )}
+          <div className={cn({ 'playlist-pointer': isPlaylist })} />
           <iframe
             src={videoSource}
             rel='0'
