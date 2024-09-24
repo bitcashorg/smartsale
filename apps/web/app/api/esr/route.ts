@@ -81,16 +81,18 @@ export async function POST(req: NextRequest) {
       const eosDeposit = {
         trxId: payload.tx,
         from: payload.sa,
-        quantity: isBankTransfer
-          ? JSON.parse(JSON.stringify(action.data.quantity)).quantity
-          : action.data.quantity,
+        quantity: String(
+          isBankTransfer
+            ? JSON.parse(JSON.stringify(action.data.quantity)).quantity
+            : action.data.quantity.toString(),
+        ),
         to: action.data.to,
       }
 
       const whitelistedAddress = await getWhitelistedAddress(payload.sa, supabase)
 
       const intent = await savePresaleDepositIntent({
-        amount: Number(parseUnits(eosDeposit.quantity.toString().split('.')[0], 6)),
+        amount: Number(parseUnits(eosDeposit.quantity.split('.')[0], 6)),
         created_at: new Date().toISOString(),
         deposit_hash: payload.tx,
         issuance_hash: null,
