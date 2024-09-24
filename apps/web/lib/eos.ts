@@ -97,7 +97,7 @@ export async function genUsdtDepositSigningRequest(
       data: {
         from: '............1',
         to,
-        // memo: `address:${address}`,
+        memo: 'presale deposit',
         quantity: Asset.from(amount, '4,USDT'),
       },
     },
