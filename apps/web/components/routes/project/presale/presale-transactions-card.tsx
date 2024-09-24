@@ -21,7 +21,7 @@ import {
   type PresaleContribution,
   getPresaleContributions,
 } from '@/services/supabase/service'
-import { eosEvmMainnet, eosEvmTestnet, evmChains } from '@repo/chains'
+import { allChains, eosEvmMainnet, eosEvmTestnet } from '@repo/chains'
 import { formatAddress } from '@repo/utils'
 import { useEffect, useState } from 'react'
 
@@ -125,7 +125,7 @@ export function PresaleTransactionsCard(params: {
 }
 
 function TransactionRow({ contribution }: { contribution: PresaleContribution }) {
-  const chain = evmChains.find((chain) => chain.id === contribution.transaction.chain_id)
+  const chain = allChains.find((chain) => chain.id === contribution.transaction.chain_id)
   return (
     <TableRow>
       <TableCell>

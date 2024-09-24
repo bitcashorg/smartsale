@@ -10,7 +10,7 @@ import { z } from 'zod'
 
 const extendedPresaleDepositInsertSchema = presaleDepositInsertSchema.extend({
   chain_type: chainTypeSchema,
-  chainId: z.number(),
+  chainId: z.string(),
 })
 
 //Stores a deposit intent in the database, creating a pending transaction and a deposit record.
@@ -21,6 +21,7 @@ export const savePresaleDepositIntent = createSafeActionClient()
       parsedInput: transfer,
     }): Promise<ActionResult<Tables<'presale_deposit'>>> => {
       try {
+        console.log('savePresaleDepositIntent', transfer)
         const supabase = await createSupabaseServerClient()
 
         const transaction = await supabase

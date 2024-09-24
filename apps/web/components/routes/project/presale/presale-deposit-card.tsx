@@ -180,7 +180,7 @@ function PresaleDeposit({
                 project_id: project.id,
                 account: session?.account,
                 chain_type: evmToken.chainType,
-                chainId: evmToken.chainId,
+                chainId: evmToken.chainId.toString(),
               })
               console.log('deposit', deposit)
             },

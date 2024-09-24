@@ -2,7 +2,7 @@ import { deflateRawSync, inflateRawSync } from 'node:zlib'
 import { savePresaleDepositIntent } from '@/app/actions/save-deposit'
 import { appConfig } from '@/lib/config'
 import { createSupabaseServerClient } from '@/services/supabase'
-import { insertTransaction } from '@/services/supabase/service'
+import { getWhitelistedAddress, insertTransaction } from '@/services/supabase/service'
 import { eosEvmMainnet } from '@repo/chains'
 import { getErrorMessage } from '@repo/errors'
 import { tasks } from '@trigger.dev/sdk/v3'
@@ -14,6 +14,7 @@ import {
   type ZlibProvider,
 } from 'eosio-signing-request'
 import { type NextRequest, NextResponse } from 'next/server'
+import { parseUnits } from 'viem'
 import { z } from 'zod'
 
 export async function POST(req: NextRequest) {
@@ -77,18 +78,6 @@ export async function POST(req: NextRequest) {
     }
 
     if (isPresale) {
-      const transaction = await insertTransaction(
-        {
-          hash: payload.tx,
-          trx_type: 'presale_deposit',
-          final: false,
-          chain_id: eosEvmMainnet.id,
-          chain_type: 'eos',
-        },
-        supabase,
-      )
-      if (!transaction) throw new Error('Error creating transaction')
-
       const eosDeposit = {
         trxId: payload.tx,
         from: payload.sa,
@@ -97,13 +86,28 @@ export async function POST(req: NextRequest) {
           : action.data.quantity,
         to: action.data.to,
       }
+
+      const whitelistedAddress = await getWhitelistedAddress(payload.sa, supabase)
+
+      const intent = await savePresaleDepositIntent({
+        amount: Number(parseUnits(eosDeposit.quantity.split('.')[0], 6)),
+        created_at: new Date().toISOString(),
+        deposit_hash: payload.tx,
+        issuance_hash: null,
+        presale_id: 1,
+        address: whitelistedAddress,
+        project_id: 1,
+        account: payload.sa,
+        chain_type: 'eos',
+        chainId: 'aca376f206b8fc25a6ed44dbdc66547cce914bab6a707060b5f7c8eac02ccb67',
+      })
+      if (!intent) throw new Error('Error saving deposit intent')
+
       const result = await tasks.trigger('eos-presale-deposit', eosDeposit)
       console.info(
         `Triggered address activity event for webhook ${eosDeposit.trxId}`,
         result,
       )
-
-      console.log('Saved transaction:', transaction)
     }
 
     return NextResponse.json({

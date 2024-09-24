@@ -1,6 +1,7 @@
 import type { Database, Tables, TablesInsert } from '@repo/supabase'
 import type { SupabaseClient } from '@supabase/supabase-js'
 import type { Address } from 'viem'
+import { supabase } from '../../../../services/trigger/src/lib/supabase'
 
 // NOTE: This functions can be used on both server and client
 
@@ -153,4 +154,19 @@ export async function insertTransaction(
     return false
   }
   return true
+}
+
+export async function getWhitelistedAddress(account: string, supabase: SupabaseClient) {
+  const { data, error } = await supabase
+    .from('whitelist')
+    .select('*')
+    .eq('account', account)
+    .single()
+
+  if (error || !data.address) {
+    console.error('Error fetching whitelisted address:', error)
+    throw new Error('Error fetching whitelisted address')
+  }
+
+  return data.address as Address
 }
