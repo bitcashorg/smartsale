@@ -9,7 +9,7 @@ import { useAccountModal, useConnectModal } from '@rainbow-me/rainbowkit'
 import { formatAddress } from '@repo/utils'
 import Image from "next/image"
 import Link from 'next/link'
-import { useRouter } from 'next/navigation'
+import { useRouter, usePathname } from 'next/navigation'
 import { v4 as uuidv4 } from 'uuid'
 import { useAccount } from 'wagmi'
 
@@ -23,6 +23,7 @@ export function NavLinks({
   const { openAccountModal } = useAccountModal()
   const { address } = useAccount()
   const router = useRouter()
+  const path = usePathname()
   const { close } = useMobileNav() // Use context to close the menu
   const bitcashAccount = session?.account
 
@@ -166,7 +167,13 @@ export function NavLinks({
       <Link
         key={`${mobile ? 'mobile' : 'desktop'}-link-${link.href}-${uuidv4()}`}
         shallow
-        className={cn("flex justify-center items-center gap-x-3 font-semibold w-11/12", link.id === "logout" && "pb-8 border-b border-b-textInfoForeground")}
+        className={
+          cn(
+            "flex justify-center items-center gap-x-3 font-semibold w-11/12 hover:text-accent-400 active:text-accent-400 transition-all", 
+            link.id === "logout" && "pb-8 border-b border-b-textInfoForeground",
+            link.href === path.split("/en")[1] ? "text-accent-400" : ""
+          )
+        }
         href={link.href ? `/${lang}${link.href}` : '#'}
         onClick={(e) => {
           e.preventDefault()

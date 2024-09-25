@@ -12,6 +12,7 @@ import Link from 'next/link'
 import { isMobile } from 'react-device-detect'
 import { useAccount } from 'wagmi'
 import Image from "next/image"
+import { usePathname } from 'next/navigation'
 
 export function SessionButton() {
   const { session, loginRedirect, toggleShowSessionDialog, openConnectModal, logout } =
@@ -19,6 +20,7 @@ export function SessionButton() {
   const { openAccountModal } = useAccountModal()
   const account = useAccount()
   const hasSession = session?.account
+  const path = usePathname()
 
   const loginUser = () => (isMobile ? loginRedirect() : toggleShowSessionDialog())
 
@@ -51,7 +53,11 @@ export function SessionButton() {
           >
             <ul className="flex flex-col gap-5 py-2 justify-center items-start text-left">
               {appConfig.features.wallet ? (
-                <Link className="w-full cursor-pointer" href="/wallet">
+                <Link className={cn(
+                  "w-full cursor-pointer hover:text-accent-400 active:text-accent-400 transition-all",
+                  "/wallet" === path.split("/en")[1] ? "text-accent-400" : ""
+                )
+                } href="/wallet">
                   <li className="w-full">
                     My Wallet
                   </li>
@@ -79,32 +85,25 @@ export function SessionButton() {
               </li>
 
               {appConfig.features.presale ? (
-                <Link href="/bitcash-bitlauncher/presale" className="w-full cursor-pointer">
+                <Link
+                  href="/bitcash-bitlauncher/presale"
+                  className={cn(
+                    "w-full cursor-pointer hover:text-accent-400 active:text-accent-400 transition-all",
+                    "/bitcash-bitlauncher/presale" === path.split("/en")[1] ? "text-accent-400" : ""
+                  )
+                  }
+                >
                   <li className="w-full">
                     Presale
                   </li>
                 </Link>
               ) : null}
 
-              <Link href="/about/about-bitlauncher" className="w-full cursor-pointer">
-                <li className="w-full">
-                  About
-                </li>
-              </Link>
-
-              <Link href="/whitepaper" className="w-full cursor-pointer">
-                <li className="w-full">
-                  Whitepaper
-                </li>
-              </Link>
-
-              <Link href="/learn/security" className="w-full cursor-pointer">
-                <li className="w-full">
-                  Security
-                </li>
-              </Link>
-
-              <Link href="/dashboard/referrals" className="w-full cursor-pointer">
+              <Link href="/dashboard/referrals" className={cn(
+                "w-full cursor-pointer hover:text-accent-400 active:text-accent-400 transition-all",
+                "/dashboard/referrals" === path.split("/en")[1] ? "text-accent-400" : ""
+              )
+              }>
                 <li className="w-full">
                   Referrals
                 </li>
