@@ -3,15 +3,15 @@
 import { useMobileNav } from '@/hooks/use-mobile-navigation'
 import { useSession } from '@/hooks/use-session'
 import { appConfig } from '@/lib/config'
+import { cn } from '@/lib/utils'
 import type { LangProp } from '@/types/routing.type'
 import { useAccountModal, useConnectModal } from '@rainbow-me/rainbowkit'
 import { formatAddress } from '@repo/utils'
+import Image from "next/image"
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { v4 as uuidv4 } from 'uuid'
 import { useAccount } from 'wagmi'
-import Image from "next/image"
-import { cn } from '@/lib/utils'
 
 export function NavLinks({
   mobile = false,
@@ -85,7 +85,7 @@ export function NavLinks({
       text: 'Presale',
       mobile: true,
       action: null,
-      disabled: appConfig.features.presale && !bitcashAccount,
+      disabled: !appConfig.features.presale && !bitcashAccount,
       icon: {
         path: "",
         left: false,
