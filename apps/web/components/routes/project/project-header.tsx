@@ -25,6 +25,7 @@ export function ProjectHeader({
       </div>
       {/* <ProjectDataCard project={project} /> */}
       <section className="container z-10 flex flex-col items-center pt-10 align-center">
+        ''
         <h1 className="flex flex-col p-10 mx-auto text-center whitespace-pre-line align-center md:mb-10">
           <sub className="w-full h-8 mb-16 text-xl font-semibold drop-shadow-md md:mb-0 md:h-10 md:text-2xl">
             {project.pitch}
@@ -33,9 +34,7 @@ export function ProjectHeader({
             <Balancer>{project.title.toUpperCase()}</Balancer>
           </span>
         </h1>
-
         {appConfig.features.presale ? <ProjectPills project={project} /> : null}
-
         <div className="container">{children}</div>
       </section>
     </header>
