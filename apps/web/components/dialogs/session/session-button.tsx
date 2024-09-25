@@ -51,7 +51,7 @@ export function SessionButton() {
             align="end"
             className="w-52 mt-5 bg-accent-600 border-none font-semibold text-center relative after:content-[''] after:absolute after:-top-3 after:mx-auto after:-translate-x-2 after:w-6 after:h-6 after:rotate-45 after:bg-accent-600"
           >
-            <ul className="flex flex-col gap-5 py-2 justify-center items-start text-left">
+            <ul className="flex flex-col gap-5 py-2 justify-center items-center text-center">
               {appConfig.features.wallet ? (
                 <Link className={cn(
                   "w-full cursor-pointer hover:text-accent-400 active:text-accent-400 transition-all",
@@ -66,15 +66,15 @@ export function SessionButton() {
 
               <li
                 onClick={openConnectModal ? openConnectModal : openAccountModal}
-                className="w-full cursor-pointer text-center flex justify-start"
+                className="w-full cursor-pointer text-center flex justify-center gap-x-1"
               >
                 <Wallet />
                 &nbsp;{' '}
-                {account?.address ? formatAddressShort(account.address) : 'Connect'}
+                <span className="hover:text-accent-400 active:text-accent-400">{account?.address ? formatAddressShort(account.address) : 'Connect'}</span>
               </li>
 
-              <li onClick={logout} className="cursor-pointer flex justify-start items-center gap-x-3 pb-5 border-b w-full border-b-textInfoForeground">
-                <span>Sign Out</span>
+              <li onClick={logout} className="hover:text-accent-400 active:text-accent-400 cursor-pointer flex justify-center items-center gap-x-3 pb-5 border-b w-full border-b-textInfoForeground/50">
+                <span className="hover:text-accent-400 active:text-accent-400">Sign Out</span>
                 <Image
                   src="/images/sign-out.svg"
                   alt="Sign out"
