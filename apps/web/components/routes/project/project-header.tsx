@@ -13,11 +13,11 @@ export function ProjectHeader({
   children: ReactNode
 }) {
   return (
-    <header className="flex size-full justify-center md:mb-0 md:min-h-[95vh]">
-      <div className="h-fit !py-0 md:static md:h-auto md:!pt-[6rem]">
+    <header className="flex size-full justify-center md:mb-0 md:mx-h-[95vh]">
+      <div className="h-fit !py-0 md:static md:h-auto md:!pt-[6rem] h-[95vh] overflow-hidden">
         <Image
           alt={project.title}
-          className="pointer-events-none absolute inset-0 size-[95vh] object-cover opacity-50"
+          className="pointer-events-none absolute inset-0 size-[95vh] object-cover opacity-50 h-[95vh] overflow-hidden max-h-[95vh] max-w-[100vw]"
           src={project.heroImage}
           fill
           priority
