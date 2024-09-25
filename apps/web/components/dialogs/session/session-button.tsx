@@ -8,11 +8,11 @@ import { cn } from '@/lib/utils'
 import { useAccountModal } from '@rainbow-me/rainbowkit'
 import { formatAddressShort } from '@repo/utils'
 import { User, Wallet } from 'lucide-react'
-import Link from 'next/link'
 import { isMobile } from 'react-device-detect'
 import { useAccount } from 'wagmi'
 import Image from "next/image"
-import { usePathname } from 'next/navigation'
+import { ActiveLink } from '@/components/ui/active-link'
+import { useParams } from 'next/navigation';
 
 export function SessionButton() {
   const { session, loginRedirect, toggleShowSessionDialog, openConnectModal, logout } =
@@ -20,10 +20,11 @@ export function SessionButton() {
   const { openAccountModal } = useAccountModal()
   const account = useAccount()
   const hasSession = session?.account
-  const path = usePathname()
+
+  const { lang } = useParams();
 
   const loginUser = () => (isMobile ? loginRedirect() : toggleShowSessionDialog())
-
+  
   return (
     <div className="flex justify-end gap-1.5 lg:gap-5">
       {!hasSession ? (
@@ -53,15 +54,11 @@ export function SessionButton() {
           >
             <ul className="flex flex-col gap-5 py-2 justify-center items-center text-center">
               {appConfig.features.wallet ? (
-                <Link className={cn(
-                  "w-full cursor-pointer hover:text-accent-400 active:text-accent-400 transition-all",
-                  "/wallet" === path.split("/en")[1] ? "text-accent-400" : ""
-                )
-                } href="/wallet">
+                <ActiveLink href={`/${lang}/wallet`}>
                   <li className="w-full">
                     My Wallet
                   </li>
-                </Link>
+                </ActiveLink>
               ) : null}
 
               <li
@@ -85,29 +82,18 @@ export function SessionButton() {
               </li>
 
               {appConfig.features.presale ? (
-                <Link
-                  href="/bitcash-bitlauncher/presale"
-                  className={cn(
-                    "w-full cursor-pointer hover:text-accent-400 active:text-accent-400 transition-all",
-                    "/bitcash-bitlauncher/presale" === path.split("/en")[1] ? "text-accent-400" : ""
-                  )
-                  }
-                >
+                <ActiveLink href={`/${lang}/bitcash-bitlauncher/presale`}>
                   <li className="w-full">
                     Presale
                   </li>
-                </Link>
+                </ActiveLink>
               ) : null}
 
-              <Link href="/dashboard/referrals" className={cn(
-                "w-full cursor-pointer hover:text-accent-400 active:text-accent-400 transition-all",
-                "/dashboard/referrals" === path.split("/en")[1] ? "text-accent-400" : ""
-              )
-              }>
+              <ActiveLink href={`/${lang}/dashboard/referrals`}>
                 <li className="w-full">
                   Referrals
                 </li>
-              </Link>
+              </ActiveLink>
             </ul>
           </PopoverContent>
         </Popover>

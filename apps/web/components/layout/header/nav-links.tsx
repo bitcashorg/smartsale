@@ -1,5 +1,6 @@
 'use client'
 
+import { ActiveLink } from '@/components/ui/active-link'
 import { useMobileNav } from '@/hooks/use-mobile-navigation'
 import { useSession } from '@/hooks/use-session'
 import { appConfig } from '@/lib/config'
@@ -164,14 +165,13 @@ export function NavLinks({
     if ((link.mobile && !mobile) || link.disabled) return null
 
     return (
-      <Link
+      <ActiveLink
         key={`${mobile ? 'mobile' : 'desktop'}-link-${link.href}-${uuidv4()}`}
-        shallow
+        shallow={true}
         className={
           cn(
-            "flex justify-center items-center gap-x-3 font-semibold w-11/12 hover:text-accent-400 active:text-accent-400 transition-all", 
+            "flex justify-center items-center gap-x-3 font-semibold w-11/12", 
             link.id === "logout" && "pb-8 border-b border-b-textInfoForeground",
-            link.href === path.split("/en")[1] ? "text-accent-400" : ""
           )
         }
         href={link.href ? `/${lang}${link.href}` : '#'}
@@ -210,7 +210,7 @@ export function NavLinks({
             />
           )
         }
-      </Link>
+      </ActiveLink>
     )
   })
 }
