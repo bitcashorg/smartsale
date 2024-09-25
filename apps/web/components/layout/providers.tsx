@@ -77,7 +77,7 @@ const customRainbowKitTheme = merge(lightTheme(), {
 } as Theme)
 
 if (typeof window !== 'undefined') {
-  const multibaseKey = appConfig.multibase.key
+  const multibaseKey = appConfig.analytics.multibase.key
 
   if (!multibaseKey) {
     console.error('Missing MULTIBASE_API_KEY')

@@ -11,6 +11,7 @@ import { Header } from '@/components/layout/header'
 import { Providers } from '@/components/layout/providers'
 import { getDictionary } from '@/dictionaries'
 import { locales } from '@/dictionaries/locales'
+import { appConfig } from '@/lib/config'
 import { cn } from '@/lib/utils'
 import type { CommonPageParams } from '@/types/routing.type'
 import { GoogleAnalytics } from '@next/third-parties/google'
@@ -153,8 +154,8 @@ export const metadata: Metadata = {
     'launching',
   ],
   other: {
-    'google-site-verification': process.env.GOOGLE_SITE_VERIFICATION_TOKEN as string,
-    'p:domain_verify': process.env.PINTEREST_DOMAIN_VERIFICATION_TOKEN as string,
+    'google-site-verification': appConfig.analytics.google.siteVerification,
+    'p:domain_verify': appConfig.analytics.pinterest.domainVerification,
     'theme-color': '#080e44',
     'apple-mobile-web-app-status-bar-style': 'black-translucent',
   }
