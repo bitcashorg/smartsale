@@ -16,6 +16,7 @@ function useMobileNavFn() {
   const close = () => {
     setOpen(false)
   }
+
   // Control the body scroll
   useEffect(() => {
     document.body.style.overflow = open ? 'hidden' : 'auto'
@@ -27,7 +28,7 @@ function useMobileNavFn() {
   return {
     open,
     toggleOpen,
-    close,
+    close
   }
 }
 
