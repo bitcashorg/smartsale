@@ -1,6 +1,6 @@
 'use client'
 
-import { ActiveLink } from '@/components/ui/active-link'
+import { ActiveLink } from '@/components/shared/active-link'
 import { useMobileNav } from '@/hooks/use-mobile-navigation'
 import { useSession } from '@/hooks/use-session'
 import { appConfig } from '@/lib/config'
@@ -9,7 +9,6 @@ import type { LangProp } from '@/types/routing.type'
 import { useAccountModal, useConnectModal } from '@rainbow-me/rainbowkit'
 import { formatAddress } from '@repo/utils'
 import Image from "next/image"
-import Link from 'next/link'
 import { useRouter, usePathname } from 'next/navigation'
 import { v4 as uuidv4 } from 'uuid'
 import { useAccount } from 'wagmi'
