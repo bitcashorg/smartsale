@@ -12,8 +12,16 @@ export const appConfig = {
   alchemy: {
     notifyToken: process.env.ALCHEMY_NOTIFY_TOKEN || '',
   },
-  multibase: {
-    key: process.env.NEXT_PUBLIC_MULTIBASE_API_KEY,
+  analytics: {
+    google: {
+      siteVerification: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION_TOKEN || '',
+    },
+    pinterest: {
+      domainVerification: process.env.NEXT_PUBLIC_PINTEREST_DOMAIN_VERIFICATION_TOKEN || '',
+    },
+    multibase: {
+      key: process.env.NEXT_PUBLIC_MULTIBASE_API_KEY,
+    },
   },
   features: {
     wallet: process.env.NEXT_PUBLIC_ENABLE_WALLET_REDIRECT === 'true',
