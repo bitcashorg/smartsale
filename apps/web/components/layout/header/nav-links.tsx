@@ -10,6 +10,8 @@ import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { v4 as uuidv4 } from 'uuid'
 import { useAccount } from 'wagmi'
+import Image from "next/image"
+import { cn } from '@/lib/utils'
 
 export function NavLinks({
   mobile = false,
@@ -32,6 +34,24 @@ export function NavLinks({
       mobile: true,
       action: bitcashAccount ? null : loginRedirect,
       disabled: false,
+      icon: {
+        path: "",
+        left: false,
+        right: false
+      }
+    },
+    {
+      id: 'wallet',
+      href: '/wallet',
+      text: "My Wallet",
+      mobile: true,
+      action: null,
+      disabled: !appConfig.features.wallet && !bitcashAccount,
+      icon: {
+        path: "",
+        left: false,
+        right: false
+      }
     },
     {
       id: 'connect',
@@ -40,62 +60,11 @@ export function NavLinks({
       mobile: true,
       action: () => (bitcashAccount ? openConnectModal?.() : openAccountModal?.()),
       disabled: !bitcashAccount,
-    },
-    {
-      id: 'presale',
-      href: '/bitcash-bitlauncher/presale',
-      text: 'Pre Sale',
-      mobile: true,
-      action: null,
-      disabled: !bitcashAccount,
-    },
-    {
-      id: 'about',
-      href: '/about/about-bitlauncher',
-      text: dict.nav.about,
-      mobile: false,
-      action: null,
-      disabled: false,
-    },
-    {
-      id: 'whitepaper',
-      href: '/whitepaper',
-      text: 'Whitepaper',
-      mobile: false,
-      action: null,
-      disabled: false,
-    },
-    {
-      id: 'security',
-      href: '/learn/security',
-      text: dict.nav.security,
-      mobile: false,
-      action: null,
-      disabled: false,
-    },
-    {
-      id: 'wallet',
-      href: '/wallet',
-      text: dict.nav.wallet,
-      mobile: true,
-      action: null,
-      disabled: !appConfig.features.wallet,
-    },
-    {
-      id: 'blog',
-      href: '/blog',
-      text: 'Blog',
-      mobile: false,
-      action: null,
-      disabled: true,
-    },
-    {
-      id: 'referrals',
-      href: '/dashboard/referrals',
-      text: 'Referrals program',
-      mobile: true,
-      action: null,
-      disabled: !bitcashAccount,
+      icon: {
+        path: address ? "/images/wallet.svg" : "",
+        left: address ? true : false,
+        right: false
+      }
     },
     {
       id: 'logout',
@@ -104,6 +73,89 @@ export function NavLinks({
       text: 'Sign out',
       mobile: true,
       disabled: !bitcashAccount,
+      icon: {
+        path: "/images/sign-out.svg",
+        left: false,
+        right: true
+      }
+    },
+    {
+      id: 'presale',
+      href: '/bitcash-bitlauncher/presale',
+      text: 'Presale',
+      mobile: true,
+      action: null,
+      disabled: appConfig.features.presale && !bitcashAccount,
+      icon: {
+        path: "",
+        left: false,
+        right: false
+      }
+    },
+    {
+      id: 'about',
+      href: '/about/about-bitlauncher',
+      text: dict.nav.about,
+      mobile: false,
+      action: null,
+      disabled: false,
+      icon: {
+        path: "",
+        left: false,
+        right: false
+      }
+    },
+    {
+      id: 'whitepaper',
+      href: '/whitepaper',
+      text: 'Whitepaper',
+      mobile: false,
+      action: null,
+      disabled: false,
+      icon: {
+        path: "",
+        left: false,
+        right: false
+      }
+    },
+    {
+      id: 'security',
+      href: '/learn/security',
+      text: dict.nav.security,
+      mobile: false,
+      action: null,
+      disabled: false,
+      icon: {
+        path: "",
+        left: false,
+        right: false
+      }
+    },
+    {
+      id: 'blog',
+      href: '/blog',
+      text: 'Blog',
+      mobile: false,
+      action: null,
+      disabled: true,
+      icon: {
+        path: "",
+        left: false,
+        right: false
+      }
+    },
+    {
+      id: 'referrals',
+      href: '/dashboard/referrals',
+      text: 'Referrals',
+      mobile: true,
+      action: null,
+      disabled: !bitcashAccount,
+      icon: {
+        path: "",
+        left: false,
+        right: false
+      }
     },
   ] as const
 
@@ -114,7 +166,7 @@ export function NavLinks({
       <Link
         key={`${mobile ? 'mobile' : 'desktop'}-link-${link.href}-${uuidv4()}`}
         shallow
-        className="flex"
+        className={cn("flex justify-center items-center gap-x-3 font-semibold w-11/12", link.id === "logout" && "pb-8 border-b border-b-textInfoForeground")}
         href={link.href ? `/${lang}${link.href}` : '#'}
         onClick={(e) => {
           e.preventDefault()
@@ -128,7 +180,29 @@ export function NavLinks({
         }}
         aria-disabled={link.disabled}
       >
+        {
+          link?.icon?.left && (
+            <Image
+              src={link?.icon?.path}
+              alt={link?.text}
+              title={link?.text}
+              width={24}
+              height={24}
+            />
+          )
+        }
         {link.text}
+        {
+          link?.icon?.right && (
+            <Image
+              src={link?.icon?.path}
+              alt={link?.text}
+              title={link?.text}
+              width={24}
+              height={24}
+            />
+          )
+        }
       </Link>
     )
   })
