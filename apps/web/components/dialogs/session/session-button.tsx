@@ -8,10 +8,11 @@ import { cn } from '@/lib/utils'
 import { useAccountModal } from '@rainbow-me/rainbowkit'
 import { formatAddressShort } from '@repo/utils'
 import { User, Wallet } from 'lucide-react'
-import Link from 'next/link'
 import { isMobile } from 'react-device-detect'
 import { useAccount } from 'wagmi'
 import Image from "next/image"
+import { ActiveLink } from '@/components/shared/active-link'
+import { useParams } from 'next/navigation';
 
 export function SessionButton() {
   const { session, loginRedirect, toggleShowSessionDialog, openConnectModal, logout } =
@@ -20,8 +21,10 @@ export function SessionButton() {
   const account = useAccount()
   const hasSession = session?.account
 
-  const loginUser = () => (isMobile ? loginRedirect() : toggleShowSessionDialog())
+  const { lang } = useParams();
 
+  const loginUser = () => (isMobile ? loginRedirect() : toggleShowSessionDialog())
+  
   return (
     <div className="flex justify-end gap-1.5 lg:gap-5">
       {!hasSession ? (
@@ -49,26 +52,26 @@ export function SessionButton() {
             align="end"
             className="w-52 mt-5 bg-accent-600 border-none font-semibold text-center relative after:content-[''] after:absolute after:-top-3 after:mx-auto after:-translate-x-2 after:w-6 after:h-6 after:rotate-45 after:bg-accent-600"
           >
-            <ul className="flex flex-col gap-5 py-2 justify-center items-start text-left">
+            <ul className="flex flex-col gap-5 py-2 justify-center items-center text-center">
               {appConfig.features.wallet ? (
-                <Link className="w-full cursor-pointer" href="/wallet">
+                <ActiveLink href={`/${lang}/wallet`}>
                   <li className="w-full">
                     My Wallet
                   </li>
-                </Link>
+                </ActiveLink>
               ) : null}
 
               <li
                 onClick={openConnectModal ? openConnectModal : openAccountModal}
-                className="w-full cursor-pointer text-center flex justify-start"
+                className="w-full cursor-pointer text-center flex justify-center gap-x-1"
               >
                 <Wallet />
                 &nbsp;{' '}
-                {account?.address ? formatAddressShort(account.address) : 'Connect'}
+                <span className="hover:text-accent-400 active:text-accent-400">{account?.address ? formatAddressShort(account.address) : 'Connect'}</span>
               </li>
 
-              <li onClick={logout} className="cursor-pointer flex justify-start items-center gap-x-3 pb-5 border-b w-full border-b-textInfoForeground">
-                <span>Sign Out</span>
+              <li onClick={logout} className="hover:text-accent-400 active:text-accent-400 cursor-pointer flex justify-center items-center gap-x-3 pb-5 border-b w-full border-b-textInfoForeground/50">
+                <span className="hover:text-accent-400 active:text-accent-400">Sign Out</span>
                 <Image
                   src="/images/sign-out.svg"
                   alt="Sign out"
@@ -79,36 +82,18 @@ export function SessionButton() {
               </li>
 
               {appConfig.features.presale ? (
-                <Link href="/bitcash-bitlauncher/presale" className="w-full cursor-pointer">
+                <ActiveLink href={`/${lang}/bitcash-bitlauncher/presale`}>
                   <li className="w-full">
                     Presale
                   </li>
-                </Link>
+                </ActiveLink>
               ) : null}
 
-              <Link href="/about/about-bitlauncher" className="w-full cursor-pointer">
-                <li className="w-full">
-                  About
-                </li>
-              </Link>
-
-              <Link href="/whitepaper" className="w-full cursor-pointer">
-                <li className="w-full">
-                  Whitepaper
-                </li>
-              </Link>
-
-              <Link href="/learn/security" className="w-full cursor-pointer">
-                <li className="w-full">
-                  Security
-                </li>
-              </Link>
-
-              <Link href="/dashboard/referrals" className="w-full cursor-pointer">
+              <ActiveLink href={`/${lang}/dashboard/referrals`}>
                 <li className="w-full">
                   Referrals
                 </li>
-              </Link>
+              </ActiveLink>
             </ul>
           </PopoverContent>
         </Popover>
