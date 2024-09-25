@@ -208,7 +208,7 @@ function PresaleDeposit({
 
   return (
     <div>
-      <CardHeader className="p-0 pb-5">
+      <CardHeader className="p-0 pb-5 overflow-hidden">
         <CardTitle>Deposit USD</CardTitle>
         <CardDescription>Deposit USD tokens to participate.</CardDescription>
       </CardHeader>
