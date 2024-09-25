@@ -1,5 +1,6 @@
 'use client'
 
+import { ActiveLink } from '@/components/shared/active-link'
 import { useMobileNav } from '@/hooks/use-mobile-navigation'
 import { useSession } from '@/hooks/use-session'
 import { appConfig } from '@/lib/config'
@@ -8,8 +9,7 @@ import type { LangProp } from '@/types/routing.type'
 import { useAccountModal, useConnectModal } from '@rainbow-me/rainbowkit'
 import { formatAddress } from '@repo/utils'
 import Image from "next/image"
-import Link from 'next/link'
-import { useRouter } from 'next/navigation'
+import { useRouter, usePathname } from 'next/navigation'
 import { v4 as uuidv4 } from 'uuid'
 import { useAccount } from 'wagmi'
 
@@ -23,6 +23,7 @@ export function NavLinks({
   const { openAccountModal } = useAccountModal()
   const { address } = useAccount()
   const router = useRouter()
+  const path = usePathname()
   const { close } = useMobileNav() // Use context to close the menu
   const bitcashAccount = session?.account
 
@@ -163,10 +164,15 @@ export function NavLinks({
     if ((link.mobile && !mobile) || link.disabled) return null
 
     return (
-      <Link
+      <ActiveLink
         key={`${mobile ? 'mobile' : 'desktop'}-link-${link.href}-${uuidv4()}`}
-        shallow
-        className={cn("flex justify-center items-center gap-x-3 font-semibold w-11/12", link.id === "logout" && "pb-8 border-b border-b-textInfoForeground")}
+        shallow={true}
+        className={
+          cn(
+            "flex justify-center items-center gap-x-3 font-semibold w-11/12", 
+            link.id === "logout" && "pb-8 border-b border-b-textInfoForeground",
+          )
+        }
         href={link.href ? `/${lang}${link.href}` : '#'}
         onClick={(e) => {
           e.preventDefault()
@@ -203,7 +209,7 @@ export function NavLinks({
             />
           )
         }
-      </Link>
+      </ActiveLink>
     )
   })
 }
