@@ -85,7 +85,7 @@ function PresaleDeposit({
 
   const whitelist = useQuery({
     queryKey: ['presale-cat whitelist', address, project.id],
-    enabled: Boolean(address),
+    enabled: Boolean(session?.account),
     queryFn: async () => {
       // this should never happen. see enabled: Boolean(session?.account && address)
       if (!address || !session?.account) throw new Error('No address or account')
@@ -206,6 +206,12 @@ function PresaleDeposit({
     }
   }
 
+  const whitelistedAddress = whitelist.data?.address
+  const isEOS = selectedChain === 'EOS'
+  const requireWhitelist = isEOS
+    ? false
+    : !whitelistedAddress || whitelistedAddress !== address
+
   return (
     <div>
       <CardHeader className="p-0 pb-5 overflow-hidden">
@@ -260,7 +266,7 @@ function PresaleDeposit({
       <div className="flex flex-col space-y-2">
         {
           // if the current address is not in the whitelist, show the whitelist button
-          whitelist.data?.address !== address ? (
+          requireWhitelist ? (
             <WhitelistAddressButton projectId={project.id} />
           ) : isPresaleActive ? (
             <Button variant="tertiary" onClick={deposit} disabled={status === 'pending'}>
@@ -271,7 +277,10 @@ function PresaleDeposit({
               <Button variant="tertiary">Join Auction Now</Button>
             </Link>
           ) : (
-            <WhitelistAddressButton projectId={project.id} />
+            <div>
+              wat
+              <WhitelistAddressButton projectId={project.id} />
+            </div>
           )
         }
       </div>
