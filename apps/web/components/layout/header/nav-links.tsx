@@ -12,6 +12,7 @@ import Image from "next/image"
 import { useRouter, usePathname } from 'next/navigation'
 import { v4 as uuidv4 } from 'uuid'
 import { useAccount } from 'wagmi'
+import { LogOut, Wallet } from 'lucide-react'
 
 export function NavLinks({
   mobile = false,
@@ -36,7 +37,7 @@ export function NavLinks({
       action: bitcashAccount ? null : loginRedirect,
       disabled: false,
       icon: {
-        path: "",
+        element: "",
         left: false,
         right: false
       }
@@ -49,7 +50,7 @@ export function NavLinks({
       action: null,
       disabled: !appConfig.features.wallet && !bitcashAccount,
       icon: {
-        path: "",
+        element: "",
         left: false,
         right: false
       }
@@ -62,7 +63,7 @@ export function NavLinks({
       action: () => (bitcashAccount ? openConnectModal?.() : openAccountModal?.()),
       disabled: !bitcashAccount,
       icon: {
-        path: address ? "/images/wallet.svg" : "",
+        element: address ? <Wallet /> : "",
         left: address ? true : false,
         right: false
       }
@@ -75,7 +76,7 @@ export function NavLinks({
       mobile: true,
       disabled: !bitcashAccount,
       icon: {
-        path: "/images/sign-out.svg",
+        element: <LogOut />,
         left: false,
         right: true
       }
@@ -88,7 +89,7 @@ export function NavLinks({
       action: null,
       disabled: !appConfig.features.presale && !bitcashAccount,
       icon: {
-        path: "",
+        element: "",
         left: false,
         right: false
       }
@@ -101,7 +102,7 @@ export function NavLinks({
       action: null,
       disabled: false,
       icon: {
-        path: "",
+        element: "",
         left: false,
         right: false
       }
@@ -114,7 +115,7 @@ export function NavLinks({
       action: null,
       disabled: false,
       icon: {
-        path: "",
+        element: "",
         left: false,
         right: false
       }
@@ -127,7 +128,7 @@ export function NavLinks({
       action: null,
       disabled: false,
       icon: {
-        path: "",
+        element: "",
         left: false,
         right: false
       }
@@ -140,7 +141,7 @@ export function NavLinks({
       action: null,
       disabled: true,
       icon: {
-        path: "",
+        element: "",
         left: false,
         right: false
       }
@@ -153,7 +154,7 @@ export function NavLinks({
       action: null,
       disabled: !bitcashAccount,
       icon: {
-        path: "",
+        element: "",
         left: false,
         right: false
       }
@@ -188,25 +189,13 @@ export function NavLinks({
       >
         {
           link?.icon?.left && (
-            <Image
-              src={link?.icon?.path}
-              alt={link?.text}
-              title={link?.text}
-              width={24}
-              height={24}
-            />
+            link?.icon?.element
           )
         }
         {link.text}
         {
           link?.icon?.right && (
-            <Image
-              src={link?.icon?.path}
-              alt={link?.text}
-              title={link?.text}
-              width={24}
-              height={24}
-            />
+            link?.icon?.element
           )
         }
       </ActiveLink>
