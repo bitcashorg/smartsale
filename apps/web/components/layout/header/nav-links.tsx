@@ -27,11 +27,6 @@ export function NavLinks({
   const { close } = useMobileNav()
   const bitcashAccount = session?.account
 
-  console.log("appConfig.features.wallet", appConfig.features.wallet)
-  console.log("bitcashAccount", bitcashAccount)
-  console.log("bitcashAccount", !bitcashAccount)
-  console.log("appConfig.features.wallet", !appConfig.features.wallet && !bitcashAccount)
-
   const links = [
     {
       id: 'login',
