@@ -8,11 +8,10 @@ import { cn } from '@/lib/utils'
 import type { LangProp } from '@/types/routing.type'
 import { useAccountModal, useConnectModal } from '@rainbow-me/rainbowkit'
 import { formatAddress } from '@repo/utils'
-import Image from "next/image"
-import { useRouter, usePathname } from 'next/navigation'
+import { LogOut, Wallet } from 'lucide-react'
+import { useRouter } from 'next/navigation'
 import { v4 as uuidv4 } from 'uuid'
 import { useAccount } from 'wagmi'
-import { LogOut, Wallet } from 'lucide-react'
 
 export function NavLinks({
   mobile = false,
