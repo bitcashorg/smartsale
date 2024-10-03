@@ -42,6 +42,19 @@ export function NavLinks({
       }
     },
     {
+      id: 'connect',
+      href: null,
+      text: address ? formatAddress(address) : dict.nav.connect,
+      mobile: true,
+      action: () => (bitcashAccount ? openConnectModal?.() : openAccountModal?.()),
+      disabled: !bitcashAccount,
+      icon: {
+        element: address ? <Wallet /> : "",
+        left: address ? true : false,
+        right: false
+      }
+    },
+    {
       id: 'wallet',
       href: '/wallet',
       text: "My Wallet",
@@ -55,15 +68,28 @@ export function NavLinks({
       }
     },
     {
-      id: 'connect',
-      href: null,
-      text: address ? formatAddress(address) : dict.nav.connect,
+      id: 'presale',
+      href: '/bitcash-bitlauncher/presale',
+      text: 'Presale',
       mobile: true,
-      action: () => (bitcashAccount ? openConnectModal?.() : openAccountModal?.()),
+      action: null,
+      disabled: !appConfig.features.presale || !bitcashAccount,
+      icon: {
+        element: "",
+        left: false,
+        right: false
+      }
+    },
+    {
+      id: 'referrals',
+      href: '/dashboard/referrals',
+      text: 'Referrals',
+      mobile: true,
+      action: null,
       disabled: !bitcashAccount,
       icon: {
-        element: address ? <Wallet /> : "",
-        left: address ? true : false,
+        element: "",
+        left: false,
         right: false
       }
     },
@@ -80,19 +106,7 @@ export function NavLinks({
         right: true
       }
     },
-    {
-      id: 'presale',
-      href: '/bitcash-bitlauncher/presale',
-      text: 'Presale',
-      mobile: true,
-      action: null,
-      disabled: !appConfig.features.presale || !bitcashAccount,
-      icon: {
-        element: "",
-        left: false,
-        right: false
-      }
-    },
+    
     {
       id: 'about',
       href: '/about/about-bitlauncher',
@@ -138,26 +152,14 @@ export function NavLinks({
       text: 'Blog',
       mobile: false,
       action: null,
-      disabled: true,
+      disabled: false,
       icon: {
         element: "",
         left: false,
         right: false
       }
     },
-    {
-      id: 'referrals',
-      href: '/dashboard/referrals',
-      text: 'Referrals',
-      mobile: true,
-      action: null,
-      disabled: !bitcashAccount,
-      icon: {
-        element: "",
-        left: false,
-        right: false
-      }
-    },
+    
   ] as const
 
   return links.map((link) => {
