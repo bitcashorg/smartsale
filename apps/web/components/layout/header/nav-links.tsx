@@ -8,8 +8,8 @@ import { cn } from '@/lib/utils'
 import type { LangProp } from '@/types/routing.type'
 import { useAccountModal, useConnectModal } from '@rainbow-me/rainbowkit'
 import { formatAddress } from '@repo/utils'
-import Image from "next/image"
-import { useRouter, usePathname } from 'next/navigation'
+import { LogOut, Wallet } from 'lucide-react'
+import { useRouter } from 'next/navigation'
 import { v4 as uuidv4 } from 'uuid'
 import { useAccount } from 'wagmi'
 
@@ -23,8 +23,7 @@ export function NavLinks({
   const { openAccountModal } = useAccountModal()
   const { address } = useAccount()
   const router = useRouter()
-  const path = usePathname()
-  const { close } = useMobileNav() // Use context to close the menu
+  const { close } = useMobileNav()
   const bitcashAccount = session?.account
 
   const links = [
@@ -36,20 +35,7 @@ export function NavLinks({
       action: bitcashAccount ? null : loginRedirect,
       disabled: false,
       icon: {
-        path: "",
-        left: false,
-        right: false
-      }
-    },
-    {
-      id: 'wallet',
-      href: '/wallet',
-      text: "My Wallet",
-      mobile: true,
-      action: null,
-      disabled: !appConfig.features.wallet && !bitcashAccount,
-      icon: {
-        path: "",
+        element: "",
         left: false,
         right: false
       }
@@ -62,22 +48,22 @@ export function NavLinks({
       action: () => (bitcashAccount ? openConnectModal?.() : openAccountModal?.()),
       disabled: !bitcashAccount,
       icon: {
-        path: address ? "/images/wallet.svg" : "",
+        element: address ? <Wallet /> : "",
         left: address ? true : false,
         right: false
       }
     },
     {
-      id: 'logout',
-      href: null,
-      action: logout,
-      text: 'Sign out',
+      id: 'wallet',
+      href: '/wallet',
+      text: "My Wallet",
       mobile: true,
-      disabled: !bitcashAccount,
+      action: null,
+      disabled: !appConfig.features.wallet || !bitcashAccount,
       icon: {
-        path: "/images/sign-out.svg",
+        element: "",
         left: false,
-        right: true
+        right: false
       }
     },
     {
@@ -86,61 +72,9 @@ export function NavLinks({
       text: 'Presale',
       mobile: true,
       action: null,
-      disabled: !appConfig.features.presale && !bitcashAccount,
+      disabled: !appConfig.features.presale || !bitcashAccount,
       icon: {
-        path: "",
-        left: false,
-        right: false
-      }
-    },
-    {
-      id: 'about',
-      href: '/about/about-bitlauncher',
-      text: dict.nav.about,
-      mobile: false,
-      action: null,
-      disabled: false,
-      icon: {
-        path: "",
-        left: false,
-        right: false
-      }
-    },
-    {
-      id: 'whitepaper',
-      href: '/whitepaper',
-      text: 'Whitepaper',
-      mobile: false,
-      action: null,
-      disabled: false,
-      icon: {
-        path: "",
-        left: false,
-        right: false
-      }
-    },
-    {
-      id: 'security',
-      href: '/learn/security',
-      text: dict.nav.security,
-      mobile: false,
-      action: null,
-      disabled: false,
-      icon: {
-        path: "",
-        left: false,
-        right: false
-      }
-    },
-    {
-      id: 'blog',
-      href: '/blog',
-      text: 'Blog',
-      mobile: false,
-      action: null,
-      disabled: true,
-      icon: {
-        path: "",
+        element: "",
         left: false,
         right: false
       }
@@ -153,11 +87,78 @@ export function NavLinks({
       action: null,
       disabled: !bitcashAccount,
       icon: {
-        path: "",
+        element: "",
         left: false,
         right: false
       }
     },
+    {
+      id: 'logout',
+      href: null,
+      action: logout,
+      text: 'Sign out',
+      mobile: true,
+      disabled: !bitcashAccount,
+      icon: {
+        element: <LogOut />,
+        left: false,
+        right: true
+      }
+    },
+    
+    {
+      id: 'about',
+      href: '/about/about-bitlauncher',
+      text: dict.nav.about,
+      mobile: false,
+      action: null,
+      disabled: false,
+      icon: {
+        element: "",
+        left: false,
+        right: false
+      }
+    },
+    {
+      id: 'whitepaper',
+      href: '/whitepaper',
+      text: 'Whitepaper',
+      mobile: false,
+      action: null,
+      disabled: false,
+      icon: {
+        element: "",
+        left: false,
+        right: false
+      }
+    },
+    {
+      id: 'security',
+      href: '/learn/security',
+      text: dict.nav.security,
+      mobile: false,
+      action: null,
+      disabled: false,
+      icon: {
+        element: "",
+        left: false,
+        right: false
+      }
+    },
+    {
+      id: 'blog',
+      href: '/blog',
+      text: 'Blog',
+      mobile: false,
+      action: null,
+      disabled: false,
+      icon: {
+        element: "",
+        left: false,
+        right: false
+      }
+    },
+    
   ] as const
 
   return links.map((link) => {
@@ -188,25 +189,13 @@ export function NavLinks({
       >
         {
           link?.icon?.left && (
-            <Image
-              src={link?.icon?.path}
-              alt={link?.text}
-              title={link?.text}
-              width={24}
-              height={24}
-            />
+            link?.icon?.element
           )
         }
         {link.text}
         {
           link?.icon?.right && (
-            <Image
-              src={link?.icon?.path}
-              alt={link?.text}
-              title={link?.text}
-              width={24}
-              height={24}
-            />
+            link?.icon?.element
           )
         }
       </ActiveLink>

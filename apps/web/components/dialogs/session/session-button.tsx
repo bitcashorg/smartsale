@@ -1,5 +1,6 @@
 'use client'
 
+import { ActiveLink } from '@/components/shared/active-link'
 import { Button } from '@/components/ui/button'
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover'
 import { useSession } from '@/hooks/use-session'
@@ -7,12 +8,10 @@ import { appConfig } from '@/lib/config'
 import { cn } from '@/lib/utils'
 import { useAccountModal } from '@rainbow-me/rainbowkit'
 import { formatAddressShort } from '@repo/utils'
-import { User, Wallet } from 'lucide-react'
+import { LogOut, User, Wallet } from 'lucide-react'
+import { useParams } from 'next/navigation'
 import { isMobile } from 'react-device-detect'
 import { useAccount } from 'wagmi'
-import Image from "next/image"
-import { ActiveLink } from '@/components/shared/active-link'
-import { useParams } from 'next/navigation';
 
 export function SessionButton() {
   const { session, loginRedirect, toggleShowSessionDialog, openConnectModal, logout } =
@@ -63,22 +62,16 @@ export function SessionButton() {
 
               <li
                 onClick={openConnectModal ? openConnectModal : openAccountModal}
-                className="w-full cursor-pointer text-center flex justify-center gap-x-1"
+                className="hover:text-accent-400 active:text-accent-400 w-full cursor-pointer text-center flex justify-center gap-x-1"
               >
                 <Wallet />
                 &nbsp;{' '}
-                <span className="hover:text-accent-400 active:text-accent-400">{account?.address ? formatAddressShort(account.address) : 'Connect'}</span>
+                <span>{account?.address ? formatAddressShort(account.address) : 'Connect'}</span>
               </li>
 
               <li onClick={logout} className="hover:text-accent-400 active:text-accent-400 cursor-pointer flex justify-center items-center gap-x-3 pb-5 border-b w-full border-b-textInfoForeground/50">
-                <span className="hover:text-accent-400 active:text-accent-400">Sign Out</span>
-                <Image
-                  src="/images/sign-out.svg"
-                  alt="Sign out"
-                  title="Sign out"
-                  width={24}
-                  height={24}
-                />
+                <span>Sign Out</span>
+                <LogOut />
               </li>
 
               {appConfig.features.presale ? (
