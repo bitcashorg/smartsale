@@ -24,9 +24,13 @@ export function NavLinks({
   const { openAccountModal } = useAccountModal()
   const { address } = useAccount()
   const router = useRouter()
-  const path = usePathname()
-  const { close } = useMobileNav() // Use context to close the menu
+  const { close } = useMobileNav()
   const bitcashAccount = session?.account
+
+  console.log("appConfig.features.wallet", appConfig.features.wallet)
+  console.log("bitcashAccount", bitcashAccount)
+  console.log("bitcashAccount", !bitcashAccount)
+  console.log("appConfig.features.wallet", !appConfig.features.wallet && !bitcashAccount)
 
   const links = [
     {
@@ -48,7 +52,7 @@ export function NavLinks({
       text: "My Wallet",
       mobile: true,
       action: null,
-      disabled: !appConfig.features.wallet && !bitcashAccount,
+      disabled: !appConfig.features.wallet || !bitcashAccount,
       icon: {
         element: "",
         left: false,
@@ -87,7 +91,7 @@ export function NavLinks({
       text: 'Presale',
       mobile: true,
       action: null,
-      disabled: !appConfig.features.presale && !bitcashAccount,
+      disabled: !appConfig.features.presale || !bitcashAccount,
       icon: {
         element: "",
         left: false,
