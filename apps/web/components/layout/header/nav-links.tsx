@@ -12,7 +12,6 @@ import { LogOut, Wallet } from 'lucide-react'
 import { useRouter } from 'next/navigation'
 import { v4 as uuidv4 } from 'uuid'
 import { useAccount } from 'wagmi'
-import { LogOut, Wallet } from 'lucide-react'
 
 export function NavLinks({
   mobile = false,

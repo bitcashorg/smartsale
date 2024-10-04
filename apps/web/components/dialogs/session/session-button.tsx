@@ -12,7 +12,6 @@ import { formatAddress } from '@repo/utils'
 import { LogOut, User, Wallet } from 'lucide-react'
 import { isMobile } from 'react-device-detect'
 import { useAccount } from 'wagmi'
-import { ActiveLink } from '@/components/shared/active-link'
 import { useParams } from 'next/navigation';
 
 export function SessionButton() {
