@@ -1,13 +1,15 @@
 'use client'
 
+import { ActiveLink } from '@/components/shared/active-link'
 import { Button } from '@/components/ui/button'
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover'
 import { useSession } from '@/hooks/use-session'
 import { appConfig } from '@/lib/config'
 import { cn } from '@/lib/utils'
 import { useAccountModal } from '@rainbow-me/rainbowkit'
+
 import { formatAddress } from '@repo/utils'
-import { User, Wallet, LogOut } from 'lucide-react'
+import { LogOut, User, Wallet } from 'lucide-react'
 import { isMobile } from 'react-device-detect'
 import { useAccount } from 'wagmi'
 import { ActiveLink } from '@/components/shared/active-link'
@@ -58,6 +60,7 @@ export function SessionButton() {
               >
                 <Wallet />
                 &nbsp;{' '}
+
                 <span>{account?.address ? formatAddress(account.address) : 'Connect'}</span>
               </li>
 
@@ -68,6 +71,7 @@ export function SessionButton() {
                   </li>
                 </ActiveLink>
               ) : null}
+
 
               {appConfig.features.presale ? (
                 <ActiveLink href={`/${lang}/bitcash-bitlauncher/presale`}>
@@ -87,8 +91,6 @@ export function SessionButton() {
                 <span>Sign Out</span>
                 <LogOut />
               </li>
-
-
             </ul>
           </PopoverContent>
         </Popover>
