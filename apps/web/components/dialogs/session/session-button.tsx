@@ -7,12 +7,20 @@ import { useSession } from '@/hooks/use-session'
 import { appConfig } from '@/lib/config'
 import { cn } from '@/lib/utils'
 import { useAccountModal } from '@rainbow-me/rainbowkit'
+<<<<<<< HEAD
 
 import { formatAddress } from '@repo/utils'
 import { LogOut, User, Wallet } from 'lucide-react'
 import { isMobile } from 'react-device-detect'
 import { useAccount } from 'wagmi'
 import { useParams } from 'next/navigation';
+=======
+import { formatAddressShort } from '@repo/utils'
+import { LogOut, User, Wallet } from 'lucide-react'
+import { useParams } from 'next/navigation'
+import { isMobile } from 'react-device-detect'
+import { useAccount } from 'wagmi'
+>>>>>>> main
 
 export function SessionButton() {
   const { session, loginRedirect, toggleShowSessionDialog, openConnectModal, logout } =
