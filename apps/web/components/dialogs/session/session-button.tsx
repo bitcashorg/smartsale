@@ -7,11 +7,12 @@ import { useSession } from '@/hooks/use-session'
 import { appConfig } from '@/lib/config'
 import { cn } from '@/lib/utils'
 import { useAccountModal } from '@rainbow-me/rainbowkit'
-import { formatAddressShort } from '@repo/utils'
+
+import { formatAddress } from '@repo/utils'
 import { LogOut, User, Wallet } from 'lucide-react'
-import { useParams } from 'next/navigation'
 import { isMobile } from 'react-device-detect'
 import { useAccount } from 'wagmi'
+import { useParams } from 'next/navigation';
 
 export function SessionButton() {
   const { session, loginRedirect, toggleShowSessionDialog, openConnectModal, logout } =
@@ -52,6 +53,16 @@ export function SessionButton() {
             className="w-52 mt-5 bg-accent-600 border-none font-semibold text-center relative after:content-[''] after:absolute after:-top-3 after:mx-auto after:-translate-x-2 after:w-6 after:h-6 after:rotate-45 after:bg-accent-600"
           >
             <ul className="flex flex-col gap-5 py-2 justify-center items-center text-center">
+              <li
+                onClick={openConnectModal ? openConnectModal : openAccountModal}
+                className="hover:text-accent-400 active:text-accent-400 w-full cursor-pointer text-center flex justify-center gap-x-1"
+              >
+                <Wallet />
+                &nbsp;{' '}
+
+                <span>{account?.address ? formatAddress(account.address) : 'Connect'}</span>
+              </li>
+
               {appConfig.features.wallet ? (
                 <ActiveLink href={`/${lang}/wallet`}>
                   <li className="w-full">
@@ -60,19 +71,6 @@ export function SessionButton() {
                 </ActiveLink>
               ) : null}
 
-              <li
-                onClick={openConnectModal ? openConnectModal : openAccountModal}
-                className="hover:text-accent-400 active:text-accent-400 w-full cursor-pointer text-center flex justify-center gap-x-1"
-              >
-                <Wallet />
-                &nbsp;{' '}
-                <span>{account?.address ? formatAddressShort(account.address) : 'Connect'}</span>
-              </li>
-
-              <li onClick={logout} className="hover:text-accent-400 active:text-accent-400 cursor-pointer flex justify-center items-center gap-x-3 pb-5 border-b w-full border-b-textInfoForeground/50">
-                <span>Sign Out</span>
-                <LogOut />
-              </li>
 
               {appConfig.features.presale ? (
                 <ActiveLink href={`/${lang}/bitcash-bitlauncher/presale`}>
@@ -82,11 +80,16 @@ export function SessionButton() {
                 </ActiveLink>
               ) : null}
 
-              <ActiveLink href={`/${lang}/dashboard/referrals`}>
+              <ActiveLink href={`/${lang}/dashboard/referrals`} className="pb-5 border-b w-full border-b-textInfoForeground/50">
                 <li className="w-full">
                   Referrals
                 </li>
               </ActiveLink>
+
+              <li onClick={logout} className="hover:text-accent-400 active:text-accent-400 cursor-pointer flex justify-center items-center gap-x-3">
+                <span>Sign Out</span>
+                <LogOut />
+              </li>
             </ul>
           </PopoverContent>
         </Popover>
