@@ -6,6 +6,15 @@ const nextConfig = {
   async headers() {
     return [
       {
+        source: '/(.*)',
+        headers: [
+          {
+            key: 'Content-Security-Policy',
+            value: `default-src 'self'; style-src 'self' 'https://use.typekit.net/'; script-src 'self' https://www.googletagmanager.com/; font-src 'self'`,
+          }
+        ]
+      },
+      {
         // matching all API routes
         source: '/api/:path*',
         headers: [
