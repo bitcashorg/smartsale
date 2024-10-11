@@ -9,9 +9,25 @@ const nextConfig = {
         source: '/(.*)',
         headers: [
           {
+            key: 'X-Nonce',
+            value: generateNonce(),
+          },
+          {
             key: 'Content-Security-Policy',
-            value: `default-src 'self'; style-src 'self' 'https://use.typekit.net/'; script-src 'self' https://www.googletagmanager.com/; font-src 'self'`,
-          }
+            value: `object-src 'none';base-uri 'self';script-src 'self' 'report-sample' 'unsafe-inline' https: http:;`,
+          },
+          {
+            key: 'Referrer-Policy',
+            value: 'strict-origin-when-cross-origin',
+          },
+          {
+            key: 'X-Frame-Options',
+            value: 'SAMEORIGIN',
+          },
+          {
+            key: 'Permissions-Policy',
+            value: 'accelerometer=(); battery=(self); camera=(); geolocation=(); gyroscope=(); magnetometer=(); microphone=(); payment=(); usb=()',
+          },
         ]
       },
       {
@@ -75,7 +91,11 @@ const nextConfig = {
     fetches: {
       fullUrl: true,
     },
-  },
+  },  
+}
+
+function generateNonce() {
+  return [...Array(32)].map(() => Math.random().toString(36)[2]).join('');
 }
 
 const withBundleAnalyzer = require('@next/bundle-analyzer')()
