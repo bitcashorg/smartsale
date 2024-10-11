@@ -5,16 +5,15 @@ import {
   Heading,
   Hr,
   Html,
-  Img,
   Link,
   Preview,
   Section,
-  Tailwind,
+  Tailwind
 } from '@react-email/components'
 import { Logo } from 'components/logo'
 
-const baseUrl = process.env.VERCEL_URL
-  ? `https://${process.env.VERCEL_URL}`
+const baseUrl = process.env.NEXT_PUBLIC_APP_URL
+  ? `https://${process.env.NEXT_PUBLIC_APP_URL}`
   : 'http://localhost:3001'
 
 export default function WelcomeEmail() {

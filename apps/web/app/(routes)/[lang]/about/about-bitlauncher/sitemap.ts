@@ -7,14 +7,14 @@ export default async function sitemap({
 }: CommonPageProps): Promise<MetadataRoute.Sitemap> {
   return [
     {
-      url: `https://${process.env.NEXT_PUBLIC_APP_URL}/${params.lang}/blog`,
+      url: `https://${process.env.NEXT_PUBLIC_APP_URL}/${params.lang}/about/about-bitlauncher`,
       lastModified: new Date(),
-      priority: 0.9,
+      priority: 0.6,
       alternates: {
         // ? e.g.: { 'en': 'https://example.com/en/...', 'es': 'https://example.com/es/...', ... }
         languages: Object.fromEntries(
           AVAILABLE_LANGS.map(
-            (lang) => [lang, `https://${process.env.NEXT_PUBLIC_APP_URL}/${lang}/blog`]
+            (lang) => [lang, `https://${process.env.NEXT_PUBLIC_APP_URL}/${lang}/about/about-bitlauncher`]
           )
         )
       }

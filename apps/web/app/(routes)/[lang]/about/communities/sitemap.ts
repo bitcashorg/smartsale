@@ -6,7 +6,7 @@ export default async function sitemap({
 }: CommonPageProps): Promise<MetadataRoute.Sitemap> {
   return [
     {
-      url: `https://${process.env.VERCEL_URL}/${params.lang}/about/communities`,
+      url: `https://${process.env.NEXT_PUBLIC_APP_URL}/${params.lang}/about/communities`,
       lastModified: new Date(),
     },
   ]

@@ -9,7 +9,7 @@ type Params = {
   project: string
 }
 export const runtime = 'edge'
-const siteUrl = `https://${process.env.VERCEL_URL}`
+const siteUrl = `https://${process.env.NEXT_PUBLIC_APP_URL}`
 
 export async function GET(req: NextRequest, context: { params: Params }) {
   try {
