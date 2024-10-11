@@ -1,17 +1,15 @@
 import '@/app/globals.css'
-import {
-  FuturaPTBold,
-  FuturaPTBook,
-  FuturaPTDemi,
-  FuturaPTMedium,
-  LufgaBold,
-} from '@/assets/fonts/fonts'
 import Footer from '@/components/layout/footer/footer'
 import { Header } from '@/components/layout/header'
 import { Providers } from '@/components/layout/providers'
 import { getDictionary } from '@/dictionaries'
 import { locales } from '@/dictionaries/locales'
 import { appConfig } from '@/lib/config'
+import {
+  FuturaPTBold,
+  FuturaPTDemi,
+  LufgaBold,
+} from '@/lib/fonts'
 import { cn } from '@/lib/utils'
 import type { CommonPageParams } from '@/types/routing.type'
 import { GoogleAnalytics } from '@next/third-parties/google'
@@ -44,7 +42,7 @@ export default async function RootLayout({ children, params }: RootLayoutProps) 
     >
       <body
         style={{ width: '100%', maxWidth: '100%' }}
-        className={`${FuturaPTBook.variable} ${FuturaPTMedium.variable} ${FuturaPTDemi.variable} ${FuturaPTBold.variable} ${LufgaBold.variable}`}
+        className={`${FuturaPTDemi.variable} ${FuturaPTBold.variable} ${LufgaBold.variable}`}
       >
         <Providers
           attribute="class"

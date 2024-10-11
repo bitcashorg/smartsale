@@ -14,7 +14,7 @@ export default async function sitemap({
         // ? e.g.: { 'en': 'https://example.com/en/...', 'es': 'https://example.com/es/...', ... }
         languages: Object.fromEntries(
           AVAILABLE_LANGS.map(
-            (lang) => [lang, `https://${process.env.NEXT_PUBLIC_APP_URL}/${lang}/${project.slug}/wallet`]
+            (lang) => [lang, `https://${process.env.NEXT_PUBLIC_APP_URL}/${lang}/wallet`]
           )
         )
       }

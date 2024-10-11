@@ -1,9 +1,9 @@
-import localFont from 'next/font/local'
+import localFont from 'next/font/local';
 
 export const FuturaPTDemi = localFont({
   src: [
     {
-      path: './futura-pt/FuturaCyrillicDemi.woff',
+      path: './fonts/futura-pt/FuturaCyrillicDemi.woff',
       weight: 'normal',
       style: 'normal',
     },
@@ -15,7 +15,7 @@ export const FuturaPTDemi = localFont({
 export const FuturaPTBold = localFont({
   src: [
     {
-      path: './futura-pt/FuturaCyrillicBold.woff',
+      path: './fonts/futura-pt/FuturaCyrillicBold.woff',
       weight: 'normal',
       style: 'normal',
     },
@@ -27,7 +27,7 @@ export const FuturaPTBold = localFont({
 export const LufgaBold = localFont({
   src: [
     {
-      path: './lufga/LufgaBold.woff',
+      path: './fonts/lufga/LufgaBold.woff',
       weight: 'normal',
       style: 'normal',
     },
