@@ -94,8 +94,15 @@ const nextConfig = {
   },  
 }
 
+const nonceCache = new Set();
+
 function generateNonce() {
-  return [...Array(32)].map(() => Math.random().toString(36)[2]).join('');
+  let nonce;
+  do {
+    nonce = [...Array(32)].map(() => Math.random().toString(36)[2]).join('');
+  } while (nonceCache.has(nonce));
+  nonceCache.add(nonce);
+  return nonce;
 }
 
 const withBundleAnalyzer = require('@next/bundle-analyzer')()
