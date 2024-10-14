@@ -6,6 +6,31 @@ const nextConfig = {
   async headers() {
     return [
       {
+        source: '/(.*)',
+        headers: [
+          {
+            key: 'X-Nonce',
+            value: generateNonce(),
+          },
+          {
+            key: 'Content-Security-Policy',
+            value: `object-src 'none';base-uri 'self';script-src 'self' 'report-sample' 'unsafe-inline' https: http:;`,
+          },
+          {
+            key: 'Referrer-Policy',
+            value: 'strict-origin-when-cross-origin',
+          },
+          {
+            key: 'X-Frame-Options',
+            value: 'SAMEORIGIN',
+          },
+          {
+            key: 'Permissions-Policy',
+            value: 'accelerometer=(); battery=(self); camera=(); geolocation=(); gyroscope=(); magnetometer=(); microphone=(); payment=(); usb=()',
+          },
+        ]
+      },
+      {
         // matching all API routes
         source: '/api/:path*',
         headers: [
@@ -66,7 +91,18 @@ const nextConfig = {
     fetches: {
       fullUrl: true,
     },
-  },
+  },  
+}
+
+const nonceCache = new Set();
+
+function generateNonce() {
+  let nonce;
+  do {
+    nonce = [...Array(32)].map(() => Math.random().toString(36)[2]).join('');
+  } while (nonceCache.has(nonce));
+  nonceCache.add(nonce);
+  return nonce;
 }
 
 const withBundleAnalyzer = require('@next/bundle-analyzer')()

@@ -1,9 +1,6 @@
 import { TestnetMBOTSPL, type TokenContractData } from '@repo/auction'
 import { merge } from 'lodash'
 import type { StaticImageData } from 'next/image'
-import BitcashPic from '../assets/img/bitcash.webp'
-import MasterbotsPic from '../assets/img/masterbots.webp'
-import WizartPic from '../assets/img/wizartworld.webp'
 
 export function getProjects(dict: any) {
   return merge(projects, dict.projects) as Project[]
@@ -18,7 +15,7 @@ export const projects: Project[] = [
     fundraiseGoal: '$400,000',
     maxAllocation: '$1,500',
     heroImage: '/images/projects/bitcash-cover.webp',
-    thumbnailImage: BitcashPic,
+    thumbnailImage: '/images/bitcash.webp',
     badgeText: 'LIVE',
     linkPath: '/bitcash-bitlauncher',
     token: TestnetMBOTSPL,
@@ -40,7 +37,7 @@ export const projects: Project[] = [
     fundraiseGoal: '$200,000',
     maxAllocation: '$10,000',
     heroImage: '/images/projects/masterbots.webp',
-    thumbnailImage: MasterbotsPic,
+    thumbnailImage: '/images/masterbots.webp',
     badgeText: 'COMING SOON',
     linkPath: '#',
     auctionId: 9,
@@ -59,7 +56,7 @@ export const projects: Project[] = [
     fundraiseGoal: '$200,000',
     maxAllocation: '$10,000',
     heroImage: '/images/projects/wizartworld.webp',
-    thumbnailImage: WizartPic,
+    thumbnailImage: '/images/wizartworld.webp',
     badgeText: 'FUTURE',
     linkPath: '#',
     token: TestnetMBOTSPL,
@@ -77,7 +74,7 @@ export const projects: Project[] = [
     fundraiseGoal: '$400,000',
     maxAllocation: '$1,500',
     heroImage: '/images/projects/bitcash-cover.webp',
-    thumbnailImage: BitcashPic,
+    thumbnailImage: '/images/bitcash.webp',
     badgeText: 'LIVE',
     linkPath: '/bitlauncher-test',
     token: TestnetMBOTSPL,
