@@ -43,6 +43,7 @@ export function AuctionCard({
             height={216}
             width={216}
             placeholder="blur"
+            blurDataURL={thumbnailImage as string}
             className="h-[216px] w-full rounded-t-xl object-cover group-hover:shadow-xl"
             alt={title}
             sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px"

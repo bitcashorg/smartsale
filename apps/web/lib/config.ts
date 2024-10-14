@@ -2,6 +2,8 @@ import { loadEnvConfig } from '@repo/config'
 
 const appEnv = process.env.NEXT_PUBLIC_APP_ENV || 'dev'
 
+export const AVAILABLE_LANGS = ['en', 'es', 'pt', 'fr', 'vi', 'ko', 'zh']
+
 export const appConfig = {
   env: appEnv,
   ...loadEnvConfig(appEnv),
