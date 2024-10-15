@@ -7,7 +7,7 @@ export default async function sitemap({
 }: CommonPageProps): Promise<MetadataRoute.Sitemap> {
   return [
     {
-      url: `https://${process.env.NEXT_PUBLIC_APP_URL}/${params.lang}/about/daos-dboard`,
+      url: `https://${process.env.NEXT_PUBLIC_APP_URL}/about/daos-dboard`,
       lastModified: new Date(),
       alternates: {
         // ? e.g.: { 'en': 'https://example.com/en/...', 'es': 'https://example.com/es/...', ... }

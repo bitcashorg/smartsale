@@ -7,7 +7,7 @@ export default async function sitemap({
 }: CommonPageProps): Promise<MetadataRoute.Sitemap> {
   return [
     {
-      url: `https://${process.env.NEXT_PUBLIC_APP_URL}/${params.lang}/about/bitcash-app`,
+      url: `https://${process.env.NEXT_PUBLIC_APP_URL}/about/bitcash-app`,
       lastModified: new Date(),
       priority: 0.3,
       alternates: {
