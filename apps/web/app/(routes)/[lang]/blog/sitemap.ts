@@ -7,7 +7,7 @@ export default async function sitemap({
 }: CommonPageProps): Promise<MetadataRoute.Sitemap> {
   return [
     {
-      url: `https://${process.env.NEXT_PUBLIC_APP_URL}/${params.lang}/blog`,
+      url: `https://${process.env.NEXT_PUBLIC_APP_URL}/blog`,
       lastModified: new Date(),
       priority: 0.9,
       alternates: {

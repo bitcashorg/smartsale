@@ -11,7 +11,7 @@ export default async function sitemap({
   const projects = await getProjects(dict)
 
   return projects.map((project) => ({
-    url: `https://${process.env.NEXT_PUBLIC_APP_URL}/${params.lang}/${project.slug}/auction`,
+    url: `https://${process.env.NEXT_PUBLIC_APP_URL}/${project.slug}/auction`,
     lastModified: new Date(),
     priority: 0.9,
     alternates: {

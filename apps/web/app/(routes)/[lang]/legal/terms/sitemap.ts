@@ -7,7 +7,7 @@ export default async function sitemap({
 }: CommonPageProps): Promise<MetadataRoute.Sitemap> {
   return [
     {
-      url: `https://${process.env.NEXT_PUBLIC_APP_URL}/${params.lang}/legal/terms`,
+      url: `https://${process.env.NEXT_PUBLIC_APP_URL}/legal/terms`,
       lastModified: new Date(),
       priority: 0.7,
       alternates: {

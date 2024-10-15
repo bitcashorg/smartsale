@@ -6,7 +6,7 @@ export default async function sitemap({
 }: CommonPageProps): Promise<MetadataRoute.Sitemap> {
   return [
     {
-      url: `https://${process.env.NEXT_PUBLIC_APP_URL}/${params.lang}/learn/batch-auctions`,
+      url: `https://${process.env.NEXT_PUBLIC_APP_URL}/learn/batch-auctions`,
       lastModified: new Date(),
     },
   ]

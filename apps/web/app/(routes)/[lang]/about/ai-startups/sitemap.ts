@@ -7,7 +7,7 @@ export default async function sitemap({
 }: CommonPageProps): Promise<MetadataRoute.Sitemap> {
   return [
     {
-      url: `https://${process.env.NEXT_PUBLIC_APP_URL}/${params.lang}/about/ai-startups`,
+      url: `https://${process.env.NEXT_PUBLIC_APP_URL}/about/ai-startups`,
       lastModified: new Date(),
       alternates: {
         // ? e.g.: { 'en': 'https://example.com/en/...', 'es': 'https://example.com/es/...', ... }
