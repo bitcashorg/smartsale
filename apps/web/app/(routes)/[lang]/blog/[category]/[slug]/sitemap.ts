@@ -15,19 +15,20 @@ export default async function sitemap(
   const { sections } = data
   if (!sections) return []
 
-  const slugs = sections.map((section: any) => section.slug)
+  const slugs = sections.map((section) => section.slug)
 
-  return slugs.map((slug: any) => ({
+  return slugs.map((slug) => ({
     url: `https://${process.env.NEXT_PUBLIC_APP_URL}/${lang}/blog/${category}/${slug}`,
     lastModified: new Date(),
     priority: 0.5,
     alternates: {
-       // ? e.g.: { 'en': 'https://example.com/en/...', 'es': 'https://example.com/es/...', ... }
+      // ? e.g.: { 'en': 'https://example.com/en/...', 'es': 'https://example.com/es/...', ... }
       languages: Object.fromEntries(
-        AVAILABLE_LANGS.map(
-          (lang) => [lang, `https://${process.env.NEXT_PUBLIC_APP_URL}/${lang}/blog/${category}/${slug}`]
-        )
-      )
-    }
+        AVAILABLE_LANGS.map((lang) => [
+          lang,
+          `https://${process.env.NEXT_PUBLIC_APP_URL}/${lang}/blog/${category}/${slug}`,
+        ]),
+      ),
+    },
   }))
 }
