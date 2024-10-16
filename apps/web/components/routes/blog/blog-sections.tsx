@@ -24,7 +24,7 @@ export function BlogSections({ sections, lang, category, className }: BlogSectio
                 <span className="font-semibold sub-2-lg">/ {section.name.replace(/_/g, ' ')}</span>
                 <Link
                   // TODO: fix add lang prefix on links there seems to a bug where it gets ovewritten
-                  href={`/blog/${category || section.slug}?topic=${section.name}`}
+                  href={`/blog/${category || section.slug}${category ? `?topic=${section.name}` : ''}`}
                   className={cn(
                     'flex items-center align-middle text-black focus-within:!text-accent hover:!text-accent dark:text-white',
                   )}

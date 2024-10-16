@@ -27,22 +27,20 @@ export const HeroArticleCard = ({ post, sectionSlug, lang }: HeroArticleCardProp
           />
         </figure>
 
-        <div className="flex flex-col flex-1 w-full mt-space-20 md:flex-row">
+        <div className="flex flex-col flex-1 w-full mt-space-20 2xl:flex-row">
           {/* <p className="text-xl">
             <span className="font-semibold sub-2-lg">/Recents:</span>
           </p> */}
           {/* Meta */}
-          <div className="text-sm min-w-40 sm:pr-5">
+          <div className="text-sm w-max-30 sm:pr-5">
             <div className="flex flex-col w-auto mt-space-10">
-              <span className="font-futura-pt-heavy font-bolt">{post?.authorName}</span>
-              <span className="font-futura-pt-book">
-                {new Date(post?._publishedAt).toLocaleDateString(lang, {
-                  month: 'short',
-                  day: '2-digit',
-                  year: 'numeric',
-                })}{' '}
-                ∙ {readingTime(post)} min read
-              </span>
+              <span className="font-futura-pt-bold">{post?.authorName}</span>
+              {new Date(post?._publishedAt).toLocaleDateString(lang, {
+                month: 'short',
+                day: '2-digit',
+                year: 'numeric',
+              })}{' '}
+              ∙ {readingTime(post)} min read{' '}
             </div>
             <Link href={`/blog/${sectionSlug}`}>
               <Tag className="mt-space-6" title={sectionSlug} />
@@ -57,7 +55,7 @@ export const HeroArticleCard = ({ post, sectionSlug, lang }: HeroArticleCardProp
             >
               {post?.title}
             </h1>
-            <p className="flex-grow w-full truncate_text md:truncate_text--4-lines truncate_text--5-lines text-sub-2-lt">
+            <p className="flex-grow w-full truncate_text md:truncate_text--4-lines truncate_text--5-lines text-sub-2-lt text-infoForeground">
               {post?.description}
             </p>
           </div>

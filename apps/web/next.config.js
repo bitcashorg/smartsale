@@ -53,7 +53,6 @@ const nextConfig = {
     ...(process.env.NODE_ENV === 'development'
       ? { outputFileTracingRoot: path.join(__dirname, '../../') }
       : null),
-    generateNonce: true,
     turbo: {
       rules: {
         '*.svg': {
