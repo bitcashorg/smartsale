@@ -58,7 +58,7 @@ export default {
     {
       question: 'Onde posso encontrar mais informações ou participar?',
       answer:
-        'Para informações mais detalhadas, atualizações e para se juntar à nossa comunidade, visite nosso site oficial, participe de nossos canais de mídia social e assine nossa newsletter. Damos as boas-vindas a todos interessados em contribuir ou participar do futuro de IA e criptomoedas através do nosso lançador. Linktree: https://linktr.ee/bitlauncher, Twitter: @bitcashorg / @bitlauncherai, Blog: https://blog.bitcash.org/, Discord: https://discord.gg/eJCfx4JAqY, Youtube: https://www.youtube.com/@bitcashorg, Telegram: https://t.me/bitcash_org. Através destas perguntas frequentes, nosso objetivo é abordar as questões centrais sobre nosso projeto, elucidando nosso compromisso com inovação, transparência e empoderamento da comunidade nos cenários em evolução de IA e criptomoedas.',
+        'Para informações mais detalhadas, atualizações e para se juntar à nossa comunidade, visite nosso site oficial, participe de nossos canais de mídia social e assine nossa newsletter. Damos as boas-vindas a todos interessados em contribuir ou participar do futuro de IA e criptomoedas através do nosso lançador. Linktree: https://linktr.ee/bitlauncher, Twitter: @bitcashorg / @bitlauncherai, Blog: https://bitlauncher.ai/blog/, Discord: https://discord.gg/eJCfx4JAqY, Youtube: https://www.youtube.com/@bitcashorg, Telegram: https://t.me/bitcash_org. Através destas perguntas frequentes, nosso objetivo é abordar as questões centrais sobre nosso projeto, elucidando nosso compromisso com inovação, transparência e empoderamento da comunidade nos cenários em evolução de IA e criptomoedas.',
     },
   ],
 } as const

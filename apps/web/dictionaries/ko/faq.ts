@@ -56,7 +56,7 @@ export default {
     {
       question: '자세한 정보를 찾거나 참여할 수 있는 곳은 어디입니까?',
       answer:
-        '더 자세한 정보와 업데이트, 그리고 저희 커뮤니티에 참여하려면 공식 웹사이트를 방문하시거나 저희 소셜 미디어 채널에 가입하시고 뉴스레터를 구독해 주세요. 저희는 AI와 암호화폐의 미래에 기여하거나 참여하고자 하는 모든 분들을 환영합니다. Linktree: https://linktr.ee/bitlauncher, Twitter: @bitcashorg / @bitlauncherai, Blog: https://blog.bitcash.org/, Discord: https://discord.gg/eJCfx4JAqY, Youtube: https://www.youtube.com/@bitcashorg, Telegram: https://t.me/bitcash_org. 이 FAQ를 통해 저희는 AI와 암호화폐의 변화하는 풍경 속에서 혁신, 투명성, 그리고 커뮤니티 인권 증진에 대한 저희의 헌신을 설명하고자 합니다.',
+        '더 자세한 정보와 업데이트, 그리고 저희 커뮤니티에 참여하려면 공식 웹사이트를 방문하시거나 저희 소셜 미디어 채널에 가입하시고 뉴스레터를 구독해 주세요. 저희는 AI와 암호화폐의 미래에 기여하거나 참여하고자 하는 모든 분들을 환영합니다. Linktree: https://linktr.ee/bitlauncher, Twitter: @bitcashorg / @bitlauncherai, Blog: https://bitlauncher.ai/blog/, Discord: https://discord.gg/eJCfx4JAqY, Youtube: https://www.youtube.com/@bitcashorg, Telegram: https://t.me/bitcash_org. 이 FAQ를 통해 저희는 AI와 암호화폐의 변화하는 풍경 속에서 혁신, 투명성, 그리고 커뮤니티 인권 증진에 대한 저희의 헌신을 설명하고자 합니다.',
     },
   ],
 } as const
