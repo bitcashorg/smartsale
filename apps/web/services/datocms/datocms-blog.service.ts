@@ -1,12 +1,12 @@
-import * as fs from 'node:fs'
-import path from 'node:path'
 import type { Lang } from '@/dictionaries/locales'
 import { getFilePath, parseFile } from '@/lib/file'
 import { getErrorMessage } from '@repo/errors'
 import { uniq } from 'lodash'
+import * as fs from 'node:fs'
+import path from 'node:path'
 import { type BlogArticleRecord, getBlogCategory } from './datacms-blog-category.service'
 import { getLayoutText } from './datocms-layout.service'
-import { getPageSeoText } from './datocms-seo.service'
+import { type CMSPageSeoText, getPageSeoText } from './datocms-seo.service'
 import type { BlogAiRecord } from './graphql/generated/cms'
 
 export const getBlogData = async () => {
@@ -61,7 +61,7 @@ export const getBlogData = async () => {
 
 export async function getArticleSections(lang: Lang): Promise<ArticlesSection[]> {
   const dirPath = `/dictionaries/${lang}/blog/`
-  const fileName = `blog-index.json`
+  const fileName = 'blog-index.json'
   const filePath = path.resolve(dirPath, fileName)
 
   let fileContents: { sections: ArticlesSection[] } | undefined
@@ -148,11 +148,11 @@ export async function getArticleSections(lang: Lang): Promise<ArticlesSection[]>
     },
   ]
 
-  sections.forEach((section) => {
-    section.articles.forEach((article) => {
+  for (const section of sections) {
+    for (const article of section.articles) {
       article.contentBlock = []
-    })
-  })
+    }
+  }
 
   // Check file sections against new sections. If no section found on files, then we update the sections
   const fileSections = fileContents?.sections || []
@@ -223,7 +223,13 @@ export async function getRecentArticleSections(): Promise<ArticlesSection[]> {
   return recentArticles
 }
 
-export async function getBlogCategoryLandingData(lang: Lang, category: string) {
+export async function getBlogCategoryLandingData(
+  lang: Lang,
+  category: string,
+): Promise<{
+  sections: ArticlesSection[]
+  pageSeo: CMSPageSeoText
+}> {
   const [i18n, categories, pageSeo] = await Promise.all([
     getLayoutText(),
     getBlogCategory(category, undefined, 100),
@@ -243,7 +249,10 @@ export async function getBlogCategoryLandingData(lang: Lang, category: string) {
     // ? Due we are not updating the file contents frequently, we can return the file contents directly
     // console.info('in', process.env.NODE_ENV)
     if (process.env.NODE_ENV === 'production') {
-      return fileContents?.sections as ArticlesSection[]
+      return {
+        sections: fileContents?.sections as ArticlesSection[],
+        pageSeo,
+      }
     }
   } catch (error) {
     // console.log('error', error)
@@ -261,24 +270,31 @@ export async function getBlogCategoryLandingData(lang: Lang, category: string) {
     `${blogCategory}Data`
   ] as BlogArticleRecord[] | undefined
 
-  if (!categoryContent) return null
+  if (!categoryContent) {
+    return {
+      sections: [],
+      pageSeo,
+    }
+  }
   // get topics
   const allTopics: string[] = []
 
-  categoryContent.forEach((blog) => {
-    blog?.topics?.forEach((topic: string) => {
-      allTopics.push(topic)
-    })
-  })
+  for (const blog of categoryContent) {
+    if (blog?.topics) {
+      for (const topic of blog.topics) {
+        allTopics.push(topic)
+      }
+    }
+  }
 
   // section topics & blogs content
   const topics = uniq(allTopics)
 
   const sections: ArticlesSection[] = topics?.map((tp, index) => {
     const articles = categoryContent.filter((content) => content.topics.includes(tp))
-    articles.forEach((article) => {
+    for (const article of articles) {
       article.contentBlock = []
-    })
+    }
 
     return {
       name: tp,
