@@ -80,10 +80,12 @@ export function NewHomeHero() {
           video={{
             snippet: {
               title: 'Bitlauncher: Register for Presale Now',
-              description: 'Know what people are saying about Bitlauncher and how you can be part of the revolution!',
+              description:
+                'Know what people are saying about Bitlauncher and how you can be part of the revolution!',
               resourceId: {
                 // videoId: 'U6vn3KOEwcQ',
-                videoId: 'videoseries?si=SX1q7_oAPaTpGWoI&amp;list=PL6BKGVqekhB9JoWgnvOFGEi9EfVIas4oY',
+                videoId:
+                  'videoseries?si=SX1q7_oAPaTpGWoI&amp;list=PL6BKGVqekhB9JoWgnvOFGEi9EfVIas4oY',
               },
             },
           }}

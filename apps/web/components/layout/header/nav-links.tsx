@@ -35,10 +35,10 @@ export function NavLinks({
       action: bitcashAccount ? null : loginRedirect,
       disabled: false,
       icon: {
-        element: "",
+        element: '',
         left: false,
-        right: false
-      }
+        right: false,
+      },
     },
     {
       id: 'connect',
@@ -48,23 +48,23 @@ export function NavLinks({
       action: () => (bitcashAccount ? openConnectModal?.() : openAccountModal?.()),
       disabled: !bitcashAccount,
       icon: {
-        element: address ? <Wallet /> : "",
+        element: address ? <Wallet /> : '',
         left: address ? true : false,
-        right: false
-      }
+        right: false,
+      },
     },
     {
       id: 'wallet',
       href: '/wallet',
-      text: "My Wallet",
+      text: 'My Wallet',
       mobile: true,
       action: null,
       disabled: !appConfig.features.wallet || !bitcashAccount,
       icon: {
-        element: "",
+        element: '',
         left: false,
-        right: false
-      }
+        right: false,
+      },
     },
     {
       id: 'presale',
@@ -74,10 +74,10 @@ export function NavLinks({
       action: null,
       disabled: !appConfig.features.presale || !bitcashAccount,
       icon: {
-        element: "",
+        element: '',
         left: false,
-        right: false
-      }
+        right: false,
+      },
     },
     {
       id: 'referrals',
@@ -87,10 +87,10 @@ export function NavLinks({
       action: null,
       disabled: !bitcashAccount,
       icon: {
-        element: "",
+        element: '',
         left: false,
-        right: false
-      }
+        right: false,
+      },
     },
     {
       id: 'logout',
@@ -102,10 +102,10 @@ export function NavLinks({
       icon: {
         element: <LogOut />,
         left: false,
-        right: true
-      }
+        right: true,
+      },
     },
-    
+
     {
       id: 'about',
       href: '/about/about-bitlauncher',
@@ -114,10 +114,10 @@ export function NavLinks({
       action: null,
       disabled: false,
       icon: {
-        element: "",
+        element: '',
         left: false,
-        right: false
-      }
+        right: false,
+      },
     },
     {
       id: 'whitepaper',
@@ -127,10 +127,10 @@ export function NavLinks({
       action: null,
       disabled: false,
       icon: {
-        element: "",
+        element: '',
         left: false,
-        right: false
-      }
+        right: false,
+      },
     },
     {
       id: 'security',
@@ -140,10 +140,10 @@ export function NavLinks({
       action: null,
       disabled: false,
       icon: {
-        element: "",
+        element: '',
         left: false,
-        right: false
-      }
+        right: false,
+      },
     },
     {
       id: 'blog',
@@ -153,12 +153,11 @@ export function NavLinks({
       action: null,
       disabled: false,
       icon: {
-        element: "",
+        element: '',
         left: false,
-        right: false
-      }
+        right: false,
+      },
     },
-    
   ] as const
 
   return links.map((link) => {
@@ -168,12 +167,10 @@ export function NavLinks({
       <ActiveLink
         key={`${mobile ? 'mobile' : 'desktop'}-link-${link.href}-${uuidv4()}`}
         shallow={true}
-        className={
-          cn(
-            "flex justify-center items-center gap-x-3 font-semibold w-11/12", 
-            link.id === "logout" && "pb-8 border-b border-b-textInfoForeground",
-          )
-        }
+        className={cn(
+          'flex justify-center items-center gap-x-3 font-semibold w-11/12',
+          link.id === 'logout' && 'pb-8 border-b border-b-textInfoForeground',
+        )}
         href={link.href ? `/${lang}${link.href}` : '#'}
         onClick={(e) => {
           e.preventDefault()
@@ -187,17 +184,9 @@ export function NavLinks({
         }}
         aria-disabled={link.disabled}
       >
-        {
-          link?.icon?.left && (
-            link?.icon?.element
-          )
-        }
+        {link?.icon?.left && link?.icon?.element}
         {link.text}
-        {
-          link?.icon?.right && (
-            link?.icon?.element
-          )
-        }
+        {link?.icon?.right && link?.icon?.element}
       </ActiveLink>
     )
   })

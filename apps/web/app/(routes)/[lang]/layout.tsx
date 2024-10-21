@@ -5,11 +5,7 @@ import { Providers } from '@/components/layout/providers'
 import { getDictionary } from '@/dictionaries'
 import { locales } from '@/dictionaries/locales'
 import { appConfig } from '@/lib/config'
-import {
-  FuturaPTBold,
-  FuturaPTDemi,
-  LufgaBold,
-} from '@/lib/fonts'
+import { FuturaPTBold, FuturaPTDemi, LufgaBold } from '@/lib/fonts'
 import { cn } from '@/lib/utils'
 import type { CommonPageParams } from '@/types/routing.type'
 import { GoogleAnalytics } from '@next/third-parties/google'
@@ -156,5 +152,5 @@ export const metadata: Metadata = {
     'p:domain_verify': appConfig.analytics.pinterest.domainVerification,
     'theme-color': '#080e44',
     'apple-mobile-web-app-status-bar-style': 'black-translucent',
-  }
+  },
 }

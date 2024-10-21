@@ -1,14 +1,13 @@
-import { loadEnvConfig } from '@repo/config';
-import { createClient as createWsClient } from 'graphql-ws';
-import { createClient } from '../../generated';
-import { GraphQLSdkProps } from './client.types';
+import { loadEnvConfig } from '@repo/config'
+import { createClient as createWsClient } from 'graphql-ws'
+import { createClient } from '../../generated'
+import type { GraphQLSdkProps } from './client.types'
 
-export * from '../../generated';
-
+export * from '../../generated'
 
 // Server side client
 export function createChaingraphClient({ config, options = {} }: GraphQLSdkProps = {}) {
-  const envConfig = loadEnvConfig(process.env.NEXT_PUBLIC_APP_ENV || 'prod');
+  const envConfig = loadEnvConfig(process.env.NEXT_PUBLIC_APP_ENV || 'prod')
   const headers = {
     Accept: 'application/json',
     'Content-Type': 'application/json',
@@ -26,7 +25,7 @@ export function createChaingraphClient({ config, options = {} }: GraphQLSdkProps
         return {
           headers,
         }
-      }
+      },
     })
     subscribe = subscriptions
   }

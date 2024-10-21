@@ -1,8 +1,8 @@
-import { generateShortLink } from "@/app/actions/general"
-import { useSession } from "@/hooks/use-session"
-import { useSupabaseClient } from "@/services/supabase"
-import { useState } from "react"
-import { toast } from "sonner"
+import { generateShortLink } from '@/app/actions/general'
+import { useSession } from '@/hooks/use-session'
+import { useSupabaseClient } from '@/services/supabase'
+import { useState } from 'react'
+import { toast } from 'sonner'
 
 export function useCopyShortLink(config?: { isProject?: boolean }) {
   const [status, setStatus] = useState<'default' | 'loading' | 'copied' | 'error'>(

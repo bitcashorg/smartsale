@@ -8,7 +8,7 @@ import {
   Link,
   Preview,
   Section,
-  Tailwind
+  Tailwind,
 } from '@react-email/components'
 import { Logo } from 'components/logo'
 
