@@ -592,10 +592,7 @@ export type Database = {
           id: number
         }[]
       }
-      supabase_url: {
-        Args: Record<PropertyKey, never>
-        Returns: string
-      }
+      
     }
     Enums: {
       chain_type: "evm" | "eos" | "solana" | "cosmos"
