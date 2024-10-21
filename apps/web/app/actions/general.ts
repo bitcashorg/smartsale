@@ -47,7 +47,9 @@ async function validateRecaptcha(recaptchaToken: string): Promise<boolean> {
   return response.data.success
 }
 
-export async function subscribeToNewsletter(data: FormData): Promise<ActionState> {
+export async function subscribeToNewsletter(
+  data: FormData,
+): Promise<ActionState> {
   const resend = new Resend(process.env.RESEND_API_KEY)
 
   const NewsletterSchema = z.object({

@@ -15,5 +15,6 @@ export default async function TokenizationPage({ params }: CommonPageProps) {
 
 export const metadata: Metadata = {
   title: 'Tokenization | Bitlauncher',
-  description: 'Be part of the intelligent future and join the Ai/Web3 revolution now!',
+  description:
+    'Be part of the intelligent future and join the Ai/Web3 revolution now!',
 }

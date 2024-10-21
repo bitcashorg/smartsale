@@ -20,7 +20,13 @@ export const NextArrowComponent = (props: SVGProps<SVGSVGElement>) => (
 )
 
 export const PrevArrowComponent = (props: SVGProps<SVGSVGElement>) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width={26} height={27} fill="none" {...props}>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={26}
+    height={27}
+    fill="none"
+    {...props}
+  >
     <title>Prev</title>
     <path
       stroke="#fff"

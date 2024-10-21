@@ -35,7 +35,8 @@ export const savePresaleDepositIntent = createSafeActionClient()
           })
           .select()
 
-        if (transaction.error) return failure('DB_OP_FAILURE', transaction.error)
+        if (transaction.error)
+          return failure('DB_OP_FAILURE', transaction.error)
 
         const deposit = await supabase
           .from('presale_deposit')

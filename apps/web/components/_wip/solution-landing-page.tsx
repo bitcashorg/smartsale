@@ -11,7 +11,9 @@ export function SolutionLandingPage({ content }: SolutionLandingPageProps) {
     <main className="py-24 sm:py-32">
       <div className="px-6 mx-auto max-w-7xl lg:px-8">
         <div className="sm:text-center">
-          <h2 className="text-lg font-semibold leading-8">{content.mainHeading}</h2>
+          <h2 className="text-lg font-semibold leading-8">
+            {content.mainHeading}
+          </h2>
           <p className="mt-2 font-bold heading">{content.subHeading}</p>
           <p className="max-w-2xl mx-auto mt-6 text-lg leading-8">
             {content.description}
@@ -28,7 +30,9 @@ export function SolutionLandingPage({ content }: SolutionLandingPageProps) {
                   <h3 className="mt-8 text-2xl font-semibold tracking-tight">
                     {feature.title}
                   </h3>
-                  <p className="mt-4 text-base leading-7">{feature.description}</p>
+                  <p className="mt-4 text-base leading-7">
+                    {feature.description}
+                  </p>
                 </div>
               </div>
             </Card>
@@ -39,7 +43,9 @@ export function SolutionLandingPage({ content }: SolutionLandingPageProps) {
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
               {content.business.heading}
             </h2>
-            <p className="mt-6 text-lg leading-8">{content.business.description}</p>
+            <p className="mt-6 text-lg leading-8">
+              {content.business.description}
+            </p>
           </div>
           <div className="flex flex-col max-w-2xl gap-8 mx-auto mt-10 lg:mx-0 lg:max-w-none lg:flex-row lg:items-start">
             {content.advantages.map((advantage, index) => (
@@ -57,7 +63,9 @@ export function SolutionLandingPage({ content }: SolutionLandingPageProps) {
         </div>
         <div className="flex flex-col p-12 mt-32 text-white bg-gray-900 rounded-3xl lg:flex-row lg:items-center lg:p-24">
           <div className="flex-1 mb-10 lg:mb-0">
-            <h3 className="text-3xl font-semibold">{content.callToAction.heading}</h3>
+            <h3 className="text-3xl font-semibold">
+              {content.callToAction.heading}
+            </h3>
             <p className="mt-4 text-lg">{content.callToAction.description}</p>
           </div>
           <div className="flex-none lg:ml-10">

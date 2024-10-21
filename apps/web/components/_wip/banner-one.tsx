@@ -28,8 +28,8 @@ export function BannerOne() {
             Start using our app today.
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-300">
-            Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada
-            adipiscing sagittis vel nulla.
+            Ac euismod vel sit maecenas id pellentesque eu sed consectetur.
+            Malesuada adipiscing sagittis vel nulla.
           </p>
           <div className="flex items-center justify-center mt-10 gap-x-6 lg:justify-start">
             <a

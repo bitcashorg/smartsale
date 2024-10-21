@@ -20,7 +20,11 @@ export function AuctionDebug({ auctionId }: { auctionId: number }) {
 }
 
 function AuctionText({ children }: { children: React.ReactNode }) {
-  return <div className="my-10 bg-black p-4 font-mono text-green-500">{children}</div>
+  return (
+    <div className="my-10 bg-black p-4 font-mono text-green-500">
+      {children}
+    </div>
+  )
 }
 
 // Function to format token amounts
@@ -33,7 +37,11 @@ const convertToYamlText = (data: AuctionData): JSX.Element[] => {
     // console.log(key, value)
     if (value instanceof Date) {
       value = value.toLocaleString()
-    } else if (typeof value === 'string' && !isAddress(value) && !isHex(value)) {
+    } else if (
+      typeof value === 'string' &&
+      !isAddress(value) &&
+      !isHex(value)
+    ) {
       value = formatTokenAmount(value)
     } else if (isHex(value) && !isAddress(value)) {
       return value

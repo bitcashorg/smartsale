@@ -36,7 +36,9 @@ export function MediaPlayerLanding() {
         </div>
       </div>
       <aside className="h-full w-96 overflow-y-auto bg-[#181818] p-4">
-        <h2 className="mb-4 text-lg font-bold">Bitcash Breakthrough: Your Gateway...</h2>
+        <h2 className="mb-4 text-lg font-bold">
+          Bitcash Breakthrough: Your Gateway...
+        </h2>
         <ul className="space-y-2">
           {[...Array(20)].map((_, index) => (
             <li key={index} className="flex items-center space-x-2">
@@ -47,7 +49,9 @@ export function MediaPlayerLanding() {
               />
               <div>
                 <div className="font-bold">Video Title {index + 1}</div>
-                <div className="text-sm text-gray-400">Bitlauncher | Bitcash</div>
+                <div className="text-sm text-gray-400">
+                  Bitlauncher | Bitcash
+                </div>
                 <div className="text-sm text-gray-400">0:56</div>
               </div>
             </li>

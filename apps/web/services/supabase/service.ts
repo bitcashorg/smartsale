@@ -11,7 +11,10 @@ import { supabase } from '../../../../services/trigger/src/lib/supabase'
  * @returns {Promise<any>} Presale data for the specified project
  * @throws {Error} If there's an error fetching the data
  */
-export async function getPresaleData({ projectId, supabase }: ProjectDataParams) {
+export async function getPresaleData({
+  projectId,
+  supabase,
+}: ProjectDataParams) {
   const { data, error } = await supabase
     .from('presale')
     .select('*, presale_address(*)')
@@ -23,7 +26,9 @@ export async function getPresaleData({ projectId, supabase }: ProjectDataParams)
     throw error
   }
 
-  return data as Tables<'presale'> & { presale_address: Tables<'presale_address'>[] }
+  return data as Tables<'presale'> & {
+    presale_address: Tables<'presale_address'>[]
+  }
 }
 
 /**
@@ -32,7 +37,10 @@ export async function getPresaleData({ projectId, supabase }: ProjectDataParams)
  * @returns {Promise<any>} Project data for the specified project
  * @throws {Error} If there's an error fetching the data
  */
-export async function getProjectData({ projectId, supabase }: ProjectDataParams) {
+export async function getProjectData({
+  projectId,
+  supabase,
+}: ProjectDataParams) {
   const { data, error } = await supabase
     .from('project')
     .select('*')
@@ -156,7 +164,10 @@ export async function insertTransaction(
   return true
 }
 
-export async function getWhitelistedAddress(account: string, supabase: SupabaseClient) {
+export async function getWhitelistedAddress(
+  account: string,
+  supabase: SupabaseClient,
+) {
   const { data, error } = await supabase
     .from('whitelist')
     .select('*')

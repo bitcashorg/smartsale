@@ -7,8 +7,9 @@ export function FeatureTwo() {
             The quick, brown fox jumps over a lazy dog
           </h5>
           <p className="mb-6 text-gray-900">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-            doloremque rem aperiam, eaque ipsa quae. Sed ut unde omnis iste natus.
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque rem aperiam, eaque ipsa quae. Sed ut unde
+            omnis iste natus.
           </p>
           <div className="flex items-center">
             <button
@@ -45,8 +46,9 @@ export function FeatureTwo() {
             </div>
             <h6 className="mb-2 font-semibold leading-5">The deep ocean</h6>
             <p className="text-sm text-gray-700">
-              A flower in my garden, a mystery in my panties. Heart attack never stopped
-              old Big Bear. I didn't even know we were calling him Big Bear.
+              A flower in my garden, a mystery in my panties. Heart attack never
+              stopped old Big Bear. I didn't even know we were calling him Big
+              Bear.
             </p>
           </div>
           <div className="max-w-md">
@@ -67,8 +69,9 @@ export function FeatureTwo() {
             </div>
             <h6 className="mb-2 font-semibold leading-5">When has justice</h6>
             <p className="text-sm text-gray-700">
-              Rough pomfret lemon shark plownose chimaera southern sandfish kokanee
-              northern sea robin Antarctic cod. Yellow-and-black triplefin.
+              Rough pomfret lemon shark plownose chimaera southern sandfish
+              kokanee northern sea robin Antarctic cod. Yellow-and-black
+              triplefin.
             </p>
           </div>
           <div className="max-w-md">
@@ -89,8 +92,9 @@ export function FeatureTwo() {
             </div>
             <h6 className="mb-2 font-semibold leading-5">Organically grow</h6>
             <p className="text-sm text-gray-700">
-              A slice of heaven. O for awesome, this chocka full cuzzie is as rip-off as a
-              cracker. Meanwhile, in behind the bicycle shed, Hercules.
+              A slice of heaven. O for awesome, this chocka full cuzzie is as
+              rip-off as a cracker. Meanwhile, in behind the bicycle shed,
+              Hercules.
             </p>
           </div>
           <div className="max-w-md">
@@ -111,8 +115,9 @@ export function FeatureTwo() {
             </div>
             <h6 className="mb-2 font-semibold leading-5">A slice of heaven</h6>
             <p className="text-sm text-gray-700">
-              Disrupt inspire and think tank, social entrepreneur but preliminary thinking
-              think tank compelling. Inspiring, invest synergy capacity.
+              Disrupt inspire and think tank, social entrepreneur but
+              preliminary thinking think tank compelling. Inspiring, invest
+              synergy capacity.
             </p>
           </div>
         </div>

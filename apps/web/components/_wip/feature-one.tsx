@@ -9,9 +9,9 @@ export function FeatureOne() {
         </div>
         <div className="lg:w-1/2">
           <p className="text-base text-gray-700 md:text-lg">
-            For those who have seen the Earth from space, and for the hundreds and perhaps
-            thousands more who will, the experience most certainly changes your
-            perspective.
+            For those who have seen the Earth from space, and for the hundreds
+            and perhaps thousands more who will, the experience most certainly
+            changes your perspective.
           </p>
         </div>
       </div>
@@ -34,7 +34,8 @@ export function FeatureOne() {
           </div>
           <h6 className="mb-2 font-semibold leading-5">Our planet</h6>
           <p className="mb-3 text-sm text-gray-900">
-            We choose to go to the moon, not because it's easy, but because it's hard.
+            We choose to go to the moon, not because it's easy, but because it's
+            hard.
           </p>
           <ul className="mb-4 -ml-1 space-y-2">
             <li className="flex items-start">

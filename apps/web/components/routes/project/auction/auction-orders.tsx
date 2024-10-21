@@ -96,11 +96,14 @@ export function AuctionOrders() {
             <TableRow key={index}>
               <TableCell>
                 {(
-                  Number(formatTokenAmount(order.sell_amount)) / order.buy_amount
+                  Number(formatTokenAmount(order.sell_amount)) /
+                  order.buy_amount
                 ).toFixed(2)}
               </TableCell>
               <TableCell>{order.buy_amount}</TableCell>
-              <TableCell>{formatTokenAmount(order.sell_amount.toString())}</TableCell>
+              <TableCell>
+                {formatTokenAmount(order.sell_amount.toString())}
+              </TableCell>
 
               <TableCell>
                 <Link

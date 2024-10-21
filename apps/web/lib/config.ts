@@ -16,10 +16,12 @@ export const appConfig = {
   },
   analytics: {
     google: {
-      siteVerification: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION_TOKEN || '',
+      siteVerification:
+        process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION_TOKEN || '',
     },
     pinterest: {
-      domainVerification: process.env.NEXT_PUBLIC_PINTEREST_DOMAIN_VERIFICATION_TOKEN || '',
+      domainVerification:
+        process.env.NEXT_PUBLIC_PINTEREST_DOMAIN_VERIFICATION_TOKEN || '',
     },
     multibase: {
       key: process.env.NEXT_PUBLIC_MULTIBASE_API_KEY,

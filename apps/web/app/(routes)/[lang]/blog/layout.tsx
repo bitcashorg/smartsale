@@ -5,7 +5,9 @@ import type { ReactNode } from 'react'
 export default function BlogLayout({ children }: RootLayoutProps) {
   return (
     <div className="relative flex flex-col min-h-screen">
-      <main className="relative flex flex-col flex-1 min-h-screen">{children}</main>
+      <main className="relative flex flex-col flex-1 min-h-screen">
+        {children}
+      </main>
     </div>
   )
 }

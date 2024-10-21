@@ -30,7 +30,9 @@ export function WhitepaperSidebar({
 
   return (
     <div className="p-4 md:w-64 md:p-4 md:h-screen h-0">
-      <h2 className="text-xl font-bold mb-4 hidden md:block">Bitlauncher Whitepaper</h2>
+      <h2 className="text-xl font-bold mb-4 hidden md:block">
+        Bitlauncher Whitepaper
+      </h2>
       <div className="md:hidden">
         <NavigationBtn onClick={toggleMobileNav} className="mb-2" />
       </div>
@@ -42,7 +44,9 @@ export function WhitepaperSidebar({
                 <button className="text-accent-400" onClick={toggleMobileNav}>
                   ✕
                 </button>
-                <h2 className="text-xl font-bold text-white">Bitlauncher Whitepaper</h2>
+                <h2 className="text-xl font-bold text-white">
+                  Bitlauncher Whitepaper
+                </h2>
               </div>
               {WHITE_PAPER.sections.map((section: Section) => (
                 <div
@@ -72,7 +76,9 @@ export function WhitepaperSidebar({
             key={section.title}
             className={`block py-2 cursor-pointer ${activeSection === section.title ? 'border-b-2 border-accent-400 inline-block text-white' : 'paragraph'}`}
             onClick={() => onSectionChange(section.title)}
-            onKeyDown={(e) => e.key === 'Enter' && onSectionChange(section.title)}
+            onKeyDown={(e) =>
+              e.key === 'Enter' && onSectionChange(section.title)
+            }
             tabIndex={0}
           >
             {section.title}

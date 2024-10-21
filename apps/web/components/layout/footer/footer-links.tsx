@@ -13,7 +13,9 @@ export function FooterLinks() {
       </Link>
       <div className="grid w-full grid-cols-2 gap-5 mx-auto lg:grid-cols-3">
         {footerNavStruct.sections.map((section, index) =>
-          section.items ? <SectionComponent key={index} section={section} /> : null,
+          section.items ? (
+            <SectionComponent key={index} section={section} />
+          ) : null,
         )}
       </div>
     </div>

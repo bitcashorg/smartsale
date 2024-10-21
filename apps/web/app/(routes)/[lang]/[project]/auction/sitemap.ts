@@ -17,10 +17,11 @@ export default async function sitemap({
     alternates: {
       // ? e.g.: { 'en': 'https://example.com/en/...', 'es': 'https://example.com/es/...', ... }
       languages: Object.fromEntries(
-        AVAILABLE_LANGS.map(
-          (lang) => [lang, `https://${process.env.NEXT_PUBLIC_APP_URL}/${lang}/${project.slug}/presale`]
-        )
-      )
-    }
+        AVAILABLE_LANGS.map((lang) => [
+          lang,
+          `https://${process.env.NEXT_PUBLIC_APP_URL}/${lang}/${project.slug}/presale`,
+        ]),
+      ),
+    },
   }))
 }

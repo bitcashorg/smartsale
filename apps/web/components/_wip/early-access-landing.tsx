@@ -54,7 +54,9 @@ function Section({
                   <li key={project.name}>
                     <div className="grid gap-1">
                       <h3 className="text-xl font-bold">{project.name}</h3>
-                      <p className="text-infoForeground">{project.description}</p>
+                      <p className="text-infoForeground">
+                        {project.description}
+                      </p>
                     </div>
                   </li>
                 ))}
@@ -99,7 +101,8 @@ const heroSection = {
 
 const exploreSection = {
   title: 'Explore the latest projects',
-  description: 'Discover innovative Web3 projects curated by our team of experts.',
+  description:
+    'Discover innovative Web3 projects curated by our team of experts.',
   projects: [
     {
       name: 'Project Alpha',
@@ -111,7 +114,8 @@ const exploreSection = {
     },
     {
       name: 'Project Gamma',
-      description: 'A decentralized finance (DeFi) platform for lending and borrowing.',
+      description:
+        'A decentralized finance (DeFi) platform for lending and borrowing.',
     },
   ],
   imageSrc: '/images/placeholder.svg',

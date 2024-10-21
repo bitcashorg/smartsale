@@ -1,6 +1,8 @@
 import { getCMSSdk } from '@/services/datocms/graphql/cms'
 
-export async function getPageContent(category: 'terms_condition' | 'privacy_policy') {
+export async function getPageContent(
+  category: 'terms_condition' | 'privacy_policy',
+) {
   let dataRecord: MainContentBlock | null = null
   let error
 
@@ -35,7 +37,10 @@ export async function getPageContent(category: 'terms_condition' | 'privacy_poli
       throw new Error('No records has been found for  ' + category)
     }
   } catch (err) {
-    console.log('datocms-page.service::getPageContent::[ERROR]:: ' + category, err)
+    console.log(
+      'datocms-page.service::getPageContent::[ERROR]:: ' + category,
+      err,
+    )
 
     error = (err as Error).message
   } finally {

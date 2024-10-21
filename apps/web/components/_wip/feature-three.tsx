@@ -12,8 +12,8 @@ export function FeatureThree() {
             Trusted by over 600 million users and 10,000 teams
           </h2>
           <p className="font-light text-infoForeground sm:text-xl">
-            Our rigorous security and compliance standards are at the heart of all we do.
-            We work tirelessly to protect you and your customers.
+            Our rigorous security and compliance standards are at the heart of
+            all we do. We work tirelessly to protect you and your customers.
           </p>
           <div className="pt-6 mt-6 space-y-4 border-t border-gray-200 dark:border-gray-700">
             <div>
@@ -72,7 +72,9 @@ export function FeatureThree() {
                 clipRule="evenodd"
               />
             </svg>
-            <h3 className="mb-2 text-2xl font-bold dark:text-white">99.99% uptime</h3>
+            <h3 className="mb-2 text-2xl font-bold dark:text-white">
+              99.99% uptime
+            </h3>
             <p className="font-light text-infoForeground">
               For Landwind, with zero maintenance downtime
             </p>
@@ -86,7 +88,9 @@ export function FeatureThree() {
             >
               <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" />
             </svg>
-            <h3 className="mb-2 text-2xl font-bold dark:text-white">600M+ Users</h3>
+            <h3 className="mb-2 text-2xl font-bold dark:text-white">
+              600M+ Users
+            </h3>
             <p className="font-light text-infoForeground">
               Trusted by over 600 milion users around the world
             </p>
@@ -104,7 +108,9 @@ export function FeatureThree() {
                 clipRule="evenodd"
               />
             </svg>
-            <h3 className="mb-2 text-2xl font-bold dark:text-white">100+ countries</h3>
+            <h3 className="mb-2 text-2xl font-bold dark:text-white">
+              100+ countries
+            </h3>
             <p className="font-light text-infoForeground">
               Have used Landwind to create functional websites
             </p>
@@ -118,8 +124,12 @@ export function FeatureThree() {
             >
               <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
             </svg>
-            <h3 className="mb-2 text-2xl font-bold dark:text-white">5+ Million</h3>
-            <p className="font-light text-infoForeground">Transactions per day</p>
+            <h3 className="mb-2 text-2xl font-bold dark:text-white">
+              5+ Million
+            </h3>
+            <p className="font-light text-infoForeground">
+              Transactions per day
+            </p>
           </div>
         </div>
       </div>

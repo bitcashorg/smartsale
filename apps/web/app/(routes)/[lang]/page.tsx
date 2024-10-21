@@ -56,7 +56,10 @@ const DynamicUpcoming = dynamic(
 )
 
 const DynamicWhyChooseUs = dynamic(
-  () => import('@/components/routes/home/why-choose-us').then((mod) => mod.WhyChooseUs),
+  () =>
+    import('@/components/routes/home/why-choose-us').then(
+      (mod) => mod.WhyChooseUs,
+    ),
   { ssr: false },
 )
 
@@ -82,7 +85,10 @@ const DynamicRecentArticles = dynamic(
 )
 
 const DynamicFAQ = dynamic(
-  () => import('@/components/routes/home/section/faq-section').then((mod) => mod.FAQ),
+  () =>
+    import('@/components/routes/home/section/faq-section').then(
+      (mod) => mod.FAQ,
+    ),
   { ssr: false },
 )
 

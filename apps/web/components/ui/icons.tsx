@@ -29,7 +29,11 @@ function IconNextChat({
           gradientUnits="userSpaceOnUse"
         >
           <stop stopColor={inverted ? 'white' : 'black'} />
-          <stop offset={1} stopColor={inverted ? 'white' : 'black'} stopOpacity={0} />
+          <stop
+            offset={1}
+            stopColor={inverted ? 'white' : 'black'}
+            stopOpacity={0}
+          />
         </linearGradient>
         <linearGradient
           id={`gradient-${id}-2`}
@@ -40,7 +44,11 @@ function IconNextChat({
           gradientUnits="userSpaceOnUse"
         >
           <stop stopColor={inverted ? 'white' : 'black'} />
-          <stop offset={1} stopColor={inverted ? 'white' : 'black'} stopOpacity={0} />
+          <stop
+            offset={1}
+            stopColor={inverted ? 'white' : 'black'}
+            stopOpacity={0}
+          />
         </linearGradient>
       </defs>
       <path
@@ -434,7 +442,10 @@ function IconUsers({ className, ...props }: React.ComponentProps<'svg'>) {
   )
 }
 
-function IconExternalLink({ className, ...props }: React.ComponentProps<'svg'>) {
+function IconExternalLink({
+  className,
+  ...props
+}: React.ComponentProps<'svg'>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -448,7 +459,10 @@ function IconExternalLink({ className, ...props }: React.ComponentProps<'svg'>) 
   )
 }
 
-function IconChevronUpDown({ className, ...props }: React.ComponentProps<'svg'>) {
+function IconChevronUpDown({
+  className,
+  ...props
+}: React.ComponentProps<'svg'>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -1029,36 +1043,37 @@ function IconReferral({ className, ...props }: React.ComponentProps<'svg'>) {
 }
 
 export {
-    IconArrowDown,
-    IconArrowElbow,
-    IconArrowRight,
-    IconBitlauncher,
-    IconCheck,
-    IconChevronUpDown,
-    IconClose,
-    IconCopy,
-    IconDiscord,
-    IconDownload,
-    IconDownRightArrow,
-    IconEdit,
-    IconExternalLink,
-    IconGitHub,
-    IconMessage,
-    IconMoon,
-    IconNextChat,
-    IconOpenAI,
-    IconPlus, IconReferral, IconRefresh,
-    IconSeparator,
-    IconShare,
-    IconSidebar,
-    IconSpinner,
-    IconStop,
-    IconSun,
-    IconTelegram,
-    IconTrash,
-    IconTwitterX,
-    IconUser,
-    IconUsers,
-    IconVercel
+  IconArrowDown,
+  IconArrowElbow,
+  IconArrowRight,
+  IconBitlauncher,
+  IconCheck,
+  IconChevronUpDown,
+  IconClose,
+  IconCopy,
+  IconDiscord,
+  IconDownload,
+  IconDownRightArrow,
+  IconEdit,
+  IconExternalLink,
+  IconGitHub,
+  IconMessage,
+  IconMoon,
+  IconNextChat,
+  IconOpenAI,
+  IconPlus,
+  IconReferral,
+  IconRefresh,
+  IconSeparator,
+  IconShare,
+  IconSidebar,
+  IconSpinner,
+  IconStop,
+  IconSun,
+  IconTelegram,
+  IconTrash,
+  IconTwitterX,
+  IconUser,
+  IconUsers,
+  IconVercel,
 }
-

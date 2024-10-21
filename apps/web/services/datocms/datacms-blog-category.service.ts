@@ -117,7 +117,9 @@ export async function getBlogCategory(
       },
     })
 
-    dataRecord = data[categoryRecordName as keyof typeof data] as BlogArticleRecord[]
+    dataRecord = data[
+      categoryRecordName as keyof typeof data
+    ] as BlogArticleRecord[]
 
     if (!dataRecord.length) {
       throw new Error('No records has been found for  ' + category)
@@ -562,7 +564,10 @@ export async function getBlogCategories(): Promise<getBlogCategoriesTypes> {
 
     return data as unknown as getBlogCategoriesTypes
   } catch (error) {
-    console.error('datocms-blog-category.service::getBlogCategories::[ERROR]', error)
+    console.error(
+      'datocms-blog-category.service::getBlogCategories::[ERROR]',
+      error,
+    )
 
     return {
       allBlogBitcoins: [defaultBlogArticle],

@@ -12,5 +12,6 @@ export default function ReferralProgramPage() {
 
 export const metadata: Metadata = {
   title: 'Wallet | Bitlauncher',
-  description: 'Be part of the intelligent future and join the Ai/Web3 revolution now!',
+  description:
+    'Be part of the intelligent future and join the Ai/Web3 revolution now!',
 }

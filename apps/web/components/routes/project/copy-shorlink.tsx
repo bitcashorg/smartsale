@@ -25,7 +25,9 @@ export function CopyShortlinkIcon() {
 }
 
 const iconsMap = {
-  loading: <LucideLoader2 size={26} className="animate-spin stroke-accent-500" />,
+  loading: (
+    <LucideLoader2 size={26} className="animate-spin stroke-accent-500" />
+  ),
   copied: <LucideCheck size={26} className="stroke-success" />,
   error: <LucideX size={26} className="stroke-destructive" />,
   default: <LucideShare size={26} className="stroke-accent-500" />,

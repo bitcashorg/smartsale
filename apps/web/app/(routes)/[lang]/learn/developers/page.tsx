@@ -14,5 +14,6 @@ export default async function DevelopersPage({ params }: CommonPageProps) {
 
 export const metadata: Metadata = {
   title: 'Developers | Bitlauncher',
-  description: 'Be part of the intelligent future and join the Ai/Web3 revolution now!',
+  description:
+    'Be part of the intelligent future and join the Ai/Web3 revolution now!',
 }
