@@ -34,19 +34,19 @@ export async function getPageContent(
     dataRecord = data[pageName as keyof typeof data] as MainContentBlock
 
     if (!dataRecord) {
-      throw new Error('No records has been found for  ' + category)
+      throw new Error(`No records has been found for  ${category}`)
     }
   } catch (err) {
     console.log(
-      'datocms-page.service::getPageContent::[ERROR]:: ' + category,
+      `datocms-page.service::getPageContent::[ERROR]:: ${category}`,
       err,
     )
 
     error = (err as Error).message
   } finally {
     return {
-      [`Data`]: dataRecord,
-      [`Error`]: error,
+      Data: dataRecord,
+      Error: error,
     }
   }
 }

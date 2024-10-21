@@ -29,7 +29,7 @@ function AuctionText({ children }: { children: React.ReactNode }) {
 
 // Function to format token amounts
 const formatTokenAmount = (amount = '', decimals = 6) => {
-  return (Number(amount) / Math.pow(10, decimals)).toFixed(2) // Adjust precision as needed
+  return (Number(amount) / 10 ** decimals).toFixed(2) // Adjust precision as needed
 }
 
 const convertToYamlText = (data: AuctionData): JSX.Element[] => {

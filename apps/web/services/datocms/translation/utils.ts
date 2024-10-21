@@ -67,7 +67,8 @@ function optimizeContentBlock(
   function extractValues(block: any): any {
     if (block.value) {
       return block.value
-    } else if (block.children) {
+    }
+    if (block.children) {
       return block.children.map(extractValues)
     }
     return ''

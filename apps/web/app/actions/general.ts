@@ -34,7 +34,7 @@ export async function getSesssion(formData: FormData) {
 
 async function validateRecaptcha(recaptchaToken: string): Promise<boolean> {
   const response = await axios.post(
-    `https://www.google.com/recaptcha/api/siteverify`,
+    'https://www.google.com/recaptcha/api/siteverify',
     {},
     {
       params: {

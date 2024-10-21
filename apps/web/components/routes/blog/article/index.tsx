@@ -31,7 +31,7 @@ export function BlogPage({
   block = blogContent.contentBlock
     .map(({ mainContent }) => {
       return mainContent.value.document.children.filter(
-        ({ type, level }) => (type === 'heading' && level == 2) || level == 3,
+        ({ type, level }) => (type === 'heading' && level === 2) || level === 3,
       )
     })
     .filter((block) => Boolean(block[0]))
@@ -233,7 +233,7 @@ export function BlogPage({
         <section className="mt-space-80 md:max-w-[74rem] w-full md:px-10 mx-auto">
           <div className="flex items-center justify-between text-xl mb-8">
             <span className="font-semibold">/Related stories</span>
-            <Link href={`/blog`}>
+            <Link href={'/blog'}>
               <span>See All Stories &gt;</span>
             </Link>
           </div>

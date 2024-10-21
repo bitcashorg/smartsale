@@ -24,7 +24,7 @@ interface RootLayoutProps {
 export const metadata: Metadata = {
   title: {
     default: 'Blog',
-    template: `%s - Blog`,
+    template: '%s - Blog',
   },
   description: 'Ai and Web3 articles, community with tips and latest updates.',
 }

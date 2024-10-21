@@ -50,7 +50,7 @@ export function NavLinks({
       disabled: !bitcashAccount,
       icon: {
         element: address ? <Wallet /> : '',
-        left: address ? true : false,
+        left: !!address,
         right: false,
       },
     },

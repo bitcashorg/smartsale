@@ -232,7 +232,7 @@ function CurrencyInput({ handlechange, ...props }: CurrencyInputProps) {
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const val = e.target.value.replace(/,/g, '') // Remove commas for parsing
-    if (!isNaN(Number(val))) {
+    if (!Number.isNaN(Number(val))) {
       // This ensures the value is a number (including decimals)
       setValue(val) // Set the raw number value for controlled input
     }

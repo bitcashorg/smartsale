@@ -107,7 +107,7 @@ export function DepositCard() {
 
             <Select onValueChange={setSelectedToken} defaultValue={'USDT'}>
               <SelectTrigger id="token-select">
-                <SelectValue placeholder={`USDT`} />
+                <SelectValue placeholder={'USDT'} />
               </SelectTrigger>
               <SelectContent position="popper">
                 {['USDT', 'USDC'].map((token) => (

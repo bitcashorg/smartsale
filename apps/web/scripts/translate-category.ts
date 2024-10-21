@@ -2,15 +2,15 @@ import { type Lang, locales } from '@/dictionaries/locales'
 import { anthropicTranslate } from '@/services/anthropic'
 import type { BlogArticleRecord } from '@/services/datocms'
 
-import type { Dirent } from 'fs'
-import * as path from 'path'
+import type { Dirent } from 'node:fs'
+import * as fs from 'node:fs/promises'
+import * as path from 'node:path'
 import { promiseAllWithConcurrencyLimit } from '@/lib/utils'
-import * as fs from 'fs/promises'
 import _ from 'lodash'
 
 async function copyJsonFiles(lang: Lang): Promise<void> {
   console.log('Copying lang', lang)
-  if (lang == 'en') return
+  if (lang === 'en') return
   const sourceDir = path.join('./dictionaries/en/blog')
   const targetDir = path.join(`./dictionaries/${lang}/blog`)
 
@@ -163,9 +163,8 @@ async function processFile(
             articleTranslation.translation
           ) {
             return articleTranslation.translation
-          } else {
-            throw new Error('❌ articleTranslation not found')
           }
+          throw new Error('❌ articleTranslation not found')
         })
 
         // console.log('🧑🏻‍💻 Articles translating!')

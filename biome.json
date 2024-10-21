@@ -12,6 +12,13 @@
     "enabled": true,
     "rules": {
       "recommended": true,
+      "suspicious": {
+        "noExplicitAny": "off"
+      },
+      "style": {
+        "noNonNullAssertion": "off",
+        "useShorthandArrayType": "off"
+      },
       "a11y": {
         "noSvgWithoutTitle": "off",
         "useButtonType": "off",
@@ -58,7 +65,8 @@
       "**/*.min.js",
       "**/*.d.ts",
       "**/apps/faucet",
-      "**/apps/indexer"
+      "**/apps/indexer",
+      "**/hardhat/auction"
     ]
   }
 }

@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 
-const { hostname } = require('os')
-const path = require('path')
+const { hostname } = require('node:os')
+const path = require('node:path')
 const nextConfig = {
   async headers() {
     return [

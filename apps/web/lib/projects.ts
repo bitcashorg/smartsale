@@ -145,9 +145,9 @@ export type ProjectWithAuction = Required<
   Project
 
 export async function getProjectBySlug(slug: string, dict: any) {
-  const project = projects.find((p) => p.slug == slug)
+  const project = projects.find((p) => p.slug === slug)
   if (!project) return null
   const content =
-    dict.projects.find((c: any) => c.id == project.id)?.content || {}
+    dict.projects.find((c: any) => c.id === project.id)?.content || {}
   return { ...project, content } as Project
 }

@@ -126,7 +126,7 @@ export default function ReferralDesktopList({
                       <p className="text-base text-white opacity-80 font-medium">
                         Accreditation
                       </p>
-                      <div className="h-1 w-1 rounded-full bg-[#4DF0C9]"></div>
+                      <div className="h-1 w-1 rounded-full bg-[#4DF0C9]" />
                     </TableHead>
                     <TableHead className="text-base text-white opacity-80 font-medium whitespace-nowrap w-[25%]">
                       Contribution token

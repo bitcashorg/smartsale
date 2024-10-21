@@ -53,8 +53,7 @@ export default function Newsletter({ lang }: LangProp) {
   const isEmailValid =
     !formState.errors.email && email && email.match(/.+@.+\..+/)
   const isReadyToSubmit =
-    (recaptchaToken && !Boolean(formState.errors.email) && isEmailValid) ||
-    pending
+    (recaptchaToken && !formState.errors.email && isEmailValid) || pending
 
   const newsletterIconResponse = () => {
     if (pending || state.loading)

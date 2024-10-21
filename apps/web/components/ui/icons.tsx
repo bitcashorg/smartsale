@@ -116,7 +116,7 @@ function IconVercel({ className, ...props }: React.ComponentProps<'svg'>) {
       <path
         d="M37.5896 0.25L74.5396 64.25H0.639648L37.5896 0.25Z"
         fill="currentColor"
-      ></path>
+      />
     </svg>
   )
 }
@@ -151,7 +151,7 @@ function IconSeparator({ className, ...props }: React.ComponentProps<'svg'>) {
       className={cn('size-4', className)}
       {...props}
     >
-      <path d="M16.88 3.549L7.12 20.451"></path>
+      <path d="M16.88 3.549L7.12 20.451" />
     </svg>
   )
 }

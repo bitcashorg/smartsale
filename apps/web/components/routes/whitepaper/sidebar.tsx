@@ -56,7 +56,6 @@ export function WhitepaperSidebar({
                   onKeyDown={(e) =>
                     e.key === 'Enter' && handleSectionClick(section.title)
                   }
-                  tabIndex={0}
                 >
                   <div className="relative w-fit paragraph whitespace-nowrap text-left">
                     {section.title}
@@ -79,7 +78,6 @@ export function WhitepaperSidebar({
             onKeyDown={(e) =>
               e.key === 'Enter' && onSectionChange(section.title)
             }
-            tabIndex={0}
           >
             {section.title}
           </div>
