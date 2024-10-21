@@ -10,7 +10,9 @@ export function LandingPage2({ content }: LandingPage2Props) {
             <div className="inline-block px-3 py-1 text-sm bg-gray-100 rounded-lg dark:bg-gray-800">
               {content.title}
             </div>
-            <h2 className="tracking-tighter heading sm:text-5xl">{content.heading}</h2>
+            <h2 className="tracking-tighter heading sm:text-5xl">
+              {content.heading}
+            </h2>
             <p className="max-w-[600px] text-infoForeground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               {content.description}
             </p>

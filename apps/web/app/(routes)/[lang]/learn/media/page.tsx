@@ -14,5 +14,6 @@ export default async function MediaPage({ params }: CommonPageProps) {
 
 export const metadata: Metadata = {
   title: 'Media | Bitlauncher',
-  description: 'Be part of the intelligent future and join the Ai/Web3 revolution now!',
+  description:
+    'Be part of the intelligent future and join the Ai/Web3 revolution now!',
 }

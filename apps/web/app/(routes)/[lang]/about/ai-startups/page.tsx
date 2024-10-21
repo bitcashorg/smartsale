@@ -1,4 +1,7 @@
-import { LandingPage, type LandingPageContent } from '@/components/_wip/landing-page'
+import {
+  LandingPage,
+  type LandingPageContent,
+} from '@/components/_wip/landing-page'
 import { getDictionary } from '@/dictionaries'
 import type { CommonPageProps } from '@/types/routing.type'
 import type { Metadata } from 'next'
@@ -48,5 +51,6 @@ const content: LandingPageContent = {
 
 export const metadata: Metadata = {
   title: 'AI Startups | Bitlauncher',
-  description: 'Be part of the intelligent future and join the Ai/Web3 revolution now!',
+  description:
+    'Be part of the intelligent future and join the Ai/Web3 revolution now!',
 }

@@ -104,7 +104,12 @@ export interface Project {
   telegramGroup: string
   discordServer: string
   content?: Record<
-    'highlights' | 'product' | 'problem' | 'solution' | 'businessModel' | 'tokenomics',
+    | 'highlights'
+    | 'product'
+    | 'problem'
+    | 'solution'
+    | 'businessModel'
+    | 'tokenomics',
     ContentSection
   >
   auctionId?: number
@@ -125,15 +130,24 @@ export interface ContentSection {
 export interface ProjectContent {
   id: number
   content: Record<
-    'highlights' | 'product' | 'problem' | 'solution' | 'businessModel' | 'tokenomics',
+    | 'highlights'
+    | 'product'
+    | 'problem'
+    | 'solution'
+    | 'businessModel'
+    | 'tokenomics',
     ContentSection
   >
 }
-export type ProjectWithAuction = Required<Pick<Project, 'auctionId' | 'token'>> & Project
+export type ProjectWithAuction = Required<
+  Pick<Project, 'auctionId' | 'token'>
+> &
+  Project
 
 export async function getProjectBySlug(slug: string, dict: any) {
-  const project = projects.find((p) => p.slug == slug)
+  const project = projects.find((p) => p.slug === slug)
   if (!project) return null
-  const content = dict.projects.find((c: any) => c.id == project.id)?.content || {}
+  const content =
+    dict.projects.find((c: any) => c.id === project.id)?.content || {}
   return { ...project, content } as Project
 }

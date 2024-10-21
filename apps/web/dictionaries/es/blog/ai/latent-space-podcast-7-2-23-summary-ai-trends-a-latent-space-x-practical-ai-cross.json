@@ -40,7 +40,13 @@
     },
     {
       "id": "190259087",
-      "topics": ["Resumen", "LLM", "Codigo", "Codigo Abierto", "Modelos Pequenos"],
+      "topics": [
+        "Resumen",
+        "LLM",
+        "Codigo",
+        "Codigo Abierto",
+        "Modelos Pequenos"
+      ],
       "title": "Podcast Latent Space 4/8/23 [Resumen] Episodio cruzado de Latent Space x AI Breakdown!",
       "slug": "latent-space-podcast-8-4-23-summary-latent-space-x-ai-breakdown-crossover-pod",
       "authorName": "Prof. Otto Nomos",

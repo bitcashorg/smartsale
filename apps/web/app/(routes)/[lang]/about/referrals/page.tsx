@@ -14,5 +14,6 @@ export default async function ReferralSystemPage({ params }: CommonPageProps) {
 
 export const metadata: Metadata = {
   title: 'ReferralSystem | Bitlauncher',
-  description: 'Be part of the intelligent future and join the Ai/Web3 revolution now!',
+  description:
+    'Be part of the intelligent future and join the Ai/Web3 revolution now!',
 }

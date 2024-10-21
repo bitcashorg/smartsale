@@ -1,4 +1,7 @@
-import { LandingPage2, type LandingPageContent2 } from '@/components/_wip/landing-page2'
+import {
+  LandingPage2,
+  type LandingPageContent2,
+} from '@/components/_wip/landing-page2'
 import { getDictionary } from '@/dictionaries'
 import type { CommonPageProps } from '@/types/routing.type'
 import { FileTextIcon, MessageCircleIcon, VoteIcon } from 'lucide-react'
@@ -55,5 +58,6 @@ const content: LandingPageContent2 = {
 
 export const metadata: Metadata = {
   title: 'Bitcash App | Bitlauncher',
-  description: 'Be part of the intelligent future and join the Ai/Web3 revolution now!',
+  description:
+    'Be part of the intelligent future and join the Ai/Web3 revolution now!',
 }

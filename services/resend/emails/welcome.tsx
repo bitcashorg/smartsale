@@ -8,7 +8,7 @@ import {
   Link,
   Preview,
   Section,
-  Tailwind
+  Tailwind,
 } from '@react-email/components'
 import { Logo } from 'components/logo'
 
@@ -27,26 +27,28 @@ export default function WelcomeEmail() {
             <Heading className="font-normal text-center p-0 my-[30px] mx-0">
               Welcome to v1
             </Heading>
-            <Section className="mb-4">Hi, I'm Pontus, one of the founders.</Section>
             <Section className="mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod,
-              nisi vel consectetur interdum, nisl nunc egestas nunc, vitae tincidunt nisl
-              nunc euismod nunc. Sed euismod, nisi vel consectetur interdum, nisl nunc
-              egestas nunc, vitae tincidunt nisl nunc euismod nunc. Sed euismod, nisi vel
-              consectetur interdum, nisl nunc egestas nunc, vitae tincidunt nisl nunc
-              euismod nunc.
+              Hi, I'm Pontus, one of the founders.
             </Section>
             <Section className="mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+              euismod, nisi vel consectetur interdum, nisl nunc egestas nunc,
+              vitae tincidunt nisl nunc euismod nunc. Sed euismod, nisi vel
+              consectetur interdum, nisl nunc egestas nunc, vitae tincidunt nisl
+              nunc euismod nunc. Sed euismod, nisi vel consectetur interdum,
+              nisl nunc egestas nunc, vitae tincidunt nisl nunc euismod nunc.
+            </Section>
+            <Section className="mb-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
             </Section>
             <Section className="mb-8">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
             </Section>
             <Section className="mb-6">
               <Link href={baseUrl}>

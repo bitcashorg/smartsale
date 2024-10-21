@@ -7,7 +7,11 @@ export function VideoStrip() {
     <div className="w-full max-w-6xl px-4 py-8 mx-auto sm:px-6 lg:px-8">
       <div className="flex items-center justify-between mb-4">
         <h2 className="text-2xl font-bold">Video Strip</h2>
-        <Link href="#" className="text-primary hover:underline" prefetch={false}>
+        <Link
+          href="#"
+          className="text-primary hover:underline"
+          prefetch={false}
+        >
           View All
         </Link>
       </div>

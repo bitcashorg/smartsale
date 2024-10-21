@@ -152,7 +152,13 @@
       "articles": [
         {
           "id": "198277124",
-          "topics": ["MLL", "Finance", "Soins de sante", "Juridique", "Incitation"],
+          "topics": [
+            "MLL",
+            "Finance",
+            "Soins de sante",
+            "Juridique",
+            "Incitation"
+          ],
           "title": "Adaptation des grands modeles de langage via la comprehension de lecture",
           "slug": "adapting-large-language-models-via-reading-comprehension",
           "authorName": "Prof. Otto Nomos",

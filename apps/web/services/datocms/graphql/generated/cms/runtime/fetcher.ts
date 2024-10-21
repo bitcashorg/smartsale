@@ -32,7 +32,8 @@ export const createFetcher = ({
   fetcher =
     fetcher ||
     (async (body) => {
-      let headersObject = typeof headers == 'function' ? await headers() : headers
+      let headersObject =
+        typeof headers == 'function' ? await headers() : headers
       headersObject = headersObject || {}
       if (typeof fetch === 'undefined' && !_fetch) {
         throw new Error(

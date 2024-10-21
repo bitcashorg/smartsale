@@ -14,13 +14,12 @@ export function handleAxiosError(error: unknown) {
       status: error.response.status,
       headers: error.response.headers,
     }
-  } else {
-    console.error('An error occurred:', error)
-    return {
-      data: error as Error,
-      status: (error as Error).name,
-      headers: null,
-    }
+  }
+  console.error('An error occurred:', error)
+  return {
+    data: error as Error,
+    status: (error as Error).name,
+    headers: null,
   }
 }
 

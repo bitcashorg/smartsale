@@ -431,5 +431,13 @@ iframe[title="reCAPTCHA"],
   @apply absolute z-10 -top-5 right-7 w-6 h-6 bg-accent-700 rounded-full animate-bounce;
 
   /* arrow polygon pointing down */
-  clip-path: polygon(50% 100%, 0% 50%, 25% 50%, 25% 0%, 75% 0%, 75% 50%, 100% 50%);
+  clip-path: polygon(
+    50% 100%,
+    0% 50%,
+    25% 50%,
+    25% 0%,
+    75% 0%,
+    75% 50%,
+    100% 50%
+  );
 }

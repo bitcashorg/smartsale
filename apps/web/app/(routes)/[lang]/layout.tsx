@@ -5,11 +5,7 @@ import { Providers } from '@/components/layout/providers'
 import { getDictionary } from '@/dictionaries'
 import { locales } from '@/dictionaries/locales'
 import { appConfig } from '@/lib/config'
-import {
-  FuturaPTBold,
-  FuturaPTDemi,
-  LufgaBold,
-} from '@/lib/fonts'
+import { FuturaPTBold, FuturaPTDemi, LufgaBold } from '@/lib/fonts'
 import { cn } from '@/lib/utils'
 import type { CommonPageParams } from '@/types/routing.type'
 import { GoogleAnalytics } from '@next/third-parties/google'
@@ -32,7 +28,10 @@ export const viewport: Viewport = {
   // interactiveWidget: 'resizes-visual',
 }
 
-export default async function RootLayout({ children, params }: RootLayoutProps) {
+export default async function RootLayout({
+  children,
+  params,
+}: RootLayoutProps) {
   const dict = await getDictionary(params.lang)
   return (
     <html
@@ -88,7 +87,10 @@ const DynamicSessionDialog = dynamic(
   },
 )
 const DynamicEsrDialog = dynamic(
-  () => import('../../../components/dialogs/esr/esr-dialog').then((mod) => mod.EsrDialog),
+  () =>
+    import('../../../components/dialogs/esr/esr-dialog').then(
+      (mod) => mod.EsrDialog,
+    ),
   {
     ssr: false,
   },
@@ -104,7 +106,8 @@ export const metadata: Metadata = {
     absolute: 'Bitlauncher',
     template: '%s | Bitlauncher',
   },
-  description: 'Be part of the intelligent future and join the Ai/Web3 revolution now!',
+  description:
+    'Be part of the intelligent future and join the Ai/Web3 revolution now!',
   metadataBase: new URL('https://bitlauncher.ai'),
   alternates: {
     canonical: '/',
@@ -116,7 +119,8 @@ export const metadata: Metadata = {
     type: 'website',
     url: 'https://bitlauncher.ai',
     title: 'bitlauncher',
-    description: 'Be part of the intelligent future and join the Ai/Web3 revolution now!',
+    description:
+      'Be part of the intelligent future and join the Ai/Web3 revolution now!',
     images: [
       {
         url: 'https://bitlauncher.ai/images/og-image.webp',
@@ -156,5 +160,5 @@ export const metadata: Metadata = {
     'p:domain_verify': appConfig.analytics.pinterest.domainVerification,
     'theme-color': '#080e44',
     'apple-mobile-web-app-status-bar-style': 'black-translucent',
-  }
+  },
 }

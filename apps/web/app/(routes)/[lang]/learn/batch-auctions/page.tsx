@@ -23,5 +23,6 @@ export default async function AboutPage({ params }: CommonPageProps) {
 
 export const metadata: Metadata = {
   title: 'About | Bitlauncher',
-  description: 'Be part of the intelligent future and join the Ai/Web3 revolution now!',
+  description:
+    'Be part of the intelligent future and join the Ai/Web3 revolution now!',
 }

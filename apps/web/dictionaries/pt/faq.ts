@@ -23,12 +23,14 @@ export default {
         'A venda de tokens está aberta a uma audiência global, com restrições específicas que excluem participantes dos EUA e de países sancionados pelos EUA para cumprir padrões regulatórios e garantir a participação mais ampla possível mantendo a integridade legal.',
     },
     {
-      question: 'O que diferencia este projeto de outros ICOs ou vendas de tokens?',
+      question:
+        'O que diferencia este projeto de outros ICOs ou vendas de tokens?',
       answer:
         'Nosso projeto tem um foco único no setor de IA, utilizando um modelo de tokenômica de mint-and-burn que espelha o modelo de acionistas, enfatizando crescimento sustentável, transparência e engajamento comunitário no ecossistema de startups de tecnologia.',
     },
     {
-      question: 'Como os fundos arrecadados com a venda de tokens serão usados?',
+      question:
+        'Como os fundos arrecadados com a venda de tokens serão usados?',
       answer:
         'Os fundos da venda de tokens são primariamente alocados para o desenvolvimento adicional e marketing do lançador e carteira, além da criação da cadeia L1 sem fins lucrativos e sem pré-mineração baseada na tecnologia Antelope, visando a distribuição mais justa de tokens e contribuindo para o crescimento e sustentabilidade do ecossistema.',
     },

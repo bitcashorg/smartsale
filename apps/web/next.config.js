@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 
-const { hostname } = require('os')
-const path = require('path')
-const nextConfig = { 
+const { hostname } = require('node:os')
+const path = require('node:path')
+const nextConfig = {
   async headers() {
     return [
       {
@@ -26,9 +26,10 @@ const nextConfig = {
           },
           {
             key: 'Permissions-Policy',
-            value: 'accelerometer=(); battery=(self); camera=(); geolocation=(); gyroscope=(); magnetometer=(); microphone=(); payment=(); usb=()',
+            value:
+              'accelerometer=(); battery=(self); camera=(); geolocation=(); gyroscope=(); magnetometer=(); microphone=(); payment=(); usb=()',
           },
-        ]
+        ],
       },
       {
         // matching all API routes
@@ -91,18 +92,18 @@ const nextConfig = {
     fetches: {
       fullUrl: true,
     },
-  },  
+  },
 }
 
-const nonceCache = new Set();
+const nonceCache = new Set()
 
 function generateNonce() {
-  let nonce;
+  let nonce
   do {
-    nonce = [...Array(32)].map(() => Math.random().toString(36)[2]).join('');
-  } while (nonceCache.has(nonce));
-  nonceCache.add(nonce);
-  return nonce;
+    nonce = [...Array(32)].map(() => Math.random().toString(36)[2]).join('')
+  } while (nonceCache.has(nonce))
+  nonceCache.add(nonce)
+  return nonce
 }
 
 const withBundleAnalyzer = require('@next/bundle-analyzer')()

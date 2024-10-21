@@ -4,7 +4,13 @@ import {
 } from '@/components/_wip/solution-landing-page'
 import { getDictionary } from '@/dictionaries'
 import type { CommonPageProps } from '@/types/routing.type'
-import { CurrencyIcon, MapIcon, PhoneIcon, QrCodeIcon, ShieldIcon } from 'lucide-react'
+import {
+  CurrencyIcon,
+  MapIcon,
+  PhoneIcon,
+  QrCodeIcon,
+  ShieldIcon,
+} from 'lucide-react'
 import type { Metadata } from 'next'
 import React from 'react'
 
@@ -72,5 +78,6 @@ const content: SolutionLandingPageContent = {
 
 export const metadata: Metadata = {
   title: 'Bitcash App | Bitlauncher',
-  description: 'Be part of the intelligent future and join the Ai/Web3 revolution now!',
+  description:
+    'Be part of the intelligent future and join the Ai/Web3 revolution now!',
 }

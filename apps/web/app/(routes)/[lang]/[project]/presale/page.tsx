@@ -18,7 +18,10 @@ import { getAddress } from 'viem'
 
 export default async function ProjectPage({ params }: ProjectPageProps) {
   const dict = await getDictionary(params.lang)
-  const project = (await getProjectBySlug(params.project, dict)) as ProjectWithAuction
+  const project = (await getProjectBySlug(
+    params.project,
+    dict,
+  )) as ProjectWithAuction
 
   if (!project) redirect('/')
 
