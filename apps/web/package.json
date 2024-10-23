@@ -15,7 +15,19 @@
     "translate": "bun run scripts/translate.ts",
     "translate:category": "bun run scripts/translate-category.ts",
     "gen-cms": "bun run scripts/gen-cms.ts",
-    "vercel:install": "npm i -g node-gyp; bun install"
+    "gen-cms-ql": "bun run scripts/cms-ql.sh",
+    "vercel:install": "npm i -g node-gyp; bun install",
+    "prepare": "husky"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    },
+    "lint-staged": {
+      "*.{js,jsx,ts,tsx,json,css,scss,md}": [
+        "bun run build"
+      ]
+    }
   },
   "dependencies": {
     "@ai-sdk/anthropic": "^0.0.32",
@@ -69,6 +81,7 @@
     "framer-motion": "^11.5.5",
     "graphql": "^16.9.0",
     "graphql-ws": "^5.16.0",
+    "husky": "^9.1.6",
     "lodash": "^4.17.21",
     "lucide-react": "^0.414.0",
     "mini-svg-data-uri": "^1.4.4",

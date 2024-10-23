@@ -59,6 +59,7 @@ export async function getAllArticles() {
     // })
 
     return articles
+
   } catch (error) {
     console.error('getAllArticlesSlugs error:', error)
   }
