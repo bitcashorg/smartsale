@@ -49,7 +49,9 @@ async function generateEmbeddings() {
     const { id, [contentColumn]: content } = row
 
     if (!content) {
-      console.error(`No content available in column '${contentColumn}' for id ${id}`)
+      console.error(
+        `No content available in column '${contentColumn}' for id ${id}`,
+      )
       continue
     }
 

@@ -1042,7 +1042,34 @@ function IconReferral({ className, ...props }: React.ComponentProps<'svg'>) {
   )
 }
 
+function IconBitlauncherSmall({
+  className,
+  ...props
+}: React.ComponentProps<'svg'>) {
+  return (
+    <svg
+      width="45"
+      height="43"
+      viewBox="0 0 45 43"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={cn('size-4', className)}
+      {...props}
+    >
+      <path
+        d="M20.7956 0L0 42.1609L12.4975 34.9027C15.9986 32.8693 18.2889 29.257 18.6345 25.223L20.7956 0Z"
+        fill="currentColor"
+      />
+      <path
+        d="M23.6441 0.283325L44.4397 41.8745L31.9936 34.7438C28.4625 32.7208 26.1466 29.0962 25.7945 25.042L23.6441 0.283325Z"
+        fill="currentColor"
+      />
+    </svg>
+  )
+}
+
 export {
+  IconBitlauncherSmall,
   IconArrowDown,
   IconArrowElbow,
   IconArrowRight,

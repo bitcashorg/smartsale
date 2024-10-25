@@ -28,7 +28,10 @@ export type ProcessedMd = {
  *
  * Useful to split a markdown file into smaller sections.
  */
-export function splitTreeBy(tree: Root, predicate: (node: RootContent) => boolean) {
+export function splitTreeBy(
+  tree: Root,
+  predicate: (node: RootContent) => boolean,
+) {
   return tree.children.reduce<Root[]>((trees, node) => {
     const [lastTree] = trees.slice(-1)
 
@@ -49,7 +52,10 @@ export function splitTreeBy(tree: Root, predicate: (node: RootContent) => boolea
  * If a section is still greater than `maxSectionLength`, that section
  * is chunked into smaller even-sized sections (by character length).
  */
-export function processMarkdown(content: string, maxSectionLength = 2500): ProcessedMd {
+export function processMarkdown(
+  content: string,
+  maxSectionLength = 2500,
+): ProcessedMd {
   const mdTree = fromMarkdown(content)
 
   if (!mdTree) {
@@ -64,7 +70,8 @@ export function processMarkdown(content: string, maxSectionLength = 2500): Proce
     const [firstNode] = tree.children
     const content = toMarkdown(tree)
 
-    const heading = firstNode.type === 'heading' ? toString(firstNode) : undefined
+    const heading =
+      firstNode.type === 'heading' ? toString(firstNode) : undefined
 
     // Chunk sections if they are too large
     if (content.length > maxSectionLength) {

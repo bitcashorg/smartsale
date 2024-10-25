@@ -25,10 +25,13 @@ Deno.serve(async (req) => {
   const authorization = req.headers.get('Authorization')
 
   if (!authorization) {
-    return new Response(JSON.stringify({ error: 'No authorization header passed' }), {
-      status: 500,
-      headers: { 'Content-Type': 'application/json' },
-    })
+    return new Response(
+      JSON.stringify({ error: 'No authorization header passed' }),
+      {
+        status: 500,
+        headers: { 'Content-Type': 'application/json' },
+      },
+    )
   }
 
   const supabase = createClient<Database>(supabaseUrl, supabaseAnonKey, {
@@ -57,10 +60,13 @@ Deno.serve(async (req) => {
 
   if (!document?.id) {
     console.error('Failed to find uploaded document')
-    return new Response(JSON.stringify({ error: 'Failed to find uploaded document' }), {
-      status: 500,
-      headers: { 'Content-Type': 'application/json' },
-    })
+    return new Response(
+      JSON.stringify({ error: 'Failed to find uploaded document' }),
+      {
+        status: 500,
+        headers: { 'Content-Type': 'application/json' },
+      },
+    )
   }
 
   const { data: rows, error: selectError } = await supabase
@@ -103,7 +109,9 @@ Deno.serve(async (req) => {
       .eq('id', id)
 
     if (error) {
-      console.error(`Failed to save embedding on '${table}' table with id ${id}`)
+      console.error(
+        `Failed to save embedding on '${table}' table with id ${id}`,
+      )
     }
 
     console.log(

@@ -10,6 +10,7 @@ import { cn } from '@/lib/utils'
 import type { CommonPageParams } from '@/types/routing.type'
 import { GoogleAnalytics } from '@next/third-parties/google'
 import '@rainbow-me/rainbowkit/styles.css'
+import { AiAssistant } from '@/components/ai-assistant/index'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import type { Metadata, Viewport } from 'next'
@@ -62,6 +63,7 @@ export default async function RootLayout({
           <Footer params={params} />
           <DynamicSessionDialog />
           <DynamicEsrDialog />
+          <DynamicAiAssistant />
         </Providers>
 
         <GoogleAnalytics gaId="G-78N0Z7NPQJ" />
@@ -91,6 +93,13 @@ const DynamicEsrDialog = dynamic(
     import('../../../components/dialogs/esr/esr-dialog').then(
       (mod) => mod.EsrDialog,
     ),
+  {
+    ssr: false,
+  },
+)
+const DynamicAiAssistant = dynamic(
+  () =>
+    import('../../../components/ai-assistant').then((mod) => mod.AiAssistant),
   {
     ssr: false,
   },

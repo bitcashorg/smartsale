@@ -3,7 +3,12 @@ import { join } from 'node:path'
 
 function preprocessTypes() {
   const inputPath = join(import.meta.dir, '..', 'src', 'supa.types.ts')
-  const outputPath = join(import.meta.dir, '..', 'src', 'supa.types.preprocessed.ts')
+  const outputPath = join(
+    import.meta.dir,
+    '..',
+    'src',
+    'supa.types.preprocessed.ts',
+  )
 
   let content = readFileSync(inputPath, 'utf8')
 

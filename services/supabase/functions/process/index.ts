@@ -21,10 +21,13 @@ Deno.serve(async (req) => {
   const authorization = req.headers.get('Authorization')
 
   if (!authorization) {
-    return new Response(JSON.stringify({ error: 'No authorization header passed' }), {
-      status: 500,
-      headers: { 'Content-Type': 'application/json' },
-    })
+    return new Response(
+      JSON.stringify({ error: 'No authorization header passed' }),
+      {
+        status: 500,
+        headers: { 'Content-Type': 'application/json' },
+      },
+    )
   }
 
   const supabase = createClient<Database>(supabaseUrl, supabaseAnonKey, {
@@ -52,10 +55,13 @@ Deno.serve(async (req) => {
 
   if (!document?.storage_object_path) {
     console.error('Failed to find uploaded document')
-    return new Response(JSON.stringify({ error: 'Failed to find uploaded document' }), {
-      status: 500,
-      headers: { 'Content-Type': 'application/json' },
-    })
+    return new Response(
+      JSON.stringify({ error: 'Failed to find uploaded document' }),
+      {
+        status: 500,
+        headers: { 'Content-Type': 'application/json' },
+      },
+    )
   }
 
   const { data: file } = await supabase.storage
@@ -63,11 +69,17 @@ Deno.serve(async (req) => {
     .download(document.storage_object_path)
 
   if (!file) {
-    console.error('Failed to download storage object', document.storage_object_path)
-    return new Response(JSON.stringify({ error: 'Failed to download storage object' }), {
-      status: 500,
-      headers: { 'Content-Type': 'application/json' },
-    })
+    console.error(
+      'Failed to download storage object',
+      document.storage_object_path,
+    )
+    return new Response(
+      JSON.stringify({ error: 'Failed to download storage object' }),
+      {
+        status: 500,
+        headers: { 'Content-Type': 'application/json' },
+      },
+    )
   }
 
   const fileContents = await file.text()
@@ -82,13 +94,18 @@ Deno.serve(async (req) => {
 
   if (error) {
     console.error(error)
-    return new Response(JSON.stringify({ error: 'Failed to save document sections' }), {
-      status: 500,
-      headers: { 'Content-Type': 'application/json' },
-    })
+    return new Response(
+      JSON.stringify({ error: 'Failed to save document sections' }),
+      {
+        status: 500,
+        headers: { 'Content-Type': 'application/json' },
+      },
+    )
   }
 
-  console.log(`Saved ${processedMd.sections.length} sections for file '${document.name}'`)
+  console.log(
+    `Saved ${processedMd.sections.length} sections for file '${document.name}'`,
+  )
 
   return new Response(null, {
     status: 204,
