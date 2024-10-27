@@ -5085,11 +5085,11 @@ type GraphQLSdkProps = {
 
 declare function createChaingraphClient({ config, options, }?: GraphQLSdkProps): {
     query<R extends query_rootGenqlSelection>(request: R & {
-        __name?: string;
+        __name?: string | undefined;
     }): Promise<FieldsSelection<query_root, R>>;
-    mutation<R extends mutation_rootGenqlSelection>(request: R & {
-        __name?: string;
-    }): Promise<FieldsSelection<mutation_root, R>>;
+    mutation<R_1 extends mutation_rootGenqlSelection>(request: R_1 & {
+        __name?: string | undefined;
+    }): Promise<FieldsSelection<mutation_root, R_1>>;
     subscribe: (<Data = Record<string, unknown>, Extensions = unknown>(payload: graphql_ws.SubscribePayload, sink: graphql_ws.Sink<graphql.ExecutionResult<Data, Extensions>>) => () => void) | undefined;
 };
 
