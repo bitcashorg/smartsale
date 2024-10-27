@@ -191,6 +191,66 @@ export type Database = {
         }
         Relationships: []
       }
+      document_sections: {
+        Row: {
+          content: string
+          document_id: number
+          embedding: string | null
+          id: number
+        }
+        Insert: {
+          content: string
+          document_id: number
+          embedding?: string | null
+          id?: never
+        }
+        Update: {
+          content?: string
+          document_id?: number
+          embedding?: string | null
+          id?: never
+        }
+        Relationships: [
+          {
+            foreignKeyName: 'document_sections_document_id_fkey'
+            columns: ['document_id']
+            isOneToOne: false
+            referencedRelation: 'documents'
+            referencedColumns: ['id']
+          },
+          {
+            foreignKeyName: 'document_sections_document_id_fkey'
+            columns: ['document_id']
+            isOneToOne: false
+            referencedRelation: 'documents_with_storage_path'
+            referencedColumns: ['id']
+          },
+        ]
+      }
+      documents: {
+        Row: {
+          created_at: string
+          created_by: string
+          id: number
+          name: string
+          storage_object_id: string
+        }
+        Insert: {
+          created_at?: string
+          created_by?: string
+          id?: never
+          name: string
+          storage_object_id: string
+        }
+        Update: {
+          created_at?: string
+          created_by?: string
+          id?: never
+          name?: string
+          storage_object_id?: string
+        }
+        Relationships: []
+      }
       esr: {
         Row: {
           account: string
@@ -507,10 +567,35 @@ export type Database = {
       }
     }
     Views: {
-      [_ in never]: never
+      documents_with_storage_path: {
+        Row: {
+          created_at: string | null
+          created_by: string | null
+          id: number | null
+          name: string | null
+          storage_object_id: string | null
+          storage_object_path: string | null
+        }
+        Relationships: []
+      }
     }
     Functions: {
-      [_ in never]: never
+      match_document_sections: {
+        Args: {
+          embedding: string
+          match_threshold: number
+        }
+        Returns: {
+          content: string
+          document_id: number
+          embedding: string | null
+          id: number
+        }[]
+      }
+      supabase_url: {
+        Args: Record<PropertyKey, never>
+        Returns: string
+      }
     }
     Enums: {
       chain_type: 'evm' | 'eos' | 'solana' | 'cosmos'
@@ -607,4 +692,19 @@ export type Enums<
   ? Database[PublicEnumNameOrOptions['schema']]['Enums'][EnumName]
   : PublicEnumNameOrOptions extends keyof PublicSchema['Enums']
     ? PublicSchema['Enums'][PublicEnumNameOrOptions]
+    : never
+
+export type CompositeTypes<
+  PublicCompositeTypeNameOrOptions extends
+    | keyof PublicSchema['CompositeTypes']
+    | { schema: keyof Database },
+  CompositeTypeName extends PublicCompositeTypeNameOrOptions extends {
+    schema: keyof Database
+  }
+    ? keyof Database[PublicCompositeTypeNameOrOptions['schema']]['CompositeTypes']
+    : never = never,
+> = PublicCompositeTypeNameOrOptions extends { schema: keyof Database }
+  ? Database[PublicCompositeTypeNameOrOptions['schema']]['CompositeTypes'][CompositeTypeName]
+  : PublicCompositeTypeNameOrOptions extends keyof PublicSchema['CompositeTypes']
+    ? PublicSchema['CompositeTypes'][PublicCompositeTypeNameOrOptions]
     : never
