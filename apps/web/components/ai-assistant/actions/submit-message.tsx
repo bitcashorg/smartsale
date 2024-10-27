@@ -67,7 +67,7 @@ export async function submitUserMessage({ content }: { content: string }) {
       match_threshold: 0.8,
     })
     .select('content')
-    .limit(5)
+    .limit(7)
 
   if (matchError) console.error(matchError)
 
@@ -98,7 +98,7 @@ export async function submitUserMessage({ content }: { content: string }) {
   // If they ask for news dont use documents, ignore them.
 
   const result = await streamUI({
-    model: openai('gpt-3.5-turbo'),
+    model: openai('gpt-4o'),
     initial: <SpinnerMessage />,
     system: `\
     You are an AI assistant for bitlauncher.ai, specializing in the bitlauncher and bitcash ecosystem, crypto markets, blockchain, and AI technology. Your primary role is to:

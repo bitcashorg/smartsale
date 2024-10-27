@@ -26,51 +26,51 @@ create table document_sections (
 
 create index on document_sections using hnsw (embedding vector_ip_ops);
 
--- alter table documents enable row level security;
--- alter table document_sections enable row level security;
+alter table documents enable row level security;
+alter table document_sections enable row level security;
 
--- create policy "Users can insert documents"
--- on documents for insert to authenticated with check (
---   auth.uid() = created_by
--- );
+create policy "Users can insert documents"
+on documents for insert to authenticated with check (
+  auth.uid() = created_by
+);
 
--- create policy "Users can query their own documents"
--- on documents for select to authenticated using (
---   auth.uid() = created_by
--- );
+create policy "Users can query their own documents"
+on documents for select to authenticated using (
+  auth.uid() = created_by
+);
 
--- create policy "Users can insert document sections"
--- on document_sections for insert to authenticated with check (
---   document_id in (
---     select id
---     from documents
---     where created_by = auth.uid()
---   )
--- );
+create policy "Users can insert document sections"
+on document_sections for insert to authenticated with check (
+  document_id in (
+    select id
+    from documents
+    where created_by = auth.uid()
+  )
+);
 
--- create policy "Users can update their own document sections"
--- on document_sections for update to authenticated using (
---   document_id in (
---     select id
---     from documents
---     where created_by = auth.uid()
---   )
--- ) with check (
---   document_id in (
---     select id
---     from documents
---     where created_by = auth.uid()
---   )
--- );
+create policy "Users can update their own document sections"
+on document_sections for update to authenticated using (
+  document_id in (
+    select id
+    from documents
+    where created_by = auth.uid()
+  )
+) with check (
+  document_id in (
+    select id
+    from documents
+    where created_by = auth.uid()
+  )
+);
 
--- create policy "Users can query their own document sections"
--- on document_sections for select to authenticated using (
---   document_id in (
---     select id
---     from documents
---     where created_by = auth.uid()
---   )
--- );
+create policy "Users can query their own document sections"
+on document_sections for select to authenticated using (
+  document_id in (
+    select id
+    from documents
+    where created_by = auth.uid()
+  )
+);
 
 -- @supabase/ignore
 create function supabase_url()
@@ -86,6 +86,7 @@ begin
 end;
 $$;
 
+
 create function private.handle_storage_update() 
 returns trigger 
 language plpgsql
@@ -99,22 +100,22 @@ begin
     values (new.path_tokens[2], new.id, new.owner)
     returning id into document_id;
 
-  select
-    net.http_post(
-      url := supabase_url() || '/functions/v1/process',
-      headers := jsonb_build_object(
-        'Content-Type', 'application/json',
-        'Authorization', current_setting('request.headers')::json->>'authorization'
-      ),
-      body := jsonb_build_object(
-        'document_id', document_id
-      )
-    )
-  into result;
+  -- select
+  --   net.http_post(
+  --     url := supabase_url() || '/functions/v1/process',
+  --     headers := jsonb_build_object(
+  --       'Content-Type', 'application/json',
+  --       'Authorization', current_setting('request.headers')::json->>'authorization'
+  --     ),
+  --     body := jsonb_build_object(
+  --       'document_id', document_id
+  --     )
+  --   )
+  -- into result;
 
-  RAISE NOTICE 'on_file_uploadHTTP request result: %', result;
+  -- RAISE NOTICE 'on_file_upload HTTP request result: %', result;
 
-  return null;
+  return new;
 end;
 $$;
 
