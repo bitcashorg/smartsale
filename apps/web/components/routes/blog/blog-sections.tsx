@@ -48,7 +48,7 @@ export function BlogSections({
                     <ArticleCard
                       post={post}
                       sectionSlug={category || section.slug}
-                      key={post.id}
+                      key={`${post.id}-${index}`}
                       lang={lang}
                       meta={true}
                       className={cn(

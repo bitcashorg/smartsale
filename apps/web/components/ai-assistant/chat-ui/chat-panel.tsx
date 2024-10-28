@@ -64,10 +64,10 @@ export function ChatPanel({
                   ])
                 }}
               >
-                <div className="text-sm text-white font-semibold">
+                <div className="text-xs text-white font-semibold">
                   {example.heading}
                 </div>
-                <div className="text-sm ">{example.subheading}</div>
+                <div className="text-xs ">{example.subheading}</div>
               </Card>
             ))}
           </div>
@@ -108,7 +108,7 @@ export function ChatPanel({
             setInput={setInput}
             scrollToLatestQuestion={scrollToLatestQuestion}
           />
-          <div className="text-neutral-light text-xs text-center py-2">
+          <div className="text-neutral-light text-[10px] text-center py-1">
             Experimental: Not financial advice
           </div>
         </div>

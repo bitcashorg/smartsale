@@ -6,7 +6,7 @@ import { getDictionary } from '@/dictionaries'
 import { locales } from '@/dictionaries/locales'
 import { appConfig } from '@/lib/config'
 import { FuturaPTBold, FuturaPTDemi, LufgaBold } from '@/lib/fonts'
-import { cn } from '@/lib/utils'
+import { cn, nanoid } from '@/lib/utils'
 import type { CommonPageParams } from '@/types/routing.type'
 import { GoogleAnalytics } from '@next/third-parties/google'
 import '@rainbow-me/rainbowkit/styles.css'
@@ -19,6 +19,7 @@ import type React from 'react'
 import { isMobile } from 'react-device-detect'
 import { Toaster } from 'sonner'
 import '../../globals.css'
+import type { SearchParams } from 'nuqs/dist/_tsup-dts-rollup'
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -108,6 +109,7 @@ const DynamicAiAssistant = dynamic(
 interface RootLayoutProps {
   children: React.ReactNode
   params: CommonPageParams
+  searchParams: SearchParams
 }
 
 export const metadata: Metadata = {

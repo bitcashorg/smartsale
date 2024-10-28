@@ -17,7 +17,7 @@ import { EmptyScreen } from './empty-screen'
 
 export interface ChatProps extends React.ComponentProps<'div'> {
   initialMessages?: Message[]
-  id?: string
+  id: string
   session?: Session
   missingKeys: string[]
 }
@@ -30,7 +30,7 @@ export function Chat({ id, className, session, missingKeys }: ChatProps) {
   const [messages] = useUIState()
   const [aiState] = useAIState()
 
-  const [_, setNewChatId] = useLocalStorage('newChatId', id)
+  const [_chatId, setNewChatId] = useLocalStorage('newChatId', id)
 
   // useEffect(() => {
   //   if (session?.user) {
@@ -40,16 +40,19 @@ export function Chat({ id, className, session, missingKeys }: ChatProps) {
   //   }
   // }, [id, path, session?.user, messages])
 
+  // biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
   useEffect(() => {
     const messagesLength = aiState.messages?.length
     if (messagesLength === 2) {
+      console.log('🍓 refresh')
       router.refresh()
     }
   }, [aiState.messages, router])
 
+  // biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
   useEffect(() => {
     setNewChatId(id)
-  })
+  }, [])
 
   const messagesRef = useRef<HTMLDivElement>(null)
   const scrollerRef = useRef<HTMLDivElement>(null)
@@ -103,7 +106,7 @@ export function Chat({ id, className, session, missingKeys }: ChatProps) {
             query: new URLSearchParams(
               Object.fromEntries(
                 Array.from(searchParams.entries()).filter(
-                  ([key]) => key !== 'bot',
+                  ([key]) => key !== 'bot' && key !== 'chat',
                 ),
               ),
             ).toString(),
@@ -121,9 +124,12 @@ export function Chat({ id, className, session, missingKeys }: ChatProps) {
         ref={scrollerRef}
         className={cn('overflow-y-scroll scroll-smooth flex-grow h-full')}
       >
-        <div ref={messagesRef} className={cn('pr-4 min-h-full', className)}>
+        <div
+          ref={messagesRef}
+          className={cn('pr-4 min-h-full text-xs', className)}
+        >
           {messages.length ? (
-            <ChatList messages={messages} isShared={false} />
+            <ChatList messages={messages} isShared={false} chatId={id} />
           ) : (
             <EmptyScreen />
           )}

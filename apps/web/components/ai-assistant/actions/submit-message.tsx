@@ -6,16 +6,13 @@ import { createStreamableValue, getMutableAIState, streamUI } from 'ai/rsc'
 
 import { BotCard, BotMessage, Crypto, Purchase } from '../crypto-ui'
 
-import { appConfig } from '@/lib/config'
 import { nanoid, sleep } from '@/lib/utils'
 import { HfInference } from '@huggingface/inference'
-import { createClient } from '@supabase/supabase-js'
 import { z } from 'zod'
-
-import type { Database } from '@repo/supabase'
 
 import { CryptoSkeleton } from '../crypto-ui/crypto-skeleton'
 
+import { createSupabaseServerClient } from '@/services/supabase'
 import { Cryptos } from '../crypto-ui/cryptos'
 import { CryptosSkeleton } from '../crypto-ui/cryptos-skeleton'
 import { Events } from '../crypto-ui/events'
@@ -57,10 +54,8 @@ export async function submitUserMessage({ content }: { content: string }) {
   // Format the embedding as a string array
   const formattedEmbedding = `[${embedding.toString()}]`
 
-  const supabase = createClient<Database>(
-    appConfig.supabase.url,
-    appConfig.supabase.anonKey,
-  )
+  const supabase = await createSupabaseServerClient()
+  // console.log('🍓 formattedEmbedding', formattedEmbedding)
   const { data: documents, error: matchError } = await supabase
     .rpc('match_document_sections', {
       embedding: formattedEmbedding,
@@ -97,14 +92,17 @@ export async function submitUserMessage({ content }: { content: string }) {
   // If the user wants to sell cryptocurrency, explain that selling is not available in this demo.
   // If they ask for news dont use documents, ignore them.
 
+  // console.log('🍓 injectedDocs', injectedDocs)
+
   const result = await streamUI({
     model: openai('gpt-4o'),
     initial: <SpinnerMessage />,
     system: `\
-    You are an AI assistant for bitlauncher.ai, specializing in the bitlauncher and bitcash ecosystem, crypto markets, blockchain, and AI technology. Your primary role is to:
+    You are an AI assistant for bitlauncher.ai, specializing in the bitlauncher and bitcash ecosystem, crypto markets, blockchain, and AI technology. 
+    Your primary role is to answers questions about documents:
 
     1. Guide users through the bitlauncher.ai registration process step-by-step.
-    2. Discuss bitlauncher and bitcash ecosystem topics, including:
+    2. Discuss bitlauncher and bitcash ecosystem topics, including: 
        - News and updates
        - Ongoing and upcoming auctions
        - Tokenomics
@@ -116,11 +114,9 @@ export async function submitUserMessage({ content }: { content: string }) {
     Key guidelines:
     - Prioritize using the information from the documents provided below.
     - If the documents don't contain the necessary information, use your general knowledge about crypto, blockchain, and AI.
-    - Format all mathematical responses using KaTeX for clear presentation.
+    - Format all mathematical responses using KaTeX for clear presentation. Use double $$ for inline math and single $ for display math.
     - If asked about topics outside of bitlauncher, bitcash, crypto, blockchain, or AI, politely respond:
       "I apologize, but that's outside my area of expertise. I'm focused on bitlauncher, bitcash, crypto, blockchain, and AI technology. Is there anything related to these topics I can help you with?"
-
-    Always strive to provide accurate, helpful, and engaging responses within your defined scope.
 
     Documents:
     ${injectedDocs}
