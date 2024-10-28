@@ -34,7 +34,6 @@ export const appConfig = {
     sections: process.env.NEXT_PUBLIC_NEW_SECTIONS === 'true',
     learn: process.env.NEXT_PUBLIC_LEARN_SECTION === 'true',
     i18n: process.env.NEXT_PUBLIC_NEW_I18N === 'true',
-    explorations: process.env.NEXT_PUBLIC_EXPLORATIONS === 'true',
     auction: process.env.NEXT_PUBLIC_FEAT_AUCTION === 'true',
   },
   datocms: {
