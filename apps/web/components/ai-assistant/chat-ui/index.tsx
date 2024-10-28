@@ -129,7 +129,7 @@ export function Chat({ id, className, session, missingKeys }: ChatProps) {
           className={cn('pr-4 min-h-full text-xs', className)}
         >
           {messages.length ? (
-            <ChatList messages={messages} isShared={false} chatId={id} />
+            <ChatList messages={messages} isShared={false} />
           ) : (
             <EmptyScreen />
           )}
