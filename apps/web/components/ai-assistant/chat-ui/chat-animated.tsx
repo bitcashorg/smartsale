@@ -2,22 +2,42 @@
 
 import { Card } from '@/components/ui/card'
 import { nanoid } from '@/lib/utils'
+import { useAIState } from 'ai/rsc'
 import { AnimatePresence, motion } from 'framer-motion'
 import { MessageCircle } from 'lucide-react'
-import { useQueryState } from 'nuqs'
+import { useRouter } from 'next/navigation'
+import { useQueryStates } from 'nuqs'
 import { Resizable } from 're-resizable'
 import { useCallback, useState } from 'react'
 import { Chat } from '.'
+import type { AI } from '../actions/create-ai'
 
-export function ChatAnimated() {
-  const id = nanoid()
-  const [bot, setBot] = useQueryState('bot')
+export function ChatAnimated({ chatId }: { chatId: string }) {
+  const router = useRouter()
+  const [aiState, setAIState] = useAIState<typeof AI>()
+  const [{ bot }, setQueryStates] = useQueryStates({
+    chat: {
+      defaultValue: chatId,
+      parse: (value: string) => value,
+    },
+    bot: {
+      parse: (value: string) => value as 'open' | null,
+      defaultValue: null,
+    },
+  })
   const isBotOpen = bot === 'open'
   const [width, setWidth] = useState(500)
 
+  // biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
   const toggleBot = useCallback(() => {
-    setBot(isBotOpen ? null : 'open')
-  }, [isBotOpen, setBot])
+    const newChatId = nanoid()
+    setQueryStates({
+      bot: isBotOpen ? null : 'open',
+      chat: newChatId,
+    })
+    // setAIState({ messages: [], chatId: newChatId })
+    // router.refresh()
+  }, [isBotOpen, setQueryStates, router, setAIState])
 
   return (
     <>
@@ -46,7 +66,8 @@ export function ChatAnimated() {
               }}
             >
               <Card variant="padded" className="w-full h-full min-h-[300px]">
-                <Chat id={id} missingKeys={[]} />
+                {/* <div className="h-full">{chatId}</div> */}
+                <Chat id={chatId} missingKeys={[]} />
               </Card>
             </Resizable>
           </motion.div>

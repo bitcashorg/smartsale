@@ -20,7 +20,10 @@ export interface ChatMessageProps {
 export function ChatMessage({ message, ...props }: ChatMessageProps) {
   console.log('🍓 chat message', message)
   return (
-    <div className={cn('group relative mb-4 flex items-start ')} {...props}>
+    <div
+      className={cn('group relative mb-4 flex items-start text-xs')}
+      {...props}
+    >
       <div
         className={cn(
           'flex size-8 shrink-0 select-none items-center justify-center rounded-md border shadow ',
@@ -32,8 +35,8 @@ export function ChatMessage({ message, ...props }: ChatMessageProps) {
         {message.role === 'user' ? <IconUser /> : <IconBitlauncherSmall />}
       </div>
       <div className="flex-1 px-1 ml-4 space-y-2 overflow-hidden">
-        <MemoizedReactMarkdown
-          className="prose break-words dark:prose-invert prose-p:leading-relaxed prose-pre:p-0 text-xs"
+        {/* <MemoizedReactMarkdown
+          className="prose !text-xs break-words dark:prose-invert prose-p:leading-relaxed prose-pre:p-0"
           remarkPlugins={[remarkGfm, remarkMath]}
           rehypePlugins={[rehypeKatex]}
           components={{
@@ -73,8 +76,8 @@ export function ChatMessage({ message, ...props }: ChatMessageProps) {
           }}
         >
           {message.content}
-        </MemoizedReactMarkdown>
-        <ChatMessageActions message={message} />
+        </MemoizedReactMarkdown> */}
+        {/* <ChatMessageActions message={message} /> */}
       </div>
     </div>
   )

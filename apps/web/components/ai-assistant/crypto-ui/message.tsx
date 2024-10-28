@@ -43,8 +43,11 @@ export function BotMessage({
       </div>
       <div className="ml-4 flex-1 space-y-2 overflow-hidden px-1">
         <MemoizedReactMarkdown
-          className="prose break-words dark:prose-invert prose-p:leading-relaxed prose-pre:p-0"
-          remarkPlugins={[remarkGfm, remarkMath]}
+          className="prose break-words dark:prose-invert prose-p:leading-relaxed prose-pre:p-0 prose-p:text-xs prose-h1:text-xs prose-h2:text-xs prose-h3:text-xs prose-h4:text-xs prose-h5:text-xs prose-h6:text-xs prose-ul:text-xs prose-ol:text-xs prose-li:text-xs prose-blockquote:text-xs"
+          remarkPlugins={[
+            remarkGfm,
+            [remarkMath, { singleDollarTextMath: false }],
+          ]}
           rehypePlugins={[rehypeKatex]}
           components={{
             p({ children }) {

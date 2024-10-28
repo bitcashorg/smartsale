@@ -446,3 +446,20 @@ iframe[title="reCAPTCHA"],
   display: none !important;
   z-index: -999 !important;
 }
+
+.katex-display {
+  font-size: clamp(0.7rem, 2vw, 1.2rem); /* Dynamically adjust font size */
+  line-height: 1.2;
+  padding: 10px 0 !important;
+  margin: 10px 0 !important;
+  width: 100%; /* Ensure full width of the parent */
+  max-width: 100%;
+  overflow: auto;
+}
+
+.katex {
+  font-size: inherit; /* Inherit font size from parent */
+  width: 100%;
+  max-width: 100%;
+  word-wrap: break-word; /* Ensure breaking of long words or expressions */
+}
