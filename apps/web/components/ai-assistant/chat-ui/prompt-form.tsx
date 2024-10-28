@@ -3,6 +3,7 @@
 import { useActions, useUIState } from 'ai/rsc'
 import { useRouter, useSearchParams } from 'next/navigation'
 import * as React from 'react'
+import { isMobile } from 'react-device-detect'
 import Textarea from 'react-textarea-autosize'
 
 import { Button } from '@/components/ui/button'
@@ -38,7 +39,7 @@ export function PromptForm({
   const searchParams = useSearchParams()
 
   React.useEffect(() => {
-    inputRef.current?.focus()
+    if (!isMobile) inputRef.current?.focus()
   }, [])
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -126,7 +127,7 @@ export function PromptForm({
           onChange={(e) => setInput(e.target.value)}
           placeholder="Send a message."
           spellCheck={false}
-          className="min-h-[60px] w-full h-full resize-none bg-transparent pt-4 focus-within:outline-none sm:text-sm pr-10"
+          className="min-h-[60px] w-full h-full resize-none bg-transparent pt-4 focus-within:outline-none text-xs pr-10"
         />
         <div className="absolute right-2 top-6 sm:right-4">
           <TooltipProvider>
