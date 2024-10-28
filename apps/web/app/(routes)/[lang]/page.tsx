@@ -1,12 +1,6 @@
-import { BannerOne } from '@/components/_wip/banner-one'
-import { Categories } from '@/components/_wip/categories'
-import { FeatureOne } from '@/components/_wip/feature-one'
-import { FeatureThree } from '@/components/_wip/feature-three'
-import { FeatureTwo } from '@/components/_wip/feature-two'
 import { NewHomeHero } from '@/components/routes/home/hero/index'
 import { getDictionary } from '@/dictionaries'
 import type { Lang } from '@/dictionaries/locales'
-import { appConfig } from '@/lib/config'
 import { getProjects } from '@/lib/projects'
 import dynamic from 'next/dynamic'
 
@@ -27,15 +21,6 @@ export default async function IndexPage({ params: { lang } }: IndexPageProps) {
         <DynamicLearnSection />
         <DynamicRecentArticles lang={lang} />
         <DynamicFAQ lang={lang} dict={dict} />
-        {appConfig.features.explorations ? (
-          <>
-            <Categories />
-            <BannerOne />
-            <FeatureOne />
-            <FeatureTwo />
-            <FeatureThree />
-          </>
-        ) : null}
       </div>
     </div>
   )
