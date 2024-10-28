@@ -40,7 +40,6 @@ export function Chat({ id, className, session, missingKeys }: ChatProps) {
   //   }
   // }, [id, path, session?.user, messages])
 
-  // biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
   useEffect(() => {
     const messagesLength = aiState.messages?.length
     if (messagesLength === 2) {
