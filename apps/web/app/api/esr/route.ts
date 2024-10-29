@@ -146,8 +146,24 @@ const esrNodeJSOptions: SigningRequestEncodingOptions = {
     },
   } as AbiProvider,
   zlib: {
-    deflateRaw: (data) => new Uint8Array(deflateRawSync(Buffer.from(data))),
-    inflateRaw: (data) => new Uint8Array(inflateRawSync(Buffer.from(data))),
+    deflateRaw: (data: Uint8Array) => {
+      const buffer = Buffer.from(data.buffer, data.byteOffset, data.length)
+      const compressed = deflateRawSync(new Uint8Array(buffer))
+      return new Uint8Array(
+        compressed.buffer,
+        compressed.byteOffset,
+        compressed.length,
+      )
+    },
+    inflateRaw: (data: Uint8Array) => {
+      const buffer = Buffer.from(data.buffer, data.byteOffset, data.length)
+      const decompressed = inflateRawSync(new Uint8Array(buffer))
+      return new Uint8Array(
+        decompressed.buffer,
+        decompressed.byteOffset,
+        decompressed.length,
+      )
+    },
   } as ZlibProvider,
 }
 

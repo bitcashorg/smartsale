@@ -93,6 +93,30 @@ const nextConfig = {
       fullUrl: true,
     },
   },
+  webpack: (config, { isServer }) => {
+    // Ignore node-specific modules when bundling for the browser
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      sharp$: false,
+      'onnxruntime-node$': false,
+      '@huggingface/transformers': require.resolve('@huggingface/transformers'),
+    }
+
+    if (!isServer) {
+      config.module.rules.push({
+        test: /\.worker\.ts$/,
+        use: {
+          loader: 'worker-loader',
+          options: {
+            filename: 'static/[hash].worker.js',
+            publicPath: '/_next/',
+          },
+        },
+      })
+    }
+
+    return config
+  },
 }
 
 const nonceCache = new Set()

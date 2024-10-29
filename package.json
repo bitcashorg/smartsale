@@ -29,16 +29,9 @@
   },
   "packageManager": "bun@1.1.20",
   "workspaces": {
-    "packages": ["apps/*", "packages/*", "services/*", "tooling/*"],
-    "nohoist": [
-      "**/vite",
-      "**/vite/**",
-      "**/cbw-sdk",
-      "**/cbw-sdk/**",
-      "**/wagmi",
-      "**/wagmi/**",
-      "**/pino-pretty",
-      "**/pino-pretty/**"
-    ]
+    "packages": ["apps/*", "packages/*", "services/*", "tooling/*"]
+  },
+  "dependencies": {
+    "comlink": "^4.4.1"
   }
 }
