@@ -17,15 +17,8 @@ export function ChatPanel({
   setInput,
   scrollToLatestQuestion,
 }: ChatPanelProps) {
-  const [aiState] = useAIState()
   const [messages, setMessages] = useUIState<typeof AI>()
   const { submitUserMessage } = useActions()
-  const [shareDialogOpen, setShareDialogOpen] = React.useState(false)
-
-  const shareChat = async () => {
-    // Implement the shareChat functionality here
-    console.log('Sharing chat...')
-  }
 
   return (
     <div
@@ -33,14 +26,10 @@ export function ChatPanel({
         'inset-x-0 bottom-0 w-full from-muted/30 from-0% to-muted/30 to-50% duration-300 ease-in-out animate-in bg-card',
       )}
     >
-      {/* <ButtonScrollToBottom
-        isAtBottom={isAtBottom}
-        scrollToBottom={scrollToBottom}
-      /> */}
       <div className="mx-auto sm:max-w-2xl">
         {messages.length === 0 ? (
           <div className="mb-4 grid grid-cols-2 gap-2 px-0">
-            {exampleMessages.map((example, index) => (
+            {exampleMessages.map((example) => (
               <Card
                 variant="outline"
                 key={example.heading}

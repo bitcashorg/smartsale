@@ -21,12 +21,15 @@ import { SpinnerMessage } from '../crypto-ui/message'
 import type { AI } from './create-ai'
 
 // Initialize Hugging Face client (make sure to set up environment variables)
-const hf = new HfInference(process.env.HUGGINGFACE_API_KEY)
+// const hf = new HfInference(process.env.HUGGINGFACE_API_KEY)
 
-export async function submitUserMessage({ content }: { content: string }) {
+export async function submitUserMessage({
+  content,
+  embedding,
+}: { content: string; embedding: string }) {
   'use server'
 
-  console.log('🍓 submit user message', content)
+  console.log('🍓 submit user message', content, embedding)
 
   const aiState = getMutableAIState<typeof AI>()
 
@@ -46,10 +49,10 @@ export async function submitUserMessage({ content }: { content: string }) {
   let textNode: undefined | React.ReactNode
 
   // Generate embeddings using the 'gte-small' model
-  const embedding = await hf.featureExtraction({
-    model: 'thenlper/gte-small',
-    inputs: content,
-  })
+  // const embedding = await hf.featureExtraction({
+  //   model: 'thenlper/gte-small',
+  //   inputs: content,
+  // })
 
   // Format the embedding as a string array
   const formattedEmbedding = `[${embedding.toString()}]`

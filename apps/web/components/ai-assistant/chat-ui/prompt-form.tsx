@@ -16,8 +16,10 @@ import {
 } from '@/components/ui/tooltip'
 import type { Message } from 'ai'
 import { nanoid } from 'nanoid'
+import { useEffect } from 'react'
 import { UserMessage } from '../crypto-ui/message'
 import { useEnterSubmit } from '../hooks/use-enter-submit'
+import { useEmbeddingsPipeline } from '../hooks/use-pipeline'
 import { IconArrowElbow } from './chat-icons'
 
 interface PromptFormProps {
@@ -37,7 +39,9 @@ export function PromptForm({
   const [, setMessages] = useUIState()
   const router = useRouter()
   const searchParams = useSearchParams()
+  const pipeline = useEmbeddingsPipeline()
 
+  // focus input on desktop load
   React.useEffect(() => {
     if (!isMobile) inputRef.current?.focus()
   }, [])
@@ -49,61 +53,62 @@ export function PromptForm({
     if (!trimmedInput) return
 
     setInput('')
-    const commandInput = trimmedInput.startsWith('/')
-      ? await handleCommand(trimmedInput, router, searchParams)
-      : ''
+    return pipeline.embed(trimmedInput)
+    // const commandInput = trimmedInput.startsWith('/')
+    //   ? await handleCommand(trimmedInput, router, searchParams)
+    //   : ''
 
-    console.log({ commandInput })
+    // console.log({ commandInput })
 
-    let newMessage = trimmedInput
+    // let newMessage = trimmedInput
 
-    if (commandInput) {
-      if (typeof commandInput === 'object' && commandInput !== null) {
-        const { instruction, image } = commandInput
-        newMessage = `${trimmedInput}\n\nINSTRUCTION: ${instruction}`
-      } else {
-        newMessage = `${trimmedInput}\n\nIMPORTANT: ${commandInput}`
-      }
-    } else {
-      newMessage = trimmedInput
-    }
+    // if (commandInput) {
+    //   if (typeof commandInput === 'object' && commandInput !== null) {
+    //     const { instruction, image } = commandInput
+    //     newMessage = `${trimmedInput}\n\nINSTRUCTION: ${instruction}`
+    //   } else {
+    //     newMessage = `${trimmedInput}\n\nIMPORTANT: ${commandInput}`
+    //   }
+    // } else {
+    //   newMessage = trimmedInput
+    // }
 
-    try {
-      setMessages((currentMessages: Message[]) => [
-        ...currentMessages,
-        {
-          id: nanoid(),
-          display: <UserMessage>{trimmedInput}</UserMessage>,
-        },
-      ])
+    // try {
+    //   setMessages((currentMessages: Message[]) => [
+    //     ...currentMessages,
+    //     {
+    //       id: nanoid(),
+    //       display: <UserMessage>{trimmedInput}</UserMessage>,
+    //     },
+    //   ])
 
-      scrollToLatestQuestion()
+    //   scrollToLatestQuestion()
 
-      const responseMessage = await submitUserMessage({
-        content: newMessage,
-        // image,
-      })
+    //   const responseMessage = await submitUserMessage({
+    //     content: newMessage,
+    //     // image,
+    //   })
 
-      setMessages((currentMessages: Message[]) => [
-        ...currentMessages,
-        responseMessage,
-      ])
-    } catch (error) {
-      console.error('Error submitting user message:', error)
-      // Add user-friendly error handling here
-      setMessages((currentMessages: Message[]) => [
-        ...currentMessages,
-        {
-          id: nanoid(),
-          display: <UserMessage>{trimmedInput}</UserMessage>,
-        },
-        {
-          id: nanoid(),
-          content: "Sorry, I couldn't process that message. Please try again.",
-          role: 'assistant',
-        },
-      ])
-    }
+    //   setMessages((currentMessages: Message[]) => [
+    //     ...currentMessages,
+    //     responseMessage,
+    //   ])
+    // } catch (error) {
+    //   console.error('Error submitting user message:', error)
+    //   // Add user-friendly error handling here
+    //   setMessages((currentMessages: Message[]) => [
+    //     ...currentMessages,
+    //     {
+    //       id: nanoid(),
+    //       display: <UserMessage>{trimmedInput}</UserMessage>,
+    //     },
+    //     {
+    //       id: nanoid(),
+    //       content: "Sorry, I couldn't process that message. Please try again.",
+    //       role: 'assistant',
+    //     },
+    //   ])
+    // }
 
     // if (window.innerWidth < 600) {
     //   ;(
@@ -111,6 +116,10 @@ export function PromptForm({
     //   )?.blur()
     // }
   }
+
+  useEffect(() => {
+    console.log(pipeline.result)
+  }, [pipeline?.result])
 
   return (
     <form onSubmit={handleSubmit} ref={formRef}>
