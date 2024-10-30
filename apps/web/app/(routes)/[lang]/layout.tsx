@@ -1,4 +1,5 @@
 import '@/app/globals.css'
+
 import Footer from '@/components/layout/footer/footer'
 import { Header } from '@/components/layout/header'
 import { Providers } from '@/components/layout/providers'
@@ -6,11 +7,10 @@ import { getDictionary } from '@/dictionaries'
 import { locales } from '@/dictionaries/locales'
 import { appConfig } from '@/lib/config'
 import { FuturaPTBold, FuturaPTDemi, LufgaBold } from '@/lib/fonts'
-import { cn, nanoid } from '@/lib/utils'
+import { cn } from '@/lib/utils'
 import type { CommonPageParams } from '@/types/routing.type'
 import { GoogleAnalytics } from '@next/third-parties/google'
 import '@rainbow-me/rainbowkit/styles.css'
-import { AiAssistant } from '@/components/ai-assistant/index'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import type { Metadata, Viewport } from 'next'
@@ -18,9 +18,6 @@ import dynamic from 'next/dynamic'
 import type React from 'react'
 import { isMobile } from 'react-device-detect'
 import { Toaster } from 'sonner'
-import '../../globals.css'
-import Script from 'next/script'
-import type { SearchParams } from 'nuqs/dist/_tsup-dts-rollup'
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -66,6 +63,7 @@ export default async function RootLayout({
           <DynamicSessionDialog />
           <DynamicEsrDialog />
           <DynamicAiAssistant />
+          <DynamicVConsole />
         </Providers>
 
         <GoogleAnalytics gaId="G-78N0Z7NPQJ" />
@@ -81,6 +79,13 @@ export async function generateStaticParams() {
   return locales.map((lang) => ({ lang }))
 }
 
+const DynamicVConsole = dynamic(
+  () =>
+    import('../../../components/layout/vconsole').then((mod) => mod.VConsole),
+  {
+    ssr: false,
+  },
+)
 const DynamicSessionDialog = dynamic(
   () =>
     import('../../../components/dialogs/session/session-dialog').then(
@@ -110,7 +115,6 @@ const DynamicAiAssistant = dynamic(
 interface RootLayoutProps {
   children: React.ReactNode
   params: CommonPageParams
-  searchParams: SearchParams
 }
 
 export const metadata: Metadata = {
