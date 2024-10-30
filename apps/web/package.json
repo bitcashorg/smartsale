@@ -5,7 +5,7 @@
   "scripts": {
     "build:workers": "tsc -p tsconfig.workers.config.json",
     "watch:workers": "tsc -p tsconfig.workers.config.json --watch",
-    "dev": "bun run build:workers && rm -rf .next && next dev --turbo",
+    "dev": "rm -rf .next && next dev --turbo",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -28,7 +28,7 @@
     "@headlessui/react": "^2.1.2",
     "@hookform/resolvers": "^3.9.0",
     "@huggingface/inference": "^2.8.1",
-    "@huggingface/transformers": "^3.0.1",
+    "@xenova/transformers": "^2.17.2",
     "@koale/useworker": "^4.1.0",
     "@multibase/js": "latest",
     "@next/bundle-analyzer": "^14.2.5",
@@ -125,9 +125,6 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
-    "@babel/core": "^7.26.0",
-    "@babel/plugin-syntax-import-meta": "^7.10.4",
-    "@babel/preset-env": "^7.26.0",
     "@genql/cli": "^6.3.3",
     "@tailwindcss/typography": "^0.5.13",
     "@total-typescript/ts-reset": "total-typescript/ts-reset",
@@ -141,8 +138,6 @@
     "@types/react-syntax-highlighter": "^15.5.13",
     "@types/uuid": "^10.0.0",
     "autoprefixer": "^10.4.19",
-    "babel-loader": "^9.2.1",
-    "babel-plugin-transform-import-meta": "^2.2.1",
     "encoding": "^0.1.13",
     "postcss": "^8.4.39",
     "postcss-import": "^16.1.0",

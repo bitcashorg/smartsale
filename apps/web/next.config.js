@@ -15,7 +15,7 @@ const nextConfig = {
           },
           {
             key: 'Content-Security-Policy',
-            value: `object-src 'none';base-uri 'self';script-src 'self' 'report-sample' 'unsafe-inline' https: http:;`,
+            value: `object-src 'none';base-uri 'self';script-src 'self' 'report-sample' 'unsafe-inline' 'unsafe-eval' https: http:;`,
           },
           {
             key: 'Referrer-Policy',
@@ -96,36 +96,13 @@ const nextConfig = {
   },
   webpack: (config, { isServer }) => {
     // Ignore node-specific modules when bundling for the browser
+
     config.resolve.alias = {
       ...config.resolve.alias,
       sharp$: false,
       'onnxruntime-node$': false,
-      '@huggingface/transformers': require.resolve('@huggingface/transformers'),
     }
 
-    config.module.rules.push({
-      test: /\.js$/,
-      exclude: /node_modules/,
-      use: {
-        loader: 'babel-loader',
-        options: {
-          presets: ['@babel/preset-env'],
-          plugins: [
-            'babel-plugin-transform-import-meta',
-            '@babel/plugin-syntax-import-meta',
-          ],
-        },
-      },
-    })
-
-    // Fallback to resolve import.meta.url
-    config.plugins.push(
-      new webpack.DefinePlugin({
-        'import.meta.url': JSON.stringify(`file://${__filename}`),
-      }),
-    )
-
-    // Enable async WebAssembly if using .wasm dependencies
     config.experiments = {
       asyncWebAssembly: true,
       layers: true, // Enable layers experiment

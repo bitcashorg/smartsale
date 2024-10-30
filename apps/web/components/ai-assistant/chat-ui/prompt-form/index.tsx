@@ -14,15 +14,12 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from '@/components/ui/tooltip'
-import { pipeline } from '@huggingface/transformers'
 import type { Message } from 'ai'
-import type * as Comlink from 'comlink'
 import { nanoid } from 'nanoid'
 import { useCallback, useEffect, useRef } from 'react'
 import { UserMessage } from '../../crypto-ui/message'
 import { useEnterSubmit } from '../../hooks/use-enter-submit'
 import { IconArrowElbow } from '../chat-icons'
-import type { WorkerAPI } from './comlink.worker'
 
 export function PromptForm({
   input,
@@ -35,214 +32,124 @@ export function PromptForm({
   const [, setMessages] = useUIState()
   const router = useRouter()
   const searchParams = useSearchParams()
-  // const workerApi = useRef<Comlink.Remote<WorkerAPI>>()
-  // const workerRef = useRef<Worker>()
-
-  // // Create a reference to the worker object.
-  // const worker = useRef<Worker | null>(null)
-
-  // // We use the `useEffect` hook to set up the worker as soon as the `App` component is mounted.
-  // useEffect(() => {
-  //   if (!worker.current) {
-  //     console.log('🍓 Creating new worker')
-  //     // Create the worker if it does not yet exist.
-  //     worker.current = new Worker(
-  //       new URL('./demo.worker.js', import.meta.url),
-  //       {
-  //         type: 'module',
-  //       },
-  //     )
-  //   }
-
-  //   // Create a callback function for messages from the worker thread.
-  //   const onMessageReceived = (e: MessageEvent) => {
-  //     console.log('🍓 Received message from worker:', e.data)
-  //     switch (e.data.status) {
-  //       case 'initiate':
-  //         console.log('🍓 Worker initiated')
-  //         // setReady(false)
-  //         break
-  //       case 'ready':
-  //         console.log('🍓 Worker ready')
-  //         // setReady(true)
-  //         break
-  //       case 'complete':
-  //         console.log('🍓 Worker completed:', e.data.output[0])
-  //         // setResult(e.data.output[0])
-  //         break
-  //     }
-  //   }
-
-  //   console.log('🍓 Adding message listener to worker')
-  //   // Attach the callback function as an event listener.
-  //   worker.current.addEventListener('message', onMessageReceived)
-
-  //   // Define a cleanup function for when the component is unmounted.
-  //   return () => {
-  //     console.log('🍓 Removing message listener from worker')
-  //     worker.current?.removeEventListener('message', onMessageReceived)
-  //   }
-  // })
-
-  // const classify = useCallback((text: string) => {
-  //   if (worker.current) {
-  //     console.log('🍓 Posting message to worker:', text)
-  //     worker.current.postMessage({ text })
-  //   }
-  // }, [])
-
-  const method = async () => {
-    const extractor = await pipeline('feature-extraction', 'Supabase/gte-small')
-    const embeddings = await extractor('lalalala')
-    return embeddings
-  }
-
-  // useEffect(() => {
-  //   workerRef.current = new Worker('/workers/hello.worker.js', {
-  //     type: 'module',
-  //   })
-
-  //   workerRef.current.onmessage = (event) => {
-  //     console.log('🍓 Worker result:', event.data)
-  //   }
-  //   workerRef.current.onerror = (event) => {
-  //     console.error('🍓 Worker error:', event)
-  //   }
-  //   workerRef.current.onmessageerror = (event) => {
-  //     console.error('🍓 Worker message error:', event)
-  //   }
-
-  //   console.log('🍓 worker', workerRef.current)
-
-  //   console.log('🍓 posting message to worker')
-  //   workerRef.current.postMessage('lalalala') // Example data sent to the worker
-
-  //   return () => {
-  //     workerRef.current?.terminate()
-  //   }
-  // }, [])
-
-  // useEffect(() => {
-  //   try {
-  //     console.log('🍓 initializing worker')
-
-  //     const worker = new Worker('/workers/comlink.worker.js', {
-  //       type: 'module',
-  //     })
-
-  //     // Wrap the worker with Comlink
-  //     workerApi.current = Comlink.wrap<WorkerAPI>(worker)
-
-  //     console.log('🍓 worker initialized', workerApi.current)
-
-  //     setTimeout(async () => {
-  //       console.log('🍓 posting message to worker', workerApi.current?.getData)
-  //       try {
-  //         const result = await workerApi.current?.getData(
-  //           'Tobi',
-  //           // Comlink.proxy((progress: number) => {
-  //           //   console.log(`🍓 Loading: ${progress}%`)
-  //           // }),
-  //         )
-  //         console.log('🍓 worker result:', result)
-  //       } catch (error) {
-  //         console.error('🍓💀 worker error:', error)
-  //       }
-  //     }, 1000)
-
-  //     return () => {
-  //       console.log('🍓 terminating worker')
-  //       if (workerApi.current) {
-  //         workerApi.current[Comlink.releaseProxy]()
-  //       }
-  //       worker.terminate()
-  //     }
-  //   } catch (error) {
-  //     console.error('🍓💀 Error initializing worker:', error)
-  //   }
-  // }, [])
+  const workerRef = useRef<Worker>()
 
   // focus input on desktop load
   React.useEffect(() => {
     if (!isMobile) inputRef.current?.focus()
   }, [])
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
+  const handleSubmit = useCallback(
+    async ({ embeddings, text }: { embeddings: string; text: string }) => {
+      console.log('🍓 handleSubmit', text)
 
-    const trimmedInput = input.trim()
-    if (!trimmedInput) return
+      const trimmedInput = input.trim()
+      if (!trimmedInput) return
+      console.log('🍓 trimmedInput', trimmedInput)
 
-    setInput('')
+      setInput('')
 
-    const commandInput = trimmedInput.startsWith('/')
-      ? await handleCommand(trimmedInput, router, searchParams)
-      : ''
+      const commandInput = trimmedInput.startsWith('/')
+        ? await handleCommand(trimmedInput, router, searchParams)
+        : ''
 
-    console.log({ commandInput })
+      console.log({ commandInput })
 
-    let newMessage = trimmedInput
+      let newMessage = trimmedInput
 
-    if (commandInput) {
-      if (typeof commandInput === 'object' && commandInput !== null) {
-        const { instruction, image } = commandInput
-        newMessage = `${trimmedInput}\n\nINSTRUCTION: ${instruction}`
+      if (commandInput) {
+        if (typeof commandInput === 'object' && commandInput !== null) {
+          const { instruction, image } = commandInput
+          newMessage = `${trimmedInput}\n\nINSTRUCTION: ${instruction}`
+        } else {
+          newMessage = `${trimmedInput}\n\nIMPORTANT: ${commandInput}`
+        }
       } else {
-        newMessage = `${trimmedInput}\n\nIMPORTANT: ${commandInput}`
+        newMessage = trimmedInput
       }
-    } else {
-      newMessage = trimmedInput
+
+      console.log('🍓 newMessage', newMessage)
+
+      try {
+        setMessages((currentMessages: Message[]) => [
+          ...currentMessages,
+          {
+            id: nanoid(),
+            display: <UserMessage>{trimmedInput}</UserMessage>,
+          },
+        ])
+
+        scrollToLatestQuestion()
+
+        console.log('🍓 submitting user message')
+        const responseMessage = await submitUserMessage({
+          content: newMessage,
+          embeddings,
+        })
+
+        setMessages((currentMessages: Message[]) => [
+          ...currentMessages,
+          responseMessage,
+        ])
+      } catch (error) {
+        console.error('Error submitting user message:', error)
+        setMessages((currentMessages: Message[]) => [
+          ...currentMessages,
+          {
+            id: nanoid(),
+            display: <UserMessage>{trimmedInput}</UserMessage>,
+          },
+          {
+            id: nanoid(),
+            content:
+              "Sorry, I couldn't process that message. Please try again.",
+            role: 'assistant',
+          },
+        ])
+      }
+    },
+    [
+      input,
+      router,
+      searchParams,
+      setInput,
+      setMessages,
+      scrollToLatestQuestion,
+      submitUserMessage,
+    ],
+  )
+
+  useEffect(() => {
+    workerRef.current = new Worker('/workers/import.worker.js', {
+      type: 'module',
+    })
+
+    workerRef.current.onmessage = (event) => {
+      console.log('🍓🚀 Worker result:', event.data)
+      handleSubmit(event.data)
+    }
+    workerRef.current.onerror = (event) => {
+      console.error('🍓 Worker error:', event)
+    }
+    workerRef.current.onmessageerror = (event) => {
+      console.error('🍓 Worker message error:', event)
     }
 
-    try {
-      setMessages((currentMessages: Message[]) => [
-        ...currentMessages,
-        {
-          id: nanoid(),
-          display: <UserMessage>{trimmedInput}</UserMessage>,
-        },
-      ])
+    console.log('🍓 worker', workerRef.current)
 
-      scrollToLatestQuestion()
+    // console.log('🍓 posting message to worker')
+    // workerRef.current.postMessage({ text: 'hello' }) // Example data sent to the worker
 
-      const responseMessage = await submitUserMessage({
-        content: newMessage,
-        // image,
-      })
-
-      setMessages((currentMessages: Message[]) => [
-        ...currentMessages,
-        responseMessage,
-      ])
-    } catch (error) {
-      console.error('Error submitting user message:', error)
-      // Add user-friendly error handling here
-      setMessages((currentMessages: Message[]) => [
-        ...currentMessages,
-        {
-          id: nanoid(),
-          display: <UserMessage>{trimmedInput}</UserMessage>,
-        },
-        {
-          id: nanoid(),
-          content: "Sorry, I couldn't process that message. Please try again.",
-          role: 'assistant',
-        },
-      ])
+    return () => {
+      workerRef.current?.terminate()
     }
-
-    if (window.innerWidth < 600) {
-      ;(
-        e.currentTarget.querySelector('textarea') as HTMLTextAreaElement
-      )?.blur()
-    }
-  }
+  }, [handleSubmit])
 
   return (
     <form
       onSubmit={(e) => {
         e.preventDefault()
-        classify(input)
+        workerRef.current?.postMessage({ text: input.trim() })
       }}
       ref={formRef}
     >

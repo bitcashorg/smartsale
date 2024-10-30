@@ -19,6 +19,35 @@ export function ChatPanel({
 }: ChatPanelProps) {
   const [messages, setMessages] = useUIState<typeof AI>()
   const { submitUserMessage } = useActions()
+  const workerRef = React.useRef<Worker>()
+
+  React.useEffect(() => {
+    workerRef.current = new Worker('/workers/import.worker.js', {
+      type: 'module',
+    })
+
+    workerRef.current.onmessage = async (event) => {
+      const { embeddings, text } = event.data
+      const responseMessage = await submitUserMessage({
+        content: text,
+        embeddings,
+      })
+
+      setMessages((currentMessages) => [...currentMessages, responseMessage])
+    }
+
+    workerRef.current.onerror = (event) => {
+      console.error('Worker error:', event)
+    }
+
+    workerRef.current.onmessageerror = (event) => {
+      console.error('Worker message error:', event)
+    }
+
+    return () => {
+      workerRef.current?.terminate()
+    }
+  }, [submitUserMessage, setMessages])
 
   return (
     <div
@@ -34,7 +63,7 @@ export function ChatPanel({
                 variant="outline"
                 key={example.heading}
                 className={'cursor-pointer'}
-                onClick={async () => {
+                onClick={() => {
                   setMessages((currentMessages) => [
                     ...currentMessages,
                     {
@@ -43,14 +72,7 @@ export function ChatPanel({
                     },
                   ])
 
-                  const responseMessage = await submitUserMessage({
-                    content: example.message,
-                  })
-
-                  setMessages((currentMessages) => [
-                    ...currentMessages,
-                    responseMessage,
-                  ])
+                  workerRef.current?.postMessage({ text: example.message })
                 }}
               >
                 <div className="text-xs text-white font-semibold">
@@ -61,35 +83,6 @@ export function ChatPanel({
             ))}
           </div>
         ) : null}
-
-        {/* {messages?.length >= 2 ? (
-          <div className="flex h-12 items-center justify-center">
-            <div className="flex space-x-2">
-              {id && title ? (
-                <>
-                  <Button
-                    variant="outline"
-                    onClick={() => setShareDialogOpen(true)}
-                  >
-                    <IconShare className="mr-2" />
-                    Share
-                  </Button>
-                  <ChatShareDialog
-                    open={shareDialogOpen}
-                    onOpenChange={setShareDialogOpen}
-                    onCopy={() => setShareDialogOpen(false)}
-                    shareChat={shareChat}
-                    chat={{
-                      id,
-                      title,
-                      messages: aiState.messages,
-                    }}
-                  />
-                </>
-              ) : null}
-            </div>
-          </div>
-        ) : null} */}
 
         <div className="bottom-0">
           <PromptForm

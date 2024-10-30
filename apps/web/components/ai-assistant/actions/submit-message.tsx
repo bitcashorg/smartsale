@@ -7,7 +7,6 @@ import { createStreamableValue, getMutableAIState, streamUI } from 'ai/rsc'
 import { BotCard, BotMessage, Crypto, Purchase } from '../crypto-ui'
 
 import { nanoid, sleep } from '@/lib/utils'
-// import { HfInference } from '@huggingface/inference'
 import { z } from 'zod'
 
 import { CryptoSkeleton } from '../crypto-ui/crypto-skeleton'
@@ -20,16 +19,13 @@ import { EventsSkeleton } from '../crypto-ui/events-skeleton'
 import { SpinnerMessage } from '../crypto-ui/message'
 import type { AI } from './create-ai'
 
-// Initialize Hugging Face client (make sure to set up environment variables)
-// const hf = new HfInference(process.env.HUGGINGFACE_API_KEY)
-
 export async function submitUserMessage({
   content,
-  embedding,
-}: { content: string; embedding: string }) {
+  embeddings = '[]',
+}: { content: string; embeddings: string }) {
   'use server'
 
-  console.log('🍓 submit user message', content, embedding)
+  console.log('🍓 submit user message', content, embeddings)
 
   const aiState = getMutableAIState<typeof AI>()
 
@@ -54,14 +50,18 @@ export async function submitUserMessage({
   //   inputs: content,
   // })
 
-  // Format the embedding as a string array
-  const formattedEmbedding = `[${embedding.toString()}]`
+  // // Format the embedding as a string array
+  // const formattedEmbedding = `[${embedding.toString()}]`
+
+  // console.log('🍓 embeddings equal?', formattedEmbedding === embeddings)
+  // console.log('🍓 embeddings from huggingface', JSON.stringify(embedding))
+  // console.log('🍓 embeddings from user', embeddings)
 
   const supabase = await createSupabaseServerClient()
   // console.log('🍓 formattedEmbedding', formattedEmbedding)
   const { data: documents, error: matchError } = await supabase
     .rpc('match_document_sections', {
-      embedding: formattedEmbedding,
+      embedding: embeddings,
       match_threshold: 0.8,
     })
     .select('content')
