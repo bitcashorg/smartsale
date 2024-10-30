@@ -2,8 +2,8 @@ import 'server-only'
 export const runtime = 'edge'
 
 import { openai } from '@ai-sdk/openai'
+import { HfInference } from '@huggingface/inference'
 import { createStreamableValue, getMutableAIState, streamUI } from 'ai/rsc'
-
 import { BotCard, BotMessage, Crypto, Purchase } from '../crypto-ui'
 
 import { nanoid, sleep } from '@/lib/utils'
@@ -21,11 +21,28 @@ import type { AI } from './create-ai'
 
 export async function submitUserMessage({
   content,
-  embeddings = '[]',
-}: { content: string; embeddings: string }) {
+  embeddings,
+}: { content: string; embeddings: number[] }) {
   'use server'
 
   console.log('🍓 submit user message', content, embeddings)
+
+  let formattedEmbedding = JSON.stringify(embeddings)
+
+  // If no embeddings provided, generate them using the worker
+  if (!embeddings.length) {
+    // Initialize Hugging Face client (make sure to set up environment variables)
+    const hf = new HfInference(process.env.HUGGINGFACE_API_KEY)
+    const embedding = await hf.featureExtraction({
+      model: 'thenlper/gte-small',
+      inputs: content,
+    })
+
+    // Format the embedding as a string array
+    formattedEmbedding = `[${embedding.toString()}]`
+  }
+
+  // console.log('🍓 formattedEmbedding', formattedEmbedding)
 
   const aiState = getMutableAIState<typeof AI>()
 
@@ -48,7 +65,7 @@ export async function submitUserMessage({
 
   const { data: documents, error: matchError } = await supabase
     .rpc('match_document_sections', {
-      embedding: embeddings,
+      embedding: formattedEmbedding,
       match_threshold: 0.8,
     })
     .select('content')

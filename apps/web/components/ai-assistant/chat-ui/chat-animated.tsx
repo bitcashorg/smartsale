@@ -2,20 +2,15 @@
 
 import { Card } from '@/components/ui/card'
 import { nanoid } from '@/lib/utils'
-import { useAIState } from 'ai/rsc'
 import { AnimatePresence, motion } from 'framer-motion'
 import { MessageCircle } from 'lucide-react'
-import { useRouter } from 'next/navigation'
 import { useQueryStates } from 'nuqs'
 import { Resizable } from 're-resizable'
 import { useCallback, useState } from 'react'
 import { isMobile } from 'react-device-detect'
 import { Chat } from '.'
-import type { AI } from '../actions/create-ai'
 
 export function ChatAnimated({ chatId }: { chatId: string }) {
-  const router = useRouter()
-  const [aiState, setAIState] = useAIState<typeof AI>()
   const [{ bot }, setQueryStates] = useQueryStates({
     chat: {
       defaultValue: chatId,
