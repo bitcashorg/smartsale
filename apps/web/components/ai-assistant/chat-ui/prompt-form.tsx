@@ -84,7 +84,7 @@ export function PromptForm({
         console.log('🍓 submitting user message')
         const responseMessage = await submitUserMessage({
           content: newMessage,
-          embeddings,
+          embeddings: embeddings || [],
         })
 
         setMessages((currentMessages: Message[]) => [
@@ -118,22 +118,35 @@ export function PromptForm({
       submitUserMessage,
     ],
   )
-
   useEffect(() => {
-    workerRef.current = new Worker('/workers/import.worker.js', {
-      type: 'module',
-    })
+    console.log('🍀 creating worker')
+    try {
+      const worker = new Worker('/workers/import.worker.js', {
+        type: 'module',
+      })
+      workerRef.current = worker
+      console.log('🍀 worker created', worker, workerRef.current)
 
-    workerRef.current.onmessage = (event) => handleSubmit(event.data)
+      workerRef.current.onmessage = (event) => {
+        console.log('🍀 worker onmessage', event.data)
+        handleSubmit(event.data)
+      }
 
-    workerRef.current.onerror = (event) => {
-      console.error('🍓 Worker error:', event)
-    }
-    workerRef.current.onmessageerror = (event) => {
-      console.error('🍓 Worker message error:', event)
+      workerRef.current.onerror = (event) => {
+        console.error('🍀 Worker error:', event)
+      }
+
+      workerRef.current.onmessageerror = (event) => {
+        console.error('🍀 Worker message error:', event)
+      }
+
+      console.log('🍀 worker configured', workerRef.current)
+    } catch (error) {
+      console.error('🍀 Error creating worker:', error)
     }
 
     return () => {
+      console.log('🍀 terminating worker')
       workerRef.current?.terminate()
     }
   }, [handleSubmit])

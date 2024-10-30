@@ -5,6 +5,7 @@ import { useSearchParams } from 'next/navigation'
 import { useEffect } from 'react'
 import VConsole from 'vconsole'
 
+// NOTE: this approach doesnt catch initial render
 export function useVConsole() {
   const searchParams = useSearchParams()
 
@@ -19,7 +20,7 @@ export function useVConsole() {
     const debugLocalStorage = localStorage.getItem('debug') === 'true'
 
     // Include the retrieved debug value in the if clause
-    if (appConfig.env !== 'prod' || debugLocalStorage) {
+    if (debugLocalStorage) {
       const vconsole = new VConsole({ theme: 'dark' })
 
       console.info('🙇‍♂️ vConsole initialized', vconsole)
