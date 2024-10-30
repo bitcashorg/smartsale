@@ -1,5 +1,6 @@
 import { eosEvmTestnet } from '@repo/chains'
 import type { EVMTokenContractData } from '../../types'
+import { Chain } from 'viem'
 
 export const TestnetUSDCred: EVMTokenContractData = {
   address: '0x1d5A4C37e60cAd0C72c057E3c191352429cDB38e',
@@ -10,7 +11,7 @@ export const TestnetUSDCred: EVMTokenContractData = {
   chainId: 15557,
   chainType: 'evm',
   chainName: 'EOS EVM Tesnet',
-  chain: eosEvmTestnet,
+  chain: eosEvmTestnet as Chain,
   abi: [
     {
       inputs: [

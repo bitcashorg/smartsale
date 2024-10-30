@@ -1,4 +1,4 @@
-import { sepolia } from 'viem/chains'
+import { Chain, sepolia } from 'viem/chains'
 import type { EVMContractData } from '../../types'
 
 export const TestnetEasyAuction: EVMContractData = {
@@ -7,7 +7,7 @@ export const TestnetEasyAuction: EVMContractData = {
   chainId: 15557,
   chainType: 'evm',
   chainName: 'EOS EVM Tesnet',
-  chain: sepolia,
+  chain: sepolia as Chain,
   abi: [
     {
       inputs: [],
