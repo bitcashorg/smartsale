@@ -17,9 +17,9 @@ import {
 import type { Message } from 'ai'
 import { nanoid } from 'nanoid'
 import { useCallback, useEffect, useRef } from 'react'
-import { UserMessage } from '../../crypto-ui/message'
-import { useEnterSubmit } from '../../hooks/use-enter-submit'
-import { IconArrowElbow } from '../chat-icons'
+import { UserMessage } from '../crypto-ui/message'
+import { useEnterSubmit } from '../hooks/use-enter-submit'
+import { IconArrowElbow } from './chat-icons'
 
 export function PromptForm({
   input,
@@ -124,21 +124,14 @@ export function PromptForm({
       type: 'module',
     })
 
-    workerRef.current.onmessage = (event) => {
-      console.log('🍓🚀 Worker result:', event.data)
-      handleSubmit(event.data)
-    }
+    workerRef.current.onmessage = (event) => handleSubmit(event.data)
+
     workerRef.current.onerror = (event) => {
       console.error('🍓 Worker error:', event)
     }
     workerRef.current.onmessageerror = (event) => {
       console.error('🍓 Worker message error:', event)
     }
-
-    console.log('🍓 worker', workerRef.current)
-
-    // console.log('🍓 posting message to worker')
-    // workerRef.current.postMessage({ text: 'hello' }) // Example data sent to the worker
 
     return () => {
       workerRef.current?.terminate()
