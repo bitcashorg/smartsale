@@ -19,6 +19,7 @@ import type React from 'react'
 import { isMobile } from 'react-device-detect'
 import { Toaster } from 'sonner'
 import '../../globals.css'
+import Script from 'next/script'
 import type { SearchParams } from 'nuqs/dist/_tsup-dts-rollup'
 
 export const viewport: Viewport = {
@@ -65,6 +66,11 @@ export default async function RootLayout({
           <DynamicSessionDialog />
           <DynamicEsrDialog />
           <DynamicAiAssistant />
+          {/* <Script
+            src="https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.0.1"
+            type="module"
+            strategy="lazyOnload"
+          /> */}
         </Providers>
 
         <GoogleAnalytics gaId="G-78N0Z7NPQJ" />

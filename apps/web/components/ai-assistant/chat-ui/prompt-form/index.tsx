@@ -14,24 +14,15 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from '@/components/ui/tooltip'
+import { pipeline } from '@huggingface/transformers'
 import type { Message } from 'ai'
-import * as Comlink from 'comlink'
+import type * as Comlink from 'comlink'
 import { nanoid } from 'nanoid'
-import { useEffect, useRef } from 'react'
+import { useCallback, useEffect, useRef } from 'react'
 import { UserMessage } from '../../crypto-ui/message'
 import { useEnterSubmit } from '../../hooks/use-enter-submit'
 import { IconArrowElbow } from '../chat-icons'
-
-// Add type for the worker API
-interface WorkerAPI {
-  generateEmbeddings: (
-    text: string,
-    progressCallback: (progress: number) => void,
-  ) => Promise<{
-    status: 'complete'
-    embeddings: string
-  }>
-}
+import type { WorkerAPI } from './comlink.worker'
 
 export function PromptForm({
   input,
@@ -44,47 +35,132 @@ export function PromptForm({
   const [, setMessages] = useUIState()
   const router = useRouter()
   const searchParams = useSearchParams()
-  const workerApi = useRef<Comlink.Remote<WorkerAPI>>()
+  // const workerApi = useRef<Comlink.Remote<WorkerAPI>>()
+  // const workerRef = useRef<Worker>()
 
-  useEffect(() => {
-    try {
-      console.log('🍓 initializing worker')
-      const worker = new Worker('./prompt.worker.ts')
+  // // Create a reference to the worker object.
+  // const worker = useRef<Worker | null>(null)
 
-      // Wrap the worker with Comlink
-      workerApi.current = Comlink.wrap<WorkerAPI>(worker)
+  // // We use the `useEffect` hook to set up the worker as soon as the `App` component is mounted.
+  // useEffect(() => {
+  //   if (!worker.current) {
+  //     console.log('🍓 Creating new worker')
+  //     // Create the worker if it does not yet exist.
+  //     worker.current = new Worker(
+  //       new URL('./demo.worker.js', import.meta.url),
+  //       {
+  //         type: 'module',
+  //       },
+  //     )
+  //   }
 
-      console.log('🍓 worker initialized', workerApi.current)
+  //   // Create a callback function for messages from the worker thread.
+  //   const onMessageReceived = (e: MessageEvent) => {
+  //     console.log('🍓 Received message from worker:', e.data)
+  //     switch (e.data.status) {
+  //       case 'initiate':
+  //         console.log('🍓 Worker initiated')
+  //         // setReady(false)
+  //         break
+  //       case 'ready':
+  //         console.log('🍓 Worker ready')
+  //         // setReady(true)
+  //         break
+  //       case 'complete':
+  //         console.log('🍓 Worker completed:', e.data.output[0])
+  //         // setResult(e.data.output[0])
+  //         break
+  //     }
+  //   }
 
-      setTimeout(async () => {
-        console.log(
-          '🍓 posting message to worker',
-          workerApi.current?.generateEmbeddings,
-        )
-        try {
-          const result = await workerApi.current?.generateEmbeddings(
-            'Tobi',
-            Comlink.proxy((progress: number) => {
-              console.log(`🍓 Loading: ${progress}%`)
-            }),
-          )
-          console.log('🍓 worker result:', result)
-        } catch (error) {
-          console.error('🍓💀 worker error:', error)
-        }
-      }, 1000)
+  //   console.log('🍓 Adding message listener to worker')
+  //   // Attach the callback function as an event listener.
+  //   worker.current.addEventListener('message', onMessageReceived)
 
-      return () => {
-        console.log('🍓 terminating worker')
-        if (workerApi.current) {
-          workerApi.current[Comlink.releaseProxy]()
-        }
-        worker.terminate()
-      }
-    } catch (error) {
-      console.error('Error initializing worker:', error)
-    }
-  }, [])
+  //   // Define a cleanup function for when the component is unmounted.
+  //   return () => {
+  //     console.log('🍓 Removing message listener from worker')
+  //     worker.current?.removeEventListener('message', onMessageReceived)
+  //   }
+  // })
+
+  // const classify = useCallback((text: string) => {
+  //   if (worker.current) {
+  //     console.log('🍓 Posting message to worker:', text)
+  //     worker.current.postMessage({ text })
+  //   }
+  // }, [])
+
+  const method = async () => {
+    const extractor = await pipeline('feature-extraction', 'Supabase/gte-small')
+    const embeddings = await extractor('lalalala')
+    return embeddings
+  }
+
+  // useEffect(() => {
+  //   workerRef.current = new Worker('/workers/hello.worker.js', {
+  //     type: 'module',
+  //   })
+
+  //   workerRef.current.onmessage = (event) => {
+  //     console.log('🍓 Worker result:', event.data)
+  //   }
+  //   workerRef.current.onerror = (event) => {
+  //     console.error('🍓 Worker error:', event)
+  //   }
+  //   workerRef.current.onmessageerror = (event) => {
+  //     console.error('🍓 Worker message error:', event)
+  //   }
+
+  //   console.log('🍓 worker', workerRef.current)
+
+  //   console.log('🍓 posting message to worker')
+  //   workerRef.current.postMessage('lalalala') // Example data sent to the worker
+
+  //   return () => {
+  //     workerRef.current?.terminate()
+  //   }
+  // }, [])
+
+  // useEffect(() => {
+  //   try {
+  //     console.log('🍓 initializing worker')
+
+  //     const worker = new Worker('/workers/comlink.worker.js', {
+  //       type: 'module',
+  //     })
+
+  //     // Wrap the worker with Comlink
+  //     workerApi.current = Comlink.wrap<WorkerAPI>(worker)
+
+  //     console.log('🍓 worker initialized', workerApi.current)
+
+  //     setTimeout(async () => {
+  //       console.log('🍓 posting message to worker', workerApi.current?.getData)
+  //       try {
+  //         const result = await workerApi.current?.getData(
+  //           'Tobi',
+  //           // Comlink.proxy((progress: number) => {
+  //           //   console.log(`🍓 Loading: ${progress}%`)
+  //           // }),
+  //         )
+  //         console.log('🍓 worker result:', result)
+  //       } catch (error) {
+  //         console.error('🍓💀 worker error:', error)
+  //       }
+  //     }, 1000)
+
+  //     return () => {
+  //       console.log('🍓 terminating worker')
+  //       if (workerApi.current) {
+  //         workerApi.current[Comlink.releaseProxy]()
+  //       }
+  //       worker.terminate()
+  //     }
+  //   } catch (error) {
+  //     console.error('🍓💀 Error initializing worker:', error)
+  //   }
+  // }, [])
 
   // focus input on desktop load
   React.useEffect(() => {
@@ -163,7 +239,13 @@ export function PromptForm({
   }
 
   return (
-    <form onSubmit={handleSubmit} ref={formRef}>
+    <form
+      onSubmit={(e) => {
+        e.preventDefault()
+        classify(input)
+      }}
+      ref={formRef}
+    >
       <Card
         variant="outline"
         className="relative flex max-h-50 w-full grow flex-col overflow-hidden"

@@ -7,7 +7,7 @@ import { createStreamableValue, getMutableAIState, streamUI } from 'ai/rsc'
 import { BotCard, BotMessage, Crypto, Purchase } from '../crypto-ui'
 
 import { nanoid, sleep } from '@/lib/utils'
-import { HfInference } from '@huggingface/inference'
+// import { HfInference } from '@huggingface/inference'
 import { z } from 'zod'
 
 import { CryptoSkeleton } from '../crypto-ui/crypto-skeleton'

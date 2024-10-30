@@ -2,6 +2,7 @@
 
 const { hostname } = require('node:os')
 const path = require('node:path')
+const webpack = require('webpack')
 const nextConfig = {
   async headers() {
     return [
@@ -102,17 +103,32 @@ const nextConfig = {
       '@huggingface/transformers': require.resolve('@huggingface/transformers'),
     }
 
-    if (!isServer) {
-      config.module.rules.push({
-        test: /\.worker\.ts$/,
-        use: {
-          loader: 'worker-loader',
-          options: {
-            filename: 'static/[hash].worker.js',
-            publicPath: '/_next/',
-          },
+    config.module.rules.push({
+      test: /\.js$/,
+      exclude: /node_modules/,
+      use: {
+        loader: 'babel-loader',
+        options: {
+          presets: ['@babel/preset-env'],
+          plugins: [
+            'babel-plugin-transform-import-meta',
+            '@babel/plugin-syntax-import-meta',
+          ],
         },
-      })
+      },
+    })
+
+    // Fallback to resolve import.meta.url
+    config.plugins.push(
+      new webpack.DefinePlugin({
+        'import.meta.url': JSON.stringify(`file://${__filename}`),
+      }),
+    )
+
+    // Enable async WebAssembly if using .wasm dependencies
+    config.experiments = {
+      asyncWebAssembly: true,
+      layers: true, // Enable layers experiment
     }
 
     return config
