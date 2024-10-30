@@ -1,28 +1,19 @@
 'use client'
 
 import { Button } from '@/components/ui/button'
-import { appConfig } from '@/lib/config'
 import { cn } from '@/lib/utils'
 import { useAIState, useUIState } from 'ai/rsc'
 import { XIcon } from 'lucide-react'
 import Link from 'next/link'
 import { usePathname, useRouter, useSearchParams } from 'next/navigation'
 import { useEffect, useRef, useState } from 'react'
-import { toast } from 'sonner'
 import { useLocalStorage } from '../hooks/use-local-storage'
-import type { Message, Session } from '../types'
+import type { Message } from '../types'
 import { ChatList } from './chat-list'
 import { ChatPanel } from './chat-panel'
 import { EmptyScreen } from './empty-screen'
 
-export interface ChatProps extends React.ComponentProps<'div'> {
-  initialMessages?: Message[]
-  id: string
-  session?: Session
-  missingKeys: string[]
-}
-
-export function Chat({ id, className, session, missingKeys }: ChatProps) {
+export function Chat({ id, className }: ChatProps) {
   const router = useRouter()
   const pathname = usePathname()
   const searchParams = useSearchParams()
@@ -31,14 +22,6 @@ export function Chat({ id, className, session, missingKeys }: ChatProps) {
   const [aiState] = useAIState()
 
   const [_chatId, setNewChatId] = useLocalStorage('newChatId', id)
-
-  // useEffect(() => {
-  //   if (session?.user) {
-  //     if (!path.includes('chat') && messages.length === 1) {
-  //       window.history.replaceState({}, '', `/chat/${id}`)
-  //     }
-  //   }
-  // }, [id, path, session?.user, messages])
 
   useEffect(() => {
     const messagesLength = aiState.messages?.length
@@ -146,4 +129,9 @@ export function Chat({ id, className, session, missingKeys }: ChatProps) {
       </div>
     </div>
   )
+}
+
+export interface ChatProps extends React.ComponentProps<'div'> {
+  initialMessages?: Message[]
+  id: string
 }

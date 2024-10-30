@@ -19,6 +19,7 @@ import type React from 'react'
 import { isMobile } from 'react-device-detect'
 import { Toaster } from 'sonner'
 import '../../globals.css'
+import Script from 'next/script'
 import type { SearchParams } from 'nuqs/dist/_tsup-dts-rollup'
 
 export const viewport: Viewport = {

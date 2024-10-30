@@ -11,7 +11,7 @@ export function ChatDraggable({
   return (
     <DraggableResizableCard>
       <Card variant="padded" className="w-full">
-        <Chat id={id} missingKeys={missingKeys} />
+        <Chat id={id} />
       </Card>
     </DraggableResizableCard>
   )

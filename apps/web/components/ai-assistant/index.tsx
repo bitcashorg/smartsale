@@ -5,7 +5,6 @@ import { AI } from './actions/create-ai'
 
 export function AiAssistant() {
   const id = nanoid()
-  console.log('🍓 new chat id', id)
 
   return (
     <AI initialAIState={{ chatId: id, messages: [] }}>

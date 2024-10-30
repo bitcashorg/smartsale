@@ -17,15 +17,37 @@ export function ChatPanel({
   setInput,
   scrollToLatestQuestion,
 }: ChatPanelProps) {
-  const [aiState] = useAIState()
   const [messages, setMessages] = useUIState<typeof AI>()
   const { submitUserMessage } = useActions()
-  const [shareDialogOpen, setShareDialogOpen] = React.useState(false)
+  const workerRef = React.useRef<Worker>()
 
-  const shareChat = async () => {
-    // Implement the shareChat functionality here
-    console.log('Sharing chat...')
-  }
+  React.useEffect(() => {
+    workerRef.current = new Worker('/workers/import.worker.js', {
+      type: 'module',
+    })
+
+    workerRef.current.onmessage = async (event) => {
+      const { embeddings, text } = event.data
+      const responseMessage = await submitUserMessage({
+        content: text,
+        embeddings,
+      })
+
+      setMessages((currentMessages) => [...currentMessages, responseMessage])
+    }
+
+    workerRef.current.onerror = (event) => {
+      console.error('Worker error:', event)
+    }
+
+    workerRef.current.onmessageerror = (event) => {
+      console.error('Worker message error:', event)
+    }
+
+    return () => {
+      workerRef.current?.terminate()
+    }
+  }, [submitUserMessage, setMessages])
 
   return (
     <div
@@ -33,19 +55,15 @@ export function ChatPanel({
         'inset-x-0 bottom-0 w-full from-muted/30 from-0% to-muted/30 to-50% duration-300 ease-in-out animate-in bg-card',
       )}
     >
-      {/* <ButtonScrollToBottom
-        isAtBottom={isAtBottom}
-        scrollToBottom={scrollToBottom}
-      /> */}
       <div className="mx-auto sm:max-w-2xl">
         {messages.length === 0 ? (
           <div className="mb-4 grid grid-cols-2 gap-2 px-0">
-            {exampleMessages.map((example, index) => (
+            {exampleMessages.map((example) => (
               <Card
                 variant="outline"
                 key={example.heading}
                 className={'cursor-pointer'}
-                onClick={async () => {
+                onClick={() => {
                   setMessages((currentMessages) => [
                     ...currentMessages,
                     {
@@ -54,14 +72,7 @@ export function ChatPanel({
                     },
                   ])
 
-                  const responseMessage = await submitUserMessage({
-                    content: example.message,
-                  })
-
-                  setMessages((currentMessages) => [
-                    ...currentMessages,
-                    responseMessage,
-                  ])
+                  workerRef.current?.postMessage({ text: example.message })
                 }}
               >
                 <div className="text-xs text-white font-semibold">
@@ -72,35 +83,6 @@ export function ChatPanel({
             ))}
           </div>
         ) : null}
-
-        {/* {messages?.length >= 2 ? (
-          <div className="flex h-12 items-center justify-center">
-            <div className="flex space-x-2">
-              {id && title ? (
-                <>
-                  <Button
-                    variant="outline"
-                    onClick={() => setShareDialogOpen(true)}
-                  >
-                    <IconShare className="mr-2" />
-                    Share
-                  </Button>
-                  <ChatShareDialog
-                    open={shareDialogOpen}
-                    onOpenChange={setShareDialogOpen}
-                    onCopy={() => setShareDialogOpen(false)}
-                    shareChat={shareChat}
-                    chat={{
-                      id,
-                      title,
-                      messages: aiState.messages,
-                    }}
-                  />
-                </>
-              ) : null}
-            </div>
-          </div>
-        ) : null} */}
 
         <div className="bottom-0">
           <PromptForm

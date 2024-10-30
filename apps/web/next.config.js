@@ -2,6 +2,7 @@
 
 const { hostname } = require('node:os')
 const path = require('node:path')
+const webpack = require('webpack')
 const nextConfig = {
   async headers() {
     return [
@@ -14,7 +15,7 @@ const nextConfig = {
           },
           {
             key: 'Content-Security-Policy',
-            value: `object-src 'none';base-uri 'self';script-src 'self' 'report-sample' 'unsafe-inline' https: http:;`,
+            value: `object-src 'none';base-uri 'self';script-src 'self' 'report-sample' 'unsafe-inline' 'unsafe-eval' https: http:;`,
           },
           {
             key: 'Referrer-Policy',
@@ -92,6 +93,22 @@ const nextConfig = {
     fetches: {
       fullUrl: true,
     },
+  },
+  webpack: (config, { isServer }) => {
+    // Ignore node-specific modules when bundling for the browser
+
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      sharp$: false,
+      'onnxruntime-node$': false,
+    }
+
+    config.experiments = {
+      asyncWebAssembly: true,
+      layers: true, // Enable layers experiment
+    }
+
+    return config
   },
 }
 

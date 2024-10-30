@@ -1,7 +1,6 @@
 import type { Database, Tables, TablesInsert } from '@repo/supabase'
 import type { SupabaseClient } from '@supabase/supabase-js'
 import type { Address } from 'viem'
-import { supabase } from '../../../../services/trigger/src/lib/supabase'
 
 // NOTE: This functions can be used on both server and client
 
@@ -58,7 +57,7 @@ export async function getProjectData({
 // Interface for function parameters
 interface ProjectDataParams {
   projectId: number
-  supabase: SupabaseClient
+  supabase: SupabaseClient<Database>
 }
 
 /**
@@ -166,7 +165,7 @@ export async function insertTransaction(
 
 export async function getWhitelistedAddress(
   account: string,
-  supabase: SupabaseClient,
+  supabase: SupabaseClient<Database>,
 ) {
   const { data, error } = await supabase
     .from('whitelist')
@@ -175,7 +174,7 @@ export async function getWhitelistedAddress(
     .eq('project_id', 1) // TODO: make this dynamic
     .single()
 
-  if (error || !data.address) {
+  if (error || !data?.address) {
     console.error('Error fetching whitelisted address:', error)
     throw new Error('Error fetching whitelisted address')
   }

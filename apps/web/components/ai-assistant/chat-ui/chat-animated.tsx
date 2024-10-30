@@ -52,7 +52,7 @@ export function ChatAnimated({ chatId }: { chatId: string }) {
                 variant="padded"
                 className="w-[100dvw] h-[100dvh] rounded-none"
               >
-                <Chat id={chatId} missingKeys={[]} />
+                <Chat id={chatId} />
               </Card>
             ) : (
               <Resizable
@@ -72,7 +72,7 @@ export function ChatAnimated({ chatId }: { chatId: string }) {
                 }}
               >
                 <Card variant="padded" className="w-full h-full min-h-[300px]">
-                  <Chat id={chatId} missingKeys={[]} />
+                  <Chat id={chatId} />
                 </Card>
               </Resizable>
             )}
