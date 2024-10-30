@@ -44,21 +44,8 @@ export async function submitUserMessage({
   let textStream: undefined | ReturnType<typeof createStreamableValue<string>>
   let textNode: undefined | React.ReactNode
 
-  // Generate embeddings using the 'gte-small' model
-  // const embedding = await hf.featureExtraction({
-  //   model: 'thenlper/gte-small',
-  //   inputs: content,
-  // })
-
-  // // Format the embedding as a string array
-  // const formattedEmbedding = `[${embedding.toString()}]`
-
-  // console.log('🍓 embeddings equal?', formattedEmbedding === embeddings)
-  // console.log('🍓 embeddings from huggingface', JSON.stringify(embedding))
-  // console.log('🍓 embeddings from user', embeddings)
-
   const supabase = await createSupabaseServerClient()
-  // console.log('🍓 formattedEmbedding', formattedEmbedding)
+
   const { data: documents, error: matchError } = await supabase
     .rpc('match_document_sections', {
       embedding: embeddings,

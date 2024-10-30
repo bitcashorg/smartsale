@@ -66,11 +66,6 @@ export default async function RootLayout({
           <DynamicSessionDialog />
           <DynamicEsrDialog />
           <DynamicAiAssistant />
-          {/* <Script
-            src="https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.0.1"
-            type="module"
-            strategy="lazyOnload"
-          /> */}
         </Providers>
 
         <GoogleAnalytics gaId="G-78N0Z7NPQJ" />
