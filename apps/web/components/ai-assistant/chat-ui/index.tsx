@@ -67,7 +67,7 @@ export function Chat({ id, className }: ChatProps) {
           // Force a reflow to ensure the latest DOM changes are applied
           messagesRef.current.offsetHeight
           const adjustedMessageHeight = messagesRef.current.clientHeight
-          const newHeight = `${adjustedMessageHeight + scrollerHeight - 50}px`
+          const newHeight = `${adjustedMessageHeight + scrollerHeight + 20}px`
 
           messagesRef.current.style.height = newHeight
         }
