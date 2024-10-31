@@ -2,111 +2,166 @@
   "relatedBlogs": [
     {
       "id": "CD89KaoLSh6nQbiMhxX0EQ",
-      "topics": ["launchpad"],
-      "title": "Garantizando la confianza y la integridad: Cumplimiento normativo y medidas de seguridad",
+      "topics": [
+        "launchpad"
+      ],
+      "title": "Ensuring Trust and Integrity: Regulatory Compliance and Security Measures",
       "slug": "ensuring-trust-and-integrity-regulatory-compliance-and-security-measures",
       "authorName": "Jun Dam",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
       },
       "_publishedAt": "2024-06-20T16:21:42+01:00",
-      "description": "Esta seccion describe el enfoque proactivo de nuestra plataforma para cumplir con los estandares regulatorios globales e implementar medidas de seguridad avanzadas, asegurando un entorno seguro y conforme para los usuarios en los espacios de criptomonedas e IA.",
+      "description": "This section outlines our platform's proactive approach to adhering to global regulatory standards and implementing advanced security measures, ensuring a safe and compliant environment for users in the crypto and AI spaces.",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1710562461-bitlauncherregsecimg.webp"
       },
       "seo": {
-        "title": "Cumplimiento normativo y medidas de seguridad",
-        "description": "Esta seccion describe el enfoque proactivo de nuestra plataforma para cumplir con los estandares regulatorios globales e implementar medidas de seguridad avanzadas."
+        "description": "This section outlines our platform's proactive approach to adhering to global regulatory standards and implementing advanced security measures.",
+        "title": "Regulatory Compliance and Security Measures",
+        "twitterCard": null,
+        "image": {
+          "width": 700,
+          "height": 700,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1710562461-bitlauncherregsecimg.webp"
+        }
       }
     },
     {
       "id": "BEfgGhndSsCn5MBU89RO3A",
-      "topics": ["launchpad"],
-      "title": "Impulsando la innovacion: Vision, mision y objetivos estrategicos de bitLauncher",
+      "topics": [
+        "launchpad"
+      ],
+      "title": "Empowering Innovation: Vision, Mission, and Strategic Goals of bitLauncher",
       "slug": "empowering-innovation-vision-mission-and-strategic-goals-of-bitcash-launchpad",
       "authorName": "Jun Dam",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
       },
       "_publishedAt": "2024-03-14T05:31:29+00:00",
-      "description": "Esta seccion describe la vision de bitcash Launchpad para revolucionar la innovacion en IA con criptomonedas, detallando nuestra mision de democratizar el desarrollo de IA y nuestros objetivos estrategicos para crear un futuro tecnologico impulsado por la comunidad, transparente y etico.",
+      "description": "This section outlines bitcash Launchpad's vision to revolutionize AI innovation with cryptocurrency, detailing our mission to democratize AI development and our strategic goals for creating a community-driven, transparent, and ethical technological future.",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1709370139-whitepaper-p4.webp"
       },
       "seo": {
-        "title": "Impulsando la innovacion: Vision, mision y objetivos estrategicos",
-        "description": "Esta seccion describe nuestra vision, mision y objetivos para revolucionar la innovacion en IA con criptomonedas."
+        "description": "This section outlines our vision, mission and goals to revolutionize AI innovation with cryptocurrency.",
+        "title": "Empowering Innovation: Vision, Mission, and Strategic Goals ",
+        "twitterCard": null,
+        "image": {
+          "width": 700,
+          "height": 700,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1709370139-whitepaper-p4.webp"
+        }
       }
     },
     {
       "id": "NZeB3i5XRzuELW2UWBDyRQ",
-      "topics": ["research", "dao", "fundraising", "launchpad"],
-      "title": "Navegando la convergencia: Un analisis de mercado integral de la dinamica de la IA y las criptomonedas",
+      "topics": [
+        "research",
+        "dao",
+        "fundraising",
+        "launchpad"
+      ],
+      "title": "Navigating the Convergence: A Comprehensive Market Analysis of AI and the Cryptocurrency Dynamic",
       "slug": "navigating-the-convergence-a-comprehensive-market-analysis-of-ai-and-cryptocurren",
       "authorName": "Jun Dam",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
       },
       "_publishedAt": "2024-03-14T05:30:05+00:00",
-      "description": "Esta seccion explora la interseccion dinamica de la IA y las criptomonedas, destacando las principales tendencias, desafios y oportunidades, y posiciona a bitcash Launchpad como una plataforma pionera para proyectos de IA de codigo abierto.",
+      "description": "This section explores the dynamic intersection of AI and cryptocurrency, highlighting key trends, challenges, and opportunities, and positions bitcash Launchpad as a pioneering platform for open-source AI projects.",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1709276586-marketanalysis-img2.webp"
       },
       "seo": {
-        "title": "Analisis de mercado de la dinamica de IA y criptomonedas",
-        "description": "Principales tendencias, desafios y oportunidades, y posiciona a bitcash Launchpad como una plataforma pionera para proyectos de IA de codigo abierto."
+        "description": "Key trends, challenges, and opportunities, and positions bitcash Launchpad as a pioneering platform for open-source AI projects.",
+        "title": "Market Analysis of AI and Cryptocurrency Dynamic",
+        "twitterCard": null,
+        "image": {
+          "width": 700,
+          "height": 700,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1709276586-marketanalysis-img2.webp"
+        }
       }
     },
     {
       "id": "MICfokr1TVuScAB4Qh9YGw",
-      "topics": ["launchpad"],
-      "title": "Impulsando la innovacion: Tokenomia y estrategia de financiacion de bitcash",
+      "topics": [
+        "launchpad"
+      ],
+      "title": "Empowering Innovation: Tokenomics and Funding Strategy of bitcash",
       "slug": "empowering-innovation-tokenomics-and-funding-strategy-of-bitcash",
       "authorName": "Jun Dam",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
       },
       "_publishedAt": "2024-03-14T05:27:37+00:00",
-      "description": "Esta seccion detalla el modelo de token de utilidad de acunacion y quema de bitcash y su enfoque estrategico para una financiacion equitativa y crecimiento de valor, respaldando la mision de la plataforma de impulsar el desarrollo de IA con una tokenomia transparente y sostenible.",
+      "description": "This section details bitcash's mint-and-burn utility token model and its strategic approach to equitable funding and value growth, underpinning the launchpad's mission to empower AI development with transparent and sustainable tokenomics.",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1710053905-tokenomicswpimg.webp"
       },
       "seo": {
-        "title": "Tokenomia y estrategia de financiacion de bitcash",
-        "description": "Esta seccion detalla el modelo de token de utilidad de acunacion y quema de bitcash y su enfoque estrategico para una financiacion equitativa y crecimiento de valor"
+        "description": "This section details bitcash's mint-and-burn utility token model and its strategic approach to equitable funding and value growth",
+        "title": "Tokenomics and Funding Strategy of bitcash",
+        "twitterCard": null,
+        "image": {
+          "width": 1012,
+          "height": 1012,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1710053905-tokenomicswpimg.webp"
+        }
       }
     },
     {
       "id": "BSDdY8byQWipv749rApFRA",
-      "topics": ["launchpad"],
-      "title": "Desbloqueando el potencial: Casos de uso y aplicaciones de bitLauncher",
+      "topics": [
+        "launchpad"
+      ],
+      "title": "Unlocking Potential: Use Cases and Applications of bitLauncher",
       "slug": "unlocking-potential-use-cases-and-applications-of-bitlauncher",
       "authorName": "Jun Dam",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
       },
       "_publishedAt": "2024-03-14T05:26:22+00:00",
-      "description": "Esta seccion explora como bitLauncher revoluciona la financiacion de startups de IA y el acceso al mercado global, mostrando modelos sostenibles de codigo abierto, cultura estrategica de startups y el ecosistema global de inversores a traves de casos de uso especificos y el proyecto pionero Masterbots.ai.",
+      "description": "This section explores how bitLauncer revolutionizes AI startup funding and global market access, showcasing sustainable open-source models, strategic startup culture, and the global investor ecosystem through targeted use cases and the pioneering Masterbots.ai project.",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1710393954-usecaseappsimg.webp"
       },
       "seo": {
-        "title": "Desbloqueando el potencial: Casos de uso y aplicaciones",
-        "description": "Esta seccion explora como bitLauncher revoluciona la financiacion de startups de IA, el acceso al mercado global y el proyecto pionero Masterbots.ai."
+        "description": "This section explores how bitLauncher revolutionizes AI startup funding, global market access, and the pioneering Masterbots.ai project.",
+        "title": "Unlocking Potential: Use Cases and Applications ",
+        "twitterCard": null,
+        "image": {
+          "width": 1012,
+          "height": 1012,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1710393954-usecaseappsimg.webp"
+        }
       }
     }
   ],
   "blogContent": {
     "id": "fbM-UqrYQXGhw6HB4C6swQ",
-    "topics": ["plataforma de lanzamiento"],
-    "title": "Hoja de Ruta Estrategica: Pioneros en Innovacion Blockchain y Exito de Startups de IA",
+    "topics": [
+      "launchpad"
+    ],
+    "title": "Strategic Roadmap: Pioneering Blockchain Innovation and AI Startup Success",
     "slug": "strategic-roadmap-pioneering-blockchain-innovation-and-ai-startup-success",
     "authorName": "Jun Dam",
     "authorPicture": {
       "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
     },
     "_publishedAt": "2024-03-15T05:13:30+00:00",
-    "description": "Delineando el plan por fases de bitLauncher para el despliegue de tecnologia revolucionaria, crecimiento impulsado por la comunidad y el desarrollo de la cadena equitativa Antelope, para revolucionar los panoramas de IA y criptomonedas.",
+    "description": "Outlining bitLauncher's phased plan for groundbreaking technology deployment, community-driven growth, and the development of the equitable Antelope chain, to revolutionize the AI and cryptocurrency landscapes.",
     "thumbnail": {
       "url": "https://www.datocms-assets.com/101962/1710479575-roadmapbitlauncher.webp"
     },
@@ -179,7 +234,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Platform Beta Launch"
                             },
                             {
@@ -198,7 +255,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Gnosis Auction and EOS EVM Integration"
                             },
                             {
@@ -217,7 +276,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Comprehensive Security Audits"
                             },
                             {
@@ -252,7 +313,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Fundraising Token Launch: Raise $350k for bitcash as first project on bitLauncher"
                             }
                           ]
@@ -267,7 +330,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Community Engagement Initiatives"
                             },
                             {
@@ -286,7 +351,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Launch of Development Initiatives"
                             },
                             {
@@ -305,7 +372,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Marketing Campaign Kick-off"
                             },
                             {
@@ -324,7 +393,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Initiation of the Antelope Chain Development"
                             },
                             {
@@ -343,7 +414,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "dBoard Launch"
                             },
                             {
@@ -362,7 +435,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "WebAuthn and Account Recovery Improvements"
                             },
                             {
@@ -407,7 +482,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Marketing and Community Building"
                             },
                             {
@@ -426,7 +503,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "bitLauncher Platform Enhancements"
                             },
                             {
@@ -445,7 +524,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Expansion of Infrastructure Solutions"
                             },
                             {
@@ -464,7 +545,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Launch of the Antelope Chain"
                             },
                             {
@@ -483,7 +566,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Minimalist Cryptocurrency Payment Wallet Launch"
                             },
                             {
@@ -518,7 +603,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Continuous Platform Improvement"
                             },
                             {
@@ -537,7 +624,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Strategic Partnerships and Collaborations"
                             },
                             {
@@ -556,7 +645,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Global Outreach and Adoption"
                             },
                             {
@@ -575,7 +666,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Research and Development"
                             },
                             {
@@ -625,8 +718,8 @@
       }
     ],
     "seo": {
-      "description": "Delineando el plan por fases de bitLauncher para el despliegue de tecnologia revolucionaria",
-      "title": "Hoja de Ruta Estrategica de bitLauncher",
+      "description": "Outlining bitLauncher's phased plan for groundbreaking technology deployment",
+      "title": "bitLauncher Strategic Roadmap",
       "twitterCard": null,
       "image": {
         "width": 700,
@@ -637,5 +730,7 @@
       }
     }
   },
-  "topics": ["launchpad"]
+  "topics": [
+    "launchpad"
+  ]
 }

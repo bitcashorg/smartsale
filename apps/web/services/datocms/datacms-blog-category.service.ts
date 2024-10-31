@@ -118,7 +118,7 @@ export async function getBlogCategory(
     })
 
     dataRecord = data[categoryRecordName as keyof typeof data] as BlogArticleRecord[]
-
+    console.log(dataRecord)
     if (!dataRecord.length) {
       throw new Error('No records has been found for  ' + category)
     }

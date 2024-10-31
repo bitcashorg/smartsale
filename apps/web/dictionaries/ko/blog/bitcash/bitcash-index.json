@@ -1,20 +1,22 @@
 {
   "sections": [
     {
-      "name": "런치패드",
+      "name": "launchpad",
       "slug": "launchpad",
       "articles": [
         {
           "id": "CD89KaoLSh6nQbiMhxX0EQ",
-          "topics": ["런치패드"],
-          "title": "신뢰와 무결성 보장: 규제 준수 및 보안 조치",
+          "topics": [
+            "launchpad"
+          ],
+          "title": "Ensuring Trust and Integrity: Regulatory Compliance and Security Measures",
           "slug": "ensuring-trust-and-integrity-regulatory-compliance-and-security-measures",
           "authorName": "Jun Dam",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
           },
           "_publishedAt": "2024-06-20T16:21:42+01:00",
-          "description": "이 섹션에서는 글로벌 규제 기준을 준수하고 고급 보안 조치를 구현하여 암호화폐 및 AI 분야에서 사용자를 위한 안전하고 규정을 준수하는 환경을 보장하는 당사 플랫폼의 선제적 접근 방식을 설명합니다.",
+          "description": "This section outlines our platform's proactive approach to adhering to global regulatory standards and implementing advanced security measures, ensuring a safe and compliant environment for users in the crypto and AI spaces.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1710562461-bitlauncherregsecimg.webp"
           },
@@ -34,15 +36,17 @@
         },
         {
           "id": "fbM-UqrYQXGhw6HB4C6swQ",
-          "topics": ["런치패드"],
-          "title": "전략적 로드맵: 블록체인 혁신과 AI 스타트업 성공의 선구자",
+          "topics": [
+            "launchpad"
+          ],
+          "title": "Strategic Roadmap: Pioneering Blockchain Innovation and AI Startup Success",
           "slug": "strategic-roadmap-pioneering-blockchain-innovation-and-ai-startup-success",
           "authorName": "Jun Dam",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
           },
           "_publishedAt": "2024-03-15T05:13:30+00:00",
-          "description": "bitLauncher의 획기적인 기술 배포, 커뮤니티 주도 성장, 그리고 공정한 Antelope 체인 개발을 위한 단계별 계획을 설명하여 AI와 암호화폐 분야에 혁명을 일으킵니다.",
+          "description": "Outlining bitLauncher's phased plan for groundbreaking technology deployment, community-driven growth, and the development of the equitable Antelope chain, to revolutionize the AI and cryptocurrency landscapes.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1710479575-roadmapbitlauncher.webp"
           },
@@ -62,15 +66,17 @@
         },
         {
           "id": "I4jShMnWRruvJgDbrucwDw",
-          "topics": ["런치패드"],
-          "title": "비트런처의 기술적 근간",
+          "topics": [
+            "launchpad"
+          ],
+          "title": "The Technological Backbone of bitLauncher",
           "slug": "the-technological-backbone-of-bitcash-launchpad",
           "authorName": "Jun Dam",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
           },
           "_publishedAt": "2024-03-14T05:33:20+00:00",
-          "description": "이 섹션에서는 비트런처가 비트캐시 결제, DAO 거버넌스, 비영리 블록체인 비전 등 최첨단 블록체인 기술과 혁신적인 도구를 통합하여 투명하고 안전하며 공정한 AI 스타트업 성장을 위한 기반을 마련하는 방법을 자세히 설명합니다.",
+          "description": "This section details bitLauncher's integration of cutting-edge blockchain technologies and innovative tools, including Bitcash payments, DAO governance, and a non-profit blockchain vision, setting the stage for transparent, secure, and equitable AI startup growth.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1710011354-techsectionwpimg.webp"
           },
@@ -90,15 +96,17 @@
         },
         {
           "id": "BEfgGhndSsCn5MBU89RO3A",
-          "topics": ["런치패드"],
-          "title": "혁신 역량 강화: bitLauncher의 비전, 사명 및 전략적 목표",
+          "topics": [
+            "launchpad"
+          ],
+          "title": "Empowering Innovation: Vision, Mission, and Strategic Goals of bitLauncher",
           "slug": "empowering-innovation-vision-mission-and-strategic-goals-of-bitcash-launchpad",
           "authorName": "Jun Dam",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
           },
           "_publishedAt": "2024-03-14T05:31:29+00:00",
-          "description": "이 섹션은 암호화폐를 통해 AI 혁신을 혁명화하려는 bitcash 런치패드의 비전을 설명하며, AI 개발을 민주화하려는 우리의 사명과 커뮤니티 주도의 투명하고 윤리적인 기술 미래를 만들기 위한 전략적 목표를 자세히 설명합니다.",
+          "description": "This section outlines bitcash Launchpad's vision to revolutionize AI innovation with cryptocurrency, detailing our mission to democratize AI development and our strategic goals for creating a community-driven, transparent, and ethical technological future.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1709370139-whitepaper-p4.webp"
           },
@@ -118,15 +126,20 @@
         },
         {
           "id": "NZeB3i5XRzuELW2UWBDyRQ",
-          "topics": ["연구", "다오", "자금 모금", "런치패드"],
-          "title": "융합의 항해: AI와 암호화폐 역학의 종합적 시장 분석",
+          "topics": [
+            "research",
+            "dao",
+            "fundraising",
+            "launchpad"
+          ],
+          "title": "Navigating the Convergence: A Comprehensive Market Analysis of AI and the Cryptocurrency Dynamic",
           "slug": "navigating-the-convergence-a-comprehensive-market-analysis-of-ai-and-cryptocurren",
           "authorName": "Jun Dam",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
           },
           "_publishedAt": "2024-03-14T05:30:05+00:00",
-          "description": "이 섹션은 AI와 암호화폐의 역동적인 교차점을 탐구하며, 주요 트렌드, 도전 과제 및 기회를 강조하고, 비트캐시 런치패드를 오픈소스 AI 프로젝트를 위한 선구적인 플랫폼으로 위치시킵니다.",
+          "description": "This section explores the dynamic intersection of AI and cryptocurrency, highlighting key trends, challenges, and opportunities, and positions bitcash Launchpad as a pioneering platform for open-source AI projects.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1709276586-marketanalysis-img2.webp"
           },
@@ -146,15 +159,19 @@
         },
         {
           "id": "VgGHDFI9T9qzTCHPAm5WLg",
-          "topics": ["다오", "자금 모금", "런치패드"],
-          "title": "차세대 오픈소스 AI 유니콘 기업 육성: 혁신적인 런치패드",
+          "topics": [
+            "dao",
+            "fundraising",
+            "launchpad"
+          ],
+          "title": "Empowering Next-Gen Open-Source AI Unicorns: A Revolutionary Launchpad ",
           "slug": "empowering-next-gen-open-source-ai-unicorns-a-revolutionary-launchpad",
           "authorName": "Jun Dam",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
           },
           "_publishedAt": "2024-03-14T05:28:42+00:00",
-          "description": "비트런처 백서 소개",
+          "description": "bitLauncher Whitepaper Introduction",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1709177635-whitepaperintroimage.webp"
           },
@@ -174,15 +191,17 @@
         },
         {
           "id": "MICfokr1TVuScAB4Qh9YGw",
-          "topics": ["런치패드"],
-          "title": "혁신 역량 강화: 비트캐시의 토큰노믹스와 자금 조달 전략",
+          "topics": [
+            "launchpad"
+          ],
+          "title": "Empowering Innovation: Tokenomics and Funding Strategy of bitcash",
           "slug": "empowering-innovation-tokenomics-and-funding-strategy-of-bitcash",
           "authorName": "Jun Dam",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
           },
           "_publishedAt": "2024-03-14T05:27:37+00:00",
-          "description": "이 섹션에서는 비트캐시의 발행 및 소각 유틸리티 토큰 모델과 공정한 자금 조달 및 가치 성장을 위한 전략적 접근 방식을 자세히 설명하며, 투명하고 지속 가능한 토큰노믹스로 AI 개발을 지원하는 런치패드의 사명을 뒷받침합니다.",
+          "description": "This section details bitcash's mint-and-burn utility token model and its strategic approach to equitable funding and value growth, underpinning the launchpad's mission to empower AI development with transparent and sustainable tokenomics.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1710053905-tokenomicswpimg.webp"
           },
@@ -202,15 +221,17 @@
         },
         {
           "id": "BSDdY8byQWipv749rApFRA",
-          "topics": ["런치패드"],
-          "title": "잠재력 해제: bitLauncher의 사용 사례와 응용",
+          "topics": [
+            "launchpad"
+          ],
+          "title": "Unlocking Potential: Use Cases and Applications of bitLauncher",
           "slug": "unlocking-potential-use-cases-and-applications-of-bitlauncher",
           "authorName": "Jun Dam",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
           },
           "_publishedAt": "2024-03-14T05:26:22+00:00",
-          "description": "이 섹션에서는 bitLauncer가 AI 스타트업 자금 조달과 글로벌 시장 접근을 어떻게 혁신하는지 탐구하며, 지속 가능한 오픈소스 모델, 전략적 스타트업 문화, 그리고 글로벌 투자자 생태계를 대상 사용 사례와 선구적인 Masterbots.ai 프로젝트를 통해 보여줍니다.",
+          "description": "This section explores how bitLauncer revolutionizes AI startup funding and global market access, showcasing sustainable open-source models, strategic startup culture, and the global investor ecosystem through targeted use cases and the pioneering Masterbots.ai project.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1710393954-usecaseappsimg.webp"
           },
@@ -231,20 +252,22 @@
       ]
     },
     {
-      "name": "사용법",
+      "name": "how_to",
       "slug": "how_to",
       "articles": [
         {
           "id": "H_DP7HFORBuw9rID5Jkhhw",
-          "topics": ["사용_방법"],
-          "title": "Bitcash에 등록하고 KYC를 하는 방법",
+          "topics": [
+            "how_to"
+          ],
+          "title": "How to Register and KYC to Bitcash",
           "slug": "how-to-register-and-kyc-to-bitcash",
           "authorName": "Roberto \"Andler\" Lucas",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1715639160-andler-file-photo.jpg"
           },
           "_publishedAt": "2024-06-20T16:20:40+01:00",
-          "description": "Bitcash 계정 등록, 계정 이름 및 추천인 설정, 기기 식별 및 보안, KYC를 위한 신원 확인 및 개인 정보 제공, KYC 인증을 위한 사진 촬영, 승인 대기 및 커뮤니티 가입 등 다양한 주제를 다룹니다.",
+          "description": "We are covering a range of topics, including registering for a Bitcash account, setting up an account name and referrer, identifying and securing devices, providing identification and personal information for KYC, taking photos for KYC verification, and waiting for approval and joining the community.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1715638953-bitcash-logo-frame-w-bg.png"
           },
@@ -265,20 +288,25 @@
       ]
     },
     {
-      "name": "연구",
+      "name": "research",
       "slug": "research",
       "articles": [
         {
           "id": "NZeB3i5XRzuELW2UWBDyRQ",
-          "topics": ["연구", "다오", "자금 모금", "런치패드"],
-          "title": "융합의 항해: AI와 암호화폐 역학의 종합적 시장 분석",
+          "topics": [
+            "research",
+            "dao",
+            "fundraising",
+            "launchpad"
+          ],
+          "title": "Navigating the Convergence: A Comprehensive Market Analysis of AI and the Cryptocurrency Dynamic",
           "slug": "navigating-the-convergence-a-comprehensive-market-analysis-of-ai-and-cryptocurren",
           "authorName": "Jun Dam",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
           },
           "_publishedAt": "2024-03-14T05:30:05+00:00",
-          "description": "이 섹션은 AI와 암호화폐의 역동적인 교차점을 탐구하며, 주요 트렌드, 도전 과제 및 기회를 강조하고, 비트캐시 런치패드를 오픈소스 AI 프로젝트를 위한 선구적인 플랫폼으로 위치시킵니다.",
+          "description": "This section explores the dynamic intersection of AI and cryptocurrency, highlighting key trends, challenges, and opportunities, and positions bitcash Launchpad as a pioneering platform for open-source AI projects.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1709276586-marketanalysis-img2.webp"
           },
@@ -299,20 +327,25 @@
       ]
     },
     {
-      "name": "다오",
+      "name": "dao",
       "slug": "dao",
       "articles": [
         {
           "id": "NZeB3i5XRzuELW2UWBDyRQ",
-          "topics": ["연구", "다오", "자금 모금", "런치패드"],
-          "title": "융합의 항해: AI와 암호화폐 역학의 종합적 시장 분석",
+          "topics": [
+            "research",
+            "dao",
+            "fundraising",
+            "launchpad"
+          ],
+          "title": "Navigating the Convergence: A Comprehensive Market Analysis of AI and the Cryptocurrency Dynamic",
           "slug": "navigating-the-convergence-a-comprehensive-market-analysis-of-ai-and-cryptocurren",
           "authorName": "Jun Dam",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
           },
           "_publishedAt": "2024-03-14T05:30:05+00:00",
-          "description": "이 섹션은 AI와 암호화폐의 역동적인 교차점을 탐구하며, 주요 트렌드, 도전 과제 및 기회를 강조하고, 비트캐시 런치패드를 오픈소스 AI 프로젝트를 위한 선구적인 플랫폼으로 위치시킵니다.",
+          "description": "This section explores the dynamic intersection of AI and cryptocurrency, highlighting key trends, challenges, and opportunities, and positions bitcash Launchpad as a pioneering platform for open-source AI projects.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1709276586-marketanalysis-img2.webp"
           },
@@ -332,15 +365,19 @@
         },
         {
           "id": "VgGHDFI9T9qzTCHPAm5WLg",
-          "topics": ["다오", "자금 모금", "런치패드"],
-          "title": "차세대 오픈소스 AI 유니콘 기업 육성: 혁신적인 런치패드",
+          "topics": [
+            "dao",
+            "fundraising",
+            "launchpad"
+          ],
+          "title": "Empowering Next-Gen Open-Source AI Unicorns: A Revolutionary Launchpad ",
           "slug": "empowering-next-gen-open-source-ai-unicorns-a-revolutionary-launchpad",
           "authorName": "Jun Dam",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
           },
           "_publishedAt": "2024-03-14T05:28:42+00:00",
-          "description": "비트런처 백서 소개",
+          "description": "bitLauncher Whitepaper Introduction",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1709177635-whitepaperintroimage.webp"
           },
@@ -361,20 +398,25 @@
       ]
     },
     {
-      "name": "자금 모금",
+      "name": "fundraising",
       "slug": "fundraising",
       "articles": [
         {
           "id": "NZeB3i5XRzuELW2UWBDyRQ",
-          "topics": ["연구", "다오", "자금 모금", "런치패드"],
-          "title": "융합의 항해: AI와 암호화폐 역학의 종합적 시장 분석",
+          "topics": [
+            "research",
+            "dao",
+            "fundraising",
+            "launchpad"
+          ],
+          "title": "Navigating the Convergence: A Comprehensive Market Analysis of AI and the Cryptocurrency Dynamic",
           "slug": "navigating-the-convergence-a-comprehensive-market-analysis-of-ai-and-cryptocurren",
           "authorName": "Jun Dam",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
           },
           "_publishedAt": "2024-03-14T05:30:05+00:00",
-          "description": "이 섹션은 AI와 암호화폐의 역동적인 교차점을 탐구하며, 주요 트렌드, 도전 과제 및 기회를 강조하고, 비트캐시 런치패드를 오픈소스 AI 프로젝트를 위한 선구적인 플랫폼으로 위치시킵니다.",
+          "description": "This section explores the dynamic intersection of AI and cryptocurrency, highlighting key trends, challenges, and opportunities, and positions bitcash Launchpad as a pioneering platform for open-source AI projects.",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1709276586-marketanalysis-img2.webp"
           },
@@ -394,15 +436,19 @@
         },
         {
           "id": "VgGHDFI9T9qzTCHPAm5WLg",
-          "topics": ["다오", "자금 모금", "런치패드"],
-          "title": "차세대 오픈소스 AI 유니콘 기업 육성: 혁신적인 런치패드",
+          "topics": [
+            "dao",
+            "fundraising",
+            "launchpad"
+          ],
+          "title": "Empowering Next-Gen Open-Source AI Unicorns: A Revolutionary Launchpad ",
           "slug": "empowering-next-gen-open-source-ai-unicorns-a-revolutionary-launchpad",
           "authorName": "Jun Dam",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
           },
           "_publishedAt": "2024-03-14T05:28:42+00:00",
-          "description": "비트런처 백서 소개",
+          "description": "bitLauncher Whitepaper Introduction",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1709177635-whitepaperintroimage.webp"
           },
@@ -423,20 +469,22 @@
       ]
     },
     {
-      "name": "비트코인",
+      "name": "bitcoin",
       "slug": "bitcoin",
       "articles": [
         {
           "id": "IZK5RRvqQFWba2TpHx2ckA",
-          "topics": ["비트코인"],
-          "title": "이 암호화폐와 AI 혁명을 위해 태어났다",
+          "topics": [
+            "bitcoin"
+          ],
+          "title": "Destined for this Crypto & AI Revolution",
           "slug": "destined-for-this-crypto-ai-revolution",
           "authorName": "Jun Dam",
           "authorPicture": {
             "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
           },
           "_publishedAt": "2024-02-14T13:04:49+00:00",
-          "description": "비트캐시 창립자 준 담의 여정",
+          "description": "bitcash Founder Jun Dam's journey. ",
           "thumbnail": {
             "url": "https://www.datocms-assets.com/101962/1707795626-bitcashg1.webp"
           },
@@ -464,8 +512,8 @@
       "title": "Bitcash | Bitcash Blog",
       "twitterCard": "summary_large_image"
     },
-    "description": "암호화폐 및 AI 벤처 분야에서 혁신을 점화하다",
-    "title": "비트캐시",
+    "description": "Igniting Innovation in Crypto & AI Ventures",
+    "title": "bitcash",
     "seoType": "bitcash",
     "id": "178642419",
     "_createdAt": "2023-07-24T18:43:32+01:00"

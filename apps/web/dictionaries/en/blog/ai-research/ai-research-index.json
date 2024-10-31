@@ -6,7 +6,13 @@
       "articles": [
         {
           "id": "198277124",
-          "topics": ["LLM", "Finance", "Healthcare", "Legal", "Prompting"],
+          "topics": [
+            "LLM",
+            "Finance",
+            "Healthcare",
+            "Legal",
+            "Prompting"
+          ],
           "title": "Adapting Large Language Models via Reading Comprehension",
           "slug": "adapting-large-language-models-via-reading-comprehension",
           "authorName": "Prof. Otto Nomos",
@@ -34,7 +40,10 @@
         },
         {
           "id": "198277342",
-          "topics": ["LLM", "Multilingual"],
+          "topics": [
+            "LLM",
+            "Multilingual"
+          ],
           "title": "OpenBA: An Open-sourced 15B Bilingual Asymmetric seq2seq Model Pre-trained from Scratch",
           "slug": "openba-an-open-sourced-15b-bilingual-asymmetric-seq2seq-model-pre-trained-from-sc",
           "authorName": "Prof. Otto Nomos",
@@ -62,7 +71,10 @@
         },
         {
           "id": "198277117",
-          "topics": ["LLM", "Retrieval"],
+          "topics": [
+            "LLM",
+            "Retrieval"
+          ],
           "title": "PDFTriage: Question Answering over Long, Structured Documents",
           "slug": "pdftriage-question-answering-over-long-structured-documents",
           "authorName": "Prof. Otto Nomos",
@@ -90,7 +102,10 @@
         },
         {
           "id": "198277138",
-          "topics": ["LLM", "Fine-tuning"],
+          "topics": [
+            "LLM",
+            "Fine-tuning"
+          ],
           "title": "Sorted LLaMA: Unlocking the Potential of Intermediate Layers of Large Language Models for Dynamic Inference Using Sorted Fine-Tuning (SoFT)",
           "slug": "sorted-llama-unlocking-the-potential-of-intermediate-layers-of-large-language-mod",
           "authorName": "Prof. Otto Nomos",
@@ -118,7 +133,11 @@
         },
         {
           "id": "198277150",
-          "topics": ["LLM", "Instruction Tuning", "Multimodal"],
+          "topics": [
+            "LLM",
+            "Instruction Tuning",
+            "Multimodal"
+          ],
           "title": "An Empirical Study of Scaling Instruct-Tuned Large Multimodal Models",
           "slug": "an-empirical-study-of-scaling-instruct-tuned-large-multimodal-models",
           "authorName": "Prof. Otto Nomos",
@@ -146,7 +165,11 @@
         },
         {
           "id": "198277160",
-          "topics": ["LLM", "Agents", "Gaming"],
+          "topics": [
+            "LLM",
+            "Agents",
+            "Gaming"
+          ],
           "title": "MindAgent: Emergent Gaming Interaction",
           "slug": "mindagent-emergent-gaming-interaction",
           "authorName": "Prof. Otto Nomos",
@@ -174,7 +197,10 @@
         },
         {
           "id": "198277196",
-          "topics": ["LLM", "Structured Data"],
+          "topics": [
+            "LLM",
+            "Structured Data"
+          ],
           "title": "Struc-Bench: Are Large Language Models Really Good at Generating Complex Structured Data?",
           "slug": "struc-bench-are-large-language-models-really-good-at-generating-complex-structure",
           "authorName": "Prof. Otto Nomos",
@@ -202,7 +228,11 @@
         },
         {
           "id": "198277217",
-          "topics": ["LLM", "Privacy", "Edge"],
+          "topics": [
+            "LLM",
+            "Privacy",
+            "Edge"
+          ],
           "title": "  Recovering from Privacy-Preserving Masking with Large Language Models",
           "slug": "recovering-from-privacy-preserving-masking-with-large-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -230,7 +260,10 @@
         },
         {
           "id": "198277239",
-          "topics": ["LLM", "Chat"],
+          "topics": [
+            "LLM",
+            "Chat"
+          ],
           "title": "S3-DST: Structured Open-Domain Dialogue Segmentation and State Tracking in the Era of LLMs",
           "slug": "s3-dst-structured-open-domain-dialogue-segmentation-and-state-tracking-in-the-era",
           "authorName": "Prof. Otto Nomos",
@@ -258,7 +291,10 @@
         },
         {
           "id": "198277253",
-          "topics": ["LLM", "Audio"],
+          "topics": [
+            "LLM",
+            "Audio"
+          ],
           "title": "Augmenting text for spoken language understanding with Large Language Models",
           "slug": "augmenting-text-for-spoken-language-understanding-with-large-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -286,7 +322,10 @@
         },
         {
           "id": "198277277",
-          "topics": ["LLM", "Compression"],
+          "topics": [
+            "LLM",
+            "Compression"
+          ],
           "title": "Language Modeling Is Compression",
           "slug": "language-modeling-is-compression",
           "authorName": "Prof. Otto Nomos",
@@ -314,7 +353,10 @@
         },
         {
           "id": "198277345",
-          "topics": ["LLM", "Multilingual"],
+          "topics": [
+            "LLM",
+            "Multilingual"
+          ],
           "title": "Baichuan 2: Open Large-scale Language Models",
           "slug": "baichuan-2-open-large-scale-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -342,7 +384,10 @@
         },
         {
           "id": "198277360",
-          "topics": ["LLM", "RLHF"],
+          "topics": [
+            "LLM",
+            "RLHF"
+          ],
           "title": "Stabilizing RLHF through Advantage Model and Selective Rehearsal",
           "slug": "stabilizing-rlhf-through-advantage-model-and-selective-rehearsal",
           "authorName": "Prof. Otto Nomos",
@@ -370,7 +415,10 @@
         },
         {
           "id": "198277446",
-          "topics": ["LLM", "Hallucination"],
+          "topics": [
+            "LLM",
+            "Hallucination"
+          ],
           "title": "Chain-of-Verification Reduces Hallucination in Large Language Models",
           "slug": "chain-of-verification-reduces-hallucination-in-large-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -398,7 +446,12 @@
         },
         {
           "id": "198277458",
-          "topics": ["LLM", "Hallucination", "Entity", "Structured Data"],
+          "topics": [
+            "LLM",
+            "Hallucination",
+            "Entity",
+            "Structured Data"
+          ],
           "title": "LMDX: Language Model-based Document Information Extraction and Localization",
           "slug": "lmdx-language-model-based-document-information-extraction-and-localization",
           "authorName": "Prof. Otto Nomos",
@@ -426,7 +479,10 @@
         },
         {
           "id": "198277209",
-          "topics": ["LLM", "Data"],
+          "topics": [
+            "LLM",
+            "Data"
+          ],
           "title": "  SlimPajama-DC: Understanding Data Combinations for LLM Training",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -454,7 +510,10 @@
         },
         {
           "id": "198277109",
-          "topics": ["LLM", "Reasoning"],
+          "topics": [
+            "LLM",
+            "Reasoning"
+          ],
           "title": "Contrastive Decoding Improves Reasoning in Large Language Models",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -482,7 +541,11 @@
         },
         {
           "id": "198277099",
-          "topics": ["LLM", "Multilingual", "Data"],
+          "topics": [
+            "LLM",
+            "Multilingual",
+            "Data"
+          ],
           "title": "CulturaX: A Cleaned, Enormous, and Multilingual Dataset for Large Language Models in 167 Languages",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -510,7 +573,11 @@
         },
         {
           "id": "198044929",
-          "topics": ["LLM", "Data", "Agents"],
+          "topics": [
+            "LLM",
+            "Data",
+            "Agents"
+          ],
           "title": "A Data Source for Reasoning Embodied Agents",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -538,7 +605,11 @@
         },
         {
           "id": "198044900",
-          "topics": ["LLM", "Entity", "Fine-tuning"],
+          "topics": [
+            "LLM",
+            "Entity",
+            "Fine-tuning"
+          ],
           "title": "Leveraging Contextual Information for Effective Entity Salience Detection",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -566,7 +637,10 @@
         },
         {
           "id": "198044892",
-          "topics": ["LLM", "Agents"],
+          "topics": [
+            "LLM",
+            "Agents"
+          ],
           "title": "LASER: LLM Agent with State-Space Exploration for Web Navigation",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -594,7 +668,11 @@
         },
         {
           "id": "198044879",
-          "topics": ["LLM", "Transformers", "Interpretability"],
+          "topics": [
+            "LLM",
+            "Transformers",
+            "Interpretability"
+          ],
           "title": "Sparse Autoencoders Find Highly Interpretable Features in Language Models",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -622,7 +700,10 @@
         },
         {
           "id": "198044802",
-          "topics": ["LLM", "Chat"],
+          "topics": [
+            "LLM",
+            "Chat"
+          ],
           "title": "Investigating Answerability of LLMs for Long-Form Question Answering",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -650,7 +731,11 @@
         },
         {
           "id": "198044746",
-          "topics": ["LLM", "Transformers", "Training"],
+          "topics": [
+            "LLM",
+            "Transformers",
+            "Training"
+          ],
           "title": "Scaling Laws for Sparsely-Connected Foundation Models",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -678,7 +763,10 @@
         },
         {
           "id": "197990774",
-          "topics": ["LLM", "Prompting"],
+          "topics": [
+            "LLM",
+            "Prompting"
+          ],
           "title": "Connecting Large Language Models with Evolutionary Algorithms Yields Powerful Prompt Optimizers",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -706,7 +794,10 @@
         },
         {
           "id": "197990754",
-          "topics": ["LLM", "In-Context Learning"],
+          "topics": [
+            "LLM",
+            "In-Context Learning"
+          ],
           "title": "Ambiguity-Aware In-Context Learning with Large Language Models",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -734,7 +825,11 @@
         },
         {
           "id": "197842432",
-          "topics": ["LLM", "Evaluation", "Multilingual"],
+          "topics": [
+            "LLM",
+            "Evaluation",
+            "Multilingual"
+          ],
           "title": "Are Large Language Model-based Evaluators the Solution to Scaling Up Multilingual Evaluation?",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -762,7 +857,11 @@
         },
         {
           "id": "197990687",
-          "topics": ["LLM", "Healthcare", "Summarization"],
+          "topics": [
+            "LLM",
+            "Healthcare",
+            "Summarization"
+          ],
           "title": "Clinical Text Summarization: Adapting Large Language Models Can Outperform Human Experts",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
@@ -790,7 +889,10 @@
         },
         {
           "id": "197990671",
-          "topics": ["LLM", "Agents"],
+          "topics": [
+            "LLM",
+            "Agents"
+          ],
           "title": "Agents: An Open-source Framework for Autonomous Language Agents",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -818,7 +920,11 @@
         },
         {
           "id": "197990654",
-          "topics": ["LLM", "RLHF", "Reinforcement Learning"],
+          "topics": [
+            "LLM",
+            "RLHF",
+            "Reinforcement Learning"
+          ],
           "title": "Statistical Rejection Sampling Improves Preference Optimization",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -846,7 +952,10 @@
         },
         {
           "id": "197859672",
-          "topics": ["LLM", "Code"],
+          "topics": [
+            "LLM",
+            "Code"
+          ],
           "title": "Large Language Models for Compiler Optimization",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -874,7 +983,10 @@
         },
         {
           "id": "197840057",
-          "topics": ["LLM", "Science"],
+          "topics": [
+            "LLM",
+            "Science"
+          ],
           "title": "AstroLLaMA: Towards Specialized Foundation Models in Astronomy",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -902,7 +1014,11 @@
         },
         {
           "id": "197838596",
-          "topics": ["LLM", "Math", "Science"],
+          "topics": [
+            "LLM",
+            "Math",
+            "Science"
+          ],
           "title": "Large Language Model for Science: A Study on P vs. NP",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -930,7 +1046,9 @@
         },
         {
           "id": "197836858",
-          "topics": ["LLM"],
+          "topics": [
+            "LLM"
+          ],
           "title": "Efficient Memory Management for Large Language Model Serving with PagedAttention",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -958,7 +1076,11 @@
         },
         {
           "id": "197817281",
-          "topics": ["LLM", "In-Context Learning", "Fine-tuning"],
+          "topics": [
+            "LLM",
+            "In-Context Learning",
+            "Fine-tuning"
+          ],
           "title": "FIAT: Fusing learning paradigms with Instruction-Accelerated Tuning",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -986,7 +1108,9 @@
         },
         {
           "id": "197815488",
-          "topics": ["LLM"],
+          "topics": [
+            "LLM"
+          ],
           "title": "Optimize Weight Rounding via Signed Gradient Descent for the Quantization of LLMs",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -1014,7 +1138,10 @@
         },
         {
           "id": "197813719",
-          "topics": ["LLM", "Data"],
+          "topics": [
+            "LLM",
+            "Data"
+          ],
           "title": "When Less is More: Investigating Data Pruning for Pretraining LLMs at Scale",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1042,7 +1169,9 @@
         },
         {
           "id": "197812286",
-          "topics": ["LLM"],
+          "topics": [
+            "LLM"
+          ],
           "title": "Neurons in Large Language Models: Dead, N-gram, Positional",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -1070,7 +1199,10 @@
         },
         {
           "id": "197810544",
-          "topics": ["LLM", "Open Source"],
+          "topics": [
+            "LLM",
+            "Open Source"
+          ],
           "title": "Textbooks Are All You Need II: phi-1.5 technical report",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1098,7 +1230,11 @@
         },
         {
           "id": "197621737",
-          "topics": ["LLM", "Prompting", "Summarization"],
+          "topics": [
+            "LLM",
+            "Prompting",
+            "Summarization"
+          ],
           "title": "DrugChat: Towards Enabling ChatGPT-Like Capabilities on Drug Molecule Graphs",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1126,7 +1262,11 @@
         },
         {
           "id": "197621634",
-          "topics": ["LLM", "Prompting", "Summarization"],
+          "topics": [
+            "LLM",
+            "Prompting",
+            "Summarization"
+          ],
           "title": "From Sparse to Dense: GPT-4 Summarization with Chain of Density Prompting",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1154,7 +1294,11 @@
         },
         {
           "id": "197621519",
-          "topics": ["LLM", "Open Source", "Instruction Tuning"],
+          "topics": [
+            "LLM",
+            "Open Source",
+            "Instruction Tuning"
+          ],
           "title": "XGen-7B Technical Report",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
@@ -1182,7 +1326,10 @@
         },
         {
           "id": "197621178",
-          "topics": ["LLM", "Prompting"],
+          "topics": [
+            "LLM",
+            "Prompting"
+          ],
           "title": "DoLa: Decoding by Contrasting Layers Improves Factuality in Large Language Models",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1210,7 +1357,10 @@
         },
         {
           "id": "197621439",
-          "topics": ["LLM", "Math"],
+          "topics": [
+            "LLM",
+            "Math"
+          ],
           "title": "GPT Can Solve Mathematical Problems Without a Calculator",
           "slug": "transformer-models-an-introduction-and-catalog",
           "authorName": "Prof. Otto Nomos",
@@ -1238,7 +1388,10 @@
         },
         {
           "id": "197621128",
-          "topics": ["LLM", "Prompting"],
+          "topics": [
+            "LLM",
+            "Prompting"
+          ],
           "title": "Large Language Models as Optimizers",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1266,7 +1419,10 @@
         },
         {
           "id": "197613974",
-          "topics": ["LLM", "RLHF"],
+          "topics": [
+            "LLM",
+            "RLHF"
+          ],
           "title": "Efficient RLHF: Reducing the Memory Usage of PPO",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1294,7 +1450,11 @@
         },
         {
           "id": "197559951",
-          "topics": ["LLM", "Agents", "Tools"],
+          "topics": [
+            "LLM",
+            "Agents",
+            "Tools"
+          ],
           "title": "ModelScope-Agent: Building Your Customizable Agent System with Open-source Large Language Models",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1322,7 +1482,11 @@
         },
         {
           "id": "180403467",
-          "topics": ["LLM", "RLHF", "Summary"],
+          "topics": [
+            "LLM",
+            "RLHF",
+            "Summary"
+          ],
           "title": "Open Problems and Fundamental Limitations of Reinforcement Learning from Human Feedback [Summary]",
           "slug": "open-problems-and-fundamental-limitations-of-reinforcement-learning-from-human-fe",
           "authorName": "Prof. Otto Nomos",
@@ -1350,7 +1514,10 @@
         },
         {
           "id": "180869081",
-          "topics": ["LLM", "Summary"],
+          "topics": [
+            "LLM",
+            "Summary"
+          ],
           "title": "Llama 2: Open Foundation and Fine-Tuned Chat Models [Commentary]",
           "slug": "llama-2-open-foundation-and-fine-tuned-chat-models-commentary",
           "authorName": "Prof. Otto Nomos",
@@ -1378,7 +1545,10 @@
         },
         {
           "id": "179737945",
-          "topics": ["LLM", "Summary"],
+          "topics": [
+            "LLM",
+            "Summary"
+          ],
           "title": "Challenges and Applications of Large Language Models [Summary]",
           "slug": "challenges-and-applications-of-large-language-models-summary",
           "authorName": "Prof. Otto Nomos",
@@ -1406,7 +1576,11 @@
         },
         {
           "id": "180927998",
-          "topics": ["LLM", "Commentary", "LORA"],
+          "topics": [
+            "LLM",
+            "Commentary",
+            "LORA"
+          ],
           "title": "LoraHub: Efficient Cross-Task Generalization Via Dynamic LoRA Composition [Commentary]",
           "slug": "lorahub-efficient-cross-task-generalization-via-dynamic-lora-composition-commenta",
           "authorName": "Prof. Otto Nomos",
@@ -1434,7 +1608,11 @@
         },
         {
           "id": "180928004",
-          "topics": ["LLM", "Tools", "Commentary"],
+          "topics": [
+            "LLM",
+            "Tools",
+            "Commentary"
+          ],
           "title": "ToolLLM: Facilitating Large Language Models To Master 16000+ Real-World APIs [Commentary]",
           "slug": "toolllm-facilitating-large-language-models-to-master-16000-real-world-apis-commen",
           "authorName": "Prof. Otto Nomos",
@@ -1462,7 +1640,10 @@
         },
         {
           "id": "189989705",
-          "topics": ["LLM", "Tools"],
+          "topics": [
+            "LLM",
+            "Tools"
+          ],
           "title": "FacTool: Factuality Detection in Generative AI -- A Tool Augmented Framework for Multi-Task and Multi-Domain Scenarios",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1490,7 +1671,11 @@
         },
         {
           "id": "189849326",
-          "topics": ["LLM", "Prompting", "Reasoning"],
+          "topics": [
+            "LLM",
+            "Prompting",
+            "Reasoning"
+          ],
           "title": "Graph of Thoughts: Solving Elaborate Problems with Large Language Models",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1518,7 +1703,9 @@
         },
         {
           "id": "189849276",
-          "topics": ["LLM"],
+          "topics": [
+            "LLM"
+          ],
           "title": "Efficient Guided Generation for Large Language Models",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1546,7 +1733,10 @@
         },
         {
           "id": "189849263",
-          "topics": ["LLM", "Healthcare"],
+          "topics": [
+            "LLM",
+            "Healthcare"
+          ],
           "title": "Predicting transcriptional outcomes of novel multigene perturbations with GEARS ",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1574,7 +1764,11 @@
         },
         {
           "id": "189845558",
-          "topics": ["LLM", "Compression", "Survey"],
+          "topics": [
+            "LLM",
+            "Compression",
+            "Survey"
+          ],
           "title": "A Survey on Model Compression for Large Language Models",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1602,7 +1796,11 @@
         },
         {
           "id": "189845521",
-          "topics": ["LLM", "Training", "Alignment"],
+          "topics": [
+            "LLM",
+            "Training",
+            "Alignment"
+          ],
           "title": "From Pretraining Data to Language Models to Downstream Tasks: Tracking the Trails of Political Biases Leading to Unfair NLP Models",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1630,7 +1828,10 @@
         },
         {
           "id": "189787126",
-          "topics": ["LLM", "Code"],
+          "topics": [
+            "LLM",
+            "Code"
+          ],
           "title": "LLM As DBA",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -1658,7 +1859,10 @@
         },
         {
           "id": "189845549",
-          "topics": ["LLM", "Instruction Tuning"],
+          "topics": [
+            "LLM",
+            "Instruction Tuning"
+          ],
           "title": "Self-Alignment with Instruction Backtranslation",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -1686,7 +1890,10 @@
         },
         {
           "id": "189845519",
-          "topics": ["LLM", "RLHF"],
+          "topics": [
+            "LLM",
+            "RLHF"
+          ],
           "title": "RLAIF: Scaling Reinforcement Learning from Human Feedback with AI Feedback",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1714,7 +1921,9 @@
         },
         {
           "id": "189792745",
-          "topics": ["LLM"],
+          "topics": [
+            "LLM"
+          ],
           "title": "Large Content And Behavior Models To Understand, Simulate, And Optimize Content And Behavior",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1742,7 +1951,11 @@
         },
         {
           "id": "189787194",
-          "topics": ["LLM", "Code", "Healthcare"],
+          "topics": [
+            "LLM",
+            "Code",
+            "Healthcare"
+          ],
           "title": "BioCoder: A Benchmark for Bioinformatics Code Generation with Contextual Pragmatic Knowledge",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1770,7 +1983,11 @@
         },
         {
           "id": "189787170",
-          "topics": ["LLM", "Multilingual", "Evaluation"],
+          "topics": [
+            "LLM",
+            "Multilingual",
+            "Evaluation"
+          ],
           "title": "The Belebele Benchmark: a Parallel Reading Comprehension Dataset in 122 Language Variants",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
@@ -1798,7 +2015,11 @@
         },
         {
           "id": "189787192",
-          "topics": ["LLM", "Code", "Instruction Tuning"],
+          "topics": [
+            "LLM",
+            "Code",
+            "Instruction Tuning"
+          ],
           "title": "Can Programming Languages Boost Each Other via Instruction Tuning?",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1826,7 +2047,11 @@
         },
         {
           "id": "189787190",
-          "topics": ["LLM", "Evaluation", "Climate"],
+          "topics": [
+            "LLM",
+            "Evaluation",
+            "Climate"
+          ],
           "title": "WeatherBench 2: A benchmark for the next generation of data-driven global weather models",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1854,7 +2079,10 @@
         },
         {
           "id": "189787181",
-          "topics": ["LLM", "Multilingual"],
+          "topics": [
+            "LLM",
+            "Multilingual"
+          ],
           "title": "Jais and Jais-chat: Arabic-Centric Foundation and Instruction-Tuned Open Generative Large Language Models",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1882,7 +2110,11 @@
         },
         {
           "id": "189787168",
-          "topics": ["LLM", "Instruction Tuning", "Healthcare"],
+          "topics": [
+            "LLM",
+            "Instruction Tuning",
+            "Healthcare"
+          ],
           "title": "MedAlign: A Clinician-Generated Dataset for Instruction Following with Electronic Medical Records",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1910,7 +2142,11 @@
         },
         {
           "id": "189777823",
-          "topics": ["LLM", "Code", "Chat"],
+          "topics": [
+            "LLM",
+            "Code",
+            "Chat"
+          ],
           "title": "SoTaNa: The Open-Source Software Development Assistant",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
@@ -1938,7 +2174,10 @@
         },
         {
           "id": "189787150",
-          "topics": ["LLM", "Personalization"],
+          "topics": [
+            "LLM",
+            "Personalization"
+          ],
           "title": "Teach LLMs to Personalize -- An Approach inspired by Writing Education",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1966,7 +2205,11 @@
         },
         {
           "id": "189787148",
-          "topics": ["Retrieval", "LLM", "In-Context Learning"],
+          "topics": [
+            "Retrieval",
+            "LLM",
+            "In-Context Learning"
+          ],
           "title": "RAVEN: In-Context Learning with Retrieval Augmented Encoder-Decoder Language Models",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1994,7 +2237,11 @@
         },
         {
           "id": "189787144",
-          "topics": ["LLM", "Code", "Prompting"],
+          "topics": [
+            "LLM",
+            "Code",
+            "Prompting"
+          ],
           "title": "Solving Challenging Math Word Problems Using GPT-4 Code Interpreter with Code-based Self-Verification",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2022,7 +2269,11 @@
         },
         {
           "id": "189787113",
-          "topics": ["LLM", "Prompting", "Multilingual"],
+          "topics": [
+            "LLM",
+            "Prompting",
+            "Multilingual"
+          ],
           "title": "The Devil is in the Errors: Leveraging Large Language Models for Fine-grained Machine Translation Evaluation",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2050,7 +2301,10 @@
         },
         {
           "id": "189777847",
-          "topics": ["LLM", "In-Context Learning"],
+          "topics": [
+            "LLM",
+            "In-Context Learning"
+          ],
           "title": "CausalLM is not optimal for in-context learning",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -2078,7 +2332,12 @@
         },
         {
           "id": "189787086",
-          "topics": ["LLM", "Fine-tuning", "LORA", "Data"],
+          "topics": [
+            "LLM",
+            "Fine-tuning",
+            "LORA",
+            "Data"
+          ],
           "title": "Platypus: Quick, Cheap, and Powerful Refinement of LLMs",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2106,7 +2365,11 @@
         },
         {
           "id": "189777877",
-          "topics": ["LLM", "Code", "Instruction Tuning"],
+          "topics": [
+            "LLM",
+            "Code",
+            "Instruction Tuning"
+          ],
           "title": "OctoPack: Instruction Tuning Code Large Language Models",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2134,7 +2397,10 @@
         },
         {
           "id": "189777872",
-          "topics": ["LLM", "Code"],
+          "topics": [
+            "LLM",
+            "Code"
+          ],
           "title": "Enhancing Network Management Using Code Generated by Large Language Models",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2162,7 +2428,12 @@
         },
         {
           "id": "189777849",
-          "topics": ["Audio", "LLM", "Multimodal", "Multilingual"],
+          "topics": [
+            "Audio",
+            "LLM",
+            "Multimodal",
+            "Multilingual"
+          ],
           "title": "Improving Joint Speech-Text Representations Without Alignment",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2190,7 +2461,10 @@
         },
         {
           "id": "189777845",
-          "topics": ["LLM", "Agents"],
+          "topics": [
+            "LLM",
+            "Agents"
+          ],
           "title": "BOLAA: Benchmarking and Orchestrating LLM-augmented Autonomous Agents",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2218,7 +2492,11 @@
         },
         {
           "id": "189775948",
-          "topics": ["LLM", "Chat", "Data"],
+          "topics": [
+            "LLM",
+            "Chat",
+            "Data"
+          ],
           "title": "PIPPA: A Partially Synthetic Conversational Dataset",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2246,7 +2524,10 @@
         },
         {
           "id": "189777825",
-          "topics": ["LLM", "Instruction Tuning"],
+          "topics": [
+            "LLM",
+            "Instruction Tuning"
+          ],
           "title": "Self-Alignment with Instruction Backtranslation",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -2274,7 +2555,10 @@
         },
         {
           "id": "189577785",
-          "topics": ["LLM", "Healthcare"],
+          "topics": [
+            "LLM",
+            "Healthcare"
+          ],
           "title": "OpenProteinSet: Training data for structural biology at scale",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
@@ -2302,7 +2586,12 @@
         },
         {
           "id": "189577629",
-          "topics": ["LLM", "Alignment", "Survey", "Evaluation"],
+          "topics": [
+            "LLM",
+            "Alignment",
+            "Survey",
+            "Evaluation"
+          ],
           "title": "Trustworthy LLMs: a Survey and Guideline for Evaluating Large Language Models' Alignment",
           "slug": "trustworthy-llms-a-survey-and-guideline-for-evaluating-large-language-models-alig",
           "authorName": "Prof. Otto Nomos",
@@ -2330,7 +2619,10 @@
         },
         {
           "id": "189576091",
-          "topics": ["LLM", "Inference"],
+          "topics": [
+            "LLM",
+            "Inference"
+          ],
           "title": "Accelerating LLM Inference with Staged Speculative Decoding",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -2358,7 +2650,11 @@
         },
         {
           "id": "189576084",
-          "topics": ["LLM", "Data", "Training"],
+          "topics": [
+            "LLM",
+            "Data",
+            "Training"
+          ],
           "title": "Shepherd: A Critic for Language Model Generation",
           "slug": "shepherd-a-critic-for-language-model-generation",
           "authorName": "Prof. Otto Nomos",
@@ -2386,7 +2682,10 @@
         },
         {
           "id": "189576080",
-          "topics": ["LLM", "Legal"],
+          "topics": [
+            "LLM",
+            "Legal"
+          ],
           "title": "SILO Language Models: Isolating Legal Risk In a Nonparametric Datastore",
           "slug": "silo-language-models-isolating-legal-risk-in-a-nonparametric-datastore",
           "authorName": "Prof. Otto Nomos",
@@ -2414,7 +2713,10 @@
         },
         {
           "id": "189576058",
-          "topics": ["LLM", "Alignment"],
+          "topics": [
+            "LLM",
+            "Alignment"
+          ],
           "title": "Simple synthetic data reduces sycophancy in large language models",
           "slug": "simple-synthetic-data-reduces-sycophancy-in-large-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -2448,7 +2750,13 @@
       "articles": [
         {
           "id": "198277124",
-          "topics": ["LLM", "Finance", "Healthcare", "Legal", "Prompting"],
+          "topics": [
+            "LLM",
+            "Finance",
+            "Healthcare",
+            "Legal",
+            "Prompting"
+          ],
           "title": "Adapting Large Language Models via Reading Comprehension",
           "slug": "adapting-large-language-models-via-reading-comprehension",
           "authorName": "Prof. Otto Nomos",
@@ -2482,7 +2790,13 @@
       "articles": [
         {
           "id": "198277124",
-          "topics": ["LLM", "Finance", "Healthcare", "Legal", "Prompting"],
+          "topics": [
+            "LLM",
+            "Finance",
+            "Healthcare",
+            "Legal",
+            "Prompting"
+          ],
           "title": "Adapting Large Language Models via Reading Comprehension",
           "slug": "adapting-large-language-models-via-reading-comprehension",
           "authorName": "Prof. Otto Nomos",
@@ -2510,7 +2824,11 @@
         },
         {
           "id": "197990687",
-          "topics": ["LLM", "Healthcare", "Summarization"],
+          "topics": [
+            "LLM",
+            "Healthcare",
+            "Summarization"
+          ],
           "title": "Clinical Text Summarization: Adapting Large Language Models Can Outperform Human Experts",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
@@ -2538,7 +2856,10 @@
         },
         {
           "id": "189849263",
-          "topics": ["LLM", "Healthcare"],
+          "topics": [
+            "LLM",
+            "Healthcare"
+          ],
           "title": "Predicting transcriptional outcomes of novel multigene perturbations with GEARS ",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2566,7 +2887,11 @@
         },
         {
           "id": "189787194",
-          "topics": ["LLM", "Code", "Healthcare"],
+          "topics": [
+            "LLM",
+            "Code",
+            "Healthcare"
+          ],
           "title": "BioCoder: A Benchmark for Bioinformatics Code Generation with Contextual Pragmatic Knowledge",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2594,7 +2919,11 @@
         },
         {
           "id": "189787168",
-          "topics": ["LLM", "Instruction Tuning", "Healthcare"],
+          "topics": [
+            "LLM",
+            "Instruction Tuning",
+            "Healthcare"
+          ],
           "title": "MedAlign: A Clinician-Generated Dataset for Instruction Following with Electronic Medical Records",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2622,7 +2951,10 @@
         },
         {
           "id": "189577785",
-          "topics": ["LLM", "Healthcare"],
+          "topics": [
+            "LLM",
+            "Healthcare"
+          ],
           "title": "OpenProteinSet: Training data for structural biology at scale",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
@@ -2656,7 +2988,13 @@
       "articles": [
         {
           "id": "198277124",
-          "topics": ["LLM", "Finance", "Healthcare", "Legal", "Prompting"],
+          "topics": [
+            "LLM",
+            "Finance",
+            "Healthcare",
+            "Legal",
+            "Prompting"
+          ],
           "title": "Adapting Large Language Models via Reading Comprehension",
           "slug": "adapting-large-language-models-via-reading-comprehension",
           "authorName": "Prof. Otto Nomos",
@@ -2684,7 +3022,10 @@
         },
         {
           "id": "189576080",
-          "topics": ["LLM", "Legal"],
+          "topics": [
+            "LLM",
+            "Legal"
+          ],
           "title": "SILO Language Models: Isolating Legal Risk In a Nonparametric Datastore",
           "slug": "silo-language-models-isolating-legal-risk-in-a-nonparametric-datastore",
           "authorName": "Prof. Otto Nomos",
@@ -2718,7 +3059,13 @@
       "articles": [
         {
           "id": "198277124",
-          "topics": ["LLM", "Finance", "Healthcare", "Legal", "Prompting"],
+          "topics": [
+            "LLM",
+            "Finance",
+            "Healthcare",
+            "Legal",
+            "Prompting"
+          ],
           "title": "Adapting Large Language Models via Reading Comprehension",
           "slug": "adapting-large-language-models-via-reading-comprehension",
           "authorName": "Prof. Otto Nomos",
@@ -2746,7 +3093,10 @@
         },
         {
           "id": "197990774",
-          "topics": ["LLM", "Prompting"],
+          "topics": [
+            "LLM",
+            "Prompting"
+          ],
           "title": "Connecting Large Language Models with Evolutionary Algorithms Yields Powerful Prompt Optimizers",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2774,7 +3124,11 @@
         },
         {
           "id": "197621737",
-          "topics": ["LLM", "Prompting", "Summarization"],
+          "topics": [
+            "LLM",
+            "Prompting",
+            "Summarization"
+          ],
           "title": "DrugChat: Towards Enabling ChatGPT-Like Capabilities on Drug Molecule Graphs",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2802,7 +3156,11 @@
         },
         {
           "id": "197621634",
-          "topics": ["LLM", "Prompting", "Summarization"],
+          "topics": [
+            "LLM",
+            "Prompting",
+            "Summarization"
+          ],
           "title": "From Sparse to Dense: GPT-4 Summarization with Chain of Density Prompting",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2830,7 +3188,10 @@
         },
         {
           "id": "197621178",
-          "topics": ["LLM", "Prompting"],
+          "topics": [
+            "LLM",
+            "Prompting"
+          ],
           "title": "DoLa: Decoding by Contrasting Layers Improves Factuality in Large Language Models",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2858,7 +3219,10 @@
         },
         {
           "id": "197621128",
-          "topics": ["LLM", "Prompting"],
+          "topics": [
+            "LLM",
+            "Prompting"
+          ],
           "title": "Large Language Models as Optimizers",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2886,7 +3250,11 @@
         },
         {
           "id": "189849326",
-          "topics": ["LLM", "Prompting", "Reasoning"],
+          "topics": [
+            "LLM",
+            "Prompting",
+            "Reasoning"
+          ],
           "title": "Graph of Thoughts: Solving Elaborate Problems with Large Language Models",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2914,7 +3282,11 @@
         },
         {
           "id": "189787144",
-          "topics": ["LLM", "Code", "Prompting"],
+          "topics": [
+            "LLM",
+            "Code",
+            "Prompting"
+          ],
           "title": "Solving Challenging Math Word Problems Using GPT-4 Code Interpreter with Code-based Self-Verification",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2942,7 +3314,11 @@
         },
         {
           "id": "189787113",
-          "topics": ["LLM", "Prompting", "Multilingual"],
+          "topics": [
+            "LLM",
+            "Prompting",
+            "Multilingual"
+          ],
           "title": "The Devil is in the Errors: Leveraging Large Language Models for Fine-grained Machine Translation Evaluation",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2976,7 +3352,10 @@
       "articles": [
         {
           "id": "198277342",
-          "topics": ["LLM", "Multilingual"],
+          "topics": [
+            "LLM",
+            "Multilingual"
+          ],
           "title": "OpenBA: An Open-sourced 15B Bilingual Asymmetric seq2seq Model Pre-trained from Scratch",
           "slug": "openba-an-open-sourced-15b-bilingual-asymmetric-seq2seq-model-pre-trained-from-sc",
           "authorName": "Prof. Otto Nomos",
@@ -3004,7 +3383,10 @@
         },
         {
           "id": "198277345",
-          "topics": ["LLM", "Multilingual"],
+          "topics": [
+            "LLM",
+            "Multilingual"
+          ],
           "title": "Baichuan 2: Open Large-scale Language Models",
           "slug": "baichuan-2-open-large-scale-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -3032,7 +3414,11 @@
         },
         {
           "id": "198277099",
-          "topics": ["LLM", "Multilingual", "Data"],
+          "topics": [
+            "LLM",
+            "Multilingual",
+            "Data"
+          ],
           "title": "CulturaX: A Cleaned, Enormous, and Multilingual Dataset for Large Language Models in 167 Languages",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3060,7 +3446,11 @@
         },
         {
           "id": "197842432",
-          "topics": ["LLM", "Evaluation", "Multilingual"],
+          "topics": [
+            "LLM",
+            "Evaluation",
+            "Multilingual"
+          ],
           "title": "Are Large Language Model-based Evaluators the Solution to Scaling Up Multilingual Evaluation?",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -3088,7 +3478,11 @@
         },
         {
           "id": "189787170",
-          "topics": ["LLM", "Multilingual", "Evaluation"],
+          "topics": [
+            "LLM",
+            "Multilingual",
+            "Evaluation"
+          ],
           "title": "The Belebele Benchmark: a Parallel Reading Comprehension Dataset in 122 Language Variants",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
@@ -3116,7 +3510,10 @@
         },
         {
           "id": "189787181",
-          "topics": ["LLM", "Multilingual"],
+          "topics": [
+            "LLM",
+            "Multilingual"
+          ],
           "title": "Jais and Jais-chat: Arabic-Centric Foundation and Instruction-Tuned Open Generative Large Language Models",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3144,7 +3541,11 @@
         },
         {
           "id": "189787113",
-          "topics": ["LLM", "Prompting", "Multilingual"],
+          "topics": [
+            "LLM",
+            "Prompting",
+            "Multilingual"
+          ],
           "title": "The Devil is in the Errors: Leveraging Large Language Models for Fine-grained Machine Translation Evaluation",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3172,7 +3573,12 @@
         },
         {
           "id": "189777849",
-          "topics": ["Audio", "LLM", "Multimodal", "Multilingual"],
+          "topics": [
+            "Audio",
+            "LLM",
+            "Multimodal",
+            "Multilingual"
+          ],
           "title": "Improving Joint Speech-Text Representations Without Alignment",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3206,7 +3612,10 @@
       "articles": [
         {
           "id": "198277117",
-          "topics": ["LLM", "Retrieval"],
+          "topics": [
+            "LLM",
+            "Retrieval"
+          ],
           "title": "PDFTriage: Question Answering over Long, Structured Documents",
           "slug": "pdftriage-question-answering-over-long-structured-documents",
           "authorName": "Prof. Otto Nomos",
@@ -3234,7 +3643,11 @@
         },
         {
           "id": "189787148",
-          "topics": ["Retrieval", "LLM", "In-Context Learning"],
+          "topics": [
+            "Retrieval",
+            "LLM",
+            "In-Context Learning"
+          ],
           "title": "RAVEN: In-Context Learning with Retrieval Augmented Encoder-Decoder Language Models",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3268,7 +3681,10 @@
       "articles": [
         {
           "id": "198277138",
-          "topics": ["LLM", "Fine-tuning"],
+          "topics": [
+            "LLM",
+            "Fine-tuning"
+          ],
           "title": "Sorted LLaMA: Unlocking the Potential of Intermediate Layers of Large Language Models for Dynamic Inference Using Sorted Fine-Tuning (SoFT)",
           "slug": "sorted-llama-unlocking-the-potential-of-intermediate-layers-of-large-language-mod",
           "authorName": "Prof. Otto Nomos",
@@ -3296,7 +3712,11 @@
         },
         {
           "id": "198044900",
-          "topics": ["LLM", "Entity", "Fine-tuning"],
+          "topics": [
+            "LLM",
+            "Entity",
+            "Fine-tuning"
+          ],
           "title": "Leveraging Contextual Information for Effective Entity Salience Detection",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3324,7 +3744,11 @@
         },
         {
           "id": "197817281",
-          "topics": ["LLM", "In-Context Learning", "Fine-tuning"],
+          "topics": [
+            "LLM",
+            "In-Context Learning",
+            "Fine-tuning"
+          ],
           "title": "FIAT: Fusing learning paradigms with Instruction-Accelerated Tuning",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3352,7 +3776,12 @@
         },
         {
           "id": "189787086",
-          "topics": ["LLM", "Fine-tuning", "LORA", "Data"],
+          "topics": [
+            "LLM",
+            "Fine-tuning",
+            "LORA",
+            "Data"
+          ],
           "title": "Platypus: Quick, Cheap, and Powerful Refinement of LLMs",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3386,7 +3815,11 @@
       "articles": [
         {
           "id": "198277150",
-          "topics": ["LLM", "Instruction Tuning", "Multimodal"],
+          "topics": [
+            "LLM",
+            "Instruction Tuning",
+            "Multimodal"
+          ],
           "title": "An Empirical Study of Scaling Instruct-Tuned Large Multimodal Models",
           "slug": "an-empirical-study-of-scaling-instruct-tuned-large-multimodal-models",
           "authorName": "Prof. Otto Nomos",
@@ -3414,7 +3847,11 @@
         },
         {
           "id": "197621519",
-          "topics": ["LLM", "Open Source", "Instruction Tuning"],
+          "topics": [
+            "LLM",
+            "Open Source",
+            "Instruction Tuning"
+          ],
           "title": "XGen-7B Technical Report",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
@@ -3442,7 +3879,10 @@
         },
         {
           "id": "189845549",
-          "topics": ["LLM", "Instruction Tuning"],
+          "topics": [
+            "LLM",
+            "Instruction Tuning"
+          ],
           "title": "Self-Alignment with Instruction Backtranslation",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -3470,7 +3910,11 @@
         },
         {
           "id": "189787192",
-          "topics": ["LLM", "Code", "Instruction Tuning"],
+          "topics": [
+            "LLM",
+            "Code",
+            "Instruction Tuning"
+          ],
           "title": "Can Programming Languages Boost Each Other via Instruction Tuning?",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3498,7 +3942,11 @@
         },
         {
           "id": "189787168",
-          "topics": ["LLM", "Instruction Tuning", "Healthcare"],
+          "topics": [
+            "LLM",
+            "Instruction Tuning",
+            "Healthcare"
+          ],
           "title": "MedAlign: A Clinician-Generated Dataset for Instruction Following with Electronic Medical Records",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3526,7 +3974,11 @@
         },
         {
           "id": "189777877",
-          "topics": ["LLM", "Code", "Instruction Tuning"],
+          "topics": [
+            "LLM",
+            "Code",
+            "Instruction Tuning"
+          ],
           "title": "OctoPack: Instruction Tuning Code Large Language Models",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3554,7 +4006,10 @@
         },
         {
           "id": "189777825",
-          "topics": ["LLM", "Instruction Tuning"],
+          "topics": [
+            "LLM",
+            "Instruction Tuning"
+          ],
           "title": "Self-Alignment with Instruction Backtranslation",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -3588,7 +4043,11 @@
       "articles": [
         {
           "id": "198277150",
-          "topics": ["LLM", "Instruction Tuning", "Multimodal"],
+          "topics": [
+            "LLM",
+            "Instruction Tuning",
+            "Multimodal"
+          ],
           "title": "An Empirical Study of Scaling Instruct-Tuned Large Multimodal Models",
           "slug": "an-empirical-study-of-scaling-instruct-tuned-large-multimodal-models",
           "authorName": "Prof. Otto Nomos",
@@ -3616,7 +4075,10 @@
         },
         {
           "id": "197845061",
-          "topics": ["Audio", "Multimodal"],
+          "topics": [
+            "Audio",
+            "Multimodal"
+          ],
           "title": "Natural Language Supervision for General-Purpose Audio Representations",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3644,7 +4106,12 @@
         },
         {
           "id": "189777849",
-          "topics": ["Audio", "LLM", "Multimodal", "Multilingual"],
+          "topics": [
+            "Audio",
+            "LLM",
+            "Multimodal",
+            "Multilingual"
+          ],
           "title": "Improving Joint Speech-Text Representations Without Alignment",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3678,7 +4145,11 @@
       "articles": [
         {
           "id": "198277160",
-          "topics": ["LLM", "Agents", "Gaming"],
+          "topics": [
+            "LLM",
+            "Agents",
+            "Gaming"
+          ],
           "title": "MindAgent: Emergent Gaming Interaction",
           "slug": "mindagent-emergent-gaming-interaction",
           "authorName": "Prof. Otto Nomos",
@@ -3706,7 +4177,11 @@
         },
         {
           "id": "198044929",
-          "topics": ["LLM", "Data", "Agents"],
+          "topics": [
+            "LLM",
+            "Data",
+            "Agents"
+          ],
           "title": "A Data Source for Reasoning Embodied Agents",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -3734,7 +4209,10 @@
         },
         {
           "id": "198044892",
-          "topics": ["LLM", "Agents"],
+          "topics": [
+            "LLM",
+            "Agents"
+          ],
           "title": "LASER: LLM Agent with State-Space Exploration for Web Navigation",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3762,7 +4240,10 @@
         },
         {
           "id": "197990671",
-          "topics": ["LLM", "Agents"],
+          "topics": [
+            "LLM",
+            "Agents"
+          ],
           "title": "Agents: An Open-source Framework for Autonomous Language Agents",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3790,7 +4271,11 @@
         },
         {
           "id": "197559951",
-          "topics": ["LLM", "Agents", "Tools"],
+          "topics": [
+            "LLM",
+            "Agents",
+            "Tools"
+          ],
           "title": "ModelScope-Agent: Building Your Customizable Agent System with Open-source Large Language Models",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3818,7 +4303,10 @@
         },
         {
           "id": "189777845",
-          "topics": ["LLM", "Agents"],
+          "topics": [
+            "LLM",
+            "Agents"
+          ],
           "title": "BOLAA: Benchmarking and Orchestrating LLM-augmented Autonomous Agents",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3852,7 +4340,11 @@
       "articles": [
         {
           "id": "198277160",
-          "topics": ["LLM", "Agents", "Gaming"],
+          "topics": [
+            "LLM",
+            "Agents",
+            "Gaming"
+          ],
           "title": "MindAgent: Emergent Gaming Interaction",
           "slug": "mindagent-emergent-gaming-interaction",
           "authorName": "Prof. Otto Nomos",
@@ -3886,7 +4378,9 @@
       "articles": [
         {
           "id": "198277182",
-          "topics": ["Transformers"],
+          "topics": [
+            "Transformers"
+          ],
           "title": "Cure the headache of Transformers via Collinear Constrained Attention",
           "slug": "cure-the-headache-of-transformers-via-collinear-constrained-attention",
           "authorName": "Prof. Otto Nomos",
@@ -3914,7 +4408,11 @@
         },
         {
           "id": "198044879",
-          "topics": ["LLM", "Transformers", "Interpretability"],
+          "topics": [
+            "LLM",
+            "Transformers",
+            "Interpretability"
+          ],
           "title": "Sparse Autoencoders Find Highly Interpretable Features in Language Models",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -3942,7 +4440,11 @@
         },
         {
           "id": "198044746",
-          "topics": ["LLM", "Transformers", "Training"],
+          "topics": [
+            "LLM",
+            "Transformers",
+            "Training"
+          ],
           "title": "Scaling Laws for Sparsely-Connected Foundation Models",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -3970,7 +4472,9 @@
         },
         {
           "id": "197842604",
-          "topics": ["Transformers"],
+          "topics": [
+            "Transformers"
+          ],
           "title": "Uncovering mesa-optimization algorithms in Transformers",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3998,7 +4502,9 @@
         },
         {
           "id": "197613989",
-          "topics": ["Transformers"],
+          "topics": [
+            "Transformers"
+          ],
           "title": "Gated recurrent neural networks discover attention",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -4026,7 +4532,9 @@
         },
         {
           "id": "197556833",
-          "topics": ["Transformers"],
+          "topics": [
+            "Transformers"
+          ],
           "title": "One Wide Feedforward is All You Need",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -4054,7 +4562,9 @@
         },
         {
           "id": "189989661",
-          "topics": ["Transformers"],
+          "topics": [
+            "Transformers"
+          ],
           "title": "Vector Search with OpenAI Embeddings: Lucene Is All You Need",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -4082,7 +4592,9 @@
         },
         {
           "id": "189849314",
-          "topics": ["Transformers"],
+          "topics": [
+            "Transformers"
+          ],
           "title": "Bayesian Flow Networks",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -4110,7 +4622,9 @@
         },
         {
           "id": "189787209",
-          "topics": ["Transformers"],
+          "topics": [
+            "Transformers"
+          ],
           "title": "YaRN: Efficient Context Window Extension of Large Language Models",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -4138,7 +4652,9 @@
         },
         {
           "id": "189787174",
-          "topics": ["Transformers"],
+          "topics": [
+            "Transformers"
+          ],
           "title": "LM-Infinite: Simple On-the-Fly Length Generalization for Large Language Models",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -4166,7 +4682,9 @@
         },
         {
           "id": "189777843",
-          "topics": ["Transformers"],
+          "topics": [
+            "Transformers"
+          ],
           "title": "Composable Function-preserving Expansions for Transformer Architectures",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -4200,7 +4718,10 @@
       "articles": [
         {
           "id": "198277196",
-          "topics": ["LLM", "Structured Data"],
+          "topics": [
+            "LLM",
+            "Structured Data"
+          ],
           "title": "Struc-Bench: Are Large Language Models Really Good at Generating Complex Structured Data?",
           "slug": "struc-bench-are-large-language-models-really-good-at-generating-complex-structure",
           "authorName": "Prof. Otto Nomos",
@@ -4228,7 +4749,12 @@
         },
         {
           "id": "198277458",
-          "topics": ["LLM", "Hallucination", "Entity", "Structured Data"],
+          "topics": [
+            "LLM",
+            "Hallucination",
+            "Entity",
+            "Structured Data"
+          ],
           "title": "LMDX: Language Model-based Document Information Extraction and Localization",
           "slug": "lmdx-language-model-based-document-information-extraction-and-localization",
           "authorName": "Prof. Otto Nomos",
@@ -4262,7 +4788,11 @@
       "articles": [
         {
           "id": "198277217",
-          "topics": ["LLM", "Privacy", "Edge"],
+          "topics": [
+            "LLM",
+            "Privacy",
+            "Edge"
+          ],
           "title": "  Recovering from Privacy-Preserving Masking with Large Language Models",
           "slug": "recovering-from-privacy-preserving-masking-with-large-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -4296,7 +4826,11 @@
       "articles": [
         {
           "id": "198277217",
-          "topics": ["LLM", "Privacy", "Edge"],
+          "topics": [
+            "LLM",
+            "Privacy",
+            "Edge"
+          ],
           "title": "  Recovering from Privacy-Preserving Masking with Large Language Models",
           "slug": "recovering-from-privacy-preserving-masking-with-large-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -4330,7 +4864,10 @@
       "articles": [
         {
           "id": "198277239",
-          "topics": ["LLM", "Chat"],
+          "topics": [
+            "LLM",
+            "Chat"
+          ],
           "title": "S3-DST: Structured Open-Domain Dialogue Segmentation and State Tracking in the Era of LLMs",
           "slug": "s3-dst-structured-open-domain-dialogue-segmentation-and-state-tracking-in-the-era",
           "authorName": "Prof. Otto Nomos",
@@ -4358,7 +4895,10 @@
         },
         {
           "id": "198044802",
-          "topics": ["LLM", "Chat"],
+          "topics": [
+            "LLM",
+            "Chat"
+          ],
           "title": "Investigating Answerability of LLMs for Long-Form Question Answering",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -4386,7 +4926,11 @@
         },
         {
           "id": "189777823",
-          "topics": ["LLM", "Code", "Chat"],
+          "topics": [
+            "LLM",
+            "Code",
+            "Chat"
+          ],
           "title": "SoTaNa: The Open-Source Software Development Assistant",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
@@ -4414,7 +4958,11 @@
         },
         {
           "id": "189775948",
-          "topics": ["LLM", "Chat", "Data"],
+          "topics": [
+            "LLM",
+            "Chat",
+            "Data"
+          ],
           "title": "PIPPA: A Partially Synthetic Conversational Dataset",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -4448,7 +4996,10 @@
       "articles": [
         {
           "id": "198277253",
-          "topics": ["LLM", "Audio"],
+          "topics": [
+            "LLM",
+            "Audio"
+          ],
           "title": "Augmenting text for spoken language understanding with Large Language Models",
           "slug": "augmenting-text-for-spoken-language-understanding-with-large-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -4476,7 +5027,10 @@
         },
         {
           "id": "197845061",
-          "topics": ["Audio", "Multimodal"],
+          "topics": [
+            "Audio",
+            "Multimodal"
+          ],
           "title": "Natural Language Supervision for General-Purpose Audio Representations",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -4504,7 +5058,12 @@
         },
         {
           "id": "189777849",
-          "topics": ["Audio", "LLM", "Multimodal", "Multilingual"],
+          "topics": [
+            "Audio",
+            "LLM",
+            "Multimodal",
+            "Multilingual"
+          ],
           "title": "Improving Joint Speech-Text Representations Without Alignment",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -4538,7 +5097,10 @@
       "articles": [
         {
           "id": "198277277",
-          "topics": ["LLM", "Compression"],
+          "topics": [
+            "LLM",
+            "Compression"
+          ],
           "title": "Language Modeling Is Compression",
           "slug": "language-modeling-is-compression",
           "authorName": "Prof. Otto Nomos",
@@ -4566,7 +5128,11 @@
         },
         {
           "id": "189845558",
-          "topics": ["LLM", "Compression", "Survey"],
+          "topics": [
+            "LLM",
+            "Compression",
+            "Survey"
+          ],
           "title": "A Survey on Model Compression for Large Language Models",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -4600,7 +5166,10 @@
       "articles": [
         {
           "id": "198277360",
-          "topics": ["LLM", "RLHF"],
+          "topics": [
+            "LLM",
+            "RLHF"
+          ],
           "title": "Stabilizing RLHF through Advantage Model and Selective Rehearsal",
           "slug": "stabilizing-rlhf-through-advantage-model-and-selective-rehearsal",
           "authorName": "Prof. Otto Nomos",
@@ -4628,7 +5197,11 @@
         },
         {
           "id": "197990654",
-          "topics": ["LLM", "RLHF", "Reinforcement Learning"],
+          "topics": [
+            "LLM",
+            "RLHF",
+            "Reinforcement Learning"
+          ],
           "title": "Statistical Rejection Sampling Improves Preference Optimization",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -4656,7 +5229,10 @@
         },
         {
           "id": "197613974",
-          "topics": ["LLM", "RLHF"],
+          "topics": [
+            "LLM",
+            "RLHF"
+          ],
           "title": "Efficient RLHF: Reducing the Memory Usage of PPO",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -4684,7 +5260,11 @@
         },
         {
           "id": "180403467",
-          "topics": ["LLM", "RLHF", "Summary"],
+          "topics": [
+            "LLM",
+            "RLHF",
+            "Summary"
+          ],
           "title": "Open Problems and Fundamental Limitations of Reinforcement Learning from Human Feedback [Summary]",
           "slug": "open-problems-and-fundamental-limitations-of-reinforcement-learning-from-human-fe",
           "authorName": "Prof. Otto Nomos",
@@ -4712,7 +5292,10 @@
         },
         {
           "id": "189845519",
-          "topics": ["LLM", "RLHF"],
+          "topics": [
+            "LLM",
+            "RLHF"
+          ],
           "title": "RLAIF: Scaling Reinforcement Learning from Human Feedback with AI Feedback",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -4746,7 +5329,10 @@
       "articles": [
         {
           "id": "198277446",
-          "topics": ["LLM", "Hallucination"],
+          "topics": [
+            "LLM",
+            "Hallucination"
+          ],
           "title": "Chain-of-Verification Reduces Hallucination in Large Language Models",
           "slug": "chain-of-verification-reduces-hallucination-in-large-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -4774,7 +5360,12 @@
         },
         {
           "id": "198277458",
-          "topics": ["LLM", "Hallucination", "Entity", "Structured Data"],
+          "topics": [
+            "LLM",
+            "Hallucination",
+            "Entity",
+            "Structured Data"
+          ],
           "title": "LMDX: Language Model-based Document Information Extraction and Localization",
           "slug": "lmdx-language-model-based-document-information-extraction-and-localization",
           "authorName": "Prof. Otto Nomos",
@@ -4808,7 +5399,12 @@
       "articles": [
         {
           "id": "198277458",
-          "topics": ["LLM", "Hallucination", "Entity", "Structured Data"],
+          "topics": [
+            "LLM",
+            "Hallucination",
+            "Entity",
+            "Structured Data"
+          ],
           "title": "LMDX: Language Model-based Document Information Extraction and Localization",
           "slug": "lmdx-language-model-based-document-information-extraction-and-localization",
           "authorName": "Prof. Otto Nomos",
@@ -4836,7 +5432,11 @@
         },
         {
           "id": "198044900",
-          "topics": ["LLM", "Entity", "Fine-tuning"],
+          "topics": [
+            "LLM",
+            "Entity",
+            "Fine-tuning"
+          ],
           "title": "Leveraging Contextual Information for Effective Entity Salience Detection",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -4870,7 +5470,10 @@
       "articles": [
         {
           "id": "198277209",
-          "topics": ["LLM", "Data"],
+          "topics": [
+            "LLM",
+            "Data"
+          ],
           "title": "  SlimPajama-DC: Understanding Data Combinations for LLM Training",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -4898,7 +5501,11 @@
         },
         {
           "id": "198277099",
-          "topics": ["LLM", "Multilingual", "Data"],
+          "topics": [
+            "LLM",
+            "Multilingual",
+            "Data"
+          ],
           "title": "CulturaX: A Cleaned, Enormous, and Multilingual Dataset for Large Language Models in 167 Languages",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -4926,7 +5533,11 @@
         },
         {
           "id": "198044929",
-          "topics": ["LLM", "Data", "Agents"],
+          "topics": [
+            "LLM",
+            "Data",
+            "Agents"
+          ],
           "title": "A Data Source for Reasoning Embodied Agents",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -4954,7 +5565,10 @@
         },
         {
           "id": "197813719",
-          "topics": ["LLM", "Data"],
+          "topics": [
+            "LLM",
+            "Data"
+          ],
           "title": "When Less is More: Investigating Data Pruning for Pretraining LLMs at Scale",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -4982,7 +5596,12 @@
         },
         {
           "id": "189787086",
-          "topics": ["LLM", "Fine-tuning", "LORA", "Data"],
+          "topics": [
+            "LLM",
+            "Fine-tuning",
+            "LORA",
+            "Data"
+          ],
           "title": "Platypus: Quick, Cheap, and Powerful Refinement of LLMs",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5010,7 +5629,11 @@
         },
         {
           "id": "189775948",
-          "topics": ["LLM", "Chat", "Data"],
+          "topics": [
+            "LLM",
+            "Chat",
+            "Data"
+          ],
           "title": "PIPPA: A Partially Synthetic Conversational Dataset",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5038,7 +5661,11 @@
         },
         {
           "id": "189576084",
-          "topics": ["LLM", "Data", "Training"],
+          "topics": [
+            "LLM",
+            "Data",
+            "Training"
+          ],
           "title": "Shepherd: A Critic for Language Model Generation",
           "slug": "shepherd-a-critic-for-language-model-generation",
           "authorName": "Prof. Otto Nomos",
@@ -5072,7 +5699,10 @@
       "articles": [
         {
           "id": "198277109",
-          "topics": ["LLM", "Reasoning"],
+          "topics": [
+            "LLM",
+            "Reasoning"
+          ],
           "title": "Contrastive Decoding Improves Reasoning in Large Language Models",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5100,7 +5730,11 @@
         },
         {
           "id": "189849326",
-          "topics": ["LLM", "Prompting", "Reasoning"],
+          "topics": [
+            "LLM",
+            "Prompting",
+            "Reasoning"
+          ],
           "title": "Graph of Thoughts: Solving Elaborate Problems with Large Language Models",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5134,7 +5768,11 @@
       "articles": [
         {
           "id": "198044879",
-          "topics": ["LLM", "Transformers", "Interpretability"],
+          "topics": [
+            "LLM",
+            "Transformers",
+            "Interpretability"
+          ],
           "title": "Sparse Autoencoders Find Highly Interpretable Features in Language Models",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -5168,7 +5806,11 @@
       "articles": [
         {
           "id": "198044746",
-          "topics": ["LLM", "Transformers", "Training"],
+          "topics": [
+            "LLM",
+            "Transformers",
+            "Training"
+          ],
           "title": "Scaling Laws for Sparsely-Connected Foundation Models",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -5196,7 +5838,11 @@
         },
         {
           "id": "189845521",
-          "topics": ["LLM", "Training", "Alignment"],
+          "topics": [
+            "LLM",
+            "Training",
+            "Alignment"
+          ],
           "title": "From Pretraining Data to Language Models to Downstream Tasks: Tracking the Trails of Political Biases Leading to Unfair NLP Models",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5224,7 +5870,11 @@
         },
         {
           "id": "189576084",
-          "topics": ["LLM", "Data", "Training"],
+          "topics": [
+            "LLM",
+            "Data",
+            "Training"
+          ],
           "title": "Shepherd: A Critic for Language Model Generation",
           "slug": "shepherd-a-critic-for-language-model-generation",
           "authorName": "Prof. Otto Nomos",
@@ -5258,7 +5908,10 @@
       "articles": [
         {
           "id": "197990754",
-          "topics": ["LLM", "In-Context Learning"],
+          "topics": [
+            "LLM",
+            "In-Context Learning"
+          ],
           "title": "Ambiguity-Aware In-Context Learning with Large Language Models",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5286,7 +5939,11 @@
         },
         {
           "id": "197817281",
-          "topics": ["LLM", "In-Context Learning", "Fine-tuning"],
+          "topics": [
+            "LLM",
+            "In-Context Learning",
+            "Fine-tuning"
+          ],
           "title": "FIAT: Fusing learning paradigms with Instruction-Accelerated Tuning",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5314,7 +5971,11 @@
         },
         {
           "id": "189787148",
-          "topics": ["Retrieval", "LLM", "In-Context Learning"],
+          "topics": [
+            "Retrieval",
+            "LLM",
+            "In-Context Learning"
+          ],
           "title": "RAVEN: In-Context Learning with Retrieval Augmented Encoder-Decoder Language Models",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5342,7 +6003,10 @@
         },
         {
           "id": "189777847",
-          "topics": ["LLM", "In-Context Learning"],
+          "topics": [
+            "LLM",
+            "In-Context Learning"
+          ],
           "title": "CausalLM is not optimal for in-context learning",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -5376,7 +6040,11 @@
       "articles": [
         {
           "id": "197842432",
-          "topics": ["LLM", "Evaluation", "Multilingual"],
+          "topics": [
+            "LLM",
+            "Evaluation",
+            "Multilingual"
+          ],
           "title": "Are Large Language Model-based Evaluators the Solution to Scaling Up Multilingual Evaluation?",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -5404,7 +6072,11 @@
         },
         {
           "id": "189787170",
-          "topics": ["LLM", "Multilingual", "Evaluation"],
+          "topics": [
+            "LLM",
+            "Multilingual",
+            "Evaluation"
+          ],
           "title": "The Belebele Benchmark: a Parallel Reading Comprehension Dataset in 122 Language Variants",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
@@ -5432,7 +6104,11 @@
         },
         {
           "id": "189787190",
-          "topics": ["LLM", "Evaluation", "Climate"],
+          "topics": [
+            "LLM",
+            "Evaluation",
+            "Climate"
+          ],
           "title": "WeatherBench 2: A benchmark for the next generation of data-driven global weather models",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5460,7 +6136,12 @@
         },
         {
           "id": "189577629",
-          "topics": ["LLM", "Alignment", "Survey", "Evaluation"],
+          "topics": [
+            "LLM",
+            "Alignment",
+            "Survey",
+            "Evaluation"
+          ],
           "title": "Trustworthy LLMs: a Survey and Guideline for Evaluating Large Language Models' Alignment",
           "slug": "trustworthy-llms-a-survey-and-guideline-for-evaluating-large-language-models-alig",
           "authorName": "Prof. Otto Nomos",
@@ -5494,7 +6175,11 @@
       "articles": [
         {
           "id": "197990687",
-          "topics": ["LLM", "Healthcare", "Summarization"],
+          "topics": [
+            "LLM",
+            "Healthcare",
+            "Summarization"
+          ],
           "title": "Clinical Text Summarization: Adapting Large Language Models Can Outperform Human Experts",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
@@ -5522,7 +6207,11 @@
         },
         {
           "id": "197621737",
-          "topics": ["LLM", "Prompting", "Summarization"],
+          "topics": [
+            "LLM",
+            "Prompting",
+            "Summarization"
+          ],
           "title": "DrugChat: Towards Enabling ChatGPT-Like Capabilities on Drug Molecule Graphs",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5550,7 +6239,11 @@
         },
         {
           "id": "197621634",
-          "topics": ["LLM", "Prompting", "Summarization"],
+          "topics": [
+            "LLM",
+            "Prompting",
+            "Summarization"
+          ],
           "title": "From Sparse to Dense: GPT-4 Summarization with Chain of Density Prompting",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5584,7 +6277,11 @@
       "articles": [
         {
           "id": "197990654",
-          "topics": ["LLM", "RLHF", "Reinforcement Learning"],
+          "topics": [
+            "LLM",
+            "RLHF",
+            "Reinforcement Learning"
+          ],
           "title": "Statistical Rejection Sampling Improves Preference Optimization",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5618,7 +6315,10 @@
       "articles": [
         {
           "id": "197859672",
-          "topics": ["LLM", "Code"],
+          "topics": [
+            "LLM",
+            "Code"
+          ],
           "title": "Large Language Models for Compiler Optimization",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5646,7 +6346,10 @@
         },
         {
           "id": "189787126",
-          "topics": ["LLM", "Code"],
+          "topics": [
+            "LLM",
+            "Code"
+          ],
           "title": "LLM As DBA",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -5674,7 +6377,11 @@
         },
         {
           "id": "189787194",
-          "topics": ["LLM", "Code", "Healthcare"],
+          "topics": [
+            "LLM",
+            "Code",
+            "Healthcare"
+          ],
           "title": "BioCoder: A Benchmark for Bioinformatics Code Generation with Contextual Pragmatic Knowledge",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5702,7 +6409,11 @@
         },
         {
           "id": "189787192",
-          "topics": ["LLM", "Code", "Instruction Tuning"],
+          "topics": [
+            "LLM",
+            "Code",
+            "Instruction Tuning"
+          ],
           "title": "Can Programming Languages Boost Each Other via Instruction Tuning?",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5730,7 +6441,11 @@
         },
         {
           "id": "189777823",
-          "topics": ["LLM", "Code", "Chat"],
+          "topics": [
+            "LLM",
+            "Code",
+            "Chat"
+          ],
           "title": "SoTaNa: The Open-Source Software Development Assistant",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
@@ -5758,7 +6473,11 @@
         },
         {
           "id": "189787144",
-          "topics": ["LLM", "Code", "Prompting"],
+          "topics": [
+            "LLM",
+            "Code",
+            "Prompting"
+          ],
           "title": "Solving Challenging Math Word Problems Using GPT-4 Code Interpreter with Code-based Self-Verification",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5786,7 +6505,11 @@
         },
         {
           "id": "189777877",
-          "topics": ["LLM", "Code", "Instruction Tuning"],
+          "topics": [
+            "LLM",
+            "Code",
+            "Instruction Tuning"
+          ],
           "title": "OctoPack: Instruction Tuning Code Large Language Models",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5814,7 +6537,10 @@
         },
         {
           "id": "189777872",
-          "topics": ["LLM", "Code"],
+          "topics": [
+            "LLM",
+            "Code"
+          ],
           "title": "Enhancing Network Management Using Code Generated by Large Language Models",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5848,7 +6574,10 @@
       "articles": [
         {
           "id": "197840057",
-          "topics": ["LLM", "Science"],
+          "topics": [
+            "LLM",
+            "Science"
+          ],
           "title": "AstroLLaMA: Towards Specialized Foundation Models in Astronomy",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -5876,7 +6605,11 @@
         },
         {
           "id": "197838596",
-          "topics": ["LLM", "Math", "Science"],
+          "topics": [
+            "LLM",
+            "Math",
+            "Science"
+          ],
           "title": "Large Language Model for Science: A Study on P vs. NP",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5904,7 +6637,10 @@
         },
         {
           "id": "189577812",
-          "topics": ["Diffusion", "Science"],
+          "topics": [
+            "Diffusion",
+            "Science"
+          ],
           "title": "PDE-Refiner: Achieving Accurate Long Rollouts with Neural PDE Solvers",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5938,7 +6674,11 @@
       "articles": [
         {
           "id": "197838596",
-          "topics": ["LLM", "Math", "Science"],
+          "topics": [
+            "LLM",
+            "Math",
+            "Science"
+          ],
           "title": "Large Language Model for Science: A Study on P vs. NP",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5966,7 +6706,10 @@
         },
         {
           "id": "197621439",
-          "topics": ["LLM", "Math"],
+          "topics": [
+            "LLM",
+            "Math"
+          ],
           "title": "GPT Can Solve Mathematical Problems Without a Calculator",
           "slug": "transformer-models-an-introduction-and-catalog",
           "authorName": "Prof. Otto Nomos",
@@ -6000,7 +6743,10 @@
       "articles": [
         {
           "id": "197810544",
-          "topics": ["LLM", "Open Source"],
+          "topics": [
+            "LLM",
+            "Open Source"
+          ],
           "title": "Textbooks Are All You Need II: phi-1.5 technical report",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -6028,7 +6774,11 @@
         },
         {
           "id": "197621519",
-          "topics": ["LLM", "Open Source", "Instruction Tuning"],
+          "topics": [
+            "LLM",
+            "Open Source",
+            "Instruction Tuning"
+          ],
           "title": "XGen-7B Technical Report",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
@@ -6062,7 +6812,10 @@
       "articles": [
         {
           "id": "197613987",
-          "topics": ["Image", "LORA"],
+          "topics": [
+            "Image",
+            "LORA"
+          ],
           "title": "StyleAdapter: A Single-Pass LoRA-Free Model for Stylized Image Generation",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -6090,7 +6843,11 @@
         },
         {
           "id": "189576077",
-          "topics": ["Image", "Safety", "Diffusion"],
+          "topics": [
+            "Image",
+            "Safety",
+            "Diffusion"
+          ],
           "title": "FLIRT: Feedback Loop In-context Red Teaming",
           "slug": "flirt-feedback-loop-in-context-red-teaming",
           "authorName": "Prof. Otto Nomos",
@@ -6124,7 +6881,10 @@
       "articles": [
         {
           "id": "197613987",
-          "topics": ["Image", "LORA"],
+          "topics": [
+            "Image",
+            "LORA"
+          ],
           "title": "StyleAdapter: A Single-Pass LoRA-Free Model for Stylized Image Generation",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -6152,7 +6912,11 @@
         },
         {
           "id": "180927998",
-          "topics": ["LLM", "Commentary", "LORA"],
+          "topics": [
+            "LLM",
+            "Commentary",
+            "LORA"
+          ],
           "title": "LoraHub: Efficient Cross-Task Generalization Via Dynamic LoRA Composition [Commentary]",
           "slug": "lorahub-efficient-cross-task-generalization-via-dynamic-lora-composition-commenta",
           "authorName": "Prof. Otto Nomos",
@@ -6180,7 +6944,12 @@
         },
         {
           "id": "189787086",
-          "topics": ["LLM", "Fine-tuning", "LORA", "Data"],
+          "topics": [
+            "LLM",
+            "Fine-tuning",
+            "LORA",
+            "Data"
+          ],
           "title": "Platypus: Quick, Cheap, and Powerful Refinement of LLMs",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -6214,7 +6983,11 @@
       "articles": [
         {
           "id": "197559951",
-          "topics": ["LLM", "Agents", "Tools"],
+          "topics": [
+            "LLM",
+            "Agents",
+            "Tools"
+          ],
           "title": "ModelScope-Agent: Building Your Customizable Agent System with Open-source Large Language Models",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -6242,7 +7015,11 @@
         },
         {
           "id": "180928004",
-          "topics": ["LLM", "Tools", "Commentary"],
+          "topics": [
+            "LLM",
+            "Tools",
+            "Commentary"
+          ],
           "title": "ToolLLM: Facilitating Large Language Models To Master 16000+ Real-World APIs [Commentary]",
           "slug": "toolllm-facilitating-large-language-models-to-master-16000-real-world-apis-commen",
           "authorName": "Prof. Otto Nomos",
@@ -6270,7 +7047,10 @@
         },
         {
           "id": "189989705",
-          "topics": ["LLM", "Tools"],
+          "topics": [
+            "LLM",
+            "Tools"
+          ],
           "title": "FacTool: Factuality Detection in Generative AI -- A Tool Augmented Framework for Multi-Task and Multi-Domain Scenarios",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -6304,7 +7084,11 @@
       "articles": [
         {
           "id": "180403467",
-          "topics": ["LLM", "RLHF", "Summary"],
+          "topics": [
+            "LLM",
+            "RLHF",
+            "Summary"
+          ],
           "title": "Open Problems and Fundamental Limitations of Reinforcement Learning from Human Feedback [Summary]",
           "slug": "open-problems-and-fundamental-limitations-of-reinforcement-learning-from-human-fe",
           "authorName": "Prof. Otto Nomos",
@@ -6332,7 +7116,10 @@
         },
         {
           "id": "180869081",
-          "topics": ["LLM", "Summary"],
+          "topics": [
+            "LLM",
+            "Summary"
+          ],
           "title": "Llama 2: Open Foundation and Fine-Tuned Chat Models [Commentary]",
           "slug": "llama-2-open-foundation-and-fine-tuned-chat-models-commentary",
           "authorName": "Prof. Otto Nomos",
@@ -6360,7 +7147,10 @@
         },
         {
           "id": "179737945",
-          "topics": ["LLM", "Summary"],
+          "topics": [
+            "LLM",
+            "Summary"
+          ],
           "title": "Challenges and Applications of Large Language Models [Summary]",
           "slug": "challenges-and-applications-of-large-language-models-summary",
           "authorName": "Prof. Otto Nomos",
@@ -6394,7 +7184,11 @@
       "articles": [
         {
           "id": "180927998",
-          "topics": ["LLM", "Commentary", "LORA"],
+          "topics": [
+            "LLM",
+            "Commentary",
+            "LORA"
+          ],
           "title": "LoraHub: Efficient Cross-Task Generalization Via Dynamic LoRA Composition [Commentary]",
           "slug": "lorahub-efficient-cross-task-generalization-via-dynamic-lora-composition-commenta",
           "authorName": "Prof. Otto Nomos",
@@ -6422,7 +7216,11 @@
         },
         {
           "id": "180928004",
-          "topics": ["LLM", "Tools", "Commentary"],
+          "topics": [
+            "LLM",
+            "Tools",
+            "Commentary"
+          ],
           "title": "ToolLLM: Facilitating Large Language Models To Master 16000+ Real-World APIs [Commentary]",
           "slug": "toolllm-facilitating-large-language-models-to-master-16000-real-world-apis-commen",
           "authorName": "Prof. Otto Nomos",
@@ -6456,7 +7254,11 @@
       "articles": [
         {
           "id": "189845558",
-          "topics": ["LLM", "Compression", "Survey"],
+          "topics": [
+            "LLM",
+            "Compression",
+            "Survey"
+          ],
           "title": "A Survey on Model Compression for Large Language Models",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -6484,7 +7286,12 @@
         },
         {
           "id": "189577629",
-          "topics": ["LLM", "Alignment", "Survey", "Evaluation"],
+          "topics": [
+            "LLM",
+            "Alignment",
+            "Survey",
+            "Evaluation"
+          ],
           "title": "Trustworthy LLMs: a Survey and Guideline for Evaluating Large Language Models' Alignment",
           "slug": "trustworthy-llms-a-survey-and-guideline-for-evaluating-large-language-models-alig",
           "authorName": "Prof. Otto Nomos",
@@ -6518,7 +7325,11 @@
       "articles": [
         {
           "id": "189845521",
-          "topics": ["LLM", "Training", "Alignment"],
+          "topics": [
+            "LLM",
+            "Training",
+            "Alignment"
+          ],
           "title": "From Pretraining Data to Language Models to Downstream Tasks: Tracking the Trails of Political Biases Leading to Unfair NLP Models",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -6546,7 +7357,12 @@
         },
         {
           "id": "189577629",
-          "topics": ["LLM", "Alignment", "Survey", "Evaluation"],
+          "topics": [
+            "LLM",
+            "Alignment",
+            "Survey",
+            "Evaluation"
+          ],
           "title": "Trustworthy LLMs: a Survey and Guideline for Evaluating Large Language Models' Alignment",
           "slug": "trustworthy-llms-a-survey-and-guideline-for-evaluating-large-language-models-alig",
           "authorName": "Prof. Otto Nomos",
@@ -6574,7 +7390,10 @@
         },
         {
           "id": "189576058",
-          "topics": ["LLM", "Alignment"],
+          "topics": [
+            "LLM",
+            "Alignment"
+          ],
           "title": "Simple synthetic data reduces sycophancy in large language models",
           "slug": "simple-synthetic-data-reduces-sycophancy-in-large-language-models",
           "authorName": "Prof. Otto Nomos",
@@ -6608,7 +7427,11 @@
       "articles": [
         {
           "id": "189787190",
-          "topics": ["LLM", "Evaluation", "Climate"],
+          "topics": [
+            "LLM",
+            "Evaluation",
+            "Climate"
+          ],
           "title": "WeatherBench 2: A benchmark for the next generation of data-driven global weather models",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -6642,7 +7465,10 @@
       "articles": [
         {
           "id": "189787150",
-          "topics": ["LLM", "Personalization"],
+          "topics": [
+            "LLM",
+            "Personalization"
+          ],
           "title": "Teach LLMs to Personalize -- An Approach inspired by Writing Education",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -6676,7 +7502,10 @@
       "articles": [
         {
           "id": "189577812",
-          "topics": ["Diffusion", "Science"],
+          "topics": [
+            "Diffusion",
+            "Science"
+          ],
           "title": "PDE-Refiner: Achieving Accurate Long Rollouts with Neural PDE Solvers",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -6704,7 +7533,11 @@
         },
         {
           "id": "189576077",
-          "topics": ["Image", "Safety", "Diffusion"],
+          "topics": [
+            "Image",
+            "Safety",
+            "Diffusion"
+          ],
           "title": "FLIRT: Feedback Loop In-context Red Teaming",
           "slug": "flirt-feedback-loop-in-context-red-teaming",
           "authorName": "Prof. Otto Nomos",
@@ -6738,7 +7571,10 @@
       "articles": [
         {
           "id": "189576091",
-          "topics": ["LLM", "Inference"],
+          "topics": [
+            "LLM",
+            "Inference"
+          ],
           "title": "Accelerating LLM Inference with Staged Speculative Decoding",
           "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
           "authorName": "Prof. Otto Nomos",
@@ -6772,7 +7608,11 @@
       "articles": [
         {
           "id": "189576077",
-          "topics": ["Image", "Safety", "Diffusion"],
+          "topics": [
+            "Image",
+            "Safety",
+            "Diffusion"
+          ],
           "title": "FLIRT: Feedback Loop In-context Red Teaming",
           "slug": "flirt-feedback-loop-in-context-red-teaming",
           "authorName": "Prof. Otto Nomos",
