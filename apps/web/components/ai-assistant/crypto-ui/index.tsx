@@ -6,7 +6,7 @@ import { CryptosSkeleton } from './cryptos-skeleton'
 import { EventsSkeleton } from './events-skeleton'
 
 export { spinner } from './spinner'
-export { BotCard, BotMessage, SystemMessage } from './message'
+export { BotCard, BotMessage, SystemMessage } from '../chat-ui/chat-message'
 
 const Crypto = dynamic(() => import('./crypto').then((mod) => mod.Crypto), {
   ssr: false,

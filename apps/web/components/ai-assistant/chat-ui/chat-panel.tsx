@@ -5,7 +5,7 @@ import { nanoid } from 'nanoid'
 import { cn } from '@/lib/utils'
 import { useEffect, useRef } from 'react'
 import type { AI } from '../actions/create-ai'
-import { UserMessage } from '../crypto-ui/message'
+import { UserMessage } from './chat-message'
 import { PromptForm } from './prompt-form'
 
 export function ChatPanel({

@@ -12,11 +12,11 @@ import { z } from 'zod'
 import { CryptoSkeleton } from '../crypto-ui/crypto-skeleton'
 
 import { createSupabaseServerClient } from '@/services/supabase'
+import { SpinnerMessage } from '../chat-ui/chat-message'
 import { Cryptos } from '../crypto-ui/cryptos'
 import { CryptosSkeleton } from '../crypto-ui/cryptos-skeleton'
 import { Events } from '../crypto-ui/events'
 import { EventsSkeleton } from '../crypto-ui/events-skeleton'
-import { SpinnerMessage } from '../crypto-ui/message'
 import type { AI } from './create-ai'
 
 export async function submitUserMessage({
@@ -119,11 +119,11 @@ export async function submitUserMessage({
     4. Perform calculations related to crypto and blockchain topics when needed.
 
     Key guidelines:
-    - Prioritize using the information from the documents provided below.
+    - Prioritize using the information from the documents provided below. Be concise and to the point.
     - If the documents don't contain the necessary information, use your general knowledge about crypto, blockchain, and AI.
     - Format all mathematical responses using KaTeX for clear presentation. Use double $$ for inline math and single $ for display math.
-    - If asked about topics outside of bitlauncher, bitcash, crypto, blockchain, or AI, politely respond:
-      "I apologize, but that's outside my area of expertise. I'm focused on bitlauncher, bitcash, crypto, blockchain, and AI technology. Is there anything related to these topics I can help you with?"
+    - If asked about topics outside of scope, respond with:
+      "I can only help with bitlauncher, bitcash, crypto, blockchain, and AI topics. What would you like to know about those?"
 
     Documents:
     ${injectedDocs}

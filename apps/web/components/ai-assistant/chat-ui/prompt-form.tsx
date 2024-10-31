@@ -17,9 +17,9 @@ import {
 import type { Message } from 'ai'
 import { nanoid } from 'nanoid'
 import { useCallback, useEffect, useRef } from 'react'
-import { UserMessage } from '../crypto-ui/message'
 import { useEnterSubmit } from '../hooks/use-enter-submit'
 import { IconArrowElbow } from './chat-icons'
+import { UserMessage } from './chat-message'
 
 export function PromptForm({
   input,
@@ -118,6 +118,7 @@ export function PromptForm({
       submitUserMessage,
     ],
   )
+
   useEffect(() => {
     console.log('🍀 creating worker')
     try {
