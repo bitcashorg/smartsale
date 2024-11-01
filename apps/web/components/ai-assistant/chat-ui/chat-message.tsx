@@ -37,13 +37,15 @@ export function BotMessage({
   const text = useStreamableText(content)
 
   return (
-    <div className={cn('group relative flex items-start', className)}>
+    <div
+      className={cn('group relative flex items-start font-white', className)}
+    >
       <div className="flex size-[36px] shrink-0 select-none items-center justify-center rounded-md text-primary-foreground -ml-1.5">
         <IconBitlauncherSmall />
       </div>
       <div className="ml-4 flex-1 space-y-2 overflow-hidden px-1">
         <MemoizedReactMarkdown
-          className="prose break-words dark:prose-invert prose-p:leading-relaxed prose-pre:p-0 prose-p:text-xs prose-h1:text-xs prose-h2:text-xs prose-h3:text-xs prose-h4:text-xs prose-h5:text-xs prose-h6:text-xs prose-ul:text-xs prose-ol:text-xs prose-li:text-xs prose-blockquote:text-xs"
+          className="font-white prose break-words dark:prose-invert prose-p:leading-relaxed prose-pre:p-0 prose-p:text-xs prose-h1:text-xs prose-h2:text-xs prose-h3:text-xs prose-h4:text-xs prose-h5:text-xs prose-h6:text-xs prose-ul:text-xs prose-ol:text-xs prose-li:text-xs prose-blockquote:text-xs"
           remarkPlugins={[
             remarkGfm,
             [remarkMath, { singleDollarTextMath: false }],
@@ -51,7 +53,9 @@ export function BotMessage({
           rehypePlugins={[rehypeKatex]}
           components={{
             p({ children }) {
-              return <p className="mb-2 last:mb-0 mt-0">{children}</p>
+              return (
+                <p className="mb-2 last:mb-0 mt-0 font-white">{children}</p>
+              )
             },
             code({ node, className, children, ...props }) {
               if (Array.isArray(children) && children.length) {
@@ -76,10 +80,10 @@ export function BotMessage({
               )
             },
             ul({ children }) {
-              return <ul className="p-0 ">{children}</ul>
+              return <ul className="p-0 font-white">{children}</ul>
             },
             li({ children }) {
-              return <li className="p-0">{children}</li>
+              return <li className="p-0 font-white">{children}</li>
             },
           }}
         >
