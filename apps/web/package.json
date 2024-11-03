@@ -20,11 +20,12 @@
     "vercel:install": "npm i -g node-gyp; bun install"
   },
   "dependencies": {
-    "@ai-sdk/anthropic": "^0.0.32",
-    "@ai-sdk/openai": "^0.0.39",
+    "@ai-sdk/anthropic": "^0.0.54",
+    "@ai-sdk/openai": "^0.0.71",
     "@blockmatic/hooks-utils": "^3.0.0",
     "@formatjs/intl-localematcher": "^0.5.4",
     "@genql/runtime": "^2.10.0",
+    "@googleapis/youtube": "^20.0.0",
     "@headlessui/react": "^2.1.2",
     "@hookform/resolvers": "^3.9.0",
     "@huggingface/inference": "^2.8.1",
