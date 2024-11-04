@@ -1,3 +1,6 @@
+'use server'
+'use server-only'
+
 import { youtube, type youtube_v3 } from '@googleapis/youtube'
 
 function getYouTubeApiKey() {
