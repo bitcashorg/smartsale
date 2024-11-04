@@ -11,7 +11,13 @@ import { z } from 'zod'
 
 import { CryptoSkeleton } from '../crypto-ui/crypto-skeleton'
 
+import { MediaCard } from '@/components/shared/media-card'
 import { createSupabaseServerClient } from '@/services/supabase'
+import {
+  fetchPublicYouTubePlaylist,
+  searchYouTubeChannel,
+} from '@/services/youtube'
+import { AIMedia } from '../chat-ui/ai-media'
 import { SpinnerMessage } from '../chat-ui/chat-message'
 import { Cryptos } from '../crypto-ui/cryptos'
 import { CryptosSkeleton } from '../crypto-ui/cryptos-skeleton'
@@ -25,7 +31,12 @@ export async function submitUserMessage({
 }: { content: string; embeddings: number[] }) {
   'use server'
 
-  console.log('🍓 submit user message', content, embeddings)
+  console.log(
+    '🍓 submit user message',
+    content,
+    'embeddings:',
+    Boolean(embeddings.length),
+  )
 
   let formattedEmbedding = JSON.stringify(embeddings)
 
@@ -78,15 +89,14 @@ export async function submitUserMessage({
       ? documents.map(({ content }) => content).join('\n\n')
       : 'No documents found'
 
-  // Extract image URLs from markdown
-  // const imageUrls =
-  //   injectedDocs
-  //     .match(/!\[.*?\]\((.*?)\)/g)
-  //     ?.map((match) => {
-  //       const url = match.match(/\((.*?)\)/)?.[1]
-  //       return url ? { type: 'image', image: url } : null
-  //     })
-  //     .filter(Boolean) || []
+  const mediaLinks =
+    injectedDocs
+      .match(/!\[.*?\]\((.*?)\)/g)
+      ?.map((match) => {
+        const url = match.match(/\((.*?)\)/)?.[1]
+        return url ? { type: 'image', image: url } : null
+      })
+      .filter(Boolean) || []
 
   // Messages inside [] means that it's a UI element or a user event. For example:
   // - "[Price of BTC = 50000]" means that an interface of the price of Bitcoin is shown to the user.
@@ -124,9 +134,14 @@ export async function submitUserMessage({
     - Format all mathematical responses using KaTeX for clear presentation. Use double $$ for inline math and single $ for display math.
     - If asked about topics outside of scope, respond with:
       "I can only help with bitlauncher, bitcash, crypto, blockchain, and AI topics. What would you like to know about those?"
+    - If the user requests video content, use the 'videos' command to search and display relevant video content.
 
     Documents:
     ${injectedDocs}
+    Media Links:
+    ${mediaLinks.map((link) => link?.image).join('\n')}
+
+
     `,
     messages: [
       // biome-ignore lint/suspicious/noExplicitAny: <explanation>
@@ -162,6 +177,76 @@ export async function submitUserMessage({
       return textNode
     },
     tools: {
+      media: {
+        description: 'Search and display relevant video content and news',
+        parameters: z.object({
+          query: z
+            .string()
+            .describe('The search query for finding relevant media content'),
+          type: z
+            .enum(['video', 'news', 'both'])
+            .describe('Type of media content to search for'),
+        }),
+        generate: async function* ({ query, type }) {
+          console.log('🍓 media', query, type)
+          yield <BotCard>Searching for media...</BotCard>
+
+          try {
+            if (type === 'news') {
+              const playlistId = 'PL6BKGVqekhB_R8wjPFN-p6dGkcIy_bM1D'
+              const playlistItems = await fetchPublicYouTubePlaylist({
+                playlistId,
+                maxResults: 5,
+              })
+
+              if (!playlistItems.length) {
+                return <BotCard>No news videos found.</BotCard>
+              }
+
+              const videos = playlistItems.map((item) => ({
+                thumbnailUrl: `https://img.youtube.com/vi/${item.snippet.resourceId.videoId}/0.jpg`,
+                videoUrl: `https://www.youtube.com/embed/${item.snippet.resourceId.videoId}`,
+                title: item.snippet.title,
+              }))
+
+              return (
+                <AIMedia
+                  title={playlistItems[0].snippet.title}
+                  description={playlistItems[0].snippet.description}
+                  videos={videos}
+                />
+              )
+            }
+
+            const searchResults = await searchYouTubeChannel({
+              channelId: 'UChzuWZjo_PvOrRTDfkojp3w',
+              query,
+              maxResults: 5,
+            })
+
+            if (!searchResults.length) {
+              return <BotCard>No videos found matching your query.</BotCard>
+            }
+
+            const videos = searchResults.map((video) => ({
+              thumbnailUrl: `https://img.youtube.com/vi/${video.videoId}/0.jpg`,
+              videoUrl: `https://www.youtube.com/embed/${video.videoId}`,
+              title: video.title,
+            }))
+
+            return (
+              <AIMedia
+                title={searchResults[0].title}
+                description={searchResults[0].description}
+                videos={videos}
+              />
+            )
+          } catch (error) {
+            console.error('Error fetching media:', error)
+            return <BotCard>Failed to load media content.</BotCard>
+          }
+        },
+      },
       listCryptos: {
         description: 'List three trending cryptocurrencies.',
         parameters: z.object({

@@ -66,7 +66,7 @@ export function ChatAnimated({ chatId }: { chatId: string }) {
                   },
                 }}
               >
-                <Card variant="padded" className="w-full h-full min-h-[300px]">
+                <Card variant="padded" className="w-full h-full min-h-[80dvh]">
                   <Chat id={chatId} />
                 </Card>
               </Resizable>
