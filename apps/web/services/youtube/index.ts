@@ -13,7 +13,7 @@ const yt = youtube({
 
 export async function fetchPublicYouTubePlaylist({
   playlistId,
-  maxResults = 50,
+  maxResults,
 }: {
   playlistId: string
   maxResults?: number
@@ -22,38 +22,45 @@ export async function fetchPublicYouTubePlaylist({
     const response = await yt.playlistItems.list({
       part: ['snippet'],
       playlistId,
-      maxResults,
+      maxResults: 1000, // to get latest videos
     })
 
-    return (response.data.items || []).map(
-      (item): YouTubePlaylistItem => ({
-        kind: item.kind || '',
-        etag: item.etag || '',
-        id: item.id || '',
-        snippet: {
-          publishedAt: item.snippet?.publishedAt || '',
-          channelId: item.snippet?.channelId || '',
-          title: item.snippet?.title || '',
-          description: item.snippet?.description || '',
-          thumbnails: {
-            default: mapThumbnail(item.snippet?.thumbnails?.default),
-            medium: mapThumbnail(item.snippet?.thumbnails?.medium),
-            high: mapThumbnail(item.snippet?.thumbnails?.high),
-            standard: mapThumbnail(item.snippet?.thumbnails?.standard),
-            maxres: mapThumbnail(item.snippet?.thumbnails?.maxres),
+    return (response.data.items || [])
+      .sort((a, b) => {
+        const dateA = new Date(a.snippet?.publishedAt || 0)
+        const dateB = new Date(b.snippet?.publishedAt || 0)
+        return dateB.getTime() - dateA.getTime()
+      })
+      .map(
+        (item): YouTubePlaylistItem => ({
+          kind: item.kind || '',
+          etag: item.etag || '',
+          id: item.id || '',
+          snippet: {
+            publishedAt: item.snippet?.publishedAt || '',
+            channelId: item.snippet?.channelId || '',
+            title: item.snippet?.title || '',
+            description: item.snippet?.description || '',
+            thumbnails: {
+              default: mapThumbnail(item.snippet?.thumbnails?.default),
+              medium: mapThumbnail(item.snippet?.thumbnails?.medium),
+              high: mapThumbnail(item.snippet?.thumbnails?.high),
+              standard: mapThumbnail(item.snippet?.thumbnails?.standard),
+              maxres: mapThumbnail(item.snippet?.thumbnails?.maxres),
+            },
+            channelTitle: item.snippet?.channelTitle || '',
+            playlistId: item.snippet?.playlistId || '',
+            position: item.snippet?.position || 0,
+            resourceId: {
+              kind: item.snippet?.resourceId?.kind || '',
+              videoId: item.snippet?.resourceId?.videoId || '',
+            },
+            videoOwnerChannelTitle: item.snippet?.videoOwnerChannelTitle || '',
+            videoOwnerChannelId: item.snippet?.videoOwnerChannelId || '',
           },
-          channelTitle: item.snippet?.channelTitle || '',
-          playlistId: item.snippet?.playlistId || '',
-          position: item.snippet?.position || 0,
-          resourceId: {
-            kind: item.snippet?.resourceId?.kind || '',
-            videoId: item.snippet?.resourceId?.videoId || '',
-          },
-          videoOwnerChannelTitle: item.snippet?.videoOwnerChannelTitle || '',
-          videoOwnerChannelId: item.snippet?.videoOwnerChannelId || '',
-        },
-      }),
-    )
+        }),
+      )
+      .slice(0, maxResults)
   } catch (error) {
     console.error('Error fetching playlist:', error)
     return []

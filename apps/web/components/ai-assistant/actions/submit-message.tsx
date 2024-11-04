@@ -11,8 +11,13 @@ import { z } from 'zod'
 
 import { CryptoSkeleton } from '../crypto-ui/crypto-skeleton'
 
+import { MediaCard } from '@/components/shared/media-card'
 import { createSupabaseServerClient } from '@/services/supabase'
-import { searchYouTubeChannel } from '@/services/youtube'
+import {
+  fetchPublicYouTubePlaylist,
+  searchYouTubeChannel,
+} from '@/services/youtube'
+import { AIMedia } from '../chat-ui/ai-media'
 import { SpinnerMessage } from '../chat-ui/chat-message'
 import { Cryptos } from '../crypto-ui/cryptos'
 import { CryptosSkeleton } from '../crypto-ui/cryptos-skeleton'
@@ -187,39 +192,54 @@ export async function submitUserMessage({
           yield <BotCard>Searching for media...</BotCard>
 
           try {
+            if (type === 'news') {
+              const playlistId = 'PL6BKGVqekhB_R8wjPFN-p6dGkcIy_bM1D'
+              const playlistItems = await fetchPublicYouTubePlaylist({
+                playlistId,
+                maxResults: 5,
+              })
+
+              if (!playlistItems.length) {
+                return <BotCard>No news videos found.</BotCard>
+              }
+
+              const videos = playlistItems.map((item) => ({
+                thumbnailUrl: `https://img.youtube.com/vi/${item.snippet.resourceId.videoId}/0.jpg`,
+                videoUrl: `https://www.youtube.com/embed/${item.snippet.resourceId.videoId}`,
+                title: item.snippet.title,
+              }))
+
+              return (
+                <AIMedia
+                  title={playlistItems[0].snippet.title}
+                  description={playlistItems[0].snippet.description}
+                  videos={videos}
+                />
+              )
+            }
+
             const searchResults = await searchYouTubeChannel({
               channelId: 'UChzuWZjo_PvOrRTDfkojp3w',
               query,
-              maxResults: 1,
+              maxResults: 5,
             })
 
             if (!searchResults.length) {
               return <BotCard>No videos found matching your query.</BotCard>
             }
 
-            const video = searchResults[0]
-            const videoUrl = `https://www.youtube.com/embed/${video.videoId}`
+            const videos = searchResults.map((video) => ({
+              thumbnailUrl: `https://img.youtube.com/vi/${video.videoId}/0.jpg`,
+              videoUrl: `https://www.youtube.com/embed/${video.videoId}`,
+              title: video.title,
+            }))
 
             return (
-              <BotCard>
-                <div className="aspect-video w-full">
-                  <iframe
-                    src={videoUrl}
-                    title={video.title}
-                    className="w-full h-full rounded-lg"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  />
-                </div>
-                <div className="mt-2">
-                  <h3 className="font-medium text-sm">{video.title}</h3>
-                  {video.description && (
-                    <p className="text-xs text-muted-foreground">
-                      {video.description}
-                    </p>
-                  )}
-                </div>
-              </BotCard>
+              <AIMedia
+                title={searchResults[0].title}
+                description={searchResults[0].description}
+                videos={videos}
+              />
             )
           } catch (error) {
             console.error('Error fetching media:', error)
