@@ -84,17 +84,19 @@ export async function subscribeToNewsletter(
 }
 
 // generate dub.co links
-export async function generateShortLink(url: string, withCookies: boolean = true) {
-  let getShareLinkCookies;
+export async function generateShortLink(url: string, withCookies = true) {
+  // const cookieStorage = cookies()
   let cookieStorage;
+  let getShareLinkCookies;
 
   try {
     if (withCookies) {
       cookieStorage = cookies()
       getShareLinkCookies = cookieStorage.get('bitlauncher-share-link')
     }
+    
 
-    const resolved: DubShareLinkResponse = !getShareLinkCookies
+    const resolved: DubShareLinkResponse = !getShareLinkCookies || !withCookies
       ? await axios
           .post(
             `https://api.dub.co/links?workspaceId=${process.env.DUB_WORKSPACE_ID}`,
