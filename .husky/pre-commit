@@ -1,0 +1,3 @@
+echo running pre-commit scripts in background...
+cd ./apps/web
+nohup bun run scripts/generate-cms-dictionaries.ts
