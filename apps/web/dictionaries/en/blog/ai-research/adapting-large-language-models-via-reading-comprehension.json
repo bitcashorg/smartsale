@@ -2,7 +2,13 @@
   "relatedBlogs": [],
   "blogContent": {
     "id": "198277124",
-    "topics": ["LLM", "Finance", "Healthcare", "Legal", "Prompting"],
+    "topics": [
+      "LLM",
+      "Finance",
+      "Healthcare",
+      "Legal",
+      "Prompting"
+    ],
     "title": "Adapting Large Language Models via Reading Comprehension",
     "slug": "adapting-large-language-models-via-reading-comprehension",
     "authorName": "Prof. Otto Nomos",
@@ -168,7 +174,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Influence of Continued Pre-training"
                             },
                             {
@@ -187,7 +195,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Human-Inspired Learning"
                             },
                             {
@@ -206,7 +216,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Broad Applicability"
                             },
                             {
@@ -225,7 +237,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Competitive Performance"
                             },
                             {
@@ -244,7 +258,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Generalization Potential"
                             },
                             {
@@ -278,7 +294,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Efficient Domain Adaptation"
                             },
                             {
@@ -297,7 +315,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Resource Conservation"
                             },
                             {
@@ -316,7 +336,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Improved Reading Comprehension"
                             },
                             {
@@ -335,7 +357,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Wider Applicability"
                             },
                             {
@@ -369,7 +393,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Specificity vs. Generality Trade-off"
                             },
                             {
@@ -439,5 +465,12 @@
       }
     }
   },
-  "topics": ["LLM", "Finance", "Healthcare", "Legal", "Prompting"]
+  "topics": [
+    "LLM",
+    "Finance",
+    "Healthcare",
+    "Legal",
+    "Prompting"
+  ],
+  "shortLink": ""
 }

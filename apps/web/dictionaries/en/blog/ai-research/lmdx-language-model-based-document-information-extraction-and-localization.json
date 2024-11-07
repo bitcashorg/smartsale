@@ -2,7 +2,12 @@
   "relatedBlogs": [],
   "blogContent": {
     "id": "198277458",
-    "topics": ["LLM", "Hallucination", "Entity", "Structured Data"],
+    "topics": [
+      "LLM",
+      "Hallucination",
+      "Entity",
+      "Structured Data"
+    ],
     "title": "LMDX: Language Model-based Document Information Extraction and Localization",
     "slug": "lmdx-language-model-based-document-information-extraction-and-localization",
     "authorName": "Prof. Otto Nomos",
@@ -214,7 +219,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Challenge with LLMs"
                             },
                             {
@@ -233,7 +240,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "LMDX Methodology"
                             },
                             {
@@ -252,7 +261,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Successful Implementation"
                             },
                             {
@@ -286,7 +297,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Automated Document Processing"
                             },
                             {
@@ -305,7 +318,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Reduced Need for Manual Annotation"
                             },
                             {
@@ -324,7 +339,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Versatility"
                             },
                             {
@@ -343,7 +360,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Potential Cost Savings"
                             },
                             {
@@ -377,7 +396,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Adoption in Legacy Systems"
                             },
                             {
@@ -396,7 +417,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Data Sensitivity"
                             },
                             {
@@ -466,5 +489,11 @@
       }
     }
   },
-  "topics": ["LLM", "Hallucination", "Entity", "Structured Data"]
+  "topics": [
+    "LLM",
+    "Hallucination",
+    "Entity",
+    "Structured Data"
+  ],
+  "shortLink": ""
 }

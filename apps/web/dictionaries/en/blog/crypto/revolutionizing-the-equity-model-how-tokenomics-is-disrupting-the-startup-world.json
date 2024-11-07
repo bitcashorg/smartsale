@@ -2,7 +2,11 @@
   "relatedBlogs": [
     {
       "id": "180563939",
-      "topics": ["DAO", "Tokenomics", "Commentary"],
+      "topics": [
+        "DAO",
+        "Tokenomics",
+        "Commentary"
+      ],
       "title": "A Framework for Blockchain Governance Design: The Prysm Group Wheel [Commentary]",
       "slug": "a-framework-for-blockchain-governance-design-the-prysm-group-wheel-commentary",
       "authorName": "Crypto Clairity",
@@ -29,7 +33,11 @@
     },
     {
       "id": "180556595",
-      "topics": ["Fundraising", "Tokenomics", "Commentary"],
+      "topics": [
+        "Fundraising",
+        "Tokenomics",
+        "Commentary"
+      ],
       "title": "The Blockchain Effect: Network Effects without Market Power Costs [Commentary]",
       "slug": "the-blockchain-effect-network-effects-without-market-power-costs-commentary",
       "authorName": "Crypto Clairity",
@@ -56,7 +64,10 @@
     },
     {
       "id": "180563903",
-      "topics": ["DAO", "Summary"],
+      "topics": [
+        "DAO",
+        "Summary"
+      ],
       "title": "What is Voting For? [Summary]",
       "slug": "what-is-voting-for-summary",
       "authorName": "Crypto Clairity",
@@ -83,7 +94,10 @@
     },
     {
       "id": "180563908",
-      "topics": ["DAO", "Summary"],
+      "topics": [
+        "DAO",
+        "Summary"
+      ],
       "title": "What is Governance For? [Summary]",
       "slug": "what-is-governance-for-summary",
       "authorName": "Crypto Clairity",
@@ -110,7 +124,10 @@
     },
     {
       "id": "180563931",
-      "topics": ["Tokenomics", "Commentary"],
+      "topics": [
+        "Tokenomics",
+        "Commentary"
+      ],
       "title": "Blockchain Incentive Structures: What they are and why they matter [Commentary]",
       "slug": "blockchain-incentive-structures-what-they-are-and-why-they-matter-commentary",
       "authorName": "Crypto Clairity",
@@ -137,7 +154,10 @@
     },
     {
       "id": "167101094",
-      "topics": ["Getting Started", "Tokenomics"],
+      "topics": [
+        "Getting Started",
+        "Tokenomics"
+      ],
       "title": "Tokenomics 101: Unleashing the Power of Cryptocurrency!",
       "slug": "tokenomics-101-unleashing-the-power-of-cryptocurrency",
       "authorName": "Crypto Clairity",
@@ -164,7 +184,10 @@
     },
     {
       "id": "166981063",
-      "topics": ["Getting Started", "DAO"],
+      "topics": [
+        "Getting Started",
+        "DAO"
+      ],
       "title": "The Future is Here: The Rise of Decentralized Autonomous Organizations (DAOs)",
       "slug": "the-future-is-here-the-rise-of-decentralized-autonomous-organizations-daos",
       "authorName": "Crypto Clairity",
@@ -185,7 +208,10 @@
     },
     {
       "id": "165685908",
-      "topics": ["Getting Started", "Fundraising"],
+      "topics": [
+        "Getting Started",
+        "Fundraising"
+      ],
       "title": "Disrupt the Status Quo: How Cryptocurrency is Revolutionizing Fundraising and Crowdfunding",
       "slug": "disrupt-the-status-quo-how-cryptocurrency-is-revolutionizing-fundraising-and-crow",
       "authorName": "Crypto Clairity",
@@ -213,7 +239,11 @@
   ],
   "blogContent": {
     "id": "167184977",
-    "topics": ["Tokenomics", "DAO", "Fundraising"],
+    "topics": [
+      "Tokenomics",
+      "DAO",
+      "Fundraising"
+    ],
     "title": "Revolutionizing the Equity Model: How Tokenomics is Disrupting the Startup World",
     "slug": "revolutionizing-the-equity-model-how-tokenomics-is-disrupting-the-startup-world",
     "authorName": "Crypto Clairity",
@@ -239,7 +269,9 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": ["strong"],
+                      "marks": [
+                        "strong"
+                      ],
                       "value": "Introduction"
                     }
                   ]
@@ -282,7 +314,9 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": ["strong"],
+                      "marks": [
+                        "strong"
+                      ],
                       "value": "Token Equity Model (TEM)"
                     }
                   ]
@@ -416,7 +450,9 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": ["strong"],
+                      "marks": [
+                        "strong"
+                      ],
                       "value": " Overcoming the Challenges of Token Equity Model (TEM)"
                     }
                   ]
@@ -459,7 +495,9 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": ["strong"],
+                      "marks": [
+                        "strong"
+                      ],
                       "value": "Dutch Auction Token Sale Process"
                     }
                   ]
@@ -520,7 +558,9 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": ["strong"],
+                      "marks": [
+                        "strong"
+                      ],
                       "value": "Enter the Decentralized Autonomous Organization"
                     }
                   ]
@@ -599,7 +639,9 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": ["strong"],
+                      "marks": [
+                        "strong"
+                      ],
                       "value": "Conclusion"
                     }
                   ]
@@ -643,5 +685,10 @@
       }
     }
   },
-  "topics": ["Tokenomics", "DAO", "Fundraising"]
+  "topics": [
+    "Tokenomics",
+    "DAO",
+    "Fundraising"
+  ],
+  "shortLink": ""
 }

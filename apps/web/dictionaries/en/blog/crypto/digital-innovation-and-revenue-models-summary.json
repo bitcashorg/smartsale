@@ -2,7 +2,10 @@
   "relatedBlogs": [
     {
       "id": "180563903",
-      "topics": ["DAO", "Summary"],
+      "topics": [
+        "DAO",
+        "Summary"
+      ],
       "title": "What is Voting For? [Summary]",
       "slug": "what-is-voting-for-summary",
       "authorName": "Crypto Clairity",
@@ -29,7 +32,10 @@
     },
     {
       "id": "180563908",
-      "topics": ["DAO", "Summary"],
+      "topics": [
+        "DAO",
+        "Summary"
+      ],
       "title": "What is Governance For? [Summary]",
       "slug": "what-is-governance-for-summary",
       "authorName": "Crypto Clairity",
@@ -56,7 +62,10 @@
     },
     {
       "id": "180563931",
-      "topics": ["Tokenomics", "Commentary"],
+      "topics": [
+        "Tokenomics",
+        "Commentary"
+      ],
       "title": "Blockchain Incentive Structures: What they are and why they matter [Commentary]",
       "slug": "blockchain-incentive-structures-what-they-are-and-why-they-matter-commentary",
       "authorName": "Crypto Clairity",
@@ -84,7 +93,11 @@
   ],
   "blogContent": {
     "id": "179948652",
-    "topics": ["Tokenomics", "Industry", "Summary"],
+    "topics": [
+      "Tokenomics",
+      "Industry",
+      "Summary"
+    ],
     "title": "Digital Innovation and Revenue Models [Summary]",
     "slug": "digital-innovation-and-revenue-models-summary",
     "authorName": "Crypto Clairity",
@@ -167,7 +180,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Introduction (Page 3)"
                             },
                             {
@@ -186,7 +201,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Cost Structure for Traditional vs. Digital Goods (Page 3)"
                             },
                             {
@@ -205,7 +222,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Sustainable Business Strategies for the Digital World (Pages 4-5)"
                             },
                             {
@@ -224,7 +243,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Framework for Pricing Strategies (Page 7)"
                             },
                             {
@@ -258,7 +279,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Align Product and Revenue Strategy"
                             },
                             {
@@ -277,7 +300,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Leverage Network Effects"
                             },
                             {
@@ -296,7 +321,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Differentiate Your Product"
                             },
                             {
@@ -315,7 +342,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Consider Pricing Strategies"
                             },
                             {
@@ -334,7 +363,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Protect Your Intellectual Property"
                             },
                             {
@@ -353,7 +384,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Stay Agile"
                             },
                             {
@@ -419,7 +452,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Music Industry Evolution (Page 10)"
                             },
                             {
@@ -438,7 +473,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Digital Distribution Platforms (Page 11)"
                             },
                             {
@@ -457,7 +494,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "iTunes and the Monetization of Digital Music (Page 11)"
                             },
                             {
@@ -476,7 +515,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Shift to Music Streaming (Page 12)"
                             },
                             {
@@ -510,7 +551,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Consider Subscription Models"
                             },
                             {
@@ -553,5 +596,10 @@
       }
     }
   },
-  "topics": ["Tokenomics", "Industry", "Summary"]
+  "topics": [
+    "Tokenomics",
+    "Industry",
+    "Summary"
+  ],
+  "shortLink": ""
 }
