@@ -85,7 +85,6 @@ export async function subscribeToNewsletter(
 
 // generate dub.co links
 export async function generateShortLink(url: string, withCookies = true) {
-  // const cookieStorage = cookies()
   let cookieStorage: ReturnType<typeof cookies>;
   let getShareLinkCookies: { value: string } | undefined;
   
@@ -103,7 +102,6 @@ export async function generateShortLink(url: string, withCookies = true) {
         }
       }
     }
-    
 
     const resolved: DubShareLinkResponse = !getShareLinkCookies || !withCookies
       ? await axios
