@@ -2,15 +2,17 @@
   "relatedBlogs": [],
   "blogContent": {
     "id": "IZK5RRvqQFWba2TpHx2ckA",
-    "topics": ["bitcoin"],
-    "title": "Destinado a esta revolucion de Cripto e IA",
+    "topics": [
+      "bitcoin"
+    ],
+    "title": "Destined for this Crypto & AI Revolution",
     "slug": "destined-for-this-crypto-ai-revolution",
     "authorName": "Jun Dam",
     "authorPicture": {
       "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
     },
     "_publishedAt": "2024-02-14T13:04:49+00:00",
-    "description": "El viaje del fundador de bitcash, Jun Dam.",
+    "description": "bitcash Founder Jun Dam's journey. ",
     "thumbnail": {
       "url": "https://www.datocms-assets.com/101962/1707795626-bitcashg1.webp"
     },
@@ -228,7 +230,9 @@
                       "children": [
                         {
                           "type": "span",
-                          "marks": ["underline"],
+                          "marks": [
+                            "underline"
+                          ],
                           "value": "BITCOIN – THE LIBERTARIAN INTRODUCTION"
                         }
                       ]
@@ -373,7 +377,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Recognizing the critical role of education in fostering comfort and confidence among those entering the crypto space, I acknowledged the challenge posed by the relentless pace of activity. It's a realm too vast for anyone to track comprehensively. This realization spurred the creation of 100x Contributors, a platform dedicated to providing content and education for both novice and seasoned crypto contributors. Initially launched as a virtual web conference attracting over 500 attendees and featuring prominent speakers, it proved to be profitable.  My efforts expanded to co-organizing the World Crypto Economic Forum in 2018, headlined by Nick Szabo, a luminary in the crypto field. The forum drew more than 1,000 participants, achieving significant revenue. These ventures marked my first successful startup projects that gained traction and generated cash flow."
+                      "value": "Recognizing the critical role of education in fostering comfort and confidence among those entering the crypto space, I acknowledged the challenge posed by the relentless pace of activity. It's a realm too vast for anyone to track comprehensively. This realization spurred the creation of 100x Investors, a platform dedicated to providing content and education for both novice and seasoned crypto investors. Initially launched as a virtual web conference attracting over 500 attendees and featuring prominent speakers, it proved to be profitable.  My efforts expanded to co-organizing the World Crypto Economic Forum in 2018, headlined by Nick Szabo, a luminary in the crypto field. The forum drew more than 1,000 participants, achieving significant revenue. These ventures marked my first successful startup projects that gained traction and generated cash flow."
                     }
                   ]
                 },
@@ -424,7 +428,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "In today's rapidly evolving digital landscape, I perceive cryptocurrency's primary utility as the foundational financial infrastructure for a burgeoning new economy. Cryptocurrency's immediate and pivotal use cases include facilitating international fundraising and trading through tokenization, and enabling governance via Decentralized Autonomous Organization (DAO) smart contracts. Cryptocurrency offers a reliable platform for global contributors to support initiatives led by founders worldwide. This emerging class of global crypto enterprises can maintain open financial records and a transparent treasury—a stark contrast to traditional entities, which may obscure their financial dealings."
+                      "value": "In today's rapidly evolving digital landscape, I perceive cryptocurrency's primary utility as the foundational financial infrastructure for a burgeoning new economy. Cryptocurrency's immediate and pivotal use cases include facilitating international fundraising and trading through tokenization, and enabling governance via Decentralized Autonomous Organization (DAO) smart contracts. Cryptocurrency offers a reliable platform for global investors to support initiatives led by founders worldwide. This emerging class of global crypto enterprises can maintain open financial records and a transparent treasury—a stark contrast to traditional entities, which may obscure their financial dealings."
                     }
                   ]
                 },
@@ -433,7 +437,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "The advent of crypto organizations, particularly DAOs, has democratized the process of attracting contributors and contributors from across the globe, allowing early users to contribute and essentially become customer-owners. This transparency fosters an environment where companies are incentivized to develop their projects publicly. However, for cryptocurrency to achieve mainstream adoption, it's crucial to ensure that tokenomics are grounded in a sustainable cash-flow model and that the technology's usability rivals that of conventional web applications. Moreover, not all applications need to operate fully on the blockchain; its primary utility lies in payments, fundraising, and organizational functions."
+                      "value": "The advent of crypto organizations, particularly DAOs, has democratized the process of attracting contributors and investors from across the globe, allowing early users to invest and essentially become customer-owners. This transparency fosters an environment where companies are incentivized to develop their projects publicly. However, for cryptocurrency to achieve mainstream adoption, it's crucial to ensure that tokenomics are grounded in a sustainable cash-flow model and that the technology's usability rivals that of conventional web applications. Moreover, not all applications need to operate fully on the blockchain; its primary utility lies in payments, fundraising, and organizational functions."
                     }
                   ]
                 },
@@ -511,8 +515,8 @@
       }
     ],
     "seo": {
-      "description": "El viaje del fundador de bitcash, Jun Dam.",
-      "title": "Destinado a esta revolucion de Cripto e IA",
+      "description": "bitcash Founder Jun Dam's journey.",
+      "title": "Destined for this Crypto & AI Revolution",
       "twitterCard": null,
       "image": {
         "width": 1012,
@@ -523,5 +527,7 @@
       }
     }
   },
-  "topics": ["bitcoin"]
+  "topics": [
+    "bitcoin"
+  ]
 }

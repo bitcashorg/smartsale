@@ -2,301 +2,469 @@
   "relatedBlogs": [
     {
       "id": "180217169",
-      "topics": ["Tokenomics", "Bình luận"],
-      "title": "Kinh tế của các Kích thích Đã Token hóa 3: Giá trị Token Không Đồng nhất các Bên liên quan [Bình luận]",
+      "topics": [
+        "Tokenomics",
+        "Commentary"
+      ],
+      "title": "Economics of Tokenized Incentives 3: Token Value Won’t Align Stakeholders [Commentary]",
       "slug": "economics-of-tokenized-incentives-3-token-value-won-t-align-stakeholders-commenta",
       "authorName": "Crypto Clairity",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T09:17:23+01:00",
-      "description": "Khám phá những hạn chế khi sử dụng giá trị token làm chỉ số hiệu suất trong các nền tảng blockchain. Học cách thiết kế các hệ thống kích thích hiệu quả.",
+      "description": "Uncover the pitfalls of using token value as a performance metric in blockchain platforms. Learn to design effective incentive systems.",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1690771457-cbc3-img1.png"
       },
       "seo": {
-        "title": "Kinh tế của các Kích thích Đã Token hóa 3 [Bình luận]",
-        "description": "Khám phá những hạn chế khi sử dụng giá trị token làm chỉ số hiệu suất trong các nền tảng blockchain. Học cách thiết kế các hệ thống kích thích hiệu quả."
+        "description": "Uncover the pitfalls of using token value as a performance metric in blockchain platforms. Learn to design effective incentive systems.",
+        "title": "Economics of Tokenized Incentives 3 [Commentary]",
+        "twitterCard": null,
+        "image": {
+          "width": 862,
+          "height": 862,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1690771457-cbc3-img1.png"
+        }
       }
     },
     {
       "id": "180217123",
-      "topics": ["Tokenomics", "Bình luận"],
-      "title": "Kinh tế của các Kích thích Đã Token hóa 2: Lựa chọn các Chỉ số Hiệu suất Hiệu quả [Bình luận]",
+      "topics": [
+        "Tokenomics",
+        "Commentary"
+      ],
+      "title": "Economics of Tokenized Incentives 2: Selecting Effective Performance Metrics [Commentary]",
       "slug": "economics-of-tokenized-incentives-2-selecting-effective-performance-metrics-comme",
       "authorName": "Crypto Clairity",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T09:17:05+01:00",
-      "description": "Khám phá sức mạnh của các chỉ số hiệu suất trong các hệ thống thanh toán theo hiệu suất của blockchain. Học cách điều chỉnh các kích thích phù hợp với mục tiêu nền tảng một cách hiệu quả.",
+      "description": "Discover the power of performance metrics in blockchain pay-for-performance systems. Learn to align incentives with platform goals effectively.",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1690770918-cbc2-img1.png"
       },
       "seo": {
-        "title": "Kinh tế của các Kích thích Đã Token hóa 2 [Bình luận]",
-        "description": "Khám phá sức mạnh của các chỉ số hiệu suất trong các hệ thống thanh toán theo hiệu suất của blockchain. Học cách điều chỉnh các kích thích phù hợp với mục tiêu nền tảng một cách hiệu quả."
+        "description": "Discover the power of performance metrics in blockchain pay-for-performance systems. Learn to align incentives with platform goals effectively.",
+        "title": "Economics of Tokenized Incentives 2 [Commentary]",
+        "twitterCard": null,
+        "image": {
+          "width": 862,
+          "height": 862,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1690770918-cbc2-img1.png"
+        }
       }
     },
     {
       "id": "180217082",
-      "topics": ["Tokenomics", "Bình luận"],
-      "title": "Kinh tế của các Kích thích Đã Token hóa 1: Giới thiệu về Thanh toán theo Hiệu suất [Bình luận]",
+      "topics": [
+        "Tokenomics",
+        "Commentary"
+      ],
+      "title": "Economics of Tokenized Incentives 1: Intro to Pay for Performance [Commentary]",
       "slug": "economics-of-tokenized-incentives-1-intro-to-pay-for-performance",
       "authorName": "Crypto Clairity",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T09:15:12+01:00",
-      "description": "Khám phá sự phức tạp của các kích thích thanh toán theo hiệu suất trong các nền tảng blockchain. Học các sự đánh đổi và xem xét thiết kế cho thành công.",
+      "description": "Dive into the complexities of pay-for-performance incentives in blockchain platforms. Learn the trade-offs and design considerations for success.",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1690770568-cbc1-img1.png"
       },
       "seo": {
-        "title": "Kinh tế của các Kích thích Đã Token hóa 1 [Bình luận]",
-        "description": "Khám phá sự phức tạp của các kích thích thanh toán theo hiệu suất trong các nền tảng blockchain. Học các sự đánh đổi và xem xét thiết kế cho thành công"
+        "description": "Dive into the complexities of pay-for-performance incentives in blockchain platforms. Learn the trade-offs and design considerations for success",
+        "title": "Economics of Tokenized Incentives 1 [Commentary]",
+        "twitterCard": null,
+        "image": {
+          "width": 862,
+          "height": 862,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1690770568-cbc1-img1.png"
+        }
       }
     },
     {
       "id": "180556627",
-      "topics": ["Bình luận", "Hợp đồng thông minh"],
-      "title": "Hợp đồng Không Hoàn chỉnh và Blockchain [Bình luận]",
+      "topics": [
+        "Commentary",
+        "Smart Contracts"
+      ],
+      "title": "Incomplete Contracts and Blockchain [Commentary]",
       "slug": "incomplete-contracts-and-blockchain-commentary",
       "authorName": "Crypto Clairity",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T09:14:44+01:00",
-      "description": "Làm sáng tỏ mối quan hệ giữa hợp đồng không hoàn chỉnh và blockchain. Hiểu cách blockchain có thể lấp đầy các khoảng trống hợp đồng.",
+      "description": "Demystify the relationship between incomplete contracts and blockchain. Understand how blockchain can fill contractual gaps.",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1690856249-cbc5-img1.png"
       },
       "seo": {
-        "title": "Hợp đồng Không Hoàn chỉnh và Blockchain [Bình luận]",
-        "description": "Làm sáng tỏ mối quan hệ giữa hợp đồng không hoàn chỉnh và blockchain. Hiểu cách blockchain có thể lấp đầy các khoảng trống hợp đồng."
+        "description": "Demystify the relationship between incomplete contracts and blockchain. Understand how blockchain can fill contractual gaps.",
+        "title": "Incomplete Contracts and Blockchain [Commentary]",
+        "twitterCard": null,
+        "image": {
+          "width": 862,
+          "height": 862,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1690856249-cbc5-img1.png"
+        }
       }
     },
     {
       "id": "180563918",
-      "topics": ["Tokenomics", "Bình luận", "Gây quỹ"],
-      "title": "Token: Phương tiện Đầu tư hay Phương tiện Trao đổi (Không phải Cả Hai) [Bình luận]",
+      "topics": [
+        "Tokenomics",
+        "Commentary",
+        "Fundraising"
+      ],
+      "title": "Tokens: Investment Vehicle or Medium of Exchange (Not Both) [Commentary]",
       "slug": "tokens-investment-vehicle-or-medium-of-exchange-not-both-commentary",
       "authorName": "Crypto Clairity",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T09:13:31+01:00",
-      "description": "Khám phá vai trò kép của token trong nền kinh tế blockchain. Tìm hiểu ranh giới mỏng manh giữa phương tiện đầu tư và phương tiện trao đổi.",
+      "description": "Delve into the dual role of tokens in the blockchain economy. Uncover the fine line between investment vehicle and medium of exchange.",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1690859959-cbc8-img1.png"
       },
       "seo": {
-        "title": "Token: Đầu tư hay Phương tiện Trao đổi [Bình luận]",
-        "description": "Khám phá vai trò kép của token trong nền kinh tế blockchain. Tìm hiểu ranh giới mỏng manh giữa phương tiện đầu tư và phương tiện trao đổi."
+        "description": "Delve into the dual role of tokens in the blockchain economy. Uncover the fine line between investment vehicle and medium of exchange.",
+        "title": "Tokens: Investment or Medium of Exchange [Commentary]",
+        "twitterCard": null,
+        "image": {
+          "width": 862,
+          "height": 862,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1690859959-cbc8-img1.png"
+        }
       }
     },
     {
       "id": "180563922",
-      "topics": ["Gây quỹ", "Tokenomics", "Bình luận"],
-      "title": "ICO Tận dụng Hiệu ứng Mạng [Bình luận]",
+      "topics": [
+        "Fundraising",
+        "Tokenomics",
+        "Commentary"
+      ],
+      "title": "ICOs Leverage Network Effects [Commentary]",
       "slug": "icos-leverage-network-effects-commentary",
       "authorName": "Crypto Clairity",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T09:12:06+01:00",
-      "description": "Khám phá cách ICO tận dụng sức mạnh của hiệu ứng mạng để thúc đẩy thành công của họ. ICO và hiệu ứng mạng, một cặp đôi động lực!",
+      "description": "Discover how ICOs harness the power of network effects to fuel their success. ICOs and network effects, a dynamic duo!",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1690860184-cbc9-img1.png"
       },
       "seo": {
-        "title": "ICO Tận dụng Hiệu ứng Mạng [Bình luận]",
-        "description": "Khám phá cách ICO tận dụng sức mạnh của hiệu ứng mạng để thúc đẩy thành công của họ. ICO và hiệu ứng mạng, một cặp đôi động lực!"
+        "description": "Discover how ICOs harness the power of network effects to fuel their success. ICOs and network effects, a dynamic duo!",
+        "title": "ICOs Leverage Network Effects [Commentary]",
+        "twitterCard": null,
+        "image": {
+          "width": 862,
+          "height": 862,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1690860184-cbc9-img1.png"
+        }
       }
     },
     {
       "id": "179948652",
-      "topics": ["Tokenomics", "Ngành", "Tóm tắt"],
-      "title": "Đổi mới Kỹ thuật số và Mô hình Doanh thu [Tóm tắt]",
+      "topics": [
+        "Tokenomics",
+        "Industry",
+        "Summary"
+      ],
+      "title": "Digital Innovation and Revenue Models [Summary]",
       "slug": "digital-innovation-and-revenue-models-summary",
       "authorName": "Crypto Clairity",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T09:11:35+01:00",
-      "description": "Khám phá cách đổi mới kỹ thuật số làm thay đổi việc giao hàng sản phẩm trong 'Đổi mới Kỹ thuật số và Mô hình Doanh thu' của Prysm Group. Khám phá kinh tế công nghệ mới nổi.",
+      "description": "Uncover how digital innovation reshapes product delivery in Prysm Group's 'Digital Innovation and Revenue Models'. Explore emerging tech economics.",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1690668517-cbr1-img1.png"
       },
       "seo": {
-        "title": "Đổi mới Kỹ thuật số và Mô hình Doanh thu [Tóm tắt]",
-        "description": "Khám phá cách đổi mới kỹ thuật số làm thay đổi việc giao hàng sản phẩm trong 'Đổi mới Kỹ thuật số và Mô hình Doanh thu' của Prysm Group. Khám phá kinh tế công nghệ mới nổi."
+        "description": "Uncover how digital innovation reshapes product delivery in Prysm Group's 'Digital Innovation and Revenue Models'. Explore emerging tech economics.",
+        "title": "Digital Innovation and Revenue Models [Summary]",
+        "twitterCard": null,
+        "image": {
+          "width": 862,
+          "height": 862,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1690668517-cbr1-img1.png"
+        }
       }
     },
     {
       "id": "180556595",
-      "topics": ["Gây quỹ", "Tokenomics", "Bình luận"],
-      "title": "Hiệu ứng Blockchain: Hiệu ứng Mạng không Chi phí Quyền lực Thị trường [Bình luận]",
+      "topics": [
+        "Fundraising",
+        "Tokenomics",
+        "Commentary"
+      ],
+      "title": "The Blockchain Effect: Network Effects without Market Power Costs [Commentary]",
       "slug": "the-blockchain-effect-network-effects-without-market-power-costs-commentary",
       "authorName": "Crypto Clairity",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T09:11:14+01:00",
-      "description": "Khám phá cách blockchain cho phép hiệu ứng mạng mà không có nhược điểm của quyền lực thị trường. Khám phá Hiệu ứng Blockchain mang tính đột phá.",
+      "description": "Explore how blockchain enables network effects without the downsides of market power. Discover the game-changing Blockchain Effect.",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1690855275-cbc4-img1.png"
       },
       "seo": {
-        "title": "Hiệu ứng Mạng không Chi phí Quyền lực Thị trường [Bình luận]",
-        "description": "Khám phá cách blockchain cho phép hiệu ứng mạng mà không có nhược điểm của quyền lực thị trường. Khám phá Hiệu ứng Blockchain mang tính đột phá."
+        "description": "Explore how blockchain enables network effects without the downsides of market power. Discover the game-changing Blockchain Effect.",
+        "title": "Network Effects without Market Power Costs [Commentary]",
+        "twitterCard": null,
+        "image": {
+          "width": 862,
+          "height": 862,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1690855275-cbc4-img1.png"
+        }
       }
     },
     {
       "id": "180563903",
-      "topics": ["DAO", "Tóm tắt"],
-      "title": "Bỏ phiếu để làm gì? [Tóm tắt]",
+      "topics": [
+        "DAO",
+        "Summary"
+      ],
+      "title": "What is Voting For? [Summary]",
       "slug": "what-is-voting-for-summary",
       "authorName": "Crypto Clairity",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T09:10:58+01:00",
-      "description": "Giải mã bản chất của việc bỏ phiếu trong các hệ thống phi tập trung. Hiểu rõ mục đích và sức mạnh thực sự của việc bỏ phiếu trong blockchain.",
+      "description": "Unravel the essence of voting within decentralized systems. Gain insights into the true purpose and power of voting in blockchain.",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1690859305-cbc6-img1.png"
       },
       "seo": {
-        "title": "Bỏ phiếu để làm gì? [Tóm tắt]",
-        "description": "Giải mã bản chất của việc bỏ phiếu trong các hệ thống phi tập trung. Hiểu rõ mục đích và sức mạnh thực sự của việc bỏ phiếu trong blockchain."
+        "description": "Unravel the essence of voting within decentralized systems. Gain insights into the true purpose and power of voting in blockchain.",
+        "title": "What is Voting For? [Summary]",
+        "twitterCard": null,
+        "image": {
+          "width": 862,
+          "height": 862,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1690859305-cbc6-img1.png"
+        }
       }
     },
     {
       "id": "180563908",
-      "topics": ["DAO", "Tóm tắt"],
-      "title": "Quản trị để làm gì? [Tóm tắt]",
+      "topics": [
+        "DAO",
+        "Summary"
+      ],
+      "title": "What is Governance For? [Summary]",
       "slug": "what-is-governance-for-summary",
       "authorName": "Crypto Clairity",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T09:10:45+01:00",
-      "description": "Khám phá vai trò và tầm quan trọng của quản trị trong các hệ thống blockchain. Hiểu cách quản trị thúc đẩy sự phi tập trung và tăng trưởng.",
+      "description": "Explore the role and importance of governance in blockchain systems. Understand how governance drives decentralization and growth.",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1690859755-cbc7-img1.png"
       },
       "seo": {
-        "title": "Quản trị để làm gì? [Tóm tắt]",
-        "description": "Khám phá vai trò và tầm quan trọng của quản trị trong các hệ thống blockchain. Hiểu cách quản trị thúc đẩy sự phi tập trung và tăng trưởng."
+        "description": "Explore the role and importance of governance in blockchain systems. Understand how governance drives decentralization and growth.\n",
+        "title": "What is Governance For? [Summary]",
+        "twitterCard": null,
+        "image": {
+          "width": 862,
+          "height": 862,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1690859755-cbc7-img1.png"
+        }
       }
     },
     {
       "id": "180563931",
-      "topics": ["Tokenomics", "Bình luận"],
-      "title": "Cấu trúc Kích thích Blockchain: Chúng là gì và tại sao chúng quan trọng [Bình luận]",
+      "topics": [
+        "Tokenomics",
+        "Commentary"
+      ],
+      "title": "Blockchain Incentive Structures: What they are and why they matter [Commentary]",
       "slug": "blockchain-incentive-structures-what-they-are-and-why-they-matter-commentary",
       "authorName": "Crypto Clairity",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T09:10:02+01:00",
-      "description": "Hiểu rõ bản chất của các cấu trúc kích thích blockchain và tầm quan trọng của chúng trong việc thúc đẩy hành vi người dùng và thành công của nền tảng.",
+      "description": "Understand the core of blockchain incentive structures and their significance in driving user behavior and platform success.",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1690860807-cbc10-img1.png"
       },
       "seo": {
-        "title": "Cấu trúc Kích thích Blockchain [Bình luận]",
-        "description": "Hiểu rõ bản chất của các cấu trúc kích thích blockchain và tầm quan trọng của chúng trong việc thúc đẩy hành vi người dùng và thành công của nền tảng."
+        "description": "Understand the core of blockchain incentive structures and their significance in driving user behavior and platform success.",
+        "title": "Blockchain Incentive Structures [Commentary]",
+        "twitterCard": null,
+        "image": {
+          "width": 862,
+          "height": 862,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1690860807-cbc10-img1.png"
+        }
       }
     },
     {
       "id": "167184977",
-      "topics": ["Tokenomics", "DAO", "Gây quỹ"],
-      "title": "Cách mạng hóa Mô hình Cổ phần: Làm thế nào Tokenomics làm xáo trộn Thế giới Khởi nghiệp",
+      "topics": [
+        "Tokenomics",
+        "DAO",
+        "Fundraising"
+      ],
+      "title": "Revolutionizing the Equity Model: How Tokenomics is Disrupting the Startup World",
       "slug": "revolutionizing-the-equity-model-how-tokenomics-is-disrupting-the-startup-world",
       "authorName": "Crypto Clairity",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T09:02:51+01:00",
-      "description": "Mở khóa tương lai của các công ty khởi nghiệp với tokenomics! Khám phá cách khái niệm sáng tạo này làm thay đổi mô hình cổ phần và cách mạng hóa cảnh quan khởi nghiệp.",
+      "description": "Unlock the future of startups with tokenomics! Explore how this innovative concept is reshaping the equity model and revolutionizing the startup landscape.",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1687395688-tb2-img1.png"
       },
       "seo": {
-        "title": "Làm thế nào Tokenomics làm xáo trộn Thế giới Khởi nghiệp",
-        "description": "Khám phá cách khái niệm sáng tạo này làm thay đổi mô hình cổ phần và cách mạng hóa cảnh quan khởi nghiệp."
+        "description": "Explore how this innovative concept is reshaping the equity model and revolutionizing the startup landscape.",
+        "title": "How Tokenomics is Disrupting the Startup World",
+        "twitterCard": null,
+        "image": {
+          "width": 994,
+          "height": 994,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1687395688-tb2-img1.png"
+        }
       }
     },
     {
       "id": "166984334",
-      "topics": ["DAO", "Pháp lý"],
-      "title": "Tổ chức Tự trị Phân cấp (DAOs): Các Cấu trúc Pháp lý Cơ bản cho Mục đích Kinh doanh và Phi lợi nhuận",
+      "topics": [
+        "DAO",
+        "Legal"
+      ],
+      "title": "Decentralized Autonomous Organizations (DAOs): Basic Legal Structures for Business and Non-Profit Purposes",
       "slug": "decentralized-autonomous-organizations-daos-basic-legal-structures-for-business-a",
       "authorName": "Crypto Clairity",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T08:59:06+01:00",
-      "description": "Khám phá các cấu trúc pháp lý cơ bản của DAO cho mục đích kinh doanh và phi lợi nhuận.",
+      "description": "Discover the basic DAO legal structures for business and non-profit purposes. ",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1687384353-db2-img1.png"
       },
       "seo": {
-        "title": "DAOs: Điều hướng Các Cấu trúc Pháp lý cho Kinh doanh & Phi lợi nhuận",
-        "description": "Tổ chức Tự trị Phân cấp (DAOs): Điều hướng Các Cấu trúc Pháp lý cho Kinh doanh và Phi lợi nhuận"
+        "description": "Decentralized Autonomous Organizations (DAOs): Navigating Legal Structures for Business and Non-Profit Purposes",
+        "title": "DAOs: Navigating Legal Structures for Business & Non-Profit ",
+        "twitterCard": null,
+        "image": {
+          "width": 994,
+          "height": 994,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1687384353-db2-img1.png"
+        }
       }
     },
     {
       "id": "167101094",
-      "topics": ["Bắt đầu", "Tokenomics"],
-      "title": "Tokenomics 101: Khai phá Sức mạnh của Tiền điện tử!",
+      "topics": [
+        "Getting Started",
+        "Tokenomics"
+      ],
+      "title": "Tokenomics 101: Unleashing the Power of Cryptocurrency!",
       "slug": "tokenomics-101-unleashing-the-power-of-cryptocurrency",
       "authorName": "Crypto Clairity",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T08:57:58+01:00",
-      "description": "Khám phá sức mạnh của tiền điện tử thông qua Tokenomics 101 - hướng dẫn sâu sắc để hiểu biết về kinh tế đằng sau các tài sản số.",
+      "description": "Discover the power of cryptocurrency through Tokenomics 101 - an in-depth guide to understanding the economics behind digital assets.",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1687391799-tb1-img1.png"
       },
       "seo": {
-        "title": "Tokenomics 101: Khai phá Sức mạnh của Tiền điện tử!",
-        "description": "hướng dẫn sâu sắc để hiểu biết về kinh tế đằng sau các tài sản số."
+        "description": "an in-depth guide to understanding the economics behind digital assets.",
+        "title": "Tokenomics 101: Unleashing the Power of Cryptocurrency!",
+        "twitterCard": null,
+        "image": {
+          "width": 994,
+          "height": 994,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1687391799-tb1-img1.png"
+        }
       }
     },
     {
       "id": "166981063",
-      "topics": ["Bắt đầu", "DAO"],
-      "title": "Tương lai đã đến: Sự Trỗi dậy của các Tổ chức Tự trị Phân cấp (DAOs)",
+      "topics": [
+        "Getting Started",
+        "DAO"
+      ],
+      "title": "The Future is Here: The Rise of Decentralized Autonomous Organizations (DAOs)",
       "slug": "the-future-is-here-the-rise-of-decentralized-autonomous-organizations-daos",
       "authorName": "Crypto Clairity",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T08:57:02+01:00",
-      "description": "Khám phá sự trỗi dậy của các Tổ chức Tự trị Phân cấp (DAOs) trong hướng dẫn của chúng tôi. Hiểu tương lai của kinh doanh và các cơ hội cho các công ty khởi nghiệp.",
+      "description": "Explore the rise of Decentralized Autonomous Organizations (DAOs) in our guide. Understand the future of business and the opportunities for startups.",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1687381524-db1-img1.png"
       },
       "seo": {
-        "title": "Sự Trỗi dậy của các Tổ chức Tự trị Phân cấp",
-        "description": "Khám phá sự trỗi dậy của các Tổ chức Tự trị Phân cấp (DAOs) trong hướng dẫn của chúng tôi. Hiểu tương lai của kinh doanh và các cơ hội cho các công ty khởi nghiệp."
+        "description": "Explore the rise of Decentralized Autonomous Organizations (DAOs) in our guide. Understand the future of business and the opportunities for startups.",
+        "title": "The Rise of Decentralized Autonomous Organizations ",
+        "twitterCard": null,
+        "image": null
       }
     }
   ],
   "blogContent": {
     "id": "180563939",
-    "topics": ["DAO", "Tokenomics", "Bình luận"],
-    "title": "Một Khung cho Thiết kế Quản trị Blockchain: Bánh xe Nhóm Prysm [Bình luận]",
+    "topics": [
+      "DAO",
+      "Tokenomics",
+      "Commentary"
+    ],
+    "title": "A Framework for Blockchain Governance Design: The Prysm Group Wheel [Commentary]",
     "slug": "a-framework-for-blockchain-governance-design-the-prysm-group-wheel-commentary",
     "authorName": "Crypto Clairity",
     "authorPicture": {
       "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
     },
     "_publishedAt": "2023-10-05T09:19:19+01:00",
-    "description": "Điều hướng sự phức tạp của quản trị blockchain với Bánh xe Nhóm Prysm. Lộ trình của bạn để thiết kế quản trị blockchain hiệu quả.",
+    "description": "Navigate the complexities of blockchain governance with the Prysm Group Wheel. Your roadmap to effective blockchain governance design.",
     "thumbnail": {
       "url": "https://www.datocms-assets.com/101962/1690861154-cbc11-img1.webp"
     },
@@ -313,7 +481,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Liên kết Gốc: "
+                      "value": "Original Link: "
                     },
                     {
                       "url": "https://medium.com/prysmeconomics/a-framework-for-blockchain-governance-design-the-prysm-group-wheel-703279c1b0dd?source=user_profile---------0----------------------------",
@@ -327,7 +495,7 @@
                       "children": [
                         {
                           "type": "span",
-                          "value": "Một Khung cho Thiết kế Quản trị Blockchain: Bánh xe Nhóm Prysm"
+                          "value": "A Framework for Blockchain Governance Design: The Prysm Group Wheel"
                         }
                       ]
                     }
@@ -338,7 +506,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Tác giả: "
+                      "value": "Author: "
                     },
                     {
                       "url": "https://medium.com/@cathybarreraphd?source=post_page-----703279c1b0dd--------------------------------",
@@ -352,7 +520,7 @@
                       "children": [
                         {
                           "type": "span",
-                          "value": "Cathy Barrera, Tiến sĩ"
+                          "value": "Cathy Barrera, PhD"
                         }
                       ]
                     }
@@ -364,7 +532,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Tóm tắt & Bình luận"
+                      "value": "Summary & Commentary"
                     }
                   ]
                 },
@@ -373,7 +541,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Bài viết làm rõ sự khác biệt giữa các quy tắc hoạt động và quản trị trong các nền tảng blockchain, cùng với việc đề xuất một khung có cấu trúc để thiết kế quản trị hiệu quả cho các hệ thống này."
+                      "value": "The piece articulates the difference between operational rules and governance in blockchain platforms, along with offering a structured framework for designing effective governance for such systems."
                     }
                   ]
                 },
@@ -382,7 +550,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Các quy tắc hoạt động là các quy định điều khiển hoạt động hàng ngày trên nền tảng blockchain. Chúng quyết định kích thước của phần thưởng khối, chỉ định cách khối tiếp theo trong chuỗi sẽ được xác định, và đảm bảo các hợp đồng, thị trường, và kinh tế token hoạt động hiệu quả."
+                      "value": "Operational rules are the regulations that guide daily operations in a blockchain platform. They determine the size of block rewards, dictate how the next block in the chain will be determined, and ensure contracts, markets, and token economies behave effectively."
                     }
                   ]
                 },
@@ -391,7 +559,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Tuy nhiên, quản trị liên quan đến các quá trình ra quyết định về các thay đổi hoặc cập nhật đối với các quy tắc hoạt động. Nó giải quyết các sự kiện bất ngờ và các thay đổi không lường trước, cho phép hệ thống thích ứng theo thời gian với các biến đổi thị trường không thể tránh khỏi."
+                      "value": "Governance, however, involves the decision-making processes regarding changes or updates to the operational rules. It addresses unexpected events and unanticipated changes, allowing the system to adapt over time to inevitable market variations."
                     }
                   ]
                 },
@@ -400,7 +568,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Điểm then chốt ở đây là trong khi các quy tắc hoạt động là xương sống của một nền tảng, quản trị là dòng máu của nó, cho phép nó thích ứng, phát triển và tiến hóa."
+                      "value": "The key takeaway here is that while operational rules are the backbone of a platform, governance is its lifeblood, allowing it to adapt, grow, and evolve."
                     }
                   ]
                 },
@@ -409,7 +577,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Bánh xe Nhóm Prysm được giới thiệu như một khung hữu ích để thiết kế quản trị blockchain hiệu quả. Bảy yếu tố mà nó đề xuất xem xét bao gồm:"
+                      "value": "The Prysm Group Wheel is introduced as a useful framework for designing effective blockchain governance. The seven elements it suggests to consider are:"
                     }
                   ]
                 },
@@ -425,12 +593,14 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
-                              "value": "Phạm vi Quyết định"
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Scope of Decisions"
                             },
                             {
                               "type": "span",
-                              "value": ": Hiểu những quyết định cần được đưa ra trong quá trình quản trị và lập kế hoạch cho phù hợp."
+                              "value": ": Understand what decisions need to be made with the governance process and plan accordingly."
                             }
                           ]
                         }
@@ -444,12 +614,14 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
-                              "value": "Các bên liên quan / Người tham gia"
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Stakeholders / Participants"
                             },
                             {
                               "type": "span",
-                              "value": ": Xác định các bên liên quan và các mục tiêu khác nhau của họ để đảm bảo rằng các quyết định phù hợp với mong muốn của họ."
+                              "value": ": Define stakeholders and their various objectives to ensure that decisions align with their wishes."
                             }
                           ]
                         }
@@ -463,12 +635,14 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
-                              "value": "Nghiên cứu và Phát triển Chính sách"
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Policy Research and Development"
                             },
                             {
                               "type": "span",
-                              "value": ": Chuẩn bị một đề xuất cụ thể để thực hiện một quyết định, đặc biệt là đối với các dự án blockchain nơi các quyết định phải được dịch thành mã."
+                              "value": ": Prepare a specific proposal to implement a decision, especially for blockchain projects where decisions have to be translated into code."
                             }
                           ]
                         }
@@ -482,12 +656,14 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
-                              "value": "Quy trình Đề xuất"
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Proposal Process"
                             },
                             {
                               "type": "span",
-                              "value": ": Thiết lập một quy trình rõ ràng để đưa ra các đề xuất."
+                              "value": ": Establish a clear process by which proposals are made."
                             }
                           ]
                         }
@@ -501,12 +677,14 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
-                              "value": "Hệ thống Phân phối Thông tin / Giáo dục"
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Information Distribution Systems / Education"
                             },
                             {
                               "type": "span",
-                              "value": ": Giao tiếp hiệu quả với tất cả các bên liên quan để đảm bảo quyết định thông suốt."
+                              "value": ": Communicate effectively with all stakeholders to ensure informed decision-making."
                             }
                           ]
                         }
@@ -520,12 +698,14 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
-                              "value": "Quy trình Ra Quyết định"
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Decision-Making Procedures"
                             },
                             {
                               "type": "span",
-                              "value": ": Thực hiện các cơ chế để tạo điều kiện ra quyết định mà các bên liên quan cảm thấy đại diện cho lợi ích của họ."
+                              "value": ": Implement mechanisms to facilitate decision-making that stakeholders feel represents their interests."
                             }
                           ]
                         }
@@ -539,12 +719,14 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
-                              "value": "Thực hiện và Quyền Sở hữu"
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Implementation and Property Rights"
                             },
                             {
                               "type": "span",
-                              "value": ": Hiểu quyền sở hữu của các bên liên quan trong hệ sinh thái để tránh mất cân bằng quyền lực trong giai đoạn thực hiện."
+                              "value": ": Understand the property rights of ecosystem stakeholders to avoid power imbalance during the implementation phase."
                             }
                           ]
                         }
@@ -557,7 +739,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Các hành động thực tế có thể được thực hiện dựa trên những hiểu biết này bao gồm những điều sau:"
+                      "value": "Practical actions that can be taken based on these insights include the following:"
                     }
                   ]
                 },
@@ -573,12 +755,14 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
-                              "value": "Các nhà phát triển Blockchain"
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Blockchain developers"
                             },
                             {
                               "type": "span",
-                              "value": " nên tập trung vào việc phát triển các cơ chế quản trị cho phép thích ứng và thay đổi. Họ cũng nên nhắm đến việc bao gồm tất cả các bên tham gia trong quá trình ra quyết định."
+                              "value": " should focus on developing governance mechanisms that allow for adaptability and change. They should also aim to include all participants in decision-making processes."
                             }
                           ]
                         }
@@ -592,12 +776,14 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
-                              "value": "Nhà đầu tư"
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Investors"
                             },
                             {
                               "type": "span",
-                              "value": " trong các dự án blockchain nên tìm kiếm những dự án có cấu trúc quản trị được thiết kế tốt, vì những dự án này có khả năng thành công lâu dài hơn."
+                              "value": " in blockchain projects should look for those with well-designed governance structures, as these are more likely to succeed in the long term."
                             }
                           ]
                         }
@@ -611,12 +797,14 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
-                              "value": "Người dùng Blockchain"
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Blockchain users"
                             },
                             {
                               "type": "span",
-                              "value": " cần hiểu các cấu trúc quản trị của các nền tảng mà họ sử dụng để đảm bảo rằng họ thoải mái với các quy trình ra quyết định."
+                              "value": " need to understand the governance structures of the platforms they use to ensure that they are comfortable with the decision-making processes."
                             }
                           ]
                         }
@@ -630,12 +818,14 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
-                              "value": "Nhà hoạch định chính sách và các nhà quản lý"
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Policy-makers and regulators"
                             },
                             {
                               "type": "span",
-                              "value": " nên làm quen với các mô hình quản trị blockchain khác nhau để hiểu cách tốt nhất để quản lý các nền tảng này."
+                              "value": " should familiarize themselves with different blockchain governance models in order to understand how best to regulate these platforms."
                             }
                           ]
                         }
@@ -648,7 +838,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Kết luận, quản trị trong các nền tảng blockchain nên được coi là một thành phần thiết yếu của thiết kế của chúng và nên được xem xét cùng một mức độ như các quy tắc hoạt động. Thông qua thiết kế cẩn thận và sự cân nhắc kỹ lưỡng của tất cả các bên liên quan, quản trị blockchain hiệu quả có thể được đạt được."
+                      "value": "In conclusion, governance in blockchain platforms should be seen as an essential component of their design and should be given the same level of consideration as the operational rules themselves. Through careful design and thoughtful consideration of all stakeholders, effective blockchain governance can be achieved."
                     }
                   ]
                 }
@@ -670,8 +860,8 @@
       }
     ],
     "seo": {
-      "description": "Điều hướng sự phức tạp của quản trị blockchain với Bánh xe Nhóm Prysm. Lộ trình của bạn để thiết kế quản trị blockchain hiệu quả.",
-      "title": "Một Khung cho Thiết kế Quản trị Blockchain [Bình luận]",
+      "description": "Navigate the complexities of blockchain governance with the Prysm Group Wheel. Your roadmap to effective blockchain governance design.",
+      "title": "A Framework for Blockchain Governance Design [Commentary]",
       "twitterCard": null,
       "image": {
         "width": 1400,
@@ -682,5 +872,9 @@
       }
     }
   },
-  "topics": ["DAO", "Tokenomics", "Commentary"]
+  "topics": [
+    "DAO",
+    "Tokenomics",
+    "Commentary"
+  ]
 }

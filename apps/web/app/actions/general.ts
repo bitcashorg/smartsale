@@ -86,13 +86,22 @@ export async function subscribeToNewsletter(
 // generate dub.co links
 export async function generateShortLink(url: string, withCookies = true) {
   // const cookieStorage = cookies()
-  let cookieStorage;
-  let getShareLinkCookies;
-
+  let cookieStorage: ReturnType<typeof cookies>;
+  let getShareLinkCookies: { value: string } | undefined;
+  
   try {
     if (withCookies) {
       cookieStorage = cookies()
       getShareLinkCookies = cookieStorage.get('bitlauncher-share-link')
+
+      if (getShareLinkCookies?.value) {
+        try {
+          JSON.parse(getShareLinkCookies.value)
+        } catch (e) {
+          console.warn('Invalid cookie format:', e)
+          getShareLinkCookies = undefined
+        }
+      }
     }
     
 

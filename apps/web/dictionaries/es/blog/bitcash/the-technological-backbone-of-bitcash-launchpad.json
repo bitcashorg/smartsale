@@ -2,92 +2,137 @@
   "relatedBlogs": [
     {
       "id": "BEfgGhndSsCn5MBU89RO3A",
-      "topics": ["launchpad"],
-      "title": "Impulsando la Innovacion: Vision, Mision y Objetivos Estrategicos de bitLauncher",
+      "topics": [
+        "launchpad"
+      ],
+      "title": "Empowering Innovation: Vision, Mission, and Strategic Goals of bitLauncher",
       "slug": "empowering-innovation-vision-mission-and-strategic-goals-of-bitcash-launchpad",
       "authorName": "Jun Dam",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
       },
       "_publishedAt": "2024-03-14T05:31:29+00:00",
-      "description": "Esta seccion describe la vision de bitcash Launchpad para revolucionar la innovacion en IA con criptomonedas, detallando nuestra mision de democratizar el desarrollo de IA y nuestros objetivos estrategicos para crear un futuro tecnologico impulsado por la comunidad, transparente y etico.",
+      "description": "This section outlines bitcash Launchpad's vision to revolutionize AI innovation with cryptocurrency, detailing our mission to democratize AI development and our strategic goals for creating a community-driven, transparent, and ethical technological future.",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1709370139-whitepaper-p4.webp"
       },
       "seo": {
-        "title": "Impulsando la Innovacion: Vision, Mision y Objetivos Estrategicos",
-        "description": "Esta seccion describe nuestra vision, mision y objetivos para revolucionar la innovacion en IA con criptomonedas."
+        "description": "This section outlines our vision, mission and goals to revolutionize AI innovation with cryptocurrency.",
+        "title": "Empowering Innovation: Vision, Mission, and Strategic Goals ",
+        "twitterCard": null,
+        "image": {
+          "width": 700,
+          "height": 700,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1709370139-whitepaper-p4.webp"
+        }
       }
     },
     {
       "id": "NZeB3i5XRzuELW2UWBDyRQ",
-      "topics": ["research", "dao", "fundraising", "launchpad"],
-      "title": "Navegando la Convergencia: Un Analisis Integral del Mercado de IA y la Dinamica de las Criptomonedas",
+      "topics": [
+        "research",
+        "dao",
+        "fundraising",
+        "launchpad"
+      ],
+      "title": "Navigating the Convergence: A Comprehensive Market Analysis of AI and the Cryptocurrency Dynamic",
       "slug": "navigating-the-convergence-a-comprehensive-market-analysis-of-ai-and-cryptocurren",
       "authorName": "Jun Dam",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
       },
       "_publishedAt": "2024-03-14T05:30:05+00:00",
-      "description": "Esta seccion explora la interseccion dinamica de IA y criptomonedas, destacando tendencias clave, desafios y oportunidades, y posiciona a bitcash Launchpad como una plataforma pionera para proyectos de IA de codigo abierto.",
+      "description": "This section explores the dynamic intersection of AI and cryptocurrency, highlighting key trends, challenges, and opportunities, and positions bitcash Launchpad as a pioneering platform for open-source AI projects.",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1709276586-marketanalysis-img2.webp"
       },
       "seo": {
-        "title": "Analisis de Mercado de la Dinamica de IA y Criptomonedas",
-        "description": "Tendencias clave, desafios y oportunidades, y posiciona a bitcash Launchpad como una plataforma pionera para proyectos de IA de codigo abierto."
+        "description": "Key trends, challenges, and opportunities, and positions bitcash Launchpad as a pioneering platform for open-source AI projects.",
+        "title": "Market Analysis of AI and Cryptocurrency Dynamic",
+        "twitterCard": null,
+        "image": {
+          "width": 700,
+          "height": 700,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1709276586-marketanalysis-img2.webp"
+        }
       }
     },
     {
       "id": "MICfokr1TVuScAB4Qh9YGw",
-      "topics": ["launchpad"],
-      "title": "Impulsando la Innovacion: Tokenomia y Estrategia de Financiacion de bitcash",
+      "topics": [
+        "launchpad"
+      ],
+      "title": "Empowering Innovation: Tokenomics and Funding Strategy of bitcash",
       "slug": "empowering-innovation-tokenomics-and-funding-strategy-of-bitcash",
       "authorName": "Jun Dam",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
       },
       "_publishedAt": "2024-03-14T05:27:37+00:00",
-      "description": "Esta seccion detalla el modelo de token de utilidad de acunacion y quema de bitcash y su enfoque estrategico para una financiacion equitativa y crecimiento de valor, respaldando la mision de la plataforma de impulsar el desarrollo de IA con una tokenomia transparente y sostenible.",
+      "description": "This section details bitcash's mint-and-burn utility token model and its strategic approach to equitable funding and value growth, underpinning the launchpad's mission to empower AI development with transparent and sustainable tokenomics.",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1710053905-tokenomicswpimg.webp"
       },
       "seo": {
-        "title": "Tokenomia y Estrategia de Financiacion de bitcash",
-        "description": "Esta seccion detalla el modelo de token de utilidad de acunacion y quema de bitcash y su enfoque estrategico para una financiacion equitativa y crecimiento de valor"
+        "description": "This section details bitcash's mint-and-burn utility token model and its strategic approach to equitable funding and value growth",
+        "title": "Tokenomics and Funding Strategy of bitcash",
+        "twitterCard": null,
+        "image": {
+          "width": 1012,
+          "height": 1012,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1710053905-tokenomicswpimg.webp"
+        }
       }
     },
     {
       "id": "BSDdY8byQWipv749rApFRA",
-      "topics": ["launchpad"],
-      "title": "Desbloqueando el Potencial: Casos de Uso y Aplicaciones de bitLauncher",
+      "topics": [
+        "launchpad"
+      ],
+      "title": "Unlocking Potential: Use Cases and Applications of bitLauncher",
       "slug": "unlocking-potential-use-cases-and-applications-of-bitlauncher",
       "authorName": "Jun Dam",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
       },
       "_publishedAt": "2024-03-14T05:26:22+00:00",
-      "description": "Esta seccion explora como bitLauncher revoluciona la financiacion de startups de IA y el acceso al mercado global, mostrando modelos sostenibles de codigo abierto, cultura estrategica de startups y el ecosistema global de inversores a traves de casos de uso especificos y el proyecto pionero Masterbots.ai.",
+      "description": "This section explores how bitLauncer revolutionizes AI startup funding and global market access, showcasing sustainable open-source models, strategic startup culture, and the global investor ecosystem through targeted use cases and the pioneering Masterbots.ai project.",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1710393954-usecaseappsimg.webp"
       },
       "seo": {
-        "title": "Desbloqueando el Potencial: Casos de Uso y Aplicaciones",
-        "description": "Esta seccion explora como bitLauncher revoluciona la financiacion de startups de IA, el acceso al mercado global y el proyecto pionero Masterbots.ai."
+        "description": "This section explores how bitLauncher revolutionizes AI startup funding, global market access, and the pioneering Masterbots.ai project.",
+        "title": "Unlocking Potential: Use Cases and Applications ",
+        "twitterCard": null,
+        "image": {
+          "width": 1012,
+          "height": 1012,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1710393954-usecaseappsimg.webp"
+        }
       }
     }
   ],
   "blogContent": {
     "id": "I4jShMnWRruvJgDbrucwDw",
-    "topics": ["plataforma de lanzamiento"],
-    "title": "La Columna Vertebral Tecnologica de bitLauncher",
+    "topics": [
+      "launchpad"
+    ],
+    "title": "The Technological Backbone of bitLauncher",
     "slug": "the-technological-backbone-of-bitcash-launchpad",
     "authorName": "Jun Dam",
     "authorPicture": {
       "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
     },
     "_publishedAt": "2024-03-14T05:33:20+00:00",
-    "description": "Esta seccion detalla la integracion de bitLauncher de tecnologias blockchain de vanguardia y herramientas innovadoras, incluyendo pagos con Bitcash, gobernanza DAO y una vision blockchain sin fines de lucro, preparando el escenario para un crecimiento transparente, seguro y equitativo de startups de IA.",
+    "description": "This section details bitLauncher's integration of cutting-edge blockchain technologies and innovative tools, including Bitcash payments, DAO governance, and a non-profit blockchain vision, setting the stage for transparent, secure, and equitable AI startup growth.",
     "thumbnail": {
       "url": "https://www.datocms-assets.com/101962/1710011354-techsectionwpimg.webp"
     },
@@ -187,7 +232,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Cryptocurrency Payment Wallet and P2P Crypto Onramp"
                             },
                             {
@@ -206,7 +253,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "WebAuthn Integration"
                             },
                             {
@@ -228,7 +277,9 @@
                     },
                     {
                       "type": "span",
-                      "marks": ["strong"],
+                      "marks": [
+                        "strong"
+                      ],
                       "value": "dBoard"
                     },
                     {
@@ -283,8 +334,8 @@
       }
     ],
     "seo": {
-      "description": "Esta seccion detalla la integracion de bitLauncher de tecnologias blockchain de vanguardia y herramientas innovadoras.",
-      "title": "La Columna Vertebral Tecnologica de bitLauncher",
+      "description": "This section details bitLauncher's integration of cutting-edge blockchain technologies and innovative tools.",
+      "title": "The Technological Backbone of bitLauncher",
       "twitterCard": null,
       "image": {
         "width": 700,
@@ -295,5 +346,7 @@
       }
     }
   },
-  "topics": ["launchpad"]
+  "topics": [
+    "launchpad"
+  ]
 }

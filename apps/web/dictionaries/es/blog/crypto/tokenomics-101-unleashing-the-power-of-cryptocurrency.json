@@ -2,282 +2,437 @@
   "relatedBlogs": [
     {
       "id": "180563939",
-      "topics": ["DAO", "Tokenomia", "Comentario"],
-      "title": "Un marco para el diseno de gobernanza blockchain: La rueda del Grupo Prysm [Comentario]",
+      "topics": [
+        "DAO",
+        "Tokenomics",
+        "Commentary"
+      ],
+      "title": "A Framework for Blockchain Governance Design: The Prysm Group Wheel [Commentary]",
       "slug": "a-framework-for-blockchain-governance-design-the-prysm-group-wheel-commentary",
       "authorName": "Crypto Clairity",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T09:19:19+01:00",
-      "description": "Navega las complejidades de la gobernanza blockchain con la rueda del Grupo Prysm. Tu hoja de ruta para un diseno efectivo de gobernanza blockchain.",
+      "description": "Navigate the complexities of blockchain governance with the Prysm Group Wheel. Your roadmap to effective blockchain governance design.",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1690861154-cbc11-img1.webp"
       },
       "seo": {
-        "title": "Un marco para el diseno de gobernanza blockchain [Comentario]",
-        "description": "Navega las complejidades de la gobernanza blockchain con la rueda del Grupo Prysm. Tu hoja de ruta para un diseno efectivo de gobernanza blockchain."
+        "description": "Navigate the complexities of blockchain governance with the Prysm Group Wheel. Your roadmap to effective blockchain governance design.",
+        "title": "A Framework for Blockchain Governance Design [Commentary]",
+        "twitterCard": null,
+        "image": {
+          "width": 1400,
+          "height": 1383,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1690861154-cbc11-img1.webp"
+        }
       }
     },
     {
       "id": "180217169",
-      "topics": ["Tokenomia", "Comentario"],
-      "title": "Economia de incentivos tokenizados 3: El valor del token no alineara a las partes interesadas [Comentario]",
+      "topics": [
+        "Tokenomics",
+        "Commentary"
+      ],
+      "title": "Economics of Tokenized Incentives 3: Token Value Won’t Align Stakeholders [Commentary]",
       "slug": "economics-of-tokenized-incentives-3-token-value-won-t-align-stakeholders-commenta",
       "authorName": "Crypto Clairity",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T09:17:23+01:00",
-      "description": "Descubre las trampas de usar el valor del token como metrica de rendimiento en plataformas blockchain. Aprende a disenar sistemas de incentivos efectivos.",
+      "description": "Uncover the pitfalls of using token value as a performance metric in blockchain platforms. Learn to design effective incentive systems.",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1690771457-cbc3-img1.png"
       },
       "seo": {
-        "title": "Economia de incentivos tokenizados 3 [Comentario]",
-        "description": "Descubre las trampas de usar el valor del token como metrica de rendimiento en plataformas blockchain. Aprende a disenar sistemas de incentivos efectivos."
+        "description": "Uncover the pitfalls of using token value as a performance metric in blockchain platforms. Learn to design effective incentive systems.",
+        "title": "Economics of Tokenized Incentives 3 [Commentary]",
+        "twitterCard": null,
+        "image": {
+          "width": 862,
+          "height": 862,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1690771457-cbc3-img1.png"
+        }
       }
     },
     {
       "id": "180217123",
-      "topics": ["Tokenomia", "Comentario"],
-      "title": "Economia de incentivos tokenizados 2: Seleccionando metricas de rendimiento efectivas [Comentario]",
+      "topics": [
+        "Tokenomics",
+        "Commentary"
+      ],
+      "title": "Economics of Tokenized Incentives 2: Selecting Effective Performance Metrics [Commentary]",
       "slug": "economics-of-tokenized-incentives-2-selecting-effective-performance-metrics-comme",
       "authorName": "Crypto Clairity",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T09:17:05+01:00",
-      "description": "Descubre el poder de las metricas de rendimiento en sistemas blockchain de pago por desempeno. Aprende a alinear incentivos con los objetivos de la plataforma de manera efectiva.",
+      "description": "Discover the power of performance metrics in blockchain pay-for-performance systems. Learn to align incentives with platform goals effectively.",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1690770918-cbc2-img1.png"
       },
       "seo": {
-        "title": "Economia de incentivos tokenizados 2 [Comentario]",
-        "description": "Descubre el poder de las metricas de rendimiento en sistemas blockchain de pago por desempeno. Aprende a alinear incentivos con los objetivos de la plataforma de manera efectiva."
+        "description": "Discover the power of performance metrics in blockchain pay-for-performance systems. Learn to align incentives with platform goals effectively.",
+        "title": "Economics of Tokenized Incentives 2 [Commentary]",
+        "twitterCard": null,
+        "image": {
+          "width": 862,
+          "height": 862,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1690770918-cbc2-img1.png"
+        }
       }
     },
     {
       "id": "180217082",
-      "topics": ["Tokenomia", "Comentario"],
-      "title": "Economia de incentivos tokenizados 1: Introduccion al pago por desempeno [Comentario]",
+      "topics": [
+        "Tokenomics",
+        "Commentary"
+      ],
+      "title": "Economics of Tokenized Incentives 1: Intro to Pay for Performance [Commentary]",
       "slug": "economics-of-tokenized-incentives-1-intro-to-pay-for-performance",
       "authorName": "Crypto Clairity",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T09:15:12+01:00",
-      "description": "Sumergete en las complejidades de los incentivos de pago por desempeno en plataformas blockchain. Aprende los pros y contras y consideraciones de diseno para el exito.",
+      "description": "Dive into the complexities of pay-for-performance incentives in blockchain platforms. Learn the trade-offs and design considerations for success.",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1690770568-cbc1-img1.png"
       },
       "seo": {
-        "title": "Economia de incentivos tokenizados 1 [Comentario]",
-        "description": "Sumergete en las complejidades de los incentivos de pago por desempeno en plataformas blockchain. Aprende los pros y contras y consideraciones de diseno para el exito"
+        "description": "Dive into the complexities of pay-for-performance incentives in blockchain platforms. Learn the trade-offs and design considerations for success",
+        "title": "Economics of Tokenized Incentives 1 [Commentary]",
+        "twitterCard": null,
+        "image": {
+          "width": 862,
+          "height": 862,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1690770568-cbc1-img1.png"
+        }
       }
     },
     {
       "id": "180563918",
-      "topics": ["Tokenomia", "Comentario", "Recaudacion de fondos"],
-      "title": "Tokens: Vehiculo de inversion o medio de intercambio (no ambos) [Comentario]",
+      "topics": [
+        "Tokenomics",
+        "Commentary",
+        "Fundraising"
+      ],
+      "title": "Tokens: Investment Vehicle or Medium of Exchange (Not Both) [Commentary]",
       "slug": "tokens-investment-vehicle-or-medium-of-exchange-not-both-commentary",
       "authorName": "Crypto Clairity",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T09:13:31+01:00",
-      "description": "Profundiza en el doble papel de los tokens en la economia blockchain. Descubre la delgada linea entre vehiculo de inversion y medio de intercambio.",
+      "description": "Delve into the dual role of tokens in the blockchain economy. Uncover the fine line between investment vehicle and medium of exchange.",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1690859959-cbc8-img1.png"
       },
       "seo": {
-        "title": "Tokens: Inversion o medio de intercambio [Comentario]",
-        "description": "Profundiza en el doble papel de los tokens en la economia blockchain. Descubre la delgada linea entre vehiculo de inversion y medio de intercambio."
+        "description": "Delve into the dual role of tokens in the blockchain economy. Uncover the fine line between investment vehicle and medium of exchange.",
+        "title": "Tokens: Investment or Medium of Exchange [Commentary]",
+        "twitterCard": null,
+        "image": {
+          "width": 862,
+          "height": 862,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1690859959-cbc8-img1.png"
+        }
       }
     },
     {
       "id": "180556595",
-      "topics": ["Recaudacion de fondos", "Tokenomia", "Comentario"],
-      "title": "El efecto blockchain: Efectos de red sin costos de poder de mercado [Comentario]",
+      "topics": [
+        "Fundraising",
+        "Tokenomics",
+        "Commentary"
+      ],
+      "title": "The Blockchain Effect: Network Effects without Market Power Costs [Commentary]",
       "slug": "the-blockchain-effect-network-effects-without-market-power-costs-commentary",
       "authorName": "Crypto Clairity",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T09:11:14+01:00",
-      "description": "Explora como blockchain permite efectos de red sin las desventajas del poder de mercado. Descubre el revolucionario efecto blockchain.",
+      "description": "Explore how blockchain enables network effects without the downsides of market power. Discover the game-changing Blockchain Effect.",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1690855275-cbc4-img1.png"
       },
       "seo": {
-        "title": "Efectos de red sin costos de poder de mercado [Comentario]",
-        "description": "Explora como blockchain permite efectos de red sin las desventajas del poder de mercado. Descubre el revolucionario efecto blockchain."
+        "description": "Explore how blockchain enables network effects without the downsides of market power. Discover the game-changing Blockchain Effect.",
+        "title": "Network Effects without Market Power Costs [Commentary]",
+        "twitterCard": null,
+        "image": {
+          "width": 862,
+          "height": 862,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1690855275-cbc4-img1.png"
+        }
       }
     },
     {
       "id": "180563931",
-      "topics": ["Tokenomia", "Comentario"],
-      "title": "Estructuras de incentivos blockchain: Que son y por que importan [Comentario]",
+      "topics": [
+        "Tokenomics",
+        "Commentary"
+      ],
+      "title": "Blockchain Incentive Structures: What they are and why they matter [Commentary]",
       "slug": "blockchain-incentive-structures-what-they-are-and-why-they-matter-commentary",
       "authorName": "Crypto Clairity",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T09:10:02+01:00",
-      "description": "Comprende el nucleo de las estructuras de incentivos blockchain y su importancia en impulsar el comportamiento del usuario y el exito de la plataforma.",
+      "description": "Understand the core of blockchain incentive structures and their significance in driving user behavior and platform success.",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1690860807-cbc10-img1.png"
       },
       "seo": {
-        "title": "Estructuras de incentivos blockchain [Comentario]",
-        "description": "Comprende el nucleo de las estructuras de incentivos blockchain y su importancia en impulsar el comportamiento del usuario y el exito de la plataforma."
+        "description": "Understand the core of blockchain incentive structures and their significance in driving user behavior and platform success.",
+        "title": "Blockchain Incentive Structures [Commentary]",
+        "twitterCard": null,
+        "image": {
+          "width": 862,
+          "height": 862,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1690860807-cbc10-img1.png"
+        }
       }
     },
     {
       "id": "167184977",
-      "topics": ["Tokenomia", "DAO", "Recaudacion de fondos"],
-      "title": "Revolucionando el modelo de capital: Como la tokenomia esta disrumpiendo el mundo de las startups",
+      "topics": [
+        "Tokenomics",
+        "DAO",
+        "Fundraising"
+      ],
+      "title": "Revolutionizing the Equity Model: How Tokenomics is Disrupting the Startup World",
       "slug": "revolutionizing-the-equity-model-how-tokenomics-is-disrupting-the-startup-world",
       "authorName": "Crypto Clairity",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T09:02:51+01:00",
-      "description": "Desbloquea el futuro de las startups con la tokenomia! Explora como este concepto innovador esta remodelando el modelo de capital y revolucionando el panorama de las startups.",
+      "description": "Unlock the future of startups with tokenomics! Explore how this innovative concept is reshaping the equity model and revolutionizing the startup landscape.",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1687395688-tb2-img1.png"
       },
       "seo": {
-        "title": "Como la tokenomia esta disrumpiendo el mundo de las startups",
-        "description": "Explora como este concepto innovador esta remodelando el modelo de capital y revolucionando el panorama de las startups."
+        "description": "Explore how this innovative concept is reshaping the equity model and revolutionizing the startup landscape.",
+        "title": "How Tokenomics is Disrupting the Startup World",
+        "twitterCard": null,
+        "image": {
+          "width": 994,
+          "height": 994,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1687395688-tb2-img1.png"
+        }
       }
     },
     {
       "id": "166981063",
-      "topics": ["Primeros pasos", "DAO"],
-      "title": "El futuro esta aqui: El auge de las Organizaciones Autonomas Descentralizadas (DAOs)",
+      "topics": [
+        "Getting Started",
+        "DAO"
+      ],
+      "title": "The Future is Here: The Rise of Decentralized Autonomous Organizations (DAOs)",
       "slug": "the-future-is-here-the-rise-of-decentralized-autonomous-organizations-daos",
       "authorName": "Crypto Clairity",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T08:57:02+01:00",
-      "description": "Explora el auge de las Organizaciones Autonomas Descentralizadas (DAOs) en nuestra guia. Comprende el futuro de los negocios y las oportunidades para las startups.",
+      "description": "Explore the rise of Decentralized Autonomous Organizations (DAOs) in our guide. Understand the future of business and the opportunities for startups.",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1687381524-db1-img1.png"
       },
       "seo": {
-        "title": "El auge de las Organizaciones Autonomas Descentralizadas",
-        "description": "Explora el auge de las Organizaciones Autonomas Descentralizadas (DAOs) en nuestra guia. Comprende el futuro de los negocios y las oportunidades para las startups."
+        "description": "Explore the rise of Decentralized Autonomous Organizations (DAOs) in our guide. Understand the future of business and the opportunities for startups.",
+        "title": "The Rise of Decentralized Autonomous Organizations ",
+        "twitterCard": null,
+        "image": null
       }
     },
     {
       "id": "165744328",
-      "topics": ["Primeros pasos", "Como hacer"],
-      "title": "Mantente a la vanguardia: Una guia para mantenerse informado y educado en el mundo de las criptomonedas",
+      "topics": [
+        "Getting Started",
+        "How-To"
+      ],
+      "title": "Stay Ahead of the Game: A Guide to Staying Informed and Educated in the World of Cryptocurrency",
       "slug": "stay-ahead-of-the-game-a-guide-to-staying-informed-and-educated-in-the-world-of-c",
       "authorName": "Crypto Clairity",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T08:52:39+01:00",
-      "description": "Mantente informado y educado en el dinamico mundo de las criptomonedas. Explora nuestra guia completa para mantenerte a la vanguardia y navegar el siempre cambiante panorama digital.",
+      "description": "Stay informed and educated in the dynamic world of cryptocurrency. Explore our comprehensive guide to stay ahead of the game and navigate the ever-evolving digital landscape.",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1687049473-cb20-img1.png"
       },
       "seo": {
-        "title": "Una guia para mantenerse informado en el mundo de las criptomonedas",
-        "description": "Mantente informado y educado en el dinamico mundo de las criptomonedas."
+        "description": "Stay informed and educated in the dynamic world of cryptocurrency. ",
+        "title": "A Guide to Staying Informed in the World of Crypto",
+        "twitterCard": null,
+        "image": {
+          "width": 1024,
+          "height": 1024,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1687049473-cb20-img1.png"
+        }
       }
     },
     {
       "id": "165742753",
-      "topics": ["Primeros pasos", "Pagos"],
-      "title": "Stablecoins: El futuro de las transacciones y pagos con criptomonedas",
+      "topics": [
+        "Getting Started",
+        "Payments"
+      ],
+      "title": "Stablecoins: The Future of Cryptocurrency Transactions and Payments",
       "slug": "stablecoins-the-future-of-cryptocurrency-transactions-and-payments",
       "authorName": "Crypto Clairity",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T08:49:51+01:00",
-      "description": "Descubre el futuro de las transacciones y pagos con criptomonedas a traves de las stablecoins. Explora la estabilidad y el potencial de estos innovadores activos digitales en nuestro perspicaz articulo de blog.",
+      "description": "Discover the future of cryptocurrency transactions and payments with stablecoins. Explore the stability and potential of these innovative digital assets in our insightful blog post.",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1687049009-cb19-img3edited.png"
       },
       "seo": {
-        "title": "Stablecoins: El futuro de los pagos con criptomonedas",
-        "description": "Descubre el futuro de las transacciones y pagos con criptomonedas a traves de las stablecoins."
+        "description": "Discover the future of cryptocurrency transactions and payments with stablecoins. ",
+        "title": "Stablecoins: The Future of Crypto Payments",
+        "twitterCard": null,
+        "image": {
+          "width": 1024,
+          "height": 1024,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1687049009-cb19-img3edited.png"
+        }
       }
     },
     {
       "id": "165685913",
-      "topics": ["DeFi", "Primeros pasos"],
-      "title": "Descentraliza tus finanzas: Una introduccion al mundo de DeFi",
+      "topics": [
+        "DeFi",
+        "Getting Started"
+      ],
+      "title": "Decentralize Your Finance: An Introduction to the World of DeFi",
       "slug": "decentralize-your-finance-an-introduction-to-the-world-of-defi",
       "authorName": "Crypto Clairity",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T08:47:03+01:00",
-      "description": "Desbloquea el poder de las finanzas descentralizadas (DeFi). Explora el innovador mundo de las soluciones financieras basadas en blockchain en nuestro completo articulo de blog.",
+      "description": "Unlock the power of decentralized finance (DeFi). Explore the innovative world of blockchain-based financial solutions in our comprehensive blog post.",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1687047143-cb18-img1.png"
       },
       "seo": {
-        "title": "Una introduccion al mundo de DeFi",
-        "description": "Desbloquea el poder de las finanzas descentralizadas (DeFi)."
+        "description": "Unlock the power of decentralized finance (DeFi). ",
+        "title": "An Introduction to the World of DeFi",
+        "twitterCard": null,
+        "image": {
+          "width": 1024,
+          "height": 1024,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1687047143-cb18-img1.png"
+        }
       }
     },
     {
       "id": "165685908",
-      "topics": ["Primeros pasos", "Recaudacion de fondos"],
-      "title": "Disrumpe el status quo: Como las criptomonedas estan revolucionando la recaudacion de fondos y el crowdfunding",
+      "topics": [
+        "Getting Started",
+        "Fundraising"
+      ],
+      "title": "Disrupt the Status Quo: How Cryptocurrency is Revolutionizing Fundraising and Crowdfunding",
       "slug": "disrupt-the-status-quo-how-cryptocurrency-is-revolutionizing-fundraising-and-crow",
       "authorName": "Crypto Clairity",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T08:33:36+01:00",
-      "description": "Explora el potencial revolucionario de las criptomonedas en la recaudacion de fondos y el crowdfunding. Descubre como las monedas digitales estan disrumpiendo los metodos tradicionales en nuestro perspicaz articulo de blog.",
+      "description": "Explore the groundbreaking potential of cryptocurrency in fundraising and crowdfunding. Discover how digital currencies are disrupting the traditional methods in our insightful blog post.",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1687046260-cb17-img1edited.png"
       },
       "seo": {
-        "title": "Como las criptomonedas estan revolucionando la recaudacion de fondos y el crowdfunding",
-        "description": "Explora el potencial revolucionario de las criptomonedas en la recaudacion de fondos y el crowdfunding."
+        "description": "Explore the groundbreaking potential of cryptocurrency in fundraising and crowdfunding. ",
+        "title": "How Crypto is Revolutionizing Fundraising and Crowdfunding",
+        "twitterCard": null,
+        "image": {
+          "width": 1024,
+          "height": 1024,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1687046260-cb17-img1edited.png"
+        }
       }
     },
     {
       "id": "165673014",
-      "topics": ["Primeros pasos", "Inversion"],
-      "title": "Inversion en criptomonedas 101: Como usar criptomonedas para inversion y gestion de activos",
+      "topics": [
+        "Getting Started",
+        "Investment"
+      ],
+      "title": "Crypto Investing 101: How to Use Cryptocurrency for Investment and Asset Management",
       "slug": "crypto-investing-101-how-to-use-cryptocurrency-for-investment-and-asset-managemen",
       "authorName": "Crypto Clairity",
       "authorPicture": {
         "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T08:32:00+01:00",
-      "description": "Domina el arte de la inversion en criptomonedas y la gestion de activos. Aprende como aprovechar las criptomonedas para estrategias de inversion optimas en nuestra guia completa.",
+      "description": "Master the art of crypto investing and asset management. Learn how to leverage cryptocurrency for optimal investment strategies in our comprehensive guide.",
       "thumbnail": {
         "url": "https://www.datocms-assets.com/101962/1687044673-cb16-img5.png"
       },
       "seo": {
-        "title": "Inversion en criptomonedas 101",
-        "description": "Domina el arte de la inversion en criptomonedas y la gestion de activos."
+        "description": "Master the art of crypto investing and asset management. ",
+        "title": "Crypto Investing 101",
+        "twitterCard": null,
+        "image": {
+          "width": 1024,
+          "height": 1024,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1687044673-cb16-img5.png"
+        }
       }
     }
   ],
   "blogContent": {
     "id": "167101094",
-    "topics": ["Comenzando", "Tokenomics"],
-    "title": "Tokenomics 101: Desatando el Poder de las Criptomonedas",
+    "topics": [
+      "Getting Started",
+      "Tokenomics"
+    ],
+    "title": "Tokenomics 101: Unleashing the Power of Cryptocurrency!",
     "slug": "tokenomics-101-unleashing-the-power-of-cryptocurrency",
     "authorName": "Crypto Clairity",
     "authorPicture": {
       "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
     },
     "_publishedAt": "2023-10-05T08:57:58+01:00",
-    "description": "Descubre el poder de las criptomonedas a traves de Tokenomics 101 - una guia detallada para entender la economia detras de los activos digitales.",
+    "description": "Discover the power of cryptocurrency through Tokenomics 101 - an in-depth guide to understanding the economics behind digital assets.",
     "thumbnail": {
       "url": "https://www.datocms-assets.com/101962/1687391799-tb1-img1.png"
     },
@@ -545,12 +700,14 @@
                     },
                     {
                       "type": "span",
-                      "marks": ["strong"],
+                      "marks": [
+                        "strong"
+                      ],
                       "value": "Tokenomics can reshape industries, economies, even societies!"
                     },
                     {
                       "type": "span",
-                      "value": " Think of it as a master key, capable of unlocking the chains that bind traditional systems. The music industry plagued by middlemen? Use tokens to connect artists directly with their fans. Real estate, a market that seems a closed club for the wealthy? Tokenize property and allow anyone to contribute in fractions of a home. Governance falling prey to inefficiency? Utilize tokens to allow direct, democratic decision making."
+                      "value": " Think of it as a master key, capable of unlocking the chains that bind traditional systems. The music industry plagued by middlemen? Use tokens to connect artists directly with their fans. Real estate, a market that seems a closed club for the wealthy? Tokenize property and allow anyone to invest in fractions of a home. Governance falling prey to inefficiency? Utilize tokens to allow direct, democratic decision making."
                     }
                   ]
                 },
@@ -568,7 +725,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Imagine a world where you wake up in Tokyo, provide consulting services to a client in London, receive payment in tokens, and use those tokens to buy coffee in New York, all without worrying about exchange rates, transaction fees, or processing delays. A world where you can contribute in a startup in Berlin while lounging on a beach in Bali. A world where your ideas, your creativity, your skills, aren't shackled by where you live or where you come from."
+                      "value": "Imagine a world where you wake up in Tokyo, provide consulting services to a client in London, receive payment in tokens, and use those tokens to buy coffee in New York, all without worrying about exchange rates, transaction fees, or processing delays. A world where you can invest in a startup in Berlin while lounging on a beach in Bali. A world where your ideas, your creativity, your skills, aren't shackled by where you live or where you come from."
                     }
                   ]
                 },
@@ -608,7 +765,9 @@
                     },
                     {
                       "type": "span",
-                      "marks": ["emphasis"],
+                      "marks": [
+                        "emphasis"
+                      ],
                       "value": "\"Why should I care about tokenomics?\""
                     },
                     {
@@ -617,7 +776,9 @@
                     },
                     {
                       "type": "span",
-                      "marks": ["emphasis"],
+                      "marks": [
+                        "emphasis"
+                      ],
                       "value": "\"Can I afford not to?\""
                     },
                     {
@@ -800,7 +961,9 @@
                     },
                     {
                       "type": "span",
-                      "marks": ["strong"],
+                      "marks": [
+                        "strong"
+                      ],
                       "value": "The world of tokenomics, my friends, is not a distant dream, it's here, it's now, and it's your time to embrace it!"
                     }
                   ]
@@ -841,7 +1004,9 @@
                     },
                     {
                       "type": "span",
-                      "marks": ["strong"],
+                      "marks": [
+                        "strong"
+                      ],
                       "value": "The beat is pounding, the stage is set, your tokenomics adventure awaits!"
                     }
                   ]
@@ -864,8 +1029,8 @@
       }
     ],
     "seo": {
-      "description": "una guia detallada para entender la economia detras de los activos digitales.",
-      "title": "Tokenomics 101: Desatando el Poder de las Criptomonedas",
+      "description": "an in-depth guide to understanding the economics behind digital assets.",
+      "title": "Tokenomics 101: Unleashing the Power of Cryptocurrency!",
       "twitterCard": null,
       "image": {
         "width": 994,
@@ -876,5 +1041,8 @@
       }
     }
   },
-  "topics": ["Primeros pasos", "Tokenomia"]
+  "topics": [
+    "Getting Started",
+    "Tokenomics"
+  ]
 }
