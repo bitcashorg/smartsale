@@ -352,7 +352,10 @@
         },
         {
           "id": "198277360",
-          "topics": ["Mo hinh ngon ngu lon", "Hoc tang cuong tu phan hoi cua con nguoi"],
+          "topics": [
+            "Mo hinh ngon ngu lon",
+            "Hoc tang cuong tu phan hoi cua con nguoi"
+          ],
           "title": "On dinh RLHF thong qua Mo hinh Loi the va Luyen tap Chon loc",
           "slug": "stabilizing-rlhf-through-advantage-model-and-selective-rehearsal",
           "authorName": "Prof. Otto Nomos",
@@ -977,7 +980,11 @@
         },
         {
           "id": "197817281",
-          "topics": ["Mo hinh ngon ngu lon", "Hoc trong boi canh", "Tinh chinh"],
+          "topics": [
+            "Mo hinh ngon ngu lon",
+            "Hoc trong boi canh",
+            "Tinh chinh"
+          ],
           "title": "FIAT: Ket hop cac mo hinh hoc tap voi Tinh chinh Tang toc bang Chi dan",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -1173,7 +1180,11 @@
         },
         {
           "id": "197621519",
-          "topics": ["Mo hinh ngon ngu lon", "Ma nguon mo", "Tinh chinh huong dan"],
+          "topics": [
+            "Mo hinh ngon ngu lon",
+            "Ma nguon mo",
+            "Tinh chinh huong dan"
+          ],
           "title": "Bao cao ky thuat XGen-7B",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
@@ -1817,7 +1828,11 @@
         },
         {
           "id": "189787192",
-          "topics": ["Mo hinh ngon ngu lon", "Ma nguon", "Tinh chinh huong dan"],
+          "topics": [
+            "Mo hinh ngon ngu lon",
+            "Ma nguon",
+            "Tinh chinh huong dan"
+          ],
           "title": "Cac ngon ngu lap trinh co the tang cuong lan nhau thong qua tinh chinh huong dan khong?",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2129,7 +2144,11 @@
         },
         {
           "id": "189777877",
-          "topics": ["Mo hinh ngon ngu lon", "Ma nguon", "Dao tao theo huong dan"],
+          "topics": [
+            "Mo hinh ngon ngu lon",
+            "Ma nguon",
+            "Dao tao theo huong dan"
+          ],
           "title": "OctoPack: Dao tao theo huong dan cho cac mo hinh ngon ngu lon ve ma nguon",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2185,7 +2204,12 @@
         },
         {
           "id": "189777849",
-          "topics": ["Am thanh", "Mo hinh ngon ngu lon", "Da phuong thuc", "Da ngon ngu"],
+          "topics": [
+            "Am thanh",
+            "Mo hinh ngon ngu lon",
+            "Da phuong thuc",
+            "Da ngon ngu"
+          ],
           "title": "Cai thien bieu dien giong noi-van ban ket hop ma khong can can chinh",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -2325,7 +2349,12 @@
         },
         {
           "id": "189577629",
-          "topics": ["Mo hinh ngon ngu lon", "Su phu hop", "Khao sat", "Danh gia"],
+          "topics": [
+            "Mo hinh ngon ngu lon",
+            "Su phu hop",
+            "Khao sat",
+            "Danh gia"
+          ],
           "title": "LLM dang tin cay: Mot khao sat va huong dan danh gia su phu hop cua cac mo hinh ngon ngu lon",
           "slug": "trustworthy-llms-a-survey-and-guideline-for-evaluating-large-language-models-alig",
           "authorName": "Prof. Otto Nomos",
@@ -3223,7 +3252,12 @@
         },
         {
           "id": "189777849",
-          "topics": ["Am thanh", "Mo hinh ngon ngu lon", "Da phuong thuc", "Da ngon ngu"],
+          "topics": [
+            "Am thanh",
+            "Mo hinh ngon ngu lon",
+            "Da phuong thuc",
+            "Da ngon ngu"
+          ],
           "title": "Cai thien bieu dien giong noi-van ban ket hop ma khong can can chinh",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3375,7 +3409,11 @@
         },
         {
           "id": "197817281",
-          "topics": ["Mo hinh ngon ngu lon", "Hoc trong boi canh", "Tinh chinh"],
+          "topics": [
+            "Mo hinh ngon ngu lon",
+            "Hoc trong boi canh",
+            "Tinh chinh"
+          ],
           "title": "FIAT: Ket hop cac mo hinh hoc tap voi Tinh chinh Tang toc bang Chi dan",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3469,7 +3507,11 @@
         },
         {
           "id": "197621519",
-          "topics": ["Mo hinh ngon ngu lon", "Ma nguon mo", "Tinh chinh huong dan"],
+          "topics": [
+            "Mo hinh ngon ngu lon",
+            "Ma nguon mo",
+            "Tinh chinh huong dan"
+          ],
           "title": "Bao cao ky thuat XGen-7B",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
@@ -3525,7 +3567,11 @@
         },
         {
           "id": "189787192",
-          "topics": ["Mo hinh ngon ngu lon", "Ma nguon", "Tinh chinh huong dan"],
+          "topics": [
+            "Mo hinh ngon ngu lon",
+            "Ma nguon",
+            "Tinh chinh huong dan"
+          ],
           "title": "Cac ngon ngu lap trinh co the tang cuong lan nhau thong qua tinh chinh huong dan khong?",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3585,7 +3631,11 @@
         },
         {
           "id": "189777877",
-          "topics": ["Mo hinh ngon ngu lon", "Ma nguon", "Dao tao theo huong dan"],
+          "topics": [
+            "Mo hinh ngon ngu lon",
+            "Ma nguon",
+            "Dao tao theo huong dan"
+          ],
           "title": "OctoPack: Dao tao theo huong dan cho cac mo hinh ngon ngu lon ve ma nguon",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -3707,7 +3757,12 @@
         },
         {
           "id": "189777849",
-          "topics": ["Am thanh", "Mo hinh ngon ngu lon", "Da phuong thuc", "Da ngon ngu"],
+          "topics": [
+            "Am thanh",
+            "Mo hinh ngon ngu lon",
+            "Da phuong thuc",
+            "Da ngon ngu"
+          ],
           "title": "Cai thien bieu dien giong noi-van ban ket hop ma khong can can chinh",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -4572,7 +4627,12 @@
         },
         {
           "id": "189777849",
-          "topics": ["Am thanh", "Mo hinh ngon ngu lon", "Da phuong thuc", "Da ngon ngu"],
+          "topics": [
+            "Am thanh",
+            "Mo hinh ngon ngu lon",
+            "Da phuong thuc",
+            "Da ngon ngu"
+          ],
           "title": "Cai thien bieu dien giong noi-van ban ket hop ma khong can can chinh",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -4668,7 +4728,10 @@
       "articles": [
         {
           "id": "198277360",
-          "topics": ["Mo hinh ngon ngu lon", "Hoc tang cuong tu phan hoi cua con nguoi"],
+          "topics": [
+            "Mo hinh ngon ngu lon",
+            "Hoc tang cuong tu phan hoi cua con nguoi"
+          ],
           "title": "On dinh RLHF thong qua Mo hinh Loi the va Luyen tap Chon loc",
           "slug": "stabilizing-rlhf-through-advantage-model-and-selective-rehearsal",
           "authorName": "Prof. Otto Nomos",
@@ -5368,7 +5431,11 @@
         },
         {
           "id": "197817281",
-          "topics": ["Mo hinh ngon ngu lon", "Hoc trong boi canh", "Tinh chinh"],
+          "topics": [
+            "Mo hinh ngon ngu lon",
+            "Hoc trong boi canh",
+            "Tinh chinh"
+          ],
           "title": "FIAT: Ket hop cac mo hinh hoc tap voi Tinh chinh Tang toc bang Chi dan",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5542,7 +5609,12 @@
         },
         {
           "id": "189577629",
-          "topics": ["Mo hinh ngon ngu lon", "Su phu hop", "Khao sat", "Danh gia"],
+          "topics": [
+            "Mo hinh ngon ngu lon",
+            "Su phu hop",
+            "Khao sat",
+            "Danh gia"
+          ],
           "title": "LLM dang tin cay: Mot khao sat va huong dan danh gia su phu hop cua cac mo hinh ngon ngu lon",
           "slug": "trustworthy-llms-a-survey-and-guideline-for-evaluating-large-language-models-alig",
           "authorName": "Prof. Otto Nomos",
@@ -5788,7 +5860,11 @@
         },
         {
           "id": "189787192",
-          "topics": ["Mo hinh ngon ngu lon", "Ma nguon", "Tinh chinh huong dan"],
+          "topics": [
+            "Mo hinh ngon ngu lon",
+            "Ma nguon",
+            "Tinh chinh huong dan"
+          ],
           "title": "Cac ngon ngu lap trinh co the tang cuong lan nhau thong qua tinh chinh huong dan khong?",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -5872,7 +5948,11 @@
         },
         {
           "id": "189777877",
-          "topics": ["Mo hinh ngon ngu lon", "Ma nguon", "Dao tao theo huong dan"],
+          "topics": [
+            "Mo hinh ngon ngu lon",
+            "Ma nguon",
+            "Dao tao theo huong dan"
+          ],
           "title": "OctoPack: Dao tao theo huong dan cho cac mo hinh ngon ngu lon ve ma nguon",
           "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
           "authorName": "Prof. Otto Nomos",
@@ -6114,7 +6194,11 @@
         },
         {
           "id": "197621519",
-          "topics": ["Mo hinh ngon ngu lon", "Ma nguon mo", "Tinh chinh huong dan"],
+          "topics": [
+            "Mo hinh ngon ngu lon",
+            "Ma nguon mo",
+            "Tinh chinh huong dan"
+          ],
           "title": "Bao cao ky thuat XGen-7B",
           "slug": "openproteinset-training-data-for-structural-biology-at-scale",
           "authorName": "Prof. Otto Nomos",
@@ -6570,7 +6654,12 @@
         },
         {
           "id": "189577629",
-          "topics": ["Mo hinh ngon ngu lon", "Su phu hop", "Khao sat", "Danh gia"],
+          "topics": [
+            "Mo hinh ngon ngu lon",
+            "Su phu hop",
+            "Khao sat",
+            "Danh gia"
+          ],
           "title": "LLM dang tin cay: Mot khao sat va huong dan danh gia su phu hop cua cac mo hinh ngon ngu lon",
           "slug": "trustworthy-llms-a-survey-and-guideline-for-evaluating-large-language-models-alig",
           "authorName": "Prof. Otto Nomos",
@@ -6632,7 +6721,12 @@
         },
         {
           "id": "189577629",
-          "topics": ["Mo hinh ngon ngu lon", "Su phu hop", "Khao sat", "Danh gia"],
+          "topics": [
+            "Mo hinh ngon ngu lon",
+            "Su phu hop",
+            "Khao sat",
+            "Danh gia"
+          ],
           "title": "LLM dang tin cay: Mot khao sat va huong dan danh gia su phu hop cua cac mo hinh ngon ngu lon",
           "slug": "trustworthy-llms-a-survey-and-guideline-for-evaluating-large-language-models-alig",
           "authorName": "Prof. Otto Nomos",

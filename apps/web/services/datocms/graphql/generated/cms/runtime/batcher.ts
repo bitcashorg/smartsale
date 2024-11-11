@@ -68,7 +68,9 @@ function dispatchQueueBatch(client: QueryBatcher, queue: Queue): void {
 
       for (let i = 0; i < queue.length; i++) {
         if (responses[i].errors && responses[i].errors.length) {
-          queue[i].reject(new GenqlError(responses[i].errors, responses[i].data))
+          queue[i].reject(
+            new GenqlError(responses[i].errors, responses[i].data),
+          )
         } else {
           queue[i].resolve(responses[i])
         }
@@ -94,7 +96,10 @@ function dispatchQueue(client: QueryBatcher, options: Options): void {
 
   if (maxBatchSize > 0 && maxBatchSize < queue.length) {
     for (let i = 0; i < queue.length / maxBatchSize; i++) {
-      dispatchQueueBatch(client, queue.slice(i * maxBatchSize, (i + 1) * maxBatchSize))
+      dispatchQueueBatch(
+        client,
+        queue.slice(i * maxBatchSize, (i + 1) * maxBatchSize),
+      )
     }
   } else {
     dispatchQueueBatch(client, queue)

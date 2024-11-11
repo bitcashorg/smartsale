@@ -29,7 +29,11 @@ function IconNextChat({
           gradientUnits="userSpaceOnUse"
         >
           <stop stopColor={inverted ? 'white' : 'black'} />
-          <stop offset={1} stopColor={inverted ? 'white' : 'black'} stopOpacity={0} />
+          <stop
+            offset={1}
+            stopColor={inverted ? 'white' : 'black'}
+            stopOpacity={0}
+          />
         </linearGradient>
         <linearGradient
           id={`gradient-${id}-2`}
@@ -40,7 +44,11 @@ function IconNextChat({
           gradientUnits="userSpaceOnUse"
         >
           <stop stopColor={inverted ? 'white' : 'black'} />
-          <stop offset={1} stopColor={inverted ? 'white' : 'black'} stopOpacity={0} />
+          <stop
+            offset={1}
+            stopColor={inverted ? 'white' : 'black'}
+            stopOpacity={0}
+          />
         </linearGradient>
       </defs>
       <path
@@ -108,7 +116,7 @@ function IconVercel({ className, ...props }: React.ComponentProps<'svg'>) {
       <path
         d="M37.5896 0.25L74.5396 64.25H0.639648L37.5896 0.25Z"
         fill="currentColor"
-      ></path>
+      />
     </svg>
   )
 }
@@ -143,7 +151,7 @@ function IconSeparator({ className, ...props }: React.ComponentProps<'svg'>) {
       className={cn('size-4', className)}
       {...props}
     >
-      <path d="M16.88 3.549L7.12 20.451"></path>
+      <path d="M16.88 3.549L7.12 20.451" />
     </svg>
   )
 }
@@ -434,7 +442,10 @@ function IconUsers({ className, ...props }: React.ComponentProps<'svg'>) {
   )
 }
 
-function IconExternalLink({ className, ...props }: React.ComponentProps<'svg'>) {
+function IconExternalLink({
+  className,
+  ...props
+}: React.ComponentProps<'svg'>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -448,7 +459,10 @@ function IconExternalLink({ className, ...props }: React.ComponentProps<'svg'>) 
   )
 }
 
-function IconChevronUpDown({ className, ...props }: React.ComponentProps<'svg'>) {
+function IconChevronUpDown({
+  className,
+  ...props
+}: React.ComponentProps<'svg'>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -1028,37 +1042,65 @@ function IconReferral({ className, ...props }: React.ComponentProps<'svg'>) {
   )
 }
 
-export {
-    IconArrowDown,
-    IconArrowElbow,
-    IconArrowRight,
-    IconBitlauncher,
-    IconCheck,
-    IconChevronUpDown,
-    IconClose,
-    IconCopy,
-    IconDiscord,
-    IconDownload,
-    IconDownRightArrow,
-    IconEdit,
-    IconExternalLink,
-    IconGitHub,
-    IconMessage,
-    IconMoon,
-    IconNextChat,
-    IconOpenAI,
-    IconPlus, IconReferral, IconRefresh,
-    IconSeparator,
-    IconShare,
-    IconSidebar,
-    IconSpinner,
-    IconStop,
-    IconSun,
-    IconTelegram,
-    IconTrash,
-    IconTwitterX,
-    IconUser,
-    IconUsers,
-    IconVercel
+function IconBitlauncherSmall({
+  className,
+  ...props
+}: React.ComponentProps<'svg'>) {
+  return (
+    <svg
+      width="45"
+      height="43"
+      viewBox="0 0 45 43"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={cn('size-4', className)}
+      {...props}
+    >
+      <path
+        d="M20.7956 0L0 42.1609L12.4975 34.9027C15.9986 32.8693 18.2889 29.257 18.6345 25.223L20.7956 0Z"
+        fill="currentColor"
+      />
+      <path
+        d="M23.6441 0.283325L44.4397 41.8745L31.9936 34.7438C28.4625 32.7208 26.1466 29.0962 25.7945 25.042L23.6441 0.283325Z"
+        fill="currentColor"
+      />
+    </svg>
+  )
 }
 
+export {
+  IconBitlauncherSmall,
+  IconArrowDown,
+  IconArrowElbow,
+  IconArrowRight,
+  IconBitlauncher,
+  IconCheck,
+  IconChevronUpDown,
+  IconClose,
+  IconCopy,
+  IconDiscord,
+  IconDownload,
+  IconDownRightArrow,
+  IconEdit,
+  IconExternalLink,
+  IconGitHub,
+  IconMessage,
+  IconMoon,
+  IconNextChat,
+  IconOpenAI,
+  IconPlus,
+  IconReferral,
+  IconRefresh,
+  IconSeparator,
+  IconShare,
+  IconSidebar,
+  IconSpinner,
+  IconStop,
+  IconSun,
+  IconTelegram,
+  IconTrash,
+  IconTwitterX,
+  IconUser,
+  IconUsers,
+  IconVercel,
+}

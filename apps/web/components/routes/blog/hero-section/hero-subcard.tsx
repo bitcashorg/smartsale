@@ -23,7 +23,8 @@ export const HeroSubCard = ({ post, sectionSlug }: Subcardprops) => {
         href={`/blog/${sectionSlug}/${post.slug}`}
         className="flex flex-row justify-between space-y-3 px-space-15 py-space-20 transition-all md:space-y-0"
         onClick={(event) =>
-          (event.target as HTMLElement).tagName === 'BUTTON' && event.preventDefault()
+          (event.target as HTMLElement).tagName === 'BUTTON' &&
+          event.preventDefault()
         }
       >
         <div className="flex min-w-40 flex-col items-start justify-start pr-5 text-sm">

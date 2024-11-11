@@ -1,10 +1,13 @@
+import * as fs from 'node:fs'
+import path from 'node:path'
 import type { Lang } from '@/dictionaries/locales'
 import { getFilePath, parseFile } from '@/lib/file'
 import { getErrorMessage } from '@repo/errors'
 import { uniq } from 'lodash'
-import * as fs from 'node:fs'
-import path from 'node:path'
-import { type BlogArticleRecord, getBlogCategory } from './datacms-blog-category.service'
+import {
+  type BlogArticleRecord,
+  getBlogCategory,
+} from './datacms-blog-category.service'
 import { getLayoutText } from './datocms-layout.service'
 import { type CMSPageSeoText, getPageSeoText } from './datocms-seo.service'
 import type { BlogAiRecord } from './graphql/generated/cms'
@@ -59,7 +62,9 @@ export const getBlogData = async () => {
   }
 }
 
-export async function getArticleSections(lang: Lang): Promise<ArticlesSection[]> {
+export async function getArticleSections(
+  lang: Lang,
+): Promise<ArticlesSection[]> {
   const dirPath = `/dictionaries/${lang}/blog/`
   const fileName = 'blog-index.json'
   const filePath = path.resolve(dirPath, fileName)
@@ -176,7 +181,10 @@ export async function getArticleSections(lang: Lang): Promise<ArticlesSection[]>
   // ? Or moving this to actions.ts
   try {
     fs.mkdirSync(getFilePath(dirPath), { recursive: true })
-    fs.writeFileSync(getFilePath(filePath), JSON.stringify(fileContents, null, 2))
+    fs.writeFileSync(
+      getFilePath(filePath),
+      JSON.stringify(fileContents, null, 2),
+    )
   } catch (error) {
     console.error('❌❌❌❌ Failed to update cache on file.', error)
   }
@@ -257,7 +265,9 @@ export async function getBlogCategoryLandingData(
   } catch (error) {
     // console.log('error', error)
     try {
-      const englishVersion = parseFile(`/dictionaries/en/blog/${category}/${fileName}`)
+      const englishVersion = parseFile(
+        `/dictionaries/en/blog/${category}/${fileName}`,
+      )
       if (englishVersion) return englishVersion
     } catch (error) {
       console.error('❌ Failed to get cached file. Fetching new data', error)
@@ -265,7 +275,9 @@ export async function getBlogCategoryLandingData(
   }
 
   // replacing category kebab case with camel case
-  const blogCategory = category.replace(/(\-\w)/g, (m: string) => m[1].toUpperCase())
+  const blogCategory = category.replace(/(\-\w)/g, (m: string) =>
+    m[1].toUpperCase(),
+  )
   const categoryContent: BlogArticleRecord[] | undefined = categories[
     `${blogCategory}Data`
   ] as BlogArticleRecord[] | undefined
@@ -291,7 +303,9 @@ export async function getBlogCategoryLandingData(
   const topics = uniq(allTopics)
 
   const sections: ArticlesSection[] = topics?.map((tp, index) => {
-    const articles = categoryContent.filter((content) => content.topics.includes(tp))
+    const articles = categoryContent.filter((content) =>
+      content.topics.includes(tp),
+    )
     for (const article of articles) {
       article.contentBlock = []
     }
@@ -344,7 +358,11 @@ export type BlogArticleData = {
   topics: string[]
 }
 
-export async function getBlogArticleData(lang: Lang, category: string, slug: string) {
+export async function getBlogArticleData(
+  lang: Lang,
+  category: string,
+  slug: string,
+) {
   const dirPath = `/dictionaries/${lang}/blog/${category}`
   const fileName = `${slug}.json`
   const filePath = path.resolve(dirPath, fileName)
@@ -381,7 +399,9 @@ export async function getBlogArticleData(lang: Lang, category: string, slug: str
   ])
 
   // replacing category kebab case with camel case
-  const blogCategory = category.replace(/(\-\w)/g, (m: string) => m[1].toUpperCase())
+  const blogCategory = category.replace(/(\-\w)/g, (m: string) =>
+    m[1].toUpperCase(),
+  )
   const data: any = categories[`${blogCategory}Data`]
   const error: any = categories[`${blogCategory}Error`]
 
@@ -415,7 +435,9 @@ export async function getBlogArticleData(lang: Lang, category: string, slug: str
       })
       .filter(
         (blog: BlogAiRecord) =>
-          (blog.topics as string[]).some((topic: string) => topics.includes(topic)) &&
+          (blog.topics as string[]).some((topic: string) =>
+            topics.includes(topic),
+          ) &&
           blog.description?.match(titleRegex) &&
           blog.title?.match(titleRegex),
       )

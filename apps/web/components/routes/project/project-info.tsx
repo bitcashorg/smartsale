@@ -25,7 +25,9 @@ function ListItem({ label, value }: ItemProps) {
         <span className="text-right text-sm">
           {typeof value === 'string' ? value : null}
           {label === 'Presale' ? (
-            <span className="text-xs text-infoForeground">(Or When Sold Out)</span>
+            <span className="text-xs text-infoForeground">
+              (Or When Sold Out)
+            </span>
           ) : null}
         </span>
       </h3>

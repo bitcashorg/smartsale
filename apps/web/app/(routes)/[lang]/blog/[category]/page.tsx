@@ -58,7 +58,9 @@ export async function generateStaticParams(): Promise<CategoryPageParams[]> {
   return params
 }
 
-export async function generateMetadata(props: CategoryPageProps): Promise<Metadata> {
+export async function generateMetadata(
+  props: CategoryPageProps,
+): Promise<Metadata> {
   const {
     params: { lang, category },
   } = props

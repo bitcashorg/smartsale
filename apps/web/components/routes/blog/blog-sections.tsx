@@ -5,7 +5,12 @@ import Link from 'next/link'
 import { ArticleCard } from '../../shared/article-card'
 import { LucideIcons } from './lucide-icons'
 
-export function BlogSections({ sections, lang, category, className }: BlogSectionsProps) {
+export function BlogSections({
+  sections,
+  lang,
+  category,
+  className,
+}: BlogSectionsProps) {
   return (
     <div className={cn('flex w-full flex-col pt-10', className)}>
       {sections.map(
@@ -43,7 +48,7 @@ export function BlogSections({ sections, lang, category, className }: BlogSectio
                     <ArticleCard
                       post={post}
                       sectionSlug={category || section.slug}
-                      key={post.id}
+                      key={`${post.id}-${index}`}
                       lang={lang}
                       meta={true}
                       className={cn(
