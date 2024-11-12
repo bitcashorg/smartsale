@@ -83,6 +83,15 @@ export async function subscribeToNewsletter(
   }
 }
 
+async function getCookieData() {
+  const cookieData = cookies().getAll()
+  return new Promise((resolve) =>
+    setTimeout(() => {
+      resolve(cookieData)
+    }, 1000)
+  )
+}
+
 // generate dub.co links
 export async function generateShortLink(url: string, withCookies = true) {
   let cookieStorage: ReturnType<typeof cookies>;
@@ -90,7 +99,7 @@ export async function generateShortLink(url: string, withCookies = true) {
   
   try {
     if (withCookies) {
-      cookieStorage = cookies()
+      cookieStorage = await getCookieData() as ReturnType<typeof cookies>;
       getShareLinkCookies = cookieStorage.get('bitlauncher-share-link')
 
       if (getShareLinkCookies?.value) {

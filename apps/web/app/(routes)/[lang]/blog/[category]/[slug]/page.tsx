@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic'
+
 import { generateShortLink } from '@/app/actions/general'
 import { BlogPage } from '@/components/routes/blog/article'
 import { type Lang, locales } from '@/dictionaries/locales'
