@@ -6,7 +6,11 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { isMobile } from 'react-device-detect'
 
-export const HeroArticleCard = ({ post, sectionSlug, lang }: HeroArticleCardProps) => {
+export const HeroArticleCard = ({
+  post,
+  sectionSlug,
+  lang,
+}: HeroArticleCardProps) => {
   return (
     <div className="w-full list-none lg:w-1/2">
       <Link

@@ -34,7 +34,7 @@ export async function getSesssion(formData: FormData) {
 
 async function validateRecaptcha(recaptchaToken: string): Promise<boolean> {
   const response = await axios.post(
-    `https://www.google.com/recaptcha/api/siteverify`,
+    'https://www.google.com/recaptcha/api/siteverify',
     {},
     {
       params: {
@@ -47,7 +47,9 @@ async function validateRecaptcha(recaptchaToken: string): Promise<boolean> {
   return response.data.success
 }
 
-export async function subscribeToNewsletter(data: FormData): Promise<ActionState> {
+export async function subscribeToNewsletter(
+  data: FormData,
+): Promise<ActionState> {
   const resend = new Resend(process.env.RESEND_API_KEY)
 
   const NewsletterSchema = z.object({

@@ -632,7 +632,12 @@ export type ImgixParamsCrop =
 
 export type ImgixParamsCs = 'srgb' | 'adobergb1998' | 'tinysrgb' | 'strip'
 
-export type ImgixParamsFill = 'solid' | 'blur' | 'gen' | 'generative' | 'gradient'
+export type ImgixParamsFill =
+  | 'solid'
+  | 'blur'
+  | 'gen'
+  | 'generative'
+  | 'gradient'
 
 export type ImgixParamsFillGenPos =
   | 'top'
@@ -642,9 +647,18 @@ export type ImgixParamsFillGenPos =
   | 'right'
   | 'center'
 
-export type ImgixParamsFillGradientCs = 'linear' | 'srgb' | 'oklab' | 'hsl' | 'lch'
+export type ImgixParamsFillGradientCs =
+  | 'linear'
+  | 'srgb'
+  | 'oklab'
+  | 'hsl'
+  | 'lch'
 
-export type ImgixParamsFillGradientLinearDirection = 'top' | 'bottom' | 'left' | 'right'
+export type ImgixParamsFillGradientLinearDirection =
+  | 'top'
+  | 'bottom'
+  | 'left'
+  | 'right'
 
 export type ImgixParamsFillGradientType = 'linear' | 'radial'
 
@@ -848,7 +862,9 @@ export interface PrivacyPolicyModelMainContentFieldMultiLocaleField {
 
 /** Record of type Privacy Policy (privacy_policy) */
 export interface PrivacyPolicyRecord {
-  _allMainContentLocales: PrivacyPolicyModelMainContentFieldMultiLocaleField[] | null
+  _allMainContentLocales:
+    | PrivacyPolicyModelMainContentFieldMultiLocaleField[]
+    | null
   _createdAt: Scalars['DateTime']
   /** Editing URL */
   _editingUrl: Scalars['String'] | null
@@ -1093,7 +1109,9 @@ export interface TermsAndConditionModelMainContentFieldMultiLocaleField {
 
 /** Record of type Terms and Condition (terms_and_condition) */
 export interface TermsAndConditionRecord {
-  _allMainContentLocales: TermsAndConditionModelMainContentFieldMultiLocaleField[] | null
+  _allMainContentLocales:
+    | TermsAndConditionModelMainContentFieldMultiLocaleField[]
+    | null
   _createdAt: Scalars['DateTime']
   /** Editing URL */
   _editingUrl: Scalars['String'] | null
@@ -5456,7 +5474,8 @@ const BlogAiRecord_possibleTypes: string[] = ['BlogAiRecord']
 export const isBlogAiRecord = (
   obj?: { __typename?: any } | null,
 ): obj is BlogAiRecord => {
-  if (!obj?.__typename) throw new Error('__typename is missing in "isBlogAiRecord"')
+  if (!obj?.__typename)
+    throw new Error('__typename is missing in "isBlogAiRecord"')
   return BlogAiRecord_possibleTypes.includes(obj.__typename)
 }
 
@@ -5464,7 +5483,8 @@ const BlogBitcashRecord_possibleTypes: string[] = ['BlogBitcashRecord']
 export const isBlogBitcashRecord = (
   obj?: { __typename?: any } | null,
 ): obj is BlogBitcashRecord => {
-  if (!obj?.__typename) throw new Error('__typename is missing in "isBlogBitcashRecord"')
+  if (!obj?.__typename)
+    throw new Error('__typename is missing in "isBlogBitcashRecord"')
   return BlogBitcashRecord_possibleTypes.includes(obj.__typename)
 }
 
@@ -5472,7 +5492,8 @@ const BlogBitcoinRecord_possibleTypes: string[] = ['BlogBitcoinRecord']
 export const isBlogBitcoinRecord = (
   obj?: { __typename?: any } | null,
 ): obj is BlogBitcoinRecord => {
-  if (!obj?.__typename) throw new Error('__typename is missing in "isBlogBitcoinRecord"')
+  if (!obj?.__typename)
+    throw new Error('__typename is missing in "isBlogBitcoinRecord"')
   return BlogBitcoinRecord_possibleTypes.includes(obj.__typename)
 }
 
@@ -5489,7 +5510,8 @@ const BlogCryptoRecord_possibleTypes: string[] = ['BlogCryptoRecord']
 export const isBlogCryptoRecord = (
   obj?: { __typename?: any } | null,
 ): obj is BlogCryptoRecord => {
-  if (!obj?.__typename) throw new Error('__typename is missing in "isBlogCryptoRecord"')
+  if (!obj?.__typename)
+    throw new Error('__typename is missing in "isBlogCryptoRecord"')
   return BlogCryptoRecord_possibleTypes.includes(obj.__typename)
 }
 
@@ -5506,7 +5528,8 @@ const BlogNewsRecord_possibleTypes: string[] = ['BlogNewsRecord']
 export const isBlogNewsRecord = (
   obj?: { __typename?: any } | null,
 ): obj is BlogNewsRecord => {
-  if (!obj?.__typename) throw new Error('__typename is missing in "isBlogNewsRecord"')
+  if (!obj?.__typename)
+    throw new Error('__typename is missing in "isBlogNewsRecord"')
   return BlogNewsRecord_possibleTypes.includes(obj.__typename)
 }
 
@@ -5514,7 +5537,8 @@ const BlogStartupRecord_possibleTypes: string[] = ['BlogStartupRecord']
 export const isBlogStartupRecord = (
   obj?: { __typename?: any } | null,
 ): obj is BlogStartupRecord => {
-  if (!obj?.__typename) throw new Error('__typename is missing in "isBlogStartupRecord"')
+  if (!obj?.__typename)
+    throw new Error('__typename is missing in "isBlogStartupRecord"')
   return BlogStartupRecord_possibleTypes.includes(obj.__typename)
 }
 
@@ -5522,13 +5546,17 @@ const CollectionMetadata_possibleTypes: string[] = ['CollectionMetadata']
 export const isCollectionMetadata = (
   obj?: { __typename?: any } | null,
 ): obj is CollectionMetadata => {
-  if (!obj?.__typename) throw new Error('__typename is missing in "isCollectionMetadata"')
+  if (!obj?.__typename)
+    throw new Error('__typename is missing in "isCollectionMetadata"')
   return CollectionMetadata_possibleTypes.includes(obj.__typename)
 }
 
 const ColorField_possibleTypes: string[] = ['ColorField']
-export const isColorField = (obj?: { __typename?: any } | null): obj is ColorField => {
-  if (!obj?.__typename) throw new Error('__typename is missing in "isColorField"')
+export const isColorField = (
+  obj?: { __typename?: any } | null,
+): obj is ColorField => {
+  if (!obj?.__typename)
+    throw new Error('__typename is missing in "isColorField"')
   return ColorField_possibleTypes.includes(obj.__typename)
 }
 
@@ -5539,21 +5567,29 @@ export const isContentBlockModelMainContentField = (
   obj?: { __typename?: any } | null,
 ): obj is ContentBlockModelMainContentField => {
   if (!obj?.__typename)
-    throw new Error('__typename is missing in "isContentBlockModelMainContentField"')
-  return ContentBlockModelMainContentField_possibleTypes.includes(obj.__typename)
+    throw new Error(
+      '__typename is missing in "isContentBlockModelMainContentField"',
+    )
+  return ContentBlockModelMainContentField_possibleTypes.includes(
+    obj.__typename,
+  )
 }
 
 const ContentBlockRecord_possibleTypes: string[] = ['ContentBlockRecord']
 export const isContentBlockRecord = (
   obj?: { __typename?: any } | null,
 ): obj is ContentBlockRecord => {
-  if (!obj?.__typename) throw new Error('__typename is missing in "isContentBlockRecord"')
+  if (!obj?.__typename)
+    throw new Error('__typename is missing in "isContentBlockRecord"')
   return ContentBlockRecord_possibleTypes.includes(obj.__typename)
 }
 
 const FileField_possibleTypes: string[] = ['FileField']
-export const isFileField = (obj?: { __typename?: any } | null): obj is FileField => {
-  if (!obj?.__typename) throw new Error('__typename is missing in "isFileField"')
+export const isFileField = (
+  obj?: { __typename?: any } | null,
+): obj is FileField => {
+  if (!obj?.__typename)
+    throw new Error('__typename is missing in "isFileField"')
   return FileField_possibleTypes.includes(obj.__typename)
 }
 
@@ -5561,7 +5597,8 @@ const FileFieldInterface_possibleTypes: string[] = ['FileField']
 export const isFileFieldInterface = (
   obj?: { __typename?: any } | null,
 ): obj is FileFieldInterface => {
-  if (!obj?.__typename) throw new Error('__typename is missing in "isFileFieldInterface"')
+  if (!obj?.__typename)
+    throw new Error('__typename is missing in "isFileFieldInterface"')
   return FileFieldInterface_possibleTypes.includes(obj.__typename)
 }
 
@@ -5569,11 +5606,14 @@ const GlobalSeoField_possibleTypes: string[] = ['GlobalSeoField']
 export const isGlobalSeoField = (
   obj?: { __typename?: any } | null,
 ): obj is GlobalSeoField => {
-  if (!obj?.__typename) throw new Error('__typename is missing in "isGlobalSeoField"')
+  if (!obj?.__typename)
+    throw new Error('__typename is missing in "isGlobalSeoField"')
   return GlobalSeoField_possibleTypes.includes(obj.__typename)
 }
 
-const JsonFieldMultiLocaleField_possibleTypes: string[] = ['JsonFieldMultiLocaleField']
+const JsonFieldMultiLocaleField_possibleTypes: string[] = [
+  'JsonFieldMultiLocaleField',
+]
 export const isJsonFieldMultiLocaleField = (
   obj?: { __typename?: any } | null,
 ): obj is JsonFieldMultiLocaleField => {
@@ -5586,7 +5626,8 @@ const LayoutRecord_possibleTypes: string[] = ['LayoutRecord']
 export const isLayoutRecord = (
   obj?: { __typename?: any } | null,
 ): obj is LayoutRecord => {
-  if (!obj?.__typename) throw new Error('__typename is missing in "isLayoutRecord"')
+  if (!obj?.__typename)
+    throw new Error('__typename is missing in "isLayoutRecord"')
   return LayoutRecord_possibleTypes.includes(obj.__typename)
 }
 
@@ -5594,7 +5635,8 @@ const PageSeoRecord_possibleTypes: string[] = ['PageSeoRecord']
 export const isPageSeoRecord = (
   obj?: { __typename?: any } | null,
 ): obj is PageSeoRecord => {
-  if (!obj?.__typename) throw new Error('__typename is missing in "isPageSeoRecord"')
+  if (!obj?.__typename)
+    throw new Error('__typename is missing in "isPageSeoRecord"')
   return PageSeoRecord_possibleTypes.includes(obj.__typename)
 }
 
@@ -5605,13 +5647,16 @@ export const isPrivacyPolicyModelMainContentField = (
   obj?: { __typename?: any } | null,
 ): obj is PrivacyPolicyModelMainContentField => {
   if (!obj?.__typename)
-    throw new Error('__typename is missing in "isPrivacyPolicyModelMainContentField"')
-  return PrivacyPolicyModelMainContentField_possibleTypes.includes(obj.__typename)
+    throw new Error(
+      '__typename is missing in "isPrivacyPolicyModelMainContentField"',
+    )
+  return PrivacyPolicyModelMainContentField_possibleTypes.includes(
+    obj.__typename,
+  )
 }
 
-const PrivacyPolicyModelMainContentFieldMultiLocaleField_possibleTypes: string[] = [
-  'PrivacyPolicyModelMainContentFieldMultiLocaleField',
-]
+const PrivacyPolicyModelMainContentFieldMultiLocaleField_possibleTypes: string[] =
+  ['PrivacyPolicyModelMainContentFieldMultiLocaleField']
 export const isPrivacyPolicyModelMainContentFieldMultiLocaleField = (
   obj?: { __typename?: any } | null,
 ): obj is PrivacyPolicyModelMainContentFieldMultiLocaleField => {
@@ -5659,7 +5704,8 @@ const RecordInterface_possibleTypes: string[] = [
 export const isRecordInterface = (
   obj?: { __typename?: any } | null,
 ): obj is RecordInterface => {
-  if (!obj?.__typename) throw new Error('__typename is missing in "isRecordInterface"')
+  if (!obj?.__typename)
+    throw new Error('__typename is missing in "isRecordInterface"')
   return RecordInterface_possibleTypes.includes(obj.__typename)
 }
 
@@ -5667,7 +5713,8 @@ const ResearchAiRecord_possibleTypes: string[] = ['ResearchAiRecord']
 export const isResearchAiRecord = (
   obj?: { __typename?: any } | null,
 ): obj is ResearchAiRecord => {
-  if (!obj?.__typename) throw new Error('__typename is missing in "isResearchAiRecord"')
+  if (!obj?.__typename)
+    throw new Error('__typename is missing in "isResearchAiRecord"')
   return ResearchAiRecord_possibleTypes.includes(obj.__typename)
 }
 
@@ -5675,17 +5722,22 @@ const ResponsiveImage_possibleTypes: string[] = ['ResponsiveImage']
 export const isResponsiveImage = (
   obj?: { __typename?: any } | null,
 ): obj is ResponsiveImage => {
-  if (!obj?.__typename) throw new Error('__typename is missing in "isResponsiveImage"')
+  if (!obj?.__typename)
+    throw new Error('__typename is missing in "isResponsiveImage"')
   return ResponsiveImage_possibleTypes.includes(obj.__typename)
 }
 
 const SeoField_possibleTypes: string[] = ['SeoField']
-export const isSeoField = (obj?: { __typename?: any } | null): obj is SeoField => {
+export const isSeoField = (
+  obj?: { __typename?: any } | null,
+): obj is SeoField => {
   if (!obj?.__typename) throw new Error('__typename is missing in "isSeoField"')
   return SeoField_possibleTypes.includes(obj.__typename)
 }
 
-const SeoFieldMultiLocaleField_possibleTypes: string[] = ['SeoFieldMultiLocaleField']
+const SeoFieldMultiLocaleField_possibleTypes: string[] = [
+  'SeoFieldMultiLocaleField',
+]
 export const isSeoFieldMultiLocaleField = (
   obj?: { __typename?: any } | null,
 ): obj is SeoFieldMultiLocaleField => {
@@ -5700,7 +5752,9 @@ export const isSite = (obj?: { __typename?: any } | null): obj is Site => {
   return Site_possibleTypes.includes(obj.__typename)
 }
 
-const StringMultiLocaleField_possibleTypes: string[] = ['StringMultiLocaleField']
+const StringMultiLocaleField_possibleTypes: string[] = [
+  'StringMultiLocaleField',
+]
 export const isStringMultiLocaleField = (
   obj?: { __typename?: any } | null,
 ): obj is StringMultiLocaleField => {
@@ -5722,13 +5776,16 @@ export const isTermsAndConditionModelMainContentField = (
   obj?: { __typename?: any } | null,
 ): obj is TermsAndConditionModelMainContentField => {
   if (!obj?.__typename)
-    throw new Error('__typename is missing in "isTermsAndConditionModelMainContentField"')
-  return TermsAndConditionModelMainContentField_possibleTypes.includes(obj.__typename)
+    throw new Error(
+      '__typename is missing in "isTermsAndConditionModelMainContentField"',
+    )
+  return TermsAndConditionModelMainContentField_possibleTypes.includes(
+    obj.__typename,
+  )
 }
 
-const TermsAndConditionModelMainContentFieldMultiLocaleField_possibleTypes: string[] = [
-  'TermsAndConditionModelMainContentFieldMultiLocaleField',
-]
+const TermsAndConditionModelMainContentFieldMultiLocaleField_possibleTypes: string[] =
+  ['TermsAndConditionModelMainContentFieldMultiLocaleField']
 export const isTermsAndConditionModelMainContentFieldMultiLocaleField = (
   obj?: { __typename?: any } | null,
 ): obj is TermsAndConditionModelMainContentFieldMultiLocaleField => {
@@ -5741,7 +5798,9 @@ export const isTermsAndConditionModelMainContentFieldMultiLocaleField = (
   )
 }
 
-const TermsAndConditionRecord_possibleTypes: string[] = ['TermsAndConditionRecord']
+const TermsAndConditionRecord_possibleTypes: string[] = [
+  'TermsAndConditionRecord',
+]
 export const isTermsAndConditionRecord = (
   obj?: { __typename?: any } | null,
 ): obj is TermsAndConditionRecord => {
@@ -5751,8 +5810,11 @@ export const isTermsAndConditionRecord = (
 }
 
 const TopicRecord_possibleTypes: string[] = ['TopicRecord']
-export const isTopicRecord = (obj?: { __typename?: any } | null): obj is TopicRecord => {
-  if (!obj?.__typename) throw new Error('__typename is missing in "isTopicRecord"')
+export const isTopicRecord = (
+  obj?: { __typename?: any } | null,
+): obj is TopicRecord => {
+  if (!obj?.__typename)
+    throw new Error('__typename is missing in "isTopicRecord"')
   return TopicRecord_possibleTypes.includes(obj.__typename)
 }
 
@@ -5760,13 +5822,17 @@ const UploadVideoField_possibleTypes: string[] = ['UploadVideoField']
 export const isUploadVideoField = (
   obj?: { __typename?: any } | null,
 ): obj is UploadVideoField => {
-  if (!obj?.__typename) throw new Error('__typename is missing in "isUploadVideoField"')
+  if (!obj?.__typename)
+    throw new Error('__typename is missing in "isUploadVideoField"')
   return UploadVideoField_possibleTypes.includes(obj.__typename)
 }
 
 const focalPoint_possibleTypes: string[] = ['focalPoint']
-export const isfocalPoint = (obj?: { __typename?: any } | null): obj is focalPoint => {
-  if (!obj?.__typename) throw new Error('__typename is missing in "isfocalPoint"')
+export const isfocalPoint = (
+  obj?: { __typename?: any } | null,
+): obj is focalPoint => {
+  if (!obj?.__typename)
+    throw new Error('__typename is missing in "isfocalPoint"')
   return focalPoint_possibleTypes.includes(obj.__typename)
 }
 

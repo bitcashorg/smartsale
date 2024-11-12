@@ -29,7 +29,8 @@ export default {
         'Dự án của chúng tôi tập trung độc đáo vào lĩnh vực AI, sử dụng mô hình mint-and-burn cho tokenomics giống như mô hình cổ đông, nhấn mạnh sự phát triển bền vững, sự minh bạch và sự tham gia cộng đồng trong hệ sinh thái startup công nghệ.',
     },
     {
-      question: 'Số tiền huy động được từ việc bán token sẽ được sử dụng như thế nào?',
+      question:
+        'Số tiền huy động được từ việc bán token sẽ được sử dụng như thế nào?',
       answer:
         'Nguồn tiền từ việc bán token được phân bổ chủ yếu để phát triển và tiếp thị thêm cho Launchpad và ví điện tử, cùng việc tạo ra chuỗi L1 phi lợi nhuận, không có tiền tạo trên nền công nghệ Antelope, nhằm mục đích phân phối token công bằng nhất và đóng góp vào sự phát triển và bền vững của hệ sinh thái.',
     },

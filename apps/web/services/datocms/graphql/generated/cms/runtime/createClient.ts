@@ -7,7 +7,10 @@ import {
 } from './generateGraphqlOperation'
 import type { ExecutionResult, LinkedType } from './types'
 
-export type Headers = HeadersInit | (() => HeadersInit) | (() => Promise<HeadersInit>)
+export type Headers =
+  | HeadersInit
+  | (() => HeadersInit)
+  | (() => Promise<HeadersInit>)
 
 export type BaseFetcher = (
   operation: GraphqlOperation | GraphqlOperation[],
@@ -41,7 +44,9 @@ export const createClient = ({
     client.query = (request: any) => {
       if (!queryRoot) throw new Error('queryRoot argument is missing')
 
-      const resultPromise = fetcher(generateGraphqlOperation('query', queryRoot, request))
+      const resultPromise = fetcher(
+        generateGraphqlOperation('query', queryRoot, request),
+      )
 
       return resultPromise
     }

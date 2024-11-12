@@ -32,7 +32,7 @@ export function AuctionCard({
     <div className="box-border border rounded-xl border-card/30 bg-card backdrop-blur-lg">
       <Link
         id={`hot-auction-${title.toLowerCase().replace(/\s/g, '-')}`}
-        href={isFutureOrComingAuction ? `#` : linkPath}
+        href={isFutureOrComingAuction ? '#' : linkPath}
         className={cn('mx-auto flex size-full flex-col', {
           'cursor-not-allowed': isFutureOrComingAuction,
         })}

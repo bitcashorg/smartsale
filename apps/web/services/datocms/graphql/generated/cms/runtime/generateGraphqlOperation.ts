@@ -77,7 +77,8 @@ const parseRequest = (
       throw new Error(`field selection should not be empty: ${path.join('.')}`)
     }
 
-    const type = path.length > 0 ? getFieldFromPath(ctx.root, path).type : ctx.root
+    const type =
+      path.length > 0 ? getFieldFromPath(ctx.root, path).type : ctx.root
     const scalarFields = type.scalar
 
     let scalarFieldsFragment: string | undefined
@@ -156,18 +157,25 @@ export const generateGraphqlOperation = (
   const operationName = fields?.__name || ''
 
   return {
-    query: [`${operation} ${operationName}${varsString}${result}`, ...ctx.fragments].join(
-      ',',
+    query: [
+      `${operation} ${operationName}${varsString}${result}`,
+      ...ctx.fragments,
+    ].join(','),
+    variables: Object.keys(ctx.variables).reduce<{ [name: string]: any }>(
+      (r, v) => {
+        r[v] = ctx.variables[v].value
+        return r
+      },
+      {},
     ),
-    variables: Object.keys(ctx.variables).reduce<{ [name: string]: any }>((r, v) => {
-      r[v] = ctx.variables[v].value
-      return r
-    }, {}),
     ...(operationName ? { operationName: operationName.toString() } : {}),
   }
 }
 
-export const getFieldFromPath = (root: LinkedType | undefined, path: string[]) => {
+export const getFieldFromPath = (
+  root: LinkedType | undefined,
+  path: string[],
+) => {
   let current: LinkedField | undefined
 
   if (!root) throw new Error('root type is not provided')
@@ -177,7 +185,8 @@ export const getFieldFromPath = (root: LinkedType | undefined, path: string[]) =
   path.forEach((f) => {
     const type = current ? current.type : root
 
-    if (!type.fields) throw new Error(`type \`${type.name}\` does not have fields`)
+    if (!type.fields)
+      throw new Error(`type \`${type.name}\` does not have fields`)
 
     const possibleTypes = Object.keys(type.fields)
       .filter((i) => i.startsWith('on_'))
@@ -197,7 +206,8 @@ export const getFieldFromPath = (root: LinkedType | undefined, path: string[]) =
       if (found) field = found
     })
 
-    if (!field) throw new Error(`type \`${type.name}\` does not have a field \`${f}\``)
+    if (!field)
+      throw new Error(`type \`${type.name}\` does not have a field \`${f}\``)
 
     current = field
   })

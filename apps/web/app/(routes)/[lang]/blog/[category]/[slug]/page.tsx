@@ -30,7 +30,9 @@ export default async function ArticlePage(props: ArticlePageProps) {
   )
 }
 
-export async function generateMetadata(props: ArticlePageProps): Promise<Metadata> {
+export async function generateMetadata(
+  props: ArticlePageProps,
+): Promise<Metadata> {
   const {
     params: { lang, category, slug },
   } = props
