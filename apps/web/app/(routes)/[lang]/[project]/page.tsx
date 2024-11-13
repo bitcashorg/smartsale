@@ -65,7 +65,10 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               </div>
             </Card>
 
-            <ProjectDataCard project={project} />
+            <ProjectDataCard project={{
+              ...project,
+              ...(presale ?? {}),
+            }} />
           </div>
         </ProjectHeader>
 

@@ -1,4 +1,5 @@
 import { TestnetMBOTSPL, type TokenContractData } from '@repo/auction'
+import { Tables } from '@repo/supabase'
 import { merge } from 'lodash'
 import type { StaticImageData } from 'next/image'
 
@@ -143,6 +144,7 @@ export type ProjectWithAuction = Required<
   Pick<Project, 'auctionId' | 'token'>
 > &
   Project
+  & Tables<'presale'>
 
 export async function getProjectBySlug(slug: string, dict: any) {
   const project = projects.find((p) => p.slug === slug)

@@ -79,7 +79,7 @@ export function formatCurrency({
   const formatter = new Intl.NumberFormat(locale, {
     style: 'currency',
     currency: currencyCode,
-    minimumFractionDigits: 2,
+    minimumFractionDigits: 0,
     maximumFractionDigits: 2,
   })
 
@@ -118,10 +118,10 @@ export async function fetcher<JSON = any>(
   return res.json()
 }
 
-export function formatDate(input: string | number | Date): string {
+export function formatDate(input: string | number | Date, length?: "long" | "numeric" | "2-digit" | "short" | "narrow"): string {
   const date = new Date(input)
   return date.toLocaleDateString('en-US', {
-    month: 'long',
+    month: length || 'long',
     day: 'numeric',
     year: 'numeric',
   })
