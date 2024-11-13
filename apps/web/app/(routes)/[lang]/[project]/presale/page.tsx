@@ -62,7 +62,10 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           </Card>
 
           <PresaleDepositCard
-            project={project}
+            project={{
+              ...project,
+              ...(presale || {}),
+            }}
             presaleAddresses={presale.presale_address}
             tokenAddress={tokenAddress}
             isPresaleActive={isPresaleActive}
