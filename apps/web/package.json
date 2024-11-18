@@ -18,7 +18,7 @@
     "translate:category": "bun run scripts/translate-category.ts",
     "gen-cms": "bun run scripts/gen-cms.ts",
     "vercel:install": "npm i -g node-gyp; bun install",
-    "prepare": "cd ../../ && husky .husky/pre-commit || true"
+    "prepare": "cd ../../ && husky .husky/pre-commit"
   },
   "dependencies": {
     "@ai-sdk/anthropic": "^0.0.54",

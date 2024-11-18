@@ -1,0 +1,1922 @@
+{
+  "relatedBlogs": [
+    {
+      "id": "190259087",
+      "topics": [
+        "Summary",
+        "LLM",
+        "Code",
+        "Open Source",
+        "Small Models"
+      ],
+      "title": "Latent Space Podcast 8/4/23 [Summary] Latent Space x AI Breakdown crossover pod! ",
+      "slug": "latent-space-podcast-8-4-23-summary-latent-space-x-ai-breakdown-crossover-pod",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:16:33+01:00",
+      "description": "Join AI Breakdown & Latent Space for the summer AI tech roundup: Dive into GPT4.5, Llama 2, AI tools, the rising AI engineer, and more!",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1691539617-screenshot-2023-08-08-at-8-02-52-pm.png"
+      },
+      "seo": {
+        "description": "Dive into GPT4.5, Llama 2, AI tools, the rising AI engineer, and more!",
+        "title": "Latent Space Podcast 8/4/23 [Summary] AI Breakdown crossover",
+        "twitterCard": null,
+        "image": {
+          "width": 1578,
+          "height": 558,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1691539617-screenshot-2023-08-08-at-8-02-52-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190259172",
+      "topics": [
+        "Summary",
+        "LLM",
+        "Open Source",
+        "Small Models"
+      ],
+      "title": "Latent Space Podcast 7/19/23 [Summary] - Llama 2: The New Open LLM SOTA (ft. Nathan Lambert, Matt Bornstein, Anton Troynikov, Russell Kaplan, Whole Mars Catalog et al.)",
+      "slug": "latent-space-podcast-7-19-23-summary-llama-2-the-new-open-llm-sota-ft-nathan-lamb",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:12:38+01:00",
+      "description": "Explore Llama 2, the latest AI breakthrough with experts Nathan Lambert, Matt Bornstein & more. Dive into datasets, benchmarks & AI predictions. Llama insights & drama await in this top podcast!",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1691968295-screenshot-2023-08-13-at-7-11-06-pm.png"
+      },
+      "seo": {
+        "description": "Dive into datasets, benchmarks & AI predictions. Llama insights & drama await in this top podcast!",
+        "title": "Latent Space Podcast 7/19/23 [Summary] - Llama 2",
+        "twitterCard": null,
+        "image": {
+          "width": 1632,
+          "height": 574,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1691968295-screenshot-2023-08-13-at-7-11-06-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190259191",
+      "topics": [
+        "Summary",
+        "Code",
+        "LLM"
+      ],
+      "title": "Latent Space Podcast 7/10/23 [Summary] - Code Interpreter == GPT 4.5 (w/ Simon Willison, Alex Volkov, Aravind Srinivas, Alex Graveley, et al.)",
+      "slug": "latent-space-podcast-7-10-23-summary-code-interpreter-gpt-4-5-w-simon-willison-al",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:09:26+01:00",
+      "description": "Explore ChatGPT's Code Interpreter: a game-changer in AI. Dive into its 1000x capabilities leap with Simon, Alex & top AI experts. #CodeAugmentedInference #GPT4_5",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692048911-screenshot-2023-08-14-at-3-34-05-pm.png"
+      },
+      "seo": {
+        "description": "Explore ChatGPT's Code Interpreter: a game-changer in AI. Dive into its 1000x capabilities leap with Simon, Alex & top AI experts. ",
+        "title": "Latent Space Podcast  [Summary] Code Interpreter = GPT 4.5",
+        "twitterCard": null,
+        "image": {
+          "width": 1596,
+          "height": 582,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692048911-screenshot-2023-08-14-at-3-34-05-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190259216",
+      "topics": [
+        "Summary",
+        "Open Source"
+      ],
+      "title": "Latent Space Podcast 7/2/23 [Summary] AI Trends: a Latent Space x Practical AI crossover pod!",
+      "slug": "latent-space-podcast-7-2-23-summary-ai-trends-a-latent-space-x-practical-ai-cross",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:08:36+01:00",
+      "description": "Explore the fusion of Practical AI & Latent Space as they delve into 2023's top AI trends, reflect on standout episodes, and share insights on navigating the AI evolution.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692146916-screenshot-2023-08-15-at-5-20-38-pm.png"
+      },
+      "seo": {
+        "description": "2023's top AI trends, reflect on standout episodes, and share insights on navigating the AI evolution.",
+        "title": "Latent Space Podcast 7/2/23 [Summary] AI Trends ",
+        "twitterCard": null,
+        "image": {
+          "width": 1600,
+          "height": 532,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692146916-screenshot-2023-08-15-at-5-20-38-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190259238",
+      "topics": [
+        "Hardware",
+        "LLM",
+        "Summary"
+      ],
+      "title": "Latent Space Podcast 6/20/23 [Summary] - Commoditizing the Petaflop — with George Hotz of the tiny corp",
+      "slug": "latent-space-podcast-6-20-23-summary-commoditizing-the-petaflop-with-george-ho",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:07:15+01:00",
+      "description": "George Hotz of tiny corp challenges Nvidia & Google! Dive into the world of AMD collaborations, insights on ggml, Mojo, Elon & GPT-4, plus a peek into AI Girlfriend. ",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692154615-screenshot-2023-08-15-at-10-55-40-pm.png"
+      },
+      "seo": {
+        "description": "George Hotz of tiny corp challenges Nvidia & Google! AMD collaborations, insights on ggml, Mojo, Elon & GPT-4, plus a peek into AI Girlfriend. ",
+        "title": "Latent Space Podcast 6/20/23 [Summary] - George Hotz ",
+        "twitterCard": null,
+        "image": {
+          "width": 1586,
+          "height": 508,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692154615-screenshot-2023-08-15-at-10-55-40-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190259333",
+      "topics": [
+        "LLM",
+        "Summary",
+        "UX"
+      ],
+      "title": "Latent Space Podcast 6/8/23 [Summary] - From RLHF to RLHB: The Case for Learning from Human Behavior - with Jeffrey Wang and Joe Reeve of Amplitude",
+      "slug": "latent-space-podcast-6-8-23-summary-from-rlhf-to-rlhb-the-case-for-learning-from",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:02:33+01:00",
+      "description": "Explore AI & analytics with Jeffrey Wang & Joe Reeve on Latent Space Live! Dive into why AI values Analytics and the power of first-party behavioral data. ",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692386432-screenshot-2023-08-18-at-3-17-04-pm.png"
+      },
+      "seo": {
+        "description": "Explore AI & analytics with Jeffrey Wang & Joe Reeve on Latent Space Live! Dive into why AI values Analytics and the power of first-party behavioral data. ",
+        "title": "Latent Space Podcast 6/8/23 [Summary] - From RLHF to RLHB",
+        "twitterCard": null,
+        "image": {
+          "width": 1674,
+          "height": 550,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692386432-screenshot-2023-08-18-at-3-17-04-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190260528",
+      "topics": [
+        "Summary",
+        "LLM",
+        "UX"
+      ],
+      "title": "Latent Space Podcast 6/1/23 [Summary] - Building the AI × UX Scenius — with Linus Lee of Notion AI",
+      "slug": "latent-space-podcast-6-1-23-summary-building-the-ai-x-ux-scenius-with-linus-le",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:00:12+01:00",
+      "description": "Explore Notion AI's transformative approach to AI and UX. Dive into the future of AI-augmented workspaces, the value beyond chat interfaces, and insights on effective knowledge work. Recap of AI×UX NYC meetup included!",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692390655-screenshot-2023-08-18-at-4-28-51-pm.png"
+      },
+      "seo": {
+        "description": "Explore Notion AI's transformative approach to AI and UX. ",
+        "title": "Latent Space Podcast 6/1/23 [Summary] - AI × UX Scenius",
+        "twitterCard": null,
+        "image": {
+          "width": 1614,
+          "height": 546,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692390655-screenshot-2023-08-18-at-4-28-51-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190260557",
+      "topics": [
+        "Summary",
+        "Code",
+        "LLM",
+        "Agents"
+      ],
+      "title": "Latent Space Podcast 5/25/23 [Summary] - Debugging the Internet with AI agents – with Itamar Friedman of Codium AI and AutoGPT",
+      "slug": "latent-space-podcast-5-25-23-summary-debugging-the-internet-with-ai-agents-with",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:58:27+01:00",
+      "description": "Explore the future of AI with Itamar Friedman from Codium AI on 'Debugging the Internet'. Dive into 'Extreme DRY' agents, the rapid sync of specs & tests, and the balance between code & testing. Plus, insights from Toran & an exclusive look at AutoGPT's roadmap!",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692397413-screenshot-2023-08-18-at-6-10-09-pm.png"
+      },
+      "seo": {
+        "description": "Dive into 'Extreme DRY' agents, the rapid sync of specs & tests, and the balance between code & testing. ",
+        "title": "Latent Space Pod 5/25/23 [Summary] Debugging the Internet",
+        "twitterCard": null,
+        "image": {
+          "width": 1568,
+          "height": 548,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692397413-screenshot-2023-08-18-at-6-10-09-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190260577",
+      "topics": [
+        "LLM",
+        "Small Models"
+      ],
+      "title": "Latent Space Podcast 5/20/23 [Summary] - MPT-7B and The Beginning of Context=Infinity — with Jonathan Frankle and Abhinav Venigalla of MosaicML",
+      "slug": "latent-space-podcast-5-20-23-summary-mpt-7b-and-the-beginning-of-context-infinity",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:57:33+01:00",
+      "description": "Dive into MosaicML's 9-day, $200k \"llongboi\" MPT-7B training, data prep insights, & the rise of open AI models with experts Frankle & Venigalla.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692409795-screenshot-2023-08-18-at-9-49-21-pm.png"
+      },
+      "seo": {
+        "description": "Dive into MosaicML's 9-day, $200k \"llongboi\" MPT-7B training, data prep insights, & the rise of open AI models ",
+        "title": "Latent Space Podcast 6/25/23 [Summary] MosaicML",
+        "twitterCard": null,
+        "image": {
+          "width": 1568,
+          "height": 556,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692409795-screenshot-2023-08-18-at-9-49-21-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190260597",
+      "topics": [
+        "LLM",
+        "Structured Data"
+      ],
+      "title": "Latent Space Podcast 5/15/23 [Summary] - Guaranteed quality and structure in LLM outputs - with Shreya Rajpal of Guardrails AI",
+      "slug": "latent-space-podcast-5-15-23-summary-guaranteed-quality-and-structure-in-llm-outp",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:56:26+01:00",
+      "description": "Explore Ep. 12 with Shreya Rajpal of Guardrails AI: Dive deep into validating LLM outputs, refining answers through re-asking loops, and establishing SLAs for models. Master the nuances of AI quality assurance.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692495732-screenshot-2023-08-19-at-9-38-27-pm.png"
+      },
+      "seo": {
+        "description": "Explore Ep. 12 with Shreya Rajpal of Guardrails AI: Dive deep into validating LLM outputs.",
+        "title": "Latent Space Podcast 5/15/23 [Summary] Quality LLM Outputs",
+        "twitterCard": null,
+        "image": {
+          "width": 1580,
+          "height": 512,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692495732-screenshot-2023-08-19-at-9-38-27-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190260606",
+      "topics": [
+        "LLM",
+        "Training",
+        "Agents",
+        "Multimodal"
+      ],
+      "title": "Latent Space Podcast 5/8/23 [Summary] - The AI Founder Gene: Being Early, Building Fast, and Believing in Greatness — with Sharif Shameem of Lexica",
+      "slug": "latent-space-podcast-5-8-23-summary-the-ai-founder-gene-being-early-building-fast",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:52:09+01:00",
+      "description": "Ep.11 with Sharif Shameem of Lexica: Dive into the AI founder mindset, uncovering the secrets to pioneering innovation, building game-changing tech, training models, and the intriguing potential of Agents and genomic sequencing. ",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692501984-screenshot-2023-08-19-at-11-24-05-pm.png"
+      },
+      "seo": {
+        "description": "Ep.11 with Sharif Shameem of Lexica: Dive into the AI founder mindset, uncovering the secrets to pioneering innovation.",
+        "title": "Latent Space Pod 5/8/23 [Summary] The AI Founder Gene",
+        "twitterCard": null,
+        "image": {
+          "width": 1606,
+          "height": 550,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692501984-screenshot-2023-08-19-at-11-24-05-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190260640",
+      "topics": [
+        "Summary",
+        "Open Source",
+        "LLM"
+      ],
+      "title": "Latent Space Podcast 5/5/23 [Summary] - No Moat: Closed AI gets its Open Source wakeup call — ft. Simon Willison",
+      "slug": "latent-space-podcast-5-5-23-summary-no-moat-closed-ai-gets-its-open-source-wakeup",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:49:18+01:00",
+      "description": "Explore 'No Moat: Closed AI's Open Source Awakening' with Simon Willison. Dive into leaked Google Moat memo insights, Google Brain Drain, and Python's speed boost with Mojo.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692566921-screenshot-2023-08-20-at-5-25-53-pm.png"
+      },
+      "seo": {
+        "description": "Explore 'No Moat: Closed AI's Open Source Awakening' with Simon Willison. Dive into leaked Google Moat memo insights.",
+        "title": "Latent Space Podcast 5/5/23 [Summary] - No Moat",
+        "twitterCard": null,
+        "image": {
+          "width": 1602,
+          "height": 532,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692566921-screenshot-2023-08-20-at-5-25-53-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190260671",
+      "topics": [
+        "LLM",
+        "Code",
+        "Summary"
+      ],
+      "title": "Latent Space Podcast 5/3/23 [Summary] - Training a SOTA Code LLM in 1 week and Quantifying the Vibes — with Reza Shabani of Replit",
+      "slug": "latent-space-podcast-5-3-23-summary-training-a-sota-code-llm-in-1-week-and-quanti",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:46:08+01:00",
+      "description": "Ep. 10 with Reza Shabani: Dive deep into the rapid training of a state-of-the-art Code LLM, explore Replit Ghostwriter's future, and journey from Finance to AI. Discover the transition from Kaplan to Chinchilla and more!",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692584998-screenshot-2023-08-20-at-10-17-26-pm.png"
+      },
+      "seo": {
+        "description": "Ep. 10 with Reza Shabani: Dive deep into the rapid training of a state-of-the-art Code LLM!",
+        "title": "Latent Space Pod 5/3/23 [Summary] - SOTA Code LLM",
+        "twitterCard": null,
+        "image": {
+          "width": 1566,
+          "height": 530,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692584998-screenshot-2023-08-20-at-10-17-26-pm.png"
+        }
+      }
+    },
+    {
+      "id": "191164291",
+      "topics": [
+        "LLM",
+        "Enterprise",
+        "Summary"
+      ],
+      "title": "Latent Space Podcast 4/21/23 [Summary] - AI-powered Search for the Enterprise — with Deedy Das of Glean",
+      "slug": "latent-space-podcast-4-21-23-summary-ai-powered-search-for-the-enterprise-with",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:31:31+01:00",
+      "description": "Ep.8: Dive into AI in enterprise search with Deedy Das of Glean. Unpack challenges in creating an AI search giant, Google vs ChatGPT comparisons, AI infrastructure intricacies, spotting AI-generated text, and why businesses need more than just Document QA.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1694134074-screenshot-2023-09-07-at-5-43-48-pm.png"
+      },
+      "seo": {
+        "description": "Ep.8: Dive into AI in enterprise search with Deedy Das of Glean. Unpack challenges in creating an AI search giant, Google vs ChatGPT ...",
+        "title": "Latent Space Podcast 4/21/23 [Summary] - with Deedy Das ",
+        "twitterCard": null,
+        "image": {
+          "width": 1608,
+          "height": 530,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1694134074-screenshot-2023-09-07-at-5-43-48-pm.png"
+        }
+      }
+    },
+    {
+      "id": "191165673",
+      "topics": [
+        "Summary",
+        "Vision"
+      ],
+      "title": "Latent Space Podcast 4/13/23 [Summary] - Segment Anything Model and the Hard Problems of Computer Vision — with Joseph Nelson of Roboflow",
+      "slug": "latent-space-podcast-4-13-23-summary-segment-anything-model-and-the-hard-problems",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:30:03+01:00",
+      "description": "Explore Ep.7 with Joseph Nelson on the Segment Anything Model by Meta. Dive deep into Computer Vision's future, the significance of OCR, Image Segmentation, and beyond. #Roboflow #AI",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1694150379-screenshot-2023-09-07-at-10-15-52-pm.png"
+      },
+      "seo": {
+        "description": "Dive deep into Computer Vision's future, the significance of OCR, Image Segmentation, and beyond. #Roboflow #AI",
+        "title": "Latent Space Podcast 4/13/23 [Summary] - Segment Anything ",
+        "twitterCard": null,
+        "image": {
+          "width": 1604,
+          "height": 604,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1694150379-screenshot-2023-09-07-at-10-15-52-pm.png"
+        }
+      }
+    }
+  ],
+  "blogContent": {
+    "id": "190259294",
+    "topics": [
+      "LLM",
+      "Functions",
+      "Summary"
+    ],
+    "title": "Latent Space Podcast 6/14/23 [Summary] - Emergency Pod: OpenAI's new Functions API, 75% Price Drop, 4x Context Length (w/ Alex Volkov, Simon Willison, Riley Goodside, Joshua Lochner, Stefania Druga, Eric Elliott, Mayo Oshin et al)",
+    "slug": "latent-space-podcast-6-14-23-summary-emergency-pod-openai-s-new-functions-api-75",
+    "authorName": "Prof. Otto Nomos",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+    },
+    "_publishedAt": "2023-10-05T09:05:04+01:00",
+    "description": "Explore the June 2023 OpenAI updates with top AI engineers from Scale, Microsoft, Pinecone, & Huggingface. Dive into the Code x LLM paradigms and discover Recursive Function Agents.",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1692221668-screenshot-2023-08-16-at-5-32-29-pm.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Original Link: "
+                    },
+                    {
+                      "url": "https://www.latent.space/p/function-agents#details",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Emergency Pod: OpenAI's new Functions API, 75% Price Drop, 4x Context Length (w/ Alex Volkov, Simon Willison, Riley Goodside, Joshua Lochner, Stefania Druga, Eric Elliott, Mayo Oshin et al)"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Summary"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": " In this special emergency podcast episode, Swyx dives into the June 2023 updates from OpenAI. Key highlights include:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "The unveiling of OpenAI's new Functions API which was previously available only for ChatGPT Plus subscribers. This API allows developers to introduce a new 'function' role, making it easier to structure the output, particularly in formats like JSON."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "The significant 75% price reduction for embeddings. This is especially noteworthy following a previous 90% reduction, marking OpenAI's push towards making AI more accessible. The cost to embed the entire internet has gone from $50 million to an impressive $12.5 million."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "A 4x increase in context length for the GPT-3.5 model, moving from 4,000 to 16,000 tokens."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Observations on long context models indicating that they may not retain context as efficiently across the entire span."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "The podcast also touches on discussions about embedding costs, potential use-cases, and comparisons of GPT versions."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Guests Alex Volkov and others express excitement about the price drops and new models but also share some reservations about the reliability of the API in certain applications."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "screenshot-2023-08-16-at-5-32-29-pm",
+            "height": 606,
+            "width": 1626,
+            "filename": "screenshot-2023-08-16-at-5-32-29-pm.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692221668-screenshot-2023-08-16-at-5-32-29-pm.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "OpenAI's New Functions API: Developer Reactions & Comparisons"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "The discussion primarily revolved around OpenAI's new release, addressing the functionality and the potential implications for developers and other AI services."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Introduction to Riley Goodside"
+                    },
+                    {
+                      "type": "span",
+                      "value": " - He is known for persuading Bard, an AI model, to return results in JSON format. He praises OpenAI for responding to developer needs and maintaining a \"hacker ethos\". He notes that instead of trying to make the output syntactically perfect, OpenAI has fine-tuned it, though there might be instances of inexact syntax."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Simon Willison's Input"
+                    },
+                    {
+                      "type": "span",
+                      "value": " - He discusses the pattern of asking the AI to run functions. Simon appreciates OpenAI's ability to identify and deliver what developers truly want. He's excited about the ability to integrate tools with the model. He also mentions the security implications associated with prompt injection and the need for user approval for actions that might modify the world state."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Eric Elliott's Perspective"
+                    },
+                    {
+                      "type": "span",
+                      "value": " - Creator of Sudo Lang, he recommends defining an interface inside prompts for accuracy. He's observed that when the AI is prompted with pseudo code, it tends to be more compliant and accurate."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Discussion on Functions API and Agents"
+                    },
+                    {
+                      "type": "span",
+                      "value": " - The conversation shifts to how this new release from OpenAI affects the agent-making space, where tools are created and prompting is used to ask the AI to run those tools."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Contrast with Google Vertex"
+                    },
+                    {
+                      "type": "span",
+                      "value": " - Vertex from Google is also known to offer a similar functionality where developers can specify a JSON schema."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Overall, the participants discuss the implications, potential challenges, and the value of the new OpenAI release, emphasizing the importance of reliable outputs and the balance between developer needs and security concerns."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "abls8-img1",
+            "height": 956,
+            "width": 956,
+            "filename": "abls8-img1.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692224946-abls8-img1.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Challenges and Future of Code-to-English Interface in AI Systems"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Stefania Druga, a researcher with Microsoft Research, discusses her experiences with Fixie AI, emphasizing the spectrum of users from no-code enthusiasts to Python programmers. She raises concerns about the challenges of AI 'hallucinations', controlling outputs, and the balance between natural language prompts and traditional coding. Riley Goodside remarks on the potential shift from English language prompting back to more structured prompts, due to the ambiguity and unpredictability of natural language. The excitement around language models, he mentions, is the potential to democratize automation. Alex Volkov expresses enthusiasm about a transition akin to moving from JavaScript to TypeScript. Roie, from Pinecone, focuses on the surprising reduction in embedding costs, pondering the reasons behind the drastic price drop. Swyx chimes in with potential explanations, mentioning infrastructure improvements and a shift in model versions that could have led to cheaper inferences. He also comments on the strategic significance of reducing embedding costs to potentially lock users into OpenAI's ecosystem. Alex stresses OpenAI's stance on not using data provided via its API for training."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "abls8-img2-5",
+            "height": 956,
+            "width": 956,
+            "filename": "abls8-img2-5.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692225139-abls8-img2-5.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Embeddings and Dynamic Function Selection in AI"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Xenova and Huggingface on AI Embeddings"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Alex Volkov"
+                            },
+                            {
+                              "type": "span",
+                              "value": " introduces Joshua ("
+                            },
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Xenova)"
+                            },
+                            {
+                              "type": "span",
+                              "value": " from "
+                            },
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Transformers.js"
+                            },
+                            {
+                              "type": "span",
+                              "value": " and a recent employee at "
+                            },
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Huggingface"
+                            },
+                            {
+                              "type": "span",
+                              "value": "."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Discussion ensues about the advantages of running embeddings on the client side for reasons such as data privacy and lower costs. Xenova acknowledges the benefits of both large-scale embeddings offered by OpenAI and client-side embeddings. He mentions the constraint on embedding dimensions when run locally."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Alex"
+                            },
+                            {
+                              "type": "span",
+                              "value": " appreciates the utility of "
+                            },
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Transformers.js"
+                            },
+                            {
+                              "type": "span",
+                              "value": ", indicating its value extends beyond just experimental use cases."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Function Selection in AI Models"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "The panel transitions to discussing the dynamic selection of functions by OpenAI. They address the ability for OpenAI to determine which function to run based on user input."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Swyx"
+                            },
+                            {
+                              "type": "span",
+                              "value": " raises concerns about the unclear limit on the number of functions that can be assigned. He discusses the contrast between using many functions and having a few highly capable functions."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Simon Willison"
+                            },
+                            {
+                              "type": "span",
+                              "value": " proposes having sophisticated functions that are domain-specific, suggesting SQL or even JavaScript as potential languages."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Alex"
+                            },
+                            {
+                              "type": "span",
+                              "value": " highlights a new feature where the AI model can either choose a function on its own or be explicitly told which function to run based on user input. He mentions a new role in the chat interface called "
+                            },
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "function role"
+                            },
+                            {
+                              "type": "span",
+                              "value": " to identify which function generated a particular output."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "The panel concludes with the idea that decision-making in choosing or directing functions will be a critical aspect of future AI applications."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "abls8-img3",
+            "height": 956,
+            "width": 956,
+            "filename": "abls8-img3.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692225154-abls8-img3.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "Leveraging Function API for Advanced Code Agents"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Alex Volkov"
+                            },
+                            {
+                              "type": "span",
+                              "value": " highlighted the potential of utilizing user and system input to innovate function outputs. He envisioned a function role that would be adaptable to the user's needs."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Swyx"
+                            },
+                            {
+                              "type": "span",
+                              "value": " identified the challenges faced by developers with code generation tools, emphasizing the need for more inference time and flexibility in error correction. Swyx introduced the idea of a 'code agent' created through three pathways: generating, testing, and calling existing code."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Stefania Druga"
+                            },
+                            {
+                              "type": "span",
+                              "value": " discussed the blurred lines between functions and agents. She mentioned Google's paper, \"Reveal\", which presented an innovative method of encoding diverse knowledge sources into a memory structure for faster response time."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Riley Goodside"
+                            },
+                            {
+                              "type": "span",
+                              "value": " saw potential in harnessing AI's documentation expertise to predict software behavior based on descriptions."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Nisten"
+                            },
+                            {
+                              "type": "span",
+                              "value": " talked about the limitations of the model's context window, noting that while the input capacity had increased, the output still seemed limited."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Mayo"
+                            },
+                            {
+                              "type": "span",
+                              "value": " expressed skepticism about the hype, questioning the tangible benefits of a larger context window, especially with the rise of retrieval-based approaches."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Alex Volkov"
+                            },
+                            {
+                              "type": "span",
+                              "value": " responded, pointing out the convenience of the larger context window for developers who deal with variable user input sizes."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "The discourse suggests that while the Function API has exciting potential, there are several challenges and considerations to account for in its practical application."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "abls8-img5",
+            "height": 956,
+            "width": 956,
+            "filename": "abls8-img5.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692225254-abls8-img5.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "The 2 Code x LLM Paradigms and Evolving AI Interactions"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Roie expresses interest in Sean's perspective on the distinction between two prevailing paradigms related to language models and code. Swyx shares his view that effective utilization of language models demands a solid grounding in code. He emphasizes the growing tension between two approaches:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Retrieval Augmented Generation"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Where the model takes center stage with surrounding code (LLM Core with a code shell)."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Agent World"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Where the model plays a specific, limited role and the code interprets tasks (LM shell with a code core)."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Swyx acknowledges OpenAI's recent updates, suggesting a shift from the first paradigm to the second. This transition enhances the capability of language models to more seamlessly invoke functions."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Mayo and Alex discuss the evolution from traditional prompt engineering to fine-tuning. They observe that earlier, achieving specific outputs required intricate prompting, but now there's a directness to the tooling, which simplifies things but also has its drawbacks."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Riley points out the benefits of the updated model, noting it streamlines certain tasks but may come with challenges, like the model \"breaking character.\" He suggests that the model should be seen as a reasoning tool, emphasizing the potential of structured outputs."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Stefania predicts that smaller AI models are the future due to benefits like security, affordability, and decentralization. She emphasizes the need for models to be efficient for real-time applications and shares concerns about over-reliance on chat interfaces, which may not be scalable for every application."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Swyx and Riley conclude that, despite OpenAI's current focus on chat, it's essential to think beyond this format and consider the broader possibilities of AI and UX interactions."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "abls8-img8",
+            "height": 956,
+            "width": 956,
+            "filename": "abls8-img8.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692225542-abls8-img8.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "The Double-Edged Sword: AI's Power and Vulnerabilities Explored"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Alex Volkov"
+                            },
+                            {
+                              "type": "span",
+                              "value": " opened the conversation about the security concerns tied to developer-friendly tools. He specifically queried about the potential to address prompt injection issues with the new tools."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Simon Willison"
+                            },
+                            {
+                              "type": "span",
+                              "value": " expressed concerns, emphasizing that while the new updates reduce the barrier to function access, they could also lead to unintended consequences. He cited the challenge of prompt injections becoming more sophisticated and the need to consider reversibility in AI actions."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Discussing Bing Chat, Alex and Simon touched upon the ability of modern systems to detect prompt injections. Simon voiced skepticism about the effectiveness of filters catching prompt injections, particularly when up against dedicated hackers."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Swyx"
+                            },
+                            {
+                              "type": "span",
+                              "value": " suggested marking functions as \"reversible\" or \"requires human input\" as potential safety measures."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Nisten"
+                            },
+                            {
+                              "type": "span",
+                              "value": " voiced enthusiasm for the game-changing nature of functions, emphasizing their potential to revolutionize operations and scalability in AI. However, he also acknowledged the possible security holes."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Riley Goodside"
+                            },
+                            {
+                              "type": "span",
+                              "value": " urged caution, stating that while advancements are exciting, there are still inherent risks such as AI hallucinations. He also highlighted that similar guardrails have been seen in other frameworks, urging moderation in the excitement."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Alex Volkov"
+                            },
+                            {
+                              "type": "span",
+                              "value": " defended the significance of the advancements, hinting at the success of past OpenAI projects and their potential for transformative change."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "The panel touched upon the evolution of function integration, with Simon highlighting how its inclusion in the core platform reduces friction and inspires confidence."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Stefania Druga"
+                            },
+                            {
+                              "type": "span",
+                              "value": " mentioned the newly launched Garak, a tool for security probing, and pondered on the ethical implications of exposing vulnerabilities. She left with a thought-provoking question about the future demands from OpenAI."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "The discussion ended with an invitation for participants to brainstorm on potential projects and innovations using the new tools."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "abls8-img7",
+            "height": 956,
+            "width": 956,
+            "filename": "abls8-img7.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692225281-abls8-img7.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": [
+                        "strong"
+                      ],
+                      "value": "GPT Model Discussions and Future Wishes"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "GPT Model Upgrades:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " Alex Volkov emphasized the upgrade from the 3.5 model to the current version. He's curious if the new model adheres to system messages more efficiently. Simon Willison discussed how the new models are now more \"steerable\" and highlighted the importance of stability. Simon also mentioned that the problem of easily injecting prompts in 3.5 might be resolved in this upgrade but clarified that it hasn't been officially declared as solved."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "JSONformer Discussion:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " Mayo introduced a topic about JSONformer, a tool for generating structured data. Simon provided an explanation of how it functions and its capabilities. The group speculated about OpenAI's choices in terms of implementing similar methods."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Closing Comments - Desired Features:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " Participants expressed their hopes for future developments:"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "list",
+                          "style": "bulleted",
+                          "children": [
+                            {
+                              "type": "listItem",
+                              "children": [
+                                {
+                                  "type": "paragraph",
+                                  "children": [
+                                    {
+                                      "type": "span",
+                                      "value": "Stefania Druga: Wished for knowledge graphs and better data retrieval."
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "listItem",
+                              "children": [
+                                {
+                                  "type": "paragraph",
+                                  "children": [
+                                    {
+                                      "type": "span",
+                                      "value": "Simon Willison: Desired widgets in ChatGPT to make it more interactive."
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "listItem",
+                              "children": [
+                                {
+                                  "type": "paragraph",
+                                  "children": [
+                                    {
+                                      "type": "span",
+                                      "value": "Nisten: Advocated for a 30B open-source model from OpenAI."
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "listItem",
+                              "children": [
+                                {
+                                  "type": "paragraph",
+                                  "children": [
+                                    {
+                                      "type": "span",
+                                      "value": "Far El: Echoed the desire for more open-source models."
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "listItem",
+                              "children": [
+                                {
+                                  "type": "paragraph",
+                                  "children": [
+                                    {
+                                      "type": "span",
+                                      "value": "Roie: Wanted an 80% cost reduction for the 32k GPT-4."
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "listItem",
+                              "children": [
+                                {
+                                  "type": "paragraph",
+                                  "children": [
+                                    {
+                                      "type": "span",
+                                      "value": "Riley Goodside: Expressed excitement for the upcoming virtual hackathon with substantial prizes."
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "OpenAI's Open Source Debate:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " There was a unanimous desire for OpenAI to lean more into open sourcing their models, as emphasized by Mayo, who pointed out the irony in the company's name."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Developer Perspectives and Future Possibilities:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " swyx (Sean) mentioned the concept of \"Franken models\" and the potential to use larger models to guide smaller, specialized models. He expressed excitement about exploring this area and rewriting his developer agent."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Podcasts and Future Developments:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " Alex Volkov gave a shoutout to swyx's podcast, Latent Space. swyx also teased an upcoming interview with George Hotz, hinting at some intriguing developments in the tech world."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "abls8-img6",
+            "height": 956,
+            "width": 956,
+            "filename": "abls8-img6.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692225267-abls8-img6.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Explore the June 2023 OpenAI updates with top AI engineers from Scale, Microsoft, Pinecone, & Huggingface. ",
+      "title": "Latent Space Podcast 6/20/23 [Summary] - Emergency Pod",
+      "twitterCard": null,
+      "image": {
+        "width": 1626,
+        "height": 606,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1692221668-screenshot-2023-08-16-at-5-32-29-pm.png"
+      }
+    }
+  },
+  "topics": [
+    "LLM",
+    "Functions",
+    "Summary"
+  ],
+  "shortLink": ""
+}

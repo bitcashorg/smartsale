@@ -1,0 +1,310 @@
+{
+  "relatedBlogs": [
+    {
+      "id": "180556595",
+      "topics": [
+        "Fundraising",
+        "Tokenomics",
+        "Commentary"
+      ],
+      "title": "The Blockchain Effect: Network Effects without Market Power Costs [Commentary]",
+      "slug": "the-blockchain-effect-network-effects-without-market-power-costs-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:11:14+01:00",
+      "description": "Explore how blockchain enables network effects without the downsides of market power. Discover the game-changing Blockchain Effect.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690855275-cbc4-img1.png"
+      },
+      "seo": {
+        "description": "Explore how blockchain enables network effects without the downsides of market power. Discover the game-changing Blockchain Effect.",
+        "title": "Network Effects without Market Power Costs [Commentary]",
+        "twitterCard": null,
+        "image": {
+          "width": 862,
+          "height": 862,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1690855275-cbc4-img1.png"
+        }
+      }
+    }
+  ],
+  "blogContent": {
+    "id": "180563922",
+    "topics": [
+      "Fundraising",
+      "Tokenomics",
+      "Commentary"
+    ],
+    "title": "ICOs Leverage Network Effects [Commentary]",
+    "slug": "icos-leverage-network-effects-commentary",
+    "authorName": "Crypto Clairity",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+    },
+    "_publishedAt": "2023-10-05T09:12:06+01:00",
+    "description": "Discover how ICOs harness the power of network effects to fuel their success. ICOs and network effects, a dynamic duo!",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1690860184-cbc9-img1.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Original Link: "
+                    },
+                    {
+                      "url": "https://medium.com/mit-cryptoeconomics-lab/icos-leverage-network-effects-962c617e3063?source=user_profile---------6----------------------------",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noopener follow"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "ICOs Leverage Network Effects"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Author: "
+                    },
+                    {
+                      "url": "https://medium.com/@cathybarreraphd?source=post_page-----962c617e3063--------------------------------",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noopener follow"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Cathy Barrera, PhD"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Summary & Commentary"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Catalini and Gans' research in \"Initial Coin Offerings and the Value of Crypto Tokens\" provides a comparative framework between token sales (ICOs) and traditional equity sales as a fundraising mechanism. One standout feature they emphasize is the ability of an ICO to harness network effects, which can increase the success rate of the fundraising event."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "An ICO can help demonstrate product demand due to the direct link between token purchases (which allow access to the product) and consumer interest. This is unlike equity sales, where the relationship between owning a part of the company and product demand isn't as apparent."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "They infer that in situations with network effects and uncertain demand, a token sale can publicize strong demand, enabling projects to move forward that may not have otherwise done so due to lack of public information. Observing a successful token sale may encourage potential users to adopt the platform, provided they perceive the user base to be sufficiently large."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "However, this informational role of an ICO may be compromised if speculative investment overwhelms the participation of future platform users. If all token buyers are speculators rather than future users, the pre-launch token demand may not reflect the actual demand for the platform or product. Hence, strategies that discourage speculators (like lockup periods, uncapped sales, and longer sales windows) could enhance the token sale's reliability."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Despite this, deterring speculation could reduce the pool of potential funding. Thus, startups must balance bootstrapping network effects for future platform success against raising more immediate funds."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Based on these insights, here are a few actionable takeaways:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Showcase Product Demand:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " Leverage ICOs to demonstrate product demand. Encourage token purchases by emphasizing their role in gaining access to your product or service."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Leverage Network Effects:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " Highlight successful token sales to convince potential platform users that your platform has a sufficient user base and is worth adopting."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Discourage Speculators:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " Implement strategies that deter speculators in favor of consumers. This could include lockup periods, uncapped sales, and longer sales windows. These strategies can increase the informativeness of the token sale and better signal your platform's value to future users."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": [
+                                "strong"
+                              ],
+                              "value": "Define Priorities:"
+                            },
+                            {
+                              "type": "span",
+                              "value": " Startups should indicate their priorities by selecting appropriate token sale strategies. This can help potential investors understand the startup's focus—whether it is on attracting future platform users or raising immediate funds."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Remember, while ICOs can leverage network effects and showcase demand, their success is significantly influenced by the startup's strategies and the balance between potential future users and speculators."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "cbc9-img1",
+            "height": 862,
+            "width": 862,
+            "filename": "cbc9-img1.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1690860184-cbc9-img1.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Discover how ICOs harness the power of network effects to fuel their success. ICOs and network effects, a dynamic duo!",
+      "title": "ICOs Leverage Network Effects [Commentary]",
+      "twitterCard": null,
+      "image": {
+        "width": 862,
+        "height": 862,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1690860184-cbc9-img1.png"
+      }
+    }
+  },
+  "topics": [
+    "Fundraising",
+    "Tokenomics",
+    "Commentary"
+  ],
+  "shortLink": ""
+}
