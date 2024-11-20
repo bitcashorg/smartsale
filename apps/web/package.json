@@ -17,7 +17,8 @@
     "translate": "bun run scripts/translate.ts",
     "translate:category": "bun run scripts/translate-category.ts",
     "gen-cms": "bun run scripts/gen-cms.ts",
-    "vercel:install": "npm i -g node-gyp; bun install"
+    "vercel:install": "npm i -g node-gyp; bun install",
+    "prepare": "cd ../../ && husky .husky/pre-commit"
   },
   "dependencies": {
     "@ai-sdk/anthropic": "^0.0.54",
@@ -137,6 +138,7 @@
     "@types/uuid": "^10.0.0",
     "autoprefixer": "^10.4.19",
     "encoding": "^0.1.13",
+    "husky": "^9.1.6",
     "postcss": "^8.4.39",
     "postcss-import": "^16.1.0",
     "postcss-nesting": "^12.1.5",

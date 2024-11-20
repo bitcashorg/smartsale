@@ -83,12 +83,36 @@ export async function subscribeToNewsletter(
   }
 }
 
+async function getCookieData() {
+  const cookieData = cookies().getAll()
+  return new Promise((resolve) =>
+    setTimeout(() => {
+      resolve(cookieData)
+    }, 1000)
+  )
+}
+
 // generate dub.co links
-export async function generateShortLink(url: string) {
-  const cookieStorage = cookies()
+export async function generateShortLink(url: string, withCookies = true) {
+  let cookieStorage: ReturnType<typeof cookies>;
+  let getShareLinkCookies: { value: string } | undefined;
+  
   try {
-    const getShareLinkCookies = cookieStorage.get('bitlauncher-share-link')
-    const resolved: DubShareLinkResponse = !getShareLinkCookies
+    if (withCookies) {
+      cookieStorage = await getCookieData() as ReturnType<typeof cookies>;
+      getShareLinkCookies = cookieStorage.get('bitlauncher-share-link')
+
+      if (getShareLinkCookies?.value) {
+        try {
+          JSON.parse(getShareLinkCookies.value)
+        } catch (e) {
+          console.warn('Invalid cookie format:', e)
+          getShareLinkCookies = undefined
+        }
+      }
+    }
+
+    const resolved: DubShareLinkResponse = !getShareLinkCookies || !withCookies
       ? await axios
           .post(
             `https://api.dub.co/links?workspaceId=${process.env.DUB_WORKSPACE_ID}`,

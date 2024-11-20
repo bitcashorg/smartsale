@@ -10,6 +10,7 @@
     "@biomejs/biome": "1.9.4",
     "@types/bn.js": "^5.1.6",
     "@types/bun": "latest",
+    "husky": "^9.1.6",
     "turbo": "^2.2.3"
   },
   "scripts": {
@@ -29,6 +30,11 @@
   },
   "packageManager": "bun@1.1.20",
   "workspaces": {
-    "packages": ["apps/*", "packages/*", "services/*", "tooling/*"]
+    "packages": [
+      "apps/*",
+      "packages/*",
+      "services/*",
+      "tooling/*"
+    ]
   }
 }
