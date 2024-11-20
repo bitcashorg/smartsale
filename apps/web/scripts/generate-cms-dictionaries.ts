@@ -1,15 +1,16 @@
 import {
   getArticleSections,
-  getBlogCategoryLandingData,
-  getBlogArticleData
+  getBlogArticleData,
+  getBlogCategoryLandingData
 } from "@/services/datocms";
 
-import { AVAILABLE_LANGS } from "@/lib/config";
-import { Lang } from "@/dictionaries/locales";
 import { generateShortLink } from "@/app/actions/general";
-import path from "node:path";
+import { Lang } from "@/dictionaries/locales";
+import { AVAILABLE_LANGS } from "@/lib/config";
 import * as fs from "fs";
 import { constants } from 'fs/promises';
+import path from "node:path";
+import pLimit from 'p-limit';
 
 async function getArticleCategories(lang: Lang) {
   const categoriesData = await getArticleSections(lang as Lang);
@@ -26,7 +27,9 @@ async function fileExists(filePath: string): Promise<boolean> {
 }
 
 async function addShortLinksForArticles(lang: Lang, category: string, slugs: string[]) {
-  const shortLinkPromises = slugs.map(async (slug) => {
+  const limit = pLimit(4);
+
+  const processSlug = async (slug: string) => {
     const dirPath = `./dictionaries/${lang}/blog/${category}`;
     const fileName = `${slug}.json`;
     const filePath = path.resolve(dirPath, fileName);
@@ -38,32 +41,32 @@ async function addShortLinksForArticles(lang: Lang, category: string, slugs: str
 
     try {
       await getBlogArticleData(lang as Lang, category, slug);
-      
+
       const data = await fs.promises.readFile(filePath, "utf-8");
       const json = JSON.parse(data);
 
       const canonicalUrl = `https://bitlauncher.ai/${lang}/${category}/${slug}`;
-      const shortLink = (await generateShortLink(canonicalUrl, false)).data?.shortLink;
 
       if (!json.shortLink) {
-        if (shortLink) {
-          json["shortLink"] = shortLink;
-        } else {
-          json["shortLink"] = "";
-        }
+        const shortLink = (await generateShortLink(canonicalUrl, false)).data?.shortLink;
+
+        json["shortLink"] = shortLink ?? "";
 
         const updatedJson = JSON.stringify(json, null, 2);
         await fs.promises.writeFile(filePath, updatedJson, "utf-8");
-      } 
+      }
     } catch (e) {
       console.error(`Failed to generate short link for article ${filePath}:`, e);
     }
+  };
 
-  });
+  const shortLinkPromises = slugs.map(slug => limit(() => processSlug(slug)));
   await Promise.all(shortLinkPromises);
 }
 
 async function main() {
+  const limit = pLimit(1);
+
   const categories = await Promise.all(AVAILABLE_LANGS.map(lang => getArticleCategories(lang as Lang)));
   let langIndex = 0;
 
@@ -71,7 +74,11 @@ async function main() {
     for (const category of categories[langIndex]) {
       const articles = (await getBlogCategoryLandingData(lang as Lang, category)).sections.map((section) => section.articles);
       const slugs = articles.map((art) => art.map((a) => a.slug)).flat();
-      await addShortLinksForArticles(lang as Lang, category, slugs);
+      
+      const throttledTasks = slugs.map(slug => 
+        limit(() => addShortLinksForArticles(lang as Lang, category, [slug]))
+      );
+      await Promise.all(throttledTasks);
     }
     langIndex++;
   }
