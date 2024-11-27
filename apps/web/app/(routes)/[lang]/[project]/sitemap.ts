@@ -8,8 +8,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   return projects.map((item) => ({
     url: `https://${process.env.NEXT_PUBLIC_APP_URL}/${item.project}`,
     lastModified: new Date(),
-    changeFrequency: 'monthly',
-    priority: 0.9,
+    changeFrequency: 'yearly',
+    priority: 0.7,
     alternates: {
       // ? e.g.: { 'en': 'https://example.com/en/...', 'es': 'https://example.com/es/...', ... }
       languages: Object.fromEntries(

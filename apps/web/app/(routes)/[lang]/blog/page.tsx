@@ -34,7 +34,6 @@ export async function generateMetadata({
   params,
 }: BlogPageProps): Promise<Metadata> {
   const pageSeo = await getPageSeoText('bitlauncher')
-  console.log("🚀 ~ pageSeo:", pageSeo)
   const seoData = {
     title: pageSeo.pageSeo?.title || '',
     description: pageSeo.pageSeo?.description || '',
